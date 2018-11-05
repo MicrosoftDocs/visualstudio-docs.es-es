@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: c89a437938a042ead343ee5c1386ea11d637663d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 87a70451799c7fc3a15eb14a9efbb0233ea2b154
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834543"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220152"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Análisis de la capacidad de respuesta de la IU HTML en aplicaciones de UWP
 En este tema, se describe cómo aislar los problemas de rendimiento en las aplicaciones mediante el generador de perfiles de la capacidad de respuesta de la interfaz de usuario, una herramienta de rendimiento disponible para las aplicaciones universales de Windows.  
@@ -42,7 +42,7 @@ En este tema, se describe cómo aislar los problemas de rendimiento en las aplic
   
 2.  En el menú **Depurar**, elija **Generador de perfiles de rendimiento**.  
   
-     Si quiere cambiar el destino del análisis del generador de perfiles, elija**Cambiar destino**.  
+     Si desea cambiar el destino del análisis para el generador de perfiles, elija **Cambiar destino**.  
   
      ![Cambiar destino de análisis](../profiling/media/js_tools_target.png "JS_Tools_Target")  
   

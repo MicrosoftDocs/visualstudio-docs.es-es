@@ -16,12 +16,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e3129df5ad051641499276fd5ee76fa0afde8a7d
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: fd6522f80a367be33830f02a30c056531593d9ac
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234451"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220435"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opciones, editor de texto, C/C++, avanzado
 Al cambiar estas opciones, puede modificar el comportamiento relacionado con IntelliSense y la base de datos de exploración cuando programa en C o C++.
@@ -134,6 +134,12 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
 
  Deshabilita los subrayados ondulados de errores de IntelliSense. Los "subrayados ondulados" rojos no se muestran en la ventana del editor, pero el error seguirá apareciendo en la ventana Lista de errores.
 
+ **Ajustar automáticamente unidades máximas de traducción en caché**
+
+ Número máximo de unidades de traducción que se mantendrán activas al mismo tiempo para solicitudes de IntelliSense. Debe especificar un valor entre 2 y 15. Este número se relaciona directamente con el número máximo de procesos VCPkgSrv.exe que se ejecutarán (para una instancia determinada de Visual Studio). El valor predeterminado es 2, pero si tiene memoria disponible, puede aumentar este valor y posiblemente conseguir un rendimiento ligeramente mejor en IntelliSense.
+
+ Para obtener más información sobre unidades de traducción, vea [Fases de traducción](/cpp/preprocessor/phases-of-translation).
+
  **Deshabilitar autocompletado #include**
 
  Deshabilita el autocompletado de instrucciones `#include`.
@@ -141,16 +147,6 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
  **Usar barra diagonal en autocompletado #include**
 
  Desencadena el autocompletado de instrucciones `#include` cuando se usa "/". El delimitador predeterminado es la barra diagonal inversa "\'. El compilador puede aceptar cualquiera, por lo que use esta opción para especificar la que usa su código base.
-
- **Unidades máximas de traducción en caché**
-
- Número máximo de unidades de traducción que se mantendrán activas al mismo tiempo para solicitudes de IntelliSense. Debe especificar un valor entre 2 y 15. Este número se relaciona directamente con el número máximo de procesos VCPkgSrv.exe que se ejecutarán (para una instancia determinada de Visual Studio). El valor predeterminado es 2, pero si tiene memoria disponible, puede aumentar este valor y posiblemente conseguir un rendimiento ligeramente mejor en IntelliSense.
-
- Para obtener más información sobre unidades de traducción, vea [Fases de traducción](/cpp/preprocessor/phases-of-translation).
-
- **Punto a flecha en lista de miembros**
-
- Reemplaza "." por "->" si corresponde en la lista de miembros.
 
  **Deshabilitar lista de miembros absoluta**
 
@@ -164,21 +160,25 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
 
  Los fragmentos de código no aparecen en las sugerencias de lista de miembros.
 
+ **Modo de filtro de la lista de miembros**
+
+ Establece el tipo de algoritmo de coincidencia. **Aproximada** busca las coincidencias más posibles porque usa un algoritmo que es similar a un corrector ortográfico para buscar coincidencias que sean similares pero no idénticas. **Filtrado inteligente** coincide con subcadenas incluso si no se encuentran al comienzo de una palabra. **Prefijo** solo coincide con subcadenas idénticas que comienzan al principio de la palabra.
+
  **Deshabilitar coloración semántica**
 
  Desactiva toda la coloración de código excepto para las palabras clave de lenguaje, cadenas y comentarios.
+
+ **Caracteres de confirmación de las listas de miembros**
+
+ Especifica los caracteres que provocan que se confirme la sugerencia de lista de miembros resaltada en ese momento. Puede agregar o quitar caracteres de esta lista.
 
  **Confirmación automática de las listas de miembros**
 
  Agrega una línea cuando pulsa la tecla Entrar al final de una palabra completa.
 
- **Modo de filtro de la lista de miembros**
+ **Habilitar punto a flecha en lista de miembros**
 
- Establece el tipo de algoritmo de coincidencia. **Aproximada** busca las coincidencias más posibles porque usa un algoritmo que es similar a un corrector ortográfico para buscar coincidencias que sean similares pero no idénticas. **Filtrado inteligente** coincide con subcadenas incluso si no se encuentran al comienzo de una palabra. **Prefijo** solo coincide con subcadenas idénticas que comienzan al principio de la palabra.
-
- **Caracteres de confirmación de las listas de miembros**
-
- Especifica los caracteres que provocan que se confirme la sugerencia de lista de miembros resaltada en ese momento. Puede agregar o quitar caracteres de esta lista.
+ Reemplaza "." por "->" si corresponde en la lista de miembros.
 
 ## <a name="references"></a>Referencias
  **Deshabilitar resolución**
@@ -191,12 +191,14 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
 
  **Deshabilitar resaltado de referencia**
 
+De forma predeterminada, cuando se selecciona texto, todas las instancias del mismo texto se resaltan automáticamente en el documento actual. Puede deshabilitar esta característica estableciendo **Deshabilitar Resaltado de referencias** en **True**.
+
  ## <a name="text-editor"></a>Editor de texto
- **Habilitar Expandir ámbitos**
+ **Habilitar Rodear con llaves**
 
  Si esta opción está habilitada, se puede encerrar el texto seleccionado entre llaves al escribir "{" en el editor de texto.
 
- **Habilitar Expandir precedencia**
+ **Habilitar Rodear con paréntesis**
 
  Si esta opción está habilitada, se puede encerrar el texto seleccionado entre paréntesis al escribir "(" en el editor de texto.
 

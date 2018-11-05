@@ -9,12 +9,12 @@ description: Obtenga información sobre la suscripción de Power BI Pro incluida
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 739598d8783a6ba0eb7930b5efff6c018eed942a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 50c9b39772e65ba00f859254df4a993870f08023
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894565"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219541"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro en suscripciones de Visual Studio
 
@@ -92,9 +92,24 @@ R: La ventaja es gratuita, pero la activación utiliza el mismo sistema que para
 - Tarjeta de crédito.  Si proporciona un número de tarjeta de crédito, NO se le hará ningún cargo. 
 - Factura.  Si selecciona "Factura" como tipo de pago, no es necesario que proporcione ningún número de tarjeta de crédito.  También puede establecer el intervalo como "anual".  De este modo, recibirá un solo correo electrónico para informarle de que tiene lista una factura.  La cantidad de factura será de 0,00 USD.  
 
-### <a name="q--can-the-power-bi-pro-benefit-included-in-my-subscription-be-used-in-a-production-environment"></a>P: ¿La ventaja de Power BI Pro incluida en mi suscripción se puede utilizar en un entorno de producción?
+### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licenses-for-use-in-a-production-environment"></a>P: ¿La ventaja de Power BI Pro incluida en mis licencias de la suscripción se puede utilizar en un entorno de producción?
 R: Sí.  
 
+### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>P: Al intentar activar Power BI Pro, aparece el mensaje “Ya tiene una cuenta a través del trabajo”.  ¿Puedo seguir usando la ventaja?
+R: Sí.  El mensaje indica que se ha conectado a un dominio que ya tiene inquilinos de Office 365 activos en el que no es un administrador.  Para agregar Power BI Pro a un inquilino, debe ser administrador en dicho inquilino.  Para resolver este problema, siga estos pasos para crear a su propio inquilino.
+1.  Cuando aparezca el mensaje que le indica que ya tiene una cuenta a través del trabajo, haga clic en **Crear una cuenta nueva**.
+
+2.  En la siguiente pantalla, indique su información de contacto y haga clic en **Siguiente**.
+
+3.  Cree su identificador de usuario y contraseña.  Para aprovechar las ventajas de la oferta gratuita, asegúrese de seleccionar **. onmicrosoft.com** como el dominio. Haga clic en **Crear mi cuenta**.
+    > [!div class="mx-imgBorder"]
+    > ![Creación del id. de usuario de inquilino privado de la ventaja de Power BI Pro](_img/vs-pbi/vs-pbi-work-userid.png)
+    
+4.  El resto de los pasos del proceso son idénticos a los que aparecen en el cuerpo del artículo, comenzando por el paso 6.
+
+
+### <a name="q--im-on-a-government-domain--can-i-use-the-benefit"></a>P: Estoy en un dominio de la administración pública.  ¿Puedo usar la ventaja? 
+R: No.  La ventaja de Power BI Pro no puede agregarse a los inquilinos en un dominio de la administración pública. 
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
 -  ¿Necesita ayuda con Power BI Pro?
@@ -103,3 +118,6 @@ R: Sí.
     - Explore los principales problemas, obtenga ayuda de la comunidad o envíe una incidencia de soporte técnico en la [página de soporte técnico](https://powerbi.microsoft.com/support/).
 -  Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
 -  ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Pasos siguientes
+Para activar la ventaja de Power BI Pro, visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)

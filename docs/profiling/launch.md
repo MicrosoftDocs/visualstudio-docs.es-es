@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b34cf3124ab4479be624f097502240e5014b330
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 3afc0a50847591445c106d86460ee1821fe0df81
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844409"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219203"
 ---
 # <a name="launch"></a>Launch
 La opción **Launch** inicia el generador de perfiles mediante el método de muestreo y también inicia la aplicación especificada.  
@@ -39,7 +39,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
  Inicializa la sesión del generador de perfiles de línea de comandos y establece el método de generación de perfiles especificado.  
   
  **GlobalOn** y **GlobalOff**  
- Reanuda (**GlobalOn**) o detiene (**GlobalOff**) la generación de perfiles, pero no finaliza la sesión de generación de perfiles.  
+ Reanuda la generación de perfiles de (**GlobalOn**) o detiene la de (**GlobalOff**), pero no finaliza la sesión de generación de perfiles.  
   
  **ProcessOn:** `PID` y **ProcessOff**:`PID`  
  Reanuda la generación de perfiles de (**ProcessOn**) o detiene la de (**ProcessOff**) para el proceso especificado.  
