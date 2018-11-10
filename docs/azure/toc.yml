@@ -37,29 +37,29 @@ items:
     - name: Computer Vision
       href: /azure/cognitive-services/computer-vision/vs-computer-vision-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
   expanded: false
-- name: Cloud Services
+- name: Desarrollo de Azure Cloud Services
   items:
-  - name: Trabajo con proyectos de servicio en la nube en Visual Studio
+  - name: Trabajo con proyectos de servicio en la nube
     items:
-    - name: Acceso a nubes privadas de Azure con Visual Studio
+    - name: Nubes de acceso privado de Azure
       href: vs-azure-tools-access-private-azure-clouds-with-visual-studio.md
-    - name: Creación de un proyecto de servicio en la nube de Azure con Visual Studio
+    - name: Creación de un proyecto de servicio en la nube de Azure
       href: vs-azure-tools-azure-project-create.md
-    - name: Administración de roles en los servicios en la nube de Azure con Visual Studio
+    - name: Administración de roles en los servicios en la nube de Azure
       href: vs-azure-tools-cloud-service-project-managing-roles.md
-    - name: Preparación para publicar o implementar un servicio en la nube desde Visual Studio
+    - name: Preparación para publicar o implementar un servicio en la nube
       href: vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md
     - name: Conservación de una dirección IP virtual constante para un servicio en la nube de Azure
       href: vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md
     - name: Creación de proyectos de Azure desde la línea de comandos
       href: vs-azure-tools-command-line-build.md
-    - name: Configuración de roles de servicio en la nube de Azure con Visual Studio
+    - name: Configuración de roles de servicio en la nube de Azure
       href: vs-azure-tools-configure-roles-for-cloud-service.md
-    - name: Configuración de un proyecto de servicio en la nube de Azure con Visual Studio
+    - name: Configuración de un proyecto de servicio en la nube de Azure
       href: vs-azure-tools-configuring-an-azure-project.md
-    - name: Configuración del proyecto de Azure en Visual Studio para usar varias configuraciones de servicio
+    - name: Configuración del proyecto de Azure para usar varias configuraciones de servicio
       href: vs-azure-tools-multiple-services-project-configurations.md
-    - name: Actualización de proyectos a la versión actual de Azure Tools para Visual Studio
+    - name: Actualización de proyectos a la versión actual de Azure Tools
       href: vs-azure-tools-upgrade-projects-to-the-current-version-of-the-azure-tools.md
   - name: Prueba y depuración de un servicio en la nube
     items:
@@ -69,9 +69,9 @@ items:
       href: vs-azure-tools-debugging-cloud-services-overview.md
     - name: Configuración de diagnósticos para Azure Cloud Services y máquinas virtuales
       href: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
-    - name: Uso del emulador rápido para ejecutar y depurar un servicio en la nube de Azure en un equipo local
+    - name: Uso del emulador rápido para ejecutar y depurar un servicio en la nube de Azure en una máquina local
       href: vs-azure-tools-emulator-express-debug-run.md
-    - name: Depuración de un servicio en la nube de Azure publicado con Visual Studio e IntelliTrace
+    - name: Depuración de un servicio en la nube de Azure publicado con IntelliTrace
       href: vs-azure-tools-intellitrace-debug-published-cloud-services.md
     - name: Prueba del rendimiento de un servicio en la nube
       href: vs-azure-tools-performance-profiling-cloud-services.md
@@ -79,9 +79,9 @@ items:
       href: vs-azure-tools-optimizing-azure-code-in-visual-studio.md
   - name: Publicación de un servicio en la nube en Azure
     items:
-    - name: Migración y publicación de una aplicación web a un servicio en la nube de Azure desde Visual Studio
+    - name: Migración y publicación de una aplicación web a un servicio en la nube de Azure
       href: vs-azure-tools-migrate-publish-web-app-to-cloud-service.md
-    - name: Uso del asistente Publicar aplicación de Azure de Visual Studio
+    - name: Uso del asistente para publicar una aplicación de Azure en Visual Studio
       href: vs-azure-tools-publish-azure-application-wizard.md
     - name: Publicación de un servicio en la nube con Visual Studio
       href: vs-azure-tools-publishing-a-cloud-service.md
@@ -95,7 +95,7 @@ items:
       href: vs-azure-tools-service-configurations-and-profiles-how-to-manage.md
     - name: Configuración de credenciales de autenticación con nombre
       href: vs-azure-tools-setting-up-named-authentication-credentials.md
-  - name: Trabajo con Azure Storage en Visual Studio
+  - name: Trabajo con almacenamiento de Azure
     items:
     - name: Introducción al Explorador de Storage
       href: /azure/vs-azure-tools-storage-manage-with-storage-explorer?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
@@ -116,13 +116,13 @@ items:
   items:
   - name: Examen y administración de los recursos de almacenamiento mediante el Explorador de servidores
     href: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
-  - name: Administración de los recursos asociados con las cuentas de Azure en Cloud Explorer de Visual Studio
+  - name: Administración de los recursos asociados con las cuentas de Azure en Cloud Explorer
     href: vs-azure-tools-resources-managing-with-cloud-explorer.md
-  - name: Acceso a Azure Virtual Machines desde el Explorador de servidores
+  - name: Acceso a las máquinas virtuales de Azure desde el Explorador de servidores
     href: vs-azure-tools-virtual-machines-access-from-server-explorer.md
-ms.openlocfilehash: c8f94c6f53fd97da08ab4d8135b4a1c8eaa19b77
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: c0c4a4085432d18eed9b46b767069f18df39df8a
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750486"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000834"

@@ -19,15 +19,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b363e64cbd23bcaa05eeca9aae9c26a6d4e376b3
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: f68f6e50be569df6130f7e6c6f3aa4bc7c107214
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219788"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296052"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Solucionar problemas de soluciones de SharePoint
-  Los siguientes problemas o alertas pueden producirse al depurar las soluciones de SharePoint mediante el depurador de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obtener más información, consulte [depurar soluciones de flujo de trabajo de SharePoint 2007](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
+  Los siguientes problemas o alertas pueden producirse al depurar las soluciones de SharePoint mediante el depurador de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obtener más información, consulte [depurar soluciones de flujo de trabajo de SharePoint 2007](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).
   
 ## <a name="token-restrictions-in-sandboxed-visual-web-parts"></a>Restricciones de token en elementos web visuales en espacio aislado
  Los elementos web visuales en soluciones en espacio aislado no pueden procesar tokens estándar, como $SPUrl, que admite el runtime de SharePoint. Como resultado, la dirección URL no se soluciona y no se puede obtener una vista previa del contenido en la vista Diseño del diseñador del elemento web visual, si se hace referencia directamente en un elemento script, como en el ejemplo siguiente:  
@@ -105,7 +105,7 @@ ms.locfileid: "50219788"
  Ninguno.  
   
 ### <a name="resolution"></a>Resolución  
- Este problema se produce debido a un valor incorrecto en el **ruta** como propiedad de la configuración de definición de sitio webtemp archivo *webtemp_SiteDefinitionProject1.xml*. En el **ruta** propiedad para el archivo webtemp, situado bajo el **ubicación de implementación**, cambie 1033 por la configuración regional adecuada [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Por ejemplo, para usar una configuración regional para japonés cambie el valor a 1041. Para obtener más información, consulte [Locale IDs Assigned by Microsoft](http://go.microsoft.com/fwlink/?LinkID=165561) en el sitio Web de MSDN.  
+ Este problema se produce debido a un valor incorrecto en el **ruta** como propiedad de la configuración de definición de sitio webtemp archivo *webtemp_SiteDefinitionProject1.xml*. En el **ruta** propiedad para el archivo webtemp, situado bajo el **ubicación de implementación**, cambie 1033 por la configuración regional adecuada [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Por ejemplo, para usar una configuración regional para japonés cambie el valor a 1041. Para obtener más información, consulte [Locale IDs Assigned by Microsoft](http://go.microsoft.com/fwlink/?LinkID=165561).  
   
 ## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>Aparece un error al implementar un proyecto de flujo de trabajo en un sistema limpio
  Este problema se produce si se implementa un proyecto de flujo de trabajo en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], en un sistema limpio. Un sistema limpio es un equipo que tiene una instalación nueva de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] y SharePoint, pero no tiene ningún proyecto de flujo de trabajo implementado.  

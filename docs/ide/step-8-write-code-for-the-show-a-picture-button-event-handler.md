@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f8f0b90ae76717ce8365bad2ef780efb51b509d1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d2c76a6eb760e55659c7da4df2a1a341426f0c6e
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874675"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671812"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Paso 8: Escribir código para el controlador de eventos del botón Mostrar una imagen
 
@@ -28,7 +28,7 @@ En este paso, conseguirá que el botón **Mostrar una imagen** funcione así:
 
 El IDE incluye una eficaz herramienta denominada IntelliSense que ayuda a escribir código. Cuando se escribe código, el IDE abre un cuadro con sugerencias para completar las palabras parciales que se escriben. Intenta determinar lo que se desea hacer a continuación y salta automáticamente al último elemento que se elige en la lista. Puede utilizar las flechas arriba o abajo para moverse por la lista o bien continuar escribiendo letras para reducir las opciones propuestas. Cuando vea la opción que busca, elija la tecla **Tab** para seleccionarla. Otra opción es pasar por alto las sugerencias, si no las necesita.
 
-![vínculo al vídeo](../data-tools/media/playvideo.gif)Para obtener una versión en vídeo de este tema, vea [Tutorial 1: Create a picture viewer in Visual Basic - Video 4](https://msdn.microsoft.com/en-us/vstudio/gg315355.aspx) [Tutorial 1: Crear un visor de imágenes en Visual Basic (vídeo 4)]. En este vídeo se usa una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
+![vínculo al vídeo](../data-tools/media/playvideo.gif)Para obtener una versión en vídeo de este tema, vea [Tutorial 1: Create a picture viewer in Visual Basic - Video 4](https://msdn.microsoft.com/vstudio/gg315355.aspx) [Tutorial 1: Crear un visor de imágenes en Visual Basic (vídeo 4)]. En este vídeo se usa una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
 
 ## <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>Para escribir código para el controlador de eventos de botón Mostrar una imagen
 
@@ -48,7 +48,7 @@ El IDE incluye una eficaz herramienta denominada IntelliSense que ayuda a escrib
 
     2.  Se abre la ventana **IntelliSense** y muestra **openFileDialog1**. Elija la tecla **Tab** para seleccionarlo. (En Visual Basic, empieza con mayúscula inicial, de modo que aparecerá **OpenFileDialog1**. Asegúrese de que **OpenFileDialog1** está seleccionado).
 
-         Para obtener más información sobre `OpenFileDialog`, vea [OpenFileDialog](http://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx).
+         Para obtener más información sobre `OpenFileDialog`, vea [OpenFileDialog](<xref:System.Windows.Forms.OpenFileDialog>).
 
     3.  Escriba un punto (`.`) (En inglés se denomina period o dot). Dado que ha escrito un punto justo después de **openFileDialog1**, se abre una ventana **IntelliSense**, que contiene todas las propiedades y los métodos de componente de **OpenFileDialog**. Se trata de las mismas propiedades que aparecen en la ventana **Propiedades** cuando selecciona este componente en el **Diseñador de Windows Forms**. También puede elegir métodos que indiquen al componente que realice acciones (como abrir un cuadro de diálogo).
 
@@ -63,7 +63,7 @@ El IDE incluye una eficaz herramienta denominada IntelliSense que ayuda a escrib
 
     4.  Empiece a escribir `ShowDialog` (el uso de mayúsculas o minúsculas no es significativo en IntelliSense). El método `ShowDialog()` mostrará el cuadro de diálogo **Abrir archivo**. Cuando la ventana haya resaltado **ShowDialog**, pulse la tecla **Tab**. También puede resaltar "ShowDialog" y pulsar la tecla **F1** para obtener ayuda sobre ella.
 
-         Para obtener más información sobre el método `ShowDialog()`, vea [ShowDialog Method](http://msdn.microsoft.com/library/c7ykbedk.aspx).
+         Para obtener más información sobre el método `ShowDialog()`, vea [ShowDialog Method](<xref:System.Windows.Forms.Form.ShowDialog%2A>).
 
     5.  Cuando se usa un método con un control o un componente (lo que se denomina *llamar a un método*), es preciso agregar paréntesis. Así pues, especifique los paréntesis de apertura y cierre inmediatamente después de la "g" en `ShowDialog`: `()` Debe tener la apariencia siguiente: "openFileDialog1.ShowDialog()".
 
@@ -79,7 +79,7 @@ El IDE incluye una eficaz herramienta denominada IntelliSense que ayuda a escrib
 
     8.  Escriba un punto para abrir la ventana **IntelliSense** del valor DialogResult. Escriba la letra `O` y pulse la tecla **Tab** para insertar **Aceptar**.
 
-         Para obtener más información sobre DialogResult, vea [DialogResult](http://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx).
+         Para obtener más información sobre DialogResult, vea [DialogResult](<xref:System.Windows.Forms.DialogResult>).
 
         > [!NOTE]
         >  Deberá quedar completa la primera línea de código. Para Visual C#, debería ser la siguiente.

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b84223f9758302064622313cd5406b10c872f170
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 16b8c3a35a7d4a489a199b4de9f7fbe34bca9361
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179910"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671019"
 ---
 # <a name="localizing-applications"></a>Localizar aplicaciones
 
@@ -42,6 +42,6 @@ ms.locfileid: "39179910"
 
  [Globalizar Windows Forms](/dotnet/framework/winforms/advanced/globalizing-windows-forms) Proporciona vínculos a páginas sobre la creación de aplicaciones Windows que admiten varias referencias culturales.
 
- [Globalización y localización](http://msdn.microsoft.com/Library/8ef3838e-9d05-4236-9dd0-ceecff9df80d) Proporciona vínculos a páginas sobre la creación de aplicaciones web que admiten varias referencias culturales.
+ [Globalización y localización](https://msdn.microsoft.com/Library/8ef3838e-9d05-4236-9dd0-ceecff9df80d) Proporciona vínculos a páginas sobre la creación de aplicaciones web que admiten varias referencias culturales.
 
- [Prácticas recomendadas para desarrollar aplicaciones de uso internacional](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) Proporciona información sobre programación para usuarios internacionales, por ejemplo, problemas de diseño y terminología.
+ [Prácticas recomendadas para desarrollar aplicaciones de uso internacional](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps) Proporciona información sobre programación para usuarios internacionales, por ejemplo, problemas de diseño y terminología.
