@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 14aa15d53977167a61d5570d4bc2ac7edffb197d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a986675a2fd239918c43fd2350713bfabee4f046
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511657"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000632"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Generación de entradas con la ejecución simbólica dinámica
 
@@ -67,7 +67,7 @@ Posteriormente en el análisis, como se detectan más métodos accesibles, tanto
 El [solucionador de restricciones](#constraint-solver) de IntelliTest determina los valores de entrada de prueba de tipos primitivos como **byte**, **int** y **float**, entre otros, para desencadenar diferentes rutas de ejecución para la prueba y el programa sometido a prueba.
 
 <a name="objects"></a>
-## <a name="objects"></a>Objetos
+## <a name="objects"></a>de la empresa
 
 IntelliTest puede [crear instancias de clases .NET existentes](#existing-classes) o puede usar IntelliTest para [crear objetos ficticios](#parameterized-mocks) automáticamente que implementen una interfaz específica y se comporten de diferentes maneras dependiendo del uso.
 
@@ -146,4 +146,4 @@ La clase estática [PexChoose](static-helper-classes.md#pexchoose) puede usarse 
 
 ## <a name="got-feedback"></a>¿Tiene comentarios?
 
-Publique sus ideas y solicitudes de características en [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).
+Publique sus ideas y solicitudes de características en [Comunidad de desarrolladores](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

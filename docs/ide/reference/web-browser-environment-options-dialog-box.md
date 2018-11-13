@@ -24,12 +24,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4eb5b3a73d2b06123e7878ac90ceb5bdf21869c
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: b7f492c1a192f8c12418c679f498bf282859cbf3
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143169"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671890"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Explorador web, Entorno, Opciones (Cuadro de diálogo)
 Establece opciones para el explorador web interno e Internet Explorer. Para acceder a este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**, expanda la carpeta **Entorno** y seleccione **Explorador web**.
@@ -53,7 +53,7 @@ Establece opciones para el explorador web interno e Internet Explorer. Para acce
 
 -   **Editor de código fuente** Seleccione esta opción para ver código fuente en el [editor](../../ide/writing-code-in-the-code-and-text-editor.md).
 
--   **Editor HTML** Seleccione esta opción para ver código fuente en el [Diseñador HTML](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Use esta selección para editar la página web en una de las dos vistas: vista de diseño o la vista de código fuente estándar basada en texto.
+-   **Editor HTML** Seleccione esta opción para ver código fuente en el [Diseñador HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Use esta selección para editar la página web en una de las dos vistas: vista de diseño o la vista de código fuente estándar basada en texto.
 
 -   **Editor externo** Seleccione esta opción para ver código fuente en otro editor. Especifique la ruta de acceso al editor que elija, por ejemplo, Notepad.exe.
 
@@ -68,4 +68,4 @@ Haga clic para cambiar las opciones de Internet Explorer en el cuadro de diálog
 
 - [Opciones de entorno (Cuadro de diálogo)](../../ide/reference/environment-options-dialog-box.md)
 - [General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md)
-- [Diseñador HTML](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)
+- [Diseñador HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)

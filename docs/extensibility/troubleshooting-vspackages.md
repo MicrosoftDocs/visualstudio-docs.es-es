@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92ca071c7e46325901425048417b0fd1a07607fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad5ab8a337d790af8cd6d800c7bf36ea6ff01286
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826538"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348688"
 ---
 # <a name="troubleshooting-vspackages"></a>Solución de problemas de VSPackages
 Estos son los problemas comunes que podría tener con el paquete de VS y sugerencias para solucionar los problemas.  
@@ -44,7 +44,7 @@ Estos son los problemas comunes que podría tener con el paquete de VS y sugeren
   
 3. Compruebe las entradas del registro de VSPackage.  
   
-    Para obtener más información, consulte [registrar VSPackages](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd) y [administrar VSPackages](../extensibility/managing-vspackages.md).  
+    Para obtener más información, consulte [registrar VSPackages](registering-and-unregistering-vspackages.md) y [administrar VSPackages](../extensibility/managing-vspackages.md).  
   
 4. Abra el **salida** ventana de la instancia de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que no se puede cargar el VSPackage. Información sobre por qué se puede cargar el VSPackage puede mostrarse en esa ventana.  
   

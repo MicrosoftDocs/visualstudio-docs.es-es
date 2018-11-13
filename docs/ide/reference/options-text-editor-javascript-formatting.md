@@ -1,6 +1,6 @@
 ---
 title: Opciones, editor de texto, JavaScript, formato
-ms.date: 11/04/2016
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd4f166bc8b90db4012296c8d81c1d89e1b5eae5
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: aa846a25e1383c0c164dfb4747899f5e86237d32
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219762"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671058"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Opciones, editor de texto, JavaScript, formato
 Use la página **Formato** del cuadro de diálogo **Opciones** para establecer las opciones para proporcionar formato al código en el Editor de código. Para acceder a esta página, vaya a la barra de menús y elija **Herramientas**, **Opciones** y expanda **Editor de texto**, **JavaScript** y **Formato**.
@@ -32,19 +32,20 @@ Use la página **Formato** del cuadro de diálogo **Opciones** para establecer l
 ## <a name="automatic-formatting"></a>Formato automático
  Estas opciones determinan cuándo se da formato en la vista **Origen**.
 
-## <a name="uielement-list"></a>Lista de UIElement
+### <a name="uielement-list"></a>Lista de UIElement
 
 |Opción|Descripción|
 |------------|-----------------|
 |**Dar formato a una línea completada al presionar &Entrar**|Cuando se selecciona esta opción, el editor de código aplica formato a la línea automáticamente cuando presiona la tecla Entrar.|
 |**Dar formato a una instrucción completada con ;**|Cuando se selecciona esta opción, el editor de código aplica formato a la línea automáticamente cuando presiona la tecla de punto y coma.|
+|**Dar formato a un bloque abierto con {**|Cuando esta opción está seleccionada, el editor de código aplica formato automáticamente a la línea cuando se presiona la tecla de llave de apertura.|
 |**Dar formato a un bloque completado con }**|Cuando se selecciona esta opción, el editor de código aplica formato a la línea automáticamente cuando presiona la tecla de llave de cierre.|
 |**Dar formato al pegar**|Cuando se selecciona esta opción, el Editor de código cambia el formato del código cuando lo pega en el editor. El editor usa las reglas de formato definidas actualmente. Si no se selecciona esta opción, el editor usa el formato original del código pegado.|
 
 ## <a name="new-lines"></a>Nuevas líneas
  Estas opciones determinan si el editor de código coloca una llave de apertura para funciones y bloques de control en una nueva línea.
 
-## <a name="uielement-list"></a>Lista de UIElement
+### <a name="uielement-list"></a>Lista de UIElement
 
 |Opción|Descripción|
 |------------|-----------------|
@@ -54,12 +55,12 @@ Use la página **Formato** del cuadro de diálogo **Opciones** para establecer l
 ## <a name="spacing"></a>Espaciado
  Estas opciones determinan cómo se insertan los espacios en la vista **Origen**.
 
-## <a name="uielement-list"></a>Lista de UIElement
+### <a name="uielement-list"></a>Lista de UIElement
 
 |Opción|Descripción|
 |------------|-----------------|
 |**Insertar espacio después del delimitador de coma**|Cuando se selecciona esta opción, el editor de código agrega un espacio después de delimitadores de coma.|
-|**Insertar espacio tras punto y coma en instrucción “for”**|Cuando se selecciona esta opción, el editor de código agrega un espacio después de cada punto y coma en la primera línea de un bucle `for`.|
+|**Insertar espacio tras punto y coma en instrucciones "for"**|Cuando se selecciona esta opción, el editor de código agrega un espacio después de cada punto y coma en la primera línea de un bucle `for`.|
 |**Insertar espacio delante y detrás de operadores binarios**|Cuando se selecciona esta opción, el editor de código agrega un espacio antes y después de los operadores binarios (por ejemplo, +, -, &&, &#124;&#124;).|
 |**Insertar espacio después de palabras clave en instrucciones de flujo de control**|Cuando se selecciona esta opción, el editor de código agrega un espacio después de palabras clave de JavaScript en las instrucciones de flujo de control.|
 |**Insertar espacio tras la palabra clave function para las funciones anónimas**|Cuando se selecciona esta opción, el editor de código agrega un espacio después de la palabra clave `function` para funciones anónimas.|

@@ -1,7 +1,7 @@
 ---
-title: Ver los archivos DLL y ejecutables en el depurador | Microsoft Docs
+title: Ver los archivos DLL y ejecutables en la ventana módulos | Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 11/04/2016
+ms.date: 11/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -25,54 +25,57 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f582c435239c83503b179d6bb5e142936a41cb4b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 4604932084289919a86ba09516b8d2c237f44cd9
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279016"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296273"
 ---
-# <a name="view-dlls-and-executables-using-the-modules-window-in-the-visual-studio-debugger"></a>Ver los archivos DLL y ejecutables mediante la ventana módulos en el depurador de Visual Studio
+# <a name="view-dlls-and-executables-in-the-modules-window"></a>Ver los archivos DLL y ejecutables en la ventana módulos
  
-El **módulos** ventana enumera los archivos DLL y ejecutables (EXE) que son utilizados por el programa y muestran información pertinente para cada uno. 
+Durante la depuración de Visual Studio, el **módulos** ventana enumera y muestra información acerca de los archivos DLL y ejecutables (*.exe* archivos) utiliza su aplicación. 
 
 > [!NOTE]
->  Esta característica no está disponible para la depuración de SQL o de script. 
+> La ventana módulos no está disponible para la depuración de script o SQL. 
   
-### <a name="to-display-the-modules-window"></a>Para mostrar la ventana módulos  
+## <a name="use-the-modules-window"></a>Utilice la ventana módulos
+
+Para abrir la ventana módulos, durante la depuración, seleccione **depurar** > **Windows** > **módulos**. 
   
--   Durante la depuración, seleccione **Depurar > Windows** y, a continuación, haga clic en **módulos**.  
+De forma predeterminada, el **módulos** ventana ordena los módulos por orden de carga. Para ordenar por cualquier columna de la ventana, seleccione el encabezado en la parte superior de la columna.  
   
-     De forma predeterminada, el **módulos** ventana ordena los módulos por orden de carga. No obstante, puede ordenarlos por columnas.  
+## <a name="load-symbols"></a>Cargar símbolos  
+
+El **estado del símbolo** columna en el **módulos** ventana muestra qué módulos tienen cargados los símbolos de depuración. Si el estado es **se omitió la carga de símbolos**, **no se puede encontrar o abrir el archivo PDB**, o **carga deshabilitada por el parámetro incluir/excluir**, puede cargar símbolos manualmente. Para obtener más información sobre la carga y uso de símbolos, vea [especificar archivos de código fuente y símbolos (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+
+**Para cargar símbolos manualmente:**  
+
+1. En el **módulos** (ventana), con el botón secundario el módulo para los símbolos que no ha cargado. 
+   
+   - Seleccione **cargar información de símbolos** para obtener más información acerca de por qué no se ha cargado los símbolos. 
+   
+   - Seleccione **cargar símbolos** para cargar los símbolos manualmente.  
+   
+1. Si no se cargan los símbolos, seleccione **configuración de símbolos** para abrir el **opciones** cuadro de diálogo y especificar o cambiar las ubicaciones de carga de símbolos. 
+   
+   Puede descargar los símbolos de los servidores de símbolos públicos de Microsoft u otros servidores o cargar símbolos desde una carpeta en el equipo. Para obtener más información, consulte [especificar ubicaciones de símbolos y el comportamiento de carga](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#BKMK_Specify_symbol_locations_and_loading_behavior).   
+
+**Para cambiar la configuración del comportamiento de carga de símbolos:**  
+
+1. En el **módulos** ventana, haga clic en cualquier módulo.  
+   
+1. Seleccione **Lores**.  
   
-### <a name="to-sort-by-any-column"></a>Para ordenarlos por columnas  
+1. Seleccione **cargar todos los símbolos**, o seleccione los módulos que desea incluir o excluir.  
   
--   Haga clic en el botón situado en la parte superior de la columna.  
+1. Seleccione **Aceptar**. Los cambios surten efecto en la siguiente sesión de depuración.  
   
-     Puede cargar los símbolos o especificar una ruta de acceso de símbolos desde la **módulos** ventana mediante el menú contextual.  
-  
-## <a name="loading-symbols"></a>Cargar Símbolos  
- En el **módulos** ventana, puede ver qué módulos tienen cargados los símbolos de depuración. Esta información aparece en el **estado del símbolo** columna. Si el estado dice **loadingCannot omitida encontrar o abrir el archivo PDB**, o **carga deshabilitada por el parámetro incluir/excluir**, puede dirigir el depurador para descargar símbolos de los símbolos públicos de Microsoft los servidores o para cargar símbolos desde un directorio de símbolos en el equipo. Para obtener más información, consulte [especificar símbolos (.pdb) y archivos de origen](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
-  
-#### <a name="to-load-symbols-manually"></a>Para cargar símbolos manualmente  
-  
-1.  En el **módulos** ventana, haga un módulo para el que no han cargado los símbolos.  
-  
-2.  Seleccione **cargar símbolos desde** y, a continuación, haga clic en **servidores de símbolos de Microsoft** o **ruta de acceso de símbolos**.  
-  
-#### <a name="to-change-symbol-load-settings"></a>Para cambiar la configuración de carga de símbolos  
-  
-1.  En el **módulos** ventana, haga clic en cualquier módulo.  
-  
-2.  Haga clic en **Lores**.  
-  
-     Ahora puede cambiar la configuración de carga de símbolos, como se describe en [especificar ubicaciones de símbolos y el comportamiento de carga](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#BKMK_Specify_symbol_locations_and_loading_behavior). Los cambios no surten efecto hasta que se reinicie la sesión de depuración.  
-  
-#### <a name="to-change-symbol-load-behavior-for-a-specific-module"></a>Para cambiar el comportamiento de carga de símbolos para un módulo específico  
-  
+**Para cambiar el comportamiento de un módulo específico de carga de símbolos:**  
+
 1.  En el **módulos** ventana, haga clic en el módulo.  
-  
-2.  Seleccione **configuración de carga de símbolos automática** y, a continuación, haga clic en **cargar siempre manualmente** o **predeterminado**. Los cambios no surten efecto hasta que se reinicie la sesión de depuración.  
+
+1.  En el menú contextual, seleccione o deseleccione **siempre carga automáticamente**. Los cambios surten efecto en la siguiente sesión de depuración.  
   
 ## <a name="see-also"></a>Vea también  
  [Interrumpir la ejecución](/previous-versions/visualstudio/visual-studio-2010/7z9se2d8(v=vs.100))   

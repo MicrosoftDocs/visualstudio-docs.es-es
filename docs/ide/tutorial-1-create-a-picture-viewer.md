@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2c8c23be02f13646c8577d2672bc60b63a1d0a
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 966634ee9a71854334bdd5342326c1663b9ad16c
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008686"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672163"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Crear un visor de imágenes
 
@@ -42,7 +42,7 @@ Cuando termine, el programa se parecerá al de la ilustración siguiente:
 
 ## <a name="tutorial-links"></a>Vínculos del tutorial
 
-Para descargar una versión completa del ejemplo, vea [Complete Picture Viewer tutorial sample](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8) (Ejemplo completo del tutorial de visor de imágenes).
+Para descargar una versión completa del ejemplo, vea [Complete Picture Viewer tutorial sample](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8) (Ejemplo completo del tutorial de visor de imágenes).
 
 ![vínculo al vídeo](../data-tools/media/playvideo.gif)Para obtener una versión en vídeo de este tema, vea [Tutorial: Crear un visor de imágenes en Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205207) o [Tutorial: Crear un visor de imágenes en C#](http://go.microsoft.com/fwlink/?LinkId=205198).
 

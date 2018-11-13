@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d620ae0f93b2bbcee66419cfe9ff5e76e470c5f0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 03b5a669c0977aa35ef6943af3fa6afe6dda2aaa
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918888"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220793"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Análisis del uso de la red en aplicaciones UWP
 La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de las operaciones de red realizadas mediante la [Windows.Web.Http API](/uwp/api/windows.web.http). Analizar los datos puede ayudarle a resolver problemas como los problemas de acceso y autenticación, uso incorrecto de la caché y rendimiento deficiente de visualización y descarga.  
@@ -23,7 +23,7 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
  La herramienta Red admite solo las aplicaciones UWP. En este momento no se admiten otras plataformas.  
   
 > [!NOTE]
->  Para obtener una descripción más completa de la herramienta Red, vea [Presentación de la herramienta de red de Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studios-network-tool.aspx).  
+>  Para obtener una descripción más completa de la herramienta Red, vea [Presentación de la herramienta de red de Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2015/05/04/introducing-visual-studios-network-tool/).  
   
 ## <a name="collect-network-tool-data"></a>Recopilar datos de la herramienta de red  
  Debería ejecutar la herramienta **Red** con un proyecto de Visual Studio abierto en el equipo de Visual Studio.  
@@ -75,6 +75,6 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
 ## <a name="see-also"></a>Vea también  
  [Ejecución de herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  
  [Blog de Visual Studio: presentación del inspector de red de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [Vídeo de Channel 9: Herramientas de diagnóstico de VS: nuevo generador de perfiles de red](http://channel9.msdn.com/Series/ConnectOn-Demand/206)  
+ [Vídeo de Channel 9: Herramientas de diagnóstico de VS: nuevo generador de perfiles de red](https://channel9.msdn.com/Series/ConnectOn-Demand/206)  
  [Generación de perfiles en Visual Studio](../profiling/index.md)  
  [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)

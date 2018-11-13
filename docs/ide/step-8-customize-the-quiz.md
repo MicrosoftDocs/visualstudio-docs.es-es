@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c2f096415ccfbadfe66f18a373642cf6a5de86b
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 09d020e2d83e7e631fefcb1503eb8f1938894986
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32065252"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672124"
 ---
 # <a name="step-8-customize-the-quiz"></a>Paso 8: Personalizar la prueba
 En la última parte del tutorial, explorará algunas maneras de personalizar la prueba y ampliar sus conocimientos. Por ejemplo, piense en cómo el programa crea problemas de división aleatorios para los que la respuesta nunca es una fracción. Para obtener más información, cambie el color del control `timeLabel` y proporcione al usuario alguna sugerencia.  
@@ -29,7 +29,7 @@ En la última parte del tutorial, explorará algunas maneras de personalizar la 
   
 ## <a name="to-continue-or-review"></a>Para continuar o revisar  
   
--   Para descargar una versión completa de la prueba, vea [Complete Math Quiz tutorial sample](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c) (Ejemplo completo del tutorial de prueba matemática).  
+-   Para descargar una versión completa de la prueba, vea [Complete Math Quiz tutorial sample](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c) (Ejemplo completo del tutorial de prueba matemática).  
   
 -   Para ir al siguiente tutorial, vea [Tutorial 3: Crear un juego de formar parejas](../ide/tutorial-3-create-a-matching-game.md).  
   

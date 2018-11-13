@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f9534668ef5cf07388d6eefec9ef37a28593daaa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 982d54bec30e164a1b2017c7aa8a221ee56e19d0
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977453"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000603"
 ---
 # <a name="intellitest-reference-manual"></a>Manual de referencia de IntelliTest
 
@@ -36,7 +36,7 @@ ms.locfileid: "31977453"
 
 * **[Introducción a IntelliTest](getting-started.md)**
   - [Atributos importantes](getting-started.md#important-attributes)
-  - [Clases auxiliares estáticas importantes](getting-started.md#helper-classes)<p>&nbsp;</p>
+  - [clases del asistente estáticas importantes](getting-started.md#helper-classes)<p>&nbsp;</p>
 
 * **[Generación de pruebas](test-generation.md)**
   - [Generadores de pruebas](test-generation.md#test-generators)
@@ -96,7 +96,7 @@ ms.locfileid: "31977453"
 
 * **[Cascada de configuración](settings-waterfall.md)**
 
-* **[Clases auxiliares estáticas](static-helper-classes.md)**
+* **[clases del asistente estáticas](static-helper-classes.md)**
   - [PexAssume](static-helper-classes.md#pexassume)
   - [PexAssert](static-helper-classes.md#pexassert)
   - [PexChoose](static-helper-classes.md#pexchoose)
@@ -127,4 +127,4 @@ ms.locfileid: "31977453"
 
 ## <a name="got-feedback"></a>¿Tiene comentarios?
 
-Publique sus ideas y solicitudes de características en **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+Publique sus ideas y solicitudes de características en [Comunidad de desarrolladores](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

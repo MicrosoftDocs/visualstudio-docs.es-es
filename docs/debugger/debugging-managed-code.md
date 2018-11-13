@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c40d5b088dbf41e56fff1ad41b6ce4381f6602b3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 92485f93bb4c2d1782f907acdb1e5252f611cdbe
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
+ms.lasthandoff: 11/12/2018
 ms.locfileid: "39179484"
 ---
 # <a name="debugging-managed-code"></a>Depurar código administrado
@@ -46,7 +46,7 @@ Ofrece instrucciones paso a paso para crear un Windows Form y para depurar dicho
 [Depurar el método OnStart](../debugger/how-to-debug-the-onstart-method.md)  
 Proporciona ejemplos de código que permiten depurar el método `OnStart` de un servicio de Windows administrado. Para depurar el método `OnStart` de un servicio de Windows, se deben agregar algunas líneas de código para simular el servicio.
 
-[Depuración en modo mixto](../debugger/debugging-mixed-mode-applications.md)  
+[Mixed-Mode Debugging](../debugger/debugging-mixed-mode-applications.md)  
 Analiza la depuración de aplicaciones en modo mixto. Esto significa cualquier aplicación que combine código nativo con código administrado.
 
 [Error: No se puede depurar porque un depurador del kernel está habilitado en el sistema](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
@@ -68,7 +68,7 @@ Describe cómo utilizar el **tareas paralelas** y **pilas paralelas** ventanas p
 [Seguimiento e instrumentación de aplicaciones](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)  
 Describe la traza, una forma de supervisar la ejecución de una aplicación en funcionamiento, y la instrumentación, que permite colocar instrucciones de seguimiento en puntos estratégicos del código. En este tema también se proporcionan vínculos a una introducción a la instrumentación y la traza, modificadores de traza, agentes de escucha de traza, traza del código en una aplicación, adición de instrucciones de traza al código de una aplicación y compilación condicional con <xref:System.Diagnostics.Debug> y <xref:System.Diagnostics.Trace>.
 
-[/ ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute)  
+[/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute)  
 Describe una opción del vinculador que agrega <xref:System.Diagnostics.DebuggableAttribute> al código escrito con C++. Este atributo es necesario para utilizar características de depuración como la asociación con C++.
 
 [Depurar aplicaciones de servicio de Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)  

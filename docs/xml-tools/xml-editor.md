@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2111286afde9e60391f1a7410fec2778b3ed673
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8e120d65c9336acaa509e74c79d9e538673cd256
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693791"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349327"
 ---
 # <a name="xml-editor"></a>Editor XML
 
-El editor XML se basa en el editor de texto de Visual Studio e incluye compatibilidad adicional para los idiomas XML. El editor XML incluye las siguientes características:
+El editor XML se basa en el editor de texto de Visual Studio e incluye compatibilidad adicional para los lenguajes XML. El editor XML incluye las siguientes características:
 
 - Comprobación de sintaxis XML 1.0.
 
@@ -40,22 +40,22 @@ El editor XML se basa en el editor de texto de Visual Studio e incluye compatibi
 
 - Integración con el [Explorador de esquemas XML](../xml-tools/xml-schema-explorer.md). Esto proporciona una vista jerárquica de esquemas XML.
 
-El editor XML se invoca para las extensiones de archivo conocidas, como *.xml*, *.xsd*, *.xsl*, y *.config*. También se invoca en extensión de archivo desconocidas si el archivo parece contener XML. También puede abrir cualquier archivo con el editor XML mediante el **abrir con** opción y seleccione el editor XML de la lista.
+El editor XML se invoca para las extensiones de archivo conocidas, como *.xml*, *.xsd*, *.xsl*, y *.config*. También se invoca en extensión de archivo desconocidas si el archivo parece contener XML. También puede abrir cualquier archivo con el editor XML mediante el **abrir con** opción y seleccione el editor XML en la lista.
 
 ## <a name="xslt-intellisense"></a>XSLT IntelliSense
 
-[XSLT de IntelliSense](../xml-tools/xml-editor-intellisense-features.md) permite nombres de conjunto de atributos de Autocompletar, modos de plantilla y los nombres y nombres de parámetro para un determinado o de un modo plantilla con nombre.
+[XSLT IntelliSense](../xml-tools/xml-editor-intellisense-features.md) permite nombres de conjunto de atributos de Autocompletar, modos de plantilla y los nombres y nombres de parámetro para un modo o una especificada denominada plantilla.
 
 ## <a name="xslt-profiler"></a>Generador de perfiles XSLT
 
-El [generador de perfiles XSLT](../xml-tools/walkthrough-xslt-profiler.md) crea el rendimiento de XSLT detallados informes que le ayudan a medir, evaluarán y solucionar problemas relacionados con el rendimiento en el código XSLT. El generador de perfiles XSLT incluye también sugerencias útiles para la optimización de hoja de estilos XSL y XSLT.
+El [generador de perfiles XSLT](../xml-tools/walkthrough-xslt-profiler.md) crea rendimiento XSLT detallados informes que le ayudan a medir, evaluarán y solucionar problemas relacionados con el rendimiento en el código XSLT. El generador de perfiles XSLT incluye también sugerencias útiles para la optimización de hoja de estilos XSL y XSLT.
 
 ## <a name="xslt-hierarchy"></a>Jerarquía XSLT
 
-El [herramienta de la jerarquía XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md) le permite agregar puntos de interrupción en hojas de estilos incluidas y reglas de plantilla integradas.
+El [herramienta de la jerarquía XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md) le permite agregar puntos de interrupción en las hojas de estilos incluidas y reglas de plantilla integradas.
 
 ## <a name="see-also"></a>Vea también
 
-- [Características del editor de código](../ide/writing-code-in-the-code-and-text-editor.md) proporciona información acerca del editor de texto.
-- [Referencia de los estándares XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) proporciona información acerca de las tecnologías XML, como XML, definición de tipo de documento (DTD), lenguaje de definición de esquemas XML (XSD) y XSLT.
+- [Características del editor de código](../ide/writing-code-in-the-code-and-text-editor.md) proporciona información sobre el editor de texto.
+- [Referencia de las normas XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) proporciona información sobre las tecnologías XML, incluidos XML, definición de tipo de documento (DTD), lenguaje de definición de esquemas XML (XSD) y XSLT.
 - [Herramientas XML en Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

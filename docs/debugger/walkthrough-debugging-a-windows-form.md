@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fdd9dadc92143fabfaeea35d776b57b4b4c1748
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: dd847a4db232d32c941722d5ee537a21bdaf33a8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468535"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349171"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Tutorial: Depurar Windows Forms
 Un Windows Form es una de las aplicaciones administradas más comunes. Con un Windows Form se crean aplicaciones estándar de Windows. Puede completar este tutorial utilizando Visual Basic, C# o C++.  
@@ -59,7 +59,7 @@ Un Windows Form es una de las aplicaciones administradas más comunes. Con un Wi
   
 4.  Haga clic en **Aceptar**.  
   
-     Visual Studio crea un proyecto nuevo y muestra un formulario nuevo en el Diseñador de Windows Forms. Para obtener más información, consulte [Diseñador de Windows Forms](http://msdn.microsoft.com/en-us/3c3d61f8-f36c-4d41-b9c3-398376fabb15).  
+     Visual Studio crea un proyecto nuevo y muestra un formulario nuevo en el Diseñador de Windows Forms. Para obtener más información, consulte [Diseñador de Windows Forms](/previous-versions/visualstudio/visual-studio-2010/e06hs424\(v\=vs.100\)).  
   
 5.  En el **vista** menú, seleccione **cuadro de herramientas**.  
   
@@ -110,7 +110,7 @@ Un Windows Form es una de las aplicaciones administradas más comunes. Con un Wi
     textBox1->Text = "Button was clicked!";  
     ``` 
   
-     Aparecerá un punto rojo y el texto de la línea se resaltará en rojo. El punto rojo representa un punto de interrupción. Para obtener más información, consulte [puntos de interrupción](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583). Cuando ejecute la aplicación en el depurador, este interrumpirá la ejecución del código en la posición donde encuentre un punto de interrupción. Esto le permite ver el estado de la aplicación y depurarla.  
+     Aparecerá un punto rojo y el texto de la línea se resaltará en rojo. El punto rojo representa un punto de interrupción. Para obtener más información, consulte [puntos de interrupción](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). Cuando ejecute la aplicación en el depurador, este interrumpirá la ejecución del código en la posición donde encuentre un punto de interrupción. Esto le permite ver el estado de la aplicación y depurarla.  
   
     > [!NOTE]
     >  También puede haga clic en cualquier línea de código, apunte a **punto de interrupción**y, a continuación, haga clic en **Insertar punto de interrupción** para agregar un punto de interrupción en esa línea.  

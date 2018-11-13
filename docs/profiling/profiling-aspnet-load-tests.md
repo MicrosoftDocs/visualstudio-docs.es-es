@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 03d6b6ec8cc244329bd46b73eebd21bdadef6a33
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 688b98baeec86b932e187cf27cd4661d45acf526
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254731"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220312"
 ---
 # <a name="profile-aspnet-load-tests"></a>Generar perfiles para las pruebas de carga de ASP.NET
 Puede recopilar datos de generación de perfiles de pruebas web de [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] automatizadas que se ejecuten en proyectos de sitios web de ASP.NET. Puede recopilar datos de interacción de muestreo y de nivel. Para obtener más información, vea los temas siguientes:  
   
- [(NIB) Cómo: Ejecutar una sesión de rendimiento en una aplicación web desde el Editor de prueba de rendimiento web](http://msdn.microsoft.com/en-us/d14e0a27-33cc-4e4e-8792-fe03e50d51e1)  
+ [(NIB) Cómo: Ejecutar una sesión de rendimiento en una aplicación web desde el Editor de prueba de rendimiento web](https://msdn.microsoft.com/d14e0a27-33cc-4e4e-8792-fe03e50d51e1)
   
- [Cómo: Configurar el generador de perfiles ASP.NET para pruebas de carga mediante la configuración de pruebas en Visual Studio](http://msdn.microsoft.com/Library/6832fe39-04d5-4d94-8a18-3e2730bad423)  
+ [Cómo: Configurar el generador de perfiles ASP.NET para pruebas de carga mediante la configuración de pruebas en Visual Studio](https://msdn.microsoft.com/Library/6832fe39-04d5-4d94-8a18-3e2730bad423)  
   
 ## <a name="see-also"></a>Vea también  
  [Introducción a los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)   

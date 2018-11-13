@@ -19,23 +19,23 @@ ms.assetid: 8a512060-d744-47af-a83e-4ba42ea2c5b2
 caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 9c097cd09712d19acf5a0e4999b5c7a47469f958
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9b49f60395a853d7dfda91738ccccaba9d585b46
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632735"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295168"
 ---
 # <a name="access-is-denied"></a>Se denegó el acceso
 Un script intentó acceder a datos desde un origen diferente del host de la página actual. La Directiva de mismo origen que siguen Internet Explorer y otros exploradores permite a los scripts acceder a datos únicamente de orígenes con el mismo esquema, host y puerto de la dirección URL de la página actual.  
   
- Por ejemplo, si la página actual es https://employees.mycompany.com, no se puede acceder a datos de las direcciones URL siguientes:  
+ Por ejemplo, si la página actual es `https://employees.mycompany.com`, no se puede tener acceso a datos desde las direcciones URL siguientes:  
   
--   http://data.contoso.com, ya que usa HTTP en lugar de HTTPS.  
+-   `http://data.contoso.com`, porque usa HTTP en lugar de HTTPS.  
   
--   https://somedatasource.com, ya que es un dominio diferente.  
+-   `https://somedatasource.com`, porque es un dominio diferente.  
   
--   https://employees.mycompany.com:8888, ya que usa un puerto diferente.  
+-   `https://employees.mycompany.com:8888`, porque utiliza un puerto diferente.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   

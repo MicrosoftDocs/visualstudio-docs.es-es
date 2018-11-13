@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ef2a2800ecb46f12f9dde4357bf54711a1df8797
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f4510aa820e0f82c2fcd73ccb83ed0f8120a1399
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934683"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296039"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Tutorial: Llamar al modelo de objetos de cliente de SharePoint en una extensión de explorador de servidores
   Este tutorial muestra cómo llamar al modelo de objetos de cliente de SharePoint desde una extensión para el **conexiones de SharePoint** nodo **Explorador de servidores**. Para obtener más información sobre cómo usar el modelo de objetos de cliente de SharePoint, vea [llamar a los modelos de objetos de SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -195,7 +195,7 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
   
 1.  En **el Explorador de soluciones**, en el **NodoElementoWeb** proyecto, abra **source.extension.vsixmanifest** archivo en el editor de manifiestos.  
   
-     El archivo source.extension.vsixmanifest es la base del archivo extension.vsixmanifest que requieren todos los paquetes VSIX. Para obtener más información acerca de este archivo, consulte [referencia de 1.0 del esquema de extensión de VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     El archivo source.extension.vsixmanifest es la base del archivo extension.vsixmanifest que requieren todos los paquetes VSIX. Para obtener más información acerca de este archivo, consulte [referencia de 1.0 del esquema de extensión de VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  En el **Product Name** , escriba **nodo Galería de elementos Web Explorador de servidores**.  
   
@@ -208,7 +208,7 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
 6.  En el **Agregar nuevo activo** cuadro de diálogo el **tipo** elija **Microsoft.VisualStudio.MefComponent**.  
   
     > [!NOTE]  
-    >  Este valor corresponde al elemento `MefComponent` del archivo extension.vsixmanifest. Este elemento especifica el nombre de un ensamblado de extensión en el paquete VSIX. Para obtener más información, consulte [elemento MEFComponent (Esquema VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Este valor corresponde al elemento `MefComponent` del archivo extension.vsixmanifest. Este elemento especifica el nombre de un ensamblado de extensión en el paquete VSIX. Para obtener más información, consulte [elemento MEFComponent (Esquema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 7.  En el **origen** elija **un proyecto de la solución actual**.  
   

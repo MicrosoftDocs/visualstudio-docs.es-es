@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 19792a9804072e7c6ade836b408951e2cfadd070
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c37ab6f42be8e363dcba8a3e2aa6ef78816bff0
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910971"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296247"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Tutorial: Crear un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 2
   Después de definir un tipo de elemento de proyecto de SharePoint personalizado y asociarla a una plantilla de elementos en Visual Studio, también puede proporcionar a un Asistente para la plantilla. Puede usar al Asistente para recopilar información de los usuarios cuando usan la plantilla para agregar una nueva instancia del elemento de proyecto a un proyecto. La información que recopile puede usarse para inicializar el elemento de proyecto.  
@@ -306,7 +306,7 @@ ms.locfileid: "49910971"
   
 13. En el **descripción** , escriba **abre el sitio Web de SharePoint Developer Center**.  
   
-14. En el **URL** , escriba **http://msdn.microsoft.com/sharepoint/default.aspx**y, a continuación, elija el **finalizar** botón.  
+14. En el **URL** , escriba **https://docs.microsoft.com/sharepoint/dev/** y, a continuación, elija el **finalizar** botón.  
   
      Visual Studio agrega un elemento que se denomina **CustomAction1** a su proyecto y abre el *Elements.xml* archivo en el editor. Compruebe que *Elements.xml* contiene los valores que especificó en el asistente.  
   
@@ -327,7 +327,7 @@ ms.locfileid: "49910971"
   
      El **configuración de la lista** aparece la página.  
   
-4.  En el **comunicaciones** encabezado en la parte superior de la página, elija el **Centro para desarrolladores de SharePoint** vincular, compruebe que el explorador abre el sitio Web http://msdn.microsoft.com/sharepoint/default.aspxy, a continuación, cierre el explorador.  
+4.  En el **comunicaciones** encabezado en la parte superior de la página, elija el **Centro para desarrolladores de SharePoint** vincular, compruebe que el explorador abre el sitio Web https://docs.microsoft.com/sharepoint/dev/y, a continuación, cierre el explorador.  
   
 ## <a name="cleaning-up-the-development-computer"></a>Limpiar el equipo de desarrollo
  Después de probar el elemento de proyecto, quite la plantilla de elemento de proyecto de la instancia experimental de Visual Studio.  

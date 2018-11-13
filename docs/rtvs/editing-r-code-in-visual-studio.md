@@ -1,7 +1,7 @@
 ---
 title: Edición de código de R
 description: Visual Studio ofrece una experiencia de edición adaptada a R mientras conserva todas las características y la posibilidad de usar extensiones.
-ms.date: 01/24/2018
+ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
 ms.topic: conceptual
@@ -10,16 +10,16 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 9eef75c505cb3ed41e24f99e08468512e424884a
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: c1d44e6d316db2ddce799784169a11a06578fe7f
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235466"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220884"
 ---
-# <a name="edit-r-code-in-visual-studio"></a>Editar código de R en Visual Studio
+# <a name="edit-r-code-in-visual-studio"></a>Edición de código de R en Visual Studio
 
-Herramientas de R para Visual Studio (RTVS) adapta la experiencia de edición de Visual Studio expresamente para R, mientras conserva todas las características y la posibilidad de usar extensiones. (Por ejemplo, si prefiere enlaces de teclado de VIM, puede instalar la [extensión gratuita VsVim](https://visualstudiogallery.msdn.microsoft.com/59ca71b3-a4a3-46ca-8fe1-0e90e3f79329) desde la Galería de Visual Studio).
+Herramientas de R para Visual Studio (RTVS) adapta la experiencia de edición de Visual Studio expresamente para R, mientras conserva todas las características y la posibilidad de usar extensiones. (Por ejemplo, si prefiere enlaces de teclado de VIM, puede instalar la [extensión VsVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim) gratuita desde Visual Studio Marketplace).
 
 Además de las características presentes en este artículo, consulte también [IntelliSense](r-intellisense.md), [linting o detección de errores](linting-r-code.md), [fragmentos de código](code-snippets-for-r.md) y [R Markdown](rmarkdown-with-r-in-visual-studio.md).
 

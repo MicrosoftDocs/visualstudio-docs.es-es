@@ -24,7 +24,7 @@ La pila de llamadas de eventos gráficos del Analizador de gráficos de Visual S
   
  Esta es la ventana de la Pila de llamadas de eventos:  
   
- ![La pila de llamadas que precede a un evento DrawIndexed. ] (media/gfx_diag_demo_graphics_event_call_stack_orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")  
+ ![La pila de llamadas que precede a un evento DrawIndexed. ](media/gfx_diag_demo_graphics_event_call_stack_orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")  
   
 ## <a name="understanding-the-graphics-event-call-stack"></a>Descripción de la pila de llamadas de eventos gráficos  
  Puede utilizar la Pila de llamadas de eventos para comprender el flujo de ejecución que llevó a un determinado evento de Direct3D. Se parece a la ventana Pila de llamadas de Visual Studio, excepto en que en lugar de mostrar la pila de llamadas actual del subproceso actual en una aplicación en ejecución, muestra la pila de llamadas que existía cuando se produjo el evento de Direct3D seleccionado. Desde la Pila de llamadas de eventos, puede ir directamente al sitio de llamada del evento de Direct3D seleccionado para inspeccionar el código que lo rodea.  

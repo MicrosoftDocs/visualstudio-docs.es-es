@@ -26,19 +26,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16e0efd8393d6324321a505247a3dad171a81a57
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 02e34d891fe972bc5d8722598e4b8b1af6066384
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33103481"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671032"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense para JavaScript
 
 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] proporciona una experiencia eficaz de edición de JavaScript lista para usar. Con tecnología de un servicio de lenguaje basado en TypeScript, Visual Studio proporciona IntelliSense con más funcionalidades, compatibilidad con características modernas de JavaScript y características de productividad mejoradas, como Ir a definición, la refactorización y mucho más.
 
 > [!NOTE]
-> JavaScript Language Service en [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] usa un nuevo motor para el servicio de lenguaje (denominado "Salsa"). Este tema incluye información, pero es posible que también quiera leer esta [entrada de blog](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/more-productive-javascript-in-visual-studio-2017-rc). La nueva experiencia de edición también se centra principalmente en el código de Visual Studio. Consulte [documentos de VS Code](https://code.visualstudio.com/docs/languages/javascript) para obtener más información.
+> JavaScript Language Service en [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] usa un nuevo motor para el servicio de lenguaje (denominado "Salsa"). Este tema incluye información, pero es posible que también quiera leer esta [entrada de blog](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/more-productive-javascript-in-visual-studio-2017-rc/). La nueva experiencia de edición también se centra principalmente en el código de Visual Studio. Consulte [documentos de VS Code](https://code.visualstudio.com/docs/languages/javascript) para obtener más información.
 
 Para más información sobre la funcionalidad general de IntelliSense de Visual Studio, vea [Usar IntelliSense](../ide/using-intellisense.md).
 

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c85ce933f7ec1c19304a2c0d0fc4c1001df91823
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65da91ea1182a5c14d6c4b27057b6561221077e8
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929808"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220843"
 ---
 # <a name="summary-view"></a>Vista Resumen
 En la vista Resumen se muestra información sobre las funciones o los objetos más exigentes en una generación de perfiles. Esta vista proporciona un gráfico de escala de tiempo y dos o más listas de las funciones o los objetos más exigentes según las métricas de rendimiento del método de generación de perfiles. Los datos de esta vista dependen del método de generación de perfiles utilizado (muestreo, instrumentación o simultaneidad) y de si se ha recopilado la asignación de memoria de .NET.  
@@ -52,8 +52,8 @@ En la vista Resumen se muestra información sobre las funciones o los objetos m�
 | **Mostrar árbol de llamadas reducido** | Muestra las rutas de acceso de ejecución más exigentes en la vista Árbol de llamadas. Para obtener más información, consulte [Vista Árbol de llamadas](../profiling/call-tree-view.md). |
 | **Mostrar líneas activas** | No está disponible para generar perfiles de datos que se han recopilado mediante el método de instrumentación. Muestra las líneas de código fuente más exigentes en la vista Líneas. Para obtener más información, consulte [Vista Líneas](../profiling/lines-view.md). |
 | **Comparar informes** | Muestra el cuadro de diálogo **Seleccionar archivos de análisis para la comparación**, en el que puede especificar otro archivo de datos de generación de perfiles para compararlo con el archivo actual. Para obtener más información, consulte [Comparar archivos de datos de rendimiento](../profiling/comparing-performance-data-files.md). |
-| **Exportar datos de informe** | Muestra el cuadro de diálogo **Exportar informe**, en el que puede especificar una o varias vistas de informe para guardar como archivos de valores separados por comas (.csv) o .xml. Para obtener más información, consulte [Cómo: Exportar informes de herramientas de generación de perfiles](http://msdn.microsoft.com/en-us/174b5bd3-df9b-4fd4-88d4-76032ab90451). |
-| **Guardar informe analizado** | Guarda el archivo de datos de generación de perfiles actual como un archivo .vsps, que se abre más rápidamente en la interfaz para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Para obtener más información, consulte [Cómo: Guardar archivos de datos de generación de perfiles analizados](http://msdn.microsoft.com/en-us/0340ddde-caf4-48ac-8af3-d15dcdade556). |
+| **Exportar datos de informe** | Muestra el cuadro de diálogo **Exportar informe**, en el que puede especificar una o varias vistas de informe para guardar como archivos de valores separados por comas (.csv) o .xml. Para obtener más información, consulte [Cómo: Exportar informes de herramientas de generación de perfiles](/previous-versions/visualstudio/visual-studio-2010/ms182394\(v\=vs.100\)). |
+| **Guardar informe analizado** | Guarda el archivo de datos de generación de perfiles actual como un archivo .vsps, que se abre más rápidamente en la interfaz para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Para obtener más información, consulte [Cómo: Guardar archivos de datos de generación de perfiles analizados](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\)). |
 | **Filtrar datos del informe** | Muestra el panel de filtro del informe de generación de perfiles, en el que puede especificar criterios para restringir los datos de la vista Informe. Para obtener más información, consulte [Filtro de vista Informe de rendimiento](../profiling/performance-report-view-filter.md). |
 | **Alternar pantalla completa** | Alterna el modo de pantalla completa para la vista Informe. |
 

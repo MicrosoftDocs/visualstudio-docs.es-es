@@ -16,15 +16,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b2ccffd384bd508998f2d82098a99835f59ad641
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 27e8ab6651c6838de92b8a3d83311ebd47fabcbb
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908787"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296195"
 ---
 # <a name="form-support-in-workflows"></a>Compatibilidad con formularios en los flujos de trabajo
-  Se pueden usar los cuatro tipos de formularios en un flujo de trabajo: asociación, iniciación, modificación y tarea. Estos tipos de formulario pueden basarse en un formulario ASPX o un formulario de InfoPath. El nivel de compatibilidad que [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proporciona de forma particular depende de varios factores, que se describen en las tablas siguientes. Para obtener más información sobre los tipos de formulario de flujo de trabajo, consulte [formularios de flujo de trabajo información general sobre](http://go.microsoft.com/fwlink/?LinkId=185228) en el sitio Web de MSDN.  
+  Se pueden usar los cuatro tipos de formularios en un flujo de trabajo: asociación, iniciación, modificación y tarea. Estos tipos de formulario pueden basarse en un formulario ASPX o un formulario de InfoPath. El nivel de compatibilidad que [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proporciona de forma particular depende de varios factores, que se describen en las tablas siguientes. Para obtener más información sobre los tipos de formulario de flujo de trabajo, consulte [formularios de flujo de trabajo información general sobre](http://go.microsoft.com/fwlink/?LinkId=185228).  
   
 ## <a name="xml-refactoring"></a>Refactorización de XML
  Al agregar un formulario de asociación o iniciación de ASPX para un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] elemento de proyecto de flujo de trabajo, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] automáticamente refactoriza el código XML en el flujo de trabajo *Elements.xml* archivo para mantener el atributo que hace referencia a la asociación o se elimina el formulario de iniciación en sincronización cada vez que se actualiza la ruta de acceso de implementación o el nombre de formulario o el formulario. Sin embargo, cuando usa otros tipos de formulario en un flujo de trabajo, como un formulario de tareas o modificación, el *Elements.xml* no se refactoriza el archivo.  
