@@ -78,7 +78,7 @@ items:
     href: azure-sdk-for-python.md
 - name: Guías de procedimientos
   items:
-  - name: Administración de entornos
+  - name: Administración de entornos de Python
     href: managing-python-environments-in-visual-studio.md
     items:
     - name: Selección de un intérprete para un proyecto
@@ -134,9 +134,9 @@ items:
     href: python-item-templates.md
   - name: Opciones
     href: python-support-options-and-settings-in-visual-studio.md
-ms.openlocfilehash: 49649ec3fa283eccc068ffc790b0199cf310ec23
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 25583cb5cea6c7ef971413b14ec986d08af9dab8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49100957"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349262"

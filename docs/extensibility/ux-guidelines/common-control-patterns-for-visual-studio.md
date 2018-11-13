@@ -73,9 +73,9 @@ Lo primero que debe considerar al aplicar un estilo a controles es si se usará 
   
 -   Los campos de entrada deben ajustarse al contenido, no para ajustarse al ancho de la ventana en la que se muestran, ni para arbitrariamente que coincida con la longitud de un campo largo, como una ruta de acceso. Longitud podría ser una indicación al usuario de límite en cuanto a cuántos caracteres se permiten en el campo.  
   
-     ![Longitud de campo de entrada incorrecta: no es probable que el nombre será así de largos. ] (../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707 01_IncorrectInputFieldControl")<br />Longitud de campo de entrada incorrecta: no es probable que el nombre será así de largos.
+     ![Longitud de campo de entrada incorrecta: no es probable que el nombre será así de largos. ](../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707 01_IncorrectInputFieldControl")<br />Longitud de campo de entrada incorrecta: no es probable que el nombre será así de largos.
   
-     ![Corrija la longitud de campo de entrada: el campo de entrada es un ancho razonable para el contenido esperado. ] (../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707 02_CorrectInputFieldControl")<br />Corrija la longitud de campo de entrada: el campo de entrada es un ancho razonable para el contenido esperado.
+     ![Corrija la longitud de campo de entrada: el campo de entrada es un ancho razonable para el contenido esperado. ](../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707 02_CorrectInputFieldControl")<br />Corrija la longitud de campo de entrada: el campo de entrada es un ancho razonable para el contenido esperado.
   
 ###  <a name="BKMK_ComboBoxesAndDropDowns"></a> Los cuadros combinados y listas desplegables  
 Para el comportamiento de una interacción típica, siga el [directrices de escritorio de Windows para las listas desplegables y cuadros combinados](/windows/desktop/uxguide/ctrl-drop).  
@@ -89,9 +89,9 @@ Para el comportamiento de una interacción típica, siga el [directrices de escr
 #### <a name="layout"></a>Diseño  
 Desplegables y cuadros combinados deben ajustarse al contenido, no para ajustarse al ancho de la ventana en la que se muestran, ni para arbitrariamente que coincida con la longitud de un campo largo, como una ruta de acceso.  
   
-![Incorrecto: el ancho de la lista desplegable es demasiado largo para el contenido que se mostrará. ] (../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707 03_IncorrectDropDownLayout")<br />Incorrecto: el ancho de la lista desplegable es demasiado largo para el contenido que se mostrará.
+![Incorrecto: el ancho de la lista desplegable es demasiado largo para el contenido que se mostrará. ](../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707 03_IncorrectDropDownLayout")<br />Incorrecto: el ancho de la lista desplegable es demasiado largo para el contenido que se mostrará.
   
-![Correcto: la lista desplegable tiene el tamaño para permitir el crecimiento de traducción, pero no innecesariamente largas. ] (../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707 04_CorrectDropDownLayout")<br />Correcto: la lista desplegable tiene el tamaño para permitir el crecimiento de traducción, pero no innecesariamente largas. 
+![Correcto: la lista desplegable tiene el tamaño para permitir el crecimiento de traducción, pero no innecesariamente largas. ](../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707 04_CorrectDropDownLayout")<br />Correcto: la lista desplegable tiene el tamaño para permitir el crecimiento de traducción, pero no innecesariamente largas. 
   
 ###  <a name="BKMK_CheckBoxes"></a> Casillas de verificación  
 Para el comportamiento de una interacción típica, siga el [directrices de escritorio de Windows para las casillas de verificación](/windows/desktop/uxguide/ctrl-check-boxes).  
@@ -108,9 +108,9 @@ Para el comportamiento de una interacción típica, siga el [directrices de escr
   
 -   Alinear las casillas de verificación con la línea de base de la primera línea de texto.  
   
-     ![Incorrecto: la casilla de verificación se centra en el texto. ] (../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707 05_IncorrectCheckBoxAlign")<br />Incorrecto: la casilla de verificación se centra en el texto.
+     ![Incorrecto: la casilla de verificación se centra en el texto. ](../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707 05_IncorrectCheckBoxAlign")<br />Incorrecto: la casilla de verificación se centra en el texto.
   
-     ![Correcto: la casilla de verificación se alinea con la primera línea del texto. ] (../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707 06_CorrectCheckBoxAlign")<br />Correcto: la casilla de verificación se alinea con la primera línea del texto.
+     ![Correcto: la casilla de verificación se alinea con la primera línea del texto. ](../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707 06_CorrectCheckBoxAlign")<br />Correcto: la casilla de verificación se alinea con la primera línea del texto.
   
 ###  <a name="BKMK_RadioButtons"></a> Botones de radio  
 Para el comportamiento de una interacción típica, siga el [directrices de escritorio de Windows para los botones de radio](/windows/desktop/uxguide/ctrl-radio-buttons).  
@@ -346,9 +346,9 @@ El diseño de botón de expansión utilizado por Windows y Visual Studio deben c
 #### <a name="selection"></a>Selección  
 Cuando se selecciona un nodo dentro de la vista de árbol, debe expandir el resaltado para todo el ancho del control de vista de árbol. Esto ayuda a los usuarios a identificar claramente qué elemento ha seleccionado. Colores de selección deben reflejar el tema actual de Visual Studio.  
   
-![Correcto: resaltado del nodo seleccionado se ajusta a todo el ancho del control de vista de árbol. ] (../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705 1_TreeViewCorrect")<br />Correcto: resaltado del nodo seleccionado se ajusta a todo el ancho del control de vista de árbol.
+![Correcto: resaltado del nodo seleccionado se ajusta a todo el ancho del control de vista de árbol. ](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705 1_TreeViewCorrect")<br />Correcto: resaltado del nodo seleccionado se ajusta a todo el ancho del control de vista de árbol.
   
-![Incorrecta: el resaltado del nodo seleccionado no cabe todo el ancho del control de vista de árbol. ] (../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705 3_TreeViewIncorrect2")<br />Incorrecta: el resaltado del nodo seleccionado no cabe todo el ancho del control de vista de árbol.
+![Incorrecta: el resaltado del nodo seleccionado no cabe todo el ancho del control de vista de árbol. ](../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705 3_TreeViewIncorrect2")<br />Incorrecta: el resaltado del nodo seleccionado no cabe todo el ancho del control de vista de árbol.
   
 #### <a name="icons"></a>Iconos  
 Si ayudar a identificar visualmente las diferencias entre los elementos de iconos solo deben usarse en controles de vista de árbol. En general, los iconos deben usarse solo en listas heterogéneas en el que los iconos de llevan información para diferenciar los tipos de elementos. En una lista homogénea mediante iconos, con frecuencia pueden considerarse como ruido y debe evitarse. En ese caso, el icono de grupo (principal) puede transmitir el tipo de elementos dentro de él. La excepción a esta regla sería si el icono es dinámico y se utiliza para indicar el estado.  
@@ -356,14 +356,14 @@ Si ayudar a identificar visualmente las diferencias entre los elementos de icono
 #### <a name="scroll-bars"></a>Barras de desplazamiento  
 Siempre deben estar oculta las barras de desplazamiento si el contenido se ajusta dentro del control de vista de árbol. Es aceptable para las barras de desplazamiento se oculta o semitransparente en una ventana desplazable y aparecen cuando la ventana que contiene la vista de árbol tiene el foco, o después al mantener el mouse del árbol ver propio.  
   
-![Se muestran las barras de desplazamiento vertical y horizontal porque el contenido ha superado los límites del control de vista de árbol. ] (../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705 4_Scrollbars")<br />Se muestran las barras de desplazamiento vertical y horizontal porque el contenido ha superado los límites del control de vista de árbol.
+![Se muestran las barras de desplazamiento vertical y horizontal porque el contenido ha superado los límites del control de vista de árbol. ](../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705 4_Scrollbars")<br />Se muestran las barras de desplazamiento vertical y horizontal porque el contenido ha superado los límites del control de vista de árbol.
   
 ###  <a name="BKMK_TreeViewInteractions"></a> Interacciones de la vista de árbol  
   
 #### <a name="context-menus"></a>Menús contextuales  
 Un nodo de vista de árbol puede mostrar las opciones de submenú en un menú contextual. Normalmente, esto se produce cuando un usuario ha hecho un elemento o presionó la tecla de menú en un teclado de Windows con el elemento seleccionado. Es importante que el nodo recibe el foco y está seleccionado. Esto ayuda al usuario a identificar qué elemento al que pertenece el submenú.  
   
-![El elemento que se generan el foco de ganancias del menú contextual para notificar al usuario qué elemento se ha seleccionado. ] (../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705 5_ContextMenu")<br />El elemento que se generan el foco de ganancias del menú contextual para notificar al usuario qué elemento se ha seleccionado.
+![El elemento que se generan el foco de ganancias del menú contextual para notificar al usuario qué elemento se ha seleccionado. ](../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705 5_ContextMenu")<br />El elemento que se generan el foco de ganancias del menú contextual para notificar al usuario qué elemento se ha seleccionado.
   
 #### <a name="keyboard"></a>Teclado  
 La vista de árbol debe proporcionar la capacidad de expandir y contraer los nodos mediante el teclado y seleccionar elementos. Esto garantiza que navegación cumple con nuestros requisitos de accesibilidad.  

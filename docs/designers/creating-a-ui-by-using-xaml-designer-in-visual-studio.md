@@ -1,6 +1,6 @@
 ---
-title: Crear una IU con el Diseñador XAML en Visual Studio
-ms.date: 07/17/2017
+title: Creación de una UI en el Diseñador XAML
+ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: da5b6d3659371eb7e6d04a782c37cbab73a59fd5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b991b50ab2ee329adaaff7a31c2dbb4f2d5bb806
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903262"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51221001"
 ---
-# <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Crear una IU con el Diseñador XAML en Visual Studio
+# <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Creación de una UI con el Diseñador XAML en Visual Studio
 
 El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarle a diseñar aplicaciones web y de Windows basadas en XAML. Puede crear interfaces de usuario para sus aplicaciones arrastrando controles desde el **Cuadro de herramientas** y estableciendo las propiedades en la ventana **Propiedades** . También puede modificar el XAML directamente en la vista XAML.
 
@@ -108,6 +108,9 @@ El zoom de marcado permite cambiar el tamaño de la vista **XAML**. Puede hacer 
 
 ## <a name="device-window"></a>Ventana de dispositivo
 
+> [!NOTE]
+> Si la versión de la plataforma de destino (`TargetPlatformVersion`) de una aplicación de UWP es 10.0.16299.0 o superior, la ventana **Dispositivo** no está disponible.
+
 La ventana **Dispositivo** del Diseñador XAML permite simular varias vistas, presentaciones y opciones de presentación en tiempo de diseño para el proyecto. La ventana **Dispositivo** está disponible en el menú **Diseño** cuando se trabaja en el Diseñador XAML. Este es su aspecto:
 
 ![Ventana de dispositivo](../designers/media/xaml_editor_device_panel.png)
@@ -190,7 +193,7 @@ La ventana **Propiedades** permite establecer valores de propiedad en los contro
 
 ![Propiedades (ventana)](../designers/media/xaml_editor_prop_window.png)
 
-Hay varias opciones en la parte superior de la ventana **Propiedades**. Puede cambiar el nombre del elemento seleccionado actualmente mediante el cuadro **Nombre** . En la esquina superior izquierda, hay un icono que representa el elemento actualmente seleccionado. Para organizar las propiedades por categoría o alfabéticamente, haga clic en **Categoría**, **Nombre**u **Origen** en la lista **Organizar por** . Para ver la lista de eventos de un control, haga clic en el botón **Eventos** , que muestra un símbolo de rayo. Para buscar una propiedad, empiece a escribir el nombre de la propiedad en el cuadro **Buscar propiedades** . La ventana **Propiedades** muestra las propiedades que coinciden con la búsqueda a medida que escribe. Algunas propiedades permiten establecer propiedades avanzadas si selecciona un botón de flecha hacia abajo. Para obtener más información sobre el uso de propiedades y el control de eventos, vea [Inicio rápido: agregar controles y administrar eventos (XAML)](http://go.microsoft.com/fwlink/?LinkID=247983)
+Hay varias opciones en la parte superior de la ventana **Propiedades**. Puede cambiar el nombre del elemento seleccionado actualmente mediante el cuadro **Nombre** . En la esquina superior izquierda, hay un icono que representa el elemento actualmente seleccionado. Para organizar las propiedades por categoría o alfabéticamente, haga clic en **Categoría**, **Nombre**u **Origen** en la lista **Organizar por** . Para ver la lista de eventos de un control, haga clic en el botón **Eventos** , que muestra un símbolo de rayo. Para buscar una propiedad, empiece a escribir el nombre de la propiedad en el cuadro **Buscar propiedades** . La ventana **Propiedades** muestra las propiedades que coinciden con la búsqueda a medida que escribe. Algunas propiedades permiten establecer propiedades avanzadas si selecciona un botón de flecha hacia abajo. Para obtener más información sobre el uso de propiedades y el control de eventos, vea [Introducción a los controles y patrones](/windows/uwp/design/controls-and-patterns/controls-and-events-intro).
 
 A la derecha de cada propiedad de valor se encuentra un *marcador de propiedad* que aparece como un símbolo de cuadro. La apariencia del marcador de propiedad indica si se aplicó a la propiedad un enlace de datos o un recurso. Por ejemplo, un símbolo de cuadro blanco indica un valor predeterminado, un símbolo de cuadro negro suele indicar que se ha aplicado un recurso local y un símbolo de cuadro naranja suele indicar que se ha aplicado un enlace de datos. Al hacer clic en el marcador de propiedad, puede navegar a la definición de un estilo, abrir el generador de enlace de datos o abrir el selector de recursos.
 

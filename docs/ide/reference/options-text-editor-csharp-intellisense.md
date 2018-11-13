@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d8f6928dd09b971e2c5924d34058a1a0d5e28394
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3ab871d07a8519fa6850ad3d1743a7cd1d0fa110
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947396"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672490"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Opciones, editor de texto, C#, IntelliSense
 
@@ -46,9 +46,7 @@ La página de opciones de **IntelliSense** contiene las siguientes opciones:
 
 - Mostrar filtros de elementos de finalización
 
-- Mostrar sugerencias de nombres
-
-### <a name="snippets-behavior"></a>Comportamiento de los fragmentos de código
+## <a name="snippets-behavior"></a>Comportamiento de los fragmentos de código
 
 - No incluir nunca fragmentos de código
 
@@ -62,7 +60,7 @@ La página de opciones de **IntelliSense** contiene las siguientes opciones:
 
    Si esta opción está seleccionada, IntelliSense agrega a la lista de finalización alias relativos a los fragmentos de código de C# cuando se presione **?**+**TAB** después de un identificador.
 
-### <a name="enter-key-behavior"></a>Comportamiento de la tecla Entrar
+## <a name="enter-key-behavior"></a>Comportamiento de la tecla Entrar
 
 - No agregar nunca una línea nueva al presionar Entrar
 
@@ -85,6 +83,10 @@ La página de opciones de **IntelliSense** contiene las siguientes opciones:
 - Agregar siempre una línea nueva al presionar Entrar
 
    Especifica que si escribe *cualquier* carácter de una entrada en la lista de finalización y, después, presiona **Entrar**, se crea una línea automáticamente y el cursor se mueve a esa nueva línea.
+
+## <a name="show-name-suggestions"></a>Mostrar sugerencias de nombres
+
+   Finaliza automáticamente el nombre de objeto de los miembros que se han seleccionado recientemente. 
 
 ## <a name="see-also"></a>Vea también
 

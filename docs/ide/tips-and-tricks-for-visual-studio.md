@@ -1,6 +1,6 @@
 ---
 title: Métodos abreviados de teclado de Visual Studio
-ms.date: 06/21/2017
+ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc99820eded646d745d54e50fb58917a2c15b094
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: cde519515782f453a8a60894a8bcc6dc6c714cc1
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321286"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220858"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Métodos abreviados de teclado de Visual Studio
 
@@ -73,6 +73,11 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 
 |Comando|Acceso directo|Disponibilidad de versión|
 |-|-|-|
+|Ir a todo|**Ctrl**+**T**|
+|Ir a archivos recientes|**Ctrl**+**T**,**R**|
+|Varios puntos de inserción de varios símbolos de inserción|**Ctrl**+**Alt**+**clic**|
+|Varios símbolos de intercalación agregan selección coincidente|**Mayús**+**Alt**+**Ins**|
+|Dar formato al documento|**Ctrl**+**K**,**D**|Visual Studio 2017, versión 15.8|
 |Modo de sugerencia de IntelliSense|**Ctrl**+**Alt**+**Espacio** (alternancia)||
 |Forzar la visualización de IntelliSense|**Ctrl**+**J**||
 |Acciones rápidas|**Ctrl**+**.**||
@@ -95,6 +100,9 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 |Navegar entre varias ventanas Definición de Peek|**Ctrl**+**Alt**+**-** y **Ctrl**+**Alt**+**=**||
 |Navegar entre varios resultados de Peek|**F8** y **Mayús**+**F8**||
 |Alternar entre la ventana del editor de código y la ventana Definición de Peek|**Mayús**+**Esc**||
+|Ir a bloque de inclusión|**Ctrl**+**Alt**+**Flecha arriba**|
+|Ir al problema siguiente o anterior|**Alt**+**RePág**/**AvPág**|
+|Menú de navegación contextual|**Alt**+**`**|
 
 ## <a name="toolbars"></a>Barras de herramientas
 
@@ -128,4 +136,4 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 
 - [Sugerencias y trucos de accesibilidad](../ide/reference/accessibility-tips-and-tricks.md)
 - [Keyboard shortcuts (Azure DevOps Services and TFS)](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts) [Métodos abreviados de teclado (Azure DevOps Services y TFS)]
-- [Visual Studio Tips and Tricks Blog](http://blogs.msdn.com/b/zainnab) (Blog de sugerencias y trucos de Visual Studio)
+- [Visual Studio Tips and Tricks Blog](https://blogs.msdn.com/b/zainnab) (Blog de sugerencias y trucos de Visual Studio)

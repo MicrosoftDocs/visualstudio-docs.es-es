@@ -10,19 +10,19 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: cd23bbf09e79ac4f7763a563e361954d9cfde072
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: da2e91e15572a9904115926447523d8dba23a36a
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120684"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000731"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Registro de cambios (Visual Studio Tools para Unity, Windows)
 Registro de cambios de Visual Studio Tools para Unity.
 
 ## <a name="3807"></a>3.8.0.7
  Publicado el 20 de septiembre de 2018
- 
+
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 -   **Depurador:**
@@ -31,7 +31,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ## <a name="3806"></a>3.8.0.6
  Publicado el 27 de agosto de 2018
- 
+
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 -   **Integración:**
@@ -40,7 +40,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ## <a name="3805"></a>3.8.0.5
  Publicado el 20 de agosto de 2018
- 
+
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 -   **Integración:**
@@ -49,13 +49,13 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ## <a name="3804"></a>3.8.0.4
  Publicado el 14 de agosto de 2018
- 
+
 ### <a name="new-features"></a>Características nuevas
 
 -   **Evaluación:**
 
     -   Se agregó compatibilidad para los valores de puntero.
-    
+
     -   Se agregó compatibilidad para métodos genéricos.
 
 ### <a name="bug-fixes"></a>Correcciones de errores
@@ -66,7 +66,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ## <a name="3803"></a>3.8.0.3
  Publicado el 24 de julio de 2018
- 
+
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 -   **Generación de proyectos:**
@@ -75,24 +75,24 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ## <a name="3802"></a>3.8.0.2
  Publicado el 7 de julio de 2018
- 
+
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 -   **Generación de proyectos:**
 
     -   Solución alternativa temporal de un error de rendimiento de Unity: MonoIslands en caché al generar proyectos.
-    
+
 ## <a name="3801"></a>3.8.0.1
  Publicado el 26 de junio de 2018
- 
+
 ### <a name="new-features"></a>Características nuevas
 
 -   **Debugging:** (Depuración)
 
     -   Se agregó compatibilidad para los comandos UserLog y UserBreak.
-    
+
     -   Se agregó compatibilidad con la carga de tipo Lazy (optimizando la carga de red y la latencia de respuesta del depurador).
-       
+
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 -   **Evaluación:**
@@ -101,19 +101,19 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ## <a name="3800"></a>3.8.0.0
  Publicado el 30 de mayo de 2018
- 
+
 ### <a name="new-features"></a>Características nuevas
 
 -   **Debugging:** (Depuración)
 
     -   Se agregó compatibilidad para mostrar variables en construcciones asincrónicas.
-    
+
     -   Se agregó compatibilidad para el procesamiento de tipos anidados al establecer puntos de interrupción, para evitar advertencias de construcciones del compilador.
-    
+
 -   **Integración:**
 
     -   Se agregó compatibilidad para las gramáticas de textmate para sombreadores (la carga de trabajo de C++ ya no es necesaria para el coloreado de código del sombreador).
-    
+
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 -   **Generación de proyectos:**
@@ -137,15 +137,15 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   **Debugging:** (Depuración)
 
     -   Se ha agregado compatibilidad con la depuración orquestada (depuración de varios reproductores/editor en la misma sesión de Visual Studio).
-    
+
     -   Se ha agregado compatibilidad con la depuración del reproductor USB de Android.
-    
+
     -   Se ha agregado compatibilidad con la depuración del reproductor UWP/IL2CPP.
 
 -   **Evaluación:**
 
     -   Se ha agregado compatibilidad con especificadores hexadecimales.
-    
+
     -   Se ha mejorado la experiencia de evaluación de la ventana Inspección.
 
 ### <a name="bug-fixes"></a>Correcciones de errores
@@ -841,9 +841,9 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
--   Se ha corregido el procesamiento de temas de Visual Studio. Anteriormente, los cuadros de diálogo en temas negros podían aparecer vacíos (problemas de conexión [#932637](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/932637/) y [#936439](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/936439/)).
+-   Se ha corregido el procesamiento de temas de Visual Studio. Anteriormente, los cuadros de diálogo en temas negros podían aparecer vacíos.
 
--   Corrección de bloqueo de Unity al conectar el depurador durante la recompilación de Unity (problemas de conexión [#947119](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/947119/) y [#969211](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/969211/)).
+-   Se ha corregido la congelación de Unity al conectar el depurador durante la recompilación de Unity.
 
 -   Se han corregido los puntos de interrupción al depurar editores o reproductores remotos compilados en otro sistema.
 
@@ -853,7 +853,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 -   Se ha corregido el procesamiento de ámbito de variable en el depurador para evitar variables activas que aparecen fuera del ámbito.
 
--   Se ha corregido la búsqueda de miembros estáticos en la evaluación de expresiones del depurador (problema de conexión [#953379](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/953379/)).
+-   Se ha corregido la búsqueda de miembros estáticos en la evaluación de expresiones del depurador.
 
 -   Se ha corregido la visualización de tipos en la Evaluación de expresiones del depurador para mostrar las propiedades y los campos estáticos.
 

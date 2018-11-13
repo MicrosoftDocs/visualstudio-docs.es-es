@@ -1,6 +1,6 @@
 ---
 title: Opciones, editor de texto, C#, avanzado
-ms.date: 11/04/2016
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 16c92111fc29071447d4af5e736b881fa7c7a769
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 7cfbc6d57e5bfd3c6a8f317967448039a9b3f5e4
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356748"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670720"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opciones, editor de texto, C#, avanzado
 
@@ -36,7 +36,7 @@ Use la página de opciones **Avanzado** para modificar la configuración del for
 
 - Aplicar primero directivas "System" al ordenar instrucciones Using
 
-   Cuando se selecciona, el comando **Eliminar y ordenar instrucciones Using** en el menú contextual ordena las directivas `using` y coloca los espacios de nombres "System" en la parte superior de la lista.
+   Cuando se selecciona el comando **Eliminar y ordenar instrucciones Using** en el menú contextual, ordena las directivas `using` y coloca los espacios de nombres "System" en la parte superior de la lista.
 
    Antes de ordenar:
 
@@ -89,9 +89,10 @@ Use la página de opciones **Avanzado** para modificar la configuración del for
    using System.Linq;
    ```
    
-- Agregar usos para tipos de ensamblados de referencia y paquetes NuGet 
+- Sugerir usos para tipos de ensamblados de referencia 
+- Sugerir usos para tipos de paquetes NuGet 
 
-   Cuando se selecciona, una [acción rápida](../quick-actions.md) se encuentra disponible para instalar un paquete NuGet y agregar una directiva `using` para tipos sin referencia.
+   Cuando se seleccionan estas opciones, una [acción rápida](../quick-actions.md) se encuentra disponible para instalar un paquete NuGet y agregar una directiva `using` para tipos sin referencia.
 
    ![Acción rápida para instalar el paquete NuGet en Visual Studio](media/nuget-lightbulb.png)
   
@@ -106,6 +107,16 @@ Use la página de opciones **Avanzado** para modificar la configuración del for
 - Especificar el modo de esquematización al abrir los archivos
 
    Cuando está seleccionada, esquematiza automáticamente el archivo de código, lo que crea bloques contraíbles de código. La primera vez que se abre un archivo, los bloques #regions y los bloques de código inactivos se contraen.
+
+- Mostrar separadores de línea de procedimientos
+
+   El editor de texto indica el ámbito visual de los procedimientos. Se dibuja una línea en los archivos de código fuente *.vb* del proyecto en las ubicaciones indicadas en la tabla siguiente:
+
+   |Ubicación en el archivo de código fuente .vb|Ejemplo de ubicación de línea|
+   |---------------------------------|------------------------------|
+   |Después del cierre de una construcción de declaración de bloque|- Al final de una clase, estructura, módulo, interfaz o enumeración<br />- Después de una propiedad, función o sub<br />- No entre las cláusulas get y set de una propiedad|
+   |Después de un conjunto de construcciones de línea única|- Después de las instrucciones Import, antes de una definición de tipo en un archivo de clase<br />- Después de las variables declaradas en una clase, antes de cualquier procedimiento|
+   |Después de declaraciones de línea única (declaraciones de nivel que no sea de bloque)|- Después de instrucciones Import, instrucciones Inherits, declaraciones de variables, declaraciones de eventos, declaraciones de delegados e instrucciones Declare DLL|
 
 ## <a name="editor-help"></a>Ayuda del editor
 

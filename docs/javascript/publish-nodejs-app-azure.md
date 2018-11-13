@@ -2,7 +2,7 @@
 title: Publicar una aplicación de Node.js en App Service de Linux
 description: Puede publicar aplicaciones de Node.js creadas en Visual Studio en App Service de Linux en Azure
 ms.custom: ''
-ms.date: 06/10/2018
+ms.date: 11/1/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cf96610abcd0cc18bdaab6177980ca04e0232642
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 8af99919fe80f1f5e2776e381d24aa8d37bad36d
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924775"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750776"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Publicar una aplicación de Node.js en Azure (App Service de Linux)
 
@@ -42,15 +42,19 @@ En este tutorial aprenderá a:
 
 1. Cree una aplicación de Express de TypeScript mediante el cuadro de diálogo **Archivo** > **Nuevo proyecto**.
 
+1. En el nodo **TypeScript**, seleccione **Basic Node.js Express 4 Application**.
+
     ![Creación de una aplicación de Express de TypeScript](../javascript/media/azure-ts-express-app.png)
 
-2. Presione **F5** para compilar y ejecutar la aplicación y asegúrese de que todo funciona según lo previsto.
+1. Haga clic en **Aceptar** para crear el proyecto en Visual Studio.
 
-3. Seleccione **Archivo** > **Agregar al control de código fuente** para crear un repositorio de Git local para el proyecto.
+1. Presione **F5** para compilar y ejecutar la aplicación y asegúrese de que todo funciona según lo previsto.
+
+1. Seleccione **Archivo** > **Agregar al control de código fuente** para crear un repositorio de Git local para el proyecto.
 
     En este punto, hay una aplicación de Node.js que usa el marco de Express y está escrita en TypeScript funcionando y se inserta en el repositorio en el control de código fuente local.
 
-4. Edite el proyecto como quiera antes de continuar con los pasos siguientes.
+1. Edite el proyecto como quiera antes de continuar con los pasos siguientes.
 
 ## <a name="push-code-from-visual-studio-to-github"></a>Insertar código de Visual Studio en GitHub
 

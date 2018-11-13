@@ -1,6 +1,6 @@
 ---
 title: Opciones, editor de texto, JavaScript, IntelliSense
-ms.date: 11/04/2016
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,54 +14,32 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36ca451f4585e57c430456412e1811ddb56d8adf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 742d6394975b6920218579e1b4652bb2e99c479c
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220396"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670785"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Opciones, editor de texto, JavaScript, IntelliSense
-Utilice la página **IntelliSense** del cuadro de diálogo **Opciones** para modificar la configuración que afecta al comportamiento de IntelliSense para JavaScript. Puede tener acceso a la página **IntelliSense** eligiendo **Herramientas**, **Opciones** en la barra de menús, y expandiendo **Editor de texto**, **JavaScript**, **IntelliSense**.
+Utilice la página **IntelliSense** del cuadro de diálogo **Opciones** para modificar la configuración que afecta al comportamiento de IntelliSense para JavaScript. Puede acceder a la página **IntelliSense** en **Herramientas** > **Opciones**, en la barra de menús. Luego, amplíe **Editor de texto** > **JavaScript** > **IntelliSense**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 La página **IntelliSense** contiene las siguientes secciones:
 
-## <a name="validation"></a>Validación
- Puede utilizar estas opciones para establecer preferencias sobre el modo en que el editor de JavaScript valida la sintaxis del documento.
-
-## <a name="uielement-list"></a>Lista de UIElement
- **Mostrar errores de sintaxis**
-
- Si esta casilla no está activada, el editor de código JavaScript no muestra errores de sintaxis. Esto resulta útil si trabaja con código que no es suyo y no tiene intención de corregir los errores de sintaxis.
-
- Con esta casilla activada, tiene la opción de activar la casilla **Mostrar errores como advertencias** .
-
- **Mostrar errores como advertencias**
-
- Cuando se activa esta casilla, los errores de JavaScript se muestran como advertencias en lugar de como errores en la lista de errores.
-
- **Descargar referencias remotas (por ejemplo, http://) para los archivos del proyecto de archivos varios**
-
- Cuando se activa esta casilla, y si tiene un archivo JavaScript abierto fuera del contexto de un proyecto, Visual Studio descargará los archivos JavaScript remotos a los que se hace referencia en el archivo con el fin de proporcionar la información de IntelliSense. Si se selecciona esta opción, los archivos se descargarán cuando se incluyan como referencia en el archivo JavaScript.
-
-> [!NOTE]
-> En los proyectos web, los archivos remotos a los que se hace referencia en el proyecto se descargan de forma predeterminada.
-
-
 ## <a name="statement-completion"></a>Finalización de instrucciones
  Puede utilizar estas opciones para cambiar el comportamiento de la finalización de instrucciones de IntelliSense.
 
-## <a name="uielement-list"></a>Lista de UIElement
+### <a name="uielement-list"></a>Lista de UIElement
  **Usar solo Tab o Entrar para confirmar**
 
- Cuando se activa esta casilla, el editor de código JavaScript anexa las instrucciones con los elementos seleccionados a la lista de finalización únicamente después de elegir la tecla Tabulación o Entrar. Cuando esta casilla no está activada, otros caracteres, como un punto, coma, dos puntos, paréntesis de apertura y llave de apertura ({), también puede anexar instrucciones con los elementos seleccionados.
+ Cuando se activa esta casilla, el editor de código de JavaScript anexa instrucciones con elementos seleccionados en la lista de finalización únicamente después de elegir la tecla **Tab** o **Entrar**. Cuando se desactiva esta casilla, otros caracteres, como un punto, una coma, dos puntos, un paréntesis de apertura y una llave de apertura ({), también puede anexar instrucciones con los elementos seleccionados.
 
 ## <a name="references"></a>Referencias
  Puede utilizar estas opciones para especificar los tipos de archivos de IntelliSense .js que están incluidos en el ámbito para diferentes tipos de proyecto de JavaScript. Las referencias de IntelliSense se utilizan normalmente para proporcionar compatibilidad con IntelliSense a los objetos globales. También puede utilizar esta página para establecer el orden de carga de los scripts que se deben cargar en tiempo de ejecución y para agregar archivos de extensión de IntelliSense.
 
-## <a name="uielement-list"></a>Lista de UIElement
+### <a name="uielement-list"></a>Lista de UIElement
  **Grupos de referencias**
 
  Esta opción especifica el tipo de grupo de referencias. Se admiten tres grupos de referencias:
@@ -87,6 +65,15 @@ Esta opción especifica el orden en que los archivos se cargan en el contexto de
 **Agregar una referencia al grupo**
 
 Esta opción permite agregar archivos adicionales de IntelliSense .js buscando los archivos correspondientes.
+
+**Descargar referencias remotas (por ejemplo, http://) para los archivos del proyecto de archivos varios**
+
+Cuando se activa esta casilla, y si tiene un archivo de JavaScript abierto fuera del contexto de un proyecto, Visual Studio descarga los archivos de JavaScript remotos a los que se hace referencia en el archivo con el fin de proporcionar información de IntelliSense. Si esta opción está seleccionada, los archivos se descargan cuando se incluyen como referencia en el archivo de JavaScript.
+
+> [!NOTE]
+> En los proyectos web, los archivos remotos a los que se hace referencia en el proyecto se descargan de forma predeterminada.
+
+
 
 ## <a name="see-also"></a>Vea también
 

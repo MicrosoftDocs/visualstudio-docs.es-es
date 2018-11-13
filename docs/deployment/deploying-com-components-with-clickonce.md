@@ -20,19 +20,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28b233f360e4a5fb066ae41b288dc0cdb2d610f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e81462b2ccb5d29a0090623d72cf78183abd6917
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820467"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348752"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Implementar componentes COM con ClickOnce
 Implementación de componentes COM heredados ha sido tradicionalmente una tarea difícil. Los componentes deben estar registrados globalmente y, por tanto, pueden provocar efectos secundarios no deseados entre aplicaciones que se superponen. Por lo general esta situación no es un problema en las aplicaciones de .NET Framework porque los componentes están completamente aislados para una aplicación o son compatibles en paralelo. Visual Studio permite implementar los componentes COM aislados en Windows XP o en un sistema operativo posterior.  
   
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Proporciona un mecanismo fácil y seguro para la implementación de las aplicaciones. NET. Sin embargo, si las aplicaciones utilizan componentes COM heredados, necesitará realizar pasos adicionales para su implementación. Este tema describe cómo implementar componentes COM aislados y hacer referencia a componentes nativos (por ejemplo, desde Visual Basic 6.0 o Visual C++).  
   
- Para obtener más información sobre la implementación de componentes COM aislados, consulte "Simplifique la implementación de aplicaciones con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] y COM sin registro" en [ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
+ Para obtener más información sobre la implementación de componentes COM aislados, consulte [simplificar la implementación de aplicaciones con ClickOnce y COM sin registro](https://web.archive.org/web/20050326005413/msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).
   
 ## <a name="registration-free-com"></a>COM sin registro  
  COM sin registro es una nueva tecnología para implementar y activar los componentes COM aislados. Funciona mediante la colocación de la biblioteca de tipos de todos los del componente y la información de registro que se suele instalar en el registro del sistema en un archivo XML denominado manifiesto, almacenados en la misma carpeta que la aplicación.  

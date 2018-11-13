@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 689889e98a5a9b69a49e73ccea73f30fc3c25249
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e2204f10711db96033976cf7b4f7bd3639daf422
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274318"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349093"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Ver cadenas en un visualizador de cadenas en Visual Studio
 
@@ -43,9 +43,9 @@ Para abrir el visualizador de cadenas, debe ponerse en pausa durante la depuraci
 
 ## <a name="view-string-visualizer-data"></a>Ver datos de cadena visualizador
 
-En la ventana del visualizador de cadenas, la **expresión** campo muestra la variable o expresión que está encima, y el **valor** campo muestra el valor de cadena. 
+En la ventana del visualizador de cadenas, la **expresión** campo muestra la variable o expresión que está encima, y el **valor** campo muestra el valor de cadena.
 
-Un espacio en blanco **valor** significa que el visualizador elegido no reconoce la cadena. Por ejemplo, el **Visualizador XML** muestra un espacio en blanco **valor** para una cadena de texto sin etiquetas XML o una cadena JSON. 
+Un espacio en blanco **valor** significa que el visualizador elegido no reconoce la cadena. Por ejemplo, el **Visualizador XML** muestra un espacio en blanco **valor** para una cadena de texto sin etiquetas XML o una cadena JSON.
 
 Para ver las cadenas que no se reconoce el visualizador elegido, elija el **visualizador de texto**. El **visualizador de texto** muestra texto sin formato.
 
@@ -67,5 +67,7 @@ Una cadena HTML que tiene el formato correcto aparece como si se representa en u
 
 ![Visualizador de cadenas HTML](../debugger/media/dbg-string-visualizers-html.png "visualizador de cadenas de HTML")
 
-## <a name="see-also"></a>Vea también  
- [Crear visualizadores personalizados (C#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
+## <a name="see-also"></a>Vea también
+
+- [Crear visualizadores personalizados (C#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
+- [Visualizaciones de datos en Visual Studio para Mac](/visualstudio/mac/data-visualizations)

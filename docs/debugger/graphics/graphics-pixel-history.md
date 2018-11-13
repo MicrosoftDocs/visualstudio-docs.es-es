@@ -24,7 +24,7 @@ La ventana Historial de píxeles de gráfico del Analizador de gráficos de Visu
   
  Esta es la ventana Historial de píxeles:  
   
- ![Un píxel con tres eventos de Direct3D en su historial. ] (media/gfx_diag_demo_pixel_history_orientation.png "gfx_diag_demo_pixel_history_orientation")  
+ ![Un píxel con tres eventos de Direct3D en su historial. ](media/gfx_diag_demo_pixel_history_orientation.png "gfx_diag_demo_pixel_history_orientation")  
   
 ## <a name="understanding-the-pixel-history-window"></a>Descripción de la ventana Historial de píxeles  
  Con Historial de píxeles, puede analizar cómo afectan los eventos de Direct3D a un píxel determinado del destino de representación durante un fotograma. Puede relacionar un problema de representación con un evento concreto de Direct3D, incluso cuando los eventos posteriores (o las primitivas posteriores del mismo evento) siguen cambiando el valor de color final del píxel. Por ejemplo, es posible que un píxel se represente de forma incorrecta y, luego, quede ocultado por un píxel semitransparente, de modo que sus colores se fusionen en el búfer de fotogramas. Este tipo de problema sería difícil de diagnosticar si solo pudiera guiarse por el contenido final del destino de representación.  
@@ -42,9 +42,9 @@ La ventana Historial de píxeles de gráfico del Analizador de gráficos de Visu
   
 |Iconos|Motivo de exclusión|  
 |----------|--------------------------|  
-|![Icono de error de prueba de profundidad. ] (media/vsg_hist_icon_failed_depth.png "vsg_hist_icon_failed_depth")|El píxel se excluyó porque no superó la prueba de profundidad.|  
-|![Icono de error de prueba de tijera. ] (media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")|El píxel se excluyó porque no superó la prueba de tijera.|  
-|![Icono de error de prueba de galería de símbolos. ] (media/vsg_hist_icon_failed_stencil.png "vsg_hist_icon_failed_stencil")|El píxel se excluyó porque no superó la prueba de galería de símbolos.|  
+|![Icono de error de prueba de profundidad. ](media/vsg_hist_icon_failed_depth.png "vsg_hist_icon_failed_depth")|El píxel se excluyó porque no superó la prueba de profundidad.|  
+|![Icono de error de prueba de tijera. ](media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")|El píxel se excluyó porque no superó la prueba de tijera.|  
+|![Icono de error de prueba de galería de símbolos. ](media/vsg_hist_icon_failed_stencil.png "vsg_hist_icon_failed_stencil")|El píxel se excluyó porque no superó la prueba de galería de símbolos.|  
   
 ### <a name="draw-call-exclusion"></a>Exclusión de llamadas a draw  
  Si todas las primitivas de una llamada a draw se excluyen de modo que no afecten al destino de representación por no superar una prueba, la llamada a draw no se podrá expandir y se mostrará junto a ella un icono correspondiente al motivo de la exclusión. Los motivos de exclusión de las llamadas a draw se asemejan a los motivos de exclusión de las primitivas y sus iconos son similares.  
