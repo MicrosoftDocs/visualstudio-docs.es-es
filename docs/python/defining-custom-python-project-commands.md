@@ -1,7 +1,7 @@
 ---
 title: Cómo definir comandos de menú personalizados para proyectos de Python
 description: Se explica cómo modificar los archivos de proyecto y de destinos para agregar comandos personalizados al menú contextual del proyecto de Python en Visual Studio. Los comandos se pueden invocar en programas ejecutables, en scripts, en módulos, en fragmentos de código en línea y en pip.
-ms.date: 06/27/2018
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 71d10e2a8c62f695460cb3b596acc10f01a6ca81
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: cce4400a4cecb3bb0937c3f4ce41ea148edcc49f
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008328"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607853"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definir comandos personalizados para proyectos de Python
 

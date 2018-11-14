@@ -1,7 +1,7 @@
 ---
 title: Medición del rendimiento del código de Python
 description: Describe cómo usar el generador de perfiles de Visual Studio para comprobar el rendimiento del código de Python al usar intérpretes basados en CPython.
-ms.date: 06/26/2018
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4f395d146b01548d90cf74dc67b4ea8fda1bcade
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 0b5ca29b061f0ba61eec775a0344fb8d2067e08d
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551759"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607489"
 ---
 # <a name="profile-python-code"></a>Generación de perfiles de código de Python
 

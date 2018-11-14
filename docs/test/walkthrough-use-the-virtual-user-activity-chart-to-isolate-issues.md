@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a937e06eadc1af0734ff34f043c97833e1be1c96
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 19d2a50eba8850b3950e951da58800aed77931ad
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382215"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295805"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Tutorial: Usar el Diagrama de actividad del usuario virtual para aislar problemas de rendimiento
 
@@ -34,7 +34,7 @@ En este tutorial se realizan las siguientes tareas:
 
 -   Usar el Diagrama de actividad del usuario virtual para analizar un error que se produjo para un usuario virtual concreto y ver los detalles del tipo de error problemático.
 
-Para más información, consulte [Analizar la actividad de usuario virtual en la vista Detalles](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+Para obtener más información, vea [Analizar la actividad de usuario virtual de prueba de carga en la vista Detalles del Analizador de prueba de carga](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -42,9 +42,9 @@ Para más información, consulte [Analizar la actividad de usuario virtual en la
 
 -   Complete estos procedimientos:
 
-    -   [Registrar y ejecutar una prueba de rendimiento web](http://msdn.microsoft.com/en-us/bd0a82fd-cec0-4861-bc09-e1b0b2d258ef)
+    -   [Registrar y ejecutar una prueba de rendimiento web](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests)
 
-    -   [Crear y ejecutar una prueba de carga](http://msdn.microsoft.com/en-us/7041cbcf-9ab1-4579-98ff-8f296aeaded4)
+    -   [Crear y ejecutar una prueba de carga](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Abrir la solución ColorWebApp creada en los tutoriales anteriores
 
@@ -119,7 +119,7 @@ Después de haber ejecutado la prueba de carga y recopilado los datos de activid
 
 ## <a name="see-also"></a>Vea también
 
-- [Analizar la actividad de usuario virtual en la vista Detalles](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
+- [Analizar la actividad de usuario virtual de prueba de carga en la vista Detalles del Analizador de prueba de carga](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [Controladores y agentes de prueba](configure-test-agents-and-controllers-for-load-tests.md)
 - [Cómo: Crear una configuración de pruebas para una prueba de carga distribuida](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
 - [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md)

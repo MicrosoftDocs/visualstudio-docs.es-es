@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93335be347e9c2ae66045bc49f9609d6cb3a929d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: deddf46a479e0ab8d4e0bebbaf3fffe4d90b622d
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379779"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51293452"
 ---
 # <a name="sample-code-for-testing"></a>Código de ejemplo para pruebas
 
@@ -27,7 +27,7 @@ Este código de ejemplo contiene una clase, *BankAccount*, con diversos métodos
 El código se usa en los siguientes tutoriales:
 
 - [Crear y ejecutar pruebas unitarias en código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Este tutorial le guía por los pasos necesarios para crear y personalizar pruebas unitarias, ejecutarlas y examinar los resultados.
-- [Usar la utilidad de prueba de la línea de comandos](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). En este tutorial, use la utilidad de línea de comandos *MSTest.exe* para ejecutar pruebas y ver los resultados.
+- [Usar la utilidad de prueba de la línea de comandos](https://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). En este tutorial, use la utilidad de línea de comandos *MSTest.exe* para ejecutar pruebas y ver los resultados.
 
 ## <a name="sample-code"></a>Código de ejemplo
 
@@ -135,4 +135,4 @@ Para trabajar con este código, primero cree un proyecto para él en Visual Stud
 ## <a name="see-also"></a>Vea también
 
 - [Tutorial: Crear y ejecutar pruebas unitarias en código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
-- [Tutorial: Usar la utilidad de prueba de la línea de comandos](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)
+- [Tutorial: Usar la utilidad de prueba de la línea de comandos](https://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)
