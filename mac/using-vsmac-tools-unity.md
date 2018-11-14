@@ -5,12 +5,12 @@ author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: f91651d72cff067bcc0e679fa66f250a8a1a55d0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b53de918f51abd03d28173bf00d83d98503e86bd
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898829"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348935"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Empleo de Visual Studio for Mac Tools for Unity
 
@@ -111,4 +111,4 @@ Para detener la depuración:
 
    ![Haga clic en Detener en Visual Studio](media/using-vsmac-tools-unity-image7.png)
 
-Para más información sobre la depuración en Visual Studio para Mac, vea [Empleo del depurador](https://docs.microsoft.com/visualstudio/mac/debugging).
+Para más información sobre la depuración en Visual Studio para Mac, vea [Empleo del depurador](debugging.md).

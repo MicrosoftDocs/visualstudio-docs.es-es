@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a986675a2fd239918c43fd2350713bfabee4f046
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 33bd31c59de85f70d653d2de912b8c9bc5bb0e30
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000632"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295896"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Generación de entradas con la ejecución simbólica dinámica
 
@@ -142,7 +142,7 @@ La clase estática [PexChoose](static-helper-classes.md#pexchoose) puede usarse 
 <a name="further-reading"></a>
 ## <a name="further-reading"></a>Información adicional
 
-* [¿Cómo funciona?](https://blogs.msdn.microsoft.com/visualstudioalm/2014/12/11/smart-unit-tests-a-mental-model/)
+* [¿Cómo funciona?](https://blogs.msdn.microsoft.com/devops/2014/12/11/smart-unit-tests-a-mental-model/)
 
 ## <a name="got-feedback"></a>¿Tiene comentarios?
 

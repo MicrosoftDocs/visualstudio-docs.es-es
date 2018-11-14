@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6100f6b0a793b138712250ac5451454784bc877a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b9d61b4a57e0255577fdb0621dafd4263fc127c
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876755"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607775"
 ---
 # <a name="create-an-options-page"></a>Crear una página de opciones
 Este tutorial crea una página Herramientas/Opciones sencilla que usa una cuadrícula de propiedades para examinar y establecer propiedades.  
@@ -110,7 +110,7 @@ Este tutorial crea una página Herramientas/Opciones sencilla que usa una cuadr�
   
 2.  Agregue la siguiente instrucción using.  
   
-    ```vb  
+    ```csharp  
     using System.Windows.Forms;  
     ```  
   
@@ -231,7 +231,7 @@ Este tutorial crea una página Herramientas/Opciones sencilla que usa una cuadr�
   
 1.  En el archivo de código de paquete, agregue una propiedad pública denominada **OptionInteger** a la **MyToolsOptionsPackage** clase.  
   
-    ```  
+    ```csharp  
     public int OptionInteger  
     {  
         get  

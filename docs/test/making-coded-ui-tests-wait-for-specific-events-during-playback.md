@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: faee56676329d9dd70f189eeddac82bba680a1d9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c8a88980869d6eb7f8b30c4e1197f373f1895d52
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912791"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295129"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Hacer que las pruebas automatizadas de IU esperen eventos concretos durante la reproducción
 
@@ -25,7 +25,7 @@ En una reproducción de prueba de UI codificada, puede indicar a la prueba que e
  Visual Studio Enterprise
 
 > [!TIP]
-> También puede agregar retrasos antes de las acciones con el editor de pruebas de IU codificadas. Para obtener más información, vea [Cómo: Insertar un retraso antes de una acción de IU mediante el Editor de pruebas automatizadas de IU](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0).
+> También puede agregar retrasos antes de las acciones con el editor de pruebas de IU codificadas. Para obtener más información, vea [Cómo: Insertar un retraso antes de una acción de IU mediante el Editor de pruebas automatizadas de IU](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action).
 
 
  **Métodos de UITestControl.WaitForControlXXX()**
@@ -113,4 +113,4 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
 - [Tutorial: Crear, editar y mantener una prueba automatizada de IU](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Anatomía de una prueba automatizada de IU](../test/anatomy-of-a-coded-ui-test.md)
 - [Configuraciones y plataformas compatibles con las pruebas automatizadas de IU y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-- [Cómo: Insertar un retraso antes de una acción de IU mediante el Editor de pruebas automatizadas de IU](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0)
+- [Cómo: Insertar un retraso antes de una acción de IU mediante el Editor de pruebas automatizadas de IU](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)
