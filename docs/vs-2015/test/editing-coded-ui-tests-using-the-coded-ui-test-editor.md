@@ -80,7 +80,7 @@ Editar propiedades de acción de IU
   
  Para modificar las propiedades de una acción de la interfaz de usuario, en el panel **Acción de IU** , expanda el método de prueba que contenga una acción de la interfaz de usuario de la que desee modificar las propiedades, seleccione la acción de la interfaz de usuario y, después, modifique las propiedades mediante la ventana Propiedades.  
   
- Por ejemplo, si un servidor no está disponible y tiene una acción de la interfaz de usuario asociada al explorador web que indica **Ir a la página web "<http://Contoso1/default.aspx’>"**, puede cambiar la dirección URL por `‘ http://Contoso2/default.aspx’`.  
+ Por ejemplo, si un servidor no está disponible y tiene una acción de la interfaz de usuario asociada al explorador web que indica **Ir a la página web "<http://Contoso1/default.aspx’>"**, puede cambiar la dirección URL por `‘http://Contoso2/default.aspx’`.  
   
  ![Propiedades de los controles](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Editar las propiedades de los controles  
