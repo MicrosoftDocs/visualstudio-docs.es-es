@@ -16,12 +16,12 @@ ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5f66e32be2625347f413f3a796396a313b02aad7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 358c13bdc8bc312a479b9c316fa516ad68b10630
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949238"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51736264"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>Creación de instancias de proyecto mediante generadores de proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
