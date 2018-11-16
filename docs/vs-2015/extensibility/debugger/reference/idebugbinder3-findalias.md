@@ -17,12 +17,12 @@ ms.assetid: b8333701-2718-4983-8513-0875fb7cb730
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bbd5e823383513c6c5cf243bb37d94db17221192
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 18143522741abb1aebf0569db6ab1387ccd1fc02
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815084"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722869"
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,16 +32,16 @@ Este método busca un alias, dado un nombre. Realiza una búsqueda en todos los 
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT FindAlias(  
-   LPCOLESTR     pcstrName,  
-   IDebugAlias** ppAlias  
+HRESULT FindAlias(  
+   LPCOLESTR     pcstrName,  
+   IDebugAlias** ppAlias  
 );  
 ```  
   
 ```csharp  
-int FindAlias(  
-   string          pcstrName,  
-   out IDebugAlias ppAlias  
+int FindAlias(  
+   string          pcstrName,  
+   out IDebugAlias ppAlias  
 );  
 ```  
   
