@@ -16,12 +16,12 @@ ms.assetid: 2700cd4d-5f68-43fc-b62f-dc80c3f3aa85
 caps.latest.revision: 43
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eecea2a957177c359d0ac40e15ce48b962bca14e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6481dfd425f549742ad208df0d2cd04dd182c82f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247577"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758270"
 ---
 # <a name="legacy-language-service-extensibility"></a>Extensibilidad de servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

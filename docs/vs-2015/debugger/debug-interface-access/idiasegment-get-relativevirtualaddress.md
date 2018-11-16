@@ -1,5 +1,5 @@
 ---
-title: Idiasegment | Microsoft Docs
+title: Idiasegment | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSegment::get_relativeVirtualAddress method
 ms.assetid: b6a573a1-3671-4c1c-a5c2-2ab8f07fd510
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 64d1aaaed2a8ba6661a4d06b70c6df6a018bee97
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3275eb9496a35ad4ba4449a3b0a142212311f7ab
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841902"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51775204"
 ---
 # <a name="idiasegmentgetrelativevirtualaddress"></a>IDiaSegment::get_relativeVirtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera la dirección virtual relativa (RVA) del principio de la sección.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT get_relativeVirtualAddress (   
+HRESULT get_relativeVirtualAddress (   
    DWORD* pRetVal  
 );  
 ```  

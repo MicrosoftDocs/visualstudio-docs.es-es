@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 45fa397d-d7a1-4c4c-9c97-ede6c21643bd
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b4a3c0e60dc9211baf0b8568b3804b1df7f82765
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3dd68bec55b53d1b4618e8ae1679603577daf295
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812171"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726847"
 ---
 # <a name="network-usage"></a>Uso de red
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

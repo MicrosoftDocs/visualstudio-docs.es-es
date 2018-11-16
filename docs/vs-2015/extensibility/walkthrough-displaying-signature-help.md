@@ -15,12 +15,12 @@ ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0642b798668e24e7ba1e6595ab3c8ea6dba6885e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7a3b902c32563da6bc21778a09b4aeaebaeabeaa
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247928"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734641"
 ---
 # <a name="walkthrough-displaying-signature-help"></a>Tutorial: Visualización de ayuda de signatura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

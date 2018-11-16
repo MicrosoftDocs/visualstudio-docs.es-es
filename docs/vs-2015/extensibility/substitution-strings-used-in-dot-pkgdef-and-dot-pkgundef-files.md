@@ -15,12 +15,12 @@ ms.assetid: b1755d63-d794-4fd7-864b-70a9684881c2
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f679f5c4f817002fa92475a1fba7dc38caa34984
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1496931b02c5673c1f08253ebed7da0cae0b904c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175297"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817547"
 ---
 # <a name="substitution-strings-used-in-pkgdef-and-pkgundef-files"></a>Cadenas de sustitución utilizadas en. Pkgdef y. Archivos Pkgundef
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

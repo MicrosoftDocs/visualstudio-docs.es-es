@@ -19,15 +19,15 @@ helpviewer_keywords:
 - exceptions, debugging
 ms.assetid: a38ad49b-7cf3-483d-91c4-eb3116eba50c
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 91b0f0ba806868420b56f59d1b3f6de99a87886b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8cbaff38cdd6d769140f135d319a88d6098f294b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255780"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729026"
 ---
 # <a name="how-to-examine-system-code-after-an-exception"></a>Cómo: Examinar el código del sistema después de una excepción
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

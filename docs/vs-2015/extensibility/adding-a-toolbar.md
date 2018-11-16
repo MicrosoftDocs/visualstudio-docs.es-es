@@ -16,12 +16,12 @@ ms.assetid: 17302c25-6f59-4e97-8c85-54f95336a07f
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e3aa697ab6ac25c1fe273f4229cff462f097a35e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 038b8e8503a89dd0ec565d3d1b5acf20e6437600
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222916"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787957"
 ---
 # <a name="adding-a-toolbar"></a>Adición de una barra de herramientas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
