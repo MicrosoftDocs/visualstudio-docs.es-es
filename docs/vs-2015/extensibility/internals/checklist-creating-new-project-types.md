@@ -16,12 +16,12 @@ ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8047ea1aeb6a163a627f9198ca3f6731419949ae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 90b48f5969a422ab9d211bb56900cf1b3b41a78b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285992"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737354"
 ---
 # <a name="checklist-creating-new-project-types"></a>Lista de comprobación: creación de nuevos tipos de proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
