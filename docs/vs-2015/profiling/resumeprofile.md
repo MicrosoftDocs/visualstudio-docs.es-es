@@ -13,15 +13,15 @@ helpviewer_keywords:
 - ResumeProfile
 ms.assetid: 876f145b-ec07-4240-ade6-4f6e44baadce
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c95b516631844e5c15fdeccfbe66eda3917422c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 242c0785523ab1a84279211ba866bf15709724ad
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206289"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726047"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

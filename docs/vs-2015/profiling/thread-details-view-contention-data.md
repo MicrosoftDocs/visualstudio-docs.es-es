@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Thread Details view
 ms.assetid: 874c3b1c-88d8-479a-bb35-1291d9aa8e67
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5a46f5d63e817a38808b0c48be75f750a4e2bc9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: da2cac3503f97976fe5c0918f86e5b25f2b89329
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865146"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795664"
 ---
 # <a name="thread-details-view---contention-data"></a>Vista Detalles del subproceso: datos de contención
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

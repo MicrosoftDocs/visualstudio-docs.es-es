@@ -13,15 +13,15 @@ helpviewer_keywords:
 - profiling tools, tier interaction method views
 ms.assetid: c187791c-cd3f-4904-bffc-9656cefe38b0
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9483767c3e16fb39bece2d61e8384d80de9d3026
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4a834046b4642378ce782df8cd7aff0db19327c2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257600"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816702"
 ---
 # <a name="tier-interaction-views"></a>Vistas de interacción de capas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
