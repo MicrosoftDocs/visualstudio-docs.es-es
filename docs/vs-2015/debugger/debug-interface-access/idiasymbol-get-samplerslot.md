@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_samplerSlot | Microsoft Docs
+title: IDiaSymbol::get_samplerSlot | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: 41c751ba-81be-4bd3-838f-8373fc146157
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02c8028d167ed38447476d6f9d16f8f11c6a3733
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 94bf1b55fc389c4cc114aca55d811ba19e5d3805
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173503"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51775997"
 ---
 # <a name="idiasymbolgetsamplerslot"></a>IDiaSymbol::get_samplerSlot
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

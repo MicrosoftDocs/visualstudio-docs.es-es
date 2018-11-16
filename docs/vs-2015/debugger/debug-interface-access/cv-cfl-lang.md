@@ -1,5 +1,5 @@
 ---
-title: CV_CFL_LANG | Microsoft Docs
+title: CV_CFL_LANG | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - CV_CFL_LANG enumeration
 ms.assetid: 4e8e0613-ad02-4de9-9f46-e4753c5b0251
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 269953e2e6d7aaca4d6b152e9e7a2cfb00b52573
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f6e2aa402d3f882d83525b180707653b97533e32
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857749"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724791"
 ---
 # <a name="cvcfllang"></a>CV_CFL_LANG
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Especifica el lenguaje de código fuente de la aplicación o un módulo vinculad
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-typedef enum CV_CFL_LANG {   
+typedef enum CV_CFL_LANG {   
    CV_CFL_C       = 0x00,  
    CV_CFL_CXX     = 0x01,  
    CV_CFL_FORTRAN = 0x02,  

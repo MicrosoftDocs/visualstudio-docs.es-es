@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol interface
 ms.assetid: 01ad328a-736c-4933-a9f8-c2ded19ddd8c
 caps.latest.revision: 33
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 24e4a6c4ac68eba5694e89a85d94e68689f58761
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2bd52443d4150b371bbaa1865978db9a72c5c616
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257271"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734148"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Describe las propiedades de una instancia de símbolo.
 ## <a name="syntax"></a>Sintaxis  
   
 ```  
-IDiaSymbol : IUnknown  
+IDiaSymbol : IUnknown  
 ```  
   
 ## <a name="methods-in-alphabetical-order"></a>Métodos en orden alfabético  

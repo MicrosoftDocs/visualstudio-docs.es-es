@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumFrameData::Next method
 ms.assetid: 546e2e23-efb2-425a-96a1-808c67c519fb
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a6333411bdbd19251946807f6eee756af8318061
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e87f1768bc0de4846fbcbc0faafac5ef37e3f4bb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868643"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727785"
 ---
 # <a name="idiaenumframedatanext"></a>IDiaEnumFrameData::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera un número especificado de elementos de datos de marco de la secuencia 
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT Next (   
+HRESULT Next (   
    ULONG           celt,   
    IDiaFrameData** rgelt,  
    ULONG*          pceltFetched  

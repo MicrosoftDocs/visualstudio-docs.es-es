@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Spy++ toolbar
 ms.assetid: 949c18fb-bb25-42ed-9130-c4a47869f24d
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7ffc118818bd7af3f79b9c636dc4236ac0031af3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 05dc7dd74af20c76a3b673d5960cd88331ad7d51
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224710"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51763327"
 ---
 # <a name="spy-toolbar"></a>Barra de herramientas de Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

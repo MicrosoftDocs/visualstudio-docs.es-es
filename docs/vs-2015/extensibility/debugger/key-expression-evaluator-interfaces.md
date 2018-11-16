@@ -16,12 +16,12 @@ ms.assetid: 1cac9aa3-0867-4e12-a16e-1e90abbc0fb6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 37c510a7de14570d08db109b531d7e417e8fb41f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 616b86ed8a4976ef55437dbe21c044df32b4767a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294962"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51739929"
 ---
 # <a name="key-expression-evaluator-interfaces"></a>Interfaces de evaluador de expresiones de clave
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
