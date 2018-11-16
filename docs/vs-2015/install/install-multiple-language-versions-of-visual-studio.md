@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: dc16c9020cb7ebd5e0e0ae3667b69fb78471e79c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9cb869cac5059592838fe7e0ef371c4b40e1fb4d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197306"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51723830"
 ---
 # <a name="install-multiple-language-versions-of-visual-studio"></a>Instalar varias versiones de idioma de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

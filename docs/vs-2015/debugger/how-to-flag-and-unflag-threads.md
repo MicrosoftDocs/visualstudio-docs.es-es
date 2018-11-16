@@ -18,15 +18,15 @@ helpviewer_keywords:
 - treads, switching [debugging]
 ms.assetid: 952d579d-6911-413e-b3e5-54e7e797e70c
 caps.latest.revision: 36
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb6c6c3f9c333ef1613f2733a476e7843f7249b4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5816007476da56321e58182e636b54a5a5697994
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289138"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817495"
 ---
 # <a name="how-to-flag-and-unflag-threads"></a>Cómo: Marcar y quitar marcadores de subprocesos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -19,15 +19,15 @@ helpviewer_keywords:
 - debugging managed code, recommended property settings
 ms.assetid: 3d14a8d4-2925-44d0-be41-ec546d411db9
 caps.latest.revision: 32
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b9c5b317498d9a10c5e111b8bbd4d0a05350d73
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6c82a624e5a2847da5c0f85a9e2ef4180a338a34
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288605"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724697"
 ---
 # <a name="managed-debugging-recommended-property-settings"></a>Depuración administrada: valores de propiedad recomendados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
