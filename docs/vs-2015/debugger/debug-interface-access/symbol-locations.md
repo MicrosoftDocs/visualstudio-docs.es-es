@@ -16,15 +16,15 @@ helpviewer_keywords:
 - symbols [DIA SDK], locations
 ms.assetid: 7c8cd8fe-169e-4161-9cff-5e9015984add
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 88d8fd37babea18aa385598cad12436b414f5ff8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 54db4657ee779da1dfb5c0f743930f752ed26dbf
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284640"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750546"
 ---
 # <a name="symbol-locations"></a>Symbol Locations
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
