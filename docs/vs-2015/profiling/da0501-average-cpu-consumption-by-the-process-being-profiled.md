@@ -15,15 +15,15 @@ f1_keywords:
 - vs.performance.501
 ms.assetid: b01946b4-75e3-47d5-a1a1-cebfae66a3af
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5e2a270195a4d3689b2a5756c4633654bd3f06ae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 076afd65d356f319357221c0d33489895311dcc3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194218"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51759552"
 ---
 # <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501: Promedio de consumo de CPU por parte del proceso que se va a perfilar.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -18,12 +18,12 @@ ms.assetid: 09e32d05-464b-40a6-a41d-76f2759cf2cd
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c81d613ffedf0fae1289717b51317f27cd3287f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f493f3eab0944e0bbf6d2cf7740662ef31acc425
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865042"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761676"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ Alterna el estado habilitado del punto de interrupción pendiente.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT Enable(   
+HRESULT Enable(   
    BOOL fEnable  
 );  
 ```  
   
 ```csharp  
-int Enable(   
+int Enable(   
    int fEnable  
 );  
 ```  
