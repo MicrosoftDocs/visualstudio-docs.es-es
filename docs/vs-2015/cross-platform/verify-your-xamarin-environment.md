@@ -10,12 +10,12 @@ ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
 caps.latest.revision: 15
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 66428a7f06aee5449191a13e2712ae119daffb0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fa7495673b1c063c210a86734811a34af8855740
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243497"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794353"
 ---
 # <a name="verify-your-xamarin-environment"></a>Comprobar el entorno de Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

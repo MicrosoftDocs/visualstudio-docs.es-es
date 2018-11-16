@@ -14,15 +14,15 @@ helpviewer_keywords:
 - sampling profling method
 ms.assetid: f8383ab1-eb49-4d3f-8608-d8b4d51a81be
 caps.latest.revision: 22
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 004f09db73c1eaa977d64b8bafb376a60a45a7a0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c20e40ef740aba85fa4a778160adc940ad20b9ea
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277893"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787606"
 ---
 # <a name="collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line"></a>Recopilar estadísticas de aplicación para aplicaciones web ASP.NET utilizando el método de muestreo del generador de perfiles desde la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

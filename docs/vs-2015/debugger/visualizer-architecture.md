@@ -16,15 +16,15 @@ dev_langs:
 - C++
 ms.assetid: 6aad395f-7170-4d9e-b2b8-a5faf453380e
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4ec6a27b8fcd35b4b74108f7bc608c975e120b02
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b7a3255b8e8b91f074308a0238719f26af6cf665
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828694"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51736164"
 ---
 # <a name="visualizer-architecture"></a>Arquitectura de un visualizador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
