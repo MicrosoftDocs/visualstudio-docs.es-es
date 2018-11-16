@@ -16,12 +16,12 @@ ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7dfe0d8e8341847941880bd2b44ee29341cc07ec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d218744a4fcfcb498054105e48019bf2b0ce66b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195759"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750186"
 ---
 # <a name="extending-the-solution-explorer-filter"></a>Ampliación del filtro del Explorador de soluciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

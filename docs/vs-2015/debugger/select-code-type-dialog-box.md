@@ -27,15 +27,15 @@ helpviewer_keywords:
 - debugging engine selection dialog box
 ms.assetid: 932269fe-94e3-43cb-8931-078f31afd177
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e25ff3a0c21288744306455735324d4d72547cb3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d24f20741ee3934a5835aeac852a279ac6cb2e77
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200907"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801815"
 ---
 # <a name="select-code-type-dialog-box"></a>Seleccionar tipo de código (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

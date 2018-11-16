@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_indirectVirtualBaseClass method
 ms.assetid: 853b5c6f-e1cb-4675-ad36-9ee16e3341c3
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9fa1331e546d199ff0a99d71b72f9e420eaccc69
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 343acf04754978a0eee76a5d7e15cb7f4383d2df
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911543"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740149"
 ---
 # <a name="idiasymbolgetindirectvirtualbaseclass"></a>IDiaSymbol::get_indirectVirtualBaseClass
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera una marca que especifica si el tipo de datos definido por el usuario es
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT get_indirectVirtualBaseClass (   
+HRESULT get_indirectVirtualBaseClass (   
    BOOL* pRetVal  
 );  
 ```  

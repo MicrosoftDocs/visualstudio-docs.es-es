@@ -15,15 +15,15 @@ helpviewer_keywords:
 - profiling tools, report views
 ms.assetid: 3e84e513-dc64-40bb-b385-03281f28b519
 caps.latest.revision: 29
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c940b13eb7e09969ff746a3d4ba3fe2910173fcd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6905ae3a350ddb91db7cd9f500d57ccdc70cca86
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249683"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806508"
 ---
 # <a name="performance-report-views"></a>Vistas de informes de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
