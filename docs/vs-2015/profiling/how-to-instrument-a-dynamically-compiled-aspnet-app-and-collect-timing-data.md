@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6c140ae2-ecdd-48c7-bd89-3dc1b88e19b0
 caps.latest.revision: 24
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aedd447fa7c979497da0c1d56e6dd57531255cb0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 041385fcda5aa587647752c3e32f933a5674b8aa
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912648"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757110"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Cómo: Instrumentar una aplicación web ASP.NET compilada dinámicamente y recopilar datos detallados de control de tiempo con el generador de perfiles utilizando la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
