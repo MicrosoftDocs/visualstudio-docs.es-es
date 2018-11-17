@@ -29,15 +29,15 @@ helpviewer_keywords:
 - debugger, format specifiers recognized by
 ms.assetid: 345c8589-5f36-4d34-a58c-e56271687dd6
 caps.latest.revision: 34
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f6abc97117af62732f659ca469ab757d1ff1cdcd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 330a32b20eeab172ebf36e49f16e79aa936a1bdc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281196"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754161"
 ---
 # <a name="format-specifiers-in-c"></a>Especificadores de formato en C# #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

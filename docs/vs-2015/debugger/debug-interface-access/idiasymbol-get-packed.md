@@ -1,5 +1,5 @@
 ---
-title: Get_packed | Microsoft Docs
+title: Get_packed | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_packed method
 ms.assetid: e42ff368-56c4-49a2-8676-f80e349efa21
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 53a18ee6531c008751f1d694a145f57563343e6b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 97d6e016ab2d6c3e281d5bc8ece0ee9ae018a9e1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815226"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816625"
 ---
 # <a name="idiasymbolgetpacked"></a>IDiaSymbol::get_packed
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera una marca que especifica si el tipo de datos definido por el usuario (U
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT get_packed (   
+HRESULT get_packed (   
    BOOL* pRetVal  
 );  
 ```  

@@ -1,5 +1,5 @@
 ---
-title: Habilitación de características de depuración en Visual C++ (-D_DEBUG) | Microsoft Docs
+title: Habilitación de características de depuración en Visual C++ (-D_DEBUG) | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -27,15 +27,15 @@ helpviewer_keywords:
 - _DEBUG macro
 ms.assetid: 276e2254-7274-435e-ba4d-67fcef4f33bc
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e512620e1af8da85039ed403d4280568101fbe57
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bf560bcde09b9d2e3c2bee689c92c9900c6e2af5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829266"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760594"
 ---
 # <a name="enabling-debug-features-in-visual-c-ddebug"></a>Habilitar las características de depuración en Visual C++ (/D_DEBUG)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

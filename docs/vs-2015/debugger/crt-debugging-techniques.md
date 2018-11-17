@@ -23,15 +23,15 @@ helpviewer_keywords:
 - debugging [C++], CRT debug support
 ms.assetid: 9be561f6-14a8-44ff-925d-d911d5b8e6ff
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 34d9f1036349798b56306c41eddbc4f71cfffac7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6745a31dcb7c37d12551248473b072d440116501
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238750"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801035"
 ---
 # <a name="crt-debugging-techniques"></a>Técnicas de depuración de CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_localBasePointerRegisterId method
 ms.assetid: 9cbcaf00-9ace-45e1-b164-7a9439e08083
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f0201e062d0106e297c128c71c22dadf43a7890
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a9c3bf9602f89b61de7b759896d16cd2a0cd367b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860570"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802335"
 ---
 # <a name="idiasymbolgetlocalbasepointerregisterid"></a>IDiaSymbol::get_localBasePointerRegisterId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera el identificador del registro que contiene un puntero base a las variab
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT get_localBasePointerRegisterId (   
+HRESULT get_localBasePointerRegisterId (   
    DWORD* pRetVal  
 );  
 ```  

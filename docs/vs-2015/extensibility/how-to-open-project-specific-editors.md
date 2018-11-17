@@ -17,12 +17,12 @@ ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 255d95d92aae3f73e4c5f77a6f7a5a4219d73d19
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 52d1fda1c3a1c2e8aac116c52afc8bf6738e23ea
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198151"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817677"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Cómo: abrir editores específicos del proyecto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

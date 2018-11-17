@@ -17,12 +17,12 @@ ms.assetid: c483eaab-db29-46de-bfdb-5c2a9a9cfb68
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dd91398a341ec413849fa579bb95fd1a721aad99
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 61ec31973d1de69b9b276456465b31c429d77469
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932057"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725843"
 ---
 # <a name="bperrortype"></a>BP_ERROR_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Especifica el tipo de error de un punto de interrupción.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-enum enum_BP_ERROR_TYPE {   
+enum enum_BP_ERROR_TYPE {   
    BPET_NONE            = 0x00000000,  
    BPET_TYPE_WARNING    = 0x00000001,  
    BPET_TYPE_ERROR      = 0x00000002,  
@@ -49,7 +49,7 @@ typedef DWORD BP_ERROR_TYPE;
 ```  
   
 ```csharp  
-public enum enum_BP_ERROR_TYPE {   
+public enum enum_BP_ERROR_TYPE {   
    BPET_NONE            = 0x00000000,  
    BPET_TYPE_WARNING    = 0x00000001,  
    BPET_TYPE_ERROR      = 0x00000002,  
