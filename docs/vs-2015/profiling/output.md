@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5e286e61-4548-42cf-a635-e608c5edbe2b
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5de5cd907d786b21e7f1a279fec51208b83185a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1197d0ee679ea69abb38d789153a57f0e26c3156
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292349"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731048"
 ---
 # <a name="output"></a>Salida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

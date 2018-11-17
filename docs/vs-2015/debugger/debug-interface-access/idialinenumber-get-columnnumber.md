@@ -1,5 +1,5 @@
 ---
-title: Get_columnnumber | Microsoft Docs
+title: Get_columnnumber | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaLineNumber::get_columnNumber method
 ms.assetid: e317f29a-6525-46a7-8421-33985392f8fd
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0179aa7f818819df008f0d9ad1351e2c5ee8b840
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f2b8c32bec8d73684b76fcb69b0915e9cf26ffcd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811027"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721129"
 ---
 # <a name="idialinenumbergetcolumnnumber"></a>IDiaLineNumber::get_columnNumber
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Recupera el número de columna donde comienza la expresión o instrucción.
   
 ```  
 [C++]  
-HRESULT get_columnNumber (   
+HRESULT get_columnNumber (   
    DWORD* pRetVal  
 );  
 ```  

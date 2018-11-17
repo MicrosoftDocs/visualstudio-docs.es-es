@@ -17,12 +17,12 @@ ms.assetid: aa6824d5-c932-42ba-8713-950e7d1fb42f
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 90c3b3b159b46761d132f3a7ae3926058c0b2936
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b7e8c539d0c0a52ffa1d435f4b39e75af1343f7a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851177"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769260"
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ Obtiene el alias asociado con este objeto, si existe.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT GetAlias(  
-   IDebugAlias** ppAlias  
+HRESULT GetAlias(  
+   IDebugAlias** ppAlias  
 );  
 ```  
   
 ```csharp  
-int GetAlias(  
-   out IDebugAlias ppAlias  
+int GetAlias(  
+   out IDebugAlias ppAlias  
 );  
 ```  
   
