@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Profiler Report View filter, profiling tools
 ms.assetid: 35f89d86-4683-4db1-aa0c-ae0ce65fa524
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f63855aeb4b4e2d48db045354b0134056684dedf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 26ab5282ece99700b035c45abe4f3a7c6ffee82a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228181"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754293"
 ---
 # <a name="performance-report-view-filter"></a>Filtro de vista Informe de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

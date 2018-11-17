@@ -27,15 +27,15 @@ helpviewer_keywords:
 - remote debugging, errors
 ms.assetid: b2f41a80-e3e0-4064-a487-8e8446270dec
 caps.latest.revision: 25
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d8f85c0a45c30b6fd80305aa1bb4d76d67e0e6cc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b2bb349e49715f4a7a1be49e4a0764aee29ecdab
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270977"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796095"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Errores de la depuración remota y sus soluciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
