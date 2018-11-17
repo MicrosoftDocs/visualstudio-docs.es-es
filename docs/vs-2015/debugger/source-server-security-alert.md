@@ -18,15 +18,15 @@ dev_langs:
 - C++
 ms.assetid: 8451c281-6914-469c-b80c-6271cc3f3d17
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f75ae71cb03e4811e5fa0599bd1ee51371c7891
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 50e0c18c90d5b27e59ab290ad9ce846f4867a903
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230106"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51762320"
 ---
 # <a name="source-server-security-alert"></a>Alerta de seguridad del servidor de origen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
