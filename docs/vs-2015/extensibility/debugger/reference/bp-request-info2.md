@@ -1,5 +1,5 @@
 ---
-title: BP_REQUEST_INFO2 | Microsoft Docs
+title: BP_REQUEST_INFO2 | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,12 +17,12 @@ ms.assetid: 008c87f7-a76e-43d3-8904-11b225d6a9a5
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 57ac5bf8a95be80e7c3c35f15dcb681be13fe06e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1a61bf699af6931eae1b538896f3eeff8c63072b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877756"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745948"
 ---
 # <a name="bprequestinfo2"></a>BP_REQUEST_INFO2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Contiene la información necesaria para implementar un punto de interrupción, i
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-typedef struct _BP_REQUEST_INFO2 {  
+typedef struct _BP_REQUEST_INFO2 {  
    BPREQI_FIELDS   dwFields;  
    GUID            guidLanguage;  
    BP_LOCATION     bpLocation;  
@@ -46,11 +46,11 @@ typedef struct _BP_REQUEST_INFO2 {
    GUID            guidVendor;  
    BSTR            bstrConstraint;  
    BSTR            bstrTracepoint;  
-} BP_REQUEST_INFO2;  
+} BP_REQUEST_INFO2;  
 ```  
   
 ```csharp  
-public struct BP_REQUEST_INFO2 {  
+public struct BP_REQUEST_INFO2 {  
    public uint           dwFields;  
    public Guid           guidLanguage;  
    public BP_LOCATION    bpLocation;  

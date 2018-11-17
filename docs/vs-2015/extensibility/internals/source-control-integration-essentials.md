@@ -17,12 +17,12 @@ ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f28781adb2679fb70e3d45d47507cd6e6aabd994
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9893d5525bf66b167dea170c0c5fae8285aa40af
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811020"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780976"
 ---
 # <a name="source-control-integration-essentials"></a>Conceptos básicos de la integración del control de código fuente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

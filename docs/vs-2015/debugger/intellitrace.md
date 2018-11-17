@@ -24,15 +24,15 @@ helpviewer_keywords:
 - IntelliTrace, debugging after a crash
 ms.assetid: 486bfec2-39bd-4d78-892a-42352128ee52
 caps.latest.revision: 142
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f96b0df5028974317be46fed7c727b3141e8b64
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a1cd1cc041970588cf7c90c2c6275100687e1bcb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912986"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737213"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Puede emplear menos tiempo en la depuración de la aplicación si usa IntelliTra
 |||  
 |-|-|  
 |**Compatible**|-Aplicaciones Visual Basic y Visual C# que usan .NET Framework 2.0 o versiones posteriores.<br />     Puede depurar la mayoría de las aplicaciones, incluidas las aplicaciones de ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 y de 64 bits.<br />     Para depurar aplicaciones de SharePoint con IntelliTrace, consulte [Tutorial: depurar una aplicación de SharePoint mediante el uso de IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Para depurar aplicaciones de Microsoft Azure con IntelliTrace, vea [depurar con IntelliTrace y Visual Studio un servicio de nube publicado](http://go.microsoft.com/fwlink/?LinkID=262248).|  
-|**Compatibilidad limitada**|-F # aplicaciones en modo experimental<br />-Las aplicaciones de Windows Store compatibles solo para eventos|  
+|**Compatibilidad limitada**|- F# aplicaciones en modo experimental<br />-Las aplicaciones de Windows Store compatibles solo para eventos|  
 |**No se admite**|-C++, otros lenguajes y script<br />-Windows Services, Silverlight, Xbox o [!INCLUDE[winmobile](../includes/winmobile-md.md)] aplicaciones|  
   
 > [!NOTE]

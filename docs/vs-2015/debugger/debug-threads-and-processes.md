@@ -22,15 +22,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], threads
 ms.assetid: 9f0c8505-b6b2-452b-adfd-076db14d8115
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 711aaeaa76edbb4ea9d070254213f9a7207e12f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d0a42ed90275bb8988bb6bedc0b707aec21ab3b8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191495"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802621"
 ---
 # <a name="debug-threads-and-processes"></a>Depurar procesos y subprocesos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

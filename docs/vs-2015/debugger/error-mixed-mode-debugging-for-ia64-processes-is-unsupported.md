@@ -18,15 +18,15 @@ dev_langs:
 - C++
 ms.assetid: b60e9660-02da-4dea-9e6d-8cb64e996bdf
 caps.latest.revision: 9
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f1635b6f31685df1dd564de59a7323dc2ba215b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 59f2c37f7f7033820383250834868f74f0f63855
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231171"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806268"
 ---
 # <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Error: No se admite la depuración en modo mixto para procesos IA64
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

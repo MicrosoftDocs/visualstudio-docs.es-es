@@ -11,15 +11,15 @@ helpviewer_keywords:
 - layer diagrams, adding custom validation
 ms.assetid: fed7bc08-295a-46d6-9fd8-fb537f1f75f1
 caps.latest.revision: 44
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 26be7c766127c1da5d7aa4f26b2fb49cf510b850
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9748f2f7b43426f7f981d027400f097b260bf23d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897920"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817521"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Agregar validación de arquitectura personalizada a diagramas de capas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

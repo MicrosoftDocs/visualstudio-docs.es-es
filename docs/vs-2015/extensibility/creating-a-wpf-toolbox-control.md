@@ -17,12 +17,12 @@ ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a521566d25509750334e4f1202699787c3343ca6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2ad3edfa84ee64425a7a9fbc6b0dfc5098396907
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225620"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786033"
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>Creación de un control de cuadro de herramientas de WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -17,15 +17,15 @@ helpviewer_keywords:
 - command line, tools
 ms.assetid: 6593fa82-181e-4009-a0ed-02aa24c2c063
 caps.latest.revision: 40
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c9f056bb95458ef8bbe9c221fdfbbfaa322e9e0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9cb3fafa78d49904c346212e8fd4062c966a63f5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298394"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51775152"
 ---
 # <a name="using-the-profiling-tools-from-the-command-line"></a>Usar las herramientas de generación de perfiles desde la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

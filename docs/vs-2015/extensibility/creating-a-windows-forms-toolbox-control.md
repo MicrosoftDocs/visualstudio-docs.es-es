@@ -17,12 +17,12 @@ ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7b7f1c5f9f052253e2b18ac2f7c669b7442ac391
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 371fd4269cee5918bd0d0b623eb49e1f709a311d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294221"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781717"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Creación de un control de cuadro de herramientas de Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,16 +81,16 @@ La plantilla de elemento de Control de cuadro de herramientas de Windows Forms q
 3.  Cree las siguientes declaraciones de propiedad pública.  
   
     ```csharp  
-    public int Value {  
+    public int Value {  
         get { return currentValue; }   
     }  
   
-    public string Message {  
+    public string Message {  
         get { return displayText; }  
         set { displayText = value; }  
     }  
   
-    public bool ShowReset {  
+    public bool ShowReset {  
         get { return btnReset.Visible; }  
         set { btnReset.Visible = value; }  
     }  
@@ -102,7 +102,7 @@ La plantilla de elemento de Control de cuadro de herramientas de Windows Forms q
 4.  Coloque el siguiente código el `Load` eventos para el control.  
   
     ```csharp  
-    private void Counter_Load(object sender, EventArgs e)  
+    private void Counter_Load(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = Message + Value;  
@@ -115,7 +115,7 @@ La plantilla de elemento de Control de cuadro de herramientas de Windows Forms q
 5.  Cree el siguiente método público para incrementar el contador.  
   
     ```csharp  
-    public void Increment()  
+    public void Increment()  
     {  
         currentValue++;  
         label1.Text = displayText + Value;  
@@ -127,7 +127,7 @@ La plantilla de elemento de Control de cuadro de herramientas de Windows Forms q
 6.  Agregue una declaración para el `Incremented` eventos a la clase de control.  
   
     ```csharp  
-    public event EventHandler Incremented;  
+    public event EventHandler Incremented;  
     ```  
   
      Los autores de llamadas pueden agregar controladores a este evento para responder a cambios en el valor del contador.  
@@ -135,7 +135,7 @@ La plantilla de elemento de Control de cuadro de herramientas de Windows Forms q
 7.  Vuelva a la vista Diseño y haga doble clic en el `Reset` botón para generar el `btnReset_Click` controlador de eventos y, a continuación, rellene en como se muestra en el ejemplo siguiente.  
   
     ```csharp  
-    private void btnReset_Click(object sender, EventArgs e)  
+    private void btnReset_Click(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = displayText + Value;  
@@ -149,7 +149,7 @@ La plantilla de elemento de Control de cuadro de herramientas de Windows Forms q
   
     ```csharp  
     [ProvideToolboxControl("General", false)]  
-    public partial class Counter : UserControl  
+    public partial class Counter : UserControl  
     ```  
   
 ### <a name="testing-the-control"></a>Probar el control  

@@ -16,15 +16,15 @@ dev_langs:
 - C++
 ms.assetid: 60159535-61ec-466a-a4a6-115ec72a8af5
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ce3ef7b1d5fe975fdc2edc21a3dbe94fa873e96
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8b5fbd27226db800a99423191126e91df1810411
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813301"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810499"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Controlar la ejecución de una aplicación de la Tienda en una sesión de depuración de Visual Studio para aplicaciones de la Tienda Windows (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

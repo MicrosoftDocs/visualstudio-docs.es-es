@@ -17,12 +17,12 @@ ms.assetid: 63b3478e-e08a-420b-a0ec-76767e0cb289
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bf6c047e649f1615cbb15704621d3c0a8eafaf2e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1729d4b5e65e60246926c1a3fd25342b10545068
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284888"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51730994"
 ---
 # <a name="command-placement-guidelines"></a>Orientaciones para la colocación de comandos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

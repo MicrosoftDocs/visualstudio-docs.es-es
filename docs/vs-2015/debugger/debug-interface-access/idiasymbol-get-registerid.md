@@ -1,5 +1,5 @@
 ---
-title: Get_registerid | Microsoft Docs
+title: Get_registerid | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_registerId method
 ms.assetid: f881e793-eb9e-48dc-a847-dd61d77174fc
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e1ca9b0ba4cdf9a0a95522b4eef5793b9a42d152
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79c22cb4853ca6089c10ce6e62e331e519420e31
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859699"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51775958"
 ---
 # <a name="idiasymbolgetregisterid"></a>IDiaSymbol::get_registerId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera el designador de registro de la ubicación cuando la [LocationType (enu
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT get_registerId (   
+HRESULT get_registerId (   
    DWORD* pRetVal  
 );  
 ```  

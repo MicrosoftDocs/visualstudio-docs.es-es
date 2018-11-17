@@ -14,15 +14,15 @@ helpviewer_keywords:
 - UML model, extending
 ms.assetid: b5bfa61e-ea59-4c3b-b5af-53475d7d13cd
 caps.latest.revision: 39
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0fa0196000e2349f5f323d28138186b59ae07cfd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 74f3c518682997dca57a630c6f084437f7175d80
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179132"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794769"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Ampliar modelos y diagramas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

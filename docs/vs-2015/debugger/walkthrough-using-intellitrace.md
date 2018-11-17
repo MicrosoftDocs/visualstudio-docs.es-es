@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e1c9c91a-0009-4c4e-9b4f-c9ab3a6022a7
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1903a2b6263a663586499672c9121e33900a8e30
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cc1e2b40e16a14da505243aeb11542df3adfb18d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190650"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781314"
 ---
 # <a name="walkthrough-using-intellitrace"></a>Tutorial: Uso de IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

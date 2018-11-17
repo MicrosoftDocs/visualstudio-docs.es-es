@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSegment::get_addressSection method
 ms.assetid: 360b61b1-69b1-4a8b-ba37-97a1d835ac53
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e14ef5e522196c4e32c85b5f33fab0cc3fae2c85
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 66a7a6ef863cbb981bc952c80dc5a4719d940482
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838821"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731686"
 ---
 # <a name="idiasegmentgetaddresssection"></a>IDiaSegment::get_addressSection
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera el número de sección que se asigna a este segmento.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT get_addressSection (   
+HRESULT get_addressSection (   
    DWORD* pRetVal  
 );  
 ```  

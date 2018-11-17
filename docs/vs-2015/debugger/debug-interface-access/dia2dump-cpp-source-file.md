@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Dia2dump sample [DIA SDK], sample source
 ms.assetid: 32fd92f6-3de5-4353-b7cb-66781e03b38f
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 847d0396a3c3703cbc039808c48eb8ebffcdc37d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dffb4d2a1836a4e6f8975b90b0efb0ba054c1ef7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204820"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51723841"
 ---
 # <a name="dia2dumpcpp-source-file"></a>Archivo de origen Dia2dump.cpp
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

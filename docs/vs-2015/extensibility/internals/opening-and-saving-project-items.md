@@ -17,12 +17,12 @@ ms.assetid: f71898ad-335f-4c43-a177-4da87078afd1
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6a642d2cffe66a4ed5ddc68db75368e1d2e71fbb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 043b8545c583295fd11c04329b305e125c3efbac
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283580"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726720"
 ---
 # <a name="opening-and-saving-project-items"></a>Apertura y guardado de elementos de proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
