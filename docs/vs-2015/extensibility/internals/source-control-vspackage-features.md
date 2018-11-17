@@ -15,12 +15,12 @@ ms.assetid: 26c3ffda-22b8-4345-9fb6-2883f37699aa
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4b3ed1b616225bc1ea0e0f01d3a37a34a492a493
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5fd7365cb819da2132b6d77fea31abd767661895
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246784"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772344"
 ---
 # <a name="source-control-vspackage-features"></a>Características de VSPackage de control de código fuente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
