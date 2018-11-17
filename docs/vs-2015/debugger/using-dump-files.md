@@ -27,15 +27,15 @@ helpviewer_keywords:
 - dumps
 ms.assetid: b71be6dc-57e0-4730-99d2-b540a0863e49
 caps.latest.revision: 56
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1fb0f55783d40e92187a0d4091fecd50a27e3c89
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0c117e0aa7922c70f919a7b16fa6d40a447f2ce2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837443"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761134"
 ---
 # <a name="using-dump-files"></a>Uso de archivos de volcado de memoria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

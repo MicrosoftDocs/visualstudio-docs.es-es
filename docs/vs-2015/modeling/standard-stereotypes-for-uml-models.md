@@ -12,15 +12,15 @@ helpviewer_keywords:
 - UML diagrams, stereotypes
 ms.assetid: 8a8c2321-1cae-4ba8-bb9e-23495c3404d8
 caps.latest.revision: 22
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c38ad14fa44d2f537f9622d7746e534f8dd41ea0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1fcc876a847429c0de9600a5a727b19334819119
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212165"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51763239"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>Estereotipos estándar para modelos UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
