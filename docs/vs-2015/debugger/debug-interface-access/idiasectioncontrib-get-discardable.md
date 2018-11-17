@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSectionContrib::get_discardable method
 ms.assetid: 30ca88d4-3198-4b0f-b30e-2e54b3607fe9
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 107e42378f5ae2315ed8f7613d941cd318b1420d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 86cc34a200f00b7b7d171a7514994171ad15becd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894409"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792962"
 ---
 # <a name="idiasectioncontribgetdiscardable"></a>IDiaSectionContrib::get_discardable
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera una marca que indica si se puede descartar la sección.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT get_discardable (   
+HRESULT get_discardable (   
    BOOL* pRetVal  
 );  
 ```  

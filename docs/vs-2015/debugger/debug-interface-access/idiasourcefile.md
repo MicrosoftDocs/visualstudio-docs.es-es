@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSourceFile interface
 ms.assetid: 6e9be757-797f-4960-ba62-c14092620bbd
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 409124cd4ce3bbfd4b8064027e9b771bc9d87809
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 936bc5ac3fb469f50282edebaaaff9c1e1281add
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287500"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794522"
 ---
 # <a name="idiasourcefile"></a>IDiaSourceFile
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Representa un archivo de origen.
 ## <a name="syntax"></a>Sintaxis  
   
 ```  
-IDiaSourceFile : IUnknown  
+IDiaSourceFile : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  

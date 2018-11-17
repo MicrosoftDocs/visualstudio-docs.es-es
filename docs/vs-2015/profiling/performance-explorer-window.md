@@ -16,15 +16,15 @@ helpviewer_keywords:
 - performance tools, Performance Explorer
 ms.assetid: cb6a6efc-93a5-49a2-8d03-6969b5f3b6d7
 caps.latest.revision: 25
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad46acea26d15b0ceaecd629ae99a784f30d90a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 20a68ecb9f45265dd304a9bebf601020c6a300b8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230313"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798201"
 ---
 # <a name="performance-explorer-window"></a>Ventana Explorador de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

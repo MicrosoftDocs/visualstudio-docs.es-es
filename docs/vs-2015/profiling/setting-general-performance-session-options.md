@@ -13,15 +13,15 @@ f1_keywords:
 - vs.performance.property.general
 ms.assetid: 6b60bd1b-2198-4261-b84e-9b2d8494a992
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b33848b2985cdc4303b75bdc493bfaf33af36b1e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d63c4a255d972b16bd7d9fda3d6c5a0d27978595
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256781"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51808432"
 ---
 # <a name="setting-general-performance-session-options"></a>Establecer opciones generales de sesión de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

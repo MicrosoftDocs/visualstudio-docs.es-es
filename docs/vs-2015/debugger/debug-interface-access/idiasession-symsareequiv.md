@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSession::symsAreEquiv method
 ms.assetid: 9941d520-e203-46c0-83c3-b3a967f4fc59
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c27cc4b984b250e70ba44122067df0bbfb4dc86
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bb9b8833ca4e7d780677aca475ee13897dbb8fc8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885808"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780027"
 ---
 # <a name="idiasessionsymsareequiv"></a>IDiaSession::symsAreEquiv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Comprueba si dos símbolos son equivalentes.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT symsAreEquiv (   
+HRESULT symsAreEquiv (   
    IDiaSymbol* symbolA,  
    IDiaSymbol* symbolB  
 );  

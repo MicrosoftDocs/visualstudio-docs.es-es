@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: douge
-ms.openlocfilehash: e7b7f30378f863e119c121b1805aa5f805fa60ed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f498ce1a0176bc0ebb1b705a13333a63e89776a6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260190"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802127"
 ---
 # <a name="build-cross-platform-mobile-apps-with-visual-c"></a>Compilar aplicaciones móviles multiplataforma con Visual C++
 Puede compilar código multiplataforma para dispositivos Android, iOS y Windows con Visual C++ para el desarrollo móvil multiplataforma. Se trata de una característica opcional disponible en Visual Studio 2015 que permite el desarrollo multiplataforma de código para iOS, Android y Windows con Visual C++.  
