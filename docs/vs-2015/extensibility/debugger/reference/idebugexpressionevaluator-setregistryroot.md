@@ -17,12 +17,12 @@ ms.assetid: 790886d8-1975-4d3c-9a75-cd86c1faf4ca
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5d91ab4e3a4b46e9eb44346a91b88055cc6a4175
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 19e3dc29aab41b3d23b11c2e15796c57c15cd8f1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890471"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51774762"
 ---
 # <a name="idebugexpressionevaluatorsetregistryroot"></a>IDebugExpressionEvaluator::SetRegistryRoot
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Este método establece la raíz del registro. Se utiliza para la depuración en 
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT SetRegistryRoot (   
+HRESULT SetRegistryRoot (   
    LPCOLESTR ustrRegistryRoot  
 );  
 ```  

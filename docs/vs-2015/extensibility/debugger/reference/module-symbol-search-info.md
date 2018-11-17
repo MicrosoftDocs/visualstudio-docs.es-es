@@ -1,5 +1,5 @@
 ---
-title: MODULE_SYMBOL_SEARCH_INFO | Microsoft Docs
+title: MODULE_SYMBOL_SEARCH_INFO | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,12 +17,12 @@ ms.assetid: 432aff03-08a5-4c5a-b2d5-e212090fc70a
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 65e3b1832f09edb868691d87f5d2fdb55d302b7e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e10d7717fe49f3f27c25477b905bf729be923b7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863300"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729537"
 ---
 # <a name="modulesymbolsearchinfo"></a>MODULE_SYMBOL_SEARCH_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

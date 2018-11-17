@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaReadExeAtOffsetCallback interface
 ms.assetid: 3c961641-3ce3-4bc3-bd6e-a802fa3bec49
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 56583dfc4ccb8fc860165e78001c1009d028bcc9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 83e5c3390ea4ec5da97b65dec487afc9b3cdeb35
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208083"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796355"
 ---
 # <a name="idiareadexeatoffsetcallback"></a>IDiaReadExeAtOffsetCallback
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Permite que una aplicación cliente proporcionar los bytes de un archivo ejecuta
 ## <a name="syntax"></a>Sintaxis  
   
 ```  
-IDiaReadExeAtOffsetCallback : IUnknown  
+IDiaReadExeAtOffsetCallback : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  

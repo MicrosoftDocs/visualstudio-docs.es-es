@@ -1,5 +1,5 @@
 ---
-title: Get_compiland | Microsoft Docs
+title: Get_compiland | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaLineNumber::get_compiland method
 ms.assetid: c476d0b8-c473-47eb-96f5-c4e8f577b1c9
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8267db2077029bd8a428fddad59aacfdd2f0692b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: efe34684efc185172bf5545839686bf1bc277975
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887233"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807443"
 ---
 # <a name="idialinenumbergetcompiland"></a>IDiaLineNumber::get_compiland
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera una referencia al símbolo de la operación de compilación que han con
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT get_compiland (   
+HRESULT get_compiland (   
    IDiaSymbol** pRetVal  
 );  
 ```  

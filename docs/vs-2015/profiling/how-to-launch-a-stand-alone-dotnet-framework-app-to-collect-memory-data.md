@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3bc53041-91b7-4ad0-8413-f8bf2c4b3f5e
 caps.latest.revision: 33
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 558c6ec14444ef89b7ff282b9dbc18218dbea543
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 207fc9a02be3557341bfad95d6fd32943557478a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924933"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757442"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Cómo: Iniciar una aplicación de .NET Framework independiente con el generador de perfiles para recopilar datos de memoria utilizando la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

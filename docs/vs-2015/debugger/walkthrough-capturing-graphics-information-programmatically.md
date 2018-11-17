@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a5adeff9-afaf-4047-b5ce-ef0aefe710eb
 caps.latest.revision: 24
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7cdd1e740861765958c9115b8112dacd4b338b2a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: feff1af744bd9f42d2fe8af67a72ec4856a09acc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812912"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51747676"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Tutorial: Capturar información de gráficos mediante programación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

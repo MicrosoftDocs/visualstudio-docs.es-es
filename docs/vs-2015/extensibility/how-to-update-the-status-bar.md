@@ -15,12 +15,12 @@ ms.assetid: 7500c8a7-4913-4818-a88b-bfd1b9887cb6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f19b6c46615a41f25c5a9f3b979f1a1eed36b25f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb70e8799b74f470a2216a63aae4637fe1872681
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948505"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768351"
 ---
 # <a name="how-to-update-the-status-bar"></a>Cómo: actualizar la barra de estado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

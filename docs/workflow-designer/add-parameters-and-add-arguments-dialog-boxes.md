@@ -1,5 +1,5 @@
 ---
-title: 'Diseñador de flujo de trabajo: agregar parámetros y agregar cuadros de diálogo de argumentos'
+title: 'Diseñador de flujo de trabajo: agregar parámetros y agregar cuadros de diálogo argumentos'
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,24 +12,24 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 67e81423bbd14065249cf7fe91503ab280ec2d8a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1b01e08ee5579f5422e8e51562444302d685d58d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967643"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789049"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Cuadros de diálogo Agregar parámetros y Agregar argumentos
 
-En la tabla siguiente se describe los elementos de interfaz de usuario de la **agregar parámetros** cuadro de diálogo usado por el <xref:System.Activities.Statements.InvokeMethod> diseñador:
+La tabla siguiente describen los elementos de interfaz de usuario de la **agregar parámetros** utilizado por el cuadro de diálogo el <xref:System.Activities.Statements.InvokeMethod> diseñador:
 
 |||
 |-|-|
 |**Dirección**|Especifica si el parámetro representa el flujo de datos en el método, fuera del método o ambos.|
 |**Type**|Nombre del tipo del nuevo parámetro.|
-|**Valor**|Una expresión de VB que se usa para asignar un valor predeterminado al nuevo parámetro|
+|**Valor**|Una expresión de Visual Basic que se usa para asignar un valor predeterminado para el nuevo parámetro|
 
-En la tabla siguiente se describe los elementos de interfaz de usuario de la **agregar argumentos** cuadro de diálogo usado por el <xref:System.Activities.Statements.InvokeDelegate> diseñador:
+La tabla siguiente describen los elementos de interfaz de usuario de la **agregar argumentos** utilizado por el cuadro de diálogo el <xref:System.Activities.Statements.InvokeDelegate> diseñador:
 
 |||
 |-|-|

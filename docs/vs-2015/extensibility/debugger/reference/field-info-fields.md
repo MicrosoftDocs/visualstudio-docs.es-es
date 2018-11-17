@@ -1,5 +1,5 @@
 ---
-title: FIELD_INFO_FIELDS | Microsoft Docs
+title: FIELD_INFO_FIELDS | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,12 +17,12 @@ ms.assetid: a69487d2-e701-4165-804a-8a011df9a3bd
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 50af9c59a331f12190d3b428c908127e03de49b5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ceebad12604fc788cabeef770052409ffb7bb2b0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889378"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761619"
 ---
 # <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Especifica qué información se va a recuperar sobre un [IDebugField](../../../e
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-enum enum_FIELD_INFO_FIELDS {   
+enum enum_FIELD_INFO_FIELDS {   
    FIF_FULLNAME  = 0x0001,  
    FIF_NAME      = 0x0002,  
    FIF_TYPE      = 0x0004,  

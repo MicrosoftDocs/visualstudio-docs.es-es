@@ -17,12 +17,12 @@ ms.assetid: 5c07cc52-6d2d-42df-9d76-9f1f769641db
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d987ae908a719cfcd92cbb30997d66e1e345f8a4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9ce7130cf5b6aff96e4950aa0ef73e775bb8dabf
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811521"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772981"
 ---
 # <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Determina si existe un atributo personalizado por su nombre.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT IsCustomAttributeDefined(   
+HRESULT IsCustomAttributeDefined(   
    LPCOLESTR pszCustomAttributeName  
 );  
 ```  

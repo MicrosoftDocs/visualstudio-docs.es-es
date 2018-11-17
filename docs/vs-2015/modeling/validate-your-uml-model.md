@@ -12,15 +12,15 @@ helpviewer_keywords:
 - UML, validation
 ms.assetid: deed5092-c11d-4431-a801-1e866a103075
 caps.latest.revision: 12
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c13a5e8ed5ae7fe778908af87958d4ed25951c1c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fea958a20e5eee78f79f324ad19ef646f7920951
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812509"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51739967"
 ---
 # <a name="validate-your-uml-model"></a>Validar el modelo UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

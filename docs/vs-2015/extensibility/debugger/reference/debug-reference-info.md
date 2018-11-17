@@ -1,5 +1,5 @@
 ---
-title: DEBUG_REFERENCE_INFO | Microsoft Docs
+title: DEBUG_REFERENCE_INFO | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,12 +17,12 @@ ms.assetid: 24b83d00-d756-42a1-8083-730f998761dc
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 23b385ff3c4065aa5126eda07cf0663509d1ac0c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 33a3f2a394ec46b92989d43b5efbd672fef05dc3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878680"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796641"
 ---
 # <a name="debugreferenceinfo"></a>DEBUG_REFERENCE_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Describe una referencia.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-typedef struct tagDEBUG_REFERENCE_INFO {   
+typedef struct tagDEBUG_REFERENCE_INFO {   
    DEBUGREF_INFO_FLAGS dwFields;  
    BSTR                bstrName;  
    BSTR                bstrType;  
@@ -44,7 +44,7 @@ typedef struct tagDEBUG_REFERENCE_INFO {
 ```  
   
 ```csharp  
-public struct DEBUG_REFERENCE_INFO {   
+public struct DEBUG_REFERENCE_INFO {   
    public uint             dwFields;  
    public string           bstrName;  
    public string           bstrType;  
