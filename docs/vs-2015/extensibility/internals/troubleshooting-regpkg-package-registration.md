@@ -15,12 +15,12 @@ ms.assetid: f33f822f-697a-4bad-9c10-554b4c8f6246
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6b5eec1c4726bc94ee9d57c3c4b50ac3dda2c02c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 936cfbcdf64ae678626668fd5b20dc4de56d0107
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948309"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722052"
 ---
 # <a name="troubleshooting-regpkg-package-registration"></a>Solución de problemas del registro de paquete RegPkg
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

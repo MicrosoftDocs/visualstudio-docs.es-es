@@ -20,15 +20,15 @@ helpviewer_keywords:
 - debugger, Web application errors
 ms.assetid: 6060e94e-71dc-49f2-bb59-2584216eadbf
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1a90a684a9de45e1fba67460d0ba0f01554d248f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b6215648cba97e17ab143538afb4936a480adae4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207199"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769020"
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Error: Una comprobación de seguridad produjo un error porque el servicio de administración de IIS no respondió
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

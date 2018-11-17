@@ -1,5 +1,5 @@
 ---
-title: Set_addressmap | Microsoft Docs
+title: Set_addressmap | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaAddressMap::set_addressMap method
 ms.assetid: 81e82073-089b-43d5-af39-49d7a4907c7a
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2898ac4fadd330d187015e21b7ddb687090f0875
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ea357cc04a2c0b1bce5882e1dd10cda8138a0b8c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827576"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756711"
 ---
 # <a name="idiaaddressmapsetaddressmap"></a>IDiaAddressMap::set_addressMap
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Proporciona un mapa de direcciones para admitir las traducciones de diseño de i
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT set_addressMap (   
+HRESULT set_addressMap (   
    DWORD                     cbData,  
    struct DiaAddressMapEntry data[],  
    BOOL                      imagetoSymbols  

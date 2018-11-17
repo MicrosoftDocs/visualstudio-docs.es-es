@@ -17,12 +17,12 @@ ms.assetid: a7dc9030-fc98-4cf1-b943-37a4003300b6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c2ca93e64e5e1b8c0a817161d17c55ebd0ef3669
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bd838e168c7708abeb4bf02098fdce132bb1f36
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226959"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758924"
 ---
 # <a name="idebugmethodfield"></a>IDebugMethodField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Esta interfaz describe un método.
 ## <a name="syntax"></a>Sintaxis  
   
 ```  
-IDebugMethodField : IDebugContainerField  
+IDebugMethodField : IDebugContainerField  
 ```  
   
 ## <a name="notes-for-implementers"></a>Notas para los implementadores  

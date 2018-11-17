@@ -17,12 +17,12 @@ ms.assetid: 744d76fd-2bcc-4917-a040-ce4cc714ef61
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: df1da987761a9e11ea774e673500d1670cb4ad50
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: da0984b8c9ec8aa751ea6876f312356124ab2432
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910736"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801594"
 ---
 # <a name="idebugpropertyfieldgetpropertysetter"></a>IDebugPropertyField::GetPropertySetter
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Obtiene el método que establece la propiedad.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT GetPropertySetter(   
+HRESULT GetPropertySetter(   
    IDebugMethodField** ppField  
 );  
 ```  

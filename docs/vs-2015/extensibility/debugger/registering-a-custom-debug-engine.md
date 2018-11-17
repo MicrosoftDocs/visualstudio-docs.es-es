@@ -15,12 +15,12 @@ ms.assetid: 9984cd3d-d34f-4662-9ace-31766499abf5
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 336320efce371d555854784e5fbbc60174340e03
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8ce7faf0ad538478d3291b48ac7306a39558663b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303503"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732646"
 ---
 # <a name="registering-a-custom-debug-engine"></a>Registro de un motor de depuración personalizado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

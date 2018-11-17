@@ -16,12 +16,12 @@ ms.assetid: 28e47c3b-9323-424a-80ac-6cc3bf19e09b
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a1fb04d3bc15fcac80cbe91d65a0d11ee9e71335
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 92ddc4b00f9d8eb37893e1db7ae44802e04e9c46
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218496"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764829"
 ---
 # <a name="task-class---internal-members"></a>Clase de tarea: miembros internos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

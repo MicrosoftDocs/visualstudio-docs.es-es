@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::DetachDebugger_V7 | Microsoft Docs
+title: IDebugProgramNode2::DetachDebugger_V7 | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -18,12 +18,12 @@ ms.assetid: d2d4b78e-a2dd-4217-97a6-ab648fd2ee2f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 271a4053d90efd2d852e8b67ae8ad4d4353afa37
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 756af9cbe89a84ed892fb229fcba01daa8984e1e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822317"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780391"
 ---
 # <a name="idebugprogramnode2detachdebuggerv7"></a>IDebugProgramNode2::DetachDebugger_V7
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -33,8 +33,8 @@ EN DESUSO. NO USE.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT DetachDebugger_V7 (   
-   void   
+HRESULT DetachDebugger_V7 (   
+   void   
 );  
 ```  
   

@@ -24,15 +24,15 @@ helpviewer_keywords:
 - debugging [C++], FAQs
 ms.assetid: 9a497032-cf73-441e-923b-4bbd5d37a6da
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e93ca53eb8e04241274e8b262be29cf651dd488a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2a8221d2cb481bad1d6f59d9eafe219cb5291c69
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228545"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751755"
 ---
 # <a name="debugging-native-code-faqs"></a>Preguntas más frecuentes sobre la depuración de código nativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

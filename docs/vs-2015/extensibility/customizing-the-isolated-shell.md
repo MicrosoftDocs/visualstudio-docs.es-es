@@ -15,12 +15,12 @@ ms.assetid: e0b7c3ae-210f-4f48-ac49-6a59e6034f5f
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3804ded3106c68c1298063b38fb3d384685a18a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 097186ba43202c537bf8acbe0b47893151055c19
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175557"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733787"
 ---
 # <a name="customizing-the-isolated-shell"></a>Personalización del Shell aislado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

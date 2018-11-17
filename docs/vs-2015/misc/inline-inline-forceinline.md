@@ -28,15 +28,15 @@ helpviewer_keywords:
 - instantiation, defined
 ms.assetid: a159d11e-5dc6-4bac-b2cf-b5f23688e552
 caps.latest.revision: 10
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 00a31999ef5b8513952475a11da89d15c297975a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 298085bba61cf18d5c374eb75cb2650248ab0cf7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303425"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51720956"
 ---
 # <a name="inline-inline-forceinline"></a>inline, __inline, __forceinline
 Este contenido se movió a [funciones insertadas](http://msdn.microsoft.com/library/355f120c-2847-4608-ac04-8dda18ffe10c)  
