@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: df44fe42-281b-4398-b3fc-277b62ae41f1
 caps.latest.revision: 36
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed2c3e4f81be910a74c6054d9cd4617af91dc6b7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8818936adde24cdae121a3e1de6c27af3e266af1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870320"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749035"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Cómo: Adjuntar el generador de perfiles a una aplicación independiente nativa y recopilar estadísticas de la aplicación utilizando la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

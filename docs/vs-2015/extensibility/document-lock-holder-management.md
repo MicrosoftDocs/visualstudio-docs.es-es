@@ -15,12 +15,12 @@ ms.assetid: fa1ce513-eb7d-42bc-b6e8-cb2433d051d5
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ba494d38384263570289b3f84b90fc8b5b5931e7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8eaeb8529f570db112bf43813fe20339f3bca7c2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296730"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786306"
 ---
 # <a name="document-lock-holder-management"></a>Administración de propietarios de bloqueo de documentos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

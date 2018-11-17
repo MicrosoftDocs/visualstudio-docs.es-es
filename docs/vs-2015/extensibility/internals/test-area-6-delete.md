@@ -16,12 +16,12 @@ ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ff386c2f333d3558aa6631dd2e4c13f8bfd595c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1498566e1afeaf1517b7ae3bd62297444c828888
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838756"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766304"
 ---
 # <a name="test-area-6-delete"></a>Área de prueba 6: eliminar
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

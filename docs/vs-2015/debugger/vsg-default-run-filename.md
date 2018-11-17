@@ -1,5 +1,5 @@
 ---
-title: VSG_DEFAULT_RUN_FILENAME | Microsoft Docs
+title: VSG_DEFAULT_RUN_FILENAME | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ea549d2f-c857-458c-93c7-bc5a2d11d15d
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 35f243cf021e5acbb169022ba8d9bc9a5ab4eacb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 07407dc0a50da935d8d5a9fa0eed213633adbe4f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288579"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801061"
 ---
 # <a name="vsgdefaultrunfilename"></a>VSG_DEFAULT_RUN_FILENAME
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

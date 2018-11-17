@@ -1,5 +1,5 @@
 ---
-title: Get_hasassignmentoperator | Microsoft Docs
+title: Get_hasassignmentoperator | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_hasAssignmentOperator method
 ms.assetid: fb1acb9c-4500-4343-a590-0395789e4040
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 83c17ca79d24939da0970784ec5dba6a21f7b283
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c9bd74ad1c474a27e6b945b9e9a8fd6e8ccf42d6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879058"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51730421"
 ---
 # <a name="idiasymbolgethasassignmentoperator"></a>IDiaSymbol::get_hasAssignmentOperator
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera una marca que especifica si el tipo de datos definido por el usuario ti
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT get_hasAssignmentOperator (   
+HRESULT get_hasAssignmentOperator (   
    BOOL* pRetVal  
 );  
 ```  

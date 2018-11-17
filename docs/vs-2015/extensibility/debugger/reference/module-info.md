@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO | Microsoft Docs
+title: MODULE_INFO | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,12 +17,12 @@ ms.assetid: f2e06180-1ab3-4eb5-a428-7994cceb61b6
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a7c03d260ae5b5d52a3a52198c9f3c57389ee2cd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f9a94e5013ba8d1b4a2ce56f49a21d47acb7d467
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863664"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755846"
 ---
 # <a name="moduleinfo"></a>MODULE_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Describe un módulo determinado (ensamblado, EXE o DLL).
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-typedef struct tagMODULE_INFO {   
+typedef struct tagMODULE_INFO {   
    MODULE_INFO_FIELDS dwValidFields;  
    BSTR               m_bstrName;  
    BSTR               m_bstrUrl;  
@@ -49,7 +49,7 @@ typedef struct tagMODULE_INFO {
 ```  
   
 ```csharp  
-public struct MODULE_INFO {   
+public struct MODULE_INFO {   
    public uint     dwValidFields;  
    public string   m_bstrName;  
    public string   m_bstrUrl;  
