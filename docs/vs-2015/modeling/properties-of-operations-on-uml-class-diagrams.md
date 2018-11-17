@@ -13,15 +13,15 @@ helpviewer_keywords:
 - UML, element properties
 ms.assetid: 4128f3e2-3a51-4edf-b3e4-b7f170a32f6b
 caps.latest.revision: 21
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8a0a7c8147b465e932a3fc48701b70ba5f5336ab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7a5a2e18c41f99462231da2a11dc80a0ae01e99e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822532"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51804484"
 ---
 # <a name="properties-of-operations-on-uml-class-diagrams"></a>Propiedades de las operaciones de diagramas de clases de UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

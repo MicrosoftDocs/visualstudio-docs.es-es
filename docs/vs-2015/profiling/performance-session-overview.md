@@ -14,15 +14,15 @@ helpviewer_keywords:
 - performance sessions
 ms.assetid: 35752f95-a57a-4def-b64d-cf4899669e99
 caps.latest.revision: 40
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5f82437fc2a04b1df04624b33e3069a1191e811
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b71f507e783552e066d41fe74e63fbc6b6146338
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910698"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750045"
 ---
 # <a name="performance-session-overview"></a>Información general sobre las sesiones de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

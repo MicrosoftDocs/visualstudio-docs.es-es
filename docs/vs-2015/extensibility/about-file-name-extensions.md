@@ -16,12 +16,12 @@ ms.assetid: 99f4f9ff-fb84-4258-9787-6890f308a57f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4278e27b4070ad3330b488cb8b426ffbd6484b27
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 680f9e9f79430ea53da3566686b058c44894e494
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279817"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51776088"
 ---
 # <a name="about-file-name-extensions"></a>Acerca de las extensiones de nombre de archivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

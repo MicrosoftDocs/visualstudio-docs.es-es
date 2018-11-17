@@ -17,12 +17,12 @@ ms.assetid: bb5acfa3-04c3-4088-be84-9ff8926cd16f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 17aa91437c4431ba7dfb13676db07d251d56da54
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 707ddf1a98301310739bbf432c372fbfcb21cae8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817904"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51808636"
 ---
 # <a name="idebugfieldgettypeinfo"></a>IDebugField::GetTypeInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Este método obtiene independiente del tipo de información sobre el tipo o el s
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT GetTypeInfo(   
+HRESULT GetTypeInfo(   
    TYPE_INFO* pTypeInfo  
 );  
 ```  

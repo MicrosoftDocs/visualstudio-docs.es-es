@@ -17,12 +17,12 @@ ms.assetid: f6a6262f-5183-46ce-8a45-33ef46088b98
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 20745466e600315bf2f687fde58c16082cb99759
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: de4450a3c4868d980008a870c7d5252461ea2537
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887259"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765592"
 ---
 # <a name="idebugarrayobjectgetelements"></a>IDebugArrayObject::GetElements
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Obtiene un enumerador de todos los elementos de la matriz.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT GetElements(   
+HRESULT GetElements(   
    IEnumDebugObjects** ppEnum  
 );  
 ```  
