@@ -20,15 +20,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], visualizers
 ms.assetid: 5cc12ce8-c819-48e4-b487-98d403001b28
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dba924f94da967cd19d63982ee2f6eb93384d0a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 00fb749505f8bfe16c353552aa3afcb9eaaefc2d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237255"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51723285"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>Cómo: Comprobar y depurar un visualizador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

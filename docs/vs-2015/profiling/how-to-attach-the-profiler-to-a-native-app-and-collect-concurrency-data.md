@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 12d3e0f3-4b74-4e66-8fbf-8ac99bd4f91c
 caps.latest.revision: 27
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df5100f91c1151c60d12f08571fd00c775aa59dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb9df7b4676b56295319ef7a16795301c69abe3f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250177"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803648"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>Cómo: Adjuntar el generador de perfiles a una aplicación nativa independiente y recopilar datos de simultaneidad utilizando la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

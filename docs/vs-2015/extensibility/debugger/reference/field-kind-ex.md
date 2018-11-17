@@ -1,5 +1,5 @@
 ---
-title: FIELD_KIND_EX | Microsoft Docs
+title: FIELD_KIND_EX | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,12 +15,12 @@ ms.assetid: 922c3208-1e94-485f-b70a-3bc96affeff8
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8dcf18bae79b20f833e156d3186cf806c7c050f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c56d41dcc7ebbdb8565ff265c88e33aef095abc6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293896"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729236"
 ---
 # <a name="fieldkindex"></a>FIELD_KIND_EX
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - thread properties
 ms.assetid: 46b6c668-6786-456e-97dc-337bcac0d812
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26eed1eb9d40fe78de34512f9e560ca59c19df12
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2777096e13ef649f2a340d3b3cae92d050d9531f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307708"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51728978"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>Pestaña General (Cuadro de diálogo Propiedades del subproceso)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

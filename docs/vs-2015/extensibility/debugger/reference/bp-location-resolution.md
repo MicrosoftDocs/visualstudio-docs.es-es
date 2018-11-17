@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_RESOLUTION | Microsoft Docs
+title: BP_LOCATION_RESOLUTION | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,12 +17,12 @@ ms.assetid: 86ea2c8a-54a3-48e8-83c7-18a515273129
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e294ec9e4506f0f967d39d7eda9e0c0fab3f1c39
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8c18a424040ebc305efa57bf61feceed54b6e2e0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834206"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51720862"
 ---
 # <a name="bplocationresolution"></a>BP_LOCATION_RESOLUTION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Describe la resolución de un punto de interrupción en una ubicación específi
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-typedef struct _BP_LOCATION_RESOLUTION {   
+typedef struct _BP_LOCATION_RESOLUTION {   
    IDebugBreakpointResolution2* pResolution;  
 } BP_LOCATION_RESOLUTION;  
 ```  

@@ -20,12 +20,12 @@ ms.assetid: 35342110-d639-4577-8367-00b21dcc6f07
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb7144842cba237a11d94435f56782a8d2de90b6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e91d535697d0e5b9402a7b7eb3bbd4559821c68a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195746"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773644"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>Ubicación predeterminada de comando, grupo y barra de herramientas
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

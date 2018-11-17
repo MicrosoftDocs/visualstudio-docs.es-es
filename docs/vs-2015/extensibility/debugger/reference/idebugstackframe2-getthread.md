@@ -17,12 +17,12 @@ ms.assetid: cbeef85b-3dd7-4f97-adc2-c4d197d979fc
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 91d70a35b711ec5e5572fa23e8d8b6978b4a125e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 22f56cf0d73a2fbd60971274709013d7a20c5750
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837547"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727196"
 ---
 # <a name="idebugstackframe2getthread"></a>IDebugStackFrame2::GetThread
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Obtiene el subproceso asociado a un marco de pila.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT GetThread (   
+HRESULT GetThread (   
    IDebugThread2** ppThread  
 );  
 ```  
   
 ```csharp  
-int GetThread (   
+int GetThread (   
    out IDebugThread2 ppThread  
 );  
 ```  

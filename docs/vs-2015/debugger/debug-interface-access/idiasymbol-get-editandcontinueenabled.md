@@ -1,5 +1,5 @@
 ---
-title: Get_editandcontinueenabled | Microsoft Docs
+title: Get_editandcontinueenabled | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_editAndContinueEnabled method
 ms.assetid: cd703c64-9ff8-4654-8493-8cde9309cb22
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7ffa501c9ed0ce412bfb5c825551ddac6812ec08
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fe8e797bfe17a7b8f2a22bd1752abd8f902ce956
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824924"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780170"
 ---
 # <a name="idiasymbolgeteditandcontinueenabled"></a>IDiaSymbol::get_editAndContinueEnabled
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera una marca que indica si el módulo se compiló con la [/Z7, / Zi, /ZI (
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT get_editAndContinueEnabled (   
+HRESULT get_editAndContinueEnabled (   
    BOOL* pRetVal  
 );  
 ```  

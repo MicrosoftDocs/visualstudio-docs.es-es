@@ -31,15 +31,15 @@ helpviewer_keywords:
 - debugger, processes
 ms.assetid: 27900e58-090c-4211-a309-b3e1496d5824
 caps.latest.revision: 62
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 604c9834594c14e8c1cc6b2c310f96cb68321931
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 5ca0b2e1ada7e91f5f32f29aba8e89ffc26ac629
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220009"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783089"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Crear asociaciones con procesos en ejecución con el depurador de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

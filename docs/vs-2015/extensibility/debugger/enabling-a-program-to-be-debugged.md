@@ -15,12 +15,12 @@ ms.assetid: 61d24820-0cd9-48b6-8674-6813f7493237
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8d3f2db58e09060871f5d70b1daf766c993807b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 33256a27230273b9d0af249ed4ecd4e7767a7e05
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231718"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789348"
 ---
 # <a name="enabling-a-program-to-be-debugged"></a>Habilitación de un programa que se va a depurar
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

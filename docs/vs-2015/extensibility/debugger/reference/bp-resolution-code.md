@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_CODE | Microsoft Docs
+title: BP_RESOLUTION_CODE | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,12 +17,12 @@ ms.assetid: ac103ec5-771c-4667-92de-b5abb53bbb52
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 25c551a9805c1a482dbbb58bb30dfb9400a8aaa6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 89fcdf1090499f2390d8e8a2ad91149072cb3623
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924703"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780287"
 ---
 # <a name="bpresolutioncode"></a>BP_RESOLUTION_CODE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Describe la ubicación de un punto de interrupción del código.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-typedef struct _BP_RESOLUTION_CODE {   
+typedef struct _BP_RESOLUTION_CODE {   
    IDebugCodeContext2* pCodeContext;  
 } BP_RESOLUTION_CODE;  
 ```  
   
 ```csharp  
-public struct BP_RESOLUTION_CODE {   
+public struct BP_RESOLUTION_CODE {   
    public IDebugCodeContext2 pCodeContext;  
 };  
 ```  
