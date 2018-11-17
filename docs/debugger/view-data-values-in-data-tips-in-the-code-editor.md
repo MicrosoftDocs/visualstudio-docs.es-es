@@ -1,5 +1,5 @@
 ---
-title: Ver valores de datos de información sobre datos en el editor de código | Documentos de Microsoft
+title: Ver los valores de datos de información sobre datos en el editor de código | Documentos de Microsoft
 ms.custom: ''
 ms.date: 07/14/2017
 ms.technology: vs-ide-debug
@@ -19,27 +19,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b260cd8a4cd102683c4342d5f199102660cfbe90
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: afb318c8aa327345b3cd76ee16b718db1e0386aa
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477334"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826770"
 ---
-# <a name="view-data-values-in-datatips-in-the-code-editor"></a>Ver valores de datos de información sobre datos en el editor de código
-La Información sobre datos es una manera útil de ver información sobre las variables del programa durante la depuración. La Información sobre datos funciona únicamente en modo de interrupción y únicamente con las variables que están dentro del actual ámbito de ejecución.
+# <a name="view-data-values-in-datatips-in-the-code-editor"></a>Ver valores de datos en la información sobre datos en el editor de código
+La Información sobre datos es una manera útil de ver información sobre las variables del programa durante la depuración. La Información sobre datos funciona únicamente en modo de interrupción y únicamente con las variables que están dentro del actual ámbito de ejecución. Si se trata de la primera vez que ha probado para depurar el código, es posible que desea leer [escribir mejor C# código con Visual Studio](../debugger/write-better-code-with-visual-studio.md) y [de depuración para principiantes absolutos](../debugger/debugging-absolute-beginners.md) antes de pasar a través de este artículo.
   
 ### <a name="to-display-a-datatip"></a>Para mostrar una información sobre datos  
   
-1. Establecer un punto de interrupción e inicie la depuración (presione **F5**).
+1. Establezca un punto de interrupción e iniciar la depuración (presione **F5**).
 
-2. Cuando está en pausa en el depurador, coloque el puntero del mouse sobre cualquier variable en el ámbito actual.
+2. Cuando se pausa en el depurador, coloque el puntero del mouse sobre cualquier variable en el ámbito actual.
   
      Aparece la Información sobre datos.
   
-3.  La Información sobre datos desaparece al quitar el puntero del mouse. Para anclar la información sobre datos para que permanezca abierta, haga clic en el **anclar a origen** icono o botón secundario en una variable, a continuación, haga clic en **anclar a origen**.
+3.  La Información sobre datos desaparece al quitar el puntero del mouse. Para anclar la información sobre datos de modo que permanezca abierta, haga clic en el **anclar a origen** icono o con el botón secundario en una variable, a continuación, haga clic en **anclar a origen**.
 
-    ![Fijar una sugerencia de datos](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
+    ![Anclar una sugerencia de datos](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
 
     > [!NOTE]
     > Las informaciones sobre datos siempre se evalúan en el contexto en el que se suspende la ejecución, y no en el que el cursor se mantiene sobre un elemento. Si mantiene el cursor sobre una variable en otra función con el mismo nombre que una variable que está en el contexto actual, el valor de la variable de la otra función se mostrará como el valor de la variable del contexto actual.
@@ -62,18 +62,18 @@ La Información sobre datos es una manera útil de ver información sobre las va
   
 ### <a name="to-close-all-datatips"></a>Para cerrar toda la Información sobre datos  
   
--   En el **depurar** menú, haga clic en **borrar la información sobre datos todos los**.  
+-   En el **depurar** menú, haga clic en **borrar todas las sugerencias de datos**.  
   
 ### <a name="to-close-all-datatips-for-a-specific-file"></a>Para cerrar toda la información sobre datos de un archivo concreto  
   
--   En el **depurar** menú, haga clic en **desactive todos los información sobre datos anclada en** *archivo*.  
+-   En el **depurar** menú, haga clic en **borrar todos los información sobre datos anclada a** *archivo*.  
   
 ## <a name="expand-and-edit-information"></a>Expandir y editar información  
  Con la Información sobre datos, se puede expandir una matriz, una estructura o un objeto para ver sus miembros. También se puede editar el valor de una variable de una Información sobre datos.  
   
 #### <a name="to-expand-a-variable-to-see-its-elements"></a>Para expandir una variable y ver sus elementos  
   
--   En una información sobre datos, coloque el puntero del mouse sobre la **+** inicio de sesión que precede al nombre de variable.  
+-   En una información sobre datos, coloque el puntero del mouse sobre el **+** inicio de sesión que precede al nombre de variable.  
   
     La variable se expande y se muestran sus elementos en forma de árbol.
 
@@ -97,13 +97,13 @@ La Información sobre datos es una manera útil de ver información sobre las va
      La Información sobre datos permanecerá transparente mientras mantenga presionada la tecla CTRL.  
   
 ## <a name="visualize-complex-data-types"></a>Visualizar tipos de datos complejos  
- Si aparece un icono de lupa situado junto a un nombre de variable en una información sobre datos, uno o varios [visualizadores](../debugger/create-custom-visualizers-of-data.md), como el [cadena visualizadores](../debugger/string-visualizer-dialog-box.md), están disponibles para las variables de ese tipo de datos. Los visualizadores se pueden utilizar para mostrar la información de manera más significativa, normalmente de forma gráfica.
+ Si aparece un icono de lupa junto a un nombre de variable en una información sobre datos, uno o varios [visualizadores](../debugger/create-custom-visualizers-of-data.md), como el [los visualizadores de cadenas](../debugger/string-visualizer-dialog-box.md), están disponibles para las variables de ese tipo de datos. Los visualizadores se pueden utilizar para mostrar la información de manera más significativa, normalmente de forma gráfica.
   
 #### <a name="to-view-the-contents-of-a-variable-using-a-visualizer"></a>Para ver el contenido de una variable mediante un visualizador  
   
 -   Haga clic en el icono de lupa ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "icono visualizador") para seleccionar el visualizador predeterminado del tipo de datos.  
   
-     -o bien-  
+     O bien  
   
      Haga clic en la flecha emergente junto al visualizador para seleccionar una lista emergente de visualizadores adecuados para el tipo de datos.  
   
@@ -116,7 +116,7 @@ La Información sobre datos es una manera útil de ver información sobre las va
   
 -   Haga clic en una información sobre datos y, a continuación, haga clic en **Agregar inspección**.  
   
-     La variable se agrega a la **inspección** ventana. Si está usando una edición que admite varias **inspección** windows, la variable se agrega a **Inspección 1.**  
+     La variable se agrega a la **inspección** ventana. Si usa una versión que admite varias **inspección** windows, la variable se agrega a **Inspección 1.**  
   
 ## <a name="import-and-export-datatips"></a>Importar y exportar información sobre datos  
  Puede exportar Información sobre datos a un archivo XML, que puede compartir con un colega o modificar con un editor de texto.  
@@ -127,7 +127,7 @@ La Información sobre datos es una manera útil de ver información sobre las va
   
      El **exportar información sobre datos** aparece el cuadro de diálogo.  
   
-2.  Utilizar técnicas del archivo estándar para navegar hasta la ubicación donde desea guardar el archivo XML, escriba un nombre para el archivo en el **nombre de archivo** cuadro y, a continuación, haga clic en **Aceptar**.  
+2.  Usar técnicas de archivo estándar para navegar hasta la ubicación donde desea guardar el archivo XML, escriba un nombre para el archivo en el **nombre de archivo** cuadro y, a continuación, haga clic en **Aceptar**.  
   
 #### <a name="to-import-datatips"></a>Para importar información sobre datos  
   
@@ -138,6 +138,8 @@ La Información sobre datos es una manera útil de ver información sobre las va
 2.  Utilice el cuadro de diálogo para buscar el archivo XML que desea abrir y haga clic en **Aceptar**.  
   
 ## <a name="see-also"></a>Vea también  
- [Ver los datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
- [Inspección y ventanas de inspección rápida](../debugger/watch-and-quickwatch-windows.md)   
+ [¿Qué es la depuración?](../debugger/what-is-debugging.md)  
+ [Escribir mejor C# código con Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Primer vistazo al depurar](../debugger/debugger-feature-tour.md) [ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
+ [Inspección e inspección rápida Windows](../debugger/watch-and-quickwatch-windows.md)   
  [Create Custom Visualizers](../debugger/create-custom-visualizers-of-data.md) (Crear visualizadores personalizados)   

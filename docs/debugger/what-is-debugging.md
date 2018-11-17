@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bece83e7e2a66499721c017932d4b498b664b459
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: 7cd96d61718972c82c6002888e123003530c019c
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561845"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826666"
 ---
 # <a name="what-is-debugging"></a>¿Qué es la depuración?
 
@@ -49,7 +49,7 @@ El depurador es una herramienta esencial para encontrar y corregir errores en la
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-En este artículo, ha aprendido algunos conceptos generales de depuración. A continuación, puede empezar a aprender cómo depurar con Visual Studio y cómo escribir código con menos errores.
+En este artículo, ha aprendido algunos conceptos generales de depuración. A continuación, puede empezar a aprender cómo depurar con Visual Studio y cómo escribir código con menos errores. El siguiente artículo se muestra C# ejemplos de código, pero los conceptos se aplican a todos los idiomas compatibles con Visual Studio.
 
 > [!div class="nextstepaction"]
 > [Escribir mejor C# código con Visual Studio](../debugger/write-better-code-with-visual-studio.md)
