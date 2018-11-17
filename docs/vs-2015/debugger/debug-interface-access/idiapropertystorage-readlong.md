@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaPropertyStorage::ReadLONG
 ms.assetid: 32054cbc-db55-4513-a1b4-de80e77aac8a
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d50bfbd4fdd0d308723b85d80639c3dfcd326e3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7dbc2a96b7d47b32dbd01c2177719e1896fb2fb2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828941"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766872"
 ---
 # <a name="idiapropertystoragereadlong"></a>IDiaPropertyStorage::ReadLONG
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Lee `LONG` valores en un conjunto de propiedades.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT ReadDLONG (   
+HRESULT ReadDLONG (   
    PROPID id,  
    LONG*  pValue  
 );  

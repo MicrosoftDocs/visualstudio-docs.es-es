@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_liveRangeStartAddressOffset | Microsoft Docs
+title: IDiaSymbol::get_liveRangeStartAddressOffset | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_liveRangeStartAddressOffset
 ms.assetid: f5b28914-0a14-4b22-8259-59d7f97ee610
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 07c9959d67576c0cef83bd74318b7dcb5f960e62
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0e5d5cecdbedd526c7866e17c3cfcb7a0ab7e42b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918602"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794678"
 ---
 # <a name="idiasymbolgetliverangestartaddressoffset"></a>IDiaSymbol::get_liveRangeStartAddressOffset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Devuelve la parte del ajuste de la dirección inicial del intervalo en el que el
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT get_liveRangeStartAddressOffset (   
+HRESULT get_liveRangeStartAddressOffset (   
    DWORD* offset  
 );  
 ```  

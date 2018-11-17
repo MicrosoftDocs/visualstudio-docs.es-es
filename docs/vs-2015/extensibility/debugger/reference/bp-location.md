@@ -17,12 +17,12 @@ ms.assetid: ed1e874c-f289-4c31-8b6c-04dde03ad0f5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9525c31475f12040ca50c4aa0d24b126f94f80be
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e154fe6b1121855e50c32b342c3c11566cbcd03
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878575"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749105"
 ---
 # <a name="bplocation"></a>BP_LOCATION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -83,21 +83,21 @@ public struct BP_LOCATION {
  [Solo en C++] Contiene el [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md) estructura si `bpLocationType`  =  `BPLT_RESOLUTION`.  
   
  `unionmember1`  
- [Solo en C#] Vea la sección Comentarios para interpretar.  
+ [C# sólo] Vea la sección Comentarios para interpretar.  
   
  `unionmember2`  
- [Solo en C#] Vea la sección Comentarios para interpretar.  
+ [C# sólo] Vea la sección Comentarios para interpretar.  
   
  `unionmember3`  
- [Solo en C#] Vea la sección Comentarios para interpretar.  
+ [C# sólo] Vea la sección Comentarios para interpretar.  
   
  `unionmember4`  
- [Solo en C#] Vea la sección Comentarios para interpretar.  
+ [C# sólo] Vea la sección Comentarios para interpretar.  
   
 ## <a name="remarks"></a>Comentarios  
  Esta estructura es un miembro de la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) y [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) estructuras.  
   
- [Solo en C#] El `unionmemberX` miembros se interpretan según la tabla siguiente. Mirando la columna izquierda de la `bpLocationType` valor, a continuación, buscar en las otras columnas para determinar qué cada `unionmemberX` miembro representa y serializar el `unionmemberX` en consecuencia. Vea el ejemplo de una forma para interpretar una parte de esta estructura en C#.  
+ [C# sólo] El `unionmemberX` miembros se interpretan según la tabla siguiente. Mirando la columna izquierda de la `bpLocationType` valor, a continuación, buscar en las otras columnas para determinar qué cada `unionmemberX` miembro representa y serializar el `unionmemberX` en consecuencia. Vea el ejemplo de una forma para interpretar una parte de esta estructura en C#.  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  

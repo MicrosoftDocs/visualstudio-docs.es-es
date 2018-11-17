@@ -15,15 +15,15 @@ f1_keywords:
 - vs.graphics.vsglog
 ms.assetid: 6ccb1269-d55f-49c4-920d-baedf7de2888
 caps.latest.revision: 34
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b35cd0a0063ab02af0ed0831079439926b446794
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 097f431446ed2148e2a61c6f85266843fe7ada44
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261565"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745167"
 ---
 # <a name="graphics-log-document"></a>Documento de registro de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

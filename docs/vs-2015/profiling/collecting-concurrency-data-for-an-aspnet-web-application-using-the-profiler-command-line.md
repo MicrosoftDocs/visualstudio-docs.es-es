@@ -14,15 +14,15 @@ helpviewer_keywords:
 - profiling tools,concurrency method
 ms.assetid: 0ba431c1-9eaf-4af9-8ce0-669c0835cdc2
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fbc5a06e4c3697a57b0408cfe18a1b5da4eae1d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8fba6fbb03b171b50014aad887ff83d9841f0249
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306545"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788295"
 ---
 # <a name="collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Recopilar datos de simultaneidad para una aplicación web ASP.NET con la línea de comandos del generador de perfiles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

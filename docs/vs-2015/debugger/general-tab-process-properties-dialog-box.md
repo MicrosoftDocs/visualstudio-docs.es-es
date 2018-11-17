@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Process properties for Windows NT
 ms.assetid: 86f4d61d-a594-4aac-8960-c5279b4a10fd
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1acc3826521ca6bd15b60563f9bd5e99ba70988e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cd05c82c33349f4a783204538ab47232fa6fcbc4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282079"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798955"
 ---
 # <a name="general-tab-process-properties-dialog-box"></a>Pestaña General (Cuadro de diálogo Propiedades del proceso)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
