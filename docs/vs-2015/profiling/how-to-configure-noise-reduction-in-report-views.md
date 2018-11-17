@@ -17,15 +17,15 @@ helpviewer_keywords:
 - profiling tools, folding
 ms.assetid: b07e0375-bb73-47e3-8d1d-b9b492fb16c9
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: af3a994dbad1ce15830145dc01acd0f47003681d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e85e765ed80b37c7c688f9c0f25e3b7e8782a42f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176025"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51767703"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Cómo: Configurar la reducción de ruido en las vistas de informes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

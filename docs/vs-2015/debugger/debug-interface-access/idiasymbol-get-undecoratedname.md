@@ -1,5 +1,5 @@
 ---
-title: Get_undecoratedname | Microsoft Docs
+title: Get_undecoratedname | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_undecoratedName method
 ms.assetid: e49edf25-a51d-4787-bd5b-2bf5af827c8c
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b5a2d25452db4487855d6327239bc5b9eef276a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 95f84b5d5c58ddd5f9968ff9722588ec18771721
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893096"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51762438"
 ---
 # <a name="idiasymbolgetundecoratedname"></a>IDiaSymbol::get_undecoratedName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera el nombre para un representativo, C++ o la vinculación, el nombre no r
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT get_undecoratedName (   
+HRESULT get_undecoratedName (   
    BSTR* pRetVal  
 );  
 ```  

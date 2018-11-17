@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 509d2d4f-48a5-4cdf-acad-6f7b75421303
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b09009e3815ee70b13f3397ab68fa9b0c4d767f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: be41b40dc4f20a0f983da1bf9e70c92ea4c2095f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174621"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803102"
 ---
 # <a name="perftips"></a>Sugerencias de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

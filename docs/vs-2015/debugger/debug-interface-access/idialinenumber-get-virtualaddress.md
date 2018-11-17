@@ -1,5 +1,5 @@
 ---
-title: Idialinenumber | Microsoft Docs
+title: Idialinenumber | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaLineNumber::get_virtualAddress method
 ms.assetid: 9048ef91-a59d-4ad8-90cb-4c13d0989241
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2adccc470828ef8080c8a91dc579e5b3603fd04e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ce30cc2808158744f8738e877a3fbc82a9c83d31
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924465"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751901"
 ---
 # <a name="idialinenumbergetvirtualaddress"></a>IDiaLineNumber::get_virtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera la dirección virtual (VA) del bloque.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT get_virtualAddress (   
+HRESULT get_virtualAddress (   
    ULONGLONG* pRetVal  
 );  
 ```  

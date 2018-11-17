@@ -17,12 +17,12 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8ad3c479349b698283fcb3a7145dcfc3948254b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 52e963a202d75c29c65521729e70e062a579d479
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836741"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753644"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Adición de un comando a la barra de herramientas del Explorador de soluciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
