@@ -23,15 +23,15 @@ helpviewer_keywords:
 - HPC profiling
 ms.assetid: 1525bbdb-27da-4088-8487-a486cee5e7b3
 caps.latest.revision: 27
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67cc55d47e10093b440597ce464d7cc058689455
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f6b0838a7fb3db86290647fadec9ca3572cbdf90
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920370"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809163"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Generar perfiles en clústeres HPC (Sistemas de alto rendimiento)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

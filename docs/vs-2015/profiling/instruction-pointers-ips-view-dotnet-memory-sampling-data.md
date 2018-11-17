@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Instruction Pointers view
 ms.assetid: 7d91cc14-e8e9-4ebb-b14f-b9f0da770508
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c0e39088aa546a83e374cf0b1edfd58f7132b9ed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 884e8a75b555d0cee59a708aea91f6fc83557df1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290635"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51730310"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>Vista Punteros de instrucción (IP): datos de muestreo de memoria de .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

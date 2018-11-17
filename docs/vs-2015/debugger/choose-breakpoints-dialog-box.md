@@ -27,15 +27,15 @@ helpviewer_keywords:
 - Choose Breakpoints dialog box
 ms.assetid: 35cbd591-4c4f-4035-8731-8162ba1c8318
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a48e4181e2efc36faa26739bbcfbdee020c47a16
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 41f3e27b2a357f3b16a2b813bf91ec4443902c2e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174050"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726755"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Cuadro de diálogo Elegir puntos de interrupción
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

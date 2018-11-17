@@ -15,12 +15,12 @@ ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c02d873e2ccb6062f94569d1231b47fc56624fd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5dcb07c3c49b132cdf12c1a4973af3ebf04dfa74
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293045"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796784"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Funciones de API de complemento de control de código fuente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
