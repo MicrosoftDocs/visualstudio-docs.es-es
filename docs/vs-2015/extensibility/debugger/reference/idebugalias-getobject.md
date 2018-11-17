@@ -17,12 +17,12 @@ ms.assetid: 97bc3af6-6e55-4940-8a6d-692c61257806
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 825d27eaba67fd7ef43891451ebda86cb1137f6d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bb08d0199342b95ab58cccac3616be0fc061254e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877730"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51767450"
 ---
 # <a name="idebugaliasgetobject"></a>IDebugAlias::GetObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ Obtiene el objeto que de este alias.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT GetObject(  
-   IDebugObject2** ppObject  
+HRESULT GetObject(  
+   IDebugObject2** ppObject  
 );  
 ```  
   
 ```csharp  
-int GetObject(  
-   Out IDebugObject2 ppObject  
+int GetObject(  
+   Out IDebugObject2 ppObject  
 )  
 ```  
   

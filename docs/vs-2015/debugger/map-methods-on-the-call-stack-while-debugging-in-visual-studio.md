@@ -32,15 +32,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], visualizing the call stack
 ms.assetid: d6a72e5e-f88d-46fc-94a3-1789d34805ef
 caps.latest.revision: 43
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 6995255125de6bf78fbdd8718ffb836b9ed42dde
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1df71fbd8dc0c41b01d91290dec86eedb36518d0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922138"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727226"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Asignar métodos en la pila de llamadas durante la depuración en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

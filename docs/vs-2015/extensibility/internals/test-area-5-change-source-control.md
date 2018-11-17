@@ -16,12 +16,12 @@ ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a903d1cfdb503650f044a17961542c9d011b55bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d117d3ad85d46bfeeb896892508ba90efb33e702
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856670"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51746594"
 ---
 # <a name="test-area-5-change-source-control"></a>Área de prueba 5: cambiar control de código fuente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

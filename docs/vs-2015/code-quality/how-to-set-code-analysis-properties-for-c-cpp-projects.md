@@ -21,15 +21,15 @@ helpviewer_keywords:
 - C/C++ code analysis properties
 ms.assetid: 7af52097-6d44-4785-9b9f-43b7a7d447d7
 caps.latest.revision: 19
-author: corob-msft
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5be7d600da2f1f402de3f6d083851edb11bf8dda
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 447bb9dfedc93594c6af014b830bfabc1b7ecf39
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224827"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51752659"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Cómo: Establecer propiedades de análisis de código para proyectos de C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -15,12 +15,12 @@ ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0608d8f6c4c9d9c0ae1454110e6db212f16bfe9b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e4afd91c42eeb60d005b1eb186c30d3896e3101f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300552"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731387"
 ---
 # <a name="extending-the-output-window"></a>Ampliación de la ventana de salida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

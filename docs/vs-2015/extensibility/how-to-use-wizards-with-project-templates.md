@@ -19,12 +19,12 @@ ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ee48fbf33513878626553d8703b44c8b2ed8f252
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 650b9c360013d06216e607269f77afd24f3cc22c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899050"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783765"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Cómo: Utilizar los asistentes con las plantillas de proyectos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

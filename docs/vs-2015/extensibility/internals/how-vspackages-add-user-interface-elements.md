@@ -17,12 +17,12 @@ ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aa1ffdc982fa3f9773770957a0dbb177ad3d4156
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 88b1a71964ddae67241025dd32c1a1384c79765f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872452"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753375"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Cómo VSPackages agrega elementos de la interfaz de usuario
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

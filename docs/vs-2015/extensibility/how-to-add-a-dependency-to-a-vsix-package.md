@@ -18,12 +18,12 @@ ms.assetid: 8f20177b-dab9-43a3-b959-81a591b451d6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ad1c743f9fa5f0e0446eedf59dcbf4dd961be7aa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c4a8f360470b22722a3008ed1ac1c05a411cd47d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219770"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800371"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Cómo: agregar una dependencia a un paquete VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

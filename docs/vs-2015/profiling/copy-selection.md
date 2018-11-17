@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, Copy Selection
 ms.assetid: 645d9bd3-0a17-4a09-9b25-b37ae3ff484a
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 29f08162d395412d11b829c9d0db34f95404c843
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c6f0877a72b4e7d4f9fb79ad656042f6662c4e5b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183903"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724601"
 ---
 # <a name="copy-selection"></a>Copiar selección
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

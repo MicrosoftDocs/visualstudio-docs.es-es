@@ -26,15 +26,15 @@ helpviewer_keywords:
 - msvsmon.exe
 ms.assetid: e5b18734-2daf-4c58-b5de-24ae1295703e
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba0c145f94e0d4213cdc859edb3b43710d96d257
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2961aed55df241bce3c67eaa4c8630bac1e65f65
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205756"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722123"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user"></a>Error: El Monitor de depuración remota de Microsoft Visual Studio del equipo remoto se está ejecutando con un usuario diferente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

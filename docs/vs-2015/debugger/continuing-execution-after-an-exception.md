@@ -31,15 +31,15 @@ helpviewer_keywords:
 - programs, executing
 ms.assetid: 6fe97aac-2131-4615-bd92-d3afee741558
 caps.latest.revision: 30
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9e99a29c097bdf5e23bdb8f4955cd1ccc7ec19e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 947a17993fe0e8366149d1cef79c26c68b11d22a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230131"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51730029"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Continuar la ejecución después de una excepción
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

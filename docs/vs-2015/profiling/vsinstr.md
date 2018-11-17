@@ -20,15 +20,15 @@ helpviewer_keywords:
 - performance tools, VSInstr tool
 ms.assetid: 7b1334f7-f9b0-4a82-a145-d0607bfa8467
 caps.latest.revision: 49
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 70ebc816b5bf0b2b27805499ebd688f62431a87f
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: d905a7a6fa99afa0e7d43409ca1d7b53e7fbd9b0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220292"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773332"
 ---
 # <a name="vsinstr"></a>VSInstr
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ VSInstr [/U] filename [/options]
 |**ExcludeSmallFuncs**|Excluye de la instrumentación las funciones pequeñas, que son funciones cortas que no realizan ninguna llamada de función. La opción **ExcludeSmallFuncs** proporciona menos sobrecarga de instrumentación y, por tanto, una velocidad de instrumentación mejorada.<br /><br /> La exclusión de las funciones pequeñas también reduce el tamaño del archivo .vsp y el tiempo necesario para el análisis.|  
 |**Mark:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname,markid`|Inserta una marca de perfil (un identificador utilizado para delimitar los datos de informes) que puede utilizar para identificar el inicio o final de un intervalo de datos en el archivo de informe .vsp.<br /><br /> **Before**: inmediatamente antes de la entrada de la función de destino.<br /><br /> **After**: inmediatamente después de la salida de la función de destino.<br /><br /> **Top**: inmediatamente después de la entrada de la función de destino.<br /><br /> **Bottom**: inmediatamente antes de cada devolución de la función de destino.<br /><br /> `funcname`: nombre de la función de destino<br /><br /> `Markid`: un entero positivo (largo) que se usará como el identificador de la marca de perfil.|  
 |**Coverage**|Realiza instrumentación de cobertura. Solo se puede utilizar con las siguientes opciones: **Verbose**, **OutputPath**, **Exclude** y **Logfile**.|  
-|**Verbose**|El **detallado** opción se utiliza para ver información detallada sobre el proceso de instrumentación.|  
+|**Verbose**|La opción **Verbose** se utiliza para ver información detallada sobre el proceso de instrumentación.|  
 |**NoWarn** `[:[Message Number[;Message Number]]]`|Suprime todas las advertencias o solo advertencias específicas.<br /><br /> `Message Number`: el número de advertencia. Si se omite `Message Number`, se suprimen todas las advertencias.<br /><br /> Para obtener más información, consulte [Advertencias de VSInstr](../profiling/vsinstr-warnings.md).|  
 |**Control** `:{` **Thread** `&#124;` **Process** `&#124;` **Global** `}`|Especifica el nivel de generación de perfiles de las siguientes opciones de control de recopilación de datos de VSInstr:<br /><br /> **Start**<br /><br /> **StartOnly**<br /><br /> **Suspend**<br /><br /> **StopOnly**<br /><br /> **SuspendOnly**<br /><br /> **ResumeOnly**<br /><br /> **Thread**: especifica las funciones de control de recopilación de datos de nivel de subproceso. La generación de perfiles se inicia o detiene solo para el subproceso actual. El estado de generación de perfiles de otros subprocesos no se ve afectado. El valor predeterminado es thread.<br /><br /> **Process**: especifica las funciones de control de recopilación de datos de generación de perfiles de nivel de proceso. La generación de perfiles se inicia o se detiene en todos los subprocesos del proceso actual. No se ve afectado el estado de generación de perfiles de otros procesos.<br /><br /> **Global**: especifica las funciones de control de recopilación de datos de nivel global (entre procesos).<br /><br /> Se produce un error si no se especifica el nivel de generación de perfiles.|  
 |**Start** `:{` **Inside** `&#124;` **Outside** `},funcname`|Limita la recopilación de datos a la función de destino y las funciones secundarias a las que llama.<br /><br /> **Inside**: inserta la función StartProfile inmediatamente después de la entrada a la función de destino. Inserta la función StopProfile inmediatamente antes de cada devolución de la función de destino.<br /><br /> **Outside**: inserta la función StartProfile inmediatamente antes de cada llamada a la función de destino. Inserta la función StopProfile inmediatamente después de cada llamada a la función de destino.<br /><br /> `funcname`: el nombre de la función de destino.|  

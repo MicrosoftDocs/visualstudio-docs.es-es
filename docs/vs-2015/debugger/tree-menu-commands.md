@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Tree menu commands
 ms.assetid: ffc1b893-17b1-477f-92a1-e4a59261ca1a
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad1c3088fc91819744e2c365245aaf96fbb21447
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 049a7b46b892b5b307b55fb9f92c8a5b711b7b19
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270652"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722903"
 ---
 # <a name="tree-menu-commands"></a>Comandos del menú Árbol
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

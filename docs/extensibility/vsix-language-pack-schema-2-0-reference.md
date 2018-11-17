@@ -16,12 +16,12 @@ author: dgriffen
 manager: douge
 ms.workload:
 - dagriffe
-ms.openlocfilehash: 94d785ce55b57e35b0880537e099cbc3e03d20ab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3c1dfa0e3de06bcd6c61472a085ea3c4cdeeac27
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855824"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780794"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>Referencia de esquema 2.0 del paquete de idioma VSIX
 
@@ -31,7 +31,7 @@ El esquema del paquete de idioma de VSIX proporciona información de instalació
 
 El elemento raíz del archivo de paquete de idioma es `<PackageLanguagePackManifest>`, con un atributo de `Version`, que es la versión del formato de paquete de idioma. En este artículo se describe la versión 2.0 del formato de paquete de idioma, que se especifica en el manifiesto estableciendo el `Version` en el valor `Version="2.0.0"`. El elemento raíz contiene exactamente un elemento secundario `<Metadata>` elemento.
 
-### <a name="packagelangaugepackmanifest-element"></a>Elemento PackageLangaugePackManifest
+### <a name="packagelanguagepackmanifest-element"></a>Elemento PackageLanguagePackManifest
 
 Dentro de la `<PackageLanguagePackManifest>` elemento debe existir el elemento siguiente:
 

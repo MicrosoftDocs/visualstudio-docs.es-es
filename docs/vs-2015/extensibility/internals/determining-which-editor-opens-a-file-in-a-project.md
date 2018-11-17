@@ -18,12 +18,12 @@ ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ba2241a8c8572b46dab0d4df1776f65ab8f10d67
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 832fd838246c075087700494b09757184be687a7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241038"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741602"
 ---
 # <a name="determining-which-editor-opens-a-file-in-a-project"></a>Determinación del editor que abre un archivo en un proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

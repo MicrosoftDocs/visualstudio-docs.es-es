@@ -16,12 +16,12 @@ ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b3d65a1fb510daec68060261141ddb2d05822988
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: beaf1b9c67cdad3237d1ac48b4a8e464b0a203a7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836858"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769396"
 ---
 # <a name="selection-context-objects"></a>Objetos de contexto de selección
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

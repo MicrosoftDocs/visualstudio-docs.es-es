@@ -16,15 +16,15 @@ dev_langs:
 - C++
 ms.assetid: dd1723b7-4a43-47aa-9acf-d44afce78154
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b85fd9f205b40bd04398833885d5e07e14c1866f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d126afed3d8f164eebdec5e81d6cf60232305734
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256118"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740106"
 ---
 # <a name="debugging-windows-store-and-windows-universal-apps"></a>Depuración de la tienda Windows y aplicaciones Windows universales
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
