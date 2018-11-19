@@ -14,15 +14,15 @@ helpviewer_keywords:
 - instrumentation profiling method
 ms.assetid: 4017d9d1-d609-4f41-8e4e-976abae746b3
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 50eb6705cb1aef0bb1cca3de5716656c77191c3d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b9a84a4dbbeee9c8d4738406023cdb86df09504e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227433"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721931"
 ---
 # <a name="collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Recopilar datos detallados de tiempo para una aplicación independiente mediante la línea de comandos del generador de perfiles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
