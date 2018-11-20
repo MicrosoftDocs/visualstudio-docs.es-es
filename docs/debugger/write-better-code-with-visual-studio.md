@@ -1,6 +1,6 @@
 ---
 title: Permitir que Visual Studio le ayudarán a escribir C# código con menos errores
-description: Entender cuándo se debe utilizar al depurador para depurar la aplicación
+description: Aprender a escribir código mejor con menos errores
 ms.custom: debug-experiments
 ms.date: 10/30/2018
 ms.technology: vs-ide-debug
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b020dcf27ee9b248b460465a9b0c75cdb3b0ab6
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: 914b4332a715c86aab7e1fad7d901231cbfd40c5
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561846"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948964"
 ---
 # <a name="write-better-c-code-using-visual-studio"></a>Escribir mejor C# código con Visual Studio
 
@@ -33,7 +33,7 @@ En este artículo, hablamos sobre el aprovechamiento del IDE para aumentar la pr
 
 * Cuándo se debe usar el depurador
 
-Para demostrar estas tareas, se muestran algunos de los tipos más comunes de errores y errores que nos encontramos al intentar depurar sus aplicaciones. Aunque el código de ejemplo es C#, la información conceptual es generalmente se aplica a C++, Visual Basic, JavaScript y otros lenguajes compatibles con Visual Studio (excepto donde se indique). Las capturas de pantalla se encuentran en C#.
+Para demostrar estas tareas, se muestran algunos de los tipos más comunes de errores y errores que nos encontramos al intentar depurar sus aplicaciones. Aunque el código de ejemplo es C#, la información conceptual es generalmente se aplica a C++, Visual Basic, JavaScript y otros lenguajes compatibles con Visual Studio (excepto donde se indique). Las capturas de pantalla son de código C#.
 
 ## <a name="follow-along-using-the-sample-app"></a>Seguir utilizando la aplicación de ejemplo
 
@@ -42,7 +42,7 @@ Si lo prefiere, puede crear una aplicación de consola de .NET Framework o .NET 
 Para crear la aplicación, abra Visual Studio y elija **archivo > Nuevo proyecto**. En **Visual C#** , elija **Windows Desktop** o **.NET Core**y, a continuación, en el panel central, elija un **aplicación de consola**. Escriba un nombre como **Console_Parse_JSON** y haga clic en **Aceptar**. Visual Studio crea el proyecto. Pegar la [código de ejemplo](#sample-code) en el proyecto *Program.cs* archivo.
 
 > [!NOTE]
-> Si no ve el **aplicación de consola** plantilla de proyecto, haga clic en el **abrir Visual Studio Installer** vínculo en el panel izquierdo de la **nuevo proyecto** cuadro de diálogo. Se iniciará el Instalador de Visual Studio. Elija la **desarrollo de escritorio de .NET** o **desarrollo multiplataforma de .NET Core** carga de trabajo, a continuación, elija **modificar**.
+> Si no ve la plantilla de proyecto **Aplicación de consola**, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Elija la **desarrollo de escritorio de .NET** o **desarrollo multiplataforma de .NET Core** carga de trabajo, a continuación, elija **modificar**.
 
 ## <a name="find-the-red-and-green-squiggles"></a>Encuentre el subrayado ondulado rojo y verde.
 
@@ -166,13 +166,13 @@ Existen un par de sugerencias importantes para el control de excepciones:
     }
     ```
 
-* Para obtener información sobre los métodos desconocidas que incluya en la aplicación, consulte la documentación para ver qué excepciones el método es probable que se inicie. Esto puede ser información crítica para el control de errores adecuado y para depurar su aplicación.
+* Para obtener información sobre las funciones desconocidas que incluir en la aplicación, expecially aquellos interactuar con datos externos (por ejemplo, una solicitud web), consulte la documentación para ver qué excepciones la función es probable que se inicie. Esto puede ser información crítica para el control de errores adecuado y para depurar su aplicación.
 
 Para la aplicación de ejemplo, corregir la `SerializationException` en el `GetJsonData` método cambiando `4o` a `40`.
 
 ## <a name="clarify-your-code-intent-by-using-assert"></a>Aclarar la intención del código mediante el uso de assert
 
-Haga clic en el **reiniciar** ![Reiniciar aplicación](../debugger/media/dbg-tour-restart.png "RestartApp") botón en la barra de herramientas Depurar (**Ctrl** + **MAYÚS**   +  **F5**). Esto reinicia la aplicación en menos pasos. Consulte el siguiente resultado en la ventana de consola.
+Haga clic en el botón **Reiniciar** ![Reiniciar aplicación](../debugger/media/dbg-tour-restart.png "RestartApp") de la barra de herramientas de depuración (**Ctrl** + **Mayús**  +  **F5**). Esto reinicia la aplicación en menos pasos. Consulte el siguiente resultado en la ventana de consola.
 
 ![Valor null en la salida](../debugger/media/write-better-code-using-assert-null-output.png)
 
@@ -208,7 +208,7 @@ Agregando `assert` instrucciones así a las funciones durante el proceso de desa
 
 Al especificar la intención de este modo, aplicar sus requisitos. Se trata de un método sencillo y útil que puede usar para la superficie de los errores durante el desarrollo. (`assert` instrucciones también se usan como el elemento principal de las pruebas unitarias.)
 
-Haga clic en el **reiniciar** ![Reiniciar aplicación](../debugger/media/dbg-tour-restart.png "RestartApp") botón en la barra de herramientas Depurar (**Ctrl** + **MAYÚS**   +  **F5**).
+Haga clic en el botón **Reiniciar** ![Reiniciar aplicación](../debugger/media/dbg-tour-restart.png "RestartApp") de la barra de herramientas de depuración (**Ctrl** + **Mayús**  +  **F5**).
 
 > [!NOTE]
 > El `assert` código está activo solo en una compilación de depuración.
@@ -217,7 +217,10 @@ Cuando se reinicia, el depurador se detiene en el `assert` instrucción, porque 
 
 ![Se resuelve en false de Assert](../debugger/media/write-better-code-using-assert.png)
 
-El `assert` error indica que hay un problema que necesita para investigar. `assert` puede cubrir muchos escenarios donde no aparecen necesariamente una excepción. En este ejemplo, el usuario no verá una excepción (en otros escenarios un `NullReferenceException` puede producirse) y un `null` valor se agrega como `firstname` en la base de datos. Esto puede causar problemas más adelante (como ve en la salida de consola) y podría ser más difíciles de depurar.
+El `assert` error indica que hay un problema que necesita para investigar. `assert` puede cubrir muchos escenarios donde no aparecen necesariamente una excepción. En este ejemplo, el usuario no verá una excepción y un `null` valor se agrega como `firstname` en la lista de registros. Esto puede causar problemas más adelante (como ve en la salida de consola) y podría ser más difíciles de depurar.
+
+> [!NOTE]
+> En escenarios donde se llama a un método en el `null` valor, un `NullReferenceException` resultados. Normalmente deseará evitar usar un `try/catch` se bloquea durante una excepción general, es decir, una excepción que no está asociada a la función de biblioteca específico. Cualquier objeto puede producir un `NullReferenceException`. Consulte la documentación de la función de biblioteca si no está seguro.
 
 Durante el proceso de depuración, es bueno tener un determinado `assert` instrucción hasta que se sabe que necesita para reemplazarla por una corrección de código real. Supongamos que decide que el usuario pueda encontrar la excepción en una versión de lanzamiento de la aplicación. En ese caso, debe refactorizar el código para asegurarse de que la aplicación no produzca una excepción grave o dar lugar a algún otro error. Por lo tanto, para corregir este código, reemplace el código siguiente:
 
@@ -276,7 +279,7 @@ Los errores de otro tipo incluyen código ineficaz que hace que la aplicación s
 
 ## <a name="sample-code"></a> Código de ejemplo
 
-El código siguiente tiene algunos errores que pueden corregir mediante el IDE de Visual Studio. Aquí la aplicación es una aplicación sencilla que simula obtener los datos JSON de alguna operación, deserializar los datos a un objeto y actualizar una base de datos en memoria sencilla con los nuevos datos.
+El código siguiente tiene algunos errores que pueden corregir mediante el IDE de Visual Studio. Aquí la aplicación es una aplicación sencilla que simula obtener los datos JSON de alguna operación, deserializar los datos a un objeto y actualizar una lista simple con los nuevos datos.
 
 ```csharp
 using System;

@@ -1,5 +1,5 @@
 ---
-title: Análisis de código para código administrado en Visual Studio
+title: Análisis de código estático para código administrado
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ad1b093c224e37ce53dc77472518d03f2dc8093b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 1e77955de9bb650ac262d8f9b7513c90acbd19ac
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320820"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948431"
 ---
-# <a name="overview-of-code-analysis-for-managed-code"></a>Información general de análisis de código para código administrado
+# <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Información general del análisis de código estático de código administrado en Visual Studio
 
-Visual Studio 2017 analiza el código administrado de dos maneras: con legacy *FxCop* análisis estático de los ensamblados administrados y con .NET Compiler Platform *analizadores*. En este tema se trata los análisis de código estático de FxCop. Para más información acerca del análisis de código mediante el uso de los analizadores de .NET Compiler Platform, consulte [analizadores de información general de Roslyn](../code-quality/roslyn-analyzers-overview.md).
+Visual Studio 2017 puede realizar análisis de código del código administrado de dos maneras: con *FxCop* análisis estático de los ensamblados administrados y con la versión más moderna *analizadores de Roslyn*. En este tema se trata los análisis de código estático de FxCop. Para más información acerca del análisis de código mediante el uso de analizadores de código, consulte [analizadores de información general de Roslyn](../code-quality/roslyn-analyzers-overview.md).
 
 En el análisis de código administrado se analizan los ensamblados administrados y se muestra información sobre dichos ensamblados, como por ejemplo las infracciones de las reglas de programación y las reglas de diseño estipuladas en las instrucciones de diseño de Microsoft .NET Framework.
 
@@ -75,7 +75,7 @@ Para conseguirlo, se especifican las directivas de inserción en el repositorio.
 
 ## <a name="team-build-integration"></a>Integración de Team build
 
-Puede utilizar las características integradas del sistema de generación para ejecutar la herramienta de análisis como parte del proceso de generación. Para obtener más información, consulte [canalizaciones de Azure](/azure/devops/pipelines/index?view=vsts).
+Puede utilizar las características integradas del sistema de generación para ejecutar la herramienta de análisis como parte del proceso de generación. Para obtener más información, consulte [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
 ## <a name="see-also"></a>Vea también
 

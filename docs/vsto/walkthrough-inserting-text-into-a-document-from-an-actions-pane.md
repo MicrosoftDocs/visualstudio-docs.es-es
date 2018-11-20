@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c858cfbd2fb48aa850e395d74d7f03386ec8bc2f
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: b3b9683c5f41b81d529ad6f3347b54131f32f011
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671864"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948730"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Tutorial: Insertar texto en un documento desde un panel de acciones
   Este tutorial muestra cómo crear un panel de acciones en un documento de Microsoft Office Word. El panel de acciones contiene dos controles que recopilan datos y, a continuación, envíe el texto al documento.  
@@ -37,7 +37,7 @@ ms.locfileid: "50671864"
 -   Mostrar el panel de acciones cuando se abre la aplicación.  
   
 > [!NOTE]  
->  Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+>  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Necesita los componentes siguientes para completar este tutorial:  
@@ -64,7 +64,7 @@ ms.locfileid: "50671864"
   
     **21 de marzo de 2008**  
   
-    **Nombre**  
+    **Name**  
   
     **Dirección**  
   
@@ -114,7 +114,7 @@ ms.locfileid: "50671864"
   
     |Property|Valor|  
     |--------------|-----------|  
-    |**Nombre**|**GetName**|  
+    |**Name**|**GetName**|  
     |**Size**|**130, 20**|  
   
 5.  Agregue un segundo **etiqueta** al control del panel de acciones de control y cambie el **texto** propiedad **dirección**.  
@@ -123,7 +123,7 @@ ms.locfileid: "50671864"
   
     |Property|Valor|  
     |--------------|-----------|  
-    |**Nombre**|**GetAddress**|  
+    |**Name**|**GetAddress**|  
     |**Acepta el valor devuelto**|**True**|  
     |**Multiline**|**True**|  
     |**Size**|**130, 40**|  
@@ -132,7 +132,7 @@ ms.locfileid: "50671864"
   
     |Property|Valor|  
     |--------------|-----------|  
-    |**Nombre**|**addText**|  
+    |**Name**|**addText**|  
     |**Texto**|**Insertar**|  
   
 ## <a name="add-code-to-insert-text-into-the-document"></a>Agregue código para insertar texto en el documento  
@@ -145,7 +145,7 @@ ms.locfileid: "50671864"
      [!code-csharp[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#8)]
      [!code-vb[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/InsertTextControl.vb#8)]  
   
-2.  En C#, debe agregar un controlador de eventos para el clic de botón. Puede colocar este código en el `InsertTextControl` constructor después de llamar a `IntializeComponent`. Para obtener información acerca de cómo crear controladores de eventos, vea [Cómo: crear controladores de eventos en proyectos de Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+2.  En C#, debe agregar un controlador de eventos para el clic de botón. Puede colocar este código en el `InsertTextControl` constructor después de llamar a `InitializeComponent`. Para obtener información acerca de cómo crear controladores de eventos, vea [Cómo: crear controladores de eventos en proyectos de Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#9)]  
   
