@@ -413,7 +413,7 @@ items:
           href: debugging-preparation-windows-forms-applications.md
         - name: 'Preparación de la depuración: servicios de Windows'
           href: debugging-preparation-windows-services.md
-      - name: Mensajes de diagnóstico en la ventana de resultados
+      - name: Enrutamiento de mensajes a la ventana Salida
         href: diagnostic-messages-in-the-output-window.md
       - name: Aserciones en el código administrado
         href: assertions-in-managed-code.md
@@ -836,9 +836,9 @@ items:
   items:
   - name: Novedades del depurador de Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: a765e04da6e5d03c47a17e3b9d1642aec182c1f7
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: fb63e23cce50cd7d326bb11d39628f63e8bf6a2f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561691"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770467"
