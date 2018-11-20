@@ -595,47 +595,49 @@ items:
       items:
       - name: Cambiar el directorio de salida de compilación
         href: ide/how-to-change-the-build-output-directory.md
-      - name: Compilar en un directorio de salida común
+      - name: Compilación en un directorio de salida común
         href: ide/how-to-build-to-a-common-output-directory.md
-      - name: Especificar eventos de compilación personalizados
+      - name: Especificación de eventos de compilación personalizados
         href: ide/specifying-custom-build-events-in-visual-studio.md
-      - name: Establecer varios proyectos de inicio
+      - name: Establecimiento de varios proyectos de inicio
         href: ide/how-to-set-multiple-startup-projects.md
-      - name: Crear y quitar dependencias del proyecto
+      - name: Creación y eliminación de dependencias del proyecto
         href: ide/how-to-create-and-remove-project-dependencies.md
-      - name: Ver, guardar y configurar archivos de registro de compilación
+      - name: Visualización, guardado y configuración de archivos de registro de compilación
         href: ide/how-to-view-save-and-configure-build-log-files.md
-      - name: Excluir proyectos de una compilación
+      - name: Exclusión de proyectos de una compilación
         href: ide/how-to-exclude-projects-from-a-build.md
-      - name: Suprimir advertencias del compilador
+      - name: Supresión de advertencias del compilador
         href: ide/how-to-suppress-compiler-warnings.md
+    - name: Acciones de compilación
+      href: ide/build-actions.md
     - name: Configuraciones de compilación
       href: ide/understanding-build-configurations.md
       items:
-      - name: Crear y editar configuraciones
+      - name: Creación y edición de configuraciones
         href: ide/how-to-create-and-edit-configurations.md
-      - name: Administrar configuraciones de compilación a las que se han aplicado opciones del desarrollador de Visual Basic
+      - name: Administración de configuraciones de compilación con opciones de desarrollador de Visual Basic
         href: ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md
-      - name: Compilar varias configuraciones simultáneamente
+      - name: Compilación de varias configuraciones simultáneamente
         href: ide/how-to-build-multiple-configurations-simultaneously.md
-    - name: Compilar plataformas
+    - name: Compilación de plataformas
       href: ide/understanding-build-platforms.md
       items:
-      - name: Configurar proyectos para plataformas de destino
+      - name: Configuración de proyectos para destinarlos a una plataforma
         href: ide/how-to-configure-projects-to-target-platforms.md
-      - name: Configurar proyectos para varias plataformas de destino
+      - name: Configuración de proyectos para destinarlos a varias plataformas
         href: ide/how-to-configure-projects-to-target-multiple-platforms.md
     - name: MSBuild...
       href: msbuild/msbuild.md
     - name: Azure Pipelines y TFS...
       href: /azure/devops/pipelines/index?view=vsts
-    - name: Especificar eventos de compilación (Visual Basic)
+    - name: Especificación de eventos de compilación (Visual Basic)
       href: ide/how-to-specify-build-events-visual-basic.md
-    - name: Especificar eventos de compilación (C#)
+    - name: Especificación de eventos de compilación (C#)
       href: ide/how-to-specify-build-events-csharp.md
-    - name: Configurar advertencias en Visual Basic
+    - name: Configuración de advertencias en Visual Basic
       href: ide/configuring-warnings-in-visual-basic.md
-    - name: 'Tutorial: Crear un entorno de compilación de varios equipos'
+    - name: 'Tutorial: Crear un entorno de compilación para varios equipos'
       href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
   - name: Depurar...
     href: debugger/index.md
@@ -1119,9 +1121,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Hable con nosotros
     href: ide/talk-to-us.md
-ms.openlocfilehash: 02c451e03d36baf818dc504c79ee5576a91c9319
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 1347181f66b898b7fe862357a6a52c3552e2cd9c
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826835"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001326"
