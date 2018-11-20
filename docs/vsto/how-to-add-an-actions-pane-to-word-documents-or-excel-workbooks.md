@@ -18,15 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ebf4896411a46b2c75edd8216bd61623bc9b728f
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: f70511d0490032204789dc037a13847a10b5cbe6
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548562"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948366"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Cómo: Agregar un panel de acciones a documentos de Word o libros de Excel
-  Para agregar un panel de acciones a un documento de Microsoft Office Word o un libro de Microsoft Excel, primero cree un control de usuario de formularios Windows Forms. A continuación, agregue el control de usuario para la <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> propiedad de la `ThisDocument.ActionsPane` campo (Word) o `ThisWorkbook.ActionsPane` campo (Excel) en el proyecto.  
+  Para agregar un panel de acciones a un documento de Microsoft Office Word o un libro de Excel, cree primero un control de usuario de Windows Forms. A continuación, agregue el control de usuario para el <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> propiedad de la `ThisDocument.ActionsPane` campo (Word) o `ThisWorkbook.ActionsPane` campo (Excel) en el proyecto.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
@@ -42,29 +42,29 @@ ms.locfileid: "34548562"
   
 2.  En el menú **Proyecto** , haga clic en **Agregar nuevo elemento**.  
   
-3.  En el **Agregar nuevo elemento** cuadro de diálogo, seleccione **Control del panel de acciones**, asígnele el nombre **HelloControl**y haga clic en **agregar**.  
+3.  En el **Agregar nuevo elemento** cuadro de diálogo, seleccione **Control Panel de acciones**, asígnele el nombre **HelloControl**y haga clic en **agregar**.  
   
     > [!NOTE]  
-    >  Alternativamente, puede agregar un **Control de usuario** elemento al proyecto. Las clases generadas por el **Control del panel de acciones** y **Control de usuario** elementos son funcionalmente equivalentes.  
+    >  Alternativamente, puede agregar un **Control de usuario** a su proyecto. Las clases generadas por el **Control Panel de acciones** y **Control de usuario** elementos son funcionalmente equivalentes.  
   
-4.  Desde el **formularios Windows Forms** pestaña de la **cuadro de herramientas,** arrastre un **botón** control en el control.  
+4.  Desde el **Windows Forms** pestaña de la **cuadro de herramientas,** arrastre un **botón** control en el control.  
   
     > [!NOTE]  
     >  Si el control no está visible en el diseñador, haga doble clic en **HelloControl** en **el Explorador de soluciones**.  
   
-5.  Agregue el código para el <xref:System.Windows.Forms.Control.Click> controlador de eventos del botón. En el ejemplo siguiente se muestra el código de un documento de Microsoft Office Word.  
+5.  Agregue el código para el <xref:System.Windows.Forms.Control.Click> controlador de eventos del botón. El ejemplo siguiente muestra código de un documento de Microsoft Office Word.  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#12](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs#12)]
      [!code-vb[Trin_VstcoreActionsPaneWord#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/HelloControl.vb#12)]  
   
-6.  En C#, debe agregar un controlador de eventos para el clic de botón. Puede colocar este código en el `HelloControl` constructor después de llamar a `IntializeComponent`.  
+6.  En C#, debe agregar un controlador de eventos para el clic de botón. Puede colocar este código en el `HelloControl` constructor después de llamar a `InitializeComponent`.  
   
      Para obtener información sobre cómo crear controladores de eventos, vea [Cómo: crear controladores de eventos en proyectos de Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#13](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs#13)]  
   
 ## <a name="add-the-user-control-to-the-actions-pane"></a>Agregar el control de usuario al panel de acciones  
- Para mostrar el panel Acciones, agregue el control de usuario para la <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> propiedad de la `ThisDocument.ActionsPane` campo (Word) o `ThisWorkbook.ActionsPane` campo (Excel).  
+ Para mostrar el panel de acciones, agregue el control de usuario para el <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> propiedad de la `ThisDocument.ActionsPane` campo (Word) o `ThisWorkbook.ActionsPane` campo (Excel).  
   
 ### <a name="to-add-the-user-control-to-the-actions-pane"></a>Para agregar el control de usuario al panel de acciones  
   
@@ -73,15 +73,15 @@ ms.locfileid: "34548562"
      [!code-csharp[Trin_VstcoreActionsPaneWord#14](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#14)]
      [!code-vb[Trin_VstcoreActionsPaneWord#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#14)]  
   
-2.  Agregue el código siguiente a la `ThisDocument_Startup` controlador de eventos de la `ThisDocument` clase o la `ThisWorkbook_Startup` controlador de eventos de la `ThisWorkbook` clase.  
+2.  Agregue el código siguiente a la `ThisDocument_Startup` controlador de eventos de la `ThisDocument` clase o el `ThisWorkbook_Startup` controlador de eventos de la `ThisWorkbook` clase.  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#15)]
      [!code-vb[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#15)]  
   
 ## <a name="see-also"></a>Vea también  
- [Información general sobre paneles de acciones](../vsto/actions-pane-overview.md)   
- [Tutorial: Insertar texto en un documento de un panel de acciones](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
+ [Información general sobre el panel de acciones](../vsto/actions-pane-overview.md)   
+ [Tutorial: Insertar texto en un documento desde un panel de acciones](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
  [Cómo: administrar el diseño de controles en paneles de acciones](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
- [Tutorial: Insertar texto en un documento de un panel de acciones](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
+ [Tutorial: Insertar texto en un documento desde un panel de acciones](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
   
   
