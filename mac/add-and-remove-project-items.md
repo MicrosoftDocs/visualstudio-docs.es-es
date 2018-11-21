@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 4071689D-1C21-42D7-8963-550E7BCB4B67
-ms.openlocfilehash: d7401395d817d4c07b179c0d096612469fed6291
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: dc37b3a376b99c39d4216ba0ae2b05d707d11484
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224146"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296299"
 ---
 # <a name="adding-and-removing-project-items"></a>Agregar y quitar elementos del proyecto
 
@@ -26,7 +26,6 @@ Con esto se abre el cuadro de diálogo Nuevo archivo, que proporciona plantillas
 
 Puede agregar archivos existentes al proyecto si hace clic con el botón derecho en el nodo Proyecto y selecciona **Agregar > Agregar archivos...** También puede agregar una carpeta completa si selecciona **Agregar > Agregar carpeta de solución...** Con esto se abre el explorador de archivos, que permite buscar el elemento necesario en el sistema para agregarlo.
 
-
 ## <a name="removing-items"></a>Eliminación de elementos
 
 Para quitar un elemento del proyecto actual, haga clic con el botón derecho en el elemento y seleccione **Quitar**
@@ -38,4 +37,8 @@ Con esto se abre el cuadro de diálogo Eliminar elemento. Seleccione una de las 
 ![Cuadro de diálogo Eliminar elemento](media/add-and-remove-project-items-image4.png)
 
 * **Eliminar**: quita el elemento del proyecto y del disco.
-* **Quitar del proyecto**: quita el elemento del proyecto, pero no del disco. 
+* **Quitar del proyecto**: quita el elemento del proyecto, pero no del disco.
+
+## <a name="see-also"></a>Vea también
+
+* [Soluciones y proyectos en Visual Studio (en Windows)](/visualstudio/ide/solutions-and-projects-in-visual-studio)

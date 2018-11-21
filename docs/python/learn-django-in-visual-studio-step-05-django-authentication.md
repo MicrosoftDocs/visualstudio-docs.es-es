@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cc238b6a8ba1a190471d25952a4d7c976ca56b9f
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: cd3dce86104343b6c10bd1329b3ee3cdb7c7ee4f
+ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120360"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561652"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Paso 5. Autenticar usuarios en Django
 
@@ -152,24 +152,30 @@ En los pasos siguientes se utiliza el flujo de autenticación y se describen las
 
 1. Para comprobar si el usuario autenticado está autorizado a acceder a recursos específicos, deberá recuperar permisos específicos de usuario de la base de datos. Para obtener más información, vea [Using the Django authentication system](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (Uso del sistema de autenticación de Django) (Documentación de Django).
 
-1. El superusuario o el administrador, en concreto, está autorizado a acceder a las interfaces de administrador de Django integradas con las direcciones URL relativas "/admin/" y "/admin/doc/". Para habilitar estas interfaces, abra el archivo *urls.py* del proyecto de Django y quite los comentarios de las siguientes entradas:
+1. El superusuario o el administrador, en concreto, está autorizado a acceder a las interfaces de administrador de Django integradas con las direcciones URL relativas "/admin/" y "/admin/doc/". Para habilitar estas interfaces, haga lo siguiente:
 
-    ```python
-    from django.conf.urls import include
-    from django.contrib import admin
-    admin.autodiscover()
+    1. Instale el paquete de Python docutils en el entorno. Una excelente manera de hacerlo es agregar "docutils" al archivo *requirements.txt* y, luego, en el **Explorador de soluciones**, expandir el nodo **Entornos de Python**, hacer clic con el botón derecho en el entorno que está usando y seleccionar **Instalar desde requirements.txt**.
 
-    # ...
-    urlpatterns = [
+    1. Abra el archivo *urls.py* del proyecto de Django y quite los comentarios predeterminados de las siguientes entradas:
+
+        ```python
+        from django.conf.urls import include
+        from django.contrib import admin
+        admin.autodiscover()
+
         # ...
-        url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-        url(r'^admin/', include(admin.site.urls)),
-    ]
-    ```
+        urlpatterns = [
+            # ...
+            url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+            url(r'^admin/', include(admin.site.urls)),
+        ]
+        ```
 
-    Cuando se reinicia la aplicación, puede navegar a "/admin/" y "/admin/doc/" y realizar tareas como crear cuentas de usuario adicionales.
+    1. En el archivo *settings.py* del proyecto de Django, vaya a la colección `INSTALLED_APPS` y agregue `'django.contrib.admindocs'`.
 
-    ![Interfaz del administrador de Django](media/django/step05-administrator-interface.png)
+    1. Cuando reinicie la aplicación, puede ir a "/admin/" y "/admin/doc/" y realizar tareas como crear cuentas de usuario adicionales.
+
+        ![Interfaz del administrador de Django](media/django/step05-administrator-interface.png)
 
 1. La parte final del flujo de autenticación es el cierre de sesión. Como puede ver en *loginpartial.html*, el vínculo **Cerrar sesión** simplemente realiza una operación POST a la dirección URL relativa "/login", que se controla mediante la vista integrada `django.contrib.auth.views.logout`. Esta vista no muestra ninguna interfaz de usuario y solo se desplaza a la página principal (como se muestra en *urls.py* para el patrón "^logout$"). Si desea mostrar una página de cierre de sesión, cambie primero el patrón de dirección URL como se indica a continuación para agregar una propiedad "template_name" y quite la propiedad "next_page":
 

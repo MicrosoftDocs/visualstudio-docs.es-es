@@ -11,16 +11,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67207d653d7300ecc5d0a7ae7a85ddea1bc0d7e9
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: e947ec99ff0d63f413e00f5602035a7baa0bd708
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542499"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348346"
 ---
 # <a name="sign-in-to-visual-studio"></a>Iniciar sesión en Visual Studio
 
 Puede personalizar y optimizar la experiencia de desarrollo en Visual Studio estableciendo la cuenta de personalización e iniciando sesión en el IDE.
+
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Iniciar sesión en Visual Studio para Mac](/visualstudio/mac/signing-in).
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>¿Por qué debo iniciar sesión en Visual Studio?
 
@@ -68,3 +71,5 @@ Si encuentra algún problema al iniciar sesión, vea la página de [soporte téc
 
 * [Cómo desbloquear Visual Studio](../ide/how-to-unlock-visual-studio.md)
 * [Información general sobre IDE de Visual Studio](../ide/visual-studio-ide.md)
+* [Iniciar sesión (Visual Studio para Mac)](/visualstudio/mac/signing-in)
+* [Activación (Visual Studio para Mac)](/visualstudio/mac/activation)

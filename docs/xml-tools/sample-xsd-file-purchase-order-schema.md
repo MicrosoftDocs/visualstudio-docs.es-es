@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 7c26272b2e30fa505a196828ecddc9fc8385fe4c
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/01/2018
 ms.locfileid: "34571818"
 ---
-# <a name="sample-xsd-file-purchase-order-schema"></a>Archivo XSD de ejemplo: esquema de pedido de compra
+# <a name="sample-xsd-file-purchase-order-schema"></a>Archivo XSD de muestra: esquema de pedido de compra
 
 El archivo XSD siguiente se usa en numerosos ejemplos de la documentación del Diseñador de esquemas XSD. Este archivo es un esquema de pedido de compra.
 

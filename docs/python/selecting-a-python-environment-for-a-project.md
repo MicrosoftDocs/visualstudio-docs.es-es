@@ -1,7 +1,7 @@
 ---
-title: Selección de un entorno y un intérprete de Python para un proyecto
-description: Cómo asignar el entorno de Python que se va a usar para un proyecto de Visual Studio, además de instrucciones sobre cómo crear entornos virtuales.
-ms.date: 06/27/2018
+title: Seleccionar un entorno y un intérprete de Python para un proyecto
+description: Cómo seleccionar un entorno o un intérprete de Python para su uso en un proyecto de Visual Studio; esto incluye Anaconda y entornos virtuales.
+ms.date: 11/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e738eb52ce8cb7cef4090dd9812f6c421a7d11fd
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 0bff5e81fbfda45908315091063833b31abbdd8c
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101139"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349457"
 ---
-# <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>Cómo asignar el entorno de Python que se usa en un proyecto
+# <a name="how-to-select-a-python-environment-for-a-project"></a>Cómo seleccionar un entorno de Python para un proyecto
 
-Todo el código de un proyecto Python se ejecuta dentro del contexto de un entorno específico. Visual Studio también usa ese entorno para la depuración, las finalizaciones de importación y miembros, la comprobación de sintaxis y cualquier otra tarea que necesite un entorno.
+Todo el código de un proyecto de Python se ejecuta dentro del contexto de un entorno concreto, como uno de Python global, de Anaconda, virtual o de Conda. Visual Studio también usa ese entorno para la depuración, las finalizaciones de importaciones y miembros, la comprobación de sintaxis y cualquier otra tarea que necesite servicios de lenguaje específicos de la versión de Python y un conjunto de paquetes instalados.
 
 Todos los proyectos Python nuevos en Visual Studio están configurados inicialmente para usar el entorno global predeterminado, que aparece en el nodo **Entornos de Python** en el **Explorador de soluciones**:
 
@@ -42,7 +42,7 @@ El menú contextual del nodo **Entornos de Python** también proporciona comando
 | --- | --- |
 | **Agregar entorno virtual** | Inicia el proceso de creación de un nuevo entorno virtual en el proyecto. Consulte [Creación de un entorno virtual](#create-a-virtual-environment). |
 | **Agregar entorno virtual existente** | Le pide que seleccione una carpeta que contenga un entorno virtual y lo agrega a la lista bajo **Entornos de Python**, pero no lo activa. Consulte [Activación de un entorno virtual existente](#activate-an-existing-virtual-environment). |
-| **Crear entorno de Conda** | Cambia a la *ventana* **Entornos de Python** en la que se escribe un nombre para el entorno y se especifica su intérprete básico. |
+| **Crear entorno de Conda** | Cambia a la *ventana* **Entornos de Python** en la que se escribe un nombre para el entorno y se especifica su intérprete básico. Vea [Entornos de Conda](managing-python-environments-in-visual-studio.md#conda-environments). |
 
 ## <a name="use-virtual-environments"></a>Uso de entornos virtuales
 

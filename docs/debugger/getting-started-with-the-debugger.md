@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d832753b798cc9e476b675f8791c1ab245b3adee
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: ba3da2325750fca655e0de28e13bb13da208963d
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561678"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826783"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Tutorial: Información sobre cómo depurar con Visual Studio
 
@@ -91,7 +91,7 @@ En este tutorial va a:
     }
     ```
 
-    por este código:
+    con este código:
 
     ```csharp
     using System;
@@ -297,7 +297,7 @@ En este tutorial va a:
 
     Los puntos de interrupción son la característica más básica y esencial para una depuración confiable. Un punto de interrupción indica dónde Visual Studio debe suspender la ejecución de código para poder echar un vistazo a los valores de las variables o al comportamiento de la memoria, o determinar si se está ejecutando o no una bifurcación de código. 
 
-6. Presione **F5** o el botón **Iniciar depuración**. La aplicación se iniciará y el depurador se ejecutará en la línea de código en la que haya establecido el punto de interrupción.
+2. Presione **F5** o el botón **Iniciar depuración**. La aplicación se iniciará y el depurador se ejecutará en la línea de código en la que haya establecido el punto de interrupción.
 
     ![Establecimiento y uso de los puntos de interrupción](../debugger/media/get-started-set-breakpoint.gif)
 
@@ -325,14 +325,14 @@ Normalmente, aquí usamos métodos abreviados de teclado porque son una buena fo
 
 ## <a name="navigate-code-using-run-to-click"></a>Navegación por el código con Ejecutar hasta clic
 
-5. En el editor de código, desplácese hacia abajo y mantenga el puntero sobre el método `Console.WriteLine` (`std::cout` en C++) de la clase `Triangle` hasta que aparezca el botón verde **Ejecutar hasta clic** ![Ejecutar hasta clic](../debugger/media/dbg-tour-run-to-click.png "RunToClick") a la izquierda.
+1. En el editor de código, desplácese hacia abajo y mantenga el puntero sobre el método `Console.WriteLine` (`std::cout` en C++) de la clase `Triangle` hasta que aparezca el botón verde **Ejecutar hasta clic** ![Ejecutar hasta clic](../debugger/media/dbg-tour-run-to-click.png "RunToClick") a la izquierda.
 
      ![Uso de la característica Ejecutar hasta clic](../debugger/media/get-started-run-to-click.png "Ejecutar hasta clic")
 
    > [!NOTE]
    > El botón **Ejecutar hasta clic** es una novedad de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Si no ve el botón con la flecha verde, use **F11** en este ejemplo para hacer avanzar el depurador hasta el lugar correcto.
 
-6. Haga clic en el botón **Ejecutar hasta clic** ![Ejecutar hasta clic](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+2. Haga clic en el botón **Ejecutar hasta clic** ![Ejecutar hasta clic](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
     Usar este botón es similar a establecer un punto de interrupción temporal. La característica **Ejecutar hasta clic** es útil para desplazarse rápidamente por un área visible del código de la aplicación (puede hacer clic en cualquier archivo abierto).
 
@@ -447,4 +447,4 @@ Las características que le permiten inspeccionar las variables son una de las m
 En este tutorial, ha aprendido a iniciar el depurador, analizar el código e inspeccionar variables. Puede ser que le interese analizar las características del depurador con más detenimiento, así como consultar los vínculos disponibles con más información.
 
 > [!div class="nextstepaction"]
-> [Sugerencias y trucos para el depurador](../debugger/debugger-tips-and-tricks.md)
+> [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)

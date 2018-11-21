@@ -19,16 +19,19 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d41a5a3995c9c93f17f090e5befc10a0bd544c3
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 8ed3f2f8e588aa908827516fee44c1a38ad6a008
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117217"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348492"
 ---
 # <a name="code-snippets"></a>Fragmentos de código
 
 Los fragmentos de código son pequeños bloques de código reutilizable que se pueden insertar en un archivo de código mediante un comando de menú contextual o una combinación de teclas de acceso rápido. Normalmente contienen bloques de código usados con mucha frecuencia, como bloques `try-finally` o `if-else`, pero pueden usarse también para insertar clases o métodos completos.
+
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Fragmentos de código (Visual Studio para Mac)](/visualstudio/mac/snippets).
 
 Hay fragmentos de código disponibles para una gran variedad de lenguajes, entre otros, C#, C++, Visual Basic, XML y T-SQL. Para ver todos los fragmentos de código instalados disponibles de un lenguaje, abra el **Administrador de fragmentos de código** desde el menú **Herramientas** en Visual Studio y elija el lenguaje en la parte superior del menú desplegable.
 
@@ -103,3 +106,4 @@ Si cambia `newPropertyValue` por `m_property`, se cambian todas las instancias d
 - [Fragmentos de código de C#](../ide/visual-csharp-code-snippets.md)
 - [Fragmentos de código de Visual C++](../ide/visual-cpp-code-snippets.md)
 - [Referencia de esquemas de fragmentos de código](../ide/code-snippets-schema-reference.md)
+- [Fragmentos de código (Visual Studio para Mac)](/visualstudio/mac/snippets)

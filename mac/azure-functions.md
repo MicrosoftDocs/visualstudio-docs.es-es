@@ -7,16 +7,16 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: f014eb4782fabce6517009e448d5878dd66700c7
-ms.sourcegitcommit: 9e796d8a8b737ed9d5bf024db89b1abf99ea809b
+ms.openlocfilehash: eaf6f82cdc40b174dcd1ca8deb12c412fe675d70
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "43224426"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295948"
 ---
 # <a name="introduction-to-azure-functions"></a>Introducción a Azure Functions
 
-Azure Functions es una manera de crear y ejecutar fragmentos de código orientados a eventos (funciones) en la nube, sin tener que proporcionar o administrar explícitamente la infraestructura. Para obtener más información sobre Azure Functions, consulte [Documentación de Azure Functions](https://docs.microsoft.com/azure/azure-functions/).
+Azure Functions es una manera de crear y ejecutar fragmentos de código orientados a eventos (funciones) en la nube, sin tener que proporcionar o administrar explícitamente la infraestructura. Para obtener más información sobre Azure Functions, consulte [Documentación de Azure Functions](/azure/azure-functions/).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -26,12 +26,12 @@ Para crear e implementar funciones también necesita una suscripción de Azure, 
 
 ## <a name="creating-your-first-azure-functions-project"></a>Crear su primer proyecto de Azure Functions
 
-1. En Visual Studio para Mac, seleccione **Archivo > Nueva solución...**. 
+1. En Visual Studio para Mac, seleccione **Archivo > Nueva solución**.
 2. En el cuadro de diálogo Nuevo proyecto, seleccione la plantilla de Azure Functions en **Nube > General** y haga clic en **Siguiente**:
 
     ![Cuadro de diálogo de Nuevo proyecto con la opción de Azure Functions](media/azure-functions-image1.png)
 
-3. Seleccione la plantilla inicial de Azure Functions que quiera usar, escriba el nombre de función y haga clic en **Siguiente**. 
+3. Seleccione la plantilla inicial de Azure Functions que quiera usar, escriba el nombre de función y haga clic en **Siguiente**.
 
     ![Cuadro de diálogo Nuevo proyecto con las plantillas de Azure Functions](media/azure-functions-image2.png)
 
@@ -49,9 +49,9 @@ Visual Studio para Mac crea un proyecto de .NET Standard con una función predet
 
 El nuevo proyecto contiene los siguientes archivos:
 
-* **your-function-name.cs**: esta clase contiene código reutilizable para la función que ha seleccionado. Contiene un atributo **FunctionName** con el nombre de la función y un atributo desencadenador que especifica lo que desencadena la función (por ejemplo, una solicitud HTTP). Para obtener más información sobre el método de funciones, consulte el artículo [Referencia para desarrolladores de C# de Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-dotnet-class-library).
-* **host.json**: este archivo describe las opciones de configuración global para el host de Functions. Para un archivo de ejemplo e información sobre la configuración disponible para este archivo, consulte la [Referencia de host.json para Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-host-json).
-* **local.settings.json**: este archivo contiene toda la configuración para ejecutar las funciones de forma local. Esta configuración se utiliza con las herramientas principales de Azure Functions. Para obtener más información, consulte [Archivo de configuración local](https://docs.microsoft.com/azure/azure-functions/functions-run-local#local-settings-file) en el artículo de las herramientas principales de Azure Functions.
+* **your-function-name.cs**: esta clase contiene código reutilizable para la función que ha seleccionado. Contiene un atributo **FunctionName** con el nombre de la función y un atributo desencadenador que especifica lo que desencadena la función (por ejemplo, una solicitud HTTP). Para obtener más información sobre el método de funciones, consulte el artículo [Referencia para desarrolladores de C# de Azure Functions](/azure/azure-functions/functions-dotnet-class-library).
+* **host.json**: este archivo describe las opciones de configuración global para el host de Functions. Para un archivo de ejemplo e información sobre la configuración disponible para este archivo, consulte la [Referencia de host.json para Azure Functions](/azure/azure-functions/functions-host-json).
+* **local.settings.json**: este archivo contiene toda la configuración para ejecutar las funciones de forma local. Esta configuración se utiliza con las herramientas principales de Azure Functions. Para obtener más información, consulte [Archivo de configuración local](/azure/azure-functions/functions-run-local#local-settings-file) en el artículo de las herramientas principales de Azure Functions.
 
 Ahora que ha creado un nuevo proyecto de Azure Functions en Visual Studio para Mac, puede probar la función desencadenada HTTP predeterminada desde el equipo local.
 
@@ -63,9 +63,9 @@ Con compatibilidad con Azure Functions en Visual Studio para Mac puede probar y 
 
     ![Botón Iniciar la depuración en Visual Studio para Mac](media/azure-functions-run.png)
 
-1. Al ejecutar el proyecto se inicia la depuración local en Azure Functions y se abre una nueva ventana de Terminal, como se muestra en la siguiente imagen: 
+1. Al ejecutar el proyecto se inicia la depuración local en Azure Functions y se abre una nueva ventana de Terminal, como se muestra en la siguiente imagen:
 
-    ![ventana de terminal que muestra la salida de la función](media/azure-functions-terminal.png) 
+    ![ventana de terminal que muestra la salida de la función](media/azure-functions-terminal.png)
 
     Copie la dirección URL de la salida.
 
@@ -87,11 +87,11 @@ Las plantillas de función permiten crear rápidamente nuevas funciones mediante
 
     En la sección [Plantillas de función disponibles](#available-function-templates) se proporciona una lista de las plantillas Azure Function.
 
-Puede usar el procedimiento anterior para agregar más funciones a su proyecto de Function App. Cada función del proyecto puede tener un desencadenador diferente, pero una función debe tener exactamente un desencadenador. Para más información, vea [Conceptos básicos sobre los enlaces y desencadenadores de Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings).
+Puede usar el procedimiento anterior para agregar más funciones a su proyecto de Function App. Cada función del proyecto puede tener un desencadenador diferente, pero una función debe tener exactamente un desencadenador. Para más información, vea [Conceptos básicos sobre los enlaces y desencadenadores de Azure Functions](/azure/azure-functions/functions-triggers-bindings).
 
 ## <a name="publish-to-azure"></a>Publicar en Azure
 
-1. Haga clic con el botón derecho en el nombre del proyecto y seleccione **Publicar > Publicar en Azure...** : ![Opción de menú Publicar en Azure](media/azure-functions-image5.png)
+1. Haga clic con el botón derecho en el nombre del proyecto y seleccione **Publicar > Publicar en Azure** : ![Opción de menú Publicar en Azure](media/azure-functions-image5.png)
 2. Si ya ha conectado su cuenta de Azure para Visual Studio para Mac, se mostrará una lista de servicios de aplicaciones disponibles. Si aún no ha iniciado sesión, se le pedirá que lo haga.
 3. En el cuadro de diálogo **Publicar en Azure App Service**, puede seleccionar un servicio de aplicación existente o crear uno nuevo haciendo clic en **Nuevo**.
 4. En el cuadro de diálogo **Crear nueva instancia de App Service**, especifique la configuración: ![Opción de menú Publicar en Azure](media/azure-functions-image7.png)
@@ -100,8 +100,8 @@ Puede usar el procedimiento anterior para agregar más funciones a su proyecto d
     |---------|---------|
     |**Nombre de App Service**|Un nombre único global que identifica la nueva instancia de Function App.|
     |**Suscripción**|La suscripción de Azure que se va a usar.|
-    |**[Grupo de recursos](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)**|Nombre del grupo de recursos en el que se va a crear la instancia de Function App. Elija **+** para crear un nuevo grupo de recursos.|
-    |**[Plan de servicio](https://docs.microsoft.com/azure/azure-functions/functions-scale)**|Elija un plan existente o cree un plan personalizado. Elija una ubicación en una región cerca de usted o cerca de otros servicios a los que acceda la función.|
+    |**[Grupo de recursos](/azure/azure-resource-manager/resource-group-overview)**|Nombre del grupo de recursos en el que se va a crear la instancia de Function App. Elija **+** para crear un nuevo grupo de recursos.|
+    |**[Plan de servicio](/azure/azure-functions/functions-scale)**|Elija un plan existente o cree un plan personalizado. Elija una ubicación en una región cerca de usted o cerca de otros servicios a los que acceda la función.|
 
     > [!CAUTION]
     > Hay un error en la versión 7.6 de Visual Studio para Mac que hará que se produzca un error de aprovisionamiento en la publicación si intenta crear un plan de servicio personalizado con **Precios** establecido en **Consumo**. Esto se resolverá en la próxima versión de servicio.
@@ -113,7 +113,7 @@ Puede usar el procedimiento anterior para agregar más funciones a su proyecto d
 6. Haga clic en **Crear** para crear una instancia de Function App y los recursos relacionados en Azure con esta configuración e implementar el código del proyecto de función.
 
 7. Puede que se muestre un cuadro de diálogo durante la publicación que indique "Actualizar versión de Functions en Azure". Haga clic en **Sí**:
- 
+
     ![Opción de menú Publicar en Azure](media/azure-functions-image12.png)
 
 > [!CAUTION]
@@ -139,7 +139,7 @@ Hay un valor importante que es posible que tenga que configurar: `FUNCTIONS_EXTE
 
 ## <a name="available-function-templates"></a>Plantillas de función disponibles
 
-- **Desencadenador de GitHub**: responder a los eventos que se producen en los repositorios de GitHub. Para obtener más información, vea la página [Creación de una función desencadenada por Webhook de GitHub](https://docs.microsoft.com/azure/azure-functions/functions-create-github-webhook-triggered-function)
+- **Desencadenador de GitHub**: responder a los eventos que se producen en los repositorios de GitHub. Para obtener más información, vea la página [Creación de una función desencadenada por Webhook de GitHub](/azure/azure-functions/functions-create-github-webhook-triggered-function)
     - Autor del comentario de GitHub: esta función se ejecutará cuando reciba un webhook de GitHub para un problema o solicitud de incorporación de cambios y agregue un comentario.
     - WebHook de GitHub: esta función se ejecutará cuando reciba un WebHook de GitHub.
 
@@ -150,16 +150,16 @@ Hay un valor importante que es posible que tenga que configurar: `FUNCTIONS_EXTE
     - Desencadenador HTTP con parámetros
 
 
-- **Temporizador**: ejecutar una limpieza u otras tareas de lote en una programación predefinida. Esta plantilla tiene dos campos: un nombre y una programación, que es una expresión de CRON de seis campos. Para obtener más información, vea la página [Cree una función en Azure que se desencadena mediante un temporizador](https://docs.microsoft.com/azure/azure-functions/functions-create-scheduled-function)
+- **Temporizador**: ejecutar una limpieza u otras tareas de lote en una programación predefinida. Esta plantilla tiene dos campos: un nombre y una programación, que es una expresión de CRON de seis campos. Para obtener más información, vea la página [Cree una función en Azure que se desencadena mediante un temporizador](/azure/azure-functions/functions-create-scheduled-function)
 
 
-- **Desencadenador de cola**: se trata de una función que responderá a los mensajes a medida que llegan a la cola de Azure Storage. Además del nombre de la función, esta plantilla toma una **ruta de acceso** (el nombre de la cola desde la que se leerá el mensaje) y una cuenta de almacenamiento **Conexión** (el nombre de la configuración de la aplicación que contiene la cadena de conexión de la cuenta de almacenamiento). Para obtener más información, vea la página [Crear una función desencadenada por Azure Queue Storage](https://docs.microsoft.com/azure/azure-functions/functions-create-storage-queue-triggered-function).
+- **Desencadenador de cola**: se trata de una función que responderá a los mensajes a medida que llegan a la cola de Azure Storage. Además del nombre de la función, esta plantilla toma una **ruta de acceso** (el nombre de la cola desde la que se leerá el mensaje) y una cuenta de almacenamiento **Conexión** (el nombre de la configuración de la aplicación que contiene la cadena de conexión de la cuenta de almacenamiento). Para obtener más información, vea la página [Crear una función desencadenada por Azure Queue Storage](/azure/azure-functions/functions-create-storage-queue-triggered-function).
 
-- **Desencadenador de blob**: procesa blobs de Azure Storage cuando se agregan a un contenedor. Además del nombre de función, esta plantilla también tiene una propiedad de ruta de acceso y de conexión. La propiedad de ruta de acceso es la ruta de acceso dentro de la cuenta de almacenamiento que el desencadenador supervisará. La cuenta de conexión es el nombre de la configuración de aplicación que contiene la cadena de conexión de la cuenta de almacenamiento. Para obtener más información, vea la página [Crear una función desencadenada por Azure Blob Storage](https://docs.microsoft.com/azure/azure-functions/functions-create-storage-blob-triggered-function).
+- **Desencadenador de blob**: procesa blobs de Azure Storage cuando se agregan a un contenedor. Además del nombre de función, esta plantilla también tiene una propiedad de ruta de acceso y de conexión. La propiedad de ruta de acceso es la ruta de acceso dentro de la cuenta de almacenamiento que el desencadenador supervisará. La cuenta de conexión es el nombre de la configuración de aplicación que contiene la cadena de conexión de la cuenta de almacenamiento. Para obtener más información, vea la página [Crear una función desencadenada por Azure Blob Storage](/azure/azure-functions/functions-create-storage-blob-triggered-function).
 
-- **WebHook genérico**: se trata de una función sencilla que se ejecutará cada vez que recibe una solicitud de servicio que admita webhooks. Para más información, vea [Creación de una función desencadenada mediante un webhook genérico](https://docs.microsoft.com/azure/azure-functions/functions-create-generic-webhook-triggered-function).
+- **WebHook genérico**: se trata de una función sencilla que se ejecutará cada vez que recibe una solicitud de servicio que admita webhooks. Para más información, vea [Creación de una función desencadenada mediante un webhook genérico](/azure/azure-functions/functions-create-generic-webhook-triggered-function).
 
-- **Orquestación Durable Functions**: Durable Functions le permite escribir funciones con estado en un entorno sin servidor. La extensión administra el estado, los puntos de control y los reinicios en su nombre. Para más información, vea las guías de Azure Functions en [Durable Functions](https://docs.microsoft.com/azure/azure-functions/durable-functions-overview).
+- **Orquestación Durable Functions**: Durable Functions le permite escribir funciones con estado en un entorno sin servidor. La extensión administra el estado, los puntos de control y los reinicios en su nombre. Para más información, vea las guías de Azure Functions en [Durable Functions](/azure/azure-functions/durable-functions-overview).
 
 - **Redimensionador de imagen**: esta función crea imágenes redimensionadas cada vez que un blob se agrega a un contenedor. La plantilla toma la cadena de conexión y la ruta de acceso para el desencadenador, una salida de imagen pequeña y una salida de imagen media.
 

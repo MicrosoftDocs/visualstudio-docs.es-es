@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 66ddb896fad5d69fafc67c04ef839b952cac4d11
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/01/2018
 ms.locfileid: "34572779"
 ---
-# <a name="sample-xsd-file-relationships"></a>Archivo XSD de ejemplo: relaciones
+# <a name="sample-xsd-file-relationships"></a>Archivo XSD de muestra: relaciones
 
 El archivo XSD siguiente se usa en numerosos ejemplos de la documentación del Diseñador de esquemas XSD. Este archivo es un esquema de pedido de compra con anotaciones y documentación.
 

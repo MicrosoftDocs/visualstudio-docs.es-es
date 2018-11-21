@@ -6,24 +6,24 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 2c74cf7ddd78bee538a3d37d7e4c4daa4556e3c9
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 4a0ecef49d8c3493ff6094be66f1d05ad588077c
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224395"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295675"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Desinstalación de Visual Studio para Mac
 
 Hay una serie de productos de Xamarin que permiten el desarrollo de aplicaciones entre plataformas, incluidas aplicaciones independientes como Visual Studio para Mac.
 
-Puede usar esta guía para desinstalar cada producto por separado. Para hacerlo, vaya a la sección correspondiente o utilice los scripts proporcionados en la sección [Script de desinstalación](#uninstall-script) para desinstalar todo el contenido.
+Puede usar esta guía para desinstalar cada producto por separado si va a la sección correspondiente, o puede usar los scripts proporcionados en la sección [Script de desinstalación](#uninstall-script) para desinstalar todo.
 
-Si ya tenía Xamarin Studio instalado en el equipo, es posible que también deba seguir las instrucciones de la guía de [desinstalación de Xamarin](https://docs.microsoft.com/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac), además de los siguientes pasos.
+Si ya tenía Xamarin Studio instalado en el equipo, es posible que también deba seguir las instrucciones de la guía de [desinstalación de Xamarin](/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac), además de los siguientes pasos.
 
 ## <a name="uninstall-script"></a>Script de desinstalación
 
-Hay dos scripts que se pueden usar para desinstalar Visual Studio para Mac y todos sus componentes de la máquina:
+Hay dos scripts que se pueden usar para desinstalar Visual Studio para Mac y todos sus componentes del equipo:
 
 - [Script de Visual Studio y Xamarin](#visual-studio-for-mac-and-xamarin-script)
 - [Script de .NET Core](#net-core-script)
@@ -41,7 +41,7 @@ Este script de desinstalación contiene la mayoría de los comandos que encontra
 
 Haga lo siguiente para ejecutar el script:
 
-1. Haga clic con el botón derecho en el script y seleccione **Guardar como...** para guardar el archivo en el equipo Mac.
+1. Haga clic con el botón derecho en el script y seleccione **Guardar como** para guardar el archivo en el equipo Mac.
 2. Abra Terminal y cambie el directorio de trabajo al lugar donde se haya descargado el script:
 
     ```bash
@@ -61,7 +61,7 @@ El script de desinstalación para .NET Core se encuentra en el [repositorio de l
 
 Haga lo siguiente para ejecutar el script:
 
-1. Haga clic con el botón derecho en el script y seleccione **Guardar como...** para guardar el archivo en el equipo Mac.
+1. Haga clic con el botón derecho en el script y seleccione **Guardar como** para guardar el archivo en el equipo Mac.
 2. Abra Terminal y cambie el directorio de trabajo al lugar donde se haya descargado el script:
 
     ```bash
@@ -81,9 +81,9 @@ El primer paso a la hora de desinstalar Visual Studio de un equipo Mac es buscar
 
 ![Traslado de la aplicación Visual Studio a la Papelera](media/uninstall-image1.png)
 
-Al eliminar este lote de aplicaciones, se quita Visual Studio para Mac, aunque pueda haber otros archivos relacionados con Xamarin en un sistema de archivos.
+Al eliminar este lote de aplicaciones, se quita Visual Studio para Mac, aunque pueda haber otros archivos relacionados con Xamarin en el sistema de archivos.
 
-Para quitar todas las trazas de Visual Studio para Mac, deben ejecutarse los siguientes comandos en Terminal:
+Para quitar todas las trazas de Visual Studio para Mac, ejecute los siguientes comandos en Terminal:
 
 ```bash
 sudo rm -rf "/Applications/Visual Studio.app"
@@ -136,8 +136,7 @@ El SDK de Java (JDK) no necesita desinstalarse, ya que se ha empaquetado previam
 ### <a name="uninstall-android-avd"></a>Desinstalación de AVD
 
 > [!WARNING]
-> Hay otras aplicaciones fuera de Visual Studio para Mac que también usan AVD y estos componentes adicionales de Android, como Android Studio.
-> La eliminación de este directorio puede hacer que los proyectos se interrumpan en Android Studio. 
+> Hay otras aplicaciones fuera de Visual Studio para Mac que también usan Android AVD y estos otros componentes de Android, como Android Studio. La eliminación de este directorio puede provocar la interrupción de proyectos en Android Studio.
 
 Para quitar cualquier AVD y otros componentes de Android, use el comando siguiente:
 
@@ -150,8 +149,6 @@ Para quitar solo los AVD, use el comando siguiente:
 ```bash
 rm -rf ~/.android/avd
 ```
-
- 
 
 ## <a name="uninstall-xamarinios"></a>Desinstalación de Xamarin.iOS
 
@@ -210,3 +207,7 @@ rm -rf ~/Library/Logs/VisualStudioInstaller/
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf "~/Library/Preferences/Visual Studio/"
 ```
+
+## <a name="see-also"></a>Vea también
+
+- [Desinstalar Visual Studio (en Windows)](/visualstudio/install/uninstall-visual-studio)

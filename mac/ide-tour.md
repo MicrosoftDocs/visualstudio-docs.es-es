@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: a6ea00e468e178f96bf0a08b5520d2f7e3d64b85
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 37c4f6c50cc5deaee1decf6fcfae5eda211018b2
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228869"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295688"
 ---
 # <a name="visual-studio-for-mac-tour"></a>Paseo por Visual Studio para Mac
 
@@ -56,13 +56,13 @@ Aquí es donde se organizan los archivos por el código fuente, los recursos, la
 Para más información sobre el uso de proyectos y soluciones en Visual Studio para Mac, consulte el artículo [Proyectos y soluciones](projects-and-solutions.md).
 
 ## <a name="assembly-references"></a>Referencias de ensamblado
- 
+
 Las referencias de ensamblado de cada proyecto están disponibles en la carpeta Referencias:
 
 ![Carpeta Referencias del Panel de solución](media/ide-tour-image19.png)
 
 Se pueden agregar otras referencias con el cuadro de diálogo **Editar referencias**. Para mostrarlo, haga doble clic en la carpeta Referencias o seleccione **Editar referencias** en las acciones del menú contextual:
- 
+
 ![Cuadro de diálogo Editar referencias](media/ide-tour-image20.png)
 
 Para más información sobre el uso de referencias en Visual Studio para Mac, consulte el artículo [Administrar referencias en un proyecto](managing-references-in-a-project.md).
@@ -93,7 +93,7 @@ Para más información sobre las visualizaciones de datos del depurador, vea el 
 
 ## <a name="version-control"></a>Control de versiones
 
-Visual Studio para Mac se integra con los sistemas de control de código fuente Git y Subversion. Los proyectos con control de código fuente se reconocen por la rama que aparece junto al nombre de la solución: 
+Visual Studio para Mac se integra con los sistemas de control de código fuente Git y Subversion. Los proyectos con control de código fuente se reconocen por la rama que aparece junto al nombre de la solución:
 
 ![Nombre de rama para indicar que se trata de un proyecto con control de código fuente](media/ide-tour-image22.png)
 
@@ -102,3 +102,7 @@ Los archivos con cambios sin confirmar tienen una anotación en sus iconos en el
 ![Archivos sin confirmar en el Panel de solución](media/ide-tour-image23.png)
 
 Para más información sobre el uso del control de versiones en Visual Studio, consulte el artículo [Control de versiones](version-control.md).
+
+## <a name="see-also"></a>Vea también
+
+- [IDE de Visual Studio (en Windows)](/visualstudio/ide/visual-studio-ide)

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75945e1a3e66951021866370d043a645c8918541
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: dd99aba0855a3136d8992739ae00e242a5f54658
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447692"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348961"
 ---
 # <a name="refactor-code"></a>Refactorizar código
 
@@ -32,3 +32,4 @@ Existen diferentes operaciones de refactorización para diferentes lenguajes de 
 - [IDE de Visual Studio](../ide/visual-studio-ide.md)
 - [Características del editor de código](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Vista previa de cambios](../ide/preview-changes.md)
+- [Refactorización (Visual Studio para Mac)](/visualstudio/mac/refactoring)

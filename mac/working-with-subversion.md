@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
-ms.openlocfilehash: 81c33d426989f9bab3216802aa4e815228e1e82a
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 7dcbd619fe0c1a0ab84a8667f5a781d006f80999
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224337"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295207"
 ---
 # <a name="working-with-subversion"></a>Trabajar con Subversion
 
@@ -50,7 +50,10 @@ Esto permite ver todos los cambios de cada archivo de un proyecto con la opción
 
 Para confirmar un archivo en el repositorio remoto, haga clic en Confirmar..., escriba un mensaje de confirmación y confirme con el botón Confirmar:
 
-
 ![Confirmación de un archivo](media/version-control-svnCommit.png)
 
 Con esto se envían los cambios al repositorio, donde crean la nueva revisión de todas las modificaciones.
+
+## <a name="see-also"></a>Vea también
+
+- [Configurar un repositorio de Subversion](set-up-subversion-repository.md)

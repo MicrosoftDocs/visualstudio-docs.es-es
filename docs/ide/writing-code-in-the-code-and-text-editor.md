@@ -12,16 +12,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 397ed4ea94aa54c8f8d31fc6ff0d08da16a93479
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 8be5d3692459c2c65d4243c831ef4de002828bb0
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626570"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349080"
 ---
 # <a name="features-of-the-code-editor"></a>Características del editor de código
 
 El editor de Visual Studio proporciona muchas características que le facilitan la escritura y la administración del código y del texto. Puede expandir y contraer diferentes bloques de código mediante el uso de la esquematización. Puede obtener más información sobre el código mediante IntelliSense, el **Examinador de objetos** y la jerarquía de llamadas. Puede encontrar código mediante características como **Ir a**, **Ir a definición** y **Buscar todas las referencias**. Puede insertar bloques de código con fragmentos de código y generar código mediante funciones como **Generar a partir del uso**. Si no ha usado nunca el editor de Visual Studio, vea una breve introducción en [Edición del código](https://visualstudio.microsoft.com/vs/features/ide/).
+
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Editor de código fuente (Visual Studio para Mac)](/visualstudio/mac/source-editor).
 
 Puede ver el código de varias maneras. De forma predeterminada, en el **Explorador de soluciones** se muestra el código organizado por archivos. Puede hacer clic en la pestaña **Vista de clases** en la parte inferior de la ventana para ver el código organizado por clases.
 
@@ -87,6 +90,7 @@ Para más información sobre cómo personalizar el editor, consulte [Personaliza
 
 ## <a name="see-also"></a>Vea también
 
+- [Editor de código fuente (Visual Studio para Mac)](/visualstudio/mac/source-editor)
 - [IDE de Visual Studio](../ide/visual-studio-ide.md)
 - [Introducción a C++ en Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md)
 - [Introducción a C# y ASP.NET Core en Visual Studio](../ide/tutorial-csharp-aspnet-core.md)

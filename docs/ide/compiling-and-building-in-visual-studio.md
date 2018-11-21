@@ -13,20 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce6a85ff80d8da081b0d69763ed477174de7ed4
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 9d2ad9e3e6644f3f0ffc2d4fbf163968f16065f3
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863626"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349138"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Compilar y generar en Visual Studio
 
-La ejecución de una compilación crea ensamblados y aplicaciones ejecutables a partir del código fuente en cualquier momento durante un ciclo de desarrollo. En general, el proceso de compilación es muy parecido en numerosos tipos de proyectos diferentes, como Windows, ASP.NET, aplicaciones móviles y otros. El proceso de compilación también se parece mucho en lenguajes de programación como C#, Visual Basic, C++ y F#.
+Al compilar código fuente, el motor de compilación crea ensamblados y aplicaciones ejecutables. En general, el proceso de compilación es muy parecido en numerosos tipos de proyectos diferentes, como Windows, ASP.NET, aplicaciones móviles y otros. El proceso de compilación también se parece en lenguajes de programación como C#, Visual Basic, C++ y F#.
 
-Al compilar el código con frecuencia, se pueden identificar rápidamente errores en tiempo de compilación, como sintaxis incorrecta, palabras clave mal escritas y errores de coincidencia de tipos. También es posible detectar y corregir rápidamente errores en tiempo de ejecución, como errores lógicos y errores semánticos, si se compilan y ejecutan con frecuencia versiones de depuración del código.
+Al compilar el código con frecuencia, se pueden identificar rápidamente errores en tiempo de compilación, como sintaxis incorrecta, palabras clave mal escritas y errores de coincidencia de tipos. También es posible detectar y corregir errores en tiempo de ejecución, como errores lógicos y semánticos, al compilar y ejecutar versiones de depuración del código.
 
-Una compilación correcta es básicamente una validación de que el código fuente de la aplicación contiene una sintaxis correcta y de que se han resuelto todas las referencias estáticas a bibliotecas, ensamblados y otros componentes. Esto genera un archivo ejecutable de aplicación que se puede probar para asegurarse de que funciona correctamente en un [entorno de depuración](../debugger/index.md) y en una serie de pruebas manuales y automatizadas para [validar la calidad del código](../test/improve-code-quality.md). Una vez haya probado por completo la aplicación, podrá compilar una versión e implementarla para sus clientes. Para una introducción a este proceso, vea [Tutorial: Compilar una aplicación](../ide/walkthrough-building-an-application.md).
+Una compilación correcta valida que el código fuente de la aplicación contenga una sintaxis correcta y que se puedan resolver todas las referencias estáticas a bibliotecas, ensamblados y otros componentes. Se genera un archivo ejecutable de aplicación que se puede probar para asegurarse de que funciona correctamente en un [entorno de depuración](../debugger/index.md) y en una serie de pruebas manuales y automatizadas para [validar la calidad del código](../test/improve-code-quality.md). Una vez que se ha probado por completo la aplicación, es posible compilar una versión e implementarla para los clientes. Para una introducción a este proceso, vea [Tutorial: Compilar una aplicación](../ide/walkthrough-building-an-application.md).
 
 Puede usar cualquiera de los siguientes métodos para compilar una aplicación: el IDE de Visual Studio, las herramienta de línea de comandos de MSBuild y Azure Pipelines:
 
@@ -37,6 +37,9 @@ Puede usar cualquiera de los siguientes métodos para compilar una aplicación: 
 | Azure Pipelines | - Automatizar el proceso de compilación como parte de una canalización de integración continua o entrega continua.<br />- Aplicar pruebas automatizadas con cada compilación.<br />- Emplear recursos basados en la nube prácticamente ilimitados para los procesos de compilación.<br />- Modificar el flujo de trabajo de compilación y crear actividades de compilación para realizar tareas muy personalizadas.|
 
 La documentación de esta sección analiza en detalle el proceso de compilación basado en el IDE. Para obtener más información sobre los otros métodos, vea [MSBuild](../msbuild/msbuild.md) y [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) respectivamente.
+
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Compilar y generar en Visual Studio para Mac](/visualstudio/mac/compiling-and-building).
 
 ## <a name="overview-of-building-from-the-ide"></a>Introducción a la compilación desde el IDE
 
@@ -57,3 +60,4 @@ De ahí en adelante, puede explorar otras tareas:
 ## <a name="see-also"></a>Vea también
 
 - [Compilar proyectos de sitios web](https://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)
+- [Compilar y generar (Visual Studio para Mac)](/visualstudio/mac/compiling-and-building)
