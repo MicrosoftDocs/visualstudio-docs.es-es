@@ -1,7 +1,7 @@
 ---
 title: Aplicación de las rutas de acceso de búsqueda de Python
 description: Información general del modo en que Visual Studio utiliza las rutas de acceso de búsqueda de Python en entornos y proyectos.
-ms.date: 10/29/2018
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e3a52579a5b22308c4255cbe41617bc37f47bbab
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: ab55c7cf1daa02416e6192a02a01ee3f9a35f6f0
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219983"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607906"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Cómo usa Visual Studio las rutas de acceso de búsqueda de Python
 
@@ -30,13 +30,19 @@ Sin embargo, Visual Studio omite la variable de entorno de ruta de acceso de bú
 
 Visual Studio proporciona así un medio para especificar rutas de acceso de búsqueda directamente tanto en entornos como en proyectos. El código que ejecuta o depura en Visual Studio recibe rutas de acceso de búsqueda en el valor de `PYTHONPATH` (y otras variables equivalente). Mediante la incorporación de rutas de acceso de búsqueda, Visual Studio inspecciona las bibliotecas en estas ubicaciones y crea bases de datos de IntelliSense para ellas cuando sea necesario (Visual Studio 2017, versión 15.5 y anteriores; crear la base de datos puede tardar algún tiempo dependiendo del número de bibliotecas).
 
-Para agregar una ruta de búsqueda, haga clic con el botón derecho en el elemento **Rutas de búsqueda** en el **Explorador de soluciones**, seleccione **Add Folder to Search Path** (Agregar carpeta a ruta de acceso de búsqueda…) y seleccione la carpeta que desea incluir. Esta ruta de acceso se utiliza para cualquier entorno asociado al proyecto. (Puede ver errores si el entorno se basa en Python 3 e intenta agregar una ruta de acceso de búsqueda a los módulos de Python 2.7).
+Para agregar una ruta de búsqueda, vaya al **Explorador de soluciones**, expanda el nodo del proyecto, haga clic con el botón derecho en **Rutas de búsqueda**, seleccione **Add Folder to Search Path** (Agregar carpeta a ruta de búsqueda):
 
-Los archivos con una extensión *.zip* o *.egg* también se pueden agregar como rutas de acceso de búsqueda seleccionando **Add Zip Archive to Search Path** (Agregar archivo Zip a la ruta de acceso de búsqueda…). Al igual que con las carpetas, el contenido de estos archivos se examina y se pone a disposición de IntelliSense.
+![Comando Agregar carpeta a ruta de búsqueda de Rutas de búsqueda en el Explorador de soluciones](media/search-paths-command.png)
 
-Si utiliza periódicamente las mismas rutas de acceso de búsqueda y el contenido no cambia con frecuencia, puede ser más eficaz instalarlo en la carpeta de paquetes del sitio. La ruta de acceso de búsqueda se analiza y almacena después en la base de datos de IntelliSense, siempre se asocia con el entorno deseado y no requiere que se agregue una ruta de acceso de búsqueda para cada proyecto.
+Este comando muestra un explorador en el que se puede seleccionar la carpeta que se va a incluir.
 
-### <a name="see-also"></a>Vea también
+Si la variable de entorno `PYTHONPATH` ya incluye las carpetas que quiere, use **Agregar PYTHONPATH a rutas de búsqueda** como un cómodo acceso directo.
+
+Una vez que se han agregado las carpetas a las rutas de búsqueda, Visual Studio usa esas rutas para cualquier entorno asociado al proyecto. (Puede ver errores si el entorno se basa en Python 3 e intenta agregar una ruta de acceso de búsqueda a los módulos de Python 2.7).
+
+Los archivos con una extensión *.zip* o *.egg* también se pueden agregar como rutas de búsqueda al seleccionar el comando **Add Zip Archive to Search Path** (Agregar archivo Zip a ruta de búsqueda). Al igual que con las carpetas, el contenido de estos archivos se examina y se pone a disposición de IntelliSense.
+
+## <a name="see-also"></a>Vea también
 
 - [Creación y administración de entornos de Python en Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Selección de un intérprete para un proyecto](selecting-a-python-environment-for-a-project.md)

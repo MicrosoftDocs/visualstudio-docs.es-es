@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Información acerca de Django en Visual Studio, paso 2'
 description: Un recorrido por los aspectos básicos de Django en el contexto de los proyectos de Visual Studio,en particular los pasos para crear una aplicación y utilizar vistas y plantillas.
-ms.date: 08/13/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7e9f5506efb74735975bdddc6f1f5c483c1e5dea
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 404df36ab28e422e081df7d7cdf4831f8c2f64a0
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547937"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001287"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Paso 2. Crear una aplicación de Django con vistas y plantillas de página
 

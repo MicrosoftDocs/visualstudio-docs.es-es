@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 49917483-28AA-4598-A847-71F1F2E0DCB5
-ms.openlocfilehash: be5bbdcaa218c2e059ca710dd04574a43519ec69
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 0505177e01afd701fe5506df7dd0fc2a2e1f859c
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223909"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294726"
 ---
 # <a name="version-control"></a>Control de versiones
 
@@ -24,11 +24,15 @@ Subversion es un sistema centralizado de control de versiones, lo que significa 
 
 Git es un sistema de control de versiones distribuido que permite a los equipos trabajar en los mismos documentos de forma simultánea. Con Git puede haber un único servidor que contiene todos los archivos, pero que cada vez que se extrae un repositorio de este origen central, la totalidad del repositorio se clona localmente en su equipo.
 
-## <a name="basic-concepts"></a>Conceptos básicos 
+## <a name="basic-concepts"></a>Conceptos básicos
 
 Visual Studio para Mac proporciona compatibilidad con los sistemas de control de versiones Git y Subversion. En los artículos siguientes se examina la configuración de los repositorios Git y Subversion mediante Visual Studio para Mac, así como funciones sencillas como revisar, confirmar y enviar cambios.
 
-* [Configurar un repositorio GIT](set-up-git-repository.md) 
+* [Configurar un repositorio GIT](set-up-git-repository.md)
 * [Trabajar con GIT](working-with-git.md)
 * [Configurar un repositorio de Subversion](set-up-subversion-repository.md)
 * [Trabajar con Subversion](working-with-subversion.md)
+
+## <a name="see-also"></a>Vea también
+
+* [Version control in Visual Studio (on Windows)](/visualstudio/version-control/) (Control de versiones en Visual Studio [en Windows])

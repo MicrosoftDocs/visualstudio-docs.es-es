@@ -1,5 +1,5 @@
 ---
-title: Generación de invalidaciones de los métodos Equals y GetHashCode de C# en Visual Studio
+title: Generar invalidaciones de los métodos Equals y GetHashCode de C#
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9af687eb4b39afdbe9fd34df1aa03f18ce243ef8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ec552e320b0c19c5c05e145fd9c5a4588f31b4c
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903119"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295714"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Generación de invalidaciones de los métodos Equals y GetHashCode en Visual Studio
 
@@ -36,17 +36,20 @@ Esta generación de código se aplica a:
 
 ## <a name="how-to"></a>Procedimiento
 
-1. Coloque el cursor en la declaración de tipo.
+1. Coloque el cursor en algún lugar de la línea de la declaración de tipos.
 
    ![Código resaltado](media/overrides-highlight-cs.png)
 
+   > [!TIP]
+   > No haga doble para seleccionar el nombre del tipo o la opción de menú no estará disponible. Simplemente coloque el cursor en algún lugar de la línea.
+
 1. A continuación, realice alguno de los siguientes procedimientos:
 
-   - **Teclado**
-      - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
-   - **Mouse**
-      - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
-      - Haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea con la declaración de tipo.
+   - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
+
+   - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
+
+   - Haga clic en el botón ![icono de destornillador](../media/screwdriver-icon.png) que aparece en el margen izquierdo.
 
    ![Vista previa de la generación de invalidaciones](media/overrides-preview-cs.png)
 
@@ -57,9 +60,9 @@ Esta generación de código se aplica a:
     ![Cuadro de diálogo de generación de invalidaciones](media/overrides-dialog-cs.png)
 
     > [!TIP]
-    > También puede optar por generar operadores desde este cuadro de diálogo mediante las casillas de verificación que están debajo de la lista de miembros.
+    > También puede generar operadores desde este cuadro de diálogo con las casillas de verificación de la parte inferior del mismo.
 
-   Las invalidaciones Equals y GetHashCode se generan con las implementaciones predeterminadas.
+   Los métodos `Equals` y `GetHashCode` se generan con implementaciones predeterminadas.
 
    ![Resultado de la generación de método](media/overrides-result-cs.png)
 

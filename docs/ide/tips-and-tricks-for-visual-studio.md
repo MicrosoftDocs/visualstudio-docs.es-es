@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cde519515782f453a8a60894a8bcc6dc6c714cc1
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 039d0caac98bdb574f2e42303ccb001e9600a740
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220858"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348948"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Métodos abreviados de teclado de Visual Studio
 
@@ -22,6 +22,9 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 
 > [!TIP]
 > Los accesos directos que aparecen aquí son solo un subconjunto de los métodos abreviados de teclado disponibles. Para obtener una lista más completa, vea [Métodos abreviados de teclado predeterminados](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Métodos abreviados de teclado comunes de Visual Studio para Mac](/visualstudio/mac/keyboard-shortcuts).
 
 ## <a name="window-management"></a>Administración de ventanas
 
@@ -136,4 +139,5 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 
 - [Sugerencias y trucos de accesibilidad](../ide/reference/accessibility-tips-and-tricks.md)
 - [Keyboard shortcuts (Azure DevOps Services and TFS)](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts) [Métodos abreviados de teclado (Azure DevOps Services y TFS)]
-- [Visual Studio Tips and Tricks Blog](https://blogs.msdn.com/b/zainnab) (Blog de sugerencias y trucos de Visual Studio)
+- [Visual Studio Tips and Tricks Blog](https://blogs.msdn.microsoft.com/zainnab/) (Blog de sugerencias y trucos de Visual Studio)
+- [Métodos abreviados de teclado comunes de Visual Studio para Mac](/visualstudio/mac/keyboard-shortcuts)

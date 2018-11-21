@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 80e6f3291f0f0fdc26883d8f98e90e296ee0c7c3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d6a0683405340d479fb3289540ffde2c5e7a4f78
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919746"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296442"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutorial: Introducción a Azure Functions
 
@@ -44,12 +44,10 @@ En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visua
 
     ![nombrar y crear el proyecto de azure function](media/azure-functions-lab-image2.png)
 
-5. Expanda los nodos de **Panel de solución**. La plantilla de proyecto predeterminada incluye referencias de NuGet para una variedad de paquetes de AzureWebJobs, así como el paquete Newtonsoft.Json. 
+5. Expanda los nodos de **Panel de solución**. La plantilla de proyecto predeterminada incluye referencias de NuGet para una variedad de paquetes de AzureWebJobs, así como el paquete Newtonsoft.Json.
 
-     Hay también tres archivos:  
-        - **host.JSON** para describir las opciones de configuración global del host  
-        - **local.Settings.JSON** para configurar las opciones de servicio.  
-        - La plantilla de proyecto también crea un valor HttpTrigger predeterminado. Para los fines de esta práctica, debe eliminar el archivo **HttpTrigger.cs** desde el proyecto.  
+     También hay tres archivos: **host.json** para describir las opciones de configuración global para el host; **local.settings.json** para definir la configuración de servicio.
+        La plantilla de proyecto también crea un valor HttpTrigger predeterminado. Para los fines de esta práctica, debe eliminar el archivo **HttpTrigger.cs** desde el proyecto.
 
     Abra **local.settings.json**. De forma predeterminada, tiene dos valores de cadena de conexión vacíos.
 
@@ -58,7 +56,7 @@ En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visua
 ## <a name="exercise-2-creating-an-azure-storage-account"></a>Ejercicio 2: Crear una cuenta de almacenamiento de Azure
 
 1. Inicie sesión en su cuenta de Azure en [https://portal.azure.com](https://portal.azure.com).
- 
+
 1. En la sección **Favoritos**, situada a la izquierda de la pantalla, seleccione **Cuentas de almacenamiento**:
 
     ![sección Favoritos de Azure Portal que muestra el elemento Cuentas de almacenamiento](media/azure-functions-lab-image4.png)
@@ -91,7 +89,7 @@ En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visua
 
 ## <a name="example-3-creating-and-debugging-an-azure-function"></a>Ejemplo 3: Crear y depurar una función de Azure
 
-1. Ahora está listo para comenzar a agregar el código. Cuando se trabaja con una biblioteca de clases .NET, Azure Functions se agrega como métodos estáticos. En **Panel de solución**, haga clic con el botón derecho en el nodo de proyecto **AzureFunctions** y seleccione **Agregar > Agregar función...**:
+1. Ahora está listo para comenzar a agregar el código. Cuando se trabaja con una biblioteca de clases .NET, Azure Functions se agrega como métodos estáticos. En el **Panel de solución**, haga clic con el botón derecho en el nodo de proyecto **AzureFunctions** y seleccione **Agregar > Agregar función**:
 
     ![Opción Agregar función](media/azure-functions-lab-image11.png)
 
@@ -121,8 +119,8 @@ En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visua
         return x + y;
     }
     ```
-1. Analicemos la definición del método parte por parte. 
-    
+1. Analicemos la definición del método parte por parte.
+
     Lo primero que verá es el atributo **FunctionName** que marca este método como una función de Azure. El atributo designa el nombre público de la función. El nombre del atributo no tiene que coincidir con el nombre real del método.
 
     ![Nuevo método de ejecución con el atributo FunctionName resaltado](media/azure-functions-lab-image13.png)
@@ -157,7 +155,7 @@ En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visua
 
     ![URL de la API de la función de Azure](media/azure-functions-lab-image20.png)
 
-1. El punto de interrupción debería desencadenarse inmediatamente. La solicitud web se ha enrutado a la función y ahora se puede depurar. Mueva el mouse sobre la variable **x** para ver su valor. 
+1. El punto de interrupción debería desencadenarse inmediatamente. La solicitud web se ha enrutado a la función y ahora se puede depurar. Mueva el mouse sobre la variable **x** para ver su valor.
 
     ![Punto de interrupción desencadenado](media/azure-functions-lab-image21.png)
 
@@ -306,7 +304,7 @@ En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visua
 
 ## <a name="exercise-5-working-with-azure-storage-tables"></a>Ejercicio 5: Trabajar con tablas de almacenamiento de Azure
 
-A menudo, el servicio que compile podría ser mucho más complejo que lo que hemos creado hasta ahora y requerir una cantidad significativa de tiempo o infraestructura para ejecutarse. En este caso, podría resultarle efectivo aceptar las solicitudes que se ponen en cola para su procesamiento cuando los recursos estén disponibles, los cuales son compatibles con Azure. En otros casos tendrá que almacenar los datos de forma centralizada. Las tablas de Azure Storage permiten hacerlo rápidamente. 
+A menudo, el servicio que compile podría ser mucho más complejo que lo que hemos creado hasta ahora y requerir una cantidad significativa de tiempo o infraestructura para ejecutarse. En este caso, podría resultarle efectivo aceptar las solicitudes que se ponen en cola para su procesamiento cuando los recursos estén disponibles, los cuales son compatibles con Azure. En otros casos tendrá que almacenar los datos de forma centralizada. Las tablas de Azure Storage permiten hacerlo rápidamente.
 
 1. Agregue la clase siguiente a **Add.cs**. Debe ir dentro del espacio de nombres, pero fuera de la clase existente.
 
@@ -332,7 +330,7 @@ A menudo, el servicio que compile podría ser mucho más complejo que lo que hem
         TraceWriter log)
     {
         log.Info($"Processing {x} + {y}");
-    
+
         return new TableRow()
         {
             PartitionKey = "sums",
@@ -353,7 +351,7 @@ A menudo, el servicio que compile podría ser mucho más complejo que lo que hem
 
 1. Vuelva al explorador para actualizar la solicitud a la misma dirección URL. Esta vez verá un error después del método **Process**. Esto es porque el código está intentando agregar una fila a la tabla de Azure Table Storage mediante una combinación de clave de partición y fila que ya existe.
 
-    ``` 
+    ```
     System.Private.CoreLib: Exception while executing function: Process. Microsoft.Azure.WebJobs.Host: Error while handling parameter $return after function returned:. Microsoft.Azure.WebJobs.Host: The specified entity already exists.
     ```
 
@@ -387,7 +385,7 @@ A menudo, el servicio que compile podría ser mucho más complejo que lo que hem
 1. Vuelva a **Visual Studio para Mac** y termine la sesión de depuración.
 
 <!--
-1. Finally, let's take a look at what it's like to work with multiple input records. Rather than specify a specific **TableRow**, you can request an **IQueryable<TableRow>** using the same attributes, and the runtime will fill it with the appropriate resource you need. Add the code below to create a **List** function that lists all items that currently exist in the Azure table we've been working with. Also note that we're specifying that the MIME type of the response is **application/json**, so the runtime will automatically render as JSON. 
+1. Finally, let's take a look at what it's like to work with multiple input records. Rather than specify a specific **TableRow**, you can request an **IQueryable<TableRow>** using the same attributes, and the runtime will fill it with the appropriate resource you need. Add the code below to create a **List** function that lists all items that currently exist in the Azure table we've been working with. Also note that we're specifying that the MIME type of the response is **application/json**, so the runtime will automatically render as JSON.
 
     ```csharp
     [FunctionName("List")]

@@ -5,7 +5,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 08/14/2018
+ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
 ms.workload:
 - multiple
-ms.openlocfilehash: 469444051956a766bd44d517dd59ec6d945039b0
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 48c478986ba79d84bb4cc93e7437a9a8a6aac33a
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139293"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607658"
 ---
 # <a name="visual-studio-2017-desktop-express-component-directory"></a>Directorio de componentes de Visual Studio 2017 Express para escritorio
 
@@ -62,10 +62,10 @@ Microsoft.Net.Component.4.6.TargetingPack | Paquete de compatibilidad de .NET Fr
 Microsoft.Net.Component.4.TargetingPack | Paquete de compatibilidad de .NET Framework 4 | 15.6.27406.0 | Obligatorio
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Herramientas de desarrollo de .NET Framework 4.6.1 | 15.8.27825.0 | Obligatorio
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Herramientas de desarrollo de .NET Framework 4 – 4.6 | 15.6.27406.0 | Obligatorio
-Microsoft.VisualStudio.Component.Common.Azure.Tools | Herramientas de conectividad y de publicación | 1.10.50912.1 | Obligatorio
+Microsoft.VisualStudio.Component.Common.Azure.Tools | Herramientas de conectividad y de publicación | 15.9.28107.0 | Obligatorio
 Microsoft.VisualStudio.Component.CoreEditor | Editor de núcleo de Visual Studio | 15.8.27729.1 | Obligatorio
 Microsoft.VisualStudio.Component.EntityFramework | Herramientas de Entity Framework 6 | 15.6.27406.0 | Obligatorio
-Microsoft.VisualStudio.Component.NuGet | Administrador de paquetes de NuGet | 15.8.27825.0 | Obligatorio
+Microsoft.VisualStudio.Component.NuGet | Administrador de paquetes de NuGet | 15.9.28016.0 | Obligatorio
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores de C# y Visual Basic Roslyn | 15.6.27309.0 | Obligatorio
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# y Visual Basic | 15.8.27729.1 | Obligatorio
 Microsoft.VisualStudio.Component.SQL.ADAL | Entorno de tiempo de ejecución de SQL ADAL | 15.6.27406.0 | Obligatorio
@@ -74,12 +74,12 @@ Microsoft.VisualStudio.Component.SQL.CMDUtils | Utilidades de la línea de coman
 Microsoft.VisualStudio.Component.SQL.DataSources | Orígenes de datos para el soporte de SQL Server | 15.0.26621.2 | Obligatorio
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.7.27617.1 | Obligatorio
 Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.26208.0 | Obligatorio
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.7.27625.0 | Obligatorio
+Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.9.28107.0 | Obligatorio
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Herramientas de análisis estático | 15.0.26208.0 | Obligatorio
 Microsoft.VisualStudio.Component.TextTemplating | Transformación de plantilla de texto | 15.0.26208.0 | Obligatorio
 Microsoft.VisualStudio.Component.VC.CLI.Support | Compatibilidad con C++/CLI | 15.6.27309.0 | Obligatorio
 Microsoft.VisualStudio.Component.VC.Tools.ARM | Bibliotecas y compiladores de Visual Studio C++ para ARM | 15.8.27825.0 | Obligatorio
-Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Bibliotecas y compiladores de Visual C++ para ARM64 | 15.6.27309.0 | Obligatorio
+Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Bibliotecas y compiladores de Visual C++ para ARM64 | 15.9.28230.55 | Obligatorio
 Microsoft.VisualStudio.Component.VisualStudioData | Referencias de servicio y orígenes de datos | 15.6.27406.0 | Obligatorio
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | SDK de Windows 10 (10.0.14393.0) | 15.6.27406.0 | Obligatorio
 Microsoft.VisualStudio.Component.Windows10SDK.17134 | SDK de Windows 10 (10.0.17134.0) | 15.8.27924.0 | Obligatorio

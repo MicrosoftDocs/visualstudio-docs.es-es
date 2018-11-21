@@ -6,14 +6,14 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: f6ec6a446b68c848885e2c08804bc49a0cf1941b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ad3154390494c3d949ceba1cc84ded87d33a3fd
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934618"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294999"
 ---
-# <a name="setup-and-install-visual-studio-for-mac"></a>Configuración e instalación de Visual Studio para Mac
+# <a name="set-up-and-install-visual-studio-for-mac"></a>Configurar e instalar Visual Studio para Mac
 
 ## <a name="setup"></a>Programa de instalación
 
@@ -86,7 +86,6 @@ Para trabajar con iOS en Visual Studio, necesita los siguientes elementos:
 > [!NOTE]
 > Si decide no instalar una plataforma o herramienta durante la instalación original (al anular la selección en el paso 6), debe volver a ejecutar el [instalador](https://visualstudio.microsoft.com/vs/) si quiere agregar los componentes más adelante.
 
-
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Instalar Visual Studio para Mac detrás de un firewall o servidor proxy
 
 Para instalar Visual Studio para Mac detrás de un firewall, es necesario que determinados puntos de conexión sean accesibles para permitir la descarga de las herramientas y las actualizaciones necesarias para el software.
@@ -104,7 +103,6 @@ La instalación de Visual Studio para Mac le permite empezar a escribir código 
 1. [Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
 2. [Device Provisioning](https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning) (Aprovisionamiento de dispositivos) (para ejecutar la aplicación en el dispositivo).
 
-
 ### <a name="android"></a>Android
 
 1. [Uso del administrador de Android SDK de Xamarin](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
@@ -114,3 +112,7 @@ La instalación de Visual Studio para Mac le permite empezar a escribir código 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Aplicaciones de .NET core, aplicaciones web ASP.NET Core, desarrollo de juegos de Unity
 
 Para otras cargas de trabajo, consulte la página [Cargas de trabajo](workloads.md).
+
+## <a name="see-also"></a>Vea también
+
+- [Instalación de Visual Studio 2017 (en Windows)](/visualstudio/install/install-visual-studio)

@@ -5,18 +5,18 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/22/2018
 ms.assetid: 6F2ECF5A-E195-4890-8399-12A88C7D62FD
-ms.openlocfilehash: f1df4aaa3eeaf0361176ca433cc2262afca480ce
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: e29e1f1d7cce6fc77157628ee6e1889a538a1800
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224418"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294479"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programa para la mejora de la experiencia del usuario de Visual Studio
 
-El Programa para la mejora de la experiencia del usuario de Visual Studio (VSCEIP) está diseñado para ayudar a Microsoft a mejorar Visual Studio para Mac con el tiempo. Este programa recopila información sobre el hardware del equipo y el uso que se hace de Visual Studio para Mac, sin interrumpir a los usuarios en sus tareas en el equipo. La información recopilada ayuda a Microsoft a identificar qué características se deben mejorar. Este documento explica cómo participar o no en el VSCEIP.
+El Programa para la mejora de la experiencia del usuario de Visual Studio (VSCEIP) está diseñado para ayudar a Microsoft a mejorar Visual Studio para Mac con el tiempo. Este programa recopila información sobre el hardware del equipo y el uso que se hace de Visual Studio para Mac, sin interrumpir a los usuarios en sus tareas en el equipo. La información recopilada ayuda a Microsoft a identificar qué características se deben mejorar. Este artículo explica cómo participar o no en el VSCEIP.
 
-Para obtener más información sobre los datos que recopila, procesa o transmite el VSCEIP, consulte la [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).  
+Para obtener más información sobre los datos que recopila, procesa o transmite el VSCEIP, consulte la [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
 
 ## <a name="choice-and-control-over-the-visual-studio-customer-experience-improvement-program"></a>Elección y control del Programa para la mejora de la experiencia del usuario de Visual Studio
 
@@ -34,6 +34,8 @@ VSCEIP está activado de forma predeterminada. Para desactivarlo o volver a acti
 
 ## <a name="see-also"></a>Vea también
 
+* [Programa para la mejora de la experiencia del usuario (Visual Studio en Windows)](/visualstudio/ide/visual-studio-experience-improvement-program)
+* [Registros generados por el sistema recopilados por Visual Studio (en Windows)](/visualstudio/ide/diagnostic-data-collection)
 * [Cómo notificar un problema en Visual Studio para Mac](report-a-problem.md)
 * [Comunidad de desarrolladores de Visual Studio para Mac](https://developercommunity.visualstudio.com/spaces/41/index.html)
 * [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement)

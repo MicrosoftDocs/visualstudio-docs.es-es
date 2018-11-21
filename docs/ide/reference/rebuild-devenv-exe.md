@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e462e64df90a7672efa890897b48726a0e764e6c
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: b0946137cb259386648b7b3ac2883c33f5724352
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704660"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948614"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 Limpia y, después, compila la configuración de solución especificada.

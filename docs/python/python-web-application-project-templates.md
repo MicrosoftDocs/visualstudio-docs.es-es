@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cbdf9b6890613cc4ad41af77e27f7f41c6f5c9da
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 3245cd647f5da391bb0e36afc65d867137618808
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219853"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349341"
 ---
 # <a name="python-web-application-project-templates"></a>Plantillas de proyecto de aplicación web para Python
 
 Python en Visual Studio admite el desarrollo de proyectos web en los marcos Bottle, Flask y Django mediante plantillas de proyecto y un iniciador de depuración que puede configurarse para controlar varios marcos. Estas plantillas incluyen un archivo *requirements.txt* para declarar las dependencias necesarias. Al crear un proyecto a partir de alguna de estas plantillas, Visual Studio le pide que instale esos paquetes (vea [Instalar requisitos de proyecto](#install-project-requirements) más adelante en este artículo).
 
-También puede usar la plantilla **Proyecto web** genérica para otras plataformas como Pyramid. En este caso, no se instala ningún marco con la plantilla. En su lugar, instale los paquetes necesarios en el entorno que va a usar para el proyecto (vea [Administración de entornos de Python](managing-python-environments-in-visual-studio.md)).
+También puede usar la plantilla **Proyecto web** genérica para otras plataformas como Pyramid. En este caso, no se instala ningún marco con la plantilla. En su lugar, instale los paquetes necesarios en el entorno que va a usar para el proyecto (vea [Ventana Entornos de Python - Pestaña Paquetes](python-environments-window-tab-reference.md#packages-tab)).
 
 Para obtener información sobre la implementación de una aplicación web de Python en Azure, vea [Publicar en Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
 

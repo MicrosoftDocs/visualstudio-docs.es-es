@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2c678d7304c879cf42c24de9d83704971043676
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 6df78ec4be1fc94951634b84a98e80dc1403a41b
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704153"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948743"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
 Inicia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] en modo seguro, cargando solo el entorno y los servicios predeterminados.
@@ -33,7 +33,7 @@ devenv /SafeMode
 ## <a name="remarks"></a>Comentarios
  Este modificador evita que se carguen todos los VSPackages de terceros cuando se inicia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], lo que garantiza una ejecución estable.
 
-## <a name="description"></a>Description
+## <a name="description"></a>Descripción
  En el ejemplo siguiente, se inicia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] en modo seguro.
 
 ## <a name="code"></a>Código
