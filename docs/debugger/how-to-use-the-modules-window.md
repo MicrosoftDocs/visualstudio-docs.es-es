@@ -25,14 +25,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4604932084289919a86ba09516b8d2c237f44cd9
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 33a09fe01157e0e3f5493568437c1499f2831bdb
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296273"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257295"
 ---
-# <a name="view-dlls-and-executables-in-the-modules-window"></a>Ver los archivos DLL y ejecutables en la ventana módulos
+# <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>Ver los archivos DLL y ejecutables en la ventana Módulos (C#, C++, Visual Basic, F#)
  
 Durante la depuración de Visual Studio, el **módulos** ventana enumera y muestra información acerca de los archivos DLL y ejecutables (*.exe* archivos) utiliza su aplicación. 
 

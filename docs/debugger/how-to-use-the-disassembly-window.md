@@ -23,14 +23,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51510d09a1840035bb96817d30aebdcd6bf3ebd7
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 9733569c3fa53d2c5a5905b5b893d16b4eeaf10b
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671149"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257048"
 ---
-# <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>Ver el código de desensamblado en el depurador de Visual Studio
+# <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Ver el código de desensamblado en el depurador de Visual Studio (C#, C++, Visual Basic, F#)
 
 El **desensamblado** ventana muestra el código de ensamblado correspondiente a las instrucciones creadas por el compilador. Si depura código administrado, estas instrucciones de ensamblado corresponden al código nativo creado por el compilador Just-in-Time (JIT), no el lenguaje intermedio de Microsoft (MSIL) que creado por el compilador de Visual Studio.  
   
@@ -41,7 +41,7 @@ Esta característica solo está disponible si está habilitada la depuración de
 
 Además de las instrucciones de ensamblado, el **desensamblado** ventana puede mostrar la siguiente información opcional:  
   
-- Dirección de memoria donde se encuentra cada instrucción máquina. Para aplicaciones nativas, es la dirección de memoria real. Para Visual Basic, C#, o código administrado, es un desplazamiento desde el principio de la función.  
+- Dirección de memoria donde se encuentra cada instrucción máquina. Para aplicaciones nativas, es la dirección de memoria real. Para Visual Basic o C#, es un desplazamiento desde el principio de la función.  
   
 - Código fuente del que se deriva el código ensamblado.  
   

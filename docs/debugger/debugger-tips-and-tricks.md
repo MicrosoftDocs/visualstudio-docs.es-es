@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e2a9acf315541dcf231d774fdb37e4c82649a4c
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 072cfcf253bb01687df20a6a0f2d41b71468b90c
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612732"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257360"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Obtenga información sobre sugerencias de productividad y trucos del depurador de Visual Studio
 
@@ -54,16 +54,16 @@ Si es difícil o requiere tiempo volver a crear un estado determinado en la apli
 
 3. Si está interesado en otro tipo de condición, seleccione **filtro** en lugar de **expresión condicional** en el **configuración de punto de interrupción** cuadro de diálogo y, después, siga las sugerencias de filtro.
 
-## <a name="change-the-execution-flow"></a>Cambiar el flujo de ejecución
+## <a name="change-the-execution-flow"></a>Cambio del flujo de ejecución
 
 Con el depurador pausó en una línea de código, use el mouse para captar el puntero de flecha amarilla en la parte izquierda. Mueva el puntero de flecha amarilla a un punto diferente en la ruta de acceso de ejecución de código. A continuación, utilice F5 o un comando de paso para continuar ejecutando la aplicación.
 
 ![Mueva el puntero de ejecución](../debugger/media/dbg-tour-move-the-execution-pointer.gif "mover el puntero de ejecución")
 
-Al cambiar el flujo de ejecución, puede hacer cosas como comprobar las rutas de ejecución de código diferente o volver a ejecutar código sin necesidad de reiniciar al depurador.
+Al cambiar el flujo de ejecución, puede, por ejemplo, comprobar las diferentes rutas de ejecución de código o volver a ejecutar código sin tener que reiniciar el depurador.
 
 > [!WARNING]
-> A menudo es necesario tener cuidado con esta característica, y verá una advertencia en la información sobre herramientas. Puede ver otras advertencias, demasiado. Mover el puntero no puede revertir la aplicación a un estado anterior de la aplicación.
+> A menudo es necesario tener cuidado con esta característica, ya que puede ser que vea una advertencia en la información en pantalla. También puede ser que reciba otras advertencias. Mover el puntero no puede revertir la aplicación a un estado anterior de la aplicación.
 
 ## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Realizar un seguimiento de un objeto fuera de ámbito (C#, Visual Basic)
 
@@ -145,7 +145,7 @@ Seleccione una operación en la vista de resumen para ver más detalles.
 
 Para obtener más información, vea [Network Usage](../profiling/network-usage.md) (Uso de red).
 
-## <a name="modules_window"></a> Familiarizarse con cómo el depurador se asocia a la aplicación
+## <a name="modules_window"></a> Familiarizarse con cómo el depurador se asocia a la aplicación (C#, C++, Visual Basic, F#)
 
 Para asociar a la aplicación en ejecución, el depurador carga los archivos de símbolos (.pdb) generados para la misma versión exacta de la aplicación que está intentando depurar. En algunos escenarios, algunos conocimientos de los archivos de símbolos pueden resultar útil. Puede examinar cómo Visual Studio carga los archivos de símbolos mediante el **módulos** ventana.
 

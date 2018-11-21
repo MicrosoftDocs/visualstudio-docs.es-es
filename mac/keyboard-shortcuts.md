@@ -3,14 +3,14 @@ title: Métodos abreviados de teclado comunes del editor de código fuente
 description: En este artículo se describen algunos métodos abreviados de teclado comunes en el editor de código fuente de Visual Studio para Mac
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 11/06/2018
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: ff5a7d79bf59f841aaf1957095cb2ae0e53a46c7
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2ac2a98223e86a564ff6ce733e11767a918bc55b
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295116"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948795"
 ---
 # <a name="common-keyboard-shortcuts-in-visual-studio-for-mac"></a>Métodos abreviados de teclado comunes de Visual Studio para Mac
 

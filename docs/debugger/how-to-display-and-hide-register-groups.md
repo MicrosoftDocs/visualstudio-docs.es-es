@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: mostrar y ocultar grupos de registros | Documentos de Microsoft'
+title: 'Cómo: mostrar y ocultar grupos de registros | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -21,17 +21,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a06c6da95cfbdd899557f228d607d1cb06b0ecb3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a98927d0132402e2977d5d8f1f28cbba43da636c
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474094"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257152"
 ---
-# <a name="how-to-display-and-hide-register-groups"></a>Cómo: Mostrar y ocultar grupos de registros
-El **registra** ventana solo está disponible si está habilitada la depuración de nivel de dirección en la **opciones** cuadro de diálogo, **depuración** nodo, **General**categoría.  
+# <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Cómo: mostrar y ocultar grupos de registros (C#, C++, Visual Basic, F#)
+
+El **registra** ventana solo está disponible si la depuración de nivel de dirección está habilitada en el **opciones** cuadro de diálogo, **depuración** nodo, **General**categoría.  
   
- Para reducir la acumulación de elementos, el **registra** ventana registros organiza en grupos. Si hace doble clic en el **registra** ventana, verá un menú contextual que contiene estos grupos, que puede mostrar u ocultar según su conveniencia, siguiendo este procedimiento.  
+ Para reducir el desorden, el **registra** ventana registros organiza en grupos. Si hace doble clic en el **registra** ventana, verá un menú contextual que contiene estos grupos, que puede mostrar u ocultar según su conveniencia, siguiendo el procedimiento siguiente.  
   
 > [!NOTE]
 >  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  

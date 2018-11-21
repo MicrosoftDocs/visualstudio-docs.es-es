@@ -25,14 +25,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04ba88470a6b83a49d7c233266b144387586137f
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: cdf8e5fc5ee0ac34b4c295f6cc593e0a93b548ae
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050124"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257269"
 ---
-# <a name="use-the-memory-windows-in-the-visual-studio-debugger"></a>Usar las ventanas de memoria en el depurador de Visual Studio
+# <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Usar las ventanas de memoria en el depurador de Visual Studio (C#, C++, Visual Basic, F#)
 
 Durante la depuración, la **memoria** ventana muestra el espacio de memoria que está usando la aplicación. 
 

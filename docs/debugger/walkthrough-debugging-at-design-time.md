@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1235e6360ccc5f6c0677f7ec9acb1dd85cad226
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 452b4045357db12c4b4cff1a5b6e27035cf85d82
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180183"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257204"
 ---
-# <a name="debug-at-design-time-in-visual-studio"></a>Depurar en tiempo de diseño en Visual Studio
+# <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>Depurar en tiempo de diseño en Visual Studio (C#, C++, Visual Basic, F#)
 
 En algunos escenarios, es posible que desee depurar código en el diseño de tiempo en lugar de mientras se ejecuta la aplicación. Puede hacerlo mediante el **inmediato** ventana. Si desea depurar el código XAML que interactúa con otro código, como el código de enlace de datos, puede usar **depurar** > **asociar al proceso** hacer eso.
   
@@ -32,7 +32,7 @@ En algunos escenarios, es posible que desee depurar código en el diseño de tie
 
 Puede usar Visual Studio **inmediato** ventana para ejecutar una función o subrutina mientras la aplicación no se está ejecutando. Si la función o subrutina contiene un punto de interrupción, Visual Studio interrumpirá la ejecución en el punto adecuado. A continuación puede utilizar las ventanas del depurador para examinar el estado del programa. Esta característica se denomina depuración en tiempo de diseño.  
 
-El ejemplo siguiente es en Visual Basic, pero el **inmediato** ventana también se admite en aplicaciones de C# y C++.
+El ejemplo siguiente es en Visual Basic. El uso de la **inmediato** ventana en tiempo de diseño también se admite en C#, C++, y F# aplicaciones.
   
 1.  Pegue el siguiente código en una aplicación de consola de Visual Basic:  
   
