@@ -5,12 +5,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
-ms.openlocfilehash: c7ae7fb3a2b96efc7ad4009f584baba6b80f66da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cbf0d99bd87b31484b6c74e9a6d67ac88dc5ba99
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894682"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294310"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>Tutorial: Extender Visual Studio para Mac
 
@@ -135,3 +135,7 @@ En este ejemplo se usa el complemento Add-in Maker. Add-in Maker crea una nueva 
 15. Por último, ejecute el paquete de extensión para probarlo. En la nueva instancia de Visual Studio para Mac, seleccione **Editar > Insertar fecha**. La fecha y la hora actuales se insertan en el símbolo de intercalación, como se muestra en la captura de pantalla siguiente:
 
     ![Captura de pantalla de Insertar fecha](media/extending-visual-studio-mac-addin12.png)
+
+## <a name="see-also"></a>Vea también
+
+- [Create your first extension (Visual Studio on Windows)](/visualstudio/extensibility/extensibility-hello-world) (Crear la primera extensión [Visual Studio en Windows])

@@ -16,16 +16,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d72a9cd4ad29785884417881324e6d348e03d83
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: b196d993e7091fd9d4b09fe3c228346e7421911e
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826719"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257217"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspeccionar las variables en las ventanas automático y variables locales
 
 El **automático** y **variables locales** ventanas muestran valores de variables durante la depuración. Windows solo están disponibles durante una sesión de depuración. El **automático** ventana muestra las variables usadas en torno al punto de interrupción actual. El **variables locales** ventana muestra las variables definidas en el ámbito local, que normalmente es la función actual o el método. Si se trata de la primera vez que ha probado para depurar el código, es posible que desea leer [escribir mejor C# código con Visual Studio](../debugger/write-better-code-with-visual-studio.md) y [de depuración para principiantes absolutos](../debugger/debugging-absolute-beginners.md) antes de pasar a través de este artículo.
+
+ El **automático** ventana está disponible para C#, código de Visual Basic, C++ y Python, pero no para JavaScript o F#.
   
 Para abrir el **automático** ventana, durante la depuración, seleccione **depurar** > **Windows** > **automático**, o presione **Ctrl**+**Alt**+**V** > **A**.  
 
@@ -34,7 +36,7 @@ Para abrir el **variables locales** ventana, durante la depuración, seleccione 
 Si necesita obtener más información sobre la depuración básica, consulte [introducción con el depurador](../debugger/getting-started-with-the-debugger.md).
 
 > [!NOTE]
-> En este tema se aplica a Visual Studio en Windows. Para Visual Studio para Mac, consulte [visualizaciones de datos en Visual Studio para Mac](/visualstudio/mac/data-visualizations).
+> Este tema se aplica a Visual Studio para Windows. Para Visual Studio para Mac, consulte [visualizaciones de datos en Visual Studio para Mac](/visualstudio/mac/data-visualizations).
 
 ## <a name="use-the-autos-and-locals-windows"></a>Usar las ventanas automático y variables locales
 
@@ -71,9 +73,7 @@ Establezca un punto de interrupción e inicie la depuración. Cuando se alcanza 
 
 ![Barra de herramientas ubicación de depuración](../debugger/media/debuglocationtoolbar.png "barra de herramientas ubicación de depuración")
 
-## <a name="bkmk_whatvariables"></a> Variables en la ventana automático
-
- El **automático** ventana está disponible para C#, Visual Basic y C++ de código, pero no para JavaScript o F#.
+## <a name="bkmk_whatvariables"></a> Las variables en la ventana automático (C#, C++, Visual Basic, Python)
 
  Diferentes lenguajes de código muestran distintas variables en el **automático** ventana.
 

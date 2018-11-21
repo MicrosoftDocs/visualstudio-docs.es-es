@@ -30,23 +30,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d138e954ce01af04405b72ce50ab72a76d8cf3
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 264aeeeaac47e30eb08b4320443da15ea48a8601
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348896"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257243"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Ver la pila de llamadas y usar la ventana Pila de llamadas en el depurador
 
-Mediante el uso de la **pila de llamadas** ventana, puede ver las llamadas de función o procedimiento que están actualmente en la pila. El **pila de llamadas** ventana muestra el orden en el que obtener se llaman los métodos y funciones. La pila de llamadas es una buena manera para examinar y entender el flujo de ejecución de una aplicación.
+Mediante el uso de la **pila de llamadas** ventana, puede ver las llamadas de función o procedimiento que están actualmente en la pila. En la ventana **Pila de llamadas** se muestra el orden en el que se llama a los métodos y las funciones. La pila de llamadas es una buena forma de examinar y entender el flujo de ejecución de una aplicación.
   
 Cuando [símbolos de depuración](#bkmk_symbols) no están disponibles para una parte de una pila de llamadas, el **pila de llamadas** ventana no pueda mostrar información correcta para esa parte de la pila de llamadas, mostrar en su lugar:  
   
 `[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]`
 
 > [!NOTE]
-> El **pila de llamadas** ventana es similar a la perspectiva de depuración de algunos IDE como Eclipse. 
+> La ventana **Pila de llamadas** es similar a la perspectiva de depuración de algunos IDE, como Eclipse. 
 > 
 > [!NOTE]
 >  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos aquí, en función de los valores de configuración o de edición activos. Para cambiar la configuración, seleccione **importar y exportar configuraciones** en el **herramientas** menú.  Consulte [personalizar el IDE](../ide/personalizing-the-visual-studio-ide.md).
@@ -103,7 +103,7 @@ En Visual Studio Enterprise (solo), puede ver mapas de código para la pila de l
 
 ![Mostrar pila de llamadas en mapa de código](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
   
-## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack"></a>Ver el código de desensamblado de una función en la pila de llamadas  
+## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Ver el código de desensamblado de una función en la pila de llamadas (C#, C++, Visual Basic, F#) 
   
 -   En el **pila de llamadas** (ventana), con el botón secundario, la función cuyo código de desensamblado desee ver y seleccione **ir al desensamblado**.    
 
@@ -111,7 +111,8 @@ En Visual Studio Enterprise (solo), puede ver mapas de código para la pila de l
   
 -   Haga clic en el **pila de llamadas** ventana y establezca o desactive **mostrar \<**  _la información que desee_ **>**.  
   
-## <a name="bkmk_symbols"></a> Cargar símbolos para un módulo
+## <a name="bkmk_symbols"></a> Cargar símbolos para un módulo (C#, C++, Visual Basic, F#)
+
 En el **pila de llamadas** ventana, puede cargar los símbolos para el código que no tiene actualmente cargados los símbolos de depuración. Estos símbolos pueden ser .NET Framework o símbolos del sistema descargados de los servidores de símbolos públicos de Microsoft o símbolos en una ruta de acceso de símbolos en el equipo que está depurando.  
   
 Consulte [especificar archivos de código fuente y símbolos (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
