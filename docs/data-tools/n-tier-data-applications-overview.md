@@ -15,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e386c052b43ee62ddde0516fa203298fe1babe5
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 3f9cf8c6a75e5f2a517931bf0fd858ea8f8f860c
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089035"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281750"
 ---
 # <a name="n-tier-data-applications-overview"></a>Introducción a las aplicaciones de datos con N niveles
 *N niveles* aplicaciones de datos son las aplicaciones de datos que se dividen en varios *niveles*. Las aplicaciones con n niveles, también denominadas "aplicaciones distribuidas" o "aplicaciones multinivel", dividen el procesamiento en niveles independientes que se distribuyen entre el cliente y el servidor. Al desarrollar aplicaciones que tienen acceso a datos, se debe realizar una separación clara entre los distintos niveles que constituyen la aplicación.
@@ -64,7 +64,7 @@ Las ilustraciones siguientes muestran las características y tecnologías que se
 El nivel intermedio se conecta normalmente con la capa de datos mediante una conexión de datos. Esta conexión de datos está almacenada normalmente en el componente de acceso a datos.
 
 ## <a name="data-tier"></a>Capa de datos
-El *capa de datos* es básicamente el servidor que almacena datos de la aplicación (por ejemplo, un servidor que ejecuta [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)]).
+El *capa de datos* es básicamente el servidor que almacena datos de la aplicación (por ejemplo, un servidor que ejecuta SQL Server).
 
 Las ilustraciones siguientes muestran las características y tecnologías que se encuentran disponibles en Visual Studio y dónde podrían integrarse en la capa de datos de una aplicación con n niveles.
 

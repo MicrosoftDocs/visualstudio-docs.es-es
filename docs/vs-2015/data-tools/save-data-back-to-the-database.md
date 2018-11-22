@@ -29,12 +29,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: baddf87e24efc48ea597e44c52abcee5e5bdcfad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6b6fd99b2b1a41d6baa3a110b2a595afb1dd7e3f
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829649"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281854"
 ---
 # <a name="save-data-back-to-the-database"></a>Guardar los datos de nuevo en la base de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ El conjunto de datos es una copia en memoria de datos. Si modifica datos, es una
 ## <a name="two-stage-updates"></a>Actualizaciones en dos fases  
  Actualización de un origen de datos es un proceso de dos pasos. El primer paso es actualizar el conjunto de datos con los registros eliminados, los registros cambiados o nuevos registros. Si la aplicación nunca envía esos cambios en el origen de datos, a continuación, ya ha terminado con la actualización.  
   
- Si envía los cambios a la base de datos, un segundo paso es necesario. Si no utiliza controles enlazados a datos, deberá llamar manualmente al método Update del mismo TableAdapter (o adaptador de datos) que usa para rellenar el conjunto de datos. Sin embargo, también puede utilizar adaptadores diferentes, por ejemplo, para mover datos desde un origen de datos a otro o para actualizar varios orígenes de datos. Si no está usando el enlace de datos y está guardando los cambios para las tablas relacionadas, deberá instancias manualmente de una variable de la clase TableAdapterManager generado automáticamente y, a continuación, llame a su método UdpateAll.  
+ Si envía los cambios a la base de datos, un segundo paso es necesario. Si no utiliza controles enlazados a datos, deberá llamar manualmente al método Update del mismo TableAdapter (o adaptador de datos) que usa para rellenar el conjunto de datos. Sin embargo, también puede utilizar adaptadores diferentes, por ejemplo, para mover datos desde un origen de datos a otro o para actualizar varios orígenes de datos. Si no está usando el enlace de datos y está guardando los cambios para las tablas relacionadas, deberá instancias manualmente de una variable de la clase TableAdapterManager generado automáticamente y, a continuación, llame a su método UpdateAll.  
   
  ![Las actualizaciones del conjunto de datos de Visual Basic](../data-tools/media/vbdatasetupdates.gif "vbDatasetUpdates")  
 Proceso de actualización en dos fases y rol de DataRowVersion en una actualización correcta  
