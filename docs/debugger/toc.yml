@@ -11,9 +11,9 @@ items:
   items:
   - name: Primer vistazo al depurador
     href: debugger-feature-tour.md
-  - name: Depurar una aplicación administrada
+  - name: Depuración de una aplicación de C# o Visual Basic
     href: quickstart-debug-with-managed.md
-  - name: Depurar una aplicación nativa
+  - name: Depuración de una aplicación de C++
     href: quickstart-debug-with-cplusplus.md
   - name: Depurar una aplicación ASP.NET
     href: quickstart-debug-aspnet.md
@@ -25,7 +25,7 @@ items:
     href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
   - name: Depurar una aplicación de Azure activa
     href: debug-live-azure-applications.md
-  - name: Depurar código administrado y nativo
+  - name: Depurar código de C# y de C++
     href: how-to-debug-managed-and-native-code.md
   - name: Inspeccionar los estados anteriores de la aplicación
     href: view-historical-application-state.md
@@ -105,7 +105,7 @@ items:
       items:
       - name: Usar Editar y continuar (C#)
         href: how-to-use-edit-and-continue-csharp.md
-      - name: Cambios admitidos en el código (C#)
+      - name: Cambios admitidos en el código
         href: supported-code-changes-csharp.md
     - name: Editar y continuar (Visual Basic)
       href: edit-and-continue-visual-basic.md
@@ -836,9 +836,9 @@ items:
   items:
   - name: Novedades del depurador de Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: fb63e23cce50cd7d326bb11d39628f63e8bf6a2f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 29484ea5dc8ae51635465810c13fdf7d28399589
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770467"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257412"
