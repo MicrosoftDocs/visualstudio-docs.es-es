@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2ba06156a8fa44a61b489deba6104673e8fb08ce
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: e35d102a30ffc7b80d39f359542bbdc4c00feff6
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637528"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257191"
 ---
-# <a name="quickstart-debug-with-managed-code-using-the-visual-studio-debugger"></a>Inicio rápido: Depurar con código administrado mediante el depurador de Visual Studio
+# <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Inicio rápido: Depurar con C# o Visual Basic mediante el depurador de Visual Studio
 
 El depurador de Visual Studio proporciona muchas características de gran eficacia para ayudar a depurar aplicaciones. En este tema se proporciona una forma rápida de obtener información sobre las características básicas.
 
@@ -181,7 +181,7 @@ Para obtener más información sobre el uso de Editar y continuar y las limitaci
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-En este tutorial, ha aprendido a iniciar el depurador, a ejecutar el código paso a paso y a inspeccionar variables. Es posible que quiera obtener una visión global de las características del depurador con vínculos a más información.
+En este tutorial, ha aprendido a iniciar el depurador, a ejecutar el código paso a paso y a inspeccionar variables. Puede ser que le interese analizar las características del depurador con más detenimiento, así como consultar los vínculos disponibles con más información.
 
 > [!div class="nextstepaction"]
 > [Guía de características del depurador](../debugger/debugger-feature-tour.md)

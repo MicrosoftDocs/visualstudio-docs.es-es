@@ -2,7 +2,7 @@
 title: Usar parámetros de la línea de comandos para instalar Visual Studio
 description: Obtenga información sobre cómo usar parámetros de línea de comandos para controlar o personalizar la instalación de Visual Studio.
 ms.custom: ''
-ms.date: 05/07/2018
+ms.date: 11/14/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 051935a2c7022af3c6811e90a89697a08f52fa9a
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: e52d61c1226e131c9d989a70f7c8e6432d8f3733
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050370"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768512"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Uso de parámetros de la línea de comandos para instalar Visual Studio 2017
 
@@ -55,6 +55,7 @@ Las opciones de la línea de comandos se usan junto con el programa previo de in
 | `update` | Actualiza un producto instalado. |
 | `repair` | Repara un producto instalado. |
 | `uninstall` | Desinstala un producto instalado. |
+| `export` | **Novedades de 15.9**: exporta la selección de instalación en un archivo de configuración de la instalación. |
 
 | **Opción de instalación** | **Descripción** |
 | ----------------------- | --------------- |
@@ -74,6 +75,7 @@ Las opciones de la línea de comandos se usan junto con el programa previo de in
 | `--nickname <name>` | **Opcional**: esto define el alias que se va a asignar a un producto instalado. El alias no puede tener más de 10 caracteres.  |
 | `--productKey` | **Opcional**: esto define la clave del producto que se va a usar para un producto instalado. Se compone de 25 caracteres alfanuméricos en formato `xxxxx-xxxxx-xxxxx-xxxxx-xxxxx` o `xxxxxxxxxxxxxxxxxxxxxxxxx`. |
 | `--help, --?, -h, -?` | Muestra una versión sin conexión de esta página. |
+| `--config <path>` | **Opcional** y **nuevo en 15.9**: durante una operación de instalación o modificación, esto determina las cargas de trabajo y componentes que se agregarán en función de un archivo de configuración de instalación guardado anteriormente. Esta operación es aditiva y no quitará ninguna carga de trabajo o componente si no están presentes en el archivo. Además, no se agregarán los elementos que no se aplican al producto. Durante una operación de exportación, esto determina la ubicación para guardar el archivo de configuración de la instalación. |
 
 > Nota: Al especificar varias cargas de trabajo y componentes, debe repetir el modificador de la línea de comandos `--add` o `--remove` para cada elemento.
 

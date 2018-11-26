@@ -8,7 +8,7 @@ dev_langs:
 helpviewer_keywords:
 - coding conventions [EditorConfig]
 - EditorConfig coding conventions
-- language conventions [EditorConfig]
+- language code style rules [EditorConfig]
 - formatting conventions [EditorConfig]
 author: kuhlenh
 ms.author: gewarren
@@ -18,12 +18,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 237651c67cd2578b2b2a2e4ffade3f4c6d180d78
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: a54a3d6b967e7652c25e24922d7bd3b49141cc17
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967550"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769753"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Configuración de la convención de codificación de .NET para EditorConfig
 
@@ -35,7 +35,7 @@ En la parte final de este artículo encontrará un [archivo .editorconfig de eje
 
 Hay tres categorías de convención de codificación de .NET admitidas:
 
-- [Convenciones de lenguaje](#language-conventions)
+- [Estilos de código de idioma](#language-code-styles)
 
    Reglas relativas al lenguaje C# o Visual Basic. Por ejemplo, puede especificar reglas sobre el uso de `var` o tipos explícitos en la definición de variables o la preferencia por miembros con forma de expresión.
 
@@ -47,13 +47,13 @@ Hay tres categorías de convención de codificación de .NET admitidas:
 
    Reglas relacionadas con los nombres de los elementos de código. Por ejemplo, puede especificar que los métodos `async` deben terminar en "Async".
 
-## <a name="language-conventions"></a>Convenciones de lenguaje
+## <a name="language-code-styles"></a>Estilos de código de idioma
 
-Las reglas para las convenciones de lenguaje tienen el formato siguiente:
+Las reglas para los estilos de código de idioma tienen el siguiente formato:
 
 `options_name = false|true : none|silent|suggestion|warning|error`
 
-Para cada regla de convención de lenguaje, debe especificar **true** (se prefiere este estilo) o **false** (no se prefiere este estilo), y la **gravedad**. La gravedad especifica el nivel de cumplimiento para ese estilo.
+Para cada estilo de código de idioma, debe especificar **true** (se prefiere este estilo) o **false** (no se prefiere este estilo), y la **gravedad**. La gravedad especifica el nivel de cumplimiento para ese estilo.
 
 En la tabla siguiente se enumeran los valores de gravedad posibles y sus efectos:
 
@@ -65,7 +65,7 @@ Gravedad | Efecto
 `warning` | Cuando se infringe esta regla de estilo, se muestra una advertencia del compilador.
 `error` | Cuando se infringe esta regla de estilo, se muestra un error del compilador.
 
-En la lista siguiente se muestran las reglas de convención de lenguaje permitidas:
+En la siguiente lista se muestra la configuración de estilo de código de idioma permitida:
 
 - Configuración del estilo de código de .NET
     - [Los calificadores "This." y "Me."](#this_and_me)
@@ -2244,7 +2244,7 @@ dotnet_naming_symbols.constant_fields.applicable_accessibilities  = *
 dotnet_naming_symbols.constant_fields.required_modifiers          = const
 
 ###############################
-# C# Coding Conventions       #
+# C# Code Style Rules         #
 ###############################
 
 [*.cs]
@@ -2261,7 +2261,7 @@ csharp_style_expression_bodied_properties = true:none
 csharp_style_expression_bodied_indexers = true:none
 csharp_style_expression_bodied_accessors = true:none
 
-# Pattern matching preferences
+# Pattern-matching preferences
 csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 
@@ -2314,9 +2314,9 @@ csharp_space_between_method_call_empty_parameter_list_parentheses = false
 csharp_preserve_single_line_statements = true
 csharp_preserve_single_line_blocks = true
 
-###############################
-# VB Coding Conventions       #
-###############################
+##################################
+# Visual Basic Code Style Rules  #
+##################################
 
 [*.vb]
 # Modifier preferences
