@@ -1,7 +1,7 @@
 ---
-title: Análisis del uso de memoria sin el depurador de VS | Microsoft Docs
+title: Análisis del uso de memoria sin depuración | Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 09/28/2018
+ms.date: 11/15/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -14,192 +14,207 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fb3f0c5d44ed8043266640cfeb30838f7d37894
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 4dcc5c66998501044b04e4a8265d669927e3368a
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220780"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948938"
 ---
-# <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Análisis del uso de memoria sin el depurador de Visual Studio
-Puede usar la herramienta **Uso de memoria** sin depuración para lo siguiente:  
+# <a name="analyze-memory-usage-without-the-debugger"></a>Análisis del uso de memoria sin el depurador
+
+La herramienta **Uso de memoria** supervisa el uso de memoria de la aplicación. Puede usar la herramienta para estudiar los efectos en la memoria en tiempo real de los escenarios que esté desarrollando en Visual Studio. Puede tomar instantáneas detalladas de los estados de memoria de la aplicación y compararlas para determinar las causas de los problemas de memoria.  
   
-- Supervisar el uso de memoria de la aplicación directamente en Visual Studio mientras desarrolla un escenario.  
+La herramienta **Uso de memorial** puede ejecutarse con o sin el depurador. En las siguientes instrucciones se muestra cómo usar la herramienta **Uso de memoria** sin el depurador en el **Generador de perfiles de rendimiento** de Visual Studio. 
+
+>[!NOTE]
+>- Para medir el uso de memoria de una aplicación .NET Core, debe usar la herramienta **Uso de memoria** con el depurador. Para obtener instrucciones, vea [Uso de memoria de perfil en Visual Studio](memory-usage.md). 
+>- Para analizar el uso de memoria en aplicaciones de JavaScript o de UWP HTML, use la herramienta [Memoria de JavaScript](../profiling/javascript-memory.md) en **Generador de perfiles de rendimiento**.
   
-- Crear instantáneas detalladas del estado de la memoria de la aplicación.  
+## <a name="memory-usage-diagnostic-sessions"></a>Sesiones de diagnóstico de uso de memoria  
+
+**Para iniciar una sesión de diagnóstico de uso de memoria:**
+
+1. Abra en Visual Studio un proyecto de Windows universal (UWP) de C#.  
+   
+1. En la barra de menús, elija **Depurar** > **Generador de perfiles de rendimiento**.  
+   
+1. Seleccione **Uso de memoria** y después **Iniciar**.  
+   
+   ![Iniciar una sesión de diagnóstico de Uso de memoria](../profiling/media/memuse_start_diagnosticssession.png "Start a Memory Usage diagnostic session")  
   
-- Comparar instantáneas para localizar la causa raíz de problemas de memoria.  
+### <a name="monitor-memory-use"></a>Supervisar el uso de memoria 
+
+Al iniciar una sesión de diagnóstico, se inicia la aplicación y en la ventana **Herramientas de diagnóstico** se muestra un gráfico de escala de tiempo del uso de memoria de la aplicación.  
+
+![Página de información general de Uso de memoria](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")  
+
+En el gráfico de escala de tiempo se muestran las fluctuaciones de memoria mientras se ejecuta la aplicación. Los picos del gráfico suelen indicar que hay código recopilando o creando datos que luego descarta una vez que termina el procesamiento. Los picos acusados indican áreas que se podrían optimizar. Más preocupante es un aumento del consumo de memoria que no se devuelva, ya que podría indicar un uso de memoria ineficaz o incluso una fuga de la misma.  
   
-  Actualmente, para medir el uso de memoria de una aplicación .NET Core, debe usar la herramienta con el depurador adjunto. Para otras aplicaciones administradas y nativas, puede usar la herramienta ya sea con o sin el depurador adjunto. Las capturas de pantalla que aparecen en este tema muestran una aplicación XAML de UWP. Si desea analizar el uso de memoria en una aplicación UWP que usa JavaScript y HTML, consulte [Analizar el uso de memoria (JavaScript)](../profiling/javascript-memory.md).
+### <a name="take-snapshots-of-app-memory-states"></a>Tome instantáneas de los estados de memoria de la aplicación 
+
+Una aplicación usa un gran número de objetos, y es posible que quiera concentrar el análisis en un escenario. O bien, es posible que encuentre problemas de memoria para investigar. Puede tomar instantáneas durante una sesión de diagnóstico para capturar el uso de memoria en momentos concretos. Es buena idea obtener una instantánea de línea de base de una aplicación antes de la aparición del problema de memoria, otra tras la primera aparición del problema y varias más si puede repetir el escenario.  
+
+Para recopilar instantáneas, elija **Tomar instantánea** cuando quiera capturar los datos de memoria.  
+
+###  <a name="BKMK_Close_a_monitoring_session"></a> Cerrar la sesión de diagnóstico  
+
+Para detener una sesión de supervisión sin crear un informe, simplemente cierre la ventana de diagnóstico. Para generar un informe cuando haya terminado de recopilar o haya tomado instantáneas, haga clic en **Detener recopilación**.  
+
+![Detener recopilación](../profiling/media/memuse__stopcollection.png "Stop Collection")  
+
+##  <a name="memory-usage-reports"></a>Informes de uso de memoria 
+
+Una vez detenida la recopilación de datos, la herramienta **Uso de memoria** detiene la aplicación y muestra la página de información general **Uso de memoria**.  
+
+![Página de información general Uso de memoria](../profiling/media/memuse__reportoverview1.png "Memory Usage overview page")  
+
+### <a name="BKMK_Memory_Usage_snapshot_views"></a> Instantáneas de uso de memoria 
+
+Los números de los paneles de **Instantánea** muestran los bytes y objetos en memoria cuando se tomó cada instantánea y la diferencia entre la instantánea y la anterior. 
+
+Los números son vínculos que abren vistas de informes de **Uso de memoria** detalladas en nuevas ventanas de Visual Studio. Un [informe detallado de instantánea](#snapshot-details-report) muestra los tipos y las instancias en una instantánea. Un [informe de diferencias de instantáneas (diff)](#snapshot-difference-diff-reports) compara los tipos y las instancias en las dos instantáneas.  
   
-## <a name="start-a-memory-usage-diagnostic-session"></a>Iniciar una sesión de diagnóstico de Uso de memoria  
-  
-1.  Abra en Visual Studio un proyecto de Windows universal de C#.  
-  
-2.  En la barra de menús, elija **Depurar** > **Generador de perfiles de rendimiento**.  
-  
-3.  Seleccione **Uso de memoria** y después elija el botón **Iniciar** situado en la parte inferior de la página.  
-  
-     ![Iniciar una sesión de diagnóstico de Uso de memoria](../profiling/media/memuse_start_diagnosticssession.png "MEMUSE_Start_DiagnosticsSession")  
-  
-## <a name="monitor-memory-use"></a>Supervisar el uso de memoria  
- Aunque puede usar la herramienta **Uso de memoria** para generar informes detallados que puede usar para buscar y corregir errores, también puede usarlo para estudiar los efectos de memoria en tiempo real de un escenario que esté desarrollando.  
-  
- Al iniciar una sesión de diagnóstico, se inicia la aplicación y la ventana **Herramientas de diagnóstico** muestra un gráfico de escala de tiempo del uso de memoria de la aplicación.  
-  
- ![Página de información general de Uso de memoria](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")  
-  
- El gráfico de escala de tiempo muestra las fluctuaciones de memoria de la aplicación mientras se ejecuta. Los picos del gráfico suelen indicar que hay código recopilando o creando datos que luego descarta una vez que termina el procesamiento. Los picos acusados indican áreas que se podrían optimizar. Más preocupante es un aumento del consumo de memoria que no se devuelva, ya que podría indicar un uso de memoria ineficaz o incluso una fuga de la misma.  
-  
-###  <a name="BKMK_Close_a_monitoring_session"></a> Cerrar una sesión de supervisión  
- ![Detener la recopilación](../profiling/media/memuse__stopcollection.png "MEMUSE__StopCollection")  
-  
- Para detener una sesión de supervisión sin crear un informe, simplemente cierre la ventana de diagnóstico. Para generar un informe si ha tomado instantáneas de memoria, seleccione **Detener**.  
-  
-## <a name="take-snapshots-of-the-memory-state-of-your-app"></a>Hacer instantáneas del estado de memoria de la aplicación  
- Si detecta un problema de memoria que quiera investigar, puede tomar instantáneas durante la sesión de diagnóstico para capturar objetos de memoria en momentos concretos. Dado que una aplicación usa un gran número de muchos tipos de objetos, es posible que quiera concentrar el análisis en un escenario. También es buena idea obtener una instantánea de línea de base de la aplicación antes de la aparición del problema de memoria, otra tras la primera aparición del problema y una o varias más si puede repetir el escenario.  
-  
- Para recopilar instantáneas, inicie una nueva sesión de diagnóstico. Elija **Tomar instantánea** cuando quiera capturar los datos de memoria. Para generar un informe, seleccione **Detener**.  
-  
-##  <a name="memory-usage-overview-page"></a>Página de información general de Uso de memoria  
- Una vez detenida la recopilación de datos, la herramienta Uso de memoria detiene la aplicación y muestra el informe general.  
-  
- ![Página de información general de Uso de memoria](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")  
-  
-###  <a name="BKMK_Memory_Usage_snapshot_views"></a> Vistas de instantánea de uso de memoria  
- Para abrir informes detallados en nuevas ventanas de Visual Studio se usan vistas de instantánea. Hay dos tipos de vistas de instantánea:  
-  
-- Un [Informe detallado de instantánea](#snapshot-reports) muestra los tipos y las instancias en una instantánea.  
-  
-- Un [Informe de diferencias de instantáneas (diff)](#snapshot-difference-diff-reports) compara los tipos y las instancias en las dos instantáneas.  
-  
-  ![Enlaces de vista Instantánea](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
-  
-  Los elementos numerados de la imagen de la vista de instantánea son vínculos que abren vistas de informe de Uso de memoria.  
+  ![Vínculos de vista Instantánea](../profiling/media/memuse__snapshotview_numbered.png "Snapshot view links")  
   
 |||  
 |-|-|  
-|![Paso 1](../profiling/media/procguid_1.png "ProcGuid_1")|El texto del vínculo muestra el número total de bytes en memoria cuando se tomó la instantánea.<br /><br /> Seleccione este vínculo para mostrar un informe de detalles de instantánea ordenado por el tamaño total de las instancias de tipo.|  
-|![Paso 2](../profiling/media/procguid_2.png "ProcGuid_2")|El texto del vínculo muestra el número total de objetos en memoria cuando se tomó la instantánea.<br /><br /> Seleccione este vínculo para mostrar un informe de detalles de instantánea ordenado por el recuento de instancias de los tipos.|  
-|![Paso 3](../profiling/media/procguid_3.png "ProcGuid_3")|El texto del vínculo muestra la diferencia entre el tamaño total de objetos en memoria en el momento de esta instantánea y el tamaño total de la instantánea anterior.<br /><br /> Si el tamaño de memoria de esta instantánea es mayor que el de la anterior, el texto del vínculo es un número positivo, y es negativo si el tamaño es menor. El texto del vínculo **Línea de base** indica que esta instantánea es la primera de la sesión de diagnóstico; **Ninguna diferencia** indica que la diferencia es cero.<br /><br /> Seleccione este vínculo para mostrar un informe diferencial de instantánea ordenado por la diferencia en cuanto al tamaño total de instancias de los tipos.|  
-|![Paso 4](../profiling/media/procguid_4.png "ProcGuid_4")|El texto del vínculo muestra la diferencia entre el número total de objetos de memoria de esta instantánea y el número de objetos de la instantánea anterior.<br /><br /> Seleccione este vínculo para mostrar un informe diferencial de instantánea ordenado por la diferencia en cuanto al recuento total de instancias de los tipos.|  
+|![Paso 1](../profiling/media/procguid_1.png "ProcGuid_1")|El número total de bytes en memoria cuando se tomó la instantánea.<br /><br /> Haga clic en este vínculo para mostrar un informe de detalles de instantánea ordenado por el tamaño total de las instancias de tipo.|  
+|![Paso 2](../profiling/media/procguid_2.png "ProcGuid_2")|El número total de objetos en memoria cuando se tomó la instantánea.<br /><br /> Haga clic en este vínculo para mostrar un informe de detalles de instantánea ordenado por el recuento de instancias de los tipos.|  
+|![Paso 3](../profiling/media/procguid_3.png "ProcGuid_3")|La diferencia entre el tamaño total de los objetos de memoria de esta instantánea y de la instantánea anterior. <br /><br /> Un número positivo indica que el tamaño de memoria de esta instantánea es mayor que el de la anterior y un número negativo indica que el tamaño es menor. **Línea base** significa que una instantánea es la primera de una sesión de diagnóstico. **No hay diferencia** significa que la diferencia es cero.<br /><br /> Haga clic en este vínculo para mostrar un informe diferencial de instantánea ordenado por la diferencia en cuanto al tamaño total de instancias de los tipos.|  
+|![Paso 4](../profiling/media/procguid_4.png "ProcGuid_4")|La diferencia entre el número total de objetos de memoria de esta instantánea y de la instantánea anterior.<br /><br /> Haga clic en este vínculo para mostrar un informe diferencial de instantánea ordenado por la diferencia en cuanto al recuento total de instancias de los tipos.|  
   
-## <a name="snapshot-reports"></a>Informes de instantánea  
- ![Informe de instantánea de uso de memoria](../profiling/media/memuse_snapshotreport_all.png "MEMUSE_SnapshotReport_All")  
+## <a name="memory-usage-snapshot-reports"></a>Informes de instantáneas de Uso de memoria 
+
+<a name="BKMK_Snapshot_report_trees"></a> Cuando hace clic en uno de los vínculos de instantánea en la página de información general **Uso de memoria**, se abre un informe de instantáneas en una página nueva. 
+
+![Informe de instantáneas de Uso de memoria](../profiling/media/memuse_snapshotreport_all.png "Memory Usage snapshot report")  
   
-###  <a name="BKMK_Snapshot_report_trees"></a> Árboles de informe de instantánea  
+En un informe de instantáneas, puede expandir las entradas de **Tipo de objeto** para mostrar entradas secundarias. Los nombres de instancia son identificadores únicos generados por la herramienta Uso de memoria. 
+
+Si un **Tipo de objeto** es de color azul, puede seleccionarlo para navegar hasta el objeto en el código fuente en una ventana independiente.  
+
+Los tipos que no pueda identificar o cuya participación en el código no comprenda probablemente son objetos de compilador, de .NET Framework, o del sistema operativo. La herramienta **Uso de memoria** muestra estos objetos si están implicados en las cadenas de propiedad de los objetos.  
+
+En el informe de instantáneas: 
+
+- El árbol del **Montón administrado** muestra los tipos e instancias del informe. Al seleccionar un tipo o una instancia se muestran los árboles **Rutas de acceso al nodo raíz** y **Objetos a los que se hace referencia** para el elemento seleccionado.  
   
-####  <a name="BKMK_Managed_Heap"></a> Montón administrado  
- El árbol de montón administrado [árbol de Montón administrado (detalles de instantánea)](../profiling/memory-usage-without-debugging2.md#BKMK_Managed_Heap_tree__Snapshot_details_) y el [árbol Montón administrado (diferencias de instantáneas)](../profiling/memory-usage-without-debugging2.md#BKMK_Managed_Heap_tree__Snapshot_diff_) muestran los tipos y las instancias en el informe. Al seleccionar un tipo o una instancia se muestran los árboles **Rutas de acceso al nodo raíz** y **Objetos a los que se hace referencia** para el elemento seleccionado.  
+- El árbol **Ruta de acceso al nodo raíz** muestra la cadena de objetos que hace referencia a un tipo o una instancia. El recolector de elementos no utilizados de .NET Framework borra un objeto de la memoria únicamente si todas las referencias a él se han liberado.  
   
-####  <a name="BKMK_Paths_to_Root"></a> Rutas de acceso al nodo raíz  
- El [árbol Rutas de acceso al nodo raíz (detalles de instantánea)](../profiling/memory-usage-without-debugging2.md#BKMK_Paths_to_Root_tree__Snapshot_details_) y el [árbol Rutas de acceso al nodo raíz (diferencias de instantáneas)](../profiling/memory-usage-without-debugging2.md#BKMK_Paths_to_Root_tree__Snapshot_diff_) muestran la cadena de objetos que hace referencia al tipo o a la instancia. El recolector de elementos no utilizados de .NET Framework borra un objeto de la memoria únicamente si todas las referencias a él se han liberado.  
-  
-####  <a name="BKMK_Referenced_Objects"></a> Objetos a los que se hace referencia  
- El [árbol Objetos a los que se hace referencia (detalles de instantánea)](../profiling/memory-usage-without-debugging2.md#BKMK_Referenced_Objects_tree__Snapshot_details_) y el [árbol Objetos a los que se hace referencia (diferencias de instantáneas)](../profiling/memory-usage-without-debugging2.md#BKMK_Referenced_Objects_tree__Snapshot_diff_) muestran los objetos a los que hace referencia el tipo o la instancia seleccionados.  
-  
-###  <a name="BKMK_Object_Type_and_Instance_fields"></a> Campos Tipo de objeto e Instancia  
- Cuando una entrada **Tipo de objeto** tiene entradas secundarias, puede elegir el icono de flecha para mostrarlas. Si el color del texto de **Tipo de objeto** es azul, puede elegirlo para ir al objeto en su archivo de código fuente. El archivo de código fuente se abre en una ventana independiente.  
-  
- Los nombres de instancia son identificadores únicos generados por la herramienta Uso de memoria.  
-  
- Si observa un tipo que no puede identificar fácilmente o que no sabe cómo interactúa con el código, es probable que sea un objeto de .NET Framework, del sistema operativo o del compilador que muestra la herramienta Uso de memoria porque está implicado en las cadenas de propiedad de los objetos.  
+- En el árbol **Tipos a los que se hace referencia** u **Objetos a los que se hace referencia** se muestran los objetos a los que hace referencia el tipo o instancia seleccionado.  
   
 ###  <a name="BKMK_Report_tree_filters_"></a> Filtros de árbol de informes  
- La mayoría de las aplicaciones contiene un número de tipos asombrosamente grande, la mayor parte de los cuales no resulta muy interesante para el desarrollador de aplicaciones. La herramienta **Uso de memoria** define dos filtros que se pueden usar para ocultar la mayoría de estos tipos en los árboles **Montón administrado** y **Rutas de acceso al nodo raíz**. También es posible filtrar un árbol por nombre de tipo.  
+
+Muchos tipos de aplicaciones no son muy interesantes para los desarrolladores de aplicaciones. Los filtros de informe de instantáneas pueden ocultar la mayoría de estos tipos en los árboles **Montón administrado** y **Rutas de acceso a la raíz**.   
+
+![Opciones de ordenar y filtrar](../profiling/media/memuse_sortandfilter.png "MEMUSE_SortAndFilter")  
+
+- <a name="BKMK_Filter"></a> Para filtrar un árbol por nombre de tipo, escriba el nombre en el cuadro **Filtro**. El filtro no distingue mayúsculas de minúsculas y reconoce la cadena especificada en cualquier parte de los nombres de tipo.  
   
- ![Opciones de ordenar y filtrar](../profiling/media/memuse_sortandfilter.png "MEMUSE_SortAndFilter")  
+- <a name="BKMK_Collapse_Small_Objects"></a> Seleccione **Contraer pequeños objetos** en la lista desplegable **Filtro** para ocultar aquellos tipos cuyo **Tamaño (Bytes)** es inferior al 0,5 por ciento de la memoria total.  
   
-####  <a name="BKMK_Filter"></a> Filtrar  
- Escriba una cadena en el cuadro **Filtrar** para restringir las vistas del árbol a tipos que contengan el texto especificado. El filtro no distingue mayúsculas de minúsculas y reconoce la cadena especificada en cualquier parte de los nombres de tipo.  
-  
-####  <a name="BKMK_Collapse_Small_Objects"></a> Contraer objetos pequeños  
- Si se aplica este filtro, aquellos tipos cuyo **Tamaño (bytes)** sea inferior al 0,5 por ciento del tamaño total de la memoria de instantánea se ocultan en la lista **Montón administrado**.  
-  
-####  <a name="BKMK_Just_My_Code"></a> Solo mi código  
- El filtro **Solo mi código** oculta la mayoría de las instancias generadas por código externo. Los tipos externos son propiedad del sistema operativo o de componentes de Framework o son generados por el compilador.  
+- <a name="BKMK_Just_My_Code"></a> Seleccione **Solo mi código** en la lista desplegable **Filtro** para ocultar la mayoría de las instancias generadas por código externo. Los tipos externos pertenecen al sistema operativo o a componentes de Framework, o son generados por el compilador.  
   
 ## <a name="snapshot-details-reports"></a>Informes de detalles de instantánea  
- El informe de detalles de instantánea se usa para centrarse en una instantánea de una sesión de diagnóstico. Para abrir un informe de detalles, elija uno de los vínculos de una vista de instantánea, tal como se muestra en la siguiente imagen. Ambos vínculos abren el mismo informe, la única diferencia es el orden de inicio del árbol **Montón administrado** en el informe. En ambos casos, se puede cambiar el orden después de abrir el informe.  
+
+ Un informe de detalles de instantánea describe una instantánea de una sesión de diagnóstico. Para abrir el informe, haga clic en el vínculo de tamaño o de objetos en un panel de instantánea. 
+
+ ![Vínculos a un informe de instantánea en un panel de instantánea](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "Links to snapshot report in a snapshot pane")  
   
- ![Vínculos al informe de instantánea en una vista de instantánea](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
+Ambos vínculos abren el mismo informe. La única diferencia es el orden de inicio del árbol **Montón administrado**. El vínculo de tamaño ordena el informe por la columna **Tamaño inclusivo (bytes)**. El vínculo Objetos ordena el informe por la columna **Recuento**. Puede cambiar la columna por la que se ordena o el orden después de abrir el informe.  
   
--   El vínculo **MB** ordena el informe por la columna **Tamaño inclusivo (bytes)**.  
+###  <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> Árbol Montón administrado (informes de detalles de instantánea)  
+ El árbol **Montón administrado** enumera los tipos de objetos retenidos en memoria. Expanda un nombre de tipo para ver las diez mayores instancias del tipo, ordenadas por tamaño. Haga clic en un tipo o una instancia para mostrar los árboles **Rutas de acceso al nodo raíz** y **Objetos a los que se hace referencia** para el elemento seleccionado.  
   
--   El vínculo **Objetos** ordena el informe por la columna **Recuento**.  
+ ![Árbol Montón administrado](../profiling/media/memuse__snapshotdetails_managedheaptree.png "Managed Heap tree")  
   
-###  <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> Árbol Montón administrado (detalles de instantánea)  
- El árbol **Montón administrado** enumera los tipos de objetos retenidos en memoria. Puede expandir un nombre de tipo para ver las diez mayores instancias del tipo, ordenadas por tamaño. Al seleccionar un tipo o una instancia se muestran los árboles **Rutas de acceso al nodo raíz** y **Objetos a los que se hace referencia** para el elemento seleccionado.  
-  
- ![Árbol Montón administrado](../profiling/media/memuse__snapshotdetails_managedheaptree.png "MEMUSE__SnapshotDetails_ManagedHeapTree")  
-  
+El árbol **Montón administrado** en un informe de detalles de instantánea tiene las siguientes columnas:
+
 |||  
 |-|-|  
 |**Tipo de objeto**|Nombre del tipo o instancia del objeto.|  
-|**Recuento**|Número de instancias del objeto del tipo. Para una instancia el número siempre es 1.|  
-|**Tamaño (bytes)**|Para un tipo, tamaño de todas las instancias del tipo en la instantánea de memoria, sin incluir el tamaño de objetos incluidos en las instancias.<br /><br /> Para una instancia, tipo, tamaño del objeto sin incluir el tamaño de objetos incluidos en la instancia. instancias.|  
-|**Tamaño inclusivo (bytes)**|Tamaño de las instancias del tipo o tamaño de una única instancia, incluso el tamaño de los objetos incluidos.|  
+|**Recuento**|Número de instancias del objeto del tipo. **Recuento** siempre es 1 para una instancia.|  
+|**Tamaño (bytes)**|Para un tipo, el tamaño de todas las instancias del tipo en la instantánea, sin incluir el tamaño de objetos incluidos en las instancias.<br /><br /> Para una instancia, el tamaño del objeto sin incluir el tamaño de objetos incluidos en la instancia. |  
+|**Tamaño inclusivo (bytes)**|El tamaño de las instancias del tipo o el tamaño de una única instancia, incluso el tamaño de los objetos incluidos.|  
+|**Módulo**|El módulo que contiene este objeto.|  
   
-###  <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Rutas de acceso al árbol raíz (detalles de instantánea)  
- El árbol **Ruta de acceso al nodo raíz** muestra la cadena de objetos que hace referencia al tipo o instancia. El recolector de elementos no utilizados de .NET Framework borra un objeto de la memoria únicamente si todas las referencias a él se han liberado.  
+###  <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Rutas de acceso al árbol raíz (informes de detalles de instantánea)  
+El árbol **Ruta de acceso al nodo raíz** muestra la cadena de objetos que hace referencia a un tipo o una instancia. El recolector de elementos no utilizados de .NET Framework borra un objeto de la memoria únicamente si todas las referencias a él se han liberado.  
   
- ![Árbol Ruta de acceso al nodo raíz para tipos](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "MEMUSE_SnapshotDetails_Type_PathsToRootTree")  
+Para un tipo en el árbol **Rutas de acceso al nodo raíz**, el número de objetos que contienen referencias a ese tipo se muestra en la columna **Recuento de referencias**. 
+
+![Árbol Rutas de acceso al nodo raíz para los tipos](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "Paths to Root tree for types")  
   
- Cuando ve un tipo en el árbol **Rutas de acceso al nodo raíz**, el número de objetos de los tipos que retienen referencias a ese tipo se muestra en la columna **Recuento de referencias**. La columna no aparece al analizar una instancia.  
+###  <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> Árboles Tipos a los que se referencia u Objetos a los que se hace referencia (informes de detalles de instantánea)  
+En el árbol **Tipos a los que se hace referencia** u **Objetos a los que se hace referencia** se muestran los objetos a los que hace referencia el tipo o instancia seleccionado.  
   
-###  <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> Árbol Objetos a los que se hace referencia (detalles de instantánea)  
- El árbol **Objetos a los que se hace referencia** muestra los objetos a los que hace referencia el tipo o instancia seleccionado.  
+![Árbol de objetos a los que se hace referencia para instancias](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "Referenced Objects tree for instances")  
   
- ![Árbol Objetos a los que se hace referencia para instancias](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
-  
+El árbol **Tipos a los que se hace referencia** en un informe de detalles de instantánea tiene las siguientes columnas. Un árbol **Objetos a los que se hace referencia** no tiene la columna **Recuento de referencias**.
+
 |||  
 |-|-|  
-|**Tipo o instancia de objeto**|Nombre del tipo o instancia del objeto.|  
-|**Tamaño (bytes)**|Para un tipo, tamaño de todas las instancias del tipo, sin incluir el tamaño de objetos incluidos en el tipo.<br /><br /> Para una instancia, tamaño del objeto sin incluir el tamaño de objetos incluidos en el objeto.|  
-|**Tamaño inclusivo (bytes)**|Tamaño de las instancias del tipo o tamaño de la instancia, incluso el tamaño de los objetos incluidos.|  
+|**Tipo de objeto** o **Instancia**|El nombre del tipo o instancia.|  
+|**Recuento de referencias**|Para los tipos, el número de instancias del objeto del tipo.|  
+|**Tamaño (bytes)**|Para un tipo, el tamaño de todas las instancias del tipo, sin incluir el tamaño de objetos incluidos en el tipo.<br /><br /> Para una instancia, el tamaño del objeto sin incluir el tamaño de objetos incluidos en el objeto.|  
+|**Tamaño inclusivo (bytes)**|El tamaño de las instancias del tipo o tamaño de la instancia, incluyendo el tamaño de los objetos incluidos.|  
+|**Módulo**|El módulo que contiene este objeto.|  
   
 ## <a name="snapshot-difference-diff-reports"></a>Informes de diferencias de instantánea  
- Un informe de diferencias de instantánea muestra los cambios entre una instantánea principal y la tomada inmediatamente antes. Para abrir un informe de diferencias, elija uno de los vínculos de una vista de instantánea, tal como se muestra en la siguiente imagen. Ambos vínculos abren el mismo informe, la única diferencia es el orden de inicio del árbol **Montón administrado** en el informe. Puede cambiar el orden después de abrir el informe.  
+
+Un informe de diferencias de instantánea muestra los cambios entre una instantánea principal y la anterior. Para abrir un informe de diferencias, haga clic en uno de los vínculos de diferencia en un panel de la instantánea. 
+
+Ambos vínculos abren el mismo informe. La única diferencia es el orden de inicio del árbol **Montón administrado** en el informe. El vínculo de tamaño ordena el informe por la columna **Diferencias de tamaño inclusivo (bytes)**. El vínculo Objetos ordena el informe por la columna **Diferencias de recuento**. Puede cambiar la columna por la que se ordena o el orden después de abrir el informe.  
   
- ![Vínculos al informe de diferencias en una vista de instantánea](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDiffLinks")  
+ ![Vínculos a un informe de diferencias en un panel de instantánea](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "Links to difference report in a snapshot pane")  
   
--   El vínculo **MB** ordena el informe por la columna **Tamaño inclusivo (bytes)**.  
+###  <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> Árbol Montón administrado (informes de diferencias de instantánea) 
+
+ El árbol **Montón administrado** enumera los tipos de objetos retenidos en memoria. Puede expandir un nombre de tipo para ver las diez mayores instancias del tipo, ordenadas por tamaño. Haga clic en un tipo o una instancia para mostrar los árboles **Rutas de acceso al nodo raíz** y **Objetos a los que se hace referencia** para el elemento seleccionado.  
   
--   El vínculo **Objetos** ordena el informe por la columna **Recuento**.  
+ ![Árbol Montón administrado para un tipo en el informe de diferencias](../profiling/media/memuse_snapshotdiff_type_heap.png "Managed Heap tree for a type in difference report")  
   
-###  <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> Árbol Montón administrado (diferencias de instantánea)  
- El árbol **Montón administrado** enumera los tipos de objetos retenidos en memoria. Puede expandir un nombre de tipo para ver las diez mayores instancias del tipo, ordenadas por tamaño. Al seleccionar un tipo o una instancia se muestran los árboles **Rutas de acceso al nodo raíz** y **Objetos a los que se hace referencia** para el elemento seleccionado.  
-  
- ![Árbol Montón administrado para un tipo en un informe de diferencias](../profiling/media/memuse_snapshotdiff_type_heap.png "MEMUSE_SnapshotDiff_Type_Heap")  
-  
- Tenga en cuenta que en la imagen se han contraído las columnas **Recuento**, **Tamaño (bytes)** y **Tamaño inclusivo (bytes)**.  
-  
+El árbol **Montón administrado** en un informe de diferencias de instantánea tiene las siguientes columnas:
+
 |||  
 |-|-|  
 |**Tipo de objeto**|Nombre del tipo o instancia del objeto.|  
 |**Recuento**|Número de instancias de un tipo en la instantánea principal. **Recuento** siempre es 1 para una instancia.|  
 |**Diferencia de recuento**|Para un tipo, diferencia en cuanto al número de instancias del tipo entre la instantánea principal y la anterior. Para una instancia el campo está en blanco.|  
-|**Tamaño (bytes)**|Tamaño de los objetos de la instantánea principal, sin incluir el tamaño de los objetos incluidos en los objetos. Para un tipo, **Tamaño (bytes)** y **Tamaño inclusivo (bytes)** son los totales de los tamaños de las instancias del tipo.|  
-|**Diferencia de tamaño total (bytes)**|Para un tipo, diferencia en el tamaño total de instancias del tipo entre la instantánea principal y la anterior, sin incluir el tamaño de objetos incluidos en las instancias. Para una instancia el campo está en blanco.|  
-|**Tamaño inclusivo (bytes)**|Tamaño de los objetos de la instantánea principal, incluso el tamaño de los objetos incluidos en los objetos.|  
-|**Diferencia de tamaño inclusivo (bytes)**|Para un tipo, diferencia en el tamaño de todas las instancias del tipo entre la instantánea principal y la anterior, incluso el tamaño de objetos incluidos en los objetos. Para una instancia el campo está en blanco.|  
+|**Tamaño (bytes)**|El tamaño de los objetos de la instantánea principal, sin incluir el tamaño de los objetos en los objetos. Para un tipo, **Tamaño (bytes)** y **Tamaño inclusivo (bytes)** son los totales de los tamaños de las instancias del tipo.|  
+|**Diferencia de tamaño total (bytes)**|Para un tipo, la diferencia en el tamaño total de instancias del tipo entre la instantánea principal y la anterior, sin incluir el tamaño de objetos en las instancias. Para una instancia el campo está en blanco.|  
+|**Tamaño inclusivo (bytes)**|El tamaño de los objetos de la instantánea principal, incluyendo el tamaño de los objetos en los objetos.|  
+|**Diferencia de tamaño inclusivo (bytes)**|Para un tipo, la diferencia en el tamaño de todas las instancias del tipo entre la instantánea principal y la anterior, incluyendo el tamaño de objetos en los objetos. Para una instancia el campo está en blanco.|  
+|**Módulo**|El módulo que contiene este objeto.|  
   
-###  <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Árbol Rutas de acceso al nodo raíz (diferencias de instantánea)  
- El árbol **Ruta de acceso al nodo raíz** muestra la cadena de objetos que hace referencia al tipo o instancia. El recolector de elementos no utilizados de .NET Framework borra un objeto de la memoria únicamente si todas las referencias a él se han liberado.  
+###  <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Árbol Rutas de acceso al nodo raíz (informes de diferencias de instantánea)  
+
+El árbol **Ruta de acceso al nodo raíz** muestra la cadena de objetos que hace referencia a un tipo o una instancia. El recolector de elementos no utilizados de .NET Framework borra un objeto de la memoria únicamente si todas las referencias a él se han liberado. 
+
+Para un tipo en el árbol **Rutas de acceso al nodo raíz**, el número de objetos que contienen referencias a ese tipo se muestra en la columna **Recuento de referencias**. La diferencia de recuento con respecto a la instantánea anterior está en la columna **Diferencia de referencia**. 
+
+ ![Árbol Rutas de acceso al nodo raíz en un informe de diferencias](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "Paths To Root tree in a diff report")  
   
- ![El árbol Ruta de acceso al nodo raíz para instancias en una vista de diferencias](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "MEMUSE_SnapshotDiff_PathsToRoot_Instance_All")  
-  
-###  <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> Árbol Objetos a los que se hace referencia (diferencias de instantánea)  
- El árbol **Objetos a los que se hace referencia** muestra los objetos a los que hace referencia el tipo o instancia principal.  
-  
- ![Árbol Objetos a los que se hace referencia para instancias](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
-  
+###  <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> Árboles Tipos a los que se referencia u Objetos a los que se hace referencia (informes de diferencias de instantánea)  
+
+En el árbol **Tipos a los que se hace referencia** u **Objetos a los que se hace referencia** se muestran los objetos a los que hace referencia el tipo o instancia seleccionado.  
+
+![Tipos a los que se hace referencia en un informe de diferencias](../profiling/media/memuse_snapshotdiff_referencedtypes.png "Referenced Types in a diff report")  
+
+El árbol **Tipos a los que se hace referencia** en un informe de diferencias de instantánea tiene las siguientes columnas. Un árbol **Objetos a los que se hacer referencia** tiene las columnas **Instancia**, **Tamaño (Bytes)**, **Tamaño inclusivo (Bytes)** y **Módulo**.
+
 |||  
 |-|-|  
-|**Tipo o instancia de objeto**|Nombre del tipo o instancia del objeto.|  
-|**Tamaño (bytes)**|Para una instancia, tamaño del objeto en la instantánea principal, sin incluir el tamaño de objetos incluidos en la instancia.<br /><br /> Para un tipo, tamaño total de las instancias del tipo en la instantánea principal, sin incluir el tamaño de objetos incluidos en la instancia.|  
-|**Tamaño inclusivo (bytes)**|Tamaño de los objetos de la instantánea principal, incluso el tamaño de los objetos incluidos en los objetos.|  
-  
+|**Tipo de objeto** o **Instancia**|Nombre del tipo o instancia del objeto.|  
+|**Recuento de referencias**|Número de instancias de un tipo en la instantánea principal.|  
+|**Diferencia de recuento de referencias**|Para un tipo, diferencia en cuanto al número de instancias del tipo entre la instantánea principal y la anterior.|  
+|**Tamaño (bytes)**|El tamaño de los objetos de la instantánea principal, sin incluir el tamaño de los objetos en los objetos. Para un tipo, **Tamaño (bytes)** y **Tamaño inclusivo (bytes)** son los totales de los tamaños de las instancias del tipo.|  
+|**Diferencia de tamaño total (bytes)**|Para un tipo, la diferencia en el tamaño total de instancias del tipo entre la instantánea principal y la anterior, sin incluir el tamaño de objetos en las instancias. |  
+|**Tamaño inclusivo (bytes)**|El tamaño de los objetos de la instantánea principal, incluyendo el tamaño de los objetos en los objetos.|  
+|**Diferencia de tamaño inclusivo (bytes)**|Para un tipo, la diferencia en el tamaño de todas las instancias del tipo entre la instantánea principal y la anterior, incluyendo el tamaño de objetos en los objetos.|  
+|**Módulo**|El módulo que contiene este objeto.|  
+
 ## <a name="see-also"></a>Vea también  
  [Memoria de JavaScript](../profiling/javascript-memory.md)  
  [Generación de perfiles en Visual Studio](../profiling/index.md)  

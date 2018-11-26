@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c10032bf12060c8c5e42f93f6596fe576adfccf
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: fa998896ad4c67bcd9e10ee50b4939bdbf915330
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612680"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257373"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Cómo depurar para principiantes sin experiencia
 
@@ -80,7 +80,7 @@ A continuación, crearemos una aplicación que tiene algunos errores.
 
 1. Debe tener instalado Visual Studio y la carga de trabajo **Desarrollo de escritorio de .NET** o la carga de trabajo **Desarrollo multiplataforma de .NET Core**, según el tipo de aplicación que desee crear.
 
-    Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita.
+    Si todavía no ha instalado Visual Studio, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  para instalarlo de forma gratuita.
 
     Si tiene que instalar la carga de trabajo pero ya tiene Visual Studio, haga clic en **Herramientas** > **Obtener herramientas y características**. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** (o la carga de trabajo **Desarrollo multiplataforma de .NET Core**) y después elija **Modificar**.
 
@@ -325,11 +325,11 @@ Cuando encuentre la región de código con el problema, utilice el depurador par
 * Compruebe si la aplicación está ejecutando el código que espera. (Por ejemplo, en la aplicación de ejemplo, se esperaba que el código de la instrucción de conmutador estableciese el tipo de galaxia en irregular, pero la aplicación omitió el código debido al error de escritura).
 
 > [!TIP]
-> Use un depurador para ayudarle a encontrar errores. Una herramienta de depuración puede encontrar errores *automáticamente* solo si conoce la intención del código. Una herramienta solo puede saber la intención del código si usted, la persona que desarrolla, expresa dicha intención. Puede hacerlo escribiendo [pruebas unitarias](../test/improve-code-quality.md).
+> Use un depurador para ayudarle a encontrar errores. Una herramienta de depuración puede encontrar errores *automáticamente* solo si conoce la intención del código. Una herramienta solo puede saber la intención del código si usted, la persona que desarrolla, expresa dicha intención. Puede hacerlo escribiendo [pruebas unitarias](../test/improve-code-quality.md). 
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-En este artículo, ha aprendido algunos conceptos generales de depuración. A continuación, puede empezar a aprender a depurar con Visual Studio.
+En este artículo, ha aprendido algunos conceptos generales de depuración. A continuación, puede empezar a aprender más sobre el depurador.
 
 > [!div class="nextstepaction"]
 > [Información sobre cómo depurar con Visual Studio](../debugger/getting-started-with-the-debugger.md)

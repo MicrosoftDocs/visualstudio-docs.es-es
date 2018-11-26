@@ -5,19 +5,19 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 11/06/2018
+ms.date: 11/19/2018
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 46d19383738846cfef0fc0e389ec13e044adce92
-ms.sourcegitcommit: 21407c19d933bacf6bb4a75d9337cdd245da1680
+ms.openlocfilehash: 19223bf7c2a0c1645842aa57476af283f3e0d1f1
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2018
-ms.locfileid: "51273147"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257334"
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Números de compilación y fechas de lanzamiento de Visual Studio 2017
 
@@ -25,6 +25,10 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de l
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.2 | Versión | 19 de noviembre de 2018 | 15.9.28307.108 |
+| 15.9.1 | Versión | 15 de noviembre de 2018 | 15.9.28307.105 |
+| 15.9.0 | Versión | 13 de noviembre de 2018 | 15.9.28307.53 |
+| 15.9.0 (versión preliminar 6) | Vista previa | 13 de noviembre de 2018 | 15.9.28307.53 |
 | 15.9.0 (versión preliminar 5) | Vista previa | 6 de noviembre de 2018 | 15.9.28302.56 |
 | 15.8.9 | Versión | 2 de noviembre de 2018 | 15.8.28010.2050 |
 | 15.8.8 | Versión | 24 de octubre de 2018 | 15.8.28010.2048 |
