@@ -10,20 +10,20 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <appAddin> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0defe437e0778ee9d3c134148a3ca7e4b4cd2ef9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 572de1a3fccf9b66000d82e14f7895ab5cf0029f
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34264667"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304877"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt; elemento (desarrollo de Office en Visual Studio)
-  El **appAddin** elemento de la `vstov4` espacio de nombres almacena información específica de la personalización de complementos VSTO.  
+  El **appAddin** elemento de la `vstov4` espacio de nombres almacena información específica de la personalización para complementos VSTO.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,16 +38,16 @@ ms.locfileid: "34264667"
 </appAddin>  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementos y atributos  
+## <a name="elements-and-attributes"></a>Los elementos y atributos  
  El **appAddin** elemento es necesario y se encuentra en la `vstov4` espacio de nombres. Solo hay un **appAddin** elemento definido en un manifiesto de aplicación.  
   
- El **appAddin** elemento tiene los atributos siguientes.  
+ El **appAddin** elemento tiene los siguientes atributos.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
 |**Aplicación**|Requerido. Identifica la aplicación de Microsoft Office. El valor puede ser uno de los siguientes: Excel, InfoPath, Outlook, PowerPoint, Project, Visio o Word.|  
-|**loadBehavior**|Opcional. De forma predeterminada, el **loadBehavior** se habilita al establecer este valor en. Para la depuración, el complemento de VSTO puede deshabilitarse si establece el valor en dos. Para obtener más información, vea la tabla denominada LoadBehavior Values en [entradas del registro para complementos VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|  
-|**keyName**|Requerido. Este valor es el nombre de clave del Registro que la aplicación utilizará para cargar el complemento de VSTO. Para obtener más información, consulte [entradas del registro para complementos VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|  
+|**LoadBehavior**|Opcional. De forma predeterminada, el **loadBehavior** se habilita al establecer este valor. Para la depuración, el complemento de VSTO puede deshabilitarse si establece el valor en dos. Para obtener más información, vea la tabla denominada LoadBehavior Values en [entradas del registro para complementos VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|  
+|**nombre de clave**|Requerido. Este valor es el nombre de clave del Registro que la aplicación utilizará para cargar el complemento de VSTO. Para obtener más información, consulte [entradas del registro para complementos VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|  
   
  El **appAddin** elemento tiene los siguientes elementos secundarios.  
   
@@ -60,10 +60,10 @@ ms.locfileid: "34264667"
 ### <a name="formregions"></a>formRegions  
  Solo es obligatorio para los complementos de VSTO de Outlook que incluyan áreas del formulario. El **formRegions** elemento se explica en [ &#60;formRegions&#62; elemento &#40;desarrollo de Office en Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md).  
   
-## <a name="vsto-add-in-example"></a>Ejemplo para complemento de VSTO  
+## <a name="vsto-add-in-example"></a>Ejemplo de complemento de VSTO  
   
 ### <a name="description"></a>Descripción  
- En el ejemplo de código siguiente se muestra **appAddin** elementos en una solución de Outlook implementada mediante [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md).  
+ El siguiente ejemplo de código ilustra **appAddin** elementos en una solución de Outlook implementada mediante [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Código  
   
