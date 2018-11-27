@@ -13,17 +13,17 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio]
 - smart documents [Office development in Visual Studio]
 - user controls [Office development in Visual Studio], actions panes
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e62f13d0c947ef8f1a9cfdd014f5c03b194ea71d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e8c7136c1f97f531600799f3aede30170813cf0a
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908358"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305681"
 ---
 # <a name="actions-pane-overview"></a>Información general sobre el panel de acciones
   Un panel de acciones es un **acciones de documentos** panel de tareas que se adjunta a un documento específico de Microsoft Office Word o un libro de Microsoft Office Excel. El panel de acciones se hospeda en el panel de tareas de Office junto con otros paneles de tareas integrados, como el **origen XML** panel de tareas de Excel o el **estilos y formato** panel de tareas en Word. Puede utilizar controles de Windows Forms o WPF para diseñar la interfaz de usuario del panel de acciones.

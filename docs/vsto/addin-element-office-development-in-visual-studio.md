@@ -12,20 +12,20 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <addIn> element
 - addin element
 - <addin> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1d2ab0264452630892d492946462fbf9ad1639d0
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: bb2161cbc6633163ba8fba3f8eb678cb0ad72333
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262387"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304472"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;AddIn&gt; elemento (desarrollo de Office en Visual Studio)
-  El **addin** elemento de la `vstav3` espacio de nombres contiene información específica para las personalizaciones de nivel de documento desarrolladas con Visual Studio y los complementos de VSTO para Microsoft Office.  
+  El **addin** elemento de la `vstav3` espacio de nombres contiene información específica para las personalizaciones de nivel de documento desarrolladas con Visual Studio y los complementos de VSTO de Microsoft Office.  
 
 ## <a name="syntax"></a>Sintaxis  
 
@@ -51,7 +51,7 @@ ms.locfileid: "34262387"
 </addIn>  
 ```  
 
-## <a name="elements-and-attributes"></a>Elementos y atributos  
+## <a name="elements-and-attributes"></a>Los elementos y atributos  
  El **addin** elemento de la `vstav3` espacio de nombres contiene información sobre la solución de Office y la aplicación de Microsoft Office. Este elemento debe estar en el espacio de nombres siguiente: `vstav3=urn:schemas-microsoft-com:vsta.v3`. Los elementos secundarios también deben estar en este espacio de nombres.  
 
  El elemento `addin` no tiene atributos.  
@@ -73,7 +73,7 @@ ms.locfileid: "34262387"
 ## <a name="document-level-customization-example"></a>Ejemplo de personalización de nivel de documento  
 
 ### <a name="description"></a>Descripción  
- En el ejemplo de código siguiente se muestra la **addin** elemento en una solución de Office de nivel de documento que se implementa mediante [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md).  
+ En el ejemplo de código siguiente se ilustra la **addin** elemento en una solución de Office de nivel de documento que se implementa mediante [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md).  
 
 ### <a name="code"></a>Código  
 
@@ -134,10 +134,10 @@ ms.locfileid: "34262387"
 </vstav3:addIn>  
 ```  
 
-## <a name="vsto-add-in-example"></a>Ejemplo para complemento de VSTO  
+## <a name="vsto-add-in-example"></a>Ejemplo de complemento de VSTO  
 
 ### <a name="description"></a>Descripción  
- En el ejemplo de código siguiente se muestra la **addin** elemento en una solución de Office de nivel de aplicación que se implementa mediante [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md).  
+ En el ejemplo de código siguiente se ilustra la **addin** elemento en una solución de Office de nivel de aplicación que se implementa mediante [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md).  
 
 ### <a name="code"></a>Código  
 
