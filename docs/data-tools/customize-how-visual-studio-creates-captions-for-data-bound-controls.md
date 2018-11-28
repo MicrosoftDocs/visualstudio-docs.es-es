@@ -1,5 +1,5 @@
 ---
-title: Personalizar el modo en que Visual Studio crea los títulos de controles enlazados a datos
+title: Personalizar títulos para los controles enlazados a datos
 ms.date: 11/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,16 +15,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 69e97efe6db8b06f476b7dc004e3b52a77701cb0
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: MT
+ms.openlocfilehash: 11f7249f30b1866ca7c4aea4bbefa850a5353c0f
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758425"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305590"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizar el modo en que Visual Studio crea los títulos de controles enlazados a datos
 
-Cuando se arrastran elementos desde la [ventana Orígenes de datos](add-new-data-sources.md) a un diseñador, una consideración especial entra en juego: se cambian los nombres de columna en las etiquetas de leyenda en una cadena más legible cuando dos o más palabras se encuentran concatenados. Puede personalizar la manera en que se crean estas etiquetas, estableciendo el **SmartCaptionExpression**, **SmartCaptionReplacement**, y **SmartCaptionSuffix** valores en el **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data diseñadores** clave del registro.
+Cuando se arrastran elementos desde la [ventana Orígenes de datos](add-new-data-sources.md#data-sources-window) a un diseñador, una consideración especial entra en juego: se cambian los nombres de columna en las etiquetas de leyenda en una cadena más legible cuando dos o más palabras se encuentran concatenados. Puede personalizar la manera en que se crean estas etiquetas, estableciendo el **SmartCaptionExpression**, **SmartCaptionReplacement**, y **SmartCaptionSuffix** valores en el **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data diseñadores** clave del registro.
 
 > [!NOTE]
 > Esta clave del registro no existe hasta que la cree.
@@ -44,7 +44,7 @@ La tabla siguiente muestra la configuración predeterminada interna para estos v
 |Elemento del registro|Valor predeterminado|Explicación|
 |-------------------|-------------------|-----------------|
 |**SmartCaptionExpression**|**(\\\p{Ll}) (\\\p{Lu})&#124;_ +**|Coincide con un carácter en minúscula seguido por un carácter en mayúscula o un carácter de subrayado.|
-|**SmartCaptionReplacement**|**$1 $2**|El **$1** representa cualquier carácter coincidente en el primer paréntesis de la expresión y el **$2** representa cualquier carácter coincidente en el segundo paréntesis. La sustitución es la primera coincidencia, un espacio y, a continuación, la segunda coincidencia.|
+|**SmartCaptionReplacement**|"$1"|El **$1** representa cualquier carácter coincidente en el primer paréntesis de la expresión y el **$2** representa cualquier carácter coincidente en el segundo paréntesis. La sustitución es la primera coincidencia, un espacio y, a continuación, la segunda coincidencia.|
 |**SmartCaptionSuffix**|**:**|Representa un carácter que se anexa a la cadena devuelta. Por ejemplo, si el título es `Company Name`, el sufijo facilita `Company Name:`|
 
 > [!CAUTION]
@@ -60,25 +60,25 @@ La tabla siguiente muestra la configuración predeterminada interna para estos v
 
 3.  Expanda el **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio**nodo.
 
-7.  Haga clic en el **15.0** nodo y crear un nuevo **clave** denominado `Data Designers`.
+4.  Haga clic en el **15.0** nodo y crear un nuevo **clave** denominado `Data Designers`.
 
-8.  Haga clic en el **diseñadores de datos** nodo y crear tres nuevos valores de cadena:
+5.  Haga clic en el **diseñadores de datos** nodo y crear tres nuevos valores de cadena:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-11. Haga clic en el **SmartCaptionExpression** valor y seleccione **modificar**.
+6. Haga clic en el **SmartCaptionExpression** valor y seleccione **modificar**.
 
-12. Escriba la expresión regular que desee la **orígenes de datos** ventana para utilizar.
+7. Escriba la expresión regular que desee la **orígenes de datos** ventana para utilizar.
 
-13. Haga clic en el **SmartCaptionReplacement** valor y seleccione **modificar**.
+8. Haga clic en el **SmartCaptionReplacement** valor y seleccione **modificar**.
 
-14. Escriba el reemplazo de cadena con formato de la manera en que desea mostrar los modelos que coinciden en la expresión regular.
+9. Escriba el reemplazo de cadena con formato de la manera en que desea mostrar los modelos que coinciden en la expresión regular.
 
-15. Haga clic en el **SmartCaptionSuffix** valor y seleccione **modificar**.
+10. Haga clic en el **SmartCaptionSuffix** valor y seleccione **modificar**.
 
-16. Escriba los caracteres que desea que aparezcan al final de la leyenda.
+11. Escriba los caracteres que desea que aparezcan al final de la leyenda.
 
     La próxima vez que se arrastran elementos desde la **orígenes de datos** ventana, las etiquetas de leyenda se crean con los nuevos valores del registro proporcionados.
 
@@ -90,21 +90,21 @@ La tabla siguiente muestra la configuración predeterminada interna para estos v
 
 3.  Expanda el **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio**nodo.
 
-7.  Haga clic en el **15.0** nodo y crear un nuevo **clave** denominado `Data Designers`.
+4.  Haga clic en el **15.0** nodo y crear un nuevo **clave** denominado `Data Designers`.
 
-8.  Haga clic en el **diseñadores de datos** nodo y crear tres nuevos valores de cadena:
+5.  Haga clic en el **diseñadores de datos** nodo y crear tres nuevos valores de cadena:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-11. Haga clic en el **SmartCaptionExpression** de elemento y seleccione **modificar**.
+6. Haga clic en el **SmartCaptionExpression** de elemento y seleccione **modificar**.
 
-12. Escriba `(.*)` para el valor. Esto coincidirá con la cadena completa.
+7. Escriba `(.*)` para el valor. Esto coincidirá con la cadena completa.
 
-13. Haga clic en el **SmartCaptionReplacement** de elemento y seleccione **modificar**.
+8. Haga clic en el **SmartCaptionReplacement** de elemento y seleccione **modificar**.
 
-14. Escriba `$1` para el valor. Esto reemplaza la cadena con el valor coincidente, que es la cadena completa para que lo permanecerá sin cambios.
+9. Escriba `$1` para el valor. Esto reemplaza la cadena con el valor coincidente, que es la cadena completa para que lo permanecerá sin cambios.
 
     La próxima vez que se arrastran elementos desde la **orígenes de datos** las etiquetas de leyenda de ventana, se crean con títulos sin modificar.
 

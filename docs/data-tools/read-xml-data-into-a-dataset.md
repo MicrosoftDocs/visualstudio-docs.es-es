@@ -22,19 +22,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 160d008425cc1c82fb8be26e7a6be9b3be82e999
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1e43d118a5fcfe00a8eb6eaa7f34a17ff1f6a4be
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908436"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389220"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Leer datos XML en un conjunto de datos
 
 ADO.NET proporciona métodos sencillos para trabajar con datos XML. En este tutorial, creará una aplicación de Windows que carga datos XML en un conjunto de datos. A continuación, se muestra el conjunto de datos en un <xref:System.Windows.Forms.DataGridView> control. Por último, se muestra un esquema XML según el contenido del archivo XML en un cuadro de texto.
-
-> [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda en función de la configuración activa o la edición que está usando. Para cambiar la configuración, en el **herramientas** menú, seleccione **importar y exportar configuraciones**. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="create-a-new-project"></a>Crear un proyecto nuevo
 
@@ -54,7 +51,7 @@ En este paso, creará un proyecto de Visual Basic o Visual C#.
 
 Dado que este tutorial se centra en la lectura de datos XML en un conjunto de datos, se proporciona el contenido de un archivo XML.
 
-1. En el **proyecto** menú, seleccione **Agregar nuevo elemento**.
+1. En el menú Proyecto **, seleccione Agregar nuevo elemento**.
 
 2. Seleccione **archivo XML**, asigne el nombre **authors.xml**y, a continuación, seleccione **agregar**.
 
@@ -152,10 +149,10 @@ La interfaz de usuario para esta aplicación consta de las siguientes acciones:
 
 3.  Establezca las siguientes propiedades:
 
-    |Control|Property|Parámetro|
+    |Control|Propiedad.|Parámetro|
     |-------------|--------------|-------------|
     |`TextBox1`|**Multiline**|`true`|
-    ||**Barras de desplazamiento**|**Vertical**|
+    ||ScrollBars|**Vertical**|
     |`Button1`|**Name**|`ReadXmlButton`|
     ||**Texto**|`Read XML`|
     |`Button2`|**Name**|`ShowSchemaButton`|
@@ -202,7 +199,7 @@ El **Mostrar esquema** botón crea un <xref:System.IO.StringWriter> objeto que s
 
      El **Editor de código** se abre en el `ShowSchemaButton_Click` controlador de eventos.
 
-3.  Pegue el código siguiente en el `ShowSchemaButton_Click` controlador de eventos.
+3.  Pegue el código siguiente en el controlador de eventos `ShowSchemaButton_Click`:
 
      [!code-csharp[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_2.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_2.vb)]
@@ -225,7 +222,7 @@ Puede comprobar el formulario para asegurarse de que se comporta de la forma pre
 
 En este tutorial le enseña los aspectos básicos de lectura de un archivo XML en un conjunto de datos, así como la creación de un esquema basado en el contenido del archivo XML. Estas son algunas tareas que se pueden realizar a continuación:
 
--   Editar los datos en el conjunto de datos y reescribirlos como XML. Para obtener más información, consulta <xref:System.Data.DataSet.WriteXml%2A>.
+-   Editar los datos en el conjunto de datos y reescribirlos como XML. Para obtener más información, vea <xref:System.Data.DataSet.WriteXml%2A>.
 
 -   Editar los datos del conjunto de datos y escribirlos en una base de datos.
 

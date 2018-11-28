@@ -20,12 +20,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e23a023b3e37b9c4f3869bfa699ffee1f44caffa
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: fef30f836ab27cd7a67d85a04254be0018d5b33e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750817"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388743"
 ---
 # <a name="handle-a-concurrency-exception"></a>Tratar las excepciones de simultaneidad
 
@@ -45,7 +45,7 @@ Este tutorial le guía a través del proceso siguiente:
 
 6. Cambiar el mismo registro en un valor diferente, actualizar el conjunto de datos e intenta escribir los cambios en la base de datos, lo que resulta en que se produzca un error de simultaneidad.
 
-7. Detectar el error, mostrar las diferentes versiones del registro, que permite al usuario determinar si debe continuar y actualizar la base de datos o cancelar la actualización.
+7. Detectar el error y luego mostrar las diferentes versiones del registro, de modo que el usuario pueda determinar si continuar y actualizar la base de datos o cancelar la actualización.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -64,9 +64,6 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
     3. Pegue el script de Transact-SQL en el editor de consultas y, a continuación, elija el **Execute** botón.
 
        Después de un breve tiempo, finalice la consulta y se crea la base de datos Northwind.
-
-> [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la ayuda según la configuración activa o la edición que esté usando. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="create-a-new-project"></a>Crear un proyecto nuevo
 
@@ -88,7 +85,7 @@ A continuación, cree un conjunto de datos denominado **NorthwindDataSet**:
 
 1. En el **datos** menú, elija **Agregar nuevo origen de datos**.
 
-   Se abre el Asistente para configuración de orígenes de datos.
+   Se abrirá el Asistente para la configuración de orígenes de datos.
 
 2. En el **elegir un tipo de origen de datos** pantalla, seleccione **base de datos**.
 
@@ -109,7 +106,7 @@ A continuación, cree un conjunto de datos denominado **NorthwindDataSet**:
 
 En esta sección, creará un <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> arrastrando el **clientes** de elemento de la **orígenes de datos** ventana hasta el formulario de Windows.
 
-1. En el **datos** menú, elija **Mostrar orígenes de datos** para abrir el **ventana Orígenes de datos**.
+1. Para abrir el **orígenes de datos** ventana, en el **datos** menú, elija **Mostrar orígenes de datos**.
 
 2. En el **orígenes de datos** ventana, expanda el **NorthwindDataSet** nodo y, a continuación, seleccione el **clientes** tabla.
 
@@ -121,7 +118,7 @@ En esta sección, creará un <xref:System.Windows.Forms.DataGridView?displayProp
 
 ## <a name="test-the-form"></a>Comprobar el formulario
 
-Ahora puede probar el formulario para asegurarse de que se comporta según lo previsto hasta este punto:
+Ahora es posible comprobar el formulario para asegurarse de que se comporta de la forma prevista.
 
 1. Seleccione **F5** para ejecutar la aplicación.
 
@@ -135,13 +132,13 @@ Cómo controlar los errores depende de las reglas de negocios específicas que r
 
 La aplicación presentará al usuario tres versiones del registro:
 
-- El registro actual en la base de datos
+- El registro actual en la base de datos.
 
 - El registro original cargado en el conjunto de datos
 
-- Los cambios propuestos en el conjunto de datos
+- Los cambios propuestos en el conjunto de datos.
 
-El usuario, a continuación, es capaz de sobrescribir la base de datos con la versión propuesta, o cancelar la actualización y actualizar el conjunto de datos con los nuevos valores de la base de datos.
+Entonces, el usuario puede sobrescribir la base de datos con la versión propuesta o cancelar la actualización y actualizar el conjunto de datos con los nuevos valores de la base de datos.
 
 ### <a name="to-enable-the-handling-of-concurrency-errors"></a>Para habilitar el control de errores de simultaneidad
 
@@ -170,11 +167,11 @@ Cuando se intenta realizar una actualización y se produce una excepción, por l
    [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]
    [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]
 
-### <a name="display-choices-to-the-user"></a>Mostrar opciones al usuario
+### <a name="display-choices-to-the-user"></a>Presentar opciones al usuario.
 
 El código que acaba de escribir llama al procedimiento `CreateMessage` para mostrar información de error al usuario. En este tutorial, usará un cuadro de mensaje para mostrar las diferentes versiones del registro para el usuario. Esto permite al usuario elegir si desea sobrescribir el registro con los cambios o cancelar la edición. Cuando el usuario selecciona una opción (hace clic en un botón) en el cuadro de mensaje, la respuesta se pasa al método `ProcessDialogResult`.
 
-Crear el mensaje agregando el código siguiente a la **Editor de código**. Escriba este código debajo el `UpdateDatabase` método:
+Cree el mensaje agregando el código siguiente en el Editor de código **. Escriba este código debajo del método `UpdateDatabase`.
 
 [!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
 [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
@@ -198,7 +195,7 @@ Puede comprobar el formulario para asegurarse de que se comporta de la forma pre
 
 3. En el **vista** menú, elija **Explorador de servidores**.
 
-4. En **Explorador de servidores**, expanda la conexión de la aplicación está utilizando y, a continuación, expanda el **tablas** nodo.
+4. En el Explorador de servidores **, expanda la conexión que utiliza la aplicación y, a continuación, expanda el nodo Tablas**.
 
 5. Haga clic en el **clientes** de tabla y, a continuación, seleccione **mostrar datos de tabla**.
 
