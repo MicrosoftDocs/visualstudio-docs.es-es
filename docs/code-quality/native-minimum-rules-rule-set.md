@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dd0d7b14c26038c57ce175abcff383ad9de5cf3
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 9149276064b76a08705b70883bb3c2e136e23334
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43225053"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389019"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Conjunto de reglas Reglas mínimas nativas
 Las reglas mínimas nativas de Microsoft se centran en los problemas más graves del código nativo, incluidas posibles vulnerabilidades de seguridad y bloqueos de la aplicación. Debe incluir este conjunto de reglas en todos los conjuntos de reglas personalizados que cree para sus proyectos nativos.
@@ -102,7 +102,7 @@ Las reglas mínimas nativas de Microsoft se centran en los problemas más graves
 |[C28215](../code-quality/c28215.md)|typefix no se puede aplicar a un parámetro que ya tenga un typefix|
 |[C28216](../code-quality/c28216.md)|La anotación checkReturn solamente se aplica a las condiciones posteriores del parámetro de la función específica.|
 |[C28217](../code-quality/c28217.md)|Para la función, el número de parámetros de la anotación no coincide con el encontrado en el archivo|
-|[C28218](../code-quality/c28218.md)|Para el parámetro de la función, el parámetro de la anotación no coincide con el encontrado en el archivo|
+|[C28218](../code-quality/c28218.md)|Para el parámetro de función, el parámetro de la anotación no coincide con el encontrado en el archivo|
 |[C28219](../code-quality/c28219.md)|Se esperaba un miembro de enumeración para el parámetro de la anotación|
 |[C28220](../code-quality/c28220.md)|Se esperaba una expresión de entero para el parámetro de la anotación|
 |[C28221](../code-quality/c28221.md)|Se esperaba una expresión de cadena para el parámetro de la anotación|
