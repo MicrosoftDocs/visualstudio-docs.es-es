@@ -1,7 +1,7 @@
 ---
 title: Editar y continuar en el cuadro de diálogo de mensaje de error | Microsoft Docs
 ms.custom: ''
-ms.date: 06/22/2018
+ms.date: 10/15/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fd4fe31996a75c4b743f3dac12e7b945c912506
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
-ms.translationtype: MT
+ms.openlocfilehash: ba573a6b6bffdfeebf37c5f46f1f774d699a1131
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382797"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388717"
 ---
 # <a name="edit-and-continue-error-message"></a>Editar y continuar el mensaje de error 
 
@@ -49,5 +49,5 @@ Las posibles razones para este mensaje de error incluyen:
   
 Para obtener más información, consulte:
 - [C++ editar y continuar blog post](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)  
-- [Admite los cambios de código (C++)](../debugger/supported-code-changes-cpp.md)
+- [Cambios admitidos en el código (C++)](../debugger/supported-code-changes-cpp.md)
 - [Editar y continuar](../debugger/edit-and-continue.md)
