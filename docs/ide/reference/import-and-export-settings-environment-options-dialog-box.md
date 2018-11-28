@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 567a7f0eeb0fcf68d37dc38a484c3a8db15f3c40
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fbdb15d5f6bc10d203924272fa6239a12df460d4
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942531"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388785"
 ---
 # <a name="import-and-export-settings-environment-options-dialog-box"></a>Importar y exportar configuraciones, Entorno, Opciones (Cuadro de diálogo)
 

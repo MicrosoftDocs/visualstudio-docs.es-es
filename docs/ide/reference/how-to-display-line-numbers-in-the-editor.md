@@ -15,24 +15,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 416e83790e4776f37f7ca7ce011a5a2fb2ad484c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3d7977fde404570808f0ee2d6514249a5e73286a
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747500"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388855"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Cómo: Mostrar los números de línea en el editor
+
 Puede mostrar u ocultar la numeración de las líneas del código.
 
-> [!NOTE]
-> Los cuadros de diálogo y los comandos de menú que aparecen pueden ser distintos a los aquí descritos, en función de los valores de configuración activos. Para cambiar su configuración, abra **Herramientas / Importar y exportar configuraciones**. Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
-
 ## <a name="display-line-numbers-in-code"></a>Para mostrar los números de línea en el código
- Los números de línea no se agregan al código; solo sirven de referencia. Si quiere imprimir los números de línea, en el cuadro de diálogo **Imprimir**, active la casilla **Incluir números de línea**.
 
-#### <a name="to-display-line-numbers-in-code"></a>Para mostrar los números de línea en el código
+Los números de línea no se agregan al código; solo sirven de referencia. Si quiere imprimir los números de línea, en el cuadro de diálogo **Imprimir**, active la casilla **Incluir números de línea**.
+
+### <a name="to-display-line-numbers-in-code"></a>Para mostrar los números de línea en el código
 
 1.  En la barra de menús, elija **Herramientas**, **Opciones**. Expanda el nodo de **Editor de texto** y, después, seleccione el nodo del lenguaje que use o **Todos los lenguajes** para activar los números de línea en todos los lenguajes. También puede escribir el **número de línea** en el cuadro **Inicio rápido**.
 
@@ -42,7 +40,6 @@ Puede mostrar u ocultar la numeración de las líneas del código.
 
 > [!NOTE]
 > Según el lenguaje o los valores de configuración, puede que tenga que activar la casilla **Mostrar todas las configuraciones** en el cuadro de diálogo **Opciones** para ver el subnodo **Todos los lenguajes**.
-
 
 ## <a name="see-also"></a>Vea también
 

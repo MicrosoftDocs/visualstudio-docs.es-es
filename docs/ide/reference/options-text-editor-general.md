@@ -49,19 +49,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cb2a939fb569ca9c50e6334fa7b836a6953dca4
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 75051013e38d4acf5339193cf9f80e6da6758284
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219164"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388807"
 ---
 # <a name="options-text-editor-general"></a>Opciones, editor de texto, general
 
 Este cuadro de diálogo le permite cambiar la configuración global del editor de texto y el código de Visual Studio. Para tener acceso a este cuadro de diálogo, seleccione **Opciones** en el menú **Herramientas**, expanda la carpeta **Editor de texto** y, después, seleccione **General**.
-
-> [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="settings"></a>Configuración
 
