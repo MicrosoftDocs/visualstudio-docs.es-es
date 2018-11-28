@@ -16,21 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbd3fe20377cd2aa4954e904fec50702cc9b7120
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 09881462b0723dc1e601c908efeabc317ed70b69
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843996"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388954"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Página Proyectos y soluciones, Cuadro de diálogo Opciones
 
 Establece el comportamiento de Visual Studio relacionado con proyectos y soluciones. Para acceder a estas opciones, seleccione **Herramientas** > **Opciones**, expanda **Proyectos y soluciones** y haga clic en **General**.
 
 Las rutas de acceso predeterminadas para las carpetas de proyectos y plantillas se establecen a través de la pestaña **Ubicaciones** en el mismo cuadro de diálogo.
-
-> [!NOTE]
-> Las opciones disponibles en la interfaz de usuario podrían diferir de lo que se describe en este caso, dependiendo de la edición o configuración activa. Este artículo se ha redactado teniendo en cuenta la **Configuración general de desarrollo**. Para ver o cambiar la configuración, elija **Importar y exportar configuraciones** en el menú **Herramientas**. Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="general-page"></a>Página general
 

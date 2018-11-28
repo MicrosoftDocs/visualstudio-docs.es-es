@@ -30,22 +30,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 4174191f9927679eb698e2e918a7bfa50f915a3e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 30986c0f18a2cc272cb917be9ce24b2a335c0b4b
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673252"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388639"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Opciones, editor de texto, XAML y varios
+
 Use la página de propiedades **Varios** para especificar cómo se aplica formato a los elementos y atributos en los documentos XAML. Para abrir el cuadro de diálogo **Opciones**, haga clic en el menú **Herramientas** y, después, en **Opciones**. Para acceder a la página de propiedades **Varios**, expanda el nodo **Editor de texto** > **XAML** > **Varios**.
 
-> [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
-
 ## <a name="auto-insert"></a>Inserción automática
- Use esta opción para controlar cuándo se generan automáticamente etiquetas y comillas.
+
+Use esta opción para controlar cuándo se generan automáticamente etiquetas y comillas.
 
 |||
 |-|-|
@@ -55,7 +53,8 @@ Use la página de propiedades **Varios** para especificar cómo se aplica format
 |**Comas para separar parámetros de MarkupExtension**|Especifica si se generan comas al escribir más de un parámetro en una extensión de marcado.|
 
 ## <a name="errors-and-warnings"></a>Errores y advertencias
- Use esta opción para controlar cuándo se generan automáticamente errores y advertencias. Para obtener más información, vea [Errores y advertencias de XAML](../../designers/xaml-errors-warnings.md).
+
+Use esta opción para controlar cuándo se generan automáticamente errores y advertencias. Para obtener más información, vea [Errores y advertencias de XAML](../../designers/xaml-errors-warnings.md).
 
 ## <a name="see-also"></a>Vea también
 

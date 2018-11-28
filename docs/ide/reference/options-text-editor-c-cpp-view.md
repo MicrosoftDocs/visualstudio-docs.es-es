@@ -13,21 +13,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9cf1cde04a45df47627b8b8bf9a0fad7b9bef0c4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c4ffef0b1b76f453048ff20e3cbada0b8a591c65
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673268"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388837"
 ---
 # <a name="options-text-editor-cc-view"></a>Opciones, editor de texto, C/C++ y visualización
 
 Utilice estas páginas de propiedades para cambiar el comportamiento predeterminado del editor de código cuando se programa en C o C++.
 
 Para acceder a esta página de propiedades, elija **Herramientas** > **Opciones** y expanda **Editor de texto**. Luego, seleccione **C/C++** y elija **Vista**.
-
-> [!NOTE]
-> Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="code-squiggles"></a>Subrayados ondulados de código
 
@@ -49,7 +46,7 @@ Puede habilitar o deshabilitar las siguientes opciones para administrar la maner
 
 - **Enumerar tareas de comentario**: examina los archivos de código fuente abiertos en busca de tokens de VS y los muestra en la ventana Lista de tareas.
 
-- **Resaltar tokens de emparejamiento**: resalta la sintaxis o las llaves delimitadoras que coinciden con la posición del cursor. 
+- **Resaltar tokens de emparejamiento**: resalta la sintaxis o las llaves delimitadoras que coinciden con la posición del cursor.
 
 ## <a name="outlining"></a>esquematizar
 
