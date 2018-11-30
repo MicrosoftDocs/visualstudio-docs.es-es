@@ -1,6 +1,6 @@
 ---
 title: comando para importar y exportar configuraciones
-ms.date: 11/04/2016
+ms.date: 11/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,15 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4119abf74281e3c0dbb2b3d5f3ef472a0527a08f
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 8f212e5c5becb8cf2ae575510825a9c7c9034222
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704592"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388713"
 ---
 # <a name="import-and-export-settings-command"></a>comando para importar y exportar configuraciones
-Importa, exporta o restablece la configuración de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+
+Importa, exporta o restablece la configuración de Visual Studio.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,25 +33,26 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 ```
 
 ## <a name="switches"></a>Modificadores
- /export:`filename`
 
- Opcional. Exporta la configuración actual al archivo especificado.
+/export:`filename`
 
- /import:`filename`
+Opcional. Exporta la configuración actual al archivo especificado.
 
- Opcional. Importa la configuración al archivo especificado.
+/import:`filename`
 
- /reset
+Opcional. Importa la configuración al archivo especificado.
 
- Opcional. Restablece la configuración actual.
+/reset
+
+Opcional. Restablece la configuración actual.
 
 ## <a name="remarks"></a>Comentarios
 
-Al ejecutar este comando sin modificadores se abre el Asistente **Importar y exportar configuraciones**. Para obtener más información, vea [Configuración sincronizada en Visual Studio](../../ide/synchronized-settings-in-visual-studio.md).
+Al ejecutar este comando sin modificadores se abre el Asistente **Importar y exportar configuraciones**. Para obtener más información, vea [Sincronizar la configuración](../synchronized-settings-in-visual-studio.md) y [Configuración del entorno](../environment-settings.md).
 
 ## <a name="example"></a>Ejemplo
 
-El comando siguiente exporta la configuración actual al archivo `MyFile.vssettings`.
+El comando siguiente exporta la configuración actual al archivo `MyFile.vssettings`:
 
 ```cmd
 Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
@@ -58,5 +60,7 @@ Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 
 ## <a name="see-also"></a>Vea también
 
+- [Configuración del entorno](../../ide/environment-settings.md)
+- [Sincronizar la configuración](../../ide/synchronized-settings-in-visual-studio.md)
 - [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)

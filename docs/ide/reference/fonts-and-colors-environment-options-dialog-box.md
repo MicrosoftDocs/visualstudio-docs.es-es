@@ -27,23 +27,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 751ae59a5a41d22728dd31f71491ec0d9a93ea19
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 7f15ac427d3e6fd6ddf7988c82ad46ffe537d299
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220266"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389272"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)
+
 La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite establecer una combinación de colores y una fuente personalizadas para varios elementos de la interfaz de usuario del entorno de desarrollo integrado (IDE). Puede acceder a este cuadro de diálogo haciendo clic en **Herramientas / Opciones**, y,después, seleccione **Entorno / Fuentes y colores**. Si esta página no aparece en la lista, en el cuadro de diálogo **Opciones**, seleccione **Mostrar todas las configuraciones**.
 
-> [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+Los cambios de combinaciones de colores no surten efecto durante la sesión en la que se realizan. Puede evaluar los cambios de color abriendo otra instancia de Visual Studio y creando las condiciones en las que espera aplicar los cambios.
 
+**Mostrar valores para**
 
- Los cambios de combinaciones de colores no surten efecto durante la sesión en la que se realizan. Puede evaluar los cambios de color abriendo otra instancia de Visual Studio y creando las condiciones en las que espera aplicar los cambios.
-
- **Mostrar valores para** Enumera todos los elementos de la interfaz de usuario cuyas combinaciones de fuentes y colores puede cambiar. Después de seleccionar un elemento de esta lista, puede personalizar la configuración de color para el elemento seleccionado en **Elementos para mostrar**.
+Enumera todos los elementos de la interfaz de usuario para los que puede cambiar las combinaciones de fuentes y colores. Después de seleccionar un elemento de esta lista, puede personalizar la configuración de color para el elemento seleccionado en **Elementos para mostrar**.
 
 -   **Editor de texto**
 
@@ -54,7 +53,7 @@ La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite 
      Los cambios realizados en la configuración de visualización de estilo, tamaño y color para la Impresora afectan a la apariencia del texto en documentos impresos.
 
     > [!NOTE]
-    >  Según sea necesario, puede seleccionar una fuente predeterminada para imprimir distinta a la que se usa para mostrar en el editor de texto. Esto puede ser útil cuando imprima código que contiene caracteres tanto de un solo byte como de doble byte.
+    > Según sea necesario, puede seleccionar una fuente predeterminada para imprimir distinta a la que se usa para mostrar en el editor de texto. Esto puede ser útil cuando imprima código que contiene caracteres tanto de un solo byte como de doble byte.
 
 -   **Finalización de instrucciones**
 
@@ -73,21 +72,28 @@ La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite 
      Los cambios realizados en la configuración de visualización de estilo, tamaño y color para este elemento afectan a la apariencia del texto en ventanas de herramientas que tengan paneles de resultados en el IDE. Por ejemplo, la ventana de salida, la ventana de comandos, la ventana inmediata, etc.
 
     > [!NOTE]
-    >  Los cambios realizados en el texto de elementos **[Todas las ventanas de herramientas de texto]** no surten efecto durante la sesión en la que se realizan. Puede evaluar dichos cambios abriendo otra instancia de Visual Studio.
+    > Los cambios realizados en el texto de elementos **[Todas las ventanas de herramientas de texto]** no surten efecto durante la sesión en la que se realizan. Puede evaluar dichos cambios abriendo otra instancia de Visual Studio.
 
-**Usar valores predeterminados** Restablece los valores de fuente y color del elemento de lista seleccionado en **Mostrar valores para**. El botón **Uso** aparece cuando hay otras combinaciones de visualización disponibles para seleccionarlas. Por ejemplo, puede elegir entre dos combinaciones para la impresora.
+**Usar valores predeterminados**
 
-**Fuente (los tipos en negrita indican fuentes con ancho fijo)** Enumera todas las fuentes instaladas en el sistema. Cuando el menú desplegable aparece por primera vez, la fuente actual del elemento seleccionado en el campo **Mostrar valores para** está resaltada. Las fuentes fijas, que son más fáciles de alinear en el editor, aparecen en negrita.
+Restablece los valores de fuente y color del elemento de lista seleccionado en **Mostrar valores para**. El botón **Uso** aparece cuando hay otras combinaciones de visualización disponibles para seleccionarlas. Por ejemplo, puede elegir entre dos combinaciones para la impresora.
 
-**Tamaño** Enumera los tamaños de puntos disponibles para la fuente resaltada. Cambiar el tamaño de la fuente afecta a todos los **Elementos para mostrar** de la selección **Mostrar valores para**.
+**Fuente (los tipos en negrita indican fuentes con ancho fijo)**
 
-**Mostrar los elementos** Enumera los elementos cuyo color de primer plano y de fondo puede cambiar.
+Enumera todas las fuentes instaladas en el sistema. Cuando el menú desplegable aparece por primera vez, la fuente actual del elemento seleccionado en el campo **Mostrar valores para** está resaltada. Las fuentes fijas, que son más fáciles de alinear en el editor, aparecen en negrita.
+
+**Size**
+
+Enumera los tamaños de puntos disponibles para la fuente resaltada. Cambiar el tamaño de la fuente afecta a todos los **Elementos para mostrar** de la selección **Mostrar valores para**.
+
+**Elementos para mostrar**
+
+Enumera los elementos de los que puede modificar el color de primer plano y de fondo.
 
 > [!NOTE]
 > **Texto sin formato** es el elemento para mostrar predeterminado. Como tal, las propiedades asignadas a **Texto sin formato** serán reemplazadas por las propiedades asignadas a otros elementos para mostrar. Por ejemplo, si asigna el color azul al **Texto sin formato** y el color verde al **Identificador**, todos los identificadores aparecerán en verde. En este ejemplo, las propiedades del **Identificador** reemplazan las propiedades del **Texto sin formato**.
 
-
- Entre los elementos para mostrar se incluyen:
+Entre los elementos para mostrar se incluyen:
 
 |Elemento para mostrar|Descripción|
 |------------------|-----------------|
@@ -198,29 +204,48 @@ La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite 
 |**Texto XML**|Contenido del elemento de texto sin formato.|
 |**Palabra clave XSLT**|Nombres de elementos XSLT.|
 
- **Primer plano del elemento** Muestra los colores disponibles que puede seleccionar para el primer plano del elemento seleccionado en **Mostrar los elementos**. Puesto que algunos elementos están relacionados y, por tanto, deben mantener un esquema par mostrar coherente, si cambia el color de primer plano del texto también cambian los valores predeterminados para elementos como Error del compilador, Palabra clave u Operador.
+**Primer plano del elemento**
 
- **Automático** Los elementos pueden heredar el color de primer plano de otros elementos para mostrar como **Texto sin formato**. Con esta opción, al cambiar el color de un elemento para mostrar heredado, el color de los elementos mostrados relacionados también cambia automáticamente. Por ejemplo, si ha seleccionado el valor **Automático** para el **Error del compilador** y después ha cambiado el color del **Texto sin formato** a rojo, el **Error del compilador** también heredaría automáticamente el color rojo.
+Muestra los colores disponibles que puede seleccionar para el primer plano del elemento seleccionado en **Elementos para mostrar**. Puesto que algunos elementos están relacionados y, por tanto, deben mantener un esquema par mostrar coherente, si cambia el color de primer plano del texto también cambian los valores predeterminados para elementos como Error del compilador, Palabra clave u Operador.
 
- **Predeterminado** El color que aparece para el elemento la primera vez que inicie Visual Studio. Al hacer clic en el botón **Usar valores predeterminados** restablece este color.
+**Automático**
 
- **Personalizado** Muestra el cuadro de diálogo Color para permitirle establecer un color personalizado para el elemento seleccionado en la lista Mostrar los elementos.
+Los elementos pueden heredar el color de primer plano de otros elementos para mostrar como **Texto sin formato**. Con esta opción, al cambiar el color de un elemento para mostrar heredado, el color de los elementos mostrados relacionados también cambia automáticamente. Por ejemplo, si ha seleccionado el valor **Automático** para el **Error del compilador** y después ha cambiado el color del **Texto sin formato** a rojo, el **Error del compilador** también heredaría automáticamente el color rojo.
+
+**Predetermiado**
+
+Color que aparece para el elemento la primera vez que se inicia Visual Studio. Al hacer clic en el botón **Usar valores predeterminados** restablece este color.
+
+**Custom**
+
+Muestra el cuadro de diálogo Color para permitirle establecer un color personalizado para el elemento seleccionado en la lista Elementos para mostrar
 
 > [!NOTE]
 > Su capacidad para definir colores personalizados puede verse limitada por la configuración de color de la pantalla de su equipo. Por ejemplo, si su equipo está configurado para mostrar 256 colores y selecciona un color personalizado en el cuadro de diálogo **Color**, el IDE tiene como valor predeterminado el **Color básico** más similar disponible y muestra el color negro en el cuadro de vista previa **Color**.
 
+**Segundo plano del elemento**
 
- **Fondo del elemento** Proporciona una paleta de colores en la que puede seleccionar un color de fondo para el elemento seleccionado en **Mostrar los elementos**. Puesto que algunos elementos están relacionados y, por tanto, deben mantener un esquema par mostrar coherente, si cambia el color de fondo del texto también cambian los valores predeterminados para elementos como Error del compilador, Palabra clave u Operador.
+Proporciona una paleta de colores de la que puede seleccionar un color de fondo para el elemento seleccionado en **Elementos para mostrar**. Puesto que algunos elementos están relacionados y, por tanto, deben mantener un esquema par mostrar coherente, si cambia el color de fondo del texto también cambian los valores predeterminados para elementos como Error del compilador, Palabra clave u Operador.
 
- **Automático** Los elementos pueden heredar el color de fondo de otros elementos para mostrar como el **Texto sin formato**. Con esta opción, al cambiar el color de un elemento para mostrar heredado, el color de los elementos mostrados relacionados también cambia automáticamente. Por ejemplo, si ha seleccionado el valor **Automático** para el **Error del compilador** y después ha cambiado el color del **Texto sin formato** a rojo, el **Error del compilador** también heredaría automáticamente el color rojo.
+**Automático**
 
- **Predeterminado** El color que aparece para el elemento la primera vez que inicie Visual Studio. Al hacer clic en el botón **Usar valores predeterminados** restablece este color.
+Los elementos pueden heredar el color de fondo de otros elementos para mostrar como **Texto sin formato**. Con esta opción, al cambiar el color de un elemento para mostrar heredado, el color de los elementos mostrados relacionados también cambia automáticamente. Por ejemplo, si ha seleccionado el valor **Automático** para el **Error del compilador** y después ha cambiado el color del **Texto sin formato** a rojo, el **Error del compilador** también heredaría automáticamente el color rojo.
 
- **Personalizado** Muestra el cuadro de diálogo Color para permitirle establecer un color personalizado para el elemento seleccionado en la lista Mostrar los elementos.
+**Predetermiado**
 
- **Negrita** Seleccione esta opción para mostrar el texto de los elementos seleccionados en **Mostrar los elementos** en negrita. El texto en negrita es más fácil de identificar en el editor.
+Color que aparece para el elemento la primera vez que se inicia Visual Studio. Al hacer clic en el botón **Usar valores predeterminados** restablece este color.
 
- **Ejemplo** Muestra un ejemplo de la combinación de colores, del tamaño y del estilo de la fuente de los elementos seleccionados en **Mostrar valores para** y **Mostrar los elementos**. Puede utilizar este cuadro para obtener una vista previa de los resultados mientras experimenta con diferentes opciones de formato.
+**Custom**
+
+Muestra el cuadro de diálogo Color para permitirle establecer un color personalizado para el elemento seleccionado en la lista Elementos para mostrar
+
+**Negrita**
+
+Seleccione esta opción para mostrar el texto de los **Elementos para mostrar** seleccionados en negrita. El texto en negrita es más fácil de identificar en el editor.
+
+**Ejemplo**
+
+Muestra un ejemplo de la combinación de colores, del tamaño y del estilo de la fuente para **Mostrar valores para** y para **Elementos para mostrar** seleccionados. Puede utilizar este cuadro para obtener una vista previa de los resultados mientras experimenta con diferentes opciones de formato.
 
 ## <a name="see-also"></a>Vea también
 

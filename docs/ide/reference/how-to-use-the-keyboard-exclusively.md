@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24a20abd4971f785261db4437a6e2f839717ab0d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b76e34ba77335c242c752c055e2560cc73141d2
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818268"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388405"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Cómo: Utilizar el teclado exclusivamente
 
@@ -33,16 +33,15 @@ ms.locfileid: "49818268"
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proporciona muchas combinaciones de teclas de método abreviado predeterminadas para facilitar la navegación y codificación en el entorno de desarrollo integrado (IDE). Para obtener un listado completo de las teclas de método abreviado que se usan en Visual Studio, vea [Métodos abreviados de teclado predeterminados](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Para obtener información sobre los métodos abreviados de teclado disponibles para otros productos de Microsoft, vea [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400).
 
 > [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, vea [Restablecer la configuración](../environment-settings.md#reset-settings).
 
 ## <a name="toolbox-controls"></a>Controles del cuadro de herramientas
 
- Puede agregar un control en el cuadro de herramientas a un formulario o diseñador con el teclado.
+Puede agregar un control en el cuadro de herramientas a un formulario o diseñador con el teclado.
 
-#### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>Para agregar controles desde el cuadro de herramientas a un diseñador desde el teclado
+### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>Para agregar controles desde el cuadro de herramientas a un diseñador desde el teclado
 
-1. En la barra de menús, pulse **Ver**, **Cuadro de herramientas**.
+1. En la barra de menús, elija **Ver** > **Cuadro de herramientas**.
 
 2. Use Ctrl + flecha arriba o Ctrl + flecha abajo para moverse por las secciones de la pestaña actual del cuadro de herramientas.
 
@@ -56,9 +55,9 @@ ms.locfileid: "49818268"
 
  Puede moverse entre las opciones de un cuadro de diálogo y cambiar la configuración de las opciones mediante el teclado.
 
-#### <a name="to-set-dialog-box-options-from-the-keyboard"></a>Para establecer las opciones del cuadro de diálogo desde el teclado
+### <a name="to-set-dialog-box-options-from-the-keyboard"></a>Para establecer las opciones del cuadro de diálogo desde el teclado
 
-1.  Use **TAB** o **MAYÚS + TAB** para moverse hacia arriba y hacia abajo a través de los controles del cuadro de diálogo.
+1.  Use **Tab** o **Mayús** + **Tab** para moverse hacia arriba y hacia abajo a través de los controles del cuadro de diálogo.
 
 2.  Para cambiar la configuración de las opciones:
 
@@ -66,23 +65,23 @@ ms.locfileid: "49818268"
 
     -   Para las casillas, use la **BARRA ESPACIADORA** para seleccionar o anular la selección.
 
-    -   Para las listas desplegables, use **ALT** + **FLECHA ABAJO** para mostrar elementos y, después, use **FLECHA ARRIBA** y **FLECHA ABAJO** para cambiar el elemento seleccionado.
+    -   En las listas desplegables, use **Alt** + **FLECHA ABAJO** para mostrar elementos y luego **FLECHA ARRIBA** y **FLECHA ABAJO** para cambiar el elemento seleccionado.
 
-    -   Para los botones de opción, presione **ENTRAR** para invocarlos.
+    -   En los botones, presione **Entrar** para invocar.
 
-    -   Para las cuadrículas, use las teclas de flecha para desplazarse. Para las listas desplegables en las cuadrículas, use **MAYÚS** + **ALT** + **FLECHA ABAJO** para mostrar elementos y, después, use **FLECHA ARRIBA** y **FLECHA ABAJO** para cambiar el elemento seleccionado.
+    -   Para las cuadrículas, use las teclas de flecha para desplazarse. En las listas desplegables de las cuadrículas, use **Mayús** + **Alt** + **FLECHA ABAJO** para mostrar elementos y luego **FLECHA ARRIBA** y **FLECHA ABAJO** para cambiar el elemento seleccionado.
 
 ## <a name="window-and-file-navigation"></a>Navegación de archivos y ventanas
 
  El IDE le proporciona varias maneras de moverse entre las ventanas de documentos y herramientas abiertas con el teclado. También puede mover y acoplar las ventanas de herramientas en diferentes ubicaciones con el teclado.
 
-#### <a name="to-navigate-among-windows-and-files-in-the-ide-from-the-keyboard"></a>Para navegar entre las ventanas y los archivos en el IDE desde el teclado
+### <a name="to-navigate-among-windows-and-files-in-the-ide-from-the-keyboard"></a>Para navegar entre las ventanas y los archivos en el IDE desde el teclado
 
 -   Para moverse entre los archivos en un editor o diseñador, pulse las teclas CTRL + TAB para mostrar el navegador del IDE con la opción **Archivos activos** seleccionada. Pulse la tecla Entrar para ir al archivo resaltado.
 
 -   Para moverse entre las ventanas de herramientas acopladas, pulse Alt + F7 para mostrar el navegador del IDE con la opción **Ventanas de herramientas activas** seleccionada. Presione la tecla Entrar para ir a la ventana resaltada.
 
-#### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>Para mover y acoplar ventanas de herramientas desde el teclado
+### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>Para mover y acoplar ventanas de herramientas desde el teclado
 
 1.  Vaya a la ventana de herramientas que quiere mover y asígnele el foco.
 

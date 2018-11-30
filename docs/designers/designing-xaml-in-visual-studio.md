@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a3adcb961e3031180054706da9d43dd04dccdedf
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: c23a73302e5d4771b3372b8f4534b42806156da0
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348648"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389622"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Diseño de XAML en Visual Studio
 
@@ -48,7 +48,7 @@ Para realizar las tareas más básicas, los IDE de Visual Studio y de Blend para
 
      ![Experiencia de recarga de archivo](../designers/media/blendfilereload.png)
 
-- **Diseños y configuraciones sincronizados:** los diseños personalizados le permiten guardar y aplicar las personalizaciones de diseño de la ventana de herramientas. Visual Studio sincroniza estas personalizaciones y preferencias de Visual Studio y Blend para Visual Studio en los equipos cuando inicia sesión con la misma cuenta de Microsoft. Vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+- **Diseños y configuraciones sincronizados:** los diseños personalizados le permiten guardar y aplicar las personalizaciones de diseño de la ventana de herramientas. Visual Studio sincroniza estas personalizaciones y preferencias de Visual Studio y Blend para Visual Studio en los equipos cuando inicia sesión con la misma cuenta de Microsoft. Vea [Sincronizar la configuración de Visual Studio en varios equipos](../ide/synchronized-settings-in-visual-studio.md).
 
 - **Explorador de soluciones común:** el **Explorador de soluciones** proporciona una vista organizada de los proyectos y los archivos, así como acceso a los comandos asociados a ellos. Con el Explorador de soluciones, es más fácil trabajar con proyectos empresariales grandes. Vea [Soluciones y proyectos](../ide/solutions-and-projects-in-visual-studio.md).
 
