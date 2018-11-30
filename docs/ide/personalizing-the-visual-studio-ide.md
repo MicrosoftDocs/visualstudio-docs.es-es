@@ -9,19 +9,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d2e42c31d7cbdb52e602eee4e424eb78ee89d77
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: d8f52061acff03a1339a9c7b7f3f8ff4901ec6a5
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348701"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388730"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizar el IDE de Visual Studio
 
-Puede personalizar Visual Studio de varias maneras para que se ajuste mejor a su propio estilo de desarrollo y a sus requisitos. Muchos de los valores se traspasan a las distintas instancias de Visual Studio &mdash;consulte [Configuración sincronizada](../ide/synchronized-settings-in-visual-studio.md). En este tema se describen brevemente las diferentes personalizaciones y dónde puede encontrar más información.
+Puede personalizar Visual Studio de varias maneras para que se ajuste mejor a su propio estilo de desarrollo y a sus requisitos. Muchos de los valores se traspasan a las distintas instancias de Visual Studio &mdash;consulte [Configuración sincronizada](../ide/synchronized-settings-in-visual-studio.md). En este artículo se describen brevemente las diferentes personalizaciones y se indica dónde encontrar más información.
 
 > [!NOTE]
 > Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Personalización del IDE de Visual Studio para Mac](/visualstudio/mac/customizing-the-ide).
+
+## <a name="default-settings"></a>Configuración predeterminada
+
+Puede elegir una colección predeterminada de opciones que optimice Visual Studio para el tipo de desarrollo. Para obtener más información, vea [Configuración del entorno](environment-settings.md).
 
 ## <a name="general-environment-options"></a>Opciones generales de entorno
 
@@ -62,6 +66,7 @@ Puede personalizar el menú **Herramientas** para iniciar herramientas externas.
 
 ## <a name="see-also"></a>Vea también
 
+- [Configuración del entorno](environment-settings.md)
 - [Introducción al IDE de Visual Studio](../ide/visual-studio-ide.md)
 - [Guía de inicio rápido: primer vistazo al IDE de Visual Studio](../ide/quickstart-ide-orientation.md)
 - [Personalización del IDE de Visual Studio para Mac](/visualstudio/mac/customizing-the-ide)

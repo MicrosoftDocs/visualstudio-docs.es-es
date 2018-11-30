@@ -1,6 +1,6 @@
 ---
-title: 'Cómo: Cambiar las fuentes y los colores del editor'
-ms.date: 11/04/2016
+title: Cambiar las fuentes y los colores del editor
+ms.date: 11/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -16,27 +16,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a6912f1b3877eadf6739d696f01d0f391a97b30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 23978b13808054bfcf8ef3c809307e4f6cf37b43
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892719"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388626"
 ---
-# <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Cómo: Cambiar las fuentes y los colores del editor
-Puede cambiar el nombre de fuente predeterminado, ajustar el tamaño de fuente y cambiar los colores de primer plano y de fondo para el texto diverso de **Mostrar los elementos** en el editor de código. Al cambiar la configuración de fuente, tenga en cuenta la información siguiente:
+# <a name="how-to-change-fonts-and-colors-for-the-editor"></a>Cómo: Cambiar las fuentes y los colores del editor
 
-- La configuración de **Fuente** y **Tamaño** es global para todos los elementos de texto en todos los editores de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+Puede cambiar la fuente predeterminada, ajustar el tamaño de fuente y cambiar los colores de primer plano y de fondo de diverso texto de **Mostrar los elementos** en el editor de código. Al cambiar la configuración de fuente, tenga en cuenta la información siguiente:
+
+- La configuración de **Fuente** y **Tamaño** es global para todos los elementos de texto de todos los editores de Visual Studio.
 
 - Los nombres de las fuentes con ancho fijo se enumeran en negrita.
 
 - Las opciones **Primer plano del elemento**, **Fondo del elemento** y **Negrita** pueden establecerse para cada tipo de elemento de texto. Por ejemplo, si cambia los colores y selecciona **Negrita** para **Comentario** y **Marcadores**, otros tipos de elementos de texto no se verán afectados.
 
-> [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la **Ayuda**, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
-
-### <a name="to-change-the-default-font-face-size-and-colors"></a>Para cambiar el nombre de fuente predeterminado, el tamaño y los colores
+## <a name="change-the-default-font-face-size-and-colors"></a>Cambiar la fuente predeterminada, el tamaño y los colores
 
 1.  Seleccione **Opciones** del menú **Herramientas** y, en la carpeta **Entorno**, seleccione **Fuentes y colores**.
 
@@ -49,13 +46,13 @@ Puede cambiar el nombre de fuente predeterminado, ajustar el tamaño de fuente y
 4.  Seleccione el elemento apropiado en **Mostrar elementos** y, después, modifique las opciones **Primer plano del elemento** y **Fondo del elemento**.
 
     > [!TIP]
-    >  Haga clic en **Usar predeterminadas** para restablecer las opciones predeterminadas.
+    > Haga clic en **Usar predeterminadas** para restablecer las opciones predeterminadas.
 
 5.  Haga clic en **Aceptar**.
 
 ## <a name="see-also"></a>Vea también
 
 - [Personalizar el editor](../../ide/customizing-the-editor.md)
-- [Editor de texto, Opciones (cuadro de diálogo)](../../ide/reference/text-editor-options-dialog-box.md)
+- [Cuadro de diálogo Opciones del editor de texto](../../ide/reference/text-editor-options-dialog-box.md)
 - [Características del editor de código](../../ide/writing-code-in-the-code-and-text-editor.md)
-- [Cómo: Cambiar fuentes y colores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Cómo: Cambiar fuentes y colores en Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

@@ -1,7 +1,7 @@
 ---
-title: Vista de subprocesos (rendimiento paralelo) | Microsoft Docs
+title: Vista Subprocesos del Visualizador de simultaneidad | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -14,139 +14,140 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80ce83bba65affcb47a702d572d8d962f712667e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ce7cf5cf0534a0e989b65d6e67451fe2a7c496ab
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883996"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388910"
 ---
-# <a name="threads-view-parallel-performance"></a>Vista de subprocesos (rendimiento paralelo)
-**Vista de subprocesos** es la vista más detallada y llena de características del visualizador de simultaneidad (elija **Analizar** > **Analizador de simultaneidad** para iniciarlo). Con esta vista puede identificar si los subprocesos se están ejecutando o se bloquearon por causa de la sincronización, E/S o algún otro motivo.  
-  
- Durante el análisis de perfiles, el visualizador de simultaneidad examina todos los eventos de cambio de contexto de sistema operativo para cada subproceso de la aplicación. Los cambios de contexto pueden producirse por varias razones, como las siguientes:  
+# <a name="threads-view-in-the-concurrency-visualizer"></a>Vista Subprocesos del Visualizador de simultaneidad
+
+La vista **Subprocesos** es la más detallada y la que tiene más características del Visualizador de simultaneidad. En la vista **Subprocesos**, puede identificar qué subprocesos están ejecutando código durante un segmento de ejecución y analizar si los subprocesos se están ejecutando o bloqueando debido a la sincronización, la E/S u otras razones. La vista **Subprocesos** además informa de subprocesos de ejecución y desbloqueo del árbol de pila de llamadas de perfil.
+
+Mientras se ejecutan los subprocesos, el Visualizador de simultaneidad recopila muestras. Cuando un subproceso deja de ejecutarse, el visualizador examina todos los eventos de cambio de contexto del sistema operativo del subproceso. Los cambios de contexto pueden producirse porque:  
   
 - Un subproceso se bloquea en una sincronización primitiva.  
-  
 - Expira el cuanto de un subproceso.  
-  
 - Un subproceso realiza una solicitud de E/S de bloqueo.  
+
+El Visualizador de simultaneidad clasifica los eventos de subproceso y cambio de contexto y busca API de bloqueo conocidas en la pila de llamadas de subprocesos. Muestra las categorías de subprocesos en la leyenda activa de la parte inferior izquierda de la vista **Subprocesos**. En la mayoría de los casos, puede identificar la causa de un evento de bloqueo examinando las pilas de llamadas que corresponden a los eventos de cambio de contexto.
+
+Si no hay ninguna coincidencia de la pila de llamadas, el Visualizador de simultaneidad usa la razón de espera proporcionada por [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)]. Pero la categoría de [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] puede basarse en un detalle de implementación y puede no reflejar la intención del usuario. Por ejemplo, [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] indica la razón de espera de bloqueo en un bloqueo de lectura-escritura delgado nativo como E/S, en lugar de Sincronización.  
   
-  La vista de subprocesos asigna una categoría a cada cambio de contexto cuando se ha detenido un subproceso. Las categorías se muestran en la leyenda en la parte inferior izquierda de la vista. El visualizador de simultaneidad clasifica los eventos de cambio de contexto buscando API de bloqueo conocidas en la pila de llamadas del subproceso. Si no hay ninguna coincidencia de la pila de llamadas, se utiliza la razón de espera proporcionada por [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)]. Sin embargo, la categoría de [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] puede basarse en un detalle de implementación y puede no reflejar la intención del usuario. Por ejemplo, [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] indica el motivo de la espera de bloqueo en un bloqueo de lectura-escritura delgado nativo como E/S, en lugar de la sincronización. En la mayoría de los casos, puede identificar la causa de un evento de bloqueo examinando las pilas de llamadas que corresponden a los eventos de cambio de contexto.  
+La vista **Subprocesos** también muestra las dependencias entre subprocesos. Por ejemplo, si identifica un subproceso bloqueado en un objeto de sincronización, puede encontrar el subproceso que lo ha desbloqueado. Puede examinar la pila de llamadas del subproceso de desbloqueo en el punto en que ha desbloqueado al otro.  
+
+Puede usar la vista **Subprocesos** para:  
+
+- Identificar las razones por las que la interfaz de usuario (UI) de una aplicación no responde durante ciertas fases de ejecución.  
+- Determinar la cantidad de tiempo dedicada al bloqueo en sincronización, E/S, errores de página y otros eventos.  
+- Descubrir el grado de interferencia de otros procesos que se ejecutan en el sistema.  
+- Identificar problemas de equilibrio de carga para la ejecución en paralelo.  
+- Encontrar los motivos de una escalabilidad inexistente o no óptima. Por ejemplo, por qué no mejora el rendimiento de una aplicación paralela cuando hay más núcleos lógicos disponibles.  
+- Entender el grado de simultaneidad en la aplicación, para ayudar en la ejecución en paralelo.  
+- Identificar las dependencias entre los subprocesos de trabajo y las rutas críticas de ejecución.  
   
-  La vista de subprocesos también muestra las dependencias entre subprocesos. Por ejemplo, si se identifica un subproceso que está bloqueado en un objeto de sincronización, puede buscar el subproceso que lo desbloqueó y examinar la actividad en la pila de llamadas del subproceso en el momento que desbloqueó el otro.  
+## <a name="use-threads-view"></a>Usar la vista Subprocesos 
+
+Para iniciar el Visualizador de simultaneidad, seleccione **Analizar** > **Visualizador de simultaneidad** y luego seleccione una opción, como **Iniciar nuevo proceso**. 
+
+El Visualizador de simultaneidad inicia la aplicación y recopila un seguimiento hasta que se selecciona **Detener recolección**. Luego el visualizador analiza el seguimiento y muestra los resultados en la página de informe de seguimiento. 
+
+Seleccione la pestaña **Subprocesos** de la parte superior izquierda del informe para abrir la vista **Subprocesos**. 
+
+![Vista Subprocesos](../profiling/media/threadsviewnarrowing.png "Threads view")  
   
-  Cuando se ejecutan los subprocesos, el visualizador de simultaneidad recopila muestras. En la vista de subprocesos, puede analizar el código que ejecuta uno o más subprocesos durante un segmento de ejecución. También puede examinar informes de bloqueo e informes que generan perfiles de ejecución del árbol de pila de llamadas.  
+Seleccione los intervalos de tiempo y los subprocesos para iniciar un análisis de rendimiento.  
   
-## <a name="usage"></a>Uso  
- Estas son algunas de las maneras en las que puede usar la vista de subprocesos:  
-  
--   Identificar las razones por las que la interfaz de usuario (UI) de una aplicación no responde durante ciertas fases de ejecución.  
-  
--   Identificar la cantidad de tiempo dedicado al bloqueo de sincronización, E/S, errores de página y otros eventos.  
-  
--   Identificar el grado de interferencias de otros procesos que se ejecutan en el sistema.  
-  
--   Identificar problemas de equilibrio de carga para la ejecución en paralelo.  
-  
--   Identificar los motivos por los que la escalabilidad es poco óptima o no existe (por ejemplo, por qué no mejora el rendimiento de una aplicación paralela cuando están disponibles más núcleos lógicos).  
-  
--   Entender el grado de simultaneidad en la aplicación, para ayudar en la ejecución en paralelo.  
-  
--   Comprender las dependencias entre los subprocesos de trabajo y las rutas críticas de ejecución.  
-  
-## <a name="examine-specific-time-intervals-and-threads"></a>Examinar los subprocesos y los intervalos de tiempo específicos  
- La vista de subprocesos muestra una escala de tiempo. Puede hacer zoom y desplazarse dentro de la escala de tiempo para examinar intervalos específicos y subprocesos de la aplicación. En el eje x está el tiempo y en el eje y están varios canales:  
+## <a name="timeline-analysis"></a>Análisis de la escala de tiempo  
+
+La parte superior de la vista **Subprocesos** es una escala de tiempo. La escala de tiempo muestra la actividad de todos los subprocesos del proceso y todos los dispositivos de disco físicos en el equipo host. También muestra los eventos de actividad y de marcador de GPU.  
+
+En la escala de tiempo, el eje x es el tiempo, mientras que en el eje y hay varios canales:  
   
 - Dos canales de E/S para cada unidad de disco en el sistema, un canal para las lecturas y otro para las escrituras.  
-  
 - Un canal para cada subproceso del proceso.  
-  
 - Canales de marcador, si hay eventos de marcador en el seguimiento. Los canales de marcador aparecen inicialmente en los canales de subproceso que generaron los eventos.  
-  
 - Canales de GPU.  
   
-  Aquí tiene una ilustración de la vista de subprocesos:  
+En principio, los subprocesos se clasifican en el orden en que se han creado, por lo que el subproceso de aplicación principal es el primero. Seleccione otra opción de la lista desplegable **Ordenar por** para ordenar los subprocesos por otro criterio, como **Ejecución**. 
+
+Los colores de la escala de tiempo indican el estado de un subproceso en un momento dado. Los segmentos verdes se están ejecutando, los segmentos rojos tienen la sincronización bloqueada, los segmentos amarillos se han adelantado y los segmentos púrpura están ocupados en la E/S del dispositivo. 
+
+Puede ampliar para ver más detalles o reducir para ver un intervalo de tiempo más largo. Seleccione segmentos y puntos en el gráfico para obtener detalles sobre categorías, horas de inicio, retrasos y estados de la pila de llamadas.  
+
+Use la escala de tiempo para examinar el equilibro de trabajo entre los subprocesos que intervienen en un bucle paralelo o en tareas simultáneas. Si un subproceso está tardando más tiempo en completarse que los demás, el trabajo puede estar desequilibrado. Puede mejorar el rendimiento de la aplicación si distribuye el trabajo de manera más uniforme entre los subprocesos.  
   
-  ![Vista de subprocesos](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
-  Vista de subprocesos  
+Si solo hay un subproceso en ejecución en un momento determinado, es posible que la aplicación no esté aprovechando la simultaneidad en el sistema. Puede usar el gráfico de escala de tiempo para examinar las dependencias entre los subprocesos y las relaciones temporales entre los subprocesos de bloqueo y bloqueados. Para reorganizar los subprocesos, seleccione uno y luego el icono Arriba o Abajo en la barra de herramientas. 
+
+Puede ocultar los subprocesos que no realizan ningún trabajo o que están completamente bloqueados, ya que sus estadísticas son irrelevantes y pueden colapsar los informes. Oculte subprocesos al seleccionar sus nombres y luego los iconos **Ocultar subprocesos seleccionados** u **Ocultar todos salvo los subprocesos seleccionados** en la barra de herramientas. Para identificar los subprocesos que se van a ocultar, seleccione el vínculo **Resumen por subproceso** de la parte inferior izquierda. Puede ocultar los subprocesos que no tienen actividad en el gráfico **Resumen por subproceso**. 
+
+### <a name="thread-execution-details"></a>Detalles de ejecución de subprocesos  
+Para obtener información más detallada sobre un segmento de ejecución, seleccione un punto en un segmento verde de la escala de tiempo. El Visualizador de simultaneidad muestra un símbolo de intercalación negro sobre el punto seleccionado y presenta su pila de llamadas en la pestaña **Actual** del panel inferior. Puede seleccionar varios puntos en el segmento de ejecución.  
   
-  Inicialmente, los subprocesos se ordenan en el orden en que se crean, por lo que el subproceso de aplicación principal es el primero. Puede utilizar la opción de ordenación en la esquina superior izquierda de la vista para ordenar los subprocesos por otro criterio (por ejemplo, por la mayor parte de trabajo de ejecución realizado).  
+>[!NOTE]
+>Es posible que el Visualizador de simultaneidad no pueda resolver una selección en un segmento de ejecución si la duración del segmento es inferior a un milisegundo.  
   
-  Puede ocultar los subprocesos que no están realizando trabajo seleccionando sus nombres en la columna de la izquierda y después eligiendo el botón **Ocultar subprocesos seleccionados** en la barra de herramientas. Se recomienda que oculte los subprocesos completamente bloqueados porque sus estadísticas son irrelevantes y pueden bloquear los informes.  
-  
-  Para identificar los subprocesos adicionales que se deben ocultar, en la leyenda activa, elija el informe **Resumen por subproceso** en la pestaña **Informe de perfil**. Esto muestra el gráfico de desglose de ejecución, que muestra el estado de los subprocesos para el intervalo de tiempo seleccionado. En algunos niveles de zoom, podrían no mostrarse algunos subprocesos. Cuando esto ocurre, se muestran puntos suspensivos situados a la derecha.  
-  
-  Cuando haya seleccionado un intervalo de tiempo y algunos subprocesos en él, puede iniciar el análisis de rendimiento.  
-  
-## <a name="analysis-tools"></a>Herramientas de análisis  
- Esta sección describe los informes y otras herramientas de análisis.  
+Para obtener un perfil de ejecución de todos los subprocesos no ocultos del intervalo de tiempo seleccionado, seleccione **Ejecución** en la leyenda de la parte inferior izquierda.  
   
 ### <a name="thread-blocking-details"></a>Detalles del bloqueo de subproceso  
- Para obtener información acerca de los eventos de bloqueo en una región determinada de un subproceso, sitúe el puntero en dicha región para mostrar una información sobre herramientas. Contiene información como la categoría, la hora de inicio de la región, la duración del bloqueo y una API de bloqueo si hay alguna. Si selecciona la región de bloqueo, la pila en ese momento en el tiempo se muestra en el panel inferior, junto con la misma información que se muestra en la información sobre herramientas. Al examinar la pila de llamadas puede determinar la razón subyacente para el evento de bloqueo de subprocesos. Puede encontrar información de procesos y subprocesos adicional seleccionando el segmento y examinando la ficha actual.  
+Para obtener información sobre una región determinada de un subproceso, mantenga el puntero sobre esa región en la escala de tiempo para mostrar una información sobre herramientas. La información sobre herramientas tiene información como la categoría, la hora de inicio y el retraso. Seleccione la región para mostrar la pila de llamadas en ese momento dado en la pestaña **Actual** del panel inferior. El panel también muestra la categoría, el retraso, la API de bloqueo, si la hubiera, y el subproceso de desbloqueo, si hubiera alguno. Al examinar la pila de llamadas, puede determinar las razones subyacentes de los eventos de bloqueo de subprocesos.  
   
- Una ruta de acceso de ejecución puede tener varios eventos de bloqueo. Puede examinarla por categoría de bloqueo para poder encontrar áreas problemáticas más rápidamente. Elija una de las categorías de bloqueo en la leyenda de la izquierda.  
+Una ruta de acceso de ejecución puede tener varios eventos de bloqueo. Para examinarlos por categoría de bloqueo e identificar las áreas problemáticas más rápidamente, seleccione una categoría de bloqueo en la leyenda de la izquierda.  
   
 ### <a name="dependencies-between-threads"></a>Dependencias entre subprocesos  
- El visualizador de simultaneidad puede mostrar las dependencias entre los subprocesos del proceso para que pueda determinar lo que estaba intentando hacer un subproceso bloqueado y obtener información acerca de qué otro subproceso le permitió ejecutarse. Para determinar qué subproceso desbloqueó otro subproceso, seleccione el segmento de bloqueo pertinente. Si el visualizador de simultaneidad puede determinar el subproceso de desbloqueo, dibuja una línea entre el subproceso de desbloqueo y el segmento de ejecución que sigue el segmento de bloqueo. Además, la pestaña **Pila de desbloqueo** muestra la pila de llamadas pertinente.  
+El Visualizador de simultaneidad muestra dependencias entre subprocesos, así que puede determinar lo que estaba intentando hacer un subproceso bloqueado y qué otro subproceso le ha permitido ejecutarse. 
+
+Para determinar qué subproceso ha desbloqueado a otro, seleccione el segmento de bloqueo en la escala de tiempo. Si el visualizador de simultaneidad puede determinar el subproceso de desbloqueo, dibuja una línea entre el subproceso de desbloqueo y el segmento de ejecución que sigue el segmento de bloqueo. Seleccione la pestaña **Pila de desbloqueo** en el panel inferior para ver la pila de llamadas correspondiente.  
   
-### <a name="thread-execution-details"></a>Detalles de ejecución de subprocesos  
- En el gráfico de escala de tiempo de un subproceso, los segmentos verdes muestran cuando se ejecuta código. Puede obtener información más detallada sobre un segmento de ejecución.  
+## <a name="profile-reports"></a>Informes de perfil 
+Debajo del gráfico de escala de tiempo hay un panel con las pestañas de informe **Informe de perfil**, **Actual** y **Pila de desbloqueo**. Los informes se actualizan automáticamente a medida que se cambian las selecciones de la escala de tiempo y los subprocesos. En el caso de seguimientos de gran tamaño, el panel de informes podría no estar disponible temporalmente mientras se calculan las actualizaciones. 
+
+### <a name="profile-report-tab"></a>Pestaña Informe de perfil 
+
+**Informe de perfil** tiene dos filtros:
+
+- Para filtrar las entradas del árbol de llamadas en las que se ha invertido poco tiempo, escriba un valor de filtro entre 0 y 99 por ciento en el campo **Reducción de nodos irrelevantes en**. El valor predeterminado es 2 por ciento. 
+- Para ver los árboles de llamadas únicamente de su código, active la casilla **Solo mi código**. Para ver todos los árboles de llamadas, desactive la casilla.  
+
+La pestaña **Informe de perfil** muestra informes de las categorías y los vínculos de la leyenda. Para mostrar un informe, seleccione una de las entradas de la izquierda:  
+
+- **Ejecución**  
+  El informe **Ejecución** muestra el desglose del tiempo que la aplicación ha invertido en la ejecución.  
   
- Cuando se selecciona un punto en un segmento de ejecución, el visualizador de simultaneidad busca ese punto en el tiempo en la pila de llamadas correspondiente y después muestra un símbolo de intercalación negro sobre el punto seleccionado en el segmento de ejecución y muestra la propia pila de llamadas en la pestaña **Pila actual**. Puede seleccionar varios puntos en el segmento de ejecución.  
+  Para buscar la línea de código donde transcurre el tiempo de ejecución, expanda el árbol de llamadas y, en el menú contextual de la entrada del árbol de llamadas, seleccione **Ver código fuente** o **Ver sitios de llamada**. **Ver código fuente** localiza la línea de código ejecutada. **Ver sitios de llamada** localiza la línea de código que ha llamado a la línea ejecutada. Si solo existe una línea de sitio de llamada, se resalta su código. Si hay varios sitios de llamada, seleccione el que quiera en el cuadro de diálogo y luego **Ir a código fuente**. A menudo resulta más útil buscar el sitio de llamada que tiene el mayor número de instancias, más tiempo o ambos valores. Para obtener más información, vea [Informe de perfil de ejecución](../profiling/execution-profile-report.md).  
   
-> [!NOTE]
->  Es posible que el visualizador de simultaneidad no pueda resolver una selección en un segmento de ejecución. Normalmente, esto ocurre cuando la duración del segmento es inferior a un milisegundo.  
+- **Sincronización**  
+  El informe **Sincronización** muestra las llamadas responsables de los bloqueos de sincronización, junto con el tiempo de bloqueo total de cada pila de llamadas. Para obtener más información, vea [Tiempo de sincronización](../profiling/synchronization-time.md).  
   
- Para obtener un perfil de ejecución para todos los subprocesos habilitados (no ocultos) en el intervalo de tiempo seleccionado, elija el botón **Ejecución** en la leyenda activa.  
+- **E/S**  
+  El informe **E/S** muestra las llamadas responsables de los bloqueos de E/S, junto con el tiempo de bloqueo total de cada pila de llamadas. Para obtener más información, vea [Tiempo de E/S (Vista de subprocesos)](../profiling/i-o-time-threads-view.md).  
   
-### <a name="timeline-graph"></a>Gráfico de escala de tiempo  
- El gráfico de escala de tiempo muestra la actividad de todos los subprocesos en el proceso y todos los dispositivos de disco físico en el equipo host. También muestra los eventos de actividad y de marcador de GPU.  Puede ampliar para ver más detalles o reducir para ver un intervalo más largo de tiempo. También puede seleccionar puntos en el gráfico para obtener detalles sobre las categorías, las horas de inicio, las duraciones y los estados de la pila de llamadas.  
+- **Suspensión**  
+  El informe **Suspensión** muestra las llamadas responsables de los bloqueos de suspensión, junto con el tiempo de bloqueo total de cada pila de llamadas. Para más información, vea [Tiempo de suspensión](../profiling/sleep-time.md).  
   
- En el gráfico de escala de tiempo, un color indica el estado de un subproceso en un momento dado. Por ejemplo, los segmentos verdes se estaban ejecutando, los segmentos rojos se bloquearon para la sincronización, los segmentos amarillos se adelantaron y los segmentos púrpura realizaban E/S del dispositivo. Puede utilizar esta vista para examinar el equilibro de trabajo entre los subprocesos que intervienen en un bucle paralelo o en tareas simultáneas. Si un subproceso está tardando más tiempo en completarse que otros, el trabajo puede verse desequilibrado. Puede utilizar esta información para mejorar el rendimiento del programa distribuyendo el trabajo uniformemente entre los subprocesos.  
+- **Administración de memoria**  
+  El informe **Administración de memoria** muestra las llamadas en las que se han producido bloqueos de administración de memoria, junto con el tiempo de bloqueo total de cada pila de llamadas. Use esta información para identificar las áreas que tienen problemas de recolección de elementos no utilizados o de paginación excesiva.  Para más información, vea [Tiempo de administración de la memoria](../profiling/memory-management-time.md).  
   
- Si solo hay un subproceso verde (en ejecución) en un momento determinado, es posible que la aplicación no esté aprovechando la simultaneidad en el sistema. Puede usar el gráfico de escala de tiempo para examinar las dependencias entre los subprocesos y las relaciones temporales entre y los subprocesos de bloqueo y bloqueados. Para reorganizar los subprocesos, seleccione uno y después, en la barra de herramientas, elija el botón Arriba o Abajo. Para ocultar los subprocesos, selecciónelos y después elija el botón **Ocultar subprocesos**.  
+- **Adelantamiento**  
+  El informe **Adelantamiento** muestra los puntos en que los procesos del sistema han adelantado al proceso actual, así como los subprocesos individuales que han reemplazado a los subprocesos del proceso actual. Puede utilizar esta información para identificar los procesos y subprocesos más responsables del adelantamiento. Para más información, vea [Tiempo de adelantamiento](../profiling/preemption-time.md).  
   
-### <a name="profile-reports"></a>Informes de perfil  
- Debajo de la gráfica de escala de tiempo se encuentra un perfil de escala de tiempo y un panel con pestañas para varios informes. Los informes se actualizan automáticamente a medida que cambia la vista de subprocesos. Para seguimientos de gran tamaño, el panel de informes podría no estar disponible mientras se calculan las actualizaciones. Cada informe tiene dos ajustes de filtro: reducción de ruido y Solo mi código. Utilice la reducción de ruido para filtrar las entradas del árbol de llamadas en las que se empleó poco tiempo. El valor de filtro predeterminado es 2 por ciento, pero puede ajustarlo desde 0 hasta 99 por ciento. Para ver solo el árbol de llamadas para su código, seleccione la casilla **Solo mi código**. Para ver todos los árboles de llamadas, desmárquela.  
+- **Procesamiento de UI**  
+  El informe **Procesamiento de UI** muestra las llamadas responsables de los bloqueos de procesamiento de UI, junto con el tiempo de bloqueo total de cada pila de llamadas. Para más información, vea [Tiempo de procesamiento de la interfaz de usuario](../profiling/ui-processing-time.md).  
   
-#### <a name="profile-report"></a>Informe de perfil  
- Esta ficha muestra los informes que se corresponden con las entradas de la leyenda activa. Para mostrar un informe, elija una de las entradas.  
+- **Resumen por subproceso**  
+  Seleccione **Resumen por subproceso** para ver un gráfico que muestra el estado de los subprocesos del intervalo de tiempo seleccionado. Las columnas codificadas por colores muestran el tiempo total que cada subproceso ha estado en ejecución, bloqueado, en E/S y en otros estados. Los subprocesos se etiquetan en la parte inferior. Al ajustar el nivel de zoom en el gráfico de escala de tiempo, este gráfico se actualiza automáticamente. 
   
-#### <a name="current-stack"></a>Pila actual  
- Esta pestaña muestra la pila de llamadas para un punto seleccionado en un segmento de subproceso en el gráfico de escala de tiempo. Las pilas de llamadas se recortan para mostrar únicamente la actividad relacionada con el programa.  
+  En algunos niveles de zoom, es posible que algunos subprocesos no se muestren en el gráfico. Si sucede eso, aparecen puntos suspensivos (**...**) a la derecha. Si el subproceso que desea no aparece, puede ocultar otros subprocesos. Para obtener más información, vea [Informe de resumen por subproceso](../profiling/per-thread-summary-report.md).  
   
-#### <a name="unblocking-stack"></a>Pila de desbloqueo  
- Para ver qué subproceso desbloqueó el subproceso seleccionado, y en qué línea de código lo hizo, elija la pestaña **Pila de desbloqueo**.  
+- **Operaciones en disco**  
+  Seleccione **Operaciones en disco** para mostrar los procesos y subprocesos implicados en la E/S de disco del proceso actual, los archivos que han modificado (por ejemplo, archivos DLL cargados), cuántos bytes leen y otra información. Puede usar este informe para evaluar el tiempo invertido en acceder a archivos durante la ejecución, especialmente si el proceso parece estar enlazado a E/S. Para obtener más información, vea [Informe de operaciones en disco](../profiling/disk-operations-report-threads-view.md).  
   
-#### <a name="execution"></a>Execution  
- El informe de ejecución muestra el desglose del tiempo que la aplicación estuvo ejecutándose.  
+### <a name="current-tab"></a>Pestaña actual  
+Esta pestaña muestra la pila de llamadas para un punto seleccionado en un segmento de subproceso en el gráfico de escala de tiempo. Las pilas de llamadas se recortan para mostrar únicamente la actividad relacionada con la aplicación.  
   
- Para buscar la línea de código donde transcurre el tiempo de ejecución, expanda el árbol de llamadas y después, en el menú de función para la entrada del árbol de llamadas, elija **Ver código fuente** o **Ver sitios de llamada**. **Ver código fuente** localiza la línea de código ejecutada. **Ver sitios de llamada** localiza la línea de código que llamó a la línea de código ejecutada. Si solo existe un sitio de llamada, se resalta su línea de código. Si existen varios sitios de llamada, puede seleccionar la que desee en el cuadro de diálogo que aparece y después elija el botón **Ir a código fuente** para resaltar el código del sitio de llamada. A menudo resulta más útil buscar el sitio de llamada que tiene el mayor número de instancias, más tiempo o ambos valores. Para obtener más información, vea [Informe de perfil de ejecución](../profiling/execution-profile-report.md).  
-  
-#### <a name="synchronization"></a>Sincronización  
- El informe de sincronización muestra las llamadas responsables de los bloqueos de sincronización, junto con el tiempo de bloqueo agregado de cada pila de llamadas. Para obtener más información, vea [Tiempo de sincronización](../profiling/synchronization-time.md).  
-  
-#### <a name="io"></a>E/S  
- El informe de E/S muestra las llamadas responsables de los bloqueos de E/S, junto con el tiempo de bloqueo agregado de cada pila de llamadas. Para obtener más información, vea [Tiempo de E/S (vista Subprocesos)](../profiling/i-o-time-threads-view.md).  
-  
-#### <a name="sleep"></a>Sleep  
- El informe de reposo muestra las llamadas responsables de los bloqueos de reposo, junto con el tiempo de bloqueo agregado de cada pila de llamadas. Para más información, vea [Tiempo de suspensión](../profiling/sleep-time.md).  
-  
-#### <a name="memory-management"></a>Administración de la memoria  
- El informe de administración de memoria muestra las llamadas en las que se produjeron bloqueos de la administración de memoria, junto con el tiempo de bloqueo agregado de cada pila de llamadas. Puede utilizar esta información para identificar las áreas que tienen problemas de recolección de elementos no utilizados o de paginación excesiva.  Para más información, vea [Tiempo de administración de la memoria](../profiling/memory-management-time.md).  
-  
-#### <a name="preemption"></a>Adelantamiento  
- El informe de adelantamiento muestra las instancias donde los procesos del sistema se adelantaron al proceso actual y los subprocesos individuales que reemplazaron subprocesos del proceso actual. Puede utilizar esta información para identificar los procesos y subprocesos más responsables del adelantamiento. Para más información, vea [Tiempo de adelantamiento](../profiling/preemption-time.md).  
-  
-#### <a name="ui-processing"></a>Procesamiento de IU  
- El informe de procesamiento de IU muestra las llamadas responsables de los bloqueos de procesamiento de IU, junto con el tiempo de bloqueo agregado de cada pila de llamadas. Para más información, vea [Tiempo de procesamiento de la interfaz de usuario](../profiling/ui-processing-time.md).  
-  
-#### <a name="per-thread-summary"></a>Resumen por subproceso  
- Esta pestaña muestra una vista de columna codificada por colores del tiempo total que cada subproceso ha estado en ejecución, bloqueado, en E/S y en otros estados. Las columnas se etiquetan en la parte inferior. Al ajustar el nivel de zoom en el gráfico de escala de tiempo, esta ficha se actualiza automáticamente. En algunos niveles de zoom, podrían no mostrarse algunos subprocesos. Cuando esto ocurre, se muestran puntos suspensivos situados a la derecha. Si el subproceso que desea no aparece, puede ocultar otros subprocesos. Para obtener más información, vea [Informe de resumen por subproceso](../profiling/per-thread-summary-report.md).  
-  
-#### <a name="disk-operations"></a>Operaciones en disco  
- Esta pestaña muestra los procesos y subprocesos implicados en E/S de disco en nombre del proceso actual, los archivos que modifican (por ejemplo, archivos DLL cargados), cuántos bytes se leyeron y otra información. Este informe puede usarse para evaluar el tiempo invertido en obtener acceso a archivos durante la ejecución, especialmente si el proceso parece estar enlazado a E/S. Para obtener más información, vea [Informe de operaciones en disco](../profiling/disk-operations-report-threads-view.md).  
+### <a name="unblocking-stack-tab"></a>Pestaña Pila de desbloqueo 
+Esta pestaña muestra qué subproceso ha desbloqueado el subproceso seleccionado y la pila de llamadas de desbloqueo.  
   
 ## <a name="see-also"></a>Vea también  
  [Visualizador de simultaneidad](../profiling/concurrency-visualizer.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 568a829ff10cbee535729361b7c95dd7db6814f5
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: c8f826db0c619e1dfb5811aaf9d0c5ef40093c97
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948074"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388678"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 
@@ -28,7 +28,7 @@ Restaura la configuración predeterminada de Visual Studio e inicia automáticam
 La configuración predeterminada se determina mediante el perfil que se ha seleccionado cuando se ha iniciado Visual Studio por primera vez.
 
 > [!TIP]
-> Para obtener información sobre cómo restablecer la configuración mediante el entorno de desarrollo integrado (IDE), vea [Restablecer la configuración](../synchronized-settings-in-visual-studio.md#reset-settings).
+> Para obtener información sobre cómo restablecer la configuración mediante el entorno de desarrollo integrado (IDE), vea [Restablecer la configuración](../environment-settings.md#reset-settings).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,6 +58,6 @@ Devenv.exe /ResetSettings "C:\My Files\MySettings.vssettings"
 
 ## <a name="see-also"></a>Vea también
 
-- [Restablecer la configuración](../synchronized-settings-in-visual-studio.md#reset-settings)
+- [Configuración del entorno](../environment-settings.md)
 - [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)
 - [Modificadores de línea de comandos para Devenv](../../ide/reference/devenv-command-line-switches.md)
