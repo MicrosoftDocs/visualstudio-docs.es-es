@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af0a07abe1cbb380acde91067e3e6252d0cd8596
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4dc45c624d44ed550fb491fc57638ba033090346
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830059"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388113"
 ---
-# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Cómo: publicar una aplicación WPF con estilos visuales habilitados
+# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Cómo: Publicar una aplicación WPF con estilos visuales habilitados
 Los estilos visuales permiten cambiar el aspecto de los controles comunes en función del tema elegido por el usuario. De forma predeterminada, los estilos visuales no están habilitados para las aplicaciones de Windows Presentation Foundation (WPF), por lo que es necesario habilitarlos manualmente. Sin embargo, habilitar los estilos visuales para una aplicación WPF y publicar después la solución produce un error. En este tema se describe cómo resolver este error y el proceso para publicar una aplicación WPF con estilos visuales habilitados. Para obtener más información sobre los estilos visuales, vea [información general de los estilos visuales](/windows/desktop/Controls/visual-styles-overview). Para obtener más información sobre el mensaje de error, consulte [solucionar los errores específicos en las implementaciones de ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
   
  Para resolver el error y publicar la solución, debe realizar las tareas siguientes:  
@@ -34,12 +34,16 @@ Los estilos visuales permiten cambiar el aspecto de los controles comunes en fun
   
 ##  <a name="publish-the-solution-without-visual-styles-enabled"></a>Publicar la solución sin estilos visuales habilitados  
   
-1.  Asegúrese de que el proyecto no tiene estilos visuales habilitados. En primer lugar, compruebe el archivo de manifiesto del proyecto para el siguiente código XML. A continuación, si el XML está presente, inclúyalo en una etiqueta de comentario.  
+1.  Asegúrese de que el proyecto no tiene estilos visuales habilitados. En primer lugar, compruebe si existe el XML siguiente en el archivo de manifiesto del proyecto. A continuación, si el XML está presente, inclúyalo en una etiqueta de comentario.  
   
      Los estilos visuales están deshabilitados de manera predeterminada.  
   
     ```xml  
-    <dependency>    <dependentAssembly>      <assemblyIdentity          type="win32"          name="Microsoft.Windows.Common-Controls"          version="6.0.0.0"          processorArchitecture="*"          publicKeyToken="6595b64144ccf1df"          language="*"        />    </dependentAssembly>  </dependency>  
+    <dependency>
+        <dependentAssembly>
+            <assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version="6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" language="*" />
+        </dependentAssembly>
+    </dependency>
     ```  
   
      Los procedimientos siguientes muestran cómo abrir el archivo de manifiesto asociado al proyecto.  
@@ -50,7 +54,7 @@ Los estilos visuales permiten cambiar el aspecto de los controles comunes en fun
   
          Aparecerán las páginas de propiedades del proyecto de WPF.  
   
-    2.  En el **aplicación** ficha, elija **configuración de Windows Vista**.  
+    2.  En la pestaña **Aplicación**, elija **Ver configuración de Windows**.  
   
          El archivo app.manifest se abrirá en el **Editor de código**.  
   
@@ -60,12 +64,12 @@ Los estilos visuales permiten cambiar el aspecto de los controles comunes en fun
   
          Aparecerán las páginas de propiedades del proyecto de WPF.  
   
-    2.  En el **aplicación** pestaña, tome nota del nombre que aparece en el campo de manifiesto. Este es el nombre del manifiesto que está asociado al proyecto.  
+    2.  En la pestaña **Aplicación**, anote el nombre que aparece en el campo de manifiesto. Este es el nombre del manifiesto que está asociado al proyecto.  
   
         > [!NOTE]
-        >  Si **incrustar manifiesto con configuración predeterminada** o **crear aplicación sin manifiesto** aparecen en el campo de manifiesto, no están habilitados los estilos visuales. Si el nombre de un archivo de manifiesto aparece en el campo de manifiesto, continúe con el paso siguiente de este procedimiento.  
+        >  Si aparece **Incrustar manifiesto con configuración predeterminada** o **Crear aplicación sin manifiesto** en el campo de manifiesto, los estilos visuales no están habilitados. Si el nombre de un archivo de manifiesto aparece en el campo de manifiesto, continúe con el paso siguiente de este procedimiento.  
   
-    3.  En **el Explorador de soluciones**, elija **mostrar todos los archivos**.  
+    3.  En el **Explorador de soluciones**, elija **Mostrar todos los archivos**.  
   
          Este botón muestra todos los elementos del proyecto, incluidos los que se han excluido y los que normalmente están ocultos. El archivo de manifiesto aparece como un elemento de proyecto.  
   
@@ -78,23 +82,34 @@ Los estilos visuales permiten cambiar el aspecto de los controles comunes en fun
      Este XML describe el ensamblado que contiene los controles que admiten estilos visuales.  
   
     ```xml  
-    <?xml version="1.0" encoding="utf-8"?><asmv1:assembly manifestVersion="1.0"                xmlns="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  <dependency>    <dependentAssembly>      <assemblyIdentity        type="win32"        name="Microsoft.Windows.Common-Controls"        version="6.0.0.0"        processorArchitecture="*"        publicKeyToken="6595b64144ccf1df"        language="*"        />    </dependentAssembly>  </dependency></asmv1:assembly>  
+    <?xml version="1.0" encoding="utf-8"?>
+    <asmv1:assembly manifestVersion="1.0" 
+        xmlns="urn:schemas-microsoft-com:asm.v1" 
+        xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" 
+        xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <dependency>
+            <dependentAssembly>
+                <assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version="6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" language="*" />
+            </dependentAssembly>
+        </dependency>
+    </asmv1:assembly>
     ```  
   
-2.  En el Bloc de notas, haga clic en **archivo**y, a continuación, haga clic en **Guardar como**.  
+2.  En Bloc de notas, haga clic en **Archivo** y después en **Guardar como**.  
   
-3.  En el **Guardar como** cuadro de diálogo el **Guardar como tipo** lista desplegable, seleccione **todos los archivos**.  
+3.  En el cuadro de diálogo **Guardar como**, en la lista desplegable **Guardar como tipo**, seleccione **Todos los archivos**.  
   
-4.  En el **nombre de archivo** cuadro el nombre del archivo y anexar *.manifest* al final del nombre de archivo. Por ejemplo: *themes.manifest*.  
+4.  En el cuadro **Nombre de archivo**, asigne un nombre al archivo y anexe *.manifest* al final de dicho nombre. Por ejemplo: *themes.manifest*.  
   
-5.  Elija la **examinar carpetas** botón, seleccione cualquier carpeta y, a continuación, haga clic en **guardar**.  
+5.  Elija el botón **Examinar carpetas**, seleccione una carpeta y después haga clic en **Guardar**.  
   
     > [!NOTE]
-    >  Los procedimientos restantes se supone que el nombre de este archivo es *themes.manifest* y que el archivo se guarda en el *C:\temp* directorio en el equipo.  
+    >  Los procedimientos restantes dan por supuesto que el nombre de este archivo es *themes.manifest* y que el archivo se guardará en el directorio de *C:\temp* del equipo.  
   
 ## <a name="embed-the-manifest-file-into-the-executable-file-of-the-published-solution"></a>Incrustar el archivo de manifiesto en el archivo ejecutable de la solución publicada  
   
-1. Abra el **símbolo del sistema de Visual Studio**.  
+1. Abra el **Símbolo del sistema de Visual Studio**.  
   
     Para obtener más información sobre cómo abrir el **Visual Studio Command Prompt**, consulte [símbolos](/dotnet/framework/tools/developer-command-prompt-for-vs).  
   
@@ -163,7 +178,7 @@ Los estilos visuales permiten cambiar el aspecto de los controles comunes en fun
   
 ## <a name="see-also"></a>Vea también
 
--[Solución de problemas de errores específicos en las implementaciones de ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
+-[Solucionar problemas de errores específicos de las implementaciones ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 - [Información general de los estilos visuales](/windows/desktop/Controls/visual-styles-overview)
 - [Habilitar los estilos visuales](/windows/desktop/Controls/cookbook-overview)
 - [Símbolos del sistema](/dotnet/framework/tools/developer-command-prompt-for-vs)
