@@ -1,6 +1,6 @@
 ---
 title: Agregar nuevos orígenes de datos
-ms.date: 11/04/2016
+ms.date: 11/21/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.datasource.datasourcefieldspicker
@@ -15,16 +15,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1bbe808f1c43e0f4083f5ed1d04db347560a2630
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: MT
+ms.openlocfilehash: fe32424632d06ed637b41dcd3d4b614afde369bd
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35666636"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304615"
 ---
 # <a name="add-new-data-sources"></a>Agregar nuevos orígenes de datos
 
-En el contexto de las herramientas de datos de .NET en Visual Studio, el término *origen de datos* hace referencia a objetos de .NET que se conectan a un almacén de datos y exponen los datos a una aplicación. NET. Los diseñadores de Visual Studio pueden consumir la salida del origen de datos para generar el código reutilizable que enlaza los datos a los formularios al arrastrar y colocar los objetos de base de datos desde el **orígenes de datos** ventana. Este tipo de origen de datos puede ser:
+En el contexto de las herramientas de datos de .NET en Visual Studio, el término *origen de datos* hace referencia a objetos de .NET que se conectan a un almacén de datos y hacer que los datos disponibles para una aplicación .NET. Los diseñadores de Visual Studio pueden consumir la salida del origen de datos para generar el código reutilizable que enlaza los datos a los formularios al arrastrar y colocar los objetos de base de datos desde el **orígenes de datos** ventana. Este tipo de origen de datos puede ser:
 
 - Una clase en un modelo de Entity Framework que está asociado a algún tipo de base de datos.
 
@@ -43,7 +43,16 @@ Crear y editar orígenes de datos mediante el **Asistente para configuración de
 
 ![Asistente para configuración de orígenes de datos](../data-tools/media/data-source-configuration-wizard.png)
 
-Después de crear un origen de datos, aparece en el **orígenes de datos** ventana de herramientas (**MAYÚS**+**Alt**+**d.** o **vista** > **otros Windows** > **origen de datos**). Puede arrastrar un origen de datos desde el **orígenes de datos** ventana hasta una superficie de diseño del formulario o control. Esto hace que generar código reutilizable que muestra los datos del almacén de datos. La siguiente ilustración muestra un conjunto de datos que se ha quitado en un formulario de Windows. Si selecciona **F5** en la aplicación, los datos de la base de datos subyacente aparecen en los controles del formulario.
+## <a name="data-sources-window"></a>Ventana de orígenes de datos
+
+Después de crear un origen de datos, aparece en el **orígenes de datos** ventana de herramientas.
+
+> [!TIP]
+> Para abrir el **orígenes de datos** , asegúrese de que el proyecto está abierto y, a continuación, presione **MAYÚS**+**Alt**+**d.** o elija **vista** > **Other Windows** > **orígenes de datos**.
+
+Puede arrastrar un origen de datos desde el **orígenes de datos** ventana hasta una superficie de diseño del formulario o control. Esto hace que generar código reutilizable que muestra los datos del almacén de datos.
+
+La siguiente ilustración muestra un conjunto de datos que se ha quitado en un formulario de Windows. Si selecciona **F5** en la aplicación, los datos de la base de datos subyacente aparecen en los controles del formulario.
 
 ![Operación de arrastre del origen de datos](../data-tools/media/raddata-data-source-drag-operation.png)
 
@@ -79,14 +88,14 @@ Cuando se crea un origen de datos de un servicio, Visual Studio agrega una refer
 
 Puede crear un origen de datos de los siguientes tipos de servicios:
 
-- [Data Services de WCF](/dotnet/framework/data/wcf/wcf-data-services-overview)
+- [Servicios de datos de WCF](/dotnet/framework/data/wcf/wcf-data-services-overview)
 
-- [Servicios de WCF](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Servicios WCF](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 
 - servicios Web
 
     > [!NOTE]
-    > Los elementos que aparecen en la **orígenes de datos** ventana dependen de los datos que devuelve el servicio. Algunos servicios podrían no proporcionar suficiente información para el **Asistente para configuración de origen de datos** para crear objetos enlazables. Por ejemplo, si el servicio devuelve un conjunto de datos sin tipo, no hay elementos aparecen en la **orígenes de datos** ventana cuando se complete el asistente. Esto es porque los datasets no escritos no proporcionan un esquema y, por lo tanto, el asistente no tiene información suficiente para crear el origen de datos.
+    > Los elementos que aparecen en la **orígenes de datos** ventana dependen de los datos que devuelve el servicio. Algunos servicios podrían no proporcionar suficiente información para que el **Asistente para configuración de orígenes de datos** pueda crear objetos enlazables. Por ejemplo, si el servicio devuelve un conjunto de datos sin tipo, no hay elementos aparecen en la **orígenes de datos** ventana cuando se complete el asistente. Esto es porque los datasets no escritos no proporcionan un esquema y, por lo tanto, el asistente no tiene información suficiente para crear el origen de datos.
 
 ## <a name="data-source-for-an-object"></a>Origen de datos para un objeto
 

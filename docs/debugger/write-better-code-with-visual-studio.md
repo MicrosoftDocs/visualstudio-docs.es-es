@@ -2,7 +2,7 @@
 title: Permitir que Visual Studio le ayudarán a escribir C# código con menos errores
 description: Aprender a escribir código mejor con menos errores
 ms.custom: debug-experiments
-ms.date: 10/30/2018
+ms.date: 11/20/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 914b4332a715c86aab7e1fad7d901231cbfd40c5
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
-ms.translationtype: MT
+ms.openlocfilehash: 2c16cfdc8d554ce9bf556ea707f977989e1dab72
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948964"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389382"
 ---
-# <a name="write-better-c-code-using-visual-studio"></a>Escribir mejor C# código con Visual Studio
+# <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>Corregir errores al escribir mejor C# código con Visual Studio
 
 Depuración de código puede llevar mucho tiempo y a veces frustrante--la tarea. Tarda en obtener información sobre cómo depurar de forma eficaz. Un eficaz IDE como Visual Studio puede hacer su trabajo mucho más fácil. Un IDE puede ayudarle a depurar el código más rápidamente y no sólo eso, sino también puede ayudarle a escribir código mejor con menos errores. Nuestro objetivo en este artículo es proporcionarle una visión holística del proceso de depuración, para que sepa cuándo se debe usar el analizador de código, al que se usará el depurador y cuándo usar otras herramientas.
 
@@ -42,7 +42,7 @@ Si lo prefiere, puede crear una aplicación de consola de .NET Framework o .NET 
 Para crear la aplicación, abra Visual Studio y elija **archivo > Nuevo proyecto**. En **Visual C#** , elija **Windows Desktop** o **.NET Core**y, a continuación, en el panel central, elija un **aplicación de consola**. Escriba un nombre como **Console_Parse_JSON** y haga clic en **Aceptar**. Visual Studio crea el proyecto. Pegar la [código de ejemplo](#sample-code) en el proyecto *Program.cs* archivo.
 
 > [!NOTE]
-> Si no ve la plantilla de proyecto **Aplicación de consola**, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Elija la **desarrollo de escritorio de .NET** o **desarrollo multiplataforma de .NET Core** carga de trabajo, a continuación, elija **modificar**.
+> Si no ve la plantilla de proyecto **Aplicación de consola**, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** o la carga de trabajo **Desarrollo multiplataforma de .NET Core**, y después elija **Modificar**.
 
 ## <a name="find-the-red-and-green-squiggles"></a>Encuentre el subrayado ondulado rojo y verde.
 
@@ -113,13 +113,13 @@ El subrayado ondulado de color verde desaparece.
 
 Cuando haya corregido todos los subrayados ondulados rojos y resuelve--o al menos investigar--todos el subrayado ondulado verde, está listo para iniciar al depurador y ejecutar la aplicación.
 
-Presione **F5** (**Depurar > Iniciar depuración**) o el **Iniciar depuración** botón ![Iniciar depuración](../debugger/media/dbg-tour-start-debugging.png "Iniciar depuración ") en la barra de herramientas de depuración.
+Presione **F5** (**Depurar > Iniciar depuración**) o el botón **Iniciar depuración** ![Iniciar depuración](../debugger/media/dbg-tour-start-debugging.png "Start Debugging") en la barra de herramientas de depuración.
 
 En este momento, la aplicación de ejemplo produce un `SerializationException` excepción (un error en tiempo de ejecución). Es decir, la aplicación hace que se retraiga en los datos que está intentando volver a serializar. Dado que inició la aplicación en modo de depuración (depurador adjunto), aplicación auxiliar de excepciones del depurador le lleva directamente al código que produjo la excepción y le ofrece un mensaje de error útiles.
 
 ![Se produce una excepción](../debugger/media/write-better-code-serialization-exception.png)
 
-El mensaje de error indica que el valor `4o` no se puede analizar como un entero. Por lo tanto, en este ejemplo, sabrá que los datos están incorrectos: `4o` debe ser `40`. Sin embargo, si no está en el control de los datos en un escenario real (por ejemplo, se reciben de un servicio web), ¿qué hacer sobre ella? ¿Cómo se corrige esto?
+El mensaje de error indica que el valor `4o` no se puede analizar como un entero. Por lo tanto, en este ejemplo, sabrá que los datos están incorrectos: `4o` debe ser `40`. Sin embargo, si no está en el control de los datos en un escenario real (por ejemplo, se reciben de un servicio web), ¿qué hacer sobre ella? ¿Cómo lo arreglaría?
 
 Cuando se produce una excepción, es preciso formular (y responder) un par de preguntas:
 
@@ -172,7 +172,7 @@ Para la aplicación de ejemplo, corregir la `SerializationException` en el `GetJ
 
 ## <a name="clarify-your-code-intent-by-using-assert"></a>Aclarar la intención del código mediante el uso de assert
 
-Haga clic en el botón **Reiniciar** ![Reiniciar aplicación](../debugger/media/dbg-tour-restart.png "RestartApp") de la barra de herramientas de depuración (**Ctrl** + **Mayús**  +  **F5**). Esto reinicia la aplicación en menos pasos. Consulte el siguiente resultado en la ventana de consola.
+Haga clic en el botón **Reiniciar** ![Reiniciar aplicación](../debugger/media/dbg-tour-restart.png "RestartApp") de la barra de herramientas Depuración (**Ctrl** + **Mayús**  +  **F5**). Esto reinicia la aplicación en menos pasos. Consulte el siguiente resultado en la ventana de consola.
 
 ![Valor null en la salida](../debugger/media/write-better-code-using-assert-null-output.png)
 
@@ -208,7 +208,7 @@ Agregando `assert` instrucciones así a las funciones durante el proceso de desa
 
 Al especificar la intención de este modo, aplicar sus requisitos. Se trata de un método sencillo y útil que puede usar para la superficie de los errores durante el desarrollo. (`assert` instrucciones también se usan como el elemento principal de las pruebas unitarias.)
 
-Haga clic en el botón **Reiniciar** ![Reiniciar aplicación](../debugger/media/dbg-tour-restart.png "RestartApp") de la barra de herramientas de depuración (**Ctrl** + **Mayús**  +  **F5**).
+Haga clic en el botón **Reiniciar** ![Reiniciar aplicación](../debugger/media/dbg-tour-restart.png "RestartApp") de la barra de herramientas Depuración (**Ctrl** + **Mayús**  +  **F5**).
 
 > [!NOTE]
 > El `assert` código está activo solo en una compilación de depuración.
@@ -407,4 +407,4 @@ namespace Console_Parse_JSON_DotNetCore
 En este artículo, ha aprendido cómo evitar y solucionar muchos errores comunes en el código y cuándo se debe utilizar al depurador. A continuación, obtenga más información sobre cómo usar al depurador de Visual Studio para corregir errores.
 
 > [!div class="nextstepaction"]
-> [Depuración para principiantes absolutos](../debugger/debugging-absolute-beginners.md)
+> [Depuración para principiantes sin experiencia](../debugger/debugging-absolute-beginners.md)

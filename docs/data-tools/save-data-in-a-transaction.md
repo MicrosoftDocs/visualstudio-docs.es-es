@@ -19,12 +19,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 97d18ef8323eeb0781eb103eb8baa0c3fab0d63c
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: f9b4fad02b6b0d8324e13d4465f4602c16ce85ba
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750843"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305057"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Tutorial: Guardar datos en una transacción
 
@@ -60,15 +60,15 @@ El primer paso es crear un **aplicación de Windows Forms**.
 
 4. Denomine el proyecto **SavingDataInATransactionWalkthrough**y, a continuación, elija **Aceptar**.
 
-     El **SavingDataInATransactionWalkthrough** se crea y se agrega al proyecto **el Explorador de soluciones**.
+     Se crea el proyecto **SavingDataInATransactionWalkthrough** y se agrega al **Explorador de soluciones**.
 
 ## <a name="create-a-database-data-source"></a>Crear un origen de datos de la base de datos
 
 Este paso se usa el **Asistente para configuración de origen de datos** para crear un origen de datos basado en la `Customers` y `Orders` tablas en la base de datos de ejemplo Northwind.
 
-1.  En el **datos** menú, seleccione **Mostrar orígenes de datos**.
+1.  Para abrir el **orígenes de datos** ventana, en el **datos** menú, seleccione **Mostrar orígenes de datos**.
 
-2.  En el **orígenes de datos** ventana, seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de origen de datos**.
+2.  En la ventana **Orígenes de datos**, seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
 
 3.  En el **elegir un tipo de origen de datos** pantalla, seleccione **base de datos**y, a continuación, seleccione **siguiente**.
 
@@ -78,7 +78,7 @@ Este paso se usa el **Asistente para configuración de origen de datos** para cr
 
          O bien
 
-    -   Seleccione **nueva conexión** para iniciar el **agregar o modificar conexión** diálogo cuadro y crear una conexión a la base de datos Northwind.
+    -   Seleccione **Nueva conexión** para iniciar el cuadro de diálogo **Agregar o modificar conexión** y cree una conexión con la base de datos Northwind.
 
 5.  Si la base de datos requiere una contraseña, seleccione la opción para incluir datos confidenciales y, a continuación, seleccione **siguiente**.
 
@@ -88,15 +88,15 @@ Este paso se usa el **Asistente para configuración de origen de datos** para cr
 
 8.  Seleccione el `Customers` y `Orders` tablas y, a continuación, seleccione **finalizar**.
 
-     El **NorthwindDataSet** se agrega al proyecto y la `Customers` y `Orders` tablas aparecen en la **orígenes de datos** ventana.
+     **NorthwindDataSet** se agrega al proyecto y las tablas `Customers` y `Orders` aparecen en la ventana **Orígenes de datos**.
 
 ## <a name="add-controls-to-the-form"></a>Agregar controles al formulario
 
-Puede crear los controles enlazados a datos arrastrando elementos desde la **orígenes de datos** ventana hasta su formulario.
+Puede crear los controles enlazados a datos arrastrando elementos desde la ventana **Orígenes de datos** al formulario.
 
 1. En el **orígenes de datos** ventana, expanda el **clientes** nodo.
 
-2. Arrastre el método main **clientes** nodo desde el **orígenes de datos** ventana hasta **Form1**.
+2. Arrastre el nodo principal **Customers** desde la ventana **Orígenes de datos** hasta **Form1**.
 
    En el formulario aparecen un control <xref:System.Windows.Forms.DataGridView> y una barra de herramientas (<xref:System.Windows.Forms.BindingNavigator>) para navegar por los registros. Un [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>, y <xref:System.Windows.Forms.BindingNavigator> aparecen en la Bandeja de componentes.
 
@@ -114,7 +114,7 @@ Las transacciones usan el espacio de nombres <xref:System.Transactions>. De form
 
 2.  Seleccione **System.Transactions** (en el **.NET** pestaña) y, a continuación, seleccione **Aceptar**.
 
-     Una referencia a **System.Transactions** se agrega al proyecto.
+     Se agrega una referencia a **System.Transactions** al proyecto.
 
 ## <a name="modify-the-code-in-the-bindingnavigators-saveitem-button"></a>Modifique el código de botón SaveItem de BindingNavigator
 
@@ -141,28 +141,28 @@ El orden para conciliar los cambios a los datos relacionados es el siguiente:
 
 ### <a name="to-delete-existing-orders"></a>Para eliminar pedidos existentes
 
--   Agregue el siguiente `DeleteOrders` método **Form1**:
+-   Agregue el siguiente método `DeleteOrders` a **Form1**:
 
      [!code-vb[VbRaddataSaving#5](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_2.vb)]
      [!code-csharp[VbRaddataSaving#5](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_2.cs)]
 
 ### <a name="to-delete-existing-customers"></a>Para eliminar clientes existentes
 
--   Agregue el siguiente `DeleteCustomers` método **Form1**:
+-   Agregue el siguiente método `DeleteCustomers` a **Form1**:
 
      [!code-vb[VbRaddataSaving#6](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_3.vb)]
      [!code-csharp[VbRaddataSaving#6](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_3.cs)]
 
 ### <a name="to-add-new-customers"></a>Para agregar nuevos clientes
 
--   Agregue el siguiente `AddNewCustomers` método **Form1**:
+-   Agregue el siguiente método `AddNewCustomers` a **Form1**:
 
      [!code-vb[VbRaddataSaving#7](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_4.vb)]
      [!code-csharp[VbRaddataSaving#7](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_4.cs)]
 
 ### <a name="to-add-new-orders"></a>Para agregar nuevos pedidos
 
--   Agregue el siguiente `AddNewOrders` método **Form1**:
+-   Agregue el siguiente método `AddNewOrders` a **Form1**:
 
      [!code-vb[VbRaddataSaving#8](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_5.vb)]
      [!code-csharp[VbRaddataSaving#8](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_5.cs)]

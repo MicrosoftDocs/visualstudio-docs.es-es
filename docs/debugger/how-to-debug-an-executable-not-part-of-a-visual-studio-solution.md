@@ -1,7 +1,7 @@
 ---
-title: 'Cómo: depurar un ejecutable que no forma parte de una solución de Visual Studio | Microsoft Docs'
+title: 'Cómo: depurar una aplicación que no forma parte de una solución de Visual Studio | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -20,53 +20,55 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce84c4acdc2cf4324c76dbbf7fe0b39ca9715b3c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 993af0d15245ef6391f2c9c4eb0e755e24920fe3
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279107"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388587"
 ---
-# <a name="how-to-debug-an-executable-that-is-not-part-of-a-visual-studio-solution"></a>Cómo: depurar un ejecutable que no forma parte de una solución de Visual Studio
-En ocasiones, es posible que desea depurar un archivo ejecutable (archivo .exe) que no es parte de un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proyecto. Puede tratarse de un archivo ejecutable que se haya creado fuera de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o de un archivo ejecutable que haya recibido de otra persona.  
-  
-La solución habitual a este problema consiste en iniciar el archivo ejecutable fuera de Visual Studio y asociarlo mediante el depurador de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Para obtener más información, consulte [adjuntar a procesos en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
-  
-La asignación a una aplicación requiere algunos pasos que deben realizarse manualmente, por lo que necesitan algunos segundos. Este ligero retraso significa que la asignación no será la solución si se está intentando depurar un problema que se produce durante el inicio. Además, si se depura un programa que no espera que el usuario proporcione datos y finaliza rápidamente, puede que no tenga tiempo de asociar el archivo al programa. Si tiene [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] y [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] instalado, puede crear un proyecto EXE para este tipo de programa.
+# <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>Depurar una aplicación que no forma parte de una solución de Visual Studio (C++, C#, Visual Basic, F#)
 
-> [!NOTE]
->  No todos los lenguajes de programación admiten proyectos EXE.
+Es posible que desea depurar una aplicación (*.exe* archivo) que no forma parte de una solución de Visual Studio. Usted u otra persona haya creado la aplicación fuera de Visual Studio, o que obtuvo de la aplicación de alguna otra parte. 
 
-Cuando se depura un archivo ejecutable que no forma parte de la solución de Visual Studio, las características de depuración disponibles pueden ser limitadas, ya que adjuntar a un archivo ejecutable que se ejecuta o para agrega el archivo ejecutable para un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solución.
+Es la forma habitual para depurar una aplicación que no existe en Visual Studio iniciar la aplicación fuera de Visual Studio y, a continuación, asocie a ella mediante **asociar al proceso** en el depurador de Visual Studio. Para obtener más información, consulte [adjuntar a procesos en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+  
+Asociar a una aplicación requiere pasos manuales que tardan unos segundos. Debido a este retraso, adjuntar no ayudará a depurar un problema de inicio, o una aplicación que no espera por el usuario de entrada y finaliza rápidamente. 
 
-- Si dispone del código fuente, lo más recomendable es que importe dicho código a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y que cree una versión de depuración del archivo ejecutable en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
-- Si no tiene el código fuente, y si el archivo ejecutable se compiló sin [información de depuración](../debugger/how-to-set-debug-and-release-configurations.md) en un formato compatible, las características de depuración disponibles son muy limitadas. 
-  
-### <a name="to-create-an-exe-project-for-an-existing-executable"></a>Para crear un proyecto .EXE para un archivo ejecutable existente  
-  
-1.  En el **archivo** menú, haga clic en **abierto** y seleccione **proyecto**.  
-  
-2.  En el **Abrir proyecto** cuadro de diálogo, haga clic en la lista desplegable lista situada junto a la **nombre de archivo** cuadro y seleccione **todos los archivos de proyecto**.  
-  
-3.  Busque el archivo ejecutable y haga clic en **Aceptar**.  
+En estas situaciones, puede crear un proyecto EXE de Visual Studio para la aplicación o importarlo en una existente C#, Visual Basic o C++ solución. No todos los lenguajes de programación admiten proyectos EXE. 
 
-    De esta manera creará una solución temporal que contiene el archivo ejecutable.
+>[!IMPORTANT]
+>Características de depuración para una aplicación que no se compiló en Visual Studio están limitadas, asociar a la aplicación o agregarlo a una solución de Visual Studio. 
+>
+>Si tiene el código fuente, el mejor enfoque consiste en importar el código en un proyecto de Visual Studio. A continuación, ejecute una compilación de depuración de la aplicación.
+>
+>Si no tiene el código fuente y la aplicación no tiene [información de depuración](../debugger/how-to-set-debug-and-release-configurations.md) en un formato compatible, son muy pocas características de depuración disponibles. 
 
-5.  Inicie el archivo ejecutable eligiendo un comando de ejecución, como **iniciar**, desde el **depurar** menú.    
+### <a name="to-create-a-new-exe-project-for-an-existing-app"></a>Para crear un nuevo proyecto EXE para una aplicación existente  
+   
+1. En Visual Studio, seleccione **archivo** > **abierto** > **proyecto**.  
+   
+1. En el **Abrir proyecto** cuadro de diálogo, seleccione **todos los archivos de proyecto**, si aún no está seleccionada, en la lista desplegable junto a **nombre de archivo**.  
+   
+1. Navegue hasta la *.exe* de archivo, selecciónelo y seleccione **abierto**.  
+   
+   El archivo aparece en una solución de Visual Studio de nuevo, temporal.
+
+1. Iniciar la depuración de la aplicación seleccionando un comando de ejecución, como **Iniciar depuración**, desde el **depurar** menú.    
   
-### <a name="to-import-an-executable-into-a-visual-studio-solution"></a>Para importar una archivo ejecutable a una solución de Visual Studio  
+### <a name="to-import-an-app-into-an-existing-visual-studio-solution"></a>Para importar una aplicación en una solución existente de Visual Studio  
   
-1.  En el **archivo** menú, elija **Agregar proyecto**y, a continuación, haga clic en **proyecto existente**.  
+1.  Con C++, C#, o bien seleccione Abrir en Visual Studio, solución de Visual Basic **archivo** > **agregar** > **proyecto existente**.  
   
-2.  En el **Agregar proyecto existente** cuadro de diálogo, haga clic en la lista desplegable lista situada junto a la **nombre de archivo** cuadro y seleccione **todos los archivos de proyecto**.  
+1. En el **Abrir proyecto** cuadro de diálogo, seleccione **todos los archivos de proyecto**, si aún no está seleccionada, en la lista desplegable junto a **nombre de archivo**.  
+   
+1. Navegue hasta la *.exe* de archivo, selecciónelo y seleccione **abierto**.  
+   
+   El archivo aparece como un proyecto nuevo en la solución actual.  
+   
+1. Con el nuevo archivo seleccionado, iniciar la depuración de la aplicación seleccionando un comando de ejecución, como **Iniciar depuración**, desde el **depurar** menú.    
   
-3.  Busque y seleccione el archivo ejecutable.  
-  
-4.  Haga clic en **Aceptar**.  
-  
-5.  Inicie el archivo ejecutable eligiendo un comando de ejecución, como **iniciar**, desde el **depurar** menú.    
-  
-## <a name="see-also"></a>Vea también  
- [Preparación y configuración de la depuración](../debugger/debugger-settings-and-preparation.md)   
+### <a name="see-also"></a>Vea también  
+ [Preparación y configuración del depurador](../debugger/debugger-settings-and-preparation.md)   
  [Seguridad del depurador](../debugger/debugger-security.md)   
- [DBG (archivos)](/previous-versions/visualstudio/visual-studio-2010/da528y14(v=vs.100))
+ [Archivos DBG](/previous-versions/visualstudio/visual-studio-2010/da528y14(v=vs.100))

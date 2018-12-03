@@ -1,7 +1,7 @@
 ---
 title: Inspeccionar las variables en las ventanas automático y variables locales | Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 04/17/2018
+ms.date: 10/18/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b196d993e7091fd9d4b09fe3c228346e7421911e
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 37843e6f84bf16efee4d149ed08a7ecb525d7574
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257217"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388522"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspeccionar las variables en las ventanas automático y variables locales
 
@@ -33,7 +33,7 @@ Para abrir el **automático** ventana, durante la depuración, seleccione **depu
 
 Para abrir el **variables locales** ventana, durante la depuración, seleccione **depurar** > **Windows** > **variables locales**, o presione **Alt**+**4**.
 
-Si necesita obtener más información sobre la depuración básica, consulte [introducción con el depurador](../debugger/getting-started-with-the-debugger.md).
+Si necesita más información sobre la depuración básica, vea [Introducción al depurador](../debugger/getting-started-with-the-debugger.md).
 
 > [!NOTE]
 > Este tema se aplica a Visual Studio para Windows. Para Visual Studio para Mac, consulte [visualizaciones de datos en Visual Studio para Mac](/visualstudio/mac/data-visualizations).
@@ -54,7 +54,7 @@ Para editar los valores de la mayoría de las variables en el **automático** o 
 
 Puede escribir una expresión para un valor; por ejemplo, `a + b`. El depurador acepta la mayoría de las expresiones de lenguaje válidas.
 
-En el código C++ nativo, se debe calificar el contexto de un nombre de variable. Para obtener más información, consulte [operador de contexto (C++)](../debugger/context-operator-cpp.md).
+En el código C++ nativo, se debe calificar el contexto de un nombre de variable. Para obtener más información, vea [Operador de contexto en el depurador de Visual Studio (C++)](../debugger/context-operator-cpp.md).
 
 >[!CAUTION]
 >Asegúrese de que comprende las consecuencias antes de cambiar los valores y expresiones. Algunas causas posibles son:
@@ -77,7 +77,7 @@ Establezca un punto de interrupción e inicie la depuración. Cuando se alcanza 
 
  Diferentes lenguajes de código muestran distintas variables en el **automático** ventana.
 
- - En C# y Visual Basic, el **automático** ventana muestra cualquier variable usada en la línea actual o anterior. Por ejemplo, en C# o Visual Basic de código, declare las variables de cuatro siguientes:
+ - En C# y Visual Basic, la ventana **Automático** muestra cualquier variable que se usa en la línea actual o anterior. Por ejemplo, en C# o Visual Basic de código, declare las variables de cuatro siguientes:
 
    ```csharp
        public static void Main()

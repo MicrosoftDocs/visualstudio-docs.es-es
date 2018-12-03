@@ -11,12 +11,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8909ef785bd721e5b07046329e4841cebc5ec24e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 5993256b41a07c4861ef2def58dc14d7fd849313
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822077"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305616"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Crear una aplicación de datos sencilla con WPF y Entity Framework 6
 
@@ -64,7 +64,7 @@ En este ejemplo se usa SQL Server Express LocalDB y la base de datos de ejemplo 
 
    ![Entity Framework modelo nuevo elemento de proyecto](../data-tools/media/raddata-ef-new-project-item.png)
 
-2. Llamar al modelo `Northwind_model` y elija **Aceptar**. El **Asistente para Entity Data Model** se abre. Elija **EF Designer de base de datos** y, a continuación, haga clic en **siguiente**.
+2. Llamar al modelo `Northwind_model` y elija **Aceptar**. Se abre el **Asistente para Entity Data Model**. Elija **EF Designer de base de datos** y, a continuación, haga clic en **siguiente**.
 
    ![Modelo EF desde la base de datos](../data-tools/media/raddata-ef-model-from-database.png)
 
@@ -116,7 +116,7 @@ Es posible escribir su propio código de enlace de datos, pero resulta mucho má
         </Grid.RowDefinitions>
     ```
 
-5.  Ahora abra *MainWindow.xaml* por lo que está viendo en el diseñador. Esto hace que el **orígenes de datos** ventana aparezca como una opción en el margen de la ventana de Visual Studio junto a la **cuadro de herramientas**. Haga clic en la pestaña para abrir la ventana, o presione else **MAYÚS**+**Alt**+**d.** o elija **vista**  >  **Otros Windows** > **orígenes de datos**. Vamos a mostrar cada propiedad de la clase de los clientes en su propio cuadro de texto individuales. En primer lugar, haga clic en la flecha de la **clientes** combinado y elija **detalles**. A continuación, arrastre el nodo a la parte central de la superficie de diseño para que sepa que el diseñador que desee que aparezca en la fila central. Si se pierde, puede especificar la fila manualmente más adelante en el XAML. De forma predeterminada, los controles se colocan verticalmente en un elemento de cuadrícula, pero en este momento, puede organizarlos como desee en el formulario. Por ejemplo, tendría sentido poner el **nombre** cuadro de texto en la parte superior, por encima de la dirección. La aplicación de ejemplo para este artículo reordena los campos y ellos reorganiza en dos columnas.
+5.  Ahora abra *MainWindow.xaml* para que se está viendo en el diseñador. Esto hace que el **orígenes de datos** ventana aparezca como una opción en el margen de la ventana de Visual Studio junto a la **cuadro de herramientas**. Haga clic en la pestaña para abrir la ventana, o presione else **MAYÚS**+**Alt**+**d.** o elija **vista**  >  **Otros Windows** > **orígenes de datos**. Vamos a mostrar cada propiedad de la clase de los clientes en su propio cuadro de texto individuales. En primer lugar, haga clic en la flecha de la **clientes** combinado y elija **detalles**. A continuación, arrastre el nodo a la parte central de la superficie de diseño para que sepa que el diseñador que desee que aparezca en la fila central. Si se pierde, puede especificar la fila manualmente más adelante en el XAML. De forma predeterminada, los controles se colocan verticalmente en un elemento de cuadrícula, pero en este momento, puede organizarlos como desee en el formulario. Por ejemplo, tendría sentido poner el **nombre** cuadro de texto en la parte superior, por encima de la dirección. La aplicación de ejemplo para este artículo reordena los campos y ellos reorganiza en dos columnas.
 
      ![Enlace de origen de datos de los clientes a controles individuales](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png)
 

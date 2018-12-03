@@ -1,7 +1,7 @@
 ---
 title: Especificar archivos de código fuente y símbolos (.pdb) en el depurador | Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 04/05/2018
+ms.date: 10/08/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c289da63a8fbc8469734e905c29edca1149e04c4
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 35eb141850770a20b78020c57868a7fb2ff3bf90
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257386"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389181"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Especificar archivos de código fuente y símbolos (.pdb) en el depurador de Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -49,7 +49,7 @@ El *.pdb* archivo contiene información de estado de depuración y del proyecto 
 
 Los archivos de símbolos también muestran la ubicación de los archivos de origen y, opcionalmente, recuperarlos desde el servidor.
   
-El depurador solo carga *.pdb* archivos que coincidan exactamente con el *.pdb* archivos creados cuando se compila una aplicación (es decir, el original *.pdb* copias o archivos). Esta duplicación exacta es necesaria porque puede cambiar el diseño de aplicaciones incluso si no ha cambiado el propio código. Para obtener más información, consulte [¿por qué Visual Studio requiere archivos de símbolos del depurador para ajustarse exactamente a los archivos binarios que se compilaron con?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
+El depurador solo carga *.pdb* archivos que coincidan exactamente con el *.pdb* archivos creados cuando se compila una aplicación (es decir, el original *.pdb* copias o archivos). Esta duplicación exacta es necesaria porque puede cambiar el diseño de aplicaciones incluso si no ha cambiado el propio código. Para obtener más información, vea [Why does Visual Studio require debugger symbol files to *exactly* match the binary files that they were built with?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/) ¿Por qué Visual Studio requiere que los archivos de símbolo del depurador coincidan exactamente con los archivos binarios con los que se crearon?
 
 > [!TIP]
 > Para depurar el código fuera de su código fuente del proyecto, como las llamadas de proyecto de código de código de Windows o de terceros, debe especificar la ubicación del código externo *.pdb* archivos (y opcionalmente, los archivos de origen), que debe coincidir exactamente con las compilaciones en la aplicación. 
@@ -139,7 +139,7 @@ En el **herramientas** > **opciones** > **depuración** > **símbolos** página,
   
 Puede seleccionar opciones de símbolos adicionales en **herramientas** > **opciones** > **depuración** > **General** (o **depurar** > **opciones** > **General**):  
 
-- **Cargar exportaciones de DLL (solo nativo)**  
+- **Cargar exportaciones de dll (solo nativas)**  
   
   Las tablas de exportación de DLL de carga para C/C ++. Para obtener más información, consulte [DLL exporta tablas](#use-dumpbin-exports). Exportar información de lectura DLL implica cierta sobrecarga, por lo que al cargar las tablas de exportación se ha desactivado de forma predeterminada. También puede usar `dumpbin /exports` en una línea de comandos de compilación de C/C ++.  
   
@@ -156,7 +156,7 @@ Puede seleccionar opciones de símbolos adicionales en **herramientas** > **opci
   Puede limitar los comandos que *srcsrv.dll* puede ejecutar desde la aplicación *.pdb* archivo con una lista de los comandos permitidos en un archivo denominado *srcsrv.ini*. Colocar el *srcsrv.ini* archivo en la misma carpeta que *srcsrv.dll* y *devenv.exe*.  
   
   >[!IMPORTANT]
-  >Se pueden incrustar comandos arbitrarios en una aplicación *.pdb* de archivos, así que asegúrese de colocar únicamente los comandos que desea ejecutar en un *srcsrv.ini* archivo. Cualquier intento de ejecutar un comando no está en el *srcsvr.ini* archivo hará que aparezca un cuadro de diálogo de confirmación. Para obtener más información, consulta [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
+  >Se pueden incrustar comandos arbitrarios en una aplicación *.pdb* de archivos, así que asegúrese de colocar únicamente los comandos que desea ejecutar en un *srcsrv.ini* archivo. Todo intento de ejecutar un comando no incluido en el archivo *srcsvr.ini* provocará la aparición de un cuadro de diálogo de confirmación. Para obtener más información, consulta [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
   >
   >No se realiza ninguna validación de los parámetros de comando, por lo que debe tener cuidado con los comandos de confianza. Por ejemplo, si se ha incluido *cmd.exe* en su *srcsrv.ini*, un usuario malintencionado podría especificar parámetros de *cmd.exe* que sería peligroso.  
   
@@ -168,7 +168,7 @@ Puede seleccionar opciones de símbolos adicionales en **herramientas** > **opci
 
 Cuando compila un proyecto desde el IDE de Visual Studio con el estándar **depurar** configuración de compilación, C++ y los compiladores administrados crean archivos de símbolos adecuados para el código. También puede establecer las opciones del compilador en código. 
 
-### <a name="cc-options"></a>Opciones de C/C ++ 
+### <a name="cc-options"></a>Opciones de C/C++ 
 
 - *VC\<x > .pdb* y  *\<proyecto > .pdb* archivos
   
@@ -176,13 +176,13 @@ Cuando compila un proyecto desde el IDE de Visual Studio con el estándar **depu
   
   Si compila la aplicación de C/C ++ mediante un archivo MAKE y especifica **/Zi** o **/Zi** sin usar **/Fd**, el compilador crea dos *.pdb*archivos:  
   
-  - *VC\<x > .pdb*, donde  *\<x >* representa la versión de Visual C++, por ejemplo *VC11.pdb* 
+  - *VC\<x>.pdb*, donde *\<x>* representa la versión de Visual C++, por ejemplo *VC11.pdb* 
     
-    El *VC\<x > .pdb* archivo almacena toda información de depuración para los archivos de objeto individuales y reside en el mismo directorio que el archivo MAKE del proyecto. Cada vez que crea un archivo de objeto, el compilador de C/C ++ combina la información de depuración en *VC\<x > .pdb*. Por tanto, incluso si cada archivo de código fuente incluye archivos de encabezado comunes como  *\<windows.h >*, se almacenan las definiciones de tipo de esos encabezados solo una vez, en lugar de en todos los archivos objeto. La información insertada incluye información de tipo, pero no incluye información de símbolos, como las definiciones de función.  
+    El *VC\<x > .pdb* archivo almacena toda información de depuración para los archivos de objeto individuales y reside en el mismo directorio que el archivo MAKE del proyecto. Cada vez que crea un archivo de objeto, el compilador de C/C ++ combina la información de depuración en *VC\<x > .pdb*. Por tanto, incluso si cada archivo de código fuente incluye archivos de encabezado comunes como  *\<windows.h >*, se almacenan las definiciones de tipo de esos encabezados solo una vez, en lugar de en todos los archivos objeto. La información insertada incluye información de tipo, pero no información de símbolo como definiciones de función.  
   
   - *\<proyecto > .pdb* 
     
-    El  *\<proyecto > .pdb* archivo almacena toda la información de depuración para el proyecto *.exe* de archivos y reside en el *\debug* subdirectorio. El  *\<proyecto > .pdb* archivo contiene información de depuración completa, incluidos los prototipos de función, no solo la información de tipo se encuentra en *VC\<x > .pdb*. 
+    El  *\<proyecto > .pdb* archivo almacena toda la información de depuración para el proyecto *.exe* de archivos y reside en el *\debug* subdirectorio. El archivo *\<proyecto.pdb* contiene toda la información de depuración, incluidos los prototipos de función, y no solo la información de tipo que se encuentra en *VC\<x>.pdb*. 
   
   Tanto el *VC\<x > .pdb* y  *\<proyecto > .pdb* archivos permiten actualizaciones incrementales. El vinculador también incrusta la ruta de acceso a la *.pdb* archivos en el *.exe* o *.dll* archivo que crea.  
   
@@ -194,7 +194,7 @@ Cuando compila un proyecto desde el IDE de Visual Studio con el estándar **depu
   
 ### <a name="net-framework-options"></a>Opciones de .NET Framework 
   
-Compilar con **/debug** para crear un *.pdb* archivo. Puede compilar las aplicaciones con **/debug:full** o **/debug:pdbonly**. La compilación mediante **/debug:full** genera código depurable. Compilar con **/Debug: pdbonly** genera *.pdb* archivos, pero no genera el `DebuggableAttribute` que indica al compilador JIT que la información de depuración está disponible. Use **/Debug: pdbonly** si desea generar *.pdb* archivos para una versión de compilación que no desea que sea depurable. Para obtener más información, consulte [/Debug (opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) o [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).  
+Compilar con **/debug** para crear un *.pdb* archivo. Puede compilar las aplicaciones con **/debug:full** o **/debug:pdbonly**. La compilación mediante **/debug:full** genera código depurable. La compilación mediante **/debug:pdbonly** genera archivos *.pdb*, pero no genera el atributo `DebuggableAttribute` que indica al compilador JIT que existe información de depuración disponible. Use **/debug:pdbonly** si quiere generar archivos *.pdb* para una compilación de versión que no quiere que sea depurable. Para obtener más información, vea [/debug (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) (/degug [Opciones del compilador de C#]) o [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug) (/debug [Visual Basic]).  
   
 ### <a name="web-applications"></a>Aplicaciones web  
   
@@ -265,4 +265,4 @@ Puede especificar las ubicaciones que el depurador busca archivos de código fue
 ## <a name="see-also"></a>Vea también  
 [Comprender los archivos de símbolos y la configuración de símbolos de Visual Studio](https://blogs.msdn.microsoft.com/devops/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
-[Carga los cambios en Visual Studio 2012 y 2013 remota de símbolos de .NET](https://blogs.msdn.microsoft.com/devops/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)
+[Cambios en la carga remota de símbolos .NET en Visual Studio 2012 y 2013](https://blogs.msdn.microsoft.com/devops/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)

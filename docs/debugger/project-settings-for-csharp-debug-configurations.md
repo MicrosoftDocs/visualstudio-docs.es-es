@@ -1,7 +1,7 @@
 ---
 title: Configuración de proyectos para configuraciones de depuración de C# | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/21/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
 dev_langs:
@@ -22,41 +22,44 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a65928e8a5a734e84d51cbb4368c7346ba8c2edb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7152e6ac16c8a15ba6973eb3ac33c373560a0d76
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896346"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388980"
 ---
-# <a name="project-settings-for--c-debug-configurations"></a>Configuración del proyecto para configuraciones de depuración en C#
-Puede cambiar la configuración del proyecto para una configuración de depuración de C# en el **páginas de propiedades** ventana, como se describe en [configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md). En las tablas siguientes se muestran dónde encontrar valores relacionados con el depurador en el **páginas de propiedades** ventana.  
+# <a name="project-settings-for--c-debug-configurations"></a>Configuración de proyectos para configuraciones de depuración en C#
+
+Puede cambiar C# configuración de depuración en proyectos el [ficha Depurar](#debug-tab) y [pestaña compilación](#build-tab) de las páginas de propiedades del proyecto. 
+
+Para abrir las páginas de propiedades, seleccione el proyecto en **el Explorador de soluciones** y, a continuación, seleccione el **propiedades** icono, o haga clic en el proyecto y seleccione **propiedades**.
+
+Para obtener más información, vea [Configuraciones Debug y Release](how-to-set-debug-and-release-configurations.md). 
+
+>[!IMPORTANT]
+>Esta configuración no se aplica a las aplicaciones de .NET Core, ASP.NET o UWP. Para configurar las opciones de depuración para aplicaciones UWP, consulte [iniciar una sesión de depuración para una aplicación UWP](start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).  
   
-> [!WARNING]
->  Este tema no se aplica a las aplicaciones de UWP. Consulte [iniciar una sesión de depuración (VB, C#, C++ y XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
+## <a name="debug-tab"></a>Ficha Depurar  
   
-##  <a name="BKMK_Debug_tab"></a> Ficha Depurar  
-  
-| **Configuración de** | **Descripción** |
+|Parámetro|Descripción|
 |-------------------------------------| - |
-| **Configuración** | Establece el modo para compilar la aplicación. Elija entre **activo (depurar)**, **depurar**, **versión**, **todas las configuraciones de**. |
-| **Acción de inicio** | Este grupo de controles especifica la acción que se produce cuando se elige Inicio en el menú Depurar.<br /><br /> -   **Iniciar proyecto** es el valor predeterminado y lanza el proyecto de inicio para la depuración. Para obtener más información, consulte [elegir el proyecto de inicio](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100)).<br />-   **Iniciar programa externo** le permite iniciar y asociar a un programa que no es parte de un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proyecto. Para obtener más información, consulte [adjuntar a un programa en ejecución](/previous-versions/visualstudio/visual-studio-2010/c6wf8e4z(v=vs.100)).<br />-   **Iniciar explorador con la dirección URL** le permite depurar una aplicación Web. |
-| **Argumentos de la línea de comandos** | Especifica los argumentos de la línea de comandos para el programa que se va a depurar. El nombre de comando es el nombre del programa especificado en Programa externo de inicio. Si Acción de inicio se establece en Dirección URL de inicio, los argumentos de la línea de comandos no se pueden especificar. |
-| **Directorio de trabajo** | Especifica el directorio de trabajo del programa que se depura. En [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], el directorio de trabajo es el directorio desde el que se inicia la aplicación: \bin\debug de manera predeterminada. |
-| **Usar máquina remota** | El nombre de un equipo remoto donde se ejecutará la aplicación con fines de depuración o un [nombre de servidor Msvsmon](../debugger/remote-debugging.md). La ubicación del archivo EXE en el equipo remoto se especifica mediante la propiedad Ruta de acceso de los resultados de la carpeta Propiedades de configuración de la categoría Compilar. La ubicación debe ser un directorio que se pueda compartir en el equipo remoto. |
-| **Habilitar depuración de código no administrado** | Permite depurar llamadas a código nativo Win32 (no administrado) desde una aplicación administrada. |
-| **Habilitar depuración de SQL Server** | Permite depurar objetos de la base de datos de SQL Server. |
+| **Configuración** | Establece el modo para crear la aplicación. Seleccione **activo (depurar)**, **depurar**, **versión**, o **todas las configuraciones de** en la lista desplegable. |
+| **Acción de inicio** | Especifica la acción cuando se selecciona **iniciar** en una configuración de depuración.<br />- **Proyecto de inicio** es el valor predeterminado y lanza el proyecto de inicio para la depuración. Para obtener más información, consulte [elegir el proyecto de inicio](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100)).<br />- **Iniciar programa externo** inicia y se asocia a una aplicación que no es parte de un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proyecto. Para obtener más información, consulte [adjuntar a procesos en ejecución con el depurador](attach-to-running-processes-with-the-visual-studio-debugger.md).<br />- **Iniciar explorador con la dirección URL** le permite depurar una aplicación web. |
+| **Opciones de inicio** > **argumentos de línea de comandos** | Especifica los argumentos de línea de comandos para la aplicación que se está depurando. El nombre del comando es el nombre de aplicación especificado en **iniciar programa externo**. |
+| **Opciones de inicio** > **directorio de trabajo** | Especifica el directorio de trabajo de la aplicación que se está depurando. En C#, el directorio de trabajo es *\bin\debug* de forma predeterminada.
+| **Opciones de inicio** > **usar equipo remoto**|Para la depuración remota, seleccione esta opción y escriba el nombre del destino de depuración remoto, o un [nombre de servidor Msvsmon](../debugger/remote-debugging.md). <br />La ubicación de una aplicación en el equipo remoto especificada por el **ruta de acceso de salida** propiedad en el **compilar** ficha. La ubicación debe ser un directorio que se pueda compartir en el equipo remoto. 
+| **Motor de depuración** > **habilitar la depuración de código no administrado** | Depura las llamadas a código nativo de Win32 (no administrado) desde la aplicación administrada. |
+| **Motor de depuración** > **depuración habilitar SQL Server** | Depura los objetos de base de datos de SQL Server. |
   
-##  <a name="BKMK_Build_tab"></a> Pestaña de la compilación  
+## <a name="build-tab"></a>Pestaña Compilar  
   
 |Parámetro|Descripción|  
 |-------------|-----------------|  
-|**Símbolos de compilación condicional:**|A continuación se definen las constantes DEBUG y TRACE.<br /><br /> Estas constantes permiten la compilación condicional de la [Debug (clase)](/dotnet/api/system.diagnostics.debug) y [Trace (clase)](/dotnet/api/system.diagnostics.trace). Con estas constantes definidas, depurar y métodos de clase Trace generan resultados en la [ventana de salida](../ide/reference/output-window.md). Sin estas constantes, los métodos de clase Debug y Trace no se compilan y no se generan resultados.<br /><br /> -Debug normalmente se define en la versión de depuración de un programa y no definido en la versión de lanzamiento.<br />-Trace se define normalmente en las versiones de lanzamiento y depuración.|  
-|**Optimizar código**|A menos que encuentre un error que sólo aparece en código optimizado, debe dejar esta configuración desactivada en la versión de depuración. El código optimizado es más difícil de depurar, puesto que las instrucciones no se corresponden directamente con las instrucciones de las ventanas de código fuente.|  
-|**Ruta de acceso de salida:**|Normalmente se establece en bin\Debug para la depuración.|
-
-> [!NOTE]
-> Para obtener más información sobre las opciones de depuración que se encuentre en el **avanzadas** botón, consulte [cuadro de diálogo de configuración de compilación avanzada (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md). El formato portable para archivos de símbolos (.pdb) es el formato más reciente de multiplataforma para .NET Core. 
+|**General** > **símbolos de compilación condicional**|Defina las constantes DEBUG y TRACE si ha seleccionado.<br /><br /> Estas constantes permiten la compilación condicional de [Debug (clase)](/dotnet/api/system.diagnostics.debug) y [Trace (clase)](/dotnet/api/system.diagnostics.trace). Con la definición de estas constantes, los métodos de clase Debug y Trace generan resultados en la [ventana Salida](../ide/reference/output-window.md). Sin estas constantes, los métodos de clase Debug y Trace no se compilan y no se generan resultados.<br /><br />Por lo general, depuración se define en la versión de depuración de una compilación y no definida en la versión de lanzamiento. TRACE se define en las versiones de depuración y lanzamiento.|  
+|**General** > **optimizar código**|A menos que un error sólo aparece en código optimizado, deje esta opción no está seleccionado para las compilaciones de depuración. Código optimizado es más difícil de depurar, porque las instrucciones no se corresponden directamente con las instrucciones en el código fuente.|  
+|**Salida** > **ruta de acceso de salida**|Normalmente se establece en *bin\Debug* para la depuración.|
+|**Advanced** botón|Para obtener información sobre las opciones de depuración avanzadas, vea [cuadro de diálogo de configuración de compilación avanzada (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md). El formato portable para el símbolo (*.pdb*) archivos es un formato de multiplataforma recientes para aplicaciones de .NET Core. 
   
 ## <a name="see-also"></a>Vea también  
- [Configuración y preparación de la depuración](../debugger/debugger-settings-and-preparation.md)
+ [Preparación y configuración del depurador](../debugger/debugger-settings-and-preparation.md)
