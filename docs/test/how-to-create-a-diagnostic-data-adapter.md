@@ -10,27 +10,29 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 25b332fb822524f5fcab5e06ab97bfe2d6af8529
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 25adfc867ca208f367f047e4cb94322718e12b52
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851613"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895319"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Cómo: Crear un adaptador de datos de diagnóstico
 
 Para crear un *adaptador de datos de diagnóstico*, debe crear una biblioteca de clases mediante Visual Studio y, luego, agregar a la biblioteca de clases las API del adaptador de datos de diagnóstico proporcionadas por Visual Studio Enterprise. Al administrar los eventos que se generan durante la ejecución de pruebas, envíe la información que quiera como una secuencia o un archivo al elemento <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> proporcionado por el marco de trabajo. Las secuencias o los archivos enviados a <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> se almacenan como datos adjuntos a los resultados de pruebas cuando una prueba finaliza. Si crea un error a partir de estos resultados de pruebas o al usar [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)], los archivos también se vinculan al error.
 
- Puede crear un adaptador de datos de diagnóstico que afecte a la máquina donde se ejecutan las pruebas, o a una máquina que forme parte del entorno que esté usando para ejecutar la aplicación que se prueba. Por ejemplo, puede recopilar archivos en la máquina de pruebas donde estas se ejecutan, o puede recopilar archivos en la máquina que desempeña el rol de servidor web para la aplicación.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Puede asignar al adaptador de datos de diagnóstico un nombre descriptivo que se muestre al crear la configuración de pruebas mediante Microsoft Test Manager o Visual Studio. La configuración de pruebas permite definir qué rol de máquina ejecutará adaptadores de datos de diagnóstico concretos en el entorno. También puede configurar sus adaptadores de datos de diagnóstico al crear la configuración de pruebas. Por ejemplo, puede crear un adaptador de datos de diagnóstico que recopile los registros personalizados del servidor web. Al crear la configuración de pruebas, puede seleccionar que se ejecute este adaptador de datos de diagnóstico en la máquina o máquinas que están realizando este rol de servidor web, y puede modificar la configuración de pruebas para que solo se recopilen los tres últimos registros que se crearon. Para obtener más información sobre la configuración de pruebas, vea [Recopilar información de diagnóstico con la configuración de pruebas](../test/collect-diagnostic-information-using-test-settings.md).
+Puede crear un adaptador de datos de diagnóstico que afecte a la máquina donde se ejecutan las pruebas, o a una máquina que forme parte del entorno que esté usando para ejecutar la aplicación que se prueba. Por ejemplo, puede recopilar archivos en la máquina de pruebas donde estas se ejecutan, o puede recopilar archivos en la máquina que desempeña el rol de servidor web para la aplicación.
 
- Cuando ejecuta las pruebas, se generan eventos de modo que el adaptador de datos de diagnóstico pueda realizar tareas en ese punto de la prueba.
+Puede asignar al adaptador de datos de diagnóstico un nombre descriptivo que se muestre al crear la configuración de pruebas mediante Microsoft Test Manager o Visual Studio. La configuración de pruebas permite definir qué rol de máquina ejecutará adaptadores de datos de diagnóstico concretos en el entorno. También puede configurar sus adaptadores de datos de diagnóstico al crear la configuración de pruebas. Por ejemplo, puede crear un adaptador de datos de diagnóstico que recopile los registros personalizados del servidor web. Al crear la configuración de pruebas, puede seleccionar que se ejecute este adaptador de datos de diagnóstico en la máquina o máquinas que están realizando este rol de servidor web, y puede modificar la configuración de pruebas para que solo se recopilen los tres últimos registros que se crearon. Para obtener más información sobre la configuración de pruebas, vea [Recopilar información de diagnóstico con la configuración de pruebas](../test/collect-diagnostic-information-using-test-settings.md).
+
+Cuando ejecuta las pruebas, se generan eventos de modo que el adaptador de datos de diagnóstico pueda realizar tareas en ese punto de la prueba.
 
 > [!IMPORTANT]
 > Estos eventos se pueden generar en subprocesos diferentes, sobre todo si las pruebas se ejecutan en varias máquinas. Por tanto, debe tener en cuenta los posibles problemas de subprocesamiento y debe tener cuidado de no dañar inadvertidamente los datos internos del adaptador personalizado. Asegúrese de que su adaptador de datos de diagnóstico es seguro para subprocesos.
 
- A continuación se muestra una lista parcial de eventos clave que puede usar al crear el adaptador de datos de diagnóstico. Para obtener una lista completa de los eventos del adaptador de datos de diagnóstico, vea la clase abstracta <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents>.
+A continuación se muestra una lista parcial de eventos clave que puede usar al crear el adaptador de datos de diagnóstico. Para obtener una lista completa de los eventos del adaptador de datos de diagnóstico, vea la clase abstracta <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents>.
 
 |evento|Descripción|
 |-|-----------------|
@@ -44,9 +46,9 @@ Para crear un *adaptador de datos de diagnóstico*, debe crear una biblioteca de
 > [!NOTE]
 > Cuando se completa una prueba manual, no se envían más eventos de recolección de datos al adaptador de datos de diagnóstico. Cuando se ejecute de nuevo una prueba, tendrá un nuevo identificador de caso de prueba. Si un usuario restablece una prueba durante un proceso de prueba (que genera el evento <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseReset>) o cambia un resultado del paso de pruebas, no se envía ningún evento de recolección de datos al adaptador de datos de diagnóstico, pero el identificador de caso de prueba sigue siendo el mismo. Para determinar si una caso de prueba se ha restablecido, debe hacer un seguimiento del identificador de caso de prueba del adaptador de datos de diagnóstico.
 
- Utilice el siguiente procedimiento para crear un adaptador de datos de diagnóstico que recopile un archivo de datos basado en la información que se configura al crear la configuración de pruebas.
+Utilice el siguiente procedimiento para crear un adaptador de datos de diagnóstico que recopile un archivo de datos basado en la información que se configura al crear la configuración de pruebas.
 
- Para obtener un proyecto de adaptador de datos de diagnóstico de ejemplo completo que incluya un editor de configuración personalizado, vea [Proyecto de ejemplo para crear un adaptador de datos de diagnóstico](../test/sample-project-for-creating-a-diagnostic-data-adapter.md).
+Para obtener un proyecto de adaptador de datos de diagnóstico de ejemplo completo que incluya un editor de configuración personalizado, vea [Proyecto de ejemplo para crear un adaptador de datos de diagnóstico](../test/sample-project-for-creating-a-diagnostic-data-adapter.md).
 
 ##  <a name="create-and-install-a-diagnostic-data-adapter"></a>Crear e instalar un adaptador de datos de diagnóstico
 

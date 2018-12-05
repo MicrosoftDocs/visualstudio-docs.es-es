@@ -13,16 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 01ae9f07d5ec1c0eb2cddda6c24831f213f4bf86
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ed7b588d597626348b4c148c10dad165649b0468
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826978"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895761"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>Crear código y complementos personalizados para las pruebas de carga
 
 Un complemento personalizado usa código que se escribe y adjunta a una prueba de carga o una prueba de rendimiento web. Puede utilizar la API de prueba de carga y la API de prueba de rendimiento web para crear complementos personalizados para que las pruebas se expandan a la funcionalidad integrada. Puede agregar varios complementos a la prueba de carga.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="tasks"></a>Tareas
 

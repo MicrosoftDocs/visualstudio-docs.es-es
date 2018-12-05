@@ -13,23 +13,25 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 32f613f29bb0627f45f5ce331589629744d61373
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 58ab8859bffa89ae19eed6d37c442b71f98ef224
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840641"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896099"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Análisis de la actividad de usuario virtual de prueba de carga en la vista Detalles del Analizador de pruebas de carga
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 **Diagrama de actividad del usuario virtual**
 
- ![Diagrama de actividad del usuario virtual](../test/media/virtual_actchart.png)
+![Diagrama de actividad del usuario virtual](../test/media/virtual_actchart.png)
 
- La vista **Detalles** muestra el **Diagrama de actividad del usuario virtual**, que se usa para analizar visualmente lo que hicieron los usuarios virtuales durante la prueba de carga. El **Diagrama de actividad del usuario virtual** permite ver los modelos de actividad de los usuarios y los modelos de carga, poner en correlación las pruebas con errores o lentas, y ver solicitudes con otra actividad de usuario virtual. El **Diagrama de actividad del usuario virtual** también puede ayudar a determinar los picos máximos en el uso de la CPU, las caídas de solicitudes por segundo, y qué pruebas o páginas se estaban ejecutando durante esos momentos de máxima y mínima actividad.
+La vista **Detalles** muestra el **Diagrama de actividad del usuario virtual**, que se usa para analizar visualmente lo que hicieron los usuarios virtuales durante la prueba de carga. El **Diagrama de actividad del usuario virtual** permite ver los modelos de actividad de los usuarios y los modelos de carga, poner en correlación las pruebas con errores o lentas, y ver solicitudes con otra actividad de usuario virtual. El **Diagrama de actividad del usuario virtual** también puede ayudar a determinar los picos máximos en el uso de la CPU, las caídas de solicitudes por segundo, y qué pruebas o páginas se estaban ejecutando durante esos momentos de máxima y mínima actividad.
 
 > [!NOTE]
-> Antes de ejecutar la prueba de carga para la que quiere utilizar el **Diagrama de actividad del usuario virtual**, debe comprobar que la propiedad **Almacenamiento de detalles de tiempo** está establecida en la opción **AllIndividualDetails** mediante el Editor de pruebas de carga de rendimiento. Para obtener más información, vea [Cómo: Configurar los resultados de pruebas para recopilar información completa para habilitar la actividad de usuario virtual en los resultados de pruebas](../test/how-to-configure-load-tests-to-collect-full-details.md).
+> Antes de ejecutar la prueba de carga para la que quiere utilizar el **Diagrama de actividad del usuario virtual**, debe comprobar que la propiedad **Almacenamiento de detalles de tiempo** está establecida en la opción **AllIndividualDetails** mediante el Editor de pruebas de carga de rendimiento.
 
  **Panel Leyenda de detalles**
 
@@ -55,7 +57,6 @@ ms.locfileid: "49840641"
 
 |Tareas|Temas relacionados|
 |-|-|
-|**Configurar la prueba de carga para utilizar el Diagrama de actividad del usuario virtual:** antes de ejecutar una prueba de carga en la que desea ver los datos de actividad de los usuarios virtuales, debe configurar los valores de las propiedades de las pruebas de carga.|-   [Cómo: Configurar los resultados de pruebas para recopilar información completa para habilitar la actividad de usuario virtual en los resultados de pruebas](../test/how-to-configure-load-tests-to-collect-full-details.md)|
 |**Ejecutar una prueba de carga:** una vez creada y configurada una prueba de carga para habilitar la recopilación de datos de actividad del usuario virtual, debe ejecutar la prueba hasta el final para ver el **Diagrama de actividad del usuario virtual**.||
 |**Ver los resultados de pruebas de carga que contienen los datos de actividad del usuario virtual:** una vez creada, configurada y completada una prueba de carga, puede ver los datos de actividad del usuario virtual en el **Diagrama de actividad del usuario virtual**.|-   [Analizar los resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [Cómo: Analizar lo que hacen los usuarios virtuales durante una prueba de carga](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
 |**Aislar los problemas de rendimiento en las pruebas de carga:** puede usar el **Diagrama de actividad del usuario virtual** como ayuda para aislar los problemas de rendimiento en la prueba de carga.|-   [Tutorial: Usar el Diagrama de actividad del usuario virtual para aislar problemas de rendimiento](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|

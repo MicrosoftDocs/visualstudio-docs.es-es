@@ -1,5 +1,5 @@
 ---
-title: Recopilación de información de diagnóstico con la configuración de pruebas en Visual Studio
+title: Recopilar información de diagnóstico con la configuración de pruebas
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0b2d44d0fa50a4d733f62845d54116cceb2f2016
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 288d1ce5511d33a48006c97030d2b9c2f12ec88c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865354"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895215"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>Recopilar información de diagnóstico con la configuración de pruebas
 
@@ -32,6 +32,8 @@ Puede usar la *configuración de pruebas* de Visual Studio para recopilar datos 
 -   Recopilar datos de IntelliTrace para ayudar a aislar errores no reproducibles
 
 Los adaptadores de datos de diagnóstico también pueden usarse para cambiar el comportamiento de una máquina de prueba. Por ejemplo, con una configuración de pruebas en Visual Studio, puede emular diferentes cuellos de botella de la topología de red para evaluar el rendimiento de la aplicación de su equipo.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="use-test-settings-with-visual-studio"></a>Usar la configuración de pruebas con Visual Studio
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7ec26a9356c0136404f6fb9fe97e88b7b40ecf7f
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 222fe589a0d4282531b9ee73d476678d54747e7b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203968"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896057"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Cómo: Enlazar un controlador de pruebas o un agente de pruebas a un adaptador de red
 
@@ -30,6 +30,8 @@ Si un equipo que tiene instalado el controlador de prueba o el software del agen
 > **Error 8110. No se puede conectar con el equipo de controlador especificado ni acceder al objeto de controlador**
 >
 > Si se instala el controlador de pruebas en un equipo con varios adaptadores de red, se puede producir este error. También es posible instalar agentes correctamente y no detectar este problema hasta que se ejecute una prueba.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="bind-a-test-controller-to-a-specific-network-adapter"></a>Enlazar un controlador de pruebas a un adaptador de red concreto
 
@@ -132,6 +134,6 @@ Si un equipo que tiene instalado el controlador de prueba o el software del agen
 
 - [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md)
 - [Modificar la configuración de registro de pruebas de carga](../test/modify-load-test-logging-settings.md)
-- [Configuración de los puertos para los controladores de pruebas y los agentes de pruebas](../test/configure-ports-for-test-controllers-and-test-agents.md)
+- [Configurar los puertos para los controladores de prueba y los agentes de prueba](../test/configure-ports-for-test-controllers-and-test-agents.md)
 - [Cómo: Especificar el tamaño máximo del archivo de registro](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [Cómo: Especificar periodos de tiempo de espera para controladores de pruebas y agentes de pruebas](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

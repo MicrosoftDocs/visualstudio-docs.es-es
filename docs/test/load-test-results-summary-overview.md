@@ -16,18 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fd184f292a063823b6513e7b6a1817e2477db303
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: ae70422ce3c88a3de6842f3f0946666b86ae559e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380569"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895020"
 ---
 # <a name="load-test-results-summary-overview"></a>Información general de resumen de resultados de pruebas de carga
 
 Después de ejecutar una prueba de carga, puede ver el resumen para entender rápidamente los resultados. El resumen de la prueba de carga proporciona los resultados clave en un formato compacto y fácil leer. También puede imprimir el resumen de la prueba de carga. Resulta cómodo para utilizarlo cuando deba comunicar los resultados a los interesados. El resumen de la prueba de carga también es la vista predeterminada cuando se abre un resultado de prueba de carga de una prueba ejecutada previamente. Para más información, consulte [Acceso a los resultados de pruebas de carga para su análisis](../test/how-to-access-load-test-results-for-analysis.md).
 
- ![Vista Resumen](../test/media/ltest_summaryview.png)
+![Vista Resumen](../test/media/ltest_summaryview.png)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="the-load-test-summary"></a>Resumen de la prueba de carga
 
@@ -127,7 +129,7 @@ La sección de recursos de controlador y agentes contiene una lista de equipos q
 
 ## <a name="errors"></a>Errores
 
-La sección de errores contiene una lista de todos los errores que se han producido durante la prueba de carga. Se muestran el tipo y subtipo del error, el recuento y el último mensaje. Puede elegir un error para abrir la tabla **Errores** e inspeccionar más detalles de ese error. Para obtener más información, vea [Analizar los errores y resultados de pruebas de carga en la vista Tablas del Analizador de prueba de carga](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) y [Cómo: Analizar errores con el panel Contadores](../test/how-to-analyze-errors-using-the-counters-panel.md).
+La sección de errores contiene una lista de todos los errores que se han producido durante la prueba de carga. Se muestran el tipo y subtipo del error, el recuento y el último mensaje. Puede elegir un error para abrir la tabla **Errores** e inspeccionar más detalles de ese error. Para obtener más información, vea [Analizar los errores y resultados de pruebas de carga en la vista Tablas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 > [!NOTE]
 > Puede expandir o contraer esta sección eligiendo la flecha situada a la izquierda del título de la sección.

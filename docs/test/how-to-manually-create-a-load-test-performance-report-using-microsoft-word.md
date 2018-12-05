@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c4bafd4e7e50838adbe8ba458191c370b4d7427d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 4a5dd85c56a57b6257041c129925703e8e91e050
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380699"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895618"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Cómo: Crear manualmente un informe de rendimiento de pruebas de carga con Microsoft Word
 
 Puede crear manualmente informes de prueba de carga en Microsoft Word copiando y pegando los datos de la vista de resumen de resultados de pruebas de carga y de la vista de gráficos. Los datos que se presentan en la vista de resumen y de gráficos se aplican en formato HTML cuando se copian.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!TIP]
 > También puede copiar el texto sin formato de la vista de tablas y las capturas de pantalla de la vista de detalles de Microsoft Word, pero no se aplica en formato HTML, por lo que precisará formato y edición adicionales.
@@ -44,7 +46,7 @@ Puede crear manualmente informes de prueba de carga en Microsoft Word copiando y
 
 1.  En **Resultados de pruebas de carga**, si no se muestra la vista de gráfico, elija **Gráficos** en la barra de herramientas.
 
-2.  (Opcional) Haga zoom en el gráfico concreto que desea copiar en el documento de Microsoft Word, como se muestra en la siguiente ilustración. Para obtener más información, vea [Cómo: Acercar una región del gráfico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+2.  (Opcional) Haga zoom en el gráfico concreto que desea copiar en el documento de Microsoft Word, como se muestra en la siguiente ilustración. Para más información, consulte [Cómo: Acercar una región del gráfico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
      ![Control de zoom de la vista de gráficos](../test/media/ltest_zoomcontrol.png)
 
