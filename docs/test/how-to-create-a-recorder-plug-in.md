@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3851b70f818c9cc601dbbdabce059e16fec747ee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6525327e85d40b9b942e4e29a7d759a15598c824
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909782"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895844"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Cómo: Crear un complemento de grabación
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> permite modificar una prueba de rendimiento web grabada. La modificación se produce después de hacer clic en **Detener** en la barra de herramientas de la **grabadora de pruebas de rendimiento web**, pero antes de que la prueba se guarde y se presente en el Editor de pruebas de rendimiento web.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Un complemento de grabación permite realizar una correlación personalizada sobre parámetros dinámicos. Con la funcionalidad de correlación integrada, las pruebas de rendimiento web detectan los parámetros dinámicos de la grabación web al finalizar o cuando se usa **Promover parámetros dinámicos a parámetros de pruebas web** en la barra de herramientas del **Editor de pruebas de rendimiento web**. Sin embargo, la funcionalidad de detección integrada no encuentra siempre todos los parámetros dinámicos. Por ejemplo, no encuentra un id. de sesión, que normalmente obtiene su valor cambiado entre 5 y 30 minutos. Por tanto, tiene que realizar el proceso de correlación manualmente.
 

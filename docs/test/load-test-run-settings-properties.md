@@ -1,5 +1,5 @@
 ---
-title: Parámetros de ejecución de pruebas de carga en Visual Studio
+title: Parámetros de ejecución de pruebas de carga
 ms.date: 10/19/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,20 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d0a3311c90638b3fd34b9d651b89af2bed07f421
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b0123ba4e6f9565cc31f63a23bb0be0b5bee344
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817405"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895501"
 ---
 # <a name="load-test-run-settings-properties"></a>Propiedades de los parámetros de ejecución de las pruebas de carga
 
 Los parámetros de ejecución de una prueba de carga determinan otras opciones de configuración, incluidas la duración de la prueba, el nivel de detalle de la colección de resultados y los conjuntos de contadores que se recopilan cuando se ejecuta la prueba. Puede crear y almacenar varios parámetros de ejecución para cada prueba de carga, y seleccionar una configuración determinada para utilizarla durante la ejecución de la prueba. Cuando se crea la prueba de carga mediante el **Asistente para prueba de carga nueva**, se agrega un parámetro de ejecución inicial a la prueba de carga.
 
- En las tablas siguientes se describen las diversas propiedades de los parámetros de ejecución de pruebas de carga. Puede modificar estas propiedades para cumplir los requisitos concretos de las pruebas de carga.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Para obtener más información, vea [Configurar los parámetros de ejecución de pruebas de carga](../test/configure-load-test-run-settings.md).
+En las tablas siguientes se describen las diversas propiedades de los parámetros de ejecución de pruebas de carga. Puede modificar estas propiedades para cumplir los requisitos concretos de las pruebas de carga.
+
+Para obtener más información, vea [Configurar los parámetros de ejecución de pruebas de carga](../test/configure-load-test-run-settings.md).
 
 ## <a name="general-properties"></a>Propiedades generales
 
@@ -42,7 +44,7 @@ Los parámetros de ejecución de una prueba de carga determinan otras opciones d
 |Propiedad.|de esquema JSON|
 |-|----------------|
 |**Máximos registros de prueba**|Especifica el número máximo de registros de prueba que se van a guardar para la prueba de carga. Cuando se alcance el valor especificado para el número máximo de registros de prueba, la prueba de carga dejará de recopilar registros. Por tanto, los registros se recopilarán al principio de la prueba, no al final. La ejecución de la prueba de carga continuará hasta que se complete.|
-|**Frecuencia de guardado del registro para pruebas completadas**|Especifica la frecuencia con la que se escribirá el registro de prueba. El número indica que en el registro de prueba se guardará una prueba de cada número de pruebas especificado. Por ejemplo, si se especifica el valor diez, significa que se escribirá en el registro de prueba la décima, la vigésima, la trigésima, y así sucesivamente. Si se establece el valor en 0, se especifica que no se guardará ningún registro de prueba.<br /><br /> Para obtener más información, vea [Cómo: Especificar la frecuencia con que se guardan los registros de pruebas](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
+|**Frecuencia de guardado del registro para pruebas completadas**|Especifica la frecuencia con la que se escribirá el registro de prueba. El número indica que en el registro de prueba se guardará una prueba de cada número de pruebas especificado. Por ejemplo, si se especifica el valor diez, significa que se escribirá en el registro de prueba la décima, la vigésima, la trigésima, y así sucesivamente. Si se establece el valor en 0, se especifica que no se guardará ningún registro de prueba.|
 |**Guardar registro si la prueba no es correcta**|Valor booleano que determina si se guardan registros de prueba si se produce un error en una prueba de carga. De manera predeterminada, es `True`.<br /><br /> Para obtener más información, vea [Cómo: Especificar si los errores de las pruebas se guardan en los registros de pruebas](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 
  Para obtener más información, vea [Modificar la configuración de registro de pruebas de carga](../test/modify-load-test-logging-settings.md).

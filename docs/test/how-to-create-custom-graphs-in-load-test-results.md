@@ -11,18 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7de5d684b0a4299c2f3d90e4a00338c55d2d6870
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 7973fbf5ac81da2ba603aacb201b7592e602969e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382004"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895826"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>Cómo: Crear gráficos personalizados en los resultados de pruebas de carga
 
 puede diseñar gráficos que muestren información específica sobre los resultados de pruebas de carga. Los gráficos personalizados se diseñan especificando los contadores de la prueba de carga que se van a mostrar en el gráfico.
 
- Puede realizar el procedimiento siguiente mientras se ejecuta una prueba de carga o cuando termine de ejecutarse.
+Puede realizar el procedimiento siguiente mientras se ejecuta una prueba de carga o cuando termine de ejecutarse.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-a-custom-load-test-results-graph"></a>Para crear un gráfico de resultados de pruebas de carga personalizado
 

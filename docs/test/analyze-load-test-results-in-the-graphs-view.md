@@ -17,16 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 57c73a0da427141e4a8f94a51fa57ef7aa871019
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c635d3a2c21d1ab84feca285c8cea8eb2aac68f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870060"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895085"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analizar los resultados de pruebas de carga en la vista Gráficos del Analizador de pruebas de carga
 
 Los resultados de una prueba de carga se muestran como datos en varios paneles diferentes.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Para mostrar los resultados de las pruebas como gráficos, elija **Gráficos** en la barra de herramientas de la **prueba de carga**. Cada uno de los gráficos se muestra en un panel con el nombre del gráfico mostrado en la parte superior en una lista desplegable. Para mostrar un gráfico diferente en el panel, elija un nombre de gráfico diferente en la lista.
 
@@ -82,7 +84,6 @@ En la tabla siguiente se muestran los gráficos integrados disponibles para anal
 |**Mostrar contadores en los gráficos:** puede agregar diferentes tipos de datos a un gráfico de resultados de pruebas de carga si coloca contadores en el gráfico.|-   [Cómo: Agregar y eliminar contadores de los gráficos de resultados de pruebas de carga](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**Acercar gráficos:** una vez terminada una prueba de carga, puede usar las barras de zoom para acercar una región del gráfico y desplazarse por ella. Al aplicar el zoom para acercar, puede examinar los datos que se generaron durante la ejecución de una prueba de carga con más detalle.|-   [Cómo: Acercar una región del gráfico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
 |**Mostrar gráficos en mosaico:** puede organizar los gráficos de resultados de pruebas de carga de varias formas. Puede colocar en mosaico hasta cuatro gráficos.||
-|**Modificar el aspecto de los trazados de los contadores de rendimiento en los gráficos:** puede cambiar las opciones de líneas de trazado de los contadores de rendimiento en los gráficos. Esto incluye el color y el estilo de línea. Además, puede especificar el intervalo que va a utilizar para trazar el contador de rendimiento automática o manualmente.|-   [Cómo: Especificar valores de trazado para contadores gráficos](../test/how-to-specify-plot-options-for-graphing-counters.md)|
 |**Crear gráficos personalizados:** puede diseñar gráficos que muestren información específica sobre los resultados de pruebas de carga. Los gráficos personalizados se diseñan especificando los contadores de la prueba de carga que se van a mostrar en el gráfico.|-   [Cómo: Crear gráficos personalizados](../test/how-to-create-custom-graphs-in-load-test-results.md)|
 |**Exportar los datos de los contadores de rendimiento del gráfico:** puede exportar los datos del gráfico a Microsoft Excel con el botón **Exportar datos de gráfico a Excel** de la barra de herramientas del **Analizador de pruebas de carga** mientras está en la vista **Gráficos**.||
 

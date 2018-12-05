@@ -19,13 +19,17 @@ items:
     href: quickstart-debug-aspnet.md
 - name: Tutoriales
   items:
-  - name: Información sobre cómo depurar con Visual Studio
+  - name: Más información sobre la depuración de C#
     href: getting-started-with-the-debugger.md
+  - name: Más información sobre la depuración de C++
+    href: getting-started-with-the-debugger-cpp.md
+  - name: Más información sobre la depuración de Visual Basic
+    href: getting-started-with-the-debugger-vb.md
   - name: Ejecución de código Python en el depurador...
     href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
   - name: Depurar una aplicación de Azure activa
     href: debug-live-azure-applications.md
-  - name: Depurar código de C# y de C++
+  - name: Más información sobre la depuración de código C# y C++
     href: how-to-debug-managed-and-native-code.md
   - name: Inspeccionar los estados anteriores de la aplicación
     href: view-historical-application-state.md
@@ -836,9 +840,9 @@ items:
   items:
   - name: Novedades del depurador de Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 03b91cd33994c5fbc49a8ae3a5ace1bbac611e4a
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: 82809574dbbecf01e26e1677a4bb22ce9a482cf6
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621609"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821401"

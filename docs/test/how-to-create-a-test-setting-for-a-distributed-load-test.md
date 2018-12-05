@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8b38366a97351fae52ae82a4291ed13da996bf41
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2f04912423dfdbd2baa7beab431871f814c044b0
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296091"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895475"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Cómo: Crear una configuración de pruebas para una prueba de carga distribuida
 
 Establezca la *configuración de pruebas* de sus pruebas de carga para que pueda distribuir dichas pruebas entre varias máquinas por medio de agentes de prueba y controladores de pruebas. También puede establecer la configuración de pruebas para usar *adaptadores de datos de diagnóstico*, que especifican los tipos de datos que se van a recopilar o cómo afectan a los equipos de pruebas cuando se ejecutan las pruebas de carga desde Visual Studio.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Por ejemplo, puede usar el adaptador de datos de diagnóstico de Generador de perfiles de ASP.NET para recopilar el desglose de rendimiento del código. Además, los adaptadores de datos de diagnóstico se pueden usar para simular posibles cuellos de botella en la máquina de prueba o para reducir la memoria disponible del sistema.
 

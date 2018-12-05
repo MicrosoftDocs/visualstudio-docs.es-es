@@ -16,16 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f57d22963aa5078d3947bc94d3077c1e24534481
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 76b2e7eebf66bb4a9c2564ca30a72a7b17dbdcfc
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295571"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895514"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generar y ejecutar una prueba de rendimiento web codificada
 
 Las pruebas de rendimiento web se graban al examinar la aplicación web. Las pruebas se incluyen en las pruebas de carga para medir el rendimiento de la aplicación web con la carga de varios usuarios. Una prueba de rendimiento web se puede convertir en un script basado en código que se puede editar y personalizar como cualquier otro código fuente. Por ejemplo, puede agregar construcciones de bucle y bifurcaciones.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="generate-a-coded-web-performance-test"></a>Generar una prueba de rendimiento web codificada
 

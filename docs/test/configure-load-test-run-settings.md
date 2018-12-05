@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2171912d3542049564f23ea69b06186cd1846943
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c20a56ce2d78ab5ba3c3fdcde19af573a830fc5
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813867"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895631"
 ---
 # <a name="configure-load-test-run-settings"></a>Configurar los parámetros de ejecución de pruebas de carga
 
 Los *parámetros de ejecución* son un conjunto de propiedades que influyen en la manera en que se ejecuta una prueba de carga. Los parámetros de ejecución están organizados por categorías en la ventana **Propiedades**.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Puede tener más de un parámetro de ejecución en una prueba de carga, aunque solo uno de los parámetros de ejecución puede estar activo en cada ejecución. Los demás ofrecen una forma rápida de seleccionar parámetros alternativos para utilizar en posteriores ejecuciones de pruebas.
 
