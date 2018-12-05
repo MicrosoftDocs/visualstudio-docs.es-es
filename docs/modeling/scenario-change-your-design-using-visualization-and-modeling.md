@@ -147,7 +147,7 @@ Dinner Now debe estimar el costo de satisfacer el requisito nuevo. Esto depende 
 |**Mapa o diagrama**|**Qué muestra**|
 |-|-|
 |*Mapa de código*<br /><br /> Vea:<br /><br /> - [Asignar dependencias en sus soluciones](../modeling/map-dependencies-across-your-solutions.md)<br />- [Examinar y reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md)<br />- [Personalizar mapas de código mediante la edición de los archivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|Dependencias y otras relaciones en el código.<br /><br /> Por ejemplo, Dinner Now puede empezar revisando los mapas de código de ensamblado para obtener información general de los ensamblados y de sus dependencias. Dinner Now puede profundizar en los mapas para explorar los espacios de nombres y las clases de esos ensamblados.<br /><br /> Dinner Now también puede crear mapas para explorar áreas particulares y otros tipos de relaciones en el código. Mediante el Explorador de soluciones, buscan y seleccionan las áreas y las relaciones de interés.|
-|*Diagrama de clases basado en código*<br /><br /> Vea [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Clases existentes en el código|
+|*Diagrama de clases basado en código*<br /><br /> Vea [Cómo: Agregar diagramas de clases a proyectos (Diseñador de clases)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Clases existentes en el código|
 
  Por ejemplo, el desarrollador crea un mapa de código y ajusta su ámbito para centrarse en las áreas que se verán afectadas por el nuevo escenario. Estas áreas se seleccionan y se resaltan en el mapa:
 
@@ -167,7 +167,7 @@ Dinner Now debe estimar el costo de satisfacer el requisito nuevo. Esto depende 
 
 |**Diagramas**|**Qué describe**|
 |-|-|
-|*Diagrama de clases basado en código*<br /><br /> Vea [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Las clases existentes en el código.|
+|*Diagrama de clases basado en código*<br /><br /> Vea [Cómo: Agregar diagramas de clases a proyectos (Diseñador de clases)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Las clases existentes en el código.|
 
 ### <a name="ValidatingCode"></a> Mantener la coherencia con el diseño de código
  Dinner Now debe asegurarse de que el código actualizado mantiene la coherencia con el diseño. Crea diagramas de dependencia que se describen las capas de funcionalidad en el sistema, especifique las dependencias permitidas entre artefactos de la solución de ellas y se asocian a esas capas.
@@ -332,7 +332,7 @@ Este mapa muestra que la clase PaymentApprover se encuentra ahora en el espacio 
 |**Diagram**|**Qué describe**|
 |-|-|
 |Diagrama de dependencias|La arquitectura lógica del sistema. Utilice la validación de dependencias para asegurarse de que el código mantiene la coherencia con el diseño.<br /><br /> Para ayudarle a identificar dependencys existentes o dependencys previstos, cree un mapa de código y agrupe los elementos relacionados. Para crear un diagrama de dependencia, consulte:<br /><br /> - [Crear diagramas de dependencia desde el código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependencia: instrucciones](../modeling/layer-diagrams-guidelines.md)|
-|Diagrama de clases (basado en código)|Las clases existentes en el código de un proyecto específico.<br /><br /> Para visualizar y modificar una clase existente en el código, use el Diseñador de clases.<br /><br /> Vea [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|
+|Diagrama de clases (basado en código)|Las clases existentes en el código de un proyecto específico.<br /><br /> Para visualizar y modificar una clase existente en el código, use el Diseñador de clases.<br /><br /> Vea [Cómo: Agregar diagramas de clases a proyectos (Diseñador de clases)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|
 
 ### <a name="DefineClasses"></a> Definición de un glosario de tipos: diagramas de clases
  Los diagramas de clases definen las entidades, términos o conceptos que participan en el sistema y sus relaciones entre sí. Por ejemplo, estos diagramas se pueden usar durante el desarrollo para describir los atributos y las operaciones de cada clase, independientemente del lenguaje de implementación o el estilo.
