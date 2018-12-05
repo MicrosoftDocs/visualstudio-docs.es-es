@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d9143306b9f3894e7f8f6742420f90aa30008340
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 76ba63b1ca84a09294226ad8c4924df9b1fbb321
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204094"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894695"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Cómo: Agregar conjuntos de contadores personalizados mediante el Editor de pruebas de carga
 
@@ -29,6 +29,8 @@ Cuando se crea una prueba de carga con el **Asistente para prueba de carga nueva
 Los contadores se administran en el **Editor de pruebas de carga**. Los conjuntos de contadores que ya se han agregado a la prueba están visibles en el nodo **Conjuntos de contadores** de la prueba de carga. Después de crear una prueba de carga, puede agregar nuevos conjuntos de contadores personalizados a la misma.
 
 ![Conjunto de contadores personalizado](../test/media/loadtestcustomcounter.png)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-add-a-custom-counter-set-to-a-load-test"></a>Para agregar un conjunto de contadores personalizados a una prueba de carga
 

@@ -15,16 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 95aa0b7545ab7f326779b24475c8f7593ede27a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dba28aea3a4859c9767925a0ac3c7b2ec8e75275
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879852"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894513"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Especificar conjuntos de contadores y reglas de umbral para equipos en una prueba de carga
 
 Las pruebas de carga proporcionan conjuntos de contadores con nombre que son útiles cuando se analizan datos de contadores de rendimiento. Los conjuntos de contadores están organizados por tecnología e incluyen Aplicación, ASP.NET, Aplicación .NET, IIS y SQL. Cuando se crea una prueba de carga con el **Asistente para prueba de carga nueva**, se agrega un conjunto inicial de contadores. Estos ofrecen una serie de conjuntos de contadores predefinidos e importantes para la prueba de carga. Los contadores se administran en el **Editor de pruebas de carga**.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > Si las pruebas de carga se distribuyen entre varios equipos remotos, los contadores de controlador y de agente se asignan automáticamente a los conjuntos de contadores de controlador y de agente. Para obtener más información sobre cómo usar máquinas remotas en la prueba de carga, vea [Controladores y agentes de prueba](configure-test-agents-and-controllers-for-load-tests.md).
@@ -42,7 +44,7 @@ Es importante que agregue los servidores sometidos a prueba a la lista de equipo
 |**Administrar los conjuntos de contadores de la prueba de carga:** después de crear la prueba de carga, puede editar el conjunto de contadores en el Editor de pruebas de carga. La administración de conjuntos de contadores implica la elección del conjunto de equipos del que desea recopilar datos de rendimiento, así como la asignación de un grupo de conjuntos de contadores para recopilar datos de cada equipo individual. Los contadores se administran en el Editor de prueba de carga.|-   [Cómo: Administrar conjuntos de contadores](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
 |**Agregar conjuntos de contadores a la prueba de carga:** al crear una prueba de carga con el **Asistente para prueba de carga nueva**, se agrega un conjunto inicial de contadores. Este conjunto inicial de contadores ofrece una serie de conjuntos de contadores predefinidos para la prueba de carga. Después de crear una prueba de carga, puede agregar nuevos contadores a los conjuntos de contadores existentes mediante el Editor de prueba de carga.|-   [Cómo: Agregar contadores a conjuntos de contadores](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [Cómo: Agregar conjuntos de contadores personalizados](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
 |**Especificar una regla de umbral mediante contadores para la prueba de carga:** una regla de umbral es una regla que se establece en un contador de rendimiento individual para supervisar el uso de recursos del sistema durante una prueba de carga. Las definiciones de conjuntos de contadores contienen reglas de umbral predefinidas para muchos contadores de rendimiento clave. Las reglas de umbral de las pruebas de carga comparan un valor de contador de rendimiento con un valor constante o con otro valor de contador de rendimiento.|-   [Cómo: Agregar una regla de umbral](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
-|**Asignar nombres descriptivos a los equipos a los que están asignados los conjuntos de contadores:** puede agregar etiquetas de equipo que le permitan aplicar un nombre fácilmente reconocible a un equipo. Las etiquetas se muestran en el nodo **Asignaciones de conjuntos de contadores** del árbol en el Editor de pruebas de carga. Lo que es más importante, las etiquetas se muestran en informes de Excel que ayudan a las partes interesadas a identificar qué rol desempeña el equipo en la prueba de carga, por ejemplo "Servidor web1 en laboratorio2" o "SQL Server2 en la oficina de Phoenix".<br /><br /> Para obtener más información, vea [Informar de los resultados de las pruebas de carga para las comparaciones de pruebas o los análisis de tendencias](../test/compare-load-test-results.md).|-   [Cómo: Agregar etiquetas de equipo a asignaciones de conjuntos de contadores](../test/how-to-add-computer-tags-to-counter-set-mappings-using-the-load-test-editor.md)|
+|**Asignar nombres descriptivos a los equipos a los que están asignados los conjuntos de contadores:** puede agregar etiquetas de equipo que le permitan aplicar un nombre fácilmente reconocible a un equipo. Las etiquetas se muestran en el nodo **Asignaciones de conjuntos de contadores** del árbol en el Editor de pruebas de carga. Lo que es más importante, las etiquetas se muestran en informes de Excel que ayudan a las partes interesadas a identificar qué rol desempeña el equipo en la prueba de carga, por ejemplo "Servidor web1 en laboratorio2" o "SQL Server2 en la oficina de Phoenix".<br /><br /> Para obtener más información, vea [Informar de los resultados de las pruebas de carga para las comparaciones de pruebas o los análisis de tendencias](../test/compare-load-test-results.md).||
 
 ## <a name="use-counter-sets"></a>Usar conjuntos de contadores
 

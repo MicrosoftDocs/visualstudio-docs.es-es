@@ -11,24 +11,25 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cce61d9a56a0f8f79ec943b58fd4d1a1f88e8289
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1f0fc5bdc5b17c13bfb0d4adf07a4a48347ce38b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382310"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896463"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Cómo: Usar la API de pruebas de rendimiento web
 
 Puede escribir código para sus pruebas de rendimiento web. La API de prueba de rendimiento web se utiliza para crear pruebas de rendimiento web automatizadas, complementos de prueba de rendimiento web, complementos de solicitud, solicitudes, reglas de extracción y reglas de validación. Las clases que constituyen estos tipos son las clases principales de esta API. Los otros tipos contenidos en esta API se utilizan para permitir la creación de objetos <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> y <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>. El espacio de nombres <xref:Microsoft.VisualStudio.TestTools.WebTesting> sirve para crear pruebas de rendimiento web personalizadas.
 
- También puede utilizar la API de prueba de rendimiento web para crear y guardar pruebas de rendimiento web declarativas mediante programación. Para ello, utilice las clases <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTest> y <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTestSerializer>.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+También puede utilizar la API de prueba de rendimiento web para crear y guardar pruebas de rendimiento web declarativas mediante programación. Para ello, utilice las clases <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTest> y <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTestSerializer>.
 
 > [!TIP]
 > El Examinador de objetos se usa para examinar el espacio de nombres <xref:Microsoft.VisualStudio.TestTools.WebTesting>. Los editores de Visual C# y de Visual Basic ofrecen compatibilidad con IntelliSense para codificar con las clases del espacio de nombres.
 
-
- También se pueden crear complementos para pruebas de carga. Para obtener más información, vea [Cómo: Usar la API de pruebas de carga](../test/how-to-use-the-load-test-api.md) y [Cómo: Crear un complemento de pruebas de carga](../test/how-to-create-a-load-test-plug-in.md).
+También se pueden crear complementos para pruebas de carga. Para obtener más información, vea [Cómo: Usar la API de pruebas de carga](../test/how-to-use-the-load-test-api.md) y [Cómo: Crear un complemento de pruebas de carga](../test/how-to-create-a-load-test-plug-in.md).
 
 ## <a name="to-use-the-webtesting-namespace"></a>Para usar el espacio de nombres WebTesting
 

@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5d5e378e62f03208c620669fada783fc5fdfb1b1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e184db43fcaca96008f85daffdb9abdbc41df07b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842175"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895228"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Cómo: Especificar la propiedad Almacenamiento de detalles de tiempo de un parámetro de ejecución de una prueba de carga
 
 Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar la configuración de modo que satisfaga las necesidades y los objetivos de la prueba.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Puede editar el valor de la propiedad **Almacenamiento de detalles de tiempo** de los parámetros de ejecución en la ventana **Propiedades**. La propiedad **Almacenamiento de detalles de tiempo** se puede establecer en cualquiera de las opciones siguientes:
 

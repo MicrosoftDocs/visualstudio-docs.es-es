@@ -1,5 +1,5 @@
 ---
-title: Edición de escenarios de prueba de carga en Visual Studio
+title: Escenarios de prueba de carga
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 67398d5a4b2b33ace2d3ba3c74d63693861e586e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 865be7c7c6371f92f85d853a7dde045274fc5efb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837144"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896541"
 ---
 # <a name="edit-load-test-scenarios"></a>Edición de escenarios de prueba de carga
 
 Un *escenario* de prueba de carga especifica el modelo de carga, la combinación de pruebas, la combinación de exploradores y la combinación de redes. Los escenarios son importantes porque permiten configurar pruebas en las que se simulan cargas de trabajo realistas y complejas.
 
 Por ejemplo, si va a probar un sitio de comercio electrónico que tiene un front-end de Internet que utilizarán cientos de clientes simultáneos, con velocidades de conexión muy diferentes y exploradores distintos. El mismo sitio también podría tener una función de administración utilizada por empleados internos para actualizar productos y para ver estadísticas. Estos usuarios internos normalmente tendrían acceso al sitio utilizando el mismo explorador y una conexión LAN de alta velocidad. Podría encapsular las propiedades de estos dos grupos de usuarios diferentes en escenarios diferentes. Cada escenario puede contener un tipo de usuario virtual. En este caso, se puede crear un escenario de prueba de carga que represente a clientes virtuales y otro escenario para representar a usuarios internos virtuales de un sitio web.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="scenario-components"></a>Componentes del escenario
 

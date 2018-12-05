@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 749c4be37586401d48e9c4a11d8fc70b8ed44c44
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: cf94de633554cef495b0a9a023426ac49de75c76
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382040"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895280"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Cómo: Crear un complemento de nivel de solicitud
 
 Las *solicitudes* son las instrucciones declarativas que constituyen las pruebas de rendimiento web. Los complementos de pruebas de rendimiento web permiten aislar y reutilizar código fuera de las principales instrucciones declarativas de la prueba de rendimiento web. Puede crear complementos y agregarlos a una solicitud individual, así como a la prueba de rendimiento web que la contiene. Un *complemento de solicitud* personalizado resulta útil para llamar al código cuando una determinada solicitud se ejecuta en una prueba de rendimiento web.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Cada complemento de solicitud de prueba de rendimiento web tiene un método PreRequest y un método PostRequest. Después de asociar un complemento de solicitud a una solicitud HTTP determinada, se desencadenará el evento PreRequest antes de que se emita la solicitud y se desencadenará PostRequest una vez recibida la respuesta.
 

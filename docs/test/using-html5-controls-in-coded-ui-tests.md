@@ -1,5 +1,5 @@
 ---
-title: Uso de controles HTML5 en pruebas automatizadas de IU en Visual Studio
+title: Usar controles HTML5 en pruebas de IU codificada
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 418c0aa6660b01896252d04a711d4069da389f00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a603a662c9007ab3ee0e66df0b23959bfdce83fb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914494"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896201"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Usar controles HTML5 en pruebas automatizadas de IU
 
 Las pruebas de IU codificadas proporcionan soporte para algunos de los controles HTML5 incluidos en Internet Explorer 9 o Internet Explorer 10.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
  **Requisitos**
 
@@ -27,15 +29,14 @@ Las pruebas de IU codificadas proporcionan soporte para algunos de los controles
 > [!WARNING]
 > En versiones anteriores a Internet Explorer 10, era posible ejecutar pruebas de IU codificadas en un nivel de privilegios más alto en comparación con el del proceso de Internet Explorer. Al ejecutar pruebas de IU codificadas en Internet Explorer 10, tanto la prueba de IU codificada como el proceso de Internet Explorer deben estar en el mismo nivel de privilegios. Esto se debe a las características de AppContainer más seguras de Internet Explorer 10.
 
-
 > [!WARNING]
 > Si crea una prueba de IU codificada en Internet Explorer 10, podría no ejecutarse con Internet Explorer 9 o Internet Explorer 8. Esto se debe a que Internet Explorer 10 incluye controles HTML5, como audio, vídeo, barra de progreso y control deslizante. Internet Explorer 9 o Internet Explorer 8 no reconocen estos controles HTML5. Igualmente, la prueba de IU codificada mediante Internet Explorer 9 podría incluir algunos controles HTML5 que tampoco reconoce Internet Explorer 8.
 
-
 ## <a name="audio-control"></a>Control de audio
- **Control de audio:** las acciones en el control de audio de HTML5 se graban y se reproducen correctamente.
 
- ![Control Audio de HTML5](../test/media/codedui_html5_audio.png)
+**Control de audio:** las acciones en el control de audio de HTML5 se graban y se reproducen correctamente.
+
+![Control Audio de HTML5](../test/media/codedui_html5_audio.png)
 
 |Acción|Grabando|Código generado|
 |-|---------------|-|

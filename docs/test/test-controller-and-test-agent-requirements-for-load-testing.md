@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f29e43c66844f915d9d79de3819166905b083df2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ceb3ecde3941a12b7113ede04b5f7dda841c7816
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813991"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894734"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Requisitos del controlador de pruebas y el agente de pruebas para las pruebas de carga
 
 Algunos tipos de pruebas, como las pruebas unitarias, las pruebas de rendimiento web, las pruebas de carga y las pruebas manuales, están integradas en Visual Studio. Visual Studio permite a los usuarios de Visual Studio Application Lifecycle Management ejecutar pruebas en equipos remotos a través de un controlador de pruebas y uno o más agentes. Vea [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="hardware-and-software-requirements"></a>Requisitos de hardware y software
 

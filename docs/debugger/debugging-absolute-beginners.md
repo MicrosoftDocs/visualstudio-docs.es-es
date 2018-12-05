@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa998896ad4c67bcd9e10ee50b4939bdbf915330
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 7f6b0855b18f12bd80ad17c5b544a95e5ee57de9
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257373"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821375"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Cómo depurar para principiantes sin experiencia
 
@@ -244,7 +244,7 @@ A continuación, crearemos una aplicación que tiene algunos errores.
 
     ![Error de sintaxis](../debugger/media/beginners-no-definition.png)
 
-    Aunque se establezca cada galaxia con un objeto de tipo `GType` (que tiene la propiedad `MGType`), el depurador no reconoce el objeto `theGalaxy` como un objeto de tipo `GType`. ¿Qué sucede? Desea buscar cualquier código que establece el tipo de galaxia. Al hacerlo, verá que la clase `GType` definitivamente tiene una propiedad de `MyGType`, pero algo no es correcto. El mensaje de error sobre `object` resulta ser la pista; para el intérprete de lenguaje, el tipo parece ser un objeto de tipo `object` en lugar de un objeto de tipo `GType`.
+    Aunque se establezca cada galaxia con un objeto de tipo `GType` (que tiene la propiedad `MyGType`), el depurador no reconoce el objeto `theGalaxy` como un objeto de tipo `GType`. ¿Qué sucede? Desea buscar cualquier código que establece el tipo de galaxia. Al hacerlo, verá que la clase `GType` definitivamente tiene una propiedad de `MyGType`, pero algo no es correcto. El mensaje de error sobre `object` resulta ser la pista; para el intérprete de lenguaje, el tipo parece ser un objeto de tipo `object` en lugar de un objeto de tipo `GType`.
 
 1. Al examinar el código relacionado con la configuración del tipo galaxia, descubre que la propiedad `GalaxyType` de la clase `Galaxy` está especificada como `object` en lugar de `GType`.
 

@@ -1,5 +1,5 @@
 ---
-title: Especificar tipos de redes virtuales en un escenario de prueba de carga en Visual Studio
+title: Especificar los tipos de red virtual en un escenario de prueba de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,32 +14,34 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b1f545260b3632c8097ce4bfed9eff7f2de0ccbd
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 586038d325f17d37167166a361ee214d959ba2ab
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380233"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894682"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Especificar tipos de redes virtuales en un escenario de prueba de carga
 
 La *combinación de redes* le ofrece una forma más realista de simular la carga en un escenario de prueba de carga. La carga se genera utilizando una combinación heterogénea de tipos de red en lugar de un tipo de red único. Se crea una aproximación más real a la forma en que los usuarios finales interactúan con las aplicaciones.
 
- Una combinación de redes especifica la probabilidad de que un usuario virtual ejecute un *perfil de red* determinado. Un perfil de red es una simulación de ancho de banda de red en la capa de la aplicación. No simula latencia.
+Una combinación de redes especifica la probabilidad de que un usuario virtual ejecute un *perfil de red* determinado. Un perfil de red es una simulación de ancho de banda de red en la capa de la aplicación. No simula latencia.
 
- Cuando se crea una prueba de carga, es posible que se desee simular que la carga se genera a través de más de un tipo de conexión de red. La combinación de redes ofrece varios tipos de redes. Las distintas redes se simulan. Cuando se elige una opción como `Cable-DSL 1.5Mbps`, los tiempos de espera se insertan en la prueba para simular el ancho de banda seleccionado.
+Cuando se crea una prueba de carga, es posible que se desee simular que la carga se genera a través de más de un tipo de conexión de red. La combinación de redes ofrece varios tipos de redes. Las distintas redes se simulan. Cuando se elige una opción como `Cable-DSL 1.5Mbps`, los tiempos de espera se insertan en la prueba para simular el ancho de banda seleccionado.
 
- La combinación de redes funciona como otras opciones de combinación. Un tipo de red se selecciona de forma aleatoria asociada a un usuario virtual, basándose en la combinación de redes. Las pruebas de este usuario se ejecutan utilizando un tipo de red determinado, en función de la probabilidad que se haya especificado en la combinación.
+La combinación de redes funciona como otras opciones de combinación. Un tipo de red se selecciona de forma aleatoria asociada a un usuario virtual, basándose en la combinación de redes. Las pruebas de este usuario se ejecutan utilizando un tipo de red determinado, en función de la probabilidad que se haya especificado en la combinación.
 
- Después de haber especificado una combinación de redes, puede agregar y quitar tipos de red. También puede cambiar la distribución de la combinación de redes utilizando el control de combinaciones.
+Después de haber especificado una combinación de redes, puede agregar y quitar tipos de red. También puede cambiar la distribución de la combinación de redes utilizando el control de combinaciones.
 
- El control de combinación permite ajustar con facilidad la distribución de las redes en un escenario.
+El control de combinación permite ajustar con facilidad la distribución de las redes en un escenario.
 
- Para obtener más información, vea [Control de combinación](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+Para más información, consulte [Control de combinaciones](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="true-network-emulation"></a>Emulación de red verdadera
 
- Visual Studio usa emulación de red verdadera basada en software para todos los tipos de pruebas, incluidas las pruebas de carga. La emulación de red verdadera simula las condiciones de la red por manipulación directa de los paquetes de red. El emulador de red verdadera puede emular el comportamiento de las redes cableadas e inalámbricas utilizando un vínculo físico confiable, como Ethernet. En la emulación de red verdadera se incorporan los siguientes atributos de red:
+Visual Studio usa emulación de red verdadera basada en software para todos los tipos de pruebas, incluidas las pruebas de carga. La emulación de red verdadera simula las condiciones de la red por manipulación directa de los paquetes de red. El emulador de red verdadera puede emular el comportamiento de las redes cableadas e inalámbricas utilizando un vínculo físico confiable, como Ethernet. En la emulación de red verdadera se incorporan los siguientes atributos de red:
 
 -   Tiempo de ida y vuelta por la red (latencia)
 
@@ -68,7 +70,7 @@ Los desarrolladores y evaluadores de aplicaciones basados en red pueden utilizar
 
 2.  En la columna **Tipo de red**, elija la flecha de la nueva entrada. Elija el tipo de red que desea.
 
-3.  (Opcional) Ajuste el control de combinación para especificar la distribución de pruebas. Para obtener más información, vea [Control de combinación](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+3.  (Opcional) Ajuste el control de combinación para especificar la distribución de pruebas. Para más información, consulte [Control de combinaciones](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
 4.  Cuando haya terminado de agregar redes, elija **Aceptar**.
 
@@ -80,7 +82,7 @@ Los desarrolladores y evaluadores de aplicaciones basados en red pueden utilizar
 
 3.  Seleccione la red en la cuadrícula y, luego, elija **Quitar**.
 
-4.  (Opcional) Ajuste el control de combinación para especificar la distribución de pruebas. Para obtener más información, vea [Control de combinación](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+4.  (Opcional) Ajuste el control de combinación para especificar la distribución de pruebas. Para más información, consulte [Control de combinaciones](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
 5.  Cuando termine de quitar redes, elija **Aceptar**.
 

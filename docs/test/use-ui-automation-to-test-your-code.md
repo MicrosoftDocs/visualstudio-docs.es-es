@@ -1,6 +1,6 @@
 ---
 title: Pruebas automatizadas de IU
-ms.date: 11/04/2016
+ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -18,16 +18,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cbe8f1b9e0fc1fcc47a8d90e0033e8edb933e1aa
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: ce10c81265ecfd95f43d62c73d69c902eda1a6c6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296078"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896645"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usar la automatización de la interfaz de usuario para probar el código
 
 Las pruebas automatizadas que controlan la aplicación a través de la interfaz de usuario se conocen como *pruebas automatizadas de IU* (CUIT) en Visual Studio. Estas pruebas incluyen unas pruebas funcionales de los controles de la interfaz de usuario. Permiten comprobar si toda la aplicación, incluida la interfaz de usuario, funciona correctamente. Las pruebas de IU codificadas son especialmente útiles donde haya una validación o cualquier otra lógica en la interfaz de usuario, por ejemplo, en una página web. También se suelen usar para automatizar una prueba manual existente.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 Como se muestra en la ilustración siguiente, una experiencia típica de desarrollo podría ser aquella donde, inicialmente, el usuario se limite a compilar la aplicación y a hacer clic en los controles de la interfaz de usuario a fin de comprobar que todo funciona correctamente. Después, es posible que decida crear una prueba automatizada de manera que no sea necesario seguir probando la aplicación manualmente. Según la funcionalidad concreta que se prueba en la aplicación, puede escribir código para una prueba funcional o bien una prueba de integración que es posible que incluya o no la realización de pruebas en el nivel de interfaz de usuario. Si quiere tener acceso directamente a alguna lógica de negocios, puede codificar una prueba unitaria. Sin embargo, en algunas circunstancias, puede ser beneficioso incluir pruebas de los diversos controles de IU en la aplicación. Una prueba automatizada de IU puede comprobar que la renovación de código no afecte a la funcionalidad de la aplicación.
 
