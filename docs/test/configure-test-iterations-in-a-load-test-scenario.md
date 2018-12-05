@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0310ac0ee0e6226f9f5685c590e4dc2e0c49b6b3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f5ec275c4b6e7fcf239aa0903ffe68757c5412cc
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176146"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896216"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Configurar iteraciones de prueba en un escenario de prueba de carga
 
 Para configurar los parámetros de iteración de prueba, edite un escenario de prueba de carga mediante el Editor de pruebas de carga y la ventana **Propiedades**. De forma predeterminada, un escenario de prueba de carga se configura sin especificar iteraciones de pruebas máximas. Tiene la posibilidad de configurar el número máximo de iteraciones del escenario y el tiempo de pausa entre ellas.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="specify-the-maximum-test-iterations-for-a-scenario"></a>Especificar el número máximo de iteraciones de prueba para un escenario
 
@@ -30,9 +32,9 @@ Puede especificar el número máximo de veces que quiere que se ejecuten las pru
 La propiedad **Iteraciones de pruebas máximas** controla el número máximo de iteraciones de pruebas que se deben ejecutar para el escenario. Al igual que sucede con la propiedad **Iteraciones de prueba** en los parámetros de ejecución de pruebas de carga, se trata del número máximo para todos los usuarios en todos los agentes, es decir, no es un valor por usuario.
 
 > [!NOTE]
-> Para obtener una lista completa de las propiedades de los escenarios de pruebas de carga y sus descripciones, vea [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md).
+> Para obtener una lista completa de las propiedades de los escenarios de pruebas de carga y sus descripciones, consulte [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md).
 
- Para la combinación de pruebas secuencial, una iteración es un paso a través de todas las pruebas de la combinación. Para todas las demás combinaciones de pruebas, cada ejecución de pruebas se considera una iteración. Para obtener más información, vea [Control de combinación](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
+ Para la combinación de pruebas secuencial, una iteración es un paso a través de todas las pruebas de la combinación. Para todas las demás combinaciones de pruebas, cada ejecución de pruebas se considera una iteración. Para más información, consulte [Control de combinaciones](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
  Si la prueba de carga es una prueba de carga basada en la duración y la duración expira antes de que el número de iteraciones se haya completado, la prueba se seguirá deteniendo. Si la prueba está basada en la iteración, y las iteraciones de pruebas finalizan antes de las iteraciones del escenario, la prueba se detendrá. La duración se configura mediante la propiedad **Duración de la ejecución** de la ventana **Propiedades** asociada a un parámetro de ejecución en una prueba de carga.
 
@@ -91,7 +93,7 @@ La propiedad **Tiempo de reflexión entre iteraciones de la prueba** se emplea p
 
 ## <a name="see-also"></a>Vea también
 
-- [Editar escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
+- [Edición de escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
 - [Configurar agentes y controladores de pruebas para pruebas de carga](../test/configure-test-agents-and-controllers-for-load-tests.md)
 - [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md)
 - [Modificar los tiempos de reflexión para simular los retrasos de la interacción humana en un sitio web](../test/edit-think-times-in-load-test-scenarios.md)

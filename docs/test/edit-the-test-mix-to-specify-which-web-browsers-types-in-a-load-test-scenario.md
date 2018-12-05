@@ -13,22 +13,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9a36578753a3b50608c7c1d3fe3184a3e7ff64e8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8999d3acdd9160ea33f6e1fa9d07dc9f69619b01
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176767"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896476"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Edición de la combinación de pruebas para especificar tipos de exploradores web en un escenario de prueba de carga
 
 La *combinación de exploradores* le ofrece una forma más realista de simular la carga en un escenario de prueba de carga. La carga se genera utilizando una combinación heterogénea de exploradores web, en lugar de uno solo. Se crea una aproximación más parecida a los exploradores web que se utilizarán con sus aplicaciones.
 
- Una combinación de exploradores especifica la probabilidad de que un usuario virtual ejecute un tipo de explorador web determinado en un escenario de prueba de carga. Durante la creación de una prueba de carga, puede ser conveniente simular que la carga se genera con varios exploradores web. Cuando se agrega un tipo de explorador web a la combinación desde el conjunto de exploradores web suministrado, se agrega un conjunto de encabezados asociados al explorador web seleccionado a cada solicitud HTTP enviada por una prueba de rendimiento web.
+Una combinación de exploradores especifica la probabilidad de que un usuario virtual ejecute un tipo de explorador web determinado en un escenario de prueba de carga. Durante la creación de una prueba de carga, puede ser conveniente simular que la carga se genera con varios exploradores web. Cuando se agrega un tipo de explorador web a la combinación desde el conjunto de exploradores web suministrado, se agrega un conjunto de encabezados asociados al explorador web seleccionado a cada solicitud HTTP enviada por una prueba de rendimiento web.
 
- La combinación de exploradores funciona como otras opciones de combinación. Se asocia un tipo de explorador web de forma aleatoria a un usuario virtual, basándose en la combinación de exploradores web. Las pruebas de ese usuario se ejecutan en un explorador web determinado, en función de la probabilidad especificada en la combinación.
+La combinación de exploradores funciona como otras opciones de combinación. Se asocia un tipo de explorador web de forma aleatoria a un usuario virtual, basándose en la combinación de exploradores web. Las pruebas de ese usuario se ejecutan en un explorador web determinado, en función de la probabilidad especificada en la combinación.
 
- Después de especificar una combinación de exploradores web, puede agregarle y quitarle tipos de exploradores. También puede cambiar la distribución de la combinación de exploradores utilizando el control de combinación. El control de combinación permite ajustar con facilidad la distribución de exploradores en un escenario.
+Después de especificar una combinación de exploradores web, puede agregarle y quitarle tipos de exploradores. También puede cambiar la distribución de la combinación de exploradores utilizando el control de combinación. El control de combinación permite ajustar con facilidad la distribución de exploradores en un escenario.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="add-new-browsers-to-a-scenario"></a>Agregar nuevos exploradores a un escenario
 
@@ -83,4 +85,4 @@ La *combinación de exploradores* le ofrece una forma más realista de simular l
 
 ## <a name="see-also"></a>Vea también
 
-- [Editar escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
+- [Modificar escenarios de prueba de carga](../test/edit-load-test-scenarios.md)

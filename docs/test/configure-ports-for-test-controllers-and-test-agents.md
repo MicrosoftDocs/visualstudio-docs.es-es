@@ -15,20 +15,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9f41e372f6c75e10ebf4d66fcd68eb4652b02f0f
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: c5b740329a1d0cdf9810401a1056ba901056a3af
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297600"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894539"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>Configuración de los puertos para los controladores de pruebas y los agentes de pruebas
 
 Puede cambiar los puertos de entrada predeterminados que usan por el controlador y el agente de pruebas y el cliente. Esto podría ser necesario si intenta usar el controlador, el agente de prueba o el cliente junto con algún otro software en conflicto con la configuración de los puertos. Otra razón para cambiar los puertos es la restricción del firewall entre el controlador de prueba y el cliente. En este caso podría configurar el puerto para habilitarlo para un firewall manualmente de forma que el controlador de prueba pueda enviar los resultados al cliente.
 
- La siguiente ilustración muestra los puntos de conexión entre el controlador de prueba, el agente de prueba y el cliente. Describe qué puertos se usan para las conexiones entrantes y salientes, así como las restricciones de seguridad empleadas en estos puertos.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- ![Puertos de controlador de pruebas y agente de prueba y seguridad](../test/media/test-controller-agent-firewall.png)
+La siguiente ilustración muestra los puntos de conexión entre el controlador de prueba, el agente de prueba y el cliente. Describe qué puertos se usan para las conexiones entrantes y salientes, así como las restricciones de seguridad empleadas en estos puertos.
+
+![Puertos de controlador de pruebas y agente de prueba y seguridad](../test/media/test-controller-agent-firewall.png)
 
 ## <a name="incoming-connections"></a>Conexiones entrantes
 

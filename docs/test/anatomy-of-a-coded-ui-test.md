@@ -1,5 +1,5 @@
 ---
-title: Anatomía de una prueba automatizada de IU en Visual Studio
+title: Anatomía de una prueba de IU codificada
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d86dfcd84ba203891deb52b8a4b646f610a3567
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d5c1a8bcc8ee43aa36b8a39cd53f4be4f6882f06
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925221"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896593"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Anatomía de una prueba automatizada de IU
 
 Cuando se crea una prueba automatizada de IU en un proyecto de prueba automatizada de IU, se agregan varios archivos a la solución. En este artículo se proporciona información acerca de los archivos.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="contents-of-a-coded-ui-test"></a>Contenido de una prueba automatizada de IU
 

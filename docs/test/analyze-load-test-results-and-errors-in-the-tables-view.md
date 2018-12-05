@@ -23,16 +23,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c2a0ccc4ee9f002a6c0f335aed590d3b8bb79a7c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cab92c4daac6da81541771b534f4f1a6f9be159e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928677"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896632"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analizar los errores y resultados de pruebas de carga en la vista Tablas del Analizador de pruebas de carga
 
 Al ver los resultados de una ejecución de pruebas de carga, puede abrir paneles diferentes que proporcionan distintas maneras de analizar los datos. Puede ver los datos en forma de gráfico, ver cómo cambian con el tiempo o ver los datos en forma de tablas detalladas.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Para cambiar a la vista de tablas, elija **Tablas** en la barra de herramientas de la **prueba de carga**. Para cambiar entre las distintas tablas, use la lista desplegable **Tablas** en la barra de herramientas situada encima de la cuadrícula de la tabla. En la vista de tabla, puede ver hasta cuatro tablas a la vez. Para más información, vea [Disponer en mosaico tablas de pruebas de carga](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#tile-load-test-tables) en este tema.
 
@@ -41,14 +43,14 @@ La mayoría de los valores numéricos mostrados en una tabla para los contadores
 > [!NOTE]
 > Las columnas denominadas **En último lugar** solo están disponibles mientras se ejecuta una prueba de carga. Una vez finalizada la prueba de carga, estas columnas no están disponibles.
 
- Para ordenar la mayoría de las tablas, puede elegir el título de la columna según la que desea ordenar. De forma predeterminada, algunas tablas no muestran todas las columnas disponibles. Puede agregar columnas a las tablas, si hay columnas disponibles. Para agregar columnas, haga clic con el botón derecho en la tabla y elija **Agregar o quitar columnas**.
+Para ordenar la mayoría de las tablas, puede elegir el título de la columna según la que desea ordenar. De forma predeterminada, algunas tablas no muestran todas las columnas disponibles. Puede agregar columnas a las tablas, si hay columnas disponibles. Para agregar columnas, haga clic con el botón derecho en la tabla y elija **Agregar o quitar columnas**.
 
 > [!NOTE]
 > Puede copiar los datos de una tabla en otras aplicaciones, como Excel, para ulteriores análisis.
 
 ## <a name="the-load-test-tables"></a>Las tablas de prueba de carga
 
- La tabla siguiente muestra las tablas que están disponibles para analizar ejecuciones de prueba de carga.
+La tabla siguiente muestra las tablas que están disponibles para analizar ejecuciones de prueba de carga.
 
 |Nombre de la tabla|Descripción|
 |-|-|

@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f5e7a56ff01e06c0d5046ab477ec78635f01f6c4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3bff9be24d5d1f615270bc80790a04e85e7cf25c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381916"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895332"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Cómo: Seleccionar el parámetro de ejecución activo de una prueba de carga
 
 Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades de los escenarios de modo que satisfagan las necesidades y los objetivos de la prueba.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Una prueba de carga puede contener uno o más *parámetros de ejecución* que son un conjunto de propiedades que afectan a la manera en que se ejecuta una prueba de carga. Los parámetros de ejecución están organizados por categorías en la ventana **Propiedades**. Cuando se ejecuta una prueba de carga, utiliza el parámetro de ejecución que actualmente está definido como activo.
 
@@ -31,8 +33,6 @@ Si la prueba de carga solo incluye un nodo de parámetros de ejecución en la ca
 En el **Editor de pruebas de carga**, el parámetro de ejecución activo se identifica por el sufijo "[Active]".
 
 ## <a name="select-the-active-run-setting"></a>Seleccionar el parámetro de ejecución activo
-
-### <a name="to-select-the-active-run-setting-in-a-load-test"></a>Para seleccionar el parámetro de ejecución activo en una prueba de carga
 
 1.  Abra una prueba de carga.
 
