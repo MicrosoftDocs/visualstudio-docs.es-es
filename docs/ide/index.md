@@ -10,12 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: a20e248ae13fa15442c753dfce85b56620505d7d
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: e4378cad8706648a6412fcce649077ca479dfb67
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384180"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027281"
 ---
 # <a name="visual-studio-documentation"></a>Documentación de Visual Studio
 
@@ -101,7 +101,7 @@ Tutoriales, vídeos y otra documentación muestran formas de crear código y apl
         </a>
     </li>
     <li>
-        <a href="/visualstudio/ide/quickstart-projects-solutions">
+        <a href="/visualstudio/get-started/tutorial-projects-solutions">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -119,7 +119,7 @@ Tutoriales, vídeos y otra documentación muestran formas de crear código y apl
         </a>
     </li>
     <li>
-        <a href="/visualstudio/ide/quickstart-editor">
+        <a href="/visualstudio/get-started/tutorial-editor">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
