@@ -18,18 +18,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa469b109e0e22e426d76f75be50309196c6a264
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: 944347f6afc371775afca1b58bae77271b60359c
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826796"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621648"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Variables de inspección con ventanas Inspección e Inspección rápida 
 
 Durante la depuración, puede usar **inspección** windows y **Inspección rápida** para observar las variables y expresiones. Windows solo están disponibles durante una sesión de depuración.
 
 **Inspección** windows pueden mostrar varias variables a la vez durante la depuración. El **Inspección rápida** cuadro de diálogo muestra una única variable a la vez y debe cerrarse para que pueda continuar la depuración.
+
+Si se trata de la primera vez que ha probado para depurar el código, es posible que desea leer [corregir errores al escribir mejor C# código](../debugger/write-better-code-with-visual-studio.md) y [de depuración para principiantes absolutos](../debugger/debugging-absolute-beginners.md) antes de pasar a través de este artículo.
 
 ## <a name="observe-variables-with-a-watch-window"></a>Observar variables con una ventana Inspección
 
@@ -142,11 +144,11 @@ Una expresión con efectos secundarios se evalúa solo una vez, cuando se escrib
 
 Una manera de evitar la designación de efectos secundarios es desactivar la evaluación de función automática. En **herramientas** > **opciones** > **depuración** > **General**, anule la selección de **Habilitar evaluación de propiedades y otras llamadas a función implícitas**.
 
-Para C# solo, cuando se desactiva la evaluación de propiedades o llamadas a función implícitas, puede forzar la evaluación mediante la adición de la **ac** modificador de formato a una variable **nombre** en el **inspección**  ventana. Consulte [especificadores en C# de formato](../debugger/format-specifiers-in-csharp.md).
+Para C# solo, cuando se desactiva la evaluación de propiedades o llamadas a función implícitas, puede forzar la evaluación mediante la adición de la **ac** modificador de formato a una variable **nombre** en el **inspección**  ventana. Vea [Format Specifiers in C#](../debugger/format-specifiers-in-csharp.md) (Especificadores de formato en C#).
 
 ## <a name="bkmk_objectIds"></a> Usar identificadores de objeto en la ventana Inspección (C# y Visual Basic)
 
-A veces desea observar el comportamiento de un objeto específico. Por ejemplo, es posible que desee realizar un seguimiento de un objeto al que hace referencia una variable local después de esa variable se ha salido del ámbito. En C# y Visual Basic, puede crear identificadores de objeto para instancias específicas de tipos de referencia y usarlas en el **inspección** ventana y en condiciones de interrupción. El identificador de objeto es generado por los servicios de depuración de common language runtime (CLR) y asociado al objeto.
+A veces desea observar el comportamiento de un objeto específico. Por ejemplo, es posible que desee realizar un seguimiento de un objeto al que hace referencia una variable local después de esa variable se ha salido del ámbito. En C# y Visual Basic, puede crear identificadores de objetos para instancias específicas de tipos y usarlos en la ventana **Inspección** y en condiciones de interrupción. Los servicios de depuración de Common Language Runtime (CLR) generan el identificador de objeto y lo asocian al objeto.
 
 > [!NOTE]
 > Los identificadores de objeto crean referencias débiles que no impiden el objeto recolectado. Los identificadores de objeto solo son válidos para la sesión de depuración actual.
@@ -223,7 +225,7 @@ Para mostrar solamente el **vista dinámica** para un objeto, agregue un **diná
 >[!NOTE]
 >- El C# depurador no vuelve a evaluar los valores de forma automática el **vista dinámica** cuando se pasa a la siguiente línea de código. 
 >- El depurador de Visual Basic actualiza automáticamente las expresiones agregadas a través de la **vista dinámica**.
->- Evaluación de los miembros de un **vista dinámica** puede tener [efectos](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). 
+>- La evaluación de los miembros de una **vista dinámica** puede tener [efectos secundarios](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). 
 
 **Para insertar una nueva inspección variable convierte el objeto en un objeto dinámico:**
   
@@ -279,5 +281,5 @@ Para observar el `a` variable,
 
 ## <a name="see-also"></a>Vea también
  [¿Qué es la depuración?](../debugger/what-is-debugging.md)  
- [Escribir mejor C# código con Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Corrección de errores escribiendo mejor código de C#](../debugger/write-better-code-with-visual-studio.md)  
  [Primer vistazo al depurar](../debugger/debugger-feature-tour.md) [ventanas del depurador](../debugger/debugger-windows.md)

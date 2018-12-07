@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cd96d61718972c82c6002888e123003530c019c
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: 8f0aa6cbe09f902ef69e1fd5cb3a2d9712cabf28
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826666"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821453"
 ---
 # <a name="what-is-debugging"></a>¿Qué es la depuración?
 
@@ -25,13 +25,13 @@ El depurador de Visual Studio es una herramienta eficaz. Antes de que se muestra
 
 ## <a name="debugger-vs-debugging"></a>Depurador y depuración
 
-El término *depuración* es bastante general y puede significar muchas cosas diferentes. En el uso más literal de la palabra, significa que la eliminación de los errores desde el código. Ahora, hay muchas maneras de hacerlo. Por ejemplo, puede depurar examinando el código busca errores tipográficos o mediante el uso de un analizador de código. Puede depurar el código mediante el uso de un generador de perfiles de rendimiento. O bien, se puede depurar utilizando un *depurador*.
+El término *depuración* puede significar muchas cosas diferentes, pero más literalmente, implica la eliminación de los errores desde el código. Ahora, hay muchas maneras de hacerlo. Por ejemplo, puede depurar examinando el código busca errores tipográficos o mediante el uso de un analizador de código. Puede depurar el código mediante el uso de un generador de perfiles de rendimiento. O bien, se puede depurar utilizando un *depurador*.
 
-Un depurador es una herramienta muy especializada de desarrollador. Un depurador se asocia a la aplicación en ejecución y le permite inspeccionar el código. En la documentación de depuración para Visual Studio, esto normalmente es lo que queremos decir cuando hablamos de "depuración".
+Un depurador es una herramienta muy especializada de desarrollador que se adjunta a la aplicación en ejecución y le permite inspeccionar el código. En la documentación de depuración para Visual Studio, esto normalmente es lo que queremos decir cuando hablamos de "depuración".
 
 ## <a name="debug-mode-vs-running-your-app"></a>Depurar en modo frente al ejecutar la aplicación
 
-Al ejecutar la aplicación en Visual Studio por primera vez, puede iniciarlo presionando el botón de flecha verde ![Iniciar depuración](../debugger/media/dbg-tour-start-debugging.png "Iniciar depuración") en la barra de herramientas. De forma predeterminada, el **depurar** valor aparece en la lista desplegable a la izquierda. Si está familiarizado con Visual Studio, esto puede dejar la impresión que depurar la aplicación tiene algo que ver con la ejecución de la aplicación--qué empresarial estratégico, pero estos son fundamentalmente de dos tareas muy diferentes.
+Al ejecutar la aplicación en Visual Studio por primera vez, puede iniciarlo presionando el botón de flecha verde ![Iniciar depuración](../debugger/media/dbg-tour-start-debugging.png "Iniciar depuración") en la barra de herramientas (o **F5**). De forma predeterminada, el **depurar** valor aparece en la lista desplegable a la izquierda. Si está familiarizado con Visual Studio, esto puede dejar la impresión que depurar la aplicación tiene algo que ver con la ejecución de la aplicación--qué empresarial estratégico, pero estos son fundamentalmente de dos tareas muy diferentes.
 
 ![Seleccione una compilación de depuración](../debugger/media/what-is-debugging-debug-build.png)
 
@@ -52,4 +52,4 @@ El depurador es una herramienta esencial para encontrar y corregir errores en la
 En este artículo, ha aprendido algunos conceptos generales de depuración. A continuación, puede empezar a aprender cómo depurar con Visual Studio y cómo escribir código con menos errores. El siguiente artículo se muestra C# ejemplos de código, pero los conceptos se aplican a todos los idiomas compatibles con Visual Studio.
 
 > [!div class="nextstepaction"]
-> [Escribir mejor C# código con Visual Studio](../debugger/write-better-code-with-visual-studio.md)
+> [Corrección de errores escribiendo mejor código de C#](../debugger/write-better-code-with-visual-studio.md)

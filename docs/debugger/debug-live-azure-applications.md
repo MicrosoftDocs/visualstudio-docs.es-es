@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: a2dfc759fbd42dd435133e223c72760ae5c274c3
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: b9162b1e0cc6b1e4e0a5292825dbdebfeff1ae5f
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154468"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821427"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Depurar aplicaciones de ASP.NET Azure activas con el depurador de instantáneas
 
@@ -36,7 +36,7 @@ En este tutorial va a:
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* Depurador de instantáneas solo está disponible para Visual Studio Enterprise 2017 versión 15.5 o posterior con el **carga de trabajo de desarrollo de ASP.NET y web**. Para ASP.NET Core, también necesitará el. **Desarrollo NET Core** carga de trabajo instalada.
+* Depurador de instantáneas solo está disponible para Visual Studio Enterprise 2017 versión 15.5 o posterior con el **carga de trabajo de desarrollo de ASP.NET y web**. Para ASP.NET Core, también necesitará el **desarrollo de .NET Core** carga de trabajo instalada.
 
     Si aún no está instalado, instale [Visual Studio Enterprise 2017 versión 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) o una versión posterior. Si está actualizando desde una instalación anterior de Visual Studio 2017, ejecute el instalador de Visual Studio y compruebe el componente del depurador de instantáneas el **carga de trabajo de desarrollo de ASP.NET y web**.
 
@@ -114,7 +114,7 @@ Si es difícil volver a crear un estado determinado en la aplicación, considere
 
 1. Haga clic en un icono de punto de acoplamiento (la bola hueco) y elija **configuración**.
 
-   ![Elija la configuración](../debugger/media/snapshot-snappoint-settings.png)
+   ![Selección de Configuración](../debugger/media/snapshot-snappoint-settings.png)
 
 1. En la ventana de configuración de punto de acoplamiento, escriba una expresión.
 

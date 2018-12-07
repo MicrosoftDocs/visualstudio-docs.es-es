@@ -16,16 +16,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df2f0c94fa5d3bfc275a09b065555f32f260ba91
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: 404204696a61c1073b2fa04eeb803e75b50ba38c
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826765"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621531"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Navegar por el código con el depurador de Visual Studio
 
-El depurador de Visual Studio puede ayudarle a navegar por el código para inspeccionar el estado de una aplicación y mostrar su flujo de ejecución. Puede usar métodos abreviados de teclado, comandos de depuración, los puntos de interrupción y otras características para ponerse rápidamente al código que desea examinar. Familiaridad con los comandos de navegación del depurador y los métodos abreviados de hace más rápidas y fáciles de encontrar y solucionar problemas en aplicaciones.  Si se trata de la primera vez que ha probado para depurar el código, es posible que desea leer [escribir mejor C# código con Visual Studio](../debugger/write-better-code-with-visual-studio.md) y [de depuración para principiantes absolutos](../debugger/debugging-absolute-beginners.md) antes de pasar a través de este artículo.
+El depurador de Visual Studio puede ayudarle a navegar por el código para inspeccionar el estado de una aplicación y mostrar su flujo de ejecución. Puede usar métodos abreviados de teclado, comandos de depuración, los puntos de interrupción y otras características para ponerse rápidamente al código que desea examinar. Familiaridad con los comandos de navegación del depurador y los métodos abreviados de hace más rápidas y fáciles de encontrar y solucionar problemas en aplicaciones.  Si se trata de la primera vez que ha probado para depurar el código, es posible que desea leer [corregir errores al escribir mejor C# código](../debugger/write-better-code-with-visual-studio.md) y [de depuración para principiantes absolutos](../debugger/debugging-absolute-beginners.md) antes de pasar a través de este artículo.
   
 ## <a name="basic-debugging"></a>Depuración básica  
 
@@ -41,7 +41,7 @@ Más del depurador de windows, como el **módulos** y **inspección** windows, s
 
 En modo de interrupción, se suspende la ejecución de la aplicación mientras las funciones, variables, y los objetos permanecen en memoria. Puede examinar las posiciones de los elementos y Estados para buscar infracciones o errores. Para algunos tipos de proyecto, también puede realizar ajustes en la aplicación en modo de interrupción. Para ver un vídeo que muestra estas características, consulte [introducción con el depurador](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
 
-Si se interrumpe en el código que no tiene código fuente o al símbolo (*.pdb*) los archivos cargados, el depurador muestra una **archivos de origen no encontrado** o **no se encontraron símbolos** página que puede ayudarle a Buscar y cargar los archivos. Consulte [especificar archivos de código fuente y símbolos (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Si no se puede cargar los archivos de origen o de símbolos, aún puede depurar las instrucciones de ensamblado en el **desensamblado** ventana. 
+Si se interrumpe en el código que no tiene código fuente o al símbolo (*.pdb*) los archivos cargados, el depurador muestra una **archivos de origen no encontrado** o **no se encontraron símbolos** página que puede ayudarle a Buscar y cargar los archivos. Consulte [Specify symbol (.pdb) and source files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) (Especificación de símbolo (.pdb) y archivos de origen). Si no se puede cargar los archivos de origen o de símbolos, aún puede depurar las instrucciones de ensamblado en el **desensamblado** ventana. 
 
 No siempre tienes que iniciar la depuración a partir de una aplicación al principio. También puede presionar **F11** a [ir a código](#BKMK_Step_into__over__or_out_of_the_code), presione **F10** a [paso a través de código](#BKMK_Step_over_Step_out), o [ejecutar en una ubicación específica o función](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All).    
 
@@ -55,7 +55,7 @@ Si necesita buscar el punto de entrada en la aplicación, comience con **F10** o
 
 Para detener en cada línea del código o la instrucción durante la depuración, utilice **depurar** > **paso a paso**, o bien presione **F11**.  
 
-El depurador pasa a través de instrucciones de código, las líneas no físicas. Por ejemplo, un `if` cláusula se puede escribir en una sola línea:  
+El depurador pasa a través de instrucciones de código, las líneas no físicas. Por ejemplo, una cláusula `if` se puede escribir en una línea:  
   
   ```csharp  
   int x = 42;  
@@ -93,7 +93,7 @@ Prefiere ejecutar directamente a una ubicación específica o una función cuand
   
 Para establecer un punto de interrupción simple en el código, haga clic en el margen izquierdo junto a la línea de código donde desea suspender la ejecución. También puede seleccionar la línea y presione **F9**, seleccione **depurar** > **Alternar puntos de interrupción**, o haga clic en y seleccione **delpuntodeinterrupción**  >  **Insertar punto de interrupción**. El punto de interrupción aparece como un punto rojo en el margen izquierdo junto a la línea de código. El depurador suspende la ejecución antes de la línea se ejecuta.
   
-![Establezca un punto de interrupción](../debugger/media/dbg_basics_setbreakpoint.png "establecer un punto de interrupción")  
+![Establecimiento de un punto de interrupción](../debugger/media/dbg_basics_setbreakpoint.png "Set a breakpoint")  
   
 Los puntos de interrupción proporcionan un amplio conjunto de funcionalidades adicionales en Visual Studio, como los puntos de interrupción condicionales y de seguimiento. Para obtener más información, consulte [usar puntos de interrupción](../debugger/using-breakpoints.md).  
   
@@ -131,7 +131,7 @@ Para ejecutar hasta la ubicación del cursor, en el código fuente o el **pila d
 
 Mientras está en pausa en el depurador, puede desplazar el puntero sobre una instrucción en el código fuente o el **desensamblado** ventana y seleccione el **ejecutar hasta aquí** icono de flecha verde. Uso de **hacer clic y ejecutar** elimina la necesidad de establecer un punto de interrupción temporal.
 
-![Hacer clic y ejecutar](../debugger/media/dbg-run-to-click.png "hacer clic y ejecutar") 
+![Ejecutar hasta clic](../debugger/media/dbg-run-to-click.png "Run to click") 
 
 > [!NOTE]
 > **Hacer clic y ejecutar** es nuevo en [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
@@ -183,9 +183,9 @@ Para cargar símbolos de Microsoft, vea [configurar ubicaciones de símbolos y l
 1. En el **módulos** ventana, puede saber qué módulos tienen símbolos cargados en el **estado del símbolo** columna. Haga clic en el módulo que desea cargar los símbolos para y seleccione **cargar símbolos**.  
   
 ##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Ir a propiedades y operadores en código administrado  
- El depurador se salta las propiedades y los operadores en código administrado de forma predeterminada. En la mayoría de los casos, esto proporciona una mejor experiencia de depuración. Para habilitar la ejecución paso a paso en las propiedades o los operadores, elija **depurar** > **opciones**. En el **depuración** > **General** página, desactive la **saltar propiedades y operadores (solo administrado)** casilla de verificación.
+ El depurador se salta las propiedades y los operadores en código administrado de forma predeterminada. En la mayoría de los casos, esto proporciona una mejor experiencia de depuración. Para habilitar la ejecución paso a paso en las propiedades o los operadores, elija **depurar** > **opciones**. En la página **Depuración** > **General**, desactive la casilla **Saltar propiedades y operadores (solo administrado)**.
 
 ## <a name="see-also"></a>Vea también
  [¿Qué es la depuración?](../debugger/what-is-debugging.md)  
- [Escribir mejor C# código con Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Corrección de errores escribiendo mejor código de C#](../debugger/write-better-code-with-visual-studio.md)  
  [Primer vistazo a la depuración](../debugger/debugger-feature-tour.md) 
