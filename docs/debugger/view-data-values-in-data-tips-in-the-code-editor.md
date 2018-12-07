@@ -19,16 +19,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c473faf449176b38d4505675b1060618344db0d6
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: HT
+ms.openlocfilehash: 4156ff8f81e7a011aeff0cf753af60bb3d6cd924
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388165"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621544"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Ver valores de datos en la información sobre datos en el editor de código
 
-Información sobre datos es una manera cómoda de ver información acerca de las variables de la aplicación durante la depuración. 
+La Información sobre datos es una manera útil de ver información sobre las variables del programa durante la depuración. La Información sobre datos funciona únicamente en modo de interrupción y únicamente con las variables que están dentro del actual ámbito de ejecución. Si se trata de la primera vez que ha probado para depurar el código, es posible que desea leer [corregir errores al escribir mejor C# código](../debugger/write-better-code-with-visual-studio.md) y [de depuración para principiantes absolutos](../debugger/debugging-absolute-beginners.md) antes de pasar a través de este artículo.
 
 Si se trata de la primera vez que la depuración, es posible que desee leer [escribir mejor C# código con Visual Studio](../debugger/write-better-code-with-visual-studio.md) y [de depuración para principiantes absolutos](../debugger/debugging-absolute-beginners.md) antes de leer este artículo.
   
@@ -127,8 +127,8 @@ Puede exportar información sobre datos a un archivo XML, que puede compartir o 
 
 ## <a name="see-also"></a>Vea también  
  [¿Qué es la depuración?](../debugger/what-is-debugging.md)  
- [Escribir mejor C# código con Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
- [Primer vistazo a la depuración](../debugger/debugger-feature-tour.md)   
- [Visualización de datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
+ [Corrección de errores escribiendo mejor código de C#](../debugger/write-better-code-with-visual-studio.md)  
+ [Primer vistazo al depurar](../debugger/debugger-feature-tour.md) [ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
  [Ventanas Inspección e Inspección rápida](../debugger/watch-and-quickwatch-windows.md)   
- [Crear visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
+ [Create Custom Visualizers](../debugger/create-custom-visualizers-of-data.md) (Crear visualizadores personalizados)   
+
