@@ -1,26 +1,24 @@
 ---
-title: Beneficio de soporte prioritario en las suscripciones de Visual Studio | Microsoft Docs
+title: Ventaja de la comunidad de desarrolladores en Visual Studio Subscription | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 05/07/2018
+ms.date: 12/04/2018
 ms.topic: Get-Started-Article
-description: Obtenga información sobre la ventaja Soporte prioritario incluida en las suscripciones de Visual Studio.
+description: Obtenga información sobre la ventaja de la comunidad de desarrolladores incluida en las suscripciones de Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e58b316d0fc26ec4c01e50c23e3cdc7b0632b72c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7eb168f8163d75e01ac688439780fd7d65df3506
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866745"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896658"
 ---
-# <a name="priority-support-in-visual-studio-subscriptions"></a>Soporte prioritario en suscripciones de Visual Studio
+# <a name="developer-community-support-in-visual-studio-subscriptions"></a>Soporte técnico de la comunidad de desarrolladores en suscripciones de Visual Studio
 
-El beneficio de soporte prioritario le brinda acceso a diferentes foros de la comunidad de soporte, donde puede buscar publicaciones existentes o plantear nuevas preguntas.  Si la comunidad no responde a su pregunta en dos días, el equipo de soporte técnico de Microsoft le proporcionará una respuesta.
-
-Los suscriptores con determinadas suscripciones de Visual Studio pueden recibir asistencia prioritaria a través de un gran número de foros que abarcan diferentes temas.  Haga clic en cualquiera de estos vínculos para ir directamente a ese foro.  
+La ventaja de la comunidad de desarrolladores brinda acceso a diferentes foros de soporte técnico de la comunidad donde podrá buscar publicaciones existentes o plantear preguntas nuevas. Haga clic en cualquiera de estos vínculos para ir directamente a ese foro.  
 
 ## <a name="included-forums"></a>Foros incluidos
 

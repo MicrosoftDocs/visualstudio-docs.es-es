@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9db1925036f7522db3fe7a16af362da754ec49e5
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 41a0dfeea283c2109dbe0fe899ac1b53955d0826
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321065"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896502"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Herramientas de prueba de Visual Studio
 

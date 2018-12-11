@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 945bbe8377d51974bdfb09b762e415da3004346b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9740d26ef99c10bb9ec84afa23b998f6e1467f40
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821843"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895267"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Cómo: Ver el tiempo de respuesta de la página web en una prueba de carga mediante el Analizador de pruebas de carga
 
 El tiempo que tarda cada página web en cargarse se conoce como *tiempo de respuesta*. Al crear una prueba de rendimiento web, puede establecer un objetivo de tiempo de respuesta para cada solicitud de página web de la prueba de rendimiento web.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Si ejecuta una prueba de rendimiento web en condiciones de carga en una prueba de carga, podrá analizar la información siguiente de cada página:
 
@@ -36,8 +38,6 @@ Si ejecuta una prueba de rendimiento web en condiciones de carga en una prueba d
 -   Análisis de los tiempos de respuesta de la página web en la vista Gráficos
 
 ## <a name="view-response-time-data-in-a-table"></a>Ver datos de tiempo de respuesta en una tabla
-
-### <a name="to-view-response-time-data-in-a-table"></a>Para ver los datos de tiempo de respuesta en una tabla
 
 1. En el **Analizador de pruebas de carga**, elija **Tablas** en la barra de herramientas para asegurarse de que se muestre la cuadrícula de tabla.
 
@@ -70,7 +70,7 @@ Si ejecuta una prueba de rendimiento web en condiciones de carga en una prueba d
 
 Puede ver también los datos de tiempo de respuesta en un gráfico para determinar cómo cambian estos datos a lo largo del tiempo durante la prueba de carga. Esto es especialmente útil si el modelo de carga aumenta cuando se ejecuta la prueba, (como ocurre cuando se utiliza un modelo de carga por pasos). Para obtener más información, vea [Modificar modelos de carga para modelar las actividades de usuarios virtuales](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
-### <a name="to-view-response-time-data-in-a-graph"></a>Para ver los datos de tiempo de respuesta en un gráfico
+Para ver los datos de tiempo de respuesta en un gráfico:
 
 1. En el **Analizador de pruebas de carga**, elija **Gráficos** en la barra de herramientas para asegurarse de que se muestre el gráfico.
 
@@ -86,7 +86,7 @@ Puede ver también los datos de tiempo de respuesta en un gráfico para determin
 
     Los datos se agregan al gráfico.
 
-7. (Opcional) Repita el paso anterior para Tiempo promedio de la página**, **Objetivo de tiempo de respuesta** y **Total de páginas**.
+7. (Opcional) Repita el paso anterior para **Tiempo promedio de la página**, **Objetivo de tiempo de respuesta** y **Total de páginas**.
 
    > [!NOTE]
    > **Objetivo de tiempo de respuesta** es constante.

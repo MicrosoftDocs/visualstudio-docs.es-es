@@ -1,16 +1,17 @@
 ---
 title: Paseo por Visual Studio para Mac
 description: Visual Studio para Mac proporciona un entorno de desarrollo integrado para compilar aplicaciones .NET en macOS, incluidos sitios web de ASP.NET Core y proyectos de Xamarin para iOS, Android, Mac y Xamarin.Forms.
+zone_pivot_groups: mac-ide-version
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 11/03/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: 37c4f6c50cc5deaee1decf6fcfae5eda211018b2
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: e1787f6d396121263d91633a4ee6d4dd8ed2c35f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295688"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895800"
 ---
 # <a name="visual-studio-for-mac-tour"></a>Paseo por Visual Studio para Mac
 
@@ -24,7 +25,25 @@ En este artículo se analizan varias secciones de Visual Studio para Mac y se of
 
 Visual Studio para Mac se organiza en varias secciones para administrar archivos de aplicación y configuraciones, crear código de aplicación y depurar.
 
-## <a name="welcome-screen"></a>Pantalla de inicio de sesión
+::: zone pivot="vsmac2019"
+
+## <a name="visual-studio-for-mac-2019-start-window"></a>Ventana de inicio de Visual Studio para Mac 2019
+
+> [!TIP]
+> La versión preliminar de Visual Studio 2019 para Mac ya está [disponible para descargar](install-preview.md) y realizar pruebas.
+
+Al iniciar la versión preliminar de Visual Studio para Mac 2019, los nuevos usuarios verán una ventana de inicio de sesión. Inicie sesión con una cuenta Microsoft para activar una licencia de pago, si tiene una, o haga clic en el vínculo para consultar las suscripciones de Azure. Puede presionar **Omitir** e iniciar sesión más adelante en el elemento de menú **Visual Studio > Iniciar sesión**:
+
+![Inicio de sesión en su cuenta Microsoft](media/ide-tour-2019-start-signin.png)
+
+Los usuarios que hayan iniciado sesión verán la nueva _ventana de inicio_, en la que se muestra una lista de proyectos recientes y botones para abrir un proyecto existente o crear uno:
+
+![Elección entre proyectos recientes o creación de uno nuevo](media/ide-tour-2019-start-projects.png)
+
+::: zone-end
+::: zone pivot="vsmac2017"
+
+## <a name="welcome-screen-in-visual-studio-for-mac-2017"></a>Pantalla de bienvenida de Visual Studio para Mac 2017
 
 Cuando se inicia, Visual Studio para Mac muestra una *pantalla de inicio de sesión*:
 
@@ -36,6 +55,8 @@ La pantalla de inicio de sesión contiene las secciones siguientes:
 - **Introducción**: proporciona acceso rápido a temas útiles para desarrolladores que empiezan a usar Visual Studio para Mac.
 - **Soluciones recientes**: proporciona acceso rápido a soluciones abiertas recientemente, así como a cómodos botones para abrir o crear proyectos.
 - **Noticias del desarrollador**: fuente de noticias que le mantiene al día sobre la información más reciente de Microsoft Developer.
+
+::: zone-end
 
 ## <a name="solutions-and-projects"></a>Soluciones y proyectos
 
