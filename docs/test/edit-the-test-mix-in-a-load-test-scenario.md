@@ -1,5 +1,5 @@
 ---
-title: Combinación de pruebas para un escenario de pruebas de carga en Visual Studio
+title: Combinación de pruebas para un escenario de pruebas de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,23 +13,25 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3fd2ab4689128ca06ab463aed1743a244597b9ea
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 3b3bd0ae4df657d7234a77413003b18d5db86138
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179520"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895995"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Edición de la combinación de pruebas para especificar qué pruebas de rendimiento web, unitarias y automatizadas de IU incluir en un escenario de prueba de carga
 
 La *combinación de pruebas* de un escenario es un grupo de la selección de pruebas unitarias y de rendimiento web contenidas en el escenario y su distribución dentro de este. La distribución es una configuración que puede especificar de la probabilidad de que una prueba sea seleccionada por un explorador determinado durante la ejecución de una prueba de carga.
 
- Después de agregar un conjunto de pruebas a una prueba de carga, la *combinación de pruebas* funciona como otras opciones de combinación. Un usuario virtual selecciona de forma aleatoria una prueba, basándose en la probabilidad que se haya especificado en la combinación. Por ejemplo, si tiene dos pruebas, cada una al 50% en la combinación, un nuevo usuario virtual elegirá ejecutar la primera aproximadamente la mitad del tiempo. En una combinación 50/50, si una prueba es larga y otra es corta, más carga procede de la prueba larga.
+Después de agregar un conjunto de pruebas a una prueba de carga, la *combinación de pruebas* funciona como otras opciones de combinación. Un usuario virtual selecciona de forma aleatoria una prueba, basándose en la probabilidad que se haya especificado en la combinación. Por ejemplo, si tiene dos pruebas, cada una al 50% en la combinación, un nuevo usuario virtual elegirá ejecutar la primera aproximadamente la mitad del tiempo. En una combinación 50/50, si una prueba es larga y otra es corta, más carga procede de la prueba larga.
 
- Las pruebas que agregue a la combinación puede quitarlas posteriormente. También puede cambiar la distribución de la combinación de pruebas utilizando el control de combinación. El control de combinación permite ajustar con facilidad la distribución de pruebas en un escenario.
+Las pruebas que agregue a la combinación puede quitarlas posteriormente. También puede cambiar la distribución de la combinación de pruebas utilizando el control de combinación. El control de combinación permite ajustar con facilidad la distribución de pruebas en un escenario.
 
 > [!NOTE]
 > La distribución es una medida de la probabilidad de que un usuario virtual seleccione una prueba determinada durante una ejecución de la prueba de carga. La distribución se expresa como un porcentaje. Por lo tanto, la suma de los números de distribución de todas las pruebas incluidas en un escenario es 100. Por ejemplo, si un escenario contiene solo una prueba, la distribución para esa prueba es 100%.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="add-new-tests-to-a-test-mix-in-an-existing-scenario"></a>Agregar pruebas nuevas a una combinación de pruebas en un escenario existente
 

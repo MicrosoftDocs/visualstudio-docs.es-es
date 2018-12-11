@@ -1,5 +1,5 @@
 ---
-title: Información sobre cómo depurar código de C# con el depurador de Visual Studio
+title: Información sobre cómo depurar código de Visual Basic con el depurador de Visual Studio
 ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data.
 ms.custom: debug-experiment
 ms.date: 11/27/2018
@@ -15,22 +15,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 549f38839495385c983cc68f14fc94629ac988c3
+ms.openlocfilehash: 7f568c5785af1917827646d232ef3c6c8f0ad41b
 ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821310"
+ms.locfileid: "52825998"
 ---
-# <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: Información sobre cómo depurar código de C# con Visual Studio
+# <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Tutorial: Información sobre cómo depurar código de Visual Basic con Visual Studio
 
-En este artículo se describen las características del depurador de Visual Studio en un tutorial paso a paso. Normalmente, *depurar una aplicación* significa ejecutar la aplicación con el depurador activado. Al hacerlo, el depurador ofrece muchas formas de ver lo que hace el código durante la ejecución. Esto permite revisar el código y fijarse en los valores almacenados en variables, establecer inspecciones en ellas para ver cuándo cambian los valores, examinar la ruta de ejecución del código, ver si una rama de código está en funcionamiento, etc. Si esta es la primera vez que intenta depurar código, le recomendamos que lea [Cómo depurar para principiantes sin experiencia](../debugger/debugging-absolute-beginners.md) y [Fix bugs by writing better C# code](../debugger/write-better-code-with-visual-studio.md) (Mejora de la escritura de código de C# para solucionar errores) antes de continuar con este artículo.
+En este artículo se describen las características del depurador de Visual Studio en un tutorial paso a paso. Si quiere conocer con más profundidad las características del depurador, vea [Primer vistazo al depurador de Visual Studio](../debugger/debugger-feature-tour.md). Normalmente, *depurar una aplicación* significa ejecutar la aplicación con el depurador activado. Al hacerlo, el depurador ofrece muchas formas de ver lo que hace el código durante la ejecución. Esto permite revisar el código y fijarse en los valores almacenados en variables, establecer inspecciones en ellas para ver cuándo cambian los valores, examinar la ruta de ejecución del código, ver si una rama de código está en funcionamiento, etc. Si esta es la primera vez que intenta depurar código, le recomendamos que lea [Depuración para principiantes sin experiencia](../debugger/debugging-absolute-beginners.md) antes de continuar con este artículo.
 
 | | |
 |---------|---------|
 | ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Vea un vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) sobre la depuración en el que se muestran pasos parecidos a estos. |
-
-Aunque la aplicación de demostración está en C#, la mayoría de las características son aplicables a C++, Visual Basic, F#, Python, JavaScript y otros lenguajes compatibles con Visual Studio (F# no admite Editar y continuar, mientras que F# y JavaScript no admiten la ventana **Automático**). Las capturas de pantalla son de código C#.
 
 En este tutorial va a:
 
@@ -52,7 +50,7 @@ En este tutorial va a:
 
 1. En Visual Studio, seleccione **Archivo > Nuevo proyecto**.
 
-2. En **Visual C#**, seleccione **Escritorio de Windows** y, después, elija **Aplicación de consola** en el panel central.
+2. Bajo **Visual Basic**, seleccione **Escritorio de Windows** y, después, elija **Aplicación de consola** en el panel central.
 
     Si no ve la plantilla de proyecto **Aplicación de consola**, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo *Desarrollo de escritorio de .NET** y, luego, seleccione **Modificar**.
 
@@ -62,107 +60,121 @@ En este tutorial va a:
 
 4. En *Program.cs*, reemplace el código siguiente
 
-    ```csharp
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
+    ```vb
+    Module Module1
 
-    namespace get_started_debugging
-    {
-        class Program
-        {
-            static void Main(string[] args)
-            {
-            }
-        }
-    }
+        Sub Main()
+        End Sub
+
+    End Module
     ```
 
     con este código:
 
-    ```csharp
-    using System;
-    using System.Collections.Generic;
+    ```vb
+    Imports System
+    Imports System.Collections.Generic
 
-    public class Shape
-    {
-        // A few example members
-        public int X { get; private set; }
-        public int Y { get; private set; }
-        public int Height { get; set; }
-        public int Width { get; set; }
-   
-        // Virtual method
-        public virtual void Draw()
-        {
-            Console.WriteLine("Performing base class drawing tasks");
-        }
-    }
+    Public Class Shape
 
-    class Circle : Shape
-    {
-        public override void Draw()
-        {
-            // Code to draw a circle...
-            Console.WriteLine("Drawing a circle");
-            base.Draw();
-        }
-    }
+      ' A few example members
+        Public Property X As Integer
+            Get
+                Return X
+            End Get
+            Set
+            End Set
+        End Property
 
-    class Rectangle : Shape
-    {
-        public override void Draw()
-        {
-            // Code to draw a rectangle...
-            Console.WriteLine("Drawing a rectangle");
-            base.Draw();
-        }
-    }
+        Public Property Y As Integer
+            Get
+                Return Y
+            End Get
+            Set
+            End Set
+        End Property
 
-    class Triangle : Shape
-    {
-        public override void Draw()
-        {
-            // Code to draw a triangle...
-            Console.WriteLine("Drawing a trangle");
-            base.Draw();
-        }
-    }
+        Public Property Height As Integer
+            Get
+                Return Height
+            End Get
+            Set
+            End Set
+        End Property
 
-    class Program
-    {
-        static void Main(string[] args)
-        {
+        Public Property Width As Integer
+            Get
+                Return Width
+            End Get
+            Set
+            End Set
+        End Property
 
-            var shapes = new List<Shape>
+        ' Virtual method
+        Public Overridable Sub Draw()
+            Console.WriteLine("Performing base class drawing tasks")
+        End Sub
+    End Class
+
+    Public Class Circle
+        Inherits Shape
+
+        Public Overrides Sub Draw()
+            ' Code to draw a circle...
+            Console.WriteLine("Drawing a circle")
+            MyBase.Draw()
+        End Sub
+    End Class
+
+    Public Class Rectangle
+        Inherits Shape
+
+        Public Overrides Sub Draw()
+            ' Code to draw a rectangle...
+            Console.WriteLine("Drawing a rectangle")
+            MyBase.Draw()
+        End Sub
+    End Class
+
+    Public Class Triangle
+        Inherits Shape
+
+        Public Overrides Sub Draw()
+            ' Code to draw a triangle...
+            Console.WriteLine("Drawing a trangle")
+            MyBase.Draw()
+        End Sub
+    End Class
+
+    Module Module1
+
+        Sub Main(ByVal args() As String)
+
+            Dim shapes = New List(Of Shape) From
             {
-                new Rectangle(),
-                new Triangle(),
-                new Circle()
-            };
-
-            foreach (var shape in shapes)
-            {
-                shape.Draw();
+                New Rectangle,
+                New Triangle,
+                New Circle
             }
 
-            // Keep the console open in debug mode.
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
-        }
+            For Each shape In shapes
+                shape.Draw()
+            Next
+            ' Keep the console open in debug mode.
+            Console.WriteLine("Press any key to exit.")
+            Console.ReadKey()
 
-    }
+        End Sub
 
-    /* Output:
-        Drawing a rectangle
-        Performing base class drawing tasks
-        Drawing a triangle
-        Performing base class drawing tasks
-        Drawing a circle
-        Performing base class drawing tasks
-    */
+    End Module
+
+    ' Output:
+    '    Drawing a rectangle
+    '    Performing base class drawing tasks
+    '    Drawing a triangle
+    '    Performing base class drawing tasks
+    '    Drawing a circle
+    '    Performing base class drawing tasks
     ```
 
 ## <a name="start-the-debugger"></a>Inicio del depurador
@@ -186,19 +198,21 @@ En este tutorial va a:
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Establecer un punto de interrupción e iniciar el depurador
 
-1. En el bucle `foreach` de la función `Main`, establezca un punto de interrupción haciendo clic en el margen izquierdo de la línea de código siguiente:
+1. En el bucle `For Each` de la función `Main`, establezca un punto de interrupción haciendo clic en el margen izquierdo de la línea de código siguiente:
 
     `shape.Draw()`
 
     En el lugar en el que establezca el punto de interrupción aparecerá un círculo rojo.
 
+    ![Establecer un punto de interrupción](../debugger/media/get-started-set-breakpoint-vb.png)
+
     Los puntos de interrupción son la característica más básica y esencial para una depuración confiable. Un punto de interrupción indica dónde Visual Studio debe suspender la ejecución de código para poder echar un vistazo a los valores de las variables o al comportamiento de la memoria, o determinar si se está ejecutando o no una bifurcación de código. 
 
 2. Presione **F5** o el botón **Iniciar depuración** ![Start Debugging](../debugger/media/dbg-tour-start-debugging.png "Start Debugging". La aplicación se iniciará y el depurador se ejecutará en la línea de código en la que haya establecido el punto de interrupción.
 
-    ![Establecimiento y uso de los puntos de interrupción](../debugger/media/get-started-set-breakpoint.gif)
+    ![Llegar a un punto de interrupción](../debugger/media/get-started-hit-breakpoint-vb.png)
 
-    La flecha amarilla representa la instrucción en la que el depurador se ha puesto en pausa, lo cual también suspende la ejecución de la aplicación en el mismo punto (esta instrucción todavía no se ha ejecutado).
+    La flecha amarilla representa la instrucción en la que el depurador se ha detenido, lo cual también suspende la ejecución de la aplicación en el mismo punto (esta instrucción todavía no se ha ejecutado).
 
      Si la aplicación todavía no se está ejecutando, **F5** permite iniciar el depurador, que se detendrá en el primer punto de interrupción. En caso contrario, **F5** permite continuar ejecutando la aplicación hasta el siguiente punto de interrupción.
 
@@ -208,23 +222,23 @@ En este tutorial va a:
 
 Normalmente, aquí usamos métodos abreviados de teclado porque son una buena forma de ejecutar rápidamente la aplicación en el depurador, pero los comandos equivalentes, como los comandos de menú, se muestran entre paréntesis.
 
-1. Mientras esté en pausa en la llamada de método `shape.Draw` en el método `Main`, presione **F11**, o bien elija **Depurar > Depurar paso a paso por instrucciones**, para avanzar en el código de la clase `Rectangle`.
+1. Mientras esté en pausa en la llamada de método `shape.Draw` en la función `Main`, presione **F11**, o bien elija **Depurar > Depurar paso a paso por instrucciones**, para avanzar en el código de la clase `Rectangle`.
 
-     ![Uso de F11 para depurar código paso a paso por instrucciones](../debugger/media/get-started-f11.png "Depurar paso a paso por instrucciones con F11")
+     ![Uso de F11 para depurar código paso a paso por instrucciones](../debugger/media/get-started-f11-vb.png "Depurar paso a paso por instrucciones con F11")
 
      F11 es el comando **Depurar paso a paso por instrucciones** y permite avanzar la ejecución de la aplicación de instrucción en instrucción. F11 es una buena forma de examinar el flujo de ejecución con más detalle. Más adelante le mostraremos otras opciones para moverse más rápido por el código. De forma predeterminada, el depurador omite el código que no es de usuario (si quiere más detalles, vea [Solo mi código](../debugger/just-my-code.md)).
 
-2. Presione varias veces **F10**, o bien elija **Depurar > Depurar paso a paso por procedimientos**, hasta que el depurador se detenga en la llamada de método `base.Draw` y, después, vuelva a presionar **F10**.
+2. Presione varias veces **F10**, o bien elija **Depurar > Depurar paso a paso por procedimientos**, hasta que el depurador se detenga en la llamada de método `MyBase.Draw` y, después, vuelva a presionar **F10**.
 
-     ![Uso de F10 para saltar código](../debugger/media/get-started-step-over.png "Saltar con F10")
+     ![Uso de F10 para saltar código](../debugger/media/get-started-step-over-vb.png "Saltar con F10")
 
-     En este caso, tenga en cuenta que el depurador no depura el método `Draw` de la clase base (`Shape`) paso a paso por instrucciones. **F10** hace avanzar el depurador sin depurar las funciones o los métodos en el código de la aplicación paso a paso por instrucciones (el código todavía se ejecuta). Al presionar F10 en la llamada de método `base.Draw` en vez de **F11**, se omite el código de implementación de `base.Draw` (que quizás no nos interesa en este momento).
+     En este caso, tenga en cuenta que el depurador no depura el método `Draw` de la clase base (`Shape`) paso a paso por instrucciones. **F10** hace avanzar el depurador sin depurar las funciones o los métodos en el código de la aplicación paso a paso por instrucciones (el código todavía se ejecuta). Al presionar F10 en la llamada de método `MyBase.Draw` en vez de **F11**, se omite el código de implementación de `MyBase.Draw` (que quizás no nos interesa en este momento).
 
 ## <a name="navigate-code-using-run-to-click"></a>Navegación por el código con Ejecutar hasta clic
 
 1. En el editor de código, desplácese hacia abajo y mantenga el puntero sobre el método `Console.WriteLine` de la clase `Triangle` hasta que aparezca el botón verde **Ejecutar hasta clic** ![Ejecutar hasta clic](../debugger/media/dbg-tour-run-to-click.png "RunToClick") a la izquierda.
 
-     ![Uso de la característica Ejecutar hasta clic](../debugger/media/get-started-run-to-click.png "Ejecutar hasta clic")
+     ![Uso de la característica Ejecutar hasta clic](../debugger/media/get-started-run-to-click-vb.png "Ejecutar hasta clic")
 
    > [!NOTE]
    > El botón **Ejecutar hasta clic** es una novedad de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Si no ve el botón con la flecha verde, use **F11** en este ejemplo para hacer avanzar el depurador hasta el lugar correcto.
@@ -254,7 +268,7 @@ Supongamos que ha terminado de examinar el método `Draw` de la clase `Triangle`
 
      Este comando reanuda la ejecución de la aplicación (y hace avanzar el depurador) hasta que se devuelve la función actual.
 
-     Debería volver a estar en el bucle `foreach` del método `Main`.
+     Debería volver a estar en el bucle `For Each` del método `Main`.
 
 ## <a name="restart-your-app-quickly"></a>Reiniciar la aplicación rápidamente
 
@@ -268,31 +282,25 @@ El depurador se detendrá de nuevo en el punto de interrupción que haya estable
 
 Las características que le permiten inspeccionar las variables son una de las más útiles del depurador y ofrecen diferentes formas de hacerlo. A menudo, para depurar un problema, debe intentar averiguar si las variables están almacenando los valores que espera que tengan en un momento determinado.
 
-1. Mientras esté en pausa en el método `shape.Draw()`, mantenga el puntero sobre el objeto `shape` y verá su valor de propiedad predeterminado, la propiedad `Rectangle`.
+1. Mientras esté en pausa en el método `shape.Draw()`, mantenga el puntero sobre el objeto `shapes` y verá su valor de propiedad predeterminado, la propiedad `Count`.
 
-1. Expanda el objeto `shape` para consultar las propiedades, como `Height`, que tiene un valor de 0.
+1. Expanda el objeto `shapes` para ver todas sus propiedades, como el primer índice de la matriz `[0]`, que tiene un valor de `Rectangle`.
 
-1. Presione varias veces **F10**, o bien elija **Depurar** > **Depurar paso a paso por procedimientos**, para recorrer en iteración el bucle `foreach` una vez y pausarlo en `shape.Draw()`.
+     ![Ver información sobre datos](../debugger/media/get-started-data-tip-vb.png "View a Data Tip")
 
-1. Vuelva a mantener el mouse sobre el objeto de forma y esta vez verá que tiene un objeto nuevo con un tipo `Triangle`.
+    Puede expandir los objetos para ver sus propiedades, como la propiedad `Height` del rectángulo.
 
-     ![Ver información sobre datos](../debugger/media/get-started-data-tip.gif "View a Data Tip")
+    A menudo, al depurar, necesita poder comprobar rápidamente los valores de propiedad de los objetos, y la información sobre datos puede resultar muy útil.
 
-    A menudo, al realizar una depuración, queremos una forma rápida de comprobar los valores de las propiedades de las variables para ver si se almacenan los valores correspondientes, y las sugerencias de datos son una buena forma de verlo.
-
-## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>Inspeccionar variables con las ventanas Automático y Variables locales
+## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>Inspección de las variables con las ventanas Automático y Variables locales
 
 1. Vea la ventana **Automático**, en la parte inferior del editor de código.
 
-    Si está cerrada, ábrala mientras está en pausa en el depurador seleccionando **Depurar** > **Ventanas** > **Automático**.
-
-1. Expanda el objeto `shapes`.
-
-     ![Inspección de las variables en la ventana Automático](../debugger/media/get-started-autos-window.png "Ventana Automático")
+     ![Inspección de las variables en la ventana Automático](../debugger/media/get-started-autos-window-vb.png "Ventana Automático")
 
     En la ventana **Automático** puede ver las variables y su valor actual. En la ventana **Automático** se muestran todas las variables que se usan en la línea actual o en la anterior. Para consultar el comportamiento específico de los lenguajes, vea la documentación.
 
-1. A continuación, examine la ventana **Variables locales** en una pestaña situada junto a la ventana **Automático**.
+2. A continuación, examine la ventana **Variables locales** en una pestaña situada junto a la ventana **Automático**.
 
     En la ventana **Variables locales** se muestran las variables que se encuentran en el [ámbito](https://www.wikipedia.org/wiki/Scope_(computer_science)) actual, es decir, en el contexto de ejecución actual.
 
@@ -306,15 +314,13 @@ Las características que le permiten inspeccionar las variables son una de las m
 
 ## <a name="examine-the-call-stack"></a>Examinar la pila de llamadas
 
-1. Mientras esté en pausa en el bucle `foreach`, haga clic en la ventana **Pila de llamadas**, que se abrirá de forma predeterminada en el panel inferior derecho.
+1. Mientras esté en pausa en el bucle `For Each`, haga clic en la ventana **Pila de llamadas**, que se abrirá de forma predeterminada en el panel inferior derecho.
 
-    Si está cerrada, ábrala mientras está en pausa en el depurador seleccionando **Depurar** > **Ventanas** > **Pila de llamadas**.
+2. Presione **F11** varias veces hasta que vea que el depurador se detenga en el método `MyBase.Draw` de la clase `Rectangle` en el editor de código. Eche un vistazo a la ventana **Pila de llamadas**.
 
-2. Presione **F11** varias veces hasta que vea que el depurador se detenga en el método `Base.Draw` para la clase `Triangle` en el editor de código. Eche un vistazo a la ventana **Pila de llamadas**.
+    ![Examinar la pila de llamadas](../debugger/media/get-started-call-stack-vb.png "ExamineCallStack")
 
-    ![Examinar la pila de llamadas](../debugger/media/get-started-call-stack.png "ExamineCallStack")
-
-    En la ventana **Pila de llamadas** se muestra el orden en el que se llama a los métodos y las funciones. En la línea superior se muestra la función actual (el método `Triangle.Draw` en esta aplicación). En la segunda línea se mostrará que se ha llamado a `Triangle.Draw` desde el método `Main`, y así sucesivamente.
+    En la ventana **Pila de llamadas** se muestra el orden en el que se llama a los métodos y las funciones. En la línea superior se muestra la función actual (el método `Rectangle.Draw` en esta aplicación). En la segunda línea se mostrará que se ha llamado a `Rectangle.Draw` desde la función `Main`, y así sucesivamente.
 
    > [!NOTE]
    > La ventana **Pila de llamadas** es similar a la perspectiva de depuración de algunos IDE, como Eclipse.
@@ -327,11 +333,11 @@ Las características que le permiten inspeccionar las variables son una de las m
 
 ## <a name="change-the-execution-flow"></a>Cambio del flujo de ejecución
 
-1. Con el depurador en pausa en la llamada del método `Circle.Draw`, use el mouse para capturar la flecha amarilla (el puntero de ejecución) a la izquierda y moverla una línea hacia arriba hasta la llamada de método `Console.WriteLine`.
+1. Con el depurador en pausa en la llamada del método `MyBase.Draw` de la clase `Rectangle`, use el mouse para capturar la flecha amarilla (el puntero de ejecución) a la izquierda y moverla una línea hacia arriba hasta la llamada de método `Console.WriteLine`.
 
 1. Presione **F11**.
 
-    El depurador volverá a ejecutar el método `Console.WriteLine`, lo cual se puede consultar en la salida de la ventana de la consola.
+    El depurador vuelve a ejecutar el método `Console.WriteLine` (puede ver el resultado duplicado en la salida de le ventana de la consola).
 
     Al cambiar el flujo de ejecución, puede, por ejemplo, comprobar las diferentes rutas de ejecución de código o volver a ejecutar código sin tener que reiniciar el depurador.
 

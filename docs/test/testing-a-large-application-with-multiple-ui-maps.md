@@ -1,5 +1,5 @@
 ---
-title: Prueba de una aplicación grande con varias asignaciones de IU en Visual Studio
+title: Probar una aplicación grande con varias asignaciones de IU
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,26 +12,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0072d04ed8f31b492e0ee792717b8975478c8c99
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dfc1cf44cb92ab58b50284f0398178c8f96f2a2e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891029"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895137"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Probar una aplicación grande con varias asignaciones de IU
 
 En este tema se describe cómo usar pruebas automatizadas de IU cuando esté probando una aplicación grande mediante varias asignaciones de IU.
 
- **Requisitos**
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
+
+**Requisitos**
 
 - Visual Studio Enterprise
 
-  Al crear una nueva prueba automatizada de IU, el marco de pruebas de Visual Studio genera de manera predeterminada código para la prueba en una clase <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>. Para obtener más información sobre cómo registrar pruebas automatizadas de IU, vea [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md) y [Anatomía de una prueba automatizada de IU](../test/anatomy-of-a-coded-ui-test.md).
+Al crear una nueva prueba automatizada de IU, el marco de pruebas de Visual Studio genera de manera predeterminada código para la prueba en una clase <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>. Para obtener más información sobre cómo registrar pruebas automatizadas de IU, vea [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md) y [Anatomía de una prueba automatizada de IU](../test/anatomy-of-a-coded-ui-test.md).
 
-  El código generado para la asignación de IU contiene una clase para cada objeto con el que la prueba interactúa. Para cada método generado, se genera una clase complementaria específicamente para los parámetros de ese método. Si hay un número elevado de objetos, páginas y formularios y controles en la aplicación, la asignación de IU puede llegar a ser muy grande. Además, si hay varias personas trabajando en las pruebas, la aplicación se vuelve pesada con un único archivo grande de asignación de IU.
+El código generado para la asignación de IU contiene una clase para cada objeto con el que la prueba interactúa. Para cada método generado, se genera una clase complementaria específicamente para los parámetros de ese método. Si hay un número elevado de objetos, páginas y formularios y controles en la aplicación, la asignación de IU puede llegar a ser muy grande. Además, si hay varias personas trabajando en las pruebas, la aplicación se vuelve pesada con un único archivo grande de asignación de IU.
 
-  El uso de varios archivos de asignación de IU puede aportar las ventajas siguientes:
+El uso de varios archivos de asignación de IU puede aportar las ventajas siguientes:
 
 - Cada asignación se puede asociar a un subconjunto lógico de la aplicación. Esto hace que los cambios sean más fáciles de administrar.
 

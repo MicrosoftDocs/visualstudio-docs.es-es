@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c71161c85c1a532b8c7e188f23cb00e73f78b06c
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 5d0d51e1c5c3ba94363c2ce0377f3d1a5e22c582
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001222"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895852"
 ---
 # <a id="top"> </a> Imágenes de Visual Studio en Azure
 
@@ -32,15 +32,16 @@ El uso de Visual Studio en una máquina virtual de Azure preconfigurada es una f
 
 En Azure Marketplace puede encontrar imágenes de las versiones principales más recientes: Visual Studio 2017 y Visual Studio 2015. Para cada versión principal, verá la versión de lanzamiento original (RTW) y las versiones actualizadas más recientes. Cada una de estas versiones ofrece las ediciones Visual Studio Enterprise y Visual Studio Community. Estas imágenes se actualizan como mínimo cada mes para incluir las actualizaciones más recientes de Visual Studio y Windows. Aunque los nombres de las imágenes siguen siendo los mismos, la descripción de cada imagen incluye la versión del producto instalada y la fecha de inicio de la imagen.
 
-| Versión de lanzamiento                                              | Ediciones                     |     Versión del producto     |
-|:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017: versión más reciente (15.9)                    |    Enterprise, Community     |      Versión 15.9.0     |
-|         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Versión 15.0.18    |
-|   Visual Studio 2015: versión más reciente (Update 3)                      |    Enterprise, Community     |  Versión 14.0.25431.01  |
-|         Visual Studio 2015: RTW                              |             Ninguna             | (Servicio de mantenimiento expirado) |
+| Versión de lanzamiento                                              | Ediciones                     |     Versión del producto      |
+|:------------------------------------------------------------:|:----------------------------:|:------------------------:|
+|   Versión preliminar de Visual Studio 2019 (versión preliminar 1)                   |           Empresa         | Versión preliminar 1 16.0.0 |
+| Visual Studio 2017: versión más reciente (15.9)                    |    Enterprise, Community     |      Versión 15.9.0      |
+|         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Versión 15.0.18     |
+|   Visual Studio 2015: versión más reciente (Update 3)                      |    Enterprise, Community     |  Versión 14.0.25431.01   |
+|         Visual Studio 2015: RTW                              |             Ninguna             | (Servicio de mantenimiento expirado)  |
 
 > [!NOTE]
-> De conformidad con la directiva de mantenimiento de Microsoft, el servicio de mantenimiento de la versión de lanzamiento original ("RTW") de Visual Studio 2015 ha expirado. Visual Studio 2015 Update 3 es la única versión que se ofrece con la línea de productos de Visual Studio 2015.  Además, desde la publicación Visual Studio 2017 versión 15.9, hemos interrumpido las imágenes de "versión preliminar más reciente" que incluían versiones preliminares de la versión 15.9.
+> De conformidad con la directiva de mantenimiento de Microsoft, el servicio de mantenimiento de la versión de lanzamiento original ("RTW") de Visual Studio 2015 ha expirado. Visual Studio 2015 Update 3 es la única versión que se ofrece con la línea de productos de Visual Studio 2015.
 
 Para más información, consulte la [directiva de mantenimiento de Visual Studio](/visualstudio/productinfo/vs-servicing-vs).
 

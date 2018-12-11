@@ -13,43 +13,45 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3a5d07e4267291e30f85b1b16b49213ab119cd1c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aa5f6b3c5f4069a0b62fa6433c8ecef527558a0d
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932356"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895891"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Cómo: Acercar una región del gráfico en los resultados de pruebas de carga
 
 Una vez terminada una prueba de carga, puede usar las barras de zoom para acercar una región del gráfico y desplazarse por ella. Al aplicar el zoom para acercar, puede examinar los datos que se generaron durante la ejecución de una prueba de carga con más detalle.
 
-> [!NOTE]
-> El zoom para acercar solo está disponible cuando analiza los resultados de una prueba de carga completada, no mientras observa los resultados de una prueba en ejecución.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- El control de zoom solo es visible en el **Analizador de pruebas de carga** cuando se ven los resultados de una prueba de carga en modo de zoom. El modo de zoom se establece en la vista de gráficos cuando una prueba de carga se ha completado o cuando se carga una prueba de carga que se ha ejecutado previamente. Puede mostrar u ocultar los controles de zoom en los gráficos mediante **Mostrar controles de zoom** en la barra de herramientas.
+El zoom para acercar solo está disponible cuando analiza los resultados de una prueba de carga completada, no mientras observa los resultados de una prueba en ejecución.
 
- Es posible ajustar el **zoom del eje x horizontal** para analizar determinados períodos de tiempo durante la prueba de carga. Se puede ajustar el **zoom del eje y vertical** para analizar determinados rangos de valores para los contadores que están incluidos en el gráfico.
+El control de zoom solo es visible en el **Analizador de pruebas de carga** cuando se ven los resultados de una prueba de carga en modo de zoom. El modo de zoom se establece en la vista de gráficos cuando una prueba de carga se ha completado o cuando se carga una prueba de carga que se ha ejecutado previamente. Puede mostrar u ocultar los controles de zoom en los gráficos mediante **Mostrar controles de zoom** en la barra de herramientas.
 
- Los controles de zoom de **escala de tiempo horizontal** y de **rango de valores vertical** se pueden ajustar mediante el mouse. El **control de escala de tiempo horizontal** también se puede ajustar mediante las teclas de dirección izquierda y derecha. Si se usan las teclas de dirección para ajustar el control de zoom, se puede ajustar el intervalo de ventanas en 1 intervalo de muestreo cada vez. Con las teclas **Mayús** y de dirección se realizan ajustes de diez intervalos de muestreo.
+Es posible ajustar el **zoom del eje x horizontal** para analizar determinados períodos de tiempo durante la prueba de carga. Se puede ajustar el **zoom del eje y vertical** para analizar determinados rangos de valores para los contadores que están incluidos en el gráfico.
 
- Para ajustar el control de zoom mediante las teclas de dirección, establezca primero el foco en el control de zoom con la tecla **Tab**. Cuando el control deslizante izquierdo tenga el foco, las teclas de dirección moverán el límite inicial de la ventana de zoom 1 intervalo a la izquierda o a la derecha. Cuando el foco esté en el control deslizante del centro, puede usar las teclas de dirección para desplazar la ventana de zoom a la izquierda o a la derecha 1 intervalo de muestreo sin cambiar el tamaño de la ventana de zoom. Y por último, el control deslizante derecho se desplaza, extendiendo o reduciendo el intervalo del final de la ventana de zoom 1 intervalo de muestreo.
+Los controles de zoom de **escala de tiempo horizontal** y de **rango de valores vertical** se pueden ajustar mediante el mouse. El **control de escala de tiempo horizontal** también se puede ajustar mediante las teclas de dirección izquierda y derecha. Si se usan las teclas de dirección para ajustar el control de zoom, se puede ajustar el intervalo de ventanas en 1 intervalo de muestreo cada vez. Con las teclas **Mayús** y de dirección se realizan ajustes de diez intervalos de muestreo.
 
- Para que los controles de zoom horizontal y vertical vuelvan a mostrar la escala de tiempo y los intervalos de valores completos, puede usar la opción **Alejar horizontalmente**, **Alejar verticalmente** o **Alejar ambos** del menú emergente del gráfico.
+Para ajustar el control de zoom mediante las teclas de dirección, establezca primero el foco en el control de zoom con la tecla **Tab**. Cuando el control deslizante izquierdo tenga el foco, las teclas de dirección moverán el límite inicial de la ventana de zoom 1 intervalo a la izquierda o a la derecha. Cuando el foco esté en el control deslizante del centro, puede usar las teclas de dirección para desplazar la ventana de zoom a la izquierda o a la derecha 1 intervalo de muestreo sin cambiar el tamaño de la ventana de zoom. Y por último, el control deslizante derecho se desplaza, extendiendo o reduciendo el intervalo del final de la ventana de zoom 1 intervalo de muestreo.
+
+Para que los controles de zoom horizontal y vertical vuelvan a mostrar la escala de tiempo y los intervalos de valores completos, puede usar la opción **Alejar horizontalmente**, **Alejar verticalmente** o **Alejar ambos** del menú emergente del gráfico.
 
 > [!TIP]
 > Puede usar **Sincronizar controles de zoom horizontal** de la barra de herramientas para activar o desactivar la sincronización de zoom horizontal automática. Con la sincronización activada, cualquier zoom que aplique a un gráfico también se aplica a cualquier otro gráfico de la vista de gráficos.
 
- ![Control de zoom de vista de gráficos](../test/media/ltest_zoomcontrol.png) Control de zoom de vista de gráficos
+![Control de zoom de la vista de gráficos](../test/media/ltest_zoomcontrol.png)
 
- En la ilustración anterior, se ha acercado el gráfico **Sistema a prueba** para investigar problemas de umbral. Las infracciones de umbral se han habilitado usando **Mostrar infracciones de umbral en el gráfico** en la lista desplegable **Opciones del gráfico** de la barra de herramientas.
+En la ilustración anterior, se ha acercado el gráfico **Sistema a prueba** para investigar problemas de umbral. Las infracciones de umbral se han habilitado usando **Mostrar infracciones de umbral en el gráfico** en la lista desplegable **Opciones del gráfico** de la barra de herramientas.
 
- Para obtener más información, vea [Analizar los resultados de pruebas de carga en la vista Gráficos](../test/analyze-load-test-results-in-the-graphs-view.md).
+Para obtener más información, vea [Analizar los resultados de pruebas de carga en la vista Gráficos](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="display-graphs"></a>Mostrar gráficos
- Antes de cambiar la presentación de un gráfico acercándolo o alejándolo, o desplazándose por él, siga este procedimiento para mostrar gráficos.
 
-### <a name="to-display-graphs"></a>Para mostrar los gráficos
+Antes de cambiar la presentación de un gráfico acercándolo o alejándolo, o desplazándose por él, siga este procedimiento para mostrar gráficos.
+
+Para mostrar los gráficos:
 
 1.  Ejecute una prueba de carga hasta que se complete.
 
@@ -68,7 +70,8 @@ Una vez terminada una prueba de carga, puede usar las barras de zoom para acerca
      Cada barra de zoom tiene dos controladores. Un controlador es un área rectangular en cada extremo de la barra de zoom.
 
 ## <a name="zoom-and-scroll"></a>Zoom y desplazamiento
- Cuando se muestran varios gráficos, puede mantenerlos sincronizados para que muestren la misma parte de la ejecución de la prueba de carga.
+
+Cuando se muestran varios gráficos, puede mantenerlos sincronizados para que muestren la misma parte de la ejecución de la prueba de carga.
 
 ### <a name="to-synchronize-zooming-and-scrolling"></a>Para sincronizar el zoom y el desplazamiento
 
