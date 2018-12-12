@@ -1,5 +1,6 @@
 ---
 title: '&lt;AddIn&gt; elemento (desarrollo de Office en Visual Studio)'
+titleSuffix: ''
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bb2161cbc6633163ba8fba3f8eb678cb0ad72333
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 06c3941e73ee1825d1dc0f593bd3aa6563c511df
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304472"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247986"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;AddIn&gt; elemento (desarrollo de Office en Visual Studio)
   El **addin** elemento de la `vstav3` espacio de nombres contiene información específica para las personalizaciones de nivel de documento desarrolladas con Visual Studio y los complementos de VSTO de Microsoft Office.  
@@ -59,16 +60,16 @@ ms.locfileid: "52304472"
  El elemento `addin` tiene los siguientes elementos secundarios.  
 
 ### <a name="entrypoints"></a>entryPoints  
- Requerido. El **entryPoints** elemento se describe en [ &#60;entryPoints&#62; elemento &#40;desarrollo de Office en Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
+ Obligatorio. El **entryPoints** elemento se describe en [ &#60;entryPoints&#62; elemento &#40;desarrollo de Office en Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
 
 ### <a name="update"></a>actualizar  
- Requerido. El **actualizar** elemento se describe en [ &#60;actualizar&#62; elemento &#40;desarrollo de Office en Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md).  
+ Obligatorio. El **actualizar** elemento se describe en [ &#60;actualizar&#62; elemento &#40;desarrollo de Office en Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md).  
 
 ### <a name="postactions"></a>postActions  
  Opcional. El **postActions** elemento se describe en [ &#60;postActions&#62; elemento &#40;desarrollo de Office en Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md).  
 
 ### <a name="application"></a>aplicación  
- Requerido. El **aplicación** elemento se describe en [ &#60;aplicación&#62; elemento &#40;desarrollo de Office en Visual Studio&#41;](../vsto/application-element-office-development-in-visual-studio.md).  
+ Obligatorio. El **aplicación** elemento se describe en [ &#60;aplicación&#62; elemento &#40;desarrollo de Office en Visual Studio&#41;](../vsto/application-element-office-development-in-visual-studio.md).  
 
 ## <a name="document-level-customization-example"></a>Ejemplo de personalización de nivel de documento  
 

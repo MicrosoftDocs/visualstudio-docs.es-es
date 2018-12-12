@@ -13,17 +13,17 @@ helpviewer_keywords:
 - deployment manifests [Office development in Visual Studio]
 - application manifests [Office development in Visual Studio]
 - assemblies [Office development in Visual Studio], updating
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f3fba49e90bbe0f5350a5d778b8591ec473807be
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: bb4386469e02934045d9f1da45fe515dc9af5da2
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258007"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247964"
 ---
 # <a name="application-and-deployment-manifests-in-office-solutions"></a>Manifiestos de aplicación e implementación de soluciones de Office
   Un manifiesto de aplicación es un archivo XML que proporciona información que utiliza una solución de Office para buscar y actualizar sus ensamblados. Un manifiesto de aplicación puede utilizarse con un manifiesto de implementación, que es un archivo XML almacenado en el servidor que proporciona la información necesaria para encontrar la versión más reciente del manifiesto de aplicación y de los ensamblados.  
@@ -44,7 +44,7 @@ ms.locfileid: "35258007"
   
 ## <a name="see-also"></a>Vea también  
  [Arquitectura de las personalizaciones de nivel de documento](../vsto/architecture-of-document-level-customizations.md)   
- [Arquitectura de complementos VSTO](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)   
  [Manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md)   
  [Manifiestos de implementación para soluciones de Office](../vsto/deployment-manifests-for-office-solutions.md)   

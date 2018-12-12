@@ -1,5 +1,6 @@
 ---
 title: Ensamblados en Visual Studio Tools para Office runtime
+titleSuffix: ''
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -10,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Visual Studio Tools for Office runtime, assemblies
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 550963966b45ed2d8024b36735f17ff24b6701fc
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: 66ee95d4f102ac4206a9ed55a1fc97fc251c4f9c
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050214"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248123"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Ensamblados en Visual Studio Tools para Office runtime
   Al crear un proyecto de Office, Visual Studio agrega automáticamente las referencias a los ensamblados [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] correspondientes al tipo de proyecto y la versión de .NET Framework de destino del proyecto. Hay ensamblados distintos en las extensiones de Office para .NET Framework 3.5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], y [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Para obtener más información acerca de las extensiones de Office, consulte [Visual Studio Tools para Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
@@ -30,7 +31,7 @@ ms.locfileid: "50050214"
   
 |Nombre del ensamblado|Descripción|  
 |-------------------|-----------------|  
-|Microsoft.Office.Tools.Common.dll|Proporciona los tipos siguientes.<br /><br /> -Tipos para crear personalizaciones de cinta de opciones y etiquetas inteligentes. **Nota:** etiquetas inteligentes están desusadas en [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] y [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].<br />-Tipos para crear paneles de acciones en personalizaciones de nivel de documento y paneles de tareas personalizados en complementos VSTO.|  
+|Microsoft.Office.Tools.Common.dll|Proporciona los tipos siguientes.<br /><br /> -Tipos para crear personalizaciones de cinta de opciones y etiquetas inteligentes. **Nota:**      Las etiquetas inteligentes están desusadas en [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] y [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].<br />-Tipos para crear paneles de acciones en personalizaciones de nivel de documento y paneles de tareas personalizados en complementos VSTO.|  
 |Microsoft.Office.Tools.Excel.dll|Proporciona interfaces que representan elementos host y controles host de proyectos de Excel, así como los tipos compatibles. Para obtener más información, consulte [automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md).|  
 |Microsoft.Office.Tools.Outlook.dll|Proporciona tipos que puede usar para crear áreas de formulario personalizadas en complementos de VSTO de Outlook.|  
 |Microsoft.Office.Tools.Word.dll|Proporciona interfaces que representan elementos host y controles host de proyectos de Word, así como los tipos compatibles. Para obtener más información, consulte [automatizar Word usando objetos extendidos](../vsto/automating-word-by-using-extended-objects.md).|  
@@ -53,7 +54,7 @@ ms.locfileid: "50050214"
   
 |Nombre del ensamblado|Descripción|  
 |-------------------|-----------------|  
-|Microsoft.Office.Tools.Common.v9.0.dll|Proporciona los tipos siguientes.<br /><br /> -La clase base Microsoft.Office.Tools.AddIn para complementos VSTO.<br />-Las clases para crear personalizaciones de cinta de opciones y etiquetas inteligentes. **Nota:** etiquetas inteligentes están desusadas en [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] y [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].<br />-Las clases para crear paneles de acciones en personalizaciones de nivel de documento y paneles de tareas personalizados en complementos VSTO.|  
+|Microsoft.Office.Tools.Common.v9.0.dll|Proporciona los tipos siguientes.<br /><br /> -La clase base Microsoft.Office.Tools.AddIn para complementos VSTO.<br />-Las clases para crear personalizaciones de cinta de opciones y etiquetas inteligentes. **Nota:**      Las etiquetas inteligentes están desusadas en [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] y [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].<br />-Las clases para crear paneles de acciones en personalizaciones de nivel de documento y paneles de tareas personalizados en complementos VSTO.|  
 |Microsoft.Office.Tools.Excel.v9.0.dll|Proporciona elementos host y controles host para las soluciones de Excel. Para obtener más información, consulte [automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md).|  
 |Microsoft.Office.Tools.Outlook.v9.0.dll|Proporciona clases que puede usar para crear áreas de formulario personalizadas en complementos de VSTO de Outlook.|  
 |Microsoft.Office.Tools.Word.v9.0.dll|Proporciona elementos host y controles host para las soluciones de Word. Para obtener más información, consulte [automatizar Word usando objetos extendidos](../vsto/automating-word-by-using-extended-objects.md).|  

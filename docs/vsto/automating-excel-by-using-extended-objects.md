@@ -18,17 +18,17 @@ helpviewer_keywords:
 - automating Excel
 - host items [Office development in Visual Studio], Excel
 - controls [Office development in Visual Studio], Excel host controls
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d50751b00a1a713a9f8848bdbebaaff1463c45c0
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 0a74c5a62cc2e14615db8dd17c9a34a7e54178e7
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50744917"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248051"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>Automatizar Excel usando objetos extendidos
   Al desarrollar soluciones de Excel en Visual Studio, puede usar *elementos host* y *controles host*en sus soluciones. Estos son objetos que extienden algunos objetos muy usados en el modelo de objetos de Excel (es decir, el modelo de objetos expuesto por el ensamblado de interoperabilidad primario para Excel), como son los objetos <xref:Microsoft.Office.Interop.Excel.Worksheet> y <xref:Microsoft.Office.Interop.Excel.Range> . Los objetos extendidos se comportan como los objetos de Excel en los que se basan, pero agregan características adicionales, como nuevas capacidades de enlace de eventos y datos a los objetos.  
@@ -46,9 +46,9 @@ ms.locfileid: "50744917"
   
 -   <xref:Microsoft.Office.Tools.Excel.ChartSheet>. Este elemento host representa una hoja de cálculo de Excel que solo contiene un gráfico y expone eventos.  
   
-     Cuando se agrega una hoja de gráfico en tiempo de diseño como una nueva hoja en el proyecto de personalización de nivel de documento de Microsoft Office Excel, Visual Studio crea automáticamente un elemento host <xref:Microsoft.Office.Tools.Excel.ChartSheet>.  
+     Cuando se agrega una hoja de gráfico en tiempo de diseño como una nueva hoja en el proyecto de personalización de nivel de documento de Microsoft Office Excel, Visual Studio crea automáticamente un elemento host <xref:Microsoft.Office.Tools.Excel.ChartSheet> .  
   
-     Aunque un elemento host <xref:Microsoft.Office.Tools.Excel.ChartSheet> es una hoja de cálculo de Excel, no puede agregar ningún control a la hoja de gráfico. Si desea tener otros controles en una hoja de cálculo con un gráfico, no use una hoja de gráfico. En su lugar, puede colocar un gráfico como un objeto incrustado en una hoja de cálculo usando el control host <xref:Microsoft.Office.Tools.Excel.Chart>. Para obtener más información, consulte [control de gráfico](../vsto/chart-control.md).  
+     Aunque un elemento host <xref:Microsoft.Office.Tools.Excel.ChartSheet> es una hoja de cálculo de Excel, no puede agregar ningún control a la hoja de gráfico. Si desea tener otros controles en una hoja de cálculo con un gráfico, no use una hoja de gráfico. En su lugar, puede colocar un gráfico como un objeto incrustado en una hoja de cálculo usando el control host <xref:Microsoft.Office.Tools.Excel.Chart> . Para obtener más información, consulte [control de gráfico](../vsto/chart-control.md).  
   
 ## <a name="excel-host-controls"></a>controles host de Excel  
  Hay varios controles host de Excel que le ayudarán a crean, organizar y automatizar libros y hojas de cálculo. Estos controles host proporcionan eventos y capacidades de enlace de datos que no tienen sus homólogos en el modelo de objetos de Excel nativo.  
@@ -64,15 +64,15 @@ ms.locfileid: "50744917"
 -   [XmlMappedRange (control)](../vsto/xmlmappedrange-control.md)  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: controla el relleno ListObject con datos](../vsto/how-to-fill-listobject-controls-with-data.md)   
- [Cómo: agregar controles Chart a hojas de cálculo](../vsto/how-to-add-chart-controls-to-worksheets.md)   
- [Cómo: agregar controles ListObject a hojas de cálculo](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
- [Cómo: agregar controles NamedRange a hojas de cálculo](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
- [Cómo: agregar controles XMLMappedRange a hojas de cálculo](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)   
- [Cómo: cambiar el tamaño de los controles NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
- [Cómo: cambiar el tamaño de los controles ListObject](../vsto/how-to-resize-listobject-controls.md)   
- [Cómo: validar datos cuando se agrega una fila nueva a un control ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)   
- [Cómo: las columnas de mapa ListObject a datos](../vsto/how-to-map-listobject-columns-to-data.md)   
+ [Cómo: Rellenar los controles ListObject con datos](../vsto/how-to-fill-listobject-controls-with-data.md)   
+ [Cómo: Agregar controles Chart a hojas de cálculo](../vsto/how-to-add-chart-controls-to-worksheets.md)   
+ [Cómo: Agregar controles ListObject a hojas de cálculo](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
+ [Cómo: Agregar controles NamedRange a hojas de cálculo](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [Cómo: Agregar controles XMLMappedRange a hojas de cálculo](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)   
+ [Cómo: Cambiar el tamaño de los controles NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
+ [Cómo: Cambiar el tamaño de los controles ListObject](../vsto/how-to-resize-listobject-controls.md)   
+ [Cómo: Validar datos cuando se agrega una fila nueva a un control ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)   
+ [Cómo: Asignar columnas ListObject a datos](../vsto/how-to-map-listobject-columns-to-data.md)   
  [Tutorial: Programar basándose en eventos de un control NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
  [Extender documentos de Word y libros de Excel en complementos VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Controles en documentos de Office](../vsto/controls-on-office-documents.md)   
