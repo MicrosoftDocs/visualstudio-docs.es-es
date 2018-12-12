@@ -4,7 +4,7 @@ items:
 - name: Información general
   items:
   - name: Acerca de Visual Studio 2017
-    href: ide/visual-studio-ide.md
+    href: get-started/visual-studio-ide.md
   - name: Acerca del editor de código
     href: get-started/tutorial-editor.md
   - name: Acerca de los proyectos y las soluciones
@@ -132,15 +132,15 @@ items:
     href: ide/quickstart-ide-orientation.md
   - name: 'C++: Crear una aplicación de consola'
     href: ide/getting-started-with-cpp-in-visual-studio.md
-  - name: 'Python: Crear una aplicación web'
+  - name: 'Python: Creación de una aplicación web'
     href: ide/quickstart-python.md
-  - name: 'Node.js: Crear una aplicación web'
+  - name: 'Node.js: Creación de una aplicación web'
     href: ide/quickstart-nodejs.md
-  - name: 'F#: Crear un servicio web'
+  - name: 'F#: Creación de un servicio web'
     href: ide/quickstart-fsharp.md
-  - name: 'C#: Crear una aplicación web'
+  - name: 'C#: Creación de una aplicación web'
     href: ide/quickstart-aspnet-core.md
-  - name: 'C#: Crear una aplicación UWP'
+  - name: 'C#: Creación de una aplicación UWP'
     href: ide/quickstart-uwp-csharp.md
   - name: 'C#: Crear una aplicación de consola'
     href: ide/quickstart-csharp-console.md
@@ -158,7 +158,7 @@ items:
     href: javascript/tutorial-nodejs.md
   - name: C# en Visual Studio
     items:
-    - name: 'C#: Crear una aplicación web'
+    - name: 'C#: Creación de una aplicación web'
       href: ide/tutorial-csharp-aspnet-core.md
     - name: 'C#: Crear una aplicación de consola'
       href: ide/tutorial-csharp-console.md
@@ -354,7 +354,7 @@ items:
             href: ide/reference/sync-type-and-file.md
           - name: Usar un tipo explícito
             href: ide/reference/convert-var-to-explicit-type.md
-        - name: 'Tutorial: Generar código a partir del uso'
+        - name: 'Tutorial: Generación de código a partir del uso'
           href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
       - name: Sugerencias de productividad
         href: ide/productivity-tips-for-visual-studio.md
@@ -520,70 +520,70 @@ items:
         href: ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md
       - name: Tutoriales de la aplicación de Windows Forms
         items:
-        - name: 'Tutorial 1: Crear un visor de imágenes (C#)'
+        - name: 'Tutorial 1: Creación de un visor de imágenes (C#)'
           href: ide/tutorial-1-create-a-picture-viewer.md
           items:
-          - name: 'Paso 1: Crear un proyecto de aplicación de Windows Forms'
+          - name: 'Paso 1: creación de un proyecto de Aplicación de Windows Forms'
             href: ide/step-1-create-a-windows-forms-application-project.md
-          - name: 'Paso 2: Ejecutar el programa'
+          - name: 'Paso 2: ejecución del programa'
             href: ide/step-2-run-your-program.md
-          - name: 'Paso 3: Establecer las propiedades del formulario'
+          - name: 'Paso 3: establecimiento de las propiedades del formulario'
             href: ide/step-3-set-your-form-properties.md
-          - name: 'Paso 4: Diseñar un formulario con un control TableLayoutPanel'
+          - name: 'Paso 4: diseño del formulario con un control TableLayoutPanel'
             href: ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
-          - name: 'Paso 5: Agregar controles al formulario'
+          - name: 'Paso 5: adición de controles al formulario'
             href: ide/step-5-add-controls-to-your-form.md
-          - name: 'Paso 6: Asignar un nombre a los controles de botón'
+          - name: 'Paso 6: asignación de nombres a los controles de botón'
             href: ide/step-6-name-your-button-controls.md
-          - name: 'Paso 7: Agregar componentes de diálogo al formulario'
+          - name: 'Paso 7: adición de componentes de cuadro de diálogo al formulario'
             href: ide/step-7-add-dialog-components-to-your-form.md
-          - name: 'Paso 8: Escribir código para el controlador de eventos del botón Mostrar una imagen'
+          - name: 'Paso 8: escritura de código para el controlador de eventos de botón Mostrar una imagen'
             href: ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
-          - name: 'Paso 9: Revisar, comentar y probar el código'
+          - name: 'Paso 9: revisión, comentario y prueba del código'
             href: ide/step-9-review-comment-and-test-your-code.md
-          - name: 'Paso 10: Escribir código para botones adicionales y una casilla'
+          - name: 'Paso 10: escritura de código para botones adicionales y una casilla'
             href: ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
-          - name: 'Paso 11: Ejecutar el programa y probar otras características'
+          - name: 'Paso 11: ejecución del programa y prueba de otras características'
             href: ide/step-11-run-your-program-and-try-other-features.md
-        - name: 'Tutorial 2: Crear una prueba matemática cronometrada (C#)'
+        - name: 'Tutorial 2: Creación de una prueba matemática cronometrada (C#)'
           href: ide/tutorial-2-create-a-timed-math-quiz.md
           items:
-          - name: 'Paso 1: Crear un proyecto y agregar etiquetas al formulario'
+          - name: 'Paso 1: creación de un proyecto y adición de etiquetas al formulario'
             href: ide/step-1-create-a-project-and-add-labels-to-your-form.md
-          - name: 'Paso 2: Crear un problema de suma aleatoria'
+          - name: 'Paso 2: creación de un problema de suma aleatoria'
             href: ide/step-2-create-a-random-addition-problem.md
-          - name: 'Paso 3: Agregar un temporizador de cuenta atrás'
+          - name: 'Paso 3: adición de un temporizador de cuenta atrás'
             href: ide/step-3-add-a-countdown-timer.md
-          - name: 'Paso 4: Agregar el método CheckTheAnswer()'
+          - name: 'Paso 4: adición del método CheckTheAnswer()'
             href: ide/step-4-add-the-checktheanswer-parens-method.md
-          - name: 'Paso 5: Agregar controladores de eventos Enter para los controles NumericUpDown'
+          - name: 'Paso 5: adición de controladores de eventos Enter para los controles NumericUpDown'
             href: ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
-          - name: 'Paso 6: Agregar un problema de resta'
+          - name: 'Paso 6: adición de un problema de resta'
             href: ide/step-6-add-a-subtraction-problem.md
-          - name: 'Paso 7: Agregar problemas de multiplicación y división'
+          - name: 'Paso 7: adición de problemas de multiplicación y división'
             href: ide/step-7-add-multiplication-and-division-problems.md
-          - name: 'Paso 8: Personalizar la prueba'
+          - name: 'Paso 8: personalización de la prueba'
             href: ide/step-8-customize-the-quiz.md
-        - name: 'Tutorial 3: Crear un juego de formar parejas (C#)'
+        - name: 'Tutorial 3: Creación de un juego de formar parejas (C#)'
           href: ide/tutorial-3-create-a-matching-game.md
           items:
-          - name: 'Paso 1: Crear un proyecto y agregar una tabla a un formulario'
+          - name: 'Paso 1: creación de un proyecto y adición de una tabla al formulario'
             href: ide/step-1-create-a-project-and-add-a-table-to-your-form.md
-          - name: 'Paso 2: Agregar un objeto aleatorio y una lista de iconos'
+          - name: 'Paso 2: adición de un objeto aleatorio y una lista de iconos'
             href: ide/step-2-add-a-random-object-and-a-list-of-icons.md
-          - name: 'Paso 3: Asignar un icono aleatorio a cada etiqueta'
+          - name: 'Paso 3: asignación de un icono aleatorio a cada etiqueta'
             href: ide/step-3-assign-a-random-icon-to-each-label.md
-          - name: 'Paso 4: Agregar un controlador de eventos Click a cada etiqueta'
+          - name: 'Paso 4: adición de un controlador de eventos Click a cada etiqueta'
             href: ide/step-4-add-a-click-event-handler-to-each-label.md
-          - name: 'Paso 5: Agregar referencias a etiquetas'
+          - name: 'Paso 5: adición de referencias de etiqueta'
             href: ide/step-5-add-label-references.md
-          - name: 'Paso 6: Agregar un temporizador'
+          - name: 'Paso 6: adición de un temporizador'
             href: ide/step-6-add-a-timer.md
-          - name: 'Paso 7: Mantener visibles los pares'
+          - name: 'Paso 7: mantenimiento de las parejas visibles'
             href: ide/step-7-keep-pairs-visible.md
-          - name: 'Paso 8: Agregar un método para comprobar si el jugador ganó'
+          - name: 'Paso 8: adición de un método para comprobar si el jugador ganó'
             href: ide/step-8-add-a-method-to-verify-whether-the-player-won.md
-          - name: 'Paso 9: Probar otras características'
+          - name: 'Paso 9: prueba de otras características'
             href: ide/step-9-try-other-features.md
   - name: Acceder a datos...
     href: data-tools/accessing-data-in-visual-studio.md
@@ -592,7 +592,7 @@ items:
   - name: Compilar y generar
     href: ide/compiling-and-building-in-visual-studio.md
     items:
-    - name: 'Tutorial: Compilar una aplicación'
+    - name: 'Tutorial: Creación de una aplicación'
       href: ide/walkthrough-building-an-application.md
     - name: Compilar y limpiar proyectos y soluciones
       href: ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md
@@ -641,7 +641,7 @@ items:
       href: ide/how-to-specify-build-events-csharp.md
     - name: Configuración de advertencias en Visual Basic
       href: ide/configuring-warnings-in-visual-basic.md
-    - name: 'Tutorial: Crear un entorno de compilación para varios equipos'
+    - name: 'Tutorial: Creación de un entorno de compilación para varios equipos'
       href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
   - name: Depurar...
     href: debugger/index.md
@@ -660,7 +660,7 @@ items:
   - name: Personalizar el IDE
     href: ide/personalizing-the-visual-studio-ide.md
     items:
-    - name: 'Inicio rápido: personalización del tema y de los colores de texto'
+    - name: 'Inicio rápido: Personalizar el tema y los colores de texto'
       href: ide/quickstart-personalize-the-ide.md
     - name: Configuración del entorno
       href: ide/environment-settings.md
@@ -1120,9 +1120,9 @@ items:
       href: ide/developer-community-privacy.md
   - name: Notificación de un problema en Visual Studio
     href: ide/how-to-report-a-problem-with-visual-studio-2017.md
-  - name: 'Información general: notificación de un problema'
+  - name: 'Información general: Notificar un problema'
     href: ide/report-a-problem.md
-  - name: 'Información general: sugerencia de una característica'
+  - name: 'Información general: Sugerir una característica'
     href: ide/suggest-a-feature.md
   - name: Programa para la mejora de la experiencia del usuario
     href: ide/visual-studio-experience-improvement-program.md
@@ -1133,9 +1133,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Hable con nosotros
     href: ide/talk-to-us.md
-ms.openlocfilehash: 82155ce10d1a70376ed79611b78745e440360097
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 26d86461928e5494d4c0d8686cdf279847f29342
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027450"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160080"
