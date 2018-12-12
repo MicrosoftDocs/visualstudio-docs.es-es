@@ -1,5 +1,5 @@
 ---
-title: Asignar métodos en la pila de llamadas durante la depuración en Visual Studio
+title: Asignar métodos en la pila de llamadas durante la depuración
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
@@ -30,15 +30,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1d0139463f468ed6d909658bb143412dc122020
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c4597f1352e02033c55fcdced126e184f854b463
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856189"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067403"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Asignar métodos en la pila de llamadas durante la depuración en Visual Studio
-Crear un mapa de código para realizar un seguimiento la pila de llamadas durante la depuración. Puede hacer anotaciones en el mapa para llevar a cabo el seguimiento de lo que hace el código y poder concentrarse en encontrar errores.
+Cree un mapa de código para hacer un seguimiento visual de la pila de llamadas durante la depuración. Puede hacer anotaciones en el mapa para llevar a cabo el seguimiento de lo que hace el código y poder concentrarse en encontrar errores.
 
  ![Depuración con pilas de llamadas en los mapas de código](../debugger/media/debuggermap_overview.png)
 
@@ -66,7 +66,7 @@ Crear un mapa de código para realizar un seguimiento la pila de llamadas durant
 
   Para obtener detalles de los comandos y las acciones que puede utilizar cuando se trabaja con mapas de código, vea [examinar y reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md).
 
-## <a name="MapStack"></a> Asigne la pila de llamadas
+## <a name="MapStack"></a> Asignar la pila de llamadas
 
 1.  Inicie la depuración. (Teclado: **F5**)
 
