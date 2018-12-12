@@ -1,7 +1,8 @@
 ---
-title: Modificación de Visual Studio 2017 | Microsoft Docs
+title: Modificar Visual Studio
+titleSuffix: ''
 description: Obtenga información sobre cómo modificar Visual Studio, paso a paso.
-ms.custom: H1Hack27Feb2017
+ms.custom: H1Hack27Feb2017,seodec18
 ms.date: 06/12/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -17,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d60603ae9a94e843920f00dc8c8fc2ebb40c8861
-ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
+ms.openlocfilehash: efb52ebc55126fa167144803afc373317d735aae
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168388"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160067"
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Modificación de Visual Studio 2017 mediante la incorporación o la eliminación de cargas de trabajo y componentes
 

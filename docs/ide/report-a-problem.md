@@ -1,21 +1,22 @@
 ---
-title: 'Información general: Notificar un problema en Visual Studio'
+title: Notificar un problema
 description: Proporciona información general sobre la herramienta Notificar un problema e incluye definiciones y estados de problemas
 ms.date: 11/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56047150ce98cb6554248e43b7b8d7ff433cf283
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: b6d7605cffeca2797d47aa90c6f64a1aab0a6cb2
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826679"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159833"
 ---
 # <a name="overview-report-a-problem"></a>Información general: Notificar un problema
 

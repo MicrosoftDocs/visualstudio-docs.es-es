@@ -1,5 +1,5 @@
 ---
-title: Generación de código, compilación y convenciones de nomenclatura en Microsoft Fakes para Visual Studio
+title: Generación de código, compilación y convenciones de nomenclatura en Microsoft Fakes
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 65b00ab033feb9f057be195afe28b0416f44f95e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7af8fc49896549fd553c8262b04e9d02f76f06e9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926025"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058316"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Generación de código, compilación y convenciones de nomenclatura en Microsoft Fakes
 
