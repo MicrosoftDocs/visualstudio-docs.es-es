@@ -1,5 +1,5 @@
 ---
-title: Novedades de diseño en Visual Studio
+title: Novedades de diseño
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee3c602dfc89aeafbfb82ae50771abc7ce66937e
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: ebe304cafa5e8ed4eae287750aeb8e2db02fbc31
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966943"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062288"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Novedades de diseño en Visual Studio
 
