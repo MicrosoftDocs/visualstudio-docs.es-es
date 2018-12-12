@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - Office development in Visual Studio, what's new
 - what's new [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 231a0a297bfedf9b38c612368f5db770a2162369
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: b200c5b0df5f150e0d34b351a3e36a8a986f3ed6
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672943"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248249"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Cambios en el diseño de proyectos de Office que tienen como destino .NET Framework 4 o .NET Framework 4.5
   A partir de [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], Visual Studio introdujo algunos cambios en el diseño de los proyectos de Office destinados a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores. Si está familiarizado con los proyectos de Office en versiones anteriores de Visual Studio, debe tener en cuenta estos cambios a la hora de desarrollar proyectos de Office destinados a esas versiones de .NET Framework 4.0 o versiones posteriores. De forma predeterminada, todos los proyectos creados con Visual Studio 2013 o versiones posteriores van destinados a .NET Framework 4.0 o versiones posteriores.  
@@ -31,7 +31,7 @@ ms.locfileid: "50672943"
 ## <a name="understand-the-interface-based-design-of-the-visual-studio-2010-tools-for-office-runtime"></a>Entender el diseño basado en la interfaz de Visual Studio 2010 Tools para Office runtime  
  Al desarrollar un proyecto de Office que tenga como destino el [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores, la mayoría de los tipos que usan en Visual Studio 2010 Tools para Office runtime es interfaces. Este es un importante cambio con respecto a las versiones anteriores del [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], donde estos tipos eran clases. Por ejemplo, cuando el destino es [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores, los tipos <xref:Microsoft.Office.Tools.Excel.Worksheet> y <xref:Microsoft.Office.Tools.Word.Document> son interfaces en lugar de clases. Para obtener más información, consulte [Visual Studio Tools para Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
   
- En los tipos cuya instancia se podía crear directamente en las versiones anteriores del [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], ahora se usan métodos del objeto `Globals.Factory` para obtener las instancias. Por ejemplo, para obtener un objeto que implemente la interfaz <xref:Microsoft.Office.Tools.Excel.SmartTag>, utilice el método `Globals.Factory.CreateSmartTag`. Para obtener más información, consulta los temas siguientes:  
+ En los tipos cuya instancia se podía crear directamente en las versiones anteriores del [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], ahora se usan métodos del objeto `Globals.Factory` para obtener las instancias. Por ejemplo, para obtener un objeto que implemente la interfaz <xref:Microsoft.Office.Tools.Excel.SmartTag>, utilice el método `Globals.Factory.CreateSmartTag`. Para obtener más información, vea los temas siguientes:  
   
 -   [Actualizar proyectos de Excel y Word migrados a .NET Framework 4 o .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
@@ -40,7 +40,7 @@ ms.locfileid: "50672943"
 -   [Actualizar las áreas de formulario en los proyectos de Outlook migrados a .NET Framework 4 o .NET Framework 4.5](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
 ### <a name="new-base-classes-in-office-projects"></a>Nuevas clases base en proyectos de Office  
- El nuevo diseño basado en la interfaz de Visual Studio 2010 Tools para Office runtime afecta a las clases generadas en proyectos de Office, como `ThisDocument`, `ThisWorkbook`, y `ThisAddIn`. En proyectos de Office destinados a .NET Framework 3.5 y versiones anteriores de Framework, estas clases generadas derivan de clases del [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], como `Microsoft.Office.Tools.Word.Document`, `Microsoft.Office.Tools.Excel.Worksheet` y `Microsoft.Office.Tools.AddIn`. En los proyectos que tienen como destino [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores, estas clases [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] son interfaces. Por lo tanto, las clases generadas en proyectos de Office ya no pueden derivar su implementación de ellas. En su lugar, las clases generadas derivan de nuevas clases base como <xref:Microsoft.Office.Tools.Word.DocumentBase>, <xref:Microsoft.Office.Tools.Excel.WorksheetBase> y <xref:Microsoft.Office.Tools.AddInBase>. Para obtener más información, consulte [complementos VSTO programa](../vsto/programming-vsto-add-ins.md) y [programar personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md).  
+ El nuevo diseño basado en la interfaz de Visual Studio 2010 Tools para Office runtime afecta a las clases generadas en proyectos de Office, como `ThisDocument`, `ThisWorkbook`, y `ThisAddIn`. En proyectos de Office destinados a .NET Framework 3.5 y versiones anteriores de Framework, estas clases generadas derivan de clases del [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], como `Microsoft.Office.Tools.Word.Document`, `Microsoft.Office.Tools.Excel.Worksheet` y `Microsoft.Office.Tools.AddIn`. En los proyectos que tienen como destino [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores, estas clases [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] son interfaces. Por lo tanto, las clases generadas en proyectos de Office ya no pueden derivar su implementación de ellas. En su lugar, las clases generadas derivan de nuevas clases base como <xref:Microsoft.Office.Tools.Word.DocumentBase>, <xref:Microsoft.Office.Tools.Excel.WorksheetBase>y <xref:Microsoft.Office.Tools.AddInBase>. Para obtener más información, consulte [complementos VSTO programa](../vsto/programming-vsto-add-ins.md) y [programar personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md).  
   
  Las clases base no forman parte de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] redistribuible. En su lugar, se definen en ensamblados de utilidades incluidos en Visual Studio. Estos ensamblados se copian en la carpeta de salida al compilar proyectos de Office y se deben implementar con la solución. Para obtener más información acerca de los ensamblados de utilidades, consulte [ensamblados en Visual Studio Tools para Office runtime](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md).  
   

@@ -1,5 +1,6 @@
 ---
 title: '&lt;aplicación&gt; elemento (desarrollo de Office en Visual Studio)'
+titleSuffix: ''
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -10,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <application> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 72e9340a062b0b394b423d0403b46cbb2ecb8628
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 7b02a3bb762efd9136da79d3128caa0cf8a19f95
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675475"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247776"
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;aplicación&gt; elemento (desarrollo de Office en Visual Studio)
   El elemento `application` del espacio de nombres `vstav3` contiene la descripción de las soluciones de Office. Los elementos secundarios son diferentes para las personalizaciones de nivel de documento y los complementos de VSTO.  
@@ -60,7 +61,7 @@ ms.locfileid: "35675475"
   
  El elemento `application` no tiene atributos.  
   
- El elemento `application` tiene el elemento siguiente:  
+ El elemento `application` tiene el siguiente elemento:  
   
 ### <a name="customization"></a>Personalización  
  El rol de la `customization` elemento en el `vstov3` espacio de nombres se define en [ &#60;personalización&#62; elemento &#40;desarrollo de Office en Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).  
