@@ -26,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba0ed54e8acd28be3f267d83473f9514f471ef4a
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 518479d92aa9b0ec51c4fda8b7484a03ce45a560
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349314"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159677"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluciones y proyectos en Visual Studio
 
@@ -79,6 +79,6 @@ Después de crear un proyecto nuevo, puede usar el **Explorador de soluciones** 
 
 ## <a name="see-also"></a>Vea también
 
-- [IDE de Visual Studio](../ide/visual-studio-ide.md)
+- [IDE de Visual Studio](../get-started/visual-studio-ide.md)
 - [Proyectos y soluciones (Visual Studio para Mac)](/visualstudio/mac/projects-and-solutions)
 - [Agregar y quitar elementos del proyecto (Visual Studio para Mac)](/visualstudio/mac/add-and-remove-project-items)

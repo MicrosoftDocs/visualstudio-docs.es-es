@@ -1,5 +1,5 @@
 ---
-title: Codificación de una regla de validación personalizada para una prueba de rendimiento web en Visual Studio
+title: Codificación de una regla de validación personalizada para una prueba de rendimiento web
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ffc5d54b9eac28e975b6ee538e6193e52f98282f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 407c6e5b8beec118ce8f25edb35e66722990e8ca
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895150"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53047679"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Codificar una regla de validación personalizada para una prueba de rendimiento web
 

@@ -1,5 +1,5 @@
 ---
-title: Edición de pruebas de carga en Visual Studio
+title: Modificar pruebas de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cb39ea39261d5b359437b2c31ec963bab8df01fe
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: a2bc06ed17522eef36841b72859554163068afa6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895397"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048638"
 ---
 # <a name="edit-load-tests"></a>Editar pruebas de carga
 

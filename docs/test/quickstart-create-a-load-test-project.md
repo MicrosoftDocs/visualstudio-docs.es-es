@@ -1,5 +1,5 @@
 ---
-title: Creación de un proyecto de prueba de carga y rendimiento web en Visual Studio
+title: Crear un proyecto de rendimiento web y prueba de carga
 ms.date: 03/14/2018
 ms.topic: quickstart
 helpviewer_keywords:
@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f2e0f06eddee4acd500e6bf4a8094dde4efc0d14
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 30e67768b502228ba8cba5acd813ec829624a822
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896294"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057579"
 ---
-# <a name="quickstart-create-a-load-test-project"></a>Inicio rápido: Crear un proyecto de prueba de carga
+# <a name="quickstart-create-a-load-test-project"></a>Inicio rápido: Crear un proyecto de pruebas de carga
 
 En este inicio rápido de 10 minutos, aprenderá a crear y ejecutar un proyecto de prueba de carga y rendimiento web en Visual Studio. Las pruebas de carga ejecutan pruebas unitarias o de rendimiento web para simular que muchos usuarios tienen acceso a un servidor al mismo tiempo.
 

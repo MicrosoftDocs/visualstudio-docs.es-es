@@ -1,5 +1,5 @@
 ---
-title: Pruebas unitarias para código de Visual C# en Visual Studio
+title: Pruebas unitarias de código de Visual C#
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 7fee836c8259aac267bd1b3da39bf254c8cdcc63
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 76c20fb987bb1380cb4d3f00e078aac81f26e89f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380735"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064859"
 ---
 # <a name="unit-testing-visual-c-code"></a>Pruebas unitarias de código de Visual C#
 
@@ -326,4 +326,4 @@ Observe que el método `RangeTest` codifica de forma rígida el denominador de l
 2. Seleccione **Ejecutar todas** para probar el método refactorizado y asegúrese de que no ha introducido un error.
 
 > [!NOTE]
-> Si agrega un método auxiliar a una clase de prueba que no desea que aparezca en el **Explorador de pruebas**, no agregue el atributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> al método.
+> Si agrega un método del asistente a una clase de prueba que no desea que aparezca en el **Explorador de pruebas**, no agregue el atributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> al método.
