@@ -1,6 +1,6 @@
 ---
-title: Ver el código de desensamblado en el depurador de Visual Studio | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Ver el código de desensamblado en el depurador | Microsoft Docs
+ms.custom: seodec18
 ms.date: 10/30/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9cf75915b3ca17df1ee9e2ef41040147c146ea8
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: c35432bdd01b9b79c2afaa266d8078caf04bd62b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52387674"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063841"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Ver el código de desensamblado en el depurador de Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -64,7 +64,7 @@ Para habilitar el **desensamblado** ventana, en **herramientas** > **opciones** 
 Para abrir el **desensamblado** ventana durante la depuración, seleccione **Windows** > **desensamblado** o presione **Alt** + **8**.
 
 > [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Restablecer configuración](../ide/environment-settings.md#reset-settings).
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, vea [Restablecer la configuración](../ide/environment-settings.md#reset-settings).
 
 Para activar o desactivar la información opcional, haga clic en el **desensamblado** ventana y Active o desactive las opciones que desee en el menú contextual.
 
@@ -74,4 +74,4 @@ Una flecha amarilla en el margen izquierdo marca el punto de ejecución actual. 
 
 * [Retroceder o avanzar en la memoria](../debugger/how-to-page-up-or-down-in-memory.md)
 * [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)
-* [Cómo: Usar la ventana Registros](../debugger/how-to-use-the-registers-window.md)
+* [Cómo: Utilice la ventana registros](../debugger/how-to-use-the-registers-window.md)

@@ -1,5 +1,5 @@
 ---
-title: Sugerencias y trucos de Visual Studio | Microsoft Docs
+title: Sugerencias y trucos | Microsoft Docs
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1e640aa6676cec22bd9b124727be0cbe88c5c6cb
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.openlocfilehash: b067302576dd83d88853a517f66e1c19186e3a78
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000115"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051161"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Sugerencias y trucos de Visual Studio
 
@@ -144,7 +144,7 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 
 ##  <a name="BKMK_ALM"></a> Administración del ciclo de vida de las aplicaciones
 
-Vea [Métodos abreviados de teclado: Visual Studio Online, portal web de TFS y Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts).
+Consulte [métodos abreviados de teclado: Visual Studio Online, TFS portal web y Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts).
 
 ## <a name="see-also"></a>Vea también
 
