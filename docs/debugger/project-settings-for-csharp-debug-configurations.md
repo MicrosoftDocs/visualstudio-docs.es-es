@@ -1,6 +1,6 @@
 ---
-title: Configuración de proyectos para configuraciones de depuración de C# | Microsoft Docs
-ms.custom: ''
+title: Configuración de proyectos para una C# depurar config | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/21/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7152e6ac16c8a15ba6973eb3ac33c373560a0d76
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 6de7bfd547516b227063c0d3143b508bcbd9ddfd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388980"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059277"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Configuración de proyectos para configuraciones de depuración en C#
 

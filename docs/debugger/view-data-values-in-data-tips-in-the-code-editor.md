@@ -1,6 +1,6 @@
 ---
-title: Ver los valores de datos de información sobre datos en el editor de código | Microsoft Docs
-ms.custom: ''
+title: Ver los valores de variable en la información sobre datos | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4156ff8f81e7a011aeff0cf753af60bb3d6cd924
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: c84c6c9049fe11de16267267df86c88851cfcdfe
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621544"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066855"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Ver valores de datos en la información sobre datos en el editor de código
 
