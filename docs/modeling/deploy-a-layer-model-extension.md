@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: feae82f3909be5816e025de21200acda20933d63
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 98697642135627173c5a6f31e90bf1dd1d0caeaf
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874623"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307757"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Implementar una extensión del modelo de capas
 
@@ -49,7 +49,7 @@ Servidores de Team Foundation Server no suelen tengan instalado Visual Studio y,
 
 ### <a name="to-install-your-layer-extension-on-a-team-foundation-server-server"></a>Para instalar la extensión de capas en un servidor de Team Foundation Server
 
-1.  Copia el **.vsix** archivos del equipo de desarrollo en el equipo de Team Foundation Server (TFS).
+1.  Copia el. *vsix* archivos del equipo de desarrollo en el equipo de Team Foundation Server (TFS).
 
      Coloque el archivo VSIX en una de las siguientes ubicaciones:
 
