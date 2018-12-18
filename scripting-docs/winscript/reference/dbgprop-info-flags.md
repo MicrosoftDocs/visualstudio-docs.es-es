@@ -1,11 +1,11 @@
 ---
-title: DBGPROP_INFO_FLAGS | Documentos de Microsoft
-ms.custom: 
+title: DBGPROP_INFO_FLAGS | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - DBGPROP_INFO_FLAGS
@@ -16,15 +16,16 @@ f1_keywords:
 helpviewer_keywords:
 - DBGPROP_INFO_FLAGS
 ms.assetid: e9450a21-a802-4c3e-8b3d-8e202f555de1
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9821cde6c159712ff44438b74eea0f8e01247155
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 377815adc7751841e2a2a3bb2f4dc8b51beecdea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941287"
 ---
 # <a name="dbgpropinfoflags"></a>DBGPROP_INFO_FLAGS
 Se utiliza para especificar `DebugPropertyInfo` campos  
@@ -60,10 +61,10 @@ enum {
  Inicializa el `dwAttrib` campo.  
   
  DBGPROP_INFO_DEBUGPROP  
- Inicializa el `pDebugProp` campo que contenga un `IDebugProperty` interfaz.  
+ Inicializa el `pDebugProp` campo que contiene un `IDebugProperty` interfaz.  
   
  DBGPROP_INFO_AUTOEXPAND  
- Especifica que el campo de valor debe contener el valor auto y ampliado, si está disponible para este tipo de objeto.  
+ Especifica que el campo de valor debe contener el valor expandido automática, si está disponible para este tipo de objeto.  
   
 ## <a name="see-also"></a>Vea también  
  [DebugPropertyInfo (estructura)](../../winscript/reference/debugpropertyinfo-structure.md)   

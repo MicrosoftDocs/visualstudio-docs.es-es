@@ -1,6 +1,7 @@
 ---
 title: 'CA1065: No producir excepciones en ubicaciones inesperadas'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 477286e437a901d15dd7a13a6bc1d9f7634b3b73
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4999770367ad7b170398333cf7c7cf2cb9d1c407
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546699"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: No producir excepciones en ubicaciones inesperadas
 
@@ -36,7 +38,7 @@ Un método que no se espera que produzca excepciones inicia una excepción.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Métodos que no se esperan que produzca excepciones se pueden clasificar como sigue:
+Los métodos que no se esperan que las excepciones se pueden clasificar como sigue:
 
 - Métodos Get de propiedad
 
@@ -62,11 +64,11 @@ Las secciones siguientes tratan estos tipos de método.
 
 ### <a name="property-get-methods"></a>Métodos Get de propiedad
 
-Las propiedades son campos básicamente inteligentes. Por lo tanto, deben comportarse como un campo tanto como sea posible. Campos no producen excepciones y usted tampoco debería propiedades. Si tiene una propiedad que se produce una excepción, considere la posibilidad de hacer que un método.
+Las propiedades son campos básicamente inteligentes. Por lo tanto, deben comportarse como un campo tanto como sea posible. Los campos no producen excepciones ni ustedes tampoco deberían propiedades. Si tiene una propiedad que se produce una excepción, considere la posibilidad de convertirla en un método.
 
-Las excepciones siguientes se pueden iniciar desde un método get de propiedad:
+Las siguientes excepciones se pueden iniciar desde un método get de propiedad:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> y todos los derivados (incluidos los <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> y todos los derivados (incluido <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
 - <xref:System.NotSupportedException?displayProperty=fullName> y todos los derivados
 
@@ -76,11 +78,11 @@ Las excepciones siguientes se pueden iniciar desde un método get de propiedad:
 
 ### <a name="event-accessor-methods"></a>Métodos de descriptor de acceso de eventos
 
-Descriptores de acceso de eventos deberían ser operaciones simples que no producen excepciones. Un evento no debería iniciar una excepción al intentar agregar o quitar un controlador de eventos.
+Los descriptores de acceso de eventos deberían ser operaciones simples que no producen excepciones. Un evento no debería producir una excepción al intentar agregar o quitar un controlador de eventos.
 
-Un descriptor de acceso de evento pueden producir las excepciones siguientes:
+Las siguientes excepciones se pueden iniciar desde un descriptor de acceso de eventos:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> y todos los derivados (incluidos los <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> y todos los derivados (incluido <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
 - <xref:System.NotSupportedException?displayProperty=fullName> y todos los derivados
 
@@ -88,61 +90,61 @@ Un descriptor de acceso de evento pueden producir las excepciones siguientes:
 
 ### <a name="equals-methods"></a>Es igual a métodos
 
-El siguiente **es igual a** métodos no deben producir excepciones:
+La siguiente **es igual a** métodos no deberían producir excepciones:
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 
 - <xref:System.IEquatable%601.Equals%2A>
 
-Un **es igual a** método debe devolver `true` o `false` en lugar de producir una excepción. Por ejemplo, si es igual a se pasa dos tipos no coincidentes debería devolver simplemente `false` en lugar de producir una <xref:System.ArgumentException>.
+Un **es igual a** método debe devolver `true` o `false` en lugar de producir una excepción. Por ejemplo, si no se pasa es igual a dos tipos no coincidentes debe simplemente devolver `false` en lugar de producir una <xref:System.ArgumentException>.
 
 ### <a name="gethashcode-methods"></a>Métodos GetHashCode
 
-El siguiente **GetHashCode** métodos normalmente no deben producir excepciones:
+La siguiente **GetHashCode** métodos normalmente no deberían producir excepciones:
 
 - <xref:System.Object.GetHashCode%2A>
 
 - <xref:System.Collections.IEqualityComparer.GetHashCode%2A>
 
-**GetHashCode** siempre debe devolver un valor. En caso contrario, pueden perderse elementos de la tabla hash.
+**GetHashCode** siempre debe devolver un valor. En caso contrario, puede perder los elementos de la tabla hash.
 
-Las versiones de **GetHashCode** que toman un argumento puede producir un <xref:System.ArgumentException>. Sin embargo, **Object.GetHashCode** jamás deberá producir una excepción.
+Las versiones de **GetHashCode** que toman un argumento se puede producir un <xref:System.ArgumentException>. Sin embargo, **Object.GetHashCode** nunca debe producir una excepción.
 
 ### <a name="tostring-methods"></a>Métodos ToString
 
-El depurador utiliza <xref:System.Object.ToString%2A?displayProperty=fullName> para ayudar a mostrar información acerca de los objetos en formato de cadena. Por lo tanto, **ToString** no debería cambiar el estado de un objeto y no debe producir excepciones.
+El depurador utiliza <xref:System.Object.ToString%2A?displayProperty=fullName> para ayudar a mostrar información acerca de los objetos en formato de cadena. Por lo tanto, **ToString** no debe cambiar el estado de un objeto, y no debería producir excepciones.
 
 ### <a name="static-constructors"></a>Constructores estáticos
 
-Producir excepciones de un constructor estático hace que el tipo no puedan usarse en el dominio de aplicación actual. Debe tener una buena razón (por ejemplo, un problema de seguridad) para producir una excepción desde un constructor estático.
+Iniciar excepciones desde un constructor estático, hace que el tipo que se puede usar en el dominio de aplicación actual. Debe tener una buena razón (por ejemplo, un problema de seguridad) para producir una excepción desde un constructor estático.
 
 ### <a name="finalizers"></a>Finalizadores
 
-Producir una excepción de un finalizador hace que el CLR debe generar un error rápido, que destruye el proceso. Por lo tanto, producir excepciones en un finalizador debe evitarse siempre.
+Producir una excepción de un finalizador, hace que CLR error inmediato, que anula el proceso. Por lo tanto, generar excepciones en un finalizador debe evitarse siempre.
 
 ### <a name="dispose-methods"></a>Métodos Dispose
 
-Un <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> método no debería iniciar una excepción. Dispose se llama a menudo como parte de la lógica de limpieza en un `finally` cláusula. Por lo tanto, iniciar explícitamente una excepción desde dispone obliga al usuario a agregar el control de excepciones dentro del `finally` cláusula.
+Un <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> método no debería producir una excepción. A menudo se llame a Dispose como parte de la lógica de limpieza en un `finally` cláusula. Por lo tanto, iniciar explícitamente una excepción de Dispose obliga al usuario para agregar el control de excepciones dentro del `finally` cláusula.
 
-El **Dispose (false)** ruta de acceso del código nunca debe producir excepciones, porque casi siempre se llama a Dispose de un finalizador.
+El **Dispose (false)** ruta de acceso del código nunca debería producir excepciones porque casi siempre se llama a Dispose de un finalizador.
 
 ### <a name="equality-operators--"></a>Operadores de igualdad (==,! =)
 
-Como los métodos Equals, operadores de igualdad deberían devolver `true` o `false`y no deben producir excepciones.
+Como los métodos Equals, los operadores de igualdad deben devolver `true` o `false`y no debería producir excepciones.
 
 ### <a name="implicit-cast-operators"></a>Operadores de conversión implícita
 
-Dado que el usuario a menudo es consciente de que se ha llamado a un operador de conversión implícita, se esperaba una excepción producida por el operador de conversión implícita. Por lo tanto, no se lanzará ninguna excepción de operadores de conversión implícita.
+Dado que el usuario suele ser consciente de que se ha llamado un operador de conversión implícita, una excepción producida por el operador de conversión implícita es inesperada. Por lo tanto, no debe producir ninguna excepción de los operadores de conversión implícita.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Para captadores de propiedades, ya sea cambie la lógica para que ya no tiene que producir una excepción o cambiar la propiedad en un método.
+Para los captadores de propiedades, o bien cambie la lógica para que ya no tiene que producir una excepción, o cambiar la propiedad en un método.
 
-Para los demás tipos de método indicadas anteriormente, cambie la lógica para que ya no se debe producir una excepción.
+Para los demás tipos de método mencionados anteriormente, cambie la lógica para que ya no debe producir una excepción.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
 
-Si se produjo la infracción por una declaración de excepción en lugar de una excepción, resulta seguro suprimir una advertencia de esta regla.
+Si se produjo la infracción por una declaración de excepción en lugar de una excepción, es seguro suprimir una advertencia de esta regla.
 
 ## <a name="related-rules"></a>Reglas relacionadas
 

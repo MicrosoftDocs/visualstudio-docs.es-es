@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8234117d7965c4f2e471855d39ed0c3cee1f88c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9f3a496eb0212863f2ed08479216ac6ca546009f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891510"
 ---
 # <a name="idebugpointerobjectsetbytes"></a>IDebugPointerObject::SetBytes
-Establece el valor al que apunta de una serie de bytes consecutivos.  
+Establece el valor señalado por una serie de bytes consecutivos.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -46,13 +47,13 @@ int SetBytes(
   
 #### <a name="parameters"></a>Parámetros  
  `dwStart`  
- [in] Un desplazamiento, en bytes, desde el principio del objeto indicado.  
+ [in] Posición de desplazamiento, en bytes, desde el principio del objeto que apunta.  
   
  `dwCount`  
- [in] El número de bytes que se va a establecer.  
+ [in] El número de bytes para establecer.  
   
  `pBytes`  
- [in] Una matriz de bytes que representa el nuevo valor. Este valor se almacena en el objeto, empezando en el desplazamiento dado.  
+ [in] Una matriz de bytes que representa el nuevo valor. Este valor se almacena en el objeto, comenzando en el desplazamiento dado.  
   
  `pdwBytes`  
  [out] Devuelve que el número de bytes establecido realmente.  
@@ -61,7 +62,7 @@ int SetBytes(
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método se utiliza si el puntero tal como está representado por este [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) apunta a un tipo primitivo o una matriz de tipos primitivos (es decir, una matriz que puede representarse mediante una secuencia de bytes simple) simple. Esto `IDebugPointerObject` objeto no puede ser una referencia nula (debe apuntar a una dirección de memoria).  
+ Este método se utiliza si el puntero, tal como está representada por este [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) apunta a un tipo primitivo o una matriz de tipos primitivos (es decir, una matriz que puede representarse mediante una sencilla secuencia de bytes). Esto `IDebugPointerObject` objeto no puede ser una referencia nula (debe apuntar a una dirección de memoria).  
   
 ## <a name="see-also"></a>Vea también  
  [GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)   

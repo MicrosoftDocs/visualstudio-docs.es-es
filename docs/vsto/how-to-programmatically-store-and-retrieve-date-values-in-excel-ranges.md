@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: almacenar mediante programación y recuperar valores de fecha en rangos de Excel | Documentos de Microsoft'
+title: 'Cómo: almacenar y recuperar valores de fecha en rangos de Excel mediante programación'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,27 +22,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b67bc45218aa6fb537516f426f1ac3b25fad698c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f1abe0e797a65886f595913f8e6495ec084b7e2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674851"
 ---
-# <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Cómo: Almacenar y recuperar valores de fecha en rangos de Excel mediante programación
-  Puede almacenar y recuperar valores en un <xref:Microsoft.Office.Tools.Excel.NamedRange> control o un objeto de rango de Excel nativo.  
+# <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Cómo: almacenar y recuperar valores de fecha en rangos de Excel mediante programación
+  Puede almacenar y recuperar los valores en un <xref:Microsoft.Office.Tools.Excel.NamedRange> control o un objeto nativo de rango de Excel.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- Si almacena un valor de fecha que se encuentra en o después de 1/1/1900 en un intervalo con herramientas de desarrollo de Office en Visual Studio, se almacena en formato de automatización OLE (OA). Debe utilizar el <xref:System.DateTime.FromOADate%2A> método para recuperar el valor de fechas de automatización OLE (OA). Si la fecha es anterior a 1/1/1900, se almacena como una cadena.  
+ Si almacena un valor de fecha que se encuentre en o después de 1/1/1900 en un rango con herramientas de desarrollo de Office en Visual Studio, se almacena en formato de automatización OLE (OA). Debe usar el <xref:System.DateTime.FromOADate%2A> método para recuperar el valor de fechas de automatización OLE (OA). Si la fecha es anterior a 1/1/1900, se almacena como una cadena.  
   
 > [!NOTE]  
 >  Las fechas de Excel se diferencian de las fechas de automatización OLE para los dos primeros meses de 1900. Hay también diferencias si el **sistema de fechas de 1904** opción está activada. Los ejemplos de código siguientes no tratan estas diferencias.  
   
-## <a name="using-a-namedrange-control"></a>Uso de un Control NamedRange  
+## <a name="use-a-namedrange-control"></a>Usar un control NamedRange  
   
--   En este ejemplo es para las personalizaciones de nivel de documento. El siguiente código se debe colocar en una clase sheet, no en la `ThisWorkbook` clase.  
+-   En este ejemplo es para las personalizaciones de nivel de documento. El siguiente código debe colocarse en una clase sheet, no en el `ThisWorkbook` clase.  
   
-#### <a name="to-store-a-date-value-in-a-named-range"></a>Para almacenar un valor de fecha en un rango con nombre  
+### <a name="to-store-a-date-value-in-a-named-range"></a>Para almacenar un valor de fecha en un rango con nombre  
   
 1.  Crear un <xref:Microsoft.Office.Tools.Excel.NamedRange> control en la celda **A1**.  
   
@@ -54,16 +55,16 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreExcelAutomation#51](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#51)]
      [!code-vb[Trin_VstcoreExcelAutomation#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#51)]  
   
-#### <a name="to-retrieve-a-date-value-from-a-named-range"></a>Para recuperar un valor de fecha de un rango con nombre  
+### <a name="to-retrieve-a-date-value-from-a-named-range"></a>Para recuperar un valor de fecha de un rango con nombre  
   
-1.  Recuperar el valor de fecha de `NamedRange1`.  
+1.  Recupere el valor de fecha de `NamedRange1`.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#52)]
      [!code-vb[Trin_VstcoreExcelAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#52)]  
   
-## <a name="using-native-excel-ranges"></a>Uso de rangos de Excel nativo  
+## <a name="use-native-excel-ranges"></a>Utilice los rangos de Excel nativos  
   
-#### <a name="to-store-a-date-value-in-a-native-excel-range-object"></a>Para almacenar un valor de fecha en un objeto de rango de Excel nativo  
+### <a name="to-store-a-date-value-in-a-native-excel-range-object"></a>Para almacenar un valor de fecha en un objeto nativo de rango de Excel  
   
 1.  Crear un <xref:Microsoft.Office.Interop.Excel.Range> que representa la celda **A1**.  
   
@@ -75,9 +76,9 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#26](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#26)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#26](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#26)]  
   
-#### <a name="to-retrieve-a-date-value-from-a-native-excel-range-object"></a>Para recuperar un valor de fecha de un objeto de rango de Excel nativo  
+### <a name="to-retrieve-a-date-value-from-a-native-excel-range-object"></a>Para recuperar un valor de fecha de un objeto nativo de rango de Excel  
   
-1.  Recuperar el valor de fecha de `rng`.  
+1.  Recupere el valor de fecha de `rng`.  
   
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#27)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#27)]  
@@ -85,7 +86,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>Vea también  
  [Trabajar con rangos](../vsto/working-with-ranges.md)   
  [Información general sobre el modelo de objetos de Excel](../vsto/excel-object-model-overview.md)   
- [NamedRange (Control)](../vsto/namedrange-control.md)   
+ [NamedRange (control)](../vsto/namedrange-control.md)   
  [Cómo: hacer referencia mediante programación a los rangos de hoja de cálculo en el código](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
  [Cómo: agregar controles NamedRange a hojas de cálculo](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)  

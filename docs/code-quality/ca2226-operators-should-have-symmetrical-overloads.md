@@ -1,6 +1,7 @@
 ---
 title: 'CA2226: Los operadores deben tener sobrecargar simétricas'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,13 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 98f5653d326c257e46becd2d7f8ad1091dfcf0c7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8c872df976379a9bd20f28ceb9f4bf3eb376c8e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900467"
 ---
 # <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226: Los operadores deben tener sobrecargar simétricas
+
 |||
 |-|-|
 |TypeName|OperatorsShouldHaveSymmetricalOverloads|
@@ -33,15 +36,15 @@ ms.lasthandoff: 04/19/2018
  Un tipo implementa el operador de igualdad o de desigualdad y no implementa el operador opuesto.
 
 ## <a name="rule-description"></a>Descripción de la regla
- No hay ningún caso donde es aplicable a las instancias de un tipo de igualdad o desigualdad y no está definido el operador opuesto. Tipos normalmente implementan el operador de desigualdad devolviendo el valor negado del operador de igualdad.
+ No hay ningún caso donde no es aplicable a las instancias de un tipo de igualdad o desigualdad y no está definido el operador opuesto. Tipos normalmente implementan el operador de desigualdad devolviendo el valor negado del operador de igualdad.
 
  El compilador de C# emite un error para las infracciones de esta regla.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, implemente la igualdad y los operadores de desigualdad o quitar el elemento que está presente.
+ Para corregir una infracción de esta regla, implemente tanto la igualdad y desigualdad o quite el que está presente.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- No suprima las advertencias de esta regla. Su tipo no funcionará de manera coherente con el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ No suprima las advertencias de esta regla. El tipo no funcionará de forma que sea coherente con .NET Framework.
 
 ## <a name="related-rules"></a>Reglas relacionadas
  [CA1046: No sobrecargar el operador de igualdad en los tipos de referencia](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)

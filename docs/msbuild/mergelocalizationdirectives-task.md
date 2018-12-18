@@ -20,27 +20,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cb696aae19675a12aeb9aa6f2b76c8e6b710ea1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2d0245765c1b6aa01d6762848463997ad2f13ba3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936679"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives (Tarea)
 La tarea <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> combina los atributos y los comentarios de localización de uno o varios archivos de formato binario [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] en un solo archivo para todo el ensamblado.  
   
 ## <a name="task-parameters"></a>Parámetros de tareas  
   
-|Parámetro|Description|  
-|---------------|-----------------|  
-|`GeneratedLocalizationFiles`|Parámetro obligatorio de tipo **ITaskItem[]**.<br /><br /> Especifica la lista de los archivos de directivas de localización para los archivos individuales en formato binario de [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)].|  
-|`OutputFile`|Parámetro de salida obligatorio de tipo **String**.<br /><br /> Especifica la ruta de acceso de salida del ensamblado de directivas de localización compilado.|  
+| Parámetro | Descripción |
+|------------------------------| - |
+| `GeneratedLocalizationFiles` | Parámetro obligatorio de tipo **ITaskItem[]**.<br /><br /> Especifica la lista de los archivos de directivas de localización para los archivos individuales en formato binario de [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. |
+| `OutputFile` | Parámetro de salida obligatorio de tipo **String**.<br /><br /> Especifica la ruta de acceso de salida del ensamblado de directivas de localización compilado. |
   
 ## <a name="remarks"></a>Comentarios  
- Puede agregar atributos y comentarios de localización al contenido de [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)]. Con la compatibilidad para la localización incluida en [!INCLUDE[TLA#tla_wpf](../msbuild/includes/tlasharptla_wpf_md.md)], puede quitar los atributos y los comentarios de localización y colocarlos en un archivo .loc que sea independiente del ensamblado generado. Puede hacerlo mediante el atributo **LocalizationPropertyStorage**. Para obtener más información sobre atributos y comentarios de localización, y **LocalizationPropertyStorage**, consulte [Atributos y comentarios sobre localización](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).  
+ Puede agregar atributos y comentarios de localización al contenido de [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)]. Con la compatibilidad para la localización incluida en [!INCLUDE[TLA#tla_wpf](../msbuild/includes/tlasharptla_wpf_md.md)], puede quitar los atributos y los comentarios de localización y colocarlos en un archivo *.loc* que sea independiente del ensamblado generado. Puede hacerlo mediante el atributo **LocalizationPropertyStorage**. Para obtener más información sobre atributos y comentarios de localización y **LocalizationPropertyStorage**, vea [Atributos y comentarios sobre localización](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).  
   
 ## <a name="example"></a>Ejemplo  
- En el siguiente ejemplo se combinan los comentarios de localización de varios archivos [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] de formato binario en un solo archivo .loc.  
+ En el siguiente ejemplo se combinan los comentarios de localización de varios archivos [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] de formato binario en un solo archivo *.loc*.  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -56,8 +57,8 @@ La tarea <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> combin
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Referencia de MSBuild para WPF](../msbuild/wpf-msbuild-reference.md)   
- [Referencia de tareas](../msbuild/wpf-msbuild-task-reference.md)   
- [Referencia de MSBuild](../msbuild/msbuild-reference.md)   
- [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
- [Compilar una aplicación de WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+[Referencia de MSBuild para WPF](../msbuild/wpf-msbuild-reference.md)  
+[Referencia de tareas de MSBuild para WPF](../msbuild/wpf-msbuild-task-reference.md)  
+[Referencia de MSBuild](../msbuild/msbuild-reference.md)  
+[Referencia de tareas de MSBuild](../msbuild/msbuild-task-reference.md)  
+[Compilar una aplicación de WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  

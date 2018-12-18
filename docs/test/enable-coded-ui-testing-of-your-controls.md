@@ -1,6 +1,7 @@
 ---
-title: Habilitar pruebas automatizadas de IU en los controles en Visual Studio | Microsoft Docs
+title: Habilitar pruebas de IU codificadas en los controles
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,32 +9,35 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7c3906b84995716072d4df0a1b518930a521cdb6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b9f9256407f854e5e7eefbca0cdd767679b9c88c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895956"
 ---
-# <a name="enable-coded-ui-testing-of-your-controls"></a>Habilitar pruebas automatizadas de IU en los controles
+# <a name="enable-coded-ui-testing-of-your-controls"></a>Habilitación de pruebas automatizadas de IU en los controles
 
 Para un control más estable, implemente compatibilidad con el marco de pruebas automatizadas de IU. Se pueden agregar niveles de compatibilidad de forma incremental. Para comenzar, admita la grabación, la reproducción y la validación de propiedades. A continuación, compile en base a eso para habilitar el generador de pruebas automatizadas de IU y que se reconozcan las propiedades personalizadas del control. Proporcione clases personalizadas para tener acceso a esas propiedades desde el código generado. También se puede ayudar al generador de pruebas de IU codificadas a capturar acciones de una manera que es próxima a la intención de la acción que se está registrando.
 
-![CUIT&#95;Full](../test/media/cuit_full.png "CUIT_Full")
+![CUIT&#95;completo](../test/media/cuit_full.png)
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a>Admitir la grabación, la reproducción y la validación de propiedades al implementar la accesibilidad
 
 El generador de pruebas de IU codificadas captura información acerca de los controles que encuentra durante una grabación y después genera código para reproducir esa sesión. Si el control no admite accesibilidad, el generador de pruebas automatizadas de IU capturará acciones (como clics del mouse) mediante las coordenadas de pantalla. Cuando la prueba se reproduce, el código generado emite esas acciones en las mismas coordenadas de la pantalla. Si el control aparece en un lugar diferente de la pantalla cuando se reproduce la prueba, el código generado no podrá realizar la acción. Al no implementar la accesibilidad para el control, es posible que vea errores si la prueba se reproduce en otras configuraciones de pantalla, en entornos distintos, o cuando cambia el diseño de la interfaz de usuario.
 
- ![CUIT&#95;RecordNoSupport](../test/media/cuit_recordnosupport.png "CUIT_RecordNoSupport")
+ ![CUIT&#95;RegistroSinSoporte](../test/media/cuit_recordnosupport.png)
 
  Si implementa accesibilidad, el generador de pruebas automatizadas de IU la usará para capturar información sobre el control cuando registre una prueba. A continuación, al ejecutar la prueba, el código generado volverá a reproducir esos eventos en el control, aunque esté en alguna otra parte en la interfaz de usuario. Los autores de las pruebas también pueden crear aserciones usando las propiedades básicas del control.
 
- ![CUIT&#95;Record](../test/media/cuit_record.png "CUIT_Record")
+ ![CUIT&#95;Registro](../test/media/cuit_record.png)
 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>Para admitir la grabación y reproducción, la validación de propiedades y la navegación de un control de Windows Forms
  Implemente la accesibilidad para el control como se indica en el procedimiento siguiente, que se explica en detalle en <xref:System.Windows.Forms.AccessibleObject>.
 
- ![CUIT&#95;Accessible](../test/media/cuit_accessible.png "CUIT_Accessible")
+ ![CUIT&#95;Accesible](../test/media/cuit_accessible.png)
 
 1.  Implemente una clase que se derive de <xref:System.Windows.Forms.Control.ControlAccessibleObject> y reemplace la propiedad <xref:System.Windows.Forms.Control.AccessibilityObject%2A> para devolver un objeto de la clase.
 
@@ -67,17 +71,17 @@ El generador de pruebas de IU codificadas captura información acerca de los con
 4.  Reemplace las propiedades y métodos <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> y <xref:System.Windows.Forms.AccessibleObject.Select%2A> del objeto de accesibilidad del control secundario.
 
 > [!NOTE]
-> Este tema comienza con el ejemplo de accesibilidad en <xref:System.Windows.Forms.AccessibleObject> y, a continuación, se basa en este para compilar los procedimientos restantes. Si desea crear una versión operativa del ejemplo de accesibilidad, cree una aplicación de consola y reemplace el código en Program.cs con el código de ejemplo. Agregue referencias a Accesibilidad, System.Drawing y System.Windows.Forms. Cambie **Incrustar tipos de interoperabilidad** para la Accesibilidad a **False** para eliminar una advertencia de compilación. Puede cambiar el tipo de salida del proyecto de **Aplicación de consola** a **Aplicación Windows** de modo que no aparezca una ventana de consola al ejecutar la aplicación.
+> Este tema comienza con el ejemplo de accesibilidad en <xref:System.Windows.Forms.AccessibleObject> y, a continuación, se basa en este para compilar los procedimientos restantes. Si desea crear una versión operativa del ejemplo de accesibilidad, cree una aplicación de consola y reemplace el código en *Program.cs* por el código de ejemplo. Agregue referencias a Accesibilidad, System.Drawing y System.Windows.Forms. Cambie **Incrustar tipos de interoperabilidad** para la Accesibilidad a **False** para eliminar una advertencia de compilación. Puede cambiar el tipo de salida del proyecto de **Aplicación de consola** a **Aplicación Windows** de modo que no aparezca una ventana de consola al ejecutar la aplicación.
 
 ## <a name="support-custom-property-validation-by-implementing-a-property-provider"></a>Admitir la validación de propiedades personalizada al implementar un proveedor de propiedades
 
 Una vez que haya implementado la compatibilidad básica para grabar, reproducir y validar propiedades, puede poner las propiedades personalizadas del control a disposición de las pruebas automatizadas de IU mediante la implementación de un complemento <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>. Por ejemplo, el procedimiento siguiente crea un proveedor de propiedades que permite que las pruebas automatizadas de IU tengan acceso a la propiedad State de los controles secundarios CurveLegend del control chart:
 
- ![CUIT&#95;CustomProps](../test/media/cuit_customprops.png "CUIT_CustomProps")
+ ![CUIT&#95;PropiedadesPersonalizadas](../test/media/cuit_customprops.png)
 
 ### <a name="to-support-custom-property-validation"></a>Para admitir la validación de propiedades personalizada
 
-![CUIT&#95;Props](../test/media/cuit_props.png "CUIT_Props")
+![CUIT&#95;Propiedades](../test/media/cuit_props.png)
 
 1. Reemplace la propiedad <xref:System.Windows.Forms.AccessibleObject.Description%2A> del objeto accesible Curve Legend para pasar valores de propiedades enriquecidos en la cadena de descripción. Separe los distintos valores con punto y coma (;).
 
@@ -132,7 +136,7 @@ Una vez que haya implementado la compatibilidad básica para grabar, reproducir 
 
 1. Reemplace los métodos y propiedades abstractos restantes de <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>.
 
-1. Compile los binarios y cópielos en **%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages**.
+1. Compile los binarios y cópielos en *%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
 
 > [!NOTE]
 > Este paquete de extensión se aplica a cualquier control de tipo "Text". Si está probando varios controles del mismo tipo, tendrá que hacerlo por separado de modo que pueda administrar los paquetes de extensión que se implementan al registrar las pruebas.
@@ -145,7 +149,7 @@ Si ha implementado un proveedor de propiedades para proporcionar acceso a las pr
 
 ### <a name="to-add-a-specialized-class-to-access-your-control"></a>Para agregar una clase especializada para obtener acceso al control
 
-![CUIT&#95;CodeGen](../test/media/cuit_codegen.png "CUIT_CodeGen")
+![CUIT&#95;GeneraciónCódigo](../test/media/cuit_codegen.png)
 
 1. Implemente una clase que se derive de <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> y agregue el tipo del control a la colección de propiedades de búsqueda en el constructor.
 
@@ -161,7 +165,7 @@ Si ha implementado un proveedor de propiedades para proporcionar acceso a las pr
 
 ### <a name="to-support-intent-aware-actions"></a>Para admitir acciones intencionales
 
-![CUIT&#95;Actions](../test/media/cuit_actions.png "CUIT_Actions")
+![CUIT&#95;Acciones](../test/media/cuit_actions.png)
 
 1. Implemente una clase de filtro de acción que se derive de <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>, reemplazando las propiedades <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A> y <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A>.
 
@@ -169,7 +173,7 @@ Si ha implementado un proveedor de propiedades para proporcionar acceso a las pr
 
 1. Agregue el filtro de acción al método <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> del paquete de extensión.
 
-1. Compile los binarios y cópielos en %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.
+1. Compile los binarios y cópielos en *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
 
 > [!NOTE]
 > El filtro de acción no depende de la implementación de accesibilidad ni del proveedor de propiedades.
@@ -180,7 +184,7 @@ El proveedor de propiedades y el filtro de acción se implementan en un paquete 
 
 ### <a name="to-debug-your-property-provider-or-action-filter"></a>Para depurar el proveedor de propiedades o filtro de acción
 
-1.  Compile la versión de depuración del paquete de extensión y copie los archivos .dll y .pdb en %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.
+1.  Compile la versión de depuración del paquete de extensión y copie los archivos *.dll* y *.pdb* en *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
 
 2.  Ejecute la aplicación (no en el depurador).
 
@@ -197,4 +201,4 @@ El proveedor de propiedades y el filtro de acción se implementan en un paquete 
 ## <a name="see-also"></a>Vea también
 
 - <xref:System.Windows.Forms.AccessibleObject>
-- [Usar Automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
+- [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)

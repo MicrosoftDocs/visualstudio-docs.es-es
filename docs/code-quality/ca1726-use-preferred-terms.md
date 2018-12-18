@@ -1,6 +1,7 @@
 ---
 title: 'CA1726: Utilizar términos preferidos'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -14,58 +15,62 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41cb61db3916bdb5879931de28d6b87ccdde4853
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c81bd543a6695adcea37db5ab8570ff7749c0160
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551459"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Utilizar términos preferidos
+
 |||
 |-|-|
 |TypeName|UsePreferredTerms|
 |Identificador de comprobación|CA1726|
 |Categoría|Microsoft.Naming|
-|Cambio problemático|Problemático: cuando se desencadena en ensamblados<br /><br /> Poco problemático: cuando se desencadena en parámetros de tipo|
+|Cambio problemático|Problemático: cuando se desencadena en ensamblados<br /><br /> No problemático: cuando se desencadena en los parámetros de tipo|
 
 ## <a name="cause"></a>Motivo
- El nombre de un identificador visible externamente incluye un término para el que existe un término alternativo más apropiado. O bien, el nombre incluye el término Flag o Flags.
+
+El nombre de un identificador visible externamente incluye un término para el que existe un término alternativo más apropiado. O bien, el nombre incluye el término marca o marcas.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Esta regla analiza un identificador en tokens. Cada token único y cada combinación de dos tokens contiguos se comparan con los términos que se integra en la regla y en la sección en desuso de los diccionarios personalizados. La siguiente tabla muestra los términos que se integran en la regla y sus alternativas preferidas.
+
+Esta regla analiza un identificador en tokens. Cada token único y cada combinación de dos tokens contiguos se comparan con los términos que se integra en la regla y en la sección en desuso de los diccionarios personalizados. La siguiente tabla muestra los términos que se integran en la regla y sus alternativas preferidas.
 
 |Término obsoleto|Término preferido|
 |-------------------|--------------------|
-|no es|No van|
-|Cancelado|Cancelado|
-|No se puede|No se puede|
-|ComPlus|EnterpriseServices|
-|Couldnt|CouldNot|
-|Didnt|DidNot|
-|Doesnt|No|
-|No|No|
-|Flag o Flags|No hay ningún término de reemplazo. No utilizar.|
-|no se había|HadNot|
-|No se ha|HasNot|
-|no ha|HaveNot|
-|Índices|Índices|
-|no es|IsNot|
-|Inicio de sesión|Inicio de sesión|
-|Cierre de sesión|Cierre de sesión|
-|Shouldnt|ShouldNot|
-|Inicio de sesión|Inicio de sesión|
-|Firma|Cierre de sesión|
-|Wasnt|WasNot|
-|no|No están|
-|Produce|No|
-|Wouldnt|WouldNot|
-|Puede escribir|Puede escribir|
+|`Arent`|`AreNot`|
+|`Cancelled`|`Canceled`|
+|`Cant`|`Cannot`|
+|`ComPlus`|`EnterpriseServices`|
+|`Couldnt`|`CouldNot`|
+|`Didnt`|`DidNot`|
+|`Doesnt`|`DoesNot`|
+|`Dont`|`DoNot`|
+|`Flag` o `Flags`|No hay ningún término de reemplazo. No utilizar.|
+|`Hadnt`|`HadNot`|
+|`Hasnt`|`HasNot`|
+|`Havent`|`HaveNot`|
+|`Indices`|`Indexes`|
+|`Isnt`|`IsNot`|
+|`LogIn`|`LogOn`|
+|`LogOut`|`LogOff`|
+|`Shouldnt`|`ShouldNot`|
+|`SignOn`|`SignIn`|
+|`SignOff`|`SignOut`|
+|`Wasnt`|`WasNot`|
+|`Werent`|`WereNot`|
+|`Wont`|`WillNot`|
+|`Wouldnt`|`WouldNot`|
+|`Writeable`|`Writable`|
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, reemplace el término por el término alternativo preferido.
+ Para corregir una infracción de esta regla, reemplace el término con el término preferido alternativo.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Suprima las advertencias de esta regla sólo si el nombre del identificador es deliberado y relacionada específicamente con el término original en lugar del término preferido.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ Suprima una advertencia de esta regla solo si el nombre del identificador es intencionado y se relaciona específicamente con el término original en lugar del término preferido.
 
 ## <a name="related-rules"></a>Reglas relacionadas
  [Advertencias sobre nomenclatura](../code-quality/naming-warnings.md)

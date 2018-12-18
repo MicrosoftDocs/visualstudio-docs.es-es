@@ -17,11 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f098b18100bd54e8078ea0c855a1b3e51926b93
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f8973f1536ded24d2fd327aa3eac1ceee795cb54
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262452"
 ---
 # <a name="call-tree-view"></a>Vista Árbol de llamadas
 La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funciones que se recorrieron en la aplicación de la que se generaron perfiles. La raíz del árbol es el punto de entrada a la aplicación o el componente. Cada nodo de función muestra todas las funciones a las que ha llamado, así como los datos de rendimiento de esas llamadas a funciones.  
@@ -34,7 +35,7 @@ La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funcion
   
  La vista Árbol de llamadas se puede personalizar para agregar o quitar columnas. Haga clic con el botón derecho en la **barra de título del nombre de columna** y seleccione **Agregar o quitar columnas**.  
   
- La vista Árbol de llamadas puede configurarse para la reducción de ruido si se limita la cantidad de datos que se presentan. Gracias a la reducción de ruido, los problemas de rendimiento destacan más en la vista. Cuando los problemas de rendimiento son fáciles de distinguir, el análisis resulta más sencillo. Para obtener más información, vea [Cómo: Configurar la reducción de ruido en las vistas de informes](../profiling/how-to-configure-noise-reduction-in-report-views.md).  
+ La vista Árbol de llamadas puede configurarse para la reducción de ruido si se limita la cantidad de datos que se presentan. Gracias a la reducción de ruido, los problemas de rendimiento destacan más en la vista. Cuando los problemas de rendimiento son fáciles de distinguir, el análisis resulta más sencillo. Para más información, vea [Cómo: Configurar la reducción de ruido en las vistas de informes](../profiling/how-to-configure-noise-reduction-in-report-views.md).  
   
 > [!NOTE]
 >  Si la reducción de ruido está configurada para mostrar una advertencia cuando se habilita, se mostrará una barra de información en el informe.  
@@ -51,5 +52,5 @@ La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funcion
   
 ## <a name="see-also"></a>Vea también  
  [Vistas de informes de rendimiento](../profiling/performance-report-views.md)   
- [Introducción a los valores de datos de instrumentación en las herramientas de generación de perfiles](../profiling/understanding-instrumentation-data-values.md)   
- [Introducción a los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)
+ [Introducción a los valores de datos de instrumentación](../profiling/understanding-instrumentation-data-values.md)   
+ [Descripción de los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)

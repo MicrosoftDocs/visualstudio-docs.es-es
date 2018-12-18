@@ -10,13 +10,14 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: bc8ffe0f6d3cdc0cd572c39dedb5f059e63525cb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1bb6779e0e8174dd10f209d9825ffb861d00455d
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235430"
 ---
-# <a name="creating-r-markdown-documents"></a>Crear documentos de R Markdown
+# <a name="create-r-markdown-documents"></a>Crear documentos de R Markdown
 
 [R Markdown](https://rmarkdown.rstudio.com/) es un formato de documento que convierte el análisis en R en documentos, informes, presentaciones y paneles de gran calidad.
 
@@ -34,7 +35,7 @@ Herramientas de R para Visual Studio (RTVS) proporciona una plantilla de element
     install.packages("rmarkdown")
 
     ```
-1. Cree un archivo de R Markdown mediante el comando de menú **Archivo > Nuevo > Archivo** y seleccionando **R > R Markdown** en la lista. En el contexto de un proyecto, haga clic con el botón derecho en el proyecto en el Explorador de soluciones, seleccione **Agregar Markdown de R** (o **Agregar > Nuevo elemento...** y seleccione **R Markdown** en la lista).
+1. Cree un archivo de R Markdown mediante el comando de menú **Archivo** > **Nuevo** > **Archivo** y seleccionando **R** > **R Markdown** en la lista. En el contexto de un proyecto, haga clic con el botón derecho en el proyecto en el Explorador de soluciones, seleccione **Agregar Markdown de R** (o **Agregar** > **Nuevo elemento** y seleccione **R Markdown** en la lista).
 
 1. El contenido predeterminado del archivo nuevo es de la manera siguiente:
 
@@ -64,8 +65,8 @@ Herramientas de R para Visual Studio (RTVS) proporciona una plantilla de element
 
 ## <a name="previews"></a>Vistas previas
 
-En Visual Studio 2017 15.5 y versiones posteriores se proporcionan automáticamente vistas previas dinámicas para R Markdown. Para activar la sincronización automática entre el editor y la vista previa, seleccione **Herramientas de R > Markdown > Sincronización automática** (Ctrl+Mayús+Y). Si no está usando la sincronización automática, puede actualizar la vista previa mediante **Herramientas de R > Markdown > Recargar la vista previa de R Markdown**.
+En Visual Studio 2017 15.5 y versiones posteriores se proporcionan automáticamente vistas previas dinámicas para R Markdown. Para activar la sincronización automática entre el editor y la vista previa, seleccione **Herramientas de R** > **Markdown** > **Sincronización automática** (**Ctrl**+**Mayús**+**Y**). Si no está usando la sincronización automática, puede actualizar la vista previa mediante **Herramientas de R** > **Markdown** > **Recargar la vista previa de R Markdown**.
 
-También puede obtener una vista previa del archivo en formato HTML, PDF y de Microsoft Word si hace clic con el botón derecho en el editor y selecciona uno de los comandos de **Vista previa**. Los mismos comandos también están disponibles en el menú **Herramientas de R > Markdown**. (En versiones anteriores de Visual Studio, estos comandos se encuentran en el menú **Herramientas de R > Publicar**).
+También puede obtener una vista previa del archivo en formato HTML, PDF y de Microsoft Word si hace clic con el botón derecho en el editor y selecciona uno de los comandos de **Vista previa**. Los mismos comandos también están disponibles en el menú **Herramientas de R** > **Markdown**. (En versiones anteriores de Visual Studio, estos comandos se encuentran en el menú **Herramientas de R** > **Publicar**).
 
 ![Vista previa dinámica de R Markdown y otros comandos de menú de vista previa](media/rmarkdown-live-preview.png)

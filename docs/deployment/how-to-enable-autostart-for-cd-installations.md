@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: habilitar AutoStart para instalaciones con CD | Documentos de Microsoft'
+title: 'Cómo: habilitar AutoStart para instalaciones con CD | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,14 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 230f0491993b3804c3147e727900de2647ff7bda
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 97642a499e0415dd6fcd245e379c9f01520b5c53
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151251"
 ---
-# <a name="how-to-enable-autostart-for-cd-installations"></a>Cómo: Habilitar AutoStart para instalaciones con CD
-Al implementar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación por medio de medios extraíbles, como CD-ROM o DVD-ROM, puede habilitar `AutoStart` para que la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se inicie automáticamente cuando se inserta el disco.  
+# <a name="how-to-enable-autostart-for-cd-installations"></a>Cómo: habilitar AutoStart para instalaciones con CD
+Al implementar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación mediante medios extraíbles, como CD-ROM o DVD-ROM, puede habilitar `AutoStart` para que el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se inicia automáticamente cuando se inserta el disco.  
   
  `AutoStart` se puede habilitar en el **publicar** página de la **Diseñador de proyectos**.  
   
@@ -41,10 +42,10 @@ Al implementar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
   
 4.  Haga clic en **implementación**.  
   
-5.  Seleccione el **instalaciones para CD-ROM, se inicia automáticamente el programa de instalación cuando se inserta el CD** casilla de verificación.  
+5.  Seleccione el **instalaciones con CD para, se inicia automáticamente el programa de instalación al CD está insertado** casilla de verificación.  
   
-     Un archivo Autorun.inf se copiarán a la ubicación de publicación cuando se publica la aplicación.  
+     Un *Autorun.inf* archivo se copiará en la ubicación de publicación cuando se publica la aplicación.  
   
 ## <a name="see-also"></a>Vea también  
  [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Cómo: Publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Cómo: publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

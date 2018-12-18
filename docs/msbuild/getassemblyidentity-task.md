@@ -20,19 +20,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b670b8ff3028dc0c9a029d7d00f9fee6f34447c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8762bb1207d7715a14effab7aee2d5d3ba5199b1
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946594"
 ---
-# <a name="getassemblyidentity-task"></a>GetAssemblyIdentity (Tarea)
+# <a name="getassemblyidentity-task"></a>GetAssemblyIdentity (tarea)
 Recupera las identidades de ensamblado de los archivos especificados y genera la información de identidad.  
   
-## <a name="task-parameters"></a>Parámetros de tareas  
- En la siguiente tabla se describen los parámetros de la tarea `GetAssemblyIdentity`.  
+## <a name="task-parameters"></a>Parámetros de la tarea  
+ En la siguiente tabla se describen los parámetros de la tarea `GetAssemblyIdentity` .  
   
-|Parámetro|Description|  
+|Parámetro|Descripción|  
 |---------------|-----------------|  
 |`Assemblies`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene las identidades de ensamblado recuperadas.|  
 |`AssemblyFiles`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica los archivos de los que se recuperarán las identidades.|  
@@ -40,7 +41,7 @@ Recupera las identidades de ensamblado de los archivos especificados y genera la
 ## <a name="remarks"></a>Comentarios  
  Los elementos generados por el parámetro `Assemblies` contienen entradas de metadatos de elementos denominadas `Version`, `PublicKeyToken` y `Culture`.  
   
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension (Clase base)](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se recupera la identidad de los archivos especificados en el elemento `MyAssemblies` y se generan en el elemento `MyAssemblyIdentities`.  

@@ -9,12 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a5b1cc36ba82d0713bc8a03fc8b0760af4f65164
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 984b27b65b251a1e87c72962e488fd0d4036a4d0
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749549"
 ---
 # <a name="domain-path-syntax"></a>Sintaxis de las rutas de dominio
 Las definiciones de DSL usan una sintaxis del estilo de XPath para ubicar elementos específicos en un modelo.
@@ -25,7 +27,7 @@ Las definiciones de DSL usan una sintaxis del estilo de XPath para ubicar elemen
 
  *¡RelationshipName.PropertyName/! Rol*
 
- ![Relación de referencia de CommentReferencesSubjects](../modeling/media/dsl_reference.png "dsl_reference")
+ ![Relación de referencia CommentReferencesSubjects](../modeling/media/dsl_reference.png)
 
  La sintaxis atraviesa el árbol del modelo. Por ejemplo, la relación de dominio **CommentReferencesSubjects** en la ilustración anterior tiene un **asuntos** rol. El segmento de ruta de acceso **/! Subjectt** especifica que la ruta de acceso se ejecuta en los elementos que se tiene accesibles a través de la **asuntos** rol.
 

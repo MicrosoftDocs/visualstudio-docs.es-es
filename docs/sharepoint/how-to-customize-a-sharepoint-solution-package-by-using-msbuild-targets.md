@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: personalizar un paquete de solución de SharePoint mediante el uso de destinos de MSBuild | Documentos de Microsoft'
+title: 'Cómo: personalizar un paquete de solución de SharePoint mediante destinos de MSBuild | Microsoft Docs'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,73 +17,73 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fea1719eb80515a97a1b18336f1653cb535359e9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 434d673c62d0b26efa1559db7d7d98747146fd2d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889695"
 ---
-# <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Cómo: Personalizar un paquete de solución de SharePoint con los destinos de MSBuild
-  Mediante el uso de destinos de MSBuild en un símbolo del sistema, puede personalizar el modo en que Visual Studio crea los archivos de paquete de SharePoint (.wsp). Por ejemplo, puede personalizar las propiedades de MSBuild para cambiar el directorio intermedio del paquete y los grupos de elementos de MSBuild que especifican los archivos enumerados.  
+# <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Cómo: personalizar un paquete de solución de SharePoint mediante destinos de MSBuild
+  Mediante el uso de destinos de MSBuild en un símbolo del sistema, puede personalizar cómo Visual Studio crea los archivos de paquete de SharePoint (*.wsp*). Por ejemplo, puede personalizar las propiedades de MSBuild para cambiar el directorio intermedio del paquete y los grupos de elementos de MSBuild que especifican los archivos enumerados.  
   
-## <a name="customizing-and-running-msbuild-targets"></a>Personalizar y ejecutar destinos de MSBuild  
- Si personaliza el destino BeforeLayout y AfterLayout, puede realizar las tareas antes de diseño del paquete, como agregar, quitar o modificar los archivos que se empaquetarán.  
+## <a name="customize-and-run-msbuild-targets"></a>Personalizar y ejecutar destinos de MSBuild  
+ Si personaliza los destinos BeforeLayout y AfterLayout, puede realizar las tareas antes de diseño del paquete, como agregar, quitar o modificar los archivos que se empaquetan.  
   
 #### <a name="to-customize-the-beforelayout-target"></a>Para personalizar el destino BeforeLayout  
   
-1.  Abra un editor, como el Bloc de notas y, a continuación, agregue el código siguiente.  
+1. Abra un editor, como el Bloc de notas y, a continuación, agregue el código siguiente.  
   
-    ```  
-    <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-      <Target Name="BeforeLayout">  
-        <Message Importance="high" Text="In the BeforeLayout Target"></Message>  
-      </Target>  
-    </Project>  
-    ```  
+   ```xml  
+   <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+     <Target Name="BeforeLayout">  
+       <Message Importance="high" Text="In the BeforeLayout Target"></Message>  
+     </Target>  
+   </Project>  
+   ```  
   
-     En este ejemplo se muestra un mensaje antes del empaquetado de este destino.  
+    En este ejemplo se muestra un mensaje antes del empaquetado de este destino.  
   
-2.  Asignar nombre al archivo **CustomLayout.SharePoint.targets**y, a continuación, guárdelo en la carpeta para el proyecto de SharePoint.  
+2. Nombre del archivo **CustomLayout.SharePoint.targets**y, a continuación, guárdelo en la carpeta del proyecto de SharePoint.  
   
-3.  Abra el proyecto, abra el menú contextual y, a continuación, elija **descargar el proyecto**.  
+3. Abra el proyecto, abra el menú contextual y, a continuación, elija **descargar el proyecto**.  
   
-4.  En **el Explorador de soluciones**, abra el menú contextual para el proyecto y, a continuación, elija **editar***ProjectName***.vbproj** o **editar***ProjectName*** .csproj**.  
+4. En **el Explorador de soluciones**, abra el menú contextual para el proyecto y, a continuación, elija **editar**  *\<NombreDelProyecto > .vbproj* o **editar**  *\<NombreDelProyecto > .csproj*.  
   
-5.  Después de la `Import` línea cerca del final del archivo del proyecto, agregue la siguiente línea.  
+5. Después de la `Import` línea cerca del final del archivo del proyecto, agregue la siguiente línea.  
   
-    ```  
-    <Import Project="CustomLayout.SharePoint.targets" />  
-    ```  
+   ```xml  
+   <Import Project="CustomLayout.SharePoint.targets" />  
+   ```  
   
-6.  Guarde el archivo de proyecto y ciérrelo.  
+6. Guarde el archivo de proyecto y ciérrelo.  
   
-7.  En **el Explorador de soluciones**, abra el menú contextual para el proyecto y, a continuación, elija **recargar el proyecto**.  
+7. En **el Explorador de soluciones**, abra el menú contextual para el proyecto y, a continuación, elija **recargar el proyecto**.  
   
- Al publicar el proyecto, el mensaje aparecerá en la salida antes de que comience el empaquetado.  
+   Al publicar el proyecto, aparecerá el mensaje en la salida antes de que comience el empaquetado.  
   
 #### <a name="to-customize-the-afterlayout-target"></a>Para personalizar el destino AfterLayout  
   
-1.  En la barra de menús, elija **archivo**, **abiertos**, **archivo**.  
+1. En la barra de menús, elija **archivo** > **abierto** > **archivo**.  
   
-2.  En el **archivos abiertos** cuadro de diálogo, desplácese hasta la carpeta del proyecto, elija el archivo CustomLayout.target y, a continuación, elija la **abiertos** botón.  
+2. En el **abrir archivo** cuadro de diálogo, vaya a la carpeta del proyecto, elija el archivo CustomLayout.target y, a continuación, elija el **abierto** botón.  
   
-3.  Justo antes del `</Project>` etiqueta, agregue el código siguiente:  
+3. Justo antes del `</Project>` etiqueta, agregue el código siguiente:  
   
-    ```  
-    <Target Name="AfterLayout">  
-      <Message Importance="high" Text="In the AfterLayout Target"></Message>  
-    </Target>  
-    ```  
+   ```xml  
+   <Target Name="AfterLayout">  
+     <Message Importance="high" Text="In the AfterLayout Target"></Message>  
+   </Target>  
+   ```  
   
-     En este ejemplo se muestra un mensaje después de que se empaqueta este destino.  
+    Este ejemplo muestra un mensaje después de que se empaqueta este destino.  
   
-4.  Guarde y cierre el archivo de destino.  
+4. Guarde y cierre el archivo de destinos.  
   
-5.  Reinicie Visual Studio y, a continuación, abra el proyecto.  
+5. Reinicie Visual Studio y, a continuación, abra el proyecto.  
   
- Al publicar el proyecto, aparece el mensaje de BeforeLayout antes del comienzo de empaquetado, y aparece el mensaje AfterLayout cuando finaliza de empaquetado.  
+   Al publicar el proyecto, aparece el mensaje BeforeLayout antes de empaquetado y, aparece el mensaje de AfterLayout cuando finalice el empaquetado.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Vea también
  [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
   

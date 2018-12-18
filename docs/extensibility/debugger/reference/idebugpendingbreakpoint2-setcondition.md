@@ -16,11 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bc50ad1d763f196944e6246f891c5b4ed3893da
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ebf6e77292543fe9eebd8f08cf2fd25ef48c7e77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886622"
 ---
 # <a name="idebugpendingbreakpoint2setcondition"></a>IDebugPendingBreakpoint2::SetCondition
 Establece o cambia la condición asociada con el punto de interrupción pendiente.  
@@ -41,13 +42,13 @@ int SetCondition(
   
 #### <a name="parameters"></a>Parámetros  
  `bpCondition`  
- [in] A [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) estructura que especifica la condición que se va a establecer.  
+ [in] Un [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) estructura que especifica la condición que se va a establecer.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Cualquier condición que estaba asociado previamente con el punto de interrupción pendiente se pierde. Se llaman a todos los puntos de interrupción enlazados desde este pendiente de punto de interrupción para establecer su estado en el valor especificado en el `bpCondition` parámetro.  
+ Se pierde cualquier condición que asoció anteriormente con el punto de interrupción pendiente. Se llama a todos los puntos de interrupción enlazados desde este punto de interrupción pendiente de para establecer su estado en el valor especificado en el `bpCondition` parámetro.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   

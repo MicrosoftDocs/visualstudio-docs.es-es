@@ -1,11 +1,11 @@
 ---
 title: IDebugDocumentHelper::Init | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugDocumentHelper.Init
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugDocumentHelper::Init
 ms.assetid: 1dd5a01f-0779-4109-8c6c-f16f5a3835bf
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726325"
 ---
 # <a name="idebugdocumenthelperinit"></a>IDebugDocumentHelper::Init
 El `Init` método inicializa una aplicación auxiliar de documento de depuración con un nombre y atributos iniciales.  

@@ -1,9 +1,9 @@
 ---
-title: 'Paso 6: Agregar un problema de resta | Microsoft Docs'
+title: 'Paso 6: Agregar un problema de resta'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
 author: TerryGLee
@@ -11,11 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4660d4b1ad5f4aa5200fb8c64cfa24f6a02d49a2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6960f7ca6db9584af8d43b9cee0d0c6bc810bc7f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747898"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Paso 6: Agregar un problema de resta
 En la sexta parte de este tutorial, agregará un problema de resta y aprenderá a realizar las tareas siguientes:
@@ -26,9 +27,9 @@ En la sexta parte de este tutorial, agregará un problema de resta y aprenderá 
 
 -   Actualizar el método que comprueba las respuestas para que compruebe también el nuevo problema de resta.
 
--   Actualizar el controlador eventos Tick del temporizador para que rellene la respuesta correcta cuando se agote el tiempo.
+-   Actualizar el controlador eventos <xref:System.Windows.Forms.Timer.Tick> del temporizador para que rellene la respuesta correcta cuando se agote el tiempo.
 
-### <a name="to-add-a-subtraction-problem"></a>Para agregar un problema de resta
+## <a name="to-add-a-subtraction-problem"></a>Para agregar un problema de resta
 
 1.  Agregue al formulario dos variables de entero para el problema de resta (sitúelas entre las variables de entero del problema de suma y el temporizador). El código debe tener este aspecto.
 
@@ -44,18 +45,19 @@ En la sexta parte de este tutorial, agregará un problema de resta y aprenderá 
      [!code-vb[VbExpressTutorial3Step5_6#13](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_2.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#13](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_2.cs)]
 
-     Para evitar respuestas negativas en el problema de resta, este código utiliza el método `Next()` de la clase `Random` de forma ligeramente diferente a como lo hace el problema de suma. Al asignar dos valores al método `Next()`, este elige un número aleatorio que sea mayor o igual que el primer valor y menor que el segundo. En el código siguiente se elige un número aleatorio del 1 al 100 y se almacena en la variable minuend.
+     Para evitar respuestas negativas en el problema de resta, este código utiliza el método <xref:System.Random.Next> de la clase <xref:System.Random> de forma ligeramente diferente a como lo hace el problema de suma. Al asignar dos valores al método `Next()`, este elige un número aleatorio que sea mayor o igual que el primer valor y menor que el segundo. En el código siguiente se elige un número aleatorio del 1 al 100 y se almacena en la variable minuend.
 
      [!code-vb[VbExpressTutorial3Step5_6#21](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_3.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#21](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_3.cs)]
 
-     Puede llamar de varias maneras al método `Next()` de la clase `Random`, que denominamos “randomizer” anteriormente en este tutorial. Los métodos a los que se pueden llamar de varias maneras se denominan métodos sobrecargados. Puede utilizar IntelliSense para explorarlos. Fijémonos de nuevo en la información sobre herramientas de la ventana IntelliSense del método `Next()`.
+     Puede llamar de varias maneras al método `Next()` de la clase Random, que denominamos "randomizer" anteriormente en este tutorial. Los métodos a los que se pueden llamar de varias maneras se denominan métodos sobrecargados. Puede utilizar IntelliSense para explorarlos. Fijémonos de nuevo en la información sobre herramientas de la ventana IntelliSense del método `Next()`.
 
-     ![Información sobre herramientas de la ventana de IntelliSense](../ide/media/express_overloads.png "Express_Overloads") Información sobre herramientas de la ventana de IntelliSense
+     ![Información sobre herramientas de la ventana de IntelliSense](../ide/media/express_overloads.png)
+**IntelliSense** window tooltip
 
-     En la información sobre herramientas se muestra **(+ 2 sobrecargas)**, lo que significa que se puede llamar al método `Next()` de dos formas. Las sobrecargas contienen diferentes números o tipos de argumentos, por lo que funcionan de forma ligeramente distinta una de otra. Por ejemplo, es posible que un método tome solamente un argumento entero y que una de sus sobrecargas tome un entero y una cadena. Elija la sobrecarga adecuada en función de lo que desee hacer. Al agregar código al método `StartTheQuiz()`, aparecerá más información en la ventana de IntelliSense en cuanto se escriba `randomizer.Next(`. Para recorrer cíclicamente las sobrecargas, presione las teclas Flecha arriba y Flecha abajo, como se muestra en la ilustración siguiente:
+     En la información sobre herramientas se muestra **(+ 2 sobrecargas)**, lo que significa que se puede llamar al método `Next()` de dos formas. Las sobrecargas contienen diferentes números o tipos de argumentos, por lo que funcionan de forma ligeramente distinta una de otra. Por ejemplo, es posible que un método tome solamente un argumento entero y que una de sus sobrecargas tome un entero y una cadena. Elija la sobrecarga adecuada en función de lo que desee hacer. Al agregar código al método `StartTheQuiz()`, aparecerá más información en la ventana de IntelliSense en cuanto se escriba `randomizer.Next(`. Para recorrer cíclicamente las sobrecargas, presione las teclas **Flecha arriba** y **Flecha abajo**, como se muestra en la ilustración siguiente:
 
-     ![Sobrecarga del método Next&#40;&#41; en IntelliSense](../ide/media/express_nextoverload.png "Express_NextOverload") Sobrecarga del método Next() en IntelliSense
+     ![Sobrecarga del método Next&#40;&#41; en IntelliSense](../ide/media/express_nextoverload.png) Overload for **Next()** method in **IntelliSense**
 
      En este caso, desea elegir la última sobrecarga, ya que puede especificar los valores mínimo y máximo.
 
@@ -75,9 +77,10 @@ En la sexta parte de este tutorial, agregará un problema de resta y aprenderá 
 
      El programa incluye un problema de resta, como se muestra en la ilustración siguiente:
 
-     ![Prueba matemática con un problema de resta](../ide/media/express_addsubtract.png "Express_AddSubtract") Prueba matemática con un problema de resta
+     ![Prueba matemática con un problema de resta](../ide/media/express_addsubtract.png)
+**Math quiz** with subtraction problem
 
-### <a name="to-continue-or-review"></a>Para continuar o revisar
+## <a name="to-continue-or-review"></a>Para continuar o revisar
 
 -   Para ir al siguiente paso del tutorial, vea [Paso 7: Agregar problemas de multiplicación y división](../ide/step-7-add-multiplication-and-division-problems.md).
 

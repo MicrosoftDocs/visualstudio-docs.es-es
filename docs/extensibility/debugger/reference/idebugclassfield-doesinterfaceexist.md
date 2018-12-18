@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7c4a09af356951e7e26b6c9b6b0af5922b9f53b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8a4fc4ca6c95d6e4b1b8367f9820ef742b52bdeb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833557"
 ---
 # <a name="idebugclassfielddoesinterfaceexist"></a>IDebugClassField::DoesInterfaceExist
 Determina si se define una interfaz específica en la clase.  
@@ -40,10 +41,10 @@ int DoesInterfaceExist(
   
 #### <a name="parameters"></a>Parámetros  
  `pszInterfaceName`  
- [in] Una cadena que contiene el nombre de la interfaz para buscar.  
+ [in] Una cadena que contiene el nombre de la interfaz que se busca.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve S_OK, devuelva S_FALSE si la interfaz no existe; en caso contrario, devuelve un código de error.  
+ Si se realiza correctamente, devuelve S_OK, devuelve S_FALSE si no existe la interfaz; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
  En efecto, este método obtiene una enumeración de todas las interfaces y busca en la lista para una interfaz de búsqueda de coincidencias.  

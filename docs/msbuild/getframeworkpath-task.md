@@ -20,19 +20,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03747e9271b9eea71236a4ec3fea373b992f9068
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 25fb85642b7eb6a92c11d3d04d2c44eb6c683cff
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946321"
 ---
-# <a name="getframeworkpath-task"></a>GetFrameworkPath (Tarea)
+# <a name="getframeworkpath-task"></a>GetFrameworkPath (tarea)
 Recupera la ruta de acceso a los ensamblados de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
-## <a name="task-parameters"></a>Parámetros de tareas  
- En la siguiente tabla se describen los parámetros de la tarea `GetFrameworkPath`.  
+## <a name="task-parameters"></a>Parámetros de la tarea  
+ En la siguiente tabla se describen los parámetros de la tarea `GetFrameworkPath` .  
   
-|Parámetro|Description|  
+|Parámetro|Descripción|  
 |---------------|-----------------|  
 |`FrameworkVersion11Path`|Parámetro de salida `String` opcional.<br /><br /> Contiene la ruta de acceso a los ensamblados de la versión 1.1 de Framework, si está presente. De lo contrario, devuelve `null`.|  
 |`FrameworkVersion20Path`|Parámetro de salida `String` opcional.<br /><br /> Contiene la ruta de acceso a los ensamblados de la versión 2.0 de Framework, si está presente. De lo contrario, devuelve `null`.|  
@@ -44,7 +45,7 @@ Recupera la ruta de acceso a los ensamblados de [!INCLUDE[dnprdnshort](../code-q
 ## <a name="remarks"></a>Comentarios  
  Si están instaladas varias versiones de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], esta tarea devuelve la versión en la que puede ejecutarse [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension (Clase base)](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se usa la tarea `GetFrameworkPath` para almacenar la ruta de acceso a [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] en la propiedad `FrameworkPath`.  

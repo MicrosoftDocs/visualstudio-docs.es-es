@@ -1,7 +1,8 @@
 ---
-title: Analizar datos de uso de la CPU (código administrado) | Microsoft Docs
-ms.custom: ''
-ms.date: 12/05/2017
+title: Análisis de datos de uso de la CPU (código administrado)
+description: Medición del rendimiento de aplicación en C# y Visual Basic con la herramienta de diagnóstico de uso de CPU
+ms.custom: mvc
+ms.date: 08/06/2018
 ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
@@ -12,41 +13,43 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: cac26376df6a5e7dc26b55e07fbebe240b1511de
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 35c6fd1ea079dd95367bcb7763787f0b06839ecb
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626876"
 ---
-# <a name="analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Analizar datos de uso de la CPU en Visual Studio (código administrado)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Inicio rápido: Análisis de datos de uso de la CPU en Visual Studio (código administrado)
 
 Visual Studio proporciona muchas características eficaces para ayudarle a analizar problemas de rendimiento de la aplicación. En este tema se proporciona una forma rápida de obtener información sobre las características básicas. A continuación, veremos la herramienta para identificar los cuellos de botella de rendimiento debido al uso elevado de la CPU. Se admiten las herramientas de diagnóstico para el desarrollo de .NET en Visual Studio, incluido ASP.NET, y para el desarrollo nativo de C++.
 
 El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y administrar la sesión de diagnóstico. Si la herramienta **Uso de CPU** que se describe aquí no proporciona los datos que necesita, las [demás herramientas de generación de perfiles](../profiling/profiling-feature-tour.md) proporcionan diferentes tipos de información que pueden resultarle útiles. En muchos casos, el cuello de botella de rendimiento de la aplicación puede no ser debido a la CPU, sino a la memoria, la representación de interfaz de usuario o el tiempo de solicitud de red. El concentrador de diagnósticos le ofrece muchas más opciones para registrar y analizar este tipo de datos.
 
-> [!NOTE]
-> Para .NET Core y ASP.NET Core, la herramienta Uso de CPU actualmente no proporciona resultados precisos con PBD portátiles. Use PBD completos en su lugar.
+Para ejecutar las herramientas de generación de perfiles con el depurador se requiere Windows 8 y versiones posteriores (ventana **Herramientas de diagnóstico**). En Windows 7 y versiones posteriores, puede usar la herramienta de análisis post mortem [Performance Profiler](../profiling/profiling-feature-tour.md).
 
 ## <a name="create-a-project"></a>Crear un proyecto
 
-1. En Visual Studio, seleccione **Archivo > Nuevo proyecto**.
+1. En Visual Studio, seleccione **Archivo** > **Nuevo proyecto**.
 
-2. En **Visual C#** o **Visual Basic**, elija **Escritorio clásico de Windows** y, después, en el panel central, elija **Aplicación de consola (.NET Framework)**.
+2. En **Visual C#** o **Visual Basic**, elija **Escritorio de Windows** y, después, en el panel central, elija **Aplicación de consola (.NET Framework)**.
+
+    Si no ve la plantilla de proyecto **Aplicación de consola**, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** y, luego, seleccione **Modificar**.
 
 3. Escriba un nombre como **MyProfilerApp** y haga clic en **Aceptar**.
 
     Visual Studio crea el proyecto.
 
-2. Abra Program.cs y reemplace todo el código por el código siguiente:
+2. Abra *Program.cs* y reemplace todo el código por el código siguiente:
 
-    ```cs
+    ```csharp
     using System;
     using System.Threading;
     public class ServerClass
     {
         const int MIN_ITERATIONS = int.MaxValue / 1000;
         const int MAX_ITERATIONS = MIN_ITERATIONS + 10000;
-    
+
         long m_totalIterations = 0;
         readonly object m_totalItersLock = new object();
         // The method that will be called when the thread is started.
@@ -54,10 +57,10 @@ El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y
         {
             Console.WriteLine(
                 "ServerClass.InstanceMethod is running on another thread.");
-    
+
             var x = GetNumber();
         }
-    
+
         private int GetNumber()
         {
             var rand = new Random();
@@ -67,8 +70,8 @@ El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y
             {
                 m_totalIterations += iters;
             }
-            // we're just spinning here  
-            // and using Random to frustrate compiler optimizations  
+            // we're just spinning here
+            // and using Random to frustrate compiler optimizations
             for (var i = 0; i < iters; i++)
             {
                 result = rand.Next();
@@ -76,7 +79,7 @@ El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y
             return result;
         }
     }
-    
+
     public class Simple
     {
         public static void Main()
@@ -89,14 +92,14 @@ El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y
         public static void CreateThreads()
         {
             ServerClass serverObject = new ServerClass();
-    
+
             Thread InstanceCaller = new Thread(new ThreadStart(serverObject.DoWork));
             // Start the thread.
             InstanceCaller.Start();
-    
+
             Console.WriteLine("The Main() thread calls this after "
                 + "starting the new InstanceCaller thread.");
-    
+
         }
     }
     ```
@@ -104,21 +107,21 @@ El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y
     ```vb
     Imports System
     Imports System.Threading
-    
+
     Namespace MyProfilerApp
         Public Class ServerClass
             Const MIN_ITERATIONS As Integer = Integer.MaxValue / 1000
             Const MAX_ITERATIONS As Integer = MIN_ITERATIONS + 10000
-    
+
             Private m_totalIterations As Long = 0
             ReadOnly m_totalItersLock As New Object()
             ' The method that will be called when the thread is started.
             Public Sub DoWork()
                 Console.WriteLine("ServerClass.InstanceMethod is running on another thread.")
-    
+
                 Dim x = GetNumber()
             End Sub
-    
+
             Private Function GetNumber() As Integer
                 Dim rand = New Random()
                 Dim iters = rand.[Next](MIN_ITERATIONS, MAX_ITERATIONS)
@@ -126,15 +129,15 @@ El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y
                 SyncLock m_totalItersLock
                     m_totalIterations += iters
                 End SyncLock
-                ' we're just spinning here  
-                ' and using Random to frustrate compiler optimizations  
+                ' we're just spinning here
+                ' and using Random to frustrate compiler optimizations
                 For i As Integer = 0 To iters - 1
                     result = rand.[Next]()
                 Next
                 Return result
             End Function
         End Class
-    
+
         Public Class Simple
             Public Shared Sub Main()
                 For i As Integer = 0 To 199
@@ -143,23 +146,23 @@ El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y
             End Sub
             Public Shared Sub CreateThreads()
                 Dim serverObject As New ServerClass()
-    
+
                 Dim InstanceCaller As New Thread(New ThreadStart(AddressOf serverObject.DoWork))
                 ' Start the thread.
                 InstanceCaller.Start()
-    
+
                 Console.WriteLine("The Main() thread calls this after " + "starting the new InstanceCaller thread.")
-    
+
             End Sub
         End Class
     End Namespace
     ```
 
     > [!NOTE]
-    > En Visual Basic, asegúrese de que el objeto de inicio se establece en `Sub Main` (**Propiedades > Aplicaciones > Objeto de inicio**).
+    > En Visual Basic, asegúrese de que el objeto de inicio se establece en `Sub Main` (**Propiedades** > **Aplicaciones** > **Objeto de inicio**).
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Paso 1: Recopilar datos de generación de perfiles 
-  
+##  <a name="step-1-collect-profiling-data"></a>Paso 1: Recopilar datos de generación de perfiles
+
 1.  En primer lugar, establezca un punto de interrupción en la aplicación en esta línea de código en la función `Main`:
 
     `for (int i = 0; i < 200; i++)`
@@ -176,10 +179,10 @@ El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y
 
     > [!TIP]
     > Al establecer dos puntos de interrupción, puede limitar la recopilación de datos a las partes del código que quiere analizar.
-  
-3.  La ventana **Herramientas de diagnóstico** ya es visible, a menos que se haya desactivado. Para que la ventana se vuelva a mostrar, haga clic en **Depurar / Windows / Mostrar herramientas de diagnóstico**.
 
-4.  Haga clic en **Depurar / Iniciar depuración** (o **Inicio** en la barra de herramientas o **F5**).
+3.  La ventana **Herramientas de diagnóstico** ya es visible, a menos que se haya desactivado. Para que la ventana se vuelva a mostrar, haga clic en **Depurar** > **Windows** > **Mostrar Herramientas de diagnóstico**.
+
+4.  Haga clic en **Depurar** > **Iniciar depuración** (o en **Inicio** en la barra de herramientas, o presione **F5**).
 
      Cuando la aplicación termine de cargarse, se muestra la vista **Resumen** de las Herramientas de diagnóstico.
 
@@ -191,17 +194,17 @@ El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y
 
      Al seleccionar **Registrar perfil CPU**, Visual Studio iniciará la grabación de las funciones y cuánto tiempo se tardan en ejecutar, y también proporciona un gráfico de escala de tiempo que se puede usar para centrarse en segmentos específicos de la sesión de muestreo. Estos datos recopilados solo se pueden ver cuando la aplicación se detiene en un punto de interrupción.
 
-6.  Presione F5 para ejecutar la aplicación hasta el segundo punto de interrupción.
+6.  Presione **F5** para ejecutar la aplicación hasta el segundo punto de interrupción.
 
      Ahora tiene los datos de rendimiento de la aplicación específicamente para la región de código que se ejecuta entre los dos puntos de interrupción.
 
      El generador de perfiles empieza a preparar los datos de subproceso. Espere a que finalice.
-  
+
      La herramienta Uso de CPU muestra el informe en la pestaña **Uso de CPU**.
 
      En este punto, puede empezar a analizar los datos.
 
-## <a name="Step2"></a> Paso 2: Analizar datos de uso de CPU
+## <a name="step-2-analyze-cpu-usage-data"></a>Paso 2: Analizar datos de uso de CPU
 
 Se recomienda que, para empezar a analizar los datos, examine la lista de funciones de Uso de CPU, identifique las funciones que realizan la mayor parte del trabajo y, a continuación, observe detenidamente cada una de ellas.
 
@@ -214,7 +217,7 @@ Se recomienda que, para empezar a analizar los datos, examine la lista de funcio
 
 2. En la lista de funciones, haga doble clic en la función `ServerClass::GetNumber`.
 
-    Al hacer doble clic en la función, se abre la vista **Llamador y destinatario** en el panel de la izquierda. 
+    Al hacer doble clic en la función, se abre la vista **Llamador y destinatario** en el panel de la izquierda.
 
     ![Herramientas de diagnóstico para la vista Llamador y destinatario](../profiling/media/quickstart-cpu-usage-caller-callee.png "DiagToolsCallerCallee")
 
@@ -233,7 +236,7 @@ Se recomienda que, para empezar a analizar los datos, examine la lista de funcio
 - [Analizar el uso de la CPU](../profiling/cpu-usage.md) para obtener información más detallada sobre la herramienta de uso de CPU.
 - Analizar el uso de la CPU sin un depurador adjunto o tomando una aplicación en ejecución como destino. Para más información, vea [Recopilar datos de generación de perfiles sin depurar](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) en [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Vea también
 
- [Generación de perfiles en Visual Studio](../profiling/index.md)  
- [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md)
+- [Generación de perfiles en Visual Studio](../profiling/index.md)
+- [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)

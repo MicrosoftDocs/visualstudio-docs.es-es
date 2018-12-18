@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475131"
 ---
 # <a name="thread-search-dialog-box"></a>Cuadro de diálogo Buscar subproceso
 Utilice este cuadro de diálogo para buscar y seleccionar el nodo de un subproceso concreto en [vista de subprocesos](../debugger/threads-view.md). Para mostrar este cuadro de diálogo, mueva el foco a un **subprocesos** ventana de vista. A continuación, elija **Buscar subproceso** desde el **búsqueda** menú.  

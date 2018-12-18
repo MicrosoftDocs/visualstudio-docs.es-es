@@ -1,5 +1,5 @@
 ---
-title: BasicType | Documentos de Microsoft
+title: BasicType | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfccb444eab802f7caa5cf83faff0ddc7a51c389
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 61d63f20bb086190f6409d3eb4cd08c80689d10f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874025"
 ---
 # <a name="basictype"></a>BasicType
 Especifica el tipo básico del símbolo.  
@@ -45,6 +46,8 @@ enum BasicType {
    btBit      = 29,  
    btBSTR     = 30,  
    btHresult  = 31  
+   btChar16   = 32,  // char16_t
+   btChar32   = 33,  // char32_t
 };  
 ```  
   
@@ -53,13 +56,13 @@ enum BasicType {
  Se especifica ningún tipo básico.  
   
  btVoid  
- Tipo básico es una `void`.  
+ Tipo básico es un `void`.  
   
  btChar  
  Tipo básico es un `char` (tipo de C o C++).  
   
  btWChar  
- Tipo básico es un carácter (Unicode) ancho (`WCHAR`).  
+ Es de tipo básico de caracteres anchos (Unicode) (`WCHAR`).  
   
  btInt  
  Es de tipo básico `signed int` (tipo de C o C++).  
@@ -95,21 +98,21 @@ enum BasicType {
  Tipo básico es un número complejo.  
   
  btBit  
- Tipo básico es un bit.  
+ Tipo básico es un poco.  
   
  btBSTR  
- Tipo básico es una cadena básica o binaria (`BSTR`).  
+ Tipo básico es una cadena binaria o básica (`BSTR`).  
   
  btHresult  
- Tipo básico es una `HRESULT`.  
+ Tipo básico es un `HRESULT`.  
   
 ## <a name="remarks"></a>Comentarios  
- Los valores de esta enumeración son devueltos por la [idiasymbol:: Get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) método.  
+ Devuelven los valores de esta enumeración la [Get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) método.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: cvconst.h  
   
 ## <a name="see-also"></a>Vea también  
  [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [Idiasymbol:: Get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
+ [Get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
  [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)

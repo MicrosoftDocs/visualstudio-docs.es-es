@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137679"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Cadenas que se usan como claves para buscar un Control de código fuente complemento
 Las siguientes cadenas son las claves para tener acceso al registro para obtener información sobre el control de código fuente complemento.  

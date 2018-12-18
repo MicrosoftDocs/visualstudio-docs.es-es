@@ -1,6 +1,7 @@
 ---
 title: 'CA2118: Revisar el uso de SuppressUnmanagedCodeSecurityAttribute'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,13 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be5ebf971d7a852edafc2b54e954c5b06ef81c88
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 900abe516ebd07cf5a8849f269f915623500731e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859710"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Revisar el uso de SuppressUnmanagedCodeSecurityAttribute
+
 |||
 |-|-|
 |TypeName|ReviewSuppressUnmanagedCodeSecurityUsage|
@@ -33,40 +36,44 @@ ms.lasthandoff: 04/19/2018
  Un tipo público o protegido o el miembro tiene el <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> atributo.
 
 ## <a name="rule-description"></a>Descripción de la regla
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> cambia el comportamiento del sistema de seguridad predeterminado por miembros que ejecutan código no administrado mediante la invocación de plataforma o interoperabilidad COM. Por lo general, el sistema hace un [datos y modelado](/dotnet/framework/data/index) permiso de código no administrado. Esta petición se produce en tiempo de ejecución para cada invocación del miembro y comprueba cada llamador en la pila de llamadas para obtener permiso. Cuando el atributo está presente, el sistema realiza una [peticiones de vínculo](/dotnet/framework/misc/link-demands) para el permiso: los permisos del llamador inmediato se comprueban cuando el llamador está compilado JIT.
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> cambia el comportamiento del sistema de seguridad predeterminado por miembros que ejecutan código no administrado mediante la invocación de plataforma o interoperabilidad COM. Generalmente, el sistema realiza un [datos y modelado](/dotnet/framework/data/index) permiso de código no administrado. Esta demanda se produce en tiempo de ejecución para cada invocación del miembro y comprueba cada llamador en la pila de llamadas para el permiso. Cuando el atributo está presente, el sistema realiza un [peticiones de vínculo](/dotnet/framework/misc/link-demands) para el permiso: los permisos del llamador inmediato se comprueban cuando el llamador está compilado con JIT.
 
- Este atributo se utiliza principalmente para aumentar el rendimiento; sin embargo, las mejoras de rendimiento suponen riesgos de seguridad importantes. Si coloca el atributo en los miembros públicos que llaman a métodos nativos, los llamadores de la pila de llamadas (que no sea el llamador inmediato) no necesitan permiso de código no administrado para ejecutar código no administrado. Dependiendo de las acciones y el control de entrada al miembro público, podrían permitir a los llamadores no confiables a la funcionalidad de acceso restringido normalmente a código de confianza.
+ Este atributo se utiliza principalmente para aumentar el rendimiento; sin embargo, las mejoras de rendimiento suponen riesgos de seguridad importantes. Si coloca el atributo en los miembros públicos que llaman a métodos nativos, los llamadores de la pila de llamadas (que no sea el llamador inmediato) no se necesita permiso de código no administrado para ejecutar código no administrado. Dependiendo de las acciones del miembro público y control de entrada, podrían permitir que a los llamadores no es de confianza a la funcionalidad de acceso restringido normalmente al código de confianza.
 
- El [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] se basa en las comprobaciones de seguridad para impedir que los llamadores obtengan acceso directo al espacio de direcciones del proceso actual. Dado que este atributo omite la seguridad habitual, el código supone una amenaza seria si se puede utilizar para leer o escribir en la memoria del proceso. Tenga en cuenta que el riesgo no se limita a los métodos que deliberadamente proporcionan acceso a la memoria del proceso; También está presente en cualquier escenario donde el código malintencionado puede obtener acceso por ningún medio, por ejemplo, proporcionando entrada sorprendente, tiene un formato incorrecto o no es válido.
+ .NET Framework se basa en las comprobaciones de seguridad para impedir que los llamadores obtengan acceso directo al espacio de direcciones del proceso actual. Dado que este atributo omite la seguridad habitual, el código supone una amenaza grave si se puede usar para leer o escribir en la memoria del proceso. Tenga en cuenta que el riesgo no se limita a los métodos que deliberadamente proporcionan acceso a la memoria del proceso; También está presente en cualquier escenario donde código malintencionado puede obtener acceso por ningún medio, por ejemplo, al proporcionar entrada sorprendente, con formato incorrecto o no es válido.
 
- La directiva de seguridad predeterminada no concede el permiso de código no administrado a un ensamblado a menos que se está ejecutando desde el equipo local o es un miembro de uno de los siguientes grupos:
+ La directiva de seguridad predeterminada no conceder el permiso de código no administrado a un ensamblado a menos que se está ejecutando desde el equipo local o es un miembro de uno de los siguientes grupos:
 
--   Mi grupo de código de la zona de equipo
+- Mi grupo de código de la zona de equipo
 
--   Grupo de código de nombre seguro de Microsoft
+- Grupo de código de nombre seguro de Microsoft
 
--   Grupo de código de nombre seguro de ECMA
+- Grupo de código de nombre seguro de ECMA
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Revise cuidadosamente el código para asegurarse de que este atributo es absolutamente necesario. Si no está familiarizado con la seguridad de código administrado o no entienden las implicaciones de seguridad del uso de este atributo, quítelo desde el código. Si el atributo es necesario, debe asegurarse de que los llamadores no pueden usar el código de forma malintencionada. Si el código no tiene permiso para ejecutar código no administrado, este atributo no tiene ningún efecto y se debería quitar.
+ Lea detenidamente el código para asegurarse de que este atributo es absolutamente necesario. Si no está familiarizado con la seguridad del código administrado, o no entiende las implicaciones de seguridad del uso de este atributo, quitarlo de su código. Si el atributo es necesario, debe asegurarse de que los llamadores no pueden usar el código de forma malintencionada. Si el código no tiene permiso para ejecutar código no administrado, este atributo no tiene ningún efecto y se debe quitar.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Para suprimir una advertencia de esta regla de forma segura, debe asegurarse de que el código no proporciona a los llamadores acceso a las operaciones o nativos recursos que se pueden usar de forma destructiva.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ Para suprimir una advertencia de esta regla de forma segura, debe asegurarse de que el código no proporciona acceso a operaciones nativas o los recursos que se pueden usar de forma destructiva llamadores.
 
-## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se infringe la regla.
+## <a name="example-1"></a>Ejemplo 1
+ El ejemplo siguiente infringe la regla.
 
  [!code-csharp[FxCop.Security.TypesDoNotSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_1.cs)]
 
-## <a name="example"></a>Ejemplo
- En el ejemplo siguiente, la `DoWork` método proporciona una ruta de acceso de código públicamente accesible para el método de invocación de plataforma `FormatHardDisk`.
+## <a name="example-2"></a>Ejemplo 2
+ En el ejemplo siguiente, la `DoWork` método proporciona una ruta de acceso del código accesible públicamente para el método de invocación de plataforma `FormatHardDisk`.
 
  [!code-csharp[FxCop.Security.PInvokeAndSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_2.cs)]
 
-## <a name="example"></a>Ejemplo
- En el ejemplo siguiente, el método público `DoDangerousThing` provoca una infracción. Para resolver la infracción, `DoDangerousThing` deben realizarse privada y debe ser el acceso a él a través de un método público protegido por una petición de seguridad, como se muestra en el `DoWork` método.
+## <a name="example-3"></a>Ejemplo 3
+ En el ejemplo siguiente, el método público `DoDangerousThing` provoca una infracción. Para resolver la infracción, `DoDangerousThing` debe ser privado, y debe ser el acceso a él a través de un método público protegido por una petición de seguridad, como se muestra en el `DoWork` método.
 
  [!code-csharp[FxCop.Security.TypeInvokeAndSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_3.cs)]
 
 ## <a name="see-also"></a>Vea también
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> [Instrucciones de codificación segura](/dotnet/standard/security/secure-coding-guidelines) [datos y modelado](/dotnet/framework/data/index) [las peticiones de vínculo](/dotnet/framework/misc/link-demands)
+
+- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>
+- [Instrucciones de codificación segura](/dotnet/standard/security/secure-coding-guidelines)
+- [Datos y modelado](/dotnet/framework/data/index)
+- [Peticiones de vínculo](/dotnet/framework/misc/link-demands)

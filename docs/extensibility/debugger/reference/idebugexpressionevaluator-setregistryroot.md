@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::SetRegistryRoot | Documentos de Microsoft
+title: IDebugExpressionEvaluator::SetRegistryRoot | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70b1730fc44deeb7e32433480f02f750c9bec193
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d327528d340bc5472278de13e83077cd2c28171b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840746"
 ---
 # <a name="idebugexpressionevaluatorsetregistryroot"></a>IDebugExpressionEvaluator::SetRegistryRoot
 Este método establece la raíz del registro. Se utiliza para la depuración en paralelo.  
@@ -43,10 +44,10 @@ int SetRegistryRoot(
  [in] La nueva raíz del registro.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- La raíz especificada del registro normalmente se establece cuando el evaluador de expresiones en primer lugar se crea una instancia y apunta a la clave del registro para una versión específica de Visual Studio (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y* , donde *X.Y* es un número de versión).  
+ La raíz del registro especificada se establece normalmente cuando el evaluador de expresiones en primer lugar se crea una instancia y apunta a la clave del registro para una versión específica de Visual Studio (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y* , donde *X.Y* es un número de versión).  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

@@ -1,6 +1,7 @@
 ---
-title: Probar aplicaciones de SharePoint con pruebas automatizadas de UI en Visual Studio | Microsoft Docs
+title: Probar aplicaciones de SharePoint con pruebas automatizadas de IU
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,17 +9,20 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0ed08d82e186f83b71a01dab0b267410fde7267d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 91d17857f1d20508041ad6c5daa90a962d6d30e6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895449"
 ---
-# <a name="test-sharepoint-applications-with-coded-ui-tests"></a>Probar aplicaciones de SharePoint con pruebas automatizadas de UI
+# <a name="test-sharepoint-applications-with-coded-ui-tests"></a>Probar aplicaciones de SharePoint con pruebas automatizadas de IU
 
 Incluir pruebas de IU codificadas en una aplicación de SharePoint permite comprobar que toda la aplicación, incluidos sus controles de interfaz de usuario, funcionan correctamente. Las pruebas de IU codificadas también pueden validar valores y la lógica de la interfaz de usuario.
 
 Para obtener más información sobre las ventajas de usar pruebas automatizadas de IU, consulte [Usar la automatización de IU para probar el código](../test/use-ui-automation-to-test-your-code.md).
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 **Requisitos**
 
@@ -26,7 +30,7 @@ Para obtener más información sobre las ventajas de usar pruebas automatizadas 
 
 ## <a name="create-a-coded-ui-test-for-a-sharepoint-app"></a>Crear una prueba automatizada de IU para una aplicación de SharePoint
 
-[Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md) para las aplicaciones de SharePoint es lo mismo que crear pruebas para otros tipos de aplicaciones. La grabación y la reproducción se admiten en todos los controles de la interfaz de edición web. La interfaz para seleccionar categorías y elementos web son todos los controles web estándar.
+[Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md) para las aplicaciones de SharePoint es lo mismo que crear pruebas para otros tipos de aplicaciones. La grabación y la reproducción se admiten en todos los controles de la interfaz de **edición web**. La interfaz para seleccionar categorías y elementos web son todos los controles web estándar.
 
 ![Elementos web de SharePoint](../test/media/cuit_sharepoint.png)
 
@@ -92,8 +96,8 @@ Si graba acciones en una celda que no está vacía, la grabación será un poco 
 
 ## See also
 
-- [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md)
-- [Create SharePoint Solutions](/office-dev/office-dev/create-sharepoint-solutions)
-- [Verifying and Debugging SharePoint Code](/office-dev/office-dev/verifying-and-debugging-sharepoint-code)
-- [Building and Debugging SharePoint Solutions](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)
-- [Profiling the Performance of SharePoint Applications](/office-dev/office-dev/profiling-the-performance-of-sharepoint-applications)
+- [Use UI automation to test your code](../test/use-ui-automation-to-test-your-code.md)
+- [Create SharePoint solutions](../sharepoint/create-sharepoint-solutions.md)
+- [Verify and debug SharePoint code](../sharepoint/verifying-and-debugging-sharepoint-code.md)
+- [Build and debug SharePoint solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md)
+- [Profile the performance of SharePoint applications](../sharepoint/profiling-the-performance-of-sharepoint-applications.md)

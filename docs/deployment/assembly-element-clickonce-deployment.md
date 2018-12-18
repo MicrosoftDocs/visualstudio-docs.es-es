@@ -1,5 +1,5 @@
 ---
-title: '&lt;ensamblado&gt; elemento (implementación de ClickOnce) | Documentos de Microsoft'
+title: '&lt;ensamblado&gt; elemento (implementación ClickOnce) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,26 +18,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ab58cb90f9486c3a233d5173db340be3ee5f034
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c9d72eafb03f22a01d22894bb887085648c324e3
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080638"
 ---
-# <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;ensamblado&gt; elemento (implementación de ClickOnce)
+# <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;ensamblado&gt; elemento (implementación ClickOnce)
 El elemento de nivel superior para el manifiesto de implementación.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```xml  
   
       <assembly    
    manifestVersion  
 />  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementos y atributos  
- El `assembly` elemento es el elemento raíz y es necesario. Su primer elemento contenido debe ser un `assemblyIdentity` elemento. Los elementos del manifiesto deben estar en los espacios de nombres siguientes: `urn:schemas-microsoft-com:asm.v1`, `urn:schemas-microsoft-com:asm.v2`, y `http://www.w3.org/2000/09/xmldsig#`. Los elementos secundarios del ensamblado también deben ser en estos espacios de nombres, mediante herencia o etiquetado.  
+## <a name="elements-and-attributes"></a>Los elementos y atributos  
+ El `assembly` es el elemento raíz y es necesario. Su primer elemento contenido debe ser un `assemblyIdentity` elemento. Los elementos del manifiesto deben estar en los espacios de nombres siguientes: `urn:schemas-microsoft-com:asm.v1`, `urn:schemas-microsoft-com:asm.v2`, y `http://www.w3.org/2000/09/xmldsig#`. También deben ser elementos secundarios del ensamblado en estos espacios de nombres, mediante herencia o etiquetado.  
   
  El `assembly` elemento tiene el siguiente atributo.  
   
@@ -46,9 +47,9 @@ El elemento de nivel superior para el manifiesto de implementación.
 |`manifestVersion`|Requerido. Este atributo debe establecerse en `1.0`.|  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo de código siguiente se muestra un `assembly` elemento en un manifiesto de implementación para una aplicación implementada mediante [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Este ejemplo de código forma parte de un ejemplo mayor proporcionado para el [manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md) tema.  
+ En el ejemplo de código siguiente se ilustra un `assembly` elemento en un manifiesto de implementación para una aplicación implementada mediante [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Este ejemplo de código forma parte de un ejemplo más extenso proporcionado para el [del manifiesto de implementación ClickOnce](../deployment/clickonce-deployment-manifest.md) tema.  
   
-```  
+```xml  
 <asmv1:assembly   
   xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd"  
   manifestVersion="1.0"  

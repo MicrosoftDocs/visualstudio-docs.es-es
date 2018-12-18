@@ -1,5 +1,5 @@
 ---
-title: Elemento menús | Documentos de Microsoft
+title: Menus (elemento) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,18 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 801bdf945f7f963168a83f8291d78e4751354269
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e0bfb702b9465ee4d00547f5d965bfbaae18742b
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637635"
 ---
-# <a name="menus-element"></a>Elemento de menús
+# <a name="menus-element"></a>Menus (elemento)
 Define todos los menús y barras de herramientas que implementa un paquete VSPackage.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```xml  
 <Menus>  
   <Menu>... </Menu>  
   <Menu>... </Menu>  
@@ -39,24 +40,24 @@ Define todos los menús y barras de herramientas que implementa un paquete VSPac
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Condición|Opcional. Consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|[Menus (Elemento)](../extensibility/menus-element.md)|Define todos los menús y barras de herramientas que implementa un paquete VSPackage.|  
-|[Menu (Elemento)](../extensibility/menu-element.md)|Representa un único menú o barra de herramientas.|  
+|[Menus (elemento)](../extensibility/menus-element.md)|Define todos los menús y barras de herramientas que implementa un paquete VSPackage.|  
+|[Elemento de menú](../extensibility/menu-element.md)|Representa un único menú o barra de herramientas.|  
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|[Commands (Elemento)](../extensibility/commands-element.md)|Representa la colección de comandos en el VSPackage.|  
+|[Elemento Commands](../extensibility/commands-element.md)|Representa la colección de comandos en el VSPackage.|  
   
 ## <a name="example"></a>Ejemplo  
   
-```  
+```xml  
 <Commands package="guidMyPackage">  
     <Menus>  
       <Menu Condition="'%(DEBUG)' != 'true'"   
@@ -80,5 +81,5 @@ Define todos los menús y barras de herramientas que implementa un paquete VSPac
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [¿Cómo VSPackages agregar elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Cómo VSPackages agregar elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Los comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

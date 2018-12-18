@@ -16,9 +16,10 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 0f37cf6f6a1a72435b549942fa03d821c900718a
 ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472037"
 ---
 # <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Error: No tiene permiso para inspeccionar el proceso&#39;identidad s
 No tiene permiso para inspeccionar la identidad del proceso. Probablemente se deba a la configuración del sistema.  

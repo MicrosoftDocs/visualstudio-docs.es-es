@@ -1,25 +1,26 @@
 ---
-title: "Características de generación de código en Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Características de generación de código en Visual Studio | Microsoft Docs
 ms.date: 01/11/2018
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 33a2d18615885fea10f3fd64077b2f9438097a7d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c9c370a0ac169abe68da44d3c2e0438f9fbf15a5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31915912"
 ---
 # <a name="code-generation-features-in-visual-studio"></a>Características de generación de código en Visual Studio
 
 Son muchas las formas en que Visual Studio puede ayudarle a generar, corregir y refactorizar código.
+
+## <a name="features"></a>Características
 
 - Puede usar [fragmentos de código](../ide/code-snippets.md) para insertar una plantilla como un bloque [switch](/dotnet/csharp/language-reference/keywords/switch) o una declaración [Enum](/dotnet/csharp/language-reference/keywords/enum).
 
@@ -32,7 +33,7 @@ Son muchas las formas en que Visual Studio puede ayudarle a generar, corregir y 
 
 ## <a name="see-also"></a>Vea también
 
-[Fragmentos de código](../ide/code-snippets.md)  
-[Acciones rápidas](../ide/quick-actions.md)  
-[Refactorización](../ide/refactoring-in-visual-studio.md)  
-[Generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md)
+- [Fragmentos de código](../ide/code-snippets.md)
+- [Acciones rápidas](../ide/quick-actions.md)
+- [Refactorización](../ide/refactoring-in-visual-studio.md)
+- [Generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md)

@@ -33,6 +33,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471523"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Depurar las aplicaciones Web: errores y solución de problemas
 Al intentar depurar aplicaciones web pueden producirse los siguientes errores.  

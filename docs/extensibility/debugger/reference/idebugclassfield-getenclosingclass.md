@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cd73955835f8aff0047995a690da03e5ab0305d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 31bde98be596cdfca61434ecab3640655a8c7154
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877132"
 ---
 # <a name="idebugclassfieldgetenclosingclass"></a>IDebugClassField::GetEnclosingClass
 Obtiene la clase que contiene esta clase.  
@@ -40,7 +41,7 @@ int GetEnclosingClass(
   
 #### <a name="parameters"></a>Parámetros  
  `ppClassField`  
- [out] Devuelve un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) clase de objeto que representa el envolvente. Devuelve un valor null si no hay ninguna clase envolvente.  
+ [out] Devuelve un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) la clase de objeto que representa el envolvente. Devuelve un valor null si no hay ninguna clase envolvente.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
@@ -54,7 +55,7 @@ class RootClass {
 };  
 ```  
   
- Llamar a la `GetEnclosingClass` método en el `IDebugClassField` objeto que representa el `NestedClass` clase devuelve una `IDebugClassField` objeto que representa la clase `RootClass`.  
+ Una llamada a la `GetEnclosingClass` método en el `IDebugClassField` objeto que representa el `NestedClass` clase devuelve una `IDebugClassField` objeto que representa la clase `RootClass`.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

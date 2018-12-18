@@ -1,6 +1,7 @@
 ---
 title: 'CA2225: Las sobrecargas del operador tienen alternativas con nombre'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,13 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b6e95f73fbb037041aadcc95eb7336a5744ee2d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a12060752317a2b4c23ec2eba7e96e945be00db0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914585"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Las sobrecargas del operador tienen alternativas con nombre
+
 |||
 |-|-|
 |TypeName|OperatorOverloadsHaveNamedAlternates|
@@ -33,9 +36,9 @@ ms.lasthandoff: 04/19/2018
  Se detectó una sobrecarga del operador y no se encontró el método alternativo con el nombre esperado.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Sobrecarga de operadores permite el uso de símbolos para representar los cálculos para un tipo. Por ejemplo, un tipo que sobrecarga el símbolo más (+) para la suma normalmente tendría un miembro alternativo denominado 'Add'. El miembro alternativo con nombre proporciona acceso a la misma funcionalidad que el operador y se proporciona para los desarrolladores que programan en lenguajes que no admiten operadores sobrecargados.
+ Sobrecarga de operadores permite el uso de símbolos para representar los cálculos para un tipo. Por ejemplo, un tipo que sobrecarga el símbolo más (+) para la suma normalmente tendría un miembro alternativo denominado 'Add'. El miembro alternativo con nombre proporciona acceso a la misma funcionalidad que el operador y se proporciona para los desarrolladores que programan en lenguajes que no admite operadores sobrecargados.
 
- Esta regla examina los operadores que aparecen en la tabla siguiente.
+ Esta regla examina los operadores se indican en la tabla siguiente.
 
 |C#|Visual Basic|C++|Nombre alternativo|
 |---------|------------------|-----------|--------------------|
@@ -55,41 +58,41 @@ ms.lasthandoff: 04/19/2018
 |>=|>=|>=|Comparar|
 |++|N/D|++|Incremento|
 |<>|!=|Es igual a|
-|<<|<<|<<|Viceversa|
-|<<=|<<=|<<=|Viceversa|
+|<<|<<|<<|Izq|
+|<<=|<<=|<<=|Izq|
 |<|<|<|Comparar|
 |<=|<=|\<=|Comparar|
 |&&|N/D|&&|AND lógico|
 |&#124;&#124;|N/D|&#124;&#124;|LogicalOr|
 |!|N/D|!|LogicalNot|
-|%|Mod|%|Mod o Remainder|
+|%|Mod|%|Mod o resto|
 |%=|N/D|%=|Mod|
 |* (binario)|*|*|Multiplicar|
 |*=|N/D|*=|Multiplicar|
-|~|No|~|OnesComplement|
-|>>|>>|>>|Derecha orden|
-=|N/D|>>=|Derecha orden|
+|~|no|~|OnesComplement|
+|>>|>>|>>|DER|
+=|N/D|>>=|DER|
 |-(binario)|-(binario)|-(binario)|Restar|
 |-=|N/D|-=|Restar|
 |true|IsTrue|N/D|IsTrue (propiedad)|
-|-(unario)|N/D|-|Negativo|
-|+ (unario)|N/D|+|signo más|
+|-(unario)|N/D|-|negar|
+|+ (unario)|N/D|+|Signo más|
 |False|IsFalse|False|IsTrue (propiedad)|
 
- N/D == no se pueden sobrecargar en el idioma seleccionado.
+ N/D == no se puede sobrecargar en el idioma seleccionado.
 
- La regla también comprueba los operadores de conversión implícita y explícita de un tipo (`SomeType`) mediante la comprobación métodos denominados `ToSomeType` y `FromSomeType`.
+ La regla también comprueba los operadores de conversión implícitos y explícitos en un tipo (`SomeType`) mediante la comprobación de los métodos denominados `ToSomeType` y `FromSomeType`.
 
- En C#, cuando se sobrecarga un operador binario, el operador de asignación correspondiente, si existe, es también sobrecargado de modo implícito.
+ En C#, cuando se sobrecarga un operador binario, el operador de asignación correspondiente, si los hay, también es implícitamente sobrecargado.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, implemente el método alternativo para el operador. Póngale un nombre con el nombre alternativo recomendado.
+ Para corregir una infracción de esta regla, implemente el método alternativo para el operador. asígnele un nombre que el nombre alternativo recomendado.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- No suprima las advertencias de esta regla si está implementando una biblioteca compartida. Las aplicaciones pueden omitir advertencias de esta regla.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ No suprima una advertencia de esta regla si está implementando una biblioteca compartida. Las aplicaciones pueden omitir una advertencia de esta regla.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se define una estructura que infringe esta regla. Para corregir el ejemplo, agregar un complemento público `Add(int x, int y)` método a la estructura.
+ El ejemplo siguiente define una estructura que infringe esta regla. Para corregir el ejemplo, agregue una pública `Add(int x, int y)` método a la estructura.
 
  [!code-csharp[FxCop.Usage.OperatorOverloadsHaveNamedAlternates#1](../code-quality/codesnippet/CSharp/ca2225-operator-overloads-have-named-alternates_1.cs)]
 

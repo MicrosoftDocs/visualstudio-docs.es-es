@@ -1,5 +1,5 @@
 ---
-title: BP_REQUEST_INFO | Documentos de Microsoft
+title: BP_REQUEST_INFO | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e317f360eaa796eb8bdbea2a58950c8b72a3fef
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cf2138a96245e46057fb8ca4bca73b7146a48318
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877782"
 ---
 # <a name="bprequestinfo"></a>BP_REQUEST_INFO
 Contiene la información necesaria para implementar un punto de interrupción.  
@@ -58,7 +59,7 @@ public struct BP_REQUEST_INFO {
   
 ## <a name="members"></a>Miembros  
  `dwFields`  
- Una combinación de indicadores de la [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) enumeración que especifica qué campos se rellenan.  
+ Una combinación de marcas de la [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) enumeración que especifica qué campos se rellenan.  
   
  `guidLanguage`  
  GUID de lenguaje.  
@@ -82,15 +83,15 @@ public struct BP_REQUEST_INFO {
  El [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) estructura que describe las condiciones en las que se activará el punto de interrupción.  
   
  `bpPassCount`  
- El [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) estructura que contiene la información de recuento de paso del punto de interrupción.  
+ El [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) estructura que contiene la información del recuento pase del punto de interrupción.  
   
  `dwFlags`  
- Una combinación de indicadores de la [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) enumeración que especifica las marcas para el punto de interrupción solicitado.  
+ Una combinación de marcas de la [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) enumeración que especifica las marcas para el punto de interrupción solicitado.  
   
 ## <a name="remarks"></a>Comentarios  
  Esta estructura es devuelto por la [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) método.  
   
- Si tiene que obtener el GUID de proveedor de motor de depuración, la restricción de punto de interrupción o el punto de seguimiento, consulte el [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) estructura.  
+ Si necesita obtener el GUID de proveedor de motor de depuración, la restricción de punto de interrupción o el punto de seguimiento, consulte el [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) estructura.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  

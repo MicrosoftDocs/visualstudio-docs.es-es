@@ -1,11 +1,11 @@
 ---
 title: IDebugDocumentHelper::AddDeferredText | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugDocumentHelper.AddDeferredText
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugDocumentHelper::AddDeferredText
 ms.assetid: 9463cfb0-76cc-45ee-b32c-f37dce2b2e0e
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728545"
 ---
 # <a name="idebugdocumenthelperadddeferredtext"></a>IDebugDocumentHelper::AddDeferredText
 Notifica a la aplicación auxiliar que el texto dado está disponible, pero no proporciona los caracteres.  

@@ -13,11 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94fcc74943deb33e7f98ba24e9d7389a9d5746fb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f13d7597877104613f0e6ef6380abf0b6bc2a594
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891477"
 ---
 # <a name="idebugprocesssecuritygetusername"></a>IDebugProcessSecurity::GetUserName
 Obtiene el nombre de usuario desde el proveedor del puerto.  
@@ -44,7 +45,7 @@ int GetUserName (
  Si el método se realiza correctamente, devuelve `S_OK`. En caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- `GetUserName` Devuelve el nombre de usuario que se muestra en el **nombre de usuario** columna de la **adjuntar al proceso** cuadro de diálogo. Para ver el **adjuntar al proceso** cuadro de diálogo, haga clic en **adjuntar al proceso** en el **herramientas** menú en el [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE).  
+ `GetUserName` Devuelve el nombre de usuario que se muestra en el **nombre de usuario** columna de la **asociar al proceso** cuadro de diálogo. Para ver el **asociar al proceso** cuadro de diálogo, haga clic en **asociar al proceso** en el **herramientas** menú en el [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE).  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

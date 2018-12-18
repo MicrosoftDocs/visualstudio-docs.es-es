@@ -1,5 +1,5 @@
 ---
-title: Crear un proyecto de prueba de carga y rendimiento web en Visual Studio | Microsoft Docs
+title: Crear un proyecto de rendimiento web y prueba de carga
 ms.date: 03/14/2018
 ms.topic: quickstart
 helpviewer_keywords:
@@ -7,27 +7,32 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: dbd89b92ec3ca5059fbbf91680db660825cdec8f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 30e67768b502228ba8cba5acd813ec829624a822
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057579"
 ---
-# <a name="quickstart-create-a-load-test-project"></a>Inicio rápido: Crear un proyecto de prueba de carga
+# <a name="quickstart-create-a-load-test-project"></a>Inicio rápido: Crear un proyecto de pruebas de carga
 
 En este inicio rápido de 10 minutos, aprenderá a crear y ejecutar un proyecto de prueba de carga y rendimiento web en Visual Studio. Las pruebas de carga ejecutan pruebas unitarias o de rendimiento web para simular que muchos usuarios tienen acceso a un servidor al mismo tiempo.
 
-> [!IMPORTANT]
-> Los proyectos de prueba de carga y rendimiento web solo están disponibles en la edición Enterprise de Visual Studio 2017.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+## <a name="software-requirements"></a>Requisitos de software
+
+Los proyectos de prueba de carga y rendimiento web solo están disponibles en la edición Enterprise de Visual Studio.
 
 ## <a name="install-the-load-testing-component"></a>Instalar el componente de prueba de carga
 
 Si aún no tiene instalado el componente de herramientas de pruebas de carga y rendimiento web, deberá instalarlo con el Instalador de Visual Studio.
 
-1. Abra el Instalador de Visual Studio desde el menú Inicio. También puede tener acceso a él en Visual Studio desde el cuadro de diálogo **Nuevo proyecto**, o bien seleccionando **Herramientas** > **Obtener herramientas y características...** en la barra de menús.
+1. Abra el **Instalador de Visual Studio** desde el menú **Iniciar** de Windows. También puede tener acceso a él en Visual Studio desde el cuadro de diálogo **Nuevo proyecto**, o bien seleccionando **Herramientas** > **Get Tools and Features** (Obtener herramientas y características) en la barra de menús.
 
-1. En el Instalador de Visual Studio, elija la pestaña **Componentes individuales** y desplácese hacia abajo hasta la sección **Depuración y pruebas**. Seleccione **Herramientas de rendimiento web y pruebas de carga**.
+1. En el **Instalador de Visual Studio**, elija la pestaña **Componentes individuales** y desplácese hacia abajo hasta la sección **Depuración y pruebas**. Seleccione **Herramientas de rendimiento web y pruebas de carga**.
 
    ![Componente de herramientas de rendimiento web y pruebas de carga](media/web-perf-load-testing-tools-component.png)
 
@@ -39,7 +44,7 @@ Si aún no tiene instalado el componente de herramientas de pruebas de carga y r
 
 En esta sección, vamos a crear un proyecto de prueba de carga de C#. También puede crear un proyecto de prueba de carga de Visual Basic, si lo prefiere.
 
-1. Abra Visual Studio y seleccione **Archivo** > **Nuevo** > **Proyecto...** en la barra de menús.
+1. Abra Visual Studio y seleccione **Archivo** > **Nuevo** > **Proyecto** en la barra de menús.
 
    Aparece el cuadro de diálogo **Nuevo proyecto** .
 
@@ -53,11 +58,11 @@ En esta sección, vamos a crear un proyecto de prueba de carga de C#. También p
 
 ## <a name="add-a-load-test-to-the-project"></a>Agregar una prueba de carga al proyecto
 
-1. En el menú contextual que aparece al hacer clic con el botón derecho en el nodo de proyecto en el **Explorador de soluciones**, elija **Agregar** > **Prueba de carga...**
+1. En el menú contextual que aparece al hacer clic con el botón derecho en el nodo de proyecto en el **Explorador de soluciones**, elija **Agregar** > **Prueba de carga**.
 
    Se abre el **Asistente para prueba de carga nueva**.
 
-1. Seleccione la opción **Prueba de carga local** y, después, elija **Siguiente**. [Aquí](/vsts/load-test/get-started-simple-cloud-load-test) encontrará más información sobre las pruebas de carga basadas en la nube.
+1. Seleccione la opción **Prueba de carga local** y, después, elija **Siguiente**. [Aquí](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts) encontrará más información sobre las pruebas de carga basadas en la nube.
 
    ![Asistente para prueba de carga nueva: primera página](media/load-test-wizard-page-1.png)
 

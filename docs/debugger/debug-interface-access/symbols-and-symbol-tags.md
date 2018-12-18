@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471225"
 ---
 # <a name="symbols-and-symbol-tags"></a>Símbolos y etiquetas de símbolo
 Información de depuración acerca de un programa compilado se almacena en el archivo de programa (.pdb) de la base de datos como símbolos que sean accesibles mediante la API del SDK de Debug Interface Access (DIA). Todos los símbolos tienen un [idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) y un [idiasymbol:: Get_symindexid](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) propiedad. El `symTag` propiedad indica el tipo de símbolo definido por el [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) enumeración. El `symIndexId` propiedad es una `DWORD` valor que contiene el identificador único para cada instancia de un símbolo.  

@@ -1,12 +1,9 @@
 ---
-title: Buscar en archivos | Microsoft Docs
-ms.custom: 
+title: Buscar en archivos
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.findreplace.findinfiles
 - vs.findinfiles
@@ -21,13 +18,15 @@ helpviewer_keywords:
 - Find in Files tab, Find and Replace window
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0e87022cb3159e48a92e35ee07987bef6ce68f9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e1470868e207687a7b35f46724b80b0da0a0e71c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946564"
 ---
 # <a name="find-in-files"></a>Buscar en archivos
 
@@ -37,7 +36,7 @@ Puede usar cualquiera de los métodos siguientes para mostrar **Buscar en archiv
 
 ## <a name="to-display-find-in-files"></a>Para mostrar Buscar en archivos
 
-1. En la barra de menús, elija **Editar**, **Buscar y reemplazar**.
+1. En la barra de menús, elija **Editar** > **Buscar y reemplazar**.
 
 1. Elija **Buscar en archivos**.
 
@@ -71,16 +70,20 @@ Especifica que se buscará en las subcarpetas de la carpeta **Buscar en**.
 
 Puede expandir o contraer la sección **Opciones de búsqueda**. Se pueden activar o desactivar las opciones siguientes:
 
-Coincidir mayúsculas y minúsculas  
+**Coincidir mayúsculas y minúsculas**
+
 Cuando se selecciona, la búsqueda **Resultados de la búsqueda** distinguirá entre mayúsculas y minúsculas
 
-Solo palabras completas  
+**Solo palabras completas**
+
 Cuando se selecciona, las ventanas**Resultados de la búsqueda** solo devolverán coincidencias de palabras completas.
 
-Usar expresiones regulares  
+**Uso de expresiones regulares**
+
 Si se selecciona esta casilla, puede usar las notaciones especiales para definir los patrones de texto que deben coincidir en los cuadros de texto **Buscar** o **Reemplazar con**. Para obtener una lista de estas notaciones, vea [Usar expresiones regulares en Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
-Buscar en estos tipos de archivo  
+**Buscar en estos tipos de archivo**
+
 Esta lista indica los tipos de archivos en los que se va a buscar en los directorios **Buscar en**. Si este campo está en blanco, se buscará en todos los archivos de los directorios **Buscar en**.
 
 Seleccione cualquier elemento de la lista para escribir una cadena de búsqueda preconfigurada que buscará archivos de esos tipos determinados.
@@ -89,20 +92,24 @@ Seleccione cualquier elemento de la lista para escribir una cadena de búsqueda 
 
 Puede expandir o contraer la sección **Opciones de resultados**. Se pueden activar o desactivar las opciones siguientes:
 
-Ventana Resultados de la búsqueda 1  
+**Ventana Resultados de la búsqueda 1**
+
 Cuando se selecciona, los resultados de la búsqueda actual reemplazarán el contenido de la ventana **Resultados de la búsqueda 1**. Esta ventana se abre automáticamente para mostrar los resultados de la búsqueda. Para abrir esta ventana manualmente, seleccione **Otras ventanas** en el menú **Vista** y pulse **Resultados de la búsqueda 1**.
 
-Ventana Resultados de la búsqueda 2  
+**Ventana Resultados de la búsqueda 2**
+
 Cuando se selecciona, los resultados de la búsqueda actual reemplazarán el contenido de la ventana **Resultados de la búsqueda 2**. Esta ventana se abre automáticamente para mostrar los resultados de la búsqueda. Para abrir esta ventana manualmente, seleccione **Otras ventanas** en el menú **Vista** y pulse **Resultados de la búsqueda 2**.
 
-Mostrar solo nombres de archivo  
+**Mostrar solo nombres de archivo**
+
 Muestra una lista de archivos que contienen coincidencias con la búsqueda, en lugar de mostrar las propias coincidencias.
 
-Anexar resultados  
+**Anexar resultados**
+
 Agrega los resultados de la búsqueda a los resultados de la búsqueda anteriores.
 
 ## <a name="see-also"></a>Vea también
 
-[Buscar y reemplazar texto](../ide/finding-and-replacing-text.md)  
-[Reemplazar en archivos](../ide/replace-in-files.md)  
-[Comandos de Visual Studio](../ide/reference/visual-studio-commands.md)
+- [Buscar y reemplazar texto](../ide/finding-and-replacing-text.md)
+- [Reemplazar en archivos](../ide/replace-in-files.md)
+- [Comandos de Visual Studio](../ide/reference/visual-studio-commands.md)

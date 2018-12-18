@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: crear una Atom fuente de distribución para una galería privada | Documentos de Microsoft'
+title: 'Cómo: crear un átomo fuentes de distribución para una galería privada | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,31 +14,32 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc39e4d11d826741239f11f62955fa4d2fb167cb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c3f85c2568e9066384d65027ff69e8cd4c16c13e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942106"
 ---
-# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Cómo: crear una Atom fuente de distribución para una galería privada
-Puede crear una Atom () fuente RSS en una ubicación de intranet que contiene las extensiones y agrega la fuente a **extensiones y actualizaciones** como galería privada. Para más información, vea [Private Galleries](../extensibility/private-galleries.md) (Galerías privadas).  
+# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Cómo: crear una fuente Atom para una galería privada
+Puede crear un átomo (RSS) de la fuente en una ubicación de la intranet que contiene las extensiones y agrega la fuente a **extensiones y actualizaciones** como una galería privada. Para obtener más información, consulte [galerías privadas](../extensibility/private-galleries.md).  
   
-## <a name="creating-an-atom-feed"></a>Crear una Atom fuente  
- Para crear una fuente como galería privada Atom, se recopilan primero sus extensiones (archivos .vsix) en una carpeta. Puede organizarlos en subcarpetas si desea. También necesitará los siguientes recursos:  
+## <a name="create-an-atom-feed"></a>Crear una fuente Atom  
+ Para crear una fuente como una galería privada Atom, primero recopilar sus extensiones (*.vsix* archivos) en una carpeta. Si desea que se puede organizarlos en subcarpetas. También necesitará los siguientes recursos:  
   
--   Un archivo atom.xml que pone a disposición las extensiones como galería privada. Para obtener información sobre cómo conectar el archivo atom.xml **extensiones y actualizaciones**, consulte [ensamblados privados](../extensibility/private-galleries.md).  
+- Un *atom.xml* archivo que pone a disposición las extensiones como galería privada. Para obtener información sobre cómo conectar el *atom.xml* archivo **extensiones y actualizaciones**, consulte [galerías privadas](../extensibility/private-galleries.md).  
   
--   Una carpeta que contiene los archivos de imagen que se han extraído de las extensiones (por ejemplo, las capturas de pantalla). El archivo atom.xml contiene vínculos relativos a estas imágenes para que estén disponibles en **extensiones y actualizaciones**.  
+- Una carpeta que contiene los archivos de imagen que se han extraído de las extensiones (por ejemplo, capturas de pantalla). El *atom.xml* archivo contiene vínculos relativos a estas imágenes para que estén disponibles en **extensiones y actualizaciones**.  
   
- Por ejemplo, supongamos que ha recopilado las siguientes dos extensiones en una carpeta:  
+  Por ejemplo, suponga que haya recopilado las siguientes dos extensiones en una carpeta:  
   
--   Template_Wizard_239.vsix, que es una plantilla de proyecto VSIX vacía.  
+- *Template_Wizard_239.vsix*, que es una plantilla de proyecto VSIX vacía.  
   
--   SelectionHighlight.vsix, que es una herramienta para resaltar todas las instancias de una palabra seleccionada.  
+- *SelectionHighlight.vsix*, que es una herramienta para resaltar todas las instancias de una palabra seleccionada.  
   
- El contenido del archivo atom.xml sería algo parecido en el ejemplo siguiente:  
+  El contenido de la *atom.xml* archivo podría parecerse al siguiente ejemplo:  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>   
 <feed xmlns="http://www.w3.org/2005/Atom">  
 <title type="text" />   

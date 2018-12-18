@@ -1,5 +1,5 @@
 ---
-title: Extender proyectos | Documentos de Microsoft
+title: Extender proyectos | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,42 +14,41 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdfa33417002b58e1c1c9718637438cb1210b5af
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a914afada4422364db043582be43658cf494b9c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864678"
 ---
-# <a name="extending-projects"></a>Extender proyectos
-Proyectos y soluciones son las formas en que Visual Studio organiza los archivos de código y de recursos en unidades de compilación e implementación. También puede encontrar más información sobre los proyectos en [proyectos (Visual Studio SDK)](../extensibility/extending-projects.md).  
+# <a name="extend-projects"></a>Extender proyectos
+Proyectos y soluciones son las formas en que Visual Studio organiza los archivos de código y recursos en unidades de compilación e implementación. Puede encontrar más información sobre los proyectos en [proyectos (Visual Studio SDK)](../extensibility/extending-projects.md).  
   
- Puede crear sus propios tipos de proyecto con el SDK de Visual Studio y Managed Package Framework para los proyectos, que puede descargar en [Managed Package Framework for Projects](http://mpfproj12.codeplex.com/). Para comprender cómo se implementan los proyectos personalizados, consulte [nueva generación de proyecto: Under the Hood, una parte](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) y [nueva generación de proyecto: Under the Hood, parte dos](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Puede crear sus propios tipos de proyecto con el SDK de Visual Studio y Managed Package Framework para los proyectos, que puede descargarse en [Managed Package Framework for Projects](https://github.com/tunnelvisionlabs/MPFProj10). Para comprender cómo se implementan proyectos personalizados, vea [nueva generación de proyectos: aspectos técnicos, primera parte](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) y [nueva generación de proyectos: internamente, la segunda parte](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
- Los temas de esta sección describen cómo crear proyectos personalizados y cómo administrar distintos tipos de soluciones de Visual Studio.  
+ Los temas de esta sección describen cómo crear proyectos personalizados y cómo administrar distintos tipos de solución de Visual Studio.  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Creación de un sistema de proyectos básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md)  
+ [Crear un sistema de proyectos básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md)  
  Describe cómo crear un sistema de proyecto personalizado.  
   
- [Creación de un sistema de proyectos básico, parte 2](../extensibility/creating-a-basic-project-system-part-2.md)  
+ [Crear un sistema de proyectos básico, parte 2](../extensibility/creating-a-basic-project-system-part-2.md)  
  Describe cómo crear un sistema de proyecto personalizado.  
   
- [Guardado de datos en archivos de proyecto](../extensibility/saving-data-in-project-files.md)  
- Explica cómo agregar a proyecto (. * proj) archivos.  
+ [Guardar datos en archivos de proyecto](../extensibility/saving-data-in-project-files.md)  
+ Explica cómo agregar a proyecto (<em>.</em> archivos proj *).  
   
- [Comprobación de subtipos de un proyecto en tiempo de ejecución](../extensibility/verifying-subtypes-of-a-project-at-run-time.md)  
+ [Compruebe los subtipos de un proyecto en tiempo de ejecución](../extensibility/verifying-subtypes-of-a-project-at-run-time.md)  
  Explica cómo comprobar el subtipo de un proyecto en tiempo de ejecución.  
   
- [Adición y eliminación de páginas de propiedades](../extensibility/adding-and-removing-property-pages.md)  
+ [Agregar y quitar páginas de propiedades](../extensibility/adding-and-removing-property-pages.md)  
  Explica cómo personalizar las páginas de propiedades para el proyecto personalizado.  
   
- [Adición de un atributo a un elemento de proyecto](../extensibility/adding-an-attribute-to-a-project-item.md)  
+ [Agregar un atributo a un elemento de proyecto](../extensibility/adding-an-attribute-to-a-project-item.md)  
  Explica cómo agregar un atributo a un elemento de proyecto personalizado.  
   
- [Conservación de la propiedad de un elemento de proyecto](../extensibility/persisting-the-property-of-a-project-item.md)  
+ [Conservar la propiedad de un elemento de proyecto](../extensibility/persisting-the-property-of-a-project-item.md)  
  Explica cómo conservar las propiedades de un elemento de proyecto personalizado.  
   
- [Administración de proyectos de Windows universal](../extensibility/managing-universal-windows-projects.md)  
- Explica cómo administrar los proyectos universales.  
-  
-## <a name="related-sections"></a>Secciones relacionadas
+ [Administrar proyectos universales de Windows](../extensibility/managing-universal-windows-projects.md)  
+ Explica cómo administrar proyectos universales.  

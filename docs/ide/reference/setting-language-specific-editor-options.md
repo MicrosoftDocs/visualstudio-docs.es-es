@@ -1,9 +1,9 @@
 ---
-title: Opciones del editor específicas del lenguaje | Microsoft Docs
-ms.custom: ''
+title: Opciones del editor específicas del lenguaje
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - editor options
 - configure editor
@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d1882f717d3e1a1cb6aef9a7c52649740c68a089
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9890b68b05f4cedbb1a95299b87f505daea902f9
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389421"
 ---
 # <a name="setting-language-specific-editor-options"></a>Opciones del editor específicas del lenguaje
 
@@ -25,29 +26,36 @@ Visual Studio proporciona una serie de opciones del editor de texto que se aplic
 
 ## <a name="settings-available-in-the-options-dialog-box"></a>Opciones de configuración disponibles en el cuadro de diálogo Opciones
 
- [Opciones, editor de texto, básico (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md)  
+ [Opciones, editor de texto, básico (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md)
+
  Describe la configuración de las construcciones End, el cambio de formato del código, la esquematización y sugerencias de corrección de errores, entre otros, para el código de [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)].
 
- [Opciones, editor de texto, C/C++, formato](../../ide/reference/options-text-editor-c-cpp-formatting.md)  
+ [Opciones, editor de texto, C/C++, formato](../../ide/reference/options-text-editor-c-cpp-formatting.md)
+
  Describe la esquematización, sangría, Información rápida y otros valores de configuración del código de C y C++.
 
- [Opciones, editor de texto, C/C++, avanzado](../../ide/reference/options-text-editor-c-cpp-advanced.md)  
+ [Opciones, editor de texto, C/C++, avanzado](../../ide/reference/options-text-editor-c-cpp-advanced.md)
+
  Describe los valores de configuración de IntelliSense y los archivos de base de datos al utilizar C y C++.
 
- [Opciones, editor de texto, C#, formato](../../ide/reference/options-text-editor-csharp-formatting.md)  
+ [Opciones, editor de texto, C#, formato](../../ide/reference/options-text-editor-csharp-formatting.md)
+
  Describe los valores de configuración de, entre otros, la sangría, el formato de nueva línea y el ajuste de texto de C#.
 
- [Opciones, editor de texto, C#, avanzado](../../ide/reference/options-text-editor-csharp-advanced.md)  
+ [Opciones, editor de texto, C#, avanzado](../../ide/reference/options-text-editor-csharp-advanced.md)
+
  Describe los valores de configuración de la esquematización, la identificación de errores y los comentarios de la documentación XML de C#.
 
- [Opciones, editor de texto, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)  
+ [Opciones, editor de texto, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)
+
  Describe la configuración que especifica cómo se comporta la lista de finalización de IntelliSense cuando se trabaja en código de C#.
 
- [Opciones, editor de texto, XAML, formato](../../ide/reference/options-text-editor-xaml-formatting.md)  
+ [Opciones, editor de texto, XAML, formato](../../ide/reference/options-text-editor-xaml-formatting.md)
+
  Describe la configuración de disposición de elementos y atributos en documentos XAML.
 
 ## <a name="see-also"></a>Vea también
 
-[Personalizar el editor](../../ide/customizing-the-editor.md)  
-[Crear opciones de configuración del editor personalizadas y portátiles con EditorConfig](../../ide/create-portable-custom-editor-options.md)  
-[Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md): proporciona vínculos a temas que explican cómo personalizar la configuración, los enlaces de teclado y otras características del entorno de desarrollo integrado (IDE).
+- [Personalizar el editor](../../ide/customizing-the-editor.md)
+- [Crear opciones de configuración del editor personalizadas y portátiles con EditorConfig](../../ide/create-portable-custom-editor-options.md)
+- [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)

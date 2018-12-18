@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_symtag | Documentos de Microsoft'
+title: Get_symtag | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 029dee2188f48d2f41368c965542670e5512f7e5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 346bfe7b0d096a9658e5063d97337349cc6a1a04
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887948"
 ---
 # <a name="idiasymbolgetsymtag"></a>IDiaSymbol::get_symTag
 Recupera el clasificador del tipo de símbolo.  
@@ -36,7 +37,7 @@ HRESULT get_symTag (
  [out] Devuelve un valor de la [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) enumeración que especifica el clasificador del tipo de símbolo.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
@@ -51,4 +52,4 @@ pType->get_symTag( &tag );
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md)
+ [Enumeración SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

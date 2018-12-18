@@ -1,6 +1,7 @@
 ---
-title: Información general | Herramientas de prueba para desarrolladores de Microsoft IntelliTest | Microsoft Docs
+title: Información general | Herramientas de prueba para desarrolladores de Microsoft IntelliTest
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c5e95091b9305e6802976d19570783459cc47179
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c2a8e6df93d3af64bd114e0e9994aadce58e7f8d
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296026"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Información general de Microsoft IntelliTest
 
@@ -102,7 +104,7 @@ En esta sección se describen las limitaciones de IntelliTest:
 * [Plataforma](#platform)
 * [Idioma](#language)
 * [Razonamiento simbólico](#symbolic-reasoning)
-* [Seguimientos de la pila](#incorrect-stack)
+* [Seguimientos de la pila](#incorrect-stack-traces)
 
 ### <a name="nondeterminism"></a>Indeterminismo
 
@@ -151,5 +153,5 @@ Como IntelliTest detecta y "vuelve a generar" excepciones en cada método instru
 
 ## <a name="further-reading"></a>Información adicional
 
-* [Entrada de blog de introducción](https://blogs.msdn.microsoft.com/visualstudioalm/2014/11/19/introducing-smart-unit-tests/) en MSDN.
+* [Entrada de blog de introducción](https://blogs.msdn.microsoft.com/devops/2014/11/19/introducing-smart-unit-tests/).
 * [Generar pruebas unitarias para el código con IntelliTest](../../test/generate-unit-tests-for-your-code-with-intellitest.md)

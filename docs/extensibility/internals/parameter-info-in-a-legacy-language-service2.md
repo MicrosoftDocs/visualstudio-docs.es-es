@@ -1,5 +1,5 @@
 ---
-title: Información de parámetros en un Service2 de lenguaje heredado | Documentos de Microsoft
+title: Información de parámetros en un archivo de lenguaje heredado2 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,37 +15,38 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aaf8ba9be9e16eeb979b0d64d3e80e8d70b564f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b562f5dd2c7e4f3851f6ed16e0f0007ef65e14cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863261"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Información de parámetros en un servicio de lenguaje heredado
-Información de parámetros de IntelliSense es el carácter (normalmente un paréntesis de apertura) para la lista de parámetros de método de inicio de una información sobre herramientas que muestra la firma de un método cuando el usuario escribe la lista de parámetros. Tal y como se escribe cada parámetro y se ha escrito el separador de parámetros (normalmente una coma), la información sobre herramientas se actualiza para mostrar el siguiente parámetro en negrita.  
+Información de parámetros IntelliSense es el carácter (normalmente un paréntesis de apertura) para la lista de parámetros de método de inicio de una información sobre herramientas que muestra la firma de un método cuando el usuario escribe la lista de parámetros. Cuando se escribe cada parámetro y se escribe el separador de parámetro (normalmente una coma), la información sobre herramientas se actualiza para mostrar el siguiente parámetro en negrita.  
   
- Las clases de managed package framework (MPF) proporcionan compatibilidad para administrar la información de parámetros, información sobre herramientas. El analizador debe detectar parámetro parámetro de inicio, a continuación, y los caracteres de fin de parámetro y deben proporcionar una lista de las firmas de método y sus parámetros asociados.  
+ Las clases de framework (MPF) de paquetes administrados proporcionan compatibilidad para administrar la información de parámetros, información sobre herramientas. El analizador debe detectar parámetro parámetro de inicio, a continuación, y los caracteres del final de parámetro y deben proporcionar una lista de las firmas de método y sus parámetros asociados.  
   
- Los servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características del servicio de lenguaje es utilizar las extensiones MEF. Para obtener más información, consulte [extender el Editor y los servicios de lenguaje](../../extensibility/extending-the-editor-and-language-services.md).  
+ Servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características de servicio de lenguaje es usar las extensiones MEF. Para obtener más información, consulte [ampliación del Editor y los servicios de lenguaje](../../extensibility/extending-the-editor-and-language-services.md).  
   
 > [!NOTE]
->  Le recomendamos que empiece a usar el nuevo editor de API tan pronto como sea posible. Esto mejora el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.  
+>  Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.  
   
 ## <a name="implementation"></a>Implementación  
- El analizador debe establecer el valor desencadenador <xref:Microsoft.VisualStudio.Package.TokenTriggers> se establece cuando encuentra un carácter de inicio de lista de parámetro (a menudo un paréntesis de apertura). Se debe establecer un <xref:Microsoft.VisualStudio.Package.TokenTriggers> desencadenar cuando encuentra un separador de parámetro (a menudo una coma). Esto hace que una información sobre herramientas de información de parámetros actualizar y mostrar el siguiente parámetro en negrita. El analizador debe establecer el valor desencadenador <xref:Microsoft.VisualStudio.Package.TokenTriggers> cuando si busca el carácter de final de lista de parámetro (a menudo un paréntesis de cierre).  
+ El analizador debe establecer el valor de desencadenador <xref:Microsoft.VisualStudio.Package.TokenTriggers> se establece cuando encuentra un carácter de inicio de lista de parámetros (a menudo un paréntesis de apertura). Se debe establecer un <xref:Microsoft.VisualStudio.Package.TokenTriggers> desencadenar cuando encuentra un separador de parámetro (a menudo una coma). Esto hace que una información sobre herramientas de información de parámetros para actualizarse y mostrar el siguiente parámetro en negrita. El analizador debe establecer el valor de desencadenador <xref:Microsoft.VisualStudio.Package.TokenTriggers> cuando si busca el carácter de final de lista de parámetros (a menudo un paréntesis de cierre).  
   
- El <xref:Microsoft.VisualStudio.Package.TokenTriggers> valor desencadenador inicia una llamada a la <xref:Microsoft.VisualStudio.Package.Source.MethodTip%2A> método, que a su vez llama a la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> analizador de método con un motivo de análisis de <xref:Microsoft.VisualStudio.Package.ParseReason>. Si el analizador determina que el identificador antes de carácter de inicio de la lista de parámetros es un nombre de método reconocido, devuelve una lista de hacer coincidir las firmas de método en el <xref:Microsoft.VisualStudio.Package.AuthoringScope> objeto. Si se han encontrado las firmas de método, se muestra la información de parámetros, información sobre herramientas con la primera firma en la lista. Esta información sobre herramientas, a continuación, se actualiza mientras se escribe más de la firma. Cuando se escribe el carácter de final de lista de parámetros, se quita la información de parámetros, información sobre herramientas de vista.  
+ El <xref:Microsoft.VisualStudio.Package.TokenTriggers> valor desencadenador inicia una llamada a la <xref:Microsoft.VisualStudio.Package.Source.MethodTip%2A> método, que a su vez llama a la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> analizador de método con un motivo de análisis de <xref:Microsoft.VisualStudio.Package.ParseReason>. Si el analizador determina que el identificador antes de empezar a la lista de parámetros de carácter es un nombre de método reconocido, devuelve una lista de hacer coincidir las signaturas de método en el <xref:Microsoft.VisualStudio.Package.AuthoringScope> objeto. Si se encontraron las firmas de método, se muestra la información de parámetros, información sobre herramientas con la primera firma en la lista. Esta información sobre herramientas, a continuación, se actualiza conforme se escribe más de la firma. Cuando se escribe el carácter de final de lista de parámetros, se quita la información de parámetros, información sobre herramientas de vista.  
   
 > [!NOTE]
->  Para asegurarse de que la información de parámetros, información sobre herramientas tiene el formato adecuado, debe invalidar las propiedades en la <xref:Microsoft.VisualStudio.Package.Methods> clase para proporcionar los caracteres apropiados. La base de <xref:Microsoft.VisualStudio.Package.Methods> se da por supuesto la clase C#: firma de método de estilo. Consulte la <xref:Microsoft.VisualStudio.Package.Methods> clase para obtener más información sobre cómo hacerlo.  
+>  Para asegurarse de que la información de parámetros, información sobre herramientas tiene el formato adecuado, debe reemplazar las propiedades en el <xref:Microsoft.VisualStudio.Package.Methods> clase para proporcionar los caracteres correspondientes. La base de <xref:Microsoft.VisualStudio.Package.Methods> se da por supuesto la clase C#-firma de método de estilo. Consulte la <xref:Microsoft.VisualStudio.Package.Methods> clase para obtener más información sobre cómo se puede hacer esto.  
   
 ## <a name="enabling-support-for-the-parameter-info"></a>Habilitar la compatibilidad para la información de parámetros  
- Para admitir la información de parámetros información sobre herramientas, debe establecer el `ShowCompletion` con el nombre de parámetro de la <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> a `true`. El servicio de lenguaje lee el valor de esta entrada del registro de la <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> propiedad.  
+ Para admitir la información sobre herramientas de información de parámetros, se debe establecer el `ShowCompletion` con el nombre de parámetro de la <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> a `true`. El servicio de lenguaje lee el valor de esta entrada del registro desde el <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> propiedad.  
   
  Además, el <xref:Microsoft.VisualStudio.Package.LanguagePreferences.ParameterInformation%2A> propiedad debe establecerse en `true` para la información de parámetros de información sobre herramientas que se mostrará.  
   
 ### <a name="example"></a>Ejemplo  
- Este es un ejemplo simplificado de detectar los caracteres de la lista de parámetros y establecer los desencadenadores adecuados. En este ejemplo es solo con fines ilustrativos. Se supone que el escáner contiene un método `GetNextToken` que identifica y devuelve símbolos (tokens) de una línea de texto. El código de ejemplo establece simplemente los desencadenadores cada vez que detecta el tipo correcto de caracteres.  
+ Este es un ejemplo simplificado de detectar los caracteres de la lista de parámetros y establecer los desencadenadores apropiados. En este ejemplo es solo con fines ilustrativos. Supone que el escáner contiene un método `GetNextToken` que identifica y devuelve los tokens de una línea de texto. El código de ejemplo simplemente establece los desencadenadores de cada vez que detecta el tipo correcto de caracteres.  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -93,17 +94,17 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="supporting-the-parameter-info-tooltip-in-the-parser"></a>Compatibilidad con la información de parámetros, información sobre herramientas en el analizador  
- El <xref:Microsoft.VisualStudio.Package.Source> clase hace algunas suposiciones sobre el contenido de la <xref:Microsoft.VisualStudio.Package.AuthoringScope> y <xref:Microsoft.VisualStudio.Package.AuthoringSink> clases cuando la información de parámetros, información sobre herramientas se muestran y se han actualizado.  
+## <a name="supporting-the-parameter-info-tooltip-in-the-parser"></a>Compatibilidad con la información sobre herramientas de información de parámetro en el analizador  
+ El <xref:Microsoft.VisualStudio.Package.Source> clase hace algunas suposiciones sobre el contenido de la <xref:Microsoft.VisualStudio.Package.AuthoringScope> y <xref:Microsoft.VisualStudio.Package.AuthoringSink> clases cuando se muestra y actualiza la información de parámetros, información sobre herramientas.  
   
--   Se proporciona el analizador <xref:Microsoft.VisualStudio.Package.ParseReason> cuando se escribe el carácter de inicio de la lista de parámetros.  
+- Se proporciona el analizador <xref:Microsoft.VisualStudio.Package.ParseReason> cuando se escribe el carácter de inicio de la lista de parámetros.  
   
--   La ubicación en la <xref:Microsoft.VisualStudio.Package.ParseRequest> objeto está inmediatamente después de carácter de inicio de la lista de parámetros. El analizador debe recopilar las firmas de todas las declaraciones de método disponibles en el que colocar y almacenan en una lista en la versión de la <xref:Microsoft.VisualStudio.Package.AuthoringScope> objeto. Esta lista incluye el nombre del método, tipo de método (o tipo de valor devuelto) y una lista de parámetros posibles. Más adelante se busca esta lista para que la firma del método o firmas para mostrar en la información de parámetros, información sobre herramientas.  
+- La ubicación proporcionada el <xref:Microsoft.VisualStudio.Package.ParseRequest> objeto está inmediatamente después de carácter de inicio de la lista de parámetros. El analizador debe recopilar las firmas de todas las declaraciones de método disponibles en el que colocar y almacenan en una lista de la versión de la <xref:Microsoft.VisualStudio.Package.AuthoringScope> objeto. Esta lista incluye el nombre del método, tipo de método (o tipo de valor devuelto) y una lista de los parámetros posibles. Más adelante se busca en esta lista para que la firma del método o firmas que se muestra en la información de parámetros, información sobre herramientas.  
   
- El analizador, a continuación, debe analizar la línea especificada por el <xref:Microsoft.VisualStudio.Package.ParseRequest> objeto que se va a recopilar el nombre del método que se especifiquen, así como de hasta qué punto a lo largo del usuario está escritura de los parámetros. Esto se consigue pasando el nombre del método que se la <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> método en el <xref:Microsoft.VisualStudio.Package.AuthoringSink> objeto y, a continuación, llamar a la <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> se analiza al carácter de inicio de la lista de parámetros de método, una llamada a la <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> método cuando la lista de parámetros siguiente carácter se analiza y por último, que realiza la llamada la <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> método cuando se analiza el carácter de final de lista de parámetros. Los resultados de estas llamadas al método se usan por el <xref:Microsoft.VisualStudio.Package.Source> clase para actualizar correctamente la información de parámetros, información sobre herramientas.  
+  El analizador, a continuación, debe analizar la línea especificada por el <xref:Microsoft.VisualStudio.Package.ParseRequest> objeto para recopilar el nombre del método que se escribió, así como de distancia a lo largo del usuario se encuentra en escribir los parámetros. Esto se consigue pasando el nombre del método para el <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> método en el <xref:Microsoft.VisualStudio.Package.AuthoringSink> objeto y, a continuación, llamar a la <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> se analiza cuando el carácter de inicio de la lista de parámetros de método, una llamada a la <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> método cuando la lista de parámetros siguiente carácter es analizada y, por último, llamada la <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> cuando se analiza el carácter de final de lista de parámetros de método. Los resultados de estas llamadas al método se usan por el <xref:Microsoft.VisualStudio.Package.Source> clase para actualizar correctamente la información de parámetros, información sobre herramientas.  
   
 ### <a name="example"></a>Ejemplo  
- Esta es una línea de texto que se puede escribir el usuario. Los números situados debajo de la línea indican qué pasos debe realizarse en el analizador en esa posición de la línea (suponiendo que el análisis de movimientos de izquierda a derecha). La suposición aquí es que todo el contenido antes de la línea ya se ha analizado para las firmas de método, que incluye la firma de método "testfunc".  
+ Aquí es una línea de texto que se puede escribir el usuario. Los números de debajo de la línea indican qué paso se realiza mediante el analizador en esa posición en la línea (suponiendo que el análisis se desplaza de izquierda a derecha). Aquí se supone que todo el contenido antes de la línea ya se ha analizado para las firmas de método, incluida la firma del método "testfunc".  
   
 ```  
 testfunc("a string",3);  
@@ -111,12 +112,12 @@ testfunc("a string",3);
      12          3 4  
 ```  
   
- Los pasos que efectúa el analizador se describen a continuación:  
+ Los pasos que toma el analizador se describen a continuación:  
   
-1.  Las llamadas de analizador <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> con el texto "testfunc".  
+1.  Las llamadas del analizador <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> con el texto "testfunc".  
   
-2.  Las llamadas de analizador <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>.  
+2.  Las llamadas del analizador <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>.  
   
-3.  Las llamadas de analizador <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>.  
+3.  Las llamadas del analizador <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>.  
   
-4.  Las llamadas de analizador <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>.
+4.  Las llamadas del analizador <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>.

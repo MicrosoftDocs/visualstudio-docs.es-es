@@ -1,5 +1,5 @@
 ---
-title: Agregar y quitar páginas de propiedades | Documentos de Microsoft
+title: Agregar y quitar páginas de propiedades | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,22 +15,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a8130056437bf35a1617544ae7d1ecfb9068946
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c487eb6bafdc66c715bc9466ea6aafed2e78d6fe
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077885"
 ---
-# <a name="adding-and-removing-property-pages"></a>Agregar y quitar páginas de propiedades
-El Diseñador de proyectos proporciona una ubicación centralizada para administrar las propiedades del proyecto, configuraciones y recursos en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Aparece como una sola ventana en el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integra el entorno de desarrollo (IDE) y contiene un número de paneles de la derecha que se tiene acceso a través de las pestañas de la izquierda. Los paneles (a menudo denominados páginas de propiedades) en el Diseñador de proyectos varían según el idioma y el tipo de proyecto. El Diseñador de proyectos puede tener acceso mediante el **propiedades** comando el **proyecto** menú.  
+# <a name="add-and-remove-property-pages"></a>Agregar y quitar páginas de propiedades
+El Diseñador de proyectos proporciona una ubicación centralizada para administrar las propiedades del proyecto, la configuración y los recursos de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Aparece como una sola ventana en el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integra el entorno de desarrollo (IDE) y contiene un número de paneles de la derecha que se accede a través de las pestañas de la izquierda. Los paneles (a menudo denominados páginas de propiedades) en el Diseñador de proyectos varían según el idioma y el tipo de proyecto. El Diseñador de proyectos puede obtenerse con el **propiedades** comando el **proyecto** menú.  
   
- Con frecuencia necesita un subtipo de proyecto para mostrar páginas de propiedades adicionales en el Diseñador de proyectos. Del mismo modo, algunos subtipos de proyecto pueden requerir que se quite páginas de propiedades integradas. Para realizar una, debe implementar el subtipo de proyecto la <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interfaz e invalide el <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> método. Reemplazar este método y usando `propId` parámetro que contiene uno de los valores de la <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> enumeración, se puede filtrar, agregar o quitar propiedades del proyecto. Por ejemplo, deberá agregar una página a las páginas de propiedades dependientes de la configuración. Para ello, debe filtrar páginas de propiedades dependientes de la configuración y, a continuación, agregue una nueva página a la lista existente.  
+ Con frecuencia necesita un subtipo de proyecto para mostrar páginas de propiedades adicionales en el Diseñador de proyectos. Del mismo modo, algunos subtipos de proyecto pueden requerir que se quitarán las páginas de propiedades integradas. Para realizar una, el subtipo de proyecto debe implementar la <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interfaz e invalidar la <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> método. Al reemplazar este método y usar `propId` parámetro que contiene uno de los valores de la <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> enumeración, puede filtrar, agregar o quitar propiedades del proyecto. Por ejemplo, es posible que deba agregar una página a las páginas de propiedades dependientes de la configuración. Para ello, deberá filtrar páginas de propiedades dependientes de la configuración y, a continuación, agregue una nueva página a la lista existente.  
   
-## <a name="adding-and-removing-property-pages-in-project-designer"></a>Agregar y quitar páginas de propiedades en el Diseñador de proyectos  
+## <a name="add-and-remove-property-pages-in-project-designer"></a>Agregar y quitar páginas de propiedades en el Diseñador de proyectos  
   
-#### <a name="to-remove-a-property-page-in-project-designer"></a>Para quitar una página de propiedades en el Diseñador de proyectos  
+### <a name="to-remove-a-property-page-in-project-designer"></a>Para quitar una página de propiedades en el Diseñador de proyectos  
   
-1.  Invalidar el `GetProperty(uint itemId, int propId, out object property)` método para páginas de propiedades de filtro y obtener un `clsids` lista.  
+1.  Invalidar el `GetProperty(uint itemId, int propId, out object property)` método para filtrar las páginas de propiedades y obtener un `clsids` lista.  
   
     ```vb  
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)  
@@ -109,9 +110,9 @@ El Diseñador de proyectos proporciona una ubicación centralizada para administ
     property = propertyPagesList;  
     ```  
   
-#### <a name="to-add-a-property-page-in-project-designer"></a>Para agregar una página de propiedades en el Diseñador de proyectos  
+### <a name="to-add-a-property-page-in-project-designer"></a>Para agregar una página de propiedades en el Diseñador de proyectos  
   
-1.  Crear una página de propiedades que se va a agregar.  
+1.  Crear una página de propiedades que desea agregar.  
   
     ```vb  
     Class DeployPropertyPage  

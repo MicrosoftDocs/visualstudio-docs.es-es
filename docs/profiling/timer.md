@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acd9a024ee20428bb8d90369da5b29994e939baa
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 914b0c3e493e8486247704ef22967c8ccd511ed2
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50745008"
 ---
 # <a name="timer"></a>Temporizador
-La opción **Temporizador** de VSPerfCmd.exe establece el evento de generación de perfiles que se muestrea en ciclos de reloj del procesador, y cambia opcionalmente el número de ciclos en un intervalo de muestreo respecto al valor predeterminado de 10.000.000. En un procesador de 1 GH (un giga), 10.000.000 ciclos de reloj representan aproximadamente 100 muestras por segundo. El número mínimo de ciclos que se puede especificar es 50.000.  
+La opción **Timer** de *VSPerfCmd.exe* establece el evento de generación de perfiles que se muestrea en ciclos de reloj del procesador, y cambia opcionalmente el número de ciclos en un intervalo de muestreo con respecto al valor predeterminado de 10.000.000. En un procesador de 1 GH (un giga), 10.000.000 ciclos de reloj representan aproximadamente 100 muestras por segundo. El número mínimo de ciclos que se puede especificar es 50.000.  
   
  **Temporizador** solo se puede usar cuando se utiliza el método de generación de perfiles de muestreo y únicamente se puede usar en una línea de comandos que también contenga las opciones **Launch** o **Attach**.  
   
@@ -27,7 +28,7 @@ La opción **Temporizador** de VSPerfCmd.exe establece el evento de generación 
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cmd  
 VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /Timer[:Cycles] [Options]  
 ```  
   
@@ -62,13 +63,13 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /Timer[:Cycles] [Options]
 ## <a name="example"></a>Ejemplo  
  En este ejemplo se muestra cómo establecer el intervalo de muestreo del generador de perfiles en 1.000.000 ciclos de procesador.  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 VSPerfCmd.exe /Launch:TestApp.exe /Timer:1000000  
 ```  
   
 ## <a name="see-also"></a>Vea también  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Generar perfiles de servicios](../profiling/command-line-profiling-of-services.md)
+ [Generación de perfiles de aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Generación de perfiles de aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Generar perfiles para servicios](../profiling/command-line-profiling-of-services.md)

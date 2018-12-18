@@ -1,5 +1,5 @@
 ---
-title: CV_call_e | Documentos de Microsoft
+title: CV_call_e | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccdc9df86180883a5a3891563b22625fab4a2ad2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ca4be9d62ee9e0261e5c08a50b53df013ad6ffcf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851130"
 ---
 # <a name="cvcalle"></a>CV_call_e
 Especifica la convención de llamada para una función.  
@@ -41,25 +42,25 @@ typedef enum CV_call_e {
   
 ## <a name="elements"></a>Elementos  
  CV_CALL_NEAR_C  
- Especifica una convención de llamada a funciones mediante una inserción están cerca de derecha a izquierda. La función llamada borra la pila.  
+ Especifica una convención de llamada a función mediante una inserción casi de derecha a izquierda. La función llamada borra la pila.  
   
  CV_CALL_NEAR_FAST  
- Especifica una convención de llamada a funciones mediante una inserción de izquierda a derecha casi con registros. La función llamada usa la suma de bytes de parámetro para borrar la pila.  
+ Especifica una convención de llamada a función mediante una inserción de izquierda a derecha casi con registros. La función llamada utiliza la suma de bytes de parámetro para borrar la pila.  
   
  CV_CALL_NEAR_STD  
- Especifica una convención de llamada a funciones mediante una llamada estándar casi (inserción de derecha a izquierda).  
+ Especifica una convención de llamada a función mediante una llamada estándar casi (inserción de derecha a izquierda).  
   
  CV_CALL_NEAR_SYS  
- Especifica una convención de llamada a funciones mediante una llamada del sistema están cerca.  
+ Especifica una convención de llamada a función mediante una llamada del sistema casi.  
   
  CV_CALL_THISCALL  
- Especifica una convención de llamada a funciones utilizando `this` llamar (`this` registro pasa el puntero).  
+ Especifica una convención de llamada a función utilizando `this` llamar (`this` puntero pasa en el registro).  
   
  CV_CALL_CLRCALL  
- Especifica una convención de llamada a funciones usada por el Common Language Runtime (CLR) (también conocido como un código administrado convención de llamada).  
+ Especifica una convención de llamada de función utilizada por el Common Language Runtime (CLR) (también conocido como un código administrado convención de llamada).  
   
 ## <a name="remarks"></a>Comentarios  
- Los valores de esta enumeración son devueltos por una llamada a la [idiasymbol:: Get_callingconvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) método.  
+ Los valores de esta enumeración se devuelven mediante una llamada a la [Get_callingconvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) método.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: cvconst.h  

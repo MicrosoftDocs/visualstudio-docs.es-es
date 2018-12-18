@@ -14,15 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 994a50e66164dcd7a2a3768c8284825019e281e1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8d5bb2d554ee67a4a2c83decba017e9a1f0fe1e9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813914"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Cómo: Recopilar datos de contadores de CPU
 
-Un contador de eventos de CPU se utiliza para recopilar datos de rendimiento específicos de hardware. En este tema se muestra cómo recopilar datos de contador de eventos cuando se utiliza el método de generación de perfiles de instrumentación.
+Un contador de eventos de CPU se utiliza para recopilar datos de rendimiento específicos de hardware. En este artículo se muestra cómo recopilar datos de contador de eventos cuando se usa el método de generación de perfiles de instrumentación.
 
 Se producen dos tipos de eventos de contador de CPU:
 
@@ -30,9 +31,9 @@ Se producen dos tipos de eventos de contador de CPU:
 
 - Eventos de plataforma: eventos de CPU que están asociados a una CPU específica.
 
- Los eventos portátiles incluyen eventos generales, como instrucciones retiradas y ciclos no detenidos, eventos de búfer de la CPU, eventos de bifurcación y eventos de caché L2. El fabricante del procesador determina los contadores de eventos de plataforma disponibles.
+  Los eventos portátiles incluyen eventos generales, como instrucciones retiradas y ciclos no detenidos, eventos de búfer de la CPU, eventos de bifurcación y eventos de caché L2. El fabricante del procesador determina los contadores de eventos de plataforma disponibles.
 
- Las categorías de eventos pueden compartirse entre los contadores de eventos portátiles y de plataforma. Por ejemplo, las siguientes categorías de datos son con frecuencia comunes a ambos tipos:
+  Las categorías de eventos pueden compartirse entre los contadores de eventos portátiles y de plataforma. Por ejemplo, las siguientes categorías de datos son con frecuencia comunes a ambos tipos:
 
 - Eventos de memoria.
 
@@ -40,11 +41,11 @@ Se producen dos tipos de eventos de contador de CPU:
 
 - Eventos de bifurcación.
 
- Puede recopilar datos del contador de rendimiento de dos formas en el generador de perfiles:
+  Puede recopilar datos del contador de rendimiento de dos formas en el generador de perfiles:
 
 - Recopilar datos de uno o más contadores al generar perfiles mediante la instrumentación.
 
-- Especificar un evento de contador como el intervalo de muestreo al generar perfiles mediante el muestreo. Para obtener más información, consulte [Cómo: Elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md).
+- Especificar un evento de contador como el intervalo de muestreo al generar perfiles mediante el muestreo. Para obtener más información, vea [Cómo: Elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md).
 
 ## <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Para recopilar datos del contador de rendimiento de CPU al generar perfiles mediante la instrumentación
 
@@ -61,7 +62,7 @@ Se producen dos tipos de eventos de contador de CPU:
 
 ## <a name="see-also"></a>Vea también
 
-[Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)  
-[Propiedades de la sesión de rendimiento](../profiling/performance-session-properties.md)  
+[Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)  
+[Propiedades de las sesiones de rendimiento](../profiling/performance-session-properties.md)  
 [Contadores de Windows y de CPU](../profiling/cpu-and-windows-counters.md)  
-[Cómo: Elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md)
+[Elección de eventos de muestreo](../profiling/how-to-choose-sampling-events.md)

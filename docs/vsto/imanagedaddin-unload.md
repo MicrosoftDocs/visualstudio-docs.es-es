@@ -1,5 +1,5 @@
 ---
-title: IManagedAddin::Unload | Documentos de Microsoft
+title: IManagedAddin::Unload
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,18 +15,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 76070f520e4e9d1f331cf6799c5d751774c37b16
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: db805aa1e00d672b4a0579e546a6827e9135b909
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673969"
 ---
 # <a name="imanagedaddinunload"></a>IManagedAddin::Unload
   Se llama a este elemento justo antes de descargar un complemento VSTO administrado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```csharp
 HRESULT Unload();  
 ```  
   
@@ -37,7 +38,7 @@ HRESULT Unload();
  No se llama a este método con las versiones actuales de Microsoft Office. Este método está reservado para un uso futuro.  
   
 ## <a name="see-also"></a>Vea también  
- [IManagedAddin Interface](../vsto/imanagedaddin-interface.md)   
+ [Interfaz IManagedAddin](../vsto/imanagedaddin-interface.md)   
  [IManagedAddin::Load](../vsto/imanagedaddin-load.md)  
   
   

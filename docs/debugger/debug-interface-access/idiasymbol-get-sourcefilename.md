@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_sourcefilename | Documentos de Microsoft'
+title: Get_sourcefilename | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66e058061a7163ed5f14268c64e902214599bcc1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 74c13470c39309264121aa88ad5bacd24511c7eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941391"
 ---
 # <a name="idiasymbolgetsourcefilename"></a>IDiaSymbol::get_sourceFileName
 Recupera el nombre de archivo del archivo de origen de operación de compilación.  
@@ -36,7 +37,7 @@ HRESULT get_sourceFileName (
  [out] Devuelve el nombre de archivo del archivo de origen de operación de compilación.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  

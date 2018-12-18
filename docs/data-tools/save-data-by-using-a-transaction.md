@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: guardar datos utilizando una transacción'
+title: 'Cómo: guardar datos mediante el uso de una transacción'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,37 +14,40 @@ ms.assetid: 8b835e8f-34a3-413d-9bb5-ebaeb87f1198
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8b4fd7ad7168edc155227f9c26cb6f93454240dd
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 28beeec474af9b05153e787c6cbe22034d09b350
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750993"
 ---
-# <a name="how-to-save-data-by-using-a-transaction"></a>Cómo: guardar datos utilizando una transacción
-Guardar datos en una transacción mediante el <xref:System.Transactions> espacio de nombres. Use la <xref:System.Transactions.TransactionScope> objeto participe en una transacción que se administra automáticamente.
+# <a name="how-to-save-data-by-using-a-transaction"></a>Cómo: guardar datos mediante el uso de una transacción
 
-Los proyectos no se crean con una referencia al ensamblado System.Transactions, por ello, debe agregar manualmente una referencia a proyectos que utilizan transacciones.
+Guardar datos en una transacción mediante la <xref:System.Transactions> espacio de nombres. Use la <xref:System.Transactions.TransactionScope> objeto participe en una transacción que se administra automáticamente.
 
-La manera más fácil de implementar una transacción consiste en crear una instancia de un <xref:System.Transactions.TransactionScope> objeto en un `using` instrucción. (Para obtener más información, consulte [instrucción Using](/dotnet/visual-basic/language-reference/statements/using-statement), y [instrucción using](/dotnet/csharp/language-reference/keywords/using-statement).) El código que se ejecuta dentro de la `using` instrucción participa en la transacción.
+Los proyectos no se crean con una referencia a la *System.Transactions* ensamblado, por lo que deberá agregar manualmente una referencia a los proyectos que utilizan transacciones.
+
+La manera más fácil de implementar una transacción es crear una instancia un <xref:System.Transactions.TransactionScope> objeto en un `using` instrucción. (Para obtener más información, consulte [instrucción Using](/dotnet/visual-basic/language-reference/statements/using-statement), y [instrucción Using](/dotnet/csharp/language-reference/keywords/using-statement).) El código que se ejecuta dentro de la `using` instrucción participa en la transacción.
 
 Para confirmar la transacción, llame a la <xref:System.Transactions.TransactionScope.Complete%2A> bloquear el método como el uso de la última instrucción.
 
-Para revertir la transacción, produce una excepción antes de llamar a la <xref:System.Transactions.TransactionScope.Complete%2A> método.
+Para revertir la transacción, producir una excepción antes de llamar a la <xref:System.Transactions.TransactionScope.Complete%2A> método.
 
-## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>Para agregar una referencia a la System.Transactions.dll
+## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>Para agregar una referencia a la System.Transactions.dll.
 
 1.  En el **proyecto** menú, seleccione **Agregar referencia**.
 
-2.  En el **.NET** pestaña (**SQL Server** pestaña para los proyectos de SQL Server), seleccione **System.Transactions**y, a continuación, seleccione **Aceptar**.
+2.  En el **.NET** ficha (**SQL Server** ficha para proyectos de SQL Server), seleccione **System.Transactions**y, a continuación, seleccione **Aceptar**.
 
-     En el proyecto se agrega una referencia a System.Transactions.dll.
+     Una referencia a *System.Transactions.dll* se agrega al proyecto.
 
 ## <a name="to-save-data-in-a-transaction"></a>Para guardar los datos en una transacción
 
--   Agregue código para guardar datos en el uso de la instrucción que contiene la transacción. El código siguiente muestra cómo crear y crear instancias de un <xref:System.Transactions.TransactionScope> objeto en un formulario mediante declaración:
+-   Agregar código para guardar los datos de uso de la instrucción que contiene la transacción. El código siguiente muestra cómo crear y crear una instancia de un <xref:System.Transactions.TransactionScope> objeto en un formulario mediante declaración:
 
      [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]

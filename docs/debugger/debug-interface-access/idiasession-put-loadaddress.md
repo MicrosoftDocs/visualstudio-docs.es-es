@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Put_loadaddress | Documentos de Microsoft'
+title: Put_loadaddress | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b0b04db800e5b61ef1598fe4c81a9ab362e375e3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9794ba24de6702d4797b91e431853bed4e3912ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914130"
 ---
 # <a name="idiasessionputloadaddress"></a>IDiaSession::put_loadAddress
 Establece la dirección de carga del archivo ejecutable que corresponde a los símbolos en este almacén de símbolos.  
@@ -36,10 +37,10 @@ HRESULT put_loadAddress (
  [in] Carga la dirección del archivo ejecutable.  
   
 ## <a name="remarks"></a>Comentarios  
- Propiedades de dirección virtual (VA) de símbolos se calculan utilizando el valor de este método. Direcciones virtuales no se calculan a menos que esta propiedad se establece en distinto de cero.  
+ Propiedades de dirección virtual (VA) de símbolos se calculan utilizando el valor de este método. No se calculan las direcciones virtuales a menos que esta propiedad se establece en cero.  
   
 > [!NOTE]
->  Debe llamar a este método cuando llegue el [IDiaSession](../../debugger/debug-interface-access/idiasession.md) objeto y antes de empezar a usar el objeto si necesita usar las propiedades virtuales en los símbolos.  
+>  Debe llamar a este método cuando llegue el [IDiaSession](../../debugger/debug-interface-access/idiasession.md) de objetos y antes de empezar a usar el objeto si tiene que usar las propiedades virtuales en los símbolos.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

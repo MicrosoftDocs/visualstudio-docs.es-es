@@ -9,12 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 97827a9219edbed08554aaedf1ebb8c0397606d5
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 71052a0d4120a74269f2aa05412230284271e574
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947526"
 ---
 # <a name="security-of-text-templates"></a>Seguridad de las plantillas de texto
 Plantillas de texto tienen los siguientes problemas de seguridad:

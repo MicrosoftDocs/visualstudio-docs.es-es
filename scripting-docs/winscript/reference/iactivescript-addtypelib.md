@@ -1,11 +1,11 @@
 ---
 title: IActiveScript::AddTypeLib | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScript.AddTypeLib
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScript_AddTypeLib
 ms.assetid: 8e507ea8-c80a-471c-b482-ae753c6e8595
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640875"
 ---
 # <a name="iactivescriptaddtypelib"></a>IActiveScript::AddTypeLib
 Agrega una biblioteca de tipos para el espacio de nombres para la secuencia de comandos. Esto es similar a la `#include` la directiva de C o C++. Permite que un conjunto de elementos predefinidos, como las definiciones de clase, `typedefs`y constantes con nombre que se agregan al entorno de tiempo de ejecución disponible para la secuencia de comandos.  

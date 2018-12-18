@@ -1,5 +1,5 @@
 ---
-title: EXCEPTION_STATE | Documentos de Microsoft
+title: EXCEPTION_STATE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1faa847d907af938bb5f91206a5f438bcba886a3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f1032be313c6be8c71799ea493e82c03fd9e96ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818255"
 ---
 # <a name="exceptionstate"></a>EXCEPTION_STATE
 Especifica el estado de excepción.  
@@ -77,52 +78,52 @@ public enum enum_EXCEPTION_STATE {
   
 ## <a name="members"></a>Miembros  
  EXCEPTION_NONE  
- No se detendrá en la excepción.  
+ No se detenga en la excepción.  
   
  EXCEPTION_STOP_FIRST_CHANCE  
- Se detiene en la primera activación de excepción. Para describir un evento de excepción, esta marca indica que el evento de excepción es un evento de excepciones de primera oportunidad.  
+ Se detiene en la primera activación de la excepción. Al describir un evento de excepción, esta marca indica que el evento de excepción es un evento de excepción de primera oportunidad.  
   
  EXCEPTION_STOP_SECOND_CHANCE  
- Detener en segundo activación de excepción. Para describir un evento de excepción, indica que el evento de excepción es un evento de excepción de segunda oportunidad.  
+ Se detiene en la segunda activación de la excepción. Al describir un evento de excepción, indica que el evento de excepción es un evento de excepción de la segunda oportunidad.  
   
  EXCEPTION_STOP_USER_FIRST_CHANCE  
- Se detiene en la primera activación de una excepción de modo de usuario. Para describir un evento de excepción, indica que el evento de excepción es un evento de excepción de usuario de primera oportunidad.  
+ Se detiene en la primera activación de una excepción de modo de usuario. Al describir un evento de excepción, indica que el evento de excepción es un evento de excepción de usuario de primera oportunidad.  
   
  EXCEPTION_STOP_USER_UNCAUGHT  
- Detenga la aplicación cuando no se detecta una excepción de modo de usuario. Para describir un evento de excepción, indica que el evento de excepción es un evento de excepción de modo de usuario no detectada.  
+ Deténgase cuando no se detecta una excepción de modo de usuario. Al describir un evento de excepción, indica que el evento de excepción es un evento de excepción del modo de usuario no detectadas.  
   
  EXCEPTION_STOP_ALL  
- Detener en cualquier excepción. No se usan para describir un evento de excepción.  
+ Detener en cualquier excepción. No se utiliza para describir un evento de excepción.  
   
  EXCEPTION_CANNOT_BE_CONTINUED  
- Para describir un evento de excepción, indica que no se puede continuar la excepción de.  
+ Al describir un evento de excepción, indica que no se puede continuar desde la excepción.  
   
  EXCEPTION_CODE_SUPPORTED  
- Indica que la excepción tiene código que lo respalda. Utilizado en la presentación de una excepción  
+ Indica que la excepción tiene código que lo admiten. Usan para mostrar una excepción  
   
  EXCEPTION_CODE_DISPLAY_IN_HEX  
- Indica que el código de excepción se debe mostrar en formato hexadecimal. Se utilizan para mostrar una excepción.  
+ Indica que el código de excepción se debe mostrar en formato hexadecimal. Se usan para mostrar una excepción.  
   
  EXCEPTION_JUST_MY_CODE_SUPPORTED  
- Indica que el código de excepción admite JustMyCode. Se utilizan para mostrar una excepción.  
+ Indica que el código de excepción admite JustMyCode. Se usan para mostrar una excepción.  
   
  EXCEPTION_MANAGED_DEBUG_ASSISTANT  
- Indica que el depurador de código administrado debe controlar las excepciones. Si no es así conjunto, el depurador predeterminado controla las excepciones. Este argumento se pasa a la [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) método y no se utiliza en el [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) estructura.  
+ Indica que el depurador de código administrado debe controlar las excepciones. Si no conjunto, el depurador predeterminado controla las excepciones. Esto se pasa a la [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) método y no se utiliza en el [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) estructura.  
   
  EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT  
- OBSOLETA, NO USE.  
+ OBSOLETO, NO USE.  
   
  EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT  
- OBSOLETA, NO USE.  
+ OBSOLETO, NO USE.  
   
  EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT  
- OBSOLETA, NO USE.  
+ OBSOLETO, NO USE.  
   
  EXCEPTION_STOP_USER_SECOND_CHANCE_USE_PARENT  
- OBSOLETA, NO USE.  
+ OBSOLETO, NO USE.  
   
 ## <a name="remarks"></a>Comentarios  
- Usar como el `dwState` miembro de la [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) estructura para indicar el estado de la excepción y qué se puede hacer sobre él.  
+ Usar como el `dwState` miembro de la [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) estructura para indicar el estado de la excepción y lo que puede realizarse sobre él.  
   
  Estos valores también se pasan a la [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) método para establecer el estado de todas las excepciones.  
   

@@ -1,44 +1,46 @@
 ---
-title: 'Cómo: ampliar código generado por el diseñador O-R'
+title: 'Cómo: ampliar código generado por el Object Relational Designer'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d6d1122e-2f55-4607-8d8b-48c3c22600fb
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0210037cdd554838c9fe08c424f02b081c6f2e1a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9da4dca31043104c58122c2eed7aa55ae44ef07e
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089794"
 ---
-# <a name="how-to-extend-code-generated-by-the-or-designer"></a>Cómo: Ampliar código generado por Object Relational Designer
-El código generado por el [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] se vuelve a generar cuando se realizan cambios en las clases de entidad y en otros objetos de la superficie del diseñador. Debido a esta regeneración del código, cualquier código que se agregue al código generado se suele sobrescribir cuando el diseñador vuelve a generar el código. El [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] permite generar archivos de clases parciales en los que se puede agregar código que no se sobrescribirá. Un ejemplo de cómo agregar código propio al código generado por el [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] sería agregar validación de datos a las clases (de entidad) de LINQ to SQL. Para obtener información, consulte [Cómo: agregar validación a clases de entidad](../data-tools/how-to-add-validation-to-entity-classes.md).
+# <a name="how-to-extend-code-generated-by-the-or-designer"></a>Cómo: ampliar código generado por el Object Relational Designer
+Código generado por el **Object Relational Designer** se vuelve a generar cuando se realizan cambios en las clases de entidad y otros objetos en la superficie del diseñador. Debido a esta regeneración del código, cualquier código que se agregue al código generado se suele sobrescribir cuando el diseñador vuelve a generar el código. El **Object Relational Designer** proporciona la capacidad de generar archivos de clase parcial en la que puede agregar código que no se sobrescribe. Un ejemplo de cómo agregar su propio código para el código generado por el **Object Relational Designer** es agregar la validación de datos a LINQ a las clases SQL (entity). Para obtener más información, consulte [Cómo: agregar validación a clases de entidad](../data-tools/how-to-add-validation-to-entity-classes.md).
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="adding-code-to-an-entity-class"></a>Agregar código a una clase de entidad
+## <a name="add-code-to-an-entity-class"></a>Agregar código a una clase de entidad
 
-#### <a name="to-create-a-partial-class-and-add-code-to-an-entity-class"></a>Para crear una clase parcial y agregar código a una clase de entidad
+### <a name="to-create-a-partial-class-and-add-code-to-an-entity-class"></a>Para crear una clase parcial y agregar código a una clase de entidad
 
-1.  Abra o cree un nuevo archivo LINQ to SQL Classes (**.dbml** archivo) en el [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. (Haga doble clic en el **.dbml** en el archivo **el Explorador de soluciones**/**Database Explorer**.)
+1.  Abra o cree un nuevo archivo LINQ to SQL Classes (**.dbml** archivo) en el **Object Relational Designer**. (Haga doble clic en el **.dbml** archivo **el Explorador de soluciones** o **Database Explorer**.)
 
-2.  En el [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], haga clic en la clase para la que desea agregar la validación y, a continuación, haga clic en **ver código**.
+2.  En el **Object Relational Designer**, haga clic en la clase para el que desea agregar la validación y, a continuación, haga clic en **ver código**.
 
      El Editor de código se abre con una clase parcial para la clase de entidad seleccionada.
 
 3.  Agregue código a la declaración de clase parcial para la clase de entidad.
 
-## <a name="adding-code-to-a-datacontext"></a>Agregar código a una clase DataContext
+## <a name="add-code-to-a-datacontext"></a>Agregue código a una clase DataContext
 
-#### <a name="to-create-a-partial-class-and-add-code-to-a-datacontext"></a>Para crear una clase parcial y agregar código a una clase DataContext
+### <a name="to-create-a-partial-class-and-add-code-to-a-datacontext"></a>Para crear una clase parcial y agregar código a una clase DataContext
 
-1.  Abra o cree un nuevo archivo LINQ to SQL Classes (**.dbml** archivo) en el [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. (Haga doble clic en el **.dbml** en el archivo **el Explorador de soluciones**/**Database Explorer**.)
+1.  Abra o cree un nuevo archivo LINQ to SQL Classes (**.dbml** archivo) en el **Object Relational Designer**. (Haga doble clic en el **.dbml** archivo **el Explorador de soluciones** o **Database Explorer**.)
 
-2.  En el [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], haga clic en un área vacía en el diseñador y, a continuación, haga clic en **ver código**.
+2.  En el **Object Relational Designer**, haga clic en un área vacía en el diseñador y, a continuación, haga clic en **ver código**.
 
      El Editor de código se abre con una clase parcial de DataContext.
 
@@ -46,6 +48,6 @@ El código generado por el [!INCLUDE[vs_ordesigner_short](../data-tools/includes
 
 ## <a name="see-also"></a>Vea también
 
-- [Herramientas LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Tutorial: Crear clases LINQ to SQL (Object Relational Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Tutorial: Creación de LINQ a las clases SQL (Object Relational Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

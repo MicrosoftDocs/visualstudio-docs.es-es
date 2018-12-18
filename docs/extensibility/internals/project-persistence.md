@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131129"
 ---
 # <a name="project-persistence"></a>Persistencia de un proyecto
 Persistencia es una consideración de diseño clave para el proyecto. Mayoría de los proyectos usa elementos de proyecto que representan archivos; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] también admite proyectos cuyos datos están no basados en archivos. Se deben conservar tanto los archivos que pertenecen al proyecto y el archivo de proyecto. El IDE indica el proyecto para guardar consigo mismo ni con un elemento de proyecto.  

@@ -1,5 +1,5 @@
 ---
-title: POPDIRLISTFUNC | Documentos de Microsoft
+title: POPDIRLISTFUNC | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,16 +15,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44a11e6edc9666fcd7614d467a2c9ffaa86b4365
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b2dc3e0aee42da176ee147e1d960143236cf89f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847297"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
-Se trata de una función de devolución de llamada dada a la [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) función para actualizar una recopilación de directorios y (opcionalmente) en los nombres de archivo para averiguar lo que están bajo control de código fuente.  
+Esta es una función de devolución de llamada a la [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) función para actualizar una colección de los directorios y (opcionalmente) los nombres de archivo para averiguar lo que están bajo control de código fuente.  
   
- El `POPDIRLISTFUNC` devolución de llamada debe llamarse únicamente para los nombres de archivos y directorios (en la lista dada la `SccPopulateDirList` función) que están realmente bajo control de código fuente.  
+ El `POPDIRLISTFUNC` devolución de llamada debe llamarse únicamente para los nombres de archivos y directorios (en la lista proporcionada para el `SccPopulateDirList` función) que realmente están bajo control de código fuente.  
   
 ## <a name="signature"></a>Signatura  
   
@@ -38,25 +39,25 @@ typedef BOOL (*POPDIRLISTFUNC)(
   
 ## <a name="parameters"></a>Parámetros  
  pvCallerData  
- [in] Valor de usuario dado [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md).  
+ [in] Valor del usuario [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md).  
   
  bcarpeta  
- [in] `TRUE` si el nombre de `lpDirectoryOrFileName` es un directorio; en caso contrario, el nombre es un nombre de archivo.  
+ [in] `TRUE` si el nombre en `lpDirectoryOrFileName` es un directorio; en caso contrario, el nombre es un nombre de archivo.  
   
  lpDirectoryOrFileName  
- [in] Ruta de acceso local completa de un nombre de directorio o archivo que está bajo control de código fuente.  
+ [in] Ruta de acceso local completa en un nombre de directorio o archivo que está bajo control de código fuente.  
   
 ## <a name="return-value"></a>Valor devuelto  
- El IDE devuelve un código de error correspondiente:  
+ El IDE devuelve un código de error adecuado:  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |SCC_OK|Continuar el procesamiento.|  
-|SCC_I_OPERATIONCANCELED|Detiene el procesamiento.|  
-|SCC_E_xxx|Cualquier error de control de origen correspondiente debe detener el procesamiento.|  
+|SCC_I_OPERATIONCANCELED|Detener el procesamiento.|  
+|SCC_E_xxx|Cualquier error de control de origen adecuado debe detener el procesamiento.|  
   
 ## <a name="remarks"></a>Comentarios  
- Si el `fOptions` parámetro de la `SccPopulateDirList` función contiene el `SCC_PDL_INCLUDEFILES` marca, la lista posiblemente contendrá los nombres de archivo, así como nombres de directorio.  
+ Si el `fOptions` parámetro de la `SccPopulateDirList` función contiene el `SCC_PDL_INCLUDEFILES` marca, a continuación, la lista contendrá, posiblemente, los nombres de archivo, así como los nombres de directorio.  
   
 ## <a name="see-also"></a>Vea también  
  [Funciones de devolución de llamada implementadas por el IDE](../extensibility/callback-functions-implemented-by-the-ide.md)   

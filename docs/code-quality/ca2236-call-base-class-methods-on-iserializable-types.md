@@ -1,6 +1,7 @@
 ---
 title: 'LCA2236: Llamar a métodos de clase base en tipos ISerializable'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -13,15 +14,20 @@ ms.assetid: 5a15b20d-769c-4640-b31a-36e07077daae
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b7bc90dfd0cf786bbd4e2494a6c65e2c19ff4eb6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9c5b4dee5a274e88be407e015adc4d20c06605dd
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547651"
 ---
 # <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>LCA2236: Llamar a métodos de clase base en tipos ISerializable
+
 |||
 |-|-|
 |TypeName|CallBaseClassMethodsOnISerializableTypes|
@@ -30,23 +36,23 @@ ms.lasthandoff: 04/19/2018
 |Cambio problemático|No trascendental|
 
 ## <a name="cause"></a>Motivo
- Un tipo deriva de un tipo que implementa el <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaz y una de las siguientes condiciones es true:
+ Un tipo se deriva de un tipo que implementa el <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaz y una de las siguientes condiciones es true:
 
--   El tipo implementa el constructor de serialización, es decir, un constructor con la <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>, <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> firma del parámetro, pero no se llame al constructor de serialización del tipo base.
+- El tipo implementa el constructor de serialización, es decir, un constructor con la <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>, <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> firma del parámetro, pero no llama el constructor de serialización del tipo base.
 
--   El tipo implementa la <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> método pero no llama a la <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> método del tipo base.
+- El tipo implementa la <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> método pero no llama a la <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> método del tipo base.
 
 ## <a name="rule-description"></a>Descripción de la regla
- En un proceso de serialización personalizado, un tipo implementa el <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> método serializar sus campos y el constructor de serialización para deserializar los campos. Si el tipo se deriva de un tipo que implementa el <xref:System.Runtime.Serialization.ISerializable> de la interfaz, el tipo base <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> constructor de serialización y el método debe llamarse para serializar/desinstalación-serialize los campos del tipo base. En caso contrario, el tipo no se serializa y deserializa correctamente. Tenga en cuenta que si el tipo derivado no agrega ningún campo nuevo, el tipo no tiene que implementar el <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> método ni el constructor de serialización o llamar a los equivalentes de tipo base.
+ En un proceso de serialización personalizada, un tipo implementa la <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> método para serializar sus campos y el constructor de serialización para deserializar los campos. Si el tipo se deriva de un tipo que implementa el <xref:System.Runtime.Serialization.ISerializable> interfaz, el tipo base <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> constructor de serialización y el método debe llamarse a/serializar deserializar los campos del tipo base. En caso contrario, el tipo no se serialice y deserialice correctamente. Tenga en cuenta que si el tipo derivado no agrega ningún campo nuevo, el tipo no es necesario implementar el <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> método ni el constructor de serialización o llamar a los equivalentes del tipo base.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, llame al tipo base <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> constructor de serialización o de método desde correspondiente derivado constructor o el método de tipo.
+ Para corregir una infracción de esta regla, llame al tipo base <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> constructor de método o la serialización de las correspondientes derivadas tipo método o constructor.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra un tipo derivado que cumple la regla llamando al constructor de serialización y <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> método de la clase base.
+ El ejemplo siguiente muestra un tipo derivado que cumple la regla llamando al constructor de serialización y <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> método de la clase base.
 
  [!code-vb[FxCop.Usage.CallBaseISerializable#1](../code-quality/codesnippet/VisualBasic/ca2236-call-base-class-methods-on-iserializable-types_1.vb)]
  [!code-csharp[FxCop.Usage.CallBaseISerializable#1](../code-quality/codesnippet/CSharp/ca2236-call-base-class-methods-on-iserializable-types_1.cs)]

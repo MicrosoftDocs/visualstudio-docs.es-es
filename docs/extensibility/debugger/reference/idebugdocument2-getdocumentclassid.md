@@ -1,5 +1,5 @@
 ---
-title: IDebugDocument2::GetDocumentClassID | Documentos de Microsoft
+title: IDebugDocument2::GetDocumentClassID | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79a80d5a37c341a46d32e9bedac8f7ff416158da
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ab5fd153706e1f28da1931165179f479c7052e82
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836455"
 ---
 # <a name="idebugdocument2getdocumentclassid"></a>IDebugDocument2::GetDocumentClassID
 Obtiene el identificador de clase del documento.  
@@ -43,7 +44,7 @@ int GetDocumentClassID(
  [out] Devuelve un GUID que es el identificador de clase del documento.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
  El GUID de clase puede usarse para crear instancias de clases individuales de cada uno de los cuales representa un documento.  

@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457272"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Visualizador del conjunto de datos (cuadro de diálogo)
 El visualizador de conjuntos de datos permite ver el contenido de objetos DataSet, DataTable, DataView o DataViewManager. Puede tener acceso a este visualizador si hace clic en el icono de lupa que aparece junto al valor de uno de dichos objetos en una ventana de variables del depurador o en una información sobre datos.  

@@ -1,11 +1,11 @@
 ---
 title: IDebugSyncOperation::GetTargetThread | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugSyncOperation.GetTargetThread
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugSyncOperation::GetTargetThread
 ms.assetid: e6eeeb90-b5ed-4727-8434-fa3186c25013
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726885"
 ---
 # <a name="idebugsyncoperationgettargetthread"></a>IDebugSyncOperation::GetTargetThread
 Devuelve el subproceso de la aplicación de destino para esta operación sincrónica.  

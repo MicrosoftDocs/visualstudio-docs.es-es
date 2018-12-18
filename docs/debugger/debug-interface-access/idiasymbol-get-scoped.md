@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_scoped | Documentos de Microsoft'
+title: Get_scoped | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26c545c0d7f8a72ca4dc4f1fcc31aafe65c2bc5d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d0018bfdbf52f92a35dff3a21fb5baf71aab6639
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860012"
 ---
 # <a name="idiasymbolgetscoped"></a>IDiaSymbol::get_scoped
 Recupera una marca que especifica si el tipo de datos definido por el usuario aparece en un ámbito léxico no globales.  
@@ -36,7 +37,7 @@ HRESULT get_scoped (
  [out] Devuelve `TRUE` si el tipo de datos definido por el usuario aparece en un ámbito léxico no globales; en caso contrario, devuelve `FALSE`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  

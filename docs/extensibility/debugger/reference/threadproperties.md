@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4079c688358f3e7deedd28b5eb05e556192bfe6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 14db7869717a2edf1ac64be744ab1f6058455c1a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845321"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 Describe las propiedades de un subproceso.  
@@ -52,19 +53,19 @@ public struct THREADPROPERTIES {
   
 ## <a name="members"></a>Miembros  
  dwFields  
- Una combinación de indicadores de la [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) enumeración, que describe qué campos de esta estructura son válidos.  
+ Una combinación de marcas de la [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) enumeración, que describe qué campos de esta estructura son válidos.  
   
  dwThreadId  
  El identificador de subproceso.  
   
  dwSuspendCount  
- El subproceso suspende el recuento.  
+ Recuento de suspensiones el subproceso.  
   
  dwThreadState  
  Un valor de la [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) enumeración que indica el estado del subproceso de funcionamiento.  
   
  bstrPriority  
- Una cadena que especifica la prioridad del subproceso; Por ejemplo, "Anterior" Normal","Normal"o"Tiempo críticas".  
+ Una cadena que especifica la prioridad del subproceso; Por ejemplo, "Anterior" Normal","Normal"o"Tiempo crítico".  
   
  bstName  
  El nombre del subproceso.  

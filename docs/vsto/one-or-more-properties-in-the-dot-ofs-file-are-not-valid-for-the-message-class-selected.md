@@ -1,5 +1,5 @@
 ---
-title: Una o varias propiedades del archivo .ofs no son válidas para la clase de mensaje seleccionada | Documentos de Microsoft
+title: Una o varias propiedades del archivo .ofs no son válidas para la clase de mensaje seleccionada
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,24 +15,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7ac9f5ab05ba6ed858946b5f665d850eea51c230
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cfae8533337bbe18c89dbb670fb58a0c89c6c54c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34692504"
 ---
 # <a name="one-or-more-properties-in-the-ofs-file-are-not-valid-for-the-message-class-selected"></a>Una o varias propiedades del archivo .ofs no son válidas para la clase de mensaje seleccionada
-  Este error aparece cuando importa un área de formulario diseñada en Outlook, pero uno o más campos del área de formulario no son compatibles con las clases de mensaje que selecciona en la página final del asistente **Nueva región de formulario** .  
+  Este error aparece cuando se importa un área de formulario diseñada en Outlook, pero uno o más campos en el área de formulario no están compatibles con las clases de mensaje que seleccionó en la página final de la **nueva área de formulario** asistente.  
+
+Por ejemplo, puede seleccionar **Tarea (IPM.Tarea)** en la página final del asistente **Nueva región de formulario** . Si el área de formulario tiene un **dirección de la empresa** campo, recibirá este error porque una tarea no tiene una dirección de la empresa. Por lo tanto, la **dirección de la empresa** campo no es compatible con la `IPM.Task` message (clase).  
   
- Por ejemplo, puede seleccionar **Tarea (IPM.Tarea)** en la página final del asistente **Nueva región de formulario** . Si el área de formulario contiene un campo **Dirección del trabajo** , recibirá este error porque una tarea no tiene una dirección de la empresa. Por tanto, el campo **Dirección de la empresa** no es compatible con la clase de mensaje IPM.Task.  
+ Puede seleccionar **tarea (IPM.) Tarea)** en la página final de la **nueva área de formulario** asistente. Si el área de formulario tiene un **dirección de la empresa** campo, recibirá este error porque una tarea no tiene una dirección de la empresa. Por lo tanto, la **dirección de la empresa** campo no es compatible con la `IPM.Task` message (clase).  
   
-### <a name="to-correct-this-error"></a>Para corregir este error  
+## <a name="to-correct-this-error"></a>Para corregir este error  
   
 -   En la página final del asistente **Nueva región de formulario** , seleccione una clase de mensaje que sea compatible con los campos del área del formulario.  
   
--   En el Diseñador de formularios de Outlook, quite los campos que no son compatibles con las clases de mensaje que planea seleccionar en la página final del asistente **Nueva región de formulario** .  
+-   En el Diseñador de formularios de Outlook, quitar los campos que no están compatibles con las clases de mensaje. Quitar los campos que desea seleccionar en la página final de la **nueva área de formulario** asistente.  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: Importación de un área de formulario diseñada en Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)  
+ [Tutorial: Importar un área de formulario diseñada en Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)  
   
   

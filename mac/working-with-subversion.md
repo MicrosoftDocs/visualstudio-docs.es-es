@@ -1,15 +1,16 @@
 ---
 title: Trabajar con Subversion
 description: Empleo de Subversion en Visual Studio para Mac.
-author: asb3993
-ms.author: amburns
-ms.date: 04/14/2017
+author: conceptdev
+ms.author: crdun
+ms.date: 05/06/2018
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
-ms.openlocfilehash: 1105c157139e94bef36f71d877c0184ac6ed05b0
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 7dcbd619fe0c1a0ab84a8667f5a781d006f80999
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295207"
 ---
 # <a name="working-with-subversion"></a>Trabajar con Subversion
 
@@ -29,7 +30,7 @@ En la imagen siguiente se ven las opciones proporcionadas en el elemento de men�
 
 Antes de empezar a usar un repositorio remoto de Subversion, extraiga el repositorio para crear una copia de trabajo de ese directorio en el equipo local.
 
-Para obtener más información sobre el uso de la característica **Extraer del repositorio** de Visual Studio para Mac, siga los pasos de la sección [Configuración de un repositorio de Subversion](~/set-up-subversion-repository.md).
+Para obtener más información sobre el uso de la característica **Extraer del repositorio** de Visual Studio para Mac, siga los pasos de la sección [Configuración de un repositorio de Subversion](set-up-subversion-repository.md).
 
 ## <a name="update-solution"></a>Actualizar solución
 
@@ -49,7 +50,10 @@ Esto permite ver todos los cambios de cada archivo de un proyecto con la opción
 
 Para confirmar un archivo en el repositorio remoto, haga clic en Confirmar..., escriba un mensaje de confirmación y confirme con el botón Confirmar:
 
-
 ![Confirmación de un archivo](media/version-control-svnCommit.png)
 
 Con esto se envían los cambios al repositorio, donde crean la nueva revisión de todas las modificaciones.
+
+## <a name="see-also"></a>Vea también
+
+- [Configurar un repositorio de Subversion](set-up-subversion-repository.md)

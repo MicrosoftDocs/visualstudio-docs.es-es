@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: implementar marcadores de Error | Documentos de Microsoft'
+title: 'Cómo: implementar los marcadores de Error | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,50 +13,51 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1360f88dba797f96af766f65c9ee41abd6fc808
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eb6e511fa899680338831f3bc8e2a411f2126006
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861168"
 ---
-# <a name="how-to-implement-error-markers"></a>Cómo: implementar marcadores de Error
-Marcadores de error (o un subrayado ondulado rojo) es los más difíciles de implementar las personalizaciones de editor de texto. Sin embargo, las ventajas que proporcionan a los usuarios de su VSPackage pueden ser mucho mayores que el costo para proporcionarlos. Marcadores de error ligeramente marcan el texto que el analizador de lenguaje considera incorrecto con una línea roja ondulada o línea ondulada de color. Este indicador ayuda a los programadores visualmente mostrando código incorrecto.  
+# <a name="how-to-implement-error-markers"></a>Cómo: implementar los marcadores de error
+Los marcadores de error (o un subrayado ondulado rojo) es los más difíciles de las personalizaciones del editor de texto para implementar. Sin embargo, las ventajas que ofrecen a los usuarios de su VSPackage pueden con creces el costo de proporcionarlas. Los marcadores de error sutilmente marcan el texto que el analizador de lenguaje se considera incorrecto con una línea roja ondulada o línea ondulada de color. Este indicador ayuda a los programadores visualmente mostrando código incorrecto.  
   
- Utilizar marcadores de texto para implementar un subrayado ondulado rojo. Como norma, servicios de lenguaje agregar un subrayado ondulado rojo en el búfer de texto como un paso de segundo plano, ya sea en tiempo de inactividad o en un subproceso en segundo plano.  
+ Utilizar marcadores de texto para implementar un subrayado ondulado rojo. Como norma, servicios de lenguaje agregue un subrayado ondulado rojo al búfer de texto como un paso en segundo plano, en tiempo de inactividad o en un subproceso en segundo plano.  
   
-### <a name="to-implement-the-red-wavy-underline-feature"></a>Para implementar la característica de subrayado ondulado de color rojo  
+## <a name="to-implement-the-red-wavy-underline-feature"></a>Para implementar la característica de la línea ondulada roja  
   
-1.  Seleccione el texto en la que desea colocar el subrayado ondulado de color rojo.  
+1. Seleccione el texto bajo el cual desea colocar el subrayado ondulado de color rojo.  
   
-2.  Crear un marcador del tipo `MARKER_CODESENSE_ERROR`. Para obtener más información, consulte [Cómo: agregar marcadores de texto estándar](../extensibility/how-to-add-standard-text-markers.md).  
+2. Crear un marcador del tipo `MARKER_CODESENSE_ERROR`. Para obtener más información, consulte [Cómo: agregar marcadores de texto estándar](../extensibility/how-to-add-standard-text-markers.md).  
   
-3.  A continuación, pase una <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> puntero de interfaz.  
+3. Después de eso, pase un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> puntero de interfaz.  
   
- Este proceso también permite crear texto informativo o un menú contextual especial sobre un marcador determinado. Para obtener más información, consulte [Cómo: agregar marcadores de texto estándar](../extensibility/how-to-add-standard-text-markers.md).  
+   Este proceso también permite crear texto de sugerencia o un menú contextual especial sobre un marcador determinado. Para obtener más información, consulte [Cómo: agregar marcadores de texto estándar](../extensibility/how-to-add-standard-text-markers.md).  
   
- Los objetos siguientes son necesarios para que pueden mostrarse marcadores de error.  
+   Los objetos siguientes son necesarios antes de que se pueden mostrar marcadores de error.  
   
--   Un analizador.  
+- Un analizador.  
   
--   Un proveedor de tareas (es decir, una implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>) que mantiene un registro de cambios en la información de línea con el fin de identificar las líneas para que se puede volver a analizar.  
+- Un proveedor de tareas (es decir, una implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>) que mantiene un registro de cambios en la información de línea con el fin de identificar las líneas para volver a analizar.  
   
--   Eventos de cambio de un filtro de vista de texto que captura el símbolo de intercalación de la vista utilizando la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A>) método.  
+- Los eventos de cambio de un filtro de vista de texto que captura el símbolo de intercalación de la vista mediante el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A>) método.  
   
- El analizador, el proveedor de tareas y el filtro proporcionan la infraestructura necesaria para que sea posible marcadores de error. Los pasos siguientes proporcionan el proceso para mostrar marcadores de error.  
+  El analizador, el proveedor de tareas y el filtro de proporcionan la infraestructura necesaria para que los marcadores de error posibles. Los pasos siguientes proporcionan el proceso para mostrar marcadores de error.  
   
-1.  En la vista que se está filtrando, el filtro Obtiene un puntero al proveedor de tareas asociado con datos de la vista.  
+1.  En una vista que se está filtrando, el filtro Obtiene un puntero para el proveedor de tareas asociado con los datos de la vista.  
   
     > [!NOTE]
-    >  Puede usar el mismo filtro de comando para sugerencias de método, la finalización de instrucciones, los marcadores de error y así sucesivamente.  
+    >  Puede usar el mismo filtro de comando para sugerencias de método, finalización de instrucciones, los marcadores de error y así sucesivamente.  
   
-2.  Cuando el filtro recibe un evento que indica que ha movido a otra línea, se crea una tarea para comprobar si hay errores.  
+2.  Cuando el filtro recibe un evento que indica que han movido a la siguiente línea, se crea una tarea para comprobar si hay errores.  
   
-3.  El controlador de tareas comprueba si la línea es defectuoso. Si es así, analiza la línea de errores.  
+3.  El controlador de tareas comprueba si la línea está sucio. Si es así, analiza la línea de errores.  
   
 4.  Si se detectan errores, el proveedor de tareas crea una instancia de elemento de tarea. Esta instancia crea el marcador de texto que usa el entorno como un marcador de error en la vista de texto.  
   
 ## <a name="see-also"></a>Vea también  
- [Uso de marcadores de texto con la API heredado](../extensibility/using-text-markers-with-the-legacy-api.md)   
+ [Utilice marcadores de texto con la API heredada](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [Cómo: agregar marcadores de texto estándar](../extensibility/how-to-add-standard-text-markers.md)   
  [Cómo: crear marcadores de texto personalizado](../extensibility/how-to-create-custom-text-markers.md)   
- [Cómo: utilizar marcadores de texto](../extensibility/how-to-use-text-markers.md)
+ [Cómo: usar marcadores de texto](../extensibility/how-to-use-text-markers.md)

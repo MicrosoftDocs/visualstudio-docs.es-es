@@ -1,7 +1,7 @@
 ---
-title: Visual Studio IntelliSense | Microsoft Docs
-ms.custom: ''
-ms.date: 11/04/2016
+title: Información de parámetros, lista de miembros e información rápida
+ms.date: 05/25/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -17,15 +17,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6e87113f8c8a703a6eb4d893c0ca54a90bfb8d1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5e00b43f1705079a86d511239d7b38119868d8f4
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748480"
 ---
-# <a name="using-intellisense-in-visual-studio"></a>Uso de IntelliSense en Visual Studio
+# <a name="intellisense-in-visual-studio"></a>IntelliSense en Visual Studio
 
-IntelliSense es el término general que se usa para describir varias características: Lista de miembros, Información de parámetros, Información rápida y Palabra completa. Estas características le permiten obtener más información acerca del código que utiliza, a realizar un seguimiento de los parámetros que escribe y a agregar llamadas a propiedades y a métodos con tan solo presionar unas teclas.
+IntelliSense es un auxiliar de finalización de código que incluye una serie de características: Lista de miembros, Información de parámetros, Información rápida y Palabra completa. Estas características permiten obtener más información sobre el código que usa, realizar el seguimiento de los parámetros que escribe y agregar llamadas a propiedades y a métodos con tan solo presionar unas teclas.
 
 Muchos aspectos de IntelliSense son específicos del lenguaje. Para más información sobre IntelliSense para distintos lenguajes, vea los temas enumerados en la sección [Vea también](#see-also).
 
@@ -37,37 +38,37 @@ Después de seleccionar un elemento, puede insertarlo en el código presionando 
 
 En la lista de miembros, el icono de la izquierda representa el tipo del miembro, como el espacio de nombres, la clase, la función o la variable. Para ver una lista de iconos, vea [Iconos de la vista de clases y del examinador de objetos](../ide/class-view-and-object-browser-icons.md). La lista puede ser bastante larga, así que presione **Re Pág** y **Av Pág** para subir o bajar en ella.
 
-![Lista de miembros de Visual Studio](../ide/media/vs2015_intellisense.png "vs2015_Intellisense")
+![Lista de miembros de Visual Studio](../ide/media/vs2015_intellisense.png)
 
-Puede invocar la característica **Lista de miembros** manualmente. Para ello, presione **CTRL** + **J** y elija **Edición** > **IntelliSense** > **Lista de miembros** o seleccione el botón **Lista de miembros** de la barra de herramientas del editor. Cuando se invoca en una línea en blanco o fuera de un ámbito reconocible, la lista muestra símbolos del espacio de nombres global.
+Puede invocar la característica **Lista de miembros** manualmente. Para ello, presione **CTRL**+**J** y elija **Edición** > **IntelliSense** > **Lista de miembros** o seleccione el botón **Lista de miembros** de la barra de herramientas del editor. Cuando se invoca en una línea en blanco o fuera de un ámbito reconocible, la lista muestra símbolos del espacio de nombres global.
 
 Para desactivar la lista de miembros de forma predeterminada (de manera que no aparezca a menos que se invoque específicamente), vaya a **Herramientas** > **Opciones** > **Todos los lenguajes** y anule la selección de **Lista de miembros automática**. Si quiere desactivar la lista de miembros únicamente para un lenguaje concreto, vaya a la configuración **General** de ese lenguaje.
 
-También puede cambiar al modo de sugerencias, en el que solo se inserta en el código el texto que se escribe. Por ejemplo, si escribe en un identificador que no está en la lista y presiona la tecla **TAB** en modo de finalización, la entrada reemplaza al identificador escrito. Para alternar entre el modo de finalización y el modo de sugerencias, presione **CTRL** + **Alt** + **BARRA ESPACIADORA** o seleccione **Edición** > **IntelliSense** > **Alternar el modo de finalización**.
+También puede cambiar al modo de sugerencias, en el que solo se inserta en el código el texto que se escribe. Por ejemplo, si escribe en un identificador que no está en la lista y presiona la tecla **TAB** en modo de finalización, la entrada reemplaza al identificador escrito. Para alternar entre el modo de finalización y el modo de sugerencias, presione **CTRL**+**Alt**+**Barra espaciadora** o seleccione **Edición** > **IntelliSense** > **Alternar el modo de finalización**.
 
 ## <a name="parameter-info"></a>Información de parámetros
 
 La información de parámetros proporciona información acerca del número, los nombres y los tipos de parámetros que requiere un método, un parámetro de tipo genérico de atributo (en C#) o una plantilla (en C++).
 
-El parámetro en negrita indica el siguiente parámetro requerido a medida que escribe la función. En el caso de funciones sobrecargadas, se puede utilizar las teclas de flecha ARRIBA y ABAJO para ver información de parámetros alternativos para las sobrecargas de funciones.
+El parámetro en negrita indica el siguiente parámetro requerido a medida que escribe la función. En el caso de funciones sobrecargadas, se puede utilizar las teclas de flecha **Arriba** y **Abajo** para ver información de parámetros alternativos para las sobrecargas de funciones.
 
-![Información de parámetros](../ide/media/vs2015_param_info.png "VS2015_param_Info")
+![Información de parámetros](../ide/media/vs2015_param_info.png)
 
 Cuando se anotan funciones y parámetros con comentarios de documentación XML, los comentarios se muestran como Información de parámetros. Para obtener más información, vea [Proporcionar comentarios del código XML](../ide/supplying-xml-code-comments.md).
 
-Para invocar manualmente la información de parámetros, elija **Edición** > **IntelliSense** > **Información de parámetros**, presione **CTRL** + **MAYÚS** + **BARRA ESPACIADORA** o seleccione el botón **Información de parámetros** de la barra de herramientas del editor.
+Para invocar manualmente la información de parámetros, elija **Edición** > **IntelliSense** > **Información de parámetros**, presione **CTRL**+**MAYÚS**+**Barra espaciadora** o seleccione el botón **Información de parámetros** de la barra de herramientas del editor.
 
 ## <a name="quick-info"></a>Información rápida
 
 La opción Información rápida muestra la declaración completa de cualquier identificador del código.
 
-![Información rápida de Visual Studio](../ide/media/vs2015_quick_info.png "VS2015_Quick_info")
+![Información rápida de Visual Studio](../ide/media/vs2015_quick_info.png)
 
 Cuando se selecciona un miembro en el cuadro **Lista de miembros**, también aparece la información rápida.
 
-![Información de parámetros en un archivo de código de C&#35;](../ide/media/vs2015_paraminfo.png "VS2015_ParamInfo")
+![Información de parámetros en un archivo de código de C&#35;](../ide/media/vs2015_paraminfo.png)
 
-Para invocar manualmente la información rápida, elija **Edición** > **IntelliSense** > **Información rápida**, presione **CTRL** + **I** o seleccione el botón **Información rápida** de la barra de herramientas del editor.
+Para invocar manualmente la información rápida, elija **Edición** > **IntelliSense** > **Información rápida**, presione **CTRL**+**I** o seleccione el botón **Información rápida** de la barra de herramientas del editor.
 
 Si una función está sobrecargada, es posible que IntelliSense no muestre información para todas las formas de la sobrecarga.
 
@@ -81,7 +82,7 @@ La opción Palabra completa escribe el resto del nombre de una variable, un coma
 
 Las opciones de IntelliSense están activadas de forma predeterminada. Para desactivarla, haga clic en **Herramientas** > **Opciones** > **Editor de texto** y anule la selección de **Información de parámetros** o de **Lista de miembros automática** si no quiere usar la característica Lista de miembros.
 
-## <a name="troubleshooting-intellisense"></a>Solución de problemas de IntelliSense
+## <a name="troubleshoot-intellisense"></a>Solución de problemas de IntelliSense
 
 En algunos casos, es posible que las opciones de IntelliSense no funcionen como esperaba.
 
@@ -99,8 +100,8 @@ MessageBox( hWnd, "String literal|")
 
 ## <a name="see-also"></a>Vea también
 
-[IntelliSense de Visual Basic](../ide/visual-basic-specific-intellisense.md)  
-[IntelliSense para C#](../ide/visual-csharp-intellisense.md)  
-[IntelliSense para JavaScript](../ide/javascript-intellisense.md)  
-[Escribir y refactorizar código (C++)](/cpp/ide/writing-and-refactoring-code-cpp)  
-[Proporcionar comentarios del código XML](../ide/supplying-xml-code-comments.md)
+- [IntelliSense de Visual Basic](../ide/visual-basic-specific-intellisense.md)
+- [IntelliSense para C#](../ide/visual-csharp-intellisense.md)
+- [IntelliSense para JavaScript](../ide/javascript-intellisense.md)
+- [Escribir y refactorizar código (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
+- [Proporcionar comentarios en código XML](../ide/supplying-xml-code-comments.md)

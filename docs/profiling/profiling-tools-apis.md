@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b759d5ac7f86fe366a5a0394b4c288904ef5c589
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 62c7f173f278e03f5e28d6b03c117c7b69415abb
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255150"
 ---
 # <a name="profiling-tools-apis"></a>APIs de herramientas de generación de perfiles
 Puede insertar métodos administrados o nativos de las API de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para controlar la recopilación de datos en una generación de perfiles. En esta sección se describen los métodos de las API y cómo utilizarlos.  
@@ -30,7 +31,7 @@ Puede insertar métodos administrados o nativos de las API de las herramientas d
  Obtenga información sobre cómo utilizar los métodos de las herramientas de generación de perfiles de .NET en este ejemplo completo.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
- [Controlar la recopilación de datos](../profiling/controlling-data-collection.md)  
+ [Control de la recopilación de datos](../profiling/controlling-data-collection.md)  
   
 ## <a name="see-also"></a>Vea también  
  [Explorador de rendimiento](../profiling/performance-explorer.md)

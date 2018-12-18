@@ -1,5 +1,5 @@
 ---
-title: Administrador de sesión de depuración | Documentos de Microsoft
+title: Sesión de administrador de depuración | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,25 +18,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 001c0b954cd47b9825a6982f2474d6fd6d415e23
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 109dce19f85e0742217c1c478b1b1687fd5a33e8
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276330"
 ---
-# <a name="session-debug-manager"></a>Administrador de sesión de depuración
-El Administrador de sesión de depuración (SDM) administra cualquier número de motores de depuración (Alemania) cualquier número de programas en varios procesos en un número indeterminado de máquinas de depuración. Además de ser un motor de depuración multiplexor, el SDM proporciona una vista unificada de la sesión de depuración para el IDE.  
+# <a name="session-debug-manager"></a>Administrador de depuración de sesión
+El Administrador de depuración de la sesión (SDM) administra cualquier número de motores de depuración (DE) que va a depurar cualquier número de programas en varios procesos en cualquier número de máquinas. Además de ser un multiplexor de motor de depuración, el SDM proporciona una vista unificada de la sesión de depuración para el IDE.  
   
-## <a name="session-debug-manager-operation"></a>Operación del Administrador de depuración de sesión  
- El Administrador de sesión de depuración (SDM) administra la Alemania. Puede haber más de un motor de depuración que se ejecuta en un equipo al mismo tiempo. Para multiplexar el DEs, el SDM ajusta una serie de interfaces del DEs y los expone el IDE como una única interfaz.  
+## <a name="session-debug-manager-operation"></a>Operación de sesión de administrador de depuración  
+ El Administrador de depuración de la sesión (SDM) administra la DE. Puede haber más de un motor de depuración que se ejecutan en un equipo al mismo tiempo. Para multiplexar los DEs, el SDM incluye un número de interfaces de la DEs y los expone el IDE como una única interfaz.  
   
- Para aumentar el rendimiento, no se multiplexan algunas interfaces. En su lugar, se utilizan directamente desde el Alemania y llamadas a estas interfaces no pasar por el SDM. Por ejemplo, interfaces usadas con memoria, código y los contextos de documento no se multiplexan, porque hacen referencia a una instrucción específica, memoria o documento en un determinado programa depurado por un específico DE. No hay otro Alemania debe participar en el nivel de comunicación.  
+ Para aumentar el rendimiento, no se multiplexan algunas interfaces. En su lugar, se utilizan directamente desde la DE, y las llamadas a estas interfaces no pasan por el SDM. Por ejemplo, no se multiplexan interfaces usadas con memoria, el código y contextos de documento, porque hacen referencia a una instrucción específica, memoria o documento en un determinado programa depurado por una específica DE. No DE otro debe participar en el nivel de comunicación.  
   
- Esto no es cierto de todos los contextos. Llamadas a la interfaz de contexto de evaluación de expresión pasan a través de lo SDM. Al evaluar una expresión, se ajusta el SDM el [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interfaz que proporciona el IDE porque cuando se evalúa la expresión, puede implicar varios DEs que va a depurar programas en el mismo proceso que podrían ser se ejecuta en el mismo subproceso.  
+ Esto no es cierto de todos los contextos. Las llamadas a la interfaz de contexto de evaluación de expresión pasar por el SDM. Durante la evaluación de expresión, se ajusta el SDM el [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interfaz que proporciona el IDE porque cuando se evalúa la expresión, puede implicar varios DEs que va a depurar programas en el mismo proceso que podría ser que se ejecutan en el mismo subproceso.  
   
- El SDM normalmente actúa como un mecanismo de delegación, pero sí puede actuar como un mecanismo de difusión. Por ejemplo, al evaluar una expresión, el SDM actúa como un mecanismo de difusión para notificar DEs todos los que puede ejecutar el código en un subproceso especificado. De forma similar, cuando el SDM recibe un evento de detención, difunde a todos los programas que deben dejar de ejecutarse. Cuando se llama a un paso, difunde el SDM en todos los programas que puede continuar ejecutándose. Los puntos de interrupción también se difunden a cada Alemania.  
+ El SDM normalmente actúa como un mecanismo de delegación, pero sí puede actuar como un mecanismo de difusión. Por ejemplo, durante la evaluación de expresión, el SDM actúa como un mecanismo de difusión para notificar a todos los DEs que puede ejecutar el código en un subproceso especificado. De forma similar, cuando el SDM recibe un evento de detención, difunde a los programas que debe dejar de ejecutarse. Cuando se llama a un paso, el SDM difunde a los programas que puede seguir ejecutándose. Los puntos de interrupción también se difunden a cada DE.  
   
- El SDM no realiza un seguimiento del programa actual, el subproceso o el marco de pila. El proceso, el programa y el subproceso se envía información a la SDM junto con eventos específicos de depuración.  
+ El SDM no realiza un seguimiento del programa actual, el subproceso o marco de pila. El proceso, el programa y la información de subproceso se envían al SDM junto con eventos específicos de depuración.  
   
 ## <a name="see-also"></a>Vea también  
  [Motor de depuración](../../extensibility/debugger/debug-engine.md)   

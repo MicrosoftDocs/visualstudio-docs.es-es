@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: agregar elementos XML personalizados a personalizaciones de nivel de documento | Documentos de Microsoft'
+title: 'Cómo: agregar elementos XML personalizados a personalizaciones de nivel de documento'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,19 +20,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5126e5ca6eb83df70ed03a7491fdd5d2a98912e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0472ad001dee595f1f8edb77d7a70f1eefb0c024
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744874"
 ---
-# <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Cómo: Agregar elementos XML personalizados a personalizaciones de nivel de documento
-  Puede almacenar datos XML en un libro de Microsoft Office Excel o un documento de Microsoft Office Word creando un elemento XML personalizado en una personalización de nivel de documento. Para obtener más información, consulta [Custom XML Parts Overview](../vsto/custom-xml-parts-overview.md).  
+# <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Cómo: agregar elementos XML personalizados a personalizaciones de nivel de documento
+  Puede almacenar datos XML en un libro de Microsoft Office Excel o un documento de Microsoft Office Word creando un elemento XML personalizado en una personalización de nivel de documento. Para obtener más información, consulte [información general de elementos XML personalizados](../vsto/custom-xml-parts-overview.md).  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
 > [!NOTE]  
->  Visual Studio no ofrece proyectos de nivel de documento para Microsoft Office PowerPoint. Para obtener información sobre cómo agregar un elemento XML personalizado a una presentación de PowerPoint con un complemento de VSTO, consulte [Cómo: agregar elementos XML personalizados a documentos mediante uso de complementos VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md).  
+>  Visual Studio no ofrece proyectos de nivel de documento para Microsoft Office PowerPoint. Para obtener información sobre cómo agregar un elemento XML personalizado a una presentación de PowerPoint mediante el uso de un complemento de VSTO, consulte [Cómo: agregar elementos XML personalizados a documentos mediante complementos VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md).  
   
 ### <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>Para agregar un elemento XML personalizado a un libro de Excel  
   
@@ -54,13 +55,12 @@ ms.lasthandoff: 04/16/2018
   
 2.  Agregue el método `AddCustomXmlPartToDocument` a la clase `ThisDocument` en un proyecto de nivel de documento para Word.  
   
-3.  Llame al método desde otro código del proyecto. Por ejemplo, para crear el elemento XML personalizado cuando el usuario abre el documento, llame al método desde un controlador de eventos `ThisDocument_Startup` .  
+3.  Llame al método desde otro código del proyecto. Por ejemplo, para crear el elemento XML personalizado cuando el usuario abre el documento, llame al método desde un controlador de eventos `ThisDocument_Startup`.  
   
 ## <a name="robust-programming"></a>Programación sólida  
  Para simplificar, este ejemplo usa una cadena XML que se define como una variable local en el método. Normalmente, debe obtener el XML desde un origen externo, como un archivo o una base de datos.  
   
 ## <a name="see-also"></a>Vea también  
- [Custom XML Parts Overview](../vsto/custom-xml-parts-overview.md)   
- [Cómo: Agregar elementos XML personalizados a documentos mediante complementos VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)  
-  
+ [Información general sobre elementos XML personalizados](../vsto/custom-xml-parts-overview.md)   
+ [Cómo: agregar elementos XML personalizados a documentos mediante complementos de VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)  
   

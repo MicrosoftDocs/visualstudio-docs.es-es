@@ -1,5 +1,5 @@
 ---
-title: Información general de Color y fuente | Documentos de Microsoft
+title: Información general de Color y fuente | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,71 +14,72 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8185d5c931ccf0b3b15fba10405cf050eb7c6241
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: adf5877ae9b01666491e5d10522ba52b58b2d917
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845230"
 ---
-# <a name="font-and-color-overview"></a>Información general de Color y fuente
-Este tema describe la configuración de fuente y color del texto en el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE). También se presentan los conceptos de categorías y mostrar los elementos y describe cómo el editor básico y VSPackages usan atributos de texto.  
+# <a name="font-and-color-overview"></a>Información general de fuente y color
+Este tema describe la configuración de fuente y color del texto en el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE). También se presentan los conceptos de categorías y mostrar los elementos, y describe cómo VSPackages y el editor principal de utilizan los atributos de texto.  
   
-## <a name="the-fonts-and-colors-property-page"></a>La página de propiedad de colores y fuentes  
- Puede administrar los atributos de texto mostrado en el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE) a través de la **fuentes y colores** página de propiedades. Para buscar el **fuentes y colores** página de propiedades, en la **herramientas** menú, haga clic en **opciones**. Expanda **entorno**y, a continuación, haga clic en **fuentes y colores**.  
+## <a name="the-fonts-and-colors-property-page"></a>Las fuentes y colores propiedad página  
+ Puede administrar los atributos de texto mostrado en el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE) a través de la **fuentes y colores** página de propiedades. Para buscar el **fuentes y colores** página de propiedades, en el **herramientas** menú, haga clic en **opciones**. Expanda **entorno**y, a continuación, haga clic en **fuentes y colores**.  
   
 ## <a name="categories-and-display-items"></a>Categorías y mostrar los elementos  
- Fuentes y colores se organizan en **categorías** y **elementos para mostrar**.  
+ Fuentes y colores se organizan en **categorías** y **mostrar los elementos**.  
   
--   A **categoría** es un contenedor lógico o funcional para un número de **elementos para mostrar**.  
+- Un **categoría** es un contenedor lógico o funcional para un número de **mostrar los elementos**.  
   
-     Una lista de **categorías** está en el **mostrar valores para** cuadro de lista desplegable de la **fuentes y colores** página de propiedades.  
+   Una lista de **categorías** está en el **mostrar valores para** cuadro de lista desplegable de la **fuentes y colores** página de propiedades.  
   
--   A **elemento para mostrar** es una entidad de texto bien definido como un comentario, una cadena o una estructura de control que se colorea cuando aparezca.  
+- Un **Mostrar artículo** es una entidad de texto bien definido como un comentario, una cadena o una estructura de control es que se coloreará cuando aparezca.  
   
- Cada **elemento para mostrar** se define de forma única dentro de la **categoría** que lo contiene. Por lo tanto, más de un **categoría** puede tener un **elemento para mostrar** con el mismo nombre.  
+  Cada **Mostrar artículo** se define de forma única dentro de la **categoría** que lo contiene. Por lo tanto, más de un **categoría** puede tener un **Mostrar artículo** con el mismo nombre.  
   
-## <a name="vspackage-control-of-fonts-and-colors"></a>Control de VSPackage de fuentes y colores  
- El [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] permite VSPackages para:  
+## <a name="vspackage-control-of-fonts-and-colors"></a>VSPackage control de fuentes y colores  
+ El [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] permite que los VSPackages para:  
   
--   Definir la fuente y color **categorías**.  
+- Definir color y fuente **categorías**.  
   
--   Especificar las fuentes y los colores utilizados para presentar **elementos para mostrar**.  
+- Especifique las fuentes y colores usados para presentar **mostrar los elementos**.  
   
--   Interactuar con el **fuentes y colores** página de propiedades.  
+- Interactuar con el **fuentes y colores** página de propiedades.  
   
--   Agregado varios **categorías** en grupos.  
+- Agregado varios **categorías** en grupos.  
   
--   Conservar los cambios en la configuración predeterminada.  
+- Conservar los cambios en la configuración predeterminada.  
   
- Hay dos formas de interactuar con las selecciones de fuente y color dentro de la [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)].  
+  Hay dos formas de interactuar con las selecciones de fuente y color dentro de la [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)].  
   
--   Una manera se conoce como *colores de sintaxis*. Se utiliza por un paquete VSPackage que personaliza existente [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor para implementar un servicio de lenguaje y crear un origen de editor.  
+- Una manera se conoce como *colores de sintaxis*. Se usa un VSPackage que personaliza existente [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor para implementar un servicio de lenguaje y a crear un origen de editor.  
   
-     Solo un **categoría** es compatible con este mecanismo, es decir, el **Editor de texto**.  
+   Solo un **categoría** es compatible con este mecanismo, es decir, el **Editor de texto**.  
   
--   Una alternativa más general es compatible con todos los demás **categorías** y componentes de la interfaz de usuario que no sea el editor de código fuente para mostrar texto. Para obtener más información, consulta <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>.  
+- Una alternativa más general es compatible con todos los demás **categorías** y componentes de interfaz de usuario que no sea el editor de código fuente para mostrar texto. Para obtener más información, consulta <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>.  
   
-## <a name="core-editor-text-settings"></a>Configuración de texto del Editor de núcleo  
- Configuración de fuente y color para el editor principal de un objeto de servicio de lenguaje se rige por la **EditorCategory de texto** se encuentra en la **mostrar valores para** cuadro de lista desplegable de la **fuentes y colores** página de propiedades.  
+## <a name="core-editor-text-settings"></a>Configuración de texto del editor de núcleo  
+ Configuración de fuente y color para el editor básico de un objeto de servicio de lenguaje se rige por la **texto EditorCategory** se encuentra en la **mostrar valores para** cuadro de lista desplegable de la **fuentes y colores** página de propiedades.  
   
- Cuando se trabaja con editores, debe usar la fuente especializada y el mecanismo de control de color que proporciona el servicio de lenguaje para controlar y ampliar la **Editor de texto** configuración. El mecanismo se conoce como *colorear la sintaxis* y proporciona:  
+ Cuando se trabaja con los editores, debe usar la fuente especializado y el mecanismo de control de color que proporciona el servicio de lenguaje para controlar y ampliar el **Editor de texto** configuración. El mecanismo se denomina *colores de sintaxis* y proporciona:  
   
--   Una técnica simplificada para administrar las fuentes y colores de elementos para mostrar.  
+- Una técnica simplificada para administrar las fuentes y colores de elementos para mostrar.  
   
-     Para obtener más información, consulte <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> y <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>.  
+   Para obtener más información, vea <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> y <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>.  
   
--   Un mecanismo de coloración bien definidos y optimizados.  
+- Un mecanismo de coloración bien definidos y optimizados.  
   
-     Para obtener más información, consulta <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>.  
+   Para obtener más información, consulta <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>.  
   
--   La capacidad de ambos usan elementos de pantalla integrada desde la **EditorCategory de texto** y ampliarlas.  
+- Tanto la capacidad de usar los elementos de visualización integradas de la **EditorCategory texto** y a ampliarlos.  
   
-     Para obtener más información, consulte [Cómo: Use los elementos integrados coloreable](../extensibility/internals/how-to-use-built-in-colorable-items.md) y [elementos coloreable personalizado](../extensibility/internals/custom-colorable-items.md).  
+   Para obtener más información, consulte [Cómo: usar elementos coloreables integrados](../extensibility/internals/how-to-use-built-in-colorable-items.md) y [elementos coloreables personalizados](../extensibility/internals/custom-colorable-items.md).  
   
--   La persistencia automática del actual estado de ambos integrados y personalizado mostrar los elementos con el **Editor de texto** categoría.  
+- Persistencia automática del estado de ambos integrados y personalizado actual mostrar los elementos con el **Editor de texto** categoría.  
   
- Para obtener más información acerca de la sintaxis color vea [sintaxis de color en un servicio de lenguaje heredado](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).  
+  Para obtener más información sobre la sintaxis de color vea [colores de sintaxis en un servicio de lenguaje heredado](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Interfaces heredadas en el Editor](../extensibility/legacy-interfaces-in-the-editor.md)   
- [Colores de la sintaxis en un servicio de lenguaje heredado](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
+ [Interfaces heredadas en el editor](../extensibility/legacy-interfaces-in-the-editor.md)   
+ [Colores de sintaxis en un servicio de lenguaje heredado](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)

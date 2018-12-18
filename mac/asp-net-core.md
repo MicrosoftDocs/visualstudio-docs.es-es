@@ -1,14 +1,16 @@
 ---
 title: Introducción a ASP.NET Core
-author: asb3993
-ms.author: amburns
+description: En este artículo se describe cómo empezar a trabajar con ASP.NET en Visual Studio para Mac, incluida la instalación y la creación de un nuevo proyecto.
+author: conceptdev
+ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: 998bd304f287fffdf53dd9c53cb3be1d83a407f3
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 9576048cb6a62f7a4e8c93456154997af359a711
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296481"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introducción a ASP.NET Core
 
@@ -60,14 +62,14 @@ public static void Main(string[] args)
     host.Run();
 }
 ```
-Una aplicación de ASP.NET Core crea un servidor web en su método principal, para lo que configura e inicia un host mediante una instancia de [`WebHostBuilder`](https://docs.microsoft.com/aspnet/core/fundamentals/hosting). Este generador proporciona métodos que permiten configurar el host. En la aplicación de plantilla se usan las configuraciones siguientes:
+Una aplicación de ASP.NET Core crea un servidor web en su método principal, para lo que configura e inicia un host mediante una instancia de [`WebHostBuilder`](/aspnet/core/fundamentals/hosting). Este generador proporciona métodos que permiten configurar el host. En la aplicación de plantilla se usan las configuraciones siguientes:
 
- * `UseKestrel`: especifica que la aplicación usará el servidor Kestrel.
- * `UseContentRoot(Directory.GetCurrentDirectory())`: usa la carpeta raíz del proyecto web como raíz del contenido de la aplicación cuando la aplicación se inicia desde esta carpeta.
- * `.UseIISIntegration()`: especifica que la aplicación debería funcionar con IIS. Para usar IIS con ASP.NET Core, deben especificarse `UseKestrel` y `UseIISIntegration`.
- * `.UseStartup<Startup>()`: especifica la clase Startup.
+* `UseKestrel`: especifica que la aplicación usará el servidor Kestrel.
+* `UseContentRoot(Directory.GetCurrentDirectory())`: usa la carpeta raíz del proyecto web como raíz del contenido de la aplicación cuando la aplicación se inicia desde esta carpeta.
+* `.UseIISIntegration()`: especifica que la aplicación debería funcionar con IIS. Para usar IIS con ASP.NET Core, deben especificarse `UseKestrel` y `UseIISIntegration`.
+* `.UseStartup<Startup>()`: especifica la clase Startup.
 
- Los métodos de Compilación y ejecución compilan la interfaz IWebHost que hospedará la aplicación y la inician al escuchar las solicitudes HTTP entrantes.
+  Los métodos de Compilación y ejecución compilan la interfaz IWebHost que hospedará la aplicación y la inician al escuchar las solicitudes HTTP entrantes.
 
 ### <a name="startupcs"></a>Startup.cs
 
@@ -106,7 +108,7 @@ La clase Startup siempre debe cumplir las reglas siguientes:
 
 El método `ConfigureServices` define los servicios que usará la aplicación.
 
-`Configure` permite crear la canalización de solicitudes mediante [software intermedio](https://docs.microsoft.com/aspnet/core/fundamentals/middleware). Se trata de componentes que se usan dentro de una canalización de aplicación de ASP.NET para controlar las solicitudes y las respuestas. La canalización HTTP está formada por una serie de delegados de solicitud, a los que se llama en secuencia. Cada delegado puede elegir controlar la solicitud o pasarla al delegado siguiente.
+`Configure` permite crear la canalización de solicitudes mediante [software intermedio](/aspnet/core/fundamentals/middleware). Se trata de componentes que se usan dentro de una canalización de aplicación de ASP.NET para controlar las solicitudes y las respuestas. La canalización HTTP está formada por una serie de delegados de solicitud, a los que se llama en secuencia. Cada delegado puede elegir controlar la solicitud o pasarla al delegado siguiente.
 
 Puede configurar los delegados mediante los métodos `Run`, `Map` y `Use` en `IApplicationBuilder`, pero el método `Run` nunca llamará al delegado siguiente y siempre se debe usar al final de la canalización.
 
@@ -132,7 +134,7 @@ Las aplicaciones de ASP.NET Core usan el modelo de diseño Controlador de vista 
 - **View**: muestra la interfaz de usuario de la aplicación (que suelen ser los datos del modelo).
 - **Controller**: clase que controla las solicitudes del explorador y responde a la entrada y la interacción del usuario.
 
-Para obtener más información sobre el uso de MVC, vea la guía [Overview of ASP.NET Core MVC](https://docs.microsoft.com/aspnet/core/mvc/overview) (Introducción a MVC de ASP.NET Core).
+Para obtener más información sobre el uso de MVC, vea la guía [Overview of ASP.NET Core MVC](/aspnet/core/mvc/overview) (Introducción a MVC de ASP.NET Core).
 
 Para agregar un controlador, haga lo siguiente:
 
@@ -142,7 +144,7 @@ Para agregar un controlador, haga lo siguiente:
 
 2. Agregue el código siguiente al nuevo controlador:
 
-    ```
+    ```csharp
     using System;
     using Microsoft.AspNetCore.Mvc;
     using System.Text.Encodings.Web;
@@ -231,6 +233,6 @@ Complete los cuatro pasos correctamente para asegurarse de que .NET Core está i
 
 En esta guía, se le ha proporcionado una introducción a ASP.NET Core. Describe qué es, cuándo se usa y cómo se usa en Visual Studio para Mac.
 Para obtener más información sobre los pasos siguientes, vea las guías que se indican a continuación:
-- Documentos sobre [ASP.NET Core](https://docs.microsoft.com/aspnet/core/#build-web-ui-and-web-apis-using-aspnet-core-mvc).
-- [Creating Backend Services for Native Mobile Applications](https://docs.microsoft.com/aspnet/core/mobile/native-mobile-backend) (Crear servicios back-end para aplicaciones móviles nativas), donde se muestra cómo compilar un servicio REST mediante ASP.NET Core para una aplicación de Xamarin.Forms.
+- Documentos sobre [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc).
+- [Creating Backend Services for Native Mobile Applications](/aspnet/core/mobile/native-mobile-backend) (Crear servicios back-end para aplicaciones móviles nativas), donde se muestra cómo compilar un servicio REST mediante ASP.NET Core para una aplicación de Xamarin.Forms.
 - [Laboratorio práctico de ASP.NET Core](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).

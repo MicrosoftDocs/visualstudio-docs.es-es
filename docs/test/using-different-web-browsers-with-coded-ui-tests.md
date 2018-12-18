@@ -1,6 +1,7 @@
 ---
-title: Uso de diferentes exploradores web con las pruebas automatizadas de IU en Visual Studio | Microsoft Docs
+title: Usar diferentes exploradores web con las pruebas de IU codificadas
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,27 +9,30 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 061354c17fb2744e1700f30b10a20594a5091a6f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f7301ef674e3ad3b940204be30bfffa878f88e45
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895111"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Usar diferentes exploradores web con las pruebas automatizadas de IU
 
 Las pruebas de IU codificadas pueden automatizar las pruebas para las aplicaciones web grabando las pruebas con Internet Explorer. Después, puede personalizar la prueba y reproducirla de nuevo en Internet Explorer u otros tipos de exploradores para estas aplicaciones web.
 
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
+
 En primer lugar, instale los [componentes Selenium para pruebas automatizadas de IU en distintos exploradores](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
 
 ## <a name="whats-supported-across-all-web-browsers"></a>¿Qué se admite en todos los exploradores web?
 
--   [Agregar código personalizado para controlar características](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx) como propiedades, búsqueda y objetos Waiter de reproducción
+-   [Agregar código personalizado para controlar características](https://blogs.msdn.microsoft.com/devops/2012/12/09/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) como propiedades, búsqueda y objetos Waiter de reproducción
 
 -   Elementos emergentes y cuadros de diálogo
 
--   [Ejecutar JavaScript básico sin tipo de valor devuelto](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)
+-   [Ejecutar JavaScript básico sin tipo de valor devuelto](https://blogs.msdn.microsoft.com/devops/2013/01/18/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
--   Resistencia de búsqueda (mediante coincidencia inteligente) y [mejoras de rendimiento](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx)
+-   Resistencia de búsqueda (mediante coincidencia inteligente) y [mejoras de rendimiento](https://blogs.msdn.microsoft.com/devops/2012/01/31/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>¿Por qué se deben usar pruebas de IU codificadas en varios tipos de explorador web?
 
@@ -36,7 +40,7 @@ Al probar la aplicación web en varios tipos de explorador web, se emula mejor l
 
 ## <a name="how-do-i-record-and-play-back-coded-ui-tests-on-web-applications-using-the-supported-web-browsers"></a>¿Cómo grabar y reproducir pruebas de IU codificadas en aplicaciones web mediante los exploradores web admitidos?
 
-**Grabación**: debe usar el generador de pruebas automatizadas de IU para grabar la prueba de la aplicación web mediante Internet Explorer. Puede agregar opcionalmente validación y código personalizado para los controles probados utilizando un conjunto predefinido de propiedades, como lo haría normalmente para las pruebas de IU codificadas. Para más información, vea [Usar la automatización de IU para probar el código](../test/use-ui-automation-to-test-your-code.md).
+**Grabación**: debe usar el generador de pruebas automatizadas de IU para grabar la prueba de la aplicación web mediante Internet Explorer. Puede agregar opcionalmente validación y código personalizado para los controles probados utilizando un conjunto predefinido de propiedades, como lo haría normalmente para las pruebas de IU codificadas. Para obtener más información, vea [Usar la automatización de IU para probar el código](../test/use-ui-automation-to-test-your-code.md).
 
 > [!NOTE]
 > No puede grabar pruebas de IU codificadas con los exploradores Google Chrome o Mozilla Firefox.
@@ -51,14 +55,14 @@ Al probar la aplicación web en varios tipos de explorador web, se emula mejor l
 
 1.  En el menú **Herramientas** , elija **Extensiones y actualizaciones**.
 
-2.  En el cuadro de diálogo Extensiones y actualizaciones, busque `Selenium components for Cross Browser Testing`.
+2.  En el cuadro de diálogo **Extensiones y actualizaciones**, busque `Selenium components for Cross Browser Testing`.
 
 3.  Resalte la extensión y seleccione **Descargar**.
 
     > [!TIP]
     > También puede descargar los componentes Selenium para pruebas automatizadas de IU en distintos exploradores [aquí](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
 
-Para más información sobre cómo crear y usar pruebas automatizadas de IU, vea la sección relativa a la [creación de pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md).
+Para obtener más información sobre cómo crear y usar pruebas automatizadas de IU, vea la sección relativa a la [creación de pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md).
 
 ### <a name="enable-debugging"></a>Habilitar depuración
 
@@ -92,7 +96,7 @@ Otra información que debe saber:
 
 Puede configurar la salida para incluir capturas de pantalla en los registros de IU codificados. Para ello, debe establecer algunas opciones de configuración en el archivo *QTAgent32.exe.config*. De forma predeterminada, este archivo se instala en la siguiente ubicación:
 
-     *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*
+*%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*
 
 Establezca los siguientes valores:
 
@@ -102,7 +106,7 @@ Establezca los siguientes valores:
 
    Al establecer el valor en 3 o más, se toman capturas de pantalla para cada acción. Cuando el valor se establece en 1 o 2, las capturas de pantalla se toman solo para acciones de error.
 
-Para obtener más información, consulte [Analizar pruebas de IU codificadas usando los registros de pruebas de IU codificadas](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).
+Para obtener más información, vea [Análisis de pruebas automatizadas de IU mediante los registros de pruebas automatizadas de IU](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).
 
 ## <a name="video-resources"></a>Recursos de vídeo
 
@@ -118,6 +122,6 @@ Para obtener más información, consulte [Analizar pruebas de IU codificadas usa
 
 ## <a name="see-also"></a>Vea también
 
-- [Usar Automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
-- [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-- [Analizar pruebas de IU codificadas mediante los registros de pruebas de IU codificadas](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)
+- [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
+- [Configuraciones y plataformas compatibles con las pruebas automatizadas de IU y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Analizar pruebas automatizadas de IU mediante los registros de pruebas automatizadas de IU](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

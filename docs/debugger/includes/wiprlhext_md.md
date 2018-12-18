@@ -14,9 +14,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: fa8443ce0c6ac3c1ccaaeb17ef670786d2e6bbc6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
-ms.translationtype: MT
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "38943290"
 ---
 Windows Vista

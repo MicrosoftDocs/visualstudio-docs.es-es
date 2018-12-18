@@ -19,25 +19,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ea13b4d097792baf2da46745be2f64a565fdf2e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7b72ce231b514250a40e9f3a4bf5ceb5aa2c69f8
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178896"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator (Tarea)
-La tarea <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> inserta uno o varios recursos (.jpg, .ico, .bmp, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] en formato binario y en otros tipos de extensiones) en un archivo .resources.  
+La tarea <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> inserta uno o varios recursos (*.jpg*, *.ico*, *.bmp*, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] en formato binario y en otros tipos de extensiones) en un archivo *.resources*.  
   
 ## <a name="task-parameters"></a>Parámetros de tareas  
   
-|Parámetro|Description|  
+|Parámetro|Descripción|  
 |---------------|-----------------|  
-|`OutputPath`|Parámetro obligatorio de tipo **String**.<br /><br /> Especifica la ruta de acceso del directorio de salida. Si la ruta de acceso no es una ruta absoluta, se trata como si fuese una ruta relativa al directorio raíz del proyecto.|  
-|`OutputResourcesFile`|Parámetro de salida obligatorio de tipo **ITaskItem[]**.<br /><br /> Especifica la ruta de acceso y el nombre del archivo .resources generado. Si la ruta de acceso no es una ruta absoluta, el archivo .resources se genera respecto al directorio raíz del proyecto.|  
-|`ResourcesFiles`|Parámetro obligatorio de tipo **ITaskItem[]**.<br /><br /> Especifica uno o más recursos que se van a insertar en el archivo .resources generado.|  
+|`OutputPath`|Parámetro obligatorio de tipo **String**.<br /><br /> Especifica la ruta de acceso del directorio de salida. Si la ruta de acceso no es una ruta de acceso absoluta, se trata como si fuese una ruta de acceso relativa al directorio raíz del proyecto.|  
+|`OutputResourcesFile`|Parámetro de salida obligatorio de tipo **ITaskItem[]**.<br /><br /> Especifica la ruta de acceso y el nombre del archivo *.resources* generado. Si la ruta de acceso no es una ruta absoluta, el archivo *.resources* se genera respecto al directorio raíz del proyecto.|  
+|`ResourcesFiles`|Parámetro obligatorio de tipo **ITaskItem[]**.<br /><br /> Especifica uno o más recursos que se van a insertar en el archivo *.resources* generado.|  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente, se genera un archivo .resources con un solo recurso .bmp. El recurso .bmp se genera en un directorio que es relativo al directorio raíz del proyecto.  
+ En el ejemplo siguiente, se genera un archivo *.resources* con un solo recurso *.bmp*. El recurso *.bmp* se genera en un directorio que es relativo al directorio raíz del proyecto.  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  

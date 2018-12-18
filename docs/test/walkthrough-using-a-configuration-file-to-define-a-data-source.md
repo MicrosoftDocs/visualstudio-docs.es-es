@@ -1,6 +1,7 @@
 ---
-title: 'Tutorial: Utilizar un archivo de configuración para definir un origen de datos en Visual Studio | Microsoft Docs'
+title: 'Tutorial: Usar un archivo de configuración para definir un origen de datos en Visual Studio'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,141 +13,144 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 569aa39e9c5c749ac4497e4e6e08a9d5b34c657f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 64d01fd3551ee94cef178cb840742721db58a360
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821622"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Tutorial: Utilizar un archivo de configuración para definir un origen de datos
 
-Este tutorial muestra cómo usar un origen de datos definido en un archivo *app.config* para pruebas unitarias. Aprenderá a crear un archivo app.config que define un origen de datos que se puede usar en la clase <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. En este tutorial se presentan las tareas siguientes:
+Este tutorial muestra cómo usar un origen de datos definido en un archivo *app.config* para pruebas unitarias. Aprenderá a crear un archivo *app.config* que define un origen de datos que se puede usar en la clase <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. En este tutorial se presentan las tareas siguientes:
 
--   Creación de un archivo app.config.
+- Creación de un archivo *app.config*.
 
--   Definición de una sección de configuración personalizada.
+- Definición de una sección de configuración personalizada.
 
--   Definición de cadenas de conexión.
+- Definición de cadenas de conexión.
 
--   Definición de orígenes de datos.
+- Definición de orígenes de datos.
 
--   Acceso a los orígenes de datos mediante la clase <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.
+- Acceso a los orígenes de datos mediante la clase <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.
 
 ## <a name="prerequisites"></a>Requisitos previos
- Para completar este tutorial, necesita lo siguiente:
 
--   Visual Studio Enterprise
+Para completar este tutorial, necesita lo siguiente:
 
--   Que Microsoft Access o Microsoft Excel proporcione datos para al menos uno de los métodos de prueba.
+- Visual Studio Enterprise
 
--   Una solución de Visual Studio que contenga un proyecto de prueba.
+- Que Microsoft Access o Microsoft Excel proporcione datos para al menos uno de los métodos de prueba.
 
-## <a name="create-the-appconfig-file"></a>Crear el archivo app.config
+- Una solución de Visual Studio que contenga un proyecto de prueba.
 
-### <a name="to-add-an-appconfig-file-to-the-project"></a>Para agregar un archivo app.config al proyecto:
+## <a name="add-an-appconfig-file-to-the-project"></a>Agregar un archivo app.config al proyecto
 
-1.  Si el proyecto de prueba ya incluye un archivo app.config, vaya a [Definir una sección de configuración personalizada](#DefineCustomConfigurationSection).
+1. Si el proyecto de prueba ya incluye un archivo *app.config*, vaya a [Definir una sección de configuración personalizada](#define-a-custom-configuration-section).
 
-2.  En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto de prueba, apunte a **Agregar** y haga clic en **Nuevo elemento**.
+2. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto de prueba y luego seleccione **Agregar** > **Nuevo elemento**.
 
      Se abrirá la ventana **Agregar nuevo elemento**.
 
-3.  Seleccione la plantilla **Archivo de configuración de aplicaciones** y haga clic en **Agregar**.
+3. Seleccione la plantilla **Archivo de configuración de aplicaciones** y haga clic en **Agregar**.
 
-##  <a name="DefineCustomConfigurationSection"></a> Definir una sección de configuración personalizada
- Examine el archivo app.config. Debe contener al menos la declaración XML y un elemento raíz.
+##  <a name="define-a-custom-configuration-section"></a>Definir una sección de configuración personalizada
+
+Examine el archivo *app.config*. Debe contener al menos la declaración XML y un elemento raíz.
 
 ### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>Para agregar la sección de configuración personalizada al archivo app.config
 
-1.  El elemento raíz de app.config debe ser el elemento `configuration`. Cree un elemento `configSections` en el elemento `configuration`. El elemento `configSections` debe ser el primero en el archivo app.config.
+1. El elemento raíz de *app.config* debe ser el elemento **configuration**. Crear un elemento **configSections** dentro del elemento **configuration**. El elemento **configSections** debe ser el primero en el archivo *app.config*.
 
-2.  Dentro del elemento `configSections`, cree un elemento `section`.
+2. En el elemento **configSections**, cree un elemento **section**.
 
-3.  En el elemento `section`, agregue un atributo denominado `name` y asígnele un valor igual a `microsoft.visualstudio.testtools`. Agregue otro atributo denominado `type` y asígnele un valor igual a `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`.
+3. En el elemento **section**, agregue un atributo denominado `name` y asígnele un valor igual a `microsoft.visualstudio.testtools`. Agregue otro atributo denominado `type` y asígnele un valor de `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`.
 
- El elemento `section` debe ser similar a este:
+El elemento **section** debe ser similar a este:
 
-```
+```xml
 <section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
 ```
 
 > [!NOTE]
->  El nombre del ensamblado debe coincidir con la compilación de Microsoft Visual Studio .NET Framework que está usando. Establezca la versión en 9.0.0.0 si usa Visual Studio .NET Framework 3.5. Si usa Visual Studio .NET Framework 2.0, establezca la versión en 8.0.0.0.
+> El nombre del ensamblado debe coincidir con la compilación de Microsoft Visual Studio .NET Framework que está usando. Establezca la versión en 9.0.0.0 si usa Visual Studio .NET Framework 3.5. Si usa Visual Studio .NET Framework 2.0, establezca la versión en 8.0.0.0.
 
 ## <a name="define-connection-strings"></a>Definir cadenas de conexión
- Las cadenas de conexión definen la información específica del proveedor para acceder a los orígenes de datos. Las cadenas de conexión definidas en los archivos de configuración proporcionan información del proveedor de datos reutilizable en una aplicación. En esta sección, creará dos cadenas de conexión para que las usen los orígenes de datos definidos en la sección de configuración personalizada.
+
+Las cadenas de conexión definen la información específica del proveedor para acceder a los orígenes de datos. Las cadenas de conexión definidas en los archivos de configuración proporcionan información del proveedor de datos reutilizable en una aplicación. En esta sección, creará dos cadenas de conexión para que las usen los orígenes de datos definidos en la sección de configuración personalizada.
 
 ### <a name="to-define-connection-strings"></a>Para definir cadenas de conexión:
 
-1.  Tras el elemento `configSections`, cree un elemento `connectionStrings`.
+1. Después del elemento **configSections**, cree un elemento **connectionStrings**.
 
-2.  Dentro del elemento `connectionStrings`, cree dos elementos `add`.
+2. En el elemento **connectionStrings**, cree dos elementos **add**.
 
-3.  En el primer elemento `add`, cree los atributos y los valores siguientes para una conexión con una base de datos de Microsoft Access:
+3. En el primer elemento **add**, cree los atributos y los valores siguientes para una conexión con una base de datos de Microsoft Access:
 
 |Atributo|Valores|
-|---------------|------------|
+|-|------------|
 |`name`|`"MyJetConn"`|
 |`connectionString`|`"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;"`|
 |`providerName`|`"System.Data.OleDb"`|
 
- En el segundo elemento `add`, cree los atributos y los valores siguientes para una conexión con una hoja de cálculo de Microsoft Excel:
+En el segundo elemento **add**, cree los atributos y los valores siguientes para una conexión con una hoja de cálculo de Microsoft Excel:
 
-|||
+|Atributo|Valores|
 |-|-|
 |`name`|`"MyExcelConn"`|
-|`connectionString`|`"Dsn=Excel Files;dbq=data.xlsx;defaultdir=.; driverid=790;maxbuffersize=2048;pagetimeout=5"`|
+|`connectionString`|`"Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5"`|
 |`providerName`|`"System.Data.Odbc"`|
 
- El elemento `connectionStrings` debe ser similar a este:
+Este elemento **connectionStrings** debe ser similar a este:
 
-```
+```xml
 <connectionStrings>
     <add name="MyJetConn" connectionString="Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;" providerName="System.Data.OleDb" />
-    <add name="MyExcelConn" connectionString="Dsn=Excel Files;dbq=data.xlsx;defaultdir=.; driverid=790;maxbuffersize=2048;pagetimeout=5" providerName="System.Data.Odbc" />
+    <add name="MyExcelConn" connectionString="Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5" providerName="System.Data.Odbc" />
 </connectionStrings>
 ```
 
 ## <a name="define-data-sources"></a>Definir orígenes de datos
- La sección de orígenes de datos contiene cuatro atributos con los que el motor de pruebas recuperará los datos de un origen de datos.
 
--   `name` define la identidad con la que <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> especifica el origen de datos que se debe usar.
+La sección de orígenes de datos contiene cuatro atributos con los que el motor de pruebas recuperará los datos de un origen de datos.
 
--   `connectionString` identifica la cadena de conexión que ha creado en la sección Definir cadenas de conexión anterior.
+- `name` define la identidad con la que <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> especifica el origen de datos que se debe usar.
 
--   `dataTableName` define la tabla o la hoja que contiene los datos que se van a usar en la prueba.
+- `connectionString` identifica la cadena de conexión que ha creado en la sección Definir cadenas de conexión anterior.
 
--   `dataAccessMethod` define la técnica para acceder a los valores de datos del origen de datos.
+- `dataTableName` define la tabla o la hoja que contiene los datos que se van a usar en la prueba.
 
- En esta sección, definirá dos orígenes de datos que se usarán en una prueba unitaria.
+- `dataAccessMethod` define la técnica para acceder a los valores de datos del origen de datos.
+
+En esta sección, definirá dos orígenes de datos que se usarán en una prueba unitaria.
 
 ### <a name="to-define-data-sources"></a>Para definir orígenes de datos:
 
-1.  Tras el elemento `connectionStrings`, cree un elemento `microsoft.visualstudio.testtools`. El contenido de esta sección ya se ha creado en Definir una sección de configuración personalizada.
+1. Después del elemento **connectionStrings**, cree un elemento **microsoft.visualstudio.testtools**. El contenido de esta sección ya se ha creado en Definir una sección de configuración personalizada.
 
-2.  Dentro del elemento `microsoft.visualstudio.testtools`, cree un elemento `dataSources`.
+2. En el elemento **microsoft.visualstudio.testtools**, cree un elemento **dataSources**.
 
-3.  Dentro del elemento `dataSources`, cree dos elementos `add`.
+3. En el elemento **dataSources**, cree dos elementos **add**.
 
-4.  En el primer elemento `add`, cree los atributos y los valores siguientes para un origen de datos de Microsoft Access:
+4. En el primer elemento **add**, cree los atributos y los valores siguientes para un origen de datos de Microsoft Access:
 
 |Atributo|Valores|
-|---------------|------------|
+|-|------------|
 |`name`|`"MyJetDataSource"`|
 |`connectionString`|`"MyJetConn"`|
 |`dataTableName`|`"MyDataTable"`|
 |`dataAccessMethod`|`"Sequential"`|
 
- En el segundo elemento `add`, cree los atributos y los valores siguientes para un origen de datos de Microsoft Excel:
+En el segundo elemento **add**, cree los atributos y los valores siguientes para un origen de datos de Microsoft Excel:
 
-|||
+|Atributo|Valores|
 |-|-|
 |`Name`|`"MyExcelDataSource"`|
 |`connectionString`|`"MyExcelConn"`|
 |`dataTableName`|`"Sheet1$"`|
 |`dataAccessMethod`|`"Sequential"`|
 
-El elemento `microsoft.visualstudio.testtools` debe ser similar a este:
+El elemento **microsoft.visualstudio.testtools** debe ser similar al siguiente:
 
 ```xml
 <microsoft.visualstudio.testtools>
@@ -157,7 +161,7 @@ El elemento `microsoft.visualstudio.testtools` debe ser similar a este:
 </microsoft.visualstudio.testtools>
 ```
 
-El archivo app.config final debe ser similar a este:
+El archivo *app.config* final debe ser similar a este:
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -167,7 +171,7 @@ El archivo app.config final debe ser similar a este:
     </configSections>
     <connectionStrings>
         <add name="MyJetConn" connectionString="Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;" providerName="System.Data.OleDb" />
-        <add name="MyExcelConn" connectionString="Dsn=Excel Files;dbq=data.xlsx;defaultdir=.; driverid=790;maxbuffersize=2048;pagetimeout=5" providerName="System.Data.Odbc" />
+        <add name="MyExcelConn" connectionString="Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5" providerName="System.Data.Odbc" />
     </connectionStrings>
     <microsoft.visualstudio.testtools>
         <dataSources>
@@ -178,46 +182,47 @@ El archivo app.config final debe ser similar a este:
 </configuration>
 ```
 
-## <a name="create-a-unit-test-using-data-sources-defined-in-appconfig"></a>Crear una prueba unitaria con los orígenes de datos definidos en app.config
- Una vez definido el archivo app.config, deberá crear una prueba unitaria que use los datos ubicados en los orígenes de datos definidos en dicho archivo. En esta sección:
+## <a name="create-a-unit-test-that-uses-data-sources-defined-in-appconfig"></a>Crear una prueba unitaria que use los orígenes de datos definidos en app.config
 
--   Creará los orígenes de datos que se encuentran en el archivo app.config.
+Una vez definido el archivo *app.config*, deberá crear una prueba unitaria que use los datos ubicados en los orígenes de datos definidos en dicho archivo. En esta sección:
 
--   Usará los orígenes de datos en dos métodos de prueba que comparan los valores de cada uno de estos orígenes.
+- Creará los orígenes de datos que se encuentran en el archivo *app.config*.
+
+- Usará los orígenes de datos en dos métodos de prueba que comparan los valores de cada uno de estos orígenes.
 
 ### <a name="to-create-a-microsoft-access-data-source"></a>Para crear un origen de datos de Microsoft Access:
 
-1.  Cree una base de datos de Microsoft Access denominada `testdatasource.accdb`.
+1. Cree una base de datos de Microsoft Access denominada *testdatasource.accdb*.
 
-2.  Cree una tabla y asígnele el nombre de `MyDataTable` en `testdatasource.accdb`.
+2. Cree una tabla y asígnele el nombre `MyDataTable` en *testdatasource.accdb*.
 
-3.  Cree dos campos en `MyDataTable` denominados `Arg1` y `Arg2` con el tipo de datos `Number`.
+3. Cree dos campos en `MyDataTable` denominados `Arg1` y `Arg2` con el tipo de datos `Number`.
 
-4.  Agregue cinco entidades a `MyDataTable` con los valores siguientes para `Arg1` y `Arg2` respectivamente: (10,50), (3,2), (6,0), (0,8) y (12312,1000).
+4. Agregue cinco entidades a `MyDataTable` con los valores siguientes para `Arg1` y `Arg2` respectivamente: (10,50), (3,2), (6,0), (0,8) y (12312,1000).
 
-5.  Guarde y cierre la base de datos.
+5. Guarde y cierre la base de datos.
 
-6.  Cambie la cadena de conexión para que apunte a la ubicación de la base de datos. Cambie el valor de `Data Source` para que refleje la ubicación de la base de datos.
+6. Cambie la cadena de conexión para que apunte a la ubicación de la base de datos. Cambie el valor de `Data Source` para que refleje la ubicación de la base de datos.
 
 ### <a name="to-create-a-microsoft-excel-data-source"></a>Para crear un origen de datos de Microsoft Excel:
 
-1.  Cree una hoja de cálculo de Microsoft Excel denominada `data.xlsx`.
+1. Cree una hoja de cálculo de Microsoft Excel denominada *data.xlsx*.
 
-2.  Cree una hoja denominada `Sheet1` si no existe en `data.xlsx`.
+2. Cree una hoja denominada `Sheet1` si no existe en *data.xlsx*.
 
-3.  Cree dos encabezados de columna y asígneles los nombres de `Val1` y `Val2` en `Sheet1`.
+3. Cree dos encabezados de columna y asígneles los nombres de `Val1` y `Val2` en `Sheet1`.
 
-4.  Agregue cinco entidades a `Sheet1` con los valores siguientes para `Val1` y `Val2` respectivamente: (1,1), (2,2), (3,3), (4,4) y (5,0).
+4. Agregue cinco entidades a `Sheet1` con los valores siguientes para `Val1` y `Val2` respectivamente: (1,1), (2,2), (3,3), (4,4) y (5,0).
 
-5.  Guarde y cierre la hoja de cálculo.
+5. Guarde y cierre la hoja de cálculo.
 
-6.  Cambie la cadena de conexión para que apunte a la ubicación de la hoja de cálculo. Cambie el valor de `dbq` para que refleje la ubicación de la hoja de cálculo.
+6. Cambie la cadena de conexión para que apunte a la ubicación de la hoja de cálculo. Cambie el valor de `dbq` para que refleje la ubicación de la hoja de cálculo.
 
 ### <a name="to-create-a-unit-test-using-the-appconfig-data-sources"></a>Para crear una prueba unitaria con los orígenes de datos de app.config:
 
-1.  Agregue una prueba unitaria al proyecto de prueba.
+1. Agregue una prueba unitaria al proyecto de prueba.
 
-2.  Reemplace el contenido de la prueba unitaria generado automáticamente por el código siguiente:
+2. Reemplace el contenido de la prueba unitaria generado automáticamente por el código siguiente:
 
     ```csharp
     using System;
@@ -257,9 +262,9 @@ El archivo app.config final debe ser similar a este:
     }
     ```
 
-3.  Examine los atributos DataSource. Observe los nombres de configuración del archivo app.config.
+3. Examine los atributos DataSource. Observe los nombres de configuración del archivo *app.config*.
 
-4.  Compile la solución y ejecute las pruebas MyTestMethod y MyTestMethod2.
+4. Compile la solución y ejecute las pruebas MyTestMethod y MyTestMethod2.
 
 > [!IMPORTANT]
 > Implemente los elementos como los orígenes de datos, para que la prueba pueda acceder a ellos en el directorio de implementación.

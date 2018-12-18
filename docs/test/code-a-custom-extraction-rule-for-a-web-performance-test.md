@@ -1,5 +1,5 @@
 ---
-title: Codificación de una regla de extracción personalizada para una prueba de rendimiento web en Visual Studio | Microsoft Docs
+title: Codificación de una regla de extracción personalizada para una prueba de rendimiento web
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,19 +13,23 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 748b1f726a74fd0af1545a5bdb9c620b1ffb2a4d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41e9a025db4ec9c8425e0de6ba4ecad25f775d50
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066683"
 ---
-# <a name="coding-a-custom-extraction-rule-for-a-web-performance-test"></a>Codificación de una regla de extracción personalizada para una prueba de rendimiento web
+# <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Codificar una regla de extracción personalizada para una prueba de rendimiento web
 
 Puede crear sus propias reglas de extracción. Para ello, derive sus propias reglas de una clase de regla de extracción. Las reglas de extracción derivan de la clase base <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>.
 
 > [!NOTE]
 > También puede crear reglas de validación personalizadas. Para obtener más información, consulte [Crear código y complementos personalizados para las pruebas de carga](../test/create-custom-code-and-plug-ins-for-load-tests.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-a-custom-extraction-rule"></a>Para crear una regla de extracción personalizada
 
@@ -42,9 +46,9 @@ Puede crear sus propias reglas de extracción. Para ello, derive sus propias reg
 
 5.  (Opcional) Compile el nuevo proyecto de biblioteca de clases.
 
-6.  (Opcional) En el Proyecto de prueba, agregue una referencia al proyecto de bibliotecas de clases que contiene la regla de extracción personalizada.
+6.  (Opcional) En el proyecto de prueba, agregue una referencia al proyecto de bibliotecas de clases que contiene la regla de extracción personalizada.
 
-7.  En el Proyecto de prueba, abra una prueba de rendimiento web en el **Editor de prueba de rendimiento web**.
+7.  En el proyecto de prueba, abra una prueba de rendimiento web en el **Editor de pruebas de rendimiento web**.
 
 8.  Para agregar la regla de extracción personalizada, haga clic con el botón derecho en una solicitud de prueba de rendimiento web y seleccione **Agregar regla de extracción**.
 

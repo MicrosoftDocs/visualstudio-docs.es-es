@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a34d9a6f403345bb84f172c416dda62f0109ec2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7f70f685fe8792f698dcc397b2f3fc9ccb6de8dc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927728"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
 Este método obtiene el estado actual de editar y continuar del proceso. Siempre debe devolver un proveedor de puerto personalizado `E_NOTIMPL`.  
@@ -43,7 +44,7 @@ int GetENCAvailableState(
  [out] Un valor de la [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) enumeración.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve el código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.  
   
 > [!NOTE]
 >  Siempre debe devolver un proveedor de puerto personalizado `E_NOTIMPL`.  

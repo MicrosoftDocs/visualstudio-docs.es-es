@@ -10,18 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acaf2271357cb33cfaadbe9da653a8f57bd5627d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 20f152a1c282688fb00428274e450d7073dfa946
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254888"
 ---
 # <a name="output"></a>Salida
 La opción **Output** especifica el nombre del archivo de datos de generación de perfiles para la sesión de rendimiento. **Output** debe usarse con la opción **Start**.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Method /Output:FileName [Options]  
 ```  
   
@@ -38,12 +39,12 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente, el archivo de datos de generación de perfiles se crea en el directorio actual.  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 ```  
   
 ## <a name="see-also"></a>Vea también  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Generar perfiles de servicios](../profiling/command-line-profiling-of-services.md)
+ [Generación de perfiles de aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Generación de perfiles de aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Generar perfiles para servicios](../profiling/command-line-profiling-of-services.md)

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142764"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Extensiones de Visual Studio de envío
 Una vez haya terminado de desarrollar la extensión, puede instalar en otros equipos, compartirlo con amigos y compañeros de trabajo o publicarlo en el catálogo de soluciones de Visual Studio. En esta sección se explica todo lo que debe hacer para publicar y mantener la extensión: trabajar con archivos .vsix, publicación, la localización y la actualización.  

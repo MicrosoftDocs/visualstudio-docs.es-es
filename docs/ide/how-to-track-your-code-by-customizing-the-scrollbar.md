@@ -1,62 +1,74 @@
 ---
-title: "Cómo: Hacer un seguimiento del código personalizando la barra de desplazamiento | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+title: Modo Mapa y modo Barra de la barra de desplazamiento
+ms.date: 09/25/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8f56e834e6c2b80706e4ed1d1a91583e1015791b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 6f60d7f573ed275ff4d827e0a4209f21444ee64c
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219957"
 ---
-# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Cómo: Hacer un seguimiento del código personalizando la barra de desplazamiento
+# <a name="how-to-customize-the-scroll-bar"></a>Personalización de la barra de desplazamiento
 
-Al trabajar con archivos de código largos, puede ser difícil tenerlo todo en mente. Puede personalizar la barra de desplazamiento de la ventana de código para tener una visión general de lo que sucede en el código.
+Al trabajar con archivos de código largo, puede ser difícil llevar la cuenta de todo lo que está en el archivo. Puede personalizar la barra de desplazamiento del editor de código para tener una visión general de lo que sucede en el código.
 
-## <a name="to-show-annotations-on-the-scroll-bar"></a>Para mostrar anotaciones en la barra de desplazamiento
+## <a name="annotations"></a>Anotaciones
 
-1. Puede configurar la barra de desplazamiento para mostrar cambios en el código, puntos de interrupción, errores y marcadores.
+Puede seleccionar si la barra de desplazamiento muestra anotaciones como cambios de código, puntos de interrupción, marcadores, errores y posición del símbolo de intercalación.
 
-    Abra la página de opciones **Barra de desplazamiento**; para ello, elija **Herramientas** > **Opciones** > **Editor de texto** > **Todos los lenguajes** (o un lenguaje concreto), o bien escriba **barra de desplazamiento** en la ventana Inicio rápido.
+   1. Para abrir la página de opciones **Barras de desplazamiento**, elija **Herramientas** > **Opciones** > **Editor de texto** > **Todos los lenguajes** > **Barras de desplazamiento**.
 
-2. Seleccione **Mostrar anotaciones en la barra de desplazamiento vertical** y después seleccione las anotaciones que quiere ver.
+   2. Seleccione **Mostrar anotaciones en la barra de desplazamiento vertical** y seleccione las anotaciones que quiere ver. Las anotaciones disponibles son:
 
-    La opción **Marcas** incluye puntos de interrupción y marcadores.
+      - trabajando
+      - marcas
+      - errores
+      - posición del símbolo de intercalación
 
-3. Ahora, pruébela. Abra un archivo de código grande y reemplace algo que aparezca en varios lugares del archivo. La barra de desplazamiento muestra el efecto de los reemplazos, por lo que puede revertir los cambios si ha reemplazado algo que no debería haber reemplazado.
+      > [!TIP]
+      > La opción **Mostrar marcas** incluye puntos de interrupción y marcadores.
 
-    Este es el aspecto de la barra de desplazamiento tras buscar una cadena. Observe que aparecen todas las instancias de la cadena.
+Para probarla, abra un archivo de código largo y reemplace texto que aparezca en distintos lugares del archivo. La barra de desplazamiento muestra el efecto de los reemplazos, por lo que puede revertir los cambios si ha reemplazado algo que no debería haber reemplazado.
 
-    ![Barra de desplazamiento después de buscar una cadena.](../ide/media/enhancedscrollbarsearch.png "EnhancedScrollbarSearch")
+Este es el aspecto de la barra de desplazamiento tras buscar una cadena. Observe que todas las instancias de la cadena aparecen en la barra de desplazamiento.
 
-    Aquí se muestra la barra de desplazamiento después de reemplazar todas las instancias de la cadena. Verá inmediatamente que la operación ha provocado algunos problemas.
+![Barra de desplazamiento de Visual Studio después de buscar una cadena](../ide/media/enhancedscrollbarsearch.png)
 
-    ![Barra de desplazamiento después de reemplazar una cadena con errores](../ide/media/enhancedscrollbarreplace.png "EnhancedScrollbarReplace")
+Aquí se muestra la barra de desplazamiento después de reemplazar todas las instancias de la cadena. Las marcas rojas en la barra de desplazamiento muestran dónde el reemplazo de texto generó errores.
 
-## <a name="to-set-the-display-mode-for-the-scroll-bar"></a>Para establecer el modo de presentación de la barra de desplazamiento
+![Barra de desplazamiento de Visual Studio después de reemplazar una cadena con errores](../ide/media/enhancedscrollbarreplace.png)
 
-1. La barra de desplazamiento tiene dos modos: el modo Barra (predeterminado) y el modo Mapa. El modo Barra solo muestra indicadores de anotación en la barra de desplazamiento. En el modo Mapa, las líneas de código se representan en la barra de desplazamiento. Puede elegir el ancho y si desea que muestren el código subyacente al situar el puntero sobre ellas. Al hacer clic en una ubicación de la barra de desplazamiento, el cursor se desplaza a esa ubicación del código. Las zonas contraídas están sombreadas de forma diferente; se expanden al hacer doble clic en ellas.
+## <a name="display-modes"></a>Modos de presentación
 
-    En la página de opciones **Barra de desplazamiento**, seleccione **Usar el modo Barra para la barra de desplazamiento vertical** o **Usar el modo Mapa para la barra de desplazamiento vertical**. Puede elegir el ancho en la lista desplegable **Información general del código fuente**.
+La barra de desplazamiento tiene dos modos: el modo Barra y el modo Mapa.
 
-    Este es el aspecto del ejemplo de búsqueda cuando el modo Mapa está activado y el ancho se establece en Medio:
+### <a name="bar-mode"></a>Modo Barra
 
-    ![Barra de desplazamiento en modo Mapa](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")
+El *modo Barra* muestra indicadores de anotación en la barra de desplazamiento. Al hacer clic en la barra de desplazamiento, se desplaza hacia arriba o hacia abajo de la página pero no salta a esa ubicación en el archivo.
 
-2. En el modo Mapa, a fin de habilitar las vistas previas del código al mover el cursor hacia arriba y hacia abajo por la barra de desplazamiento, seleccione la opción **Mostrar información sobre herramientas de la vista previa**. Este es su aspecto:
+### <a name="map-mode"></a>Modo Mapa
 
-    ![La barra de desplazamiento con información sobre herramientas](../ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")
+En el *modo Mapa*, cuando hace clic en una ubicación de la barra de desplazamiento, el cursor salta a esa ubicación en el archivo en lugar de solo desplazarse hacia arriba o hacia abajo de una página. En la barra desplazamiento se muestran líneas de código en miniatura. Puede elegir el ancho de la columna del mapa si selecciona un valor en **Información general del código fuente**. Para habilitar una vista previa más grande del código cuando deja el puntero en el mapa, seleccione la opción **Mostrar información sobre herramientas de la vista previa**. Las zonas contraídas están sombreadas de manera diferente y se expanden cuando se hace doble clic en ellas.
 
-    Si quiere mantener el comportamiento de desplazamiento del modo Mapa y la información sobre herramientas de vista previa, pero no quiere ver la información general del código fuente, puede establecer **Información general del código fuente** en **Desactivado**.
+> [!TIP]
+> Para desactivar la vista de código en miniatura en el mapa, establezca **Información general del código fuente** en **Off**. Si se selecciona **Mostrar información sobre herramientas de la vista previa**, seguirá viendo una vista previa del código en esa ubicación cuando mantenga el puntero del mouse sobre la barra de desplazamiento y el cursos seguirá saltando a esa ubicación en el archivo cuando se haga clic.
+
+En la imagen siguiente se muestra el ejemplo de búsqueda cuando el modo Mapa está activo y el ancho está establecido en **Medium** (Mediano):
+
+![Barra de desplazamiento de Visual Studio en el modo Mapa](../ide/media/enhancedscrollbar.png)
+
+En la imagen siguiente se muestra la opción **Mostrar información sobre herramientas de la vista previa**:
+
+![Barra de desplazamiento de Visual Studio con información sobre herramientas](../ide/media/enhancedscrollbarsearchtooltip.png)
 
 ## <a name="see-also"></a>Vea también
 
-[Escribir código en el editor](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Características del editor de código](../ide/writing-code-in-the-code-and-text-editor.md)

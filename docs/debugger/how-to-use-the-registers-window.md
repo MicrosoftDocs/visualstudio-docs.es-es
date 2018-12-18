@@ -1,7 +1,7 @@
 ---
-title: Ver los valores de registro en el depurador de Visual Studio | Documentos de Microsoft
+title: Ver los valores de registro en el depurador de Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -25,34 +25,36 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7630ab56ef738febcf80058916272958e267a386
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: ab40e0b63b2a679b4c36a4625d517a03b6c123ad
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389330"
 ---
-# <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger"></a>Ver valores de registrar y utilizar la ventana se registra en el depurador de Visual Studio
-La ventana registros solo está disponible si está habilitada la depuración de nivel de dirección en la **opciones** cuadro de diálogo, **depuración** nodo, **General** categoría.  
-  
- El **registra** ventana muestra el contenido del registro. Si decide mantener la **registra** ventana abierta recorre el programa paso a paso, puede ver cómo cambian los valores mientras se ejecuta el código. Los valores que han cambiado recientemente se muestran en rojo. Se pueden modificar los valores de los registros. Para obtener más información, consulte [Cómo: editar un valor registrar](../debugger/how-to-edit-a-register-value.md).  
-  
- Para reducir la acumulación de elementos, el **registra** ventana registros organiza en grupos, que varían según la plataforma y el procesador de tipo. Puede mostrar u ocultar grupos como desee. Para obtener más información, consulte [Cómo: mostrar y ocultar grupos de registros](../debugger/how-to-display-and-hide-register-groups.md).  
-  
- Para obtener una introducción general a los conceptos relativos a registros y la ventana registros, vea [Fundamentos de depuración: ventana registros](../debugger/debugging-basics-registers-window.md).  
-  
+# <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Ver los valores de registro en la ventana registros (C#, C++, Visual Basic, F#)
+
+El **registra** ventana muestra el contenido del registro durante la depuración de Visual Studio. Para obtener una introducción de alto nivel conceptos relacionados con los registros y la **registra** ventana, consulte [Fundamentos de la depuración: ventana registros](../debugger/debugging-basics-registers-window.md).
+
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
-  
-### <a name="to-display-the-registers-window"></a>Para mostrar la ventana Registros  
-  
--   En el **depurar** menú, elija **Windows**y, a continuación, elija **registra**.  
-  
-     El depurador debe encontrarse en modo de interrupción.  
-  
-    > [!NOTE]
-    >  La información de los registros no está disponible para las aplicaciones de script o SQL.  
-  
-## <a name="see-also"></a>Vea también  
- [Fundamentos de la depuración: ventana Registros](../debugger/debugging-basics-registers-window.md)   
- [Ver los datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
- [Fundamentos de la depuración: ventana Registros](../debugger/debugging-basics-registers-window.md)
+> Información de registro no está disponible para la secuencia de comandos o las aplicaciones SQL.
+
+Durante la depuración, registrar el cambio de valores mientras se ejecuta código en la aplicación. Los valores que han cambiado recientemente aparecen en rojo en el **registra** ventana.
+
+Por motivos de claridad, la ventana **Registros** organiza los registros en grupos que varían según la plataforma y el tipo de procesador. Puede mostrar u ocultar grupos de registros. Para obtener más información, vea [Mostrar y ocultar grupos de registros](../debugger/how-to-display-and-hide-register-groups.md).
+
+Se pueden modificar los valores de los registros. Para obtener más información, consulte [Cómo: editar un valor del registro](../debugger/how-to-edit-a-register-value.md).
+
+**Para abrir la ventana registros**
+
+1. Habilitar la depuración de nivel de dirección, seleccionando **habilitar la depuración de nivel de dirección** en **herramientas** (o **depurar**) > **opciones**  >  **Depuración**.
+
+1. Mientras la depuración está en ejecución o en un punto de interrupción, seleccione **depurar** > **Windows** > **registra**, o bien presione **Alt** + **5**.
+
+>[!NOTE]
+>Cuadros de diálogo y comandos de menú pueden diferir dependiendo de la configuración o edición de Visual Studio. Para cambiar la configuración, seleccione **importar y exportar configuraciones** en Visual Studio **herramientas** menú. Para obtener más información, consulte [Restablecer configuración](../ide/environment-settings.md#reset-settings).
+
+### <a name="see-also"></a>Vea también
+
+- [Fundamentos de la depuración: ventana Registros](../debugger/debugging-basics-registers-window.md)
+- [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)

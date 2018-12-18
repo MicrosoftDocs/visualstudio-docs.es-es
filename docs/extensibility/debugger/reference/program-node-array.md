@@ -1,5 +1,5 @@
 ---
-title: PROGRAM_NODE_ARRAY | Documentos de Microsoft
+title: PROGRAM_NODE_ARRAY | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 079c6dc3ef36c19867ed4b292040876f630e63df
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 50c8db3ee875a86f072a75f084dbe0c7f68f847b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832991"
 ---
 # <a name="programnodearray"></a>PROGRAM_NODE_ARRAY
-Contiene una matriz de objetos que se describen los programas de interés.  
+Contiene una matriz de objetos que describen los programas de interés.  
   
 ## <a name="syntax"></a>Sintaxis  
   

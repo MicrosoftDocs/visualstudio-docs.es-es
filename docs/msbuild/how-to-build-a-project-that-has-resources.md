@@ -15,17 +15,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1fef7a6a5d585625471794df3c6e98b8c149a82
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e7724969a4677bc0d8480b794ae72b2dbee74a86
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180352"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Cómo: Compilar un proyecto que tiene recursos
-Si está compilando versiones adaptadas de un proyecto, todos los elementos de la interfaz de usuario deben estar separados en archivos de recursos para los distintos idiomas. Si el proyecto utiliza solo cadenas, los archivos de recursos pueden utilizar archivos de texto. Como alternativa, puede utilizar archivos .resx como los archivos de recursos.  
+Si está compilando versiones adaptadas de un proyecto, todos los elementos de la interfaz de usuario deben estar separados en archivos de recursos para los distintos idiomas. Si el proyecto utiliza solo cadenas, los archivos de recursos pueden utilizar archivos de texto. Como alternativa, puede usar archivos *.resx* como los archivos de recursos.  
   
-## <a name="compiling-resources-with-msbuild"></a>Compilar recursos con MSBuild  
- La biblioteca de tareas comunes que se proporciona con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] incluye una tarea `GenerateResource` que se puede utilizar para compilar recursos en archivos .resx o de texto. Esta tarea incluye los parámetros `Sources` para especificar qué recursos de archivos se deben compilar y `OutputResources` para especificar nombres para los archivos de recursos de salida. Para obtener más información sobre la tarea `GenerateResource`, consulte [GenerateResource (Tarea)](../msbuild/generateresource-task.md).  
+## <a name="compile-resources-with-msbuild"></a>Compilación de recursos con MSBuild  
+ La biblioteca de tareas comunes que se proporciona con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] incluye una tarea `GenerateResource` que se puede usar para compilar recursos en archivos *.resx* o de texto. Esta tarea incluye los parámetros `Sources` para especificar qué recursos de archivos se deben compilar y `OutputResources` para especificar nombres para los archivos de recursos de salida. Para obtener más información sobre la tarea `GenerateResource`, vea [GenerateResource (Tarea)](../msbuild/generateresource-task.md).  
   
 #### <a name="to-compile-resources-with-msbuild"></a>Para compilar recursos con MSBuild  
   
@@ -38,7 +39,7 @@ Si está compilando versiones adaptadas de un proyecto, todos los elementos de l
 4.  Utilice el elemento creado a partir del elemento `Output` como una entrada en otra tarea.  
   
 ## <a name="example"></a>Ejemplo  
- En el siguiente ejemplo de código se muestra cómo el elemento `Output` especifica que el atributo `OutputResources` de la tarea `GenerateResource` contendrá los archivos de recursos compilados `alpha.resources` y `beta.resources` y que estos dos archivos se colocarán dentro de la lista de elementos `Resources`. Mediante la identificación de estos archivos .resources como una colección de elementos del mismo nombre, puede utilizarlos fácilmente como entradas para otra tarea, como la tarea [Csc](../msbuild/csc-task.md).  
+ En el siguiente ejemplo de código se muestra cómo el elemento `Output` especifica que el atributo `OutputResources` de la tarea `GenerateResource` va a contener los archivos de recursos compilados *alpha.resources* y *beta.resources* y que estos dos archivos se van a colocar dentro de la lista de elementos `Resources`. Al identificar estos archivos *.resources* como una colección de elementos del mismo nombre, puede usarlos fácilmente como entradas para otra tarea, como la tarea [Csc](../msbuild/csc-task.md).  
   
  Esta tarea es equivalente a utilizar el modificador **/compile** para [Resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator):  
   
@@ -79,6 +80,6 @@ Si está compilando versiones adaptadas de un proyecto, todos los elementos de l
   
 ## <a name="see-also"></a>Vea también  
 [MSBuild](../msbuild/msbuild.md)  
- [GenerateResource (tarea)](../msbuild/generateresource-task.md)   
- [Csc (tarea)](../msbuild/csc-task.md)   
+ [GenerateResource (Tarea)](../msbuild/generateresource-task.md)   
+ [Csc (Tarea)](../msbuild/csc-task.md)   
  [Resgen.exe (generador de archivos de recursos)](/dotnet/framework/tools/resgen-exe-resource-file-generator)

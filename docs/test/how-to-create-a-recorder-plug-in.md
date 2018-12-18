@@ -1,5 +1,5 @@
 ---
-title: Crear un complemento de grabación para pruebas de rendimiento web en Visual Studio | Microsoft Docs
+title: Creación de un complemento de grabación para pruebas de rendimiento web en Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,32 +8,36 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 145fc290360b8f8cac55a952b5c24a367ef847ad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6525327e85d40b9b942e4e29a7d759a15598c824
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895844"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Cómo: Crear un complemento de grabación
 
-<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> permite modificar una prueba de rendimiento web grabada. La modificación se produce después de elegir **Detener** en la barra de herramientas de la grabadora de pruebas de rendimiento web, pero antes de que la prueba se guarde y se presente en el Editor de pruebas de rendimiento web.
+<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> permite modificar una prueba de rendimiento web grabada. La modificación se produce después de hacer clic en **Detener** en la barra de herramientas de la **grabadora de pruebas de rendimiento web**, pero antes de que la prueba se guarde y se presente en el Editor de pruebas de rendimiento web.
 
-Un complemento de grabación permite realizar una correlación personalizada sobre parámetros dinámicos. Con la funcionalidad de correlación integrada, las pruebas de rendimiento web detectan los parámetros dinámicos de la grabación web al finalizar o cuando se usa **Promover parámetros dinámicos a parámetros de pruebas web** en la barra de herramientas del Editor de pruebas de rendimiento web. Sin embargo, la funcionalidad de detección integrada no encuentra siempre todos los parámetros dinámicos. Por ejemplo, no encuentra un id. de sesión, que normalmente obtiene su valor cambiado entre 5 y 30 minutos. Por tanto, tiene que realizar el proceso de correlación manualmente.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> le permite escribir código para su propio complemento personalizado. Este complemento puede realizar la correlación o modificar la prueba de rendimiento web de muchas maneras antes de que se guarde y presente en el Editor de prueba de rendimiento web. Por tanto, si determina que hay que correlacionar una variable dinámica concreta para muchas de sus grabaciones, puede automatizar el proceso.
+Un complemento de grabación permite realizar una correlación personalizada sobre parámetros dinámicos. Con la funcionalidad de correlación integrada, las pruebas de rendimiento web detectan los parámetros dinámicos de la grabación web al finalizar o cuando se usa **Promover parámetros dinámicos a parámetros de pruebas web** en la barra de herramientas del **Editor de pruebas de rendimiento web**. Sin embargo, la funcionalidad de detección integrada no encuentra siempre todos los parámetros dinámicos. Por ejemplo, no encuentra un id. de sesión, que normalmente obtiene su valor cambiado entre 5 y 30 minutos. Por tanto, tiene que realizar el proceso de correlación manualmente.
 
-Un complemento de grabadora también se puede usar para muchos otros fines, como agregar reglas de extracción y de validación, agregar parámetros de contexto o convertir comentarios en transacciones en una prueba de rendimiento web.
+<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> le permite escribir código para su propio complemento personalizado. Este complemento puede realizar la correlación o modificar la prueba de rendimiento web de muchas maneras antes de que se guarde y presente en el Editor de pruebas de rendimiento web. Por tanto, si determina que hay que correlacionar una variable dinámica concreta para muchas de sus grabaciones, puede automatizar el proceso.
+
+Un complemento de grabadora también se puede usar para muchos otros fines, como agregar reglas de extracción y validación, agregar parámetros de contexto o convertir comentarios en transacciones en una prueba de rendimiento web.
 
 En los procedimientos siguientes se describe cómo crear el código rudimentario para un complemento de grabadora, implementar el complemento y ejecutarlo. En el código de ejemplo que sigue a los procedimientos se muestra cómo usar Visual C# con el fin de crear un complemento de grabadora para la correlación personalizada de parámetros dinámicos.
 
-## <a name="creating-a-recorder-plug-in"></a>Crear un complemento de grabadora
+## <a name="create-a-recorder-plug-in"></a>Crear un complemento de grabadora
 
 ### <a name="to-create-a-recorder-plug-in"></a>Para crear un complemento de grabadora
 
 1.  Abra una solución que contenga el proyecto de prueba de carga y rendimiento web con la prueba de rendimiento web para la que desee crear un complemento de grabadora.
 
-2.  En el Explorador de soluciones, haga clic con el botón derecho en la solución, seleccione **Agregar** y, luego, elija **Nuevo proyecto**.
+2.  En el **Explorador de soluciones**, haga clic con el botón derecho en la solución, seleccione **Agregar** y luego elija **Nuevo proyecto**.
 
      Aparecerá el cuadro de diálogo **Agregar nuevo proyecto**.
 
@@ -43,9 +47,9 @@ En los procedimientos siguientes se describe cómo crear el código rudimentario
 
 5.  En el cuadro de texto **Nombre**, escriba un nombre para el complemento de grabación.
 
-     La biblioteca de clases se agregará al Explorador de soluciones y la nueva clase se abrirá en el editor de código.
+     La biblioteca de clases se agrega al **Explorador de soluciones** y la nueva clase se abre en el **Editor de código**.
 
-6.  En el Explorador de soluciones, en la carpeta de proyecto de la nueva biblioteca de clases, haga clic con el botón derecho en la carpeta **Referencias** y seleccione **Agregar referencia**.
+6.  En el **Explorador de soluciones**, en la carpeta de proyecto de la nueva biblioteca de clases, haga clic con el botón derecho en la carpeta **Referencias** y seleccione **Agregar referencia**.
 
     > [!TIP]
     > Un ejemplo de carpeta de proyecto de nueva biblioteca de clases es **RecorderPlugins**.
@@ -56,11 +60,11 @@ En los procedimientos siguientes se describe cómo crear el código rudimentario
 
 8.  Desplácese hacia abajo, seleccione **Microsoft.VisualStudio.QualityTools.WebTestFramework** y, luego, elija **Aceptar**.
 
-     **Microsoft.VisualStudio.QualityTools.WebTestFramework** se agrega a la carpeta **Referencias** del Explorador de soluciones.
+     **Microsoft.VisualStudio.QualityTools.WebTestFramework** se agrega a la carpeta **Referencias** del **Explorador de soluciones**.
 
 9. Escriba el código del complemento de grabadora. En primer lugar, cree una clase pública derivada de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>.
 
-10. Invalide el método <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*>.
+10. Invalide el método <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*> .
 
     ```csharp
     public class Class1 : WebTestRecorderPlugin
@@ -79,17 +83,17 @@ En los procedimientos siguientes se describe cómo crear el código rudimentario
 
 11. Agregue más código según lo que desee que el complemento de grabadora ejecute después de que se produzca la grabación web. Por ejemplo, puede agregar código para administrar la correlación personalizada como se muestra en el ejemplo siguiente. También puede crear un complemento de grabadora para tareas como convertir comentarios en transacciones o agregar reglas de validación a la prueba de rendimiento web.
 
-12. En el menú **Compilar**, elija Compilar \<nombre de proyecto de biblioteca de clases>.
+12. En el menú **Compilar**, elija **Compilar \<nombre de proyecto de biblioteca de clases>**.
 
 13. Después, debe implementar el complemento de grabadora para que se registre con Visual Studio.
 
 ### <a name="deploy-the-recorder-plug-in"></a>Implementar el complemento de grabadora
 
-Después de compilar el complemento de grabadora, deberá colocar el archivo DLL resultante en una de estas dos ubicaciones:
+Después de compilar el complemento de grabadora, coloque el archivo DLL resultante en una de estas dos ubicaciones:
 
--   %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins
+- *%ProgramFiles(x86)%\Microsoft Visual Studio\\[versión]\\[edición]\Common7\IDE\PrivateAssemblies\WebTestPlugins*
 
--   %USERPROFILE%\My Documents\Visual Studio \<*versión*>\WebTestPlugins
+- *%USERPROFILE%\Documents\Visual Studio [versión]\WebTestPlugins*
 
 > [!WARNING]
 > Después de copiar el complemento de grabadora a una de las dos ubicaciones, debe reiniciar Visual Studio para que el complemento de grabadora se registre.
@@ -100,7 +104,7 @@ Después de compilar el complemento de grabadora, deberá colocar el archivo DLL
 
      Aparecerá el cuadro de diálogo **Habilitar WebTestRecordPlugins**.
 
-2.  Active la casilla correspondiente al complemento de grabadora y elija Aceptar.
+2.  Active la casilla correspondiente al complemento de grabadora y haga clic en **Aceptar**.
 
      Una vez que la prueba de rendimiento web complete la grabación, se ejecutará el nuevo complemento de grabadora.
 
@@ -111,8 +115,8 @@ Después de compilar el complemento de grabadora, deberá colocar el archivo DLL
     >
     > Esto ocurre si realiza cambios en el código de cualquier complemento y crea una nueva versión de DLL **(Version=0.0.0.0)**, pero el complemento sigue haciendo referencia a la versión original del complemento. Para corregir este problema, siga estos pasos:
     >
-    > 1.  En el proyecto de prueba de carga y rendimiento web, aparecerá una advertencia en las referencias. Quite y vuelva a agregar la referencia al archivo DLL del complemento.
-    > 2.  Quite el complemento de la prueba o de la ubicación apropiada y, a continuación, agréguelo de nuevo.
+    > 1. En el proyecto de prueba de carga y rendimiento web, aparecerá una advertencia en las referencias. Quite y vuelva a agregar la referencia al archivo DLL del complemento.
+    > 2. Quite el complemento de la prueba o de la ubicación apropiada y, a continuación, agréguelo de nuevo.
 
 ## <a name="example"></a>Ejemplo
 
@@ -121,7 +125,7 @@ En este ejemplo se muestra cómo crear un complemento de grabadora personalizado
 > [!NOTE]
 > Al final de este tema se muestra una lista completa del código de ejemplo.
 
- **Revisión del código de ejemplo**
+**Revisión del código de ejemplo**
 
 ## <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>Recorrer en iteración el resultado para encontrar la primera página con ReportSession
 

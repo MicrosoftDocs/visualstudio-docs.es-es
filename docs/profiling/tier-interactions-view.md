@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4636a391e2472dbff427956077719e75f34a81de
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d92144a6b9bd94e23397a033fbbee45bd5aeed4a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917776"
 ---
 # <a name="tier-interactions-view"></a>Interacciones de capas (Vista)
 
@@ -33,11 +34,11 @@ La vista de interacciones muestra datos de interacción de capas en dos paneles:
 
 - Al hacer clic en un nodo de llamada a la base de datos en el panel principal, los datos de la instancia de la llamada a la base de datos se muestran en el panel de detalles.
 
- La hora se muestra como el número de milisegundos o el número de ciclos de reloj de la CPU. Para cambiar la unidad de tiempo que se muestra, haga clic en el menú **Herramientas**, haga clic en **Opciones** y después elija uno de las opciones de **Mostrar valores de tiempo como**.
+  La hora se muestra como el número de milisegundos o el número de ciclos de reloj de la CPU. Para cambiar la unidad de tiempo que se muestra, haga clic en el menú **Herramientas**, haga clic en **Opciones** y después elija uno de las opciones de **Mostrar valores de tiempo como**.
 
 ## <a name="master-pane"></a>Panel principal
 
-|Columna|Description|
+|Columna|Descripción|
 |------------|-----------------|
 |**Name**|- Para una fila de nivel superior, el nombre de la página web o del proceso del que se generaron perfiles.<br />- Para una fila de conexión de base de datos, el nombre del servidor que hospeda la base de datos.|
 |**Base de datos**|El nombre de la base de datos (solo filas de conexión de base de datos).|
@@ -49,7 +50,7 @@ La vista de interacciones muestra datos de interacción de capas en dos paneles:
 
 ## <a name="database-connection-details-pane"></a>Panel Detalles de conexión de la base de datos
 
-|Columna|Description|
+|Columna|Descripción|
 |------------|-----------------|
 |**Texto de comando**|La consulta SQL de la solicitud.|
 |**Número de consultas**|El número de veces que se ejecutó la consulta.|

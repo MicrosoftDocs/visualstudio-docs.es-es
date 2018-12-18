@@ -1,5 +1,5 @@
 ---
-title: Configurar el generador de perfiles ASP.NET para pruebas de carga en Visual Studio | Microsoft Docs
+title: Configurar el generador de perfiles ASP.NET para pruebas de carga en Visual Studio
 ms.date: 10/13/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,16 +8,20 @@ ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 68bc1c8b21a2f14ba319792afae0d77f233c5d94
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 36176ce14b51af1cf692b6b04d862882a48d7e4e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895202"
 ---
-# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Cómo: Configurar el generador de perfiles ASP.NET para pruebas de carga usando la configuración de pruebas en Visual Studio
+# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Cómo: Configurar el generador de perfiles ASP.NET para pruebas de carga mediante la configuración de pruebas en Visual Studio
 
 Puede usar el adaptador de datos de diagnóstico del generador de perfiles ASP.NET para recopilar información del generador de perfiles ASP.NET. Este adaptador de datos de diagnóstico recopila datos de rendimiento de las aplicaciones ASP.NET.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > Este adaptador de datos de diagnóstico no se puede usar en las pruebas que se ejecutan con Microsoft Test Manager. Puede usar el adaptador de datos de diagnóstico del generador de perfiles ASP.NET con pruebas de carga que solo usan sitios web, para lo que se requiere Visual Studio Enterprise.
@@ -25,17 +29,13 @@ Puede usar el adaptador de datos de diagnóstico del generador de perfiles ASP.N
 El adaptador de datos de diagnóstico del generador de perfiles ASP.NET permite recopilar datos del generador de perfiles ASP.NET de la capa de aplicación mientras se ejecuta una prueba de carga. No debe ejecutar el generador de perfiles en pruebas de carga largas, por ejemplo, las que se ejecutan durante más de una hora. Esto es porque el archivo de generador de perfiles aumenta su tamaño, quizá hasta centenares de megabytes. En su lugar, ejecute pruebas de carga más cortas con el generador de perfiles ASP.NET, que le ofrecen un diagnóstico profundo de los problemas de rendimiento.
 
 > [!NOTE]
-> El adaptador de datos de diagnóstico del generador de perfiles ASP.NET perfila el proceso de Internet Information Services (IIS). Por tanto, no funcionará en un servidor web de desarrollo. Para generar perfiles del sitio web en su prueba de carga, tiene que instalar un agente de prueba en el equipo en el que se esté ejecutando IIS. El agente de prueba no generará carga, sino que será un agente de recopilación únicamente. Para obtener más información, vea [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md).
+> El adaptador de datos de diagnóstico del generador de perfiles ASP.NET perfila el proceso de Internet Information Services (IIS). Por tanto, no funcionará en un servidor web de desarrollo. Para generar perfiles del sitio web en su prueba de carga, tiene que instalar un agente de prueba en la máquina en la que se ejecuta IIS. El agente de prueba no generará carga, sino que será un agente de recopilación únicamente. Para obtener más información, vea [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md).
 
 Para obtener más información, vea [Cómo: Crear una configuración de pruebas para una prueba de carga distribuida](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
 
-El procedimiento siguiente explica cómo configurar el adaptador de datos de diagnóstico del generador de perfiles ASP.NET.
-
-## <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>Para configurar el generador de perfiles de ASP.NET para su configuración de pruebas
+## <a name="configure-the-aspnet-profiler-for-your-test-settings"></a>Ajustes del generador de perfiles ASP.NET para la configuración de pruebas
 
 Antes de seguir los pasos de este procedimiento, debe abrir la configuración de pruebas en Visual Studio y seleccionar la página **Datos y diagnósticos**.
-
-### <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>Para configurar el generador de perfiles ASP.NET para su configuración de pruebas
 
 1.  Seleccione el rol que se va a usar para recopilar los datos del generador de perfiles ASP.NET.
 
@@ -50,7 +50,7 @@ Antes de seguir los pasos de este procedimiento, debe abrir la configuración de
 
 4.  Para habilitar la generación de perfiles de interacción de capa, seleccione **Habilitar generación de perfiles de interacción de capa**.
 
-     La generación de perfiles de interacción de capas cuenta el número de solicitudes que se envían al servidor web durante cada artefacto (por ejemplo, MyPage.aspx o CompanyLogo.gif) y el tiempo necesario para atender cada solicitud. Además, la generación de perfiles de interacción de capas recopila las conexiones de ADO.NET que se usaron como parte de la solicitud de página, y cuántas consultas y llamadas a procedimientos almacenados se ejecutaron como parte de la atención de esa solicitud.
+     La generación de perfiles de interacción de capas cuenta el número de solicitudes que se envían al servidor web para cada artefacto (por ejemplo, *MyPage.aspx* o *CompanyLogo.gif*) y el tiempo necesario para atender cada solicitud. Además, la generación de perfiles de interacción de capas recopila las conexiones de ADO.NET que se usaron como parte de la solicitud de página, y cuántas consultas y llamadas a procedimientos almacenados se ejecutaron como parte de la atención de esa solicitud.
 
      Se recopilan dos conjuntos diferentes de información de tiempos:
 
@@ -58,7 +58,7 @@ Antes de seguir los pasos de este procedimiento, debe abrir la configuración de
 
     -   La información de tiempos (mínimo, máximo, promedio y total) para ejecutar cada consulta.
 
-Con el adaptador de datos del generador de perfiles diagnóstico ASP.NET configurado en la configuración de pruebas, puede recopilar datos de generación de perfiles ASP.NET en la aplicación web ASP.NET.
+Con el adaptador de datos de diagnóstico del generador de perfiles ASP.NET configurado en la configuración de pruebas, puede recopilar datos de generación de perfiles ASP.NET en la aplicación web ASP.NET.
 
 ## <a name="see-also"></a>Vea también
 

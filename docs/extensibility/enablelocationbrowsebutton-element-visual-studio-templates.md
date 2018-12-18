@@ -1,5 +1,5 @@
 ---
-title: EnableLocationBrowseButton (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
+title: EnableLocationBrowseButton (elemento) (plantillas de Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d3573a1359cf7cc6347ede28b5361b01bbb7efb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7bebf88b8d5c98722226f42f9a1b1666695a3b7e
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639544"
 ---
-# <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton (Elemento, Plantillas de Visual Studio)
-Especifica si el **examinar** botón está disponible en la **nuevo proyecto** cuadro de diálogo para que los usuarios pueden modificar fácilmente el directorio predeterminado donde se guarda un nuevo proyecto.  
+# <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton (elemento) (plantillas de Visual Studio)
+Especifica si el **examinar** botón está disponible en el **nuevo proyecto** cuadro de diálogo para que los usuarios puedan modificar fácilmente el directorio predeterminado donde se guarda un nuevo proyecto.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -52,15 +53,15 @@ Especifica si el **examinar** botón está disponible en la **nuevo proyecto** c
 ## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto.  
   
- El texto debe ser `true` o `false`, que indica si se debe o no mostrar la **examinar** situado en la **nuevo proyecto** cuadro de diálogo.  
+ El texto debe ser `true` o `false`, que indica si se deben mostrar el **examinar** situado en la **nuevo proyecto** cuadro de diálogo.  
   
 ## <a name="remarks"></a>Comentarios  
- `EnableLocationBrowseButton` es un elemento opcional. El valor predeterminado es `true`, que muestra la **examinar** botón en el **nuevo proyecto** cuadro de diálogo.  
+ `EnableLocationBrowseButton` es un elemento opcional. El valor predeterminado es `true`, que muestra la **examinar** situado en la **nuevo proyecto** cuadro de diálogo.  
   
  En el **nuevo proyecto** cuadro de diálogo, el **ubicación** cuadro de texto especifica el directorio donde se guarda un nuevo proyecto. El **examinar** botón le ayuda a modificar este directorio mostrando el **ubicación del proyecto** cuadro de diálogo que le permite desplazarse fácilmente a un directorio diferente que está disponible en el equipo, y a continuación, elija como el directorio donde se guarda el nuevo proyecto.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra los metadatos de un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación de Windows.  
+ El ejemplo siguiente muestra los metadatos de un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación de Windows.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -89,4 +90,4 @@ Especifica si el **examinar** botón está disponible en la **nuevo proyecto** c
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
+ [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)

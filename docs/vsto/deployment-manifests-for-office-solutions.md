@@ -1,5 +1,5 @@
 ---
-title: Manifiestos de implementación para soluciones de Office | Documentos de Microsoft
+title: Manifiestos de implementación para soluciones de Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,11 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e1276650d38f16f8ccc36720f7e273472e609367
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41f0e6b484ae61d53913c51e3d51b123a5d054a2
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263495"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Manifiestos de implementación para soluciones de Office
   Un manifiesto de implementación es un archivo XML que describe la configuración de implementación de una solución de Office e identifica la versión actual de la aplicación.  
@@ -30,15 +31,15 @@ ms.lasthandoff: 04/16/2018
  El desarrollo de Office en Visual Studio usa el [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] esquema del manifiesto de implementación definido en el [manifiesto de implementación de ClickOnce](/visualstudio/deployment/clickonce-deployment-manifest) referencia.  
   
 ## <a name="remarks"></a>Comentarios  
- El archivo de manifiesto de implementación para soluciones de Office identifica la versión actual y otras configuraciones de implementación. Hace referencia el manifiesto de aplicación, que describe la versión actual de la solución y todos los archivos que se encuentran en la solución.  
+ El archivo de manifiesto de implementación para soluciones de Office, identifica la versión actual y otras configuraciones de implementación. Se hace referencia al manifiesto de aplicación y se describe la versión actual de la solución y todos los archivos dentro de la solución.  
   
-## <a name="file-name-syntax"></a>Sintaxis de los nombres de archivo  
- El nombre de un archivo de manifiesto de implementación debe terminar con la extensión de VSTO. Aunque es un estándar [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] difiere de la extensión de manifiesto de implementación, para permitir que Visual Studio Tools para Office runtime controlar el archivo.  
+## <a name="file-name-syntax"></a>Sintaxis de nombre de archivo  
+ El nombre de un archivo de manifiesto de implementación debe terminar con la *.vsto* extensión. Aunque es un estándar [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] difiere de la extensión de manifiesto de implementación, para permitir que Visual Studio Tools para Office runtime controlar el archivo.  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo de código siguiente se muestra un manifiesto de implementación para un proyecto de Visual Studio Tools para soluciones de Office.  
   
-```  
+```xml
 <?xml version="1.0" encoding="utf-8"?>  
 <asmv1:assembly   
   xsi:schemaLocation=  

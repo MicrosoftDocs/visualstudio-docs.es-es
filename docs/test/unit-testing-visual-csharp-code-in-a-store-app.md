@@ -1,6 +1,7 @@
 ---
-title: Pruebas unitarias para código de Visual C# en Visual Studio | Microsoft Docs
+title: Pruebas unitarias de código de Visual C#
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,29 +9,30 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 32f76e3ebd6827ecb9ce0c27fa69b17a3da02f4e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 76c20fb987bb1380cb4d3f00e078aac81f26e89f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064859"
 ---
 # <a name="unit-testing-visual-c-code"></a>Pruebas unitarias de código de Visual C#
 
-En este tema se describe una forma de crear pruebas unitarias para una clase de Visual C# en una aplicación para UWP. La clase Rooter muestra las memorias imprecisas de teoría límite del cálculo mediante la implementación de una función que calcula una estimación de raíz cuadrada de un número determinado. La aplicación Maths puede utilizar esta función para mostrar a un usuario las cosas divertidas que se pueden realizar con las matemáticas.
+En este artículo se describe una forma de crear pruebas unitarias para una clase de Visual C# en una aplicación para UWP. La clase Rooter muestra las memorias imprecisas de teoría límite del cálculo mediante la implementación de una función que calcula una estimación de raíz cuadrada de un número determinado. La aplicación Maths puede utilizar esta función para mostrar a un usuario las cosas divertidas que se pueden realizar con las matemáticas.
 
-En este tema se muestra cómo se utilizan las pruebas unitarias como primer paso en el desarrollo. En este enfoque, primero tienes que escribir un método de prueba que compruebe un comportamiento concreto en el sistema que estés probando y, después, escribir el código que tenga que superar la prueba. Mediante la realización de cambios en el orden de los procedimientos siguientes, puedes invertir esta estrategia para escribir primero el código que deseas probar y escribe después las pruebas unitarias.
+En este artículo se muestra cómo se utilizan las pruebas unitarias como primer paso en el desarrollo. En este enfoque, primero tienes que escribir un método de prueba que compruebe un comportamiento concreto en el sistema que estés probando y, después, escribir el código que tenga que superar la prueba. Mediante la realización de cambios en el orden de los procedimientos siguientes, puedes invertir esta estrategia para escribir primero el código que deseas probar y escribe después las pruebas unitarias.
 
-En este tema también se crea una solución única de Visual Studio y proyectos independientes para las pruebas unitarias y el DLL que desees probar. También puedes incluir las pruebas unitarias directamente en el proyecto DLL, o crear soluciones independientes para las pruebas unitarias y el DLL.
+En este artículo también se crea una solución única de Visual Studio y proyectos independientes para las pruebas unitarias y el archivo DLL que quiera probar. También puedes incluir las pruebas unitarias directamente en el proyecto DLL, o crear soluciones independientes para las pruebas unitarias y el DLL.
 
 ## <a name="create-the-solution-and-the-unit-test-project"></a>Crear la solución y el proyecto de prueba unitaria
 
-1. En el menú **Archivo**, elija **Nuevo** > **Proyecto...**.
+1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
 
 2. En el cuadro de diálogo **Nuevo proyecto**, expanda **Instalado** > **Visual C#** y seleccione **Windows Universal**. Después, elija **Aplicación vacía** en la lista de plantillas de proyecto.
 
 3. Asigne al proyecto el nombre `Maths` y asegúrese de que esté seleccionado **Crear directorio para la solución**.
 
-4. En el Explorador de soluciones, seleccione el nombre de la solución, **Agregar** en el menú contextual y **Nuevo proyecto**.
+4. En el **Explorador de soluciones**, seleccione el nombre de la solución, **Agregar** en el menú contextual y **Nuevo proyecto**.
 
 5. En el cuadro de diálogo **Nuevo proyecto**, expanda **Instalado**, **Visual C#** y seleccione **Windows Universal**. Después elija **Unit Test Library (Universal Windows)** (Biblioteca de pruebas unitarias [Windows Universal]) en la lista de plantillas de proyecto.
 
@@ -64,11 +66,11 @@ En este tema también se crea una solución única de Visual Studio y proyectos 
 
         Cuando se ejecutan las pruebas, se crea una instancia de cada clase de prueba. Se llama a los métodos de prueba en un orden no especificado.
 
-   - Puede definir métodos especiales que se invocan antes y después de cada módulo, clase o método. Para obtener más información, consulte [Usar miembros de Microsoft.VisualStudio.TestTools.UnitTesting en pruebas unitarias](../test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md).
+   - Puede definir métodos especiales que se invocan antes y después de cada módulo, clase o método. Para obtener más información, vea [Usar miembros de Microsoft.VisualStudio.TestTools.UnitTesting en pruebas unitarias](../test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md).
 
 ## <a name="verify-that-the-tests-run-in-test-explorer"></a>Comprobar que las pruebas se ejecutan en el Explorador de pruebas
 
-1. Inserte código de prueba en TestMethod1, en el archivo **TestMethod1.cs**:
+1. Inserte código de prueba en TestMethod1, en el archivo *TestMethod1.cs*:
 
    ```csharp
    [TestMethod]
@@ -82,13 +84,13 @@ En este tema también se crea una solución única de Visual Studio y proyectos 
 
 2. En el menú **Prueba**, elija **Ejecutar** y después **Ejecutar todas**.
 
-   El proyecto de prueba se compila y ejecuta. Aparece la ventana Explorador de pruebas y la prueba se muestra debajo de **Pruebas superadas**. El panel Resumen de la parte inferior de la ventana proporciona detalles adicionales sobre la prueba seleccionada.
+   El proyecto de prueba se compila y ejecuta. Aparece la ventana **Explorador de pruebas** y la prueba se muestra debajo de **Pruebas superadas**. En el panel **Resumen** de la parte inferior de la ventana se proporcionan detalles adicionales sobre la prueba seleccionada.
 
    ![Explorador de pruebas](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
 ## <a name="add-the-rooter-class-to-the-maths-project"></a>Agregar la clase Rooter al proyecto Matemáticas
 
-1. En el Explorador de soluciones, seleccione el nombre del proyecto **Maths**. En el menú contextual, elija **Agregar** y **Clase**.
+1. En el **Explorador de soluciones**, seleccione el nombre del proyecto **Maths**. En el menú contextual, elija **Agregar** y **Clase**.
 
 2. Dé un nombre al archivo de clase *Rooter.cs*.
 
@@ -114,7 +116,7 @@ En este tema también se crea una solución única de Visual Studio y proyectos 
 
 1. Agrega una referencia a la aplicación Maths en el proyecto RooterTests.
 
-    1. En el Explorador de soluciones, seleccione el proyecto **RooterTests** y **Agregar referencia** en el menú contextual.
+    1. En el **Explorador de soluciones**, seleccione el proyecto **RooterTests** y **Agregar referencia** en el menú contextual.
 
     2. En el cuadro de diálogo **Agregar referencia: RooterTests**, expanda **Solución** y elija **Proyectos**. Después, seleccione el elemento **Maths**.
 
@@ -146,9 +148,9 @@ En este tema también se crea una solución única de Visual Studio y proyectos 
 
 4. Compile la solución.
 
-   La nueva prueba aparece en el Explorador de pruebas en el nodo **Pruebas no ejecutadas**.
+   La nueva prueba aparece en el **Explorador de pruebas** en el nodo **Pruebas no ejecutadas**.
 
-5. En el Explorador de pruebas, elija **Ejecutar todas**.
+5. En el **Explorador de pruebas**, elija **Ejecutar todo**.
 
    ![Prueba básica superada](../test/media/ute_cpp_testexplorer_basictest.png)
 
@@ -178,7 +180,7 @@ Ha configurado la prueba y los proyectos de código, y ha verificado que puede e
    >
    > Cuando los usuarios cambien los requisitos, deshabilite las pruebas que ya no son correctas. Escriba nuevas pruebas y hágalas funcionar una a una de la misma manera incremental.
 
-2. En el Explorador de pruebas, elija **Ejecutar todas**.
+2. En el **Explorador de pruebas**, elija **Ejecutar todo**.
 
 3. La prueba sufre un error.
 
@@ -270,7 +272,7 @@ Ha configurado la prueba y los proyectos de código, y ha verificado que puede e
         }
         ```
 
-4. En el Explorador de pruebas, elija **Ejecutar todas** para probar el método corregido y asegúrese de que no se haya introducido una regresión.
+4. En el **Explorador de pruebas**, elija **Ejecutar todas** para probar el método corregido y asegúrese de que no se haya introducido una regresión.
 
 Ahora, todas las pruebas pasan.
 
@@ -324,4 +326,4 @@ Observe que el método `RangeTest` codifica de forma rígida el denominador de l
 2. Seleccione **Ejecutar todas** para probar el método refactorizado y asegúrese de que no ha introducido un error.
 
 > [!NOTE]
-> Si agrega un método auxiliar a una clase de prueba que no desea que aparezca en el **Explorador de pruebas**, no agregue el atributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> al método.
+> Si agrega un método del asistente a una clase de prueba que no desea que aparezca en el **Explorador de pruebas**, no agregue el atributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> al método.

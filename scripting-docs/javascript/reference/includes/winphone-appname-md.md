@@ -1,1 +1,0 @@
-Tienda Windows Phone

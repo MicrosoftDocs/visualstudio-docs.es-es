@@ -1,5 +1,5 @@
 ---
-title: Constantes (Debug Interface Access SDK) | Documentos de Microsoft
+title: Constantes (Debug Interface Access SDK) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,23 +15,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c77febb7ad9f41880fef604849af75aa065ff593
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: dd6908a8a0b49f5078e4c0d448ba2dedbe8f720a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872049"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Constantes (Debug Interface Access SDK)
 Estas constantes de cadena pueden utilizarse para identificar las distintas secciones de un archivo de base de datos (PDB) de depuración de programa a través del SDK de DIA.  
   
 ## <a name="constants"></a>Constantes  
- A continuación se declara como macros de C o C++.  
+ El siguiente se declara como macros de C o C++.  
   
 |Macro|Valor|  
 |-----------|-----------|  
 |`DiaTable_Symbols`|L "Símbolos"|  
 |`DiaTable_Sections`|L "Secciones"|  
-|`DiaTable_SrcFiles`|L "ArchivosCódigoFuente"|  
+|`DiaTable_SrcFiles`|L "SourceFiles"|  
 |`DiaTable_LineNums`|L "LineNumbers"|  
 |`DiaTable_SegMap`|L "SegmentMap"|  
 |`DiaTable_Dbg`|L "Dbg"|  

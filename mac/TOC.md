@@ -1,8 +1,9 @@
 # [Presentación de Visual Studio para Mac](index.md)
-## [Ventajas de Visual Studio para Mac frente a Xamarin Studio](benefits-vsmac-over-xs.md)
 # [Paseo por el IDE](ide-tour.md)
 
 # [Instalación](installation.md)
+## [Instalar y usar detrás de un firewall o proxy](install-behind-a-firewall-or-proxy-server.md)
+## [Instalar una versión preliminar](install-preview.md)
 ## [Actualizar](update.md)
 ## [Desinstalar](uninstall.md)
 
@@ -21,6 +22,7 @@
 ## [Administrar referencias en un proyecto](managing-references-in-a-project.md)
 ### [Tutorial: Incluir un paquete NuGet en el proyecto](nuget-walkthrough.md)
 ## [Administrar recursos de la aplicación](managing-app-resources.md)
+## [Cómo abrir barias soluciones o instancias](open-multiple-solutions.md)
 
 # [Editor de código fuente](source-editor.md)
 ## [Refactorización](refactoring.md)
@@ -30,6 +32,7 @@
 ## [Fragmentos de código](snippets.md)
 ## [Selección de bloques](block-selection.md)
 ## [Temas del editor](editor-themes.md)
+## [EditorConfig](editorconfig.md)
 ## [Accesos directos comunes del teclado](keyboard-shortcuts.md)
 
 # [Depuración](debugging.md)
@@ -43,6 +46,7 @@
 ### [Crear y editar configuraciones](create-and-edit-configurations.md)
 
 # [Control de versiones](version-control.md)
+## [Control de versiones TF](tf-version-control.md)
 ## [Configurar un repositorio GIT](set-up-git-repository.md)
 ## [Trabajar con GIT](working-with-git.md)
 ## [Configurar un repositorio de Subversion](set-up-subversion-repository.md)
@@ -50,13 +54,20 @@
 
 # [Cargas de trabajo](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
+### [Razor](razor.md)
+### [JavaScript](javascript.md)
 ## [Azure](azure-workload.md)
+### [Introducción a Azure Functions](azure-functions.md)
+### [Tutorial: Azure Functions](azure-functions-lab.md)
 ### [Servicios conectados](connected-services.md)
 ## [Desarrollo de juegos de Unity](unity-tools.md)
 ### [Configuración](setup-vsmac-tools-unity.md)
 ### [Uso de herramientas de Unity](using-vsmac-tools-unity.md)
+### [Uso de .NET 4.x en Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
+### [Registro de cambios](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
 
 # [Accesibilidad](accessibility.md)
 
 # [Solución de problemas](troubleshooting.md)
+## [Programa para la mejora de la experiencia del usuario de Visual Studio](visual-studio-experience-improvement-program.md)
 ## [Notificar un problema](report-a-problem.md)

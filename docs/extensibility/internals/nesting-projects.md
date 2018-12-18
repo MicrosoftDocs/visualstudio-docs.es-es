@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131165"
 ---
 # <a name="nesting-projects"></a>Proyectos de anidamiento
 Los desarrolladores de aplicaciones empresariales que utilizan el paquete de VS cómodamente pueden agrupar tipos parecidos de proyectos en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilizando *proyecto anidamiento*. Por ejemplo, el proyecto de Enterprise Templates utiliza proyectos anidados para proyectos de grupo de categorías. Proyectos de la fachada de negocios, proyectos de interfaz de usuario Web y así sucesivamente se agrupan en una categoría.  

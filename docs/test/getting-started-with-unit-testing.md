@@ -1,20 +1,22 @@
 ---
-title: Introducción a las pruebas unitarias en Visual Studio | Microsoft Docs
+title: Introducción a las pruebas unitarias
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
+author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: fa3c92a2b42da7946d9f5b4b9cc0bf208704f079
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 171d329ed852bf6a27f20f12ae0f5421103820ff
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370812"
 ---
 # <a name="get-started-with-unit-testing"></a>Introducción a las pruebas unitarias
 
@@ -54,7 +56,7 @@ También puede crear códigos auxiliares de método de pruebas unitarias con el 
 
 ## <a name="run-unit-tests"></a>Ejecutar pruebas unitarias
 
-1. Abra el Explorador de pruebas.
+1. Abra el **Explorador de pruebas**.
 
    ![En el menú Prueba, abra el Explorador de pruebas.](media/rununittest1.png)
 
@@ -62,13 +64,16 @@ También puede crear códigos auxiliares de método de pruebas unitarias con el 
 
    ![Ejecutar pruebas unitarias en el Explorador de pruebas](media/rununittest2.png)
 
-   Puede ver las pruebas unitarias que se han superado o han dado error en el Explorador de pruebas.
+   Puede ver las pruebas unitarias que se han superado o han dado error en el **Explorador de pruebas**.
 
    ![Revisar los resultados de pruebas unitarias en el Explorador de pruebas](media/rununittest3.png)
 
 ## <a name="view-live-unit-test-results"></a>Ver los resultados de las pruebas unitarias en vivo
 
 Si está usando el marco de pruebas de MSTest, xUnit o NUnit en Visual Studio 2017 o versiones posteriores, puede ver los resultados en vivo de sus pruebas unitarias.
+
+> [!NOTE]
+> Live Unit Testing solo está disponible en Visual Studio 2017 Enterprise Edition.
 
 1. Active las pruebas unitarias en vivo desde el menú **Prueba**.
 
@@ -92,23 +97,21 @@ Cuando ejecuta Intelltest, puede ver fácilmente qué pruebas son las que fallan
 
 ## <a name="run-unit-tests-with-test-explorer"></a>Ejecutar pruebas unitarias con el Explorador de pruebas
 
-Con el Explorador de pruebas puede ejecutar pruebas unitarias de Visual Studio o proyectos de prueba unitaria de terceros, agrupar pruebas en categorías, filtrar la lista de pruebas, y crear, guardar y ejecutar las listas de reproducción de pruebas. También puede depurar las pruebas, y analizar la cobertura de código y el rendimiento de la prueba. Para obtener información sobre cómo hacerlo, vea [Ejecutar pruebas unitarias con el Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md).
+Con el **Explorador de pruebas** puede ejecutar pruebas unitarias de Visual Studio o proyectos de prueba unitaria de terceros, agrupar pruebas en categorías, filtrar la lista de pruebas, y crear, guardar y ejecutar las listas de reproducción de pruebas. También puede depurar las pruebas, y analizar la cobertura de código y el rendimiento de la prueba. Para obtener información sobre cómo hacerlo, vea [Ejecutar pruebas unitarias con el Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md).
 
 ![Ejecutar pruebas unitarias con el Explorador de pruebas](media/testexplorer.png)
 
 ## <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar cobertura de código para determinar la cantidad de código que se está probando
 
-Para determinar qué proporción de código del proyecto se está probando realmente mediante pruebas codificadas como pruebas unitarias, se puede utilizar la característica de cobertura de código de Visual Studio. Para restringir con eficacia los errores, las pruebas deberían ensayar o “cubrir” una proporción considerable del código. Para obtener información sobre cómo hacerlo, vea [Usar cobertura de código para determinar la cantidad de código que se está probando](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
-
-![Usar cobertura de código para determinar la cantidad de código que se está probando](media/codecoverage.png)
+Para determinar qué proporción de código del proyecto se está probando realmente mediante pruebas codificadas como pruebas unitarias, se puede utilizar la característica de cobertura de código de Visual Studio. Para restringir con eficacia los errores, las pruebas deberían ensayar una proporción considerable del código. Para obtener información sobre cómo hacerlo, vea [Usar cobertura de código para determinar la cantidad de código que se está probando](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
 ## <a name="use-a-different-unit-test-framework"></a>Usar otro marco de pruebas unitarias
 
-Es posible ejecutar pruebas unitarias en Visual Studio con un marco de pruebas de un tercero, como Boost, Google y nUnit. Utilice el complemento de ese marco de trabajo a fin de que el ejecutor de pruebas de Visual Studio pueda funcionar con él.
+Es posible ejecutar pruebas unitarias en Visual Studio con un marco de pruebas de un tercero, como Boost, Google y NUnit. Utilice el complemento de ese marco de trabajo a fin de que el ejecutor de pruebas de Visual Studio pueda funcionar con él.
 
 Estos son los pasos que permiten habilitar los marcos de pruebas de terceros:
 
-1. En la barra de menús, elija **Herramientas** > **Extensiones y actualizaciones...**
+1. En la barra de menús, elija **Herramientas** > **Extensiones y actualizaciones**.
 
 1. En el cuadro de diálogo **Extensiones y actualizaciones**, expanda la categoría **En línea** y, después, elija **Visual Studio Marketplace**. A continuación, elija **Herramientas** > **Pruebas**.
 
@@ -120,7 +123,7 @@ Estos son los pasos que permiten habilitar los marcos de pruebas de terceros:
 
    ![Asignar un nombre al proyecto de biblioteca de clases y agregarlo](media/create3rdpartyunittest3.png)
 
-1. Instale el complemento. En el **Explorador de soluciones**, seleccione el proyecto de biblioteca de clases y, después, haga clic con el botón derecho y elija **Administrar paquetes NuGet...** en el menú contextual.
+1. Instale el complemento. En el **Explorador de soluciones**, seleccione el proyecto de biblioteca de clases y, después, haga clic con el botón derecho y elija **Administrar paquetes NuGet** en el menú contextual.
 
    ![Administrar paquetes NuGet para instalar el complemento](media/create3rdpartyunittest3a.png)
 
@@ -134,7 +137,7 @@ Estos son los pasos que permiten habilitar los marcos de pruebas de terceros:
 
    ![La referencia del marco de pruebas unitarias de terceros se agrega a la solución](media/create3rdpartyunittest6.png)
 
-1. En el nodo **Referencias** del proyecto de biblioteca de clases, seleccione **Agregar referencia...**
+1. En el nodo **Referencias** del proyecto de biblioteca de clases, seleccione **Agregar referencia**.
 
    ![Agregar una referencia al proyecto](media/createunittest6.png)
 

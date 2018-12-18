@@ -1,5 +1,5 @@
 ---
-title: CONST_GUID_ARRAY | Documentos de Microsoft
+title: CONST_GUID_ARRAY | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c18feedde988559ae4aff1455b7dfb1d8c6eb1e9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b66713fa5929fc1397a5302732399c07c3f5a726
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885920"
 ---
 # <a name="constguidarray"></a>CONST_GUID_ARRAY
 Una estructura que contiene una lista de `GUID`s.  
@@ -50,7 +51,7 @@ public struct CONST_GUID_ARRAY {
 ## <a name="remarks"></a>Comentarios  
  Esta estructura se pasa a la [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) método y se devuelve desde el [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) y [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) métodos.  
   
- El propietario de una instancia de esta estructura es responsable de liberar la memoria asignada.  
+ El propietario de una instancia de esta estructura es responsable de liberar memoria asignada.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  

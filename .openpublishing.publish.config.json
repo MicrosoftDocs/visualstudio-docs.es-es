@@ -2,26 +2,27 @@
   "build_entry_point": "docs",
   "docsets_to_publish": [
     {
-      "docset_name": "connected-environment",
-      "build_source_folder": "connected-environment",
-      "build_output_subfolder": "connected-environment",
-      "locale": "es-es",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": false,
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "docs",
       "build_source_folder": "docs",
       "build_output_subfolder": "vsdocsdocs",
       "locale": "es-es",
       "monikers": [],
+      "moniker_ranges": [
+        "vs-2015",
+        ">= vs-2017"
+      ],
       "xref_query_tags": [
         "/dotnet"
       ],
       "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content",
+        "LandingData": "Content",
+        "ContextObject": "Toc",
+        "APIConnector": "Content"
+      },
       "template_folder": "_themes"
     },
     {
@@ -35,7 +36,8 @@
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
-        "RestApi": "Content"
+        "RestApi": "Content",
+        "ContextObject": "Toc"
       },
       "build_entry_point": "docs",
       "template_folder": "_themes"
@@ -47,6 +49,11 @@
       "locale": "es-es",
       "monikers": [],
       "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
       "build_entry_point": "docs",
       "template_folder": "_themes"
     },
@@ -58,11 +65,19 @@
       "monikers": [],
       "moniker_ranges": [],
       "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
       "build_entry_point": "docs",
       "template_folder": "_themes"
     }
   ],
   "notification_subscribers": [],
+  "sync_notification_subscribers": [
+    "ceicnotifications@microsoft.com"
+  ],
   "branches_to_filter": [
     "master",
     "live"
@@ -77,8 +92,17 @@
   },
   "dependent_repositories": [
     {
+      "path_to_root": "_repo.en-us",
+      "url": "https://github.com/MicrosoftDocs/visualstudio-docs-pr",
+      "branch": "live",
+      "branch_mapping": {
+        "live": "live",
+        "master": "master"
+      }
+    },
+    {
       "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft.es-es",
+      "url": "https://github.com/Microsoft/templates.docs.msft",
       "branch": "master",
       "branch_mapping": {}
     },
@@ -87,15 +111,6 @@
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
       "branch": "master",
       "branch_mapping": {}
-    },
-    {
-      "path_to_root": "_repo.en-us",
-      "url": "https://github.com/MicrosoftDocs/visualstudio-docs-pr",
-      "branch": "live",
-      "branch_mapping": {
-        "live": "live",
-        "master": "master"
-      }
     }
   ],
   "branch_target_mapping": {
@@ -104,7 +119,7 @@
       "Pdf"
     ]
   },
-  "need_generate_pdf_url_template": true,
+  "need_generate_pdf_url_template": false,
   "targets": {
     "Pdf": {
       "template_folder": "_themes.pdf"

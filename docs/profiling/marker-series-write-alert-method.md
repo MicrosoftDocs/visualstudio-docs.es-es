@@ -14,18 +14,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8072fbee78312a5b44bff076e563c638a35d1d64
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a8d6909ee08984d0bff57f993538957b8958dcf2
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237372"
 ---
-# <a name="markerserieswritealert-method"></a>marker_series::write_alert (Método)
+# <a name="markerserieswritealert-method"></a>Método marker_series::write_alert
 Escribe una alerta en el archivo de seguimiento del visualizador de simultaneidad.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp  
 void write_alert(  
    _In_ LPCTSTR _Format,  
    ...  
@@ -37,7 +38,7 @@ void write_alert(
  Una cadena de formato compuesto que contiene texto combinado con cero o más elementos de formato, que corresponden a objetos de la lista de argumentos.  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** cvmarkersobj.h  
+ **Encabezado:** *cvmarkersobj.h*  
   
  **Espacio de nombres:** Concurrency::diagnostic  
   

@@ -1,10 +1,9 @@
 ---
-title: Mostrar código fuente (Comando) | Microsoft Docs
-ms.custom: ''
+title: Mostrar código fuente (Comando)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - Debug.ListSource
 helpviewer_keywords:
@@ -17,47 +16,52 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d21a18a58832918b566e925c7c3898988740a1a7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 03a5d0699fced4d01d439942081b359454bcf476
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31943623"
 ---
 # <a name="list-source-command"></a>Mostrar código fuente (Comando)
-Muestra las líneas de código fuente especificadas.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```  
-Debug.ListSource [/Count:number] [/Current] [/File:filename]  
-[/Line:number] [/ShowLineNumbers:yes|no]  
-```  
-  
-## <a name="switches"></a>Modificadores  
- /Count:`number`  
- Opcional. Especifica el número de líneas que se van a mostrar.  
-  
- /Current  
- Opcional. Muestra la línea actual.  
-  
- /File:`filename`  
- Opcional. Ruta de acceso del archivo que se va a mostrar. Si no se especifica ningún nombre de archivo, el comando muestra el código fuente para la línea de la instrucción actual.  
-  
- /Line:`number`  
- Opcional. Muestra un número de línea concreto.  
-  
- /ShowLineNumbers:`yes|no`  
- Opcional. Especifica si se mostrarán o no los números de línea.  
-  
-## <a name="remarks"></a>Comentarios  
-  
-## <a name="example"></a>Ejemplo  
- En este ejemplo se muestra el código fuente desde la línea 4 del archivo Form1.vb, con los números de línea visibles.  
-  
-```  
-Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNumbers:yes  
-```  
-  
-## <a name="see-also"></a>Vea también  
- [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Ventana Comandos](../../ide/reference/command-window.md)
+Muestra las líneas de código fuente especificadas.
+
+## <a name="syntax"></a>Sintaxis
+
+```
+Debug.ListSource [/Count:number] [/Current] [/File:filename]
+[/Line:number] [/ShowLineNumbers:yes|no]
+```
+
+## <a name="switches"></a>Modificadores
+ /Count:`number`
+
+ Opcional. Especifica el número de líneas que se van a mostrar.
+
+ /Current
+
+ Opcional. Muestra la línea actual.
+
+ /File:`filename`
+
+ Opcional. Ruta de acceso del archivo que se va a mostrar. Si no se especifica ningún nombre de archivo, el comando muestra el código fuente para la línea de la instrucción actual.
+
+ /Line:`number`
+
+ Opcional. Muestra un número de línea concreto.
+
+ /ShowLineNumbers:`yes|no`
+
+ Opcional. Especifica si se mostrarán o no los números de línea.
+
+## <a name="example"></a>Ejemplo
+ En este ejemplo se muestra el código fuente desde la línea 4 del archivo Form1.vb, con los números de línea visibles.
+
+```
+Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNumbers:yes
+```
+
+## <a name="see-also"></a>Vea también
+
+- [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Ventana Comandos](../../ide/reference/command-window.md)

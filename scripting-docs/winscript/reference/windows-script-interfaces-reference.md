@@ -1,16 +1,16 @@
 ---
 title: Referencia de Interfaces de secuencia de comandos de Windows | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - Windows Script interfaces
 ms.assetid: e87b6b8b-e1ec-4280-a1b8-a8ef2f26cf36
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24733965"
 ---
 # <a name="windows-script-interfaces-reference"></a>Referencia de interfaces de Windows Script
 Las secciones siguientes tratan las interfaces de secuencia de comandos de Windows.  

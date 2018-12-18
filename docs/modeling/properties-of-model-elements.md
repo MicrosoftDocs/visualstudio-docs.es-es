@@ -7,12 +7,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 66439443b9451c876c5b6d4aae37357ec7f29e0a
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 464616a70d1c6779b2dd370933acc4a56300d17e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947721"
 ---
 # <a name="properties-of-model-elements"></a>Propiedades de los elementos del modelo
 Esta sección enumeran las propiedades que se ven en la ventana Propiedades cuando se selecciona un elemento en el diagrama de definición DSL o en el Explorador de DSL.

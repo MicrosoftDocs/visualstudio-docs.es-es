@@ -1,5 +1,5 @@
 ---
-title: Implementar tipos de proyecto | Documentos de Microsoft
+title: Implementación de tipos de proyecto | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,17 +14,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12af8607dd1561a4a2561cc688d2bb4ba0f07c88
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4bed37260925d4961ed5b5b7d3e69d55169444ad
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497906"
 ---
-# <a name="deploying-project-types"></a>Implementar tipos de proyecto
-[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] instala un nuevo agregador de tipo de proyecto (ProjectAggregator2.dll) y también un paquete de Windows Installer para su redistribución (ProjectAggregator2.msi). Debe usar el nuevo agregador para tipos de proyectos de código administrado. ProjectAggregator2 funciona alternativas limitaciones el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proyecto agregador que impiden que los tipos de proyectos de código administrado funciona correctamente. Los pasos siguientes describen cómo cambiar el VSPackage para usar el nuevo agregador.  
+# <a name="deploy-project-types"></a>Implementar tipos de proyecto
+[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] instala un nuevo agregador de tipo de proyecto (*ProjectAggregator2.dll*) y también un paquete de Windows Installer para la redistribución (*ProjectAggregator2.msi*). Debe usar el nuevo agregador para tipos de proyecto de código administrado. ProjectAggregator2 puede solventar las limitaciones en el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proyecto agregador que impide que los tipos de proyecto de código administrado funciona correctamente. Los pasos siguientes describen cómo cambiar el VSPackage para usar el nuevo agregador.  
   
 1.  Quitar el proyecto NativeHierarchyWrapper de la solución.  
   
-2.  Quite todos los archivos binarios de NativeHierarchyWrapper de su instalación.  
+2.  Quite todos los archivos binarios de NativeHierarchyWrapper de su programa de instalación.  
   
-3.  Agregar ProjectAggregator2.msi a su instalación.
+3.  Agregar *ProjectAggregator2.msi* a su instalación.

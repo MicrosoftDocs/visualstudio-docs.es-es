@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_managed | Documentos de Microsoft'
+title: Get_managed | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,14 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c23f59a4506ccf369b60bf45cf9320ff407b129c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 92e833bbb37e43d61911b18f27a1f1cf5a8e5b0c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823247"
 ---
 # <a name="idiasymbolgetmanaged"></a>IDiaSymbol::get_managed
-Recupera una marca que especifica si el símbolo hace referencia a código administrado.  
+Recupera una marca que especifica si el símbolo se refiere a código administrado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -33,10 +34,10 @@ HRESULT get_managed (
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve `TRUE` si el símbolo hace referencia a código administrado; en caso contrario, devuelve `FALSE`.  
+ [out] Devuelve `TRUE` si el símbolo se refiere a código administrado; en caso contrario, devuelve `FALSE`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  

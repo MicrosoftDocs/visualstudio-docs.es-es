@@ -1,6 +1,8 @@
 ---
 title: Modelar el SDK de Visual Studio - Lenguajes específicos de dominio
+titleSuffix: ''
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,36 +13,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 922419a1c0b973f704fdd16273b780e6136aebc2
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 6de309ca6ff9c1813a2a2a6ebc54ea6baa3a795f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060483"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modelar el SDK de Visual Studio - Lenguajes específicos de dominio
-Mediante el SDK de modelado para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], puede crear herramientas de desarrollo basado en modelo eficaz que puede integrar en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. De la misma manera, puede crear una o más definiciones de modelo e integrarlas en un conjunto de herramientas.
 
- En el núcleo de MSDK se encuentra la definición de un modelo creado para representar conceptos del área de negocio. Puede rodear el modelo con varias herramientas, como una vista en forma de diagrama, la capacidad de generar código y otros artefactos, comandos para transformar el modelo y la capacidad de interactuar con código y otros objetos en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Al desarrollar el modelo, puede combinarlo con otros modelos y herramientas para formar un conjunto de herramientas eficaz centrado en el desarrollo.
+Al usar el SDK de modelado para Visual Studio, puede crear herramientas de desarrollo eficaz basado en modelo que puede integrarse en Visual Studio. De la misma manera, puede crear una o más definiciones de modelo e integrarlas en un conjunto de herramientas.
 
- MSDK permite desarrollar un modelo rápidamente en forma de lenguaje específico de dominio (DSL). Se comienza por usar un editor especializado para definir un esquema o sintaxis abstracta junto con una notación gráfica. A partir de esta definición, VMSDK genera:
+En el núcleo de MSDK se encuentra la definición de un modelo creado para representar conceptos del área de negocio. Puede rodear el modelo con una variedad de herramientas, como una vista esquemática, la capacidad de generar código y otros artefactos, comandos para transformar el modelo y la capacidad de interactuar con el código y otros objetos en Visual Studio. Al desarrollar el modelo, puede combinarlo con otros modelos y herramientas para formar un conjunto de herramientas eficaz centrado en el desarrollo.
 
--   Una implementación del modelo con una API fuertemente tipada que se ejecuta en un almacén basado en transacciones.
+MSDK permite desarrollar un modelo rápidamente en forma de lenguaje específico de dominio (DSL). Se comienza por usar un editor especializado para definir un esquema o sintaxis abstracta junto con una notación gráfica. A partir de esta definición, VMSDK genera:
 
--   Un explorador basado en un árbol.
+- Una implementación del modelo con una API fuertemente tipada que se ejecuta en un almacén basado en transacciones.
 
--   Un editor gráfico en el que los usuarios pueden ver el modelo o las partes definidas de este.
+- Un explorador basado en un árbol.
 
--   Métodos de serialización que guardan los modelos en XML legible.
+- Un editor gráfico en el que los usuarios pueden ver el modelo o las partes definidas de este.
 
--   Medios para generar código de programa y otros artefactos mediante plantillas de texto.
+- Métodos de serialización que guardan los modelos en XML legible.
 
- Puede personalizar y ampliar todas estas características. Las extensiones se integran de modo que sigue siendo posible actualizar la definición de DSL y regenerar las características sin perder las extensiones.
+- Medios para generar código de programa y otros artefactos mediante plantillas de texto.
+
+Puede personalizar y ampliar todas estas características. Las extensiones se integran de modo que sigue siendo posible actualizar la definición de DSL y regenerar las características sin perder las extensiones.
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
- [Blogs relacionados](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
+[Blogs relacionados](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
 
- Para obtener información sobre solución de problemas y técnicas avanzadas, visite [foro DSL de Visual Studio y extensibilidad de herramientas de modelado](http://go.microsoft.com/fwlink/?LinkID=186074).
+Para obtener información sobre técnicas avanzadas y solución de problemas, visite [foro DSL de Visual Studio y herramientas de extensibilidad del modelado](http://go.microsoft.com/fwlink/?LinkID=186074).
 
 ## <a name="in-this-section"></a>En esta sección
  [Introducción a los lenguajes específicos de dominio](../modeling/getting-started-with-domain-specific-languages.md)

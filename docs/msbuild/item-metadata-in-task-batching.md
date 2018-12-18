@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c55bd7be84b118f08fbedff1931c4517e963b5a7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f1804bde2c3da7f83658784ca1520791a930f901
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177200"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadatos de elementos en el procesamiento por lotes de tareas
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] tiene la capacidad de dividir las listas de elementos en distintas categorías, o lotes, basándose en los metadatos de estos elementos, y luego ejecutar una tarea una vez con cada lote. Puede resultar complicado entender exactamente qué elementos se pasan con cada lote. En este tema se tratan los escenarios comunes siguientes en los que se utiliza el procesamiento por lotes.  
@@ -31,10 +32,10 @@ ms.lasthandoff: 04/19/2018
 -   Procesar por lotes un elemento cada vez  
   
 -   Filtrar listas de elementos  
+
+Para obtener más información sobre el procesamiento por lotes con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], vea [Procesamiento por lotes](../msbuild/msbuild-batching.md).  
   
- Para obtener más información sobre el procesamiento por lotes con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], vea [Procesamiento por lotes](../msbuild/msbuild-batching.md).  
-  
-## <a name="dividing-an-item-list-into-batches"></a>Dividir una lista de elementos en lotes  
+## <a name="divide-an-item-list-into-batches"></a>Dividir una lista de elementos en lotes  
  El procesamiento por lotes permite dividir una lista de elementos en distintos lotes basándose en los metadatos de esos elementos, y luego pasar cada uno de los lotes a una tarea por separado. Esto resulta útil para compilar ensamblados satélite.  
   
  En el ejemplo siguiente, se muestra cómo dividir una lista de elementos en lotes basándose en los metadatos de los elementos. La lista de elementos `ExampColl` se divide en tres lotes según los metadatos del elemento `Number`. La presencia de `%(ExampColl.Number)` en el atributo `Text` indica a [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que se debe realizar un procesamiento por lotes. La lista de elementos `ExampColl` se divide en tres lotes según los metadatos de `Number` y cada lote se pasa a la tarea por separado.  
@@ -71,8 +72,8 @@ ms.lasthandoff: 04/19/2018
   
 </Project>  
 ```  
-  
- La tarea [Message (Tarea)](../msbuild/message-task.md) muestra la información siguiente:  
+
+[Message (Tarea)](../msbuild/message-task.md) muestra la información siguiente:  
   
  `Number: 1 -- Items in ExampColl: Item1;Item4`  
   
@@ -80,13 +81,13 @@ ms.lasthandoff: 04/19/2018
   
  `Number: 3 -- Items in ExampColl: Item3;Item6`  
   
-## <a name="dividing-several-item-lists-into-batches"></a>Dividir varias listas de elementos en lotes  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] puede dividir varias listas de elementos en lotes basándose en los mismos metadatos. Esto facilita la división de diferentes listas de elementos en lotes para compilar varios ensamblados. Por ejemplo, se puede dividir una lista de elementos de archivos .cs en un lote de aplicación y un lote de ensamblado, y dividir una lista de elementos de archivos de recursos en un lote de aplicación y un lote de ensamblado. A continuación, se puede utilizar el procesamiento por lotes para pasar estas listas de elementos a una misma tarea y compilar la aplicación y el ensamblado.  
+## <a name="divide-several-item-lists-into-batches"></a>Dividir varias listas de elementos en lotes  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] puede dividir varias listas de elementos en lotes basándose en los mismos metadatos. Esto facilita la división de diferentes listas de elementos en lotes para compilar varios ensamblados. Por ejemplo, se puede dividir una lista de elementos de archivos *.cs* en un lote de aplicación y un lote de ensamblado, y dividir una lista de elementos de archivos de recursos en un lote de aplicación y un lote de ensamblado. A continuación, se puede utilizar el procesamiento por lotes para pasar estas listas de elementos a una misma tarea y compilar la aplicación y el ensamblado.  
   
 > [!NOTE]
 >  Si una lista de elementos pasada a una tarea no contiene ningún elemento con los metadatos a los que se hace referencia, todos los elementos de esa lista se pasan a todos los lotes.  
   
- En el ejemplo siguiente, se muestra cómo dividir varias listas de elementos en lotes basándose en los metadatos de los elementos. Las listas de elementos `ExampColl` y `ExampColl2` se han dividido en tres lotes cada una, basándose en los metadatos del elemento `Number`. La presencia de `%(Number)` en el atributo `Text` indica a [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que se debe realizar un procesamiento por lotes. Las listas de elementos `ExampColl` y `ExampColl2` se dividen en tres lotes según los metadatos de `Number` y cada lote se pasa a la tarea por separado.  
+En el ejemplo siguiente, se muestra cómo dividir varias listas de elementos en lotes basándose en los metadatos de los elementos. Las listas de elementos `ExampColl` y `ExampColl2` se han dividido en tres lotes cada una, basándose en los metadatos del elemento `Number`. La presencia de `%(Number)` en el atributo `Text` indica a [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que se debe realizar un procesamiento por lotes. Las listas de elementos `ExampColl` y `ExampColl2` se dividen en tres lotes según los metadatos de `Number` y cada lote se pasa a la tarea por separado.  
   
 ```xml  
 <Project  
@@ -124,7 +125,7 @@ ms.lasthandoff: 04/19/2018
 </Project>  
 ```  
   
- La tarea [Message (Tarea)](../msbuild/message-task.md) muestra la información siguiente:  
+[Message (Tarea)](../msbuild/message-task.md) muestra la información siguiente:  
   
  `Number: 1 -- Items in ExampColl: Item1 ExampColl2: Item4`  
   
@@ -132,7 +133,7 @@ ms.lasthandoff: 04/19/2018
   
  `Number: 3 -- Items in ExampColl: Item3 ExampColl2: Item6`  
   
-## <a name="batching-one-item-at-a-time"></a>Procesar por lotes un elemento cada vez  
+## <a name="batch-one-item-at-a-time"></a>Procesamiento por lotes de un elemento cada vez  
  El procesamiento por lotes también se puede realizar en metadatos de elementos conocidos que se asignan a cada elemento durante su creación. De este modo se garantiza que cada elemento de una colección disponga de metadatos que utilizar para el procesamiento por lotes. El valor de metadatos `Identity` es único para cada elemento y resulta de gran utilidad para dividir cada elemento de una lista de elementos en un lote independiente. Para obtener una lista completa de metadatos de elementos conocidos, vea [Metadatos de los elementos conocidos](../msbuild/msbuild-well-known-item-metadata.md).  
   
  En el ejemplo siguiente se muestra cómo procesar por lotes cada uno de los elementos de una lista, de uno en uno. Dado que el valor de metadatos `Identity` de cada elemento es único, la lista de elementos `ExampColl` se divide en seis lotes, cada uno de los cuales contiene un elemento de la lista. La presencia de `%(Identity)` en el atributo `Text` indica a [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que se debe realizar un procesamiento por lotes.  
@@ -160,7 +161,7 @@ ms.lasthandoff: 04/19/2018
 </Project>  
 ```  
   
- La tarea [Message (Tarea)](../msbuild/message-task.md) muestra la información siguiente:  
+[Message (Tarea)](../msbuild/message-task.md) muestra la información siguiente:  
   
 ```  
 Identity: "Item1" -- Items in ExampColl: Item1  
@@ -171,7 +172,7 @@ Identity: "Item5" -- Items in ExampColl: Item5
 Identity: "Item6" -- Items in ExampColl: Item6  
 ```  
   
-## <a name="filtering-item-lists"></a>Filtrar listas de elementos  
+## <a name="filter-item-lists"></a>Filtro de elementos en listas  
  El procesamiento por lotes se puede utilizar para filtrar y extraer determinados elementos de una lista de elementos antes de pasarla a una tarea. Por ejemplo, si se aplica como filtro el valor de metadatos de elementos conocidos `Extension`, se puede ejecutar una tarea únicamente en los archivos que tienen una extensión concreta.  
   
  El ejemplo siguiente muestra cómo dividir una lista de elementos en lotes basándose en los metadatos de los elementos y, a continuación, filtrar los lotes al pasarlos a una tarea. La lista de elementos `ExampColl` se divide en tres lotes según los metadatos del elemento `Number`. El atributo `Condition` de la tarea especifica que solo se pasarán a la tarea los lotes cuyo valor de metadatos del elemento `Number` sea `2`.  
@@ -212,7 +213,7 @@ Identity: "Item6" -- Items in ExampColl: Item6
 </Project>  
 ```  
   
- La tarea [Message (Tarea)](../msbuild/message-task.md) muestra la información siguiente:  
+[Message (Tarea)](../msbuild/message-task.md) muestra la información siguiente:  
   
 ```  
 Items in ExampColl: Item2;Item5  

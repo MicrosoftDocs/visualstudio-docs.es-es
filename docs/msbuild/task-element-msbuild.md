@@ -18,13 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc67d881f48c99cd8e53de086f0c8b08c96d7844
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 512675f0752f675bd393f324220eece87301af8a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914832"
 ---
-# <a name="task-element-msbuild"></a>Elemento de tarea (MSBuild)
+# <a name="task-element-msbuild"></a>Elemento Task (MSBuild)
 Crea y ejecuta una instancia de una tarea [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. El nombre del elemento se determina viene determinado por el nombre de la tarea que se va a crear.  
 
  \<Project>  
@@ -32,7 +33,7 @@ Crea y ejecuta una instancia de una tarea [!INCLUDE[vstecmsbuild](../extensibili
 
 ## <a name="syntax"></a>Sintaxis  
 
-```  
+```xml  
 <Task Parameter1="Value1"... ParameterN="ValueN"  
     ContinueOnError="WarnAndContinue/true/ErrorAndContinue/ErrorAndStop/false"  
     Condition="'String A' == 'String B'" >  
@@ -45,23 +46,23 @@ Crea y ejecuta una instancia de una tarea [!INCLUDE[vstecmsbuild](../extensibili
 
 ### <a name="attributes"></a>Atributos  
 
-|Atributo|Description|  
+|Atributo|Descripción|  
 |---------------|-----------------|  
 |`Condition`|Atributo opcional. Condición que se va a evaluar. Para obtener más información, consulte [Condiciones](../msbuild/msbuild-conditions.md).|  
-|`ContinueOnError`|Atributo opcional. Puede contener uno de los siguientes valores:<br /><br /> -   **WarnAndContinue** o **true**. Cuando se produce un error en una tarea, las tareas subsiguientes en el elemento [Target](../msbuild/target-element-msbuild.md) y la compilación continúan ejecutándose, y todos los errores de la tarea se tratan como advertencias.<br />-   **ErrorAndContinue**. Cuando se produce un error en una tarea, las tareas subsiguientes en el elemento `Target` y la compilación continúan ejecutándose, y todos los errores de la tarea se tratan como errores.<br />-   **ErrorAndStop** o **false** (valor predeterminado). Cuando se produce un error en una tarea, las tareas restantes en el elemento `Target` y la compilación no se ejecutan, y se considera que se ha producido un error en todo el elemento `Target` y la compilación.<br /><br /> Las versiones de .NET Framework anteriores a 4.5 solo admiten los valores `true` y `false`.<br /><br /> Para obtener más información, consulte [Cómo: Pasar errores por alto en las tareas](../msbuild/how-to-ignore-errors-in-tasks.md).|  
+|`ContinueOnError`|Atributo opcional. Puede contener uno de los siguientes valores:<br /><br /> -   **WarnAndContinue** o **true**. Cuando se produce un error en una tarea, las tareas subsiguientes en el elemento [Target](../msbuild/target-element-msbuild.md) y la compilación continúan ejecutándose, y todos los errores de la tarea se tratan como advertencias.<br />-   **ErrorAndContinue**. Cuando se produce un error en una tarea, las tareas subsiguientes en el elemento `Target` y la compilación continúan ejecutándose, y todos los errores de la tarea se tratan como errores.<br />-   **ErrorAndStop** o **false** (valor predeterminado). Cuando se produce un error en una tarea, las tareas restantes en el elemento `Target` y la compilación no se ejecutan, y se considera que se ha producido un error en todo el elemento `Target` y la compilación.<br /><br /> Las versiones de .NET Framework anteriores a 4.5 solo admiten los valores `true` y `false`.<br /><br /> Para más información, consulte [Cómo: Pasar errores por alto en las tareas](../msbuild/how-to-ignore-errors-in-tasks.md).|  
 |`Parameter`|Se necesita si la clase de tarea contiene una o más propiedades etiquetadas con el atributo `[Required]`.<br /><br /> Un parámetro de tarea definido por el usuario que contiene el valor del parámetro como su valor. Puede haber cualquier número de parámetros en el elemento `Task`, con cada asignación de atributo a una propiedad de .NET en la clase de tarea.|  
 
 ### <a name="child-elements"></a>Elementos secundarios  
 
-|Elemento|Description|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
 |[Salida](../msbuild/output-element-msbuild.md)|Almacena salidas de la tarea en el archivo de proyecto. Puede haber cero o más elementos `Output` en una tarea.|  
 
 ### <a name="parent-elements"></a>Elementos primarios  
 
-|Elemento|Description|  
-|-------------|-----------------|  
-|[Target](../msbuild/target-element-msbuild.md)|Elemento contenedor para tareas de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
+| Elemento | Descripción |
+| - | - |
+| [Target](../msbuild/target-element-msbuild.md) | Elemento contenedor para tareas de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
 
 ## <a name="remarks"></a>Comentarios  
  Un elemento `Task` en un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] crea una instancia de una tarea, establece propiedades en ella y la ejecuta. El elemento `Output` almacena los parámetros de salida en propiedades o elementos que se usarán en otro lugar en el archivo de proyecto.  
@@ -88,4 +89,4 @@ Crea y ejecuta una instancia de una tarea [!INCLUDE[vstecmsbuild](../extensibili
 ## <a name="see-also"></a>Vea también  
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
- [Referencia de esquemas de archivo del proyecto](../msbuild/msbuild-project-file-schema-reference.md)
+ [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)

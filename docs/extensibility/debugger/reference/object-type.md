@@ -1,5 +1,5 @@
 ---
-title: OBJECT_TYPE | Documentos de Microsoft
+title: OBJECT_TYPE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc5c7367a8b134324073d40452ec9b7ec20c1ffc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eff83198e337a3f89c88663722bf34046d3d4f62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905745"
 ---
 # <a name="objecttype"></a>OBJECT_TYPE
 Especifica el tipo de un objeto desde el evaluador de expresiones.  
@@ -75,7 +76,7 @@ public enum enum_OBJECT_TYPE {
  Indica que el objeto es un carácter.  
   
  OBJECT_TYPE_I1  
- Indica que el objeto es un entero de un byte con signo.  
+ Indica que el objeto es un entero con signo de un byte.  
   
  OBJECT_TYPE_U1  
  Indica que el objeto es un entero sin signo de un byte.  
@@ -87,7 +88,7 @@ public enum enum_OBJECT_TYPE {
  Indica que el objeto es un entero sin signo de dos bytes.  
   
  OBJECT_TYPE_I4  
- Indica que el objeto es un entero de cuatro bytes con signo.  
+ Indica que el objeto es un entero con signo de cuatro bytes.  
   
  OBJECT_TYPE_U4  
  Indica que el objeto es un entero sin signo de cuatro bytes.  
@@ -102,7 +103,7 @@ public enum enum_OBJECT_TYPE {
  Indica que el objeto es un número de punto flotante de cuatro bytes.  
   
  OBJECT_TYPE_R8  
- Indica que el objeto es un número de punto flotante de 8 bytes.  
+ Indica que el objeto es un número de punto flotante de ocho bytes.  
   
  OBJECT_TYPE_OBJECT  
  Indica que el objeto es un objeto.  
@@ -114,7 +115,7 @@ public enum enum_OBJECT_TYPE {
  Indica que el objeto es una clase.  
   
 ## <a name="remarks"></a>Comentarios  
- Pasa como un argumento a la [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) y [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) métodos.  
+ Se pasa como argumento a la [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) y [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) métodos.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: ee.h  

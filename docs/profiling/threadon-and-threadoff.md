@@ -10,30 +10,31 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11038ebe930789967b2d0092805787a8d4f24f6c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2aa23601ff1f85aa4e2d28be5664c4bccb8d2eff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828400"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn y ThreadOff
-Los subcomandos **ThreadOff** y **ThreadOn** de VSPerfCmd.exe solo están disponibles en las sesiones de generación de perfiles de la línea de comandos en las que se usa el método de instrumentación. **ThreadOff** y **ThreadOn** pausan y reanudan la generación de perfiles para el subproceso especificado. **ThreadOff** detiene la generación de perfiles del subproceso y **ThreadOn** la inicia.  
+Los subcomandos **ThreadOff** y **ThreadOn** de *VSPerfCmd.exe* solo están disponibles en las sesiones de generación de perfiles de la línea de comandos en las que se usa el método de instrumentación. **ThreadOff** y **ThreadOn** pausan y reanudan la generación de perfiles para el subproceso especificado. **ThreadOff** detiene la generación de perfiles del subproceso y **ThreadOn** la inicia.  
   
- En la mayoría de los casos, se especifica **ThreadOn** o **ThreadOff** como la única opción en una línea de comandos de VSPerfCmd.exe, pero también se pueden combinar con los subcomandos **GlobalOn**, **GlobalOff**, **ProcessOn** y **ProcessOff**.  
+ En la mayoría de los casos, se especifica **ThreadOn** o **ThreadOff** como la única opción en una línea de comandos de *VSPerfCmd.exe*, pero también se pueden combinar con los subcomandos **GlobalOn**, **GlobalOff**, **ProcessOn** y **ProcessOff**.  
   
  Los subcomandos **ThreadOn** y **ThreadOff** interactúan con los subcomandos **GlobalOn** y **GlobalOff** que controlan la recopilación de datos para todos los procesos de una sesión de generación de perfiles de línea de comandos, y con los subcomandos **ProcessOn** y **ProcessOff** que controlan la recopilación de datos para un proceso especificado.  
   
  Los subcomandos **ThreadOff** y **ThreadOn** también afectan al recuento de inicios y paradas de subprocesos que se manipula mediante las funciones de API del generador de perfiles.  
   
--   **ThreadOff** establece inmediatamente el contador de inicios y paradas de subproceso en 0 y, por tanto, detiene la generación de perfiles.  
+- **ThreadOff** establece inmediatamente el contador de inicios y paradas de subproceso en 0 y, por tanto, detiene la generación de perfiles.  
   
--   **ThreadOn** establece inmediatamente el contador de inicios y paradas de subproceso en 1 y, por tanto, reanuda la generación de perfiles.  
+- **ThreadOn** establece inmediatamente el contador de inicios y paradas de subproceso en 1 y, por tanto, reanuda la generación de perfiles.  
   
- Para más información, vea [API de herramientas de generación de perfiles](../profiling/profiling-tools-apis.md).  
+  Para obtener más información, vea [API de herramientas de generación de perfiles](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cmd  
 VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]  
   
 ```  
@@ -57,7 +58,7 @@ VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]
 ## <a name="example"></a>Ejemplo  
  En este ejemplo, se usa el subcomando **ThreadOff** para detener la recopilación de datos de generación de perfiles para que solo se recopilen los datos de inicio de la aplicación.  
   
-```  
+```cmd  
 ; Initialize the profiler.  
 VSPerfCmd.exe /Start:Trace /Output:Instrument.vsp   
 ; Start the instrumented application.  
@@ -71,6 +72,6 @@ VSPerfCmd /Shutdown
   
 ## <a name="see-also"></a>Vea también  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Generar perfiles de servicios](../profiling/command-line-profiling-of-services.md)
+ [Generación de perfiles de aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Generación de perfiles de aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Generar perfiles para servicios](../profiling/command-line-profiling-of-services.md)

@@ -1,5 +1,5 @@
 ---
-title: FIELD_KIND | Documentos de Microsoft
+title: FIELD_KIND | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35a603310986f42141a04f38c7ce26db0d7326fe
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: df29c9bd876a437dbcf8d797f1dcc51fb05a296f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868201"
 ---
 # <a name="fieldkind"></a>FIELD_KIND
-Especifica el tipo de campo de un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto.  
+Especifica el tipo de campo incluido en un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -218,7 +219,7 @@ public enum enum_FIELD_KIND {
  Indica una máscara para los tipos de campo.  
   
  FIELD_TYPE_MASK  
- Indica una máscara para los tipos de campo.  
+ Indica una máscara para tipos de campo.  
   
  FIELD_SYM_MASK  
  Indica una máscara para la información de símbolos.  
@@ -226,7 +227,7 @@ public enum enum_FIELD_KIND {
 ## <a name="remarks"></a>Comentarios  
  Devuelve una llamada a la [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) método.  
   
- Según el tipo de campo, [QueryInterface](/cpp/atl/queryinterface) puede llamarse en el [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaz para una forma más específica de la interfaz. Por ejemplo, si [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) devuelve `FIELD_TYPE_METHOD`, a continuación, puede llamar a `QueryInterface` en I`DebugField` para obtener la [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) interfaz.  
+ Según el tipo de campo, [QueryInterface](/cpp/atl/queryinterface) puede llamarse en el [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaz para una forma más específica de la interfaz. Por ejemplo, si [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) devuelve `FIELD_TYPE_METHOD`, a continuación, puede llamar a `QueryInterface` en puedo`DebugField` para obtener el [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) interfaz.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: sh.h  

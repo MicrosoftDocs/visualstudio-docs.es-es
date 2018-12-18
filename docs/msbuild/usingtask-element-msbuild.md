@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f95e09639e9236b64f9c18c9bd90e6850ee13d86
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 28dba0a2b386cef00daf4827609ce9762c667067
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892966"
 ---
 # <a name="usingtask-element-msbuild"></a>Elemento UsingTask (MSBuild)
 Asigna la tarea a la que se hace referencia en un elemento [Tarea](../msbuild/task-element-msbuild.md) al ensamblado que contiene la implementación de la tarea.  
@@ -34,7 +35,7 @@ Asigna la tarea a la que se hace referencia en un elemento [Tarea](../msbuild/ta
 
 ## <a name="syntax"></a>Sintaxis  
 
-```  
+```xml  
 <UsingTask TaskName="TaskName"  
     AssemblyName = "AssemblyName"   
     TaskFactory = "ClassName"  
@@ -56,24 +57,24 @@ Asigna la tarea a la que se hace referencia en un elemento [Tarea](../msbuild/ta
 
 ### <a name="child-elements"></a>Elementos secundarios  
 
-|Elemento|Description|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
 |[ParameterGroup](../msbuild/parametergroup-element.md)|Conjunto de parámetros que aparecen en la tarea que se genera mediante el objeto `TaskFactory` especificado.|  
 |[Task](../msbuild/task-element-msbuild.md)|Datos que se pasan a `TaskFactory` para generar una instancia de la tarea.|  
 
 ### <a name="parent-elements"></a>Elementos primarios  
 
-|Elemento|Description|  
-|-------------|-----------------|  
-|[Proyecto](../msbuild/project-element-msbuild.md)|Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .|  
+| Elemento | Descripción |
+| - | - |
+| [Proyecto](../msbuild/project-element-msbuild.md) | Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
 
 ## <a name="remarks"></a>Comentarios  
- Es posible hacer referencia a las variables de entorno, las propiedades de la línea de comandos y las propiedades del nivel de proyecto en cualquier lugar del elemento `UsingTask` si aparece en el archivo del proyecto, ya sea explícitamente o a través de un archivo de proyecto importado. Para obtener más información, consulte [Tareas](../msbuild/msbuild-tasks.md).  
+ Se puede hacer referencia a variables de entorno, propiedades de línea de comandos, propiedades de nivel de proyecto y elementos de nivel de proyecto en los elementos `UsingTask` incluidos en el archivo de proyecto, ya sea directamente o a través de un archivo de proyecto importado. Para obtener más información, consulte [Tareas](../msbuild/msbuild-tasks.md).  
 
 > [!NOTE]
->  Las propiedades del nivel de proyecto no tienen ningún significado si el elemento `UsingTask` proviene de uno de los archivos .tasks registrados globalmente con el motor de MSBuild. Las propiedades del nivel de proyecto no son globales para MSBuild.  
+>  Las propiedades y los elementos de nivel de proyecto no tienen ningún sentido si el elemento `UsingTask` proviene de uno de los archivos *.tasks* registrados globalmente con el motor MSBuild. Los valores de nivel de proyecto no son globales en MSBuild.  
 
- En MSBuild 4.0, el uso de tareas puede cargarse a partir de archivos .overridetask.  
+ En MSBuild 4.0, el uso de tareas puede cargarse a partir de archivos *.overridetask*.  
 
 ## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se muestra cómo usar el elemento `UsingTask` con un atributo `AssemblyName`.  
@@ -102,4 +103,4 @@ Asigna la tarea a la que se hace referencia en un elemento [Tarea](../msbuild/ta
 ## <a name="see-also"></a>Vea también  
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
- [Referencia de esquemas de archivo del proyecto](../msbuild/msbuild-project-file-schema-reference.md)
+ [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)

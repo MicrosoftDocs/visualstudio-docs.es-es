@@ -1,16 +1,16 @@
 ---
 title: IActiveScriptSiteWindow | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IActiveScriptSiteWindow interface
 ms.assetid: 96d5c493-2c0b-47e2-848b-4a8dacdcd65c
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725135"
 ---
 # <a name="iactivescriptsitewindow"></a>IActiveScriptSiteWindow
 Hosts que admitan una interfaz de usuario en el mismo objeto que implementa esta interfaz [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) . Los hosts que no son compatibles con una interfaz de usuario, como los servidores, no se implementaría el `IActiveScriptSiteWindow` interfaz. El motor de scripting tiene acceso a esta interfaz mediante una llamada a `QueryInterface` de `IActiveScriptSite`.  

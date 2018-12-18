@@ -1,5 +1,5 @@
 ---
-title: ProjectSubType (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
+title: ProjectSubType (elemento) (plantillas de Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,13 +16,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4414d5f444613996312978e9033145c6b8d3d82
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d1ca080ea61fbaaba7992fd8f4f1f4fbeac843d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824341"
 ---
-# <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType (Elemento, Plantillas de Visual Studio)
+# <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType (elemento) (plantillas de Visual Studio)
 Clasifica la plantilla en una subcategoría del valor especificado en el `ProjectType` elemento.  
   
  \<VSTemplate >  
@@ -31,7 +32,7 @@ Clasifica la plantilla en una subcategoría del valor especificado en el `Projec
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```xml  
 <ProjectSubType> SubType </ProjectSubType>  
 ```  
   
@@ -60,18 +61,18 @@ Clasifica la plantilla en una subcategoría del valor especificado en el `Projec
   
  El `ProjectSubType` elemento proporciona una subcategoría a la [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) elemento. Este valor puede incluir:  
   
--   `SmartDevice-NETCFv1`: Especifica que los destinos de plantilla la [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] versión 1.0.  
+- `SmartDevice-NETCFv1`: Especifica que los destinos de la plantilla el [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] versión 1.0.  
   
--   `SmartDevice-NETCFv2`: Especifica que los destinos de plantilla la [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] versión 2.0.  
+- `SmartDevice-NETCFv2`: Especifica que los destinos de la plantilla el [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] versión 2.0.  
   
- Si una plantilla contiene un `ProjectType` elemento con un valor de `Web`, el `ProjectSubType` elemento especifica el lenguaje de programación de la plantilla. Este elemento puede tener los valores siguientes:  
+  Si una plantilla contiene un `ProjectType` elemento con un valor de `Web`, el `ProjectSubType` elemento especifica el lenguaje de programación de la plantilla. Este elemento puede tener los siguientes valores:  
   
--   `CSharp`: Especifica que la plantilla crea una [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] proyecto o elemento Web.  
+- `CSharp`: Especifica que la plantilla crea un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] proyecto o elemento Web.  
   
--   `VisualBasic`: Especifica que la plantilla crea una [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] proyecto o elemento Web.  
+- `VisualBasic`: Especifica que la plantilla crea un [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] proyecto o elemento Web.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra los metadatos de una plantilla de proyecto para una [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] dispositivo aplicación destinada a la [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] versión 2.0.  
+ El ejemplo siguiente muestra los metadatos para una plantilla de proyecto para una [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación de dispositivo como destino el [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] versión 2.0.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -100,5 +101,5 @@ Clasifica la plantilla en una subcategoría del valor especificado en el `Projec
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
- [ProjectType (Elemento, Plantillas de Visual Studio)](../extensibility/projecttype-element-visual-studio-templates.md)
+ [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)   
+ [ProjectType (elemento) (plantillas de Visual Studio)](../extensibility/projecttype-element-visual-studio-templates.md)

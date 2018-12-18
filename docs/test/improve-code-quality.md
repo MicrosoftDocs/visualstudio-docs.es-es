@@ -1,6 +1,7 @@
 ---
-title: Herramientas de prueba de Visual Studio | Microsoft Docs
+title: Herramientas de prueba
 ms.date: 03/16/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,11 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dec57e0f51b9033d9808c36a3ed9ed59c0221131
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a619989543b30ccf07cdb300a5688a985cf27eb7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068252"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Herramientas de prueba de Visual Studio
 
@@ -36,12 +38,11 @@ Las herramientas de prueba de Visual Studio pueden ayudarle a usted y a su equip
 - La [prueba de carga](../test/quickstart-create-a-load-test-project.md) simula la carga en una aplicación de servidor mediante la ejecución de pruebas unitarias y pruebas de rendimiento web.
 
 > [!NOTE]
-> Las pruebas unitarias están disponibles en todas las ediciones de Visual Studio. Otras herramientas de pruebas, como Live Unit Testing, IntelliTest y pruebas automatizadas de IU, solo están disponibles en la edición Visual Studio Enterprise. Para más información sobre las ediciones, vea [Comparar los IDE de Visual Studio 2017](https://www.visualstudio.com/vs/compare/).
+> Las pruebas unitarias están disponibles en todas las ediciones de Visual Studio. Otras herramientas de pruebas, como Live Unit Testing, IntelliTest y pruebas automatizadas de IU, solo están disponibles en la edición Visual Studio Enterprise. Para más información sobre las ediciones, vea [Comparar los IDE de Visual Studio 2017](https://visualstudio.microsoft.com/vs/compare/).
 
 ## <a name="related-scenarios"></a>Escenarios relacionados
 
-* [Pruebas exploratorias y manuales (VSTS)](/vsts/manual-test/)
-* [Prueba de carga (VSTS)](/vsts/load-test/index)
-* [Prueba continua (VSTS)](/vsts/build-release/test/index)
-* [Información general de DevOps para Team Services y TFS (VSTS)](/vsts/user-guide/devops-alm-overview)
+* [Exploratory & manual testing (Azure Test Plans)](/azure/devops/test/index?view=vsts) [Pruebas exploratorias y manuales (Azure Test Plans)]
+* [Load testing (Azure Test Plans)](/azure/devops/test/load-test/index?view=vsts) [Prueba de carga (Azure Test Plans)]
+* [Continuous testing (Azure Test Plans)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) [Prueba continua (Azure Test Plans)]
 * [Herramientas de análisis de código](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)

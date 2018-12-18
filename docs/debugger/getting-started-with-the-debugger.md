@@ -1,10 +1,12 @@
 ---
-title: Proporciona información sobre cómo depurar - Visual Studio | Documentos de Microsoft
-ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data
-ms.custom: mvc
-ms.date: 03/16/2018
+title: Información sobre cómo depurar código de C# con el depurador de Visual Studio
+ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data.
+ms.custom: debug-experiment
+ms.date: 11/27/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
+dev_langs:
+- CSharp
 helpviewer_keywords:
 - debugger
 ms.assetid: 62734c0d-a75a-4576-8f73-0e97c19280e1
@@ -13,284 +15,336 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3501f3e94fdb9b98aefc96d7a1e2fe12b4117fbb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 549f38839495385c983cc68f14fc94629ac988c3
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821310"
 ---
-# <a name="learn-to-debug-using-visual-studio"></a>Proporciona información sobre cómo depurar con Visual Studio
+# <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: Información sobre cómo depurar código de C# con Visual Studio
 
-En este tema se presenta las características del depurador de Visual Studio en un tutorial paso a paso. Si desea que una vista de nivel superior de las características del depurador, vea [depurador paseo](../debugger/debugger-feature-tour.md).
+En este artículo se describen las características del depurador de Visual Studio en un tutorial paso a paso. Normalmente, *depurar una aplicación* significa ejecutar la aplicación con el depurador activado. Al hacerlo, el depurador ofrece muchas formas de ver lo que hace el código durante la ejecución. Esto permite revisar el código y fijarse en los valores almacenados en variables, establecer inspecciones en ellas para ver cuándo cambian los valores, examinar la ruta de ejecución del código, ver si una rama de código está en funcionamiento, etc. Si esta es la primera vez que intenta depurar código, le recomendamos que lea [Cómo depurar para principiantes sin experiencia](../debugger/debugging-absolute-beginners.md) y [Fix bugs by writing better C# code](../debugger/write-better-code-with-visual-studio.md) (Mejora de la escritura de código de C# para solucionar errores) antes de continuar con este artículo.
 
-O bien, puede leer a lo largo de para ver las características del depurador o puede descargar el ejemplo completo que se utiliza en el paseo y siga los pasos que usted mismo. Para descargar el ejemplo y seguir el tutorial, vaya a [fotográfica Visor demostración](https://code.msdn.microsoft.com/windowsdesktop/WPF-Photo-Viewer-Demo-be75662a).
-
-|         |         |
+| | |
 |---------|---------|
-|  ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo")  |    [Vea un vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) sobre la depuración que muestra los pasos similares. |
+| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Vea un vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) sobre la depuración en el que se muestran pasos parecidos a estos. |
 
-Aunque la aplicación de demostración es C#, las características son aplicables a C++, Visual Basic, JavaScript y otros lenguajes compatibles con Visual Studio (excepto donde se indicó).
+Aunque la aplicación de demostración está en C#, la mayoría de las características son aplicables a C++, Visual Basic, F#, Python, JavaScript y otros lenguajes compatibles con Visual Studio (F# no admite Editar y continuar, mientras que F# y JavaScript no admiten la ventana **Automático**). Las capturas de pantalla son de código C#.
 
 En este tutorial va a:
 
 > [!div class="checklist"]
-> * Iniciar al depurador y establecer puntos de interrupción.
-> * Obtenga información acerca de los comandos para recorrer el código en el depurador
-> * Inspeccionar las variables de sugerencias de datos y las ventanas del depurador
+> * Iniciar el depurador y llegar a puntos de interrupción
+> * Conocer los comandos para analizar el código en el depurador
+> * Inspeccionar variables en la información sobre datos y las ventanas del depurador
 > * Examinar la pila de llamadas
-> * Usar la aplicación auxiliar de excepciones
 
-## <a name="start-the-debugger"></a>Iniciar al depurador.
+## <a name="prerequisites"></a>Requisitos previos
 
-1. Para seguir a lo largo de estos pasos en Visual Studio, descargue el ejemplo [en esta página](https://code.msdn.microsoft.com/windowsdesktop/WPF-Photo-Viewer-Demo-be75662a).
+* Debe tener instalados Visual Studio 2017 y la carga de trabajo **Desarrollo de escritorio de .NET**.
 
-    > [!IMPORTANT]
-    > Debe instalar Visual Studio con la carga de trabajo de desarrollo de escritorio de .NET para ejecutar la aplicación que estamos usando en la demostración.
+    Si todavía no ha instalado Visual Studio, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  para instalarlo de forma gratuita.
 
-2. Descomprima el proyecto.
+    Si necesita instalar la carga de trabajo pero ya tiene Visual Studio, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto** (seleccione **Archivo** > **Nuevo** > **Proyecto**). Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** y, luego, seleccione **Modificar**.
 
-3. Abra Visual Studio y seleccione la **archivo > Abrir** menú de comandos, y luego elija **proyecto/solución**y, a continuación, abra la carpeta donde descargó el proyecto.
+## <a name="create-a-project"></a>Crear un proyecto
 
-     ![Abra el proyecto de ejemplo](../debugger/media/dbg-tour-open-project.png "Abrir proyecto")
+1. En Visual Studio, seleccione **Archivo > Nuevo proyecto**.
 
-3. Abra la demostración de Visor de fotos de WPF > carpeta de C#, elija el archivo photoapp.sln y seleccione **abiertos**.
+2. En **Visual C#**, seleccione **Escritorio de Windows** y, después, elija **Aplicación de consola** en el panel central.
 
-     Abre el proyecto en Visual Studio. El Explorador de soluciones en el panel derecho muestra todos los archivos de proyecto.
+    Si no ve la plantilla de proyecto **Aplicación de consola**, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo *Desarrollo de escritorio de .NET** y, luego, seleccione **Modificar**.
 
-    ![Archivos del explorador de soluciones](../debugger/media/dbg-tour-solution-explorer.png "el Explorador de soluciones")
+3. Escriba un nombre como **get-started-debugging** y haga clic en **Aceptar**.
 
-4. Presione F5 (**Depurar > Iniciar depuración** o **Iniciar depuración** botón ![Iniciar depuración](../debugger/media/dbg-tour-start-debugging.png "Iniciar depuración") en la barra de herramientas de depuración).
+    Visual Studio crea el proyecto.
 
-     ![Aplicación de Visor de fotografía](../debugger/media/dbg-tour-wpf-app.png "aplicación de Visor de fotografías")
+4. En *Program.cs*, reemplace el código siguiente
 
-     F5, se inicia la aplicación con el depurador asociado al proceso de la aplicación, pero derecha ahora se no hemos agregado ningún punto de interrupción o se llevan a cabo ninguna acción especial para examinar el código. Por lo que simplemente cargue la aplicación y ver las imágenes fotográficas.
+    ```csharp
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
 
-     En este paseo se Eche un vistazo más de cerca a esta aplicación con el depurador y obtener características de un vistazo el depurador.
+    namespace get_started_debugging
+    {
+        class Program
+        {
+            static void Main(string[] args)
+            {
+            }
+        }
+    }
+    ```
 
-5. Detenga el depurador presionando la detención en rojo ![Detener depuración](../debugger/media/dbg-tour-stop-debugging.png "Detener depuración") botón.
+    con este código:
+
+    ```csharp
+    using System;
+    using System.Collections.Generic;
+
+    public class Shape
+    {
+        // A few example members
+        public int X { get; private set; }
+        public int Y { get; private set; }
+        public int Height { get; set; }
+        public int Width { get; set; }
+   
+        // Virtual method
+        public virtual void Draw()
+        {
+            Console.WriteLine("Performing base class drawing tasks");
+        }
+    }
+
+    class Circle : Shape
+    {
+        public override void Draw()
+        {
+            // Code to draw a circle...
+            Console.WriteLine("Drawing a circle");
+            base.Draw();
+        }
+    }
+
+    class Rectangle : Shape
+    {
+        public override void Draw()
+        {
+            // Code to draw a rectangle...
+            Console.WriteLine("Drawing a rectangle");
+            base.Draw();
+        }
+    }
+
+    class Triangle : Shape
+    {
+        public override void Draw()
+        {
+            // Code to draw a triangle...
+            Console.WriteLine("Drawing a trangle");
+            base.Draw();
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            var shapes = new List<Shape>
+            {
+                new Rectangle(),
+                new Triangle(),
+                new Circle()
+            };
+
+            foreach (var shape in shapes)
+            {
+                shape.Draw();
+            }
+
+            // Keep the console open in debug mode.
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
+        }
+
+    }
+
+    /* Output:
+        Drawing a rectangle
+        Performing base class drawing tasks
+        Drawing a triangle
+        Performing base class drawing tasks
+        Drawing a circle
+        Performing base class drawing tasks
+    */
+    ```
+
+## <a name="start-the-debugger"></a>Inicio del depurador
+
+1. Presione **F5** (**Depurar > Iniciar depuración**) o el botón **Iniciar depuración** ![Iniciar depuración](../debugger/media/dbg-tour-start-debugging.png "Start Debugging") en la barra de herramientas de depuración.
+
+     Al pulsar **F5**, la aplicación se inicia con el depurador activado para analizar los procesos. Como de momento no hemos hecho nada especial para examinar el código, la aplicación solo se carga y se muestra la salida de la consola.
+
+    ```cmd
+    Drawing a rectangle
+    Performing base class drawing tasks
+    Drawing a triangle
+    Performing base class drawing tasks
+    Drawing a circle
+    Performing base class drawing tasks
+    ```
+
+     En este tutorial, analizaremos con más profundidad el uso de esta aplicación junto con el depurador y veremos las características del depurador.
+
+2. Para detener el depurador, presione el botón de detención rojo ![Detener depuración](../debugger/media/dbg-tour-stop-debugging.png "Stop Debugging").
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Establecer un punto de interrupción e iniciar el depurador
 
-Para depurar, debe iniciar la aplicación con el depurador asociado al proceso de aplicación.
+1. En el bucle `foreach` de la función `Main`, establezca un punto de interrupción haciendo clic en el margen izquierdo de la línea de código siguiente:
 
-1. En el `MainWindow` constructor de MainWindow.xaml.cs, establezca un punto de interrupción, haga clic en el margen izquierdo de la primera línea de código.
+    `shape.Draw()`
 
-     ![Establecer un punto de interrupción](../debugger/media/dbg-tour-set-a-breakpoint.gif "SetABreakPoint")
+    En el lugar en el que establezca el punto de interrupción aparecerá un círculo rojo.
 
-6. Presione F5 o **Iniciar depuración** botón, la aplicación se inicia, y el depurador ejecuta hasta la línea de código en la que estableció el punto de interrupción.
+    Los puntos de interrupción son la característica más básica y esencial para una depuración confiable. Un punto de interrupción indica dónde Visual Studio debe suspender la ejecución de código para poder echar un vistazo a los valores de las variables o al comportamiento de la memoria, o determinar si se está ejecutando o no una bifurcación de código. 
 
-    La flecha amarilla representa la instrucción en el que el depurador está en pausa, que también suspende la ejecución de la aplicación en el mismo punto (esta instrucción no se ha ejecutado).
+2. Presione **F5** o el botón **Iniciar depuración** ![Start Debugging](../debugger/media/dbg-tour-start-debugging.png "Start Debugging". La aplicación se iniciará y el depurador se ejecutará en la línea de código en la que haya establecido el punto de interrupción.
 
-    F5 continúa ejecutando la aplicación hasta el punto de interrupción siguiente. (Si la aplicación no se está ejecutando, F5 inicia al depurador y se detiene en el primer punto de interrupción.)
+    ![Establecimiento y uso de los puntos de interrupción](../debugger/media/get-started-set-breakpoint.gif)
 
-    Los puntos de interrupción son una característica útil si conoce la línea de código o la sección de código que se va a examinar en detalle.
+    La flecha amarilla representa la instrucción en la que el depurador se ha puesto en pausa, lo cual también suspende la ejecución de la aplicación en el mismo punto (esta instrucción todavía no se ha ejecutado).
 
-## <a name="restart-your-app-quickly"></a>Reinicie la aplicación rápidamente
+     Si la aplicación todavía no se está ejecutando, **F5** permite iniciar el depurador, que se detendrá en el primer punto de interrupción. En caso contrario, **F5** permite continuar ejecutando la aplicación hasta el siguiente punto de interrupción.
 
-Haga clic en el **reiniciar** ![Reiniciar aplicación](../debugger/media/dbg-tour-restart.png "RestartApp") botón en la barra de herramientas Depurar (Ctrl + Mayús + F5).
+    Los puntos de interrupción son una característica muy útil en los casos en los que conocemos la línea o la sección de código que queremos examinar con detalle.
 
-Cuando se presiona **reiniciar**, le permite ahorrar tiempo frente a la aplicación de detener y reiniciar el depurador. El depurador se detiene en el primer punto de interrupción se visita mediante la ejecución de código.
+## <a name="navigate-code-in-the-debugger-using-step-commands"></a>Navegación por el código en el depurador mediante comandos de varios pasos
 
-El depurador se detiene de nuevo en el punto de interrupción que estableció en el `MainWindow` constructor.
+Normalmente, aquí usamos métodos abreviados de teclado porque son una buena forma de ejecutar rápidamente la aplicación en el depurador, pero los comandos equivalentes, como los comandos de menú, se muestran entre paréntesis.
 
-## <a name="navigate-code-in-the-debugger-using-step-commands"></a>Navegar por el código en el depurador mediante comandos de paso
+1. Mientras esté en pausa en la llamada de método `shape.Draw` en el método `Main`, presione **F11**, o bien elija **Depurar > Depurar paso a paso por instrucciones**, para avanzar en el código de la clase `Rectangle`.
 
-En su mayoría, usamos los métodos abreviados de teclado en este caso, porque es una buena forma de obtener rápida al ejecutar la aplicación en el depurador (comandos equivalentes como menú comandos se muestran entre paréntesis).
+     ![Uso de F11 para depurar código paso a paso por instrucciones](../debugger/media/get-started-f11.png "Depurar paso a paso por instrucciones con F11")
 
-1. Presione F11 (**Depurar > Depurar paso a paso**) dos veces para avanzar la ejecución de la aplicación a la `InitializeComponent()` (función).
+     F11 es el comando **Depurar paso a paso por instrucciones** y permite avanzar la ejecución de la aplicación de instrucción en instrucción. F11 es una buena forma de examinar el flujo de ejecución con más detalle. Más adelante le mostraremos otras opciones para moverse más rápido por el código. De forma predeterminada, el depurador omite el código que no es de usuario (si quiere más detalles, vea [Solo mi código](../debugger/just-my-code.md)).
 
-     ![Presione F11 para depurar paso a paso código](../debugger/media/dbg-tour-f11.png "paso a paso F11")
+2. Presione varias veces **F10**, o bien elija **Depurar > Depurar paso a paso por procedimientos**, hasta que el depurador se detenga en la llamada de método `base.Draw` y, después, vuelva a presionar **F10**.
 
-     F11 es el **paso a paso** comando y hace avanzar la una instrucción ejecución de aplicación a la vez. F11 es una buena manera de examinar el flujo de ejecución en el nivel más detallado. (Para mover contenidos más rápido a través del código, le mostramos algunas otras opciones también.) De forma predeterminada, el depurador omite los código de no usuario (si desea obtener más información, consulte [solo mi código](../debugger/just-my-code.md)).
+     ![Uso de F10 para saltar código](../debugger/media/get-started-step-over.png "Saltar con F10")
 
-     >[!NOTE]
-     > En código administrado, verá un cuadro de diálogo que le pregunta si desea recibir una notificación cuando automáticamente saltar propiedades y operadores (comportamiento predeterminado). Si desea cambiar la configuración más adelante, deshabilitar **saltar propiedades y operadores** en el **Herramientas > opciones** menú situado bajo **depuración**.
+     En este caso, tenga en cuenta que el depurador no depura el método `Draw` de la clase base (`Shape`) paso a paso por instrucciones. **F10** hace avanzar el depurador sin depurar las funciones o los métodos en el código de la aplicación paso a paso por instrucciones (el código todavía se ejecuta). Al presionar F10 en la llamada de método `base.Draw` en vez de **F11**, se omite el código de implementación de `base.Draw` (que quizás no nos interesa en este momento).
 
-2. Presione F10 (**Depurar > paso a paso por**) varias veces hasta que el depurador se detiene en la primera línea de código en el `OnApplicationStartup` controlador de eventos.
+## <a name="navigate-code-using-run-to-click"></a>Navegación por el código con Ejecutar hasta clic
 
-     ![Use F10 para código paso a paso por](../debugger/media/dbg-tour-f10-step-over.png "F10 a paso por procedimientos")
+1. En el editor de código, desplácese hacia abajo y mantenga el puntero sobre el método `Console.WriteLine` de la clase `Triangle` hasta que aparezca el botón verde **Ejecutar hasta clic** ![Ejecutar hasta clic](../debugger/media/dbg-tour-run-to-click.png "RunToClick") a la izquierda.
 
-     F10 hace avanzar al depurador sin entrar en funciones o métodos en el código de la aplicación (todavía se ejecuta el código). Presione F10 la `InitializeComponent` llamada al método (en lugar de F11) se recién saltado por el código de implementación para `InitializeComponent` (es decir, que quizá se no estamos está interesados en este momento).
+     ![Uso de la característica Ejecutar hasta clic](../debugger/media/get-started-run-to-click.png "Ejecutar hasta clic")
 
-## <a name="step-into-a-property"></a>Ir a una propiedad
+   > [!NOTE]
+   > El botón **Ejecutar hasta clic** es una novedad de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Si no ve el botón con la flecha verde, use **F11** en este ejemplo para hacer avanzar el depurador hasta el lugar correcto.
 
-1. Con el depurador pausó en esta línea de código:
+2. Haga clic en el botón **Ejecutar hasta clic** ![Ejecutar hasta clic](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
-    ````
-    mainWindow.Photos.Path = Environment.CurrentDirectory + "\\images";
-    ````
+    Usar este botón es similar a establecer un punto de interrupción temporal. La característica **Ejecutar hasta clic** es útil para desplazarse rápidamente por un área visible del código de la aplicación (puede hacer clic en cualquier archivo abierto).
 
-    Haga doble clic en la línea de código y elija **ir a específico**, a continuación, **SDKSamples.ImageSample.PhotoCollection.Path.set**
+    El depurador avanzará hasta la implementación del método `Console.WriteLine` de la clase `Triangle`.
 
-     ![Use el paso en la característica concreta](../debugger/media/dbg-tour-step-into-specific.png "ir a específico")
+    Imagine que, mientras está en pausa, detecta una falta de ortografía. O que el texto "Drawing a trangle" está mal escrito. Pues lo podemos corregir aquí directamente mientras la aplicación se ejecuta en el depurador.
 
-    Como se mencionó anteriormente, de forma predeterminada, el depurador omite las propiedades administradas y los campos, pero la **ir a específico** comando le permite invalidar este comportamiento. Por ahora, queremos ver lo que sucede cuando el `Path.set` ejecuciones de establecedor de propiedad. **Ir a específico** obtiene nos la `Path.set` código aquí.
+## <a name="edit-code-and-continue-debugging"></a>Editar código y seguir depurando
 
-     ![resultado de paso a paso específico](../debugger/media/dbg-tour-step-into-specific-2.png "ir a específico")
+1. Haga clic en "Drawing a trangle" y corrija el texto: cambie "trangle" por "triangle".
 
-     El `Update` método en este código parece que podría ser interesante, por lo que permite utiliza el depurador para examinar ese código cerca.
+1. Presione **F11** una vez y el depurador avanzará de nuevo.
 
-5. Mantenga el mouse sobre la `Update` método hasta que el verde **ejecutar, haga clic en** botón ![ejecutar, haga clic en](../debugger/media/dbg-tour-run-to-click.png "RunToClick") aparece a la izquierda.
+    > [!NOTE]
+    > En función del tipo de código que edite en el depurador, puede ser que vea un mensaje de advertencia. En algunos escenarios, el código tendrá que volver a compilarse para que pueda continuar.
 
-     ![Usar la ejecución, haga clic en características](../debugger/media/dbg-tour-run-to-click-2.png "ejecutar, haga clic en")
+## <a name="step-out"></a>Salida de la depuración
 
-    >  [!NOTE] 
-    > El **ejecutar, haga clic en** botón es nuevo en [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Si no ve el botón de flecha verde, utilice F11 en este ejemplo en su lugar para hacer avanzar al depurador.
+Supongamos que ha terminado de examinar el método `Draw` de la clase `Triangle` y quiere salir de la función, pero permanecer en el depurador. Puede hacerlo con el comando **Salir de la depuración**.
 
-6. Haga clic en el **ejecutar, haga clic en** botón ![ejecutar, haga clic en](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+1. Presione **Mayús** + **F11** (o **Depurar > Salir de la depuración**).
 
-    Mediante este botón es similar a establecer un punto de interrupción temporal. **Ejecutar, haga clic en** es útil para desplazarse rápidamente dentro de un área visible del código de la aplicación (puede hacer clic en cualquier archivo abierto).
+     Este comando reanuda la ejecución de la aplicación (y hace avanzar el depurador) hasta que se devuelve la función actual.
 
-    El depurador avanza hasta el `Update` implementación del método.
+     Debería volver a estar en el bucle `foreach` del método `Main`.
 
-7. Presione F11 para ir a la `Update` método.
+## <a name="restart-your-app-quickly"></a>Reiniciar la aplicación rápidamente
 
-     ![Resultado de ejecución paso a paso en el método Update](../debugger/media/dbg-tour-update-method.png "Step en Update (método)")
+Haga clic en el botón **Reiniciar** ![Reiniciar aplicación](../debugger/media/dbg-tour-restart.png "RestartApp") de la barra de herramientas de depuración (**Ctrl** + **Mayús**  +  **F5**).
 
-    En este caso, encontramos más código que parezca interesante; la aplicación obtiene todos los archivos *.jpg que residen en un directorio concreto y, a continuación, crear un objeto de la fotografía para cada archivo. Este código nos da una buena oportunidad para iniciar inspeccionar el estado de la aplicación (variables) con el depurador. Se hará en las secciones siguientes de este tutorial.
+El botón **Reiniciar** permite ahorrar tiempo, ya que hace que no sea necesario detener la aplicación y reiniciar el depurador. El depurador se detiene en el primer punto de interrupción que se alcanza al ejecutar el código.
 
-    Características que permiten inspeccionar las variables son una de las características más útiles del depurador, y hay diferentes maneras de hacerlo. A menudo, cuando se intenta depurar un problema, está intentando averigüe si las variables almacena los valores que se esperan que tengan en un momento determinado.
+El depurador se detendrá de nuevo en el punto de interrupción que haya establecido en el método `shape.Draw()`.
+
+## <a name="inspect-variables-with-data-tips"></a>Inspeccionar variables con información sobre datos
+
+Las características que le permiten inspeccionar las variables son una de las más útiles del depurador y ofrecen diferentes formas de hacerlo. A menudo, para depurar un problema, debe intentar averiguar si las variables están almacenando los valores que espera que tengan en un momento determinado.
+
+1. Mientras esté en pausa en el método `shape.Draw()`, mantenga el puntero sobre el objeto `shape` y verá su valor de propiedad predeterminado, la propiedad `Rectangle`.
+
+1. Expanda el objeto `shape` para consultar las propiedades, como `Height`, que tiene un valor de 0.
+
+1. Presione varias veces **F10**, o bien elija **Depurar** > **Depurar paso a paso por procedimientos**, para recorrer en iteración el bucle `foreach` una vez y pausarlo en `shape.Draw()`.
+
+1. Vuelva a mantener el mouse sobre el objeto de forma y esta vez verá que tiene un objeto nuevo con un tipo `Triangle`.
+
+     ![Ver información sobre datos](../debugger/media/get-started-data-tip.gif "View a Data Tip")
+
+    A menudo, al realizar una depuración, queremos una forma rápida de comprobar los valores de las propiedades de las variables para ver si se almacenan los valores correspondientes, y las sugerencias de datos son una buena forma de verlo.
+
+## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>Inspeccionar variables con las ventanas Automático y Variables locales
+
+1. Vea la ventana **Automático**, en la parte inferior del editor de código.
+
+    Si está cerrada, ábrala mientras está en pausa en el depurador seleccionando **Depurar** > **Ventanas** > **Automático**.
+
+1. Expanda el objeto `shapes`.
+
+     ![Inspección de las variables en la ventana Automático](../debugger/media/get-started-autos-window.png "Ventana Automático")
+
+    En la ventana **Automático** puede ver las variables y su valor actual. En la ventana **Automático** se muestran todas las variables que se usan en la línea actual o en la anterior. Para consultar el comportamiento específico de los lenguajes, vea la documentación.
+
+1. A continuación, examine la ventana **Variables locales** en una pestaña situada junto a la ventana **Automático**.
+
+    En la ventana **Variables locales** se muestran las variables que se encuentran en el [ámbito](https://www.wikipedia.org/wiki/Scope_(computer_science)) actual, es decir, en el contexto de ejecución actual.
+
+## <a name="set-a-watch"></a>Establecer una inspección
+
+1. En la ventana del editor de código principal, haga clic en el objeto `shapes` y elija **Agregar inspección**.
+
+    En la parte inferior del editor de código se abre la ventana **Inspección**. Puede usar una ventana **Inspección** para especificar una variable (o una expresión) que quiera supervisar.
+
+    Habrá establecido una inspección en el objeto `shapes` y podrá ver cómo cambia su valor conforme avance en el depurador. A diferencia de las otras ventanas de variables, en la ventana **Inspección** siempre se muestran las variables que está viendo (y se atenúan cuando están fuera del ámbito).
 
 ## <a name="examine-the-call-stack"></a>Examinar la pila de llamadas
 
-Mientras está en pausa en la `Update` método, haga clic en el **pila de llamadas** ventana, que está abierto en el panel inferior derecho de forma predeterminada.
+1. Mientras esté en pausa en el bucle `foreach`, haga clic en la ventana **Pila de llamadas**, que se abrirá de forma predeterminada en el panel inferior derecho.
 
-![Examinar la pila de llamadas](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
+    Si está cerrada, ábrala mientras está en pausa en el depurador seleccionando **Depurar** > **Ventanas** > **Pila de llamadas**.
 
-El **pila de llamadas** ventana muestra el orden en el que se esté llamando métodos y funciones. La primera línea muestra la función actual (la `Update` método en la aplicación de paseo). La segunda línea muestra que `Update` se ha llamado desde el `Path.set` propiedad y así sucesivamente.
+2. Presione **F11** varias veces hasta que vea que el depurador se detenga en el método `Base.Draw` para la clase `Triangle` en el editor de código. Eche un vistazo a la ventana **Pila de llamadas**.
 
->  [!NOTE]
-> El **pila de llamadas** ventana es similar a la perspectiva de la depuración de algunos IDE como Eclipse.
+    ![Examinar la pila de llamadas](../debugger/media/get-started-call-stack.png "ExamineCallStack")
 
-La pila de llamadas es una buena forma de examinar y comprender el flujo de ejecución de una aplicación.
+    En la ventana **Pila de llamadas** se muestra el orden en el que se llama a los métodos y las funciones. En la línea superior se muestra la función actual (el método `Triangle.Draw` en esta aplicación). En la segunda línea se mostrará que se ha llamado a `Triangle.Draw` desde el método `Main`, y así sucesivamente.
 
-Haga doble clic en una línea de código que se vaya a ver ese código de origen y que también cambia el ámbito actual va a inspeccionar el depurador. Esta acción no hace avanzar al depurador.
+   > [!NOTE]
+   > La ventana **Pila de llamadas** es similar a la perspectiva de depuración de algunos IDE, como Eclipse.
 
-También puede utilizar los menús contextuales de la **pila de llamadas** ventana para realizar otras actividades. Por ejemplo, puede insertar los puntos de interrupción en funciones especificadas, avanzar el depurador mediante **ejecutar hasta el Cursor**y vaya a examinar el código fuente. Para obtener más información, consulte [Cómo: examinar la pila de llamadas](../debugger/how-to-use-the-call-stack-window.md).
+    La pila de llamadas es una buena forma de examinar y entender el flujo de ejecución de una aplicación.
 
-## <a name="step-out"></a>Salir
+    Puede hacer doble clic en una línea de código para ver ese código fuente. De este modo, también puede cambiar el ámbito que el depurador va a inspeccionar. Esta acción no hace avanzar el depurador.
 
-Supongamos que haya terminado examinando el `Update` método de Data.cs y desea sacar partido de la función, pero permanezca en el depurador. Puede hacerlo mediante el **paso a paso fuera** comando.
+    También puede usar los menús contextuales de la ventana **Pila de llamadas** para hacer otras cosas. Por ejemplo, puede insertar puntos de interrupción en funciones especificadas, avanzar el depurador mediante **Ejecutar hasta el cursor** y examinar el código fuente. Para obtener más información, vea el artículo sobre cómo [examinar la pila de llamadas](../debugger/how-to-use-the-call-stack-window.md).
 
-1. Presione MAYÚS + F11 (o **Depurar > Salir**).
+## <a name="change-the-execution-flow"></a>Cambio del flujo de ejecución
 
-     Este comando reanuda la ejecución de la aplicación (y hace avanzar el depurador) hasta que regresa la función actual.
+1. Con el depurador en pausa en la llamada del método `Circle.Draw`, use el mouse para capturar la flecha amarilla (el puntero de ejecución) a la izquierda y moverla una línea hacia arriba hasta la llamada de método `Console.WriteLine`.
 
-     Debe tener en el `Update` llamada de método en Data.cs.
+1. Presione **F11**.
 
-2. Presione MAYÚS + F11 nuevo y el depurador va hacia arriba en la pila de llamadas de nuevo a la `OnApplicationStartup` controlador de eventos.
+    El depurador volverá a ejecutar el método `Console.WriteLine`, lo cual se puede consultar en la salida de la ventana de la consola.
 
-## <a name="run-to-cursor"></a>Ejecutar hasta el cursor
+    Al cambiar el flujo de ejecución, puede, por ejemplo, comprobar las diferentes rutas de ejecución de código o volver a ejecutar código sin tener que reiniciar el depurador.
 
-1. Elija la **Detener depuración** botón rojo ![Detener depuración](../debugger/media/dbg-tour-stop-debugging.png "Detener depuración") o MAYÚS + F5.
-
-2. En el `Update` método en Data.cs, haga clic en el `Add` llamadas de método y elija **ejecutar hasta el Cursor**. Este comando inicia la depuración y establece un punto de interrupción temporal en la línea de código actual.
-
-     ![Usar la ejecución en función de Cursor](../debugger/media/dbg-tour-run-to-cursor.png "ejecutar hasta el Cursor")
-
-    Se debe poner en pausa en el punto de interrupción en `MainWindow` (ya que es el primer punto de interrupción establecido).
-
-3. Presione F5 para avanzar a la `Add` método si seleccionas **ejecutar hasta el Cursor**.
-
-    Este comando es útil cuando se edita código y desea establecer un punto de interrupción temporal rápidamente e iniciar al depurador.
-
-## <a name="change-the-execution-flow"></a>Cambiar el flujo de ejecución
-
-1. Con el depurador pausó en la `Add` llamada al método, use el mouse para arrastrar la flecha amarilla (el puntero de ejecución) a la izquierda y mover la flecha amarilla hacia arriba una línea a la `foreach` bucle.
-
-     ![Mueva el puntero de ejecución](../debugger/media/dbg-tour-move-the-execution-pointer.gif "mover el puntero de ejecución")
-
-    Al cambiar el flujo de ejecución, puede hacer cosas como probar las rutas de acceso de ejecución de código diferente o vuelva a ejecutar el código sin necesidad de reiniciar al depurador.
-
-2. Ahora, presione F5.
-
-    Puede ver las imágenes que se agrega a la ventana de aplicación. Dado que se vuelva a ejecutar código en el `foreach` bucle, algunas de las imágenes se han agregado dos veces.
-    
     > [!WARNING]
-    > A menudo necesita tener cuidado con esta característica, y verá una advertencia en la información sobre herramientas. Puede ver otras advertencias, demasiado. Mueva el puntero, no puede revertir la aplicación a un estado anterior de la aplicación.
+    > A menudo es necesario tener cuidado con esta característica, ya que puede ser que vea una advertencia en la información en pantalla. También puede ser que reciba otras advertencias. El hecho de mover el puntero no permite revertir la aplicación a un estado anterior.
 
-## <a name="inspect-variables-with-data-tips"></a>Inspeccionar las variables con sugerencias de datos
+1. Presione **F5** para seguir ejecutando la aplicación.
 
-1. Abra Data.cs en la aplicación de demostración de Visor de fotos, haga clic en el `private void Update` declaración de función y elija **ejecutar hasta el Cursor** (evitar que la aplicación en primer lugar si ya se está ejecutando).
-
-    Esto pausará la aplicación con el depurador adjunto. Esto nos permite examinar su estado.
-
-2. Mantenga el mouse sobre la `Add` método llamar y haga clic en el **ejecutar, haga clic en** botón ![ejecutar, haga clic en](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
-
-3. Ahora, mantenga el mouse sobre el objeto de archivo (`f`) y ver su valor de propiedad predeterminado, el nombre de archivo `market 031.jpg`.
-
-     ![Ver información sobre datos](../debugger/media/dbg-tour-data-tips.gif "ver una sugerencia de datos")
-
-4. Expanda el objeto para ver todas sus propiedades, como el `FullPath` propiedad.
-
-    A menudo, durante la depuración, desee una forma rápida de comprobar los valores de propiedad en objetos y las sugerencias de datos son una buena manera de hacerlo.
-
-    > [!TIP]
-    > En los lenguajes más compatibles, puede editar código en el medio de una sesión de depurador si encuentra algo que desea cambiar. Para obtener más información, consulte [editar y continuar](../debugger/edit-and-continue.md). Para usar esta característica en esta aplicación, sin embargo, podría primero necesitamos actualizar la versión de la aplicación de .NET Framework.
-
-## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>Inspeccionar las variables con las ventanas automático y variables locales
-
-1. Mire el **automático** ventana en la parte inferior del editor de código.
-
-     ![Inspeccionar las variables en la ventana automático](../debugger/media/dbg-tour-autos-window.png "ventana automático")
-
-    En el **automático** ventana, verá las variables y su valor actual. El **automático** ventana muestra todas las variables utilizadas en la línea actual o en la línea anterior (en C++, la ventana muestra las variables en las tres líneas de código anteriores. Compruebe la documentación para el comportamiento específico del idioma).
-
-    > [!NOTE]
-    > En JavaScript, el **locales** ventana es compatible pero no la **automático** ventana.
-
-2. A continuación, examine la **locales** ventana.
-
-    El **locales** ventana muestra las variables que están en el ámbito actual.
-
-    ![Inspeccionar las variables en la ventana variables locales](../debugger/media/dbg-tour-locals-window.png "ventana variables locales")
-
-    Actualmente, el `this` objeto y el objeto de archivo (`f`) están en el ámbito actual. Para obtener más información, consulte [inspeccionar las Variables en las ventanas de variables locales y automático](../debugger/autos-and-locals-windows.md).
-
-## <a name="set-a-watch"></a>Establece una inspección
-
-1. En la ventana del editor de código principal, haga clic en el objeto de archivo (`f`) y elija **Agregar inspección**.
-
-    Puede usar un **inspección** ventana para especificar una variable (o una expresión) que desea que esté atento en.
-
-    Ahora, tiene una inspección activada la `File` objeto y se puede ver su valor cambia conforme se desplaza por el depurador. A diferencia de las otras ventanas de variables, la **inspección** ventana siempre muestra las variables que está viendo (están atenuadas cuando sale del ámbito).
-
-2. En el `Add` método, haga clic en el color verde ![ejecutar, haga clic en](../debugger/media/dbg-tour-run-to-click.png "RunToClick") nuevamente en el botón (o presione F11 varias veces) para avanzar a través de la `foreach` bucle.
-
-    ![Establece una inspección en una variable](../debugger/media/dbg-tour-watch-window.png "ventana Inspección")
-
-    También puede ver la primera imagen se agregan a la ventana principal de la ejecución de aplicación de ejemplo, pero esto se produce en un subproceso de aplicación diferente, por lo que las imágenes que aún no esté visibles.
-
-    Para obtener más información, consulte [establece una inspección mediante la inspección y las ventanas de inspección rápida](../debugger/watch-and-quickwatch-windows.md)
-
-## <a name="examine-an-exception"></a>Examinar una excepción
-
-1. En la ventana de aplicación de ejecución, elimine el texto en el **ruta de acceso** cuadro de entrada y seleccione el **cambio** botón.
-
-     ![Hacer que se produzca una excepción](../debugger/media/dbg-tour-cause-an-exception.png "producirá una excepción")
-
-     La aplicación produce una excepción y el depurador le lleva a la línea de código que produjo la excepción.
-     
-     ![Aplicación auxiliar de excepciones](../debugger/media/dbg-tour-exception-helper.png "aplicación auxiliar de excepciones")
-
-     En este caso, el **aplicación auxiliar de excepciones** muestra un `System.ArgumentException` y un mensaje de error que indica que la ruta de acceso no es un formato válido. Por lo tanto, sabemos que se produjo el error en un argumento de método o función.
-
-     En este ejemplo, el `DirectoryInfo` llamada dio el error en la cadena vacía que se almacenan en la `value` variable. (Mantenga el mouse sobre `value` para ver la cadena vacía.)
-
-     La aplicación auxiliar de excepciones es una característica excelente que puede ayudarle a depurar los errores. También puede hacer cosas como vista de detalles del error y agregue una inspección de la aplicación auxiliar de excepciones. O bien, si es necesario, puede cambiar las condiciones para producir la excepción concreta.
-
-    >  [!NOTE] 
-    > Reemplaza el Asistente de excepciones en la aplicación auxiliar de excepciones [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
-
-2. Expanda el **configuración de excepciones** nodo para ver más opciones controlar este tipo de excepción, pero no es necesario cambiar ninguna acción para este paseo le!
-
-3. Presione F5 para continuar con la aplicación.
-
-Para obtener más información sobre las características del depurador, vea [depurador sugerencias y trucos](../debugger/debugger-tips-and-tricks.md).
+    Enhorabuena por completar este tutorial.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-En este tutorial, ha aprendido cómo iniciar al depurador, recorrer el código e inspeccionar las variables. Puede obtener una visión general de las características del depurador junto con vínculos a más información.
+En este tutorial, ha aprendido a iniciar el depurador, a ejecutar el código paso a paso y a inspeccionar variables. Puede ser que le interese analizar las características del depurador con más detenimiento, así como consultar los vínculos disponibles con más información.
 
 > [!div class="nextstepaction"]
-> [Guía de características del depurador](../debugger/debugger-feature-tour.md)
+> [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)

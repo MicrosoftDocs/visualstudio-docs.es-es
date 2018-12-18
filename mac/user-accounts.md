@@ -1,15 +1,16 @@
 ---
 title: Cuentas de usuario
-description: ''
-author: asb3993
-ms.author: amburns
-ms.date: 04/14/2017
+description: Información sobre cómo iniciar sesión en Visual Studio para Mac y habilitar las suscripciones en Visual Studio para Mac
+author: conceptdev
+ms.author: crdun
+ms.date: 05/06/2018
 ms.assetid: 17AB4F31-4921-4B4E-8D9D-95FB84294521
-ms.openlocfilehash: 8326362b9a6aed4bdab3478534bea9aea414b499
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 8ae291054a08a8835d7bf3d1d1df77c1c6eb8519
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224204"
 ---
 # <a name="user-accounts"></a>Cuentas de usuario
 
@@ -19,5 +20,5 @@ Al iniciar sesión, habilita el acceso a todos los servicios asociados a la cuen
 
 ## <a name="in-this-section"></a>En esta sección
 
-* [Iniciar sesión en Visual Studio](signing-in.md)
+* [Iniciar sesión en Visual Studio para Mac](signing-in.md)
 * [Habilitar la suscripción](activation.md)

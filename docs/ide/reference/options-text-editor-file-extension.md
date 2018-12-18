@@ -1,12 +1,11 @@
 ---
-title: Opciones, editor de texto, extensión de archivo | Microsoft Docs
-ms.custom: ''
+title: Opciones, editor de texto, extensión de archivo
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
-- vs.toolsoptionspages.text_editor.file_extension
+- VS.ToolsOptionsPages.Text_Editor.File_Extension
 helpviewer_keywords:
 - file extensions, associating to editor
 - Editing Experience
@@ -18,41 +17,49 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24a87480bfe7a2d60df9ccd94ac0711c71de9223
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 05fce2fd1735e1bed7f528467a1c32f399a9ce22
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389045"
 ---
 # <a name="options-text-editor-file-extension"></a>Opciones, editor de texto, extensión de archivo
-Este cuadro de diálogo Opciones le permite especificar cómo se controlarán todos los archivos con determinadas extensiones de archivo mediante el Entorno de desarrollo integrado (IDE) de Visual Studio. Para cada **extensión** que especifique, puede seleccionar un editor asociado. Esto le permite elegir el diseñador o el editor del IDE en el que se abrirán los documentos de un tipo determinado. Para mostrar estas opciones, pulse **Opciones** del menú **Herramientas**, expanda el nodo **Editor de texto** y seleccione **Extensión de archivo**.  
-  
- Cuando selecciona una opción "con codificación", se mostrará un cuadro de diálogo siempre que abra un documento de ese tipo que le permite seleccionar un esquema de codificación para ese documento. Esto puede resultar útil si está preparando versiones de sus documentos de proyecto para usarlos en diferentes plataformas o en diferentes idiomas de destino.  
-  
-> [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
-  
-## <a name="uielement-list"></a>Lista de UIElement  
- **Extensión**  
- Escriba la extensión de archivo cuyo editor asociado en el IDE quiere definir.  
-  
- **Editor**  
- Seleccione el diseñador o el editor del IDE en el que se abrirán los documentos con esta extensión de archivo. Cuando selecciona una opción "con codificación", se mostrará un cuadro de diálogo siempre que abra dicho documento que le permite seleccionar un esquema de codificación.  
-  
- **Add**  
- Agrega una entrada que incluye la **extensión** y el **editor asociado** especificados a la lista de extensiones.  
-  
- **Remove**  
- Elimina la entrada seleccionada de la lista de extensiones.  
-  
- **Lista de extensiones**  
- Muestra todas las extensiones para las que se ha especificado un editor asociado.  
-  
- **Asignar archivos sin extensión**  
- Seleccione esta opción si quiere especificar cómo se controlarán los archivos sin una extensión mediante el IDE.  
-  
- **Opciones de archivos sin extensión**  
- Proporciona la misma lista que el **Editor**. Seleccione el diseñador o el editor del IDE en el que se abrirán los documentos sin extensiones de archivo.  
-  
-## <a name="see-also"></a>Vea también  
- [Cómo: Administrar los modos del editor](../../ide/how-to-manage-editor-modes.md)
+
+Este cuadro de diálogo Opciones le permite especificar cómo se controlarán todos los archivos con determinadas extensiones de archivo mediante el Entorno de desarrollo integrado (IDE) de Visual Studio. Para cada **extensión** que especifique, puede seleccionar un editor asociado. Esto le permite elegir el diseñador o el editor del IDE en el que se abrirán los documentos de un tipo determinado. Para mostrar estas opciones, pulse **Opciones** del menú **Herramientas**, expanda el nodo **Editor de texto** y seleccione **Extensión de archivo**.
+
+Cuando selecciona una opción "con codificación", se mostrará un cuadro de diálogo siempre que abra un documento de ese tipo que le permite seleccionar un esquema de codificación para ese documento. Esto puede resultar útil si está preparando versiones de sus documentos de proyecto para usarlos en diferentes plataformas o en diferentes idiomas de destino.
+
+## <a name="uielement-list"></a>Lista de UIElement
+
+**Extensión**
+
+Escriba la extensión de archivo cuyo editor asociado en el IDE quiere definir.
+
+**Editor**
+
+ Seleccione el diseñador o el editor del IDE en el que se abrirán los documentos con esta extensión de archivo. Cuando selecciona una opción "con codificación", se muestra un cuadro de diálogo, siempre que abra un documento que le permita seleccionar un esquema de codificación.
+
+**Add**
+
+Agrega una entrada que incluye la **extensión** y el **editor asociado** especificados a la lista de extensiones.
+
+**Remove**
+
+Elimina la entrada seleccionada de la lista de extensiones.
+
+**Lista de extensiones**
+
+Muestra todas las extensiones para las que se ha especificado un editor asociado.
+
+**Asignar archivos sin extensión**
+
+Seleccione esta opción si quiere especificar cómo se controlarán los archivos sin una extensión mediante el IDE.
+
+**Opciones de archivos sin extensión**
+
+Proporciona la misma lista que el **Editor**. Seleccione el diseñador o el editor del IDE en el que se abrirán los documentos sin extensiones de archivo.
+
+## <a name="see-also"></a>Vea también
+
+- [Cómo: Administrar los modos del editor](../../ide/how-to-manage-editor-modes.md)

@@ -1,5 +1,5 @@
 ---
-title: CANSTOP_REASON | Documentos de Microsoft
+title: CANSTOP_REASON | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 791132d94526126e8fc611b2becbb8b7545bb578
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4129839094b7f5cf9907f6b92fa11fe1847f5806
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938817"
 ---
 # <a name="canstopreason"></a>CANSTOP_REASON
-Se utiliza para determinar si un programa puede detener la ejecución tras alcanzar un punto concreto en la ejecución.  
+Se usa para determinar si un programa puede detener la ejecución después de alcanzar un punto concreto en la ejecución.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -49,7 +50,7 @@ public enum enum_CANSTOP_REASON {
  Especifica la ejecución paso a paso en una función.  
   
 ## <a name="remarks"></a>Comentarios  
- Pasa como un argumento a la [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) método que confirme con el Administrador de sesión de depurar (SDM) si es correcto para detenerse después de alcanzar el punto de entrada del programa o después de la ejecución paso a paso en una función o método.  
+ Se pasa como argumento a la [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) método confirmar con la sesión de depuración Manager (SDM) si es aceptable para detenerse después de alcanzar el punto de entrada del programa o después de la ejecución paso a paso en una función o método.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  

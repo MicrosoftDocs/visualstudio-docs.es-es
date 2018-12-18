@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478036"
 ---
 # <a name="windows-view"></a>Vista Ventanas
 Al abrir por primera vez Spy ++, vista de Windows muestra un árbol de todas las ventanas y controles en el sistema. Se muestran el nombre de identificador y la clase de ventana. La ventana del escritorio actual está en la parte superior del árbol. Todas las demás ventanas son elementos secundarios del escritorio y se muestran según la jerarquía de ventana estándar. Las ventanas relacionadas aparecen en listas con sangría debajo de sus elementos primarios que se pueden expandir.  

@@ -1,8 +1,8 @@
 ---
-title: 'Cómo: iniciar la depuración XSLT | Documentos de Microsoft'
-ms.custom: ''
+title: 'Cómo: Iniciar la depuración de XSLT'
 ms.date: 11/04/2016
-ms.technology: vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
@@ -11,13 +11,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: f76412ce4dd0f5d443564755c460dfb82c186847
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e499aea3793e5c496930fe255133d51361e6f394
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178353"
 ---
-# <a name="how-to-start-debugging-xslt"></a>Cómo: Iniciar la depuración de XSLT
+# <a name="how-to-start-debugging-xslt"></a>Cómo: iniciar la depuración de XSLT
 
 El depurador de XSLT se puede utilizar para depurar una hoja de estilos XSLT o una aplicación XSLT. Durante la depuración, puede ejecutar código de línea en línea yendo al código, recorriéndolo o saliendo de él. Los comandos para utilizar la funcionalidad de paso de código en el depurador de XSLT son los mismos que en los demás depuradores de Visual Studio. Una vez se haya iniciado la depuración, el depurador XSLT abre unas ventanas para mostrar el documento de entrada y la salida XSLT.
 
@@ -61,36 +62,36 @@ También puede ir al código XSLT mientras depura una aplicación. Cuando presio
 A continuación se ofrece un ejemplo de un programa XSLT de C#  que muestra cómo habilitar la depuración de XSLT.
 
 ```csharp
-using System;  
-using System.IO;  
-using System.Xml;  
-using System.Xml.Xsl;  
-  
-namespace ConsoleApplication   
-{  
-  class Program   
-  {  
-    private const string sourceFile = @"c:\data\xsl_files\books.xml";  
-    private const string stylesheet = @"c:\data\xsl_files\belowAvg.xsl";  
-    private const string outputFile = @"c:\data\xsl_files\output.xml";  
-  
-    static void Main(string[] args)  
-    {  
+using System;
+using System.IO;
+using System.Xml;
+using System.Xml.Xsl;
+
+namespace ConsoleApplication
+{
+  class Program
+  {
+    private const string sourceFile = @"c:\data\xsl_files\books.xml";
+    private const string stylesheet = @"c:\data\xsl_files\belowAvg.xsl";
+    private const string outputFile = @"c:\data\xsl_files\output.xml";
+
+    static void Main(string[] args)
+    {
       // Enable XSLT debugging.
-      XslCompiledTransform xslt = new XslCompiledTransform(true);  
-  
+      XslCompiledTransform xslt = new XslCompiledTransform(true);
+
       // Compile the style sheet.
-      xslt.Load(stylesheet)  
-  
+      xslt.Load(stylesheet)
+
       // Execute the XSLT transform.
-      FileStream outputStream = new FileStream(outputFile, FileMode.Append);  
-      xslt.Transform(sourceFile, null, outputStream);  
-    }  
-  }  
-}  
+      FileStream outputStream = new FileStream(outputFile, FileMode.Append);
+      xslt.Transform(sourceFile, null, outputStream);
+    }
+  }
+}
 ```
 
 ## <a name="see-also"></a>Vea también
 
-[Tutorial: Depurar una hoja de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)  
-[Conceptos básicos del depurador](../debugger/debugger-basics.md)
+- [Tutorial: Depurar una hoja de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
+- [Conceptos básicos del depurador](../debugger/getting-started-with-the-debugger.md)

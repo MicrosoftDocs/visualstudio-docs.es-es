@@ -1,6 +1,7 @@
 ---
-title: Uso de un entorno de laboratorio para DevOps | Microsoft Docs
+title: Uso de un entorno de laboratorio para DevOps en Visual Studio
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 63fb02f0133055611ef18bbf9d5fe7888df7473f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc7351c9449993b624569cc13ac5ced7d169b129
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837118"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usar un entorno de laboratorio para DevOps
 
@@ -28,19 +30,19 @@ Un entorno de laboratorio es una colección de máquinas virtuales y físicas qu
 
 Estos son algunos ejemplos de topologías comunes de entornos de laboratorio:
 
-| Topología | Description |
+| Topología | Descripción |
 |---|---|
 |![Topología de servidor único](../media/topology_backend.png)| Este entorno de laboratorio tiene una *topología de servidores*, que suele usarse para ejecutar pruebas manuales en aplicaciones de servidor y que permite a los evaluadores usar sus propios equipos cliente para comprobar errores en el entorno. En una topología de backend, el entorno de laboratorio solo contiene servidores. Al usar este tipo de topología, normalmente se conecta a los servidores del entorno de laboratorio mediante un equipo cliente que no forma parte del entorno.|
 |![Entorno de laboratorio en la nube](../media/topology_cloud.png)| Este entorno de laboratorio proporciona funciones y características similares como la _topología de servidores_, pero elimina la necesidad de que las máquinas virtuales o físicas se ejecuten en un entorno local; lo que puede reducir el tiempo de preparación, simplificar el mantenimiento y minimizar costos. Configurar varios sitios web y máquinas vituales, junto con redes personalizadas, es rápido y sencillo en un entorno de nube como Microsoft Azure.|
 |![Entorno de laboratorio cliente-servidor](../media/topology_clientserver.png)| Este entorno de laboratorio tiene una *topología de cliente/servidor*, que suele usarse para probar una aplicación que tiene componentes de servidor y de cliente. En una topología de cliente/servidor, todos los equipos cliente y los equipos servidor usados para probar la aplicación se encuentran en el entorno de laboratorio. Al usar esta topología, puede recopilar datos de prueba de todos los equipos que afecten a las pruebas.|
 
-|         |         |
-|---------|---------|
-|  ![icono de cámara de película para vídeo](../../install/media/video-icon.png)  |    [Vea un vídeo](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) sobre la administración de entornos de laboratorio para pruebas. |
+| | |
+|---|---|
+| ![icono de cámara de película para vídeo](../../install/media/video-icon.png) | [Vea un vídeo](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) sobre la administración de entornos de laboratorio para pruebas. |
 
-## <a name="use-the-cloud-with-team-services-or-team-foundation-server-build-and-release"></a>Uso de la nube con Team Services o Team Foundation Server Build y Release
+## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Uso de la nube con Azure Pipelines o Compilación y versión de Team Foundation Server
 
-Puede realizar pruebas automatizadas y una automatización de compilación-implementación-prueba con las características [Build y Release](/vsts/build-release/) de Team Foundation Server (TFS) y Visual Studio Team Services. Estas son algunas de las ventajas:
+Puede realizar pruebas automatizadas y una automatización de compilación-implementación-prueba con las características de [compilación y versión](/azure/devops/pipelines/index?view=vsts) de Team Foundation Server (TFS) y Azure Test Plans. Estas son algunas de las ventajas:
 
 * No necesita un controlador de compilación o Test Controller.
 * Test Agent se instala mediante una tarea como parte de la compilación o versión.
@@ -83,17 +85,17 @@ Los **entornos de SCVMM** solo pueden contener máquinas virtuales administradas
 
 - **Plantillas de máquinas virtuales:** una plantilla de máquina virtual es una máquina virtual de la que se eliminaron el nombre y otros identificadores. Cuando se implementa una plantilla de VM en un entorno de SCVMM, Microsoft Test Manager genera nuevos identificadores. Esto permite implementar varias copias de una máquina virtual en el mismo entorno (o en varios entornos) y, después, ejecutarlas de forma simultánea.
 
-- **Máquinas virtuales almacenadas:** una máquina virtual que se almacena en la biblioteca de proyecto de equipo y que incluye identificadores únicos.
+- **Máquinas virtuales almacenadas:** una máquina virtual que se almacena en la biblioteca del proyecto y que incluye identificadores únicos.
 
 > [!NOTE]
 > Lab Management no admite SCVMM 2016.
 
-Para obtener información sobre SCVMM, vea [Virtual Machine Manager](/vsts/build-release/apps/cd/scvmm/configure-scvmm).
+Para obtener información sobre SCVMM, vea [Virtual Machine Manager](/azure/devops/pipelines/?view=vsts).
 
 Los entornos estándar y los entornos de SCVMM admiten un gran número de características similares. Pero es importante conocer algunas diferencias importantes. En la tabla siguiente se comparan las características que están disponibles para entornos estándar y para entornos de SCVMM.
 
 |Función|Entornos de SCVMM|Entornos estándar|
-|----------------|------------------------|---------------------------|
+|-|------------------------|-|
 |**Pruebas**|||
 |Ejecutar pruebas manuales|Compatible|Compatible|
 |Ejecutar IU codificada y otras pruebas automatizadas|Compatible|Compatible|
@@ -114,12 +116,12 @@ Los entornos estándar y los entornos de SCVMM admiten un gran número de caract
 
 Estos son algunos conceptos adicionales que es importante que conozca antes de continuar:
 
-|Término|Description|
-|----------|-----------------|
+|Término|Descripción|
+|-|-----------------|
 |Centro de laboratorio|El área de Microsoft Test Manager donde se crean y administran los entornos de laboratorio.|
-|Laboratorio de proyecto de equipo|La colección de entornos de laboratorio que se han configurado para que pueda conectarse a estos y ejecutar sus máquinas virtuales.|
-|Biblioteca de proyecto de equipo|Un archivo de máquinas virtuales almacenadas, plantillas y entornos de laboratorio almacenados que se han importado en el grupo host del proyecto de equipo. Puede usar los elementos de la biblioteca con entornos de SCVMM, pero no puede agregarlos directamente a un entorno estándar. No puede ejecutar los elementos en la biblioteca, sino que deberá usarlos para implementar un nuevo entorno.|
-|Entorno implementado|Un entorno de laboratorio que se ha implementado en un laboratorio de proyecto de equipo para que pueda conectarse a este y ejecutar sus equipos.|
+|Laboratorio de proyecto de Azure DevOps|La colección de entornos de laboratorio que se han configurado para que pueda conectarse a estos y ejecutar sus máquinas virtuales.|
+|Biblioteca de proyecto de Azure DevOps|Un archivo de máquinas virtuales almacenadas, plantillas y entornos de laboratorio almacenados que se han importado en el grupo host del proyecto. Puede usar los elementos de la biblioteca con entornos de SCVMM, pero no puede agregarlos directamente a un entorno estándar. No puede ejecutar los elementos en la biblioteca, sino que deberá usarlos para implementar un nuevo entorno.|
+|Entorno implementado|Un entorno de laboratorio que se ha implementado en un laboratorio de proyecto para que pueda conectarse a este y ejecutar sus equipos.|
 
 Para obtener más información acerca de Lab Management, vea:
 

@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51d17894025800acd9c8ab0736ebe92d7f790fc7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 394b40a304d2aba3b79c5878befe33a8a1aaf8b8
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945564"
 ---
 # <a name="file-tracking"></a>Seguimiento de archivos
 Los registros de seguimiento de archivos llaman al sistema de archivos de Windows para un proceso y sus procesos secundarios. Para controlar cuándo activar y desactivar este registro y especificar el archivo de registro que se debe utilizar, los programas llaman a las funciones que se enumeran a continuación.  
   
-## <a name="in-this-section"></a>En esta sección  
  [EndTrackingContext](../msbuild/endtrackingcontext.md)  
  Detiene el seguimiento del contexto actual.  
   

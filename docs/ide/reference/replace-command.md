@@ -1,10 +1,9 @@
 ---
-title: Comando Replace | Microsoft Docs
-ms.custom: ''
+title: Reemplazar (Comando)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - edit.replace
 helpviewer_keywords:
@@ -16,80 +15,97 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a773a04c0f289da2d47f468e0282dc8d119c721a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5b712ee88526585d24ffd7b22fadbbf015c3d131
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949950"
 ---
 # <a name="replace-command"></a>Reemplazar (Comando)
-Reemplaza texto de los archivos mediante el uso de un subconjunto de las opciones disponibles en la pestaña **Reemplazar en archivos** de la ventana **Buscar y reemplazar**.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```  
-Edit.Replace findwhat replacewith [/all] [/case]  
-[/doc|/proc|/open|/sel] [/hidden] [/options] [/reset] [/up]  
-[/wild|/regex] [/word]  
-```  
-  
-## <a name="arguments"></a>Argumentos  
- `findwhat`  
- Obligatorio. Texto que debe coincidir.  
-  
- `replacewith`  
- Obligatorio. Texto que va a sustituir el texto coincidente.  
-  
-## <a name="switches"></a>Modificadores  
- /all o /a  
- Opcional. Reemplaza todas las apariciones del texto de la búsqueda por el texto de reemplazo.  
-  
- /case o /c  
- Opcional. Se encuentran coincidencias solo si los caracteres en mayúsculas y minúsculas coinciden exactamente con los especificados en el argumento `findwhat`.  
-  
- /doc o /d  
- Opcional. Busca solo en el documento actual. Especifique solo uno de los ámbitos de búsqueda disponibles: `/doc`, `/proc`, `/open` o `/sel`.  
-  
- /hidden o /h  
- Opcional. Busca texto oculto y contraído, como los metadatos de un control en tiempo de diseño, una región oculta de un documento de esquema o una clase o método contraídos.  
-  
- /open o /o  
- Opcional. Busca en todos los documentos abiertos como si fueran un documento. Especifique solo uno de los ámbitos de búsqueda disponibles: `/doc`, `/proc`, `/open` o `/sel`.  
-  
- /options o /t  
- Opcional. Muestra una lista de los valores de la opción de búsqueda actual y no lleva a cabo una búsqueda.  
-  
- /proc o /p  
- Opcional. Busca solo en el procedimiento actual. Especifique solo uno de los ámbitos de búsqueda disponibles: `/doc`, `/proc`, `/open` o `/sel`.  
-  
- /regex o /r  
- Opcional. Usa caracteres especiales predefinidos en el argumento `findwhat` como notaciones que representan patrones de texto en lugar de los caracteres literales. Para obtener una lista completa de caracteres de expresiones regulares, vea [Expresiones regulares](../../ide/using-regular-expressions-in-visual-studio.md).  
-  
- /reset o /e  
- Opcional. Establece las opciones de búsqueda en su configuración predeterminada y no lleva a cabo una búsqueda.  
-  
- /sel o /s  
- Opcional. Busca solo en la selección actual. Especifique solo uno de los ámbitos de búsqueda disponibles: `/doc`, `/proc`, `/open` o `/sel`.  
-  
- /up o /u  
- Opcional. Busca desde la ubicación actual en el archivo hacia la parte superior del archivo. De forma predeterminada, las búsquedas comienzan en la ubicación actual en el archivo y avanzan hacia la parte inferior del archivo.  
-  
- /wild o /l  
- Opcional. Usa caracteres especiales predefinidos en el argumento `findwhat` como notaciones para representar un carácter o una secuencia de caracteres.  
-  
- /word o /w  
- Opcional. Busca solo palabras completas.  
-  
-## <a name="example"></a>Ejemplo  
- En este ejemplo se reemplaza `btnSend` por `btnSubmit` en todos los documentos abiertos.  
-  
-```  
->Edit.Replace btnSend btnSubmit /open  
-```  
-  
-## <a name="see-also"></a>Vea también  
- [Buscar y reemplazar texto](../../ide/finding-and-replacing-text.md)   
- [Ventana Comandos](../../ide/reference/command-window.md)   
- [Cuadro Buscar/Comando](../../ide/find-command-box.md)   
- [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+Reemplaza texto de los archivos mediante el uso de un subconjunto de las opciones disponibles en la pestaña **Reemplazar en archivos** de la ventana **Buscar y reemplazar**.
+
+## <a name="syntax"></a>Sintaxis
+
+```
+Edit.Replace findwhat replacewith [/all] [/case]
+[/doc|/proc|/open|/sel] [/hidden] [/options] [/reset] [/up]
+[/wild|/regex] [/word]
+```
+
+## <a name="arguments"></a>Argumentos
+ `findwhat`
+
+ Obligatorio. Texto que debe coincidir.
+
+ `replacewith`
+
+ Obligatorio. Texto que va a sustituir el texto coincidente.
+
+## <a name="switches"></a>Modificadores
+ /all o /a
+
+ Opcional. Reemplaza todas las apariciones del texto de la búsqueda por el texto de reemplazo.
+
+ /case o /c
+
+ Opcional. Se encuentran coincidencias solo si los caracteres en mayúsculas y minúsculas coinciden exactamente con los especificados en el argumento `findwhat`.
+
+ /doc o /d
+
+ Opcional. Busca solo en el documento actual. Especifique solo uno de los ámbitos de búsqueda disponibles: `/doc`, `/proc`, `/open` o `/sel`.
+
+ /hidden o /h
+
+ Opcional. Busca texto oculto y contraído, como los metadatos de un control en tiempo de diseño, una región oculta de un documento de esquema o una clase o método contraídos.
+
+ /open o /o
+
+ Opcional. Busca en todos los documentos abiertos como si fueran un documento. Especifique solo uno de los ámbitos de búsqueda disponibles: `/doc`, `/proc`, `/open` o `/sel`.
+
+ /options o /t
+
+ Opcional. Muestra una lista de los valores de la opción de búsqueda actual y no lleva a cabo una búsqueda.
+
+ /proc o /p
+
+ Opcional. Busca solo en el procedimiento actual. Especifique solo uno de los ámbitos de búsqueda disponibles: `/doc`, `/proc`, `/open` o `/sel`.
+
+ /regex o /r
+
+ Opcional. Usa caracteres especiales predefinidos en el argumento `findwhat` como notaciones que representan patrones de texto en lugar de los caracteres literales. Para obtener una lista completa de caracteres de expresiones regulares, vea [Expresiones regulares](../../ide/using-regular-expressions-in-visual-studio.md).
+
+ /reset o /e
+
+ Opcional. Establece las opciones de búsqueda en su configuración predeterminada y no lleva a cabo una búsqueda.
+
+ /sel o /s
+
+ Opcional. Busca solo en la selección actual. Especifique solo uno de los ámbitos de búsqueda disponibles: `/doc`, `/proc`, `/open` o `/sel`.
+
+ /up o /u
+
+ Opcional. Busca desde la ubicación actual en el archivo hacia la parte superior del archivo. De forma predeterminada, las búsquedas comienzan en la ubicación actual en el archivo y avanzan hacia la parte inferior del archivo.
+
+ /wild o /l
+
+ Opcional. Usa caracteres especiales predefinidos en el argumento `findwhat` como notaciones para representar un carácter o una secuencia de caracteres.
+
+ /word o /w
+
+ Opcional. Busca solo palabras completas.
+
+## <a name="example"></a>Ejemplo
+ En este ejemplo se reemplaza `btnSend` por `btnSubmit` en todos los documentos abiertos.
+
+```
+>Edit.Replace btnSend btnSubmit /open
+```
+
+## <a name="see-also"></a>Vea también
+
+- [Buscar y reemplazar texto](../../ide/finding-and-replacing-text.md)
+- [Ventana Comandos](../../ide/reference/command-window.md)
+- [Cuadro Buscar/Comando](../../ide/find-command-box.md)
+- [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

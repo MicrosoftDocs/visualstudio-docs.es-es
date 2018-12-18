@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO | Documentos de Microsoft
+title: MODULE_INFO | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e28756873339d504efba417d9e2fe2cc00000b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b28770482357b7e006793f15438e7880f7efb1ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897009"
 ---
 # <a name="moduleinfo"></a>MODULE_INFO
-Describe un determinado módulo (archivo DLL, EXE o ensamblado).  
+Describe un módulo determinado (ensamblado, EXE o DLL).  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -62,7 +63,7 @@ public struct MODULE_INFO {
   
 ## <a name="members"></a>Miembros  
  dwValidFields  
- Una combinación de indicadores de la [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) enumeración que especifica qué campos se rellenan.  
+ Una combinación de marcas de la [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) enumeración que especifica qué campos se rellenan.  
   
  m_bstrName  
  Nombre del módulo.  
@@ -80,7 +81,7 @@ public struct MODULE_INFO {
  La dirección de carga del módulo.  
   
  m_addrPreferredLoadAddress  
- La dirección de carga preferido del módulo.  
+ La dirección de carga preferida del módulo.  
   
  m_dwSize  
  El tamaño del módulo.  
@@ -89,18 +90,18 @@ public struct MODULE_INFO {
  El orden de carga del módulo.  
   
  m_TimeStamp  
- La hora en que se modificó por última vez el archivo de símbolos.  
+ El tiempo que se modificó por última vez el archivo de símbolos.  
   
  m_bstrUrlSymbolLocation  
- La ubicación del archivo de símbolos (por ejemplo, ".\\") especificados en el módulo. Se utiliza como una ubicación inicial para buscar símbolos para un módulo.  
+ La ubicación del archivo de símbolos (por ejemplo, ".\\") especificados en el módulo. Se utiliza como una ubicación de inicio para encontrar los símbolos para un módulo.  
   
  m_dwModuleFlags  
- Una combinación de indicadores de la [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) enumeración que describe el módulo.  
+ Una combinación de marcas de la [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) enumeración que describe el módulo.  
   
 ## <a name="remarks"></a>Comentarios  
  Esta estructura se pasa a la [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) método donde se rellena.  
   
- Esta estructura corresponde a cada módulo mostrado en el **módulos** ventana.  
+ Esta estructura corresponde a cada módulo aparece en el **módulos** ventana.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  

@@ -17,18 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 059c3015bf542dda6a420c80620bc74c9ee6ca6b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9cc9a1ae5f7fb51981f3cebc4d6fa658f614de6d
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151845"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
 Establece el recuento de subprocesos globales y asigna ese recuento al subproceso actual.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cmd  
 HRESULT WINAPI SetThreadCount(int threadCount);  
 ```  
   
@@ -40,4 +41,4 @@ HRESULT WINAPI SetThreadCount(int threadCount);
  Un elemento **HRESULT** con el conjunto de bits **SUCCEEDED** si el recuento de subprocesos se ha actualizado.  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** FileTracker.h
+ **Encabezado:** *FileTracker.h*

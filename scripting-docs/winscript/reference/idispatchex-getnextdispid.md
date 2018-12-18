@@ -1,11 +1,11 @@
 ---
 title: IDispatchEx::GetNextDispID | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDispatchEx.GetNextDispID
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - GetNextDispID method
 ms.assetid: 8263d441-85ee-47f4-bdba-fbf2ad07e85f
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728525"
 ---
 # <a name="idispatchexgetnextdispid"></a>IDispatchEx::GetNextDispID
 Enumera a los miembros del objeto.  

@@ -1,9 +1,8 @@
 ---
-title: 'Cómo: crear y editar un archivo de esquema XSD | Documentos de Microsoft'
-ms.custom: ''
+title: Crear y editar un archivo de esquema XSD
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 91b10cd7-c0cd-4e5a-a46b-4fed60dff542
 author: gewarren
@@ -11,33 +10,35 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 72e42e8fdb24921162fab04c6259e7ff1249a22e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: db635a9bc18a00bcb723a7bf8b66a557434e3e9a
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/24/2018
+ms.locfileid: "34477462"
 ---
-# <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Cómo: Crear y editar un archivo de esquema XSD
-En este tema se describe cómo crear un nuevo archivo de esquema XML (XSD) y luego agregar contenido al archivo XSD.  
-  
-### <a name="to-create-a-new-xml-schema-file"></a>Para crear un nuevo archivo de esquema XML  
-  
-1.  En Visual Studio, abra el **archivo** menú y seleccione **New** y, a continuación, **archivo**. O bien, utilice el método abreviado de teclado CTRL+N.  
-  
-2.  En el **nuevo archivo** cuadro de diálogo, seleccione **esquema XML** y haga clic en **abiertos**.  
-  
-     Se creará un nuevo archivo. En Visual Studio aparece la vista Inicio y una ventana vacía del Explorador de esquema XML.  
-  
-### <a name="to-edit-a-file"></a>Para modificar un archivo  
-  
-1.  Haga clic en el **Use el Editor XML para ver y editar el archivo de esquema XML subyacente** vínculo en la vista inicio.  
-  
-     Aparece el Editor XML con el nuevo archivo abierto.  
-  
-2.  Copie el código de ejemplo de esquema XML del [esquema de pedido de compra](../xml-tools/sample-xsd-file-simple-schema.md) y péguelo para reemplazar el código que se ha agregado el nuevo archivo XSD de forma predeterminada.  
-  
-     El Explorador de esquema XML se actualiza con el nuevo conjunto de esquemas.  
-  
-## <a name="see-also"></a>Vea también  
- [Trabajar con datos XML](../xml-tools/working-with-xml-data.md)   
- [Tareas del Diseñador de esquemas XML](../xml-tools/xml-schema-designer-tasks.md)
+# <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Cómo: crear y editar un archivo de esquema XSD
+
+En este tema se describe cómo crear un nuevo archivo de esquema XML (XSD) y luego agregar contenido al archivo XSD.
+
+## <a name="to-create-a-new-xml-schema-file"></a>Para crear un nuevo archivo de esquema XML
+
+1. En Visual Studio, abra el **archivo** menú y seleccione **New** > **archivo**. O bien, use la **Ctrl**+**N** método abreviado de teclado.
+
+2. En el **nuevo archivo** cuadro de diálogo, seleccione **esquema XML** y, a continuación, seleccione **abiertos**.
+
+   Se creará un nuevo archivo. La vista inicio y vacío **Explorador de esquemas XML** ventana aparece en Visual Studio.
+
+## <a name="to-edit-a-file"></a>Para modificar un archivo
+
+1. Seleccione el **Use el Editor XML para ver y editar el archivo de esquema XML subyacente** vínculo en la vista inicio.
+
+   Aparece el Editor XML con el nuevo archivo abierto.
+
+2. Copie el código de ejemplo de esquema XML del [esquema de pedido de compra](../xml-tools/sample-xsd-file-simple-schema.md) y péguelo para reemplazar el código que se ha agregado el nuevo archivo XSD de forma predeterminada.
+
+   El **Explorador de esquemas XML** se actualiza con el nuevo conjunto de esquemas.
+
+## <a name="see-also"></a>Vea también
+
+- [Trabajar con datos XML](../xml-tools/working-with-xml-data.md)

@@ -1,9 +1,8 @@
 ---
-title: Trabajar con código de Visual C++ (Diseñador de clases) | Microsoft Docs
-ms.custom: ''
+title: Trabajar con código de Visual C++ (Diseñador de clases)
 ms.date: 06/21/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.cpplimitation
@@ -21,96 +20,103 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 490ab617e52e78681f6fdd427548c5e1cbd59957
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 109c2408e16c5ca4943855889191733234778761
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/10/2018
+ms.locfileid: "33958456"
 ---
-# <a name="working-with-visual-c-code-class-designer"></a>Trabajar con código de Visual C++ (Diseñador de clases)
-El Diseñador de clases muestra una superficie de diseño visual denominada *diagrama de clases* que ofrece una representación visual de los elementos de código del proyecto. Puede usar diagramas de clases para diseñar y visualizar clases y otros tipos en un proyecto.  
+# <a name="work-with-visual-c-code-in-class-designer"></a>Trabajar con código de Visual C++ en el Diseñador de clases
 
-El Diseñador de clases admite los siguientes elementos de código de C++:  
+El **Diseñador de clases** muestra una superficie de diseño visual denominada *diagrama de clases* que ofrece una representación visual de los elementos de código del proyecto. Puede usar diagramas de clases para diseñar y visualizar clases y otros tipos en un proyecto.
 
--   Clase (se asemeja a una forma de clase administrada, salvo que puede tener varias relaciones de herencia)  
+El **Diseñador de clases** admite los siguientes elementos de código de C++:
 
--   Clase anónima (muestra el nombre de la vista de clase que se genera para el tipo anónimo)  
+- Clase (se asemeja a una forma de clase administrada, salvo que puede tener varias relaciones de herencia)
 
--   Clase de plantilla  
+- Clase anónima (muestra el nombre de la vista de clase que se genera para el tipo anónimo)
 
--   Struct  
+- Clase de plantilla
 
--   Enum  
+- Struct
 
--   Macro (muestra la vista posterior al proceso de la macro)  
+- Enum
 
--   Definición de tipo  
+- Macro (muestra la vista posterior al proceso de la macro)
+
+- Definición de tipo
 
 > [!NOTE]
->  No es igual que el diagrama de clases UML, que se puede crear en un proyecto de modelado. Para obtener más información, vea [Diagramas de clases de UML: referencia](../../modeling/uml-class-diagrams-reference.md).  
+> No es igual que el diagrama de clases UML, que se puede crear en un proyecto de modelado. Para obtener más información, vea [Diagramas de clases de UML: referencia](../../modeling/uml-class-diagrams-reference.md).
 
-## <a name="troubleshooting-type-resolution-and-display-issues"></a>Solucionar problemas de visualización y resolución de tipos  
+## <a name="troubleshoot-type-resolution-and-display-issues"></a>Solucionar problemas de visualización y resolución de tipos
 
-### <a name="location-of-source-files"></a>Ubicación de archivos de origen  
-El Diseñador de clases no mantiene un seguimiento de la ubicación de los archivos de origen. Por lo tanto, si modifica la estructura del proyecto o mueve archivos de origen en el proyecto, el Diseñador de clases puede perder la pista del tipo (sobre todo del tipo de origen de una definición de tipo, clases base o tipos de asociación). Puede que obtenga un error, como **El Diseñador de clases no puede mostrar este tipo**. Si lo recibe, arrastre otra vez el código fuente modificado o reubicado al diagrama de clases para volver a mostrarlo.  
+### <a name="location-of-source-files"></a>Ubicación de archivos de origen
 
-### <a name="update-and-performance-issues"></a>Actualización y problemas de rendimiento  
-En los proyectos de Visual C++, puede tardarse entre 30 y 60 segundos para que un cambio en el archivo de código fuente aparezca en el diagrama de clases. Es posible que este retraso también provoque que el Diseñador de clases produzca el error **No se encontraron tipos en la selección**. Si recibe un error de este tipo, haga clic en **Cancelar** en el mensaje de error y espere a que el elemento de código aparezca en la vista de clases. Después de esto, el Diseñador de clases debe poder mostrar el tipo.  
+El **Diseñador de clases** no realiza un seguimiento de la ubicación de los archivos de origen. Por lo tanto, si modifica la estructura del proyecto o mueve archivos de origen del proyecto, el **Diseñador de clases** puede perder la pista del tipo (sobre todo del tipo de origen de una definición de tipo, clases base o tipos de asociación). Puede que obtenga un error, como **El Diseñador de clases no puede mostrar este tipo**. Si lo recibe, arrastre otra vez el código fuente modificado o reubicado al diagrama de clases para volver a mostrarlo.
 
-Si un diagrama de clases no se actualiza con los cambios realizados en el código, es posible que tenga que cerrar el diagrama y volver a abrirlo.  
+### <a name="update-and-performance-issues"></a>Problemas de actualización y rendimiento
 
-### <a name="type-resolution-issues"></a>Problemas de resolución de tipo  
-Puede que el Diseñador de clases no pueda resolver tipos por las razones siguientes:  
-  
--   El tipo está en un proyecto o ensamblado al que no se hace referencia desde el proyecto que contiene el diagrama de clases. Para corregir este error, agregue una referencia al proyecto o ensamblado que contiene el tipo. Para más información, vea [Administrar referencias en un proyecto](../managing-references-in-a-project.md).  
-  
--   El tipo no está en el ámbito correcto, por lo que el Diseñador de clases no puede encontrarlo. Asegúrese de que al código no le falta una instrucción `using`, `imports` o `#include`. Asegúrese también de que no quitó el tipo (o un tipo relacionado) del espacio de nombres en el que se encontraba originalmente.  
+En los proyectos de Visual C++, puede tardarse entre 30 y 60 segundos para que un cambio en el archivo de código fuente aparezca en el diagrama de clases. Es posible que este retraso también provoque que el **Diseñador de clases** produzca el error **No se encontraron tipos en la selección**. Si recibe un error de este tipo, haga clic en **Cancelar** en el mensaje de error y espere a que el elemento de código aparezca en la **Vista de clases**. Después de esto, el **Diseñador de clases** debe poder mostrar el tipo.
 
--   El tipo no existe (o se convirtió en comentario). Para corregir este error, asegúrese de que no convirtió el tipo en comentario ni lo eliminó.  
+Si un diagrama de clases no se actualiza con los cambios realizados en el código, es posible que tenga que cerrar el diagrama y volver a abrirlo.
 
--   El tipo se encuentra en una biblioteca a la que hace referencia una directiva #import. Una posible solución alternativa es agregar manualmente el código generado (archivo .tlh) a una directiva #include en el archivo de encabezado.  
+### <a name="type-resolution-issues"></a>Problemas de resolución de tipos
 
-El error que probablemente más va a encontrar para un problema de resolución de tipos es **No se pudo encontrar el código para una o varias formas en el diagrama de clase "\<element>"**. Este mensaje de error no necesariamente indica que el código sea incorrecto. Solo indica que ese diseñador de clases no pudo mostrar el código. Pruebe las siguientes medidas.  
+Puede que el **Diseñador de clases** no pueda resolver tipos por las razones siguientes:
 
--   Asegúrese de que el tipo existe. Asegúrese de que no eliminó involuntariamente el código fuente ni lo convirtió en comentario.  
+- El tipo está en un proyecto o ensamblado al que no se hace referencia desde el proyecto que contiene el diagrama de clases. Para corregir este error, agregue una referencia al proyecto o ensamblado que contiene el tipo. Para más información, vea [Administrar referencias en un proyecto](../managing-references-in-a-project.md).
 
--   Asegúrese de que el Diseñador de clases admite el tipo especificado. Vea [Limitaciones de los elementos de código C++](#limitations).  
+- El tipo no está en el ámbito correcto, por lo que el **Diseñador de clases** no puede encontrarlo. Asegúrese de que al código no le falta una instrucción `using`, `imports` o `#include`. Asegúrese también de que no quitó el tipo (o un tipo relacionado) del espacio de nombres en el que se encontraba originalmente.
 
--   Intente resolver el tipo. Puede que el tipo esté en un proyecto o ensamblado al que no se hace referencia desde el proyecto que contiene el diagrama de clases. Para corregir este error, agregue una referencia al proyecto o ensamblado que contiene el tipo. Para más información, vea [Administrar referencias en un proyecto](../managing-references-in-a-project.md).  
+- El tipo no existe (o se convirtió en comentario). Para corregir este error, asegúrese de que no convirtió el tipo en comentario ni lo eliminó.
 
--   Asegúrese de que el tipo está en el ámbito correcto para que el Diseñador de clases pueda encontrarlo. Asegúrese de que al código no le falta una instrucción `using`, `imports` o `#include`. Asegúrese también de que no quitó el tipo (o un tipo relacionado) del espacio de nombres en el que se encontraba originalmente.  
+- El tipo se encuentra en una biblioteca a la que hace referencia una directiva #import. Una posible solución alternativa es agregar manualmente el código generado (archivo .tlh) a una directiva #include en el archivo de encabezado.
 
-### <a name="troubleshooting-other-error-messages"></a>Solucionar problemas de otros mensajes de error  
-Puede encontrar ayuda para solucionar problemas referentes a errores y advertencias en los foros públicos de Microsoft Developer Network (MSDN). Vea el [foro del Diseñador de clases de Visual Studio](http://go.microsoft.com/fwlink/?linkid=160754).  
+- Asegúrese de que el **Diseñador de clases** admite el tipo especificado. Vea [Limitaciones de los elementos de código C++](#limitations-for-c-code-elements).
 
-##  <a name="limitations"></a> Limitaciones de los elementos de código C++  
+El error que probablemente más va a encontrar para un problema de resolución de tipos es **No se pudo encontrar el código para una o varias formas en el diagrama de clase "\<element>"**. Este mensaje de error no necesariamente indica que el código sea incorrecto. Solo indica que ese diseñador de clases no pudo mostrar el código. Pruebe las siguientes medidas:
 
--   Cuando se carga un proyecto de Visual C++, Diseñador de clases funciona en modo de solo lectura. Puede cambiar el diagrama de clases, pero no guardar cambios desde el diagrama de clases en el código fuente.  
+- Asegúrese de que el tipo existe. Asegúrese de que no eliminó involuntariamente el código fuente ni lo convirtió en comentario.
 
--   El Diseñador de clases solo admite semántica de C++ nativa. Para proyectos de Visual C++ que se compilan en código administrado, el Diseñador de clases solo presentará elementos de código que sean tipos nativos. Por lo tanto, puede agregar un diagrama de clases a un proyecto, pero el Diseñador de clases no le permitirá ver los elementos en los que la propiedad `IsManaged` se establece en `true` (es decir, tipos de valor y tipos de referencia).  
+- Intente resolver el tipo. Puede que el tipo esté en un proyecto o ensamblado al que no se hace referencia desde el proyecto que contiene el diagrama de clases. Para corregir este error, agregue una referencia al proyecto o ensamblado que contiene el tipo. Para más información, vea [Administrar referencias en un proyecto](../managing-references-in-a-project.md).
 
--   Para proyectos de Visual C++, el Diseñador de clases solo lee la definición del tipo. Por ejemplo, suponga que define un tipo en un archivo de encabezado (.h) y define sus miembros en un archivo de implementación (.cpp). Si llama a "Ver diagrama de clases" en el archivo de implementación (.cpp), el Diseñador de clases no muestra nada. Otro ejemplo, si llama a "Ver diagrama de clase" en un archivo .cpp que usa una instrucción `#include` para incluir otros archivos pero no contiene ninguna definición de clase real, el Diseñador de clases tampoco mostrará nada.  
+- Asegúrese de que el tipo está en el ámbito correcto para que el Diseñador de clases pueda encontrarlo. Asegúrese de que al código no le falta una instrucción `using`, `imports` o `#include`. Asegúrese también de que no quitó el tipo (o un tipo relacionado) del espacio de nombres en el que se encontraba originalmente.
 
--   Los archivos IDL (.idl), que definen las interfaces COM y las bibliotecas de tipos, no se muestran en los diagramas a menos que se compilen en código C++ nativo.  
+### <a name="troubleshoot-other-error-messages"></a>Solucionar problemas de otros mensajes de error
 
--   El Diseñador de clases no admite funciones ni variables globales.  
+Puede encontrar ayuda para solucionar problemas referentes a errores y advertencias en los foros públicos de Microsoft Developer Network (MSDN). Vea el [foro del Diseñador de clases de Visual Studio](http://go.microsoft.com/fwlink/?linkid=160754).
 
--   El Diseñador de clases no admite uniones. Se trata de un tipo especial de clase en la que la memoria asignada solo es la cantidad necesaria para el miembro de datos más grande de la unión.  
+## <a name="limitations-for-c-code-elements"></a>Limitaciones de los elementos de código C++
 
--   El Diseñador de clases no muestra tipos de datos básicos como `int` y `char`.  
+- Cuando se carga un proyecto de Visual C++, el **Diseñador de clases** funciona en modo de solo lectura. Puede cambiar el diagrama de clases, pero no guardar cambios desde el diagrama de clases en el código fuente.
 
--   El Diseñador de clases no muestra tipos definidos fuera del proyecto actual si el proyecto no tiene referencias correctas a esos tipos.  
+- El **Diseñador de clases** solo admite semántica de C++ nativa. En proyectos de Visual C++ que se compilan en código administrado, el **Diseñador de clases** solo presenta elementos de código que son tipos nativos. Por lo tanto, puede agregar un diagrama de clases a un proyecto, pero el **Diseñador de clases** no le permite ver los elementos en los que la propiedad `IsManaged` se establece en `true` (es decir, tipos de valor y tipos de referencia).
 
--   El Diseñador de clases puede mostrar tipos anidados, pero no las relaciones entre un tipo anidado y otros tipos.  
+- En proyectos de Visual C++, el **Diseñador de clases** solo lee la definición del tipo. Por ejemplo, suponga que define un tipo en un archivo de encabezado (.h) y define sus miembros en un archivo de implementación (.cpp). Si llama a "Ver diagrama de clases" en el archivo de implementación (.cpp), el **Diseñador de clases** no muestra nada. Otro ejemplo, si llama a "Ver diagrama de clases" en un archivo .cpp que usa una instrucción `#include` para incluir otros archivos pero no contiene ninguna definición de clase real, el **Diseñador de clases** tampoco muestra nada.
 
--   El Diseñador de clases no puede mostrar tipos que sean de tipo void o que deriven de un tipo void.  
+- Los archivos IDL (.idl), que definen las interfaces COM y las bibliotecas de tipos, no se muestran en los diagramas a menos que se compilen en código C++ nativo.
+
+- El **Diseñador de clases** no admite funciones ni variables globales.
+
+- El **Diseñador de clases** no admite uniones. Se trata de un tipo especial de clase en la que la memoria asignada solo es la cantidad necesaria para el miembro de datos más grande de la unión.
+
+- El **Diseñador de clases** no muestra tipos de datos básicos como `int` y `char`.
+
+- El **Diseñador de clases** no muestra tipos definidos fuera del proyecto actual si el proyecto no tiene referencias correctas a esos tipos.
+
+- El **Diseñador de clases** puede mostrar tipos anidados, pero no las relaciones entre un tipo anidado y otros tipos.
+
+- El **Diseñador de clases** no puede mostrar tipos que sean de tipo void o que deriven de un tipo void.
 
 ## <a name="see-also"></a>Vea también
-[Diseñar y ver clases y tipos](designing-and-viewing-classes-and-types.md)   
-[Trabajar con diagramas de clases](working-with-class-diagrams.md)   
-[Diseño de clases y tipos](designing-classes-and-types.md)   
-[Información adicional sobre los errores del Diseñador de clases](additional-information-about-errors.md)   
-[Clase de Visual C++ en el Diseñador de clases](visual-cpp-classes.md)   
-[Estructuras de Visual C++ en el Diseñador de clases](visual-cpp-structures.md)   
-[Enumeraciones de Visual C++ en el Diseñador de clases](visual-cpp-enumerations.md)   
-[Definiciones de tipos de Visual C++ en el Diseñador de clases](visual-cpp-typedefs.md)
+
+- [Diseñar y ver clases y tipos](designing-and-viewing-classes-and-types.md)
+- [Trabajar con diagramas de clases](working-with-class-diagrams.md)
+- [Diseñar y ver clases y tipos](designing-and-viewing-classes-and-types.md)
+- [Información adicional sobre los errores del Diseñador de clases](additional-information-about-errors.md)
+- [Clases de Visual C++ en el Diseñador de clases](visual-cpp-classes.md)
+- [Estructuras de Visual C++ en el Diseñador de clases](visual-cpp-structures.md)
+- [Enumeraciones de Visual C++ en el Diseñador de clases](visual-cpp-enumerations.md)
+- [Definiciones de tipos de Visual C++ en el Diseñador de clases](visual-cpp-typedefs.md)

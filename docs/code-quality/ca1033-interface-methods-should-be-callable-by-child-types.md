@@ -1,6 +1,7 @@
 ---
 title: 'CA1033: Los tipos secundarios deberían poder llamar a los métodos de interfaz'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,13 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c41b19d9d4a82e25223a9cf7b04034b37c3f45fb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b56cd055fa8413d7d98a1c0d6d8b538a8a858af6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941326"
 ---
 # <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033: Los tipos secundarios deberían poder llamar a los métodos de interfaz
+
 |||
 |-|-|
 |TypeName|InterfaceMethodsShouldBeCallableByChildTypes|
@@ -33,18 +36,18 @@ ms.lasthandoff: 04/19/2018
  Un tipo no sellado visible externamente proporciona un método explícito de implementación de una interfaz pública pero no proporciona un método visible externamente alternativo con el mismo nombre.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Considere la posibilidad de un tipo base que implementa explícitamente un método de interfaz pública. Un tipo que deriva del tipo base puede tener acceso al método de interfaz heredada sólo a través de una referencia a la instancia actual (`this` en C#) que se convierte en la interfaz. Si el tipo derivado vuelve a implementa (explícitamente) el método de interfaz heredada, la implementación base ya no son accesibles. La llamada a través de la referencia a la instancia actual invocará la implementación derivada; Esto hace que la recursividad y un desbordamiento de pila final.
+ Considere la posibilidad de un tipo base que implementa explícitamente un método de interfaz pública. Un tipo que deriva el tipo base puede tener acceso al método de interfaz heredados sólo a través de una referencia a la instancia actual (`this` en C#) que se convierte en la interfaz. Si el tipo derivado vuelva a implementar (explícitamente) el método de interfaz heredada, ya no se puede acceder la implementación base. La llamada a través de la referencia a la instancia actual invocará la implementación derivada; Esto hace que la recursividad y el desbordamiento de la pila.
 
- Esta regla no informa de una infracción de una implementación explícita de <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> cuando visible externamente `Close()` o `System.IDisposable.Dispose(Boolean)` se proporciona el método.
+ Esta regla no informa de una infracción en una implementación explícita de <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> cuando visible externamente `Close()` o `System.IDisposable.Dispose(Boolean)` se proporciona el método.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, implemente un nuevo método que expone la misma funcionalidad y es visible para los tipos derivados o cambiar a una implementación no explícitos. Si un cambio principal es aceptable, una alternativa es hacer que el tipo sealed.
+ Para corregir una infracción de esta regla, implemente un nuevo método que expone la misma funcionalidad y es visible para los tipos derivados o cambiar a una implementación no explícitos. Si un cambio importante es aceptable, una alternativa es hacer que el tipo como sellado.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Es seguro suprimir una advertencia de esta regla si un método visible externamente está siempre tenga la misma funcionalidad pero con un nombre distinto del método implementado explícitamente.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ Es seguro suprimir una advertencia de esta regla si se proporciona tiene la misma funcionalidad, pero un nombre distinto del método implementado explícitamente un método visible externamente.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra un tipo, `ViolatingBase`, que infringe la regla y un tipo, `FixedBase`, que muestra una corrección para la infracción.
+ El ejemplo siguiente muestra un tipo, `ViolatingBase`, que infringe la regla y un tipo, `FixedBase`, que muestra una corrección de la infracción.
 
  [!code-csharp[FxCop.Design.ExplicitMethodImplementations#1](../code-quality/codesnippet/CSharp/ca1033-interface-methods-should-be-callable-by-child-types_1.cs)]
 

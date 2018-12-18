@@ -1,10 +1,11 @@
 ---
-title: Crear un proyecto de flujo de trabajo | Documentos de Microsoft
-ms.date: 11/04/2016
-ms.topic: reference
+title: Crear un proyecto de Workflow Foundation
+ms.date: 06/25/2018
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - Workflow Designer, creating a workflow project
-- Visual Studio 2010 Workflow Designer, creating a workflow project
 - creating a workflow project
 ms.assetid: 235a125e-ebe7-4a98-bf77-86c8558728fb
 author: gewarren
@@ -12,24 +13,71 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a10805edce0379ae7bfd6666afc787690dd45689
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4a4f8ed1effbc459bd2a17e3433738c1b461513b
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755659"
 ---
-# <a name="creating-a-workflow-project"></a>Crear un proyecto de flujo de trabajo
+# <a name="workflow-project-templates"></a>Plantillas de proyecto de flujo de trabajo
 
-Los flujos de trabajo, los servicios de flujo de trabajo de [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)], las actividades personalizadas y los diseñadores de actividad personalizados se pueden crear mediante las plantillas de proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. En esta sección se describe cómo crear bibliotecas y aplicaciones con las plantillas de proyecto disponibles en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+Puede crear flujos de trabajo, servicios de flujo de trabajo de Windows Communication Foundation (WCF), las actividades personalizadas y diseñadores de actividad personalizados mediante el uso de plantillas de proyecto de Visual Studio. En este artículo se describe cómo crear aplicaciones y bibliotecas con las plantillas de proyecto disponibles en Visual Studio.
 
-Los primeros cuatro temas siguientes describen cómo utilizar las plantillas de flujo de trabajo se encuentra en la **nuevo proyecto** ventana. Pueden tener acceso a estas plantillas abriendo [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] y seleccionando **archivo** -> **New** -> **proyecto...** , la **flujo de trabajo** categoría desde la **plantillas instaladas** sección de la izquierda, bajo la **Visual Basic** o **Visual C#** nodo.
+## <a name="create-a-workflow-project"></a>Crear un proyecto de flujo de trabajo
 
-En el último tema se describe cómo agregar actividades de flujo de trabajo, diseñadores y servicios u otros elementos de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a un proyecto (u otro) del flujo de trabajo existente.
+Visual Studio proporciona cuatro plantillas de proyecto de flujo de trabajo diferentes:
 
-## <a name="related-sections"></a>Secciones relacionadas
+- Aplicación de consola de flujo de trabajo
 
-- [Diseño de flujos de trabajo](/dotnet/framework/windows-workflow-foundation/designing-workflows)
+- Aplicación de servicio de flujo de trabajo WCF
+
+- Biblioteca de actividades
+
+- Biblioteca del Diseñador de actividad
+
+Para obtener acceso a estas plantillas, instale primero el **Windows Workflow Foundation** componente de Visual Studio 2017. Para obtener instrucciones detalladas, consulte [instalar Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+
+1. Una vez instalado el **Windows Workflow Foundation** componente, abra el **nuevo proyecto** cuadro de diálogo seleccionando **archivo** > **New**  >  **Proyecto**.
+
+1. En el panel izquierdo, seleccione el **Visual C#** > **flujo de trabajo** categoría (o **Visual Basic** > **deflujodetrabajo**si prefiere Visual Basic).
+
+1. En el panel central, seleccione una plantilla de proyecto, como **aplicación de consola de flujos de trabajo**.
+
+1. En el **nombre** , escriba un nombre descriptivo para el proyecto para que sea fácil de identificar.
+
+1. En el **ubicación** cuadro, escriba el directorio en el que desea guardar el proyecto o seleccione **examinar** para desplazarse hasta él.
+
+1. En el **solución** cuadro, escriba el nombre para la nueva solución. Seleccione **Aceptar** para crear la aplicación.
+
+   > [!NOTE]
+   > Si desea agregar un nuevo proyecto a una solución existente, ábrala en Visual Studio, haga clic en la solución en **el Explorador de soluciones**y seleccione **agregar** > **nuevo Proyecto** para abrir el **nuevo proyecto** cuadro de diálogo.
+
+## <a name="workflow-console-app"></a>Aplicación de consola de flujo de trabajo
+
+Si elige la **aplicación de consola de flujos de trabajo** plantilla, Visual Studio crea una definición de flujo de trabajo en XAML. El Diseñador de flujo de trabajo se abre y muestra el lienzo del flujo de trabajo que creó. Para crear un flujo de trabajo, arrastre actividades u otros elementos de flujo de trabajo de **cuadro de herramientas** a la superficie de diseño.
+
+## <a name="wcf-workflow-service-app"></a>Aplicación de servicio de flujo de trabajo WCF
+
+Si elige la **aplicación de servicio de flujo de trabajo de WCF** plantilla, Visual Studio crea una definición de servicio como XAML. Se abre el Diseñador de flujo de trabajo a la vista de diseño con un <xref:System.Activities.Statements.Sequence> actividad que contiene un conjunto de <xref:System.ServiceModel.Activities.Receive> y <xref:System.ServiceModel.Activities.SendReply> actividades.
+
+## <a name="activity-library"></a>Biblioteca de actividades
+
+Si elige la **biblioteca de actividades** plantilla, Visual Studio crea una definición de actividad en XAML. Diseñador de flujo de trabajo se abre y muestra el lienzo para su actividad personalizada. Arrastre una actividad **cuadro de herramientas** hasta la superficie de diseño para incluirla en su actividad personalizada.
+
+> [!NOTE]
+> En el cuerpo de la actividad personalizada le permite sólo una actividad secundaria. Sin embargo, esa actividad secundaria podría ser una actividad compuesta, como un <xref:System.Activities.Statements.Sequence> actividad o <xref:System.Activities.Statements.Flowchart> actividad.
+
+## <a name="activity-designer-library"></a>Biblioteca del Diseñador de actividad
+
+Si elige la **biblioteca del Diseñador de actividad** plantilla, Visual Studio crea una definición del Diseñador de actividad en XAML y un archivo de implementación de código subyacente. El Diseñador de flujo de trabajo se abre y muestra el lienzo del Diseñador de actividad. Windows Presentation Foundation (WPF) de arrastrar los controles de **cuadro de herramientas** hasta la superficie de diseño para usarlos en el Diseñador de actividad personalizado.
+
+Para obtener un ejemplo de cómo implementar un diseñador de actividad personalizado, consulte [Cómo: crear un diseñador de actividad personalizado](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer).
+
+> [!NOTE]
+> Diseñadores de actividad personalizados pueden usarse para las actividades personalizadas y para las actividades de .NET Framework de forma predeterminada.
 
 ## <a name="see-also"></a>Vea también
 
-- [Usar el Diseñador de flujo de trabajo](../workflow-designer/using-the-workflow-designer.md)
+- [Use el Diseñador de flujo de trabajo](../workflow-designer/using-the-workflow-designer.md)
+- [Diseñar flujos de trabajo (.NET Framework)](/dotnet/framework/windows-workflow-foundation/designing-workflows)

@@ -1,13 +1,9 @@
 ---
-title: Administrar referencias en un proyecto | Microsoft Docs
-ms.custom: ''
-ms.date: 10/26/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+title: Administrar referencias en un proyecto
+ms.date: 04/11/2018
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
 - cs.ProjectPropertiesReferencePaths
@@ -24,24 +20,25 @@ helpviewer_keywords:
 - objects [Visual Studio], referencing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ede31cadef7048b2f75ca652efea9b01716351e
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: e772f4d861e4b16499ad9be9d7c814320e1a14f9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950951"
 ---
-# <a name="managing-references-in-a-project"></a>Administrar referencias en un proyecto
+# <a name="manage-references-in-a-project"></a>Administrar referencias en un proyecto
 
 Antes de escribir código en un componente externo o en un servicio conectado, el proyecto debe contener primero una referencia a él. Una referencia es básicamente una entrada de un archivo de proyecto que contiene la información que Visual Studio necesita para localizar el componente o el servicio.
 
-Para agregar una referencia, haga clic con el botón derecho en el nodo Referencias del Explorador de soluciones y elija **Agregar referencia**. Para obtener más información, consulta [Procedimiento para agregar o quitar referencias mediante el Administrador de referencias](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
+Para agregar una referencia, haga clic con el botón derecho en el nodo **Referencias** o **Dependencias** del **Explorador de soluciones** y elija **Agregar referencia**. También puede hacer clic con el botón derecho en el nodo del proyecto y seleccionar **Agregar** > **Referencia**. Para obtener más información, vea [Adición o eliminación de referencias](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
 
-![Agregar una referencia en Visual C&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png "vs2015_cpp_add_reference")
+![Agregar una referencia en Visual C&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png)
 
-Puede hacer referencia a los siguientes tipos de componentes y servicios:
+Puede agregar una referencia a los siguientes tipos de componentes y servicios:
 
 - Bibliotecas de clases o ensamblados de .NET Framework
 
@@ -81,11 +78,11 @@ Si determina que el SDK de extensión al que la aplicación hace referencia no e
 
 1. Reinicie Visual Studio y abra la aplicación.
 
-1. Haga clic con el botón derecho en el nodo **Referencias** en el proyecto que produjo el error y elija **Agregar referencia**.
+1. Haga clic con el botón derecho en el nodo **Referencias** o **Dependencias** en el proyecto que produjo el error y elija **Agregar referencia**.
 
 1. Haga clic en la pestaña **Windows**, luego en la subpestaña **Extensiones** y, después, desactive las casillas de los SDK de extensiones antiguos y active las casillas de los nuevos. Haga clic en **Aceptar**.
 
-## <a name="adding-a-reference-at-design-time"></a>Agregar una referencia en tiempo de diseño
+## <a name="add-a-reference-at-design-time"></a>Agregar una referencia en tiempo de diseño
 
 Cuando se hace referencia a un ensamblado del proyecto, Visual Studio busca el ensamblado en las ubicaciones siguientes:
 
@@ -94,7 +91,9 @@ Cuando se hace referencia a un ensamblado del proyecto, Visual Studio busca el e
 - Otros directorios del proyecto de la misma solución. (Puede encontrar estos ensamblados en la pestaña **Proyectos** ).
 
 > [!NOTE]
-> Todos los proyectos contienen una referencia implícita a mscorlib. Los proyectos de Visual Basic contienen una referencia implícita a `Microsoft.VisualBasic`. Todos los proyectos contienen una referencia implícita a `System.Core`, incluso si se quita `System.Core` de la lista de referencias.
+> - Todos los proyectos contienen una referencia implícita a **mscorlib**.
+> - Todos los proyectos contienen una referencia implícita a `System.Core`, incluso si se quita `System.Core` de la lista de referencias.
+> - Los proyectos de Visual Basic contienen una referencia implícita a <xref:Microsoft.VisualBasic>.
 
 ## <a name="references-to-shared-components-at-run-time"></a>Referencias a componentes compartidos en tiempo de ejecución
 
@@ -104,9 +103,9 @@ Si implementa una aplicación que contiene una referencia a un componente person
 
 De forma predeterminada, la propiedad <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> está establecida en **False** si el ensamblado o el componente está en la caché global de ensamblados o es un componente del marco de trabajo. De lo contrario, el valor se establece en **True**. Las referencias de proyecto a proyecto siempre se establecen en **True**.
 
-## <a name="referencing-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Referencia a un proyecto o ensamblado que tenga como destino una versión diferente de .NET Framework
+## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Referencia a un proyecto o ensamblado que tenga como destino una versión diferente de .NET Framework
 
-Puede crear aplicaciones que hagan referencia a proyectos o ensamblados destinados a otra versión de .NET Framework. Por ejemplo, se podría crear una aplicación destinada a [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] que haga referencia a un ensamblado destinado a [!INCLUDE[dnprdnext](../ide/includes/dnprdnext_md.md)]. Si se crea un proyecto destinado a una versión anterior de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], no se puede establecer una referencia en ese proyecto a un proyecto o ensamblado destinado a una versión más reciente.
+Puede crear aplicaciones que hagan referencia a proyectos o ensamblados destinados a otra versión de .NET Framework. Por ejemplo, se podría crear una aplicación destinada a .NET Framework 4.6 que haga referencia a un ensamblado destinado a .NET Framework 4.5. Si se crea un proyecto destinado a una versión anterior de .NET Framework, no se puede establecer una referencia en ese proyecto a un proyecto o ensamblado destinado a una versión más reciente.
 
 Para obtener más información, consulte [Información general sobre la compatibilidad con múltiples versiones](../ide/visual-studio-multi-targeting-overview.md).
 
@@ -114,7 +113,7 @@ Para obtener más información, consulte [Información general sobre la compatib
 
 Las referencias entre proyectos son referencias a proyectos que contienen ensamblados. Puede crearlas en la pestaña **Proyecto** . Visual Studio puede encontrar un ensamblado cuando se le proporciona una ruta de acceso al proyecto.
 
-Si tiene un proyecto que genera un ensamblado, debe hacer referencia al proyecto y no usar una referencia de archivo (ver abajo). La ventaja de una referencia de proyecto a proyecto es que crea una dependencia entre los proyectos en el sistema de compilación. El proyecto dependiente se compilará si ha cambiado desde la última vez que se compiló el proyecto que hace referencia. Una referencia a un archivo no crea una dependencia de compilación, por lo que es posible compilar el proyecto que hace referencia sin compilar el proyecto dependiente y la referencia puede quedar obsoleta. (Es decir, el proyecto puede hacer referencia a una versión previamente compilada del proyecto). Esto puede dar lugar a varias versiones de un solo archivo DLL que se requiere en el directorio bin, lo cual no es posible. Si se produce este conflicto, verá un mensaje como "Advertencia: la dependencia 'archivo' del proyecto 'proyecto' no se puede copiar en el directorio de ejecución porque sobrescribiría la referencia 'archivo'". Para obtener más información, consulte [Solucionar problemas de referencias rotas](../ide/troubleshooting-broken-references.md) y [Cómo: Crear y quitar dependencias del proyecto](../ide/how-to-create-and-remove-project-dependencies.md).
+Si tiene un proyecto que genera un ensamblado, debe hacer referencia al proyecto y no usar una referencia de archivo (ver abajo). La ventaja de una referencia de proyecto a proyecto es que crea una dependencia entre los proyectos en el sistema de compilación. El proyecto dependiente se compilará si ha cambiado desde la última vez que se compiló el proyecto que hace referencia. Una referencia a un archivo no crea una dependencia de compilación, por lo que es posible compilar el proyecto que hace referencia sin compilar el proyecto dependiente y la referencia puede quedar obsoleta. (Es decir, el proyecto puede hacer referencia a una versión previamente compilada del proyecto). Esto puede dar lugar a varias versiones de un solo archivo DLL que se requiere en el directorio *bin*, lo cual no es posible. Si se produce este conflicto, verá un mensaje como "Advertencia: la dependencia 'archivo' del proyecto 'proyecto' no se puede copiar en el directorio de ejecución porque sobrescribiría la referencia 'archivo'". Para obtener más información, vea [Solucionar problemas de referencias rotas](../ide/troubleshooting-broken-references.md) y [Crear y quitar dependencias del proyecto](../ide/how-to-create-and-remove-project-dependencies.md).
 
 > [!NOTE]
 > Se crea una referencia de archivo en lugar de una referencia entre proyectos si la versión de destino de .NET Framework de un proyecto es la versión 4.5, y la del otro proyecto es la versión 2, 3, 3.5 o 4.0.
@@ -125,5 +124,5 @@ Las referencias a archivos son referencias directas a ensamblados fuera del cont
 
 ## <a name="see-also"></a>Vea también
 
-[Solucionar problemas de referencias rotas](../ide/troubleshooting-broken-references.md)
-[Cómo: Agregar o quitar referencias mediante el Administrador de referencias](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+- [Solucionar problemas de referencias rotas](../ide/troubleshooting-broken-references.md)
+- [Cómo: Agregar o quitar referencias](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

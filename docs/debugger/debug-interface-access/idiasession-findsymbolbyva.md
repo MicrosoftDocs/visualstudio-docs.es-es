@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Findsymbolbyva | Documentos de Microsoft'
+title: Findsymbolbyva | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,14 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 576cc81eb8d45e522af2a945bb581c61a3d28620
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 46304a95f6e7b42c65d19a1e7bfd51fc1d2ff171
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882514"
 ---
 # <a name="idiasessionfindsymbolbyva"></a>IDiaSession::findSymbolByVA
-Recupera un tipo de símbolo especificado que contiene, o que esté más cercano a una dirección virtual especificada.  
+Recupera un tipo de símbolo especificado que contiene, o más cercana a una dirección virtual especificada.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,13 +39,13 @@ HRESULT findSymbolByVA (
  [in] Especifica la dirección virtual.  
   
  `symtag`  
- [in] Tipo de símbolo que se encuentra. Valores se toman de la [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) enumeración.  
+ [in] Tipo de símbolo que se encuentra. Los valores se toman de la [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) enumeración.  
   
  `ppSymbol`  
  [out] Devuelve un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) recupera el objeto que representa el símbolo.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="example"></a>Ejemplo  
   
@@ -56,4 +57,4 @@ pSession->findSymbolByVA( va, SymTagFunction, &pFunc );
 ## <a name="see-also"></a>Vea también  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md)
+ [Enumeración SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

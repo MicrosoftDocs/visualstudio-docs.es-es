@@ -1,5 +1,5 @@
 ---
-title: Variante de formato de destino de representación de 16 BPP | Documentos de Microsoft
+title: Variante de formato de destino de representación de 16 BPP | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,27 +10,42 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8f8328b180c398cab5ff7fa0f29dfc578414e3a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f9c72abaaf1a799316686c77b127952f1fe4f689
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832895"
 ---
-# <a name="16bpp-render-target-format-variant"></a>16bpp (Representar variante de formato de destino)
+# <a name="16-bpp-render-target-format-variant"></a>16 bpp representar variante del formato de destino
 Establece el formato de píxeles en DXGI_FORMAT_B5G6R5_UNORM para todos los objetivos de presentación y búferes de reserva.  
   
 ## <a name="interpretation"></a>Interpretación  
- Un objetivo de presentación o búfer de reserva normalmente utiliza un formato de 32 bpp (32 bits por píxel), como B8G8R8A8_UNORM. Los formatos de 32 bpp pueden consumir mucho ancho de banda de memoria. Como el formato B5G6R5_UNORM es un formato de 16 bpp, que es la mitad del tamaño de los formatos 32 bpp, utilizarlo puede reducir la presión en el ancho de banda de memoria, pero a costa de perder fidelidad del color.  
+ Un destino de representación o el búfer de reserva normalmente utiliza un formato de 32 bpp (32 bits por píxel), como B8G8R8A8_UNORM. los formatos 32 bpp pueden consumir una gran cantidad de ancho de banda de memoria. Dado que el formato B5G6R5_UNORM es un formato de 16 bpp que es la mitad del tamaño de los formatos 32 bpp, utilizarlo puede aliviar la presión en ancho de banda de memoria, pero a costa de fidelidad del color.  
   
- Si esta variante muestra un gran aumento del rendimiento, puede indicar que la aplicación consume demasiado ancho de memoria. Los aumentos del rendimiento pueden ser especialmente pronunciados cuando el fotograma perfilado sufre una cantidad importante de sobredibujo o contiene mucha combinación alfa.  
-  
- Si los tipos de escena que la aplicación presenta no requieren una alta fidelidad en la reproducción del color, ni que el objetivo de presentación tenga un canal alfa y a menudo contienen degradados suaves, que son susceptibles a los artefactos de banda en poca fidelidad del color, considere utilizar un formato de objetivo de presentación de 16 bpp para reducir el uso de ancho de banda de memoria.  
-  
- Si las escenas que se presentan en su aplicación requieren la reproducción del color de alta fidelidad o un canal alfa, o los degradados suaves son habituales, considere otras estrategias para reducir el uso de ancho de banda de memoria, como, por ejemplo, reducir la cantidad de sobredibujo o combinación alfa, reducir las dimensiones del búfer de fotograma o modificar los recursos de textura para consumir menos ancho de banda de memoria habilitando la compresión o reduciendo sus dimensiones. Como es habitual, debe tener en cuenta cómo se verá afectada la calidad de la imagen con cualquiera de estas optimizaciones.  
-  
- Si su aplicación se pudiese beneficiar de cambiar a un búfer de reserva de 16 bpp pero forma parte de su cadena de intercambio, debe tomar medidas adicionales, porque DXGI_FORMAT_B5G6R5_UNORM no es un formato de búfer de reserva admitido para cadenas de intercambio creadas mediante `D3D11CreateDeviceAndSwapChain` o `IDXGIFactory::CreateSwapChain`. En su lugar, debe crear un objetivo de presentación de formato B5G6R5_UNORM mediante `CreateTexture2D` y presentarlo a este. Entonces, antes de llamar a Presente en la cadena de intercambio, copie el objetivo de presentación en el búfer de reserva de la cadena de intercambio dibujando un cuadrilátero a pantalla completa con el objetivo de presentación como textura de origen. Aunque este es un paso adicional que consumirá algo de ancho de banda de memoria, la mayoría de las operaciones de presentación consumirán menos ancho de banda, porque afectan al objetivo de presentación de 16 bpp. Si esto ahorra más ancho de banda de la que se consume copiando el objetivo de presentación al búfer de reserva de cadena de intercambio, el rendimiento de la presentación mejora.  
-  
- Las arquitecturas de GPU que utilizan técnicas de presentación en mosaico pueden obtener unos beneficios significativos en el rendimiento utilizando un formato de búfer de fotograma de 16 bpp, porque una parte más grande del búfer de fotograma puede encajar en cada caché de búfer de fotogramas local del mosaico. Las arquitecturas de presentación en mosaico a veces se encuentran en GPU de auriculares móviles y tablet PC, y raramente aparecen fuera de este nicho.  
+ Si esta variante muestra un gran aumento del rendimiento, puede indicar que la aplicación consume demasiado ancho de memoria. Puede obtener mejora considerable del rendimiento, especialmente cuando el fotograma perfilado tenía una cantidad importante de sobredibujo o combinación alfa.
+
+Un formato de destino de representación de 16 bpp puede reducir la banda de memoria con un uso cuando la aplicación tiene las siguientes condiciones:
+- No se requiere la reproducción del color de alta fidelidad.
+- No se requiere un canal alfa.
+- ¿No tiene ofent degradados suaves (que son susceptibles a los artefactos de bandas en la fidelidad del color).
+
+Otras estrategias para reducir el ancho de banda de memoria incluyen:
+- Reducir la cantidad de sobredibujo o combinación alfa.
+- Reduzca las dimensiones del búfer de fotogramas.
+- Reduzca las dimensiones de recursos de textura.
+- Reducir compresiones de recursos de textura.
+ 
+Como es habitual, debe tener en cuenta cómo se verá afectada la calidad de la imagen con cualquiera de estas optimizaciones.  
+
+Las aplicaciones que forman parte de una cadena de intercambio tienen un formato de búfer de reserva (DXGI_FORMAT_B5G6R5_UNORM) que no es compatible con 16 bpp. Estas cadenas de intercambio se crean mediante `D3D11CreateDeviceAndSwapChain` o `IDXGIFactory::CreateSwapChain`. Para solucionar esta limitación, realice los pasos siguientes:
+1. Crear un destino de representación formato B5G6R5_UNORM mediante `CreateTexture2D` y representar a dicho destino. 
+2. Copie el destino de representación en el búfer de reserva de la cadena de intercambio dibujando un cuadrado de pantalla completa y el destino de representación como textura de origen.
+3. Llamar a presente en la cadena de intercambio.
+
+   Si esta estrategia ahorra más ancho de banda que se consume copiando el destino de representación en el búfer de reserva de la cadena de intercambio, se mejora el rendimiento de la representación.
+
+   Las arquitecturas GPU que usan técnicas de presentación en mosaico pueden ver las ventajas de rendimiento significativas mediante el uso de un formato de búfer de fotograma de 16 bpp. Esta mejora es porque una parte más grande del búfer de fotogramas caben en la caché del búfer de fotogramas local de cada mosaico. Las arquitecturas de presentación en mosaico a veces se encuentran en GPU de auriculares móviles y tablet PC, y raramente aparecen fuera de este nicho.  
   
 ## <a name="remarks"></a>Comentarios  
  El formato de objetivo de presentación se restablece a DXGI_FORMAT_B5G6R5_UNORM en cada llamada a `ID3D11Device::CreateTexture2D` que crea un objetivo de presentación. En concreto, el formato se reemplaza cuando el objeto D3D11_TEXTURE2D_DESC pasado a pDesc describe un objetivo de presentación, que es:  
@@ -45,9 +60,9 @@ Establece el formato de píxeles en DXGI_FORMAT_B5G6R5_UNORM para todos los obje
  Como el formato B5G6R5 no tiene ningún canal alfa, el contenido alfa no se conserva con esta variante. Si la presentación de su aplicación requiere un canal alfa en el objetivo de presentación, no puede simplemente cambiar al formato B5G6R5.  
   
 ## <a name="example"></a>Ejemplo  
- El **16bpp Render Target Format** variante se puede reproducir para objetivos de presentación creados utilizando `CreateTexture2D` mediante código similar al siguiente:  
+ El **16 bpp Render Target Format** variante se puede reproducir para objetivos de presentación creados utilizando `CreateTexture2D` mediante código similar al siguiente:  
   
-```  
+```cpp
 D3D11_TEXTURE2D_DESC target_description;  
   
 target_description.BindFlags = D3D11_BIND_RENDER_TARGET;  

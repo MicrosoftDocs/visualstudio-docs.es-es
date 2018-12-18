@@ -1,32 +1,34 @@
 ---
-title: '&lt;aplicación&gt; elemento (desarrollo de Office en Visual Studio) | Documentos de Microsoft'
+title: '&lt;aplicación&gt; elemento (desarrollo de Office en Visual Studio)'
+titleSuffix: ''
 ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
+ms.technology: office-development
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <application> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8550b5374bde5d18d3f645c08f89902250ae5f2d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7b02a3bb762efd9136da79d3128caa0cf8a19f95
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247776"
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;aplicación&gt; elemento (desarrollo de Office en Visual Studio)
   El elemento `application` del espacio de nombres `vstav3` contiene la descripción de las soluciones de Office. Los elementos secundarios son diferentes para las personalizaciones de nivel de documento y los complementos de VSTO.  
   
-## <a name="syntax-for-document-level-customizations"></a>Sintaxis de las personalizaciones de nivel de documento  
+## <a name="syntax-for-document-level-customizations"></a>Sintaxis para las personalizaciones de nivel de documento  
   
-```  
+```xml 
 <application>  
   <customization  
     id  
@@ -37,9 +39,9 @@ ms.lasthandoff: 04/16/2018
 </application>  
 ```  
   
-## <a name="syntax-for-application-level-add-ins"></a>Sintaxis de los complementos de nivel de aplicación  
+## <a name="syntax-for-application-level-add-ins"></a>Sintaxis para los complementos de nivel de aplicación  
   
-```  
+```xml
 <application>  
   <customization  
     id  
@@ -54,14 +56,14 @@ ms.lasthandoff: 04/16/2018
 </application>  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementos y atributos  
+## <a name="elements-and-attributes"></a>Los elementos y atributos  
  El elemento `application` del espacio de nombres `vstav3` es el nodo que encapsula toda la información específica de la personalización que se encuentra en el espacio de nombres `vstov4` .  
   
  El elemento `application` no tiene atributos.  
   
- El elemento `application` tiene el elemento siguiente:  
+ El elemento `application` tiene el siguiente elemento:  
   
-### <a name="customization"></a>personalización  
+### <a name="customization"></a>Personalización  
  El rol de la `customization` elemento en el `vstov3` espacio de nombres se define en [ &#60;personalización&#62; elemento &#40;desarrollo de Office en Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).  
   
 ## <a name="document-level-customization-example"></a>Ejemplo de personalización de nivel de documento  
@@ -71,7 +73,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="code"></a>Código  
   
-```  
+```xml  
 <vstav3:application>  
   <vstov4:customizations   
     xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">  
@@ -90,7 +92,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="code"></a>Código  
   
-```  
+```xml  
 <vstav3:application>  
   <vstov4:customizations   
     xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">  
@@ -121,7 +123,7 @@ ms.lasthandoff: 04/16/2018
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
+ [Manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md)   
  [Manifiestos de implementación para soluciones de Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [Manifiesto de aplicación ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
   

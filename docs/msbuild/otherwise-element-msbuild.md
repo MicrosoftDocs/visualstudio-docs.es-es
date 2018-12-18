@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d018b26f2df32b9e3cc1e3fae65ec8b3d3394806
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5f4f886e6c6d1ec09700eefa3c7289c9cb918ecc
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155053"
 ---
 # <a name="otherwise-element-msbuild"></a>Elemento Otherwise (MSBuild)
 Especifica el bloque de código que se ejecutará solo si las condiciones de todos los elementos `When` se evalúan como `false`.  
@@ -40,7 +41,7 @@ Especifica el bloque de código que se ejecutará solo si las condiciones de tod
 
 ## <a name="syntax"></a>Sintaxis  
 
-```  
+```xml  
 <Otherwise>  
     <PropertyGroup>... </PropertyGroup>  
     <ItemGroup>... </ItemGroup>  
@@ -56,7 +57,7 @@ Especifica el bloque de código que se ejecutará solo si las condiciones de tod
 
 ### <a name="child-elements"></a>Elementos secundarios  
 
-|Elemento|Description|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
 |[Choose](../msbuild/choose-element-msbuild.md)|Elemento opcional.<br /><br /> Evalúa los elementos secundarios para seleccionar una sección de código y ejecutarla. Puede haber cero o más elementos `Choose` en un elemento `Otherwise`.|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Elemento opcional.<br /><br /> Contiene un conjunto de elementos [Item](../msbuild/item-element-msbuild.md) definidos por el usuario. Puede haber cero o más elementos `ItemGroup` en un elemento `Otherwise`.|  
@@ -64,14 +65,14 @@ Especifica el bloque de código que se ejecutará solo si las condiciones de tod
 
 ### <a name="parent-elements"></a>Elementos primarios  
 
-|Elemento|Description|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
 |[Choose](../msbuild/choose-element-msbuild.md)|Evalúa los elementos secundarios para seleccionar una sección de código y ejecutarla.|  
 
 ## <a name="remarks"></a>Comentarios  
  Puede haber solo un elemento `Otherwise` en un elemento `Choose` y debe ser el último elemento.  
 
- Los elementos `Choose`, `When` y `Otherwise` se utilizan juntos para ofrecer un modo de seleccionar una sección de código para que ejecute una serie de alternativas posibles. Para obtener más información, consulte la sección [Construcciones condicionales](../msbuild/msbuild-conditional-constructs.md).  
+ Los elementos `Choose`, `When` y `Otherwise` se utilizan juntos para ofrecer un modo de seleccionar una sección de código para que ejecute una serie de alternativas posibles. Para más información, consulte la sección [Construcciones condicionales](../msbuild/msbuild-conditional-constructs.md).  
 
 ## <a name="example"></a>Ejemplo  
  En el proyecto siguiente se utiliza el elemento `Choose` para seleccionar el conjunto de valores de propiedad de los elementos `When` que desea establecer. Si los atributos `Condition` de ambos elementos `When` se evalúan como `false`, se establecen los valores de propiedad del elemento `Otherwise`.  
@@ -123,4 +124,4 @@ Especifica el bloque de código que se ejecutará solo si las condiciones de tod
 
 ## <a name="see-also"></a>Vea también  
  [Construcciones condicionales](../msbuild/msbuild-conditional-constructs.md)   
- [Referencia de esquemas de archivo del proyecto](../msbuild/msbuild-project-file-schema-reference.md)
+ [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)

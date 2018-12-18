@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Depurar un formulario Windows Forms | Documentos de Microsoft'
+title: 'Tutorial: Depurar un formulario de Windows | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -24,11 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4e256aeef1a068ddc46d13e98b344bcce56d08b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: dd847a4db232d32c941722d5ee537a21bdaf33a8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349171"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Tutorial: Depurar Windows Forms
 Un Windows Form es una de las aplicaciones administradas más comunes. Con un Windows Form se crean aplicaciones estándar de Windows. Puede completar este tutorial utilizando Visual Basic, C# o C++.  
@@ -50,40 +51,39 @@ Un Windows Form es una de las aplicaciones administradas más comunes. Con un Wi
   
 2.  En el panel tipos de proyecto, abra el **Visual Basic**, **Visual C#**, o **Visual C++** nodo, a continuación,  
   
-    1.  Para Visual Basic o Visual C#, seleccione la **Windows** nodo, a continuación, seleccione **aplicación de Windows Forms** en el **plantillas** panel.  
+    1.  Para Visual Basic o Visual C#, seleccione **Windows Desktop** > **aplicación de formulario de Windows**.  
   
-    2.  Para Visual C++, seleccione el **CLR** nodo, a continuación, seleccione **aplicación de Windows Forms** en el **plantillas** panel...  
+    2.  Para Visual C++, seleccione **aplicación de escritorio de Windows**.  
   
-3.  En el **plantillas** panel, seleccione **aplicación de Windows**.  
+3.  En el **nombre** cuadro, asigne al proyecto un nombre único (por ejemplo, Walkthrough_SimpleDebug).  
   
-4.  En el **nombre** cuadro, asigne al proyecto un nombre único (por ejemplo, Walkthrough_SimpleDebug).  
+4.  Haga clic en **Aceptar**.  
   
-5.  Haga clic en **Aceptar**.  
+     Visual Studio crea un proyecto nuevo y muestra un formulario nuevo en el Diseñador de Windows Forms. Para obtener más información, consulte [Diseñador de Windows Forms](/previous-versions/visualstudio/visual-studio-2010/e06hs424\(v\=vs.100\)).  
   
-     Visual Studio crea un proyecto nuevo y muestra un formulario nuevo en el Diseñador de Windows Forms. Para obtener más información, consulte [Diseñador de Windows Forms](http://msdn.microsoft.com/en-us/3c3d61f8-f36c-4d41-b9c3-398376fabb15).  
-  
-6.  En el **vista** menú, seleccione **cuadro de herramientas**.  
+5.  En el **vista** menú, seleccione **cuadro de herramientas**.  
   
      Se abrirá el Cuadro de herramientas. Para obtener más información, vea [Cuadro de herramientas](../ide/reference/toolbox.md).  
   
-7.  En el cuadro de herramientas, haga clic en el **botón** controlar y arrastre el control a la superficie de diseño del formulario. Coloque el botón en el formulario.  
+6.  En el cuadro de herramientas, haga clic en el **botón** control y arrastre el control a la superficie de diseño del formulario. Coloque el botón en el formulario.  
   
-8.  En el cuadro de herramientas, haga clic en el **TextBox** controlar y arrastre el control a la superficie de diseño del formulario. Quitar el **cuadro de texto** en el formulario.  
+7.  En el cuadro de herramientas, haga clic en el **TextBox** control y arrastre el control a la superficie de diseño del formulario. Quitar el **TextBox** en el formulario.  
   
-9. En la superficie de diseño del formulario, haga doble clic en el botón.  
+8. En la superficie de diseño del formulario, haga doble clic en el botón.  
   
      Esto le lleva a la página de códigos. El cursor debe estar en `button1_Click`.  
   
 10. Agregue el código siguiente a la función `button1_Click`:  
   
+    ```vb  
+    textBox1.Text = "Button was clicked!"
     ```  
-    ' Visual Basic  
-    textBox1.Text = "Button was clicked!"  
   
-    // C#  
-    textBox1.Text = "Button was clicked!";  
+    ```csharp 
+    textBox1.Text = "Button was clicked!";
+    ```  
   
-    // C++  
+    ```cpp  
     textBox1->Text = "Button was clicked!";  
     ```  
   
@@ -98,21 +98,22 @@ Un Windows Form es una de las aplicaciones administradas más comunes. Con un Wi
   
 1.  En la ventana de código fuente, haga clic en el margen izquierdo en la misma línea que el texto que agregó:  
   
+     ```vb  
+    textBox1.Text = "Button was clicked!"
     ```  
-    ' Visual Basic  
-    textBox1.Text = "Button was clicked!"  
   
-    // C#  
-    textBox1.Text = "Button was clicked!";  
+    ```csharp 
+    textBox1.Text = "Button was clicked!";
+    ```  
   
-    // C++  
+    ```cpp  
     textBox1->Text = "Button was clicked!";  
-    ```  
+    ``` 
   
-     Aparecerá un punto rojo y el texto de la línea se resaltará en rojo. El punto rojo representa un punto de interrupción. Para obtener más información, consulte [puntos de interrupción](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583). Cuando ejecute la aplicación en el depurador, este interrumpirá la ejecución del código en la posición donde encuentre un punto de interrupción. Esto le permite ver el estado de la aplicación y depurarla.  
+     Aparecerá un punto rojo y el texto de la línea se resaltará en rojo. El punto rojo representa un punto de interrupción. Para obtener más información, consulte [puntos de interrupción](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). Cuando ejecute la aplicación en el depurador, este interrumpirá la ejecución del código en la posición donde encuentre un punto de interrupción. Esto le permite ver el estado de la aplicación y depurarla.  
   
     > [!NOTE]
-    >  También puede haga clic en cualquier línea de código, seleccionar **punto de interrupción**y, a continuación, haga clic en **Insertar punto de interrupción** para agregar un punto de interrupción en esa línea.  
+    >  También puede haga clic en cualquier línea de código, apunte a **punto de interrupción**y, a continuación, haga clic en **Insertar punto de interrupción** para agregar un punto de interrupción en esa línea.  
   
 2.  EN el **depurar** menú, elija **iniciar**.  
   
@@ -124,21 +125,17 @@ Un Windows Form es una de las aplicaciones administradas más comunes. Con un Wi
   
 4.  En el **depurar** menú, elija **Windows**, a continuación, **inspección**y haga clic en **Inspección1**.  
   
-5.  En el **Inspección1** ventana, haga clic en una fila en blanco. En el **nombre** columna, escriba `textBox1.Text` (si se utiliza Visual Basic o Visual C#) o `textBox1->Text` (si usas C++), a continuación, presione ENTRAR.  
+5.  En el **Inspección1** ventana, haga clic en una fila en blanco. En el **nombre** columna, escriba `textBox1.Text` (si utiliza Visual Basic o Visual C#) o `textBox1->Text` (si usas C++), a continuación, presione ENTRAR.  
   
      El **Inspección1** ventana muestra el valor de esta variable entre comillas:  
   
-    ```  
-    ""  
-    ```  
-  
+    `""`  
+ 
 6.  En el **depurar** menú, elija **paso a paso**.  
   
-     El valor de textBox1.Text cambia en la **Inspección1** ventana para:  
+     El valor de textBox1.Text cambia en el **Inspección1** ventana para:  
   
-    ```  
-    Button was clicked!  
-    ```  
+    `Button was clicked!`  
   
 7.  En el **depurar** menú, elija **continuar** para reanudar la depuración del programa.  
   
@@ -159,33 +156,33 @@ Un Windows Form es una de las aplicaciones administradas más comunes. Con un Wi
   
 1.  En el proyecto creado anteriormente, haga clic en el margen izquierdo para volver a establecer un punto de interrupción en la línea agregada:  
   
-    ```  
-    ' Visual Basic  
-    textBox1.Text = "Button was clicked!"  
-  
-    // C#  
-    textBox1.Text = "Button was clicked!"  
-  
-    // C++  
-    textBox1->Text = "Button was clicked!";  
+     ```vb  
+    textBox1.Text = "Button was clicked!"
     ```  
   
-2.  En el **depurar** menú, seleccione **iniciar sin depurar**.  
+    ```csharp 
+    textBox1.Text = "Button was clicked!";
+    ```  
   
-     El Windows Form comenzará su ejecución en Windows, como si se hubiera hecho doble clic en su archivo ejecutable. El depurador no se ha asociado.  
+    ```cpp  
+    textBox1->Text = "Button was clicked!";   
   
-3.  En el **depurar** menú, seleccione **adjuntar al proceso**. (Este comando también está disponible en la **herramientas** menú.)  
+2.  On the **Debug** menu, select **Start Without Debugging**.  
   
-     Aparecerá el cuadro de diálogo **Asociar al proceso** .  
+     The Windows Form starts running under Windows, just as if you had double-clicked its executable. The debugger is not attached.  
   
-4.  En el **procesos disponibles** panel, busque el nombre del proceso (Walkthrough_SimpleDebug.exe) en la **proceso** columna y haga clic en él.  
+3.  On the **Debug** menu, select **Attach to Process**. (This command is also available on the **Tools** menu.)  
   
-5.  Haga clic en el **adjuntar** botón.  
+     The **Attach to Process** dialog box appears.  
   
-6.  En el Windows Form, haga clic en el único botón.  
+4.  In the **Available Processes** pane, find the process name (Walkthrough_SimpleDebug.exe) in the **Process** column and click it.  
   
-     El depurador interrumpe la ejecución del Windows Form en el punto de interrupción.  
+5.  Click the **Attach** button.  
   
-## <a name="see-also"></a>Vea también  
- [Depurar código administrado](../debugger/debugging-managed-code.md)   
- [Seguridad del depurador](../debugger/debugger-security.md)
+6.  In your Windows Form, click the one and only button.  
+  
+     The debugger breaks execution of the Windows Form at the breakpoint.  
+  
+## See Also  
+ [Debugging Managed Code](../debugger/debugging-managed-code.md)   
+ [Debugger Security](../debugger/debugger-security.md)

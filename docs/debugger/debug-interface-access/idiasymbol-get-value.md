@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_value | Documentos de Microsoft'
+title: Get_value | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9a6249506356f586a2e00d2b2c2bf73eb0283c0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 23fb08303840c8d90644a292cac8832e29641246
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863742"
 ---
 # <a name="idiasymbolgetvalue"></a>IDiaSymbol::get_value
 Recupera el valor de una constante.  
@@ -33,10 +34,10 @@ HRESULT get_value (
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [entrada, salida] Un `VARIANT` objeto que se rellena con el valor de una constante.  
+ [in, out] Un `VARIANT` objeto que se rellena con el valor de una constante.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  

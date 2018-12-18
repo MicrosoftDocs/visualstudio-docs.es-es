@@ -1,7 +1,7 @@
 ---
-title: Crear una prueba de servicio web en Visual Studio | Microsoft Docs
+title: Crear una prueba de servicio web en Visual Studio
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Web performance tests, creating Web service tests
 - Web services [Visual Studio ALM], creating
@@ -9,39 +9,43 @@ helpviewer_keywords:
 ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b7d7a864b7fc62527bdd2593523ccdc91bf913aa
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 12b01e8428c35874f4a913c846f57f89a02162c6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894474"
 ---
-# <a name="how-to-create-a-web-service-test"></a>Cómo: Crear una prueba de servicios Web
+# <a name="how-to-create-a-web-service-test"></a>Cómo: Crear una prueba de servicios web
 
-Para probar servicios Web, puede utilizar una prueba de rendimiento web. Las opciones **Insertar solicitud** e **Insertar solicitud de servicio web** permiten personalizar las solicitudes individuales del **Editor de pruebas de rendimiento web** para buscar páginas de servicios web. Normalmente, estas páginas no se muestran en la aplicación Web. Por consiguiente, debe personalizar la solicitud para obtener acceso a estas páginas.
+Para probar servicios web, puede utilizar una prueba de rendimiento web. Las opciones **Insertar solicitud** e **Insertar solicitud de servicio web** permiten personalizar las solicitudes individuales del **Editor de pruebas de rendimiento web** para buscar páginas de servicios web. Normalmente, estas páginas no se muestran en la aplicación web. Por consiguiente, debe personalizar la solicitud para obtener acceso a estas páginas.
 
-Los procedimientos que se muestran a continuación utilizan un servicio Web que está incluido dentro del Commerce Starter Kit. Puede descargarlo desde [ASP.NET Commerce Starter Kit](http://go.microsoft.com/fwlink/?LinkId=181469).
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- **Requisitos**
+Los procedimientos que se muestran a continuación utilizan un servicio web que está incluido dentro del Commerce Starter Kit. Puede descargarlo desde [ASP.NET commerce starter kit](http://go.microsoft.com/fwlink/?LinkId=181469).
 
--   Visual Studio Enterprise
+**Requisitos**
 
-## <a name="to-test-a-web-service"></a>Para probar un servicio Web
+Visual Studio Enterprise
+
+## <a name="to-test-a-web-service"></a>Para probar un servicio web
 
 1.  Cree una nueva prueba de rendimiento web. En cuanto se abra el explorador, elija **Detener**.
 
 2.  En el **Editor de pruebas de rendimiento web**, haga clic con el botón derecho en la prueba de rendimiento web y seleccione **Agregar solicitud de servicio web**.
 
-3.  En la propiedad **URL** de la nueva solicitud, escriba el nombre del servicio web, por ejemplo, **http://localhost/storecsvs/InstantOrder.asmx**.
+3.  En la propiedad **Url** de la nueva solicitud, escriba el nombre del servicio web, por ejemplo, **http://localhost/storecsvs/InstantOrder.asmx**.
 
-4.  Abra una sesión independiente del explorador y escriba la dirección URL de la página .asmx en la barra de herramientas **Dirección**. Seleccione el método que desee probar y examine el mensaje SOAP. Contiene una `SOAPAction`.
+4.  Abra una sesión independiente del explorador y escriba la dirección URL de la página *.asmx* en la barra de herramientas **Dirección**. Seleccione el método que desee probar y examine el mensaje SOAP. Contiene una `SOAPAction`.
 
 5.  En el **Editor de pruebas de rendimiento web**, haga clic con el botón derecho en la solicitud y seleccione **Agregar encabezado** para agregar un nuevo encabezado. En la propiedad **Nombre**, escriba `SOAPAction`. En la propiedad **Valor**, escriba el valor que vea en `SOAPAction`, por ejemplo, `"http://tempuri.org/CheckStatus"`.
 
 6.  Expanda el nodo URL en el editor, elija el nodo **Texto de la cadena** y, en la propiedad **Tipo de contenido**, escriba el valor `text/xml`.
 
-7.  Vuelva al explorador del paso 4, seleccione la parte XML de la solicitud SOAP desde la página de descripción del servicio Web y cópiela en el Portapapeles.
+7.  Vuelva al explorador del paso 4, seleccione la parte XML de la solicitud SOAP desde la página de descripción del servicio web y cópiela en el Portapapeles.
 
 8.  El contenido XML presenta un aspecto similar al del siguiente ejemplo:
 
@@ -58,18 +62,18 @@ Los procedimientos que se muestran a continuación utilizan un servicio Web que 
      </soap:Envelope>
      ```
 
-9. Vuelva al **Editor de pruebas de rendimiento web** y, luego, elija los puntos suspensivos (…) en la propiedad **Texto de la cadena**. Pegue el contenido del Portapapeles en la propiedad.
+9. Vuelva al **Editor de pruebas de rendimiento web** y haga clic en los puntos suspensivos **(…)** en la propiedad **Texto de la cadena**. Pegue el contenido del Portapapeles en la propiedad.
 
-10. Debe reemplazar cualquier valor de marcador de posición del contenido XML por valores válidos para que la prueba se supere. En el ejemplo anterior, reemplazaría las dos instancias de `string` y un `int`. Esta operación del servicio Web sólo finalizará si hay un usuario registrado que ha hecho un pedido.
+10. Debe reemplazar cualquier valor de marcador de posición del contenido XML por valores válidos para que la prueba se supere. En el ejemplo anterior, reemplazaría las dos instancias de `string` y un `int`. Esta operación del servicio web sólo finaliza si hay un usuario registrado que ha hecho un pedido.
 
 11. Haga clic con el botón derecho en la solicitud de servicio web y seleccione **Agregar parámetro QueryString de dirección URL**.
 
-12. Asigne un nombre y un valor al parámetro de cadena de consulta. En el ejemplo anterior, el nombre es `op` y el valor es `CheckStatus`. Esto identifica la operación del servicio Web que se va a realizar.
+12. Asigne un nombre y un valor al parámetro de cadena de consulta. En el ejemplo anterior, el nombre es `op` y el valor es `CheckStatus`. Esta información identifica la operación del servicio web que se va a realizar.
 
     > [!NOTE]
     > Puede usar enlaces de datos en el cuerpo SOAP para reemplazar cualquier valor de marcador de posición por valores enlazados a datos mediante la sintaxis `{{DataSourceName.TableName.ColumnName}}`.
 
-13. Ejecute la prueba. En el panel superior del Visor de resultados de pruebas de rendimiento web, seleccione la solicitud de servicio Web. En el panel inferior, seleccione la ficha Explorador Web. Se mostrará el XML devuelto por el servicio Web, así como los resultados de cualquier operación realizada.
+13. Ejecute la prueba. En el panel superior del **Visor de resultados de pruebas de rendimiento web**, seleccione la solicitud de servicio web. En el panel inferior, seleccione la pestaña Explorador web. Se mostrará el XML devuelto por el servicio web, así como los resultados de cualquier operación realizada.
 
 ## <a name="see-also"></a>Vea también
 

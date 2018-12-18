@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471813"
 ---
 # <a name="udt"></a>UDT
 Cada clase, estructura y unión se identifican mediante un `SymTagUDT` símbolos. Cada miembro, función, datos, o tipo anidado y cada clase base, aparece como un elemento secundario de clase del tipo definido por el usuario (UDT).  

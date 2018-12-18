@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 264ef65472bf3d003852f2f7efc0fe21ee45d2a1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4de13e9763cfed74c2b7dbbbb58ac80610501ace
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926090"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
-Asocia un motor de depuración (Alemania) a un programa o programas. Llamado por el Administrador de sesión de depuración (SDM) cuando el Alemania se está ejecutando en proceso para el SDM.  
+Asocia un motor de depuración (DE) a un programa o programas. Llamado por el Administrador de depuración de la sesión (SDM) cuando la DE se está ejecutando en proceso en el SDM.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -51,7 +52,7 @@ int Attach(
  [in] Una matriz de [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objetos que representan los programas que se adjuntará a. Se trata de programas de puerto.  
   
  `rgpProgramNodes`  
- [in] Una matriz de [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objetos que representan los nodos de programa, uno por cada programa. Los nodos de programa en esta matriz representan los mismos programas como en `pProgram`. Los nodos de programa se proporcionan para que la DE puede identificar los programas para adjuntar a.  
+ [in] Una matriz de [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objetos que representan nodos de programa, uno para cada programa. Los nodos de programa en esta matriz representan los mismos programas como en `pProgram`. Los nodos de programa se proporcionan para que la DE pueda identificar los programas para adjuntar a.  
   
  `celtPrograms`  
  [in] Número de programas o nodos de programa en el `pProgram` y `rgpProgramNodes` matrices.  
@@ -63,30 +64,30 @@ int Attach(
  [in] Un valor de la [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) enumeración que especifica la razón para asociar estos programas. Para obtener más información, vea la sección Comentarios.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Hay tres razones para asociarse a un programa, como se indica a continuación:  
+ Existen tres razones para adjuntar a un programa, como sigue:  
   
--   `ATTACH_REASON_LAUNCH` indica que se está asociando el Alemania al programa porque el usuario inicia el proceso que lo contiene.  
+- `ATTACH_REASON_LAUNCH` indica que la DE está asociando al programa porque el usuario inicia el proceso que lo contiene.  
   
--   `ATTACH_REASON_USER` indica que el usuario ha solicitado explícitamente la DE para adjuntar a un programa (o el proceso que contiene un programa).  
+- `ATTACH_REASON_USER` indica que el usuario ha solicitado explícitamente la DE para adjuntar a un programa (o el proceso que contiene un programa).  
   
--   `ATTACH_REASON_AUTO` indica que se está asociando el Alemania a un programa en particular porque está realizando la depuración de otros programas en un proceso determinado. También se denomina asociación automática.  
+- `ATTACH_REASON_AUTO` indica que la DE consiste en conectar a un determinado programa porque ya se está depurando otros programas en un proceso determinado. Esto también se denomina asociación automática.  
   
- Cuando se llama a este método, la DE necesita enviar estos eventos en secuencia:  
+  Cuando se llama a este método, la DE necesita enviar estos eventos en secuencia:  
   
-1.  [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) (si todavía no se ha enviado a una instancia determinada del motor de depuración)  
+1. [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) (si aún no ya se ha enviado para una instancia determinada del motor de depuración)  
   
-2.  [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)  
+2. [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)  
   
-3.  [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)  
+3. [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)  
   
- Además, si es el motivo para adjuntar `ATTACH_REASON_LAUNCH`, debe enviar la DE la [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) eventos.  
+   Además, si es la razón para adjuntar `ATTACH_REASON_LAUNCH`, debe enviar la DE la [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) eventos.  
   
- Una vez los obtiene DE la [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objeto correspondiente al programa que se está depurando, se puede consultar para cualquier interfaz privada.  
+   Una vez que el obtiene DE la [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objeto correspondiente al programa que se está depurando, se puede consultar para cualquier interfaz privada.  
   
- Antes de llamar a los métodos de un nodo de programa en la matriz proporcionada por `pProgram` o `rgpProgramNodes`, suplantación, si es necesario, debe estar habilitada en el `IDebugProgram2` interfaz que representa el nodo de programa. Normalmente, sin embargo, este paso no es necesario. Para obtener más información, consulte [problemas de seguridad](../../../extensibility/debugger/security-issues.md).  
+   Antes de llamar a los métodos de un nodo de programa en la matriz proporcionada por `pProgram` o `rgpProgramNodes`, suplantación, si es necesario, debe estar habilitada en el `IDebugProgram2` interfaz que representa el nodo del programa. Normalmente, sin embargo, este paso no es necesario. Para obtener más información, consulte [problemas de seguridad](../../../extensibility/debugger/security-issues.md).  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   

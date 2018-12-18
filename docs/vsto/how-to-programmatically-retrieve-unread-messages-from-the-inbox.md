@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: recuperar mensajes no leídos de la Bandeja de entrada mediante programación | Documentos de Microsoft'
+title: 'Cómo: recuperar mensajes sin leer de la Bandeja de entrada mediante programación'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,14 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ec08c95a0543ab6ec47c0bded8126c6c2030c87e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3442ecd10bc18e0336542ce2b8396b8b7f654b78
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675140"
 ---
-# <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>Cómo: Recuperar mensajes sin leer de la Bandeja de entrada mediante programación
-  Este ejemplo recupera los mensajes de correo electrónico sin leer de la **Bandeja de entrada** de Outlook, y muestra el número de elementos.  
+# <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>Cómo: recuperar mensajes sin leer de la Bandeja de entrada mediante programación
+  En este ejemplo recupera los mensajes de correo electrónico no leídos de la de Outlook **Bandeja de entrada** y muestra el número de elementos.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -35,9 +36,9 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Vea también  
  [Trabajar con elementos de correo](../vsto/working-with-mail-items.md)   
- [Getting Started Programming VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)   
+ [Empezar a programar complementos de VSTO](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Cómo: crear un elemento de correo electrónico mediante programación](../vsto/how-to-programmatically-create-an-e-mail-item.md)   
- [Cómo: enviar un correo electrónico mediante programación](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
- [Cómo: Realizar acciones al recibir un mensaje de correo mediante programación](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  
+ [Cómo: enviar correo electrónico](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
+ [Cómo: realizar acciones mediante programación cuando se recibe un mensaje de correo electrónico](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  
   
   

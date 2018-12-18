@@ -1,11 +1,11 @@
 ---
 title: IActiveScript::AddNamedItem | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScript.AddNamedItem
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - AddNamedItem method, IActiveScript interface
 ms.assetid: a7c6317d-948f-4bb3-b169-1bbe5b7c7cc5
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24642025"
 ---
 # <a name="iactivescriptaddnameditem"></a>IActiveScript::AddNamedItem
 Agrega el nombre de un elemento de nivel de raíz al espacio de nombres del motor de scripting. Un elemento de nivel raíz es un objeto con propiedades y métodos, un origen de eventos o los tres.  

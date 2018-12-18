@@ -1,9 +1,9 @@
 ---
-title: Conmutador /setup devenv.exe | Microsoft Docs
+title: Conmutador /setup devenv.exe
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - setup Devenv switch
 - /setup Devenv switch
@@ -11,11 +11,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: eee6e30a7489f5097cb17a19513c2a423187c827
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eca577c0e4646821262c953cf48256937eed386c
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948381"
 ---
 # <a name="setup-devenvexe"></a>/Setup (devenv.exe)
 
@@ -44,4 +45,4 @@ devenv /setup
 
 ## <a name="see-also"></a>Vea también
 
-[Modificadores de línea de comandos para Devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Modificadores de línea de comandos para Devenv](../../ide/reference/devenv-command-line-switches.md)

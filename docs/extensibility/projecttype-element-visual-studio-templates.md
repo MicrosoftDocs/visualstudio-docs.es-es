@@ -1,5 +1,5 @@
 ---
-title: ProjectType (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
+title: ProjectType (elemento) (plantillas de Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,17 +15,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb16116994648ec70c770af7ca4932cd1443bd30
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 14726d5338830eb4044d22778d886241cfd0cd83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921137"
 ---
-# <a name="projecttype-element-visual-studio-templates"></a>ProjectType (Elemento, Plantillas de Visual Studio)
-Clasifica la plantilla de proyecto para que aparezca bajo el grupo especificado en el **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.  
+# <a name="projecttype-element-visual-studio-templates"></a>ProjectType (elemento) (plantillas de Visual Studio)
+Clasifica la plantilla de proyecto para que aparezca en el grupo especificado en el **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.  
   
 > [!WARNING]
->  Se admiten plantillas de proyecto de C++ a partir de Visual Studio 2012. No se admiten para C++ en Visual Studio 2010 y versiones anteriores.  
+>  Se admiten las plantillas de proyecto de C++ a partir de Visual Studio 2012. No se admiten para C++ en Visual Studio 2010 y versiones anteriores.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -33,7 +34,7 @@ Clasifica la plantilla de proyecto para que aparezca bajo el grupo especificado 
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```xml  
 <ProjectType> CSharp/VisualBasic/VC/Web </ProjectType>  
 ```  
   
@@ -55,23 +56,23 @@ Clasifica la plantilla de proyecto para que aparezca bajo el grupo especificado 
 ## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto.  
   
- Este valor especifica el tipo de la plantilla de proyecto, se creará y debe contener uno de los siguientes valores:  
+ Este valor especifica el tipo de la plantilla de proyecto se creará y debe contener uno de los siguientes valores:  
   
--   `CSharp`: Especifica que la plantilla crea una [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] proyecto o un elemento.  
+- `CSharp`: Especifica que la plantilla crea un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] proyecto o elemento.  
   
--   `VisualBasic`: Especifica que la plantilla crea una [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] proyecto o un elemento.  
+- `VisualBasic`: Especifica que la plantilla crea un [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] proyecto o elemento.  
   
--   `Web`: Especifica que la plantilla crea un proyecto o elemento Web. Si el `ProjectType` elemento contiene este valor, el lenguaje del proyecto o elemento se define en el [ProjectSubType Element (Visual Studio Templates)](../extensibility/projectsubtype-element-visual-studio-templates.md).  
+- `Web`: Especifica que la plantilla crea un proyecto o elemento Web. Si el `ProjectType` elemento contiene este valor, el lenguaje del proyecto o elemento se define en el [ProjectSubType Element (Visual Studio Templates)](../extensibility/projectsubtype-element-visual-studio-templates.md).  
   
 ## <a name="remarks"></a>Comentarios  
  `ProjectType` es un elemento secundario obligatorio de `TemplateData`.  
   
- El valor de la `ProjectType` elemento especifica dónde se encuentra la plantilla en el **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo. Por ejemplo, una plantilla con un `ProjectType` valo `CSharp` aparece bajo la **Visual C#** nodo en el **nuevo proyecto** cuadro de diálogo.  
+ El valor de la `ProjectType` elemento especifica dónde se encuentra la plantilla en el **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo. Por ejemplo, una plantilla con un `ProjectType` valor de `CSharp` aparece bajo el **Visual C#** nodo en el **nuevo proyecto** cuadro de diálogo.  
   
- Un subtipo de plantilla puede especificarse mediante la [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) elemento.  
+ Un subtipo de la plantilla puede especificarse mediante la [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) elemento.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra los metadatos de una plantilla de proyecto para una [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación.  
+ El ejemplo siguiente muestra los metadatos para una plantilla de proyecto para un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -99,5 +100,5 @@ Clasifica la plantilla de proyecto para que aparezca bajo el grupo especificado 
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
- [ProjectSubType (Elemento, Plantillas de proyecto de Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md)
+ [Crear plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)   
+ [ProjectSubType (elemento) (plantillas de Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md)

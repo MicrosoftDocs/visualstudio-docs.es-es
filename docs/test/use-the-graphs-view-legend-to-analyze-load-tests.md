@@ -1,5 +1,5 @@
 ---
-title: Usar la leyenda de la vista Diagramas para analizar pruebas de carga en Visual Studio | Microsoft Docs
+title: Uso de la leyenda de la vista Diagramas para analizar pruebas de carga en Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,18 +9,22 @@ ms.assetid: 0f6ba8e4-1343-419c-8a9f-240cf50efed7
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a6c14375d46c4317b86b9da67526230369cfbcb6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 082b3da934e602aef2f0c4eefcfffc45da2c40f0
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896086"
 ---
-# <a name="using-the-graphs-view-legend-to-analyze-load-tests"></a>Usar la leyenda de la vista Diagramas para analizar pruebas de carga
+# <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>Usar la leyenda de la vista Gráficos para analizar pruebas de carga
 
 La vista Gráficos del Analizador de prueba de carga incluye un panel de leyenda con información sobre cada contador de rendimiento asociado al gráfico seleccionado.
 
-![Leyenda de la vista Gráficos](../test/media/load_viewlegend.png "Load_ViewLegend")
+![Leyenda de la vista de gráficos](../test/media/load_viewlegend.png)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 La siguiente información se incluye en la leyenda:
 
@@ -29,18 +33,18 @@ La siguiente información se incluye en la leyenda:
 -   **Intervalo:** esta columna muestra el intervalo del eje Y del contador de rendimiento. De forma predeterminada, este valor se ajustará automáticamente cuando cambie el intervalo de los datos de ejemplo. Un intervalo ajustado automáticamente siempre será la potencia siguiente de 10 mayor que el valor máx; incluye potencias negativas de diez. Un gráfico puede contener varios contadores, cada uno con un intervalo diferente. Por consiguiente, el eje Y no se etiqueta con un intervalo concreto, sino que se etiqueta con valores de 0-100 que representan un porcentaje del intervalo total de cada contador. Por ejemplo, para un contador con un intervalo de 1000, un punto de datos de 60 en el eje Y corresponde a un valor de 600 del contador.
 
     > [!NOTE]
-    > Puede desactivar el ajuste del valor del rango automático bloqueando el intervalo en un valor concreto. Cuando se bloquea el intervalo, los valores que superen el intervalo se muestran como el valor máximo que especificó en la parte superior del gráfico. Use el cuadro de diálogo **Opciones de trazado** para bloquear el intervalo en un valor concreto. Para obtener más información, vea [Cómo: Especificar opciones de trazado para contadores de gráficos](../test/how-to-specify-plot-options-for-graphing-counters.md).
+    > Puede desactivar el ajuste del valor del rango automático bloqueando el intervalo en un valor concreto. Cuando se bloquea el intervalo, los valores que superen el intervalo se muestran como el valor máximo que especificó en la parte superior del gráfico. Use el cuadro de diálogo **Opciones de trazado** para bloquear el intervalo en un valor concreto.
 
 -   **Contador:** las cuatro columnas denominadas **Contador**, **Instancia**, **Categoría** y **Equipo** identifican el contador de rendimiento de manera única.
 
--   **Color:** la columna **Color** muestra el color y el estilo de la línea trazada para el contador de rendimiento. Use el cuadro de diálogo **Opciones de trazado** para cambiar el color o el estilo de línea de un contador de rendimiento en el gráfico. El cuadro de diálogo **Opciones de trazado** está disponible en el menú contextual de la leyenda. Para obtener más información, vea [Cómo: Especificar opciones de trazado para contadores de gráficos](../test/how-to-specify-plot-options-for-graphing-counters.md).
+-   **Color:** la columna **Color** muestra el color y el estilo de la línea trazada para el contador de rendimiento. Use el cuadro de diálogo **Opciones de trazado** para cambiar el color o el estilo de línea de un contador de rendimiento en el gráfico. El cuadro de diálogo **Opciones de trazado** está disponible en el menú contextual de la leyenda.
 
 -   **Estadísticas:** las columnas **Mín**, **Máx**, **Pro** y **Último** muestran las estadísticas respectivas del contador de rendimiento. Estos valores corresponden a los datos que se muestran en el área visible del gráfico. Por ejemplo, si hace zoom en el área de una ejecución, las estadísticas de la leyenda solo reflejarán los valores de esa área. La columna "Último" es el valor del contador de rendimiento en el último intervalo de muestreo completado.
 
     > [!NOTE]
     > La columna Último solo se muestra en el leyenda del Analizador de prueba de carga mientras la prueba se está ejecutando.
 
-     Para obtener más información, vea [Cómo: Acercar una región del gráfico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+     Para más información, consulte [Cómo: Acercar una región del gráfico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
 La selección de un elemento de la leyenda hace lo siguiente:
 
@@ -53,10 +57,9 @@ La selección de un elemento de la leyenda hace lo siguiente:
 -   Permite acceder al cuadro de diálogo **Opciones de trazado** del contador.
 
 > [!TIP]
-> Puede usar el botón desplegable **Opciones del gráfico** de la barra de herramientas del Analizador de pruebas de carga y seleccionar **Mostrar leyenda** para mostrar u ocultar el panel **Leyenda** asociado a la vista de gráfico.
+> Puede usar el botón desplegable **Opciones del gráfico** de la barra de herramientas del **Analizador de pruebas de carga** y seleccionar **Mostrar leyenda** para mostrar u ocultar el panel **Leyenda** asociado a la vista de gráfico.
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Especificar opciones de trazado para contadores de gráficos](../test/how-to-specify-plot-options-for-graphing-counters.md)
 - [Cómo: Acercar una región del gráfico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
 - [Analizar los resultados de pruebas de carga en la vista Gráficos](../test/analyze-load-test-results-in-the-graphs-view.md)

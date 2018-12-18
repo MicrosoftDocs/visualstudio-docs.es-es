@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_haseh | Documentos de Microsoft'
+title: Get_haseh | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,14 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0104afd4a84f8d6c50effee0b1cd552b952289c4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: de561482d0d6d98006fa8cda2299125be666f073
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917237"
 ---
 # <a name="idiasymbolgethaseh"></a>IDiaSymbol::get_hasEH
-Recupera una marca que especifica si la función contiene cualquier control de excepciones de tipo C++ no administrado (por ejemplo, un bloque try/catch).  
+Recupera una marca que especifica si la función contiene cualquier control de excepciones de estilo de C++ no administrado (por ejemplo, un bloque try/catch).  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -33,10 +34,10 @@ HRESULT get_hasEH(
   
 #### <a name="parameters"></a>Parámetros  
  `pFlag`  
- [out] Devuelve `TRUE` si la función no tiene ningún control de excepciones de tipo C++; en caso contrario, devuelve `FALSE`.  
+ [out] Devuelve `TRUE` si la función no tiene ningún control de excepciones de C++ estilo; en caso contrario, devuelve `FALSE`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
@@ -45,7 +46,7 @@ HRESULT get_hasEH(
   
 |Requisito|Descripción|  
 |-----------------|-----------------|  
-|Encabezado:|dia2.h|  
+|Encabezado:|Dia2.h|  
 |Versión:|SDK de DIA v8.0|  
   
 ## <a name="see-also"></a>Vea también  

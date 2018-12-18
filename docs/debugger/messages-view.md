@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477084"
 ---
 # <a name="messages-view"></a>Vista Mensajes
 Cada ventana tiene una secuencia de mensaje asociado. Esta secuencia de mensajes muestra en una ventana de vista de mensajes. Se muestran el identificador de ventana, el código de mensaje y el mensaje. Puede crear una vista de mensajes para un subproceso o proceso también. Esto permite ver los mensajes enviados a todas las ventanas que pertenecen a un proceso o subproceso concreto, que es especialmente útil para capturar mensajes de inicialización de la ventana.  

@@ -10,21 +10,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 58e4e43e66401323772dbb14a43c47f63004130d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 688b98baeec86b932e187cf27cd4661d45acf526
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220312"
 ---
-# <a name="profiling-aspnet-load-tests"></a>Generar perfiles para las pruebas de carga de ASP.NET
+# <a name="profile-aspnet-load-tests"></a>Generar perfiles para las pruebas de carga de ASP.NET
 Puede recopilar datos de generación de perfiles de pruebas web de [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] automatizadas que se ejecuten en proyectos de sitios web de ASP.NET. Puede recopilar datos de interacción de muestreo y de nivel. Para obtener más información, vea los temas siguientes:  
   
- [(NIB) Cómo: Ejecutar una sesión de rendimiento en una aplicación web desde el Editor de prueba de rendimiento web](http://msdn.microsoft.com/en-us/d14e0a27-33cc-4e4e-8792-fe03e50d51e1)  
+ [(NIB) Cómo: Ejecutar una sesión de rendimiento en una aplicación web desde el Editor de prueba de rendimiento web](https://msdn.microsoft.com/d14e0a27-33cc-4e4e-8792-fe03e50d51e1)
   
- [Cómo: Configurar el generador de perfiles ASP.NET para pruebas de carga mediante la configuración de pruebas en Visual Studio](http://msdn.microsoft.com/Library/6832fe39-04d5-4d94-8a18-3e2730bad423)  
+ [Cómo: Configurar el generador de perfiles ASP.NET para pruebas de carga mediante la configuración de pruebas en Visual Studio](https://msdn.microsoft.com/Library/6832fe39-04d5-4d94-8a18-3e2730bad423)  
   
 ## <a name="see-also"></a>Vea también  
  [Introducción a los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)   
- [Usar reglas de rendimiento para analizar datos](../profiling/using-performance-rules-to-analyze-data.md)   
+ [Usar reglas de rendimiento para el análisis de datos](../profiling/using-performance-rules-to-analyze-data.md)   
  [Vistas de datos del método de muestreo](../profiling/profiler-sampling-method-data-views.md)   
- [Vista Interacciones de capas](../profiling/tier-interactions-view.md)
+ [Interacciones de capas (vista)](../profiling/tier-interactions-view.md)

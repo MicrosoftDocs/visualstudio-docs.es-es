@@ -14,14 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb49d47dbd01b1d84228e1f01dc4cbf7f49dfc8d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 223535ef0b90869db191327abc7a757b5b79ae6b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669375"
 ---
-# <a name="utilization-view"></a>Vista de utilización
-La **Vista de utilización** muestra información acerca de la CPU, la GPU y otros recursos del sistema que el proceso actual usa (elija **Analizar** > **Visualizador de simultaneidad** para iniciar el visualizador de simultaneidad). Muestra el uso de núcleo promedio por el proceso analizado, el proceso inactivo, el proceso del sistema y otros procesos que se ejecutan en el sistema a lo largo del tiempo. No muestra qué núcleo concreto está activo en un momento dado. Por ejemplo, si dos núcleos se ejecutan al 50 por ciento de su capacidad durante un período de tiempo determinado, esta vista muestra que se está utilizando un núcleo lógico. La vista se genera al dividir el tiempo de generación de perfiles en segmentos de tiempo cortos. Para cada segmento, el gráfico traza el promedio de subprocesos del proceso que se ejecutan en núcleos lógicos durante ese intervalo.  
+# <a name="utilization-view"></a>Vista Utilización
+La **vista Utilización** muestra información sobre la CPU, la GPU y otros recursos del sistema que el proceso actual usa (elija **Analizar** > **Visualizador de simultaneidad** para iniciar el visualizador de simultaneidad). Muestra el uso de núcleo promedio por el proceso analizado, el proceso inactivo, el proceso del sistema y otros procesos que se ejecutan en el sistema a lo largo del tiempo. No muestra qué núcleo concreto está activo en un momento dado. Por ejemplo, si dos núcleos se ejecutan al 50 por ciento de su capacidad durante un período de tiempo determinado, esta vista muestra que se está utilizando un núcleo lógico. La vista se genera al dividir el tiempo de generación de perfiles en segmentos de tiempo cortos. Para cada segmento, el gráfico traza el promedio de subprocesos del proceso que se ejecutan en núcleos lógicos durante ese intervalo.  
   
  ![Vista de utilización de CPU](../profiling/media/vsts_ppacpuutil.png "VSTS_PPAcpuUtil")  
   
@@ -46,9 +47,9 @@ La **Vista de utilización** muestra información acerca de la CPU, la GPU y otr
   
  Si utiliza la GPU mediante C++ AMP o DirectX, quizá le interese identificar el número de motores de GPU en uso o de áreas donde la GPU está inactiva de forma inesperada.  
   
-## <a name="zooming"></a>Zoom  
- Para ampliar el gráfico de utilización de CPU o el gráfico de actividad de GPU, seleccione una sección o utilice el control deslizante de zoom sobre el gráfico. La configuración de zoom se conserva cuando se cambia a otras vistas. Para reducir, use el control deslizante de zoom. También puede hacer zoom presionando Ctrl + rueda del mouse.  
+## <a name="zoom"></a>Zoom  
+ Para ampliar el gráfico de utilización de CPU o el gráfico de actividad de GPU, seleccione una sección o utilice el control deslizante de zoom sobre el gráfico. La configuración de zoom se conserva cuando se cambia a otras vistas. Para reducir, use el control deslizante de zoom. También puede hacer zoom si presiona **Ctrl**+**rueda del mouse**.  
   
 ## <a name="see-also"></a>Vea también  
  [Visualizador de simultaneidad](../profiling/concurrency-visualizer.md)   
- [Vista Núcleos](../profiling/cores-view.md)
+ [Vista de núcleos](../profiling/cores-view.md)

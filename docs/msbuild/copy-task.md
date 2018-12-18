@@ -23,19 +23,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cd3f7e6c5075ad024e227c847ff05f186f7b016
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0a261c6c692fe0a1bc08f185f0b37c73e8838375
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945928"
 ---
-# <a name="copy-task"></a>Copy (Tarea)
+# <a name="copy-task"></a>Copy (tarea)
 Copia los archivos en una nueva ubicación del sistema de archivos.  
   
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea `Copy` .  
   
-|Parámetro|Description|  
+|Parámetro|Descripción|  
 |---------------|-----------------|  
 |`CopiedFiles`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene los elementos que se copiaron correctamente.|  
 |`DestinationFiles`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica la lista de archivos en la que se copiarán los archivos de código fuente. Se espera que esta lista sea una asignación unívoca con la lista especificada en el parámetro `SourceFiles`. Es decir, el primer archivo especificado en `SourceFiles` se copiará en la primera ubicación especificada en `DestinationFiles`, etc.|  
@@ -43,7 +44,7 @@ Copia los archivos en una nueva ubicación del sistema de archivos.
 |`OverwriteReadOnlyFiles`|Parámetro `Boolean` opcional.<br /><br /> Sobrescribe los archivos aunque estén marcados como archivos de solo lectura|  
 |`Retries`|Parámetro `Int32` opcional.<br /><br /> Especifica cuántas veces se intentará copiar, si se produjera un error en todos los intentos anteriores. Se establece en cero de forma predeterminada.<br /><br /> **Nota:** El uso de reintentos puede enmascarar un problema de sincronización en el proceso de compilación.|  
 |`RetryDelayMilliseconds`|Parámetro `Int32` opcional.<br /><br /> Especifica el retraso entre los reintentos necesarios. Adopta como valor predeterminado el argumento RetryDelayMillisecondsDefault, que se pasa al constructor CopyTask.|  
-|`SkipUnchangedFiles`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, se omite la copia de los archivos sin modificar entre el origen y destino. La tarea `Copy` considera que los archivos están sin modificar si tienen el mismo tamaño y la misma hora de última modificación. **Nota:** Si se establece este parámetro como `true`, no debe usar el análisis de dependencias en el destino continente, ya que solo se ejecuta la tarea si las horas de última modificación de los archivos de origen son más recientes que las de los archivos de destino.|  
+|`SkipUnchangedFiles`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, se omite la copia de los archivos sin modificar entre el origen y destino. La tarea `Copy` considera que los archivos están sin modificar si tienen el mismo tamaño y la misma hora de última modificación. <br /><br /> **Nota:** Si se establece este parámetro como `true`, no debe usar el análisis de dependencias en el destino continente, ya que solo se ejecuta la tarea si las horas de última modificación de los archivos de origen son más recientes que las de los archivos de destino.|  
 |`SourceFiles`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica los archivos que se van a copiar.|  
 |`UseHardlinksIfPossible`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, crea vínculos físicos para los archivos copiados en lugar de copiar los archivos.|  
   
@@ -69,10 +70,10 @@ Copia los archivos en una nueva ubicación del sistema de archivos.
 ## <a name="remarks"></a>Comentarios  
  Se debe especificar el parámetro `DestinationFolder` o `DestinationFiles`, pero no ambos. Si se especifican los dos, la tarea produce un error y se registra un error.  
   
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension (Clase base)](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se copian los elementos de la colección de elementos `MySourceFiles` en la carpeta c:\MyProject\Destination.  
+ En el ejemplo siguiente se copian los elementos de la colección de elementos `MySourceFiles` en la carpeta *c:\MyProject\Destination*.  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -92,7 +93,7 @@ Copia los archivos en una nueva ubicación del sistema de archivos.
 ```  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra cómo hacer una copia recursiva. Este proyecto copia de forma recursiva todos los archivos de c:\MySourceTree a c:\MyDestinationTree, manteniendo la estructura de directorios.  
+ En el ejemplo siguiente se muestra cómo hacer una copia recursiva. Este proyecto copia de forma recursiva todos los archivos de *c:\MySourceTree* en *c:\MyDestinationTree*, manteniendo la estructura de directorios.  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  

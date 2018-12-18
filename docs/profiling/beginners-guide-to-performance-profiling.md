@@ -1,6 +1,7 @@
 ---
-title: Generar perfiles de rendimiento de la aplicación en Visual Studio | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Medición del uso de CPU en las aplicaciones
+description: Analice los problemas de rendimiento de CPU en la aplicación mediante las herramientas de diagnóstico integradas del depurador.
+ms.custom: mvc
 ms.date: 02/27/2017
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -17,27 +18,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4415956aaa819881584b4298285ff878c1d7ccf
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 966697652e969c3d6de9f3c17f52f88e84c89bb8
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220682"
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>Generar perfiles de rendimiento de la aplicación en Visual Studio
 Puede utilizar las herramientas de generación de perfiles de Visual Studio para analizar problemas de rendimiento en su aplicación. Este procedimiento muestra cómo utilizar la pestaña **Uso de CPU** de las herramientas de diagnóstico para obtener datos de rendimiento para la aplicación. Se admiten las herramientas de diagnóstico para el desarrollo de .NET en Visual Studio, incluido ASP.NET, y para el desarrollo nativo de C++.
   
 Cuando el depurador se detiene, la herramienta **Uso de CPU** recopila información sobre las funciones que se ejecutan en la aplicación. La herramienta enumera las funciones que realizaron trabajo y proporciona un gráfico de escala de tiempo que se puede utilizar para centrarse en segmentos específicos de la sesión de muestreo.
 
-El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y administrar la sesión de diagnóstico. Si **Uso de CPU** no le proporciona los datos que necesita, las [demás herramientas de generación de perfiles](../profiling/Profiling-Tools.md) proporcionan diferentes tipos de información que pueden resultarle útiles. En muchos casos, el cuello de botella de rendimiento de la aplicación puede no ser debido a la CPU, sino a la memoria, la representación de interfaz de usuario o el tiempo de solicitud de red. El concentrador de diagnósticos le ofrece muchas más opciones para registrar y analizar este tipo de datos.
+El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y administrar la sesión de diagnóstico. Si **Uso de CPU** no le proporciona los datos que necesita, las [demás herramientas de generación de perfiles](../profiling/profiling-feature-tour.md) proporcionan diferentes tipos de información que pueden resultarle útiles. En muchos casos, el cuello de botella de rendimiento de la aplicación puede no ser debido a la CPU, sino a la memoria, la representación de interfaz de usuario o el tiempo de solicitud de red. El concentrador de diagnósticos le ofrece muchas más opciones para registrar y analizar este tipo de datos.
 
-|         |         |
+| | |
 |---------|---------|
-|  ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo")  |    [Vea un vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) sobre cómo usar las herramientas de diagnóstico que muestra cómo analizar el uso de CPU y cómo analizar el uso de memoria. |
+| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Vea un vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) sobre cómo usar las herramientas de diagnóstico que muestra cómo analizar el uso de CPU y cómo analizar el uso de memoria. |
 
-En este tema, trataremos de analizar el uso de CPU en el flujo de trabajo de depuración normal. También puede analizar el uso de CPU sin un depurador adjunto o tomando una aplicación en ejecución como destino. Para más información, consulte [Recopilar datos de generación de perfiles sin depurar](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) en [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+En este artículo, trataremos de analizar el uso de CPU en el flujo de trabajo de depuración normal. También puede analizar el uso de CPU sin un depurador adjunto o tomando una aplicación en ejecución como destino. Para más información, consulte [Recopilar datos de generación de perfiles sin depurar](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) en [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-> [!NOTE]
-> Para .NET Core y ASP.NET Core, la herramienta Uso de CPU actualmente no proporciona resultados precisos con PBD portátiles. Use PBD completos en su lugar.
+Las herramientas de generación de perfiles se pueden usar sin el depurador en Windows 7 y versiones posteriores. Para ejecutar las herramientas de generación de perfiles con el depurador se requiere Windows 8 y versiones posteriores (ventana **Herramientas de diagnóstico**).
 
 En este tutorial va a:
 
@@ -45,7 +46,7 @@ En este tutorial va a:
 > * Recopilar datos de Uso de CPU
 > * Analizar datos de uso de CPU
   
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Paso 1: Recopilar datos de generación de perfiles 
+## <a name="step-1-collect-profiling-data"></a>Paso 1: Recopilar datos de generación de perfiles 
   
 1.  Abra el proyecto que desee depurar en Visual Studio y establezca un punto de interrupción de la aplicación en el punto en que quiera examinar el uso de CPU.
 
@@ -54,21 +55,21 @@ En este tutorial va a:
     > [!TIP]
     > Al establecer dos puntos de interrupción, puede limitar la recopilación de datos a las partes del código que quiere analizar.
   
-3.  La ventana **Herramientas de diagnóstico** aparece automáticamente a no ser que la desactive. Para que la ventana se vuelva a mostrar, haga clic en **Depurar / Windows / Mostrar herramientas de diagnóstico**.
+3.  La ventana **Herramientas de diagnóstico** aparece automáticamente a no ser que la desactive. Para que la ventana se vuelva a mostrar, haga clic en **Depurar** > **Windows** > **Mostrar Herramientas de diagnóstico**.
 
-4.  Puede elegir si ve **Uso de CPU**, [Uso de memoria](../profiling/Memory-Usage.md) o ambos con el ajuste **Seleccionar herramientas** en la barra de herramientas. Si ejecuta Visual Studio Enterprise, también puede habilitar o desactivar IntelliTrace en **Herramientas / Opciones / IntelliTrace**.
+4.  Puede elegir si ve **Uso de CPU**, [Uso de memoria](../profiling/Memory-Usage.md) o ambos con el ajuste **Seleccionar herramientas** en la barra de herramientas. Si ejecuta Visual Studio Enterprise, puede habilitar o deshabilitar IntelliTrace en **Herramientas** > **Opciones** > **IntelliTrace**.
 
      ![Mostrar herramientas de diagnóstico](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
 
      Nos fijaremos principalmente en el uso de CPU, así que asegúrese de que **Uso de CPU** está habilitado (lo está de forma predeterminada).
 
-5.  Haga clic en **Depurar / Iniciar depuración** (o **Inicio** en la barra de herramientas o **F5**).
+5.  Haga clic en **Depurar** > **Iniciar depuración** (o en **Inicio** en la barra de herramientas, o presione **F5**).
 
      Cuando la aplicación finaliza la carga, se muestra la vista Resumen de las herramientas de diagnóstico.
 
      ![Pestaña Resumen de herramientas de diagnóstico](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
-     Para obtener más información sobre los eventos, consulte [Búsqueda y filtrado de la pestaña Eventos de la ventana de herramientas de diagnóstico](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx)
+     Para obtener más información sobre los eventos, vea [Searching and filtering the Events tab of the Diagnostic Tools window](https://blogs.msdn.microsoft.com/devops/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/) (Búsqueda y filtrado de la pestaña Eventos de la ventana de herramientas de diagnóstico).
 
 6.  Ejecute el escenario que hará que se alcance el primer punto de interrupción.
 
@@ -96,7 +97,7 @@ En este tutorial va a:
 
      En este punto, puede empezar a analizar los datos.
 
-## <a name="Step2"></a> Paso 2: Analizar datos de uso de CPU
+## <a name="step-2-analyze-cpu-usage-data"></a>Paso 2: Analizar datos de uso de CPU
 
 Se recomienda que, para empezar a analizar los datos, examine la lista de funciones de Uso de CPU, identifique las funciones que realizan la mayor parte del trabajo y, a continuación, observe detenidamente cada una de ellas.
 
@@ -130,7 +131,7 @@ Se recomienda que, para empezar a analizar los datos, examine la lista de funcio
 |||
 |-|-|
 |![Paso 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|El nodo de nivel superior de los árboles de llamadas de Uso de CPU es un pseudonodo|  
-|![Paso 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|En la mayoría de las aplicaciones, si la opción [Mostrar código externo](#BKMK_External_Code) está deshabilitada, el nodo de segundo nivel es un nodo **[Código externo]** que contiene el código del sistema y Framework que inicia y detiene la aplicación, dibuja la IU, controla la programación de subprocesos y ofrece otros servicios de bajo nivel a la aplicación.|  
+|![Paso 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|En la mayoría de las aplicaciones, si la opción [Mostrar código externo](#view-external-code) está deshabilitada, el nodo de segundo nivel es un nodo **[Código externo]** que contiene el código del sistema y Framework que inicia y detiene la aplicación, dibuja la IU, controla la programación de subprocesos y ofrece otros servicios de bajo nivel a la aplicación.|  
 |![Paso 3](../profiling/media/ProcGuid_3.png "ProcGuid_3")|Los elementos secundarios del nodo de segundo nivel son los métodos de código de usuario y las rutinas asíncronas llamados o creados por el sistema de segundo nivel y el código de Framework.|
 |![Paso 4](../profiling/media/ProcGuid_4.png "ProcGuid_4")|Los nodos secundarios de un método contienen datos únicamente de las llamadas del método principal. Cuando está deshabilitada la opción **Mostrar código externo** , los métodos de aplicación también pueden contener un nodo **[Código externo]** .|
 
@@ -142,9 +143,9 @@ Aquí encontrará más información sobre los valores de columna:
 
 - **Módulos** El nombre del módulo que contiene la función o el número de módulos que contienen las funciones en un nodo [Código externo].
 
-## <a name="BKMK_External_Code"></a>Ver código externo
+## <a name="view-external-code"></a>Ver código externo
 
-Código externo son funciones de los componentes del sistema y del marco que son ejecutadas por el código que usted escribe. El código externo incluye funciones que inician y detienen la aplicación, dibujan la UI, controlan los subprocesos y proporcionan otros servicios de bajo nivel a la aplicación. En la mayoría de los casos, no le interesará el código externo, por lo que la herramienta Uso de CPU reúne las funciones externas de un método de usuario en un nodo **[Código externo]**.
+El código externo son funciones de los componentes del sistema y del marco que son ejecutadas por el código que escribe. El código externo incluye funciones que inician y detienen la aplicación, dibujan la UI, controlan los subprocesos y proporcionan otros servicios de bajo nivel a la aplicación. En la mayoría de los casos, no le interesará el código externo, por lo que la herramienta Uso de CPU reúne las funciones externas de un método de usuario en un nodo **[Código externo]**.
   
 Si quiere ver las rutas de acceso a las llamadas de código externo, elija **Mostrar código externo** en la lista **Vista de filtro** y luego **Aplicar**.  
   
@@ -155,11 +156,11 @@ Tenga en cuenta que muchas cadenas de llamadas de código externo están profund
 Utilice el cuadro de búsqueda para localizar un nodo que esté buscando y, luego, utilice la barra de desplazamiento horizontal para visualizar los datos.
 
 > [!TIP]
-> Si genera perfiles de un código externo que llama a funciones de Windows, asegúrese de que dispone de los archivos .pdb más recientes. Sin estos archivos, las vistas de informe mostrarán nombres de funciones de Windows crípticos y difíciles de entender. Para obtener más información sobre cómo asegurarse de que tiene los archivos necesarios, consulte [Especificar archivos de símbolos (.pdb) y de origen en el depurador](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+> Si genera perfiles de un código externo que llama a funciones de Windows, asegúrese de que dispone de los archivos .*pdb* más recientes. Sin estos archivos, las vistas de informe mostrarán nombres de funciones de Windows crípticos y difíciles de entender. Para más información sobre cómo asegurarse de que tiene los archivos necesarios, consulte [Especificar archivos de símbolos (.pdb) y de código fuente en el depurador](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-En este tutorial, ha aprendido cómo recopilar y analizar los datos de uso de la CPU. Si ha completado el [paseo por el generador de perfiles](../profiling/profiling-feature-tour.md), puede que desee obtener una visión rápida de cómo analizar el uso de la memoria en las aplicaciones.
+En este tutorial, ha aprendido cómo recopilar y analizar los datos de uso de la CPU. Si ha completado el [primer vistazo a las herramientas de generación de perfiles](../profiling/profiling-feature-tour.md), puede que desee obtener una visión rápida de cómo analizar el uso de la memoria en las aplicaciones.
 
 > [!div class="nextstepaction"]
-> [Analizar el uso de memoria](../profiling/memory-usage.md) 
+> [Análisis del uso de memoria en Visual Studio](../profiling/memory-usage.md) 

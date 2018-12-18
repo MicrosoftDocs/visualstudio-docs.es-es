@@ -1,27 +1,25 @@
 ---
 title: Instalar los certificados necesarios para la instalación sin conexión de Visual Studio | Microsoft Docs
-description: Describe los pasos necesarios para instalar certificados para una instalación sin conexión de Visual Studio
+description: Obtenga información sobre cómo instalar certificados para una instalación sin conexión de Visual Studio.
 ms.date: 08/30/2017
-ms.reviewer: tims
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 9750A3F3-89C7-4A8F-BA75-B0B06BD772C2
-author: tglee
+author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 548e00743381e6a2c39d87d82c587b26f944702a
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 78e37097aa4181bec86ca901ab29dffa52b4d010
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886297"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalar los certificados necesarios para la instalación sin conexión de Visual Studio
 
@@ -36,6 +34,8 @@ Hay tres opciones para instalar o actualizar los certificados en un entorno sin 
 ### <a name="option-1---manually-install-certificates-from-a-layout-folder"></a>Opción 1: Instalar los certificados manualmente desde una carpeta de diseño
 
 Al crear un diseño de red, los certificados necesarios se descargan en la carpeta Certificados. Después, puede instalar manualmente los certificados haciendo doble clic en todos los archivos de certificado y recorriendo el asistente del Administrador de certificados. Si se le solicita una contraseña, déjela en blanco.
+
+**Actualización**: para Visual Studio 2017 versión 15.8 Preview 2 o versiones posteriores, puede instalar manualmente los certificados haciendo clic con el botón derecho en cada uno de los archivos de certificado, seleccionando Instalar certificado y, por último, haciendo clic en los sucesivos pasos del asistente Administrador de certificados.
 
 ### <a name="option-2---distribute-trusted-root-certificates-in-an-enterprise-environment"></a>Opción 2: Distribuir certificados raíz de confianza en un entorno empresarial
 
@@ -62,6 +62,15 @@ Si está creando el script de la implementación de Visual Studio en un entorno 
 
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
+   **Actualización**: para Visual Studio 2017 versión 15.8 Preview 2 o versiones posteriores, cree el archivo por lotes con los siguientes comandos:
+
+   ```cmd
+   certmgr.exe -add [layout path]\certificates\manifestSignCertificates.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
+
+   certmgr.exe -add [layout path]\certificates\manifestCounterSignCertificates.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
+
+   certmgr.exe -add [layout path]\certificates\vs_installer_opc.SignCertificates.cer -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
+   ```
 
 3. Implemente el archivo por lotes en el cliente. Este comando debe ejecutarse desde un proceso elevado.
 
@@ -84,6 +93,8 @@ Los tres archivos .P12 de esta carpeta contienen un certificado intermedio y un 
         * Necesario en todos los sistemas. Tenga en cuenta que los sistemas con todas las actualizaciones aplicadas de Windows Update puede que no tengan este certificado.
     * Certificado raíz: **Entidad de certificación raíz de Microsoft**
         * Obligatorio. Este certificado se proporciona con sistemas que ejecutan Windows 7 o versiones posteriores.
+
+**Actualización**: para Visual Studio 2017 versión 15.8 Preview 2 o versiones posteriores, el Instalador de Visual Studio solo requiere los certificados raíz para instalarse en el sistema.
 
 ## <a name="why-are-the-certificates-from-the-certificates-folder-not-installed-automatically"></a>¿Por qué los certificados de la carpeta Certificados no se instalan automáticamente?
 
@@ -115,16 +126,10 @@ Si los nombres de los certificados no estaban en las columnas **Emitido para**, 
 
 Después de instalar los certificados, la implementación de Visual Studio puede continuar siguiendo las instrucciones de la sección [Implementación de una instalación de red](create-a-network-installation-of-visual-studio.md#deploying-from-a-network-installation) de la página "Creación de una instalación de red de Visual Studio".
 
-## <a name="get-support"></a>Obtener soporte técnico
-En ocasiones, algo no sale según lo previsto. Si se produce un error en la instalación de Visual Studio, consulte la página [Troubleshooting Visual Studio 2017 installation and upgrade issues](troubleshooting-installation-issues.md) (Solucionar problemas de errores de instalación y actualización de Visual Studio 2017). Si ninguno de los pasos de solución de problemas ayuda, puede ponerse en contacto con nosotros por chat para obtener asistencia para la instalación (solo en inglés). Para más información, consulte la [página de soporte técnico de Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
-
-Aquí tiene algunas opciones de soporte técnico más:
-* Puede notificarnos problemas del producto a través de la herramienta [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) que aparece en el instalador y en el IDE de Visual Studio.
-* Puede compartir una sugerencia de producto con nosotros en [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Puede realizar el seguimiento de los problemas del producto en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/), y hacer preguntas y encontrar respuestas.
-* También puede ponerse en contacto con nosotros y otros desarrolladores de Visual Studio a través de nuestra [conversación de Visual Studio en la comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio).  (Esta opción requiere una cuenta de [GitHub](https://github.com/)).
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Vea también
+
 * [Instalar Visual Studio](install-visual-studio.md)
 * [Guía del administrador de Visual Studio](visual-studio-administrator-guide.md)
 * [Usar parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

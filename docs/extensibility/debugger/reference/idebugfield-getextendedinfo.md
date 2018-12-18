@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63bf182e4e8b17133fbefd4f4a19c4b8b4a458e9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b276b2bff8e8ab5af0f007fbc5bd5dd6074c4d9d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896053"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
-Este método obtiene información adicional sobre un campo.  
+Este método obtiene información sobre un campo adicional.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -44,7 +45,7 @@ int GetExtendedInfo(
   
 #### <a name="parameters"></a>Parámetros  
  `guidExtendedInfo`  
- [in] Selecciona la información que se devuelve. Los valores válidos son:  
+ [in] Selecciona la información que se va a devolver. Los valores válidos son:  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
@@ -55,13 +56,13 @@ int GetExtendedInfo(
  [out] Devuelve la información extendida.  
   
  `pdwLen`  
- [entrada, salida] Devuelve el tamaño de la información extendida, en bytes.  
+ [in, out] Devuelve el tamaño de la información extendida, en bytes.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Actualmente, este método devuelve solo el tipo o el valor de una constante. El llamador debe liberar el búfer devuelto en `prgBuffer` mediante una llamada a COM `CoTaskMemFree` (función) (C++) o <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> (C#).  
+ Actualmente, este método devuelve sólo el tipo o valor de una constante. El llamador debe liberar el búfer devuelto en `prgBuffer` por una llamada de COM `CoTaskMemFree` función (C++) o <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> (C#).  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

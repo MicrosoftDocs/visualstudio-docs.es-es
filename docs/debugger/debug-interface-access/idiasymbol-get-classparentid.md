@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_classparentid | Documentos de Microsoft'
+title: Get_classparentid | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,14 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4956d47912a17d528085b0431bf529cdeeb8beb7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4b335748c40d78cc2539e2c0700c1e7753935970
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863067"
 ---
 # <a name="idiasymbolgetclassparentid"></a>IDiaSymbol::get_classParentId
-Recupera el identificador de elemento primario de la clase del símbolo.  
+Recupera el identificador de clase primaria del símbolo.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -33,22 +34,22 @@ HRESULT get_classParentId (
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve el identificador de elemento primario de la clase del símbolo.  
+ [out] Devuelve el identificador de clase primaria del símbolo.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
 ## <a name="remarks"></a>Comentarios  
- El identificador es un valor único creado por el SDK de DIA para marcar todos los símbolos como única.  
+ El identificador es un valor único creado mediante el SDK de DIA para marcar todos los símbolos como único.  
   
 ## <a name="requirements"></a>Requisitos  
   
 |Requisito|Descripción|  
 |-----------------|-----------------|  
-|Encabezado:|dia2.h|  
+|Encabezado:|Dia2.h|  
 |Versión:|SDK de DIA v7.0|  
   
 ## <a name="see-also"></a>Vea también  

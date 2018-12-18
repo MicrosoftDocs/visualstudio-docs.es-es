@@ -14,18 +14,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 927d65b8b936200a1e174a7225591690183f1821
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9fe89b289601775fad8c102e696e799edce1c50c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669678"
 ---
 # <a name="spanspan-constructor"></a>span::span (Constructor)
 Inicializa una nueva instancia de la clase `span`.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp  
 span(  
    const marker_series& _Series,  
    _In_ LPCTSTR _Format,  
@@ -66,7 +67,7 @@ span(
  Categoría.  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** cvmarkersobj.h  
+ **Encabezado:** *cvmarkersobj.h*  
   
  **Espacio de nombres:** Concurrency::diagnostic
  

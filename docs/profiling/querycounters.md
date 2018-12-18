@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64bcd93e6d9045558c231c3b47ff967ffe14c078
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9f3c3176ea0b865ecf4a433a7a0a22a316720229
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257714"
 ---
 # <a name="querycounters"></a>QueryCounters
 La opción **QueryCounters** enumera los contadores de rendimiento de CPU (hardware) que están disponibles en el equipo.  
@@ -23,7 +24,7 @@ La opción **QueryCounters** enumera los contadores de rendimiento de CPU (hardw
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cmd  
 VSPerfCmd.exe /QueryCounters  
 ```  
   
@@ -37,6 +38,6 @@ VSPerfCmd.exe /QueryCounters
   
 ## <a name="see-also"></a>Vea también  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Generar perfiles de servicios](../profiling/command-line-profiling-of-services.md)
+ [Generación de perfiles de aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Generación de perfiles de aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Generar perfiles para servicios](../profiling/command-line-profiling-of-services.md)

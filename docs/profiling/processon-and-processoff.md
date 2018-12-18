@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 720ac244002e287b47d7c0c7c75b15a1fc707dd1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5ba91d26e038c0b0223217793f66debeeb63af85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876040"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn y ProcessOff
 Los subcomandos **ProcessOff** y **ProcessOn** de VSPerfCmd.exe pausan y reanudan la generación de perfiles para el proceso especificado en una sesión de generación de perfiles de línea de comandos. **ProcessOff** detiene el proceso de generación de perfiles y **ProcessOn** inicia el proceso de generación de perfiles.  
@@ -25,22 +26,22 @@ Los subcomandos **ProcessOff** y **ProcessOn** de VSPerfCmd.exe pausan y reanuda
   
  Los subcomandos **ProcessOff** y **ProcessOn** también afectan al recuento de inicios y paradas de procesos que se manipula mediante las funciones de API del generador de perfiles.  
   
--   **ProcessOff** establece inmediatamente el contador de inicio/parada de procesos en 0 y, en consecuencia, pausa la generación de perfiles.  
+- **ProcessOff** establece inmediatamente el contador de inicio/parada de procesos en 0 y, en consecuencia, pausa la generación de perfiles.  
   
--   **ProcessOn** establece inmediatamente el contador de inicio/parada de procesos en 1 y, en consecuencia, reanuda la generación de perfiles.  
+- **ProcessOn** establece inmediatamente el contador de inicio/parada de procesos en 1 y, en consecuencia, reanuda la generación de perfiles.  
   
- Para más información, vea [API de herramientas de generación de perfiles](../profiling/profiling-tools-apis.md).  
+  Para más información, vea [API de herramientas de generación de perfiles](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cmd  
 VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]  
   
 ```  
   
 #### <a name="parameters"></a>Parámetros  
  `PID`  
- Identificador de entero del proceso que se va a iniciar o detener. Los identificadores de proceso se muestran en la pestaña Proceso del Administrador de tareas de Windows.  
+ Identificador de entero del proceso que se va a iniciar o detener. Los identificadores de proceso se muestran en la pestaña **Proceso** del Administrador de tareas de Windows.  
   
 ## <a name="required-subcommands"></a>Subcomandos necesarios  
  Ninguna  
@@ -66,7 +67,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
 ## <a name="example"></a>Ejemplo  
  En este ejemplo, el subcomando **ProcessOff** se usa para recopilar datos de generación de perfiles para el inicio de la aplicación.  
   
-```  
+```cmd  
 ; Initialize the profiler.  
 VSPerfCmd.exe /Start:Trace /Output:Instrument.vsp   
 ; Start the instrumented application.  
@@ -80,6 +81,6 @@ VSPerfCmd /Shutdown
   
 ## <a name="see-also"></a>Vea también  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Generar perfiles de servicios](../profiling/command-line-profiling-of-services.md)
+ [Generación de perfiles de aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Generación de perfiles de aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Generar perfiles para servicios](../profiling/command-line-profiling-of-services.md)

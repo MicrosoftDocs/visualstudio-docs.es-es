@@ -19,22 +19,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64e9d8c2b25d779bfe0e80aa7b7d324f7a69879c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2526938274299cc5a90319749531f80e8bd3a90d
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220552"
 ---
 # <a name="vsinstr"></a>VSInstr
-La herramienta VSInstr se utiliza para instrumentar binarios. Se invoca mediante la siguiente sintaxis:  
+La herramienta VSInstr se usa para instrumentar archivos binarios. Se invoca mediante la siguiente sintaxis:  
   
-```  
+```cmd  
 VSInstr [/U] filename [/options]  
 ```  
   
  En la siguiente tabla se describen las opciones de la herramienta VSInstr:  
   
-|Opciones|Description|  
+|Opciones|Descripción|  
 |-------------|-----------------|  
 |**Ayuda** o **?**|Muestra información de ayuda.|  
 |**U**|Escribe la salida de la consola redirigida como Unicode. Debe ser la primera opción especificada.|  
@@ -43,9 +44,9 @@ VSInstr [/U] filename [/options]
 |**Exclude** `:funcspec`|Especifica una especificación de función para excluir de la instrumentación por sondeos. Es útil cuando la inserción de sondeos de generación de perfiles en una función da lugar a resultados impredecibles o no deseados.<br /><br /> No utilice opciones **Exclude** e **Include** que hagan referencia a funciones del mismo binario.<br /><br /> Puede especificar varias especificaciones de funciones con opciones **Exclude** independientes.<br /><br /> `funcspec` se define como:<br /><br /> [namespace\<separator1>] [class\<separator2>]function<br /><br /> \<separator1> es `::` para código nativo, y `.` para código administrado.<br /><br /> \<separator2> siempre es `::`<br /><br /> **Exclude** es compatible con cobertura de código.<br /><br /> Se admite el carácter comodín \*. Por ejemplo, para excluir todas las funciones en un espacio de nombres use:<br /><br /> MyNamespace::\*<br /><br /> Puede usar **VSInstr /DumpFuncs** para enumerar los nombres completos de funciones en el binario especificado.|  
 |**Include** `:funcspec`|Especifica una especificación de función en un binario para la instrumentación con sondeos. No se instrumentan el resto de funciones en los binarios.<br /><br /> Puede especificar varias especificaciones de funciones con opciones **Include** independientes.<br /><br /> No utilice opciones **Include** y **Exclude** que hagan referencia a funciones del mismo binario.<br /><br /> **Include** no es compatible con cobertura de código.<br /><br /> `funcspec` se define como:<br /><br /> [namespace\<separator1>] [class\<separator2>]function<br /><br /> \<separator1> es `::` para código nativo, y `.` para código administrado.<br /><br /> \<separator2> siempre es `::`<br /><br /> Se admite el carácter comodín \*. Por ejemplo, para incluir todas las funciones en un espacio de nombres use:<br /><br /> MyNamespace::\*<br /><br /> Puede usar **VSInstr /DumpFuncs** para enumerar los nombres completos de funciones en el binario especificado.|  
 |**DumpFuncs**|Enumera las funciones en la imagen especificada. No se realiza ninguna instrumentación.|  
-|**ExcludeSmallFuncs**|Excluye de la instrumentación las funciones pequeñas, que son funciones cortas que no realizan ninguna llamada de función. La opción **ExcludeSmallFuncs** proporciona menos sobrecarga de instrumentación y, por tanto, una velocidad de instrumentación mejorada.<br /><br /> La exclusión de las funciones pequeñas también reduce el tamaño del archivo .vsp y el tiempo necesario para el análisis.|  
+|**ExcludeSmallFuncs**|Excluye de la instrumentación las funciones pequeñas, que son funciones cortas que no realizan ninguna llamada de función. La opción **ExcludeSmallFuncs** proporciona menos sobrecarga de instrumentación y, por tanto, una velocidad de instrumentación mejorada.<br /><br /> La exclusión de las funciones pequeñas también reduce el tamaño del archivo .*vsp* y el tiempo necesario para el análisis.|  
 |**Mark:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname,markid`|Inserta una marca de perfil (un identificador utilizado para delimitar los datos de informes) que puede utilizar para identificar el inicio o final de un intervalo de datos en el archivo de informe .vsp.<br /><br /> **Before**: inmediatamente antes de la entrada de la función de destino.<br /><br /> **After**: inmediatamente después de la salida de la función de destino.<br /><br /> **Top**: inmediatamente después de la entrada de la función de destino.<br /><br /> **Bottom**: inmediatamente antes de cada devolución de la función de destino.<br /><br /> `funcname`: nombre de la función de destino<br /><br /> `Markid`: un entero positivo (largo) que se usará como el identificador de la marca de perfil.|  
-|**Coverage**|Realiza instrumentación de cobertura. Solo se puede utilizar con las siguientes opciones: **Verbose**, **OutputPath**, **Exclude** y **Logfile**.|  
+|**Coverage**|Realiza instrumentación de cobertura. Solo se puede usar con las siguientes opciones: **Verbose**, **OutputPath**, **Exclude** y **Logfile**.|  
 |**Verbose**|La opción **Verbose** se utiliza para ver información detallada sobre el proceso de instrumentación.|  
 |**NoWarn** `[:[Message Number[;Message Number]]]`|Suprime todas las advertencias o solo advertencias específicas.<br /><br /> `Message Number`: el número de advertencia. Si se omite `Message Number`, se suprimen todas las advertencias.<br /><br /> Para obtener más información, consulte [Advertencias de VSInstr](../profiling/vsinstr-warnings.md).|  
 |**Control** `:{` **Thread** `&#124;` **Process** `&#124;` **Global** `}`|Especifica el nivel de generación de perfiles de las siguientes opciones de control de recopilación de datos de VSInstr:<br /><br /> **Start**<br /><br /> **StartOnly**<br /><br /> **Suspend**<br /><br /> **StopOnly**<br /><br /> **SuspendOnly**<br /><br /> **ResumeOnly**<br /><br /> **Thread**: especifica las funciones de control de recopilación de datos de nivel de subproceso. La generación de perfiles se inicia o detiene solo para el subproceso actual. El estado de generación de perfiles de otros subprocesos no se ve afectado. El valor predeterminado es thread.<br /><br /> **Process**: especifica las funciones de control de recopilación de datos de generación de perfiles de nivel de proceso. La generación de perfiles se inicia o se detiene en todos los subprocesos del proceso actual. No se ve afectado el estado de generación de perfiles de otros procesos.<br /><br /> **Global**: especifica las funciones de control de recopilación de datos de nivel global (entre procesos).<br /><br /> Se produce un error si no se especifica el nivel de generación de perfiles.|  

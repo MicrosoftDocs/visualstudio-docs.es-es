@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: crear y modificar propiedades de documento personalizadas | Documentos de Microsoft'
+title: 'Cómo: crear y modificar propiedades de documento personalizadas'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,22 +17,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8c997fbe764ba355d16def278c9beda8c177faed
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bb66d2fbd1af41cfa89fc38f7694ee3783d10f76
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254441"
 ---
-# <a name="how-to-create-and-modify-custom-document-properties"></a>Cómo: Crear y modificar propiedades personalizadas para documentos
+# <a name="how-to-create-and-modify-custom-document-properties"></a>Cómo: crear y modificar propiedades de documento personalizadas
   Las aplicaciones de Microsoft Office enumeradas anteriormente proporcionan propiedades integradas que se almacenan con los documentos. Además, puede crear y modificar propiedades de documento personalizadas si hay información adicional que desea almacenar con el documento.  
   
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]  
   
- Utilice la propiedad CustomDocumentProperties de un documento para trabajar con propiedades personalizadas. Por ejemplo, en un proyecto de nivel de documento para Microsoft Office Excel, use la propiedad <xref:Microsoft.Office.Tools.Excel.Workbook.CustomDocumentProperties%2A> de la clase `ThisWorkbook` . En un proyecto de complemento de VSTO para Excel, use la propiedad <xref:Microsoft.Office.Interop.Excel._Workbook.CustomDocumentProperties%2A> de un objeto <xref:Microsoft.Office.Interop.Excel.Workbook> . Estas propiedades devuelven un objeto <xref:Microsoft.Office.Core.DocumentProperties> , que es una colección de objetos <xref:Microsoft.Office.Core.DocumentProperty> . Puede usar la propiedad `Item` de la colección para recuperar una propiedad determinada, ya sea por nombre o por índice dentro de la colección.  
+ Use la propiedad CustomDocumentProperties de un documento para trabajar con propiedades personalizadas. Por ejemplo, en un proyecto de nivel de documento para Microsoft Office Excel, use la propiedad <xref:Microsoft.Office.Tools.Excel.Workbook.CustomDocumentProperties%2A> de la clase `ThisWorkbook` . En un proyecto de complemento de VSTO para Excel, use la propiedad <xref:Microsoft.Office.Interop.Excel._Workbook.CustomDocumentProperties%2A> de un objeto <xref:Microsoft.Office.Interop.Excel.Workbook> . Estas propiedades devuelven un objeto <xref:Microsoft.Office.Core.DocumentProperties> , que es una colección de objetos <xref:Microsoft.Office.Core.DocumentProperty> . Puede usar la propiedad `Item` de la colección para recuperar una propiedad determinada, ya sea por nombre o por índice dentro de la colección.  
   
  En el ejemplo siguiente se muestra cómo agregar una propiedad personalizada en una personalización de nivel de documento para Excel y asignarle un valor.  
   
- ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo a vídeo") para una demostración en vídeo relacionada, vea [cómo obtener acceso a y manipular propiedades personalizadas del documento de Microsoft Word?](http://go.microsoft.com/fwlink/?LinkId=136772).  
+ ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una demostración en vídeo relacionada, vea [¿cómo lo hago?: acceso y manipular propiedades personalizadas del documento en Microsoft Word?](http://go.microsoft.com/fwlink/?LinkId=136772).  
   
 ## <a name="example"></a>Ejemplo  
  [!code-vb[Trin_VstcoreProgramming#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#6)]
@@ -42,8 +43,8 @@ ms.lasthandoff: 04/16/2018
  Si se intenta acceder a la propiedad `Value` para propiedades sin definir, se produce una excepción.  
   
 ## <a name="see-also"></a>Vea también  
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
- [Programación de personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md)   
- [Cómo: Leer y escribir en propiedades de un documento](../vsto/how-to-read-from-and-write-to-document-properties.md)  
+ [Programar complementos VSTO](../vsto/programming-vsto-add-ins.md)   
+ [Programar personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md)   
+ [Cómo: de lectura y escritura a las propiedades de documento](../vsto/how-to-read-from-and-write-to-document-properties.md)  
   
   

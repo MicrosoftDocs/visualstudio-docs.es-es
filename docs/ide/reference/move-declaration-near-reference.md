@@ -1,21 +1,22 @@
 ---
-title: Acercamiento de la declaración de variable a la referencia en Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Acercamiento de la declaración de variable a la referencia en Visual Studio
 ms.date: 01/26/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
-author: kuhlenh
-ms.author: kaseyu
+author: gewarren
+ms.author: gewarren
 manager: douge
 dev_langs:
-- csharp
+- CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7c78904123da54fd2259558f29832742d9a103d2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b3a231aafce69bfeeaff7defee6d5f85c7ffc8b2
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896606"
 ---
 # <a name="move-declaration-near-reference-refactoring"></a>Refactorización de acercamiento de la declaración a la referencia
 
@@ -36,9 +37,9 @@ Esta refactorización se aplica a lo siguiente:
 1. A continuación, realice alguno de los siguientes procedimientos:
 
    - **Teclado**
-     - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones** y seleccione **Mover la declaración cerca de la referencia** en el menú emergente de la ventana Vista previa.
+      - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones** y seleccione **Mover la declaración cerca de la referencia** en el menú emergente de la ventana Vista previa.
    - **Mouse**
-     - Haga clic con el botón derecho en el código, seleccione el menú **Acciones rápidas y refactorizaciones** y elija **Mover la declaración cerca de la referencia** en el menú emergente de la ventana Vista previa.
+      - Haga clic con el botón derecho en el código, seleccione el menú **Acciones rápidas y refactorizaciones** y elija **Mover la declaración cerca de la referencia** en el menú emergente de la ventana Vista previa.
 
 1. Cuando esté satisfecho con el cambio, presione **Entrar** o haga clic en la solución en el menú y los cambios se confirmarán.
 

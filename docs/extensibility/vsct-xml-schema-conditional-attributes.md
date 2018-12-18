@@ -1,5 +1,5 @@
 ---
-title: Atributos condicionales de esquema XML VSCT | Documentos de Microsoft
+title: Atributos condicionales de esquema XML de VSCT | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,23 +14,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 975ca2f5fa6f070baf07b26cbfa0d8c3aa3b67d2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 071f13420fe9482e99189ca29eeb09d319f182bf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936436"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>Atributos condicionales de esquema XML de VSCT
-Atributos condicionales pueden aplicarse a todas las listas y los elementos. Expresiones de expansión de símbolos y operadores lógicos se evalúan como true o false. Si es true, el elemento o la lista asociada se incluye en el resultado.  
+Puede aplicar atributos condicionales para todas las listas y elementos. Expresiones de expansión de símbolos y operadores lógicos se evalúan como true o false. Si es true, el elemento o la lista asociada se incluye en la salida resultante.  
   
- Token expansiones se pueden probar con otros tokens expansiones o constantes. La función Defined() se usa para comprobar si se ha definido un nombre determinado, incluso si no tiene ningún valor.  
+ Puede probar el token expansiones frente a otros tokens expansiones o constantes. La función `Defined()` comprueba si se ha definido un nombre determinado, incluso si no tiene ningún valor.  
   
- Cuando un atributo Condition se aplica a una lista, la condición se aplica a todos los elementos secundarios en la lista. Si un elemento secundario propio contiene un atributo Condition, su condición se combina con la expresión primaria por una operación AND.  
+ Cuando un atributo Condition se aplica a una lista, la condición se aplica a todos los elementos secundarios en la lista. Si un elemento secundario propio contiene un atributo Condition, su condición se combina con la expresión primaria por una operación de AND.  
   
  Los valores 1, '1' y 'true' se evalúan como true y 0, '0' y 'false' se evalúan como false.  
   
 ## <a name="operators"></a>Operadores  
- Los siguientes operadores pueden utilizarse para evaluar expresiones condicionales.  
+ Utilice los siguientes operadores para evaluar expresiones condicionales.  
   
 |Operador|de esquema JSON|  
 |--------------|----------------|  
@@ -42,7 +43,7 @@ Atributos condicionales pueden aplicarse a todas las listas y los elementos. Exp
   
 ## <a name="examples"></a>Ejemplos  
   
-```  
+```xml  
 <Menu Condition="Defined(DEBUG)" ...  
 </Menu>  
   
@@ -72,4 +73,4 @@ and !Defined(DEBUG)">
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Tabla de comandos de Visual Studio (. Archivos Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

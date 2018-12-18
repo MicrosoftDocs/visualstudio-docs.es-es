@@ -1,6 +1,7 @@
 ---
 title: Mostrar datos en Blend
 ms.date: 03/06/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 87d31b6c-4607-4121-bb7d-cfc80390ab93
@@ -9,15 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e7a8e878651154ad87e7991d93a4040ffc55e44
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ae09c6921bc4f6e0b3bb2a91eb9c3972c997d566
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282175"
 ---
 # <a name="display-data-in-blend"></a>Mostrar datos en Blend
 
-Mientras personaliza el diseño de sus páginas, puede ver datos de ejemplo en el diseñador. Estos datos de ejemplo se pueden generar desde cero o mediante una clase existente. También puede conectarse a *Datos en directo* que aparecerán en la aplicación al ejecutarla.
+Mientras personaliza el diseño de sus páginas, puede ver datos de ejemplo en el diseñador. Estos datos de ejemplo se pueden generar desde cero o mediante una clase existente. También puede conectarse a *Datos en directo* que aparecen en la aplicación al ejecutarla.
 
 ## <a name="generate-sample-data"></a>Generar datos de ejemplo
 
@@ -41,7 +43,7 @@ Si ya ha creado las clases que describen la estructura de los datos, puede gener
 
 Para generar datos de ejemplo desde una clase, abra un documento XAML y, en el panel **Datos**, haga clic en el botón **Crear datos de ejemplo** ![Icono Crear datos de ejemplo](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) y, después, haga clic en **Crear datos de ejemplo desde clase**.
 
-**Vea un vídeo corto:** ![Icono de reproducción](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Crear datos de ejemplo desde clase](http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=video&cd=1&cad=rja&uact=8&ved=0CB0QtwIwAA&url=http%3A%2F%2Fchannel9.msdn.com%2FShows%2FInside%2BWindows%2BPhone%2FIWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML&ei=F1oHVNryM4ysogSJ2oDYDw&usg=AFQjCNEYvw1WA1rdF7bfpj5RwMLUs7RCVg).
+**Vea un vídeo corto:** ![Icono de reproducción](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Crear datos de ejemplo desde clase](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML).
 
 **Vea un vídeo corto:** ![Icono de reproducción](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Mezclar algunos enlaces de datos con Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 
@@ -49,10 +51,10 @@ Para generar datos de ejemplo desde una clase, abra un documento XAML y, en el p
 
 **Vea un vídeo corto:** ![Icono de reproducción](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Crear un origen de datos XML](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).
 
-## <a name="show-live-data-in-a-store-or-phone-app"></a>Mostrar datos en directo en una aplicación de la Tienda Windows o Windows Phone
+## <a name="show-live-data-in-a-store-or-phone-app"></a>Mostrar datos en directo en una aplicación de la tienda o del teléfono
 
-Consulte [Working with data and files (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx)(Cómo trabajar con datos y archivos [XAML]).
+Vea [Working with data and files (XAML)](/previous-versions/windows/apps/br229562(v=win.10)) (Cómo trabajar con datos y archivos [XAML]).
 
 ## <a name="see-also"></a>Vea también
 
-- [Crear una IU con Blend para Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
+- [Creación de una interfaz de usuario con Blend para Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

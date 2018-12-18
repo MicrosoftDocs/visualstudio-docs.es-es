@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56f14b399a904c2584e81c2b6c8f344654b69a18
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 587104668449fe9c2ec0dd36fe20e76fec6be6fa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837508"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
-El Administrador de sesión de depuración (SDM) se asocia al proceso.  
+El Administrador de depuración de la sesión (SDM) se asocia al proceso.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -55,21 +56,21 @@ int Attach(
  [in] El número de depuración motores en el `rgguidSpecificEngines` matriz y el tamaño de la `rghrEngineAttach` matriz.  
   
  `rghrEngineAttach`  
- [entrada, salida] Una matriz de códigos HRESULT devuelto por los motores de depuración. El tamaño de esta matriz se especifica en el `celtSpecificEngines` parámetro. Cada código sea normalmente `S_OK` o `S_ATTACH_DEFERRED`. Estos últimos indican que la DE está actualmente conectada a ningún programa.  
+ [in, out] Una matriz de códigos HRESULT devuelto por los motores de depuración. El tamaño de esta matriz se especifica en el `celtSpecificEngines` parámetro. Cada código es normalmente `S_OK` o `S_ATTACH_DEFERRED`. Estos últimos indican que la DE actualmente está conectada a ningún programa.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error. La tabla siguiente muestran otros valores posibles.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. En la tabla siguiente se muestra otros posibles valores.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|El proceso especificado ya está asociado al depurador.|  
-|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Se ha producido una infracción de seguridad durante el proceso de adjuntar.|  
-|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Un proceso de escritorio no se puede adjuntar el depurador.|  
+|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Se ha producido una infracción de seguridad durante el procedimiento de conexión.|  
+|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|No se puede adjuntar un proceso de escritorio al depurador.|  
   
 ## <a name="remarks"></a>Comentarios  
- Adjuntar a un proceso asocia el SDM en todos los programas que se ejecutan en ese proceso que se puede depurar mediante los motores de depuración (Alemania) especificados en el `rgguidSpecificEngines` matriz. Establecer el `rgguidSpecificEngines` parámetro en un valor null de valor o incluir `GUID_NULL` en la matriz para adjuntar a todos los programas en el proceso.  
+ Adjuntar a un proceso adjunta el SDM en todos los programas que se ejecutan en el proceso que se puede depurar los motores de depuración (DE) especificado en el `rgguidSpecificEngines` matriz. Establecer el `rgguidSpecificEngines` parámetro a un valor null de valor o incluir `GUID_NULL` en la matriz para adjuntar a todos los programas en el proceso.  
   
- Todos los eventos de depuración que se producen en el proceso se envían a la determinada [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objeto. Esto `IDebugEventCallback2` se proporciona el objeto cuando el SDM llama a este método.  
+ Todos los eventos de depuración que se producen en el proceso se envían a la determinada [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objeto. Esto `IDebugEventCallback2` se proporciona un objeto cuando el SDM llama a este método.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   

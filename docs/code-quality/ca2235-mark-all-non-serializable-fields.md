@@ -1,6 +1,7 @@
 ---
 title: 'CA2235: Marcar todos los campos no serializables'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -13,15 +14,20 @@ ms.assetid: 599ad877-3a15-426c-bf17-5de15427365f
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 640fd26b7e75b566ccc159d8c41ff8f70d260897
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ad4328c13403b1bea6a4358661b3347404592c02
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549724"
 ---
 # <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235: Marcar todos los campos no serializables
+
 |||
 |-|-|
 |TypeName|MarkAllNonSerializableFields|
@@ -33,16 +39,16 @@ ms.lasthandoff: 04/19/2018
  Un campo de instancia de un tipo que no es serializable se declara en un tipo que es serializable.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Un tipo serializable es aquel que se marca con el <xref:System.SerializableAttribute?displayProperty=fullName> atributo. Cuando se serializa el tipo, un <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> excepción se produce si un tipo contiene un campo de instancia de un tipo que no es serializable.
+ Un tipo serializable es aquel que está marcado con el <xref:System.SerializableAttribute?displayProperty=fullName> atributo. Cuando se serializa el tipo, un <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> excepción se produce si un tipo contiene un campo de instancia de un tipo que no es serializable.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, aplique el <xref:System.NonSerializedAttribute?displayProperty=fullName> atributo al campo que no es serializable.
+ Para corregir una infracción de esta regla, aplique el <xref:System.NonSerializedAttribute?displayProperty=fullName> atributo en el campo que no es serializable.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Sólo suprima las advertencias de esta regla si un <xref:System.Runtime.Serialization.ISerializationSurrogate?displayProperty=fullName> tipo se declara que permite que las instancias del campo para serializar y deserializar.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ Sólo suprima una advertencia de esta regla si un <xref:System.Runtime.Serialization.ISerializationSurrogate?displayProperty=fullName> tipo se declara que permite que las instancias del campo al que se serializan y deserializan.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra un tipo que infringe la regla y un tipo que infringe la regla.
+ El ejemplo siguiente muestra un tipo que infringe la regla y un tipo que cumple la regla.
 
  [!code-csharp[FxCop.Usage.MarkNonSerializable#1](../code-quality/codesnippet/CSharp/ca2235-mark-all-non-serializable-fields_1.cs)]
  [!code-vb[FxCop.Usage.MarkNonSerializable#1](../code-quality/codesnippet/VisualBasic/ca2235-mark-all-non-serializable-fields_1.vb)]

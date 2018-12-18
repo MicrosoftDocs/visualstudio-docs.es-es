@@ -1,5 +1,5 @@
 ---
-title: THUNK_ORDINAL | Documentos de Microsoft
+title: THUNK_ORDINAL | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b0701706deee68cf2dde522d48f9aa62b9a00142
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a92e0fa81bdfc7c33e790c5022c2fbe341d632be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847715"
 ---
 # <a name="thunkordinal"></a>THUNK_ORDINAL
 Designa los tipos de código thunk.  
@@ -41,28 +42,28 @@ typedef enum THUNK_ORDINAL {
   
 ## <a name="elements"></a>Elementos  
  THUNK_ORDINAL_NOTYPE  
- Código thunk estándar.  
+ Thunk estándar.  
   
  THUNK_ORDINAL_ADJUSTOR  
- Un `this` código thunk de ajustador.  
+ Un `this` código thunk ajustador.  
   
  THUNK_ORDINAL_VCALL  
  Código thunk de llamada virtual.  
   
  THUNK_ORDINAL_PCODE  
- Código thunk de código empaquetado.  
+ Código thunk de código.  
   
  THUNK_ORDINAL_LOAD  
  Código thunk de carga de retraso.  
   
  THUNK_ORDINAL_TRAMP_INCREMENTAL  
- Código thunk de cama elástica incremental (se usa un código thunk cama elástica rebote llamadas de espacio de memoria de uno a otro).  
+ Código thunk de cama elástica incremental (un código thunk de cama elástica se usa para hacer rebotar la llamadas desde el espacio de memoria de uno a otro).  
   
  THUNK_ORDINAL_TRAMP_BRANCHISLAND  
  Código thunk cama elástica de punto de bifurcación.  
   
 ## <a name="remarks"></a>Comentarios  
- Los valores de esta enumeración se devuelven desde una llamada a la [idiasymbol:: Get_thunkordinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) método.  
+ Los valores de esta enumeración se devuelven en una llamada a la [Get_thunkordinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) método.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: cvconst.h  

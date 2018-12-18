@@ -1,5 +1,5 @@
 ---
-title: DefaultName (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
+title: DefaultName (elemento) (plantillas de Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e67d8970859906e839abf89e85e38c24c2d88066
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 03513b786c17e5bef3d8fa1fff79c1c3e73fe6a0
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500324"
 ---
-# <a name="defaultname-element-visual-studio-templates"></a>DefaultName (Elemento, Plantillas de Visual Studio)
-Especifica el nombre que el sistema de proyectos de Visual Studio generará para el proyecto o elemento cuando se crea.  
+# <a name="defaultname-element-visual-studio-templates"></a>DefaultName (elemento) (plantillas de Visual Studio)
+Especifica el nombre que el sistema del proyecto de Visual Studio generará para el proyecto o elemento cuando se crea.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -63,10 +64,10 @@ Especifica el nombre que el sistema de proyectos de Visual Studio generará para
   
  Cuando se crea un proyecto o elemento, puede modificar el nombre predeterminado mediante el **nombre** opción, que está disponible desde el **nuevo proyecto** cuadro de diálogo o **Agregar nuevo elemento** cuadro de diálogo.  
   
- Si no desea que el sistema del proyecto para generar el nombre predeterminado para el proyecto o elemento, establezca la [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) elemento `False`.  
+ Si no desea que el sistema del proyecto para generar el nombre predeterminado para el proyecto o elemento, a continuación, establezca el [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) elemento `False`.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra los metadatos de la plantilla de elementos estándar de una [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] clase.  
+ El ejemplo siguiente muestra los metadatos de la plantilla de elemento estándar para un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] clase.  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -86,4 +87,4 @@ Especifica el nombre que el sistema de proyectos de Visual Studio generará para
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
+ [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)

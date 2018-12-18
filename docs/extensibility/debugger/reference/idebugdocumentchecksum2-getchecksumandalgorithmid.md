@@ -14,14 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36cacd8ba313c9beb7565ebb20cbce23f7b6c12e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fbb12f315bc0e83e14ad4a342443ed3207411dae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846387"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
-Recupera el identificador de suma de comprobación y el algoritmo de documento dado el número máximo de bytes que se va a usar.  
+Recupera el identificador de suma de comprobación y el algoritmo de documento dado el número máximo de bytes que se utilizará.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -57,10 +58,10 @@ public int GetChecksumAndAlgorithmId(
  [out] Número real de bytes utilizados por la suma de comprobación.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se usa este método para obtener la suma de comprobación y el algoritmo para un documento.  
+ El ejemplo siguiente usa este método para obtener la suma de comprobación y el algoritmo para un documento.  
   
 ```cpp  
 HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorithm, BYTE **ppChecksum, ULONG *pcNumBytes)  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141215"
 ---
 # <a name="using-fonts-and-colors"></a>Utilizar fuentes y colores
 El [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] proporciona compatibilidad para que utilizar fuentes y colores para mostrar el texto.  

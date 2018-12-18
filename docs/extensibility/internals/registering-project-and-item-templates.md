@@ -1,5 +1,5 @@
 ---
-title: Registrar plantillas de proyecto y elemento | Documentos de Microsoft
+title: Registro de plantillas de proyecto y elemento | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,20 +17,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85c22d0191d015979dff5a4845c4dda0af96ee60
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fea06b4e36b35266f39dc07d58a29c1b53310b57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934605"
 ---
-# <a name="registering-project-and-item-templates"></a>Registro de proyecto y plantillas de elementos
-Tipos de proyecto deben registrar los directorios donde se encuentran las plantillas de proyecto y elemento de proyecto. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utiliza la información de registro asociada con los tipos de proyecto para determinar qué se debe mostrar en el **Agregar nuevo proyecto** y **Agregar nuevo elemento** cuadros de diálogo.  
-  
- Para obtener más información acerca de las plantillas, consulte [Agregar proyecto y plantillas de elementos de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md).  
-  
+# <a name="registering-project-and-item-templates"></a>Registro de plantillas para proyectos y elementos
+Tipos de proyecto deben registrar los directorios donde se encuentran sus plantillas de proyecto y elemento de proyecto. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usa la información de registro asociada con los tipos de proyecto para determinar qué se debe mostrar en el **Agregar nuevo proyecto** y **Agregar nuevo elemento** cuadros de diálogo.  
+
+ Para obtener más información acerca de las plantillas, consulte [Agregar proyecto y plantillas de elemento de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md).  
+
 ## <a name="registry-entries-for-projects"></a>Entradas del registro para los proyectos  
  Los ejemplos siguientes muestran las entradas del registro bajo HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*versión*>. En las tablas que lo acompaña explica los elementos usados en los ejemplos.  
-  
+
 ```  
 [Projects\{ProjectGUID}]  
 @="MyProjectType"  
@@ -38,17 +39,17 @@ Tipos de proyecto deben registrar los directorios donde se encuentran las planti
 "Package"="{VSPackageGUID}"  
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"  
 ```  
-  
+
 |nombre|Tipo|Descripción|  
 |----------|----------|-----------------|  
 |@|REG_SZ|Nombre predeterminado de los proyectos de este tipo.|  
-|DisplayName|REG_SZ|Identificador de recurso del nombre que se recuperan desde el archivo DLL satélite registrados en paquetes.|  
-|Package|REG_SZ|Id. de clase del paquete registrados en paquetes.|  
-|ProjectTemplatesDir|REG_SZ|Ruta de acceso predeterminada de los archivos de plantilla de proyecto. Los archivos de plantilla de proyecto se muestran por la **nuevo proyecto** plantilla.|  
-  
-### <a name="registering-item-templates"></a>Plantillas de elementos del registro  
- Debe registrar el directorio donde se almacenan plantillas de elementos.  
-  
+|DisplayName|REG_SZ|Id. de recurso del nombre que deben recuperarse de la DLL satélite registrados en los paquetes.|  
+|Package|REG_SZ|Id. de clase del paquete se registra en los paquetes.|  
+|ProjectTemplatesDir|REG_SZ|Ruta de acceso predeterminada de los archivos de plantilla de proyecto. Los archivos de plantilla de proyecto se muestran mediante el **nuevo proyecto** plantilla.|  
+
+### <a name="registering-item-templates"></a>Registrar las plantillas de elemento  
+ Debe registrar el directorio donde se almacenan las plantillas de elemento.  
+
 ```  
 [Projects\{ProjectGUID}\AddItemTemplates\TemplateDirs\{VSPackageGUID}\1]  
 @="#7"  
@@ -56,23 +57,24 @@ Tipos de proyecto deben registrar los directorios donde se encuentran las planti
 "TemplatesLocalizedSubDir"="#10"  
 "SortPriority"=dword:00000064  
 ```  
-  
-|nombre|Tipo|Descripción|  
-|----------|----------|-----------------|  
-|@|REG_SZ|Id. de recurso para plantillas de agregar elementos.|  
-|TemplatesDir|REG_SZ|Ruta de acceso de los elementos de proyecto que se muestra en el cuadro de diálogo para la **Agregar nuevo elemento** asistente.|  
-|TemplatesLocalizedSubDir|REG_SZ|Id. de recurso de una cadena que designa el subdirectorio de TemplatesDir que contiene plantillas de otros idiomas. Dado que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] carga el recurso de cadena de archivos DLL satélite si los tiene, cada archivo DLL satélite puede contener un nombre de subdirectorio localizados diferentes.|  
-|SortPriority|REG_DWORD|Establecer SortPriority para controlar el orden en que las plantillas se muestran en la **Agregar nuevo elemento** cuadro de diálogo. Los valores mayores de SortPriority aparecen anteriormente en la lista de plantillas.|  
-  
-### <a name="registering-file-filters"></a>Registro de filtros de archivos  
- Si lo desea, puede registrar filtros que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utiliza cuando se le pida para nombres de archivo. Por ejemplo, el [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] filtrar el el **archivos abiertos** cuadro de diálogo:  
-  
+
+
+| nombre | Tipo | Descripción |
+|--------------------------|-----------| - |
+| @ | REG_SZ | Identificador de recurso para las plantillas Agregar elemento. |
+| TemplatesDir | REG_SZ | Ruta de acceso de los elementos de proyecto que se muestra en el cuadro de diálogo para la **Agregar nuevo elemento** asistente. |
+| TemplatesLocalizedSubDir | REG_SZ | Identificador de recurso de cadena que designa el subdirectorio de TemplatesDir que contiene las plantillas localizadas. Dado que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] carga el recurso de cadena de archivos DLL satélite si los tiene, cada archivo DLL satélite puede contener un nombre de subdirectorio localizados diferentes. |
+| SortPriority | REG_DWORD | Establecer SortPriority para controlar el orden en que se muestran las plantillas en el **Agregar nuevo elemento** cuadro de diálogo. Los valores mayores de SortPriority aparecen anteriormente en la lista de plantillas. |
+
+### <a name="registering-file-filters"></a>Filtros de archivos de registro  
+ Si lo desea, puede registrar los filtros que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usa cuando se le pida para los nombres de archivo. Por ejemplo, el [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] filtrar el **abrir archivo** cuadro de diálogo:  
+
  **Archivos de Visual C# (\*. cs,\*.resx,\*.settings,\*.xsd,\*.wsdl);\*. CS,\*.resx,\*.settings,\*.xsd,\*.wsdl)**  
-  
- Para permitir el registro de varios filtros, cada filtro se registra en su propia subclave bajo HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*versión*> \Projects\\{} \< *ProjectGUID*>} \Filters\\<*subclave*>. El nombre de la subclave es arbitrario; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] omite el nombre de la subclave y usa solo sus valores.  
-  
- Puede controlar los contextos en los que se usa un filtro estableciendo marcas, que se muestra en la tabla siguiente. Si un filtro no tiene todas las marcas, se enumerarán después los filtros comunes en el **Agregar elemento existente** cuadro de diálogo y el **archivos abiertos** cuadro de diálogo, pero no se usará en la **buscar en archivos**  cuadro de diálogo.  
-  
+
+ Para admitir el registro de varios filtros, cada filtro se registra en su propia subclave bajo HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*versión*> \Projects\\{} \< *ProjectGUID*>} \Filters\\<*subclave*>. El nombre de la subclave es arbitrario; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] omite el nombre de la subclave y usa sólo en sus valores.  
+
+ Puede controlar los contextos en los que se usa un filtro estableciendo marcas, que se muestra en la tabla siguiente. Si un filtro no tiene ningún indicador, se mostrará después de los filtros comunes en el **Agregar elemento existente** cuadro de diálogo y el **abrir archivo** cuadro de diálogo, pero no se usará en el **buscar en archivos**  cuadro de diálogo.  
+
 ```  
 [Projects\{ProjectGUID}\Filters\MyLanguageFilter]  
 @="#3"  
@@ -83,43 +85,43 @@ Tipos de proyecto deben registrar los directorios donde se encuentran las planti
 "NotAddExistingItemFilter"=dword:00000000  
 "SortPriority"=dword:00000064  
 ```  
-  
+
 |nombre|Tipo|Descripción|  
 |----------|----------|-----------------|  
-|CommonFindFilesFilter|REG_DWORD|Hace que el filtro de uno de los filtros comunes en el **buscar en archivos** cuadro de diálogo. Filtros comunes se muestran en la lista de filtros antes que los filtros no marcado como común.|  
-|CommonOpenFilesFilter|REG_DWORD|Hace que el filtro de uno de los filtros comunes en el **archivos abiertos** cuadro de diálogo. Filtros comunes se muestran en la lista de filtros antes que los filtros no marcado como común.|  
+|CommonFindFilesFilter|REG_DWORD|Hace que el filtro de uno de los filtros comunes en el **buscar en archivos** cuadro de diálogo. Los filtros comunes se muestran en la lista de filtros antes de los filtros de marcado no tan comunes.|  
+|CommonOpenFilesFilter|REG_DWORD|Hace que el filtro de uno de los filtros comunes en el **abrir archivo** cuadro de diálogo. Los filtros comunes se muestran en la lista de filtros antes de los filtros de marcado no tan comunes.|  
 |FindInFilesFilter|REG_DWORD|Muestra el filtro después de los filtros comunes en el **buscar en archivos** cuadro de diálogo.|  
-|NotOpenFileFilter|REG_DWORD|Indica que el filtro no se utiliza en el **archivos abiertos** cuadro de diálogo.|  
+|NotOpenFileFilter|REG_DWORD|Indica que el filtro no se utiliza en el **abrir archivo** cuadro de diálogo.|  
 |NotAddExistingItemFilter|REG_DWORD|Indica que el filtro no se utiliza en el **Agregar elemento existente** cuadro de diálogo.|  
 |SortPriority|REG_DWORD|Establecer SortPriority para controlar el orden en que se muestran los filtros. Los valores mayores de SortPriority aparecen anteriormente en la lista de filtros.|  
-  
+
 ## <a name="directory-structure"></a>Estructura de directorios  
- VSPackages puede colocar las carpetas y archivos de plantilla en cualquier sitio en un disco local o remoto, siempre y cuando se registra la ubicación a través de un entorno de desarrollo integrado (IDE). Sin embargo, para facilitar la organización, se recomienda la siguiente estructura de directorios bajo la ruta de instalación de su producto.  
-  
+ Los VSPackages puede colocar las carpetas y archivos de plantilla en cualquier lugar en un disco local o remoto, siempre y cuando la ubicación se ha registrado mediante el entorno de desarrollo integrado (IDE). Sin embargo, para facilitar la organización, se recomienda la siguiente estructura de directorios bajo la ruta de instalación de su producto.  
+
  \Templates  
-  
+
  \Projects (contiene las plantillas de proyecto)  
-  
+
  \Applications  
-  
+
  \Components  
-  
+
  \ ...  
-  
- \ProjectItems (que contiene los elementos de proyecto)  
-  
+
+ \ProjectItems (contiene los elementos de proyecto)  
+
  \Class  
-  
+
  \Form  
-  
+
  \Web página  
-  
- \HelperFiles (que contiene los archivos utilizados en elementos de proyecto de varios archivos)  
-  
+
+ \HelperFiles (contiene los archivos usados en los elementos de proyecto de varios archivos)  
+
  \WizardFiles  
-  
+
 ## <a name="see-also"></a>Vea también  
- [Agregar proyecto y plantillas de elemento de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md)   
+ [Adición de proyecto y plantillas de elemento de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [Asistentes](../../extensibility/internals/wizards.md)   
  [Localizar aplicaciones](../../ide/localizing-applications.md)   
  [CATID para los objetos que se utilizan normalmente para ampliar proyectos](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

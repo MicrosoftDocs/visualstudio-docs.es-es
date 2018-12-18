@@ -1,6 +1,7 @@
 ---
 title: 'CA1005: Evite parámetros excesivos en tipos genéricos'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,13 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 05dd6e6c27ed440cf17862ea635210682bcd9cf5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e65427aecb2d4ecc135480d23834fdc07a413b05
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850131"
 ---
 # <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005: Evite parámetros excesivos en tipos genéricos
+
 |||
 |-|-|
 |TypeName|AvoidExcessiveParametersOnGenericTypes|
@@ -33,13 +36,13 @@ ms.lasthandoff: 04/19/2018
  Un tipo genérico visible externamente tiene más de dos parámetros de tipo.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Cuantos más parámetros de tipo contenga un tipo genérico, más difícil resulta saber y recordar qué representa cada uno de ellos. Esto resulta evidente normalmente con un parámetro de tipo, como en `List<T>`y en algunos casos con dos parámetros de tipo, como en `Dictionary<TKey, TValue>`. Si hay más de dos parámetros de tipo, la dificultad se vuelve demasiado grande para la mayoría de los usuarios (por ejemplo, `TooManyTypeParameters<T, K, V>` en C# o `TooManyTypeParameters(Of T, K, V)` en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+ Cuantos más parámetros de tipo contenga un tipo genérico, más difícil resulta saber y recordar qué representa cada uno de ellos. Suele ser evidente con un parámetro de tipo, como en `List<T>`y en algunos casos con dos parámetros de tipo, como en `Dictionary<TKey, TValue>`. Si existen más de dos parámetros de tipo, la dificultad se vuelve demasiado grande para la mayoría de los usuarios (por ejemplo, `TooManyTypeParameters<T, K, V>` en C# o `TooManyTypeParameters(Of T, K, V)` en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, cambie el diseño que se va a utilizar no más de dos parámetros de tipo.
+ Para corregir una infracción de esta regla, cambie el diseño para utilizar no más de dos parámetros de tipo.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- No suprima las advertencias de esta regla a menos que el diseño requiera absolutamente más de dos parámetros de tipo. Al proporcionar genéricos con una sintaxis que sea fácil de entender y usar reduce el tiempo que se necesita para obtener información y aumenta la velocidad de adopción de nuevas bibliotecas.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ No suprima una advertencia de esta regla a menos que el diseño requiera absolutamente más de dos parámetros de tipo. Al proporcionar genéricos con una sintaxis fácil de entender y usar reduce el tiempo necesario para obtener información y aumenta la tasa de adopción de nuevas bibliotecas.
 
 ## <a name="related-rules"></a>Reglas relacionadas
  [CA1010: Las colecciones deben implementar la interfaz genérica](../code-quality/ca1010-collections-should-implement-generic-interface.md)

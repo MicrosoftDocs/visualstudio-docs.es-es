@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::SetHostingProcessLanguage | Documentos de Microsoft
+title: IDebugProcess3::SetHostingProcessLanguage | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c6102761e69f8e6cc8bf0d94a81740c934d558f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 537b2c2b682db1e1bed8131df6f010e55ef47744
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900350"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
-Este método establece el idioma que el proceso se hospedará en. Este idioma, a continuación, se puede utilizar el motor de depuración (Alemania) para cargar el evaluador de expresiones adecuado.  
+Este método establece el idioma que se va a hospedar el proceso bajo. Este lenguaje, a continuación, puede utilizarse por el motor de depuración (DE) para cargar el evaluador de expresiones adecuado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,10 +41,10 @@ int SetHostingProcessLanguage(
   
 #### <a name="parameters"></a>Parámetros  
  `guidLang`  
- [in] `GUID` del lenguaje que debe usar el Alemania. Especifique `GUID_NULL` (C++) o `Guid.Empty` (C#) para que la DE utilice el idioma predeterminado.  
+ [in] `GUID` del lenguaje que debe usar la DE. Especificar `GUID_NULL` (C++) o `Guid.Empty` (C#) para que la DE usar el idioma predeterminado.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve el código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.  
   
 ## <a name="remarks"></a>Comentarios  
  [GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md) puede usarse para recuperar la configuración de idioma actual.  

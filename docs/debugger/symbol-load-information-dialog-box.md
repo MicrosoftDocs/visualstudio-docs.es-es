@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475423"
 ---
 # <a name="symbol-load-information-dialog-box"></a>Información de carga de símbolos (Cuadro de diálogo)
 El **cargar la información de símbolos** abre el cuadro de diálogo cuando hace clic en el **módulos** ventana y elija **cargar la información de símbolos**.  

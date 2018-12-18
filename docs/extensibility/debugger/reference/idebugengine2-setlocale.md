@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::SetLocale | Documentos de Microsoft
+title: IDebugEngine2::SetLocale | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eca2f05c290f27a6c3037ef14cbf32fd219b6253
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5575a96a438cc0dced0e1508776320747bf4d921
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866043"
 ---
 # <a name="idebugengine2setlocale"></a>IDebugEngine2::SetLocale
-Establece la configuración regional del motor de depuración (Alemania).  
+Establece la configuración regional del motor de depuración (DE).  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -43,10 +44,10 @@ int SetLocale(
  [in] Especifica la configuración regional de idioma. Por ejemplo, 1033 para inglés.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Se llama a este método mediante el Administrador de sesión de depuración (SDM) para propagar la configuración regional del IDE para que las cadenas devueltas por la DE correctamente están localizadas.  
+ Este método se llama por el Administrador de depuración de la sesión (SDM) para propagar la configuración regional del IDE para que las cadenas devueltas por la DE correctamente están localizadas.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

@@ -1,11 +1,11 @@
 ---
 title: IDebugApplication::StepOutComplete | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugApplication.StepOutComplete
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugApplication::StepOutComplete
 ms.assetid: 9675b214-7be5-4cf7-a63f-7865f3c54371
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725645"
 ---
 # <a name="idebugapplicationstepoutcomplete"></a>IDebugApplication::StepOutComplete
 Notifica al administrador de depuración de proceso que un motor de lenguaje en modo paso a paso está a punto de volver a su llamador.  

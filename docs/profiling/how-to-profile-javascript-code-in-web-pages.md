@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7da608523430724e279efc3d5c7c5d5b27564845
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 007603f0695a658b6bfa6c1ab1173b4483004c13
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843928"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>Cómo: Generar perfiles de código de JavaScript en páginas web
 
@@ -30,7 +31,7 @@ Puede usar el Asistente para generación de perfiles para crear una sesión de r
 
 Cuando se especifica la generación de perfiles de JavaScript, se generan los perfiles del código JavaScript que se ejecuta en el explorador y del código [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] que se ejecuta en el servidor.
 
-- Para una aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] , se generan los perfiles del código JavaScript que se ejecuta en el explorador y del código [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] que se ejecuta en el servidor.
+- Para una aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], se generan los perfiles del código JavaScript que se ejecuta en el explorador y del código [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] que se ejecuta en el servidor.
 
 - Para una página web arbitraria, se genera el perfil del código JavaScript que se ejecuta en el explorador.
 

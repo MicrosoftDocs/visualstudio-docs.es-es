@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetReference | Documentos de Microsoft
+title: IDebugProperty2::GetReference | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 949792723135c21f6554a98403cfa58554b60185
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7341c88bdf4039f16d87cdd137081c0c7bac5ba2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937543"
 ---
 # <a name="idebugproperty2getreference"></a>IDebugProperty2::GetReference
 Devuelve una referencia al valor de la propiedad.  
@@ -43,7 +44,7 @@ int GetReference(
  [out] Devuelve un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objeto que representa una referencia al valor de la propiedad.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error, normalmente `E_NOTIMPL` o `E_GETREFERENCE_NO_REFERENCE`.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error, normalmente `E_NOTIMPL` o `E_GETREFERENCE_NO_REFERENCE`.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   

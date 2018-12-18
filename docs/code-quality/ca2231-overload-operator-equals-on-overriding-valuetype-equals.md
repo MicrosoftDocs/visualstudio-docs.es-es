@@ -1,6 +1,7 @@
 ---
 title: 'CA2231: Sobrecargar el operador de igualdad al reemplazar el tipo de valor de igualdad'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -14,15 +15,20 @@ ms.assetid: 114c0161-261a-40ad-8b2c-0932d6909d2a
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 81d4a0d571a1692748453d64aa5d4cc3dced87ec
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: afdbb6f75754f5f7c839326139a57f2c20de97c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816600"
 ---
 # <a name="ca2231-overload-operator-equals-on-overriding-valuetypeequals"></a>CA2231: Sobrecargar el operador de igualdad al reemplazar el tipo de valor de igualdad
+
 |||
 |-|-|
 |TypeName|OverloadOperatorEqualsOnOverridingValueTypeEquals|
@@ -34,9 +40,9 @@ ms.lasthandoff: 04/19/2018
  Un tipo de valor invalida <xref:System.Object.Equals%2A?displayProperty=fullName> pero no implementa el operador de igualdad.
 
 ## <a name="rule-description"></a>Descripción de la regla
- En la mayoría de lenguajes de programación no hay ninguna implementación predeterminada del operador de igualdad (==) para tipos de valor. Si su lenguaje de programación admite las sobrecargas de operador, considere la posibilidad de implementar el operador de igualdad. Su comportamiento debería ser idéntico a la de <xref:System.Object.Equals%2A>.
+ No hay ninguna implementación predeterminada del operador de igualdad (==) para tipos de valor en la mayoría de lenguajes de programación. Si su lenguaje de programación admite las sobrecargas del operador, considere la posibilidad de implementar el operador de igualdad. Su comportamiento debe ser idéntico de <xref:System.Object.Equals%2A>.
 
- No puede utilizar el operador de igualdad predeterminado en una implementación sobrecargada del operador de igualdad. Si lo hace, provocará un desbordamiento de pila. Para implementar el operador de igualdad, utilice el método Object.Equals en la implementación. Por ejemplo:
+ No se puede usar el operador de igualdad predeterminado en una implementación del operador de igualdad sobrecargada. Si lo hace, provocará un desbordamiento de pila. Para implementar el operador de igualdad, utilice el método Object.Equals en su implementación. Por ejemplo:
 
 ```vb
 If (Object.ReferenceEquals(left, Nothing)) Then
@@ -55,11 +61,11 @@ return left.Equals(right);
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, implemente el operador de igualdad.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Es seguro suprimir una advertencia de esta regla; Sin embargo, se recomienda que proporcione el operador de igualdad si es posible.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ Es seguro suprimir una advertencia de esta regla; Sin embargo, recomendamos que proporcione el operador de igualdad si es posible.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se define un tipo que infringe esta regla.
+ El ejemplo siguiente define un tipo que infringe esta regla.
 
  [!code-csharp[FxCop.Usage.EqualsGetHashCode#1](../code-quality/codesnippet/CSharp/ca2231-overload-operator-equals-on-overriding-valuetype-equals_1.cs)]
 
@@ -75,4 +81,5 @@ return left.Equals(right);
  [CA2218: Invalidar el método GetHashCode al invalidar el método Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
 ## <a name="see-also"></a>Vea también
- <xref:System.Object.Equals%2A?displayProperty=fullName>
+
+- <xref:System.Object.Equals%2A?displayProperty=fullName>

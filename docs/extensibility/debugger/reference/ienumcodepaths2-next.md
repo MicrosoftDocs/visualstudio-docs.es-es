@@ -1,5 +1,5 @@
 ---
-title: IEnumCodePaths2::Next | Documentos de Microsoft
+title: IEnumCodePaths2::Next | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63e13ece4b91721cb391d5f7875c2799e297068b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7a58df90249cd1c4a5b41120aebefe8fc1fda6a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898270"
 ---
 # <a name="ienumcodepaths2next"></a>IEnumCodePaths2::Next
 Devuelve el siguiente conjunto de elementos de la enumeración.  
@@ -47,13 +48,13 @@ int Next(
  [in] El número de elementos que se va a recuperar. También especifica el tamaño máximo de la `rgelt` matriz.  
   
  `rgelt`  
- [entrada, salida] Matriz de [CODE_PATH](../../../extensibility/debugger/reference/code-path.md) elementos que deben rellenarse.  
+ [in, out] Matriz de [CODE_PATH](../../../extensibility/debugger/reference/code-path.md) elementos que deben rellenarse.  
   
  `pceltFetched`  
  [out] Devuelve el número de elementos realmente devueltos en `rgelt`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si pudieron devolverse un menor que el número solicitado de elementos; de lo contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`. Devuelve `S_FALSE` si podrían devolverse un menor que el número solicitado de elementos; de lo contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)   

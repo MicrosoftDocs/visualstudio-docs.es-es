@@ -1,7 +1,7 @@
 ---
 title: SDK de Azure para Python
 description: Azure SDK para Python facilita el consumo de servicios de Microsoft Azure en aplicaciones que se ejecutan en cualquier plataforma.
-ms.date: 01/22/2018
+ms.date: 10/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,15 +12,16 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 91f51f91008552e602991505f28ef4f076692f52
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9f1eb52e87cf9a411cf453c90f35ebc192616e8c
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050227"
 ---
 # <a name="azure-sdk-for-python"></a>SDK de Azure para Python
 
-Azure SDK para Python facilita el uso y la administración de los servicios de Microsoft Azure en aplicaciones que se ejecutan en Windows, Mac OS X y Linux.
+Azure SDK para Python facilita el uso y la administración de los servicios de Microsoft Azure en aplicaciones que se ejecutan en Windows, MacOS y Linux.
 
 ## <a name="installation"></a>Instalación
 
@@ -36,13 +37,11 @@ También puede seguir [Instalación de Python y el SDK](https://docs.microsoft.c
 
 ## <a name="documentation"></a>Documentación
 
-Puede encontrar documentación en [azure-sdk-for-python.readthedocs.org](https://docs.microsoft.com/en-us/python/azure/?view=azure-python).
+El [Centro para desarrolladores de Azure SDK para Python](https://docs.microsoft.com/python/azure/?view=azure-python) también tiene varios recursos útiles, lo que incluye una serie de tutoriales como:
 
-El [Centro para desarrolladores de Azure SDK para Python](http://azure.microsoft.com/develop/python/) también tiene varios recursos útiles, lo que incluye una serie de tutoriales como:
-
-- Creación de aplicaciones web con [Django](/azure/app-service-web/web-sites-python-create-deploy-django-app), [Flask](/azure/app-service-web/web-sites-python-create-deploy-flask-app) y [Bottle](/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
-- [Blob storage](/azure/storage/storage-python-how-to-use-blob-storage)
-- [Table storage](/azure/storage/storage-python-how-to-use-table-storage)
+- [Creación de aplicaciones web en Azure App Service en Linux](/azure/app-service/containers/quickstart-python).
+- [Blob storage](/azure/storage/blobs/storage-quickstart-blobs-python)
+- [Table storage](/azure/cosmos-db/table-storage-how-to-use-python)
 - [Queue storage](/azure/storage/storage-python-how-to-use-queue-storage)
 - [Azure Cosmos DB](/azure/cosmos-db/sql-api-python-application)
 - [Colas de Service Bus](/azure/service-bus-messaging/service-bus-python-how-to-use-queues)
@@ -54,10 +53,9 @@ Para las API públicas sin documentación, las pruebas unitarias del [repositori
 - [Pruebas unitarias de almacenamiento](https://github.com/Azure/azure-storage-python/tree/master/tests)
 - [Pruebas unitarias de Service Bus](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-servicebus/tests)
 - [Pruebas unitarias de Service Management](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-servicemanagement-legacy/tests)
-- [Pruebas unitarias de Administración de recursos](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-mgmt/tests)
 
 ## <a name="support"></a>Compatibilidad
 
-El repositorio de Git del SDK se encuentra en [https://github.com/Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python).
+El repositorio de GitHub del SDK se encuentra en [https://github.com/Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python).
 
 [Registre los problemas en el repositorio](https://github.com/Azure/azure-sdk-for-python/issues) si encuentra algún problema o tiene preguntas sobre el uso del SDK.

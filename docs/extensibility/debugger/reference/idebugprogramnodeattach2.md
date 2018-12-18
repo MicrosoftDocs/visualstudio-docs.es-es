@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31120694"
 ---
 # <a name="idebugprogramnodeattach2"></a>IDebugProgramNodeAttach2
 Permite a un nodo de programa recibir una notificación de un intento para adjuntar al programa.  

@@ -1,5 +1,5 @@
 ---
-title: IDebugEventCallback2::Event | Documentos de Microsoft
+title: IDebugEventCallback2::Event | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ea52b8be040df50da1585165599c4fdea635557
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc61f6a8b2a8a069d0fb921e4dbfe631088b2925
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913324"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 Envía una notificación de eventos de depuración.  
@@ -52,10 +53,10 @@ int Event(
   
 #### <a name="parameters"></a>Parámetros  
  `pEngine`  
- [in] Un [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) objeto que representa el motor de depuración (Alemania) que está enviando este evento. Es necesario un Alemania para rellenar este parámetro.  
+ [in] Un [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) objeto que representa el motor de depuración (DE) que envía este evento. Se requiere a DE rellenar este parámetro.  
   
  `pProcess`  
- [in] Un [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objeto que representa el proceso en el que se produce el evento. Este parámetro se rellena mediante el Administrador de sesión de depuración (SDM). Un Alemania siempre transfiere un valor null para este parámetro.  
+ [in] Un [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objeto que representa el proceso en el que se produce el evento. Este parámetro se rellena mediante el Administrador de depuración de la sesión (SDM). A DE siempre transfiere un valor null para este parámetro.  
   
  `pProgram`  
  [in] Un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa el programa en el que se produce este evento. Para la mayoría de los eventos, este parámetro no es un valor null.  
@@ -67,18 +68,18 @@ int Event(
  [in] Un [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) objeto que representa el evento de depuración.  
   
  `riidEvent`  
- [in] GUID que identifica la interfaz de eventos que se obtiene de la `pEvent` parámetro.  
+ [in] GUID que identifica la interfaz de eventos que desea obtener de la `pEvent` parámetro.  
   
  `dwAttrib`  
- [in] Una combinación de indicadores de la [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) enumeración.  
+ [in] Una combinación de marcas de la [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) enumeración.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Cuando se llama a este método, el `dwAttrib` parámetro debe coincidir con el valor devuelto de la [GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md) pasa el método que llama en el objeto de evento en el `pEvent` parámetro.  
+ Cuando se llama a este método, el `dwAttrib` parámetro debe coincidir con el valor devuelto de la [GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md) método tal como se llama en el objeto de evento pasado el `pEvent` parámetro.  
   
- Todos los eventos de depuración se registran de forma asincrónica, independientemente de si un evento es asincrónico o no. Cuando un Alemania llama a este método, el valor devuelto no indica si el evento se ha procesado, solo si se ha recibido el evento. De hecho, en la mayoría de los casos, el evento no ha procesado cuando este método devuelve.  
+ Todos los eventos de depuración se registran de forma asincrónica, independientemente de si un evento en sí es asincrónico o no. Cuando a DE llama a este método, el valor devuelto no indica si se procesó el evento, sólo si se recibió el evento. De hecho, en determinadas circunstancias, el evento no se ha procesado cuando este método devuelve.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   

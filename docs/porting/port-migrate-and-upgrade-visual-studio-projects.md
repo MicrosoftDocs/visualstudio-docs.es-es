@@ -1,8 +1,14 @@
 ---
-title: Portar, migrar y actualizar proyectos de Visual Studio
-ms.date: 03/14/2018
+title: Portar, migrar y actualizar proyectos
+description: Una referencia de la compatibilidad en Visual Studio 2017 para los proyectos creados en versiones anteriores de Visual Studio y cómo Visual Studio decide cuándo es necesario migrar un proyecto.
+ms.date: 10/09/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
+author: kraigb
+ms.author: kraigb
+manager: douge
+ms.workload: multiple
 f1_keywords:
 - Win8ExpressDesktopBlock
 - w8trefactor
@@ -13,34 +19,29 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-author: kraigb
-ms.author: kraigb
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 82c92365d3e77631dd2cbbce4079ac982d80ef14
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0c082540632be14f7ddce94cb64ef41f03b1e1f7
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349548"
 ---
-# <a name="port-migrate-and-upgrade-visual-studio-projects"></a>Portar, migrar y actualizar proyectos de Visual Studio
+# <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Referencia de migración y actualización de proyectos para Visual Studio 2017
 
-Cada nueva versión de Visual Studio suele ser compatible con la mayoría de los tipos anteriores de proyectos, archivos y otros activos. Puede trabajar con ellos [igual que ha hecho hasta ahora](../ide/solutions-and-projects-in-visual-studio.md) y, siempre y cuando no dependa de las características más recientes, Visual Studio mantendrá por lo general la compatibilidad con versiones anteriores, como Visual Studio 2015, Visual Studio 2013 y Visual Studio 2012. (Vea en [Notas de la versión](https://www.visualstudio.com/vs/release-notes/) las funciones específicas de cada versión).
+Cada nueva versión de Visual Studio suele ser compatible con la mayoría de los tipos anteriores de proyectos, archivos y otros activos. Puede trabajar con ellos [igual que ha hecho hasta ahora](../ide/solutions-and-projects-in-visual-studio.md) y, siempre y cuando no dependa de las características más recientes, Visual Studio mantendrá por lo general la compatibilidad con versiones anteriores, como Visual Studio 2015, Visual Studio 2013 y Visual Studio 2012. (Vea en [Notas de la versión](https://visualstudio.microsoft.com/vs/release-notes/) las funciones específicas de cada versión).
 
 La compatibilidad con algunos tipos de proyecto también cambia a lo largo del tiempo. Una versión más reciente de Visual Studio podría no admitir ciertos proyectos o requerir la actualización de un proyecto, de forma que ya no sea compatible con versiones anteriores. Para obtener información actualizada sobre los problemas de migración, vea el [sitio de la comunidad para desarrolladores de Visual Studio](https://developercommunity.visualstudio.com).
 
-> [!Important]
-> El presente artículo proporciona información solo para los tipos de proyectos de Visual Studio 2017 que implican migración. No incluye tipos de proyectos compatibles que no tienen problemas de migración. Esa lista se encuentra en [Compatibilidad y destinatarios de la plataforma de Visual Studio 2017](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs). Tenga en cuenta también que algunos tipos de proyectos ya no se admiten en Visual Studio 2017 y, por lo tanto, no pueden migrarse.
+En el presente artículo se proporciona información solo para los tipos de proyectos de Visual Studio 2017 que se pueden migrar. En el artículo no se incluyen los tipos de proyecto que ya no se admiten en Visual Studio 2017 y, por tanto, no se pueden migrar. Tampoco se incluyen los tipos de proyectos compatibles que no tienen problemas de migración. Esa lista se encuentra en [Compatibilidad y destinatarios de la plataforma de Visual Studio 2017](/visualstudio/productinfo/vs2017-compatibility-vs).
 
 > [!Important]
-> Determinados tipos de proyectos requieren la instalación de las cargas de trabajo adecuadas mediante el instalador de Visual Studio. Si no tiene la carga de trabajo instalada, Visual Studio notifica que se trata de un tipo de proyecto incompatible o desconocido. En ese caso, compruebe sus opciones de instalación y vuelva a intentarlo. De nuevo, vea el artículo [Compatibilidad y destinatarios de la plataforma de Visual Studio 2017](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs) para obtener información sobre la compatibilidad de proyectos en Visual Studio 2017.
+> Determinados tipos de proyectos requieren la instalación de las cargas de trabajo adecuadas mediante el instalador de Visual Studio. Si no tiene la carga de trabajo instalada, Visual Studio notifica que se trata de un tipo de proyecto incompatible o desconocido. En ese caso, compruebe sus opciones de instalación y vuelva a intentarlo. De nuevo, vea el artículo [Compatibilidad y destinatarios de la plataforma de Visual Studio 2017](/visualstudio/productinfo/vs2017-compatibility-vs) para obtener información sobre la compatibilidad de proyectos en Visual Studio 2017.
 
 ## <a name="project-types"></a>Tipos de proyecto
 
 En la lista siguiente se describe la compatibilidad de Visual Studio 2017 con proyectos creados en versiones anteriores.
 
-Si no encuentra un tipo de archivo o proyecto que debería mostrarse, consulte la [versión de Visual Studio 2015 de este artículo](https://msdn.microsoft.com/library/hh266747.aspx) y use la opción "Enviar comentarios de la documentación" al final de la página para proporcionar detalles de sus proyecto. (Si desea una respuesta, utilice los comentarios de la documentación en lugar del control anónimo "¿Le resulta útil esta página?").
+Si no encuentra un tipo de archivo o proyecto que debería mostrarse, consulte la [versión de Visual Studio 2015 de este artículo](https://docs.microsoft.com/visualstudio/porting/porting-migrating-and-upgrading-visual-studio-projects?view=vs-2015) y use la opción "Enviar comentarios de la documentación" al final de la página para proporcionar detalles de sus proyecto. (Si desea una respuesta, utilice los comentarios de la documentación en lugar del control anónimo "¿Le resulta útil esta página?").
 
 | Tipo de proyecto | Compatibilidad |
 | --- | --- |
@@ -57,7 +58,7 @@ Si no encuentra un tipo de archivo o proyecto que debería mostrarse, consulte l
 | Programa de instalación de MSI (vdproj) | Vea Proyectos de InstallShield. |
 | Office 2007 VSTO | Requiere una actualización unidireccional para Visual Studio 2017. |
 | Office 2010 VSTO | Si el proyecto tiene como destino .NET Framework 4, puede abrirlo en Visual Studio 2010 SP1 y posterior. Todos los demás proyectos requieren una actualización unidireccional. |
-| Service Fabric (sfproj) | Los proyectos de aplicación de Service Fabric se pueden abrir en Visual Studio 2015 o Visual Studio 2017, a menos que las referencias al proyecto de aplicación de Service Fabric hagan referencia a un proyecto de servicio de ASP.NET Core. Los proyectos de Service Fabric de Visual Studio 2015 que se abren en Visual Studio de 2017 se migran de manera unidireccional del formato xproj al csproj. Consulte la sección "Proyectos de .NET Core (xproj)" anteriormente en esta tabla. |
+| Service Fabric (sfproj) | Los proyectos de aplicación de Service Fabric se pueden abrir en Visual Studio 2015 o Visual Studio 2017, a menos que el proyecto de aplicación de Service Fabric haga referencia a un proyecto de servicio de ASP.NET Core. Los proyectos de Service Fabric de Visual Studio 2015 que se abren en Visual Studio de 2017 se migran de manera unidireccional del formato xproj al csproj. Consulte la sección "Proyectos de .NET Core (xproj)" anteriormente en esta tabla. |
 | SharePoint 2010 | Cuando se abra un proyecto de solución de SharePoint con Visual Studio 2017, se actualizará a SharePoint 2013 o SharePoint 2016. La carga de trabajo "Desarrollo de escritorio de .NET" debe instalarse en Visual Studio 2017 para la actualización.<br/><br/>Para más información sobre cómo actualizar proyectos de SharePoint, vea [Actualizar a SharePoint 2013](https://technet.microsoft.com/library/cc303420.aspx), [Actualizar flujo de datos en SharePoint Server 2013](https://technet.microsoft.com/library/dn133867.aspx) y [Crear la granja de servidores de SharePoint Server 2016 para una actualización de agregación de base de datos](https://technet.microsoft.com/library/cc263026(v=office.16).aspx). |
 | SharePoint 2016 | Los proyectos Complemento de SharePoint creados en Office Developer Tools Preview 2 no se puede abrir en Visual Studio 2017. Como solución alternativa a esta limitación, actualice `MinimumVisualStudioVersion` a 12.0 y `MinimumOfficeToolsVersion` a 12.2 en el archivo csproj o vbproj. |
 | Silverlight | Los proyectos de Silverlight no se admiten en Visual Studio 2017. Para conservar las aplicaciones de Silverlight, siga usando Visual Studio 2015. |
@@ -67,14 +68,14 @@ Si no encuentra un tipo de archivo o proyecto que debería mostrarse, consulte l
 | Extensibilidad de Visual Studio/VSIX | Los proyectos con MinimumVersion 14.0 o menos se actualizarán para que declaren MinimumVersion 15.0, lo que impide que el proyecto se abra en versiones anteriores de Visual Studio. Para permitir que un proyecto se abra en versiones anteriores, establezca MinimumVersion en `$(VisualStudioVersion)`. Vea también [How to: Migrate Extensibility Projects to Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) (Cómo: Migrar proyectos de extensibilidad a Visual Studio 2017). |
 | Visual Studio Lab Management | Puede usar Microsoft Test Manager o Visual Studio 2010 SP1 y versiones posteriores para abrir entornos creados en cualquiera de estas versiones. En el caso de Visual Studio 2010 SP1, la versión de Microsoft Test Manager debe coincidir con la versión de Team Foundation Server para poder crear entornos. |
 | Visual Studio Tools para Apache Cordova | Los proyectos se pueden abrir en Visual Studio 2017, pero no son compatibles con versiones anteriores. Al abrir un proyecto de Visual Studio 2015, se le pedirá que permita realizar modificaciones en el proyecto. Esta modificación actualiza el proyecto para que use conjuntos de herramientas en lugar de un archivo `taco.json` para administrar el control de versiones de la biblioteca de Cordova, sus plataformas, complementos y dependencias de nodo/npm. Vea la [guía de migración](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/migrate-from-visual-studio-2015) para obtener más información. |
-| Implementación web (wdproj) | La compatibilidad de los proyectos de implementación web se ha retirado de los proyectos de Visual Studio 2012 con la adición de la compatibilidad del perfil de publicación. Debido a que no hay un equivalente en Visual Studio 2017, no existe una ruta de migración automática para estos proyectos. En su lugar, abra el archivo wdproj en un editor de texto y copie y pegue cualquier personalización en el archivo pubxml (perfil de publicación), tal como se describe en [StackOverflow](https://stackoverflow.com/a/12061065/1203388). Consulte también [Plans regarding website and web deployment projects (MSDN blogs)](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects) (Planes relacionados con proyectos de sitios web y de implementación web [blogs de MSDN]). |
+| Implementación web (wdproj) | La compatibilidad de los proyectos de implementación web se ha retirado de los proyectos de Visual Studio 2012 con la adición de la compatibilidad del perfil de publicación. Debido a que no hay un equivalente en Visual Studio 2017, no existe una ruta de migración automática para estos proyectos. En su lugar, abra el archivo wdproj en un editor de texto y copie y pegue cualquier personalización en el archivo pubxml (perfil de publicación), tal como se describe en [StackOverflow](https://stackoverflow.com/a/12061065/1203388). Vea también [Plans regarding website and web deployment projects](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects/) (Planes relacionados con proyectos de sitios web y de implementación web). |
 | Windows Communication Foundation y Windows Workflow Foundation | Puede abrir este proyecto en Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 y Visual Studio 2012. |
 | Windows Presentation Foundation | Puede abrir este proyecto en Visual Studio 2013, Visual Studio 2012 y Visual Studio 2010 SP1. |
 | Aplicaciones de la Tienda Windows/Windows Phone | Los proyectos para la Tienda Windows 8.1 y 8.0 y Windows Phone 8.1 y 8.0 no son compatibles con Visual Studio 2017. Para conservar estas aplicaciones, siga usando Visual Studio 2015. Para conservar los proyectos de Windows Phone 7.x, use Visual Studio 2012. |
 
 ## <a name="how-visual-studio-decides-when-to-migrate-a-project"></a>Cómo decide Visual Studio el momento de migrar un proyecto
 
-Por lo general, las nuevas versiones de Visual Studio procuran mantener la compatibilidad con versiones anteriores para que, por ejemplo, un mismo proyecto se pueda abrir, modificar y compilar en distintas versiones. A pesar de ello, a lo largo del tiempo se producen cambios inevitables que hacen que algunos tipos de proyecto dejen de ser compatibles. (Consulte [Compatibilidad y destinatarios de la plataforma](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs) para ver los tipos de proyecto admitidos en Visual Studio de 2017). En estos casos, la versión más reciente de Visual Studio no podrá cargar el proyecto y no ofrecerá una ruta de migración. Por tanto, es necesario mantener ese proyecto en una versión anterior de Visual Studio que sí lo admita.
+Por lo general, las nuevas versiones de Visual Studio procuran mantener la compatibilidad con versiones anteriores para que, por ejemplo, un mismo proyecto se pueda abrir, modificar y compilar en distintas versiones. A pesar de ello, a lo largo del tiempo se producen cambios inevitables que hacen que algunos tipos de proyecto dejen de ser compatibles. (Consulte [Compatibilidad y destinatarios de la plataforma](/visualstudio/productinfo/vs2017-compatibility-vs) para ver los tipos de proyecto admitidos en Visual Studio de 2017). En estos casos, la versión más reciente de Visual Studio no podrá cargar el proyecto y no ofrecerá una ruta de migración. Por tanto, es necesario mantener ese proyecto en una versión anterior de Visual Studio que sí lo admita.
 
 En otros casos, la versión más reciente de Visual Studio puede abrir un proyecto, pero con el inconveniente de que debe actualizarlo o migrarlo de forma que deja de ser compatible con versiones anteriores. Visual Studio usa una serie de criterios para determinar si es necesaria dicha migración:
 
@@ -90,7 +91,7 @@ Si dicha compatibilidad no es posible, como sucede con algunos de los tipos de p
 
 Los cambios unidireccionales pueden implicar el cambio de la propiedad `ToolsVersion` en el archivo de proyecto. Esta propiedad indica exactamente qué versión de MSBuild puede convertir el código fuente del proyecto en los artefactos ejecutables e implementables deseados. Es decir, lo que hace que un proyecto sea incompatible con versiones anteriores de Visual Studio no es la versión de *Visual Studio*, sino la versión de *MSBuild*, tal como determina `ToolsVersion`. Siempre y cuando la versión de Visual Studio contenga la cadena de herramientas de MSBuild que coincida con la propiedad `ToolsVersion` de un proyecto, Visual Studio puede invocar esa cadena de herramientas para compilar el proyecto.
 
-Para mantener la máxima compatibilidad con los proyectos creados en versiones anteriores, Visual Studio 2017 incluye las cadenas de herramientas de MSBuild necesarias para admitir `ToolsVersion` 15, 14, 12 y 4. Los proyectos que usan cualquiera de estos valores de `ToolsVersion` deberían dar como resultado una compilación correcta. (De nuevo, dependerá de si Visual Studio 2017 admite el tipo de proyecto, tal como se describe en [Compatibilidad y destinatarios de la plataforma](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs)).
+Para mantener la máxima compatibilidad con los proyectos creados en versiones anteriores, Visual Studio 2017 incluye las cadenas de herramientas de MSBuild necesarias para admitir `ToolsVersion` 15, 14, 12 y 4. Los proyectos que usan cualquiera de estos valores de `ToolsVersion` deberían dar como resultado una compilación correcta. (De nuevo, dependerá de si Visual Studio 2017 admite el tipo de proyecto, tal como se describe en [Compatibilidad y destinatarios de la plataforma](/visualstudio/productinfo/vs2017-compatibility-vs)).
 
 En este contexto, lo normal es que surja la pregunta de si se debe intentar actualizar manualmente o migrar un proyecto a un valor más reciente de `ToolsVersion`. Realizar un cambio de este tipo no es necesario, y probablemente generaría muchos errores y advertencias que habría que corregir para que el proyecto se compilase de nuevo. Además, si Visual Studio deja de ser compatible con un determinado valor de `ToolsVersion` en el futuro, cuando se abra el proyecto se desencadenará el proceso de migración del proyecto porque será necesario cambiar el valor de `ToolsVersion`. En tal caso, el subsistema de ese tipo de proyecto específico sabe exactamente qué es lo que debe cambiarse y puede realizar los cambios de manera automática, tal como se ha descrito anteriormente en este artículo.
 

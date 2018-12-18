@@ -1,5 +1,5 @@
 ---
-title: PromptForSaveOnCreation (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
+title: PromptForSaveOnCreation (elemento) (plantillas de Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92be0bc15542010cfeea8a9ee70e69ff52e14163
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2c5b04bfa04b1b6fd6599e5fdd06d6c58210f635
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638448"
 ---
-# <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation (Elemento, Plantillas de Visual Studio)
-Especifica si se pide al usuario para un proyecto guardado ubicaciones a través de la **nuevo proyecto** cuadro de diálogo al crear un proyecto. Si este elemento está establecido en `true`, a continuación, se solicitará al usuario un proceso de guardar ubicación; si `false`, a continuación, no se les pide. (Es decir, se crea un proyecto temporal).  
+# <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation (elemento) (plantillas de Visual Studio)
+Especifica si se pide al usuario para un proyecto de la ubicación a través de almacenamiento la **nuevo proyecto** cuadro de diálogo al crear un proyecto. Si este elemento está establecido en `true`, a continuación, se solicitará al usuario una operación de guardar ubicación; si `false`, a continuación, se les pide no. (Es decir, se crea un proyecto temporal).  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -30,7 +31,7 @@ Especifica si se pide al usuario para un proyecto guardado ubicaciones a través
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```xml  
 <PromptForSaveOnCreation> true/false </PromptForSaveOnCreation>  
 ```  
   
@@ -52,7 +53,7 @@ Especifica si se pide al usuario para un proyecto guardado ubicaciones a través
 ## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto.  
   
- El texto debe ser `true` o `false`, `true` que indica que el usuario se le pedirá un proceso de guardar ubicación al crear un nuevo proyecto.  
+ El texto debe ser `true` o `false`, `true` que indica que se pedirá al usuario para una operación de guardar ubicación al crear un nuevo proyecto.  
   
 ## <a name="remarks"></a>Comentarios  
  `PromptForSaveOnCreation` es un elemento opcional. El valor predeterminado es `false`.  
@@ -60,7 +61,7 @@ Especifica si se pide al usuario para un proyecto guardado ubicaciones a través
  Proyectos temporales son proyectos que puede crear y modificar sin guardar el contenido de ese proyecto en el disco.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se establece el valor de `PromptForSaveOnCreation` igual a `false`, que especifica para permitir que el proyecto se deben crear como un proyecto temporal.  
+ En el ejemplo siguiente se establece el valor de `PromptForSaveOnCreation` igual a `false`, lo que especifica que el proyecto se deben crear como un proyecto temporal.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -89,4 +90,4 @@ Especifica si se pide al usuario para un proyecto guardado ubicaciones a través
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
+ [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)

@@ -13,13 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55e801404fbf3356b597471d7c3dda23264eb0c5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 54efd3d68e81908d3843525b588d9c28cc1be3ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921293"
 ---
-# <a name="how-to-choose-collection-methods"></a>Cómo: Elegir métodos de recolección
+# <a name="how-to-choose-collection-methods"></a>Cómo: Elegir métodos de recopilación
 
 Las Herramientas de generación de perfiles de Visual Studio admiten tres métodos de recopilación de datos de rendimiento: muestreo, instrumentación y simultaneidad. También puede utilizar el método de muestreo o de instrumentación para recopilar datos de duración y de asignación de memoria de .NET.
 
@@ -31,12 +32,12 @@ Puede utilizar propiedad de la sesión de rendimiento **Método** para especific
 
 - En la primera página del asistente, seleccione una de las siguientes opciones:
 
-|Opción|Description|
-|------------|-----------------|
-|**Muestreo de la CPU**|Recopila estadísticas de la aplicación que son útiles para el análisis inicial y para analizar problemas de utilización de CPU.|
-|**Instrumentación**|Recopila datos de control de tiempo detallados que son útiles para un análisis enfocado y para analizar problemas de rendimiento de entrada/salida.|
-|**Asignación de memoria de .NET**|Recopila datos de asignación de memoria de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] mediante el método de generación de perfiles de muestreo.|
-|**Simultaneidad**|Recopila datos de contención de recursos numéricos.|
+| Opción | Descripción |
+|----------------------------| - |
+| **Muestreo de la CPU** | Recopila estadísticas de la aplicación que son útiles para el análisis inicial y para analizar problemas de utilización de CPU. |
+| **Instrumentación** | Recopila datos de control de tiempo detallados que son útiles para un análisis enfocado y para analizar problemas de rendimiento de entrada/salida. |
+| **Asignación de memoria de .NET** | Recopila datos de asignación de memoria de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] mediante el método de generación de perfiles de muestreo. |
+| **Simultaneidad** | Recopila datos de contención de recursos numéricos. |
 
 ## <a name="performance-explorer"></a>Explorador de rendimiento
 
@@ -52,7 +53,7 @@ Puede utilizar propiedad de la sesión de rendimiento **Método** para especific
 
 1. En **Explorador de rendimiento**, seleccione la sesión de rendimiento.
 
-     Un nombre de archivo de la sesión de rendimiento tiene la extensión .psess.
+     Un nombre de archivo de la sesión de rendimiento tiene la extensión .*psess*.
 
 2. Haga clic con el botón derecho en la sesión de rendimiento y, después, haga clic en **Propiedades**.
 
@@ -80,7 +81,7 @@ Puede utilizar propiedad de la sesión de rendimiento **Método** para especific
 
 6. Haga clic en **Recopilar también la información de duración de los objetos .NET** para recopilar datos sobre las generaciones de recolección de elementos no utilizados en que se reclama la memoria del objeto (opcional).
 
-     Para obtener información sobre las demás opciones que están disponibles al recopilar datos de memoria de .NET, consulte [Recopilar datos de duración y asignación de memoria de .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md).
+     Para obtener información sobre las demás opciones que están disponibles al recopilar datos de memoria de .NET, vea [Recopilar datos de duración y asignación de memoria de .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md).
 
 ### <a name="to-select-concurrency-data-collection-by-using-performance-session-properties"></a>Para seleccionar la recopilación de datos de simultaneidad mediante las propiedades de la sesión de rendimiento
 
@@ -92,6 +93,6 @@ Puede utilizar propiedad de la sesión de rendimiento **Método** para especific
 
 ## <a name="see-also"></a>Vea también
 
-[Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)  
+[Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)  
 [Introducción a los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)  
-[Propiedades de la sesión de rendimiento](../profiling/performance-session-properties.md)
+[Propiedades de las sesiones de rendimiento](../profiling/performance-session-properties.md)

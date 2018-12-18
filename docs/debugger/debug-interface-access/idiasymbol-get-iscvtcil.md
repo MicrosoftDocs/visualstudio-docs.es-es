@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_iscvtcil | Documentos de Microsoft'
+title: Get_iscvtcil | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a959b145775bdc1ea5e6073e03b304ad33f84c83
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7d721338e1dfc21a54ce663377aba0aa71c83a87
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836468"
 ---
 # <a name="idiasymbolgetiscvtcil"></a>IDiaSymbol::get_isCVTCIL
 Recupera una marca que indica si el módulo se convirtió desde un módulo de Common Intermediate Language (CIL) en un módulo nativo.  
@@ -33,22 +34,22 @@ HRESULT get_isCVTCIL(
   
 #### <a name="parameters"></a>Parámetros  
  `pFlag`  
- [out] Devuelve `TRUE` si el módulo se convirtió de CIL en código nativo; en caso contrario, devuelve `FALSE`.  
+ [out] Devuelve `TRUE` si el módulo se convirtió de CIL en código nativo; de lo contrario, devuelve `FALSE`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
 ## <a name="remarks"></a>Comentarios  
- Esta propiedad está disponible en la `SymTagCompilandDetails` tipo de símbolo (vea [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md).  
+ Esta propiedad está disponible desde el `SymTagCompilandDetails` tipo de símbolos (consulte [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md).  
   
 ## <a name="requirements"></a>Requisitos  
   
 |Requisito|Descripción|  
 |-----------------|-----------------|  
-|Encabezado:|dia2.h|  
+|Encabezado:|Dia2.h|  
 |Versión:|SDK de DIA v8.0|  
   
 ## <a name="see-also"></a>Vea también  

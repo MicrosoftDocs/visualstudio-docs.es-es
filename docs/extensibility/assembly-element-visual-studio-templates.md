@@ -1,5 +1,5 @@
 ---
-title: Assembly (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
+title: Elemento Assembly (plantillas de Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,14 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97e6209fdf446d88ed79ef741c3584b2bc4f5602
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 195faf23ecb2fca019b4948b3150ab6f9c00f5ec
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155469"
 ---
-# <a name="assembly-element-visual-studio-templates"></a>Assembly (Elemento, Plantillas de Visual Studio)
-Especifica información sobre un ensamblado, que la plantilla se utiliza para agregar una referencia de ese ensamblado a los proyectos.  
+# <a name="assembly-element-visual-studio-templates"></a>Elemento Assembly (plantillas de Visual Studio)
+Especifica información sobre un ensamblado, que usa la plantilla para agregar una referencia de ensamblado a los proyectos.  
   
  \<VSTemplate >  
  \<TemplateContent >  
@@ -55,7 +56,7 @@ Especifica información sobre un ensamblado, que la plantilla se utiliza para ag
 ## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto.  
   
- Este texto especifica el ensamblado que se va a agregar a un proyecto cuando se crea una instancia de la plantilla de elemento. Este nombre de ensamblado debe especificarse en una de las maneras siguientes:  
+ Este texto especifica el ensamblado para agregar a un proyecto cuando se crea una instancia de la plantilla de elemento. Este nombre de ensamblado debe especificarse en una de las maneras siguientes:  
   
 -   Como un nombre completo del ensamblado. Por ejemplo:  
   
@@ -74,10 +75,10 @@ Especifica información sobre un ensamblado, que la plantilla se utiliza para ag
 ## <a name="remarks"></a>Comentarios  
  `Assembly` es un elemento secundario obligatorio de `Reference`.  
   
- El `Reference`, `References,` y `Assembly` elementos solo se pueden utilizar en archivos .vstemplate que tienen un `Type` valor del atributo `Item`.  
+ El `Reference`, `References,` y `Assembly` elementos solo se pueden utilizar en *.vstemplate* los archivos que tienen un `Type` valor del atributo `Item`.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra el `TemplateContent` elemento de una plantilla de elementos. Este código XML agrega referencias a los ensamblados System.dll y System.Data.dll.  
+ El ejemplo siguiente ilustra la `TemplateContent` elemento de una plantilla de elemento. Este código XML agrega las referencias a la *System.dll* y *System.Data.dll* ensamblados.  
   
 ```  
 <TemplateContent>  
@@ -99,4 +100,4 @@ Especifica información sobre un ensamblado, que la plantilla se utiliza para ag
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
+ [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)

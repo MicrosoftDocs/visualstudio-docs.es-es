@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: instalar Visual Studio Tools para Office Runtime redistribuible | Documentos de Microsoft'
+title: 'Cómo: instalar Visual Studio Tools para Office runtime redistribuible'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,14 +16,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 552ef84dc5b4bba8b9f63173d41a43a4efd82a14
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 15e3c1b25d4834808fb17e596fcc7babe7dd969f
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255855"
 ---
-# <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Cómo: Instalar el Motor en runtime de Microsoft Visual Studio Tools para Office redistribuible
-  Visual Studio 2010 Tools para Office Runtime debe instalarse en cada equipo que ejecuta las soluciones que se crean mediante las herramientas de desarrollo de Microsoft Office en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. El runtime se instala de forma automática cuando se instala [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] y Microsoft Office. Para obtener más información, consulta [Visual Studio Tools for Office Runtime Installation Scenarios](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
+# <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Cómo: instalar Visual Studio Tools para Office runtime redistribuible
+  Visual Studio 2010 Tools para Office runtime debe instalarse en cada equipo que ejecuta las soluciones que se crean mediante el uso de Microsoft Office developer tools en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. El runtime se instala de forma automática cuando se instala [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] y Microsoft Office. Para obtener más información, consulte [Visual Studio Tools para escenarios de instalación de Office en tiempo de ejecución](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
   
  En las situaciones siguientes, deberá seguir las instrucciones de instalación manual que aparecen a continuación:  
   
@@ -34,7 +35,7 @@ ms.lasthandoff: 04/16/2018
     > [!NOTE]  
     >  Tiene que ser administrador del equipo de desarrollo para instalar .NET Framework y [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
   
-### <a name="to-install-the-visual-studio-tools-for-office-runtime"></a>Para instalar el runtime de Microsoft Visual Studio Tools para Office  
+## <a name="to-install-the-visual-studio-tools-for-office-runtime"></a>Para instalar el runtime de Microsoft Visual Studio Tools para Office  
   
 1.  Instale [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores.  
   
@@ -44,18 +45,18 @@ ms.lasthandoff: 04/16/2018
   
     -   Para descargar el [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], consulte [Microsoft .NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653).  
   
-2.  Ejecute vstor_redist.exe para instalar [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
+2.  Ejecute *vstor_redist.exe* para instalar el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
   
-     Puede descargar estos archivos de programa de instalación de [Visual Studio 2010 Tools para Office Runtime](http://go.microsoft.com/fwlink/?LinkId=140384). Los requisitos previos para [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] coinciden con los requisitos previos para .NET Framework.  
+     Puede descargar estos archivos de programa de instalación de [Visual Studio 2010 Tools para Office runtime](http://go.microsoft.com/fwlink/?LinkId=140384). Los requisitos previos para [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] coinciden con los requisitos previos para .NET Framework.  
   
-     El [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]incluye paquetes de idioma. Si la instalación de Windows está establecida en un idioma distinto del inglés, puede mostrar los mensajes del runtime en el mismo idioma que se usa para Windows. De igual forma, si los usuarios finales instalan [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] y, a continuación, ejecutan sus soluciones en instalaciones de Windows que están establecidas en un idioma distinto del inglés, los mensajes del runtime aparecerán en el mismo idioma que Windows. En algunos casos, puede necesitar paquetes de idioma adicionales. Por ejemplo, podría necesitar paquetes de idioma adicionales si su copia de Windows utiliza más de una configuración de idioma, o cambia a otro idioma después de que ya ha instalado el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Puede encontrar paquetes de idioma en [Microsoft Visual Studio 2010 Tools para el paquete de idioma de Microsoft Office System (versión 4.0 Runtime)](http://go.microsoft.com/fwlink/?LinkId=140386).  
+     El [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]incluye paquetes de idioma. Si la instalación de Windows está establecida en un idioma distinto del inglés, puede mostrar los mensajes del runtime en el mismo idioma que se usa para Windows. De igual forma, si los usuarios finales instalan [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] y, a continuación, ejecutan sus soluciones en instalaciones de Windows que están establecidas en un idioma distinto del inglés, los mensajes del runtime aparecerán en el mismo idioma que Windows. En algunos casos, puede necesitar paquetes de idioma adicionales. Por ejemplo, puede necesitar paquetes de idioma adicionales si su copia de Windows utiliza más de una configuración de idioma, o cambia a otro idioma después de que ya ha instalado el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Puede encontrar paquetes de idioma en [Microsoft Visual Studio 2010 Tools para el paquete de idioma de Microsoft Office system (versión 4.0 runtime)](http://go.microsoft.com/fwlink/?LinkId=140386).  
   
 ## <a name="see-also"></a>Vea también  
- [Introducción a &#40; desarrollo de Office en Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
- [Configuring a Computer to Develop Office Solutions](../vsto/configuring-a-computer-to-develop-office-solutions.md)   
+ [Introducción a &#40;desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Configurar un equipo para desarrollar soluciones de Office](../vsto/configuring-a-computer-to-develop-office-solutions.md)   
  [Cómo: configurar un equipo para desarrollar soluciones de Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)   
- [Cómo: instalar ensamblados de interoperabilidad primarios de Office](../vsto/how-to-install-office-primary-interop-assemblies.md)   
+ [Cómo: ensamblados de interoperabilidad primarios de Office de instalación](../vsto/how-to-install-office-primary-interop-assemblies.md)   
  [Administrar documentos en un servidor mediante la clase ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [Implementación de una solución de Office](../vsto/deploying-an-office-solution.md)  
+ [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)  
   
   

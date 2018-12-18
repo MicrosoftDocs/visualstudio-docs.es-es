@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a10a65564682b5c82350eb5c22af3f217a3a993
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0e348666514ea13a901a4c0be0a680ed4f83f688
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815136"
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
 Este método convierte una cadena de expresión en una expresión analizada.  
@@ -50,28 +51,28 @@ int Parse(
   
 #### <a name="parameters"></a>Parámetros  
  `upstrExpression`  
- [in] Cadena de expresión que se va a analizar.  
+ [in] La cadena de expresión que se va a analizar.  
   
  `dwFlags`  
  [in] Una colección de [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) constantes que determinan cómo se puede analizar la expresión.  
   
  `nRadix`  
- [in] Base que se utilizará para interpretar toda la información numérica.  
+ [in] Base que se usará para interpretar toda la información numérica.  
   
  `pbstrError`  
  [out] Devuelve el error como texto legible.  
   
  `pichError`  
- [out] Devuelve la posición del carácter del inicio del error en la cadena de expresión.  
+ [out] Devuelve la posición del carácter de inicio del error en la cadena de expresión.  
   
  `ppParsedExpression`  
  [out] Devuelve la expresión analizada en un [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) objeto.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método produce una expresión analizada, no un valor real. Una expresión analizada es lista para ser evaluada, es decir, convertir en un valor.  
+ Este método produce una expresión analizada, no un valor real. Una expresión analizada está lista para ser evaluada, es decir, convertir en un valor.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)   

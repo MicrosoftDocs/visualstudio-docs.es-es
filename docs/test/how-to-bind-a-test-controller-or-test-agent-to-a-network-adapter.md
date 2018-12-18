@@ -1,5 +1,5 @@
 ---
-title: Enlazar un controlador de pruebas o un agente de pruebas a un adaptador de red en Visual Studio | Microsoft Docs
+title: Enlace de un controlador de pruebas o un agente de pruebas a un adaptador de red en Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,14 @@ ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 79aef9a4ad15f364df00dfd4ee6c7f1d7925c281
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 222fe589a0d4282531b9ee73d476678d54747e7b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896057"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Cómo: Enlazar un controlador de pruebas o un agente de pruebas a un adaptador de red
 
@@ -29,7 +31,9 @@ Si un equipo que tiene instalado el controlador de prueba o el software del agen
 >
 > Si se instala el controlador de pruebas en un equipo con varios adaptadores de red, se puede producir este error. También es posible instalar agentes correctamente y no detectar este problema hasta que se ejecute una prueba.
 
-## <a name="binding-a-test-controller-to-a-specific-network-adapter"></a>Enlazar un controlador de pruebas a un adaptador de red concreto
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+## <a name="bind-a-test-controller-to-a-specific-network-adapter"></a>Enlazar un controlador de pruebas a un adaptador de red concreto
 
 ### <a name="to-obtain-the-ip-addresses-of-the-network-adapters"></a>Para obtener las direcciones IP de los adaptadores de red
 
@@ -39,7 +43,7 @@ Si un equipo que tiene instalado el controlador de prueba o el software del agen
 
      Se muestran las direcciones IP de los adaptadores de red. Anote la dirección IP del adaptador de red al que desee enlazar el controlador.
 
-### <a name="to-bind-a-network-adapter-to-a-test-controller"></a>Para enlazar un adaptador de red a un controlador de pruebas
+### <a name="to-bind-a-network-adapter-to-a-test-controller"></a>Para enlazar un adaptador de red a un controlador de pruebas, siga estos pasos:
 
 1.  En Microsoft Windows, elija **Inicio**, elija el cuadro **Iniciar búsqueda**, escriba **services.msc** y, a continuación, presione **Entrar**.
 
@@ -85,7 +89,7 @@ Si un equipo que tiene instalado el controlador de prueba o el software del agen
 
      Este proceso se aplica al controlador, al servicio del agente y al proceso del agente. El valor de la propiedad `BindTo` se debe establecer para cada proceso que se ejecute en un equipo que tenga más de un adaptador de red. El procedimiento para establecer la propiedad `BindTo` es el mismo para los tres procesos, tal y como se especificó anteriormente en este tema para el controlador de pruebas.
 
-### <a name="to-bind-a-network-interface-card-to-a-test-agent"></a>Para enlazar una tarjeta de interfaz de red a un agente de prueba
+### <a name="to-bind-a-network-interface-card-to-a-test-agent"></a>Para enlazar una tarjeta de interfaz de red a un agente de prueba, siga estos pasos:
 
 1.  En Microsoft Windows, elija **Inicio**, elija el cuadro **Iniciar búsqueda**, escriba **services.msc** y, a continuación, presione **Entrar**.
 
@@ -129,7 +133,7 @@ Si un equipo que tiene instalado el controlador de prueba o el software del agen
 ## <a name="see-also"></a>Vea también
 
 - [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md)
-- [Modificar la configuración de inicio de sesión de las pruebas de carga](../test/modify-load-test-logging-settings.md)
-- [Configurar los puertos para los controladores de pruebas y los agentes de pruebas](../test/configure-ports-for-test-controllers-and-test-agents.md)
+- [Modificar la configuración de registro de pruebas de carga](../test/modify-load-test-logging-settings.md)
+- [Configurar los puertos para los controladores de prueba y los agentes de prueba](../test/configure-ports-for-test-controllers-and-test-agents.md)
 - [Cómo: Especificar el tamaño máximo del archivo de registro](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [Cómo: Especificar periodos de tiempo de espera para controladores de pruebas y agentes de pruebas](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

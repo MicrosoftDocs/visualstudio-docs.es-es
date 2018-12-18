@@ -1,30 +1,30 @@
 ---
 title: Descripción de las configuraciones de compilación
-description: ''
-author: asb3993
-ms.author: amburns
+description: Este artículo describe las diversas configuraciones de compilación en Visual Studio para Mac
+author: conceptdev
+ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: 1ca2d7dc7b450367e5f87d62cf2a3c43a6331e13
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 7f130f5dec77e0a1965c68cf71e642fdb636832f
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296182"
 ---
 # <a name="understanding-build-configurations"></a>Descripción de las configuraciones de compilación
 
-## <a name="project-build-configurations"></a>Configuraciones de compilación del proyecto 
+## <a name="project-build-configurations"></a>Configuraciones de compilación del proyecto
 
 Los proyectos suelen tener varias configuraciones; cambiar entre ellas permite diferentes salidas en tiempo de compilación. Por ejemplo, una configuración de depuración tendrá como resultado símbolos de depuración, lo que permite al depurador resolver nombres de función, parámetros o variables del seguimiento de la pila de una aplicación bloqueada. Aunque esta información adicional es útil durante el desarrollo, conduce a un tamaño de archivo excesivo y no es ideal para la distribución.
 
-Cada plataforma tiene configuraciones específicas para su compilación. 
+Cada plataforma tiene configuraciones específicas para su compilación.
 
 ## <a name="solution-configurations"></a>Configuraciones de solución
 
-Del mismo modo que las configuraciones de proyecto, las configuraciones de solución se usan para crear configuraciones personalizadas para un proyecto completo. Con la pestaña **Asignaciones de configuración** del elemento **Compilar > Configuraciones**, puede asignar una configuración de destino para cada elemento de la solución, como se muestra en la imagen siguiente:
+Del mismo modo que las configuraciones de proyecto, las configuraciones de solución se usan para crear configuraciones personalizadas para un proyecto completo. Con la pestaña  **Asignaciones de configuración**  del elemento  **Compilar > Configuraciones** , puede asignar una configuración de destino para cada elemento de la solución, como se muestra en la imagen siguiente:
 
-
- ![Opciones de asignación de configuración](media/projects-and-solutions-image3.png)
+![Opciones de asignación de configuración](media/projects-and-solutions-image3.png)
 
 Para obtener más información sobre configuraciones, vea el vídeo [Configuration Manager](https://www.youtube.com/watch?v=tjSdkqYh5Vg) (Administrador de configuración) de James Montemagno.
 
@@ -34,14 +34,14 @@ En versiones anteriores de Xamarin Studio se podía seleccionar la opción para 
 
 En Visual Studio para Mac, en lugar de establecer un proyecto de inicio, se puede establecer una _configuración de ejecución_. Las configuraciones de ejecución se presentan en una lista desplegable de la barra de herramientas, junto al selector de la configuración de compilación, como se muestra a continuación:
 
- ![Desplegable de configuración de ejecución](media/projects-and-solutions-image8.png)
+![Desplegable de configuración de ejecución](media/projects-and-solutions-image8.png)
 
-Una configuración de ejecución es un conjunto de opciones de ejecución con un nombre y varias configuraciones que se definen en un proyecto para diferentes fines. Las configuraciones de ejecución se definen en el nivel de proyecto, y para cada proyecto ejecutable se crea automáticamente una predeterminada, aunque es posible agregar tantas como sea necesario. Determinados tipos de proyecto generan automáticamente configuraciones de ejecución adicionales. Por ejemplo, los proyectos de watchOS pueden generar _configuraciones de vista rápida y notificación_. 
- 
+Una configuración de ejecución es un conjunto de opciones de ejecución con un nombre y varias configuraciones que se definen en un proyecto para diferentes fines. Las configuraciones de ejecución se definen en el nivel de proyecto, y para cada proyecto ejecutable se crea automáticamente una predeterminada, aunque es posible agregar tantas como sea necesario. Determinados tipos de proyecto generan automáticamente configuraciones de ejecución adicionales. Por ejemplo, los proyectos de watchOS pueden generar  _configuraciones de vista rápida y notificación_.
+
 Las configuraciones se pueden compartir con otros desarrolladores (en cuyo caso se almacenarán en el archivo .csproj) o conservarse localmente (en cuyo caso se almacenarán en un archivo .user).
 
 ### <a name="android-run-configurations"></a>Configuraciones de ejecución de Android
- 
+
 Las configuraciones de ejecución para proyectos de Android permiten especificar qué actividad, servicio o receptor de difusión iniciar al ejecutar o depurar el proyecto. Puede pasar datos adicionales de intención y establecer marcas de intención para poder probar los componentes con diferentes condiciones de inicio.
 
 Aquellas actividades distintas a `MainLauncher` deberán tener `Exported=true` agregado al atributo Actividad para la depuración en un dispositivo físico o tener filtros de intención definidos.
@@ -66,3 +66,7 @@ En la siguiente lista se proporcionan algunos ejemplos de datos que se podrían 
 * Proyecto de WatchKit
     * Modo (Vista rápida, Notificación)
     * Carga de notificaciones
+
+## <a name="see-also"></a>Vea también
+
+- [Descripción de las configuraciones de compilación (Visual Studio en Windows)](/visualstudio/ide/understanding-build-configurations)

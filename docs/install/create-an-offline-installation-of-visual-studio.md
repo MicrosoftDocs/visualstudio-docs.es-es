@@ -1,13 +1,10 @@
 ---
-title: Crear una instalación sin conexión de Visual Studio | Microsoft Docs
-description: Descubra cómo instalar Visual Studio sin conexión.
+title: Crear una instalación sin conexión de Visual Studio
+description: Obtenga información sobre cómo instalar Visual Studio sin conexión cuando la conexión a internet no sea de confianza o disponga de poco ancho de banda.
 ms.custom: ''
-ms.date: 01/17/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.date: 08/28/2018
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - offline installation [Visual Studio]
@@ -19,37 +16,117 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 116e1821575b1a5e4e95e43eed0f175d85e9278f
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: f29c364bdd5fc0ea5d08a9862a71d7697197b438
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826766"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Crear una instalación sin conexión de Visual Studio 2017
 
-Hemos diseñado un instalador de Visual Studio 2017 que funciona bien en una amplia variedad de condiciones de red y máquina.
+Hemos diseñado Visual Studio 2017 para que funcione bien en una variedad de configuraciones de red y de equipos. Aunque se recomienda que pruebe el [instalador web de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) &mdash;que es un archivo pequeño y le permite estar actualizado con todas las correcciones y características más recientes&mdash; somos conscientes de que es posible que no pueda hacerlo.
 
-- El nuevo modelo basado en la carga de trabajo implica que deberá descargar mucho menos contenido que con las versiones anteriores de Visual Studio: tan solo 300 MB para la instalación más pequeña.
-- En comparación con un archivo ZIP o "ISO" genérico, solo se descargan los paquetes necesarios para su equipo. Por ejemplo, no se descargan los archivos de 64 bits si no los necesita.
-- Durante el proceso de instalación, probaremos tres tecnologías de descarga diferentes (WebClient, BITS y WinInet) para minimizar la interferencia con software antivirus y de servidor proxy.
-- Los archivos que necesitará para instalar Visual Studio se distribuyen en una red de entrega global, así que podemos obtenerlos de un servidor local.
-
-Se recomienda probar el [instalador web de Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocsOL), ya que creemos que será una buena experiencia.
-
- > [!div class="button"]
- > [Descargar Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocsOL)
-<br/>
-
-Si quiere realizar una instalación sin conexión porque su conexión de Internet no está disponible o no es confiable, vea [Instalación de Visual Studio 2017 en entornos de red de bajo ancho de banda o poco confiables](../install/install-vs-inconsistent-quality-network.md). Puede usar la línea de comandos para crear una caché local de los archivos necesarios para completar una instalación sin conexión. Este proceso reemplaza los archivos ISO disponibles para las versiones anteriores.
+Por ejemplo, puede que disponga de una conexión a Internet no confiable o de poco ancho de banda. Si es así, tiene varias opciones: puede usar la nueva característica "Download all, then install" (Descargar todo y volver a instalar) para descargar los archivos antes de instalar, o puede usar la línea de comandos para crear una caché local de los archivos.
 
 > [!NOTE]
 > Si es un administrador de empresa que quiere realizar una implementación de Visual Studio 2017 en una red de estaciones de trabajo del cliente con firewall desde Internet, vea las páginas [Creación de una instalación de red de Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) y [Instalar los certificados necesarios para la instalación sin conexión de Visual Studio](../install/install-certificates-for-visual-studio-offline.md).
 
-## <a name="get-support"></a>Obtener soporte técnico
-En ocasiones, algo no sale según lo previsto. Si se produce un error en la instalación de Visual Studio, consulte la página [Troubleshooting Visual Studio 2017 installation and upgrade issues](troubleshooting-installation-issues.md) (Solucionar problemas de errores de instalación y actualización de Visual Studio 2017). Si ninguno de los pasos de solución de problemas ayuda, puede ponerse en contacto con nosotros por chat para obtener asistencia para la instalación (solo en inglés). Para más información, consulte la [página de soporte técnico de Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+## <a name="use-the-download-all-then-install-feature"></a>Usar la característica "Download all, then install" (Descargar todo y volver a instalar)
 
-Aquí tiene algunas opciones de soporte técnico más:
-* Puede notificarnos problemas del producto a través de la herramienta [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) que aparece en el instalador y en el IDE de Visual Studio.
-* Puede compartir una sugerencia de producto con nosotros en [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Puede realizar el seguimiento de los problemas del producto en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/), y hacer preguntas y encontrar respuestas.
-* También puede ponerse en contacto con nosotros y otros desarrolladores de Visual Studio a través de nuestra [conversación de Visual Studio en la comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio).  (Esta opción requiere una cuenta de [GitHub](https://github.com/)).
+[**Novedad de la versión 15.8**](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017#install
+): después de descargar el instalador web, seleccione la nueva opción **"Download all, then install"** (Descargar todo y volver a instalar) desde el instalador de Visual Studio. Después, continúe con la instalación.
+
+   ![Opción "Download all, then install" (Descargar todo y volver a instalar)](media/download-all-then-install.png)
+
+## <a name="use-the-command-line-to-create-a-local-cache"></a>Usar la línea de comandos para crear una memoria caché local
+
+Después de descargar un pequeño programa previo, use la línea de comandos para crear una memoria caché local. Después, use la memoria caché local para instalar Visual Studio. (Este proceso reemplaza los archivos ISO que había disponibles para las versiones anteriores).
+
+Esta es la manera de hacerlo.
+
+### <a name="step-1---download-the-visual-studio-bootstrapper"></a>Paso 1: Descargar el programa previo de Visual Studio
+
+Deberá disponer de conexión a Internet para poder completar este paso.
+
+Para comenzar, descargue el programa previo de Visual Studio para la edición elegida de Visual Studio. El archivo de instalación &mdash;o programa previo&mdash; corresponderá o será parecido a uno de los siguientes.
+
+| Edición                    | Archivo                                                                    |
+|----------------------------|-------------------------------------------------------------------------|
+| Comunidad de Visual Studio    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)       |
+| Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017) |
+| Visual Studio Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)     |
+
+### <a name="step-2---create-a-local-install-cache"></a>Paso 2: Crear una caché de instalación local
+
+Deberá disponer de conexión a Internet para poder completar este paso.
+
+> [!IMPORTANT]
+> Si instala Visual Studio Community 2017, debe activarlo antes de que transcurran 30 días desde la instalación. Esto requiere una conexión a Internet.
+
+Abra un símbolo del sistema y use uno de los comandos de los ejemplos siguientes. En los ejemplos que se enumeran se asume que está usando la edición Community de Visual Studio; ajuste el comando según sea adecuado para su edición.
+
+- Para el desarrollo web y de escritorio .NET, ejecute:
+
+   ```vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US```
+
+- Para el desarrollo de escritorio .NET y Office, ejecute:
+
+   ```vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.Office --includeOptional --lang en-US```
+
+- Para el desarrollo de escritorio C++, ejecute:
+
+   ```vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US```
+
+- Para crear un diseño local completo con todas las características (lo que llevará mucho tiempo&mdash;, ya que tenemos _multitud_ de características), ejecute:
+
+   ```vs_community.exe --layout c:\vs2017layout --lang en-US```
+
+Si quiere instalar un idioma distinto del inglés, cambie `en-US` a una configuración regional de la [lista de configuraciones regionales de idioma](#list-of-language-locales). Después, use la [lista de los componentes y cargas de trabajo disponibles](workload-and-component-ids.md) para personalizar aún más la memoria caché de instalación.
+
+> [!IMPORTANT]
+> Un diseño de Visual Studio 2017 completo requiere al menos 35 GB de espacio en disco y puede tardar algún tiempo en descargarse. Vea [Usar parámetros de la línea de comandos para instalar Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) para más información sobre cómo crear un diseño solo con los componentes que quiere instalar.
+
+### <a name="step-3---install-visual-studio-from-the-local-cache"></a>Paso 3: Instalar Visual Studio desde la caché local
+
+> [!TIP]
+> Cuando se trabaja desde una caché de instalación local, el programa de instalación usa las versiones locales de cada uno de estos archivos. Pero si selecciona componentes durante la instalación que no se encuentran en la memoria caché, el programa de instalación intentará descargarlos de Internet.
+
+Para asegurarse de que solo instala los archivos que ha descargado previamente, use las mismas opciones de la línea de comandos que usó para crear la memoria caché de diseño. Por ejemplo, si creó una caché de diseño con el siguiente comando:
+
+```vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US```
+
+Después, use este comando para ejecutar la instalación:
+
+```c:\vs2017layout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional```
+
+> [!NOTE]
+> Si se produce un error de una firma que no es válida, debe instalar certificados actualizados. Abra la carpeta de certificados en la caché sin conexión. Haga doble clic en cada uno de los archivos de certificado y, después, haga clic en el Asistente de administrador de certificados. Si se le solicita una contraseña, déjela en blanco.
+
+### <a name="list-of-language-locales"></a>Lista de configuraciones regionales de idioma
+
+| **Idioma-configuración regional** | **Idioma** |
+| ----------------------- | --------------- |
+| cs-CZ | Checo |
+| de-DE | Alemán |
+| en-US | Inglés |
+| es-ES | Español |
+| fr-FR | Francés |
+| it-IT | Italiano |
+| ja-JP | Japonés |
+| ko-KR | Coreano |
+| pl-PL | Polaco |
+| pt-BR | Portugués (Brasil) |
+| ru-RU | Ruso |
+| tr-TR | Turco |
+| zh-CN | Chino (simplificado) |
+| zh-TW | Chino (tradicional) |
+
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
+
+## <a name="see-also"></a>Vea también
+
+- [Creación de una instalación de red de Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md)
+- [Instalar los certificados necesarios para la instalación sin conexión de Visual Studio](../install/install-certificates-for-visual-studio-offline.md)
+- [Usar parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+- [Identificadores de componente y carga de trabajo de Visual Studio 2017](workload-and-component-ids.md)

@@ -1,5 +1,5 @@
 ---
-title: Ejecución paso a paso en modo de interrupción | Documentos de Microsoft
+title: Ejecución paso a paso en modo de interrupción | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,20 +15,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cf10254ec4642bd6dd671124d4a0600794de6fb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4fff7edc494c763407c65785fe1de0b3fd77d7b2
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276512"
 ---
 # <a name="stepping-in-break-mode"></a>Ejecución paso a paso en modo de interrupción
-A continuación describe el proceso que se produce cuando el depurador está en modo de interrupción y debe recorrer el código:  
+La siguiente sección describe el proceso que se produce cuando el depurador está en modo de interrupción y debe recorrer el código:  
   
 ## <a name="stepping-process"></a>Proceso de ejecución paso a paso  
   
-1.  Llame a [IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md) con [STEPKIND](../../extensibility/debugger/reference/stepkind.md) y [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) argumentos para ejecutar un paso.  
+1.  Llame a [IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md) con [STEPKIND](../../extensibility/debugger/reference/stepkind.md) y [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) argumentos al ejecutar un paso.  
   
-2.  Cuando haya finalizado el paso, envíe un [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) como un evento de detención.  
+2.  Cuando finalice el paso, enviar un [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) como un evento de detención.  
   
 ## <a name="see-also"></a>Vea también  
- [Llamada a eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)
+ [Llamar a los eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)

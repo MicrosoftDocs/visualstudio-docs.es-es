@@ -9,11 +9,12 @@ description: Cómo asignar las suscripciones de Visual Studio a los usuarios fin
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a81cf891a58a8c6bf206b057b883d133d92b0a85
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 4a113d88b93b5fe7532a72956ca6129be1773ebe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949115"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Administrar las suscripciones de Visual Studio ofrecidas a través de Microsoft Partner Network (MPN)
 
@@ -67,7 +68,7 @@ Suscriptor de Microsoft Action Pack y suscripciones de Visual Studio
 
 > [!NOTE]
 > Se requiere el rol Contacto técnico para las suscripciones de Visual Studio.
-    - Pág. 8: Assigning Visual Studio subscriptions for Competency Partners (Asignación de suscripciones de Visual Studio a asociados de la competencia)
+>     - Pág. 8: Assigning Visual Studio subscriptions for Competency Partners (Asignación de suscripciones de Visual Studio a asociados de la competencia)
 
 ## <a name="need-help"></a>¿Necesita ayuda?
 Los suscriptores y los administradores de programas deben trabajar directamente con el equipo de soporte técnico de Microsoft Partner Network para resolver los problemas de acceso a las suscripciones por parte de los suscriptores. Visite la página de [soporte técnico para socios](https://partner.microsoft.com/support) para obtener ayuda (Se necesitan sus credenciales de inicio de sesión de MPN).

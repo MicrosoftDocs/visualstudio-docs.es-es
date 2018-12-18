@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Crear un editor de cuerpo HTTP personalizado para el Editor de pruebas de rendimiento web en Visual Studio | Microsoft Docs'
+title: Creación de un editor de cuerpo HTTP personalizado para el Editor de pruebas de rendimiento web en Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,18 +8,22 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c53d4db3f413ad8cf4f0b615db18bd5fb6368128
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0dc31bef7a7d2e91599cdc25be4f98445beda67f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896749"
 ---
-# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Cómo: Crear un editor de cuerpo HTTP personalizado para el Editor de prueba de rendimiento web
+# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Creación de un editor de cuerpo HTTP personalizado para el Editor de pruebas de rendimiento web
 
-Puede crear un editor de contenido personalizado que le permita editar el contenido del texto de la cadena o del cuerpo binario de una solicitud de servicio Web; por ejemplo, SOAP, REST, asmx, wcf, RIA y otros tipos de solicitudes de servicio Web.
+Puede crear un editor de contenido personalizado que le permita editar el contenido del texto de la cadena o del cuerpo binario de una solicitud de servicio web; por ejemplo, SOAP, REST, asmx, wcf, RIA y otros tipos de solicitudes de servicio web.
 
- Puede implementar estos tipos de editores:
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Puede implementar estos tipos de editores:
 
 -   **Editor de contenido de cadena** Se implementa usando la interfaz <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin>.
 
@@ -31,45 +35,45 @@ Estas interfaces están contenidas en el espacio de nombres <xref:Microsoft.Visu
 
 ### <a name="create-a-user-control-by-using-a-windows-control-library-project"></a>Crear un control de usuario mediante un proyecto de Biblioteca de controles de Windows
 
-1.  En el menú **Archivo** de Visual Studio, seleccione **Nuevo** y, después, seleccione **Proyecto**.
+1. En el menú **Archivo** de Visual Studio, seleccione **Nuevo** y, después, seleccione **Proyecto**.
 
-     Aparecerá el cuadro de diálogo **Nuevo proyecto**.
+    Aparecerá el cuadro de diálogo **Nuevo proyecto**.
 
-2.  En **Plantillas instaladas**, seleccione **Visual Basic** o **Visual C#** dependiendo de su preferencia de programación y, después, seleccione **Windows**.
+2. En **Plantillas instaladas**, seleccione **Visual Basic** o **Visual C#** dependiendo de su preferencia de programación y, después, seleccione **Windows**.
 
-    > [!NOTE]
-    > En este ejemplo se usa Visual C#.
+   > [!NOTE]
+   > En este ejemplo se usa Visual C#.
 
-3.  En la lista de plantillas, seleccione **Biblioteca de controles de Windows Forms**.
+3. En la lista de plantillas, seleccione **Biblioteca de controles de Windows Forms**.
 
-4.  En el cuadro de texto Nombre, escriba un nombre (por ejemplo, `MessageEditors`) y elija **Aceptar**.
+4. En el cuadro de texto **Nombre**, escriba un nombre (por ejemplo, `MessageEditors`) y elija **Aceptar**.
 
-    > [!NOTE]
-    > En este ejemplo se usa MessageEditors.
+   > [!NOTE]
+   > En este ejemplo se usa MessageEditors.
 
-     El proyecto se agregará a la nueva solución y aparecerá un <xref:System.Windows.Forms.UserControl> denominado UserControl1.cs en el diseñador.
+    El proyecto se agregará a la nueva solución y aparecerá un <xref:System.Windows.Forms.UserControl> denominado *UserControl1.cs* en el diseñador.
 
-5.  En el **Cuadro de herramientas**, bajo la categoría **Controles comunes**, arrastre un <xref:System.Windows.Forms.RichTextBox> hasta la superficie de UserControl1.
+5. En el **Cuadro de herramientas**, bajo la categoría **Controles comunes**, arrastre un <xref:System.Windows.Forms.RichTextBox> hasta la superficie de UserControl1.
 
-6.  Elija el glifo de la etiqueta de acción (![glifo de etiqueta inteligente](../test/media/vs_winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) situado en la esquina superior derecha del control <xref:System.Windows.Forms.RichTextBox> y seleccione **Acoplar en contenedor primario**.
+6. Elija el glifo de la etiqueta de acción (![Glifo de etiqueta inteligente](../test/media/vs_winformsmttagglyph.gif)) situado en la esquina superior derecha del control <xref:System.Windows.Forms.RichTextBox> y seleccione **Acoplar en contenedor primario**.
 
-7.  En el Explorador de soluciones, haga clic con el botón derecho en el proyecto Biblioteca de controles de Windows Forms y seleccione **Propiedades**.
+7. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto Biblioteca de controles de Windows Forms y seleccione **Propiedades**.
 
-8.  En Propiedades, seleccione la pestaña **Aplicación**.
+8. En **Propiedades**, seleccione la pestaña **Aplicación**.
 
 9. En la lista desplegable **Plataforma de destino**, seleccione **.NET Framework 4**.
 
-10. Aparecerá el cuadro de diálogo Cambio de plataforma de destino.
+10. Aparecerá el cuadro de diálogo **Cambio de plataforma de destino**.
 
 11. Elija **Sí**.
 
-12. En el Explorador de soluciones, haga clic con el botón derecho en el nodo **Referencias** y seleccione **Agregar referencia**.
+12. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo **Referencias** y seleccione **Agregar referencia**.
 
 13. Aparecerá el cuadro de diálogo **Agregar referencia**.
 
 14. Elija la pestaña .**NET**, desplácese hacia abajo, seleccione **Microsoft.VisualStudio.QualityTools.WebTestFramework** y, luego, elija **Aceptar**.
 
-15. Si el Diseñador de vistas todavía no está abierto, en el Explorador de soluciones, haga clic con el botón derecho en **UserControl1.cs** y, luego, seleccione **Diseñador de vistas**.
+15. Si el **Diseñador de vistas** todavía no está abierto, en el **Explorador de soluciones**, haga clic con el botón derecho en **UserControl1.cs** y, luego, seleccione **Diseñador de vistas**.
 
 16. En la superficie de diseño, haga clic con el botón derecho y seleccione **Ver código**.
 
@@ -93,9 +97,9 @@ Estas interfaces están contenidas en el espacio de nombres <xref:Microsoft.Visu
 
 18. Agregue las siguientes propiedades para habilitar la obtención y el establecimiento del texto en RichTextBox1. La interfaz <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> usará EditString y <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> usará EditByteArray:
 
-   ```csharp
-   public String EditString
-   {
+    ```csharp
+    public String EditString
+    {
        get
        {
            return this.richTextBox1.Text;
@@ -104,10 +108,10 @@ Estas interfaces están contenidas en el espacio de nombres <xref:Microsoft.Visu
        {
            this.richTextBox1.Text = value;
        }
-   }
+    }
 
-   public byte[] EditByteArray
-   {
+    public byte[] EditByteArray
+    {
        get
        {
            return System.Convert.FromBase64String(richTextBox1.Text);
@@ -116,10 +120,10 @@ Estas interfaces están contenidas en el espacio de nombres <xref:Microsoft.Visu
        {
            richTextBox1.Text = System.Convert.ToBase64String(value, 0, value.Length);
        }
-   }
-   ```
+    }
+    ```
 
-## <a name="add-a-class-for-to-the-windows-control-library-project"></a>Agregue una clase para el proyecto Biblioteca de controles de Windows Forms.
+## <a name="add-a-class-to-the-windows-control-library-project"></a>Agregar una clase para el proyecto Biblioteca de controles de Windows Forms
 
 Agregue una clase al proyecto. Se usará para implementar las interfaces <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> y <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>.
 
@@ -137,7 +141,7 @@ private MessageEditorControl messageEditorControl
 
 ### <a name="to-create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface-code"></a>Para crear una clase e implementar el código de la interfaz IStringHttpBodyEditorPlugin
 
-1.  En el Explorador de soluciones, haga clic con el botón derecho en el proyecto Biblioteca de controles de Windows Forms y seleccione **Agregar nuevo elemento**.
+1.  En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto Biblioteca de controles de Windows Forms y seleccione **Agregar nuevo elemento**.
 
 2.  Se abrirá el cuadro de diálogo **Agregar nuevo elemento**.
 
@@ -280,14 +284,14 @@ Cuando se completa la edición del texto de la cadena y el usuario hace clic en 
 
 ### <a name="to-build-and-deploy-the-resulting-dll-for-the-istringhttpbodyeditorplugin-and-ibinaryhttpbodyeditorplugin"></a>Para compilar e implementar el archivo dll resultante para IStringHttpBodyEditorPlugin e IBinaryHttpBodyEditorPlugin
 
-1.  En el menú Compilar, elija **Compilar \<<nombre del proyecto Biblioteca de control de Windows Forms>**.
+1.  En el menú **Compilar**, elija **Compilar \<nombre del proyecto Biblioteca de control de Windows Forms**.
 
 2.  Cierre todas las instancias de Visual Studio.
 
     > [!NOTE]
     > Al cerrarse Visual Studio, se garantiza que el archivo *.dll* no esté bloqueado antes de intentar copiarlo.
 
-3.  Copie el archivo *.dll* resultante de la carpeta *bin\debug* del proyecto (por ejemplo, *MessageEditors.dll*) en %ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins.
+3.  Copie el archivo *.dll* resultante de la carpeta *bin\debug* del proyecto (por ejemplo, *MessageEditors.dll*) en *%ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins*.
 
 4.  Abra Visual Studio.
 
@@ -299,15 +303,15 @@ Cuando se completa la edición del texto de la cadena y el usuario hace clic en 
 
 1.  Cree un proyecto de prueba.
 
-2.  Cree una prueba de rendimiento web y escriba una dirección URL en el explorador a un servicio web, por ejemplo, http://dev.virtualearth.net/webservices/v1/metadata/searchservice/dev.virtualearth.net.webservices.v1.search.wsdl.
+2.  Cree una prueba de rendimiento web y escriba una dirección URL en el explorador a un servicio web.
 
 3.  Al finalizar la grabación, en el Editor de pruebas de rendimiento web, expanda la solicitud para el servicio Web y seleccione **Texto de la cadena** o **Cuerpo binario**.
 
-4.  En la ventana Propiedades, seleccione Texto de la cadena o Cuerpo binario y elija los puntos suspensivos (...).
+4.  En la ventana Propiedades, seleccione Texto de la cadena o Cuerpo binario y elija los puntos suspensivos **(...)**.
 
      Aparecerá el cuadro de diálogo **Editar datos del cuerpo HTTP**.
 
-5.  Ahora, puede editar los datos y elegir Aceptar. Esto invoca el método GetNewValue aplicable para actualizar el contenido de <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>.
+5.  Ahora, puede editar los datos y elegir **Aceptar**. Esto invoca el método GetNewValue aplicable para actualizar el contenido de <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>.
 
 ## <a name="compile-the-code"></a>Compilar el código
 

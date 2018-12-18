@@ -1,19 +1,21 @@
 ---
-title: Insertar controles y modificar su comportamiento en el Diseñador XAML | Microsoft Docs
+title: Insertar controles y modificar su comportamiento en el Diseñador XAML
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: a80fff74-bf01-41c9-ab85-ada7a873c3a9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 828b02daaed0b33bfa2f53cf16bee9b60be2f939
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 739c43b0ed6665684f0a38b35dfd6eccdf8f5b2c
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977817"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>Insertar controles y modificar su comportamiento en el Diseñador XAML
 
@@ -23,53 +25,40 @@ Los controles permiten a los usuarios interactuar con la aplicación. Puede util
 
 Puede arrastrar controles desde el panel **Activos** a la **mesa de trabajo**y, a continuación, modificarlos en la ventana **Propiedades** .
 
-![Blend &#45; Activos &#45; FlipView](../designers/media/blend_assetsflipview_xaml.png "blend_AssetsFlipView_XAML")
-
-En estos vídeos se enseña cómo usar algunos de los controles más comunes.
-
-|Control|Vea un vídeo corto|
-|-------------|-------------------------|
-|`Menu` ![](../designers/media/015a263c-0b2b-4253-ac57-b86fcb8c9591.png)|![Icono de reproducción](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Agregar los controles](https://www.youtube.com/watch?v=ra4AHfgD4Ys&list=PLBDF977B2F1DAB358&index=45)|
-|`Button` ![](../designers/media/05df1779-a68f-436b-b834-a91b7995a3ec.png)|![Icono de reproducción](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Diseñar un botón](http://www.popscreen.com/v/6A4gb/Microsoft-Expression-Blend-Designing-a-Button)|
-|`Textblock` ![](../designers/media/42165963-00f7-4a33-abcd-b0849edebada.png)|![Icono de reproducción](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Agregar imágenes a un bloque de texto](http://www.popscreen.com/v/6A4du/Microsoft-Expression-Blend-Adding-Images-to-a-TextBlock)|
-|`Slider` ![](../designers/media/bf689d92-3c74-4218-815c-e98c930ac189.png)|![Icono de reproducción](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Crear un control deslizante con información sobre herramientas](http://www.bing.com/videos/search?q=slider%20expression%20blend&qs=n&form=QBVR&pq=slider%20expression%20blend&sc=1-23&sp=-1&sk=#view=detail&mid=F1BB7DB91B2772A8CA2AF1BB7DB91B2772A8CA2A)|
+![Controles de pestañas de recursos de Blend](../designers/media/blend_assetsflipview_xaml.png)
 
 ### <a name="make-a-control-out-of-an-image-shape-or-path"></a>Crear un control a partir de una imagen, una forma o un trazado
 
- Puede convertir cualquier objeto en un control.
+Puede convertir cualquier objeto en un control.
 
- ![Cuadro de diálogo Convertir en control de Blend](../designers/media/blend_makeintocontrol_xaml.png "blend_MakeIntoControl_XAML")
+![Cuadro de diálogo Convertir en control de Blend](../designers/media/blend_makeintocontrol_xaml.png)
 
- Imagine, por ejemplo, la imagen de una televisión en el centro de una página. A partir de imágenes pequeñas podría crear controles que tuviesen el aspecto de botones de televisión y en los que los usuarios podrían hacer clic para cambiar de canal.
+Imagine, por ejemplo, la imagen de una televisión en el centro de una página. A partir de imágenes pequeñas podría crear controles que tuviesen el aspecto de botones de televisión y en los que los usuarios podrían hacer clic para cambiar de canal.
 
- Esto es posible porque los botones ahora son controles que permiten responder a las interacciones del usuario; en este caso, al hacer clic en un botón.
+Esto es posible porque los botones ahora son controles que permiten responder a las interacciones del usuario; en este caso, al hacer clic en un botón.
 
- Para crear un control, seleccione un objeto. A continuación, en el menú **Herramientas** , haga clic en **Crear control**.
+Para crear un control, seleccione un objeto. A continuación, en el menú **Herramientas** , haga clic en **Crear control**.
 
 ## <a name="make-controls-do-things"></a>Acciones de los controles
 
- Los controles pueden realizar acciones cuando los usuarios interactúan con ellos. Por ejemplo, pueden iniciar una animación, actualizar un origen de datos o reproducir un vídeo.
+Los controles pueden realizar acciones cuando los usuarios interactúan con ellos. Por ejemplo, pueden iniciar una animación, actualizar un origen de datos o reproducir un vídeo.
 
- Utilice *desencadenadores*, *comportamientos*y *eventos* para que los controles realicen accines.
+Utilice *desencadenadores*, *comportamientos*y *eventos* para que los controles realicen accines.
 
 ### <a name="triggers"></a>desencadenadores
 
- Un *desencadenador* cambia una propiedad o realiza una tarea en respuesta a un evento o a un cambio en otra propiedad. Por ejemplo, puede cambiar el color de un botón cuando los usuarios se mantenga el ratón sobre él.
+Un *desencadenador* cambia una propiedad o realiza una tarea en respuesta a un evento o a un cambio en otra propiedad. Por ejemplo, puede cambiar el color de un botón cuando los usuarios se mantenga el ratón sobre él.
 
- ![Panel "Desencadenadores"](../designers/media/custom_button_blend_propertytriggerinfo.png)
-
- **Vea un vídeo corto:** ![Icono de reproducción](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Agregar un desencadenador de propiedad](http://www.popscreen.com/v/6A4gO/Microsoft-Expression-Blend-Adding-a-Property-Trigger).
+![Panel Desencadenadores](../designers/media/custom_button_blend_propertytriggerinfo.png)
 
 ### <a name="behaviors"></a>comportamientos
 
- Un *comportamiento* es un paquete de código reutilizable. Es un poco más completo que cambiar las propiedades y puede realizar acciones como consultas a un servicio de datos. Blend trae incorporada una pequeña colección de comportamientos, pero se pueden agregar más. Arrastre un comportamiento a cualquier objeto de la mesa de trabajo y después personalícelo mediante la configuración de sus propiedades.
+Un *comportamiento* es un paquete de código reutilizable. Es un poco más completo que cambiar las propiedades y puede realizar acciones como consultas a un servicio de datos. Blend trae incorporada una pequeña colección de comportamientos, pero se pueden agregar más. Arrastre un comportamiento a cualquier objeto de la mesa de trabajo y después personalícelo mediante la configuración de sus propiedades.
 
- ![FluidMoveBehavior en el panel Propiedades](../designers/media/b4_fluidmovebehaviorproperties_sample.png)
+![FluidMoveBehavior en el panel Propiedades](../designers/media/b4_fluidmovebehaviorproperties_sample.png)
 
- **Vea un vídeo corto:** ![Icono de reproducción](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Consejos de Blend: introducción al uso de comportamientos, parte 1](http://www.bing.com/videos/search?q=Expression%20blend%20behaviors&qs=n&form=QBVR&pq=expression%20blend%20behavior&sc=4-25&sp=-1&sk=#view=detail&mid=CF0DD797ED84DE740904CF0DD797ED84DE740904).
+**Vea un vídeo:** ![Icono de reproducción](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Consejos de Blend: introducción al uso de comportamientos, parte 1](http://www.bing.com/videos/search?q=Expression%20blend%20behaviors&qs=n&form=QBVR&pq=expression%20blend%20behavior&sc=4-25&sp=-1&sk=#view=detail&mid=CF0DD797ED84DE740904CF0DD797ED84DE740904).
 
 ### <a name="events"></a>Eventos
 
- Para una flexibilidad óptima, controle un *evento*. Tendrá que escribir código.
-
- **Vea un vídeo corto:** ![Icono de reproducción](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Agregar un evento de mouse](https://www.youtube.com/watch?v=2PMxAlb-x_E).
+Para una flexibilidad óptima, controle un *evento*. Tendrá que escribir código.

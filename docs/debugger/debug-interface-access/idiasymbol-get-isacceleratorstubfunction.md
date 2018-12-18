@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468056"
 ---
 # <a name="idiasymbolgetisacceleratorstubfunction"></a>IDiaSymbol::get_isAcceleratorStubFunction
 Indica si el símbolo corresponde a un símbolo de función de nivel superior de un sombreador que se compila para un acelerador que corresponde a un `parallel_for_each` llamar.  

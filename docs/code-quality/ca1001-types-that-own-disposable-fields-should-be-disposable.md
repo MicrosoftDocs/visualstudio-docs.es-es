@@ -1,6 +1,7 @@
 ---
 title: 'CA1001: Los tipos que poseen campos descartables deben ser descartables'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -13,36 +14,41 @@ ms.assetid: c85c126c-2b16-4505-940a-b5ddf873fb22
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d3def21cf32dd45c006045a5301293da2a5d0f70
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a73acee1c01aba7a638d27c0e772e4fbf5e19384
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546961"
 ---
 # <a name="ca1001-types-that-own-disposable-fields-should-be-disposable"></a>CA1001: Los tipos que poseen campos descartables deben ser descartables
+
 |||
 |-|-|
 |TypeName|TypesThatOwnDisposableFieldsShouldBeDisposable|
 |Identificador de comprobación|CA1001|
 |Categoría|Microsoft.Design|
-|Cambio problemático|Poco problemático: si el tipo no es visible fuera del ensamblado.<br /><br /> Problemático: si el tipo es visible fuera del ensamblado.|
+|Cambio problemático|Non-problemático: si el tipo no es visible fuera del ensamblado.<br /><br /> Importante: si el tipo es visible fuera del ensamblado.|
 
 ## <a name="cause"></a>Motivo
  Una clase declara e implementa un campo de instancia que es un <xref:System.IDisposable?displayProperty=fullName> tipo y la clase no implementa <xref:System.IDisposable>.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Una clase que implementa el <xref:System.IDisposable> interfaz para desechar recursos no administrados que posee. Un campo de instancia que es un <xref:System.IDisposable> tipo indica que el campo posee un recurso no administrado. Una clase que declara un <xref:System.IDisposable> campo indirectamente posee un recurso no administrado y debería implementar la <xref:System.IDisposable> interfaz. Si la clase no posee directamente los recursos no administrados, no debe implementar un finalizador.
+ Una clase implementa la <xref:System.IDisposable> interfaz para desechar recursos no administrados que posee. Un campo de instancia que es un <xref:System.IDisposable> tipo indica que el campo posee un recurso no administrado. Una clase que declara un <xref:System.IDisposable> campo indirectamente posee un recurso no administrado y debería implementar el <xref:System.IDisposable> interfaz. Si la clase no posee directamente los recursos no administrados, no debe implementar un finalizador.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, implemente <xref:System.IDisposable> desde y hacia el <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> llamada al método el <xref:System.IDisposable.Dispose%2A> método Dispose del campo.
+ Para corregir una infracción de esta regla, implemente <xref:System.IDisposable> y desde el <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> llamada al método el <xref:System.IDisposable.Dispose%2A> método del campo.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra una clase que infringe la regla y una clase que cumpla la regla implementando <xref:System.IDisposable>. La clase no implementa un finalizador porque la clase no posee directamente los recursos no administrados.
+ El ejemplo siguiente muestra una clase que infringe la regla y una clase que cumple la regla mediante la implementación <xref:System.IDisposable>. La clase no implementa un finalizador porque la clase posee directamente ningún recurso no administrado.
 
  [!code-vb[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/VisualBasic/ca1001-types-that-own-disposable-fields-should-be-disposable_1.vb)]
  [!code-csharp[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/CSharp/ca1001-types-that-own-disposable-fields-should-be-disposable_1.cs)]

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Getenumdebugstreams | Documentos de Microsoft'
+title: Getenumdebugstreams | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24e604734b7dceb9c0edc1fc19aaae56655ee27f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 53eb0765b7a3d9ed5fb23c0b1d8880eeca390159
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818802"
 ---
 # <a name="idiasessiongetenumdebugstreams"></a>IDiaSession::getEnumDebugStreams
 Recupera una secuencia enumerada de flujos de datos de depuración.  
@@ -36,7 +37,7 @@ HRESULT getEnumDebugStreams (
  [out] Devuelve un [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md) objeto que contiene una lista de secuencias de depuración.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

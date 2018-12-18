@@ -12,18 +12,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f71b91b606eb10947f6b794d6311efe6627bd12e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1e03abc331d59504b1b08136c8c81fe12c8ba2af
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264200"
 ---
 # <a name="stopprofile"></a>StopProfile
 La función `StopProfile` establece el contador en 0 (desactivado) para el nivel de generación de perfiles especificado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp  
 PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(  
                        PROFILE_CONTROL_LEVEL Level,   
                        unsigned int dwId);  
@@ -73,7 +74,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
 ## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se muestra el método StopProfile. En el ejemplo se da por supuesto que se ha realizado una llamada al método StartProfile para el mismo subproceso o proceso que identifica [PROFILE_CURRENTID](../profiling/profile-currentid.md).  
   
-```  
+```cpp  
 void ExerciseStopProfile()  
 {  
     // StartProfile and StopProfile control the   
@@ -108,4 +109,4 @@ void ExerciseStopProfile()
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Referencia a la API del generador de perfiles de Visual Studio (nativa)](../profiling/visual-studio-profiler-api-reference-native.md)
+ [Referencia de la API del generador de perfiles de Visual Studio (nativa)](../profiling/visual-studio-profiler-api-reference-native.md)

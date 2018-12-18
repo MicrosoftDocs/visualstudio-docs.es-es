@@ -1,5 +1,5 @@
 ---
-title: Pila de llamadas de eventos de gráficos | Documentos de Microsoft
+title: Pila de llamadas de eventos de gráficos | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,18 +12,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 879189fe71a4bf9dc0b7c56afe81d85d4316b6a4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 77c53db002fd0d300a01b5cc142f6ed2daf4daa2
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510583"
 ---
 # <a name="graphics-event-call-stack"></a>Pila de llamadas de eventos de gráficos
 La pila de llamadas de eventos gráficos del Analizador de gráficos de Visual Studio le ayuda a establecer la relación entre los eventos de gráficos problemáticos y el código fuente de la aplicación.  
   
  Esta es la ventana de la Pila de llamadas de eventos:  
   
- ![La pila de llamadas precedente un evento DrawIndexed. ] (media/gfx_diag_demo_graphics_event_call_stack_orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")  
+ ![La pila de llamadas que precede a un evento DrawIndexed. ](media/gfx_diag_demo_graphics_event_call_stack_orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")  
   
 ## <a name="understanding-the-graphics-event-call-stack"></a>Descripción de la pila de llamadas de eventos gráficos  
  Puede utilizar la Pila de llamadas de eventos para comprender el flujo de ejecución que llevó a un determinado evento de Direct3D. Se parece a la ventana Pila de llamadas de Visual Studio, excepto en que en lugar de mostrar la pila de llamadas actual del subproceso actual en una aplicación en ejecución, muestra la pila de llamadas que existía cuando se produjo el evento de Direct3D seleccionado. Desde la Pila de llamadas de eventos, puede ir directamente al sitio de llamada del evento de Direct3D seleccionado para inspeccionar el código que lo rodea.  

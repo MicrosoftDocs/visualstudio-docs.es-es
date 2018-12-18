@@ -1,5 +1,5 @@
 ---
-title: '&lt;Paquete&gt; elemento (arranque) | Documentos de Microsoft'
+title: '&lt;Paquete&gt; (elemento, arranque) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,18 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c04676f03f4734a25601e772208939e0b3f8482d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 49867ddc897a9c1a1241a891a3ba3de866d84688
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899245"
 ---
-# <a name="ltpackagegt-element-bootstrapper"></a>&lt;Paquete&gt; elemento (arranque)
-El `Package` elemento es el elemento XML de nivel superior dentro de un archivo de paquete.  
-  
+# <a name="ltpackagegt-element-bootstrapper"></a>&lt;Paquete&gt; (elemento, arranque)
+El `Package` es el elemento de nivel superior XML dentro de un archivo de paquete.  
+
 ## <a name="syntax"></a>Sintaxis  
-  
-```  
+
+```xml  
 <Package  
     Culture  
     Name  
@@ -74,7 +75,7 @@ El `Package` elemento es el elemento XML de nivel superior dentro de un archivo 
             SearchDepth  
         />  
     </InstallChecks>  
-  
+
     <Commands  
         Reboot  
     >  
@@ -110,7 +111,7 @@ El `Package` elemento es el elemento XML de nivel superior dentro de un archivo 
             </ExitCodes>  
         </Command>  
     </Commands>  
-  
+
     <PackageFiles  
         CopyAllComponents  
     >  
@@ -121,14 +122,14 @@ El `Package` elemento es el elemento XML de nivel superior dentro de un archivo 
             PublicKey  
         />  
     </PackageFiles>  
-  
+
     <Strings>  
         <String  
             Name  
         >  
         </String>  
     </Strings>  
-  
+
     <Schedules>  
         <Schedule  
             Name  
@@ -140,33 +141,34 @@ El `Package` elemento es el elemento XML de nivel superior dentro de un archivo 
     </Schedules>  
 </Package>  
 ```  
-  
-## <a name="elements-and-attributes"></a>Elementos y atributos  
+
+## <a name="elements-and-attributes"></a>Los elementos y atributos  
  El `Package` elemento es necesario. Tiene los siguientes atributos.  
-  
-|Atributo|Descripción|  
-|---------------|-----------------|  
-|`Culture`|Requerido. Define la referencia cultural para este paquete, que determina el idioma que desea utilizar. Este atributo es una clave en el `Strings` elemento, que enumera las cadenas de referencia cultural para los nombres de producto y los mensajes de error durante la instalación.|  
-|`Name`|Requerido. El nombre del paquete que se muestra al desarrollador dentro de una herramienta como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Este atributo es una clave en el `Strings` elemento, que debe contener un `String` elemento con la `Name` y `Culture` establecen propiedades para que coincida con el `Name` y `Culture` propiedades de `Package`.|  
-|`LicenseAgreement`|Opcional. Especifica el nombre del archivo en el paquete de distribución que contiene el contrato de licencia de usuario final (CLUF).  Este archivo puede ser texto sin formato (.txt) o formato de texto enriquecido. .rtf)|  
-  
+
+
+| Atributo | Descripción |
+|--------------------| - |
+| `Culture` | Requerido. Define la referencia cultural para este paquete, que determina el idioma que se usará. Este atributo es una clave en el `Strings` elemento, que se enumera las cadenas específicas de referencias culturales para nombres de producto y los mensajes de error durante la instalación. |
+| `Name` | Requerido. El nombre del paquete que se muestra al desarrollador dentro de una herramienta como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Este atributo es una clave en el `Strings` elemento, que debe contener un `String` elemento con el `Name` y `Culture` establecer propiedades para que coincida con el `Name` y `Culture` propiedades de `Package`. |
+| `LicenseAgreement` | Opcional. Especifica el nombre del archivo en el paquete de distribución que contiene el contrato de licencia de usuario final (CLUF).  Este archivo puede ser texto sin formato (*.txt*) o formato de texto enriquecido. (*.rtf*) |
+
 ## <a name="example"></a>Ejemplo  
- En el ejemplo de código siguiente se muestra un archivo de paquete completo para redistribuir la [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].  
-  
-```  
+ En el ejemplo de código siguiente se muestra un archivo de paquete completo para redistribuir el [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].  
+
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
-  
+
 <Package  
   xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
   Name="DisplayName"  
   Culture="Culture"  
   LicenseAgreement="eula.rtf"  
 >  
-  
+
     <PackageFiles>  
         <PackageFile Name="eula.rtf"/>  
     </PackageFiles>  
-  
+
     <!-- Defines a localizable string table for error messages-->  
     <Strings>  
         <String Name="DisplayName">.NET Framework 2.0</String>  
@@ -184,9 +186,9 @@ El `Package` elemento es el elemento XML de nivel superior dentro de un archivo 
         <String Name="InstMsiAExe">http://go.microsoft.com/fwlink/?LinkId=37285</String>  
         <String Name="Msi30Exe">http://go.microsoft.com/fwlink/?LinkId=37287</String>  
     </Strings>  
-  
+
 </Package>  
 ```  
-  
+
 ## <a name="see-also"></a>Vea también  
- [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)
+ [Referencia de esquema de paquete y del producto](../deployment/product-and-package-schema-reference.md)

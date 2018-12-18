@@ -20,18 +20,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7931ae34838ac7c995cbea0543f921fedd20e2ed
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9d9def71b21fc68b7347ce9fb0596fd73bd44393
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749325"
 ---
-# <a name="cvwritealert-function"></a>CvWriteAlert (Función)
+# <a name="cvwritealert-function"></a>Función CvWriteAlert
 Escribe una alerta en el archivo de seguimiento del visualizador de simultaneidad.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```C  
 HRESULT CvWriteAlertW(  
     _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
     _In_ PCWSTR pMessage,  
@@ -69,7 +70,7 @@ HRESULT CvWriteAlertVA(
  S_OK cuando el mensaje se ha escrito correctamente. Código de error en caso de que se hayan producido errores. Utilice macros SUCCEEDED/FAILED para comprobar si existe una condición de error.  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** cvmarkers.h  
+ **Encabezado:** *cvmarkers.h*  
   
  **Unicode:** CvWriteAlertW, CvWriteAlertVW  
   

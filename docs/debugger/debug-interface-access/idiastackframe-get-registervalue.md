@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackframe:: Get_registervalue | Documentos de Microsoft'
+title: Idiastackframe | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,14 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1c08258c98b46536f17f7819ce01c296d2d1900
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7799316a933e5f021df78699e41e6e9483746575
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845958"
 ---
 # <a name="idiastackframegetregistervalue"></a>IDiaStackFrame::get_registerValue
-Recupera el valor de un registro especificado tal como se almacena en el marco de pila.  
+Recupera el valor de un registro especificado tal como está almacenado en el marco de pila.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,8 +41,8 @@ HRESULT get_registerValue(
  [out] Valor almacenado en el registro.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve el código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   
- [CV_HREG_e (enumeración)](../../debugger/debug-interface-access/cv-hreg-e.md)
+ [Enumeración CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md)

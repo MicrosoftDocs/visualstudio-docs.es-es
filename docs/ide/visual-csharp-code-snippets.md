@@ -1,9 +1,9 @@
 ---
-title: Fragmentos de código de C# | Microsoft Docs
-ms.custom: ''
+title: Fragmentos de código de C#
 ms.date: 06/05/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - snippets [C#]
 - code snippets [C#]
@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8ee8b5adc7d0c7c40f80cdfed7cc873b092d5eb1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: feec485f752ac13b43310e4afd97bdfaac93ee51
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849169"
 ---
 # <a name="c-code-snippets"></a>Fragmentos de código de C#
 
@@ -26,14 +27,14 @@ Los fragmentos de código están listos para usar y puede insertarlos rápidamen
 
  Puede insertar un fragmento de código en la posición del cursor o insertar un fragmento de código envolvente alrededor del código seleccionado actualmente. La herramienta de inserción de fragmento de código se invoca a través de los comandos **Insertar fragmento de código** o **Envolver con** del menú **IntelliSense**, o con los métodos abreviados de teclado **Ctrl**+**K**, **X** o **Ctrl**+**K**, **S** respectivamente.
 
- La herramienta de inserción de fragmento de código muestra el nombre de todos los fragmentos de código disponibles. La herramienta de inserción de fragmento de código también incluye un cuadro de diálogo de entrada en el que puede escribir el nombre del fragmento de código o parte de este. La herramienta de inserción de fragmento de código resalta la coincidencia más cercana a un nombre de fragmento de código. Si se presiona **TAB** en cualquier momento, se cerrará la herramienta de inserción de fragmento de código y se insertará el fragmento de código seleccionado actualmente. Si se presiona **ESC** o se hace clic con el mouse en el Editor de código, se cerrará la herramienta de inserción de fragmento de código sin insertar ningún fragmento de código.
+ La herramienta de **inserción de fragmento de código** muestra el nombre de todos los fragmentos de código disponibles. La herramienta de inserción de fragmento de código también incluye un cuadro de diálogo de entrada en el que puede escribir el nombre del fragmento de código o parte de este. La herramienta de inserción de fragmento de código resalta la coincidencia más cercana a un nombre de fragmento de código. Si se presiona **TAB** en cualquier momento, se cerrará la herramienta de inserción de fragmento de código y se insertará el fragmento de código seleccionado actualmente. Si se presiona **ESC** o se hace clic con el mouse en el editor de código, se cerrará la herramienta de inserción de fragmento de código sin insertar ningún fragmento de código.
 
 ## <a name="default-code-snippets"></a>Fragmentos de código predeterminados
 
 Los siguientes fragmentos de código se incluyen en Visual Studio para C# de manera predeterminada.
 
-|Nombre (o acceso directo)|Description|Ubicaciones válidas donde se puede insertar el fragmento|
-|--------------------------|-----------------|---------------------------------------|
+|Nombre (o acceso directo)|Descripción|Ubicaciones válidas donde se puede insertar el fragmento|
+| - |-----------------| - |
 |#if|Crea una directiva [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) y una directiva [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif).|En cualquier lugar.|
 |#region|Crea una directiva [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) y una directiva [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion).|En cualquier lugar.|
 |~|Crea un destructor [finalizador](/dotnet/csharp/programming-guide/classes-and-structs/destructors) para la clase contenedora.|Dentro de una clase.|
@@ -57,7 +58,7 @@ Los siguientes fragmentos de código se incluyen en Visual Studio para C# de man
 |iterator|Crea un iterador.|Dentro de una clase o un struct.|
 |iterindex|Crea un par de iterador e indexador "con nombre" mediante una clase anidada.|Dentro de una clase o un struct.|
 |bloquear|Crea un bloque [lock](/dotnet/csharp/language-reference/keywords/lock-statement).|Dentro de un método, un indexador, un descriptor de acceso a propiedad o un descriptor de acceso a evento.|
-|mbox|Crea una llamada a <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Puede que tenga que agregar una referencia a System.Windows.Forms.dll.|Dentro de un método, un indexador, un descriptor de acceso a propiedad o un descriptor de acceso a evento.|
+|mbox|Crea una llamada a <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Puede que tenga que agregar una referencia a *System.Windows.Forms.dll*.|Dentro de un método, un indexador, un descriptor de acceso a propiedad o un descriptor de acceso a evento.|
 |namespace|Crea una declaración [namespace](/dotnet/csharp/language-reference/keywords/namespace).|Dentro de un espacio de nombres (incluido el espacio de nombres global).|
 |prop|Crea una declaración de [propiedad autoimplementada](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties).|Dentro de una clase o un struct.|
 |propfull|Crea una declaración de propiedad con descriptores de acceso `get` y `set`.|Dentro de una clase o un struct.|
@@ -75,7 +76,7 @@ Los siguientes fragmentos de código se incluyen en Visual Studio para C# de man
 
 ## <a name="see-also"></a>Vea también
 
-[Funciones de los fragmentos de código](../ide/code-snippet-functions.md)  
-[Fragmentos de código](../ide/code-snippets.md)  
-[Parámetros de plantilla](../ide/template-parameters.md)  
-[Cómo: Usar fragmentos de código envolventes](../ide/how-to-use-surround-with-code-snippets.md)
+- [Funciones de los fragmentos de código](../ide/code-snippet-functions.md)
+- [Fragmentos de código](../ide/code-snippets.md)
+- [Parámetros de plantilla](../ide/template-parameters.md)
+- [Cómo usar fragmentos de código envolventes](../ide/how-to-use-surround-with-code-snippets.md)

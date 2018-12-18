@@ -1,6 +1,7 @@
 ---
 title: 'CA1406: Evite argumentos Int64 para clientes Visual Basic 6'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -13,15 +14,20 @@ ms.assetid: d5d0d3fc-f105-43da-be5b-923ab023309c
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 36c8ceb93f4784fa3ff50343b8b9cd7770e69533
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f6eeda13b8dc7a05622613f719a6b2a85b61835a
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546881"
 ---
 # <a name="ca1406-avoid-int64-arguments-for-visual-basic-6-clients"></a>CA1406: Evite argumentos Int64 para clientes Visual Basic 6
+
 |||
 |-|-|
 |TypeName|AvoidInt64ArgumentsForVB6Clients|
@@ -35,16 +41,16 @@ ms.lasthandoff: 04/19/2018
 ## <a name="rule-description"></a>Descripción de la regla
  Los clientes COM de Visual Basic 6 no pueden tener acceso a los enteros de 64 bits.
 
- De forma predeterminada, los siguientes son visibles para COM: ensamblados, tipos públicos, miembros de instancia públicos en tipos públicos y todos los miembros de tipos de valor públicos. Sin embargo, para reducir los falsos positivos, esta regla requiere que la visibilidad de COM del tipo que se establezca explícitamente; el ensamblado que lo contiene se debe marcar con el <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> establecido en `false` y el tipo se debe marcar con el <xref:System.Runtime.InteropServices.ComVisibleAttribute> establecido en `true`.
+ De forma predeterminada, los siguientes son visibles para COM: ensamblados, tipos públicos, los miembros de instancia públicos en tipos públicos y todos los miembros de tipos de valor público. Sin embargo, para reducir los falsos positivos, esta regla requiere que la visibilidad de COM de tipo explícita; el ensamblado contenedor debe estar marcado con el <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> establecido en `false` y el tipo se debe marcar con el <xref:System.Runtime.InteropServices.ComVisibleAttribute> establecido en `true`.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla para un parámetro cuyo valor se puede expresar siempre como un entero de 32 bits, cambie el tipo de parámetro a <xref:System.Int32?displayProperty=fullName>. Si el valor del parámetro puede ser mayor que se puede expresar como un entero de 32 bits, cambie el tipo de parámetro a <xref:System.Decimal?displayProperty=fullName>. Tenga en cuenta que ambos <xref:System.Single?displayProperty=fullName> y <xref:System.Double?displayProperty=fullName> perder precisión en los intervalos superiores de la <xref:System.Int64> tipo de datos. Si el miembro no está pensado para ser visibles para COM, márquelo con el <xref:System.Runtime.InteropServices.ComVisibleAttribute> establecido en `false`.
+ Para corregir una infracción de esta regla para un parámetro cuyo valor siempre se puede expresar como un entero de 32 bits, cambie el tipo de parámetro a <xref:System.Int32?displayProperty=fullName>. Si el valor del parámetro puede ser mayor que se puede expresar como un entero de 32 bits, cambie el tipo de parámetro a <xref:System.Decimal?displayProperty=fullName>. Tenga en cuenta que ambos <xref:System.Single?displayProperty=fullName> y <xref:System.Double?displayProperty=fullName> perder precisión en los intervalos superiores de la <xref:System.Int64> tipo de datos. Si el miembro no está pensado para ser visibles para COM, márquelo con el <xref:System.Runtime.InteropServices.ComVisibleAttribute> establecido en `false`.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Es seguro suprimir una advertencia de esta regla si tiene la certeza de que los clientes COM de Visual Basic 6 no tendrá acceso a los tipos.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ Es seguro suprimir una advertencia de esta regla si tiene la certeza de que los clientes COM de Visual Basic 6 no tendrá acceso a la del tipo.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra un tipo que infringe la regla.
+ El ejemplo siguiente muestra un tipo que infringe la regla.
 
  [!code-csharp[FxCop.Interoperability.LongArgument#1](../code-quality/codesnippet/CSharp/ca1406-avoid-int64-arguments-for-visual-basic-6-clients_1.cs)]
  [!code-vb[FxCop.Interoperability.LongArgument#1](../code-quality/codesnippet/VisualBasic/ca1406-avoid-int64-arguments-for-visual-basic-6-clients_1.vb)]
@@ -57,4 +63,6 @@ ms.lasthandoff: 04/19/2018
  [CA1017: Marque los ensamblados con ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>Vea también
- [Interoperar con código no administrado](/dotnet/framework/interop/index) [tipo de datos Long](/dotnet/visual-basic/language-reference/data-types/long-data-type)
+
+- [Interoperating with Unmanaged Code](/dotnet/framework/interop/index) (Interoperar con código no administrado)
+- [Long (tipo de datos)](/dotnet/visual-basic/language-reference/data-types/long-data-type)

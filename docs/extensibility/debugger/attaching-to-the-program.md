@@ -1,5 +1,5 @@
 ---
-title: Asociar al programa | Documentos de Microsoft
+title: Asociar al programa | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,55 +13,56 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a4c9719f6258f3bbb5cc8323693001c7f1a9d47
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c87aa879009ef0cd68a83d8ad7affdf0be58f796
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903652"
 ---
-# <a name="attaching-to-the-program"></a>Asociar al programa
-Después de haber registrado los programas con el puerto adecuado, debe asociar al depurador al programa que desea depurar.  
+# <a name="attach-to-the-program"></a>Adjunte al programa
+Después de haber registrado sus programas con el puerto adecuado, debe asociar al depurador al programa que desea depurar.  
   
-## <a name="choosing-how-to-attach"></a>Elegir cómo adjuntar  
- Hay tres formas en que el Administrador de sesión de depuración (SDM) intenta adjuntar al programa que se está depurando.  
+## <a name="choose-how-to-attach"></a>Elija cómo adjuntar  
+ Hay tres formas en que el Administrador de depuración de la sesión (SDM) intenta adjuntar al programa que se está depurando. 
   
-1.  En los programas que se inician mediante el motor de depuración a través de la [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) método (típica de idiomas interpretados, por ejemplo), el SDM Obtiene la [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md) de la interfaz de el [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) objeto asociado con el programa que se va a adjuntar a. Si puede obtener el SDM el `IDebugProgramNodeAttach2` el SDM, a continuación, llama a la interfaz, el [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) método. El `IDebugProgramNodeAttach2::OnAttach` método devuelve `S_OK` para indicar que no lo ha adjuntado al programa y que se pueden realizar otros intentos para adjuntar al programa.  
+1. Para los programas que se inician mediante el motor de depuración a través de la [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) método (típica de los lenguajes interpretados, por ejemplo), el SDM Obtiene el [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md) desde la interfaz el [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) objeto asociado con el programa que se va a adjuntar a. Si puede obtener el SDM el `IDebugProgramNodeAttach2` el SDM, a continuación, llama a la interfaz, el [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) método. El `IDebugProgramNodeAttach2::OnAttach` devuelve del método `S_OK` para indicar que no lo ha adjuntado al programa y que se puede realizar otro intento para adjuntar al programa.  
   
-2.  Si puede obtener el SDM el [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md) interfaz desde el programa que se va a adjuntar a las llamadas SDM el [adjuntar](../../extensibility/debugger/reference/idebugprogramex2-attach.md) método. Este enfoque es típico de programas que se inicien de forma remota por el proveedor del puerto.  
+2. Si puede obtener el SDM el [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md) interfaz desde el programa que se asocia a las llamadas SDM el [adjuntar](../../extensibility/debugger/reference/idebugprogramex2-attach.md) método. Este enfoque es típico de programas que se inician de forma remota por el proveedor del puerto.  
   
-3.  Si el programa no se puede conectar a través de la `IDebugProgramNodeAttach2::OnAttach` o `IDebugProgramEx2::Attach` métodos, el SDM carga el motor de depuración (si aún no está cargada) mediante una llamada a la `CoCreateInstance` función y, a continuación, llama el [adjuntar](../../extensibility/debugger/reference/idebugengine2-attach.md) método. Este enfoque es típico de programas iniciados localmente por un proveedor de puerto.  
+3. Si el programa no se puede conectar a través de la `IDebugProgramNodeAttach2::OnAttach` o `IDebugProgramEx2::Attach` métodos, el SDM carga el motor de depuración (si aún no está cargada) mediante una llamada a la `CoCreateInstance` función y, a continuación, llama a la [adjuntar](../../extensibility/debugger/reference/idebugengine2-attach.md) método. Este enfoque es típico de programas que se inicia localmente por un proveedor de puerto.  
   
-     También es posible que un proveedor de puerto personalizado llamar a la `IDebugEngine2::Attach` método de implementación del proveedor de puerto personalizado de la `IDebugProgramEx2::Attach` método. En este caso, normalmente el proveedor del puerto personalizado inicia el motor de depuración en el equipo remoto.  
+    También es posible que un proveedor de puerto personalizado llamar a la `IDebugEngine2::Attach` método de implementación del proveedor de puerto personalizado de la `IDebugProgramEx2::Attach` método. Normalmente, en este caso, el proveedor del puerto personalizado inicia el motor de depuración en el equipo remoto.  
   
- Datos adjuntos se consigue cuando el Administrador de sesión de depuración (SDM) llama el [adjuntar](../../extensibility/debugger/reference/idebugengine2-attach.md) método.  
+   Los datos adjuntos se logra cuando el Administrador de depuración de la sesión (SDM) llama a la [adjuntar](../../extensibility/debugger/reference/idebugengine2-attach.md) método.  
   
- Si ejecuta su Alemania en el mismo proceso que la aplicación va a depurar, debe implementar los métodos siguientes de [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md):  
+   Si ejecuta su DE en el mismo proceso que la aplicación que se desea depurar, a continuación, debe implementar los métodos siguientes de [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md):  
   
--   [GetHostName](../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md),  
+- [GetHostName](../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md),  
   
--   [GetHostPid](../../extensibility/debugger/reference/idebugprogramnode2-gethostpid.md)  
+- [GetHostPid](../../extensibility/debugger/reference/idebugprogramnode2-gethostpid.md)  
   
--   [GetProgramName](../../extensibility/debugger/reference/idebugprogramnode2-getprogramname.md)  
+- [GetProgramName](../../extensibility/debugger/reference/idebugprogramnode2-getprogramname.md)  
   
- Después de la `IDebugEngine2::Attach` se llama al método, siga estos pasos en la implementación de la `IDebugEngine2::Attach` método:  
+  Después de la `IDebugEngine2::Attach` se llama al método, siga estos pasos en la implementación de la `IDebugEngine2::Attach` método:  
   
-1.  Enviar una [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) objeto de evento para el SDM. Para obtener más información, consulte [enviar eventos](../../extensibility/debugger/sending-events.md).  
+1.  Enviar una [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) objeto event para el SDM. Para obtener más información, consulte [enviar eventos](../../extensibility/debugger/sending-events.md).  
   
 2.  Llame a la [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) método en el [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) objeto que se pasó a la `IDebugEngine2::Attach` método.  
   
-     Esto devuelve un `GUID` que se usa para identificar el programa. El `GUID` deben almacenarse en el objeto que representa la variable local de programa a la DE y se debe devolver cuando la `IDebugProgram2::GetProgramId` método se llama en el `IDebugProgram2` interfaz.  
+     Esto devuelve un `GUID` que se usa para identificar el programa. El `GUID` deben almacenarse en el objeto que representa la variable local del programa a la DE y se debe devolver cuando la `IDebugProgram2::GetProgramId` se llama al método en el `IDebugProgram2` interfaz.  
   
     > [!NOTE]
-    >  Si implementa el `IDebugProgramNodeAttach2` de la interfaz, el programa `GUID` se pasa a la `IDebugProgramNodeAttach2::OnAttach` método. Esto `GUID` se usa para el programa `GUID` devuelto por la `IDebugProgram2::GetProgramId` método.  
+    >  Si implementa el `IDebugProgramNodeAttach2` interfaz, el programa `GUID` se pasa a la `IDebugProgramNodeAttach2::OnAttach` método. Esto `GUID` se usa para el programa `GUID` devuelto por la `IDebugProgram2::GetProgramId` método.  
   
-3.  Enviar una [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) objeto de evento para notificar el SDM que la variable local `IDebugProgram2` objeto se creó para representar el sistema a la DE. Para obtener más información, consulte [enviar eventos](../../extensibility/debugger/sending-events.md).  
+3.  Enviar una [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) objeto de evento para notificar el SDM que local `IDebugProgram2` objeto se creó para representar el programa a la DE. Para obtener más información, consulte [enviar eventos](../../extensibility/debugger/sending-events.md).  
   
     > [!NOTE]
-    >  Esto no es lo mismo `IDebugProgram2` objeto que se pasó a la `IDebugEngine2::Attach` método. Anteriormente pasado `IDebugProgram2` objeto es reconocido por el puerto solo y es un objeto independiente.  
+    >  Esto no es el mismo `IDebugProgram2` objeto que se pasó a la `IDebugEngine2::Attach` método. Anteriormente pasado `IDebugProgram2` objeto es reconocido por el puerto solo y es un objeto independiente.  
   
 ## <a name="see-also"></a>Vea también  
- [Datos adjuntos basada en Inicio](../../extensibility/debugger/launch-based-attachment.md)   
- [El envío de eventos](../../extensibility/debugger/sending-events.md)   
+ [Adjunto basado en Inicio](../../extensibility/debugger/launch-based-attachment.md)   
+ [Envío de eventos](../../extensibility/debugger/sending-events.md)   
  [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)   
  [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)   

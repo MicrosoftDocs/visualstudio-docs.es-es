@@ -1,5 +1,5 @@
 ---
-title: PENDING_BP_STATE | Documentos de Microsoft
+title: PENDING_BP_STATE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae632ab67a21d795a0594d37301c162c1c4ba753
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 30e70c956afc6aef5025d35425fbc2ee42605b90
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921076"
 ---
 # <a name="pendingbpstate"></a>PENDING_BP_STATE
 Especifica el estado de un punto de interrupción pendiente (un punto de interrupción que aún no se ha enlazado).  
@@ -53,10 +54,10 @@ public enum enum_PENDING_BP_STATE {
  Indica que se ha eliminado el punto de interrupción pendiente.  
   
  PBPS_DISABLED  
- Indica que el punto de interrupción pendiente está deshabilitado.  
+ Indica que el punto de interrupción pendiente está deshabilitada.  
   
  PBPS_ENABLED  
- Indica que el punto de interrupción pendiente está habilitada.  
+ Indica que está habilitado el punto de interrupción pendiente.  
   
 ## <a name="remarks"></a>Comentarios  
  Usar como el `state` miembro de la [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) estructura.  

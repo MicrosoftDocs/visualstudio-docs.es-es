@@ -12,18 +12,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e134db79df1457b3308fc86b2fbe2b133d8ce86
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d08c2041d0432bb215b46401521583c921bcbc92
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934904"
 ---
 # <a name="startprofile"></a>StartProfile
 La función `StartProfile` establece el contador en 1 (activado) para el nivel de generación de perfiles especificado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp  
 PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(  
                         PROFILE_CONTROL_LEVEL Level,   
                         unsigned int dwId);  
@@ -34,7 +35,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
   
  Indica el nivel de perfil en el que se puede aplicar la recopilación de datos de rendimiento. Los enumeradores **PROFILE_CONTROL_LEVEL** siguientes se pueden usar para indicar uno de tres niveles en los que se puede aplicar la recopilación de datos de rendimiento:  
   
-|Enumerador|Description|  
+|Enumerador|Descripción|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|La configuración de nivel global afecta a todos los procesos y subprocesos en la generación de perfiles.|  
 |PROFILE_PROCESSLEVEL|La configuración de nivel de proceso afecta a todos los subprocesos que forman parte del proceso especificado.|  
@@ -47,7 +48,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
 ## <a name="property-valuereturn-value"></a>Valor de propiedad y valor devuelto  
  La función indica si la operación es correcta o errónea mediante la enumeración **PROFILE_COMMAND_STATUS**. El valor devuelto puede ser cualquiera de los siguientes:  
   
-|Enumerador|Description|  
+|Enumerador|Descripción|  
 |----------------|-----------------|  
 |PROFILE_ERROR_ID_NOEXIST|El id. del elemento de generación de perfiles no existe.|  
 |PROFILE_ERROR_LEVEL_NOEXIST|El nivel de generación de perfiles especificado no existe.|  
@@ -63,17 +64,17 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
  Cuando el estado de Iniciar/Detener y de Suspensión/Reanudación es Activado, el estado de generación de perfiles para el nivel es Activado. Para que se pueda generar el perfil de un subproceso, el estado de nivel global, de proceso y de subproceso para el subproceso debe ser Activado.  
   
 ## <a name="net-framework-equivalent"></a>Equivalente de .NET Framework  
- Microsoft.VisualStudio.Profiler.dll  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Información de la función  
- Encabezado: declarado en VSPerf.h  
+ Encabezado: declarado en *VSPerf.h*  
   
- Biblioteca de importación: VSPerf.lib  
+ Biblioteca de importación: *VSPerf.lib*  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se muestra el uso de la llamada de función StartProfile.  
   
-```  
+```cpp  
 void ExerciseStartProfile()  
 {  
     // StartProfile and StopProfile control the  
@@ -108,4 +109,4 @@ void ExerciseStartProfile()
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Referencia a la API del generador de perfiles de Visual Studio (nativa)](../profiling/visual-studio-profiler-api-reference-native.md)
+ [Referencia de la API del generador de perfiles de Visual Studio (nativa)](../profiling/visual-studio-profiler-api-reference-native.md)

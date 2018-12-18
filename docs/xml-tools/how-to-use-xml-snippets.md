@@ -1,7 +1,8 @@
 ---
-title: Cómo utilizar fragmentos XML en Microsoft Visual Studio | Documentos de Microsoft
+title: Cómo usar los fragmentos XML
 ms.date: 11/04/2016
-ms.technology: vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
 author: gewarren
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5751293124edab5c8415cd60d79aba9947fb94bf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b4758fbebea12b014f92bed59e851210509cdbb9
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573133"
 ---
 # <a name="how-to-use-xml-snippets"></a>Cómo: usar XML fragmentos de código
 
@@ -21,7 +23,7 @@ Puede invocar fragmentos XML mediante los dos siguientes comandos del menú cont
 
 Una vez que el fragmento XML se ha agregado al editor, todos los campos editables del fragmento se resaltan en amarillo y el cursor se coloca en el primer campo editable.
 
-## <a name="insert-snippet"></a>Insertar fragmento de código
+## <a name="insert-snippet"></a>Insertar fragmento
 
 Los procedimientos siguientes describen cómo tener acceso a la **Insertar fragmento de código** comando.
 
@@ -48,7 +50,7 @@ Los procedimientos siguientes describen cómo tener acceso a la **Insertar fragm
 
 3. Seleccione un fragmento de la lista con el mouse o escribiendo el nombre del fragmento y presione **ficha** o **ENTRAR**.
 
-### <a name="to-insert-snippets-through-the-intellisense-complete-word-list"></a>Para insertar fragmentos mediante la lista de palabras completas de IntelliSense
+### <a name="to-insert-snippets-through-the-intellisense-complete-word-list"></a>Para insertar fragmentos de código a través de la lista de palabras completas de IntelliSense
 
 1. Coloque el cursor en el lugar en el que desea insertar el fragmento XML.
 
@@ -78,7 +80,7 @@ Los procedimientos siguientes describen cómo tener acceso a la **rodear con** c
 > [!NOTE]
 > El **rodear con** comando también está disponible mediante el método abreviado de teclado (**Ctrl**+**K**, a continuación, **Ctrl** + **S**).
 
-### <a name="to-use-surround-with-from-the-context-menu"></a>Para utilizar este comando desde el menú de acceso directo
+### <a name="to-use-surround-with-from-the-context-menu"></a>Usar rodear con en el menú contextual
 
 1. Seleccione el texto que se va a rodear en el Editor XML.
 
@@ -88,7 +90,7 @@ Los procedimientos siguientes describen cómo tener acceso a la **rodear con** c
 
 3. Seleccione un fragmento de la lista con el mouse o escribiendo el nombre del fragmento y presione **ficha** o **ENTRAR**.
 
-### <a name="to-use-surround-with-from-the-intellisense-menu"></a>Para utilizar este comando en el menú de IntelliSense
+### <a name="to-use-surround-with-from-the-intellisense-menu"></a>Usar rodear con en el menú de IntelliSense
 
 1. Seleccione el texto que se va a rodear en el Editor XML.
 
@@ -98,7 +100,7 @@ Los procedimientos siguientes describen cómo tener acceso a la **rodear con** c
 
 3. Seleccione un fragmento de la lista con el mouse o escribiendo el nombre del fragmento y presione **ficha** o **ENTRAR**.
 
-## <a name="using-xml-snippets"></a>Uso de fragmentos XML
+## <a name="use-xml-snippets"></a>Utilizar fragmentos XML
 
 Una vez elegido un fragmento XML, el texto del fragmento de código se inserta automáticamente en la posición del cursor. Todos los campos editables del fragmento se resaltan y el primero de estos campos se selecciona automáticamente. Al campo actualmente seleccionado se le aplica la conversión boxing.
 
@@ -108,10 +110,10 @@ Solo es editable la primera ocurrencia de un campo dado. Cuando ese campo está 
 
 Al presionar **ENTRAR** o **Esc** cancela la edición de los campos y el editor vuelve a su estado normal.
 
-Los colores predeterminados de los campos de fragmento de código modificable pueden cambiarse modificando la configuración de campo de fragmento de código en el **fuentes y colores** panel de la **opciones** cuadro de diálogo. Para obtener más información, consulte [Cómo: cambiar fuentes y colores en el Editor de](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+Los colores predeterminados de los campos de fragmento de código modificable pueden cambiarse modificando la **campo de fragmento de código** en el **fuentes y colores** panel de la **opciones** cuadro de diálogo. Para obtener más información, consulte [Cómo: cambiar fuentes y colores en el editor de](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ## <a name="see-also"></a>Vea también
 
-- [Fragmentos de código XML](../xml-tools/xml-snippets.md)
-- [Cómo: Generar un fragmento de código XML a partir de un esquema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
-- [Cómo: Crear fragmentos de código XML](../xml-tools/how-to-create-xml-snippets.md)
+- [Fragmentos XML](../xml-tools/xml-snippets.md)
+- [Cómo: generar un fragmento XML desde un esquema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [Cómo: crear fragmentos XML](../xml-tools/how-to-create-xml-snippets.md)

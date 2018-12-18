@@ -1,5 +1,5 @@
 ---
-title: XMLNode (Control) | Documentos de Microsoft
+title: XMLNode (control)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,26 +15,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b21f6f4e84672d195b6147f73c513c1995200a03
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cd047814f11b5fddad868bd65b84deba369facd5
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258894"
 ---
-# <a name="xmlnode-control"></a>XMLNode (Control)
-  **Importante** la información que figura en este tema con respecto a Microsoft Word está presentado exclusivamente para el beneficio y el uso de personas y organizaciones que se encuentran fuera de Estados Unidos y sus territorios o que está usando, o del desarrollo programas que se ejecutan en, productos de Microsoft Word que se autoriza el uso de Microsoft antes de enero de 2010, cuando Microsoft quita una implementación de funcionalidad concreta relacionada con XML personalizado de Microsoft Word. Esta información con respecto a Microsoft Word no puede leer o utilizada por personas u organizaciones en Estados Unidos o en sus territorios que están usando o desarrollar programas que se ejecutan en productos de Microsoft Word que se usan bajo licencia Microsoft después de 10 de enero de 2010 ; los productos no comportarán igual que los productos con licencia antes de esa fecha o adquirido y licencia para su uso fuera de Estados Unidos.  
+# <a name="xmlnode-control"></a>XMLNode (control)
+  **Importante** la información en este tema con respecto a Microsoft Word se presenta exclusivamente para el uso y disfrute de individuos y organizaciones que se encuentran fuera de Estados Unidos y sus territorios o quién está usando o desarrollo programas que se ejecutan en, los productos de Microsoft Word que se licencia de Microsoft antes de enero de 2010, cuando Microsoft quita una implementación de la funcionalidad concreta relacionadas con XML personalizado de Microsoft Word. Esta información con respecto a Microsoft Word no puede ser leída o utilizada por personas u organizaciones en Estados Unidos o en sus territorios que utiliza, o desarrollar programas que se ejecutan en los productos de Microsoft Word que se licencia de Microsoft después de 10 de enero de 2010 ; los productos no comportarán igual que los productos con licencia antes de esa fecha o adquirido y con licencia para su uso fuera de Estados Unidos.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
- El <xref:Microsoft.Office.Tools.Word.XMLNode> control es un objeto de nodo XML asignado que expone eventos y se puede enlazar a datos. El <xref:Microsoft.Office.Tools.Word.XMLNode> control sólo se crea cuando se asigna un elemento de esquema no repetitivo en un documento de Microsoft Office Word. Después de que Visual Studio crea el nodo XML, puede programar con ella directamente sin tener que recorrer el modelo de objetos de Word.  
+ El <xref:Microsoft.Office.Tools.Word.XMLNode> control es un objeto de nodo XML asignado que expone eventos y se puede enlazar a datos. El <xref:Microsoft.Office.Tools.Word.XMLNode> control sólo se crea cuando un elemento de esquema no es de repetición se asigna a un documento de Microsoft Office Word. Después de que Visual Studio crea el nodo XML, puede programar con él directamente sin tener que recorrer el modelo de objetos de Word.  
   
- El <xref:Microsoft.Office.Tools.Word.XMLNode> control se puede eliminar quitando la asignación de elemento en Word.  
+ El <xref:Microsoft.Office.Tools.Word.XMLNode> control puede eliminarse quitando la asignación de elementos en Word.  
   
-## <a name="binding-data-to-the-control"></a>Enlazar datos al control  
- Un <xref:Microsoft.Office.Tools.Word.XMLNode> control admite el enlace de datos simple. El nodo XML debe enlazarse a un origen de datos mediante el uso de la <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> propiedad. Si los datos del conjunto de datos enlazado se actualizan, el <xref:Microsoft.Office.Tools.Word.XMLNode> control refleja los cambios.  
+## <a name="bind-data-to-the-control"></a>Enlazar datos al control  
+ Un <xref:Microsoft.Office.Tools.Word.XMLNode> control admite el enlace de datos simple. El nodo XML debe enlazarse a un origen de datos mediante el uso de la <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> propiedad. Si los datos del conjunto de datos enlazado se actualizan, los <xref:Microsoft.Office.Tools.Word.XMLNode> control refleja los cambios.  
   
 ## <a name="formatting"></a>Formato  
- Formato que se pueden aplicar a un <xref:Microsoft.Office.Interop.Word.XMLNode> objeto puede aplicarse a un <xref:Microsoft.Office.Tools.Word.XMLNode> control. Esto incluye fuentes, estilos de subrayado y estilos de carácter.  
+ El formato que se pueden aplicar a un <xref:Microsoft.Office.Interop.Word.XMLNode> objeto se puede aplicar a un <xref:Microsoft.Office.Tools.Word.XMLNode> control. Esto incluye fuentes, estilos de subrayado y estilos de carácter.  
   
 ## <a name="events"></a>Eventos  
  Los eventos siguientes están disponibles para el control <xref:Microsoft.Office.Tools.Word.XMLNode>:  
@@ -57,34 +58,34 @@ ms.lasthandoff: 04/16/2018
   
 -   <xref:Microsoft.Office.Tools.Word.XMLNode.ValidationError>  
   
-## <a name="comparing-events"></a>Comparar eventos  
- Puede capturar un evento cuando el usuario mueve su cursor dentro del contexto de una determinada <xref:Microsoft.Office.Tools.Word.XMLNode> control. Por ejemplo, podría tener un <xref:Microsoft.Office.Tools.Word.XMLNode> control denominado `Customer` que tiene un elemento secundario <xref:Microsoft.Office.Tools.Word.XMLNode> control denominado `Company`, y `Company` tiene dos secundarios <xref:Microsoft.Office.Tools.Word.XMLNode> controles denominados `CompanyName` y `CompanyRegion` como se indica a continuación:  
+## <a name="compare-events"></a>Comparar eventos  
+ Puede capturar un evento cuando el usuario mueve el cursor dentro del contexto de una determinada <xref:Microsoft.Office.Tools.Word.XMLNode> control. Por ejemplo, podría tener un <xref:Microsoft.Office.Tools.Word.XMLNode> control denominado `Customer` que tiene un elemento secundario <xref:Microsoft.Office.Tools.Word.XMLNode> control denominado `Company`, y `Company` tiene dos secundarios <xref:Microsoft.Office.Tools.Word.XMLNode> controles denominados `CompanyName` y `CompanyRegion` como sigue:  
   
-```  
+```xml  
 <Customer>  
     <Company>  
         <CompanyName>  
         <CompanyRegion>  
 ```  
   
- Si desea mostrar un control en el panel de acciones cada vez que se mueve el cursor en el `Company` nodo, no es importante si el cursor se coloca en `CompanyName` o `CompanyRegion` porque son ambos en el contexto de `Company`. En este caso, puede escribir el código el <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter> eventos de `Company`.  
+ Si desea mostrar un control en el panel de acciones cada vez que se mueve el cursor en el `Company` nodo, deberían importarle si el cursor se coloca en `CompanyName` o `CompanyRegion` porque son ambos dentro del contexto de `Company`. En este caso, puede escribir el código en el <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter> událostí `Company`.  
   
- En la mayoría de los casos, cuando el cursor entra en un <xref:Microsoft.Office.Tools.Word.XMLNode> controlar tanto la <xref:Microsoft.Office.Tools.Word.XMLNode.Select> y <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter> se generan eventos. En la tabla siguiente se muestra las diferencias entre estos eventos.  
+ En la mayoría de los casos, cuando el cursor entra en un <xref:Microsoft.Office.Tools.Word.XMLNode> controlar tanto el <xref:Microsoft.Office.Tools.Word.XMLNode.Select> y <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter> se generan eventos. En la tabla siguiente se muestra las diferencias entre estos eventos.  
   
-|Seleccione un evento|Evento ContextEnter|  
+|Seleccionar evento|Evento ContextEnter|  
 |------------------|------------------------|  
-|Se produce cuando el cursor se coloca dentro de un <xref:Microsoft.Office.Tools.Word.XMLNode>.|Se produce cuando el cursor se coloca dentro de un <xref:Microsoft.Office.Tools.Word.XMLNode> o uno de sus nodos descendientes, en un área fuera del contexto del nodo. En otras palabras, se desencadena cuando se cambia el contexto.|  
+|Se produce cuando el cursor se coloca dentro de un <xref:Microsoft.Office.Tools.Word.XMLNode>.|Se produce cuando el cursor se coloca dentro de un <xref:Microsoft.Office.Tools.Word.XMLNode> o uno de sus nodos descendientes, en un área fuera del contexto del nodo. En otras palabras, se genera solo cuando cambia el contexto.|  
   
- Por ejemplo, cuando se mueve el cursor desde fuera de `Customer` en `CompanyName`, <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter> eventos para `Customer`, `Company`, y `CompanyName` se genera. Si, a continuación, mueve el cursor desde `CompanyName` a `CompanyRegion`, solo el <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter> eventos para `CompanyRegion` se genera porque todavía está dentro del contexto de ambos `Company` y `Customer`.  
+ Por ejemplo, cuando mueve el cursor desde fuera de `Customer` en `CompanyName`, <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter> eventos para `Customer`, `Company`, y `CompanyName` se genera. Si, a continuación, mueve el cursor de `CompanyName` a `CompanyRegion`, solo el <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter> eventos para `CompanyRegion` se produce porque todavía está dentro del contexto de ambos `Company` y `Customer`.  
   
  Existen las mismas diferencias entre el <xref:Microsoft.Office.Tools.Word.XMLNode.ContextLeave> eventos y <xref:Microsoft.Office.Tools.Word.XMLNode.Deselect> eventos.  
   
 ## <a name="see-also"></a>Vea también  
- [Información general sobre elementos y controles Host](../vsto/host-items-and-host-controls-overview.md)   
- [Automatizar Word con objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)   
- [XMLNodes (Control)](../vsto/xmlnodes-control.md)   
+ [Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)   
+ [Automatizar Word usando objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)   
+ [XMLNodes (control)](../vsto/xmlnodes-control.md)   
  [Cómo: agregar controles XMLNode a documentos de Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)   
  [Cómo: asignar esquemas a documentos de Word en Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
- [Limitaciones de programación de elementos y controles Host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
+ [Limitaciones de programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

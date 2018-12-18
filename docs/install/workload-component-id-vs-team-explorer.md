@@ -1,37 +1,41 @@
 ---
-title: Identificadores de componente y carga de trabajo de Visual Studio Team Explorer 2017 | Microsoft Docs
+title: Identificadores de componente y carga de trabajo de Visual Studio Team Explorer 2017
 description: Uso de identificadores de componente y carga de trabajo de Visual Studio para proporcionar herramientas de pruebas integradas para evaluadores generalistas
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 03/05/2018
+ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
 ms.workload:
 - multiple
-ms.openlocfilehash: ab7bd672fdafb8a94904153278ca415294e94642
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 57d34c8ea2c79c9d9444e553d37da353e4e3ece3
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607450"
 ---
 # <a name="visual-studio-team-explorer-2017-component-directory"></a>Directorio de componentes de Visual Studio Team Explorer 2017
 
-Las tablas de esta página presentan los identificadores que puede usar para instalar Visual Studio mediante la línea de comandos. Tenga en cuenta que agregaremos componentes adicionales a medida que se publiquen actualizaciones de Visual Studio.
+Las tablas de esta página presentan los identificadores que puede usar para instalar Visual Studio mediante la línea de comandos o que puede especificar como una dependencia en un manifiesto VSIX. Tenga en cuenta que agregaremos componentes adicionales a medida que se publiquen actualizaciones de Visual Studio.
 
-Tenga en cuenta también lo siguiente sobre esta página:
+Tenga en cuenta también lo siguiente sobre la página:
 
 * Cada carga de trabajo tiene su propia sección, seguida por el identificador de la carga de trabajo y una tabla de los componentes que están disponibles para la carga de trabajo.
-* De forma predeterminada, los componentes con carácter **Obligatorio** se instalarán cuando se instala la carga de trabajo. Si lo desea, también puede instalar los componentes con la marca **Recomendado** y **Opcional**.
+* De forma predeterminada, los componentes con carácter **Obligatorio** se instalarán cuando se instala la carga de trabajo.
+* Si lo desea, también puede instalar los componentes con la marca **Recomendado** y **Opcional**.
 * También hemos agregado una sección que muestra los componentes adicionales que no están asociados a ninguna carga de trabajo.
+
+Al establecer las dependencias del manifiesto de VSIX, debe especificar solo identificadores de componentes. Utilice las tablas de esta página para determinar las dependencias de componente mínimas. En algunos casos, esto podría significar que se especifique solo un componente de una carga de trabajo. En otros escenarios, puede significar que especifique varios componentes de una sola carga de trabajo o varios componentes de varias cargas de trabajo. Para obtener más información, consulte la página [How to: Migrate Extensibility Projects to Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) (Migración de proyectos de extensibilidad a Visual Studio 2017).
 
 Para obtener más información acerca de cómo utilizar estos identificadores, vea [Usar parámetros de la línea de comandos para instalar Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md). Y, para obtener una lista de los identificadores de componente y carga de trabajo para otros productos, consulte la página [Visual Studio 2017 Workload and Component IDs](workload-and-component-ids.md) (Identificadores de componente y carga de trabajo de Visual Studio 2017).
 
@@ -45,7 +49,7 @@ Para obtener más información acerca de cómo utilizar estos identificadores, v
 
 Id. de componente | nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.CoreEditor | Editor de núcleo de Visual Studio | 15.6.27309.0 | Obligatorio
+Microsoft.VisualStudio.Component.CoreEditor | Editor de núcleo de Visual Studio | 15.8.27729.1 | Obligatorio
 Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Página principal de Visual Studio para usuarios de C++ | 15.0.27128.1 | Optional
 
 ## <a name="unaffiliated-components"></a>Componentes no afiliados
@@ -56,14 +60,7 @@ Id. de componente | nombre | Versión
 --- | --- | ---
 N/D | N/D | N/D
 
-## <a name="get-support"></a>Obtener soporte técnico
-En ocasiones, algo no sale según lo previsto. Si se produce un error en la instalación de Visual Studio, consulte la página [Troubleshooting Visual Studio 2017 installation and upgrade issues](troubleshooting-installation-issues.md) (Solucionar problemas de errores de instalación y actualización de Visual Studio 2017). Si ninguno de los pasos de solución de problemas ayuda, puede ponerse en contacto con nosotros por chat para obtener asistencia para la instalación (solo en inglés). Para más información, consulte la [página de soporte técnico de Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
-
-Aquí tiene algunas opciones de soporte técnico más:
-* Puede notificarnos problemas del producto a través de la herramienta [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) que aparece en el instalador y en el IDE de Visual Studio.
-* Puede compartir una sugerencia de producto con nosotros en [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Puede realizar el seguimiento de los problemas del producto en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/), y hacer preguntas y encontrar respuestas.
-* También puede ponerse en contacto con nosotros y otros desarrolladores de Visual Studio a través de nuestra [conversación de Visual Studio en la comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio).  (Esta opción requiere una cuenta de [GitHub](https://github.com/)).
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Vea también
 

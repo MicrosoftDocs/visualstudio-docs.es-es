@@ -1,5 +1,5 @@
 ---
-title: Depurar aplicaciones de 64 bits | Documentos de Microsoft
+title: Depurar aplicaciones de 64 bits | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 17577684c7adffe46326d2151710e88745c60e1f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 28a7625729989252a29ab1d0f65feec010e9e65f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284086"
 ---
 # <a name="debug-64-bit-applications"></a>Depurar aplicaciones de 64 bits
 Puede depurar una aplicación de 64 bits que se esté ejecutando en el equipo local o en un equipo remoto.  
@@ -54,8 +55,8 @@ Puede depurar una aplicación de 64 bits que se esté ejecutando en el equipo lo
 -   Está experimentando un problema de falta de respuesta o de rendimiento con Visual Studio. Si el problema ocurre con frecuencia, puede recopilar volcados de Visual Studio (devenv.exe) y el proceso de trabajo (msvsmon.exe) y enviarlos a Microsoft. Para obtener información acerca de cómo notificar un problema, consulte [How to Report a Problem with Visual Studio](../ide/How-to-Report-a-Problem-with-Visual-Studio-2017.md).
   
 ## <a name="see-also"></a>Vea también  
- [Aplicaciones de 64 bits](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
+ [Aplicaciones de 64 bits](https://docs.microsoft.com/dotnet/framework/64-bit-apps)   
  [Configurar programas de 64 bits](/cpp/build/configuring-programs-for-64-bit-visual-cpp)   
- [Compatibilidad de 64 bits del IDE de Visual Studio](../ide/visual-studio-ide-64-bit-support.md)   
+ [Compatibilidad de 64 bits IDE de Visual Studio](../ide/visual-studio-ide-64-bit-support.md)   
  [Uso de archivos de volcado de memoria](../debugger/using-dump-files.md)   
  [Depuración remota](../debugger/remote-debugging.md)

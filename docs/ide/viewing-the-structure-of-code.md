@@ -1,9 +1,8 @@
 ---
-title: Visualización de la estructura del código en Visual Studio | Microsoft Docs
-ms.custom: ''
-ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+title: Visualización de la estructura del código con las ventanas Vista de clases, Jerarquía de llamadas, Examinador de objetos y Definición de código
+ms.date: 05/18/2018
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.documentoutline.window
@@ -14,7 +13,7 @@ f1_keywords:
 - vs.componentpicker
 - vs.callbrowser
 helpviewer_keywords:
-- document outline window.
+- document outline window
 - Visual Studio, object browser
 - call hierarchy
 - Visual Studio, document outline window
@@ -28,26 +27,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52c924b56a1f33c0e1cbfef567442dd521db79e8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9a271dfaba8fe533fee84799a0585a29d97e9c70
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336144"
 ---
-# <a name="view-the-structure-of-code"></a>Visualización de la estructura del código
+# <a name="view-the-structure-of-code-using-different-tool-windows"></a>Visualización de la estructura del código mediante distintas ventanas de herramienta
 
-Puede examinar los objetos y miembros de proyectos de Visual Studio, componentes de .NET Framework, componentes de COM, bibliotecas de vínculos dinámicos (DLL) y bibliotecas de tipo (TLB).
+Puede examinar las clases y sus miembros en Visual Studio con diversas ventanas de herramienta, entre las que se incluyen **Vista de clases**, **Jerarquía de llamadas**, **Examinador de objetos** y **Definición de código** (solo en C++). Estas ventanas de herramienta permiten examinar el código de proyectos de Visual Studio, componentes de .NET Framework, componentes COM, bibliotecas de vínculos dinámicos (DLL) y bibliotecas de tipos (TLB).
 
-También puede usar el **Explorador de soluciones** para examinar los tipos y miembros de sus proyectos, buscar símbolos, ver la jerarquía de llamadas de un método o buscar referencias de símbolos, entre otros, sin necesidad de cambiar entre las múltiples ventanas de herramientas enumeradas anteriormente.
+También puede usar el **Explorador de soluciones** para examinar los tipos y miembros de sus proyectos, buscar símbolos, ver la jerarquía de llamadas de un método o buscar referencias de símbolos, entre otros, sin tener que cambiar de una ventana de herramienta a otra.
 
-Si tiene Visual Studio Enterprise puede usar mapas de código para visualizar la estructura del código y sus dependencias en toda la solución y explorar en profundidad hasta llegar a las partes del código que le interesen. Para obtener más información, vea [Asignar dependencias en sus soluciones](../modeling/map-dependencies-across-your-solutions.md).
-
-> [!NOTE]
-> La edición de Visual Studio y la configuración que use pueden afectar a las características en el IDE. Podrían ser diferentes de las descritas en este tema.
+Si tiene Visual Studio Enterprise puede usar *mapas de código* para visualizar la estructura del código y sus dependencias en toda la solución. Para más información, vea [Map dependencies with code maps](../modeling/map-dependencies-across-your-solutions.md) (Asignar dependencias con mapas de código).
 
 ## <a name="class-view-visual-basic-c-c"></a>Vista de clases (Visual Basic, C#, C++)
 
-La **Vista de clases** se muestra como parte del **Explorador de soluciones**, así como en una ventana independiente. La ventana **Vista de clases** muestra los elementos de una aplicación. En el panel superior se muestran los espacios de nombres, los tipos, las interfaces, las enumeraciones y las clases, y en el panel inferior se muestran los miembros que pertenecen al tipo que se haya seleccionado en el panel superior. Al usar esta ventana, puede navegar hasta las definiciones de miembros en el código fuente (o en el **Examinador de objetos** si el elemento se define fuera de la solución).
+**Vista de clases** se muestra como parte del **Explorador de soluciones** y como ventana independiente. La ventana **Vista de clases** muestra los elementos de una aplicación. En el panel superior se muestran los espacios de nombres, los tipos, las interfaces, las enumeraciones y las clases, y en el panel inferior se muestran los miembros que pertenecen al tipo que se haya seleccionado en el panel superior. Al usar esta ventana, puede navegar hasta las definiciones de miembros en el código fuente (o en el **Examinador de objetos** si el elemento se define fuera de la solución).
 
 No es necesario compilar un proyecto para ver sus elementos en la **Vista de clases**. A medida que se modifica el código en el proyecto, se actualiza la ventana.
 
@@ -57,18 +54,18 @@ Si el proyecto se protege en el control de código fuente, cada elemento **Vista
 
 ### <a name="class-view-toolbar"></a>Barra de herramientas de Vista de clases
 
-La barra de herramientas de Vista de clases contiene los siguientes comandos.
+La barra de herramientas de **Vista de clases** contiene los siguientes comandos:
 
 |||
 |-|-|
-|**Nueva carpeta**|Crea una carpeta virtual o una subcarpeta en la que puede organizar los elementos utilizados con frecuencia. Se guardan en el archivo de la solución activa (.suo). Después de cambiar el nombre o eliminar un elemento en el código, puede aparecer en una carpeta virtual como un nodo de error. Para corregir este problema, elimine el nodo de error. Si cambió el nombre de un elemento, puede volver a moverlo desde la jerarquía del proyecto hasta la carpeta.|
+|**Nueva carpeta**|Crea una carpeta o subcarpeta virtual en la que se pueden organizar los elementos utilizados con frecuencia. Se guardan en el archivo de la solución activa (*.suo*). Después de cambiar el nombre o eliminar un elemento en el código, puede aparecer en una carpeta virtual como un nodo de error. Para corregir este problema, elimine el nodo de error. Si cambió el nombre de un elemento, puede volver a moverlo desde la jerarquía del proyecto hasta la carpeta.|
 |**Atrás**|Navegal al elemento seleccionado anteriormente.|
 |**Adelante**|Navega al siguiente elemento seleccionado.|
 |**Ver diagrama de clases** (solo para proyectos de código administrado)|Se vuelve disponible al seleccionar un espacio de nombres o al escribir en la **Vista de clases**. Cuando se selecciona un espacio de nombres, el diagrama de clases muestra todos los tipos que contiene. Cuando se selecciona un tipo, el diagrama de clases solo muestra ese tipo.|
 
 ### <a name="class-view-settings"></a>Configuración de vista de clases
 
-El botón **Configuración de vista de clases** de la barra de herramientas tiene los siguientes valores.
+El botón **Configuración de vista de clases** de la barra de herramientas incluye las siguientes opciones:
 
 |||
 |-|-|
@@ -84,14 +81,14 @@ El botón **Configuración de vista de clases** de la barra de herramientas tien
 
 ### <a name="class-view-shortcut-menu"></a>Menú contextual de la Vista de clases
 
-El menú contextual de la **Vista de clases** puede contener los siguientes comandos, en función del tipo de proyecto seleccionado.
+En función del tipo de proyecto seleccionado, el menú contextual de la **Vista de clases** puede contener los siguientes comandos:
 
 |||
 |-|-|
 |**Ir a definición**|Busca la definición del elemento en el código fuente o en el **Examinador de objetos** si el elemento no está definido en el proyecto abierto.|
 |**Examinar definición**|Muestra el elemento seleccionado en el **Examinador de objetos**.|
 |**Buscar todas las referencias**|Busca el elemento del objeto seleccionado actualmente y muestra los resultados en la ventana **Resultados de la búsqueda**.|
-|**Filtrar tipo** (solo para código administrado)|Solo muestra el tipo o espacio de nombres seleccionado. Para quitar el filtro, seleccione el botón **Borrar búsqueda**  (X) situado junto al cuadro **Buscar**.|
+|**Filtrar tipo** (solo para código administrado)|Solo muestra el tipo o espacio de nombres seleccionado. Para quitar el filtro, seleccione el botón **Borrar búsqueda** (**X**) situado junto al cuadro **Buscar**.|
 |**Copiar**|Copia el nombre completo del elemento.|
 |**Ordenar alfabéticamente**|Enumera los tipos y miembros según su nombre por orden alfabético.|
 |**Ordenar por tipo de miembro**|Ordena los tipos y miembros por tipo (de tal modo que las clases preceden a las interfaces, las interfaces preceden a los delegados y los métodos preceden a las propiedades).|
@@ -104,11 +101,11 @@ El menú contextual de la **Vista de clases** puede contener los siguientes coma
 
 ## <a name="call-hierarchy-window-visual-basic-c-c"></a>Ventana Jerarquía de llamadas (Visual Basic, C#, C++)
 
-La ventana **Jerarquía de llamadas** muestra dónde se llama a un determinado método (o propiedad o constructor) y enumera los métodos que se llaman desde ese método. Puede ver varios niveles del gráfico de llamada, que muestra las relaciones llamador/destinatario entre los métodos en un ámbito especificado.
+La ventana **Jerarquía de llamadas** muestra donde se llama a un determinado método o propiedad. También muestra los métodos que se llaman desde ese método. Puede ver varios niveles del gráfico de llamadas, que muestra las relaciones de autor de llamada y destinatario entre los métodos en un ámbito especificado.
 
-Para mostrar la ventana **Jerarquía de llamadas**, puede seleccionar un método (o propiedad o constructor) y, después, elegir **Ver jerarquía de clases** en el menú contextual. La visualización debería tener un aspecto similar al de la siguiente imagen.
+Para mostrar la ventana **Jerarquía de llamadas**, seleccione un método (o una propiedad o un constructor) en el editor de código y luego, en el menú contextual, elija **Ver jerarquía de clases**. La visualización debe tener un aspecto similar al de la siguiente imagen:
 
-![Jerarquía de llamadas con varios nodos abiertos](../ide/media/multiplenodes.png "MultipleNodes")
+![Ventana Jerarquía de llamadas en Visual Studio](../ide/media/multiplenodes.png)
 
 Mediante la lista desplegable de la barra de herramientas, puede especificar el ámbito de la jerarquía: la solución, el proyecto actual o el documento actual.
 
@@ -116,7 +113,7 @@ El panel principal muestra las llamadas realizadas al método y desde él, mient
 
 La ventana **Jerarquía de llamadas** no encuentra referencias a grupos de métodos, que incluyen los lugares donde un método se agrega como controlador de eventos o se asigna a un delegado. Para buscar estas referencias, use el comando **Buscar todas las referencias**.
 
-El menú contextual de la ventana **Jerarquía de llamadas** contiene los siguientes comandos.
+El menú contextual de la ventana **Jerarquía de llamadas** contiene los siguientes comandos:
 
 |||
 |-|-|
@@ -131,11 +128,11 @@ El menú contextual de la ventana **Jerarquía de llamadas** contiene los siguie
 
 La ventana del **Examinador de objetos** muestra descripciones del código en sus proyectos.
 
-Puede filtrar los componentes que desee ver mediante el uso de la lista desplegable en la parte superior de la ventana. Los componentes personalizados pueden incluir archivos ejecutables de código administrado, ensamblados de biblioteca, bibliotecas de tipo y archivos .ocx. No es posible agregar componentes personalizados de C++. La configuración personalizada se guarda en el directorio de aplicaciones de usuario de Visual Studio, %APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat.
+Puede filtrar los componentes que desee ver mediante el uso de la lista desplegable en la parte superior de la ventana. Los componentes personalizados pueden incluir archivos ejecutables de código administrado, ensamblados de biblioteca, bibliotecas de tipo y archivos *.ocx*. No es posible agregar componentes personalizados de C++. La configuración personalizada se guarda en el directorio de aplicaciones de usuario de Visual Studio, *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
 
 El panel izquierdo del **Examinador de objetos** muestra los ensamblados. Puede expandir los ensamblados para mostrar los espacios de nombres que contengan y, a continuación, expandir los espacios de nombres para mostrar los tipos que contengan. Cuando se selecciona un tipo, sus miembros (como es el caso de las propiedades y los métodos) se enumeran en el panel derecho. El panel inferior derecho muestra información detallada acerca del elemento seleccionado.
 
-Puede buscar un elemento específico mediante el cuadro **Buscar** situado en la parte superior de la ventana. Las búsquedas no distinguen entre mayúsculas y minúsculas. Los resultados de las búsquedas se muestran en el panel izquierdo. Para borrar una búsqueda, seleccione el botón **Borrar búsqueda** (X) situado junto al cuadro **Buscar**.
+Puede buscar un elemento específico mediante el cuadro **Buscar** situado en la parte superior de la ventana. Las búsquedas no distinguen entre mayúsculas y minúsculas. Los resultados de las búsquedas se muestran en el panel izquierdo. Para borrar una búsqueda, seleccione el botón **Borrar búsqueda** (**X**) situado junto al cuadro **Buscar**.
 
 El **Examinador de objetos** realiza un seguimiento de las selecciones que haya realizado y puede navegar entre ellas usando los botones **Adelante** y **Atrás** de la barra de herramientas.
 
@@ -143,7 +140,7 @@ Puede usar el **Examinador de objetos** para agregar una referencia de ensamblad
 
 ### <a name="object-browser-settings"></a>Configuración del Examinador de objetos
 
-Puede especificar una de las siguientes vistas mediante el botón **Configuración del Examinador de objetos**.
+Puede especificar una de las siguientes vistas mediante el botón **Configuración del Examinador de objetos**:
 
 |||
 |-|-|
@@ -161,7 +158,7 @@ Puede especificar una de las siguientes vistas mediante el botón **Configuraci�
 
 ### <a name="object-browser-shortcut-menu-commands"></a>Comandos del menú contextual del Examinador de objetos
 
-El menú contextual del **Examinador de objetos** puede contener los siguientes comandos, en función del tipo de elemento seleccionado.
+En función del tipo de elemento seleccionado, el menú contextual del **Examinador de objetos** puede contener los siguientes comandos:
 
 |||
 |-|-|
@@ -186,7 +183,7 @@ La ventana **Definición de código** muestra la definición de un tipo o miembr
 Aunque esta ventana es de solo lectura, puede establecer puntos de interrupción o marcadores en ella. Para modificar la definición mostrada, pulse **Editar definición** en el menú contextual. Esto abre el archivo de origen en el editor de código y mueve el punto de inserción a la línea en la que comienza la definición.
 
 > [!NOTE]
-> A partir de Visual Studio 2015, la ventana de definición de código solo se puede usar con código de C++.
+> A partir de Visual Studio 2015, la ventana de **definición de código** solo se puede usar con código de C++.
 
 ### <a name="code-definition-shortcut-menu"></a>Menú contextual de Definición de código
 
@@ -194,8 +191,8 @@ El menú contextual de la ventana **Definición de código** puede contener los 
 
 |||
 |-|-|
-|**Acciones rápidas y refactorizaciones...**||
-|**Cambiar nombre...**||
+|**Acciones rápidas y refactorizaciones**||
+|**Cambiar nombre**||
 |**Generar gráfico de archivos de inclusión**||
 |**Ver la definición**||
 |**Ir a definición**|Busca la definición (o definiciones, en el caso de clases parciales) y las muestra en la ventana **Resultados de la búsqueda**.|
@@ -215,10 +212,10 @@ El menú contextual de la ventana **Definición de código** puede contener los 
 |**Editar definición**|Desplaza el punto de inserción hasta la definición en la ventana de código.|
 |**Elegir codificación**|Abre la ventana **Codificación** para que pueda establecer una codificación para el archivo.|
 
-### <a name="document-outline-window"></a>Ventana Esquema del documento
+## <a name="document-outline-window"></a>Ventana Esquema del documento
 
 Puede usar la ventana **Esquema del documento** junto con las vistas del diseñador, como el diseñador de una página XAML o un diseñador de Windows Forms, o con páginas HTML. En esta ventana se muestran los elementos en una vista de árbol para que pueda ver la estructura lógica del formulario o la página y buscar los controles que están profundamente incrustados u ocultos.
 
 ## <a name="see-also"></a>Vea también
 
-[Iconos de la Vista de clases y del Examinador de objetos](../ide/class-view-and-object-browser-icons.md)
+- [Iconos de la Vista de clases y del Examinador de objetos](../ide/class-view-and-object-browser-icons.md)

@@ -27,11 +27,12 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474368"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Errores de la depuración remota y sus soluciones
 Cuando intente depurar remotamente pueden ocurrir los siguientes errores.  
   
--   [Error: Unable to Automatically Step Into the Server](../debugger/error-unable-to-automatically-step-into-the-server.md)  
+-   [Error: No se puede ir automáticamente al servidor](../debugger/error-unable-to-automatically-step-into-the-server.md)  
   
 -   [Error: Parece que el Monitor de depuración remota de Microsoft Visual Studio (MSVSMON.EXE) no se está ejecutando en el equipo remoto.](../debugger/error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md)  
   

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31584144"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Vista Contenciones del recurso: datos de contención
 La vista Contenciones del recurso muestra datos de contención de recursos que son el origen de eventos de contención. Un evento de contención se produce cuando una función en un subproceso se ve obligada a esperar para obtener acceso al recurso porque una función en otro subproceso ha adquirido acceso exclusivo al recurso. Cada recurso es el nodo raíz de un árbol de llamadas que muestra las rutas de ejecución de la función que dieron lugar a los eventos de contención.  

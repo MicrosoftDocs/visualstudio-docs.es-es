@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_FILE_LINE | Documentos de Microsoft
+title: BP_LOCATION_CODE_FILE_LINE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a37bbc808322c54d1e0c9354353de2f59b2e19af
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c4c114919d74fba7a28c9d3ea11fc5bb9947d6a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866030"
 ---
 # <a name="bplocationcodefileline"></a>BP_LOCATION_CODE_FILE_LINE
-Contiene los datos de la ubicación de un punto de interrupción en una línea específica en un archivo de código fuente.  
+Contiene los datos para la ubicación de un punto de interrupción en una línea específica en un archivo de código fuente.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,7 +36,7 @@ typedef struct _BP_LOCATION_CODE_FILE_LINE {
   
 ## <a name="members"></a>Miembros  
  `bstrContext`  
- El contexto del punto de interrupción, normalmente un nombre de método o una función como se ve en una pila de llamadas.  
+ El contexto del punto de interrupción, normalmente un nombre de método o una función como se muestra en una pila de llamadas.  
   
  `pDocPos`  
  El [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) objeto que representa la posición del documento del punto de interrupción.  

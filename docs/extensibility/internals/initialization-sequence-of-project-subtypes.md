@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131618"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>Secuencia de inicialización de subtipos de proyecto
 El entorno crea un proyecto mediante una llamada a la implementación del generador de proyectos de base de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>. La construcción de un subtipo de proyecto se inicia cuando el entorno determina que la lista GUID de tipo de proyecto de extensión de un archivo de proyecto no está vacía. La extensión de archivo de proyecto y el GUID del proyecto especifican si el proyecto es un [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] tipo de proyecto. Por ejemplo, la extensión de archivo .vbproj y {F184B08F-C81C-45F6-A57F-5ABD9991F28F} identificar un [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] proyecto.

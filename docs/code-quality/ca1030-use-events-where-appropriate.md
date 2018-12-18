@@ -1,6 +1,7 @@
 ---
 title: 'CA1030: Utilizar eventos cuando sea apropiado'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,13 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66b9893d6ad0c47dde69fa2cb6d35ee228cff59e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 08f5ec37d38824ca640dd19827db3b1d355d0ad7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815644"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030: Utilizar eventos cuando sea apropiado
+
 |||
 |-|-|
 |TypeName|UseEventsWhereAppropriate|
@@ -30,23 +33,23 @@ ms.lasthandoff: 04/19/2018
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Motivo
- Un nombre de método público, protegido o privado comienza con uno de los siguientes:
+ Nombre de un método público, protegido o privado comienza con uno de los siguientes:
 
--   Complemento
+- AddOn
 
--   RemoveOn
+- RemoveOn
 
--   Activar
+- Fuego
 
--   Generar
+- Raise
 
 ## <a name="rule-description"></a>Descripción de la regla
- Esta regla detecta métodos que tienen nombres que normalmente se utilizarían para eventos. Los eventos siguen el patrón de diseño publicación-suscripción u observador; se usan cuando un cambio de estado en un objeto se debe comunicar con otros objetos. Si se invoca un método en respuesta a un cambio de estado claramente definido, se debe llamar al método mediante un controlador de eventos. Los objetos que llaman al método deben provocar eventos en lugar de llamar directamente al método.
+ Esta regla detecta métodos que tienen nombres que normalmente se utilizarían para eventos. Los eventos siguen el patrón de diseño publicación-suscripción u observador; se utilizan cuando un cambio de estado en un objeto debe comunicarse con otros objetos. Si se llama un método en respuesta a un cambio de estado claramente definido, se debe llamar al método mediante un controlador de eventos. Los objetos que llaman al método deben provocar eventos en lugar de llamar directamente al método.
 
- Algunos ejemplos comunes de eventos se encuentran en las aplicaciones de interfaz de usuario que hace que un segmento de código para ejecutar una acción del usuario como hacer clic en un botón. El [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] modelo de evento no se limita a las interfaces de usuario; se debe usar desde cualquier lugar debe comunicar el estado cambia a uno o varios objetos.
+ Algunos ejemplos comunes de los eventos se encuentran en las aplicaciones de interfaz de usuario que hace que un segmento de código para ejecutar una acción del usuario como hacer clic en un botón. El modelo de eventos de .NET Framework no se limita a las interfaces de usuario; se debe usar en cualquier lugar que debe comunicar el estado cambia a uno o más objetos.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Si el método se llama cuando cambia el estado de un objeto, considere la posibilidad de cambiar el diseño que se va a usar el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] modelo de evento.
+ Si el método se llama cuando cambia el estado de un objeto, considere la posibilidad de cambiar el diseño para utilizar el modelo de eventos de .NET Framework.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Suprimir una advertencia de esta regla si el método no funciona con el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] modelo de evento.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ Suprima una advertencia de esta regla si el método no funciona con el modelo de eventos de .NET Framework.

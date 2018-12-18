@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480090"
 ---
 # <a name="how-to-refresh-the-view"></a>Cómo: Actualizar la vista
 Spy ++ toma una "instantánea" de las tablas del sistema y actualiza una vista basada en esta información. Es importante que se actualicen periódicamente las vistas del sistema. Si tiene una vista de Spy ++ abrir y no se ha actualizado la vista, no verá los procesos, subprocesos y ventanas que se crean posteriormente. Además, puede ver los elementos que ya no existen. El **actualizar** comando está disponible para todas las vistas excepto en la vista de mensajes.  

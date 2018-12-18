@@ -1,10 +1,9 @@
 ---
-title: Opciones, editor de texto, C/C++, formato | Microsoft Docs
-ms.custom: ''
-ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+title: Opciones, editor de texto, C/C++, formato
+ms.date: 04/30/2018
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Formatting.General
 - VS.ToolsOptionsPages.Text_Editor.C%2fC%2b%2b.Formatting.General
@@ -12,70 +11,49 @@ dev_langs:
 - CPP
 helpviewer_keywords:
 - Text Editor Options dialog box, formatting
+- ClangFormat
 ms.assetid: cb6f1cbb-5305-48da-a8e8-33fd70775d46
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: mikeblome
+ms.author: mblome
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 61097f910a2dda79852b126a2f17f2af6c62b808
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ee7fab1564b39b29ae288e96c7aa77e0da21e88c
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235146"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opciones, editor de texto, C/C++, formato
-Permite cambiar el comportamiento predeterminado del editor de código cuando se programa en C o C++.  
-  
- Para tener acceso a esta página, en el cuadro de diálogo **Opciones**, en el panel izquierdo, expanda **Editor de texto**, expanda **C/C++** y, a continuación, haga clic en **Formato**.  
-  
+
+Utilice estas páginas de propiedades para cambiar el comportamiento predeterminado del editor de código cuando se programa en C o C++.
+
+[Páginas de propiedades de formato de C++](media/cpp-formatting.png)
+
+ Para tener acceso a esta página, en el cuadro de diálogo **Opciones**, en el panel izquierdo, expanda **Editor de texto**, expanda **C/C++** y, a continuación, haga clic en **Formato**.
+
 > [!NOTE]
->  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
-  
-## <a name="cc-options"></a>Opciones de C/C++  
- **Habilitar información rápida sobre herramientas automática**  
- Habilita o deshabilita la característica de IntelliSense Información rápida.  
-  
-## <a name="inactive-code"></a>Código inactivo  
- **Mostrar bloques de código inactivos**  
- El código que está inactivo debido a las declaraciones `#ifdef` aparece con un color diferente para facilitar su identificación.  
-  
- **Deshabilitar opacidad de código inactivo**  
- El código inactivo se puede identificar utilizando el color en lugar de la transparencia.  
-  
- **Porcentaje de opacidad del código inactivo**  
- Se puede personalizar el grado de opacidad de los bloques de código inactivos.  
-  
-## <a name="indentation"></a>Sangría  
- **Aplicar sangría a las llaves**  
- Puede configurar cómo se alinean las llaves cuando se presiona ENTRAR después de comenzar un bloque de código, por ejemplo, una función o un bucle `for`. Las llaves pueden estar alineadas con el primer carácter del bloque de código o con sangría.  
-  
- **Sangría automática con tecla TAB**  
- Puede configurar lo que ocurre en la línea de código actual al presionar TAB. Se aplica sangría a la línea o bien se inserta un carácter de tabulación.  
-  
-## <a name="miscellaneous"></a>Varios  
- **Enumerar comentarios en la ventana Lista de tareas**  
- El editor puede analizar archivos de código fuente abiertos para buscar palabras preestablecidas en los comentarios. Crea una entrada en la ventana **Lista de tareas** para todas las palabras clave que encuentra.  
-  
- **Resaltar tokens de emparejamiento**  
- Cuando se coloca el cursor junto a una llave, el editor puede resaltar la llave correspondiente de modo que pueda ver el código incluido entre llaves más fácilmente.  
-  
-## <a name="outlining"></a>esquematizar  
- **Especificar el modo de esquematización al abrir los archivos**  
- Cuando se coloca un archivo en el editor de texto, se puede habilitar la característica de esquematización. Para obtener más información, vea [Esquematización](../../ide/outlining.md). Cuando esta opción está seleccionada, la característica de esquematización se habilita al abrir un archivo.  
-  
- **Esquematizar automáticamente bloques de regiones pragma**  
- Cuando esta opción está seleccionada, se habilita la esquematización automática de las [directivas pragma](/cpp/preprocessor/pragma-directives-and-the-pragma-keyword). Esto permite expandir o contraer bloques de región pragma en modo de esquematización.  
-  
- **Esquematizar automáticamente bloques de instrucciones**  
- Al seleccionar esta opción, se habilita la esquematización automática de las construcciones de instrucción siguientes:  
-  
--   [if-else](/dotnet/csharp/language-reference/keywords/if-else)  
-  
--   [switch (Instrucción) (C++)](/cpp/cpp/switch-statement-cpp)  
-  
--   [while (Instrucción) (C++)](/cpp/cpp/while-statement-cpp)  
-  
-## <a name="see-also"></a>Vea también  
- [General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md)   
- [Usar IntelliSense](../../ide/using-intellisense.md)
+> Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+
+## <a name="general-page"></a>Página general
+
+Esta página tiene opciones para dar formato a las instrucciones y las bloquea a medida que las escribe.
+
+**Visual Studio 2017 versión 15.7 y versiones posteriores**: la página también tiene opciones para configurar la compatibilidad con [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) versión 5.0. ClangFormat es una utilidad que facilita aplicar estilo y dar formato al código según un conjunto de reglas que se pueden configurar en un archivo de formato .clang o de formato _clang.
+
+### <a name="configuring-clangformat-options"></a>Configurar las opciones de ClangFormat
+
+En Visual Studio 2017 versión 15.7 y versiones posteriores, la compatibilidad con ClangFormat está habilitada de forma predeterminada. Puede elegir cuál de estas convenciones de formato comunes quiere aplicar a todos los proyectos: LLVM, Google, Chromium, Mozilla o WebKit. También puede crear un archivo de formato .clang o _clang de definición de formato personalizado. Si este archivo está presente en una carpeta de proyecto, Visual Studio lo usará para dar formato a todos los archivos de código fuente en esa carpeta y en sus subcarpetas. 
+
+De forma predeterminada, Visual Studio ejecuta clangformat.exe en segundo plano y aplica formato a medida que escribe. También puede especificar que solo se ejecute manualmente en los comandos de formato invocados manualmente **Dar formato al documento (Ctrl+K, Ctrl+D)** o **Dar formato a la selección (Ctrl+K, Ctrl+F)**.
+
+
+## <a name="indentation-new-lines-spacing-wrapping-pages"></a>Páginas de sangría, nuevas líneas, ajuste del espaciado
+
+Estas páginas permiten varias personalizaciones de formato pero se omiten si ClangFormat está habilitado.
+
+## <a name="see-also"></a>Vea también
+
+- [General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md)
+- [Usar IntelliSense](../../ide/using-intellisense.md)

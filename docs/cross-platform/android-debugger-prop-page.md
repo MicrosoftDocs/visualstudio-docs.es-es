@@ -15,19 +15,20 @@ f1_keywords:
 - VC.Project.AndroidDebugger.LaunchActivity
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 7d18125c6666a8eb68becd828da36ecdab077507
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: be240ed2cea05194d51040fd29a17de9a4472fc9
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232649"
 ---
 # <a name="android-debugger-properties"></a>Propiedades del depurador de Android
 
-Property | Description | Opciones
+Propiedad. | Descripción | Opciones
 --- | ---| ---
 Tipo de depurador | Especifica qué tipo de código se va a depurar. | **Solo nativo**<br>**Solo Java**<br>
 Destino de depuración | Especifica el emulador o dispositivo que se usará para la depuración. Si no se ejecutan emuladores, use "Android Virtual Device (AVD) Manager" para iniciar un dispositivo.
-Paquete que se iniciará | Especifica la ubicación del .apk que se va a depurar. Elija esta opción para especificar que se debe iniciar un paquete (APK) específico cuando se depure la aplicación.
-Actividad de inicio | La actividad de Android que se usará para iniciar la aplicación tiene que coincidir con la que se usa en el manifiesto. Presione Aplicar para recuperar la lista de AndroidManifest.xml y rellenarla de forma dinámica.
+Paquete que se iniciará | Especifica la ubicación del archivo *.apk* que se va a depurar. Elija esta opción para especificar que se debe iniciar un paquete (APK) específico cuando se depure la aplicación.
+Actividad de inicio | La actividad de Android que se usará para iniciar la aplicación tiene que coincidir con la que se usa en el manifiesto. Presione Aplicar para recuperar la lista de *AndroidManifest.xml* y rellenarla de forma dinámica.
 Rutas de búsqueda de símbolos adicionales | Ruta de búsqueda adicional para los símbolos de depuración.
 Rutas de búsqueda de código fuente Java adicionales | Rutas de búsqueda adicional para los archivos de código fuente Java. Solo se aplica cuando el tipo de depurador es únicamente Java.

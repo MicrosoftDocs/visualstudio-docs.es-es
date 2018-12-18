@@ -13,18 +13,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4484e5fdee3158b61e7d1ae6d33966141e2a6a5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4eb29336b401b020df52d1ccaa743bb7240e1d2b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854824"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
-El método `CommentMarkAtProfile` inserta un valor de marca de tiempo, una marca numérica y una cadena de comentario en el archivo .vsp. El valor de marca de tiempo se puede usar para sincronizar eventos externos. Para que la marca y el comentario se inserten, la generación de perfiles para el subproceso que contiene la función CommentMarkAtProfile debe estar activada.  
+El método `CommentMarkAtProfile` inserta un valor de marca de tiempo, una marca numérica y una cadena de comentario en el archivo .*vsp*. El valor de marca de tiempo se puede usar para sincronizar eventos externos. Para que la marca y el comentario se inserten, la generación de perfiles para el subproceso que contiene la función CommentMarkAtProfile debe estar activada.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp  
 PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (  
                                    __int64 dnTimestamp,  
                                    long lMarker,  
@@ -47,7 +48,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 ## <a name="property-valuereturn-value"></a>Valor de propiedad y valor devuelto  
  La función indica si la operación es correcta o errónea mediante la enumeración **PROFILE_COMMAND_STATUS**. El valor devuelto puede ser cualquiera de los siguientes:  
   
-|Enumerador|Description|  
+|Enumerador|Descripción|  
 |----------------|-----------------|  
 |MARK_ERROR_MARKER_RESERVED|El parámetro es menor o igual que 0. Estos valores están reservados. La marca y el comentario no se registran.|  
 |MARK_ERROR_MODE_NEVER|El modo de generación de perfiles se estableció en NEVER cuando se llamó a la función. La marca y el comentario no se registran.|  
@@ -64,20 +65,20 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 >  Los métodos CommentMarkAtProfile solo se deben usar con instrumentación.  
   
 ## <a name="net-framework-equivalent"></a>Equivalente de .NET Framework  
- Microsoft.VisualStudio.Profiler.dll  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Información de la función  
   
 |||  
 |-|-|  
-|**Header**|Incluye VSPerf.h|  
-|**Library**|Usa VSPerf.lib|  
+|**Header**|Incluir *VSPerf.h*|  
+|**Library**|Usar *VSPerf.lib*|  
 |**Unicode**|Se implementa como CommentMarkAtProfileW (Unicode) y CommentMarkAtProfileA (ANSI).|  
   
 ## <a name="example"></a>Ejemplo  
  En el código siguiente se muestra el uso de la llamada de función genérica CommentMarkAtProfile. En el ejemplo se da por supuesto que se usan macros de cadenas de Win32 y la configuración del compilador para ANSI con el fin de determinar si el código llama a la función habilitada para ANSI.  
   
-```  
+```cpp  
 void ExerciseCommentMarkAtProfile(void)  
 {  
     // Declare and initalize variables to pass to   
@@ -116,4 +117,4 @@ void ExerciseCommentMarkAtProfile(void)
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Referencia a la API del generador de perfiles de Visual Studio (nativa)](../profiling/visual-studio-profiler-api-reference-native.md)
+ [Referencia de la API del generador de perfiles de Visual Studio (nativa)](../profiling/visual-studio-profiler-api-reference-native.md)

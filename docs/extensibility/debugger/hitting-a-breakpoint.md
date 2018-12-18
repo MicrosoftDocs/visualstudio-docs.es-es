@@ -1,5 +1,5 @@
 ---
-title: Alcanzar un punto de interrupción | Documentos de Microsoft
+title: Alcanzar un punto de interrupción | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,20 +14,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f4788f8a038a274d6d94b4edf368e30ef495665
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8a9b110abdaf0ebfaed720dd5d09c0e215a6b2e7
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231560"
 ---
-# <a name="hitting-a-breakpoint"></a>Alcanzar un punto de interrupción
-A continuación describe el proceso cuando el motor de depuración (Alemania) alcanza un punto de interrupción mientras se ejecuta o ejecución paso a paso:  
+# <a name="hit-a-breakpoint"></a>Llegar a un punto de interrupción
+La siguiente sección describe el proceso cuando el motor de depuración (DE) alcanza un punto de interrupción mientras se está ejecutando o la ejecución paso a paso:  
   
-## <a name="troubleshooting-a-hit-breakpoint"></a>Solución de problemas de un punto de interrupción de llamadas  
+## <a name="troubleshoot-a-hit-breakpoint"></a>Solución de problemas de un punto de interrupción de posicionamiento  
   
 1.  Los envíos DE un [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) interfaz como un **EVENT_SYNC_STOP**.  
   
-2.  El Administrador de sesión de depuración (SDM) llama [IDebugBreakpointEvent2:::EnumBreakpoints](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) para obtener el punto de interrupción que se alcanzó.  
+2.  El Administrador de depuración de la sesión (SDM) llama a [IDebugBreakpointEvent2:::EnumBreakpoints](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) para obtener el punto de interrupción alcanzado.  
   
 ## <a name="see-also"></a>Vea también  
- [Llamada a eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)
+ [Llamar a los eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)

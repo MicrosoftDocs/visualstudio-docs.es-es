@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 045059c1ab0c33026369b065649c4d4b82a480df
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 89c5727b8bc294ae28f48a6e1fc3194b258b9555
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844439"
 ---
 # <a name="manage-channels"></a>Administrar canales
 En la **vista Subprocesos** del visualizador de simultaneidad, puede organizar los canales de su proceso para así poder examinar modelos concretos. Para ordenar los canales, desplácelos hacia arriba o abajo y ocúltelos o muéstrelos.  
@@ -60,6 +61,6 @@ En la **vista Subprocesos** del visualizador de simultaneidad, puede organizar l
  Si un seguimiento contiene eventos de marcador, puede usar este comando para agrupar canales de marcador en el subproceso que generó los eventos de marcador.  Los canales de disco se mueven a la parte superior de la lista de canales y los canales GPU se mueven a la parte inferior.  
   
 ## <a name="see-also"></a>Vea también  
- [Control de zoom (Vista Subprocesos)](../profiling/zoom-control-threads-view.md)   
- [Activar o desactivar el modo de medición](../profiling/measure-mode-on-off.md)   
- [Vista Subprocesos](../profiling/threads-view-parallel-performance.md)
+ [Control de zoom (vista Subprocesos)](../profiling/zoom-control-threads-view.md)   
+ [Activar/desactivar el modo de medición](../profiling/measure-mode-on-off.md)   
+ [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)

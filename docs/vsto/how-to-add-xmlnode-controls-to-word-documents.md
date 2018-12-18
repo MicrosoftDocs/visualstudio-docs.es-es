@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: agregar controles XMLNode a documentos de Word | Documentos de Microsoft'
+title: 'Cómo: agregar controles XMLNode a documentos de Word'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,30 +16,31 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4dd214262f66bfa21cdb168e948c70437487761e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eccdeab67840873a9b40fe52986bd0d4d0b31767
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254980"
 ---
-# <a name="how-to-add-xmlnode-controls-to-word-documents"></a>Cómo: Agregar controles XMLNode a documentos de Word
-  **Importante** la información que figura en este tema con respecto a Microsoft Word está presentado exclusivamente para el beneficio y el uso de personas y organizaciones que se encuentran fuera de Estados Unidos y sus territorios o que está usando, o del desarrollo programas que se ejecutan en, productos de Microsoft Word que se autoriza el uso de Microsoft antes de enero de 2010, cuando Microsoft quita una implementación de funcionalidad concreta relacionada con XML personalizado de Microsoft Word. Esta información con respecto a Microsoft Word no puede leer o utilizada por personas u organizaciones en Estados Unidos o en sus territorios que están usando o desarrollar programas que se ejecutan en productos de Microsoft Word que se usan bajo licencia Microsoft después de 10 de enero de 2010 ; los productos no comportarán igual que los productos con licencia antes de esa fecha o adquirido y licencia para su uso fuera de Estados Unidos.  
+# <a name="how-to-add-xmlnode-controls-to-word-documents"></a>Cómo: agregar controles XMLNode a documentos de Word
+  **Importante** la información en este tema con respecto a Microsoft Word se presenta exclusivamente para el uso y disfrute de individuos y organizaciones que se encuentran fuera de Estados Unidos y sus territorios o quién está usando o desarrollo programas que se ejecutan en, los productos de Microsoft Word que se licencia de Microsoft antes de enero de 2010, cuando Microsoft quita una implementación de la funcionalidad concreta relacionadas con XML personalizado de Microsoft Word. Esta información con respecto a Microsoft Word no puede ser leída o utilizada por personas u organizaciones en Estados Unidos o en sus territorios que utiliza, o desarrollar programas que se ejecutan en los productos de Microsoft Word que se licencia de Microsoft después de 10 de enero de 2010 ; los productos no comportarán igual que los productos con licencia antes de esa fecha o adquirido y con licencia para su uso fuera de Estados Unidos.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
- Al asignar un elemento de esquema XML no repetitivo a un documento de Microsoft Office Word, Visual Studio agrega automáticamente un <xref:Microsoft.Office.Tools.Word.XMLNode> control al documento. Para obtener información acerca de cómo asignar elementos de esquema XML de repetición, consulte [Cómo: agregar controles XMLNodes a documentos de Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md).  
+ Al asignar un elemento de esquema XML no repetitivo a un documento de Microsoft Office Word, Visual Studio agrega automáticamente un <xref:Microsoft.Office.Tools.Word.XMLNode> control al documento. Para obtener información sobre cómo asignar elementos repetidos del esquema XML, vea [Cómo: agregar XMLNodes controles a documentos de Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md).  
   
 > [!NOTE]  
->  El <xref:Microsoft.Office.Tools.Word.XMLNode> control no está disponible en la **cuadro de herramientas** o **orígenes de datos** ventana y no se puede crear mediante programación.  
+>  El <xref:Microsoft.Office.Tools.Word.XMLNode> control no está disponible desde el **cuadro de herramientas** o **orígenes de datos** ventana y no se puede crear mediante programación.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-### <a name="to-add-an-xmlnode-control-to-a-document"></a>Para agregar un control XMLNode a un documento  
+### <a name="to-add-an-xmlnode-control-to-a-document"></a>Para agregar un XMLNode (control) a un documento  
   
 1.  En el documento en el Diseñador de Visual Studio, en la cinta de opciones, haga clic en el **Developer** ficha.  
   
     > [!NOTE]  
-    >  Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, consulta [Cómo: Mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, consulte [Cómo: mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 2.  En el **XML** grupo, haga clic en **esquema**.  
   
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/16/2018
   
      El **Agregar esquema** abre el cuadro de diálogo.  
   
-5.  Seleccione un esquema XML que contiene los elementos de esquema no repetitivo de la **Agregar esquema** cuadro de diálogo y haga clic en **abiertos**.  
+5.  Seleccione un esquema XML que contiene los elementos de esquema no es de repetición de la **Agregar esquema** cuadro de diálogo y haga clic en **abierto**.  
   
      El **configuración del esquema** aparece el cuadro de diálogo.  
   
@@ -63,14 +64,14 @@ ms.lasthandoff: 04/16/2018
   
 8.  El **estructura XML** abre el panel de tareas.  
   
-9. Haga clic en el elemento de esquema no repetitivo en el **estructura XML** panel de tareas para agregar al documento.  
+9. Haga clic en el elemento de esquema no repetitivo en el **estructura XML** panel de tareas para agregarlo al documento.  
   
      Un <xref:Microsoft.Office.Tools.Word.XMLNode> control se crea y se agrega al proyecto.  
   
 ## <a name="see-also"></a>Vea también  
- [XMLNode (Control)](../vsto/xmlnode-control.md)   
- [Automatizar Word con objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)   
- [Información general sobre elementos y controles Host](../vsto/host-items-and-host-controls-overview.md)   
- [Limitaciones de programación de elementos y controles Host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
+ [XMLNode (control)](../vsto/xmlnode-control.md)   
+ [Automatizar Word usando objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)   
+ [Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)   
+ [Limitaciones de programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

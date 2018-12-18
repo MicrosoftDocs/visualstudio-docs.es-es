@@ -26,18 +26,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e069b13f3ceda00383bda8d0c33d74059e785f0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4084ce78d1acaf5a34f95ea88046bf0860efc9ca
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750121"
 ---
-# <a name="cventerspan-function"></a>CvEnterSpan (Función)
+# <a name="cventerspan-function"></a>Función CvEnterSpan
 Marca el principio de un nuevo intervalo.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```C  
 HRESULT CvEnterSpanW(  
     _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,   
     _Out_ PCV_SPAN* ppSpan,   
@@ -125,7 +126,7 @@ HRESULT CvEnterSpanExVA(
  S_OK cuando el mensaje se ha escrito correctamente. Código de error en caso de que se hayan producido errores. Utilice macros SUCCEEDED/FAILED para comprobar si existe una condición de error.  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** cvmarkers.h  
+ **Encabezado:** *cvmarkers.h*  
   
  **Unicode:** CvEnterSpanW, CvEnterSpanVW, CvEnterSpanExW, CvEnterSpanExVW  
   

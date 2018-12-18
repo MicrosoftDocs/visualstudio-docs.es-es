@@ -1,6 +1,7 @@
 ---
 title: 'CA1023: Los indizadores no deben ser multidimensionales'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -13,15 +14,21 @@ ms.assetid: ae499879-97f6-434e-a61d-1fedd231d2fb
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 876eb79237b843721b71a1879cfbb83e7a9918db
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 96b769aa8cc009f122d4cef4ca8d270c6b3fced5
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547718"
 ---
 # <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023: Los indizadores no deben ser multidimensionales
+
 |||
 |-|-|
 |TypeName|IndexersShouldNotBeMultidimensional|
@@ -33,16 +40,16 @@ ms.lasthandoff: 04/19/2018
  Un tipo público o protegido contiene un indizador público o protegido que utiliza más de un índice.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Los indizadores, es decir, las propiedades indizadas, deben utilizar un índice único. Los indizadores multidimensionales pueden reducir significativamente la facilidad de uso de la biblioteca. Si el diseño requiere varios índices, reconsidere si el tipo representa un almacén de datos lógico. Si no es así, utilice un método.
+ Los indizadores, es decir, las propiedades indizadas, deben utilizar un índice único. Los indizadores multidimensionales pueden reducir significativamente la facilidad de uso de la biblioteca de. Si el diseño requiere varios índices, reconsidere si el tipo representa un almacén de datos lógico. Si no es así, utilice un método.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, cambie el diseño para utilizar un solo entero o un índice de cadena, o utilice un método en lugar del indizador.
+ Para corregir una infracción de esta regla, cambiar el diseño para utilizar un solo entero o un índice de cadena o usar un método en lugar del indizador.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Suprima una advertencia de esta regla después de considerar cuidadosamente la necesidad del indizador no estándar.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ Suprima una advertencia de esta regla después de considerar cuidadosamente la necesidad de que el indizador no estándar.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra un tipo, `DayOfWeek03`, con un indizador multidimensional que infringe la regla. El indizador se puede considerar como un tipo de conversión y, por tanto, es más apropiado exponerlo como un método. El tipo se ha rediseñado en `RedesignedDayOfWeek03` para cumplir la regla.
+ El ejemplo siguiente muestra un tipo, `DayOfWeek03`, con un indizador multidimensional que infringe la regla. El indizador se puede considerar como un tipo de conversión y, por tanto, es más apropiado exponerlo como un método. El tipo se ha rediseñado en `RedesignedDayOfWeek03` para cumplir la regla.
 
  [!code-vb[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/VisualBasic/ca1023-indexers-should-not-be-multidimensional_1.vb)]
  [!code-cpp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CPP/ca1023-indexers-should-not-be-multidimensional_1.cpp)]

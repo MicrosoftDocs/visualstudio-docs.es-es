@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: asignar esquemas a hojas de cálculo dentro de Visual Studio | Documentos de Microsoft'
+title: 'Cómo: asignar esquemas a hojas de cálculo en Visual Studio'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,21 +18,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b2d0caadfc08d7fa1d2ea29d04e84a5d954a42fd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8b95e24d151ef6bf8a0083d130c4e38f3f33d480
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256050"
 ---
-# <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Cómo: Asignar esquemas a hojas de cálculo en Visual Studio
-  Puede asignar un esquema XML a una hoja de cálculo mientras la hoja de cálculo está abierta en Visual Studio. Use las mismas herramientas de Microsoft Office Excel que usan cuando el libro está abierto fuera de Visual Studio. El proyecto de Office crea los mismos objetos independientemente de si asigna el esquema a la hoja de cálculo antes o después de crear la solución de Excel.  
+# <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Cómo: asignar esquemas a hojas de cálculo en Visual Studio
+  Puede asignar un esquema XML a una hoja de cálculo mientras la hoja de cálculo está abierto en Visual Studio. Use las mismas herramientas de Microsoft Office Excel que usan cuando el libro se abre fuera de Visual Studio. El proyecto de Office crea los mismos objetos independientemente de si asigna el esquema de la hoja de cálculo antes o después de crear la solución de Excel.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
 > [!NOTE]  
->  No se puede utilizar esquemas XML compuestos en soluciones de Excel.  
+>  No se puede usar los esquemas XML con varias partes en soluciones de Excel.  
   
-### <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>Para asignar un esquema XML a una hoja de cálculo de Excel en Visual Studio  
+## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>Para asignar un esquema XML a una hoja de cálculo de Excel en Visual Studio  
   
 1.  Abra el proyecto de libro o plantilla de Excel en Visual Studio.  
   
@@ -41,32 +42,32 @@ ms.lasthandoff: 04/16/2018
 3.  En la cinta de opciones, haga clic en la pestaña **Desarrollador** .  
   
     > [!NOTE]  
-    >  Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, consulta [Cómo: Mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, consulte [Cómo: mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 4.  En el **XML** grupo, haga clic en **origen**.  
   
      El **origen XML** abre la ventana.  
   
-5.  En el **origen XML** ventana, haga clic en **asignaciones XML**.  
+5.  En el **origen XML** ventana, haga clic en **mapas XML**.  
   
-     El **asignaciones XML** abre el cuadro de diálogo.  
+     El **mapas XML** abre el cuadro de diálogo.  
   
-6.  En el **asignaciones XML** cuadro de diálogo, haga clic en **agregar**.  
+6.  En el **mapas XML** cuadro de diálogo, haga clic en **agregar**.  
   
-7.  Vaya al archivo de esquema, selecciónelo y, a continuación, haga clic en **abiertos**.  
+7.  Busque el archivo de esquema, selecciónelo y, a continuación, haga clic en **abierto**.  
   
 8.  Haga clic en **Aceptar**.  
   
-     El esquema se representa en el **origen XML** ventana. En el proyecto, un tipo <xref:System.Data.DataSet> se genera basándose en el esquema y un <xref:System.Windows.Forms.BindingSource> se crea.  
+     El esquema se representa en el **origen XML** ventana. En el proyecto, con tipo <xref:System.Data.DataSet> se genera basándose en el esquema y un <xref:System.Windows.Forms.BindingSource> se crea.  
   
-9. Arrastre elementos desde la **origen XML** ventana hasta los lugares de la hoja de cálculo donde desea que los controles correspondientes que se va a crear.  
+9. Arrastre elementos desde el **origen XML** ventana a los lugares en la hoja de cálculo donde desea que los controles correspondientes a crearse.  
   
-     Si arrastra un elemento de esquema no repetitivo, el proyecto de Office genera una <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control que se enlaza automáticamente a la <xref:System.Windows.Forms.BindingSource>.  
+     Si arrastra un elemento de esquema no es de repetición, el proyecto de Office genera una <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control que se enlaza automáticamente a la <xref:System.Windows.Forms.BindingSource>.  
   
-     Si arrastra un elemento de esquema repetitivo, el proyecto de Office genera una <xref:Microsoft.Office.Tools.Excel.ListObject> control que no se enlaza automáticamente a un origen de datos. Para obtener más información, consulte [esquemas y datos en las personalizaciones de nivel de documento XML](../vsto/xml-schemas-and-data-in-document-level-customizations.md).  
+     Si arrastra un elemento de esquema repetitivo, el proyecto de Office genera un <xref:Microsoft.Office.Tools.Excel.ListObject> control que no se enlaza automáticamente a un origen de datos. Para obtener más información, consulte [esquemas XML y los datos en el nivel de documento personalizaciones](../vsto/xml-schemas-and-data-in-document-level-customizations.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: asignar esquemas a documentos de Word en Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
- [Esquemas y datos XML en personalizaciones de nivel de documento](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
+ [Esquemas y datos en las personalizaciones de nivel de documento XML](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
   
   

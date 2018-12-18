@@ -1,6 +1,7 @@
 ---
-title: Compatibilidad de 64 bits del IDE de Visual Studio | Microsoft Docs
+title: Compatibilidad de 64 bits del IDE de Visual Studio
 ms.date: 02/21/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,25 +13,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 344e6067e3280a998f4b2296f880471080bd7bb6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 27553fe0fdac8378f8d4b1158902394f0704880c
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
+ms.locfileid: "32425743"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Compatibilidad de 64 bits del IDE de Visual Studio
 
-Visual Studio permite configurar las aplicaciones para distintas plataformas de destino, incluidas las de 64 bits. Para obtener más información sobre la compatibilidad con plataformas de 64 bits en Visual Studio, vea [Aplicaciones de 64 bits](/dotnet/framework/64-bit-apps).
+Visual Studio permite configurar las aplicaciones para distintas plataformas de destino, incluidas las de 64 bits. Para más información sobre la compatibilidad con plataformas de 64 bits en Visual Studio, vea [Aplicaciones de 64 bits](/dotnet/framework/64-bit-apps).
 
-## <a name="deploying-a-64-bit-application"></a>Implementar una aplicación de 64 bits
+## <a name="deploy-a-64-bit-application"></a>Implementar una aplicación de 64 bits
 
-En [Implementación de requisitos previos para las aplicaciones de 64 bits](../deployment/deploying-prerequisites-for-64-bit-applications.md) se enumeran los redistribuibles que se pueden usar como requisitos previos para la instalación de una aplicación de 64 bits.
+En [Implementar los requisitos previos para las aplicaciones de 64 bits](../deployment/deploying-prerequisites-for-64-bit-applications.md) se enumeran los redistribuibles que se pueden usar como requisitos previos para la instalación de una aplicación de 64 bits.
 
-## <a name="configuring-projects-as-64-bit-applications"></a>Configurar los proyectos como aplicaciones de 64 bits
+## <a name="configure-projects-as-64-bit-applications"></a>Configurar los proyectos como aplicaciones de 64 bits
 
 En [Cómo: Configurar proyectos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md) se describe la configuración de proyectos para compilarlos como aplicaciones de 64 bits.
 
-## <a name="debugging-a-64-bit-application"></a>Depurar una aplicación de 64 bits
+## <a name="debug-a-64-bit-application"></a>Depurar una aplicación de 64 bits
 
-[Depurar aplicaciones de 64 bits](../debugger/debug-64-bit-applications.md)
-[Uso de archivos de volcado](../debugger/using-dump-files.md)
+- [Depuración de aplicaciones de 64 bits](../debugger/debug-64-bit-applications.md)
+- [Uso de archivos de volcado de memoria](../debugger/using-dump-files.md)

@@ -1,5 +1,5 @@
 ---
-title: Elemento IDSymbol | Documentos de Microsoft
+title: IDSymbol (elemento) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,18 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71979bd4f859257555c9d72ac5521a5ae21b9ed4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8d88acb221abfc26c45c9002abb92f704936334b
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500386"
 ---
-# <a name="idsymbol-element"></a>Elemento IDSymbol
+# <a name="idsymbol-element"></a>IDSymbol (elemento)
 El `IDSymbol` elemento contiene el identificador del par GUID: ID que representa un menú, grupo o comando. Incluye el GUID del elemento primario `GuidSymbol` elemento. El `IDSymbol` elemento tiene un `name` atributo que proporciona un nombre descriptivo para el identificador, que se encuentra en la `value` atributo.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```xml  
 <IDSymbol name=ElementName value="0x0010" />  
 ```  
   
@@ -37,7 +38,7 @@ El `IDSymbol` elemento contiene el identificador del par GUID: ID que representa
 |Atributo|Descripción|  
 |---------------|-----------------|  
 |name|Requerido. Nombre del símbolo de identificador.|  
-|value|Requerido. Valor de Id. numérico del símbolo de identificador.|  
+|value|Requerido. Valor de identificador numérico del símbolo de identificador.|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
@@ -46,10 +47,10 @@ El `IDSymbol` elemento contiene el identificador del par GUID: ID que representa
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|[GuidSymbol (Elemento)](../extensibility/guidsymbol-element.md)|Contiene el GUID del par GUID: ID que representa un menú, grupo o comando. Agrupa los elementos `IDSymbol`.|  
+|[GuidSymbol (elemento)](../extensibility/guidsymbol-element.md)|Contiene el GUID del par GUID: ID que representa un menú, grupo o comando. Agrupa los elementos `IDSymbol`.|  
   
 ## <a name="remarks"></a>Comentarios  
- Cada `IDSymbol` elemento en un determinado `GuidSymbol` debe tener un único elemento `value`. Sin embargo, `IDSymbol` elementos que tengan valores idénticos pueden existir en un paquete como tienen diferentes objetos primarios.  
+ Cada `IDSymbol` elemento en un determinado `GuidSymbol` elemento debe tener un único `value`. Sin embargo, `IDSymbol` los elementos que tienen valores idénticos pueden existir en un paquete, siempre y cuando tengan que diferentes objetos primarios.  
   
 ## <a name="see-also"></a>Vea también  
- [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Archivos visuales Studio comando table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

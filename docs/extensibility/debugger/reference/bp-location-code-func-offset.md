@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_FUNC_OFFSET | Documentos de Microsoft
+title: BP_LOCATION_CODE_FUNC_OFFSET | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d312824bb88022cba9b58945cb5f3e78c13b837
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9a1828a7cea62893ecddec6d28f44ca6475352dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911400"
 ---
 # <a name="bplocationcodefuncoffset"></a>BP_LOCATION_CODE_FUNC_OFFSET
 Describe la ubicación de desplazamiento de un punto de interrupción en una función en el código.  
@@ -35,7 +36,7 @@ typedef struct _BP_LOCATION_CODE_FUNC_OFFSET {
   
 ## <a name="members"></a>Miembros  
  `bstrContext`  
- El contexto del punto de interrupción, normalmente un nombre de método o una función como se ve en una pila de llamadas.  
+ El contexto del punto de interrupción, normalmente un nombre de método o una función como se muestra en una pila de llamadas.  
   
  `pFuncPos`  
  El [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md) objeto que describe el nombre de la función y la posición relativa desde el principio de la función.  

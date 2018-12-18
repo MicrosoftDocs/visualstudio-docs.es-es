@@ -1,31 +1,37 @@
 ---
-title: Acciones rápidas comunes| Microsoft Docs
+title: Acciones rápidas comunes
 ms.date: 03/28/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
-author: kuhlenh
-ms.author: kaseyu
+author: gewarren
+ms.author: gewarren
 manager: douge
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bc6041adf0fdfb35e13fd8c3c989f149d69950a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9c6eaa3b776e7a4c4e90795265f94af2d0df994b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894019"
 ---
 # <a name="common-quick-actions"></a>Acciones rápidas comunes
 
-Las secciones de este tema presentan algunas de las acciones rápidas comunes que se aplican a código de C# y de Visual Basic. Estas acciones son *correcciones del código* para las [reglas del analizador](../code-quality/roslyn-analyzers-overview.md) integradas en Visual Studio.
+Las secciones de este tema presentan algunas de las **acciones rápidas** comunes que se aplican a código de C# y de Visual Basic. Estas acciones son *correcciones del código* para el diagnóstico de compilador o [analizadores de .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md) integrados en Visual Studio.
 
 ## <a name="actions-that-fix-errors"></a>Acciones que corrigen errores
 
+Las acciones rápidas de esta sección corrigen errores en el código que provocarían que se produjera un error en la compilación. Si hay acciones rápidas disponibles para corregir un error en una línea de código, el icono que se muestra en el margen o debajo del subrayado ondulado rojo es una bombilla con una “x” roja en ella.
+
+![Menú e icono de error de las acciones rápidas](media/error-light-bulb-with-code.png)
+
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Corrección de símbolos o palabras clave mal escritos
 
-Si se equivoca al escribir un tipo o una palabra clave en Visual Studio, esta acción rápida lo corregirá automáticamente. Verá estos elementos en el menú de bombilla como **"Cambiar '*palabra mal escrita*' a '*palabra correcta*'**.  Por ejemplo:
+Si se equivoca al escribir un tipo o una palabra clave en Visual Studio, esta acción rápida lo corrige automáticamente. Verá estos elementos en el menú de bombilla como **"Cambiar '*palabra mal escrita*' a '*palabra correcta*'**. Por ejemplo:
 
 ```csharp
 // Before
@@ -53,8 +59,8 @@ Function MyFunction as Integer
 End Function
 ```
 
-|  Identificador del error: | Lenguajes aplicables |  Versión compatible |
-| ------- | -------------------- | ----------------  |
+| Identificador del error: | Lenguajes aplicables | Versión compatible |
+| ------- | -------------------- | ---------------- |
 | CS0103, BC30002 | C# y Visual Basic | Visual Studio 2015 Update 2 |
 
 ### <a name="resolve-git-merge-conflict"></a>Resolver conflictos de fusión mediante combinación de GIT
@@ -65,17 +71,10 @@ Estas acciones rápidas permiten resolver conflictos de fusión mediante combina
 // Before
 private void MyMethod()
 {
-<<<<<<< HEAD
-    if (true)
-    {
-
-    }
-=======
     if (false)
     {
 
     }
->>>>>>> upstream
 }
 
 // Take changes from 'HEAD'
@@ -90,99 +89,23 @@ private void MyMethod()
 }
 ```
 
-|  Identificador del error: | Lenguajes aplicables |  Versión compatible |
-| ------- | -------------------- | ----------------  |
-| CS8300, BC37284  | C# y Visual Basic | Visual Studio 2017 versión 15.3 |
-
-### <a name="make-method-synchronous"></a>Convertir un método en sincrónico
-
-Cuando se usa la palabra clave `async` o `Async` en un método, se espera que en algún lugar dentro de ese método también se use la palabra clave `await` o `Await`.  Pero si este no es el caso, aparecerá una acción rápida que le permitirá convertir el método en sincrónico si elimina la palabra clave `async` o `Async` y cambia el tipo de valor devuelto. Use la opción **Convertir el método en sincrónico** del menú Acciones rápidas.
-
-```csharp
-// Before
-async Task<int> MyAsyncMethod()
-{
-    return 3;
-}
-
-// Make method synchronous
-
-// After
-int MyAsyncMethod()
-{
-    return 3;
-}
-```
-
-```vb
-' Before
-Async Function MyAsyncMethod() As Task(Of Integer)
-    Return 3
-End Function
-
-' Make method synchronous
-
-' After
-Function MyAsyncMethod() As Integer
-    Return 3
-End Function
-```
-
-|  Identificador del error: | Lenguajes aplicables |  Versión compatible |
-| ------- | -------------------- | ----------------  |
-| CS1998, BC42356 | C# y Visual Basic | Visual Studio 2015 Update 2 |
-
-### <a name="make-method-asynchronous"></a>Convertir un método en asincrónico
-
-Cuando se usa la palabra clave `await` o `Await` dentro de un método, se espera que el propio método esté marcado con la palabra clave `async` o `Async`.  Pero si este no es el caso, aparecerá una acción rápida que le permitirá convertir el método en asincrónico. Use la opción **Make method/Function asynchronous** (Convertir el método/función en asincrónico) del menú Acciones rápidas.
-
-```csharp
-// Before
-int MyAsyncMethod()
-{
-    return await Task.Run(...);
-}
-
-// Make method asynchronous
-
-// After
-async Task<int> MyAsyncMethod()
-{
-    return await Task.Run(...);
-}
-```
-
-```vb
-' Before
-Function MyAsyncMethod() as Integer
-    Return  Await Task.Run(...)
-End Function
-
-' Make method asynchronous
-
-' After
-Async Function MyAsyncMethod() As Task(Of Integer)
-    Return Await Task.Run(...)
-End Function
-```
-
-|  Identificador del error: | Lenguajes aplicables |  Versión compatible |
-| ------- | -------------------- | ----------------  |
-| CS4032, BC37057 | C# y Visual Basic | Visual Studio 2017 |
+| Identificador del error: | Lenguajes aplicables | Versión compatible |
+| ------- | -------------------- | ---------------- |
+| CS8300, BC37284 | C# y Visual Basic | Visual Studio 2017 versión 15.3 |
 
 ## <a name="actions-that-remove-unnecessary-code"></a>Acciones que quitan código innecesario
 
 ### <a name="remove-unnecessary-usingsimports"></a>Quitar instrucciones Using o Import innecesarias
 
-La acción rápida **Eliminar instrucciones Using innecesarias/Quitar instrucciones Import innecesarias** quitará todas las instrucciones `using` y `Import` sin usar del archivo actual.  Cuando se selecciona este elemento, las importaciones de espacios de nombres sin usar se quitarán inmediatamente.
+La acción rápida **Eliminar instrucciones Using innecesarias/Quitar instrucciones Import innecesarias** quita todas las instrucciones `using` y `Import` sin usar del archivo actual. Cuando se seleccione este elemento, las importaciones de espacios de nombres sin usar se quitarán.
 
-|  Lenguajes aplicables |  Versión compatible |
-|  -------------------- | ----------------  |
-|  C# y Visual Basic | Visual Studio 2015 RTW |
+| Lenguajes aplicables | Versión compatible |
+| -------------------- | ---------------- |
+| C# y Visual Basic | Visual Studio 2015 RTW |
 
 ### <a name="remove-unnecessary-cast"></a>Quitar conversión innecesaria
 
-Si convierte un tipo a otro que no requiere una conversión, el elemento de acción rápida **Quitar conversión innecesaria** quitará la conversión del código.
+Si convierte un tipo a otro que no requiere una conversión, el elemento de acción rápida **Quitar conversión innecesaria** quitará la conversión innecesaria.
 
 ```csharp
 // before
@@ -204,8 +127,8 @@ Dim number as Integer = CType(3, Integer)
 Dim number as Integer = 3
 ```
 
-|  Id. de diagnóstico | Lenguajes aplicables |  Versión compatible |
-| ------- | -------------------- | ----------------  |
+| Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
+| ------- | -------------------- | ---------------- |
 | IDE0004 | C# y Visual Basic | Visual Studio 2015 RTW |
 
 ### <a name="remove-unused-variables"></a>Quitar variables no usadas
@@ -231,8 +154,8 @@ public MyMethod()
 }
 ```
 
-|  Id. de diagnóstico | Lenguajes aplicables |  Versión compatible |
-| ------- | -------------------- | ----------------  |
+| Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
+| ------- | -------------------- | ---------------- |
 | CS0219, BC42024 | C# y Visual Basic | Visual Studio 2017 versión 15.3 |
 
 ### <a name="remove-type-from-default-value-expression"></a>Quitar el tipo de la expresión de valor predeterminado
@@ -247,11 +170,10 @@ void DoWork(CancellationToken cancellationToken = default(CancellationToken)) { 
 
 // After
 void DoWork(CancellationToken cancellationToken = default) { ... }
-
 ```
 
-|  Id. de diagnóstico | Lenguajes aplicables |  Versión compatible |
-| ------- | -------------------- | ----------------  |
+| Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
+| ------- | -------------------- | ---------------- |
 | IDE0034 | C# 7.1+ | Visual Studio 2017 versión 15.3 |
 
 ## <a name="actions-that-add-missing-code"></a>Acciones que agregan código que falta
@@ -289,8 +211,8 @@ Imports System.Diagnostics
 Debug.WriteLine("Hello")
 ```
 
-|  Id. de diagnóstico | Lenguajes aplicables |  Versión compatible |
-| ------- | -------------------- | ----------------  |
+| Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
+| ------- | -------------------- | ---------------- |
 | CS0103, BC30451 | C# y Visual Basic| Visual Studio 2015 Update 2 |
 
 ### <a name="add-missing-casesdefault-caseboth"></a>Agregar casos que faltan, un caso predeterminado o ambos
@@ -358,8 +280,8 @@ Select Case myEnum
 End Select
 ```
 
-|  Id. de diagnóstico | Lenguajes aplicables |  Versión compatible |
-| ------- | -------------------- | ----------------  |
+| Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
+| ------- | -------------------- | ---------------- |
 | IDE0010 | C# y Visual Basic| Visual Studio 2017 versión 15.3 |
 
 ### <a name="add-null-checks-for-parameters"></a>Agregar comprobaciones de parámetros nulos
@@ -392,8 +314,8 @@ class MyClass
 }
 ```
 
-| Lenguajes aplicables |  Versión compatible |
-| -------------------- | ----------------  |
+| Lenguajes aplicables | Versión compatible |
+| -------------------- | ---------------- |
 | C# y Visual Basic| Visual Studio 2017 versión 15.3 |
 
 ### <a name="add-argument-name"></a>Agregar nombre de argumento
@@ -408,8 +330,8 @@ var date = new DateTime(1997, 7, 8);
 var date = new DateTime(year: 1997, month: 7, day: 8);
 ```
 
-| Lenguajes aplicables |  Versión compatible |
-| -------------------- | ----------------  |
+| Lenguajes aplicables | Versión compatible |
+| -------------------- | ---------------- |
 | C# y Visual Basic| Visual Studio 2017 versión 15.3 |
 
 ### <a name="add-braces"></a>Agregar llaves
@@ -430,8 +352,8 @@ if (true)
 }
 ```
 
-|  Id. de diagnóstico | Lenguajes aplicables |  Versión compatible |
-| ------- | -------------------- | ----------------  |
+| Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
+| ------- | -------------------- | ---------------- |
 | IDE0011 | C# | Visual Studio 2017 RTW |
 
 ### <a name="add-and-order-modifiers"></a>Agregar y ordenar modificadores
@@ -464,8 +386,8 @@ static private int thisFieldIsPublic;
 private static int thisFieldIsPublic;
 ```
 
-|  Id. de diagnóstico | Lenguajes aplicables |  Versión compatible |
-| ------- | -------------------- | ----------------  |
+| Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
+| ------- | -------------------- | ---------------- |
 | IDE0036 | C# y Visual Basic| Versión 15.5 de Visual Studio 2017 |
 | IDE0040 | C# y Visual Basic| Versión 15.5 de Visual Studio 2017 |
 
@@ -522,13 +444,13 @@ Select Case obj
 End Select
 ```
 
-| Lenguajes aplicables |  Versión compatible |
-| -------------------- | ----------------  |
+| Lenguajes aplicables | Versión compatible |
+| -------------------- | ---------------- |
 | C# y Visual Basic| Visual Studio 2017 versión 15.3 |
 
 ### <a name="convert-to-interpolated-string"></a>Convertir en una cadena interpolada
 
-Las [cadenas interpoladas](/dotnet/csharp/language-reference/keywords/interpolated-strings) son una forma sencilla de expresar cadenas con variables insertadas, similar al método **[String.Format](https://msdn.microsoft.com/library/system.string.format.aspx)**.  Esta acción rápida reconoce los casos en los que las cadenas están concatenadas o usan **String.Format** y cambia el uso a una cadena interpolada.
+Las [cadenas interpoladas](/dotnet/csharp/language-reference/keywords/interpolated-strings) son una forma sencilla de expresar cadenas con variables insertadas, similar al método **[String.Format](/dotnet/api/system.string.format#overloads)**.  Esta acción rápida reconoce los casos en los que las cadenas están concatenadas o usan **String.Format** y cambia el uso a una cadena interpolada.
 
 ```csharp
 // Before
@@ -554,8 +476,8 @@ Dim num as Integer = 3
 Dim s As String = $"My string with {num} in the middle"
 ```
 
-| Lenguajes aplicables |  Versión compatible |
-| -------------------- | ----------------  |
+| Lenguajes aplicables | Versión compatible |
+| -------------------- | ---------------- |
 | C# 6.0+ y Visual Basic 14+ | Visual Studio 2017 RTW |
 
 ### <a name="use-object-initializers"></a>Usar inicializadores de objeto
@@ -585,7 +507,7 @@ Dim c = New Customer() With {.Age = 21}
 ```
 
 | Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
-| ------- | -------------------- | ----------------  |
+| ------- | -------------------- | ---------------- |
 | IDE0017 | C# y Visual Basic | Visual Studio 2017 RTW |
 
 ### <a name="use-collection-initializers"></a>Usar inicializadores de colección
@@ -619,7 +541,7 @@ Dim list = New List(Of Integer) From {1, 2, 3}
 ```
 
 | Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
-| ------- | -------------------- | ----------------  |
+| ------- | -------------------- | ---------------- |
 | IDE0028 | C# y Visual Basic | Visual Studio 2017 RTW |
 
 ### <a name="convert-auto-property-to-full-property"></a>Convertir propiedad automática en propiedad completa
@@ -659,8 +581,8 @@ Public Property Name As String
 End Property
 ```
 
-|  Lenguajes aplicables |  Versión compatible |
-|  -------------------- | ----------------  |
+| Lenguajes aplicables | Versión compatible |
+| -------------------- | ---------------- |
 | C# y Visual Basic | Versión 15.5 de Visual Studio 2017 |
 
 ### <a name="convert-block-body-to-expression-bodied-member"></a>Convertir cuerpo de bloques en miembro con forma de expresión
@@ -712,8 +634,8 @@ class MyClass4
 }
 ```
 
-|  Id. de diagnóstico | Lenguajes aplicables |  Versión compatible |
-| ------- | -------------------- | ----------------  |
+| Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
+| ------- | -------------------- | ---------------- |
 | IDE0021-27 | C# 6.0+ | Visual Studio 2017 RTW |
 
 ### <a name="convert-anonymous-function-to-local-function"></a>Convertir función anónima en función local
@@ -739,8 +661,8 @@ int fibonacci(int n)
 
 ### <a name="convert-referenceequals-to-is-null"></a>Convertir "ReferenceEquals" en "es null"
 
-|  Id. de diagnóstico | Lenguajes aplicables |  Versión compatible |
-| ------- | -------------------- | ----------------  |
+| Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
+| ------- | -------------------- | ---------------- |
 | IDE0041 | C# 7.0+ | Versión 15.5 de Visual Studio 2017 |
 
 Esta acción rápida sugiere el uso de la [coincidencia de patrones](/dotnet/csharp/pattern-matching) en lugar del patrón de codificación ```ReferenceEquals```, siempre que sea posible.
@@ -763,8 +685,8 @@ if (value is null)
 }
 ```
 
-|  Id. de diagnóstico | Lenguajes aplicables |  Versión compatible |
-| ------- | -------------------- | ----------------  |
+| Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
+| ------- | -------------------- | ---------------- |
 | IDE0039 | C# 7.0+ | Versión 15.5 de Visual Studio 2017 |
 
 ### <a name="introduce-pattern-matching"></a>Introducir la coincidencia de patrones
@@ -806,7 +728,7 @@ if (o is string s)
 ```
 
 | Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
-| ------- | -------------------- | ----------------  |
+| ------- | -------------------- | ---------------- |
 | IDE0020 | C# 7.0+ | Visual Studio 2017 RTW |
 | IDE0019 | C# 7.0+ | Visual Studio 2017 RTW |
 
@@ -835,7 +757,7 @@ Dim countdown As Integer = &H200000
 ```
 
 | Lenguajes aplicables | Versión compatible |
-| ------- | -------------------- | ----------------  |
+| ------- | -------------------- | ---------------- |
 | C# 7.0+ y Visual Basic 14+ | Visual Studio 2017 versión 15.3 |
 
 ### <a name="insert-digit-separators-into-literals"></a>Insertar separadores de dígitos en literales
@@ -863,7 +785,7 @@ Dim countdown As Integer = 1_000_000
 ```
 
 | Lenguajes aplicables | Versión compatible |
-| ------- | -------------------- | ----------------  |
+| ------- | -------------------- | ---------------- |
 | C# 7.0+ y Visual Basic 14+ | Visual Studio 2017 versión 15.3 |
 
 ### <a name="use-explicit-tuple-names"></a>Usar nombres de tupla explícitos
@@ -895,12 +817,12 @@ Dim name = customer.name
 ```
 
 | Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
-| ------- | -------------------- | ----------------  |
+| ------- | -------------------- | ---------------- |
 | IDE0033 | C# 7.0+ y Visual Basic 15+ | Visual Studio 2017 RTW |
 
 ### <a name="use-inferred-names"></a>Usar nombres deducidos
 
-Estas acciones rápidas indican cuándo pueden los usuarios usar nombres de miembro deducidos en tipos anónimos o nombres de elemento de tupla deducidos de C# 7.1.
+Esta acción rápida indica si el código se puede simplificar para usar nombres de miembros inferidos en tipos anónimos, o bien nombres de elementos inferidos en tuplas.
 
 ```csharp
 // Before
@@ -923,7 +845,7 @@ var tuple = (age, name);
 ```
 
 | Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
-| ------- | -------------------- | ----------------  |
+| ------- | -------------------- | ---------------- |
 | IDE0037 | C# | Visual Studio 2017 v. 15.5 |
 | IDE0037 | C# 7.1+ | Visual Studio 2017 v. 15.5 |
 
@@ -950,9 +872,85 @@ Console.WriteLine($"{x} {y}");
 ```
 
 | Id. de diagnóstico | Lenguajes aplicables | Versión compatible |
-| ------- | -------------------- | ----------------  |
+| ------- | -------------------- | ---------------- |
 | IDE0042 | C# 7.0+ | Visual Studio 2017 v. 15.5 |
+
+### <a name="make-method-synchronous"></a>Convertir un método en sincrónico
+
+Cuando se usa la palabra clave `async` o `Async` en un método, se espera que dentro de ese método también se use la palabra clave `await` o `Await`. En caso contrario, aparecerá una acción rápida para convertir el método en sincrónico si elimina la palabra clave `async` o `Async` y cambia el tipo de valor devuelto. Use la opción **Convertir el método en sincrónico** del menú Acciones rápidas.
+
+```csharp
+// Before
+async Task<int> MyAsyncMethod()
+{
+    return 3;
+}
+
+// Make method synchronous
+
+// After
+int MyAsyncMethod()
+{
+    return 3;
+}
+```
+
+```vb
+' Before
+Async Function MyAsyncMethod() As Task(Of Integer)
+    Return 3
+End Function
+
+' Make method synchronous
+
+' After
+Function MyAsyncMethod() As Integer
+    Return 3
+End Function
+```
+
+| Identificador del error: | Lenguajes aplicables | Versión compatible |
+| ------- | -------------------- | ---------------- |
+| CS1998, BC42356 | C# y Visual Basic | Visual Studio 2015 Update 2 |
+
+### <a name="make-method-asynchronous"></a>Convertir un método en asincrónico
+
+Cuando se usa la palabra clave `await` o `Await` dentro de un método, se espera que el método esté marcado con la palabra clave `async` o `Async`. En caso contrario, aparece una acción rápida para convertir el método en asincrónico. Use la opción **Make method/Function asynchronous** (Convertir el método/función en asincrónico) del menú Acciones rápidas.
+
+```csharp
+// Before
+int MyAsyncMethod()
+{
+    return await Task.Run(...);
+}
+
+// Make method asynchronous
+
+// After
+async Task<int> MyAsyncMethod()
+{
+    return await Task.Run(...);
+}
+```
+
+```vb
+' Before
+Function MyAsyncMethod() as Integer
+    Return  Await Task.Run(...)
+End Function
+
+' Make method asynchronous
+
+' After
+Async Function MyAsyncMethod() As Task(Of Integer)
+    Return Await Task.Run(...)
+End Function
+```
+
+| Identificador del error: | Lenguajes aplicables | Versión compatible |
+| ------- | -------------------- | ---------------- |
+| CS4032, BC37057 | C# y Visual Basic | Visual Studio 2017 |
 
 ## <a name="see-also"></a>Vea también
 
-[Acciones rápidas](../ide/quick-actions.md)
+- [Acciones rápidas](../ide/quick-actions.md)

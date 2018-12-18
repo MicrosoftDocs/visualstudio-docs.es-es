@@ -1,5 +1,5 @@
 ---
-title: GetVstoSolutionMetadata (función) | Documentos de Microsoft
+title: GetVstoSolutionMetadata (función)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,25 +13,26 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c024d97d13c2794dd4fdaee6cfcd53d24c2e668
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e6289a0d19bc6621d98edfc974ad265791876a70
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675439"
 ---
 # <a name="getvstosolutionmetadata-function"></a>GetVstoSolutionMetadata (función)
-  Esta API es compatible con la infraestructura de Office y no está diseñada para utilizarse directamente desde el código.  
+  Esta API admite la infraestructura de Office y no está diseñada para utilizarse directamente desde el código.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```csharp
 HRESULT WINAPI GetVstoSolutionMetadata(  
     LPCWSTR lpwszSolutionMetadataKey,  
     ISolutionMetadata** ppSolutionInfo  
 );  
 ```  
   
-#### <a name="parameters"></a>Parámetros  
+### <a name="parameters"></a>Parámetros  
   
 |Parámetro|Descripción|  
 |---------------|-----------------|  

@@ -1,21 +1,22 @@
 ---
-title: "Solución de problemas | Microsoft Docs"
-description: 
-author: asb3993
-ms.author: amburns
-ms.date: 04/14/2017
-ms.topic: article
+title: Solucionar problemas
+description: Problemas comunes y soluciones para usuarios de Visual Studio para Mac.
+ms.topic: troubleshooting
+author: conceptdev
+ms.author: crdun
+ms.date: 05/06/2018
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
-ms.openlocfilehash: 4e483548e916bf00b07c472b18adac8504b6e967
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 3a5ea59e6f98891cd113ccad9a74038ca52cccf8
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294648"
 ---
 # <a name="troubleshooting"></a>Solución de problemas
 
 ## <a name="viewing-logs-in-visual-studio-for-mac"></a>Visualización de registros en Visual Studio para Mac
- 
+
 Para ver los registros, vaya al elemento de menú **Ayuda > Abrir directorio de registro**, como se muestra debajo:
 
 ![Elemento de menú Abrir directorio de registro](media/troubleshooting-image1.png)
@@ -26,9 +27,9 @@ Cuando se detecta una excepción, aparece una burbuja de excepción. Para ver m�
 
 ![Visualización de más detalles sobre una excepción](media/troubleshooting-image2.png)
 
-Con esto se abre el cuadro de diálogo **Mostrar detalles**, en el que se proporciona más información sobre la excepción:
+Este muestra el cuadro de diálogo **Mostrar detalles**, que proporciona más información sobre la excepción:
 
-![](media/troubleshooting-image3.png)
+![Cuadro de diálogo Mostrar detalles](media/troubleshooting-image3.png)
 
 A continuación se describen detalladamente las secciones importantes del cuadro de diálogo que vienen numeradas arriba:
 
@@ -44,4 +45,8 @@ A continuación se describen detalladamente las secciones importantes del cuadro
 10. De forma predeterminada, está establecido en lo que esté establecida la opción **Solo depurar el código del proyecto** de la configuración del depurador. Al activar esta casilla se permite que todo el código de no usuario se contraiga en una línea en el seguimiento de la pila.
 11. Un botón Copiar para copiar la salida `exception.ToString()` en el Portapapeles.
 
-Tenga en cuenta que algunas de estas secciones solo estarán visibles si la excepción tiene una excepción interna.
+Tenga en cuenta que algunas de estas secciones solo están visibles si la excepción tiene una excepción interna.
+
+## <a name="see-also"></a>Vea también
+
+- [Resources for troubleshooting IDE errors (Visual Studio on Windows)](/visualstudio/ide/reference/resources-for-troubleshooting-integrated-development-environment-errors) (Recursos para solucionar errores de IDE [Visual Studio en Windows])

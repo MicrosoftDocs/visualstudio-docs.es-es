@@ -1,11 +1,11 @@
 ---
-title: Codificación de una regla de validación personalizada para una prueba de rendimiento web en Visual Studio | Microsoft Docs
+title: Codificación de una regla de validación personalizada para una prueba de rendimiento web
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - custom validation rules
 - validation rules, creating
-- Web performance tests, creating custom validation rules
+- web performance tests, creating custom validation rules
 - rules, validation
 - validation rules
 ms.assetid: 989124bc-1a86-41f7-b37d-8f9e54dd4f0b
@@ -15,19 +15,23 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0c2e3eb6d9b0411a078c5d7531105230dfc82457
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 407c6e5b8beec118ce8f25edb35e66722990e8ca
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53047679"
 ---
-# <a name="coding-a-custom-validation-rule-for-a-web-performance-test"></a>Codificación de una regla de validación personalizada para una prueba de rendimiento web
+# <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Codificar una regla de validación personalizada para una prueba de rendimiento web
 
 Puede crear sus propias reglas de validación. Para ello, derive su propia clase de regla de una clase de regla de validación. Las reglas de la validación se derivan de la clase base <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>.
 
 > [!NOTE]
 > También puede crear reglas de extracción personalizadas. Para obtener más información, consulte [Crear código y complementos personalizados para las pruebas de carga](../test/create-custom-code-and-plug-ins-for-load-tests.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-custom-validation-rules"></a>Para crear reglas de validación personalizadas
 
@@ -46,7 +50,7 @@ Puede crear sus propias reglas de validación. Para ello, derive su propia clase
 
 6.  (Opcional) En el Proyecto de prueba, agregue una referencia al proyecto de bibliotecas de clases que contiene la regla de validación personalizada.
 
-7.  En el Proyecto de prueba, abra una prueba de rendimiento web en el **Editor de prueba de rendimiento web**.
+7.  En el Proyecto de prueba, abra una prueba de rendimiento web en el **Editor de pruebas de rendimiento web**.
 
 8.  Para agregar la regla de validación personalizada a una solicitud de prueba de rendimiento web, haga clic con el botón derecho en una solicitud y seleccione **Agregar regla de validación**.
 
@@ -59,7 +63,7 @@ Puede crear sus propias reglas de validación. Para ello, derive su propia clase
 El código siguiente muestra una implementación de una regla de validación personalizada. Esta regla de validación imita el comportamiento de la regla de validación predefinida Etiqueta obligatoria. Utilice este ejemplo como punto de partida para sus propias reglas de validación personalizadas.
 
 > [!WARNING]
->  Las propiedades públicas en el código de un validador personalizado no pueden tener valores nulos.
+> Las propiedades públicas en el código de un validador personalizado no pueden tener valores nulos.
 
 ```csharp
 using System;
@@ -136,11 +140,11 @@ namespace SampleWebTestRules
             {
                 if (numTagsFound > 0)
                 {
-                    e.Message = String.Format("Only found {0} occurences of the tag", numTagsFound);
+                    e.Message = String.Format("Only found {0} occurrences of the tag", numTagsFound);
                 }
                 else
                 {
-                    e.Message = String.Format("Did not find any occurences of tag '{0}'", RequiredTagName);
+                    e.Message = String.Format("Did not find any occurrences of tag '{0}'", RequiredTagName);
                 }
             }
         }
@@ -231,9 +235,9 @@ Namespace SampleWebTestRules
             ' If the validation fails, set the error text that the user sees
             If Not (validated) Then
                 If numTagsFound > 0 Then
-                    e.Message = String.Format("Only found {0} occurences of the tag", numTagsFound)
+                    e.Message = String.Format("Only found {0} occurrences of the tag", numTagsFound)
                 Else
-                    e.Message = String.Format("Did not find any occurences of tag '{0}'", RequiredTagName)
+                    e.Message = String.Format("Did not find any occurrences of tag '{0}'", RequiredTagName)
                 End If
             End If
         End Sub

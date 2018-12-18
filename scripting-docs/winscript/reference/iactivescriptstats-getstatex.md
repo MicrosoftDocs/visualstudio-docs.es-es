@@ -1,11 +1,11 @@
 ---
 title: IActiveScriptStats::GetStatEx | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScriptStats.GetStatEx
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScriptStats::GetStatEx
 ms.assetid: f526f51d-8ab5-49ef-a8f7-ae0ac1cb46e4
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725095"
 ---
 # <a name="iactivescriptstatsgetstatex"></a>IActiveScriptStats::GetStatEx
 Devuelve una estadística de la secuencia de comandos personalizada.  

@@ -1,0 +1,40 @@
+items:
+- name: Documentación de Node.js
+- name: Guías de inicio rápido
+  items:
+  - name: Crear un proyecto de Node.js
+    href: /visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json
+  - name: Crear un proyecto de Vue.js
+    href: quickstart-vuejs-with-nodejs.md
+- name: Tutoriales
+  items:
+  - name: Creación de una aplicación Node.js con Express
+    href: tutorial-nodejs.md
+  - name: Creación de una aplicación Node.js con React
+    href: tutorial-nodejs-with-react-and-jsx.md
+  - name: Publicación en App Service de Linux
+    href: publish-nodejs-app-azure.md
+- name: Guías de procedimientos
+  items:
+  - name: Crear una aplicación Vue.js
+    href: create-application-with-vuejs.md
+  - name: Administrar paquetes de npm
+    href: npm-package-management.md
+  - name: Desarrollar sin proyectos o soluciones ("Abrir carpeta")
+    href: develop-javascript-code-without-solutions-projects.md
+  - name: Pruebas unitarias de código de JavaScript
+    href: unit-testing-javascript-with-visual-studio.md
+  - name: IntelliSense para JavaScript
+    href: /visualstudio/ide/javascript-intellisense?toc=/visualstudio/javascript/toc.json
+- name: Recursos
+  items:
+  - name: Configuración de package.json
+    href: configure-packages-with-package-json.md
+  - name: Página Wiki para Herramientas de Node.js
+    href: https://github.com/Microsoft/nodejstools
+ms.openlocfilehash: 934d7cd68dd61dacb5bd60d06e07aef72c34dd04
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124949"

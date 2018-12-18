@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0b7ac4f7cde93d4637906202f7b4c643750d8e0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e9c1bd0887c8d154501a87ea9a2227e079bbb083
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872764"
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
-Este método obtiene el nombre de la constante de enumeración asigna su valor.  
+Este método obtiene el nombre de la constante de enumeración dada su valor.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -48,7 +49,7 @@ int GetStringFromValue(
  [out] Devuelve el nombre de la constante de enumeración.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` si el valor no tiene asociado un nombre, o devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` si el valor no tiene asociado un nombre, o devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
  Si hay más de un nombre asociado con el mismo valor, se devolverá el nombre definido en la enumeración.  

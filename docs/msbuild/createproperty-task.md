@@ -20,53 +20,55 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 817d888a14d20b4778b28f81811b876c6d97ad61
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c5b281a33856e1db2b45ccade79f7490cfd808ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948829"
 ---
-# <a name="createproperty-task"></a>CreateProperty (Tarea)
+# <a name="createproperty-task"></a>CreateProperty (tarea)
 Rellena las propiedades con los valores pasados. Esto permite que los valores se copien de una propiedad o cadena a otra.  
-  
+
 ## <a name="attributes"></a>Atributos  
  En la siguiente tabla se describen los parámetros de la tarea `CreateProperty` .  
-  
-|Parámetro|Description|  
-|---------------|-----------------|  
-|`Value`|Parámetro de salida `String` opcional.<br /><br /> Especifica el valor que se copiará en la nueva propiedad.|  
-|`ValueSetByTask`|Parámetro de salida `String` opcional.<br /><br /> Contiene el mismo valor que el parámetro `Value`. Use este parámetro únicamente cuando quiera impedir que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] establezca la propiedad de salida cuando omita el destino que lo contiene porque las salidas están actualizadas.|  
-  
+
+
+| Parámetro | Descripción |
+|------------------| - |
+| `Value` | Parámetro de salida `String` opcional.<br /><br /> Especifica el valor que se copiará en la nueva propiedad. |
+| `ValueSetByTask` | Parámetro de salida `String` opcional.<br /><br /> Contiene el mismo valor que el parámetro `Value`. Use este parámetro únicamente cuando quiera impedir que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] establezca la propiedad de salida cuando omita el destino que lo contiene porque las salidas están actualizadas. |
+
 ## <a name="remarks"></a>Comentarios  
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
-  
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).  
+
 ## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se usa la tarea `CreateProperty` para crear la propiedad `NewFile` mediante la combinación de los valores de la propiedad `SourceFilename` y `SourceFileExtension`.  
-  
+
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
+
     <PropertyGroup>  
         <SourceFilename>Module1</SourceFilename>  
         <SourceFileExtension>vb</SourceFileExtension>  
     </PropertyGroup>  
-  
+
     <Target Name="CreateProperties">  
-  
+
         <CreateProperty  
             Value="$(SourceFilename).$(SourceFileExtension)">  
             <Output  
                 TaskParameter="Value"  
                 PropertyName="NewFile" />  
         </CreateProperty>  
-  
+
     </Target>  
-  
+
 </Project>  
 ```  
-  
- Después de ejecutar el proyecto, el valor de la propiedad `NewFile` es `Module1.vb`.  
-  
+
+ Después de ejecutar el proyecto, el valor de la propiedad `NewFile` es *Module1.vb*.  
+
 ## <a name="see-also"></a>Vea también  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
  [Tareas](../msbuild/msbuild-tasks.md)

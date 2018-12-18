@@ -1,7 +1,9 @@
 ---
-title: InvokeDelegate | Documentos de Microsoft
+title: Diseñador de flujo de trabajo - InvokeDelegate
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - InvokeDelegate Designer
 - System.Activities.Statements.InvokeDelegate.UI
@@ -11,31 +13,34 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 93e41d98b156b6314158a1cc99e368092b0cf494
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1e1f91b88d686f3e9a6ddee9573824eb4191e2bf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927936"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
+
 El **InvokeDelegate** diseñador se utiliza para crear y configurar un <xref:System.Activities.Statements.InvokeDelegate> actividad.
 
-## <a name="the-invokedelegate-activity"></a>Actividad InvokeDelegate
- <xref:System.Activities.Statements.InvokeDelegate> llama a un delegado público.
+## <a name="the-invokedelegate-activity"></a>La actividad InvokeDelegate
 
-### <a name="using-the-invokedelegate-activity-designer"></a>Usar el diseñador de actividad InvokeDelegate
- El **InvokeDelegate** Diseñador de actividad puede encontrarse en el **primitivas** categoría de la **cuadro de herramientas**, que se tiene acceso haciendo clic en el **delcuadrodeherramientas** ficha [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (o bien, seleccione **barra de herramientas** desde el **vista** menú o CTRL + ALT + X.)
+<xref:System.Activities.Statements.InvokeDelegate> llama a un delegado público.
 
- El **InvokeDelegate** Diseñador de actividad se puede arrastrar desde el **cuadro de herramientas** y colocarlo en la [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] expuesta donde se coloquen normalmente las actividades, por ejemplo, como en un <xref:System.Activities.Statements.Sequence>. De esta forma, se crea una actividad <xref:System.Activities.Statements.InvokeDelegate> con un valor predeterminado <xref:System.Activities.Activity.DisplayName%2A> de InvokeDelegate. El <xref:System.Activities.Activity.DisplayName%2A> se pueden editar en el encabezado de la **InvokeDelegate** Diseñador de actividad o en la **DisplayName** cuadro de la cuadrícula de propiedades.
+### <a name="use-the-invokedelegate-activity-designer"></a>Utilice el Diseñador de actividad InvokeDelegate
+
+Acceso a la **InvokeDelegate** Diseñador de actividad en el **primitivas** categoría de la **cuadro de herramientas**. El **InvokeDelegate** Diseñador de actividad se puede arrastrar desde el **cuadro de herramientas** y colocar en la superficie del Diseñador de flujo de trabajo, donde cada vez que se coloquen normalmente las actividades, tal como en un <xref:System.Activities.Statements.Sequence>. Al colocar el Diseñador de actividad se crea un <xref:System.Activities.Statements.InvokeDelegate> actividad su valor predeterminado es <xref:System.Activities.Activity.DisplayName%2A> de InvokeDelegate. El <xref:System.Activities.Activity.DisplayName%2A> se pueden editar en el encabezado de la **InvokeDelegate** Diseñador de actividad o en el **DisplayName** cuadro de la cuadrícula de propiedades.
 
 ### <a name="the-invokedelegate-properties"></a>Las propiedades de InvokeDelegate
- En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statements.InvokeDelegate> y se describe cómo se utilizan en el diseñador. Estas propiedades se pueden editar en una cuadrícula de propiedades y algunas de ellas en la superficie del diseñador [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].
+
+En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statements.InvokeDelegate> y se describe cómo se utilizan en el diseñador. Estas propiedades se pueden editar en cuadrícula de propiedades y algunas de ellas en la superficie del Diseñador de flujo de trabajo.
 
 |Nombre de la propiedad|Obligatorio|Uso|
-|-------------------|--------------|-----------|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Nombre descriptivo de la actividad <xref:System.Activities.Statements.InvokeDelegate>. El valor predeterminado es InvokeDelegate.<br /><br /> Aunque el valor de la propiedad <xref:System.Activities.Activity.DisplayName%2A> no sea obligatorio, el procedimiento recomendado es usar uno.|
-|<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|True|El nombre del <xref:System.Activities.ActivityDelegate> que se va a llamar cuando se ejecute la actividad. Esta propiedad se puede editar en la superficie del diseñador. Es una propiedad obligatoria.|
-|<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|La colección de argumentos del delegado llamado. Las claves son los nombres de los objetos de parámetro en el <xref:System.Activities.ActivityDelegate> y los valores son los argumentos cuyas expresiones se evalúan y se asignan a los objetos de parámetro correspondiente. En la cuadrícula de propiedades, haga clic en el botón de puntos suspensivos en el **DelegateArguments** campo, muestra la **DelegateArguments** cuadro de diálogo que le permite establecer esta propiedad. Haga clic en el **crear argumento** campo que desea agregar los argumentos.|
+|-|--------------|-|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Nombre descriptivo de la actividad <xref:System.Activities.Statements.InvokeDelegate>. El valor predeterminado es InvokeDelegate.<br /><br /> Aunque el <xref:System.Activities.Activity.DisplayName%2A> no es estrictamente necesaria, es mejor usar uno.|
+|<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|True|El nombre del <xref:System.Activities.ActivityDelegate> que se va a llamar cuando se ejecute la actividad. Esta propiedad se puede editar en la superficie del diseñador y es obligatoria.|
+|<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|La colección de argumentos del delegado llamado. Las claves son los nombres de los objetos de parámetro en el <xref:System.Activities.ActivityDelegate>, y los valores son los argumentos cuyas expresiones se evalúan y se asignan a los objetos de parámetro correspondiente. Para mostrar el **DelegateArguments** cuadro de diálogo donde puede establecer esta propiedad, haga clic en el botón de puntos suspensivos en el **DelegateArguments** campo de la cuadrícula de propiedades. Haga clic en el **crear argumento** campo para agregar los argumentos.|
 
 ## <a name="see-also"></a>Vea también
 

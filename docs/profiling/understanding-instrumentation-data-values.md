@@ -12,17 +12,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec882cc5797eb99370beac5e28b87ca0b981cf2a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 524f6f575725fed754c3873af8a9ff62a3c3686f
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34477553"
 ---
-# <a name="understanding-instrumentation-data-values"></a>Introducción a los valores de datos de instrumentación
+# <a name="understand-instrumentation-data-values"></a>Introducción a los valores de datos de instrumentación
 
 El método de generación de perfiles *Instrumentación* de Visual Studio registra información de tiempos detallada de llamadas a funciones, líneas y las instrucciones de la aplicación perfilada
 
-El método de instrumentación inserta código al principio y al final de las funciones de destino en el binario del que se generan perfiles, y antes y después de cada llamada realizada por esas funciones a otras funciones. El código insertado registra lo siguiente:
+El método de instrumentación inserta código al principio y al final de las funciones de destino en el binario del que se generan perfiles, y antes y después de cada llamada realizada por esas funciones a otras funciones. El código insertado registra la información siguiente:
 
 - El intervalo entre este evento de recopilación y el anterior.
 
@@ -98,5 +99,5 @@ El porcentaje de los valores de tiempo inclusivo de aplicación total de la sesi
 
 ## <a name="see-also"></a>Vea también
 
-[Analizar datos de herramientas de rendimiento](../profiling/analyzing-performance-tools-data.md)  
-[Cómo: Elegir métodos de recopilación](../profiling/how-to-choose-collection-methods.md)
+[Análisis de datos de herramientas de rendimiento](../profiling/analyzing-performance-tools-data.md)  
+[Elección de métodos de recopilación](../profiling/how-to-choose-collection-methods.md)

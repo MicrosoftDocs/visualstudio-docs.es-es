@@ -1,5 +1,5 @@
 ---
-title: '&lt;descripción&gt; elemento (desarrollo de Office en Visual Studio) | Documentos de Microsoft'
+title: '&lt;descripción&gt; elemento (desarrollo de Office en Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 13755a20b091696bf741c1f25360941e01b65945
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9fcdac1e950d98394b5703322f40dd1823b246f6
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265120"
 ---
 # <a name="ltdescriptiongt-element-office-development-in-visual-studio"></a>&lt;descripción&gt; elemento (desarrollo de Office en Visual Studio)
   El elemento `description` del espacio de nombres `vstov4` almacena la descripción de la solución de Office que aparece en el cuadro de diálogo de complementos COM de aplicaciones de Microsoft Office.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```xml  
 <description>  
 </description>  
 ```  
@@ -38,14 +39,14 @@ ms.lasthandoff: 04/16/2018
   
  El elemento `description` no tiene atributos ni elementos secundarios.  
   
-## <a name="vsto-add-in-example"></a>Ejemplo de complemento de VSTO  
+## <a name="vsto-add-in-example"></a>Ejemplo para complemento de VSTO  
   
-### <a name="description"></a>description  
- En el siguiente ejemplo de código se muestra el elemento `description` en una solución de nivel de aplicación implementada mediante [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
+### <a name="description"></a>Descripción  
+ En el siguiente ejemplo de código se muestra el elemento `description` en una solución de nivel de aplicación implementada mediante [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Código  
   
-```  
+```xml  
 <vstov4:description>  
   ContosoOutlookAddIn - Outlook add-in   
   created with Visual Studio Tools for Office  
@@ -53,7 +54,7 @@ ms.lasthandoff: 04/16/2018
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
+ [Manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md)   
  [Manifiestos de implementación para soluciones de Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [Manifiesto de aplicación ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
   

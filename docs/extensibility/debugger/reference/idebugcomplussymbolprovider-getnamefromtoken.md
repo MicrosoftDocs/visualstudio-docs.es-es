@@ -14,14 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbd4fc3abcee9cc7cdea9c078abfaba0b6df5ba7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8c9fae6967cc9b37938b83f61a10f8a6a85804a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920435"
 ---
 # <a name="idebugcomplussymbolprovidergetnamefromtoken"></a>IDebugComPlusSymbolProvider::GetNameFromToken
-Devuelve el nombre asociado con el token especificado de su objeto de metadatos determinado.  
+Devuelve el nombre asociado con el token especificado, dado su objeto de metadatos.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -46,16 +47,16 @@ int GetNameFromToken (
  [in] Objeto que contiene la información de metadatos.  
   
  `dwToken`  
- [in] Símbolo (token) será el nombre.  
+ [in] Símbolo (token) que el nombre.  
   
  `pbstrName`  
- [out] Nombre que corresponde al token.  
+ [out] Nombre que se corresponde con el token.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone la [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz.  
+ El ejemplo siguiente muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone el [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetNameFromToken(  

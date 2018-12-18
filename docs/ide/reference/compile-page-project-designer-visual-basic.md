@@ -1,10 +1,9 @@
 ---
-title: Página Compilación, Diseñador de proyectos (Visual Basic) | Microsoft Docs
-ms.custom: ''
+title: Página Compilación, Diseñador de proyectos (Visual Basic)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesCompile
 helpviewer_keywords:
@@ -21,37 +20,44 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56efec5b538e2e84862549f6b5c7b7f30d9de75d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d1b5c55c3bc1732d0b394473f25c0b103c917f4
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38808379"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Página Compilación, Diseñador de proyectos (Visual Basic)
-Use la página **Compilación** del Diseñador de proyectos para especificar las instrucciones de compilación. En esta página también puede especificar opciones avanzadas del compilador o eventos anteriores o posteriores a la compilación.  
-  
-Para acceder a la página **Compilación**, seleccione un nodo de proyecto (no el nodo **Solución**) en el **Explorador de soluciones**. Después, pulse **Proyecto**, **Propiedades** en la barra de menús. Cuando se muestre el Diseñador de proyectos, haga clic en la pestaña **Compilar**.  
-  
-[!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
-  
-## <a name="configuration-and-platform"></a>Configuración y plataforma  
- Los valores siguientes le permiten seleccionar la configuración y la plataforma que se mostrarán o modificarán.  
-  
+
+Use la página **Compilación** del Diseñador de proyectos para especificar las instrucciones de compilación. En esta página también puede especificar opciones avanzadas del compilador o eventos anteriores o posteriores a la compilación.
+
+Para acceder a la página **Compilación**, seleccione un nodo de proyecto (no el nodo **Solución**) en el **Explorador de soluciones**. Después, pulse **Proyecto**, **Propiedades** en la barra de menús. Cuando se muestre el Diseñador de proyectos, haga clic en la pestaña **Compilar**.
+
+[!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
+
+## <a name="configuration-and-platform"></a>Configuración y plataforma
+
+Los valores siguientes le permiten seleccionar la configuración y la plataforma que se mostrarán o modificarán.
+
 > [!NOTE]
 > Con las configuraciones de compilación simplificadas, el sistema del proyecto determina si se debe compilar una versión de lanzamiento o depuración. Por tanto, no se muestran las listas **Configuración** y **Plataforma**.
-  
- **Configuración**  
+
+ **Configuración**
+
  Especifica qué opciones de configuración se mostrarán o modificarán. Los valores son **Depurar** (el valor predeterminado), **Versión** o **Todas las configuraciones**. Para más información, vea [Descripción de las configuraciones de compilación](../../ide/understanding-build-configurations.md) y [Cómo: Crear y editar configuraciones](../../ide/how-to-create-and-edit-configurations.md).
-  
- **Plataforma**  
+
+ **Plataforma**
+
  Especifica qué configuración de plataforma se mostrará o modificará. Puede especificar **Cualquier CPU** (el valor predeterminado), **x64** o **x86**.
-  
-## <a name="compiler-configuration-options"></a>Opciones de configuración del compilador  
- Las opciones siguientes permiten establecer las opciones de configuración del compilador.  
-  
- **Ruta de acceso de salida de la compilación**  
+
+## <a name="compiler-configuration-options"></a>Opciones de configuración del compilador
+
+Las opciones siguientes permiten establecer las opciones de configuración del compilador.
+
+ **Ruta de acceso de salida de la compilación**
+
  Especifica la ubicación de los archivos de salida para la configuración de este proyecto. Escriba la ruta de acceso de salida de la compilación en este cuadro, o bien haga clic en el botón **Examinar** para seleccionar una ruta de acceso. Tenga en cuenta que la ruta de acceso es relativa; si especifica una ruta de acceso absoluta, se guardará como relativa. La ruta de acceso predeterminada es bin\Debug\ o bin\Release\\.
-  
+
  Con las configuraciones de compilación simplificadas, el sistema del proyecto determina si se debe compilar una versión de lanzamiento o depuración. El comando **Compilar** del menú **Depuración** (F5) colocará la compilación en la ubicación de depuración independientemente de la **Ruta de acceso de salida** que especifique. En cambio, el comando **Compilar** del menú **Compilar** la coloca en la ubicación que especifique.
   
  **Option Explicit**  
@@ -76,7 +82,7 @@ Especifica si se debe aplicar la semántica estricta de tipos. Cuando **Option S
   
 Los errores de conversión de restricción implícita se producen cuando existe una conversión de tipos de datos implícita que es una conversión de restricción. Para más información, vea [Option Strict (instrucción)](/dotnet/visual-basic/language-reference/statements/option-strict-statement), [Conversiones implícitas y explícitas](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) y [Conversiones de ampliación y de restricción](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions).  
   
-Un objeto se enlaza en tiempo de ejecución cuando se asigna a una propiedad o un método de una variable que se declara como variable de tipo `Object`. Para más información, vea [Option Strict (instrucción)](/dotnet/visual-basic/language-reference/statements/option-strict-statement) y [Enlace en tiempo de compilación y en tiempo de ejecución](/dotnet/visual-basic/programming-guide/language-features/early-late-binding/early-and-late-binding).  
+Un objeto se enlaza en tiempo de ejecución cuando se asigna a una propiedad o un método de una variable que se declara como variable de tipo `Object`. Para más información, vea [Option Strict (instrucción)](/dotnet/visual-basic/language-reference/statements/option-strict-statement) y [Enlace en tiempo de compilación y en tiempo de ejecución](/dotnet/visual-basic/programming-guide/language-features/early-late-binding).
   
 Los errores de tipo de objeto implícito se producen cuando no se puede inferir un tipo adecuado para una variable declarada, por lo que se infiere un tipo de `Object`. Esto se produce principalmente cuando se usa una instrucción `Dim` para declarar una variable sin usar una cláusula `As` y `Option Infer` está desactivado. Para más información, vea [Option Strict (instrucción)](/dotnet/visual-basic/language-reference/statements/option-strict-statement), [Option Infer (instrucción)](/dotnet/visual-basic/language-reference/statements/option-infer-statement) y la [Especificación del lenguaje Visual Basic](/dotnet/visual-basic/reference/language-specification).  
   
@@ -167,8 +173,9 @@ Haga clic en este botón para tener acceso al cuadro de diálogo **Eventos de co
 **Opciones de compilación avanzadas**  
 Haga clic en este botón para tener acceso al cuadro de diálogo **Configuración de compilador avanzada**. Use el cuadro de diálogo **Configuración de compilador avanzada** para especificar las propiedades de configuración de compilación avanzada del proyecto. Este cuadro de diálogo solo se aplica a proyectos de Visual Basic. Para más información, vea [Configuración de compilador avanzada (Cuadro de diálogo, Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).  
 
+
 ## <a name="see-also"></a>Vea también
 
-[Cómo: Especificar eventos de compilación (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)  
-[Compilador de línea de comandos de Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index)  
-[Cómo: Crear y editar configuraciones](../../ide/how-to-create-and-edit-configurations.md)
+- [Cómo: Especificar eventos de compilación (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [Compilador de línea de comandos de Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index)
+- [Cómo: Crear y editar configuraciones](../../ide/how-to-create-and-edit-configurations.md)

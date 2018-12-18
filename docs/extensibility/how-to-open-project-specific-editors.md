@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: abrir editores específica del proyecto | Documentos de Microsoft'
+title: 'Cómo: abrir editores específicos del proyecto | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,35 +15,36 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae2e634d36c13632619d01cc97d5726dc5576819
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 45967d2312a7693130126612c7fd052c54e17ce2
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636680"
 ---
-# <a name="how-to-open-project-specific-editors"></a>Cómo: abrir editores específica del proyecto
-Si un archivo de elemento que se está abriendo un proyecto intrínsecamente está enlazado al editor determinado para ese proyecto, el proyecto debe abrir el archivo con un editor específico del proyecto. El archivo no se puede delegar hasta del mecanismo del IDE para la selección de un editor. Por ejemplo, en lugar de utilizar un editor de mapa de bits estándar, puede usar esta opción de editor específico del proyecto para especificar un editor de mapa de bits específico que reconoce la información en el archivo que es único para el proyecto.  
+# <a name="how-to-open-project-specific-editors"></a>Cómo: abrir editores específicos del proyecto
+Si el editor de ese proyecto concreto intrínsecamente depende de un archivo de elemento que se va a abrir un proyecto, el proyecto debe abrir el archivo con un editor específico del proyecto. El archivo no se puede delegar hasta el mecanismo de IDE para seleccionar un editor. Por ejemplo, en lugar de usar un editor de mapa de bits estándar, puede usar esta opción de editor específica del proyecto para especificar un editor específico del mapa de bits que reconoce la información en el archivo que es único para el proyecto.  
   
- Las llamadas IDE el <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> método cuando determina que se debe abrir un archivo de un proyecto específico. Para obtener más información, consulte [mostrar archivos mediante el comando archivo abrir](../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Utilice las siguientes directrices para implementar la `OpenItem` método para que el proyecto abra un archivo con un editor específico del proyecto.  
+ Las llamadas IDE el <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> método cuando determina que un archivo se debe abrir un proyecto específico. Para obtener más información, consulte [mostrar archivos mediante el comando Abrir archivo](../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Utilice las siguientes directrices para implementar el `OpenItem` método para que el proyecto de abrir un archivo con un editor específico del proyecto.  
   
-### <a name="to-implement-the-openitem-method-with-a-project-specific-editor"></a>Para implementar el método OpenItem con un editor específico del proyecto  
+## <a name="to-implement-the-openitem-method-with-a-project-specific-editor"></a>Para implementar el método OpenItem con un editor específico del proyecto  
   
-1.  Llame a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> (método) (RDT_EditLock) para determinar si el archivo (objeto de datos de documento) ya está abierto.  
+1.  Llame a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> método (`RDT_EditLock`) para determinar si el archivo (objeto de datos de documento) ya está abierto.  
   
     > [!NOTE]
-    >  Para obtener más información sobre datos del documento y los objetos de vista de documento, consulte [datos del documento y vista de documento en editores personalizados](../extensibility/document-data-and-document-view-in-custom-editors.md).  
+    >  Para obtener más información acerca de los datos del documento y los objetos de vista de documento, consulte [vista de datos y el documento en editores personalizados de documento](../extensibility/document-data-and-document-view-in-custom-editors.md).  
   
 2.  Si el archivo ya está abierto, reaparece el archivo mediante una llamada a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> método y especificando un valor de IDO_ActivateIfOpen para el `grfIDO` parámetro.  
   
-     Si el archivo está abierto y el documento pertenece a un proyecto distinto del que realiza la llamada, se mostrará una advertencia al usuario que sea el editor que se está abriendo desde otro proyecto. A continuación, aparece la ventana de archivo.  
+     Si el archivo está abierto y el documento es propiedad de un proyecto distinto del que realiza la llamada, se mostrará una advertencia al usuario que es el editor que se está abriendo desde otro proyecto. A continuación, aparece la ventana de archivo.  
   
-3.  Si el búfer de texto (objeto de datos de documento) ya está abierto y que desea conectar otra vista a ella, es responsabilidad suya enlazar esa vista. El método recomendado para crear instancias de una vista (objeto de vista de documento) desde el proyecto, es como sigue:  
+3.  Si el búfer de texto (objeto de datos de documento) ya está abierto y desea utilizar otra vista, usted es responsable de enlazar esa vista. El método recomendado para crear instancias de una vista (objeto de vista de documento) del proyecto, es como sigue:  
   
-    1.  Llame a `QueryService` en el <xref:Microsoft.VisualStudio.Shell.Interop.SLocalRegistry> servicio para obtener un puntero a la <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2> interfaz.  
+    1.  Llame a `QueryService` en el <xref:Microsoft.VisualStudio.Shell.Interop.SLocalRegistry> service para obtener un puntero a la <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2> interfaz.  
   
     2.  Llame a la <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> método para crear una instancia de la clase de vista de documento.  
   
-4.  Llame a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> método, especificando el objeto de vista de documento.  
+4.  Llame a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> método, especificando el objeto de vista del documento.  
   
      Este método sitios el objeto de vista de documento en una ventana de documento.  
   
@@ -51,9 +52,9 @@ Si un archivo de elemento que se está abriendo un proyecto intrínsecamente est
   
      En este momento, la vista debe ser totalmente inicializado y listo para abrirse.  
   
-6.  Llame a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> método para mostrar y abrir la vista.  
+6.  Llame a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> método para mostrar y abra la vista.  
   
 ## <a name="see-also"></a>Vea también  
  [Abrir y guardar elementos de proyecto](../extensibility/internals/opening-and-saving-project-items.md)   
- [Cómo: abrir editores estándares](../extensibility/how-to-open-standard-editors.md)   
- [Apertura de editores para documentos abiertos](../extensibility/how-to-open-editors-for-open-documents.md)
+ [Cómo: abrir editores estándar](../extensibility/how-to-open-standard-editors.md)   
+ [Cómo: abrir editores para documentos abiertos](../extensibility/how-to-open-editors-for-open-documents.md)

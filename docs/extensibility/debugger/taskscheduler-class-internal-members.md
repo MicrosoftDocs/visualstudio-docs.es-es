@@ -1,5 +1,5 @@
 ---
-title: Clase de objeto TaskScheduler - miembros internos | Documentos de Microsoft
+title: 'TaskScheduler Class: miembros internos | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,24 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18cd3ec809df921d6baefbf8018fefc77db238d3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 97b7531a60f72405d41a5a72c391ba8da91958dc
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276317"
 ---
-# <a name="taskscheduler-class---internal-members"></a>Clase de objeto TaskScheduler - miembros internos
-En este tema se describe los miembros internos de la <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> clase que le ayudarán a implementar un depurador personalizado. Para obtener información general acerca de esta clase, vea el <xref:System.Threading.Tasks.TaskScheduler> tema de referencia.  
+# <a name="taskscheduler-class---internal-members"></a>TaskScheduler Class: miembros internos
+En este artículo se describe los miembros internos de la <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> clase que le ayudarán a implementar un depurador personalizado. Para obtener información general acerca de esta clase, vea el <xref:System.Threading.Tasks.TaskScheduler> artículo de referencia.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Ensamblado:** mscorlib (en mscorlib.dll)  
+ **Ensamblado:** mscorlib (en *mscorlib.dll*)  
   
- Dado que no se puede obtener acceso a estos miembros internos de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio común (CIL).  
+ Dado que no se puede obtener acceso a estos miembros internos de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio en común (CIL).  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```csharp  
 .class public abstract auto ansi beforefieldinit System.Threading.Tasks.TaskScheduler  
        extends System.Object  
 ```  
@@ -49,4 +50,4 @@ En este tema se describe los miembros internos de la <xref:System.Threading.Task
   
 ## <a name="see-also"></a>Vea también  
  <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>   
- [Datos internos de extensiones paralelas para .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+ [Parámetros internos de extensiones paralelas para .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

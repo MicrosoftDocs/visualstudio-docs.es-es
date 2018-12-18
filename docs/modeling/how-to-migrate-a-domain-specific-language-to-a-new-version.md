@@ -7,80 +7,82 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 83f80e9fe0bf68f5d10d8f3b76840b55de025f33
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: f736a8d5b8e09bbb1c5a894e3f0f450de19fd02f
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967030"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Cómo: Migrar lenguajes específicos de dominio a una nueva versión
-Puede migrar proyectos de definen y utilizar los lenguajes específicos de dominio a [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] de la versión de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] que se distribuyó con [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
+Puede migrar los proyectos que definen y usar los lenguajes específicos de dominio a [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] desde la versión de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] que se distribuyó con [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
 
- Una herramienta de migración se proporciona como parte de [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]. La herramienta convierte [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proyectos y soluciones que usan o definen herramientas ADSL.
+ Se proporciona una herramienta de migración como parte de [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]. La herramienta convierte los proyectos de Visual Studio y las soluciones que usan o definen herramientas de DSL.
 
- Debe ejecutar la herramienta de migración de forma explícita: no se inicia automáticamente al abrir una solución en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. La herramienta y el documento de instrucciones detalladas se pueden encontrar en esta ruta de acceso:
+ Debe ejecutar la herramienta de migración de forma explícita: no se inicia automáticamente al abrir una solución en Visual Studio. La herramienta y el documento de orientación detallada pueden encontrarse en esta ruta de acceso:
 
  **% Programa Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
-## <a name="before-you-migrate-your-dsl-projects"></a>Antes de migrar los proyectos de DSL
- La herramienta de migración modifica [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] archivos de proyecto (**.csproj**) y archivos de solución (**.sln**).
+## <a name="before-you-migrate-your-dsl-projects"></a>Antes de migrar los proyectos DSL
+ La herramienta de migración modifica los archivos de proyecto de Visual Studio (**.csproj**) y archivos de solución (**.sln**).
 
-#### <a name="to-prepare-projects-for-migration"></a>Para preparar los proyectos para la migración.
+#### <a name="to-prepare-projects-for-migration"></a>Para preparar los proyectos de migración.
 
--   Asegúrese de que el **.csproj** y **.sln** se pueden escribir archivos. Si ya están bajo control de código fuente, asegúrese de que se desprotegen.
+-   Asegúrese de que el **.csproj** y **.sln** se pueden escribir archivos. Si ya están bajo control de código fuente, asegúrese de que están desprotegidos.
 
--   Realizar una copia de las carpetas que desea migrar.
+-   Realice una copia de las carpetas que se va a migrar.
 
 ## <a name="migrating-a-collection-of-projects"></a>Migrar una colección de proyectos
 
-#### <a name="to-migrate-dsl-projects-and-solutions-to-visual-studio-2010"></a>Para migrar DSL proyectos y soluciones a Visual Studio 2010
+#### <a name="to-migrate-dsl-projects-and-solutions-to-visual-studio-2010"></a>Para migrar DSL proyectos y soluciones de Visual Studio 2010
 
-1.  Inicie la herramienta de migración de DSL.
+1. Inicie la herramienta de migración de DSL.
 
-    -   Puede haga doble clic en la herramienta en el Explorador de Windows (o explorador de archivos) o iniciar la herramienta desde un símbolo del sistema. La herramienta está en esta ubicación:
+   -   Puede haga doble clic en la herramienta en el Explorador de Windows (o explorador de archivos), o iniciar la herramienta desde un símbolo del sistema. La herramienta está en esta ubicación:
 
-         **%ProgramFiles%\Microsoft visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
+        **%ProgramFiles%\Microsoft visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
-2.  Elija la carpeta que contiene las soluciones y proyectos que se va a convertir.
+2. Elija una carpeta que contiene las soluciones y proyectos que se va a convertir.
 
-    -   Escriba la ruta de acceso en el cuadro en la parte superior de la herramienta o haga clic en **examinar**.
+   - Escriba la ruta de acceso en el cuadro en la parte superior de la herramienta o haga clic en **examinar**.
 
-     La herramienta de migración muestra un árbol de proyectos que definen o usar DSL. El árbol incluye todos los proyectos que utiliza el **Microsoft.VisualStudio.Modeling.Sdk** o **TextTemplating** ensamblados.
+     La herramienta de migración muestra un árbol de proyectos que definir o usar lenguajes DSL. El árbol incluye todos los proyectos que utilizan el **Microsoft.VisualStudio.Modeling.Sdk** o **TextTemplating** ensamblados.
 
-3.  Revise el árbol de proyectos y desactive los proyectos que no va a convertir.
+3. Revise el árbol de proyectos y desactive los proyectos que no desea convertir.
 
-    -   Seleccione un proyecto o solución para ver una lista de cambios que harán que la herramienta.
+   -   Seleccione un proyecto o solución para ver una lista de cambios que hará que la herramienta.
 
-        > [!NOTE]
-        >  Las casillas que aparecen junto a los nombres de carpetas no tienen ningún efecto. Debe expandir las carpetas para inspeccionar los proyectos y soluciones.
+       > [!NOTE]
+       >  Las casillas que aparecen junto a los nombres de carpeta no tienen ningún efecto. Debe expandir las carpetas para inspeccionar los proyectos y soluciones.
 
-4.  Convertir los proyectos.
+4. Convertir los proyectos.
 
-    1.  Haga clic en **convertir**.
+   1.  Haga clic en **convertir**.
 
-         Antes de cada archivo de proyecto se convierta, una copia de *proyecto *** .csproj** se guarda como *proyecto ***.vs2008.csproj**
+        Antes de cada archivo de proyecto se convierta, una copia de _proyecto_**.csproj** se guarda como _proyecto_**. vs2008.csproj**
 
-         Una copia de cada *solución *** .sln** se guarda como *solución ***.vs2008.sln**
+        Una copia de cada _solución_**.sln** se guarda como _solución_**. vs2008.sln**
 
-    2.  Investigar cualquier error en conversiones que se notifica.
+   2.  Investigue cualquier error en conversiones que se notifica.
 
-         Errores se notifican en la ventana de texto. Además, la vista de árbol muestra un indicador rojo en cada nodo que no se pudo convertir. Puede hacer clic en el nodo para obtener más información acerca de dicho error.
+        Errores se notifican en la ventana de texto. Además, la vista de árbol muestra un indicador rojo en cada nodo que no se pudo convertir. Puede hacer clic en el nodo para obtener más información sobre ese error.
 
-5.  **Transformar todas las plantillas** en las soluciones que contienen correctamente al convertir proyectos.
+5. **Transformar todas las plantillas** en soluciones que contengan correctamente convierte los proyectos.
 
-    1.  Abra la solución.
+   1.  Abra la solución.
 
-    2.  Haga clic en el **Transformar todas las plantillas** botón en el encabezado del explorador de soluciones.
+   2.  Haga clic en el **Transformar todas las plantillas** botón en el encabezado del explorador de soluciones.
 
-        > [!NOTE]
-        >  Puede realizar este paso innecesario. Para obtener más información, consulte [cómo automatizar Transformar todas las plantillas](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
+       > [!NOTE]
+       >  Puede realizar este paso innecesario. Para obtener más información, consulte [cómo automatizar Transformar todas las plantillas](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
 
-6.  Actualice el código personalizado en los proyectos convertidos.
+6. Actualice el código personalizado en los proyectos convertidos.
 
-    -   Intente compilar los proyectos e investigue los errores.
+   -   Intentar compilar los proyectos e investigue los errores.
 
-    -   Probar el diseñador.
+   -   Pruebe su diseñador.
 
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

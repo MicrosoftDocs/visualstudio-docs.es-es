@@ -18,27 +18,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c53dcbec5d41b6aa93eef115bba966076fcfda2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fbacad455f6663eae13aea42d0424091a0e3ec6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920942"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Cómo: Asociar y desasociar las herramientas de rendimiento de los procesos en ejecución
 El generador de perfiles puede utilizarse para asociar o desasociar un proceso en ejecución a fin de facilitar el muestreo y la recolección de los datos de rendimiento. Puede utilizar este método para generar perfiles de un proceso cuando quiera evitar que se recopilen datos sobre el tiempo de carga de la aplicación o supervisar el rendimiento de un proceso después de que alcance un estado determinado.  
   
 > [!NOTE]
->  Los pasos siguientes se aplican a asociar y desasociar procesos desde el entorno de desarrollo integrado (IDE) de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Para obtener información sobre cómo utilizar las herramientas de la línea de comandos, consulte [Generación de perfiles desde la línea de comandos](../profiling/using-the-profiling-tools-from-the-command-line.md). Para obtener información sobre cómo generar perfiles para servicios, consulte [Generar perfiles para servicios](../profiling/command-line-profiling-of-services.md).  
+>  Los pasos siguientes se aplican a asociar y desasociar procesos desde el entorno de desarrollo integrado (IDE) de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Para obtener información sobre cómo utilizar las herramientas de la línea de comandos, vea [Generación de perfiles desde la línea de comandos](../profiling/using-the-profiling-tools-from-the-command-line.md). Para obtener información sobre cómo generar perfiles para servicios, vea [Generar perfiles para servicios](../profiling/command-line-profiling-of-services.md).  
   
  Los procesos que están disponibles para generar perfiles dependen de los permisos de acceso de usuario establecidos por un administrador del equipo. Por ejemplo, una cuenta de usuario puede tener permiso para cualquiera de las siguientes acciones:  
   
--   Características avanzadas de generación de perfiles, cuando el administrador ha configurado el controlador y el servicio para que se inicien.  
+- Características avanzadas de generación de perfiles, cuando el administrador ha configurado el controlador y el servicio para que se inicien.  
   
--   Solo para la generación de perfiles de ejemplo (usuarios de dominio).  
+- Solo para la generación de perfiles de ejemplo (usuarios de dominio).  
   
--   Denegar el acceso a la generación de perfiles a todo el mundo.  
+- Denegar el acceso a la generación de perfiles a todo el mundo.  
   
- Para obtener más información, consulte [Generación de perfiles y seguridad de Windows Vista](../profiling/profiling-and-windows-vista-security.md) y las opciones de administración de [VSPerfCmd](../profiling/vsperfcmd.md).  
+  Para obtener más información, vea [Generación de perfiles y seguridad de Windows Vista](../profiling/profiling-and-windows-vista-security.md) y las opciones de administración de [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-attach-to-a-running-process"></a>Para asociar a un proceso en ejecución  
   
@@ -62,7 +63,7 @@ El generador de perfiles puede utilizarse para asociar o desasociar un proceso e
   
 ## <a name="see-also"></a>Vea también  
  [Controlar la recopilación de datos](../profiling/controlling-data-collection.md)   
- [Información general sobre la sesión de rendimiento](../profiling/performance-session-overview.md)   
+ [Información general sobre las sesiones de rendimiento](../profiling/performance-session-overview.md)   
  [Cómo: Iniciar y finalizar la recopilación de datos de rendimiento](../profiling/how-to-start-and-end-performance-data-collection.md)   
- [Generación de perfiles y seguridad de Windows Vista](../profiling/profiling-and-windows-vista-security.md)   
+ [Generación de perfiles y seguridad en Windows Vista](../profiling/profiling-and-windows-vista-security.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)

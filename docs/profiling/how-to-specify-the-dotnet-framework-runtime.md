@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c52cecb30bdaa4daab46c7359e255d52d71d1597
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e85e1c571ecb900d5ce7ffdecf8e85b8c367de5c
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844139"
 ---
 # <a name="how-to-specify-the-net-framework-runtime"></a>Cómo: Especificar runtime de .NET Framework
 
@@ -37,9 +38,9 @@ Con el lanzamiento de [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_l
 
 ## <a name="to-specify-the-net-framework-run-time-to-profile-when-attaching-the-profiler-to-an-application"></a>Para especificar el runtime de .NET Framework del que generar perfiles al adjuntar el generador de perfiles a una aplicación
 
-1. En el menú Analizar, seleccione Generador de perfiles y después haga clic en Asociar/desasociar.
+1. En el menú **Analizar**, seleccione **Generador de perfiles** y después haga clic en **Asociar/desasociar**.
 
-2. En el cuadro de diálogo Adjuntar generador de perfiles al proceso, haga clic en el proceso del que desea generar perfiles.
+2. En el cuadro de diálogo **Asociar generador de perfiles al proceso**, haga clic en el proceso del que quiere generar perfiles.
 
      El cuadro de lista **Versión de CLR de destino** muestra **Automático** y las versiones del runtime de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] que están instaladas en el equipo.
 

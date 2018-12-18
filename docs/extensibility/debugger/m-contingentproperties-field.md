@@ -1,5 +1,5 @@
 ---
-title: m_contingentProperties campo | Documentos de Microsoft
+title: m_contingentproperties (campo) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,24 +13,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c7635bab0e627a0f1b51000d37f60f861440934
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 50676f799367c8a2aece7daacb270d8bb31738e9
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232820"
 ---
 # <a name="mcontingentproperties-field"></a>m_contingentProperties campo
-Almacena propiedades adicionales de la <xref:System.Threading.Tasks.Task> objeto.  
+Almacena las propiedades adicionales de la <xref:System.Threading.Tasks.Task> objeto.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Ensamblado:** mscorlib (en mscorlib.dll)  
+ **Ensamblado:** mscorlib (en *mscorlib.dll*)  
   
- Dado que no se puede obtener acceso a este miembro interno de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio común (CIL).  
+ Dado que no se puede obtener acceso a este miembro interno de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio en común (CIL).  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```csharp  
 .field assembly class System.Threading.Tasks.Task/ContingentProperties modreq(System.Runtime.CompilerServices.IsVolatile) m_contingentProperties  
 ```  
   

@@ -1,5 +1,5 @@
 ---
-title: Función SccCheckout | Documentos de Microsoft
+title: SccCheckout (función) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 671e4ecebb44f0910eba3bb835a6da6f9a7f3903
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1ba80df71dce70ad4a6a0953d37f8f87bd487e12
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908527"
 ---
 # <a name="scccheckout-function"></a>SccCheckout (función)
-Proporciona una lista de nombres de archivo completo, esta función desprotege ellos en la unidad local. El comentario se aplica a todos los archivos que se desprotegen. El argumento de comentario puede ser un `null` cadena.  
+Dada una lista de nombres de archivo completo, esta función desprotege ellos en la unidad local. El comentario se aplica a todos los archivos que se va a desproteger. El argumento comentario puede ser un `null` cadena.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,43 +39,43 @@ SCCRTN SccCheckout (
 );  
 ```  
   
-#### <a name="parameters"></a>Parámetros  
+### <a name="parameters"></a>Parámetros  
  pvContext  
- [in] La estructura de contexto de complemento de control de código fuente.  
+ [in] La estructura de contexto de complemento de control de origen.  
   
  hWnd  
- [in] Identificador de la ventana del IDE que puede usar el complemento de control de código fuente como elemento primario para los cuadros de diálogo que proporciona.  
+ [in] Identificador de la ventana del IDE que puede usar el complemento de control de código fuente como un elemento primario para los cuadros de diálogo que proporciona.  
   
- nFiles  
- [in] Número de archivos seleccionados estén desprotegidos.  
+ n  
+ [in] Número de archivos seleccionados que se desprotegerán.  
   
  lpFileNames  
  [in] Matriz de nombres de ruta de acceso local completa de archivos que se va a desproteger.  
   
  lpComment  
- [in] Comentario que se aplicará a cada uno de los archivos seleccionados que se está desprotegidos.  
+ [in] Comentario que se aplicará a cada uno de los archivos seleccionados que se va a desproteger.  
   
- fOptions  
- [in] Indicadores de comandos (vea [marcadores de bits utilizado por determinados comandos](../extensibility/bitflags-used-by-specific-commands.md)).  
+ Opciones  
+ [in] Indicadores de comandos (consulte [marcadores de bits utilizados por comandos específicos](../extensibility/bitflags-used-by-specific-commands.md)).  
   
  pvOptions  
- [in] Opciones de específicas del complemento de control de origen.  
+ [in] Opciones de específicas del complemento de control de código fuente.  
   
 ## <a name="return-value"></a>Valor devuelto  
- La implementación de complemento de control de origen de esta función debe devolver uno de los siguientes valores:  
+ La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |SCC_OK|Desprotección fue correcta.|  
 |SCC_E_FILENOTCONTROLLED|El archivo seleccionado no está bajo control de código fuente.|  
-|SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso al sistema de control de código fuente, probablemente debido a problemas de red o de contención. Se recomienda un reintento.|  
+|SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso el sistema de control de código fuente, probablemente debido a problemas de red o de contención. Se recomienda un reintento.|  
 |SCC_E_NOTAUTHORIZED|El usuario no puede realizar esta operación.|  
-|SCC_E_NONSPECIFICERROR|Error no determinado. El archivo no se ha desprotegido.|  
-|SCC_E_ALREADYCHECKEDOUT|El usuario ya tiene desprotegido el archivo.|  
-|SCC_E_FILEISLOCKED|El archivo está bloqueado, se prohíben la creación de nuevas versiones.|  
-|SCC_E_FILEOUTEXCLUSIVE|Otro usuario ha realizado una desprotección exclusiva en este archivo.|  
-|SCC_I_OPERATIONCANCELED|Se canceló la operación antes de la finalización.|  
+|SCC_E_NONSPECIFICERROR|Error no específico. El archivo no se ha desprotegido.|  
+|SCC_E_ALREADYCHECKEDOUT|El usuario ya tiene el archivo desprotegido.|  
+|SCC_E_FILEISLOCKED|El archivo está bloqueado, lo que prohíbe la creación de nuevas versiones.|  
+|SCC_E_FILEOUTEXCLUSIVE|Otro usuario ha hecho una desprotección exclusiva en este archivo.|  
+|SCC_I_OPERATIONCANCELED|La operación se canceló antes de completarse.|  
   
 ## <a name="see-also"></a>Vea también  
- [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
+ [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
  [Marcadores de bits utilizados por comandos específicos](../extensibility/bitflags-used-by-specific-commands.md)

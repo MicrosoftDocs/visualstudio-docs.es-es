@@ -14,18 +14,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bea8f3bfa5f37aa88c50a831e26713f78d2a9d4a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 70e413267623d4e9bb4b8d4c1f46fd9c6ecf7808
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237957"
 ---
-# <a name="markerserieswritemessage-method"></a>marker_series::write_message (Método)
+# <a name="markerserieswritemessage-method"></a>Método marker_series::write_message
 Escribe un mensaje en el archivo de seguimiento del visualizador de simultaneidad.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp  
 void write_message(  
    _In_ LPCTSTR _Format,  
    ...  
@@ -59,9 +60,9 @@ void write_message(
  Nivel de Category.Importance.  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** cvmarkersobj.h  
+ **Encabezado:** *cvmarkersobj.h*  
   
  **Espacio de nombres:** Concurrency::diagnostic  
   
 ## <a name="see-also"></a>Vea también  
- [Clase marker_series](../profiling/marker-series-class.md)
+ [clase marker_series](../profiling/marker-series-class.md)

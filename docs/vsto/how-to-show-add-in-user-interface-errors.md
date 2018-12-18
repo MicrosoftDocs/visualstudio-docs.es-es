@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Mostrar errores de interfaz de usuario | Documentos de Microsoft'
+title: 'Cómo: agregar en Mostrar errores de interfaz de usuario'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,18 +18,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 795578d6a168dff5fee259a90abac83fa7788121
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd6da0c83d0dee835169a0a8068af8d75facbbd4
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674762"
 ---
-# <a name="how-to-show-add-in-user-interface-errors"></a>Cómo: Mostrar errores de la interfaz de usuario
-  De forma predeterminada, si un complemento de VSTO intenta manipular la interfaz de usuario (IU) de Microsoft Office y no lo consigue, no se muestra ningún mensaje de error. Sin embargo, puede configurar las aplicaciones de Microsoft Office para mostrar los mensajes de errores relacionados con la interfaz de usuario. Puede usar estos mensajes para ayudar a determinar por qué no aparece una cinta personalizada, o por qué aparece una cinta pero ningún control.  
+# <a name="how-to-show-add-in-user-interface-errors"></a>Cómo: agregar en Mostrar errores de interfaz de usuario
+  De forma predeterminada, si un complemento VSTO intenta manipular la interfaz de usuario (UI) de Microsoft Office y se produce un error, no se muestra ningún mensaje de error. Sin embargo, puede configurar las aplicaciones de Microsoft Office para mostrar los mensajes de errores relacionados con la interfaz de usuario. Puede utilizar estos mensajes para ayudar a determinar por qué no aparece una cinta personalizada, o por qué aparece una cinta pero ningún control.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-### <a name="to-show-vsto-add-in-user-interface-errors"></a>Cómo mostrar errores de la interfaz de usuario  
+## <a name="to-show-vsto-add-in-user-interface-errors"></a>Cómo mostrar errores de la interfaz de usuario  
   
 1.  Inicie la aplicación.  
   
@@ -48,6 +49,6 @@ ms.lasthandoff: 04/16/2018
  [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md)   
  [Crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md)   
  [Información general de la cinta de opciones](../vsto/ribbon-overview.md)   
- [Información general sobre paneles de acciones](../vsto/actions-pane-overview.md)  
+ [Información general sobre el panel de acciones](../vsto/actions-pane-overview.md)  
   
   

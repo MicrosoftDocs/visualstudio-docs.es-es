@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1dfee6c4b05325b170efea314ccbc814b0ebc56
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4987074e63f26a91d890066b3b74240989745197
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49947958"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
 Este método obtiene el idioma que se usa para compilar el código en la dirección de depuración.  
@@ -44,16 +45,16 @@ int GetLanguage(
   
 #### <a name="parameters"></a>Parámetros  
  `pAddress`  
- [in] Un objeto de dirección representadas por una [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaz.  
+ [in] Un objeto de la dirección representada por un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaz.  
   
  `pguidLanguage`  
- [out] Devuelve un `GUID` que especifica el idioma.  
+ [out] Devuelve un `GUID` que especifica el lenguaje.  
   
  `pguidLanguageVendor`  
  [out] Devuelve un `GUID` que especifica el proveedor de lenguaje.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
  El motor de depuración llama a este método para obtener la información que necesita seleccionar el evaluador de expresiones correcto.  

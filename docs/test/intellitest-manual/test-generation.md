@@ -1,6 +1,7 @@
 ---
-title: Generación de pruebas | Herramientas de prueba para desarrolladores de Microsoft IntelliTest | Microsoft Docs
+title: Generación de pruebas | Herramientas de prueba para desarrolladores de Microsoft IntelliTest
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +11,24 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 259ff0818cebde6d7c603428c6cdb88cd51ca293
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 20bacca2343cb2689ed52096c1a9b0d9c3d74703
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295870"
 ---
 # <a name="test-generation"></a>Generación de pruebas
 
-En las pruebas unitarias tradicionales, se necesitan varios ingredientes para crear una prueba:
+En las pruebas unitarias tradicionales, una prueba consta de varios elementos:
 
-```
+* Una [secuencia de llamadas a métodos](test-generation.md#test-generators).
+* Los argumentos con los que se llaman a los métodos; los argumentos son las [entradas de prueba](input-generation.md).
+* La validación del comportamiento previsto de la aplicación probada indicando un conjunto de [aserciones](#assumptions-and-assertions).
+
+A continuación se muestra una estructura de prueba de ejemplo:
+
+```csharp
 [Test]
 void MyTest() {
     // data
@@ -34,12 +42,6 @@ void MyTest() {
     Assert.AreEqual(a[0], 5);
 }
 ```
-
-La prueba consta de diferentes aspectos:
-
-* Corrige una [secuencia de llamadas al método](test-generation.md#test-generators)
-* Corrige los argumentos con los que se llaman a los métodos; los argumentos son las [entradas de prueba](input-generation.md)
-* Valida el comportamiento previsto de la aplicación probada indicando un conjunto de [aserciones](#assumptions-and-assertions)
 
 A menudo, IntelliTest puede determinar automáticamente valores de argumento relevantes para [pruebas unitarias parametrizadas](#parameterized-unit-testing) más generales, que proporcionan la secuencia de llamadas al método y aserciones.
 
@@ -59,7 +61,7 @@ Las *Pruebas unitarias parametrizadas* (PUT) son pruebas que toman parámetros. 
 
 Las PUT se definen con el atributo personalizado [PexMethod](attribute-glossary.md#pexmethod) de una manera similar a MSTest (o NUnit, xUnit). Las PUT son métodos de instancia agrupados de manera lógica en clases etiquetadas con [PexClass](attribute-glossary.md#pexclass). En el ejemplo siguiente se muestra una PUT sencilla almacenada en la clase **MyPexTest**:
 
-```
+```csharp
 [PexMethod]
 void ReplaceFirstChar(string target, char c) {
 
@@ -71,7 +73,7 @@ void ReplaceFirstChar(string target, char c) {
 
 donde **ReplaceFirstChar** es un método que reemplaza el primer carácter de una cadena:
 
-```
+```csharp
 class StringHelper {
     static string ReplaceFirstChar(string target, char c) {
         if (target == null) throw new ArgumentNullException();
@@ -83,7 +85,7 @@ class StringHelper {
 
 Desde esta prueba, IntelliTest puede [generar entradas](input-generation.md) automáticamente para una PUT que cubre muchas rutas de ejecución del código probado. Cada entrada que cubre una ruta de ejecución diferente se "serializa" como una prueba unitaria:
 
-```
+```csharp
 [TestMethod, ExpectedException(typeof(ArgumentNullException))]
 void ReplaceFirstChar0() {
     this.ReplaceFirstChar(null, 0);
@@ -100,7 +102,7 @@ void ReplaceFirstChar10() {
 
 Las pruebas unitarias parametrizadas pueden ser métodos genéricos. En este caso, el usuario debe especificar los tipos que se han usado para crear una instancia del método mediante [PexGenericArguments](attribute-glossary.md#pexgenericarguments).
 
-```
+```csharp
 [PexClass]
 public partial class ListTest {
     [PexMethod]
@@ -118,7 +120,7 @@ IntelliTest proporciona numerosos atributos de validación para ayudar a las exc
 
 Las excepciones esperadas generan casos de prueba negativos con la anotación adecuada como **ExpectedException(typeof(*xxx*))**, mientras que las excepciones inesperadas generan casos de prueba con errores.
 
-```
+```csharp
 [PexMethod, PexAllowedException(typeof(ArgumentNullException))]
 void SomeTest() {...}
 ```
@@ -135,7 +137,7 @@ Los validadores son:
 
 IntelliTest puede "probar" tipos internos, siempre que pueda verlos. Para que IntelliTest vea los tipos, se agrega el siguiente atributo a su proyecto de prueba o producto mediante los asistentes de IntelliTest de Visual Studio:
 
-```
+```csharp
 [assembly: InternalsVisibleTo("Microsoft.Pex, PublicKey=002400000480000094000000060200000024000052534131000400000100010007d1fa57c4aed9f0a32e84aa0faefd0de9e8fd6aec8f87fb03766c834c99921eb23be79ad9d5dcc1dd9ad236132102900b723cf980957fc4e177108fc607774f29e8320e92ea05ece4e821c0a5efe8f1645c4c0c93c1ab99285d622caa652c1dfad63d745d6f2de5f17e5eaf0fc4963d261c8a12436518206dc093344d5ad293
 ```
 
@@ -146,7 +148,7 @@ Los usuarios pueden usar hipótesis y aserciones para expresar [condiciones prev
 
 Las aserciones son un concepto muy conocido en los marcos de pruebas unitarias habituales, por lo que IntelliTest ya "entiende" las clases **Assert** integradas proporcionadas por cada marco de prueba admitido. En cambio, la mayoría de los marcos no proporcionan una clase **Assume**. En ese caso, IntelliTest proporciona la clase [PexAssume](static-helper-classes.md#pexassume). Si no quiere usar un marco de pruebas existente, IntelliTest también tiene la clase [PexAssert](static-helper-classes.md#pexassert).
 
-```
+```csharp
 [PexMethod]
 public void Test1(object o) {
     // precondition: o should not be null
@@ -158,7 +160,7 @@ public void Test1(object o) {
 
 En concreto, la hipótesis no NULL puede codificarse como un atributo personalizado:
 
-```
+```csharp
 [PexMethod]
 public void Test2([PexAssumeNotNull] object o)
 // precondition: o should not be null
@@ -204,7 +206,7 @@ Como parte de la integración con marcos de prueba, IntelliTest admite la detecc
 
 **Ejemplo**
 
-```
+```csharp
 using Microsoft.Pex.Framework;
 using NUnit.Framework;
 
@@ -232,15 +234,14 @@ namespace MyTests
         }
     }
 }
-
 ```
 
 <a name="further-reading"></a>
 ## <a name="further-reading"></a>Información adicional
 
-* [Prueba para los enlaces de código](https://blogs.msdn.microsoft.com/visualstudioalm/2015/04/18/smart-unit-tests-test-to-code-binding-test-case-management/)
-* [Una prueba para controlarlo todo](https://blogs.msdn.microsoft.com/visualstudioalm/2015/07/05/intellitest-one-test-to-rule-them-all/)
+* [Prueba para los enlaces de código](https://blogs.msdn.microsoft.com/devops/2015/04/18/smart-unit-tests-test-to-code-binding-test-case-management/)
+* [Una prueba para controlarlo todo](https://blogs.msdn.microsoft.com/devops/2015/07/05/intellitest-one-test-to-rule-them-all/)
 
 ## <a name="got-feedback"></a>¿Tiene comentarios?
 
-Publique sus ideas y solicitudes de características en **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+Publique sus ideas y solicitudes de características en [Comunidad de desarrolladores](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

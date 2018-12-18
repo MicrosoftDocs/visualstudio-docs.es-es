@@ -16,18 +16,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ff675a7940f5fda61fcf1836a4023ffb8f586b3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1555703c92695090a3c8ac7b04e7a35dadcd7627
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749205"
 ---
-# <a name="cvisenabled-function"></a>CvIsEnabled (Función)
+# <a name="cvisenabled-function"></a>Función CvIsEnabled
 Determina si alguna sesión ha habilitado el proveedor ETW especificado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```C  
 HRESULT CvIsEnabled(  
    _In_ PCV_PROVIDER pProvider  
 );  
@@ -52,7 +53,7 @@ HRESULT CvIsEnabledEx(
  S_OK si el proveedor está habilitado actualmente. S_FALSE si el proveedor está deshabilitado actualmente. Código de error en caso de que se hayan producido errores. Utilice la macro FAILED para comprobar si hay alguna condición de error y, a continuación, comprobar S_OK y S_FALSE.  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** cvmarkers.h  
+ **Encabezado:** *cvmarkers.h*  
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)

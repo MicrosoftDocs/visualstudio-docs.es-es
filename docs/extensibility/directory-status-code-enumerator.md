@@ -1,5 +1,5 @@
 ---
-title: Enumerador de código de estado de directorio | Documentos de Microsoft
+title: Enumerador de código de estado de directorio | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,14 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 539dc4c2ea7b33ce88465f1d8f6651dc890c8e45
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a4ffdef238aaa628d0b72bcc945cf3dc1754fd8b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833972"
 ---
 # <a name="directory-status-code-enumerator"></a>Enumerador de código de estado de directorio
-El `SccDirStatus` enumerador contiene valores constantes con nombre que especifican el estado de un directorio en el sistema de control de código fuente. Esta enumeración se usa en la [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). Esto se introdujo en la versión 1.2 de la API de complemento de Control de origen.  
+El `SccDirStatus` enumerador contiene valores constantes con nombre que especifican el estado de un directorio en el sistema de control de código fuente. Esta enumeración se utiliza en el [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). Esto se introdujo en la versión 1.2 de la API de complemento de Control de código fuente.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -48,5 +49,5 @@ enum SccDirStatus {
  Proyecto correspondiente a este directorio está vacío.  
   
 ## <a name="see-also"></a>Vea también  
- [Complementos de Control de código fuente](../extensibility/source-control-plug-ins.md)   
+ [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)   
  [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)

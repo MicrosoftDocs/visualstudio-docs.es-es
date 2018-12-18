@@ -1,5 +1,5 @@
 ---
-title: Función SccCreateSubProject | Documentos de Microsoft
+title: SccCreateSubProject (función) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa87be4c9d22aca46814e8fa284fda9d587386a7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3aef071d0c124878adf58d8346ad0b50f741300b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931355"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject (función)
 Esta función crea un subproyecto con el nombre especificado en un proyecto existente de elemento primario especificado por el `lpParentProjPath` argumento.  
@@ -38,15 +39,15 @@ SCCRTN SccCreateSubProject(
 );  
 ```  
   
-#### <a name="parameters"></a>Parámetros  
+### <a name="parameters"></a>Parámetros  
  pContext  
  [in] El puntero de contexto de complemento de control de código fuente.  
   
  hWnd  
- [in] Identificador de la ventana del IDE que puede usar el complemento de control de código fuente como elemento primario para los cuadros de diálogo que proporciona.  
+ [in] Identificador de la ventana del IDE que puede usar el complemento de control de código fuente como un elemento primario para los cuadros de diálogo que proporciona.  
   
  lpUser  
- [entrada, salida] El nombre de usuario (hasta SCC_USER_SIZE, incluido el terminador NULL).  
+ [in, out] El nombre de usuario (hasta SCC_USER_SIZE, incluido el terminador NULL).  
   
  lpParentProjPath  
  [in] Cadena que identifica la ruta de acceso del proyecto principal (hasta SCC_PRJPATH_SIZE, incluido el terminador NULL).  
@@ -55,45 +56,45 @@ SCCRTN SccCreateSubProject(
  [in] El nombre sugerido subproyecto (hasta SCC_PRJPATH_SIZE, incluido el terminador NULL).  
   
  lpAuxProjPath  
- [entrada, salida] Cadena auxiliar que identifica el proyecto (hasta SCC_PRJPATH_SIZE, incluido el terminador NULL).  
+ [in, out] Cadena auxiliar que identifica el proyecto (hasta SCC_PRJPATH_SIZE, incluido el terminador NULL).  
   
  lpSubProjPath  
- [entrada, salida] Cadena de salida que identifica la ruta de acceso para el subproyecto (hasta SCC_PRJPATH_SIZE, incluido el terminador NULL).  
+ [in, out] Cadena de salida que identifica la ruta de acceso para el subproyecto (hasta SCC_PRJPATH_SIZE, incluido el terminador NULL).  
   
 ## <a name="return-value"></a>Valor devuelto  
- La implementación de complemento de control de origen de esta función debe devolver uno de los siguientes valores:  
+ La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |SCC_OK|Subproyecto se creó correctamente.|  
 |SCC_E_INITIALIZEFAILED|No se pudo inicializar el proyecto principal.|  
-|SCC_E_INVALIDUSER|El usuario no pudo iniciar sesión el sistema de control de código fuente.|  
+|SCC_E_INVALIDUSER|El usuario no ha podido iniciar sesión el sistema de control de origen.|  
 |SCC_E_COULDNOTCREATEPROJECT|No se puede crear el subproyecto.|  
-|SCC_E_PROJSYNTAXERR|Sintaxis de proyecto no válida.|  
+|SCC_E_PROJSYNTAXERR|Sintaxis de proyecto no válido.|  
 |SCC_E_UNKNOWNPROJECT|El proyecto principal es desconocido para el complemento de control de código fuente.|  
 |SCC_E_INVALIDFILEPATH|Ruta de acceso de archivo no válido o no utilizable.|  
 |SCC_E_NOTAUTHORIZED|El usuario no puede realizar esta operación.|  
-|SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso al sistema de control de código fuente, probablemente debido a problemas de red o de contención. Se recomienda un reintento.|  
-|SCC_E_CONNECTIONFAILURE|Hubo un problema de conexión de complemento de control de código fuente.|  
-|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Error no determinado.|  
+|SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso el sistema de control de código fuente, probablemente debido a problemas de red o de contención. Se recomienda un reintento.|  
+|SCC_E_CONNECTIONFAILURE|Hubo un problema de conexión de complemento de control de origen.|  
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Error no específico.|  
   
 ## <a name="remarks"></a>Comentarios  
- Si ya existe un subproyecto con el nombre, la función puede cambiar el nombre predeterminado para crear un único, por ejemplo agregando "_\<número >" a él. El llamador debe estar preparado para aceptar los cambios en `lpUser`, `lpSubProjPath`, y `lpAuxProjPath`. El `lpSubProjPath` y`lpAuxProjPath` , a continuación, se usan argumentos en una llamada a la [SccOpenProject](../extensibility/sccopenproject-function.md). No se debe modificar el autor de llamada cuando se devuelve. Estas cadenas proporcionan una manera para el complemento para realizar el seguimiento de información que necesita para asociar a un proyecto de control de código fuente. El llamador IDE no mostrará estos dos parámetros al volver, dado que el complemento puede utilizar una cadena con formato que podría no ser adecuada para su visualización. La función devuelve un código de éxito o error y, si es correcto, rellena la variable `lpSubProjPath` con la ruta de acceso completa del proyecto para el nuevo proyecto.  
+ Si ya existe un subproyecto con el nombre, la función puede cambiar el nombre predeterminado para crear un único, por ejemplo mediante la adición de "_\<número >" a él. El llamador debe estar preparado para aceptar los cambios `lpUser`, `lpSubProjPath`, y `lpAuxProjPath`. El `lpSubProjPath` y`lpAuxProjPath` , a continuación, se usan argumentos en una llamada a la [SccOpenProject](../extensibility/sccopenproject-function.md). No debe modificar el llamador cuando se devuelve. Estas cadenas proporcionan una manera para el control de código fuente para realizar el seguimiento de la información que necesita para asociar a un proyecto de complemento. El llamador IDE no mostrará estos dos parámetros al regresar, porque el complemento puede utilizar una cadena con formato que podría no ser adecuada para su visualización. La función devuelve un código de éxito o error y, si es correcto, rellena la variable `lpSubProjPath` con la ruta de acceso completa del proyecto al nuevo proyecto.  
   
- Esta función es similar a la [SccGetProjPath](../extensibility/sccgetprojpath-function.md), excepto en que automáticamente crea un proyecto, en lugar de solicitar al usuario seleccionar uno. Cuando el `SccCreateSubProject` se llama a función `lpParentProjName` y `lpAuxProjPath` no estarán vacíos y se corresponderá con un proyecto válido. Estas cadenas se reciben normalmente por el IDE de una llamada anterior a la `SccGetProjPath` función o la [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md).  
+ Esta función es similar a la [SccGetProjPath](../extensibility/sccgetprojpath-function.md), excepto en que crea en modo silencioso un proyecto, en lugar de solicitar al usuario seleccionar uno. Cuando el `SccCreateSubProject` se llama a la función, `lpParentProjName` y `lpAuxProjPath` no estará vacía y se corresponderá con un proyecto válido. Estas cadenas se reciben normalmente por el IDE desde una llamada anterior a la `SccGetProjPath` función o el [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md).  
   
- El `lpUser` argumento es el nombre de usuario. El IDE se pasará en el mismo nombre de usuario que anteriormente recibía desde `SccGetProjPath`, y el complemento de control de origen debe usar el nombre de forma predeterminada. Si el usuario ya tiene una conexión abierta con el complemento, a continuación, el complemento debe intentar eliminar los mensajes para asegurarse de que la función funciona en modo silencioso. Sin embargo, si se produce un error en el inicio de sesión, el complemento debe preguntar al usuario para un inicio de sesión y, cuando recibe un inicio de sesión válido, pase el nombre nuevo en `lpUser`. Dado que el complemento puede cambiar esta cadena, el IDE siempre asignará un búfer de tamaño (SCC_USER_LEN + 1 ó SCC_USER_SIZE, que incluye espacio para el terminador nulo). Si se cambia la cadena, la nueva cadena debe ser un nombre de inicio de sesión válido (al menos tan válido como la cadena anterior).  
+ El `lpUser` argumento es el nombre de usuario. El IDE se pasará en el mismo nombre de usuario que anteriormente recibía de `SccGetProjPath`, y el complemento de control de origen debe usar el nombre de forma predeterminada. Si el usuario ya tiene una conexión abierta con el complemento, a continuación, el complemento debe intentar eliminar las indicaciones para asegurarse de que la función funciona en modo silencioso. Sin embargo, si se produce un error en el inicio de sesión, el complemento debe solicitar al usuario para un inicio de sesión y, cuando recibe un inicio de sesión válido, pase el nombre nuevo en `lpUser`. Dado que el complemento puede cambiar esta cadena, el IDE siempre asignará un búfer de tamaño (SCC_USER_LEN + 1 o SCC_USER_SIZE, que incluye espacio para el terminador nulo). Si se cambia la cadena, la nueva cadena debe ser un nombre de inicio de sesión válido (al menos tan válido como la cadena anterior).  
   
 ## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>Notas técnicas de SccCreateSubProject y SccGetParentProjectPath  
- Agregar soluciones y proyectos al control de código fuente se ha simplificado en Visual Studio para minimizar el número de veces que un usuario debe seleccionar las ubicaciones en el sistema de control de código fuente. Estos cambios se activan mediante Visual Studio si un complemento de control de origen admite tanto de las nuevas funciones, `SccCreateSubProject` y `SccGetParentProjectPath`. Sin embargo, se puede utilizar la siguiente entrada del registro para deshabilitar estos cambios y revertir al comportamiento anterior de Visual Studio (origen Control complemento API versión 1.1):  
+ Agregar soluciones y proyectos al control de código fuente se ha simplificado en Visual Studio para minimizar el número de veces que un usuario se le pide que seleccione las ubicaciones en el sistema de control de código fuente. Estos cambios se activan por Visual Studio si un complemento de control de código fuente admite tanto de las nuevas funciones, `SccCreateSubProject` y `SccGetParentProjectPath`. Sin embargo, puede usarse la siguiente entrada del registro para deshabilitar estos cambios y revertir al comportamiento anterior de Visual Studio (origen de Control de complemento de API versión 1.1):  
   
- [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl" = dword: 00000001  
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl" = dword: 00000001**  
   
- Si esta entrada del registro no existe o está establecida en DWORD: 00000000, Visual Studio intenta utilizar las nuevas funciones, `SccCreateSubProject` y `SccGetParentProjectPath`.  
+ Si esta entrada del registro no existe o está establecida en DWORD: 00000000, Visual Studio intenta usar las nuevas funciones, `SccCreateSubProject` y `SccGetParentProjectPath`.  
   
- Si la entrada del registro se establece en DWORD: 00000001, Visual Studio no intenta utilizar estas funciones nuevas y las operaciones de agregar al control de código fuente funcionan como lo hacían en versiones anteriores de Visual Studio.  
+ Si se establece la entrada del registro a DWORD: 00000001, Visual Studio no intenta usar estas nuevas funciones y las operaciones de agregar a control de código fuente funcionan como lo hacían en versiones anteriores de Visual Studio.  
   
 ## <a name="see-also"></a>Vea también  
- [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
+ [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
  [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)   
  [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

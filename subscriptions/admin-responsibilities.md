@@ -9,11 +9,12 @@ description: Conozca cuáles son las responsabilidades de los administradores de
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1eb8dc3cf47241632085e86f589ba377343aa4f1
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 9fdefa652a368c344f11fdaf70dbf5db9b172fbf
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638103"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Introducción a las responsabilidades del administrador
 Como administrador, tiene la capacidad de administrar suscripciones para su organización.  El rol de administrador también conlleva responsabilidades para asegurarse de que las suscripciones se administran de acuerdo con los términos de licencia. En este artículo se describen las responsabilidades, ventajas y limitaciones del rol de administrador.
@@ -63,6 +64,7 @@ Los contratistas externos pueden traer licencias para interaccionar con el entor
 
 ## <a name="track-user-assignment-and-process-orders"></a>Seguimiento de la asignación de usuarios y tramitación de pedidos
 Los administradores de suscripciones de Visual Studio deberán realizar un seguimiento del uso de Visual Studio y tramitar pedidos para cualquier incremento en el uso según la programación descrita en su Contrato de licencia por volumen o en el Contrato de productos y servicios de Microsoft. El nuevo Portal de administración de suscripciones de Visual Studio ha simplificado esta tarea con una útil herramienta de seguimiento que muestra las licencias disponibles y las usadas.
+
 ### <a name="high-water-mark-of-usage"></a>Límite máximo de uso
 **La obligación de su compañía de comprar suscripciones de Visual Studio surte efecto inmediatamente cuando:**
 - Se asigna una licencia a un usuario.

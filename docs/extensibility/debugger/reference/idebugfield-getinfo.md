@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6738306abd991062c5091f95375972ffe0d3384e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ed9a83d11f180467938ba2f9a1e783c73866837e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899453"
 ---
 # <a name="idebugfieldgetinfo"></a>IDebugField::GetInfo
-Este método obtiene pueda mostrar información sobre el campo.  
+Este método obtiene que se puede mostrar información sobre el campo.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -48,7 +49,7 @@ int GetInfo(
  [out] Devuelve la información de la proporcionada [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) estructura.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   

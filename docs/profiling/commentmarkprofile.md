@@ -13,18 +13,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae602e6f28fc30c20c5b1f3c466d2e7afe458b8f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c42fc37837673305fb13c99856e778c45a4a3a8b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858504"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
-La función `CommentMarkProfile` inserta un marcador numérico y una cadena de texto en el archivo .vsp. Para que la marca y el comentario se inserten, la generación de perfiles para el subproceso que contiene la función `CommentMarkProfile` debe estar activada.  
+La función `CommentMarkProfile` inserta un marcador numérico y una cadena de texto en el archivo .*vsp*. Para que la marca y el comentario se inserten, la generación de perfiles para el subproceso que contiene la función `CommentMarkProfile` debe estar activada.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp  
 PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(  
                                    long lMarker,   
                                    LPCTSTR szComment);  
@@ -42,7 +43,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 ## <a name="property-valuereturn-value"></a>Valor de propiedad y valor devuelto  
  La función indica si la operación es correcta o errónea mediante la enumeración **PROFILE_COMMAND_STATUS**. El valor devuelto puede ser cualquiera de los siguientes:  
   
-|Enumerador|Description|  
+|Enumerador|Descripción|  
 |----------------|-----------------|  
 |MARK_ERROR_MARKER_RESERVED|El parámetro es menor o igual que 0. Estos valores están reservados. La marca y el comentario no se registran.|  
 |MARK_ERROR_MODE_NEVER|El modo de generación de perfiles se estableció en NEVER cuando se llamó a la función. La marca y el comentario no se registran.|  
@@ -55,7 +56,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 ## <a name="remarks"></a>Comentarios  
  El estado de generación de perfiles del subproceso que contiene la función de perfil de marcas debe estar activado cuando se inserten marcas o comentarios con el comando VSInstr Mark o con funciones (CommentMarkAtProfile, CommentMarkProfile o MarkProfile).  
   
- Las marcas de perfil tienen un ámbito global. Por ejemplo, una marca de perfil insertada en un subproceso se puede utilizar para marcar el inicio y el final de un segmento de datos en cualquier subproceso del archivo .vsp.  
+ Las marcas de perfil tienen un ámbito global. Por ejemplo, una marca de perfil insertada en un subproceso se puede usar para marcar el inicio y el final de un segmento de datos en cualquier subproceso del archivo .*vsp*.  
   
 > [!IMPORTANT]
 >  El método CommentMarkProfile solo se puede utilizar con instrumentación.  
@@ -74,7 +75,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 ## <a name="example"></a>Ejemplo  
  El código siguiente ilustra la llamada de función CommentMarkProfile. En el ejemplo se da por supuesto que se usan macros de cadenas de Win32 y la configuración del compilador Unicode para determinar si el código llama a la llamada de función [!INCLUDE[vcpransi](../profiling/includes/vcpransi_md.md)].  
   
-```  
+```cpp  
 void ExerciseCommentMarkProfile()  
 {  
     // Declare and initalize variables to pass to   
@@ -111,4 +112,4 @@ void ExerciseCommentMarkProfile()
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Referencia a la API del generador de perfiles de Visual Studio (nativa)](../profiling/visual-studio-profiler-api-reference-native.md)
+ [Referencia de la API del generador de perfiles de Visual Studio (nativa)](../profiling/visual-studio-profiler-api-reference-native.md)

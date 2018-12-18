@@ -1,6 +1,7 @@
 ---
 title: 'CA1505: Evitar el código difícil de mantener'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,13 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b65e6c8c7826887e411b2210b613633c1e963aaf
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9aae34f6e999bcf74fdfbae4597b22529863e34f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546920"
 ---
 # <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: Evitar el código difícil de mantener
+
 |||
 |-|-|
 |TypeName|AvoidUnmantainableCode|
@@ -33,15 +36,17 @@ ms.lasthandoff: 04/19/2018
  Un tipo o método tiene un valor del índice de mantenimiento bajo.
 
 ## <a name="rule-description"></a>Descripción de la regla
- El índice de mantenimiento se calcula utilizando las métricas siguientes: líneas de código, el volumen de programa y complejidad ciclomática. Volumen del programa es una medida de la dificultad de descripción de un tipo o método que se basa en el número de operadores y operandos en el código. Complejidad ciclomática es una medida de la complejidad estructural del tipo o método. Puede aprender más acerca de las métricas de código en [medir la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md).
+ El índice de mantenimiento se calcula mediante el uso de las siguientes métricas: líneas de código, el volumen del programa y complejidad ciclomática. Volumen del programa es una medida de la dificultad de comprensión de un tipo o método que se basa en el número de operadores y operandos en el código. Complejidad ciclomática es una medida de la complejidad estructural del tipo o método. Puede aprender más acerca de las métricas de código en [medir la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md).
 
- Un índice de mantenimiento bajo indica que un tipo o método resulta probablemente difícil de mantener y sería una buena candidata a diseñar.
+ Un índice de mantenimiento bajo indica que un tipo o método resulta probablemente difícil de mantener y sería un buen candidato para volver a diseñar.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir esta infracción, volver a diseñar el tipo o método e intente dividirlo en tipos acotará y delimitará o métodos.
+ Para corregir esta infracción, vuelva a diseñar el tipo o método e intente dividir más corta y tipos o métodos.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Excluir esta advertencia cuando un tipo o método todavía se considera que se pueda mantener a pesar de su gran tamaño o cuando no se puede dividir el tipo o método.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ Excluir esta advertencia cuando un tipo o método se sigue considerando fácil de mantener a pesar de su gran tamaño o cuando no se puede dividir el tipo o método.
 
 ## <a name="see-also"></a>Vea también
- [Advertencias de mantenimiento](../code-quality/maintainability-warnings.md) [medir la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+
+- [Advertencias de mantenimiento](../code-quality/maintainability-warnings.md)
+- [Medir la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

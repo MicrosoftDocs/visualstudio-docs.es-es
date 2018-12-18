@@ -14,16 +14,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33156719cab40490b63ec945bf9c9600b3a92bda
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d57709b2e1ff4f3721644f2f61e030ea8ccccf82
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828380"
 ---
-# <a name="how-to-use-environment-variables-in-a-build"></a>Cómo: Utilizar variables de entorno al compilar
+# <a name="how-to-use-environment-variables-in-a-build"></a>Cómo: Usar variables de entorno en una compilación
 Al compilar proyectos, a menudo es necesario establecer las opciones de compilación mediante información que no está en el archivo del proyecto o en los archivos que componen el proyecto. Normalmente, esta información se almacena en variables de entorno.  
   
-## <a name="referencing-environment-variables"></a>Hacer referencia a variables de entorno  
+## <a name="reference-environment-variables"></a>Referencia a variables de entorno  
  Todas las variables de entorno están disponibles para el archivo del proyecto [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) como propiedades.  
   
 > [!NOTE]
@@ -31,15 +32,15 @@ Al compilar proyectos, a menudo es necesario establecer las opciones de compilac
   
 #### <a name="to-use-an-environment-variable-in-an-msbuild-project"></a>Para utilizar una variable de entorno en un proyecto de MSBuild  
   
--   Haga referencia a la variable de entorno del mismo modo que lo haría con una variable declarada en el archivo del proyecto. Por ejemplo, el código siguiente hace referencia a la variable de entorno BIN_PATH:  
+- Haga referencia a la variable de entorno del mismo modo que lo haría con una variable declarada en el archivo del proyecto. Por ejemplo, el código siguiente hace referencia a la variable de entorno BIN_PATH:  
   
-     `<FinalOutput>$(BIN_PATH)\MyAssembly.dll</FinalOutput>`  
+   `<FinalOutput>$(BIN_PATH)\MyAssembly.dll</FinalOutput>`  
   
- Puede utilizar un atributo `Condition` para proporcionar un valor predeterminado a una propiedad si no se ha establecido la variable de entorno.  
+  Puede utilizar un atributo `Condition` para proporcionar un valor predeterminado a una propiedad si no se ha establecido la variable de entorno.  
   
 #### <a name="to-provide-a-default-value-for-a-property"></a>Para proporcionar un valor predeterminado a una propiedad  
   
--   Utilice un atributo `Condition` en una propiedad para establecer el valor solo si la propiedad no tiene ningún valor. Por ejemplo, el código siguiente establece la propiedad `ToolsPath` c:\tools solo si la variable de entorno `ToolsPath` no se establece:  
+-   Utilice un atributo `Condition` en una propiedad para establecer el valor solo si la propiedad no tiene ningún valor. Por ejemplo, el código siguiente establece la propiedad `ToolsPath` en *c:\tools* solo si la variable de entorno `ToolsPath` no está establecida:  
   
      `<ToolsPath Condition="'$(TOOLSPATH)' == ''">c:\tools</ToolsPath>`  
   

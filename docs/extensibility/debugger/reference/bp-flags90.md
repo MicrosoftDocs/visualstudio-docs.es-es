@@ -1,5 +1,5 @@
 ---
-title: BP_FLAGS90 | Documentos de Microsoft
+title: BP_FLAGS90 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,14 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f8153f3fb2419e26f7e7d3a741ae4c79c9272a4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 32109a6065811c5f36cf00b0287291ca760eb7c1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862702"
 ---
 # <a name="bpflags90"></a>BP_FLAGS90
-Enumera los valores válidos para marcas opcionales. Las marcas opcionales pueden utilizarse para especificar información adicional cuando se establece un punto de interrupción. Esta enumeración se extiende el [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) enumeración.  
+Enumera los valores válidos para las marcas opcionales. Las marcas opcionales pueden utilizarse para especificar información adicional al establecer un punto de interrupción. Esta enumeración se extiende el [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) enumeración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -56,13 +57,13 @@ public enum enum_BP_FLAGS90
  No especifica ninguna marca de punto de interrupción.  
   
  BP90_FLAG_MAP_DOCPOSITION  
- Especifica que el motor de depuración (Alemania) debe asignar el punto de interrupción mediante el uso de la posición del documento. Esto es aplicable únicamente a los puntos de interrupción establecidos en los archivos de origen y orientada a la secuencia de comandos, como las páginas Active Server (ASP).  
+ Especifica que el motor de depuración (DE) debe asignar el punto de interrupción mediante el uso de la posición del documento. Esto solo es aplicable a puntos de interrupción establecidos en archivos de origen orientado a secuencias de comandos, como las páginas Active Server (ASP).  
   
  BP90_FLAG_DONT_STOP  
- Especifica que el punto de interrupción debe ser procesado por el motor de depuración, pero que el motor de depuración en última instancia no debería detener es decir, un [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) no se debe enviar el objeto de evento. Esta marca está diseñada para utilizarse principalmente con los puntos de seguimiento.  
+ Especifica que el punto de interrupción debe procesarse por el motor de depuración, pero que el motor de depuración en última instancia, no debería detener es decir, un [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) no se debe enviar el objeto de evento. Esta marca está diseñada para su uso principalmente con puntos de seguimiento.  
   
  BP90_FLAG_TRACEPOINT_CONTINUE  
- Utiliza el motor de depuración nativo para determinar si se debe borrar el estado de ejecución paso a paso. Difiere de BP90_FLAG_DONT_STOP porque no se ha establecido BP90_FLAG_DONT_STOP si el punto de seguimiento ejecuta una macro.  
+ Usa el motor de depuración nativo para determinar si se debe borrar el estado de ejecución paso a paso. Difiere BP90_FLAG_DONT_STOP porque BP90_FLAG_DONT_STOP no se establece si el punto de seguimiento ejecuta una macro.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: Msdbg90.h  

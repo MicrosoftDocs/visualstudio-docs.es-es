@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: agregar texto y formato a las celdas de las tablas de Word mediante programación | Documentos de Microsoft'
+title: 'Cómo: agregar texto y formato a celdas de tablas de Word mediante programación'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,18 +18,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c7d50a5531bdb4e073c2760ae6d4e746b4970af6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a7fff8451c469e58d7c23ab6bd3366db2fa10d59
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256349"
 ---
-# <a name="how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables"></a>Cómo: Agregar texto y formato a celdas de tablas de Word mediante programación
+# <a name="how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables"></a>Cómo: agregar texto y formato a celdas de tablas de Word mediante programación
   Cada tabla consta de una colección de celdas. Cada objeto <xref:Microsoft.Office.Interop.Word.Cell> individual representa una celda de la tabla. Se hace referencia a cada celda mediante su ubicación en la tabla. Este ejemplo hace referencia a la celda ubicada en la primera fila y la primera columna de la tabla, le añade texto y le aplica formato.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-### <a name="to-add-text-and-formatting-to-cells"></a>Para agregar texto y formato a celdas  
+## <a name="to-add-text-and-formatting-to-cells"></a>Para agregar texto y formato a celdas  
   
 1.  Haga referencia a la celda por su ubicación en la tabla, agregue texto a la celda y aplique el formato.  
   
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: crear tablas de Word mediante programación](../vsto/how-to-programmatically-create-word-tables.md)   
- [Cómo: agregar mediante programación filas y columnas a las tablas de Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
- [Cómo: Rellenar tablas de Word con propiedades de documento mediante programación](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)  
+ [Cómo: agregar filas y columnas a las tablas de Word mediante programación](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
+ [Cómo: rellenar tablas de Word con propiedades de documento mediante programación](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)  
   
   

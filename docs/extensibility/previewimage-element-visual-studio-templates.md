@@ -1,5 +1,5 @@
 ---
-title: Elemento PreviewImage (plantillas de Visual Studio) | Documentos de Microsoft
+title: PreviewImage (elemento) (plantillas de Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,13 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee25a764326572531e02eb91985aa6150c310715
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5265a2d5632bd014103b557a9f024d3b7d5c5062
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638982"
 ---
-# <a name="previewimage-element-visual-studio-templates"></a>PreviewImage (Elemento, Plantillas de Visual Studio)
+# <a name="previewimage-element-visual-studio-templates"></a>PreviewImage (elemento) (plantillas de Visual Studio)
 Especifica la imagen de vista previa, como un nombre de archivo para la imagen de vista previa que aparece en el **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.  
   
  \<VSTemplate >  
@@ -46,7 +47,7 @@ Especifica la imagen de vista previa, como un nombre de archivo para la imagen d
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo se muestran en la vista la **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo se muestran en el el **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.|  
   
 ## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto.  
@@ -58,4 +59,4 @@ Especifica la imagen de vista previa, como un nombre de archivo para la imagen d
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
+ [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)

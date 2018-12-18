@@ -1,6 +1,7 @@
 ---
 title: 'CA3076: Ejecución del script XSLT no segura'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 author: gewarren
@@ -8,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c918f3a69fcafd751dad61b5291db3b891a4ccf9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 74fe556d775e60dec5dde4528a1924e55ab4c2ed
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546397"
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Ejecución del script XSLT no segura
 
@@ -29,23 +31,23 @@ Si ejecuta el lenguaje de transformación basado en hojas de estilo (XSLT) en ap
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-**XSLT** es un estándar de World Wide Web Consortium (W3C) para transformar los datos XML. XSLT normalmente se usa para escribir hojas de estilos para transformar datos XML en otros formatos, como HTML, texto de longitud fija, texto separado por comas o un formato XML distinto. Aunque está prohibido de forma predeterminada, puede habilitarlo para su proyecto.
+**XSLT** es un estándar de World Wide Web Consortium (W3C) para transformar datos XML. XSLT normalmente se usa para escribir hojas de estilos para transformar datos XML en otros formatos, como HTML, texto de longitud fija, texto separado por comas o un formato distinto de XML. Aunque está prohibido de forma predeterminada, puede habilitarlo para su proyecto.
 
-Para asegurarse de que no está exponiendo una superficie expuesta a ataques, esta regla se desencadena cada vez que el XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> recibe las instancias de combinación no segura de <xref:System.Xml.Xsl.XsltSettings> y <xref:System.Xml.XmlResolver>, que permite el procesamiento de scripts malintencionados.
+Para asegurarse de que no expone una superficie expuesta a ataques, esta regla se desencadena cada vez que el XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> recibe las instancias de combinación no seguras de <xref:System.Xml.Xsl.XsltSettings> y <xref:System.Xml.XmlResolver>, lo que permite el procesamiento de scripts malintencionados.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-- Reemplace el argumento XsltSettings inseguro por XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> o con una instancia que ha deshabilitado la ejecución de script y la función de documento.
+- Reemplace el argumento no seguro XsltSettings por XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> o con una instancia que ha deshabilitado la ejecución de función y el script del documento.
 
 - Reemplace el argumento <xref:System.Xml.XmlResolver> por NULL o una instancia <xref:System.Xml.XmlSecureResolver> .
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
 
 A menos que esté seguro de que la entrada es de un origen de confianza, no suprima ninguna regla de esta advertencia.
 
 ## <a name="pseudo-code-examples"></a>Ejemplos de pseudocódigo
 
-### <a name="violationmdashuses-xsltsettingstrustedxslt"></a>Infracción de&mdash;utiliza XsltSettings.TrustedXslt
+### <a name="violation-that-uses-xsltsettingstrustedxslt"></a>Infracción que usa XsltSettings.TrustedXslt
 
 ```csharp
 using System.Xml;
@@ -66,7 +68,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solutionmdashuse-xsltsettingsdefault"></a>Solución&mdash;usar XsltSettings.Default
+### <a name="solution-that-uses-xsltsettingsdefault"></a>Solución que usa XsltSettings.Default
 
 ```csharp
 using System.Xml;
@@ -112,7 +114,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solutionmdashdisable-document-function-and-script-execution"></a>Solución&mdash;deshabilitar la ejecución de script y la función de documento
+### <a name="solutionmdashdisable-document-function-and-script-execution"></a>Solución&mdash;deshabilitar la ejecución de función y la secuencia de comandos de documento
 
 ```csharp
 using System.Xml;
@@ -141,4 +143,4 @@ namespace TestNamespace
 
 ## <a name="see-also"></a>Vea también
 
-[Consideraciones de seguridad XSLT (Guía de. NET)](/dotnet/standard/data/xml/xslt-security-considerations)
+- [Consideraciones de seguridad XSLT (Guía de. NET)](/dotnet/standard/data/xml/xslt-security-considerations)

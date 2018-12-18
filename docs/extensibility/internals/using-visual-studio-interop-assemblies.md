@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146824"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Mediante ensamblados de interoperabilidad de Visual Studio
 Ensamblados de interoperabilidad de Visual Studio permiten a las aplicaciones administradas tener acceso a las interfaces COM que proporcionan extensibilidad de Visual Studio. Hay algunas diferencias entre las interfaces COM rectas y sus versiones de interoperabilidad. Por ejemplo, HRESULT generalmente se representa como valores de tipo int y debe tratarse de la misma manera que las excepciones y parámetros (especialmente los parámetros out) se tratan de manera diferente.  

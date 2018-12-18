@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54726a332bd27d01a0229a9127480d2871360d47
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6724d33a10f766ac30d8211b656710c8a9f900da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860539"
 ---
 # <a name="idebugportnotify2addprogramnode"></a>IDebugPortNotify2::AddProgramNode
 Registra un programa que se puede depurar con el puerto que se ejecuta.  
@@ -40,13 +41,13 @@ int AddProgramNode(
   
 #### <a name="parameters"></a>Parámetros  
  `pProgramNode`  
- [in] Un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objeto que representa el programa que se va a registrar.  
+ [in] Un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objeto que representa el programa que se registrarán.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Un nodo de programa se puede anular del puerto mediante una llamada a la [RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) método.  
+ Un nodo del programa se puede anular del puerto mediante una llamada a la [RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) método.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)   

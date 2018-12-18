@@ -1,11 +1,11 @@
 ---
-title: "SCRIPTSTATE (enumeración) | Documentos de Microsoft"
-ms.custom: 
+title: SCRIPTSTATE (enumeración) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - SCRIPTSTATE
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - SCRIPTSTATE enum
 ms.assetid: 5f5deb05-c4bb-4964-8077-e624c6b2a14e
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24734285"
 ---
 # <a name="scriptstate-enumeration"></a>SCRIPTSTATE (Enumeración)
 Especifica el estado de un motor de scripting. Esta enumeración se usa en la [IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md) , [IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md) , y [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) métodos.  

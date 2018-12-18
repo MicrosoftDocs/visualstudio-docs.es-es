@@ -1,5 +1,5 @@
 ---
-title: BP_CONDITION | Documentos de Microsoft
+title: BP_CONDITION | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee951c5bc18fbf92f94f557c5ade4cd7f39159f2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f638fe36131969c50e7572ac36ef54b3ad0d10e0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873401"
 ---
 # <a name="bpcondition"></a>BP_CONDITION
-Describe las condiciones en las que se activa un punto de interrupción.  
+Describe las condiciones en las que se desencadena un punto de interrupción.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -65,7 +66,7 @@ public struct BP_CONDITION {
 ## <a name="remarks"></a>Comentarios  
  Esta estructura es un miembro de la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) y [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) estructuras.  
   
- Esta estructura también se pasa como un parámetro a la [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) y [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) métodos.  
+ Esta estructura también se pasa como parámetro a la [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) y [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) métodos.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  

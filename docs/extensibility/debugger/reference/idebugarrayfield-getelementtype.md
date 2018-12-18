@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayField::GetElementType | Documentos de Microsoft
+title: IDebugArrayField::GetElementType | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3c2eb6009eacd40081be28cc5945310d7a00fc1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c95457fdc91e4c625cb56aaba58593acf2a64e16
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821947"
 ---
 # <a name="idebugarrayfieldgetelementtype"></a>IDebugArrayField::GetElementType
 Obtiene el tipo de elemento de la matriz.  
@@ -46,7 +47,7 @@ int GetElementType(
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- El [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md) objeto se da por supuesto que todos los elementos de la matriz son del mismo tipo.  
+ El [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md) objeto supone que todos los elementos de la matriz son del mismo tipo.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)   

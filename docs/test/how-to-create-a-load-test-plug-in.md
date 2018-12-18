@@ -1,5 +1,5 @@
 ---
-title: Crear un complemento de prueba de carga en Visual Studio | Microsoft Docs
+title: Creación de un complemento de prueba de carga en Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,19 +12,23 @@ ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6e585fe66bde573f8bb133b0c8cda0900b0d6d16
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ce3e85965aa8823aa12102fff41401cf24eef6a7
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896736"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Cómo: Crear un complemento de pruebas de carga
 
-Puede crear un complemento de prueba de carga para ejecutar el código en distintos momentos mientras se ejecuta la prueba de carga. Los complementos se crean para expandir o modificar la funcionalidad incorporada de la prueba de carga. Por ejemplo, puede codificar un complemento de prueba de carga para establecer o modificar el modelo de prueba de carga mientras se ejecuta la prueba de carga. Para ello, cree una clase que hereda la interfaz <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>. Esta clase debe implementar el método <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*> de esta interfaz. Para obtener más información, consulta <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>.
+Puede crear un complemento de prueba de carga para ejecutar el código en distintos momentos mientras se ejecuta la prueba de carga. Los complementos se crean para expandir o modificar la funcionalidad incorporada de la prueba de carga. Por ejemplo, puede codificar un complemento de prueba de carga para establecer o modificar el modelo de prueba de carga mientras se ejecuta la prueba de carga. Para ello, cree una clase que hereda la interfaz <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>. Esta clase debe implementar el método <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*> de esta interfaz. Para obtener más información, vea <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>.
 
 > [!NOTE]
-> También se pueden crear complementos para pruebas de rendimiento web. Para obtener más información, vea [Cómo: Crear un complemento de prueba de rendimiento web](../test/how-to-create-a-web-performance-test-plug-in.md).
+> También se pueden crear complementos para pruebas de rendimiento web. Para obtener más información, vea [Cómo: Crear un complemento de pruebas de rendimiento web](../test/how-to-create-a-web-performance-test-plug-in.md)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-a-load-test-plug-in-by-using-visual-c"></a>Para crear un complemento de prueba de carga mediante Visual C#
 
@@ -34,7 +38,7 @@ Puede crear un complemento de prueba de carga para ejecutar el código en distin
 
      Para obtener más información, vea [Inicio rápido: Crear un proyecto de prueba de carga](../test/quickstart-create-a-load-test-project.md).
 
-3.  En el Explorador de soluciones, haga clic con el botón derecho en la solución, seleccione **Agregar** y, luego, elija **Nuevo proyecto**.
+3.  En el **Explorador de soluciones**, haga clic con el botón derecho en la solución, seleccione **Agregar** y luego elija **Nuevo proyecto**.
 
      Aparecerá el cuadro de diálogo **Agregar nuevo proyecto**.
 
@@ -46,9 +50,9 @@ Puede crear un complemento de prueba de carga para ejecutar el código en distin
 
 7.  Elija **Aceptar**.
 
-8.  El nuevo proyecto de biblioteca de clases se agregará al Explorador de soluciones y la nueva clase aparecerá en el Editor de código.
+8.  El nuevo proyecto de biblioteca de clases se agrega al **Explorador de soluciones** y la nueva clase aparece en el **Editor de código**.
 
-9. En el Explorador de soluciones, haga clic con el botón derecho en la carpeta **Referencias** de la nueva biblioteca de clases y seleccione **Agregar referencia**.
+9. En el **Explorador de soluciones**, haga clic con el botón derecho en la carpeta **Referencias** de la nueva biblioteca de clases y seleccione **Agregar referencia**.
 
 10. Aparecerá el cuadro de diálogo **Agregar referencia**.
 
@@ -56,9 +60,9 @@ Puede crear un complemento de prueba de carga para ejecutar el código en distin
 
 12. Elija **Aceptar**.
 
-     La referencia a **Microsoft.VisualStudio.QualityTools.LoadTestFramework** se agrega a la carpeta **Referencias** del Explorador de soluciones.
+     La referencia a **Microsoft.VisualStudio.QualityTools.LoadTestFramework** se agrega a la carpeta **Referencias** del **Explorador de soluciones**.
 
-13. En el Explorador de soluciones, haga clic con el botón derecho en el nodo superior del proyecto de prueba de carga y rendimiento web que contiene la prueba de carga a la que quiere agregar el complemento de prueba de carga y seleccione **Agregar referencia**.
+13. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo superior del proyecto de prueba de carga y rendimiento web que contiene la prueba de carga a la que quiere agregar el complemento de prueba de carga y seleccione **Agregar referencia**.
 
 14. Aparecerá el cuadro de diálogo **Agregar referencia**.
 
@@ -66,7 +70,7 @@ Puede crear un complemento de prueba de carga para ejecutar el código en distin
 
 16. Elija **Aceptar**.
 
-17. En el Editor de código, agregue una instrucción `using` para el espacio de nombres <xref:Microsoft.VisualStudio.TestTools.LoadTesting>.
+17. En el **Editor de código**, agregue una instrucción `using` para el espacio de nombres <xref:Microsoft.VisualStudio.TestTools.LoadTesting>.
 
 18. Implemente la interfaz <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> para la clase creada en el proyecto Biblioteca de clases. Vea una implementación del ejemplo en la sección Ejemplo siguiente.
 
@@ -81,7 +85,7 @@ Puede crear un complemento de prueba de carga para ejecutar el código en distin
 22. En el panel **Propiedades del complemento seleccionado**, establezca los valores iniciales que el complemento va a usar en tiempo de ejecución.
 
     > [!NOTE]
-    > Puede exponer tantas propiedades de los complementos como desee; basta con hacerlas públicas, que se puedan establecer y que tengan un tipo base como Integer, Boolean o String. También puede cambiar las propiedades del complemento de prueba de rendimiento web más tarde en la ventana Propiedades.
+    > Puede exponer tantas propiedades de los complementos como desee; basta con hacerlas públicas, que se puedan establecer y que tengan un tipo base como Integer, Boolean o String. También puede cambiar las propiedades del complemento de prueba de rendimiento web más tarde en la ventana **Propiedades**.
 
 23. Elija **Aceptar**.
 
@@ -102,7 +106,8 @@ Puede crear un complemento de prueba de carga para ejecutar el código en distin
 El código siguiente muestra un complemento de prueba de carga que ejecuta código personalizado después de que se produzca un evento LoadTestFinished. Si este código se ejecuta en un agente de una máquina remota y el agente de prueba no tienen un servicio SMTP de host local, la prueba de carga permanecerá en el estado "En curso" mientras se abre un cuadro de mensaje.
 
 > [!NOTE]
->  El siguiente código requiere que se agregue una referencia a System.Windows.Forms.
+> El siguiente código requiere que se agregue una referencia a System.Windows.Forms.
+
 
 ```csharp
 using System;
@@ -169,4 +174,4 @@ Hay ocho eventos asociados a una prueba de carga, que pueden controlarse en el c
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>
 - [Crear código y complementos personalizados para las pruebas de carga](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Cómo: Crear un complemento de prueba de rendimiento web](../test/how-to-create-a-web-performance-test-plug-in.md)
+- [Cómo: Crear un complemento de pruebas de rendimiento web](../test/how-to-create-a-web-performance-test-plug-in.md)

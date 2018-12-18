@@ -14,14 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c9bb5fab8386046f9b409e0d3ef801b4020e88c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 189bae80873e100be3371813add133982926edab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915235"
 ---
 # <a name="idebugcomplussymbolprovidergetarraytypefromaddress"></a>IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
-Recupera información de tipo de la matriz especificada a partir de su dirección de depuración.  
+Recupera información acerca de la matriz especificada a partir de su dirección de depuración de tipo.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -50,19 +51,19 @@ int GetArrayTypeFromAddress(
  [in] La dirección de depuración representado por un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaz.  
   
  `pSig`  
- [in] La matriz para examinar.  
+ [in] Para examinar la matriz.  
   
  `dwSigLength`  
  [in] Longitud en bytes de la `pSig` matriz.  
   
  `ppField`  
- [out] Devuelve el tipo de matriz representado por un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interfaz.  
+ [out] Devuelve el tipo de matriz, tal como está representada por un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interfaz.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone la [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz.  
+ El ejemplo siguiente muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone el [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetArrayTypeFromAddress(  

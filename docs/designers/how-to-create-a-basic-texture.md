@@ -1,6 +1,7 @@
 ---
 title: 'Cómo: Crear una textura básica'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
@@ -9,65 +10,66 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45bb45c12e7cbdbec37574f371daf4cd6c207fb1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b4bd1d34ef2dc31935038bb1be30d548c58208fd
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028993"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Cómo: Crear una textura básica
-En este documento se muestra cómo usar el Editor de imágenes para crear una textura básica.
 
- Este documento muestra estas actividades:
+En este artículo se muestra cómo usar el Editor de imágenes para crear una textura básica, incluidas estas actividades:
 
--   Establecer el tamaño de la textura
+- Establecer el tamaño de la textura
 
--   Establecer el color de primer plano y el color de fondo
+- Establecer el color de primer plano y el color de fondo
 
--   Usar el canal alfa (transparencia)
+- Usar el canal alfa (transparencia)
 
--   Usar las herramientas **Rellenar** y **Elipse**
+- Usar las herramientas **Rellenar** y **Elipse**
 
--   Establecer propiedades de herramientas
+- Establecer propiedades de herramientas
 
-## <a name="creating-a-basic-texture"></a>Crear una textura básica
- Puede usar el Editor de imágenes para crear y modificar imágenes y texturas para su juego o aplicación.
+## <a name="create-a-basic-texture"></a>Crear una textura básica
 
- Los siguientes pasos muestran cómo crear una textura que representa un destino de "diana". Cuando termine, la textura debe ser similar a la siguiente imagen. Para mostrar mejor la transparencia de la textura, se configuró el Editor de imágenes para usar un modelo de color verde de cuadros para mostrarla.
+Puede usar el Editor de imágenes para crear y modificar imágenes y texturas para su juego o aplicación.
 
- ![Destino de "diana" con transparencia mostrado en verde](../designers/media/digit-bullseye-texture-in-editor.png "Digit-Bullseye-Texture-In-Editor")
+En los pasos siguientes se muestra cómo crear una textura que represente un destino de "diana". Cuando haya terminado, la textura debe tener una apariencia similar a la de la imagen siguiente. Para mostrar mejor la transparencia de la textura, se configuró el Editor de imágenes para usar un modelo de color verde de cuadros para mostrarla.
 
- Antes de empezar, asegúrese de que se muestra la ventana **Propiedades**. Se usa la ventana **Propiedades** para establecer el tamaño de la imagen, cambiar las propiedades de las herramientas y especificar colores mientras trabaja.
+![Destino de "Bullseye" con transparencia mostrado en verde](../designers/media/digit-bullseye-texture-in-editor.png)
 
-#### <a name="to-create-a-bullseye-target-texture"></a>Para crear una textura de destino de "diana"
+Antes de empezar, asegúrese de que se muestra la ventana **Propiedades**. Se usa la ventana **Propiedades** para establecer el tamaño de la imagen, cambiar las propiedades de las herramientas y especificar colores mientras trabaja.
 
-1.  Cree una textura con la que trabajar. Para obtener información sobre cómo agregar una textura al proyecto, vea la sección Introducción de [Editor de imágenes](../designers/image-editor.md).
+### <a name="create-a-bullseye-target-texture"></a>Crear una textura de destino de "diana"
 
-2.  Establezca el tamaño de imagen en 512 x 512 píxeles. En la ventana **Propiedades**, establezca los valores de las propiedades **Ancho** y **Alto** en `512`.
+1. Cree una textura con la que va a trabajar. Para información sobre cómo agregar una textura al proyecto, consulte [Editor de imágenes](../designers/image-editor.md#get-started).
 
-3.  En la barra de herramientas del Editor de imágenes, elija la herramienta **Relleno**. La ventana **Propiedades** muestra ahora las propiedades de la herramienta **Relleno** junto con las propiedades de la imagen.
+2. Establezca el tamaño de imagen en 512 x 512 píxeles. En la ventana **Propiedades**, establezca los valores de las propiedades **Ancho** y **Alto** en `512`.
 
-4.  Establezca el color de primer plano en negro totalmente transparente. En la ventana **Propiedades**, en el grupo de propiedades **Colores**, seleccione **Primer plano**. Establezca los valores de las propiedades **R**, **G**, **B** y **A** junto al selector de colores en `0`.
+3. En la barra de herramientas del Editor de imágenes, elija la herramienta **Relleno**. La ventana **Propiedades** muestra ahora las propiedades de la herramienta **Relleno** junto con las propiedades de la imagen.
 
-5.  En la barra de herramientas del Editor de imágenes, seleccione la herramienta **Relleno** y, después, mantenga presionada la tecla Mayús y elija cualquier punto de la imagen. Al usar la tecla Mayús, el valor alfa del color de relleno reemplaza el color de la imagen. De lo contrario, se usa el valor alfa para mezclar el color de relleno junto con el color de la imagen.
+4. Establezca el color de primer plano en negro totalmente transparente. En la ventana **Propiedades**, en el grupo de propiedades **Colores**, seleccione **Primer plano**. Establezca los valores de las propiedades **R**, **G**, **B** y **A** junto al selector de colores en `0`.
+
+5. En la barra de herramientas del Editor de imágenes, seleccione la herramienta **Relleno** y, después, mantenga presionada la tecla **Mayús** y elija cualquier punto de la imagen. Al usar la tecla **Mayús**, el valor alfa del color de relleno reemplaza el color de la imagen. De lo contrario, se usa el valor alfa para mezclar el color de relleno junto con el color de la imagen.
 
     > [!IMPORTANT]
-    >  Este paso, junto con la selección de color en el paso anterior, garantiza que la imagen base está preparada para la textura de destino de "diana" que se va a dibujar. Cuando la imagen se rellena con negro transparente, y dado que el borde del destino es negro, no habrá ningún artefacto de suavizado alrededor del destino.
+    > Este paso, junto con la selección de color en el paso anterior, garantiza que la imagen base está preparada para la textura de destino de "diana" que se va a dibujar. Cuando la imagen se rellena con negro transparente, y dado que el borde del destino es negro, no habrá ningún artefacto de suavizado alrededor del destino.
 
-6.  En la barra de herramientas del Editor de imágenes, elija la herramienta **Elipse**.
+6. En la barra de herramientas del Editor de imágenes, elija la herramienta **Elipse**.
 
-7.  Establezca el color de primer plano en negro totalmente opaco. Establezca los valores de las propiedades **R**, **G** y **B** en `0` y el valor de la propiedad **A** en `255`.
+7. Establezca el color de primer plano en negro totalmente opaco. Establezca los valores de las propiedades **R**, **G** y **B** en `0` y el valor de la propiedad **A** en `255`.
 
-8.  Establezca el color de fondo en blanco totalmente opaco. En la ventana **Propiedades**, en el grupo de propiedades **Colores**, seleccione **Fondo**. Establezca los valores de las propiedades **R**, **G**, **B** y **A** en `255`.
+8. Establezca el color de fondo en blanco totalmente opaco. En la ventana **Propiedades**, en el grupo de propiedades **Colores**, seleccione **Fondo**. Establezca los valores de las propiedades **R**, **G**, **B** y **A** en `255`.
 
 9. Establezca el ancho del contorno de la elipse. En la ventana **Propiedades**, en el grupo de propiedades **Apariencia**, establezca el valor de la propiedad **Ancho** en `8`.
 
 10. Asegúrese de que esté habilitado el suavizado de contorno. En la ventana **Propiedades**, en el grupo de propiedades **Apariencia**, asegúrese de que esté habilitada la propiedad **Suavizado de contorno**.
 
-11. Con la herramienta **Elipse**, dibuje un círculo desde la coordenada de píxel `(3, 3)` a la coordenada de píxel `(508, 508)`. Para dibujar el círculo más fácilmente, puede presionar y mantener presionada la tecla Mayús mientras dibuja.
+11. Con la herramienta **Elipse**, dibuje un círculo desde la coordenada de píxel `(3, 3)` a la coordenada de píxel `(508, 508)`. Para dibujar el círculo más fácilmente, puede presionar y mantener presionada la tecla **Mayús** mientras dibuja.
 
     > [!NOTE]
-    >  Las coordenadas de píxel de la ubicación actual del puntero se muestran en la barra de estado de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+    > Las coordenadas de píxel de la ubicación actual del puntero se muestran en la barra de estado de Visual Studio.
 
 12. Cambie el color de fondo. Establezca **R** en `44`, **G** en `165`, **B** en `211` y **A** en `255`.
 
@@ -81,11 +83,11 @@ En este documento se muestra cómo usar el Editor de imágenes para crear una te
 
 17. Dibuje otro círculo desde la coordenada de píxel `(192, 192)` a la coordenada de píxel `(320, 320)`.
 
- La textura de destino de "diana" está completa. Aquí está la imagen final, mostrada con transparencia.
+La textura de destino de "diana" está completa. Aquí está la imagen final, mostrada con transparencia.
 
- ![La textura de destino de "diana" completa](../designers/media/gfx_image_demo_bullseye.png "gfx_image_demo_bullseye")
+![La textura de destino "bullseye" completa](../designers/media/gfx_image_demo_bullseye.png)
 
- Como paso siguiente, puede generar niveles de MIP para esta textura. Para obtener información, vea [Cómo: Crear y modificar niveles de MIP](../designers/how-to-create-and-modify-mip-levels.md).
+Como paso siguiente, puede generar niveles de MIP para esta textura. Para obtener información, vea [Cómo: Crear y modificar niveles de MIP](../designers/how-to-create-and-modify-mip-levels.md).
 
 ## <a name="see-also"></a>Vea también
 

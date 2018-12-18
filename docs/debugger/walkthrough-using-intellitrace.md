@@ -1,5 +1,5 @@
 ---
-title: Ver los eventos con IntelliTrace | Documentos de Microsoft
+title: Ver los eventos de IntelliTrace | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,23 +10,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fd43297dcf6a15e7d064809a5c4b5091f51ac63
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f46113365b66a75d3f9e149181637c79068645ab
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542330"
 ---
-# <a name="view-events-with-intellitrace-in-visual-studio"></a>Ver eventos de IntelliTrace en Visual Studio
+# <a name="view-events-with-intellitrace-in-visual-studio"></a>Visualización de eventos con IntelliTrace en Visual Studio
 Puede usar IntelliTrace para recopilar información sobre determinados eventos, categorías de eventos o llamadas a funciones individuales. En los siguientes procedimientos se muestra cómo hacerlo.  
   
- Puede usar IntelliTrace en Visual Studio Enterprise edition, pero no en las ediciones Professional o Community.  
+ Puede usar IntelliTrace en Visual Studio Enterprise edition, pero no las ediciones Professional o Community.  
   
 ##  <a name="GettingStarted"></a> Configurar Intellitrace  
- Puede intentar depurar con solo los eventos de IntelliTrace. Los eventos de IntelliTrace son eventos del depurador, excepciones, eventos de .NET Framework y otros eventos del sistema. Antes de iniciar la depuración debe activar o desactivar eventos específicos para controlar los eventos que IntelliTrace registra. Para obtener más información, consulte [características de IntelliTrace](../debugger/intellitrace-features.md).  
+ Puede intentar depurar con solo los eventos de IntelliTrace. Los eventos de IntelliTrace son eventos del depurador, excepciones, eventos de .NET Framework y otros eventos del sistema. Antes de iniciar la depuración debe activar o desactivar eventos específicos para controlar los eventos que IntelliTrace registra. Para obtener más información, consulte [las características de IntelliTrace](../debugger/intellitrace-features.md).  
   
  - Active el evento de IntelliTrace para el acceso de archivo. Vaya a la **Herramientas > Opciones > IntelliTrace > eventos de IntelliTrace** página y expanda el **archivo** categoría. Compruebe la categoría de eventos **Archivo** . Esto hace que se comprueben todos los eventos de archivo (acceso, cierre y eliminación).
 
-## <a name="create-your-app"></a>Crear la aplicación
+## <a name="create-your-app"></a>Creación de la aplicación
   
 1.  Cree una aplicación de consola de C#. En el archivo Program.cs, agregue la siguiente declaración de `using`:  
   
@@ -55,7 +56,7 @@ Puede usar IntelliTrace para recopilar información sobre determinados eventos, 
 1.  Inicie la depuración como de costumbre. (Presione **F5** o haga clic en **Depurar > Iniciar depuración**.  
   
     > [!TIP]
-    >  Mantener la **locales** y **automático** ventanas abiertas durante la depuración para ver y grabar los valores de esas ventanas.  
+    >  Mantener la **variables locales** y **automático** ventanas abiertas mientras depura para ver y registrar los valores en estas ventanas.  
   
 2.  La ejecución se detiene en el punto de interrupción. Si no ve el **herramientas de diagnóstico** ventana, haga clic en **Depurar > Windows > eventos de IntelliTrace**.  
   
@@ -73,7 +74,7 @@ Puede usar IntelliTrace para recopilar información sobre determinados eventos, 
   
      Puede elegir el vínculo de la ruta de acceso para abrirlo. Si la ruta de acceso completa no está disponible, aparece el cuadro de diálogo **Abrir archivo** .  
   
-     Haga clic en **Activar depuración histórica**, que establece el contexto del depurador en la hora en que el evento seleccionado se recopilan, muestra datos históricos la **pila de llamadas**, **locales** y las demás participan ventanas del depurador. Si el código fuente está disponible, Visual Studio mueve el puntero al código correspondiente en la ventana de código fuente para que pueda examinarlo.  
+     Haga clic en **Activar depuración histórica**, que establece el contexto del depurador a la hora en que el evento seleccionado se recopilan, que muestra los datos históricos el **pila de llamadas**, **devariableslocales** y los demás que participan en ventanas del depurador. Si el código fuente está disponible, Visual Studio mueve el puntero al código correspondiente en la ventana de código fuente para que pueda examinarlo.  
   
      La siguiente captura de pantalla es de Visual Studio 2015 Update 1.  
   
@@ -83,7 +84,7 @@ Puede usar IntelliTrace para recopilar información sobre determinados eventos, 
   
 ## <a name="next-steps"></a>Pasos siguientes
 
-Se pueden utilizar algunas de las características avanzadas de IntelliTrace con depuración histórica:
+Puede usar algunas de las características avanzadas de IntelliTrace con depuración histórica:
 
- - Para ver las instantáneas, vea [ver instantáneas mediante la devolución de paso de IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md)
- - Para obtener información sobre cómo inspeccionar variables y navegar por el código, vea [inspeccionar la aplicación con depuración histórica](../debugger/historical-debugging-inspect-app.md)
+ - Para ver las instantáneas, vea [inspeccionar el estado anterior de aplicación con IntelliTrace](../debugger/view-historical-application-state.md)
+ - Para obtener información sobre cómo inspeccionar variables y navegar por el código, consulte [inspeccionar la aplicación con depuración histórica](../debugger/historical-debugging-inspect-app.md)

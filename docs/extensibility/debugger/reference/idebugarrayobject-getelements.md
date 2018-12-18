@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae1d22af6796c2de72c763137c8f96feb7885407
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7693c4ed3442cf86a0e310a6e2dd6d75655fcb69
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904731"
 ---
 # <a name="idebugarrayobjectgetelements"></a>IDebugArrayObject::GetElements
 Obtiene un enumerador de todos los elementos de la matriz.  
@@ -46,7 +47,7 @@ int GetElements(
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Como alternativa, use la [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) y [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) métodos para recorrer en iteración los elementos.  
+ Como alternativa, use el [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) y [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) métodos para recorrer en iteración los elementos.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

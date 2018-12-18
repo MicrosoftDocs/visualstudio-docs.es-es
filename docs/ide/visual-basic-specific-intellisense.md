@@ -1,10 +1,11 @@
 ---
-title: IntelliSense para Visual Basic | Microsoft Docs
-ms.custom: ''
+title: IntelliSense de Visual Basic
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
+f1_keywords:
+- VS.ToolsOptionsPages.Text_Editor.Basic.IntelliSense
 helpviewer_keywords:
 - IntelliSense [Visual Basic]
 - IntelliSense [Visual Studio], Visual Basic
@@ -13,11 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44ff32ed0452efb5e413d730a69293147fec4c7c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1bd68ae1996ce9ca70e2a8bf1dcb66822e1a8bb1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823286"
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>Archivos de código de IntelliSense para Visual Basic
 
@@ -39,7 +41,7 @@ Las sugerencias de sintaxis muestran la sintaxis de la instrucción que está es
 
 La finalización se puede desactivar de forma predeterminada al anular la selección de **Lista de miembros automática** en la página de propiedades **General** de la carpeta **Visual Basic**.
 
-Puede invocar manualmente la finalización al invocar Lista de miembros, Palabra completa o ALT+FLECHA DERECHA. Para obtener más información, vea [Usar IntelliSense](../ide/using-intellisense.md).
+Puede invocar manualmente la finalización al invocar Lista de miembros, Palabra completa o **ALT**+**FLECHA DERECHA**. Para obtener más información, vea [Usar IntelliSense](../ide/using-intellisense.md).
 
 ## <a name="intellisense-in-zone"></a>IntelliSense en zona
 
@@ -49,7 +51,7 @@ IntelliSense en zona ayuda a los desarrolladores de Visual Basic que necesitan i
 
 - Muestra las API de la zona elegida como disponibles en Lista de miembros y las API que requieren permisos adicionales como no disponibles.
 
-Para más información, vea [Code Access Security for ClickOnce Applications](../deployment/code-access-security-for-clickonce-applications.md) (Seguridad de acceso del código para aplicaciones ClickOnce).
+Para más información, vea [Seguridad de acceso del código para aplicaciones ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).
 
 ## <a name="filtered-completion-lists"></a>Listas de finalización filtradas
 
@@ -57,4 +59,4 @@ En Visual Basic, las listas de finalización de IntelliSense tienen dos controle
 
 ## <a name="see-also"></a>Vea también
 
-[Usar IntelliSense](../ide/using-intellisense.md)
+- [Uso de IntelliSense](../ide/using-intellisense.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_unalignedtype | Documentos de Microsoft'
+title: Get_unalignedtype | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,14 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a603fb7df64ace0b5e0c2f99db8a0aac18281430
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b005ce077aa8cd94efc06c42673609adacaa4abc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906772"
 ---
 # <a name="idiasymbolgetunalignedtype"></a>IDiaSymbol::get_unalignedType
-Recupera una marca que especifica si el tipo de datos definido por el usuario es desalineado.  
+Recupera una marca que especifica si el tipo de datos definido por el usuario es no alineado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -33,10 +34,10 @@ HRESULT get_unalignedType (
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve `TRUE` si el tipo de datos definido por el usuario es desalineadas; en caso contrario, devuelve `FALSE`.  
+ [out] Devuelve `TRUE` si el tipo de datos definido por el usuario no alineada; de lo contrario, devuelve `FALSE`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  

@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56cc9580ec2e434066d1c0a3ce674a4111e433af
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f9ccfd7ceeaf63ca385c9c4b1e6ac4d734ade0f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912869"
 ---
 # <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
-Recupera una lista de las rutas de acceso de código para una posición determinada en un archivo de código fuente.  
+Recupera una lista de las rutas de acceso del código para una posición determinada en un archivo de origen.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -53,25 +54,25 @@ int EnumCodePaths(
  [in] La palabra situada bajo el cursor en el **origen** o **desensamblado** vista en el IDE.  
   
  `pStart`  
- [in] Un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que representa el contexto actual del código.  
+ [in] Un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que representa el contexto de código actual.  
   
  `pFrame`  
  [in] Un [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) objeto que representa el marco de pila asociada con el punto de interrupción actual.  
   
  `fSource`  
- [in] Es distinto de cero (`TRUE`) si está en el **origen** vista, o cero (`FALSE`) si está en el **desensamblado** vista.  
+ [in] Distinto de cero (`TRUE`) si se encuentra en la **origen** vista, o cero (`FALSE`) si se encuentra en la **desensamblado** vista.  
   
  `ppEnum`  
  [out] Devuelve un [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md) objeto que contiene una lista de las rutas de acceso del código.  
   
  `ppSafety`  
- [out] Devuelve un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que representa un contexto de código adicional que se establecerá como un punto de interrupción en caso de ruta de acceso de código de la elegida se ha omitido. Esto puede ocurrir en el caso de una expresión booleana cortocircuita, por ejemplo.  
+ [out] Devuelve un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que representa un contexto de código adicional que se establecerá como un punto de interrupción en caso de ruta de acceso de código seleccionado se omite. Esto puede ocurrir en el caso de una expresión booleana cortocircuita, por ejemplo.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Una ruta de acceso de código describe el nombre de un método o función que se llama para llegar al punto actual en la ejecución del programa. Una lista de las rutas de código representa la pila de llamadas.  
+ Una ruta de acceso de código describe el nombre de un método o función que se llamó para llegar al punto actual en la ejecución del programa. Una lista de las rutas de código representa la pila de llamadas.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

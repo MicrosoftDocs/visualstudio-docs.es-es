@@ -1,5 +1,5 @@
 ---
-title: Otorgar confianza a las soluciones de Office mediante listas de inclusión | Documentos de Microsoft
+title: Confiar en soluciones de Office mediante listas de inclusión
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,13 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4e8b26ef4c262f830cd2c6444b56e05f128316c6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9e2fea115b941af4b119b59dade16114cab3383d
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38783706"
 ---
-# <a name="trusting-office-solutions-by-using-inclusion-lists"></a>Otorgar confianza a las soluciones de Office mediante listas de inclusión
+# <a name="trust-office-solutions-by-using-inclusion-lists"></a>Confiar en soluciones de Office mediante listas de inclusión
   Las listas de inclusión permiten a los usuarios decidir si las soluciones de Office firmadas con un certificado que identifique al publicador son fiables. Las listas de inclusión son específicas del usuario y se pueden usar en las personalizaciones de nivel de documento y en los complementos VSTO.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -32,20 +33,20 @@ ms.lasthandoff: 04/16/2018
  Cuando un usuario inicia una solución de Office que no se haya indicado como fiable, la solución de Microsoft Office le solicita que confirme si confía en esa solución mediante una pregunta de seguridad de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] . Si el usuario decide que la solución es fiable, la personalización se ejecuta y no se vuelve a preguntar al usuario.  
   
 ## <a name="inclusion-list-and-windows-installer"></a>Lista de inclusión y Windows Installer  
- Para instalar las soluciones de Office en el directorio Archivos de programa mediante Windows Installer, se requieren derechos de administrador. En cuanto a las soluciones de Office del directorio Archivos de programa, Visual Studio Tools para Office Runtime no comprueba la lista de inclusión debido a que las soluciones de Office ya poseen permisos FullTrust.  
+ Instalar soluciones de Office en el *archivos de programa* directory mediante Windows Installer requiere derechos de administrador. Para soluciones de Office en el *archivos de programa* directorio, Visual Studio Tools para Office runtime ya no comprueba la lista de inclusión porque ya se ha concedido permisos FullTrust a las soluciones de Office.  
   
-## <a name="clickonce-trust-prompt"></a>Solicitud de fiabilidad de ClickOnce  
+## <a name="clickonce-trust-prompt"></a>Aviso de confianza de ClickOnce  
  Si se usa la implementación [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] para soluciones de Office, los administradores podrán configurar el nivel del mensaje de solicitud de fiabilidad para permitir que se realice la solicitud, para deshabilitarla o para solicitar un certificado de confianza. Esta configuración se realiza con una clave de registro que controla el acceso a la lista de inclusión.  
   
  Si se deshabilita la solicitud, sólo se pueden instalar las soluciones que dispongan de un certificado de confianza. Si el nivel de la solicitud se establece como “Authenticode necesario”, la solución se debe firmar con un certificado procedente de una autoridad conocida, pero no será necesario ningún certificado que vincule a una autoridad raíz de confianza (es decir, un certificado de confianza). Si se permite la solicitud, la solución se podrá firmar mediante un certificado cuya identidad sea desconocida. En este caso, la decisión de decidir si se confía en ese elemento o no, se deja al usuario final; es más, basta con un certificado temporal para instalar una solución.  
   
- Para obtener más información, consulte [How to: Configure Inclusion List Security](../vsto/how-to-configure-inclusion-list-security.md) y la tabla 2 sobre los efectos que el nivel de solicitud de los valores de la clave de registro tienen en el inicio, en [Configurar los publicadores fiables de ClickOnce](http://go.microsoft.com/fwlink/?LinkId=94774).  
+ Para obtener más información, consulte [Cómo: configurar la seguridad de la lista de inclusión](../vsto/how-to-configure-inclusion-list-security.md) y tabla 2 sobre los efectos que nivel de registro clave valor iniciar tienen, en [editores de confianza de ClickOnce configurar](http://go.microsoft.com/fwlink/?LinkId=94774).  
   
 ## <a name="structure-of-the-inclusion-list"></a>Estructura de la lista de inclusión  
  Una entrada de lista de inclusión válida tiene dos partes: una ruta de acceso al manifiesto de implementación y la clave pública que se usa para firmar la solución. Una vez agregada una solución a la lista de inclusión, se considera de confianza. Cuando se ejecuta la solución de Office, la aplicación de Office compara la clave pública de la lista de inclusión con la clave de firma del manifiesto de implementación, para comprobar que la solución que se está ejecutando actualmente es igual que la versión de confianza original.  
   
 ## <a name="see-also"></a>Vea también  
- [Otorgar confianza a las soluciones de Office](../vsto/granting-trust-to-office-solutions.md)   
- [Protección de soluciones de Office](../vsto/securing-office-solutions.md)  
+ [Conceder confianza a las soluciones de Office](../vsto/granting-trust-to-office-solutions.md)   
+ [Proteger soluciones de Office](../vsto/securing-office-solutions.md)  
   
   

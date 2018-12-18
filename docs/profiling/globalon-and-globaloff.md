@@ -10,16 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3009130acbbde431c9751df848eaef252c0bdd04
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1731c47d3de9068affd4c7561e1dae94960b2b44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835922"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn y GlobalOff
-Las opciones **GlobalOff** y **GlobalOn** de VSPerfCmd.exe pausan y reanudan la generación de perfiles para todos los procesos y subprocesos de una sesión de generación de perfiles de la línea de comandos.  
+Las opciones **GlobalOff** y **GlobalOn** de *VSPerfCmd.exe* pausan y reanudan la generación de perfiles para todos los procesos y subprocesos de una sesión de generación de perfiles de la línea de comandos.  
   
- Puede especificar **GlobalOn** y **GlobalOff** como únicas opciones en una línea de comandos de VSPerfCmd.exe o bien puede incluirlas en líneas de comandos que también contengan las opciones **Start**, **Launch** o **Attach**.  
+ Puede especificar **GlobalOn** y **GlobalOff** como únicas opciones en una línea de comandos de *VSPerfCmd.exe* o bien puede incluirlas en líneas de comandos que también contengan las opciones **Start**, **Launch** o **Attach**.  
   
  **GlobalOn** y **GlobalOff** también se pueden combinar con las opciones **ProcessOn**, **ProcessOff**, **ThreadOn** y **ThreadOff**.  
   
@@ -27,15 +28,15 @@ Las opciones **GlobalOff** y **GlobalOn** de VSPerfCmd.exe pausan y reanudan la 
   
  Las opciones **GlobalOn** y **GlobalOff** también afectan al recuento de inicio/parada global manipulado por las funciones de la API del generador de perfiles.  
   
--   **GlobalOff** establece inmediatamente el contador de inicio/parada global en 0 y, en consecuencia, detiene la generación de perfiles.  
+- **GlobalOff** establece inmediatamente el contador de inicio/parada global en 0 y, en consecuencia, detiene la generación de perfiles.  
   
--   **GlobalOn** establece inmediatamente el contador de inicio/parada global en 1 y, en consecuencia, reanuda la generación de perfiles.  
+- **GlobalOn** establece inmediatamente el contador de inicio/parada global en 1 y, en consecuencia, reanuda la generación de perfiles.  
   
- Para más información, vea [API de herramientas de generación de perfiles](../profiling/profiling-tools-apis.md).  
+  Para obtener más información, vea [API de herramientas de generación de perfiles](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cmd  
 VSPerfCmd.exe /{GlobalOff|GlobalOn}  
   
 VSPerfCmd.exe /Start:Method /{GlobalOff|GlobalOn} [Options]  
@@ -67,7 +68,7 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 ## <a name="example"></a>Ejemplo  
  En este ejemplo, las opciones **GlobalOff** y **GlobalOn** se utilizan para evitar la recopilación de datos de generación de perfiles para el inicio y el cierre de la aplicación.  
   
-```  
+```cmd  
 ; Initialize the profiler with profiling stopped.  
 VSPerfCmd.exe /Start:Trace /Output:Instrument.vsp /GlobalOff  
 ; Start an instrumented application and wait for it to warm up.  
@@ -84,6 +85,6 @@ VSPerfCmd /Shutdown
   
 ## <a name="see-also"></a>Vea también  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Generar perfiles de servicios](../profiling/command-line-profiling-of-services.md)
+ [Generación de perfiles de aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Generación de perfiles de aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Generar perfiles para servicios](../profiling/command-line-profiling-of-services.md)

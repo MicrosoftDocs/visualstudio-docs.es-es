@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34bc27a5f523a04b44d77fd7df9038c6571a45b0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af64ea13c12eddb700985ec285a7394a3dc837f2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902898"
 ---
 # <a name="ienumdebugobjectsgetcount"></a>IEnumDebugObjects::GetCount
 Este método devuelve el número de elementos de la enumeración.  
@@ -43,10 +44,10 @@ int GetCount(
  [out] Devuelve el número de elementos de la enumeración.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método no forma parte de la interfaz de enumeración de COM habitual que especifica que deban implementarse solo siguiente, clon, Skip y restablecimiento.  
+ Este método no forma parte de la interfaz de enumeración COM habitual que especifica que deben implementarse solo siguiente, clonar, Skip y restablecimiento.  
   
 ## <a name="see-also"></a>Vea también  
  [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)

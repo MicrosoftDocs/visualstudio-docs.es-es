@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acb8959aa18741c61e4a6719641645eb9be9ea70
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3e6c28682bb6b93a2a72aaa353a2af68a9450cb9
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058596"
 ---
-# <a name="visualizing-eventsource-events-as-markers"></a>Visualizar eventos EventSource como marcadores
+# <a name="visualize-eventsource-events-as-markers"></a>Visualizar eventos EventSource como marcadores
 El visualizador de simultaneidad puede mostrar eventos EventSource como marcadores, y puede controlar cómo se muestran los marcadores. Para ver los marcadores de EventSource, registre el GUID del proveedor de ETW mediante el cuadro de diálogo [Configuración avanzada](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). El visualizador de simultaneidad tiene convenciones predeterminadas para representar eventos de EventSource como [marcadores de marca](../profiling/flag-markers.md), [marcadores de intervalo](../profiling/span-markers.md) y [marcadores de mensaje](../profiling/message-markers.md). Puede personalizar cómo se muestran los eventos EventSource agregando campos personalizados a los eventos. Para obtener más información sobre los marcadores, consulte [Marcadores del visualizador de simultaneidad](../profiling/concurrency-visualizer-markers.md). Para obtener más información sobre eventos EventSource, consulte <xref:System.Diagnostics.Tracing>.  
   
 ## <a name="default-visualization-of-eventsource-events"></a>Visualización predeterminada de eventos EventSource  
@@ -24,9 +25,9 @@ El visualizador de simultaneidad puede mostrar eventos EventSource como marcador
   
 ### <a name="marker-type"></a>Tipo de marcador  
   
-1.  Los eventos que tienen un [Opcode](http://msdn.microsoft.com/en-us/d97953df-669b-4c55-b1a8-925022b339b7) win:Start orwin:Stop se tratan como el principio o el final de un intervalo, respectivamente.  Los intervalos anidados o superpuestos no se pueden mostrar. Los pares de eventos que comienzan en un subproceso y acaban en otro no se pueden mostrar.  
+1.  Los eventos que tienen un [Opcode](/windows/desktop/WES/eventmanifestschema-opcodetype-complextype) win:Start orwin:Stop se tratan como el principio o el final de un intervalo, respectivamente.  Los intervalos anidados o superpuestos no se pueden mostrar. Los pares de eventos que comienzan en un subproceso y acaban en otro no se pueden mostrar.  
   
-2.  Un evento cuyo código de operación no es win:Start ni win:Stop se trata como una marca de marcador a menos que su [Level](http://msdn.microsoft.com/en-us/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (campo de EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) sea win:Verbose o superior.  
+2.  Un evento cuyo código de operación no es win:Start ni win:Stop se trata como una marca de marcador a menos que su [Level](/windows/desktop/WES/defining-severity-levels) (campo de EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) sea win:Verbose o superior.  
   
 3.  En los demás casos, el evento se trata como un mensaje.  
   
@@ -52,7 +53,7 @@ El visualizador de simultaneidad puede mostrar eventos EventSource como marcador
 ### <a name="text"></a>Texto  
  Si se definió para el evento un mensaje de texto con formato de tipo printf, se muestra como la descripción del marcador. De lo contrario, la descripción es el nombre del evento y el valor de cada campo de carga.  
   
-## <a name="customizing-visualization-of-eventsource-events"></a>Personalizar la visualización de eventos EventSource  
+## <a name="customize-visualization-of-eventsource-events"></a>Personalizar la visualización de eventos EventSource  
  Puede personalizar cómo se muestran los eventos EventSource agregando los campos correspondientes al evento, tal como se describe en las siguientes secciones.  
   
 ### <a name="marker-type"></a>Tipo de marcador  
@@ -95,4 +96,4 @@ El visualizador de simultaneidad puede mostrar eventos EventSource como marcador
 >  Para usar SpanID para anidar intervalos, permita que se superpongan en el mismo subproceso o no permita que se inicien en un subproceso terminen en otro.  
   
 ## <a name="see-also"></a>Vea también  
- [Marcadores del visualizador de simultaneidad](../profiling/concurrency-visualizer-markers.md)
+ [Marcadores del Visualizador de simultaneidad](../profiling/concurrency-visualizer-markers.md)

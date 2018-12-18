@@ -1,5 +1,5 @@
 ---
-title: Agregar contadores a conjuntos de contadores para pruebas de carga en Visual Studio | Microsoft Docs
+title: Adición de contadores a conjuntos de contadores para pruebas de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,21 +10,25 @@ ms.assetid: e17d0e71-f982-4fc1-a2df-a1065d37473d
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 153e7369397b961338b4c4c495cfd953f5271c0d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b2a6ba058ba7c09eb66c15cb578fcaaf36d2ced2
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894708"
 ---
-# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Cómo: Agregar contadores a conjuntos de contadores usando el Editor de prueba de carga
+# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Cómo: Agregar contadores a conjuntos de contadores mediante el Editor de pruebas de carga
 
-Cuando se crea una prueba de carga con el **Asistente para prueba de carga**, se agrega un conjunto inicial de contadores. Este conjunto inicial de contadores ofrece una serie de conjuntos de contadores predefinidos para la prueba de carga. Para obtener más información, consulte [Especificar los conjuntos de contadores y las reglas de umbral para equipos en una prueba de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+Cuando se crea una prueba de carga con el **Asistente para prueba de carga**, se agrega un conjunto inicial de contadores. Este conjunto inicial de contadores ofrece una serie de conjuntos de contadores predefinidos para la prueba de carga. Para más información, consulte [Especificar los conjuntos de contadores y las reglas de umbral para equipos en una prueba de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
->  Si las pruebas de carga se distribuyen entre varios equipos remotos, los contadores de controlador y de agente se asignan automáticamente a los conjuntos de contadores de controlador y de agente. Para obtener más información sobre cómo usar máquinas remotas en la prueba de carga, vea [Controladores y agentes de prueba](configure-test-agents-and-controllers-for-load-tests.md).
+> Si las pruebas de carga se distribuyen entre varios equipos remotos, los contadores de controlador y de agente se asignan automáticamente a los conjuntos de contadores de controlador y de agente. Para obtener más información sobre cómo usar máquinas remotas en la prueba de carga, vea [Controladores y agentes de prueba](configure-test-agents-and-controllers-for-load-tests.md).
 
- Los contadores se administran en el **Editor de pruebas de carga**. Los conjuntos de contadores que ya se han agregado a la prueba están visibles en el nodo **Conjuntos de contadores** de la prueba de carga. Después de crear una prueba de carga, puede agregar nuevos contadores a los conjuntos de contadores existentes.
+Los contadores se administran en el **Editor de pruebas de carga**. Los conjuntos de contadores que ya se han agregado a la prueba están visibles en el nodo **Conjuntos de contadores** de la prueba de carga. Después de crear una prueba de carga, puede agregar nuevos contadores a los conjuntos de contadores existentes.
 
 ## <a name="to-add-counters-to-a-counter-set"></a>Para agregar contadores a un conjunto de contadores
 
@@ -58,7 +62,7 @@ Cuando se crea una prueba de carga con el **Asistente para prueba de carga**, se
 7.  Elija **Aceptar**.
 
     > [!NOTE]
-    > Otra forma de agregar contadores a un conjunto de contadores consiste en elegir el botón secundario en un contador o categoría de contador existente, elegir Copiar y, a continuación, pegar el contador o la categoría en un nodo de conjuntos de contadores distinto. Si se copian contadores adicionales que no son necesarios, pueden eliminarse.
+    > Otra forma de agregar contadores a un conjunto de contadores consiste en elegir un contador o categoría de contador existentes, elegir Copiar y, a continuación, pegarlos en un nodo de conjunto de contadores distinto. Si se copian contadores adicionales que no son necesarios, pueden eliminarse.
 
 ## <a name="see-also"></a>Vea también
 

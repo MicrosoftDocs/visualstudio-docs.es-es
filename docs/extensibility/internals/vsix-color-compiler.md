@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144335"
 ---
 # <a name="vsix-color-compiler"></a>Compilador de Color VSIX
 La herramienta de compilador de Color de extensión de Visual Studio es una aplicación de consola que toma un archivo .xml que representa los colores de los temas de Visual Studio existentes y convierte a un .pkgdef archivos para que los colores se pueden utilizar en Visual Studio. Dado que es más fácil comparar las diferencias entre los archivos .xml, esta herramienta es útil para administrar los colores personalizados en el control de código fuente. También puede enlazar con entornos de compilación para que el resultado de la compilación es un archivo .pkgdef válido.  

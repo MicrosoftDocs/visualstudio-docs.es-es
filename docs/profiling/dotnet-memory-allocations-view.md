@@ -17,29 +17,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b293c5a6fe64324cb306933d90049548e7a6098
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b7a473a7c6758fe58c82f8894822d3a250165a43
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933682"
 ---
 # <a name="net-memory-allocations-view"></a>Vista de asignaciones de memoria de .NET
 La vista de asignaciones enumera los tipos que se han creado durante la generación de perfiles. Cada tipo es el nodo raíz de un árbol de llamadas que muestra las rutas de ejecución de la función que dieron lugar a las asignaciones del tipo.  
   
  Los datos en una fila de tipo muestran el número total de objetos del tipo que se han creado en la generación de perfiles y el número total de bytes asignados a los objetos de ese tipo. Los valores inclusivos y exclusivos de un tipo son siempre los mismos.  
   
--   Los valores inclusivos corresponden a los objetos creados en las instancias de la función y sus funciones secundarias a las que llamó la función primaria en el árbol de llamadas.  
+- Los valores inclusivos corresponden a los objetos creados en las instancias de la función y sus funciones secundarias a las que llamó la función primaria en el árbol de llamadas.  
   
--   Los valores exclusivos corresponden a los objetos que la función creó directamente cuando la función primaria los llamó. No se incluyen los objetos creados en funciones secundarias.  
+- Los valores exclusivos corresponden a los objetos que la función creó directamente cuando la función primaria los llamó. No se incluyen los objetos creados en funciones secundarias.  
   
- Los datos de una función muestran el número de objetos creados y el número de bytes asignados a objetos del tipo primario.  
+  Los datos de una función muestran el número de objetos creados y el número de bytes asignados a objetos del tipo primario.  
   
-## <a name="highlighting-the-execution-hot-path"></a>Resaltar la ruta de acceso activa de ejecución  
+## <a name="highlight-the-execution-hot-path"></a>Resaltado de la ruta de acceso activa de ejecución  
  Puede encontrar la ruta de acceso de ejecución del árbol de llamadas que ha creado la mayoría de los objetos del tipo primario.  
   
 -   Para mostrar la ruta de acceso más activa, haga clic con el botón derecho en el tipo o función y, a continuación, haga clic en **Expandir ruta de acceso activa**.  
   
-|Columna|Description|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Name**|Nombre del tipo o función asignado.|  
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|  

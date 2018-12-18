@@ -1,6 +1,7 @@
 ---
 title: 'CA2238: Implementar los métodos de serialización de forma correcta'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -13,46 +14,51 @@ ms.assetid: 00882cf9-e10d-4d40-9126-3e6753e3c934
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aaed1be0ba5f44f3d426e9c9e825d063688a865
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c6f25aa6aa574f856bcce7601602ed2f195e785a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949544"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: Implementar los métodos de serialización de forma correcta
+
 |||
 |-|-|
 |TypeName|ImplementSerializationMethodsCorrectly|
 |Identificador de comprobación|CA2238|
 |Categoría|Microsoft.Usage|
-|Cambio problemático|Problemático: si el método es visible fuera del ensamblado.<br /><br /> No problemático: si el método no es visible fuera del ensamblado.|
+|Cambio problemático|Importante: si el método es visible fuera del ensamblado.<br /><br /> No problemático: si el método no es visible fuera del ensamblado.|
 
 ## <a name="cause"></a>Motivo
  Un método que controla un evento de serialización no especifica la firma correcta, el tipo de valor devuelto ni la visibilidad.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Un método se designa un controlador de eventos de serialización aplicando uno de los atributos de evento de serialización siguientes:
+ Un método se designa un controlador de eventos de serialización aplicando uno de los atributos de eventos de serialización siguientes:
 
--   <xref:System.Runtime.Serialization.OnSerializingAttribute?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.OnSerializingAttribute?displayProperty=fullName>
 
--   <xref:System.Runtime.Serialization.OnSerializedAttribute?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.OnSerializedAttribute?displayProperty=fullName>
 
--   <xref:System.Runtime.Serialization.OnDeserializingAttribute?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.OnDeserializingAttribute?displayProperty=fullName>
 
--   <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>
 
- Controladores de eventos de serialización toman un único parámetro de tipo <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, return `void`y tener `private` visibilidad.
+  Controladores de eventos de serialización toman un único parámetro de tipo <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, return `void`y tienen `private` visibilidad.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, corrija la firma, el tipo de valor devuelto ni la visibilidad del controlador de eventos de serialización.
+ Para corregir una infracción de esta regla, corrija la firma, el tipo de valor devuelto o la visibilidad del controlador de eventos de serialización.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra controladores de eventos de serialización correctamente declarados.
+ El ejemplo siguiente muestra los controladores de eventos de serialización correctamente declarados.
 
  [!code-vb[FxCop.Usage.SerializationEventHandlers#1](../code-quality/codesnippet/VisualBasic/ca2238-implement-serialization-methods-correctly_1.vb)]
  [!code-csharp[FxCop.Usage.SerializationEventHandlers#1](../code-quality/codesnippet/CSharp/ca2238-implement-serialization-methods-correctly_1.cs)]

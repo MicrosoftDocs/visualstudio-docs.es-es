@@ -13,21 +13,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19c611644b7bfcc1995d1289742901325e02d975
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a363554dfab8463ed91a82ffae9dea4f52d435d4
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815735"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Cómo: Crear un informe de seguimiento de llamadas de las Herramientas de generación de perfiles
 El *informe de seguimiento de llamadas* de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] muestra información de intervalos de cada punto de entrada y salida de las funciones de la aplicación y cada llamada a otras funciones realizadas por su función. Los informes de seguimiento de llamadas solo están disponibles para los datos de generación de perfiles si se recopilaron con el método de instrumentación.  
   
 > [!NOTE]
->  Los informes de seguimiento de llamadas no se pueden mostrar en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Debe usar la herramienta de línea de comandos **VSPerfReport** para generar un archivo XML o de valores separados por comas (.csv). Para obtener más información sobre esta herramienta, vea [VSPerfReport](../profiling/vsperfreport.md).  
+>  Los informes de seguimiento de llamadas no se pueden mostrar en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Debe usar la herramienta de línea de comandos **VSPerfReport** para generar un archivo de valores separados por comas (.*csv*) o .*xml*. Para obtener más información sobre esta herramienta, vea [VSPerfReport](../profiling/vsperfreport.md).  
   
 ### <a name="to-create-a-call-trace-report"></a>Para crear un informe de seguimiento de llamadas  
   
-1.  Abra una ventana del **símbolo del sistema**.  
+1.  Abra una ventana de **Símbolo del sistema**.  
   
 2.  En el símbolo del sistema, escriba el siguiente comando:  
   
@@ -35,9 +36,10 @@ El *informe de seguimiento de llamadas* de las herramientas de generación de pe
   
     |||  
     |-|-|  
-    |*ToolsPath*|Ruta de acceso a las herramientas de línea de comandos de las herramientas de generación de perfiles. Para obtener más información, consulte [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|  
-    |*VSPFile*|El archivo de datos de generación de perfiles (.vsp o .vsps). Se aceptan rutas de acceso completas y parciales.|  
+    |*ToolsPath*|Ruta de acceso a las herramientas de línea de comandos de las Herramientas de generación de perfiles. Para más información, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|  
+    |*VSPFile*|El archivo de datos de generación de perfiles (.*vsp* o .*vsps*). Se aceptan rutas de acceso completas y parciales.|  
     |Xml|Genera un informe con formato XML.|  
+
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: Recopilar datos de seguimiento de eventos para Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)   

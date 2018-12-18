@@ -1,5 +1,5 @@
 ---
-title: Personalización de comprobaciones en tiempo de ejecución nativo | Documentos de Microsoft
+title: Personalización de las comprobaciones nativas en tiempo de ejecución | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -24,28 +24,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f07e2e2258190196ee001a19d79989ee58239ff
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b6df61b1e0fde088fca87fa7a99f5590768889b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853934"
 ---
 # <a name="native-run-time-checks-customization"></a>Personalización de las comprobaciones nativas en tiempo de ejecución
-Cuando se compila con **/RTC** (comprobaciones en tiempo de ejecución) o usar el `runtime_checks` pragma, la biblioteca de tiempo de ejecución de C proporciona comprobaciones nativas en tiempo de ejecución. En algunos casos puede ser conveniente personalizar las comprobaciones en tiempo de ejecución:  
+Cuando se compila con **/RTC** (comprueba el tiempo de ejecución) o usar el `runtime_checks` pragma, la biblioteca de tiempo de ejecución de C proporciona comprobaciones nativas en tiempo de ejecución. En algunos casos puede ser conveniente personalizar las comprobaciones en tiempo de ejecución:  
   
--   Para enviar los mensajes de comprobación en tiempo de ejecución a un archivo o a un destino distinto del predeterminado.  
+- Para enviar los mensajes de comprobación en tiempo de ejecución a un archivo o a un destino distinto del predeterminado.  
   
--   Para especificar un destino de salida para los mensajes de comprobación en tiempo de ejecución en un depurador de otro proveedor.  
+- Para especificar un destino de salida para los mensajes de comprobación en tiempo de ejecución en un depurador de otro proveedor.  
   
--   Para generar mensajes de comprobación en tiempo de ejecución desde un programa compilado con una versión de distribución de la biblioteca en tiempo de ejecución de C. Las versiones de distribución de la biblioteca no utilizan `_CrtDbgReportW` para generar informes de errores en tiempo de ejecución. En su lugar, abren un **Assert** cuadro de diálogo para cada error en tiempo de ejecución.  
+- Para generar mensajes de comprobación en tiempo de ejecución desde un programa compilado con una versión de distribución de la biblioteca en tiempo de ejecución de C. Las versiones de distribución de la biblioteca no utilizan `_CrtDbgReportW` para generar informes de errores en tiempo de ejecución. En su lugar, mostrará un **Assert** cuadro de diálogo para cada error de tiempo de ejecución.  
   
- Para personalizar la comprobación de errores en tiempo de ejecución, puede:  
+  Para personalizar la comprobación de errores en tiempo de ejecución, puede:  
   
--   Escriba una función que crea un informe de error en tiempo de ejecución. Para obtener más información, consulte [Cómo: escribir una función de notificación de Error de tiempo de ejecución](../debugger/how-to-write-a-run-time-error-reporting-function.md).  
+- Escriba una función que crea un informe de error en tiempo de ejecución. Para obtener más información, consulte [Cómo: escribir una función de notificación de Error de tiempo de ejecución](../debugger/how-to-write-a-run-time-error-reporting-function.md).  
   
--   Personalizar el destino del mensaje de error.  
+- Personalizar el destino del mensaje de error.  
   
--   Consultar información sobre los errores de comprobación en tiempo de ejecución.  
+- Consultar información sobre los errores de comprobación en tiempo de ejecución.  
   
 ## <a name="customize-the-error-message-destination"></a>Personalizar el destino de los mensajes de error  
  Si utiliza `_CrtDbgReportW` para generar informes de errores, puede usar `_CrtSetReportMode` para especificar el destino de los mensajes de error.  

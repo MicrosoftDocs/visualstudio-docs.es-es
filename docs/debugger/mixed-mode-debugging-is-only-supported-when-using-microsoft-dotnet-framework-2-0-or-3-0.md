@@ -1,5 +1,5 @@
 ---
-title: Depuración en modo mixto se admite solo cuando se usa Microsoft .NET Framework 2.0 o 3.0 | Documentos de Microsoft
+title: Solo se admite la depuración en modo mixto cuando se usa Microsoft .NET Framework 2.0 o 3.0 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -17,11 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5492c79fa15582c5aeaf9b7794958a37bd569313
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9d51a0ca72840b20e23eaaa9db3a82382a3fa012
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284073"
 ---
 # <a name="mixed-mode-debugging-is-only-supported-when-using-microsoft-net-framework-20-or-30"></a>El modo de depuración mixto se admite solo cuando se usa Microsoft .NET Framework 2.0 ó 3.0
 Las versiones de Microsoft .NET Framework anteriores a la 2.0 no proporcionan compatibilidad para la depuración en modo mixto de procesos de 64 bits. Esto significa que no puede pasar de código administrado a código nativo, o de código nativo a código administrado, mientras está depurando.  
@@ -52,7 +53,7 @@ Las versiones de Microsoft .NET Framework anteriores a la 2.0 no proporcionan co
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Vea [configurar la depuración de SQL](http://msdn.microsoft.com/en-us/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
+-   Consulte [configurar la depuración de SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).  
   
 ## <a name="see-also"></a>Vea también  
  [Depurar aplicaciones de 64 bits](../debugger/debug-64-bit-applications.md)

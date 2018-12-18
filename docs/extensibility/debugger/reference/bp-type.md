@@ -1,5 +1,5 @@
 ---
-title: BP_TYPE | Documentos de Microsoft
+title: BP_TYPE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 823b2b4bd53aabfdbcc887fe8ce4e1bf1bf858d7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c525b30a290a1a0c5f732f65967acb50219c9647
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905174"
 ---
 # <a name="bptype"></a>BP_TYPE
-Especifica si el punto de interrupción está en una ubicación de código, que es una ubicación de datos o que es otro tipo de punto de interrupción.  
+Especifica si el punto de interrupción en una ubicación de código, es una ubicación de datos o es otro tipo de punto de interrupción.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -50,16 +51,16 @@ public enum enum_BP_TYPE {
  No especifica ningún tipo de punto de interrupción.  
   
  BPT_CODE  
- Especifica un punto de interrupción de código.  
+ Especifica un punto de interrupción del código.  
   
  BPT_DATA  
  Especifica un punto de interrupción de datos.  
   
  BPT_SPECIAL  
- Especifica un punto de interrupción que no es un código ni un tipo de datos. Este tipo está en desuso y no debe usarse.  
+ Especifica un punto de interrupción es un código ni un tipo de datos. Este tipo está en desuso y no debe usarse.  
   
 ## <a name="remarks"></a>Comentarios  
- Pasar como un parámetro a la [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) y [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) métodos.  
+ Pasado como parámetro a la [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) y [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) métodos.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  

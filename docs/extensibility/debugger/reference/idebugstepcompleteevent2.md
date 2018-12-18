@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31121318"
 ---
 # <a name="idebugstepcompleteevent2"></a>IDebugStepCompleteEvent2
 Esta interfaz se envía por el motor de depuración (Alemania) para el Administrador de sesión de depuración (SDM) cuando finalice el programa que se está depurando un paso a paso, un paso a paso o un paso fuera de una línea de código fuente o la línea o la instrucción.  

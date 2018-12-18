@@ -1,6 +1,7 @@
 ---
-title: Ejecución simbólica dinámica | Herramientas de prueba para desarrolladores de Microsoft IntelliTest | Microsoft Docs
+title: Ejecución simbólica dinámica | Herramientas de prueba para desarrolladores de Microsoft IntelliTest
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,13 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 083ee0e340688065ab765961676da63c405fd434
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 33bd31c59de85f70d653d2de912b8c9bc5bb0e30
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295896"
 ---
-# <a name="input-generatation-using-dynamic-symbolic-execution"></a>Generación de entradas con la ejecución simbólica dinámica
+# <a name="input-generation-using-dynamic-symbolic-execution"></a>Generación de entradas con la ejecución simbólica dinámica
 
 IntelliTest genera entradas para las [pruebas unitarias parametrizadas](test-generation.md#parameterized-unit-testing) analizando las condiciones de rama en el programa. Las entradas de prueba se eligen basándose en si pueden desencadenar nuevos comportamientos de rama del programa. El análisis es un proceso incremental. Afina un predicado **q: I -> {true, false}** en los parámetros de entrada de pruebas formales **I**. **q** representa el conjunto de comportamientos que IntelliTest ya ha observado. Inicialmente, **q := false**, ya que no se ha observado nada todavía.
 
@@ -70,7 +72,7 @@ El [solucionador de restricciones](#constraint-solver) de IntelliTest determina 
 IntelliTest puede [crear instancias de clases .NET existentes](#existing-classes) o puede usar IntelliTest para [crear objetos ficticios](#parameterized-mocks) automáticamente que implementen una interfaz específica y se comporten de diferentes maneras dependiendo del uso.
 
 <a name="existing-classes"></a>
-## <a name="instantiating-existing-classes"></a>Creación de instancias de las clases existentes
+## <a name="instantiate-existing-classes"></a>Creación de instancias de las clases existentes
 
 **¿Cuál es el problema?**
 
@@ -133,15 +135,15 @@ IntelliTest supervisa las instrucciones ejecutadas cuando ejecuta una prueba y e
 IntelliTest intenta minimizar el tamaño de las matrices y las cadenas necesarias para desencadenar comportamientos de programa interesantes.
 
 <a name="additional-inputs"></a>
-## <a name="obtaining-additional-inputs"></a>Obtención de entradas adicionales
+## <a name="obtain-additional-inputs"></a>Obtener entradas adicionales
 
 La clase estática [PexChoose](static-helper-classes.md#pexchoose) puede usarse para obtener entradas adicionales para una prueba, y puede usarse para implementar [objetos ficticios parametrizados](#parameterized-mocks).
 
 <a name="further-reading"></a>
 ## <a name="further-reading"></a>Información adicional
 
-* [¿Cómo funciona?](https://blogs.msdn.microsoft.com/visualstudioalm/2014/12/11/smart-unit-tests-a-mental-model/)
+* [¿Cómo funciona?](https://blogs.msdn.microsoft.com/devops/2014/12/11/smart-unit-tests-a-mental-model/)
 
 ## <a name="got-feedback"></a>¿Tiene comentarios?
 
-Publique sus ideas y solicitudes de características en **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+Publique sus ideas y solicitudes de características en [Comunidad de desarrolladores](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

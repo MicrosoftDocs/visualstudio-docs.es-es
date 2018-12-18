@@ -1,7 +1,7 @@
 ---
-title: Administrar propiedades de soluciones y proyectos | Microsoft Docs
-ms.custom: ''
+title: Administrar propiedades de soluciones y proyectos
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
@@ -9,21 +9,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a68cc558a52f7c8d66f76600cd68309ad67769c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77ac77ca999ef627c0f3c9e763b7e5799b97d679
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349249"
 ---
-# <a name="managing-project-and-solution-properties"></a>Administración de propiedades de soluciones y proyectos
+# <a name="manage-project-and-solution-properties"></a>Administrar propiedades de soluciones y proyectos
 
-Los proyectos tienen propiedades que controlan muchos aspectos de la compilación, la depuración, las pruebas y la implementación. Algunas propiedades están presentes en todos los tipos de proyecto, mientras que otras son exclusivas de plataformas o idiomas específicos. Para acceder a las propiedades del proyecto, haga clic con el botón derecho en el nodo del proyecto en el Explorador de soluciones y seleccione **Propiedades**, o bien escriba "propiedades" en el cuadro de búsqueda **Inicio rápido** de la barra de menús.
+Los proyectos tienen propiedades que controlan muchos aspectos de la compilación, la depuración, las pruebas y la implementación. Algunas propiedades están presentes en todos los tipos de proyecto, mientras que otras son exclusivas de plataformas o idiomas específicos. Para acceder a las propiedades del proyecto, haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** y elija **Propiedades**, o bien escriba "propiedades" en el cuadro de búsqueda **Inicio rápido** de la barra de menús.
 
-![Menú contextual del proyecto](../ide/media/vs2015_proj_prop_menu.gif "vs2015_proj_prop_menu")
+![Menú contextual del proyecto](../ide/media/vs2015_proj_prop_menu.gif)
 
 Los proyectos de .NET también pueden tener un nodo de propiedades en el propio árbol del proyecto.
 
-![Nodo de propiedades en el árbol del Explorador de soluciones](../ide/media/vs2015_props_se.png "VS2015_Props_SE")
+![Nodo de propiedades en el árbol del explorador de soluciones](../ide/media/vs2015_props_se.png)
+
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Administrar propiedades de soluciones y proyectos (Visual Studio para Mac)](/visualstudio/mac/managing-solutions-and-project-properties).
 
 ## <a name="project-properties"></a>Propiedades del proyecto
 
@@ -31,11 +35,11 @@ Las propiedades del proyecto se organizan en grupos y cada grupo tiene su propia
 
 ### <a name="c-visual-basic-and-f-projects"></a>Proyectos de C#, Visual Basic y F#
 
-En los proyectos de C#, F# y Visual Basic, las propiedades se exponen en el **Diseñador de proyectos**. En la siguiente ilustración se muestra la página Propiedad de compilación de un proyecto de WPF en C#:
+En los proyectos de C#, F# y Visual Basic, las propiedades se exponen en el **Diseñador de proyectos**. En la siguiente ilustración se muestra la página **Propiedad de compilación** de un proyecto de WPF en C#:
 
-![Diseñador de proyectos de Visual Studio](../ide/media/vs2015_proppage_build.png "VS2015_PropPage_Build")
+![Diseñador de proyectos de Visual Studio](../ide/media/vs2015_proppage_build.png)
 
-Para obtener información sobre estas páginas de propiedades en el Diseñador de proyectos, vea [Referencia de propiedades del proyecto](../ide/reference/project-properties-reference.md).
+Para obtener información sobre estas páginas de propiedades en el **Diseñador de proyectos**, vea [Referencia de propiedades del proyecto](../ide/reference/project-properties-reference.md).
 
 > [!TIP]
 > Las soluciones tienen algunas propiedades, al igual que los elementos de proyecto; estas propiedades son accesibles desde la [ventana Propiedades](../ide/reference/properties-window.md), no desde el **Diseñador de proyectos**.
@@ -44,14 +48,15 @@ Para obtener información sobre estas páginas de propiedades en el Diseñador d
 
 Los proyectos de C++ y JavaScript tienen una interfaz de usuario diferente para administrar las propiedades del proyecto. Esta ilustración muestra una página de propiedades de un proyecto de C++ (las páginas de JavaScript son similares):
 
-![Propiedades de proyecto de Visual C&#43;&#43;](../ide/media/vs2015_projprops_cpp.png "VS2015_ProjProps_cpp")
+![Propiedades de proyecto de Visual C&#43;&#43;](../ide/media/vs2015_projprops_cpp.png)
 
-Para obtener información sobre las propiedades de proyectos de C++, consulte [Working with Project Properties (C++)](/cpp/ide/working-with-project-properties) [Trabajo con propiedades de proyecto (C++)]. Para más información sobre las propiedades de JavaScript, vea [Página de propiedades, JavaScript](../ide/reference/property-pages-javascript.md).
+Para obtener información sobre las propiedades de proyectos de C++, vea [Trabajar con configuraciones de proyecto (C++)](/cpp/ide/working-with-project-properties). Para obtener más información sobre las propiedades de JavaScript, vea [Página de propiedades, JavaScript](../ide/reference/property-pages-javascript.md).
 
 ## <a name="solution-properties"></a>Propiedades de la solución
 
-Para obtener acceso a las propiedades de la solución, haga clic con el botón derecho en el nodo de la solución en el **Explorador de soluciones** y seleccione **Propiedades**. En el diálogo puede establecer configuraciones de proyecto para las compilaciones de depuración o de versión, elegir los proyectos que conformarán el proyecto de inicio al presionar F5 y establecer opciones de análisis de código.
+Para obtener acceso a las propiedades de la solución, haga clic con el botón derecho en el nodo de la solución en el **Explorador de soluciones** y seleccione **Propiedades**. En el cuadro de diálogo puede establecer configuraciones de proyecto para las compilaciones de **depuración** o **versión**, elegir los proyectos que van a conformar el proyecto de inicio al presionar **F5** y establecer opciones de análisis de código.
 
 ## <a name="see-also"></a>Vea también
 
-[Soluciones y proyectos en Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
+- [Soluciones y proyectos en Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
+- [Administrar propiedades de soluciones y proyectos (Visual Studio para Mac)](/visualstudio/mac/managing-solutions-and-project-properties)

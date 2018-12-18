@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: restaurar los comandos ocultos del depurador | Documentos de Microsoft'
+title: 'Cómo: restaurar los comandos ocultos del depurador | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f47f8cbb342f480e6124f765b3b427a615ec6a38
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b9ee37e72a52f866f5b67afaeacfd248628a3484
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176848"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Cómo: Restaurar los comandos ocultos del depurador
 Cuando se configura Visual Studio, se solicita la elección de un conjunto de configuraciones IDE predeterminadas para el lenguaje de programación principal. Las configuraciones IDE predeterminadas para algunos lenguajes pueden ocultar ciertos comandos del depurador.  
@@ -33,15 +34,15 @@ Cuando se configura Visual Studio, se solicita la elección de un conjunto de co
   
 ### <a name="to-restore-hidden-debugger-commands"></a>Restablecer comandos ocultos del depurador  
   
-1.  Con un proyecto abierto, en la **herramientas** menú, haga clic en **personalizar**.  
+1.  Con un proyecto abierto, en el **herramientas** menú, haga clic en **personalizar**.  
   
 2.  En el **personalizar** cuadro de diálogo, haga clic en el **comandos** ficha.  
   
-3.  En el **barra de menús:** lista desplegable, seleccione la **depurar** menú que desea que contenga el comando restaurado.  
+3.  En el **barra de menús:** lista desplegable, seleccione el **depurar** menú que desea que contenga el comando restaurado.  
   
 4.  Haga clic en el **Agregar comando...**  botón.  
   
-5.  En el **Agregar comando** , seleccione el comando que desea agregar y haga clic en **Aceptar**.  
+5.  En el **Agregar comando** , seleccione el comando que desee agregar y haga clic en **Aceptar**.  
   
 6.  Repita el paso anterior para agregar otro comando.  
   
@@ -61,7 +62,7 @@ Cuando se configura Visual Studio, se solicita la elección de un conjunto de co
   
 3.  En el **Guardar configuración actual** página, decida si desea guardar la configuración existente y, a continuación, haga clic en o no **siguiente**.  
   
-4.  En el **elegir una colección de configuraciones para importar** página, en la **la configuración predeterminada de** carpeta, elija una colección de configuraciones de desarrollo que incluya los comandos que desea utilizar. Si no sabe qué colección utilizar, pruebe **configuración General de desarrollo** o **configuración de desarrollo de Visual C++**, que ofrecen más comandos de depuración.  
+4.  En el **elija una colección de configuraciones para importar** página, en el **la configuración predeterminada de** carpeta, elija una colección de configuraciones de desarrollo que incluya los comandos que desea usar. Si no sabe qué colección utilizar, pruebe **configuración General de desarrollo** o **configuración de desarrollo de Visual C++**, que proporcionan el máximo partido a los comandos de depurador.  
   
 5.  Haga clic en **Siguiente**.  
   
@@ -75,4 +76,4 @@ Cuando se configura Visual Studio, se solicita la elección de un conjunto de co
   
 ## <a name="see-also"></a>Vea también  
  [Seguridad del depurador](../debugger/debugger-security.md)   
- [Conceptos básicos del depurador](../debugger/debugger-basics.md)
+ [Conceptos básicos del depurador](../debugger/getting-started-with-the-debugger.md)

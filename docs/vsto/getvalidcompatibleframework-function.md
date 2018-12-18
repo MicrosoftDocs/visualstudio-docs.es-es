@@ -1,5 +1,5 @@
 ---
-title: GetValidCompatibleFramework (función) | Documentos de Microsoft
+title: GetValidCompatibleFramework (función)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,32 +13,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b28587b44dd98630538bc8d6d04c5bc6049e3ca9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8cc16544df224e09724cae8a1f09f72039cb61e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894500"
 ---
 # <a name="getvalidcompatibleframework-function"></a>GetValidCompatibleFramework (función)
-  Esta API es compatible con la infraestructura de Office y no está diseñada para utilizarse directamente desde el código.  
-  
+  Esta API admite la infraestructura de Office y no está diseñada para utilizarse directamente desde el código.  
+
 ## <a name="syntax"></a>Sintaxis  
-  
-```  
+
+```csharp 
 HRESULT WINAPI GetValidCompatibleFramework(  
     LPCWSTR lpwszCompatibleFrameworksXML,  
     BSTR* pbstrValidFrameworkTag  
 );  
 ```  
-  
-#### <a name="parameters"></a>Parámetros  
-  
+
+### <a name="parameters"></a>Parámetros  
+
 |Parámetro|Descripción|  
 |---------------|-----------------|  
 |*lpwszCompatibleFrameworksXML*|No use.|  
 |*pbstrValidFrameworkTag*|No use.|  
-  
+
 ## <a name="return-value"></a>Valor devuelto  
  Si la función se realiza correctamente, devuelve **S_OK**. Si se produce un error en la función, devuelve un código de error.  
-  
-  
+

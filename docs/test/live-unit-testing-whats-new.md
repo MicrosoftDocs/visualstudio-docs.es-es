@@ -1,6 +1,7 @@
 ---
-title: Novedades de Live Unit Testing | Microsoft Docs
+title: Novedades de Live Unit Testing
 ms.date: 10-11-2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,11 +12,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: cda0426397afd1ce36a122c06eb010f30a671879
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4f3324d12d4bfc82e7980a690853b78321215205
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586510"
 ---
 # <a name="whats-new-in-live-unit-testing"></a>Novedades de Live Unit Testing
 
@@ -37,7 +39,7 @@ A partir de la versión 15.4 de Visual Studio 2017, Live Unit Testing incluye me
 
 - **Confiabilidad y rendimiento**. Ahora Live Unit Testing garantiza que el sistema puede detectar mejor los casos en los que los proyectos no hayan terminado de cargarse totalmente y evita el bloqueo de Live Unit Testing. Las mejoras en el rendimiento de compilación también evitan que se vuelvan a evaluar los proyectos de MSBuild cuando el sistema sepa que no ha cambiado nada en el archivo del proyecto.  
 
-- **Diversas mejoras de la interfaz de usuario**. La confusa opción **Live Test Set – Include/Exclude** (Conjunto de pruebas en directo – Incluir/Excluir) desde el gesto contextual ha cambiado a **Live Unit Testing Include/Exclude** (Live Unit Testing Incluir/Excluir). Se ha quitado la opción **Reset clean** (Restablecer limpieza) del menú **Test**, **Live Unit Testing** (Probar, Live Unit Testing). Ahora se puede acceder a ella seleccionando **Herramientas**, **Opciones**, **Live Unit Testing** y **Delete Persisted Data** (Eliminar datos persistentes).
+- **Diversas mejoras de la interfaz de usuario**. La confusa opción **Live Test Set – Include/Exclude** (Conjunto de pruebas en directo – Incluir/Excluir) desde el gesto contextual ha cambiado a **Live Unit Testing Include/Exclude** (Live Unit Testing Incluir/Excluir). Se ha quitado la opción **Reset clean** (Restablecer limpieza) del menú **Prueba** > **Live Unit Testing**. Ahora se puede acceder a ella seleccionando **Herramientas** > **Opciones** > **Live Unit Testing** y **Delete Persisted Data** (Eliminar datos persistentes).
 
 ## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-153"></a>Novedades de Live Unit Testing para la versión 15.3 de Visual Studio 2017
 
@@ -63,6 +65,6 @@ Además de estas incorporaciones principales, Live Unit Testing incluye las sigu
    - Para MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]`
 
 ## <a name="see-also"></a>Vea también
-[Presentación de Live Unit Testing](live-unit-testing-intro.md)   
-[Live Unit Testing con Visual Studio 2017](live-unit-testing.md)
+- [Presentación de Live Unit Testing](live-unit-testing-intro.md)   
+- [Live Unit Testing con Visual Studio 2017](live-unit-testing.md)
 

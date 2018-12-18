@@ -1,5 +1,5 @@
 ---
-title: BP_COND_STYLE | Documentos de Microsoft
+title: BP_COND_STYLE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64c3ac876f0d7be8582ca8162fd93c83cb6d343e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8ff46d6cae842d258aab8fb03409ff263670c410
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939779"
 ---
 # <a name="bpcondstyle"></a>BP_COND_STYLE
-Especifica el estilo de condición de punto de interrupción para pendientes y enlaza los puntos de interrupción.  
+Especifica el estilo de condición de punto de interrupción para pendientes y puntos de interrupción enlazados.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -45,13 +46,13 @@ public enum enum_BP_COND_STYLE {
   
 ## <a name="members"></a>Miembros  
  BP_COND_NONE  
- Se activa el punto de interrupción cuando se alcanza la posición del punto de interrupción. No se especifica ninguna condición de punto de interrupción.  
+ Se desencadena el punto de interrupción cuando se alcanza la posición del punto de interrupción. No se especifica ninguna condición de punto de interrupción.  
   
  BP_COND_WHEN_TRUE  
- Se activa el punto de interrupción solo cuando la expresión condicional asociado con el punto de interrupción se evalúa como `true`.  
+ Se desencadena el punto de interrupción solo cuando la expresión condicional asociado con el punto de interrupción se evalúa como `true`.  
   
  BP_COND_WHEN_CHANGED  
- Se activa el punto de interrupción sólo cuando el valor de la expresión condicional asociado con el punto de interrupción ha cambiado respecto de su evaluación anterior.  
+ Se desencadena el punto de interrupción solo cuando el valor de la expresión condicional asociado con el punto de interrupción se ha cambiado respecto a su evaluación anterior.  
   
 ## <a name="remarks"></a>Comentarios  
  Utilizado para la `styleCondition` miembro de la [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) estructura.  

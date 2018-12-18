@@ -14,11 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7143892f71a798db1aa9f922a64eac320f973eb8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0238da9c435fcfc02aacf00e4e54459d0fc59c10
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853242"
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromtypedef"></a>IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef
 Recupera un tipo dado su token.  
@@ -51,13 +52,13 @@ int GetTypeFromTypeDef(
  [in] Identificador único del módulo.  
   
  `tokClass`  
- [in] Símbolo (token) que representa el tipo.  
+ [in] Que representa el tipo de token.  
   
  `ppType`  
  [out] Devuelve un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto que contiene el tipo.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugDynamicFieldCOMPlus](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus.md)

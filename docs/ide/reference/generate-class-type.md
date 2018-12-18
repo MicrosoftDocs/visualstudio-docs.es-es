@@ -1,9 +1,9 @@
 ---
-title: Generación de una clase o tipo en Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Generación de una clase o tipo en Visual Studio
 ms.date: 01/26/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
@@ -14,11 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 030c4736eea942432175d0320d020a6b45888517
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f7b8733e6c2a1464b5ea9c07c9c9109064183a6c
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296286"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generación de una clase o tipo en Visual Studio
 
@@ -40,24 +41,24 @@ Esta generación de código se aplica a:
 
    - C#:
 
-    ![Código resaltado (C#)](media/class-highlight-cs.png)
+       ![Código resaltado (C#)](media/class-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Código resaltado (VB)](media/class-highlight-vb.png)
+       ![Código resaltado (VB)](media/class-highlight-vb.png)
 
-1. A continuación, realice alguno de los siguientes procedimientos:
+2. A continuación, realice alguno de los siguientes procedimientos:
 
    - **Teclado**
-     - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
+      - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
    - **Mouse**
-     - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
-     - Mantenga el mouse sobre el subrayado ondulado de color rojo y haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece.
-     - Haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea con el subrayado ondulado de color rojo.
+      - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
+      - Mantenga el mouse sobre el subrayado ondulado de color rojo y haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece.
+      - Haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea con el subrayado ondulado de color rojo.
 
-    ![Vista previa de generación de clase](media/class-preview-cs.png)
+      ![Vista previa de generación de clase](media/class-preview-cs.png)
 
-1. Seleccione una de las opciones del menú desplegable:
+3. Seleccione una de las opciones del menú desplegable:
 
    - Generar clase "*TypeName*" en el nuevo archivo: Crea una clase denominada *TypeName* en un archivo denominado *TypeName*.cs/.vb
    - Generar clase "*TypeName*": Crea una clase denominada *TypeName* en el archivo actual.
@@ -67,11 +68,11 @@ Esta generación de código se aplica a:
    > [!TIP]
    > Use el vínculo **Vista previa de los cambios** en la parte inferior de la ventana de vista previa [para ver todos los cambios ](../../ide/preview-changes.md) que se aplicarán antes de realizar la selección.
 
-1. Si ha seleccionado el elemento **Generar nuevo tipo...**, se abre el cuadro de diálogo **Generar tipo**. Configure la accesibilidad, la clase y la ubicación del nuevo tipo.
+4. Si ha seleccionado el elemento **Generar nuevo tipo**, se abre el cuadro de diálogo **Generar tipo**. Configure la accesibilidad, la clase y la ubicación del nuevo tipo.
 
    ![Generar tipo](media/class-newtype-cs.png)
 
-   Selección | Description
+   Selección | Descripción
    --- | ---
    Access | Configure el tipo para que tenga acceso *Predeterminado*, *Interno* o *Público*.
    Tipo | Esta propiedad puede establecerse como *clase* o *struct*.

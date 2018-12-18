@@ -1,6 +1,7 @@
 ---
-title: Crear una prueba automatizada de IU controlada por datos en Visual Studio | Microsoft Docs
+title: Creación de una prueba automatizada de IU controlada por datos en Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,114 +11,120 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 202f2d0d077c3ebb7361a79f902f5b79adf3fb0d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c23d8149d6946464eef1a465ea952e6102d65086
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896146"
 ---
-# <a name="creating-a-data-driven-coded-ui-test"></a>Crear una prueba de IU codificada controlada por datos
+# <a name="create-a-data-driven-coded-ui-test"></a>Crear una prueba de IU codificada controlada por datos
 
 Para probar las distintas condiciones, puede ejecutar las pruebas varias veces con distintos valores de parámetros. Las pruebas de IU codificada controlada por datos son una forma cómoda de hacerlo. Defina los valores de parámetros en un origen de datos, y cada fila de dicho origen de datos será una iteración de la prueba de IU codificada. El resultado general de la prueba se basará en el resultado de todas las iteraciones. Por ejemplo, si se produce un error en una iteración de la prueba, el resultado general es error.
 
- **Requisitos**
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
--   Visual Studio Enterprise
+**Requisitos**
 
-## <a name="create-a-data-driven-coded-ui-test"></a>Crear una prueba de IU codificada controlada por datos
- En este ejemplo se crea una prueba de IU codificada que se ejecuta en la aplicación Calculadora de Windows. Esta suma dos números y utiliza una aserción para validar que la suma sea correcta. A continuación, la aserción y los valores de parámetro de ambos números se codifican para que se controlen por datos y se almacenan en un archivo de valores separados por comas (.csv).
+- Visual Studio Enterprise
+- Componente Prueba automatizada de IU
 
-#### <a name="step-1---create-a-coded-ui-test"></a>Paso 1: crear una prueba de IU codificada
+## <a name="create-a-test-project"></a>Crear un proyecto de prueba
 
-1.  Cree un proyecto.
+En este ejemplo se crea una prueba de IU codificada que se ejecuta en la aplicación Calculadora de Windows. Esta suma dos números y utiliza una aserción para validar que la suma sea correcta. A continuación, la aserción y los valores de parámetro de ambos números se codifican para que se controlen por datos y se almacenan en un archivo de valores separados por comas (.*csv*).
 
-     ![Cree un proyecto de prueba de IU codificada](../test/media/cuit_datadriven_.png "CUIT_dataDriven_")
+### <a name="step-1---create-a-coded-ui-test"></a>Paso 1: crear una prueba de IU codificada
 
-2.  Elija la opción de grabar las acciones.
+1. Cree un proyecto.
 
-     ![Elija la opción de grabar las acciones](../test/media/cuit_datadriven_generatecodedialog.png "CUIT_dataDriven_GenerateCodeDialog")
+    ![Crear un proyecto de prueba de IU codificada](../test/media/cuit_datadriven_.png)
 
-3.  Abra la aplicación Calculadora y empiece a grabar la prueba.
+   > [!NOTE]
+   > Si no ve la plantilla **Proyecto de prueba automatizada de IU**, necesitará [instalar el componente de prueba automatizada de IU](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
-     ![Grabe las acciones](../test/media/cuit_datadriven_cuitbuilder.png "CUIT_dataDriven_CUITBuilder")
+2. Elija la opción de **grabar las acciones**.
 
-4.  Sume 1 más 2, pause la grabadora y genere el método de prueba. Más adelante reemplazaremos los valores de entrada del usuario con los valores de un archivo de datos.
+    ![Seleccionar la grabación de acciones](../test/media/cuit_datadriven_generatecodedialog.png)
 
-     ![Genere el método de prueba](../test/media/cuit_datadriven_cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")
+3. Abra la aplicación Calculadora y empiece a grabar la prueba.
 
-     Cierre el generador de pruebas. El método se agrega a la prueba:
+    ![Registrar acciones](../test/media/cuit_datadriven_cuitbuilder.png)
 
-    ```csharp
-    [TestMethod]
-    public void CodedUITestMethod1()
-    {
-        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
-        this.UIMap.AddNumbers();
-    }
-    ```
+4. Sume 1 más 2, pause la grabadora y genere el método de prueba. Más adelante reemplazaremos los valores de entrada del usuario con los valores de un archivo de datos.
 
-5.  Use el método `AddNumbers()` para comprobar que se ejecuta la prueba. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Ejecutar pruebas**. (Método abreviado de teclado: Ctrl + R, T).
+    ![Generar método de prueba](../test/media/cuit_datadriven_cuitbuildergencode.png)
 
-     El resultado que indica si se ha superado la prueba se muestra en la ventana del Explorador de pruebas. Para abrir la ventana del Explorador de pruebas, en el menú **Prueba**, elija **Ventanas** y después **Explorador de pruebas**.
+    Cierre el generador de pruebas. El método se agrega a la prueba:
 
-6.  Como un origen de datos puede usarse también para los valores de parámetro de aserción (los cuales usan la prueba para comprobar los valores esperados), vamos a agregar una aserción para validar que la suma de los dos números es correcta. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Generar código para prueba de IU codificada** y después **Usar generador de pruebas de IU codificadas**.
+   ```csharp
+   [TestMethod]
+   public void CodedUITestMethod1()
+   {
+       // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+       this.UIMap.AddNumbers();
+   }
+   ```
 
-     Asigne el control de texto de la calculadora que muestre la suma.
+5. Use el método `AddNumbers()` para comprobar que se ejecuta la prueba. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Ejecutar pruebas**. (Método abreviado de teclado: **Control**+**R**,**T**).
 
-     ![Asignar el control de texto de la IU](../test/media/cuit_datadriven_addassertion.png "CUIT_dataDriven_AddAssertion")
+    El resultado que indica si se ha superado la prueba se muestra en la ventana del **Explorador de pruebas**. Para abrir la ventana del Explorador de pruebas, en el menú **Prueba**, elija **Ventanas** y después **Explorador de pruebas**.
 
-7.  Agregue una aserción que valide que el valor de la suma es correcto. Elija la propiedad **DisplayText** que tiene el valor**3** y después seleccione **Agregar aserción**. Use el comparador **AreEqual** y compruebe que el valor de comparación es **3**.
+6. Como un origen de datos puede usarse también para los valores de parámetro de aserción (los cuales usan la prueba para comprobar los valores esperados), vamos a agregar una aserción para validar que la suma de los dos números es correcta. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Generar código para prueba de IU codificada** y después **Usar generador de pruebas de IU codificadas**.
 
-     ![Configure la aserción](../test/media/cuit_datadriven_builderaddassertion2.png "CUIT_dataDriven_BuilderAddAssertion2")
+    Asigne el control de texto de la calculadora que muestre la suma.
 
-8.  Después de configurar la aserción, vuelva a generar código en el generador. De este modo se crea un nuevo método para la validación.
+    ![Asignar el control de texto de la IU](../test/media/cuit_datadriven_addassertion.png)
 
-     ![Genere el método de aserción](../test/media/cuit_datadriven_assertiongencode.png "CUIT_dataDriven_AssertionGenCode")
+7. Agregue una aserción que valide que el valor de la suma es correcto. Elija la propiedad **DisplayText** que tiene el valor**3** y después seleccione **Agregar aserción**. Use el comparador **AreEqual** y compruebe que el valor de comparación es **3**.
 
-     Dado que el método `ValidateSum` valida los resultados del método `AddNumbers`, desplácelo a la parte inferior del bloque de código.
+    ![Configurar la aserción](../test/media/cuit_datadriven_builderaddassertion2.png)
 
-    ```csharp
-    public void CodedUITestMethod1()
-    {
+8. Después de configurar la aserción, vuelva a generar código en el generador. De este modo se crea un nuevo método para la validación.
 
-        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
-        this.UIMap.AddNumbers();
-        this.UIMap.ValidateSum();
+    ![Generar el método de aserción](../test/media/cuit_datadriven_assertiongencode.png)
 
-    }
-    ```
+    Dado que el método `ValidateSum` valida los resultados del método `AddNumbers`, desplácelo a la parte inferior del bloque de código.
 
-9. Compruebe que la prueba se ejecuta utilizando el método `ValidateSum()`. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Ejecutar pruebas**. (Método abreviado de teclado: Ctrl + R, T).
+   ```csharp
+   public void CodedUITestMethod1()
+   {
+       // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+       this.UIMap.AddNumbers();
+       this.UIMap.ValidateSum();
+   }
+   ```
+
+9. Compruebe que la prueba se ejecuta utilizando el método `ValidateSum()`. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Ejecutar pruebas**. (Método abreviado de teclado: **Control**+**R**,**T**).
 
      En este momento, todos los valores de parámetro se definen en sus métodos como constantes. Después, vamos a crear un conjunto de datos para realizar la prueba controlada por datos.
 
-#### <a name="step-2---create-a-data-set"></a>Paso 2: crear un conjunto de datos
+### <a name="step-2---create-a-data-set"></a>Paso 2: crear un conjunto de datos
 
-1.  Agregue al proyecto dataDrivenSample un archivo de texto llamado `data.csv`.
+1.  Agregue al proyecto dataDrivenSample un archivo de texto llamado *data.csv*.
 
-     ![Agregar un archivo de valores separados por comas al proyecto](../test/media/cuit_datadriven_addcsvfile.png "CUIT_dataDriven_AddCSVFile")
+     ![Agregar un archivo de valores separados por comas al proyecto](../test/media/cuit_datadriven_addcsvfile.png)
 
-2.  Llene el archivo .csv con los siguientes datos:
+2.  Llene el archivo .*csv* con los siguientes datos:
 
     |Num1|Num2|Sum|
-    |----------|----------|---------|
+    |-|-|-|
     |3|4|7|
     |5|6|11|
     |6|8|14|
 
      Después de agregar los datos, el archivo debería ser similar al siguiente:
 
-     ![Rellene el archivo .CSV con datos](../test/media/cuit_datadriven_adddatatocsvfile.png "CUIT_dataDriven_AddDataToCSVFile")
+     ![Rellenar el archivo .csv con datos](../test/media/cuit_datadriven_adddatatocsvfile.png)
 
-3.  Es importante que guarde el archivo .csv utilizando la codificación correcta. En el menú **Archivo**, seleccione **Opciones avanzadas para guardar** y seleccione **Unicode (UTF-8 sin firma) – Página de códigos 65001** como codificación.
+3.  Es importante que guarde el archivo .*csv* con la codificación correcta. En el menú **Archivo**, seleccione **Opciones avanzadas para guardar** y seleccione **Unicode (UTF-8 sin firma) – Página de códigos 65001** como codificación.
 
-4.  El archivo .csv debe copiarse en el directorio de salida; de lo contrario, no podrá ejecutarse la prueba. Utilice la ventana Propiedades para copiarlo.
+4.  El archivo .*csv* debe copiarse en el directorio de salida. De lo contrario, no podrá ejecutarse la prueba. Use la ventana **Propiedades** para copiarlo.
 
-     ![Implemente el archivo .CSV](../test/media/cuit_datadriven_deploycsvfile.png "CUIT_dataDriven_DeployCSVFile")
+     ![Implementar el archivo .csv](../test/media/cuit_datadriven_deploycsvfile.png)
 
      Ahora que hemos creado el conjunto de datos, vamos a enlazar los datos a la prueba.
 
-#### <a name="step-3---add-data-source-binding"></a>Paso 3: agregar enlaces de origen de datos
+### <a name="step-3---add-data-source-binding"></a>Paso 3: agregar enlaces de origen de datos
 
 1.  Para enlazar el origen de datos, agregue un atributo `DataSource` al atributo `[TestMethod]` existente situado inmediatamente encima del método de prueba.
 
@@ -125,11 +132,9 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
     [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]
     public void CodedUITestMethod1()
     {
-
         // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
         this.UIMap.AddNumbers();
         this.UIMap.ValidateSum();
-
     }
     ```
 
@@ -144,9 +149,9 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
 
      Después, configuraremos la prueba para usar los valores del archivo de origen de datos.
 
-#### <a name="step-4---use-the-data-in-the-coded-ui-test"></a>Paso 4: usar los datos de la prueba de IU codificada
+### <a name="step-4---use-the-data-in-the-coded-ui-test"></a>Paso 4: usar los datos de la prueba de IU codificada
 
-1.  Agregue `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` al principio del archivo CodedUITest.cs:
+1.  Agregue `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` al principio del archivo *CodedUITest.cs*:
 
     ```csharp
     using System;
@@ -167,48 +172,43 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
     ```csharp
     public void CodedUITestMethod1()
     {
-
         // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
         this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();this.UIMap.UICalculatorWindow.UIItemWindow21.UIItem2Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num2"].ToString();
         this.UIMap.AddNumbers();
         this.UIMap.ValidateSumExpectedValues.UIItem2TextDisplayText = TestContext.DataRow["Sum"].ToString();
         this.UIMap.ValidateSum();
-
     }
     ```
 
      Para averiguar qué propiedades de búsqueda tienen datos por codificar, utilice el Editor de pruebas de IU codificadas.
 
-    -   Abra el archivo UIMap.uitest.
+    -   Abra el archivo *UIMap.uitest*.
 
-         ![Abra el Editor de prueba de IU codificada](../test/media/cuit_datadriven_opentesteditor.png "CUIT_dataDriven_OpenTestEditor")
+         ![Abrir el editor de pruebas de la IU codificada](../test/media/cuit_datadriven_opentesteditor.png)
 
     -   Elija la acción de la IU y observe la asignación de controles de IU correspondientes. Fíjese en cómo la asignación se corresponde con el código, por ejemplo, `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.
 
-         ![Utilice el editor de pruebas de la IU codificada para ayudar con el código](../test/media/cuit_datadriven_testeditor.png "CUIT_dataDriven_TestEditor")
+         ![Utilizar el editor de pruebas de la IU codificada para ayudar con el código](../test/media/cuit_datadriven_testeditor.png)
 
-    -   En la ventana Propiedades, abra **Propiedades de búsqueda**. El valor **Nombre** de las propiedades de búsqueda es lo que se está manipulando en el código que utiliza el origen de datos. Por ejemplo, a `SearchProperties` se le asignan los valores de la primera columna de cada fila de datos: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Para las tres iteraciones, esta prueba cambiará el valor **Nombre** de la propiedad de búsqueda a 3, 5 y, por último, 6.
+    -   En la ventana **Propiedades**, abra **Propiedades de búsqueda**. El valor **Nombre** de las propiedades de búsqueda es lo que se está manipulando en el código que utiliza el origen de datos. Por ejemplo, a `SearchProperties` se le asignan los valores de la primera columna de cada fila de datos: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Para las tres iteraciones, esta prueba cambiará el valor **Nombre** de la propiedad de búsqueda a 3, 5 y, por último, 6.
 
-         ![Utilice las propiedades de búsqueda para ayudar en la codificación](../test/media/cuit_datadriven_searchproperties.png "CUIT_dataDriven_SearchProperties")
+         ![Utilizar las propiedades de búsqueda para ayudar en la codificación](../test/media/cuit_datadriven_searchproperties.png)
 
 3.  Guarde la solución.
 
-#### <a name="step-5---run-the-data-driven-test"></a>Paso 5: ejecutar la prueba controlada por datos
+### <a name="step-5---run-the-data-driven-test"></a>Paso 5: ejecutar la prueba controlada por datos
 
 1.  Compruebe que la prueba está ahora controlada por datos ejecutándola de nuevo.
 
-     Debería ver como la prueba se ejecuta en las tres iteraciones utilizando los valores del archivo .csv. La validación también debería funcionar y la prueba debería mostrarse como superada en el Explorador de pruebas el paso.
-
- **Orientación**
-
- Para obtener más información, vea [Pruebas para la entrega continua con Visual Studio 2012 – Capítulo 2: Pruebas unitarias: prueba interna](http://go.microsoft.com/fwlink/?LinkID=255188) y [Pruebas para la entrega continua con Visual Studio 2012 – Capítulo 5: Automatización de las pruebas del sistema](http://go.microsoft.com/fwlink/?LinkID=255196)
+     Debería ver como la prueba se ejecuta en las tres iteraciones usando los valores del archivo .*csv*. La validación también debería funcionar y la prueba debería mostrarse como superada en el Explorador de pruebas el paso.
 
 ## <a name="q--a"></a>Preguntas y respuestas
 
 ###  <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> ¿Cuáles son los atributos de fuente de datos para otros tipos de orígenes de datos, como SQL Express o XML?
- Puede utilizar las cadenas de origen de datos de muestra de la tabla siguiente copiándolas en el código y personalizándolas en caso necesario.
 
- **Tipos y atributos de origen de datos**
+Puede utilizar las cadenas de origen de datos de muestra de la tabla siguiente copiándolas en el código y personalizándolas en caso necesario.
+
+**Tipos y atributos de origen de datos**
 
 -   CSV
 
@@ -230,28 +230,17 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
 
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`
 
-### <a name="q-can-i-use-data-driven-tests-on-my-windows-phone-app"></a>P: ¿Puedo usar pruebas controladas por datos en mi aplicación de Windows Phone?
- **R:** Sí. Las pruebas de interfaz de usuario codificadas controladas por datos para Windows Phone se definen mediante el atributo DataRow en un método de prueba. En el siguiente ejemplo, x e y usan los valores 1 y 2 para la primera iteración y -1 y -2 para la segunda iteración de la prueba.
-
-```csharp
-[DataRow(1, 2, DisplayName = "Add positive numbers")]
-[DataRow(-1, -2, DisplayName = "Add negative numbers")]
-[TestMethod]
-public void DataDrivingDemo_MyTestMethod(int x, int y)
-```
-
-Para obtener más información, consulte [Usar pruebas de interfaz de usuario codificadas controladas por datos en las aplicaciones de Windows Phone](../test/test-windows-phone-8-1-apps-with-coded-ui-tests.md#TestingPhoneAppsCodedUI_DataDriven).
-
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>P: ¿Por qué no puedo modificar el código en el archivo UIMap.Designer?
- **R:** Cualquier cambio que se efectúe en el código del archivo UIMapDesigner.cs se sobrescribirá cada vez que se genere código mediante UIMap - Generador de pruebas de IU codificadas. En este ejemplo, y en la mayoría de los casos, los cambios de código necesarios para habilitar una prueba para utilizar un origen de datos pueden introducirse en el archivo de código fuente de la prueba (es decir, CodedUITest1.cs).
 
-Si tiene que modificar un método grabado, debe copiarlo en el archivo UIMap.cs y cambiar el nombre. El archivo UIMap.cs se puede utilizar para invalidar métodos y propiedades en el archivo UIMapDesigner.cs. Debe quitar la referencia al método original en el archivo UITest.cs el Codificado y reemplazarlo con el nombre del método cuyo nombre ha cambiado.
+**R:** Cualquier cambio que se efectúe en el código del archivo *UIMapDesigner.cs* se sobrescribirá cada vez que se genere código mediante UIMap - Generador de pruebas de IU codificadas. En este ejemplo, y en la mayoría de los casos, los cambios de código necesarios para habilitar una prueba para utilizar un origen de datos pueden introducirse en el archivo de código fuente de la prueba (es decir, *CodedUITest1.cs*).
+
+Si tiene que modificar un método grabado, debe copiarlo en el archivo *UIMap.cs* y cambiar el nombre. El archivo *UIMap.cs* se puede usar para invalidar métodos y propiedades en el archivo *UIMapDesigner.cs*. Debe quitar la referencia al método original en el archivo *UITest.cs* codificado y reemplazarlo con el nombre del método cuyo nombre ha cambiado.
 
 ## <a name="see-also"></a>Vea también
 
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
-- [Usar Automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
-- [Crear pruebas de IU codificadas](../test/use-ui-automation-to-test-your-code.md)
+- [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
+- [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md)
 - [Procedimientos recomendados para las pruebas de IU codificadas](../test/best-practices-for-coded-ui-tests.md)
-- [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Configuraciones y plataformas compatibles con las pruebas automatizadas de IU y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

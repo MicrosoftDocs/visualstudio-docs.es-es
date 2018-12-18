@@ -1,6 +1,7 @@
 ---
 title: 'CA2124: Incluir cláusulas Finally vulnerables en un bloque Try externo'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,13 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d46bc7bcfa8c1918091fabbbd759172259ea9ba6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 50c03a16af9562df40dc04a431fac157c1321fbb
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860087"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Incluir cláusulas Finally vulnerables en un bloque Try externo
+
 |||
 |-|-|
 |TypeName|WrapVulnerableFinallyClausesInOuterTry|
@@ -30,28 +33,27 @@ ms.lasthandoff: 04/19/2018
 |Cambio problemático|No trascendental|
 
 ## <a name="cause"></a>Motivo
- En las versiones 1.0 y 1.1 de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], un método público o protegido contiene un `try` / `catch` / `finally` bloque. El `finally` bloque aparece para restablecer el estado de seguridad y no se incluye en un `finally` bloque.
+ En las versiones 1.0 y 1.1 de .NET Framework, un método público o protegido contiene un `try` / `catch` / `finally` bloque. El `finally` bloque aparece para restablecer el estado de seguridad y no se incluye en un `finally` bloque.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Esta regla busca `try` / `finally` bloques de código que tenga como destino las versiones 1.0 y 1.1 de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] que pueden ser vulnerables a los filtros de excepción malintencionados presentes en la pila de llamadas. Si las operaciones reservadas como la suplantación aparecen en el bloque try, y se produce una excepción, el filtro puede ejecutarse antes de la `finally` bloque. En el ejemplo de suplantación, esto significa que el filtro se ejecutaría como el usuario suplantado. Los filtros son actualmente sólo pueden implementarse en Visual Basic.
+ Esta regla busca `try` / `finally` bloques de código que tenga como destino las versiones 1.0 y 1.1 de .NET Framework que podrían ser vulnerables a los filtros de excepción malintencionados presentes en la pila de llamadas. Si se producen operaciones confidenciales como la suplantación en el bloque try, y se produce una excepción, el filtro puede ejecutarse antes de la `finally` bloque. El ejemplo de suplantación, esto significa que el filtro se ejecutaría como el usuario suplantado. Los filtros son actualmente sólo pueden implementarse en Visual Basic.
 
-> [!WARNING]
->  **Tenga en cuenta** en las versiones 2.0 y posteriores de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], protege automáticamente el tiempo de ejecución un `try` / `catch` /  `finally` impide los filtros de excepción malintencionados, si se produce el restablecimiento directamente dentro del método que contiene el bloque de excepción.
+> [!NOTE]
+> En las versiones 2.0 y versiones posteriores de .NET Framework, el tiempo de ejecución protege automáticamente un `try` / `catch` /  `finally` block de los filtros de excepción malintencionados, si se produce el restablecimiento directamente dentro del método que contiene el bloque de excepción.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Coloque el desempaquetarse `try` / `finally` en un bloque try externo. Vea el segundo ejemplo siguiente. Esto fuerza la `finally` a ejecutarse antes que el código de filtro.
+ Coloque el desencapsulado `try` / `finally` en un bloque try externo. Vea el segundo ejemplo siguiente. Esto obliga la `finally` se ejecute antes de código de filtro.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  No suprima las advertencias de esta regla.
 
 ## <a name="pseudo-code-example"></a>Ejemplo de pseudocódigo
 
 ### <a name="description"></a>Descripción
- El pseudocódigo siguiente muestra el patrón que detecta esta regla.
 
-### <a name="code"></a>Código
+El pseudocódigo siguiente muestra el patrón que detecta esta regla.
 
-```
+```csharp
 try {
    // Do some work.
    Impersonator imp = new Impersonator("John Doe");
@@ -63,10 +65,9 @@ finally {
 }
 ```
 
-## <a name="example"></a>Ejemplo
- El pseudocódigo siguiente muestra el patrón que puede usar para proteger el código y cumplir esta regla.
+El pseudocódigo siguiente muestra el patrón que puede usar para proteger el código y cumplir esta regla.
 
-```
+```csharp
 try {
      try {
         // Do some work.

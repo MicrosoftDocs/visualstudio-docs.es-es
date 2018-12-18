@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsNullReference | Documentos de Microsoft
+title: IDebugObject::IsNullReference | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a886bf56cfafc615099aa489f9d329229ea8727
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6b5108d9fd830c047c020d4b3adab2526854e6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939701"
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
 Comprueba si este objeto es una referencia nula.  
@@ -40,13 +41,13 @@ int IsNullReference(
   
 #### <a name="parameters"></a>Parámetros  
  `pfIsNull`  
- [out] Devuelve distinto de cero (`TRUE`) si este objeto es una referencia null; en caso contrario, devuelve cero (`FALSE`).  
+ [out] Devuelve cero (`TRUE`) si este objeto es una referencia null; en caso contrario, devuelve cero (`FALSE`).  
   
 ## <a name="return-value"></a>Valor devuelto  
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Una referencia nula significa un objeto vacío o un objeto que no se ha asignado a.  
+ Una referencia null significa que un objeto vacío o un objeto que no se ha asignado a.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

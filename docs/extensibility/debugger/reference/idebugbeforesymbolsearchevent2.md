@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100460"
 ---
 # <a name="idebugbeforesymbolsearchevent2"></a>IDebugBeforeSymbolSearchEvent2
 El motor de depuración (Alemania) envía esta interfaz para el Administrador de sesión de depuración (SDM) para establecer el estado de mensaje en la barra durante la carga de símbolos.  

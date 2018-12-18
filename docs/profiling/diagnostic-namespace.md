@@ -14,18 +14,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29164c08b03bd23980aad381a1a832b2857309a6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d781bbfefa59b2e124cf76c11b8fd7c06cc66dda
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764675"
 ---
 # <a name="diagnostic-namespace"></a>diagnostic (Espacio de nombres)
 El espacio de nombres `diagnostics` proporciona funcionalidad para emitir los marcadores del visualizador de simultaneidad.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp  
 namespace diagnostic;  
 ```  
   
@@ -45,9 +46,9 @@ namespace diagnostic;
 |[Enumeración marker_importance](../profiling/marker-importance-enumeration.md)|Representa el nivel de importancia de un marcador del visualizador de simultaneidad.|  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** cvmarkersobj.h  
+ **Encabezado:** *cvmarkersobj.h*  
   
  **Espacio de nombres:** Concurrency  
   
 ## <a name="see-also"></a>Vea también  
- [Espacio de nombres de simultaneidad (visualizador de simultaneidad)](../profiling/concurrency-namespace-concurrency-visualizer.md)
+ [Espacio de nombres de simultaneidad (Visualizador de simultaneidad)](../profiling/concurrency-namespace-concurrency-visualizer.md)

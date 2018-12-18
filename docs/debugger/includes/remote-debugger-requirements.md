@@ -14,17 +14,18 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 0f23b4a602b707dbe126d0a97824694fc51d3ddf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38809266"
 ---
 ### <a name="supported-operating-systems"></a>Sistemas operativos admitidos  
 El equipo remoto debe ejecutarse en uno de los siguientes sistemas operativos:  
   
--   Windows 10 (no por teléfono) 
+-   Windows 10 (no teléfonos) 
   
--   Windows 8 o 8.1 (no por teléfono)
+-   Windows 8 o 8.1 (no teléfonos)
   
 -   Windows 7 Service Pack 1  
   
@@ -48,4 +49,4 @@ El equipo remoto debe ejecutarse en uno de los siguientes sistemas operativos:
 -   Tarjeta de vídeo compatible con DirectX 9 con resolución de pantalla de 1024 x 768 o superior  
   
 ### <a name="network-configuration"></a>Configuración de red  
- El equipo remoto y el equipo de Visual Studio deben estar conectados a través de una red, un grupo de trabajo, un grupo en el hogar o directamente mediante un cable Ethernet. No se admite la depuración entre dos equipos conectados a través de un servidor proxy. Depuración mediante una conexión de poco ancho de banda, como acceso telefónico a Internet, o una latencia alta o a través de Internet a través de países no se recomienda y puede ser un error o inaceptablemente bajo.
+ El equipo remoto y el equipo de Visual Studio deben estar conectados a través de una red, un grupo de trabajo, un grupo en el hogar o directamente mediante un cable Ethernet. No se admite la depuración entre dos equipos conectados a través de un servidor proxy. Depuración mediante una conexión de ancho de banda bajo, por ejemplo, acceso telefónico a Internet, o una latencia alta o a través de Internet entre países no se recomienda y puede ser un error o inaceptablemente bajo.

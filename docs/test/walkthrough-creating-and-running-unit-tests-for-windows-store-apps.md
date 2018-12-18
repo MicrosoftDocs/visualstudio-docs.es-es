@@ -1,6 +1,7 @@
 ---
-title: Crear y ejecutar pruebas unitarias para aplicaciones UWP en Visual Studio | Microsoft Docs
+title: Crear y ejecutar pruebas unitarias para aplicaciones UWP en Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,11 +14,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: bbb1da5474dcb36e9b102f85f21c4945b3ebb33c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d4640616b12a07c475503d45f9297c1bbf663f91
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284125"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Tutorial: Crear y ejecutar pruebas unitarias para aplicaciones UWP
 
@@ -32,7 +34,7 @@ Los procedimientos siguientes describen los pasos para crear, ejecutar y depurar
 
 1.  En el menú **Archivo** , elija **Nuevo proyecto**.
 
-     Se muestra el cuadro de diálogo Nuevo proyecto.
+     Se muestra el cuadro de diálogo **Nuevo proyecto**.
 
 2.  En Plantillas, elija el lenguaje de programación en el que desea crear las pruebas unitarias y, a continuación, elija la biblioteca de pruebas unitarias de Windows Universal asociada. Por ejemplo, elija **Visual C#** y, luego, **Windows Universal**. Por último, elija **Unit Test Library (Universal Windows)** (Biblioteca de pruebas unitarias [Windows Universal]).
 
@@ -44,19 +46,19 @@ Los procedimientos siguientes describen los pasos para crear, ejecutar y depurar
 
 6.  Deje seleccionada la opción **Crear directorio para la solución** y elija el botón **Aceptar** .
 
-     ![Biblioteca de pruebas unitarias adaptada](../test/media/unit_test_win8_1.png "Unit_Test_Win8_1")
+     ![Biblioteca de pruebas unitarias adaptada](../test/media/unit_test_win8_1.png)
 
-     El Explorador de soluciones se rellena con el nuevo proyecto de prueba unitaria de UWP y el editor de código muestra la prueba unitaria predeterminada denominada UnitTest1.
+     El **Explorador de soluciones** se rellena con el nuevo proyecto de prueba unitaria de UWP y el editor de código muestra la prueba unitaria predeterminada denominada UnitTest1.
 
-     ![Nuevo proyecto de prueba unitaria adaptada](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png "Unit_Test_Win8_UnitTestExplorer_NewProjectCreated")
+     ![Nuevo proyecto de prueba unitaria adaptada](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png)
 
 ## <a name="edit-the-unit-test-projects-uwp-application-manifest-file"></a>Editar el archivo de manifiesto de la aplicación para UWP del proyecto de prueba unitaria
 
-1.  En el Explorador de soluciones, haga clic con el botón derecho en el archivo *Package.appxmanifest* y elija **Abrir**.
+1.  En el **Explorador de soluciones**, haga clic con el botón derecho en el archivo *Package.appxmanifest* y elija **Abrir**.
 
-     Aparece el diseñador de manifiestos para la edición.
+     Aparece el **diseñador de manifiestos** para la edición.
 
-2.  En el diseñador de manifiestos, elija la pestaña **Capacidades** .
+2.  En el **diseñador de manifiestos**, haga clic en la pestaña **Capacidades**.
 
 3.  En la lista, en **Capacidades**, seleccione las capacidades que necesita la prueba unitaria y el código para las pruebas. Por ejemplo, active la casilla **Internet** si la prueba unitaria lo necesita y el código que está probando necesita tener la capacidad de tener acceso a Internet.
 
@@ -67,7 +69,7 @@ Los procedimientos siguientes describen los pasos para crear, ejecutar y depurar
 
 ## <a name="code-the-unit-test-for-a-uwp-app"></a>Codificar la prueba unitaria para una aplicación de UWP
 
-En el Editor de código, edite la prueba unitaria y agregue las aserciones y la lógica requeridas para las pruebas.
+En el **Editor de código**, edite la prueba unitaria y agregue las aserciones y la lógica requeridas para las pruebas.
 
 ## <a name="run-unit-tests"></a>Ejecutar pruebas unitarias
 
@@ -75,7 +77,7 @@ En el Editor de código, edite la prueba unitaria y agregue las aserciones y la 
 
 1.  En el menú **Prueba** , seleccione **Windows**y, a continuación, elija **Explorador de pruebas**.
 
-     Aparece el Explorador de pruebas, pero no incluye la prueba.
+     Aparece el **Explorador de pruebas**, pero no incluye la prueba.
 
 2.  En el menú **Compilar** , elija **Compilar solución**.
 
@@ -84,7 +86,7 @@ En el Editor de código, edite la prueba unitaria y agregue las aserciones y la 
     > [!NOTE]
     > Debe compilar la solución para actualizar la lista de pruebas unitarias en el Explorador de pruebas.
 
-3.  En el Explorador de pruebas, elija la prueba unitaria que creó.
+3.  En el **Explorador de pruebas**, elija la prueba unitaria que creó.
 
     > [!TIP]
     > El Explorador de pruebas proporciona un vínculo al código fuente junto a **Origen:**.
@@ -98,13 +100,13 @@ En el Editor de código, edite la prueba unitaria y agregue las aserciones y la 
     >
     > Además, puede elegir **Depurar pruebas seleccionadas**, **Abrir prueba**y usar la opción **Propiedades** .
     >
-    > ![Explorador de pruebas unitarias&#45; menú de contexto de pruebas unitarias](../test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")
+    > ![Explorador de pruebas unitarias: menú contextual de pruebas unitarias](../test/media/unit_test_win8_unittestexplorer_contextmenu.png)
 
-    La prueba unitaria se ejecuta. Al finalizar, el Explorador de pruebas muestra el estado de la prueba y el tiempo transcurrido y proporciona un vínculo al origen.
+    La prueba unitaria se ejecuta. Al finalizar, el **Explorador de pruebas** muestra el estado de la prueba y el tiempo transcurrido y proporciona un vínculo al origen.
 
     ![Explorador de pruebas unitarias: prueba completada](../test/media/unit_test_win8_unittestexplorer_done.png)
 
 ## <a name="see-also"></a>Vea también
 
 - [Prueba de aplicaciones para UWP con Visual Studio](../test/testing-store-apps-with-visual-studio.md)
-- [Compilar y probar una aplicación de UWP](/vsts/build-release/apps/windows/universal?tabs=vsts)
+- [Compilar y probar una aplicación de UWP](/azure/devops/pipelines/apps/windows/universal?tabs=vsts)

@@ -1,5 +1,5 @@
 ---
-title: Protección en soluciones de nivel de documento de documentos | Documentos de Microsoft
+title: Protección de documentos en soluciones de nivel de documento
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,11 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 546a74179b8bdf52541d771809426b5e4aec3e45
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 22c8f135770fbd427d361b9c9b113da3b20e609a
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447874"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>Protección de documentos en soluciones de nivel de documento
   Puede usar las características de protección de Microsoft Office Word y Microsoft Office Excel en proyectos de nivel de documento. Estas características impiden que los usuarios no autorizados puedan realizar cambios en los elementos protegidos de un documento.  
@@ -42,11 +43,11 @@ ms.lasthandoff: 04/16/2018
   
  Sin embargo, si crea un proyecto que usa un documento de Word existente que tiene habilitada la protección, el documento está protegido mientras está abierto en el diseñador. No se puede editar las partes del documento protegidas, pero todavía puede escribir código en el Editor de código para automatizar el documento. También se no se puede compilar el proyecto si la protección está habilitada mientras el documento está abierto en Visual Studio.  
   
- Puede desactivar protección mientras el documento está abierto en el diseñador para que pueda modificar el documento y compile el proyecto. No se puede desactivar la protección para la copia en el diseñador mientras está depurando; el documento que se abre durante la depuración es una copia independiente de la que está abierta en el diseñador (la copia de salida se almacena en el directorio \bin de Visual Basic y el directorio \bin\debug de C#).  
+ Puede desactivar protección mientras el documento está abierto en el diseñador para que pueda modificar el documento y compile el proyecto. No se puede desactivar la protección para la copia en el diseñador mientras está depurando; el documento que se abre durante la depuración es una copia independiente de la que está abierta en el diseñador (la copia de salida se almacena en la *\bin* directorio en Visual Basic y el *\bin\debug* directorio para C#).  
   
  Puede habilitar la protección en la copia del documento que se abre en el Diseñador de cerrar el proyecto en Visual Studio, abra la copia del documento que se encuentra en el directorio del proyecto y activar la protección.  
   
-## <a name="enforcing-word-document-protection-on-build"></a>Aplicar protección de documentos de Word en la compilación  
+## <a name="enforce-word-document-protection-on-build"></a>Aplicar la protección de documento de Word en la compilación  
  Visual Studio inicia la aplicación de protección de documentos de Word y plantillas durante el proceso de compilación, para que la protección está habilitada cuando el documento se abre para la depuración. El documento está protegido con una contraseña vacía.  
   
  La protección está habilitada durante la compilación así que si hay código en el documento <xref:Microsoft.Office.Tools.Word.Document.Startup> eventos que podrían provocar excepciones o cambiar el comportamiento de la aplicación, este código puede ser depurado correctamente. Si habilita la protección después de abre el documento, no se puede depurar código de inicialización o se no se probó.  
@@ -57,9 +58,9 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>Vea también  
  [Cómo: proteger documentos y partes de documentos mediante programación](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)   
  [Tutoriales y ejemplos de desarrollo de office](../vsto/office-development-samples-and-walkthroughs.md)   
- [Information Rights Management y la información general de las extensiones de código administrado](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
+ [Información general de extensiones de código administrado y de Information rights management](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
  [Protección con contraseña en documentos de Office](../vsto/password-protection-on-office-documents.md)   
- [Cómo: permitir que el código ejecute en documentos con permisos restringidos](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
- [Diseño y creación de soluciones de Office](../vsto/designing-and-creating-office-solutions.md)  
+ [Cómo: permitir que el código para que se ejecute en documentos con permisos restringidos](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
+ [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)  
   
   

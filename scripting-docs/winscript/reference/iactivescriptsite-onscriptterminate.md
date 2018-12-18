@@ -1,11 +1,11 @@
 ---
 title: IActiveScriptSite::OnScriptTerminate | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScriptSite.OnScriptTerminate
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScriptSite_OnScriptTerminate
 ms.assetid: 3301ddf4-5929-404c-81d3-1a720e589008
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724805"
 ---
 # <a name="iactivescriptsiteonscriptterminate"></a>IActiveScriptSite::OnScriptTerminate
 Informa al host que la secuencia de comandos ha completado su ejecución.  

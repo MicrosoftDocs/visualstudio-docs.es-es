@@ -1,5 +1,5 @@
 ---
-title: '&lt;trustInfo&gt; elemento (aplicación ClickOnce) | Documentos de Microsoft'
+title: '&lt;trustInfo&gt; elemento (aplicación ClickOnce) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -24,18 +24,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 516ed9ae36b97a75e5185c69b89fadf587ddeaa7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d6d6f7955cb010d981b62e2b9fcdc70a092d76ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941241"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; elemento (aplicación ClickOnce)
 Describe los permisos de seguridad mínimos necesarios para que la aplicación se ejecute en el equipo cliente.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```xml
   
       <trustInfo>  
    <security>  
@@ -67,7 +68,7 @@ Describe los permisos de seguridad mínimos necesarios para que la aplicación s
 </trustInfo>  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementos y atributos  
+## <a name="elements-and-attributes"></a>Los elementos y atributos  
  El elemento `trustInfo` es obligatorio y se encuentra en el espacio de nombres `asm.v2` . No tiene atributos y contiene los elementos siguientes.  
   
 ## <a name="security"></a>seguridad  
@@ -104,7 +105,7 @@ Describe los permisos de seguridad mínimos necesarios para que la aplicación s
   
      Requerido. Identifica si la aplicación necesita una concesión sin restricciones de este permiso. Si es `true`, la concesión del permiso es incondicional. Si es `false`, o si este atributo no está definido, se restringe según los atributos específicos del permiso definidos en la etiqueta `IPermission` . Seleccione los permisos siguientes:  
   
-    ```  
+    ```xml  
     <IPermission  
       class="System.Security.Permissions.EnvironmentPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"   
       version="1"   
@@ -141,35 +142,35 @@ Describe los permisos de seguridad mínimos necesarios para que la aplicación s
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
  Opcional. Identifica el nivel de seguridad en el que la aplicación solicita que se ejecute. Este elemento no tiene elementos secundarios y tiene los atributos siguientes.  
   
--   `Level`  
+- `Level`  
   
-     Requerido. Indica el nivel de seguridad que está solicitando la aplicación. Los valores posibles son:  
+   Requerido. Indica el nivel de seguridad que está solicitando la aplicación. Los valores posibles son:  
   
-     `asInvoker`, que no solicita ningún permiso adicional. Este nivel no requiere solicitudes de confianza adicionales.  
+   `asInvoker`, que no solicita ningún permiso adicional. Este nivel no requiere solicitudes de confianza adicionales.  
   
-     `highestAvailable`, que solicita los permisos más altos disponibles para el proceso primario.  
+   `highestAvailable`, que solicita los permisos más altos disponibles para el proceso primario.  
   
-     `requireAdministrator`, que solicita permisos completos de administrador.  
+   `requireAdministrator`, que solicita permisos completos de administrador.  
   
-     Las aplicaciones de[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] solo se instalarán con un valor de `asInvoker`. La instalación de cualquier otro valor producirá un error.  
+   Las aplicaciones de[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] solo se instalarán con un valor de `asInvoker`. La instalación de cualquier otro valor producirá un error.  
   
--   `uiAccess`  
+- `uiAccess`  
   
-     Opcional. Indica si la aplicación requiere acceso a elementos de la interfaz de usuario protegidos. Los valores son `true` o `false`y el predeterminado es false. Solo las aplicaciones firmadas deben tener un valor true.  
+   Opcional. Indica si la aplicación requiere acceso a elementos de la interfaz de usuario protegidos. Los valores son `true` o `false`y el predeterminado es false. Solo las aplicaciones firmadas deben tener un valor true.  
   
 ## <a name="remarks"></a>Comentarios  
  Si una aplicación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] solicita más permisos que los que concede el equipo cliente de forma predeterminada, el Administrador de confianza de Common Language Runtime preguntará al usuario si quiere conceder a la aplicación este nivel elevado de confianza. Si responde que no, no se ejecutará la aplicación; de lo contrario, se ejecutará con los permisos solicitados.  
   
  Todos los permisos solicitados con `defaultAssemblyRequest` y `assemblyRequest` se concederán sin preguntar al usuario si el manifiesto de implementación tiene una licencia de confianza válida.  
   
- Para obtener más información acerca de la elevación de permisos, consulte [proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md). Para obtener más información sobre la implementación de directivas, vea [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
+ Para obtener más información sobre la elevación de permisos, consulte [proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md). Para obtener más información sobre la implementación de directivas, vea [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
 ## <a name="examples"></a>Ejemplos  
  Los siguientes tres ejemplos de código ilustran los elementos `trustInfo` para las zonas de seguridad denominadas predeterminadas (Internet, LocalIntranet y FullTrust) para su uso en un manifiesto de aplicación de la implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .  
   
  El primer ejemplo ilustra el elemento `trustInfo` para los permisos predeterminados disponibles en la zona de seguridad de Internet.  
   
-```  
+```xml  
 <trustInfo>  
     <security>  
       <applicationRequestMinimum>  
@@ -205,7 +206,7 @@ Describe los permisos de seguridad mínimos necesarios para que la aplicación s
   
  El segundo ejemplo ilustra el elemento `trustInfo` para los permisos predeterminados disponibles en la zona de seguridad LocalIntranet.  
   
-```  
+```xml  
 <trustInfo>  
     <security>  
       <applicationRequestMinimum>  
@@ -257,7 +258,7 @@ Describe los permisos de seguridad mínimos necesarios para que la aplicación s
   
  El tercer ejemplo ilustra el elemento `trustInfo` para los permisos predeterminados disponibles en la zona de seguridad FullTrust.  
   
-```  
+```xml  
 <trustInfo>  
   <security>  
     <applicationRequestMinimum>  
@@ -269,5 +270,5 @@ Describe los permisos de seguridad mínimos necesarios para que la aplicación s
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Introducción a la implementación de aplicaciones de confianza](../deployment/trusted-application-deployment-overview.md)   
+ [Introducción de la implementación de aplicaciones de confianza](../deployment/trusted-application-deployment-overview.md)   
  [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md)

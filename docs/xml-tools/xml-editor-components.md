@@ -1,37 +1,24 @@
 ---
-title: Componentes del Editor XML | Documentos de Microsoft
-ms.custom: ''
+title: Componentes del Editor XML
 ms.date: 11/04/2016
-ms.technology: vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99c0cdac45c2be8146ff86b7c779165f0d312fec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 12e29632e29b41f707470231481e70e151ca6f77
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34693752"
 ---
 # <a name="xml-editor-components"></a>Componentes del editor XML
 
 Esta sección describen los cuadros de diálogo y ventanas del editor XML. Dado que el editor XML se basa en el editor de texto, parte del entorno de desarrollo integrado (IDE) se configura mediante la configuración del editor de texto general.
-
-## <a name="in-this-section"></a>En esta sección
-
-[Varios, XML, Editor de texto, Cuadro de diálogo Opciones](../xml-tools/miscellaneous-xml-text-editor-options-dialog-box.md)  
-Describe las opciones de finalización automática y esquema del Editor XML.
-
-[Propiedades de documentos XML, Ventana Propiedades](../xml-tools/xml-document-properties-properties-window.md)  
-Describe la información básica del documento que está disponible.
-
-[Formato, XML, Editor de texto, Cuadro de diálogo Opciones](../xml-tools/formatting-xml-text-editor-options-dialog-box.md)  
-Describe la configuración que controla el formato de los atributos, el modo de manejar contenido mixto, etc.
-
-[Cuadro de diálogo Esquemas XML](../xml-tools/xml-schemas-dialog-box.md)  
-Describe cómo seleccionar los esquemas XML que se van a asociar con el documento XML.
 
 ## <a name="related-sections"></a>Secciones relacionadas
 
@@ -39,4 +26,4 @@ Describe cómo seleccionar los esquemas XML que se van a asociar con el document
 
 ## <a name="see-also"></a>Vea también
 
-[Editor XML](../xml-tools/xml-editor.md)
+- [Editor XML](../xml-tools/xml-editor.md)

@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e2daf2b92073db6b2c9eca9b1ea482142eb3ba4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2ce4fb6b9a57db78e3dbb7f3082a87df9ffb7360
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254698"
 ---
 # <a name="performance-session-properties"></a>Propiedades de las sesiones de rendimiento
 
@@ -35,17 +36,17 @@ Estas opciones le permiten seleccionar el método de generación de perfiles, ag
 
 Para obtener más información, consulte:
 
-[Cómo: Elegir métodos de recopilación](../profiling/how-to-choose-collection-methods.md)
+[Elección de métodos de recopilación](../profiling/how-to-choose-collection-methods.md)
 
-[Recopilar datos referentes a la asignación y duración de memoria de .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
+[Recopilación de datos referentes a la asignación y duración de memoria de .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
- [Cómo: Establecer opciones de nombre de archivo de datos de rendimiento](../profiling/how-to-set-performance-data-file-name-options.md)
+ [Establecimiento de opciones de nombre de archivo de datos de rendimiento](../profiling/how-to-set-performance-data-file-name-options.md)
 
 ## <a name="launch"></a>Launch
 
 Esta configuración le permite seleccionar de una lista de binarios y especificar el orden de inicio de los binarios.
 
-Para obtener más información, consulte [Cómo: Especificar el binario para empezar](../profiling/how-to-specify-the-binary-to-start.md)
+Para obtener más información, vea [Cómo: Especificar el binario para empezar](../profiling/how-to-specify-the-binary-to-start.md).
 
 ## <a name="sampling"></a>Muestreo
 
@@ -57,12 +58,12 @@ Estos valores le permiten seleccionar el intervalo de muestreo y de eventos de m
 - Contadores de rendimiento: para problemas de rendimiento de bajo nivel
 - Se pueden especificar eventos de muestra adicionales en función de los contadores de rendimiento disponibles
 
-Para obtener más información, consulte [Cómo: Elegir eventos de muestra](../profiling/how-to-choose-sampling-events.md)
+Para obtener más información, vea [Cómo: Elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md).
 
 ## <a name="binary"></a>Binary
-Esta configuración le permite especificar si desea reubicar el binario instrumentado. Por ejemplo, si genera perfiles de My.DLL y decide no reubicar el binario instrumentado, se crea una copia de seguridad de My.DLL denominada My.Orig.DLL. Posteriormente, se modifica My.DLL insertando sondeos para recopilar datos. Si decide reubicar el binario instrumentado, no se cambia el nombre del binario original y el binario instrumentado se copia en la ubicación especificada para su uso durante la instrumentación.
+Esta configuración le permite especificar si desea reubicar el binario instrumentado. Por ejemplo, si genera perfiles de *My.DLL* y decide no reubicar el binario instrumentado, se crea una copia de seguridad de *My.DLL* denominada *My.Orig.DLL*. Posteriormente, se modifica *My.DLL* insertando sondeos para recopilar datos. Si decide reubicar el binario instrumentado, no se cambia el nombre del binario original y el binario instrumentado se copia en la ubicación especificada para su uso durante la instrumentación.
 
-Para obtener más información, consulte [Cómo: Especificar el binario para empezar](../profiling/how-to-specify-the-binary-to-start.md)
+Para obtener más información, vea [Cómo: Especificar el binario para empezar](../profiling/how-to-specify-the-binary-to-start.md).
 
 ## <a name="tier-interactions"></a>Interacciones de capas
 
@@ -76,21 +77,21 @@ Para obtener más información, consulte:
 
 [Cómo: Generar perfiles de código de JavaScript en páginas web](../profiling/how-to-profile-javascript-code-in-web-pages.md)
 
-[Cómo: Especificar comandos anteriores y posteriores a la instrumentación](../profiling/how-to-specify-pre-and-post-instrument-commands.md)
+[Especificación de comandos anteriores y posteriores a la instrumentación](../profiling/how-to-specify-pre-and-post-instrument-commands.md)
 
 ## <a name="cpu-counters"></a>Contadores de CPU
 
 Esta configuración permite recopilar datos sobre los contadores de rendimiento de CPU cuando se utiliza el método de generación de perfiles de instrumentación. Los contadores de rendimiento móviles están disponibles independientemente del fabricante o del diseño de la CPU. Los eventos de la plataforma son específicos para el diseño y fabricante de la CPU. Para obtener más información acerca de los contadores de rendimiento del procesador, consulte la documentación del procesador específica.
 
-Para obtener más información, consulte [Cómo: Recopilar datos de contadores de CPU](../profiling/how-to-collect-cpu-counter-data.md)
+Para obtener más información, vea [Cómo: Recopilar datos de contadores de CPU](../profiling/how-to-collect-cpu-counter-data.md)
 
 ## <a name="windows-events"></a>Eventos de Windows
 
-Durante la generación de perfiles, puede recopilar datos de proveedores de seguimiento de eventos. Puede ver los datos mediante la opción `/calltrace` de la herramienta de línea de comandos VSPerfReport.exe. Para obtener más información acerca de Seguimiento de eventos para Windows (ETW), consulte [Sobre el seguimiento de eventos](http://go.microsoft.com/fwlink/?linkid=90752).
+Durante la generación de perfiles, puede recopilar datos de proveedores de seguimiento de eventos. Puede ver los datos mediante la opción `/calltrace` de la herramienta de línea de comandos *VSPerfReport.exe*. Para obtener más información acerca de Seguimiento de eventos para Windows (ETW), consulte [Sobre el seguimiento de eventos](http://go.microsoft.com/fwlink/?linkid=90752).
 
 Para obtener más información, consulte:
 
-[Cómo: Recopilar datos de Seguimiento de eventos para Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
+[Recopilación de datos de Seguimiento de eventos para Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
 
 [VSPerfReport](../profiling/vsperfreport.md).
 
@@ -98,7 +99,7 @@ Para obtener más información, consulte:
 
 Esta opción le permite recopilar datos de contadores del Monitor de rendimiento de Windows. Para recopilar estos datos, active la casilla **Recopilar contadores de rendimiento de Windows**. Se puede establecer el intervalo de recopilación en el cuadro **Intervalo de recopilación**. **Categoría de contador** e **Instancia** también pueden estar disponibles. Algunos contadores predeterminados del Monitor de rendimiento de Windows están disponibles.
 
- Para obtener más información, consulte [Cómo: Recopilar datos de contadores de Windows](../profiling/how-to-collect-windows-counter-data.md).
+ Para obtener más información, vea [Cómo: Recopilar datos de contadores de Windows](../profiling/how-to-collect-windows-counter-data.md).
 
 ## <a name="advanced"></a>Avanzadas
 
@@ -106,12 +107,12 @@ Esta configuración permite agregar opciones al proceso de instrumentación medi
 
 Para obtener más información, consulte:
 
-[Cómo: Especificar el tiempo de ejecución de .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
+[Especificación de runtime de .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
 
-[Cómo: Especificar opciones de instrumentación adicional](../profiling/how-to-specify-additional-instrumentation-options.md)
+[Especificación de opciones de instrumentación adicionales](../profiling/how-to-specify-additional-instrumentation-options.md)
 
 ## <a name="see-also"></a>Vea también
 
 [Información general](../profiling/overviews-performance-tools.md)  
-[Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)  
-[Controlar la recopilación de datos](../profiling/controlling-data-collection.md)
+[Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)  
+[Control de la recopilación de datos](../profiling/controlling-data-collection.md)

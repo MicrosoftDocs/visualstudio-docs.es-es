@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92496965fe463df4343d51b07819c073de163368
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 96db3f4ea63f4d1bca5bce725db272791361f934
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920526"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getresult"></a>IDebugExpressionEvaluationCompleteEvent2::GetResult
-Obtiene el resultado de evaluación de expresión.  
+Obtiene el resultado de evaluación de expresiones.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -43,10 +44,10 @@ int GetResult(
  [out] Devuelve un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto que representa el resultado de la evaluación de expresiones.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- El valor devuelto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto contiene el valor de la expresión evaluada. Tenga en cuenta que este valor puede ser un valor complejo, como una matriz, pero el resultado final debe ser un numérico o valor de cadena que se muestra al usuario.  
+ El valor devuelto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto contiene el valor de la expresión evaluada. Tenga en cuenta que este valor puede ser un valor complejo como una matriz, pero el resultado final debe ser un numérico o valor de cadena que se muestra al usuario.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)   

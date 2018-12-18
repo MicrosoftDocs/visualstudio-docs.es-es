@@ -1,9 +1,8 @@
 ---
-title: 'Cómo: Cambiar las fuentes y los colores del editor | Microsoft Docs'
-ms.custom: ''
-ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+title: Cambiar las fuentes y los colores del editor
+ms.date: 11/26/2018
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - editors, fonts
@@ -17,43 +16,43 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0510cbc9d6f98f9c36347c6be93d768e483aa24a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2894039fc963ef089d0a1551d8b8afc7713edd4f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894552"
 ---
-# <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Cómo: Cambiar las fuentes y los colores del editor
-Puede cambiar el nombre de fuente predeterminado, ajustar el tamaño de fuente y cambiar los colores de primer plano y de fondo para el texto diverso de **Mostrar los elementos** en el editor de código. Al cambiar la configuración de fuente, tenga en cuenta la información siguiente:  
-  
--   La configuración de **Fuente** y **Tamaño** es global para todos los elementos de texto en todos los editores de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
-  
--   Los nombres de las fuentes con ancho fijo se enumeran en negrita.  
-  
--   Las opciones **Primer plano del elemento**, **Fondo del elemento** y **Negrita** pueden establecerse para cada tipo de elemento de texto. Por ejemplo, si cambia los colores y selecciona **Negrita** para **Comentario** y **Marcadores**, otros tipos de elementos de texto no se verán afectados.  
-  
-> [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la **Ayuda**, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
-  
-### <a name="to-change-the-default-font-face-size-and-colors"></a>Para cambiar el nombre de fuente predeterminado, el tamaño y los colores  
-  
-1.  Seleccione **Opciones** del menú **Herramientas** y, en la carpeta **Entorno**, seleccione **Fuentes y colores**.  
-  
-     Se abre [Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
-  
-2.  En **Mostrar configuración para**, seleccione **Editor de texto**.  
-  
-3.  Modifique las opciones **Fuente** y **Tamaño** para cambiar el nombre de fuente y el tamaño de todos los elementos de texto en todos los editores.  
-  
-4.  Seleccione el elemento apropiado en **Mostrar elementos** y, después, modifique las opciones **Primer plano del elemento** y **Fondo del elemento**.  
-  
+# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio-2017"></a>Cómo: Cambiar las fuentes y los colores del editor en Visual Studio 2017
+
+Puede cambiar la fuente predeterminada, ajustar el tamaño de fuente y cambiar los colores de primer plano y de fondo de diverso texto de **Mostrar los elementos** en el editor de código. Al cambiar la configuración de fuente, tenga en cuenta la información siguiente:
+
+- La configuración de **Fuente** y **Tamaño** es global para todos los elementos de texto de todos los editores de Visual Studio.
+
+- Los nombres de las fuentes con ancho fijo se enumeran en negrita.
+
+- Las opciones **Primer plano del elemento**, **Fondo del elemento** y **Negrita** pueden establecerse para cada tipo de elemento de texto. Por ejemplo, si cambia los colores y selecciona **Negrita** para **Comentario** y **Marcadores**, otros tipos de elementos de texto no se verán afectados.
+
+## <a name="change-the-default-font-face-size-and-colors"></a>Cambiar la fuente predeterminada, el tamaño y los colores
+
+1.  Seleccione **Opciones** del menú **Herramientas** y, en la carpeta **Entorno**, seleccione **Fuentes y colores**.
+
+     Se abre [Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
+
+2.  En **Mostrar configuración para**, seleccione **Editor de texto**.
+
+3.  Modifique las opciones **Fuente** y **Tamaño** para cambiar el nombre de fuente y el tamaño de todos los elementos de texto en todos los editores.
+
+4.  Seleccione el elemento apropiado en **Mostrar elementos** y, después, modifique las opciones **Primer plano del elemento** y **Fondo del elemento**.
+
     > [!TIP]
-    >  Haga clic en **Usar predeterminadas** para restablecer las opciones predeterminadas.  
-  
-5.  Haga clic en **Aceptar**.  
-  
-## <a name="see-also"></a>Vea también  
- [Personalizar el editor](../../ide/customizing-the-editor.md)   
- [Editor de texto, Opciones (cuadro de diálogo)](../../ide/reference/text-editor-options-dialog-box.md)   
- [Escribir código](../../ide/writing-code-in-the-code-and-text-editor.md)   
- [Cómo: Cambiar fuentes y colores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+    > Haga clic en **Usar predeterminadas** para restablecer las opciones predeterminadas.
+
+5.  Haga clic en **Aceptar**.
+
+## <a name="see-also"></a>Vea también
+
+- [Personalizar el editor](../../ide/customizing-the-editor.md)
+- [Cuadro de diálogo Opciones del editor de texto](../../ide/reference/text-editor-options-dialog-box.md)
+- [Características del editor de código](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [Cómo: Cambiar fuentes y colores en Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

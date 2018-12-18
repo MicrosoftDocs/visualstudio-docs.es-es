@@ -1,6 +1,7 @@
 ---
 title: 'CA1804: Quitar variables locales no utilizadas'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -13,15 +14,20 @@ ms.assetid: cc332e67-6543-4813-bd8a-6f6fc75bf22a
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bdff91761dc9d4c958ee50dcf07d5a592370c5b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b1846c1b8d9173db6d1f4b5acd0544fd601da67a
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545468"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804: Quitar variables locales no utilizadas
+
 |||
 |-|-|
 |TypeName|RemoveUnusedLocals|
@@ -36,10 +42,10 @@ ms.lasthandoff: 04/19/2018
  Las variables locales no usadas y las asignaciones innecesarias aumentan el tamaño de un ensamblado y reducen el rendimiento.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, quite o utilice la variable local. Tenga en cuenta que el compilador de C# que se incluye con [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] quita variables locales no usadas cuando el `optimize` opción está habilitada.
+ Para corregir una infracción de esta regla, quite o use la variable local. Tenga en cuenta que el compilador de C# que se incluye con [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] quita sin usar las variables locales cuando el `optimize` está habilitada.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Suprimir una advertencia de esta regla si la variable generó el compilador. También es seguro suprimir una advertencia de esta regla, o para deshabilitar la regla, si el rendimiento y el mantenimiento del código no son principales preocupaciones.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ Suprima una advertencia de esta regla si la variable generó el compilador. También es seguro suprimir una advertencia de esta regla, o para deshabilitar la regla, si el rendimiento y mantenimiento del código no son principales preocupaciones.
 
 ## <a name="example"></a>Ejemplo
  El ejemplo siguiente muestra varias variables locales no usadas.

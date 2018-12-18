@@ -1,6 +1,7 @@
 ---
 title: Conjunto de reglas Reglas de corrección extendidas para código administrado
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 5b181f5b-6c7a-4e46-a783-360e1da427a0
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ccee4f6e139ef502a90a13a231c65f7e87141c78
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5bb373879bf4dd9c31ed7d8a7d832a270a158279
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926563"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de corrección extendidas para código administrado
 El conjunto de reglas reglas de corrección extendidas de Microsoft maximiza los errores de uso de lógica y un marco que son notificados por el análisis de código. Se pone especial énfasis en escenarios específicos como la interoperabilidad COM y aplicaciones móviles. Es aconsejable que incluya este conjunto de reglas si alguno de estos escenarios se aplica a su proyecto o para buscar problemas adicionales del proyecto.

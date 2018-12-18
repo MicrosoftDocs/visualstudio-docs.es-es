@@ -1,5 +1,5 @@
 ---
-title: 'Error: Depurar ejecutando&#39;t posible porque un depurador del Kernel está habilitado en el sistema | Documentos de Microsoft'
+title: 'Error: La depuración&#39;t posible porque un depurador del Kernel está habilitado en el sistema | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,48 +18,49 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba943057da003a0fafee6d6fb8c6082d228779f9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4aa8aa820330264357341948a468d58d98c86056
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853985"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Error: Depurar ejecutando&#39;t posible porque un depurador del Kernel está habilitado en el sistema
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Error: La depuración&#39;t posible porque un depurador del Kernel está habilitado en el sistema
 Al depurar código administrado, podría aparecer el siguiente mensaje de error:  
   
-```  
+```cmd
 Debugging isn't possible because a kernel debugger is enabled on the system  
 ```  
   
  Este mensaje aparece cuando se intenta depurar código administrado:  
   
--   en un sistema con [!INCLUDE[win7](../debugger/includes/win7_md.md)] o [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] que se ha iniciado en modo de depuración.  
+- en un sistema con [!INCLUDE[win7](../debugger/includes/win7_md.md)] o [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] que se ha iniciado en modo de depuración.  
   
--   la aplicación usa la versión de CLR 2.0, 3.0 o 3.5.  
+- la aplicación usa la versión de CLR 2.0, 3.0 o 3.5.  
   
 ## <a name="solution"></a>Soluciones  
   
 #### <a name="to-fix-this-problem"></a>Para corregir este problema  
   
--   Actualice la aplicación para utilizar la versión 4.0 o 4.5 de CLR  
+- Actualice la aplicación para utilizar la versión 4.0 o 4.5 de CLR  
   
-     -O bien-  
+   -O bien-  
   
--   Deshabilite la depuración del kernel y depure en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+- Deshabilite la depuración del kernel y depure en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-     -O bien-  
+   -O bien-  
   
--   Depure utilizando el depurador de kernel en lugar de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+- Depure utilizando el depurador de kernel en lugar de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-     -O bien-  
+   -O bien-  
   
--   En el depurador de kernel, deshabilite las excepciones en modo de usuario.  
+- En el depurador de kernel, deshabilite las excepciones en modo de usuario.  
   
 #### <a name="to-disable-kernel-debugging-in-the-current-session"></a>Para deshabilitar la depuración del kernel en la sesión actual  
   
 -   En el símbolo del sistema, escriba:  
   
-    ```  
+    ```cmd
     Kdbgctrl.exe -d  
     ```  
   
@@ -67,7 +68,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 1.  En el símbolo del sistema, escriba:  
   
-    ```  
+    ```cmd
     bcdedit /debug off   
     ```  
   
@@ -77,13 +78,13 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 1.  Busque el archivo boot.ini en la unidad del sistema (normalmente C:\\). El archivo boot.ini podría estar oculto y ser de solo lectura. Por tanto, tendrá que utilizar el siguiente comando para verlo:  
   
-    ```  
+    ```cmd
     dir /ASH  
     ```  
   
 2.  Abra el archivo boot.ini en el Bloc de notas y quite las siguientes opciones:  
   
-    ```  
+    ```cmd
     /debug  
     /debugport  
     /baudrate  

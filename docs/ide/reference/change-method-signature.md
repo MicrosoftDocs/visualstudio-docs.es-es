@@ -1,7 +1,7 @@
 ---
-title: Refactorización de una firma de método en Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Refactorización de una firma de método en Visual Studio
 ms.date: 01/26/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
@@ -15,11 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce920d11d7f29f166bf551d8ce95df11f5abf9d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 944340a8f6901934c3afc2f54323f73bc5639f8b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842292"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Refactorización de cambio de una firma de método
 
@@ -41,44 +42,44 @@ Esta refactorización se aplica a lo siguiente:
 
    - C#:
 
-    ![Código resaltado (C#)](media/changesignature-highlight-cs.png)
+       ![Código resaltado (C#)](media/changesignature-highlight-cs.png)
 
    - VB:
 
-    ![Código resaltado (Visual Basic)](media/changesignature-highlight-vb.png)
+       ![Código resaltado (Visual Basic)](media/changesignature-highlight-vb.png)
 
-1. A continuación, realice alguno de los siguientes procedimientos:
+2. A continuación, realice alguno de los siguientes procedimientos:
 
    - **Teclado**
-     - Presione **CTRL+R** y, a continuación, **CTRL+V**.  (Tenga en cuenta que su método abreviado de teclado puede ser diferente en función del perfil que haya seleccionado).
-     - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones** y seleccione **Cambiar firma** en el menú emergente de la ventana Vista previa.
+      - Presione **CTRL+R** y, a continuación, **CTRL+V**.  (Tenga en cuenta que su método abreviado de teclado puede ser diferente en función del perfil que haya seleccionado).
+      - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones** y seleccione **Cambiar firma** en el menú emergente de la ventana Vista previa.
    - **Mouse**
-     - Seleccione **Editar > Refactorizar > Quitar parámetros**.
-     - Seleccione **Editar > Refactorizar > Reordenar parámetros**.
-     - Haga clic con el botón derecho en el código, seleccione el menú **Acciones rápidas y refactorizaciones** y elija **Cambiar firma** en el menú emergente de la ventana Vista previa.
+      - Seleccione **Editar > Refactorizar > Quitar parámetros**.
+      - Seleccione **Editar > Refactorizar > Reordenar parámetros**.
+      - Haga clic con el botón derecho en el código, seleccione el menú **Acciones rápidas y refactorizaciones** y elija **Cambiar firma** en el menú emergente de la ventana Vista previa.
 
-1. En el cuadro de diálogo **Cambiar firma** que aparece, puede usar los botones a la derecha para cambiar la firma del método:
+3. En el cuadro de diálogo **Cambiar firma** que aparece, puede usar los botones a la derecha para cambiar la firma del método:
 
    ![Cuadro de diálogo para cambiar firma](media/changesignature-dialog-cs.png)
 
-   | Botón | Description
+   | Botón | Descripción
    | ------ | ---
    | **Up/Down** | Mueve el parámetro seleccionado hacia arriba y hacia abajo en la lista.
-   | **Remove**  | Quita el parámetro seleccionado de la lista.
+   | **Remove** | Quita el parámetro seleccionado de la lista.
    | **Restore** | Restaura el parámetro seleccionado y tachado a la lista.
 
    > [!TIP]
    > Use la casilla **Vista previa de los cambios de referencia** para [ver cuál será el resultado antes de confirmar](../../ide/preview-changes.md).
 
-1. Cuando haya terminado, presione el botón **Aceptar** para realizar los cambios.
+4. Cuando haya terminado, presione el botón **Aceptar** para realizar los cambios.
 
    - C#:
 
-    ![Resultado del cambio de firma (C#)](media/changesignature-result-cs.png)
+      ![Resultado del cambio de firma (C#)](media/changesignature-result-cs.png)
 
    - Visual Basic:
 
-    ![Resultado del cambio de firma (Visual Basic)](media/changesignature-result-vb.png)
+      ![Resultado del cambio de firma (Visual Basic)](media/changesignature-result-vb.png)
 
 ## <a name="see-also"></a>Vea también
 

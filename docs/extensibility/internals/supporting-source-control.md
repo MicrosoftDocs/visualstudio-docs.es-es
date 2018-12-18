@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130695"
 ---
 # <a name="supporting-source-control"></a>Compatibilidad con Control de código fuente
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] admite desprotecciones del archivo, protecciones y otras operaciones de control de origen de su proyecto o el editor. Como un cliente de control de código fuente, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] está diseñado para interactuar con un paquete de control de código fuente, como [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], que proporciona archivado, control de versiones y funciones de control para un conjunto de archivos definido dinámicamente.  

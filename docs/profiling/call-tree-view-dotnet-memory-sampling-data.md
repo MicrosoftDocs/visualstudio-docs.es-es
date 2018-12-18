@@ -12,21 +12,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c50e27ef43acc62c1dcf13403ce510064c986541
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c3c7c70057380289272e86cf7187680746dafdd2
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336050"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>Vista Árbol de llamadas: datos de muestreo de memoria de .NET
 La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funciones que se recorrieron en la aplicación de la que se generaron perfiles. La raíz del árbol es el punto de entrada a la aplicación o el componente. Cada nodo de función muestra todas las funciones a las que ha llamado, así como los datos de asignación de memoria de .NET de esas llamadas a funciones.  
   
  Los valores en la vista Árbol de llamadas se refieren a las instancias de la función a las que llamó la función primaria en el árbol de llamadas. Los valores de porcentaje se calculan mediante la comparación del valor de instancia de función con el tamaño o número total de asignaciones de la ejecución de asignación de perfiles.  
   
-## <a name="highlighting-the-execution-hot-path"></a>Resaltar la ruta de acceso activa de ejecución  
+## <a name="highlight-the-execution-hot-path"></a>Resaltado de la ruta de acceso activa de ejecución  
  La vista Árbol de llamadas puede expandir y resaltar la ruta de acceso de ejecución del proceso o la función que creó la mayoría de los objetos de memoria, o los más grandes. Para mostrar la ruta de acceso más activa, haga clic con el botón derecho en el proceso o función y, a continuación, haga clic en **Expandir ruta de acceso activa**.  
   
-## <a name="setting-the-call-tree-root-node"></a>Establecer el nodo raíz del árbol de llamadas  
+## <a name="set-the-call-tree-root-node"></a>Establecimiento del nodo raíz del árbol de llamadas  
  Cada proceso en la ejecución de generación de perfiles se muestra como un nodo raíz. Para establecer el nodo de inicio de la vista Árbol de llamadas en otro nodo, haga clic con el botón derecho en el nodo que quiere establecer como nodo de inicio y seleccione **Establecer raíz**.  
   
  Al establecer el nodo raíz, se eliminan todas las demás entradas de la vista, excepto el subárbol del nodo seleccionado. Puede restablecer el nodo raíz en el nodo que estaba viendo; para ello, haga clic con el botón derecho en la ventana de la vista Árbol de llamadas y seleccione **Restablecer raíz**.  

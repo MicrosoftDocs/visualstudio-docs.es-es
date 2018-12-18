@@ -1,6 +1,7 @@
 ---
 title: 'CA2126: Las peticiones de vínculos de tipos requieren peticiones de herencias'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -13,15 +14,21 @@ ms.assetid: 07b604e5-5579-4df9-a578-dadd0d8370a7
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a9ee3817d445144c3c83756cda07da2ed41adee6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 82fe9045173e65b24204a3b04e12b6a7f655c651
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548405"
 ---
 # <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126: Las peticiones de vínculos de tipos requieren peticiones de herencias
+
 |||
 |-|-|
 |TypeName|TypeLinkDemandsRequireInheritanceDemands|
@@ -33,16 +40,16 @@ ms.lasthandoff: 04/19/2018
  Un tipo público no sellado está protegido con una petición de vínculo, tiene un método reemplazable y ni el tipo ni el método está protegido con una petición de herencia.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Una petición de vínculo en un método o su tipo declarativo requiere que el llamador inmediato del método tenga el permiso especificado. Una petición de herencia en un método requiere un método de reemplazo tenga el permiso especificado. Una petición de herencia en un tipo requiere una clase derivada tenga el permiso especificado.
+ Una petición de vínculo en un método o su tipo declarativo requiere que el llamador inmediato del método tenga el permiso especificado. Una petición de herencia en un método requiere un método de reemplazo tenga el permiso especificado. Una petición de herencia en un tipo requiere una clase derivada para tener el permiso especificado.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, proteja el tipo o el método con una petición de herencia para el mismo permiso que la petición de vínculo.
+ Para corregir una infracción de esta regla, proteja el tipo o el método con una petición de herencia para el mismo permiso como la petición de vínculo.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra un tipo que infringe la regla.
+ El ejemplo siguiente muestra un tipo que infringe la regla.
 
  [!code-cpp[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/CPP/ca2126-type-link-demands-require-inheritance-demands_1.cpp)]
  [!code-vb[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/VisualBasic/ca2126-type-link-demands-require-inheritance-demands_1.vb)]
@@ -58,4 +65,6 @@ ms.lasthandoff: 04/19/2018
  [CA2123: Las peticiones de vínculo de invalidaciones deberían ser idénticas a la base](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)
 
 ## <a name="see-also"></a>Vea también
- [Instrucciones de codificación segura](/dotnet/standard/security/secure-coding-guidelines) [las peticiones de vínculo](/dotnet/framework/misc/link-demands)
+
+- [Instrucciones de codificación segura](/dotnet/standard/security/secure-coding-guidelines)
+- [Peticiones de vínculo](/dotnet/framework/misc/link-demands)

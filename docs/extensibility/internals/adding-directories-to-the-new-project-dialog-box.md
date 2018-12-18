@@ -1,5 +1,5 @@
 ---
-title: Agregar directorios en el cuadro de diálogo nuevo proyecto | Documentos de Microsoft
+title: Agregar directorios al cuadro de diálogo nuevo proyecto | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,20 +13,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4ad992785fdf8ab5ffdd3faa7043e2a0ee5411b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5c8686a34f52c7dc2e6c96b602811d7e12a6a7e6
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500792"
 ---
-# <a name="adding-directories-to-the-new-project-dialog-box"></a>Agregar directorios en el cuadro de diálogo nuevo proyecto
-Al crear nuevos tipos de proyecto, también puede registrar un nuevo directorio en el **nuevo proyecto** cuadro de diálogo para mostrar para su uso como plantillas. En el ejemplo de código siguiente se explica cómo registrar un nuevo directorio, también conocido como un nodo. En el ejemplo, se registran plantillas expuestas por el VSPackage CLSID_Package. Como resultado, el lado izquierdo de la **nuevo proyecto** cuadro de diálogo ofrece el nodo agregado, con un nombre determinado por el recurso Folder_Label_ResID. Este recurso se carga desde el archivo DLL satélite de VSPackage.  
+# <a name="add-directories-to-the-new-project-dialog-box"></a>Agregar directorios al cuadro de diálogo nuevo proyecto
+Al crear nuevos tipos de proyecto, también puede registrar un nuevo directorio en el **nuevo proyecto** cuadro de diálogo para mostrar para su uso como plantillas. El ejemplo de código siguiente explica cómo registrar un nuevo directorio, también conocido como un nodo. En el ejemplo, plantillas expuestos por el VSPackage, *CLSID_Package*, están registrados. Como resultado, el lado izquierdo de la **nuevo proyecto** cuadro de diálogo ofrece el nodo agregado, con un nombre determinado por la *Folder_Label_ResID* recursos. Este recurso se carga desde el archivo DLL satélite de VSPackage.  
   
- El **carpeta** valor representa un GUID de una carpeta en la que se muestra el nodo Folder_Label_ResID. En el ejemplo, se representa el GUID del **otros proyectos** carpeta en el **tipos de proyecto** panel de la **nuevo proyecto** cuadro de diálogo. Si el **otros proyectos** valor no está presente, la etiqueta se coloca en el nivel superior.  
+ El **carpeta** valor representa un GUID de una carpeta en la que el *Folder_Label_ResID* nodo se muestra. En el ejemplo, el GUID que representa el **otros proyectos** carpeta en el **tipos de proyecto** panel de la **nuevo proyecto** cuadro de diálogo. Si el **otros proyectos** valor está ausente, la etiqueta se coloca en el nivel superior.  
   
- El valor de TemplatesDir especifica la ruta de acceso completa del directorio que contiene las plantillas de proyecto. Estos archivos pueden ser .vsz (archivos) o archivos de plantilla típica se va a clonar.  
+ El `TemplatesDir` valor especifica la ruta de acceso completa del directorio que contiene las plantillas de proyecto. Estos archivos pueden ser *.vsz* archivos o archivos de plantilla típico para clonarse.  
   
- Si especifica TemplatesLocalizedSubDir, debe ser el identificador de recurso de una cadena que designa el subdirectorio de TemplatesDir que contiene plantillas de otros idiomas. Dado que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] carga el recurso de cadena desde un archivo DLL satélite si tiene uno, cada archivo DLL satélite puede contener un nombre de subdirectorio diferentes. El valor de SortPriority especifica una prioridad de ordenación.  
+ Si especifica `TemplatesLocalizedSubDir`, debe ser el identificador de recurso de cadena que designa el subdirectorio de `TemplatesDir` que contiene las plantillas localizadas. Dado que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] carga el recurso de cadena desde un archivo DLL satélite si tiene uno, cada archivo DLL satélite puede contener un nombre de subdirectorio diferentes. El `SortPriority` valor especifica una prioridad de ordenación.  
   
 ```  
 NoRemove NewProjectTemplates  
@@ -48,6 +49,6 @@ NoRemove NewProjectTemplates
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Registro de proyecto y plantillas de elementos](../../extensibility/internals/registering-project-and-item-templates.md)   
- [Agregar elementos a la para agregar elementos nuevos cuadros de diálogo](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
- [Adición directorios al cuadro de diálogo Agregar nuevo elemento](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
+ [Registrar las plantillas de proyecto y elemento](../../extensibility/internals/registering-project-and-item-templates.md)   
+ [Agregar elementos al cuadro de diálogo Agregar nuevo elemento](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
+ [Agregar directorios al cuadro de diálogo Agregar nuevo elemento](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)

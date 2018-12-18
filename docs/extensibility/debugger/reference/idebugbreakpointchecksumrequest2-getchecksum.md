@@ -13,14 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ecd6d0ed9c69cad1275a399ffacf402529eebf4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b78c5f44d8f73aa9bb2af5a5b2aa43d5b15bd7db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910529"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
-Recupera la suma de comprobación de documento para una solicitud de punto de interrupción especifica el identificador único del algoritmo de suma de comprobación para usar.  
+Recupera la suma de comprobación de documento para una solicitud de punto de interrupción según el identificador único del algoritmo de suma de comprobación para usar.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -46,10 +47,10 @@ public int GetChecksum(
  [out] Suma de comprobación de documento para la solicitud de punto de interrupción.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra una función que comprueba si la suma de comprobación de un documento, que va a enlazar, coincide con uno de la interfaz de usuario.  
+ El ejemplo siguiente muestra una función que comprueba si la suma de comprobación de un documento, que se va a enlazar, coincide con uno de la interfaz de usuario.  
   
 ```cpp  
 bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)  

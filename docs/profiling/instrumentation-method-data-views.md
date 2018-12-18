@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de4d9fb3d0d90c5832620e8ab8642b491c0b68f1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1d1582560611a5c47e3b5e24767d9a2b9c03f5a9
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263918"
 ---
 # <a name="instrumentation-method-data-views"></a>Vistas de datos del método de instrumentación
 Esta sección contiene información de referencia para las vistas y los informes de archivos de datos del generador de perfiles que se generaron mediante el método de instrumentación.  

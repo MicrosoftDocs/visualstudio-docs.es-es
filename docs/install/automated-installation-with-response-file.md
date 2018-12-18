@@ -1,33 +1,32 @@
 ---
-title: Automatización de la instalación de Visual Studio con un archivo de respuesta | Microsoft Docs
+title: Automatizar la instalación de Visual Studio con un archivo de respuesta
 description: Más información sobre cómo crear un archivo de respuesta JSON que permita automatizar la instalación de Visual Studio
 ms.date: 08/14/2017
-ms.reviewer: tims
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - response file
 - automate
 - installation
 - command-line
-author: tglee
+author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bbfff39dce34bfa8595f4e34222e3e61ac67fb5
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 6d9dbcb5c033469db3e92bd4cde931257ece9ab1
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138454"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>Definición de la configuración en un archivo de respuesta
+
 Los administradores que implementan Visual Studio pueden especificar un archivo de respuesta con el parámetro `--in`, como en el ejemplo siguiente:
 
-```
+```cmd
 vs_enterprise.exe --in customInstall.json
 ```
 
@@ -35,7 +34,7 @@ Los archivos de respuesta son archivos [JSON](http://json-schema.org/) cuyo cont
 
 Los parámetros que se especifican en la línea de comandos invalidan la configuración a partir del archivo de respuesta, excepto cuando los parámetros toman varias entradas (por ejemplo, `--add`). Cuando tiene varias entradas, las entradas proporcionadas en la línea de comandos se combinan con la configuración del archivo de respuesta.
 
-# <a name="setting-a-default-configuration-for-visual-studio"></a>Establecimiento de una configuración predeterminada para Visual Studio
+## <a name="setting-a-default-configuration-for-visual-studio"></a>Establecimiento de una configuración predeterminada para Visual Studio
 
 Si creó una caché de diseño de red con `--layout`, se crea un archivo `response.json` inicial en el diseño. Si crea un diseño parcial, este archivo de respuesta incluye las cargas de trabajo y los idiomas que se han incluido en el diseño.  Al ejecutar la instalación desde este diseño se usa automáticamente este archivo response.json, que selecciona las cargas de trabajo y los componentes incluidos en el diseño.  Los usuarios pueden seleccionar o anular la selección de cualquier carga de trabajo en la interfaz de usuario de instalación antes de instalar Visual Studio.
 
@@ -59,9 +58,11 @@ El archivo `response.json` base de un diseño debe tener un aspecto similar al e
   "productId": "Microsoft.VisualStudio.Product.Enterprise"
 }
 ```
+
 Cuando crea o actualiza un diseño, también se crea un archivo response.template.json.  Este archivo contiene todos los identificadores de idioma, componentes y carga de trabajo que pueden usarse.  Este archivo se proporciona como una plantilla para todo lo que podría incluirse en una instalación personalizada.  Los administradores pueden usar este archivo como un punto inicial para un archivo de respuesta personalizado.  Simplemente quite los identificadores de lo que no quiere instalar y guárdelo en su propio archivo de respuesta.  No personalice el archivo response.template.json o sus cambios se perderán cuando se actualice el diseño.
 
 ## <a name="example-layout-response-file-content"></a>Ejemplo de contenido del archivo de respuesta de diseño
+
 En el siguiente ejemplo se instala Visual Studio Enterprise con seis cargas de trabajo y componentes comunes, con los idiomas inglés y francés para la interfaz de usuario. Puede usar este ejemplo como una plantilla; simplemente cambie las cargas de trabajo y los componentes que quiere instalar:
 
 ```json
@@ -95,14 +96,8 @@ En el siguiente ejemplo se instala Visual Studio Enterprise con seis cargas de t
 }
 ```
 
-## <a name="get-support"></a>Obtener soporte técnico
-En ocasiones, algo no sale según lo previsto. Si se produce un error en la instalación de Visual Studio, consulte la página [Troubleshooting Visual Studio 2017 installation and upgrade issues](troubleshooting-installation-issues.md) (Solucionar problemas de errores de instalación y actualización de Visual Studio 2017). Si ninguno de los pasos de solución de problemas ayuda, puede ponerse en contacto con nosotros por chat para obtener asistencia para la instalación (solo en inglés). Para más información, consulte la [página de soporte técnico de Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
-
-Aquí tiene algunas opciones de soporte técnico más:
-* Puede notificarnos problemas del producto a través de la herramienta [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) que aparece en el instalador y en el IDE de Visual Studio.
-* Puede compartir una sugerencia de producto con nosotros en [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Puede realizar el seguimiento de los problemas del producto en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/), y hacer preguntas y encontrar respuestas.
-* También puede ponerse en contacto con nosotros y otros desarrolladores de Visual Studio a través de nuestra [conversación de Visual Studio en la comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio).  (Esta opción requiere una cuenta de [GitHub](https://github.com/)).
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Vea también
+
 * [Identificadores de componente y carga de trabajo de Visual Studio 2017](workload-and-component-ids.md)

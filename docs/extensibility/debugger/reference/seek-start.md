@@ -1,5 +1,5 @@
 ---
-title: SEEK_START | Documentos de Microsoft
+title: SEEK_START | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55be60c35ea3af97cb9129670ef422d1a649fead
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a10d749022757860c6f7cc620091c2ac10623976
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905228"
 ---
 # <a name="seekstart"></a>SEEK_START
 Especifica la posición desde la que se va a iniciar la búsqueda en una secuencia de desensamblado.  
@@ -61,10 +62,10 @@ public enum enum_SEEK_START {
  Inicia la búsqueda en el contexto de código especificada del documento actual.  
   
  SEEK_START_CODELOCID  
- Inicia la búsqueda en el identificador de ubicación de código especificada. Identificadores de ubicación de código se obtienen mediante una llamada a [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).  
+ Inicia la búsqueda en el identificador de ubicación de código dado. Los identificadores de ubicación de código se obtienen mediante una llamada a [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).  
   
 ## <a name="remarks"></a>Comentarios  
- Pasa como un argumento a la [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) método.  
+ Se pasa como argumento a la [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) método.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  

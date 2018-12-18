@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468813"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 Información de la operación de compilación se divide entre los símbolos con un `SymTagCompiland` etiqueta (detalle baja) y un `SymTagCompilandDetails` etiqueta (detalles alto). `SymTagCompilandDetails` requiere la carga de símbolos adicionales. Sin embargo, proporciona una gran cantidad de información sobre la operación de compilación que no está disponible con un `SymTagCompiland` símbolos.  

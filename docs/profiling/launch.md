@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c9fc350a3eaadd919f339a37843f37291ed6ff3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3afc0a50847591445c106d86460ee1821fe0df81
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219203"
 ---
 # <a name="launch"></a>Launch
 La opción **Launch** inicia el generador de perfiles mediante el método de muestreo y también inicia la aplicación especificada.  
@@ -23,7 +24,7 @@ La opción **Launch** inicia el generador de perfiles mediante el método de mue
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cmd  
 VSPerfCmd.exe /Launch:AppName [Options]  
 ```  
   
@@ -38,7 +39,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
  Inicializa la sesión del generador de perfiles de línea de comandos y establece el método de generación de perfiles especificado.  
   
  **GlobalOn** y **GlobalOff**  
- Reanuda (**GlobalOn**) o detiene (**GlobalOff**) la generación de perfiles, pero no finaliza la sesión de generación de perfiles.  
+ Reanuda la generación de perfiles de (**GlobalOn**) o detiene la de (**GlobalOff**), pero no finaliza la sesión de generación de perfiles.  
   
  **ProcessOn:** `PID` y **ProcessOff**:`PID`  
  Reanuda la generación de perfiles de (**ProcessOn**) o detiene la de (**ProcessOff**) para el proceso especificado.  
@@ -77,13 +78,13 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="example"></a>Ejemplo  
  En este ejemplo se muestra el uso de **Launch** para iniciar una aplicación.  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 VSPerfCmd.exe /Launch:TestApp.exe  
 ```  
   
 ## <a name="see-also"></a>Vea también  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Generar perfiles de servicios](../profiling/command-line-profiling-of-services.md)
+ [Generación de perfiles de aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Generación de perfiles de aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Generar perfiles para servicios](../profiling/command-line-profiling-of-services.md)

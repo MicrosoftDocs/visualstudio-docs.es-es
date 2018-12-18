@@ -1,0 +1,378 @@
+items:
+- name: Herramientas de prueba de Visual Studio
+  href: improve-code-quality.md
+- name: Escenarios de prueba
+  href: developer-testing-scenarios.md
+- name: Pruebas unitarias
+  href: unit-test-your-code.md
+  items:
+  - name: Primeros pasos
+    href: getting-started-with-unit-testing.md
+  - name: Conceptos básicos de las pruebas unitarias
+    href: unit-test-basics.md
+  - name: Crear un proyecto de prueba unitaria
+    href: create-a-unit-test-project.md
+  - name: Crear un comando de pruebas unitarias
+    href: create-unit-tests-menu.md
+  - name: IntelliTest
+    href: generate-unit-tests-for-your-code-with-intellitest.md
+    items:
+    - name: Información general
+      href: intellitest-manual/introduction.md
+    - name: Introducción
+      href: intellitest-manual/getting-started.md
+    - name: Índice a las secciones
+      href: intellitest-manual/index.md
+    - name: Generación de pruebas
+      href: intellitest-manual/test-generation.md
+    - name: Ejecución simbólica dinámica
+      href: intellitest-manual/input-generation.md
+    - name: Límites de exploración
+      href: intellitest-manual/exploration-bounds.md
+    - name: Glosario de atributos
+      href: intellitest-manual/attribute-glossary.md
+    - name: Cascada de configuración
+      href: intellitest-manual/settings-waterfall.md
+    - name: clases del asistente estáticas
+      href: intellitest-manual/static-helper-classes.md
+    - name: Advertencias y errores
+      href: intellitest-manual/warnings-and-errors.md
+  - name: Instalar marcos de prueba unitaria de terceros
+    href: install-third-party-unit-test-frameworks.md
+  - name: Ejecutar pruebas unitarias con el Explorador de pruebas
+    href: run-unit-tests-with-test-explorer.md
+    items:
+    - name: Preguntas más frecuentes sobre el Explorador de pruebas
+      href: test-explorer-faq.md
+  - name: Ejecutar pruebas desde la línea de comandos
+    href: vstest-console-options.md
+  - name: Ejecutar una prueba unitaria como un proceso de 64 bits
+    href: run-a-unit-test-as-a-64-bit-process.md
+  - name: Configurar pruebas unitarias usando un archivo .runsettings
+    href: configure-unit-tests-by-using-a-dot-runsettings-file.md
+  - name: Escribir pruebas unitarias para código administrado
+    items:
+    - name: 'Tutorial: Crear y ejecutar pruebas unitarias para código administrado'
+      href: walkthrough-creating-and-running-unit-tests-for-managed-code.md
+    - name: 'Inicio rápido: Desarrollo controlado por pruebas con el Explorador de pruebas'
+      href: quick-start-test-driven-development-with-test-explorer.md
+    - name: Usar miembros de Microsoft.VisualStudio.TestTools.UnitTesting en pruebas unitarias
+      href: using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md
+    - name: Usar las clases Assert
+      href: using-the-assert-classes.md
+    - name: Aislar el código en pruebas con Microsoft Fakes
+      href: isolating-code-under-test-with-microsoft-fakes.md
+      items:
+      - name: Usar código auxiliar para aislar partes de la aplicación entre sí para las pruebas unitarias
+        href: using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md
+      - name: Usar correcciones de compatibilidad (shim) para aislar la aplicación de otros ensamblados para pruebas unitarias
+        href: using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md
+      - name: Generación de código, compilación y convenciones de nomenclatura en Microsoft Fakes
+        href: code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md
+    - name: Crear una prueba unitaria controlada por datos
+      href: how-to-create-a-data-driven-unit-test.md
+      items:
+      - name: 'Tutorial: Usar un archivo de configuración para definir un origen de datos'
+        href: walkthrough-using-a-configuration-file-to-define-a-data-source.md
+    - name: Pruebas unitarias para métodos genéricos
+      href: unit-tests-for-generic-methods.md
+    - name: Configurar pruebas unitarias cuyo destino sea una versión anterior de .NET Framework
+      href: how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md
+    - name: Proyecto de ejemplo para crear pruebas unitarias
+      href: sample-project-for-creating-unit-tests.md
+  - name: Escribir pruebas unitarias para código de C/C++
+    href: writing-unit-tests-for-c-cpp.md
+    items:
+    - name: Usar el marco de pruebas unitarias de Microsoft para C++
+      href: how-to-use-microsoft-test-framework-for-cpp.md
+    - name: Usar el marco de pruebas de Google para C++
+      href: how-to-use-google-test-for-cpp.md
+    - name: Usar Boost.Test
+      href: how-to-use-boost-test-for-cpp.md
+    - name: Usar CTest
+      href: how-to-use-ctest-for-cpp.md
+    - name: Escribir pruebas unitarias para archivos DLL de C/C++
+      href: how-to-write-unit-tests-for-cpp-dlls.md
+    - name: 'Tutorial: Escritura de pruebas unitarias para archivos DLL de C++'
+      href: walkthrough-writing-unit-tests-for-cpp-dlls.md
+    - name: Marco de pruebas unitarias de Microsoft para la referencia de API de C++
+      href: microsoft-visualstudio-testtools-cppunittestframework-api-reference.md
+  - name: Crear y ejecutar pruebas unitarias para aplicaciones UWP
+    items:
+    - name: Prueba unitaria de un archivo DLL de C++ en UWP
+      href: unit-testing-a-visual-cpp-dll-for-store-apps.md
+    - name: Prueba unitaria de código de Visual C# en aplicaciones UWP
+      href: unit-testing-visual-csharp-code-in-a-store-app.md
+    - name: 'Tutorial: Crear y ejecutar pruebas unitarias para aplicaciones UWP'
+      href: walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md
+  - name: Usar cobertura de código para determinar la cantidad de código que se está probando
+    href: using-code-coverage-to-determine-how-much-code-is-being-tested.md
+    items:
+    - name: Personalizar el análisis de cobertura de código
+      href: customizing-code-coverage-analysis.md
+    - name: Solucionar problemas de cobertura de código
+      href: troubleshooting-code-coverage.md
+  - name: Usar emuladores para aislar las pruebas unitarias para aplicaciones de SharePoint 2010
+    href: using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md
+- name: Live Unit Testing
+  href: live-unit-testing-intro.md
+  items:
+  - name: Novedades de Live Unit Testing
+    href: live-unit-testing-whats-new.md
+  - name: Introducción a Live Unit Testing
+    href: live-unit-testing-start.md
+  - name: Usar Live Unit Testing en Visual Studio 2017 Enterprise Edition
+    href: live-unit-testing.md
+  - name: Preguntas más frecuentes sobre Live Unit Testing
+    href: live-unit-testing-faq.md
+- name: Rendimiento web y pruebas de carga
+  items:
+  - name: 'Inicio rápido: Crear un proyecto de prueba de carga'
+    href: quickstart-create-a-load-test-project.md
+  - name: Configurar pruebas de carga
+    href: edit-load-tests.md
+    items:
+    - name: Editar escenarios
+      href: edit-load-test-scenarios.md
+      items:
+      - name: Propiedades de escenarios
+        href: load-test-scenario-properties.md
+      - name: Combinación de pruebas
+        href: edit-the-test-mix-in-a-load-test-scenario.md
+      - name: Modelo de combinación de pruebas
+        href: emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md
+        items:
+        - name: Editar modelos de combinación de pruebas
+          href: edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md
+      - name: Combinación de exploradores
+        href: edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md
+      - name: Combinación de redes
+        href: specify-virtual-network-types-in-a-load-test-scenario.md
+      - name: Perfil de reflexión de usuario
+        href: edit-think-times-in-load-test-scenarios.md
+      - name: Modelos de carga
+        href: edit-load-patterns-to-model-virtual-user-activities.md
+        items:
+        - name: Propiedad de tiempo de rampa de paso
+          href: how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md
+      - name: Retardos de inicio
+        href: configure-scenario-start-delays.md
+      - name: Iteraciones de prueba
+        href: configure-test-iterations-in-a-load-test-scenario.md
+      - name: Porcentaje de nuevos usuarios
+        href: how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md
+      - name: Distribución de intervalo de velocidad
+        href: how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md
+    - name: Editar conjuntos de contadores
+      href: specify-counter-sets-and-threshold-rules-for-load-testing.md
+      items:
+      - name: Agregar contadores
+        href: how-to-add-counters-to-counter-sets-using-the-load-test-editor.md
+      - name: Conjuntos de contadores personalizados
+        href: how-to-add-custom-counter-sets-using-the-load-test-editor.md
+      - name: Administrar conjuntos de contadores
+        href: how-to-manage-counter-sets-using-the-load-test-editor.md
+      - name: Agregar una regla de umbral
+        href: how-to-add-a-threshold-rule-using-the-load-test-editor.md
+    - name: Editar configuración de ejecución
+      href: configure-load-test-run-settings.md
+      items:
+      - name: Propiedades de parámetros de ejecución
+        href: load-test-run-settings-properties.md
+      - name: Agregar otros parámetros de ejecución
+        href: how-to-add-additional-run-settings-to-a-load-test.md
+      - name: Parámetros de contexto
+        href: how-to-add-context-parameters-to-a-load-test-run-setting.md
+      - name: Configuración de registros
+        href: modify-load-test-logging-settings.md
+        items:
+        - name: Tamaño máximo de registros
+          href: how-to-specify-the-maximum-size-for-the-log-file.md
+        - name: Pruebas no superadas
+          href: how-to-specify-if-test-failures-are-saved-to-test-logs.md
+      - name: Almacenamiento de detalles de tiempo
+        href: how-to-specify-the-timing-details-storage-property-for-a-load-test.md
+      - name: Iteraciones de prueba
+        href: how-to-specify-the-number-of-test-iterations-in-a-load-test.md
+      - name: Frecuencia de muestreo
+        href: how-to-specify-the-sample-rate-for-a-load-test.md
+      - name: Seleccionar un parámetro de ejecución
+        href: how-to-select-the-active-run-setting-for-a-load-test.md
+        items:
+        - name: Línea de comandos
+          href: how-to-select-a-load-test-run-setting-from-the-command-line.md
+  - name: 'Tutorial: Crear y ejecutar una prueba de carga'
+    href: walkthrough-create-and-run-a-load-test.md
+  - name: Pruebas de rendimiento web
+    items:
+    - name: Crear una prueba de servicios web
+      href: how-to-create-a-web-service-test.md
+    - name: Generar una prueba de rendimiento web codificada
+      href: generate-and-run-a-coded-web-performance-test.md
+    - name: Agregar un origen de datos a una prueba de rendimiento web
+      href: add-a-data-source-to-a-web-performance-test.md
+    - name: Parámetros dinámicos
+      href: fix-non-detectable-dynamic-parameters-in-a-web-performance-test.md
+  - name: Controladores y agentes de pruebas
+    href: configure-test-agents-and-controllers-for-load-tests.md
+    items:
+    - name: Requisitos
+      href: test-controller-and-test-agent-requirements-for-load-testing.md
+    - name: Administrar controladores de pruebas y agentes de pruebas
+      href: manage-test-controllers-and-test-agents.md
+    - name: Cómo especificar agentes de pruebas
+      href: how-to-specify-test-agents-to-use-in-load-test-scenarios.md
+    - name: Asignar roles
+      href: assign-roles-to-a-test-controller-and-test-agent.md
+    - name: Configurar puertos
+      href: configure-ports-for-test-controllers-and-test-agents.md
+    - name: Enlazar a un adaptador de red
+      href: how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md
+    - name: Ejecutar pruebas que interactúen con el escritorio
+      href: how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md
+    - name: Períodos de tiempo de expiración
+      href: how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md
+    - name: Solucionar problemas
+      href: troubleshoot-test-controllers-and-test-agents.md
+  - name: Personalizar pruebas de carga
+    items:
+    - name: Cargar API de prueba
+      href: how-to-use-the-load-test-api.md
+    - name: API de prueba de rendimiento web
+      href: how-to-use-the-web-performance-test-api.md
+    - name: Crear una regla de extracción personalizada
+      href: code-a-custom-extraction-rule-for-a-web-performance-test.md
+    - name: Crear una regla de validación personalizada
+      href: code-a-custom-validation-rule-for-a-web-performance-test.md
+    - name: Crear código y complementos personalizados
+      href: create-custom-code-and-plug-ins-for-load-tests.md
+      items:
+      - name: Crear un complemento de prueba de rendimiento web
+        href: how-to-create-a-web-performance-test-plug-in.md
+      - name: Crear un complemento de nivel de solicitud
+        href: how-to-create-a-request-level-plug-in.md
+      - name: Crear un complemento de prueba de carga
+        href: how-to-create-a-load-test-plug-in.md
+      - name: Crear un complemento de grabadora
+        href: how-to-create-a-recorder-plug-in.md
+      - name: Crear un editor de cuerpo HTTP personalizado
+        href: how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md
+  - name: Diagnósticos de pruebas de carga
+    items:
+    - name: Crear un adaptador de datos de diagnóstico
+      href: create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md
+      items:
+      - name: Cómo crear
+        href: how-to-create-a-diagnostic-data-adapter.md
+    - name: Recopilar diagnósticos mediante la configuración de pruebas
+      href: collect-diagnostic-information-using-test-settings.md
+      items:
+      - name: Crear una configuración de pruebas
+        href: how-to-create-a-test-setting-for-a-distributed-load-test.md
+      - name: Configurar el generador de perfiles ASP.NET
+        href: how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md
+      - name: Configurar la emulación de red
+        href: how-to-configure-network-emulation-using-test-settings-in-visual-studio.md
+    - name: Recopilar datos de IntelliTrace
+      href: how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md
+    - name: Grabaciones de pantalla y voz
+      href: how-to-include-recordings-of-the-screen-and-voice-during-tests.md
+  - name: Analizar resultados
+    href: analyze-load-test-results-using-the-load-test-analyzer.md
+    items:
+    - name: Acceder a los resultados
+      href: how-to-access-load-test-results-for-analysis.md
+    - name: Información general de resumen
+      href: load-test-results-summary-overview.md
+    - name: Vista de tablas
+      href: analyze-load-test-results-and-errors-in-the-tables-view.md
+      items:
+      - name: Tiempo de respuesta de la página web
+        href: how-to-view-web-page-response-time-in-a-load-test.md
+    - name: Vista de gráficos
+      href: analyze-load-test-results-in-the-graphs-view.md
+      items:
+      - name: Agregar y eliminar contadores
+        href: how-to-add-and-delete-counters-on-graphs-in-load-test-results.md
+      - name: Crear gráficos personalizados
+        href: how-to-create-custom-graphs-in-load-test-results.md
+      - name: Usar la leyenda
+        href: use-the-graphs-view-legend-to-analyze-load-tests.md
+      - name: Cómo acercar
+        href: how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md
+    - name: Vista de detalles
+      href: analyze-load-test-virtual-user-activity-in-the-details-view.md
+      items:
+      - name: Analizar la actividad del usuario virtual
+        href: how-to-analyze-virtual-user-activity-during-a-load-test.md
+      - name: 'Tutorial: Usar el diagrama de actividad'
+        href: walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md
+    - name: Infracciones de las reglas de umbral
+      href: analyze-threshold-rule-violations-in-load-tests.md
+    - name: Comparar resultados y analizar tendencias
+      href: compare-load-test-results.md
+    - name: Crear un informe en Excel
+      href: how-to-create-load-test-performance-reports-using-microsoft-excel.md
+    - name: Crear un informe en Word
+      href: how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md
+    - name: Repositorios de resultados
+      href: manage-load-test-results-in-the-load-test-results-repository.md
+      items:
+      - name: Seleccionar un repositorio
+        href: how-to-select-a-load-test-results-repository.md
+      - name: Importar resultados
+        href: how-to-import-load-test-results-into-a-repository.md
+      - name: Exportar resultados
+        href: how-to-export-load-test-results-from-a-repository.md
+      - name: Eliminar resultados
+        href: how-to-delete-load-test-results-from-a-repository.md
+    - name: Crear un complemento para el visor de resultados
+      href: how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md
+- name: Automatización de pruebas de interfaz de usuario
+  href: use-ui-automation-to-test-your-code.md
+  items:
+  - name: 'Tutorial: Crear, editar y mantener una prueba automatizada de IU'
+    href: walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md
+  - name: Comprobación de aplicaciones para UWP con pruebas automatizadas de IU
+    href: test-uwp-app-with-coded-ui-test.md
+  - name: Establecer una propiedad única de automatización para controles UWP
+    href: set-a-unique-automation-property-for-windows-store-controls-for-testing.md
+  - name: Usar controles HTML5 en pruebas automatizadas de IU
+    href: using-html5-controls-in-coded-ui-tests.md
+  - name: Probar aplicaciones de SharePoint 2010 con pruebas automatizadas de IU
+    href: testing-sharepoint-2010-applications-with-coded-ui-tests.md
+  - name: Crear una prueba automatizada de IU controlada por datos
+    href: creating-a-data-driven-coded-ui-test.md
+  - name: Esperar eventos concretos durante la reproducción
+    href: making-coded-ui-tests-wait-for-specific-events-during-playback.md
+  - name: Usar diferentes exploradores web con las pruebas automatizadas de IU
+    href: using-different-web-browsers-with-coded-ui-tests.md
+  - name: Editar pruebas automatizadas de IU con el Editor de pruebas automatizadas de IU
+    href: editing-coded-ui-tests-using-the-coded-ui-test-editor.md
+  - name: Analizar pruebas automatizadas de IU mediante los registros de pruebas automatizadas de IU
+    href: analyzing-coded-ui-tests-using-coded-ui-test-logs.md
+  - name: Anatomía de una prueba de IU codificada
+    href: anatomy-of-a-coded-ui-test.md
+  - name: Procedimientos recomendados para las pruebas automatizadas de IU
+    href: best-practices-for-coded-ui-tests.md
+  - name: Probar una aplicación grande con varias asignaciones de IU
+    href: testing-a-large-application-with-multiple-ui-maps.md
+  - name: Habilitar pruebas de IU codificadas en los controles
+    href: enable-coded-ui-testing-of-your-controls.md
+  - name: Plataformas y configuraciones admitidas
+    href: supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md
+  - name: Extender el marco de pruebas automatizadas de IU
+    href: extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md
+- name: Administración de Lab Management
+  href: lab-management/using-a-lab-environment-for-your-application-lifecycle.md
+  items:
+  - name: Usar la administración de versiones o compilaciones para las pruebas automatizadas
+    href: lab-management/use-build-or-rm-instead-of-lab-management.md
+  - name: Instalar agentes y controladores de pruebas
+    href: lab-management/install-configure-test-agents.md
+ms.openlocfilehash: 3035030458d8d0a3914952d606ca775ad33a62fc
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621518"

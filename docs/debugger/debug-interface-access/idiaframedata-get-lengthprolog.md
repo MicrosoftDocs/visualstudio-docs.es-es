@@ -1,5 +1,5 @@
 ---
-title: 'Idiaframedata:: Get_lengthprolog | Documentos de Microsoft'
+title: Get_lengthprolog | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8033e0f769c0222dc8c3ee90d680ea6f2de279fa
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 635d435cd81286c96a3949168dc27f2b8983c4d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843085"
 ---
 # <a name="idiaframedatagetlengthprolog"></a>IDiaFrameData::get_lengthProlog
 Recupera el número de bytes del código de prólogo en el bloque.  
@@ -36,7 +37,7 @@ HRESULT get_lengthProlog (
  [out] Devuelve el número de bytes del código de prólogo.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
  El código de prólogo es una secuencia de instrucciones que conserva los registros, Establece el estado de la CPU y establece la pila de la función.  

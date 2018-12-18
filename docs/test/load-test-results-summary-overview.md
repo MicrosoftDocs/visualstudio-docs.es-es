@@ -1,5 +1,5 @@
 ---
-title: Información general de resumen de resultados de pruebas de carga en Visual Studio | Microsoft Docs
+title: Información general de resumen de resultados de pruebas de carga en Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,18 +14,22 @@ ms.assetid: 326b6c3c-5378-452b-8ca3-ba5a06ab3d41
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 001f7f866437807565bc83a8ad3a4dd809dd4100
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ae70422ce3c88a3de6842f3f0946666b86ae559e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895020"
 ---
 # <a name="load-test-results-summary-overview"></a>Información general de resumen de resultados de pruebas de carga
 
-Después de ejecutar una prueba de carga, puede ver el resumen para entender rápidamente los resultados. El resumen de la prueba de carga proporciona los resultados clave en un formato compacto y fácil leer. También puede imprimir el resumen de la prueba de carga. Resulta cómodo para utilizarlo cuando deba comunicar los resultados a los interesados. El resumen de la prueba de carga también es la vista predeterminada cuando se abre un resultado de prueba de carga de una prueba ejecutada previamente. Para obtener más información, consulte [Cómo: Tener acceso a los resultados de pruebas de carga para su análisis](../test/how-to-access-load-test-results-for-analysis.md).
+Después de ejecutar una prueba de carga, puede ver el resumen para entender rápidamente los resultados. El resumen de la prueba de carga proporciona los resultados clave en un formato compacto y fácil leer. También puede imprimir el resumen de la prueba de carga. Resulta cómodo para utilizarlo cuando deba comunicar los resultados a los interesados. El resumen de la prueba de carga también es la vista predeterminada cuando se abre un resultado de prueba de carga de una prueba ejecutada previamente. Para más información, consulte [Acceso a los resultados de pruebas de carga para su análisis](../test/how-to-access-load-test-results-for-analysis.md).
 
- ![Vista de resumen](../test/media/ltest_summaryview.png "LTest_SummaryView")
+![Vista Resumen](../test/media/ltest_summaryview.png)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="the-load-test-summary"></a>Resumen de la prueba de carga
 
@@ -68,7 +72,7 @@ La sección de resultados globales contiene resultados resumidos de la prueba, i
 
 ## <a name="key-statistic-top-5-slowest-pages"></a>Estadística clave: Las 5 páginas más lentas
 
-La sección de páginas más lentas contiene las 5 páginas más lentas de la prueba de carga. Para cada página, se muestran la dirección URL y el tiempo medio de carga de la página. Las páginas se muestran en orden descendente. Puede elegir la dirección URL de una página para abrir la tabla **Páginas** e inspeccionar más detalles de esa página. Para más información, vea [Cómo: Ver el tiempo de respuesta de la página web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+La sección de páginas más lentas contiene las 5 páginas más lentas de la prueba de carga. Para cada página, se muestran la dirección URL y el tiempo medio de carga de la página. Las páginas se muestran en orden descendente. Puede elegir la dirección URL de una página para abrir la tabla **Páginas** e inspeccionar más detalles de esa página. Para obtener más información, vea [Cómo: Ver el tiempo de respuesta de la página web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 El valor de percentil para **95 % del tiempo de página (seg.)** informa de que 95 % de las páginas completaron en menos tiempo en segundos.
 
@@ -80,7 +84,7 @@ El valor de percentil para **95 % del tiempo de la prueba (seg.)** informa de qu
 
 ## <a name="key-statistic-top-5-slowest-sql-operations"></a>Estadística clave: Las 5 operaciones SQL más lentas
 
-Si la traza de SQL está habilitada en la prueba de carga, la sección de consultas más lentas contiene las 5 consultas más lentas de la prueba de carga. Para cada prueba se muestra el nombre de la operación y la duración. La duración se muestra en microsegundos (SQL Server 2005) o milisegundos (SQL Server 2000 y versiones anteriores). Las pruebas se muestran en orden descendente según su duración. Puede elegir el nombre de una operación para abrir la tabla **Seguimiento SQL** e inspeccionar más detalles de esa operación. Para más información, vea [la tabla de datos de seguimiento SQL](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table).
+Si la traza de SQL está habilitada en la prueba de carga, la sección de consultas más lentas contiene las 5 consultas más lentas de la prueba de carga. Para cada prueba se muestra el nombre de la operación y la duración. La duración se muestra en microsegundos (SQL Server 2005) o milisegundos (SQL Server 2000 y versiones anteriores). Las pruebas se muestran en orden descendente según su duración. Puede elegir el nombre de una operación para abrir la tabla **Seguimiento SQL** e inspeccionar más detalles de esa operación. Para obtener más información, vea [The SQL Trace data table](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table) (Tabla de datos Seguimiento de SQL).
 
 ## <a name="test-results"></a>Resultados de pruebas
 
@@ -91,7 +95,7 @@ La sección de resultados de pruebas contiene una lista de todas las pruebas y t
 
 ## <a name="page-results"></a>Resultados de la página
 
-La sección de resultados de página contiene una lista de todas las páginas web de la prueba de carga. Se muestran la dirección URL, el escenario, el nombre de la prueba, el tiempo medio de página y el recuento. Puede elegir la dirección URL de una página para abrir la tabla **Páginas** e inspeccionar más detalles de esa página. Para más información, vea [Cómo: Ver el tiempo de respuesta de la página web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+La sección de resultados de página contiene una lista de todas las páginas web de la prueba de carga. Se muestran la dirección URL, el escenario, el nombre de la prueba, el tiempo medio de página y el recuento. Puede elegir la dirección URL de una página para abrir la tabla **Páginas** e inspeccionar más detalles de esa página. Para obtener más información, vea [Cómo: Ver el tiempo de respuesta de la página web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 > [!NOTE]
 > Puede expandir o contraer esta sección eligiendo la flecha situada a la izquierda del título de la sección.
@@ -111,30 +115,30 @@ Los valores de percentil notifican la siguiente información de la transacción:
 
 ## <a name="system-under-test-resources"></a>Recursos del sistema sometido a prueba
 
-La sección de recursos del sistema sometido a prueba contiene una lista de equipos que son el conjunto de equipos de destino para los que se genera la carga. Incluye todos los equipos en los que se recolecten conjuntos de contadores que no sean el agente o el controlador. Se muestran el nombre del equipo, el porcentaje de tiempo de procesador y la memoria disponible. Puede elegir un nombre de equipo para abrir el gráfico **Sistema a prueba** y ver el uso de los recursos a lo largo del tiempo. Para obtener más información, vea [Analizar los resultados de pruebas de carga en la vista Gráficos del Analizador de pruebas de carga](../test/analyze-load-test-results-in-the-graphs-view.md).
+La sección de recursos del sistema sometido a prueba contiene una lista de equipos que son el conjunto de equipos de destino para los que se genera la carga. Incluye todos los equipos en los que se recolecten conjuntos de contadores que no sean el agente o el controlador. Se muestran el nombre del equipo, el porcentaje de tiempo de procesador y la memoria disponible. Puede elegir un nombre de equipo para abrir el gráfico **Sistema a prueba** y ver el uso de los recursos a lo largo del tiempo. Para obtener más información, vea [Analizar los resultados de pruebas de carga en la vista Gráficos](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 > [!NOTE]
 > Puede expandir o contraer esta sección eligiendo la flecha situada a la izquierda del título de la sección.
 
 ## <a name="controller-and-agent-resources"></a>Recursos de controlador y agentes
 
-La sección de recursos de controlador y agentes contiene una lista de equipos que se utilizan para ejecutar la prueba. Se muestran el nombre del equipo, el porcentaje de tiempo de procesador y la memoria disponible. Puede elegir un nombre de equipo para abrir el gráfico **Controlador y agentes** y ver el uso de los recursos a lo largo del tiempo. Para obtener más información, vea [Analizar los resultados de pruebas de carga en la vista Gráficos del Analizador de pruebas de carga](../test/analyze-load-test-results-in-the-graphs-view.md).
+La sección de recursos de controlador y agentes contiene una lista de equipos que se utilizan para ejecutar la prueba. Se muestran el nombre del equipo, el porcentaje de tiempo de procesador y la memoria disponible. Puede elegir un nombre de equipo para abrir el gráfico **Controlador y agentes** y ver el uso de los recursos a lo largo del tiempo. Para obtener más información, vea [Analizar los resultados de pruebas de carga en la vista Gráficos](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 > [!NOTE]
 > Puede expandir o contraer esta sección eligiendo la flecha situada a la izquierda del título de la sección.
 
 ## <a name="errors"></a>Errores
 
-La sección de errores contiene una lista de todos los errores que se han producido durante la prueba de carga. Se muestran el tipo y subtipo del error, el recuento y el último mensaje. Puede elegir un error para abrir la tabla **Errores** e inspeccionar más detalles de ese error. Para obtener más información, vea [Analizar los errores y resultados de pruebas de carga en la vista Tablas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) y [Cómo: Analizar errores con el panel Contadores](../test/how-to-analyze-errors-using-the-counters-panel.md).
+La sección de errores contiene una lista de todos los errores que se han producido durante la prueba de carga. Se muestran el tipo y subtipo del error, el recuento y el último mensaje. Puede elegir un error para abrir la tabla **Errores** e inspeccionar más detalles de ese error. Para obtener más información, vea [Analizar los errores y resultados de pruebas de carga en la vista Tablas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 > [!NOTE]
 > Puede expandir o contraer esta sección eligiendo la flecha situada a la izquierda del título de la sección.
 
-## <a name="printing-a-summary"></a>Imprimir un resumen
+## <a name="print-a-summary"></a>Imprimir un resumen
 
 Puede imprimir el resumen de la prueba de carga eligiendo **Imprimir** en el menú contextual del resumen. Puede ver antes una vista previa de la impresión eligiendo **Vista previa de impresión** en el menú contextual del resumen. También puede imprimir directamente desde la pantalla de vista previa.
 
 ## <a name="see-also"></a>Vea también
 
 - [Analizar las infracciones de las reglas de umbral](../test/analyze-threshold-rule-violations-in-load-tests.md)
-- [Analizar resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analizar los resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

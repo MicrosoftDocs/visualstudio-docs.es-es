@@ -1,11 +1,11 @@
 ---
 title: IActiveScriptSite::OnLeaveScript | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScriptSite.OnLeaveScript
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScriptSite_OnLeaveScript
 ms.assetid: 79af0e22-fbe3-4fae-8a5f-7af8b857678d
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725175"
 ---
 # <a name="iactivescriptsiteonleavescript"></a>IActiveScriptSite::OnLeaveScript
 Informa al host que ha devuelto el motor de scripting de ejecución de código de script.  

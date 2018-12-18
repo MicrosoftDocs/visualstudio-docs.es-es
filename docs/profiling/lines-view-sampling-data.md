@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b35964aeef4323f4daff01d77aef5d3d5bf7f66
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: cb965b9a93a278a4c51ea4661f683ebafc2838fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914819"
 ---
 # <a name="lines-view---sampling-data"></a>Vista Líneas: datos de muestreo
 La vista Líneas de datos de muestreo muestra los datos de rendimiento de las instrucciones que se estaban ejecutando cuando se recopilaron las muestras en la ejecución de generación de perfiles.  
@@ -26,23 +27,23 @@ La vista Líneas de datos de muestreo muestra los datos de rendimiento de las in
   
  En un archivo de origen, una instrucción puede abarcar más de una línea y una sola línea puede incluir más de una instrucción. Una instrucción se identifica mediante lo siguiente:  
   
--   El archivo de código fuente que contiene la instrucción de la función.  
+- El archivo de código fuente que contiene la instrucción de la función.  
   
--   La función que contiene la instrucción.  
+- La función que contiene la instrucción.  
   
--   La línea de origen donde comienza la instrucción.  
+- La línea de origen donde comienza la instrucción.  
   
--   El carácter en la línea de origen donde se inicia la instrucción.  
+- El carácter en la línea de origen donde se inicia la instrucción.  
   
--   La línea de origen donde finaliza la instrucción.  
+- La línea de origen donde finaliza la instrucción.  
   
--   El carácter en la línea de origen donde finaliza la instrucción.  
+- El carácter en la línea de origen donde finaliza la instrucción.  
   
- La columna Nombre de línea proporciona una concatenación ordenable de datos del identificador.  
+  La columna Nombre de línea proporciona una concatenación ordenable de datos del identificador.  
   
- Por definición, una instrucción no llama a otras funciones. Por lo tanto, se muestran solo los valores exclusivos.  
+  Por definición, una instrucción no llama a otras funciones. Por lo tanto, se muestran solo los valores exclusivos.  
   
-|Columna|Description|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|  
 |**Nombre de proceso**|Nombre del proceso.|  

@@ -18,14 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c031b36501f90619369eedb9622b303ec559f6bd
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4f0a3f24c5c8634301663f19dab9078bb37405b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876560"
 ---
-# <a name="taskbody-element-msbuild"></a>TaskBody (Elemento) (MSBuild)
-Contiene los datos que se pasen a `UsingTask``TaskFactory`. Para obtener más información, consulte [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
+# <a name="taskbody-element-msbuild"></a>Elemento TaskBody (MSBuild)
+Contiene los datos que se pasen a `UsingTask` `TaskFactory`. Para más información, consulte [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
 
  \<Project>  
  \<UsingTask>  
@@ -33,7 +34,7 @@ Contiene los datos que se pasen a `UsingTask``TaskFactory`. Para obtener más in
 
 ## <a name="syntax"></a>Sintaxis  
 
-```  
+```xml
 <TaskBody Evaluate="true/false" />  
 ```  
 
@@ -42,21 +43,21 @@ Contiene los datos que se pasen a `UsingTask``TaskFactory`. Para obtener más in
 
 ### <a name="attributes"></a>Atributos  
 
-|Atributo|Description|  
+|Atributo|Descripción|  
 |---------------|-----------------|  
 |`Evaluate`|Atributo Boolean opcional.<br /><br /> Si es `true`, MSBuild evalúa los elementos internos y expande los elementos y las propiedades antes de pasar la información a `TaskFactory` cuando se crea una instancia de la tarea.|  
 
 ### <a name="child-elements"></a>Elementos secundarios  
 
-|Elemento|Description|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
 |Datos|El texto entre las etiquetas `TaskBody` se envía textual a `TaskFactory`.|  
 
 ### <a name="parent-elements"></a>Elementos primarios  
 
-|Elemento|Description|  
-|-------------|-----------------|  
-|[UsingTask](../msbuild/usingtask-element-msbuild.md)|Proporciona una manera de registrar las tareas en [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Puede haber cero o más elementos `UsingTask` en un proyecto.|  
+| Elemento | Descripción |
+| - | - |
+| [UsingTask](../msbuild/usingtask-element-msbuild.md) | Proporciona una manera de registrar las tareas en [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Puede haber cero o más elementos `UsingTask` en un proyecto. |
 
 ## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se muestra cómo usar el elemento `TaskBody` con un atributo `Evaluate`.  
@@ -77,4 +78,4 @@ Contiene los datos que se pasen a `UsingTask``TaskFactory`. Para obtener más in
 ## <a name="see-also"></a>Vea también  
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
- [Referencia de esquemas de archivo del proyecto](../msbuild/msbuild-project-file-schema-reference.md)
+ [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)

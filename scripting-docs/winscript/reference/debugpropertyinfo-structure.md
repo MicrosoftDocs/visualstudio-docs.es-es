@@ -1,11 +1,11 @@
 ---
 title: DebugPropertyInfo (estructura) | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - DebugPropertyInfo
@@ -14,18 +14,19 @@ apilocation:
 helpviewer_keywords:
 - DebugPropertyInfo structure
 ms.assetid: 3246efbc-c212-4024-8f07-6414c2f85e75
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9baade1a742a06c952906c05c574e752806bc9c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0dca3dac5c2e55e512bd4f798ca4a9bce82f7e00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874194"
 ---
 # <a name="debugpropertyinfo-structure"></a>DebugPropertyInfo (Estructura)
-Describe un objeto de una naturaleza jerárquica con nombre, tipo y valor. Se utiliza para describir las propiedades de depuración de las variables locales, parámetros, variables de inspección y expresiones y se registra.  
+Describe un objeto de una naturaleza jerárquica que tiene el nombre, tipo y valor. Se utiliza para describir las propiedades de depuración de las variables locales, parámetros, las variables de inspección y expresiones y se registra.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -43,7 +44,7 @@ typedef struct DebugPropertyInfo{
   
 ## <a name="members"></a>Miembros  
  dwValidFields  
- Un tipo de datos enumerados que se usa para especificar qué campos se inicializan.  
+ Un tipo de datos enumerados que se utiliza para especificar qué campos se inicializan.  
   
  bstrName  
  El nombre de propiedad dentro de un contexto.  
@@ -52,7 +53,7 @@ typedef struct DebugPropertyInfo{
  El tipo de propiedad, como cadena con formato.  
   
  bstrValue parámetro  
- El valor de propiedad como cadena con formato.  
+ El valor de propiedad, como cadena con formato.  
   
  bstrFullName  
  Nombre completo de la propiedad.  
@@ -61,7 +62,7 @@ typedef struct DebugPropertyInfo{
  Una enumeración que especifica las marcas para los atributos de propiedad de depuración.  
   
  pDebugProp  
- El `IDebugProperty` descrita por la información en este `DebugPropertyInfo` estructura.  
+ El `IDebugProperty` descrito por la información de este `DebugPropertyInfo` estructura.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugProperty (interfaz)](../../winscript/reference/idebugproperty-interface.md)   

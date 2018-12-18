@@ -12,11 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 43411be41acf2e5bd2e40131dd06bf817bf87a38
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e0377417da5859e38c46f99b3b335ba627261cb5
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459704"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools para IA
 
@@ -27,19 +28,19 @@ Adéntrese hoy mismo en el mundo del aprendizaje profundo con [Microsoft Cogniti
 ## <a name="develop-debug-and-deploy-deep-learning-models-and-ai-solutions"></a>Desarrollar, depurar e implementar modelos de aprendizaje profundo y soluciones de AI
 Use las características de productividad de Visual Studio para impulsar sin dilación la innovación de AI. Use características de editor de código integradas como el resaltado de sintaxis, IntelliSense y el formato automático de texto. La aplicación de aprendizaje profundo se puede probar de forma interactiva en el entorno local por medio de la depuración paso a paso de los modelos y las variables locales.
 
-![ide de aprendizaje profundo](media\about\ide.png)
+![ide de aprendizaje profundo](media/about/ide.png)
 
 ## <a name="get-started-quickly-with-the-azure-machine-learning-sample-gallery"></a>Empezar a usar rápidamente la galería de ejemplos de Azure Machine Learning
 Visual Studio Tools para AI se integra con Azure Machine Learning para que sea muy fácil explorar una galería de experimentos de ejemplo con CNTK, TensorFlow, MMLSpark y mucho más.
 
-![explorador de ejemplos](media\about\gallery.png)
+![explorador de ejemplos](media/about/gallery.png)
 
 [Más información sobre cómo crear proyectos a partir de la galería de ejemplos](create-project-gallery.md)
 
 ## <a name="scale-out-deep-learning-model-training-andor-inferencing-to-the-cloud"></a>Escalar horizontalmente el entrenamiento de modelos de aprendizaje profundo y/o la inferencia en la nube
 Esta extensión hace que sea muy sencillo entrenar modelos en el equipo local o enviar trabajos a la nube gracias a la integración con Azure Machine Learning. Puede enviar trabajos a diferentes destinos de procesamiento como, entre otros muchos, clústeres de Spark o máquinas virtuales de GPU de Azure.
 
-![enviar trabajo](media\about\submitjobs.png)
+![enviar trabajo](media/about/submitjobs.png)
 
 [Más información sobre cómo entrenar modelos en la nube](tensorflow-vm.md)
 

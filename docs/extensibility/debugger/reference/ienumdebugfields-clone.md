@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e582caefd6c6fba214c29747de2221dfc115587
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7c21aa69b27a7ceeddecc6d95608d86d71045038
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836585"
 ---
 # <a name="ienumdebugfieldsclone"></a>IEnumDebugFields::Clone
 Este método devuelve una copia de la enumeración actual como un objeto independiente.  
@@ -43,7 +44,7 @@ int Clone(
  [out] Devuelve una copia de esta enumeración como un objeto independiente.  
   
 ## <a name="property-valuereturn-value"></a>Valor de propiedad y valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
  La copia de la enumeración tiene el mismo estado que el original en el momento en que se llama a este método. Sin embargo, los Estados de la copia y el original son independientes y se pueden cambiar de forma individual.  

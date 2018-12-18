@@ -1,5 +1,5 @@
 ---
-title: Depuración de errores y cuadros de diálogo de advertencia | Documentos de Microsoft
+title: Depuración de errores y los cuadros de diálogo de advertencia | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -23,11 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b87a662b888582a14526a03edf9df13e6492880b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bb7ed7b66483bcda01df00e92907801d994553e9
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279061"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Cuadros de diálogo de advertencias y errores de depuración
 A continuación, se muestran los cuadros de diálogo de advertencia y errores que se pueden encontrar mientras se depura una aplicación.  
@@ -41,13 +42,13 @@ A continuación, se muestran los cuadros de diálogo de advertencia y errores qu
   
  [Cuadro de diálogo Archivo ejecutable para sesión de depuración](../debugger/executable-for-debugging-session-dialog-box.md)  
   
- [No se pudo aplicar el cuadro de diálogo de cambios de código](../debugger/edit-and-continue-dialog-box-cpp.md)  
+ [No se pudo aplicar el cuadro de diálogo de los cambios de código](../debugger/edit-and-continue-dialog-box-cpp.md)  
   
  [Cuadro de diálogo Depurador de Microsoft Visual Studio (se produjo una excepción)](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)  
   
- [No hay código fuente disponible para el cuadro de diálogo de ubicación actual](../debugger/no-source-available.md)  
+ [No hay código fuente disponible para el cuadro de diálogo ubicación actual](../debugger/no-source-available.md)  
   
- [Ningún cuadro de diálogo de información simbólica](http://msdn.microsoft.com/en-us/18de4888-9cca-4059-a165-48b135fee4c9)  
+ [Ningún cuadro de diálogo de información simbólica](https://msdn.microsoft.com/library/18de4888-9cca-4059-a165-48b135fee4c9)  
   
  [Cuadro de diálogo Resolver ambigüedad](../debugger/resolve-ambiguity-dialog-box.md)  
   
@@ -62,9 +63,9 @@ A continuación, se muestran los cuadros de diálogo de advertencia y errores qu
   
  [Errores de depuración remota](../debugger/remote-debugging-errors-and-troubleshooting.md)  
   
- [Errores de asociación](http://msdn.microsoft.com/en-us/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
+ [Errores de asociación](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/8dbb3we5(v=vs.100))  
   
- [Solución de problemas de instalación de la depuración de SQL](http://msdn.microsoft.com/en-us/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
+ [Solución de problemas de instalación de la depuración de SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))  
   
  [Depuración de preguntas más frecuentes de Visual C++](../debugger/debugging-native-code-faqs.md)  
   

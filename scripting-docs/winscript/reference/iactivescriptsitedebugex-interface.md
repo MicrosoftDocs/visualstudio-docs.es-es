@@ -1,16 +1,16 @@
 ---
 title: IActiveScriptSiteDebugEx (interfaz) | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IActiveScriptSiteDebugEx Interface
 ms.assetid: 76869378-1a7b-47bd-8cd0-acc31f91d58d
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725045"
 ---
 # <a name="iactivescriptsitedebugex-interface"></a>IActiveScriptSiteDebugEx (Interfaz)
 Implemente esta interfaz junto con el `IActiveScriptSiteDebug` si está escribiendo un host que necesita para obtener una notificación de un error en tiempo de ejecución en una aplicación y, opcionalmente, asociar a la aplicación para la depuración de la interfaz. El Administrador de procesos de depuración proporciona una notificación a través de `IActiveScriptDebug` si el depurador de scripts de un Just-In-Time no se encuentra en el equipo. Si el depurador de scripts de ningún Just-In-Time es encuentra, PDM proporciona una notificación a través de `IActiveScriptDebugEx` en su lugar.  

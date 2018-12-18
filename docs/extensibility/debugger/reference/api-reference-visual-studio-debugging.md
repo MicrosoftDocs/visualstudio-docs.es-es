@@ -13,16 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c9007d679e36e2aa6dbab41074338395434be42
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 97d5aa6fc92457557493005389d129993d38e099
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839445"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Referencia de API (depuración de Visual Studio)
-La sección de referencia incluye información general y conceptual de la API, una guía que muestra la sintaxis y el uso para todos los elementos de la API y una gran variedad de ejemplos de código. Todas las referencias se muestran ordenados alfabéticamente por categoría.  
+La sección de referencia incluye información general conceptual de la API, una guía que muestra la sintaxis y el uso para todos los elementos de la API y una gran variedad de ejemplos de código. Todas las referencias aparecen ordenadas alfabéticamente por categoría.  
   
- La siguiente tabla muestra common `HRESULT` valores devueltos por métodos.  
+ En la tabla siguiente se muestra el común `HRESULT` valores devueltos por métodos.  
   
 |nombre|Descripción|Valor|  
 |----------|-----------------|-----------|  
@@ -31,22 +32,22 @@ La sección de referencia incluye información general y conceptual de la API, u
 |E_NOTIMPL|Sin implementar.|0 x 80004001|  
 |E_OUTOFMEMORY|No hay suficiente memoria para completar la operación.|0x8007000E|  
 |E_INVALIDARG|Uno o más argumentos no son válidos.|0 x 80070057|  
-|E_NOINTERFACE|No se admite esta interfaz.|0 x 80004002|  
+|E_NOINTERFACE|No se admite dicha interfaz.|0 x 80004002|  
 |E_POINTER|Puntero no válido.|0 x 80004003|  
 |E_HANDLE|Identificador no válido.|0x80070006|  
-|E_ABORT|Se anuló la operación.|0x80004004|  
+|E_ABORT|Operación anulada.|0 x 80004004|  
 |E_FAIL|Error inesperado.|0 x 80004005|  
-|E_ACCESSDENIED|Error de denegación de acceso general.|0 x 80070005|  
+|E_ACCESSDENIED|Error de acceso general denegado.|0 x 80070005|  
   
 > [!NOTE]
->  Cuando un [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] depurar el método devuelve `S_OK`, se asume que todo punteros de parámetro son válidos, es decir, que no se realiza ninguna validación en los punteros de parámetro cuando `S_OK` se devuelve.  
-  
+>  Cuando un [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] depurar el método devuelve `S_OK`, se supone que todo punteros de parámetro son válidos, es decir, ninguna validación se lleva a cabo los punteros de parámetro cuando `S_OK` se devuelve.  
+> 
 > [!NOTE]
->  No válido o `NULL` [parámetros out] puede hacer que el IDE se bloquee.  
+>  No válido o `NULL` [parámetros out] puede provocar que el IDE se bloquee.  
   
 ## <a name="see-also"></a>Vea también  
  [Interfaces](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)   
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [Aplicaciones auxiliares SDK para la depuración](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
+ [Aplicaciones auxiliares de SDK para la depuración](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
  [Extensibilidad del depurador de Visual Studio](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

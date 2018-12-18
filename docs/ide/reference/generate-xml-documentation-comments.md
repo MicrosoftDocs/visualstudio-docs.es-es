@@ -1,19 +1,20 @@
 ---
-title: Inserción de comentarios de documentación XML en Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Inserción de comentarios de documentación XML en Visual Studio
 ms.date: 01/26/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0fae2411a77f405404e34c7a2357554c1e5398ab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e3c38e46a5c73d1f8018f56f76b971939ba8c316
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945433"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Cómo insertar comentarios XML para la generación de documentación
 
@@ -49,9 +50,9 @@ Visual Studio ayuda a documentar elementos de código (como las clases y los mé
 
 ## <a name="see-also"></a>Vea también
 
-[Comentarios de documentación XML (Guía de programación de C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)  
-[Documentar el código con comentarios XML (Guía de C#)](/dotnet/csharp/codedoc)  
-[Cómo: Crear documentación XML en Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)  
-[Comentarios en C++](/cpp/cpp/comments-cpp)  
-[Documentación XML (C++)](/cpp/ide/xml-documentation-visual-cpp)  
-[Generación de código](../code-generation-in-visual-studio.md)
+- [Comentarios de documentación XML (Guía de programación de C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
+- [Documentar el código con comentarios XML (Guía de C#)](/dotnet/csharp/codedoc)
+- [Cómo: Crear documentación XML en Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
+- [Comentarios en C++](/cpp/cpp/comments-cpp)
+- [Documentación XML (C++)](/cpp/ide/xml-documentation-visual-cpp)
+- [Generación de código](../code-generation-in-visual-studio.md)

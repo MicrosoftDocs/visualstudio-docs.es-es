@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46ffeb03048123dcc8d9a32119135cc1c8929323
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c5bbb00efe88bda530d7760baa690ce42cb278c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846933"
 ---
 # <a name="idebugprocess3gethostingprocesslanguage"></a>IDebugProcess3::GetHostingProcessLanguage
-Este método devuelve un `GUID` que representa el idioma de este proceso como conjunto mediante una llamada a [SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md).  
+Este método devuelve un `GUID` que representa el idioma de este proceso, como se establece mediante una llamada a [SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md).  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,10 +41,10 @@ int GetHostingProcessLanguage(
   
 #### <a name="parameters"></a>Parámetros  
  `pguidLang`  
- [out] El `GUID` del lenguaje de este proceso. `GUID_NULL` (C++) o `Guid.Empty` (C#) significa que no se ha establecido el idioma.  
+ [out] El `GUID` del lenguaje de este proceso. `GUID_NULL` (C++) o `Guid.Empty` (C#) significa que no está establecido el idioma.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve el código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   

@@ -1,6 +1,7 @@
 ---
 title: 'CA2000: Eliminar objetos antes de perder el ámbito'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -14,15 +15,20 @@ ms.assetid: 0c3d7d8d-b94d-46e8-aa4c-38df632c1463
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 436dec37598aac31d0de2e7cb495f49b2a0bf41e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 041cade3d1c65a40826920b94adf012aa9a4b021
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549875"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Eliminar objetos antes de perder el ámbito
+
 |||
 |-|-|
 |TypeName|DisposeObjectsBeforeLosingScope|
@@ -43,11 +49,11 @@ ms.lasthandoff: 04/19/2018
 
  A continuación se indican algunas situaciones donde la instrucción using no es suficiente para proteger objetos IDisposable, lo que puede hacer que se produzca la advertencia CA2000.
 
--   Devolver un objeto descartable requiere que el objeto se construya en un bloque try/finally fuera de un bloque using.
+- Devolver un objeto descartable requiere que el objeto se construya en un bloque try/finally fuera de un bloque using.
 
--   No deben inicializarse miembros de un objeto descartable en el constructor de una instrucción using.
+- No deben inicializarse miembros de un objeto descartable en el constructor de una instrucción using.
 
--   Anidar constructores únicamente protegidos por un controlador de excepciones. Por ejemplo,
+- Anidar constructores únicamente protegidos por un controlador de excepciones. Por ejemplo,
 
     ```csharp
     using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))
@@ -56,9 +62,9 @@ ms.lasthandoff: 04/19/2018
 
      hace que se produzca CA2000 porque un error en la construcción del objeto StreamReader puede hacer que el objeto FileStream nunca se cierre.
 
--   Los objetos dinámicos deben usar un objeto de sombra para implementar el patrón Dispose de los objetos IDisposable.
+- Los objetos dinámicos deben usar un objeto de sombra para implementar el patrón Dispose de los objetos IDisposable.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  No suprima una advertencia de esta regla a menos que haya llamado a un método del objeto que llama a `Dispose`, como <xref:System.IO.Stream.Close%2A>, o si el método que generó la advertencia devuelve un objeto IDisposable que ajusta el objeto.
 
 ## <a name="related-rules"></a>Reglas relacionadas
@@ -67,19 +73,20 @@ ms.lasthandoff: 04/19/2018
  [CA2202: No usar Dispose varias veces en objetos](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
 
 ## <a name="example"></a>Ejemplo
- Si implementa un método que devuelve un objeto descartable, use un bloque try/finally sin un bloque catch para asegurarse de que el objeto se elimina. Al usar un bloque try/finally, permite la generación de excepciones en el momento del error y se asegura de que se elimine el objeto.
 
- En el método OpenPort1, se puede producir un error en la llamada para abrir el elemento SerialPort del objeto ISerializable o en la llamada a SomeMethod. En esta implementación se desencadena una advertencia CA2000.
+Si implementa un método que devuelve un objeto descartable, use un bloque try/finally sin un bloque catch para asegurarse de que el objeto se elimina. Al usar un bloque try/finally, permite la generación de excepciones en el momento del error y se asegura de que se elimine el objeto.
 
- En el método OpenPort2, dos objetos SerialPort se declaran y establecen en NULL:
+En el método OpenPort1, se puede producir un error en la llamada para abrir el elemento SerialPort del objeto ISerializable o en la llamada a SomeMethod. En esta implementación se desencadena una advertencia CA2000.
 
--   `tempPort`, que se usa para probar la correcta realización de las operaciones del método.
+En el método OpenPort2, dos objetos SerialPort se declaran y establecen en NULL:
 
--   `port`, que se usa para el valor devuelto del método.
+- `tempPort`, que se usa para probar la correcta realización de las operaciones del método.
 
- `tempPort` se construye y abre en un bloque `try` y cualquier otro trabajo que sea necesario se realiza en el mismo bloque `try`. Al final del bloque `try`, el puerto abierto se asigna al objeto `port` que se devolverá y el objeto `tempPort` se establece en `null`.
+- `port`, que se usa para el valor devuelto del método.
 
- El bloque `finally` comprueba el valor de `tempPort`. Si no es NULL, se ha producido un error en una operación del método y `tempPort` se cierra para garantizar la liberación de los recursos. El objeto Port devuelto contendrá el objeto SerialPort abierto si las operaciones del método se han realizado correctamente o será NULL si se produce un error en una operación.
+`tempPort` se construye y abre en un bloque `try` y cualquier otro trabajo que sea necesario se realiza en el mismo bloque `try`. Al final del bloque `try`, el puerto abierto se asigna al objeto `port` que se devolverá y el objeto `tempPort` se establece en `null`.
+
+El bloque `finally` comprueba el valor de `tempPort`. Si no es NULL, se ha producido un error en una operación del método y `tempPort` se cierra para garantizar la liberación de los recursos. El objeto Port devuelto contendrá el objeto SerialPort abierto si las operaciones del método se han realizado correctamente o será NULL si se produce un error en una operación.
 
 ```csharp
 public SerialPort OpenPort1(string portName)
@@ -125,7 +132,6 @@ Public Function OpenPort1(ByVal PortName As String) As SerialPort
 
 End Function
 
-
 Public Function OpenPort2(ByVal PortName As String) As SerialPort
 
    Dim tempPort As SerialPort = Nothing
@@ -157,9 +163,11 @@ End Function
 
  Para corregir este problema, puede deshabilitar la emisión de comprobaciones de desbordamiento mediante el compilador de Visual Basic en el proyecto o puede modificar el código como en la siguiente función CreateReader2.
 
- Para deshabilitar la emisión de comprobaciones de desbordamiento, haga clic en el nombre del proyecto en el Explorador de soluciones y, a continuación, haga clic en **propiedades**. Haga clic en **compilar**, haga clic en **opciones de compilación avanzadas**y, a continuación, comprobar **Quitar comprobaciones de desbordamiento con enteros**.
+ Para deshabilitar la emisión de comprobaciones de desbordamiento, haga clic en el nombre del proyecto en el Explorador de soluciones y, a continuación, haga clic en **propiedades**. Haga clic en **compilar**, haga clic en **Advanced Compile Options**y, a continuación, compruebe **Quitar comprobaciones de desbordamiento con enteros**.
 
   [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../code-quality/codesnippet/VisualBasic/ca2000-dispose-objects-before-losing-scope-vboverflow_1.vb)]
 
 ## <a name="see-also"></a>Vea también
- <xref:System.IDisposable> [Patrón de Dispose](/dotnet/standard/design-guidelines/dispose-pattern)
+
+- <xref:System.IDisposable>
+- [Patrón de Dispose](/dotnet/standard/design-guidelines/dispose-pattern)

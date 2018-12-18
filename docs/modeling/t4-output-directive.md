@@ -7,24 +7,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 231781ee06088fef73f33fa84e9b53825f5f6a82
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 624afd32a9b0f44e3190fba7e3b126663b96f6f4
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860204"
 ---
 # <a name="t4-output-directive"></a>Directiva de salida T4
 
-En las plantillas de texto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], la directiva `output` sirve para definir la extensión de nombre de archivo y codificación del archivo transformado.
+En las plantillas de texto de Visual Studio, el `output` directiva se usa para definir la extensión de nombre de archivo y la codificación del archivo transformado.
 
- Por ejemplo, si su [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proyecto incluye un archivo de plantilla denominado **MyTemplate.tt** que contiene la siguiente directiva:
+ Por ejemplo, si el proyecto de Visual Studio incluye un archivo de plantilla denominado **MyTemplate.tt** que contiene la siguiente directiva:
 
  `<#@output extension=".cs"#>`
 
- a continuación, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generará un archivo denominado **MyTemplate.cs**
+ Visual Studio generará un archivo denominado **MyTemplate.cs**
 
- La directiva de `output` no es necesaria en una plantilla de texto en tiempo de ejecución (preprocesada), ya que, en su lugar, la aplicación obtiene la cadena generada llamando a `TextTransform()`. Para obtener más información, consulte [tiempo de ejecución de generación de texto con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ La directiva de `output` no es necesaria en una plantilla de texto en tiempo de ejecución (preprocesada), ya que, en su lugar, la aplicación obtiene la cadena generada llamando a `TextTransform()`. Para obtener más información, consulte [generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="using-the-output-directive"></a>Uso de la directiva de salida
 
@@ -37,7 +39,7 @@ En las plantillas de texto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_
 ## <a name="extension-attribute"></a>atributo de extensión
  Especifica la extensión de nombre del archivo de salida de texto generado.
 
- El valor predeterminado es **. cs**
+ El valor predeterminado es **.cs**
 
  Ejemplos: `<#@ output extension=".txt" #>`
 
@@ -47,7 +49,7 @@ En las plantillas de texto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_
 
  `<#@ output extension=".vb" #>`
 
- Los valores aceptables: Cualquier extensión válida.
+ Los valores aceptables: Cualquier nombre de la extensión de archivo válida.
 
 ## <a name="encoding-attribute"></a>atributo de codificación
  Especifica la codificación que se va a usar cuando el archivo de salida se genera. Por ejemplo:

@@ -1,5 +1,5 @@
 ---
-title: Icono elemento (plantillas de Visual Studio) | Documentos de Microsoft
+title: Icon (elemento) (plantillas de Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cc1c64e6347f7ea5183efa013504c9e672f5010
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 23908a11c22d93ad37ee4e615f4100c5890e0fa5
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499297"
 ---
-# <a name="icon-element-visual-studio-templates"></a>Icon (Elemento, Plantillas de Visual Studio)
-Especifica la ruta de acceso y el nombre de archivo del archivo de imagen que sirve como icono, que aparece en la vista de la **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo, para la plantilla.  
+# <a name="icon-element-visual-studio-templates"></a>Icon (elemento) (plantillas de Visual Studio)
+Especifica la ruta de acceso y el nombre de archivo del archivo de imagen que actúa como el icono, que aparece en cualquiera de los **nuevo proyecto** o el **Agregar nuevo elemento** cuadro de diálogo, para la plantilla.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -47,8 +48,8 @@ Especifica la ruta de acceso y el nombre de archivo del archivo de imagen que si
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Package`|Atributo opcional, para escenarios de usuario avanzada.<br /><br /> Identificador de un GUID que especifica el paquete de Visual Studio.|  
-|`ID`|Atributo opcional, para escenarios de usuario avanzada.<br /><br /> Especifica el identificador de recursos de Visual Studio.|  
+|`Package`|Atributo opcional para escenarios de usuario avanzada.<br /><br /> Identificador de un GUID que especifica el paquete de Visual Studio.|  
+|`ID`|Atributo opcional para escenarios de usuario avanzada.<br /><br /> Especifica el identificador de recurso de Visual Studio.|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
@@ -60,15 +61,15 @@ Especifica la ruta de acceso y el nombre de archivo del archivo de imagen que si
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .|  
   
 ## <a name="text-value"></a>Valor de texto  
- Se requiere un valor de texto a menos que la `Package` y `ID` se utilizan los atributos.  
+ Se requiere un valor de texto a menos que el `Package` y `ID` se usan los atributos.  
   
- El texto proporciona la ruta de acceso y el nombre del icono de plantilla que va a aparecer en el **nuevo proyecto** cuadro de diálogo.  
+ El texto proporciona la ruta de acceso y el nombre del icono de la plantilla que va a aparecer en el **nuevo proyecto** cuadro de diálogo.  
   
 ## <a name="remarks"></a>Comentarios  
  `Icon` es un elemento secundario obligatorio de `TemplateData`.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra los metadatos de una plantilla de proyecto para una [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación.  
+ El ejemplo siguiente muestra los metadatos para una plantilla de proyecto para un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -96,4 +97,4 @@ Especifica la ruta de acceso y el nombre de archivo del archivo de imagen que si
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
+ [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)

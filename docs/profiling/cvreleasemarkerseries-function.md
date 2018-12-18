@@ -14,18 +14,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d28041defb536c01d4e71d38f7eddb18dc2d709f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 27c5bbc5d47972a4829c4e46f6aafdcf8ee76fad
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749364"
 ---
-# <a name="cvreleasemarkerseries-function"></a>CvReleaseMarkerSeries (Función)
+# <a name="cvreleasemarkerseries-function"></a>Función CvReleaseMarkerSeries
 Libera la serie de marcadores. No utilice el objeto de la serie de marcadores después de liberar la aplicación; de lo contrario, la aplicación podría bloquearse. Si no se puede liberar la serie de marcadores, se produce una pérdida de memoria.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```C  
 HRESULT CvReleaseMarkerSeries(  
    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries  
 );  
@@ -39,7 +40,7 @@ HRESULT CvReleaseMarkerSeries(
  S_OK cuando la serie de marcador se libera correctamente, o código de error en caso de que se hayan producido errores. Utilice macros SUCCEEDED/FAILED para comprobar si existe una condición de error.  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** cvmarkers.h  
+ **Encabezado:** *cvmarkers.h*  
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)

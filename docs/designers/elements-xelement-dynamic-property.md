@@ -1,6 +1,7 @@
 ---
 title: Elements (Propiedad dinámica de XElement)
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: reference
 apiname:
@@ -12,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 614914b5ff2a71cbca06b957ea381b9926a10574
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c78dece049aa2d446a0f03b24f3e2c2640131327
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924416"
 ---
 # <a name="elements-xelement-dynamic-property"></a>Elements (Propiedad dinámica de XElement)
 
@@ -24,7 +26,7 @@ Obtiene un indizador que se utiliza para recuperar los elementos secundarios del
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```xaml
 elem.Elements[{namespaceName}localName]
 ```
 

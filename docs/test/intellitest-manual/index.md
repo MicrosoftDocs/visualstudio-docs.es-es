@@ -1,6 +1,7 @@
 ---
-title: Manual de referencia de IntelliTest | Herramientas de pruebas para desarrolladores de Microsoft | Microsoft Docs
+title: Manual de referencia de IntelliTest | Herramientas de pruebas para desarrolladores de Microsoft
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 581533a92807a009696ec1cb4fb715d7272c3897
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 982d54bec30e164a1b2017c7aa8a221ee56e19d0
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000603"
 ---
 # <a name="intellitest-reference-manual"></a>Manual de referencia de IntelliTest
 
@@ -34,7 +36,7 @@ ms.lasthandoff: 04/16/2018
 
 * **[Introducción a IntelliTest](getting-started.md)**
   - [Atributos importantes](getting-started.md#important-attributes)
-  - [Clases auxiliares estáticas importantes](getting-started.md#helper-classes)<p>&nbsp;</p>
+  - [clases del asistente estáticas importantes](getting-started.md#helper-classes)<p>&nbsp;</p>
 
 * **[Generación de pruebas](test-generation.md)**
   - [Generadores de pruebas](test-generation.md#test-generators)
@@ -94,7 +96,7 @@ ms.lasthandoff: 04/16/2018
 
 * **[Cascada de configuración](settings-waterfall.md)**
 
-* **[Clases auxiliares estáticas](static-helper-classes.md)**
+* **[clases del asistente estáticas](static-helper-classes.md)**
   - [PexAssume](static-helper-classes.md#pexassume)
   - [PexAssert](static-helper-classes.md#pexassert)
   - [PexChoose](static-helper-classes.md#pexchoose)
@@ -125,4 +127,4 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="got-feedback"></a>¿Tiene comentarios?
 
-Publique sus ideas y solicitudes de características en **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+Publique sus ideas y solicitudes de características en [Comunidad de desarrolladores](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

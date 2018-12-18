@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_classparent | Documentos de Microsoft'
+title: Get_classparent | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 745342547d7c8264ebd9f2fa06bfababcc3aebcb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f948e4ffdcd64c4c2c811aff7897f3245c100077
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816721"
 ---
 # <a name="idiasymbolgetclassparent"></a>IDiaSymbol::get_classParent
 Recupera una referencia al elemento primario de clase del símbolo.  
@@ -36,7 +37,7 @@ HRESULT get_classParent (
  [out] Devuelve un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa el elemento primario de clase del símbolo.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
@@ -45,7 +46,7 @@ HRESULT get_classParent (
   
 |Requisito|Descripción|  
 |-----------------|-----------------|  
-|Encabezado:|dia2.h|  
+|Encabezado:|Dia2.h|  
 |Versión:|SDK de DIA v7.0|  
   
 ## <a name="remarks"></a>Comentarios  

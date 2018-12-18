@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c613e4b200df0153827fb10013416211a2eb2062
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bf8e172f6693b4efcff1cfff3eb8c79178bb9f90
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919174"
 ---
-# <a name="filtering-report-views"></a>Filtrar las vistas de informe
+# <a name="filter-report-views"></a>Filtrar las vistas de informe
 Puede aplicar filtros a los archivos de datos de generación de perfiles para limitar los datos que se muestran en las vistas de los informes de rendimiento y que se exportan a los archivos de informe. Puede limitar un informe a los datos entre valores de marcas de tiempo y puede limitar los datos a procesos y subprocesos concretos. Puede guardar los filtros en un archivo y después crear un filtro en un archivo de datos de generación de perfiles diferente importando el filtro guardado.  
   
  También puede limitar un informe a un segmento horario utilizando la escala de tiempo gráfica de la vista de resumen. Vea [Filtrado de vistas de informe desde la escala de tiempo de resumen](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
@@ -35,30 +36,29 @@ Puede aplicar filtros a los archivos de datos de generación de perfiles para li
   
 2.  Para cada cláusula que desee agregar a un filtro, seleccione o especifique los valores en los siguientes campos de una fila.  
   
-    |Campo|Description|  
+    |Campo|Descripción|  
     |-----------|-----------------|  
     |**Y/O**|Elija **Y** si tanto esta cláusula como la siguiente deben ser true para coincidir con un resultado. Elija **O** si esta cláusula o la siguiente pueden ser true para coincidir con un resultado.|  
     |**Campo**|Seleccione el campo que se va a utilizar en la cláusula de filtro de la lista de campos de datos.|  
     |**Operator**|Seleccione el operador que especifica la relación que desea en la cláusula entre el campo y el valor.<br /><br /> =    Igual a<br /><br /> <>  No es igual a<br /><br /> <    Menor que<br /><br /> >    Mayor que<br /><br /> <=  Menor o igual que<br /><br /> >=  Mayor o igual que|  
     |**Valor**|Seleccione o especifique el valor que desea buscar. Algunos campos enumeran los valores disponibles para el campo.|  
   
-3.  
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>Para crear un filtro de informe del generador de perfiles a partir de la vista de informe de marcas  
   
-1.  Seleccione **Marcas** en la lista **Vista actual** de la barra de herramientas de la vista Informe de rendimiento.  
+1. Seleccione **Marcas** en la lista **Vista actual** de la barra de herramientas de la vista Informe de rendimiento.  
   
-     Se muestra el informe de generador de perfiles de Marcas.  
+    Se muestra el informe de generador de perfiles de Marcas.  
   
-2.  Seleccione el evento ETW o de muestreo que desea usar como punto inicial del informe.  
+2. Seleccione el evento ETW o de muestreo que desea usar como punto inicial del informe.  
   
-3.  Mantenga presionada la tecla CTRL y haga clic en el evento que desea usar como punto final del informe.  
+3. Mantenga presionada la tecla CTRL y haga clic en el evento que desea usar como punto final del informe.  
   
-4.  Haga clic con el botón secundario en una de las opciones siguientes:  
+4. Haga clic con el botón secundario en una de las opciones siguientes:  
   
-    -   **Agregar filtro a marcas** crea cláusulas de filtro que usan la columna Marca como campo de filtro.  
+   - **Agregar filtro a marcas** crea cláusulas de filtro que usan la columna Marca como campo de filtro.  
   
-    -   **Agregar filtro a marcas de tiempo** crea las cláusulas de filtro que usan la columna Marca de tiempo en milisegundos como campo de filtro.  
+   - **Agregar filtro a marcas de tiempo** crea las cláusulas de filtro que usan la columna Marca de tiempo en milisegundos como campo de filtro.  
   
      Las dos opciones filtran el archivo de datos en los mismos puntos de inicio y final. Ambas opciones sería buenas si exporta el filtro para usarlo en otros informes.  
   

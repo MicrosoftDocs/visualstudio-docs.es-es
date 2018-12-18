@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: especificar la configuración del depurador | Documentos de Microsoft'
+title: 'Cómo: especificar la configuración del depurador | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -21,11 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 489966bb3a596551e1b687f3dedac228171f7ebf
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 04d309c8d0395869e1a86b4b01dfaba4245447bd
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279207"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Cómo: Especificar la configuración del depurador
 En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], se pueden especificar diversas configuraciones para el comportamiento del depurador, incluidas la forma en que se muestran las variables, si se presentan ciertas advertencias, cómo se establecen los puntos de interrupción y cómo éstos afectan a la ejecución de programas. Especificar configuración del depurador en el **opciones** cuadro de diálogo.  
@@ -44,6 +45,6 @@ En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], se pueden especifi
   
 ## <a name="see-also"></a>Vea también  
  [General, Depuración, Opciones (Cuadro de diálogo)](../debugger/general-debugging-options-dialog-box.md)   
- [Editar y continuar, Depuración, Opciones (Cuadro de diálogo)](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)   
+ [Editar y continuar, Depuración, Opciones (Cuadro de diálogo)](https://msdn.microsoft.com/library/bcew296c.aspx)   
  [Preparación y configuración de la depuración](../debugger/debugger-settings-and-preparation.md)   
  [Macros comunes para propiedades y comandos de compilación](/cpp/ide/common-macros-for-build-commands-and-properties)

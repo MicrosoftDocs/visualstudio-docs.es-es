@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetSize | Documentos de Microsoft
+title: IDebugDocumentText2::GetSize | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe37c7157f96a905e52fb6656d5ebb8ff6f4971a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0c62ca1695de65b005fa839c69cbcc02452f1207
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819672"
 ---
 # <a name="idebugdocumenttext2getsize"></a>IDebugDocumentText2::GetSize
 Recupera el tamaño del texto en esta posición en el documento.  
@@ -48,12 +49,12 @@ int GetSize(
  [out] Devuelve el número de caracteres de texto.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- [Solo en C++] Si no se desea un valor determinado, pase un valor NULL para el parámetro.  
+ [Solo en C++] Si no se desea un valor concreto, pase un valor NULL para el parámetro.  
   
- [Sólo en C#] Deben especificarse ambos parámetros.  
+ [Solo en C#] Se deben especificar ambos parámetros.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)

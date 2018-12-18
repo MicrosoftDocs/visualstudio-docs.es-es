@@ -20,44 +20,43 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ac8bf991ca4bec8befde5a11673dcb056f5e50f4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0f13efe45547b657f9e07c12d8eee4160ec7b95e
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152404"
 ---
-# <a name="resolvecomreference-task"></a>ResolveComReference (Tarea)
-Toma una lista de uno o varios nombres de biblioteca de tipos o archivos .tlb y resuelve esas bibliotecas de tipos en ubicaciones de disco.  
+# <a name="resolvecomreference-task"></a>Tarea ResolveComReference
+Toma una lista de uno o varios nombres de biblioteca de tipos o archivos *.tlb* y resuelve esas bibliotecas de tipos en ubicaciones de disco.  
   
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea `ResolveCOMReference` .  
   
-|Parámetro|Description|  
+|Parámetro|Descripción|  
 |---------------|-----------------|  
 |`DelaySign`|Parámetro `Boolean` opcional.<br /><br /> Si `true`, coloca la clave pública en el ensamblado. Si `false`, firma completamente el ensamblado.|  
-|`EnvironmentVariables`|Parámetro `String[]` opcional.<br /><br /> Matriz de pares de variables de entorno, separados por signos igual. Estas variables se pasan a spawned tlbimp.exe y aximp.exe y, además, pasan el bloque de entorno normal o lo invalidan de manera selectiva.|  
-|`ExecuteAsTool`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, se ejecutan tlbimp.exe y aximp.exe desde la plataforma de destino adecuada fuera de proceso para generar los ensamblados de contenedor necesarios. Este parámetro permite compatibilidad con múltiples versiones.|  
-|`IncludeVersionInInteropName`|Parámetro `Boolean` opcional.<br /><br /> Si `true`, la versión typelib se incluirá en el nombre del contenedor. El valor predeterminado es `false`.|  
-|`KeyContainer`|Parámetro `String` opcional.<br /><br /> Especifica un contenedor que contiene un par de claves<br /><br /> públicas y privadas.|  
-|`KeyFile`|Parámetro `String` opcional.<br /><br /> Especifica un elemento que contiene un par de claves<br /><br /> públicas y privadas.|  
+|`EnvironmentVariables`|Parámetro `String[]` opcional.<br /><br /> Matriz de pares de variables de entorno, separados por signos igual. Estas variables se pasan a spawned *tlbimp.exe* y *aximp.exe* y, además, pasan el bloque de entorno normal o lo invalidan de manera selectiva.|  
+|`ExecuteAsTool`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, se ejecutan *tlbimp.exe* y *aximp.exe* desde la plataforma de destino adecuada fuera de proceso para generar los ensamblados de contenedor necesarios. Este parámetro permite compatibilidad con múltiples versiones.|  
+|`IncludeVersionInInteropName`|Parámetro `Boolean` opcional.<br /><br /> Si `true`, la versión typelib se incluirá en el nombre del contenedor. De manera predeterminada, es `false`.|  
+|`KeyContainer`|Parámetro `String` opcional.<br /><br /> Especifica un contenedor que contiene un par de claves pública-privada.|  
+|`KeyFile`|Parámetro `String` opcional.<br /><br /> Especifica un elemento que contiene un par de claves pública-privada.|  
 |`NoClassMembers`|Parámetro `Boolean` opcional.|  
 |`ResolvedAssemblyReferences`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica las referencias de ensamblado resueltas.|  
 |`ResolvedFiles`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica los archivos completos en disco que corresponden a las ubicaciones físicas de las bibliotecas de tipos que se proporcionaron como entrada para esta tarea.|  
 |`ResolvedModules`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.|  
 |`SdkToolsPath`|Parámetro <xref:System.String?displayProperty=fullName> opcional.<br /><br /> Si `ExecuteAsTool` es `true`, este parámetro debe establecerse en la ruta de acceso de las herramientas de SDK para la versión del marco que se tiene como destino.|  
 |`StateFile`|Parámetro `String` opcional.<br /><br /> Especifica el archivo de caché para las marcas de tiempo del componente COM. Si no está presente, cada ejecución volverá a generar todos los contenedores.|  
-|`TargetFrameworkVersion`|Parámetro `String` opcional.<br /><br /> Especifica la versión de la plataforma de destino del proyecto.<br /><br /> El valor predeterminado es `String.Empty`. Significa que no existe filtrado para una referencia basándose en la plataforma de destino.|  
-|`TargetProcessorArchitecture`|Parámetro `String` opcional.<br /><br /> Especifica la arquitectura del procesador de destino preferida. Se ha pasado a la marca de equipo tlbimp.exe después de la traducción.<br /><br /> El valor del parámetro debe ser un miembro de <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
-|`TypeLibFiles`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica la ruta de acceso del archivo de biblioteca de tipos a las referencias COM. Los elementos incluidos en este parámetro pueden contener metadatos de elementos. Para obtener más información, vea la sección "Metadatos de elementos TypeLibFiles" a continuación.|  
-|`TypeLibNames`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica los nombres de las bibliotecas de tipos que se resolverán. Los elementos incluidos en este parámetro deben contener algunos metadatos de elementos. Para obtener más información, vea la sección "Metadatos de elementos TypeLibNames" a continuación.|  
+|`TargetFrameworkVersion`|Parámetro `String` opcional.<br /><br /> Especifica la versión de la plataforma de destino del proyecto.<br /><br /> De manera predeterminada, es `String.Empty`. Significa que no existe filtrado para una referencia basándose en la plataforma de destino.|  
+|`TargetProcessorArchitecture`|Parámetro `String` opcional.<br /><br /> Especifica la arquitectura del procesador de destino preferida. Se ha pasado a la marca de equipo *tlbimp.exe* después de la traducción.<br /><br /> El valor del parámetro debe ser un miembro de <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
+|`TypeLibFiles`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica la ruta de acceso del archivo de biblioteca de tipos a las referencias COM. Los elementos incluidos en este parámetro pueden contener metadatos de elementos. Para más información, consulte la sección [Metadatos de elementos TypeLibFiles](#typelibfiles-item-metadata) a continuación.|  
+|`TypeLibNames`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica los nombres de las bibliotecas de tipos que se resolverán. Los elementos incluidos en este parámetro deben contener algunos metadatos de elementos. Para más información, consulte la sección [Metadatos de elementos TypeLibNames](#typelibnames-item-metadata) a continuación.|  
 |`WrapperOutputDirectory`|Parámetro `String` opcional.<br /><br /> Ubicación en el disco donde se coloca el ensamblado de interoperabilidad generado. Si estos metadatos de elementos no se especifican, la tarea usa la ruta de acceso absoluta del directorio donde se encuentra el archivo del proyecto.|  
-  
-## <a name="remarks"></a>Comentarios  
   
 ## <a name="typelibnames-item-metadata"></a>Metadatos de elementos TypeLibNames  
  En la tabla siguiente se describen los metadatos de elementos disponibles para los elementos que se han pasado al parámetro `TypeLibNames`.  
   
-|Metadatos|Description|  
+|Metadatos|Descripción|  
 |--------------|-----------------|  
 |`GUID`|Metadatos de elementos necesarios.<br /><br /> GUID de la biblioteca de tipos. Si estos metadatos de elementos no se especifican, se produce un error en la tarea.|  
 |`VersionMajor`|Metadatos de elementos necesarios.<br /><br /> La versión principal de la biblioteca de tipos. Si estos metadatos de elementos no se especifican, se produce un error en la tarea.|  
@@ -68,7 +67,7 @@ Toma una lista de uno o varios nombres de biblioteca de tipos o archivos .tlb y 
 ## <a name="typelibfiles-item-metadata"></a>Metadatos de elementos TypeLibFiles  
  En la tabla siguiente se describen los metadatos de elementos disponibles para los elementos que se han pasado al parámetro `TypeLibFiles`.  
   
-|Metadatos|Description|  
+|Metadatos|Descripción|  
 |--------------|-----------------|  
 |`WrapperTool`|Metadatos de elementos opcionales.<br /><br /> Especifica la herramienta contenedor que se usa para generar el contenedor de ensamblado para esta biblioteca de tipos. Si estos metadatos de elementos no se especifican, la tarea usa una herramienta contenedor predeterminada de "tlbimp". Las opciones que no distinguen mayúsculas de minúsculas disponibles de typelibs son:<br /><br /> -   `Primary`: use esta herramienta contenedor cuando quiera usar un ensamblado de interoperabilidad primario que ya se ha generado para el componente COM. Cuando use esta herramienta contenedor, no especifique un directorio de salida del contenedor porque provocará un error en la tarea.<br />-   `TLBImp`: use esta herramienta contenedor cuando quiera generar un ensamblado de interoperabilidad para el componente COM.<br />-   `AXImp`: use esta herramienta contenedor cuando quiera generar un ensamblado de interoperabilidad para un control ActiveX.|  
   
@@ -76,7 +75,7 @@ Toma una lista de uno o varios nombres de biblioteca de tipos o archivos .tlb y 
 >  Cuanta más información proporcione para identificar de manera exclusiva una biblioteca de tipos, mayor será la posibilidad de que la tarea resuelva el archivo correcto en el disco.  
   
 ## <a name="remarks"></a>Comentarios  
- Además de los parámetros enumerados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [Task Base (Clase)](../msbuild/task-base-class.md).  
+ Además de los parámetros enumerados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [Task Base (Clase)](../msbuild/task-base-class.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Tareas](../msbuild/msbuild-tasks.md)   

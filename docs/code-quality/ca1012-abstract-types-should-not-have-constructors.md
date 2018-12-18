@@ -1,6 +1,7 @@
 ---
 title: 'CA1012: Los tipos abstractos no deberían tener constructores'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -12,15 +13,20 @@ ms.assetid: 09f458ac-dd88-4cd7-a47f-4106c1e80ece
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bf4f29a11a831bd5b7d4860dd15698922df3a2c6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5ec69fc08375bb88287cfb89eb49e52fa45466e6
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550536"
 ---
 # <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012: Los tipos abstractos no deberían tener constructores
+
 |||
 |-|-|
 |TypeName|AbstractTypesShouldNotHaveConstructors|
@@ -37,7 +43,7 @@ ms.lasthandoff: 04/19/2018
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, marque el constructor protegido o no declare el tipo como abstracto.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  No suprima las advertencias de esta regla. El tipo abstracto tiene un constructor público.
 
 ## <a name="example"></a>Ejemplo

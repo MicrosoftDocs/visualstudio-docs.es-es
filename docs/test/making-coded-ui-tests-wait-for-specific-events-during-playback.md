@@ -1,6 +1,7 @@
 ---
-title: Hacer que las pruebas automatizadas de UI esperen por eventos específicos en Visual Studio | Microsoft Docs
+title: Hacer que las pruebas automatizadas de IU esperen eventos concretos
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 author: gewarren
@@ -8,52 +9,55 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c288958ba2864c9db962b050ad3139dbb4f7ccf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d1f077269ddfd736aa98b78c64c81170037853eb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894773"
 ---
-# <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Hacer que la prueba de IU codificada espere por eventos concretos durante la reproducción
+# <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Hacer que las pruebas automatizadas de IU esperen eventos concretos durante la reproducción
 
-En una reproducción de prueba de UI codificada, puede indicar a la prueba que espere a que se produzcan ciertos eventos, como que se muestre una ventana, que se oculte la barra de progreso, etc. Para ello, use el método UITestControl.WaitForControlXXX() adecuado, tal y como se describe en la siguiente tabla. Para ver un ejemplo de una prueba de IU codificada que espera a que un control se habilite con el método <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>, vea [Tutorial: Crear, modificar y mantener una prueba de IU codificada](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+En una reproducción de prueba de UI codificada, puede indicar a la prueba que espere a que se produzcan ciertos eventos, como que se muestre una ventana, que se oculte la barra de progreso, etc. Para ello, use el método UITestControl.WaitForControlXXX() adecuado, tal y como se describe en la siguiente tabla. Para ver un ejemplo de una prueba automatizada de IU que espera a que un control se habilite con el método <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>, vea [Tutorial: Crear, editar y mantener una prueba automatizada de IU](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
- **Requisitos**
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
- Visual Studio Enterprise
+**Requisitos**
+
+Visual Studio Enterprise
 
 > [!TIP]
->  También puede agregar retrasos antes de las acciones con el editor de pruebas de IU codificadas. Para obtener más información, consulte [Cómo insertar un retraso antes de una acción de IU mediante el editor de pruebas de IU codificadas](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0).
+> También puede agregar retrasos antes de las acciones con el editor de pruebas de IU codificadas. Para obtener más información, vea [Cómo: Insertar un retraso antes de una acción de IU mediante el Editor de pruebas automatizadas de IU](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action).
 
- **Métodos de UITestControl.WaitForControlXXX()**
+**Métodos de UITestControl.WaitForControlXXX()**
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>
 
- Espera a que el control esté listo para aceptar entradas de mouse y de teclado. El motor llama implícitamente a esta API en todas las acciones para esperar a que el control esté listo antes de realizar cualquier operación. Sin embargo, en algunos escenarios más rebuscados, es posible que tenga que hacer una llamada explícita.
+Espera a que el control esté listo para aceptar entradas de mouse y de teclado. El motor llama implícitamente a esta API en todas las acciones para esperar a que el control esté listo antes de realizar cualquier operación. Sin embargo, en algunos escenarios más rebuscados, es posible que tenga que hacer una llamada explícita.
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
 
- Espera a que el control esté habilitado cuando el asistente está realizando una validación asincrónica de la entrada a través de llamadas al servidor. Por ejemplo, puede usar este método para esperar a que el botón **Siguiente** del asistente se habilite. Para ver un ejemplo de este método, consulte [Tutorial: Crear, modificar y mantener una prueba de IU codificada](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+Espera a que el control esté habilitado cuando el asistente está realizando una validación asincrónica de la entrada a través de llamadas al servidor. Por ejemplo, puede usar este método para esperar a que el botón **Siguiente** del asistente se habilite. Para obtener un ejemplo de este método, vea [Tutorial: Crear, editar y mantener una prueba automatizada de IU](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
 
- Espera a que el control aparezca en la interfaz de usuario. Por ejemplo, tiene previsto que se abra un cuadro de diálogo de error después de que la aplicación haya validado los parámetros. El tiempo necesario para la validación es variable. Puede usar este método para esperar a que el cuadro de diálogo de error se abra.
+Espera a que el control aparezca en la interfaz de usuario. Por ejemplo, tiene previsto que se abra un cuadro de diálogo de error después de que la aplicación haya validado los parámetros. El tiempo necesario para la validación es variable. Puede usar este método para esperar a que el cuadro de diálogo de error se abra.
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlNotExist%2A>
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlNotExist%2A>
 
- Espera a que el control desaparezca de la interfaz de usuario. Por ejemplo, puede esperar a que la barra de progreso desaparezca.
+Espera a que el control desaparezca de la interfaz de usuario. Por ejemplo, puede esperar a que la barra de progreso desaparezca.
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyEqual%2A>
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyEqual%2A>
 
- Espera a que la propiedad especificada del control tenga un valor determinado. Por ejemplo, puede esperar a que el texto de estado cambie a **Listo**.
+Espera a que la propiedad especificada del control tenga un valor determinado. Por ejemplo, puede esperar a que el texto de estado cambie a **Listo**.
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyNotEqual%2A>
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyNotEqual%2A>
 
- Espera a que la propiedad especificada del control tenga un valor contrario al especificado. Por ejemplo, cuando espera a que el cuadro de edición no sea de solo lectura, esto es, que sea editable.
+Espera a que la propiedad especificada del control tenga un valor contrario al especificado. Por ejemplo, cuando espera a que el cuadro de edición no sea de solo lectura, esto es, que sea editable.
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlCondition%2A>
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlCondition%2A>
 
- Espera que el predicado especificado devuelva `true`. Esto se puede usar en operaciones de espera complejas (como condiciones OR) en un control determinado. Por ejemplo, puede esperar a que el texto de estado sea **Correcto** o **Error**, tal y como se muestra en el siguiente código:
+Espera que el predicado especificado devuelva `true`. Esto se puede usar en operaciones de espera complejas (como condiciones OR) en un control determinado. Por ejemplo, puede esperar a que el texto de estado sea **Correcto** o **Error**, tal y como se muestra en el siguiente código:
 
 ```csharp
 
@@ -66,7 +70,6 @@ private static bool IsStatusDone(UITestControl control)
 
 // In test method, wait till the method evaluates to true
 statusText.WaitForControlCondition(IsStatusDone);
-
 ```
 
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForCondition%2A>
@@ -85,7 +88,6 @@ private static bool IsStatusDoneOrError(UITestControl[] controls)
 
 // In test method, wait till the method evaluates to true
 UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText, errorDialog }, IsStatusDoneOrError);
-
 ```
 
  Todos estos métodos tienen el siguiente comportamiento:
@@ -103,13 +105,13 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
  Playback.Wait() llama internamente a Thread.Sleep() (tras el cálculo anterior) en fragmentos más pequeños en un bucle for mientras busca la operación cancel\break del usuario. En otras palabras, Playback.Wait() permite cancelar la reproducción antes de que la espera finalice, mientras que la suspensión no lo haría o generaría una excepción.
 
 > [!TIP]
-> El Editor de pruebas de IU codificadas permite modificar fácilmente este tipo de pruebas. Con el Editor de pruebas de IU codificadas puede buscar, ver y modificar métodos de prueba. También puede editar acciones de interfaz de usuario y los controles asociados en la asignación de controles de IU. Para obtener más información, consulte [Editar pruebas de IU codificadas mediante el editor de pruebas de IU codificadas](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
+> El Editor de pruebas de IU codificadas permite modificar fácilmente este tipo de pruebas. Con el Editor de pruebas de IU codificadas puede buscar, ver y modificar métodos de prueba. También puede editar acciones de interfaz de usuario y los controles asociados en la asignación de controles de IU. Para obtener más información, vea [Editar pruebas automatizadas de IU con el Editor de pruebas automatizadas de IU](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
 ## <a name="see-also"></a>Vea también
 
-- [Usar Automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
-- [Crear pruebas de IU codificadas](../test/use-ui-automation-to-test-your-code.md)
-- [Tutorial: Crear, modificar y mantener una prueba de IU codificada](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-- [Anatomía de una prueba de IU codificada](../test/anatomy-of-a-coded-ui-test.md)
-- [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-- [Cómo: Insertar un retraso antes de una acción de IU mediante el editor de pruebas de IU programadas](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0)
+- [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
+- [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md)
+- [Tutorial: Crear, editar y mantener una prueba automatizada de IU](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+- [Anatomía de una prueba automatizada de IU](../test/anatomy-of-a-coded-ui-test.md)
+- [Configuraciones y plataformas compatibles con las pruebas automatizadas de IU y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Cómo: Insertar un retraso antes de una acción de IU mediante el Editor de pruebas automatizadas de IU](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)

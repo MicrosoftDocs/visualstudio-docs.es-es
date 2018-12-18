@@ -1,10 +1,9 @@
 ---
-title: Comando Mostrar módulos | Microsoft Docs
-ms.custom: ''
+title: Mostrar módulos (Comando)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.listmodules
 helpviewer_keywords:
@@ -17,61 +16,70 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 621d2956807d415d1ed03799e1ef332404429603
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 54e975cf886f0bb8392bd3679a28bae6bb6bfe00
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31944666"
 ---
 # <a name="list-modules-command"></a>Mostrar módulos (Comando)
-Enumera los módulos del proceso actual.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```  
-Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]  
-[/Path:yes|no] [/Process:yes|no] [/SymbolFile:yes|no]  
-[/SymbolStatus:yes|no] [/Timestamp:yes|no] [/Version:yes|no]  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- /Address:`yes|no`  
- Opcional. Especifica si se muestran las direcciones de memoria de los módulos. El valor predeterminado es `yes`.  
-  
- /Name:`yes|no`  
- Opcional. Especifica si se muestran los nombres de los módulos. El valor predeterminado es `yes`.  
-  
- /Order:`yes|no`  
- Opcional. Especifica si se muestra el orden de los módulos. El valor predeterminado es `no`.  
-  
- /Path:`yes|no`  
- Opcional. Especifica si se muestran las rutas de acceso de los módulos. El valor predeterminado es `yes`.  
-  
- /Process:`yes|no`  
- Opcional. Especifica si se muestran los procesos de los módulos. El valor predeterminado es `no`.  
-  
- /SymbolFile:`yes|no`  
- Opcional. Especifica si se muestran los archivos de símbolos de los módulos. El valor predeterminado es `no`.  
-  
- /SymbolStatus:`yes|no`  
- Opcional. Especifica si se muestran los estados de símbolos de los módulos. El valor predeterminado es `yes`.  
-  
- /Timestamp:`yes|no`  
- Opcional. Especifica si se muestran las marcas de tiempo de los módulos. El valor predeterminado es `no`.  
-  
- /Version:`yes|no`  
- Opcional. Especifica si se muestran las versiones de los módulos. El valor predeterminado es `no`.  
-  
-## <a name="remarks"></a>Comentarios  
-  
-## <a name="example"></a>Ejemplo  
- En este ejemplo se enumeran los nombres de módulo, las direcciones y las marcas de tiempo del proceso actual.  
-  
-```  
-Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolFile:no /SymbolStatus:no /Timestamp:yes /Version:no  
-```  
-  
-## <a name="see-also"></a>Vea también  
- [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Ventana Comandos](../../ide/reference/command-window.md)   
- [Cómo: Usar la ventana Módulos](../../debugger/how-to-use-the-modules-window.md)
+Enumera los módulos del proceso actual.
+
+## <a name="syntax"></a>Sintaxis
+
+```
+Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
+[/Path:yes|no] [/Process:yes|no] [/SymbolFile:yes|no]
+[/SymbolStatus:yes|no] [/Timestamp:yes|no] [/Version:yes|no]
+```
+
+#### <a name="parameters"></a>Parámetros
+ /Address:`yes|no`
+
+ Opcional. Especifica si se muestran las direcciones de memoria de los módulos. El valor predeterminado es `yes`.
+
+ /Name:`yes|no`
+
+ Opcional. Especifica si se muestran los nombres de los módulos. El valor predeterminado es `yes`.
+
+ /Order:`yes|no`
+
+ Opcional. Especifica si se muestra el orden de los módulos. El valor predeterminado es `no`.
+
+ /Path:`yes|no`
+
+ Opcional. Especifica si se muestran las rutas de acceso de los módulos. El valor predeterminado es `yes`.
+
+ /Process:`yes|no`
+
+ Opcional. Especifica si se muestran los procesos de los módulos. El valor predeterminado es `no`.
+
+ /SymbolFile:`yes|no`
+
+ Opcional. Especifica si se muestran los archivos de símbolos de los módulos. El valor predeterminado es `no`.
+
+ /SymbolStatus:`yes|no`
+
+ Opcional. Especifica si se muestran los estados de símbolos de los módulos. El valor predeterminado es `yes`.
+
+ /Timestamp:`yes|no`
+
+ Opcional. Especifica si se muestran las marcas de tiempo de los módulos. El valor predeterminado es `no`.
+
+ /Version:`yes|no`
+
+ Opcional. Especifica si se muestran las versiones de los módulos. El valor predeterminado es `no`.
+
+## <a name="example"></a>Ejemplo
+ En este ejemplo se enumeran los nombres de módulo, las direcciones y las marcas de tiempo del proceso actual.
+
+```
+Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolFile:no /SymbolStatus:no /Timestamp:yes /Version:no
+```
+
+## <a name="see-also"></a>Vea también
+
+- [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Ventana Comandos](../../ide/reference/command-window.md)
+- [Cómo: Usar la ventana Módulos](../../debugger/how-to-use-the-modules-window.md)

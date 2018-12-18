@@ -14,18 +14,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9b1e33d845dd07306d9a6b59bfb57fd9cc2acc3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bbc397fa88c722f6a7f16ac92f4388525073c0fa
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845628"
 ---
-# <a name="markerseriesmarkerseries-constructor"></a>marker_series::marker_series (Constructor)
+# <a name="markerseriesmarkerseries-constructor"></a>Constructor marker_series::marker_series
 Inicializa una nueva instancia de la clase `marker_series`.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp  
 marker_series();  
 marker_series(  
    _In_ LPCTSTR _SeriesName  
@@ -47,7 +48,7 @@ marker_series(
  El GUID del proveedor de la serie.  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** cvmarkersobj.h  
+ **Encabezado:** *cvmarkersobj.h*  
   
  **Espacio de nombres:** Concurrency::diagnostic  
   

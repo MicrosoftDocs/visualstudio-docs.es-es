@@ -24,19 +24,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e5b4c66beba2a4c3953a0720a3f770f7f651db79
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 07f422348a10bbe6d5c02a50073c9486a679cfaf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892069"
 ---
 # <a name="assertions-in-managed-code"></a>Aserciones en el código administrado
 Una aserción, o instrucción `Assert`, prueba una condición especificada como un argumento de dicha instrucción `Assert`. Si la condición se evalúa como true, no se produce ninguna acción. Si la condición se evalúa como false, se produce un error en la aserción. Si se ejecuta con una compilación de depuración, el programa entra en modo de interrupción.  
   
 ##  <a name="BKMK_In_this_topic"></a> En este tema  
- [Aserciones en el Namespace de System.Diagnostics](#BKMK_Asserts_in_the_System_Diagnostics_Namespace)  
+ [Aserciones en el Namespace System.Diagnostics](#BKMK_Asserts_in_the_System_Diagnostics_Namespace)  
   
- [El Debug.Assert (método)](#BKMK_The_Debug_Assert_method)  
+ [Debug.Assert (método)](#BKMK_The_Debug_Assert_method)  
   
  [Efectos secundarios de Debug.Assert](#BKMK_Side_effects_of_Debug_Assert)  
   
@@ -48,14 +49,14 @@ Una aserción, o instrucción `Assert`, prueba una condición especificada como 
   
  [Establecer aserciones en archivos de configuración](#BKMK_Setting_assertions_in_configuration_files)  
   
-##  <a name="BKMK_Asserts_in_the_System_Diagnostics_Namespace"></a> Aserciones en el Namespace de System.Diagnostics  
+##  <a name="BKMK_Asserts_in_the_System_Diagnostics_Namespace"></a> Aserciones en el Namespace System.Diagnostics  
  En Visual Basic y Visual C#, puede utilizar el método `Assert` de <xref:System.Diagnostics.Debug> o <xref:System.Diagnostics.Trace>, que están en el espacio de nombres <xref:System.Diagnostics>. Los métodos de la clase <xref:System.Diagnostics.Debug> no se incluyen en una versión de lanzamiento de su programa, de modo que no aumentan el tamaño ni reducen la velocidad de su código de versión.  
   
- C++ no admite los métodos de la clase <xref:System.Diagnostics.Debug>. Puede conseguir el mismo efecto mediante la <xref:System.Diagnostics.Trace> clase con la compilación condicional, como `#ifdef DEBUG`... `#endif`.  
+ C++ no admite los métodos de la clase <xref:System.Diagnostics.Debug>. Puede lograr el mismo efecto mediante el uso de la <xref:System.Diagnostics.Trace> clase con la compilación condicional, como `#ifdef DEBUG`... `#endif`.  
   
  [En este tema](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_The_Debug_Assert_method"></a> El Debug.Assert (método)  
+##  <a name="BKMK_The_Debug_Assert_method"></a> Debug.Assert (método)  
  Utilice el método <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> libremente para probar condiciones que deberían ser true si el código es correcto. Por ejemplo, suponga que ha escrito una función de división de enteros. Según las reglas matemáticas, el divisor nunca puede ser cero. Puede probarlo mediante una aserción:  
   
 ```VB  
@@ -143,22 +144,22 @@ Debug.Assert ( temp != 0 );
   
  De lo contrario, para que funcionen los métodos <xref:System.Diagnostics.Trace>, el programa debe tener uno de los siguientes símbolos en la parte superior del archivo de código fuente:  
   
--   `#Const TRACE = True` en Visual Basic  
+- `#Const TRACE = True` en Visual Basic  
   
--   `#define TRACE` en Visual C# y C++  
+- `#define TRACE` en Visual C# y C++  
   
- O bien, el programa se debe compilar con la opción TRACE:  
+  O bien, el programa se debe compilar con la opción TRACE:  
   
--   `/d:TRACE=True` en Visual Basic  
+- `/d:TRACE=True` en Visual Basic  
   
--   `/d:TRACE` en Visual C# y C++  
+- `/d:TRACE` en Visual C# y C++  
   
- Si necesita utilizar los métodos Debug en una versión de lanzamiento de C# o Visual Basic, debe definir el símbolo DEBUG en la configuración de lanzamiento.  
+  Si necesita utilizar los métodos Debug en una versión de lanzamiento de C# o Visual Basic, debe definir el símbolo DEBUG en la configuración de lanzamiento.  
   
- C++ no admite los métodos de la clase <xref:System.Diagnostics.Debug>. Puede conseguir el mismo efecto mediante la <xref:System.Diagnostics.Trace> clase con la compilación condicional, como `#ifdef DEBUG`... `#endif`. Puede definir estos símbolos en el  **\<proyecto > páginas de propiedades** cuadro de diálogo. Para obtener más información, consulte [cambiar la configuración del proyecto para una configuración de depuración de Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) o [cambiar la configuración del proyecto para una configuración de depuración de C++ o C](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+  C++ no admite los métodos de la clase <xref:System.Diagnostics.Debug>. Puede lograr el mismo efecto mediante el uso de la <xref:System.Diagnostics.Trace> clase con la compilación condicional, como `#ifdef DEBUG`... `#endif`. Puede definir estos símbolos en el  **\<proyecto > páginas de propiedades** cuadro de diálogo. Para obtener más información, consulte [cambiar la configuración del proyecto para una configuración de depuración de Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) o [cambiar la configuración del proyecto para una configuración de depuración de C++ o C](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
 ##  <a name="BKMK_Assert_arguments"></a> Argumentos de Assert  
- <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> y <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> pueden utilizar hasta tres argumentos. El primer argumento, de uso obligatorio, es la condición que se desea comprobar. Si se llama a <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> o <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName> con un único argumento, el `Assert` método comprueba la condición y, si el resultado es false, envía el contenido de la pila de llamadas a la **salida** ventana. En el ejemplo siguiente se muestran <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> y <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName>.  
+ <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> y <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> pueden utilizar hasta tres argumentos. El primer argumento, de uso obligatorio, es la condición que se desea comprobar. Si se llama a <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> o <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName> con un solo argumento, el `Assert` método comprueba la condición y, si el resultado es false, envía el contenido de la pila de llamadas a la **salida** ventana. En el ejemplo siguiente se muestran <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> y <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName>.  
   
 ```VB  
 Debug.Assert(stacksize > 0)  
@@ -198,11 +199,11 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
  [En este tema](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Customizing_Assert_behavior"></a> Personalizar el comportamiento de Assert  
- Si se ejecuta la aplicación en modo de interfaz de usuario, el `Assert` método muestra el **error de aserción** cuadro de diálogo cuando se produce un error en la condición. Las acciones que se producen cuando se produce un error en una aserción se controlan mediante la <xref:System.Diagnostics.Debug.Listeners%2A> o <xref:System.Diagnostics.Trace.Listeners%2A> propiedad.  
+ Si ejecuta la aplicación en modo de interfaz de usuario, el `Assert` método muestra el **error de aserción** cuadro de diálogo cuando se produce un error en la condición. Las acciones que se producen cuando se produce un error en una aserción se controlan mediante el <xref:System.Diagnostics.Debug.Listeners%2A> o <xref:System.Diagnostics.Trace.Listeners%2A> propiedad.  
   
  Puede personalizar el comportamiento del resultado agregando un objeto <xref:System.Diagnostics.TraceListener> a la colección `Listeners`, quitar un objeto <xref:System.Diagnostics.TraceListener> de la colección `Listeners` o reemplazar el método <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> de un objeto `TraceListener` existente para que se comporte de forma diferente.  
   
- Por ejemplo, podría reemplazar el <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> método para escribir en un registro de eventos en lugar de mostrar el **error de aserción** cuadro de diálogo.  
+ Por ejemplo, podría invalidar la <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> método para escribir en un registro de eventos en lugar de mostrar el **error de aserción** cuadro de diálogo.  
   
  Para personalizar el resultado de esta forma, el programa debe contener un agente de escucha, heredar de <xref:System.Diagnostics.TraceListener> e invalidar su método <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName>.  
   

@@ -1,7 +1,7 @@
 ---
-title: Refactorización de traslado de un tipo a un archivo coincidente en Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Traslado de un tipo a una refactorización de archivo coincidente en Visual Studio
 ms.date: 01/26/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
@@ -12,11 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4cabe20e6cf84b69bf711831d1a402f67fd908c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 73e1d9d67d905fed5eb37e29c1be1ba7677da3e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884154"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>Refactorización de traslado de un tipo a un archivo coincidente
 
@@ -34,33 +35,33 @@ Esta refactorización se aplica a lo siguiente:
 
 ## <a name="how-to"></a>Procedimiento
 
-1. Resalte o coloque el cursor de texto en el nombre del tipo que se va a mover:
+1. Coloque el cursor dentro del nombre del tipo donde está definido. Por ejemplo:
+
+   ```csharp
+   class Person
+   ```
+
+   ```vb
+   Class Person
+   ```
+
+2. A continuación, realice alguno de los siguientes procedimientos:
+
+   - Presione **Ctrl**+**.**
+   - Haga clic con el botón derecho en el nombre del tipo y seleccione **Acciones rápidas y refactorizaciones**
+
+1. Seleccione **Mover tipo a *TypeName*.cs** desde el menú, donde *TypeName* es el nombre del tipo que seleccionó.
+
+   El tipo se mueve a un archivo nuevo en el proyecto con el mismo nombre del tipo.
 
    - C#:
 
-    ![Código resaltado (C#)](media/movetype-highlight-cs.png)
+      ![Resultado de la inserción (C#)](media/movetype-result-cs.png)
 
    - Visual Basic:
 
-    ![Código resaltado (Visual Basic)](media/movetype-highlight-vb.png)
-
-1. A continuación, realice alguno de los siguientes procedimientos:
-
-   - **Teclado**
-     - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones** y seleccione **Mover tipo a *NombreTipo*.cs** en el menú emergente de la ventana Vista previa, donde *NombreTipo* es el nombre del tipo que ha seleccionado.
-   - **Mouse**
-     - Haga clic con el botón derecho en el código, seleccione el menú **Acciones rápidas y refactorizaciones** y elija **Mover tipo a *NombreTipo*.cs** en el menú emergente de la ventana Vista previa, donde *NombreTipo* es el nombre del tipo que ha seleccionado.
-
-   El tipo se traslada a un nuevo archivo con ese nombre como parte de la solución.
-
-   - C#:
-
-    ![Resultado de la inserción (C#)](media/movetype-result-cs.png)
-
-   - Visual Basic:
-
-    ![Resultado de la inserción (Visual Basic)](media/movetype-result-vb.png)
+      ![Resultado de la inserción (Visual Basic)](media/movetype-result-vb.png)
 
 ## <a name="see-also"></a>Vea también
 
-[Refactorización](../refactoring-in-visual-studio.md)
+- [Refactorización](../refactoring-in-visual-studio.md)

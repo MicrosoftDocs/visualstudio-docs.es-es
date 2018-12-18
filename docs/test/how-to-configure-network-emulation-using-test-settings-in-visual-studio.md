@@ -1,5 +1,5 @@
 ---
-title: Configurar la emulación de red mediante la configuración de pruebas en Visual Studio | Microsoft Docs
+title: Configuración de la emulación de red mediante la configuración de pruebas en Visual Studio
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,21 +8,25 @@ ms.assetid: ff275cfb-5df9-4710-9a91-9caabaaad34f
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 137f1980c53d457ef166008a438fca0effacbf44
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d58bf2bc321b3041ffa0958786b976276acf0186
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896307"
 ---
-# <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Cómo: Configurar la emulación de red usando la configuración de prueba en Visual Studio
+# <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Cómo: Configurar la emulación de red mediante la configuración de pruebas en Visual Studio
 
 Puede configurar el adaptador de datos de diagnóstico para probar la aplicación en varios entornos de red desde Visual Studio. También puede configurarlo para probar una carga de red artificial, o cuello de botella, durante la ejecución de las pruebas.
 
 > [!WARNING]
 > Si ejecuta las pruebas en una red real que es más lenta que la red objeto de la emulación, la prueba se ejecutará a la velocidad de la red más lenta. La emulación solo puede reducir y no aumentar la velocidad del entorno de red.
 
- En el siguiente procedimiento se describe cómo configurar la emulación de red en el editor de configuración. Estos pasos se aplican al editor de configuración de Microsoft Test Manager y Visual Studio.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+En el siguiente procedimiento se describe cómo configurar la emulación de red en el editor de configuración. Estos pasos se aplican al editor de configuración de Microsoft Test Manager y Visual Studio.
 
 > [!NOTE]
 > El adaptador de datos de diagnóstico de emulación de red solo se aplica a la configuración de pruebas de Visual Studio. No se usa para la configuración de pruebas en Microsoft Test Manager.
@@ -32,28 +36,29 @@ Para la emulación de red, debe usarse una cuenta que tiene privilegios de admin
 > [!NOTE]
 > La cuenta Network Service, que es la cuenta predeterminada del agente de prueba, no es miembro del grupo de administradores.
 
- **Emulación de red verdadera**
+**Emulación de red verdadera**
 
- Visual Studio usa la emulación de red auténtica basada en software para todos los tipos de prueba. Esto incluye las pruebas de carga. La emulación de red verdadera simula las condiciones de la red por manipulación directa de los paquetes de red. El emulador de red verdadera puede emular el comportamiento de las redes cableadas e inalámbricas utilizando un vínculo físico confiable, como Ethernet. En la emulación de red verdadera se incorporan los siguientes atributos de red:
+Visual Studio usa la emulación de red auténtica basada en software para todos los tipos de prueba. Esto incluye las pruebas de carga. La emulación de red verdadera simula las condiciones de la red por manipulación directa de los paquetes de red. El emulador de red verdadera puede emular el comportamiento de las redes cableadas e inalámbricas utilizando un vínculo físico confiable, como Ethernet. En la emulación de red verdadera se incorporan los siguientes atributos de red:
 
--   Tiempo de ida y vuelta por la red (latencia)
+- Tiempo de ida y vuelta por la red (latencia)
 
--   Cantidad de ancho de banda disponible
+- Cantidad de ancho de banda disponible
 
--   Comportamiento de puesta en cola
+- Comportamiento de puesta en cola
 
--   Pérdida de paquetes
+- Pérdida de paquetes
 
--   Reordenación de paquetes
+- Reordenación de paquetes
 
--   Propagaciones de errores.
+- Propagaciones de errores.
 
- La emulación de red verdadera también proporciona flexibilidad en el filtrado de paquetes de red en función de las direcciones IP o de protocolos como TCP, UDP e ICMP.
+La emulación de red verdadera también proporciona flexibilidad en el filtrado de paquetes de red en función de las direcciones IP o de protocolos como TCP, UDP e ICMP.
 
- Los desarrolladores y evaluadores basados en red pueden utilizar la emulación de red verdadera para emular un entorno de pruebas deseado, evaluar el rendimiento, predecir el efecto de un cambio o tomar decisiones sobre la optimización de la tecnología. Cuando se compara con las bases de prueba de hardware, la emulación de red verdadera es una solución mucho más barata y flexible.
+Los desarrolladores y evaluadores basados en red pueden utilizar la emulación de red verdadera para emular un entorno de pruebas deseado, evaluar el rendimiento, predecir el efecto de un cambio o tomar decisiones sobre la optimización de la tecnología. Cuando se compara con las bases de prueba de hardware, la emulación de red verdadera es una solución mucho más barata y flexible.
 
 ## <a name="configure-network-emulation-for-your-test-settings"></a>Configurar la emulación de red para la configuración de pruebas
- Antes de seguir los pasos de este procedimiento, debe abrir la configuración de pruebas en Visual Studio y seleccionar la página **Datos y diagnósticos**.
+
+Antes de seguir los pasos de este procedimiento, debe abrir la configuración de pruebas en Visual Studio y seleccionar la página **Datos y diagnósticos**.
 
 ### <a name="to-configure-network-emulation-for-your-test-settings"></a>Para configurar la emulación de red para la configuración de pruebas
 
@@ -83,4 +88,4 @@ Para la emulación de red, debe usarse una cuenta que tiene privilegios de admin
 ## <a name="see-also"></a>Vea también
 
 - [Recopilar información de diagnóstico con la configuración de pruebas](../test/collect-diagnostic-information-using-test-settings.md)
-- [Ejecutar pruebas manuales (VSTS)](/vsts/manual-test/getting-started/run-manual-tests)
+- [Run manual tests (Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts) [Ejecutar pruebas manuales (Azure Test Plans)]

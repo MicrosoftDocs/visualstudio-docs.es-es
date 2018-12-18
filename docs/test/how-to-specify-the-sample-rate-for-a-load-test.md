@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Especificar la frecuencia de muestreo de los parámetros de ejecución de pruebas de carga en Visual Studio | Microsoft Docs'
+title: 'Cómo: Especificar la frecuencia de muestreo de los parámetros de ejecución de pruebas de carga en Visual Studio'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,25 +8,29 @@ ms.assetid: 51cbe7d6-5dfd-4842-bca3-f7f8a665dc84
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ece9a2d6842caa82ec8eb79721bb678b562b95e4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a672e5a61006ed9764497bd115ba2bd98f91f6cd
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896788"
 ---
-# <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Cómo: Especificar la velocidad de muestra de los parámetros de ejecución de pruebas de carga
+# <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Cómo: Especificar la frecuencia de muestreo de los parámetros de ejecución de pruebas de carga
 
 Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades de modo que satisfagan las necesidades y los objetivos de la prueba.
 
-Con el **Editor de pruebas de carga**, puede modificar valor de propiedad de configuración de ejecución **Frecuencia de muestreo** en la ventana **Propiedades**. Para obtener una lista completa de las propiedades y sus descripciones, vea [Propiedades de los parámetros de ejecución de las pruebas de carga](../test/load-test-run-settings-properties.md).
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-Elija un valor apropiado para la propiedad **Frecuencia de muestreo** en los parámetros de ejecución de pruebas de carga según la duración de la prueba de carga. Una velocidad de muestra menor, como el valor predeterminado de cinco segundos, necesita más espacio en la base de datos de resultados de pruebas de carga. En el caso de pruebas de carga más largas, el incremento de la velocidad de muestra reduce la cantidad de datos recopilados. Para obtener más información, consulte [Cómo: Especificar la frecuencia de muestreo de los parámetros de ejecución de pruebas de carga](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+Con el **Editor de pruebas de carga**, puede modificar valor de propiedad de configuración de ejecución **Frecuencia de muestreo** en la ventana **Propiedades**. Para obtener una lista completa de los parámetros de ejecución y sus descripciones, vea [Propiedades de los parámetros de ejecución de las pruebas de carga](../test/load-test-run-settings-properties.md).
+
+Elija un valor apropiado para la propiedad **Frecuencia de muestreo** en los parámetros de ejecución de pruebas de carga según la duración de la prueba de carga. Una velocidad de muestra menor, como el valor predeterminado de cinco segundos, necesita más espacio en la base de datos de resultados de pruebas de carga. En el caso de pruebas de carga más largas, el incremento de la velocidad de muestra reduce la cantidad de datos recopilados. Para obtener más información, vea [Cómo: Especificar la frecuencia de muestreo de los parámetros de ejecución de pruebas de carga](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
 
 He aquí algunas instrucciones sobre las velocidades de muestra:
 
 |Duración de la prueba de carga|Tasa del ejemplo recomendada|
-|------------------------|-----------------------------|
+|-|-----------------------------|
 |\< 1 hora|5 segundos|
 |De 1 a 8 horas|15 segundos|
 |De 8 a 24 horas|30 segundos|
@@ -42,7 +46,7 @@ He aquí algunas instrucciones sobre las velocidades de muestra:
 
 3.  En el menú **Ver**, seleccione la ventana **Propiedades**.
 
-     Las categorías de los parámetros de ejecución se muestran en la ventana Propiedades.
+     Las categorías y propiedades de los parámetros de ejecución se muestran en la ventana **Propiedades**.
 
 4.  En la propiedad **Frecuencia de muestreo**, escriba un valor de tiempo de la frecuencia en la que la prueba de carga recopilará los datos del contador de rendimiento.
 

@@ -1,11 +1,11 @@
 ---
 title: IEnumDebugApplicationNodes::Clone | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IEnumDebugApplicationNodes.Clone
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IEnumDebugApplicationNodes::Clone
 ms.assetid: 7190954d-e2da-4a84-8e37-81d4d27886a8
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726865"
 ---
 # <a name="ienumdebugapplicationnodesclone"></a>IEnumDebugApplicationNodes::Clone
 Crea un enumerador que contiene el mismo estado que el enumerador actual.  

@@ -1,6 +1,7 @@
 ---
 title: Descendants (Propiedad dinámica de XElement)
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: reference
 ms.assetid: 9611d00f-23bf-444b-ab0c-f30701bfc13d
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76b08f4521182c8b50f0ca5f527068d7c97bd425
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7255753445d014b1ab59f6e2e8143b341b28a892
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890258"
 ---
 # <a name="descendants-xelement-dynamic-property"></a>Descendants (Propiedad dinámica de XElement)
 
@@ -21,7 +23,7 @@ Obtiene un indizador que se usa para recuperar todos los descendientes del eleme
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```xaml
 elem.Descendants[{namespaceName}localName]
 ```
 

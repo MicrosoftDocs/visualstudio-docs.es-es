@@ -1,16 +1,16 @@
 ---
 title: IDebugApplicationThread110 (interfaz) | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugApplicationThread110 Interface
 ms.assetid: 25bc351f-3451-4387-9302-078f6292ddff
-caps.latest.revision: 
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726355"
 ---
 # <a name="idebugapplicationthread110-interface"></a>IDebugApplicationThread110 (Interfaz)
 Proporciona más funcionalidad para la [IDebugApplicationThread (interfaz)](../../winscript/reference/idebugapplicationthread-interface.md) interfaz.  

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetText | Documentos de Microsoft
+title: IDebugDocumentText2::GetText | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b5adaccf5a74119ee5e697c9dfd7b7ad46d6151
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fe2b5ef3804c4ccfafbf164a8eb144e7822a6fdc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905511"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 Recupera el texto de la posición especificada en el documento.  
@@ -46,22 +47,22 @@ int GetText(
   
 #### <a name="parameters"></a>Parámetros  
  `pos`  
- [in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estructura que indica la ubicación del texto que se va a recuperar.  
+ [in] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estructura que indica la ubicación del texto que se va a recuperar.  
   
  `cMaxChars`  
  [in] El número máximo de caracteres del texto que se va a recuperar.  
   
  `pText`  
- [entrada, salida] Un puntero a un búfer que se rellenará con el texto que desee. Este búfer debe ser capaz de contener al menos `cMaxChars` número de caracteres anchos.  
+ [in, out] Un puntero a un búfer que se va a rellenar con el texto deseado. Este búfer debe ser capaz de contener al menos `cMaxChars` número de caracteres anchos.  
   
  `pcNumChars`  
- [out] Devuelve el número de caracteres recuperados realmente.  
+ [out] Devuelve el número de caracteres que se recuperan realmente.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="example"></a>Ejemplo  
- Este ejemplo muestra cómo puede llamar a este método de C#.  
+ En este ejemplo se muestra cómo se puede llamar este método desde C#.  
   
 ```csharp  
 using System.Runtime.Interop.Services;  

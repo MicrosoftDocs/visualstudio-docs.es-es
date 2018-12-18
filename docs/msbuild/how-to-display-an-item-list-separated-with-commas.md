@@ -13,21 +13,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a79e8c0f21a63bd5b64af69c2bf9778c07822d83
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f1507a297c1baf7f410bde1c6d32e48b43a9cdc2
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880240"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Cómo: Mostrar una lista de elementos separados por comas
 Cuando se trabaja con listas de elementos en [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]), a veces resulta útil mostrar el contenido de las listas de elementos de tal forma que sea fácil de leer. O puede que tenga una tarea que toma una lista de elementos separados con una cadena de separación especial. En ambos casos, puede especificar una cadena de separación para una lista de elementos.  
   
-## <a name="separating-items-in-a-list-with-commas"></a>Separar los elementos de una lista con comas  
+## <a name="separate-items-in-a-list-with-commas"></a>Separar los elementos de una lista con comas  
  De manera predeterminada, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] usa signos de punto y coma para separar los elementos de una lista. Por ejemplo, considere un elemento `Message` con el valor siguiente:  
   
  `<Message Text="This is my list of TXT files: @(TXTFile)"/>`  
   
- Cuando la lista de elementos `@(TXTFile)` contiene los elementos App1.txt, App2.txt y App3.txt, el mensaje es:  
+ Cuando la lista de elementos `@(TXTFile)` contiene los elementos *App1.txt*, *App2.txt* y *App3.txt*, el mensaje es:  
   
  `This is my list of TXT files: App1.txt;App2.txt;App3.txt`  
   
@@ -44,7 +45,7 @@ Cuando se trabaja con listas de elementos en [!INCLUDE[vstecmsbuildengine](../ms
      `@(TXTFile, ', ')`  
   
 ## <a name="example"></a>Ejemplo  
- En este ejemplo, la tarea [Exec](../msbuild/exec-task.md) ejecuta la herramienta findstr para buscar cadenas de texto especificadas en el archivo Phrases.txt. En el comando findstr, las cadenas de búsqueda literal se indican mediante el modificador **/c:**, por lo que el separador de elementos `/c:` se inserta entre los elementos de la lista de elementos `@(Phrase)`.  
+ En este ejemplo, la tarea [Exec](../msbuild/exec-task.md) ejecuta la herramienta findstr para buscar cadenas de texto especificadas en el archivo, *Phrases.txt*. En el comando findstr, las cadenas de búsqueda literal se indican mediante el modificador **-c:**, por lo que el separador de elementos `-c:` se inserta entre los elementos de la lista de elementos `@(Phrase)`.  
   
  En este ejemplo, el comando de línea de comandos equivalente es:  
   

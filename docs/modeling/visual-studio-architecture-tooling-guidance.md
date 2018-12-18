@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Architecture Tooling Guidance
+title: Orientación para las herramientas de arquitectura
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -7,16 +7,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b70b229d128143a4c61dc9789e3a4797a0317643
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 558d0143343d04bdfadf530aca10466991b3f2f1
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057514"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Visual Studio Architecture Tooling Guidance
-Esta guía de herramientas de arquitectura es un paquete descargable de instrucciones prácticas sobre el uso de las herramientas de modelado de Visual Studio 2010. Presenta una vista general de cómo usar las herramientas de modelado de una manera integrada y se describen los escenarios más comunes en que se usan las herramientas.
 
- El contenido se creó por la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ALM Rangers, un grupo especial que tiene los miembros de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] equipo de producto, Microsoft Services, profesionales más valorados (MVP) de Microsoft y [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] clientes potenciales de la Comunidad.
+Architecture Tooling Guidance es un paquete descargable de consejos prácticos sobre el uso de las herramientas de modelado en Visual Studio 2010. Presenta una visión general de cómo usar las herramientas de modelado de forma integrada y se describen los escenarios más comunes en que se usan las herramientas.
 
- [Haga clic aquí para descargar la Guía de herramientas de arquitectura. ](http://go.microsoft.com/fwlink/?LinkID=191984).
+El contenido se creó mediante la Visual Studio ALM Rangers, un grupo especial que tiene los miembros del equipo de producto de Visual Studio, Microsoft Services, profesionales más valiosos (MVP) de Microsoft y lleva de Visual Studio Community.

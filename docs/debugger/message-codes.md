@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474448"
 ---
 # <a name="message-codes"></a>Códigos de mensaje
 Cada línea de mensaje que aparece en [vista mensajes](../debugger/messages-view.md) contiene una "P", del,' del,' o 'R' código. Estos códigos tienen los significados siguientes:  

@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: establecer una zona de seguridad para una aplicación ClickOnce | Documentos de Microsoft'
+title: 'Cómo: establecer una zona de seguridad para una aplicación ClickOnce | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,13 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9be6bd056473a6cdf7d4bf3bef2aedafe5ae2143
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1b2155cb36a2538bd93c48ccda1f2c93b0876b95
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077732"
 ---
-# <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Cómo: Establecer una zona de seguridad para una aplicación ClickOnce
+# <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Cómo: establecer una zona de seguridad para una aplicación ClickOnce
 Al establecer permisos de seguridad de acceso del código para una aplicación ClickOnce, debe empezar con un conjunto básico de permisos en la página **Seguridad** del **Diseñador de proyectos**.  
   
  En la mayoría de los casos también puede elegir la zona **Internet** , que contiene un conjunto limitado de permisos, o la zona **Intranet local** , que contiene un conjunto de permisos más grande. Si la aplicación necesita permisos personalizados, puede hacerlo eligiendo la zona de seguridad **Personalizada** . Para obtener más información sobre cómo establecer permisos personalizados, consulte [Cómo: Establecer permisos personalizados para una aplicación ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
@@ -44,7 +45,6 @@ Al establecer permisos de seguridad de acceso del código para una aplicación C
 5.  En la lista desplegable **Zona desde la que se instalará la aplicación** , seleccione una zona de seguridad.  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Establecer permisos personalizados para una aplicación ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Cómo: establecer permisos personalizados para una aplicación ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Seguridad de acceso del código para aplicaciones ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
- [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)

@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69c59395eb74f2c79c6a7d7e1b9c56f420e9705a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8b608b41ea4fd1b5b7544604e8d04bed02361b06
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220871"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Cómo: Serializar la información de símbolos
-Puede serializar símbolos que debe tener para analizar la aplicación. La serialización de símbolos agrega símbolos al archivo .vsp. Al agregar información de símbolos al archivo .vsp, otras personas pueden analizar un informe de rendimiento sin tener acceso a los símbolos originales. Si no se serializan los símbolos, debe tener archivos .exe y .pdb originales instrumentados para analizar el archivo .vsp.  
+Puede serializar símbolos que debe tener para analizar la aplicación. La serialización de símbolos agrega símbolos al archivo .*vsp*. Al agregar información de símbolos al archivo .*vsp*, otros usuarios pueden analizar un informe de rendimiento sin tener acceso a los símbolos originales. Si no se serializan los símbolos, debe tener archivos .*exe* y .*pdb* originales instrumentados para analizar el archivo .*vsp*.  
   
 ### <a name="to-automatically-serialize-symbol-information"></a>Para serializar información de símbolos automáticamente  
   
@@ -37,4 +38,4 @@ Puede serializar símbolos que debe tener para analizar la aplicación. La seria
 ## <a name="see-also"></a>Vea también  
  [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
  [Cómo: Hacer referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md)   
- [Cómo: Guardar archivos del informe analizado](http://msdn.microsoft.com/en-us/0340ddde-caf4-48ac-8af3-d15dcdade556)
+ [Cómo: Guardar archivos del informe analizado](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\))

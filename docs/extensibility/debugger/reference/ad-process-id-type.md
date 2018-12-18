@@ -1,5 +1,5 @@
 ---
-title: AD_PROCESS_ID_TYPE | Documentos de Microsoft
+title: AD_PROCESS_ID_TYPE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8318efdc64adf9792e44ccf2f4ad4aa9f74dd67
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1fa934610778479551d411a4b231a4b190f29bcd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937413"
 ---
 # <a name="adprocessidtype"></a>AD_PROCESS_ID_TYPE
 Especifica cómo interpretar un identificador de proceso en el [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estructura.  
@@ -49,7 +50,7 @@ public enum enum_AD_PROCESS_ID {
  Id. de proceso es un GUID. Use la `ProcessId.guidProcessId` campo de la `AD_PROCESS_ID` estructura.  
   
 ## <a name="remarks"></a>Comentarios  
- Utilizado para la `ProcessIdType` miembro de la [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estructura para identificar el tipo de Id. de proceso que se encuentra en la estructura. Determina cómo interpretar la `ProcessId` union en la estructura.  
+ Utilizado para la `ProcessIdType` miembro de la [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estructura para identificar el tipo de identificador de proceso que se encuentra en la estructura. Determina cómo se interpretan los `ProcessId` union en la estructura.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  

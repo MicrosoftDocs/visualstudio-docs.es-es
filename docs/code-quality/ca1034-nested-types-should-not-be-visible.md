@@ -1,6 +1,7 @@
 ---
 title: 'CA1034: Los tipos anidados no deben ser visibles'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -13,15 +14,21 @@ ms.assetid: e9789a2c-2540-42a1-8705-ae7104011194
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0afc6d4eb388c93fb42d99adf242b669024444a2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 14c0837d482341e1ba60191c8b6bb3f5bd8e6dd4
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550952"
 ---
 # <a name="ca1034-nested-types-should-not-be-visible"></a>CA1034: Los tipos anidados no deben ser visibles
+
 |||
 |-|-|
 |TypeName|NestedTypesShouldNotBeVisible|
@@ -30,25 +37,26 @@ ms.lasthandoff: 04/19/2018
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Motivo
- Un tipo visible externamente contiene una declaración de tipo visible externamente. Las enumeraciones anidadas y los tipos protegidos están exentos de esta regla.
+
+Un tipo visible externamente contiene una declaración de tipos visibles externamente. Las enumeraciones anidadas y los tipos protegidos están exentos de esta regla.
 
 ## <a name="rule-description"></a>Descripción de la regla
  Un tipo anidado es un tipo declarado dentro del ámbito de otro tipo. Los tipos anidados son útiles para encapsular los detalles de la implementación privada del tipo contenedor. Los tipos anidados, utilizados para este propósito, no deben ser visibles externamente.
 
- No utilice tipos anidados visibles externamente para agrupación lógica o para evitar conflictos de nombres; en su lugar, utilice los espacios de nombres.
+ No utilice tipos anidados visibles externamente para agrupación lógica o para evitar conflictos de nombres; en su lugar, use los espacios de nombres.
 
- Los tipos anidados incluyen la noción de accesibilidad de miembro, que algunos programadores no entienden claramente.
+ Los tipos anidados incluyen la noción de accesibilidad de miembro, que algunos programadores no entienden con claridad.
 
- Tipos protegidos se pueden usar en las subclases y los tipos anidados en escenarios de personalización avanzada.
+ Los tipos protegidos pueden usarse en subclases y los tipos anidados en escenarios de personalización avanzada.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Si no desea que el tipo anidado esté visible externamente, cambie la accesibilidad del tipo. De lo contrario, quite el tipo anidado de su elemento primario. Si el propósito del anidamiento es clasificar el tipo anidado, utilice un espacio de nombres para crear la jerarquía en su lugar.
+ Si no desea que el tipo anidado que esté visible externamente, cambie la accesibilidad del tipo. En caso contrario, quite el tipo anidado de su elemento primario. Si el propósito del anidamiento es clasificar el tipo anidado, utilice un espacio de nombres para crear la jerarquía en su lugar.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra un tipo que infringe la regla.
+ El ejemplo siguiente muestra un tipo que infringe la regla.
 
  [!code-cpp[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/CPP/ca1034-nested-types-should-not-be-visible_1.cpp)]
  [!code-csharp[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/CSharp/ca1034-nested-types-should-not-be-visible_1.cs)]

@@ -10,20 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 502fe56f04fe933e51e9afa5376a35a53445c099
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d6b076023f725ac037ae5863bc8955e6952285ac
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764912"
 ---
-# <a name="creating-basic-profiling-reports-from-the-command-line"></a>Crear informes básicos de generación de perfiles desde la línea de comandos
-En este tema se describen los comandos básicos de VSPerfReport que generan informes de valores separados por comas (.csv) a partir de un archivo .vsp o .vsps de datos de generación de perfiles. Para una descripción de todas las opciones de informes, vea [VSPerfReport](../profiling/vsperfreport.md).  
+# <a name="create-basic-profiling-reports-from-the-command-line"></a>Creación de informes básicos de generación de perfiles desde la línea de comandos
+En este artículo se describen los comandos básicos de VSPerfReport que generan informes de valores separados por comas (.*csv*) a partir de un archivo de datos de generación de perfiles .*vsp* o .*vsps*. Para una descripción de todas las opciones de informes, vea [VSPerfReport](../profiling/vsperfreport.md).  
   
 ## <a name="report-commands"></a>Comandos de informe  
  Utilice uno de los comandos siguientes para crear un informe para un archivo de datos de generación de perfiles especificado.  
   
  **VSPerfReport** `VSPFile` **/Summary:All**  
- Genera todos los informes disponibles para el archivo .vsp o .vsps.  
+ Genera todos los informes disponibles para el archivo .*vsp* o .*vsps*.  
   
  **VSPerfReport** `VSPFile` **/Summary:**`ReportType`[,`ReportType`...]  
  Genera los tipos de informe especificados.  
@@ -31,7 +32,7 @@ En este tema se describen los comandos básicos de VSPerfReport que generan info
  **VSPerfReport** `VSPFile` **/CallTrace**  
  Genera un informe que enumera cada evento de recolección de datos. Solamente en instrumentación.  
   
-## <a name="summary-report-type-parameters"></a>Parámetros de resumen de tipo de informe  
+## <a name="summary-report-type-parameters"></a>Parámetros de tipo de informe de resumen  
  En la tabla siguiente se describen los informes que se generan con la opción de tipo de informe especificada. Las columnas de un informe dependen del método de generación de perfiles utilizado para recopilar los datos.  
   
 |Parámetro de resumen|Descripción del informe|Referencia del informe|  

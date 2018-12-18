@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 761e696cd774e0414b58c9d2a9f1482d298489f6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 35474156ec43fb9e1e44117e44430b27a6e1b383
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905095"
 ---
 # <a name="idebugmethodfieldenumstaticlocals"></a>IDebugMethodField::EnumStaticLocals
 Crea un enumerador para las variables locales estáticas del método.  
@@ -40,13 +41,13 @@ int EnumStaticLocals(
   
 #### <a name="parameters"></a>Parámetros  
  `ppLocals`  
- [out] Devuelve un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objeto que representa la lista de las variables locales estáticas. Devuelve un valor null si no hay ningún variables locales estáticas.  
+ [out] Devuelve un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objeto que representa la lista de variables locales estáticas. Devuelve un valor null si no hay ningún variables locales estáticas.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve S_OK o devuelva S_FALSE si no hay ningún variables locales estáticas. De lo contrario, devuelve un código de error.  
+ Si se realiza correctamente, devuelve S_OK o devuelve S_FALSE si no hay ningún variables locales estáticas. De lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Cada elemento es un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objetos que representan tipos diferentes de las variables locales estáticas. Llame a la [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) método en cada objeto para determinar exactamente qué tipo de variable local estática representa el objeto.  
+ Cada elemento es un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto que representa los diferentes tipos de variables locales estáticas. Llame a la [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) método en cada objeto para determinar exactamente qué tipo de variable local estática el objeto representa.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   

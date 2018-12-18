@@ -20,18 +20,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 654f2db738648409f015e84015996b9e9696800f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 371be943dc062c5c3b5aac7f59493aa5f4f53002
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897156"
 ---
-# <a name="cvwriteflag-function"></a>CvWriteFlag (Función)
+# <a name="cvwriteflag-function"></a>Función CvWriteFlag
 Escribe una marca en el archivo de seguimiento del visualizador de simultaneidad.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```C  
 HRESULT CvWriteFlagExW(  
     _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
     _In_ CV_IMPORTANCE level,  
@@ -83,11 +84,11 @@ HRESULT CvWriteFlagExVA(
  S_OK cuando el mensaje se ha escrito correctamente. Código de error en caso de que se hayan producido errores. Utilice macros SUCCEEDED/FAILED para comprobar si existe una condición de error.  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** cvmarkers.h  
+ **Encabezado:** *cvmarkers.h*  
   
  **Unicode:** CvWriteFlagExW, CvWriteFlagExVW  
   
- **ANSI:** CvWriteFlagExA, CvWriteFlagExVA  
+ <strong>ANSI:</strong>CvWriteFlagExA, CvWriteFlagExVA  
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)

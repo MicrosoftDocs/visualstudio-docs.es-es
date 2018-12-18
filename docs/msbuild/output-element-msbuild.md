@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e5f1d4dec10970770202e685860381cdec15608
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: df135901c0272777c3d76220218042e4dc41a145
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817072"
 ---
 # <a name="output-element-msbuild"></a>Elemento Output (MSBuild)
 Almacena valores de salida de tarea en elementos y propiedades.  
@@ -36,7 +37,7 @@ Almacena valores de salida de tarea en elementos y propiedades.
 
 ## <a name="syntax"></a>Sintaxis  
 
-```  
+```xml  
 <Output TaskParameter="Parameter"  
     PropertyName="PropertyName"   
     Condition = "'String A' == 'String B'" />  
@@ -47,11 +48,11 @@ Almacena valores de salida de tarea en elementos y propiedades.
 
 ### <a name="attributes"></a>Atributos  
 
-|Atributo|Description|  
+|Atributo|Descripción|  
 |---------------|-----------------|  
 |`TaskParameter`|Atributo necesario.<br /><br /> El nombre del parámetro de salida de la tarea.|  
-|`PropertyName`|Se necesita el atributo `PropertyName` o `ItemName`.<br /><br /> La propiedad que recibe el valor del parámetro de salida de la tarea. Después, el proyecto puede hacer referencia a la propiedad con la sintaxis `$(`*PropertyName*`)`. Este nombre de propiedad puede ser un nuevo nombre de propiedad o un nombre que ya está definido en el proyecto.<br /><br /> Este atributo no se puede usar si `ItemName` también se utiliza.|  
-|`ItemName`|Se necesita el atributo `PropertyName` o `ItemName`.<br /><br /> El elemento que recibe el valor del parámetro de salida de la tarea. Después, el proyecto puede hacer referencia al elemento con la sintaxis `@(`*ItemName*`)`. El nombre de elemento puede ser un nuevo nombre de elemento o un nombre que ya está definido en el proyecto.<br /><br /> Este atributo no se puede usar si `PropertyName` también se utiliza.|  
+|`PropertyName`|Se necesita el atributo `PropertyName` o `ItemName`.<br /><br /> La propiedad que recibe el valor del parámetro de salida de la tarea. Después, el proyecto puede hacer referencia a la propiedad con la sintaxis $(\<PropertyName>). Este nombre de propiedad puede ser un nuevo nombre de propiedad o un nombre que ya está definido en el proyecto.<br /><br /> Este atributo no se puede usar si `ItemName` también se utiliza.|  
+|`ItemName`|Se necesita el atributo `PropertyName` o `ItemName`.<br /><br /> El elemento que recibe el valor del parámetro de salida de la tarea. Después, el proyecto puede hacer referencia al elemento con la sintaxis @(\<ItemName>). El nombre de elemento puede ser un nuevo nombre de elemento o un nombre que ya está definido en el proyecto. Cuando el nombre de elemento es un elemento existente, los valores del parámetro de salida se agregan al elemento existente. <br /><br /> Este atributo no se puede usar si `PropertyName` también se utiliza.|  
 |`Condition`|Atributo opcional.<br /><br /> Condición que se va a evaluar. Para obtener más información, consulte [Condiciones](../msbuild/msbuild-conditions.md).|  
 
 ### <a name="child-elements"></a>Elementos secundarios  
@@ -59,9 +60,9 @@ Almacena valores de salida de tarea en elementos y propiedades.
 
 ### <a name="parent-elements"></a>Elementos primarios  
 
-|Elemento|Description|  
-|-------------|-----------------|  
-|[Task](../msbuild/task-element-msbuild.md)|Crea y ejecuta una instancia de una tarea [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
+| Elemento | Descripción |
+| - | - |
+| [Task](../msbuild/task-element-msbuild.md) | Crea y ejecuta una instancia de una tarea [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
 
 ## <a name="example"></a>Ejemplo  
  En el siguiente ejemplo de código se muestra la tarea `Csc` que se ejecuta dentro de un elemento `Target`. Los elementos y las propiedades que se pasan a los parámetros de tarea se declaran fuera del ámbito de este ejemplo. El valor del parámetro de salida `OutputAssembly` se almacena en el `FinalAssemblyName` elemento y el valor del parámetro de salida `BuildSucceeded` se almacena en la propiedad `BuildWorked`. Para obtener más información, consulte [Tareas](../msbuild/msbuild-tasks.md).  
@@ -84,5 +85,5 @@ Almacena valores de salida de tarea en elementos y propiedades.
 ```  
 
 ## <a name="see-also"></a>Vea también  
- [Referencia de esquemas de archivo del proyecto](../msbuild/msbuild-project-file-schema-reference.md)   
+ [Referencia de esquemas de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)   
  [Tareas](../msbuild/msbuild-tasks.md)

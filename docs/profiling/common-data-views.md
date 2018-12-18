@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 32039843f3aef60f6e7087b0d26f8b5e1efd1df8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 21ccf237bec0b3ab7bf3ad96f6f4d24df240db0e
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263934"
 ---
 # <a name="common-data-views"></a>Vistas de datos comunes
 Esta sección contiene información de referencia acerca de las vistas e informes de archivos de datos del generador de perfiles que son comunes para todos los métodos de generación de perfiles.  
@@ -41,7 +42,7 @@ Esta sección contiene información de referencia acerca de las vistas e informe
  [Vista Líneas](../profiling/lines-view.md)  
  Describe la vista y el informe Líneas. Las columnas de datos dependen del método de generación de perfiles.  
   
- [Vista Punteros de instrucciones (IP)](../profiling/instruction-pointers-ips-view.md)  
+ [Vista Punteros de instrucción (IP)](../profiling/instruction-pointers-ips-view.md)  
  Describe la vista y el informe Puntero de instrucción (IP). Las columnas de datos dependen del método de generación de perfiles.  
   
  [Vista Proceso](../profiling/process-view.md)  

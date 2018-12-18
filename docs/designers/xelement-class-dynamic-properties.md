@@ -1,6 +1,7 @@
 ---
 title: Propiedades dinámicas de la clase XElement
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: reference
 ms.assetid: a9795dba-2afc-45f7-9b53-c6c67a23c40b
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 437f5cf357c20b0f1280b94170bb4a45555b57f4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3621cb5fb961244f62e34e5c38f6fb5d8a0919f1
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077108"
 ---
 # <a name="xelement-class-dynamic-properties"></a>Propiedades dinámicas de la clase XElement
 
@@ -21,7 +23,7 @@ En esta sección se describen las propiedades dinámicas de la clase <xref:Syste
 
 ## <a name="in-this-section"></a>En esta sección
 
-|Tema|Description|
+|Tema|Descripción|
 |-----------|-----------------|
 |[Attribute](../designers/attribute-xelement-dynamic-property.md)|Obtiene un indizador que se usa para el atributo que se corresponde con un nombre expandido especificado.|
 |[Element](../designers/element-xelement-dynamic-property.md)|Obtiene un indizador que se usa para recuperar el elemento secundario que se corresponde con un nombre expandido especificado.|

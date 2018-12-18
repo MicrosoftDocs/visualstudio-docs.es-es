@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f717a61e79e9f91f9f79a32d1da5020b0084516
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5d8d9c479c1dac638a63ce45d114c4a66e0a213d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908429"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
 Llama a la función y devuelve el valor resultante como un objeto.  
@@ -52,7 +53,7 @@ int Evaluate(
  [in] El número de parámetros en el `ppParams` matriz.  
   
  `dwTimeout`  
- [in] Especifica el tiempo máximo, en milisegundos, que se esperará antes de volver de este método. Use `INFINITE` para esperar indefinidamente.  
+ [in] Especifica el tiempo máximo, en milisegundos para esperar antes de volver de este método. Use `INFINITE` para esperar indefinidamente.  
   
  `ppResult`  
  [out] Devuelve un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representa el valor de la función como un objeto.  
@@ -61,7 +62,7 @@ int Evaluate(
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método configura y ejecuta una llamada a la función representada por la [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) objeto.  
+ Este método configura y ejecuta una llamada a la función representada por el [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) objeto.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

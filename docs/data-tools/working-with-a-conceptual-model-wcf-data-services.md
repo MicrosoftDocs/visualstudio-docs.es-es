@@ -10,25 +10,28 @@ ms.assetid: 2cd873cf-b010-49f2-a278-bb1277aaa934
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0e88ed4efac24df11f00d18b6235ee58ff0fae21
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: cae74c50ecd99716cf26eae2b7defcadf03fecbf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862980"
 ---
-# <a name="working-with-a-conceptual-model-wcf-data-services"></a>Trabajar con un modelo Conceptual (WCF Data Services)
+# <a name="work-with-a-conceptual-model-wcf-data-services"></a>Trabajar con un modelo Conceptual (WCF Data Services)
 
 Cuando se usa un modelo conceptual para describir los datos de una base de datos, se pueden consultar los datos a través de objetos en lugar de tener que traducirlos en ambos sentidos entre un esquema de base de datos y un modelo de objetos.
 
  Puede usar los modelos conceptuales con aplicaciones de Data Services de WCF. En los temas siguientes se muestra cómo consultar los datos a través de un modelo conceptual.
 
-|Tema|Descripción|
-|-----------|-----------------|
-|[Cómo: ejecutar consultas de servicios de datos](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services)|Muestra cómo consultar un servicio de datos desde una aplicación de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].|
-|[Resultados de consulta del proyecto](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services)|Muestra cómo reducir la cantidad de datos devueltos con una consulta de servicio de datos.|
+
+| Tema | Descripción |
+| - | - |
+| [Cómo: ejecutar consultas de servicios de datos](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Muestra cómo consultar un servicio de datos desde una aplicación de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. |
+| [Cómo: proyectar los resultados de consulta](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Muestra cómo reducir la cantidad de datos devueltos con una consulta de servicio de datos. |
 
  Cuando se usa un modelo conceptual, puede definir los tipos de datos válidos en el lenguaje que coincide con su dominio. Puede definir los datos válidos en el modelo, o puede agregar validación a las operaciones que se realizan en una entidad o un servicio de datos.
 
@@ -36,14 +39,14 @@ Cuando se usa un modelo conceptual para describir los datos de una base de datos
 
 |Tema|Descripción|
 |-----------|-----------------|
-|[Interceptación de mensajes de servicios de datos](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Muestra cómo agregar validación a una operación de servicio de datos.|
+|[Cómo: mensajes del servicio de datos de intercepción](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Muestra cómo agregar validación a una operación de servicio de datos.|
 
  En los temas siguientes se muestra cómo crear, actualizar y eliminar datos mediante operaciones que se ejecutan en las entidades.
 
 |Tema|Descripción|
 |-----------|-----------------|
-|[Adición, modificación y eliminación de entidades](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Muestra cómo crear, actualizar y eliminar los datos de entidad en un servicio de datos.|
-|[Definición de relaciones de entidades](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Muestra cómo crear o cambiar las relaciones en un servicio de datos.|
+|[Cómo: agregar, modificar y eliminar entidades](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Muestra cómo crear, actualizar y eliminar los datos de entidad en un servicio de datos.|
+|[Cómo: definir relaciones de entidades](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Muestra cómo crear o cambiar las relaciones en un servicio de datos.|
 
 ## <a name="see-also"></a>Vea también
 

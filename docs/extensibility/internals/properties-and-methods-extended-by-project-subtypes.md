@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132096"
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>Propiedades y métodos extendidos subtipos de proyecto
 Un subtipo de proyecto tiene una gran cantidad de energía para influir en el comportamiento del proyecto porque se construye como un agregador de un proyecto de base. En esta sección se resume algunas de las características que pueden ser mejoradas o modificar mediante subtipos de proyecto.  

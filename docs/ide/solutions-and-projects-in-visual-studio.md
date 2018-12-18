@@ -1,7 +1,7 @@
 ---
-title: Soluciones y proyectos en Visual Studio | Microsoft Docs
-ms.custom: ''
-ms.date: 10/5/2017
+title: Soluciones y proyectos
+ms.date: 10/05/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -26,46 +26,59 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11441c826a316d995e75f2b6c79232f19985c17b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 518479d92aa9b0ec51c4fda8b7484a03ce45a560
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159677"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluciones y proyectos en Visual Studio
+
+En este artículo se explica el concepto de *proyecto* y *solución* en Visual Studio. También se trata brevemente cómo crear un nuevo proyecto y la ventana de herramientas **Explorador de soluciones**.
+
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Proyectos y soluciones en Visual Studio para Mac](/visualstudio/mac/projects-and-solutions).
 
 ## <a name="projects"></a>Proyectos
 
 Cuando cree una aplicación, un sitio web, un complemento, etc. en Visual Studio, debe comenzar con un *proyecto*. En un sentido lógico, un proyecto contiene todos los archivos de código fuente, iconos, imágenes, archivos de datos, etc., que se compilan en un archivo ejecutable, biblioteca o sitio web. Un proyecto también contiene la configuración del compilador y otros archivos de configuración que podrían ser necesarios en diversos servicios o componentes con los que el programa se comunica.
 
 > [!NOTE]
-> No es necesario usar soluciones o proyectos en Visual Studio para editar, compilar y depurar código. Simplemente puede abrir la carpeta que contiene los archivos de código fuente en Visual Studio y empezar la edición. Consulte [Desarrollo de código en Visual Studio sin proyectos o soluciones](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) para obtener más información.
+> No es necesario usar soluciones o proyectos en Visual Studio para editar, compilar y depurar código. Simplemente puede abrir la carpeta que contiene los archivos de código fuente en Visual Studio y empezar la edición. Para obtener más información, vea [Desarrollo de código en Visual Studio sin proyectos o soluciones](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
-Un proyecto se define en un archivo XML con una extensión como .vbproj, .csproj o .vcxproj. Este archivo contiene una jerarquía de carpetas virtuales y rutas de acceso a todos los elementos en el proyecto. Además, contiene toda la configuración de compilación.
+Un proyecto se define en un archivo XML con una extensión como *.vbproj*, *.csproj* o *.vcxproj*. Este archivo contiene una jerarquía de carpetas virtuales y rutas de acceso a todos los elementos en el proyecto. Además, contiene toda la configuración de compilación.
 
 > [!TIP]
-> Para examinar el contenido de un archivo de proyecto en Visual Studio, primero descargue el proyecto seleccionando el nombre del proyecto en el Explorador de soluciones y eligiendo **Descargar el proyecto** en el menú contextual. Después, vuelva a abrir el menú contextual y elija **Editar \<NombreDelProyecto\>**.
+> Para examinar el contenido de un archivo de proyecto en Visual Studio, primero descargue el proyecto al seleccionar el nombre del proyecto en el **Explorador de soluciones** y elegir **Descargar el proyecto** en el menú contextual. Después, vuelva a abrir el menú contextual y elija **Editar \<NombreDelProyecto\>**.
 
-En Visual Studio, se usa el archivo de proyecto mediante el Explorador de soluciones para mostrar el contenido del proyecto y la configuración. Cuando compila el proyecto, el motor de MSBuild consume el archivo de proyecto para crear el archivo ejecutable. También puede personalizar proyectos para producir otro tipo de resultados.
+En Visual Studio, el **Explorador de soluciones** usa el archivo de proyecto para mostrar el contenido y la configuración del proyecto. Cuando compila el proyecto, el motor de MSBuild consume el archivo de proyecto para crear el archivo ejecutable. También puede personalizar proyectos para producir otro tipo de resultados.
 
 ## <a name="solutions"></a>Soluciones
 
-Un proyecto está incluido dentro de una *solución*. Una solución contiene uno o más proyectos relacionados, junto con información de compilación, la configuración de ventanas de Visual Studio y archivos varios que no estén asociados a un proyecto determinado. Una solución se describe mediante un archivo de texto (con la extensión .sln) con su propio formato único; por lo general no está diseñada para modificarse de forma manual.
+Un proyecto está incluido dentro de una *solución*. Una solución contiene uno o más proyectos relacionados, junto con información de compilación, la configuración de ventanas de Visual Studio y archivos varios que no estén asociados a un proyecto determinado. Una solución se describe mediante un archivo de texto (extensión *.sln*) con su propio formato único; no está diseñada para modificarse de forma manual.
 
-Una solución tiene un archivo *.suo* asociado que almacena la configuración, las preferencias y la información de configuración para cada usuario que haya trabajado en el proyecto.
+En Visual Studio se usan dos tipos de archivo (*.sln* y *.suo*) para almacenar la configuración de las soluciones:
 
-## <a name="creating-new-projects"></a>Crear nuevos proyectos
+|Comprobación de actualización|nombre|Descripción|
+|---------------|----------|-----------------|
+|.sln|Solución de Visual Studio|Organiza proyectos, elementos de proyecto y elementos de solución en la solución.|
+|.suo|Opciones de usuario de la solución|Almacena la configuración de nivel de usuario y las personalizaciones, como los puntos de interrupción.|
 
-La manera más fácil de crear un proyecto consiste en empezar desde una plantilla de proyecto para un tipo concreto de aplicación o sitio web. Una plantilla de proyecto consta de un conjunto básico de archivos de código generados previamente, archivos de configuración, recursos y configuraciones. Estas plantillas son lo que ve en el cuadro de diálogo **Nuevo proyecto** o **Nuevo sitio web** cuando selecciona **Archivo**, **Nuevo**, **Proyecto** o **Archivo**, **Nuevo**, **Sitio web**. Para más información, vea [Crear soluciones y proyectos](../ide/creating-solutions-and-projects.md).
+## <a name="create-new-projects"></a>Crear nuevos proyectos
 
-También puede crear un proyecto y plantillas de elemento personalizados. Para obtener más información, vea [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md).
+La manera más fácil de crear un proyecto consiste en empezar desde una plantilla de proyecto para un tipo concreto de aplicación o sitio web. Una plantilla de proyecto consta de un conjunto básico de archivos de código generados previamente, archivos de configuración, recursos y configuraciones. Estas plantillas son lo que se ve en el cuadro de diálogo **Nuevo proyecto** al elegir **Archivo** > **Nuevo** > **Proyecto**. Para obtener más información, vea [Crear soluciones y proyectos](../ide/creating-solutions-and-projects.md).
 
-## <a name="managing-projects-in-solution-explorer"></a>Administración de proyectos en el Explorador de soluciones
+También puede crear un proyecto y plantillas de elemento personalizados. Para obtener más información, vea [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md).
 
-Después de crear un proyecto nuevo, puede usar el **Explorador de soluciones** para ver y administrar el proyecto, la solución y sus elementos asociados. La siguiente ilustración muestra el Explorador de soluciones con una solución de C# que contiene dos proyectos.
+## <a name="manage-projects-in-solution-explorer"></a>Administrar proyectos en el Explorador de soluciones
 
-![Explorador de soluciones](../ide/media/vs2015_solution_explorer.png "vs2015_solution_explorer")
+Después de crear un proyecto nuevo, puede usar el **Explorador de soluciones** para ver y administrar el proyecto, la solución y sus elementos asociados. En la siguiente ilustración se muestra el **Explorador de soluciones** con una solución de C# que contiene dos proyectos:
+
+![Explorador de soluciones](../ide/media/vs2015_solution_explorer.png)
 
 ## <a name="see-also"></a>Vea también
 
-[IDE de Visual Studio](../ide/visual-studio-ide.md)
+- [IDE de Visual Studio](../get-started/visual-studio-ide.md)
+- [Proyectos y soluciones (Visual Studio para Mac)](/visualstudio/mac/projects-and-solutions)
+- [Agregar y quitar elementos del proyecto (Visual Studio para Mac)](/visualstudio/mac/add-and-remove-project-items)

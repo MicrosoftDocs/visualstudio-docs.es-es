@@ -1,11 +1,11 @@
 ---
 title: Constantes SCRIPTTHREADID | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - SCRIPTTHREADID
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - SCRIPTTHREADID
 ms.assetid: 1df9940c-ad0c-42d8-96b9-6a6abe2382e6
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24734195"
 ---
 # <a name="scriptthreadid-constants"></a>Constantes SCRIPTTHREADID
 Se utiliza para especificar el tipo de subproceso.  

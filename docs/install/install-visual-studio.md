@@ -2,12 +2,9 @@
 title: Instalación de Visual Studio 2017 | Microsoft Docs
 description: Obtenga información sobre cómo instalar Visual Studio, paso a paso.
 ms.custom: ''
-ms.date: 12/04/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.date: 05/07/2018
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -22,16 +19,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f6acdd338b0ae8d23fba338c8564d2bd95ad45
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 7c3ba26f014b09624b1a8fec88bed8a5aefa632b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349696"
 ---
 # <a name="install-visual-studio-2017"></a>Instalación de Visual Studio 2017
+
 Le presentamos una nueva manera de instalar Visual Studio. En nuestra versión más reciente, hemos facilitado la selección e instalación de solo las características que necesita. También hemos reducido el espacio de Visual Studio al mínimo, de manera que se instale más rápidamente con menos impacto del sistema que nunca antes.
 
-¿Quiere saber más sobre otras novedades de esta versión? Vea nuestras [notas de la versión](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Instalación de Visual Studio para Mac](/visualstudio/mac/installation).
+
+¿Quiere saber más sobre otras novedades de esta versión? Vea nuestras [notas de la versión](/visualstudio/releasenotes/vs2017-relnotes).
 
 ¿Está listo para instalarlo? Le guiaremos paso a paso.
 
@@ -39,19 +41,19 @@ Le presentamos una nueva manera de instalar Visual Studio. En nuestra versión m
 
 Antes de comenzar la instalación de Visual Studio:
 
-1. Compruebe los [requisitos del sistema](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs). Estos requisitos le permiten saber si el equipo es compatible con Visual Studio 2017.
+1. Compruebe los [requisitos del sistema](/visualstudio/productinfo/vs2017-system-requirements-vs). Estos requisitos le permiten saber si el equipo es compatible con Visual Studio 2017.
 2. Aplique las actualizaciones de Windows más recientes. Estas actualizaciones garantizan que el equipo tiene las actualizaciones de seguridad más recientes y los componentes del sistema necesarios para Visual Studio.
 3. Reinicie el equipo. El reinicio garantiza que cualquier actualización o instalación pendiente no dificultará la instalación de Visual Studio.
 4. Libere espacio. Quite los archivos y aplicaciones innecesarios de %SystemDrive% ejecutando, por ejemplo, la aplicación Liberar espacio.
 
-Si tiene preguntas sobre cómo ejecutar las versiones anteriores de Visual Studio en paralelo con Visual Studio 2017, vea los [detalles de compatibilidad con Visual Studio](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases).
+Si tiene preguntas sobre cómo ejecutar las versiones anteriores de Visual Studio en paralelo con Visual Studio 2017, vea los [detalles de compatibilidad con Visual Studio](/visualstudio/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases).
 
 ## <a name="step-2---download-visual-studio"></a>Paso2: Descargar Visual Studio
 
 A continuación, descargue el archivo de programa previo de Visual Studio. Para ello, haga clic en el botón siguiente, seleccione la edición de Visual Studio 2017 que desee instalar, haga clic en **Guardar** y, a continuación, haga clic en **Abrir carpeta**.
 
  > [!div class="button"]
- > [Descargar Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
+ > [Descargar Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
 
 |         |         |
@@ -62,15 +64,15 @@ A continuación, descargue el archivo de programa previo de Visual Studio. Para 
 
 Después, ejecute el archivo de programa previo para instalar el Instalador de Visual Studio. Este nuevo instalador ligero incluye todo lo necesario para instalar y personalizar Visual Studio 2017.
 
-1.  Desde la carpeta **Descargas**, haga doble clic en el archivo de programa previo que coincida o sea similar a uno de los siguientes archivos:
+1. Desde la carpeta **Descargas**, haga doble clic en el archivo de programa previo que coincida o sea similar a uno de los siguientes archivos:
 
-  * **vs_enterprise.exe** para Visual Studio Enterprise
-  * **vs_professional.exe** para Visual Studio Professional
-  * **vs_community.exe** para Visual Studio Community  <br><br>
+   * **vs_enterprise.exe** para Visual Studio Enterprise
+   * **vs_professional.exe** para Visual Studio Professional
+   * **vs_community.exe** para Visual Studio Community  <br><br>
 
-  Si recibe un aviso de Control de cuentas de usuario, haga clic en **Sí**.
+   Si recibe un aviso de Control de cuentas de usuario, haga clic en **Sí**.
 
-2.  Le pediremos que acepte los [Términos de licencia](https://www.visualstudio.com/license-terms/) de Microsoft y la [Declaración de privacidad](https://go.microsoft.com/fwlink/?LinkID=824704) de Microsoft. Haga clic en **Continuar**.  
+2. Le pediremos que acepte los [Términos de licencia](https://visualstudio.microsoft.com/license-terms/) de Microsoft y la [Declaración de privacidad](https://privacy.microsoft.com/privacystatement) de Microsoft. Haga clic en **Continuar**.
 
    ![Términos de licencia y declaración de privacidad](media/vs2017-privacy-and-license-terms.PNG "Términos de licencia y declaración de privacidad de Microsoft")
 
@@ -78,20 +80,20 @@ Después, ejecute el archivo de programa previo para instalar el Instalador de V
 
 Una vez instalado el Instalador, puede usarlo para personalizar la instalación mediante la selección de los conjuntos de características, o cargas de trabajo, que desee. Esta es la manera de hacerlo.
 
-1.  Busque la carga de trabajo que quiera en la pantalla **Instalando Visual Studio**.
+1. Busque la carga de trabajo que quiera en la pantalla **Instalando Visual Studio**.
 
- ![Seleccionar una carga de trabajo en el cuadro de diálogo del programa de instalación de Visual Studio 2017](../install/media/install-visual-studio-enterprise.png)
+   ![Seleccionar una carga de trabajo en el cuadro de diálogo del programa de instalación de Visual Studio 2017](../install/media/install-visual-studio-community.png)
 
-     Por ejemplo, elija la carga de trabajo "Desarrollo de escritorio de .NET". Incluye el editor principal predeterminado, que contiene compatibilidad de edición de código básica para más de 20 lenguajes, la capacidad de abrir y editar código desde cualquier carpeta sin necesitar un proyecto y control de código fuente integrado.  
+     Por ejemplo, elija la carga de trabajo "Desarrollo de escritorio de .NET". Incluye el editor principal predeterminado, que contiene compatibilidad de edición de código básica para más de 20 lenguajes, la capacidad de abrir y editar código desde cualquier carpeta sin necesitar un proyecto y control de código fuente integrado.
 
-2.  Después de que seleccione las cargas de trabajo que quiera, haga clic en **Instalar**.
+2. Después de que seleccione las cargas de trabajo que quiera, haga clic en **Instalar**.
 
     Después, aparecerán las pantallas de estado que muestran el progreso de su instalación de Visual Studio.
 
-3.  Después de que se instalen los nuevos componentes y cargas de trabajo, haga clic en **Iniciar**.  
+3. Después de que se instalen los nuevos componentes y cargas de trabajo, haga clic en **Iniciar**.
 
 > [!TIP]
->  En cualquier momento después de la instalación, puede instalar las cargas de trabajo o los componentes que no instaló inicialmente. Si tiene Visual Studio abierto, vaya a **Herramientas** > **Obtener herramientas y características...** para abrir el Instalador de Visual Studio. O bien, abra el **Instalador de Visual Studio** desde el menú Inicio. Desde allí, puede seleccionar las cargas de trabajo o los componentes que quiere instalar, y después, haga clic en **Modificar**.  
+> En cualquier momento después de la instalación, puede instalar las cargas de trabajo o los componentes que no instaló inicialmente. Si tiene Visual Studio abierto, vaya a **Herramientas** > **Obtener herramientas y características...** para abrir el Instalador de Visual Studio. O bien, abra el **Instalador de Visual Studio** desde el menú Inicio. Desde allí, puede seleccionar las cargas de trabajo o los componentes que quiere instalar, y después, haga clic en **Modificar**.
 
 |         |         |
 |---------|---------|
@@ -121,30 +123,33 @@ De manera predeterminada, el programa instalador intenta hacer coincidir el idio
 
 Otra manera de cambiar el idioma predeterminado es mediante la ejecución del instalador desde la línea de comandos. Por ejemplo, puede forzar al instalador a utilizar el inglés utilizando el comando siguiente: `vs_installer.exe --locale en-US`. El instalador recordará esta configuración cuando se ejecute la próxima vez. El instalador admite los siguientes tokens de idioma: zh-cn, zh-tw, cs-cz, en-us, es-es, fr-fr, de-de, it-it, ja-jp, ko-kr, pl-pl, pt-br, ru-ru y tr-tr.
 
+## <a name="step-7---change-the-installation-location-optional"></a>Paso 7: Cambiar la ubicación de instalación (opcional)
 
-## <a name="step-7---start-developing"></a>Paso 7: Empezar a desarrollar
-1. Una vez completada la instalación de Visual Studio, haga clic en el botón **Iniciar** para [empezar a desarrollar con Visual Studio](../ide/get-started-developing-with-visual-studio.md).
+**Nuevo en 15.7**: ahora puede reducir el tamaño de instalación de Visual Studio en la unidad de sistema. Puede mover la caché de descarga, los componentes compartidos, SDK y herramientas a distintas unidades y mantener Visual Studio en la unidad que lo ejecuta más rápido.
+
+  ![Visual Studio 2017: cambiar la ubicación de instalación](media/installation-options-by-location.png "Change the installation location")
+
+Para obtener más información, consulte la página [Change installation locations in Visual Studio](change-installation-locations.md) (Cambiar las ubicaciones de instalación de Visual Studio).
+
+## <a name="step-8---start-developing"></a>Paso 8: Empezar a desarrollar
+
+1. Una vez completada la instalación de Visual Studio, haga clic en el botón **Iniciar** para empezar a desarrollar con Visual Studio.
 
 2. Haga clic en **Archivo** y después en **Nuevo proyecto**.
 
-3. Seleccione un tipo de proyecto. <br><br>
-   Por ejemplo, para [compilar una aplicación de C++](../ide/getting-started-with-cpp-in-visual-studio.md), haga clic en **Instalado**, expanda **Visual C++** y, después, seleccione el tipo de proyecto de C++ que quiera compilar. <br><br>
+3. Seleccione un tipo de proyecto.
+
+   Por ejemplo, para [compilar una aplicación de C++](../ide/getting-started-with-cpp-in-visual-studio.md), haga clic en **Instalado**, expanda **Visual C++** y, después, seleccione el tipo de proyecto de C++ que quiera compilar.
+
    Para [compilar una aplicación de C#](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), haga clic en **Instalado**, expanda **Visual C#** y, después, seleccione el tipo de proyecto de C# que quiera compilar.
 
-## <a name="get-support"></a>Obtener soporte técnico
-En ocasiones, algo no sale según lo previsto. Si se produce un error en la instalación de Visual Studio, consulte la página [Troubleshooting Visual Studio 2017 installation and upgrade issues](troubleshooting-installation-issues.md) (Solucionar problemas de errores de instalación y actualización de Visual Studio 2017). Si ninguno de los pasos de solución de problemas ayuda, puede ponerse en contacto con nosotros por chat para obtener asistencia para la instalación (solo en inglés). Para más información, consulte la [página de soporte técnico de Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
-
-Aquí tiene algunas opciones de soporte técnico más:
-* Puede notificarnos problemas del producto a través de la herramienta [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) que aparece en el instalador y en el IDE de Visual Studio.
-* Puede compartir una sugerencia de producto con nosotros en [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Puede realizar el seguimiento de los problemas del producto en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/), y hacer preguntas y encontrar respuestas.
-* También puede ponerse en contacto con nosotros y otros desarrolladores de Visual Studio a través de nuestra [conversación de Visual Studio en la comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio).  (Esta opción requiere una cuenta de [GitHub](https://github.com/)).
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Vea también
+
 * [Actualizar Visual Studio 2017](update-visual-studio.md)
 * [Modificación de Visual Studio 2017](modify-visual-studio.md)
 * [Desinstalación de Visual Studio 2017](uninstall-visual-studio.md)
 * [Crear una instalación sin conexión de Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
-* [Guía del administrador de Visual Studio 2017](visual-studio-administrator-guide.md)
-  * [Usar parámetros de la línea de comandos para instalar Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
-* [Instalar Build Tools en un contenedor](build-tools-container.md)
+* [Usar parámetros de la línea de comandos para instalar Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
+* [Instalación de Visual Studio para Mac](/visualstudio/mac/installation)

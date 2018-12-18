@@ -1,6 +1,7 @@
 ---
 title: Xml (Propiedad dinámica de XElement)
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: reference
 apiname:
@@ -11,19 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36b2100218267587e2ea5d38ad62f7ed28dbc102
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8a69245a875d0c1df1942af12afaacc5a9ffc34b
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080842"
 ---
-# <a name="xml-xelement-dynamic-property"></a>Xml (Propiedad dinámica de XElement)
+# <a name="xml-xelement-dynamic-property"></a>Xml (propiedad dinámica de XElement)
 
 Obtiene el contenido XML sin formato del elemento.
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```xaml
 elem.Xml
 ```
 

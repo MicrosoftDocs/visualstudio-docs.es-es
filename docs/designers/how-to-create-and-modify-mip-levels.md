@@ -1,6 +1,7 @@
 ---
 title: 'Cómo: Crear y modificar niveles de MIP'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: f64d4369-2307-4175-a39a-2e45506f7fa1
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b1a12810d64e4e61230d1832e0394f0bad91cf3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4bdda75e5c8796ccd6e0b1d86b717dbd9bc48926
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924452"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Cómo: Crear y modificar niveles de MIP
 En este documento se muestra cómo usar el **Editor de imágenes** para generar y modificar *niveles de MIP* con nivel de detalle (LoD) del espacio de textura.
@@ -25,7 +27,7 @@ En este documento se muestra cómo usar el **Editor de imágenes** para generar 
 
 1.  Comience con una textura básica, como se describe en [Cómo: Crear una textura básica](../designers/how-to-create-a-basic-texture.md). Para obtener mejores resultados, especifique una textura que tenga un ancho y un alto que sean la potencia de dos del tamaño, por ejemplo, 256, 512, 1024, etc.
 
-2.  Genere los niveles de MIP. En la barra de herramientas del **modo Editor de imágenes**, elija **Avanzado**, **Herramientas**, **Generar Mips**.
+2.  Genere los niveles de MIP. En la barra de herramientas del **modo Editor de imágenes**, elija **Avanzado** > **Herramientas** > **Generar Mips**.
 
      Observe que los botones para **ir al nivel de MIP siguiente** e **ir al nivel de MIP anterior** aparecen ahora en la barra de herramientas del **modo Editor de imágenes**. Si se muestra la ventana **Propiedades**, observe también que las propiedades de solo lectura **Nivel de Mip** y **Número de niveles de MIP** aparecen ahora en las propiedades de la imagen.
 
@@ -43,4 +45,4 @@ En este documento se muestra cómo usar el **Editor de imágenes** para generar 
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Crear una textura básica](../designers/how-to-create-a-basic-texture.md)
+- [Cómo: crear una textura básica](../designers/how-to-create-a-basic-texture.md)

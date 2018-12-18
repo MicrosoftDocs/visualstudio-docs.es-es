@@ -1,7 +1,7 @@
 ---
-title: Editar y continuar en el cuadro de diálogo de mensaje de Error | Documentos de Microsoft
+title: Editar y continuar en el cuadro de diálogo de mensaje de error | Microsoft Docs
 ms.custom: ''
-ms.date: 06/22/2017
+ms.date: 10/15/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
@@ -20,45 +20,34 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b521eafcc62a49f2dd2a4c327158070bdbe62ce
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: ba573a6b6bffdfeebf37c5f46f1f774d699a1131
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388717"
 ---
-# <a name="edit-and-continue-error-message-dialog-box"></a>Editar y continuar (Cuadro de diálogo de mensaje de error)
-Este cuadro de diálogo aparece cuando se depura en un lenguaje que admite Editar y continuar, pero **editar y continuar** no está disponible para el tipo de cambios de código realizados. El mensaje de error incluido en el cuadro proporciona una explicación más detallada. Entre las posibles razones para que aparezca este cuadro de diálogo se incluyen:  
+# <a name="edit-and-continue-error-message"></a>Editar y continuar el mensaje de error 
 
--   Se intentó editar código de SQL Server.
+El **editar y continuar** aparece el cuadro de mensaje de error cuando se depura en un lenguaje de código que admite Editar y continuar, pero Editar y continuar no está disponible para los cambios de código realizados. El mensaje de error proporciona una explicación más detallada. Para responder al cuadro de diálogo, seleccione **Aceptar** para cerrar el cuadro de diálogo y cancelar el intento de edición.  
 
--   Se intentó editar código optimizado. (Puede que tenga cambiar de una versión de lanzamiento a una versión de depuración).
+Las posibles razones para este mensaje de error incluyen:  
 
--   Se intentó editar código mientras se estaba ejecutando (en lugar de mientras está en pausa en el depurador). Intente [establecer un punto de interrupción](../debugger/using-breakpoints.md) y editar código mientras está en pausa.
-
--   Se intentó editar código administrado cuando estaba habilitada la depuración no administrada. Editar y continuar no funciona con [depuración en modo mixto](../debugger/how-to-debug-in-mixed-mode.md).
-
--   Realizó un código de cambio que no es compatible con Editar y continuar en el lenguaje de programación. Para obtener más información, vea temas para cambios de códigos no admitida en [C#](../debugger/supported-code-changes-csharp.md), [Visual Basic](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md), y [C++](../debugger/supported-code-changes-cpp.md).
+-   Se está intentando editar código de SQL Server.
+-   Se está intentando editar código optimizado. Es posible que deba cambiar de una versión de lanzamiento a una compilación de depuración.
+-   Si intenta modificar el código mientras se está ejecutando, en lugar de mientras está en pausa en el depurador. Pruebe [establecer un punto de interrupción](../debugger/using-breakpoints.md)y editar el código mientras está en pausa.
+-   Se está intentando editar código administrado cuando está habilitada la depuración solo no administrado. Editar y continuar no funciona con [depuración en modo mixto](../debugger/how-to-debug-in-mixed-mode.md).
+-   Por lo que un código de cambio que no es compatible con Editar y continuar en el lenguaje de programación. Para obtener más información, consulte los artículos [admite cambios de código en C# ](supported-code-changes-csharp.md), [no admite la edición de Visual Basic editar y continuar](unsupported-edits-in-visual-basic-edit-and-continue.md), y [admite cambios en el código C++](supported-code-changes-cpp.md).
+-   Si intenta modificar el código en una aplicación que está conectado, en lugar de iniciar la depuración desde el **depurar** menú.  
+-   Se está intentando editar código mientras se depuraba una recuperación ante desastres. Volcado de memoria de Watson.  
+-   Si intenta modificar el código después de que se produce una excepción no controlada y la opción **desenredar la pila de llamadas en las excepciones no controladas** no está seleccionada.  
+-   Se está intentando editar código mientras se depura una aplicación incrustada en tiempo de ejecución.
+-   Se está intentando editar código administrado mediante una versión de .NET Framework anteriores a 4.5.1 con un objetivo de la aplicación de 64 bits. Para utilizar editar y continuar para .NET Framework anteriores a 4.5.1, establezca el destino en **x86** en el  **\<NombreDelProyecto >** > **propiedades**  >  **Compilar** ficha, **compilador avanzada** configuración.  
+-   Se está intentando editar código en un ensamblado que se modificó durante la depuración y se volvió a cargar.  
+-   Se está intentando editar código en un ensamblado que no se ha cargado.  
+-   Comenzar a depurar una versión anterior de una aplicación, porque la versión más reciente tiene errores de compilación.
   
--   Se intentó editar código en un programa que se asoció, en lugar de a partir de la **depurar** menú.  
-  
--   Se intentó editar código mientras se depuraba un volcado de memoria de Dr. Volcado de memoria de Watson.  
-  
--   Se intentó editar código después de que se produjo una excepción no controlada y la opción "**desenredar la pila de llamadas de las excepciones no controladas**" no se seleccionó.  
-  
--   Se intentó editar código mientras se depuraba una aplicación incrustada en tiempo de ejecución.
-  
--   Se intentó editar código administrado mediante la versión de .NET Framework anterior a 4.5.1 y el destino es una aplicación de 64 bits. Si desea utilizar la opción Editar y continuar, deberá establecer el destino en x86. (*projectname* **propiedades**, **compilar** ficha, **compilador avanzada** configuración.).  
-  
--   Se intentó editar código en un ensamblado que se modificó durante la depuración y se ha vuelto ha cargar.  
-  
--   Se intentó editar código en un ensamblado que no se ha cargado.  
-  
--   Se inició la depuración de una versión anterior de la aplicación (ya que la nueva versión tenía errores de compilación).
-  
-## <a name="uielement-list"></a>Lista de UIElement  
- **VALE**  
- Sale del cuadro de diálogo y cancela el intento de edición inmediatamente anterior.  
-  
-## <a name="see-also"></a>Vea también  
- [C++ editar y continuar blog post](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)  
- [Cambios admitidos en el código (C++)](../debugger/supported-code-changes-cpp.md)
+Para obtener más información, consulte:
+- [C++ editar y continuar blog post](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)  
+- [Cambios admitidos en el código (C++)](../debugger/supported-code-changes-cpp.md)
+- [Editar y continuar](../debugger/edit-and-continue.md)

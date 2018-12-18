@@ -1,9 +1,8 @@
 ---
-title: Obtención de vista previa de los cambios de código en Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Vista previa de cambios de código en Visual Studio
 ms.date: 12/16/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
@@ -12,11 +11,12 @@ f1_keywords:
 - vs.codefix.previewchanges
 ms.workload:
 - multiple
-ms.openlocfilehash: cc838d55e83a5b606059acbf068639116ab012bd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dfb9ff26ca20060a8df9a0b3a81783b60e0b46f3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31942460"
 ---
 # <a name="preview-changes-window"></a>Ventana para obtener vista previa de cambios
 
@@ -32,5 +32,5 @@ Después de revisar los cambios, haga clic en el botón **Aplicar** para aceptar
 
 ## <a name="see-also"></a>Vea también
 
-[Refactorización en Visual Studio](../ide/refactoring-in-visual-studio.md)  
-[Acciones rápidas](../ide/quick-actions.md)
+- [Refactorización en Visual Studio](../ide/refactoring-in-visual-studio.md)
+- [Acciones rápidas](../ide/quick-actions.md)

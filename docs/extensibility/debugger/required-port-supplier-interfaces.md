@@ -1,5 +1,5 @@
 ---
-title: Interfaces de proveedor de puerto necesarias | Documentos de Microsoft
+title: Interfaces de proveedor de puerto necesarias | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,39 +14,40 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e34627effce5e2f0d1401da683536548a32d3f6e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1c727cb39b480d72a3e0aa2083ca795bb65ac0ff
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252419"
 ---
 # <a name="required-port-supplier-interfaces"></a>Interfaces de proveedor de puerto requerido
-Un proveedor de puerto debe implementar la [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) interfaz.[ IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)  
+Debe implementar un proveedor de puerto del [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) interfaz.[ IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)  
   
- Dado que un proveedor de puerto proporciona puertos, también debe implementarlos. Por lo tanto, debe implementar las interfaces siguientes:  
+ Proporciona puertos de un proveedor de puerto y los implementa. Por lo tanto, se deben ejecutar las siguientes interfaces:  
   
 -   [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)  
   
-     Describe el puerto y puede enumerar todos los procesos que se ejecutan en el puerto.  
+     Describe el puerto y enumera todos los procesos que se ejecutan en el puerto.  
   
 -   [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md)  
   
-     Se proporciona para iniciar y detener procesos en el puerto.  
+     Se proporciona para iniciar y terminar procesos en el puerto.  
   
 -   [IDebugPortNotify2](../../extensibility/debugger/reference/idebugportnotify2.md)  
   
-     Proporciona un mecanismo para programas que se ejecutan en contexto de este puerto para notificarle del programa nodo creación y destrucción. Para obtener más información, consulte [programa nodos](../../extensibility/debugger/program-nodes.md).  
+     Proporciona un mecanismo para programas que se ejecutan dentro del contexto de este puerto para notificarle de destrucción y la creación del nodo de programa. Para obtener más información, consulte [programa nodos](../../extensibility/debugger/program-nodes.md).  
   
 -   `IConnectionPointContainer`  
   
      Proporciona un punto de conexión para [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md).  
   
 ## <a name="port-supplier-operation"></a>Operación de proveedor de puerto  
- El [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md) receptor recibe notificaciones cuando el proceso y programas se crean y destruyen en un puerto. Es necesario un puerto de envío [IDebugProcessCreateEvent2](../../extensibility/debugger/reference/idebugprocesscreateevent2.md) cuando se crea un proceso y [IDebugProcessDestroyEvent2](../../extensibility/debugger/reference/idebugprocessdestroyevent2.md) cuando se destruye un proceso en el puerto. También se necesita un puerto para enviar [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) cuando se crea un programa y [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) cuando se destruye un programa en un proceso que se ejecuta en el puerto.  
+ El [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md) receptor recibe notificaciones cuando el proceso y programas se crean y destruyen en un puerto. Se requiere un puerto para enviar [IDebugProcessCreateEvent2](../../extensibility/debugger/reference/idebugprocesscreateevent2.md) cuando se crea un proceso y [IDebugProcessDestroyEvent2](../../extensibility/debugger/reference/idebugprocessdestroyevent2.md) cuando se destruye un proceso en el puerto. También es necesario un puerto de envío [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) cuando se crea un programa y [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) cuando se destruye un programa en un proceso que se ejecuta en el puerto.  
   
- Un puerto normalmente programa envía crear y destruir eventos en respuesta a la [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) y [RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) métodos, respectivamente.  
+ Un puerto normalmente envía programa crear y destruir eventos en respuesta a la [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) y [RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) métodos, respectivamente.  
   
- Dado que un puerto puede iniciar y finalizar procesos físicos y lógicos programas, estas interfaces también deben implementarse mediante el motor de depuración:  
+ Dado que un puerto puede iniciar y finalizar los procesos físicos y lógicos programas, las interfaces siguientes también deben implementarse mediante el motor de depuración:  
   
 -   [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)  
   
@@ -66,7 +67,7 @@ Un proveedor de puerto debe implementar la [IDebugPortSupplier2](../../extensibi
   
 -   [IDebugProcessEx2](../../extensibility/debugger/reference/idebugprocessex2.md)  
   
-     Proporciona una manera para que el SDM conectar y desconectar a sí mismo de un proceso.  
+     Proporciona una forma para el SDM asociar y desasociar propio de un proceso.  
   
 -   [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)  
   
@@ -80,7 +81,7 @@ Un proveedor de puerto debe implementar la [IDebugPortSupplier2](../../extensibi
   
 -   [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)  
   
-     Proporciona una manera para que el SDM adjuntar a este programa.  
+     Proporciona una forma para el SDM adjuntar a este programa.  
   
 ## <a name="see-also"></a>Vea también  
- [Implementación de un proveedor de puerto](../../extensibility/debugger/implementing-a-port-supplier.md)
+ [Implementar un proveedor de puerto](../../extensibility/debugger/implementing-a-port-supplier.md)

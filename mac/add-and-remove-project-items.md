@@ -1,15 +1,16 @@
 ---
 title: Agregar y quitar elementos del proyecto
 description: En este documento se explica cómo agregar y quitar elementos de proyecto en Visual Studio para Mac
-author: asb3993
-ms.author: amburns
-ms.date: 04/14/2017
+author: conceptdev
+ms.author: crdun
+ms.date: 05/06/2018
 ms.assetid: 4071689D-1C21-42D7-8963-550E7BCB4B67
-ms.openlocfilehash: f3fb3d133fb87d7d101018006433e5e75a5b0ec4
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: dc37b3a376b99c39d4216ba0ae2b05d707d11484
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296299"
 ---
 # <a name="adding-and-removing-project-items"></a>Agregar y quitar elementos del proyecto
 
@@ -25,7 +26,6 @@ Con esto se abre el cuadro de diálogo Nuevo archivo, que proporciona plantillas
 
 Puede agregar archivos existentes al proyecto si hace clic con el botón derecho en el nodo Proyecto y selecciona **Agregar > Agregar archivos...** También puede agregar una carpeta completa si selecciona **Agregar > Agregar carpeta de solución...** Con esto se abre el explorador de archivos, que permite buscar el elemento necesario en el sistema para agregarlo.
 
-
 ## <a name="removing-items"></a>Eliminación de elementos
 
 Para quitar un elemento del proyecto actual, haga clic con el botón derecho en el elemento y seleccione **Quitar**
@@ -37,4 +37,8 @@ Con esto se abre el cuadro de diálogo Eliminar elemento. Seleccione una de las 
 ![Cuadro de diálogo Eliminar elemento](media/add-and-remove-project-items-image4.png)
 
 * **Eliminar**: quita el elemento del proyecto y del disco.
-* **Quitar del proyecto**: quita el elemento del proyecto, pero no del disco. 
+* **Quitar del proyecto**: quita el elemento del proyecto, pero no del disco.
+
+## <a name="see-also"></a>Vea también
+
+* [Soluciones y proyectos en Visual Studio (en Windows)](/visualstudio/ide/solutions-and-projects-in-visual-studio)

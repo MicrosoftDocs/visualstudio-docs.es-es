@@ -1,5 +1,5 @@
 ---
-title: Obtener una lista de instalado fragmentos de código (heredado) | Documentos de Microsoft
+title: Obtener una lista de instalado fragmentos de código (heredado) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,22 +15,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ec48ee8ec7beffd66cec4266bc038b17a08a202
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4b09968ea178869dd9a4c6f1caeee83f60f667e3
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513249"
 ---
-# <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Tutorial: Obtener una lista de fragmentos de código instalados (implementación heredado)
-Un fragmento de código es un fragmento de código que se pueden insertar en el búfer de origen con un comando de menú (que permite elegir entre una lista de fragmentos de código instalados) o mediante la selección de un método abreviado de fragmento de código de una lista de finalización de IntelliSense.  
+# <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Tutorial: Obtención de una lista de fragmentos de código instalados (implementación heredada)
+Un fragmento de código es un fragmento de código que se puede insertar en el búfer de origen con un comando de menú (que permite elegir entre una lista de fragmentos de código instalados) o mediante la selección de un método abreviado de fragmento de código de una lista de finalización de IntelliSense.  
   
- El <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A> método obtiene todos los fragmentos de código para un idioma específico GUID. Los métodos abreviados para esos fragmentos de código se pueden insertar en una lista de finalización de IntelliSense.  
+ El <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A> método obtiene todos los fragmentos de código para un idioma específico de GUID. Los métodos abreviados para esos fragmentos de código se pueden insertar en una lista de finalización de IntelliSense.  
   
- Vea [compatibilidad con fragmentos de código en un servicio de lenguaje heredado](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md) para obtener más información acerca de cómo implementar los fragmentos de código en un servicio de lenguaje de paquetes administrados framework (MPF).  
+ Consulte [compatibilidad con fragmentos de código en un servicio de lenguaje heredado](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md) para obtener más información sobre la implementación de fragmentos de código en un servicio de lenguaje de paquetes administrados framework (MPF).  
   
 ### <a name="to-retrieve-a-list-of-code-snippets"></a>Para recuperar una lista de fragmentos de código  
   
-1.  El código siguiente muestra cómo obtener una lista de fragmentos de código para un idioma determinado. Los resultados se almacenan en una matriz de <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> estructuras. Este método utiliza el método estático <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> método para obtener el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> interfaz desde el <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> service. Sin embargo, también puede usar el proveedor de servicio dado el VSPackage y llame a la <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> método.  
+1.  El código siguiente muestra cómo obtener una lista de fragmentos de código para un idioma determinado. Los resultados se almacenan en una matriz de <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> estructuras. Este método usa estático <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> método para obtener el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> interfaz desde el <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> service. Sin embargo, también puede usar el proveedor de servicios dado su VSPackage y la llamada la <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> método.  
   
     ```csharp  
     using System;  
@@ -105,10 +106,10 @@ Un fragmento de código es un fragmento de código que se pueden insertar en el 
   
 ### <a name="to-call-the-getsnippets-method"></a>Para llamar al método GetSnippets  
   
-1.  El método siguiente muestra cómo llamar a la `GetSnippets` método al final de una operación de análisis. El <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> método se llama después de una operación de análisis que se inició con la razón <xref:Microsoft.VisualStudio.Package.ParseReason>.  
+1.  El método siguiente muestra cómo llamar a la `GetSnippets` método al finalizar una operación de análisis. El <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> se llama al método después de una operación de análisis que se inició con el motivo <xref:Microsoft.VisualStudio.Package.ParseReason>.  
   
 > [!NOTE]
->  El `expansionsList` listis almacenado en memoria caché por motivos de rendimiento de la matriz. Cambios en los fragmentos de código no se reflejan en la lista hasta que se detiene y se vuelve a cargar el servicio de lenguaje (por ejemplo, al detener y reiniciar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).  
+>  El `expansionsList` lista de la matriz se almacena en caché por motivos de rendimiento. No se reflejan los cambios realizados en los fragmentos de código en la lista hasta que se detiene y se vuelve a cargar el servicio de lenguaje (por ejemplo, al detener y reiniciar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).  
   
 ```csharp  
 class TestLanguageService : LanguageService  
@@ -129,11 +130,11 @@ class TestLanguageService : LanguageService
   
 ### <a name="to-use-the-snippet-information"></a>Para usar la información de fragmento de código  
   
-1.  El código siguiente muestra cómo utilizar la información de fragmento de código devuelta por la `GetSnippets` método. El `AddSnippets` método se llama desde el analizador en respuesta a alguna razón el análisis que se usa para rellenar una lista de fragmentos de código. Esto debe tener lugar después de que se ha realizado el análisis completo por primera vez.  
+1.  El código siguiente muestra cómo usar la información de fragmento de código devuelta por la `GetSnippets` método. El `AddSnippets` se llama al método del analizador en respuesta a alguna razón de análisis que se usa para rellenar una lista de fragmentos de código. Esto debe tener lugar después de que se ha realizado el análisis completo por primera vez.  
   
      El `AddDeclaration` método genera una lista de declaraciones que se muestra más adelante en una lista de finalización.  
   
-     La `TestDeclaration` clase contiene toda la información que se pueden mostrar en una lista de finalización, así como el tipo de declaración.  
+     La `TestDeclaration` clase contiene toda la información que se puede mostrar en una lista de finalización, así como el tipo de declaración.  
   
     ```csharp  
     class TestAuthoringScope : AuthoringScope  

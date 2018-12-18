@@ -1,32 +1,36 @@
 ---
 title: JavaScript en Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/10/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 74dca14c-5071-416f-a92b-d09f95e3dfb8
-caps.latest.revision: 
+caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: ghogen
-ms.openlocfilehash: 5b13f01a1a5ba13503932c73aef3a4825115497e
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: 75c234b2a3b16d3bcbe05da9f0818c73be0412db
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880804"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript en Visual Studio 2017
 
 JavaScript es un lenguaje de primera clase en Visual Studio. Puede usar la mayoría de las ayudas de edición estándar (fragmentos de código, IntelliSense, etc.) al escribir código JavaScript en el IDE de Visual Studio. Puede escribir código JavaScript para muchos tipos de aplicaciones y servicios.
+
+> [!NOTE]
+> Hemos contribuido en los esfuerzos que ha hecho toda la comunidad para que [documentos web de MDN](https://developer.mozilla.org/en-US/) sea el principal recurso de desarrollo integral redirigiendo todas las referencias de la API de JavaScript de Microsoft (más de 500 páginas) de docs.microsoft.com a sus equivalentes en MDN. Para obtener más información, vea este [anuncio](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
 
 ## <a name="ES6"></a> Compatibilidad con ECMAScript 2015 (ES6) y más allá
 
@@ -60,7 +64,7 @@ La configuración necesaria para el archivo tsconfig es la siguiente:
  La ubicación de salida, así como las carpetas que no son del proyecto, como `node_modules` o `temp`, deben agregarse a esta opción.
  - `enableAutoDiscovery`: esta opción habilita la detección automática y la descarga de archivos de definición como se describió anteriormente.
  - `compileOnSave`: Esta opción indica al compilador si debe volver a compilar cada vez que se guarda un archivo de origen en Visual Studio.
- - `typeAcquisition`: este conjunto de valores controla el comportamiento de la adquisición automática de tipos (se explica con más detalle en [esta sección](https://docs.microsoft.com/en-us/visualstudio/ide/javascript-intellisense#Auto))
+ - `typeAcquisition`: este conjunto de valores controla el comportamiento de la adquisición automática de tipos (se explica con más detalle en [esta sección](/visualstudio/ide/javascript-intellisense#Auto))
 
 Para convertir archivos JavaScript en módulos de CommonJS y colocarlos en una carpeta `./out`, se podría usar el archivo `tsconfig.json` siguiente:
 
@@ -182,7 +186,7 @@ Algunas de ellas se enumeran a continuación, pero para obtener un conjunto comp
 Dado un proyecto con la siguiente configuración:
 
 - los archivos de origen del proyecto están en `wwwroot/js`
-- los archivos lib están en `wwwrrot/lib`
+- los archivos lib están en `wwwroot/lib`
 - `bootstrap`, `jquery`, `jquery-validation` y `jquery-validation-unobtrusive` se muestran en el archivo `bower.json`
 - `kendo-ui` se ha agregado manualmente a la carpeta lib
 
@@ -251,7 +255,7 @@ VSDoc ya no se admite en favor de [JSDoc](http://usejsdoc.org/about-getting-star
 
 ### <a name="intellisensejs-extensions"></a>Extensiones de `.intellisense.js`
 
-Anteriormente, se podían crear [extensiones de IntelliSense](https://msdn.microsoft.com/en-us/library/hh874692.aspx), lo que permitía agregar resultados de finalización personalizados para bibliotecas de terceros.
+Anteriormente, se podían crear [extensiones de IntelliSense](https://msdn.microsoft.com/library/hh874692.aspx), lo que permitía agregar resultados de finalización personalizados para bibliotecas de terceros.
 Estas extensiones eran bastante difíciles de escribir e instalarlas y hacer referencia a ellas era complicado, así que desde ahora el nuevo servicio de lenguaje no admitirá estos archivos.
 Como una alternativa más sencilla, puede escribir un archivo de definición de TypeScript para proporcionar las mismas ventajas de IntelliSense que las antiguas extensiones de `.intellisense.js`.
 Puede aprender más sobre la creación de archivos (`.d.ts`) de declaración [aquí](http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html).

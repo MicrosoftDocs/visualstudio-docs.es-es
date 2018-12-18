@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bf40d5714810fd4beba9d5d75ffbffbf1895883
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6c8772bd6426632093bb23cc3094fe42ad433a8d
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257818"
 ---
 # <a name="process-view---contention-data"></a>Vista Proceso: datos de contención
 La vista Proceso muestra datos de contención de los procesos y subprocesos que se ejecutaron durante la generación de perfiles.  
@@ -25,7 +26,7 @@ La vista Proceso muestra datos de contención de los procesos y subprocesos que 
   
  En la siguiente tabla se explican los valores de las columnas de la tabla de vista Proceso.  
   
-|Columna|Description|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Hora de inicio**|El número de milisegundos o ciclos de procesador desde el inicio de la generación de perfiles hasta el inicio del proceso o subproceso.|  
 |**Tiempo de bloqueo**|El tiempo total durante el cual no se pudieron ejecutar las funciones del proceso o subproceso.|  

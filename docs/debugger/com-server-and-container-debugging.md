@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458182"
 ---
 # <a name="com-server-and-container-debugging"></a>Depuración de servidores y contenedores COM
 Las aplicaciones COM realizan una serie de tareas fuera del control directo del programador. La comunicación entre archivos DLL, los contadores de uso en objetos y las operaciones del Portapapeles son sólo algunas de las áreas en las que se puede encontrar un comportamiento inesperado. Cuando esto ocurre, el primer paso es determinar el origen del problema.  

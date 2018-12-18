@@ -1,11 +1,11 @@
 ---
 title: IDebugProperty::EnumMembers | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugProperty.EnumMembers
@@ -14,15 +14,16 @@ apilocation:
 helpviewer_keywords:
 - IDebugProperty::EnumMembers
 ms.assetid: 8ce398a5-6452-4804-ae8f-5c54cd11c661
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9cb57f2609fcd9a80e2a9e0dfd63637e6f700047
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 07ad47ee8d0232df5f528db659def421475e7b33
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924250"
 ---
 # <a name="idebugpropertyenummembers"></a>IDebugProperty::EnumMembers
 Enumera a los miembros de una propiedad.  
@@ -40,10 +41,10 @@ HRESULT EnumMembers (
   
 #### <a name="parameters"></a>Parámetros  
  `dwFieldSpec`  
- [in] Especifica el `DBGPROP_INFO_FLAGS` constantes que determinan qué campos de las estructuras de propiedad de depuración enumerado se rellenará.  
+ [in] Especifica el `DBGPROP_INFO_FLAGS` constantes que determinan cuáles son los campos en las estructuras de propiedad enumerada de depuración que deben rellenarse.  
   
  `nRadix`  
- [in] Base para usarse en la interpretación de toda la información numérica.  
+ [in] Base para su uso en la interpretación de toda la información numérica.  
   
  `refiid`  
  [in] Se pasa este IID para filtrar el enumerador. El IID es uno de los `IDebugPropertyEnumType` interfaces que heredan de `IDebugPropertyEnumType_All`.  

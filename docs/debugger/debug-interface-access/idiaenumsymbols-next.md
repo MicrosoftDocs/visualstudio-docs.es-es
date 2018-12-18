@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsymbols:: Next | Documentos de Microsoft'
+title: Idiaenumsymbols | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f419716901d35ea667f5e99a0c452d6e1b4d186c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: eaa9f5f1a822660d38f954f4f6bd2ee383cd9a2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867486"
 ---
 # <a name="idiaenumsymbolsnext"></a>IDiaEnumSymbols::Next
 Recupera un número especificado de símbolos en la secuencia de enumeración.  
@@ -38,13 +39,13 @@ HRESULT Next (
  [in] El número de símbolos en el enumerador que se va a recuperar.  
   
  rgelt  
- [out] Una matriz que se va a rellenar en con el [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objetos que representan los símbolos deseados.  
+ [out] Una matriz que se va a rellenar con el [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objetos que representan los símbolos deseados.  
   
  pceltFetched  
  [out] Devuelve el número de símbolos en el enumerador capturado.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no hay ningún símbolo más. De lo contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`. Devuelve `S_FALSE` si no hay ningún símbolo más. De lo contrario, devuelve un código de error.  
   
 ## <a name="example"></a>Ejemplo  
   
@@ -57,5 +58,5 @@ pEnum->Next( 1, &pSym, &celt );
   
 ## <a name="see-also"></a>Vea también  
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
- [Idiasession:: Findlinesbylinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
+ [Findlinesbylinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

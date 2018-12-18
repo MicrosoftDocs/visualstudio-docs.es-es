@@ -21,11 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc467b859e3a02282c6d6165dc263931900c5bc2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7847f8b1dbea5ac5dbd2f9c1ed492c9172e539b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895475"
 ---
 # <a name="choose-element-msbuild"></a>Elemento Choose (MSBuild)
 Evalúa los elementos secundarios para seleccionar un conjunto de elementos `ItemGroup` o `PropertyGroup` para evaluar.  
@@ -41,7 +42,7 @@ Evalúa los elementos secundarios para seleccionar un conjunto de elementos `Ite
 
 ## <a name="syntax"></a>Sintaxis  
 
-```  
+```xml  
 <Choose>  
     <When Condition="'StringA'=='StringB'">... </When>  
     <Otherwise>... </Otherwise>  
@@ -56,21 +57,21 @@ Evalúa los elementos secundarios para seleccionar un conjunto de elementos `Ite
 
 ### <a name="child-elements"></a>Elementos secundarios  
 
-|Elemento|Description|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
 |[Otherwise](../msbuild/otherwise-element-msbuild.md)|Elemento opcional.<br /><br /> Especifica el bloque de código `PropertyGroup` y los elementos `ItemGroup` que se evaluarán si las condiciones de todos los elementos `When` se evalúan como `false`. Puede haber un elemento `Otherwise` o ninguno en un elemento `Choose` y debe ser el último elemento.|  
 |[When](../msbuild/when-element-msbuild.md)|Elemento necesario.<br /><br /> Especifica un posible bloque de código que el elemento `Choose` puede seleccionar. Puede haber uno o más elementos `When` en un elemento `Choose`.|  
 
 ### <a name="parent-elements"></a>Elementos primarios  
 
-|Elemento|Description|  
-|-------------|-----------------|  
-|[Otherwise](../msbuild/otherwise-element-msbuild.md)|Especifica el bloque de código que se ejecutará si las condiciones de todos los elementos `When` se evalúan como `false`.|  
-|[Proyecto](../msbuild/project-element-msbuild.md)|Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .|  
-|[When](../msbuild/when-element-msbuild.md)|Especifica un posible bloque de código que el elemento `Choose` puede seleccionar.|  
+| Elemento | Descripción |
+| - | - |
+| [Otherwise](../msbuild/otherwise-element-msbuild.md) | Especifica el bloque de código que se ejecutará si las condiciones de todos los elementos `When` se evalúan como `false`. |
+| [Proyecto](../msbuild/project-element-msbuild.md) | Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [When](../msbuild/when-element-msbuild.md) | Especifica un posible bloque de código que el elemento `Choose` puede seleccionar. |
 
 ## <a name="remarks"></a>Comentarios  
- Los elementos `Choose`, `When` y `Otherwise` se utilizan juntos para ofrecer un modo de seleccionar una sección de código para que ejecute una serie de alternativas posibles. Para obtener más información, consulte la sección [Construcciones condicionales](../msbuild/msbuild-conditional-constructs.md).  
+ Los elementos `Choose`, `When` y `Otherwise` se utilizan juntos para ofrecer un modo de seleccionar una sección de código para que ejecute una serie de alternativas posibles. Para más información, consulte la sección [Construcciones condicionales](../msbuild/msbuild-conditional-constructs.md).  
 
 ## <a name="example"></a>Ejemplo  
  En el proyecto siguiente se utiliza el elemento `Choose` para seleccionar el conjunto de valores de propiedad de los elementos `When` que desea establecer. Si los atributos `Condition` de ambos elementos `When` se evalúan como `false`, se establecen los valores de propiedad del elemento `Otherwise`.  
@@ -122,4 +123,4 @@ Evalúa los elementos secundarios para seleccionar un conjunto de elementos `Ite
 
 ## <a name="see-also"></a>Vea también  
  [Construcciones condicionales](../msbuild/msbuild-conditional-constructs.md)   
- [Referencia de esquemas de archivo del proyecto](../msbuild/msbuild-project-file-schema-reference.md)
+ [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)

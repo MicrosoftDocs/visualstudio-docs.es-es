@@ -1,12 +1,9 @@
 ---
-title: "Cómo: Crear y editar configuraciones | Microsoft Docs"
-ms.custom: 
+title: 'Cómo: Crear y editar configuraciones'
 ms.date: 06/21/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-compile
+ms.topic: conceptual
 helpviewer_keywords:
 - solution build configurations, editing
 - build configurations, creating
@@ -18,114 +15,117 @@ helpviewer_keywords:
 - project build configurations, creating
 - project build configurations, editing
 ms.assetid: 19be121c-148e-4ece-bbfc-d20b08cfc3f7
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7ca6dfe8132603b06b9bd08655eaff3861e4700d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2d3f6b271eb6b9b663e30953fa597fb7d8cec6ac
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348531"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Cómo: Crear y editar configuraciones
-Se pueden crear configuraciones de compilación para una solución. Por ejemplo, se puede configurar una compilación de depuración que los evaluadores pueden utilizar para buscar y corregir problemas, y se pueden configurar diferentes tipos de compilaciones que se pueden distribuir a distintos clientes.  
 
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+Se pueden crear configuraciones de compilación para una solución. Por ejemplo, se puede configurar una compilación de depuración que los evaluadores pueden utilizar para buscar y corregir problemas, y se pueden configurar diferentes tipos de compilaciones que se pueden distribuir a distintos clientes.
 
-## <a name="creating-build-configurations"></a>Crear configuraciones de compilación  
- Puede usar el cuadro de diálogo **Administrador de configuración** para seleccionar o modificar configuraciones de compilación existentes, o para crear configuraciones nuevas.  
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Crear y editar configuraciones en Visual Studio para Mac](/visualstudio/mac/create-and-edit-configurations).
 
-#### <a name="to-open-the-configuration-manager-dialog-box"></a>Para abrir el cuadro de diálogo Administrador de configuración  
+## <a name="create-build-configurations"></a>Crear configuraciones de compilación
 
--   En el **Explorador de soluciones**, abra el menú contextual de la solución y, después, pulse **Administrador de configuración**.  
+Puede usar el cuadro de diálogo **Administrador de configuración** para seleccionar o modificar configuraciones de compilación existentes, o para crear configuraciones nuevas.
 
-    > [!NOTE]
-    >  Si el comando **Administrador de configuración** no aparece en el menú contextual, busque bajo el menú **Compilar** en la barra de menús. Si tampoco aparece allí, en la barra de menús, pulse **Herramientas**, **Opciones**; después, en el panel izquierdo del cuadro de diálogo **Opciones**, expanda **Proyectos y soluciones**, **General** y, en el panel derecho, active la casilla **Mostrar configuraciones de compilación avanzadas**.  
+Para abrir el cuadro de diálogo **Administrador de configuración**, vaya al **Explorador de soluciones**, abra el menú contextual de la solución y, después, pulse **Administrador de configuración**.
 
-     En el cuadro de diálogo **Administrador de configuración**, puede usar la lista desplegable **Configuración de soluciones activas** para seleccionar una configuración de compilación para toda la solución, modificar una configuración existente o crear una nueva configuración. Puede usar la lista desplegable **Plataforma de soluciones activas** para seleccionar la plataforma de destino de la configuración, modificar una plataforma existente o agregar una nueva plataforma. El panel **Contextos del proyecto** enumera los proyectos de la solución. Para cada proyecto, puede seleccionar una configuración y una plataforma específicas del proyecto, modificar las existentes, o crear una nueva configuración o agregar una nueva plataforma. También puede activar casillas que indican si cada proyecto se incluye o no cuando se utiliza la configuración para toda la solución al compilar o implementar la solución.  
+> [!NOTE]
+> Si el comando **Administrador de configuración** no aparece en el menú contextual, busque bajo el menú **Compilar** en la barra de menús. Si tampoco aparece allí, en la barra de menús, pulse **Herramientas** > **Opciones**; después, en el panel izquierdo del cuadro de diálogo **Opciones**, expanda **Proyectos y soluciones** > **General** y, en el panel derecho, active la casilla **Mostrar configuraciones de compilación avanzadas**.
 
- Después de establecer las configuraciones deseadas, puede establecer las propiedades del proyecto adecuadas para esas configuraciones.  
+En el cuadro de diálogo **Administrador de configuración**, puede usar la lista desplegable **Configuración de soluciones activas** para seleccionar una configuración de compilación para toda la solución, modificar una configuración existente o crear una nueva configuración. Puede usar la lista desplegable **Plataforma de soluciones activas** para seleccionar la plataforma de destino de la configuración, modificar una plataforma existente o agregar una nueva plataforma. El panel **Contextos del proyecto** enumera los proyectos de la solución. Para cada proyecto, puede seleccionar una configuración y una plataforma específicas del proyecto, modificar las existentes, o crear una nueva configuración o agregar una nueva plataforma. También puede activar casillas que indican si cada proyecto se incluye o no cuando se utiliza la configuración para toda la solución al compilar o implementar la solución.
 
-#### <a name="to-set-properties-based-on-configurations"></a>Para establecer propiedades basadas en configuraciones  
+ Después de establecer las configuraciones deseadas, puede establecer las propiedades del proyecto adecuadas para esas configuraciones.
 
--   En el **Explorador de soluciones**, abra el menú contextual de un proyecto y, después, pulse **Propiedades**.  
+### <a name="to-set-properties-based-on-configurations"></a>Para establecer propiedades basadas en configuraciones
 
-     Se abre la ventana **Páginas de propiedades**.  
+-   En el **Explorador de soluciones**, abra el menú contextual de un proyecto y, después, pulse **Propiedades**.
 
-     Puede establecer propiedades para las configuraciones. Por ejemplo, para una configuración de Release, puede especificar que se optimice el código cuando se compile la solución, y para una configuración de Debug, puede especificar que se incluya el símbolo de compilación condicional `DEBUG`. Para obtener más información sobre la configuración de la página propiedades, vea [Administrar propiedades de soluciones y proyectos](../ide/managing-project-and-solution-properties.md).  
+     Se abre la ventana **Páginas de propiedades**.
 
-## <a name="creating-and-modifying-project-configurations"></a>Crear y modificar configuraciones de proyecto  
+     Puede establecer propiedades para las configuraciones. Por ejemplo, para una configuración de Release, puede especificar que se optimice el código cuando se compile la solución, y para una configuración de Debug, puede especificar que se incluya el símbolo de compilación condicional `DEBUG`. Para obtener más información sobre la configuración de la página propiedades, vea [Administrar propiedades de soluciones y proyectos](../ide/managing-project-and-solution-properties.md).
 
-#### <a name="to-create-a-project-configuration"></a>Para crear una configuración de proyecto  
+## <a name="create-and-modify-project-configurations"></a>Crear y modificar configuraciones de proyecto
 
-1.  Abra el cuadro de diálogo **Administrador de configuración**.  
+### <a name="to-create-a-project-configuration"></a>Para crear una configuración de proyecto
 
-2.  Seleccione un proyecto en la columna **Proyecto**.  
+1.  Abra el cuadro de diálogo **Administrador de configuración**.
 
-3.  En la lista desplegable **Configuración** de ese proyecto, pulse **Nueva**.  
+2.  Seleccione un proyecto en la columna **Proyecto**.
 
-     Se abre el cuadro de diálogo **Nueva configuración del proyecto**.  
+3.  En la lista desplegable **Configuración** de ese proyecto, pulse **Nueva**.
 
-4.  En el cuadro **Nombre**, escriba un nombre para la nueva configuración.  
+     Se abre el cuadro de diálogo **Nueva configuración del proyecto**.
 
-5.  Para usar las opciones de propiedad de una configuración de proyecto existente, en la lista desplegable **Copiar configuración de**, pulse una configuración.  
+4.  En el cuadro **Nombre**, escriba un nombre para la nueva configuración.
 
-6.  Para crear una configuración para toda la solución al mismo tiempo, active la casilla **Crear nueva configuración de solución**.  
+5.  Para usar las opciones de propiedad de una configuración de proyecto existente, en la lista desplegable **Copiar configuración de**, pulse una configuración.
 
-#### <a name="to-rename-a-project-configuration"></a>Para cambiar el nombre de una configuración de proyecto  
+6.  Para crear una configuración para toda la solución al mismo tiempo, active la casilla **Crear nueva configuración de solución**.
 
-1.  Abra el cuadro de diálogo **Administrador de configuración**.  
+### <a name="to-rename-a-project-configuration"></a>Para cambiar el nombre de una configuración de proyecto
 
-2.  En la columna **Proyecto**, seleccione el proyecto cuyo nombre de configuración del proyecto quiere cambiar.  
+1.  Abra el cuadro de diálogo **Administrador de configuración**.
 
-3.  En la lista desplegable **Configuración** de ese proyecto, pulse **Editar**.  
+2.  En la columna **Proyecto**, seleccione el proyecto cuyo nombre de configuración del proyecto quiere cambiar.
 
-     Se abre el cuadro de diálogo **Editar configuraciones del proyecto**.  
+3.  En la lista desplegable **Configuración** de ese proyecto, pulse **Editar**.
 
-4.  Seleccione el nombre de la configuración del proyecto que desea cambiar.  
+     Se abre el cuadro de diálogo **Editar configuraciones del proyecto**.
 
-5.  Seleccione **Cambiar nombre** y escriba un nuevo nombre.  
+4.  Seleccione el nombre de la configuración del proyecto que desea cambiar.
 
-## <a name="creating-and-modifying-solution-wide-build-configurations"></a>Crear y modificar configuraciones de compilación para toda la solución  
+5.  Seleccione **Cambiar nombre** y escriba un nuevo nombre.
 
-#### <a name="to-create-a-solution-wide-build-configuration"></a>Para crear una configuración de compilación para toda la solución  
+## <a name="create-and-modify-solution-wide-build-configurations"></a>Crear y modificar configuraciones de compilación para toda la solución
 
-1.  Abra el cuadro de diálogo **Administrador de configuración**.  
+### <a name="to-create-a-solution-wide-build-configuration"></a>Para crear una configuración de compilación para toda la solución
 
-2.  En la lista desplegable **Configuración de soluciones activas**, pulse **Nueva**.  
+1.  Abra el cuadro de diálogo **Administrador de configuración**.
 
-     Se abre el cuadro de diálogo **Nueva configuración de la solución**.  
+2.  En la lista desplegable **Configuración de soluciones activas**, pulse **Nueva**.
 
-3.  En el cuadro de texto **Nombre**, escriba el nombre de la nueva configuración.  
+     Se abre el cuadro de diálogo **Nueva configuración de la solución**.
 
-4.  Para usar las opciones de una configuración de solución existente, en la lista desplegable **Copiar configuración de**, pulse una configuración.  
+3.  En el cuadro de texto **Nombre**, escriba el nombre de la nueva configuración.
 
-5.  Si quiere crear configuraciones de proyecto al mismo tiempo, active la casilla **Crear nuevas configuraciones de proyecto**.  
+4.  Para usar las opciones de una configuración de solución existente, en la lista desplegable **Copiar configuración de**, pulse una configuración.
 
-#### <a name="to-rename-a-solution-wide-build-configuration"></a>Para cambiar el nombre de una configuración de compilación para toda la solución  
+5.  Si quiere crear configuraciones de proyecto al mismo tiempo, active la casilla **Crear nuevas configuraciones de proyecto**.
 
-1.  Abra el cuadro de diálogo **Administrador de configuración**.  
+### <a name="to-rename-a-solution-wide-build-configuration"></a>Para cambiar el nombre de una configuración de compilación para toda la solución
 
-2.  En la lista desplegable **Configuración de soluciones activas**, pulse **Editar**.  
+1.  Abra el cuadro de diálogo **Administrador de configuración**.
 
-     Se abre el cuadro de diálogo **Editar configuraciones de soluciones**.  
+2.  En la lista desplegable **Configuración de soluciones activas**, pulse **Editar**.
 
-3.  Seleccione el nombre de la configuración de soluciones que desea cambiar.  
+     Se abre el cuadro de diálogo **Editar configuraciones de soluciones**.
 
-4.  Seleccione **Cambiar nombre** y escriba un nuevo nombre.  
+3.  Seleccione el nombre de la configuración de soluciones que desea cambiar.
 
-#### <a name="to-modify-a-solution-wide-build-configuration"></a>Para modificar una configuración de compilación en toda la solución  
+4.  Seleccione **Cambiar nombre** y escriba un nuevo nombre.
 
-1.  Abra el cuadro de diálogo **Administrador de configuración**.  
+### <a name="to-modify-a-solution-wide-build-configuration"></a>Para modificar una configuración de compilación en toda la solución
 
-2.  En la lista desplegable **Configuración de soluciones activas**, seleccione la configuración que quiera.  
+1.  Abra el cuadro de diálogo **Administrador de configuración**.
 
-3.  En el panel **Contextos del proyecto**, para cada proyecto, seleccione la **Configuración** y la **Plataforma** que quiera, y seleccione si quiere que sea de **Compilación** o **Implementación**.  
+2.  En la lista desplegable **Configuración de soluciones activas**, seleccione la configuración que quiera.
 
-## <a name="see-also"></a>Vea también  
- [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md)   
- [Compilar y limpiar proyectos y soluciones en Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [Administrar propiedades de soluciones y proyectos](managing-project-and-solution-properties.md)
+3.  En el panel **Contextos del proyecto**, seleccione para cada proyecto la **Configuración** y la **Plataforma** que quiera, y seleccione si quiere que sea de **Compilación** o **Implementación**.
 
+## <a name="see-also"></a>Vea también
+
+- [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md)
+- [Compilar y limpiar proyectos y soluciones en Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
+- [Administración de propiedades de soluciones y proyectos](managing-project-and-solution-properties.md)
+- [Crear y editar configuraciones (Visual Studio para Mac)](/visualstudio/mac/create-and-edit-configurations)

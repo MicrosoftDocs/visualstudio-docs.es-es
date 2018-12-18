@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cddeb5800854d0461fbf96c895f64216f01843f6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9fc4281042b34113a17dfde2c94990642f2f98b7
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34690918"
 ---
 # <a name="copy-selection"></a>Copiar selección
 Para copiar la pila de llamadas completa de la ficha Informes, haga clic en **Copiar**. A continuación, puede pegar la pila de llamadas en cualquier programa que admita esa acción.  

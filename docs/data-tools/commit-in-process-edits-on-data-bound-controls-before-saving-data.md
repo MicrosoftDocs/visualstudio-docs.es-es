@@ -16,14 +16,16 @@ ms.assetid: 61af4798-eef7-468c-b229-5e1497febb2f
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a0811ec9338bfb84235679a68d32169435eb57a5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 34cf76adc56078303352bef9f01cef5ba774e2be
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921610"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Confirmar tareas de edición en proceso en controles enlazados a datos antes de guardar datos
 

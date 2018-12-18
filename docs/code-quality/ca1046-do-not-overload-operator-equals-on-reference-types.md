@@ -1,6 +1,7 @@
 ---
 title: 'CA1046: No sobrecargar el operador de igualdad en los tipos de referencia'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,13 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90564decd351969ed78f1cca18016454b87c6953
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3f0aeb519fdc22d3fb68812d24979c7aa6c23f85
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551712"
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: No sobrecargar el operador de igualdad en los tipos de referencia
+
 |||
 |-|-|
 |TypeName|DoNotOverrideOperatorEqualsOnReferenceTypes|
@@ -38,27 +41,34 @@ ms.lasthandoff: 04/19/2018
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, quite la implementación del operador de igualdad.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Es seguro suprimir una advertencia de esta regla cuando el tipo de referencia se comporta como un tipo de valor integrado. Si tiene sentido realizar sumas o restas en instancias del tipo, es probablemente sean correcto implementar el operador de igualdad y suprimir la infracción.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ Es seguro suprimir una advertencia de esta regla cuando el tipo de referencia se comporta como un tipo de valor integrado. Si tiene sentido realizar la suma o resta en instancias del tipo, es probablemente sean correcto implementar el operador de igualdad y suprimir la infracción.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra el comportamiento predeterminado al comparar dos referencias.
+ El ejemplo siguiente muestra el comportamiento predeterminado al comparar dos referencias.
 
  [!code-csharp[FxCop.Design.RefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_1.cs)]
 
 ## <a name="example"></a>Ejemplo
- La aplicación siguiente compara algunas referencias.
 
- [!code-csharp[FxCop.Design.TestRefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_2.cs)]
+La aplicación siguiente compara algunas referencias.
 
- Este ejemplo produce el siguiente resultado:
+[!code-csharp[FxCop.Design.TestRefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_2.cs)]
 
- **¿un = nueva (2,2) y b = nueva (2,2) son iguales? ¿Ya no**
-**c y a son igual? ¿Sí**
-**b y a son ==? ¿Ya no**
-**c y a son ==? Sí**
+Este ejemplo produce el siguiente resultado:
+
+```txt
+a = new (2,2) and b = new (2,2) are equal? No
+c and a are equal? Yes
+b and a are == ? No
+c and a are == ? Yes
+```
+
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA1013: El operador de sobrecarga es igual que la suma y resta de sobrecarga](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
+
+[CA1013: El operador de sobrecarga es igual que la suma y resta de sobrecarga](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
 
 ## <a name="see-also"></a>Vea también
- <xref:System.Object.Equals%2A?displayProperty=fullName> [Operadores de igualdad](/dotnet/standard/design-guidelines/equality-operators)
+
+- <xref:System.Object.Equals%2A?displayProperty=fullName>
+- [Operadores de igualdad](/dotnet/standard/design-guidelines/equality-operators)

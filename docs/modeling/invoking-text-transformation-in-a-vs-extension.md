@@ -7,15 +7,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6fc7190fc8cf2661dd64bbcb6f335d0e63a04e29
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 01a2b4863736b22e08cf2075e6402d836e9cc671
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926805"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Invocar la transformación de texto en una extensión de VS
-Si está escribiendo una extensión de Visual Studio como un comando de menú o [lenguaje específico de dominio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), puede utilizar el servicio de plantillas de texto para transformar plantillas de texto. Obtenga el servicio <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> y conviértalo a <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.
+Si está escribiendo una extensión de Visual Studio como un comando de menú o [lenguajes específicos de dominio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), puede usar el servicio de plantillas de texto para transformar plantillas de texto. Obtenga el servicio <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> y conviértalo a <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.
 
 ## <a name="getting-the-text-templating-service"></a>Obtener el servicio de plantillas de texto
 
@@ -31,7 +33,6 @@ ITextTemplating t4 = serviceProvider.GetService(typeof(STextTemplating)) as ITex
 
 // Process a text template:
 string result = t4.ProcessTemplate(filePath, System.IO.File.ReadAllText(filePath));
-
 ```
 
 ## <a name="passing-parameters-to-the-template"></a>Pasar parámetros a la plantilla
@@ -72,11 +73,10 @@ string result = t4.ProcessTemplate("",
 
 // This test code yields a result similar to the following line:
 //     Test: Hello    07/06/2010 12:37:45    42
-
 ```
 
 ## <a name="error-reporting-and-the-output-directive"></a>Informe de errores y la directiva de salida
- Los errores que surgen durante el proceso se mostrarán en la ventana de error de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Además, los errores se pueden notificar especificando una devolución de llamada que implementa <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplatingCallback>.
+ Los errores que surgen durante el procesamiento se mostrará en la ventana de errores de Visual Studio. Además, los errores se pueden notificar especificando una devolución de llamada que implementa <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplatingCallback>.
 
  Si desea escribir la cadena de resultado a un archivo, puede que desee conocer la extensión de archivo y codificación que se han especificado en la directiva `<#@output#>` de la plantilla. Esta información también se pasará a la devolución de llamada. Para obtener más información, consulte [directiva de salida T4](../modeling/t4-output-directive.md).
 
@@ -118,7 +118,6 @@ class T4Callback : ITextTemplatingCallback
   public void SetOutputEncoding(Encoding encoding, bool fromOutputDirective)
   { outputEncoding = encoding; }
 }
-
 ```
 
  El código se puede probar con un archivo de plantilla similar al siguiente:
@@ -130,14 +129,14 @@ class T4Callback : ITextTemplatingCallback
 Sample text.
 ```
 
- La advertencia del compilador aparecerá en la ventana de error de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y también generará una llamada a `ErrorCallback`.
+ La advertencia del compilador aparecerá en la ventana de errores de Visual Studio y también generará una llamada a `ErrorCallback`.
 
 ## <a name="reference-parameters"></a>Parámetros de referencia
  Puede pasar valores de una plantilla de texto mediante una clase de parámetro que se deriva de <xref:System.MarshalByRefObject>.
 
 ## <a name="related-topics"></a>Temas relacionados
- Para generar texto en una plantilla de texto preprocesada: llame a la `TransformText()` método de la clase generada. Para obtener más información, consulte [tiempo de ejecución de generación de texto con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Para generar texto en una plantilla de texto preprocesada: llamar a la `TransformText()` método de la clase generada. Para obtener más información, consulte [generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Para generar el texto fuera de un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensión: definir un host personalizado. Para obtener más información, consulte [de procesamiento de plantillas de texto mediante un Host personalizado](../modeling/processing-text-templates-by-using-a-custom-host.md).
+ Para generar texto fuera de una extensión de Visual Studio: definir un host personalizado. Para obtener más información, consulte [de procesamiento de plantillas de texto mediante el uso de un Host personalizado](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
- Para generar código fuente que más adelante puede compilar y ejecutar: llame a la `t4.PreprocessTemplate()` método <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.
+ Para generar código fuente que más adelante se compila y ejecuta: llamar a la `t4.PreprocessTemplate()` método <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.

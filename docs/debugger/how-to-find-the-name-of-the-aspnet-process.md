@@ -1,7 +1,7 @@
 ---
-title: 'Cómo: buscar el nombre del proceso de ASP.NET | Documentos de Microsoft'
+title: Busque el proceso ASP.NET en ejecución | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -18,40 +18,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 899860baf5461eb798341cebf775ccde488915b7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6bbb2aed6f7218170e26b736d82ba0f3d88b2fae
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751768"
 ---
-# <a name="how-to-find-the-name-of-the-aspnet-process"></a>Cómo: Buscar el nombre de un proceso de ASP.NET
-Para establecer una asociación a una aplicación [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] que se está ejecutando, es preciso conocer el nombre del proceso [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
+# <a name="find-the-name-of-the-aspnet-process"></a>Buscar el nombre de un proceso de ASP.NET
 
--   Si está ejecutando ASP.NET Core en IIS o en IISExpress, el nombre del proceso es dotnet.exe.
+Para depurar un ejecución [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicación, debe asociar el depurador de Visual Studio para el [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] procesos por nombre.
 
--   Si está ejecutando ASP.NET en IIS 6.0 más adelante, el nombre es w3wp.exe.  
-  
--   Si está ejecutando ASP.NET en una versión anterior de IIS, el nombre es aspnet_wp.exe.
+**Para averiguar qué proceso se está ejecutando una aplicación ASP.NET:**
 
--   Si está ejecutando ASP.NET en IISExpress, el nombre es iisexpress.exe.
-  
-Para las aplicaciones compiladas con versiones de Visual Studio anteriores a Visual Studio 2012, la [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] código puede residir en el sistema de archivos y ejecutarse en el servidor de pruebas WebDev.WebServer.exe o WebDev.WebServer40.exe. En ese caso, debe adjuntar a WebDev.WebServer.exe o WebDev.WebServer40.exe en lugar de la [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] proceso. Este escenario sólo se aplica a la depuración local.
-  
-Las aplicaciones ASP anteriores se ejecutan dentro del proceso de IIS inetinfo.exe cuando se ejecutan en proceso.  
+1. Con la aplicación en ejecución en Visual Studio, seleccione **depurar** > **asociar al proceso**. 
+   
+1. En el **asociar al proceso** cuadro de diálogo, escriba las primeras letras del proceso de los nombres de la lista siguiente, o bien escribirlos en el cuadro de búsqueda. Lo que se está ejecutando es la ejecución de la aplicación ASP.NET. Adjuntar al proceso para depurar la aplicación. 
+   
+    - *w3wp.exe* es IIS 6.0 y versiones posteriores. 
+    - *aspnet_wp.exe* es versiones anteriores de IIS.
+    - *iisexpress.exe* es IISExpress.
+    - *dotnet.exe* es ASP.NET Core.
+    - *Inetinfo.exe* está en proceso de ejecutar las aplicaciones ASP anteriores. 
 
-### <a name="to-determine-the-iis-version-under-which-the-application-is-running"></a>Para determinar la versión de IIS en la que se está ejecutando la aplicación  
+>[!NOTE]
+>Visual Studio 2012 y anterior [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] código puede estar en el sistema de archivos y ejecutar en el servidor de prueba *WebDev.WebServer.exe* o *WebDev.WebServer40.exe*. En este caso, para la depuración local, adjuntar a *WebDev.WebServer.exe* o *WebDev.WebServer40.exe* en lugar de la [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] proceso. 
 
-1.  Asegúrese de que se ejecuta la aplicación y, a continuación, desde Visual Studio, use la [adjuntar al proceso](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md) comando.
+**Vea también:**
 
-2.  Escriba la primera letra de un nombre de proceso como w3wp.exe para encontrar rápidamente los procesos en el **procesos disponibles** lista.
-
-    Los procesos disponibles en la lista en este tema indican qué versiones de IIS están disponibles y qué proceso está ejecutando la aplicación.
-
-    > [!NOTE]
-    > A partir de 2017 de Visual Studio, puede usar el cuadro de búsqueda para buscar el nombre del proceso.
-  
-## <a name="see-also"></a>Vea también  
  [Adjuntar a un proceso en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
- [Requisitos previos para la depuración de aplicaciones Web remota](../debugger/prerequistes-for-remote-debugging-web-applications.md)   
+ [Requisitos previos para la depuración remota de aplicaciones web](../debugger/prerequistes-for-remote-debugging-web-applications.md)   
  [Requisitos del sistema](../debugger/aspnet-debugging-system-requirements.md)   
- [Depurar aplicaciones ASP.](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
+ [Depuración de aplicaciones de ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

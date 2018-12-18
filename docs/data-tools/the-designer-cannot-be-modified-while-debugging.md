@@ -6,22 +6,24 @@ ms.assetid: 487dafe4-d57c-4be1-9e3a-bb0a8699b2fa
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d8b727b7b3da3556ec80e485f8589d37d91d3f3b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1bed9629c40d4d7b7e93ccd250474ea90b44ab7c
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174106"
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>No se puede modificar el diseñador durante la depuración
 
-Este mensaje aparece cuando se intentan modificar elementos en Object Relational Designer y la aplicación se está ejecutando en modo de depuración. Cuando la aplicación se está ejecutando en modo de depuración, Object Relational Designer es de solo lectura.
+Este mensaje aparece cuando se realiza un intento para modificar los elementos en el **Object Relational Designer** cuando la aplicación se ejecuta en modo de depuración. Cuando la aplicación se ejecuta en modo de depuración, el **Object Relational Designer** es de solo lectura.
 
-Para corregir este error, seleccione **Detener depuración** en el **depurar** menú. La aplicación detiene la depuración y se pueden modificar los elementos en Object Relational Designer.
+Para corregir este error, seleccione **Detener depuración** en el **depurar** menú. Detiene la depuración de la aplicación, y puede modificar los elementos de la **Object Relational Designer**.
 
 ## <a name="see-also"></a>Vea también
 
 - [Mensajes de Object Relational Designer](../data-tools/o-r-designer-messages.md)
-- [LINQ to SQL de las herramientas en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

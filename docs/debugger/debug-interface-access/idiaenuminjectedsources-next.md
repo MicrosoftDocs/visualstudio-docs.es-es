@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenuminjectedsources:: Next | Documentos de Microsoft'
+title: Idiaenuminjectedsources | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f199ffcc61f11d14c010e2eea3626e0016272826
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 42b0e76bea62e27d0afe12b8c16eb4e6775edd61
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845093"
 ---
 # <a name="idiaenuminjectedsourcesnext"></a>IDiaEnumInjectedSources::Next
 Recupera un número especificado de orígenes insertados en la secuencia de enumeración.  
@@ -44,7 +45,7 @@ HRESULT Next (
  [out] Devuelve el número de orígenes insertados en el enumerador capturado.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no hay más insertado orígenes. De lo contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`. Devuelve `S_FALSE` si no hay origen insertado no hay más. De lo contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)   

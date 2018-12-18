@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: depurar código ensamblador en línea | Documentos de Microsoft'
+title: 'Cómo: depurar código ensamblador en línea | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -21,26 +21,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d52f0d27c0ef63eff8c4cc2b36a9a35b2cbfcf8a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 88865df3dcf507cc9a6f6be13e7ab1ff55877c25
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388317"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>Cómo: Depurar código ensamblador en línea
+
 > [!NOTE]
->  Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en la Ayuda, dependiendo de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
-  
- El depurador proporciona dos ventanas para depurar código de ensamblado en línea, el **desensamblado** ventana y **registra** ventana.  
-  
-## <a name="procedure"></a>Procedimiento  
-  
-#### <a name="to-debug-inline-assembly-code"></a>Para depurar código de ensamblado en línea  
-  
-1.  Use la **desensamblado** ventana para ver las instrucciones de ensamblado.  
-  
-2.  Use la **registra** ventana para ver el contenido de los registros.  
-  
-## <a name="see-also"></a>Vea también  
- [Seguridad del depurador](../debugger/debugger-security.md)   
- [Depuración de código nativo](../debugger/debugging-native-code.md)
+> Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en la Ayuda, dependiendo de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para obtener más información, consulte [Restablecer configuración](../ide/environment-settings.md#reset-settings).
+
+El depurador proporciona dos ventanas para depurar código de ensamblado en línea: la ventana Desensamblado **y la ventana Registros**.
+
+## <a name="debug-inline-assembly-code"></a>Depurar código de ensamblado en línea
+
+1.  Utilice la ventana Desensamblado** para ver las instrucciones de ensamblado.
+
+2.  Utilice la ventana Registros** para ver el contenido de los registros.
+
+## <a name="see-also"></a>Vea también
+
+- [Seguridad del depurador](../debugger/debugger-security.md)
+- [Depuración de código nativo](../debugger/debugging-native-code.md)

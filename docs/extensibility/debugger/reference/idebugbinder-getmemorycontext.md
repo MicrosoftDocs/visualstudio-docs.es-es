@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18049e9f0800cc5c2bc0b53e53915a96eebb1718
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a94098a6645ef353ff3e18b17911c05d495fe8ae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905446"
 ---
 # <a name="idebugbindergetmemorycontext"></a>IDebugBinder::GetMemoryContext
 Este método convierte una ubicación del objeto o una dirección de memoria en un contexto de la memoria.  
@@ -53,7 +54,7 @@ int GetMemoryContext(
  [out] Devuelve el [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) interfaz que representa la dirección del objeto o la dirección en la memoria.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   

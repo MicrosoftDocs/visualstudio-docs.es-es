@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNodeAttach2::OnAttach | Documentos de Microsoft
+title: IDebugProgramNodeAttach2::OnAttach | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c7c7e6f7ef640b192b7ed8c57ac87375a5ad189
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c30ad0216944ec7c5c707b17df585a689a42b396
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936145"
 ---
 # <a name="idebugprogramnodeattach2onattach"></a>IDebugProgramNodeAttach2::OnAttach
-Se une al programa o pasa el proceso de conexión para el [adjuntar](../../../extensibility/debugger/reference/idebugengine2-attach.md) método.  
+Adjunta el programa asociado o se aplaza el proceso de conexión para el [adjuntar](../../../extensibility/debugger/reference/idebugengine2-attach.md) método.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -43,10 +44,10 @@ int OnAttach(
  [in] `GUID` para asignar al programa.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si la [adjuntar](../../../extensibility/debugger/reference/idebugengine2-attach.md) método no debe llamarse. De lo contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`. Devuelve `S_FALSE` si el [adjuntar](../../../extensibility/debugger/reference/idebugengine2-attach.md) no se debe llamar al método. De lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método se llama durante el proceso de conexión, antes del [adjuntar](../../../extensibility/debugger/reference/idebugengine2-attach.md) se llama al método. El `OnAttach` método puede realizar el proceso de conexión propia (en este caso, este método devuelve `S_FALSE`) o aplazar el proceso de conexión para el `IDebugEngine2::Attach` método (el `OnAttach` método devuelve `S_OK`). En cualquier caso, el `OnAttach` método puede definir la `GUID` del programa que se está depurando el determinado `GUID`.  
+ Este método se llama durante el proceso de asociación, antes del [adjuntar](../../../extensibility/debugger/reference/idebugengine2-attach.md) se llama al método. El `OnAttach` método puede realizar el proceso de conexión propia (en este caso, se devuelve este método `S_FALSE`) o aplazar el proceso de conexión para el `IDebugEngine2::Attach` método (el `OnAttach` devuelve del método `S_OK`). En cualquier caso, el `OnAttach` método puede establecer el `GUID` del programa que se está depurando el determinado `GUID`.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)   

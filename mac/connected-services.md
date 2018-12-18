@@ -1,16 +1,16 @@
 ---
-title: Servicios conectados en Visual Studio para Mac | Microsoft Docs
+title: Servicios conectados
 description: Agregar almacenamiento de datos de Azure, autenticación y notificaciones de inserción a aplicaciones móviles desde Visual Studio para Mac
-ms.prod: xamarin
 ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
-author: asb3993
-ms.author: amburns
-ms.date: 04/04/2018
-ms.openlocfilehash: cff322e25e19179ae7da79585d8880ce7565936a
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+author: conceptdev
+ms.author: crdun
+ms.date: 11/06/2018
+ms.openlocfilehash: ada47aa3d0cb0d9917404efc2775b843223c6e86
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948951"
 ---
 # <a name="connected-services-walkthrough"></a>Tutorial de Servicios conectados
 
@@ -18,8 +18,7 @@ El flujo de trabajo de Servicios conectados integra el flujo de trabajo de Azure
 
 En este tutorial se muestra cómo agregar un servicio back-end de Azure, que ofrece almacenamiento de datos en la nube, autenticación y notificaciones de inserción a una aplicación multiplataforma de biblioteca de clases portables (PCL) de Xamarin.Forms.
 
-
-1.  Para comenzar, haga doble clic en el nodo **Servicios conectados** de la solución, de manera que se presentará la **Galería de servicios**.
+1. Para comenzar, haga doble clic en el nodo **Servicios conectados** de la solución, lo que abre la **Galería de servicios**.
   Se trata de una lista de todos los servicios disponibles para el tipo de aplicación. Haga clic en un servicio (como **Back-end móvil con Azure App Service**) para seleccionarlo.
 
     [![Nodo de Servicios conectados de Visual Studio para Mac](media/connected-services-image001-sml.png "Nodo de Servicios conectados de Visual Studio para Mac")](media/connected-services-image001.png#lightbox)
@@ -68,7 +67,11 @@ Un servicio nuevo necesita los parámetros siguientes:
 
 -   **Nombre del servicio de aplicaciones**: nombre o identificador único del plan
 -   **Suscripción**: la suscripción que le gustaría utilizar para pagar el servicio
--   **Grupo de recursos**: una forma de organizar todos los recursos de Azure para un proyecto. Hay la opción de usar uno existente o crear uno nuevo. Si se trata de su primer servicio de Azure, cree uno nuevo.
+-   **Grupo de recursos**: forma de organizar todos los recursos de Azure de un proyecto. Hay la opción de usar uno existente o crear uno nuevo. Si se trata de su primer servicio de Azure, cree uno nuevo.
 -   **Plan del servicio**: determina la ubicación y el coste de todos los recursos que lo utilizan. Hay la opción de usar uno existente o crear uno nuevo. Si se trata de su primer servicio de Azure, utilice el predeterminado o cree uno nuevo en el nivel libre (F1).
 
-Consulte la [Documentación de Azure App Service](https://azure.microsoft.com/documentation/learning-paths/appservice-mobileapps/) para obtener más información.
+Visite la [documentación de las aplicaciones móviles](/azure/app-service-mobile/) para obtener más información.
+
+## <a name="see-also"></a>Vea también
+
+- [Servicios conectados (Visual Studio en Windows)](/visualstudio/azure/vs-azure-tools-connected-services-storage)

@@ -1,11 +1,11 @@
 ---
 title: IRemoteDebugApplicationThread::EnumStackFrames | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IRemoteDebugApplicationThread.EnumStackFrames
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IRemoteDebugApplicationThread::EnumStackFrames
 ms.assetid: 605ce83d-43d2-47ea-b066-ec8f0da50ca6
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24729015"
 ---
 # <a name="iremotedebugapplicationthreadenumstackframes"></a>IRemoteDebugApplicationThread::EnumStackFrames
 Devuelve un enumerador para los marcos de pila asociada a este subproceso.  

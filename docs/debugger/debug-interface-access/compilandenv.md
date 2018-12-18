@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457701"
 ---
 # <a name="compilandenv"></a>CompilandEnv
 El compilador puede incluir variables de entorno adicionales con símbolos. Hay un `SymTagCompilandEnv` símbolo para cada una de estas variables.  

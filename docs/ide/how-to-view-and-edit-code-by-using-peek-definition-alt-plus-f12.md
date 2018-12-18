@@ -1,21 +1,20 @@
 ---
-title: "Uso de Ver la definición en Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Uso de Ver la definición en Visual Studio
 ms.date: 01/10/2018
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5a7465b8432d00df83638dbfa98a36cf8dee469a
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c64f271f041c28dc621ed85a8cd9d79c36caa3dd
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746720"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Cómo: Ver y editar código mediante Ver la definición (Alt+F12)
 
@@ -31,7 +30,7 @@ Se puede usar **Ver la definición** con código de C#, Visual Basic y C++. En V
 
      En esta ilustración se muestra la ventana **Ver la definición** para un método denominado `Print()`:
 
-     ![Ventana de Peek](../ide/media/peekwindow.png "PeekWindow")
+     ![Ventana de Peek](../ide/media/peekwindow.png)
 
      La ventana de definición aparece debajo de la línea `printer.Print("Hello World!")` en el archivo original. La ventana no oculta ningún código del archivo original. Las líneas que siguen a `printer.Print("Hello World!")` aparecen bajo la ventana de definición.
 
@@ -45,19 +44,19 @@ Se puede usar **Ver la definición** con código de C#, Visual Basic y C++. En V
 
 Si ya tiene abierta una ventana **Ver la definición**, puede llamar a **Ver la definición** de nuevo en el código de esa ventana. Se abre otra ventana de definición. Aparece un conjunto de puntos de ruta de navegación junto a la pestaña de la ventana de definición, que se puede utilizar para navegar entre las ventanas de definición. La información sobre herramientas de cada punto muestra el nombre de archivo y la ruta acceso del archivo de definición que el punto representa.
 
-   ![Ventana de Peek dentro de una ventana de Peek](../ide/media/peekwithinpeek.png "PeekWithinPeek")
+   ![Ventana de Peek dentro de una ventana de Peek](../ide/media/peekwithinpeek.png)
 
 ### <a name="peek-definition-with-multiple-results"></a>Ver la definición con varios resultados
 
 Si usa **Ver la definición** en código que tiene varias definiciones (por ejemplo, una clase parcial), aparece una lista de resultados a la derecha de la vista de definición de código. Puede elegir cualquier resultado de la lista para mostrar su definición.
 
-   ![Ventana de Peek de varios resultados](../ide/media/peekmultiple.png "PeekMultiple")
+   ![Ventana de Peek de varios resultados](../ide/media/peekmultiple.png)
 
 ### <a name="edit-inside-the-peek-definition-window"></a>Edición dentro de la ventana Ver la definición
 
 Cuando empieza a editar dentro de una ventana **Ver la definición**, el archivo que está modificando se abre automáticamente como una pestaña independiente en el editor de código y refleja los cambios que realice. Puede seguir haciendo, deshaciendo y guardando cambios en la ventana **Ver la definición** y la pestaña continuará reflejando esos cambios. Incluso aunque cierre la ventana **Ver la definición** sin guardar los cambios, puede hacer, deshacer y guardar más cambios en la pestaña, retomando el proceso exactamente dónde se quedó en la ventana **Ver la definición**.
 
-   ![Edición dentro de una ventana de Peek](../ide/media/peekedit.png "PeekEdit")
+   ![Edición dentro de una ventana de Peek](../ide/media/peekedit.png)
 
 ### <a name="to-change-options-for-peek-definition"></a>Para cambiar las opciones para ver la definición
 
@@ -67,7 +66,7 @@ Cuando empieza a editar dentro de una ventana **Ver la definición**, el archivo
 
 1. Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Opciones**.
 
-   ![Establecer la opción Ver la definición del clic del mouse](../ide/media/editor_options_peek_view.png)  
+   ![Establecer la opción Ver la definición del clic del mouse](../ide/media/editor_options_peek_view.png)
 
 ### <a name="keyboard-shortcuts-for-peek-definition"></a>Métodos abreviados de teclado para Ver la definición
 
@@ -75,18 +74,18 @@ Puede usar estos métodos abreviados de teclado con la ventana **Ver la definici
 
 |Funcionalidad|Método abreviado de teclado|
 |-------------------|:-----------------------:|
-|Abrir la ventana de definición|Alt+F12|
-|Cerrar la ventana de definición|Esc|
-|Promover la ventana de definición a una pestaña de documento normal|Mayús+Alt+Inicio|
-|Navegar entre ventanas de definición|Ctrl+Alt+- y Ctrl+Alt+=|
-|Navegar entre varios resultados|F8 y Mayús+F8|
-|Alternar entre la ventana del editor de código y la ventana de definición|Mayús+Esc|
+|Abrir la ventana de definición|**Alt**+**F12**|
+|Cerrar la ventana de definición|**Esc**|
+|Promover la ventana de definición a una pestaña de documento normal|**Mayús**+**Alt**+**Inicio**|
+|Navegar entre ventanas de definición|**Ctrl**+**Alt**+**-** y **Ctrl**+**Alt**+**=**|
+|Navegar entre varios resultados|**F8** y **Mayús**+**F8**|
+|Alternar entre la ventana del editor de código y la ventana de definición|**Mayús**+**Esc**|
 
 > [!NOTE]
 > También puede usar los mismos métodos abreviados de teclado para editar código en una ventana **Ver la definición** como haría en otros lugares en Visual Studio.
 
 ## <a name="see-also"></a>Vea también
 
-[Navegar por el código](../ide/navigating-code.md)  
-[Ir a definición y Ver la definición](../ide/go-to-and-peek-definition.md)  
-[Sugerencias de productividad](../ide/productivity-tips-for-visual-studio.md)
+- [Navegación en el código](../ide/navigating-code.md)
+- [Ir a definición y Ver la definición](../ide/go-to-and-peek-definition.md)
+- [Sugerencias de productividad](../ide/productivity-tips-for-visual-studio.md)

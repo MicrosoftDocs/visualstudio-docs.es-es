@@ -1,5 +1,5 @@
 ---
-title: ExtensionData (elemento) | Documentos de Microsoft
+title: ExtensionData (elemento) | Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,54 +15,55 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b579a0221fcba04e2ca0915957f2bdbf60b91d84
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9cb80965385d7d258523dc0caf5291791c5ea09a
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326236"
 ---
-# <a name="extensiondata-element"></a>ExtensionData (Elemento)
+# <a name="extensiondata-element"></a>ExtensionData (elemento)
   Representa una colección de elementos de datos personalizados que están asociados con el elemento de proyecto de SharePoint.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```xml  
 <ExtensionData>  
   <ExtensionDataItem.../>  
 </ExtensionData>  
 ```  
   
-## <a name="attributes-and-elements"></a>Atributos y elementos  
+## <a name="attributes-and-elements"></a>Atributos y elementos
  En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
 ### <a name="attributes"></a>Atributos  
  Ninguno.  
   
-### <a name="child-elements"></a>Elementos secundarios  
+### <a name="child-elements"></a>Elementos secundarios
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
 |[ExtensionDataItem](../sharepoint/extensiondataitem-element.md)|Elemento opcional.<br /><br /> Representa un elemento de datos personalizado que está asociado con el elemento de proyecto de SharePoint, en formato de clave/valor. La clave y el valor deben ser cadenas.|  
   
-### <a name="parent-elements"></a>Elementos primarios  
+### <a name="parent-elements"></a>Elementos primarios
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|[ProjectItem](../sharepoint/projectitem-element.md)|Representa un elemento de proyecto de SharePoint. Este es el elemento raíz necesario del archivo .spdata.|  
+|[ProjectItem](../sharepoint/projectitem-element.md)|Representa un elemento de proyecto de SharePoint. Este elemento, el elemento raíz necesario de la `.spdata` archivo.|  
   
 ## <a name="remarks"></a>Comentarios  
- Al asociar datos personalizados con un elemento de proyecto de SharePoint utilizando la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> propiedad de un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> objeto, Visual Studio guarda los datos a la **ExtensionData** elemento en el archivo .spdata del elemento de proyecto. Para obtener más información, consulte [guardar datos en las extensiones del sistema del proyecto de SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
+ Al asociar datos personalizados a un elemento de proyecto de SharePoint con el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> propiedad de un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> objeto, Visual Studio guarda los datos a la **ExtensionData** elemento en el `.spdata` archivo del proyecto elemento. Para obtener más información, consulte [guardar datos en las extensiones del sistema del proyecto de SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
-## <a name="element-information"></a>Información de elemento  
+## <a name="element-information"></a>Información de elemento
   
 |||  
 |-|-|  
-|**Espacio de nombres**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
-|**Nombre del esquema**|Esquema de elemento de proyecto de SharePoint|  
+|**Espacio de nombres**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>SharePointProjectItemModel/SharePointTools/2010|  
+|**Nombre de esquema**|Esquema de elemento de proyecto de SharePoint|  
 |**Archivo de validación**|ProjectItemModelSchema.xsd|  
 |**Puede estar vacío**|No|  
   
-## <a name="see-also"></a>Vea también  
- [Referencia de esquema de los elementos de proyecto de SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
+## <a name="see-also"></a>Vea también
+ [Referencia de esquemas de elemento de proyecto de SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476421"
 ---
 # <a name="thread-properties-dialog-box"></a>Cuadro de diálogo Propiedades del subproceso
 Utilice este cuadro de diálogo para obtener más información acerca de un subproceso concreto. Para mostrar este cuadro de diálogo, mueva el foco a un [vista de subprocesos](../debugger/threads-view.md) ventana o abra [vista mensajes](../debugger/messages-view.md) y expanda un mensaje. Seleccione cualquier nodo de subproceso en el árbol y después elija **propiedades** desde el **vista** menú.  

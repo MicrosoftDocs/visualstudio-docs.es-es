@@ -1,6 +1,7 @@
 ---
 title: 'CA1820: Comprobar si las cadenas están vacías mediante la longitud de cadena'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,13 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29af0d1ffacf3ec6b327228c242a0c6048e3216a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6c6c25f48ecd628d3d6c32bb235180f91e750cdf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847782"
 ---
 # <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820: Comprobar si las cadenas están vacías mediante la longitud de cadena
+
 |||
 |-|-|
 |TypeName|TestForEmptyStringsUsingStringLength|
@@ -30,20 +33,20 @@ ms.lasthandoff: 04/19/2018
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Motivo
- Una cadena se compara con la cadena vacía utilizando <xref:System.Object.Equals%2A?displayProperty=fullName>.
+ Una cadena se compara con la cadena vacía mediante el uso de <xref:System.Object.Equals%2A?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Comparación de cadenas que usan la <xref:System.String.Length%2A?displayProperty=fullName> propiedad o el <xref:System.String.IsNullOrEmpty%2A?displayProperty=fullName> método es significativamente más rápido que utilizar <xref:System.Object.Equals%2A>. Esto es porque <xref:System.Object.Equals%2A> ejecuta significativamente más instrucciones de MSIL que <xref:System.String.IsNullOrEmpty%2A> o el número de instrucciones ejecutado para recuperar el <xref:System.String.Length%2A> propiedad valor y compararlo con cero.
+ Comparación de cadenas mediante la <xref:System.String.Length%2A?displayProperty=fullName> propiedad o el <xref:System.String.IsNullOrEmpty%2A?displayProperty=fullName> método es significativamente más rápido que utilizar <xref:System.Object.Equals%2A>. Esto es porque <xref:System.Object.Equals%2A> ejecuta significativamente más instrucciones de MSIL que cualquiera de ellos <xref:System.String.IsNullOrEmpty%2A> o el número de instrucciones que se ejecuta para recuperar el <xref:System.String.Length%2A> propiedad de valor y compararlo con cero.
 
- Debe tener en cuenta que <xref:System.Object.Equals%2A> y <xref:System.String.Length%2A> == 0 se comportan de forma diferente para las cadenas nulas. Si se intenta obtener el valor de la <xref:System.String.Length%2A> propiedad en una cadena nula, common language runtime produce una <xref:System.NullReferenceException?displayProperty=fullName>. Si se efectúa una comparación entre una cadena nula y una cadena vacía, common language runtime no inicia una excepción; la comparación devuelve `false`. Comprobación de cadenas nulas no afecta significativamente el rendimiento relativo de estos dos enfoques. Cuando el destino es [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], use el <xref:System.String.IsNullOrEmpty%2A> método. De lo contrario, utilice la <xref:System.String.Length%2A> == comparación siempre que sea posible.
+ Debe tener en cuenta que <xref:System.Object.Equals%2A> y <xref:System.String.Length%2A> == 0 se comportan de manera diferente en cadenas nulas. Si se intenta obtener el valor de la <xref:System.String.Length%2A> propiedad en una cadena nula, common language runtime produce una <xref:System.NullReferenceException?displayProperty=fullName>. Si realiza una comparación entre una cadena nula y una cadena vacía, common language runtime no produce una excepción; la comparación devuelve `false`. Comprobación de null no afecta significativamente el rendimiento relativo de estos dos enfoques. Cuando el destino es [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], utilice el <xref:System.String.IsNullOrEmpty%2A> método. En caso contrario, use el <xref:System.String.Length%2A> == comparación siempre que sea posible.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, cambie la comparación se debe utilizar el <xref:System.String.Length%2A> propiedad y pruebas para la cadena nula. Si el destino es [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], use el <xref:System.String.IsNullOrEmpty%2A> método.
+ Para corregir una infracción de esta regla, cambie la comparación para que use el <xref:System.String.Length%2A> propiedad y prueba para la cadena nula. Si el destino es [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], utilice el <xref:System.String.IsNullOrEmpty%2A> método.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  Es seguro suprimir una advertencia de esta regla si el rendimiento no es un problema.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra las distintas técnicas que se utilizan para buscar una cadena vacía.
+ El ejemplo siguiente muestra las distintas técnicas que se usan para buscar una cadena vacía.
 
  [!code-csharp[FxCop.Performance.StringTest#1](../code-quality/codesnippet/CSharp/ca1820-test-for-empty-strings-using-string-length_1.cs)]

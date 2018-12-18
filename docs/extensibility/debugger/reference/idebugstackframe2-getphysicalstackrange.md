@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be53b50bc21d81c60f7131e8ed437ecb2ac2f16c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a1b46dd9993eb8a7611b4d84211016168d609101
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950386"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
-Obtiene una representación dependientes del equipo del intervalo de direcciones físicas asociado a un marco de pila.  
+Obtiene una representación de dependiente de la máquina del intervalo de direcciones físicas asociado con un marco de pila.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -42,18 +43,18 @@ int GetPhysicalStackRange (
   
 #### <a name="parameters"></a>Parámetros  
  `paddrMin`  
- [out] Devuelve la dirección física más bajo asociada con este marco de pila.  
+ [out] Devuelve el menor dirección física asociada con este marco de pila.  
   
  `paddrMax`  
- [out] Devuelve la dirección física mayor asociada con este marco de pila.  
+ [out] Devuelve la dirección física más alta asociada con este marco de pila.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- La información devuelta por este método es usar el Administrador de sesión de depuración (SDM) para ordenar los marcos de pila.  
+ La información devuelta por este método se utiliza el Administrador de depuración de la sesión (SDM) para ordenar los marcos de pila.  
   
- Se supone que la pila de llamadas crece hacia abajo, es decir, que se agregan nuevos marcos de pila en direcciones de memoria cada vez más inferiores. Una arquitectura en tiempo de ejecución debe proporcionar el intervalo de pila física que coincida con esta suposición.  
+ Se supone que la pila de llamadas crece hacia abajo, es decir, que se han agregado nuevos marcos de pila en las direcciones de memoria cada vez más inferiores. Una arquitectura en tiempo de ejecución debe proporcionar los intervalos de pila física que coinciden con esta suposición.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

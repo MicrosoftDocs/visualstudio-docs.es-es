@@ -14,16 +14,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07519bc95f696d395177056960ea5f42027739a6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1d5b999136eb1d1d268e8fc0a71147a1996940ed
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447848"
 ---
-# <a name="zoom-control-utilization-view"></a>Control de zoom (Vista de utilización)
+# <a name="zoom-control-utilization-view"></a>Control de zoom (vista Utilización)
 El control de zoom le ayuda a acercar el gráfico de utilización de CPU para que pueda centrarse en áreas de especial interés. Este control acerca el centro de la vista. Por lo tanto, debería centrar el área de interés antes de acercarla.  
   
  Puede arrastrar el puntero del mouse en el gráfico de utilización de CPU o un diagrama de actividad de GPU para crear un área resaltada. Al soltar el botón del mouse, la vista acerca el rango seleccionado.  
   
 ## <a name="see-also"></a>Vea también  
- [Vista de uso](../profiling/utilization-view.md)
+ [Vista Utilización](../profiling/utilization-view.md)

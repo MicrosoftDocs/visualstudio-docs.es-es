@@ -1,5 +1,5 @@
 ---
-title: ENTRAR en modo de interrupción | Documentos de Microsoft
+title: Modo de interrupción | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,18 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb601ca4cf00ca2cc811f75ec27ad12bc6be32db
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f9b41a111ecc6118c9bae0ff518d8421a9f2320
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231943"
 ---
-# <a name="entering-break-mode"></a>ENTRAR en modo de interrupción
-A continuación describe el proceso que se produce cuando se encuentra un punto de interrupción después de la ejecución paso a paso en una función, ejecute a la línea de código fuente que tiene el cursor en ella o un punto de interrupción.  
+# <a name="enter-break-mode"></a>Modo de interrupción
+La siguiente información describe el proceso que se produce cuando se encuentra un punto de interrupción después de la ejecución paso a paso en una función, que se ejecutan en la línea de código fuente que tiene el cursor en ella o que se ejecutan en un punto de interrupción.  
   
 ## <a name="break-mode-process"></a>Proceso del modo de interrupción  
   
-1.  El motor de depuración (Alemania) envía [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md), [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md), o cualquier otro evento de detención para hacer que el IDE para entrar en el modo de interrupción.  
+1.  El motor de depuración (DE) envía [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md), [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md), o cualquier otro evento de detención para hacer que el IDE especificar el modo de interrupción.  
   
 2.  El SDM Obtiene la información de la pila de llamadas del subproceso, como se indica a continuación:  
   
@@ -35,13 +36,13 @@ A continuación describe el proceso que se produce cuando se encuentra un punto 
   
     -   [IEnumDebugFrameInfo2::Next](../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)  
   
-    -   [IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) para obtener la información de código de origen  
+    -   [IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) para obtener la información de código fuente  
   
     -   [IDebugDocumentContext2::GetName](../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md) para obtener el nombre de archivo  
   
-    -   [IDebugDocumentContext2::GetStatementRange](../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) para obtener el intervalo de instrucción  
+    -   [Idebugdocumentcontext2:: Getstatementrange](../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) para obtener el intervalo de instrucción  
   
     -   [IDebugStackFrame2::GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) para obtener información sobre la memoria  
   
 ## <a name="see-also"></a>Vea también  
- [Llamada a eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)
+ [Llamar a los eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)

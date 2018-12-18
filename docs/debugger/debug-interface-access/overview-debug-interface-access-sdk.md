@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471445"
 ---
 # <a name="overview-debug-interface-access-sdk"></a>Información general (Debug Interface Access SDK)
 Use el SDK de DIA para tener acceso a la información de depuración de Microsoft. El SDK de DIA proporciona el conjunto de API que elimina la necesidad de volver a escribir el código cada vez que Microsoft cambia el formato de la información de depuración basada en un COM. El SDK de DIA también le permite leer de un conjunto de versiones anteriores de información de depuración, ubicados en archivos .pdb y .dbg generados por [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] versiones 5.0 y versiones posteriores.  

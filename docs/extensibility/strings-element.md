@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143896"
 ---
 # <a name="strings-element"></a>Elemento de cadenas
 El elemento de cadenas debe contener al menos un **ButtonText** elemento secundario. Todos los demás elementos secundarios son opcionales. XML no válido, como los caracteres '&' y ' <' deben estar codificados como entidades ('&amp;'y'&lt;' y así sucesivamente).  

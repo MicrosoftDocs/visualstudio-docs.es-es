@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eaf8e9176c389aecf2844f3e4bcaeea9bcaa5803
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3b42cce6c9134a668d5096150d986e950ed8a8e7
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262236"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Vista Árbol de llamadas: datos de instrumentación
 Los valores de una función en la vista Árbol de llamadas indican el tiempo de las instancias de la función a las que llamó la función primaria en el árbol de llamadas. Los valores de porcentaje se calculan comparando el valor de las instancias de la función con el tiempo inclusivo transcurrido total de todas las funciones de la ejecución de generación de perfiles.  
@@ -39,7 +40,7 @@ Los valores de una función en la vista Árbol de llamadas indican el tiempo de 
 |**Sobrecarga de tiempo inclusiva por sondeos**|Sobrecarga de tiempo para esta función y sus funciones secundarias debida a la instrumentación. La sobrecarga por sondeos se ha restado de todos los tiempos inclusivos.|  
 |**Nivel**|La profundidad de esta función en el árbol de llamadas. Solo disponible en los informes de línea de comandos de [VSPerfReport](../profiling/vsperfreport.md).|  
   
-## <a name="elapsed-inclusive-values"></a>Valores inclusivos transcurridos  
+## <a name="elapsed-inclusive-values"></a>Valores de tiempo inclusivo transcurrido  
  Los valores inclusivos transcurridos indican el tiempo en la pila de llamadas de esas instancias de la función a las que llamó la función primaria en el árbol de llamadas. Incluye el tiempo dedicado a funciones secundarias a las que llamó la función y a llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S.  
   
 |Columna|Description|  
@@ -50,7 +51,7 @@ Los valores de una función en la vista Árbol de llamadas indican el tiempo de 
 |**Tiempo inclusivo transcurrido máximo**|El tiempo inclusivo transcurrido máximo de una llamada a esta función en este contexto.|  
 |**Tiempo inclusivo transcurrido mínimo**|El tiempo inclusivo transcurrido mínimo de una llamada a esta función en este contexto.|  
   
-## <a name="elapsed-exclusive-values"></a>Valores exclusivos transcurridos  
+## <a name="elapsed-exclusive-values"></a>Valores de tiempo exclusivo transcurrido  
  Los valores exclusivos transcurridos indican el tiempo que las instancias de una función a las que llamó la función primaria en el árbol de llamadas ejecutaron código en el cuerpo de la función; es decir, cuando la función estaba en la parte superior de la pila de llamadas. El tiempo también incluye el tiempo dedicado a las llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S. Sin embargo, el tiempo no incluye el tiempo dedicado a funciones secundarias a las que llamó la función.  
   
 |Columna|Description|  
@@ -61,7 +62,7 @@ Los valores de una función en la vista Árbol de llamadas indican el tiempo de 
 |**Tiempo exclusivo transcurrido máximo**|El tiempo exclusivo transcurrido máximo de una llamada a esta función en este contexto.|  
 |**Tiempo exclusivo transcurrido mínimo**|El tiempo exclusivo transcurrido mínimo de una llamada a esta función en este contexto.|  
   
-## <a name="application-inclusive-values"></a>Valores inclusivos de aplicación  
+## <a name="application-inclusive-values"></a>Valores de tiempo inclusivo de aplicación  
  Los valores inclusivos de aplicación indican el tiempo que las instancias de una función a las que llamó la función primaria en el árbol de llamadas permanecieron en la pila de llamadas. El tiempo no incluye el tiempo dedicado a llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S. Sin embargo, incluye el tiempo dedicado a funciones secundarias a las que llamó la función.  
   
 |Columna|Description|  
@@ -72,7 +73,7 @@ Los valores de una función en la vista Árbol de llamadas indican el tiempo de 
 |**Tiempo inclusivo de aplicación máximo**|El tiempo inclusivo de aplicación máximo de una llamada a esta función en este contexto.|  
 |**Tiempo inclusivo de aplicación mínimo**|El tiempo inclusivo de aplicación mínimo de una llamada a esta función en este contexto.|  
   
-## <a name="application-exclusive-values"></a>Valores exclusivos de aplicación  
+## <a name="application-exclusive-values"></a>Valores de tiempo exclusivo de aplicación  
  Los valores exclusivos de aplicación indican el tiempo que las instancias de una función a las que llamó la función primaria en el árbol de llamadas ejecutaron directamente código en el cuerpo de la función; es decir, cuando la función estaba en la parte superior de la pila de llamadas. No incluye el tiempo dedicado a llamadas al sistema operativo, como cambios de contexto y operaciones de E/S. Tampoco incluye el tiempo dedicado a funciones secundarias a las que llamó la función.  
   
 |Columna|Description|  

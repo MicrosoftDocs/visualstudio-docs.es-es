@@ -1,32 +1,27 @@
 ---
-title: "Fragmentos de código con Herramientas de R para Visual Studio | Microsoft Docs"
-description: "Los fragmentos de código para R en Visual Studio ofrecen accesos directos para insertar rápidamente bloques de código de cualquier longitud, lo que evita que tenga que escribir código similar una y otra vez."
-ms.custom: 
+title: Fragmentos de código para R
+description: Los fragmentos de código para R en Visual Studio ofrecen accesos directos para insertar rápidamente bloques de código de cualquier longitud, lo que evita que tenga que escribir código similar una y otra vez.
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- devlang-r
-dev_langs:
-- R
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: d8628b2712c52aae614223b702344bb0b548e306
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0c9db243b3903ddcbaa310bbf5ba3fd911eee7fc
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35667735"
 ---
 # <a name="code-snippets"></a>Fragmentos de código
 
 Los fragmentos de código en Visual Studio proporcionan accesos directos para insertar rápidamente bloques de código de cualquier longitud, lo que evita que tenga que escribir código similar una y otra vez. Herramientas de R para Visual Studio (RTVS) agrega docenas de fragmentos de código de R útiles a la colección de Visual Studio.
 
-Para insertar un fragmento de código, escriba el nombre abreviado del fragmento de código (se proporciona IntelliSense) y después presione Tab para insertar.
+Para insertar un fragmento de código, escriba el nombre abreviado del fragmento de código (se proporciona IntelliSense) y después presione **Tab** para insertar.
 
 Algunos ejemplos sencillos:
 
@@ -37,9 +32,9 @@ Los fragmentos de código pueden ser mucho más que una simple finalización de 
 
 ![Animación del uso de un fragmento de código para insertar una llamada a read.csv](media/code-snippet-expansion.gif)
 
-En este caso, a medida que escribe `readc`, IntelliSense muestra una lista de finalización. Si selecciona esa finalización en la lista desplegable y presiona Tab, se selecciona `readc` y, si vuelve a presionar Tab, se expande el fragmento de código. (Por esta razón, la expansión de fragmentos de código se suele considerar como "escriba el fragmento de código y presione la tecla Tab dos veces"). En la mayoría de los casos, la primera vez que se presiona Tab, se completa la selección de IntelliSense y, la segunda vez que se presiona Tab, se desencadena la expansión.
+En este caso, a medida que escribe `readc`, IntelliSense muestra una lista de finalización. Si selecciona esa finalización en la lista desplegable y presiona **Tab**, se selecciona `readc` y, si vuelve a presionar **Tab**, se expande el fragmento de código. (Por esta razón, la expansión de fragmentos de código se suele considerar como "escriba el fragmento de código y presione la tecla Tab dos veces"). En la mayoría de los casos, la primera vez que se presiona Tab, se completa la selección de IntelliSense y, la segunda vez que se presiona Tab, se desencadena la expansión.
 
-Para ver todos los fragmentos de código disponibles, abra el cuadro de diálogo **Herramientas > Administrador de fragmentos de código...** (Ctrl+K,B) y seleccione **R** en **Lenguaje**. Expanda los grupos y seleccione fragmentos de código individuales para ver una descripción y el texto del acceso directo:
+Para ver todos los fragmentos de código disponibles, abra el cuadro de diálogo **Herramientas** > **Administrador de fragmentos de código** (**Ctrl**+**K**,**B**) y seleccione **R** en **Idioma**. Expanda los grupos y seleccione fragmentos de código individuales para ver una descripción y el texto del acceso directo:
 
 ![Cuadro de diálogo Fragmentos de código de R](media/code-snippet-dialog.png)
 

@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac35c99b9e75be50d00e560e9c8899420685f7f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bbb950947b3f97a4f6d6e9c1461dd2023595058c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775038"
 ---
-# <a name="adding-tier-interaction-data-from-the-command-line"></a>Agregar datos de interacción de capas desde la línea de comandos
+# <a name="add-tier-interaction-data-from-the-command-line"></a>Agregar datos de interacción de capas desde la línea de comandos
 
 La generación de perfiles de interacción de capas proporciona información adicional sobre los tiempos de ejecución de llamadas sincrónicas a [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] en funciones de aplicaciones de varias capas que se comunican con una o más bases de datos.
 
@@ -32,42 +33,42 @@ La generación de perfiles de interacción de capas se puede recopilar con cualq
 
 **Recopilación de datos de TIP en un equipo remoto**
 
-Para recopilar datos de interacción de capas en un equipo remoto, debe copiar el archivo **vs_profiler_***\<Platform>***_***\<Language>***.exe** de la carpeta *%VSInstallDir%***\Team Tools\Performance Tools\Setups** de un equipo de Visual Studio en el equipo remoto e instalarlo. Las herramientas de generación de perfiles no se pueden usar en el paquete de descarga de [Depuración remota](../debugger/remote-debugging.md) .
+Para recopilar datos de interacción de capas en un equipo remoto, debe copiar el archivo **vs_profiler\_**_\<plataforma>_**\_**_\<lenguaje>_**.exe** de la carpeta _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** de un equipo de Visual Studio en el equipo remoto e instalarlo. Las herramientas de generación de perfiles no se pueden usar en el paquete de descarga de [Depuración remota](../debugger/remote-debugging.md) .
 
 **Informes TIP**
 
 Los datos de interacción de capas solo se pueden ver en Visual Studio Enterprise. Los informes de interacción de capas basados en archivos no están disponibles en [VSPerfReport](../profiling/vsperfreport.md) .
 
-## <a name="adding-tier-interaction-data-with-vsperfcmd"></a>Agregar datos de interacción de capas con VSPerfCmd
+## <a name="add-tier-interaction-data-with-vsperfcmd"></a>Agregar datos de interacción de capas con VSPerfCmd
 
 La herramienta de línea de comandos VSPerfASPNETCmd le permite tener acceso a la funcionalidad completa disponible en las herramientas de generación de perfiles. Para agregar la interacción de capas a los datos de generación de perfiles recopilados mediante VSPerfCmd, debe usar la utilidad **VSPerfCLREnv** para establecer y quitar las variables de entorno que activan los datos de interacción de capas. Las opciones que especifique y los procedimientos necesarios para recopilar datos dependen del tipo de aplicación con que esté generando perfiles.
 
-## <a name="profiling-stand-alone-applications"></a>Generar perfiles para aplicaciones independientes
+## <a name="profile-stand-alone-applications"></a>Generación de perfiles de aplicaciones independientes
 
 Para agregar datos de interacción de capas a una aplicación que no se ejecuta por otro proceso, como una aplicación de escritorio de Windows que realiza llamadas sincrónicas [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] a una base de datos de SQL Server, utilice la opción **VSPerfClrEnv /InteractionOn** para establecer las variables de entorno y la opción **VSPerfClrEnv /InteractionOff** para quitarlas.
 
 En el ejemplo siguiente, se generan perfiles para una aplicación de escritorio de Windows mediante el método de instrumentación y se recopilan datos de interacción de capas.
 
-### <a name="profiling-a-windows-desktop-application-example"></a>Ejemplo de generación de perfiles para una aplicación de escritorio de Windows
+### <a name="profile-a-windows-desktop-application-example"></a>Ejemplo de generación de perfiles para una aplicación de escritorio de Windows
 
 1. Abra una ventana del símbolo del sistema con privilegios de administrador. Haga clic en **Inicio**, seleccione **Todos los programas** y, a continuación, seleccione **Accesorios**. Haga clic con el botón derecho en **Símbolo del sistema** y, a continuación, haga clic en **Ejecutar como administrador**.
 
 2. Inicialice la generación de perfiles de .NET y las variables de entorno de TIP. Escriba los siguientes comandos:
 
-    ```
+    ```cmd
     vsperfclrenv /traceon
     vsperfclrenv /interactionon
     ```
 
 3. Inicie el generador de perfiles. Escriba el comando siguiente:
 
-    ```
+    ```cmd
     vsperfcmd /start:trace /output:Desktop_tip.vsp 
     ```
 
 4. Inicie la aplicación con VSPerfCmd. Escriba el comando siguiente:
 
-    ```
+    ```cmd
     vsperfcmd /launch:DesktopApp.exe
     ```
 
@@ -75,13 +76,13 @@ En el ejemplo siguiente, se generan perfiles para una aplicación de escritorio 
 
 6. Borre las variables del entorno de TIP. Escriba el comando siguiente:
 
-    ```
+    ```cmd
     vsperfclrenv /off
     ```
 
-Para obtener más información, consulte [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md).
+Para obtener más información, vea [Generación de perfiles de aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md).
 
-## <a name="profiling-services"></a>Generar perfiles para servicios
+## <a name="profile-services"></a>Servicios de generación de perfiles
 
 Para generar perfiles para servicios, incluidas las aplicaciones [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], utilice la opción **VSPerfClrEnv /GlobalInteractionOn** para establecer las variables de entorno y la opción **VSPerfClrEnv /GlobalInteractionOff** para quitarlas.
 
@@ -89,7 +90,7 @@ Cuando genera perfiles para servicios, incluidas las aplicaciones web [!INCLUDE[
 
 En el ejemplo siguiente, se generan perfiles para un servicio de Windows mediante el método de instrumentación y se recopilan datos de interacción de capas.
 
-### <a name="profiling-a-windows-service-example"></a>Un ejemplo de generación de perfiles para un servicio de Windows
+### <a name="profile-a-windows-service-example"></a>Ejemplo de generación de perfiles para un servicio de Windows
 
 1. Si es necesario, instale el servicio.
 
@@ -97,13 +98,13 @@ En el ejemplo siguiente, se generan perfiles para un servicio de Windows mediant
 
 3. Inicialice las variables de entorno de generación de perfiles .NET. Escriba el comando siguiente:
 
-    ```
+    ```cmd
     vsperfclrenv /globaltraceon
     ```
 
-4. Inicialice las variables de entorno de TIP. Escriba el comando siguiente
+4. Inicialice las variables de entorno de TIP. Escriba el comando siguiente:
 
-    ```
+    ```cmd
     vsperfclrenv /globalinteractionon
     ```
 
@@ -113,7 +114,7 @@ En el ejemplo siguiente, se generan perfiles para un servicio de Windows mediant
 
 7. Inicie el generador de perfiles. Escriba el comando siguiente:
 
-    ```
+    ```cmd
     vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession 
     ```
 
@@ -121,7 +122,7 @@ En el ejemplo siguiente, se generan perfiles para un servicio de Windows mediant
 
 9. Adjunte el generador de perfiles al servicio. Escriba el comando siguiente:
 
-    ```
+    ```cmd
     vsperfcmd /attach:MiddleTier.exe /output:MyService_tip.vsp /user:SYSTEM /crosssession 
     ```
 
@@ -133,7 +134,7 @@ En el ejemplo siguiente, se generan perfiles para un servicio de Windows mediant
 
 12. Borre las variables de entorno de generación de perfiles de .NET y TIP. Escriba el comando siguiente:
 
-    ```
+    ```cmd
     vsperfclrenv /globaloff
     ```
 
@@ -141,18 +142,18 @@ En el ejemplo siguiente, se generan perfiles para un servicio de Windows mediant
 
 Para obtener más información, consulte uno de los temas siguientes:
 
-[Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+[Generación de perfiles de aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 
 [Generar perfiles para servicios](../profiling/command-line-profiling-of-services.md)
 
-## <a name="adding-tier-interaction-data-with-vsperfaspnetcmd"></a>Agregar datos de interacción de capas con VSPerfASPNETCmd
+## <a name="add-tier-interaction-data-with-vsperfaspnetcmd"></a>Agregar datos de interacción de capas con VSPerfASPNETCmd
 
 La herramienta de línea de comandos VSPerfASPNETCmd le permite generar perfiles fácilmente para aplicaciones web de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. En comparación con la herramienta de línea de comandos **VSPerfCmd**, tiene menos opciones, no debe establecerse ninguna variable de entorno y no es necesario reiniciar el equipo. Estas características de VSPerfASPNETCmd hacen que la recopilación de datos de interacción de capas sea extraordinariamente sencilla.
 
 Para agregar la interacción de capas a los datos de generación de perfiles recopilados mediante VSPerfASPNETCmd, agregue la opción **/TIP** de la línea de comandos. Por ejemplo, utilice la siguiente línea de comandos para recopilar datos de interacción de capas para una aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] mediante el método de instrumentación:
 
-```
+```cmd
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```
 
-Para obtener más información sobre VSPerfASPNETCmd, consulte [Generación rápida de perfiles de sitio web con VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
+Para obtener más información sobre VSPerfASPNETCmd, vea [Generación rápida de perfiles de sitio web con VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).

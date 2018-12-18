@@ -1,10 +1,9 @@
 ---
-title: Página Aplicación, Diseñador de proyectos (Visual Basic) | Microsoft Docs
-ms.custom: ''
-ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+title: Página Aplicación de propiedades de proyecto de VB
+ms.date: 10/30/2018
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesApplicationWPF
 - vb.ProjectPropertiesApplication
@@ -16,17 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9372f915fb1914bea971ffb287fa5788a9372449
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4ceb1612ee678a005cba0be0cfb44337c126cb71
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670967"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 
 Use la página **Aplicación** del Diseñador de proyectos para especificar la configuración de la aplicación y las propiedades de un proyecto.
 
-En la página **Aplicación**, seleccione un nodo de proyecto (no el nodo **Solución**) en el **Explorador de soluciones**. Después, seleccione **Proyecto** > **Propiedades** en la barra de menús. Cuando aparezca el Diseñador de proyectos, seleccione la pestaña **Aplicación**.
+En la página **Aplicación**, seleccione un nodo de proyecto (no el nodo **Solución**) en el **Explorador de soluciones**. Después, seleccione **Proyecto** > **Propiedades** en la barra de menús. Cuando aparezca el **Diseñador de proyectos**, seleccione la pestaña **Aplicación**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -36,7 +36,11 @@ Las opciones siguientes le permiten configurar opciones generales para una aplic
 
 ### <a name="assembly-name"></a>Nombre del ensamblado
 
-Especifica el nombre del archivo de salida que contendrá el manifiesto del ensamblado. Si cambia esta propiedad, también cambia la propiedad **Nombre de archivo de salida**. También puede especificar el nombre del archivo de salida desde un símbolo del sistema mediante el modificador de compilador [/out (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/out). Para obtener información sobre cómo tener acceso a esta propiedad mediante programación, vea <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.
+Especifica el nombre del archivo de salida que contendrá el manifiesto del ensamblado. Si cambia esta propiedad, también cambia la propiedad **Nombre de archivo de salida**.
+
+También puede especificar el nombre del archivo de salida desde un símbolo del sistema mediante el modificador de compilador [/out (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/out).
+
+Para obtener información sobre cómo tener acceso a esta propiedad mediante programación, vea <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.
 
 ### <a name="root-namespace"></a>Espacio de nombres raíz
 
@@ -45,7 +49,7 @@ Especifica el espacio de nombres base para todos los archivos del proyecto. Por 
 Si desactiva el **espacio de nombres raíz**, puede especificar la estructura del espacio de nombres del proyecto en el código.
 
 > [!NOTE]
-> Si usa la palabra clave Global en una [Instrucción de espacio de nombres](/dotnet/visual-basic/language-reference/statements/namespace-statement), puede definir un espacio de nombres fuera del espacio de nombres raíz del proyecto. Si desactiva el **espacio de nombres raíz**, `Global` se convierte en el espacio de nombres de nivel superior, lo que elimina la necesidad de la palabra clave `Global` en una instrucción `Namespace`. Para obtener más información, vea "Palabra clave Global en las instrucciones de espacio de nombres" en [Espacios de nombres en Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/namespaces).
+> Si usa la palabra clave `Global` en una [Instrucción de espacio de nombres](/dotnet/visual-basic/language-reference/statements/namespace-statement), puede definir un espacio de nombres fuera del espacio de nombres raíz del proyecto. Si desactiva el **espacio de nombres raíz**, `Global` se convierte en el espacio de nombres de nivel superior, lo que elimina la necesidad de la palabra clave `Global` en una instrucción `Namespace`. Para obtener más información, vea "Palabra clave Global en las instrucciones de espacio de nombres" en [Espacios de nombres en Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/namespaces).
 
 Para obtener información sobre cómo crear espacios de nombres en su código, vea [Namespace (Instrucción)](/dotnet/visual-basic/language-reference/statements/namespace-statement).
 
@@ -66,20 +70,17 @@ Para obtener más información, vea [Cómo: Usar como destino una versión de .N
 
 ### <a name="application-type"></a>Tipo de aplicación
 
-Especifica el tipo de aplicación que se va a compilar. Para aplicaciones de Windows 8.x, puede especificar **Aplicación de la Tienda Windows**, **Biblioteca de clases** o **WinMD File** (Archivo WinMD). Para la mayoría de tipos de aplicación, puede especificar **Aplicación Windows**, **Aplicación de consola**, **Biblioteca de clases**, **Servicio de Windows** o **Biblioteca de controles web**.
+Especifica el tipo de aplicación que se va a compilar. Los valores difieren según el tipo de proyecto. Por ejemplo, para un proyecto de **Aplicación de Windows Forms**, puede especificar **Aplicación de Windows Forms**, **Biblioteca de clases**, **Aplicación de consola**, **Servicio de Windows** o **Biblioteca de controles web**.
 
 Para un proyecto de aplicación web, debe especificar **Biblioteca de clases**.
 
-Si especifica la opción **Archivo WinMD**, los tipos se pueden proyectar en cualquier lenguaje de programación de Windows Runtime. Al empaquetar la salida del proyecto como un archivo WinMD, puede codificar una aplicación en varios lenguajes y que el código interopere como si lo escribiera todo en el mismo lenguaje. Puede usar la opción **Archivo WinMD** para las soluciones destinadas a las bibliotecas de Windows Runtime, incluidas las aplicaciones de [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]. Para obtener más información, vea [Crear componentes de Windows Runtime en C# y Visual Basic](/windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic).
-
-> [!NOTE]
-> Windows Runtime puede proyectar tipos, de manera que aparezcan como objetos nativos en cualquier lenguaje que los use. Por ejemplo, las aplicaciones de JavaScript que interactúan con Windows Runtime lo usan como un conjunto de objetos JavaScript y las aplicaciones de C# usan la biblioteca como una colección de objetos. NET. Al empaquetar la salida del proyecto como un archivo WinMD, puede aprovechar la misma tecnología que usa Windows Runtime.
-
 Para obtener más información sobre la propiedad **Tipo de aplicación**, vea [/target (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/target). Para obtener información sobre cómo tener acceso a esa propiedad mediante programación, vea <xref:VSLangProj.ProjectProperties.OutputType%2A>.
 
-### <a name="icon"></a>Iconos
+### <a name="auto-generate-binding-redirects"></a>Generar automáticamente redireccionamientos de enlace
 
-Establece el archivo .ico que quiere usar como su icono del programa. Seleccione **\<Examinar...>** para buscar un gráfico existente. Para obtener más información, vea [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) (o [/win32icon (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option). Para obtener acceso a esta propiedad mediante programación, vea <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
+Los redireccionamientos de enlace se agregan al proyecto si la aplicación o sus componentes hacen referencia a más de una versión del mismo ensamblado. Si quiere definir manualmente los redireccionamientos de enlace en el archivo de proyecto, desactive **Generar automáticamente redireccionamientos de enlace**. Esta casilla se incorporó en Visual Studio 2017, versión 15.7.
+
+Para obtener más información sobre los redireccionamientos, vea [Redirecting assembly versions](/dotnet/framework/configure-apps/redirect-assembly-versions) (Redireccionamiento de versiones de ensamblado).
 
 ### <a name="startup-form--startup-object--startup-uri"></a>Formulario de inicio / Objeto de inicio / URI de inicio
 
@@ -87,11 +88,15 @@ Especifica el punto de entrada o el formulario de inicio de la aplicación.
 
 Si **Habilitar marco de trabajo de la aplicación** está seleccionado (valor predeterminado), esta lista se titula **Formulario de inicio** y muestra solo formularios, ya que el marco de trabajo de la aplicación admite solo formularios de inicio, no objetos.
 
-Si el proyecto es una Aplicación de explorador WPF, esta lista se titula **URI de inicio** y el valor predeterminado es **Page1.xaml**. La lista **URI de inicio** le permite especificar el recurso de interfaz de usuario (un elemento XAML) que la aplicación muestra al iniciarse. Para obtener más información, consulta <xref:System.Windows.Application.StartupUri%2A>.
+Si el proyecto es una Aplicación de explorador WPF, esta lista se titula **URI de inicio** y el valor predeterminado es **Page1.xaml**. La lista **URI de inicio** le permite especificar el recurso de interfaz de usuario (un elemento XAML) que la aplicación muestra al iniciarse. Para obtener más información, vea <xref:System.Windows.Application.StartupUri%2A>.
 
 Si **Habilitar marco de trabajo de la aplicación** está desactivado, esta lista se convierte en **Objeto de inicio** y muestra los formularios y las clases o módulos con un `Sub Main`.
 
 **Objeto de inicio** define el punto de entrada al que se va a llamar cuando se cargue la aplicación. Normalmente, esto se establece en el formulario principal de la aplicación o en el procedimiento `Sub Main` que debe ejecutarse cuando se inicia la aplicación. Dado que las bibliotecas de clases no tienen un punto de entrada, la única opción para esta propiedad es **(None)**. Para obtener más información, vea [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Para obtener acceso a esta propiedad mediante programación, vea <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
+
+### <a name="icon"></a>Iconos
+
+Establece el archivo .ico que quiere usar como su icono del programa. Seleccione **\<Examinar...>** para buscar un gráfico existente. Para obtener más información, vea [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) (o [/win32icon (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option). Para obtener acceso a esta propiedad mediante programación, vea <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 
 ### <a name="assembly-information"></a>Información de ensamblado
 
@@ -107,7 +112,7 @@ Si esta casilla está desactivada, la aplicación usa el `Sub Main` personalizad
 
 ### <a name="view-windows-settings"></a>Ver configuración de Windows
 
-Haga clic en este botón para generar y abrir el archivo app.manifest. Visual Studio usa este archivo para generar datos de manifiesto para la aplicación. Después, para establecer el nivel de ejecución solicitado de UAC, modifique la etiqueta `<requestedExecutionLevel>` en app.manifest de la manera siguiente:
+Haga clic en este botón para generar y abrir el archivo *app.manifest*. Visual Studio usa este archivo para generar datos de manifiesto para la aplicación. Luego, para establecer el nivel de ejecución solicitado de UAC, modifique la etiqueta `<requestedExecutionLevel>` de *app.manifest* de la manera siguiente:
 
 `<requestedExecutionLevel level="asInvoker" />`
 
@@ -117,7 +122,10 @@ Para obtener más información sobre la generación de manifiesto, vea [Implemen
 
 ## <a name="windows-application-framework-properties"></a>Propiedades del marco de trabajo de la aplicación Windows
 
-Las siguientes opciones de configuración están disponibles en la sección **Propiedades del marco de trabajo de la aplicación Windows**. Estas opciones están disponibles solo si la casilla **Habilitar marco de trabajo de la aplicación** está seleccionada. En la sección siguiente se describe la configuración de las **Propiedades del marco de trabajo de la aplicación Windows** para aplicaciones de Windows Presentation Foundation (WPF).
+Las siguientes opciones de configuración están disponibles en la sección **Propiedades del marco de trabajo de la aplicación Windows**. Estas opciones están disponibles solo si la casilla **Habilitar marco de trabajo de la aplicación** está seleccionada.
+
+> [!TIP]
+> En la sección siguiente a esta se describe la configuración de las **propiedades del marco de trabajo de la aplicación Windows** específicas de las aplicaciones de Windows Presentation Foundation (WPF).
 
 ### <a name="enable-xp-visual-styles"></a>Habilitar estilos visuales de XP
 
@@ -153,13 +161,13 @@ Seleccione el formulario que quiere usar como una pantalla de presentación. Deb
 
 Haga clic en este botón para mostrar un archivo de código de eventos en el que pueda escribir eventos para los eventos de marco de trabajo de la aplicación `Startup`, `Shutdown`, `UnhandledException`, `StartupNextInstance` y `NetworkAvailabilityChanged`. También puede invalidar determinados métodos de marco de trabajo de la aplicación. Por ejemplo, puede invalidar `OnInitialize` para cambiar el comportamiento de la pantalla de presentación.
 
-## <a name="windows-application-framework-properties-for-windows-presentation-foundation-wpf-applications"></a>Propiedades del marco de trabajo de la aplicación Windows para aplicaciones de Windows Presentation Foundation (WPF)
+## <a name="windows-application-framework-properties-for-windows-presentation-foundation-wpf-apps"></a>Propiedades del marco de trabajo de la aplicación Windows para aplicaciones de Windows Presentation Foundation (WPF)
 
-Las siguientes opciones de configuración están disponibles en la sección **Propiedades del marco de trabajo de la aplicación Windows** cuando el proyecto es una aplicación de Windows Presentation Foundation. Estas opciones están disponibles solo si la casilla **Habilitar marco de trabajo de la aplicación** está seleccionada. Las opciones enumeradas en esta tabla están disponibles solo para aplicaciones WPF o aplicaciones de explorador WPF. No están disponibles para bibliotecas de control personalizado o de controles de usuario de WPF.
+Las siguientes opciones están disponibles en la sección **Propiedades del marco de trabajo de la aplicación Windows** cuando el proyecto es una aplicación de Windows Presentation Foundation (WPF). Estas opciones están disponibles solo si la casilla **Habilitar marco de trabajo de la aplicación** está seleccionada. Las opciones enumeradas en esta tabla solo están disponibles para aplicaciones WPF o de explorador WPF. No están disponibles para bibliotecas de control personalizado o de controles de usuario de WPF.
 
 ### <a name="shutdown-mode"></a>Modo de apagado
 
-Esta propiedad solo se aplica a aplicaciones de Windows Presentation Foundation.
+Esta propiedad solo se aplica a aplicaciones de Windows Presentation Foundation (WPF).
 
 Seleccione **Al apagar explícitamente** para especificar que se salga de la aplicación cuando llame a <xref:System.Windows.Application.Shutdown%2A> explícitamente.
 
@@ -171,10 +179,10 @@ Para obtener más información sobre el uso de esta opción, vea <xref:System.Wi
 
 ### <a name="edit-xaml"></a>Editar XAML
 
-Haga clic en este botón para abrir y modificar el archivo de definición de aplicación (Application.xaml) en el editor XAML. Cuando hace clic en este botón, Application.xaml se abre en el nodo de definición de aplicación. Puede que tenga que editar este archivo para realizar determinadas tareas, como la definición de recursos. Si el archivo de definición de aplicación no existe, el Diseñador de proyectos crea uno.
+Este botón abre el archivo de definición de aplicación (Application.xaml) en el editor XAML. Al hacer clic en este botón, se abre *Application.xaml* en el nodo de definición de aplicación. Puede que tenga que editar este archivo para realizar determinadas tareas, como la definición de recursos. Si el archivo de definición de aplicación no existe, el Diseñador de proyectos crea uno.
 
 ### <a name="view-application-events"></a>Ver eventos de aplicaciones
 
-Haga clic en este botón para mostrar el archivo de clase parcial `Application` (Application.xaml.vb) en un editor de código. Si el archivo no existe, el Diseñador de proyectos crea uno con el nombre de clase y el espacio de nombres adecuados.
+Este botón abre el archivo de clase `Application` (*Application.xaml.vb*) en un editor de código. Si el archivo no existe, el Diseñador de proyectos crea uno con el nombre de clase y el espacio de nombres adecuados.
 
 El objeto <xref:System.Windows.Application> genera eventos cuando se producen determinados cambios en el estado de la aplicación (por ejemplo, en el inicio de aplicación o en el apagado). Para obtener una lista completa de los eventos que expone esta clase, vea <xref:System.Windows.Application>. Estos eventos se controlan en la sección de código de usuario de la clase parcial `Application`.

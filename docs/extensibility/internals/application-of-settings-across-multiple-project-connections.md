@@ -1,5 +1,5 @@
 ---
-title: Aplicación de la configuración en varias conexiones de proyecto | Documentos de Microsoft
+title: Aplicación de configuración en varias conexiones de proyecto | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,28 +13,30 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dff30ea80fb2de9bf4d90ffa48cd2f9b3d40756
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d8b8d7d6dc1e596686a2fad7b53363b2387a47b
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500048"
 ---
-# <a name="application-of-settings-across-multiple-project-connections"></a>Aplicación de la configuración en varias conexiones de proyecto
-Un complemento de control de origen creados con 1.2 de API de complemento de Control de origen, puede usar una operación por lotes para ejecutar la misma operación de control de código fuente en varios proyectos o varios contextos de conexión. Lotes pueden usarse para eliminar redundantes, cuadros de diálogo de la experiencia del usuario por proyecto.  
+# <a name="application-of-settings-across-multiple-project-connections"></a>Aplicación de configuración en varias conexiones de proyecto
+Un complemento de control de origen creados con el origen de Control de complemento de API versión 1.2, puede usar una operación por lotes para ejecutar la misma operación de control de código fuente a través de varios proyectos o varios contextos de conexión. Los lotes pueden utilizarse para eliminar redundantes, cuadros de diálogo de la experiencia del usuario por proyecto.  
   
- Si un usuario selecciona varios elementos que pertenecen a más de una conexión en un complemento de control de código fuente creada con la API complemento origen Control 1.1, (por ejemplo, dos proyectos Web de recurso compartido de archivos diferentes máquinas) y comprueba su salida, el usuario ve el mismo cuadro de diálogo varias veces. Esto ocurre incluso si el usuario hace clic en el **aplicar a todos los** casilla de verificación en el cuadro de diálogo, porque el IDE restablece su estado para cada contexto de conexión.  
+ Si un usuario selecciona varios elementos que pertenecen a más de una conexión en un complemento de control de código fuente creada con código fuente Control complemento API versión 1.1 (por ejemplo, dos proyectos web en el recurso compartido de archivos diferentes máquinas) y comprobaciones de ellas, el usuario ve el mismo cuadro de diálogo varias veces. Este escenario se produce incluso si el usuario hace clic en el **aplicar a todo** casilla de verificación en el cuadro de diálogo, dado que el IDE restablece su estado para cada contexto de conexión.  
   
 ## <a name="new-capability-flag"></a>Nueva marca de capacidad  
- `SccBeginBatch` Función establece el `SCC_CAP_BATCH` marca para indicar que una operación por lotes está en curso  
+ El `SccBeginBatch` función establece el `SCC_CAP_BATCH` marca para indicar que una operación por lotes está en curso.  
   
 ## <a name="new-functions"></a>Nuevas funciones  
- Las nuevas funciones siguientes admiten la operación por lotes:  
+Las siguientes funciones nuevas admiten la operación por lotes:  
   
 -   [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)  
   
 -   [SccEndBatch](../../extensibility/sccendbatch-function.md)  
+
   
- El `SCCBeginBatch` función inicia un grupo de operaciones de control de código fuente. `SccEndBatch` cierra el grupo. No se pueden anidar los grupos.  
+El `SCCBeginBatch` función inicia un grupo de operaciones de control de código fuente. El `SccEndBatch` función cierra el grupo. No se pueden anidar los grupos.  
   
 ## <a name="see-also"></a>Vea también  
- [Novedades de la API del complemento de control de código fuente, versión 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+ [Novedades de la versión 1.2 de origen Control complemento de API](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

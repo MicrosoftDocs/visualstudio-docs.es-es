@@ -1,5 +1,5 @@
 ---
-title: Archivo | Documentos de Microsoft
+title: Archivo | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,17 +11,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd683ee7edc2a8641d38ef84d69c30badd5b14db
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 476e711f8b2e65652bb750c4933a5dfa98fbbf63
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153740"
 ---
-# <a name="archive"></a>Archivo
-Esta sección contiene las discusiones de tecnologías de extensibilidad de Visual Studio que se siguen admitiendo, pero que tiene las tecnologías de reemplazo que son más recientes.  
+# <a name="archive"></a>Archive
+Esta sección contiene las discusiones de tecnologías de extensibilidad de Visual Studio que todavía se admiten pero que tienen las tecnologías de reemplazo que son más recientes.  
   
-## <a name="legacy-interfaces-in-the-editor"></a>Interfaces heredadas en el Editor  
- En esta sección se explica cómo obtener acceso al editor con interfaces heredadas (vectores *) en lugar de con el código más reciente de MEF: [Interfaces heredadas en el Editor de](../extensibility/legacy-interfaces-in-the-editor.md).  
+## <a name="legacy-interfaces-in-the-editor"></a>Interfaces heredadas en el editor  
+ En esta sección se explica cómo obtener acceso al editor con interfaces heredadas (IV *) en lugar del código más reciente de MEF: [heredado interfaces en el editor de](../extensibility/legacy-interfaces-in-the-editor.md).  
   
 ## <a name="tool-windows-in-the-registry"></a>Ventanas de herramientas en el registro  
- Esta sección explica cómo configurar ventanas de herramientas directamente en el registro: [las ventanas de herramientas en el registro](../extensibility/tool-windows-in-the-registry.md).
+ Esta sección explica cómo configurar ventanas de herramientas directamente en el registro: [ventanas en el registro](../extensibility/tool-windows-in-the-registry.md).

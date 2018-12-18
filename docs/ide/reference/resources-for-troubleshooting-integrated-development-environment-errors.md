@@ -1,10 +1,9 @@
 ---
-title: Recursos para solucionar problemas de errores en el entorno de desarrollo integrado | Microsoft Docs
-ms.custom: ''
+title: Recursos de solución de problemas de errores
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: troubleshooting
 f1_keywords:
 - VS.Message.0x00005A89
 - VS.Message.0x00005A8E
@@ -96,21 +95,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48516bd598719112a3a94216b3510b628579f032
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5dcdcffbcf947efa7da8471a970d07a23fe90ba4
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349294"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Recursos para solucionar problemas de errores en el entorno de desarrollo integrado
 
-No todos los mensajes de error tienen un tema de ayuda específico asociado. Si con información del mensaje de error no consigue resolver el problema, puede consultar otros recursos, como los artículos de Knowledge Base, la comunidad de programadores o los servicios de soporte técnico.
+No todos los mensajes de error tienen un tema de ayuda específico asociado. Si con la información del mensaje de error no consigue resolver el problema, puede consultar otros recursos, como los artículos de Knowledge Base, los foros o los servicios de soporte técnico.
+
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Solución de problemas de Visual Studio para Mac](/visualstudio/mac/troubleshooting).
 
 ## <a name="knowledge-base-articles"></a>Artículos de Knowledge Base
 
 En Knowledge Base (KB), puede buscar en línea artículos sobre problemas con productos. No todos los problemas tienen su correspondiente artículo de Knowledge Base, pero normalmente están documentados aquellos que han detectado un número significativo de clientes. Puede acceder a los artículos de Knowledge Base en el sitio web de [Soporte técnico de Microsoft](https://support.microsoft.com).
 
-## <a name="the-developer-community"></a>Comunidad de desarrolladores
+## <a name="developer-forums"></a>Foros para desarrolladores
 
 Los foros permiten al usuario interactuar con otros desarrolladores y con empleados de Microsoft. Si se produce un error para el que no encuentra solución, puede publicar preguntas sobre dicho problema en un foro. También puede buscar en los grupos de noticias para ver si ya se ha expuesto el mismo problema.
 
@@ -120,6 +123,7 @@ Puede acceder a foros, blogs, chats y otros recursos en el sitio web de las [com
 
 Si aún tiene preguntas después de recurrir a estos otros recursos, puede ponerse en contacto con los servicios de soporte técnico de Microsoft en el sitio web [Soporte técnico de Microsoft](http://go.microsoft.com/fwlink/?linkid=1782). Para obtener información sobre los servicios de soporte técnico disponibles en su área, vea [Hable con nosotros](../../ide/talk-to-us.md).
 
- ## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Vea también
 
-* [Solución de problemas de errores de proxy](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server#troubleshooting-proxy-errors)
+* [Solución de problemas de errores de proxy o relacionados con la red](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
+* [Solución de problemas (Visual Studio para Mac)](/visualstudio/mac/troubleshooting)

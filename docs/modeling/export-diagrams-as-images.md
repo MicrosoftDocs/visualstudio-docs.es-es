@@ -11,17 +11,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 003318b8c8e26112ee83dceb9cdc3c453dc6956f
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 7c1e7f7f642245fe4170c670fafd7366361e6de0
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858529"
 ---
 # <a name="export-diagrams-as-images"></a>Exportar diagramas como imágenes
-En Visual Studio, puede guardar diagramas de modelado en formatos de solo lectura para que se puedan compartir con las partes interesadas, los usuarios o los miembros del equipo de proyecto que no utilizan la misma versión de Visual Studio.
+En Visual Studio, puede guardar diagramas de modelado en formatos de solo lectura para que puede compartirlos con las partes interesadas, usuarios o los miembros del equipo de proyecto que no usan la misma versión de Visual Studio.
 
- Para ver qué versiones de Visual Studio admiten esta característica, vea [Compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Para ver qué ediciones de Visual Studio admiten esta característica, vea [compatibilidad con la edición de arquitectura y las herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ### <a name="to-copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>Para copiar un diagrama o parte de un diagrama en otra aplicación
 

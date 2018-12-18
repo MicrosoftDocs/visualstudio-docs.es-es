@@ -15,17 +15,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38bb11237d5016e3747c5a615e61144511c17fad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1e7ec7c63c06cace9f25e19cb552b144e4dc03dc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931433"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
-Continúa ejecutando este proceso desde un estado de detención. Se conserva un estado de ejecución anterior (por ejemplo, un paso), y el proceso empieza a ejecutarse de nuevo.  
+Continúa la ejecución de este proceso de un estado detenido. Se conserva ningún estado de ejecución anterior (por ejemplo, un paso), y el proceso comienza a ejecutarse de nuevo.  
   
 > [!NOTE]
->  Este método debe utilizarse en lugar de [continuar](../../../extensibility/debugger/reference/idebugprogram2-continue.md).  
+>  Este método debería usarse en lugar de [continuar](../../../extensibility/debugger/reference/idebugprogram2-continue.md).  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -43,15 +44,15 @@ int Continue(
   
 #### <a name="parameters"></a>Parámetros  
  `pThread`  
- [in] Un [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa el subproceso para continuar.  
+ [in] Un [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa el subproceso se puede continuar.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve el código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Se llama a este método en este proceso sin tener en cuenta el número de procesos que se están depurando o proceso que generó el evento de detención. La implementación debe conservar el estado de ejecución anterior (por ejemplo, un paso) y continuar la ejecución como si nunca había dejado antes de completar su ejecución anterior. Es decir, si un subproceso de este proceso estaba realizando una operación de paso y se detuvo porque se detuvo de algún otro proceso y, a continuación, `Continue` se llamó, especificado subproceso debe completar la operación de paso original.  
+ Este método se llama en este proceso, independientemente de cuántos procesos se están depurando o proceso que generó el evento de detención. La implementación debe conservar el estado de ejecución anterior (por ejemplo, un paso) y continuar la ejecución como si nunca había dejado antes de completar su ejecución anterior. Es decir, si un subproceso en este proceso estaba realizando una operación de paso y se detuvo porque se detuvo de algún otro proceso y, a continuación, `Continue` llamó, el subproceso debe completar la operación pasó por alto original.  
   
- **Advertencia** no se envía ningún evento de detención o a un evento (sincrónico) inmediato [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) al controlar esta llamada; en caso contrario, el depurador puede dejar de responder.  
+ **Advertencia** no enviar ningún evento de detención o a un evento (sincrónico) inmediato [eventos](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) mientras se controla esta llamada; en caso contrario, el depurador puede dejar de responder.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   

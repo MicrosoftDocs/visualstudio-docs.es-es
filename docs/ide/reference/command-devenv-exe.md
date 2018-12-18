@@ -1,10 +1,9 @@
 ---
-title: -Command (devenv.exe) | Microsoft Docs
-ms.custom: ''
+title: -Command (devenv.exe)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Devenv, /command switch
 - /command Devenv switch
@@ -14,37 +13,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 77fcd3f560644a8f7033872ea7db4bc50acf3359
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f2ee6f1166a543cc3dc85dfb62d19d1c5b194a16
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948171"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
-Ejecuta el comando especificado después de iniciar el entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```  
-devenv /command CommandName  
-```  
-  
-## <a name="arguments"></a>Argumentos  
- `CommandName`  
- Obligatorio. Nombre completo de un comando de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o su alias, incluido entre comillas dobles. Para obtener más información sobre la sintaxis de comandos y de alias, consulte [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md).  
-  
-## <a name="remarks"></a>Comentarios  
- Una vez completado el inicio, el IDE ejecuta el comando indicado. Si se usa este modificador, el IDE no muestra la página principal de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] al iniciarse.  
-  
- Si un complemento muestra un comando, puede utilizar este modificador para iniciar el complemento desde la línea de comandos. Para obtener más información, consulte [Cómo: Controlar complementos con el Administrador de complementos](http://msdn.microsoft.com/Library/4f60444a-cb48-4cdb-8df4-941f6419aeeb).  
-  
-## <a name="example"></a>Ejemplo  
- Este ejemplo inicia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y ejecuta automáticamente la macro Open Favorite Files.  
-  
-```  
-devenv /command "Macros.MyMacros.Module1.OpenFavoriteFiles"  
-```  
-  
-## <a name="see-also"></a>Vea también  
- [Modificadores de línea de comandos para Devenv](../../ide/reference/devenv-command-line-switches.md)   
- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+Ejecuta el comando especificado después de iniciar el entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+
+## <a name="syntax"></a>Sintaxis
+
+```cmd
+devenv /command CommandName
+```
+
+## <a name="arguments"></a>Argumentos
+ `CommandName` Obligatorio. Nombre completo de un comando de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o su alias, incluido entre comillas dobles. Para obtener más información sobre la sintaxis de comandos y de alias, consulte [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md).
+
+## <a name="remarks"></a>Comentarios
+ Una vez completado el inicio, el IDE ejecuta el comando indicado. Si se usa este modificador, el IDE no muestra la página principal de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] al iniciarse.
+
+ Si un complemento muestra un comando, puede utilizar este modificador para iniciar el complemento desde la línea de comandos. Para obtener más información, consulte [Cómo: Controlar complementos con el Administrador de complementos](https://msdn.microsoft.com/Library/4f60444a-cb48-4cdb-8df4-941f6419aeeb).
+
+## <a name="example"></a>Ejemplo
+ Este ejemplo inicia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y ejecuta automáticamente la macro Open Favorite Files.
+
+```cmd
+devenv /command "Macros.MyMacros.Module1.OpenFavoriteFiles"
+```
+
+## <a name="see-also"></a>Vea también
+
+- [Modificadores de línea de comandos para Devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

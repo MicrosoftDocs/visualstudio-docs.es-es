@@ -1,6 +1,7 @@
 ---
 title: 'CA1806: No omitir resultados del método'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -12,14 +13,20 @@ helpviewer_keywords:
 ms.assetid: fd805687-0817-481e-804e-b62cfb3b1076
 author: gewarren
 ms.author: gewarren
+dev_langs:
+- CPP
+- CSharp
+- VB
 manager: douge
-ms.openlocfilehash: 605222de258598e1022288b50f0a30ba87777fdc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ebbad9eb48a448aa756f580ade794ba70eb25611
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546843"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: No omitir resultados del método
+
 |||
 |-|-|
 |TypeName|DoNotIgnoreMethodResults|
@@ -28,57 +35,58 @@ ms.lasthandoff: 04/19/2018
 |Cambio problemático|No trascendental|
 
 ## <a name="cause"></a>Motivo
- Hay varias razones posibles para esta advertencia:
 
--   Un nuevo objeto se crea pero nunca se utiliza.
+Hay varias razones posibles para esta advertencia:
 
--   Se llama a un método que crea y devuelve una nueva cadena y la nueva cadena nunca se utiliza.
+- Se crea un nuevo objeto pero no se usa nunca.
 
--   Un método COM o P/Invoke que devuelve un código de error o HRESULT que nunca se utiliza. Descripción de la regla
+- Se llama a un método que crea y devuelve una nueva cadena y nunca se usa la nueva cadena.
 
- Creación de objetos innecesarios y la recolección asociado del objeto sin usar degradar el rendimiento.
+- Un método COM o P/Invoke que devuelve un código de error o HRESULT que nunca se utiliza. Descripción de la regla
 
- Las cadenas son inmutables y métodos como métodos String.ToUpper devuelve una nueva instancia de una cadena en lugar de modificar la instancia de la cadena en el método de llamada.
+Creación de objetos innecesarios y la recolección asociada del objeto sin usar degradar el rendimiento.
 
- Se omitirá el código de error o HRESULT puede producir un comportamiento inesperado en condiciones de error o a las condiciones de recursos insuficientes.
+Las cadenas son inmutables y métodos como métodos String.ToUpper devuelve una nueva instancia de una cadena en lugar de modificar la instancia de la cadena del método de llamada.
+
+Se omite el código de error o HRESULT puede producir un comportamiento inesperado en condiciones de error o a condiciones de recursos insuficientes.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Si un método crea una nueva instancia del objeto B que nunca se utiliza, pase la instancia como un argumento a otro método o asigne la instancia a una variable. Si la creación del objeto es innecesaria, quítela.- o -
+ Si un método crea una nueva instancia del objeto B que nunca se utiliza, pase la instancia como un argumento a otro método o asigne la instancia a una variable. Si la creación del objeto no es necesario, quítela.- o -
 
- Si un método llama al método B pero no utiliza la nueva instancia de cadena que devuelve el método B. Pase la instancia como un argumento a otro método, asigne la instancia a una variable. O bien, quite la llamada si no es necesario.
+ Si un método llama al método B, pero no utiliza la nueva instancia de cadena que devuelve el método B. Pase la instancia como un argumento a otro método, asigne la instancia a una variable. O quite la llamada si no es necesaria.
 
- -o bien-
+ O bien
 
- Si un método llama al método B pero no utiliza el valor HRESULT o código de error que devuelve el método. Utilizar el resultado en una instrucción condicional, asigne el resultado a una variable o páselo como argumento a otro método.
+ Si un método llama al método B, pero no utiliza el valor HRESULT o código de error que devuelve el método. Use el resultado en una instrucción condicional, asigne el resultado a una variable o páselo como argumento a otro método.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- No suprima las advertencias de esta regla a menos que la acción de crear el objeto tiene algunos finalidad.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ No suprima una advertencia de esta regla a menos que la acción de crear el objeto sirve para algún propósito.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra una clase que omite el resultado de String.Trim que realiza la llamada.
+ El ejemplo siguiente muestra una clase que omite el resultado de String.Trim que realiza la llamada.
 
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_1.cs)]
  [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_1.vb)]
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_1.cpp)]
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se corrige la infracción anterior asignando el resultado de String.Trim a la variable que se llamó en.
+ El ejemplo siguiente corrige la infracción anterior asignando el resultado de String.Trim a la variable que se llamó.
 
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_2.cs)]
  [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_2.vb)]
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_2.cpp)]
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra un método que no utiliza un objeto que crea.
+ El ejemplo siguiente muestra un método que no utiliza un objeto que crea.
 
 > [!NOTE]
->  Esta infracción no se puede reproducir en Visual Basic.
+> No se puede reproducir esta infracción en Visual Basic.
 
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_3.cpp)]
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_3.cs)]
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se corrige la infracción anterior quitando la creación innecesaria de un objeto.
+ El ejemplo siguiente corrige la infracción anterior quitando la creación innecesaria de un objeto.
 
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_4.cs)]
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_4.cpp)]

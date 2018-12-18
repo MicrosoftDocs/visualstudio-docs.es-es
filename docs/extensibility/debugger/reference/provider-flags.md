@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_FLAGS | Documentos de Microsoft
+title: PROVIDER_FLAGS | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 340531f9c943052c1abd51203f3937ccd111e314
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a44fa73a51f1f6da073c63be0873fbefc669b15d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910516"
 ---
 # <a name="providerflags"></a>PROVIDER_FLAGS
-Especifica las propiedades deseadas a obtenerse a partir de un proveedor de programa.  
+Especifica que las propiedades deseadas se obtienen de un proveedor de programa.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -53,36 +54,36 @@ public enum enum_PROVIDER_FLAGS {
   
 ## <a name="members"></a>Miembros  
  PFLAG_NONE  
- No existen marcadores especificados.  
+ No hay marcas especificadas.  
   
  PFLAG_REMOTE_PORT  
- Llamador quiere una lista de programas en un equipo diferente que [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].  
+ Llamador desea obtener una lista de programas en un equipo diferente de [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].  
   
  PFLAG_DEBUGGEE  
- Se está depurando el proceso de esta instancia de [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].  
+ El proceso se está depurando actualmente por esta instancia de [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].  
   
  PFLAG_ATTACH_TODEBUGGEE  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] se adjunta al programa que se está depurando, pero no se inició.  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] se adjunta al programa que se está depurando, pero no se inicia.  
   
  PFLAG_REASON_WATCH  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] está viendo eventos.  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] supervisa los eventos.  
   
  PFLAG_GET_PROGRAM_NODES  
- Llamador quiere la `ProgramNodes` campo de la [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) estructura.  
+ Llamador desea el `ProgramNodes` campo de la [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) estructura.  
   
  PFLAG_GET_IS_DEBUGGER_PRESENT  
- Llamador quiere la `fIsTheDebuggerPresent` campo de la `PROVIDER_PROCESS_DATA` estructura.  
+ Llamador desea el `fIsTheDebuggerPresent` campo de la `PROVIDER_PROCESS_DATA` estructura.  
   
 ## <a name="remarks"></a>Comentarios  
  Estas marcas se pasan a los métodos siguientes:  
   
--   [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)  
+- [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)  
   
--   [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)  
+- [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)  
   
--   [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)  
+- [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)  
   
- Estos valores se pueden combinar con un bit a bit `OR`.  
+  Estos valores se pueden combinar con un bit a bit `OR`.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  

@@ -1,5 +1,5 @@
 ---
-title: Control de la ejecución y el estado de evaluación | Documentos de Microsoft
+title: Control de ejecución y evaluación de estado | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,18 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d306ffe484605a081afa81afdcdcaa1a70339c84
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8961d2e06c7013b5667191c190053047f82de77d
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232408"
 ---
-# <a name="execution-control-and-state-evaluation"></a>Control de la ejecución y evaluación de estado
-Depurar una aplicación requiere la implementación de estas características de control de ejecución como la ejecución paso a paso en funciones, deténgase en los puntos de interrupción y continuar la ejecución. La depuración de bases de datos de Visual Studio su control de ejecución en los eventos enviados entre los componentes del depurador.  
+# <a name="execution-control-and-state-evaluation"></a>Evaluación de control y el estado de ejecución
+Depurar una aplicación requiere la implementación de funcionalidades de control de ejecución como ejecutar funciones, la detención en puntos de interrupción y continuar la ejecución. Bases de depuración de Visual Studio su control de ejecución en los eventos se envía entre los componentes del depurador.  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Control de programas](../../extensibility/debugger/program-control.md)  
- Enumera las rutinas siguientes que se producen en el nivel de programa: establecer la siguiente instrucción, ejecutar, ejecución paso a paso, continuar, suspender y reanudar.  
+ [Control del programa](../../extensibility/debugger/program-control.md)  
+ Enumera las rutinas siguientes que se producen en el nivel de programa: establecer la instrucción siguiente, ejecutar, ejecución paso a paso, continuar, suspender y reanudar.  
   
  [Métodos relacionados con el punto de interrupción](../../extensibility/debugger/breakpoint-related-methods.md)  
  Define el límite y pendiente de tipos de puntos de interrupción que es compatible con Visual Studio.  
@@ -34,7 +35,7 @@ Depurar una aplicación requiere la implementación de estas características de
  Describe la implementación de los métodos que permiten ver los marcos de pila de la pila de llamadas durante el modo de interrupción.  
   
  [Evaluación de expresiones](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)  
- Explica cómo el motor de depuración (Alemania), Administrador de expresiones evaluación (EE) y la sesión de depuración están implicados en el análisis y evaluación de una expresión especificada en una de las ventanas del IDE.  
+ Explica cómo el motor de depuración (DE), Administrador de expresiones evaluación (EE) y la sesión de depuración están implicadas en el análisis y evaluación de una expresión especificada en una de las ventanas del IDE.  
   
  [Eventos de control](../../extensibility/debugger/control-events.md)  
- Describe la interfaz usada para enviar eventos durante la ejecución del programa controlada.
+ Describe la interfaz que se usa para enviar eventos durante la ejecución del programa controlada.

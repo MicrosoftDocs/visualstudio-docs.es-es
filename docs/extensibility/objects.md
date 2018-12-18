@@ -1,5 +1,5 @@
 ---
-title: Objetos | Documentos de Microsoft
+title: Objetos | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,26 +13,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9225b83cb42e39ec4f220c5993c4695ba75b8998
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5b7448ec69af35b1fac864ef0151d37f91d15bd7
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639954"
 ---
 # <a name="objects"></a>de la empresa
-La siguiente información de referencia explica los objetos que se utilizan para crear una instancia del editor de texto principal.  
+La siguiente información de referencia explica los objetos que se usan para crear una instancia del editor de texto principal.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [VSCodeWindow (Objeto)](../extensibility/vscodewindow-object.md)  
- Describe el objeto de la ventana de código, una ventana de documento especializado que puede incluir una o varias vistas de texto.  
+ Describe el objeto de ventana de código, una ventana de documento especializado que puede incluir una o varias vistas de texto.  
   
- [VSCodeWindowManager (Objeto)](../extensibility/vscodewindowmanager-object.md)  
- Describe el objeto de administrador de ventana de código que se implementa mediante el servicio de lenguaje y es responsable de administrar opciones gráficas.  
+ [VSCodeWindowManager (objeto)](../extensibility/vscodewindowmanager-object.md)  
+ Describe el objeto de administrador de ventana de código que se implementa mediante el servicio de lenguaje y es responsable de administrar los elementos gráficos.  
   
- [VSTextBuffer (Objeto)](../extensibility/vstextbuffer-object.md)  
+ [VSTextBuffer (objeto)](../extensibility/vstextbuffer-object.md)  
  Describe el objeto de búfer de texto, que representa una secuencia de texto Unicode, los datos de un archivo.  
   
- [VSTextView (Objeto)](../extensibility/vstextview-object.md)  
+ [VSTextView (objeto)](../extensibility/vstextview-object.md)  
  Describe la vista de texto, una ventana que permite a los usuarios ver y editar texto Unicode del búfer de texto.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  

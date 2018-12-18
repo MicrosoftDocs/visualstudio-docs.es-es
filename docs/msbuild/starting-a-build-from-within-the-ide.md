@@ -12,25 +12,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 43dc2ec042f5f7fe9d5ad1e87c943e6cbd6e3d82
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 32a2923342fd62428095babdaecc5bd9c5cac06e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850066"
 ---
-# <a name="starting-a-build-from-within-the-ide"></a>Iniciar una compilación desde el IDE
-Los sistemas de proyectos personalizados deben utilizar <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> para iniciar las compilaciones. En este tema se describen las razones de ello y se describe el procedimiento.  
-  
+# <a name="start-a-build-from-within-the-ide"></a>Iniciar una compilación desde el IDE
+Los sistemas de proyectos personalizados deben utilizar <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> para iniciar las compilaciones. En este artículo se describen las razones de este requisito y se examina el procedimiento.  
+
 ## <a name="parallel-builds-and-threads"></a>Compilaciones y subprocesos paralelos  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite compilaciones paralelas que requieren mediación para tener acceso a los recursos comunes. Los sistemas de proyectos pueden ejecutar compilaciones de forma asincrónica, pero tales sistemas no deben llamar a las funciones de compilación desde dentro de las devoluciones de llamadas proporcionadas al administrador de la compilación.  
-  
- Si el sistema de proyectos modifica las variables de entorno, debe establecer el valor de NodeAffinity de la compilación en OutOfProc. Esto significa que no se pueden utilizar objetos host, puesto que requieren el nodo in-proc.  
-  
-## <a name="using-ivsbuildmanageraccessor"></a>Utilizar IVSBuildManagerAccessor  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite compilaciones paralelas, que requieren mediación para tener acceso a los recursos comunes. Los sistemas de proyectos pueden ejecutar compilaciones de forma asincrónica, pero tales sistemas no deben llamar a las funciones de compilación desde dentro de las devoluciones de llamadas proporcionadas al administrador de la compilación.  
+
+ Si el sistema de proyectos modifica las variables de entorno, debe establecer el valor de NodeAffinity de la compilación en OutOfProc. Este requisito significa que no se pueden utilizar objetos host, puesto que requieren el nodo in-proc.  
+
+## <a name="use-ivsbuildmanageraccessor"></a>Uso de IVSBuildManagerAccessor  
  En el siguiente código se describe un método que un sistema de proyectos puede utilizar para iniciar una compilación:  
-  
+
 ```csharp
-  
+
 public bool Build(Project project, bool isDesignTimeBuild)  
 {  
     // Get the accessor from the IServiceProvider interface for the   
@@ -117,5 +118,4 @@ public bool Build(Project project, bool isDesignTimeBuild)
          }  
      }  
 }  
-  
 ```

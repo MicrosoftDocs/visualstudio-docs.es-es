@@ -1,5 +1,5 @@
 ---
-title: 'Error: Error de autenticación de Kerberos | Documentos de Microsoft'
+title: 'Error: Error de autenticación de Kerberos | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -16,16 +16,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 63b3ed3349403bef0c85af9775f77cc980fc4e63
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0cf34885ee715a5685e4c2ced8b5a116e5c33e8d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857671"
 ---
 # <a name="error-kerberos-authentication-failed"></a>Error: Error de autenticación Kerberos
 Al intentar realizar la depuración remota, podría aparecer el siguiente mensaje de error:  
   
-```  
+```cmd
 Error: The Visual Studio Remote Debugger on the target computer cannot connect back to this computer. Kerberos authentication failed.  
 ```  
   
@@ -33,15 +34,15 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
  La autenticación Kerberos no está disponible bajo estas condiciones:  
   
--   El equipo de destino o el equipo host del depurador está en un grupo de trabajo, en lugar de en un dominio  
+- El equipo de destino o el equipo host del depurador está en un grupo de trabajo, en lugar de en un dominio  
   
-     \- o -  
+   \- o -  
   
--   Kerberos está deshabilitado en el controlador de dominio.  
+- Kerberos está deshabilitado en el controlador de dominio.  
   
- Si la autenticación Kerberos no está disponible, cambie la cuenta que se usa para ejecutar el Monitor de depuración remota de Visual Studio. Para conocer el procedimiento, consulte [Error: servicio de The Visual Studio Remote Debugger en el equipo de destino no se puede conectar a este equipo](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).  
+  Si la autenticación Kerberos no está disponible, cambie la cuenta que se usa para ejecutar el Monitor de depuración remota de Visual Studio. Para conocer el procedimiento, consulte [Error: servicio The Visual Studio Remote Debugger del equipo de destino no se puede conectar a este equipo](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).  
   
- Si ambos equipos están conectados al mismo dominio y todavía aparece este mensaje, compruebe que DNS en el equipo de destino está resolviendo correctamente el nombre del equipo host del depurador. Vea el procedimiento siguiente.  
+  Si ambos equipos están conectados al mismo dominio y todavía aparece este mensaje, compruebe que DNS en el equipo de destino está resolviendo correctamente el nombre del equipo host del depurador. Vea el procedimiento siguiente.  
   
 ### <a name="to-verify-that-dns-on-the-target-computer-is-correctly-resolving-the-debugger-host-computer-name"></a>Para comprobar que DNS en el equipo de destino está resolviendo correctamente el nombre del equipo host del depurador  
   
@@ -49,7 +50,7 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 2.  En el **símbolo** ventana, escriba:  
   
-    ```  
+    ```cmd
     ping <debugger_host_computer_name>  
     ```  
   
@@ -61,4 +62,4 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 ## <a name="see-also"></a>Vea también  
  [Errores de depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Depuración remota](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)

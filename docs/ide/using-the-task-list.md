@@ -1,9 +1,8 @@
 ---
-title: Usar la Lista de tareas | Microsoft Docs
-ms.custom: ''
+title: Uso de la lista de tareas
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - TaskListWindow
@@ -17,49 +16,43 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef9b3904ce06c498518d55b0d62b8e9393c75239
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7766a7fd935cc1e1131c4780a5a88ef6fa54e838
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349405"
 ---
-# <a name="using-the-task-list"></a>Usar la Lista de tareas
+# <a name="use-the-task-list"></a>Uso de la lista de tareas
 
-Use la **Lista de tareas** para hacer un seguimiento de los comentarios de código que usan tokens como `TODO` y `HACK`(o tokens personalizados) y administrar los accesos directos que le llevarán directamente a una ubicación predefinida del código. Haga clic en el elemento de la lista para ir a su ubicación en el código fuente.
+Use la **Lista de tareas** para hacer un seguimiento de los comentarios de código que usan tokens como `TODO` y `HACK` (o tokens personalizados) y administrar los accesos directos que le llevarán directamente a una ubicación predefinida del código. Haga clic en el elemento de la lista para ir a su ubicación en el código fuente.
+
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Comentarios de tareas (Visual Studio para Mac)](/visualstudio/mac/task-comments).
 
 ## <a name="the-task-list-window"></a>La ventana Lista de tareas
 
 Cuando la ventana **Lista de tareas** está abierta, aparece en la parte inferior de la ventana de la aplicación.
 
-### <a name="to-open-the-task-list"></a>Para abrir la Lista de tareas
+Para abrir**Lista de tareas**, seleccione **Vista** > **Lista de tareas** o presione **Ctrl**+**\\**,**T** en el teclado.
 
-- En el menú **Ver**, elija **Lista de tareas** (teclado: CTRL+\\, T).
+![Ventana Lista de tareas](../ide/media/vs2015_task_list.png)
 
-    ![Ventana Lista de tareas](../ide/media/vs2015_task_list.png "vs2015_task_list")
+Para cambiar el criterio de ordenación de la lista, seleccione el encabezado de cualquier columna. Para refinar los resultados de la búsqueda, presione la tecla **Mayúsculas** y elija un segundo encabezado de columna. Como alternativa, elija **Ordenar por** en el menú contextual y elija un encabezado. Para refinar los resultados de la búsqueda, presione la tecla **Mayúsculas** y elija un segundo encabezado de columna.
 
-### <a name="to-change-the-sort-order-of-the-list"></a>Para cambiar el criterio de ordenación de la lista
+Para mostrar u ocultar columnas, elija **Mostrar columnas** en el menú contextual. Seleccione las columnas que quiere mostrar u ocultar.
 
-- Haga clic en el encabezado de cualquier columna. Para refinar los resultados de la búsqueda, presione la tecla Mayúsculas y haga clic en otro encabezado de columna.
-
-     Como alternativa, en el menú contextual, elija **Ordenar por**y elija un encabezado. Para refinar los resultados de la búsqueda, presione la tecla Mayúsculas y elija un segundo encabezado de columna.
-
-### <a name="to-show-or-hide-columns"></a>Para mostrar u ocultar columnas
-
-- En el menú contextual, elija **Mostrar columnas**. Elija las columnas que desee mostrar u ocultar.
-
-### <a name="to-change-the-order-of-the-columns"></a>Para cambiar el orden de las columnas
-
-- Arrastre cualquier encabezado de columna hasta la ubicación que desee.
+Para cambiar el orden de las columnas, arrastre cualquier encabezado de columna a la ubicación que quiere.
 
 ## <a name="user-tasks"></a>Tareas de usuario
 
-La característica de tareas de usuario se retiró en Visual Studio 2015 y versiones posteriores. Cuando se abre una solución que tiene datos de tareas de usuario de Visual Studio 2013 y versiones anteriores, dichos datos no se verán afectados en el archivo .suo, pero las tareas de usuario no se mostrarán en la lista de tareas.
+La característica de tareas de usuario se retiró en Visual Studio 2015. Cuando se abre una solución que tiene datos de tareas de usuario de Visual Studio 2013 y versiones anteriores, dichos datos no se verán afectados en el archivo *.suo*, pero las tareas de usuario no se mostrarán en la lista de tareas.
 
-Si desea seguir teniendo acceso y actualizar los datos de tareas de usuario, debe abrir el proyecto en Visual Studio 2013 y copiar el contenido de las tareas de usuario en la herramienta de administración de proyecto preferido (por ejemplo, Team Foundation Server).
+Si quiere seguir teniendo acceso los datos de tareas de usuario y actualizarlos, abra el proyecto en Visual Studio 2013 y copie el contenido de las tareas de usuario en la herramienta de administración de proyecto que prefiera (por ejemplo, Team Foundation Server).
 
 ## <a name="tokens-and-comments"></a>Tokens y comentarios
 
-Un comentario en el código precedido de un marcador de comentario y un token predefinido aparecerán en la ventana **Lista de tareas** . Por ejemplo, el siguiente comentario de C# tiene tres partes distintas:
+También aparece un comentario en el código precedido de un marcador de comentario y un token predefinido en la ventana **Lista de tareas**. Por ejemplo, el siguiente comentario de C# tiene tres partes distintas:
 
 - El marcador de comentario (`//`)
 
@@ -73,46 +66,45 @@ Un comentario en el código precedido de un marcador de comentario y un token pr
 
 Dado que `TODO` es un token predefinido, este comentario aparece como una tarea `TODO` en la lista.
 
-###  <a name="customTokens"></a> Tokens personalizados
+### <a name="custom-tokens"></a>Tokens personalizados
 
-De forma predeterminada, Visual Studio incluye los tokens siguientes: HACK, TODO, UNDONE, NOTE. Estos no distinguen mayúsculas de minúsculas.
+De manera predeterminada, Visual Studio incluye los tokens siguientes: `HACK`, `TODO`, `UNDONE` y `UnresolvedMergeConflict`. No distinguen mayúsculas de minúsculas. También puede crear tokens propios personalizados.
 
-También puede crear tokens propios personalizados.
-
-#### <a name="to-create-a-custom-token"></a>Para crear un token personalizado
+Para crear un token personalizado:
 
 1. En el menú **Herramientas** , elija **Opciones**.
 
 2. Abra la carpeta **Entorno** y, a continuación, elija **Lista de tareas**.
 
-     Se muestra la [página Opciones de la lista de tareas](../ide/reference/task-list-environment-options-dialog-box.md).
+   Se muestra la [página Opciones de la lista de tareas](../ide/reference/task-list-environment-options-dialog-box.md).
 
-     ![Lista de tareas de Visual Studio](../ide/media/vs2015_task_list_options.png "vs2015_task_list_options")
+   ![Lista de tareas de Visual Studio](../ide/media/vs2015_task_list_options.png)
 
-3. En la categoría **Tokens** , en el cuadro de texto **Nombre** , escriba el nombre del token; por ejemplo, "BUG".
+3. En el cuadro de texto **Nombre**, escriba el nombre del token, por ejemplo, **BUG**.
 
-4. En la lista desplegable **Prioridad** , elija una prioridad predeterminada para el nuevo token. Elija el botón de **Agregar** .
+4. En la lista desplegable **Prioridad** , elija una prioridad predeterminada para el nuevo token.
 
-###  <a name="cppComments"></a> Comentarios TODO en C++
+5. Haga clic en **Agregar**.
 
-De forma predeterminada, los comentarios TODO en C++ no se muestran en la ventana **Lista de tareas** . Esto se puede cambiar:
+### <a name="c-todo-comments"></a>Comentarios TODO en C++
 
-#### <a name="to-turn-off-c-todo-comments"></a>Para desactivar los comentarios TODO en C++
+De manera predeterminada, los comentarios TODO en C++ se muestran en la ventana **Lista de tareas**.
 
-En el menú **Herramientas**, elija **Opciones** > **Editor de texto** > **C/C++** > **Vista** > **Enumerar tareas de comentario** y establezca el valor en false.
+Para desactivar los comentarios TODO en C++, en el menú **Herramientas**, elija **Opciones** > **Editor de texto** > **C/C++** > **Vista** > **Enumerar tareas de comentario** y establezca el valor en **false**.
 
 ## <a name="shortcuts"></a>Accesos directos
 
-Un *acceso directo* es un marcador en el código al que se le realiza el seguimiento en la **Lista de tareas**; su icono es diferente al de los marcadores normales. Haga doble clic en el acceso directo en la **Lista de tareas** para ir a la ubicación correspondiente en el código.
+Un *acceso directo* es un marcador en el código cuyo seguimiento se hace en **Lista de tareas**. Tiene un icono diferente que los marcadores normales. Haga doble clic en el acceso directo en la **Lista de tareas** para ir a la ubicación correspondiente en el código.
 
-![Icono de acceso directo a la Lista de tareas de Visual Studio](../ide/media/vs2015_task_list_bookmark.png "vs2015_task_list_bookmark")
+![Icono de acceso directo de Visual Studio](../ide/media/vs2015_task_list_bookmark.png)
 
-### <a name="to-create-a-shortcut"></a>Para crear un acceso directo
+### <a name="create-a-shortcut"></a>Crear un acceso directo
 
-Para crear un acceso directo, inserte el puntero donde quiera colocar un acceso directo en el código. Elija **Edición** > **Marcadores** > **Agregar acceso directo de la Lista de tareas** o presione **CTRL** + **K**, **CTRL** + **H**.
+Para crear un acceso directo, inserte el puntero donde quiera colocar un acceso directo en el código. Elija **Edición** > **Marcadores** > **Agregar acceso directo de la Lista de tareas** o presione **CTRL**+**K**, **CTRL**+**H**.
 
 Para navegar por los accesos directos en el código, elija un acceso directo de la lista y, después, elija **Tarea siguiente** o **Tarea anterior** en el menú contextual.
 
 ## <a name="see-also"></a>Vea también
 
-[Lista de tareas, Entorno, Opciones (Cuadro de diálogo)](../ide/reference/task-list-environment-options-dialog-box.md)
+- [Lista de tareas, Entorno, Opciones (Cuadro de diálogo)](../ide/reference/task-list-environment-options-dialog-box.md)
+- [Comentarios de tareas (Visual Studio para Mac)](/visualstudio/mac/task-comments)

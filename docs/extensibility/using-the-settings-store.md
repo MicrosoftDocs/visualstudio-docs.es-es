@@ -1,5 +1,5 @@
 ---
-title: Uso del almacén de configuración | Documentos de Microsoft
+title: Mediante la configuración de Store | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,77 +13,78 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3919ee3973194967f9d0367ecd13c495b3b62af2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 72bfc23f585506d86a485d325611c9281f49a51d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949219"
 ---
 # <a name="using-the-settings-store"></a>Uso del almacén de configuración
 Hay dos tipos de almacenes de configuración:  
   
--   Opciones de configuración, que es la configuración de Visual Studio y VSPackage de solo lectura. Visual Studio combina los valores de todos los archivos de .pkgdef conocidos en este almacén.  
+- Opciones de configuración, que es la configuración de Visual Studio y VSPackage de solo lectura. Visual Studio combina los valores de todos los archivos .pkgdef conocido en este almacén.  
   
--   Configuración de usuario, que es la configuración grabable, como los que se muestran en páginas en el **opciones** cuadro de diálogo, páginas de propiedades y algunos otros cuadros de diálogo. Extensiones de Visual Studio pueden utilizar para el almacenamiento local de pequeñas cantidades de datos.  
+- Configuración de usuario, que es la configuración grabable, como los que se muestran en las páginas de la **opciones** cuadro de diálogo, páginas de propiedades y algunos otros cuadros de diálogo. Extensiones de Visual Studio pueden usarlas para el almacenamiento local de pequeñas cantidades de datos.  
   
- Este tutorial muestra cómo leer datos desde el almacén de configuración de configuración. Vea [escriben en el almacén de configuración de usuario](../extensibility/writing-to-the-user-settings-store.md) para obtener una explicación de cómo se escriben en el almacén de configuración de usuario.  
+  En este tutorial se muestra cómo leer datos desde el almacén de configuración de configuración. Consulte [escribir en el Store de la configuración de usuario](../extensibility/writing-to-the-user-settings-store.md) para obtener una explicación de cómo se escriben en el almacén de configuración de usuario.  
   
 ## <a name="creating-the-example-project"></a>Crear el proyecto de ejemplo  
- Esta sección muestra cómo crear un proyecto de extensión simple con un comando de menú de demostración.  
+ En esta sección se muestra cómo crear un proyecto de extensión simple con un comando de menú de demostración.  
   
-1.  Cada extensión de Visual Studio se inicia con un proyecto de implementación de VSIX que contendrá los activos de la extensión. Crear un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proyecto VSIX denominado `SettingsStoreExtension`. Puede encontrar la plantilla de proyecto VSIX en la **nuevo proyecto** en el cuadro de diálogo **Visual C# / extensibilidad**.  
+1. Todas las extensiones de Visual Studio se inicia con un proyecto de implementación de VSIX que contendrá los recursos de extensión. Crear un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proyecto VSIX denominado `SettingsStoreExtension`. Puede encontrar la plantilla de proyecto VSIX en el **nuevo proyecto** en el cuadro de diálogo **Visual C# / extensibilidad**.  
   
-2.  Ahora agregue una plantilla de elemento de comando personalizado denominada **SettingsStoreCommand**. En el **Agregar nuevo elemento** cuadro de diálogo, vaya a **Visual C# / extensibilidad** y seleccione **comando personalizado**. En el **nombre** campo en la parte inferior de la ventana, cambie el nombre de archivo de comandos para **SettingsStoreCommand.cs**. Para obtener más información sobre cómo crear un comando personalizado, vea [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2. Ahora agregue una plantilla de elemento de comando personalizado denominada **SettingsStoreCommand**. En el **Agregar nuevo elemento** cuadro de diálogo, vaya a **Visual C# / extensibilidad** y seleccione **comando personalizado**. En el **nombre** campo en la parte inferior de la ventana, cambie el nombre de archivo de comandos para **SettingsStoreCommand.cs**. Para obtener más información sobre cómo crear un comando personalizado, consulte [creación de una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
-## <a name="using-the-configuration-settings-store"></a>Uso del almacén de configuración de configuración  
- Esta sección muestra cómo detectar y mostrar valores de configuración.  
+## <a name="using-the-configuration-settings-store"></a>Utilizando el Store de opciones de configuración  
+ En esta sección se muestra cómo detectar y mostrar los valores de configuración.  
   
-1.  En el archivo SettingsStorageCommand.cs, agregue las siguientes instrucciones using:  
+1. En el archivo SettingsStorageCommand.cs, agregue las siguientes instrucciones using:  
   
-    ```  
-    using System.Collections.Generic;  
-    using Microsoft.VisualStudio.Settings;  
-    using Microsoft.VisualStudio.Shell.Settings;  
-    using System.Windows.Forms;  
-    ```  
+   ```  
+   using System.Collections.Generic;  
+   using Microsoft.VisualStudio.Settings;  
+   using Microsoft.VisualStudio.Shell.Settings;  
+   using System.Windows.Forms;  
+   ```  
   
-2.  En `MenuItemCallback`, quite el cuerpo del método y agregue estas líneas obtener el almacén de configuración de configuración:  
+2. En `MenuItemCallback`, quite el cuerpo del método y agregue estas líneas obtención el almacén de configuración de la configuración:  
   
-    ```  
-    SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
-    SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
-    ```  
+   ```  
+   SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
+   SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
+   ```  
   
-     El <xref:Microsoft.VisualStudio.Shell.Settings.ShellSettingsManager> es una clase de aplicación auxiliar administrada por el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> service.  
+    El <xref:Microsoft.VisualStudio.Shell.Settings.ShellSettingsManager> es una clase auxiliar administrada a través de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> service.  
   
-3.  Ahora, averigüe si se instalan herramientas de Windows Phone. El código debe ser similar al siguiente:  
+3. Ahora, averigüe si se instalan las herramientas de Windows Phone. El código debe tener este aspecto:  
   
-    ```  
-    private void MenuItemCallback(object sender, EventArgs e)  
-    {  
-        SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
-        SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
-        bool arePhoneToolsInstalled = configurationSettingsStore.CollectionExists(@"InstalledProducts\Microsoft Windows Phone Developer Tools");  
-        string message = "Microsoft Windows Phone Developer Tools: " + arePhoneToolsInstalled;  
-        MessageBox.Show(message);  
-    }  
-    ```  
+   ```  
+   private void MenuItemCallback(object sender, EventArgs e)  
+   {  
+       SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
+       SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
+       bool arePhoneToolsInstalled = configurationSettingsStore.CollectionExists(@"InstalledProducts\Microsoft Windows Phone Developer Tools");  
+       string message = "Microsoft Windows Phone Developer Tools: " + arePhoneToolsInstalled;  
+       MessageBox.Show(message);  
+   }  
+   ```  
   
-4.  Probar el código. Compile la solución y comience la depuración.  
+4. Probar el código. Compile la solución y comience la depuración.  
   
-5.  En la instancia experimental, en la **herramientas** menú, haga clic en **SettingsStoreCommand invocar**.  
+5. En la instancia experimental, en el **herramientas** menú, haga clic en **SettingsStoreCommand invocar**.  
   
-     Debería ver el siguiente cuadro de mensaje **herramientas de desarrollo de Microsoft Windows Phone:** seguido **True** o **False**.  
+    Debería ver el siguiente cuadro de mensaje **Microsoft Windows Phone Developer Tools:** seguido **True** o **False**.  
   
- Visual Studio guarda el almacén de configuración en el registro del sistema.  
+   Visual Studio mantiene el almacén de configuración en el registro del sistema.  
   
-#### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>Usar un editor del registro para comprobar los valores de configuración  
+#### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>Para usar un editor del registro para comprobar los valores de configuración  
   
 1.  Abra Regedit.exe.  
   
 2.  Vaya a HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.  
   
     > [!NOTE]
-    >  Asegúrese de que se trata de la clave que contiene \14.0Exp_Config\ y no \14.0_Config\\. Cuando se ejecuta la instancia experimental de Visual Studio, opciones de configuración están en el subárbol del registro "14.0Exp_Config".  
+    >  Asegúrese de que está mirando la clave que contiene \14.0Exp_Config\ y no \14.0_Config\\. Cuando se ejecuta la instancia experimental de Visual Studio, opciones de configuración están en el subárbol del registro "14.0Exp_Config".  
   
-3.  Expanda el nodo \Installed Products\. Si el mensaje en los pasos anteriores es **instalada de herramientas de desarrollador de Microsoft Windows Phone: True**, \Installed Products\ debe contener un nodo de herramientas de desarrollo de Microsoft Windows Phone. Si el mensaje es **instalada de herramientas de desarrollador de Microsoft Windows Phone: False**, a continuación, \Installed Products\ no debe contener un nodo de herramientas de desarrollo de Microsoft Windows Phone.
+3.  Expanda el nodo \Installed Products\. Si el mensaje en los pasos anteriores es **Microsoft Windows Phone Developer Tools instalado: True**, \Installed Products\ debe contener un nodo de Microsoft Windows Phone Developer Tools. Si el mensaje es **Microsoft Windows Phone Developer Tools instalado: False**, \Installed Products\ no debe contener un nodo de Microsoft Windows Phone Developer Tools.

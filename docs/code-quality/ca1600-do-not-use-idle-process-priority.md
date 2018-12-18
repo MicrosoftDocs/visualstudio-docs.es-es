@@ -1,6 +1,7 @@
 ---
 title: 'CA1600: No utilizar la prioridad del proceso inactiva'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,13 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d052d2e6d9e3b47217cc6ce25fe752e0e2859437
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0c1db098a485002d97aaf986fbac95e35519351b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924698"
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: No utilizar la prioridad del proceso inactiva
+
 |||
 |-|-|
 |TypeName|DoNotUseIdleProcessPriority|
@@ -30,13 +33,13 @@ ms.lasthandoff: 04/19/2018
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Motivo
- Esta regla se produce cuando se establecen procesos en `ProcessPriorityClass.Idle`.
+ Esta regla se produce cuando se establecen los procesos en `ProcessPriorityClass.Idle`.
 
 ## <a name="rule-description"></a>Descripción de la regla
- No establezca la prioridad de proceso en Idle. Los procesos que tienen `System.Diagnostics.ProcessPriorityClass.Idle` ocupan la CPU cuando en caso contrario, estaría inactiva y, por lo tanto, se bloqueará en espera.
+ No establezca la prioridad de proceso en Idle. Los procesos que tienen `System.Diagnostics.ProcessPriorityClass.Idle` ocupan la CPU cuando estaría inactiva y, por lo tanto, se bloqueará en espera.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Establezca los procesos en `ProcessPriorityClass.BelowNormal`.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Esta regla se debe suprimir sólo cuando es necesaria la prioridad del proceso inactiva y las consideraciones de movilidad pueden hacer caso omiso sin ningún riesgo.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ Esta regla se debe suprimir solo cuando se requiere la prioridad del proceso inactiva y las consideraciones de movilidad pueden hacer caso omiso sin ningún riesgo.

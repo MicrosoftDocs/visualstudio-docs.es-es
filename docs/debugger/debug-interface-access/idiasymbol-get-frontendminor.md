@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_frontendminor | Documentos de Microsoft'
+title: Get_frontendminor | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b020762aecbe25b58759777b1a72b42c71e3600b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f02950b3eb3f55cb46be9689403d3c4f743fc988
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923914"
 ---
 # <a name="idiasymbolgetfrontendminor"></a>IDiaSymbol::get_frontEndMinor
 Recupera el número de versión secundaria de front-end.  
@@ -33,24 +34,24 @@ HRESULT get_frontEndMinor (
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve el número de versión secundaria de front.end.  
+ [out] Devuelve el número de versión secundaria front.end.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
 ## <a name="remarks"></a>Comentarios  
- Un compilador normalmente se compone de dos elementos principales: el front-end (el analizador), que se encarga de analizar el código fuente en un formato intermedio, y un back-end (generador de código), que convierte el formato intermedio en el ensamblado. No es raro que el front-end tenga una versión diferente que el back-end.  
+ Un compilador normalmente se compone de dos elementos principales: el front-end (analizador), que controla el análisis del código fuente en un formato intermedio, y un back-end (generador de código), que convierte el formato intermedio en el ensamblado. No es raro que el front-end tener una versión diferente que el back-end.  
   
- Un front-end o un número de versión de back-end se compone de tres partes: \<principal >.\< secundaria >. \<generar >, donde \<principales > es el número de versión principal, \<secundaria > es el número de versión secundaria, y \<de compilación > es el número de compilación. Por ejemplo, 13.10.3077.  
+ Un front-end o el número de versión de back-end se compone de tres partes: \<principal >.\< secundaria >. \<compilar >, donde \<principales > es el número de versión principal, \<menores > es el número de versión secundaria, y \<compilar > es el número de compilación. Por ejemplo, 13.10.3077.  
   
 ## <a name="requirements"></a>Requisitos  
   
 |Requisito|Descripción|  
 |-----------------|-----------------|  
-|Encabezado:|dia2.h|  
+|Encabezado:|Dia2.h|  
 |Versión:|SDK de DIA v7.0|  
   
 ## <a name="see-also"></a>Vea también  

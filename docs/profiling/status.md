@@ -10,20 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3611b7a352028babc28cecef2c04753e44d9796e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5cd721dc6682057519821ee155ac8a5d803769dc
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669327"
 ---
 # <a name="status"></a>Estado
-La opción **Status** de VSPerfCmd.exe muestra información sobre el estado del generador de perfiles y los procesos de los que actualmente se está generando el perfil.  
+La opción **Status** de *VSPerfCmd.exe* muestra información sobre el estado del generador de perfiles y los procesos de los que actualmente se está generando el perfil.  
   
- La opción **Status** debe ser la única especificada en la línea de comandos. El generador de perfiles se debe inicializar con la opción **Start** de VSPerfCmd.exe antes de que se pueda mostrar cualquier estado.  
+ La opción **Status** debe ser la única especificada en la línea de comandos. El generador de perfiles se debe inicializar con la opción **Start** de *VSPerfCmd.exe* para que se pueda mostrar cualquier estado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cmd  
 VSPerfCmd.exe /Status  
 ```  
   
@@ -73,6 +74,6 @@ VSPerfCmd.exe /Status
   
 ## <a name="see-also"></a>Vea también  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Generar perfiles de servicios](../profiling/command-line-profiling-of-services.md)
+ [Generación de perfiles de aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Generación de perfiles de aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Generar perfiles para servicios](../profiling/command-line-profiling-of-services.md)

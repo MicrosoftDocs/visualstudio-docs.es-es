@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130708"
 ---
 # <a name="properties-window-buttons"></a>Botones de la ventana de propiedades
 Según el lenguaje de desarrollo y el tipo de producto, se muestran algunos botones de forma predeterminada en la barra de herramientas para el **propiedades** ventana. En todos los casos, el **por categorías**, **Alphabetized**, **propiedades**, y **páginas de propiedades** se muestran los botones. En Visual C# y Visual Basic, la **eventos** también se muestra el botón. En determinados proyectos de Visual C++, el **VC ++ mensajes** y **VC invalida** se muestran los botones. Botones adicionales pueden mostrarse para otros tipos de proyecto. Para obtener más información acerca de los botones en la **propiedades** ventana, consulte [ventana propiedades](../../ide/reference/properties-window.md).  

@@ -1,5 +1,5 @@
 ---
-title: Elemento KeyBinding | Documentos de Microsoft
+title: Elemento de enlace de teclado | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,16 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 226a5913cbaa151689a886dc88986f7de8cc29f6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77fb94e702615d0d27ce2587c034000f6c4b3e3d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905108"
 ---
-# <a name="keybinding-element"></a>Elemento KeyBinding
-El elemento KeyBinding especifica métodos abreviados de teclado para los comandos.  
+# <a name="keybinding-element"></a>KeyBinding (elemento)
+El elemento de enlace de teclado especifica métodos abreviados de teclado para los comandos.  
   
- Comandos pueden tener uno o dos enlaces de clave asociados a ellos. Un ejemplo de un enlace de clave única es CTRL + S para la **guardar** comando. Los enlaces de teclado duales requieren dos combinaciones de teclas sucesivas para desencadenar un comando. Un ejemplo de una combinación de teclas dual es CTRL + K, CTRL + K para establecer un marcador.  
+ Los comandos pueden tener uno o dos enlaces de teclado asociados con ellos. Es un ejemplo de un enlace de clave único **Ctrl**+**S** para el **guardar** comando. Los enlaces de teclado duales requieren dos combinaciones de teclas sucesivas para desencadenar un comando. Es un ejemplo de un enlace dual clave <strong>Ctrl*+</strong>K<strong>,</strong>Ctrl<strong>+</strong>K** para establecer un marcador.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,13 +41,13 @@ El elemento KeyBinding especifica métodos abreviados de teclado para los comand
 |---------------|-----------------|  
 |guid|Requerido.|  
 |id|Requerido.|  
-|editor|Requerido. El editor de GUID indica el contexto de edición para el que se activará este método abreviado de teclado. El valor de ámbito de enlace global es "guidVSStd97".|  
-|key1|Requerido. Los valores válidos son clasificable por tipo todos los caracteres alfanuméricos y también valores hexadecimales de dos dígitos precedidos por 0 x y [VK_constants](https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731.aspx).|  
-|MOD1|Opcional. Cualquier combinación de teclas CTRL, ALT y MAYÚS separados por espacios.|  
-|key2|Opcional. Los valores válidos son clasificable por tipo todos los caracteres alfanuméricos y también valores hexadecimales de dos dígitos precedidos por 0 x y [VK_constants](https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731.aspx).|  
-|MOD2|Opcional. Cualquier combinación de teclas CTRL, ALT y MAYÚS separados por espacios.|  
-|emulador|Opcional.|  
-|Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|editor|Requerido. El GUID de editor indica el contexto de edición para el que este método abreviado de teclado estará activa. El valor de ámbito de enlace global es "guidVSStd97".|  
+|key1|Requerido. Los valores válidos incluyen caracteres alfanuméricos clasificable todo por tipo y también valores hexadecimales de dos dígitos precedidos por 0 x y [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
+|MOD1|Opcional. Cualquier combinación de **Ctrl**, **Alt**, y **MAYÚS** separados por espacios.|  
+|key2|Opcional. Los valores válidos incluyen caracteres alfanuméricos clasificable todo por tipo y también valores hexadecimales de dos dígitos precedidos por 0 x y [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
+|MOD2|Opcional. Cualquier combinación de **Ctrl**, **Alt**, y **MAYÚS** separados por espacios.|  
+|Emulador|Opcional.|  
+|Condición|Opcional. Consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
@@ -59,7 +60,7 @@ El elemento KeyBinding especifica métodos abreviados de teclado para los comand
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|[KeyBindings (Elemento)](../extensibility/keybindings-element.md)|Los elementos de un KeyBinding de grupos y otras agrupaciones de enlaces de teclado.|  
+|[KeyBindings (elemento)](../extensibility/keybindings-element.md)|Agrupa los elementos de enlace de teclado y otras agrupaciones de los enlaces de teclado.|  
   
 ## <a name="example"></a>Ejemplo  
   
@@ -73,5 +74,5 @@ El elemento KeyBinding especifica métodos abreviados de teclado para los comand
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Elemento de enlaces de teclado](../extensibility/keybindings-element.md)   
- [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [KeyBindings (elemento)](../extensibility/keybindings-element.md)   
+ [Archivos visuales Studio comando table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

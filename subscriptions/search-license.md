@@ -1,28 +1,31 @@
 ---
 title: Búsqueda y filtrado | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.author: tglee
+manager: douge
+ms.date: 06/27/2018
+ms.topic: conceptual
 description: Obtenga más información sobre cómo los administradores pueden buscar suscriptores individuales o grupos en el Portal de administradores.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 45786b846cb62f5c02d6cc1e0e1c9fcb7dbb1993
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 2caf95d4b24fd686a885a122657b2dc040b80cdf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883398"
 ---
-# <a name="searching-and-filtering-subscribers-in-visual-studio-subscriptions"></a>Búsqueda y filtrado de suscriptores en suscripciones de Visual Studio
-El Portal de administradores de suscripciones de Visual Studio permite encontrar un subconjunto concreto de suscriptores según diversos criterios. Puede filtrar la lista de suscriptores por nombre, dirección de correo electrónico, nivel de suscripción y otra información de índole diversa. 
+# <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Búsqueda y filtrado de suscriptores en suscripciones de Visual Studio
 
-1.  Para buscar un grupo de suscriptores específico, en la parte superior de la tabla, haga clic en **Filtrar**.
+El Portal de administradores de suscripciones de Visual Studio permite encontrar un subconjunto concreto de suscriptores según diversos criterios. Puede filtrar la lista de suscriptores por nombre, dirección de correo electrónico, nivel de suscripción y otra información.
 
-    ![Filtrado de suscriptores](_img\edit-license\filter-list.png)
+1. Para buscar un grupo específico de suscriptores, seleccione **Filtrar**.
+   > [!div class="mx-imgBorder"]
+   > ![Seleccione Filtrar para buscar en una lista de suscriptores.](media/filter-list.png)
 
-2.  Verá que aparecen muchos campos que puede utilizar como criterios de búsqueda. Seleccione los criterios deseados que quiere usar como base de la búsqueda y, luego, haga clic en **Filtrar**. Verá una lista de suscriptores que coinciden con los criterios seleccionados.
+2. Indique los criterios que quiera usar como base de la búsqueda y, luego, vuelva a seleccionar **Filtrar**.
+   > [!div class="mx-imgBorder"]
+   > ![Use los campos disponibles para filtrar los datos de los suscriptores.](media/filter-subscribers.png)
 
-    ![Búsqueda de suscriptores](_img\search-filter\search-filter-find.png)
-
+   La lista de suscriptores coincidirá con los criterios que haya elegido.

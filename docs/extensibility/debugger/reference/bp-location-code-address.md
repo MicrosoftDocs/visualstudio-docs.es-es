@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_ADDRESS | Documentos de Microsoft
+title: BP_LOCATION_CODE_ADDRESS | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6d0972b4e326cabd00341db685a0b73c8c104c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cd694d88348a13aefa1dfd7851c6897523009919
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930042"
 ---
 # <a name="bplocationcodeaddress"></a>BP_LOCATION_CODE_ADDRESS
 Describe la ubicación de un punto de interrupción en una dirección en el código.  
@@ -37,7 +38,7 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
   
 ## <a name="members"></a>Miembros  
  `bstrContext`  
- El contexto del punto de interrupción, normalmente un nombre de método o una función como se ve en una pila de llamadas.  
+ El contexto del punto de interrupción, normalmente un nombre de método o una función como se muestra en una pila de llamadas.  
   
  `bstrModuleUrl`  
  La dirección URL del módulo que contiene el punto de interrupción.  
@@ -46,7 +47,7 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
  El nombre de la función que contiene el punto de interrupción.  
   
  `bstrAddress`  
- La dirección del punto de interrupción, que se analiza mediante un evaluador de expresiones para enlazarlo a un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) objeto.  
+ La dirección del punto de interrupción, que se analiza en un evaluador de expresiones para enlazarlo a un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) objeto.  
   
 ## <a name="remarks"></a>Comentarios  
  Esta estructura es un miembro de la [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) estructura como parte de una unión.  

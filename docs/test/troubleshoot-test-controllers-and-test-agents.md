@@ -1,7 +1,7 @@
 ---
-title: Solucionar problemas de controladores y agentes de pruebas en Visual Studio | Microsoft Docs
+title: Solución de problemas de controladores de pruebas y agentes de pruebas
 ms.date: 10/20/2016
-ms.topic: conceptual
+ms.topic: troubleshooting
 helpviewer_keywords:
 - load tests, test controllers
 - load tests, troubleshooting
@@ -11,38 +11,43 @@ ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3d785a559ff59a96861798a7c96bfdcb4147b7ec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 274585d864393877b225fe6231c1f775342620f6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894747"
 ---
-# <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Estrategias para solucionar problemas de controladores de pruebas y agentes de prueba en pruebas de carga
+# <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Estrategias para solucionar problemas de controladores de pruebas y agentes de pruebas en pruebas de carga
 
 En este artículo se tratan algunos problemas comunes que pueden aparecer cuando se trabaja con controladores y agentes de pruebas en Visual Studio.
 
-##  <a name="unable-to-collect-performance-counters-on-test-agent-computer"></a>No se pueden recopilar contadores de rendimiento en un equipo de agente de prueba
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Al ejecutar una prueba de carga, puede recibir errores al intentar conectarse a un equipo de agente de prueba y recopilar los contadores de rendimiento. El servicio de registro remoto es el servicio responsable de proporcionar los datos del contador de rendimiento a un equipo remoto. En algunos sistemas operativos, el servicio Registro remoto no se inicia automáticamente. Para corregir este problema, inicie manualmente el servicio Registro remoto.
+##  <a name="unable-to-collect-performance-counters-on-test-agent-computer"></a>No se pueden recopilar contadores de rendimiento en el equipo de agente de pruebas
+
+Al ejecutar una prueba de carga, puede recibir errores al intentar conectarse a un equipo de agente de prueba y recopilar los contadores de rendimiento. El servicio de registro remoto es el servicio responsable de proporcionar los datos del contador de rendimiento a un equipo remoto. En algunos sistemas operativos, el servicio Registro remoto no se inicia automáticamente. Para corregir este problema, inicie manualmente el servicio Registro remoto.
 
 > [!NOTE]
->  Puede acceder al servicio Registro remoto en el **Panel de control**. Elija **Herramientas administrativas** y, luego, **Servicios**.
+> Puede acceder al servicio Registro remoto en el **Panel de control**. Elija **Herramientas administrativas** y, luego, **Servicios**.
 
- Otro motivo de este problema es no disponer de los permisos adecuados para leer los contadores de rendimiento. En las ejecuciones de pruebas locales, la cuenta del usuario que ejecuta la prueba debe ser miembro del grupo Usuarios avanzados, o superior, o del grupo Usuarios del monitor de sistema. En las ejecuciones de pruebas remotas, la cuenta en la que se configura la ejecución del controlador debe ser miembro del grupo Usuarios avanzados, o superior, o del grupo Usuarios del monitor del sistema.
+Otro motivo de este problema es no disponer de los permisos adecuados para leer los contadores de rendimiento. En las ejecuciones de pruebas locales, la cuenta del usuario que ejecuta la prueba debe ser miembro del grupo Usuarios avanzados, o superior, o del grupo Usuarios del monitor de sistema. En las ejecuciones de pruebas remotas, la cuenta en la que se configura la ejecución del controlador debe ser miembro del grupo Usuarios avanzados, o superior, o del grupo Usuarios del monitor del sistema.
 
-## <a name="setting-the-logging-level-on-a-test-controller-computer"></a>Establecer el nivel del registro de un equipo de controlador de pruebas
- Puede controlar el nivel de registro de un equipo de controlador de pruebas. Resulta útil cuando se intenta diagnosticar un problema cuando se ejecuta una prueba de carga en un entorno.
+## <a name="set-the-logging-level-on-a-test-controller-computer"></a>Establecer el nivel del registro en un equipo de controlador de pruebas
+
+Puede controlar el nivel de registro de un equipo de controlador de pruebas. Resulta útil cuando se intenta diagnosticar un problema cuando se ejecuta una prueba de carga en un entorno.
 
 ### <a name="to-set-the-logging-level-on-a-test-controller-computer"></a>Para establecer el nivel del registro de un equipo de controlador de pruebas
 
 1.  Detenga el servicio de controlador de pruebas. En un símbolo del sistema, escriba `net stop vsttcontroller`.
 
-2.  Abra el archivo QTController.exe.config. Este archivo se encuentra en el directorio de instalación del controlador.
+2.  Abra el archivo *QTController.exe.config*. Este archivo se encuentra en el directorio de instalación del controlador.
 
 3.  Edite la entrada del modificador `EqtTraceLevel` de la sección de diagnósticos del sistema del archivo. Su código debería ser similar a este:
 
-    ```
+    ```xml
     <system.diagnostics>
         <trace autoflush="true" indentsize="4">
             <listeners>
@@ -65,31 +70,32 @@ En este artículo se tratan algunos problemas comunes que pueden aparecer cuando
 
 5.  Inicie el servicio del controlador. En un símbolo del sistema, escriba `net start vsttcontroller`.
 
- Este proceso se aplica al controlador de pruebas, y al servicio y al proceso del agente de prueba. Al diagnosticar los problemas, es útil habilitar el registro en los tres procesos. El procedimiento para establecer el nivel de registro es el mismo para los tres procesos, tal y como se especificó anteriormente para el controlador de pruebas. Para establecer los niveles de registro del servicio del agente de prueba y del proceso del agente, use los siguientes archivos de configuración:
+Este proceso se aplica al controlador de pruebas, y al servicio y al proceso del agente de prueba. Al diagnosticar los problemas, es útil habilitar el registro en los tres procesos. El procedimiento para establecer el nivel de registro es el mismo para los tres procesos, tal y como se especificó anteriormente para el controlador de pruebas. Para establecer los niveles de registro del servicio del agente de prueba y del proceso del agente, use los siguientes archivos de configuración:
 
--   **QTController.exe.config** Servicio del controlador.
+-   *QTController.exe.config* Servicio del controlador.
 
--   **QTAgentService.exe.config** Servicio del agente.
+-   *QTAgentService.exe.config* Servicio del agente.
 
--   **QTDCAgent(32).exe.config** Proceso del adaptador de datos del agente para arquitectura de 32 bits.
+-   *QTDCAgent(32).exe.config* Proceso del adaptador de datos del agente para arquitectura de 32 bits.
 
--   **QTDCAgent(64).exe.config** Proceso del adaptador de datos del agente para arquitectura de 64 bits.
+-   *QTDCAgent(64).exe.config* Proceso del adaptador de datos del agente para arquitectura de 64 bits.
 
--   **QTAgent(32).exe.config** Proceso de prueba del agente para arquitectura de 32 bits.
+-   *QTAgent(32).exe.config* Proceso de prueba del agente para arquitectura de 32 bits.
 
--   **QTAgent(64).exe.config** Proceso de prueba del agente para arquitectura de 64 bits.
+-   *QTAgent(64).exe.config* Proceso de prueba del agente para arquitectura de 64 bits.
 
-## <a name="binding-a-test-controller-to-a-network-adapter"></a>Enlazar un controlador de pruebas a un adaptador de red
- Al intentar configurar un agente de prueba, podría recibir el siguiente error:
+## <a name="bind-a-test-controller-to-a-network-adapter"></a>Enlazar un controlador de pruebas a un adaptador de red
 
- **Error 8110. No se puede conectar con el equipo de controlador especificado ni acceder al objeto de controlador.**
+Al intentar configurar un agente de prueba, podría recibir el siguiente error:
 
- Si se instala el controlador de pruebas en un equipo con varios adaptadores de red, se puede producir este error.
+**Error 8110. No se puede conectar con el equipo de controlador especificado ni acceder al objeto de controlador.**
+
+Si se instala el controlador de pruebas en un equipo con varios adaptadores de red, se puede producir este error.
 
 > [!NOTE]
->  También es posible instalar los agentes de prueba correctamente y no detectar este problema hasta que se ejecute una prueba.
+> También es posible instalar los agentes de prueba correctamente y no detectar este problema hasta que se ejecute una prueba.
 
- Para corregir este error, debe enlazar el controlador de pruebas a uno de los adaptadores de red. Debe establecer la propiedad `BindTo` en el controlador de pruebas y, a continuación, cambiar el agente de prueba para que haga referencia al controlador de pruebas mediante la dirección IP en vez del nombre. Los pasos se facilitan en los procedimientos siguientes.
+Para corregir este error, debe enlazar el controlador de pruebas a uno de los adaptadores de red. Debe establecer la propiedad `BindTo` en el controlador de pruebas y, a continuación, cambiar el agente de prueba para que haga referencia al controlador de pruebas mediante la dirección IP en vez del nombre. Los pasos se facilitan en los procedimientos siguientes.
 
 ### <a name="to-obtain-the-ip-address-of-the-network-adapter"></a>Para obtener la dirección IP del adaptador de red
 
@@ -109,7 +115,7 @@ En este artículo se tratan algunos problemas comunes que pueden aparecer cuando
 
 1.  Detenga el servicio de controlador de pruebas. En un símbolo del sistema, escriba `net stop vsttcontroller`.
 
-2.  Abra el archivo QTController.exe.config. Este archivo se encuentra en %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE.
+2.  Abra el archivo *QTController.exe.config*. Este archivo se encuentra en *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
 3.  Agregue una entrada para la propiedad `BindTo` a la configuración de la aplicación. Especifique la dirección IP del adaptador de red al que desee enlazar el controlador. Su código debería ser similar a este:
 
@@ -133,7 +139,7 @@ En este artículo se tratan algunos problemas comunes que pueden aparecer cuando
 
 -   Vuelva a ejecutar el proceso de instalación del agente de prueba. Esta vez, especifique la dirección IP del controlador de pruebas en lugar de su nombre.
 
- Este proceso se aplica al controlador de pruebas, y al servicio y al proceso del agente de prueba. El valor de la propiedad `BindTo` se debe establecer para cada proceso que se ejecute en un equipo que tenga más de un adaptador de red. El procedimiento para establecer la propiedad `BindTo` es el mismo para los tres procesos, tal y como se especificó anteriormente para el controlador de pruebas. Para establecer los niveles de registro del servicio del agente de pruebas y el proceso del agente de pruebas, use los archivos de configuración que se especifican en [Establecer el nivel del registro de un equipo de controlador de pruebas](#Logging).
+Este proceso se aplica al controlador de pruebas, y al servicio y al proceso del agente de prueba. El valor de la propiedad `BindTo` se debe establecer para cada proceso que se ejecute en un equipo que tenga más de un adaptador de red. El procedimiento para establecer la propiedad `BindTo` es el mismo para los tres procesos, tal y como se especificó anteriormente para el controlador de pruebas. Para establecer los niveles de registro del servicio del agente de pruebas y el proceso del agente de pruebas, use los archivos de configuración que se especifican en [Establecer el nivel del registro en un equipo de controlador de pruebas](#set-the-logging-level-on-a-test-controller-computer).
 
 ## <a name="see-also"></a>Vea también
 

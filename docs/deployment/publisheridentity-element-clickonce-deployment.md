@@ -1,5 +1,5 @@
 ---
-title: '&lt;publisherIdentity&gt; elemento (implementación de ClickOnce) | Documentos de Microsoft'
+title: '&lt;publisherIdentity&gt; elemento (implementación ClickOnce) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,30 +18,31 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ad10cae4ebd3aee6b65ad408ea3a3df3f82fd02
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f33772a35e8e47a77e0fdaddd28b7471ef5abcce
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081415"
 ---
-# <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt; elemento (implementación de ClickOnce)
+# <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt; elemento (implementación ClickOnce)
 Contiene información sobre el editor que firmó este manifiesto de implementación.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```xml  
 <publisherIdentity  
    name  
    issuerKeyHash  
 />  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementos y atributos  
- El `publisherIdentity` elemento es necesario para los manifiestos firmados. La siguiente tabla muestra los atributos que la `publisherIdentity` admite el elemento.  
+## <a name="elements-and-attributes"></a>Los elementos y atributos  
+ El `publisherIdentity` elemento es necesario para los manifiestos firmados. En la tabla siguiente se muestra los atributos que el `publisherIdentity` admite el elemento.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`name`|Requerido. Describe la identidad de la entidad que publicó esta aplicación.|  
+|`name`|Requerido. Describe la identidad de la entidad que publicó la aplicación.|  
 |`issuerKeyHash`|Requerido. Contiene el hash SHA-1 de la clave pública del emisor del certificado.|  
   
 #### <a name="parameters"></a>Parámetros  

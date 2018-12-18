@@ -1,5 +1,5 @@
 ---
-title: Elemento UsedCommand | Documentos de Microsoft
+title: UsedCommand (elemento) | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,14 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4888733abf142f6582706406decbea0bf84ce519
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4f7df36c05de0d8dc2f68ab8e41afa11366276b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856306"
 ---
-# <a name="usedcommand-element"></a>Elemento UsedCommand
-Permite que un paquete VSPackage tener acceso a un comando que se define en otro archivo de vsct. Por ejemplo, si el paquete de VS utiliza la norma **copia** comando, que se define mediante el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] shell, puede agregar el comando a un menú o barra de herramientas sin necesidad de volver a implementarlo.  
+# <a name="usedcommand-element"></a>UsedCommand (Elemento)
+Habilita un VSPackage tener acceso a un comando que se define en otro archivo de vsct. Por ejemplo, si el paquete VSPackage usa el estándar **copia** comando, que se define mediante el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] shell, puede agregar el comando a un menú o barra de herramientas sin volver a implementarlo.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -36,9 +37,9 @@ Permite que un paquete VSPackage tener acceso a un comando que se define en otro
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|guid|Requerido. El GUID del par de Id. de GUID que identifica el comando.|  
-|id|Requerido. El identificador del par de Id. de GUID que identifica el comando.|  
-|Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|guid|Requerido. El GUID del par de identificador de GUID que identifica el comando.|  
+|id|Requerido. El identificador del par de identificador de GUID que identifica el comando.|  
+|Condición|Opcional. Consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
@@ -50,10 +51,10 @@ Permite que un paquete VSPackage tener acceso a un comando que se define en otro
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|[UsedCommands (Elemento)](../extensibility/usedcommands-element.md)|Los elementos de UsedCommand de grupos y otras agrupaciones UsedCommands.|  
+|[UsedCommands (Elemento)](../extensibility/usedcommands-element.md)|Agrupa los elementos de UsedCommand y otras agrupaciones UsedCommands.|  
   
 ## <a name="remarks"></a>Comentarios  
- Mediante la adición de un comando para la `<UsedCommands>` informa de un VSPackage de elemento, el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] entorno que el VSPackage requiere que el comando. Debe agregar una `<UsedCommand>` (elemento) para cualquier comando que necesita el paquete no puede incluirse en todas las versiones y las configuraciones de Visual Studio. Por ejemplo, si el paquete llama a un comando que es específico de Visual C++, el comando no estará disponible para los usuarios de Visual Web Developer a menos que incluya un `<UsedCommand>` (elemento) para el comando.  
+ Mediante la adición de un comando para el `<UsedCommands>` informa un VSPackage de elemento, el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSPackage que requiere que el comando del entorno. Debe agregar una `<UsedCommand>` (elemento) para cualquier comando que necesita el paquete no puede incluirse en todas las versiones y configuraciones de Visual Studio. Por ejemplo, si el paquete llama a un comando que es específico de Visual C++, el comando no estará disponible para los usuarios de Visual Web Developer a menos que incluya un `<UsedCommand>` (elemento) para el comando.  
   
 ## <a name="example"></a>Ejemplo  
   
@@ -66,5 +67,5 @@ Permite que un paquete VSPackage tener acceso a un comando que se define en otro
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Elemento UsedCommands](../extensibility/usedcommands-element.md)   
+ [UsedCommands (elemento)](../extensibility/usedcommands-element.md)   
  [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

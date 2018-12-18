@@ -1,5 +1,5 @@
 ---
-title: Crear un complemento de nivel de solicitud para pruebas de rendimiento web en Visual Studio | Microsoft Docs
+title: Creación de un complemento de nivel de solicitud para pruebas de rendimiento web en Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,26 +9,30 @@ ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ea574f2f0c9b4d3f0f6da029433b5b600a400702
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cf94de633554cef495b0a9a023426ac49de75c76
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895280"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Cómo: Crear un complemento de nivel de solicitud
 
 Las *solicitudes* son las instrucciones declarativas que constituyen las pruebas de rendimiento web. Los complementos de pruebas de rendimiento web permiten aislar y reutilizar código fuera de las principales instrucciones declarativas de la prueba de rendimiento web. Puede crear complementos y agregarlos a una solicitud individual, así como a la prueba de rendimiento web que la contiene. Un *complemento de solicitud* personalizado resulta útil para llamar al código cuando una determinada solicitud se ejecuta en una prueba de rendimiento web.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 Cada complemento de solicitud de prueba de rendimiento web tiene un método PreRequest y un método PostRequest. Después de asociar un complemento de solicitud a una solicitud HTTP determinada, se desencadenará el evento PreRequest antes de que se emita la solicitud y se desencadenará PostRequest una vez recibida la respuesta.
 
 Para crear un complemento de solicitud de prueba de rendimiento web personalizado, derive su propia clase de la clase base <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>.
 
-Puede utilizar complementos de solicitud de prueba de rendimiento web personalizados con las pruebas de rendimiento web que haya grabado. Los complementos de solicitud de prueba de rendimiento web personalizados permiten, con una cantidad mínima de código, obtener mayor control sobre las pruebas de rendimiento web. Sin embargo, también puede utilizarlos con pruebas de rendimiento web codificadas. Vea [Generar y ejecutar una prueba de rendimiento web codificada](../test/generate-and-run-a-coded-web-performance-test.md).
+Puede utilizar complementos de solicitud de prueba de rendimiento web personalizados con las pruebas de rendimiento web que haya grabado. Los complementos de solicitud de prueba de rendimiento web personalizados permiten, con una cantidad mínima de código, obtener mayor control sobre las pruebas de rendimiento web. Sin embargo, también puede utilizarlos con pruebas de rendimiento web automatizadas. Vea [Generar y ejecutar una prueba de rendimiento web codificada](../test/generate-and-run-a-coded-web-performance-test.md).
 
 ## <a name="to-create-a-request-level-plug-in"></a>Para crear un complemento de nivel de solicitud
 
-1.  En el Explorador de soluciones, haga clic con el botón secundario del mouse en la solución. Seleccione **Agregar** y, luego, elija **Nuevo proyecto**.
+1.  En el **Explorador de soluciones**, haga clic con el botón derecho en la solución, seleccione **Agregar** y luego elija **Nuevo proyecto**.
 
      Aparecerá el cuadro de diálogo **Agregar nuevo proyecto**.
 
@@ -38,23 +42,23 @@ Puede utilizar complementos de solicitud de prueba de rendimiento web personaliz
 
 4.  En el cuadro de texto **Nombre**, escriba un nombre para la clase y elija **Aceptar**.
 
-     El nuevo proyecto de biblioteca de clases se agregará al Explorador de soluciones y la nueva clase aparecerá en el Editor de código.
+     El nuevo proyecto de biblioteca de clases se agrega al **Explorador de soluciones** y la nueva clase aparece en el **Editor de código**.
 
-5.  En el Explorador de soluciones, haga clic con el botón derecho en la carpeta **Referencias** de la nueva biblioteca de clases y seleccione **Agregar referencia**.
+5.  En el **Explorador de soluciones**, haga clic con el botón derecho en la carpeta **Referencias** de la nueva biblioteca de clases y seleccione **Agregar referencia**.
 
      Aparecerá el cuadro de diálogo **Agregar referencia**.
 
 6.  Elija la pestaña **.NET**, desplácese hacia abajo, seleccione **Microsoft.VisualStudio.QualityTools.WebTestFramework** y, luego, elija **Aceptar**.
 
-     La referencia a **Microsoft.VisualStudio.QualityTools.WebTestFramework** se agrega a la carpeta **Referencias** del Explorador de soluciones.
+     La referencia a **Microsoft.VisualStudio.QualityTools.WebTestFramework** se agrega a la carpeta **Referencias** del **Explorador de soluciones**.
 
-7.  En el Explorador de soluciones, haga clic en el nodo superior del proyecto de prueba de carga y rendimiento web que contiene la prueba de carga a la que desea agregar el complemento de prueba de solicitud de prueba de rendimiento web. Seleccione **Agregar referencia**.
+7.  En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo superior del proyecto de prueba de carga y rendimiento web que contiene la prueba de carga a la que quiere agregar el complemento de prueba de solicitud de prueba de rendimiento web. Seleccione **Agregar referencia**.
 
      Aparecerá el cuadro de diálogo **Agregar referencia**.
 
-8.  Elija la pestaña **Proyectos**, seleccione el proyecto de biblioteca de clases y, luego, elija **Aceptar**.
+8.  Elija la pestaña **Proyectos**, seleccione el **proyecto de biblioteca de clases** y luego haga clic en **Aceptar**.
 
-9. En el Editor de código, escriba el código del complemento. En primer lugar, cree una clase pública derivada de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>.
+9. En el **Editor de código**, escriba el código del complemento. En primer lugar, cree una clase pública derivada de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>.
 
 10. Implemente el código dentro de uno de los controladores de eventos <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PreRequest*> y <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PostRequest*> o en ambos. Vea una implementación del ejemplo en la sección Ejemplo siguiente.
 

@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31456430"
 ---
 # <a name="assertion-failed-dialog-box"></a>Error de aserción (cuadro de diálogo)
 Una instrucción de aserción especifica una condición que se espera que sea cierta (valor true) en un determinado punto del programa. Si la condición no es cierta, la aserción produce un error, la ejecución del programa se interrumpe y aparece este cuadro de diálogo.  

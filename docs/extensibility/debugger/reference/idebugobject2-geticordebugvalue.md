@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::GetICorDebugValue | Documentos de Microsoft
+title: IDebugObject2::GetICorDebugValue | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82315e1b2170f38cae296e2a9131f4b235add26b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 80a70454bd28c3b59e53ee9bc1222361291e2399
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861103"
 ---
 # <a name="idebugobject2geticordebugvalue"></a>IDebugObject2::GetICorDebugValue
 Obtiene un objeto de código administrado que representa el valor asociado a este objeto.  
@@ -40,7 +41,7 @@ int GetICorDebugValue(
   
 #### <a name="parameters"></a>Parámetros  
  `ppUnk`  
- [out] `IUnknown` interfaz que representa este alias. Esta interfaz se puede consultar para el `ICorDebugValue` interfaz.  
+ [out] `IUnknown` interfaz que representa este alias. Esta interfaz se puede consultar el `ICorDebugValue` interfaz.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  

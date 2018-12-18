@@ -1,5 +1,5 @@
 ---
-title: Solucionar problemas de extensiones para diagramas de dependencia
+title: Solucionar problemas de extensiones de diagramas de dependencia
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -10,45 +10,47 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5f284ddf548e48469e97b44fa2f4524c818b4cf4
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 8acde589ebf47d4a67609e847a84bd7c7acd8482
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899648"
 ---
-# <a name="troubleshoot-extensions-for-dependency-diagrams"></a>Solucionar problemas de extensiones para diagramas de dependencia
+# <a name="troubleshoot-extensions-for-dependency-diagrams"></a>Solucionar problemas de extensiones de diagramas de dependencia
 
 En este tema se resuelven algunos problemas que pueden encontrarse al crear extensiones de modelo de capas.
 
-## <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-dependency-diagrams-in-the-experimental-instance-of-includevsprvscode-qualityincludesvsprvsmdmd"></a>Al presionar F5 para depurar una extensión, mi comandos, controladores de gestos, extensiones de validación o las propiedades personalizadas no aparecen en los diagramas de dependencia de la instancia Experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]
+## <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-dependency-diagrams-in-the-experimental-instance-of-visual-studio"></a>Al presionar F5 para depurar una extensión, Mis comandos, controladores de gestos, extensiones de validación o propiedades personalizadas no aparecen en los diagramas de dependencia de la instancia Experimental de Visual Studio
 
-1.  Abra la solución de extensión en la instancia Experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]y en el **generar** menú, haga clic en **volver a generar solución**.
+1. Abra la solución de extensión en la instancia Experimental de Visual Studio y, en el **compilar** menú, haga clic en **recompilar solución**.
 
-2.  Presione **F5** o **CTRL+F5** para iniciar la instancia experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Abra un diagrama de dependencia y probar la extensión.
+2. Presione **F5** o **CTRL+F5** para iniciar la instancia experimental de Visual Studio. Abra un diagrama de dependencia y probar la extensión.
 
- Continúe con el procedimiento siguiente si es necesario.
+   Continúe con el procedimiento siguiente si es necesario.
 
 ## <a name="an-old-version-of-my-extension-runs"></a>Se ejecuta una versión anterior de mi extensión.
 
-1.  Asegúrese de que no se está ejecutando ninguna instancia experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+1. Asegúrese de que no se está ejecutando ninguna instancia experimental de Visual Studio.
 
-2.  Elimine la carpeta siguiente: %LocalAppData%\Microsoft\VisualStudio\\\ComponentModelCache [versión]
+2. Elimine la siguiente carpeta: %LocalAppData%\Microsoft\VisualStudio\\\ComponentModelCache [versión]
 
-    > [!NOTE]
-    > Suele ser % LocalAppData % *DriveName*: \Users\\*nombre de usuario*\AppData\Local.
+   > [!NOTE]
+   > % LocalAppData % está normalmente *DriveName*: \Users\\*UserName*\AppData\Local.
 
- Continúe con el procedimiento siguiente si es necesario.
+   Continúe con el procedimiento siguiente si es necesario.
 
 ## <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>Aparece una versión anterior de mis resultados de validación o no se llama a mi método de validación.
 
-1.  En la instancia experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], en la **generar** menú, haga clic en **Limpiar solución**. Esto borra los resultados almacenados en memoria caché del análisis de validación anterior.
+1.  En la instancia experimental de Visual Studio, en el **compilar** menú, haga clic en **Limpiar solución**. Esto borra los resultados almacenados en memoria caché del análisis de validación anterior.
 
 2.  Asegúrese de que las capas del modelo están asociadas a elementos de código y de que hay al menos un vínculo de dependencia en el modelo. La validación no se invoca si no hay nada que validar.
 
 3.  Los puntos de interrupción normales podrían no funcionar en un método de validación, porque se ejecuta en un proceso independiente. Debe insertar una llamada a `System.Diagnostics.Debugger.Launch()` si desea reproducir paso a paso el método.
 
-4.  En **source.extension.vsixmanifest** en su proyecto de validación de capas, asegúrese de que ha agregado un **componente MEF** elemento y un **tipo de extensión personalizada** elemento bajo **Contenido**.
+4.  En **source.extension.vsixmanifest** en el proyecto de validación de capas, asegúrese de que se ha agregado un **componente MEF** elemento y un **tipo de extensión personalizada** elemento bajo **Contenido**.
 
 ## <a name="see-also"></a>Vea también
 

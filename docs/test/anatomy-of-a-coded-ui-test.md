@@ -1,6 +1,7 @@
 ---
-title: Anatomía de una prueba automatizada de IU en Visual Studio | Microsoft Docs
+title: Anatomía de una prueba de IU codificada
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,22 +11,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20cd48c087af5d36fad3cf2a21797210ca963e12
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d5c1a8bcc8ee43aa36b8a39cd53f4be4f6882f06
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896593"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Anatomía de una prueba automatizada de IU
 
 Cuando se crea una prueba automatizada de IU en un proyecto de prueba automatizada de IU, se agregan varios archivos a la solución. En este artículo se proporciona información acerca de los archivos.
 
-## <a name="contents-of-a-coded-ui-test"></a>Contenido de una prueba de IU codificada
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
+
+## <a name="contents-of-a-coded-ui-test"></a>Contenido de una prueba automatizada de IU
 
 Cuando se crea una prueba automatizada de IU, el **generador de pruebas automatizadas de IU** crea un mapa de la interfaz de usuario que se va a someter a prueba, e incluye también los métodos de prueba, los parámetros y las aserciones de todas las pruebas. También crea un archivo de clase para cada prueba.
 
 |Archivo|Contenido|¿Se puede editar?|
-|----------|--------------|---------------|
+|-|-|-|
 |[UIMap.Designer.cs](#UIMapDesignerFile)|[Sección Declaraciones](#UIMapDesignerFile)<br /><br /> [Clase UIMap](#UIMapClass) (parcial, generada automáticamente)<br /><br /> [Métodos](#UIMapMethods)<br /><br /> [Propiedades](#UIMapProperties)|No|
 |[UIMap.cs](#UIMapCS)|[Clase UIMap](#UIMapCS) (parcial)|Sí|
 |[CodedUITest1.cs](#CodedUITestCS)|[Clase CodedUITest1](#CodedUITestCS)<br /><br /> [Métodos](#CodedUITestMethods)<br /><br /> [Propiedades](#CodedUITestProperties)|Sí|
@@ -63,7 +67,7 @@ using MouseButtons = System.Windows.Forms.MouseButtons;
 public partial class UIMap
 ```
 
-El código de clase comienza con un atributo <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> que se aplica a la clase (declarada como clase parcial). Observe que el atributo también se aplica a todas las clases restantes de este archivo. El otro archivo que puede contener más código para esta clase es `UIMap.cs` (se describe más adelante).
+El código de clase comienza con un atributo <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> que se aplica a la clase (declarada como clase parcial). Observe que el atributo también se aplica a todas las clases restantes de este archivo. El otro archivo que puede contener más código para esta clase es *UIMap.cs* (se describe más adelante).
 
 La clase `UIMap` generada incluye código para cada uno de los métodos que se ha especificado al registrar la prueba.
 
@@ -118,11 +122,11 @@ public void AddItems()
 }
 ```
 
-El comentario de resumen de cada definición de método indica la clase se debe usar para los valores de parámetro de dicho método. En este caso se trata de la clase `AddItemsParams`, que se define más adelante en el archivo `UIMap.cs` y también constituye el tipo de valor que devuelve la propiedad `AddItemsParams`.
+El comentario de resumen de cada definición de método indica la clase se debe usar para los valores de parámetro de dicho método. En este caso se trata de la clase `AddItemsParams`, que se define más adelante en el archivo *UIMap.cs* y también constituye el tipo de valor que devuelve la propiedad `AddItemsParams`.
 
  En la parte superior del código de método existe una región `Variable Declarations` que define las variables locales para los objetos de interfaz de usuario que usa el método.
 
- En este método, `UIItemWindow` y `UIItemEdit` son propiedades a las que se accede con la clase `UICalculatorWindow`, tal y como se define más adelante en el archivo `UIMap.cs`.
+ En este método, `UIItemWindow` y `UIItemEdit` son propiedades a las que se accede con la clase `UICalculatorWindow`, tal y como se define más adelante en el archivo *UIMap.cs*.
 
  A continuación se encuentran las líneas que envían texto desde el teclado hasta la aplicación Calculadora mediante las propiedades del objeto `AddItemsParams`.
 
@@ -154,7 +158,7 @@ public virtual AddItemsParams AddItemsParams
 }
 ```
 
- Observe que la propiedad usa una variable local privada denominada `mAddItemsParams`, que contiene el valor antes de devolverlo. Los nombres de propiedad y clase que se devuelven del objeto son los mismos. La clase se define más adelante en el archivo `UIMap.cs`.
+ Observe que la propiedad usa una variable local privada denominada `mAddItemsParams`, que contiene el valor antes de devolverlo. Los nombres de propiedad y clase que se devuelven del objeto son los mismos. La clase se define más adelante en el archivo *UIMap.cs*.
 
  Las clases que se devuelven desde las propiedades tienen una estructura similar. La siguiente es la clase `AddItemsParams`:
 
@@ -179,7 +183,7 @@ public class AddItemsParams
 }
 ```
 
-Al igual que ocurre con todas las clases del archivo `UIMap.cs`, esta clase comienza con <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. En esta pequeña clase existe un área `Fields` que define las cadenas que se deben usar como parámetros para el método <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName> que, a su vez, se usa en el método `UIMap.AddItems()` (analizado anteriormente). Puede escribir código para reemplazar los valores de estos campos de cadena, antes de llamar al método donde se usan estos parámetros.
+Al igual que ocurre con todas las clases del archivo *UIMap.cs*, esta clase comienza con <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. En esta pequeña clase existe un área `Fields` que define las cadenas que se deben usar como parámetros para el método <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName> que, a su vez, se usa en el método `UIMap.AddItems()` (analizado anteriormente). Puede escribir código para reemplazar los valores de estos campos de cadena, antes de llamar al método donde se usan estos parámetros.
 
 ###  <a name="UIMapCS"></a> UIMap.cs
  De forma predeterminada, este archivo contiene una clase `UIMap` parcial, que no tiene métodos ni propiedades.
@@ -262,7 +266,7 @@ public void MyTestCleanup()
 ###  <a name="UIMapuitest"></a> UIMap.uitest
  Se trata de un archivo XML que representa la estructura de la grabación de la prueba de IU codificada y de todos sus componentes. Entre ellos se incluyen las acciones y las clases, además de los métodos y las propiedades de estas últimas. El archivo [UIMap.Designer.cs](#UIMapDesignerFile) contiene el código que el generador de pruebas automatizadas de IU crea para reproducir la estructura de la prueba y proporciona la conexión con el marco de pruebas.
 
- El archivo `UIMap.uitest` no se puede editar directamente. Pero puede modificar la prueba con el generador de pruebas automatizadas de IU, lo que modifica automáticamente los archivos `UIMap.uitest` y [UIMap.Designer.cs](#UIMapDesignerFile).
+ El archivo *UIMap.uitest* no se puede editar directamente. Pero puede modificar la prueba con el generador de pruebas automatizadas de IU, lo que modifica automáticamente los archivos *UIMap.uitest* y [*UIMap.Designer.cs*](#UIMapDesignerFile).
 
 ## <a name="see-also"></a>Vea también
 
@@ -276,8 +280,8 @@ public void MyTestCleanup()
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>
-- [Usar Automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
-- [Crear pruebas de IU codificadas](../test/use-ui-automation-to-test-your-code.md)
+- [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
+- [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md)
 - [Procedimientos recomendados para las pruebas de IU codificadas](../test/best-practices-for-coded-ui-tests.md)
 - [Probar una aplicación grande con varios mapas de IU](../test/testing-a-large-application-with-multiple-ui-maps.md)
 - [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

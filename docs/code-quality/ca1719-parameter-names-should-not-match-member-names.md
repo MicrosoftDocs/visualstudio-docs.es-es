@@ -1,6 +1,7 @@
 ---
 title: 'CA1719: Los nombres de parámetro no deberían coincidir con los nombres de miembro'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,13 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f91f32057b4adbe7747ea2b596c3654b93041692
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 64a10bd39ef34d207d910c3bc428ba862019369e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924023"
 ---
 # <a name="ca1719-parameter-names-should-not-match-member-names"></a>CA1719: Los nombres de parámetro no deberían coincidir con los nombres de miembro
+
 |||
 |-|-|
 |TypeName|ParameterNamesShouldNotMatchMemberNames|
@@ -36,10 +39,10 @@ ms.lasthandoff: 04/19/2018
  Un nombre de parámetro debe comunicar el significado del parámetro y un nombre de miembro debe comunicar el significado del miembro. Sería un diseño extraño si éstos fueran los mismos. Denominar un parámetro igual que el nombre del miembro no es intuitivo y dificulta el uso de la biblioteca.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Seleccione un nombre de parámetro que no coincide con el nombre de miembro.
+ Seleccione un nombre de parámetro que no coincide con el nombre del miembro.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Caso de desarrollos nuevos, no existe constancia escenarios se producen donde debe suprimir una advertencia de esta regla. Para enviar las bibliotecas, es posible que deba suprimir una advertencia de esta regla.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ Para el desarrollo nuevo, no conocidos se producen escenarios donde se debe suprimir una advertencia de esta regla. Para enviar las bibliotecas, es posible que deba suprimir una advertencia de esta regla.
 
 ## <a name="related-rules"></a>Reglas relacionadas
  [CA1709: Los identificadores deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)

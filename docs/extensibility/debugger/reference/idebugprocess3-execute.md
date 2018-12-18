@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::Execute | Documentos de Microsoft
+title: IDebugProcess3::Execute | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,17 +15,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 349f792826bcfaa6ec3af1e10069e9c7182868bb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a890390e6b3f4e1286a1c2a38fad54058c15696c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864184"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
-Continúa ejecutando este proceso desde un estado de detención. Cualquier estado de ejecución anterior (por ejemplo, un paso) está desactivada y el proceso empieza a ejecutarse de nuevo.  
+Continúa la ejecución de este proceso de un estado detenido. Cualquier estado de ejecución anterior (por ejemplo, un paso) está desactivada y el proceso comienza a ejecutarse de nuevo.  
   
 > [!NOTE]
->  Este método debe utilizarse en lugar de [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md).  
+>  Este método debería usarse en lugar de [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md).  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -43,16 +44,16 @@ int Execute(
   
 #### <a name="parameters"></a>Parámetros  
  `pThread`  
- [in] Un [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa el subproceso que ejecute.  
+ [in] Un [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa la ejecución del subproceso.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve el código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Cuando el usuario inicia la ejecución de un estado de detención en el subproceso de otro proceso, se llama a este método en este proceso. También se llama a este método cuando el usuario selecciona el **iniciar** línea de comandos desde el **depurar** menú en el IDE. La implementación de este método puede ser tan sencilla como llamar a la [reanudar](../../../extensibility/debugger/reference/idebugthread2-resume.md) método en el subproceso actual en el proceso.  
+ Cuando el usuario inicia la ejecución de un estado detenido en el subproceso de algún otro proceso, este método se llama en este proceso. Este método también se llama cuando el usuario selecciona el **iniciar** comando desde el **depurar** menú en el IDE. La implementación de este método puede ser tan sencilla como llamar a la [reanudar](../../../extensibility/debugger/reference/idebugthread2-resume.md) método en el subproceso actual en el proceso.  
   
 > [!WARNING]
->  No se envía ningún evento de detención o a un evento (sincrónico) inmediato [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) al controlar esta llamada; en caso contrario, el depurador puede dejar de responder.  
+>  No enviar un evento de detención o a un evento (sincrónico) inmediato [eventos](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) mientras se controla esta llamada; en caso contrario, el depurador puede dejar de responder.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   

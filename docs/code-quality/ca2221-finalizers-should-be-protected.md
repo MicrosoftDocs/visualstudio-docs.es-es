@@ -1,6 +1,7 @@
 ---
 title: 'CA2221: Debe proteger los finalizadores'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,13 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf4ee1aef9ef31dccad5a9728244aeaf79f9e6a4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1ac3f9116366920f833fe8d907181473d6fda106
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551290"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221: Debe proteger los finalizadores
+
 |||
 |-|-|
 |TypeName|FinalizersShouldBeProtected|
@@ -36,13 +39,13 @@ ms.lasthandoff: 04/19/2018
  Los finalizadores deben utilizar el modificador de acceso de familia. Esta regla se aplica a los compiladores de C#, Visual Basic y Visual C++.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, cambie el finalizador para que sea accesible para la familia.
+ Para corregir una infracción de esta regla, cambie el finalizador para tener acceso de familia.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- No se infringe esta regla en cualquier lenguaje de .NET Framework de alto nivel; se puede infringir si está escribiendo el lenguaje intermedio de Microsoft.
+ Esta regla no se puede infringir en cualquier lenguaje de .NET de alto nivel; se puede infringir si va a escribir el lenguaje intermedio de Microsoft.
 
 ```
 // =============== CLASS MEMBERS DECLARATION ===================
@@ -78,4 +81,5 @@ ms.lasthandoff: 04/19/2018
 ```
 
 ## <a name="see-also"></a>Vea también
- [Patrón de Dispose](/dotnet/standard/design-guidelines/dispose-pattern)
+
+- [Patrón de Dispose](/dotnet/standard/design-guidelines/dispose-pattern)

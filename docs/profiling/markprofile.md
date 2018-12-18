@@ -12,18 +12,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5e4f93446c49120afb43202f457af39439ca1bc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 98530a790963d1c7fc60742dda4bb16e14a28ab4
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35238165"
 ---
 # <a name="markprofile"></a>MarkProfile
-El método `MarkProfile` inserta una marca de perfil en el archivo .vsp. La generación de perfiles para el subproceso que contiene la función `MarkProfile` debe estar activada (ON) para que se inserte la marca.  
+El método `MarkProfile` inserta una marca de perfil en el archivo .*vsp*. La generación de perfiles para el subproceso que contiene la función `MarkProfile` debe estar activada (ON) para que se inserte la marca.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp  
 PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );  
 ```  
   
@@ -35,7 +36,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 ## <a name="property-valuereturn-value"></a>Valor de propiedad y valor devuelto  
  La función indica si la operación es correcta o errónea mediante la enumeración **PROFILE_COMMAND_STATUS**. El valor devuelto puede ser cualquiera de los siguientes:  
   
-|Enumerador|Description|  
+|Enumerador|Descripción|  
 |----------------|-----------------|  
 |MARK_ERROR_MARKER_RESERVED|El parámetro es menor o igual que 0. Estos valores están reservados. La marca y el comentario no se registran.|  
 |MARK_ERROR_MODE_NEVER|El modo de generación de perfiles se estableció en NEVER cuando se llamó a la función. La marca y el comentario no se registran.|  
@@ -46,9 +47,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 |MARK_OK|Se devuelve MARK_OK para indicar que la operación es correcta.|  
   
 ## <a name="remarks"></a>Comentarios  
- El valor de marca se inserta en el archivo .vsp cada vez que el código se ejecuta si se generan los perfiles del subproceso que contiene la función MarkProfile. Puede llamar varias veces a MarkProfile.  
+ El valor de marca se inserta en el archivo .*vsp* cada vez que el código se ejecuta si se generan los perfiles del subproceso que contiene la función MarkProfile. Puede llamar varias veces a MarkProfile.  
   
- Las marcas de perfil tienen un ámbito global. Por ejemplo, una marca de perfil insertada en un subproceso se puede utilizar para marcar el inicio y el final de un segmento de datos en cualquier subproceso del archivo .vsp.  
+ Las marcas de perfil tienen un ámbito global. Por ejemplo, una marca de perfil insertada en un subproceso se puede usar para marcar el inicio y el final de un segmento de datos en cualquier subproceso del archivo .*vsp*.  
   
  El estado de generación de perfiles del subproceso que contiene la función de perfil de marcas debe estar activado cuando se inserten marcas o comentarios con el comando Mark o con las funciones de la API (CommentMarkAtProfile, CommentMarkProfile o MarkProfile).  
   
@@ -56,17 +57,17 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 >  El método MarkProfile solo se debe utilizar con la generación de perfiles de instrumentación.  
   
 ## <a name="net-framework-equivalent"></a>Equivalente de .NET Framework  
- Microsoft.VisualStudio.Profiler.dll  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Información de la función  
- Encabezado: declarado en VSPerf.h  
+ Encabezado: declarado en *VSPerf.h*  
   
- Biblioteca de importación: VSPerf.lib  
+ Biblioteca de importación: *VSPerf.lib*  
   
 ## <a name="example"></a>Ejemplo  
  El código siguiente ilustra la función MarkProfile.  
   
-```  
+```cpp  
 void ExerciseMarkProfile()  
 {  
     // Declare and initialize variables to pass to   
@@ -99,4 +100,4 @@ void ExerciseMarkProfile()
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Referencia a la API del generador de perfiles de Visual Studio (nativa)](../profiling/visual-studio-profiler-api-reference-native.md)
+ [Referencia de la API del generador de perfiles de Visual Studio (nativa)](../profiling/visual-studio-profiler-api-reference-native.md)

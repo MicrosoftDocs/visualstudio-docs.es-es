@@ -1,5 +1,5 @@
 ---
-title: Configurar los puertos para los controladores de pruebas y los agentes de pruebas en Visual Studio | Microsoft Docs
+title: Configurar los puertos para los controladores de pruebas y los agentes de pruebas
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,41 +13,45 @@ ms.assetid: 211edbd7-9fe4-4251-ba85-8bec4363261b
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5ae620904929f6e2da5c727751e46fe9d0874276
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 12aacb0ff6530e1ee21bd57639a7e84bdb65ea9d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068586"
 ---
-# <a name="configure-ports-for-test-controllers-and-test-agents"></a>Configurar los puertos para los controladores de pruebas y los agentes de pruebas
+# <a name="configure-ports-for-test-controllers-and-test-agents"></a>Configuración de los puertos para los controladores de pruebas y los agentes de pruebas
 
 Puede cambiar los puertos de entrada predeterminados que usan por el controlador y el agente de pruebas y el cliente. Esto podría ser necesario si intenta usar el controlador, el agente de prueba o el cliente junto con algún otro software en conflicto con la configuración de los puertos. Otra razón para cambiar los puertos es la restricción del firewall entre el controlador de prueba y el cliente. En este caso podría configurar el puerto para habilitarlo para un firewall manualmente de forma que el controlador de prueba pueda enviar los resultados al cliente.
 
- La siguiente ilustración muestra los puntos de conexión entre el controlador de prueba, el agente de prueba y el cliente. Describe qué puertos se usan para las conexiones entrantes y salientes, así como las restricciones de seguridad empleadas en estos puertos.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- ![Puertos de controlador de pruebas y agente de prueba y seguridad](../test/media/test-controller-agent-firewall.png)
+La siguiente ilustración muestra los puntos de conexión entre el controlador de prueba, el agente de prueba y el cliente. Describe qué puertos se usan para las conexiones entrantes y salientes, así como las restricciones de seguridad empleadas en estos puertos.
+
+![Puertos de controlador de pruebas y agente de prueba y seguridad](../test/media/test-controller-agent-firewall.png)
 
 ## <a name="incoming-connections"></a>Conexiones entrantes
 
 El puerto predeterminado utilizado por el controlador de prueba es 6901 y el puerto predeterminado del agente es 6910. El cliente utiliza un puerto aleatorio de forma predeterminada que se utiliza para recibir los resultados del controlador de pruebas. Para todas las conexiones entrantes, el controlador autentica la entidad de la llamada y comprueba que pertenece al grupo de seguridad concreto.
 
-- **Controlador de pruebas** Las conexiones de entrada están en el puerto TCP 6901. Si es necesario, puede configurar el puerto de entrada. Para obtener más información, vea [Configurar los puertos entrantes](#ConfigurePorts).
+- **Controlador de pruebas** Las conexiones de entrada están en el puerto TCP 6901. Si es necesario, puede configurar el puerto de entrada. Para más información, vea [Configurar los puertos entrantes](#configure-the-incoming-ports).
 
     El controlador de pruebas necesita realizar la conexión de salida a los agentes de prueba y al cliente.
 
     > [!NOTE]
     > El controlador de pruebas necesita que la conexión **Compartir archivos e impresoras** de entrada esté abierta.
 
-- **Agente de prueba** Las conexiones entrantes están en el puerto TCP 6910. Si es necesario, puede configurar el puerto de entrada. Para obtener más información, vea [Configurar los puertos entrantes](#ConfigurePorts).
+- **Agente de prueba** Las conexiones entrantes están en el puerto TCP 6910. Si es necesario, puede configurar el puerto de entrada. Para más información, vea [Configurar los puertos entrantes](#configure-the-incoming-ports).
 
    El agente de prueba necesita realizar la conexión de salida al controlador de prueba.
 
-- **Cliente** De forma predeterminada, para las conexiones entrantes se usa un puerto TCP aleatorio. Si es necesario, puede configurar el puerto de entrada. Para obtener más información, vea [Configurar los puertos entrantes](#ConfigurePorts).
+- **Cliente** De forma predeterminada, para las conexiones entrantes se usa un puerto TCP aleatorio. Si es necesario, puede configurar el puerto de entrada. Para más información, vea [Configurar los puertos entrantes](#configure-the-incoming-ports).
 
    Podría obtener las notificaciones del firewall cuando el controlador de prueba intenta conectar la primera vez al cliente.
 
-   En Windows Server 2008, las notificaciones de firewall están deshabilitadas de manera predeterminada y debe agregarlas manualmente en los programas cliente (devenv.exe, mstest.exe, mlm.exe) para que acepten las conexiones de entrada.
+   En Windows Server 2008, las notificaciones de firewall están deshabilitadas de manera predeterminada y debe agregarlas manualmente en los programas cliente (*devenv.exe*, *mstest.exe* y *mlm.exe*) para que acepten las conexiones de entrada.
 
 ## <a name="outgoing-connections"></a>Conexiones salientes
 
@@ -63,7 +67,7 @@ Los puertos TCP aleatorios se utilizan para todas las conexiones de salida.
 
 Siga estas instrucciones para configurar los puertos para un controlador de pruebas y agentes de prueba.
 
-- **Servicio de controlador** Modifique el valor del puerto editando el archivo %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config:
+- **Servicio de controlador** Modifique el valor del puerto editando el archivo *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config*:
 
     ```xml
     <appSettings>
@@ -71,7 +75,7 @@ Siga estas instrucciones para configurar los puertos para un controlador de prue
     </appSettings>
     ```
 
-- **Servicio de agente** Modifique el valor del puerto editando el archivo %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTAgentService.exe.config:
+- **Servicio de agente** Modifique el valor del puerto editando el archivo *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTAgentService.exe.config*:
 
     ```xml
     <appSettings>
@@ -79,11 +83,11 @@ Siga estas instrucciones para configurar los puertos para un controlador de prue
     </appSettings>
     ```
 
-- **Cliente** Use el editor del Registro para agregar los siguientes valores (DWORD). El cliente utilizará uno de los puertos del rango especificado para recibir los datos del controlador de prueba:
+- **Cliente** Use el editor del Registro para agregar los siguientes valores (**DWORD**). El cliente utilizará uno de los puertos del rango especificado para recibir los datos del controlador de prueba:
 
-     HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeStart
+     **HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeStart**
 
-     HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeEnd
+     **HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeEnd**
 
 ## <a name="see-also"></a>Vea también
 

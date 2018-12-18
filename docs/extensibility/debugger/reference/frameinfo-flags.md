@@ -1,5 +1,5 @@
 ---
-title: FRAMEINFO_FLAGS | Documentos de Microsoft
+title: FRAMEINFO_FLAGS | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca63b23e9f87e807b3eec0e3ad35ea5414ac8dc6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bd2273e7ca2769c5dde43d1c29f08989503659f4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949128"
 ---
 # <a name="frameinfoflags"></a>FRAMEINFO_FLAGS
 Especifica la información para recuperar sobre un objeto de marco de pila.  
@@ -101,43 +102,43 @@ public enum enum_FRAMEINFO_FLAGS {
   
 ## <a name="members"></a>Miembros  
  FIF_FUNCNAME  
- Inicializar o utilizar el `m_bstrFuncName` campo.  
+ Inicializar o usar el `m_bstrFuncName` campo.  
   
  FIF_RETURNTYPE  
- Inicializar o utilizar el `m_bstrReturnType` campo.  
+ Inicializar o usar el `m_bstrReturnType` campo.  
   
  FIF_ARGS  
- Inicializar o utilizar el `m_bstrArgs` campo.  
+ Inicializar o usar el `m_bstrArgs` campo.  
   
  FIF_LANGUAGE  
- Inicializar o utilizar el `m_bstrLanguage` campo.  
+ Inicializar o usar el `m_bstrLanguage` campo.  
   
  FIF_MODULE  
- Inicializar o utilizar el `m_bstrModule` campo.  
+ Inicializar o usar el `m_bstrModule` campo.  
   
  FIF_STACKRANGE  
- Inicializar o utilizar el `m_addrMin` y `m_addrMax` campos (intervalo de pila).  
+ Inicializar o usar el `m_addrMin` y `m_addrMax` campos (intervalo de pila).  
   
  FIF_FRAME  
- Inicializar o utilizar el `m_pFrame` campo.  
+ Inicializar o usar el `m_pFrame` campo.  
   
  FIF_DEBUGINFO  
- Inicializar o utilizar el `m_fHasDebugInfo` campo.  
+ Inicializar o usar el `m_fHasDebugInfo` campo.  
   
  FIF_STALECODE  
- Inicializar o utilizar el `m_fStaleCode` campo.  
+ Inicializar o usar el `m_fStaleCode` campo.  
   
  FIF_ANNOTATEDFRAME  
- Inicializar o utilizar el `m_fAnnotatedFrame` campo.  
+ Inicializar o usar el `m_fAnnotatedFrame` campo.  
   
  FIF_DEBUG_MODULEP  
- Inicializar o utilizar el `m_pModule` campo.  
+ Inicializar o usar el `m_pModule` campo.  
   
  FIF_FUNCNAME_FORMAT  
  Formatos de nombre de la función. El resultado se devuelve en el `m_bstrFunName` campo y no hay otros campos se rellenan.  
   
  FIF_FUNCNAME_RETURNTYPE  
- Agrega el tipo de valor devuelto para el `m_bstrFuncName` campo.  
+ Agrega el tipo de valor devuelto para la `m_bstrFuncName` campo.  
   
  FIF_FUNCNAME_ARGS  
  Agrega los argumentos para el `m_bstrFuncName` campo.  
@@ -152,7 +153,7 @@ public enum enum_FRAMEINFO_FLAGS {
  Agrega el número de líneas para el `m_bstrFuncName` campo.  
   
  FIF_FUNCNAME_OFFSET  
- Agrega a la `m_bstrFuncName` campo el desplazamiento en bytes desde el principio de la línea si `FIF_FUNCNAME_LINES` se especifica. Si `FIF_FUNCNAME_LINES` no se especifica, o si los números de línea no están disponibles, se agrega el desplazamiento en bytes desde el principio de la función.  
+ Agrega a la `m_bstrFuncName` campo el desplazamiento en bytes desde el principio de la línea si `FIF_FUNCNAME_LINES` se especifica. Si `FIF_FUNCNAME_LINES` no se especifica, o si los números de línea no están disponibles, agrega el desplazamiento en bytes desde el principio de la función.  
   
  FIF_FUNCNAME_ARGS_TYPES  
  Agrega el tipo de cada argumento de función para el `m_bstrFuncName` campo.  
@@ -164,10 +165,10 @@ public enum enum_FRAMEINFO_FLAGS {
  Agrega el valor de cada argumento de función para el `m_bstrFuncName` campo.  
   
  FIF_FUNCNAME_ARGS_ALL  
- Agrega el tipo, el nombre y el valor de todos los argumentos de la `m_bstrFuncName` campo.  
+ Agrega el tipo, nombre y valor de todos los argumentos de la `m_bstrFuncName` campo.  
   
  FIF_ARGS_TYPES  
- Los tipos de argumento se recupera y con formato.  
+ Los tipos de argumento se recupera y da formato.  
   
  FIF_ARGS_NAMES  
  Los nombres de argumento se recuperan y con formato.  
@@ -176,27 +177,27 @@ public enum enum_FRAMEINFO_FLAGS {
  Los valores de argumento se recuperan y con formato.  
   
  FIF_ARGS_ALL  
- Recuperar y dar formato al tipo, el nombre y el valor de todos los argumentos.  
+ Recuperar y dar formato el tipo, nombre y valor de todos los argumentos.  
   
  FIF_ARGS_NOFORMAT  
- Especifica que los argumentos no se tienen el formato (por ejemplo, no agregue apertura y cierre de la lista de argumentos entre paréntesis ni agregar un separador entre los argumentos).  
+ Especifica que los argumentos no se tiene el formato (por ejemplo, no agregue apertura y cierre de la lista de argumentos entre paréntesis ni agregar un separador entre los argumentos).  
   
  FIF_ARGS_NO_FUNC_EVAL  
- Especifica que la evaluación de función (propiedad) no debe usarse cuando se recuperan valores de argumento.  
+ Especifica que la evaluación de función (propiedad) no debe utilizarse cuando se recuperan valores de argumento.  
   
  FIF_FILTER_NON_USER_CODE  
- El motor de depuración es filtrar los marcos del código de no usuario para que no se incluye.  
+ El motor de depuración es filtrar marcos de código de no usuario, por lo que no se incluyen.  
   
  FIF_ARGS_NO_TOSTRING  
- No permitir `ToString()` función evaluación o dar formato a cuando se devuelven los argumentos de función.  
+ No permitir `ToString()` función evaluación o cuando se devuelven los argumentos de la función de formato.  
   
  FIF_DESIGN_TIME_EXPR_EVAL  
  Información del marco debe ser recibido desde el dominio de aplicación hospedado en lugar de con el proceso de hospedaje.  
   
 ## <a name="remarks"></a>Comentarios  
- Estas marcas se pasan a la [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) y [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) métodos para indicar qué campos se puede inicializar en la [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) estructura o estructuras.  
+ Estas marcas se pasan a la [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) y [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) métodos para indicar cuáles son los campos se inicialicen en la [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) o más estructuras.  
   
- Estas marcas también se utilizan para indicar qué campos de la [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) estructura se usan y válido cuando se devuelve la estructura. Estos valores se pueden combinar con un bit a bit `OR`.  
+ Estas marcas también se usan para indicar qué campos de la [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) estructura se usan y válido cuando se devuelve la estructura. Estos valores se pueden combinar con un bit a bit `OR`.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  

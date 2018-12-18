@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ddbffefe729f0b4c5b89b46b96b32a90f05f297
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7787e974b093156b27b2ace4353e94db05063d7d
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35238230"
 ---
 # <a name="functions-view---instrumentation-data"></a>Vista Funciones: datos de instrumentación
 En la vista del informe de funciones se enumeran los datos de generación de perfiles por nombre de la función.  
@@ -24,7 +25,7 @@ En la vista del informe de funciones se enumeran los datos de generación de per
 ## <a name="general"></a>General  
  En las columnas generales se identifica la función en una fila de la vista.  
   
-|Columna|Description|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Nombre de la función**|Nombre de la función.|  
 |**Dirección de la función**|Dirección de la función.|  
@@ -38,10 +39,10 @@ En la vista del informe de funciones se enumeran los datos de generación de per
 |**Sobrecarga de tiempo exclusiva por sondeos**|Sobrecarga de tiempo para esta función debida a la instrumentación. No incluye la sobrecarga de las funciones a las que llamó la función. La sobrecarga por sondeos se ha restado de todos los tiempos exclusivos.|  
 |**Sobrecarga de tiempo inclusiva por sondeos**|Sobrecarga de tiempo para esta función y sus funciones secundarias debida a la instrumentación. Incluye la sobrecarga de las funciones a las que llamó la función. La sobrecarga por sondeos se ha restado de todos los tiempos inclusivos.|  
   
-## <a name="elapsed-inclusive-values"></a>Valores inclusivos transcurridos  
+## <a name="elapsed-inclusive-values"></a>Valores de tiempo inclusivo transcurrido  
  Los valores inclusivos transcurridos indican el tiempo que una función estuvo en la pila de llamadas. Incluye el tiempo dedicado a funciones a las que llamó la función y a llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S.  
   
-|Columna|Description|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Tiempo inclusivo transcurrido**|Tiempo inclusivo total transcurrido para todas las llamadas a esta función.|  
 |**Porcentaje de tiempo inclusivo transcurrido**|El porcentaje de tiempo inclusivo transcurrido total de la ejecución de generación de perfiles que se ha empleado en el tiempo inclusivo transcurrido de esta función.|  
@@ -49,10 +50,10 @@ En la vista del informe de funciones se enumeran los datos de generación de per
 |**Tiempo inclusivo máximo transcurrido**|Tiempo inclusivo máximo transcurrido de una llamada a esta función.|  
 |**Tiempo inclusivo transcurrido mínimo**|Tiempo inclusivo mínimo transcurrido de una llamada a esta función.|  
   
-## <a name="elapsed-exclusive-values"></a>Valores exclusivos transcurridos  
+## <a name="elapsed-exclusive-values"></a>Valores de tiempo exclusivo transcurrido  
  Los valores exclusivos transcurridos indican el tiempo que una función estaba ejecutando código en el cuerpo de la función, es decir, cuando la función estaba en la parte superior de la pila de llamadas. Incluye el tiempo dedicado a llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S, pero no incluye el tiempo dedicado a funciones a las que llamó la función.  
   
-|Columna|Description|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Tiempo exclusivo transcurrido**|Tiempo exclusivo total transcurrido para todas las llamadas a esta función.|  
 |**Porcentaje de tiempo exclusivo transcurrido**|El porcentaje de tiempo exclusivo transcurrido de la generación de perfiles que se ha empleado en el tiempo exclusivo transcurrido total de esta función.|  
@@ -60,10 +61,10 @@ En la vista del informe de funciones se enumeran los datos de generación de per
 |**Tiempo exclusivo transcurrido máximo**|Tiempo exclusivo máximo transcurrido de una llamada a esta función.|  
 |**Tiempo exclusivo mínimo transcurrido**|Tiempo exclusivo mínimo transcurrido de una llamada a esta función.|  
   
-## <a name="application-inclusive-values"></a>Valores inclusivos de aplicación  
+## <a name="application-inclusive-values"></a>Valores de tiempo inclusivo de aplicación  
  Los valores inclusivos de aplicación indican el tiempo que una función estuvo en la pila de llamadas. No incluye el tiempo dedicado a llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S, pero incluye el tiempo dedicado a funciones a las que llamó la función.  
   
-|Columna|Description|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Tiempo inclusivo de aplicación**|El tiempo inclusivo de aplicación total de todas las llamadas a esta función.|  
 |**Porcentaje de tiempo inclusivo de aplicación**|El porcentaje de tiempo inclusivo transcurrido total de la ejecución de generación de perfiles que se ha empleado en el tiempo inclusivo de aplicación total de esta función.|  
@@ -71,10 +72,10 @@ En la vista del informe de funciones se enumeran los datos de generación de per
 |**Tiempo inclusivo máximo de aplicación**|El tiempo inclusivo de aplicación máximo de una llamada a esta función.|  
 |**Tiempo inclusivo mínimo de aplicación**|El tiempo inclusivo de aplicación mínimo de una llamada a esta función.|  
   
-## <a name="application-exclusive-values"></a>Valores exclusivos de aplicación  
+## <a name="application-exclusive-values"></a>Valores de tiempo exclusivo de aplicación  
  Los valores exclusivos de aplicación indican el tiempo que una función se estaba ejecutando directamente en la parte superior de la pila de llamadas. No incluye el tiempo dedicado a llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S, ni el tiempo dedicado a funciones a las que llamó la función.  
   
-|Columna|Description|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Tiempo exclusivo de aplicación**|El tiempo exclusivo de aplicación total de todas las llamadas a esta función.|  
 |**Porcentaje de tiempo exclusivo de aplicación**|El porcentaje de tiempo exclusivo transcurrido total de la ejecución de generación de perfiles que se ha empleado en el tiempo exclusivo de aplicación total de esta función.|  

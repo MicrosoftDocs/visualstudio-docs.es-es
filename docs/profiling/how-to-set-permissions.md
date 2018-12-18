@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1f3cf4ca3cb79a6b58d4f3549d05d355764148f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a6acd54a140d3281f4fd539cc12d07adb11cfd6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897388"
 ---
 # <a name="how-to-set-permissions"></a>Cómo: Establecer permisos
 
@@ -58,7 +59,7 @@ Los miembros del grupo Usuarios pueden ejecutar las herramientas de generación 
 
      La ruta de acceso de esta carpeta puede ser similar a la siguiente:
 
-    ```
+    ```cmd
     D:\ourProject
     ```
 
@@ -82,13 +83,13 @@ Los miembros del grupo Usuarios pueden ejecutar las herramientas de generación 
 
 2. Cambie el directorio a:
 
-    ```
+    ```cmd
     <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools
     ```
 
 3. Ejecute el siguiente comando:
 
-    ```
+    ```cmd
     vsperfcmd /admin:driver,start /admin:service,start
     ```
 
@@ -100,7 +101,7 @@ Los miembros del grupo Usuarios pueden ejecutar las herramientas de generación 
 
 4. Ejecute el comando para permitir el acceso a la funcionalidad del controlador de generación de perfiles por un usuario o grupo que no tiene acceso de administrador en el equipo:
 
-    ```
+    ```cmd
     vsperfcmd /admin:security,allow,<right[,right],<user name|group name>
     ```
 
@@ -114,14 +115,14 @@ Los miembros del grupo Usuarios pueden ejecutar las herramientas de generación 
 
 5. (Opcional) Para conservar los resultados de cualquiera de los pasos anteriores después de reiniciar el equipo, ejecute el siguiente comando:
 
-    ```
+    ```cmd
     vsperfcmd /admin:driver,autostart,on
     ```
 
- Después de iniciar sesión, los usuarios especificados podrán usar las herramientas de generación de perfiles sin permisos de administrador.
+   Después de iniciar sesión, los usuarios especificados podrán usar las herramientas de generación de perfiles sin permisos de administrador.
 
 ## <a name="see-also"></a>Vea también
 
-[Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)  
+[Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)  
 [VSPerfCmd](../profiling/vsperfcmd.md)  
 [Generar perfiles y seguridad en Windows Vista](../profiling/profiling-and-windows-vista-security.md)

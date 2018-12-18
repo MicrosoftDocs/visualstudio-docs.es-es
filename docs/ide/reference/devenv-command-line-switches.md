@@ -1,8 +1,9 @@
 ---
-title: Modificadores de línea de comandos para Devenv de Visual Studio | Microsoft Docs
+title: Modificadores de línea de comandos para Devenv de Visual Studio
 ms.date: 02/28/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - switches, Devenv
 - command-line switches, Devenv
@@ -14,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3adde520b76de347da025c819ec39dce50660f2b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 818bbb38fab706dde2f4d36d5a534e0a351a6450
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948899"
 ---
 # <a name="devenv-command-line-switches"></a>Modificadores de línea de comandos para Devenv
 
@@ -29,9 +31,9 @@ Devenv permite establecer diversas opciones para el entorno de desarrollo integr
 
 ## <a name="devenv-switch-syntax"></a>Sintaxis de los modificadores de Devenv
 
-De forma predeterminada, los comandos devenv pasan modificadores a la utilidad devenv.com. La utilidad devenv.com ofrece salida a través de secuencias del sistema estándar, como `stdout` y `stderr`. La utilidad determina la redirección de E/S adecuada al capturar el resultado, por ejemplo a un archivo .txt.
+La utilidad `devenv.com` controla los comandos que comienzan por `devenv`, que ofrece salida a través de secuencias del sistema estándar, como `stdout` y `stderr`. La utilidad determina la redirección de E/S adecuada al capturar el resultado, por ejemplo a un archivo .txt.
 
-Por otro lado, los comandos que comienzan por `devenv.exe` pueden usar los mismos modificadores, pero se omite la utilidad devenv.com.
+Por otro lado, los comandos que comienzan por `devenv.exe` pueden usar los mismos modificadores, pero se omite la utilidad `devenv.com`. El uso de `devenv.exe` directamente impide que la salida aparezca en la consola.
 
 Las reglas de sintaxis de los modificadores de `devenv` son similares a las de otros programas de línea de comandos de DOS. Las siguientes reglas sintácticas se aplican a todos los modificadores de `devenv` y sus argumentos:
 
@@ -43,7 +45,7 @@ Las reglas de sintaxis de los modificadores de `devenv` son similares a las de o
 
 - Si el primer argumento es un archivo que no es una solución ni un proyecto, ese archivo se abre en el editor adecuado, en una instancia nueva del IDE.
 
-- Cuando se indica un nombre de archivo de proyecto en lugar de un nombre de archivo de solución, un comando `devenv` busca en la carpeta primaria del archivo de proyecto un archivo de solución que tenga el mismo nombre. Por ejemplo, el comando `devenv /build myproject1.vbproj` busca en la carpeta primaria un archivo de solución denominado "myproject1.sln".
+- Cuando se indica un nombre de archivo de proyecto en lugar de un nombre de archivo de solución, un comando `devenv` busca en la carpeta primaria del archivo de proyecto un archivo de solución que tenga el mismo nombre. Por ejemplo, el comando `devenv myproject1.vbproj /build` busca en la carpeta primaria un archivo de solución denominado "myproject1.sln".
 
     > [!NOTE]
     > En su carpeta primaria debe haber un archivo de solución, y solamente uno, que haga referencia a este proyecto. Si la carpeta primaria no contiene ningún archivo de solución que haga referencia a este proyecto, o si contiene dos o más archivos de solución que hagan referencia a él, se crea un archivo de solución temporal.
@@ -58,8 +60,8 @@ Las reglas de sintaxis de los modificadores de `devenv` son similares a las de o
 
 Los modificadores de línea de comandos siguientes muestran el IDE y realizan la tarea descrita.
 
-|Modificador de la línea de comandos|Description|
-|-------------------------|-----------------|
+|Modificador de la línea de comandos|Descripción|
+| - |-----------------|
 |[/Command](../../ide/reference/command-devenv-exe.md)|Inicia el IDE y ejecuta el comando especificado.|
 |[/DebugExe](../../ide/reference/debugexe-devenv-exe.md)|Carga un archivo ejecutable de C++ bajo el control del depurador. Este modificador no está disponible para los archivos ejecutables de Visual Basic o C#. Para obtener más información, vea [Iniciar automáticamente un proceso en el depurador](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).|
 |[/LCID o /l](../../ide/reference/lcid-devenv-exe.md)|Establece el idioma predeterminado del IDE. Si el idioma especificado no está incluido en la instalación de Visual Studio, este valor se omite.|
@@ -74,14 +76,14 @@ Los modificadores de línea de comandos siguientes muestran el IDE y realizan la
 
 Los modificadores de la línea de comandos siguientes no muestran el IDE.
 
-|Modificador de la línea de comandos|Description|
-|-------------------------|-----------------|
-|[/?](../../ide/reference/q-devenv-exe.md)|Muestra ayuda para los modificadores de devenv en la **ventana de símbolo del sistema**.<br /><br /> **Devenv /?**|
-|[/Build](../../ide/reference/build-devenv-exe.md)|Compila la solución o el proyecto especificado según la configuración de la solución especificada.<br /><br /> **Devenv myproj.csproj /build**|
-|[/Clean](../../ide/reference/clean-devenv-exe.md)|Elimina los archivos creado por el comando de compilación, sin afectar a los archivos de código fuente.<br /><br /> **Devenv myproj.csproj /clean**|
-|[/Deploy](../../ide/reference/deploy-devenv-exe.md)|Compila la solución, junto con los archivos necesario para la implementación, según la configuración de soluciones.<br /><br /> **Devenv myproj.csproj /deploy**|
+|Modificador de la línea de comandos|Descripción|
+| - |-----------------|
+|[/?](../../ide/reference/q-devenv-exe.md)|Muestra ayuda para los modificadores de devenv en la **ventana de símbolo del sistema**.<br /><br /> `devenv /?`|
+|[/Build](../../ide/reference/build-devenv-exe.md)|Compila la solución o el proyecto especificado según la configuración de la solución especificada.<br /><br /> `devenv myproj.csproj /build`|
+|[/Clean](../../ide/reference/clean-devenv-exe.md)|Elimina los archivos creado por el comando de compilación, sin afectar a los archivos de código fuente.<br /><br /> `devenv myproj.csproj /clean`|
+|[/Deploy](../../ide/reference/deploy-devenv-exe.md)|Compila la solución, junto con los archivos necesario para la implementación, según la configuración de soluciones.<br /><br /> `devenv myproj.csproj /deploy`|
 |[/Diff](../../ide/reference/diff.md)|Compara dos archivos. Toma cuatro parámetros: SourceFile, TargetFile, SourceDisplayName (opcional) y TargetDisplayName (opcional).|
-|[/Out](../../ide/reference/out-devenv-exe.md)|Permite especificar un archivo para recibir los errores al compilar.<br /><br /> **Devenv myproj.csproj /build /out log.txt**|
+|[/Out](../../ide/reference/out-devenv-exe.md)|Permite especificar un archivo para recibir los errores al compilar.<br /><br /> `devenv myproj.csproj /build /out log.txt`|
 |[/Project](../../ide/reference/project-devenv-exe.md)|Proyecto que se va a compilar, limpiar o implementar. Solo se puede utilizar este modificador si también se ha indicado el modificador /build, /rebuild, /clean o /deploy.|
 |[/ProjectConfig](../../ide/reference/projectconfig-devenv-exe.md)|Especifica la configuración de proyecto que se va a compilar o implementar. Solo se puede utilizar este modificador si también se ha indicado el modificador /project.|
 |[/Rebuild](../../ide/reference/rebuild-devenv-exe.md)|Limpia y, a continuación, compila la solución o el proyecto especificado según la configuración de la solución especificada.|

@@ -9,81 +9,89 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 77a33546d02738ae03e4da5180aa15e2b94f91ea
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: ff9a548a675451b28d9b08db280dd3b35cf0a53c
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511110"
 ---
-# <a name="overriding-and-extending-the-generated-classes"></a>Invalidar y ampliar clases generadas
-La definición DSL es una plataforma en la que puede crear un conjunto eficaz de herramientas que se basan en un lenguaje específico de dominio. Muchas de las extensiones y las adaptaciones pueden realizarse por reemplazar y ampliar las clases que se generan a partir de la definición DSL. Estas clases incluyen no solo las clases de dominio que haya definido explícitamente en el diagrama de definición DSL, sino también otras clases que definen el cuadro de herramientas, explorador, serialización y así sucesivamente.
+# <a name="override-and-extend-the-generated-classes"></a>Invalidar y ampliar las clases generadas
+
+La definición de DSL es una plataforma en la que puede crear un conjunto eficaz de herramientas que se basan en un lenguaje específico de dominio. Muchas extensiones y adaptaciones pueden realizarse al invalidar y ampliar las clases que se generan a partir de la definición de DSL. Estas clases incluyen no solo las clases de dominio que ha definido explícitamente en el diagrama de definición de DSL, sino también otras clases que definen el cuadro de herramientas, el explorador, serialización y así sucesivamente.
 
 ## <a name="extensibility-mechanisms"></a>Mecanismos de extensibilidad
- Se proporcionan varios mecanismos para que pueda extender el código generado.
 
-### <a name="overriding-methods-in-a-partial-class"></a>Reemplazar métodos en una clase parcial
- Definiciones de clase parcial permitir que una clase que deben definirse en más de un lugar. Esto le permite separar el código generado del código que es usted quien escribe. En el código escrito manualmente, puede invalidar las clases heredadas por el código generado.
+Se proporcionan varios mecanismos para que pueda ampliar el código generado.
 
- Por ejemplo, si en su definición DSL define una clase de dominio denominada `Book`, puede escribir código personalizado que agrega métodos de invalidación:
+### <a name="override-methods-in-a-partial-class"></a>Invalidar métodos en una clase parcial
 
- `public partial class Book`
+Definiciones de clases parciales permiten una clase que se definen en más de un solo lugar. Esto le permite separar el código generado desde el código que usted escribe. En el código escrito manualmente, puede invalidar las clases heredadas por el código generado.
 
- `{`
+Por ejemplo, si en su definición de DSL define una clase de dominio denominada `Book`, podría escribir código personalizado que agrega los métodos de invalidación:
 
- `protected override void OnDeleting()`
-
- `{`
-
- `MessageBox.Show("Deleting book " + this.Title);`
-
- `base.OnDeleting();`
-
- `} }`
+```csharp
+public partial class Book
+{
+   protected override void OnDeleting()
+   {
+      MessageBox.Show("Deleting book " + this.Title);
+      base.OnDeleting();
+   }
+}
+```
 
 > [!NOTE]
->  Para invalidar los métodos en una clase generada, siempre que escribir el código en un archivo que está separado de los archivos generados. Normalmente, el archivo se encuentra en una carpeta que se denomina CustomCode. Si realiza cambios en el código generado, perderán cuando vuelva a generar el código de la definición DSL.
+> Para invalidar métodos en una clase generada, siempre que escriba el código en un archivo que se separa de los archivos generados. Normalmente, el archivo se encuentra en una carpeta que se denomina un valor CustomCode. Si realiza cambios en el código generado, se perderán al volver a generar el código de la definición de DSL.
 
- Para descubrir qué métodos se puede invalidar, escriba **invalidar** en la clase, seguido por un espacio. La información sobre herramientas de IntelliSense le indicará qué métodos se pueden reemplazar.
+Para detectar qué métodos se pueden invalidar, escriba **invalidar** en la clase, seguido por un espacio. La información sobre herramientas de IntelliSense le indicará qué métodos se pueden invalidar.
 
 ### <a name="double-derived-classes"></a>Clases derivadas de doble
- La mayoría de los métodos de las clases generadas se hereda de un conjunto fijo de clases en los espacios de nombres de modelado. Sin embargo, algunos métodos se definen en el código generado. Normalmente, esto significa que no se puede reemplazar no se puede invalidar en una clase parcial de los métodos que se definen en otra definición parcial de la misma clase.
 
- No obstante, puede invalidar estos métodos estableciendo la **genera derivados dobles** marca para la clase de dominio. Este causas dos clases que se genere, uno que se va a una clase base abstracta de la otra. Todas las definiciones de método y propiedad están en la clase base, y sólo el constructor está en la clase derivada.
+La mayoría de los métodos en clases generadas se hereda de un conjunto fijo de clases en los espacios de nombres de modelado. Sin embargo, algunos métodos se definen en el código generado. Normalmente, esto significa que no se puede invalidar no se puede reemplazar en clases parciales de los métodos que se definen en otra definición parcial de la misma clase.
 
- Por ejemplo, en el ejemplo Library.dsl, el `CirculationBook` clase de dominio tiene la `Generates``Double Derived` propiedad establecida en `true`. El código generado para esa clase de dominio contiene dos clases:
+No obstante, puede invalidar estos métodos estableciendo el **genera doble derivada** marca para la clase de dominio. Este hace que dos clases que se genere, uno que se va a una clase base abstracta de la otra. Todas las definiciones de método y propiedad están en la clase base, y es sólo el constructor de la clase derivada.
 
--   `CirculationBookBase`, que es una clase abstracta y que contiene todos los métodos y propiedades.
+Por ejemplo, en el ejemplo Library.dsl, el `CirculationBook` clase de dominio tiene el `Generates``Double Derived` propiedad establecida en `true`. El código generado para esa clase de dominio contiene dos clases:
 
--   `CirculationBook`, que se deriva de `CirculationBookBase`. Está vacío, salvo por sus constructores.
+-   `CirculationBookBase`, que es abstracta y que contiene todos los métodos y propiedades.
 
- Para invalidar cualquier método, se crea una definición parcial de la clase derivada como `CirculationBook`. Puede invalidar los métodos generados y los métodos heredados de la plataforma de modelado.
+-   `CirculationBook`, que se deriva de `CirculationBookBase`. Está vacío, salvo sus constructores.
 
- Puede utilizar este método con todos los tipos de elemento, incluidos los conectores, relaciones, formas, diagramas y elementos del modelo. También puede invalidar los métodos de otras clases generadas. Algunas clases generan como la ToolboxHelper siempre se deriva de doble.
+Para invalidar cualquier método, cree una definición parcial de la clase derivada como `CirculationBook`. Puede invalidar los métodos generados y los métodos heredados del marco de modelado.
+
+Puede usar este método con todos los tipos de elemento, incluidos los conectores, relaciones, formas, diagramas y elementos del modelo. También puede invalidar los métodos de otras clases generadas. Algunas clases generan, como el ToolboxHelper siempre son doble derivada.
 
 ### <a name="custom-constructors"></a>Constructores personalizados
- No se puede reemplazar un constructor. Incluso en clases derivadas de doble, el constructor debe estar en la clase derivada.
 
- Si desea proporcionar su propio constructor, puede hacerlo estableciendo `Has Custom Constructor` para la clase de dominio en la definición DSL. Al hacer clic en **Transformar todas las plantillas**, el código generado no incluirá un constructor para esa clase. Se incluyen una llamada al constructor que faltan. Esto hace que un informe de errores al compilar la solución. Haga doble clic en el informe de errores para ver un comentario en el código generado que explica lo que debe proporcionar.
+No se puede reemplazar un constructor. Incluso en las clases derivadas de doble, el constructor debe estar en la clase derivada.
 
- Escribir una definición de clase parcial en un archivo que es independiente de los archivos generados y proporcionan el constructor.
+Si desea proporcionar su propio constructor, puede hacerlo estableciendo `Has Custom Constructor` para la clase de dominio en la definición de DSL. Al hacer clic en **Transformar todas las plantillas**, el código generado no incluirá un constructor para esa clase. Se incluyen una llamada al constructor que faltan. Esto hace que un informe de errores al compilar la solución. Haga doble clic en el informe de errores para ver un comentario en el código generado que explica lo que debe proporcionar.
+
+Escribir una definición de clase parcial en un archivo que es independiente de los archivos generados y proporcione el constructor.
 
 ### <a name="flagged-extension-points"></a>Puntos de extensión de marcado
- Un punto de la extensión marcado es un lugar en la definición de DSL donde puede establecer una propiedad o una casilla de verificación para indicar que va a proporcionar un método personalizado. Constructores personalizados son un ejemplo. Otros ejemplos incluyen la configuración del `Kind` de una propiedad de dominio a calculado o almacenamiento personalizado o configuración el **personalizado es** marca en el generador de una conexión.
 
- En cada caso, cuando se establece la marca y volver a generar el código, se producirá un error de compilación. Haga doble clic en el error para ver un comentario que explica lo que tendrá que proporcionar.
+Un punto de extensión marcado es un lugar en la definición de DSL, donde puede establecer una propiedad o una casilla de verificación para indicar que va a proporcionar un método personalizado. Constructores personalizados son un ejemplo. Otros ejemplos incluyen la configuración de la `Kind` de una propiedad de dominio a Calculated o almacenamiento personalizado o configuración la **Is Custom** marca en un generador de conexiones.
+
+En cada caso, cuando se establece la marca y volver a generar el código, se producirá un error de compilación. Haga doble clic en el error para ver un comentario que explica lo que tendrá que proporcionar.
 
 ### <a name="rules"></a>Reglas
- El Administrador de transacciones permite definir reglas que se ejecutan antes del final de una transacción en el que designado se ha producido un evento, como un cambio en una propiedad. Reglas se usan normalmente para mantener synchronism entre diferentes elementos en el almacén. Por ejemplo, las reglas se utilizan para asegurarse de que el diagrama muestra el estado actual del modelo.
 
- Las reglas se definen según una clase por clase, por lo que no tiene que tener código que registra la regla para cada objeto. Para obtener más información, consulte [propagar los cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).
+El Administrador de transacciones permite definir reglas que se ejecutan antes del final de una transacción en el que se ha producido un evento designado, por ejemplo, un cambio en una propiedad. Las reglas se utilizan normalmente para mantener synchronism entre los distintos elementos en el almacén. Por ejemplo, las reglas se usan para asegurarse de que el diagrama muestra el estado actual del modelo.
 
-### <a name="store-events"></a>Eventos de almacén
- El almacén de modelado proporciona un mecanismo de evento que puede usar para realizar escuchas de determinados tipos de cambio en la tienda, incluida la adición y eliminación de elementos, cambios en los valores de propiedad y así sucesivamente. Los controladores de eventos se denominan después del cierre de la transacción en el que se realizaron los cambios. Normalmente, estos eventos se usan para actualizar los recursos fuera de la tienda.
+Las reglas se definen por clase, por lo que no es necesario que el código que registra la regla para cada objeto. Para obtener más información, consulte [propagar cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).
+
+### <a name="store-events"></a>Eventos de Store
+
+El almacén de modelado proporciona un mecanismo de eventos que puede usar para realizar escuchas para determinados tipos de cambio en la tienda, incluida la adición y eliminación de elementos, los cambios realizados en los valores de propiedad y así sucesivamente. Los controladores de eventos se denominan después del cierre de la transacción en el que se realizaron los cambios. Normalmente, estos eventos se utilizan para actualizar los recursos fuera de la tienda.
 
 ### <a name="net-events"></a>Eventos de .NET
- Puede suscribirse a algunos eventos sobre las formas. Por ejemplo, puede escuchar clics del mouse en una forma. Tendrá que escribir código que se suscribe al evento para cada objeto. Puede escribir este código en un reemplazo del InitializeInstanceResources().
 
- Algunos eventos se generan en ShapeFields, que se usan para dibujar decoradores en una forma. Para obtener un ejemplo, vea [Cómo: interceptar al hacer clic en una forma o un elemento Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
+Puede suscribirse a algunos eventos en las formas. Por ejemplo, puede escuchar la clics del mouse en una forma. Tendrá que escribir código que se suscribe al evento para cada objeto. Este código se puede escribir en un reemplazo de InitializeInstanceResources().
 
- Normalmente estos eventos no se producen dentro de una transacción. Debe crear una transacción si desea realizar cambios en el almacén.
+Algunos eventos se generan en ShapeFields, que se usan para dibujar los elementos Decorator de una forma. Para obtener un ejemplo, vea [Cómo: interceptar un clic en una forma o decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
+
+Normalmente, estos eventos no se producen dentro de una transacción. Debe crear una transacción si desea realizar cambios en el almacén.

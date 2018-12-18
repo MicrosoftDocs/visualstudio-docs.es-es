@@ -1,6 +1,7 @@
 ---
-title: Generación de código, compilación y convenciones de nomenclatura en Microsoft Fakes para Visual Studio | Microsoft Docs
+title: Generación de código, compilación y convenciones de nomenclatura en Microsoft Fakes
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0c42c25f397a5906654dd5ef0115df921d60607f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7af8fc49896549fd553c8262b04e9d02f76f06e9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058316"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Generación de código, compilación y convenciones de nomenclatura en Microsoft Fakes
 
@@ -21,14 +23,18 @@ En este artículo se explican las opciones y los problemas de generación y comp
 **Requisitos**
 
 -   Visual Studio Enterprise
+-   Un proyecto de .NET Framework
+
+> [!NOTE]
+> No se admiten los proyectos de .NET Standard.
 
 ## <a name="code-generation-and-compilation"></a>Generación y compilación de código
 
 ### <a name="configure-code-generation-of-stubs"></a>Configurar la generación de stub (código auxiliar)
 
-La generación de tipos de stub se configura en un archivo XML que tiene la extensión de archivo .fakes. El marco de trabajo de Fakes se integra en el proceso de compilación mediante tareas de MSBuild personalizadas y detecta los archivos en tiempo de compilación. El generador de código de Fakes compila los tipos de stub en un ensamblado y agrega la referencia al proyecto.
+La generación de tipos de stub se configura en un archivo XML que tiene la extensión de archivo *.fakes*. El marco de trabajo de Fakes se integra en el proceso de compilación mediante tareas de MSBuild personalizadas y detecta los archivos en tiempo de compilación. El generador de código de Fakes compila los tipos de stub en un ensamblado y agrega la referencia al proyecto.
 
-En el ejemplo siguiente se muestran los tipos de stub definidos en FileSystem.dll:
+En el ejemplo siguiente se muestran los tipos de stub definidos en *FileSystem.dll*:
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -38,9 +44,9 @@ En el ejemplo siguiente se muestran los tipos de stub definidos en FileSystem.dl
 
 ### <a name="type-filtering"></a>Filtrado de tipos
 
-Pueden establecerse filtros en el archivo .fakes para restringir los tipos que deben procesarse con stubs. Puede agregar un número ilimitado de elementos Clear, Add y Remove al elemento StubGeneration para compilar la lista de los tipos seleccionados.
+Pueden establecerse filtros en el archivo *.fakes* para restringir los tipos que deben procesarse con stubs. Puede agregar un número ilimitado de elementos Clear, Add y Remove al elemento StubGeneration para compilar la lista de los tipos seleccionados.
 
-Por ejemplo, el siguiente archivo .fakes genera stubs para los tipos en los espacios de nombres System y System.IO, pero excluye cualquier tipo que contenga "Handle" en el sistema:
+Por ejemplo, el siguiente archivo *.fakes* genera stubs para los tipos en los espacios de nombres System y System.IO, pero excluye cualquier tipo que contenga "Handle" en el sistema:
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -80,7 +86,7 @@ Las cadenas de filtro usan una gramática simple para definir cómo deben identi
 
 ### <a name="stub-concrete-classes-and-virtual-methods"></a>Procesamiento con stubs de clases concretas y métodos virtuales
 
-De forma predeterminada, se generan tipos de stub para todas las clases no selladas. Es posible restringir los tipos de stub a clases abstractas a través del archivo de configuración .fakes:
+De forma predeterminada, se generan tipos de stub para todas las clases no selladas. Es posible restringir los tipos de stub a clases abstractas a través del archivo de configuración *.fakes*:
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -122,7 +128,7 @@ El generador de código de Fakes genera tipos de correcciones de compatibilidad 
         PublicKey=<Test_assembly_public_key>)]
     ```
 
-Si el ensamblado corregido para compatibilidad tiene un nombre seguro, el marco de trabajo de Fakes firmará automáticamente de forma segura el ensamblado de Fakes generado. Es necesario firmar de forma segura el ensamblado de prueba. Consulte [Ensamblados con nombre seguro](/dotnet/framework/app-domains/strong-named-assemblies).
+Si el ensamblado corregido para compatibilidad tiene un nombre seguro, el marco de trabajo de Fakes firma automáticamente de forma segura el ensamblado de Fakes generado. Es necesario firmar de forma segura el ensamblado de prueba. Vea [Ensamblados con nombre seguro](/dotnet/framework/app-domains/strong-named-assemblies).
 
 La plataforma de Fakes usa la misma clave para firmar todos los ensamblados generados, por lo que puede usar este fragmento de código como punto de partida para agregar el atributo **InternalsVisibleTo** para el ensamblado de Fakes al código de ensamblado corregido para compatibilidad.
 
@@ -130,7 +136,7 @@ La plataforma de Fakes usa la misma clave para firmar todos los ensamblados gene
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
-Para usar una clave pública diferente para el ensamblado de Fakes, como una clave creada para el ensamblado corregido para compatibilidad, especifique la ruta de acceso completa al archivo **.snk** que contiene la clave alternativa como valor de atributo `KeyFile` en el elemento `Fakes`\\`Compilation` del archivo **.fakes**. Por ejemplo:
+Para usar una clave pública diferente para el ensamblado de Fakes, como una clave creada para el ensamblado corregido para compatibilidad, especifique la ruta de acceso completa al archivo *.snk* que contiene la clave alternativa como valor de atributo `KeyFile` en el elemento `Fakes`\\`Compilation` del archivo *.fakes*. Por ejemplo:
 
 ```xml
 <-- FileSystem.Fakes.fakes -->
@@ -139,7 +145,7 @@ Para usar una clave pública diferente para el ensamblado de Fakes, como una cla
 </Fakes>
 ```
 
-A continuación, debe usar la clave pública del archivo **.snk** alternativo como segundo parámetro del atributo InternalVisibleTo del ensamblado de Fakes en el código de ensamblado corregido para compatibilidad:
+A continuación, debe usar la clave pública del archivo *.snk* alternativo como segundo parámetro del atributo InternalVisibleTo del ensamblado de Fakes en el código de ensamblado corregido para compatibilidad:
 
 ```csharp
 // FileSystem\AssemblyInfo.cs
@@ -157,11 +163,11 @@ La compilación de los ensamblados de Fakes puede aumentar considerablemente el 
 
 En los proyectos de prueba unitaria, agregue una referencia a los ensamblados de Fakes compilados que se encuentran en FakesAssemblies en la carpeta del proyecto.
 
-1.  Cree una nueva biblioteca de clases con la versión en tiempo de ejecución de .NET que coincida con los proyectos de prueba. Llamémosla Fakes.Prebuild. Quite el archivo class1.cs del proyecto, ya que no es necesario.
+1.  Cree una nueva biblioteca de clases con la versión en tiempo de ejecución de .NET que coincida con los proyectos de prueba. Llamémosla Fakes.Prebuild. Quite el archivo *class1.cs* del proyecto, ya que no es necesario.
 
 2.  Agregue una referencia a todos los ensamblados del sistema y de terceros para los que necesitará Fakes.
 
-3.  Agregue un archivo .fakes para cada ensamblado y compilación.
+3.  Agregue un archivo *.fakes* para cada ensamblado y compilación.
 
 4.  Desde el proyecto de prueba
 
@@ -169,17 +175,17 @@ En los proyectos de prueba unitaria, agregue una referencia a los ensamblados de
 
          *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll*
 
-    -   Para cada ensamblado para el que creó Fakes, agregue una referencia al archivo DLL correspondiente en la carpeta Fakes.Prebuild\FakesAssemblies del proyecto.
+    -   Para cada ensamblado para el que creó Fakes, agregue una referencia al archivo DLL correspondiente en la carpeta *Fakes.Prebuild\FakesAssemblies* del proyecto.
 
 ### <a name="avoid-assembly-name-clashing"></a>Evitar conflictos de nombre de ensamblado
 
-En un entorno de Team Build, todos los resultados de la compilación se combinan en un solo directorio. Si varios proyectos utilizan Fakes, podría darse que los ensamblados de Fakes de una versión diferente se reemplacen entre sí. Por ejemplo, tanto TestProject1 fakes mscorlib.dll de .NET Framework 2.0 como TestProject2 fakes mscorlib.dll para .NET Framework 4 generarían un ensamblado de Fakes mscorlib.Fakes.dll.
+En un entorno de Team Build, todos los resultados de la compilación se combinan en un solo directorio. Si varios proyectos utilizan Fakes, podría darse que los ensamblados de Fakes de una versión diferente se reemplacen entre sí. Por ejemplo, tanto TestProject1 fakes *mscorlib.dll* de .NET Framework 2.0 como TestProject2 fakes *mscorlib.dll* para .NET Framework 4 generarían un ensamblado de Fakes *mscorlib.Fakes.dll*.
 
- Para evitar este problema, Fakes debe crear automáticamente nombres de ensamblado de Fakes cualificados para la versión para las referencias que no son del proyecto al agregar los archivos .fakes. Un nombre de ensamblado de Fakes cualificado para la versión inserta un número de versión cuando se crea el nombre del ensamblado de Fakes:
+ Para evitar este problema, Fakes debe crear automáticamente nombres de ensamblado de Fakes cualificados para la versión para las referencias que no son del proyecto al agregar los archivos *.fakes*. Un nombre de ensamblado de Fakes cualificado para la versión inserta un número de versión cuando se crea el nombre del ensamblado de Fakes:
 
  Dado un ensamblado MyAssembly y una versión 1.2.3.4, el nombre del ensamblado de Fakes es MyAssembly.1.2.3.4.Fakes.
 
- Puede cambiar o quitar esta versión modificando el atributo Version del elemento Assembly en el archivo .fakes:
+ Puede cambiar o quitar esta versión modificando el atributo Version del elemento Assembly en el archivo *.fakes*:
 
 ```xml
 attribute of the Assembly element in the .fakes:
@@ -195,42 +201,42 @@ attribute of the Assembly element in the .fakes:
 
  **Espacios de nombres**
 
--   El sufijo .fakes se agrega al espacio de nombres.
+- El sufijo .fakes se agrega al espacio de nombres.
 
-     Por ejemplo, el espacio de nombres `System.Fakes` contiene los tipos de correcciones de compatibilidad del espacio de nombres System.
+   Por ejemplo, el espacio de nombres `System.Fakes` contiene los tipos de correcciones de compatibilidad del espacio de nombres System.
 
--   Global.Fakes contiene el tipo de correcciones de compatibilidad del espacio de nombres vacío.
+- Global.Fakes contiene el tipo de correcciones de compatibilidad del espacio de nombres vacío.
 
- **Nombres de tipo**
+  **Nombres de tipo**
 
--   Se agrega el prefijo Shim al nombre del tipo para generar el nombre del tipo de correcciones de compatibilidad.
+- Se agrega el prefijo Shim al nombre del tipo para generar el nombre del tipo de correcciones de compatibilidad.
 
-     Por ejemplo, ShimExample es el tipo de correcciones de compatibilidad del tipo Example.
+   Por ejemplo, ShimExample es el tipo de correcciones de compatibilidad del tipo Example.
 
--   Se agrega el prefijo Stub al nombre del tipo para generar el nombre del tipo de stub.
+- Se agrega el prefijo Stub al nombre del tipo para generar el nombre del tipo de stub.
 
-     Por ejemplo, StubIExample es el tipo de stub del tipo IExample.
+   Por ejemplo, StubIExample es el tipo de stub del tipo IExample.
 
- **Argumentos de tipo y estructuras de tipo anidado**
+  **Argumentos de tipo y estructuras de tipo anidado**
 
--   Se copian los argumentos de tipo genérico.
+- Se copian los argumentos de tipo genérico.
 
--   Se copia la estructura de tipo anidado para los tipos de correcciones de compatibilidad.
+- Se copia la estructura de tipo anidado para los tipos de correcciones de compatibilidad.
 
 ### <a name="shim-delegate-property-or-stub-delegate-field-naming-conventions"></a>Convenciones de nomenclatura de la propiedad de delegado de correcciones de compatibilidad o del campo de delegado de stub
 
 **Reglas básicas** de la nomenclatura de campo, a partir de un nombre vacío:
 
--   Se anexa el nombre del método.
+- Se anexa el nombre del método.
 
--   Si el nombre del método es una implementación de interfaz explícita, se quitan los puntos.
+- Si el nombre del método es una implementación de interfaz explícita, se quitan los puntos.
 
--   Si el método es genérico, se anexa `Of`*n*, donde *n* es el número de argumentos de método genérico.
+- Si el método es genérico, se anexa `Of`*n*, donde *n* es el número de argumentos de método genérico.
 
- Los **nombres de métodos especiales**, como los captadores o establecedores de propiedad, se tratan tal como se describe en la tabla siguiente:
+  Los **nombres de métodos especiales**, como los captadores o establecedores de propiedad, se tratan tal como se describe en la tabla siguiente:
 
 |Si el método es...|Ejemplo|Nombre de método anexado|
-|-------------------|-------------|--------------------------|
+|-|-|-|
 |Un **constructor**|`.ctor`|`Constructor`|
 |Un **constructor** estático|`.cctor`|`StaticConstructor`|
 |Un **descriptor de acceso** con el nombre de método compuesto por dos partes separadas por "_" (por ejemplo, captadores de propiedades)|*kind_name* (caso común, pero no impuesto por ECMA)|*NameKind*, donde ambas partes se pusieron en mayúscula y se intercambiaron|
@@ -250,7 +256,7 @@ attribute of the Assembly element in the .fakes:
 ### <a name="parameter-type-naming-conventions"></a>Convenciones de nomenclatura del tipo de parámetro
 
 |Dado...|La cadena anexada es...|
-|-----------|-------------------------|
+|-|-|
 |Un **tipo**`T`|T<br /><br /> Se quitan el espacio de nombres, la estructura anidada y las marcas genéricas.|
 |Un **parámetro de salida**`out T`|`TOut`|
 |Un **parámetro de referencia**`ref T`|`TRef`|

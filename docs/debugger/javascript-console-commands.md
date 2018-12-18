@@ -1,9 +1,9 @@
 ---
-title: Comandos de consola de JavaScript en Visual Studio | Documentos de Microsoft
+title: Comandos de consola de JavaScript en Visual Studio | Microsoft Docs
 ms.custom: ''
 ms.date: 07/17/2017
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
 - JavaScript debugging, console [UWP apps]
@@ -14,15 +14,16 @@ manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 2c0151bb0810529f0dad36d72b80a13ae519e8b0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f10439e63b95fc2e78980ceb585e32dbbabd44d9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823754"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Comandos de la consola de JavaScript en Visual Studio
   
- La ventana Consola JavaScript de Visual Studio te permite usar comandos para enviar mensajes y realizar otras tareas. Para obtener ejemplos que muestran cómo utilizar esta ventana, consulte [inicio rápido: depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). La información de este tema se aplica a las aplicaciones de UWP y las aplicaciones creadas con Visual Studio Tools para Apache Cordova. Para obtener información sobre los comandos de consola compatibles en aplicaciones de Cordova, consulte [depurar la aplicación](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Para obtener información sobre el uso de la consola con herramientas de F12 de Internet Explorer, consulte [este tema](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
+ La ventana Consola JavaScript de Visual Studio te permite usar comandos para enviar mensajes y realizar otras tareas. Para obtener ejemplos que muestran cómo usar esa ventana, consulte [inicio rápido: depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). La información de este tema se aplica a las aplicaciones para UWP y aplicaciones creadas con Visual Studio Tools para Apache Cordova. Para obtener información acerca sobre los comandos de consola compatibles en las aplicaciones de Cordova, vea [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Para obtener información sobre el uso de la consola con herramientas de F12 de Internet Explorer, consulte [este tema](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85)).  
   
  Si la ventana Consola JavaScript está cerrada, puedes abrirla durante la depuración en Visual Studio si eliges **Depurar** > **Ventanas** > **Consola JavaScript**.  
   
@@ -51,10 +52,10 @@ ms.lasthandoff: 04/18/2018
 |`groupEnd()`|Finaliza el grupo actual.<br /><br /> Requisitos:<br /><br /> Visual Studio 2013|Consulta el ejemplo para el comando `group` .|  
 |`info(message)`|Envía `message` a la ventana de consola. El mensaje va precedido de un símbolo de información.|`console.info("info message");`<br /><br /> Para ver más ejemplos, consulte [Formatting console.log output](#ConsoleLog) más adelante en este tema.|  
 |`log(message)`|Envía `message` a la ventana de consola.<br /><br /> Si pasas un objeto, este comando lo envía a la ventana de la consola y lo muestra en un visualizador de objeto. Puedes usar el visualizador para inspeccionar las propiedades en la ventana de consola.|`console.log("logging message");`|  
-|`msIsIndependentlyComposed(element)`|Se utiliza en aplicaciones web. No se admite en aplicaciones UWP con JavaScript.|No se admite.|  
-|`profile(reportName)`|Se utiliza en aplicaciones web. No se admite en aplicaciones UWP con JavaScript.|No se admite.|  
-|`profileEnd()`|Se utiliza en aplicaciones web. No se admite en aplicaciones UWP con JavaScript.|No se admite.|  
-|`select(element)`|Selecciona el texto HTML especificado `element` en el [el explorador DOM](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|  
+|`msIsIndependentlyComposed(element)`|Se utiliza en aplicaciones web. No se admite en aplicaciones para UWP mediante JavaScript.|No se admite.|  
+|`profile(reportName)`|Se utiliza en aplicaciones web. No se admite en aplicaciones para UWP mediante JavaScript.|No se admite.|  
+|`profileEnd()`|Se utiliza en aplicaciones web. No se admite en aplicaciones para UWP mediante JavaScript.|No se admite.|  
+|`select(element)`|Selecciona el parámetro HTML `element` especificado en el [Explorador DOM](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|  
 |`time (name)`|Inicia un temporizador identificado por el parámetro `name` opcional. Cuando se utiliza con `console.timeEnd`, calcula el tiempo transcurrido entre `time` y `timeEnd`, y envía el resultado (medido en ms) a la consola utilizando la cadena `name` como prefijo. Se utiliza para habilitar la instrumentación del código de la aplicación para medir el rendimiento.|`console.time("app start");  app.start();  console.timeEnd("app start");`|  
 |`timeEnd(name)`|Detiene un temporizador identificado por el parámetro `name` opcional. Consulta el comando de la consola `time` .|`console.time("app start"); app.start(); console.timeEnd("app start");`|  
 |`trace()`|Envía un seguimiento de la pila a la ventana de consola. Los datos de seguimiento incluyen la pila de llamadas completa e información como el nombre de archivo, el número de línea y el número de columna.|`console.trace();`|  
@@ -69,7 +70,7 @@ ms.lasthandoff: 04/18/2018
 |`$(id)`|Devuelve un elemento por su identificador. Se trata de un comando de acceso directo para `document.getElementById(id)`, donde `id` es una cadena que representa el identificador del elemento.|`$("contenthost")`|  
 |`$$(selector)`|Devuelve una matriz de elementos que coinciden con el selector especificado mediante la sintaxis del selector de CSS. Es un comando de acceso directo para `document.querySelectorAll()`.|`$$(".itemlist")`|  
 |`cd()`<br /><br /> `cd(window)`|Permite cambiar el contexto para la evaluación de la expresión desde la ventana predeterminada de nivel superior de la página hasta la ventana del marco especificado. Si se llama a `cd()` sin parámetros, se devuelve el contexto a la ventana de nivel superior.|`cd();`<br /><br /> `cd(myframe);`|  
-|`select(element)`|Selecciona el elemento especificado en [el explorador DOM](../debugger/quickstart-debug-html-and-css.md).|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|  
+|`select(element)`|Selecciona el elemento especificado en el [Explorador DOM](../debugger/quickstart-debug-html-and-css.md).|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|  
 |`dir(object)`|Devuelve un visualizador para el objeto especificado. Puedes usar el visualizador para inspeccionar las propiedades en la ventana de consola.|`dir(obj);`|  
   
 ## <a name="checking-whether-a-console-command-exists"></a>Comprobar si existe un comando de consola  
@@ -85,7 +86,7 @@ if (console && console.log) {
 ## <a name="examining-objects-in-the-javascript-console-window"></a>Examinar objetos en la ventana Consola JavaScript  
  Puedes interactuar con cualquier objeto que esté dentro del ámbito cuando utilices la ventana Consola JavaScript. Para inspeccionar un objeto que esté fuera del ámbito en la ventana de la consola, utiliza `console.log` , `console.dir`u otros comandos del código. También puede interactuar con el objeto desde la ventana de la consola mientras esté dentro del ámbito si establece un punto de interrupción en el código (**Punto de interrupción** > **Insert Punto de interrupción**).  
   
-##  <a name="ConsoleLog"></a> Aplicar formato al resultado de console.log  
+##  <a name="ConsoleLog"></a> Formato de salida de console.log  
  Si pasas varios argumentos a `console.log`, la consola los tratará como una matriz y concatenará el resultado.  
   
 ```javascript  
@@ -103,16 +104,16 @@ console.log(user.first, user.last);
   
  Se admiten los siguientes patrones de sustitución:  
   
--   %s - cadena  
-     %i - entero  
-     %d - entero  
-     %f - flotante  
-     %o - objeto  
-     %b - binario  
-     %x - hexadecimal  
-     %e - exponente  
+- %s - cadena  
+   %i - entero  
+   %d - entero  
+   %f - flotante  
+   %o - objeto  
+   %b - binario  
+   %x - hexadecimal  
+   %e - exponente  
   
- Aquí se proporcionan algunos ejemplos del empleo de patrones de sustitución en `console.log`:  
+  Aquí se proporcionan algunos ejemplos del empleo de patrones de sustitución en `console.log`:  
   
 ```javascript  
 var user = new Object();  

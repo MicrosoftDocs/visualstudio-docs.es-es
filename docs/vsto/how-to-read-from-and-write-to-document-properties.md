@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: leer y escribir en Propiedades de un documento | Documentos de Microsoft'
+title: 'Cómo: de lectura y escritura a las propiedades de documento'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,31 +18,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0f420968461b8f4d11416abe85521ed002cf11ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: de9ae85156f9d272901893c74c5d2c9729a0a3dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924233"
 ---
-# <a name="how-to-read-from-and-write-to-document-properties"></a>Cómo: Leer y escribir en propiedades de un documento
+# <a name="how-to-read-from-and-write-to-document-properties"></a>Cómo: de lectura y escritura a las propiedades de documento
   Puede almacenar propiedades de documento junto con un documento. Las aplicaciones de Office proporcionan una serie de propiedades integradas, como author, title y subject. En este tema se muestra cómo establecer las propiedades de documento en Microsoft Office Excel y Microsoft Office Word.  
   
- ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo a vídeo") para una demostración en vídeo relacionada, vea [cómo obtener acceso a y manipular propiedades personalizadas del documento de Microsoft Word?](http://go.microsoft.com/fwlink/?LinkId=136772).  
+ ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una demostración en vídeo relacionada, vea [¿cómo lo hago?: acceso y manipular propiedades personalizadas del documento en Microsoft Word?](http://go.microsoft.com/fwlink/?LinkId=136772).  
   
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]  
   
-## <a name="setting-document-properties-in-excel"></a>Establecer las propiedades de un documento en Excel  
+## <a name="set-document-properties-in-excel"></a>Conjunto de propiedades de documento de Excel  
  Para trabajar con las propiedades integradas de Excel, use las siguientes propiedades:  
   
--   En un proyecto de nivel de documento, use la propiedad <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> de la clase `ThisWorkbook` .  
+- En un proyecto de nivel de documento, use la propiedad <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> de la clase `ThisWorkbook` .  
   
--   En un proyecto de complemento de VSTO, use la propiedad <xref:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties%2A> de un objeto <xref:Microsoft.Office.Interop.Excel.Workbook> .  
+- En un proyecto de complemento de VSTO, use la propiedad <xref:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties%2A> de un objeto <xref:Microsoft.Office.Interop.Excel.Workbook> .  
   
- Estas propiedades devuelven un objeto <xref:Microsoft.Office.Core.DocumentProperties> , que es una colección de objetos <xref:Microsoft.Office.Core.DocumentProperty> . Puede usar la propiedad `Item` de la colección para recuperar una propiedad determinada, ya sea por nombre o por índice dentro de la colección.  
+  Estas propiedades devuelven un objeto <xref:Microsoft.Office.Core.DocumentProperties> , que es una colección de objetos <xref:Microsoft.Office.Core.DocumentProperty> . Puede usar la propiedad `Item` de la colección para recuperar una propiedad determinada, ya sea por nombre o por índice dentro de la colección.  
   
- En el siguiente ejemplo de código se muestra cómo cambiar la propiedad integrada **Revision Number** en un proyecto de nivel de documento.  
+  En el siguiente ejemplo de código se muestra cómo cambiar la propiedad integrada **Revision Number** en un proyecto de nivel de documento.  
   
-#### <a name="to-change-the-revision-number-property-in-excel"></a>Para cambiar la propiedad Revision Number en Excel  
+### <a name="to-change-the-revision-number-property-in-excel"></a>Para cambiar la propiedad Revision Number en Excel  
   
 1.  Asigne las propiedades integradas del documento a una variable.  
   
@@ -54,18 +55,18 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreProgramming#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#8)]
      [!code-csharp[Trin_VstcoreProgramming#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#8)]  
   
-## <a name="setting-document-properties-in-word"></a>Establecer las propiedades de un documento en Word  
+## <a name="set-document-properties-in-word"></a>Establecer propiedades de documento en Word  
  Para trabajar con las propiedades integradas de Word, use las siguientes propiedades:  
   
--   En un proyecto de nivel de documento, use la propiedad <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> de la clase `ThisDocument` .  
+- En un proyecto de nivel de documento, use la propiedad <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> de la clase `ThisDocument` .  
   
--   En un proyecto de complemento de VSTO, use la propiedad <xref:Microsoft.Office.Interop.Word._Document.BuiltInDocumentProperties%2A> de un objeto <xref:Microsoft.Office.Interop.Word.Document> .  
+- En un proyecto de complemento de VSTO, use la propiedad <xref:Microsoft.Office.Interop.Word._Document.BuiltInDocumentProperties%2A> de un objeto <xref:Microsoft.Office.Interop.Word.Document> .  
   
- Estas propiedades devuelven un objeto <xref:Microsoft.Office.Core.DocumentProperties> , que es una colección de objetos <xref:Microsoft.Office.Core.DocumentProperty> . Puede usar la propiedad `Item` de la colección para recuperar una propiedad determinada, ya sea por nombre o por índice dentro de la colección.  
+  Estas propiedades devuelven un objeto <xref:Microsoft.Office.Core.DocumentProperties> , que es una colección de objetos <xref:Microsoft.Office.Core.DocumentProperty> . Puede usar la propiedad `Item` de la colección para recuperar una propiedad determinada, ya sea por nombre o por índice dentro de la colección.  
   
- En el siguiente ejemplo de código se muestra cómo cambiar la propiedad integrada **Subject** en un proyecto de nivel de documento.  
+  En el siguiente ejemplo de código se muestra cómo cambiar la propiedad integrada **Subject** en un proyecto de nivel de documento.  
   
-#### <a name="to-change-the-subject-property"></a>Para cambiar la propiedad Subject  
+### <a name="to-change-the-subject-property"></a>Para cambiar la propiedad Subject  
   
 1.  Asigne las propiedades integradas del documento a una variable.  
   
@@ -83,8 +84,8 @@ ms.lasthandoff: 04/16/2018
  Aunque trabaje con Word y Excel y sus objetos, Microsoft Office proporciona una lista de propiedades de documento integradas. Si se intenta tener acceso a una propiedad sin definir, se produce una excepción.  
   
 ## <a name="see-also"></a>Vea también  
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
- [Programación de personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md)   
- [Cómo: Crear y modificar propiedades personalizadas de documentos](../vsto/how-to-create-and-modify-custom-document-properties.md)  
+ [Programar complementos VSTO](../vsto/programming-vsto-add-ins.md)   
+ [Programar personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md)   
+ [Cómo: crear y modificar propiedades de documento personalizadas](../vsto/how-to-create-and-modify-custom-document-properties.md)  
   
   

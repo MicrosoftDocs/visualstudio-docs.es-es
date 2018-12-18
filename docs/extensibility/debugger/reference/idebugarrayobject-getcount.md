@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81788423523837b6e8b29a8869abca7b393cf37a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4edfaf7b9ef655473244bdcd18bf6b2c31b8210d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891406"
 ---
 # <a name="idebugarrayobjectgetcount"></a>IDebugArrayObject::GetCount
 Obtiene el número de elementos de la matriz.  
@@ -48,7 +49,7 @@ int GetCount(
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método ve todos los elementos de un objeto de matriz como una matriz unidimensional, incluso si el objeto de matriz es multidimensional. Por ejemplo, dada la matriz `myarray[3][2][6]`, este método devolverá 36 en el `pdwElements` parámetro. Use la [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) método para recuperar los elementos individuales de uno en uno.  
+ Este método considera todos los elementos de un objeto de matriz como una matriz unidimensional, incluso si el objeto de matriz es multidimensional. Por ejemplo, dada la matriz `myarray[3][2][6]`, este método debería regresar 36 en el `pdwElements` parámetro. Use la [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) método para recuperar los elementos individuales uno a la vez.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

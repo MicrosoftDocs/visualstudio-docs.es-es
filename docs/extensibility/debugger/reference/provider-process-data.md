@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_PROCESS_DATA | Documentos de Microsoft
+title: PROVIDER_PROCESS_DATA | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61b1b5d67faea0ce5c1c2a56b3f411cd4f947067
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 789385ae229214beeb6c2ab9be90a964127e5e13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819737"
 ---
 # <a name="providerprocessdata"></a>PROVIDER_PROCESS_DATA
-Esta estructura proporciona información sobre los procesos que se ejecutan en un equipo.  
+Esta estructura proporciona información acerca de los procesos que se ejecutan en una máquina.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -44,13 +45,13 @@ public struct PROVIDER_PROCESS_DATA {
   
 ## <a name="members"></a>Miembros  
  Campos  
- Una combinación de indicadores de la [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) enumeración, que indica qué campos se rellenen.  
+ Una combinación de marcas de la [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) enumeración, que indica qué campos se rellenan.  
   
  ProgramNodes  
- A [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) estructura que contiene una matriz de nodos de programa.  
+ Un [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) estructura que contiene una matriz de nodos de programa.  
   
  fIsDebuggerPresent  
- Es distinto de cero (`TRUE`) si la [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] depurador se está ejecutando, cero (`FALSE`) si no lo está.  
+ Distinto de cero (`TRUE`) si el [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] depurador se está ejecutando, cero (`FALSE`) si no lo está.  
   
 ## <a name="remarks"></a>Comentarios  
  Esta estructura se pasa a la [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) método donde se rellena.  

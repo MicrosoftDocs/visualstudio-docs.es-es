@@ -1,24 +1,22 @@
 ---
-title: "Agregar parámetros de nombre a las plantillas de proyecto y de elemento en Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Adición de parámetros de nombre a las plantillas de proyecto y de elemento en Visual Studio
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - template parameters
 - template parameters, substituting
 - Visual Studio templates, using parameters
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ecdd277a36cb1c074653edb2af7f1882e6d25ede
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.openlocfilehash: 26802b7b5293fd43eb1546290560c5300c360003
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945940"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Cómo: Sustituir parámetros en una plantilla
 
@@ -36,7 +34,7 @@ En la sección siguiente se muestra cómo modificar una plantilla para reemplaza
     namespace $safeprojectname$
     ```
 
-1. En el archivo .vstemplate de la plantilla, busque el elemento `ProjectItem` que incluye este archivo.
+1. En el archivo *vstemplate* de la plantilla, busque el elemento `ProjectItem` que incluye este archivo.
 
 1. Establezca el atributo `ReplaceParameters` en `true` para el elemento `ProjectItem`:
 
@@ -46,7 +44,7 @@ En la sección siguiente se muestra cómo modificar una plantilla para reemplaza
 
 ## <a name="see-also"></a>Vea también
 
-[Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)  
-[Parámetros de plantilla](../ide/template-parameters.md)  
-[Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)  
-[ProjectItem (Elemento, Plantillas de elementos de Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)
+- [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
+- [Parámetros de plantilla](../ide/template-parameters.md)
+- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [ProjectItem (Elemento, Plantillas de elementos de Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: Expresiones en el depurador | Documentos de Microsoft
+title: Expresiones en el depurador | Microsoft Docs
 ms.custom: ''
 ms.date: 02/07/2017
 ms.technology: vs-ide-debug
@@ -21,16 +21,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dccd4af0c14787ef34c1c558f83ecb2d6f0c1cea
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 035d66590c6b6087c56887a4eaa2b0538406f87b
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257259"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Expresiones en el depurador de Visual Studio
 El depurador de Visual Studio incluye evaluadores de expresión que funcionan cuando escribe una expresión en el cuadro de diálogo **Inspección rápida** , la ventana **Inspección** o la ventana **Inmediato** . Los evaluadores de expresión también se utilizan en la ventana **Puntos de interrupción** y en muchos otros lugares en el depurador.
   
- Las secciones siguientes proporcionan detalles sobre las expresiones en diferentes idiomas.  
+ Las secciones siguientes se describen las limitaciones de la evaluación de expresiones de idiomas compatibles con Visual Studio.
   
 ## <a name="f-expressions-are-not-supported"></a>No se admiten las expresiones de F#  
  No se reconocen las expresiones de F#. Si va a depurar código F#, es necesario traducir las expresiones a la sintaxis de C# antes de escribirlas en una ventana o un cuadro de diálogo de depurador. Al traducir expresiones de F# a C#, recuerde que C# usa el operador `==` para comprobar la igualdad, mientras que F# usa `=`.  
@@ -90,13 +91,13 @@ int main()
   
  Funciones intrínsecas del depurador:  
   
--   Se garantiza que son seguras: ejecutar una función intrínseca del depurador no dañará el proceso que se está depurando.  
+- Se garantiza que son seguras: ejecutar una función intrínseca del depurador no dañará el proceso que se está depurando.  
   
--   Se permiten en todas las expresiones, incluso en escenarios en los que no se permiten efectos secundarios ni evaluación de funciones.  
+- Se permiten en todas las expresiones, incluso en escenarios en los que no se permiten efectos secundarios ni evaluación de funciones.  
   
--   Funcionan en escenarios en los que no son posibles llamadas de función estándar, por ejemplo la depuración de un minivolcado.  
+- Funcionan en escenarios en los que no son posibles llamadas de función estándar, por ejemplo la depuración de un minivolcado.  
   
- Las funciones intrínsecas del depurador también pueden crear expresiones de evaluación más adecuadas. Por ejemplo, `strncmp(str, "asd")` es mucho más fácil de escribir en una condición de punto de interrupción que `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`. )  
+  Las funciones intrínsecas del depurador también pueden crear expresiones de evaluación más adecuadas. Por ejemplo, `strncmp(str, "asd")` es mucho más fácil de escribir en una condición de punto de interrupción que `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`. )  
   
 |Área|Funciones intrínsecas|  
 |----------|-------------------------|  
@@ -122,7 +123,7 @@ int main()
 ## <a name="c---unsupported-expressions"></a>C#: Expresiones no admitidas  
   
 ### <a name="dynamic-objects"></a>Objetos dinámicos  
- Puede usar variables en expresiones del depurador que tengan tipos estáticos como dinámicos. Cuando los objetos que implementan la interfaz [IDynamicMetaObjectProvider Interface](http://msdn.microsoft.com/Library/e887a72d-ebe2-4253-a7e8-3d8d05154647) se evalúan en la ventana Inspección, se agrega el nodo Vista dinámica. El nodo Vista dinámica muestra los miembros de objetos, pero no permite editar los valores de los miembros.  
+ Puede usar variables en expresiones del depurador que tengan tipos estáticos como dinámicos. Cuando los objetos que implementan <xref:System.Dynamic.IDynamicMetaObjectProvider> se evalúan en la ventana Inspección, se agrega el nodo Vista dinámica. El nodo Vista dinámica muestra los miembros de objetos, pero no permite editar los valores de los miembros.  
   
  No se admiten las características siguientes de los objetos dinámicos:  
   
@@ -146,7 +147,7 @@ int main()
 ## <a name="visual-basic---unsupported-expressions"></a>Visual Basic: Expresiones no admitidas  
   
 ### <a name="dynamic-objects"></a>Objetos dinámicos  
- Puede usar variables en expresiones del depurador que tengan tipos estáticos como dinámicos. Cuando los objetos que implementan la interfaz [IDynamicMetaObjectProvider Interface](http://msdn.microsoft.com/Library/e887a72d-ebe2-4253-a7e8-3d8d05154647) se evalúan en la ventana Inspección, se agrega el nodo Vista dinámica. El nodo Vista dinámica muestra los miembros de objetos, pero no permite editar los valores de los miembros.  
+ Puede usar variables en expresiones del depurador que tengan tipos estáticos como dinámicos. Cuando los objetos que implementan la interfaz <xref:System.Dynamic.IDynamicMetaObjectProvider> se evalúan en la ventana Inspección, se agrega el nodo Vista dinámica. El nodo Vista dinámica muestra los miembros de objetos, pero no permite editar los valores de los miembros.  
   
  No se admiten las características siguientes de los objetos dinámicos:  
   
@@ -207,6 +208,6 @@ int main()
   
 ## <a name="see-also"></a>Vea también  
  [Especificadores de formato en C++](../debugger/format-specifiers-in-cpp.md)   
- [Operador de contexto (C++)](../debugger/context-operator-cpp.md)   
+ [Context Operator (C++)](../debugger/context-operator-cpp.md)   
  [Especificadores de formato en C#](../debugger/format-specifiers-in-csharp.md)   
  [Pseudovariables](../debugger/pseudovariables.md)

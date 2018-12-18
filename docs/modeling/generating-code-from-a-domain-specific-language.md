@@ -7,17 +7,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f56d5e681ae3e7deb60dd3b804d096d7d95243c1
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 77d26595bd97a98ef9a4cd1f72c14739695bb755
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859853"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Generar código a partir de lenguajes específicos de dominio
-Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] proporciona una forma eficaz para generar código, documentos, archivos de configuración y otros artefactos de datos representados en los modelos. Usar [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], puede crear un conjunto de clases que representan los datos y puede escribir las plantillas de texto en las clases cuyos nombres y propiedades reflejan esos datos.
+Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] proporciona una forma eficaz para generar código, documentos, archivos de configuración y otros artefactos de los datos representados en modelos. Uso de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], puede crear un conjunto de clases que representan los datos y puede escribir sus plantillas de texto en las clases cuyos nombres y propiedades reflejan dichos datos.
 
- Por ejemplo, Fabrikam tiene un archivo XML de los nombres de cliente y direcciones de correo electrónico. Los programadores crear un modelo en el que el cliente es una clase con propiedades nombre y correo electrónico. Escriben varias plantillas de texto para procesar los datos, incluido este fragmento que genera una tabla de todos los clientes como parte de una página HTML:
+ Por ejemplo, Fabrikam tiene un archivo XML de los nombres de cliente y direcciones de correo electrónico. Los desarrolladores creación un modelo en el que el cliente es una clase, con las propiedades nombre y correo electrónico. Escriben varias plantillas de texto para procesar los datos, incluido este fragmento que genera una tabla de todos los clientes como parte de una página HTML:
 
 ```
 <table>
@@ -27,16 +29,16 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] proporciona una forma 
 <# } #>  </table>
 ```
 
- Cuando se procesa la base de datos de cliente, se lee el archivo XML en el almacén de modelos. A *procesador de directivas*, creado mediante el uso de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], hace que la clase Customer disponible para el código de la plantilla de texto. Muchas plantillas de texto se pueden ejecutar en el mismo almacén.
+ Cuando se procesa la base de datos de cliente, se lee el archivo XML en el almacén de modelos. Un *procesador de directivas*, creado mediante el uso de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], pone a disposición el código de la clase Customer en la plantilla de texto. Muchas plantillas de texto se pueden ejecutar en el mismo almacén.
 
- Plantillas de texto son esenciales para [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Se usan para generar el código fuente para los elementos del modelo de dominio, así como para el VSPackage y los controles que se usan para integrar las herramientas con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+ Las plantillas de texto son esenciales para [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Se utilizan para generar el código fuente para los elementos del modelo de dominio, así como para el VSPackage y los controles que se usan para integrar las herramientas con Visual Studio.
 
- En esta sección se describe algunas de las formas de crear, modificar y depurar plantillas de texto que se utilizan en [!INCLUDE[dsl](../modeling/includes/dsl_md.md)].
+ En esta sección se describe algunas de las formas de crear, modificar y depurar las plantillas de texto utilizadas en [!INCLUDE[dsl](../modeling/includes/dsl_md.md)].
 
 ## <a name="in-this-section"></a>En esta sección
  [Acceso a modelos a partir de plantillas de texto](../modeling/accessing-models-from-text-templates.md)
 
- Proporciona información básica acerca de cómo hacer referencia al lenguaje específico de dominio en las plantillas de texto.
+ Proporciona información básica sobre la que hace referencia a lenguajes específicos de dominio en las plantillas de texto.
 
  [Tutorial: Depurar una plantilla de texto que tiene acceso a un modelo](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)
 
@@ -44,11 +46,11 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] proporciona una forma 
 
  [Tutorial: Conectar un host a un procesador de directivas personalizadas](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)
 
- Describe cómo conectar un host personalizado para un procesador de directivas generado.
+ Describe cómo conectar un host personalizado a un procesador de directivas personalizadas.
 
  [El comando DslTextTransform](../modeling/the-dsltexttransform-command.md)
 
- Describe el archivo de comandos que se ejecuta el ejecutable TextTransform en la línea de comandos para plantillas de texto que hacen referencia a lenguajes específicos de dominio.
+ Describe el archivo de comandos que se ejecuta el ejecutable TextTransform en la línea de comandos para las plantillas de texto que hacen referencia a lenguajes específicos de dominio.
 
 ## <a name="reference"></a>Referencia
  [Escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md)
@@ -62,4 +64,4 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] proporciona una forma 
 
  [Generación de código en un proceso de compilación](../modeling/code-generation-in-a-build-process.md)
 
- Lea este tema si va a generar los archivos de un DSL en un servidor de compilación.
+ Lea este tema si está generando los archivos desde un DSL en un servidor de compilación.

@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 826274b42aad8e695772abab75d4a2d5f2611336
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7b9078fdc7849912436c0b8dc3d72338f746b36c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942041"
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
 Este método obtiene el contenedor de un campo.  
@@ -40,10 +41,10 @@ int GetContainer(
   
 #### <a name="parameters"></a>Parámetros  
  `ppContainerField`  
- [out] Devuelve el contenedor tal como está representado por la [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interfaz.  
+ [out] Devuelve el contenedor, tal como está representada por la [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interfaz.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
  Si este campo no tiene un contenedor, el valor devuelto `ppContainerField` será un valor null.  

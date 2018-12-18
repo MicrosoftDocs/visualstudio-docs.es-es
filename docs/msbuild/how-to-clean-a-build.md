@@ -15,31 +15,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e9af303b91cc0cdabc184f7ced329289eb7bd8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f9d039d6f6f5593538063e751348148786667000
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879062"
 ---
-# <a name="how-to-clean-a-build"></a>Cómo: Limpiar los resultados de una compilación
+# <a name="how-to-clean-a-build"></a>Cómo: Limpiar una compilación
 Cuando se limpia una compilación, se eliminan todos los archivos intermedios y de salida, de modo que solo queden los archivos de proyecto y de componentes. A partir de los archivos de proyecto y de componentes, se pueden compilar nuevas instancias de archivos intermedios y de salida. La biblioteca de tareas comunes que se proporciona con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] incluye una tarea [Exec](../msbuild/exec-task.md) que se puede usar para ejecutar comandos del sistema. Para obtener más información sobre la biblioteca de tareas, vea [Referencia de tareas](../msbuild/msbuild-task-reference.md).  
   
-## <a name="creating-a-directory-for-output-items"></a>Crear un directorio para los elementos de salida  
- De forma predeterminada, el archivo .exe que se crea cuando se compila un proyecto se coloca en el mismo directorio que los archivos de proyecto y de código fuente. En cambio, los elementos de salida suelen crearse en un directorio independiente.  
+## <a name="create-a-directory-for-output-items"></a>Crear un directorio de elementos de salida  
+ De forma predeterminada, el archivo *.exe* que se crea cuando se compila un proyecto, se coloca en el mismo directorio que los archivos de proyecto y de código fuente. En cambio, los elementos de salida suelen crearse en un directorio independiente.  
   
 #### <a name="to-create-a-directory-for-output-items"></a>Para crear un directorio para los elementos de salida  
   
-1.  Use el elemento `Property` para definir la ubicación y el nombre del directorio. Por ejemplo, cree un directorio denominado `BuiltApp` en el directorio que contiene los archivos de proyecto y de código fuente:  
+1.  Use el elemento `Property` para definir la ubicación y el nombre del directorio. Por ejemplo, cree un directorio denominado *BuiltApp* en el directorio que contiene los archivos de proyecto y de código fuente:  
   
      `<builtdir>BuiltApp</builtdir>`  
   
 2.  Use la tarea [MakeDir](../msbuild/makedir-task.md) para crear el directorio, si este no existe. Por ejemplo:  
   
-     `<MakeDir Directories = "$(builtdir)"`  
+     ```xml
+     <MakeDir Directories = "$(builtdir)"  
+      Condition = "!Exists('$(builtdir)')" />
+     ```
   
-     `Condition = "!Exists('$(builtdir)')" />`  
-  
-## <a name="removing-the-output-items"></a>Quitar los elementos de salida  
+## <a name="remove-the-output-items"></a>Quitar los elementos de salida  
  Antes de crear instancias de los archivos intermedios y de salida, puede que le interese borrar todas las instancias anteriores de los archivos intermedios y de salida. Use la tarea [RemoveDir](../msbuild/removedir-task.md) para eliminar de un disco un directorio y todos los archivos y directorios que contiene.  
   
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Para quitar un directorio y todos los archivos que contiene  
@@ -51,13 +53,13 @@ Cuando se limpia una compilación, se eliminan todos los archivos intermedios y 
 ## <a name="example"></a>Ejemplo  
  El siguiente proyecto de ejemplo de código contiene un nuevo destino, `Clean`, que usa la tarea `RemoveDir` para eliminar un directorio y todos los archivos y directorios que contiene. También en este ejemplo, el destino `Compile` crea un directorio independiente para los elementos de salida que se eliminan cuando se limpia la compilación.  
   
- `Compile` se define como el destino predeterminado y, por tanto, se usa automáticamente a menos que se especifiquen otros destinos. Use el modificador de la línea de comandos **/target** para especificar un destino diferente. Por ejemplo:  
+ `Compile` se define como el destino predeterminado y, por tanto, se usa automáticamente a menos que se especifiquen otros destinos. Use el modificador de la línea de comandos **-target** para especificar un destino diferente. Por ejemplo:  
   
- `msbuild <file name>.proj /target:Clean`  
+ `msbuild <file name>.proj -target:Clean`  
   
- El modificador **/target** se puede abreviar como **/t** y puede especificar más de un destino. Por ejemplo, para usar el destino `Clean` y, luego, el destino `Compile`, escriba:  
+ El modificador **-target** se puede abreviar como **-t** y puede especificar más de un destino. Por ejemplo, para usar el destino `Clean` y, luego, el destino `Compile`, escriba:  
   
- `msbuild <file name>.proj /t:Clean;Compile`  
+ `msbuild <file name>.proj -t:Clean;Compile`  
   
 ```xml  
 <Project DefaultTargets = "Compile"  
@@ -100,8 +102,8 @@ Cuando se limpia una compilación, se eliminan todos los archivos intermedios y 
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Tarea Exec](../msbuild/exec-task.md)   
- [Tarea MakeDir](../msbuild/makedir-task.md)   
- [Tarea RemoveDir](../msbuild/removedir-task.md)   
+ [Exec (Tarea)](../msbuild/exec-task.md)   
+ [MakeDir (Tarea)](../msbuild/makedir-task.md)   
+ [RemoveDir (Tarea)](../msbuild/removedir-task.md)   
  [Csc (tarea)](../msbuild/csc-task.md)   
  [Destinos](../msbuild/msbuild-targets.md)

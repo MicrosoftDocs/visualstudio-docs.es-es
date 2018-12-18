@@ -1,5 +1,5 @@
 ---
-title: Método SetNotificationForWaitCompletion | Documentos de Microsoft
+title: SetNotificationForWaitCompletion (método) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,18 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a005ee7d624604dd716042bd839b48b7a367dd48
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 42c5bca56bc46c0b8124fbfaf7ca046c2c1e59ec
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276343"
 ---
-# <a name="setnotificationforwaitcompletion-method"></a>SetNotificationForWaitCompletion (método)
+# <a name="setnotificationforwaitcompletion-method"></a>SetNotificationForWaitCompletion (Método)
 Establece o borra el bit de estado TASK_STATE_WAIT_COMPLETION_NOTIFICATION.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Ensamblado:** mscorlib (en mscorlib.dll)  
+ **Ensamblado:** mscorlib (en *mscorlib.dll*)  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -32,15 +33,15 @@ Establece o borra el bit de estado TASK_STATE_WAIT_COMPLETION_NOTIFICATION.
 internal void SetNotificationForWaitCompletion(bool enabled)  
 ```  
   
-#### <a name="parameters"></a>Parámetros  
+### <a name="parameters"></a>Parámetros  
  `enabled`  
   
- `true` Para establecer el bit; `false` a sin establecer el bit.  
+ `true` Para establecer el bit; `false` al anular el bit.  
   
 ## <a name="exceptions"></a>Excepciones  
   
 ## <a name="remarks"></a>Comentarios  
- El depurador establece este bit para ayudar a paso fuera de un cuerpo de método asincrónico. Si `enabled` es `true`, debe llamar a este método solo en una tarea que aún no se ha completado. Si `enabled` es `false`, puede llamar a este método en las tareas completadas. En cualquier caso, solo debe usarse para las tareas de estilo de compromiso.  
+ El depurador establece este bit para ayudar a paso fuera de un cuerpo de método asincrónico. Si `enabled` es `true`, este método debe llamarse únicamente en una tarea que no se ha completado todavía. Cuando `enabled` es `false`, este método puede llamarse en las tareas completadas. En cualquier caso, solo debe usarse para tareas de la promesa de estilo.  
   
 ## <a name="requirements"></a>Requisitos  
   

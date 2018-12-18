@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481689"
 ---
 # <a name="how-to-debug-com-servers"></a>Cómo: Depurar servidores COM
 La depuración de aplicaciones de servidor COM presenta un conjunto de problemas únicos que no siempre son fáciles de resolver.  

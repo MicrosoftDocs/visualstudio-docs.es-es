@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Mostrar texto en un cuadro de texto en un documento utilizando un botón | Documentos de Microsoft'
+title: 'Tutorial: Mostrar texto en un cuadro de texto en un documento utilizando un botón'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,24 +15,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 086137debfa35cb08dfa3b315208ce3686d74153
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 132a94b6e91148d943d998ab7e4aab96d0d74960
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822572"
 ---
-# <a name="walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button"></a>Tutorial: Mostrar texto en un cuadro de texto en un documento utilizando un botón
+# <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Tutorial: Mostrar texto en un cuadro de texto en un documento utilizando un botón
   Este tutorial muestra cómo usar los botones y cuadros de texto en una personalización de nivel de documento para Microsoft Office Word.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
  En este tutorial se muestran las tareas siguientes:  
   
--   Agregar controles al documento Word en un proyecto de nivel de documento en tiempo de diseño.  
+- Agregar controles al documento Word en un proyecto de nivel de documento en tiempo de diseño.  
   
--   Rellenar un cuadro de texto cuando se hace clic en un botón.  
+- Rellenar un cuadro de texto cuando se hace clic en un botón.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Necesita los componentes siguientes para completar este tutorial:  
@@ -41,46 +42,46 @@ ms.lasthandoff: 04/16/2018
   
 -   Microsoft Word  
   
-## <a name="creating-the-project"></a>Crear el proyecto  
+## <a name="create-the-project"></a>Crear el proyecto  
  El primer paso es crear un proyecto de tipo Documento de Word.  
   
-#### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto  
+### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto  
   
 1.  Cree un proyecto de documento de Word con el nombre **Mi botón de Word**. En el asistente, seleccione **crear un nuevo documento**.  
   
-     Para obtener más información, consulta [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Para obtener más información, consulte [Cómo: proyectos de creación de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio abre el nuevo documento de Word en el diseñador y agrega el **Mi botón de Word** proyecto al **el Explorador de soluciones**.  
+     Visual Studio abre el nuevo documento de Word en el diseñador y agrega el **Mi botón de Word** proyecto a **el Explorador de soluciones**.  
   
-## <a name="adding-controls-to-the-word-document"></a>Agregar controles al documento de Word  
+## <a name="add-controls-to-the-word-document"></a>Agregar controles al documento de Word  
  Los controles de interfaz de usuario están compuestos por un botón y un cuadro de texto en el documento de Word.  
   
-#### <a name="to-add-a-button-and-a-text-box"></a>Para agregar un botón y un cuadro de texto  
+### <a name="to-add-a-button-and-a-text-box"></a>Para agregar un botón y un cuadro de texto  
   
-1.  Compruebe que el documento esté abierto en el diseñador de Visual Studio.  
+1. Compruebe que el documento esté abierto en el diseñador de Visual Studio.  
   
-2.  Desde el **controles comunes** pestaña de la **cuadro de herramientas**, arrastre un <xref:Microsoft.Office.Tools.Word.Controls.TextBox> control al documento.  
+2. Desde el **controles comunes** pestaña de la **cuadro de herramientas**, arrastre un <xref:Microsoft.Office.Tools.Word.Controls.TextBox> control al documento.  
   
-    > [!NOTE]  
-    >  En Word, los controles se colocan de forma predeterminada en línea con el texto. Puede modificar los controles de forma y se insertan los objetos de forma cambiando el valor predeterminado en el **editar** pestaña de la **opciones** cuadro de diálogo de Word.  
+   > [!NOTE]  
+   >  En Word, los controles se colocan de forma predeterminada en línea con el texto. Puede modificar los controles de la forma y se insertan los objetos de forma cambiando el valor predeterminado en el **editar** pestaña de la **opciones** cuadro de diálogo de Word.  
   
-3.  En el menú **Ver** , haga clic en la **Ventana Propiedades**.  
+3. En el menú **Ver** , haga clic en la **Ventana Propiedades**.  
   
-4.  Buscar **TextBox1** en el **propiedades** cuadro de lista desplegable de la ventana y cambie la **nombre** propiedad del cuadro de texto a **displayText**.  
+4. Buscar **TextBox1** en el **propiedades** cuadro de lista desplegable de la ventana y cambie el **nombre** propiedad del cuadro de texto a **displayText**.  
   
-5.  Arrastre un **botón** controlar al documento y cambie las siguientes propiedades.  
+5. Arrastre un **botón** control al documento y cambie las siguientes propiedades.  
   
-    |Property|Valor|  
-    |--------------|-----------|  
-    |**Name**|**insertText**|  
-    |**Texto**|**Insertar texto**|  
+   |Property|Valor|  
+   |--------------|-----------|  
+   |**Name**|**insertText**|  
+   |**Texto**|**Insertar texto**|  
   
- Ahora puede escribir el código que se ejecutará cuando se haga clic en el botón.  
+   Ahora puede escribir el código que se ejecutará cuando se haga clic en el botón.  
   
-## <a name="populating-the-text-box-when-the-button-is-clicked"></a>Rellenar un cuadro de texto cuando se hace clic en el botón  
- Cada vez que el usuario hace clic en el botón **Hello World!** se agrega al cuadro de texto.  
+## <a name="populate-the-text-box-when-the-button-is-clicked"></a>Rellenar el cuadro de texto cuando se hace clic en el botón  
+ Cada vez que el usuario hace clic en el botón, **Hello World!** se agrega al cuadro de texto.  
   
-#### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Para escribir en el cuadro de texto cuando se haga clic en el botón  
+### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Para escribir en el cuadro de texto cuando se haga clic en el botón  
   
 1.  En **el Explorador de soluciones**, haga clic en **ThisDocument**y, a continuación, haga clic en **ver código** en el menú contextual.  
   
@@ -93,12 +94,12 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#8)]  
   
-## <a name="testing-the-application"></a>Probar la aplicación  
+## <a name="test-the-application"></a>Probar la aplicación  
  Ahora puede probar el documento para asegurarse de que el mensaje **Hello World!** aparece en el cuadro de texto al hacer clic en el botón.  
   
-#### <a name="to-test-your-document"></a>Para probar el documento  
+### <a name="to-test-your-document"></a>Para probar el documento  
   
-1.  Presione F5 para ejecutar el proyecto.  
+1.  Presione **F5** para ejecutar el proyecto.  
   
 2.  Haga clic en el botón.  
   
@@ -107,15 +108,15 @@ ms.lasthandoff: 04/16/2018
 ## <a name="next-steps"></a>Pasos siguientes  
  Este tutorial muestra los conceptos básicos del uso de botones y cuadros de texto en documentos de Word. A continuación, podría realizar las siguientes tareas:  
   
--   Usar un cuadro combinado para cambiar el formato. Para obtener más información, consulte [Tutorial: Cambiar documento formato utilizando controles CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
+-   Usar un cuadro combinado para cambiar el formato. Para obtener más información, consulte [Tutorial: cambiar el documento formato utilizando controles CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
   
--   Usar botones de radio para seleccionar estilos de gráfico. Para obtener más información, consulte [Tutorial: actualizar un gráfico en un documento utilizando botones de Radio](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
+-   Usar botones de radio para seleccionar estilos de gráfico. Para obtener más información, consulte [Tutorial: actualizar un gráfico en un documento utilizando botones de radio](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Controles en documentos de Office información general sobre formularios Windows Forms](../vsto/windows-forms-controls-on-office-documents-overview.md)   
+ [Controles de Windows Forms en información general sobre documentos de Office](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [Tutoriales para Word](../vsto/walkthroughs-using-word.md)   
  [Tutoriales y ejemplos de desarrollo de office](../vsto/office-development-samples-and-walkthroughs.md)   
- [Cómo: agregar controles a documentos de Office de Windows Forms](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Información general sobre elementos y controles Host](../vsto/host-items-and-host-controls-overview.md)  
+ [Cómo: agregar controles de formularios Windows Forms a documentos de Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)  
   
   

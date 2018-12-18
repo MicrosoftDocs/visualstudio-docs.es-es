@@ -1,6 +1,7 @@
 ---
 title: 'CA1003: Utilizar instancias genéricas de controlador de eventos'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -13,15 +14,20 @@ ms.assetid: 402101b6-555d-4cf7-b223-1d9fdfaaf1cd
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 32eb25cb6bc3fc998f57a6ca6e4dad2e088f25ad
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 29bd98677715a8772143ab448206f2a5ccddd763
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551638"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003: Utilizar instancias genéricas de controlador de eventos
+
 |||
 |-|-|
 |TypeName|UseGenericEventHandlerInstances|
@@ -30,25 +36,25 @@ ms.lasthandoff: 04/19/2018
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Motivo
- Un tipo contiene un delegado que devuelve void cuya firma contiene dos parámetros (el primero un objeto y el segundo un tipo asignable a EventArgs) y los destinos de ensamblado que lo contiene [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+ Un tipo contiene un delegado que devuelve void cuya firma contiene dos parámetros (el primero un objeto y el segundo un tipo asignable a EventArgs) y los destinos de ensamblado que contiene [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
 
 ## <a name="rule-description"></a>Descripción de la regla
- Antes de [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], con el fin de pasar información personalizada al controlador de eventos, era un nuevo delegado que se declaren que especificó una clase que se deriva de la <xref:System.EventArgs?displayProperty=fullName> clase. Esto ya no es así en [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], que introdujo la <xref:System.EventHandler%601?displayProperty=fullName> delegar. Este delegado genérico permite que cualquier clase que se deriva de <xref:System.EventArgs> para usarse junto con el controlador de eventos.
+ Antes de [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], para pasar información personalizada al controlador de eventos, era necesario declarar que especificó una clase que se derivó de un nuevo delegado el <xref:System.EventArgs?displayProperty=fullName> clase. Esto ya no es cierto en [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], que introdujo la <xref:System.EventHandler%601?displayProperty=fullName> delegar. Permite que cualquier clase que se deriva este delegado genérico <xref:System.EventArgs> para usarse junto con el controlador de eventos.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, quite el delegado y reemplazar su uso con el <xref:System.EventHandler%601?displayProperty=fullName> delegar. Si el delegado es generado automáticamente por el [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] compilador, cambie la sintaxis de la declaración de evento para usar el <xref:System.EventHandler%601?displayProperty=fullName> delegar.
+ Para corregir una infracción de esta regla, quite el delegado y reemplace su uso con el <xref:System.EventHandler%601?displayProperty=fullName> delegar. Si el delegado es generado automáticamente por el [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] compilador, cambiar la sintaxis de la declaración de evento para usar el <xref:System.EventHandler%601?displayProperty=fullName> delegar.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra a un delegado que infringe la regla. En la [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ejemplo, los comentarios describen cómo modificar el ejemplo para cumplir la regla. Por ejemplo, C#, continuación encontrará un ejemplo que muestra el código modificado.
+ El ejemplo siguiente muestra a un delegado que infringe la regla. En el [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ejemplo, los comentarios describen cómo modificar el ejemplo para cumplir la regla. Por ejemplo, C#, sigue un ejemplo que muestra el código modificado.
 
  [!code-vb[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/VisualBasic/ca1003-use-generic-event-handler-instances_1.vb)]
  [!code-csharp[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_1.cs)]
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se quita la declaración de delegado del ejemplo anterior, que cumple la regla y reemplaza su uso en el `ClassThatRaisesEvent` y `ClassThatHandlesEvent` métodos mediante el uso de la <xref:System.EventHandler%601?displayProperty=fullName> delegar.
+ En el ejemplo siguiente se quita la declaración de delegado del ejemplo anterior, que cumple la regla y reemplaza su uso en el `ClassThatRaisesEvent` y `ClassThatHandlesEvent` métodos utilizando el <xref:System.EventHandler%601?displayProperty=fullName> delegar.
 
  [!code-csharp[FxCop.Design.GenericEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_2.cs)]
 
@@ -68,4 +74,5 @@ ms.lasthandoff: 04/19/2018
  [CA1007: Utilizar valores genéricos cuando sea posible](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Vea también
- [Genéricos](/dotnet/csharp/programming-guide/generics/index)
+
+- [Genéricos](/dotnet/csharp/programming-guide/generics/index)

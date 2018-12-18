@@ -1,5 +1,5 @@
 ---
-title: Elemento extern | Documentos de Microsoft
+title: Extern (elemento) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,23 +16,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea14d985265d02c3e60ee12c8b46deafba2bcd72
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 353d7e59d7f9d0cbc6aa93d4118a4cb8ff6ee197
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497711"
 ---
-# <a name="extern-element"></a>Elemento externo
-El elemento externo hace referencia a los archivos de encabezado externo (. h) para combinar con el archivo .vsct en tiempo de compilación. Los archivos que van a combinarse deben estar en la ruta de acceso de inclusión entregado al compilador VSCT o al que hace referencia un [elemento Include](../extensibility/include-element.md). Los archivos pueden estar otros archivos de vsct o archivos de encabezado de C++.  
+# <a name="extern-element"></a>Extern (elemento)
+El elemento externo hace referencia a cualquier encabezado externo (*.h*) archivos para combinar con el *.vsct* archivo en tiempo de compilación. Los archivos que van a combinarse deben estar en la ruta de acceso de inclusión especificado para el compilador VSCT o al que hace referencia un [elemento Include](../extensibility/include-element.md). Es pueden que los archivos de otros *.vsct* archivos o archivos de encabezado de C++.  
   
- Las definiciones en archivos de encabezado deben tener el formato "#define [símbolo] [valor]" el valor puede ser otro símbolo si se ha definido previamente. Las definiciones de pueden utilizarse en instrucciones condicionales de elementos de comando. Se descartará cualquier símbolo no utilizada realmente.  
+ Las definiciones en archivos de encabezado deben tener el formato "#define [símbolo] [valor]" el valor puede ser otro símbolo, si se ha definido anteriormente. Las definiciones de pueden utilizarse en instrucciones condicionales de elementos de comando. Se descartará cualquier símbolo que no se utiliza realmente.  
   
- Elemento CommandTable  
-Elemento externo  
+ CommandTable (Elemento)  
+Extern (Elemento)  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```xml  
 <Extern href="stdidcmd.h" />  
 ```  
   
@@ -44,8 +45,8 @@ Elemento externo
 |Atributo|Descripción|  
 |---------------|-----------------|  
 |href|Requerido. La ruta de acceso al archivo de encabezado:<br /><br /> href="stdidcmd.h"|  
-|Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-|lenguaje|Opcional. El idioma predeterminado de todos los [ \<cadenas >](../extensibility/strings-element.md) elementos en la tabla de comandos:<br /><br /> idioma = "en-us"|  
+|Condición|Opcional. Consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|lenguaje|Opcional. El idioma predeterminado de todos los [ \<cadenas >](../extensibility/strings-element.md) elementos en la tabla de comandos:<br /><br /> Language = "en-us"|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
@@ -57,11 +58,11 @@ Elemento externo
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|[CommandTable (Elemento)](../extensibility/commandtable-element.md)|Define todos los elementos que representan comandos, es decir, elementos de menú, menús, barras de herramientas y cuadros combinados, que proporciona un paquete VSPackage al IDE.|  
+|[CommandTable (elemento)](../extensibility/commandtable-element.md)|Define todos los elementos que representan los comandos, es decir, los elementos de menú, menús, barras de herramientas y cuadros combinados, que proporciona un paquete VSPackage en el IDE.|  
   
 ## <a name="example"></a>Ejemplo  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-  
   18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">  
@@ -72,6 +73,6 @@ Elemento externo
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Tabla de comandos de Visual Studio (. Archivos Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [¿Cómo VSPackages agregar elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Archivos visuales Studio comando table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
+ [Cómo VSPackages agregar elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Los comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

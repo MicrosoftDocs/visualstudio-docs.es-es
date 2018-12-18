@@ -1,6 +1,7 @@
 ---
 title: 'CA2223: Los miembros deben diferenciarse por algo más que por un tipo de valor devuelto'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,13 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4caffc53ff99f20a0dee94990dd6f5b966f2e047
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 93822dd3db325e3463c4a8f175c8ca289cac9e5d
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549831"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: Los miembros deben diferenciarse por algo más que por un tipo de valor devuelto
+
 |||
 |-|-|
 |TypeName|MembersShouldDifferByMoreThanReturnType|
@@ -33,19 +36,18 @@ ms.lasthandoff: 04/19/2018
  Dos miembros públicos o protegidos tienen firmas idénticas, salvo por el tipo de valor devuelto.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Aunque common language runtime permite utilizar tipos de valor devuelto para diferenciar miembros idénticos, esta característica no está en Common Language Specification ni es una característica común de lenguajes de programación. NET. Cuando los miembros diferenciarse únicamente por el tipo de valor devuelto, los desarrolladores y las herramientas de desarrollo podrían no correctamente distinguir entre ellos.
+ Aunque common language runtime permite el uso de tipos de valor devuelto para diferenciar miembros idénticos, esta característica no está en Common Language Specification ni es una característica común de los lenguajes de programación. NET. Cuando los miembros difieren solo por tipo de valor devuelto, los desarrolladores y herramientas de desarrollo podrían no correctamente distinguir entre ellos.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, cambie el diseño de los miembros para que sean únicos basándose únicamente en sus nombres y tipos de parámetro, o no exponen a los miembros.
+ Para corregir una infracción de esta regla, cambiar el diseño de los miembros, por lo que son únicos solo según sus nombres y tipos de parámetro, o no exponen a los miembros.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente, en lenguaje intermedio de Microsoft (MSIL), muestra un tipo que infringe esta regla. Tenga en cuenta que no se puede infringir esta regla mediante el uso de C# o Visual Basic.
+ El ejemplo siguiente, en lenguaje intermedio de Microsoft (MSIL), muestra un tipo que infringe esta regla. Tenga en cuenta que no se infringe esta regla mediante el uso de C# o Visual Basic.
 
 ```
-
 .namespace UsageLibrary
 {
   .class public auto ansi beforefieldinit ReturnTypeTest
@@ -92,5 +94,4 @@ ms.lasthandoff: 04/19/2018
   } // end of class ReturnTypeTest
 
 } // end of namespace UsageLibrary
-
 ```

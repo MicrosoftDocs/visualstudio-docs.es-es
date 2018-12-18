@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetReferenceInfo | Documentos de Microsoft
+title: IDebugReference2::GetReferenceInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a40211c49f5255dba608d38529f7c56ac990e671
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8833b27d70a92091f809605edc81cd82a8a65f06
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870008"
 ---
 # <a name="idebugreference2getreferenceinfo"></a>IDebugReference2::GetReferenceInfo
 Obtiene el [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) estructura que describe una referencia. Reservado para un uso futuro.  
@@ -50,22 +51,22 @@ int GetReferenceInfo (
   
 #### <a name="parameters"></a>Parámetros  
  `dwFields`  
- [in] Una combinación de indicadores de la [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) enumeración que determina los campos que se rellene el [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) estructura.  
+ [in] Una combinación de marcas de la [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) enumeración que determinan los campos que se pueden rellenar en el [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) estructura.  
   
  `nRadix`  
  [in] La base que se usará para dar formato a cualquier información numérica.  
   
  `dwTimeout`  
- [in] Tiempo máximo, en milisegundos, que se esperará antes de volver de este método. Use `INFINITE` para esperar indefinidamente.  
+ [in] Tiempo máximo, en milisegundos para esperar antes de volver de este método. Use `INFINITE` para esperar indefinidamente.  
   
  `rgpArgs`  
- [in] Una matriz de [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objetos. Reservado para uso futuro; establecer en un valor null.  
+ [in] Una matriz de [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objetos. Reservado para uso futuro; se establece en un valor null.  
   
  `dwArgCount`  
- [in] El número de argumentos de referencia en la `rgpArgs` matriz. Reservado para uso futuro; se establece en 0.  
+ [in] El número de argumentos de referencia en el `rgpArgs` matriz. Reservado para uso futuro; se establece en 0.  
   
  `pReferenceInfo`  
- [out] A [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) estructura que se rellena con una descripción de la propiedad.  
+ [out] Un [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) estructura que se rellena con una descripción de la propiedad.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Siempre devuelve `E_NOTIMPL`.  

@@ -1,5 +1,5 @@
 ---
-title: Analizar resultados de pruebas de carga en Visual Studio | Microsoft Docs
+title: Análisis de resultados de pruebas de carga en Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,18 +14,22 @@ ms.assetid: b0a3e694-2894-479b-b270-7e61e9fafacd
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d3a1e3f54544215ed89f07a64d440ae3844c996f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 91e1b3c3a094e9bb510132d9160432a868fd559c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896450"
 ---
-# <a name="how-to-access-load-test-results-for-analysis"></a>Cómo: Tener acceso a los resultados de pruebas de carga para su análisis
+# <a name="how-to-access-load-test-results-for-analysis"></a>Acceso a los resultados de pruebas de carga para su análisis
 
-Al ejecutar una prueba de carga desde el Editor de prueba de carga, los resultados de pruebas de carga se abren automáticamente y la prueba de carga en ejecución se muestra en el Analizador de prueba de carga. Al ejecutar una prueba de carga desde la línea de comandos, debe obtener acceso a los resultados de pruebas de carga manualmente.
+Al ejecutar una prueba de carga desde el Editor de pruebas de carga, los resultados de pruebas de carga se abren automáticamente y la prueba de carga en ejecución se muestra en el **Analizador de pruebas de carga**. Al ejecutar una prueba de carga desde la línea de comandos, debe obtener acceso a los resultados de pruebas de carga manualmente.
 
 El resultado de la prueba de carga completada contiene ejemplos de contadores de rendimiento e información de errores que se recopilaron periódicamente de los equipos sometidos a prueba. Se puede recopilar un gran número de muestras de contadores de rendimiento durante la ejecución de pruebas de carga. La cantidad de datos de rendimiento recopilados depende de la duración de la ejecución de pruebas, el intervalo de muestreo, el número de equipos sometidos a prueba, el número de contadores que se recopilan, los recolectores de datos configurados y los niveles de registro. En el caso de una prueba de carga grande, la cantidad de datos de rendimiento recopilados puede ascender fácilmente a varios gigabytes. Para obtener más información, vea [Controladores y agentes de prueba](configure-test-agents-and-controllers-for-load-tests.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-access-a-load-test-result"></a>Para tener acceso al resultado de una prueba de carga
 
@@ -46,10 +50,10 @@ El resultado de la prueba de carga completada contiene ejemplos de contadores de
 
 5.  En la lista **Resultados de pruebas de carga**, seleccione los resultados de la prueba de carga que desee analizar y elija **Abrir**.
 
-6.  Aparecerá el Analizador de prueba de carga. El resultado de prueba de carga seleccionado se mostrará en la vista Resumen. Para obtener más información, consulte [Información general de resumen de resultados de pruebas de carga](../test/load-test-results-summary-overview.md).
+6.  Aparecerá el **Analizador de pruebas de carga**. El resultado de prueba de carga seleccionado se mostrará en la vista Resumen. Para más información, consulte [Información general de resumen de resultados de pruebas de carga](../test/load-test-results-summary-overview.md).
 
-     Puede administrar otros aspectos de los resultados de pruebas de carga en el cuadro de diálogo Abrir y administrar resultados, que incluye importar, exportar y quitar resultados de pruebas de carga. Para obtener más información, vea [Administrar los resultados de pruebas de carga en el repositorio de resultados de pruebas de carga](../test/manage-load-test-results-in-the-load-test-results-repository.md).
+     Puede administrar otros aspectos de los resultados de pruebas de carga en el cuadro de diálogo **Abrir y administrar resultados**, que incluye importar, exportar y quitar resultados de pruebas de carga. Para más información, consulte [Administrar resultados de pruebas de carga en el repositorio de resultados de pruebas de carga](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
 ## <a name="see-also"></a>Vea también
 
-- [Analizar resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analizar los resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

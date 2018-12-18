@@ -12,34 +12,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b01c8aa176fe92cb4309990693063dcd27cf15a8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7c05f928d7c5c6f35226985147b6a4545e2a2937
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890054"
 ---
 # <a name="lines-view---contention-data"></a>Vista Líneas: datos de contención
 La vista Líneas de datos de contención muestra los datos de rendimiento de las instrucciones que se estaban ejecutando cuando se recopilaron las muestras en la ejecución de generación de perfiles. En un archivo de origen, una instrucción puede abarcar más de una línea y una sola línea puede incluir más de una instrucción.  
   
  Una instrucción se identifica mediante los siguientes datos:  
   
--   El archivo de código fuente que contiene la instrucción de la función.  
+- El archivo de código fuente que contiene la instrucción de la función.  
   
--   La función que contiene la instrucción.  
+- La función que contiene la instrucción.  
   
--   La línea de origen donde se inicia la instrucción.  
+- La línea de origen donde se inicia la instrucción.  
   
--   El carácter en la línea de origen donde se inicia la instrucción.  
+- El carácter en la línea de origen donde se inicia la instrucción.  
   
--   La línea de origen donde finaliza la instrucción.  
+- La línea de origen donde finaliza la instrucción.  
   
--   El carácter en la línea de origen donde finaliza la instrucción.  
+- El carácter en la línea de origen donde finaliza la instrucción.  
   
- La columna Nombre de línea proporciona una concatenación ordenable de datos del identificador.  
+  La columna Nombre de línea proporciona una concatenación ordenable de datos del identificador.  
   
- En la siguiente tabla se describen las columnas del informe de vista de líneas.  
+  En la siguiente tabla se describen las columnas del informe de vista de líneas.  
   
-|Columna|Description|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Tiempo de bloqueo exclusivo**|La cantidad de tiempo durante el cual esta instrucción no pudo ejecutar el código de la instrucción debido a un evento de contención. No se incluye el tiempo de bloqueo de las funciones a las que llamó la instrucción.|  
 |**Porcentaje de tiempo de bloqueo exclusivo**|El porcentaje de tiempo de bloqueo total en el proceso que es tiempo de bloqueo exclusivo de la instrucción.|  

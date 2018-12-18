@@ -1,5 +1,5 @@
 ---
-title: Pruebas de rendimiento web codificadas en Visual Studio | Microsoft Docs
+title: Pruebas de rendimiento web codificadas en Visual Studio
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,20 +14,24 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: aa6f1e07bffc59030865018610c4367489d4ba9a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 76b2e7eebf66bb4a9c2564ca30a72a7b17dbdcfc
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895514"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generar y ejecutar una prueba de rendimiento web codificada
 
 Las pruebas de rendimiento web se graban al examinar la aplicación web. Las pruebas se incluyen en las pruebas de carga para medir el rendimiento de la aplicación web con la carga de varios usuarios. Una prueba de rendimiento web se puede convertir en un script basado en código que se puede editar y personalizar como cualquier otro código fuente. Por ejemplo, puede agregar construcciones de bucle y bifurcaciones.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 ## <a name="generate-a-coded-web-performance-test"></a>Generar una prueba de rendimiento web codificada
 
-1.  Si no ha creado una prueba de rendimiento web, vea [Grabar una prueba de rendimiento web](/vsts/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
+1.  Si no ha creado una prueba de rendimiento web, vea [Grabar una prueba de rendimiento web](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project?view=vsts).
 
 2.  Genere la prueba codificada.
 
@@ -55,7 +59,7 @@ Las pruebas de rendimiento web se graban al examinar la aplicación web. Las pru
     }
     else
     {
-        WebTestRequest customRequest = new WebTestRequest("http://msdn.microsoft.com/");
+        WebTestRequest customRequest = new WebTestRequest("https://msdn.microsoft.com/");
         yield return customRequest;
     }
     ```
@@ -65,7 +69,7 @@ Las pruebas de rendimiento web se graban al examinar la aplicación web. Las pru
         Dim customRequest As WebTestRequest = New WebTestRequest("http://weather.msn.com/")
         MyBase.Send(customRequest)
     Else
-        Dim customRequest As WebTestRequest = New WebTestRequest("http://msdn.microsoft.com/")
+        Dim customRequest As WebTestRequest = New WebTestRequest("https://msdn.microsoft.com/")
         MyBase.Send(customRequest)
     End If
     ```
@@ -74,19 +78,19 @@ Las pruebas de rendimiento web se graban al examinar la aplicación web. Las pru
 
 6.  Ejecute la prueba.
 
-     ![Ejecución de la prueba de rendimiento web codificada](../test/media/web_test_coded_generate_run.png "Web_Test_Coded_Generate_Run")
+     ![Ejecutar la prueba de rendimiento web codificada](../test/media/web_test_coded_generate_run.png)
 
      Y puesto que el día en que esto se ejecutó resultó ser un miércoles…
 
-     ![Resultados de la prueba de rendimiento web codificada](../test/media/web_test_coded_generate_results.png "Web_Test_Coded_Generate_Results")
+     ![Resultados de la prueba de rendimiento web codificada](../test/media/web_test_coded_generate_results.png)
 
 ## <a name="qa"></a>Preguntas y respuestas
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>P: ¿Se pueden ejecutar varias pruebas al mismo tiempo?
- **R:** Sí, use el menú contextual del Explorador de soluciones.
+ **R:** Sí, use el menú contextual del **Explorador de soluciones**.
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>P: ¿Debo agregar un origen de datos antes o después de generar una prueba codificada?
- **R:** Es más fácil agregar un [origen de datos](../test/add-a-data-source-to-a-web-performance-test.md) antes de generar la prueba codificada porque el código se generará automáticamente.
+ **R:** Es más fácil agregar un [origen de datos](../test/add-a-data-source-to-a-web-performance-test.md) antes de generar la prueba automatizada porque el código se generará automáticamente.
 
  Cuando ejecuta una prueba codificada con un origen de datos, puede aparecer el siguiente mensaje de error:
 
@@ -95,4 +99,4 @@ Las pruebas de rendimiento web se graban al examinar la aplicación web. Las pru
  Este error se puede producir porque ha definido DataSourceAttribute para la clase de prueba de rendimiento web sin su correspondiente DataBindingAttribute. Para resolver este error, agregue un atributo DataBindingAttribute adecuado, elimínelo o márquelo como comentario fuera del código.
 
 ### <a name="q-should-i-add-validation-and-extraction-rules-before-or-after-i-generate-a-coded-test"></a>P: ¿Debo agregar reglas de validación y extracción antes o después de generar una prueba codificada?
- **R:** Es más fácil agregar reglas de validación y extracción antes de generar la prueba codificada; no obstante, es recomendable usar [pruebas de IU codificadas](../test/use-ui-automation-to-test-your-code.md) para la validación.
+ **R:** Es más fácil agregar reglas de validación y extracción antes de generar la prueba automatizada; no obstante, es recomendable usar [pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md) para la validación.

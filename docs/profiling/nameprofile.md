@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0b717882e943a37857bbdadf3d318f94b4900dc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: df6fce197a184167b66025191f43b07ebd08ffa7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819594"
 ---
 # <a name="nameprofile"></a>NameProfile
 La función `NameProfile` asigna una cadena al subproceso o el proceso especificado.  
@@ -26,7 +27,7 @@ La función `NameProfile` asigna una cadena al subproceso o el proceso especific
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp  
 PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(  
                                    LPCTSTR pszName,   
                                    PROFILE_CONTROL_LEVEL Level,  
@@ -38,19 +39,19 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
  El nombre del elemento de generación de perfiles. Un nombre no es válido (como consecuencia, NameProfileA devuelve NAME_ERROR_INVALID_NAME) si:  
   
--   El puntero pasado en NameProfileA es un valor NULL.  
+- El puntero pasado en NameProfileA es un valor NULL.  
   
--   Los datos de cadena de pszName empiezan con un número.  
+- Los datos de cadena de pszName empiezan con un número.  
   
--   Los datos de cadena de pszName empiezan con un espacio.  
+- Los datos de cadena de pszName empiezan con un espacio.  
   
--   Los datos de cadena de pszName contienen cualquiera de los siguientes caracteres: ,;.`~!@#$%^&*()=[]{}&#124;\\?/<>  
+- Los datos de cadena de pszName contienen cualquiera de los siguientes caracteres: ,;.`~!@#$%^&*()=[]{}&#124;\\?/<>  
   
- `Level`  
+  `Level`  
   
- Indica el nivel de perfil al que se puede aplicar la recopilación de datos de rendimiento. Los valores **PROFILE_CONTROL_LEVEL** siguientes se pueden usar para indicar uno de tres niveles en los que se puede aplicar la recopilación de datos de rendimiento:  
+  Indica el nivel de perfil en el que se puede aplicar la recopilación de datos de rendimiento. Los valores **PROFILE_CONTROL_LEVEL** siguientes se pueden usar para indicar uno de tres niveles en los que se puede aplicar la recopilación de datos de rendimiento:  
   
-|Enumerador|Description|  
+|Enumerador|Descripción|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|La configuración de nivel global afecta a todos los procesos y subprocesos en la generación de perfiles.|  
 |PROFILE_PROCESSLEVEL|La configuración de nivel de proceso afecta a todos los subprocesos que forman parte del proceso especificado.|  
@@ -63,7 +64,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 ## <a name="property-valuereturn-value"></a>Valor de propiedad y valor devuelto  
  La función indica si la operación es correcta o errónea mediante la enumeración **PROFILE_COMMAND_STATUS**. El valor devuelto puede ser cualquiera de los siguientes:  
   
-|Enumerador|Description|  
+|Enumerador|Descripción|  
 |----------------|-----------------|  
 |NAME_ERROR_ID_NOEXIST|El elemento de generación de perfiles especificado no existe.|  
 |NAME_ERROR_INVALID_NAME|El nombre no es válido.|  
@@ -85,20 +86,20 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 >  Las funciones CreateProcess() y CreateThread() de la API pueden devolver un valor antes de que se inicialice el subproceso o el proceso.  
   
 ## <a name="net-framework-equivalent"></a>Equivalente de .NET Framework  
- Microsoft.VisualStudio.Profiler.dll  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Información de la función  
   
 |||  
 |-|-|  
-|**Header**|Incluye VSPerf.h|  
-|**Library**|Usa VSPerf.lib|  
+|**Header**|Incluir *VSPerf.h*|  
+|**Library**|Usar *VSPerf.lib*|  
 |**Unicode**|Implementado como `NameProfileW` (Unicode) y `NameProfileA` (ANSI).|  
   
 ## <a name="example"></a>Ejemplo  
  El código siguiente ilustra la llamada a la función NameProfile. En el ejemplo se da por supuesto que se usan macros de cadenas de Win32 y la configuración del compilador para ANSI con el fin de determinar si el código llama a la función habilitada para ANSI.  
   
-```  
+```cpp  
 void ExerciseNameProfile()  
 {  
     // Variables used to print output.  
@@ -134,4 +135,4 @@ void ExerciseNameProfile()
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Referencia a la API del generador de perfiles de Visual Studio (nativa)](../profiling/visual-studio-profiler-api-reference-native.md)
+ [Referencia de la API del generador de perfiles de Visual Studio (nativa)](../profiling/visual-studio-profiler-api-reference-native.md)

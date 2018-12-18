@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: detener cambios en el código | Documentos de Microsoft'
+title: 'Cómo: detener cambios en el código | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -19,11 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1bf6b73c0df37d232c1ebd12ae00bbb4803ac13
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f3694c23f52a1c34cd99d8391b14cc92ac939813
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903678"
 ---
 # <a name="how-to-stop-code-changes"></a>Cómo: Detener cambios en el código
 Mientras Editar y continuar se encuentra en proceso de aplicar los cambios del código, puede detener la operación.  
@@ -33,12 +34,12 @@ Mientras Editar y continuar se encuentra en proceso de aplicar los cambios del c
   
 ### <a name="to-stop-applying-code-changes"></a>Para detener la aplicación de los cambios en el código  
   
--   Elija **detener la aplicación de cambios de código** desde el **depurar** menú.  
+- Elija **dejar de aplicar los cambios de código** desde el **depurar** menú.  
   
- Este elemento de menú sólo es visible cuando se están aplicando los cambios del código.  
+  Este elemento de menú sólo es visible cuando se están aplicando los cambios del código.  
   
- Si elige esta opción, no se confirmará ninguno de los cambios en el código.  
+  Si elige esta opción, no se confirmará ninguno de los cambios en el código.  
   
 ## <a name="see-also"></a>Vea también  
  [Editar y continuar](../debugger/edit-and-continue.md)   
- [Editar y continuar, depuración, cuadro de diálogo Opciones](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)
+ [Editar y continuar, Depuración, Opciones (Cuadro de diálogo)](https://msdn.microsoft.com/library/bcew296c.aspx)

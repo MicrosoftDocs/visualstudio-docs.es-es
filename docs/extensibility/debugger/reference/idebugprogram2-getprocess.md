@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a0e51725cf809e5c224fd438e507bcfde6ca2c5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3528b4c323f1fee68a5ed17368646608e63e6fbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49947870"
 ---
 # <a name="idebugprogram2getprocess"></a>IDebugProgram2::GetProcess
-Obtener el proceso que se ejecuta este programa.  
+Obtener el proceso que se ejecuta este programa en.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -43,12 +44,12 @@ int GetProcess(
  [out] Devuelve el [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) interfaz que representa el proceso.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- A menos que un motor de depuración (Alemania) implementa la [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md) implementación de Alemania de este método de interfaz, siempre debería devolver `E_NOTIMPL` porque un Alemania no puede determinar qué proceso se ejecuta en y, por tanto, no se puede satisface una implementación de este método.  
+ A menos que implemente un motor de depuración (DE) la [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md) interfaz, la implementación de la DE este método siempre debe devolver `E_NOTIMPL` porque no puede determinar a DE proceso que se está ejecutando en y, por tanto, no se puede satisfacer una implementación de este método.  
   
- Implementar la `IDebugEngineLaunch2` interfaz significa que la DE debe saber cómo crear un proceso; por lo tanto, la implementación de Alemania de la [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfaz es capaz de saber qué proceso se ejecuta en.  
+ Implementar el `IDebugEngineLaunch2` interfaz significa que la DE debe saber cómo crear un proceso; por lo tanto, la implementación del DE la [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) es capaz de saber qué proceso se ejecuta en la interfaz.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

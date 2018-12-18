@@ -1,5 +1,5 @@
 ---
-title: SYMBOL_SEARCH_INFO_FIELDS | Documentos de Microsoft
+title: SYMBOL_SEARCH_INFO_FIELDS | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c69f21c72e8816d9ddf6eb5b88cf7798bc7d1f4e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dac1234a765bbb3064ea4471d7531864306e0220
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842929"
 ---
 # <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
-Especifica el tipo de información de símbolos que se va a recuperar.  
+Especifica el tipo de información de símbolos para recuperar.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -46,16 +47,16 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
   
 ## <a name="members"></a>Miembros  
  SSIF_NONE  
- Indica no existen marcadores  
+ No indica ninguna marca  
   
  SSIF_VERBOSE_SEARCH_INFO  
- Devuelve que todas las rutas de acceso utilizadas para buscar símbolos de búsqueda  
+ Devuelve que todas las rutas de acceso para buscar los símbolos de búsqueda  
   
 ## <a name="remarks"></a>Comentarios  
  Estas marcas se pasan como un parámetro a la [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) devuelto del método para determinar la cantidad de información.  
   
 > [!NOTE]
->  Actualmente, solo `SSIF_VERBOSE_SEARCH_INFO` se admite, y debe especificarse como el `dwFlags` parámetro `IDebugModule3::GetSymbolInfo`. Todos los demás valores devuelven ningún error.  
+>  Actualmente, solo `SSIF_VERBOSE_SEARCH_INFO` se admite, y se debe especificar como el `dwFlags` parámetro `IDebugModule3::GetSymbolInfo`. Todos los demás valores devuelven un error.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  

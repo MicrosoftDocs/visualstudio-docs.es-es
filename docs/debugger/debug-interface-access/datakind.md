@@ -14,14 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3de9ef6128c3cd5ca6eae80a257b3dc2982cd0f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8f2b46e420db8addf19ef8694112058bdb8b2f91
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867629"
 ---
 # <a name="datakind"></a>DataKind
-Indica el ámbito determinado de un valor de datos.  
+Indica el ámbito de un valor de datos determinado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -57,7 +58,7 @@ enum DataKind {
  Elemento de datos es un puntero de objeto (`this`).  
   
  DataIsFileStatic  
- Elemento de datos es una variable de ámbito de archivo.  
+ Elemento de datos es una variable con ámbito de archivo.  
   
  DataIsGlobal  
  Elemento de datos es una variable global.  
@@ -72,7 +73,7 @@ enum DataKind {
  Elemento de datos es un valor constante.  
   
 ## <a name="remarks"></a>Comentarios  
- Los valores de esta enumeración son devueltos por la [idiasymbol:: Get_datakind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) método.  
+ Devuelven los valores de esta enumeración la [Get_datakind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) método.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: cvconst.h  

@@ -1,6 +1,7 @@
 ---
 title: 'CA1811: Evitar código privado al que no se llama'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,13 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7f31b27740b286065221838e733d99e94b3307d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3b8c71c7dc549c980be8ae7a2241629774f32150
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822981"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811: Evitar código privado al que no se llama
+
 |||
 |-|-|
 |TypeName|AvoidUncalledPrivateCode|
@@ -30,25 +33,25 @@ ms.lasthandoff: 04/19/2018
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Motivo
- Miembro privado o interno (nivel de ensamblado) no tiene llamadores en el ensamblado, no es invocado por common language runtime y no es invocado por un delegado. Esta regla no comprueba los miembros siguientes:
+ Miembro privado o interno (nivel de ensamblado) no tiene llamadores en el ensamblado, no es invocado por common language runtime y no se invoca un delegado. Esta regla no comprueba los miembros siguientes:
 
--   Miembros de interfaz explícita.
+- Miembros de interfaz explícita.
 
--   Constructores estáticos.
+- Constructores estáticos.
 
--   Constructores de serialización.
+- Constructores de serialización.
 
--   Los métodos marcados con <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>.
+- Los métodos marcados con <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>.
 
--   Miembros que son reemplazos.
+- Miembros que son reemplazos.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Esta regla puede notificar los falsos positivos si producen puntos de entrada que no estén identificados por la lógica de la regla. Además, un compilador puede emitir código noncallable en un ensamblado.
+ Esta regla puede notificar falsos positivos si producen puntos de entrada que no se identifican actualmente por la lógica de la regla. Además, un compilador puede emitir código noncallable en un ensamblado.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, quite el código noncallable o agregue código que lo llama.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  Es seguro suprimir una advertencia de esta regla.
 
 ## <a name="related-rules"></a>Reglas relacionadas

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetENCUpdate | Documentos de Microsoft
+title: IDebugProgram2::GetENCUpdate | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83b4a22d8cfb1d8ab89adb5946305ea50425fa35
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c356154c5d77c01f84c5fe4446b8ac92235c10e4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867005"
 ---
 # <a name="idebugprogram2getencupdate"></a>IDebugProgram2::GetENCUpdate
-Este método obtiene la actualización de editar y continuar (ENC) para este programa. Un motor de depuración personalizado siempre devuelve `E_NOTIMPL`.  
+Este método obtiene la actualización de editar y continuar (ENC) para este programa. Un motor de depuración siempre devuelve `E_NOTIMPL`.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -43,10 +44,10 @@ int GetENCUpdate(
  [out] Devuelve una interfaz interna que puede usarse para actualizar este programa.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 > [!NOTE]
->  Un motor de depuración personalizado siempre debe devolver `E_NOTIMPL`.  
+>  Siempre debe devolver un motor de depuración `E_NOTIMPL`.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

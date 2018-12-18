@@ -1,5 +1,5 @@
 ---
-title: Crear un punto de interrupción | Documentos de Microsoft
+title: Creación de un punto de interrupción | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,17 +14,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88f5b75defc1bceff4aacd580474b145df32bf68
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 04eefdca7459f95da3ddef0430a59f9af52e581e
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203906"
 ---
-# <a name="creating-a-breakpoint"></a>Crear un punto de interrupción
-A continuación describe el proceso de creación de un punto de interrupción.  
+# <a name="create-a-breakpoint"></a>Crear un punto de interrupción
+El siguiente describe el proceso de creación de un punto de interrupción.  
   
-## <a name="methods-in-breakpoint-creation"></a>Métodos de creación de punto de interrupción  
- Cuando se carga el módulo que se necesita para enlazar un punto de interrupción, el Administrador de sesión de depuración (SDM) llama a los métodos siguientes:  
+## <a name="methods-in-breakpoint-creation"></a>Métodos de creación del punto de interrupción  
+ Cuando se carga el módulo que se necesita para enlazar un punto de interrupción, el Administrador de depuración de la sesión (SDM) llama a los métodos siguientes:  
   
 1.  [IDebugPendingBreakpoint2::Enable](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)  
   
@@ -33,11 +34,11 @@ A continuación describe el proceso de creación de un punto de interrupción.
 3.  [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)  
   
     > [!NOTE]
-    >  **CanBind** se llama solo cuando un usuario realiza un punto de interrupción en la ventana de puntos de interrupción.  
+    >  **CanBind** sólo se llama cuando un usuario realiza un punto de interrupción desde el **puntos de interrupción** ventana.  
   
 4.  [IDebugPendingBreakpoint2::Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)  
   
 5.  [IDebugPendingBreakpoint2::EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)  
   
 ## <a name="see-also"></a>Vea también  
- [Llamada a eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)
+ [Llamar a los eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)

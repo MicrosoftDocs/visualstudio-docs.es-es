@@ -1,8 +1,9 @@
 ---
-title: Clases auxiliares estáticas | Herramientas de prueba para desarrolladores de Microsoft IntelliTest | Microsoft Docs
+title: clases del asistente estáticas | Herramientas de prueba para desarrolladores de Microsoft IntelliTest
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Static helper classes
 ms.author: gewarren
@@ -10,15 +11,16 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bd414382889e02f209e9cd64155f9e9baad75534
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a5c635c8fb3def61b8278b7b7c4b66aa196d82b8
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000482"
 ---
-# <a name="static-helper-classes"></a>Clases auxiliares estáticas
+# <a name="static-helper-classes"></a>clases del asistente estáticas
 
-IntelliTest proporciona un conjunto de clases auxiliares estáticas que pueden usarse al crear [pruebas unitarias parametrizadas](test-generation.md#parameterized-unit-testing):
+IntelliTest proporciona un conjunto de clases del asistente estáticas que pueden usarse al crear [pruebas unitarias parametrizadas](test-generation.md#parameterized-unit-testing):
 
 * [PexAssume](#pexassume): se usa para definir hipótesis en las entradas, y es útil para filtrar las entradas no deseadas.
 * [PexAssert](#pexassert): es una clase de aserción sencilla que se usa si su marco de pruebas no proporciona una.
@@ -32,8 +34,7 @@ Algunas clases le permiten interactuar con el motor de razonamiento de IntelliTe
 <a name="pexassume"></a>
 ## <a name="pexassume"></a>PexAssume
 
-Una clase estática que se usa para expresar hipótesis, como [condiciones previas](test-generation.md#precondition), en [pruebas unitarias parametrizadas](test-generation.md#parameterized-unit-testing).
-Los métodos de esta clase se puede usar para filtrar entradas de prueba no deseadas.
+Una clase estática que se usa para expresar hipótesis, como [condiciones previas](test-generation.md#precondition), en [pruebas unitarias parametrizadas](test-generation.md#parameterized-unit-testing). Los métodos de esta clase se puede usar para filtrar entradas de prueba no deseadas.
 
 Si la condición que se presupone no se mantiene en alguna entrada de prueba, se genera **PexAssumeFailedException**. Esto provocará que la prueba se ignore de forma automática.
 
@@ -41,7 +42,7 @@ Si la condición que se presupone no se mantiene en alguna entrada de prueba, se
 
 La siguiente prueba parametrizada no considerará **j=0**:
 
-```
+```csharp
 public void TestSomething(int i, int j) {
      PexAssume.AreNotEqual(j, 0);
      int k = i/j;
@@ -53,7 +54,7 @@ public void TestSomething(int i, int j) {
 
 El código anterior es casi equivalente a:
 
-```
+```csharp
      if (j==0)
           return;
 ```
@@ -73,7 +74,7 @@ Si la condición declarada no se mantiene en alguna entrada de prueba, se genera
 
 Lo que se muestra a continuación declara que el valor absoluto de un entero es positivo:
 
-```
+```csharp
 public void TestSomething(int i) {
      int j = Maths.Abs(i);
      PexAssert.IsTrue(j >= 0);
@@ -100,7 +101,7 @@ La clase **PexChoose** puede funcionar de dos modos:
 
 * Simplemente llame a **PexChoose.Value** para generar un valor nuevo:
 
-```
+```csharp
 public int Foo() {
     return PexChoose.Value<int>("foo");
 }
@@ -113,13 +114,13 @@ Una clase estática para registrar los valores con nombre.
 
 Cuando IntelliTest explora el código, **PexObserve** se usa para registrar valores calculados con sus representaciones de cadena con formato. Los valores están asociados con nombres únicos.
 
-```
+```csharp
 PexObserve.Value<string>("result", result);
 ```
 
 **Ejemplo**
 
-```
+```csharp
 // product code
 public static class MathEx {
      public static int Square(int value) { return value * value; }
@@ -151,7 +152,7 @@ Normalmente, IntelliTest intenta cubrir todas las rutas de ejecución del códig
 
 En este ejemplo se muestra la implementación del método **PexAssume.Arrays.ElementsAreNotNull**. En el método, ignora las restricciones sobre la longitud del valor de la matriz para evitar que IntelliTest intente generar tamaños diferentes de matriz. Las restricciones solo se ignoran aquí. Si el código probado se comporta de manera diferente para las distintas longitudes de la matriz, IntelliTest no puede generar diferentes tamaños de matriz desde las restricciones del código probado.
 
-```
+```csharp
 public static void AreElementsNotNull<T>(T[] value)
     where T : class
 {
@@ -173,4 +174,4 @@ public static void AreElementsNotNull<T>(T[] value)
 
 ## <a name="got-feedback"></a>¿Tiene comentarios?
 
-Publique sus ideas y solicitudes de características en **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+Publique sus ideas y solicitudes de características en [Comunidad de desarrolladores](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

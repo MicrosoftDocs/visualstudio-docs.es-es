@@ -1,6 +1,7 @@
 ---
 title: 'CA1715: Los identificadores deberían tener el prefijo correcto'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -13,60 +14,66 @@ ms.assetid: cf45f8df-6855-4cb6-a4e2-7cfed714cf2f
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b4ddef7b6a9ae7eafb6c169ec9e07e89e20fc6b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ad2e867b40bd8fc05215e7bb1d905a7d079eecf2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879858"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Los identificadores deberían tener el prefijo correcto
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectPrefix|
 |Identificador de comprobación|CA1715|
 |Categoría|Microsoft.Naming|
-|Cambio problemático|Problemático: cuando se desencadena en interfaces.<br /><br /> Poco problemático: cuando se desencadena en parámetros de tipo genérico.|
+|Cambio problemático|Problemático: cuando se desencadena en interfaces.<br /><br /> Indivisible - cuando se genera en parámetros de tipo genérico.|
 
 ## <a name="cause"></a>Motivo
  El nombre de una interfaz visible externamente no empieza por una mayúscula 'I'.
 
- -o bien-
+ O bien
 
  El nombre de un parámetro de tipo genérico en un tipo visible externamente o el método no inicia con una mayúscula ' t '.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Por convención, los nombres de determinados elementos de programación comienzan con un prefijo concreto.
+ Por convención, los nombres de ciertos elementos de programación se inicie con un prefijo específico.
 
- Nombres de interfaz deben empezar con una mayúscula 'I' seguida de otra letra mayúscula. Esta regla notifica las infracciones para los nombres de interfaz como 'MyInterface' y 'IsolatedInterface'.
+ Nombres de interfaz deben empezar con una mayúscula 'I' seguida de otra letra mayúscula. Esta regla notifica las infracciones de nombres de interfaz como 'MyInterface' y 'IsolatedInterface'.
 
- Nombres de parámetro de tipo genérico deben comenzar con una mayúscula ' t ' y, opcionalmente, puede ir seguido por otra letra mayúscula. Esta regla informa de las infracciones de los nombres de parámetros de tipo genérico como "V" y 'Type'.
+ Los nombres de parámetro de tipo genérico deben comenzar con una mayúscula ' t ' y, opcionalmente, puede ir seguida por otra letra mayúscula. Esta regla notifica las infracciones de los nombres de parámetro de tipo genérico, como 'V' y 'Type'.
 
  Las convenciones de nomenclatura proporcionan una apariencia común para las bibliotecas destinadas a Common Language Runtime. Esto reduce la curva de aprendizaje necesaria para las nuevas bibliotecas de software y aumenta la confianza del cliente respecto a que la biblioteca se haya desarrollado por parte de un especialista en desarrollo de código administrado.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Cambie el nombre el identificador se incluyen el prefijo correctamente.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- **En el ejemplo siguiente se muestra una interfaz con nombre incorrectamente.**
+ **El ejemplo siguiente muestra una interfaz denominada incorrectamente.**
 
  [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_1.cpp)]
  [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_1.vb)]
  [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_1.cs)]
 
 ## <a name="example"></a>Ejemplo
- **En el ejemplo siguiente se corrige la infracción anterior agregando el prefijo de la interfaz con 'I'.**
+ **El ejemplo siguiente corrige la infracción anterior agregando el prefijo de la interfaz 'I'.**
 
  [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_2.cs)]
  [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_2.cpp)]
  [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_2.vb)]
 
 ## <a name="example"></a>Ejemplo
- **En el ejemplo siguiente se muestra un parámetro de tipo genérico incorrectamente con nombre.**
+ **El ejemplo siguiente muestra un parámetro de tipo genérico incorrectamente con nombre.**
 
  [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_3.cpp)]
  [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_3.vb)]

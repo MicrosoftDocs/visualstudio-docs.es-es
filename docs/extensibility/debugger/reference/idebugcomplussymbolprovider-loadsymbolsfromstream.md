@@ -14,14 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a01c5c14262beb36aed5d093b2bb34d4c14ef4ca
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 264112b3de5d8bcaabe555602bbc93f96c98fe9a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937920"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbolsfromstream"></a>IDebugComPlusSymbolProvider::LoadSymbolsFromStream
-Cargas depuración símbolos a partir de la secuencia de datos.  
+Carga los símbolos a partir del flujo de datos de depuración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -53,7 +54,7 @@ int LoadSymbolsFromStream(
  [in] Identificador único del módulo.  
   
  `baseAddress`  
- [in] Dirección de memoria base.  
+ [in] Dirección de memoria de base.  
   
  `pUnkMetadataImport`  
  [in] Objeto que contiene los metadatos de símbolos.  
@@ -62,10 +63,10 @@ int LoadSymbolsFromStream(
  [in] Flujo de datos que contiene los símbolos.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone la [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz. Las llamadas al método el [LoadSymbolsFromStreamWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromstreamwithcormodule.md) método.  
+ El ejemplo siguiente muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone el [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz. Las llamadas al método el [LoadSymbolsFromStreamWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromstreamwithcormodule.md) método.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::LoadSymbolsFromStream(  

@@ -1,5 +1,5 @@
 ---
-title: Implementar un proveedor del puerto | Documentos de Microsoft
+title: Implementar un proveedor de puerto | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,23 +14,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0743f307dc579f6197880b0b89acaf2db0dda08
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cdde98a85175692ed4717c8a9af0b26799c35214
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233040"
 ---
-# <a name="implementing-a-port-supplier"></a>Implementar un proveedor de puerto
-Un proveedor de puerto proporciona puertos de solicitud para el Administrador de sesión de depuración (SDM). Un proveedor de puerto debe implementarse al depurar en una máquina distinta DCOM o cuando es necesario un dispositivo nuevo que se deben admitir. Por ejemplo, para proporcionar la depuración en un teléfono móvil, podría implementar un proveedor de puerto que proporciona los puertos que se conectan al teléfono móvil (quizás por medio de infrarrojos o una conexión de la celda) y enumeran los procesos y los programas que se ejecutan en el teléfono.  
+# <a name="implement-a-port-supplier"></a>Implementar un proveedor de puerto
+Un proveedor de puerto proporciona puertos de solicitud para el Administrador de depuración de la sesión (SDM). Al depurar en un equipo que no son de DCOM o cuando un nuevo dispositivo requiere soporte técnico, se debe implementar un proveedor de puerto. Por ejemplo, para proporcionar la depuración en un teléfono móvil, puede configurar un proveedor de puerto que proporciona los puertos que se conexión al teléfono móvil (quizás por medio de infrarrojos o una conexión de la celda) y enumeran los procesos y los programas que se ejecutan en el teléfono.  
   
- Para la depuración de programas en equipos basados en Windows (incluida la depuración remota), Visual Studio proporciona proveedores de puertos para nativo y los procesos de Common Language Runtime (CLR), por lo que no es necesario para implementar su propio proveedor de puerto en esos casos.  
+ Para la depuración de programas en equipos basados en Windows (incluida la depuración remota), Visual Studio proporciona proveedores de puertos nativos y los procesos de Common Language Runtime (CLR), por lo que no es necesario para configurar su propio proveedor de puerto en esos casos.  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Implementación y registro de un proveedor de puerto](../../extensibility/debugger/implementing-and-registering-a-port-supplier.md)  
+ [Implementar y registrar un proveedor de puerto](../../extensibility/debugger/implementing-and-registering-a-port-supplier.md)  
  Describe cómo interactúa el SDM con el proveedor del puerto y sus puertos.  
   
- [Interfaces de proveedor de puerto requeridas](../../extensibility/debugger/required-port-supplier-interfaces.md)  
- Documenta las interfaces que deben implementar para obtener un proveedor del puerto.  
+ [Interfaces de proveedor de puerto requerido](../../extensibility/debugger/required-port-supplier-interfaces.md)  
+ Documenta las interfaces que debe implementar para obtener un proveedor de puerto.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Conceptos del depurador](../../extensibility/debugger/debugger-concepts.md)  

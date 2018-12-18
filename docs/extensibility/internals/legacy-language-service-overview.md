@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131754"
 ---
 # <a name="legacy-language-service-overview"></a>Introducción al servicio de lenguaje heredado
 Un servicio de lenguaje proporciona compatibilidad con el editor que le permite implementar determinados [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] características. Las clases de servicio de lenguaje de Managed Package Framework (MPF) proporcionan compatibilidad completa de características usados con frecuencia y compatibilidad parcial para otras características.  

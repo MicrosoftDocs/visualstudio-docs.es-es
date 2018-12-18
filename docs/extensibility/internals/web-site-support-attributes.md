@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140841"
 ---
 # <a name="web-site-support-attributes"></a>Atributos de soporte técnico del sitio Web
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Proyecto de sitio Web puede ampliarse para proporcionar compatibilidad para Web lenguajes de programación. El lenguaje debe registrarse con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para que las plantillas de proyecto pueden aparecer en el **nuevo sitio Web** cuadro de diálogo cuando se selecciona el idioma.

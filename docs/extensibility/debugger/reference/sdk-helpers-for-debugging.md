@@ -1,5 +1,5 @@
 ---
-title: Aplicaciones auxiliares SDK para depurar | Documentos de Microsoft
+title: Aplicaciones auxiliares de SDK para depurar | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,25 +17,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e80344b8cec1bc013e044be39638879b049c8d0a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d352e22b95540cfc1901eb214c2d5180b6024f27
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821531"
 ---
-# <a name="sdk-helpers-for-debugging"></a>Aplicaciones auxiliares SDK para la depuración
-Estas funciones y declaraciones son funciones auxiliares globales para la implementación de motores de depuración, los evaluadores de expresión y los proveedores de símbolos en C++.  
+# <a name="sdk-helpers-for-debugging"></a>Asistentes de SDK para la depuración
+Estas funciones y declaraciones son funciones auxiliares globales para implementar motores de depuración, los evaluadores de expresión y los proveedores de símbolos en C++.  
   
 > [!NOTE]
->  No hay ningún versiones administradas de estas funciones y declaraciones en este momento.  
+>  Existen versiones administradas de estas funciones y declaraciones en este momento.  
   
 ## <a name="overview"></a>Información general  
- En orden para motores de depuración, los evaluadores de expresión y los proveedores de símbolo que va a usar Visual Studio, se deben registrar. Esto se hace estableciendo subclaves y entradas, también conocidas como "establecer la métrica". Las siguientes funciones globales están diseñadas para facilitar el proceso de actualización de estas métricas. Vea la sección sobre ubicaciones del registro para averiguar el diseño de cada subclave del registro que se actualiza mediante estas funciones.  
+ En orden para motores de depuración, los evaluadores de expresión y los proveedores de símbolo que va a usar Visual Studio, debe estar registrados. Esto se realiza mediante el establecimiento de subclaves del registro y las entradas, también conocidas como "establecer la métrica". Las funciones globales siguientes están diseñadas para facilitar el proceso de actualización de estas métricas. Consulte la sección sobre las ubicaciones del registro para averiguar el diseño de cada subclave del registro que se actualiza mediante estas funciones.  
   
-## <a name="general-metric-functions"></a>Funciones de métrica general  
- Se trata de funciones generales usadas por motores de depuración. Especializado funciones para evaluadores de expresión y proveedores de símbolos se detallan más adelante.  
+## <a name="general-metric-functions"></a>Funciones de métrica generales  
+ Estas son funciones generales usadas por los motores de depuración. Funciones especializadas en evaluadores de expresión y proveedores de símbolos se detallan más adelante.  
   
-### <a name="getmetric-method"></a>GetMetric (método)  
+### <a name="getmetric-method"></a>Método GetMetric  
  Recupera un valor de métrica del registro.  
   
 ```cpp  
@@ -51,14 +52,14 @@ HRESULT GetMetric(
   
 |Parámetro|Descripción|  
 |---------------|-----------------|  
-|pszMachine|[in] Nombre de una máquina remota posiblemente cuyo registro se va a escribir (`NULL` significa el equipo local).|  
-|pszType|[in] Uno de los tipos de métrica.|  
-|guidSection|[in] GUID de un motor específico, evaluador, excepción, etcetera. Esta propiedad especifica una subsección en un tipo de métrica para un elemento específico.|  
+|pszMachine|[in] Nombre de un equipo remoto, posiblemente, cuyo registro se escribirá (`NULL` significa que el equipo local).|  
+|pszType|[in] Uno de los tipos de métricas.|  
+|guidSection|[in] GUID de un motor concreto, del evaluador de expresiones, excepción, etcetera. Especifica una subsección en un tipo de métrica para un elemento específico.|  
 |pszMetric|[in] La métrica que se va a obtener. Esto corresponde a un nombre de valor específico.|  
-|pdwValue|[in] La ubicación de almacenamiento del valor de la métrica. Hay varias versiones de GetMetric que puede devolver un valor de DWORD (como en este ejemplo), una cadena BSTR, un GUID o una matriz de GUID.|  
-|pszAltRoot|[in] Una raíz del registro alternativo a usar. Establecido en `NULL` para utilizar el valor predeterminado.|  
+|pdwValue|[in] La ubicación de almacenamiento del valor de la métrica. Existen varios modelos de GetMetric que puede devolver un valor de DWORD (como en este ejemplo), una cadena BSTR, un GUID o una matriz de GUID.|  
+|pszAltRoot|[in] Una raíz del registro alternativo a usar. Establecido en `NULL` para usar el valor predeterminado.|  
   
-### <a name="setmetric-method"></a>SetMetric (método)  
+### <a name="setmetric-method"></a>Método SetMetric  
  Establece el valor de métrica especificado en el registro.  
   
 ```cpp  
@@ -74,15 +75,15 @@ HRESULT SetMetric(
   
 |Parámetro|Descripción|  
 |---------------|-----------------|  
-|pszType|[in] Uno de los tipos de métrica.|  
-|guidSection|[in] GUID de un motor específico, evaluador, excepción, etcetera. Esta propiedad especifica una subsección en un tipo de métrica para un elemento específico.|  
+|pszType|[in] Uno de los tipos de métricas.|  
+|guidSection|[in] GUID de un motor concreto, del evaluador de expresiones, excepción, etcetera. Especifica una subsección en un tipo de métrica para un elemento específico.|  
 |pszMetric|[in] La métrica que se va a obtener. Esto corresponde a un nombre de valor específico.|  
-|dwValue|[in] La ubicación de almacenamiento del valor de la métrica. Hay varias versiones de SetMetric que puede almacenar un valor de DWORD (en este ejemplo), una cadena BSTR, un GUID o una matriz de GUID.|  
-|fUserSpecific|[in] Es TRUE si la métrica es específica del usuario y se debe escribir en el subárbol del usuario en lugar de la sección de la máquina local.|  
-|pszAltRoot|[in] Una raíz del registro alternativo a usar. Establecido en `NULL` para utilizar el valor predeterminado.|  
+|dwValue|[in] La ubicación de almacenamiento del valor de la métrica. Existen varios modelos de SetMetric que puede almacenar un valor de DWORD (en este ejemplo), una cadena BSTR, un GUID o una matriz de GUID.|  
+|fUserSpecific|[in] TRUE si la métrica es específica del usuario y si debe escribirse en el subárbol del usuario en lugar de subárbol local machine.|  
+|pszAltRoot|[in] Una raíz del registro alternativo a usar. Establecido en `NULL` para usar el valor predeterminado.|  
   
-### <a name="removemetric-method"></a>RemoveMetric (método)  
- Elimina la métrica especificada del registro.  
+### <a name="removemetric-method"></a>Método RemoveMetric  
+ Quita la métrica especificada del registro.  
   
 ```cpp  
 HRESULT RemoveMetric(  
@@ -95,13 +96,13 @@ HRESULT RemoveMetric(
   
 |Parámetro|Descripción|  
 |---------------|-----------------|  
-|pszType|[in] Uno de los tipos de métrica.|  
-|guidSection|[in] GUID de un motor específico, evaluador, excepción, etcetera. Esta propiedad especifica una subsección en un tipo de métrica para un elemento específico.|  
+|pszType|[in] Uno de los tipos de métricas.|  
+|guidSection|[in] GUID de un motor concreto, del evaluador de expresiones, excepción, etcetera. Especifica una subsección en un tipo de métrica para un elemento específico.|  
 |pszMetric|[in] La métrica que se va a quitar. Esto corresponde a un nombre de valor específico.|  
-|pszAltRoot|[in] Una raíz del registro alternativo a usar. Establecido en `NULL` para utilizar el valor predeterminado.|  
+|pszAltRoot|[in] Una raíz del registro alternativo a usar. Establecido en `NULL` para usar el valor predeterminado.|  
   
-### <a name="enummetricsections-method"></a>EnumMetricSections (método)  
- Enumera las distintas secciones de métricas en el registro.  
+### <a name="enummetricsections-method"></a>Método EnumMetricSections  
+ Enumera las distintas secciones de métrica en el registro.  
   
 ```cpp  
 HRESULT EnumMetricSections(  
@@ -115,11 +116,11 @@ HRESULT EnumMetricSections(
   
 |Parámetro|Descripción|  
 |---------------|-----------------|  
-|pszMachine|[in] Nombre de una máquina remota posiblemente cuyo registro se va a escribir (`NULL` significa el equipo local).|  
-|pszType|[in] Uno de los tipos de métrica.|  
-|rgguidSections|[entrada, salida] Preasignado matriz de GUID que se va a rellenar.|  
-|pdwSize|[in] El número máximo de GUID que se pueden almacenar en la `rgguidSections` matriz.|  
-|pszAltRoot|[in] Una raíz del registro alternativo a usar. Establecido en `NULL` para utilizar el valor predeterminado.|  
+|pszMachine|[in] Nombre de un equipo remoto, posiblemente, cuyo registro se escribirá (`NULL` significa que el equipo local).|  
+|pszType|[in] Uno de los tipos de métricas.|  
+|rgguidSections|[in, out] Preasignado matriz de GUID que se va a rellenar.|  
+|pdwSize|[in] El número máximo de GUID que se pueden almacenar en el `rgguidSections` matriz.|  
+|pszAltRoot|[in] Una raíz del registro alternativo a usar. Establecido en `NULL` para usar el valor predeterminado.|  
   
 ## <a name="expression-evaluator-functions"></a>Funciones del evaluador de expresiones  
   
@@ -127,17 +128,17 @@ HRESULT EnumMetricSections(
 |--------------|-----------------|  
 |GetEEMetric|Recupera un valor de métrica del registro.|  
 |SetEEMetric|Establece el valor de métrica especificado en el registro.|  
-|RemoveEEMetric|Elimina la métrica especificada del registro.|  
+|RemoveEEMetric|Quita la métrica especificada del registro.|  
 |GetEEMetricFile|Obtiene un nombre de archivo de la métrica especificada y lo carga, devolver el contenido del archivo como una cadena.|  
   
-## <a name="exception-functions"></a>Funciones de excepciones  
+## <a name="exception-functions"></a>Funciones de excepción  
   
 |Función|Descripción|  
 |--------------|-----------------|  
 |GetExceptionMetric|Recupera un valor de métrica del registro.|  
 |SetExceptionMetric|Establece el valor de métrica especificado en el registro.|  
-|RemoveExceptionMetric|Elimina la métrica especificada del registro.|  
-|RemoveAllExceptionMetrics|Elimina todas las métricas de excepción del registro.|  
+|RemoveExceptionMetric|Quita la métrica especificada del registro.|  
+|RemoveAllExceptionMetrics|Quita todas las métricas de la excepción del registro.|  
   
 ## <a name="symbol-provider-functions"></a>Funciones del proveedor de símbolos  
   
@@ -145,101 +146,101 @@ HRESULT EnumMetricSections(
 |--------------|-----------------|  
 |GetSPMetric|Recupera un valor de métrica del registro.|  
 |SetSPMetric|Establece el valor de métrica especificado en el registro.|  
-|RemoveSPMetric|Elimina la métrica especificada del registro.|  
+|RemoveSPMetric|Quita la métrica especificada del registro.|  
   
 ## <a name="enumeration-functions"></a>Funciones de enumeración  
   
 |Función|Descripción|  
 |--------------|-----------------|  
-|EnumMetricSections|Enumera todas las métricas para un tipo de métrica especificada.|  
+|EnumMetricSections|Enumera todas las métricas para un tipo de métrica especificado.|  
 |EnumDebugEngine|Enumera los motores de depuración registrados.|  
 |EnumEEs|Enumera los evaluadores de expresión registrados.|  
-|EnumExceptionMetrics|Enumera todas las métricas de excepción.|  
+|EnumExceptionMetrics|Enumera todas las métricas de la excepción.|  
   
-## <a name="metric-definitions"></a>Definiciones de métrica  
- Estas definiciones se pueden utilizar para los nombres de métrica predefinidos. Los nombres corresponden a las diversas claves de registro y nombres de los valores y se definen como cadenas de caracteres anchos todos: por ejemplo, `extern LPCWSTR metrictypeEngine`.  
+## <a name="metric-definitions"></a>Definiciones de métricas  
+ Estas definiciones se pueden usar para los nombres de métrica predefinidos. Los nombres se corresponden con diversas claves del registro y nombres de valor y se definen como cadenas de caracteres anchos todos: por ejemplo, `extern LPCWSTR metrictypeEngine`.  
   
-|Tipos predefinidos de métricos|Descripción: La clave base para...|  
+|Tipos predefinidos de métrica|Descripción: La clave base para...|  
 |-----------------------------|---------------------------------------|  
 |metrictypeEngine|Todas las métricas de motor de depuración.|  
-|metrictypePortSupplier|Todas las métricas de proveedor de puerto.|  
+|metrictypePortSupplier|Todas las métricas del proveedor de puerto.|  
 |metrictypeException|Todas las métricas de excepción.|  
-|metricttypeEEExtension|Todas las extensiones de evaluador de expresiones.|  
+|metricttypeEEExtension|Todas las extensiones del evaluador de expresión.|  
   
 |Propiedades del motor de depuración|Descripción|  
 |-----------------------------|-----------------|  
-|metricAddressBP|Establézcalo es distinto de cero para indicar la compatibilidad para puntos de interrupción de dirección.|  
-|metricAlwaysLoadLocal|Establézcalo es distinto de cero con el fin de cargar siempre el motor de depuración localmente.|  
-|metricLoadInDebuggeeSession|NO USADO|  
-|metricLoadedByDebuggee|Establézcalo es distinto de cero para indicar que el motor de depuración siempre se cargará con o por el programa que se está depurando.|  
-|metricAttach|Establézcalo es distinto de cero para indicar la compatibilidad para datos adjuntos a los programas existentes.|  
-|metricCallStackBP|Establézcalo es distinto de cero para indicar la compatibilidad con los puntos de interrupción de la pila de llamadas.|  
-|metricConditionalBP|Establézcalo es distinto de cero para indicar la compatibilidad para la configuración de puntos de interrupción condicionales.|  
-|metricDataBP|Establézcalo es distinto de cero para indicar la compatibilidad para la configuración de puntos de interrupción en cambios en los datos.|  
-|metricDisassembly|Establecer a es distinto de cero para indicar la compatibilidad para la producción de una lista de desensamblado.|  
-|metricDumpWriting|Establézcalo es distinto de cero para indicar la compatibilidad para escribir (el volcado de memoria para un dispositivo de salida) de volcado de memoria.|  
-|metricENC|Establecer a es distinto de cero para indicar la compatibilidad para editar y continuar. **Nota:** un motor de depuración personalizadas nunca debe establecer esto o siempre debe establecer en 0.|  
-|metricExceptions|Establézcalo es distinto de cero para indicar la compatibilidad para las excepciones.|  
-|metricFunctionBP|Establézcalo es distinto de cero para indicar la compatibilidad para puntos de interrupción con nombre (puntos de interrupción que interrumpir cuando se llama a un nombre de función determinado).|  
-|metricHitCountBP|Establézcalo es distinto de cero para indicar la compatibilidad para la configuración de puntos de interrupción "punto de aciertos" (los puntos de interrupción que se desencadenan después de que se va a alcance a un número determinado de veces).|  
-|metricJITDebug|Establecer a es distinto de cero para indicar la compatibilidad para la depuración de just-in-time (el depurador se inicia cuando se produce una excepción en un proceso en ejecución).|  
-|metricMemory|NO USADO|  
-|metricPortSupplier|Establezca el CLSID del proveedor del puerto si hay una está implementada.|  
-|metricRegisters|NO USADO|  
-|metricSetNextStatement|Establézcalo es distinto de cero para indicar la compatibilidad para establecer la siguiente instrucción (que omite la ejecución de instrucciones intermedias).|  
-|metricSuspendThread|Establézcalo es distinto de cero para indicar la compatibilidad para suspender la ejecución del subproceso.|  
-|metricWarnIfNoSymbols|Establézcalo es distinto de cero para indicar que se debe notificar al usuario si no hay ningún símbolo.|  
-|metricProgramProvider|Establezca esta opción en el CLSID del proveedor de programa.|  
-|metricAlwaysLoadProgramProviderLocal|Establezca esta propiedad a es distinto de cero para indicar que el proveedor de programa siempre se debe cargar localmente.|  
-|metricEngineCanWatchProcess|Establezca este parámetro es distinto de cero para indicar que el motor de depuración inspeccionará para procesar los eventos en lugar del proveedor de programa.|  
-|metricRemoteDebugging|Establezca este parámetro es distinto de cero para indicar la compatibilidad para la depuración remota.|  
-|metricEncUseNativeBuilder|Establezca esta propiedad a es distinto de cero para indicar que la editar y continuar con el administrador deben usar encbuild.dll del motor de depuración al compilar para editar y continuar. **Nota:** un motor de depuración personalizadas nunca debe establecer esto o siempre debe establecer en 0.|  
-|metricLoadUnderWOW64|Establezca esta propiedad en es distinto de cero para indicar que el motor de depuración se debe cargar en el proceso depurado en WOW cuando se depura un proceso de 64 bits; en caso contrario, el motor de depuración se cargará en el proceso de Visual Studio (que se ejecuta bajo WOW64).|  
-|metricLoadProgramProviderUnderWOW64|Establezca esta propiedad en es distinto de cero para indicar que el proveedor de programa se debe cargar en el proceso de depuración al depurar un proceso de 64 bits en WOW; en caso contrario, se cargarán en el proceso de Visual Studio.|  
-|metricStopOnExceptionCrossingManagedBoundary|Establezca este parámetro es distinto de cero para indicar que el proceso debe detenerse si se produce una excepción no controlada en los límites del código administrado y no administrado.|  
-|metricAutoSelectPriority|Establezca una prioridad para la selección automática del motor de depuración (valores es igual a mayor prioridad).|  
-|metricAutoSelectIncompatibleList|Clave del registro que contiene entradas que especifican los GUID para los motores de depuración que se pasará por alto en la selección automática. Estas entradas son un número (0, 1, 2 y así sucesivamente) con un GUID expresado como una cadena.|  
-|metricIncompatibleList|Clave del registro que contiene entradas que especifican los GUID para los motores de depuración que no son compatibles con este motor de depuración.|  
-|metricDisableJITOptimization|Establezca este parámetro es distinto de cero para indicar que se deben deshabilitar las optimizaciones de just-in-time (para código administrado) durante la depuración.|  
+|metricAddressBP|Establezca en distinto de cero para indicar la compatibilidad con los puntos de interrupción de dirección.|  
+|metricAlwaysLoadLocal|Establezca en distinto de cero con el fin de cargar siempre el motor de depuración local.|  
+|metricLoadInDebuggeeSession|NO SE UTILIZA|  
+|metricLoadedByDebuggee|Establezca en distinto de cero para indicar que el motor de depuración siempre se cargará con o por el programa que se está depurando.|  
+|metricAttach|Establezca en distinto de cero para indicar la compatibilidad con datos adjuntos a los programas existentes.|  
+|metricCallStackBP|Establezca en distinto de cero para indicar la compatibilidad con los puntos de interrupción de la pila de llamadas.|  
+|metricConditionalBP|Establezca en distinto de cero para indicar la compatibilidad con la configuración de puntos de interrupción condicionales.|  
+|metricDataBP|Establezca en distinto de cero para indicar la compatibilidad con la configuración de puntos de interrupción en los cambios en los datos.|  
+|metricDisassembly|Establezca a distinto de cero para indicar la compatibilidad para la producción de una lista de desensamblado.|  
+|metricDumpWriting|Establezca en distinto de cero para indicar la compatibilidad para escribir (el volcado de memoria para un dispositivo de salida) de volcado de memoria.|  
+|metricENC|Establezca a distinto de cero para indicar la compatibilidad para editar y continuar. **Nota:** nunca debe establecer esto de un motor de depuración o siempre debe establecer en 0.|  
+|metricExceptions|Establezca en distinto de cero para indicar la compatibilidad para las excepciones.|  
+|metricFunctionBP|Establezca en distinto de cero para indicar la compatibilidad con los puntos de interrupción con nombre (los puntos de interrupción que se interrumpan cuando se llama a un nombre de función determinado).|  
+|metricHitCountBP|Establezca en distinto de cero para indicar la compatibilidad con la configuración de puntos de interrupción "de aciertos de punto" (puntos de interrupción que se desencadenan después de que se vea afectado a un número determinado de veces).|  
+|metricJITDebug|Establezca a distinto de cero para indicar la compatibilidad para la depuración de just-in-time (el depurador se inicia cuando se produce una excepción en un proceso en ejecución).|  
+|metricMemory|NO SE UTILIZA|  
+|metricPortSupplier|Establezca esta opción en el CLSID del proveedor del puerto si uno está implementado.|  
+|metricRegisters|NO SE UTILIZA|  
+|metricSetNextStatement|Establezca en distinto de cero para indicar la compatibilidad para establecer la instrucción siguiente (que omite la ejecución de instrucciones intermedias).|  
+|metricSuspendThread|Establezca en distinto de cero para indicar la compatibilidad para suspender la ejecución del subproceso.|  
+|metricWarnIfNoSymbols|Establezca en distinto de cero para indicar que se debe notificar al usuario si no hay ningún símbolo.|  
+|metricProgramProvider|Establezca esta opción en el CLSID del proveedor del programa.|  
+|metricAlwaysLoadProgramProviderLocal|Establezca esta opción a distinto de cero para indicar que el proveedor del programa siempre se debe cargar localmente.|  
+|metricEngineCanWatchProcess|Establezca esta opción en distinto de cero para indicar que el motor de depuración inspeccionará para procesar eventos en lugar del proveedor del programa.|  
+|metricRemoteDebugging|Establezca esta opción en distinto de cero para indicar la compatibilidad para la depuración remota.|  
+|metricEncUseNativeBuilder|Establezca esta opción a distinto de cero para indicar que el editar y continuar con el administrador deben usar encbuild.dll del motor de depuración para crear aplicaciones para editar y continuar. **Nota:** nunca debe establecer esto de un motor de depuración o siempre debe establecer en 0.|  
+|metricLoadUnderWOW64|Establezca esta opción en distinto de cero para indicar que el motor de depuración se debe cargar en el proceso depurado bajo WOW cuando se depura un proceso de 64 bits; en caso contrario, el motor de depuración se cargarán en el proceso de Visual Studio (que se ejecuta bajo WOW64).|  
+|metricLoadProgramProviderUnderWOW64|Establezca esta opción en distinto de cero para indicar que el proveedor del programa debe cargarse en el proceso depurado al depurar un proceso de 64 bits en WOW; en caso contrario, se cargarán en el proceso de Visual Studio.|  
+|metricStopOnExceptionCrossingManagedBoundary|Establezca esta opción en distinto de cero para indicar que el proceso debe detenerse si se produce una excepción no controlada en los límites de código administrado y no administrado.|  
+|metricAutoSelectPriority|Establezca esta opción en una prioridad para la selección automática del motor de depuración (valores igual a mayor prioridad).|  
+|metricAutoSelectIncompatibleList|Clave de registro que contiene entradas que especifican los GUID de motores de depuración se pasará por alto en la selección automática. Estas entradas son un número (0, 1, 2 y así sucesivamente) con un GUID que se expresa como una cadena.|  
+|metricIncompatibleList|Clave de registro que contiene entradas que especifican los GUID para los motores de depuración que no son compatibles con el motor de depuración.|  
+|metricDisableJITOptimization|Establezca esta opción en distinto de cero para indicar que se deben deshabilitar las optimizaciones de just-in-time (para código administrado) durante la depuración.|  
   
-|Propiedades del evaluador de expresiones|Descripción|  
+|Propiedades de la expresión del evaluador de expresiones|Descripción|  
 |-------------------------------------|-----------------|  
 |metricEngine|Esto contiene el número de motores de depuración que admiten el evaluador de expresiones especificado.|  
-|metricPreloadModules|Establezca este parámetro es distinto de cero para indicar que se deben cargar previamente módulos para cuando se inicia un evaluador de expresiones en un programa.|  
+|metricPreloadModules|Establezca esta opción en distinto de cero para indicar que se deben cargar previamente a los módulos cuando se inicia un evaluador de expresiones en un programa.|  
 |metricThisObjectName|Establezca esta opción en el nombre del objeto "this".|  
   
 |Propiedades de extensión del evaluador de expresiones|Descripción|  
-|-----------------------------------------------|-----------------|  
-|metricExtensionDll|Nombre de la dll que es compatible con esta extensión.|  
+| - |-----------------|  
+|metricExtensionDll|Nombre del archivo dll que es compatible con esta extensión.|  
 |metricExtensionRegistersSupported|Lista de registros que se admiten.|  
-|metricExtensionRegistersEntryPoint|Punto de entrada para el acceso a los registros.|  
-|metricExtensionTypesSupported|Lista de tipos compatibles.|  
-|metricExtensionTypesEntryPoint|Punto de entrada para tener acceso a los tipos.|  
+|metricExtensionRegistersEntryPoint|Punto de entrada para tener acceso a registros.|  
+|metricExtensionTypesSupported|Lista de tipos admitidos.|  
+|metricExtensionTypesEntryPoint|Punto de entrada para el acceso a los tipos.|  
   
 |Propiedades de puerto de proveedor|Descripción|  
 |------------------------------|-----------------|  
-|metricPortPickerCLSID|Identificador CLSID del selector de puerto (un cuadro de diálogo, el usuario puede usar para seleccionar los puertos y agregar puertos que debe utilizar para la depuración).|  
-|metricDisallowUserEnteredPorts|Es distinto de cero si no se pueden agregar los puertos escrito por el usuario para el proveedor del puerto (Esto hace que el cuadro de diálogo Selector de puerto esencialmente de solo lectura).|  
-|metricPidBase|El identificador del proceso base utilizado por el proveedor de puerto al asignar identificadores de proceso.|  
+|metricPortPickerCLSID|El CLSID del selector de puerto (un cuadro de diálogo, el usuario puede utilizar para seleccionar los puertos y agregar los puertos que se utilizará para depuración).|  
+|metricDisallowUserEnteredPorts|Distinto de cero si no se puede agregar los puertos escrito por el usuario para el proveedor del puerto (Esto hace que el cuadro de diálogo Selector de puerto básicamente de sólo lectura).|  
+|metricPidBase|El identificador de proceso base utilizado por el proveedor del puerto al asignar identificadores de proceso.|  
   
-|Los tipos de almacén de SP predefinidos|Descripción|  
+|Tipos de Store SP predefinidos|Descripción|  
 |-------------------------------|-----------------|  
 |storetypeFile|Los símbolos se almacenan en un archivo independiente.|  
 |storetypeMetadata|Los símbolos se almacenan como metadatos en un ensamblado.|  
   
-|Propiedades de varios|Descripción|  
+|Propiedades varias|Descripción|  
 |------------------------------|-----------------|  
-|metricShowNonUserCode|Establezca este parámetro es distinto de cero para mostrar código no es de usuario.|  
-|metricJustMyCodeStepping|Establezca este parámetro es distinto de cero para indicar que la ejecución paso a paso pueden producirse solo en el código de usuario.|  
+|metricShowNonUserCode|Establezca esta opción en distinto de cero para mostrar el código no es de usuario.|  
+|metricJustMyCodeStepping|Establezca esta opción en distinto de cero para indicar que la ejecución paso a paso pueden producirse solo en el código de usuario.|  
 |metricCLSID|CLSID de un objeto de un tipo específico de métrica.|  
-|metricName|Nombre descriptivo de un objeto de un tipo específico de métrica.|  
+|MetricName|Nombre descriptivo para un objeto de un tipo específico de métrica.|  
 |metricLanguage|Nombre del idioma.|  
   
 ## <a name="registry-locations"></a>Ubicaciones del registro  
- Las métricas se leen y escritas en el registro, específicamente en el `VisualStudio` subclave.  
+ Las métricas se leen y escritas en el registro, concretamente, en el `VisualStudio` subclave.  
   
 > [!NOTE]
->  La mayoría de los casos, las métricas se escribirá en la clave HKEY_LOCAL_MACHINE. Sin embargo, en ocasiones HKEY_CURRENT_USER será la clave de destino. Dbgmetric.lib controla las dos claves. Al obtener una métrica, busca HKEY_CURRENT_USER primero, a continuación, en HKEY_LOCAL_MACHINE. Cuando se está estableciendo una métrica, un parámetro especifica qué clave de nivel superior que se usará.  
+>  La mayoría de los casos, las métricas se escribirán en la clave HKEY_LOCAL_MACHINE. Sin embargo, a veces HKEY_CURRENT_USER será la clave de destino. Dbgmetric.lib controla ambas claves. Al obtener una métrica, lo busca en HKEY_CURRENT_USER primero y, después, en HKEY_LOCAL_MACHINE. Cuando se está estableciendo una métrica, un parámetro especifica qué clave de nivel superior que se usará.  
   
  *[clave del registro]*\  
   
@@ -249,44 +250,44 @@ HRESULT EnumMetricSections(
   
  `VisualStudio`\  
   
- *[raíz versión]*\  
+ *[raíz de la versión]*\  
   
  *[raíz métrica]*\  
   
  *[tipo de métrica]*\  
   
- *[metric] = [valor de métrica]*  
+ *[metric] = [valor métrico]*  
   
- *[metric] = [valor de métrica]*  
+ *[metric] = [valor métrico]*  
   
- *[metric] = [valor de métrica]*  
+ *[metric] = [valor métrico]*  
   
 |Marcador de posición|Descripción|  
 |-----------------|-----------------|  
 |*[clave del registro]*|`HKEY_CURRENT_USER` o `HKEY_LOCAL_MACHINE`.|  
-|*[raíz versión]*|La versión de Visual Studio (por ejemplo, `7.0`, `7.1`, o `8.0`). Sin embargo, esta raíz también se puede modificar con el **/rootsuffix** cambie a **devenv.exe**. Para VSIP, este modificador es normalmente **Exp**, por lo que podría ser la raíz de la versión, por ejemplo, 8.0Exp.|  
-|*[raíz métrica]*|Esto es `AD7Metrics` o `AD7Metrics(Debug)`, dependiendo de si se utiliza la versión de depuración de dbgmetric.lib. **Nota:** si no se utiliza dbgmetric.lib, esta convención de nomenclatura debe cumplir si tiene las diferencias entre debug y release versiones que deben reflejarse en el registro.|  
-|*[tipo de métrica]*|El tipo de métrica se escriban: `Engine`, `ExpressionEvaluator`, `SymbolProvider`, etcetera. Éstos se definen como en dbgmetric.h como `metricTypeXXXX`, donde `XXXX` es el nombre de tipo específico.|  
-|*[metric]*|El nombre de una entrada que se asignará un valor con el fin de establecer la métrica. En función de la organización real de las métricas en el tipo de métrica.|  
-|*[valor de métrica]*|El valor asignado a la métrica. El tipo que del valor debe tener (cadena), números, etc. depende de la métrica.|  
+|*[raíz de la versión]*|La versión de Visual Studio (por ejemplo, `7.0`, `7.1`, o `8.0`). Sin embargo, esta raíz también se puede modificar mediante la **/rootsuffix** cambie a **devenv.exe**. VSIP, este modificador es normalmente **Exp**, por lo que podría ser la raíz de la versión, por ejemplo, 8.0Exp.|  
+|*[raíz métrica]*|Puede ser `AD7Metrics` o `AD7Metrics(Debug)`, dependiendo de si se usa la versión de depuración de dbgmetric.lib. **Nota:** si se utiliza dbgmetric.lib, esta convención de nomenclatura debe cumplir si dispone de las diferencias entre depuración y lanzamiento de versiones que deben reflejarse en el registro.|  
+|*[tipo de métrica]*|El tipo de métrica se escriban: `Engine`, `ExpressionEvaluator`, `SymbolProvider`, etcetera. Todas ellas se definen como en dbgmetric.h como `metricTypeXXXX`, donde `XXXX` es el nombre de tipo específico.|  
+|*[metric]*|El nombre de una entrada que se asignará un valor con el fin de establecer la métrica. La organización de las métricas depende del tipo de métrica.|  
+|*[valor de métrica]*|El valor asignado a la métrica. El tipo que el valor debe tener (cadena), números, etc. depende de la métrica.|  
   
 > [!NOTE]
 >  Todos los GUID se almacenan en el formato de `{GUID}`. Por ejemplo: `{123D150B-FA18-461C-B218-45B3E4589F9B}`.  
   
 ### <a name="debug-engines"></a>Motores de depuración  
- La siguiente es la organización de las métricas de motores de depuración en el registro. `Engine` es el nombre de tipo de métrica de un motor de depuración y corresponde a *[tipo de métrica]* en el subárbol del registro anterior.  
+ La siguiente es la organización de las métricas de los motores de depuración en el registro. `Engine` es el nombre de tipo de métrica para un motor de depuración y corresponde a *[tipo de métrica]* en el subárbol del registro anterior.  
   
  `Engine`\  
   
- *[motor guid]*\  
+ *[guid de motor]*\  
   
  `CLSID` = *[guid de clase]*  
   
- *[metric] = [valor de métrica]*  
+ *[metric] = [valor métrico]*  
   
- *[metric] = [valor de métrica]*  
+ *[metric] = [valor métrico]*  
   
- *[metric] = [valor de métrica]*  
+ *[metric] = [valor métrico]*  
   
  `PortSupplier`\  
   
@@ -296,12 +297,12 @@ HRESULT EnumMetricSections(
   
 |Marcador de posición|Descripción|  
 |-----------------|-----------------|  
-|*[motor guid]*|El GUID del motor de depuración.|  
-|*[guid de clase]*|El GUID de la clase que implementa este motor de depuración.|  
-|*[guid de proveedor de puerto]*|El GUID del proveedor del puerto, si lo hay. Muchos motores de depuración utiliza el proveedor del puerto predeterminado y, por tanto, no especifican su propio proveedor. En este caso, la subclave `PortSupplier` estará ausente.|  
+|*[guid de motor]*|El GUID del motor de depuración.|  
+|*[guid de clase]*|El GUID de la clase que implementa el motor de depuración.|  
+|*[guid de proveedor de puerto]*|El GUID del proveedor del puerto, si existe. Muchos motores de depuración utiliza el proveedor del puerto predeterminado y, por tanto, no especifican su propio proveedor. En este caso, la subclave `PortSupplier` estará ausente.|  
   
 ### <a name="port-suppliers"></a>Proveedores de puertos  
- La siguiente es la organización de las métricas del proveedor de puerto en el registro. `PortSupplier` es el nombre de tipo de métrica para un proveedor del puerto y se corresponde con *[tipo de métrica]*.  
+ La siguiente es la organización de las métricas del proveedor de puerto en el registro. `PortSupplier` es el nombre de tipo de métrica para un proveedor de puerto y corresponde a *[tipo de métrica]*.  
   
  `PortSupplier`\  
   
@@ -309,9 +310,9 @@ HRESULT EnumMetricSections(
   
  `CLSID` = *[guid de clase]*  
   
- *[metric] = [valor de métrica]*  
+ *[metric] = [valor métrico]*  
   
- *[metric] = [valor de métrica]*  
+ *[metric] = [valor métrico]*  
   
 |Marcador de posición|Descripción|  
 |-----------------|-----------------|  
@@ -323,34 +324,34 @@ HRESULT EnumMetricSections(
   
  `SymbolProvider`\  
   
- *[guid de proveedor de símbolos]*\  
+ *[símbolo guid de proveedor]*\  
   
  `file`\  
   
  `CLSID` = *[guid de clase]*  
   
- *[metric] = [valor de métrica]*  
+ *[metric] = [valor métrico]*  
   
- *[metric] = [valor de métrica]*  
+ *[metric] = [valor métrico]*  
   
  `metadata`\  
   
  `CLSID` = *[guid de clase]*  
   
- *[metric] = [valor de métrica]*  
+ *[metric] = [valor métrico]*  
   
- *[metric] = [valor de métrica]*  
+ *[metric] = [valor métrico]*  
   
 |Marcador de posición|Descripción|  
 |-----------------|-----------------|  
-|*[guid de proveedor de símbolos]*|El GUID del proveedor de símbolos|  
+|*[símbolo guid de proveedor]*|El GUID del proveedor de símbolos|  
 |*[guid de clase]*|El GUID de la clase que implementa este proveedor de símbolos|  
   
 ### <a name="expression-evaluators"></a>Evaluadores de expresión  
- La siguiente es la organización de las métricas del evaluador de expresiones en el registro. `ExpressionEvaluator` es el nombre de tipo de métrica para el evaluador de expresiones y corresponde a *[tipo de métrica]*.  
+ La siguiente es la organización de las métricas de evaluador de expresión en el registro. `ExpressionEvaluator` es el nombre de tipo de métrica para el evaluador de expresiones y corresponde a *[tipo de métrica]*.  
   
 > [!NOTE]
->  El tipo de métrica para `ExpressionEvaluator` no está definido en dbgmetric.h, ya que se supone que todos los cambios de métrica para evaluadores de expresión pasará a través de las funciones de métrica de evaluador de expresión adecuada (el diseño de la `ExpressionEvaluator` subclave es en cierto modo complicado, por lo que los detalles están ocultos en dbgmetric.lib).  
+>  El tipo de métrica para `ExpressionEvaluator` no está definido en dbgmetric.h, ya que se supone que todos los cambios de métrica para evaluadores de expresión pasará a través de las funciones de métrica de evaluador de expresión adecuada (el diseño de la `ExpressionEvaluator` subclave es ligeramente complicado, por lo que los detalles están ocultos en dbgmetric.lib).  
   
  `ExpressionEvaluator`\  
   
@@ -360,9 +361,9 @@ HRESULT EnumMetricSections(
   
  `CLSID` = *[guid de clase]*  
   
- *[metric] = [valor de métrica]*  
+ *[metric] = [valor métrico]*  
   
- *[metric] = [valor de métrica]*  
+ *[metric] = [valor métrico]*  
   
  `Engine`\  
   
@@ -375,22 +376,22 @@ HRESULT EnumMetricSections(
 |*[guid de lenguaje]*|El GUID de un idioma|  
 |*[guid de proveedor]*|El GUID de un proveedor|  
 |*[guid de clase]*|El GUID de la clase que implementa este evaluador de expresiones|  
-|*[guid de motor de depuración]*|El GUID de un motor de depuración que funciona este evaluador de expresiones con|  
+|*[guid de motor de depuración]*|El GUID de un motor de depuración que trabaja este evaluador de expresiones|  
   
 ### <a name="expression-evaluator-extensions"></a>Extensiones del evaluador de expresiones  
- La siguiente es la organización de las métricas de extensión del evaluador de expresiones en el registro. `EEExtensions` es el nombre de tipo de métrica para la expresión de extensiones de evaluador y corresponde a *[tipo de métrica]*.  
+ La siguiente es la organización de las métricas de extensión de evaluador de expresión en el registro. `EEExtensions` es el nombre de tipo de métrica para la expresión de extensiones del evaluador de expresiones y corresponde a *[tipo de métrica]*.  
   
  `EEExtensions`\  
   
- *[guid de extensión]*\  
+ *[guid de la extensión]*\  
   
- *[metric] = [valor de métrica]*  
+ *[metric] = [valor métrico]*  
   
- *[metric] = [valor de métrica]*  
+ *[metric] = [valor métrico]*  
   
 |Marcador de posición|Descripción|  
 |-----------------|-----------------|  
-|*[guid de extensión]*|El GUID de una extensión de evaluador de expresiones|  
+|*[guid de la extensión]*|El GUID de una extensión de evaluador de expresiones|  
   
 ### <a name="exceptions"></a>Excepciones  
  La siguiente es la organización de las métricas de excepciones en el registro. `Exception` es el nombre de tipo de métrica para las excepciones y corresponde a *[tipo de métrica]*.  
@@ -403,24 +404,24 @@ HRESULT EnumMetricSections(
   
  *[excepción]*\  
   
- *[metric] = [valor de métrica]*  
+ *[metric] = [valor métrico]*  
   
- *[metric] = [valor de métrica]*  
+ *[metric] = [valor métrico]*  
   
  *[excepción]*\  
   
- *[metric] = [valor de métrica]*  
+ *[metric] = [valor métrico]*  
   
- *[metric] = [valor de métrica]*  
+ *[metric] = [valor métrico]*  
   
 |Marcador de posición|Descripción|  
 |-----------------|-----------------|  
-|*[guid de motor de depuración]*|El GUID de un motor de depuración que admite excepciones.|  
-|*[tipos de excepción]*|Un título general para la subclave identifica la clase de excepciones que se pueden administrar. Nombres típicos son **las excepciones de C++**, **excepciones Win32**, **excepciones de Common Language Runtime**, y **comprobaciones en tiempo de ejecución nativas**. Estos nombres también se usan para identificar una clase determinada de excepción para el usuario.|  
-|*[excepción]*|Un nombre para una excepción: por ejemplo, **_com_error** o **interrupción de Control**. Estos nombres también se usan para identificar una excepción determinada al usuario.|  
+|*[guid de motor de depuración]*|El GUID del motor de depuración es compatible con las excepciones.|  
+|*[tipos de excepción]*|Un título general para la subclave que identifica la clase de excepciones que se pueden administrar. Los nombres típicos son **las excepciones de C++**, **las excepciones Win32**, **excepciones de Common Language Runtime**, y **comprobaciones nativas en tiempo de ejecución**. Estos nombres también se usan para identificar una clase determinada de excepción para el usuario.|  
+|*[excepción]*|Un nombre para una excepción: por ejemplo, **_com_error** o **CTRL+INTERR**. Estos nombres también se usan para identificar una excepción determinada para el usuario.|  
   
 ## <a name="requirements"></a>Requisitos  
- Estos archivos se encuentran en el [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] directorio de instalación de SDK (de forma predeterminada, *[unidad]*\Program SDK de Visual Studio 2010\\).  
+ Estos archivos se encuentran en el [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] directorio de instalación del SDK (de forma predeterminada, *[unidad]* \Program Files\Microsoft SDK de Visual Studio 2010\\).  
   
  Encabezado: includes\dbgmetric.h  
   

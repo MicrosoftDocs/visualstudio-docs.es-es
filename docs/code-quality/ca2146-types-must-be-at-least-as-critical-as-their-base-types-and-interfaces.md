@@ -1,6 +1,7 @@
 ---
 title: 'CA2146: Los tipos deben ser al menos tan críticos para la seguridad como sus interfaces y tipos base'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -11,13 +12,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d480b3b9fc2d6d294f13b15742e79c118ffec8f6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8f0550061102c7f785dfe69d1505801a60648e9b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895904"
 ---
 # <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146: Los tipos deben ser al menos tan críticos para la seguridad como sus interfaces y tipos base
+
 |||
 |-|-|
 |TypeName|TypesMustBeAtLeastAsCriticalAsBaseTypes|
@@ -26,15 +29,15 @@ ms.lasthandoff: 04/19/2018
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Motivo
- Un tipo transparente se deriva de un tipo que se marca con la <xref:System.Security.SecuritySafeCriticalAttribute> o <xref:System.Security.SecurityCriticalAttribute>, o un tipo que se marca con la <xref:System.Security.SecuritySafeCriticalAttribute> atributo se deriva de un tipo que se marca con el <xref:System.Security.SecurityCriticalAttribute> atributo.
+ Un tipo transparente se deriva de un tipo que está marcado con el <xref:System.Security.SecuritySafeCriticalAttribute> o <xref:System.Security.SecurityCriticalAttribute>, o un tipo que está marcado con el <xref:System.Security.SecuritySafeCriticalAttribute> atributo se deriva de un tipo que está marcado con el <xref:System.Security.SecurityCriticalAttribute> atributo.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Esta regla se desencadena cuando un tipo derivado tiene un atributo de transparencia de seguridad que no es tan crítico como su tipo base o interfaz implementada. Solo los tipos críticos pueden derivar de los tipos base críticos o implementar interfaces críticas, y solo los tipos críticos o críticos para la seguridad pueden derivar de tipos base críticos para la seguridad o implementar interfaces críticas para la seguridad. Las infracciones de esta regla de transparencia de nivel 2 como resultado un <xref:System.TypeLoadException> para el tipo derivado.
+ Esta regla se desencadena cuando un tipo derivado tiene un atributo de transparencia de seguridad que no es tan crítico como su tipo base o interfaz implementada. Solo los tipos críticos pueden derivar de los tipos base críticos o implementar interfaces críticas, y solo los tipos críticos o críticos para la seguridad pueden derivar de tipos base críticos para la seguridad o implementar interfaces críticas para la seguridad. Dar lugar a infracciones de esta regla de transparencia de nivel 2 en un <xref:System.TypeLoadException> para el tipo derivado.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir esta infracción, marque el tipo derivado o que implementa con un atributo de transparencia es al menos tan crítico como el tipo base o interfaz.
+ Para corregir esta infracción, marque el tipo derivado o implementación con un atributo de transparencia que sea al menos tan crítico como el tipo base o interfaz.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo

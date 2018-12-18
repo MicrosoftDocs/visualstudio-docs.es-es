@@ -1,5 +1,5 @@
 ---
-title: Detectar los requisitos del sistema | Documentos de Microsoft
+title: Detectar los requisitos del sistema | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,28 +14,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e98235bd224876b00714e1f71210ea69cb6faff
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a794391001934164e52bdd73d940cb73ff3b5f3b
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500087"
 ---
-# <a name="detecting-system-requirements"></a>Detectar los requisitos del sistema
-Un VSPackage no funcionará a menos que esté instalado Visual Studio. Al utilizar Microsoft Windows Installer para administrar la instalación del paquete de VS, puede configurar el programa de instalación para detectar si está instalado Visual Studio. También puede configurar para comprobar el sistema para otros requisitos, como por ejemplo, una versión concreta de Windows o una cantidad determinada de RAM.  
+# <a name="detect-system-requirements"></a>Detectar los requisitos del sistema
+Un VSPackage no puede funcionar a menos que esté instalado Visual Studio. Cuando utiliza Microsoft Windows Installer para administrar la instalación del paquete de VS, puede configurar el instalador para detectar si está instalado Visual Studio. También puede configurar para comprobar el sistema para otros requisitos, por ejemplo, una versión concreta de Windows o una cantidad determinada de RAM.  
   
-## <a name="detecting-visual-studio-editions"></a>Detectar ediciones de Visual Studio  
- Para determinar si está instalada una edición de Visual Studio, compruebe que el valor de la clave del registro de instalación es (REG_DWORD) 1 en la carpeta adecuada, como se muestra en la tabla siguiente. Tenga en cuenta que hay una jerarquía de ediciones de Visual Studio:  
+## <a name="detect-visual-studio-editions"></a>Detectar las ediciones de Visual Studio  
+ Para determinar si está instalada una edición de Visual Studio, compruebe que el valor de la **instalar** clave del registro es *(REG_DWORD) 1* en la carpeta adecuada, como se menciona en la tabla siguiente. Tenga en cuenta que hay una jerarquía de las ediciones de Visual Studio:  
   
 1.  Empresa  
   
 2.  Profesional  
   
 3.  comunidad  
-  
- Cuando se instala una edición "posterior", se agregan las claves del registro para esa edición, así como para las ediciones "inferiores". Es decir, si está instalada la versión Enterprise edition, la clave de instalación se establece en 1 para la empresa, así como para las ediciones Professional y Community. Por lo tanto, deberá comprobar solo para la edición "más alta" que necesita.  
+      
+Cuando se instala una edición más reciente, las claves del registro para esa edición se agregan, así como para las ediciones anteriores. Es decir, si se instala la edición Enterprise, el **instalar** clave se establece en *1* para la empresa, así como para las ediciones Professional y Community. Por lo tanto, deberá comprobar solo la edición más reciente que necesita.  
   
 > [!NOTE]
->  En la versión de 64 bits del editor del registro, se muestran las claves de 32 bits en HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\. Las claves de Visual Studio están bajo HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\.  
+>  En la versión de 64 bits del editor del registro, se muestran las claves de 32 bits en **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\**. Las claves de Visual Studio están bajo **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**.  
   
 |Producto|Key|  
 |-------------|---------|  
@@ -44,8 +45,8 @@ Un VSPackage no funcionará a menos que esté instalado Visual Studio. Al utiliz
 |Visual Studio Community 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\community|  
 |Visual Studio 2015 Shell (integrado y aislado)|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|  
   
-## <a name="detecting-when-visual-studio-is-running"></a>Detectar cuándo se está ejecutando Visual Studio  
- No se puede registrar el VSPackage correctamente si Visual Studio se ejecuta cuando se instala el VSPackage. El instalador debe detectar cuándo se está ejecutando Visual Studio y, a continuación, rechace la instalación del programa. Windows Installer no permiten utilizar entradas de la tabla para habilitar la detección de este tipo. En su lugar, debe crear una acción personalizada, como se indica a continuación: Use la `EnumProcesses` funcionan al detectar el proceso devenv.exe y, a continuación, establezca una propiedad de instalador que se usa en una condición de inicio o condicionalmente mostrar un cuadro de diálogo que pide al usuario que cierre Visual Studio.  
+## <a name="detect-when-visual-studio-is-running"></a>Detectar cuándo se está ejecutando Visual Studio  
+ No se puede registrar el VSPackage correctamente si se ejecuta Visual Studio cuando se instala el paquete VSPackage. El instalador debe detectar cuándo se está ejecutando Visual Studio y, a continuación, rechace la instalación del programa. Windows Installer no permite usar entradas de la tabla para habilitar la detección de este tipo. En su lugar, debe crear una acción personalizada, como sigue: Use el `EnumProcesses` función para detectar el *devenv.exe* procesar y, a continuación, establezca una propiedad de instalador que se usa en una condición de inicio o mostrar condicionalmente un cuadro de diálogo que pide al usuario que cierre Visual Studio.  
   
 ## <a name="see-also"></a>Vea también  
- [Instalación de VSPackages con Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
+ [Instalar VSPackages con Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

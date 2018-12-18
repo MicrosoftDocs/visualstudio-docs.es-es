@@ -28,17 +28,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b46e4dc771ad5bb95185647a4769359427886f24
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1affc4d84b8ea44cbaed51f656c8a3e97e04f97a
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219814"
 ---
 # <a name="midl-task"></a>MIDL (tarea)
-Encapsula la herramienta compilador de lenguaje de definición de interfaz de Microsoft (MIDL), midl.exe. Para obtener más información, consulte "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+Incluye la herramienta de compilación Lenguaje de definición de interfaz de Microsoft (MIDL), *midl.exe*. Para obtener más información, vea [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).  
   
 ## <a name="parameters"></a>Parámetros  
- En la siguiente tabla se describen los parámetros de la tarea **MIDL**. La mayoría de los parámetros de tarea, así como algunos conjuntos de parámetros, corresponden a una opción de línea de comandos.  
+ A continuación se describen los parámetros de la tarea **MIDL**. La mayoría de los parámetros de tarea, así como algunos conjuntos de parámetros, corresponden a una opción de línea de comandos.  
   
 -   **AdditionalIncludeDirectories**  
   
@@ -46,15 +47,15 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Agrega un directorio a la lista de directorios en que se buscan archivos IDL importados, incluidos archivos de encabezado, y archivos de configuración de la aplicación (ACF).  
   
-     Para obtener más información, consulte la opción **/I** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+     Para obtener más información, vea la opción **/I** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).  
   
 -   **AdditionalOptions**  
   
      Parámetro **String** opcional.  
   
-     Una lista de opciones de la línea de comandos. Por ejemplo, **"***/option1 /option2 /option#*". Utilice este parámetro para especificar opciones de la línea de comandos que no están representadas por ningún otro parámetro de la tarea MIDL.  
+     Una lista de opciones de la línea de comandos. Por ejemplo, /\<option1> /\<option2> /\<option#>. Utilice este parámetro para especificar opciones de la línea de comandos que no están representadas por ningún otro parámetro de la tarea MIDL.  
   
-     Para obtener más información, consulte "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+     Para obtener más información, vea [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).  
   
 -   **ApplicationConfigurationMode**  
   
@@ -62,7 +63,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Si `true`, le permite utilizar algunas palabras clave ACF en el archivo IDL.  
   
-     Para obtener más información, consulte la opción **//app_config** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+     Para obtener más información, vea la opción **/app_config** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).  
   
 -   **ClientStubFile**  
   
@@ -70,7 +71,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Especifica el nombre del archivo de código auxiliar de cliente para una interfaz RPC.  
   
-     Para obtener más información, consulte la opción **/cstub** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Consulte también el parámetro **ServerStubFile** en esta tabla.  
+     Para obtener más información, vea la opción **/cstub** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL). Consulte también el parámetro **ServerStubFile** en esta tabla.  
   
 -   **CPreprocessOptions**  
   
@@ -78,7 +79,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Especifica las opciones que se deben pasar al preprocesador de C/C#. Especifique una lista delimitada por espacios de opciones de preprocesador.  
   
-     Para obtener más información, consulte la opción **/cpp_opt** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+     Para obtener más información, vea la opción **/cpp_opt** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).  
   
 -   **DefaultCharType**  
   
@@ -94,7 +95,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
     |**Unsigned**|**/char unsigned**|  
     |**Ascii**|**/char ascii7**|  
   
-     Para obtener más información, consulte la opción **/char** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+     Para obtener más información, vea la opción **/char** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).  
   
 -   **DllDataFileName**  
   
@@ -102,7 +103,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Especifica el nombre de archivo para el archivo *dlldata* generado para una DLL de proxy.  
   
-     Para obtener más información, consulte la opción **/dlldata** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+     Para obtener más información, vea la opción **/dlldata** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).  
   
 -   **EnableErrorChecks**  
   
@@ -118,7 +119,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
     |**EnableCustom**|**/error**|  
     |**All**|**/error all**|  
   
-     Para obtener más información, consulte la opción **/error** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+     Para obtener más información, vea la opción **/error** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).  
   
 -   **ErrorCheckAllocations**  
   
@@ -126,7 +127,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Si `true`, compruebe si hay errores de memoria insuficiente.  
   
-     Para obtener más información, consulte la opción **/error allocation** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+     Para obtener más información, vea la opción **/error allocation** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).  
   
 -   **ErrorCheckBounds**  
   
@@ -134,7 +135,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Si `true`, comprueba el tamaño de la variable conforme y diferentes matrices con la especificación de longitud de transmisión.  
   
-     Para obtener más información, consulte la opción **/error bounds_check** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+     Para obtener más información, vea la opción **/error bounds_check** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).  
   
 -   **ErrorCheckEnumRange**  
   
@@ -142,7 +143,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Si `true`, comprueba que los valores de enumeración están en un intervalo permitido.  
   
-     Para obtener más información, consulte la opción **/error enum** en la Ayuda de la línea de comandos (**/?**) de midl.exe.  
+     Para obtener más información, vea la opción **/error enum** en la ayuda de la línea de comandos (**/?**) de *midl.exe*.  
   
 -   **ErrorCheckRefPointers**  
   
@@ -150,7 +151,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Si `true`, compruebe que ningún puntero de referencia nula se pasa a los códigos auxiliares del cliente.  
   
-     Para obtener más información, consulte la opción **/error ref** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+     Para obtener más información, vea la opción **/error ref** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).  
   
 -   **ErrorCheckStubData**  
   
@@ -158,7 +159,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Si `true`, genera un código auxiliar que detecta las excepciones de anulación del cálculo de referencias en el servidor y las propaga al cliente.  
   
-     Para obtener más información, consulte la opción **/error stub_data** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+     Para obtener más información, vea la opción **/error stub_data** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).  
   
 -   **GenerateClientFiles**  
   
@@ -173,7 +174,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
     |**Ninguno**|**/client none**|  
     |**Stub**|**/client stub**|  
   
-     Para obtener más información, consulte la opción **/client** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+     Para obtener más información, vea la opción **/client** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).  
   
 -   **GenerateServerFiles**  
   
@@ -188,7 +189,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
     |**Ninguno**|**/server none**|  
     |**Stub**|**/server stub**|  
   
-     Para obtener más información, consulte la opción **/server** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+     Para obtener más información, vea la opción **/server** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).  
   
 -   **GenerateStublessProxies**  
   
@@ -196,15 +197,15 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Si `true`, genera códigos auxiliares totalmente interpretados junto con servidores proxy sin código auxiliar para las interfaces de objetos.  
   
-     Para obtener más información, consulte la opción **/Oicf** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+     Para obtener más información, vea la opción **/Oicf** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).  
   
 -   **GenerateTypeLibrary**  
   
      Parámetro **Boolean** opcional.  
   
-     Si `true`, no se genera ningún archivo de biblioteca de tipo (.tlb).  
+     Si es `true`, no se genera ningún archivo de biblioteca de tipos (*.tlb*).  
   
-     Para obtener más información, consulte la opción **/notlb** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+     Para obtener más información, vea la opción **/notlb** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).  
   
 -   **HeaderFileName**  
   
@@ -212,7 +213,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Especifica el nombre del archivo de encabezado generado.  
   
-     Para obtener más información, consulte la opción **/h** o **/header** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+     Para obtener más información, vea la opción **/h** o **/header** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).  
   
 -   **IgnoreStandardIncludePath**  
   
@@ -220,7 +221,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Si `true`, la tarea MIDL solo busca en los directorios especificados mediante el modificador **AdditionalIncludeDirectories** y omite tanto el directorio actual como los directorios especificados por la variable de entorno INCLUDE.  
   
-     Para obtener más información, consulte la opción **/no_def_idir** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+     Para obtener más información, vea la opción **/no_def_idir** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).  
   
 -   **InterfaceIdentifierFileName**  
   
@@ -228,7 +229,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Especifica el nombre del *archivo del identificador de interfaz* para una interfaz COM. Esto invalida el nombre predeterminado obtenido al agregar "_i.c" al nombre de archivo IDL.  
   
-     Para obtener más información, consulte la opción **/iid** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+     Para obtener más información, vea la opción **/iid** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).  
   
 -   **LocaleID**  
   
@@ -236,15 +237,15 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Especifica el *identificador de configuración regional* que habilita el uso de caracteres internacionales en archivos de entrada, nombres de archivo y rutas de acceso de directorio. Especificar un identificador de configuración regional decimal.  
   
-     Para obtener más información, consulte la opción **/lcid** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Consulte también "Identificadores de configuración regional asignados por Microsoft" en MSDN.  
+     Para obtener más información, vea la opción **/lcid** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL). Además, vea [Locale identifiers](https://docs.microsoft.com/windows/desktop/intl/locale-identifiers) (Identificadores de configuración regional).  
   
 -   **MkTypLibCompatible**  
   
      Parámetro **Boolean** opcional.  
   
-     Si `true`, requiere que el formato del archivo de entrada sea compatible con mktyplib.exe versión 2.03.  
+     Si es `true`, necesita que el formato del archivo de entrada sea compatible con *mktyplib.exe* versión 2.03.  
   
-     Para obtener más información, consulte la opción **/mktyplib203** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Consulte también "Sintaxis de archivos ODL" en el sitio web de MSDN.  
+     Para obtener más información, vea la opción **/mktyplib203** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL). Además, vea [ODL file syntax](/previous-versions/windows/desktop/automat/odl-file-syntax) (Sintaxis de archivos ODL) en el sitio web de MSDN.  
   
 -   **OutputDirectory**  
   
@@ -252,7 +253,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Especifica el directorio predeterminado en que la tarea MIDL escribe los archivos de salida.  
   
-     Para obtener más información, consulte la opción **/out** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+     Para obtener más información, vea la opción **/out** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).  
   
 -   **PreprocessorDefinitions**  
   
@@ -260,7 +261,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Especifica uno o más *defines*; es decir, un nombre y un valor opcional que se pasará al preprocesador de C como si lo hiciera una directiva de `#define`. El formato de cada define es *name[=value]*.  
   
-     Para obtener más información, consulte la opción **/D** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Consulte también el parámetro **UndefinePreprocessorDefinitions** en esta tabla.  
+     Para obtener más información, vea la opción **/D** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL). Consulte también el parámetro **UndefinePreprocessorDefinitions** en esta tabla.  
   
 -   **ProxyFileName**  
   
@@ -268,7 +269,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Especifica el nombre del archivo de proxy de interfaz para una interfaz COM.  
   
-     Para obtener más información, consulte la opción **/proxy** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+     Para obtener más información, vea la opción **/proxy** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).  
   
 -   **RedirectOutputAndErrors**  
   
@@ -276,7 +277,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Redirige la salida, como los mensajes de error y advertencias, desde la salida estándar al archivo especificado.  
   
-     Para obtener más información, consulte la opción **/o** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+     Para obtener más información, vea la opción **/o** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).  
   
 -   **ServerStubFile**  
   
@@ -284,7 +285,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Especifica el nombre del archivo de código auxiliar de servidor para una interfaz RPC.  
   
-     Para obtener más información, consulte la opción **/sstub** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Consulte también el parámetro **ClientStubFile** en esta tabla.  
+     Para obtener más información, vea la opción **/sstub** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL). Consulte también el parámetro **ClientStubFile** en esta tabla.  
   
 -   **Source**  
   
@@ -308,7 +309,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
     |**4**|**/Zp4**|  
     |**8**|**/Zp8**|  
   
-     Para obtener más información, consulte la opción **/Zp** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). La opción **/Zp** es equivalente a la opción **/pack** y a la antigua opción **/align**.  
+     Para obtener más información, vea la opción **/Zp** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL). La opción **/Zp** es equivalente a la opción **/pack** y a la antigua opción **/align**.  
   
 -   **SuppressCompilerWarnings**  
   
@@ -316,7 +317,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Si `true`, suprime los mensajes de advertencia de la tarea MIDL.  
   
-     Para obtener más información, consulte la opción **/no_warn** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+     Para obtener más información, vea la opción **/no_warn** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).  
   
 -   **SuppressStartupBanner**  
   
@@ -324,7 +325,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Si es `true`, evita que se muestre el copyright y el mensaje de número de versión cuando la tarea se inicia.   
   
-     Para obtener más información, consulte la opción **/nologo** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+     Para obtener más información, vea la opción **/nologo** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).  
   
 -   **TargetEnvironment**  
   
@@ -341,7 +342,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
     |**Itanium**|**/env ia64**|  
     |**X64**|**/env x64**|  
   
-     Para obtener más información, consulte la opción **/env** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+     Para obtener más información, vea la opción **/env** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).  
   
 -   **TrackerLogDirectory**  
   
@@ -362,7 +363,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
     |**NewFormat**|**/newtlb**|  
     |**OldFormat**|**/oldtlb**|  
   
-     Para obtener más información, consulte las opciones **/newtlb** y **/oldtlb** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+     Para obtener más información, vea las opciones **/newtlb** y **/oldtlb** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).  
   
 -   **TypeLibraryName**  
   
@@ -370,7 +371,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Especifica el nombre del archivo de biblioteca de tipos.  
   
-     Para obtener más información, consulte la opción **/tlb** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+     Para obtener más información, vea la opción **/tlb** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).  
   
 -   **UndefinePreprocessorDefinitions**  
   
@@ -378,7 +379,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Quita cualquier definición anterior de un nombre, pasando el nombre al preprocesador de C como si lo hiciera una directiva de `#undefine`. Especifique uno o más nombres definidos previamente.  
   
-     Para obtener más información, consulte la opción **/U** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Consulte también el parámetro **PreprocessorDefinitions** en esta tabla.  
+     Para obtener más información, vea la opción **/U** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL). Consulte también el parámetro **PreprocessorDefinitions** en esta tabla.  
   
 -   **ValidateAllParameters**  
   
@@ -386,7 +387,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Si `true`, genera información de comprobación de errores adicional que se utiliza para realizar comprobaciones de integridad en tiempo de ejecución. Si `false`, no se genera la información de comprobación de errores.  
   
-     Para obtener más información, consulte las opciones **/robust** y **/no_robust** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+     Para obtener más información, vea las opciones **/robust** y **/no_robust** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).  
   
 -   **WarnAsError**  
   
@@ -396,7 +397,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
   
      Si no se especifica el parámetro de la tarea MIDL **WarningLevel**, las advertencias del nivel 1, el nivel predeterminado, se tratan como errores.  
   
-     Para obtener más información, consulte la opción **/WX** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Consulte también el parámetro **WarningLevel** en esta tabla.  
+     Para obtener más información, vea las opciones **/WX** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL). Consulte también el parámetro **WarningLevel** en esta tabla.  
   
 -   **WarningLevel**  
   
@@ -414,9 +415,7 @@ Encapsula la herramienta compilador de lenguaje de definición de interfaz de Mi
     |**3**|**/W3**|  
     |**4**|**/W4**|  
   
-     Para obtener más información, consulte la opción **/W** en "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Consulte también el parámetro **WarnAsError** en esta tabla.  
-  
-## <a name="remarks"></a>Comentarios  
+     Para obtener más información, vea la opción **/W** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL). Consulte también el parámetro **WarnAsError** en esta tabla.  
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)

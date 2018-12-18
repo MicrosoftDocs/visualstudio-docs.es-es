@@ -12,23 +12,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d2464acb75d8ea8a309d788aa95dc86b44d47e9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 96166caefa749138371dd8a5ab2ea9d496553557
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177119"
 ---
-# <a name="comparing-properties-and-items"></a>Comparar propiedades y elementos
+# <a name="compare-properties-and-items"></a>Comparación de propiedades y elementos
 Las propiedades y elementos de MSBuild se utilizan para pasar información a las tareas, evaluar condiciones y almacenar valores a los que se puede hacer referencia en el archivo del proyecto.  
   
--   Las propiedades son pares de nombre-valor. Para obtener más información, consulte [Propiedades de MSBuild](../msbuild/msbuild-properties.md).  
+-   Las propiedades son pares de nombre-valor. Para más información, vea [Propiedades de MSBuild](../msbuild/msbuild-properties.md).  
   
 -   Los elementos son objetos que normalmente representan archivos. Los objetos de elemento pueden tener asociadas colecciones de metadatos. Los metadatos son pares de nombre-valor. Para obtener más información, consulte [Elementos](../msbuild/msbuild-items.md).  
   
 ## <a name="scalars-and-vectors"></a>Escalares y vectores  
  Dado que las propiedades de MSBuild son pares de nombre-valor que tienen un solo valor de cadena, a menudo se describen como *escalares*. Puesto que los tipos de elemento de MSBuild son listas de elementos, a menudo se describen como *vector*. Sin embargo, en la práctica, las propiedades pueden representar varios valores y los tipos de elemento pueden tener un elemento o ninguno.  
   
-### <a name="target-dependency-injection"></a>Inserción de dependencia de destino  
+### <a name="target-dependency-injection"></a>Inserción de dependencias de destino  
  Para ver cómo las propiedades pueden representar varios valores, considere la posibilidad de un patrón de uso común para agregar un destino a una lista de destinos que se crea. Esta lista normalmente se representa mediante un valor de propiedad, con los nombres de destino separados por punto y coma.  
   
 ```xml  
@@ -54,7 +55,7 @@ Las propiedades y elementos de MSBuild se utilizan para pasar información a las
   
  agrega el destino CustomBuild a la lista de destino, lo que proporciona a `BuildDependsOn` el valor `BeforeBuild;CoreBuild;AfterBuild;CustomBuild`.  
   
- A partir de MSBuild 4.0, la inserción de dependencia de destino está en desuso. Utilice los atributos `AfterTargets` y `BeforeTargets` en su lugar. Para obtener más información, consulte [Orden de compilación de destinos](../msbuild/target-build-order.md).  
+ A partir de MSBuild 4.0, la inserción de dependencia de destino está en desuso. Utilice los atributos `AfterTargets` y `BeforeTargets` en su lugar. Para obtener más información, vea [Orden de compilación de destinos](../msbuild/target-build-order.md).  
   
 ### <a name="conversions-between-strings-and-item-lists"></a>Conversiones entre cadenas y listas de elementos  
  MSBuild realiza conversiones de tipos de elemento y valores de cadena según sea necesario. Para ver cómo una lista de elementos puede convertirse en un valor de cadena, considere lo que sucede cuando un tipo de elemento se utiliza como el valor de una propiedad de MSBuild:  
@@ -87,9 +88,10 @@ Las propiedades y elementos de MSBuild se utilizan para pasar información a las
 -   Las definiciones de elementos se definen y modifican en el orden en que aparecen.  
   
 -   Los elementos se definen y modifican en el orden en que aparecen.  
-  
+ 
+ 
  Durante la fase de ejecución de una compilación, las propiedades y los elementos que se definen dentro de los destinos se evalúan conjuntamente en una sola fase en el orden en que aparecen.  
-  
+ 
  Sin embargo, esto no es todo. Cuando se define una propiedad, una definición de propiedad o un elemento, se evalúa su valor. El evaluador de expresiones expande la cadena que especifica el valor. La expansión de la cadena depende de la fase de compilación. Este es un orden de evaluación de propiedades y elementos más detallado:  
   
 -   Durante la fase de evaluación de una compilación:  
@@ -127,9 +129,9 @@ Las propiedades y elementos de MSBuild se utilizan para pasar información a las
 KeyFileVersion: 1.0.0.3  
 ```  
   
- Esto es porque el valor de `KeyFileVersion` es realmente la cadena "@(KeyFile->'%(Version)')". El elemento y las transformaciones de elemento no se expandieron cuando la propiedad se definió por primera vez, por lo que el valor de la cadena sin expandir se asignó a la propiedad `KeyFileVersion`.  
+ Esto es porque el valor de `KeyFileVersion` es realmente la cadena "\@@(KeyFile->"%(Version)")". El elemento y las transformaciones de elemento no se expandieron cuando la propiedad se definió por primera vez, por lo que el valor de la cadena sin expandir se asignó a la propiedad `KeyFileVersion`.  
   
- Durante la fase de ejecución de la compilación, cuando procesa la tarea Message, MSBuild expande la cadena "@(KeyFile->'%(Version)')" para producir "1.0.0.3".  
+ Durante la fase de ejecución de la compilación, cuando procesa la tarea Message, MSBuild expande la cadena "\@(KeyFile->"%(Version)")" para producir "1.0.0.3".  
   
  Observe que aparecería el mismo mensaje incluso si el orden de los grupos de propiedades y elementos se ha revertido.  
   
@@ -173,7 +175,7 @@ KeyFileVersion:
 </Target>  
 ```  
   
- El valor de `KeyFileVersion` se establece en "1.0.0.3" y no en "@(KeyFile->'%(Version)')". La tarea Message muestra este mensaje:  
+ El valor de `KeyFileVersion` se establece en "1.0.0.3" y no en "\@(KeyFile->"%(Version)")". La tarea Message muestra este mensaje:  
   
 ```  
 KeyFileVersion: 1.0.0.3  

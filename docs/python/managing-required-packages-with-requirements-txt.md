@@ -1,38 +1,34 @@
 ---
-title: Uso de un archivo requirements.txt para administrar los requisitos de un paquete | Microsoft Docs
-description: Puede usar un archivo requirements.txt para administrar las dependencias de un proyecto. Si recibe un proyecto que contiene un archivo requirements.txt, puede instalar fácilmente esas dependencias en un solo paso.
-ms.custom: ''
-ms.date: 02/20/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.devlang: python
-ms.tgt_pltfrm: ''
+title: Uso de un archivo requirements.txt para administrar los requisitos de un paquete
+description: Un archivo requirements.txt describe las dependencias de un proyecto. Si recibe un proyecto que contiene un archivo requirements.txt, puede instalar fácilmente esas dependencias en un solo paso.
+ms.date: 10/29/2018
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b9d1a35d8ba34561c56ca14261591c7b80bacdb0
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 49f87ff5836188d6fefb80feac94b27902de7968
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218450"
 ---
-# <a name="managing-required-packages-with-requirementstxt"></a>Administración de los paquetes necesarios con requirements.txt
+# <a name="manage-required-packages-with-requirementstxt"></a>Administración de los paquetes necesarios con requirements.txt
 
-Si comparte un proyecto con otros usuarios mediante un sistema de compilación o pretende [publicarlo en Microsoft Azure](python-azure-cloud-service-project-template.md), necesita especificar los paquetes externos que dicho proyecto requiere. El enfoque recomendado es usar un [archivo requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) que contiene una lista de comandos para pip que instala las versiones necesarias de los paquetes dependientes.
+Si comparte un proyecto con otros usuarios, usa un sistema de compilación o pretende copiar el proyecto en cualquier otra ubicación donde necesita restaurar un entorno, necesita especificar los paquetes externos que dicho proyecto requiere. El enfoque recomendado es usar un [archivo requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) que contiene una lista de comandos para pip que instala las versiones necesarias de los paquetes dependientes. El comando más común es `pip freeze > requirements.txt`, que registra la lista de paquetes actual del entorno en *requirements.txt*.
 
-Técnicamente, se puede utilizar cualquier nombre de archivo para realizar un seguimiento de los requisitos (mediante el uso de `-r <full path to file>` al instalar un paquete), pero Visual Studio proporciona compatibilidad específica para `requirements.txt`:
+Técnicamente, se puede utilizar cualquier nombre de archivo para realizar un seguimiento de los requisitos (mediante el uso de `-r <full path to file>` al instalar un paquete), pero Visual Studio proporciona compatibilidad específica para *requirements.txt*:
 
-- Si ha cargado un proyecto que contiene `requirements.txt` y desea instalar todos los paquetes enumerados en ese archivo, expanda el nodo **Python Environments** en el **Explorador de soluciones** y, luego, haga clic con el botón derecho en un nodo de entorno y seleccione **Install from requirements.txt** (Instalar desde requirements.txt):
+- Si ha cargado un proyecto que contiene *requirements.txt* y desea instalar todos los paquetes enumerados en ese archivo, expanda el nodo **Python Environments** en el **Explorador de soluciones** y, luego, haga clic con el botón derecho en un nodo de entorno y seleccione **Instalar desde requirements.txt**:
 
     ![Instalar desde requirements.txt](media/environments-requirements-txt-install.png)
 
-- Si ya tiene todos los paquetes necesarios instalados en un entorno, puede hacer clic con el botón derecho en ese entorno en el Explorador de soluciones y seleccionar **Generate requirements.txt** (Generar requirements.txt) para crear el archivo necesario. Si el archivo ya existe, aparece un mensaje sobre cómo actualizarlo:
+- Si ya tiene todos los paquetes necesarios instalados en un entorno, puede hacer clic con el botón derecho en ese entorno en el **Explorador de soluciones** y seleccionar **Generar requirements.txt** para crear el archivo necesario. Si el archivo ya existe, aparece un mensaje sobre cómo actualizarlo:
 
     ![Opciones de actualización de requirements.txt](media/environments-requirements-txt-replace.png)
 
@@ -40,9 +36,9 @@ Técnicamente, se puede utilizar cualquier nombre de archivo para realizar un se
   - **Actualizar entradas existentes** detecta los requisitos del paquete y actualiza los especificadores de versión para que coincidan con la versión actualmente instalada.
   - **Update and add entries** (Actualizar y agregar entradas) actualiza todos los requisitos que se encuentran y agrega todos los demás paquetes al final del archivo.
 
-Dado que los archivos `requirements.txt` están pensados para inmovilizar los requisitos de un entorno, todos los paquetes instalados se escriben con versiones precisas. Usar versiones precisas garantiza que puede reproducir fácilmente el entorno en otro equipo. Los paquetes se incluyen aunque se instalaran con un intervalo de versiones, como una dependencia de otro paquete, o con un instalador distinto de pip.
+Dado que los archivos *requirements.txt* están pensados para inmovilizar los requisitos de un entorno, todos los paquetes instalados se escriben con versiones precisas. Usar versiones precisas garantiza que puede reproducir fácilmente el entorno en otro equipo. Los paquetes se incluyen aunque se instalaran con un intervalo de versiones, como una dependencia de otro paquete, o con un instalador distinto de pip.
 
-Si un paquete no se puede instalar mediante pip y aparece en un archivo `requirements.txt`, toda la instalación produce un error. En este caso, edite manualmente el archivo para excluir este paquete o para usar [opciones de pip](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) para hacer referencia a una versión instalable del paquete. Por ejemplo, puede ser preferible usar [`pip wheel`](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html) para compilar una dependencia y agregar la opción `--find-links <path>` a su `requirements.txt`:
+Si un paquete no se puede instalar mediante pip y aparece en un archivo *requirements.txt*, toda la instalación produce un error. En este caso, edite manualmente el archivo para excluir este paquete o para usar [opciones de pip](https://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) para hacer referencia a una versión instalable del paquete. Por ejemplo, puede ser preferible usar [`pip wheel`](https://pip.readthedocs.org/en/latest/reference/pip_wheel.html) para compilar una dependencia y agregar la opción `--find-links <path>` a su *requirements.txt*:
 
 ```output
 C:\Project>pip wheel azure
@@ -71,7 +67,7 @@ Cleaning up...
 
 ## <a name="see-also"></a>Vea también
 
-- [Administración de entornos de Python en Visual Studio](managing-python-environments-in-visual-studio.md)
+- [Creación y administración de entornos de Python en Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Selección de un intérprete para un proyecto](selecting-a-python-environment-for-a-project.md)
 - [Rutas de acceso de búsqueda](search-paths.md)
 - [Referencia de ventana Entornos de Python](python-environments-window-tab-reference.md)

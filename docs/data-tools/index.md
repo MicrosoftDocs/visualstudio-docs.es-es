@@ -1,18 +1,21 @@
 ---
+title: Desarrollo de soluciones de datos
+description: Obtenga información sobre distintas herramientas para el desarrollo de soluciones de datos en Visual Studio, entre las que se incluyen herramientas de .NET Framework, SQL Server Data Tools, Azure Data Lake, Azure HDInsight y Azure Stream Analytics.
 layout: LandingPage
+ms.date: 01/01/2018
 author: gewarren
 ms.author: gewarren
-title: Uso de herramientas de datos en Visual Studio para desarrollar soluciones de datos
-description: Obtenga información sobre herramientas para las soluciones de datos en Visual Studio.
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: f8dbea90a21da05b67fdc730a6965d3f295807ca
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 866737bc91615663df59856b8d06b457ad47c15f
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159690"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Uso de herramientas de datos en Visual Studio para desarrollar soluciones de datos
 
@@ -26,7 +29,7 @@ Obtenga información sobre cómo usar las herramientas de datos en Visual Studio
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../data-tools/media/logo_VS.svg" alt="" />
+                            <img src="../data-tools/media/logo_VS.svg" alt="Use Visual Studio and .NET framework tooling to develop your data applications" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -44,7 +47,7 @@ Obtenga información sobre cómo usar las herramientas de datos en Visual Studio
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../data-tools/media/logo_azure-sql-database.svg" alt="" />
+                            <img src="../data-tools/media/logo_azure-sql-database.svg" alt="Use SQL Server Data Tools to design, deploy, and maintain your databases" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -62,7 +65,7 @@ Obtenga información sobre cómo usar las herramientas de datos en Visual Studio
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../data-tools/media/logo_azure-datalake.svg" alt="" />
+                            <img src="../data-tools/media/logo_azure-datalake.svg" alt="Use Azure Data Lake to develop Big Data applications with U-SQL and .NET" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -80,7 +83,7 @@ Obtenga información sobre cómo usar las herramientas de datos en Visual Studio
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../data-tools/media/logo_azure-hd-insight.svg" alt="" />
+                            <img src="../data-tools/media/logo_azure-hd-insight.svg" alt="Run Hive queries on Azure HDInsight with Hadoop" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -98,7 +101,7 @@ Obtenga información sobre cómo usar las herramientas de datos en Visual Studio
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../data-tools/media/logo_azure-stream-analytics.svg" alt="" />
+                            <img src="../data-tools/media/logo_azure-stream-analytics.svg" alt="Use Azure Streaming Analytics to develop near-real time, big data solutions" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -113,7 +116,6 @@ Obtenga información sobre cómo usar las herramientas de datos en Visual Studio
 
 ---
 
-<hr>
 <h2>Referencia</h2>
 
 <ul class="panelContent cardsW">
@@ -123,7 +125,7 @@ Obtenga información sobre cómo usar las herramientas de datos en Visual Studio
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><Accessing data in Visual Studio></p>
+                        <p><Access data in Visual Studio></p>
                     </div>
                 </div>
             </div>

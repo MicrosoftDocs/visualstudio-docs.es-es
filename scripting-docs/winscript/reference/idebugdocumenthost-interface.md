@@ -1,16 +1,16 @@
 ---
 title: IDebugDocumentHost (interfaz) | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentHost interface
 ms.assetid: 2fed4220-b6a2-47c6-bf28-daad7dd5c42d
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726995"
 ---
 # <a name="idebugdocumenthost-interface"></a>IDebugDocumentHost (Interfaz)
 Expone la funcionalidad específica del host, como el color de sintaxis, al depurador. El `IDebugDocumentHelper::SetDebugDocumentHost` método toma esta interfaz como un argumento.  

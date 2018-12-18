@@ -1,11 +1,9 @@
 ---
-title: "Fragmentos de código | Microsoft Docs"
-ms.custom: 
+title: Fragmentos de código
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.ExpansionManagerImport
 - vs.codesnippetmanager
@@ -14,22 +12,26 @@ helpviewer_keywords:
 - code snippets
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 514408ff2dbbde12d243a1458c380a2e17b516cc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 8ed3f2f8e588aa908827516fee44c1a38ad6a008
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348492"
 ---
 # <a name="code-snippets"></a>Fragmentos de código
 
 Los fragmentos de código son pequeños bloques de código reutilizable que se pueden insertar en un archivo de código mediante un comando de menú contextual o una combinación de teclas de acceso rápido. Normalmente contienen bloques de código usados con mucha frecuencia, como bloques `try-finally` o `if-else`, pero pueden usarse también para insertar clases o métodos completos.
+
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Fragmentos de código (Visual Studio para Mac)](/visualstudio/mac/snippets).
 
 Hay fragmentos de código disponibles para una gran variedad de lenguajes, entre otros, C#, C++, Visual Basic, XML y T-SQL. Para ver todos los fragmentos de código instalados disponibles de un lenguaje, abra el **Administrador de fragmentos de código** desde el menú **Herramientas** en Visual Studio y elija el lenguaje en la parte superior del menú desplegable.
 
@@ -37,9 +39,9 @@ Hay fragmentos de código disponibles para una gran variedad de lenguajes, entre
 
 Estas son las formas en general de tener acceso a los fragmentos de código:
 
-- En la barra de menús, elija **Edición** > **IntelliSense** > **Insertar fragmento de código...**
+- En la barra de menús, elija **Edición** > **IntelliSense** > **Insertar fragmento de código**.
 
-- En el menú contextual del editor de código, elija **Fragmento de código** > **Insertar fragmento de código...**
+- En el menú contextual del editor de código, elija **Fragmento de código** > **Insertar fragmento de código**.
 
 - En el teclado, presione **Ctrl**+**K**+**X**.
 
@@ -75,7 +77,7 @@ if (true)
 
 Los fragmentos de código pueden contener parámetros de reemplazo, que son marcadores de posición que debe reemplazar para incluir el código exacto que está escribiendo. En el ejemplo anterior `true` es un parámetro de reemplazo, que podría reemplazar por la condición adecuada. El reemplazo que haga se repetirá por cada instancia del mismo parámetro de reemplazo del fragmento de código.
 
-Por ejemplo, en Visual Basic hay fragmento de código que inserta una propiedad. Para insertar el fragmento de código, elija **Fragmento de código...** > **Insertar fragmento de código** en el menú contextual en un archivo de código de Visual Basic. Luego, elija **Patrones de código** > **Propiedades, procedimientos, eventos** > **Definir una propiedad**.
+Por ejemplo, en Visual Basic hay un fragmento de código que inserta una propiedad. Para insertar el fragmento de código, elija **Fragmento de código** > **Insertar fragmento de código** en el menú contextual en un archivo de código de Visual Basic. Luego, elija **Patrones de código** > **Propiedades, procedimientos, eventos** > **Definir una propiedad**.
 
 ![Opción Definir una propiedad del menú Fragmento de código](media/code-snippets-vb-property.png)
 
@@ -97,10 +99,11 @@ Si cambia `newPropertyValue` por `m_property`, se cambian todas las instancias d
 
 ## <a name="see-also"></a>Vea también
 
-[Tutorial: Crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md)  
-[Cómo: Distribuir fragmentos de código](../ide/how-to-distribute-code-snippets.md)  
-[Procedimientos recomendados para usar fragmentos de código](../ide/best-practices-for-using-code-snippets.md)  
-[Solucionar problemas con fragmentos de código](../ide/troubleshooting-snippets.md)  
-[Fragmentos de código de C#](../ide/visual-csharp-code-snippets.md)  
-[Fragmentos de código de Visual C++](../ide/visual-cpp-code-snippets.md)  
-[Referencia de esquemas de fragmentos de código](../ide/code-snippets-schema-reference.md)
+- [Tutorial: Crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md)
+- [Cómo: Distribuir fragmentos de código](../ide/how-to-distribute-code-snippets.md)
+- [Procedimientos recomendados para usar fragmentos de código](../ide/best-practices-for-using-code-snippets.md)
+- [Solucionar problemas con fragmentos de código](../ide/troubleshooting-snippets.md)
+- [Fragmentos de código de C#](../ide/visual-csharp-code-snippets.md)
+- [Fragmentos de código de Visual C++](../ide/visual-cpp-code-snippets.md)
+- [Referencia de esquemas de fragmentos de código](../ide/code-snippets-schema-reference.md)
+- [Fragmentos de código (Visual Studio para Mac)](/visualstudio/mac/snippets)

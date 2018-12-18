@@ -13,17 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d79399ebea9fd5dedd645b148910d6a4ced47902
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ba2590c17a41d200f0a8dd3c38c7c9ae8c8a85cc
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572103"
 ---
-# <a name="visual-studio-profiler-api-reference-native"></a>Referencia a la API del generador de perfiles de Visual Studio (Nativa)
-Las API del generador de perfiles de Visual Studio permiten controlar mediante programación la cantidad de datos recopilados e insertar marcas de tiempo y de perfil durante la generación de perfiles. Para utilizar las API nativas, se incluye el archivo de encabezado VSPerf.h y se agrega VSPerf.lib al proyecto.  
+# <a name="visual-studio-profiler-api-reference-native"></a>Referencia de la API del generador de perfiles de Visual Studio (nativa)
+Las API del generador de perfiles de Visual Studio permiten controlar mediante programación la cantidad de datos recopilados e insertar marcas de tiempo y de perfil durante la generación de perfiles. Para usar las API nativas, se incluye el archivo de encabezado *VSPerf.h* y se agrega *VSPerf.lib* al proyecto.  
   
 > [!NOTE]
->  De forma predeterminada, VSPerf.h y VSPerf.lib se encuentran en una carpeta llamada PerfSDK. \<unidad>:por ejemplo, en el directorio \Program Files\Microsoft Visual Studio 14.0\Team Tools\Performance Tools\PerfSDK.  
+>  De forma predeterminada, *VSPerf.h* y *VSPerf.lib* se encuentran en una carpeta llamada *PerfSDK*. Por ejemplo, en el directorio *\<unidad> \Archivos de programa\Microsoft Visual Studio 14.0\Team Tools\Performance Tools\PerfSDK*.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [CommentMarkAtProfile](../profiling/commentmarkatprofile.md)  

@@ -1,19 +1,20 @@
 ---
-title: Uso de la configuración EditorConfig en Visual Studio | Microsoft Docs
-ms.custom: ''
-ms.date: 12/13/2017
+title: Uso de la configuración de EditorConfig en Visual Studio
+ms.date: 08/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editorconfig [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: fe1653df6fc1d71dc4497c6e7e0a9adae9fa0b44
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 244312646de83e935dfa84cde4a9b793eb01a76f
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349720"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Crear opciones de configuración del editor personalizadas y portátiles con EditorConfig
 
@@ -21,8 +22,10 @@ En Visual Studio 2017, puede agregar un archivo [EditorConfig](http://editorconf
 
 La configuración de EditorConfig es compatible con varios IDE y editores de código, incluido Visual Studio. Es un componente portátil que acompaña al código y se pueden aplicar estilos de codificación incluso fuera de Visual Studio.
 
+Cuando se agrega un archivo EditorConfig al proyecto en Visual Studio, el formato del código existente no cambia a menos que se dé formato al documento (**Edición** > **Avanzado** > **Dar formato al documento** o **Ctrl**+**K**, **Ctrl**+**D** en el perfil predeterminado). Pero a las nuevas líneas de código se les aplicará formato según la configuración de EditorConfig. Puede definir qué configuración de EditorConfig quiere que se aplique con **Dar formato al documento** en la página de opciones [**Formato**](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+
 > [!NOTE]
-> Cuando se agrega un archivo EditorConfig al proyecto en Visual Studio, el formato del código existente no cambia a menos que se dé formato al documento (**Editar** > **Opciones avanzadas**  >  **Dar formato al documento** o **Ctrl**+**K**, **Ctrl**+**D**). Pero a las nuevas líneas de código se les aplicará formato según la configuración de EditorConfig.
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [EditorConfig en Visual Studio para Mac](/visualstudio/mac/editorconfig).
 
 ## <a name="coding-consistency"></a>Coherencia del código
 
@@ -31,6 +34,9 @@ Las opciones de configuración de los archivos EditorConfig le permiten mantener
 Las convenciones de codificación que usa en sus proyectos personales pueden diferir de las que usa en los proyectos del equipo. Por ejemplo, puede preferir que, cuando codifique, al aplicar sangría se agregue un carácter de tabulación. En cambio, su equipo puede preferir que la aplicación de sangría agregue cuatro caracteres de espacio en lugar de un carácter de tabulación. Los archivos EditorConfig resuelven este problema permitiéndole que tenga una configuración para cada escenario.
 
 Como las opciones de configuración se incluyen en un archivo del código base, se trasladan con este. Siempre que abra el archivo de código en un editor compatible con EditorConfig, la configuración del editor de texto se implementará. Para obtener más información sobre los archivos EditorConfig, vea el sitio web [EditorConfig.org](http://editorconfig.org/).
+
+> [!NOTE]
+> Las convenciones que se establecen en un archivo EditorConfig actualmente no se pueden aplicar en una canalización de CI/CD como advertencias o errores de compilación. Las desviaciones de estilo solo aparecen en el editor de Visual Studio y en la **lista de errores**.
 
 ## <a name="supported-settings"></a>Configuración admitida
 
@@ -57,7 +63,7 @@ Si quita un archivo EditorConfig del proyecto o código base, debe cerrar y volv
 
 1. Abra un proyecto o una solución en Visual Studio. Seleccione el nodo de proyecto o solución, dependiendo de si la configuración de *.editorconfig* debería aplicarse a todos los proyectos de la solución o solamente a uno. También puede seleccionar una carpeta del proyecto o de la solución donde agregar el archivo *.editorconfig*.
 
-1. En la barra de menús, seleccione **Proyecto** > **Agregar nuevo elemento...** o pulse **Ctrl**+**Mayús**+**A**.
+1. En la barra de menús, seleccione **Proyecto** > **Agregar nuevo elemento** o presione **Ctrl**+**Mayús**+**A**.
 
    Se abrirá el cuadro de diálogo **Agregar nuevo elemento**.
 
@@ -80,9 +86,15 @@ Si quita un archivo EditorConfig del proyecto o código base, debe cerrar y volv
    csharp_new_line_before_open_brace = methods
    ```
 
-Como alternativa, puede instalar la [extensión de servicio de lenguaje de EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig). Después de instalar la extensión, seleccione **Agregar** > **Archivo .editorconfig** en el menú contextual o de botón derecho del nodo de solución, nodo de proyecto o cualquier carpeta del Explorador de soluciones.
+### <a name="other-ways-to-add-an-editorconfig-file"></a>Otras maneras de agregar un archivo EditorConfig
 
-![Agregar un archivo .editorconfig con extensión](media/editorconfig-extension-add.png)
+Hay un par de formas más de agregar un archivo EditorConfig a su proyecto:
+
+- Instale la [extensión de servicio de lenguaje EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) para agregar más fácilmente un archivo vacío *.editorconfig* al proyecto. Después de instalar la extensión, simplemente seleccione **Agregar** > **Archivo .editorconfig** en el menú contextual o de botón derecho del nodo de solución, nodo de proyecto o cualquier carpeta del **Explorador de soluciones**. Esta extensión también mejora la experiencia de edición para el archivo *.editorconfig*.
+
+   ![Agregar un archivo .editorconfig con extensión](media/editorconfig-extension-add.png)
+
+- Pruebe la extensión de [IntelliCode](/visualstudio/intellicode/intellicode-visual-studio). Esta extensión experimental deduce los estilos de código a partir del código existente y, a continuación, crea un valor *.editorconfig* no vacío con sus preferencias de estilo de código ya definidas.
 
 ## <a name="override-editorconfig-settings"></a>Invalidar la configuración de EditorConfig
 
@@ -158,8 +170,9 @@ Para controlar el ámbito de las convenciones de EditorConfig, establezca la pro
 
 ## <a name="see-also"></a>Vea también
 
-[Convenciones de estilo de código de .NET](../ide/editorconfig-code-style-settings-reference.md)  
-[Convenciones de nomenclatura .NET](../ide/editorconfig-naming-conventions.md)  
-[Compatibilidad de EditorConfig con un servicio de lenguaje](../extensibility/supporting-editorconfig.md)  
-[EditorConfig.org](http://editorconfig.org/)  
-[Escribir código en el editor](writing-code-in-the-code-and-text-editor.md)
+- [Convenciones de estilo de código de .NET](../ide/editorconfig-code-style-settings-reference.md)
+- [Convenciones de nomenclatura .NET](../ide/editorconfig-naming-conventions.md)
+- [Compatibilidad de EditorConfig con un servicio de lenguaje](../extensibility/supporting-editorconfig.md)
+- [EditorConfig.org](http://editorconfig.org/)
+- [Características del editor de código](writing-code-in-the-code-and-text-editor.md)
+- [EditorConfig (Visual Studio para Mac)](/visualstudio/mac/editorconfig)

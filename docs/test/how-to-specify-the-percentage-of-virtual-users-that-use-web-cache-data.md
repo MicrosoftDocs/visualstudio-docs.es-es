@@ -1,5 +1,5 @@
 ---
-title: Especificar el porcentaje de usuarios virtuales que usan datos de caché web para pruebas de carga en Visual Studio | Microsoft Docs
+title: Especificación del porcentaje de usuarios virtuales que usan datos de caché web para pruebas de carga en Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,18 +8,22 @@ ms.assetid: f66d5d43-4121-4487-b27f-d0a0baaf7601
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 76d611af76877a9638ed2815a7d8dc5f77e45c8c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1178cd08bf8d12b4fba61e858ca5631d103292c2
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895579"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Cómo: Especificar el porcentaje de usuarios virtuales que usan datos de caché web
 
-Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades de los escenarios de modo que satisfagan las necesidades y los objetivos de la prueba. Para obtener una lista completa de las propiedades de los escenarios de pruebas de carga y sus descripciones, vea [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md).
+Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades de los escenarios de modo que satisfagan las necesidades y los objetivos de la prueba. Para obtener una lista completa de las propiedades de los escenarios de pruebas de carga y sus descripciones, consulte [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md).
 
-La propiedad **Porcentaje de nuevos usuarios** se establece en la ventana Propiedades. Para modificar las propiedades de escenario de prueba de carga se usa el Editor de prueba de carga.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+La propiedad **Porcentaje de nuevos usuarios** se establece en la ventana **Propiedades**. Para modificar las propiedades del escenario de prueba de carga se usa el **Editor de pruebas de carga**.
 
 La propiedad **Porcentaje de nuevos usuarios** afecta a la manera en la que la prueba de carga simula el almacenamiento en caché que debería realizar un explorador web. De forma predeterminada, la propiedad **Porcentaje de nuevos usuarios** está establecida en 0 %. Si el valor de la propiedad **Porcentaje de nuevos usuarios** se establece en 100 %, cada ejecución de pruebas de rendimiento web en una prueba de carga se trata como si fuese la primera vez que el usuario visita el sitio web y, por lo tanto, no tiene contenido alguno del sitio web en la memoria caché del explorador de visitas previas. Por tanto, se descargan todas las solicitudes de la prueba web, incluidas todas las solicitudes dependientes, como las imágenes.
 
@@ -28,25 +32,25 @@ La propiedad **Porcentaje de nuevos usuarios** afecta a la manera en la que la p
 
 Si realiza una prueba de carga de un sitio web que cuenta con muchos usuarios de retorno, que probablemente tengan imágenes y otro tipo de contenido que se almacena localmente en la memoria caché, un valor de 100 % para la propiedad **Porcentaje de nuevos usuarios** genera más solicitudes de descarga que las que habría si se tratase del uso real. En este caso, debería calcular el porcentaje de visitas al sitio web de los usuarios que lo hacen por primera vez y establecer la propiedad **Porcentaje de nuevos usuarios** en consecuencia.
 
-## <a name="to-specify-the-agents-to-use-for-a-scenario"></a>Para especificar los agentes que se van a usar en un escenario
+## <a name="to-specify-the-percentage-of-new-users-for-a-scenario"></a>Para especificar el porcentaje de nuevos usuarios para un escenario
 
-1.  Abra una prueba de carga.
+1. Abra una prueba de carga.
 
      Aparece el **Editor de pruebas de carga**. Se mostrará el árbol de la prueba de carga.
 
-2.  En la carpeta **Escenarios** del árbol de la prueba de carga, elija el nodo del escenario para el que quiere especificar los agentes que se van a usar.
+2. En la carpeta **Escenarios** de árboles de la prueba de carga, elija el nodo de escenario cuyo valor de porcentaje de nuevos usuarios quiere cambiar.
 
-3.  En el menú **Ver**, seleccione la ventana **Propiedades**.
+3. En el menú **Ver**, seleccione la ventana **Propiedades**.
 
-     Las categorías y propiedades del escenario se muestran en la ventana Propiedades.
+     Las categorías y propiedades del escenario se muestran en la ventana **Propiedades**.
 
-4.  Establezca el valor de la propiedad **Porcentaje de nuevos usuarios** al escribir un número para el porcentaje de nuevos usuarios.
+4. Establezca el valor de la propiedad **Porcentaje de nuevos usuarios** escribiendo un número para el porcentaje de nuevos usuarios.
 
-5.  Cuando haya terminado de cambiar la propiedad, elija **Guardar** en el menú **Archivo**. Luego, puede ejecutar la prueba de carga con el nuevo valor de **Porcentaje de nuevos usuarios**.
+5. Cuando haya terminado de cambiar la propiedad, elija **Guardar** en el menú **Archivo**. Luego, puede ejecutar la prueba de carga con el nuevo valor de **Porcentaje de nuevos usuarios**.
 
 ## <a name="see-also"></a>Vea también
 
-- [Edición de escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
+- [Modificar escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
 - [Tutorial: Crear y ejecutar una prueba de carga](../test/walkthrough-create-and-run-a-load-test.md)
 - [Controladores y agentes de prueba](configure-test-agents-and-controllers-for-load-tests.md)
 - [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md)

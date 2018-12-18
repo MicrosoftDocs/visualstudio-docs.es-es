@@ -12,18 +12,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b807076e56037344a360fb93f89da46eba1221a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ae610539ded12c626fb69bffcc973d0424ca2f08
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669574"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 El método `SuspendProfile` incrementa el contador de suspensiones y reanudaciones para el nivel de generación de perfiles especificado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp  
 PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(  
                        PROFILE_CONTROL_LEVEL Level,   
                        unsigned int dwId);  
@@ -34,7 +35,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
   
  Indica el nivel de perfil en el que se puede aplicar la recopilación de datos de rendimiento. Los enumeradores **PROFILE_CONTROL_LEVEL** siguientes se pueden usar para indicar uno de tres niveles en los que se puede aplicar la recopilación de datos de rendimiento:  
   
-|Enumerador|Description|  
+|Enumerador|Descripción|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|La configuración de nivel global afecta a todos los procesos y subprocesos en la generación de perfiles.|  
 |PROFILE_PROCESSLEVEL|La configuración de nivel de proceso afecta a todos los subprocesos que forman parte del proceso especificado.|  
@@ -47,7 +48,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
 ## <a name="property-valuereturn-value"></a>Valor de propiedad y valor devuelto  
  La función indica si la operación es correcta o errónea mediante la enumeración **PROFILE_COMMAND_STATUS**. El valor devuelto puede ser cualquiera de los siguientes:  
   
-|Enumerador|Description|  
+|Enumerador|Descripción|  
 |----------------|-----------------|  
 |PROFILE_ERROR_ID_NOEXIST|El id. del elemento de generación de perfiles no existe.|  
 |PROFILE_ERROR_LEVEL_NOEXIST|El nivel de generación de perfiles especificado no existe.|  
@@ -63,17 +64,17 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
  Cuando el estado de inicios y paradas, y el estado de suspensión y reanudación son los dos ON, el estado de generación de perfiles para el nivel es ON. Para que se pueda generar el perfil de un subproceso, los estados de nivel global, de proceso y de subproceso para el subproceso deben ser todos ON.  
   
 ## <a name="net-framework-equivalent"></a>Equivalente de .NET Framework  
- Microsoft.VisualStudio.Profiler.dll  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Información de la función  
- Encabezado: declarado en VSPerf.h  
+ Encabezado: declarado en *VSPerf.h*  
   
- Biblioteca de importación: VSPerf.lib  
+ Biblioteca de importación: *VSPerf.lib*  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se muestra el método SuspendProfile. En este ejemplo se da por supuesto que se ha realizado una llamada anterior a StartProfile para el proceso o subproceso identificado por [PROFILE_CURRENTID](../profiling/profile-currentid.md).  
   
-```  
+```cpp  
 void ExerciseSuspendProfile()  
 {  
     // The initial value of the Suspend/Resume counter is 0.  
@@ -106,4 +107,4 @@ void ExerciseSuspendProfile()
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Referencia a la API del generador de perfiles de Visual Studio (nativa)](../profiling/visual-studio-profiler-api-reference-native.md)
+ [Referencia de la API del generador de perfiles de Visual Studio (nativa)](../profiling/visual-studio-profiler-api-reference-native.md)

@@ -1,22 +1,25 @@
 ---
-title: Diseñadores de actividad de flujo de control | Documentos de Microsoft
+title: Diseñador de flujo de trabajo - diseñadores de actividad de flujo de Control
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b464f141dcda624c293a5abd5065a3263738932
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7e525d2529ce47059025e76dbefaeec1eb15ef81
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758399"
 ---
 # <a name="control-flow-activity-designers"></a>Diseñadores de actividades de flujos de control
 
-Diseñador de flujo de trabajo de Windows incluye una serie de actividades proporcionadas por el sistema que puede utilizar cuando cree flujos de trabajo. En esta sección se incluyen las actividades proporcionadas por el sistema que se utilizan para controlar el flujo dentro de un flujo de trabajo. Los siguientes temas describen estas actividades y ofrecen orientación sobre cómo utilizarlas.
+Diseñador de flujo de trabajo incluye una serie de actividades proporcionadas por el sistema que puede utilizar cuando cree flujos de trabajo. En esta sección se incluyen las actividades proporcionadas por el sistema que se utilizan para controlar el flujo dentro de un flujo de trabajo. Los siguientes temas describen estas actividades y ofrecen orientación sobre cómo utilizarlas.
 
 ## <a name="reference"></a>Referencia
 
@@ -44,7 +47,7 @@ Diseñador de flujo de trabajo de Windows incluye una serie de actividades propo
 
 ## <a name="related-sections"></a>Secciones relacionadas
 
-Para otros tipos de diseñadores de actividades, vea los siguientes temas.
+Para otros tipos de diseñadores de actividad, vea los temas siguientes:
 
  [Usar los diseñadores de actividad](../workflow-designer/using-the-activity-designers.md)
 

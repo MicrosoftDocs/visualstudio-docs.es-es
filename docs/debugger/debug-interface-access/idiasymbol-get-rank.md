@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_rank | Documentos de Microsoft'
+title: Get_rank | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b78ba89b56c6d8c473060e39d402ee46e4ae15f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fc12e9251bd452edc3fdede1a5f7414462162301
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847700"
 ---
 # <a name="idiasymbolgetrank"></a>IDiaSymbol::get_rank
 Recupera el rango (número de dimensiones) de una matriz multidimensional de FORTRAN.  
@@ -36,13 +37,13 @@ HRESULT get_rank (
  [out] Devuelve el número de dimensiones de una matriz multidimensional de FORTRAN.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
 ## <a name="remarks"></a>Comentarios  
- Rango hace referencia al número de dimensiones de una matriz donde se declara la matriz como `myarray[1,2,3]`. Este ejemplo tiene un rango de dimensiones 3 y 3. Rango no se aplica a C++ que utiliza el concepto de una matriz de matrices para cada dimensión (es decir, `myarray[1][2][3]`).  
+ Rango hace referencia al número de dimensiones de una matriz donde se declara la matriz como `myarray[1,2,3]`. En este ejemplo tiene un rango de 3 y 3 dimensiones. Rango no es aplicable a C++ que usa el concepto de una matriz de matrices para cada dimensión (es decir, `myarray[1][2][3]`).  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

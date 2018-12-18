@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_sealed | Documentos de Microsoft'
+title: Get_sealed | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6ec278fd3ed2b3fef157c30300c16ccaaa8087b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e77e379d3f3635cf6976765450ba32ea6de81ef2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841811"
 ---
 # <a name="idiasymbolgetsealed"></a>IDiaSymbol::get_sealed
 Recupera una marca que especifica si la clase o método está sellado.  
@@ -33,23 +34,23 @@ HRESULT get_sealed(
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve `TRUE` si el método o clase está sellada; en caso contrario, devuelve `FALSE`.  
+ [out] Devuelve `TRUE` si la clase o método está sellado; en caso contrario, devuelve `FALSE`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
 ## <a name="remarks"></a>Comentarios  
- Una clase sellada no se puede utilizar como clase base. Un método sellado no se puede omitir.  
+ Una clase sellada no se puede utilizar como clase base. Un método sellado no puede ser omitido.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: Dia2.h  
   
  Biblioteca: diaguids.lib  
   
- DLL: msdia100.dll  
+ Archivo DLL: msdia100.dll  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

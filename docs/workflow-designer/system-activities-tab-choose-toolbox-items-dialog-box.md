@@ -1,7 +1,9 @@
 ---
-title: System.Activities (pestaña), elija el cuadro de diálogo de elementos de cuadro de herramientas | Documentos de Microsoft
+title: Diseñador de flujo de trabajo - System.Activities (pestaña), elija el cuadro de diálogo de elementos de cuadro de herramientas
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - VS.CHOOSEITEMS.SYSTEM.ACTIVITIES_COMPONENTS
 - VS.CHOOSEITEMS.SYSTEM.ACTIVITIES COMPONENTS
@@ -11,14 +13,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2da5aafcc684c9af71aebc094d817c64f579d0ea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 82303d173a3d5a066919f8597e4636d63a005f02
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31976300"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>System.Activities (pestaña), Elegir elementos del cuadro de herramientas (cuadro de diálogo)
-Esta pestaña de la **elegir elementos del cuadro de herramientas** cuadro de diálogo muestra una lista de [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] actividades, plantillas y elementos disponibles. Para mostrar esta lista, seleccione **elegir elementos del cuadro de herramientas** desde el **herramientas** menú o haciendo clic en el **cuadro de herramientas** y seleccionando **elegir elementos**para mostrar la **elegir elementos del cuadro de herramientas** cuadro de diálogo y, a continuación, seleccione su **System.Activities** ficha. De fábrica, la lista contiene actividades de flujo de trabajo de ensamblados System.Activities, System.ServiceModel.Activities y System.Activities.Core.Presentation; Sin embargo, solo proporcionados por el sistema actividades que se muestran y las actividades agregadas a través de otros ensamblados que aparecen en la **cuadro de herramientas** están activadas de forma predeterminada. Se agregó recientemente actividades se comprueban automáticamente y aparecen en la **cuadro de herramientas** al hacer clic en **Aceptar** en el cuadro de diálogo. Además, estos elementos aparecen en la **cuadro de herramientas** en una nueva categoría que corresponde al espacio de nombres donde reside la actividad/elemento/plantilla.
+
+Esta pestaña de la **elegir elementos del cuadro de herramientas** cuadro de diálogo muestra una lista de actividades de Windows Workflow Foundation (WF), plantillas y elementos disponibles para usted. Para mostrar esta lista, seleccione **elegir elementos del cuadro de herramientas** desde el **herramientas** menú o haciendo clic en el **cuadro de herramientas** y seleccionando **elegir elementos**para mostrar la **elegir elementos del cuadro de herramientas** cuadro de diálogo y, a continuación, seleccione su **System.Activities** ficha. De fábrica, la lista contiene actividades de flujo de trabajo de ensamblados System.Activities, System.ServiceModel.Activities y System.Activities.Core.Presentation; Sin embargo, solo proporcionados por el sistema actividades que se muestran y las actividades agregadas a través de otros ensamblados que aparecen en la **cuadro de herramientas** están activadas de forma predeterminada. Se agregó recientemente actividades se comprueban automáticamente y aparecen en la **cuadro de herramientas** al hacer clic en **Aceptar** en el cuadro de diálogo. Además, estos elementos aparecen en la **cuadro de herramientas** en una nueva categoría que corresponde al espacio de nombres donde reside la actividad/elemento/plantilla.
 
 > [!WARNING]
 > Si intenta agregar un ensamblado que no contenga actividades de flujo de trabajo, aparecerá un diálogo de error que indica que el ensamblado no contiene ninguna actividad.
@@ -35,12 +39,20 @@ Esta pestaña de la **elegir elementos del cuadro de herramientas** cuadro de di
 
  Las columnas en este cuadro de diálogo contienen la siguiente información:
 
- Los nombres de las actividades de flujo de trabajo de listas de nombres registrados actualmente en el equipo local.
+ Name
 
- Namespace muestra la jerarquía del espacio de nombres de biblioteca de clases de .NET Framework que define la estructura de la actividad.
+ Ofrece una lista de los nombres de las actividades de flujo de trabajo que están registradas en esos momentos en el equipo local.
 
- Nombre del ensamblado muestra el nombre y la versión del ensamblado de .NET Framework que contiene la actividad.
+ Espacio de nombres
 
- Directorio muestra la ubicación del ensamblado de .NET Framework que contiene las actividades de flujo de trabajo. La ubicación predeterminada de todos los ensamblados es la caché global de ensamblados.
+ Muestra la jerarquía del espacio de nombres de la biblioteca de clases de .NET Framework que define la estructura de la actividad.
+
+ Nombre del ensamblado
+
+ Muestra el nombre y versión del ensamblado de .NET Framework que contiene la actividad.
+
+ Directorio
+
+ Muestra la ubicación del ensamblado de .NET Framework que contiene las actividades de flujo de trabajo. La ubicación predeterminada de todos los ensamblados es la caché global de ensamblados.
 
  Para ordenar los componentes de la lista, seleccione cualquier encabezado de columna.

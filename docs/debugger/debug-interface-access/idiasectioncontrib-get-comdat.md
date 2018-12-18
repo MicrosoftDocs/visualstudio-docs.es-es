@@ -1,5 +1,5 @@
 ---
-title: 'Idiasectioncontrib:: Get_comdat | Documentos de Microsoft'
+title: Get_comdat | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 578314d0771d156fe66bdfbf661ffca98844207f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: cabd6b5736bd4f84916159a59bf43dc8442ae3b0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847766"
 ---
 # <a name="idiasectioncontribgetcomdat"></a>IDiaSectionContrib::get_comdat
 Recupera una marca que indica si la sección es un registro COMDAT.  
@@ -33,13 +34,13 @@ HRESULT get_comdat (
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve `TRUE` si la sección es un registro COMDAT; en caso contrario, devuelve `FALSE`.  
+ [out] Devuelve `TRUE` si la sección es un registro COMDAT; de lo contrario, devuelve `FALSE`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Un registro COMDAT es un formato de archivo de objeto común (COFF) que, funciones empaquetadas es visible para el vinculador.  
+ Un registro COMDAT es un formato de archivo de objeto común (COFF) que realiza funciones empaquetadas visibles para el vinculador.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

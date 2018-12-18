@@ -1,5 +1,5 @@
 ---
-title: Objeto VSCodeWindowManager | Documentos de Microsoft
+title: VSCodeWindowManager (objeto) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,20 +16,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc4f01240f5f969b91bb3f4cfe46f74a9abb643e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7617062caf233f0711ce2b97d6816af25023ad83
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586744"
 ---
-# <a name="vscodewindowmanager-object"></a>Objeto VSCodeWindowManager
-El servicio de lenguaje implementa el Administrador de ventanas de código y es responsable de administrar elementos de gráficos (por ejemplo, la barra de la lista desplegable). Para obtener más información, consulte [personalizar Windows de código mediante la API heredado](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).  
+# <a name="vscodewindowmanager-object"></a>VSCodeWindowManager (objeto)
+El servicio de lenguaje implementa el Administrador de ventanas de código y es responsable de administrar los elementos gráficos (por ejemplo, la barra desplegable). Para obtener más información, consulte [personalizar Windows de código mediante la API heredada](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).  
   
  En la tabla siguiente se muestra las interfaces en el `VSCodeWindowManager` objeto.  
   
 |Interfaz|Descripción|  
 |---------------|-----------------|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Permite opciones gráficas (como barras desplegables) se agrega o se quita de una ventana de código.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Permite que los elementos gráficos (por ejemplo, las barras desplegables) se agregan o se quitan de una ventana de código.|  
   
 ## <a name="see-also"></a>Vea también  
- [Personalización de ventanas de código mediante la API heredado](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)
+ [Personalización de ventanas de código mediante la API heredada](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)

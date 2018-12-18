@@ -1,27 +1,25 @@
 ---
-title: Creación de una instalación basada en red de Visual Studio | Microsoft Docs
-description: Describe cómo crear un punto de instalación de red para la implementación de Visual Studio dentro de una empresa
+title: Crear una instalación basada en red de Visual Studio
+description: Obtenga información sobre cómo crear un punto de instalación de red para la implementación de Visual Studio dentro de una empresa.
 ms.date: 10/17/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 4CABFD20-962E-482C-8A76-E4012052F701
-author: tglee
+author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c85d839c76d272a0a90a37fa16fc812596c3198e
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 670c9e10d25626b263ac2066d0f52b245386bd54
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821479"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Creación de una instalación de red de Visual Studio 2017
 
@@ -38,9 +36,9 @@ El archivo ejecutable o, para ser más específicos, un archivo de programa prev
 
 |Edición | Descargar|
 |-------------|-----------------------|
-|Visual Studio Enterprise | [**vs_enterprise.exe**](https://aka.ms/vs/15/release/vs_enterprise.exe) |
-|Visual Studio Professional | [**vs_professional.exe**](https://aka.ms/vs/15/release/vs_professional.exe) |
-|Comunidad de Visual Studio | [**vs_community.exe**](https://aka.ms/vs/15/release/vs_community.exe) |
+|Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
+|Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
+|Comunidad de Visual Studio | [**vs_community.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
 
 Otros programas previos admitidos incluyen [vs_buildtools.exe](https://aka.ms/vs/15/release/vs_buildtools.exe), [vs_feedbackclient.exe](https://aka.ms/vs/15/release/vs_feedbackclient.exe), [vs_teamexplorer.exe](https://aka.ms/vs/15/release/vs_teamexplorer.exe), [vs_testagent.exe](https://aka.ms/vs/15/release/vs_testagent.exe), [vs_testcontroller.exe](https://aka.ms/vs/15/release/vs_testcontroller.exe) y [vs_testprofessional.exe](https://aka.ms/vs/15/release/vs_testprofessional.exe).
 
@@ -50,7 +48,7 @@ Deberá disponer de conexión a Internet para poder completar este paso. Para cr
 
    > [!IMPORTANT]
    > Un diseño de Visual Studio 2017 completo requiere al menos 35 GB de espacio en disco y puede tardar algún tiempo en descargarse.  Consulte la sección [Customizing the network layout](#customizing-the-network-layout) (Personalización del diseño de red) para detalles sobre cómo crear un diseño únicamente con los componentes que desea instalar.
-
+   >
    > [!TIP]
    > Asegúrese de ejecutar el comando desde el directorio de descarga. Normalmente, es `C:\Users\<username>\Downloads` en un equipo que ejecuta Windows 10.
 
@@ -113,7 +111,6 @@ Si quiere actualizar un diseño existente en un diseño completo, use la opción
 
 ```vs_enterprise.exe --layout c:\VS2017Layout --all```
 
-
 ## <a name="deploying-from-a-network-installation"></a>Implementación de una instalación de red
 
 Los administradores pueden implementar Visual Studio en estaciones de trabajo cliente como parte de un script de instalación. O bien, los usuarios que tienen derechos de administrador pueden ejecutar la instalación directamente desde el recurso compartido para instalar Visual Studio en sus máquinas.
@@ -124,7 +121,7 @@ Los administradores pueden implementar Visual Studio en estaciones de trabajo cl
 > [!TIP]
 > Cuando se ejecuta como parte de un archivo por lotes, la opción `--wait` garantiza que el proceso `vs_enterprise.exe` espere hasta que la instalación haya finalizado antes de devolver un código de salida. Resulta muy útil si un administrador de empresa quiere realizar más acciones en una instalación completada (por ejemplo, para [aplicar una clave de producto a una instalación correcta](automatically-apply-product-keys-when-deploying-visual-studio.md)), pero debe esperar a que la instalación finalice para controlar el código de retorno desde esa instalación.  Si no usa `--wait`, el proceso `vs_enterprise.exe` se cierra antes de que la instalación se complete y devuelve un código de salida incorrecto que no representa el estado de la operación de instalación.
 
-Cuando realice la instalación desde un diseño, el contenido que está instalado se adquirirá del diseño. Pero si selecciona un componente que no está en el diseño, se obtendrá de Internet.  Si quiere evitar que la instalación de Visual Studio descargue cualquier contenido que no esté en su diseño, use la opción `--noWeb`.  Si se usa `--noWeb` y al diseño le falta cualquier contenido seleccionado que se va a instalar, se produce un error en la instalación.  
+Cuando realice la instalación desde un diseño, el contenido que está instalado se adquirirá del diseño. Pero si selecciona un componente que no está en el diseño, se obtendrá de Internet.  Si quiere evitar que la instalación de Visual Studio descargue cualquier contenido que no esté en su diseño, use la opción `--noWeb`.  Si se usa `--noWeb` y al diseño le falta cualquier contenido seleccionado que se va a instalar, se produce un error en la instalación.
 
 ### <a name="error-codes"></a>Códigos de error
 
@@ -143,7 +140,7 @@ A medida que estén disponibles actualizaciones de productos, puede que quiera [
 ## <a name="how-to-create-a-layout-for-a-previous-visual-studio-2017-release"></a>Creación de un diseño para una versión anterior de Visual Studio 2017
 
 > [!NOTE]
-> Los programas previos de Visual Studio 2017 que están disponibles en [VisualStudio.com](http://www.visualstudio.com) descargan e instalan la versión de Visual Studio 2017 más reciente disponible cada vez que se ejecutan. Si descarga hoy mismo un programa previo de Visual Studio y lo ejecuta durante seis meses a partir de ahora, se instala la versión de Visual Studio 2017 que está disponible en ese momento posterior. Si crea un diseño, al instalar Visual Studio desde ese diseño se instala la versión específica de Visual Studio que existe en el diseño. Aunque es posible que exista una versión más reciente en línea, obtiene la versión de Visual Studio que está en el diseño.
+> Los programas previos de Visual Studio 2017 que están disponibles en [visualstudio.microsoft.com](http://visualstudio.microsoft.com) descargan e instalan la versión de Visual Studio 2017 más reciente disponible cada vez que se ejecutan. Si descarga hoy mismo un programa previo de Visual Studio y lo ejecuta durante seis meses a partir de ahora, se instala la versión de Visual Studio 2017 que está disponible en ese momento posterior. Si crea un diseño, al instalar Visual Studio desde ese diseño se instala la versión específica de Visual Studio que existe en el diseño. Aunque es posible que exista una versión más reciente en línea, obtiene la versión de Visual Studio que está en el diseño.
 
 Si necesita crear un diseño para una versión anterior de Visual Studio 2017, puede ir a https://my.visualstudio.com para descargar versiones "no editables" de los programas previos de Visual Studio 2017.
 
@@ -151,18 +148,12 @@ Si necesita crear un diseño para una versión anterior de Visual Studio 2017, p
 
 Si experimenta un problema con la instalación sin conexión, queremos saberlo. La mejor manera para hacérnoslo saber es usar la herramienta [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Con esta herramienta puede enviarnos la telemetría y los registros que necesitamos para ayudarnos a diagnosticar y corregir el problema.
 
+También dispone de la opción del [**chat en directo**](https://visualstudio.microsoft.com/vs/support/#talktous) de soporte técnico para problemas relacionados con la instalación (disponible solo en inglés).
+
 Tenemos también otras opciones de soporte técnico disponibles. Para obtener un listado, vea nuestra página [Hable con nosotros](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
 
-## <a name="get-support"></a>Obtener soporte técnico
-En ocasiones, algo no sale según lo previsto. Si se produce un error en la instalación de Visual Studio, consulte la página [Troubleshooting Visual Studio 2017 installation and upgrade issues](troubleshooting-installation-issues.md) (Solucionar problemas de errores de instalación y actualización de Visual Studio 2017). Si ninguno de los pasos de solución de problemas ayuda, puede ponerse en contacto con nosotros por chat para obtener asistencia para la instalación (solo en inglés). Para más información, consulte la [página de soporte técnico de Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
-
-Aquí tiene algunas opciones de soporte técnico más:
-* Puede notificarnos problemas del producto a través de la herramienta [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) que aparece en el instalador y en el IDE de Visual Studio.
-* Puede compartir una sugerencia de producto con nosotros en [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Puede realizar el seguimiento de los problemas del producto en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/), y hacer preguntas y encontrar respuestas.
-* También puede ponerse en contacto con nosotros y otros desarrolladores de Visual Studio a través de nuestra [conversación de Visual Studio en la comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio).  (Esta opción requiere una cuenta de [GitHub](https://github.com/)).
-
 ## <a name="see-also"></a>Vea también
+
 * [Instalar Visual Studio](install-visual-studio.md)
 * [Guía del administrador de Visual Studio](visual-studio-administrator-guide.md)
 * [Usar parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

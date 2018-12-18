@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetEEService | Documentos de Microsoft
+title: IDebugBinder3::GetEEService | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56c97e9fc7e5505578533c9e7b958a73dc8d2380
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5b283ecf3a21f5a5b9246a628a959b4a271c884b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866667"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
 Este método devuelve un servicio solicitado.  
@@ -55,13 +56,13 @@ Int GetEEService(
  [in] `IID` del servicio que se va a obtener.  
   
  `ppService`  
- [out] Una interfaz para el servicio solicitado.  
+ [out] Interfaz para el servicio solicitado.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Pasar el `IID` para el [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) interfaz (`IID_IEEVisualizerServiceProvider`) para ver si el servicio de tipo visualizador está disponible. Si es así, puede obtener el evaluador de expresiones el [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) interfaz para admitir los visualizadores de tipo. Vea [Visualizing y ver datos](../../../extensibility/debugger/visualizing-and-viewing-data.md) para obtener más información.  
+ Pase el `IID` para el [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) interfaz (`IID_IEEVisualizerServiceProvider`) para ver si el servicio de tipo visualizador está disponible. Si es así, puede obtener el evaluador de expresiones el [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) interfaz para admitir los visualizadores de tipo. Consulte [visualización y ver datos](../../../extensibility/debugger/visualizing-and-viewing-data.md) para obtener más información.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   

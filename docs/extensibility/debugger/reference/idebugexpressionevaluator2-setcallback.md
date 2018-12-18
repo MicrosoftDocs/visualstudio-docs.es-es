@@ -14,14 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4b7c0333ff5328f4bdfd2411356074dc39d567c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 03565e5fb6012a236eb5191aa8c126d923d04739
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823234"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
-Permite que el evaluador de expresiones (EE) especificar la interfaz de devolución de llamada que el motor de depuración (Alemania) va a usar para leer los valores de métrica.  
+Permite que el evaluador de expresiones (EE) especificar la interfaz de devolución de llamada que el motor de depuración (DE) va a usar para leer los valores de métrica.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -42,13 +43,13 @@ int SetCallback (
  [in] Interfaz que se utiliza para la devolución de llamada de configuración.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método proporciona una interfaz para el Administrador de depuración de sesión que un evaluador de expresiones puede utilizar para leer la configuración de la métrica. Resulta útil para la depuración remota para leer las métricas en el [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] equipo.  
+ Este método proporciona una interfaz al administrador de sesión de depuración que un evaluador de expresiones puede usar para leer los valores de métrica. Resulta útil para la depuración remota para leer las métricas en el [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] equipo.  
   
 ## <a name="example"></a>Ejemplo  
- Los ejemplos siguientes se muestra cómo implementar este método para un **CEE** objeto que expone la [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) interfaz.  
+ Los ejemplos siguientes se muestra cómo implementar este método para un **CEE** objeto que expone el [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) interfaz.  
   
 ```cpp  
 HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)  

@@ -1,11 +1,11 @@
 ---
 title: IEnumDebugStackFrames::Next | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IEnumDebugStackFrames.Next
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IEnumDebugStackFrames::Next
 ms.assetid: ade3f5b0-8ff3-48a0-9433-270789e6d53e
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728465"
 ---
 # <a name="ienumdebugstackframesnext"></a>IEnumDebugStackFrames::Next
 Recupera un número especificado de segmentos de la secuencia de enumeración.  

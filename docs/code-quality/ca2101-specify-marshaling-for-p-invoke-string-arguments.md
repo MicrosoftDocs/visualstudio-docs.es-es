@@ -1,6 +1,7 @@
 ---
-title: 'CA2101: Especifique cálculo de referencias para argumentos de cadena P Invoke'
+title: 'CA2101: Especifique cálculo de referencias para argumentos de cadena P/Invoke'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,13 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8171c318d419edc49410c44d381e82f088014082
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 21b3ab30ff6672149fe05359f33ad932706a8a91
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867317"
 ---
 # <a name="ca2101-specify-marshaling-for-pinvoke-string-arguments"></a>CA2101: Especifique cálculo de referencias para argumentos de cadena P/Invoke
+
 |||
 |-|-|
 |TypeName|SpecifyMarshalingForPInvokeStringArguments|
@@ -33,17 +36,17 @@ ms.lasthandoff: 04/19/2018
  Una invocación de plataforma permite llamadores parcialmente confiables, miembro tiene un parámetro de cadena y no serializa explícitamente la cadena.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Al convertir de Unicode a ANSI, es posible que no todos los caracteres Unicode se pueden representar en una página de códigos ANSI específica. *Asignación con ajuste perfecto* intenta solucionar este problema sustituyendo un carácter por el carácter que no se puede representar. El uso de esta característica puede causar una vulnerabilidad de seguridad porque no se puede controlar el carácter que se ha seleccionado. Por ejemplo, el código malintencionado podría crear intencionadamente una cadena Unicode que contiene caracteres que no se encuentran en una página de códigos determinada, que se convierten en caracteres especiales del sistema como '..' o '/'. Tenga en cuenta también que las comprobaciones de seguridad para los caracteres especiales con frecuencia se producen antes de que la cadena se convierte a ANSI.
+ Al convertir de Unicode a ANSI, es posible que no todos los caracteres Unicode se pueden representar en una página de códigos ANSI específica. *Asignación con ajuste perfecto* intenta solucionar este problema sustituyendo un carácter el carácter que no se puede representar. El uso de esta característica puede provocar una posible vulnerabilidad de seguridad porque no se puede controlar el carácter que se elige. Por ejemplo, código malintencionado deliberadamente podría crear una cadena Unicode que contiene caracteres que no se encuentran en una página de códigos determinada, se convierten en caracteres especiales del sistema como '..' o '/'. Tenga en cuenta también que las comprobaciones de seguridad para los caracteres especiales con frecuencia se producen antes de la cadena se convierte a ANSI.
 
- Asignación con ajuste perfecto es el valor predeterminado para la conversión no administrada, WChar en MB. A menos que deshabilite explícitamente la asignación con ajuste perfecto, el código podría contener una vulnerabilidad de seguridad explotable debido a este problema.
+ Asignación con ajuste perfecto es el valor predeterminado para la conversión no administrado, WChar en MB libres. A menos que deshabilite explícitamente una asignación con ajuste perfecto, el código podría contener una vulnerabilidad de seguridad explotable debido a este problema.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, explícitamente calcular las referencias de tipos de datos de cadena.
+ Para corregir una infracción de esta regla, debe serializar explícitamente los tipos de datos de cadena.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra un método que infringe esta regla y, a continuación, se muestra cómo corregir la infracción.
+ El ejemplo siguiente muestra un método que infringe esta regla y, a continuación, se muestra cómo corregir la infracción.
 
  [!code-csharp[FxCop.Security.PinvokeAnsiUnicode#1](../code-quality/codesnippet/CSharp/ca2101-specify-marshaling-for-p-invoke-string-arguments_1.cs)]

@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: recuperar información de la cadena de consulta en una aplicación ClickOnce en línea | Documentos de Microsoft'
+title: 'Cómo: recuperar información de la cadena de consulta en una aplicación ClickOnce en línea | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,13 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47d20cf156cfdb6aaa18e37160dbf027bb3fb519
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9e8ad899d7cf62b2d874d5dc4971c8e7ad7f950a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829773"
 ---
-# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Cómo: Recuperar información de la cadena de consulta de una aplicación ClickOnce en línea
+# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Cómo: recuperar información de la cadena de consulta en una aplicación ClickOnce en línea
 La *cadena de consulta* es la parte de una dirección URL que empieza con un signo de interrogación de cierre (?) y que contiene información arbitraria con el formato *nombre=valor*. Supongamos que tiene una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] denominada `WindowsApp1` que hospeda en `servername`, y quiere pasar un valor para la variable `username` cuando se inicia la aplicación. La dirección URL podría tener el aspecto siguiente:  
   
  `http://servername/WindowsApp1.application?username=joeuser`  
@@ -40,7 +41,7 @@ La *cadena de consulta* es la parte de una dirección URL que empieza con un sig
 > [!NOTE]
 >  Antes de tomar la decisión de habilitar esta característica, consulte la sección "Seguridad" más adelante en este tema.  
   
- Para obtener información sobre cómo crear un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación mediante Mage.exe o MageUI.exe, vea [Tutorial: implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Para obtener información sobre cómo crear un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación mediante *Mage.exe* o *MageUI.exe*, consulte [Tutorial: implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 > [!NOTE]
 >  A partir de .NET Framework 3.5 SP1, es posible pasar argumentos de línea de comandos a una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sin conexión. Si quiere proporcionar argumentos a la aplicación, puede pasar parámetros al archivo de acceso directo con la extensión .APPREF-MS.  
@@ -56,17 +57,17 @@ La *cadena de consulta* es la parte de una dirección URL que empieza con un sig
   
 ### <a name="to-enable-query-string-passing-in-a-clickonce-application-with-mageuiexe"></a>Para habilitar que se pase una cadena de consulta en una aplicación ClickOnce con MageUI.exe  
   
-1.  Abra el símbolo del sistema de .NET y escriba:  
+1. Abra el símbolo del sistema de .NET y escriba:  
   
-    ```  
-    MageUI  
-    ```  
+   ```cmd  
+   MageUI  
+   ```  
   
-2.  En el menú **Archivo** , seleccione **Abrir**y abra el manifiesto de implementación para su aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , que es el archivo que acaba con la extensión `.application` .  
+2. En el menú **Archivo** , seleccione **Abrir**y abra el manifiesto de implementación para su aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , que es el archivo que acaba con la extensión `.application` .  
   
-3.  Seleccione el panel **Opciones de implementación** en la ventana de navegación de la izquierda y active la casilla **Permitir que se pasen los parámetros de la dirección URL a la aplicación** .  
+3. Seleccione el panel **Opciones de implementación** en la ventana de navegación de la izquierda y active la casilla **Permitir que se pasen los parámetros de la dirección URL a la aplicación** .  
   
-4.  En el menú **Archivo** , seleccione **Guardar**.  
+4. En el menú **Archivo** , seleccione **Guardar**.  
   
 > [!NOTE]
 >  También puede habilitar que se pase una cadena de consulta en [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Active la casilla **Permitir que se pasen los parámetros de la dirección URL a la aplicación** . Para ello, abra **Propiedades del proyecto**, seleccione la pestaña **Publicar** , haga clic en el botón **Opciones** y, después, seleccione **Manifiestos**.  
@@ -76,8 +77,8 @@ La *cadena de consulta* es la parte de una dirección URL que empieza con un sig
   
  Si la aplicación solo está en línea, siempre se activará a través de una dirección URL. Pero, incluso en este caso, la aplicación debe escribirse de modo que funcione correctamente si faltan parámetros de cadena de consulta o si están dañados.  
   
-## <a name="net-framework-security"></a>Seguridad de .NET Framework  
- Permita que se pasen parámetros de la dirección URL a la aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] únicamente si prevé limpiar los posibles caracteres malintencionados de la entrada antes de usarla. Las cadenas en las que haya incrustadas, por ejemplo, comillas, barras o caracteres de punto y coma pueden realizar operaciones de datos arbitrarios si se usan sin filtrar en una consulta SQL en una base de datos. Para obtener más información sobre la seguridad de las cadenas de consulta, consulte [Script Exploits Overview](http://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+## <a name="net-framework-security"></a>seguridad en .NET Framework  
+ Permita que se pasen parámetros de la dirección URL a la aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] únicamente si prevé limpiar los posibles caracteres malintencionados de la entrada antes de usarla. Las cadenas en las que haya incrustadas, por ejemplo, comillas, barras o caracteres de punto y coma pueden realizar operaciones de datos arbitrarios si se usan sin filtrar en una consulta SQL en una base de datos. Para obtener más información sobre la seguridad de la cadena de consulta, vea [Script exploits overview](https://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
 ## <a name="see-also"></a>Vea también  
  [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)

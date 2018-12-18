@@ -1,6 +1,7 @@
 ---
 title: 'CA1711: Los identificadores no deberían tener el sufijo incorrecto'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,13 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13160a8056c8fb4ec824d84c132fe87a7b565f27
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e3c9b23e555d0752ee33f2031fb883bdf50ff897
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549737"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Los identificadores no deberían tener el sufijo incorrecto
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectSuffix|
@@ -30,12 +33,14 @@ ms.lasthandoff: 04/19/2018
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Motivo
- Un identificador tiene un sufijo incorrecto.
+
+Un identificador tiene un sufijo incorrecto.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Por convención, los nombres de tipos que extienden determinados tipos base o que implementan algunas interfaces, o tipos derivados de estos tipos, deben terminar con unos sufijos reservados específicos. Otros nombres de tipo no deben utilizar estos sufijos reservados.
 
- En la tabla siguiente se muestran los sufijos reservados y los tipos base e interfaces a los que se asocian.
+Por convención, los nombres de tipos que extienden determinados tipos base o que implementan algunas interfaces, o tipos derivados de estos tipos, deben terminar con unos sufijos reservados específicos. Otros nombres de tipo no deben utilizar estos sufijos reservados.
+
+En la tabla siguiente se muestran los sufijos reservados y los tipos base e interfaces a los que se asocian.
 
 |Sufijo|Tipo base/Interfaz|
 |------------|--------------------------|
@@ -50,26 +55,31 @@ ms.lasthandoff: 04/19/2018
 |Pila|<xref:System.Collections.Stack?displayProperty=fullName>|
 |Secuencia|<xref:System.IO.Stream?displayProperty=fullName>|
 
- Además, los siguientes sufijos deben **no** usarse:
+Además, los siguientes sufijos deben **no** usarse:
 
--   delegado
+- `Delegate`
 
--   Enum
+- `Enum`
 
--   Impl: use 'Core' en su lugar.
+- `Impl` (Utilice `Core` en su lugar)
 
--   Ex o un sufijo similar para distinguir de una versión anterior del mismo tipo
+- `Ex` o un sufijo similar para distinguirla de una versión anterior del mismo tipo
 
- Las convenciones de nomenclatura proporcionan una apariencia común para las bibliotecas destinadas a Common Language Runtime. Esto reduce la curva de aprendizaje necesaria para las nuevas bibliotecas de software y aumenta la confianza del cliente respecto a que la biblioteca se haya desarrollado por parte de un especialista en desarrollo de código administrado.
+Las convenciones de nomenclatura proporcionan una apariencia común para las bibliotecas destinadas a Common Language Runtime. Esto reduce la curva de aprendizaje necesaria para las nuevas bibliotecas de software y aumenta la confianza del cliente respecto a que la biblioteca se haya desarrollado por parte de un especialista en desarrollo de código administrado.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Quite el sufijo del nombre de tipo.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- No suprima una advertencia de esta regla a menos que el sufijo no tenga un significado ambiguo en el dominio de aplicación.
+Quite el sufijo del nombre de tipo.
+
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+
+No suprima una advertencia de esta regla a menos que el sufijo no tenga un significado ambiguo en el dominio de aplicación.
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA1710: Los identificadores deberían tener el sufijo correcto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
+
+- [CA1710: Los identificadores deberían tener el sufijo correcto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
 
 ## <a name="see-also"></a>Vea también
- [Atributos](/dotnet/standard/design-guidelines/attributes) [control y provocar eventos](/dotnet/standard/events/index)
+
+- [Atributos](/dotnet/standard/design-guidelines/attributes)
+- [Controlar y provocar eventos](/dotnet/standard/events/index)

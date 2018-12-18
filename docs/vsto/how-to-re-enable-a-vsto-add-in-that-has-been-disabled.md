@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: volver a habilitar un complemento de VSTO que se ha deshabilitado | Documentos de Microsoft'
+title: 'Cómo: volver a habilitar un complemento de VSTO que se ha deshabilitado'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,21 +19,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25344d23e0c9f1d6d237d008b0f6b18372490d04
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c81e44b548f4d1139810780731741a489e624047
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675133"
 ---
-# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Cómo: Volver a habilitar un complemento de VSTO que se ha deshabilitado
+# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Cómo: volver a habilitar un complemento de VSTO que se ha deshabilitado
   Las aplicaciones de Microsoft Office pueden deshabilitar los complementos de VSTO que se comporten de forma inesperada. Si una aplicación no carga el complemento de VSTO cuando intenta depurarlo, la aplicación podría haber deshabilitado total o parcialmente el complemento de VSTO.  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
-## <a name="hard-disabled-vsto-add-ins"></a>Complementos de VSTO deshabilitados totalmente  
- La deshabilitación total puede producirse cuando un complemento de VSTO hace que la aplicación se cierre inesperadamente. También puede ocurrir en el equipo de desarrollo si detiene el depurador mientras se está ejecutando el controlador de eventos <xref:Microsoft.Office.Tools.AddIn.Startup> en el complemento de VSTO.  
+## <a name="hard-disabled-vsto-add-ins"></a>Complementos VSTO deshabilitados totalmente  
+ Deshabilitación total puede producirse cuando un complemento VSTO hace que la aplicación se cierre inesperadamente. También puede ocurrir en el equipo de desarrollo si detiene el depurador mientras se está ejecutando el controlador de eventos <xref:Microsoft.Office.Tools.AddIn.Startup> en el complemento de VSTO.  
   
-#### <a name="to-re-enable-a-vsto-add-in"></a>Para volver a habilitar un complemento de VSTO  
+### <a name="to-re-enable-a-vsto-add-in"></a>Para volver a habilitar un complemento de VSTO  
   
 1.  En la aplicación, haga clic en la pestaña **Archivo** .  
   
@@ -51,13 +52,13 @@ ms.lasthandoff: 04/16/2018
   
 7.  Haga clic en **Cerrar**.  
   
-## <a name="soft-disabled-vsto-add-ins"></a>Complementos de VSTO deshabilitados parcialmente  
+## <a name="soft-disabled-vsto-add-ins"></a>Complementos VSTO deshabilitados parcialmente  
  La deshabilitación parcial puede producirse cuando un complemento de VSTO genera un error que no hace que la aplicación se cierre inesperadamente. Por ejemplo, una aplicación podría deshabilitar parcialmente un complemento de VSTO si produce una excepción no controlada mientras se ejecuta el controlador de eventos <xref:Microsoft.Office.Tools.AddIn.Startup> .  
   
 > [!NOTE]  
 >  Al volver a habilitar un complemento de VSTO deshabilitado parcialmente, la aplicación intenta cargar el complemento de VSTO de inmediato. Si no se corrige el problema que hizo inicialmente que la aplicación deshabilitara parcialmente el complemento de VSTO, la aplicación volverá a deshabilitar parcialmente el complemento de VSTO.  
   
-#### <a name="to-re-enable-an-vsto-add-in"></a>Para volver a habilitar un complemento de VSTO  
+### <a name="to-re-enable-a-vsto-add-in"></a>Para volver a habilitar un complemento de VSTO  
   
 1.  En la aplicación, haga clic en la pestaña **Archivo** .  
   
@@ -78,6 +79,6 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>Vea también  
  [Compilar soluciones de Office](../vsto/building-office-solutions.md)   
  [Depurar proyectos de Office](../vsto/debugging-office-projects.md)   
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)  
+ [Programar complementos VSTO](../vsto/programming-vsto-add-ins.md)  
   
   

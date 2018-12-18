@@ -1,6 +1,7 @@
 ---
 title: 'CA1031: No capturar los tipos de excepción general'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -13,15 +14,21 @@ ms.assetid: cbc283ae-2a46-4ec0-940e-85aa189b118f
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fb251798d4e1908c31d19356e711215baa52929d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 16b43aa25ef4e2d81b2d6f72e7e1c2bfa3e8b6f7
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551641"
 ---
 # <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031: No capturar los tipos de excepción general
+
 |||
 |-|-|
 |TypeName|DoNotCatchGeneralExceptionTypes|
@@ -36,16 +43,16 @@ ms.lasthandoff: 04/19/2018
  No se deben capturar excepciones generales.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, detectar una excepción más específica o vuelva a producir la excepción general como la última instrucción en el `catch` bloque.
+ Para corregir una infracción de esta regla, detectar una excepción más específica o vuelva a producir la excepción general como la última instrucción del `catch` bloque.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- No suprima las advertencias de esta regla. Detectar tipos de excepción general puede ocultar problemas en tiempo de ejecución del usuario de la biblioteca y puede dificultar la depuración.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ No suprima las advertencias de esta regla. Detectar tipos de excepción general se pueden ocultar problemas en tiempo de ejecución de usuario de la biblioteca y puede dificultar la depuración.
 
 > [!NOTE]
->  A partir de la [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)], common language runtime (CLR) ya no entrega las excepciones de estado dañado que se producen en el sistema operativo y el código administrado, como las infracciones de acceso en [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)], para ser controlada por el código administrado. Si desea compilar una aplicación en el [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] o versiones posteriores y mantener el control de excepciones de estado dañado, puede aplicar el <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> atributo al método que controla la excepción de estado dañado.
+> A partir de la [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)], common language runtime (CLR) ya no entrega excepciones de estado dañado que se producen en el sistema operativo y el código administrado, como las infracciones de acceso en [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)], controlarse en código administrado. Si desea compilar una aplicación en el [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] o versiones posteriores y mantener el control de excepciones de estado dañado, puede aplicar el <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> al método que controla la excepción de estado dañado.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra un tipo que infringe esta regla y un tipo que implementa correctamente el `catch` bloque.
+ El ejemplo siguiente muestra un tipo que infringe esta regla y un tipo que implementa correctamente el `catch` bloque.
 
  [!code-cpp[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/CPP/ca1031-do-not-catch-general-exception-types_1.cpp)]
  [!code-vb[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/VisualBasic/ca1031-do-not-catch-general-exception-types_1.vb)]

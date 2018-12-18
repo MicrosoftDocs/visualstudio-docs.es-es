@@ -1,11 +1,11 @@
 ---
 title: IActiveScriptAuthor::GetScriptletTextAttributes | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScriptAuthor.GetScriptletTextAttributes
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScriptAuthor::GetScriptletTextAttributes
 ms.assetid: 082edfce-6c5b-4e5e-b942-31b423a4fa1d
-caps.latest.revision: 
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24645695"
 ---
 # <a name="iactivescriptauthorgetscriptlettextattributes"></a>IActiveScriptAuthor::GetScriptletTextAttributes
 Devuelve los atributos de texto de un Subscript.  

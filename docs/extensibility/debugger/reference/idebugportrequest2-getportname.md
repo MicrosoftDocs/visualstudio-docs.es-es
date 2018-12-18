@@ -1,5 +1,5 @@
 ---
-title: IDebugPortRequest2::GetPortName | Documentos de Microsoft
+title: IDebugPortRequest2::GetPortName | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c81bdc6586766cb4a241bf29e653cb1b10f66f2f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 490381f183a19e33fd391b133562fc2a463c6ee9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920851"
 ---
 # <a name="idebugportrequest2getportname"></a>IDebugPortRequest2::GetPortName
 Obtiene el nombre del puerto.  
@@ -43,10 +44,10 @@ int GetPortName(
  [out] Devuelve el nombre del puerto.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- El [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) interfaz normalmente se pasa de un paquete de depuración (el cliente) a un proveedor de puerto (el servidor) para obtener una conexión a un puerto. El paquete de depuración y el proveedor del puerto son conscientes de las opciones posibles para el puerto. Si una cadena simple puede describir el puerto, la `IDebugPortRequest2::GetPortName` método tiene información suficiente para realizar la conexión. En caso contrario, el cliente, que puede obtenerse mediante el servidor pueden proporcionar interfaces adicionales `IDebugPortRequest2::QueryInterface`.  
+ El [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) interfaz normalmente se pasa de un paquete de depuración (el cliente) a un proveedor de puerto (el servidor) para obtener una conexión a un puerto. El paquete de depuración y el proveedor del puerto son conscientes de las opciones posibles para el puerto. Si una cadena sencilla puede describir el puerto, el `IDebugPortRequest2::GetPortName` método tiene información suficiente para realizar la conexión. En caso contrario, se pueden proporcionar interfaces adicionales por el cliente, que puede obtenerse mediante el uso de servidor `IDebugPortRequest2::QueryInterface`.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)

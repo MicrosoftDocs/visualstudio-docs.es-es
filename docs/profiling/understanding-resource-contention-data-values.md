@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdc41ee4c3c9f53d45245c6c305d7f8e221757f4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ffacfcd5eac9fd88cfd7bbaa2c7d2546836d87c6
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948562"
 ---
-# <a name="understanding-resource-contention-data-values"></a>Descripción de los valores de datos de contención de recursos
+# <a name="understand-resource-contention-data-values"></a>Descripción de los valores de datos de contención de recursos
 
 La generación de perfiles de contención de recursos recopila información detallada de la pila de llamadas cada vez que subprocesos competidores en una aplicación se ven obligados a esperar para obtener acceso a un recurso compartido.
 

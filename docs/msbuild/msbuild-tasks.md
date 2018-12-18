@@ -13,13 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2dcb47ec974d4c8735cbada4115c865f7ede4c0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6a380917f3a4eaba71a00ff32f1bc627f47f5d4d
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153207"
 ---
-# <a name="msbuild-tasks"></a>Tareas de MSBuild
+# <a name="msbuild-tasks"></a>tareas de MSBuild
 Una plataforma de compilación debe ser capaz de ejecutar cualquier número de acciones durante el proceso de compilación. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] utiliza *tareas* para realizar estas acciones. Una tarea es una unidad de código ejecutable que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] utiliza para realizar operaciones de compilación atómicas.  
   
 ## <a name="task-logic"></a>Lógica de las tareas  
@@ -29,9 +30,9 @@ Una plataforma de compilación debe ser capaz de ejecutar cualquier número de a
   
  La clase de tarea también define los parámetros de entrada y salida disponibles para la tarea en el archivo del proyecto. En el archivo del proyecto se puede acceder a todas las propiedades públicas configurables no estáticas y no abstractas expuestas por la clase de tarea si se coloca un atributo correspondiente con el mismo nombre en el elemento [Task](../msbuild/task-element-msbuild.md).  
   
- Puede escribir su propia tarea creando una clase administrada que implemente la interfaz <xref:Microsoft.Build.Framework.ITask>. Para obtener más información, consulte [Escribir tareas](../msbuild/task-writing.md).  
+ Puede escribir su propia tarea creando una clase administrada que implemente la interfaz <xref:Microsoft.Build.Framework.ITask>. Para más información, consulte [Escribir tareas](../msbuild/task-writing.md).  
   
-## <a name="executing-a-task-from-a-project-file"></a>Ejecutar una tarea desde un archivo del proyecto  
+## <a name="execute-a-task-from-a-project-file"></a>Ejecución de una tarea desde un archivo de proyecto  
  Antes de ejecutar una tarea en el archivo del proyecto, primero debe asignar el tipo en el ensamblado que implementa la tarea al nombre de tarea con el elemento [UsingTask](../msbuild/usingtask-element-msbuild.md). Esto permite a [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] saber dónde buscar la lógica de ejecución de la tarea cuando la encuentre en el archivo del proyecto.  
   
  Para ejecutar una tarea en un archivo del proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], cree un elemento con el nombre de la tarea como elemento secundario de un elemento `Target`. Si una tarea acepta parámetros, estos se pasan como atributos del elemento.  
@@ -63,7 +64,7 @@ Una plataforma de compilación debe ser capaz de ejecutar cualquier número de a
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] se distribuye con muchas tareas, como por ejemplo [Copy](../msbuild/copy-task.md), que copia archivos, [MakeDir](../msbuild/makedir-task.md), que crea directorios, y [Csc](../msbuild/csc-task.md), que compila archivos de código fuente [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Para obtener una lista completa de tareas disponibles e información de uso, consulte [Referencia de tareas](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="overridden-tasks"></a>Tareas invalidadas  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] busca tareas en varias ubicaciones. La primera ubicación es en archivos con la extensión .OverrideTasks almacenados en los directorios de .NET Framework. Las tareas en estos archivos invalidan cualquier otra tarea con los mismos nombres, incluidas las tareas en el archivo del proyecto. La segunda ubicación es en archivos con la extensión .Tasks en los directorios de .NET Framework. Si la tarea no se encuentra en ninguna de estas ubicaciones, se utiliza la tarea en el archivo del proyecto.  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] busca tareas en varias ubicaciones. La primera ubicación es en archivos con la extensión *.OverrideTasks* almacenados en los directorios de .NET Framework. Las tareas en estos archivos invalidan cualquier otra tarea con los mismos nombres, incluidas las tareas en el archivo del proyecto. La segunda ubicación es en archivos con la extensión *.Tasks* en los directorios de .NET Framework. Si la tarea no se encuentra en ninguna de estas ubicaciones, se utiliza la tarea en el archivo del proyecto.  
   
 ## <a name="see-also"></a>Vea también  
  [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)   

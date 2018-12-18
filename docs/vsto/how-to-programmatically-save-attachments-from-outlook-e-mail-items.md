@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: guardar mediante programación los datos adjuntos de elementos de correo electrónico de Outlook | Documentos de Microsoft'
+title: 'Cómo: guardar mediante programación los datos adjuntos de elementos de correo electrónico de Outlook'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,17 +19,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b3ca0f8c86b31576fd5ce219a536725431b27007
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fd564b71622ad5f9ee6500ddc3864bad0b21686b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674455"
 ---
-# <a name="how-to-programmatically-save-attachments-from-outlook-e-mail-items"></a>Cómo: Guardar datos adjuntos de elementos de correo electrónico de Outlook mediante programación
+# <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Cómo: guardar mediante programación los datos adjuntos de elementos de correo electrónico de Outlook
   En este ejemplo se guardan los datos adjuntos al correo electrónico en una carpeta específica cuando el correo se recibe en la bandeja de entrada.  
   
 > [!IMPORTANT]  
->  En este ejemplo solo funciona si se agrega una carpeta denominada **TestFileSave** en la raíz del directorio c.  
+>  En este ejemplo solo funciona si agregar una carpeta denominada **TestFileSave** en la raíz del directorio c.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -38,8 +39,8 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Vea también  
  [Trabajar con elementos de correo](../vsto/working-with-mail-items.md)   
- [Cómo: recuperar una carpeta por su nombre mediante programación](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
+ [Cómo: recuperar una carpeta por nombre mediante programación](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
  [Cómo: realizar acciones mediante programación cuando se recibe un mensaje de correo electrónico](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)   
- [Cómo: Buscar en una carpeta específica mediante programación](../vsto/how-to-programmatically-search-within-a-specific-folder.md)  
+ [Cómo: buscar en una carpeta específica mediante programación](../vsto/how-to-programmatically-search-within-a-specific-folder.md)  
   
   

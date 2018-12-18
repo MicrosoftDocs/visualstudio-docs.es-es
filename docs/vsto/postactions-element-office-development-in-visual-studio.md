@@ -1,5 +1,5 @@
 ---
-title: '&lt;postActions&gt; elemento (desarrollo de Office en Visual Studio) | Documentos de Microsoft'
+title: '&lt;postActions&gt; elemento (desarrollo de Office en Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2c4dafa1c5ac7ef296ba388ecdfd93d00afef708
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6542344d5e0967504eccbedd4986cd80ef04f40a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34692579"
 ---
 # <a name="ltpostactionsgt-element-office-development-in-visual-studio"></a>&lt;postActions&gt; elemento (desarrollo de Office en Visual Studio)
   El elemento `postActions` del espacio de nombres `vstav3` , contiene todos los elementos `postAction` que describen las acciones posteriores a la implementación y que se ejecutan una vez instaladas las soluciones de Office.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```xml  
 <postActions>  
   <postAction>  
     <entryPoint>  
@@ -49,14 +50,14 @@ ms.lasthandoff: 04/16/2018
 ### <a name="postaction"></a>postAction  
  Opcional. El rol de la `postAction` elemento en el `vstav3` espacio de nombres se define en [ &#60;postAction&#62; elemento &#40;desarrollo de Office en Visual Studio&#41;](../vsto/postaction-element-office-development-in-visual-studio.md).  
   
-## <a name="post-deployment-action-example"></a>Ejemplo de acciones posteriores a la implementación.  
+## <a name="post-deployment-action-example"></a>Ejemplo de acciones posteriores a la implementación  
   
 ### <a name="description"></a>Descripción  
- En el siguiente ejemplo de código, se muestra el elemento `postActions` en el manifiesto de aplicación de una solución de Office implementada mediante [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
+ En el siguiente ejemplo de código, se muestra el elemento `postActions` en el manifiesto de aplicación de una solución de Office implementada mediante [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Código  
   
-```  
+```xml  
 <vstav3:postActions>  
   <vstav3:postAction>  
     <vstav3:entryPoint   
@@ -74,7 +75,7 @@ ms.lasthandoff: 04/16/2018
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
+ [Manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md)   
  [Manifiestos de implementación para soluciones de Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [Manifiesto de aplicación ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
   

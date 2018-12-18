@@ -1,5 +1,5 @@
 ---
-title: Contexto de evaluación | Documentos de Microsoft
+title: Contexto de evaluación | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,31 +14,32 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 266fe85bedeea2c7e3dae7726d113d66a4b2b1e8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 523ef45d52a81a475eca0e3560243e0eb8357bbd
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232460"
 ---
 # <a name="evaluation-context"></a>Contexto de evaluación
 > [!IMPORTANT]
->  Visual Studio 2015, esta forma de implementar los evaluadores de expresión está en desuso. Para obtener información acerca de cómo implementar los evaluadores de expresión de CLR, vea [evaluadores de expresión de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [Managed expresión evaluador Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  En Visual Studio 2015, esta forma de implementar los evaluadores de expresión está en desuso. Para obtener información sobre la implementación de evaluadores de expresión de CLR, vea [evaluadores de expresiones CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [ejemplo de evaluador de expresión administrado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Cuando el motor de depuración (Alemania) llama el evaluador de expresiones (EE), se pasan tres argumentos a [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) determinar el contexto para buscar y evaluar los símbolos, como se muestra en la tabla siguiente.  
+ Cuando el motor de depuración (DE) llama el evaluador de expresiones (EE), tres argumentos que se pasan a [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) determinar el contexto para buscar y evaluar los símbolos, como se muestra en la tabla siguiente.  
   
 ## <a name="arguments"></a>Argumentos  
   
 |Argumento|Descripción|  
 |--------------|-----------------|  
 |`pSymbolProvider`|Un [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md) interfaz que especifica el controlador de símbolos (SH) que se usará para identificar el símbolo.|  
-|`pAddress`|Un [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md) interfaz que especifica el punto actual de ejecución. Esto se puede utilizar para buscar el método que contiene el código que se está ejecutando.|  
-|`pBinder`|Un [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) interfaz que puede usarse para buscar el valor y el tipo de un símbolo de acuerdo con su nombre.|  
+|`pAddress`|Un [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md) interfaz que especifica el punto de ejecución actual. Esta interfaz busca el método que contiene el código que se está ejecutando.|  
+|`pBinder`|Un [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) interfaz que se encuentra el valor y el tipo de un símbolo dado su nombre.|  
   
  `IDebugParsedExpression::EvaluateSync` Devuelve un [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) interfaz que representa el valor resultante y su tipo.  
   
 ## <a name="see-also"></a>Vea también  
  [Interfaces de evaluador de expresión de clave](../../extensibility/debugger/key-expression-evaluator-interfaces.md)   
- [Mostrar variables locales](../../extensibility/debugger/displaying-locals.md)   
+ [Visualización de variables locales](../../extensibility/debugger/displaying-locals.md)   
  [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)   
  [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)   

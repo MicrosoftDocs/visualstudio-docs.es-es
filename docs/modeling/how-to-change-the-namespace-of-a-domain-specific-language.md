@@ -1,6 +1,6 @@
 ---
-title: 'Cómo: Cambiar el espacio de nombres de los lenguajes específicos de dominio'
-ms.date: 11/04/2016
+title: 'Cómo: cambiar el espacio de nombres de un lenguaje específico de dominio'
+ms.date: 10/31/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, namespace
@@ -9,48 +9,51 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b145677ac902841a479f3c90efac77af48456a57
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 47e13e8399cba7762ff7443e4fc4cbf3a89375a6
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966835"
 ---
-# <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Cómo: Cambiar el espacio de nombres de los lenguajes específicos de dominio
-Puede cambiar el espacio de nombres de un lenguaje específico de dominio. Debe realizar el cambio en el **DSL explorador**, en las propiedades del proyecto de paquete de Dsl y en la información de ensamblado.
+# <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Cómo: cambiar el espacio de nombres de un lenguaje específico de dominio
 
-### <a name="to-change-the-namespace-of-a-domain-specific-language"></a>Para cambiar el espacio de nombres de un lenguaje específico de dominio
+Puede cambiar el espacio de nombres de un lenguaje específico de dominio. Realice el cambio en el **DSL Explorer**, en las propiedades del proyecto de paquete de Dsl y en la información de ensamblado.
 
-1.  En **DSL explorador**, haga clic en el **Dsl** nodo.
+## <a name="to-change-the-namespace-of-a-domain-specific-language"></a>Para cambiar el espacio de nombres de un lenguaje específico de dominio
 
-2.  En el **propiedades** ventana, cambiar la **Namespace** propiedad.
+1. En **DSL Explorer**, seleccione el **Dsl** nodo.
 
-3.  Guarde la solución y transformar las plantillas.
+2. En el **propiedades** ventana, cambie el **Namespace** propiedad.
 
-4.  En el **proyecto** menú, haga clic en **Dsl propiedades**.
+3. Guarde la solución y transformar las plantillas.
 
-     Aparecerán las propiedades del proyecto.
+4. En el **proyecto** menú, elija **Dsl propiedades**.
 
-5.  Haga clic en la pestaña **Aplicación** .
+   Aparecerán las propiedades del proyecto.
 
-6.  Cambiar el **espacio de nombres predeterminado** propiedad para el nuevo nombre de espacio de nombres.
+5. Seleccione el **aplicación** ficha.
 
-7.  Si también desea cambiar el nombre del ensamblado, cambie la **propiedad de nombre de ensamblado.**
+6. Cambiar el **espacio de nombres predeterminado** propiedad para el nuevo nombre de espacio de nombres.
 
-8.  Si ha cambiado el nombre del ensamblado, abra DslPackage\Package.tt y actualice esta línea:
+7. Si también desea cambiar el nombre del ensamblado, cambie el **propiedad nombre de ensamblado.**
 
-     `string dslAssembly = "YourDSLassembly.Dsl.dll";`
+8. Si ha cambiado el nombre del ensamblado, abra DslPackage\Package.tt y actualice esta línea:
 
-9. Si ha escrito un código personalizado, asegúrese de cambiar las referencias de espacio de nombres y la clase en los archivos de código.
+   `string dslAssembly = "YourDSLassembly.Dsl.dll";`
+
+9. Si ha escrito ningún código personalizado, asegúrese de cambiar las referencias de espacio de nombres y clase en los archivos de código.
 
 10. Restablecer la instancia Experimental de Visual Studio.
 
-    1.  Eliminar **\Users\\ ***{su nombre}*** \AppData\Local\Microsoft\VisualStudio\\\*Exp**
+    1. Eliminar **\Users\\**_{su nombre}_**\AppData\Local\Microsoft\VisualStudio\\\*Exp**.
 
-    2.  En las ventanas **iniciar** menú, elija **todos los programas**, **Microsoft Visual Studio 2010 SDK**, **herramientas**, **restablecer el Instancia experimental**.
+    2. En el Windows **iniciar** menú, elija **todos los programas** > **Microsoft Visual Studio 2010 SDK** > **herramientas**  >  **Restablecer la instancia Experimental**.
 
-11. En el **generar** menú, elija **volver a generar solución**.
+11. En el **compilar** menú, elija **recompilar solución**.
 
 ## <a name="see-also"></a>Vea también
 
-- [Glosario de herramientas de lenguaje específico de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+[Glosario de las herramientas de lenguajes específicos de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

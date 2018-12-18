@@ -1,5 +1,5 @@
 ---
-title: Filtrar y ordenar datos en una aplicación de formularios Windows Forms
+title: Filtrar y ordenar los datos en una aplicación Windows Forms
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,24 +17,27 @@ ms.assetid: f4f100f1-776d-46dc-b2fd-5b35b98d9561
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ff5c31b14f13252fbcad0f42762627a14e610591
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1868d670458e204f6e503b132aaceab17f3da742
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750928"
 ---
-# <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Filtrar y ordenar datos en una aplicación de formularios Windows Forms
+# <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Filtrar y ordenar los datos en una aplicación Windows Forms
+
 Los datos se filtran estableciendo la propiedad <xref:System.Windows.Forms.BindingSource.Filter%2A> en una expresión de cadena que devuelve los registros deseados.
 
- Puede ordenar los datos estableciendo la propiedad <xref:System.Windows.Forms.BindingSource.Sort%2A> en el nombre de columna por la que desea ordenar; anexe `DESC` para realizar la ordenación en sentido descendente, o bien, `ASC` para hacerlo en sentido ascendente.
+Ordenar datos estableciendo el <xref:System.Windows.Forms.BindingSource.Sort%2A> propiedad en el nombre de columna en el que desea ordenar; anexe `DESC` ordenar en orden descendente o anexar `ASC` para ordenar en orden ascendente.
 
 > [!NOTE]
->  Si la aplicación no usa <xref:System.Windows.Forms.BindingSource> componentes, puede filtrar y ordenar los datos mediante el uso de <xref:System.Data.DataView> objetos. Para obtener más información, consulte [DataView](/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews).
+> Si la aplicación no usa <xref:System.Windows.Forms.BindingSource> componentes, puede filtrar y ordenar los datos mediante el uso de <xref:System.Data.DataView> objetos. Para obtener más información, consulte [DataViews](/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews).
 
-## <a name="to-filter-data-by-using-a-bindingsource-component"></a>Para filtrar datos mediante un componente BindingSource
+## <a name="to-filter-data-by-using-a-bindingsource-component"></a>Para filtrar los datos mediante el uso de un componente BindingSource
 
 -   Establezca la propiedad <xref:System.Windows.Forms.BindingSource.Filter%2A> en la expresión que desea devolver. Por ejemplo, el código siguiente devuelve los clientes cuyo valor de `CompanyName` empieza por "B":
 

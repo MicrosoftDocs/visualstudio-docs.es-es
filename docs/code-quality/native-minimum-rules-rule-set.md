@@ -1,6 +1,7 @@
 ---
 title: Conjunto de reglas Reglas mínimas nativas
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 2d898bc4-fba5-472e-8f09-b0c6b511c5a3
@@ -9,14 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d09b9e1486442177251c330b0281c9555006430
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9149276064b76a08705b70883bb3c2e136e23334
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389019"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Conjunto de reglas Reglas mínimas nativas
-Las reglas mínimas nativo de Microsoft se centran en los problemas más graves en el código nativo, incluidas posibles vulnerabilidades de seguridad y bloqueos de la aplicación. Debe incluir este conjunto de reglas en todos los conjuntos de reglas personalizados que cree para sus proyectos nativos.
+Las reglas mínimas nativas de Microsoft se centran en los problemas más graves del código nativo, incluidas posibles vulnerabilidades de seguridad y bloqueos de la aplicación. Debe incluir este conjunto de reglas en todos los conjuntos de reglas personalizados que cree para sus proyectos nativos.
 
 |Regla|Descripción|
 |----------|-----------------|
@@ -79,22 +81,28 @@ Las reglas mínimas nativo de Microsoft se centran en los problemas más graves 
 |[C6704](../code-quality/c6704.md)|Error de expresión de anotación inesperado|
 |[C6705](../code-quality/c6705.md)|El número esperado de argumentos para la anotación no coincide con el número real de argumentos para la anotación|
 |[C6706](../code-quality/c6706.md)|Error inesperado de la anotación|
+|[C26450](../code-quality/c26450.md)|RESULT_OF_ARITHMETIC_OPERATION_PROVABLY_LOSSY|
+|[C26451](../code-quality/c26451.md)|RESULT_OF_ARITHMETIC_OPERATION_CAST_TO_LARGER_SIZE|
+|[C26452](../code-quality/c26452.md)|SHIFT_COUNT_NEGATIVE_OR_TOO_BIG|
+|[C26453](../code-quality/c26453.md)|LEFTSHIFT_NEGATIVE_SIGNED_NUMBER|
+|[C26454](../code-quality/c26454.md)|RESULT_OF_ARITHMETIC_OPERATION_NEGATIVE_UNSIGNED|
+|[C26495](../code-quality/c26495.md)|MEMBER_UNINIT|
 |[C28021](../code-quality/c28021.md)|El parámetro que se va a anotar debe ser un puntero|
 |[C28182](../code-quality/c28182.md)|Desreferenciación de un puntero null. El puntero contiene el mismo valor NULL que otro puntero.|
 |[C28202](../code-quality/c28202.md)|Referencia no válida a un miembro no estático|
 |[C28203](../code-quality/c28203.md)|Referencia ambigua a un miembro de la clase.|
-|[C28205](../code-quality/c28205.md)|_Success\_ o _On_failure\_ usados en un contexto no válido|
+|[C28205](../code-quality/c28205.md)|\_Éxito\_ o \_en\_error\_ utilizado en un contexto no válido|
 |[C28206](../code-quality/c28206.md)|El operando izquierdo señala a un struct, use '->'|
 |[C28207](../code-quality/c28207.md)|El operando izquierdo es un struct, use '->'|
 |[C28210](../code-quality/c28210.md)|Las anotaciones del contexto __on_failure no deben estar en un contexto previo explícito|
 |[C28211](../code-quality/c28211.md)|Se esperaba un nombre de contexto estático para SAL_context|
 |[C28212](../code-quality/c28212.md)|Se esperaba una expresión de puntero para la anotación|
-|[C28213](../code-quality/c28213.md)|La anotación _Use_decl_annotations\_ se debe usar para hacer referencia, sin modificación, a una declaración anterior.|
+|[C28213](../code-quality/c28213.md)|El \_Use\_decl\_anotaciones\_ anotación debe usarse para hacer referencia sin modificación, una declaración anterior.|
 |[C28214](../code-quality/c28214.md)|Los nombres de los parámetros de atributo deben ser p1...p9|
 |[C28215](../code-quality/c28215.md)|typefix no se puede aplicar a un parámetro que ya tenga un typefix|
 |[C28216](../code-quality/c28216.md)|La anotación checkReturn solamente se aplica a las condiciones posteriores del parámetro de la función específica.|
 |[C28217](../code-quality/c28217.md)|Para la función, el número de parámetros de la anotación no coincide con el encontrado en el archivo|
-|[C28218](../code-quality/c28218.md)|Para el parámetro de la función, el parámetro de la anotación no coincide con el encontrado en el archivo|
+|[C28218](../code-quality/c28218.md)|Para el parámetro de función, el parámetro de la anotación no coincide con el encontrado en el archivo|
 |[C28219](../code-quality/c28219.md)|Se esperaba un miembro de enumeración para el parámetro de la anotación|
 |[C28220](../code-quality/c28220.md)|Se esperaba una expresión de entero para el parámetro de la anotación|
 |[C28221](../code-quality/c28221.md)|Se esperaba una expresión de cadena para el parámetro de la anotación|
@@ -131,22 +139,22 @@ Las reglas mínimas nativo de Microsoft se centran en los problemas más graves 
 |[C28267](../code-quality/c28267.md)|Se encontró un error de sintaxis de anotaciones en la función.|
 |[C28272](../code-quality/c28272.md)|La anotación del parámetro de la función, al examinar su incoherencia con la declaración de la función|
 |[C28273](../code-quality/c28273.md)|Para la función, las pistas son incoherentes con la declaración de la función|
-|[C28275](../code-quality/c28275.md)|El parámetro para _Macro_value\_ es null|
+|[C28275](../code-quality/c28275.md)|El parámetro \_Macro\_valor\_ es null|
 |[C28279](../code-quality/c28279.md)|Para el símbolo, se encontró un 'begin' sin un 'end' coincidente|
 |[C28280](../code-quality/c28280.md)|Para el símbolo, se encontró un 'end' sin un 'begin' coincidente|
 |[C28282](../code-quality/c28282.md)|Las cadenas de formato deben estar en las condiciones previas|
 |[C28285](../code-quality/c28285.md)|Para la función, error de sintaxis en el parámetro|
 |[C28286](../code-quality/c28286.md)|Para la función, error de sintaxis cerca del final|
-|[C28287](../code-quality/c28287.md)|Para la función, error de sintaxis en la anotación _At\_() (nombre de parámetro no reconocido)|
-|[C28288](../code-quality/c28288.md)|Para la función, error de sintaxis en la anotación _At\_() (nombre de parámetro no válido)|
+|[C28287](../code-quality/c28287.md)|Para la función, Error de sintaxis en \_en\_() anotación (nombre de parámetro no reconocido)|
+|[C28288](../code-quality/c28288.md)|Para la función, Error de sintaxis en \_en\_() anotación (nombre de parámetro no válido)|
 |[C28289](../code-quality/c28289.md)|Para la función: ReadableTo o WritableTo no tenían una especificación de límite como parámetro|
 |[C28290](../code-quality/c28290.md)|la anotación de la función contiene más valores External que el número real de parámetros|
 |[C28291](../code-quality/c28291.md)|El valor null/notnull posterior en el nivel 0 de desreferenciación carece de sentido para la función.|
 |[C28300](../code-quality/c28300.md)|Operandos de expresión de tipos no compatibles para el operador|
 |[C28301](../code-quality/c28301.md)|No hay anotaciones para la primera declaración de la función.|
-|[C28302](../code-quality/c28302.md)|Se encontró un operador _Deref\_ adicional en la anotación.|
-|[C28303](../code-quality/c28303.md)|Se encontró un operador _Deref\_ ambiguo en la anotación.|
-|[C28304](../code-quality/c28304.md)|Se encontró un operador _Notref\_ mal colocado aplicado al token.|
+|[C28302](../code-quality/c28302.md)|Adicional \_Deref\_ encontró un operador en la anotación.|
+|[C28303](../code-quality/c28303.md)|Un ambiguo \_Deref\_ encontró un operador en la anotación.|
+|[C28304](../code-quality/c28304.md)|Un mal colocado \_Notref\_ encontró un operador aplicado al token.|
 |[C28305](../code-quality/c28305.md)|Se descubrió un error al analizar un token.|
 |[C28350](../code-quality/c28350.md)|La anotación describe una situación no aplicable de forma condicional.|
 |[C28351](../code-quality/c28351.md)|La anotación describe dónde no se puede usar un valor dinámico (una variable) en la condición.|

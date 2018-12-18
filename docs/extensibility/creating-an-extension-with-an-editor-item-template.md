@@ -1,5 +1,5 @@
 ---
-title: Crear una extensión con una plantilla de elemento de Editor | Documentos de Microsoft
+title: Creación de una extensión con una plantilla de elemento del Editor | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,90 +13,91 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60f10479e0ce6fa08e888d92556ff47b5d82af66
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a13c62d9fadfe105bd8e645ba6e7758c2b3195a3
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500868"
 ---
-# <a name="creating-an-extension-with-an-editor-item-template"></a>Crear una extensión con una plantilla de elemento de Editor
-Puede usar plantillas de elementos que se incluyen en el SDK de Visual Studio para crear extensiones de editor básico que aumenta el editor de clasificadores, opciones gráficas y los márgenes. Las plantillas de elementos de editor están disponibles para los proyectos de Visual C# o Visual Basic VSIX.  
+# <a name="create-an-extension-with-an-editor-item-template"></a>Crear una extensión con una plantilla de elementos de editor
+Puede usar plantillas de elementos que se incluyen en el SDK de Visual Studio para crear extensiones de editor básico que aumenta el editor de clasificadores, los elementos gráficos y los márgenes. Las plantillas de elementos de editor están disponibles para los proyectos de Visual C# o Visual Basic VSIX.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-classifier-extension"></a>Crear una extensión de clasificador  
- La plantilla de elemento de clasificador de Editor crea un clasificador de editor que colorea el texto adecuado (en este caso, todo el contenido) en cualquier archivo de texto.  
+## <a name="create-a-classifier-extension"></a>Crear una extensión de clasificador  
+ La plantilla de elemento de clasificador de Editor crea un clasificador de editor que colorea el texto adecuado (en este caso, todo) en cualquier archivo de texto.  
   
 1.  En el **nuevo proyecto** cuadro de diálogo, expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el **plantillas** panel, seleccione **proyecto VSIX**. En el cuadro **Nombre**, escriba `TestClassifier`. Haga clic en **Aceptar**.  
   
-2.  En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **Agregar / nuevo elemento**. Vaya a Visual C# **extensibilidad** nodo y seleccione **clasificador de Editor**. Deje el nombre de archivo predeterminado (EditorClassifier1.cs).  
+2.  En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **agregar** > **nuevo elemento**. Vaya a Visual C# **extensibilidad** nodo y seleccione **clasificador de Editor**. Deje el nombre de archivo predeterminado (*EditorClassifier1.cs*).  
   
-3.  Hay tres archivos de código, como se indica a continuación:  
+3.  Hay cuatro archivos de código, como sigue:  
   
-    -   EditorClassifier1.cs contiene el `EditorClassifier1` clase.  
+    -   *EditorClassifier1.cs* contiene el `EditorClassifier1` clase.  
   
-    -   EditorClassifier1ClassificationDefinition.cs contiene el `OEditorClassifier1ClassificationDefinition` clase.  
+    -   *EditorClassifier1ClassificationDefinition.cs* contiene el `EditorClassifier1ClassificationDefinition` clase.  
   
-    -   EditorClassifier1Format.cs contiene el `EditorClassifier1Format` clase.  
+    -   *EditorClassifier1Format.cs* contiene el `EditorClassifier1Format` clase.  
   
-    -   EditorClassifier1Provider.cs contiene el `EditorClassifier1Provider` clase.  
+    -   *EditorClassifier1Provider.cs* contiene el `EditorClassifier1Provider` clase.  
   
 4.  Compile la solución y comience la depuración. Aparece la instancia experimental de Visual Studio.  
   
      Si abre un archivo de texto, todo el texto está subrayado con un fondo violeta.  
   
-## <a name="creating-a-text-relative-adornment-extension"></a>Crear una extensión de elementos gráficos relacionados con texto  
- La plantilla de elementos gráficos de texto del Editor crea un elemento de gráfico de texto relativo que decora todas las instancias de los caracteres de texto 'a' mediante el uso de un cuadro con un contorno de color rojo y un fondo azul. Es texto relativo porque el cuadro siempre se superpone 'a' caracteres, incluso cuando se mueven o se vuelve a dar formato.  
+## <a name="create-a-text-relative-adornment-extension"></a>Crear una extensión de elemento gráfico relacionados con texto  
+ La plantilla de elemento gráfico de texto del Editor crea un elemento de gráfico relacionados con el texto que está contenido en todas las instancias del carácter 'a' mediante un cuadro que tiene un contorno rojo y un fondo azul. Es relativo a texto porque el cuadro siempre superpuestas "a" caracteres, incluso cuando se mueven o cambian.  
   
 1.  En el **nuevo proyecto** cuadro de diálogo, expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el **plantillas** panel, seleccione **proyecto VSIX**. En el cuadro **Nombre**, escriba `TestAdornment`. Haga clic en **Aceptar**.  
   
-2.  En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **Agregar / nuevo elemento**. Vaya a Visual C# **extensibilidad** nodo y seleccione **elementos de gráficos de Editor de texto**. Deje el nombre de archivo predeterminado (TextAdornment1.cs/vb).  
+2.  En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **agregar** > **nuevo elemento**. Vaya a Visual C# **extensibilidad** nodo y seleccione **elemento gráfico de Editor de texto**. Deje el nombre de archivo predeterminado (*TextAdornment1.cs/vb*).  
   
-3.  Hay dos archivos de código, como se indica a continuación:  
+3.  Hay dos archivos de código, como sigue:  
   
-    -   TextAdornment1.cs contiene el `TextAdornment1` clase.  
+    -   *TextAdornment1.cs* contiene el `TextAdornment1` clase.  
   
-    -   extAdornment1TextViewCreationListener.cs contiene el `TextAdornment1TextViewCreationListener` clase.  
+    -   *TextAdornment1TextViewCreationListener.cs* contiene el `TextAdornment1TextViewCreationListener` clase.  
   
-4.  Compile la solución y comience la depuración. Aparece la instancia experimental. Si abre un archivo de texto, la 'a' de los caracteres en el texto aparecen destacados en rojo con un fondo azul.  
+4.  Compile la solución y comience la depuración. Aparece la instancia experimental. Si abre un archivo de texto, se describen todos los 'a' caracteres en el texto en rojo con un fondo azul.  
   
-## <a name="creating-a-viewport-relative-adornment-extension"></a>Crear una extensión de elemento gráfico relativa de la ventanilla  
- La plantilla de elementos gráficos de área de visualización de Editor crea un elemento de gráfico relativa de la ventanilla que agrega un cuadro violeta con un contorno de color rojo a la esquina superior derecha de la ventanilla.  
+## <a name="create-a-viewport-relative-adornment-extension"></a>Crear una extensión de elemento de gráfico relativa a la ventanilla  
+ La plantilla de elemento de gráfico de área de visualización de Editor crea un elemento de gráfico de ventanilla relativa que agrega un cuadro violeta que tiene un contorno rojo a la esquina superior derecha de la ventanilla.  
   
 > [!NOTE]
->  El *ventanilla* es el área de la vista de texto que se muestra actualmente.  
+>  El **ventanilla** es el área de la vista de texto que se muestra actualmente.  
   
-#### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>Para crear una extensión de elementos gráficos de área de visualización mediante la plantilla de elemento de gráfico de área de visualización de Editor  
+### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>Para crear una extensión de elemento gráfico de área de visualización mediante la plantilla de elemento de gráfico de área de visualización de Editor  
   
 1.  En el **nuevo proyecto** cuadro de diálogo, expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el **plantillas** panel, seleccione **proyecto VSIX**. En el cuadro **Nombre**, escriba `ViewportAdornment`. Haga clic en **Aceptar**.  
   
-2.  En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **Agregar / nuevo elemento**. Vaya a Visual C# **extensibilidad** nodo y seleccione **elementos gráficos de área de visualización de Editor**. Deje el nombre de archivo predeterminado (ViewportAdornment1.cs/vb).  
+2.  En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **agregar** > **nuevo elemento**. Vaya a Visual C# **extensibilidad** nodo y seleccione **elemento gráfico de área de visualización de Editor**. Deje el nombre de archivo predeterminado (*ViewportAdornment1.cs/vb*).  
   
-3.  Hay dos archivos de código, como se indica a continuación:  
+3.  Hay dos archivos de código, como sigue:  
   
-    -   ViewportAdornment1.cs contiene el `ViewportAdornment1` clase.  
+    -   *ViewportAdornment1.cs* contiene el `ViewportAdornment1` clase.  
   
-    -   ViewportAdornment1TextViewCreationListener.cs contiene el `ViewportAdornment1TextViewCreationListener` (clase)  
+    -   *ViewportAdornment1TextViewCreationListener.cs* contiene el `ViewportAdornment1TextViewCreationListener` clase  
   
-4.  Compile la solución y comience la depuración. Aparece la instancia experimental. Si crea un nuevo archivo de texto, se muestra un cuadro violeta con un contorno de color rojo en la esquina superior derecha de la ventanilla.  
+4.  Compile la solución y comience la depuración. Aparece la instancia experimental. Si crea un nuevo archivo de texto, se muestra un cuadro violeta que tiene un contorno rojo en la esquina superior derecha de la ventanilla.  
   
-## <a name="creating-a-margin-extension"></a>Crear una extensión de margen  
- La plantilla de margen de Editor crea un margen verde que aparece junto con las palabras "¡Hello world!" por debajo de la barra de desplazamiento horizontal.  
+## <a name="create-a-margin-extension"></a>Crear una extensión de margen  
+ La plantilla de margen del Editor crea un margen verde que aparece junto con las palabras **Hola mundo!* debajo de la barra de desplazamiento horizontal.  
   
-#### <a name="to-create-a-margin-extension-by-using-the-editor-margin-template"></a>Para crear una extensión de margen usando la plantilla de margen de Editor  
+### <a name="to-create-a-margin-extension-by-using-the-editor-margin-template"></a>Para crear una extensión de margen usando la plantilla del margen del Editor  
   
 1.  En el **nuevo proyecto** cuadro de diálogo, expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el **plantillas** panel, seleccione **proyecto VSIX**. En el cuadro **Nombre**, escriba `MarginExtension`. Haga clic en **Aceptar**.  
   
-2.  En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **Agregar / nuevo elemento**. Vaya a Visual C# **extensibilidad** nodo y seleccione **elementos gráficos de área de visualización de Editor**. Deje el nombre de archivo predeterminado (EditorMargin1.cs/vb).  
+2.  En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **agregar** > **nuevo elemento**. Vaya a Visual C# **extensibilidad** nodo y seleccione **margen del Editor**. Deje el nombre de archivo predeterminado (EditorMargin1.cs/vb).  
   
-3.  Hay dos archivos de código, como se indica a continuación:  
+3.  Hay dos archivos de código, como sigue:  
   
-    -   EditorMargin1.cs contiene el `EditorMargin1` clase.  
+    -   *EditorMargin1.cs* contiene el `EditorMargin1` clase.  
   
-    -   EditorMargin1Factory.cs contiene el `EditorMargin1Factory` clase.  
+    -   *EditorMargin1Factory.cs* contiene el `EditorMargin1Factory` clase.  
   
-4.  Este proyecto de compilación e iniciar la depuración. Aparece la instancia experimental. Si abre un archivo de texto, un margen verde con las palabras "Hello EditorMargin1" aparece debajo de la barra de desplazamiento horizontal.  
+4.  Compilar el proyecto e iniciar la depuración. Aparece la instancia experimental. Si abre un archivo de texto, un margen de color verde que contiene las palabras **Hello EditorMargin1** aparece debajo de la barra de desplazamiento horizontal.  
   
 ## <a name="see-also"></a>Vea también  
- [Servicio de lenguaje y puntos de extensión del editor](../extensibility/language-service-and-editor-extension-points.md)
+ [Puntos de extensión de editor y el servicio de lenguaje](../extensibility/language-service-and-editor-extension-points.md)

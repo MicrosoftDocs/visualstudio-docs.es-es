@@ -1,5 +1,5 @@
 ---
-title: LocationFieldMRUPrefix (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
+title: LocationFieldMRUPrefix (elemento) (plantillas de Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,18 +16,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cef7e1e09d81c4ff0fb28198ff9a4d68f1e9c501
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 050d9b060fe9976dc9262b2878f570abbdc9bb42
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636907"
 ---
-# <a name="locationfieldmruprefix-element-visual-studio-templates"></a>LocationFieldMRUPrefix (Elemento, Plantillas de Visual Studio)
-Especifica las rutas de acceso usados recientemente (MRU) en el **nuevo proyecto** y **Agregar nuevo elemento** cuadro de diálogo.  
+# <a name="locationfieldmruprefix-element-visual-studio-templates"></a>Elemento LocationFieldMRUPrefix (plantillas de Visual Studio)
+Especifica las rutas de acceso usados más recientemente (MRU) en el **nuevo proyecto** y **Agregar nuevo elemento** cuadro de diálogo.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```xml  
 <LocationFieldMRUPrefix> ... </LocationFieldMRUPrefix>  
 ```  
   
@@ -51,4 +52,4 @@ Especifica las rutas de acceso usados recientemente (MRU) en el **nuevo proyecto
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
+ [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)

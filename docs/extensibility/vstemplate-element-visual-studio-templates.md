@@ -1,5 +1,5 @@
 ---
-title: VSTemplate (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
+title: VSTemplate (elemento) (plantillas de Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,18 +15,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6151dfd852a76caa1dccbae55241af89681fd81
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 260e745db7036981ab0a3c79074d99a2b7c7fbb5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828416"
 ---
-# <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate (Elemento, Plantillas de Visual Studio)
-Contiene todos los metadatos acerca de la plantilla de proyecto, una plantilla de elemento o un kit de inicio.  
+# <a name="vstemplate-element-visual-studio-templates"></a>Elemento VSTemplate (plantillas de Visual Studio)
+Contiene todos los metadatos acerca de la plantilla de proyecto, la plantilla de elemento o el starter kit de.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```csharp  
 <VSTemplate Type="TemplateType" Version="x.x.x">  
     <TemplateData>    </TemplateData>  
     <TemplateContent>    </TemplateContent>  
@@ -39,10 +40,10 @@ Contiene todos los metadatos acerca de la plantilla de proyecto, una plantilla d
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|Descripción|  
-|---------------|-----------------|  
-|`Type`|Identifica la plantilla como una plantilla de proyecto o una plantilla de elementos. Este atributo puede tener un valor de `Project` o `Item`.|  
-|`Version`|Especifica un número de versión para la plantilla. Plantillas de [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] y [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] tiene un `Version` valor del atributo `3.0.0`.|  
+| Atributo | Descripción |
+|-----------| - |
+| `Type` | Identifica la plantilla como una plantilla de proyecto o una plantilla de elemento. Este atributo puede tener un valor de `Project` o `Item`. |
+| `Version` | Especifica un número de versión para la plantilla. Las plantillas en [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] y [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] tiene un `Version` valor del atributo `3.0.0`. |
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
@@ -57,12 +58,12 @@ Contiene todos los metadatos acerca de la plantilla de proyecto, una plantilla d
  Ninguno.  
   
 ## <a name="remarks"></a>Comentarios  
- El `VSTemplate` elemento es el elemento raíz de los archivos .vstemplate.  
+ El `VSTemplate` es el elemento raíz del *.vstemplate* archivos.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra los metadatos de una plantilla de proyecto para una [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación.  
+ El ejemplo siguiente muestra los metadatos para una plantilla de proyecto para un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación.  
   
-```  
+```xml  
 <VSTemplate Type="Project" Version="3.0.0"  
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
     <TemplateData>  
@@ -88,4 +89,4 @@ Contiene todos los metadatos acerca de la plantilla de proyecto, una plantilla d
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
+ [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)

@@ -1,11 +1,11 @@
 ---
 title: IDebugDocumentHost::GetDeferredText | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugDocumentHost.GetDeferredText
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugDocumentHost::GetDeferredText
 ms.assetid: 527da666-fef5-4db3-a319-e68d466a7721
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727125"
 ---
 # <a name="idebugdocumenthostgetdeferredtext"></a>IDebugDocumentHost::GetDeferredText
 Devuelve un intervalo de caracteres que se han agregado mediante el `IDebugDocumentHelper::AddDeferredText` método, en el documento de host original.  

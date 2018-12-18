@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: crear elementos de carpeta personalizados mediante programación | Documentos de Microsoft'
+title: 'Cómo: crear elementos de carpeta personalizados mediante programación'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,14 +16,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ebd3bbc365212b2c6a1ab0691e8e16a7936c9955
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 45423b134f3bc9e0a4e9c791bef8ea24761e38f4
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257665"
 ---
-# <a name="how-to-programmatically-create-custom-folder-items"></a>Cómo: Crear elementos de carpeta personalizados mediante programación
-  Este ejemplo crea una nueva carpeta en Microsoft Office Outlook. El nombre del usuario que ha iniciado sesión se usa para el nombre de la carpeta.  
+# <a name="how-to-programmatically-create-custom-folder-items"></a>Cómo: crear elementos de carpeta personalizados mediante programación
+  En este ejemplo se crea una carpeta nueva en Microsoft Office Outlook. El nombre del usuario que ha iniciado sesión se usa para el nombre de carpeta.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Vea también  
  [Trabajar con carpetas](../vsto/working-with-folders.md)   
- [Cómo: agregar una entrada mediante programación a los contactos de Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)   
- [Cómo: Crear citas mediante programación](../vsto/how-to-programmatically-create-appointments.md)  
+ [Cómo: agregar una entrada a los contactos de Outlook mediante programación](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)   
+ [Cómo: crear citas mediante programación](../vsto/how-to-programmatically-create-appointments.md)  
   
   

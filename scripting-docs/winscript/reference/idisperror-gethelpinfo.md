@@ -1,11 +1,11 @@
 ---
 title: IDispError::GetHelpInfo | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDispError.GetHelpInfo
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDispError::GetHelpInfo
 ms.assetid: a146df13-eda4-4e56-8bf0-cf9886a2150f
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728015"
 ---
 # <a name="idisperrorgethelpinfo"></a>IDispError::GetHelpInfo
 Devuelve la ruta de acceso del archivo de ayuda y el identificador de contexto del tema que explica el error, si es posible.  

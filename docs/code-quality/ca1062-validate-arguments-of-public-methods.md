@@ -1,6 +1,7 @@
 ---
 title: 'CA1062: Validar argumentos de métodos públicos'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -13,13 +14,17 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ac6f150903c54c7bea6b5f092aa472a6b3a6e08e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c5894eaf321204ace98a55a3d08411d61207ff7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857568"
 ---
 # <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062: Validar argumentos de métodos públicos
 
@@ -32,25 +37,25 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="cause"></a>Motivo
 
-Un método visible externamente desreferencia uno de sus argumentos de referencia sin comprobar si ese argumento es `null` (`Nothing` en Visual Basic).
+Un método visible externamente desreferencia uno de sus argumentos de referencia sin comprobar si dicho argumento es `null` (`Nothing` en Visual Basic).
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Todos los argumentos de referencia que se pasan a métodos visibles externamente se deben comprobar para `null`. Si es necesario, producir una <xref:System.ArgumentNullException> cuando el argumento es `null`.
+Todos los argumentos de referencia que se pasan a métodos visibles externamente deben comprobarse `null`. Si procede, produzca una <xref:System.ArgumentNullException> cuando el argumento es `null`.
 
-Si un método se puede llamar desde un ensamblado desconocido porque se ha declarado público o protegido, debe validar todos los parámetros del método. Si el método está diseñado para ser invocado únicamente por ensamblados conocidos, debería realizar el método interno y aplicar el <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> atributo al ensamblado que contiene el método.
+Si un método puede llamarse desde un ensamblado desconocido porque está declarado como público o protegido, debe validar todos los parámetros del método. Si el método está diseñado para ser invocado únicamente por ensamblados conocidos, debería convertir el método interno y aplicar el <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> atributo al ensamblado que contiene el método.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Para corregir una infracción de esta regla, valide cada argumento de referencia con `null`.
+Para corregir una infracción de esta regla, valide cada argumento de referencia contra `null`.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
 
-Puede suprimir una advertencia de esta regla si está seguro de que se ha validado el parámetro desreferenciado otra llamada de método en la función.
+Puede suprimir una advertencia de esta regla si está seguro de que el parámetro desreferenciado ha sido validado por otra llamada de método en la función.
 
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo siguiente se muestra un método que infringe la regla y un método que cumple la regla.
+El ejemplo siguiente muestra un método que infringe la regla y un método que cumple la regla.
 
  ```csharp
  using System;
@@ -120,9 +125,9 @@ End Namespace
 
 ## <a name="example"></a>Ejemplo
 
-Constructores de copias que rellenan el campo o propiedades que son objetos de referencia también pueden infringir la regla CA1062. La infracción se produce porque el objeto copiado que se pasa al constructor de copias podría ser `null` (`Nothing` en Visual Basic). Para resolver la infracción, utilice un método estático (compartido en Visual Basic) para comprobar que el objeto copiado no es null.
+Los constructores de copias que rellenan los campos o propiedades que son objetos de referencia también pueden infringir la regla CA1062. La infracción se produce porque el objeto copiado que se pasa al constructor de copias puede ser `null` (`Nothing` en Visual Basic). Para resolver la infracción, use un método estático de (Shared en Visual Basic) para comprobar que el objeto copiado no es null.
 
-En la siguiente `Person` ejemplo de la clase, el `other` objeto que se pasa a la `Person` constructor de copias podría ser `null`.
+En la siguiente `Person` ejemplo de clase, el `other` objeto que se pasa a la `Person` podría ser el constructor de copias `null`.
 
 ```csharp
 public class Person
@@ -147,7 +152,7 @@ public class Person
 
 ## <a name="example"></a>Ejemplo
 
-En el siguiente ejemplo revisado `Person` ejemplo, el `other` objeto que se pasa al constructor de copias se comprueba primero si hay valores null en la `PassThroughNonNull` método.
+En la siguiente revisión `Person` ejemplo, el `other` primero se comprueba el objeto que se pasa al constructor de copias para null en la `PassThroughNonNull` método.
 
 ```csharp
 public class Person
@@ -176,5 +181,4 @@ public class Person
         return person;
     }
 }
-
 ```

@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetStringChars | Documentos de Microsoft
+title: IDebugProperty3::GetStringChars | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2f7d5430326f57acf686b90f911445cc36dbf02
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7d6df39bcd02fe74e2c6ada24d341cd3d2fdfb75
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932941"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 Recupera la cadena asociada a esta propiedad y lo almacena en un búfer proporcionado por el usuario.  
@@ -52,16 +53,16 @@ int GetStringChars(
  [Solo en C++], `rgString` es un puntero a un búfer que recibe los caracteres Unicode de la cadena. Este búfer debe ser al menos `buflen` caracteres (no bytes) de tamaño.  
   
  `pceltFetched`  
- [out] Donde se devuelve el número de caracteres que se almacenan en realidad en el búfer. (Puede ser `NULL` en C++.)  
+ [out] Donde se devuelve el número de caracteres que realmente se almacenan en el búfer. (Puede ser `NULL` en C++.)  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- En C++, debe tener cuidado para asegurarse de que el búfer sea al menos `buflen` caracteres Unicode de longitud. Tenga en cuenta que un carácter Unicode es una longitud de 2 bytes.  
+ En C++, debe tener cuidado para asegurarse de que el búfer sea al menos `buflen` caracteres Unicode de longitud. Tenga en cuenta que un carácter Unicode es la longitud de 2 bytes.  
   
 > [!NOTE]
->  En C++, la cadena devuelta no incluye un carácter nulo de terminación. Si no especifica, `pceltFetched` especificará el número de caracteres en la cadena.  
+>  En C++, la cadena devuelta no incluye un carácter nulo de terminación. Si no especifica, `pceltFetched` a especificar el número de caracteres en la cadena.  
   
 ## <a name="example"></a>Ejemplo  
  

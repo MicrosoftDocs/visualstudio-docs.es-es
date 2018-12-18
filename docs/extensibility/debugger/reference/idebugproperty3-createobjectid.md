@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::CreateObjectID | Documentos de Microsoft
+title: IDebugProperty3::CreateObjectID | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: df4e45c442745652b3305fd91146bd31ffe79e4b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1514c21345356bbece6680b9ccd212d15dbfa191
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920981"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
 Crea un identificador único para esta propiedad para asegurarse de que es único entre todas las demás propiedades.  
@@ -37,15 +38,15 @@ int CreateObjectID();
 ```  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método se llama cuando el Administrador de sesión de depuración quiere asegurarse de que esta propiedad se identifica de forma única entre todas las demás propiedades. El motor de depuración (Alemania) es compatible con este método, a menos que ya forma única se identifican las propiedades de que se ocupa. Si la DE no admite este método, devuelve `E_NOTIMPL`.  
+ Este método se llama cuando el Administrador de sesión de depuración desea asegurarse de que esta propiedad se identifica entre todas las demás propiedades. El motor de depuración (DE) es compatible con este método, a menos que ya de forma exclusiva se identifican las propiedades que se ocupa. Si la DE no admite este método, devuelve `E_NOTIMPL`.  
   
- Cualquier identificador único creado con `CreateObjectID` se destruye cuando la [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md) se llama al método; Esto también marca el final de la necesidad de que identifica de forma única esta propiedad.  
+ Cualquier identificador creado con `CreateObjectID` se destruye cuando la [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md) se llama al método; Esto también señala el final de la necesidad de forma única que identifica esta propiedad.  
   
 > [!NOTE]
->  No hay ningún método para recuperar este identificador único, por lo que la DE puede hacer lo que desee para identificadores únicos cuando el `CreateObjectID` se llama al método.  
+>  No hay ningún método para recuperar este identificador único, por lo que puede hacer la DE cualquier valor para los identificadores únicos cuando la `CreateObjectID` se llama al método.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   

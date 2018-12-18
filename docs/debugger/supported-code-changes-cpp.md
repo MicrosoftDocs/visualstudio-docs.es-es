@@ -1,5 +1,5 @@
 ---
-title: Admite cambios en el código (C++) | Documentos de Microsoft
+title: Admite los cambios de código (C++) | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -25,11 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb97c08b8673854e0fe0d0bbd64efbe038227c43
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c1d4333014f63bec73c13b3a7b1d5f9c7d59697f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854122"
 ---
 # <a name="supported-code-changes-c"></a>Cambios admitidos en el código (C++)
 Con Visual C++, Editar y continuar controla la mayoría de los tipos de cambios del código. Sin embargo, algunos cambios no se pueden aplicar durante la ejecución de programa. Para aplicar estos cambios, debe detener la ejecución y compilar una versión nueva del código.  
@@ -39,38 +40,38 @@ Con Visual C++, Editar y continuar controla la mayoría de los tipos de cambios 
 ##  <a name="BKMK_Unsupported_changes"></a> Cambios no admitidos  
  Los cambios siguientes en C/C++ no se pueden aplicar durante una sesión de depuración:  
   
--   La mayoría de los cambios en datos globales o estáticos.  
+- La mayoría de los cambios en datos globales o estáticos.  
   
--   Cambios en los ejecutables copiados de otro equipo y no compilados localmente.  
+- Cambios en los ejecutables copiados de otro equipo y no compilados localmente.  
   
--   Cambios en un tipo de datos que afectan al diseño de un objeto, por ejemplo los miembros de datos de una clase.  
+- Cambios en un tipo de datos que afectan al diseño de un objeto, por ejemplo los miembros de datos de una clase.  
   
--   Agregar más de 64 KB de código o datos nuevos.  
+- Agregar más de 64 KB de código o datos nuevos.  
   
--   Agregar variables que requieran un constructor en un punto anterior al puntero de instrucción.  
+- Agregar variables que requieran un constructor en un punto anterior al puntero de instrucción.  
   
--   Cambios que afecten a una sección del código que requiera una inicialización en tiempo de ejecución.  
+- Cambios que afecten a una sección del código que requiera una inicialización en tiempo de ejecución.  
   
--   Agregar controladores de excepciones, en algunos casos.  
+- Agregar controladores de excepciones, en algunos casos.  
   
--   Cambios en archivos de recursos.  
+- Cambios en archivos de recursos.  
   
--   Cambios en el código de archivos de solo lectura.  
+- Cambios en el código de archivos de solo lectura.  
   
--   Cambios en código sin un archivo PDB correspondiente.  
+- Cambios en código sin un archivo PDB correspondiente.  
   
--   Cambios en código que no tiene un archivo de objeto.  
+- Cambios en código que no tiene un archivo de objeto.  
   
- Si realiza alguno de estos cambios y, a continuación, intenta aplicarlos, aparecerá un mensaje de error o advertencia en la **Ventana de salida** .  
+  Si realiza alguno de estos cambios y, a continuación, intenta aplicarlos, aparecerá un mensaje de error o advertencia en la **Ventana de salida** .  
   
--   Editar y continuar no vuelve a actualizar las bibliotecas estáticas. Si realiza un cambio en una biblioteca estática, la ejecución continuará con la versión anterior y no se emitirá ninguna advertencia.  
+- Editar y continuar no vuelve a actualizar las bibliotecas estáticas. Si realiza un cambio en una biblioteca estática, la ejecución continuará con la versión anterior y no se emitirá ninguna advertencia.  
   
 ##  <a name="BKMK_Unsupported_scenarios"></a> Escenarios no admitidos  
  La opción Editar y continuar de C/C++ no se encuentra disponible en los siguientes escenarios de depuración:  
   
 -   Depurar aplicaciones nativas compiladas con [/Zo (Mejorar la depuración optimizada)](/cpp/build/reference/zo-enhance-optimized-debugging)  
   
--   En las versiones de Visual Studio anteriores a Visual Studio 2015 Update 1, depurar componentes o aplicaciones UWP. A partir de Visual Studio 2015 Update 1, se pueden usar Editar y continuar en aplicaciones de C++ de UWP y aplicaciones de DirectX, ya que ahora admite la `/ZI` modificador del compilador con el `/bigobj` cambiar. También puede usar Editar y continuar con binarios compilados con el modificador `/FASTLINK` .  
+-   En las versiones de Visual Studio anteriores a Visual Studio 2015 Update 1, depurar componentes o aplicaciones para UWP. A partir de Visual Studio 2015 Update 1, puede usar Editar y continuar en aplicaciones de C++ de UWP y aplicaciones de DirectX, ya que ahora admite la `/ZI` modificador del compilador con la `/bigobj` cambie. También puede usar Editar y continuar con binarios compilados con el modificador `/FASTLINK` .  
   
 -   Depurar en Windows 98.  
   

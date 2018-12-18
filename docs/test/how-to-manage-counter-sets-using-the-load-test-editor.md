@@ -1,5 +1,5 @@
 ---
-title: Cargar conjuntos de contadores de pruebas en Visual Studio | Microsoft Docs
+title: Carga de conjuntos de contadores de pruebas en Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,16 @@ ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b2ff43592819e5834f1e5f7b5088c00f61d8b1c4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 022e105261c5d1e7f079a29915363ed02812d3bc
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894357"
 ---
-# <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Cómo: Administrar conjuntos de contadores personalizados usando el Editor de prueba de carga
+# <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Cómo: Administrar conjuntos de contadores mediante el Editor de pruebas de carga
 
 Cuando se crea una prueba de carga con el **Asistente para prueba de carga nueva**, se agrega un conjunto de contadores inicial. Este conjunto inicial de contadores ofrece una serie de conjuntos de contadores predefinidos para la prueba de carga.
 
@@ -29,7 +31,9 @@ Cuando se crea una prueba de carga con el **Asistente para prueba de carga nueva
 
 La administración de conjuntos de contadores implica la elección del conjunto de equipos del que desea recopilar datos de rendimiento, así como la asignación de un grupo de conjuntos de contadores para recopilar datos de cada equipo individual. Los contadores se administran en el **Editor de pruebas de carga**.
 
-![Administración de conjuntos de contadores](../test/media/loadtestmanagecountersets.png "LoadTestManageCounterSets")
+![Administrar conjuntos de contadores](../test/media/loadtestmanagecountersets.png)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-manage-counter-sets"></a>Para administrar conjuntos de contadores
 
@@ -54,7 +58,7 @@ La administración de conjuntos de contadores implica la elección del conjunto 
 
      Las etiquetas de equipo permiten identificar un equipo con un nombre fácil de reconocer.
 
-     Las etiquetas se muestran en el nodo **Asignaciones de conjuntos de contadores** del árbol en el Editor de pruebas de carga. Lo que es más importante, las etiquetas se muestran en los informes de Excel, que sirve de ayuda a las partes interesadas para identificar el rol que desempeña el equipo en la prueba de carga. Por ejemplo, "Servidor1 web en lab2" o "SQL Server2 en oficina Phoenix". Para obtener más información, consulte [Informar de los resultados de las pruebas de carga para las comparaciones de pruebas o los análisis de tendencias](../test/compare-load-test-results.md).
+     Las etiquetas se muestran en el nodo **Asignaciones de conjuntos de contadores** del árbol en el Editor de pruebas de carga. Lo que es más importante, las etiquetas se muestran en los informes de Excel, que sirve de ayuda a las partes interesadas para identificar el rol que desempeña el equipo en la prueba de carga. Por ejemplo, "Servidor1 web en lab2" o "SQL Server2 en oficina Phoenix". Para obtener más información, vea [Informar de los resultados de las pruebas de carga para las comparaciones de pruebas o los análisis de tendencias](../test/compare-load-test-results.md).
 
 6.  Elija **Aceptar**.
 

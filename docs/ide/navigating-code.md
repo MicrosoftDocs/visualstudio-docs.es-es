@@ -1,9 +1,8 @@
 ---
-title: Navegación en el código en Visual Studio | Microsoft Docs
-ms.custom: ''
-ms.date: 09/26/2017
-ms.technology:
-- vs-ide-general
+title: Comandos de navegación por el código
+ms.date: 08/14/2018
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, navigation
@@ -21,11 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c36702aad29bbfe7b81ca38cf2bda162fbf5c99e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6ac6fb3ae1f8c4e7fb48c9cd9a0d2b77cb875094
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894474"
 ---
 # <a name="navigate-code"></a>Navegación en el código
 
@@ -33,7 +33,7 @@ Visual Studio ofrece numerosas formas de navegar por el código en el editor. En
 
 ## <a name="navigate-backward-and-navigate-forward-commands"></a>Comandos Navegar hacia atrás y Navegar hacia delante
 
-Puede usar los botones **Navegar hacia atrás** (**CTRL+-**) y **Navegar hacia delante** (**CTRL+Mayús+-**) de la barra de herramientas para mover el punto de inserción a ubicaciones anteriores o para volver a una ubicación más reciente desde una ubicación anterior. Estos botones retienen las últimas 20 ubicaciones del punto de inserción. Estos comandos también están disponibles en el menú **Vista**, en **Navegar hacia atrás** y **Navegar hacia delante**.
+Puede usar los botones **Navegar hacia atrás** (**Ctrl**+**-**) y **Navegar hacia delante** (**Ctrl**+**Mayús**+**-**) de la barra de herramientas para mover el punto de inserción a ubicaciones anteriores o para volver a una ubicación más reciente desde una ubicación anterior. Estos botones retienen las últimas 20 ubicaciones del punto de inserción. Estos comandos también están disponibles en el menú **Vista**, en **Navegar hacia atrás** y **Navegar hacia delante**.
 
 ![Botones de navegación hacia adelante y atrás](../ide/media/vs2017_nav_buttons.png)
 
@@ -51,7 +51,7 @@ Puede navegar por los cuadros desplegables como se indica a continuación:
 
 - Para navegar directamente a un procedimiento u otro miembro de una clase, selecciónelo en la lista desplegable derecha.
 
-- Para cambiar el foco de la ventana de código a la barra de navegación, presione la combinación de teclas de método abreviado **CTRL+F2**.
+- Para cambiar el foco de la ventana de código a la barra de navegación, presione la combinación de teclas de método abreviado **Ctrl**+**F2**.
 
 - Para cambiar el foco de un cuadro a otro en la barra de navegación, presione la tecla **TAB**.
 
@@ -59,36 +59,44 @@ Puede navegar por los cuadros desplegables como se indica a continuación:
 
 - Para devolver el foco de la barra de navegación al código sin necesidad de seleccionar nada, presione la tecla **Esc**.
 
-Para ocultar la barra de navegación, cambie la opción **Barra de navegación** en la configuración Todos los lenguajes del editor de texto (**Herramientas**, **Opciones**, **Editor de texto**, **Todos los lenguajes**), o bien puede cambiar la configuración de lenguajes individuales.
+Para ocultar la barra de navegación, cambie la opción **Barra de navegación** en la configuración de **Editor de texto Todos los lenguajes** (**Herramientas** > **Opciones** > **Editor de texto** > **Todos los lenguajes**), o bien puede cambiar la configuración de lenguajes individuales.
 
 ## <a name="find-all-references"></a>Buscar todas las referencias
 
-Busca todas las referencias al elemento seleccionado en la solución. Puede usar esto para comprobar los posibles efectos secundarios de una refactorización grande o para comprobar el código no alcanzado. Presione **F8** para desplazarse entre los resultados. Para obtener más información, vea [Finding references in your code](finding-references.md) (Buscar referencias en el código).
+Busca todas las referencias al elemento seleccionado en la solución. Puede usar esto para comprobar los posibles efectos secundarios de una refactorización grande o para comprobar el código no alcanzado. Presione **F8** para desplazarse entre los resultados. Para obtener más información, vea [Búsqueda de referencias en el código](finding-references.md).
 
-Entrada        | Función 
+Entrada | Función
 ------------ | ---
-**Teclado** | Coloque el cursor de texto en algún lugar del nombre de tipo y presione **Mayús+F12**.  
-**Mouse**    | Seleccione **Buscar todas las referencias** en el menú contextual.  
+**Teclado** | Coloque el cursor de texto en algún lugar del nombre de tipo y presione **Mayús**+**F12**.
+**Mouse** | Seleccione **Buscar todas las referencias** en el menú contextual.
 
 ## <a name="reference-highlighting"></a>Resaltado de referencia
 
-Al hacer clic en un símbolo en el código fuente, se resaltan todas las instancias de ese símbolo en el documento. Los símbolos resaltados pueden incluir declaraciones y referencias, así como muchos otros símbolos que pueda devolver la función **Buscar todas las referencias** . Estos incluyen los nombres de clases, objetos, variables, métodos y propiedades. En el código de Visual Basic, también se resaltan las palabras clave de muchas estructuras de control. Para desplazarse al siguiente símbolo resaltado o al anterior, presione respectivamente **CTRL+Mayús+flecha abajo** o **CTRL+Mayús+flecha arriba**. Puede cambiar el color de resaltado en **Herramientas**, **Opciones**, **Entorno**, **Fuentes y colores**, **Referencia resaltada**.
+Al hacer clic en un símbolo en el código fuente, se resaltan todas las instancias de ese símbolo en el documento. Los símbolos resaltados pueden incluir declaraciones y referencias, así como muchos otros símbolos que pueda devolver la función **Buscar todas las referencias** . Estos incluyen los nombres de clases, objetos, variables, métodos y propiedades. En el código de Visual Basic, también se resaltan las palabras clave de muchas estructuras de control. Para desplazarse al siguiente símbolo resaltado o al anterior, presione **Ctrl**+**Mayús**+**Flecha abajo** o **Ctrl**+**Mayús**+**Flecha arriba**. Puede cambiar el color de resaltado en **Herramientas** > **Opciones** > **Entorno** > **Fuentes y colores** > **Referencia resaltada**.
 
 ## <a name="go-to-commands"></a>Comandos Ir a
 
-Ir a tiene los comandos siguientes, que están disponibles en el menú **Editar** en **Ir a**:  
+Ir a tiene los comandos siguientes, que están disponibles en el menú **Editar** en **Ir a**:
 
-- **Ir a la línea** (**CTRL+G**): moverse al número de línea especificado en el documento activo.
+- **Ir a la línea** (**Ctrl**+**G**): moverse al número de línea especificado en el documento activo.
 
-- **Ir a todo** (**CTRL+T** o **CTRL+,**): moverse a la línea, tipo, archivo, miembro o símbolo especificados.
+- **Ir a todo** (**Ctrl**+**T** o **Ctrl**+**,**): moverse a la línea, tipo, archivo, miembro o símbolo especificados.
 
-- **Ir al archivo** (**CTRL+1**, **CTRL+F**): moverse al archivo especificado en la solución.
+- **Ir al archivo** (**Ctrl**+**1**, **Ctrl**+**F**): moverse al archivo especificado en la solución.
 
-- **Ir al tipo** (**CTRL+1**, **CTRL+T**): moverse al tipo especificado en la solución.
+- **Ir al archivo reciente** (**Ctrl**+**1**, **Ctrl**+**R**): moverse al archivo especificado que visitó recientemente en la solución (novedad de Visual Studio 2017 versión 15.8).
 
-- **Ir al miembro** (**CTRL+1**, **CTRL+M**): moverse al miembro especificado en la solución.
+- **Ir al tipo** (**Ctrl**+**1**, **Ctrl**+**T**): moverse al tipo especificado en la solución.
 
-- **Ir al símbolo** (**CTRL+1**, **CTRL+S**): moverse al símbolo especificado en la solución.
+- **Ir al miembro** (**Ctrl**+**1**, **Ctrl**+**M**): moverse al miembro especificado en la solución.
+
+- **Ir al símbolo** (**Ctrl**+**1**, **Ctrl**+**S**): moverse al símbolo especificado en la solución.
+
+En Visual Studio 2017 versión 15.8 y posteriores, también están disponibles los siguientes comandos de navegación de **Ir a**:
+
+- **Ir al siguiente problema del archivo** (**Alt**+**Av Pág**) e **Ir al problema anterior del archivo** (**Alt**+**Re Pág**)
+
+- **Ir a la última ubicación de edición** (**Ctrl**+**Mayús**+**Retroceso**)
 
 Obtenga más información relacionada con estos comandos en el tema sobre cómo [buscar código mediante comandos Ir a](../ide/go-to.md).
 
@@ -96,41 +104,41 @@ Obtenga más información relacionada con estos comandos en el tema sobre cómo 
 
 Ir a definición le lleva a la definición del elemento seleccionado. Vea [Ir a definición y Ver la definición](../ide/go-to-and-peek-definition.md) para obtener más información.
 
-Entrada        | Función
+Entrada | Función
 ------------ | ---
 **Teclado** | Coloque el cursor de texto en algún lugar del nombre de tipo y presione **F12**
-**Mouse**    | Haga clic con el botón derecho en el nombre de tipo y seleccione **Ir a definición**, o bien presione **CTRL** y haga clic en el nombre de tipo (nuevo en Visual Studio 2017 versión 15.4).
+**Mouse** | Haga clic con el botón derecho en el nombre de tipo y seleccione **Ir a definición**, o bien presione **CTRL** y haga clic en el nombre de tipo (nuevo en Visual Studio 2017 versión 15.4).
 
 ## <a name="peek-definition"></a>Definición de Peek
 
 La opción Ver la definición muestra la definición del elemento seleccionado en una ventana sin necesidad de salir de la ubicación actual en el editor de código. Para obtener más información, vea [Cómo: Ver y editar código mediante Ver la definición](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) e [Ir a definición y Ver la definición](../ide/go-to-and-peek-definition.md).
 
-Entrada        | Función
+Entrada | Función
 ------------ | ---
-**Teclado** | Coloque el cursor de texto en algún lugar del nombre de tipo y presione **Alt+F12**.
-**Mouse**    | Haga clic con el botón derecho en el nombre de tipo y seleccione **Ver la definición**, o bien presione **CTRL** y haga clic en el nombre de tipo (si tiene activada la opción **Abrir definición en vista de inspección**).
+**Teclado** | Coloque el cursor de texto en algún lugar del nombre de tipo y presione **Alt**+**F12**.
+**Mouse** | Haga clic con el botón derecho en el nombre de tipo y seleccione **Ver la definición**, o bien presione **CTRL** y haga clic en el nombre de tipo (si tiene activada la opción **Abrir definición en vista de inspección**).
 
 ## <a name="go-to-implementation"></a>Ir a implementación
 
 Mediante el uso de Ir a implementación, puede navegar desde una clase base o escribir sus implementaciones. Si existen varias implementaciones, las verá en la ventana **Resultados de la búsqueda de símbolos**:
 
-Entrada        | Función
+Entrada | Función
 ------------ | ---
-**Teclado** | Coloque el cursor de texto en algún lugar del nombre de tipo y presione **CTRL+F12**.
-**Mouse**    | Haga clic con el botón derecho en el nombre de tipo y seleccione **Ir a implementación**
+**Teclado** | Coloque el cursor de texto en algún lugar del nombre de tipo y presione **Ctrl**+**F12**.
+**Mouse** | Haga clic con el botón derecho en el nombre de tipo y seleccione **Ir a implementación**
 
 ## <a name="call-hierarchy"></a>Jerarquía de llamadas
 
 Puede ver las llamadas a y desde un método en la [ventana Jerarquía de llamadas](../ide/reference/call-hierarchy.md):
 
-Entrada        | Función
+Entrada | Función
 ------------ | ---
-**Teclado** | Coloque el cursor de texto en algún lugar del nombre de tipo y presione **CTRL+K**, **CTRL+T**.
-**Mouse**    | Haga clic con el botón derecho en el nombre del miembro y seleccione **Ver jerarquía de llamadas**.
+**Teclado** | Coloque el cursor de texto en algún lugar del nombre de tipo y presione **Ctrl**+**K**, **Ctrl**+**T**.
+**Mouse** | Haga clic con el botón derecho en el nombre del miembro y seleccione **Ver jerarquía de llamadas**.
 
 ## <a name="next-method-and-previous-method-commands-visual-basic"></a>Comandos Método siguiente y Método anterior (Visual Basic)
 
-En los archivos de código de Visual Basic, use estos comandos para mover el punto de inserción hasta otros métodos. Seleccione **Editar**, **Método siguiente** o **Editar**, **Método anterior**.
+En los archivos de código de Visual Basic, use estos comandos para mover el punto de inserción hasta otros métodos. Seleccione **Editar** > **Método siguiente** o **Editar** > **Método anterior**.
 
 ## <a name="structure-visualizer"></a>Visualizador de estructura
 
@@ -138,7 +146,7 @@ La característica de visualizador de estructura en el editor de código muestra
 
 ![Visualizador de estructura](../ide/media/vside_structure_visualizer.png)
 
-Para deshabilitar las líneas guía de estructura, vaya a **Herramientas**, **Opciones**, **Editor de texto**, **General** y desactive el cuadro **Mostrar líneas guía de estructura**.
+Para deshabilitar las líneas guía de estructura, vaya a **Herramientas** > **Opciones** > **Editor de texto** > **General** y desactive la casilla **Mostrar líneas guía de estructura**.
 
 ## <a name="enhanced-scroll-bar"></a>Barra de desplazamiento mejorada
 
@@ -150,5 +158,5 @@ Puede encontrar información relativa a determinado código, como los cambios re
 
 ## <a name="see-also"></a>Vea también
 
-[Escribir código en el editor de código y texto](../ide/writing-code-in-the-code-and-text-editor.md)  
-[Jerarquía de llamadas](../ide/reference/call-hierarchy.md)
+- [Características del editor de código](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Visualización de la jerarquía de llamadas](../ide/reference/call-hierarchy.md)

@@ -1,0 +1,98 @@
+- name: Diagnóstico de gráficos de Visual Studio
+  href: visual-studio-graphics-diagnostics.md
+- name: Información general de Diagnóstico de gráficos de Visual Studio
+  href: overview-of-visual-studio-graphics-diagnostics.md
+- name: Introducción al Diagnóstico de gráficos de Visual Studio
+  href: getting-started-with-visual-studio-graphics-diagnostics.md
+- name: Capturar información de gráficos
+  href: capturing-graphics-information.md
+- name: Documento de registro de gráficos
+  href: graphics-log-document.md
+- name: Análisis de fotograma de gráficos
+  href: graphics-frame-analysis.md
+  items:
+    - name: 1x1 Viewport (Variante de tamaño)
+      href: 1x1-viewport-size-variant.md
+    - name: Variantes 0x/2x/4x MSAA
+      href: 0x-2x-4x-msaa-variants.md
+    - name: 'Variantes de filtrado puntual, bilineal, trilineal y anisotrópico de textura'
+      href: point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md
+    - name: 16bpp (Representar variante de formato de destino)
+      href: 16bpp-render-target-format-variant.md
+    - name: Mip-map (Variante de generación)
+      href: mip-map-generation-variant.md
+    - name: Variante de dimensiones de textura Mitad/cuarto
+      href: half-quarter-texture-dimensions-variant.md
+    - name: BC (Variante de compresión de textura)
+      href: bc-texture-compression-variant.md
+- name: Lista de eventos
+  href: graphics-event-list.md
+- name: Estado de los gráficos
+  href: graphics-state.md
+- name: Etapas de canalización
+  href: graphics-pipeline-stages.md
+- name: Pila de llamadas de eventos
+  href: graphics-event-call-stack.md
+- name: Historial de píxeles
+  href: graphics-pixel-history.md
+- name: Tabla de objetos
+  href: graphics-object-table.md
+- name: Estadísticas de API y memoria
+  href: graphics-api-and-memory-statistics.md
+- name: Validación de fotogramas
+  href: graphics-frame-validation.md
+- name: Depurador de sombreador HLSL
+  href: hlsl-shader-debugger.md
+- name: Herramienta de captura de línea de comandos
+  href: command-line-capture-tool.md
+- name: Ejemplos de diagnóstico de gráficos
+  href: graphics-diagnostics-examples.md
+  items:
+    - name: 'Tutorial: Capturar información de gráficos'
+      href: walkthrough-capturing-graphics-information.md
+    - name: 'Tutorial: Capturar información de gráficos mediante programación'
+      href: walkthrough-capturing-graphics-information-programmatically.md
+    - name: 'Tutorial: Objetos ausentes debido al estado del dispositivo'
+      href: walkthrough-missing-objects-due-to-device-state.md
+    - name: 'Tutorial: Objetos ausentes debido al sombreado de vértices'
+      href: walkthrough-missing-objects-due-to-vertex-shading.md
+    - name: 'Tutorial: Objetos ausentes debido a una canalización mal configurada'
+      href: walkthrough-missing-objects-due-to-misconfigured-pipeline.md
+    - name: 'Tutorial: Depurar errores de representación debidos al sombreado'
+      href: walkthrough-debugging-rendering-errors-due-to-shading.md
+    - name: 'Tutorial: Usar diagnósticos de gráficos para depurar un sombreador de cálculo'
+      href: walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md
+    - name: 'Cómo: Cambiar la máquina de reproducción de diagnóstico de gráficos'
+      href: how-to-change-the-graphics-diagnostics-playback-machine.md
+- name: Referencia (captura mediante programación)
+  href: reference-programmatic-capture.md
+  items:
+    - name: VsgDbg (Clase)
+      href: vsgdbg-class.md
+      items:
+        - name: 'VsgDbg::VsgDbg (Constructor)'
+          href: vsgdbg-vsgdbg-constructor.md
+        - name: 'VsgDbg::~VsgDbg (Destructor)'
+          href: vsgdbg-tilde-vsgdbg-destructor.md
+        - name: AddMessage
+          href: addmessage.md
+        - name: BeginCapture
+          href: begincapture.md
+        - name: CaptureCurrentFrame
+          href: capturecurrentframe.md
+        - name: Copiar (captura mediante programación)
+          href: copy-programmatic-capture.md
+        - name: EndCapture
+          href: endcapture.md
+        - name: Init
+          href: init.md
+        - name: ToggleHUD
+          href: togglehud.md
+        - name: UnInit
+          href: uninit.md
+    - name: DONT_SAVE_VSGLOG_TO_TEMP
+      href: dont-save-vsglog-to-temp.md
+    - name: VSG_DEFAULT_RUN_FILENAME
+      href: vsg-default-run-filename.md
+    - name: VSG_NODEFAULT_INSTANCE
+      href: vsg-nodefault-instance.md

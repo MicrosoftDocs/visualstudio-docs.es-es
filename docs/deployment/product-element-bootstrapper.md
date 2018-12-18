@@ -1,5 +1,5 @@
 ---
-title: '&lt;Producto&gt; elemento (arranque) | Documentos de Microsoft'
+title: '&lt;Producto&gt; (elemento, arranque) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,18 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa27f5b2af87ec3a174c26ccae1ad4e4e47749b3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 90179df4595ea58a771dd941ea388555b52c7374
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080410"
 ---
-# <a name="ltproductgt-element-bootstrapper"></a>&lt;Producto&gt; elemento (arranque)
+# <a name="ltproductgt-element-bootstrapper"></a>&lt;Producto&gt; (elemento, arranque)
 El `Product` elemento es el elemento XML de nivel superior dentro de un archivo de producto.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```xml  
 <Product  
 ProductCode  
 >  
@@ -138,7 +139,7 @@ ProductCode
 </Package>  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementos y atributos  
+## <a name="elements-and-attributes"></a>Los elementos y atributos  
  El `Product` elemento es necesario en un archivo de producto. Tiene el siguiente atributo.  
   
 |Atributo|Descripción|  
@@ -146,9 +147,9 @@ ProductCode
 |`ProductCode`|Un identificador único para el producto.|  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo de código siguiente se muestra un archivo de producto completo para la instalación de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
+ El ejemplo de código siguiente muestra un archivo de producto completo para la instalación de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
   
 <Product  
@@ -251,4 +252,4 @@ ProductCode
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)
+ [Referencia de esquema de paquete y del producto](../deployment/product-and-package-schema-reference.md)

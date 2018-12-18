@@ -1,5 +1,5 @@
 ---
-title: Agregar conjuntos de contadores personalizados para pruebas de carga en Visual Studio | Microsoft Docs
+title: Adición de conjuntos de contadores personalizados para pruebas de carga en Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,16 @@ ms.assetid: 499aca80-1069-408d-ac68-326da6a50645
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f811ee784a0cb40fb1e5daf00f0ccf3c2ca16bfe
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 76ba63b1ca84a09294226ad8c4924df9b1fbb321
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894695"
 ---
-# <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Cómo: Agregar conjuntos de contadores personalizados usando el Editor de prueba de carga
+# <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Cómo: Agregar conjuntos de contadores personalizados mediante el Editor de pruebas de carga
 
 Cuando se crea una prueba de carga con el **Asistente para prueba de carga nueva**, se agrega un conjunto de contadores inicial. Este conjunto inicial de contadores ofrece una serie de conjuntos de contadores predefinidos para la prueba de carga.
 
@@ -26,7 +28,9 @@ Cuando se crea una prueba de carga con el **Asistente para prueba de carga nueva
 
 Los contadores se administran en el **Editor de pruebas de carga**. Los conjuntos de contadores que ya se han agregado a la prueba están visibles en el nodo **Conjuntos de contadores** de la prueba de carga. Después de crear una prueba de carga, puede agregar nuevos conjuntos de contadores personalizados a la misma.
 
-![Conjunto de contadores personalizado](../test/media/loadtestcustomcounter.png "LoadTestCustomCounter")
+![Conjunto de contadores personalizado](../test/media/loadtestcustomcounter.png)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-add-a-custom-counter-set-to-a-load-test"></a>Para agregar un conjunto de contadores personalizados a una prueba de carga
 
@@ -37,9 +41,9 @@ Los contadores se administran en el **Editor de pruebas de carga**. Los conjunto
 3.  Haga clic con el botón derecho en el nodo **Conjuntos de contadores** y seleccione **Agregar conjunto de contadores personalizados**.
 
     > [!NOTE]
-    > El conjunto de contadores recibe un nombre predeterminado, como **Custom1**. Este nombre puede cambiarse en la ventana **Propiedades**. Pulse F4 para abrir la ventana **Propiedades**.
+    > El conjunto de contadores recibe un nombre predeterminado, como **Custom1**. Este nombre puede cambiarse en la ventana **Propiedades**. Presione **F4** para abrir la ventana **Propiedades**.
 
-4.  Para agregar contadores a su conjunto de contadores personalizados, haga clic con el botón derecho en el nuevo conjunto de contadores y, a continuación, elija **Agregar contadores**. Para obtener más información sobre cómo agregar contadores, vea [Cómo: Agregar contadores a conjuntos de contadores](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md).
+4.  Para agregar contadores a su conjunto de contadores personalizados, haga clic con el botón derecho en el nuevo conjunto de contadores y, a continuación, elija **Agregar contadores**. Para más información sobre cómo agregar contadores, consulte [Cómo: Agregar contadores a conjuntos de contadores](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md).
 
     > [!NOTE]
     > Otra forma de agregar un conjunto de contadores personalizados es hacer clic con el botón secundario en un conjunto de contadores existente, elegir copiar y, a continuación, pegarlo en el nodo de conjuntos de contadores. Si se copian contadores adicionales que no son necesarios, pueden eliminarse. Puede cambiar el nombre del nuevo conjunto de contadores en la ventana **Propiedades**.

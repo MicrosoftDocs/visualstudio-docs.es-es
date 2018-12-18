@@ -1,13 +1,13 @@
 ---
 title: Se esperaba &#39; catch &#39; | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1033
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: f1cd947f-eba2-411e-8e84-8ca86f608643
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633795"
 ---
 # <a name="expected-39catch39"></a>Se esperaba &#39; catch &#39;
 Usar el control de excepciones **intente** bloquear, pero no ha escrito asociado **detectar** instrucción. El mecanismo de control de excepciones requiere que el código que puede producir un error, junto con el código que no se debe ejecutar si se produce una excepción, se ajusta dentro de un **intente** bloque. Las excepciones se inician desde el **intente** bloquee mediante el **throw** instrucción y capturadas fuera de la **intente** bloque con uno o varios **catch**instrucciones.  

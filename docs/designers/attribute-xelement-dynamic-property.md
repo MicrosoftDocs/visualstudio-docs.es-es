@@ -1,6 +1,7 @@
 ---
 title: Attribute (Propiedad dinámica de XElement)
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: reference
 ms.assetid: 8440fc7d-b3b4-4726-8ec8-492e6af79642
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9378a7649a3e99a0327586ab2e9f7234b66615f4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: caacdd787f1765721d281db885364aafc36c5183
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890014"
 ---
 # <a name="attribute-xelement-dynamic-property"></a>Attribute (Propiedad dinámica de XElement)
 
@@ -21,7 +23,7 @@ Obtiene un indizador que se usa para recuperar la instancia del atributo que se 
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```xaml
 elem.Attribute[{namespaceName}attribName]
 ```
 

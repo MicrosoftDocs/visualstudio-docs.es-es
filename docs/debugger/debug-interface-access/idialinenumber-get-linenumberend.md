@@ -1,5 +1,5 @@
 ---
-title: 'Idialinenumber:: Get_linenumberend | Documentos de Microsoft'
+title: Get_linenumberend | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,14 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 879201b11c74ab15897a5fba9550ddbe243cddc5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a6a0dfff78c54c1e051e04c33ae73d82691bf0d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896398"
 ---
 # <a name="idialinenumbergetlinenumberend"></a>IDiaLineNumber::get_lineNumberEnd
-Recupera el número de línea de origen basado en uno cuando finaliza la instrucción o expresión.  
+Recupera el número de línea basado en uno de origen donde finaliza la instrucción o expresión.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -36,7 +37,7 @@ HRESULT get_lineNumberEnd (
  [out] Devuelve el número de línea donde finaliza la instrucción o expresión. Si el valor es cero, la información de extremo no está presente.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

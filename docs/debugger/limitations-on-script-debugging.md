@@ -1,5 +1,5 @@
 ---
-title: Limitaciones sobre la depuración de Script | Documentos de Microsoft
+title: Limitaciones de la depuración de scripts | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -19,11 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6679e781e564a58d6a98b7d0190f2f2b4e9fa74
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9c85f990d08a41bd4b4ee25190d0c5b6bd99d340
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058027"
 ---
 # <a name="limitations-on-script-debugging"></a>Limitaciones de la depuración de script
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] admite la depuración de script en el cliente, sujeta a las limitaciones descritas en este tema.  
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/18/2018
   
 -   Los puntos de interrupción se deben establecer dentro de bloques `<script>`. No se pueden asignar puntos de interrupción en script en línea o en bloques `<% %>`.  
   
--   La dirección URL del explorador de la página debe contener el nombre de página. Por ejemplo: http://microsoft.com/default.apsx. Asignación de punto de interrupción no puede reconocer una redirección de una dirección como http://microsoft.com en la página predeterminada.  
+-   La dirección URL del explorador de la página debe contener el nombre de página. Por ejemplo: http://microsoft.com/default.apsx. Asignación de punto de interrupción no puede reconocer una redirección desde una dirección como http://microsoft.com en la página predeterminada.  
   
 -   El punto de interrupción se debe establecer en la página especificada en la dirección URL del explorador, no en un archivo de control de ASPX (ascx), la página maestra u otro archivo que incluya dicha página. No se pueden asignar puntos de interrupción establecidos en páginas incluidas.  
   
@@ -44,7 +45,7 @@ ms.lasthandoff: 04/18/2018
 ## <a name="breakpoint-mapping-and-duplicate-lines"></a>Asignación de puntos de interrupción y líneas duplicadas  
  Para buscar la ubicación correspondiente en el script de cliente y de servidor, el algoritmo de asignación de puntos de interrupción examina el código en cada línea. El algoritmo supone que cada línea es única. Si dos o más líneas contienen el mismo código, y establece un punto de interrupción en una de dichas líneas duplicadas, el algoritmo de asignación de puntos de interrupción podría seleccionar el duplicado equivocado en el archivo de cliente. Para evitarlo, agregue un comentario a la línea en la que ha establecido el punto de interrupción. Por ejemplo:  
   
-```  
+```csharp
 i++ ;  
 i ++; // I added a comment, so this line is now unique  
 i ++;  

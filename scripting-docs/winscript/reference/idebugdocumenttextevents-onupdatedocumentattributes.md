@@ -1,11 +1,11 @@
 ---
 title: IDebugDocumentTextEvents::onUpdateDocumentAttributes | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugDocumentTextEvents.onUpdateDocumentAttributes
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugDocumentTextEvents::onUpdateDocumentAttributes
 ms.assetid: 48fa909c-14c2-4ca4-af86-a5809c72dd39
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727945"
 ---
 # <a name="idebugdocumenttexteventsonupdatedocumentattributes"></a>IDebugDocumentTextEvents::onUpdateDocumentAttributes
 Indica que se cambian los atributos del documento.  

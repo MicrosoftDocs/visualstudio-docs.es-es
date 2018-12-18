@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_lowerbound | Documentos de Microsoft'
+title: Get_lowerbound | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,14 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f513f4653ee2fe14d0b7f99f54c4680f8f1adc73
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bc793f3cc66a822dd661c0e23cf98a3734a5695f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912570"
 ---
 # <a name="idiasymbolgetlowerbound"></a>IDiaSymbol::get_lowerBound
-Recupera el límite inferior de una dimensión de la matriz de FORTRAN.  
+Recupera el límite inferior de una dimensión de matriz de FORTRAN.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -33,10 +34,10 @@ HRESULT get_lowerBound (
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa el límite inferior de una dimensión de la matriz de FORTRAN.  
+ [out] Devuelve un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa el límite inferior de una dimensión de matriz de FORTRAN.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  

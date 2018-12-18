@@ -10,28 +10,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eaebb7afc76066e9c1c53b0649c70dd346ddb72f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3bfc59eb1cec7e4ed5ef9b7955438fffb03ca5d4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832906"
 ---
 # <a name="counter"></a>Contador
 La opción **Counter** recopila datos de los contadores de rendimiento del procesador (hardware).  
   
--   Si usa el método de generación de perfiles mediante muestreo, **Counter** especifica el contador de rendimiento del procesador y el número de eventos de contador que se usarán como intervalo de muestreo. Cuando se usa el muestreo solamente se puede especificar un contador.  
+- Si usa el método de generación de perfiles mediante muestreo, **Counter** especifica el contador de rendimiento del procesador y el número de eventos de contador que se usarán como intervalo de muestreo. Cuando se usa el muestreo solamente se puede especificar un contador.  
   
--   Si usa el método de generación de perfiles mediante instrumentación, el número de eventos de contador que se produjeron en el intervalo entre los eventos de colección anterior y actual figuran como campos independientes en los informes del generador de perfiles. Cuando se usa la instrumentación se pueden especificar varias opciones **Counter**.  
+- Si usa el método de generación de perfiles mediante instrumentación, el número de eventos de contador que se produjeron en el intervalo entre los eventos de colección anterior y actual figuran como campos independientes en los informes del generador de perfiles. Cuando se usa la instrumentación se pueden especificar varias opciones **Counter**.  
   
- Cada tipo de procesador tiene su propio conjunto de contadores de rendimiento de hardware. El generador de perfiles define un conjunto de contadores de rendimiento genéricos que son comunes a casi todos los procesadores. Para enumerar los contadores genéricos y específicos del procesador del equipo, utilice el comando **QueryCounters** de VSPerfCmd.  
+  Cada tipo de procesador tiene su propio conjunto de contadores de rendimiento de hardware. El generador de perfiles define un conjunto de contadores de rendimiento genéricos que son comunes a casi todos los procesadores. Para enumerar los contadores genéricos y específicos del procesador del equipo, utilice el comando **QueryCounters** de VSPerfCmd.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cmd  
 VSPerfCmd.exe {/Launch:AppName | /Attach PID} /Counter:Name[,Reload[,FriendlyName]][Options]  
 ```  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Method /Counter:Name[,Reload[,FriendlyName]][/Counter:Name[,Reload[,FriendlyName]]][Options]  
 ```  
   
@@ -62,7 +63,7 @@ VSPerfCmd.exe /Start:Method /Counter:Name[,Reload[,FriendlyName]][/Counter:Name[
   
  En el ejemplo del método de instrumentación se muestra cómo inicializar el generador de perfiles para recopilar eventos del contador L2InstructionFetches. El nombre de contador L2InstructionFetches es específico del procesador.  
   
-```  
+```cmd  
 ; Sample Method Example  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 VSPerfCmd.exe /Launch:TestApp.exe /Counter:NonHaltedCycles,1000,"Non-Halted Cycles"  
@@ -73,6 +74,6 @@ VSPerfCmd.exe /Start:Trace /Output:TestApp.exe.vsp /Counter:L2InstructionFetches
   
 ## <a name="see-also"></a>Vea también  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Generar perfiles de servicios](../profiling/command-line-profiling-of-services.md)
+ [Generación de perfiles de aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Generación de perfiles de aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Generar perfiles para servicios](../profiling/command-line-profiling-of-services.md)

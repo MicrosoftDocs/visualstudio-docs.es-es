@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInlineFramesByRVA | Documentos de Microsoft
+title: IDiaSession::findInlineFramesByRVA | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,14 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0669d99cfc7ea1aa345a651692641a4bd2ac8d2a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0ebb32b9b22de8d4092c53f56accf1d953bbc94a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876885"
 ---
 # <a name="idiasessionfindinlineframesbyrva"></a>IDiaSession::findInlineFramesByRVA
-Recupera una enumeración que permite a un cliente recorrer en iteración todos los fotogramas en línea en una dirección virtual relativa (RVA) especificado.  
+Recupera una enumeración que permite que un cliente recorrer en iteración todos los marcos en línea en una dirección virtual relativa (RVA) especificado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -41,7 +42,7 @@ HRESULT findInlineFramesByRVA (
  [out] Contiene un `IDiaEnumSymbols` objeto que contiene la lista de fotogramas que se recuperan.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

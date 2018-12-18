@@ -1,6 +1,7 @@
 ---
 title: Element (Propiedad dinámica de XElement)
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: reference
 apiname:
@@ -12,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bdcb6f4524f4f2db7f119319cbb38a09f83f201
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bf8d964a41193d1db845a608749b0ca671dd9349
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924058"
 ---
 # <a name="element-xelement-dynamic-property"></a>Element (Propiedad dinámica de XElement)
 
@@ -24,7 +26,7 @@ Obtiene un indizador que se utiliza para recuperar la instancia del elemento sec
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```xaml
 elem.Element[{namespaceName}localName]
 ```
 

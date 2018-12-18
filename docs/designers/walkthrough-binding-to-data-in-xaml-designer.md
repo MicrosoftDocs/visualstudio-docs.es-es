@@ -1,12 +1,9 @@
 ---
-title: "Tutorial: Enlazar a datos en el Diseñador XAML | Microsoft Docs"
-ms.custom: 
+title: Enlace a datos en el Diseñador XAML
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner.DataBinding
 dev_langs:
@@ -14,28 +11,29 @@ dev_langs:
 - VB
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: ef8826fd01c0eec45f2daea5900c5e440a5cebb0
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: f1effd15666839b6e48bcebf46120585c4cfc36c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282890"
 ---
-# <a name="walkthrough-binding-to-data-in-xaml-designer"></a>Tutorial: Enlazar a datos en el Diseñador XAML
+# <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Tutorial: Enlace a datos en el Diseñador XAML
 
 En el Diseñador de XAML, puede establecer las propiedades de enlace de datos mediante el uso de la mesa de trabajo y la ventana Propiedades. En el ejemplo de este tutorial se muestra cómo enlazar datos a un control. En concreto, el tutorial muestra cómo crear una clase simple de carro de la compra que tenga una propiedad [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) denominada `ItemCount` y luego enlazar la propiedad `ItemCount` a la propiedad **Text** de un control [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock).
 
 ## <a name="to-create-a-class-to-use-as-a-data-source"></a>Crear una clase que se va a usar como origen de datos
 
-1. En el menú **Archivo**, seleccione **Nuevo**> **Proyecto**.
+1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
 
 1. En el cuadro de diálogo **Nuevo proyecto**, elija el nodo de **Visual C#** o **Visual Basic**, expanda el nodo **Escritorio de Windows** y después elija la plantilla **Aplicación WPF**.
 
 1. Asigne un nombre al proyecto **BindingTest** y después elija el botón **Aceptar**.
 
-1. Abra el archivo MainWindow.xaml.cs (o MainWindow.xaml.vb) y agregue el código siguiente. En C#, agregue el código en el espacio de nombres `BindingTest` (antes del paréntesis de cierre final del archivo). En Visual Basic, agregue simplemente la nueva clase.
+1. Abra el archivo **MainWindow.xaml.cs** (o **MainWindow.xaml.vb**) y agregue el código siguiente. En C#, agregue el código en el espacio de nombres `BindingTest` (antes del paréntesis de cierre final del archivo). En Visual Basic, agregue simplemente la nueva clase.
 
    ```csharp
    public class ShoppingCart : DependencyObject
@@ -75,7 +73,7 @@ En el Diseñador de XAML, puede establecer las propiedades de enlace de datos me
 
 ## <a name="to-bind-the-itemcount-property-to-a-textblock-control"></a>Enlazar la propiedad ItemCount a un control TextBlock
 
-1. En el Explorador de soluciones, abra el menú contextual de MainWindow.xaml y elija **Diseñador de vistas**.
+1. En el Explorador de soluciones, abra el menú contextual de **MainWindow.xaml** y elija **Diseñador de vistas**.
 
 1. En el cuadro de herramientas, elija un control [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid) y agréguelo al formulario.
 
@@ -85,7 +83,7 @@ En el Diseñador de XAML, puede establecer las propiedades de enlace de datos me
 
      En la siguiente ilustración, se muestra el cuadro de diálogo **Seleccionar objeto** con **ShoppingCart** seleccionado.
 
-     ![Cuadro de diálogo Seleccionar objeto](../designers/media/blendselectobject.PNG "BlendSelectObject")
+     ![Cuadro de diálogo Seleccionar objeto](../designers/media/blendselectobject.png)
 
 1. En el **cuadro de herramientas**, elija un control `TextBlock` para agregar al formulario.
 
@@ -95,7 +93,7 @@ En el Diseñador de XAML, puede establecer las propiedades de enlace de datos me
 
      En la siguiente ilustración, se muestra el cuadro de diálogo **Crear enlace de datos** con la propiedad **ItemCount** seleccionada.
 
-     ![Cuadro de diálogo Crear enlace de datos](../designers/media/xaml_create_data_binding.png "xaml_create_data_binding")
+     ![Cuadro de diálogo Crear enlace de datos](../designers/media/xaml_create_data_binding.png)
 
 1. Presione **F5** para ejecutar la aplicación.
 
@@ -103,5 +101,5 @@ En el Diseñador de XAML, puede establecer las propiedades de enlace de datos me
 
 ## <a name="see-also"></a>Vea también
 
-[Crear una UI usando el Diseñador XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)  
-[Agregar convertidor de valores (Cuadro de diálogo)](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)
+- [Creación de una IU con el Diseñador XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+- [Agregar convertidor de valores (Cuadro de diálogo)](https://msdn.microsoft.com/library/c5f3d110-a541-4b55-8bca-928f77778af8)

@@ -1,9 +1,9 @@
 ---
-title: Fragmentos de código de Visual C++ | Microsoft Docs
-ms.custom: ''
+title: Fragmentos de código de Visual C++
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
@@ -11,11 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa6057f45c3c9030264f6a795caece6ed8a3b28e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f119f3b2bc438eacfaaa722bd57fb440aa303052
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948933"
 ---
 # <a name="visual-c-code-snippets"></a>Fragmentos de código de Visual C++
 
@@ -23,9 +24,9 @@ En Visual Studio se pueden usar fragmentos de código para agregar código de us
 
 Hay dos opciones: agregar un fragmento de código en una ubicación concreta del código (inserción) o rodear el código seleccionado con un fragmento de código.
 
-## <a name="inserting-a-code-snippet"></a>Insertar un fragmento de código
+## <a name="insert-a-code-snippet"></a>Insertar un fragmento de código
 
-Para insertar un fragmento de código, abra un archivo de código de C++ (.cpp o .h), haga clic en cualquier parte dentro del archivo y elija entre las acciones siguientes:
+Para insertar un fragmento de código, abra un archivo de código de C++ (*.cpp* o *.h*), haga clic en cualquier parte dentro del archivo y elija entre las acciones siguientes:
 
 - Haga clic con el botón derecho para ver el menú contextual y seleccione **Insertar fragmento de código**.
 
@@ -41,9 +42,9 @@ Verá una lista de opciones que empiezan por **#if**. Al seleccionar **#if**, ve
 #endif // 0
 ```
 
-A continuación, puede reemplazar el 0 por la condición correcta.
+A continuación, puede reemplazar el **0** por la condición correcta.
 
-## <a name="using-a-code-snippet-to-surround-selected-code"></a>Usar un fragmento de código para rodear el código seleccionado
+## <a name="use-a-code-snippet-to-surround-selected-code"></a>Usar un fragmento de código para rodear el código seleccionado
 
 Para rodear el código seleccionado con un fragmento de código, seleccione una línea (o varias) y elija entre las acciones siguientes:
 
@@ -51,7 +52,7 @@ Para rodear el código seleccionado con un fragmento de código, seleccione una 
 
 - En el menú **Edición** > **IntelliSense**, seleccione **Envolver con**.
 
-- En un teclado, presione: **Ctrl**+**K**+**S**
+- En un teclado, presione: **CTRL**+**K**+**S**
 
 Seleccione **#if**. Verá algo parecido a esto:
 
@@ -71,7 +72,7 @@ La mayoría de los nombres de los fragmentos de código se explican por sí mism
 
 ## <a name="class-vs-classi"></a>Class frente a classi
 
-El fragmento de código **class** proporciona la definición de una clase denominada MyClass, con el constructor y el destructor predeterminados adecuados, donde las definiciones de constructor y destructor se encuentran fuera de la clase:
+El fragmento de código **class** proporciona la definición de una clase denominada `MyClass`, con el constructor y el destructor predeterminados adecuados, donde las definiciones de constructor y destructor se encuentran fuera de la clase:
 
 ```cpp
 class MyClass
@@ -93,7 +94,7 @@ MyClass::~MyClass()
 }
 ```
 
-El fragmento de código **classi** proporciona también la definición de una clase denominada MyClass, pero el constructor y el destructor predeterminados se definen en la definición de clase:
+El fragmento de código **classi** proporciona también la definición de una clase denominada `MyClass`, pero el constructor y el destructor predeterminados se definen en la definición de clase:
 
 ```cpp
 class MyClass
@@ -153,7 +154,7 @@ class SomeClass {
 };
 ```
 
-Si se inserta el fragmento de código de destructor, proporciona un destructor para SomeClass:
+Si se inserta el fragmento de código de destructor, proporciona un destructor para `SomeClass`:
 
 ```cpp
 class SomeClass {
@@ -169,9 +170,8 @@ Si se intenta insertar el fragmento de destructor fuera de una clase, proporcion
 ```cpp
 ~TypeNamePlaceholder()
 {
-
 ```
 
 ## <a name="see-also"></a>Vea también
 
-[Fragmentos de código](../ide/code-snippets.md)
+- [Fragmentos de código](../ide/code-snippets.md)

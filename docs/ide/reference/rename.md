@@ -1,7 +1,7 @@
 ---
-title: Refactorización de cambio de nombre en Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Refactorizar Cambiar nombre en Visual Studio
 ms.date: 01/26/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
@@ -14,11 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5735203131811b9423cd34f430665fb16a51ad34
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4cde6fb353db2fc018104a031dd17b943b2b2247
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295961"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Refactorización de cambio de nombre de un símbolo de código
 
@@ -40,34 +41,34 @@ Esta refactorización se aplica a lo siguiente:
 
    - C#:
 
-    ![Código resaltado (C#)](media/rename-highlight-cs.png)
+       ![Código resaltado (C#)](media/rename-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Código resaltado (Visual Basic)](media/rename-highlight-vb.png)
+       ![Código resaltado (Visual Basic)](media/rename-highlight-vb.png)
 
-1. A continuación, realice alguno de los siguientes procedimientos:
+2. A continuación, realice alguno de los siguientes procedimientos:
 
    - **Teclado**
-     - Presione **CTRL+R** y, a continuación, **CTRL+R**. (Tenga en cuenta que su método abreviado de teclado puede ser diferente en función del perfil que haya seleccionado).
+      - Presione **CTRL+R** y, a continuación, **CTRL+R**. (Tenga en cuenta que su método abreviado de teclado puede ser diferente en función del perfil que haya seleccionado).
    - **Mouse**
-     - Seleccione **Editar > Refactorizar > Cambiar nombre**.
-     - Haga clic con el botón derecho en el código y seleccione **Cambiar nombre**.
+      - Seleccione **Editar > Refactorizar > Cambiar nombre**.
+      - Haga clic con el botón derecho en el código y seleccione **Cambiar nombre**.
 
-1. Cambie el nombre del elemento escribiendo el nuevo nombre.
+3. Cambie el nombre del elemento escribiendo el nuevo nombre.
 
    - C#:
 
-    ![Animación del cambio de nombre (C#)](media/rename-animated-cs.gif)
+      ![Animación del cambio de nombre (C#)](media/rename-animated-cs.gif)
 
    - Visual Basic:
 
-    ![Cambio de nombre (VB)](media/rename-rename-vb.png)
+      ![Cambio de nombre (VB)](media/rename-rename-vb.png)
 
    > [!TIP]
    > También puede actualizar los comentarios y otras cadenas para que usen este nuevo nombre, así como [obtener una vista previa de los cambios](../../ide/preview-changes.md) antes de guardarlos; para ello, use las casillas del cuadro **Cambiar nombre** que aparece en la parte superior derecha del editor.
 
-1. Cuando esté satisfecho con el cambio, seleccione el botón **Aplicar** o presione **Entrar**. Los cambios se confirmarán.
+4. Cuando esté satisfecho con el cambio, seleccione el botón **Aplicar** o presione **Entrar**. Los cambios se confirmarán.
 
 > [!NOTE]
 > Si usa un nombre que ya existe, lo cual produciría un conflicto, el cuadro **Cambiar nombre** se lo advertirá.
@@ -76,5 +77,5 @@ Esta refactorización se aplica a lo siguiente:
 
 ## <a name="see-also"></a>Vea también
 
-[Refactorización](../refactoring-in-visual-studio.md)  
-[Vista previa de cambios](../../ide/preview-changes.md)
+- [Refactorización](../refactoring-in-visual-studio.md)
+- [Vista previa de cambios](../../ide/preview-changes.md)

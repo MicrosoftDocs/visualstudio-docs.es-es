@@ -1,9 +1,8 @@
 ---
-title: 'Cómo: Dividir una clase en clases parciales (Diseñador de clases) | Microsoft Docs'
-ms.custom: ''
+title: 'Cómo: Dividir una clase en clases parciales (Diseñador de clases)'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer, partial classes
@@ -12,70 +11,76 @@ ms.assetid: 6f6b0b30-3996-4569-9200-20482b3adf90
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 672f0c5a6170b169e9fcfff6332724e2e1bff62f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f5ee6aa016cb75ef9c9822dcd79046680f689fa2
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179172"
 ---
-# <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Cómo: Dividir una clase en clases parciales (Diseñador de clases)
-Puede dividir la declaración de una clase o estructura entre varias declaraciones mediante la palabra clave `Partial` en Visual Basic o la palabra clave `partial` en C#. Puede usar todas las declaraciones parciales que quiera en todos los archivos de código fuente que quiera o en un archivo de código fuente, pero todas las declaraciones deben estar en el mismo ensamblado y en el mismo espacio de nombres.  
-  
-Las clases parciales son útiles en varias situaciones. Por ejemplo, cuando trabaja en proyectos grandes, separar una clase en más de un archivo permite que pueda trabajar en ella más de un programador. Cuando trabaja con código generado por Visual Studio, puede cambiar la clase sin tener que volver a crear el archivo de origen. (Los ejemplos de código generados por Visual Studio incluyen código de contenedor de Windows Forms y servicio Web). Así, puede crear código que use clases generadas automáticamente sin necesidad de modificar el archivo creado por Visual Studio.  
-  
-Hay dos tipos de métodos parciales. En C#, se denominan declarativo y de implementación. En Visual Basic, se denominan de declaración e implementación.  
-  
-El diseñador de clases admite clases y métodos parciales. La forma de tipo en el diagrama de clases hace referencia a una ubicación de declaración única para la clase parcial. Si se define la clase parcial en varios archivos, puede especificar la ubicación de la declaración que va a usar el diseñador de clases estableciendo la propiedad **Ubicación de nuevos miembros** en la ventana **Propiedades**. Es decir, al hacer doble clic en una forma de clase, el diseñador de clases entra en el archivo de origen que contiene la declaración de clase identificada por la propiedad **Ubicación de nuevos miembros**. Cuando hace doble clic en un método parcial de una forma de clase, el diseñador de clases se va a la declaración de método parcial. Asimismo, en la ventana **Propiedades**, la propiedad **Nombre de archivo** hace referencia a la ubicación de la declaración. Para las clases parciales, **Nombre de archivo** enumera todos los archivos que contienen código de declaración e implementación de esa clase. Sin embargo, para los métodos parciales, **Nombre de archivo** muestra solo el archivo que contiene la declaración de método parcial.  
-  
-Los siguientes ejemplos dividen la definición de la clase `Employee` en dos declaraciones, cada una de las cuales define otro procedimiento. Las dos definiciones parciales de los ejemplos podrían estar en un archivo de origen o en dos archivos distintos.  
-  
-> [!NOTE]
->  Visual Basic usa definiciones de clase parcial para separar el código generado por Visual Studio del código creado por el usuario. El código se divide en archivos de código fuente distintos. Por ejemplo, el **Diseñador de Windows Forms`Form` define clases parciales para controles como** . No debe modificar el código generado en estos controles.  
-  
-Para obtener más información sobre los tipos parciales en Visual Basic, vea [Partial](/dotnet/visual-basic/language-reference/modifiers/partial).  
-  
-## <a name="example"></a>Ejemplo  
-Para dividir una definición de clase en Visual Basic, use la palabra clave `Partial`, como se muestra en el ejemplo siguiente.  
-  
-```vb  
-' First part of class definition.  
-Partial Public Class Employee  
-    Public Sub CalculateWorkHours()  
-    End Sub  
-End Class  
-  
-' Second part of class definition.  
-Partial Public Class Employee  
-    Public Sub CalculateTaxes()  
-    End Sub  
-End Class  
-```  
+# <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Cómo: Dividir una clase en clases parciales en el Diseñador de clases
 
-## <a name="example"></a>Ejemplo  
-Para dividir una definición de clase en C#, use la palabra clave `partial`, como se muestra en el ejemplo siguiente.  
-  
-```csharp  
-// First part of class definition.  
-public partial class Employee  
-{  
-    public void CalculateWorkHours()  
-    {  
-    }  
-}  
-  
-// Second part of class definition.  
-public partial class Employee  
-{  
-    public void CalculateTaxes()  
-    {  
-    }  
-}  
-```  
-  
+Puede usar la palabra clave `partial` (`Partial` en Visual Basic) para dividir la declaración de una clase o estructura entre varias declaraciones. Puede usar tantas declaraciones parciales como quiera.
+
+Las declaraciones pueden estar en uno o en varios archivos de origen. Todas las declaraciones deben estar en el mismo ensamblado y en el mismo espacio de nombres.
+
+Las clases parciales son útiles en varias situaciones. En un proyecto grande, por ejemplo, la separación de una clase en varios archivos permite que más de un programador trabaje en el proyecto al mismo tiempo. Cuando trabaja con código generado por Visual Studio, puede cambiar la clase sin tener que volver a crear el archivo de origen. (Los ejemplos de código generados por Visual Studio incluyen código de contenedor de Windows Forms y servicio web). Así, puede crear código que use clases generadas automáticamente sin necesidad de modificar el archivo creado por Visual Studio.
+
+Hay dos tipos de métodos parciales. En C#, se denominan declarativo y de implementación. En Visual Basic, se denominan de declaración e implementación.
+
+El **Diseñador de clases** admite clases y métodos parciales. La forma de tipo en el diagrama de clases hace referencia a una ubicación de declaración única para la clase parcial. Si se define la clase parcial en varios archivos, puede especificar la ubicación de la declaración que va a usar el **Diseñador de clases** al establecer la propiedad **Ubicación de nuevos miembros** en la ventana **Propiedades**. Es decir, al hacer doble clic en una forma de clase, el **Diseñador de clases** va al archivo de origen que contiene la declaración de clase identificada por la propiedad **Ubicación de nuevos miembros**. Cuando hace doble clic en un método parcial de una forma de clase, el **Diseñador de clases** va a la declaración de método parcial. Asimismo, en la ventana **Propiedades**, la propiedad **Nombre de archivo** hace referencia a la ubicación de la declaración. Para las clases parciales, **Nombre de archivo** enumera todos los archivos que contienen código de declaración e implementación de esa clase. Sin embargo, para los métodos parciales, **Nombre de archivo** muestra solo el archivo que contiene la declaración de método parcial.
+
+Los siguientes ejemplos dividen la definición de la clase `Employee` en dos declaraciones, cada una de las cuales define otro procedimiento. Las dos definiciones parciales de los ejemplos podrían estar en un archivo de origen o en dos archivos distintos.
+
+> [!NOTE]
+> Visual Basic usa definiciones de clase parcial para separar el código generado por Visual Studio del código creado por el usuario. El código se divide en archivos de código fuente distintos. Por ejemplo, el **Diseñador de Windows Forms`Form` define clases parciales para controles como** . No debe modificar el código generado en estos controles.
+
+Para obtener más información sobre los tipos parciales en Visual Basic, vea [Partial](/dotnet/visual-basic/language-reference/modifiers/partial).
+
+## <a name="example"></a>Ejemplo
+
+Para dividir una definición de clase, use la palabra clave `partial` (`Partial` en Visual Basic), como se muestra en el ejemplo siguiente:
+
+```csharp
+// First part of class definition.
+public partial class Employee
+{
+    public void CalculateWorkHours()
+    {
+    }
+}
+
+// Second part of class definition.
+public partial class Employee
+{
+    public void CalculateTaxes()
+    {
+    }
+}
+```
+
+```vb
+' First part of class definition.
+Partial Public Class Employee
+    Public Sub CalculateWorkHours()
+    End Sub
+End Class
+
+' Second part of class definition.
+Partial Public Class Employee
+    Public Sub CalculateTaxes()
+    End Sub
+End Class
+```
+
 ## <a name="see-also"></a>Vea también
-[Clases y métodos parciales](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)   
-[partial (tipo)](/dotnet/csharp/language-reference/keywords/partial-type)   
-[partial (método, referencia de C#)](/dotnet/csharp/language-reference/keywords/partial-method)   
-[Partial](/dotnet/visual-basic/language-reference/modifiers/partial)
+
+- [Clases y métodos parciales](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)
+- [Tipo parcial (Referencia de C#)](/dotnet/csharp/language-reference/keywords/partial-type)
+- [partial (Método) (Referencia de C#)](/dotnet/csharp/language-reference/keywords/partial-method)
+- [Partial (Visual Basic)](/dotnet/visual-basic/language-reference/modifiers/partial)

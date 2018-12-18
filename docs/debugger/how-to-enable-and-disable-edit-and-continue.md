@@ -1,7 +1,7 @@
 ---
-title: 'Cómo: habilitar y deshabilitar Editar y continuar (C#, VB, C++) | Documentos de Microsoft'
+title: 'Cómo: habilitar y deshabilitar Editar y continuar (C#, VB, C++) | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -27,41 +27,35 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 9070913d1106eb5e2ca04160ad95c6a6fd46f752
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f0bf354f64be9c03a64beadcffdd7ff1138218df
+ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49382757"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Cómo: habilitar y deshabilitar Editar y continuar (C#, VB, C++)
-Puede deshabilitar o Habilitar Editar y continuar en la **opciones** cuadro de diálogo en tiempo de diseño. No puede cambiar este valor mientras esté depurando.  
-  
-Editar y continuar solo funciona en las compilaciones de depuración. En C++ nativo, Editar y continuar requiere el uso de la opción /INCREMENTAL. Para obtener más información sobre los requisitos de características de C++, vea este [entrada de blog](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/) y [editar y continuar (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).
-  
-#### <a name="to-enabledisable-edit-and-continue"></a>Para habilitar o deshabilitar Editar y continuar  
-  
-1.  Si está en una sesión de depuración, detenga la depuración (**MAYÚS + F5**).
 
-2.  Abrir página de opciones de depuración (**Herramientas > Opciones > depuración**).
+Puede deshabilitar o habilitar **editar y continuar** en Visual Studio **opciones** cuadro de diálogo en tiempo de diseño. **Editar y continuar** compilaciones funciona solo en modo de depuración. Para obtener más información, consulte [editar y continuar](../debugger/edit-and-continue.md). 
   
-3.  Seleccione **General**y desplácese hacia abajo hasta **editar y continuar** categoría (panel derecho).  
+En C++ nativo, **editar y continuar** requiere el uso de la `/INCREMENTAL` opción. Para obtener más información sobre los requisitos de características en C++, vea este [entrada de blog](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/) y [editar y continuar (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).
   
-4.  Para habilitar, seleccione la **Habilitar Editar y continuar** casilla de verificación. Para deshabilitarla, desactive la casilla.  
+**Para habilitar o deshabilitar Editar y continuar:**  
+  
+1.  Si está en una sesión de depuración, detenga la depuración (**depurar** > **Detener depuración** o **MAYÚS**+**F5**) .
+
+1.  En **herramientas** > **opciones** > (o **depurar** > **opciones**) > **depuración**  >  **General**, seleccione **editar y continuar** en el panel derecho.  
   
     > [!NOTE]
     >  Si se habilita IntelliTrace y se recopilan eventos de IntelliTrace e información de llamadas, se deshabilita Editar y continuar. Para obtener más información, consulte [IntelliTrace](../debugger/intellitrace.md).
-
-5. (C++) Para habilitar, seleccione **Habilitar Editar y continuar nativa**. Para deshabilitarla, desactive la casilla.
-
-6. (C++) Establecer opciones adicionales para el código nativo.
-
+    
+1.  Para el código de C++, asegúrese de que **Habilitar Editar y continuar nativa** esté seleccionada y establecer las opciones adicionales:
     - **Aplicar cambios al continuar (solo nativo)**  
-        Al continuar el proceso desde un estado de interrupción, Visual Studio compila y aplica los cambios de código pendientes realizados automáticamente. Si no está seleccionada, puede aplicar los cambios con el elemento "Aplicar cambios en el código" en el menú Depurar.  
+      
+      Si selecciona esta opción, Visual Studio se compila automáticamente y aplica los cambios de código al continuar la depuración desde un estado de interrupción. En caso contrario, puede elegir aplicar los cambios con **depurar** > **aplicar cambios de código**.  
+      
+    - **Advertir sobre código obsoleto (solo nativo)**  
+      
+      Si se selecciona, ofrece las advertencias sobre código obsoleto. 
   
-    - **Avisar cuando haya código obsoleto (solo nativo)**  
-        Obtenga advertencias sobre código obsoleto. 
-  
-7.  Haga clic en **Aceptar**.    
-  
-## <a name="see-also"></a>Vea también  
- [Editar y continuar](../debugger/edit-and-continue.md)
+1.  Haga clic en **Aceptar**.    

@@ -10,16 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0591b646c8311004d9c08b2fb1a9fcdf2ab1908a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2c173fb5cdea4c18f3d470bd1e92bd7f9b68a62e
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34814572"
 ---
 # <a name="how-to-filter-reports-from-the-command-line"></a>Cómo: Filtrar informes desde la línea de comandos
 Al usar las opciones del comando **VSPerfReport**, puede filtrar los informes a un segmento de tiempo específico del archivo de datos de generación de perfiles o restringir los datos a uno o varios procesos o subprocesos. Para obtener más información sobre este comando, vea [VSPerfReport](../profiling/vsperfreport.md).  
   
-|Opciones|Description|  
+|Opciones|Descripción|  
 |-------------|-----------------|  
 |**StartTime:**[*Value*]|Solo muestra los datos recopilados tras el valor (en milisegundos).|  
 |**EndTime:**[*Value*]|Solo muestra los datos recopilados antes del valor (en milisegundos).|  

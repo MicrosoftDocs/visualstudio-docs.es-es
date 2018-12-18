@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129381"
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>Esquematización y ocultado el texto en un servicio de lenguaje heredado
 Esquematización hace posible contraer una secuencia de las líneas de texto en una sola línea. Por ejemplo, en C++ se pueden contraer todos los métodos en una sola línea, que muestra solo la firma del método. Texto oculto es la secuencia de las líneas de texto que puede mostrar u ocultar.  

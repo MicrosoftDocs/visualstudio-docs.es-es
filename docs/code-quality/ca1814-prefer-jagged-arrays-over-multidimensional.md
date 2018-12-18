@@ -1,6 +1,7 @@
 ---
 title: 'CA1814: Preferir las matrices escalonadas antes que multidimensionales'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -13,15 +14,20 @@ ms.assetid: b1ccf563-2ec8-42e5-b89c-731a9de1ea1d
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cedac542d003ccc89357f3a01e2f167a2471a128
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 69210ac7957cf66119c059fc34a9eb4e11a4d0cb
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551899"
 ---
 # <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814: Preferir las matrices escalonadas antes que multidimensionales
+
 |||
 |-|-|
 |TypeName|PreferJaggedArraysOverMultidimensional|
@@ -38,11 +44,11 @@ ms.lasthandoff: 04/19/2018
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, cambie la matriz multidimensional a una matriz escalonada.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Suprimir una advertencia de esta regla si la matriz multidimensional no desaprovecha espacio.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ Suprima una advertencia de esta regla si la matriz multidimensional no desaprovecha espacio.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra declaraciones de matrices escalonadas y multidimensionales.
+ El ejemplo siguiente muestra declaraciones de matrices multidimensionales y escalonadas.
 
  [!code-vb[FxCop.Performance.JaggedArrays#1](../code-quality/codesnippet/VisualBasic/ca1814-prefer-jagged-arrays-over-multidimensional_1.vb)]
  [!code-csharp[FxCop.Performance.JaggedArrays#1](../code-quality/codesnippet/CSharp/ca1814-prefer-jagged-arrays-over-multidimensional_1.cs)]

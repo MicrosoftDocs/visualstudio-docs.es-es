@@ -12,19 +12,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39bc1acd059c9a915f330c74140c89d5f4fa40ff
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8cdb171d16b6612562ea21608cdeb622f4ef8bb5
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179052"
 ---
 # <a name="msbuild-inline-tasks"></a>Tareas insertadas de MSBuild
 Las tareas de MSBuild se crean normalmente compilando una clase que implementa la interfaz <xref:Microsoft.Build.Framework.ITask>. Para obtener más información, consulte [Tareas](../msbuild/msbuild-tasks.md).  
   
  A partir de .NET Framework versión 4, se pueden crear tareas insertadas en el archivo del proyecto. No es necesario crear un ensamblado independiente para hospedar la tarea. Esto facilita el seguimiento del código fuente y la implementación de la tarea. El código fuente se integra en el script.  
   
+
+ En MSBuild 15.8, se ha agregado [RoslynCodeTaskFactory](../msbuild/msbuild-roslyncodetaskfactory.md), que puede crear tareas insertadas multiplataforma de .NET Standard.  Si necesita usar tareas insertadas en .NET Core, debe emplear RoslynCodeTaskFactory.
 ## <a name="the-structure-of-an-inline-task"></a>Estructura de una tarea insertada  
- Una tarea insertada está contenida en un elemento [UsingTask](../msbuild/usingtask-element-msbuild.md). La tarea insertada y el elemento `UsingTask` que la contiene se incluyen normalmente en un archivo .targets y se importan en otros archivos del proyecto según se requiera. A continuación se muestra una tarea insertada básica. Observe que no se realiza ninguna acción.  
+ Una tarea insertada está contenida en un elemento [UsingTask](../msbuild/usingtask-element-msbuild.md). La tarea insertada y el elemento `UsingTask` que la contiene se suelen incluir en un archivo *.targets* y se importan en otros archivos de proyecto según se requiera. A continuación se muestra una tarea insertada básica. Observe que no se realiza ninguna acción.  
   
 ```xml  
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -51,18 +54,18 @@ Las tareas de MSBuild se crean normalmente compilando una clase que implementa l
 -   El atributo `TaskFactory` asigna un nombre a la clase que implementa el generador de tareas insertadas.  
   
 -   El atributo `AssemblyFile` proporciona la ubicación del generador de tareas insertadas. Alternativamente, puede utilizar el atributo `AssemblyName` para especificar el nombre completo de la clase de generador de tareas insertadas, que está ubicada normalmente en la caché global de ensamblados (GAC).  
+
+Los elementos restantes de la tarea `DoNothing` están vacíos y se proporcionan para mostrar el orden y la estructura de una tarea insertada. Un ejemplo más completo se presenta posteriormente en este tema.  
   
- Los elementos restantes de la tarea `DoNothing` están vacíos y se proporcionan para mostrar el orden y la estructura de una tarea insertada. Un ejemplo más completo se presenta posteriormente en este tema.  
-  
--   El elemento `ParameterGroup` es opcional. Cuando se especifica, declara los parámetros para la tarea. Para obtener más información sobre los parámetros de entrada y salida, vea "Parámetros de entrada y salida" más adelante en este tema.  
+-   El elemento `ParameterGroup` es opcional. Cuando se especifica, declara los parámetros para la tarea. Para obtener más información sobre los parámetros de entrada y salida, vea [Parámetros de entrada y salida](#input-and-output-parameters) más adelante en este tema.  
   
 -   El elemento `Task` describe y contiene el código fuente de la tarea.  
   
 -   El elemento `Reference` especifica las referencias a los ensamblados de .NET que se utilizan en el código. Esto es equivalente a agregar una referencia a un proyecto en Visual Studio. El atributo `Include` especifica la ruta de acceso del ensamblado al que se hace referencia.  
   
 -   El elemento `Using` enumera los espacios de nombres a los que se desea obtener acceso. Esto es similar a la instrucción `Using` de Visual C#. El atributo `Namespace` especifica el espacio de nombres que se va a incluir.  
-  
- Los elementos `Reference` y `Using` son independientes del lenguaje. Las tareas insertadas se pueden escribir en cualquiera de los lenguajes CodeDom para .NET admitidos, por ejemplo, Visual Basic o Visual C#.  
+
+Los elementos `Reference` y `Using` son independientes del lenguaje. Las tareas insertadas se pueden escribir en cualquiera de los lenguajes CodeDom para .NET admitidos, por ejemplo, Visual Basic o Visual C#.  
   
 > [!NOTE]
 >  Los elementos contenidos en el elemento `Task` son específicos del generador de tareas, en este caso, el generador de tareas de código.  
@@ -79,15 +82,15 @@ Las tareas de MSBuild se crean normalmente compilando una clase que implementa l
 -   Si el valor de `Type` es `Method`, el código define un reemplazo del método `Execute` de la interfaz <xref:Microsoft.Build.Framework.ITask>.  
   
 -   Si el valor de `Type` es `Fragment`, el código define el contenido del método `Execute`, pero no la firma o la instrucción `return`.  
+
+El propio código aparece normalmente entre un marcador `<![CDATA[` y un marcador `]]>`. Dado que el código está en una sección CDATA, no tiene que preocuparse de anteponer caracteres de escape a los caracteres reservados, como "\<" o ">".  
   
- El propio código aparece normalmente entre un marcador `<![CDATA[` y un marcador `]]>`. Dado que el código está en una sección CDATA, no tiene que preocuparse de anteponer caracteres de escape a los caracteres reservados, como "\<" o ">".  
-  
- Alternativamente, puede utilizar el atributo `Source` del elemento `Code` para especificar la ubicación de un archivo que contiene el código para la tarea. El código del archivo de código fuente debe ser del tipo especificado por el atributo `Type`. Si el atributo `Source` está presente, el valor predeterminado de `Type` es `Class`. Si `Source` no está presente, el valor predeterminado es `Fragment`.  
+Alternativamente, puede utilizar el atributo `Source` del elemento `Code` para especificar la ubicación de un archivo que contiene el código para la tarea. El código del archivo de código fuente debe ser del tipo especificado por el atributo `Type`. Si el atributo `Source` está presente, el valor predeterminado de `Type` es `Class`. Si `Source` no está presente, el valor predeterminado es `Fragment`.  
   
 > [!NOTE]
 >  Al definir la clase de tarea en el archivo de origen, el nombre de clase debe corresponder al atributo `TaskName` del elemento [UsingTask](../msbuild/usingtask-element-msbuild.md) correspondiente.  
   
-## <a name="hello-world"></a>Hello World  
+## <a name="helloworld"></a>HelloWorld  
  A continuación se muestra una tarea insertada más completa. La tarea HelloWorld muestra "Hello, world!" en el dispositivo de registro de errores predeterminado, que suele ser la consola del sistema o la ventana de **salida** de Visual Studio. El elemento `Reference` del ejemplo se incluye solamente a efectos de ilustración.  
   
 ```xml  
@@ -113,7 +116,7 @@ Log.LogError("Hello, world!");
 </Project>  
 ```  
   
- Puede guardar la tarea HelloWorld en un archivo denominado HelloWorld.targets y, a continuación, invocarlo desde un proyecto del modo siguiente.  
+ Puede guardar la tarea HelloWorld en un archivo denominado *HelloWorld.targets* y luego invocarlo desde un proyecto del modo siguiente.  
   
 ```xml  
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -141,7 +144,7 @@ Log.LogError("Hello, world!");
   
 -   `Output` es un atributo opcional que es `false` de forma predeterminada. Si es `true`, se debe proporcionar al parámetro un valor antes de volver del método Execute.  
   
- Por ejemplo,  
+Por ejemplo,  
   
 ```xml  
 <ParameterGroup>  
@@ -151,15 +154,15 @@ Log.LogError("Hello, world!");
 </ParameterGroup>  
 ```  
   
- define estos tres parámetros:  
+define estos tres parámetros:  
   
 -   `Expression` es un parámetro de entrada necesario de tipo System.String.  
   
 -   `Files` es un parámetro de entrada de lista de elementos necesario.  
   
 -   `Tally` es un parámetro de salida de tipo System.Int32.  
-  
- Si el elemento `Code` tiene el atributo `Type` de `Fragment` o `Method`, las propiedades se crean automáticamente para cada parámetro. De lo contrario, las propiedades se deben declarar explícitamente en el código fuente de la tarea y deben coincidir exactamente con sus definiciones de parámetro.  
+
+Si el elemento `Code` tiene el atributo `Type` de `Fragment` o `Method`, las propiedades se crean automáticamente para cada parámetro. De lo contrario, las propiedades se deben declarar explícitamente en el código fuente de la tarea y deben coincidir exactamente con sus definiciones de parámetro.  
   
 ## <a name="example"></a>Ejemplo  
  La tarea insertada siguiente reemplaza cada aparición de un token en el archivo determinado por el valor determinado.  
@@ -191,4 +194,4 @@ File.WriteAllText(Path, content);
   
 ## <a name="see-also"></a>Vea también  
  [Tareas](../msbuild/msbuild-tasks.md)   
- [Tutorial: Crear una tarea insertada](../msbuild/walkthrough-creating-an-inline-task.md)
+ [Tutorial: Creación de una tarea insertada](../msbuild/walkthrough-creating-an-inline-task.md)

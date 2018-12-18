@@ -1,5 +1,5 @@
 ---
-title: Asignar roles a un controlador de pruebas y a un agente de pruebas para las pruebas automatizadas de Visual Studio | Microsoft Docs
+title: Asignación de roles a Test Controller y Test Agent para las pruebas automatizadas
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,24 +12,20 @@ ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 932a6fe470812fc647cad653fb95ba7ca8997ab0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 021693266278bd705678c22d2c3f07e534901e5a
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895345"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Asignar roles a un controlador de pruebas y a un agente de pruebas
 
 En este tutorial, se muestra cómo crear y configurar un entorno de prueba que usa un controlador de pruebas y agente de prueba para distribuir las pruebas entre varias máquinas, mediante Visual Studio. Además, en este tutorial se muestra cómo agregar adaptadores de datos y de diagnóstico a la configuración de pruebas.
 
-En este tutorial, se realizarán las siguientes tareas:
-
--   Crear una configuración de prueba.
-
--   Asignar roles a un controlador de pruebas y agentes de prueba.
-
--   Asignar un adaptador de datos y de diagnóstico a la configuración de pruebas.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -39,7 +35,7 @@ En este tutorial, se realizarán las siguientes tareas:
 
 ## <a name="to-create-and-configure-a-test-setting"></a>Para crear y configurar una configuración de pruebas
 
-1.  En el Explorador de soluciones, haga clic con el botón derecho en **Elementos de la solución**, señale **Agregar** y, después, elija **Nuevo elemento**.
+1.  En el **Explorador de soluciones**, haga clic con el botón derecho en **Elementos de la solución**, señale **Agregar** y, después, elija **Nuevo elemento**.
 
      Aparecerá el cuadro de diálogo **Agregar nuevo elemento**.
 
@@ -49,7 +45,7 @@ En este tutorial, se realizarán las siguientes tareas:
 
 4.  Haga clic en **Agregar**.
 
-     El nuevo archivo TestSettingDistributedTestWalkthrough.testsettings aparece en Explorador de soluciones, bajo la carpeta **Elementos de la solución**.
+     El nuevo archivo *TestSettingDistributedTestWalkthrough.testsettings* de prueba aparece en el **Explorador de soluciones**, bajo la carpeta **Elementos de la solución**.
 
      Se muestra el cuadro de diálogo **Configuración de pruebas**. La página **General** está seleccionada.
 

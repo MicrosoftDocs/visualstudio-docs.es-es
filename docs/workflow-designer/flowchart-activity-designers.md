@@ -1,22 +1,25 @@
 ---
-title: Diseñadores de actividades flowchart | Documentos de Microsoft
+title: Diseñador de flujo de trabajo - diseñadores de actividades Flowchart
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: 8b7b4aa6-d27d-45c8-87c2-641440d38afc
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35b5e3b3548662e1699723c82e7d12fbdca3ab2b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef7fc3e956c6b31b1df8346e9b347ca3e094d878
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755725"
 ---
 # <a name="flowchart-activity-designers"></a>Diseñadores de actividades Flowchart
 
-Diseñador de flujo de trabajo de Windows incluye una serie de actividades proporcionadas por el sistema que puede utilizar cuando cree flujos de trabajo. En esta sección se incluyen las actividades proporcionadas por el sistema que se utilizan para administrar los diagramas de flujo dentro de un flujo de trabajo. Los siguientes temas describen estas actividades y ofrecen orientación sobre cómo utilizarlas.
+Diseñador de flujo de trabajo incluye una serie de actividades proporcionadas por el sistema que puede utilizar cuando cree flujos de trabajo. En esta sección se incluyen las actividades proporcionadas por el sistema que se utilizan para administrar los diagramas de flujo dentro de un flujo de trabajo. Los siguientes temas describen estas actividades y ofrecen orientación sobre cómo utilizarlas.
 
 ## <a name="reference"></a>Referencia
  <xref:System.Activities.Activity>

@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: agregar comandos a menús contextuales | Documentos de Microsoft'
+title: 'Cómo: agregar comandos a menús contextuales'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,43 +16,44 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0d1bf0aee988e194b51220588a710a4b5b8d66ec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9accca69c5d56461f07d21d25821c0f4181c8fbd
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674719"
 ---
-# <a name="how-to-add-commands-to-shortcut-menus"></a>Cómo: Agregar comandos a menús contextuales
-  En este tema se muestra cómo agregar comandos a un menú contextual en una aplicación de Office mediante un complemento de VSTO.  
+# <a name="how-to-add-commands-to-shortcut-menus"></a>Cómo: agregar comandos a menús contextuales
+  En este tema se muestra cómo agregar comandos a un menú contextual en una aplicación de Office mediante el uso de un complemento de VSTO.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ### <a name="to-add-commands-to-shortcut-menus-in-office"></a>Para agregar comandos a los menús contextuales de Office  
   
-1.  Agregue un elemento **XML de cinta** a un proyecto de nivel de documento o de complemento de VSTO. Para obtener más información, consulte [How to: Get Started Customizing the Ribbon](../vsto/how-to-get-started-customizing-the-ribbon.md). En  
+1.  Agregue un elemento **XML de cinta** a un proyecto de nivel de documento o de complemento de VSTO. Para obtener más información, consulte [Cómo: empezar a personalizar la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md). En  
   
 2.  el**Exploado de soluciones**, seleccione **ThisAddIn.cs** o **ThisAddIn.vb**.  
   
-3.  En la barra de menús, elija **Ver**, **Código**.  
+3.  En la barra de menús, elija **Ver** > **Código**.  
   
      El archivo de clase **ThisAddin** se abrirá en el Editor de código.  
   
-4.  Agregue el siguiente código a la clase **ThisAddin** . Este código invalida el método CreateRibbonExtensibilityObject y devuelve la clase XML Ribbon a la aplicación de Office.  
+4.  Agregue el siguiente código a la clase **ThisAddin** . Este código invalida el método `CreateRibbonExtensibilityObject` y devuelve la clase XML Ribbon a la aplicación de Office.  
   
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]  
   
-5.  En el **Explorador de soluciones**, seleccione el archivo XML de cinta. De forma predeterminada, el archivo XML de cinta se denomina Ribbon1.xml.  
+5.  En el **Explorador de soluciones**, seleccione el archivo XML de cinta. De forma predeterminada, el archivo XML de cinta se denomina *Ribbon1.xml*.  
   
-6.  En la barra de menús, elija **Ver**, **Código**.  
+6.  En la barra de menús, elija **Ver** > **Código**.  
   
      Se abrirá el archivo de código XML de cinta de opciones en el Editor de código.  
   
 7.  En el Editor de código, agregue el código XML que describe el menú contextual y el control que quiere agregar al menú contextual.  
   
-     En el ejemplo siguiente se agrega un botón, un menú y un control de galería al menú contextual de un documento de Word. El id. del control de este menú contextual es ContextMenuText. Para obtener una lista completa de control de acceso directo de Office 2010 identificadores, vea [archivos de Ayuda de Office 2010: identificadores de Control en la interfaz de usuario de Office Fluent](http://go.microsoft.com/fwlink/?LinkID=181052).  
+     En el ejemplo siguiente se agrega un botón, un menú y un control de galería al menú contextual de un documento de Word. El id. del control de este menú contextual es ContextMenuText. Para obtener una lista completa de control de acceso directo de Office 2010 identificadores, vea [los archivos de Ayuda de Office 2010: identificadores de control de interfaz de usuario fluent Office](http://go.microsoft.com/fwlink/?LinkID=181052).  
   
-    ```  
+    ```xml
     <?xml version="1.0" encoding="UTF-8"?>  
     <customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui">  
       <contextMenus>  
@@ -74,7 +75,7 @@ ms.lasthandoff: 04/16/2018
   
 8.  En el **Explorador de soluciones**, elija **MyRibbon.cs** o **MyRibbon.vb**.  
   
-9. Agregue un método de devolución de llamada a la clase `Ribbon1` para cada control que quiere administrar.  
+9. Agregue un método de devolución de llamada a la `Ribbon1` clase para cada control que desea administrar.  
   
      El siguiente método de devolución de llamada controla el botón **Mi botón** . Este código agrega una cadena al documento activo en la posición actual del cursor.  
   
@@ -85,6 +86,5 @@ ms.lasthandoff: 04/16/2018
  [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md)   
  [Tutorial: Crear menús contextuales para marcadores](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)   
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)   
- [Personalizar menús contextuales de Office 2010](http://go.microsoft.com/fwlink/?LinkId=182186)  
-  
+ [Personalizar los menús contextuales de Office 2010](http://go.microsoft.com/fwlink/?LinkId=182186)  
   

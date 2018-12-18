@@ -1,5 +1,5 @@
 ---
-title: Editar código y continuar con la depuración en Visual Studio | Documentos de Microsoft
+title: Código de editar y continuar con la depuración en Visual Studio | Microsoft Docs
 ms.custom: ''
 ms.date: 05/31/2017
 ms.technology: vs-ide-debug
@@ -22,11 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ca5b2f8d144451dcea2dafb30edd072a45c9b96
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: da5d7eb9f3ae32097f46c5eb0436297eaa602fed
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284033"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Editar código y continuar la depuración en Visual Studio (C#, en VB, C++)
 Editar y continuar es una característica que ahorra tiempo y permite realizar cambios en el código fuente mientras el programa se encuentra en modo de interrupción. Cuando reanuda la ejecución del programa eligiendo un comando de ejecución como **continuar** o **paso**, editar y continuar automáticamente aplica los cambios de código con algunas limitaciones. Esto permite realizar cambios en el código durante una sesión de depuración, en lugar de tener que parar, volver a compilar todo el programa y reiniciar la sesión de depuración.  
@@ -47,5 +48,5 @@ Editar y continuar es una característica que ahorra tiempo y permite realizar c
   
 ## <a name="see-also"></a>Vea también  
  [Seguridad del depurador](../debugger/debugger-security.md)   
- [Editar y continuar, Depuración, Opciones (Cuadro de diálogo)](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)   
- [Conceptos básicos del depurador](../debugger/debugger-basics.md)
+ [Editar y continuar, Depuración, Opciones (Cuadro de diálogo)](https://msdn.microsoft.com/library/bcew296c.aspx)   
+ [Conceptos básicos del depurador](../debugger/getting-started-with-the-debugger.md)

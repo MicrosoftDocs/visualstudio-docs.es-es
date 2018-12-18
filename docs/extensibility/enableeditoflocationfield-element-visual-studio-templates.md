@@ -1,5 +1,5 @@
 ---
-title: EnableEditOfLocationField (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
+title: EnableEditOfLocationField (elemento) (plantillas de Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,13 +13,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8aee6e8b763cbc46af1cf426971e68e2e22ea1e1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4a38f023da9f4603bee9c87cb119bd41ec7e6d98
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638022"
 ---
-# <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField (Elemento, Plantillas de Visual Studio)
+# <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField (elemento) (plantillas de Visual Studio)
 Especifica si el usuario puede editar el campo de ubicación.  
   
  \<VSTemplate >  
@@ -50,7 +51,7 @@ Especifica si el usuario puede editar el campo de ubicación.
 ## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto.  
   
- El texto debe ser `true` o `false`, lo que indica si el usuario puede editar la **ubicación** cuadro de texto en el **nuevo proyecto** cuadro de diálogo.  
+ El texto debe ser `true` o `false`, lo que indica si el usuario puede editar el **ubicación** cuadro de texto en el **nuevo proyecto** cuadro de diálogo.  
   
 ## <a name="remarks"></a>Comentarios  
  `EnableEditOfLocationField` es un elemento opcional. El valor predeterminado es `true`, lo que permite al usuario editar el valor de la **ubicación** cuadro de texto en el **nuevo proyecto** cuadro de diálogo.  
@@ -58,7 +59,7 @@ Especifica si el usuario puede editar el campo de ubicación.
  En el **nuevo proyecto** cuadro de diálogo, el **ubicación** cuadro de texto especifica el directorio donde se guarda un nuevo proyecto.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra los metadatos de un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación de Windows.  
+ El ejemplo siguiente muestra los metadatos de un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación de Windows.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -88,4 +89,4 @@ Especifica si el usuario puede editar el campo de ubicación.
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
+ [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)

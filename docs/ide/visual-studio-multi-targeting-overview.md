@@ -1,9 +1,8 @@
 ---
-title: .NET Framework como destino en Visual Studio | Microsoft Docs
-ms.custom: ''
+title: .NET Framework como destino en Visual Studio
 ms.date: 02/06/2018
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
@@ -16,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 00f6baad44b4276ed4de81a2fd55c4f5b9d1c8a2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cba93b86d6ecebf249e11d18bd6e4b6b86e59fda
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
+ms.locfileid: "32425094"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Información general sobre la compatibilidad con múltiples versiones de Visual Studio
 
@@ -51,7 +51,7 @@ Si trabaja en un proyecto que tiene como destino una versión anterior de [!INCL
 
 - Filtra los controles personalizados del **Cuadro de herramientas** para quitar los que no están disponibles en la versión de destino y para mostrar solo los controles más actualizados cuando hay varios disponibles.
 
-- Filtra IntelliSense para omitir características de lenguaje que no están disponibles en la versión de destino.
+- Filtra **IntelliSense** para omitir características de lenguaje que no están disponibles en la versión de destino.
 
 - Filtra las propiedades de la ventana **Propiedades** para omitir las que no están disponibles en la versión de destino.
 
@@ -62,7 +62,7 @@ Si trabaja en un proyecto que tiene como destino una versión anterior de [!INCL
 > [!NOTE]
 > La elección del marco de destino no garantiza que la aplicación se ejecute correctamente. Debe probar la aplicación para asegurarse de que se ejecuta en la versión de destino. No puede elegir como destino versiones de .NET Framework anteriores a la versión 2.0.
 
-## <a name="selecting-a-target-framework-version"></a>Selección de una versión de la plataforma de destino
+## <a name="select-a-target-framework-version"></a>Seleccionar una versión de la plataforma de destino
 
 Al crear un proyecto, seleccione la versión de destino de .NET Framework en el cuadro de diálogo **Nuevo proyecto**. La lista de las plataformas disponibles incluye las versiones de las plataformas instaladas que son aplicables al tipo de plantilla seleccionada. Para los tipos de plantilla que no requieren .NET Framework, como las plantillas de .NET Core, la lista desplegable **Plataforma** permanece oculta.
 
@@ -70,17 +70,17 @@ Al crear un proyecto, seleccione la versión de destino de .NET Framework en el 
 
 En un proyecto existente, puede cambiar la versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de destino en el cuadro de diálogo de propiedades del proyecto. Para obtener más información, consulte [Cómo: Usar como destino una versión de .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
-## <a name="resolving-system-and-user-assembly-references"></a>Resolver referencias de ensamblado de usuario y sistema
+## <a name="resolve-system-and-user-assembly-references"></a>Resolver referencias de ensamblado de usuario y sistema
 
 Para elegir como destino una versión de .NET Framework, primero debe instalar las referencias de ensamblado adecuadas. Puede descargar los paquetes de desarrollador para distintas versiones de .NET Framework en la página [Descargas de .NET](https://www.microsoft.com/net/download/windows).
 
-El cuadro de diálogo **Agregar referencia** deshabilita los ensamblados del sistema que no pertenecen a la versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de destino para evitar que se agreguen a un proyecto de forma involuntaria. (Los ensamblados del sistema son archivos .dll que se incluyen en una versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]). No se resolverán las referencias que pertenezcan a una versión del marco posterior a la versión de destino y no se pueden agregar controles que dependan de este tipo de referencia. Si quiere habilitar este tipo de referencia, restablezca el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de destino del proyecto a otro que incluya la referencia.  Para obtener más información, consulte [Cómo: Usar como destino una versión de .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+El cuadro de diálogo **Agregar referencia** deshabilita los ensamblados del sistema que no pertenecen a la versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de destino para evitar que se agreguen a un proyecto de forma involuntaria. (Los ensamblados del sistema son archivos *.dll* que se incluyen en una versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]). No se resolverán las referencias que pertenezcan a una versión del marco posterior a la versión de destino y no se pueden agregar controles que dependan de este tipo de referencia. Si quiere habilitar este tipo de referencia, restablezca el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de destino del proyecto a otro que incluya la referencia.  Para obtener más información, consulte [Cómo: Usar como destino una versión de .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 Para obtener más información sobre las referencias de ensamblado, consulte [Resolver ensamblados en tiempo de diseño](../msbuild/resolving-assemblies-at-design-time.md).
 
-## <a name="enabling-linq"></a>Habilitar LINQ
+## <a name="enable-linq"></a>Habilitar LINQ
 
-Si elige como destino .NET Framework 3.5 o una versión posterior, se agregan de forma automática una referencia a System.Core y una importación de nivel de proyecto para System.Linq (solo en Visual Basic). Si quiere usar características de LINQ, también debe activar Option Infer (solo en Visual Basic). La referencia y la importación se quitan de forma automática si cambia el destino a una versión anterior de .NET Framework. Para obtener más información, vea [Trabajar con LINQ](/dotnet/csharp/tutorials/working-with-linq).
+Si elige como destino .NET Framework 3.5 o una versión posterior, se agregan de forma automática una referencia a **System.Core** y una importación de nivel de proyecto para <xref:System.Linq> (solo en Visual Basic). Si quiere usar características de LINQ, también debe activar `Option Infer` (solo en Visual Basic). La referencia y la importación se quitan de forma automática si cambia el destino a una versión anterior de .NET Framework. Para obtener más información, vea [Trabajar con LINQ](/dotnet/csharp/tutorials/working-with-linq).
 
 ## <a name="see-also"></a>Vea también
 

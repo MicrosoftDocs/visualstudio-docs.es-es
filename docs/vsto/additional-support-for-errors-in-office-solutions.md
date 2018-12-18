@@ -1,9 +1,9 @@
 ---
-title: Soporte técnico adicional para errores de soluciones de Office de | Documentos de Microsoft
+title: Soporte técnico adicional para errores en soluciones de Office
 ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
+ms.technology: office-development
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VST.MSBuild.errAppInfoTaskInsertCtlFailed
@@ -54,37 +54,35 @@ helpviewer_keywords:
 - Office development in Visual Studio, troubleshooting
 - troubleshooting [Office development in Visual Studio]
 - Office development in Visual Studio, errors
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9a9a4c0d4df2e97d151b6a6a310848812b02d77d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4706360581749fbc6e84f3250324bad3663e7a9a
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304459"
 ---
-# <a name="additional-support-for-errors-in-office-solutions"></a>Soporte técnico adicional para errores de soluciones de Office
-  Puede utilizar los siguientes recursos para ayudarle a encontrar respuestas a problemas que experimente al crear soluciones de Office en Visual Studio.  
+# <a name="additional-support-for-errors-in-office-solutions"></a>Soporte técnico adicional para errores en soluciones de Office
+  Puede usar los siguientes recursos para ayudarle a encontrar respuestas a problemas que encuentre al crear soluciones de Office en Visual Studio.  
   
-## <a name="troubleshooting-specific-errors"></a>Solución de problemas de errores concretos  
- Para obtener ayuda con algunos errores comunes de las soluciones de Office, vea los temas siguientes:  
+## <a name="troubleshoot-specific-errors"></a>Solución de problemas de errores concretos  
+ Para obtener ayuda con algunos errores comunes en soluciones de Office, vea los temas siguientes:  
   
--   [Solución de problemas de errores en soluciones de Office](../vsto/troubleshooting-errors-in-office-solutions.md)  
+-   [Solución de problemas de errores en las soluciones de Office](../vsto/troubleshooting-errors-in-office-solutions.md)  
   
--   [Solución de problemas de seguridad de soluciones de Office](../vsto/troubleshooting-office-solution-security.md)  
+-   [Solucionar problemas de seguridad de la solución de Office](../vsto/troubleshooting-office-solution-security.md)  
   
--   [Solución de problemas de implementación de las soluciones de Office](../vsto/troubleshooting-office-solution-deployment.md)  
+-   [Solución de problemas de implementación de soluciones de Office](../vsto/troubleshooting-office-solution-deployment.md)  
   
 ## <a name="other-resources"></a>Otros recursos  
- [Visual Studio Tools para Office foro](http://go.microsoft.com/fwlink/?LinkId=149744)  
- Proporciona un foro donde plantear preguntas sobre las herramientas de desarrollo de Office en Visual Studio.  
+ [Visual Studio tools para el foro de Office](http://go.microsoft.com/fwlink/?LinkId=149744)  
+ Proporciona un foro para preguntas sobre las herramientas de desarrollo de Office en Visual Studio.  
   
- [Grupos de discusión de Office](http://go.microsoft.com/fwlink/?LinkId=63585)  
- Proporciona una experiencia de grupo de noticias para preguntas sobre las aplicaciones de Office. Use los grupos de noticias programación aquí para preguntas sobre tareas específicas relacionadas con los modelos de objetos de aplicaciones de Office.  
-  
- [Ayuda y Soporte Técnico de Microsoft](http://go.microsoft.com/fwlink/?LinkID=108287)  
+ [Microsoft ayuda y soporte técnico](http://go.microsoft.com/fwlink/?LinkID=108287)  
  Proporciona acceso a los artículos de Knowledge Base (KB), a las descargas y actualizaciones, difusiones Web sobre soporte técnico y otros servicios.  
   
  [Recursos adicionales para desarrollar soluciones de Office](../vsto/additional-resources-for-developing-office-solutions.md)  

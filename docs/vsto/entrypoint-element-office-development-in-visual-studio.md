@@ -1,5 +1,5 @@
 ---
-title: '&lt;punto de entrada&gt; elemento (desarrollo de Office en Visual Studio) | Documentos de Microsoft'
+title: '&lt;punto de entrada&gt; elemento (desarrollo de Office en Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f4bd7a9a119a5e604461f44bb166f19e063ab4af
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6eb617b44eb5360ea8c313431c7d8609505efa16
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447094"
 ---
 # <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;punto de entrada&gt; elemento (desarrollo de Office en Visual Studio)
   Cada elemento `entryPoint` del espacio de nombres `vstav3` identifica un ensamblado de personalización que se debe ejecutar cuando esta aplicación [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] se instala.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```xml  
 <entryPoint class>  
     <assemblyIdentity />  
 </entryPoint>  
@@ -55,11 +56,11 @@ ms.lasthandoff: 04/16/2018
 ## <a name="document-level-customization-example"></a>Ejemplo de personalización de nivel de documento  
   
 ### <a name="description"></a>Descripción  
- El ejemplo de código siguiente muestra elementos `entryPoint` en un manifiesto de aplicación para una solución de Office de nivel de documento implementada mediante [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
+ El ejemplo de código siguiente muestra elementos `entryPoint` en un manifiesto de aplicación para una solución de Office de nivel de documento implementada mediante [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Código  
   
-```  
+```xml  
 <vstav3:entryPoint   
   class="ContosoExcelWorkbook.ThisWorkbook">  
   <assemblyIdentity   
@@ -94,14 +95,14 @@ ms.lasthandoff: 04/16/2018
 </vstav3:entryPoint>  
 ```  
   
-## <a name="vsto-add-in-example"></a>Ejemplo de complemento de VSTO  
+## <a name="vsto-add-in-example"></a>Ejemplo para complemento de VSTO  
   
 ### <a name="description"></a>Descripción  
- El ejemplo de código siguiente muestra un elemento `entryPoint` en un manifiesto de aplicación para una solución de Office de nivel de aplicación implementada mediante [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
+ El ejemplo de código siguiente muestra un elemento `entryPoint` en un manifiesto de aplicación para una solución de Office de nivel de aplicación implementada mediante [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Código  
   
-```  
+```xml
 <vstav3:entryPoint   
   class="ContosoOutlookAddIn.ThisAddIn">  
   <assemblyIdentity   
@@ -113,7 +114,7 @@ ms.lasthandoff: 04/16/2018
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
+ [Manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md)   
  [Manifiestos de implementación para soluciones de Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [Manifiesto de aplicación ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
   

@@ -1,5 +1,5 @@
 ---
-title: Función SccGetUserOption | Documentos de Microsoft
+title: SccGetUserOption (función) | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,13 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b735b8ae53ef484417ae007c6ec74ec03fe4b849
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b906dc9585ed51640ca36f366fe6a1b0d3a03aa2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928209"
 ---
-# <a name="sccgetuseroption-function"></a>SccGetUserOption (función)
+# <a name="sccgetuseroption-function"></a>SccGetUserOption (Función)
 Esta función recupera una variedad de opciones específicas del usuario.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -45,7 +46,7 @@ SCCRTN SccGetUserOption(
  [out] Valor asociado con la opción.  
   
 ## <a name="return-value"></a>Valor devuelto  
- La implementación de complemento de control de origen de esta función debe devolver uno de los siguientes valores:  
+ La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
@@ -58,7 +59,7 @@ SCCRTN SccGetUserOption(
   
 |Opción de usuario|Descripción|  
 |-----------------|-----------------|  
-|`SCC_USEROPT_CHECKOUT_LOCALVER`|Determina si el usuario desea desproteger la versión local de archivos. `lpVal` se asigna `SCC_USEROPT_COLV_YES` (el usuario desea desproteger los archivos locales) o `SCC_USEROPT_COLV_NO`.|  
+|`SCC_USEROPT_CHECKOUT_LOCALVER`|Determina si el usuario desea desproteger versión local de archivos. `lpVal` se asigna `SCC_USEROPT_COLV_YES` (usuario desea desproteger los archivos locales) o `SCC_USEROPT_COLV_NO`.|  
   
 ## <a name="see-also"></a>Vea también  
  [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   

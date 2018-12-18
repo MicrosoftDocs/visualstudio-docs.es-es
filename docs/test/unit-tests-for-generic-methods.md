@@ -1,6 +1,7 @@
 ---
-title: Pruebas unitarias para métodos genéricos en Visual Studio | Microsoft Docs
+title: Pruebas unitarias para métodos genéricos en Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,11 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e953af66f3b03d3d2e370513f3ed7462fc1484ce
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bb93e9b2d99c33c30b1478466f0cd8fa39388371
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295597"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Pruebas unitarias para métodos genéricos
 
@@ -23,7 +25,7 @@ Puede generar pruebas unitarias para métodos genéricos exactamente como lo hac
 
 ## <a name="type-arguments-and-type-constraints"></a>Argumentos de tipo y restricciones de tipo
 
-Cuando Visual Studio genera una prueba unitaria para una clase genérica, como `MyList<T>`, genera dos métodos: un objeto auxiliar genérico y un método de prueba. Si `MyList<T>` tiene una o más restricciones de tipo, el argumento de tipo debe cumplir todas las restricciones de tipo. Para asegurarse de que el código genérico en prueba funciona según lo esperado para todas las entradas permitidas, el método de prueba llama al objeto auxiliar genérico con todas las restricciones que se desean probar.
+Cuando Visual Studio genera una prueba unitaria para una clase genérica, como `MyList<T>`, genera dos métodos: un asistente genérico y un método de prueba. Si `MyList<T>` tiene una o más restricciones de tipo, el argumento de tipo debe cumplir todas las restricciones de tipo. Para asegurarse de que el código genérico en prueba funciona según lo esperado para todas las entradas permitidas, el método de prueba llama al método del asistente genérico con todas las restricciones que se desean probar.
 
 ## <a name="examples"></a>Ejemplos
  Los ejemplos siguientes ilustran las pruebas unitarias para métodos genéricos:
@@ -39,7 +41,7 @@ Cuando Visual Studio genera una prueba unitaria para una clase genérica, como `
 
  Este código ilustra dos métodos:
 
--   un método de objeto auxiliar de prueba, `SizeOfLinkedListTestHelper<T>()`. De forma predeterminada, un método de objeto auxiliar de prueba incluye "TestHelper" en su nombre.
+-   un método del asistente de prueba, `SizeOfLinkedListTestHelper<T>()`. De forma predeterminada, un método del asistente de prueba incluye "TestHelper" en su nombre.
 
 -   un método de prueba, `SizeOfLinkedListTest()`. Cada método de prueba se marca con el atributo TestMethod.
 
@@ -68,10 +70,10 @@ public void SizeOfLinkedListTest()
  En el código anterior, el parámetro de tipo genérico es `GenericParameterHelper`. Dado que puede editarlo para proporcionar tipos de datos específicos, tal y como se muestra en el ejemplo siguiente, podría ejecutar la prueba sin modificar esta instrucción.
 
 #### <a name="edited-test-code"></a>Código de prueba editado
- En el código siguiente, el método de prueba y el método de objeto auxiliar de prueba se han editado para que prueben correctamente el método de código en prueba `SizeOfLinkedList()`.
+ En el código siguiente, el método de prueba y el método del asistente de prueba se han editado para que prueben correctamente el método de código en prueba `SizeOfLinkedList()`.
 
-##### <a name="test-helper-method"></a>Método de objeto auxiliar de prueba
- El método de objeto auxiliar de prueba realiza los pasos siguientes, que corresponden a las líneas del código con las etiquetas del paso 1 al paso 5.
+##### <a name="test-helper-method"></a>Método del asistente de prueba
+ El método del asistente de prueba realiza los pasos siguientes, que corresponden a las líneas del código con las etiquetas del paso 1 al paso 5.
 
 1.  Cree una lista vinculada genérica.
 
@@ -86,9 +88,9 @@ public void SizeOfLinkedListTest()
 ##### <a name="test-method"></a>Método de prueba
  El método de prueba se compila en el código que se llama al ejecutar la prueba denominada SizeOfLinkedListTest. Realiza los pasos siguientes, que corresponden a las líneas del código con las etiquetas del paso 6 y el paso 7.
 
-1.  Especifique `<int>` al llamar el método de objeto auxiliar de prueba para comprobar que la prueba funciona para las variables `integer`.
+1.  Especifique `<int>` al llamar el método del asistente de prueba para comprobar que la prueba funciona para las variables `integer`.
 
-2.  Especifique `<char>` al llamar el método de objeto auxiliar de prueba para comprobar que la prueba funciona para las variables `char`.
+2.  Especifique `<char>` al llamar el método del asistente de prueba para comprobar que la prueba funciona para las variables `char`.
 
 ```csharp
 public void SizeOfLinkedListTestHelper<T>()
@@ -109,13 +111,14 @@ public void SizeOfLinkedListTestHelper<T>()
 [TestMethod()]
 public void SizeOfLinkedListTest()
 {
-    SizeOfLinkedListTestHelper<int>();  // step 6
+    SizeOfLinkedListTestHelper<int>();  // step 6
     SizeOfLinkedListTestHelper<char>(); // step 7
 }
 ```
 
 > [!NOTE]
->  Cada vez que se ejecuta la prueba SizeOfLinkedListTest, se llama dos veces a su método TestHelper. La instrucción Assert debe evaluarse como true todas las veces para que la prueba se supere. Si se produce un error en la prueba, es posible que no quede claro si fue la llamada que especificó `<int>` o la llamada que especificó `<char>` la que provocó el error. Para encontrar la respuesta, puede examinar la pila de llamadas o establecer puntos de interrupción en el método de prueba y luego depurar mientras se ejecuta la prueba. Para obtener más información, vea [Cómo: Depurar mientras se ejecuta una prueba en una solución ASP.NET](http://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
+> Cada vez que se ejecuta la prueba SizeOfLinkedListTest, se llama dos veces a su método TestHelper. La instrucción Assert debe evaluarse como true todas las veces para que la prueba se supere. Si se produce un error en la prueba, es posible que no quede claro si fue la llamada que especificó `<int>` o la llamada que especificó `<char>` la que provocó el error. Para encontrar la respuesta, puede examinar la pila de llamadas o establecer puntos de interrupción en el método de prueba y luego depurar mientras se ejecuta la prueba. Para obtener más información, vea [Cómo: Depurar mientras se ejecuta una prueba en una solución ASP.NET](https://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
+
 
 ###  <a name="TypeConstraintNotSatisfied"></a> Ejemplo 2: Usar una restricción de tipo
  En este ejemplo se muestra una prueba unitaria para un método genérico que usa una restricción de tipo que no se cumple. La primera sección muestra código del proyecto de código en prueba. Se resalta la restricción de tipo.

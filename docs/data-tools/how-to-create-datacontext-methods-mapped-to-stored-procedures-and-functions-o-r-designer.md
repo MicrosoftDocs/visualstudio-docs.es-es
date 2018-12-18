@@ -6,53 +6,57 @@ ms.assetid: e7ca32f1-50b3-48af-ad92-ceafd749296a
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6d086157761bbade92e7b79973876d18bc52f2fd
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8ae5fb4b3785bde0e092f68b62a9b030069a52aa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942704"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Cómo: crear métodos DataContext asignados a procedimientos almacenados y funciones (Object Relational Designer)
-Procedimientos almacenados y funciones que pueden agregarse a la [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] como <xref:System.Data.Linq.DataContext> métodos. Llamar al método y pasar los parámetros necesarios se ejecuta el procedimiento almacenado o función en la base de datos y devuelve los datos en el tipo de valor devuelto de la <xref:System.Data.Linq.DataContext> método. Para obtener información detallada acerca de <xref:System.Data.Linq.DataContext> métodos, vea [métodos DataContext (Object Relational Designer)](../data-tools/datacontext-methods-o-r-designer.md).
+
+Puede agregar procedimientos almacenados y funciones para el **Object Relational Designer** como <xref:System.Data.Linq.DataContext> métodos. Una llamada al método y pasar los parámetros necesarios se ejecuta el procedimiento almacenado o función en la base de datos y devuelve los datos en el tipo de valor devuelto de la <xref:System.Data.Linq.DataContext> método. Para obtener información detallada sobre <xref:System.Data.Linq.DataContext> métodos, vea [métodos DataContext (Object Relational Designer)](../data-tools/datacontext-methods-o-r-designer.md).
 
 > [!NOTE]
->  Los procedimientos almacenados también se pueden usar para invalidar el comportamiento predeterminado de [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] en tiempo de ejecución para las inserciones, actualizaciones y eliminaciones cuando se guardan los cambios de las clases de entidad en una base de datos. Para obtener más información, consulte [Cómo: asignar procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones (Object Relational Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
+> También puede usar los procedimientos almacenados para invalidar el valor predeterminado [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] comportamiento en tiempo de ejecución que realiza inserciones, actualizaciones y eliminaciones cuando los cambios se guardan las clases de entidad en una base de datos. Para obtener más información, consulte [Cómo: asignar procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones (Object Relational Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
-## <a name="creating-datacontext-methods"></a>Crear métodos de DataContext
- Puede crear <xref:System.Data.Linq.DataContext> métodos arrastrando procedimientos almacenan o funciones de **Server Explorer/Database Explorer** en el [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
+## <a name="create-datacontext-methods"></a>Crear métodos DataContext
+
+Puede crear <xref:System.Data.Linq.DataContext> métodos arrastrando procedimientos almacenan o funciones desde <strong>Explorador de servidores o ** Database Explorer</strong> hasta la **Object Relational Designer**.
 
 > [!NOTE]
->  El tipo de valor devuelto del método de <xref:System.Data.Linq.DataContext> generado difiere según la ubicación donde se coloque el procedimiento almacenado o la función en el [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. Si se coloca un elemento directamente en una clase de entidad existente, se crea un método de <xref:System.Data.Linq.DataContext> con el tipo de valor devuelto de la clase de entidad. Si se coloca un elemento en un área vacía del [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], se crea un método de <xref:System.Data.Linq.DataContext> que devuelve un tipo generado automáticamente. Puede cambiar el tipo de valor devuelto de un <xref:System.Data.Linq.DataContext> método después de agregarlo al panel de métodos. Para examinar o cambiar el tipo de valor devuelto de un <xref:System.Data.Linq.DataContext> método, selecciónelo y fíjese la **tipo de valor devuelto** propiedad en el **propiedades** ventana. Para obtener más información, consulte [Cómo: cambiar el tipo de valor devuelto de un método de DataContext (Object Relational Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).
+> El tipo de valor devuelto de generado <xref:System.Data.Linq.DataContext> método difiere dependiendo de dónde se coloque el procedimiento almacenado o la función en el **Object Relational Designer**. Si se coloca un elemento directamente en una clase de entidad existente, se crea un método de <xref:System.Data.Linq.DataContext> con el tipo de valor devuelto de la clase de entidad. Quitar elementos hasta un área vacía de la **Object Relational Designer** crea un <xref:System.Data.Linq.DataContext> método que devuelve un tipo generado automáticamente. Puede cambiar el tipo de valor devuelto de un <xref:System.Data.Linq.DataContext> método después de agregarlo a la **métodos** panel. Para examinar o cambiar el tipo de valor devuelto de un <xref:System.Data.Linq.DataContext> método, selecciónelo y fíjese la **Return Type** propiedad en el **propiedades** ventana. Para obtener más información, consulte [Cómo: cambiar el tipo de valor devuelto de un método DataContext (Object Relational Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-#### <a name="to-create-datacontext-methods-that-return-automatically-generated-types"></a>Para crear métodos de DataContext que devuelvan tipos generados automáticamente
+### <a name="to-create-datacontext-methods-that-return-automatically-generated-types"></a>Para crear métodos de DataContext que devuelvan tipos generados automáticamente
 
-1.  En **Explorador de servidores**/**el Explorador de base de datos**, expanda la **procedimientos almacenados** nodo de la base de datos que está trabajando.
+1.  En **Explorador de servidores** o **Database Explorer**, expanda el **Stored Procedures** nodo de la base de datos con el que está trabajando.
 
-2.  Busque el procedimiento almacenado que desee y arrástrelo hasta un área vacía del [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
+2.  Busque el procedimiento almacenado que desee y arrástrelo hasta un área vacía de la **Object Relational Designer**.
 
      El <xref:System.Data.Linq.DataContext> método se crea con un tipo de valor devuelto generado automáticamente y aparece en el **métodos** panel.
 
-#### <a name="to-create-datacontext-methods-that-have-the-return-type-of-an-entity-class"></a>Para crear métodos de DataContext con el tipo de valor devuelto de una clase de entidad
+### <a name="to-create-datacontext-methods-that-have-the-return-type-of-an-entity-class"></a>Para crear métodos de DataContext con el tipo de valor devuelto de una clase de entidad
 
-1.  En **Explorador de servidores**/**el Explorador de base de datos**, expanda la **procedimientos almacenados** nodo de la base de datos que está trabajando.
+1.  En **Explorador de servidores** o **Database Explorer**, expanda el **Stored Procedures** nodo de la base de datos con el que está trabajando.
 
-2.  Busque el procedimiento almacenado que desee y arrástrelo hasta una clase de entidad existente en el [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
+2.  Busque el procedimiento almacenado que desee y arrástrelo hasta una clase de entidad existente en el **Object Relational Designer**.
 
      El <xref:System.Data.Linq.DataContext> método se crea con el tipo de valor devuelto de la clase de entidad seleccionada y aparece en el **métodos** panel.
 
 > [!NOTE]
->  Para obtener información acerca de cómo cambiar el tipo de valor devuelto de existente <xref:System.Data.Linq.DataContext> métodos, vea [Cómo: cambiar el tipo de valor devuelto de un método de DataContext (Object Relational Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).
+> Para obtener información acerca de cómo cambiar el tipo de valor devuelto de existente <xref:System.Data.Linq.DataContext> métodos, vea [Cómo: cambiar el tipo de valor devuelto de un método DataContext (Object Relational Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).
 
 ## <a name="see-also"></a>Vea también
 
-- [Herramientas LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Métodos de DataContext (Object Relational Designer)](../data-tools/datacontext-methods-o-r-designer.md)
-- [Tutorial: Crear clases LINQ to SQL](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Métodos DataContext (Object Relational Designer)](../data-tools/datacontext-methods-o-r-designer.md)
+- [Tutorial: Creación de LINQ a las clases SQL](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Introducción a LINQ en Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)
 - [LINQ en C#](/dotnet/csharp/linq/linq-in-csharp)

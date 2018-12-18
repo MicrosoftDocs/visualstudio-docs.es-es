@@ -1,7 +1,9 @@
 ---
-title: Métodos abreviados en el Diseñador de flujo de trabajo de teclado | Documentos de Microsoft
+title: Diseñador de flujo de trabajo - métodos abreviados de teclado en el Diseñador de flujo de trabajo
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - WFDKeyboardShortcuts.UI
 ms.assetid: 9be75438-a4a3-4781-94e5-45b7ec082358
@@ -10,26 +12,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29d96eb6d738fbf23749bec601743002a451ad06
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e4040a5b370674e7794b09e4d1cae68f424c7792
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887376"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Métodos abreviados de teclado en el Diseñador de flujo de trabajo
 
-Puede tener acceso a toda la funcionalidad básica del Diseñador de flujo de trabajo de Windows con el teclado.
+Puede tener acceso a toda la funcionalidad principal del Diseñador de flujo de trabajo mediante el teclado.
 
 ## <a name="navigating-the-workflow-designer-using-the-keyboard"></a>Navegar por el Diseñador de flujo de trabajo mediante el teclado
 
-En [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], los accesos directos globales y los accesos directos de depuración se aplican a [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. También, se han creado diversos métodos abreviados de teclado específicos para [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. En [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], todos los métodos abreviados de teclado se pueden reasignar. Sin embargo, en una aplicación hospedada en otro host, estos métodos abreviados de teclado están codificados de forma rígida.
+Dentro de Visual Studio, los accesos directos de depuración y accesos directos globales se aplican en el Diseñador de flujo de trabajo. Además, se ha creado una serie de métodos abreviados de teclado específicos de diseñador de flujo de trabajo. En Visual Studio, se pueden reasignar todos los métodos abreviados de teclado. Sin embargo, en una aplicación hospedada en otro host, estos métodos abreviados de teclado están codificados de forma rígida.
 
 ### <a name="workflow-designer-keyboard-shortcuts"></a>Métodos abreviados de teclado del Diseñador de flujo de trabajo
 
-En la siguiente tabla se resumen los métodos abreviados de teclado predeterminados que se asignan a los comandos de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].
+En la tabla siguiente se resume los métodos abreviados de teclado asignados a los comandos del Diseñador de flujo de trabajo.
 
 |Acceso directo|Finalidad|
-|--------------|-------------|
+|-|-------------|
 |CTRL+E, A|Muestra u oculta el diseñador de argumentos.|
 |CTRL+E, C|Contrae la actividad seleccionada en el sitio.|
 |CTRL+E, E|Expande la actividad seleccionada en el sitio.|
@@ -46,13 +49,13 @@ En la siguiente tabla se resumen los métodos abreviados de teclado predetermina
 
 ### <a name="flowchart"></a>Diagrama de flujo
 
-La siguiente lista muestra los gestos que se utilizan para construir un diagrama de flujo con el teclado. Como en el resto de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], las actividades se agregan a la superficie del diseñador mediante los accesos directos del cuadro de herramientas global que se proporcionan con [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].
+La siguiente lista muestra los gestos que se utilizan para construir un diagrama de flujo con el teclado. Como se muestra en el resto del Diseñador de flujo de trabajo, las actividades se agregan a la superficie del diseñador mediante los métodos abreviados de cuadro de herramientas global proporcionados con Visual Studio.
 
 - Para mover una actividad, seleccione la actividad y utilice las teclas de dirección para cambiar la posición.
 
 - Para cambiar el tamaño de un diagrama de flujo, mueva una actividad más allá del borde actual del diagrama de flujo mediante las teclas de dirección. El diagrama de flujo cambia su tamaño automáticamente.
 
-- Para establecer una actividad como nodo de inicio, utilice la **establecer como nodo inicial** comando en el menú contextual.
+- Para establecer una actividad como nodo de inicio, use el **establecer como nodo inicial** comando en el menú contextual.
 
 - Para conectar actividades:
 
@@ -70,11 +73,11 @@ Notas sobre cómo conectar las actividades mediante el teclado:
 
 - Si una pareja de actividades no se puede conectar, por ejemplo si la actividad de origen ya tiene una conexión de salida, aún se pueden efectuar otras conexiones entre actividades en la selección siempre que sea posible.
 
-- Cuando un **FlowDecision** se incluye en la selección y la **FlowDecision** no tiene ningún conector saliente, el conector se coloca en el **True** bifurcación.
+- Cuando un **FlowDecision** se incluye en la selección y la **FlowDecision** no tiene ningún conector de salida, el conector se coloca en el **True** rama.
 
 ### <a name="expression-editing"></a>Edición de Expresiones
 
-De forma predeterminada, los métodos abreviados de teclado predeterminados para la modificación de texto en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] se aplican en el editor de expresiones de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], con las siguientes limitaciones:
+De forma predeterminada, los métodos abreviados de teclado predeterminado para la edición de texto de Visual Basic se aplican en el editor de expresiones en el Diseñador de flujo de trabajo, con las siguientes limitaciones:
 
 - La reasignación de métodos abreviados de teclado para los siguientes comandos no tiene efecto alguno. Cuando edite una expresión, solo puede utilizar los métodos abreviados de teclado predeterminados para tener acceso a estos comandos.
 
@@ -85,4 +88,4 @@ De forma predeterminada, los métodos abreviados de teclado predeterminados para
    - Undo
    - Redo
 
-- Para reasignar los métodos abreviados de teclado para los comandos de edición de expresiones dentro de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] en [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], modifique los accesos directos en el ámbito de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Los cambios realizados en el ámbito del Editor de texto no se aplican automáticamente a [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Si desea reasignar los accesos directos en ambos lugares, debe aplicar los cambios dos veces (una vez para cada ámbito).
+- Para reasignar los métodos abreviados de teclado para comandos de edición de expresiones dentro del Diseñador de flujo de trabajo en Visual Studio, edite los accesos directos en el ámbito del Diseñador de flujo de trabajo. Los cambios realizados en el ámbito del Editor de texto no se aplican automáticamente al diseñador de flujo de trabajo. Si desea reasignar los accesos directos en ambos lugares, debe aplicar los cambios dos veces (una vez para cada ámbito).

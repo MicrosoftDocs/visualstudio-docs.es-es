@@ -17,18 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d1f401e5406ed7e5bb8244c556dbc6fbc365e773
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 935b7aa55633167b6f9630b8046e29f9bc8eba91
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35238087"
 ---
 # <a name="functions-view"></a>Vista Funciones
 La vista Funciones muestra las funciones que se llaman durante la generación de perfiles.  
   
  De forma predeterminada, las funciones aparecen por nombre. Para ver las funciones por módulo, haga clic con el botón derecho en la ventana de la vista Funciones y seleccione **Mostrar en la vista Módulo**. Esto hará que se muestre la vista Módulo.  
   
- Para agregar o quitar columnas, haga clic con el botón derecho en la ventana del informe y seleccione **Agregar o quitar columnas**. Además, puede ordenar los datos haciendo clic en el nombre de una columna. Para obtener más información, consulte [Cómo: Personalizar una pestaña integrada](../profiling/how-to-customize-report-view-columns.md).  
+ Para agregar o quitar columnas, haga clic con el botón derecho en la ventana del informe y seleccione **Agregar o quitar columnas**. Además, puede ordenar los datos haciendo clic en el nombre de una columna. Para obtener más información, vea [Cómo: Personalizar una pestaña integrada](../profiling/how-to-customize-report-view-columns.md).  
   
  Las columnas que están disponibles en la vista Funciones dependen del método de generación de perfiles (muestreo o instrumentación) usado para recopilar los datos y de si los datos de memoria de .NET se recopilaron en la ejecución de generación de perfiles.  
   

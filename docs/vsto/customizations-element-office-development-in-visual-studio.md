@@ -1,5 +1,5 @@
 ---
-title: '&lt;las personalizaciones&gt; elemento (desarrollo de Office en Visual Studio) | Documentos de Microsoft'
+title: '&lt;personalizaciones&gt; elemento (desarrollo de Office en Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7174f4f04914a120454d9977516e7c2443cbadda
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9ac1a78f0d35b2fac751e87874bbfe169798712a
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673922"
 ---
-# <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;las personalizaciones&gt; elemento (desarrollo de Office en Visual Studio)
+# <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;personalizaciones&gt; elemento (desarrollo de Office en Visual Studio)
   El elemento `customizations` del espacio de nombres `vstov4` contiene toda la información sobre la instalación y carga de cada solución de Office.  
   
-## <a name="syntax-for-document-level-customizations"></a>Sintaxis de las personalizaciones de nivel de documento  
+## <a name="syntax-for-document-level-customizations"></a>Sintaxis para las personalizaciones de nivel de documento  
   
-```  
+```xml
 <customizations>  
   <customization  
     id  
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="syntax-for-vsto-add-ins"></a>Sintaxis de los complementos de VSTO  
   
-```  
+```xml
 <customizations>  
   <customization  
     id  
@@ -56,27 +57,27 @@ ms.lasthandoff: 04/16/2018
 </customizations>  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementos y atributos  
+## <a name="elements-and-attributes"></a>Los elementos y atributos  
  El elemento `customizations` contiene información específica sobre cada solución de Office. Este elemento debe estar en el espacio de nombres siguiente: `vstov4=urn:schemas-microsoft-com:vsto.v4`. Los elementos secundarios del ensamblado también deben estar en este espacio de nombres.  
   
  El elemento `customizations` no tiene atributos.  
   
  El elemento `customizations` tiene el siguiente elemento secundario:  
   
-### <a name="customization"></a>personalización  
+### <a name="customization"></a>Personalización  
  Requerido. El `customization` elemento en el `vstov4` espacio de nombres se define en [ &#60;personalización&#62; elemento &#40;desarrollo de Office en Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).  
   
-## <a name="example-of-a-document-level-customization"></a>Ejemplo de personalización de nivel de documento  
+## <a name="example-of-a-document-level-customization"></a>Ejemplo de una personalización de nivel de documento  
   
 ### <a name="description"></a>Descripción  
  En el ejemplo de código siguiente se muestra el elemento `customizations` para una personalización de nivel de documento.  
   
 > [!NOTE]  
->  Este ejemplo de código forma parte de un ejemplo más extenso incluido en [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
+>  Este ejemplo de código forma parte de un ejemplo más extenso incluido en [manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Código  
   
-```  
+```xml
 <vstov4:customizations   
   xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">  
   <vstov4:customization>  
@@ -86,14 +87,14 @@ ms.lasthandoff: 04/16/2018
 </vstov4:customizations>  
 ```  
   
-## <a name="example-of-an-vsto-add-in"></a>Ejemplo de un complemento de VSTO  
+## <a name="example-of-a-vsto-add-in"></a>Ejemplo de un complemento de VSTO  
   
 ### <a name="description"></a>Descripción  
- En el ejemplo de código siguiente se muestra el elemento `customizations` para un complemento de VSTO. Este es un complemento de VSTO para Outlook que incluye áreas de formulario. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
+ En el ejemplo de código siguiente se ilustra la `customizations` (elemento) para un complemento de VSTO. Este es un complemento de VSTO para Outlook que incluye áreas de formulario. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Código  
   
-```  
+```xml
 <vstov4:customizations   
   xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">  
   <vstov4:customization>  
@@ -122,7 +123,7 @@ ms.lasthandoff: 04/16/2018
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
+ [Manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md)   
  [Manifiestos de implementación para soluciones de Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [Manifiesto de aplicación ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
   

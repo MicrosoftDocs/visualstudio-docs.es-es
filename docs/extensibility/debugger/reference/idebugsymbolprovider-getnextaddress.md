@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a682342410b32422bc87f180b00f017520322d8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 927069dd3a62ffc56534f68179db2921ccc227f5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849208"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
 Obtiene la dirección de depuración que sigue a una dirección de depuración especificado en un método.  
@@ -44,10 +45,10 @@ int GetNextAddress(
   
 #### <a name="parameters"></a>Parámetros  
  `pAddress`  
- [in] Dirección de depuración especificado.  
+ [in] Dada la dirección de depuración.  
   
  `fStatementOnly`  
- [in] Si es TRUE, limita las direcciones de depuración a una única instrucción.  
+ [in] Si es TRUE, limita las direcciones de depuración para una sola instrucción.  
   
  `ppAddress`  
  [out] Devuelve la siguiente dirección de depuración.  

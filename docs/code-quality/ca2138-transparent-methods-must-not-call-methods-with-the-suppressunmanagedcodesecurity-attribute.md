@@ -1,6 +1,7 @@
 ---
 title: 'CA2138: Los métodos transparentes no deben llamar a métodos con el atributo SuppressUnmanagedCodeSecurity'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -11,13 +12,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 10cded476edadfa6141ec68a84d74c4d8704aa35
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3ba7a1c25387349ba78b198a37b709d6bdd10b64
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948640"
 ---
 # <a name="ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute"></a>CA2138: Los métodos transparentes no deben llamar a métodos con el atributo SuppressUnmanagedCodeSecurity
+
 |||
 |-|-|
 |TypeName|TransparentMethodsMustNotCallSuppressUnmanagedCodeSecurityMethods|
@@ -26,17 +29,17 @@ ms.lasthandoff: 04/19/2018
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Motivo
- Un método transparente en seguridad llama a un método que se marca con el <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> atributo.
+ Un método transparente en seguridad llama a un método marcado con el <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> atributo.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Esta regla se desencadena en cualquier método transparente que llame directamente a código nativo, por ejemplo, mediante el uso de una a través de P/Invoke (invocación de plataforma) llamar. Métodos de interoperabilidad COM y P/Invoke que están marcados con el <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> atributo resultado en un LinkDemand se realiza en el método de llamada. Como código transparente en seguridad no puede satisfacer LinkDemands, el código no puede llamar a métodos que se marcan con el atributo SuppressUnmanagedCodeSecurity, o los métodos de clase que se marca con el atributo SuppressUnmanagedCodeSecurity. Se producirá un error en el método o la demanda se convertirá en una demanda completa.
+ Esta regla se desencadena en cualquier método transparente que llame directamente al código nativo, por ejemplo, mediante el uso de P/Invoke (invocación de plataforma) llamar. Métodos de interoperabilidad COM y P/Invoke que están marcados con el <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> atributo resultado en un LinkDemand que se realiza en el método de llamada. Como código transparente en seguridad no puede satisfacer LinkDemands, el código también no puede llamar a métodos marcados con el atributo SuppressUnmanagedCodeSecurity o métodos de clase que está marcado con el atributo SuppressUnmanagedCodeSecurity. Se producirá un error en el método o la demanda se convertirá en una demanda completa.
 
- Las infracciones de esta regla conducen a una <xref:System.MethodAccessException> en el modelo de transparencia de seguridad de nivel 2 y una demanda completa para <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> en el modelo de transparencia de nivel 1.
+ Las infracciones de esta regla una <xref:System.MethodAccessException> en el modelo de transparencia de seguridad de nivel 2 y una demanda completa de <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> en el modelo de transparencia de nivel 1.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, quite el <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> de atributo y marque el método con el <xref:System.Security.SecurityCriticalAttribute> o <xref:System.Security.SecuritySafeCriticalAttribute> atributo.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo

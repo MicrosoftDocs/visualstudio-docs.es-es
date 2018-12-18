@@ -14,18 +14,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7362f0a7495a75bc1d34d7f839bf0397787b6173
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e1481d5a6f22606875b0173bf0d3060bb455f022
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257633"
 ---
 # <a name="multiple-categories-are-present"></a>Hay múltiples categorías
 Se selecciona una sección que contiene más de un tipo de actividad para un intervalo de tiempo determinado. Observe que se muestran dos colores, uno apilado verticalmente en el otro. Estos colores representan solo las dos actividades principales más frecuentes en el intervalo de tiempo determinado. Las frecuencias de estas dos actividades se muestran relacionadas entre sí como tercios o mitades de la barra vertical. Para ver más detalles, pruebe a acercar esta sección de la vista de subprocesos.  
   
 ## <a name="see-also"></a>Vea también  
- [Tiempo de ejecución (Vista Subprocesos)](../profiling/execution-time-threads-view.md)   
- [Tiempo de E/S (Vista Subprocesos)](../profiling/i-o-time-threads-view.md)   
+ [Tiempo de ejecución (Vista de subprocesos)](../profiling/execution-time-threads-view.md)   
+ [Tiempo de E/S (Vista de subprocesos)](../profiling/i-o-time-threads-view.md)   
  [Tiempo de administración de la memoria](../profiling/memory-management-time.md)   
  [Tiempo de adelantamiento](../profiling/preemption-time.md)   
  [Tiempo de suspensión](../profiling/sleep-time.md)   

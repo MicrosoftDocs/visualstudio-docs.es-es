@@ -1,45 +1,61 @@
 ---
-title: Configuración de un repositorio de Subversion en Visual Studio para Mac
-description: Empleo de Git y Subversion en Visual Studio para Mac.
-author: asb3993
-ms.author: amburns
-ms.date: 04/14/2017
+title: Configuración de un repositorio de Subversion
+description: Empleo de Subversion en Visual Studio para Mac.
+author: conceptdev
+ms.author: crdun
+ms.date: 05/06/2018
 ms.assetid: 0D58FB37-530E-495B-BED6-FD499477A9B6
-ms.openlocfilehash: e6b6fd600d3f32c77651b9a4fbb0dff2cd754bcb
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 3995db4ef4609f68512dede454855da1f770141f
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295558"
 ---
-# <a name="setting-up-a-subversion-repository"></a>Configuración de un repositorio de Subversion
+# <a name="set-up-a-subversion-repository"></a>Configurar un repositorio de Subversion
 
-Subversion es un sistema de control de versiones centralizado. Esto significa que hay un único servidor que contiene todos los archivos y las revisiones desde el que los usuarios pueden extraer del repositorio cualquier versión de cualquier archivo. Cuando se extraen archivos de un repositorio remoto de Subversion, el usuario obtiene una instantánea del repositorio en ese momento dado.
+Subversion es un _sistema centralizado de control de versiones_, lo que significa que hay un único servidor que contiene todos los archivos y las revisiones desde el que los usuarios pueden extraer del repositorio cualquier versión de cualquier archivo. Cuando se extraen archivos de un repositorio remoto de Subversion, el usuario obtiene una instantánea del repositorio en ese momento dado.
 
-Antes de comenzar a usar Subversion, se deben instalar las herramientas de línea de comandos de Xcode, ya que incluyen los paquetes de SVN correctos. Puede comprobar que SVN está instalado en Terminal con el siguiente comando:
+Para usar Subversion para el control de versiones, debe instalarlo en el equipo. Para comprobar si Subversion está instalado en el equipo, use el comando siguiente en la terminal:
 
-`svn h`
+```bash
+svn --version
+```
 
-1. Cree un repositorio gratuito de SVN en línea. En este ejemplo se ha usado [Assembla](https://app.assembla.com/). Una vez creado, se proporciona una dirección URL que se usa para conectarse al repositorio: 
+Este comando devuelve el número de versión.
 
-    ![Obtención y copia de la dirección URL de SVN](media/version-control-subversion1-sml.png)
+Si Subversion aún no está instalado, la manera más fácil de obtenerlo es instalar las _Herramientas de línea de comandos de Xcode_. Use el comando siguiente para instalar las Herramientas de línea de comandos de Xcode y Subversion.
+
+```bash
+xcode-select --install
+```
+
+Una vez que Subversion esté instalado en el equipo, siga estos pasos para publicar el proyecto en SVN.
+
+1. Cree un repositorio gratuito de SVN en línea. En este ejemplo se ha usado [Assembla](https://app.assembla.com/). Una vez creado, se proporciona una dirección URL que se usa para conectarse al repositorio:
+
+    ![Copiar la URL de SVN](media/version-control-subversion1-sml.png)
 
 2. Abra o cree un proyecto de Visual Studio para Mac.
 
-3. Haga clic con el botón derecho en el proyecto y seleccione **Control de versiones > Publicar en Control de versiones...**: 
+3. Haga clic con el botón derecho en el proyecto y seleccione **Control de versiones > Publicar en Control de versiones...**:
 
     ![Inicio de publicación de proyecto](media/version-control-subversion2.png)
 
 4. En la pestaña **Conectar a repositorio**, seleccione **Subversion** en la lista desplegable superior.
 
-5. Escriba la dirección URL del paso 1. Esto debería rellenar los demás campos de forma predeterminada: 
+5. Escriba la dirección URL del paso 1. Cuando escriba la dirección URL, los demás campos se rellenan de forma predeterminada:
 
     ![Cuadro de diálogo de selección de repositorio y especificación de detalles](media/version-control-subversion3.png)
 
 7. Haga clic en **Aceptar** y luego confirme al hacer clic en **Publicar**.
 
-7. Es posible que se le pida que escriba las credenciales del sitio en el que se crea el repositorio. Escríbalas como se muestra a continuación:
+7. Si se le pide, escriba las credenciales del sitio en el que se crea el repositorio, tal y como se muestra a continuación:
 
-    ![](media/version-control-subversion5.png)
+    ![Escribir las credenciales del repositorio de Subversion](media/version-control-subversion5.png)
 
 8.  Todos los comandos de control de versiones disponibles ya deberían aparecer en el menú de control de versiones.
 
+## <a name="see-also"></a>Vea también
+
+- [Trabajar con Subversion](working-with-subversion.md)

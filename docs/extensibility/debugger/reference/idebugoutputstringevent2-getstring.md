@@ -1,5 +1,5 @@
 ---
-title: IDebugOutputStringEvent2::GetString | Documentos de Microsoft
+title: IDebugOutputStringEvent2::GetString | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47ccb3398d71e1bbb73ae9f73a0af99b64f27548
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3e1f0878165dc450ed482fa776988e6237db30da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880083"
 ---
 # <a name="idebugoutputstringevent2getstring"></a>IDebugOutputStringEvent2::GetString
-Obtiene el mensaje que se pueden mostrar.  
+Obtiene el mensaje que se puede mostrar.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,10 +41,10 @@ int GetString(
   
 #### <a name="parameters"></a>Parámetros  
  `pbstrString`  
- [out] Devuelve el mensaje que se pueden mostrar.  
+ [out] Devuelve el mensaje que se puede mostrar.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugOutputStringEvent2](../../../extensibility/debugger/reference/idebugoutputstringevent2.md)

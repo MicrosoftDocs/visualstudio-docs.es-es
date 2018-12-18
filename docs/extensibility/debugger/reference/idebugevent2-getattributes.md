@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d6305d7000456eb81cf01c9e85e6c2a421ed800
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 515775a064d1e260d9eb028c6e1b6020b7d642cd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935307"
 ---
 # <a name="idebugevent2getattributes"></a>IDebugEvent2::GetAttributes
-Obtiene los atributos para este evento de depuración.  
+Obtiene los atributos de este evento de depuración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,13 +41,13 @@ int GetAttribute(
   
 #### <a name="parameters"></a>Parámetros  
  `pdwAttrib`  
- [out] Una combinación de indicadores de la [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) enumeración.  
+ [out] Una combinación de marcas de la [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) enumeración.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- El [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaz es común a todos los eventos. Este método describe el tipo de evento; Por ejemplo, es el evento sincrónicas o asincrónicas y es un evento de detención.  
+ El [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaz es común a todos los eventos. Este método describe el tipo de evento; Por ejemplo, es el evento sincrónica o asincrónica y es un evento de detención.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   

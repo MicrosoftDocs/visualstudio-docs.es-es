@@ -1,11 +1,11 @@
 ---
 title: IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScriptSiteDebugEx.OnCanNotJITScriptErrorDebug
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug
 ms.assetid: 83f81476-bf12-47f2-897d-1d37d21137d4
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725115"
 ---
 # <a name="iactivescriptsitedebugexoncannotjitscripterrordebug"></a>IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug
 Informa al host un error de tiempo de ejecución de secuencia de comandos cuando el proceso de depurar Manager no encuentra a un depurador de script solo en tiempo.  

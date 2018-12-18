@@ -1,6 +1,7 @@
 ---
 title: 'CA1411: Los métodos de registro COM no deben ser visibles'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -13,15 +14,20 @@ ms.assetid: a59f96f1-1f38-4596-b656-947df5c55311
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fbb8a3f9dd442e26ee18abd345d92be3f650c67
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0cd599ee67182084e7f2fb663d343281b0a8b079
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551719"
 ---
 # <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411: Los métodos de registro COM no deben ser visibles
+
 |||
 |-|-|
 |TypeName|ComRegistrationMethodsShouldNotBeVisible|
@@ -30,19 +36,20 @@ ms.lasthandoff: 04/19/2018
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Motivo
- Un método que se marca con la <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> atributo es visible externamente.
+
+Un método marcado con el <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> atributo es visible externamente.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Cuando un ensamblado se registra con el modelo de objetos componentes (COM), se agregan las entradas en el registro para cada tipo visible para COM del ensamblado. Los métodos que se marcan con la <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> y <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> atributos se denominan durante los procesos de registro y anulación del registro, respectivamente, para ejecutar el código de usuario que es específico para el registro o la anulación del registro de estos tipos. No se debe llamar a este código fuera de estos procesos.
+ Cuando un ensamblado se registra con el modelo de objetos componentes (COM), se agregan entradas al registro para cada tipo COM-visible en el ensamblado. Los métodos marcados con el <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> y <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> atributos se denominan durante los procesos de registro y anulación del registro, respectivamente, para ejecutar código de usuario que es específico para el registro o anulación del registro de estos tipos. No se debe llamar a este código fuera de estos procesos.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, cambie la accesibilidad del método que se `private` o `internal` (`Friend` en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+ Para corregir una infracción de esta regla, cambie la accesibilidad del método que `private` o `internal` (`Friend` en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- En el siguiente ejemplo muestra dos métodos que infringen la regla.
+ El ejemplo siguiente muestra dos métodos que infringen la regla.
 
  [!code-csharp[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/CSharp/ca1411-com-registration-methods-should-not-be-visible_1.cs)]
  [!code-vb[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/VisualBasic/ca1411-com-registration-methods-should-not-be-visible_1.vb)]
@@ -51,4 +58,7 @@ ms.lasthandoff: 04/19/2018
  [CA1410: Los métodos de registro COM se deben asociar](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
 
 ## <a name="see-also"></a>Vea también
- <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName> [Registrar ensamblados con COM](/dotnet/framework/interop/registering-assemblies-with-com) [Regasm.exe (herramienta de registro de ensamblados)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool)
+
+- <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName>
+- [Registrar ensamblados con COM](/dotnet/framework/interop/registering-assemblies-with-com)
+- [Regasm.exe (Herramienta de registro de ensamblados)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool)

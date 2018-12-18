@@ -22,27 +22,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7be7dacbe7b3b89b8bdc09515c23d7597e7e55e5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a6736e0646193754dbd932e5501a6473ee18c7e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936334"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Just-In-Time, Depuración, Opciones (Cuadro de diálogo)
 Para tener acceso a la **Just-In-Time** página, vaya a la **herramientas** menú y haga clic en **opciones**. En el **opciones** cuadro de diálogo, expanda el **depuración** nodo y seleccione **Just-In-Time**. Esta página permite habilitar la depuración Just-In-Time para el código administrado, código nativo y scripts. Para obtener más información, consulte [depuración Just](../debugger/just-in-time-debugging-in-visual-studio.md).  
   
  Puede habilitar la depuración Just-In-Time para estos tipos de programas:  
   
--   Administrado  
+- Administrado  
   
--   Nativo  
+- Nativo  
   
--   Script  
+- Script  
   
- La depuración Just-In-Time es una técnica para depurar un programa iniciado fuera de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Puede ejecutar un sistema creado en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fuera del entorno de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Si ha habilitado la depuración Just-In-Time, un bloqueo mostrará un cuadro de diálogo en el que se le preguntará si desea depurar.  
+  La depuración Just-In-Time es una técnica para depurar un programa iniciado fuera de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Puede ejecutar un sistema creado en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fuera del entorno de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Si ha habilitado la depuración Just-In-Time, un bloqueo mostrará un cuadro de diálogo en el que se le preguntará si desea depurar.  
   
 ## <a name="associated-warnings"></a>Advertencias asociadas  
- Cuando visite esta página de la **opciones** cuadro de diálogo, verá un mensaje de advertencia similar al siguiente:  
+ Cuando visite esta página de la **opciones** cuadro de diálogo, es posible que vea un mensaje de advertencia como este:  
   
  **Otro depurador se ha registrado como Just-In-Time depurador. Para reparar, habilite Just-In-Time depurar o ejecutar la reparación de Visual Studio.**  
   
@@ -50,11 +51,11 @@ Para tener acceso a la **Just-In-Time** página, vaya a la **herramientas** men�
   
  Otro mensaje que podría ver es el siguiente:  
   
- **Just-In-Time depuración registro errores detectados. Para reparar, habilite Just-In-Time depurar o ejecutar la reparación de Visual Studio.**  
+ **Just-In-Time depuración errores de registro. Para reparar, habilite Just-In-Time depurar o ejecutar la reparación de Visual Studio.**  
   
- Si ve cualquiera de estas advertencias, la depuración Just-In-Time [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] requiere privilegios de administrador hasta que corrija el problema. Si intenta habilitar Just-In-Time sin permisos de administrador en estas condiciones, aparecerá el siguiente mensaje de error:  
+ Si aparece cualquiera de estas advertencias, con la depuración Just-In-Time [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] requiere privilegios de administrador hasta que corrija el problema. Si intenta habilitar Just-In-Time sin permisos de administrador en estas condiciones, aparecerá el siguiente mensaje de error:  
   
- **Se denegó el acceso. Disponer de un administrador de depuración de habilitar Just-In-Time o reparar la instalación de Visual Studio.**  
+ **Acceso denegado. Tiene un administrador de depuración de habilitar Just-In-Time o repare la instalación de Visual Studio.**  
   
 ## <a name="see-also"></a>Vea también  
  [Depuración, cuadro de diálogo Opciones](../debugger/debugging-options-dialog-box.md)   

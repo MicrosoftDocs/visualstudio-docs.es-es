@@ -1,7 +1,17 @@
 ---
-title: Referencia de la API no administrada de ClickOnce | Documentos de Microsoft
+title: Referencia de API no administrada de ClickOnce | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
+api_name:
+- CleanOnlineAppCache
+- GetDeploymentDataFromManifest
+- LaunchApplication
+api_location:
+- dfshim.dll
+api_type:
+- COM
+topic_type:
+- apiref
 ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
@@ -20,13 +30,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0651c42abb410b55af956744da7a5e37952770b4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 121b9b3be3c7f942f3ed1d5f7f2600f24d684e2d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39082151"
 ---
-# <a name="clickonce-unmanaged-api-reference"></a>Referencia de la API no administrada de ClickOnce
+# <a name="clickonce-unmanaged-api-reference"></a>Referencia de API no administrada de ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] API públicas no administradas de dfshim.dll.  
   
 ## <a name="cleanonlineappcache"></a>CleanOnlineAppCache  
@@ -36,9 +47,9 @@ ms.lasthandoff: 04/19/2018
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un HRESULT que representa el error. Si se produce una excepción administrada, devuelve 0 x 80020009 (DISP_E_EXCEPTION).  
   
 ### <a name="remarks"></a>Comentarios  
- Al llamar a CleanOnlineAppCache se iniciará el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] servicio si no se está ejecutando.  
+ Al llamar a CleanOnlineAppCache se iniciará el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] del servicio si aún no se está ejecutando.  
   
-## <a name="getdeploymentdatafrommanifest"></a>GetDeploymentDataFromManifest aplicación  
+## <a name="getdeploymentdatafrommanifest"></a>GetDeploymentDataFromManifest  
  Recupera información sobre la implementación de la dirección URL del manifiesto y la activación.  
   
 ### <a name="parameters"></a>Parámetros  
@@ -47,11 +58,11 @@ ms.lasthandoff: 04/19/2018
 |---------------|-----------------|----------|  
 |`pcwzActivationUrl`|Un puntero a la `ActivationURL`.|LPCWSTR|  
 |`pcwzPathToDeploymentManifest`|Un puntero a la `PathToDeploymentManifest`.|LPCWSTR|  
-|`pwzApplicationIdentity`|Un puntero a un búfer para recibir una cadena terminada en NULL que especifica la identidad de aplicación completo devuelve.|LPWSTR|  
+|`pwzApplicationIdentity`|Un puntero a un búfer para recibir una cadena terminada en NULL que especifica la identidad de aplicación completo devolver.|LPWSTR|  
 |`pdwIdentityBufferLength`|Un puntero a un DWORD que es la longitud de la `pwzApplicationIdentity` búfer, en número de WCHAR. Esto incluye el espacio para el carácter nulo de terminación.|LPDWORD|  
-|`pwzProcessorArchitecture`|Un puntero a un búfer para recibir una cadena terminada en NULL que especifica la arquitectura del procesador de la implementación de aplicaciones, desde el manifiesto.|LPWSTR|  
+|`pwzProcessorArchitecture`|Un puntero a un búfer para recibir una cadena terminada en NULL que especifica la arquitectura del procesador de la implementación de aplicación, en el manifiesto.|LPWSTR|  
 |`pdwArchitectureBufferLength`|Un puntero a un DWORD que es la longitud de la `pwzProcessorArchitecture` búfer, en número de WCHAR.|LPDWORD|  
-|`pwzApplicationManifestCodebase`|Un puntero a un búfer para recibir una cadena terminada en NULL que especifica el código base del manifiesto de aplicación, en el manifiesto.|LPWSTR|  
+|`pwzApplicationManifestCodebase`|Un puntero a un búfer para recibir una cadena terminada en NULL que especifica el código base del manifiesto de aplicación, desde el manifiesto.|LPWSTR|  
 |`pdwCodebaseBufferLength`|Un puntero a un DWORD que es la longitud de la `pwzApplicationManifestCodebase` búfer, en número de WCHAR.|LPDWORD|  
 |`pwzDeploymentProvider`|Un puntero a un búfer para recibir una cadena terminada en NULL que especifica el proveedor de implementación del manifiesto, si está presente. En caso contrario, se devuelve una cadena vacía.|LPWSTR|  
 |`pdwProviderBufferLength`|Un puntero a un DWORD que es la longitud de la `pwzProviderBufferLength`.|LPDWORD|  
@@ -62,12 +73,12 @@ ms.lasthandoff: 04/19/2018
 ### <a name="remarks"></a>Comentarios  
  Punteros no deben ser nulos. `pcwzActivationUrl` y `pcwzPathToDeploymentManifest` no debe estar vacío.  
   
- Es responsabilidad del llamador para limpiar la URL de activación. Por ejemplo, la adición de escape caracteres donde se necesitan o quitar la cadena de consulta.  
+ Es responsabilidad del llamador para limpiar la URL de activación. Por ejemplo, agregar el escape de caracteres donde son necesarios o eliminación de la cadena de consulta.  
   
  Es responsabilidad del llamador para limitar la longitud de entrada. Por ejemplo, la longitud máxima de dirección URL es 2KB.  
   
 ## <a name="launchapplication"></a>LaunchApplication  
- Inicia o instala una aplicación mediante una dirección URL de la implementación.  
+ Inicia o se instala una aplicación con una dirección URL de la implementación.  
   
 ### <a name="parameters"></a>Parámetros  
   

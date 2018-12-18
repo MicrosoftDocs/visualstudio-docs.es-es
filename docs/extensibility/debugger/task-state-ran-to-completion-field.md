@@ -1,5 +1,5 @@
 ---
-title: Campo TASK_STATE_RAN_TO_COMPLETION | Documentos de Microsoft
+title: TASK_STATE_RAN_TO_COMPLETION (campo) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,24 +13,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: becc2087e9b956eb7305793fd41ff0ef4c5fdbcc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0ec080c5fd1fcb206daaab909b5e742245f9fe41
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276392"
 ---
-# <a name="taskstaterantocompletion-field"></a>Campo TASK_STATE_RAN_TO_COMPLETION
+# <a name="taskstaterantocompletion-field"></a>TASK_STATE_RAN_TO_COMPLETION (campo)
 La tarea terminó de ejecutarse correctamente.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Ensamblado:** mscorlib (en mscorlib.dll)  
+ **Ensamblado:** mscorlib (en *mscorlib.dll*)  
   
- Dado que no se puede obtener acceso a este miembro interno de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio común (CIL).  
+ Dado que no se puede obtener acceso a este miembro interno de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio en común (CIL).  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```csharp  
 .field static assembly literal int32 TASK_STATE_RAN_TO_COMPLETION = int32(0x02000000)  
 ```  
   

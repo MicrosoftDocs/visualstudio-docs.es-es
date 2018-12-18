@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 885d01d0d8f363a0b5b3a6abe2d3c2c018334092
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a385b425ee8dead7df0faad302e6cf270b739034
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828538"
 ---
 # <a name="performance-session-overview"></a>Información general sobre las sesiones de rendimiento
 Esta introducción explica los conceptos básicos de la generación de perfiles. Los desarrolladores que no tienen experiencia en el trabajo de rendimiento verán cómo las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pueden ayudarles a ser productivos rápidamente y a aumentar el rendimiento de su código. Los desarrolladores con experiencia en la generación de perfiles pueden obtener una visión general de las características específicas y procesos de las herramientas.  
@@ -26,28 +27,28 @@ Esta introducción explica los conceptos básicos de la generación de perfiles.
   
  Los siguientes pasos constituyen el proceso básico de uso de las herramientas de generación de perfiles:  
   
-1.  Configure la sesión de rendimiento especificando el método de colección y los datos que se van a recopilar.  
+1. Configure la sesión de rendimiento especificando el método de colección y los datos que se van a recopilar.  
   
-2.  Ejecute la aplicación en la sesión de rendimiento para recopilar datos de generación de perfiles.  
+2. Ejecute la aplicación en la sesión de rendimiento para recopilar datos de generación de perfiles.  
   
-3.  Analice los datos para identificar el problema de rendimiento.  
+3. Analice los datos para identificar el problema de rendimiento.  
   
-4.  Modifique el código en el entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para aumentar el rendimiento de la aplicación del código  
+4. Modifique el código en el entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para aumentar el rendimiento de la aplicación del código  
   
-5.  Recopile datos de generación de perfiles del código modificado y compare los datos originales y modificados.  
+5. Recopile datos de generación de perfiles del código modificado y compare los datos originales y modificados.  
   
-6.  Genere un informe que documente el aumento del rendimiento.  
+6. Genere un informe que documente el aumento del rendimiento.  
   
- Para trabajar con la información proporcionada por la generación de perfiles, debe tener información de símbolos disponible para los archivos binarios de los cuales desea generar perfiles y para los archivos binarios del sistema operativo Windows.  
+   Para trabajar con la información proporcionada por la generación de perfiles, debe tener información de símbolos disponible para los archivos binarios de los cuales desea generar perfiles y para los archivos binarios del sistema operativo Windows.  
   
 ## <a name="configure-the-performance-session"></a>Configurar la sesión de rendimiento  
  Para configurar una sesión de generación de perfiles, seleccione el método de generación de perfiles que desea utilizar y los datos que se van a recopilar. El **Asistente de rendimiento** de las herramientas de generación de perfiles puede guiarle a través de la configuración básica y puede utilizar las páginas de propiedades de la sesión de rendimiento para agregar más opciones:  
   
--   Los métodos de generación de perfiles incluyen el muestreo, el seguimiento y la asignación de memoria.  
+- Los métodos de generación de perfiles incluyen el muestreo, el seguimiento y la asignación de memoria.  
   
--   Los valores de datos incluyen el tiempo, los contadores de rendimiento del sistema operativo y del procesador, y los eventos de aplicación como los errores de página y las transiciones del kernel.  
+- Los valores de datos incluyen el tiempo, los contadores de rendimiento del sistema operativo y del procesador, y los eventos de aplicación como los errores de página y las transiciones del kernel.  
   
- Puede configurar una sesión de rendimiento en un proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] como parte de la solución del proyecto o generar perfiles de binarios arbitrarios a través del IDE de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Puede especificar las propiedades de la sesión en las páginas de propiedades de la sesión de rendimiento o puede usar al Asistente para la generación de perfiles.  
+  Puede configurar una sesión de rendimiento en un proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] como parte de la solución del proyecto o generar perfiles de binarios arbitrarios a través del IDE de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Puede especificar las propiedades de la sesión en las páginas de propiedades de la sesión de rendimiento o puede usar al Asistente para la generación de perfiles.  
   
 ## <a name="collect-profiling-data"></a>Recopilar datos de generación de perfiles  
  Inicie la recopilación de datos de generación de perfiles desde el **Explorador de rendimiento**. Puede pausar y reanudar la generación de perfiles para limitar la cantidad de datos que se recopilan. También puede asociar un proceso que ya se está ejecutando.  
@@ -59,11 +60,11 @@ Esta introducción explica los conceptos básicos de la generación de perfiles.
 ## <a name="analyze-the-data-and-identify-performance-issues"></a>Analizar los datos e identificar problemas de rendimiento  
  Cuando finaliza un proceso de generación de perfiles, los datos se analizan y se muestra un resumen en la ventana de la vista **Informe de rendimiento** de las herramientas de generación de perfiles. Se recopilan datos de generación de perfiles para la pila de llamadas y las funciones individuales de la aplicación de destino. Las vistas de informe muestran el análisis de rendimiento para los rangos de datos de los procesos, subprocesos, módulos, funciones y líneas de código fuente de la aplicación. Los valores de los datos de generación de perfiles para una función incluyen los siguientes:  
   
--   El tiempo total empleado en la función y en las funciones secundarias a las que llamó la función (valores inclusivos).  
+- El tiempo total empleado en la función y en las funciones secundarias a las que llamó la función (valores inclusivos).  
   
--   El tiempo dedicado a ejecutar solo el código de la función (valores exclusivos).  
+- El tiempo dedicado a ejecutar solo el código de la función (valores exclusivos).  
   
- Más de doce vistas distintas permiten analizar los datos de generación de perfiles de la manera más eficaz. Las personalizaciones de vistas permiten filtrar y ordenar los datos para encontrar las funciones que podrían estar causando problemas de rendimiento. El filtrado de ruta de acceso activa permite resaltar de forma inmediata las rutas de acceso más activas en las vistas Árbol de llamadas y Módulo.  
+  Más de doce vistas distintas permiten analizar los datos de generación de perfiles de la manera más eficaz. Las personalizaciones de vistas permiten filtrar y ordenar los datos para encontrar las funciones que podrían estar causando problemas de rendimiento. El filtrado de ruta de acceso activa permite resaltar de forma inmediata las rutas de acceso más activas en las vistas Árbol de llamadas y Módulo.  
   
 ## <a name="modify-the-application-code"></a>Modificar el código de la aplicación  
  Una vez haya aislado uno o más problemas de rendimiento pertinentes, puede modificar el código mediante el IDE de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y después recopilar datos de generación de perfiles para los cambios.  
@@ -76,4 +77,4 @@ Esta introducción explica los conceptos básicos de la generación de perfiles.
   
 ## <a name="see-also"></a>Vea también  
  [Temas de introducción](../profiling/overviews-performance-tools.md)   
- [Tutorial: identificar problemas de rendimiento](../profiling/walkthrough-identifying-performance-problems.md)
+ [Tutorial: Identificación de problemas de rendimiento](../profiling/walkthrough-identifying-performance-problems.md)

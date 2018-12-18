@@ -1,7 +1,8 @@
 ---
-title: Analizar datos de uso de la CPU (ASP.NET) | Microsoft Docs
-ms.custom: ''
-ms.date: 12/05/2017
+title: Análisis de datos de uso de CPU (ASP.NET)
+description: Medición del rendimiento de aplicación en aplicaciones ASP.NET con la herramienta de diagnóstico de uso de CPU
+ms.custom: mvc
+ms.date: 08/06/2018
 ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
@@ -12,29 +13,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: e93f7ae71b8d95b8d444856c34dc6181818e0a58
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4d4f2382814cabbd26f93db27301ffa9b8d1c658
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626593"
 ---
-# <a name="analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Analizar datos de uso de la CPU en Visual Studio (ASP.NET)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Inicio rápido: Análisis de datos de uso de CPU en Visual Studio (ASP.NET)
 
 Visual Studio proporciona muchas características eficaces para ayudar a analizar problemas de rendimiento de la aplicación. En este tema se proporciona una forma rápida de obtener información sobre las características básicas. A continuación, veremos una herramienta para identificar los cuellos de botella de rendimiento debido al uso elevado de la CPU. Se admiten las herramientas de diagnóstico para el desarrollo de .NET en Visual Studio, incluido ASP.NET, y para el desarrollo nativo de C++.
 
-El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y administrar la sesión de diagnóstico. Si la herramienta **Uso de CPU** que se describe aquí no proporciona los datos que necesita, las [demás herramientas de generación de perfiles](../profiling/Profiling-Tools.md) proporcionan diferentes tipos de información que pueden resultarle útiles. En muchos casos, el cuello de botella de rendimiento de la aplicación puede no ser debido a la CPU, sino a la memoria, la representación de interfaz de usuario o el tiempo de solicitud de red.
+El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y administrar la sesión de diagnóstico. Si la herramienta **Uso de CPU** que se describe aquí no proporciona los datos que necesita, las [demás herramientas de generación de perfiles](../profiling/profiling-feature-tour.md) proporcionan diferentes tipos de información que pueden resultarle útiles. En muchos casos, el cuello de botella de rendimiento de la aplicación puede no ser debido a la CPU, sino a la memoria, la representación de interfaz de usuario o el tiempo de solicitud de red.
 
-> [!NOTE]
-> Para .NET Core y ASP.NET Core, la herramienta Uso de CPU actualmente no proporciona resultados precisos con PBD portátiles. Use PBD completos en su lugar.
+Para ejecutar las herramientas de generación de perfiles con el depurador se requiere Windows 8 y versiones posteriores (ventana **Herramientas de diagnóstico**). En Windows 7 y versiones posteriores, puede usar la herramienta de análisis post mortem [Performance Profiler](../profiling/profiling-feature-tour.md).
 
 ## <a name="create-a-project"></a>Crear un proyecto
 
-1. En Visual Studio, seleccione **Archivo > Nuevo proyecto**.
+1. En Visual Studio, seleccione **Archivo** > **Nuevo proyecto**.
 
 1. En **Visual C#**, seleccione **Web** y, después, en el panel central, seleccione **Aplicación web ASP.NET (.NET Framework)**.
 
-    > [!NOTE]
-    > La herramienta Uso de CPU no se admite actualmente en ASP.NET Core.
+    Si no ve la plantilla de proyecto **Aplicación web de ASP.NET**, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de ASP.NET y web** y después elija **Modificar**.
 
 1. Escriba un nombre como **MyProfilingApp_MVC** y haga clic en **Aceptar**.
 
@@ -48,13 +48,13 @@ El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y
 
 1. En el Explorador de soluciones, abra `Models/Data.cs` y agregue la siguiente instrucción `using` a la parte superior del archivo:
 
-    ```cs
+    ```csharp
     using System.Threading;
     ```
 
 1. En Data.cs, reemplace el código siguiente:
 
-    ```cs
+    ```csharp
     public class Data
     {
     }
@@ -62,7 +62,7 @@ El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y
 
     con este código:
 
-    ```cs
+    ```csharp
     public class ServerClass
     {
         const int MIN_ITERATIONS = int.MaxValue / 1000;
@@ -130,9 +130,9 @@ El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y
     }
     ```
 
-1. En el Explorador de soluciones, abra Controller/HomeControllers.cs y reemplace el código siguiente:
+1. En el Explorador de soluciones, abra *Controller/HomeControllers.cs* y reemplace el código siguiente:
 
-    ```cs
+    ```csharp
     public ActionResult About()
     {
         ViewBag.Message = "Your application description page.";
@@ -143,7 +143,7 @@ El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y
 
     con este código:
 
-    ```cs
+    ```csharp
     public ActionResult About()
     {
         Models.Simple s = new Models.Simple();
@@ -154,7 +154,7 @@ El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y
     }
     ```
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Paso 1: Recopilar datos de generación de perfiles 
+##  <a name="step-1-collect-profiling-data"></a>Paso 1: Recopilar datos de generación de perfiles 
   
 1.  En primer lugar, establezca un punto de interrupción en la aplicación en esta línea de código en el constructor `Simple`:
 
@@ -169,9 +169,9 @@ El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y
     > [!TIP]
     > Al establecer dos puntos de interrupción, puede limitar la recopilación de datos a las partes del código que quiere analizar.
   
-1.  La ventana **Herramientas de diagnóstico** ya es visible, a menos que se haya desactivado. Para que la ventana se vuelva a mostrar, haga clic en **Depurar / Windows / Mostrar herramientas de diagnóstico**.
+1.  La ventana **Herramientas de diagnóstico** ya es visible, a menos que se haya desactivado. Para que la ventana se vuelva a mostrar, haga clic en **Depurar** > **Windows** > **Mostrar Herramientas de diagnóstico**.
 
-1.  Haga clic en **Depurar / Iniciar depuración** (o **Inicio** en la barra de herramientas o **F5**).
+1.  Haga clic en **Depurar** > **Iniciar depuración** (o en **Inicio** en la barra de herramientas, o presione **F5**).
 
 1.  Cuando la aplicación termine de cargarse, haga clic en el vínculo **Acerca de** en la parte superior de la página web para empezar a ejecutar el código nuevo.
 
@@ -195,13 +195,13 @@ El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y
 
      En este punto, puede empezar a analizar los datos.
 
-## <a name="Step2"></a> Paso 2: Analizar datos de uso de CPU
+## <a name="step-2-analyze-cpu-usage-data"></a>Paso 2: Analizar datos de uso de CPU
 
 Se recomienda que, para empezar a analizar los datos, examine la lista de funciones de Uso de CPU, identifique las funciones que realizan la mayor parte del trabajo y, a continuación, observe detenidamente cada una de ellas.
 
 1. En la lista de funciones, examine las funciones que realizan la mayor parte del trabajo.
 
-     ![Pestaña Uso de CPU de Herramientas de diagnóstico](../profiling/media/quickstart-cpu-usage-cpu-aspnet.png)
+     ![Pestaña Uso de CPU de herramientas de diagnóstico](../profiling/media/quickstart-cpu-usage-cpu-aspnet.png)
 
     > [!TIP]
     > Las funciones aparecen en orden, comenzando por las que realizan la mayor parte del trabajo (no están en orden de llamada). Esto ayuda a identificar rápidamente las funciones que se ejecutan durante más tiempo.
@@ -210,7 +210,7 @@ Se recomienda que, para empezar a analizar los datos, examine la lista de funcio
 
     Al hacer doble clic en la función, se abre la vista **Llamador y destinatario** en el panel de la izquierda. 
 
-    ![Vista Llamador de Herramientas de diagnóstico](../profiling/media/quickstart-cpu-usage-caller-callee-aspnet.png)
+    ![Vista Llamador de herramientas de diagnóstico](../profiling/media/quickstart-cpu-usage-caller-callee-aspnet.png)
 
     En esta vista, la función seleccionada se muestra en el título y en el cuadro **Función actual** (en este ejemplo, `ServerClass::GetNumber`). La función que llamó a la función actual se muestra a la izquierda en **Función llamadora**, y las funciones llamadas por la función actual se muestran a la derecha en el cuadro **Funciones llamadas**. (Puede seleccionar cualquiera de los cuadros para cambiar la función actual).
 
@@ -230,4 +230,4 @@ Se recomienda que, para empezar a analizar los datos, examine la lista de funcio
 ## <a name="see-also"></a>Vea también  
 
  [Generación de perfiles en Visual Studio](../profiling/index.md)  
- [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md)
+ [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)

@@ -1,6 +1,7 @@
 ---
 title: Especificar cuándo y dónde se aplica una anotación
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
@@ -14,11 +15,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 288d422de6d4e4c0f372820d838d0173c990f2a8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9d99ebce3adc27039763e11ed4882a20199e8469
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920620"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>Especificar cuándo y dónde se aplica una anotación
 Cuando una anotación es condicional, puede requerir otras anotaciones para especificar el analizador.  Por ejemplo, si una función tiene una variable que puede ser sincrónico o asincrónico, la función se comporta como sigue: en el caso sincrónico siempre al final se realiza correctamente, pero en el caso asincrónico notifica un error si no se logra inmediatamente. Cuando se llama a la función de forma sincrónica, comprobando el valor de resultado proporciona ningún valor para el analizador de código porque no habría devuelto.  Sin embargo, cuando la función se llama de forma asincrónica y el resultado de la función no está activado, puede producirse un error grave. Este ejemplo muestra una situación en que se puede utilizar el `_When_` anotación: se describe más adelante en este artículo: para habilitar la comprobación.

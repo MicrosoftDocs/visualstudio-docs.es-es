@@ -1,5 +1,5 @@
 ---
-title: 'Idiadatasource:: OpenSession | Documentos de Microsoft'
+title: Idiadatasource | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39fe9bf3a67d3ad5f26ff7c4ccdaa9772cf1346b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8266102e8bc2c347ed8a554a3c64d9504f1e863b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933513"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 Se abre una sesión para consultar los símbolos.  
@@ -36,7 +37,7 @@ HRESULT openSession (
  [out] Devuelve un [IDiaSession](../../debugger/debug-interface-access/idiasession.md) objeto que representa la sesión abierta.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error. La tabla siguiente muestran los posibles valores devueltos para este método.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. En la tabla siguiente se muestra los posibles valores devueltos para este método.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
@@ -47,7 +48,7 @@ HRESULT openSession (
 ## <a name="remarks"></a>Comentarios  
  Este método abre un [IDiaSession](../../debugger/debug-interface-access/idiasession.md) objeto para un origen de datos.  
   
- `IDiaSession` objetos de implementar las consultas en el origen de datos. Una sesión administra un espacio de direcciones para cada conjunto de símbolos de depuración. Si el archivo .exe o .dll descrito por los símbolos de origen de datos está activo en varias direcciones intervalos (por ejemplo, porque tienen varios procesos cargado), a continuación, se debe usar una sesión para cada intervalo de direcciones.  
+ `IDiaSession` los objetos implementan las consultas en el origen de datos. Una sesión administra un espacio de direcciones para cada conjunto de símbolos de depuración. Si el archivo .exe o .dll descrito por los símbolos del origen de datos está activo en la dirección de varios intervalos de direcciones (por ejemplo, porque tienen varios procesos de carga), a continuación, se debe usar una sesión para cada intervalo de direcciones.  
   
 ## <a name="example"></a>Ejemplo  
   

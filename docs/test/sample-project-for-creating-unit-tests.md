@@ -1,8 +1,10 @@
 ---
-title: Proyecto de ejemplo para crear pruebas unitarias en Visual Studio | Microsoft Docs
+title: Código de ejemplo para crear pruebas unitarias
+description: En este artículo se proporciona código de ejemplo que se puede probar con pruebas unitarias en Visual Studio.
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: sample
 helpviewer_keywords:
 - unit test sample [Visual Studio]
 - unit tests, samples
@@ -11,19 +13,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46128b02e98e8fe20b16cc4a858a8782649f3f3d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: deddf46a479e0ab8d4e0bebbaf3fffe4d90b622d
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51293452"
 ---
-# <a name="sample-project-for-creating-unit-tests"></a>Proyecto de ejemplo para crear pruebas unitarias
+# <a name="sample-code-for-testing"></a>Código de ejemplo para pruebas
 
-Este código de ejemplo se proporciona para su uso en los siguientes tutoriales:
+Este código de ejemplo contiene una clase, *BankAccount*, con diversos métodos que se pueden probar en las pruebas unitarias.
 
-- [Tutorial: Crear y ejecutar pruebas unitarias en código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Este tutorial le guía por los pasos necesarios para crear y personalizar pruebas unitarias, ejecutarlas y examinar los resultados.
+El código se usa en los siguientes tutoriales:
 
-- [Tutorial: Usar la utilidad de prueba de la línea de comandos](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). En este tutorial, utilice la utilidad de línea de comandos MSTest.exe para ejecutar pruebas y ver los resultados.
+- [Crear y ejecutar pruebas unitarias en código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Este tutorial le guía por los pasos necesarios para crear y personalizar pruebas unitarias, ejecutarlas y examinar los resultados.
+- [Usar la utilidad de prueba de la línea de comandos](https://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). En este tutorial, use la utilidad de línea de comandos *MSTest.exe* para ejecutar pruebas y ver los resultados.
 
 ## <a name="sample-code"></a>Código de ejemplo
 
@@ -124,11 +128,11 @@ namespace BankAccountNS
 
 /* Las compañías, organizaciones, productos, nombres de dominio, direcciones de correo electrónico, logotipos, personas, lugares y eventos que se citan a modo de ejemplo son ficticios. No se pretende indicar, ni debe deducirse, ninguna asociación con compañías, organizaciones, productos, dominios, direcciones de correo electrónico, logotipos, personas, lugares o hechos reales. \*/
 
-## <a name="working-with-the-code"></a>Trabajar con el código
+## <a name="create-the-project"></a>Crear el proyecto
 
-Para trabajar con este código, primero tiene que crear un proyecto para él en Visual Studio. Siga los pasos de la sección "Preparar el tutorial" en [Tutorial: Crear y ejecutar pruebas unitarias en código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+Para trabajar con este código, primero cree un proyecto para él en Visual Studio. Siga los pasos para crear el proyecto en [Tutorial: Crear y ejecutar pruebas unitarias en código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#create-a-project-to-test).
 
 ## <a name="see-also"></a>Vea también
 
 - [Tutorial: Crear y ejecutar pruebas unitarias en código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
-- [Tutorial: Usar la utilidad de prueba de la línea de comandos](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)
+- [Tutorial: Usar la utilidad de prueba de la línea de comandos](https://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)

@@ -1,11 +1,11 @@
 ---
-title: IEnumDebugPropertyInfo::Next | Documentos de Microsoft
-ms.custom: 
+title: IEnumDebugPropertyInfo::Next | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IEnumDebugPropertyInfo.Next
@@ -14,15 +14,16 @@ apilocation:
 helpviewer_keywords:
 - IEnumDebugPropertyInfo::Next
 ms.assetid: 052837ac-1599-49cc-9a5a-ba90f992eeff
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bc1e25a865ab1e21ab011e3a5bd0cc3b74f4abf2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a9f3fe796a518fd7d40c5b30f5b45f8a7d946686
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873752"
 ---
 # <a name="ienumdebugpropertyinfonext"></a>IEnumDebugPropertyInfo::Next
 Recupera un número especificado de `DebugPropertyInfo` estructuras en una secuencia de enumeración.  
@@ -45,7 +46,7 @@ HRESULT Next (
  [out] Una matriz de `DebugPropertyInfo` estructuras recuperadas.  
   
  `pceltFetched`  
- [out] Devuelve el número de `DebugPropertyInfo` estructuras se recuperan en realidad.  
+ [out] Devuelve el número de `DebugPropertyInfo` estructuras que se recuperan realmente.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Devuelve un válidas `HRESULT`, normalmente `S_OK`.  

@@ -1,6 +1,7 @@
 ---
 title: 'CA2119: Sellar los métodos que cumplan las interfaces privadas'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -13,15 +14,21 @@ ms.assetid: 483d02e1-cfaf-4754-a98f-4116df0f3509
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e80462b53e68d2feff540b3fd2ae4cfbcabc6da8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: aa207e85bcb7054b1a7b91ac8dd29ff45fe1091a
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550601"
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: Sellar los métodos que cumplan las interfaces privadas
+
 |||
 |-|-|
 |TypeName|SealMethodsThatSatisfyPrivateInterfaces|
@@ -30,40 +37,42 @@ ms.lasthandoff: 04/19/2018
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Motivo
- Un tipo público heredable proporciona una implementación de método reemplazable de una `internal` (`Friend` en Visual Basic) (interfaz).
+ Un tipo público heredable proporciona una implementación de método reemplazable de una `internal` (`Friend` en Visual Basic) interfaz.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Métodos de interfaz tienen accesibilidad pública, que no se puede cambiar el tipo de implementación. Una interfaz interna crea un contrato que no está previsto su implementación fuera del ensamblado que define la interfaz. Un tipo público que implementa un método de una interfaz interna con la `virtual` (`Overridable` en Visual Basic) modificador permite que el método que sea reemplazado por un tipo derivado que está fuera del ensamblado. Si un segundo tipo del ensamblado de definición llama al método y espera un contrato solo para uso interno, se verían comprometido comportamiento cuando, en su lugar, se ejecuta el método invalidado en el ensamblado externo. Esto crea una vulnerabilidad de seguridad.
+ Los métodos de interfaz tienen accesibilidad pública, que no se puede cambiar el tipo de implementación. Una interfaz interna crea un contrato que no está pensado para implementarse fuera del ensamblado que define la interfaz. Un tipo público que implemente un método de una interfaz interna con el `virtual` (`Overridable` en Visual Basic) modificador permite que el método que sea reemplazado por un tipo derivado que está fuera del ensamblado. Si un segundo tipo en el ensamblado de definición llama al método y espera un contrato solo para uso interno, comportamiento podría estar en peligro cuando, en su lugar, se ejecuta el método invalidado en el ensamblado externo. Esto crea una vulnerabilidad de seguridad.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, impida el método se invalide fuera del ensamblado mediante el uso de uno de los siguientes:
+ Para corregir una infracción de esta regla, evitar que el método se invalide fuera del ensamblado utilizando uno de los siguientes:
 
--   Hacer que el tipo declarativo `sealed` (`NotInheritable` en Visual Basic).
+- Convierta el tipo declarativo `sealed` (`NotInheritable` en Visual Basic).
 
--   Cambie la accesibilidad del tipo declarativo a `internal` (`Friend` en Visual Basic).
+- Cambie la accesibilidad del tipo declarativo para `internal` (`Friend` en Visual Basic).
 
--   Quite todos los constructores públicos del tipo declarativo.
+- Quite todos los constructores públicos del tipo declarativo.
 
--   Implemente el método sin utilizar el `virtual` modificador.
+- Implemente el método sin utilizar el `virtual` modificador.
 
--   Implemente el método explícitamente.
+- Implementar el método de forma explícita.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Es seguro suprimir una advertencia de esta regla si, después de una revisión cuidadosa, existe ningún problema de seguridad que puede ser explotable si el método se invalide fuera del ensamblado.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ Es seguro suprimir una advertencia de esta regla si, tras una revisión exhaustiva, existe ningún problema de seguridad que puede ser aprovechable si se reemplaza el método fuera del ensamblado.
 
-## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra un tipo, `BaseImplementation`, que infringe esta regla.
+## <a name="example-1"></a>Ejemplo 1
+ El ejemplo siguiente muestra un tipo, `BaseImplementation`, que infringe esta regla.
 
  [!code-cpp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_1.cpp)]
  [!code-csharp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_1.cs)]
  [!code-vb[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_1.vb)]
 
-## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se aprovecha la implementación del método virtual del ejemplo anterior.
+## <a name="example-2"></a>Ejemplo 2
+ El ejemplo siguiente aprovecha la implementación del método virtual del ejemplo anterior.
 
  [!code-cpp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_2.cpp)]
  [!code-csharp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_2.cs)]
  [!code-vb[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_2.vb)]
 
 ## <a name="see-also"></a>Vea también
- [Interfaces](/dotnet/csharp/programming-guide/interfaces/index) [Interfaces](/dotnet/visual-basic/programming-guide/language-features/interfaces/index)
+
+- [Interfaces](/dotnet/csharp/programming-guide/interfaces/index)
+- [Interfaces](/dotnet/visual-basic/programming-guide/language-features/interfaces/index)

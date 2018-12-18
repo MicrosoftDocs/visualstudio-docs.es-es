@@ -10,21 +10,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 32782b5c2d303e54901462de589d076990f579d2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 531080945413bbc0959d2cdf91e2096c1e51f61d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669334"
 ---
-# <a name="troubleshooting-performance-tools-issues"></a>Solucionar problemas de herramientas de rendimiento
+# <a name="troubleshoot-performance-tools-issues"></a>Solución de problemas de herramientas de rendimiento
 Puede experimentar uno de los siguientes problemas al utilizar las herramientas de generación de perfiles:  
   
--   [No se recopilan datos con las herramientas de generación de perfiles](#NoDataCollected)  
+-   [No se recopilan datos con las herramientas de generación de perfiles](#no-data-is-collected-by-the-profiling-tools)  
   
--   [Las vistas de rendimiento y los informes muestran números para los nombres de función](#NoSymbols)  
+-   [Las vistas de rendimiento y los informes muestran números para los nombres de función](#performance-views-and-reports-display-numbers-for-function-names)  
   
-##  <a name="NoDataCollected"></a> No se recopilan datos con las herramientas de generación de perfiles  
- Después de generar perfiles de una aplicación, no se crea un archivo de datos de generación de perfiles (.vsp) y recibe la siguiente advertencia en la ventana de salida o en la ventana Comandos:  
+## <a name="no-data-is-collected-by-the-profiling-tools"></a>No se recopilan datos con las herramientas de generación de perfiles  
+ Después de generar perfiles de una aplicación, no se crea un archivo de datos de generación de perfiles (.*vsp*) y se recibe la advertencia siguiente en la ventana **Salida** o en la ventana Comandos:  
   
  PRF0025: No se recopiló ningún dato.  
   
@@ -32,18 +33,18 @@ Puede experimentar uno de los siguientes problemas al utilizar las herramientas 
   
 -   Un proceso cuyo perfil se generó usando el método de muestreo o de memoria de .NET inicia un proceso secundario que se convierte en el proceso que realiza el trabajo de la aplicación. Por ejemplo, algunas aplicaciones leen la línea de comandos para determinar si se han iniciado como una aplicación de Windows o como una aplicación de línea de comandos. Si se solicitó una aplicación Windows, el proceso original inicia un nuevo proceso configurado como una aplicación de Windows y después se cierra el proceso original. Dado que las herramientas de generación de perfiles no recopilan automáticamente datos de procesos secundarios, no se recopilan datos.  
   
-     Para recopilar datos de generación de perfiles en esta situación, adjunte el generador de perfiles al proceso secundario en lugar de iniciar la aplicación con el generador de perfiles. Para obtener más información, consulte [Cómo: Adjuntar y separar las herramientas de rendimiento para los procesos en ejecución](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md) y [Adjuntar (VSPerfCmd)](../profiling/attach.md)  
+     Para recopilar datos de generación de perfiles en esta situación, adjunte el generador de perfiles al proceso secundario en lugar de iniciar la aplicación con el generador de perfiles. Para obtener más información, vea [Cómo: Adjuntar y separar las herramientas de rendimiento para los procesos en ejecución](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md) y [Adjuntar (VSPerfCmd)](../profiling/attach.md).  
   
-##  <a name="NoSymbols"></a> Las vistas de rendimiento y los informes muestran números para los nombres de función  
+## <a name="performance-views-and-reports-display-numbers-for-function-names"></a>Las vistas de rendimiento y los informes muestran números para los nombres de función  
  Después de generar perfiles de una aplicación, se muestran números en lugar de los nombres de función en las vistas e informes.  
   
- La causa de este problema es que el motor de análisis de las herramientas de generación de perfiles no puede encontrar los archivos .pdb que contienen la información de símbolos que asigna la información de código fuente, como los nombres de función y los números de línea del archivo compilado. De forma predeterminada, el compilador crea el archivo .pdb cuando se compila el archivo de aplicación. Se almacena una referencia al directorio local del archivo .pdb en la aplicación compilada. El motor de análisis busca el archivo .pdb en el directorio al que se hace referencia y después en el archivo que contiene actualmente el archivo de aplicación. Si no se encuentra el archivo .pdb, el motor de análisis usa los desplazamientos de función en lugar de los nombres de función.  
+ La causa de este problema es que el motor de análisis de las herramientas de generación de perfiles no puede encontrar los archivos .*pdb* que contienen la información de símbolos que asigna la información de código fuente, como los nombres de función y los números de línea, al archivo compilado. De forma predeterminada, el compilador crea el archivo .*pdb* cuando se compila el archivo de aplicación. En la aplicación compilada se almacena una referencia al directorio local del archivo .*pdb*. El motor de análisis busca el archivo .*pdb* en el directorio al que se hace referencia y después en el archivo que contiene actualmente el archivo de aplicación. Si no se encuentra el archivo .*pdb*, el motor de análisis usa los desplazamientos de función en lugar de los nombres de función.  
   
  Puede corregir el problema de dos maneras:  
   
--   Busque los archivos .pdb y colóquelos en el mismo directorio que los archivos de aplicación.  
+-   Busque los archivos .*pdb* y colóquelos en el mismo directorio que los archivos de aplicación.  
   
--   Incruste la información de símbolos en el archivo de datos de generación de perfiles (.vsp). Para obtener más información, consulte [Guardar información de símbolos con archivos de datos de rendimiento](../profiling/saving-symbol-information-with-performance-data-files.md).  
+-   Inserte la información de símbolos en el archivo de datos de generación de perfiles (.*vsp*). Para obtener más información, vea [Guardar información de símbolos con archivos de datos de rendimiento](../profiling/saving-symbol-information-with-performance-data-files.md).  
   
 > [!NOTE]
->  El motor de análisis requiere que el archivo .pdb tenga la misma versión que el archivo de la aplicación compilada. Un archivo .pdb de una compilación anterior o posterior del archivo de la aplicación no funcionará.
+>  El motor de análisis requiere que el archivo .*pdb* tenga la misma versión que el archivo de aplicación compilado. Un archivo .*pdb* de una compilación anterior o posterior del archivo de aplicación no funcionará.

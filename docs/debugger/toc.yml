@@ -1,0 +1,848 @@
+items:
+- name: Documentación del depurador
+  href: index.md
+- name: Información general
+  items:
+  - name: ¿Qué es la depuración?
+    href: what-is-debugging.md
+  - name: Solucione errores escribiendo mejor el código de C#
+    href: write-better-code-with-visual-studio.md
+- name: Guías de inicio rápido
+  items:
+  - name: Primer vistazo al depurador
+    href: debugger-feature-tour.md
+  - name: Depuración de una aplicación de C# o Visual Basic
+    href: quickstart-debug-with-managed.md
+  - name: Depuración de una aplicación de C++
+    href: quickstart-debug-with-cplusplus.md
+  - name: Depurar una aplicación ASP.NET
+    href: quickstart-debug-aspnet.md
+- name: Tutoriales
+  items:
+  - name: Más información sobre la depuración de C#
+    href: getting-started-with-the-debugger.md
+  - name: Más información sobre la depuración de C++
+    href: getting-started-with-the-debugger-cpp.md
+  - name: Más información sobre la depuración de Visual Basic
+    href: getting-started-with-the-debugger-vb.md
+  - name: Ejecución de código Python en el depurador...
+    href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+  - name: Depurar una aplicación de Azure activa
+    href: debug-live-azure-applications.md
+  - name: Más información sobre la depuración de código C# y C++
+    href: how-to-debug-managed-and-native-code.md
+  - name: Inspeccionar los estados anteriores de la aplicación
+    href: view-historical-application-state.md
+  - name: Depuración para principiantes sin experiencia
+    href: debugging-absolute-beginners.md
+- name: Guías de procedimientos
+  items:
+  - name: Navegar por el código con el depurador
+    href: navigating-through-code-with-the-debugger.md
+  - name: Usar puntos de interrupción
+    href: using-breakpoints.md
+    items:
+    - name: Solución de problemas de puntos de interrupción
+      href: troubleshooting-breakpoints.md
+  - name: Inspeccionar datos
+    href: debugger-windows.md
+    items:
+    - name: Inspeccionar variables
+      href: autos-and-locals-windows.md
+    - name: Establecer una inspección de variables
+      href: watch-and-quickwatch-windows.md
+      items:
+      - name: Expresiones en el depurador
+        href: expressions-in-the-debugger.md
+        items:
+        - name: Especificadores de formato en C++
+          href: format-specifiers-in-cpp.md
+        - name: Operador de contexto (C++)
+          href: context-operator-cpp.md
+        - name: Especificadores de formato en C#
+          href: format-specifiers-in-csharp.md
+        - name: Pseudovariables
+          href: pseudovariables.md
+    - name: Ver valores de datos en la información sobre datos
+      href: view-data-values-in-data-tips-in-the-code-editor.md
+    - name: Ver valores de cadena en un visualizador
+      href: string-visualizer-dialog-box.md
+    - name: Ver código de desensamblado
+      href: how-to-use-the-disassembly-window.md
+      items:
+      - name: Retroceder o avanzar en la memoria
+        href: how-to-page-up-or-down-in-memory.md
+    - name: Ver valores de registro
+      href: how-to-use-the-registers-window.md
+      items:
+      - name: Acerca de la ventana Registros
+        href: debugging-basics-registers-window.md
+      - name: Mostrar y ocultar grupos de registros
+        href: how-to-display-and-hide-register-groups.md
+      - name: Editar un valor de registro
+        href: how-to-edit-a-register-value.md
+    - name: Ver variables de la memoria
+      href: memory-windows.md
+    - name: Inspeccionar las propiedades XAML durante la depuración
+      href: inspect-xaml-properties-while-debugging.md
+  - name: Ver la pila de llamadas
+    href: how-to-use-the-call-stack-window.md
+    items:
+    - name: Crear un mapa visual de la pila de llamadas
+      href: map-methods-on-the-call-stack-while-debugging-in-visual-studio.md
+    - name: Código mixto e información no mostrada en la ventana Pila de llamadas
+      href: mixed-code-and-missing-information-in-the-call-stack-window.md
+  - name: Editar código y seguir depurando
+    href: edit-and-continue.md
+    items:
+    - name: Habilitar y deshabilitar Editar y continuar
+      href: how-to-enable-and-disable-edit-and-continue.md
+    - name: Detener cambios en el código
+      href: how-to-stop-code-changes.md
+    - name: Editar y continuar (Visual C++)
+      href: edit-and-continue-visual-cpp.md
+      items:
+      - name: Cambios admitidos en el código (C++)
+        href: supported-code-changes-cpp.md
+    - name: Editar y continuar (Visual C#)
+      href: edit-and-continue-visual-csharp.md
+      items:
+      - name: Usar Editar y continuar (C#)
+        href: how-to-use-edit-and-continue-csharp.md
+      - name: Cambios admitidos en el código
+        href: supported-code-changes-csharp.md
+    - name: Editar y continuar (Visual Basic)
+      href: edit-and-continue-visual-basic.md
+      items:
+      - name: Aplicar ediciones en el modo de interrupción con Editar y continuar
+        href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
+    - name: Editar y Continuar no admitido para F#
+      href: edit-and-continue-not-supported-for-f-hash.md
+  - name: Visualización de datos de depurador
+    items:
+    - name: Ver módulos
+      href: how-to-use-the-modules-window.md
+      items:
+      - name: Averiguar en qué archivo DLL se ha bloqueado el programa
+        href: how-to-find-which-dll-your-program-crashed-in.md
+    - name: Ver documentos de script
+      href: how-to-view-script-documents.md
+  - name: Sugerencias y trucos para el depurador
+    href: debugger-tips-and-tricks.md
+    items:
+    - name: Adjuntar a los procesos en ejecución con el depurador
+      href: attach-to-running-processes-with-the-visual-studio-debugger.md
+    - name: Depurar en tiempo de diseño
+      href: walkthrough-debugging-at-design-time.md
+    - name: Depurar con el depurador Just-In-Time
+      href: debug-using-the-just-in-time-debugger.md
+      items:
+      - name: Deshabilitar el depurador Just-In-Time
+        href: just-in-time-debugging-in-visual-studio.md
+  - name: Configuración de depuración
+    items:
+    - name: Administrar excepciones con el depurador
+      href: managing-exceptions-with-the-debugger.md
+      items:
+      - name: Continuar la ejecución después de una excepción
+        href: continuing-execution-after-an-exception.md
+      - name: Examinar el código del sistema después de una excepción
+        href: how-to-examine-system-code-after-an-exception.md
+      - name: Usar comprobaciones nativas en tiempo de ejecución
+        href: how-to-use-native-run-time-checks.md
+        items:
+        - name: Personalización de las comprobaciones nativas en tiempo de ejecución
+          href: native-run-time-checks-customization.md
+        - name: Escribir una función para generar informes de errores en tiempo de ejecución
+          href: how-to-write-a-run-time-error-reporting-function.md
+        - name: Usar comprobaciones en tiempo de ejecución sin la biblioteca en tiempo de ejecución de C
+          href: using-run-time-checks-without-the-c-run-time-library.md
+    - name: Definición de archivos de código fuente y símbolos (.pdb) en el depurador
+      href: specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md
+    - name: Depurar el código de usuario
+      href: just-my-code.md
+    - name: Preparación y configuración del depurador
+      href: debugger-settings-and-preparation.md
+      items:
+      - name: Configuración del proyecto para el depurador
+        href: debugger-project-settings.md
+        items:
+        - name: Especificar la configuración del depurador
+          href: how-to-specify-debugger-settings.md
+        - name: Establecer configuraciones Debug y Release
+          href: how-to-set-debug-and-release-configurations.md
+        - name: Configuración del proyecto para una configuración de depuración de C++
+          href: project-settings-for-a-cpp-debug-configuration.md
+          items:
+          - name: Habilitar las características de depuración en Visual C++ (-D_DEBUG)
+            href: enabling-debug-features-in-visual-cpp-d-debug.md
+        - name: Configuración de páginas de propiedades para proyectos web
+          href: property-pages-settings-for-web-projects.md
+        - name: Configuración de proyectos para configuraciones de depuración en C#
+          href: project-settings-for-csharp-debug-configurations.md
+        - name: Configuración de proyectos para una configuración de depuración en Visual Basic
+          href: project-settings-for-a-visual-basic-debug-configuration.md
+      - name: Depurar proyectos DLL
+        href: debugging-dll-projects.md
+        items:
+        - name: Depurar desde un proyecto DLL
+          href: how-to-debug-from-a-dll-project.md
+        - name: Depurar en modo mixto
+          href: how-to-debug-in-mixed-mode.md
+      - name: 'Preparación de la depuración: proyectos de consola'
+        href: debugging-preparation-console-projects.md
+      - name: Depurar un archivo ejecutable que no es parte de una solución de Visual Studio
+        href: how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md
+      - name: Depuración y proceso de hospedaje
+        href: debugging-and-the-hosting-process.md
+      - name: Especificar una versión de .NET Framework para la depuración
+        href: how-to-specify-a-dotnet-framework-version-for-debugging.md
+    - name: Crear vistas personalizadas de datos
+      href: viewing-data-in-the-debugger.md
+      items:
+      - name: Crear vistas personalizadas de objetos nativos
+        href: create-custom-views-of-native-objects.md
+      - name: Crear vistas personalizadas de objetos administrados
+        href: create-custom-views-of-dot-managed-objects.md
+        items:
+        - name: Usar el atributo DebuggerTypeProxy
+          href: using-debuggertypeproxy-attribute.md
+        - name: Usar el atributo DebuggerDisplay
+          href: using-the-debuggerdisplay-attribute.md
+      - name: Crear visualizadores personalizados de datos
+        href: create-custom-visualizers-of-data.md
+        items:
+        - name: Arquitectura de un visualizador
+          href: visualizer-architecture.md
+        - name: 'Tutorial: Escribir un visualizador en C#'
+          href: walkthrough-writing-a-visualizer-in-csharp.md
+        - name: 'Tutorial: Escribir un visualizador en Visual Basic'
+          href: walkthrough-writing-a-visualizer-in-visual-basic.md
+        - name: Instalar un visualizador
+          href: how-to-install-a-visualizer.md
+        - name: Probar y depurar un visualizador
+          href: how-to-test-and-debug-a-visualizer.md
+        - name: Consideraciones de seguridad del visualizador
+          href: visualizer-security-considerations.md
+        - name: Referencia de la API del visualizador
+          href: visualizer-api-reference.md
+    - name: Restablecer comandos ocultos del depurador
+      href: how-to-restore-hidden-debugger-commands.md
+  - name: Depuración remota
+    href: remote-debugging.md
+    items:
+    - name: Depuración remota de ASP.NET Core en un equipo de IIS
+      href: remote-debugging-aspnet-on-a-remote-iis-computer.md
+    - name: Depuración remota de ASP.NET en un equipo de IIS
+      href: remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md
+    - name: Depuración remota de ASP.NET en Azure
+      href: remote-debugging-azure.md
+    - name: Depuración remota de un proyecto de C# o Visual Basic
+      href: remote-debugging-csharp.md
+    - name: Depuración remota de un proyecto de C++
+      href: remote-debugging-cpp.md
+    - name: Asignaciones de puerto del depurador remoto
+      href: remote-debugger-port-assignments.md
+    - name: Configurar el Firewall de Windows para la depuración remota
+      href: configure-the-windows-firewall-for-remote-debugging.md
+    - name: Desbloqueo de la descarga en Windows Server
+      href: remote-debugging-unblock-file-download.md
+    - name: Errores de la depuración remota y sus soluciones
+      href: remote-debugging-errors-and-troubleshooting.md
+      items:
+      - name: El Monitor de depuración remota de Microsoft Visual Studio del equipo remoto no tiene permiso para conectarse con este equipo
+        href: error-the-microsoft-visual-studio-remote-debugging-monitor-no-permission.md
+      - name: Error DCOM al intentar ponerse en contacto con el equipo remoto. Se denegó el acceso.
+        href: a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied.md
+      - name: El Monitor de depuración remota de Microsoft Visual Studio del equipo remoto se está ejecutando como usuario distinto
+        href: error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user.md
+      - name: No se puede ir automáticamente al servidor
+        href: error-unable-to-automatically-step-into-the-server.md
+      - name: El grupo de trabajo no ha podido iniciar una sesión remota
+        href: error-workgroup-remote-logon-failure.md
+      - name: Error de autenticación Kerberos
+        href: error-kerberos-authentication-failed.md
+      - name: Asegúrese de que DNS está bien configurado en el equipo de destino
+        href: error-ensure-that-dns-is-correctly-configured-on-the-target-computer.md
+      - name: El Monitor de depuración remota de Microsoft Visual Studio (MSVSMON.EXE) no parece estar ejecutándose en el equipo remoto.
+        href: error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md
+      - name: No se puede conectar al Monitor de depuración remota de Microsoft Visual Studio
+        href: unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md
+      - name: No se puede iniciar la comunicación con DCOM
+        href: error-unable-to-initiate-dcom-communication.md
+      - name: El equipo remoto no ha podido iniciar comunicaciones DCOM
+        href: error-remote-computer-could-not-initiate-dcom-communications.md
+      - name: Firewall en el equipo local
+        href: error-firewall-on-local-machine.md
+      - name: Firewall sin autenticación
+        href: error-firewall-no-authentication.md
+      - name: RPC requiere autenticación
+        href: error-rpc-requires-authentication.md
+      - name: No tiene permiso para inspeccionar la identidad del proceso
+        href: error-you-do-not-have-permission-to-inspect-the-process-s-identity.md
+      - name: El servicio del depurador remoto de Visual Studio del equipo de destino no se puede conectar a este equipo
+        href: error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md
+      - name: IIS ha interrumpido el proceso de trabajo del sitio web
+        href: error-web-site-worker-process-has-been-terminated-by-iis.md
+      - name: No se puede conectar al equipo <name>. No se puede encontrar el equipo en la red.
+        href: error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md
+      - name: El modo de depuración mixto se admite solo cuando se usa Microsoft .NET Framework 2.0 o superior
+        href: error-mixed-mode-debugging-is-supported-only-when-using-microsoft-dotnet-framework-2-0-or-greater.md
+      - name: No se admite la depuración en modo mixto de procesos IA64
+        href: error-mixed-mode-debugging-for-ia64-processes-is-unsupported.md
+      - name: El modo de depuración mixto para procesos x64 se admite solo cuando se usa Microsoft .NET Framework 4 o posterior
+        href: error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-dotnet-framework-4-or-greater.md
+      - name: La máquina remota no aparece en el cuadro de diálogo Conexiones remotas
+        href: error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md
+  - name: Depuración de aplicaciones multiproceso
+    href: debug-multithreaded-applications-in-visual-studio.md
+    items:
+    - name: Iniciarse en la depuración de aplicaciones multiproceso
+      href: get-started-debugging-multithreaded-apps.md
+    - name: Herramientas para depurar procesos y subprocesos
+      href: debug-threads-and-processes.md
+      items:
+      - name: Usar la ventana Tareas paralelas
+        href: using-the-parallel-stacks-window.md
+      - name: Usar la ventana Inspección paralela
+        href: how-to-use-the-parallel-watch-window.md
+      - name: Usar la ventana Subprocesos
+        href: walkthrough-debugging-a-multithreaded-application.md
+      - name: Usar la ventana Tareas
+        href: using-the-tasks-window.md
+      - name: Usar la ventana Subprocesos de GPU
+        href: how-to-use-the-gpu-threads-window.md
+    - name: Depurar varios procesos
+      href: debug-multiple-processes.md
+    - name: 'Tutorial: Depurar con la ventana Subprocesos'
+      href: how-to-use-the-threads-window.md
+    - name: 'Tutorial: Depurar una aplicación paralela'
+      href: walkthrough-debugging-a-parallel-application.md
+    - name: Cambiar a otro subproceso durante la depuración
+      href: how-to-switch-to-another-thread-while-debugging.md
+    - name: Marcar y desmarcar subprocesos
+      href: how-to-flag-and-unflag-threads.md
+    - name: Depurar en un clúster de alto rendimiento
+      href: how-to-debug-on-a-high-performance-cluster.md
+    - name: Sugerencias para depurar subprocesos en código nativo
+      href: tips-for-debugging-threads-in-native-code.md
+    - name: Establecer un nombre de subproceso en código nativo
+      href: how-to-set-a-thread-name-in-native-code.md
+    - name: Establecer un nombre de subproceso en código administrado
+      href: how-to-set-a-thread-name-in-managed-code.md
+  - name: IntelliTrace
+    href: intellitrace.md
+    items:
+    - name: Ver las instantáneas con IntelliTrace
+      href: view-snapshots-with-intellitrace.md
+    - name: Ver los eventos con IntelliTrace
+      href: walkthrough-using-intellitrace.md
+    - name: Características de IntelliTrace
+      href: intellitrace-features.md
+    - name: Depuración histórica
+      href: historical-debugging.md
+    - name: Inspeccionar la aplicación mediante una depuración histórica
+      href: historical-debugging-inspect-app.md
+    - name: Diagnosis de problemas tras la implementación
+      href: diagnose-problems-after-deployment.md
+      items:
+      - name: Usar el recopilador independiente de IntelliTrace
+        href: using-the-intellitrace-stand-alone-collector.md
+      - name: Usar Microsoft Monitoring Agent
+        href: using-the-microsoft-monitoring-agent.md
+    - name: Uso de datos de IntelliTrace guardados
+      href: using-saved-intellitrace-data.md
+    - name: Referencia de la API para la extensibilidad de IntelliTrace
+      href: api-reference-for-intellitrace-extensibility.md
+  - name: Depurar servicios de Azure
+    href: debug-azure-apps.md
+    items:
+    - name: Depurar una aplicación de Azure activa
+      href: debug-live-azure-applications.md
+      items:
+      - name: Preguntas frecuentes sobre depuración de instantáneas
+        href: debug-live-azure-apps-faq.md
+      - name: Solución de problemas de depuración de instantáneas
+        href: debug-live-azure-apps-troubleshooting.md
+  - name: Depurar tipos de aplicación específicos
+    href: debugging-applications.md
+    items:
+    - name: Depurar aplicaciones de 64 bits
+      href: debug-64-bit-applications.md
+    - name: Depurar aplicaciones para UWP
+      href: debugging-windows-store-and-windows-universal-apps.md
+      items:
+      - name: Iniciar una sesión de depuración para una aplicación de UWP
+        href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
+        items:
+        - name: Depurar aplicaciones para UWP en un equipo remoto
+          href: run-windows-store-apps-on-a-remote-machine.md
+        - name: Ejecutar aplicaciones para UWP en el simulador
+          href: run-windows-store-apps-in-the-simulator.md
+        - name: Implementar aplicaciones para UWP desde Visual Studio
+          href: deploy-windows-store-apps-from-visual-studio.md
+      - name: Depurar un paquete de aplicación instalado
+        href: debug-installed-app-package.md
+      - name: Depurar XAML en Blend
+        href: debug-xaml-in-blend.md
+      - name: Depurar HTML y CSS
+        href: quickstart-debug-html-and-css.md
+        items:
+        - name: Actualizar una aplicación (JavaScript)
+          href: refresh-an-app-javascript.md
+        - name: Depurar un control WebView
+          href: debug-a-webview-control.md
+        - name: Métodos abreviados de teclado (HTML y JavaScript)
+          href: keyboard-shortcuts-html-and-javascript.md
+        - name: Depurar código de ejemplo HTML y CSS
+          href: debug-html-css-and-javascript-sample-code.md
+      - name: Depurar JavaScript mediante la consola
+        href: quickstart-debug-javascript-using-the-console.md
+        items:
+        - name: JavaScript Console commands
+          href: javascript-console-commands.md
+      - name: Cómo desencadenar eventos de suspensión, reanudación y en segundo plano
+        href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
+      - name: Precargar contenido para aplicaciones de Microsoft Store
+        href: prefetch-content-for-windows-store-apps.md
+    - name: Depurar código administrado
+      href: debugging-managed-code.md
+      items:
+      - name: 'Preparación de la depuración: tipos de proyectos de C#, F# y Visual Basic'
+        href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
+        items:
+        - name: 'Depuración administrada: valores de propiedad recomendados'
+          href: managed-debugging-recommended-property-settings.md
+        - name: 'Preparación de la depuración: aplicaciones de Windows Forms'
+          href: debugging-preparation-windows-forms-applications.md
+        - name: 'Preparación de la depuración: servicios de Windows'
+          href: debugging-preparation-windows-services.md
+      - name: Enrutamiento de mensajes a la ventana Salida
+        href: diagnostic-messages-in-the-output-window.md
+      - name: Aserciones en el código administrado
+        href: assertions-in-managed-code.md
+      - name: Instrucciones Stop en Visual Basic
+        href: stop-statements-in-visual-basic.md
+      - name: 'Tutorial: Depurar Windows Forms'
+        href: walkthrough-debugging-a-windows-form.md
+      - name: Depurar el método OnStart
+        href: how-to-debug-the-onstart-method.md
+      - name: Depurar aplicaciones en modo mixto
+        href: debugging-mixed-mode-applications.md
+      - name: Optimización y depuración JIT
+        href: jit-optimization-and-debugging.md
+      - name: Depurar LINQ
+        href: debugging-linq.md
+      - name: No se puede depurar porque un depurador del kernel está habilitado en el sistema
+        href: error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md
+      - name: Depurar código fuente de .NET Framework
+        href: how-to-debug-dotnet-framework-source.md
+      - name: Depurar WPF
+        href: debugging-wpf.md
+        items:
+        - name: Usar el visualizador de árboles de WPF
+          href: how-to-use-the-wpf-tree-visualizer.md
+        - name: Mostrar información de seguimiento de WPF
+          href: how-to-display-wpf-trace-information.md
+      - name: Depurar F#
+        href: debugging-f-hash.md
+    - name: Depurar código nativo
+      href: debugging-native-code.md
+      items:
+      - name: 'Preparación de la depuración: tipos de proyecto de Visual C++'
+        href: debugging-preparation-visual-cpp-project-types.md
+      - name: Depurar código optimizado
+        href: how-to-debug-optimized-code.md
+      - name: DebugBreak y __debugbreak
+        href: debugbreak-and-debugbreak.md
+      - name: Aserciones de C/C++
+        href: c-cpp-assertions.md
+      - name: Depurar código de ensamblado en línea
+        href: how-to-debug-inline-assembly-code.md
+      - name: Técnicas de depuración de MFC
+        href: mfc-debugging-techniques.md
+      - name: Técnicas de depuración de CRT
+        href: crt-debugging-techniques.md
+        items:
+        - name: Uso de la biblioteca de depuración de CRT
+          href: crt-debug-library-use.md
+        - name: Macros para los informes
+          href: macros-for-reporting.md
+        - name: Versiones de depuración de las funciones de asignación del montón
+          href: debug-versions-of-heap-allocation-functions.md
+        - name: Detalles del montón de depuración de CRT
+          href: crt-debug-heap-details.md
+        - name: Creación de funciones de enlace de depuración
+          href: debug-hook-function-writing.md
+          items:
+          - name: Funciones de enlace con los bloques de tipo cliente
+            href: client-block-hook-functions.md
+          - name: Funciones de enlace de asignación
+            href: allocation-hook-functions.md
+            items:
+            - name: Enlaces de asignación y asignaciones de memoria en tiempo de ejecución de C
+              href: allocation-hooks-and-c-run-time-memory-allocations.md
+          - name: Funciones de enlace de informe
+            href: report-hook-functions.md
+        - name: Búsqueda de fugas de memoria con la biblioteca de CRT
+          href: finding-memory-leaks-using-the-crt-library.md
+      - name: Preguntas frecuentes sobre la depuración de código nativo
+        href: debugging-native-code-faqs.md
+        items:
+        - name: Cómo depurar una infracción de acceso
+          href: how-can-i-debug-an-access-violation-q.md
+        - name: Cómo depurar las infracciones de acceso cuando se ejecuta un programa fuera del depurador
+          href: how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger-q.md
+        - name: Cómo averiguar si los punteros dañan una dirección de memoria
+          href: how-can-i-find-out-if-my-pointers-corrupt-a-memory-address-q.md
+        - name: Cómo averiguar quién está pasando un valor de parámetro erróneo
+          href: how-can-i-find-out-who-is-passing-a-wrong-parameter-value-q.md
+        - name: Determinar qué llamada genera el error cuando se llama a una función varias veces
+          href: when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed-q.md
+        - name: Dónde buscar códigos de error de Win32
+          href: where-can-i-look-up-win32-error-codes-q.md
+        - name: Cómo mantener el foco mientras se recorre el programa
+          href: how-can-i-keep-focus-when-stepping-through-my-program-q.md
+        - name: Cómo usar ventanas del depurador mientras se depura un programa en primer plano
+          href: how-can-i-use-debugger-windows-while-debugging-a-foreground-program-q.md
+        - name: Cómo depurar funciones de API de Windows
+          href: how-can-i-debug-windows-api-functions-q.md
+        - name: Volver a la función que llamó a MFC cuando está detenido
+          href: how-to-get-back-to-the-function-that-called-mfc-if-halted.md
+      - name: Depuración de COM y ActiveX
+        href: com-and-activex-debugging.md
+        items:
+        - name: Depuración de servidores y contenedores COM
+          href: com-server-and-container-debugging.md
+          items:
+          - name: Depurar servidores COM
+            href: how-to-debug-com-servers.md
+            items:
+            - name: aplicaciones de servidor SDI
+              href: sdi-server-applications.md
+          - name: Depurar clientes y servidores COM mediante la depuración RPC
+            href: how-to-debug-com-clients-and-servers-using-rpc-debugging.md
+        - name: Depurar un control ActiveX
+          href: how-to-debug-an-activex-control.md
+          items:
+          - name: Depurar un control ActiveX enlazado a datos
+            href: debugging-a-data-bound-activex-control.md
+        - name: Herramientas de depuración COM
+          href: com-debugging-tools.md
+      - name: Depurar código insertado
+        href: how-to-debug-injected-code.md
+    - name: Depurar código de GPU
+      href: debugging-gpu-code.md
+    - name: Diagnóstico de gráficos
+      href: graphics/toc.yml
+    - name: Depurar aplicaciones ASP.NET
+      href: how-to-enable-debugging-for-aspnet-applications.md
+      items:
+      - name: 'Depuración ASP.NET: requisitos del sistema'
+        href: aspnet-debugging-system-requirements.md
+      - name: Ejecutar el proceso de trabajo en una cuenta de usuario
+        href: how-to-run-the-worker-process-under-a-user-account.md
+      - name: Buscar el nombre de un proceso de ASP.NET
+        href: how-to-find-the-name-of-the-aspnet-process.md
+      - name: Depurar aplicaciones web implementadas
+        href: debugging-deployed-web-applications.md
+      - name: 'Tutorial: Depurar un formulario Web Forms'
+        href: walkthrough-debugging-a-web-form.md
+      - name: Depurar excepciones de ASP.NET
+        href: how-to-debug-aspnet-exceptions.md
+      - name: 'Depurar aplicaciones web: errores y solución de problemas'
+        href: debugging-web-applications-errors-and-troubleshooting.md
+        items:
+        - name: 'Depurar aplicaciones web: solución de problemas'
+          href: debugging-web-applications-troubleshooting.md
+          items:
+          - name: Comprobar los valores de configuración de la propiedad IIS
+            href: how-to-verify-iis-property-settings.md
+        - name: El sitio usa una dirección IP
+          href: error-site-uses-ip-address.md
+        - name: Una comprobación de seguridad produjo un error porque el servicio de administración de IIS no respondió
+          href: error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md
+        - name: ASP.NET no está instalado
+          href: error-aspnet-not-installed.md
+        - name: No se pudo realizar la depuración porque no está habilitada la autenticación integrada de Windows
+          href: error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md
+        - name: El servidor web se ha bloqueado y está impidiendo la ejecución del verbo DEBUG
+          href: error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md
+        - name: Se excedió el tiempo de espera de depuración de servicios web
+          href: error-timeout-while-debugging-web-services.md
+        - name: No es posible iniciar la depuración en el servidor web
+          href: error-unable-to-start-debugging-on-the-web-server.md
+          items:
+          - name: El servidor web no pudo encontrar el recurso solicitado
+            href: error-the-web-server-could-not-find-the-requested-resource.md
+          - name: El servidor Web no está configurado correctamente
+            href: error-the-web-server-is-not-configured-correctly.md
+    - name: Depurar aplicaciones web
+      href: debugging-web-applications.md
+      items:
+      - name: Depuración de scripts en el cliente
+        href: client-side-script-debugging.md
+        items:
+        - name: Limitaciones de la depuración de scripts
+          href: limitations-on-script-debugging.md
+        - name: Asociar a script
+          href: how-to-attach-to-script.md
+          items:
+          - name: 'Advertencia: Depuración de scripts deshabilitada'
+            href: warning-script-debugging-disabled.md
+    - name: Depurar servicios WCF
+      href: debugging-wcf-services.md
+      items:
+      - name: Limitaciones de la depuración de WCF
+        href: limitations-on-wcf-debugging.md
+      - name: Ir a servicios WCF
+        href: how-to-step-into-wcf-services.md
+      - name: Depurar un servicio WCF autohospedado
+        href: how-to-debug-a-self-hosted-wcf-service.md
+  - name: Usar archivos de volcado de memoria
+    href: using-dump-files.md
+    items:
+    - name: API de extensibilidad de resumen de archivos de volcado de memoria
+      href: dump-file-summary-extensibility-api.md
+  - name: Seguridad del depurador
+    href: debugger-security.md
+- name: Referencia
+  items:
+  - name: 'Depuración: referencia de la interfaz de usuario'
+    href: debugging-user-interface-reference.md
+    items:
+    - name: Cuadro de diálogo Elegir puntos de interrupción
+      href: choose-breakpoints-dialog-box.md
+    - name: Configurar Firewall para depuración remota (cuadro de diálogo)
+      href: configure-firewall-for-remote-debugging-dialog-box.md
+    - name: Depuración, Opciones (cuadro de diálogo)
+      href: debugging-options-dialog-box.md
+      items:
+      - name: General, Depuración, Opciones (cuadro de diálogo)
+        href: general-debugging-options-dialog-box.md
+      - name: Just-In-Time, Depuración, Opciones (cuadro de diálogo)
+        href: just-in-time-debugging-options-dialog-box.md
+      - name: Ventana de salida, Depuración, Opciones (cuadro de diálogo)
+        href: output-window-debugging-options-dialog-box.md
+    - name: Visualizador del conjunto de datos (cuadro de diálogo)
+      href: dataset-visualizer-dialog-box.md
+    - name: Depurar archivos de código fuente, Propiedades comunes, Páginas de propiedades de solución (cuadro de diálogo)
+      href: debug-source-files-common-properties-solution-property-pages-dialog-box.md
+    - name: Cuadro de diálogo Editar y continuar
+      href: edit-and-continue-dialog-box.md
+    - name: Seleccionar tipo de código (cuadro de diálogo)
+      href: select-code-type-dialog-box.md
+    - name: Detener depuración en curso (cuadro de diálogo)
+      href: stop-debugging-in-progress-dialog-box.md
+    - name: Información de carga de símbolos (cuadro de diálogo)
+      href: symbol-load-information-dialog-box.md
+    - name: Cuadro de diálogo Al visitar un punto de interrupción
+      href: when-breakpoint-is-hit-dialog-box.md
+    - name: Errores y advertencias de depuración (cuadro de diálogo)
+      href: debugging-errors-and-warning-dialog-boxes.md
+      items:
+      - name: Error de aserción (cuadro de diálogo)
+        href: assertion-failed-dialog-box.md
+      - name: No se puede cambiar el valor (cuadro de diálogo)
+        href: cannot-change-value-dialog-box.md
+      - name: El depurador no puede mostrar el código fuente o el desensamblado
+        href: debugger-cannot-display-source-code-or-disassembly.md
+      - name: Archivo ejecutable para sesión de depuración (cuadro de diálogo)
+        href: executable-for-debugging-session-dialog-box.md
+      - name: Editar y continuar (cuadro de diálogo) (C++)
+        href: edit-and-continue-dialog-box-cpp.md
+      - name: 'Depurador de Microsoft Visual Studio: se inició una excepción (cuadro de diálogo)'
+        href: microsoft-visual-studio-debugger-exception-thrown-dialog-box.md
+      - name: No hay código fuente disponible
+        href: no-source-available.md
+      - name: Resolver ambigüedad (cuadro de diálogo)
+        href: resolve-ambiguity-dialog-box.md
+      - name: Advertencia de código obsoleto (cuadro de diálogo)
+        href: stale-code-warning-dialog-box.md
+      - name: No se puede asociar al proceso
+        href: unable-to-attach-to-the-process.md
+      - name: Editar y continuar (cuadro de diálogo de mensaje de error)
+        href: edit-and-continue-error-message-dialog-box.md
+      - name: El tiempo de espera de evaluación de la función 'función' se agotó y tuvo que anularse de forma no segura
+        href: error-evaluating-the-function-function-timed-out-and-needed-to-be-aborted-in-an-unsafe-way.md
+      - name: El proceso de destino terminó con el código "code" al evaluar la función "function"
+        href: error-evaluating-the-function-process-exited.md
+      - name: No se puede conectar a SQL Server en el equipo remoto
+        href: error-unable-to-connect-to-sql-server-on-remote-machine.md
+      - name: No se puede obtener acceso a la interfaz de depuración de SQL Server
+        href: error-unable-to-access-the-sql-server-debugging-interface.md
+      - name: SQL no encuentra SSDEBUGPS
+        href: error-sql-can-t-find-ssdebugps.md
+      - name: La ejecución de Transact-SQL finalizó sin depuración
+        href: error-transact-sql-execution-ended-without-debugging.md
+      - name: El usuario no pudo ejecutar el procedimiento almacenado sp_enable_sql_debug
+        href: error-user-could-not-execute-stored-procedure-sp-enable-sql-debug.md
+      - name: Se ha configurado el uso compartido de archivos de Windows…
+        href: error-windows-file-sharing-has-been-configured-dot-dot-dot.md
+      - name: 'Advertencia de seguridad: Adjuntar a un proceso que pertenezca a un usuario que no sea de confianza puede ser peligroso. Si la información siguiente le resulta sospechosa o no está seguro de su procedencia, no la adjunte a este proceso'
+        href: security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md
+      - name: 'Advertencia de seguridad: El depurador debe ejecutar un comando que no es de confianza'
+        href: security-warning-debugger-must-execute-untrusted-command.md
+      - name: Alerta de seguridad del servidor de origen
+        href: source-server-security-alert.md
+      - name: El modo de depuración mixto para procesos x64 solo se admite cuando se usa Microsoft .NET Framework 4 o posterior
+        href: mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoft-dotnet-framework-4-or-greater.md
+      - name: No se admite la depuración en modo mixto para procesos IA64.
+        href: mixed-mode-debugging-for-ia64-processes-is-unsupported.md
+      - name: El modo de depuración mixto se admite solo cuando se usa Microsoft .NET Framework 2.0 ó 3.0
+        href: mixed-mode-debugging-is-only-supported-when-using-microsoft-dotnet-framework-2-0-or-3-0.md
+  - name: Debug Interface Access SDK
+    href: debug-interface-access/debug-interface-access-sdk.md
+  - name: Ayuda de Spy++
+    href: spy-increment-help.md
+    items:
+    - name: Usar Spy++
+      href: using-spy-increment.md
+      items:
+      - name: Introducción a Spy++
+        href: introducing-spy-increment.md
+      - name: Iniciar Spy++
+        href: how-to-start-spy-increment.md
+      - name: Barra de herramientas de Spy++
+        href: spy-increment-toolbar.md
+      - name: Mostrar vistas de Spy++
+        href: how-to-display-spy-increment-views.md
+      - name: Actualizar la vista
+        href: how-to-refresh-the-view.md
+      - name: Cambiar fuentes
+        href: how-to-change-fonts.md
+      - name: Expandir y contraer árboles de Spy++
+        href: how-to-expand-and-collapse-spy-increment-trees.md
+    - name: Vistas de Spy++
+      href: spy-increment-views.md
+      items:
+      - name: Vista Ventanas
+        href: windows-view.md
+        items:
+        - name: Usar la herramienta de búsqueda
+          href: how-to-use-the-finder-tool.md
+        - name: Buscar una ventana en la vista Ventanas
+          href: how-to-search-for-a-window-in-windows-view.md
+        - name: Mostrar propiedades de ventana
+          href: how-to-display-window-properties.md
+      - name: Vista Mensajes
+        href: messages-view.md
+        items:
+        - name: Controlar la vista Mensajes
+          href: how-to-control-messages-view.md
+        - name: Abrir la vista Mensajes desde Buscar ventana
+          href: how-to-open-messages-view-from-find-window.md
+        - name: Buscar un mensaje en la vista Mensajes
+          href: how-to-search-for-a-message-in-messages-view.md
+        - name: Iniciar y detener la presentación del registro de mensajes
+          href: how-to-start-and-stop-the-message-log-display.md
+        - name: Códigos de mensaje
+          href: message-codes.md
+        - name: Mostrar las propiedades de los mensajes
+          href: how-to-display-message-properties.md
+      - name: Vista Procesos
+        href: processes-view.md
+        items:
+        - name: Buscar un proceso en la vista Procesos
+          href: how-to-search-for-a-process-in-processes-view.md
+        - name: Mostrar las propiedades de los procesos
+          href: how-to-display-process-properties.md
+      - name: Vista de subprocesos
+        href: threads-view.md
+        items:
+        - name: Buscar un subproceso en la vista Subprocesos
+          href: how-to-search-for-a-thread-in-threads-view.md
+        - name: Mostrar las propiedades del subproceso
+          href: how-to-display-thread-properties.md
+    - name: Referencia de Spy++
+      href: spy-increment-reference.md
+      items:
+      - name: Comandos de menú
+        href: menu-commands.md
+        items:
+        - name: Comandos de menú de Spy
+          href: spy-menu-commands.md
+        - name: Comandos del menú Árbol
+          href: tree-menu-commands.md
+        - name: Comandos del menú Buscar
+          href: search-menu-commands.md
+        - name: Comandos del menú Ver
+          href: view-menu-commands.md
+        - name: Comandos del menú Mensajes
+          href: messages-menu-commands.md
+        - name: Comandos del menú Ventana
+          href: window-menu-commands.md
+        - name: Comandos del menú Ayuda
+          href: help-menu-commands.md
+      - name: Fuente (cuadro de diálogo) (Ayuda de Microsoft Spy++)
+        href: font-dialog-box-microsoft-spy-increment-help.md
+      - name: Herramientas de búsqueda para las vistas de Spy++
+        href: search-tools-for-spy-increment-views.md
+        items:
+        - name: Cuadro de diálogo Buscar ventana
+          href: find-window-dialog-box.md
+        - name: Buscar ventana (cuadro de diálogo)
+          href: window-search-dialog-box.md
+        - name: cuadro de diálogo Buscar mensaje
+          href: message-search-dialog-box.md
+        - name: Buscar proceso (cuadro de diálogo)
+          href: process-search-dialog-box.md
+        - name: Buscar subproceso (cuadro de diálogo)
+          href: thread-search-dialog-box.md
+      - name: Cuadro de diálogo Propiedades de la ventana
+        href: window-properties-dialog-box.md
+        items:
+        - name: General (pestaña), Propiedades de la ventana (cuadro de diálogo)
+          href: general-tab-window-properties-dialog-box.md
+        - name: Estilos (pestaña), Propiedades de la ventana (cuadro de diálogo)
+          href: styles-tab-window-properties-dialog-box.md
+        - name: Ventanas (pestaña), Propiedades de la ventana (cuadro de diálogo)
+          href: windows-tab-window-properties-dialog-box.md
+        - name: Clase (pestaña), Propiedades de la ventana (cuadro de diálogo)
+          href: class-tab-window-properties-dialog-box.md
+        - name: Proceso (pestaña), Propiedades de la ventana (cuadro de diálogo)
+          href: process-tab-window-properties-dialog-box.md
+      - name: Opciones de mensaje (cuadro de diálogo)
+        href: message-options-dialog-box.md
+        items:
+        - name: Ventanas (pestaña), Opciones de mensaje (cuadro de diálogo)
+          href: windows-tab-message-options-dialog-box.md
+        - name: Mensajes (pestaña), Opciones de mensaje (cuadro de diálogo)
+          href: messages-tab-message-options-dialog-box.md
+        - name: Salida (pestaña), Opciones de mensaje (cuadro de diálogo)
+          href: output-tab-message-options-dialog-box.md
+      - name: Propiedades del mensaje (cuadro de diálogo)
+        href: message-properties-dialog-box.md
+      - name: Propiedades del proceso (cuadro de diálogo)
+        href: process-properties-dialog-box.md
+        items:
+        - name: General (pestaña), Propiedades del proceso (cuadro de diálogo)
+          href: general-tab-process-properties-dialog-box.md
+        - name: Memoria (pestaña), Propiedades del proceso (cuadro de diálogo)
+          href: memory-tab-process-properties-dialog-box.md
+        - name: Archivo de paginación (pestaña), Propiedades del proceso (cuadro de diálogo)
+          href: page-file-tab-process-properties-dialog-box.md
+        - name: Espacio (pestaña), Propiedades del proceso (cuadro de diálogo)
+          href: space-tab-process-properties-dialog-box.md
+      - name: Propiedades del subproceso (cuadro de diálogo)
+        href: thread-properties-dialog-box.md
+        items:
+        - name: General (pestaña), Propiedades del subproceso (cuadro de diálogo)
+          href: general-tab-thread-properties-dialog-box.md
+      - name: Otros cuadros de diálogo
+        href: other-dialog-boxes.md
+        items:
+        - name: Acerca de Microsoft Spy++
+          href: about-microsoft-spy-increment.md
+        - name: Aviso de copyright para la Ayuda de Spy++
+          href: copyright-notice-for-spy-increment-help.md
+- name: Recursos
+  items:
+  - name: Novedades del depurador de Visual Studio
+    href: what-s-new-for-the-debugger-in-visual-studio.md
+ms.openlocfilehash: 82809574dbbecf01e26e1677a4bb22ce9a482cf6
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821401"

@@ -1,5 +1,5 @@
 ---
-title: Contexto de documentos | Documentos de Microsoft
+title: Contexto de documento | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,23 +13,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f97df9bc3c0a40a44379ba37f1b36d79cffb74e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef82c6533eddf32dd8315193531a57e2e7328ad9
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203565"
 ---
-# <a name="document-context"></a>Contexto del documento
-En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuración, un **contexto del documento**:  
+# <a name="document-context"></a>Contexto de documento
+En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuración, un *contexto de documento*:  
   
--   Representa una posición en un archivo de código fuente. Para los idiomas en el archivo de origen no puede estar presente, un contexto de documento identifica una posición en un documento normalmente generado por el entorno de tiempo de ejecución. Por ejemplo, un motor de scripting puede generar un documento de script. Para obtener más información, consulte [posición del documento](../../extensibility/debugger/document-position.md).  
+-   Representa una posición en un archivo de origen. Para los idiomas donde el archivo de origen no puede estar presente, un contexto de documento identifica una posición en un documento normalmente generado por el entorno de tiempo de ejecución. Por ejemplo, un motor de scripting podría generar un documento de script. Para obtener más información, consulte [documentar posición](../../extensibility/debugger/document-position.md).  
   
--   Describe una posición en un documento de origen que corresponde a un contexto de código. El controlador de símbolos, asigna un contexto de código al contexto de documentación, con la información generada por un compilador o intérprete.  
+-   Describe una posición en un documento de origen que corresponde a un contexto de código. El controlador de símbolos asigna un contexto de código al contexto de la documentación, con información generada por un compilador o intérprete.  
   
 -   Se implementa mediante un [IDebugDocumentContext2](../../extensibility/debugger/reference/idebugdocumentcontext2.md) interfaz.  
   
 ## <a name="see-also"></a>Vea también  
- [Contexto del código](../../extensibility/debugger/code-context.md)   
+ [Contexto de código](../../extensibility/debugger/code-context.md)   
  [Proveedor de símbolos](../../extensibility/debugger/symbol-provider.md)   
  [Interfaces de proveedor de símbolos](../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [Contextos de depurador](../../extensibility/debugger/debugger-contexts.md)

@@ -14,18 +14,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 381a6742dbedbe50b350764ca9e2637895db7ae2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fe234d60e8cd86279d3dcc01da95e6d2e6202213
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749163"
 ---
-# <a name="cvleavespan-function"></a>CvLeaveSpan (Función)
+# <a name="cvleavespan-function"></a>Función CvLeaveSpan
 Marca el final del intervalo.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```C  
 HRESULT CvLeaveSpan(  
    _In_ PCV_SPAN pSpan  
 );  
@@ -39,7 +40,7 @@ HRESULT CvLeaveSpan(
  S_OK cuando el mensaje se ha escrito correctamente. Código de error en caso de que se hayan producido errores. Utilice macros SUCCEEDED/FAILED para comprobar si existe una condición de error.  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** cvmarkers.h  
+ **Encabezado:** *cvmarkers.h*  
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)

@@ -1,6 +1,7 @@
 ---
-title: Usar el marco de pruebas unitarias de Microsoft para C++ en Visual Studio | Microsoft Docs
+title: Usar el marco de pruebas unitarias de Microsoft para C++ en Visual Studio
 ms.date: 11/15/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
@@ -8,39 +9,45 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: a2d0998185a7b550b22d0cbfaad43477bb036ad7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 53243502e0368d3cb988950edf266cc56adbaa22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812457"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Usar el marco de pruebas unitarias de Microsoft para C++ en Visual Studio
 
 El marco de pruebas unitarias de Microsoft para C++ se incluye de forma predeterminada en la carga de trabajo de **desarrollo para el escritorio con C++**.
 
 ##  <a name="separate_project"></a>Para escribir pruebas unitarias en un proyecto independiente
+
 Normalmente, el código de prueba hay que ejecutarlo en su propio proyecto, en la misma solución que el código que quiere probar. Para instalar y configurar un nuevo proyecto de prueba, vea [Escribir pruebas unitarias para C/C++](writing-unit-tests-for-c-cpp.md).
 
 ##  <a name="same_project"></a> Para escribir pruebas unitarias en el mismo proyecto
+
 En algunos casos (por ejemplo, al probar funciones no exportadas en una DLL), puede que tenga que crear las pruebas en el mismo proyecto que el programa que quiere probar. Para escribir pruebas unitarias en el mismo proyecto:
 
-1.  Modifique las propiedades del proyecto para incluir los encabezados y los archivos de biblioteca que sean necesarios para las pruebas unitarias.
+1. Modifique las propiedades del proyecto para incluir los encabezados y los archivos de biblioteca que sean necesarios para las pruebas unitarias.
 
-    1.  En el Explorador de soluciones, haga clic con el botón derecho en el nodo de proyecto del programa que esté probando y, luego, elija **Propiedades | Propiedades de configuración | Directorios de VC++**.
+   1. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo de proyecto del programa que esté probando y, luego, elija **Propiedades** > **Propiedades de configuración** > **Directorios de VC++**.
 
-    3.  Haga clic en la flecha abajo en las siguientes filas y elija **<Edit>**:
+   2. Haga clic en la flecha abajo en las siguientes filas y elija **<Edit>**:
 
-        |||
-        |-|-|
-        |**Directorios de archivos de inclusión**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
-        |**Directorios de archivos de bibliotecas**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
 
-2.  Agregue el archivo de prueba unitaria de C++:
+      | Directorio | Propiedad. |
+      |-| - |
+      | **Directorios de archivos de inclusión** | **$(VCInstallDir)UnitTest\include;$(IncludePath)** |
+      | **Directorios de archivos de bibliotecas** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)** |
 
-    -   Haga clic con el botón derecho en el nodo de proyecto en el **Explorador de soluciones** y elija **Agregar | Nuevo elemento | Prueba unitaria de C++**.
+
+2. Agregue el archivo de prueba unitaria de C++:
+
+   -   Haga clic con el botón derecho en el nodo de proyecto en el **Explorador de soluciones** y elija **Agregar** > **Nuevo elemento** > **Prueba unitaria de C++**.
 
 ## <a name="write-the-tests"></a>Escribir las pruebas
-Cualquier archivo .cpp con clases de prueba debe incluir "CppUnitTest.h" y tener una instrucción Using para `using namespace Microsoft::VisualStudio::CppUnitTestFramework`. El proyecto de prueba ya está configurado. También incluye una definición de espacio de nombres y una TEST_CLASS con un TEST_METHOD para que pueda empezar. Puede cambiar el nombre del espacio de nombres, así como los nombres entre paréntesis de las macros de la clase y el método.
+
+Cualquier archivo *.cpp* con clases de prueba debe incluir "CppUnitTest.h" y tener una instrucción Using para `using namespace Microsoft::VisualStudio::CppUnitTestFramework`. El proyecto de prueba ya está configurado. También incluye una definición de espacio de nombres y una TEST_CLASS con un TEST_METHOD para que pueda empezar. Puede cambiar el nombre del espacio de nombres, así como los nombres entre paréntesis de las macros de la clase y el método.
 
 Se han definido macros especiales para inicializar los módulos, las clases y los métodos de prueba, así como para limpiar recursos cuando las pruebas se hayan completado. Estas macros generan código que se ejecuta antes de que se tenga acceso por primera vez a una clase o a un método y después de que se haya ejecutado la última prueba. Para más información, vea [Inicialización y limpieza](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#Initialize_and_cleanup).
 
@@ -48,15 +55,16 @@ Use los métodos estáticos de la clase [Assert](microsoft-visualstudio-testtool
 
 ## <a name="run-the-tests"></a>Ejecutar las pruebas
 
-1.  En el menú **Prueba**, elija **Windows** y **Explorador de pruebas**.
+1. En el menú **Prueba**, elija **Windows** > **Explorador de pruebas**.
 2. Si ninguna de las pruebas está visible en la ventana, compile el proyecto de prueba haciendo clic con el botón derecho en el nodo correspondiente en el **Explorador de soluciones** y eligiendo **Compilar** o **Recompilar**.
 
-2.  En el Explorador de pruebas, elija **Ejecutar todas** o seleccione las pruebas concretas que quiera ejecutar. Haga clic con el botón derecho en una prueba para ver otras opciones, como la ejecución en modo de depuración con puntos de interrupción habilitados.
-3. En la **Ventana de salida**, seleccione **Pruebas** en la lista desplegable para ver los mensajes escritos por la clase `Logger`:
+3. En el **Explorador de pruebas**, elija **Ejecutar todas** o seleccione las pruebas concretas que quiera ejecutar. Haga clic con el botón derecho en una prueba para ver otras opciones, como la ejecución en modo de depuración con puntos de interrupción habilitados.
+4. En la **Ventana de salida**, seleccione **Pruebas** en la lista desplegable para ver los mensajes escritos por la clase `Logger`:
 
-  ![Ventana de salida de C++ con mensajes de prueba](media/cpp-test-output-window.png "Ventana de salida")
+   ![Ventana de salida de C++ con mensajes de prueba](media/cpp-test-output-window.png)
 
 ## <a name="define-traits-to-enable-grouping"></a>Definir rasgos para permitir la agrupación
+
 Se pueden definir rasgos en los métodos de prueba para poder clasificar y agrupar las pruebas en el **Explorador de pruebas**. Para definir un rasgo, use la macro `TEST_METHOD_ATTRIBUTE` . Por ejemplo definir un rasgo denominado `TEST_MY_TRAIT`:
 
 ```cpp
@@ -65,7 +73,7 @@ Se pueden definir rasgos en los métodos de prueba para poder clasificar y agrup
 
  Para usar el rasgo definido en las pruebas unitarias:
 
-```
+```cpp
 BEGIN_TEST_METHOD_ATTRIBUTE(Method1)
     TEST_OWNER(L"OwnerName")
     TEST_PRIORITY(1)
@@ -80,15 +88,16 @@ TEST_METHOD(Method1)
 ```
 
 ### <a name="c-trait-attribute-macros"></a>Macros de atributo de rasgo de C++
-  Encontrará los siguientes rasgos predefinidos en `CppUnitTest.h`. Para más información, vea la [referencia de API del marco de pruebas unitarias de Microsoft para C++](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
 
-|Macro|Description|
-|-----------|-----------------|
+Encontrará los siguientes rasgos predefinidos en `CppUnitTest.h`. Para obtener más información, vea la [referencia de API del marco de pruebas unitarias de Microsoft para C++](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
+
+|Macro|Descripción|
+|-|-----------------|
 |`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|Para definir un rasgo, use la macro TEST_METHOD_ATTRIBUTE.|
 |`TEST_OWNER(ownerAlias)`|Para especificar un propietario del método de prueba, use el rasgo de propietario predefinido.|
 |`TEST_PRIORITY(priority)`|Para asignar prioridades relativas a los métodos de prueba, use el rasgo de prioridad predefinido.|
 
-
 ## <a name="see-also"></a>Vea también
-[Inicio rápido: Desarrollo controlado por pruebas con el Explorador de pruebas](../test/quick-start-test-driven-development-with-test-explorer.md)
+
+- [Inicio rápido: Desarrollo controlado por pruebas con el Explorador de pruebas](../test/quick-start-test-driven-development-with-test-explorer.md)
 

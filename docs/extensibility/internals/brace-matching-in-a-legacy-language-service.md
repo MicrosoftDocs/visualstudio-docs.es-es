@@ -1,5 +1,5 @@
 ---
-title: Coincidencia de llaves en un servicio de lenguaje heredado | Documentos de Microsoft
+title: Coincidencia de llaves en un servicio de lenguaje heredado | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,45 +14,46 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9df179d6f5b1bd6d7b9f2c827568b6954860b81
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d7564d76485fc60486a581de71a0497a1dc3e4a7
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512752"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Coincidencia de llaves en un servicio de lenguaje heredado
-Coincidencia de llaves ayuda a los desarrolladores realizar un seguimiento de elementos del lenguaje que deben realizarse conjuntamente, como paréntesis y llaves. Cuando un programador escribe una llave de cierre, se resalta la llave de apertura.  
+Coincidencia de llaves ayuda a los desarrolladores realizar un seguimiento de elementos del lenguaje que deben ocurren juntos, como paréntesis y llaves. Cuando un desarrollador escribe una llave de cierre, se resalta la llave de apertura.  
   
- Puede comparar dos o tres elementos que ocurren mismo tiempo, denominados pares y triples. Triples son conjuntos de tres elementos que ocurren mismo tiempo. Por ejemplo, en C#, la `foreach` instrucción constituye un triple: "`foreach()`","`{`", y "`}`". Los tres elementos se resaltan cuando se escribe la llave de cierre.  
+ Puede comparar dos o tres elementos que se producen conjuntamente, denominados pares y triples. Triples son conjuntos de tres elementos que se producen conjuntamente. Por ejemplo, en C#, la `foreach` instrucción forms un triple: `foreach()`, `{`, y `}`. Los tres elementos se resaltan cuando se escribe la llave de cierre.  
   
- Los servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características del servicio de lenguaje es utilizar las extensiones MEF. Para obtener más información acerca de la nueva forma de implementar la coincidencia de llaves, consulte [Tutorial: mostrar llaves coincidentes](../../extensibility/walkthrough-displaying-matching-braces.md).  
+ Servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características de servicio de lenguaje es usar las extensiones MEF. Para obtener más información acerca de la nueva forma de implementar la coincidencia de llaves, consulte [Tutorial: mostrar las llaves coincidentes](../../extensibility/walkthrough-displaying-matching-braces.md).  
   
 > [!NOTE]
->  Le recomendamos que empiece a usar el nuevo editor de API tan pronto como sea posible. Esto mejora el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.  
+>  Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.  
   
- El <xref:Microsoft.VisualStudio.Package.AuthoringSink> clase es compatible con ambos pares y triplica con el <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A> y <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A> métodos.  
+ El <xref:Microsoft.VisualStudio.Package.AuthoringSink> clase admite ambos pares y triplica con el <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A> y <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A> métodos.  
   
 ## <a name="implementation"></a>Implementación  
- El servicio de lenguaje es necesario identificar todos los elementos coincidentes en el idioma y, a continuación, buscar todos los pares coincidentes. Normalmente, esto se logra mediante la implementación <xref:Microsoft.VisualStudio.Package.IScanner> para detectar un idioma coincidente y, a continuación, usar el <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método para que coincida con los elementos.  
+ El servicio de lenguaje debe identificar todos los elementos coincidentes en el idioma y, a continuación, busque todos los pares coincidentes. Normalmente, esto se logra implementando <xref:Microsoft.VisualStudio.Package.IScanner> para detectar un idioma coincidente y, a continuación, usar el <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método para que coincida con los elementos.  
   
- El <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> método llama el escáner para dividir la línea y devolver el token justo antes del símbolo de intercalación. El escáner indica que se ha encontrado un par de elementos de lenguaje estableciendo un valor de símbolo (token) de desencadenador de <xref:Microsoft.VisualStudio.Package.TokenTriggers> en el token actual. El <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> llamadas al método el <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> método que llama a su vez la <xref:Microsoft.VisualStudio.Package.LanguageService.BeginParse%2A> método con el valor de la razón de análisis de <xref:Microsoft.VisualStudio.Package.ParseReason> para buscar el elemento de lenguaje correspondiente. Cuando se encuentra el elemento de lenguaje correspondiente, se resaltan los elementos.  
+ El <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> llamadas de método del analizador para dividir la línea y devolver el token justo antes del símbolo de intercalación. El analizador indica que se ha encontrado un par de elementos de lenguaje estableciendo un valor de token de desencadenador de <xref:Microsoft.VisualStudio.Package.TokenTriggers> en el token actual. El <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> llamadas al método el <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> método que llama a su vez la <xref:Microsoft.VisualStudio.Package.LanguageService.BeginParse%2A> método con el valor de la razón de análisis de <xref:Microsoft.VisualStudio.Package.ParseReason> para localizar el elemento de lenguaje correspondiente. Cuando se encuentra el elemento de lenguaje correspondiente, ambos elementos se resaltan.  
   
- Para obtener una descripción completa de cómo escribir una llave desencadena el resaltado de llaves, consulte la sección "Ejemplo de operación analizar" en el tema [analizador del servicio de lenguaje heredado y el analizador](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).  
+ Para obtener una descripción completa de cómo escribir una llave desencadena el resaltado de llaves, consulte el *operación de análisis de ejemplo* sección del artículo [analizador del servicio de lenguaje heredado y el analizador](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).  
   
-## <a name="enabling-support-for-brace-matching"></a>Habilitar la compatibilidad para la coincidencia de llaves  
- El <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atributo puede establecer el `MatchBraces`, `MatchBracesAtCaret`, y `ShowMatchingBrace` parámetros con nombre que establecen las propiedades correspondientes de la <xref:Microsoft.VisualStudio.Package.LanguagePreferences> clase. También se pueden establecer propiedades de la preferencia de idioma por el usuario.  
+## <a name="enable-support-for-brace-matching"></a>Habilitar la compatibilidad con coincidencia de llaves  
+ El <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atributo puede establecer el **MatchBraces**, **MatchBracesAtCaret**, y **ShowMatchingBrace** entradas del registro que establecen las propiedades correspondientes de la <xref:Microsoft.VisualStudio.Package.LanguagePreferences> clase. También se pueden establecer propiedades de la preferencia de idioma por el usuario.  
   
 |Entrada del registro|Property|Descripción|  
 |--------------------|--------------|-----------------|  
-|`MatchBraces`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|Habilita la concordancia de llaves|  
-|`MatchBracesAtCaret`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|Habilita la coincidencia de llaves como el símbolo de intercalación se mueve.|  
-|`ShowMatchingBrace`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A>|Resalta la llave correspondiente.|  
+|MatchBraces|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|Habilita la coincidencia de llaves.|  
+|MatchBracesAtCaret|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|Habilita la coincidencia de llaves como el símbolo de intercalación se mueve.|  
+|ShowMatchingBrace|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A>|Resalta la llave correspondiente.|  
   
-## <a name="matching-conditional-statements"></a>Coincidencia de instrucciones condicionales  
- Puede hacer coincidir las instrucciones condicionales, como `if`, `else if`, y `else`, o `#if`, `#elif`, `#else`, `#endif`, de la misma manera como delimitadores de valores coincidentes. Puede crear subclases de la <xref:Microsoft.VisualStudio.Package.AuthoringSink> clase y proporcionan un método que puede agregar texto abarca, así como delimitadores para que la matriz interna de elementos coincidentes.  
+## <a name="match-conditional-statements"></a>Coincide con las instrucciones condicionales  
+ Puede hacer coincidir como instrucciones condicionales, `if`, `else if`, y `else`, o `#if`, `#elif`, `#else`, `#endif`, en la misma manera que la coincidencia de delimitadores. Puede crear subclases el <xref:Microsoft.VisualStudio.Package.AuthoringSink> clase y proporcionar un método que puede agregar texto abarca, así como delimitadores de la matriz interna de elementos coincidentes.  
   
-## <a name="setting-the-trigger"></a>Establecer el desencadenador  
- En el ejemplo siguiente se muestra cómo detectar paréntesis coincidentes, las llaves y corchetes y establecer el desencadenador para él en el escáner. El <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> método en la <xref:Microsoft.VisualStudio.Package.Source> clase detecta el desencadenador y llama el analizador para encontrar la pareja coincidente (consulte la sección "Buscar la coincidencia" en este tema). En este ejemplo es solo con fines ilustrativos. Se supone que el escáner contiene un método `GetNextToken` que identifica y devuelve símbolos (tokens) de una línea de texto.  
+## <a name="set-the-trigger"></a>Establezca el desencadenador  
+ En el ejemplo siguiente se muestra cómo detectar paréntesis coincidentes, entre llaves y corchetes y establecer el desencadenador para él en el analizador. El <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> método en el <xref:Microsoft.VisualStudio.Package.Source> clase detecta el desencadenador y llama el analizador para encontrar la pareja coincidente (consulte la *buscar la coincidencia* sección en este artículo). En este ejemplo es solo con fines ilustrativos. Supone que el escáner contiene un método `GetNextToken` que identifica y devuelve los tokens de una línea de texto.  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -86,8 +87,8 @@ namespace TestLanguagePackage
         }  
 ```  
   
-## <a name="matching-the-braces"></a>Las llaves coincidentes  
- Este es un ejemplo simplificado para coincidir los {} de elementos de lenguaje, () y [] y agregar sus intervalos para la <xref:Microsoft.VisualStudio.Package.AuthoringSink> objeto. Este enfoque no es un método recomendado para el análisis de código fuente; es solo con fines ilustrativos.  
+## <a name="match-the-braces"></a>Coincide con las llaves  
+ Este es un ejemplo simplificado para la coincidencia de los elementos del lenguaje `{ }`, `( )`, y `[ ]`y la adición de sus intervalos para la <xref:Microsoft.VisualStudio.Package.AuthoringSink> objeto. Este enfoque no es un enfoque recomendado para el análisis de código fuente; es solo con fines ilustrativos.  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  

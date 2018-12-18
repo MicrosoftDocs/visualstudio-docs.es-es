@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135658"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Esquematización en un servicio de lenguaje heredado
 Esquematización hace posible contraer un programa complejo en una información general o un esquema. Por ejemplo, en C# se pueden contraer todos los métodos en una sola línea, que muestra solo la firma del método. Además, las estructuras y clases se pueden contraer para mostrar solo los nombres de las clases y estructuras. Dentro de un único método, se puede contraer una lógica compleja para mostrar el flujo general mostrando solo la primera línea de instrucciones como `foreach`, `if`, y `while`.  

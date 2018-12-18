@@ -1,9 +1,9 @@
 ---
-title: Cuadro de herramientas, HTML (Pestaña) | Microsoft Docs
-ms.custom: ''
+title: Cuadro de herramientas, HTML (Pestaña)
 ms.date: 06/21/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.toolbox.html
 helpviewer_keywords:
@@ -15,15 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ff609631cec69e0d32cb74e5857cd3bb8df5ab94
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 90dfae7e891c805a785db8bba00d3c75d2a84bf3
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384167"
 ---
 # <a name="toolbox-html-tab"></a>Cuadro de herramientas, HTML (Pestaña)
 
-La pestaña **HTML** del cuadro de herramientas proporciona componentes que resultan de gran utilidad en las páginas web y los formularios Web Forms. Para ver esta pestaña, abra primero un documento para editarlo en el Diseñador HTML. En el menú **Ver**, haga clic en **Cuadro de herramientas** y después haga clic en la pestaña **HTML** del cuadro de herramientas.
+La pestaña **HTML** del cuadro de herramientas proporciona componentes que resultan de gran utilidad en las páginas y los formularios web. Para ver esta pestaña, abra primero un documento para editarlo en el Diseñador HTML. En el menú **Ver**, haga clic en **Cuadro de herramientas** y después haga clic en la pestaña **HTML** del cuadro de herramientas.
 
  Para crear una instancia de una herramienta en la pestaña **HTML**, haga doble clic en la herramienta para agregarla al documento en el punto de inserción actual o seleccione la herramienta y arrástrela hasta la posición que quiera en la superficie de edición.
 
@@ -33,13 +34,13 @@ Las siguientes herramientas están disponibles de manera predeterminada en la pe
 
 **Pointer**
 
-![Puntero de página HTML del Diseñador de ASP.NET Mobile](../../ide/reference/media/vxpointer.gif "vxPointer")
+![Puntero de página HTML del Diseñador de ASP.NET Mobile](../../ide/reference/media/vxpointer.gif)
 
 Esta herramienta está seleccionada de manera predeterminada cuando se abre cualquier pestaña del cuadro de herramientas. No se puede eliminar. El puntero le permite arrastrar objetos a la superficie de la vista Diseño, cambiar su tamaño y su ubicación en la página o formulario. Para obtener más información, vea [Cuadro de herramientas](../../ide/reference/toolbox.md).
 
 **Input (Button)**
 
-![Botón de página web HTML](../../ide/reference/media/vxbutton.gif "vxButton")
+![Botón de página Web HTML](../../ide/reference/media/vxbutton.gif)
 
 Inserta un elemento `input` de `type="button"`. Para cambiar el texto que se muestra, edite la propiedad `name`. De manera predeterminada, se inserta `id="Button1"` para el primer botón, `id="Button2"` para el segundo y así sucesivamente.
 
@@ -51,7 +52,7 @@ Si arrastra **Input (Button)** a la superficie de la vista Diseño, se inserta c
 
 **Input (Reset)**
 
-![Captura de pantalla de HTMLpageResetButton](../../ide/reference/media/vxreset.gif "vxReset")
+![Captura de pantalla de HTMLpageResetButton](../../ide/reference/media/vxreset.gif)
 
 Inserta un elemento `input` de `type="reset"`. Para cambiar el texto que se muestra, edite la propiedad `name`. De manera predeterminada, se inserta `id="Reset1"` para el primer botón de reinicio, `id="Reset2"` para el segundo y así sucesivamente.
 
@@ -63,7 +64,7 @@ Si arrastra **Input (Reset)** a la superficie de la vista Diseño, se inserta c�
 
 **Input (Submit)**
 
-![Captura de pantalla de HTMLpageToolbarSubmitButton](../../ide/reference/media/vxsubmit.gif "vxSubmit")
+![Captura de pantalla de HTMLpageToolbarSubmitButton](../../ide/reference/media/vxsubmit.gif)
 
 Inserta un elemento `input` de `type="submit"`. Para cambiar el texto que se muestra, edite la propiedad `name`. De manera predeterminada, se inserta `id="Submit1"` para el primer botón de envío, `id="Submit2"` para el segundo y así sucesivamente.
 
@@ -75,7 +76,7 @@ Si arrastra **Input (Submit)** a la superficie de la vista Diseño, se inserta c
 
 **Input (Text)**
 
-![Captura de pantalla de HTMLpageToolbarTextField](../../ide/reference/media/vxtextfield.gif "vxTextfield")
+![Captura de pantalla de HTMLpageToolbarTextField](../../ide/reference/media/vxtextfield.gif)
 
 Inserta un elemento `input` de `type="text"` en el documento. Para cambiar el texto predeterminado que se muestra, edite el atributo `value`. De manera predeterminada, se inserta `id="Text1"` para el primer campo de texto, `id="Text2"` para el segundo y así sucesivamente.
 
@@ -90,7 +91,7 @@ Si arrastra **Input (Text)** a la superficie de la vista Diseño, se inserta có
 
 **Input (File)**
 
-![Campo Archivo de página HTML](../../ide/reference/media/vxfilefield.gif "vxFilefield")
+![Campo Archivo de paginación HTML](../../ide/reference/media/vxfilefield.gif)
 
 Inserta un elemento `input` de `type="file"` en el documento. De manera predeterminada, se inserta `id="File1"` para el primer campo de archivo, `id="File2"` para el segundo y así sucesivamente.
 
@@ -105,7 +106,7 @@ Si arrastra **Input (File)** a la superficie de la vista Diseño, se inserta có
 
 **Input (Password)**
 
-![Campo Contraseña de Visual Studio](../../ide/reference/media/vxpassword.gif "vxPassword")
+![Campo de contraseña de Visual Studio](../../ide/reference/media/vxpassword.gif)
 
 Inserta un elemento `input` de `type="password"`. De manera predeterminada, se inserta `id="Password1"` para el primer campo de contraseña, `id="Password2"` para el segundo y así sucesivamente.
 
@@ -116,11 +117,11 @@ Si arrastra **Input (Password)** a la superficie de la vista Diseño, se inserta
 ```
 
 > [!IMPORTANT]
-> Si la aplicación transmite nombres de usuario y contraseñas, debe configurar su sitio web para que use la capa de sockets seguros (SSL) para cifrar la transmisión. Para obtener más información, consulte "Securing Connections with SSL" (Proteger conexiones con SSL) en la [IIS Operations Guide](http://go.microsoft.com/fwlink/?linkid=47856) (Guía de operaciones de IIS). Además, se recomienda que valide todos los datos proporcionados por el usuario. Para obtener más información, vea [Validar la información especificada por el usuario en sitios de ASP.NET Web Pages (Razor)](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).
+> Si la aplicación transmite nombres de usuario y contraseñas, debe configurar su sitio web para que use Capa de sockets seguros (SSL) para cifrar la transmisión. Para obtener más información, vea [Securing Connections](/previous-versions/tn-archive/bb418917(v=technet.10)) (Proteger las conexiones). Además, se recomienda que valide todos los datos proporcionados por el usuario. Para obtener más información, vea [Validar la información especificada por el usuario en sitios de ASP.NET Web Pages (Razor)](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).
 
 **Input (Check box)**
 
-![Opción de casilla del cuadro de herramientas de página web HTML](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")
+![Opción de casilla de cuadro de herramientas de página Web HTML](../../ide/reference/media/vxcheckbox.gif)
 
 Inserta un elemento `input` de `type="checkbox"`. Para cambiar el texto que se muestra, edite la propiedad `name`. De manera predeterminada, se inserta `id="Checkbox1"` para la primera casilla, `id="Checkbox2"` para la segunda y así sucesivamente.
 
@@ -132,7 +133,7 @@ Si arrastra **Input (Check box)** a la superficie de la vista Diseño, se insert
 
 **Input (Radio)**
 
-![Captura de pantalla de VisualStudioHTMLpageRadioButton](../../ide/reference/media/vxradio.gif "vxRadio")
+![Captura de pantalla de VisualStudioHTMLpageRadioButton](../../ide/reference/media/vxradio.gif)
 
 Inserta un elemento `input` de `type="radio"`. Para cambiar el texto que se muestra, edite la propiedad `name`. De manera predeterminada, se inserta `id="Radio1"` para el primer botón de selección, `id="Radio2"` para el segundo y así sucesivamente.
 
@@ -144,7 +145,7 @@ Si arrastra **Input (Radio)** a la superficie de la vista Diseño, se inserta c�
 
 **Input (Hidden)**
 
-![Elemento oculto de página HTML](../../ide/reference/media/vxhidden.gif "vxhidden")
+![Elemento oculto de página HTML](../../ide/reference/media/vxhidden.gif)
 
 Inserta un elemento `input` de `type="hidden"`. De manera predeterminada, se inserta `id="Hidden1"` para el primer campo oculto, `id="Hidden2"` para el segundo y así sucesivamente.
 
@@ -156,14 +157,14 @@ Si arrastra **Input (Hidden)** a la superficie de la vista Diseño, se inserta c
 
 **Textarea**
 
-![Área de texto de la barra de herramientas de la página HTML](../../ide/reference/media/vxtextarea.gif "vxTextarea")
+![Área de texto de la barra de herramientas de la página HTML](../../ide/reference/media/vxtextarea.gif)
 
 Inserta un elemento `textarea`. Puede cambiar el tamaño del área de texto o usar las barras de desplazamiento para ver el texto que se extiende más allá del área de visualización. Para cambiar el texto predeterminado que se muestra, edite el atributo `value`. De manera predeterminada, se inserta `id="textarea1"` para la primera área de texto, `id=" textarea 2"` para la segunda y así sucesivamente.
 
 Si arrastra **Textarea** a la superficie de la vista Diseño, se inserta código HTML similar al siguiente en el documento:
 
 ```html
-<textarea id=" textarea 1 name=" textarea 1" rows=2 cols=20></textarea> 
+<textarea id=" textarea 1 name=" textarea 1" rows=2 cols=20></textarea>
 ```
 
 > [!IMPORTANT]
@@ -171,19 +172,19 @@ Si arrastra **Textarea** a la superficie de la vista Diseño, se inserta código
 
 **Table**
 
-![Captura de pantalla de HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif "vxTable")
+![Captura de pantalla de HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif)
 
 Inserta un elemento `table`.
 
 Si arrastra **Table** a la superficie de la vista Diseño, se inserta código HTML similar al siguiente en el documento:
 
 ```html
-<table cellspacing="1" width="75%" border=1> <tr><td></td></tr></table> 
+<table cellspacing="1" width="75%" border=1> <tr><td></td></tr></table>
 ```
 
 **Image**
 
-![Elemento de imagen de página HTML](../../ide/reference/media/vximage.gif "vxImage")
+![Elemento de imagen de página HTML](../../ide/reference/media/vximage.gif)
 
 Inserta un elemento `img`. Modifique este elemento para especificar su `src` y su texto `alt`.
 
@@ -195,7 +196,7 @@ Si arrastra **Image** a la superficie de la vista Diseño, se inserta código HT
 
 **Seleccionar**
 
-![Cuadro de herramientas desplegable de la página HTML](../../ide/reference/media/vxdropdown.gif "vxDropdown")
+![Cuadro de herramientas desplegable de la página HTML](../../ide/reference/media/vxdropdown.gif)
 
 Inserta un elemento `select` desplegable (sin atributo `size`). De manera predeterminada, se inserta `id="select1"` para el primer cuadro de lista, `id="select2"` para el segundo y así sucesivamente.
 
@@ -209,7 +210,7 @@ Para crear un elemento `select` multilínea, aumente el valor de la propiedad Si
 
 **Horizontal Rule**
 
-![Elemento de regla horizontal de página HTML](../../ide/reference/media/vxhorizontal.gif "vxHorizontal")
+![Elemento de la regla horizontal de página HTML](../../ide/reference/media/vxhorizontal.gif)
 
 Inserta un elemento `hr`. Para aumentar el grosor de la línea, modifique el atributo `size`.
 
@@ -221,7 +222,7 @@ Si arrastra **Horizontal Rule** a la superficie de la vista Diseño, se inserta 
 
 **Div**
 
-![Etiqueta de página HTML](../../ide/reference/media/vxlabel.gif "vxLabel")
+![Etiqueta de página HTML](../../ide/reference/media/vxlabel.gif)
 
 Inserta un elemento `div` que incluye un atributo `ms_positioning="FlowLayout"`. Excepto por el ancho y alto, este elemento es idéntico a un panel de diseño de flujo. Para dar formato al texto que se encuentra en el elemento `div`, agregue un atributo `class="stylename"` a la etiqueta de apertura.
 
@@ -233,4 +234,4 @@ Si arrastra **Div** a la superficie de la vista Diseño, se inserta código HTML
 
 ## <a name="see-also"></a>Vea también
 
-[Cuadro de herramientas](../../ide/reference/toolbox.md)
+- [Cuadro de herramientas](../../ide/reference/toolbox.md)

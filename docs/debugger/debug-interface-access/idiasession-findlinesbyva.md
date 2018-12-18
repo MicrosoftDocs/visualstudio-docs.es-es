@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Findlinesbyva | Documentos de Microsoft'
+title: Findlinesbyva | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,14 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d88a93e5bd22befb661505bb09cdce6f5d3b544
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c199411504db6d4465b6e02f4ffaad988c48b46c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870658"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
-Recupera la información del número de línea para las líneas contenidas en un intervalo de direcciones virtual especificado (VA).  
+Recupera la información de número de línea para las líneas contenidas en un intervalo de direcciones virtual especificado (VA).  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,16 +36,16 @@ HRESULT findLinesByVA (
   
 #### <a name="parameters"></a>Parámetros  
  `va`  
- [in] Especifica la dirección como un VA.  
+ [in] Especifica la dirección como un jefe  
   
  `length`  
  [in] Especifica el número de bytes del intervalo de direcciones para cubrir con esta consulta.  
   
  `ppResult`  
- [out] Devuelve un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objeto que contiene una lista de la línea de todos los números que cubren el intervalo de direcciones especificado.  
+ [out] Devuelve un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objeto que contiene una lista de la línea de todos los números que regulan el intervalo de direcciones especificado.  
   
 ## <a name="example"></a>Ejemplo  
- En este ejemplo se muestra una función que obtiene todos los números de línea contenidos en una función con la longitud y la dirección virtual de la función.  
+ En este ejemplo se muestra una función que obtiene todos los números de línea incluidos en una función mediante la dirección virtual de la función y la longitud.  
   
 ```C++  
 IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession)  

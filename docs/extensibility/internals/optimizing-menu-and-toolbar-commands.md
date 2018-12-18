@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130734"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>Optimizar los menús y comandos de barra de herramientas
 La adición de VSPackages y sus comandos correspondientes a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] puede provocar una interfaz de usuario llena. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proporciona maneras de ayudar a minimizar la confusión de comando de interfaz de usuario.  

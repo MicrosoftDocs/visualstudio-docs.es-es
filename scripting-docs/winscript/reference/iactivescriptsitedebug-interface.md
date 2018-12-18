@@ -1,16 +1,16 @@
 ---
 title: IActiveScriptSiteDebug (interfaz) | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IActiveScriptSiteDebug interface
 ms.assetid: 2557ee09-688b-4c03-a821-180c24dfa0e6
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724745"
 ---
 # <a name="iactivescriptsitedebug-interface"></a>IActiveScriptSiteDebug (Interfaz)
 Hosts inteligentes implementan la `IActiveScriptSiteDebug` interfaz para realizar la administración de documentos y para participar en la depuración. El `IActiveScriptSite` objeto normalmente proporciona una implementación de la `IActiveScriptSiteDebug` interfaz. Si es así, llame a la `IActiveScriptSite::QueryInterface` método para obtener el `IActiveScriptSiteDebug` interfaz.  

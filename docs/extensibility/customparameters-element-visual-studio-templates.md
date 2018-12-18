@@ -1,5 +1,5 @@
 ---
-title: CustomParameters (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
+title: Elemento CustomParameters (plantillas de Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c09d320b1a9185e79e36d54ff0363219d3dabc6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 464c4720dc4693ef2fb968a23a538e74d03d1a26
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498654"
 ---
-# <a name="customparameters-element-visual-studio-templates"></a>CustomParameters (Elemento, Plantillas de Visual Studio)
-Agrupa los parámetros personalizados que deben pasarse en el Asistente para plantillas cuando el asistente realice sustituciones de parámetros.  
+# <a name="customparameters-element-visual-studio-templates"></a>Elemento CustomParameters (plantillas de Visual Studio)
+Agrupa los parámetros personalizados que deben pasarse al Asistente de plantilla cuando el asistente realiza sustituciones de parámetros.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -54,7 +55,7 @@ Agrupa los parámetros personalizados que deben pasarse en el Asistente para pla
 ## <a name="remarks"></a>Comentarios  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra cómo usar varios parámetros personalizados en una plantilla. Cuando se crea un proyecto o elemento de una plantilla con los siguientes parámetros personalizados, todas las instancias de `$color1$` y `$color2$` en la plantilla de archivos se reemplazarán con `Red` y `Blue`, respectivamente.  
+ El ejemplo siguiente muestra cómo usar varios parámetros personalizados en una plantilla. Cuando se crea un proyecto o elemento de una plantilla con los siguientes parámetros personalizados, todas las instancias de `$color1$` y `$color2$` en la plantilla se reemplazarán los archivos con `Red` y `Blue`, respectivamente.  
   
 ```  
 <CustomParameters>  

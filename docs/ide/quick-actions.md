@@ -1,6 +1,7 @@
 ---
-title: Acciones rápidas | Microsoft Docs
+title: Acciones rápidas, bombillas y destornilladores
 ms.date: 03/28/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
@@ -11,11 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 941980eff8fc2474df9555b326278abdb9b26dac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7089a9a654d1c346fefcca119f74a87d89f323b8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349379"
 ---
 # <a name="quick-actions"></a>Acciones rápidas
 
@@ -23,26 +25,35 @@ Las acciones rápidas le permiten refactorizar, generar o modificar el código d
 
 Las acciones rápidas pueden utilizarse para:
 
-- aplicar una revisión de código para una infracción de regla del [analizador de código](../code-quality/roslyn-analyzers-overview.md)
-- [suprimir](../code-quality/use-roslyn-analyzers.md) una infracción de regla del analizador de código
-- aplicar una refactorización (por ejemplo, [insertar una variable temporal](../ide/reference/inline-temporary-variable.md))
-- generar código (por ejemplo, [introducir una variable local](../ide/reference/introduce-local-variable.md))
+- Aplicar una revisión de código para una infracción de regla del [analizador de código](../code-quality/roslyn-analyzers-overview.md).
+- [Suprimir](../code-quality/use-roslyn-analyzers.md) una infracción de regla del analizador de código.
+- Aplicar una refactorización (por ejemplo, [insertar una variable temporal](../ide/reference/inline-temporary-variable.md)).
+- Generar código (por ejemplo, [introducir una variable local](../ide/reference/introduce-local-variable.md)).
 
-Las acciones rápidas se pueden aplicar mediante el icono de bombilla ![icono de bombilla pequeño](media/vs2015_lightbulbsmall.png) o presionando **Ctrl**+**.** cuando el cursor está en una línea de código para la que está disponible una acción. Verá una bombilla si hay una flecha en zigzag de color rojo y Visual Studio tiene una sugerencia para corregir el problema. Por ejemplo, si tiene un error que se indica mediante una flecha en zigzag de color rojo, aparecerá una bombilla cuando haya disponibles correcciones para ese error.
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Refactorización (Visual Studio para Mac)](/visualstudio/mac/refactoring).
+
+Las acciones rápidas se pueden aplicar con los iconos de bombilla ![icono de bombilla](media/light-bulb-icon.png) o de destornillador ![icono de destornillador](media/screwdriver-icon.png) o presionando **Ctrl**+**.** cuando el cursor está en una línea de código para la que está disponible una acción. Verá una bombilla de error ![icono de bombilla de error](media/error-light-bulb-icon.png) si hay un subrayado ondulado de color rojo que indica un error. Visual Studio tiene una corrección disponible para ese error.
 
 Para cualquier lenguaje, un tercero puede proporcionar diagnósticos y sugerencias, por ejemplo, como parte de un SDK, y las bombillas de Visual Studio se encienden siguiendo esas reglas.
 
-## <a name="to-see-a-light-bulb"></a>Para ver una bombilla
+## <a name="icons"></a>Iconos
 
-1. En muchos casos, las bombillas aparecen espontáneamente cuando se desplaza el mouse sobre el punto de error, o en el margen izquierdo del editor cuando se coloca el cursor de inserción en una línea que contiene un error. Cuando vea una flecha zigzagueante de color rojo, puede mover el puntero por encima para mostrar la bombilla. También puede hacer que una bombilla aparezca usando el ratón o el teclado para ir a algún sitio de la línea donde existe el problema.
+El icono que aparece cuando hay una acción rápida disponible da una indicación del tipo de corrección o refactorización disponible. El icono *destornillador* ![icono de destornillador](media/screwdriver-icon.png) indica que hay acciones disponibles para cambiar el código, pero no es necesario usarlas. El icono *bombilla amarilla* ![icono de bombilla](media/light-bulb-icon.png) indica que hay acciones disponibles que *debe* llevar a cabo para mejorar el código. El icono *bombilla de error* ![icono de bombilla de error](media/error-light-bulb-icon.png) indica que hay una acción disponible que corrige un error del código.
 
-1. Presione **Ctrl**+**.** en cualquier sitio de una línea para invocar a la bombilla e ir directamente a la lista de posibles correcciones.
+## <a name="to-see-a-light-bulb-or-screwdriver"></a>Para ver una bombilla o un destornillador
+
+- Si hay una corrección disponible, aparecerán bombillas espontáneamente cuando mantenga el cursor en la ubicación de un error.
 
    ![Bombilla con el desplazamiento del mouse](../ide/media/vs2015_lightbulb_hover.png)
 
+- Las bombillas y los destornilladores aparecen en el margen izquierdo del editor cuando mueve el acento circunflejo a una línea de código para la que hay una acción rápida disponible.
+
+- Presione **Ctrl**+**.** en cualquier parte de una línea para ver una lista de acciones rápidas y refactorizaciones disponibles.
+
 ## <a name="to-see-potential-fixes"></a>Para ver posibles correcciones
 
-Haga clic en la flecha hacia abajo o en el vínculo Mostrar posibles correcciones para mostrar la lista de acciones rápidas que la bombilla puede llevar a cabo.
+Seleccione la flecha abajo situada junto a la bombilla o el vínculo **Mostrar posibles correcciones** para mostrar una lista de acciones rápidas disponibles.
 
 ![Bombilla expandida](../ide/media/vs2015_lightbulb_hover_expanded.png)
 
@@ -52,3 +63,4 @@ Haga clic en la flecha hacia abajo o en el vínculo Mostrar posibles correccione
 - [Acciones rápidas comunes](../ide/common-quick-actions.md)
 - [Estilos de código y acciones rápidas](../ide/code-styles-and-quick-actions.md)
 - [Escribir y refactorizar código (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
+- [Refactorización (Visual Studio para Mac)](/visualstudio/mac/refactoring)

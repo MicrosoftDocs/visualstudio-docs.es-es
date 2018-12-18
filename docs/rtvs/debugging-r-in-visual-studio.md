@@ -1,32 +1,27 @@
 ---
-title: "Depuración con Herramientas de R para Visual Studio | Microsoft Docs"
-description: "Visual Studio ofrece una experiencia de depuración completa para R que incluye puntos de interrupción, asociación e inspección de pila de llamadas y variables."
-ms.custom: 
+title: Depuración de código de R
+description: Visual Studio ofrece una experiencia de depuración completa para R que incluye puntos de interrupción, asociación e inspección de pila de llamadas y variables.
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- devlang-r
-dev_langs:
-- R
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 185896840be089c8a74e018e3fd66fa2816c5d76
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c89eed2f3e15259489ce43920b912db14ab862a6
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235437"
 ---
-# <a name="debugging-r-in-visual-studio"></a>Depuración de R en Visual Studio
+# <a name="debug-r-in-visual-studio"></a>Depurar R en Visual Studio
 
 Herramientas de R para Visual Studio (RTVS) se integra con la experiencia de depuración completa de Visual Studio (vea [Depuración en Visual Studio](../debugger/debugging-in-visual-studio.md). Esta compatibilidad incluye puntos de interrupción, adjuntar procesos de ejecución, inspeccionar y ver variables e inspeccionar la pila de llamadas. En este artículo se exploran esos aspectos de la depuración que son únicos en R y RTVS.
 
-El procedimiento para iniciar el depurador para el archivo de inicio de R en un proyecto de R es el mismo que para otros tipos de proyectos: use **Depurar > Iniciar depuración**, la tecla F5 o el comando **Archivo de inicio de origen** en la barra de herramientas de depuración: 
+El procedimiento para iniciar el depurador para el archivo de inicio de R en un proyecto de R es el mismo que para otros tipos de proyectos: use **Depurar** > **Iniciar depuración**, la tecla **F5** o el comando **Archivo de inicio de origen** en la barra de herramientas de depuración: 
 
 ![Botón de inicio del depurador de R](media/debugger-start-button.png)
 
@@ -42,7 +37,7 @@ Sourcing: c:\proj\rproject1\rproject1\Settings.R
 
 Tenga en cuenta que la función `rtvs::debug_source` se usa para obtener el script. Esta función es necesaria porque RTVS necesita modificar el código para preparar la depuración. Cuando se usa cualquier comando de obtención de RTVS y se adjunta un depurador, Visual Studio usa automáticamente `rtvs::debug_source`.
 
-También puede adjuntar de forma manual el depurador desde la ventana interactiva directamente mediante el comando **Herramientas de R > Sesión > Adjuntar depurador**, el comando **Depurar > Adjuntar en R interactivo** o el comando **Adjuntar depurador** de la barra de herramientas de la ventana interactiva. Una vez que lo haya hecho, es su responsabilidad obtener los archivos que quiera depurar. Si quiere obtener manualmente los archivos, asegúrese de que usa `rtvs::debug_source` y no el comando `source` habitual en R.
+También puede adjuntar de forma manual el depurador desde la ventana interactiva directamente mediante el comando **Herramientas de R** > **Sesión** > **Adjuntar depurador**, el comando **Depurar** > **Adjuntar en R interactivo** o el comando **Adjuntar depurador** de la barra de herramientas de la ventana interactiva. Una vez que lo haya hecho, es su responsabilidad obtener los archivos que quiera depurar. Si quiere obtener manualmente los archivos, asegúrese de que usa `rtvs::debug_source` y no el comando `source` habitual en R.
 
 Esta conexión entre el depurador y la ventana interactiva facilita acciones como llamar (y depurar) una función con diferentes valores de parámetro. Por ejemplo, supongamos que tiene la siguiente función en un archivo de origen (es decir, que se ha cargado en la sesión):
 
@@ -60,7 +55,7 @@ Al estar detenido en el depurador, también está detenido en el aviso del explo
 
 El Explorador de entorno admite una serie de comandos especiales:
 
-| Comando | Description |
+| Comando | Descripción |
 | --- | --- |
 | n | siguiente: ejecuta la siguiente instrucción en el archivo de código (igual que al depurar paso a paso por procedimientos). |
 | s | depurar paso a paso por instrucciones: ejecuta la siguiente instrucción en el archivo de código, depurando paso a paso por instrucciones un ámbito de función si la siguiente instrucción es una llamada de función. |

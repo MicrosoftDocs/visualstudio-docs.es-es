@@ -1,5 +1,5 @@
 ---
-title: s_taskIdCounter campo | Documentos de Microsoft
+title: s_taskIdCounter (campo) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,24 +13,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d49881eb16e05edfc1cfc57dd9520de8991942d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bf5c6b0578495e56086abb8637054e0650b07195
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252399"
 ---
-# <a name="staskidcounter-field"></a>s_taskIdCounter campo
+# <a name="staskidcounter-field"></a>s_taskIdCounter (Campo)
 El siguiente identificador disponible para un <xref:System.Threading.Tasks.Task> objeto.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Ensamblado:** mscorlib (en mscorlib.dll)  
   
- Dado que no se puede obtener acceso a este miembro interno de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio común (CIL).  
+ Dado que no se puede obtener acceso a este miembro interno de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio en común (CIL).  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```csharp  
 .field static assembly int32 s_taskIdCounter  
 ```  
   

@@ -1,5 +1,5 @@
 ---
-title: GUID_ARRAY | Documentos de Microsoft
+title: GUID_ARRAY | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,11 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1802d5784ad6e94aee4ff63fb51d2c92dbf164f0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fa68a3064cd40cca8c62f90c2f144a767ebb9e3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855578"
 ---
 # <a name="guidarray"></a>GUID_ARRAY
 Describe una matriz de identificadores únicos para los motores de depuración disponible.  

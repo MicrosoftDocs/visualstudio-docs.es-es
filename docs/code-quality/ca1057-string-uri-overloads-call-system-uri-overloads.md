@@ -1,6 +1,7 @@
 ---
 title: 'CA1057: Las sobrecargas URI de cadena llaman a sobrecargas System.Uri'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -13,15 +14,21 @@ ms.assetid: ef1e983e-9ca7-404b-82d7-65740ba0ce20
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2e140b4b861e2666350154d861814378f5d115
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 44130632cb416bf03819ddff13b797ac3b799354
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547181"
 ---
 # <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057: Las sobrecargas URI de cadena llaman a sobrecargas System.Uri
+
 |||
 |-|-|
 |TypeName|StringUriOverloadsCallSystemUriOverloads|
@@ -30,19 +37,20 @@ ms.lasthandoff: 04/19/2018
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Motivo
- Un tipo declara sobrecargas de método que solo difieren en el reemplazo de un parámetro de cadena con un <xref:System.Uri?displayProperty=fullName> parámetro y la sobrecarga que toma el parámetro de cadena no llama a la sobrecarga que toma el <xref:System.Uri> parámetro.
+
+Un tipo declara sobrecargas del método que se diferencian únicamente por la sustitución de un parámetro de cadena con un <xref:System.Uri?displayProperty=fullName> parámetro y la sobrecarga que toma el parámetro de cadena no llama a la sobrecarga que toma el <xref:System.Uri> parámetro.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Dado que las sobrecargas solamente se distinguen por la cadena /<xref:System.Uri> parámetro, se supone que la cadena para representar un identificador uniforme de recursos (URI). Las representaciones de cadena de identificadores URI tienen tendencia a analizar y codificar errores, por lo que pueden crear puntos vulnerables en la seguridad. La <xref:System.Uri> clase proporciona estos servicios de una manera segura. Para obtener las ventajas de la <xref:System.Uri> (clase), debe llamar la sobrecarga de la cadena la <xref:System.Uri> sobrecargar mediante el argumento de cadena.
+ Dado que las sobrecargas se diferencian únicamente por la cadena o <xref:System.Uri> parámetro, se supone que la cadena para representar un identificador uniforme de recursos (URI). Las representaciones de cadena de identificadores URI tienen tendencia a analizar y codificar errores, por lo que pueden crear puntos vulnerables en la seguridad. La <xref:System.Uri> clase proporciona estos servicios de forma segura. Para obtener las ventajas de la <xref:System.Uri> (clase), debe llamar la sobrecarga de la cadena la <xref:System.Uri> sobrecargar utilizando el argumento de cadena.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Volver a implementar el método que utiliza la representación de cadena del URI para que crea una instancia de la <xref:System.Uri> clase utilizando el argumento de cadena y, a continuación, pasa el <xref:System.Uri> objeto a la sobrecarga que tiene el <xref:System.Uri> parámetro.
+ Volver a implementar el método que usa la representación de cadena del URI para que crea una instancia de la <xref:System.Uri> clase utilizando el argumento de cadena y, a continuación, pasa el <xref:System.Uri> objeto a la sobrecarga que tiene el <xref:System.Uri> parámetro.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  Es seguro suprimir una advertencia de esta regla si el parámetro de cadena no representa un URI.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra una sobrecarga de cadena correctamente implementada.
+ El ejemplo siguiente muestra una sobrecarga de la cadena correctamente implementado.
 
  [!code-csharp[FxCop.Design.CallUriOverload#1](../code-quality/codesnippet/CSharp/ca1057-string-uri-overloads-call-system-uri-overloads_1.cs)]
  [!code-cpp[FxCop.Design.CallUriOverload#1](../code-quality/codesnippet/CPP/ca1057-string-uri-overloads-call-system-uri-overloads_1.cpp)]
