@@ -1,6 +1,6 @@
 ---
-title: Utilizar puntos de interrupción en el depurador de Visual Studio | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Utilizar puntos de interrupción en el depurador | Microsoft Docs
+ms.custom: seodec18
 ms.date: 10/15/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -36,12 +36,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15fa2172aab62d6b6f6ffcd21186b28f336ead4e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: MTE95
+ms.openlocfilehash: 16bcb4bb12e852a8fa268998d0605b2ffc7471e5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389142"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068453"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utilizar puntos de interrupción en el depurador de Visual Studio
 Los puntos de interrupción son una de las técnicas de depuración más importantes en el cuadro de herramientas de desarrollador. Establecer puntos de interrupción donde desee pausar la ejecución del depurador. Por ejemplo, es posible que desee ver el estado de las variables del código o examine la pila de llamadas en un determinado punto de interrupción. Si esta es la primera vez que intenta depurar código, le recomendamos que lea [Depuración para principiantes sin experiencia](../debugger/debugging-absolute-beginners.md) antes de continuar con este artículo.
@@ -61,7 +61,7 @@ En C# automáticamente se resaltan el código, el punto de interrupción y líne
   
  ![Ejecución de punto de interrupción detenida](../debugger/media/breakpointexecution.png "ejecución de punto de interrupción")  
   
- Cuando el depurador se detiene en el punto de interrupción, puede mirar el estado actual de la aplicación, incluidos los valores de variable y la pila de llamadas. Para obtener más información sobre la pila de llamadas, vea [Ver la pila de llamadas y usar la ventana Pila de llamadas en el depurador](../debugger/how-to-use-the-call-stack-window.md).  
+ Cuando el depurador se detiene en el punto de interrupción, puede mirar el estado actual de la aplicación, incluidos los valores de variable y la pila de llamadas. Para obtener más información acerca de la pila de llamadas, vea [Cómo: Utilice la ventana Pila de llamadas](../debugger/how-to-use-the-call-stack-window.md).  
 
 - El punto de interrupción es un botón de alternancia. Puede hacer clic en él y presione **F9**, o bien usar **depurar** > **Alternar puntos de interrupción** para eliminar o volver a insertarlo.
   
@@ -89,7 +89,7 @@ El punto de interrupción de la pila de llamadas aparece en el **puntos de inter
 
 El depurador se interrumpe en la instrucción.  
 
-Para obtener más información sobre la pila de llamadas, vea [Ver la pila de llamadas y usar la ventana Pila de llamadas en el depurador](../debugger/how-to-use-the-call-stack-window.md). 
+Para obtener más información acerca de la pila de llamadas, vea [Cómo: Utilice la ventana Pila de llamadas. 
 
 Visualmente traza puntos de interrupción durante la ejecución de código, vea [asignar métodos en la pila de llamadas durante la depuración](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md). 
   
@@ -220,7 +220,7 @@ Puntos de interrupción con el conjunto de condiciones aparecen con un **+** sí
 <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a>
 ### <a name="conditional-expression"></a>Expresión condicional
 
-Al seleccionar **expresión condicional**, puede elegir entre dos condiciones: **es true** o **cuando cambia**. Elija **es true** para interrumpir cuando se cumple la expresión, o **cuando cambia** para interrumpir cuando el valor de la expresión ha cambiado.  
+Al seleccionar **expresión condicional**, puede elegir entre dos condiciones: **Es true** o **cuando cambia**. Elija **es true** para interrumpir cuando se cumple la expresión, o **cuando cambia** para interrumpir cuando el valor de la expresión ha cambiado.  
   
  En el ejemplo siguiente, se alcanza el punto de interrupción solo cuando el valor de `testInt` es **4**:  
   
