@@ -1,6 +1,6 @@
 ---
-title: 'Depurar aplicaciones Web: Solución de problemas | Documentos de Microsoft'
-ms.custom: ''
+title: 'Depuración de aplicaciones web: solución de problemas | Microsoft Docs'
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -19,18 +19,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3720dccfd6118aaacd122ea254618d0ce226cf8d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: b5f931a9942a89ae56836b5fbe91473b9dc9f568
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470860"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064000"
 ---
-# <a name="debugging-web-applications-troubleshooting"></a>Depurar aplicaciones Web: solución de problemas
+# <a name="debugging-web-applications-troubleshooting"></a>Depurar aplicaciones web: Solución de problemas
 Esta sección contiene varios procedimientos habituales para la resolución de errores.  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Cómo: Comprobar los valores de configuración de la propiedad IIS](../debugger/how-to-verify-iis-property-settings.md)  
+ [Cómo: comprobar los valores de configuración de la propiedad IIS](../debugger/how-to-verify-iis-property-settings.md)  
  Explica cómo establecer correctamente las propiedades en IIS para habilitar la depuración.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  

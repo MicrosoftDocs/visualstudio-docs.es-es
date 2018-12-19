@@ -1,6 +1,5 @@
 ---
 title: Configurar Firewall de Windows para la depuración remota | Microsoft Docs
-ms.custom: ''
 ms.date: 10/31/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4e4ccc09d8919260b1634fd02790c1bf5b10636
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: HT
+ms.openlocfilehash: da505c6193dd7d05cc10a8e7cec8383f8ee3adfc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750941"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058602"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Configurar Firewall de Windows para la depuración remota
 
@@ -56,23 +55,23 @@ Para la depuración remota, los siguientes puertos deben estar abiertos en el eq
 
 |**Puertos**|**Entrante/saliente**|**Protocolo**|**Descripción**|   
 |-|-|-|-|
-|4022|Entrante|TCP|Para VS 2017. El puerto número se incrementa en 2 para cada versión de Visual Studio. Para obtener más información, consulte [las asignaciones de puerto de depurador remoto de Visual Studio](../debugger/remote-debugger-port-assignments.md).|  
-|4023|Entrante|TCP|Para VS 2017. El puerto número se incrementa en 2 para cada versión de Visual Studio. Este puerto es sólo usa remota depurar un proceso de 32 bits desde una versión de 64 bits del depurador remoto. Para obtener más información, consulte [las asignaciones de puerto de depurador remoto de Visual Studio](../debugger/remote-debugger-port-assignments.md).| 
+|4022|Entrante|TCP|Para VS 2017. El puerto número se incrementa en 2 para cada versión de Visual Studio. Para obtener más información, vea [Asignaciones de puerto de depurador remoto de Visual Studio](../debugger/remote-debugger-port-assignments.md).|  
+|4023|Entrante|TCP|Para VS 2017. El puerto número se incrementa en 2 para cada versión de Visual Studio. Este puerto es sólo usa remota depurar un proceso de 32 bits desde una versión de 64 bits del depurador remoto. Para obtener más información, vea [Asignaciones de puerto de depurador remoto de Visual Studio](../debugger/remote-debugger-port-assignments.md).| 
 |3702|Saliente|UDP|(Opcional) Se requiere para la detección del depurador remoto.|    
   
 Si selecciona **usar el modo de compatibilidad administrado** en **herramientas** > **opciones** > **depuración**, abra estos puertos adicionales del depurador remoto. Modo de compatibilidad de depurador administrado permite un heredado, la versión de Visual Studio 2010 del depurador. 
 
 |**Puertos**|**Entrante/saliente**|**Protocolo**|**Descripción**|  
 |-|-|-|-|  
-|135, 139, 445|Saliente|TCP|Requerido.|  
-|137, 138|Saliente|UDP|Requerido.|  
+|135, 139, 445|Saliente|TCP|Obligatorio.|  
+|137, 138|Saliente|UDP|Obligatorio.|  
 
 Si la directiva de dominio requiere la comunicación de red se realice a través de IPSec, debe abrir puertos adicionales en Visual Studio y los equipos remotos. Para depurar en un servidor web IIS remoto, abra el puerto 80 en el equipo remoto.
 
 |**Puertos**|**Entrante/saliente**|**Protocolo**|**Descripción**|  
 |-|-|-|-|  
 |500, 4500|Saliente|UDP|Necesario si la directiva de dominio exige que la comunicación de red se realice a través de IPSec.|  
-|80|Saliente|TCP|Se requiere para la depuración de servidor web.|
+|80|Saliente|TCP|Necesario para la depuración en el servidor web.|
 
 Para permitir que aplicaciones específicas a través del firewall de Windows, consulte [Configurar depuración remota a través de Firewall de Windows](#configure-remote-debugging-through-windows-firewall). 
 

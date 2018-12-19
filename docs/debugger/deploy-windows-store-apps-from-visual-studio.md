@@ -1,6 +1,6 @@
 ---
-title: Implementar aplicaciones para UWP desde Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Implementar aplicaciones de UWP | Microsoft Docs
+ms.custom: seodec18
 ms.date: 01/16/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 974236f005219caa217f8b1b495eb807ab2f6ee0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: d8006fb0ddcab4ab3eeee1616632d2dc513428ba
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726311"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056816"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Implementar aplicaciones para UWP desde Visual Studio
 
@@ -29,7 +29,7 @@ La funcionalidad de implementación de Visual Studio genera y registra aplicacio
 
 - Cuando el destino es un dispositivo remoto, Visual Studio copia los archivos necesarios en el equipo remoto y registra la aplicación en ese dispositivo.
 
-Implementación es automática cuando se depura la aplicación desde Visual Studio mediante el uso de la **Iniciar depuración** opción (teclado: F5) o el **iniciar sin depurar** opción (teclado: CTRL + F5). También puede implementar la aplicación manualmente. La implementación manual es útil en los siguientes casos:
+La implementación es automática cuando se depura la aplicación desde Visual Studio mediante la opción Iniciar depuración** (teclado: F5) o el **iniciar sin depurar** opción (teclado: CTRL + F5 También puede implementar la aplicación manualmente. La implementación manual es útil en los siguientes casos:
 
 - Pruebas ad hoc en un equipo local o remoto.
 
@@ -117,6 +117,6 @@ Para configurar el inicio automático de una sesión de depuración en la implem
 
 ## <a name="see-also"></a>Vea también
 
-- [Opciones de implementación remota avanzada](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
+- [Opciones avanzadas de implementación remota](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
 - [Depuración de un paquete de aplicaciones instalado](../debugger/debug-installed-app-package.md)
 - [Ejecutar aplicaciones desde Visual Studio](../debugger/run-store-apps-from-visual-studio.md)
