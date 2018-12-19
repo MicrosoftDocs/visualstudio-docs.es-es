@@ -1,5 +1,5 @@
 ---
-title: Crear una aplicación de datos sencilla mediante ADO.NET en Visual Studio
+title: Creación de una aplicación de datos sencilla mediante ADO.NET
 ms.date: 08/23/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,21 +13,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5bcdd9120088663e469070c31962dfacc97bce0a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 75043a1716cca0c727eb0530cd63ca715a60424b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891016"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064877"
 ---
-# <a name="create-a-simple-data-application-by-using-adonet"></a>Crear una aplicación de datos sencilla mediante ADO.NET
+# <a name="create-a-simple-data-application-by-using-adonet"></a>Creación de una aplicación de datos sencilla mediante ADO.NET
 
-Cuando se crea una aplicación que manipula los datos en una base de datos, realizar tareas básicas como definir cadenas de conexión, insertar datos y ejecutar procedimientos almacenados. Siguiendo este tema, puede detectar cómo interactuar con una base de datos desde una aplicación sencilla de "formularios sobre datos" de Windows Forms utilizando Visual C# o Visual Basic y ADO.NET.  Todas las tecnologías de datos. NET, incluidos los conjuntos de datos, LINQ to SQL y Entity Framework, en última instancia, realice los pasos que son muy similares a las que se muestran en este artículo.
+Al crear una aplicación que manipula datos en una base de datos, se realizan tareas básicas tales como definir cadenas de conexión, insertar datos y ejecutar procedimientos almacenados. Siguiendo este tema, puede detectar cómo interactuar con una base de datos desde una aplicación sencilla de "formularios sobre datos" de Windows Forms utilizando Visual C# o Visual Basic y ADO.NET.  Todas las tecnologías de datos. NET, incluidos los conjuntos de datos, LINQ to SQL y Entity Framework, en última instancia, realice los pasos que son muy similares a las que se muestran en este artículo.
 
 En este artículo se muestra una manera sencilla de obtener datos de una base de datos de una manera rápida. Si la aplicación necesita modificar los datos de formas no triviales y actualizar la base de datos, debe considerar con Entity Framework y el uso de enlace de datos para sincronizar automáticamente los controles de interfaz de usuario a los cambios en los datos subyacentes.
 
 > [!IMPORTANT]
-> Para simplificar el código, no incluye control de excepciones para entornos de producción.
+> Para mantener el código sencillo, no se incluye el control de excepciones listo para producción.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -61,15 +61,15 @@ Cree la base de datos de ejemplo siguiendo estos pasos:
 
 7. Pegue el script de Transact-SQL en el editor de consultas y, a continuación, elija el **Execute** botón.
 
-     Después de un breve tiempo, finalice la consulta y se crean los objetos de base de datos. La base de datos contiene dos tablas: clientes y pedidos. Estas tablas no contienen datos inicialmente, pero puede agregar datos al ejecutar la aplicación que se va a crear. La base de datos también contiene cuatro procedimientos almacenados simples.
+     Después de un breve tiempo, finalice la consulta y se crean los objetos de base de datos. La base de datos contiene dos tablas: Los clientes y pedidos. Estas tablas no contienen datos inicialmente, pero puede agregar datos al ejecutar la aplicación que se va a crear. La base de datos también contiene cuatro procedimientos almacenados simples.
 
 ## <a name="create-the-forms-and-add-controls"></a>Crear los formularios y agregar controles
 
 1. Cree un proyecto para una aplicación de Windows Forms y, a continuación, asígnele el nombre **SimpleDataApp**.
 
-    Visual Studio crea el proyecto y varios archivos, incluido un formulario de Windows vacío que se denomina **Form1**.
+    Visual Studio crea el proyecto y varios archivos, incluido un formulario de Windows vacío denominado **Form1**.
 
-2. Agregue dos formularios de Windows para el proyecto para que tenga tres formularios y, a continuación, asígneles los nombres siguientes:
+2. Agregue dos formularios de Windows al proyecto para que tenga tres formularios y, a continuación, asígneles los siguientes nombres:
 
    -   **Navegación**
 
@@ -146,11 +146,11 @@ Esta sección contiene información general breve de lo que hace cada formulario
 
 ### <a name="navigation-form"></a>Formulario Navigation
 
-El formulario Navigation se abre cuando se ejecuta la aplicación. El **agregar una cuenta** botón abre el formulario NewCustomer. El **rellenar o cancelar pedidos** botón abre el formulario FillOrCancel. El **Exit** botón cierra la aplicación.
+El formulario Navigation se abre cuando se ejecuta la aplicación. El botón **Agregar una cuenta** abre el formulario NewCustomer. El botón **Rellenar o cancelar órdenes** abre el formulario FillOrCancel. El botón **Salir** cierra la aplicación.
 
 #### <a name="make-the-navigation-form-the-startup-form"></a>Hacer que el formulario Navigation sea el formulario de inicio
 
-Si usa C#, en **el Explorador de soluciones**, abra **Program.cs**y, a continuación, cambie la `Application.Run` línea a este: `Application.Run(new Navigation());`
+Si usa C#, en el **Explorador de soluciones**, abra **Program.cs** y, a continuación, cambie la línea `Application.Run` a esta: `Application.Run(new Navigation());`
 
 Si usa Visual Basic, en **el Explorador de soluciones**, abra el **propiedades** ventana, seleccione el **aplicación** pestaña y, a continuación, seleccione  **SimpleDataApp.Navigation** en el **formulario de inicio** lista.
 
@@ -231,7 +231,7 @@ Para completar la lógica del formulario FillOrCancel, siga estos pasos.
 
 ## <a name="test-your-application"></a>Probar la aplicación
 
-Seleccione el **F5** clave para compilar y probar la aplicación después del código de cada controlador de eventos Click y, a continuación, después de terminar la codificación.
+Seleccione la tecla **F5** para compilar y probar la aplicación después del código de cada controlador del evento Click y, a continuación, después de haber terminado la programación.
 
 ## <a name="see-also"></a>Vea también
 

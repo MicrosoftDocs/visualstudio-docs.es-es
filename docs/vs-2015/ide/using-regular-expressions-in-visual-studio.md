@@ -1,5 +1,5 @@
 ---
-title: Usar expresiones regulares en Visual Studio | Microsoft Docs
+title: Uso de expresiones regulares
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -24,14 +24,14 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0cf59b1061b6312a1c2881ff4dccdf03e5c502b4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 90639e9f3f24a7985255e0a7ea42e303b9917739
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906720"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059436"
 ---
-# <a name="use-regular-expressions-in-visual-studio"></a>Usar expresiones regulares en Visual Studio
+# <a name="use-regular-expressions-in-visual-studio"></a>Uso de expresiones regulares en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 Visual Studio usa expresiones regulares de .NET Framework para buscar y reemplazar texto. Para obtener más información sobre las expresiones regulares de .NET, consulte [Expresiones regulares de .NET Framework](http://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d).
 
@@ -41,7 +41,7 @@ En las versiones previas a Visual Studio 2012, se usaba una sintaxis de expresio
 > En sistemas operativos Windows, la mayoría de las líneas terminan en “\r\n” (un retorno de carro seguido de una nueva línea). Estos caracteres no se ven, pero están presentes en el editor y se pasan al servicio de expresiones regulares de .NET.
 
 > [!TIP]
-> Para obtener información sobre las expresiones regulares que se usan en patrones de reemplazo, consulte [Sustituciones](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Para usar un grupo de captura numerado, la sintaxis es `$1` para especificar el grupo numerado y `(x)` para especificar el grupo en cuestión. Por ejemplo, la expresión regular agrupada `(\d)([a-z])` encuentra cuatro coincidencias en la siguiente cadena: **1a 2b 3c 4d**. La cadena de reemplazo `z$1` convierte esa cadena a **z1 z2 z3 z4**.
+> Para obtener información sobre las expresiones regulares que se usan en patrones de reemplazo, consulte [Sustituciones](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Para usar un grupo de captura numerado, la sintaxis es `$1` para especificar el grupo numerado y `(x)` para especificar el grupo en cuestión. Por ejemplo, la expresión regular agrupada `(\d)([a-z])` encuentra cuatro coincidencias en la siguiente cadena: **1a 2b 3C 4D**. La cadena de reemplazo `z$1` convierte esa cadena a **z1 z2 z3 z4**.
 
 ## <a name="regular-expression-examples"></a>Ejemplos de expresiones regulares
 
@@ -52,7 +52,7 @@ A continuación se muestran algunos ejemplos:
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                                                                                  Coincidencia con cualquier carácter (excepto un salto de línea)                                                                                                   |                                                         .                                                          |                                     `a.o` coincide con "aro" en "around" y "abo" en "about", pero no con "acro" en "across".                                      |
 |                                                                          Coincidencia con cero o más apariciones de la expresión anterior (coincidencias con tantos caracteres como sea posible)                                                                          |                                                         \*                                                         |                                            `a*r` coincide con "r" en "rack", "ar" en "ark" y "aar" en "aardvark".                                            |
-|                                                                                                Coincide con cualquier carácter cero o más veces (carácter comodín \*)                                                                                                 |                                                        .\*                                                         |                                        c.\*e coincide con "cke" en "racket", "comme" en "comment" y "code" en "code"                                        |
+|                                                                                                Coincidencia con cualquier carácter cero o más veces (carácter comodín \*)                                                                                                 |                                                        .\*                                                         |                                        c.\*e coincide con "cke" en "racket", "comme" en "comment", y "code" en "code"                                        |
 |                                                                          Coincidencia con una o más apariciones de la expresión anterior (coincidencia con tantos caracteres como sea posible)                                                                           |                                                         +                                                          |                                                      `e.+e` coincide con "eede" en "feeder", pero no con "ee".                                                      |
 |                                                                                                 Coincidencia con cualquier carácter una o más veces (carácter comodín ?)                                                                                                  |                                                         .+                                                         |                                                       e.+e coincide con “eede” en “feeder”, pero no con “ee”.                                                       |
 |                                                                          Coincidencia con cero o más apariciones de la expresión anterior (coincidencia con el menor número de caracteres posible)                                                                           |                                                        \*?                                                         |                                                     `e.*?e` coincide con "ee" en "feeder", pero no con "eede".                                                      |
@@ -78,4 +78,3 @@ A continuación se muestran algunos ejemplos:
 |                                                                                                            Coincidir con una cadena entre comillas                                                                                                             |                                             ((\\".+?\\")&#124;('.+?'))                                             |                                                    Coincide con cualquier cadena entre comillas simples o dobles.                                                     |
 |                                                                                                             Coincidir con un número hexadecimal                                                                                                              |                                              \b0[xX]([0-9a-fA-F]\)\b                                               |                                                          Coincide con “0xc67f”, pero no con “0xc67fc67f”.                                                           |
 |                                                                                                             Coincidir con enteros y decimales                                                                                                             |                                               \b[0-9]\*\\.\* [0-9] + \b                                               |                                                                     Coincide con “1.333”.                                                                      |
-

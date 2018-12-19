@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2987df6c8ed8a26c2cf95020e26f67c36721d676
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c23e7c7f6a6de9912a9c886f3eeba91208ae0ee6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672787"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942223"
 ---
 # <a name="walkthrough-build-an-application"></a>Tutorial: Compilar una aplicación
 
@@ -100,7 +100,7 @@ Es posible ocultar temporalmente determinados mensajes de advertencia durante un
 
 1. Elija la página **Compilación** y, después, en el cuadro **Suprimir advertencias**, especifique el número de advertencia **0168**.
 
-     ![Página Compilación, Diseñador de proyectos](../ide/media/buildwalk_csharpsuppresswarnings.png)
+     ![Página Compilación, Diseñador de proyectos](../ide/media/buildwalk_csharpsupresswarnings.png)
 
      Para obtener más información, consulte [Compilar (Página, Diseñador de proyectos) (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
@@ -120,7 +120,7 @@ Es posible ocultar temporalmente determinados mensajes de advertencia durante un
 
 3. En la página **Compilación**, active la casilla **Deshabilitar todas las advertencias**.
 
-     ![Página Compilar, Diseñador de proyectos](../ide/media/buildwalk_vbsuppresswarnings.png)
+     ![Página Compilar, Diseñador de proyectos](../ide/media/buildwalk_vbsupresswarnings.png)
 
      Para obtener más información, vea [Configurar advertencias en Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
@@ -225,5 +225,5 @@ Para obtener más información, consulte [Cómo: Cambiar el directorio de result
 ## <a name="see-also"></a>Vea también
 
 - [Tutorial: Compilar un proyecto (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
-- [Información general sobre la precompilación de proyectos de aplicación web ASP.NET](/previous-versions/aspnet/aa983464\(v\=vs.110\))
+- [Información general sobre la precompilación de proyectos de aplicación web ASP.NET](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
 - [Tutorial: Usar MSBuild](../msbuild/walkthrough-using-msbuild.md)

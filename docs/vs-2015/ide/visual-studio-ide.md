@@ -1,6 +1,6 @@
 ---
-title: IDE de Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Visual Studio 2015 | Microsoft Docs
+titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 327de2e75b089e7ba836837c3c29c0d92d9ad864
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c6bd4e34e25add01de6e6e54c2439c2ca80ccf33
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852718"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062488"
 ---
 # <a name="visual-studio-ide"></a>IDE de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ Microsoft Visual Studio 2015 es un conjunto de herramientas para crear software,
 
 Puede usar Visual Studio para crear muchos tipos de aplicaciones, desde sencillas aplicaciones y juegos de la Tienda para clientes móviles, hasta sistemas grandes y complejos para empresas y centros de datos. Puede crear:
 
-- Aplicaciones y juegos que se ejecutan no solo en Windows, pero también iOS y Android.
+- aplicaciones y juegos que se ejecutan no solo en Windows, sino también en Android y en iOS;
 
-- Los sitios Web y servicios web basados en ASP.NET, JQuery, AngularJS y otros entornos populares.
+- sitios web y servicios web basados en ASP.NET, JQuery, AngularJS y otros entornos populares;
 
-- Aplicaciones para plataformas y dispositivos tan diversos como Azure, Office, Sharepoint, Hololens, Kinect y Internet de las cosas, por nombrar solo unos pocos ejemplos.
+- aplicaciones para dispositivos y plataformas tan diversas como Azure, Office, SharePoint, Hololens, Kinect e Internet de las cosas, por nombrar solo algunos ejemplos;
 
-- Juegos y aplicaciones de gráficos para una variedad de dispositivos de Windows, incluido Xbox, con DirectX.
+- juegos y aplicaciones con gráficos avanzados para una variedad de dispositivos Windows, incluido Xbox, con DirectX.
 
 De forma predeterminada, Visual Studio proporciona compatibilidad con C#, C y C++, JavaScript, F# y Visual Basic. Visual Studio funciona y se integra bien con aplicaciones de terceros como Unity a través de la extensión [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) , y Apache Cordova a través de [Visual Studio Tools para Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42). Puede extender Visual Studio usted mismo creando herramientas personalizadas que realizan tareas especializadas.
 
@@ -42,7 +42,7 @@ Si desea obtener información sobre las nuevas características de Visual Studio
 ## <a name="visual-studio-setup"></a>Instalación de Visual Studio
  Puede averiguar qué edición de Visual Studio es adecuada para usted en [Ediciones de Visual Studio](http://www.visualstudio.com/products/visual-studio-with-msdn-overview-vs).
 
- Puede instalar Visual Studio 2015 descargándolo en [Descargas de Visual Studio](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). Si necesita más información sobre el proceso de instalación, consulte [instalar Visual Studio 2015](../install/install-visual-studio-2015.md).
+ Puede instalar Visual Studio 2015 descargándolo en [Descargas de Visual Studio](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). Si necesita más información sobre el proceso de instalación, vea [Instalación de Visual Studio 2015](../install/install-visual-studio-2015.md).
 
 ## <a name="ide-basics"></a>Conceptos básicos del IDE
  La siguiente imagen muestra el IDE de Visual Studio con un proyecto abierto, la ventana Explorador de soluciones para desplazarse por los archivos de proyecto y la ventana de Team Explorer para navegar por el código fuente y controlar los elementos de trabajo. A continuación se explican con más detalle las características de la barra de título mencionadas.
@@ -62,7 +62,7 @@ Si desea obtener información sobre las nuevas características de Visual Studio
 
  ![Resultados de inicio rápido para "nuevo proyecto"](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
 
- MSDN es el sitio web de documentación técnica; en este momento está leyendo esta página en MSDN. En Visual Studio, puede presionar **F1** para ir a la página de ayuda de MSDN de la ventana activa. También puede presionar **F1** en el editor de código para ir a la página de ayuda de MSDN para la API o la palabra clave que está en la posición actual del símbolo de intercalación. Por ejemplo, en un archivo de C#, coloque el símbolo de intercalación en algún lugar dentro o al final de un `System.String` declaración y presione **F1** para ir a la página de ayuda MSDN para <xref:System.String>.
+ MSDN es el sitio web de documentación técnica; en este momento está leyendo esta página en MSDN. En Visual Studio, puede presionar **F1** para ir a la página de ayuda de MSDN de la ventana activa. También puede presionar **F1** en el editor de código para ir a la página de ayuda de MSDN para la API o la palabra clave que está en la posición actual del símbolo de intercalación. Por ejemplo, en un archivo de C#, podría colocar el símbolo de intercalación en algún lugar dentro o al final de una declaración `System.String` y, después, presionar **F1** para ir a la página de ayuda de MSDN de <xref:System.String>.
 
 ### <a name="giving-feedback"></a>Enviar comentarios
  Es fácil enviar comentarios sobre Visual Studio siempre que quiera. Haga clic en el icono de comentarios de la barra de título junto a **Inicio rápido** y, después, haga clic en **Notificar un problema** u **Ofrecer una sugerencia**. Las ediciones preliminares de Visual Studio también tienen una opción para **Calificar este producto** . Consultamos todos estos comentarios y los usamos para mejorar el producto. Para obtener más información, consulta [Talk to Us](../ide/talk-to-us.md).
@@ -114,7 +114,7 @@ Si desea obtener información sobre las nuevas características de Visual Studio
 
  ![GreetingsConsoleApp.cpp en el editor de código](../ide/media/c-ide-editorlinenumberswordwrapon.png "IDE_EditorLineNumbersWordWrapOn C ++")
 
- El editor de texto es sumamente interactivo (si quiere que lo sea) con muchas características de productividad que le ayudarán a escribir código mejor y más rápidamente. Las características varían según el lenguaje y no tiene que usar todas ellas. Escriba "Editor" en Inicio rápido para activar o desactivar características. Algunas de las características de productividad más comunes son:
+ El editor de texto es sumamente interactivo (si quiere que lo sea) con muchas características de productividad que le ayudarán a escribir código mejor y más rápidamente. Las características varían según el lenguaje y no tiene que usar cualquiera de ellos (escriba "Editor" en el inicio rápido) para activar o desactivar las características: Algunas de las características de productividad comunes son:
 
 1. [Refactoring](../ide/refactoring-in-visual-studio.md) incluye operaciones tales como el cambio inteligente de nombre de las variables, mover líneas seleccionadas de código a una función diferente, mover código a otras ubicaciones, reordenar los parámetros de una función y mucho más.
 
@@ -146,7 +146,7 @@ Si desea obtener información sobre las nuevas características de Visual Studio
 
 Compilar un proyecto significa compilar el código fuente y realizar los pasos necesarios para generar el archivo ejecutable. Los distintos lenguajes tienen operaciones de compilación diferentes y los sitios web normales no se compilan. Independientemente del tipo de proyecto, el menú Compilar es la ubicación estándar de estos comandos. Para compilar y ejecutar el código con una sola pulsación de tecla, presione F5. Cada compilador se puede configurar totalmente mediante el IDE. La barra de herramientas Compilar permite especificar si se va a compilar una versión de depuración del programa, con símbolos y comprobación de errores adicional habilitados para admitir puntos de interrupción y ejecución paso a paso en el depurador, o una compilación de versión, que es lo que finalmente proporcionará a los clientes. Puede configurar más opciones de compilación y muchas otras opciones en la página de propiedades de un proyecto. Haga clic con el botón secundario en el nodo de proyecto en el Explorador de soluciones y elija Propiedades. También puede ejecutar compilaciones desde la línea de comandos.
 
-La salida de la compilación, incluidos los mensajes de error o éxito, aparecen en la **salida** ventana. El **lista de errores** muestra información detallada sobre los errores de compilación.
+La salida de la compilación, incluidos los mensajes de error o éxito, aparecen en la ventana **Salida**. El **lista de errores** muestra información detallada sobre los errores de compilación.
 
 ## <a name="debugging-your-code"></a>Depurar el código
  El vanguardista depurador de Visual Studio le permite depurar el código que se ejecuta en su proyecto local, en un dispositivo remoto o en un emulador, como los de Android o Windows Phone. Puede ejecutar el código instrucción por instrucción e inspeccionar las variables en cada paso, puede ejecutar paso a paso aplicaciones multiproceso y puede establecer puntos de interrupción que solo se producen cuando se cumple una condición especificada. Todo esto se puede configurar en el propio editor de código para que no tenga que salir del contexto del código.
@@ -196,7 +196,7 @@ La salida de la compilación, incluidos los mensajes de error o éxito, aparecen
 |||
 |-|-|
 |[Cuentas de usuario y actualizaciones](../ide/user-accounts-and-updates.md)|[Personalizar el IDE](../ide/personalizing-the-visual-studio-ide.md)|
-|[Cómo: moverse por el IDE de Visual Studio](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Introducción al desarrollo con Visual Studio](../ide/get-started-developing-with-visual-studio.md)|
+|[Cómo: moverse por el IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Introducción al desarrollo con Visual Studio](../ide/get-started-developing-with-visual-studio.md)|
 |[Buscar y usar extensiones de Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)|[Soluciones y proyectos](../ide/solutions-and-projects-in-visual-studio.md)|
 |[Escribir código](../ide/writing-code-in-the-code-and-text-editor.md)|[Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md)|
 |[Herramientas de generación de perfiles](../profiling/profiling-tools.md)|[Mejorar la calidad del código](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|
@@ -204,12 +204,12 @@ La salida de la compilación, incluidos los mensajes de error o éxito, aparecen
 |[Compilar y generar en Visual Studio](../ide/compiling-and-building-in-visual-studio.md)|[Implementar aplicaciones, servicios y componentes](../deployment/deploying-applications-services-and-components.md)|
 |[Compatibilidad de 64 bits del IDE de Visual Studio](../ide/visual-studio-ide-64-bit-support.md)|[Seguridad](../ide/security-in-visual-studio.md)|
 |[Ejemplos de Visual Studio](../ide/visual-studio-samples.md)|[Visor de Ayuda de Microsoft](../ide/microsoft-help-viewer.md)|
-|[Globalizar y localizar aplicaciones](../ide/globalizing-and-localizing-applications.md)|[Referencia de interfaz de usuario](../ide/reference/general-user-interface-elements-visual-studio.md)|
+|[Globalizar y localizar aplicaciones](../ide/globalizing-and-localizing-applications.md)|[Referencia de la interfaz de usuario](../ide/reference/general-user-interface-elements-visual-studio.md)|
 
 ## <a name="see-also"></a>Vea también
 
 - [Instalación de Visual Studio 2015](../install/install-visual-studio-2015.md)
-- [Edición de código](https://www.visualstudio.com/features/ide-vs)
+- [Edición del código](https://www.visualstudio.com/features/ide-vs)
 - [Novedades de Visual Studio 2015](../what-s-new-in-visual-studio-2015.md)
 - [Portar, migrar y actualizar proyectos de Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
 - [Hable con nosotros](../ide/talk-to-us.md)

@@ -1,5 +1,5 @@
 ---
-title: Referencia de plantillas de Visual Studio | Microsoft Docs
+title: Referencia de plantillas | Microsoft Docs
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,36 +17,30 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 825bc17d12b7a688e17a5957996b9fa9a1484e38
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: 90fabf75d3e36d635a512a925e8ec32895b03ef2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249943"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059926"
 ---
 # <a name="visual-studio-template-reference"></a>Referencia de plantillas de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Los siguientes vínculos proporcionan información de referencia sobre los distintos aspectos de las plantillas de proyecto y de elementos de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
-  
-## <a name="in-this-section"></a>En esta sección  
- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)  
- Describe los elementos XML usados en los archivos .vstemplate.  
-  
- [Parámetros de plantilla](../ide/template-parameters.md)  
- Describe los parámetros disponibles para las plantillas de proyecto y de elemento.  
-  
- <xref:Microsoft.VisualStudio.TemplateWizard>  
- Describe la interfaz <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> y los tipos relacionados.  
-  
-## <a name="related-sections"></a>Secciones relacionadas  
- [Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md)  
-  
- [Cómo: Crear plantillas de elementos](../ide/how-to-create-item-templates.md)  
-  
- [Personalizar plantillas](../ide/customizing-project-and-item-templates.md)  
-  
- [Cómo: Crear Starter Kits](../ide/how-to-create-starter-kits.md)
+Los siguientes vínculos proporcionan información de referencia sobre los distintos aspectos de las plantillas de proyecto y de elementos de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
+## <a name="in-this-section"></a>En esta sección
+ [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md) describe los elementos XML utilizados en los archivos .vstemplate.
 
+ [Parámetros de plantilla](../ide/template-parameters.md) se describen los parámetros disponibles para las plantillas de proyecto y elemento.
 
+ <xref:Microsoft.VisualStudio.TemplateWizard> describe la interfaz <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> y los tipos relacionados.
+
+## <a name="related-sections"></a>Secciones relacionadas
+ [Cómo: crear plantillas de proyecto](../ide/how-to-create-project-templates.md)
+
+ [Cómo: crear plantillas de elemento](../ide/how-to-create-item-templates.md)
+
+ [Personalizar plantillas](../ide/customizing-project-and-item-templates.md)
+
+ [Cómo: crear Starter Kits](../ide/how-to-create-starter-kits.md)

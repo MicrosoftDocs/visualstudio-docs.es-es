@@ -1,6 +1,7 @@
 ---
-title: Ver los archivos DLL y ejecutables en la ventana módulos | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Ver los archivos DLL y ejecutables
+titleSuffix: Visual Studio Modules window
+ms.custom: seodec18
 ms.date: 11/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -25,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33a09fe01157e0e3f5493568437c1499f2831bdb
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 2702eb38e895f5fa9021fae754ae1e4a9325cf18
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257295"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066787"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>Ver los archivos DLL y ejecutables en la ventana Módulos (C#, C++, Visual Basic, F#)
  
@@ -43,7 +44,7 @@ Durante la depuración de Visual Studio, el **módulos** ventana enumera y muest
 
 Para abrir la ventana módulos, durante la depuración, seleccione **depurar** > **Windows** > **módulos**. 
   
-De forma predeterminada, el **módulos** ventana ordena los módulos por orden de carga. Para ordenar por cualquier columna de la ventana, seleccione el encabezado en la parte superior de la columna.  
+De forma predeterminada, la ventana **Módulos** ordena los módulos por orden de carga. Para ordenar por cualquier columna de la ventana, seleccione el encabezado en la parte superior de la columna.  
   
 ## <a name="load-symbols"></a>Cargar símbolos  
 
@@ -63,7 +64,7 @@ El **estado del símbolo** columna en el **módulos** ventana muestra qué módu
 
 **Para cambiar la configuración del comportamiento de carga de símbolos:**  
 
-1. En el **módulos** ventana, haga clic en cualquier módulo.  
+1. En la ventana **Módulos**, haga clic con el botón derecho en cualquier módulo.  
    
 1. Seleccione **Lores**.  
   
@@ -73,11 +74,11 @@ El **estado del símbolo** columna en el **módulos** ventana muestra qué módu
   
 **Para cambiar el comportamiento de un módulo específico de carga de símbolos:**  
 
-1.  En el **módulos** ventana, haga clic en el módulo.  
+1.  En la ventana **Módulos**, haga clic con el botón derecho en el módulo.  
 
 1.  En el menú contextual, seleccione o deseleccione **siempre carga automáticamente**. Los cambios surten efecto en la siguiente sesión de depuración.  
   
 ## <a name="see-also"></a>Vea también  
- [Interrumpir la ejecución](/previous-versions/visualstudio/visual-studio-2010/7z9se2d8(v=vs.100))   
- [Visualización de datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
- [Especificar archivos de código fuente y símbolos (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+ [Interrupción de la ejecución](/previous-versions/visualstudio/visual-studio-2010/7z9se2d8(v=vs.100))   
+ [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
+ [Especificación de archivos de código fuente y símbolos (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

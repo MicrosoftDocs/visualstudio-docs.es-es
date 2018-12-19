@@ -1,6 +1,6 @@
 ---
-title: Usar archivos de volcado de memoria en el depurador de Visual Studio | Microsoft Docs
-ms.custom: H1HackMay2017
+title: Usar archivos de volcado de memoria en el depurador | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/05/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74935071dcba3ab145f17f594fd22491271e39c6
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
-ms.translationtype: MT
+ms.openlocfilehash: 3e30f9d29ba3c922d70c8acdf7d4db5d8a1670fd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296143"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066959"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Archivos de volcado de memoria en el depurador de Visual Studio
 
@@ -50,9 +50,9 @@ El depurador de Visual Studio puede guardar archivos de volcado de memoria de c�
 
 -   Visual Studio no puede depurar archivos de volcado guardados en el antiguo [volcado completo en modo usuario](/windows/desktop/wer/collecting-user-mode-dumps) formato. Un volcado completo en modo usuario no es igual que un volcado de memoria con montón.
 
--   La depuración de archivos de volcado de memoria de código optimizado puede resultar confusa. Por ejemplo, alineación de las funciones del compilador puede dar lugar a pilas de llamadas inesperadas y otras optimizaciones podrían cambiar la duración de las variables.
+-   La depuración de archivos de volcado de memoria de código optimizado puede resultar confusa. Por ejemplo, la inclusión en línea de funciones por parte del compilador puede dar lugar a pilas de llamadas inesperadas y otras optimizaciones podrían cambiar la duración de las variables.
 
-##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> Archivos de volcado de memoria con o sin montones
+##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> Archivos de volcado de memoria, con o sin montones
 
 Archivos de volcado de memoria pueden tengan o no información del montón.
 
@@ -60,13 +60,13 @@ Archivos de volcado de memoria pueden tengan o no información del montón.
 
 -   **Archivos sin montones de volcado** son mucho menores que los volcados de memoria con montones, pero el depurador debe cargar los archivos binarios de aplicación para buscar información de símbolos. Los archivos binarios cargados deben coincidir exactamente con el que se ejecutan durante la creación del volcado de memoria. Archivos de volcado de memoria sin montones guardan los valores de las variables de pila.
 
-##  <a name="BKMK_Create_a_dump_file"></a> Cree un archivo de volcado de memoria
+##  <a name="BKMK_Create_a_dump_file"></a> Crear un archivo de volcado de memoria
 
 Mientras se depura un proceso en Visual Studio, puede guardar un volcado de memoria cuando el depurador se ha detenido en una excepción o un punto de interrupción. 
 
 Con [depuración Just](../debugger/just-in-time-debugging-in-visual-studio.md) habilitado, puede asociar el depurador de Visual Studio a un proceso bloqueado fuera de Visual Studio y, a continuación, guardar un archivo de volcado de memoria desde el depurador. Consulte [adjuntar a procesos en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
-**Para guardar un archivo de volcado:**
+**Para guardar un archivo de volcado de memoria:**
 
 1. Mientras está detenido en un punto de interrupción o un error durante la depuración, seleccione **depurar** > **Guardar volcado como**. 
 
@@ -75,13 +75,13 @@ Con [depuración Just](../debugger/just-in-time-debugging-in-visual-studio.md) h
 1. Busque una ruta de acceso y seleccione un nombre para el archivo de volcado de memoria y, a continuación, seleccione **guardar**. 
 
 >[!NOTE]
->Puede crear archivos de volcado de memoria con cualquier programa que admita el formato de minivolcado de Windows. Por ejemplo, el **Procdump** utilidad de línea de comandos de [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) puede crear archivos de volcado de bloqueo de proceso basados en desencadenadores o a petición. Consulte [requisitos y limitaciones](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) para obtener información sobre cómo usar otras herramientas para crear archivos de volcado de memoria.
+>Puede crear archivos de volcado de memoria con cualquier programa que admita el formato de minivolcado de Windows. Por ejemplo, la utilidad de línea de comandos **Procdump** de [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) puede crear archivos de volcado de memoria correspondientes a bloqueos de procesos basados en desencadenadores o a petición. Consulte [requisitos y limitaciones](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) para obtener información sobre cómo usar otras herramientas para crear archivos de volcado de memoria.
 
 ##  <a name="BKMK_Open_a_dump_file"></a> Abrir un archivo de volcado de memoria
 
 1. En Visual Studio, seleccione **archivo** > **abierto** > **archivo**.
 
-1. En el **abrir archivo** diálogo cuadro, busque y seleccione el archivo de volcado. Normalmente, tendrá un *.dmp* extensión. Seleccione **Aceptar**.
+1. En el cuadro de diálogo **Abrir archivo**, busque y seleccione el archivo de volcado de memoria. Normalmente, tendrá la extensión *.dmp*. Seleccione **Aceptar**.
 
    El **resumen del archivo de minivolcado** ventana muestra información de resumen y el módulo para el archivo de volcado de memoria y las acciones que puede realizar.
 
@@ -96,7 +96,7 @@ Con [depuración Just](../debugger/just-in-time-debugging-in-visual-studio.md) h
 Para usar las características de un archivo de volcado de depuración completa Visual Studio necesita:
 
 - El *.exe* se creó el volcado de memoria para el archivo y otros archivos binarios (archivos DLL, etc.) que utiliza el proceso de volcado de memoria.
-- Símbolo (*.pdb*) los archivos de la *.exe* y otros archivos binarios.
+- Archivos de símbolos (*.pdb*) del archivo *.exe* y otros archivos binarios.
 - El *.exe* y *.pdb* archivos que coincidan con la versión y compilación de los archivos en la creación de volcado de memoria.
 - Archivos de origen para los módulos correspondientes. Puede usar el desensamblado de los módulos si no encuentra los archivos de origen.
 
@@ -112,10 +112,10 @@ Visual Studio busca automáticamente en estas ubicaciones para *.exe* archivos q
 
 ### <a name="use-the-no-binary-no-symbols-or-no-source-found-pages"></a>Use las páginas No binarias, No se cargaron símbolos o se encontró ningún origen
 
-Si Visual Studio no encuentra los archivos que necesita depurar un módulo en el volcado de memoria, muestra un **se encontró ningún binario**, **No se encontraron símbolos**, o **se encontró ningún origen** página. Estas páginas proporcionan información detallada sobre la causa del problema y proporcionan vínculos de acción que pueden ayudarle a localizar los archivos. Consulte [especificar archivos de código fuente y símbolos (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+Si Visual Studio no encuentra los archivos que necesita depurar un módulo en el volcado de memoria, muestra un **se encontró ningún binario**, **No se encontraron símbolos**, o **se encontró ningún origen** página. Estas páginas proporcionan información detallada sobre la causa del problema y proporcionan vínculos de acción que pueden ayudarle a localizar los archivos. Consulte [Specify symbol (.pdb) and source files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) (Especificación de símbolo (.pdb) y archivos de origen).
 
 ## <a name="see-also"></a>Vea también
 
 - [Depuración Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md)
-- [Especificar archivos de código fuente y símbolos (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [Especificación de archivos de código fuente y símbolos (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [IntelliTrace](../debugger/intellitrace.md)
