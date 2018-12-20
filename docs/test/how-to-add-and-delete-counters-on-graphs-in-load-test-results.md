@@ -1,5 +1,5 @@
 ---
-title: Adición y eliminación de contadores de los gráficos de resultados de pruebas de carga en Visual Studio
+title: Adición y eliminación de contadores de los gráficos de resultados de pruebas de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 21fa28e9ff149bcf117e3bde5d553a2cf641c04a
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c4cb68370a743381a13b88c8a5fdc7d61700cb17
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896528"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049955"
 ---
-# <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Cómo: Agregar y eliminar contadores de los gráficos de resultados de pruebas de carga
+# <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Procedimiento para agregar y eliminar contadores de los gráficos de resultados de pruebas de carga
 
 Puede usar el panel **Contadores** para agregar contadores de rendimiento a un gráfico.
 
@@ -30,7 +30,7 @@ Puede usar el panel **Contadores** para agregar contadores de rendimiento a un g
 
 **Consideraciones sobre el intervalo de muestreo de los contadores de rendimiento**
 
-Elija un valor para la propiedad **Frecuencia de muestreo** en los parámetros de ejecución de pruebas de carga según la duración de la prueba de carga. Una velocidad de muestra menor, como el valor predeterminado de cinco segundos, necesita más espacio en la base de datos de resultados de pruebas de carga. En el caso de pruebas de carga más largas, el incremento de la velocidad de muestra reduce la cantidad de datos recopilados. Para más información, vea [Cómo: Especificar la velocidad de muestra de los parámetros de ejecución de pruebas de carga](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+Elija un valor para la propiedad **Frecuencia de muestreo** en los parámetros de ejecución de pruebas de carga según la duración de la prueba de carga. Una velocidad de muestra menor, como el valor predeterminado de cinco segundos, necesita más espacio en la base de datos de resultados de pruebas de carga. En el caso de pruebas de carga más largas, el incremento de la velocidad de muestra reduce la cantidad de datos recopilados. Para obtener más información, vea [Cómo: Especificar la frecuencia de muestreo](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
 
 He aquí algunas instrucciones sobre las velocidades de muestra:
 
@@ -49,7 +49,7 @@ Hay dos opciones para habilitar la propiedad **Almacenamiento de detalles de tie
 
 La cantidad de espacio necesario en el repositorio de resultados de pruebas de carga para almacenar los detalles de tiempo podría ser muy grande, sobre todo si se trata de pruebas de carga de ejecución prolongada. Además, se tarda más tiempo en almacenar estos datos en dicho repositorio al final de la prueba de carga, puesto que los datos se almacenan en los agentes de prueba de carga hasta que finaliza la ejecución. Cuando la prueba de carga termina, los datos se almacenan en el repositorio. De forma predeterminada, la propiedad **Almacenamiento de detalles de tiempo** está habilitada. Si esto supone algún problema para el entorno de pruebas, puede establecer **Almacenamiento de detalles de tiempo** en **Ninguno**.
 
-Para más información, vea [Cómo: Especificar la propiedad Almacenamiento de detalles de tiempo para el parámetro de ejecución de una prueba de carga](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
+Para obtener más información, vea [Cómo: Especificar la propiedad Almacenamiento de detalles de tiempo](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 ## <a name="to-display-a-particular-performance-counter-on-a-load-test-graph"></a>Para mostrar un contador determinado en un gráfico de prueba de carga
 

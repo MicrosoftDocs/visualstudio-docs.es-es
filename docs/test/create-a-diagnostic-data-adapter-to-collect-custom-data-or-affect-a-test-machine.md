@@ -1,5 +1,5 @@
 ---
-title: Creación de un adaptador de datos de diagnóstico para pruebas en Visual Studio
+title: Creación de un adaptador de datos de diagnóstico para pruebas
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 788c5f24b2e3f965d93b645d024f29a6e0d6e7ea
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 67eb1a1128a811868db97dfc682c7b4eec7b2c61
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52893850"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068074"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>Crear un adaptador de datos de diagnóstico para recopilar datos personalizados o afectar a un equipo de prueba
 
@@ -34,8 +34,8 @@ Use los temas siguientes como ayuda para crear adaptadores de datos de diagnóst
 
 |Tareas|Temas relacionados|
 |-|-----------------------|
-|**Crear un adaptador de datos de diagnóstico:** para crear un adaptador de datos de diagnóstico, se crea una biblioteca de clases y, a continuación, se usan las API del adaptador de datos de diagnóstico para recopilar la información que se desea o para impactar en un sistema de pruebas que se está usando para ejecutar las pruebas.|-   [Cómo: Crear un adaptador de datos de diagnóstico](../test/how-to-create-a-diagnostic-data-adapter.md)|
-|**Seleccionar un adaptador de datos de diagnóstico personalizado para usar durante la ejecución de las pruebas:** en su configuración de pruebas puede seleccionar qué adaptador de datos de diagnóstico desea usar durante la ejecución de las pruebas.|-   [Collect diagnostic data while testing (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts) [Recopilar datos de diagnóstico durante las pruebas (Azure Test Plans)]<br />-   [Collect diagnostic data in manual tests (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts) [Recopilar datos de diagnóstico en pruebas manuales (Azure Test Plans)]|
+|**Creación de un adaptador de datos de diagnóstico:** Para crear un adaptador de datos de diagnóstico, se crea una biblioteca de clases y, después, se usan las API del adaptador de datos de diagnóstico para recopilar la información que se quiere o para impactar en un sistema de pruebas que se está usando para ejecutar las pruebas.|-   [Cómo: Crear un adaptador de datos de diagnóstico](../test/how-to-create-a-diagnostic-data-adapter.md)|
+|**Selección de un adaptador de datos de diagnóstico personalizado para usar durante la ejecución de las pruebas:** En la configuración de pruebas, se puede seleccionar el adaptador de datos de diagnóstico que se va a usar durante la ejecución de las pruebas.|-   [Collect diagnostic data while testing (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts) [Recopilar datos de diagnóstico durante las pruebas (Azure Test Plans)]<br />-   [Collect diagnostic data in manual tests (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts) [Recopilar datos de diagnóstico en pruebas manuales (Azure Test Plans)]|
 
 ## <a name="see-also"></a>Vea también
 

@@ -1,5 +1,5 @@
 ---
-title: Plantillas de Visual Studio para proyectos y archivos
+title: Plantillas para proyectos y archivos
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 62e51a5a03011874acc723eaf159e3f7130d1340
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 04aa647d378e956c7a2394b7c3fc2a187a7c5963
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573263"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049291"
 ---
 # <a name="project-and-item-templates"></a>Plantillas de proyecto y elemento
 
@@ -29,7 +29,7 @@ Al instalar Visual Studio, se instalan una serie de plantillas de proyecto y ele
 
 Estas plantillas proporcionan a los usuarios un punto de partida para empezar a crear proyectos o ampliar proyectos actuales. Las plantillas de proyecto proporcionan los archivos necesarios para un tipo de proyecto determinado, incluyen referencias de ensamblado estándar y establecen propiedades de proyecto y opciones de compilador predeterminadas. Las plantillas de elemento pueden abarcar desde un único archivo vacío con una determinada extensión de archivo hasta varios archivos de código fuente con código auxiliar, archivos de información de diseñador y recursos incrustados.
 
-Puede usar las plantillas instaladas en los cuadros de diálogo **Nuevo proyecto** y **Agregar nuevo elemento**, crear sus propias plantillas o descargar y utilizar plantillas creadas por la comunidad. Para obtener más información, vea [Cómo: Crear plantillas de proyectos](../ide/how-to-create-project-templates.md) y [Cómo: Crear plantillas de elementos](../ide/how-to-create-item-templates.md).
+Puede usar las plantillas instaladas en los cuadros de diálogo **Nuevo proyecto** y **Agregar nuevo elemento**, crear sus propias plantillas o descargar y utilizar plantillas creadas por la comunidad. Para obtener más información, vea [Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md) y [Cómo: Crear plantillas de elemento](../ide/how-to-create-item-templates.md).
 
 ## <a name="contents-of-a-template"></a>Contenido de una plantilla
 
@@ -45,12 +45,12 @@ Cuando estos archivos se comprimen en un archivo *.zip* y se colocan en la carpe
 
 - Las plantillas de elementos aparecen en el cuadro de diálogo **Agregar nuevo elemento**.
 
-Para obtener más información sobre las carpetas de plantillas, vea [Cómo: Buscar y organizar plantillas](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Para obtener más información sobre las carpetas de plantillas, vea [Cómo: Localizar y organizar plantillas](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Vea también
 
 - [Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md)
-- [Cómo: Crear plantillas de elementos](../ide/how-to-create-item-templates.md)
+- [Cómo: Crear plantillas de elemento](../ide/how-to-create-item-templates.md)
 - [Parámetros de plantilla](../ide/template-parameters.md)
 - [Personalizar plantillas](../ide/customizing-project-and-item-templates.md)
 - [Paquetes NuGet en plantillas de Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

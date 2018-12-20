@@ -1,5 +1,5 @@
 ---
-title: Cambio de un nombre de archivo para que coincida con un tipo en Visual Studio
+title: Cambio de un nombre de archivo para que coincida con un tipo
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8407e89d9e28c501358877df9c244175ca8155c8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bfc1a88091fa30bceea15a3f8e1b78df5cc7a87c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942327"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054792"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Refactorización de sincronización de un tipo con un nombre de archivo o de un nombre de archivo con un tipo
 
@@ -27,11 +27,11 @@ Esta refactorización se aplica a lo siguiente:
 
 - Visual Basic
 
-**Qué:** Le permite cambiar el nombre de un tipo para que coincida con el nombre de archivo, o bien cambiar el nombre de un archivo para que coincida con el tipo que contiene.
+**Qué:** Permite cambiar el nombre de un tipo para que coincida con el nombre de archivo, o bien cambiar el nombre de un archivo para que coincida con el tipo que contiene.
 
-**Cuándo:** Ha cambiado el nombre un archivo o un tipo y aún no ha actualizado aún el archivo o el tipo correspondiente para que coincidan.
+**Cuándo:** Se ha cambiado el nombre de un archivo o un tipo, y aún no se ha actualizado el archivo o el tipo correspondiente para que coincidan.
 
-**Por qué:** El hecho de colocar un tipo en un archivo con un nombre diferente, o viceversa, dificulta encontrar lo que está buscando. Al cambiar el nombre del tipo o del archivo, es más fácil leer el código y navegar hasta él.
+**Por qué:** La colocación de un tipo en un archivo con otro nombre, o viceversa, dificulta encontrar lo que se busca. Al cambiar el nombre del tipo o del archivo, es más fácil leer el código y navegar hasta él.
 
 ## <a name="how-to"></a>Procedimiento
 
@@ -56,11 +56,11 @@ Esta refactorización se aplica a lo siguiente:
 
    El nombre del tipo o del archivo se cambia.
 
-   - C#: En el siguiente ejemplo, el nombre de archivo **MyClass.cs** se ha cambiado a **MyNewClass.cs** para que coincida con el nombre de tipo.
+   - C#: En el ejemplo siguiente, el nombre de archivo **MyClass.cs** se ha cambiado a **MyNewClass.cs** para que coincida con el nombre de tipo.
 
        ![Resultado de la inserción (C#)](media/synctype-result-cs.png)
 
-   - Visual Basic: En el siguiente ejemplo, el nombre de archivo **Employee.vb** se ha cambiado a **Person.vb** para que coincida con el nombre de tipo.
+   - Visual Basic: En el ejemplo siguiente, el nombre de archivo **Employee.vb** se ha cambiado a **Person.vb** para que coincida con el nombre de tipo.
 
        ![Resultado de la inserción (Visual Basic)](media/synctype-result-vb.png)
 

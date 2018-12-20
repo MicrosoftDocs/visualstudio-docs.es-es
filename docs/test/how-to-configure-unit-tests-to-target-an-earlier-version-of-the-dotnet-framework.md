@@ -1,5 +1,5 @@
 ---
-title: Configuración de pruebas unitarias cuyo destino sea una versión anterior de .NET Framework en Visual Studio
+title: Pruebas unitarias como destino para una versión anterior de .NET Framework
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,14 +9,14 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: dad7589e09ded8994a5e687c4f4cf95283887324
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 7b9032e8a1b6ee796bbea6ce7f7e3f5db7bcd205
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380649"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064736"
 ---
-# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Cómo: Configurar pruebas unitarias cuyo destino sea una versión anterior de .NET Framework
+# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Procedimiento para configurar pruebas unitarias como destino para una versión anterior de .NET Framework
 
 De forma predeterminada, al crear un proyecto de prueba en Microsoft Visual Studio, la versión más reciente de .NET Framework se establece como destino. Además, si actualiza los proyectos de prueba desde las versiones anteriores de Visual Studio, se actualizan para tener la versión más reciente de .NET Framework. Al editar las propiedades del proyecto, puede volver a destinar explícitamente el proyecto a las versiones anteriores de .NET Framework.
 

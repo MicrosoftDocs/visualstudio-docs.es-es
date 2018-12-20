@@ -1,6 +1,6 @@
 ---
 title: Depuración de código de Python
-description: Tutorial sobre las características de depuración de Visual Studio que son específicas del código de Python, incluido el establecimiento de puntos de interrupción, la ejecución paso a paso, la inspección de valores, el examen de excepciones y la depuración en la ventana interactiva.
+description: Visual Studio proporciona depuración enriquecida para código de Python, incluido el establecimiento de puntos de interrupción, la ejecución paso a paso, la inspección de valores, el examen de excepciones y la depuración en la ventana interactiva.
 ms.date: 10/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52869de661d9818252b68271c089f6b04a0b9f00
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 0e4cc2ff43b59fff0aac70d9cc13a0a00662e209
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101165"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068440"
 ---
 # <a name="debug-your-python-code"></a>Depurar el código de Python
 
@@ -87,27 +88,27 @@ Cuando el depurador se detiene, puede inspeccionar y modificar los valores de va
 
 Para ver un valor con **Información sobre datos**, solo tiene que mantener el puntero sobre cualquier variable en el editor. Puede hacer clic en el valor para cambiarlo:
 
-![Información sobre datos del depurador](media/debugging-quick-tips.png)
+![Información sobre datos en el depurador de Visual Studio](media/debugging-quick-tips.png)
 
 La ventana **Automático** (**Depurar** > **Ventanas** > **Automático**) contiene variables y expresiones cercanas a la instrucción actual. Puede hacer doble clic en la columna de valor o seleccionar y presionar **F2** para modificar el valor:
 
-![Ventana Automático en el depurador](media/debugging-autos-window.png)
+![Ventana Automático en el depurador de Visual Studio](media/debugging-autos-window.png)
 
 La ventana **Variables locales** (**Depurar** > **Ventanas** > **Variables locales**) muestra todas las variables que se encuentran en el ámbito actual, que se pueden volver a modificar:
 
-![Ventana Variables locales en el depurador](media/debugging-locals-window.png)
+![Ventana Variables locales en el depurador de Visual Studio](media/debugging-locals-window.png)
 
 Para obtener más información sobre el uso de **Automático** y **Variables locales**, vea [Inspect variables in the Autos and Locals windows](../debugger/autos-and-locals-windows.md) (Inspeccionar las variables en las ventanas Variables locales y Automático).
 
 Las ventanas **Inspección** (**Depurar** > **Ventanas** > **Inspección** > **Inspección 1-4**) permiten especificar expresiones arbitrarias de Python y ver los resultados. Las expresiones se vuelven a evaluar para cada paso:
 
-![Ventana Inspección en el depurador](media/debugging-watch-window.png)
+![Ventana Inspección en el depurador de Visual Studio](media/debugging-watch-window.png)
 
 Para obtener más información sobre el uso de **Inspección**, vea [Set a watch on variables using the Watch and QuickWatch windows](../debugger/watch-and-quickwatch-windows.md) (Establecimiento de una inspección en variables mediante las ventanas Inspección e Inspección rápida).
 
 Al inspeccionar un valor de cadena (`str`, `unicode`, `bytes` y `bytearray` se consideran cadenas para este propósito), aparece un icono de lupa a la derecha del valor. Al hacer clic en este icono, se muestra el valor de cadena sin comillas en un cuadro de diálogo emergente, con las opciones de ajuste y desplazamiento, que resultan útiles para cadenas largas. Además, seleccionar la flecha desplegable en el icono le permite seleccionar texto sin formato y visualizaciones HTML, XML y JSON:
 
-![Visualizadores de cadena](media/debugging-string-visualizers.png)
+![Visualizadores de cadena en el depurador de Visual Studio](media/debugging-string-visualizers.png)
 
 Las visualizaciones HTML, XML y JSON aparecen en ventanas emergentes independientes con resaltado de sintaxis y vistas de árbol.
 
@@ -115,13 +116,13 @@ Las visualizaciones HTML, XML y JSON aparecen en ventanas emergentes independien
 
 Si se produce algún error en su programa durante la depuración, pero no dispone de un controlador de excepciones para él, el depurador se interrumpe en el punto de la excepción:
 
-![Cuadro emergente de excepciones](media/debugging-exception-popup.png)
+![Ventana emergente Excepción en el depurador de Visual Studio](media/debugging-exception-popup.png)
 
 En este punto puede inspeccionar el estado del programa, incluida la pila de llamadas. En cambio, si intenta recorrer el código, la excepción sigue produciéndose hasta que se controle o hasta que el programa se cierre.
 
 El comando de menú **Depurar** > **Ventanas** > **Configuración de excepciones** abre una ventana en la que puede expandir **Excepciones de Python**:
 
-![Ventana de excepciones](media/debugging-exception-settings.png)
+![Ventana Excepciones en el depurador de Visual Studio](media/debugging-exception-settings.png)
 
 La casilla de cada excepción controla si el depurador *siempre* se interrumpe cuando se produce la excepción. Active esta casilla si quiere que las interrupciones sean más frecuentes para una excepción concreta.
 
@@ -133,7 +134,7 @@ Para configurar una excepción que no aparece en esta lista, haga clic en el bot
 
 De forma predeterminada, el depurador inicia el programa con el selector de Python estándar, sin argumentos de línea de comandos ni otras rutas de acceso o condiciones especiales. Las opciones de inicio se cambian mediante las propiedades de depuración del proyecto; para acceder a ellas, haga clic con el botón derecho en el proyecto en el **Explorador de soluciones**, seleccione **Propiedades** y después la pestaña **Depurar**.
 
-![Propiedades de depuración de proyectos](media/debugging-project-properties.png)
+![Propiedades de depuración del proyecto en el depurador de Visual Studio](media/debugging-project-properties.png)
 
 ### <a name="launch-mode-options"></a>Opciones de Modo de inicio
 

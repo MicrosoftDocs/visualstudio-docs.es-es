@@ -1,24 +1,45 @@
 ---
 title: Registro de cambios (Visual Studio Tools para Unity, Mac) | Microsoft Docs
 ms.custom: ''
-ms.date: 08/06/2018
+ms.date: 11/13/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
-author: conceptdev
-ms.author: crdun
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 197701258a47b3edc49f4e9477c6634d17b22920
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0b641c9dd1fe797fc036a6ece893ad61fc52ff87
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775192"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027242"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Registro de cambios (Visual Studio Tools para Unity, Mac)
 Registro de cambios de Visual Studio Tools para Unity.
+
+## <a name="1700"></a>1.7.0.0
+ Publicado el 13 de noviembre de 2018
+
+### <a name="new-features"></a>Características nuevas
+
+-   **Depurador:**
+
+    -   Se ha agregado más información del cliente (IP, nombre del equipo) en el cuadro de diálogo Adjuntar.
+
+### <a name="bug-fixes"></a>Correcciones de errores
+
+-   **Depurador:**
+
+     -   Se ha corregido un interbloqueo en la biblioteca usada para comunicarse con el motor de depuración de Unity, que hacía que Visual Studio o Unity se congelara, especialmente al ejecutar 'Asociar a Unity' o reiniciar el juego.
+     
+-   **Integración:**
+
+     -   Se ha corregido la activación de los complementos de Unity cuando se seleccionaba otro editor predeterminado.
+     
+     -   Se ha corregido la creación de plantillas de archivo de Unity.
 
 ## <a name="1602"></a>1.6.0.2
  Publicado el 24 de julio de 2018

@@ -1,5 +1,5 @@
 ---
-title: 'Información general: Sugerir una característica para Visual Studio'
+title: Sugerir una característica
 description: Describe cuáles son las sugerencias que hay en la Comunidad de desarrolladores, cómo hacer una sugerencia y cómo Microsoft utiliza las sugerencias en la hoja de ruta de Visual Studio
 ms.date: 11/15/2018
 ms.prod: visual-studio-dev15
@@ -10,24 +10,24 @@ ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d76dcb09db27ed3ac63ba0dd6cc8fc60588f0f
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 541d8968ea71844d89903b9e4f146e86a15737e2
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826708"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160041"
 ---
-# <a name="overview-suggest-a-feature"></a>Información general: Sugerir una característica
+# <a name="overview-suggest-a-feature"></a>Información general: Sugerencia de una característica
 
 Hemos introducido una experiencia totalmente nueva para sugerir características junto con la capacidad actual para notificar los problemas en la [Comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com). Esta es una nueva forma mediante la que se puede involucrar directamente en el flujo de trabajo de ingeniería de Visual Studio.
 
-Hasta ahora, los usuarios de Visual Studio han usado el foro de UserVoice para proponer nuevas ideas de características. La experiencia *Sugerir una característica* de la Comunidad de desarrolladores le permite realizar la transición del foro UserVoice a una sola plataforma para todos sus comentarios que se relaciona directamente con los equipos de productos de Visual Studio.  
+Hasta ahora, los usuarios de Visual Studio han usado el foro de UserVoice para proponer nuevas ideas de características. La experiencia *Sugerir una característica* de la Comunidad de desarrolladores le permite realizar la transición del foro UserVoice a una sola plataforma para todos sus comentarios que se relaciona directamente con los equipos de productos de Visual Studio.
 
 Hemos migrado un conjunto inicial de las ideas del foro UserVoice a la Comunidad de desarrolladores. La migración se realizó basándose en el impacto de la comunidad de los comentarios y nuestras prioridades de la hoja de ruta del producto. Si lo estaba esperando ver una sugerencia que puede que hayamos perdido, no dude en agregarla a la Comunidad de desarrolladores.
 
 ## <a name="votes"></a>Votos
 
-El sistema de votación de UserVoice funciona de forma diferente a los votos de la Comunidad de desarrolladores. Para mantener la integridad de los recuentos de los votos de la Comunidad de desarrolladores y para evitar la distorsión de los votos, los recuentos de los votos de UserVoice se muestran de forma destacada como una etiqueta junto a cada sugerencia de característica. Mientras continúa votando sugerencias en la Comunidad de desarrolladores mejorada, los nuevos recuentos de votos se mostrarán por separado de los recuentos de los votos de UserVoice.  
+El sistema de votación de UserVoice funciona de forma diferente a los votos de la Comunidad de desarrolladores. Para mantener la integridad de los recuentos de los votos de la Comunidad de desarrolladores y para evitar la distorsión de los votos, los recuentos de los votos de UserVoice se muestran de forma destacada como una etiqueta junto a cada sugerencia de característica. Mientras continúa votando sugerencias en la Comunidad de desarrolladores mejorada, los nuevos recuentos de votos se mostrarán por separado de los recuentos de los votos de UserVoice.
 
 ## <a name="user-voice"></a>UserVoice
 
@@ -77,7 +77,7 @@ Una sugerencia de característica marcada como **Need More Info** (Se necesita m
 
 - - -
 
-![Estado Closed - Not Enough Info (Cerrada: información insuficiente) para las sugerencias de la Comunidad de desarrolladores](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg) 
+![Estado Closed - Not Enough Info (Cerrada: información insuficiente) para las sugerencias de la Comunidad de desarrolladores](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg)
 
 **Estado Closed - Not Enough Info** (Cerrada: información insuficiente) indica que tras varios intentos, no hemos recibido suficiente información para entender completamente la sugerencia de característica. Tenemos que cerrar la sugerencia de característica nueva, ya que no podemos realizar ninguna otra acción en esta fase.
 

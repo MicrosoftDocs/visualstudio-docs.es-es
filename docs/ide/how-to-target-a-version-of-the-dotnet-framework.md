@@ -1,5 +1,5 @@
 ---
-title: Versión de .NET Framework como destino en Visual Studio
+title: Uso de una versión de .NET Framework como destino
 ms.date: 02/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,19 +12,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 36599475e743259d8cf09d24172a633b54b09693
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3673d3c57a33d99c3c26dd22cd5c2b7b8959e7d6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752312"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059475"
 ---
-# <a name="how-to-target-a-version-of-the-net-framework"></a>Cómo: Usar como destino una versión de .NET Framework
+# <a name="how-to-target-a-version-of-the-net-framework"></a>Procedimiento Uso de una versión de .NET Framework como destino
 
 En este documento se describe cómo crear un proyecto que tiene como destino una versión de .NET Framework y cómo se cambia la versión de destino en un proyecto de Visual Basic, C# o Visual F# existente.
 
 > [!IMPORTANT]
-> Para obtener información sobre cómo cambiar la versión de destino para los proyectos de C++, consulte [Cómo: Modificar versión de .NET Framework de destino y el conjunto de herramientas de la plataforma](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
+> Para obtener información sobre cómo cambiar la versión de destino para los proyectos de C++, vea [Cómo: Modificar la plataforma de destino y el conjunto de herramientas de la plataforma](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
 
 ## <a name="to-target-a-version-when-you-create-a-project"></a>Para especificar una versión de destino al crear un proyecto
 
@@ -46,7 +46,7 @@ Al crear un proyecto, las versiones de .NET Framework disponibles dependen de qu
 
 Puede cambiar la versión de .NET Framework de destino en un proyecto de Visual Basic, C# o Visual F# si sigue este procedimiento.
 
-Para obtener información sobre cómo cambiar la versión de destino para los proyectos de C++, consulte [Cómo: Modificar versión de .NET Framework de destino y el conjunto de herramientas de la plataforma](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
+Para obtener información sobre cómo cambiar la versión de destino para los proyectos de C++, vea [Cómo: Modificar la plataforma de destino y el conjunto de herramientas de la plataforma](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
 
 1. En el **Explorador de soluciones**, abra el menú contextual del proyecto que quiere cambiar y después elija **Propiedades**.
 

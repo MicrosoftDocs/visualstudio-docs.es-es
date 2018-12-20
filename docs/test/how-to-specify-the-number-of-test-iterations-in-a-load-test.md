@@ -1,5 +1,5 @@
 ---
-title: Especificación del número de iteraciones de prueba en un parámetro de ejecución de una prueba de carga en Visual Studio
+title: Especificación del número de iteraciones de prueba en los parámetros de ejecución de una prueba de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bba6ddfa9162583d687f6638c9b75e178556132b
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: e250096a99cfc272cd23b58bf0f7b70eeb3a7c9d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894799"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059845"
 ---
-# <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Cómo: Especificar el número de iteraciones de prueba del parámetro de ejecución de una prueba de carga
+# <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Procedimiento para especificar el número de iteraciones de prueba en los parámetros de ejecución de una prueba de carga
 
-Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades de los escenarios de modo que satisfagan las necesidades y los objetivos de la prueba. Para obtener más información, vea [Tutorial: Crear y ejecutar una prueba de carga](../test/walkthrough-create-and-run-a-load-test.md).
+Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades de los escenarios de modo que satisfagan las necesidades y los objetivos de la prueba. Para obtener más información, vea [Tutorial: Creación y ejecución de una prueba de carga](../test/walkthrough-create-and-run-a-load-test.md).
 
 Con el **Editor de pruebas de carga**, puede modificar la propiedad **Iteraciones de prueba** de un valor de parámetro de ejecución en la ventana **Propiedades**. La propiedad **Iteraciones de prueba** especifica el número de iteraciones que se ejecutan en todas las pruebas unitarias y de rendimiento web en todos los escenarios de una prueba de carga con el **Editor de pruebas de carga**.
 

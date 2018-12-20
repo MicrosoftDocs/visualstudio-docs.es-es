@@ -1,5 +1,5 @@
 ---
-title: Uso de un entorno de laboratorio para DevOps en Visual Studio
+title: Uso de un entorno de laboratorio para DevOps
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc7351c9449993b624569cc13ac5ced7d169b129
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 45be33245e559cb5027124b4678984ece076e1cf
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837118"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061162"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usar un entorno de laboratorio para DevOps
 
@@ -83,9 +83,9 @@ Los **entornos de SCVMM** solo pueden contener máquinas virtuales administradas
 
 - **Aislamiento de red:** el aislamiento de red permite ejecutar de forma simultánea varias copias idénticas de un entorno de SCVMM sin que se produzcan conflictos de nombre de equipo.
 
-- **Plantillas de máquinas virtuales:** una plantilla de máquina virtual es una máquina virtual de la que se eliminaron el nombre y otros identificadores. Cuando se implementa una plantilla de VM en un entorno de SCVMM, Microsoft Test Manager genera nuevos identificadores. Esto permite implementar varias copias de una máquina virtual en el mismo entorno (o en varios entornos) y, después, ejecutarlas de forma simultánea.
+- **Plantillas de máquina virtual:** una plantilla de máquina virtual es una máquina virtual de la que se han eliminado el nombre y otros identificadores. Cuando se implementa una plantilla de VM en un entorno de SCVMM, Microsoft Test Manager genera nuevos identificadores. Esto permite implementar varias copias de una máquina virtual en el mismo entorno (o en varios entornos) y, después, ejecutarlas de forma simultánea.
 
-- **Máquinas virtuales almacenadas:** una máquina virtual que se almacena en la biblioteca del proyecto y que incluye identificadores únicos.
+- **Máquinas virtuales almacenadas:** una máquina virtual que se almacena en la biblioteca de proyecto y que incluye identificadores únicos.
 
 > [!NOTE]
 > Lab Management no admite SCVMM 2016.

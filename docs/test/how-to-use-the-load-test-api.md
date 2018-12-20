@@ -1,5 +1,5 @@
 ---
-title: API de pruebas de carga en Visual Studio
+title: API de pruebas de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3b35b74f7adca4ff794f4d0c78b5585551864c8f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: ea28bba2d59515ce8080d577248dd7bddee0c570
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894405"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049910"
 ---
-# <a name="how-to-use-the-load-test-api"></a>Cómo: Usar la API de pruebas de carga
+# <a name="how-to-use-the-load-test-api"></a>Procedimiento para usar la API de pruebas de carga
 
 Visual Studio admite complementos de pruebas de carga que puedan controlar o mejorar una prueba de carga. Los complementos de pruebas de carga son clases definidas por el usuario que implementan la interfaz <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> situada en el espacio de nombres <xref:Microsoft.VisualStudio.TestTools.LoadTesting>. Los complementos de pruebas de carga permiten un control personalizado de las pruebas de carga, por ejemplo, para anular una prueba de carga cuando se alcanza un valor de contador o un umbral de error. Utilice las propiedades de la clase <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest> para obtener o establecer parámetros de prueba de carga a partir del código definido por el usuario. Utilice los eventos de la clase <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest> para asociar delegados para notificaciones cuando la prueba de carga se esté ejecutando.
 
@@ -59,11 +59,11 @@ También se pueden crear complementos para pruebas de rendimiento web. Para obte
 
 9. Ejecute la prueba de carga.
 
-     Para obtener una implementación de <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>, vea [Cómo: Crear un complemento de pruebas de carga](../test/how-to-create-a-load-test-plug-in.md).
+     Para obtener una implementación de <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>, vea [Cómo: Crear un complemento de prueba de carga](../test/how-to-create-a-load-test-plug-in.md).
 
 ## <a name="see-also"></a>Vea también
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 - [Crear código y complementos personalizados para las pruebas de carga](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Cómo: Usar la API de pruebas de rendimiento web](../test/how-to-use-the-web-performance-test-api.md)
-- [Cómo: Crear un complemento de pruebas de carga](../test/how-to-create-a-load-test-plug-in.md)
+- [Cómo: Usar la API de prueba de rendimiento web](../test/how-to-use-the-web-performance-test-api.md)
+- [Cómo: Crear un complemento de prueba de carga](../test/how-to-create-a-load-test-plug-in.md)

@@ -1,5 +1,5 @@
 ---
-title: Selección de un parámetro de ejecución para una prueba de carga en Visual Studio
+title: Selección de un parámetro de ejecución para una prueba de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3bff9be24d5d1f615270bc80790a04e85e7cf25c
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 9a99df580ec50eec27bd1cb13a1ef883944acd48
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895332"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067390"
 ---
-# <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Cómo: Seleccionar el parámetro de ejecución activo de una prueba de carga
+# <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Procedimiento para seleccionar el parámetro de ejecución activo de una prueba de carga
 
 Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades de los escenarios de modo que satisfagan las necesidades y los objetivos de la prueba.
 

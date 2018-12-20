@@ -1,5 +1,5 @@
 ---
-title: Introducción de una variable local en Visual Basic
+title: Introducción de una variable local
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 173173e090f285fcaf6fc9d7c94ba85b692d68e2
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 108477845bb79d5ed13cb3ebdf3121e4960455a6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948353"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068087"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Introducción de una variable local en Visual Basic
 
@@ -24,11 +24,11 @@ Esta generación de código se aplica a:
 
 - Visual Basic
 
-**Qué:** Le permite generar de inmediato una variable local para reemplazar una expresión existente.
+**Qué:** Permite generar de inmediato una variable local para reemplazar una expresión existente.
 
-**Cuándo:** Tiene código que se podría reutilizar con facilidad más adelante si estuviera en una variable local.
+**Cuándo:** Se tiene código que se podría reutilizar con facilidad más adelante si estuviera en una variable local.
 
-**Por qué:** Podría copiar y pegar el código varias veces para usarlo en varias ubicaciones; sin embargo, sería mejor realizar la operación una vez, almacenar el resultado en una variable local y usar esta variable local en todo el proceso.
+**Por qué:** Se podría copiar y pegar el código varias veces para usarlo en varias ubicaciones, pero sería mejor realizar la operación una vez, almacenar el resultado en una variable local y usarla en todo el proceso.
 
 ## <a name="how-to"></a>Procedimiento
 

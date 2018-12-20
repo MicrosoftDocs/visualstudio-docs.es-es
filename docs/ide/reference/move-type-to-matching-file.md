@@ -1,5 +1,5 @@
 ---
-title: Traslado de un tipo a una refactorización de archivo coincidente en Visual Studio
+title: Refactorización de traslado de un tipo a un archivo coincidente
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 73e1d9d67d905fed5eb37e29c1be1ba7677da3e8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 997cf31d14acd65abd003bcb00cce4a9797b394a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884154"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059644"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>Refactorización de traslado de un tipo a un archivo coincidente
 
@@ -27,11 +27,11 @@ Esta refactorización se aplica a lo siguiente:
 
 - Visual Basic
 
-**Qué:** Le permite mover el tipo seleccionado a un archivo independiente con el mismo nombre.
+**Qué:** Permite mover el tipo seleccionado a un archivo independiente con el mismo nombre.
 
-**Cuándo:** Tiene varias clases, estructuras, interfaces, etc. en el mismo archivo que desea separar.
+**Cuándo:** Hay varias clases, estructuras, interfaces, etc. en el mismo archivo que se quieren separar.
 
-**Por qué:** Colocar varios tipos en el mismo archivo puede dificultar su búsqueda. Al trasladar los tipos a archivos con el mismo nombre, es más fácil leer el código y navegar hasta él.
+**Por qué:** La colocación de varios tipos en el mismo archivo puede dificultar su búsqueda. Al trasladar los tipos a archivos con el mismo nombre, es más fácil leer el código y navegar hasta él.
 
 ## <a name="how-to"></a>Procedimiento
 

@@ -1,22 +1,23 @@
 ---
 title: Referencia de ventana Entornos de Python
 description: Detalles de cada una de las pestañas que aparecen en la ventana Entornos de Python en Visual Studio.
-ms.date: 09/04/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 45a14fb5667d7eb28d4d298731886db662985d17
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: 3bd65efb0cbaf38de88acb87c9078ee98f3869bc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43996082"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051435"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Referencia de pestañas de la ventana Entorno de Python
 
@@ -47,7 +48,7 @@ Proporciona información básica y comandos para el entorno:
 
 ### <a name="startup-scripts"></a>Scripts de inicio
 
-A medida que usa las ventanas interactivas en su flujo de trabajo diario, probablemente desarrolle funciones auxiliares que usa con frecuencia. Por ejemplo, puede crear una función que abra un DataFrame en Excel y, después, guardar ese código como un script de inicio de manera que siempre esté disponible en la ventana **interactiva**.
+A medida que usa las ventanas interactivas en su flujo de trabajo diario, probablemente desarrolle funciones del asistente que usa con frecuencia. Por ejemplo, puede crear una función que abra un DataFrame en Excel y, después, guardar ese código como un script de inicio de manera que siempre esté disponible en la ventana **interactiva**.
 
 Los scripts de inicio contienen código que la ventana **interactiva** carga y ejecuta automáticamente, como importaciones, definiciones de función y literalmente cualquier otra cosa. Hay dos maneras de hacer referencia a dichos scripts:
 
@@ -102,7 +103,7 @@ Al instalar paquetes en un entorno que está situado en un área protegida del s
 
 ![Mensaje de elevación de privilegios para la instalación del paquete](media/environments-pip-elevate.png)
 
-**Elevar ahora** concede privilegios administrativos a pip para una única operación, sujeto también a cualquier sistema operativo que solicite permisos. Al seleccionar **Continuar sin privilegios de administrador** se intenta instalar el paquete, pero pip produce un error al intentar crear carpetas con un resultado como **error: no se pudo crear "C:\Program Files\Anaconda3\Lib\site-packages\png.py": permiso denegado.**
+**Elevar ahora** concede privilegios administrativos a pip para una única operación, sujeto también a cualquier sistema operativo que solicite permisos. Al seleccionar **Continuar sin privilegios de administrador** se intenta instalar el paquete, pero pip produce un error al intentar crear carpetas con un resultado como **error: no se pudo crear "C:\Archivos de programa\Anaconda3\Lib\site-packages\png.py": permiso denegado.**
 
 Al seleccionar **Elevar siempre al instalar o desinstalar paquetes** se impide que el cuadro de diálogo aparezca para el entorno en cuestión. Para que el cuadro de diálogo aparezca de nuevo, vaya a **Herramientas** > **Opciones** > **Herramientas de Python** > **General** y seleccione el botón **Restablecer todos los cuadros de diálogo ocultos de manera permanente**.
 

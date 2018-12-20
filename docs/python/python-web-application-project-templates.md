@@ -1,6 +1,6 @@
 ---
 title: Plantillas de aplicación web para Python
-description: Información general de las plantillas de Visual Studio para aplicaciones web escritas en Python con las plataformas Bottle, Flask y Django, que incluye las configuraciones de depuración y la publicación en Azure App Service.
+description: Visual Studio proporciona plantillas para aplicaciones web Python con las plataformas Bottle, Flask y Django; la compatibilidad incluye configuraciones de depuración y la publicación en Azure App Service.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3245cd647f5da391bb0e36afc65d867137618808
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 06513030b34f7ab3217210a931722d72a6368ab3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349341"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068333"
 ---
 # <a name="python-web-application-project-templates"></a>Plantillas de proyecto de aplicación web para Python
 
@@ -34,7 +35,7 @@ Para crear un proyecto a partir de una plantilla, seleccione **Archivo** > **Nue
 
 La plantilla genérica **Proyecto web**, que se ha mencionado anteriormente, solo ofrece un proyecto vacío de Visual Studio sin código ni supuestos, aparte de que se trata de un proyecto de Python. Para obtener detalles sobre la plantilla **Servicio en la nube de Azure**, vea [Azure cloud service projects for Python](python-azure-cloud-service-project-template.md) (Proyectos de servicio en la nube para Python).
 
-Todas las demás plantillas se basan en los marcos web de Bottle, Flask o Django y se dividen en tres grupos generales, como se describe en las secciones siguientes. Las aplicaciones creadas con cualquiera de estas plantillas contienen código suficiente para ejecutar y depurar la aplicación en local. Cada una de ellas ofrece el [objeto de aplicación WSGI](http://www.python.org/dev/peps/pep-3333/) necesario (python.org) para el uso con servidores web de producción.
+Todas las demás plantillas se basan en los marcos web de Bottle, Flask o Django y se dividen en tres grupos generales, como se describe en las secciones siguientes. Las aplicaciones creadas con cualquiera de estas plantillas contienen código suficiente para ejecutar y depurar la aplicación en local. Cada una de ellas ofrece el [objeto de aplicación WSGI](https://www.python.org/dev/peps/pep-3333/) necesario (python.org) para el uso con servidores web de producción.
 
 ### <a name="blank-group"></a>Grupo en blanco
 
@@ -44,7 +45,7 @@ Todas las plantillas **Proyecto web de \<marco> en blanco** crean un proyecto co
 | --- | --- |
 | **Proyecto web de Bottle en blanco** | Genera una aplicación mínima en *app.py* con una página principal de `/` y una página `/hello/<name>` que devuelve `<name>` mediante una plantilla de página insertada muy breve. |
 | **Proyecto web de Django en blanco** | Genera un proyecto de Django con la estructura del sitio principal de Django pero sin ninguna aplicación de Django. Para obtener más información, vea [Plantilla de proyecto web de Django](python-django-web-application-project-template.md) y [Tutorial: Introducción al marco web de Django en Visual Studio](learn-django-in-visual-studio-step-01-project-and-solution.md). |
-| **Proyecto web de Flask en blanco** | Genera un aplicación mínima con una única página "Hola mundo" para `/`. Esta aplicación es similar al resultado obtenido tras seguir los pasos detallados descritos en [Inicio rápido: usar Visual Studio para crear su primera aplicación web Python](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Vea también [Tutorial: Introducción al marco web de Flask en Visual Studio](learn-flask-visual-studio-step-01-project-solution.md).
+| **Proyecto web de Flask en blanco** | Genera un aplicación mínima con una única página "Hola mundo" para `/`. Esta aplicación es similar al resultado de seguir los pasos detallados en [Inicio rápido: Uso de Visual Studio para crear la primera aplicación web Python](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Vea también [Tutorial: Introducción al marco web de Flask en Visual Studio](learn-flask-visual-studio-step-01-project-solution.md).
 
 ### <a name="web-group"></a>Grupo web
 
@@ -123,7 +124,7 @@ La opción `--reload` no se recomienda cuando se usa Visual Studio para la depur
 Las aplicaciones de Pyramid actualmente se crean mejor mediante la herramienta de la línea de comandos `pcreate`. Una vez creada una aplicación, se puede importar mediante la plantilla [**Desde código de Python existente**](managing-python-projects-in-visual-studio.md#create-a-project-from-existing-files). Después de realizar esto, seleccione la personalización **Proyecto web genérico** para configurar las opciones. Esta configuración asume que Pyramid se ha instalado en un entorno virtual en `..\env`.
 
 - Grupo **Depurar**:
-  - **Puerto de servidor**: 6543 (o lo que se haya configurado en los archivos *.ini*)
+  - **Puerto del servidor**: 6543 (o lo que se haya configurado en los archivos *.ini*)
 
 - Grupo **Run Server Command** (Comando de servidor de ejecución):
   - Comando: `..\env\scripts\pserve-script.py` (script)

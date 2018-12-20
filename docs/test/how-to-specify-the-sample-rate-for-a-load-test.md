@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Especificar la frecuencia de muestreo de los parámetros de ejecución de pruebas de carga en Visual Studio'
+title: Procedimiento para especificar la frecuencia de muestreo de los parámetros de ejecución de una prueba de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a672e5a61006ed9764497bd115ba2bd98f91f6cd
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: b022b4648931bf0e403df589d37cb086fb2a9c2c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896788"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053054"
 ---
-# <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Cómo: Especificar la frecuencia de muestreo de los parámetros de ejecución de pruebas de carga
+# <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Procedimiento Especificar la frecuencia de muestreo de los parámetros de ejecución de pruebas de carga
 
 Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades de modo que satisfagan las necesidades y los objetivos de la prueba.
 

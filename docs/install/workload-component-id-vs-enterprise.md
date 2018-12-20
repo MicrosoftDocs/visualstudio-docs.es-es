@@ -1,5 +1,6 @@
 ---
 title: Identificadores de componente y carga de trabajo de Visual Studio Enterprise 2017
+titleSuffix: ''
 description: Uso de identificadores de componente y carga de trabajo para instalar Visual Studio mediante la línea de comandos o especificarlo como una dependencia en un manifiesto VSIX
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.workload:
 - multiple
-ms.openlocfilehash: 665ee631f7b57fc409c45b0879e2457c52f55a04
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 7d0496b9559e5e3fbd8984de97d98ea2e075db1a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607983"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063171"
 ---
 # <a name="visual-studio-enterprise-2017-component-directory"></a>Directorio de componentes de Visual Studio Enterprise 2017
 
@@ -35,15 +36,15 @@ Tenga en cuenta también lo siguiente sobre la página:
 * Si lo desea, también puede instalar los componentes con la marca **Recomendado** y **Opcional**.
 * También hemos agregado una sección que muestra los componentes adicionales que no están asociados a ninguna carga de trabajo.
 
-Al establecer las dependencias del manifiesto de VSIX, debe especificar solo identificadores de componentes. Utilice las tablas de esta página para determinar las dependencias de componente mínimas. En algunos casos, esto podría significar que se especifique solo un componente de una carga de trabajo. En otros escenarios, puede significar que especifique varios componentes de una sola carga de trabajo o varios componentes de varias cargas de trabajo. Para obtener más información, consulte la página [How to: Migrate Extensibility Projects to Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) (Migración de proyectos de extensibilidad a Visual Studio 2017).
+Al establecer las dependencias del manifiesto de VSIX, debe especificar solo identificadores de componentes. Utilice las tablas de esta página para determinar las dependencias de componente mínimas. En algunos casos, esto podría significar que se especifique solo un componente de una carga de trabajo. En otros escenarios, puede significar que especifique varios componentes de una sola carga de trabajo o varios componentes de varias cargas de trabajo. Para obtener más información, vea la página [Cómo: Migrar proyectos de extensibilidad a Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
 Para obtener más información acerca de cómo utilizar estos identificadores, vea [Usar parámetros de la línea de comandos para instalar Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md). Y, para obtener una lista de los identificadores de componente y carga de trabajo para otros productos, consulte la página [Visual Studio 2017 Workload and Component IDs](workload-and-component-ids.md) (Identificadores de componente y carga de trabajo de Visual Studio 2017).
 
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2017"></a>Editor de núcleo de Visual Studio (incluido con Visual Studio Enterprise 2017)
 
-**Id.:** Microsoft.VisualStudio.Workload.CoreEditor
+**ID:** Microsoft.VisualStudio.Workload.CoreEditor
 
-**Descripción:** la experiencia del shell principal de Visual Studio, que incluye edición de código compatible con la sintaxis, control de código fuente y administración de elementos de trabajo.
+**Descripción:** La experiencia del shell principal de Visual Studio, que incluye edición de código compatible con la sintaxis, control de código fuente y administración de elementos de trabajo.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
@@ -54,9 +55,9 @@ Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Página principal de 
 
 ## <a name="azure-development"></a>Desarrollo de Azure
 
-**Id.:** Microsoft.VisualStudio.Workload.Azure
+**ID:** Microsoft.VisualStudio.Workload.Azure
 
-**Descripción**: SDK de Azure, herramientas y proyectos para desarrollar aplicaciones en la nube, crear recursos y compilar Containers, además de ofrecer compatibilidad con Docker.
+**Descripción:** SDK de Azure, herramientas y proyectos para desarrollar aplicaciones en la nube, crear recursos y compilar contenedores, además de ofrecer compatibilidad con Docker.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
@@ -150,9 +151,9 @@ Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation 
 
 ## <a name="data-storage-and-processing"></a>Almacenamiento y procesamiento de datos
 
-**Id.:** Microsoft.VisualStudio.Workload.Data
+**ID:** Microsoft.VisualStudio.Workload.Data
 
-**Descripción:** conecte, desarrolle y pruebe soluciones de datos con SQL Server, Azure Data Lake o Hadoop.
+**Descripción:** Conecte, desarrolle y pruebe soluciones de datos con SQL Server, Azure Data Lake o Hadoop.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
@@ -213,9 +214,9 @@ Microsoft.VisualStudio.Component.FSharp.Desktop | Compatibilidad con el lenguaje
 
 ## <a name="data-science-and-analytical-applications"></a>Aplicaciones analíticas y de ciencia de datos
 
-**Id.:** Microsoft.VisualStudio.Workload.DataScience
+**ID:** Microsoft.VisualStudio.Workload.DataScience
 
-**Descripción**: lenguajes y herramientas para crear aplicaciones de ciencia de datos, como Python, R y F#.
+**Descripción:** Lenguajes y herramientas para crear aplicaciones de ciencia de datos, incluidos Python, R y F#.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
@@ -258,9 +259,9 @@ Microsoft.VisualStudio.Component.Windows81SDK | SDK de Windows 8.1 | 15.6.27406.
 
 ## <a name="net-desktop-development"></a>Desarrollo de escritorio de .NET
 
-**Id.:** Microsoft.VisualStudio.Workload.ManagedDesktop
+**ID:** Microsoft.VisualStudio.Workload.ManagedDesktop
 
-**Descripción:**: compile aplicaciones de WPF, Windows Forms y consola mediante C#, Visual Basic y F#.
+**Descripción:** Compile aplicaciones WPF, Windows Forms y de consola con C#, Visual Basic y F#.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
@@ -341,9 +342,9 @@ Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Desarrollo web y ASP.
 
 ## <a name="game-development-with-unity"></a>Desarrollo de juegos con Unity
 
-**Id.:** Microsoft.VisualStudio.Workload.ManagedGame
+**ID:** Microsoft.VisualStudio.Workload.ManagedGame
 
-**Descripción:** cree juegos en 2D y 3D con Unity, un entorno de desarrollo multiplataforma muy eficaz.
+**Descripción:** Cree juegos en 2D y 3D con Unity, un entorno de desarrollo multiplataforma muy eficaz.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
@@ -361,9 +362,9 @@ Component.UnityEngine.x86 | Editor Unity 5.6 de 32 bits | 15.6.27406.0 | Se rec
 
 ## <a name="linux-development-with-c"></a>Desarrollo para Linux con C++
 
-**Id.:** Microsoft.VisualStudio.Workload.NativeCrossPlat
+**ID:** Microsoft.VisualStudio.Workload.NativeCrossPlat
 
-**Descripción:** cree y depure aplicaciones que se ejecutan en un entorno de Linux.
+**Descripción:** Cree y depure aplicaciones que se ejecutan en un entorno de Linux.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
@@ -381,9 +382,9 @@ Component.MDD.Linux.GCC.arm | Desarrollo incrustado e IoT | 15.6.27309.0 | Optio
 
 ## <a name="desktop-development-with-c"></a>Desarrollo para el escritorio con C++
 
-**Id.:** Microsoft.VisualStudio.Workload.NativeDesktop
+**ID:** Microsoft.VisualStudio.Workload.NativeDesktop
 
-**Descripción:** Compila aplicaciones de escritorio de Windows con el conjunto de herramientas de Microsoft C++, ATL o MFC.
+**Descripción:** Compile aplicaciones de escritorio de Windows con el conjunto de herramientas de Microsoft C++, ATL o MFC.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
@@ -443,9 +444,9 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | SDK de Windows 10 (10
 
 ## <a name="game-development-with-c"></a>Desarrollo de juegos con C++
 
-**Id.:** Microsoft.VisualStudio.Workload.NativeGame
+**ID:** Microsoft.VisualStudio.Workload.NativeGame
 
-**Descripción:** use toda la capacidad de C++ para crear juegos profesionales con tecnología de DirectX, Unreal o Cocos2d.
+**Descripción:** Use toda la capacidad de C++ para crear juegos profesionales con tecnología de DirectX, Unreal o Cocos2d.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
@@ -502,9 +503,9 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | SDK de Windows 10 (10
 
 ## <a name="mobile-development-with-c"></a>Desarrollo móvil con C++
 
-**Id.:** Microsoft.VisualStudio.Workload.NativeMobile
+**ID:** Microsoft.VisualStudio.Workload.NativeMobile
 
-**Descripción:** cree aplicaciones multiplataforma para iOS, Android o Windows con C++.
+**Descripción:** Compile aplicaciones multiplataforma para iOS, Android o Windows con C++.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
@@ -533,9 +534,9 @@ Component.MDD.IOS | Herramientas de desarrollo de iOS en C++ | 15.0.26621.2 | Op
 
 ## <a name="net-core-cross-platform-development"></a>Desarrollo multiplataforma de .NET Core
 
-**Id.:** Microsoft.VisualStudio.Workload.NetCoreTools
+**ID:** Microsoft.VisualStudio.Workload.NetCoreTools
 
-**Descripción:** compile aplicaciones multiplataforma mediante .NET Core, ASP.NET Core, HTML, JavaScript y contenedores que incluyan compatibilidad con Docker.
+**Descripción:** Compile aplicaciones multiplataforma con .NET Core, ASP.NET Core, HTML/JavaScript y Containers, además de ofrecer compatibilidad con Docker.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
@@ -604,9 +605,9 @@ Microsoft.VisualStudio.ComponentGroup.IISDevelopment | Compatibilidad con IIS en
 
 ## <a name="mobile-development-with-net"></a>Desarrollo móvil con .NET
 
-**Id.:** Microsoft.VisualStudio.Workload.NetCrossPlat
+**ID:** Microsoft.VisualStudio.Workload.NetCrossPlat
 
-**Descripción:** cree aplicaciones multiplataforma para iOS, Android o Windows con Xamarin.
+**Descripción:** Compile aplicaciones multiplataforma para iOS, Android o Windows con Xamarin.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
@@ -654,9 +655,9 @@ Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Herramientas de la Plataform
 
 ## <a name="aspnet-and-web-development"></a>Desarrollo web y ASP.NET
 
-**Id.:** Microsoft.VisualStudio.Workload.NetWeb
+**ID:** Microsoft.VisualStudio.Workload.NetWeb
 
-**Descripción:** compile aplicaciones web mediante ASP.NET, ASP.NET Core, HTML, JavaScript y contenedores que incluyan compatibilidad con Docker.
+**Descripción:** Compile aplicaciones web con ASP.NET, ASP.NET Core, HTML/JavaScript y Containers, además de ofrecer compatibilidad con Docker.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
@@ -751,9 +752,9 @@ Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.6.27406.0 | 
 
 ## <a name="nodejs-development"></a>Desarrollo de Node.js
 
-**Id.:** Microsoft.VisualStudio.Workload.Node
+**ID:** Microsoft.VisualStudio.Workload.Node
 
-**Descripción:** cree aplicaciones de red escalables con Node.js, un tiempo de ejecución de JavaScript asincrónico y orientado a eventos. 
+**Descripción:** Compile aplicaciones de red escalables con Node.js, un runtime de JavaScript controlado por eventos asincrónicos. 
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
@@ -777,9 +778,9 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Últimas herramientas v141 d
 
 ## <a name="officesharepoint-development"></a>Desarrollo de Office y SharePoint
 
-**Id.:** Microsoft.VisualStudio.Workload.Office
+**ID:** Microsoft.VisualStudio.Workload.Office
 
-**Descripción:** cree complementos de Office y SharePoint, soluciones de SharePoint y complementos VSTO mediante C#, VB y JavaScript.
+**Descripción:** Cree complementos de Office y SharePoint, soluciones de SharePoint y complementos de VSTO mediante C#, VB y JavaScript.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
@@ -845,9 +846,9 @@ Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.8.277
 
 ## <a name="python-development"></a>Desarrollo de Python
 
-**Id.:** Microsoft.VisualStudio.Workload.Python
+**ID:** Microsoft.VisualStudio.Workload.Python
 
-**Descripción:** edición, depuración, desarrollo interactivo y control de código fuente para Python.
+**Descripción:** Edición, depuración, desarrollo interactivo y control de código fuente para Python.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
@@ -932,9 +933,9 @@ Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Requisitos previos de her
 
 ## <a name="universal-windows-platform-development"></a>Desarrollo de la Plataforma universal de Windows
 
-**Id.:** Microsoft.VisualStudio.Workload.Universal
+**ID:** Microsoft.VisualStudio.Workload.Universal
 
-**Descripción:** cree aplicaciones para la Plataforma universal de Windows con C#, VB, JavaScript u opcionalmente C++.
+**Descripción:** Cree aplicaciones para la Plataforma universal de Windows con C#, VB, JavaScript y, opcionalmente, C++.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
@@ -1002,9 +1003,9 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | SDK de Windows 10 (10
 
 ## <a name="visual-studio-extension-development"></a>Desarrollo de extensiones de Visual Studio
 
-**Id.:** Microsoft.VisualStudio.Workload.VisualStudioExtension
+**ID:** Microsoft.VisualStudio.Workload.VisualStudioExtension
 
-**Descripción:** cree complementos y extensiones para Visual Studio, como nuevos comandos, analizadores de código y ventanas de herramientas.
+**Descripción:** Cree complementos y extensiones para Visual Studio, incluidos nuevos comandos, analizadores de código y ventanas de herramientas.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
@@ -1046,9 +1047,9 @@ Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Managed | Herramientas d
 
 ## <a name="mobile-development-with-javascript"></a>Desarrollo móvil con JavaScript
 
-**Id.:** Microsoft.VisualStudio.Workload.WebCrossPlat
+**ID:** Microsoft.VisualStudio.Workload.WebCrossPlat
 
-**Descripción:** compile aplicaciones de Android, iOS y UWP con Herramientas para Apache Cordova.
+**Descripción:** Compile aplicaciones para Android, iOS y UWP con Herramientas para Apache Cordova.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 

@@ -1,5 +1,5 @@
 ---
-title: Tamaño del archivo de registro de las pruebas de carga en Visual Studio
+title: Tamaño del archivo de registro para las pruebas de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 22cc77426abca46a95fd12c8954fd0965a194f5e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: eb77c9c037a46ad1195482abfddd102f50bcd1ae
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894435"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067280"
 ---
-# <a name="how-to-specify-the-maximum-size-for-the-log-file-for-load-tests"></a>Cómo: Especificar el tamaño máximo del archivo de registro de las pruebas de carga
+# <a name="how-to-specify-the-maximum-size-for-the-log-file-for-load-tests"></a>Procedimiento para especificar el tamaño máximo del archivo de registro de las pruebas de carga
 
 De forma predeterminada, el tamaño máximo del archivo de registro que se utiliza para las pruebas de carga está establecido en 20 megabytes. Puede cambiar este valor modificando el archivo de configuración asociado con el servicio del controlador.
 

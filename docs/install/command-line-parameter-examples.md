@@ -1,8 +1,9 @@
 ---
-title: Ejemplos de parámetros de la línea de comandos para la instalación de Visual Studio
+title: Ejemplos de parámetros de la línea de comandos para la instalación
 description: Personalice estos ejemplos para crear su propia instalación de la línea de comandos de Visual Studio.
 ms.date: 11/14/2018
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 837F31AA-F121-46e9-9996-F8BCE768E579
@@ -11,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b40b228ce04a83622f739d22b15c9ab126aade3f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: de5e7f194fff87b5148a2262925d3ac5c4287293
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803817"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160158"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Ejemplos de parámetros de línea de comandos para la instalación de Visual Studio 2017
 

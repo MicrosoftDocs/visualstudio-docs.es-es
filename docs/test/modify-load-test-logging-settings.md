@@ -1,5 +1,5 @@
 ---
-title: Configuración de registro de pruebas de carga en Visual Studio
+title: Configuración del registro de pruebas de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d24bb1b3af468f35ae333407fc96c42f4f9e669b
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: f280911be68616a1c2632195769547023832b061
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894890"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060043"
 ---
 # <a name="modify-load-test-logging-settings"></a>Modificar la configuración de registro de pruebas de carga
 
@@ -28,7 +28,7 @@ El *controlador de pruebas* pone en cola todos los datos de ejemplo de la prueba
 |Tarea|Temas relacionados|
 |-|-----------------------|
 |**Guardar los registros si se produce un error en una prueba de carga:** puede especificar si quiere guardar el registro de la prueba siempre que se produzca un error en una prueba de carga.|-   [Cómo: Especificar si los errores de las pruebas se guardan en los registros de pruebas](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
-|**Establecer el tamaño máximo del archivo de registro:** puede editar el archivo de configuración XML asociado al servicio del controlador de pruebas para especificar el tamaño máximo que quiere usar para el archivo de registro.|[Cómo: Especificar el tamaño máximo del archivo de registro](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
+|**Especificar el tamaño máximo del archivo de registro:** puede editar el archivo de configuración XML asociado al servicio del controlador de pruebas para especificar el tamaño máximo que quiere usar para el archivo de registro.|[Cómo: Especificar el tamaño máximo del archivo de registro](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
 
 ## <a name="see-also"></a>Vea también
 

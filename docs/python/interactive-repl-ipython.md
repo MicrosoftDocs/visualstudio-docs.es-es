@@ -1,6 +1,6 @@
 ---
 title: REPL de IPython (ventana interactiva)
-description: Uso de la ventana interactiva de Visual Studio en modo de IPython para tener un entorno de desarrollo interactivo fácil de usar que tiene características de computación paralela interactiva.
+description: Use la ventana interactiva de Visual Studio en modo de IPython para tener un entorno de desarrollo interactivo fácil de usar con características de computación paralela interactiva.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b5429ccc963923a049d54ad3fbaa409586c0f772
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 84e93d06e294ef11cc345eb4c443845421a8f834
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219255"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067808"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Uso de IPython en la ventana interactiva
 
@@ -79,9 +80,9 @@ Para este tutorial, debe tener instalado el entorno de [Anaconda](https://www.co
 
 8. Para ver los gráficos fuera de la ventana **interactiva**, ejecute el código en lugar de utilizar el comando **Depurar** > **Iniciar sin depurar**.
 
-IPython tiene muchas otras características útiles, como el escape al shell del sistema, la sustitución de variables, la captura de salidas, etc. Vea la [documentación de IPython](http://ipython.org/documentation.html) para obtener más información.
+IPython tiene muchas otras características útiles, como el escape al shell del sistema, la sustitución de variables, la captura de salidas, etc. Vea la [documentación de IPython](https://ipython.org/documentation.html) para obtener más información.
 
-### <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Vea también
 
 - Para usar Jupyter fácilmente y sin instalación, pruebe el [servicio hospedado en Azure Notebooks](https://notebooks.azure.com/) gratuito que le permite conservar y compartir sus blocs de notas con otras personas.
 

@@ -1,5 +1,5 @@
 ---
-title: Períodos de tiempo de espera para controladores y agentes de pruebas en Visual Studio
+title: Periodos de tiempo de espera para controladores de pruebas y agentes de pruebas
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9c7e85dcbd62c5f068ce3286145fec2ddddc7947
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 53127df8837f9f86d49cb5d5fa36ca3b50f401fa
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895696"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064684"
 ---
-# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Cómo: Especificar periodos de tiempo de espera para controladores de pruebas y agentes de pruebas
+# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Procedimiento para especificar periodos de tiempo de espera para controladores de pruebas y agentes de pruebas
 
 Tanto el controlador de pruebas como el agente de prueba tienen varias configuraciones de tiempo de espera que especifican cuánto tiempo deben esperar las respuestas el uno del otro, o de un origen de datos antes de que se genere un error. En ciertas circunstancias, podría ser necesario editar los valores de tiempo de espera para satisfacer las necesidades de su topología u otros problemas del entorno. Para editar los valores de tiempo de espera, edite el archivo de configuración XML asociado al controlador de pruebas o al agente de prueba, como se explica en los procedimientos siguientes.
 
@@ -120,4 +120,4 @@ Para editar diversas configuraciones de tiempo de espera de un controlador de pr
 - [Modificar la configuración de registro de pruebas de carga](../test/modify-load-test-logging-settings.md)
 - [Configurar los puertos para los controladores de prueba y los agentes de prueba](../test/configure-ports-for-test-controllers-and-test-agents.md)
 - [Cómo: Especificar el tamaño máximo del archivo de registro](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
-- [Cómo: Enlazar Test Controller o Test Agent a un adaptador de red](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)
+- [Cómo: Enlazar un controlador de pruebas o un agente de pruebas a un adaptador de red](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)

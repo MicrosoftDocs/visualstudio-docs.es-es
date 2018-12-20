@@ -1,23 +1,24 @@
 ---
 title: Configuración de aplicaciones web de Python para IIS
 description: Configuración de aplicaciones web de Python para ejecutarlas con Internet Information Services desde una máquina virtual Windows.
-ms.date: 10/10/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 4452eca221a772c2f0fd519df533e35468f3ecd8
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 8de69c64cac5c841867f5d993395e5ab380625eb
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459573"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062909"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>Configuración de aplicaciones web de Python para IIS
 
@@ -113,7 +114,7 @@ A continuación, modifique el archivo *web.config* para incluir las rutas de acc
         <add key="WSGI_HANDLER" value="app.wsgi_app()"/>
         ```
 
-    - **Flask**: cambie el valor `WSGI_HANDLER` a `<project_name>.app`, donde `<project_name>` coincide con el nombre del proyecto. Puede encontrar el identificador exacto examinando la instrucción `from <project_name> import app` en *runserver.py*. Por ejemplo, si el proyecto se denominara "FlaskAzurePublishExample", la entrada aparecería así:
+    - **Flask**: cambie el valor `WSGI_HANDLER` por `<project_name>.app`, donde `<project_name>` coincide con el nombre del proyecto. Puede encontrar el identificador exacto examinando la instrucción `from <project_name> import app` en *runserver.py*. Por ejemplo, si el proyecto se denominara "FlaskAzurePublishExample", la entrada aparecería así:
 
         ```xml
         <!-- Flask apps only: change the project name to match your app -->
@@ -133,7 +134,7 @@ A continuación, modifique el archivo *web.config* para incluir las rutas de acc
         <add key="DJANGO_SETTINGS_MODULE" value="django_iis_example.settings" />
         ```
 
-1. **Solo para las aplicaciones de Django**: en el archivo *settings.py* del proyecto de Django, agregue el dominio de dirección URL del sitio o la dirección IP a `ALLOWED_HOSTS`, tal como se muestra más adelante, por reemplazando, por supuesto, "1.2.3.4" con su dirección URL o su dirección IP:
+1. **Solo para las aplicaciones de Django**: en el archivo *settings.py* del proyecto de Django, agregue el dominio de dirección URL del sitio o la dirección IP a `ALLOWED_HOSTS`, como se muestra más adelante, reemplazando, por supuesto, "1.2.3.4" con su dirección URL o su dirección IP:
 
     ```python
     # Change the URL or IP address to your specific site

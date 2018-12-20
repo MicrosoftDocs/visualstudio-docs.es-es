@@ -1,5 +1,5 @@
 ---
-title: Cómo usar CTest para C++ en Visual Studio
+title: Cómo usar CTest para C++
 ms.date: 11/07/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: b9448fa36d6329296731c69a1cfe1f2d97240df1
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 7a4475cba023f792c2ff96895eb4dd7e0b4ebcf5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380530"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53050219"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>Cómo usar CTest para C++ en Visual Studio
 

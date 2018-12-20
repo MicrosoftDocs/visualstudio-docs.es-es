@@ -1,5 +1,5 @@
 ---
-title: Especificación de los agentes de pruebas que se van a usar en escenarios de prueba de carga en Visual Studio
+title: Especificación de los agentes de pruebas que se van a usar en escenarios de prueba de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1d153e3ab237e87764b8805c91f4e4c4e5512c60
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: db7c901dd081155fe7341433f700f60de415a153
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895189"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061022"
 ---
-# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Cómo: Especificar los agentes de pruebas que se van a usar en escenarios de prueba de carga
+# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Procedimiento para especificar los agentes de pruebas que se van a usar en escenarios de prueba de carga
 
 Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades de los escenarios de modo que satisfagan las necesidades y los objetivos de la prueba.
 
@@ -69,6 +69,6 @@ Si una máquina de agente de prueba utiliza más del 75 por ciento de la CPU o t
 ## <a name="see-also"></a>Vea también
 
 - [Modificar escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
-- [Tutorial: Crear y ejecutar una prueba de carga](../test/walkthrough-create-and-run-a-load-test.md)
+- [Tutorial: Creación y ejecución de una prueba de carga](../test/walkthrough-create-and-run-a-load-test.md)
 - [Controladores y agentes de prueba](configure-test-agents-and-controllers-for-load-tests.md)
 - [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md)

@@ -1,23 +1,24 @@
 ---
 title: Publicación de una aplicación de Python en Azure App Service
-description: Opciones para publicar una aplicación de Python en Azure App Service.
-ms.date: 10/10/2018
+description: Las opciones para publicar una aplicación de Python en Azure App Service, incluida la implementación en Git y contenedores para Linux, y la implementación en IIS.
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 050b98f663a1db6bde6d32342b094fe454046283
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 1c8c48eaa777da973f0a4b21d826bbab384b4536
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459665"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066696"
 ---
 # <a name="publish-to-azure-app-service"></a>Publicación en Azure App Service
 
@@ -34,7 +35,7 @@ La implementación de Git conecta una instancia de App Service en Linux con una 
 
 Para más información, consulte los artículos siguientes en la documentación de Azure:
 
-- [Inicio rápido: Creación de una aplicación web de Python en Azure App Service](/azure/app-service/containers/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json) brinda un breve tutorial del proceso de implementación de Git mediante una aplicación Flask sencilla e implementación desde un repositorio Git local.
+- [Inicio rápido: Creación de una aplicación web de Python en Azure App Service](/azure/app-service/containers/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json) proporciona un breve tutorial del proceso de implementación de Git mediante una aplicación Flask sencilla e implementación desde un repositorio Git local.
 - El artículo sobre [cómo configurar Python](/azure/app-service/containers/how-to-configure-python) describe las características del contenedor de App Service en Linux y cómo personalizar el comando de inicio de Gunicorn para la aplicación.
 
 ## <a name="publish-to-app-service-on-linux-using-containers"></a>Publicación en App Service en Linux mediante los contenedores

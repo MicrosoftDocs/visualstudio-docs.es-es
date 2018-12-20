@@ -1,24 +1,25 @@
 ---
 title: 'Inicio rápido: Crear un proyecto de Python mediante Cookiecutter'
 description: En este inicio rápido, creará un proyecto de Visual Studio para Python utilizando una plantilla de Cookiecutter.
-ms.date: 09/04/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e4f2fcf8422c0fa11e1f43723d4337804720050
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: b8ad6d53a337e6a2a0d879ff9637156fb3d6d791
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995896"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062708"
 ---
-# <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Inicio rápido: crear un proyecto a partir de una plantilla de Cookiecutter
+# <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Inicio rápido: Creación de un proyecto a partir de una plantilla de Cookiecutter
 
 Después de [instalar la compatibilidad con Python en Visual Studio 2017](installing-python-support-in-visual-studio.md), es fácil crear un proyecto a partir de una plantilla de Cookiecutter, incluidas muchas de las que se publican en GitHub. [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) proporciona una interfaz gráfica de usuario para descubrir plantillas, opciones de plantilla de entrada y crear proyectos y archivos. Se incluye con Visual Studio de 2017 y puede instalarse por separado en versiones anteriores de Visual Studio.
 
@@ -45,7 +46,7 @@ Después de [instalar la compatibilidad con Python en Visual Studio 2017](instal
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Tutorial: Trabajar con Python en Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+> [Tutorial: Uso de Python en Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Vea también
 

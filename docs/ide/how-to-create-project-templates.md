@@ -1,5 +1,5 @@
 ---
-title: Creación de plantillas de proyectos para Visual Studio
+title: Crear plantillas de proyecto
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,14 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 05ba1dcd5328b80d8fa5526336cf027995abf7dc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5cb90ea6f1e404d65ac3c375f49e77dd02c6711c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903730"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066920"
 ---
-# <a name="how-to-create-project-templates"></a>Cómo: Crear plantillas de proyectos
+# <a name="how-to-create-project-templates"></a>Procedimiento Crear plantillas de proyecto
 
 En este tema se muestra cómo crear una plantilla con el **Asistente para exportar plantillas**, que empaqueta su plantilla en un archivo *.zip*.
 
@@ -42,7 +42,7 @@ En este tema se muestra cómo crear una plantilla con el **Asistente para export
    El proyecto se exporta a un archivo *.zip* y se coloca en la ubicación de salida especificada y, si se selecciona, se importa a Visual Studio.
 
 >[!NOTE]
-> Para encontrar una plantilla en el cuadro de diálogo **Nuevo proyecto**, expanda la opción **Instalado** y, después, la categoría que corresponde al elemento `ProjectType` del archivo *.vstemplate*. Por ejemplo, un archivo *.vstemplate* que contiene `<ProjectType>CSharp</ProjectType>` aparece de forma predeterminada en **Instalado** > **Visual C#**. Para organizar una plantilla en un subdirectorio del tipo de proyecto solo tiene que crear una carpeta en el directorio correspondiente y colocar ahí el archivo *.zip* de la plantilla. Para más información, vea [Cómo: Localizar y organizar plantillas](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+> Para encontrar una plantilla en el cuadro de diálogo **Nuevo proyecto**, expanda la opción **Instalado** y, después, la categoría que corresponde al elemento `ProjectType` del archivo *.vstemplate*. Por ejemplo, un archivo *.vstemplate* que contiene `<ProjectType>CSharp</ProjectType>` aparece de forma predeterminada en **Instalado** > **Visual C#**. Para organizar una plantilla en un subdirectorio del tipo de proyecto solo tiene que crear una carpeta en el directorio correspondiente y colocar ahí el archivo *.zip* de la plantilla. Para obtener más información, vea [Cómo: Localizar y organizar plantillas](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="other-ways-to-create-project-templates"></a>Otras formas de crear plantillas de proyectos
 
@@ -53,5 +53,5 @@ Si tiene Visual Studio SDK instalado, puede ajustar la plantilla terminada en un
 ## <a name="see-also"></a>Vea también
 
 - [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
-- [Cómo: Crear plantillas de elementos](../ide/how-to-create-item-templates.md)
+- [Cómo: Crear plantillas de elemento](../ide/how-to-create-item-templates.md)
 - [Introducción a la plantilla de proyecto VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)

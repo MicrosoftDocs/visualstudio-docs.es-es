@@ -1,5 +1,5 @@
 ---
-title: Análisis de las infracciones de las reglas de umbral en las pruebas de carga en Visual Studio
+title: Análisis de las infracciones de las reglas de umbral en las pruebas de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 17a79e4c684ee60d18288bc30ce1e3fce83dc8a5
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: be0784197c03aa3117d559cd4aa99797027c8170
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895436"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061816"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analizar las infracciones de las reglas de umbral en las pruebas de carga mediante el Analizador de pruebas de carga
 
@@ -39,7 +39,7 @@ Si se ha producido alguna infracción, aparece un hipervínculo de **infraccione
 |Columna|Descripción|Visible de forma predeterminada|
 |-|-|-|
 |Tiempo|La hora de la prueba de carga a la que se produjo la infracción.|Sí|
-|Equipo|El nombre del equipo bajo comprobación en el que se produjo la infracción. **Nota:** Esto es importante cuando se ejecutan pruebas de carga en plataformas de pruebas.|Sí|
+|Equipo|El nombre del equipo bajo comprobación en el que se produjo la infracción. **Nota:**  Esto es importante cuando se ejecutan pruebas de carga en plataformas de pruebas.|Sí|
 |Categoría|La categoría del contador de rendimiento en el que se produjo la infracción.|Sí|
 |Contador|El nombre del contador de rendimiento en el que se produjo la infracción.|Sí|
 |Instancia|La instancia del contador de rendimiento en la que se produjo la infracción.|Sí|

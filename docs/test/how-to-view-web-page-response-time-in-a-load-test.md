@@ -1,5 +1,5 @@
 ---
-title: Tiempo de respuesta de página en una prueba de carga en Visual Studio
+title: Tiempo de respuesta de página en una prueba de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9740d26ef99c10bb9ec84afa23b998f6e1467f40
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 73ba296be1c001415746145c7bcf4d13c8b25053
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895267"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068100"
 ---
-# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Cómo: Ver el tiempo de respuesta de la página web en una prueba de carga mediante el Analizador de pruebas de carga
+# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Procedimiento para ver el tiempo de respuesta de la página web en una prueba de carga mediante el Analizador de pruebas de carga
 
 El tiempo que tarda cada página web en cargarse se conoce como *tiempo de respuesta*. Al crear una prueba de rendimiento web, puede establecer un objetivo de tiempo de respuesta para cada solicitud de página web de la prueba de rendimiento web.
 
@@ -61,7 +61,7 @@ Si ejecuta una prueba de rendimiento web en condiciones de carga en una prueba d
    |**Max**|Tiempo de respuesta máximo de página.<br /><br /> De forma predeterminada, estos datos no se recopilan. Para recopilar estos datos, en el **Editor de pruebas de carga**, en el nodo **Parámetros de ejecución**, seleccione el nodo del parámetro de ejecución que quiere cambiar. En la ventana **Propiedades**, en la propiedad **Almacenamiento de detalles de tiempo**, seleccione **Todos los detalles individuales**.|
    |**Desv. est.**|De forma predeterminada, no se recogen datos de la desviación estándar. Para recopilar estos datos, en el **Editor de pruebas de carga**, en el nodo **Parámetros de ejecución**, seleccione el nodo del parámetro de ejecución que quiere cambiar. En la ventana **Propiedades**, en la propiedad **Almacenamiento de detalles de tiempo**, seleccione **Todos los detalles individuales**.|
    |**Tiempo de la página**|El tiempo medio de respuesta de todas las solicitudes realizadas de la página web.|
-   |**Objetivo**|El tiempo de la página definido como objetivo. Éste es un valor constante para la página. **Nota:** El objetivo de tiempo de la página solo se muestra si se ha definido el objetivo para la solicitud en la prueba de rendimiento web.|
+   |**Objetivo**|El tiempo de la página definido como objetivo. Éste es un valor constante para la página. **Nota:**  El objetivo de tiempo de la página solo se muestra si se ha definido el objetivo para la solicitud en la prueba de rendimiento web.|
    |**% que cumple el objetivo**|El porcentaje de las solicitudes realizadas para la página web que cumplen el objetivo de tiempo de respuesta.|
 
    Para obtener más información, vea [Analizar los errores y resultados de pruebas de carga en la vista Tablas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
@@ -96,5 +96,5 @@ Para ver los datos de tiempo de respuesta en un gráfico:
 ## <a name="see-also"></a>Vea también
 
 - [Analizar los errores y resultados de pruebas de carga en la vista Tablas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
-- [Cómo: Obtener acceso a los resultados de pruebas de carga para su análisis](../test/how-to-access-load-test-results-for-analysis.md)
+- [Cómo: Acceder a los resultados de pruebas de carga para el análisis](../test/how-to-access-load-test-results-for-analysis.md)
 - [Analizar los resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

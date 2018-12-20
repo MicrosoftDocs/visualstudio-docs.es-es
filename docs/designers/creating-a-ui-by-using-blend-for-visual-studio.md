@@ -1,5 +1,6 @@
 ---
-title: Creación de una interfaz de usuario con Blend para Visual Studio
+title: 'Creación de una interfaz de usuario: Blend para Visual Studio'
+titleSuffix: ''
 ms.date: 07/17/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -11,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cd1d8ab718575977e9f65ed55bfc6c3185d1642
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 76743674ef4e92f2ad52be108c1dafb8d942676c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890148"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059871"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Creación de una interfaz de usuario con Blend para Visual Studio
 
@@ -46,7 +47,7 @@ Puede usar el panel **Herramientas** en Blend para Visual Studio para crear y mo
 |![Herramientas de recursos](../designers/media/b1_5.png)|**Herramientas de activos** Acceda al panel **Activos** y muestre el último activo usado de la biblioteca.|![Llamada E](../designers/media/b5_label_e.png)|**Controles de texto**|
 |||![Llamada F](../designers/media/b5_label_f.png)|**Controles comunes**|
 
-**Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [La barra de herramientas](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
+**Vea un vídeo corto:** ![Configuración de las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [La barra de herramientas](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
 
 ## <a name="tour-of-the-assets-panel"></a>Paseo por el panel Activos
 
@@ -115,7 +116,7 @@ Utilice este panel para ver y modificar las propiedades de un objeto. También p
 |![Llamada 16](../designers/media/b5_label_16.png)|**Control deslizante de degradado** Aparece únicamente si se selecciona un pincel de degradado.|
 |![Mostrar propiedades avanzadas](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**Mostrar propiedades avanzadas** Vea las categorías de propiedades que se usan con menos frecuencia.|
 
-**Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [Panel Propiedades](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
+**Vea un vídeo corto:** ![Configuración de las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [El panel Propiedades](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
 
 ## <a name="see-also"></a>Vea también
 

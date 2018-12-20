@@ -1,5 +1,6 @@
 ---
 title: Identificadores de componente y carga de trabajo de Visual Studio Team Explorer 2017
+titleSuffix: ''
 description: Uso de identificadores de componente y carga de trabajo de Visual Studio para proporcionar herramientas de pruebas integradas para evaluadores generalistas
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
 ms.workload:
 - multiple
-ms.openlocfilehash: 57d34c8ea2c79c9d9444e553d37da353e4e3ece3
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 7b54e0f73f4f0d504df3757ffc881b2282fc9471
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607450"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066111"
 ---
 # <a name="visual-studio-team-explorer-2017-component-directory"></a>Directorio de componentes de Visual Studio Team Explorer 2017
 
@@ -35,15 +36,15 @@ Tenga en cuenta también lo siguiente sobre la página:
 * Si lo desea, también puede instalar los componentes con la marca **Recomendado** y **Opcional**.
 * También hemos agregado una sección que muestra los componentes adicionales que no están asociados a ninguna carga de trabajo.
 
-Al establecer las dependencias del manifiesto de VSIX, debe especificar solo identificadores de componentes. Utilice las tablas de esta página para determinar las dependencias de componente mínimas. En algunos casos, esto podría significar que se especifique solo un componente de una carga de trabajo. En otros escenarios, puede significar que especifique varios componentes de una sola carga de trabajo o varios componentes de varias cargas de trabajo. Para obtener más información, consulte la página [How to: Migrate Extensibility Projects to Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) (Migración de proyectos de extensibilidad a Visual Studio 2017).
+Al establecer las dependencias del manifiesto de VSIX, debe especificar solo identificadores de componentes. Utilice las tablas de esta página para determinar las dependencias de componente mínimas. En algunos casos, esto podría significar que se especifique solo un componente de una carga de trabajo. En otros escenarios, puede significar que especifique varios componentes de una sola carga de trabajo o varios componentes de varias cargas de trabajo. Para obtener más información, vea la página [Cómo: Migrar proyectos de extensibilidad a Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
 Para obtener más información acerca de cómo utilizar estos identificadores, vea [Usar parámetros de la línea de comandos para instalar Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md). Y, para obtener una lista de los identificadores de componente y carga de trabajo para otros productos, consulte la página [Visual Studio 2017 Workload and Component IDs](workload-and-component-ids.md) (Identificadores de componente y carga de trabajo de Visual Studio 2017).
 
 ## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2017"></a>Editor de núcleo de Visual Studio (incluido con Visual Studio Team Explorer 2017)
 
-**Id.:** Microsoft.VisualStudio.Workload.CoreEditor
+**ID:** Microsoft.VisualStudio.Workload.CoreEditor
 
-**Descripción:** la experiencia del shell principal de Visual Studio, que incluye edición de código compatible con la sintaxis, control de código fuente y administración de elementos de trabajo.
+**Descripción:** La experiencia del shell principal de Visual Studio, que incluye edición de código compatible con la sintaxis, control de código fuente y administración de elementos de trabajo.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 

@@ -1,5 +1,5 @@
 ---
-title: API de prueba de rendimiento web en Visual Studio
+title: API de prueba de rendimiento web
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1f0fc5bdc5b17c13bfb0d4adf07a4a48347ce38b
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: eacdcf65619909c052f786a8b22b61b4d48292d9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896463"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064503"
 ---
-# <a name="how-to-use-the-web-performance-test-api"></a>Cómo: Usar la API de pruebas de rendimiento web
+# <a name="how-to-use-the-web-performance-test-api"></a>Procedimiento para usar la API de prueba de rendimiento web
 
 Puede escribir código para sus pruebas de rendimiento web. La API de prueba de rendimiento web se utiliza para crear pruebas de rendimiento web automatizadas, complementos de prueba de rendimiento web, complementos de solicitud, solicitudes, reglas de extracción y reglas de validación. Las clases que constituyen estos tipos son las clases principales de esta API. Los otros tipos contenidos en esta API se utilizan para permitir la creación de objetos <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> y <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>. El espacio de nombres <xref:Microsoft.VisualStudio.TestTools.WebTesting> sirve para crear pruebas de rendimiento web personalizadas.
 
@@ -29,7 +29,7 @@ También puede utilizar la API de prueba de rendimiento web para crear y guardar
 > [!TIP]
 > El Examinador de objetos se usa para examinar el espacio de nombres <xref:Microsoft.VisualStudio.TestTools.WebTesting>. Los editores de Visual C# y de Visual Basic ofrecen compatibilidad con IntelliSense para codificar con las clases del espacio de nombres.
 
-También se pueden crear complementos para pruebas de carga. Para obtener más información, vea [Cómo: Usar la API de pruebas de carga](../test/how-to-use-the-load-test-api.md) y [Cómo: Crear un complemento de pruebas de carga](../test/how-to-create-a-load-test-plug-in.md).
+También se pueden crear complementos para pruebas de carga. Para obtener más información, vea [Cómo: Usar la API de pruebas de carga](../test/how-to-use-the-load-test-api.md) y [Cómo: Crear un complemento de prueba de carga](../test/how-to-create-a-load-test-plug-in.md).
 
 ## <a name="to-use-the-webtesting-namespace"></a>Para usar el espacio de nombres WebTesting
 
@@ -64,11 +64,11 @@ También se pueden crear complementos para pruebas de carga. Para obtener más i
 
 9. Ejecute su prueba de rendimiento web.
 
-     Para obtener una implementación de ejemplo de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, vea [Cómo: Crear un complemento de pruebas de rendimiento web](../test/how-to-create-a-web-performance-test-plug-in.md).
+     Para obtener una implementación de ejemplo de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, vea [Cómo: Crear un complemento de prueba de rendimiento web](../test/how-to-create-a-web-performance-test-plug-in.md).
 
 ## <a name="see-also"></a>Vea también
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 - [Crear código y complementos personalizados para las pruebas de carga](../test/create-custom-code-and-plug-ins-for-load-tests.md)
 - [Cómo: Usar la API de pruebas de carga](../test/how-to-use-the-load-test-api.md)
-- [Cómo: Crear un complemento de pruebas de rendimiento web](../test/how-to-create-a-web-performance-test-plug-in.md)
+- [Cómo: Crear un complemento de prueba de rendimiento web](../test/how-to-create-a-web-performance-test-plug-in.md)

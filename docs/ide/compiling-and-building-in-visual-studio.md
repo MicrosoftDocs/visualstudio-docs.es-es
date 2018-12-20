@@ -1,5 +1,5 @@
 ---
-title: Compilar y generar en Visual Studio
+title: Compilación y generación
 ms.date: 07/14/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2ad9e3e6644f3f0ffc2d4fbf163968f16065f3
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 7681ad9cd109dbc8da266721d9d8382d3552eda6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349138"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062598"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Compilar y generar en Visual Studio
 
@@ -26,7 +26,7 @@ Al compilar código fuente, el motor de compilación crea ensamblados y aplicaci
 
 Al compilar el código con frecuencia, se pueden identificar rápidamente errores en tiempo de compilación, como sintaxis incorrecta, palabras clave mal escritas y errores de coincidencia de tipos. También es posible detectar y corregir errores en tiempo de ejecución, como errores lógicos y semánticos, al compilar y ejecutar versiones de depuración del código.
 
-Una compilación correcta valida que el código fuente de la aplicación contenga una sintaxis correcta y que se puedan resolver todas las referencias estáticas a bibliotecas, ensamblados y otros componentes. Se genera un archivo ejecutable de aplicación que se puede probar para asegurarse de que funciona correctamente en un [entorno de depuración](../debugger/index.md) y en una serie de pruebas manuales y automatizadas para [validar la calidad del código](../test/improve-code-quality.md). Una vez que se ha probado por completo la aplicación, es posible compilar una versión e implementarla para los clientes. Para una introducción a este proceso, vea [Tutorial: Compilar una aplicación](../ide/walkthrough-building-an-application.md).
+Una compilación correcta valida que el código fuente de la aplicación contenga una sintaxis correcta y que se puedan resolver todas las referencias estáticas a bibliotecas, ensamblados y otros componentes. Se genera un archivo ejecutable de aplicación que se puede probar para asegurarse de que funciona correctamente en un [entorno de depuración](../debugger/index.md) y en una serie de pruebas manuales y automatizadas para [validar la calidad del código](../test/improve-code-quality.md). Una vez que se ha probado por completo la aplicación, es posible compilar una versión e implementarla para los clientes. Para obtener una introducción a este proceso, vea [Tutorial: Compilación de una aplicación](../ide/walkthrough-building-an-application.md).
 
 Puede usar cualquiera de los siguientes métodos para compilar una aplicación: el IDE de Visual Studio, las herramienta de línea de comandos de MSBuild y Azure Pipelines:
 
@@ -45,7 +45,7 @@ La documentación de esta sección analiza en detalle el proceso de compilación
 
 Cuando crea un proyecto, Visual Studio crea las configuraciones de compilación predeterminadas para el proyecto y la solución que contiene el proyecto.  Estas configuraciones definen cómo se compilan y se implementan las soluciones y los proyectos. Las configuraciones de proyecto, en concreto, son únicas para una plataforma de destino (por ejemplo, Windows o Linux) y para un tipo de compilación (por ejemplo, depuración o publicación). Puede editar estas configuraciones como quiera y también puede crear sus propias configuraciones según sea necesario.
 
-Para obtener una primera introducción a la compilación dentro del IDE, vea [Tutorial: Compilar una aplicación](walkthrough-building-an-application.md).
+Para obtener una primera introducción a la compilación dentro del IDE, vea [Tutorial: Compilación de una aplicación](walkthrough-building-an-application.md).
 
 Después, vea [Compilar y limpiar proyectos y soluciones en Visual Studio](building-and-cleaning-projects-and-solutions-in-visual-studio.md) para obtener información sobre las diversas personalizaciones de aspectos que puede llevar a cabo en el proceso. Entre las personalizaciones se incluyen [cambiar los directorios de salida](how-to-change-the-build-output-directory.md), [especificar eventos de compilación personalizados](specifying-custom-build-events-in-visual-studio.md), [administrar dependencias del proyecto](how-to-create-and-remove-project-dependencies.md), [administrar archivos del registro de compilación](how-to-view-save-and-configure-build-log-files.md) y [suprimir las advertencias del compilador](how-to-suppress-compiler-warnings.md).
 

@@ -1,22 +1,23 @@
 ---
-title: Instalación de la compatibilidad de Python
+title: Instalación de compatibilidad con Python
 description: Cómo instalar las Herramientas de Python para Visual Studio (PTVS) en Visual Studio 2017, 2015, 2013, 2012 y 2010, incluidas las opciones y las ubicaciones de instalación.
-ms.date: 10/09/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5e7479a8d121eeb518d5ba39c9eb1444af64a788
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: e306bffe8f2cd59332f367822cd90b54b44b7635
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349026"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063760"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Instalación de la compatibilidad con Python en Visual Studio en Windows
 
@@ -82,7 +83,7 @@ Si encuentra problemas al instalar o ejecutar Python en Visual Studio, pruebe lo
 - Use la opción [**Reparar**](../install/repair-visual-studio.md) en el instalador de Visual Studio.
 - Reparar o reinstalar Python a través de **Configuración** > **Aplicaciones y características** en Windows.
 
-**Error de ejemplo**: no se ha podido iniciar el proceso interactivo: System.ComponentModel.Win32Exception (0x80004005): error desconocido (0xc0000135) en Microsoft.PythonTools.Repl.PythonInteractiveEvaluator.d__43.MoveNext().
+**Error de ejemplo**: No se pudo iniciar el proceso interactivo: System.ComponentModel.Win32Exception (0x80004005): Error desconocido (0xc0000135) en Microsoft.PythonTools.Repl.PythonInteractiveEvaluator.d__43.MoveNext().
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 
@@ -116,10 +117,10 @@ En Visual Studio 2015 y versiones anteriores, las rutas de instalación son las 
 
 - 32 bits:
   - Ruta de acceso: *%Archivos de programa(x86)%\Microsoft Visual Studio \<VS_ver>\Common7\IDE\Extensions\Microsoft\Herramientas de Python para Visual Studio\\<PTVS_ver>*
-  - Ubicación del registro de ruta de acceso: **HKEY_LOCAL_MACHINE\Software\Microsoft\PythonTools\\<VS_ver>\InstallDir**
+  - Ubicación del Registro de ruta de acceso: **HKEY_LOCAL_MACHINE\Software\Microsoft\PythonTools\\<VS_ver>\InstallDir**
 - 64 bits:
   - Ruta de acceso: *%Archivos de programa%\Microsoft Visual Studio \<VS_ver>\Common7\IDE\Extensions\Microsoft\Herramientas de Python para Visual Studio\\<PTVS_ver>*
-  - Ubicación del registro de ruta de acceso: **HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\PythonTools\\<VS_ver>\InstallDir**
+  - Ubicación del Registro de ruta de acceso: **HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\PythonTools\\<VS_ver>\InstallDir**
 
 donde:
 

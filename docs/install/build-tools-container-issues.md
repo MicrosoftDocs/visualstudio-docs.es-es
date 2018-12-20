@@ -1,9 +1,9 @@
 ---
 title: Problemas conocidos de contenedores
 description: Obtenga más información sobre los problemas conocidos que pueden producirse al instalar Visual Studio Build Tools 2017 en un contenedor de Windows.
-ms.custom: ''
 ms.date: 04/18/2018
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 140083f1-05bc-4014-949e-fb5802397c7a
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c94c6756e1272b08136f624e9cde63523d630b35
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 529d967f34a5c99c8416058acad317cdc47d1053
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139150"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158624"
 ---
 # <a name="known-issues-for-containers"></a>Problemas conocidos de contenedores
 
@@ -34,7 +34,7 @@ Los problemas conocidos aquí descritos se producen cuando se instala Visual Stu
 * Pase `--norestart` en la línea de comandos. Al redactar este artículo, el intento de reinicio de un contenedor de Windows desde el contenedor devuelve `ERROR_TOO_MANY_OPEN_FILES` al host.
 * Si basa la imagen directamente en microsoft/windowsservercore, puede que .NET Framework no se instale correctamente y no se indique ningún error de instalación. El código administrado podría no ejecutarse una vez completada la instalación. En su lugar, base la imagen en [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) o en otra versión más reciente. Por ejemplo, puede ver un error como el siguiente al compilar con MSBuild:
 
-  > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.targets(84,5): Error MSB6003: No se pudo ejecutar la tarea ejecutable "csc.exe" especificada. No se pudo cargar el archivo o ensamblado «System.IO.FileSystem, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a» o una de sus dependencias. El sistema no puede encontrar el archivo especificado.
+  > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.targets(84,5): error MSB6003: No se pudo ejecutar la tarea ejecutable especificada "csc.exe". No se pudo cargar el archivo o ensamblado «System.IO.FileSystem, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a» o una de sus dependencias. El sistema no puede encontrar el archivo especificado.
 
 ## <a name="build-tools-container"></a>Contenedor de Build Tools
 

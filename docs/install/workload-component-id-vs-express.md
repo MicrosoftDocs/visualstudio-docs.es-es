@@ -1,5 +1,6 @@
 ---
 title: Identificadores de componente y carga de trabajo de Visual Studio Desktop Express 2017
+titleSuffix: ''
 description: Uso de identificadores de componente y carga de trabajo para instalar Visual Studio mediante la línea de comandos o especificarlo como una dependencia en un manifiesto VSIX
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
 ms.workload:
 - multiple
-ms.openlocfilehash: 48c478986ba79d84bb4cc93e7437a9a8a6aac33a
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 6b11aec1291847e917ad7c5d53ad81a3a5b37390
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607658"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051748"
 ---
 # <a name="visual-studio-2017-desktop-express-component-directory"></a>Directorio de componentes de Visual Studio 2017 Express para escritorio
 
@@ -35,15 +36,15 @@ Tenga en cuenta también lo siguiente sobre la página:
 * Si lo desea, también puede instalar los componentes con la marca **Recomendado** y **Opcional**.
 * También hemos agregado una sección que muestra los componentes adicionales que no están asociados a ninguna carga de trabajo.
 
-Al establecer las dependencias del manifiesto de VSIX, debe especificar solo identificadores de componentes. Utilice las tablas de esta página para determinar las dependencias de componente mínimas. En algunos casos, esto podría significar que se especifique solo un componente de una carga de trabajo. En otros escenarios, puede significar que especifique varios componentes de una sola carga de trabajo o varios componentes de varias cargas de trabajo. Para obtener más información, consulte la página [How to: Migrate Extensibility Projects to Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) (Migración de proyectos de extensibilidad a Visual Studio 2017).
+Al establecer las dependencias del manifiesto de VSIX, debe especificar solo identificadores de componentes. Utilice las tablas de esta página para determinar las dependencias de componente mínimas. En algunos casos, esto podría significar que se especifique solo un componente de una carga de trabajo. En otros escenarios, puede significar que especifique varios componentes de una sola carga de trabajo o varios componentes de varias cargas de trabajo. Para obtener más información, vea la página [Cómo: Migrar proyectos de extensibilidad a Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
 Para obtener más información acerca de cómo utilizar estos identificadores, vea [Usar parámetros de la línea de comandos para instalar Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md). Y, para obtener una lista de los identificadores de componente y carga de trabajo para otros productos, consulte la página [Visual Studio 2017 Workload and Component IDs](workload-and-component-ids.md) (Identificadores de componente y carga de trabajo de Visual Studio 2017).
 
 ## <a name="express-for-windows-desktop"></a>Express para escritorio de Windows
 
-**Id.:** Microsoft.VisualStudio.Workload.WDExpress
+**ID:** Microsoft.VisualStudio.Workload.WDExpress
 
-**Descripción:** cree aplicaciones nativas y administradas como WPF, WinForms y Win32 con edición de código compatible con la sintaxis, control de código fuente y administración de elementos de trabajo. Incluye compatibilidad con C#, Visual Basic y Visual C++.
+**Descripción:** Cree aplicaciones nativas y administradas como WPF, WinForms y Win32 con edición de código compatible con la sintaxis, control de código fuente y administración de elementos de trabajo. Incluye compatibilidad con C#, Visual Basic y Visual C++.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 

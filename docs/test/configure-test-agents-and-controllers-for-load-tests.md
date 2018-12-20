@@ -1,5 +1,5 @@
 ---
-title: Configuración de agentes y controladores de pruebas para pruebas de carga en Visual Studio
+title: Configuración de agentes y controladores de pruebas para pruebas de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 363aac5bc07b49670cb35f5f1080f7835e7c4701
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 1f33859522ff42fc85c31261527f17ea0f765199
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895644"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068022"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Configurar agentes y controladores de pruebas para ejecutar pruebas de carga
 
@@ -43,15 +43,15 @@ Esta arquitectura proporciona las siguientes ventajas:
 
    **Configuración local:**
 
-  - Máquina1: Visual Studio, controlador, agente.
+  - Equipo1: Visual Studio, controlador, agente.
 
     ![Equipo local que usa controlador y agente](./media/load-test-configa.png)
 
     **Configuración remota típica:**
 
-  - Máquina1 y 2: Visual Studio (varios evaluadores pueden utilizar el mismo controlador).
+  - Equipo1 y 2: Visual Studio (varios evaluadores pueden usar el mismo controlador).
 
-  - Máquina3: controlador (puede tener también agentes instalados).
+  - Máquina3: controlador (también puede tener agentes instalados).
 
   - Máquina4-n: agente o agentes asociados al controlador en Máquina3.
 

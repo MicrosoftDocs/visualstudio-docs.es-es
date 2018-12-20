@@ -1,5 +1,5 @@
 ---
-title: Contraer y expandir regiones de código en Visual Studio
+title: Contracción y expansión de regiones de código
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c0b1312ef84e88050423cce74953f452e33dd9bf
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: b39e9613e36b45f812738ab4eab6b945727b196b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349184"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064710"
 ---
 # <a name="outlining"></a>esquematizar
 
@@ -53,7 +53,7 @@ El submenú **Edición** > **Esquematización** contiene los siguientes comandos
 |Contraer bloque:\<límite lógico>|(Visual C++) Contrae una región en la función que contiene el punto de inserción. Por ejemplo, si el punto de inserción está dentro de un bucle, se oculta el bucle.|
 |Contraer todo el contenido de: \<estructuras lógicas>|(Visual C++) Contrae todas las estructuras dentro de la función.|
 
-También puede utilizar Visual Studio SDK para definir las regiones de texto que desea expandir o contraer. Vea [Tutorial: esquematización](../extensibility/walkthrough-outlining.md).
+También puede utilizar Visual Studio SDK para definir las regiones de texto que desea expandir o contraer. Vea [Tutorial: Esquematización](../extensibility/walkthrough-outlining.md).
 
 ## <a name="see-also"></a>Vea también
 

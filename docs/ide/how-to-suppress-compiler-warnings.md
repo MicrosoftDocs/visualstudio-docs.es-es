@@ -1,5 +1,5 @@
 ---
-title: Supresión de las advertencias del compilador en Visual Studio para proyectos y paquetes NuGet
+title: Supresión de las advertencias del compilador para proyectos y paquetes NuGet
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e3a84dff28b174676ff6fe74bf5420863afcc83
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f805ce50a94304651aca6dd1379fbbf2f5ecc7b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948566"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060370"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>Cómo: Suprimir advertencias del compilador
+# <a name="how-to-suppress-compiler-warnings"></a>Procedimiento Supresión de advertencias del compilador
 
 Puede despejar un registro de compilación mediante el filtrado de uno o varios tipos de advertencias del compilador. Por ejemplo, quizá quiera revisar solo parte de los resultados generados al establecer el nivel de detalle del registro de la compilación en **Normal**, **Detallado** o **Diagnóstico**. Para obtener más información sobre el nivel de detalle, vea [Cómo: Ver, guardar y configurar archivos de registro de compilación](../ide/how-to-view-save-and-configure-build-log-files.md).
 
@@ -133,6 +133,6 @@ En algunos casos, puede que desee suprimir las advertencias del compilador de Nu
 
 ## <a name="see-also"></a>Vea también
 
-- [Tutorial: Compilar una aplicación](../ide/walkthrough-building-an-application.md)
+- [Tutorial: Creación de una aplicación](../ide/walkthrough-building-an-application.md)
 - [Cómo: Ver, guardar y configurar archivos de registro de compilación](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Compilar y generar](../ide/compiling-and-building-in-visual-studio.md)

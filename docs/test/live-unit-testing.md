@@ -1,5 +1,5 @@
 ---
-title: Live Unit Testing en Visual Studio
+title: Live Unit Testing
 ms.date: 2017-03-07
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6e0bd322b200fba3bf41f99c4119cbe287ce2967
-ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
+ms.openlocfilehash: 7be078044454ebf5d6b3a6d99a60fff66ab1f69b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42626771"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066215"
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Live Unit Testing con Visual Studio 2017
 
@@ -81,7 +81,7 @@ A continuación se indican las opciones que se pueden configurar:
 - El directorio en el que almacenar los datos persistentes.
 
 - La capacidad de eliminar todos los datos persistentes. Esto resulta útil cuando Live Unit Testing tiene un comportamiento impredecible o inesperado, lo que sugiere que se dañaron los datos persistentes.
-   
+
 - El intervalo después del cual un caso de prueba expira; el valor predeterminado es 30 segundos.
 
 - El número máximo de procesos de prueba que Live Unit Testing crea.
@@ -117,7 +117,7 @@ Live Unit Testing puede pausarse temporalmente o detenerse por completo en cualq
 
 ## <a name="view-coverage-visualization-in-the-editor-as-you-type"></a>Presentar la visualización de la cobertura en el editor a medida que escribe
 
-Cuando ya se ha habilitado, Live Unit Testing actualiza cada línea de código en el editor de Visual Studio para mostrar si el código que está escribiendo está cubierto por las pruebas unitarias y si las pruebas que cubre se superan.  La siguiente figura muestra líneas de código tanto con pruebas que se superan como con pruebas con error, así como líneas de código que no están cubiertas por las pruebas. Las líneas representadas con un símbolo "✓" de color verde solo están cubiertas por pruebas superadas, las líneas representadas con una "x" de color rojo están cubiertas por una o varias pruebas con error y las líneas representadas con un símbolo "➖" de color azul no están cubiertas por ninguna prueba.
+Cuando ya se ha habilitado, Live Unit Testing actualiza cada línea de código en el editor de Visual Studio para mostrar si el código que está escribiendo está cubierto por las pruebas unitarias y si las pruebas que cubre se superan.  La siguiente figura muestra líneas de código tanto con pruebas que se superan como con pruebas con error, así como líneas de código que no están cubiertas por las pruebas. Las líneas representadas con un símbolo "✓" de color verde solo están cubiertas por pruebas superadas, las líneas representadas con una "x" de color rojo están cubiertas por una o varias pruebas con error y las líneas representadas con un símbolo "" de color azul no están cubiertas por ninguna prueba.
 
   ![Imagen](./media/lut-codewindow.png)
 
@@ -137,7 +137,7 @@ Cuando mantiene el puntero sobre una prueba con error en la información sobre h
 
   ![Imagen](./media/lut-failedmsg.png)
 
-Cuando se navega a la prueba con error, Live Unit Testing también indica de manera visual en la signatura de método las pruebas que se aprobaron (lo que se indica con una probeta a medio llenar junto con un símbolo "✓" de color verde), las que no se aprobaron (una probeta a medio llenar junto con un símbolo "🞩" de color rojo) o que no participaron en Live Unit Testing (una probeta a medio llenar junto con un símbolo "➖" de color azul). Los métodos que no son de prueba no se muestran con ningún símbolo. En la figura siguiente se muestran los cuatro tipos de métodos.
+Cuando se navega a la prueba con error, Live Unit Testing también indica de manera visual en la signatura de método las pruebas que se aprobaron (lo que se indica con una probeta a medio llenar junto con un símbolo "✓" de color verde), las que no se aprobaron (una probeta a medio llenar junto con un símbolo "🞩" de color rojo) o que no participaron en Live Unit Testing (una probeta a medio llenar junto con un símbolo "" de color azul). Los métodos que no son de prueba no se muestran con ningún símbolo. En la figura siguiente se muestran los cuatro tipos de métodos.
 
   ![Imagen](media/lut-testsource.png)
 
@@ -202,5 +202,4 @@ También puede usar los atributos siguientes para excluir los métodos individua
 - [Herramientas de pruebas de código](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [Blog de Live Unit Testing](https://go.microsoft.com/fwlink/?linkid=842514)
 - [Preguntas más frecuentes de Live Unit Testing](live-unit-testing-faq.md)
-- [Vídeo de Channel 9: Live Unit Testing in Visual Studio 2017 (Live Unit Testing en Visual Studio 2017)](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
-
+- [Vídeo de Channel 9: Live Unit Testing en Visual Studio 2017](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)

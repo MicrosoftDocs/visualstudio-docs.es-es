@@ -1,5 +1,5 @@
 ---
-title: Creación de un complemento de grabación para pruebas de rendimiento web en Visual Studio
+title: Creación de un complemento de grabación para pruebas de rendimiento web
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6525327e85d40b9b942e4e29a7d759a15598c824
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 822c5cc1b657e6b5ada886ef7f10219a42df723a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895844"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064633"
 ---
-# <a name="how-to-create-a-recorder-plug-in"></a>Cómo: Crear un complemento de grabación
+# <a name="how-to-create-a-recorder-plug-in"></a>Procedimiento Crear un complemento de grabadora
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> permite modificar una prueba de rendimiento web grabada. La modificación se produce después de hacer clic en **Detener** en la barra de herramientas de la **grabadora de pruebas de rendimiento web**, pero antes de que la prueba se guarde y se presente en el Editor de pruebas de rendimiento web.
 
@@ -111,7 +111,7 @@ Después de compilar el complemento de grabadora, coloque el archivo DLL resulta
     > [!WARNING]
     > Puede obtener un error similar al siguiente al ejecutar una prueba de rendimiento web o una prueba de carga que use su complemento:
     >
-    > **Error en la solicitud: excepción en \<plug-in> event: no se pudo cargar el archivo o ensamblado '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' o una de sus dependencias. El sistema no puede encontrar el archivo especificado.**
+    > **Error en la solicitud: Excepción en el evento \<complemento>: no se pudo cargar el archivo o ensamblado "\<archivo "nombre_de_complemento".dll>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null" o una de sus dependencias. El sistema no puede encontrar el archivo especificado.**
     >
     > Esto ocurre si realiza cambios en el código de cualquier complemento y crea una nueva versión de DLL **(Version=0.0.0.0)**, pero el complemento sigue haciendo referencia a la versión original del complemento. Para corregir este problema, siga estos pasos:
     >

@@ -1,5 +1,5 @@
 ---
-title: Sugerencias de productividad para Visual Studio
+title: Sugerencias de productividad
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 362004cba4792fe2405d6cc009a0ae918fdd535e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: e4b4d4e6a0833d6fbea1a34c26a5858f3e28be1c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671305"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067983"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Sugerencias de productividad para Visual Studio
 
@@ -118,11 +118,11 @@ En cualquier momento, puede trabajar en varios archivos de código y desplazarse
 
      También puede administrar los archivos más fácilmente si crea otra instancia del **Explorador de soluciones** y la mueve a otro monitor. Para crear otra instancia del **Explorador de soluciones**, abra un menú contextual en el **Explorador de soluciones** y pulse **Nueva vista del Explorador de soluciones**.
 
-- **Personalizar las fuentes que aparecen en Visual Studio**. Puede cambiar la fuente, el tamaño y el color que se usa para el texto en el IDE. Por ejemplo, puede personalizar el color de determinados elementos de código en el editor y la fuente en las ventanas de herramientas o en todo el IDE. Para obtener más información, vea [Cómo: Cambiar fuentes y colores en Visual Studio](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) y [Cómo: Cambiar las fuentes y los colores del editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+- **Personalizar las fuentes que aparecen en Visual Studio**. Puede cambiar la fuente, el tamaño y el color que se usa para el texto en el IDE. Por ejemplo, puede personalizar el color de determinados elementos de código en el editor y la fuente en las ventanas de herramientas o en todo el IDE. Para obtener más información, vea [Cómo: Cambiar fuentes y colores](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) y [Cómo: Cambiar las fuentes y los colores del editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ## <a name="see-also"></a>Vea también
 
 - [Métodos abreviados de teclado predeterminados para comandos de uso frecuente](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
-- [Cómo: Personalizar menús y barras de herramientas en Visual Studio](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
-- [Tutorial: Crear una aplicación sencilla](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [Cómo: Personalizar menús y barras de herramientas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+- [Tutorial: Creación de una aplicación sencilla](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
 - [Sugerencias y trucos de accesibilidad](../ide/reference/accessibility-tips-and-tricks.md)
