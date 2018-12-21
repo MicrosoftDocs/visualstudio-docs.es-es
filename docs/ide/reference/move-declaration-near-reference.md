@@ -1,5 +1,5 @@
 ---
-title: Acercamiento de la declaración de variable a la referencia en Visual Studio
+title: Acercamiento de la declaración de variable a la referencia
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: b3a231aafce69bfeeaff7defee6d5f85c7ffc8b2
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 9bc661331ee03af6d34caeae847b717db1f21fc5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896606"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065347"
 ---
 # <a name="move-declaration-near-reference-refactoring"></a>Refactorización de acercamiento de la declaración a la referencia
 
@@ -26,9 +26,9 @@ Esta refactorización se aplica a lo siguiente:
 
 **Qué:** Permite acercar las declaraciones de variable a su uso.
 
-**Cuándo:** Tiene declaraciones de variable que pueden estar en un ámbito más restringido.
+**Cuándo:** Hay declaraciones de variable que pueden estar en un ámbito más restringido.
 
-**Por qué:**: Puede dejarlo tal cual, pero podría causar problemas de legibilidad u ocultar información. Se trata de una oportunidad de refactorización para mejorar la legibilidad.
+**Por qué:** Se podría dejar tal cual, pero podría causar problemas de legibilidad u ocultar información. Se trata de una oportunidad de refactorización para mejorar la legibilidad.
 
 ## <a name="how-to"></a>Procedimiento
 

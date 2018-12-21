@@ -1,5 +1,5 @@
 ---
-title: Personalización del editor de Visual Studio
+title: Personalización del editor
 ms.date: 11/20/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a397932e23386356757ca96dc86dee7222947431
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: e7643da4819d88282b5588bc97020f769301c483
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446149"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065091"
 ---
 # <a name="customize-the-editor"></a>Personalización del editor
 
@@ -30,7 +30,7 @@ Para más información sobre las opciones del editor de texto, consulte [Opcione
 
 ## <a name="see-also"></a>Vea también
 
-- [Guía de inicio rápido: personalizar el IDE de Visual Studio](../ide/quickstart-personalize-the-ide.md)
+- [Inicio rápido: Personalización del IDE y el editor de Visual Studio](../ide/quickstart-personalize-the-ide.md)
 - [Características del editor de código](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Establecer marcadores en el código](../ide/setting-bookmarks-in-code.md)
 - [General, Entorno, Opciones (Cuadro de diálogo)](../ide/reference/general-environment-options-dialog-box.md)

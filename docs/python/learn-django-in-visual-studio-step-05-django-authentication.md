@@ -1,5 +1,6 @@
 ﻿---
-title: 'Tutorial: Información acerca de Django en Visual Studio, paso 5'
+title: Información sobre el paso 5 del tutorial de Django en Visual Studio, Autenticación
+titleSuffix: ''
 description: Un recorrido por los aspectos básicos de Django en el contexto de los proyectos de Visual Studio, en particular las características de autenticación proporcionadas por las plantillas Proyecto web de Django.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cb195e971612124ace53d8eb33b5c3563cd19a12
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 77cc7816a1a05e3b6a883416225717679dd5661b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001235"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064078"
 ---
-# <a name="step-5-authenticate-users-in-django"></a>Paso 5. Autenticar usuarios en Django
+# <a name="step-5-authenticate-users-in-django"></a>Paso 5: Autenticación de usuarios en Django
 
-**Paso anterior: [Usar la plantilla completa de Proyecto web de Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
+**Paso anterior: [Uso de la plantilla completa de Proyecto web de Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
 Dado que la autenticación es una necesidad común para las aplicaciones web, la plantilla "Proyecto web de Django" incluye un flujo de autenticación básica. (La plantilla "Proyecto web de Django de sondeos", que se describe en el paso 6 de este tutorial, también incluye el mismo flujo). Al usar cualquiera de las plantillas de proyecto de Django, Visual Studio incluye todos los módulos necesarios para la autenticación en el archivo *settings.py* del proyecto de Django.
 
@@ -29,7 +31,7 @@ En este paso, aprenderá lo siguiente:
 > [!div class="checklist"]
 > - Cómo usar el flujo de autenticación proporcionado en las plantillas de Visual Studio (paso 5.1)
 
-## <a name="step-5-1-use-the-authentication-flow"></a>Paso 5.1: Usar el flujo de autenticación
+## <a name="step-5-1-use-the-authentication-flow"></a>Paso 5-1: Uso del flujo de autenticación
 
 En los pasos siguientes se utiliza el flujo de autenticación y se describen las partes del proyecto que intervienen:
 
@@ -204,9 +206,9 @@ En los pasos siguientes se utiliza el flujo de autenticación y se describen las
 
 1. Cuando haya terminado, detenga el servidor y una vez más confirme los cambios en el control de código fuente.
 
-### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Pregunta: ¿Cuál es la finalidad de la etiqueta {% csrf_token %} que aparece en los elementos \<form\>?
+### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Cuál es la finalidad de la etiqueta {% csrf_token %} que aparece en los elementos \<form\>?
 
-Respuesta: La etiqueta `{% csrf_token %}` incorpora la [protección de falsificación de solicitud entre sitios (csrf)](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django docs). Normalmente se agrega esta etiqueta a cualquier elemento que incluya los métodos de solicitud POST, PUT o DELETE, como un formulario. Luego, la función de representación de la plantilla (`render`) inserta la protección necesaria.
+Respuesta: La etiqueta `{% csrf_token %}` incluye la [protección de falsificación de solicitud entre sitios (csrf)](https://docs.djangoproject.com/en/2.0/ref/csrf/) integrada de Django (documentación de Django). Normalmente se agrega esta etiqueta a cualquier elemento que incluya los métodos de solicitud POST, PUT o DELETE, como un formulario. Luego, la función de representación de la plantilla (`render`) inserta la protección necesaria.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

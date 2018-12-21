@@ -9,20 +9,22 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ffd6b8c66f0575ec07e66ea2a138f2761b20cc7a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8acdeb17c9c45613d6a987d503deeaf63beecdaa
+ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379643"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52954089"
 ---
-# <a name="install-third-party-unit-test-frameworks"></a>Instalar marcos de prueba unitaria de terceros
+# <a name="install-unit-test-frameworks"></a>Instalación de marcos de pruebas unitarias
 
 El Explorador de pruebas de Visual Studio puede ejecutar cualquier marco de pruebas que haya desarrollado una interfaz de adaptador para el explorador. El programa de instalación del marco instala los binarios y agrega plantillas del proyecto de Visual Studio para los idiomas que admite. Cuando crea un proyecto con la plantilla, el marco se registra en el Explorador de pruebas. Una solución de Visual Studio puede contener proyectos de prueba unitaria que usen diferentes marcos y que estén destinados a diferentes idiomas. El Explorador de pruebas los ejecuta todos.
 
-## <a name="acquire-third-party-frameworks"></a>Adquirir marcos de terceros
+[MSTest](getting-started-with-unit-testing.md) es el marco de pruebas proporcionado por Visual Studio y se instala con Visual Studio de forma predeterminada.
 
-Puede descargar e instalar numerosos marcos de pruebas unitarias de terceros mediante el Administrador de extensiones de Visual Studio o desde Visual Studio Marketplace. Los marcos también pueden descargarse desde otros sitios, como el sitio web del marco.
+## <a name="acquire-frameworks"></a>Adquisición de marcos de trabajo
+
+Puede descargar e instalar marcos de pruebas unitarias de terceros mediante el Administrador de extensiones de Visual Studio o desde [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Los marcos también pueden descargarse desde otros sitios, como el sitio web del marco.
 
 ### <a name="install-from-visual-studio"></a>Instalar desde Visual Studio
 
@@ -64,7 +66,7 @@ Actualice al adaptador de pruebas estable más reciente para experimentar una me
 
 1. Abra el Administrador de paquetes de NuGet de la solución; para ello, vaya a **Herramientas** > **Administrador de paquetes de NuGet** > **Administrar paquetes de NuGet para la solución**.
 
-2. Haga clic en la pestaña **Actualizaciones** y busque los adaptadores de prueba NUnit o xUnit instalados.
+2. Haga clic en la pestaña **Actualizaciones** y busque los adaptadores de prueba MSTest, NUnit o xUnit instalados.
 
 3. Seleccione cada adaptador de prueba y, después, seleccione la versión estable más reciente en el menú desplegable.
 

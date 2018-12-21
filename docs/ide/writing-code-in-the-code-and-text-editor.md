@@ -1,5 +1,5 @@
 ---
-title: Características del editor de código en Visual Studio
+title: Características del editor de código
 ms.date: 02/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be5d3692459c2c65d4243c831ef4de002828bb0
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: ca203b0c27906d1f861689953ca55280f73fa894
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349080"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160119"
 ---
 # <a name="features-of-the-code-editor"></a>Características del editor de código
 
@@ -60,8 +60,8 @@ Puede encontrar un número de características avanzadas en el menú **Editar** 
 |No aplicar tabulación a las líneas seleccionadas|Cambia las tabulaciones iniciales por espacios. Si desea convertir todos los espacios del archivo en tabulaciones (o todas las tabulaciones en espacios), puede utilizar los comandos `Edit.ConvertSpacesToTabs` y `Edit.ConvertTabsToSpaces` . Estos comandos no aparecen en los menús de Visual Studio, pero se pueden llamar desde la ventana **Acceso rápido** o la ventana Comandos.|
 |Poner en mayúsculas|Cambia todos los caracteres de la selección a mayúsculas o, si no hay ninguna selección, cambia el carácter situado en el punto de inserción a mayúsculas.|
 |Poner en minúsculas|Cambia todos los caracteres de la selección a minúsculas o, si no hay ninguna selección, cambia el carácter situado en el punto de inserción a minúsculas.|
-|Subir líneas seleccionadas|Mueve la línea seleccionada una línea hacia arriba. Método abreviado: **Alt**+**flecha arriba**.|
-|Bajar líneas seleccionadas|Mueve la línea seleccionada una línea hacia abajo. Método abreviado: **Alt**+**flecha abajo**.|
+|Subir líneas seleccionadas|Mueve la línea seleccionada una línea hacia arriba. Método abreviado: **Alt**+**Flecha arriba**.|
+|Bajar líneas seleccionadas|Mueve la línea seleccionada una línea hacia abajo. Método abreviado: **Alt**+**Flecha abajo**.|
 |Eliminar espacio en blanco horizontal|Elimina las tabulaciones o los espacios al final de la línea actual.|
 |Ver espacios en blanco|Muestra los espacios como puntos elevados y las tabulaciones como flechas. El final de un archivo se muestra como un glifo rectangular. Si está seleccionada la opción **Herramientas** > **Opciones** > **Editor de texto** > **Todos los lenguajes** > **Ajuste automático de línea** > **Mostrar glifos visibles para ajuste automático de línea**, también se muestra ese glifo.|
 |Ajuste automático de línea|Hace que todas las líneas de un documento se vean en la ventana de código. Puede activar o desactivar el ajuste automático de línea en la configuración **Editor de texto/Todos los lenguajes** (**Herramientas** > **Opciones** > **Editor de texto** > **Todos los lenguajes**).|
@@ -91,7 +91,7 @@ Para más información sobre cómo personalizar el editor, consulte [Personaliza
 ## <a name="see-also"></a>Vea también
 
 - [Editor de código fuente (Visual Studio para Mac)](/visualstudio/mac/source-editor)
-- [IDE de Visual Studio](../ide/visual-studio-ide.md)
+- [IDE de Visual Studio](../get-started/visual-studio-ide.md)
 - [Introducción a C++ en Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md)
 - [Introducción a C# y ASP.NET Core en Visual Studio](../ide/tutorial-csharp-aspnet-core.md)
 - [Introducción a Python en Visual Studio](../ide/quickstart-python.md)

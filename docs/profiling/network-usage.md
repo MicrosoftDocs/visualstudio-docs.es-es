@@ -1,6 +1,6 @@
 ---
-title: Análisis del uso de la red en aplicaciones UWP en Visual Studio | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Análisis del uso de la red en aplicaciones UWP
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03b5a669c0977aa35ef6943af3fa6afe6dda2aaa
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 06546e3d36e0568c27e4160342ad271a026b7b9e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220793"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062249"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Análisis del uso de la red en aplicaciones UWP
 La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de las operaciones de red realizadas mediante la [Windows.Web.Http API](/uwp/api/windows.web.http). Analizar los datos puede ayudarle a resolver problemas como los problemas de acceso y autenticación, uso incorrecto de la caché y rendimiento deficiente de visualización y descarga.  
@@ -74,7 +74,7 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
   
 ## <a name="see-also"></a>Vea también  
  [Ejecución de herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  
- [Blog de Visual Studio: presentación del inspector de red de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [Vídeo de Channel 9: Herramientas de diagnóstico de VS: nuevo generador de perfiles de red](https://channel9.msdn.com/Series/ConnectOn-Demand/206)  
+ [Visual Studio blog: Introducing Visual Studio's network inspector](http://go.microsoft.com/fwlink/?LinkId=535022)  (Blog de Visual Studio: Introducción al inspector de red de Visual Studio)  
+ [Vídeo de Channel 9: VS diagnostics tools - new Network Profiler](https://channel9.msdn.com/Series/ConnectOn-Demand/206) (Herramientas de diagnóstico de VS: nuevo generador de perfiles de red)  
  [Generación de perfiles en Visual Studio](../profiling/index.md)  
  [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)

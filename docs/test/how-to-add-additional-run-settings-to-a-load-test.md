@@ -1,5 +1,5 @@
 ---
-title: Adición de parámetros de ejecución a una prueba de carga en Visual Studio
+title: Adición de parámetros de ejecución a una prueba de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e894bb0b53240795ad2bf7505ba081dbf479989d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 439120b80350081e1770ccce619d51b92673feef
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896619"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048059"
 ---
-# <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Cómo: Agregar más parámetros de ejecución a una prueba de carga
+# <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Procedimiento para agregar más parámetros de ejecución a una prueba de carga
 
 Los parámetros de ejecución de una prueba de carga determinan una variedad de otros valores. Estos incluyen la duración de la prueba, el nivel de detalle de la colección de resultados y los conjuntos de contadores que se recopilan cuando se ejecuta la prueba. Puede crear y almacenar varios parámetros de ejecución para cada prueba de carga, y seleccionar una configuración determinada para utilizarla durante la ejecución de la prueba. Cuando crea la prueba de carga mediante el **Asistente para prueba de carga nueva**, se agrega un parámetro de ejecución inicial a la prueba de carga.
 
@@ -40,14 +40,14 @@ Puede agregar más parámetros de ejecución a la prueba de carga con distintas 
 
      Se mostrará la ventana **Propiedades** con las propiedades de los parámetros de ejecución seleccionados.
 
-5.  En la ventana **Propiedades**, utilice el cuadro de texto de la propiedad **Name** para asignar al nuevo parámetro de ejecución un nombre que describa el propósito del parámetro de ejecución (por ejemplo, **Parámetro de ejecución: ejecución de cinco minutos**).
+5.  En la ventana **Propiedades**, use el cuadro de texto de la propiedad **Name** para asignar al nuevo parámetro de ejecución un nombre que describa su propósito (por ejemplo, **Parámetro de ejecución: ejecución de cinco minutos**).
 
 6.  Use la ventana **Propiedades** para cambiar los parámetros de ejecución. Por ejemplo, cambie la duración de ejecución a **00:05:00** para ejecutar la prueba durante cinco minutos.
 
     > [!NOTE]
     > Para obtener una lista completa de las propiedades de los parámetros de ejecución y sus descripciones, consulte [Propiedades de los parámetros de ejecución de las pruebas de carga](../test/load-test-run-settings-properties.md).
 
-     Ahora puede especificar que desea utilizar el parámetro de ejecución agregado estableciéndolo en el activo. Para más información, consulte [Cómo: Seleccionar el parámetro de ejecución activo para una prueba de carga](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
+     Ahora puede especificar que desea utilizar el parámetro de ejecución agregado estableciéndolo en el activo. Para obtener más información, vea [Cómo: Seleccionar el parámetro de ejecución activo de una prueba de carga](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
 ## <a name="see-also"></a>Vea también
 

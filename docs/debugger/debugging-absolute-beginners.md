@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f6b0855b18f12bd80ad17c5b544a95e5ee57de9
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: 31b6812ec41aedd4e33eb0d043476365d3938767
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821375"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160028"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Cómo depurar para principiantes sin experiencia
 
@@ -66,7 +66,7 @@ Al ejecutar una aplicación con normalidad, verá errores y resultados incorrect
 
 Ejecutar una aplicación dentro de un depurador, también denominado *modo de depuración*, significa que el depurador supervisa activamente todo lo que sucede durante la ejecución del programa. También permite pausar la aplicación en cualquier momento para examinar su estado y después recorrer el código línea por línea para ver todos los detalles a medida que se produce.
 
-En Visual Studio, puede entrar en el modo de depuración mediante **F5** (o el comando de menú **Depurar** > **Iniciar depuración** o el botón **Iniciar depuración** ![Iniciar depuración](../debugger/media/dbg-tour-start-debugging.png "Iniciar depuración")) en la barra de herramientas Depurar. Si se produce alguna excepción, el Asistente de excepciones de Visual Studio le lleva al punto exacto donde ocurrió y proporciona información útil adicional.
+En Visual Studio, puede entrar en el modo de depuración mediante **F5** (o el comando de menú **Depurar** > **Iniciar depuración** o el botón **Iniciar depuración** ![Start Debugging](../debugger/media/dbg-tour-start-debugging.png "Start Debugging") de la barra de herramientas Depurar). Si se produce alguna excepción, el Asistente de excepciones de Visual Studio le lleva al punto exacto donde ocurrió y proporciona información útil adicional.
 
 Si no recibió una excepción, probablemente pueda hacerse una idea de dónde buscar el problema en el código. Aquí es donde usará *puntos de interrupción* con el depurador para darse una oportunidad para examinar más detenidamente el código. Los puntos de interrupción son la característica más básica y esencial para una depuración confiable. Un punto de interrupción indica dónde Visual Studio debe pausar la ejecución de código para poder echar un vistazo a los valores de las variables, al comportamiento de la memoria o a la secuencia en la que se ejecuta el código.
 
@@ -78,11 +78,11 @@ Para ayudar a ilustrar estos conceptos, le llevaremos por código de ejemplo que
 
 A continuación, crearemos una aplicación que tiene algunos errores.
 
-1. Debe tener instalado Visual Studio y la carga de trabajo **Desarrollo de escritorio de .NET** o la carga de trabajo **Desarrollo multiplataforma de .NET Core**, según el tipo de aplicación que desee crear.
+1. Debe tener instalado Visual Studio y las cargas de trabajo **Desarrollo de escritorio de .NET** o **Desarrollo multiplataforma de .NET Core**, según el tipo de aplicación que quiera crear.
 
     Si todavía no ha instalado Visual Studio, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  para instalarlo de forma gratuita.
 
-    Si tiene que instalar la carga de trabajo pero ya tiene Visual Studio, haga clic en **Herramientas** > **Obtener herramientas y características**. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** (o la carga de trabajo **Desarrollo multiplataforma de .NET Core**) y después elija **Modificar**.
+    Si tiene que instalar la carga de trabajo pero ya tiene Visual Studio, haga clic en **Herramientas** > **Obtener herramientas y características**. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** (o la carga de trabajo **Desarrollo multiplataforma de .NET Core**) y después haga clic en **Modificar**.
 
 1. Abra Visual Studio, y después elija **Archivo** > **Nuevo** > **Proyecto**.
 

@@ -1,7 +1,7 @@
 ---
-title: Instalación y uso de Visual Studio y de servicios de Azure detrás de un firewall o servidor proxy | Microsoft Docs
+title: Instalación y uso detrás de un firewall o proxy
 description: Revise las direcciones URL de dominio, los puertos y los protocolos que quiere incluir en la lista de permitidos o abrir si la organización usa un firewall o un servidor proxy
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 07/10/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -17,20 +17,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2636bed20da5af32e011b39cf262349d42ddda55
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 91074815c0723f24bbb89bcb45eafc0fae5866d6
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349574"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160171"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalación y uso de Visual Studio y de servicios de Azure detrás de un firewall o servidor proxy
 
-Si usted o su organización utiliza medidas de seguridad como un firewall o un servidor proxy, hay direcciones URL de dominio que quizá desee "incluir en una lista blanca", así como puertos y protocolos que desea abrir para tener la mejor experiencia al instalar y utilizar Visual Studio y los servicios de Azure.
+Si usted o su organización utiliza medidas de seguridad como un firewall o un servidor proxy, hay direcciones URL de dominio que quizá desee "incluir en una lista de permitidos", así como puertos y protocolos que desea abrir para tener la mejor experiencia al instalar y utilizar Visual Studio y los servicios de Azure.
 
-* **[Instalación de Visual Studio](#install-visual-studio)**: en estas tablas se indican las direcciones URL de dominio que se van a incluir en la lista de permitidos para que tenga acceso a todos los componentes y las cargas de trabajo que desee.
+* **[Instalación de Visual Studio](#install-visual-studio)**: en estas tablas se incluyen las direcciones URL de dominio que se van a incluir en la lista de permitidos para que tenga acceso a todos los componentes y las cargas de trabajo que quiera.
 
-* **[Uso de Visual Studio y de servicios de Azure](#use-visual-studio-and-azure-services)**: en esta tabla se indican las direcciones URL de dominio que se van a incluir en la lista de permitidos, así como los puertos y protocolos que se van a abrir para que tenga acceso a todas las características y servicios que desee.
+* **[Uso de Visual Studio y de servicios de Azure](#use-visual-studio-and-azure-services)**: en esta tabla se indican las direcciones URL de dominio que se van a incluir en la lista de permitidos, así como los puertos y protocolos que se van a abrir para que tenga acceso a todas las características y servicios que quiera.
 
 > [!NOTE]
 > Este artículo se ha escrito para Visual Studio en Windows, pero alguna información también se aplica a la [Instalación de Visual Studio para Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server) detrás de un servidor proxy o firewall.
@@ -55,7 +55,7 @@ Debido a que el Instalador de Visual Studio descarga archivos de varios dominios
 | visualstudio.microsoft.com | Ubicación de la documentación |
 | docs.microsoft.com | Ubicación de la documentación |
 | msdn.microsoft.com | Ubicación de la documentación |
-| www.microsoft.com | Ubicación de la documentación |
+| www\.microsoft.com | Ubicación de la documentación |
 | \*.windows.net | Ubicación de inicio de sesión |
 | \*.microsoftonline.com | Ubicación de inicio de sesión |
 | \*.live.com | Ubicación de inicio de sesión |
@@ -72,9 +72,9 @@ Debido a que el Instalador de Visual Studio descarga archivos de varios dominios
 | download.unity3d.com | Desarrollo de juegos con Unity (Unity) |
 | netstorage.unity3d.com | Desarrollo de juegos con Unity (Unity) |
 | dl.google.com | Desarrollo para dispositivos móviles con JavaScript (emulador, NDK y SDK de Android) <br /><br />Desarrollo para dispositivos móviles con .NET (emulador, NDK y SDK de Android) |
-| www.incredibuild.com | Desarrollo de juegos con C++ (IncrediBuild) |
+| www\.incredibuild.com | Desarrollo de juegos con C++ (IncrediBuild) |
 | incredibuildvs2017i.azureedge.net | Desarrollo de juegos con C++ (IncrediBuild) |
-| www.python.org | Desarrollo de Python (Python) <br /><br />Aplicaciones analíticas y de ciencia de datos (Python) |
+| www\.python.org | Desarrollo de Python (Python) <br /><br />Aplicaciones analíticas y de ciencia de datos (Python) |
 | | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Uso de Visual Studio y de servicios de Azure
@@ -121,7 +121,7 @@ Para asegurarse de que tiene acceso a todo lo que necesita cuando utiliza Visual
 | Depurador de <br>instantáneas | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (dependiente de la versión de Visual Studio) | 1. Archivo .json de consulta para el tamaño de SKU del servicio de aplicación <br>2. Varias llamadas de Azure RM <br>3. Llamada de preparación de sitio  <br>4. Punto de conexión de Kudu del servicio de aplicación dirigido del cliente <br>5. Versión de la extensión de sitio de consulta publicada en nuget.org <br>6. Canal de depuración remota |
 | Azure Stream Analytics <br><br>HDInsight | Management.azure.com | https | 443 | Se utiliza para ver, enviar, ejecutar y administrar trabajos de ASA. <br><br> Se utiliza para examinar clústeres de HDI y para enviar, diagnosticar y depurar trabajos de HDI. |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | Se utiliza para compilar, enviar, ver, diagnosticar y depurar trabajos; también para examinar archivos ADLS, y para cargar y descargar archivos. |
-| Servicio de empaquetado | [cuenta].visualstudio.com <br/> [cuenta].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | \*.npmjs.org, \*.nuget.org y \*.nodejs.org solo son necesarios para determinados escenarios de tareas de compilación (por ejemplo, el Instalador de la herramienta NuGet o el Instalador de herramientas de nodo) o si se van a usar canales de subida públicos con las fuentes. Los otros tres dominios son necesarios para la funcionalidad principal del servicio de empaquetado. |
+| Servicio de empaquetado | [cuenta].visualstudio.com <br/> [cuenta].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | \*.npmjs.org, \*.nuget.org y \*.nodejs.org solo son necesarios para determinados escenarios de tareas de compilación (por ejemplo: Instalador de la herramienta de NuGet, instalador de la herramienta Nodo) o si piensa usar canales de subida públicos con las fuentes. Los otros tres dominios son necesarios para la funcionalidad principal del servicio de empaquetado. |
 | Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com | | | Usado para conectar con Azure DevOps Services |
 | | | | | |
 

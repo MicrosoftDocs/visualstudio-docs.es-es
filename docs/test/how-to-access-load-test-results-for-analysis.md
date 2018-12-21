@@ -1,5 +1,5 @@
 ---
-title: Análisis de resultados de pruebas de carga en Visual Studio
+title: Análisis de los resultados de pruebas de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 91e1b3c3a094e9bb510132d9160432a868fd559c
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 4c5da35407b028d1c435c87a55f265bd22c46c3a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896450"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53047634"
 ---
-# <a name="how-to-access-load-test-results-for-analysis"></a>Acceso a los resultados de pruebas de carga para su análisis
+# <a name="how-to-access-load-test-results-for-analysis"></a>Procedimiento para acceder a los resultados de pruebas de carga para el análisis
 
 Al ejecutar una prueba de carga desde el Editor de pruebas de carga, los resultados de pruebas de carga se abren automáticamente y la prueba de carga en ejecución se muestra en el **Analizador de pruebas de carga**. Al ejecutar una prueba de carga desde la línea de comandos, debe obtener acceso a los resultados de pruebas de carga manualmente.
 

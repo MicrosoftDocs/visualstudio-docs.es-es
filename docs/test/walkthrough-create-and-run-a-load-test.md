@@ -1,5 +1,5 @@
 ---
-title: Creación y ejecución de una prueba de carga en Visual Studio
+title: Crear y ejecutar una prueba de carga
 ms.date: 10/01/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 649fe84b716355f5c7228e371fa88d80937f24af
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: a5782985406d9b2daa53c1fd6ecefb3f31cc0104
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895384"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055775"
 ---
-# <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Tutorial: Crear y ejecutar una prueba de carga que contiene pruebas unitarias
+# <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Tutorial: Creación y ejecución de una prueba de carga que contiene pruebas unitarias
 
 En este tutorial se crea una prueba de carga que contiene pruebas unitarias.
 
@@ -37,13 +37,13 @@ En este tutorial, se realizarán las siguientes tareas:
 
 -   Ejecutar una prueba de carga.
 
--   Siga los pasos de [Tutorial: Crear y ejecutar pruebas unitarias en código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) para crear una sencilla biblioteca de clases de C# que contenga un proyecto de prueba de carga y rendimiento web con algunas pruebas unitarias.
+-   Siga los pasos descritos en [Tutorial: Creación y ejecución de pruebas unitarias en código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) para crear una sencilla biblioteca de clases de C# que contenga un proyecto de prueba de carga y rendimiento web con algunas pruebas unitarias.
 
 ## <a name="create-a-load-test-containing-unit-tests-using-the-new-load-test-wizard"></a>Crear una prueba de carga que contenga pruebas unitarias mediante el Asistente para prueba de carga nueva
 
 ### <a name="to-start-the-new-load-test-wizard"></a>Para iniciar el Asistente para prueba de carga nueva
 
-1.  Abra la solución Bank creada en [Tutorial: Crear y ejecutar pruebas unitarias en código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+1.  Abra la solución Bank que ha creado en [Tutorial: Creación y ejecución de pruebas unitarias para código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 2.  En el **Explorador de soluciones**, abra el menú contextual del nodo de la solución Bank, elija **Agregar** y, luego, **Nuevo proyecto**.
 

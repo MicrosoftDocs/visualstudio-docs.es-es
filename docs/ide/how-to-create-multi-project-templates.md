@@ -1,5 +1,5 @@
 ---
-title: Creación de plantillas de varios proyectos para Visual Studio
+title: Crear plantillas de varios proyectos
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,14 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 24002512ec891866839ad3bd33590c3dfe966e99
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: f53fa69f9fafd1dd3686a80fb367c2bc0b99a013
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978390"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049670"
 ---
-# <a name="how-to-create-multi-project-templates"></a>Cómo: Crear plantillas de varios proyectos
+# <a name="how-to-create-multi-project-templates"></a>Procedimiento Crear plantillas de varios proyectos
 
 Las plantillas de varios proyectos actúan como contenedores de dos o más proyectos. Cuando se crea un proyecto basado en una plantilla de varios proyectos a partir del cuadro de diálogo **Nuevo proyecto**, todos los proyectos de la plantilla se agregan a la solución.
 

@@ -1,24 +1,25 @@
 ---
 title: 'Inició rápido: Clonación de un repositorio de código Python'
 description: En este inicio rápido, creará un proyecto de Python en Visual Studio mediante la clonación del repositorio de Python Koans mediante Visual Studio Team Explorer.
-ms.date: 09/04/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a4b01cc775c32bc602699aa2753482f184661079
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 871a5f620cc90db5064562461336fdeac38ba757
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281694"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068398"
 ---
-# <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Inició rápido: Clonado de un repositorio de código Python en Visual Studio
+# <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Inicio rápido: Clonar un repositorio de código de Python en Visual Studio
 
 Cuando haya [instalado compatibilidad de Python en Visual Studio 2017](installing-python-support-in-visual-studio.md), puede agregar la extensión de GitHub para Visual Studio. La extensión le permite clonar fácilmente un repositorio de código de Python y crear un proyecto a partir de allí desde el IDE. Siempre puede clonar repositorios en la línea de comandos y después trabajar con ellos en Visual Studio.
 
@@ -57,7 +58,7 @@ Cuando haya [instalado compatibilidad de Python en Visual Studio 2017](installin
 
 1. Presione **Ctrl**+**F5** o seleccione **Depurar** > **Iniciar sin depurar** para ejecutar el programa. Si ve un **FileNotFoundError** para *koans.txt*, compruebe el directorio de trabajo como se describe en el paso anterior.
 
-1. Cuando el programa se ejecuta correctamente, muestra un error de aserción en la línea 17 de *python3/koans/about_asserts.py*. Este comportamiento es deliberado: el programa está diseñado para que, con sus correcciones de todos los errores intencionados, se pueda enseñar a Python. (Encontrará más información en [Ruby Koans](http://rubykoans.com/), en el que se inspira Python Koans).
+1. Cuando el programa se ejecuta correctamente, muestra un error de aserción en la línea 17 de *python3/koans/about_asserts.py*. Este comportamiento es deliberado: el programa está diseñado para que, con sus correcciones de todos los errores intencionados, se pueda enseñar a Python. (Encontrará más información en [Ruby Koans](https://rubykoans.com/), en el que se inspira Python Koans).
 
     ![Primer resultado del programa Python Koans](media/koans-output.png)
 
@@ -79,7 +80,7 @@ Cuando haya [instalado compatibilidad de Python en Visual Studio 2017](installin
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Tutorial: Trabajar con Python en Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+> [Tutorial: Uso de Python en Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Vea también
 

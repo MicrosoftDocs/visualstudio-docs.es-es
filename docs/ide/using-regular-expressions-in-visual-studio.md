@@ -1,5 +1,5 @@
 ---
-title: Usar expresiones regulares en Visual Studio
+title: Usar expresiones regulares
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bef854fd04ce8ac2ddf6fe834b3bede0f371eefe
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: 40983e4180db9530983217d581b898806dd85d27
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050305"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063803"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usar expresiones regulares en Visual Studio
 
@@ -31,7 +31,7 @@ Visual Studio usa [expresiones regulares de .NET Framework](/dotnet/standard/bas
 
 ## <a name="replacement-patterns"></a>Patrones de reemplazo
 
-Para usar un grupo de capturas numerado, incluya el grupo entre paréntesis en el patrón de expresión regular. Use `$number` (donde `number` es un entero que empieza por 1) para especificar un grupo numerado concreto en un patrón de reemplazo. Por ejemplo, la expresión regular agrupada `(\d)([a-z])` define dos grupos: el primero contiene un único dígito decimal y el segundo, un solo carácter comprendido entre **a** y **z**. La expresión encuentra cuatro coincidencias en la siguiente cadena: **1a 2b 3c 4d**. La cadena de reemplazo `z$1` hace referencia al primer grupo y convierte la cadena a **z1 z2 z3 z4**.
+Para usar un grupo de capturas numerado, incluya el grupo entre paréntesis en el patrón de expresión regular. Use `$number` (donde `number` es un entero que empieza por 1) para especificar un grupo numerado concreto en un patrón de reemplazo. Por ejemplo, la expresión regular agrupada `(\d)([a-z])` define dos grupos: el primero contiene un único dígito decimal y el segundo, un solo carácter comprendido entre **a** y **z**. La expresión encuentra cuatro coincidencias en la cadena siguiente: **1a 2b 3c 4d**. La cadena de reemplazo `z$1` hace referencia al primer grupo y convierte la cadena a **z1 z2 z3 z4**.
 
 Para más información sobre las expresiones regulares que se usan en patrones de reemplazo, vea [Sustituciones en expresiones regulares (Guía de .NET)](/dotnet/standard/base-types/substitutions-in-regular-expressions).
 

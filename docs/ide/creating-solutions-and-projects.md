@@ -1,5 +1,5 @@
 ---
-title: Creación de soluciones y proyectos en Visual Studio
+title: Crear soluciones y proyectos
 ms.date: 02/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a912534b9e0212e68a947fa892395a233f263a87
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 7c03709517f1c1d5bd28a2a0847a51895eb49557
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349642"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052157"
 ---
 # <a name="create-solutions-and-projects"></a>Crear soluciones y proyectos
 

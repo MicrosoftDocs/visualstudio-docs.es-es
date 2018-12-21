@@ -1,5 +1,6 @@
 ---
-title: 'Tutorial: Información sobre Flask en Visual Studio, paso 2'
+title: Información sobre el paso 2 del tutorial de Flask en Visual Studio, vistas y plantillas
+titleSuffix: ''
 description: Un recorrido por los aspectos básicos de Flask en el contexto de los proyectos de Visual Studio, en particular los pasos para crear una aplicación y usar vistas y plantillas.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 92b34ed0abbef18473ab9ccf6b85c236111822f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cbdf9232bdff56fa2d244f8baeed2d070dcb37a9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812626"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052950"
 ---
-# <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Paso 2. Crear una aplicación de Flask con vistas y plantillas de página
+# <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Paso 2: Creación de una aplicación de Flask con vistas y plantillas de página
 
-**Paso anterior[: Crear una solución y un proyecto de Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)**
+**Paso anterior: [Creación de una solución y un proyecto de Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)**
 
 Lo que ha conseguido en el paso 1 de este tutorial es una aplicación de Flask con una página y todo el código en un único archivo. Para facilitar un desarrollo futuro, es mejor refactorizar el código y crear una estructura para las plantillas de página. En concreto, debe separar el código de las vistas de la aplicación de otros aspectos, como el código de inicio.
 
@@ -30,7 +32,7 @@ En este paso aprenderá lo siguiente:
 > - Refactorizar el código de la aplicación para separar las vistas del código de inicio (paso 2-1)
 > - Representar una vista mediante una plantilla de página (paso 2-2)
 
-## <a name="step-2-1-refactor-the-project-to-support-further-development"></a>Paso 2-1: Refactorizar el proyecto para admitir un desarrollo futuro
+## <a name="step-2-1-refactor-the-project-to-support-further-development"></a>Paso 2-1: Refactorización del proyecto para admitir desarrollo adicional
 
 En el código creado por la plantilla "Proyecto web de Flask en blanco" tiene un archivo único *app.py* que contiene el código de inicio junto con una sola vista. Para facilitar un desarrollo futuro de una aplicación que tiene varias vistas y plantillas, es mejor separar estos elementos.
 
@@ -101,13 +103,13 @@ Dado que ha realizado cambios en el código y ha probado que funcionan correctam
 
     ![Inserción de confirmaciones en instancia remota en Team Explorer](media/flask/step02-source-control-push-to-remote.png)
 
-### <a name="question-how-frequently-should-one-commit-to-source-control"></a>Pregunta: ¿Con qué frecuencia se debe confirmar en el control de código fuente?
+### <a name="question-how-frequently-should-one-commit-to-source-control"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Con qué frecuencia se debe confirmar en el control de código fuente?
 
 Respuesta: La confirmación de los cambios en el control de código fuente crea un registro en el registro de cambios y un punto al que puede revertir el repositorio si es necesario. También se puede examinar cada confirmación para ver los cambios concretos. Dado que las confirmaciones en Git son asequibles, es mejor hacer confirmaciones frecuentes que acumular muchos cambios en una confirmación. Evidentemente, no es necesario confirmar todos los cambios en archivos concretos. Por lo general se efectúa una confirmación al agregar una característica, al cambiar una estructura como ha hecho en este paso o al llevar a cabo ciertas refactorizaciones de código. Compruebe también con otros usuarios del equipo la granularidad de las confirmaciones que mejor funcionen para cada uno.
 
 La frecuencia con la que confirme y la frecuencia con la que se envían las confirmaciones a un repositorio remoto son dos cuestiones diferentes. Se pueden acumular varias confirmaciones en el repositorio local antes de enviarlas al repositorio remoto. Una vez más, la frecuencia con la que confirme dependerá de cómo quiera administrar su equipo el repositorio.
 
-## <a name="step-2-2-use-a-template-to-render-a-page"></a>Paso 2-2: Usar una plantilla para representar una página
+## <a name="step-2-2-use-a-template-to-render-a-page"></a>Paso 2-2: Uso de una plantilla para representar una página
 
 La función `home` que tiene de momento en *views.py* solo genera una respuesta HTTP en texto sin formato para la página. Pero la mayoría las páginas web reales responden con páginas HTML enriquecidas que a menudo incorporan datos en directo. De hecho, la razón principal para definir una vista mediante una función es la generación de contenido de forma dinámica.
 
@@ -194,21 +196,21 @@ Como el valor devuelto para la vista es una cadena, puede crear cualquier códig
 
 1. Confirme los cambios en el control de código fuente y actualice su repositorio remoto, si quiere, tal y como se describe en el [paso 2-1](#commit-to-source-control).
 
-### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>Pregunta: ¿Las plantillas de página deben estar en un archivo independiente?
+### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Las plantillas de página deben estar en un archivo independiente?
 
-Respuesta: Aunque las plantillas se guardan en archivos HTML independientes, también puede usar una plantilla alineada. No obstante, se recomienda usar un archivo independiente para mantener una separación clara entre código y marcado.
+Respuesta: Aunque las plantillas normalmente se guardan en archivos HTML independientes, también se puede usar una plantilla insertada. No obstante, se recomienda usar un archivo independiente para mantener una separación clara entre código y marcado.
 
-### <a name="question-must-templates-use-the-html-file-extension"></a>Pregunta: ¿Deben usar las plantillas la extensión de archivo .html?
+### <a name="question-must-templates-use-the-html-file-extension"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Deben usar las plantillas la extensión de archivo .html?
 
-Respuesta: La extensión *.html* para archivos de plantilla de página es completamente opcional, ya que siempre puede identificar la ruta de acceso exacta relativa al archivo en el primer argumento a la función `render_template`. Pero Visual Studio (y otros editores) normalmente ofrecen características como la finalización de código y el coloreado de sintaxis con archivos *.html*, lo que compensa con creces el hecho de que las plantillas de página no sean estrictamente HTML.
+Respuesta: La extensión *.html* para los archivos de plantilla de página es completamente opcional, ya que siempre puede identificar la ruta de acceso exacta relativa al archivo en el primer argumento de la función `render_template`. Pero Visual Studio (y otros editores) normalmente ofrecen características como la finalización de código y el coloreado de sintaxis con archivos *.html*, lo que compensa con creces el hecho de que las plantillas de página no sean estrictamente HTML.
 
 De hecho, cuando está trabajando con un proyecto de Flask, Visual Studio detecta automáticamente si el archivo HTML que está editando es realmente una plantilla de Flask y proporciona algunas características de autocompletar. Por ejemplo, al comenzar a escribir un comentario de plantilla de página de Flask, `{#`, Visual Studio proporciona automáticamente los caracteres `#}` de cierre. Los comandos **Selección con comentarios** y **Selección sin comentarios** (en el menú **Editar** > **Opciones avanzadas** y en la barra de herramientas) también utilizan comentarios de plantilla en lugar de comentarios HTML.
 
-### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>Pregunta: Cuando ejecuto el proyecto, aparece un error que indica que no se encuentra la plantilla. ¿Qué ocurre?
+### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. Cuando ejecuto el proyecto, aparece un error que indica que no se encuentra la plantilla. ¿Qué ocurre?
 
 Respuesta: Si ve errores que indican que no se encuentra la plantilla, asegúrese de haber agregado la aplicación al archivo *settings.py* del proyecto de Flask en la lista `INSTALLED_APPS`. Sin esa entrada, Flask no sabe que ha de buscar en la carpeta *templates* de la aplicación.
 
-### <a name="question-can-templates-be-organized-into-further-subfolders"></a>Pregunta: ¿Las plantillas se pueden organizar en más subcarpetas?
+### <a name="question-can-templates-be-organized-into-further-subfolders"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Las plantillas se pueden organizar en más subcarpetas?
 
 Respuesta: Sí, se pueden usar subcarpetas y luego hacer referencia a la ruta de acceso relativa en *templates* en las llamadas a `render_template`. Es una excelente manera de crear espacios de nombres de forma efectiva para las plantillas.
 

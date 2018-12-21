@@ -1,6 +1,6 @@
 ---
 title: Publicar en Azure mediante la importación de la configuración de publicación
-ms.description: Create and import a publishing profile to deploy an application from Visual Studio to Azure App Service
+description: Creación e importación de un perfil de publicación para implementar una aplicación desde Visual Studio en Azure App Service
 ms.date: 05/07/2018
 ms.technology: vs-ide-deployment
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b4b0e4ea963f20199267f32a8c87440c8cc350b
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 804965df5142ddb18c1857a2540c5c69c08c4f9a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808326"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058505"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publicar una aplicación en Azure App Service mediante la importación de la configuración de publicación a Visual Studio
 
@@ -40,7 +40,7 @@ Un archivo de configuración de publicación (*\*.publishsettings*) es diferente
 
 * Debe tener instalado Visual Studio 2017 y la carga de trabajo de desarrollo de **ASP.NET** y **.NET Framework**. Para una aplicación .NET Core, también necesita la carga de trabajo de **.NET Core**.
 
-    Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita.
+    Si todavía no ha instalado Visual Studio, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  para instalarlo de forma gratuita.
 
 * Cree una instancia de Azure App Service. Para obtener instrucciones detalladas, vea [Publicar una aplicación de ASP.NET Core en Azure con Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
@@ -52,7 +52,7 @@ Un archivo de configuración de publicación (*\*.publishsettings*) es diferente
 
     Si no ve las plantillas de proyecto especificadas, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Vea los requisitos previos de este artículo para identificar las cargas de trabajo necesarias de Visual Studio, que debe instalar.
 
-1. Elija **MVC** (.NET Framework) o **Aplicación web (controlador de vista de modelos)** (para .NET Core), asegúrese de que la opción **Sin autenticación** está seleccionada y haga clic en **Aceptar**.
+1. Elija **MVC** (.NET Framework) o **Aplicación web (Modelo-Vista-Controlador)** (para .NET Core), y asegúrese de que la opción **Sin autenticación** está seleccionada y después haga clic en **Aceptar**.
 
 1. Escriba un nombre como **MyWebApp** y haga clic en **Aceptar**.
 

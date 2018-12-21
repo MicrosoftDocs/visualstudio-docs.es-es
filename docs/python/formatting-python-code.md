@@ -1,6 +1,6 @@
 ---
-title: Formato de código de Python
-description: Describe cómo volver a formatear código de Python automáticamente en Visual Studio que incluya comentarios, instrucciones, ajuste y espaciado.
+title: Aplicar formato a código de Python
+description: Visual Studio puede volver a formatear código de Python de forma automática incluidos los comentarios, las instrucciones, el ajuste y el espaciado.
 ms.date: 10/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b0ce6b5db57b4f6140fb164391ebf5c07e623baf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 452dc1104147e5b29dd38790cbfa726ad0de7b1f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219554"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052198"
 ---
 # <a name="format-python-code"></a>Aplicar formato a código de Python
 
@@ -29,7 +30,7 @@ Las opciones se configuran en **Herramientas** > **Opciones** > **Editor de text
 
 ![Opciones de formato de Python en Visual Studio](media/options-editor-formatting.png)
 
-Las opciones de formato se establecen de forma predeterminada para que coincidan con un supraconjunto de la [guía de estilo PEP 8](http://www.python.org/dev/peps/pep-0008/). La pestaña **General** determina cuándo se aplica el formato; la configuración de las otras tres pestañas se describe en este artículo.
+Las opciones de formato se establecen de forma predeterminada para que coincidan con un supraconjunto de la [guía de estilo PEP 8](https://www.python.org/dev/peps/pep-0008/). La pestaña **General** determina cuándo se aplica el formato; la configuración de las otras tres pestañas se describe en este artículo.
 
 La [compatibilidad con Python en Visual Studio](installing-python-support-in-visual-studio.md) también agrega el práctico comando [**Rellenar párrafo del comentario**](#fill-comment-paragraph-command) al menú **Editar** > **Opciones avanzadas**, como se describe en una sección posterior.
 

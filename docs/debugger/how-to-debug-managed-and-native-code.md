@@ -1,7 +1,7 @@
 ---
-title: 'Tutorial: Depurar código administrado y nativo (modo mixto)'
+title: 'Tutorial: Depuración de código de C# y C++ (modo mixto)'
 description: Aprenda a depurar una DLL nativa desde una aplicación .NET Core o .NET Framework con la depuración en modo mixto
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 11/02/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -16,14 +16,14 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: dc115cc833bbf50e8f6ae1f1e3207d3acfd6b2d1
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 690d607bb62b322cf7fa07e5c45aa59924d29c71
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257282"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051461"
 ---
-# <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutorial: Depurar C# y C++ en la misma sesión de depuración
+# <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutorial: Depuración de C# y C++ en la misma sesión de depuración
 
 Visual Studio permite habilitar más de un tipo de depurador en una sesión de depuración, lo que se denomina depuración en modo mixto. En este tutorial, se ofrece información para depurar código administrado y nativo en una única sesión de depuración. 
 

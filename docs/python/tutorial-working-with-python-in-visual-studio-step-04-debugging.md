@@ -1,5 +1,6 @@
 ---
-title: 'Tutorial sobre cómo trabajar con Python, paso 4: depuración'
+title: Paso 4 del tutorial de Python en Visual Studio, Depuración
+titleSuffix: ''
 description: Paso 4 de un tutorial básico sobre las funcionalidades de Python en Visual Studio, que trata cómo ejecutar código de Python en el depurador.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 312db1642fac00cb122aee5cf8c4309675520b5e
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 5facce6eff378586ece01b5774089e76058615f9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220139"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060425"
 ---
-# <a name="step-4-run-code-in-the-debugger"></a>Paso 4: Ejecutar código en el depurador
+# <a name="step-4-run-code-in-the-debugger"></a>Paso 4: Ejecución de código en el depurador
 
-**Paso anterior: [Usar la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
+**Paso anterior: [Uso de la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
 
 Además de administrar proyectos, ofrecer una experiencia de edición enriquecida y la ventana **interactiva**, Visual Studio proporciona una depuración completa para el código Python. En el depurador, puede ejecutar el código paso a paso, incluida cada una de las iteraciones de un bucle. También puede pausar el programa cuando ciertas condiciones sean verdaderas. En cualquier momento en el que el programa esté pausado en el depurador, puede examinar el estado del programa completo y cambiar el valor de las variables. Estas acciones son esenciales para el seguimiento de los errores de programa y también proporcionan una ayuda muy útil para seguir con cuidado el flujo del programa exacto.
 

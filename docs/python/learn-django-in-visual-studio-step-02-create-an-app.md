@@ -1,5 +1,6 @@
 ---
-title: 'Tutorial: Información acerca de Django en Visual Studio, paso 2'
+title: Información sobre el paso 2 del tutorial de Django en Visual Studio, vistas y páginas de plantilla
+titleSuffix: ''
 description: Un recorrido por los aspectos básicos de Django en el contexto de los proyectos de Visual Studio,en particular los pasos para crear una aplicación y utilizar vistas y plantillas.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 404df36ab28e422e081df7d7cdf4831f8c2f64a0
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: dade4ee20aec654a32fac6904cca121c2ea726e6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001287"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058550"
 ---
-# <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Paso 2. Crear una aplicación de Django con vistas y plantillas de página
+# <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Paso 2: Creación de una aplicación de Django con vistas y plantillas de página
 
-**Paso anterior[: Crear una solución y un proyecto de Visual Studio](learn-django-in-visual-studio-step-01-project-and-solution.md)**
+**Paso anterior: [Creación de una solución y un proyecto de Visual Studio](learn-django-in-visual-studio-step-01-project-and-solution.md)**
 
 Lo que tiene hasta el momento en el proyecto de Visual Studio son solo los componentes de nivel de sitio de un *proyecto* de Django, que puede ejecutar una o varias *aplicaciones* de Django. El siguiente paso consiste en crear su primera aplicación con una sola página.
 
@@ -32,15 +34,15 @@ En este paso aprenderá lo siguiente:
 > - Representar una vista mediante HTML (paso 2.3)
 > - Representar una vista utilizando una plantilla de página de Django (paso 2.4)
 
-## <a name="step-2-1-create-an-app-with-a-default-structure"></a>Paso 2.1: Crear una aplicación con una estructura predeterminada
+## <a name="step-2-1-create-an-app-with-a-default-structure"></a>Paso 2-1: Creación de una aplicación con una estructura predeterminada
 
 Una aplicación de Django es un paquete de Python independiente que contiene un conjunto de archivos relacionados para un propósito específico. Un proyecto de Django puede contener cualquier número de aplicaciones, lo que refleja el hecho de que un host de web puede atender cualquier número de puntos de entrada independientes desde un único nombre de dominio. Por ejemplo, un proyecto de Django para un dominio como contoso.com puede contener una aplicación para www.contoso.com, una segunda aplicación para support.contoso.com y una tercera aplicación para docs.contoso.com. En este caso, el proyecto de Django controla el enrutamiento y la configuración de direcciones URL de nivel de sitio (en sus archivos *urls.py* y *settings.py*), mientras que cada aplicación tiene su propio estilo y comportamiento distintivo definidos por su enrutamiento interno, vistas, modelos, archivos estáticos e interfaz administrativa.
 
 Normalmente, una aplicación de Django comienza con un conjunto estándar de archivos. Visual Studio proporciona plantillas de elementos para inicializar una aplicación de Django dentro de un proyecto de Django, junto con un comando de menú integrado que tiene la misma finalidad:
 
-- Plantillas: en el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto y seleccione **Agregar** > **Nuevo elemento**. En el cuadro de diálogo **Agregar nuevo elemento**, seleccione la plantilla **Aplicación Django 1.9**, especifique el nombre de la aplicación en el campo **Nombre** y haga clic en **Aceptar**.
+- Plantillas: En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto y seleccione **Agregar** > **Nuevo elemento**. En el cuadro de diálogo **Agregar nuevo elemento**, seleccione la plantilla **Aplicación Django 1.9**, especifique el nombre de la aplicación en el campo **Nombre** y haga clic en **Aceptar**.
 
-- Comando integrado: en el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto y seleccione **Agregar** > **Aplicación de Django**. Este comando le pide un nombre y crea una aplicación de Django 1.9.
+- Comando integrado: En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto y seleccione **Agregar** > **Aplicación de Django**. Este comando le pide un nombre y crea una aplicación de Django 1.9.
 
     ![Comando de menú para agregar una aplicación de Django](media/django/step02-add-django-app-command.png)
 
@@ -68,11 +70,11 @@ class HelloDjangoAppConfig(AppConfig):
     name = 'HelloDjango'
 ```
 
-### <a name="question-is-creating-a-django-app-in-visual-studio-any-different-from-creating-an-app-on-the-command-line"></a>Pregunta: ¿La creación de una aplicación de Django en Visual Studio es diferente de la creación de una aplicación en la línea de comandos?
+### <a name="question-is-creating-a-django-app-in-visual-studio-any-different-from-creating-an-app-on-the-command-line"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿La creación de una aplicación de Django en Visual Studio es diferente de la creación de una aplicación en la línea de comandos?
 
 Respuesta: La ejecución del comando **Agregar** > **Aplicación de Django** o el uso de **Agregar** > **Nuevo elemento** con una plantilla de aplicación de Django genera los mismos archivos que el comando de Django `manage.py startapp <app_name>`. La ventaja de crear la aplicación en Visual Studio es que la carpeta de la aplicación y todos sus archivos se integran automáticamente en el proyecto. Puede usar el mismo comando de Visual Studio para crear cualquier número de aplicaciones en el proyecto.
 
-## <a name="step-2-2-run-the-app-from-the-django-project"></a>Paso 2.2: Ejecutar la aplicación desde el proyecto de Django
+## <a name="step-2-2-run-the-app-from-the-django-project"></a>Paso 2-2: Ejecución de la aplicación desde el proyecto de Django
 
 En este punto, si ejecuta el proyecto de nuevo en Visual Studio (con el botón de la barra de herramientas o **Depurar** > **Iniciar depuración**), seguirá viendo la página predeterminada. No aparece ningún contenido de la aplicación porque debe definir una página específica de la aplicación y agregar la aplicación al proyecto de Django:
 
@@ -115,11 +117,11 @@ Dado que ha realizado cambios en el código y ha probado que funcionan correctam
 
     ![Inserción de confirmaciones en instancia remota en Team Explorer](media/django/step02-source-control-push-to-remote.png)
 
-### <a name="question-what-is-the-r-prefix-before-the-routing-strings-for"></a>Pregunta: ¿Para qué sirve el prefijo "r" que aparece delante de las cadenas de enrutamiento?
+### <a name="question-what-is-the-r-prefix-before-the-routing-strings-for"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Para qué sirve el prefijo "r" que aparece delante de las cadenas de enrutamiento?
 
-Respuesta: El prefijo "r" en una cadena de Python significa "raw" (sin formato), lo cual indica a Python que no trate como escape ninguno de los caracteres de la cadena. Dado que las expresiones regulares usan muchos caracteres especiales, el prefijo "r" hace que esas cadenas sean mucho más fáciles de leer que si contuvieran una serie de caracteres de escape "\\".
+Respuesta: El prefijo "r" en una cadena de Python significa "raw" (sin formato), lo que indica a Python que no trate como escape ninguno de los caracteres de la cadena. Dado que las expresiones regulares usan muchos caracteres especiales, el prefijo "r" hace que esas cadenas sean mucho más fáciles de leer que si contuvieran una serie de caracteres de escape "\\".
 
-### <a name="question-what-do-the--and--characters-mean-in-the-url-routing-entries"></a>Pregunta: ¿Qué significan los caracteres ^ y $ en las entradas de enrutamiento de dirección URL?
+### <a name="question-what-do-the--and--characters-mean-in-the-url-routing-entries"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Qué significan los caracteres ^ y $ en las entradas de enrutamiento de dirección URL?
 
 Respuesta: En las expresiones regulares que definen patrones de dirección URL, ^ significa "inicio de línea" y $ significa "final de línea," donde de nuevo las direcciones URL se refieren a la raíz del sitio (la parte que sigue a `https://www.domain.com/`). La expresión regular `^$` significa "en blanco" y, por tanto, coincide con la dirección URL completa `https://www.domain.com/` (no se agrega nada a la raíz del sitio). El patrón `^home$` coincide exactamente con `https://www.domain.com/home/`. (Django no usa la barra / final en detección de patrones).
 
@@ -127,7 +129,7 @@ Si no utiliza el carácter $ final en una expresión regular, como en `^home`, e
 
 Para experimentar con diferentes expresiones regulares, pruebe herramientas en línea como [regex101.com](https://regex101.com) en [pythex.org](https://www.pythex.org).
 
-## <a name="step-2-3-render-a-view-using-html"></a>Paso 2.3: Representar una vista mediante HTML
+## <a name="step-2-3-render-a-view-using-html"></a>Paso 2-3: Representación de una vista mediante HTML
 
 La función `index` que tiene de momento en *views.py* solo genera una respuesta HTTP en texto sin formato para la página. La mayoría las páginas web reales, por supuesto, responden con páginas HTML enriquecidas que a menudo incorporan datos en directo. De hecho, la razón principal para definir una vista usando una función es que pueda generar ese contenido dinámicamente.
 
@@ -153,7 +155,7 @@ Ejecute el proyecto nuevo, para ver un mensaje como "**Hello Django!** el lunes,
 >
 > ![Botón Reiniciar en la barra de herramientas de depuración en Visual Studio](media/debugging-restart-toolbar-button.png)
 
-## <a name="step-2-4-render-a-view-using-a-page-template"></a>Paso 2.4: Representar una vista utilizando una plantilla de página de Django
+## <a name="step-2-4-render-a-view-using-a-page-template"></a>Paso 2-4: Representación de una vista mediante una plantilla de página
 
 La generación de HTML en el código funciona perfectamente en páginas muy pequeñas, pero a medida que las páginas sean más sofisticadas, querrá mantener las partes HTML estáticas de la página (junto con las referencias a archivos CSS y JavaScript) como "plantillas de página" en las que podrá insertar contenido dinámico generado por el código. En la sección anterior, solo la fecha y hora de la llamada `now.strftime` son dinámicos, lo que significa que todo el contenido se puede colocar en una plantilla de página.
 
@@ -247,27 +249,27 @@ En los pasos siguientes se muestra el uso de las plantillas de página:
 
     ![Ejecución de la aplicación con la plantilla](media/django/step02-result.png)
 
-1. <a name="template-namespacing"></a>Visual Studio 2017 versión 15.7 y versiones anteriores: Como paso final, mueva las plantillas a una subcarpeta con en el mismo nombre que la aplicación, que crea un espacio de nombres y evita posibles conflictos con otras aplicaciones que pueda agregar al proyecto. (Las plantillas en VS 2017 15.8+ hacen esto automáticamente). Es decir, cree una subcarpeta en *templates* denominada *HelloDjangoApp*, mueva *index.html* a esa subcarpeta y modifique la función de vista `index` para que haga referencia a la nueva ruta de acceso de la plantilla, *HelloDjangoApp/index.html*. A continuación, ejecute el proyecto, compruebe que la página se representa correctamente y detenga el servidor.
+1. <a name="template-namespacing"></a>Visual Studio 2017 15.7 y versiones anteriores: Como paso final, mueva las plantillas a una subcarpeta con el mismo nombre que la aplicación, que crea un espacio de nombres y evita posibles conflictos con otras aplicaciones que es posible que se agreguen al proyecto. (Las plantillas en VS 2017 15.8+ hacen esto automáticamente). Es decir, cree una subcarpeta en *templates* denominada *HelloDjangoApp*, mueva *index.html* a esa subcarpeta y modifique la función de vista `index` para que haga referencia a la nueva ruta de acceso de la plantilla, *HelloDjangoApp/index.html*. A continuación, ejecute el proyecto, compruebe que la página se representa correctamente y detenga el servidor.
 
 1. Confirme los cambios en el control de código fuente y actualice su repositorio remoto, si lo desea, tal y como se describe en el [paso 2.2](#commit-to-source-control).
 
-### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>Pregunta: ¿Las plantillas de página deben estar en un archivo independiente?
+### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Las plantillas de página deben estar en un archivo independiente?
 
-Respuesta: Aunque las plantillas se guardan en archivos HTML independientes, también puede usar una plantilla alineada. No obstante, se recomienda usar un archivo independiente para mantener una separación clara entre código y marcado.
+Respuesta: Aunque las plantillas normalmente se guardan en archivos HTML independientes, también se puede usar una plantilla insertada. No obstante, se recomienda usar un archivo independiente para mantener una separación clara entre código y marcado.
 
-### <a name="question-must-templates-use-the-html-file-extension"></a>Pregunta: ¿Deben usar las plantillas la extensión de archivo .html?
+### <a name="question-must-templates-use-the-html-file-extension"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Deben usar las plantillas la extensión de archivo .html?
 
-Respuesta: La extensión *.html* para archivos de plantilla de página es completamente opcional, ya que siempre puede identificar la ruta de acceso exacta relativa al archivo en el segundo argumento a la función `render`. Pero Visual Studio (y otros editores) normalmente ofrecen características como la finalización de código y el coloreado de sintaxis con archivos *.html*, lo que compensa con creces el hecho de que las plantillas de página no sean estrictamente HTML.
+Respuesta: La extensión *.html* para archivos de plantilla de página es completamente opcional, ya que siempre puede identificar la ruta de acceso exacta relativa al archivo en el segundo argumento para la función `render`. Pero Visual Studio (y otros editores) normalmente ofrecen características como la finalización de código y el coloreado de sintaxis con archivos *.html*, lo que compensa con creces el hecho de que las plantillas de página no sean estrictamente HTML.
 
 De hecho, cuando esté trabajando con un proyecto de Django, Visual Studio detecta automáticamente cuándo el archivo HTML que está editando es realmente una plantilla de Django y proporciona algunas características de completado automático. Por ejemplo, al comenzar a escribir un comentario de plantilla de página de Django, `{#`, Visual Studio proporciona automáticamente los caracteres `#}` de cierre. Los comandos **Selección con comentarios** y **Selección sin comentarios** (en el menú **Editar** > **Opciones avanzadas** y en la barra de herramientas) también utilizan comentarios de plantilla en lugar de comentarios HTML.
 
-### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>Pregunta: Cuando ejecuto el proyecto, aparece un error que indica que no se encuentra la plantilla. ¿Qué ocurre?
+### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. Cuando ejecuto el proyecto, aparece un error que indica que no se encuentra la plantilla. ¿Qué ocurre?
 
-Respuesta: Si ve errores que indican que no se encuentra la plantilla, asegúrese de haber agregado la aplicación al archivo *settings.py* del proyecto de Django en la lista `INSTALLED_APPS`. Sin esa entrada, Django no sabe que ha de buscar en la carpeta *templates* de la aplicación.
+Respuesta: Si ve errores que indican que no se encuentra la plantilla, asegúrese de que se ha agregado la aplicación al archivo *settings.py* del proyecto de Django en la lista `INSTALLED_APPS`. Sin esa entrada, Django no sabe que ha de buscar en la carpeta *templates* de la aplicación.
 
-### <a name="question-why-is-template-namespacing-important"></a>Pregunta: ¿Por qué es importante el espaciado entre nombres de la plantilla?
+### <a name="question-why-is-template-namespacing-important"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Por qué es importante el espaciado entre nombres de la plantilla?
 
-Respuesta: Cuando Django busca una plantilla a la que se hace referencia en la función `render`, utiliza el primer archivo que encuentre que coincida con la ruta de acceso relativa. Si tiene varias aplicaciones de Django en el mismo proyecto que utilizan las mismas estructuras de carpeta para las plantillas, es probable que una aplicación use involuntariamente una plantilla desde otra aplicación. Para evitar tales errores, cree siempre una subcarpeta bajo una carpeta *templates* de la aplicación que coincida con el nombre de la aplicación para evitar cualquier duplicación.
+Respuesta: Cuando Django busca una plantilla a la que se hace referencia en la función `render`, usa el primer archivo que encuentre que coincida con la ruta de acceso relativa. Si tiene varias aplicaciones de Django en el mismo proyecto que utilizan las mismas estructuras de carpeta para las plantillas, es probable que una aplicación use involuntariamente una plantilla desde otra aplicación. Para evitar tales errores, cree siempre una subcarpeta bajo una carpeta *templates* de la aplicación que coincida con el nombre de la aplicación para evitar cualquier duplicación.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

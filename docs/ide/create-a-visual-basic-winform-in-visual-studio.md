@@ -1,7 +1,6 @@
 ---
-title: Creación de una aplicación de Windows Forms en Visual Studio con Visual Basic
+title: Creación de una aplicación de Windows Forms con Visual Basic
 description: Aprenda a crear una aplicación de Windows Forms en Visual Studio con Visual Basic, paso a paso.
-ms.custom: ''
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
@@ -14,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 0468a3ee546659d8079d98f49b196819c44afbd1
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 81b44e7053b820e625b5ad61d6e537c95cbf9c03
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381665"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159638"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Creación de una aplicación de Windows Forms en Visual Studio con Visual Basic
 
@@ -104,5 +103,5 @@ Ya hemos agregado un control de botón para crear una acción, así que ahora va
 
 ## <a name="see-also"></a>Vea también
 
-* [Inicio rápido: Crear una aplicación de consola en Visual Studio con Visual Basic](quickstart-visual-basic-console.md)
+* [Inicio rápido: Creación de una aplicación de consola en Visual Studio con Visual Basic](quickstart-visual-basic-console.md)
 * [Más información sobre IntelliSense de Visual Basic](visual-basic-specific-intellisense.md)

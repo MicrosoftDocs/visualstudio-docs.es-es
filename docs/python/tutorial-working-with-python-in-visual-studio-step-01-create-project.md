@@ -1,6 +1,7 @@
 ---
-title: 'Tutorial Trabajo con Python, paso 1: creación de un proyecto'
-description: Información general y paso 1 de un tutorial básico de las funcionalidades de Python en Visual Studio, entre otras, los requisitos previos y la creación de un proyecto de Python.
+title: Paso 1 del tutorial de Python en Visual Studio, Creación de un proyecto
+titleSuffix: ''
+description: Información general y paso 1 de un tutorial básico de las funcionalidades de Python en Visual Studio, incluidos los requisitos previos y la creación de un proyecto de Python.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,33 +9,34 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2eb9871aeda7134f6d488b7efe55c5ec149677a5
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 1aaf0c0258d502693b771cad66f9347dd60f80e8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220087"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049859"
 ---
-# <a name="tutorial-work-with-python-in-visual-studio"></a>Tutorial: Trabajar con Python en Visual Studio
+# <a name="tutorial-work-with-python-in-visual-studio"></a>Tutorial: Uso de Python en Visual Studio
 
 Python es un lenguaje de programación popular confiable, flexible, fácil de aprender, de uso libre en todos los sistemas operativos y admitido por una gran comunidad de desarrolladores y muchas bibliotecas gratuitas. El lenguaje es compatible con todos los modos de desarrollo, lo que incluye aplicaciones web, servicios web, aplicaciones de escritorio, scripting e informática científica, y lo usan muchas universidades, científicos, programadores ocasionales y desarrolladores profesionales.
 
 Visual Studio proporciona compatibilidad de primera clase con el lenguaje Python. Este tutorial le guiará a través de los pasos siguientes:
 
 - [Paso 0: Instalación](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
-- [Paso 1: Crear un proyecto de Python (este artículo)](#step-1-create-a-new-python-project)
-- [Paso 2: Escribir y ejecutar código para ver IntelliSense de Visual Studio en funcionamiento](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
-- [Paso 3: Crear más código en la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
-- [Paso 4: Ejecutar el programa completado en el depurador de Visual Studio](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
-- [Paso 5: Instalar paquetes y administrar entornos de Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
+- [Paso 1: Creación de un proyecto de Python (este artículo)](#step-1-create-a-new-python-project)
+- [Paso 2: Escritura y ejecución de código para ver IntelliSense de Visual Studio en funcionamiento](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
+- [Paso 3: Creación de más código en la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
+- [Paso 4: Ejecución del programa completado en el depurador de Visual Studio](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
+- [Paso 5: Instalación de paquetes y administración de entornos de Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 - [Paso 6: Trabajar con Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
 [!INCLUDE[tutorial-prereqs](includes/tutorial-prereqs.md)]
 
-## <a name="step-1-create-a-new-python-project"></a>Paso 1: Crear un proyecto de Python
+## <a name="step-1-create-a-new-python-project"></a>Paso 1: Creación de un proyecto de Python nuevo
 
 Visual Studio usa los *proyectos* para administrar todos los archivos que se combinan para generar una aplicación, incluido el código fuente, los recursos, las configuraciones, etc. Un proyecto formaliza y mantiene la relación entre todos los archivos del proyecto, así como los recursos externos que se comparten entre varios proyectos. Por lo tanto, un proyecto permite que la aplicación se expanda sin esfuerzo y crezca mucho más fácilmente que mediante la administración de las relaciones de un proyecto en carpetas, scripts y archivos de texto ad hoc, o incluso su propia mente.
 

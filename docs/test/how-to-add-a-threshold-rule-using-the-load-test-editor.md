@@ -1,5 +1,5 @@
 ---
-title: Agregar una regla de umbral para pruebas de carga en Visual Studio
+title: Adición de una regla de umbral para pruebas de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cddc0b9ca470fa43b00ec08b3b6316704df41e91
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: ac4b542c7f9b557ad04ead05422f8c89cd4f909c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896333"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063375"
 ---
-# <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Cómo: Agregar una regla de umbral mediante el Editor de pruebas de carga
+# <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Procedimiento para agregar una regla de umbral mediante el Editor de pruebas de carga
 
 Las reglas de umbral de las pruebas de carga comparan un valor de contador de rendimiento con un valor constante o con otro valor de contador de rendimiento.
 
@@ -38,7 +38,7 @@ Las reglas de umbral de las pruebas de carga comparan un valor de contador de re
 
      Se mostrará el cuadro de diálogo **Agregar regla de umbral**.
 
-5.  Puede elegir dos tipos de reglas: **Comparar constante** y **Comparar contador**. Seleccione el tipo adecuado y establezca los valores.
+5.  Puede elegir entre dos tipos de reglas: **Comparar constante** y **Compare contador**. Seleccione el tipo adecuado y establezca los valores.
 
     > [!NOTE]
     > Establezca la propiedad **Alertar si se supera** en **True** para indicar que exceder un umbral supone un problema, o en **False** para indicar que no alcanzar un umbral supone un problema.

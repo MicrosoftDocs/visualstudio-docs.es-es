@@ -1,5 +1,5 @@
 ---
-title: Creación de una prueba automatizada de IU controlada por datos en Visual Studio
+title: Crear una prueba de IU codificada controlada por datos
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c23d8149d6946464eef1a465ea952e6102d65086
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 92bbeb34733332b2bada3955dda2058d63460fec
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896146"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068492"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Crear una prueba de IU codificada controlada por datos
 
@@ -65,7 +65,7 @@ En este ejemplo se crea una prueba de IU codificada que se ejecuta en la aplicac
    }
    ```
 
-5. Use el método `AddNumbers()` para comprobar que se ejecuta la prueba. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Ejecutar pruebas**. (Método abreviado de teclado: **Control**+**R**,**T**).
+5. Use el método `AddNumbers()` para comprobar que se ejecuta la prueba. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Ejecutar pruebas**. (Método abreviado de teclado: **Ctrl**+**R**,**T**).
 
     El resultado que indica si se ha superado la prueba se muestra en la ventana del **Explorador de pruebas**. Para abrir la ventana del Explorador de pruebas, en el menú **Prueba**, elija **Ventanas** y después **Explorador de pruebas**.
 
@@ -94,7 +94,7 @@ En este ejemplo se crea una prueba de IU codificada que se ejecuta en la aplicac
    }
    ```
 
-9. Compruebe que la prueba se ejecuta utilizando el método `ValidateSum()`. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Ejecutar pruebas**. (Método abreviado de teclado: **Control**+**R**,**T**).
+9. Compruebe que la prueba se ejecuta utilizando el método `ValidateSum()`. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Ejecutar pruebas**. (Método abreviado de teclado: **Ctrl**+**R**,**T**).
 
      En este momento, todos los valores de parámetro se definen en sus métodos como constantes. Después, vamos a crear un conjunto de datos para realizar la prueba controlada por datos.
 
@@ -232,7 +232,7 @@ Puede utilizar las cadenas de origen de datos de muestra de la tabla siguiente c
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>P: ¿Por qué no puedo modificar el código en el archivo UIMap.Designer?
 
-**R:** Cualquier cambio que se efectúe en el código del archivo *UIMapDesigner.cs* se sobrescribirá cada vez que se genere código mediante UIMap - Generador de pruebas de IU codificadas. En este ejemplo, y en la mayoría de los casos, los cambios de código necesarios para habilitar una prueba para utilizar un origen de datos pueden introducirse en el archivo de código fuente de la prueba (es decir, *CodedUITest1.cs*).
+**R:** Cualquier cambio que se realice en el código del archivo *UIMapDesigner.cs* se sobrescribirá cada vez que se genere código mediante UIMap - Generador de pruebas automatizadas de IU. En este ejemplo, y en la mayoría de los casos, los cambios de código necesarios para habilitar una prueba para utilizar un origen de datos pueden introducirse en el archivo de código fuente de la prueba (es decir, *CodedUITest1.cs*).
 
 Si tiene que modificar un método grabado, debe copiarlo en el archivo *UIMap.cs* y cambiar el nombre. El archivo *UIMap.cs* se puede usar para invalidar métodos y propiedades en el archivo *UIMapDesigner.cs*. Debe quitar la referencia al método original en el archivo *UITest.cs* codificado y reemplazarlo con el nombre del método cuyo nombre ha cambiado.
 

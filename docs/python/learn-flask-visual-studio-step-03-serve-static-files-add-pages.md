@@ -1,5 +1,6 @@
 ---
-title: 'Tutorial: Información sobre Flask en Visual Studio, paso 3'
+title: Información sobre el paso 3 del tutorial de Flask en Visual Studio, archivos estáticos y páginas
+titleSuffix: ''
 description: Un recorrido por los aspectos básicos de Flask en el contexto de los proyectos de Visual Studio, en particular la demostración de cómo atender archivos estáticos, agregar páginas a la aplicación y usar la herencia de plantilla.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6cdc8e3658b02c7c4371181d6c0e5723d0a3537c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 906c44ca3b1d0771202e78910870d38f9d4fb995
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775761"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065030"
 ---
-# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Paso 3. Atender archivos estáticos, agregar páginas y usar la herencia de plantilla
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Paso 3: Proporcionar archivos estáticos, agregar páginas y usar la herencia de plantilla
 
-**Paso anterior: [Crear una aplicación de Flask con vistas y plantillas de página](learn-flask-visual-studio-step-02-create-app.md)**
+**Paso anterior: [Creación de una aplicación de Flask con vistas y plantillas de página](learn-flask-visual-studio-step-02-create-app.md)**
 
 En los pasos anteriores de este tutorial, ha aprendido a crear una aplicación de Flask mínima con una sola página HTML independiente. Pero las aplicaciones web modernas están formadas normalmente por muchas páginas y usan recursos compartidos, como archivos CSS y JavaScript, para proporcionar un comportamiento y un estilo uniformes.
 
@@ -32,7 +34,7 @@ En este paso aprenderá lo siguiente:
 > - Agregar páginas adicionales a la aplicación (paso 3.3)
 > - Usar la herencia de plantilla para crear un encabezado y una barra de navegación que se use en varias páginas (paso 3.4)
 
-## <a name="step-3-1-become-familiar-with-item-templates"></a>Paso 3.1: Familiarizarse con las plantillas de elemento
+## <a name="step-3-1-become-familiar-with-item-templates"></a>Paso 3-1: Familiarizarse con las plantillas de elemento
 
 A medida que desarrolle una aplicación de Flask, lo normal es que vaya agregando muchos más archivos Python, HTML, CSS y JavaScript. Para cada tipo de archivo (así como otros archivos como *web.config* que pueda necesitar para la implementación), Visual Studio ofrece prácticas [plantillas de elemento](python-item-templates.md) para empezar.
 
@@ -42,11 +44,11 @@ Para ver las plantillas disponibles, vaya al **Explorador de soluciones**, haga 
 
 Para usar una plantilla, seleccione la plantilla deseada, especifique un nombre para el archivo y seleccione **Aceptar**. La adición de un elemento de este modo agrega automáticamente el archivo al proyecto de Visual Studio y marca los cambios para el control de código fuente.
 
-### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Pregunta: ¿Cómo sabe Visual Studio qué plantillas de elemento debe ofrecer?
+### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Cómo sabe Visual Studio qué plantillas de elemento debe ofrecer?
 
 Respuesta: El archivo de proyecto de Visual Studio (*.pyproj*) contiene un identificador de tipo de proyecto que lo marca como un proyecto de Python. Visual Studio utiliza este identificador de tipo para mostrar solo aquellas plantillas de elementos que sean adecuadas para el tipo de proyecto. De esta manera, Visual Studio puede proporcionar un amplio conjunto de plantillas de elemento para muchos tipos de proyecto sin pedirle que los ordene cada vez.
 
-## <a name="step-3-2-serve-static-files-from-your-app"></a>Paso 3.2: Atender archivos estáticos desde la aplicación
+## <a name="step-3-2-serve-static-files-from-your-app"></a>Paso 3-2: Proporcionar archivos estáticos desde la aplicación
 
 En una aplicación web compilada con Python (con cualquier plataforma), los archivos de Python siempre se ejecutan en el servidor del host web y nunca se transmiten al equipo de un usuario. Otros archivos, sin embargo, como CSS y JavaScript, se usan exclusivamente por el explorador, por lo que el servidor host simplemente los ofrece tal cual cada vez que se soliciten. Estos archivos se denominan archivos "estáticos", y Flask puede distribuirlos automáticamente sin tener que escribir ningún código. En los archivos HTML, por ejemplo, puede hacer referencia a archivos estáticos con una ruta de acceso relativa en el proyecto. En la primera sección de este paso se agrega un archivo CSS a la plantilla de página existente.
 
@@ -113,15 +115,15 @@ Flask proporciona una función denominada `serve_static_file` a la que puede lla
 
 1. Ejecute la aplicación y vaya al punto de conexión /api/data para comprobar que se ha devuelto el archivo estático. Cuando haya terminado, detenga la aplicación.
 
-### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Pregunta: ¿Hay alguna convención para organizar los archivos estáticos?
+### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Hay alguna convención para organizar los archivos estáticos?
 
 Respuesta: Puede agregar otros archivos HTML, CSS y JavaScript a la carpeta *static* como quiera. Una forma habitual de organizar los archivos estáticos es crear subcarpetas denominadas *fonts*, *scripts* y *content* (para las hojas de estilos y cualquier otro archivo).
 
-### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>Pregunta: ¿Cómo gestiono las variables de dirección URL y los parámetros de consulta en una API?
+### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Cómo se controlan las variables de dirección URL y los parámetros de consulta en una API?
 
-Respuesta: Vea la respuesta en el paso 1-4 de la [Pregunta: ¿Cómo trabaja Flask con las rutas de dirección URL de variables y con los parámetros de consulta?](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
+Respuesta: Vea la respuesta en el paso 1-4 para [Pregunta: ¿Cómo trabaja Flask con las rutas de dirección URL de variables y con los parámetros de consulta?](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
 
-## <a name="step-3-3-add-a-page-to-the-app"></a>Paso 3.3: Agregar una página a la aplicación
+## <a name="step-3-3-add-a-page-to-the-app"></a>Paso 3-3: Adición de una página a la aplicación
 
 La adición de otra página a la aplicación implica lo siguiente:
 
@@ -172,11 +174,11 @@ Los pasos siguientes agregan una página de información al proyecto de "HelloFl
 
 1. Ejecute el proyecto para observar los resultados y compruebe la navegación entre las páginas. Detenga la aplicación cuando haya finalizado.
 
-### <a name="question-does-the-name-of-a-page-function-matter-to-flask"></a>Pregunta: ¿Importa en Flask el nombre de una función de página?
+### <a name="question-does-the-name-of-a-page-function-matter-to-flask"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Importa en Flask el nombre de una función de página?
 
 Respuesta: No, porque es el decorador `@app.route` el que determina las direcciones URL para las que Flask llama a la función para generar una respuesta. Los desarrolladores suelen hacer coincidir el nombre de la función con la ruta, aunque no es algo obligatorio.
 
-## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>Paso 3.4: Usar la herencia de plantilla para crear un encabezado y una barra de navegación
+## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>Paso 3-4: Uso de la herencia de plantilla para crear un encabezado y una barra de navegación
 
 En lugar de tener vínculos de navegación explícitos en cada página, las aplicaciones web modernas suelen utilizan un encabezado de personalización de marca y una barra de navegación que proporciona los vínculos de página, los menús emergentes, etc. más importantes. Sin embargo, es poco práctico repetir el mismo código en cada plantilla de página para asegurarse de que el encabezado y la barra de navegación son los mismos en todas las páginas. Es preferible definir los elementos comunes de todas las páginas en un solo lugar.
 

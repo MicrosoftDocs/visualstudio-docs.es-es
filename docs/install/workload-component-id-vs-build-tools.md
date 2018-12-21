@@ -1,5 +1,6 @@
 ---
 title: Identificadores de componentes y cargas de trabajo de Visual Studio Build Tools 2017
+titleSuffix: ''
 description: Uso de identificadores de componente y carga de trabajo de Visual Studio para crear aplicaciones clásicas basadas en Windows
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.workload:
 - multiple
-ms.openlocfilehash: 958e4e842468e871cd9aa65f0a20b87a84aeb4ca
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 2e47eca638e81cf1b99a451e3017614be45d2c59
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607866"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063051"
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Directorio de componentes de Visual Studio Build Tools 2017
 
@@ -35,15 +36,15 @@ Tenga en cuenta también lo siguiente sobre la página:
 * Si lo desea, también puede instalar los componentes con la marca **Recomendado** y **Opcional**.
 * También hemos agregado una sección que muestra los componentes adicionales que no están asociados a ninguna carga de trabajo.
 
-Al establecer las dependencias del manifiesto de VSIX, debe especificar solo identificadores de componentes. Utilice las tablas de esta página para determinar las dependencias de componente mínimas. En algunos casos, esto podría significar que se especifique solo un componente de una carga de trabajo. En otros escenarios, puede significar que especifique varios componentes de una sola carga de trabajo o varios componentes de varias cargas de trabajo. Para obtener más información, consulte la página [How to: Migrate Extensibility Projects to Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) (Migración de proyectos de extensibilidad a Visual Studio 2017).
+Al establecer las dependencias del manifiesto de VSIX, debe especificar solo identificadores de componentes. Utilice las tablas de esta página para determinar las dependencias de componente mínimas. En algunos casos, esto podría significar que se especifique solo un componente de una carga de trabajo. En otros escenarios, puede significar que especifique varios componentes de una sola carga de trabajo o varios componentes de varias cargas de trabajo. Para obtener más información, vea la página [Cómo: Migrar proyectos de extensibilidad a Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
 Para obtener más información acerca de cómo utilizar estos identificadores, vea [Usar parámetros de la línea de comandos para instalar Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md). Y, para obtener una lista de los identificadores de componente y carga de trabajo para otros productos, consulte la página [Visual Studio 2017 Workload and Component IDs](workload-and-component-ids.md) (Identificadores de componente y carga de trabajo de Visual Studio 2017).
 
 ## <a name="azure-development-build-tools"></a>Herramientas de compilación de desarrollo para Azure
 
-**Id.:** Microsoft.VisualStudio.Workload.AzureBuildTools
+**ID:** Microsoft.VisualStudio.Workload.AzureBuildTools
 
-**Descripción:** tareas y objetivos de MSBuild para la creación de aplicaciones de Azure.
+**Descripción:** Tareas y destinos de MSBuild para la compilación de aplicaciones de Azure.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
@@ -85,9 +86,9 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Herramientas de desarrollo par
 
 ## <a name="data-storage-and-processing-build-tools"></a>Herramientas de procesamiento de compilación y almacenamiento de datos
 
-**Id.:** Microsoft.VisualStudio.Workload.DataBuildTools
+**ID:** Microsoft.VisualStudio.Workload.DataBuildTools
 
-**Descripción:** Crear proyectos de base de datos de SQL Server
+**Descripción:** Compilación de proyectos de base de datos SQL Server
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
@@ -106,7 +107,7 @@ Microsoft.VisualStudio.Component.Static.Analysis.Tools | Herramientas de anális
 
 ## <a name="net-desktop-build-tools"></a>Herramientas de compilación para escritorio de .NET
 
-**Id.:** Microsoft.VisualStudio.Workload.ManagedDesktopBuildTools
+**ID:** Microsoft.VisualStudio.Workload.ManagedDesktopBuildTools
 
 **Descripción:** Herramientas para compilar aplicaciones de consola, WPF y Windows Forms con C#, Visual Basic y F#.
 
@@ -148,9 +149,9 @@ Microsoft.VisualStudio.Component.FSharp.MSBuild | compilador de F# | 15.8.27825.
 
 ## <a name="msbuild-tools"></a>Herramientas de MSBuild
 
-**Id.:** Microsoft.VisualStudio.Workload.MSBuildTools
+**ID:** Microsoft.VisualStudio.Workload.MSBuildTools
 
-**Descripción:** proporciona las herramientas necesarias para crear aplicaciones basadas en MSBuild.
+**Descripción:** Proporciona las herramientas necesarias para compilar aplicaciones basadas en MSBuild.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
@@ -162,9 +163,9 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores de C# y Visual B
 
 ## <a name="net-core-build-tools"></a>Herramientas de compilación de .NET Core
 
-**Id.:** Microsoft.VisualStudio.Workload.NetCoreBuildTools
+**ID:** Microsoft.VisualStudio.Workload.NetCoreBuildTools
 
-**Descripción:** Herramientas para crear aplicaciones con .NET Core, ASP.NET Core, HTML/JavaScript y Containers.
+**Descripción:** Herramientas para compilar aplicaciones con .NET Core, ASP.NET Core, HTML y JavaScript, y Containers.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
@@ -180,7 +181,7 @@ Microsoft.Net.Core.Component.SDK.1x | Herramientas de desarrollo de .NET Core 1.
 
 **ID:** Microsoft.VisualStudio.Workload.NodeBuildTools
 
-**Descripción:** Tareas de MSBuild y destinos para compilar aplicaciones de red escalables utilizando Node.js, un tiempo de ejecución de JavaScript impulsado por un evento asincrónico.
+**Descripción:** Tareas y destinos de MSBuild para compilar aplicaciones de red escalables con Node.js, un runtime de JavaScript controlado por eventos asincrónicos.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
@@ -191,9 +192,9 @@ Microsoft.VisualStudio.Component.TypeScript.3.1 | SDK de TypeScript 3.1 | 15.0.2
 
 ## <a name="officesharepoint-build-tools"></a>Herramientas de compilación para Office o SharePoint
 
-**Id.:** Microsoft.VisualStudio.Workload.OfficeBuildTools
+**ID:** Microsoft.VisualStudio.Workload.OfficeBuildTools
 
-**Descripción:** Crear complementos de Office y SharePoint, y de VSTO.
+**Descripción:** Compilación de complementos de Office, SharePoint y VSTO.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
@@ -231,9 +232,9 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Herramientas de desarrollo par
 
 ## <a name="universal-windows-platform-build-tools"></a>Herramientas de compilación de la Plataforma universal de Windows
 
-**Id.:** Microsoft.VisualStudio.Workload.UniversalBuildTools
+**ID:** Microsoft.VisualStudio.Workload.UniversalBuildTools
 
-**Descripción:** Proporciona las herramientas necesarias para compilar aplicaciones de la Plataforma universal de Windows.
+**Descripción:** Proporciona las herramientas necesarias para compilar aplicaciones para la Plataforma universal de Windows.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
@@ -265,9 +266,9 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | SDK de Windows 10 (10
 
 ## <a name="visual-c-build-tools"></a>Herramientas de compilación de Visual C++
 
-**Id.:** Microsoft.VisualStudio.Workload.VCTools
+**ID:** Microsoft.VisualStudio.Workload.VCTools
 
-**Descripción:** Compila aplicaciones de escritorio de Windows con el conjunto de herramientas de Microsoft C++, ATL o MFC.
+**Descripción:** Compile aplicaciones de escritorio de Windows con el conjunto de herramientas de Microsoft C++, ATL o MFC.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
@@ -310,7 +311,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | SDK de Windows 10 (10
 
 ## <a name="visual-studio-extension-development"></a>Desarrollo de extensiones de Visual Studio
 
-**Id.:** Microsoft.VisualStudio.Workload.VisualStudioExtensionBuildTools
+**ID:** Microsoft.VisualStudio.Workload.VisualStudioExtensionBuildTools
 
 **Descripción:** Herramientas para compilar complementos y extensiones para Visual Studio, incluidos nuevos comandos, analizadores de código y ventanas de herramientas.
 
@@ -336,9 +337,9 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Últimas herramientas v141 d
 
 ## <a name="web-development-build-tools"></a>Herramientas de compilación de desarrollo web
 
-**Id.:** Microsoft.VisualStudio.Workload.WebBuildTools
+**ID:** Microsoft.VisualStudio.Workload.WebBuildTools
 
-**Descripción:** tareas y objetivos de MSBuild para la creación de aplicaciones web.
+**Descripción:** Tareas y destinos de MSBuild para la compilación de aplicaciones web.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
@@ -381,9 +382,9 @@ Microsoft.Net.Core.Component.SDK.1x | Herramientas de desarrollo de .NET Core 1.
 
 ## <a name="mobile-development-with-net"></a>Desarrollo móvil con .NET
 
-**Id.:** Microsoft.VisualStudio.Workload.XamarinBuildTools
+**ID:** Microsoft.VisualStudio.Workload.XamarinBuildTools
 
-**Descripción:** Herramientas para crear aplicaciones multiplataforma para iOS, Android y Windows con C# y F#.
+**Descripción:** Herramientas para compilar aplicaciones multiplataforma para iOS, Android y Windows con C# y F#.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 

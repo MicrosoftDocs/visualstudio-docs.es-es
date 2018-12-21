@@ -1,5 +1,6 @@
 ---
-title: 'Tutorial: Información sobre Flask en Visual Studio, paso 4'
+title: Información sobre el paso 4 del tutorial de Flask en Visual Studio, Plantillas de proyecto web
+titleSuffix: ''
 description: Un recorrido por los aspectos básicos de Flask en el contexto de los proyectos de Visual Studio, en particular las características que ofrecen las plantillas Proyecto web de Flask y Proyecto web de Flask/Jade.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6e9171b7f44a51380fd086798b4ab9c50fa98729
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c072d1187abf463cc2f185946f7e238bb091a534
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775963"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051706"
 ---
-# <a name="step-4-use-the-full-flask-web-project-template"></a>Paso 4. Usar la plantilla de proyecto web completa de Flask
+# <a name="step-4-use-the-full-flask-web-project-template"></a>Paso 4: Uso de la plantilla de proyecto web completa de Flask
 
-**Paso anterior[: Atender archivos estáticos, agregar páginas y usar la herencia de plantilla](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
+**Paso anterior: [Proporcionar archivos estáticos, agregar páginas y usar la herencia de plantilla](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
 
 Ahora que ha explorado los conceptos básicos de Flask mediante la creación de una aplicación a partir de la plantilla "Proyecto web de Flask en blanco" en Visual Studio, podrá comprender fácilmente la aplicación más completa que se genera mediante la plantilla "Proyecto web de Flask".
 
@@ -33,7 +35,7 @@ En este paso, hará lo siguiente:
 
 Este artículo también se aplica a la plantilla "Proyecto web de Flask/Jade", que genera una aplicación idéntica a la de "Proyecto web de Flask" con el motor de plantillas de Jade en vez del de Jinja. Al final de este artículo se incluye más información detallada.
 
-## <a name="step-4-1-create-a-project-from-the-template"></a>Paso 4.1: Crear un proyecto a partir de la plantilla
+## <a name="step-4-1-create-a-project-from-the-template"></a>Paso 4-1: Creación de un proyecto a partir de la plantilla
 
 1. En Visual Studio, vaya al **Explorador de soluciones**, haga clic con el botón derecho en la solución **LearningFlask** creada anteriormente en este tutorial y seleccione **Agregar** > **Nuevo proyecto**. (En caso de que desee utilizar una nueva solución, tendrá que seleccionar **Archivo** > **Nuevo** > **Proyecto**).
 
@@ -74,9 +76,9 @@ La plantilla de "Proyecto web de Flask" crea la estructura siguiente. El conteni
   - La carpeta *static* contiene subcarpetas denominadas *content* (archivos CSS), *fonts* (archivos de fuentes) y *scripts* (archivos de JavaScript).
   - La carpeta *templates* contiene una plantilla base *layout.html* junto con *about.html*, *contact.html* e  *index.HTML* para páginas específicas que amplían *layout.html*.
 
-### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Pregunta: ¿Es posible compartir un entorno virtual entre los proyectos de Visual Studio?
+### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Es posible compartir un entorno virtual entre los proyectos de Visual Studio?
 
-Respuesta: Sí, pero hágalo siendo consciente de que es probable que proyectos diferentes usen paquetes diferentes con el tiempo y, por lo tanto, un entorno virtual compartido debe contener todos los paquetes de todos los proyectos que lo usan.
+Respuesta: Sí, pero se debe hacer sabiendo que es probable que en otros proyectos se usen otros paquetes con el tiempo y, por tanto, un entorno virtual compartido debe contener todos los paquetes de todos los proyectos que lo usan.
 
 No obstante, para usar un entorno virtual existente, haga lo siguiente:
 
@@ -84,9 +86,9 @@ No obstante, para usar un entorno virtual existente, haga lo siguiente:
 1. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo **Entornos de Python** y seleccione **Agregar entorno virtual existente**.
 1. Vaya la carpeta que contiene el entorno virtual, selecciónela y luego elija **Aceptar**.
 
-## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Paso 4.2: Comprender las vistas y las plantillas de página creadas por la plantilla de proyecto
+## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Paso 4-2: Comprender las vistas y las plantillas de página creadas por la plantilla de proyecto
 
-Tal y como se observa cuando se ejecuta el proyecto, la aplicación contiene tres vistas: inicio, información y contacto. El código de estas vistas se encuentra en *FlaskWeb/views.py*. Cada función de vista llama a `flask.render_template` con la ruta de acceso a una plantilla y una lista variable de argumentos para los valores que se van a asignar a la plantilla. Por ejemplo, la página Acerca de se gestiona con la función `about` (cuyo decorador proporciona el enrutamiento de la dirección URL):
+Como se observa cuando se ejecuta el proyecto, la aplicación contiene tres vistas: Inicio, Información y Contacto. El código de estas vistas se encuentra en *FlaskWeb/views.py*. Cada función de vista llama a `flask.render_template` con la ruta de acceso a una plantilla y una lista variable de argumentos para los valores que se van a asignar a la plantilla. Por ejemplo, la página Acerca de se gestiona con la función `about` (cuyo decorador proporciona el enrutamiento de la dirección URL):
 
 ```python
 @app.route('/about')

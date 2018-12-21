@@ -1,6 +1,6 @@
 ---
-title: Introducción a la implementación en Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Información general sobre la implementación | Microsoft Docs
+ms.custom: seodec18
 ms.date: 06/22/2018
 ms.technology: vs-ide-deployment
 ms.topic: overview
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d5b15af932f8d796a27dfc060128617816b9234
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 93a389fdafb6167fb132578111c7a8b5d02c8495
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232178"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068057"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Introducción a la implementación en Visual Studio
 

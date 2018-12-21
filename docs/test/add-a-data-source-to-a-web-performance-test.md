@@ -1,5 +1,5 @@
 ---
-title: Adición de un origen de datos a una prueba de rendimiento web en Visual Studio
+title: Agregar un origen de datos a una prueba de rendimiento web
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 13d0f405b59b95df0edbcfc5e6f051c1f3140035
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 6d2ae95883884909641541e0efe6e4efbc7fe06a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896112"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065212"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Agregar un origen de datos a una prueba de rendimiento web
 
@@ -140,9 +140,9 @@ La solución también debe incluir una prueba de rendimiento web que examine las
 
 - Oracle 7.3, 8i, 9i o 10g.
 
-### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>P: ¿Puedo usar un archivo de texto de valores separados por comas (CSV) como origen de datos?
+### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>P: ¿Cómo se usa un archivo de texto de valores separados por comas (CSV) como origen de datos?
 
-**R:** Aquí se explica cómo:
+**R:** Esta es la manera de hacerlo:
 
 1. Cree una carpeta para organizar los artefactos de base de datos de los proyectos y agregar un elemento.
 
@@ -215,7 +215,7 @@ La solución también debe incluir una prueba de rendimiento web que examine las
 
      ![Origen de datos agregado a la prueba](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
-### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>P: ¿Cómo utilizo un archivo XML como origen de datos?
+### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>P: ¿Cómo puedo usar un archivo XML como origen de datos?
 
 **R:** Sí.
 
@@ -247,7 +247,7 @@ La solución también debe incluir una prueba de rendimiento web que examine las
 
      ![Especificar un nombre y elegir el archivo XML](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
-### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>P: ¿Se puede agregar un enlace de datos a una solicitud de servicio Web que use SOAP?
+### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>P: ¿Se puede agregar un enlace de datos a una solicitud de servicio web que use SOAP?
 
 **R:** Sí, debe cambiar manualmente el código XML de SOAP.
 

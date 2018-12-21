@@ -1,5 +1,5 @@
 ---
-title: Enlace de un controlador de pruebas o un agente de pruebas a un adaptador de red en Visual Studio
+title: Enlace un controlador de pruebas o un agente de pruebas a un adaptador de red
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 222fe589a0d4282531b9ee73d476678d54747e7b
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 59a71b57c76fbb0650824efb29afe585c62162f9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896057"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065952"
 ---
-# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Cómo: Enlazar un controlador de pruebas o un agente de pruebas a un adaptador de red
+# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Procedimiento para enlazar un controlador de pruebas o un agente de pruebas a un adaptador de red
 
 Si un equipo que tiene instalado el controlador de prueba o el software del agente de pruebas tiene varios adaptadores de red, debe especificar la dirección IP en lugar del nombre del equipo para identificar ese controlador de pruebas o agente de prueba.
 

@@ -1,6 +1,6 @@
 ---
 title: Administración de proyectos de aplicación de Python
-description: El propósito de los proyectos de Visual Studio, cómo crear y administrar proyectos de código de Python y las diferentes plantillas de proyecto disponibles para Python.
+description: Los proyectos de Visual Studio administran las dependencias entre los archivos y la complejidad de las relaciones en una aplicación.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9f5612aa166f81bf1f42983989db5bdf5422a7ef
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 6b0d31905cd0dfb835275d6fd0bbe8f153253b56
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220474"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068291"
 ---
 # <a name="python-projects-in-visual-studio"></a>Proyectos de Python en Visual Studio
 
@@ -38,7 +39,7 @@ Visual Studio proporciona numerosas plantillas de proyecto de Python para config
 |   |   |
 |---|---|
 | ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Vea un vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) para obtener una introducción a los proyectos de Python (2 minutos 17 segundos). |
-| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | Consulte también el vídeo de Youtube.com (8 minutos y 55 segundos) [Deep Dive: Use source control with Python projects](https://youtu.be/Aq8eqApnugM) (Profundización: uso del control de código fuente con proyectos de Python). |
+| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | Vea también el vídeo de Youtube.com (8 minutos y 55 segundos) [Deep Dive: Use source control with Python projects](https://youtu.be/Aq8eqApnugM) (Profundización: uso del control de código fuente con proyectos de Python). |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Incorporación de archivos, asignación de un archivo de inicio y establecimiento de entornos
 

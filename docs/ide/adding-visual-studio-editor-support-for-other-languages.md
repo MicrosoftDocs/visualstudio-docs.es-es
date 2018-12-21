@@ -1,5 +1,5 @@
 ---
-title: Agregar compatibilidad con otros lenguajes en el editor de Visual Studio
+title: Adición de compatibilidad del editor con otros lenguajes
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 57991a7cac2d45cf618642ccd19ead1d94ce5978
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+ms.openlocfilehash: f0ac463161d42e0d9ddf6b845b752916675ba4fe
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244481"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062100"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Agregar compatibilidad con otros lenguajes en el editor de Visual Studio
 
@@ -84,9 +84,9 @@ En esta ruta de acceso base, agregue las carpetas siguientes si se aplican a su 
 
 En Windows, *%userprofile%* se resuelve como la ruta de acceso *c:\Usuarios\\\<nombre de usuario>*. Si la carpeta de extensiones no existe en el sistema, debe crearla. Si la carpeta ya existe, estará oculta.
 
-Para obtener más información sobre cómo crear gramáticas TextMate, vea [TextMate – Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate. Introducción a las gramáticas de lenguaje: cómo agregar resaltado de sintaxis de código origen insertado en HTML) y [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (Notas sobre cómo crear una gramática de lenguaje y un tema personalizado para un lote de Textmate).
+Para obtener más información sobre cómo crear gramáticas TextMate, vea [TextMate - Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate - Introducción a las gramáticas de lenguaje: Cómo agregar resaltado de sintaxis de código fuente insertada en HTML) y [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (Notas sobre cómo crear una gramática de lenguaje y un tema personalizado para un lote de TextMate).
 
 ## <a name="see-also"></a>Vea también
 
-- [Tutorial: Crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md)
+- [Tutorial: Creación de un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md)
 - [Tutorial: Mostrar la finalización de instrucciones](../extensibility/walkthrough-displaying-statement-completion.md)

@@ -1,5 +1,5 @@
 ---
-title: Personalizar el IDE de Visual Studio
+title: Personalizar el IDE
 ms.date: 11/20/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8f52061acff03a1339a9c7b7f3f8ff4901ec6a5
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: cfd3ed3461b40f85e66d62f01e68aff4ce740031
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388730"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159508"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizar el IDE de Visual Studio
 
@@ -42,7 +42,7 @@ Muchas opciones de personalización se exponen en el cuadro de diálogo [Opcione
 
 Para cambiar el tema de color entre claro, oscuro y azul, escriba `environment` en el cuadro **Inicio rápido** y, luego, elija **Entorno --> General**. En el cuadro de diálogo **Opciones**, cambie la opción **Tema de color**.
 
-Para cambiar las opciones de color en el editor, escriba `environment` en el cuadro **Inicio rápido** y, luego, elija **Entorno --> Fuentes y colores**. Consulte [Cómo: Cambiar fuentes y colores](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+Para cambiar las opciones de color en el editor, escriba `environment` en el cuadro **Inicio rápido** y, luego, elija **Entorno --> Fuentes y colores**. Vea [Cómo: Cambiar fuentes y colores](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Mayúsculas y minúsculas en el menú principal
 
@@ -50,7 +50,7 @@ Puede cambiar el uso de mayúsculas en el menú principal y alternar entre **tip
 
 ### <a name="customize-menus-and-toolbars"></a>Personalización de menús y barras de herramientas
 
-Para agregar o quitar elementos del menú o de la barra de herramientas, vea [Cómo: Personalizar menús y barras de herramientas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+Para agregar o quitar elementos de menú o barra de herramientas, vea [Cómo: Personalizar menús y barras de herramientas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ## <a name="start-page"></a>Página de inicio
 
@@ -67,6 +67,6 @@ Puede personalizar el menú **Herramientas** para iniciar herramientas externas.
 ## <a name="see-also"></a>Vea también
 
 - [Configuración del entorno](environment-settings.md)
-- [Introducción al IDE de Visual Studio](../ide/visual-studio-ide.md)
-- [Guía de inicio rápido: primer vistazo al IDE de Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Introducción al IDE de Visual Studio](../get-started/visual-studio-ide.md)
+- [Inicio rápido: Primer vistazo al IDE de Visual Studio](../ide/quickstart-ide-orientation.md)
 - [Personalización del IDE de Visual Studio para Mac](/visualstudio/mac/customizing-the-ide)

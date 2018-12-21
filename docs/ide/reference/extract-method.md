@@ -1,5 +1,5 @@
 ---
-title: Extracción de un método en Visual Studio
+title: Extracción de un método
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6978457fdc976f87a8334b181ab69dfd78ef240c
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: b80b5053022b9e42bb6cfd30e3c76a72bef70746
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294545"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064619"
 ---
 # <a name="extract-a-method-refactoring"></a>Refactorización de extracción de un método
 
@@ -29,11 +29,11 @@ Esta refactorización se aplica a lo siguiente:
 
 - Visual Basic
 
-**Qué:** Le permite convertir un fragmento de código en su propio método.
+**Qué:** Permite convertir un fragmento de código en su propio método.
 
-**Cuándo:** Tiene un fragmento de código existente en algún método que debe llamarse desde otro método.
+**Cuándo:** Se tiene un fragmento de código existente en algún método al que se debe llamar desde otro método.
 
-**Por qué:** Podría copiar y pegar ese código, pero esto provocaría una duplicación. Una mejor solución consiste en refactorizar ese fragmento en su propio método al que cualquier otro método puede llamar libremente.
+**Por qué:** Se podría copiar y pegar ese código, pero eso provocaría una duplicación. Una mejor solución consiste en refactorizar ese fragmento en su propio método al que cualquier otro método puede llamar libremente.
 
 ## <a name="how-to"></a>Procedimiento
 

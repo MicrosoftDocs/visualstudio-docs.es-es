@@ -1,5 +1,5 @@
 ---
-title: Parámetros de plantilla de elemento y de proyecto de Visual Studio
+title: Parámetros de plantilla de elemento y de proyecto
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4c76eaf68f63b4f3b8a5713d0b206b395ee7c9f1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: bd566988d7546bed72f6ae3ea2c5c6f3159054f4
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178639"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067679"
 ---
 # <a name="template-parameters"></a>Parámetros de plantilla
 

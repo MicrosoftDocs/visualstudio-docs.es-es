@@ -1,30 +1,45 @@
 ---
-title: Números de compilación y fechas de lanzamiento de Visual Studio 2017
-description: Una lista de las versiones de lanzamiento y los números de compilación de Visual Studio 2017, ordenados por fecha.
+title: Números de compilación y fechas de lanzamiento de Visual Studio
+titleSuffix: ''
+description: Una lista de las versiones de lanzamiento y los números de compilación para Visual Studio 2017 y versiones posteriores, ordenados por fecha.
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 10/23/2018
+ms.date: 12/11/2018
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
+ms.custom: seodec18
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 7479b92fd8e249c44f03ba3e9dcd1672f0cf7866
-ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
+ms.openlocfilehash: 47c51b1f4f5ce168e679027a704ffb2b23482817
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49991580"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248262"
 ---
-# <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Números de compilación y fechas de lanzamiento de Visual Studio 2017
+# <a name="visual-studio-build-numbers-and-release-dates"></a>Números de compilación y fechas de lanzamiento de Visual Studio
+
+## <a name="visual-studio-2017"></a>Visual Studio 2017
 
 En la tabla siguiente se enumeran los números de compilación y las fechas de lanzamiento de Visual Studio 2017, hasta la fecha.
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.4 | Versión | 11 de diciembre de 2018 | 15.9.28307.222 |
+| 15.0.20 | Versión | 11 de diciembre de 2018 | 15.0.26228.64 |
+| 15.9.3 | Versión preliminar 1 | 28 de noviembre de 2018 | 15.9.28307.145 |
+| 15.9.3 | Versión | 28 de noviembre de 2018 | 15.9.28307.145 |
+| 15.9.2 | Versión | 19 de noviembre de 2018 | 15.9.28307.108 |
+| 15.9.1 | Versión | 15 de noviembre de 2018 | 15.9.28307.105 |
+| 15.9.0 | Versión | 13 de noviembre de 2018 | 15.9.28307.53 |
+| 15.9.0 (versión preliminar 6) | Vista previa | 13 de noviembre de 2018 | 15.9.28307.53 |
+| 15.9.0 (versión preliminar 5) | Vista previa | 6 de noviembre de 2018 | 15.9.28302.56 |
+| 15.8.9 | Versión | 2 de noviembre de 2018 | 15.8.28010.2050 |
+| 15.8.8 | Versión | 24 de octubre de 2018 | 15.8.28010.2048 |
 | 15.9.0 (versión preliminar 4) | Vista previa | 23 de octubre de 2018 | 15.9.28219.56 |
 | 15.8.7 | Versión | 10 de octubre de 2018 | 15.8.28010.2046 |
 | 15.0.19 | Versión | 10 de octubre de 2018 | 15.0.26228.57 |
@@ -77,35 +92,35 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de l
 | 15.6.0 (versión preliminar 7) | Vista previa | 2 de marzo de 2018 | 15.6.27428.1 |
 | 15.6.0 (versión preliminar 6) | Vista previa | 23 de febrero de 2018 | 15.6.27421.1 |
 | 15.0.10 | Versión | 21 de febrero de 2018 | 15.0.26228.28 |
-| 15.5.7 | Versión | 20 de febrero de 2018 | 15.5.27130.2036 |
+| 15.5.7 | Versión | 20 de febrero de 2018 | 15.0.27130.2036 |
 | 15.6.0 (versión preliminar 5) | Vista previa | 14 de febrero de 2018 | 15.6.27413.0 |
 | 15.6.0 (versión preliminar 4) | Vista previa | 7 de febrero de 2018 | 15.6.27406.0 |
 | 15.0.9 | Versión | 2 de febrero de 2018 | 15.0.26228.23 |
-| 15.5.6 | Versión | 29 de enero de 2018 | 15.5.27130.2027 |
-| 15.5.5 | Versión | 25 de enero de 2018 | 15.5.27130.2026 |
+| 15.5.6 | Versión | 29 de enero de 2018 | 15.0.27130.2027 |
+| 15.5.5 | Versión | 25 de enero de 2018 | 15.0.27130.2026 |
 | 15.6.0 (versión preliminar 3) | Vista previa | 25 de enero de 2018 | 15.6.27323.2 |
-| 15.5.4 | Versión | 16 de enero de 2018 | 15.5.27130.2024 |
+| 15.5.4 | Versión | 16 de enero de 2018 | 15.0.27130.2024 |
 | 15.6.0 (versión preliminar 2) | Vista previa | 10 de enero de 2018 | 15.6.27309.0 |
-| 15.5.3 | Versión |  9 de enero de 2018 | 15.5.27130.2020 |
+| 15.5.3 | Versión |  9 de enero de 2018 | 15.0.27130.2020 |
 | 15.0.8 | Versión |  9 de enero de 2018 | 15.0.26228.21 |
-| 15.5.2 | Versión | 14 de diciembre de 2017 | 15.5.27130.2010 |
+| 15.5.2 | Versión | 14 de diciembre de 2017 | 15.0.27130.2010 |
 | 15.6.0 (versión preliminar 1) | Vista previa | 14 de diciembre de 2017 | 15.6.27205.2004 |
-| 15.5.1 | Versión | 7 de diciembre de 2017 | 15.5.27130.2003 |
+| 15.5.1 | Versión | 7 de diciembre de 2017 | 15.0.27130.2003 |
 | 15.6.0 (versión preliminar 1) | Vista previa | 7 de diciembre de 2017 | 15.6.27205.0 |
 | 15.0.7 | Versión | 6 de diciembre de 2017 | 15.0.26228.18 |
-| 15.5 | Versión | 4 de diciembre de 2017 | 15.5.27130.0 |
-| 15.5.0 (versión preliminar 5) | Vista previa | 30 de noviembre de 2017 | 15.5.27128.1 |
-| 15.4.5 | Versión | 27 de noviembre de 2017 | 15.4.27004.2010 |
-| 15.5.0 (versión preliminar 4) | Vista previa | 14 de noviembre de 2017 | 15.5.27110.0 |
-| 15.4.4 | Versión | 14 de noviembre de 2017 | 15.4.27004.2009 |
+| 15.5 | Versión | 4 de diciembre de 2017 | 15.0.27130.0 |
+| 15.5.0 (versión preliminar 5) | Vista previa | 30 de noviembre de 2017 | 15.0.27128.1 |
+| 15.4.5 | Versión | 27 de noviembre de 2017 | 15.0.27004.2010 |
+| 15.5.0 (versión preliminar 4) | Vista previa | 14 de noviembre de 2017 | 15.0.27110.0 |
+| 15.4.4 | Versión | 14 de noviembre de 2017 | 15.0.27004.2009 |
 | 15.0.6 | Versión | 14 de noviembre de 2017 | 15.0.26228.17 |
-| 15.4.3 | Versión | 8 de noviembre de 2017 | 15.4.27004.2008 |
-| 15.5.0 (versión preliminar 3) | Vista previa | 6 de noviembre de 2017 | 15.5.27102.0 |
-| 15.4.2 | Versión | 31 de octubre de 2017 | 15.4.27004.2006 |
-| 15.5.0 (versión preliminar 2) | Vista previa | 23 de octubre de 2017 | 15.5.27019.1 |
-| 15.4.1 | Versión | 19 de octubre de 2017 | 15.4.27004.2005 |
+| 15.4.3 | Versión | 8 de noviembre de 2017 | 15.0.27004.2008 |
+| 15.5.0 (versión preliminar 3) | Vista previa | 6 de noviembre de 2017 | 15.0.27102.0 |
+| 15.4.2 | Versión | 31 de octubre de 2017 | 15.0.27004.2006 |
+| 15.5.0 (versión preliminar 2) | Vista previa | 23 de octubre de 2017 | 15.0.27019.1 |
+| 15.4.1 | Versión | 19 de octubre de 2017 | 15.0.27004.2005 |
 | 15.5 (versión preliminar 1) | Vista previa | 11 de octubre de 2017 | 15.0.27009.1 |
-| 15.4 | Versión | 9 de octubre de 2017 | 15.0.27004.20002 |
+| 15.4 | Versión | 9 de octubre de 2017 | 15.0.27004.2002 |
 | 15.4 (versión preliminar 6) | Vista previa | 9 de octubre de 2017| 15.0.27004.20002 |
 | 15.4 (versión preliminar 5) | Vista previa | 6 de octubre de 2017 | 15.0.27004.2000 |
 | 15.4 (versión preliminar 4) | Vista previa | 2 de octubre de 2017 | 15.0.26929.2 |
@@ -120,7 +135,7 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de l
 | 15.3.1 | Versión | 18 de agosto de 2017 | 15.0.26730.08 |
 | 15.3.1 (versión preliminar 1) | Vista previa | 18 de agosto de 2017 | 15.0.26730.08 |
 | 15.3.1  | Versión | 18 de agosto de 2017 | 15.0.26730.08 |
-| 15.4 (versión preliminar 1) | Vista previa | 24 de agosto de 2017 | 15.4.26823.1 |
+| 15.4 (versión preliminar 1) | Vista previa | 24 de agosto de 2017 | 15.0.26823.1 |
 | 15.3 | Versión | 14 de agosto de 2017 | 15.0.26730.3 |
 | 15.3 (versión preliminar 7.1) | Vista previa | 11 de agosto de 2017 | 15.0.26730.3 |
 | 15.3 (versión preliminar 7) | Vista previa | 1 de agosto de 2017 | 15.0.26730.0 |
@@ -154,6 +169,15 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de l
 | 15.0.1  | Versión | 14 de marzo de 2017 | 15.0.26228.9 |
 | 15.1 (versión preliminar 1) | Vista previa | 7 de marzo de 2017 | 15.0.26304.0 |
 | 15.0.0 | Versión | 7 de marzo de 2017 | 15.0.26228.4 |
+
+## <a name="visual-studio-2019-preview"></a>Visual Studio 2019 Preview
+
+En la tabla siguiente se enumeran los números de compilación y las fechas de lanzamiento de Visual Studio 2019 Preview, hasta la fecha.
+
+| **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
+| ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | Versión preliminar 1.1 | 10 de diciembre de 2018 | 16.0.28408.50 |
+| 16.0.0 | Versión preliminar 1 | 4 de diciembre de 2018 | 16.0.28329.73 |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

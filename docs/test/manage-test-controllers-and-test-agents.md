@@ -1,5 +1,5 @@
 ---
-title: Administración de controladores de pruebas y agentes de pruebas en Visual Studio
+title: Administrar controladores de pruebas y agentes de pruebas
 ms.date: 09/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48c377a8a5c48db7e0726ab5d5cc238e6b83c71c
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: ccc3a6342857d1f228118ef7b26601f3787908e4
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895293"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059501"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Administrar controladores de pruebas y agentes de pruebas
 
@@ -45,7 +45,7 @@ Quizás desee agregar un agente de prueba a un controlador de pruebas diferente 
 
 2. Se presentan dos opciones de ejecución para el agente de pruebas:
 
-   - **Servicio**: si no tiene que ejecutar pruebas automatizadas que interactúen con el escritorio, como pruebas automatizadas de IU o grabaciones de vídeo al ejecutar pruebas, en **Ejecutar el agente de prueba como** seleccione **Servicio**. El agente de prueba se iniciará como un servicio. Seleccione **Siguiente**.
+   - **Servicio**: si no tiene que ejecutar pruebas automatizadas que interactúen con el escritorio, como pruebas automatizadas de IU o grabaciones de vídeo al ejecutar las pruebas, seleccione **Servicio** en **Ejecutar el agente de prueba como**. El agente de prueba se iniciará como un servicio. Seleccione **Siguiente**.
 
       Ahora puede escribir los detalles sobre el usuario que se va a usar cuando el agente de prueba se inicie como un servicio.
 
@@ -60,7 +60,7 @@ Quizás desee agregar un agente de prueba a un controlador de pruebas diferente 
         |-   Si el nombre de usuario del agente no está en el servicio del agente, intentará agregarlo, para lo cual se necesitan permisos en el controlador de pruebas.|
         |-   El usuario que está intentando usar el controlador debe estar en la cuenta Usuarios del controlador de pruebas o no podrá ejecutar las pruebas con el controlador.|
 
-   - **Proceso interactivo**: si quiere ejecutar pruebas automatizadas que deben interactuar con el escritorio, como pruebas automatizadas de IU o grabaciones de vídeo al ejecutar pruebas, seleccione **Proceso interactivo**. El agente de prueba se iniciará como un proceso interactivo y no como un servicio.
+   - **Proceso interactivo**: si quiere ejecutar pruebas automatizadas que deban interactuar con el escritorio, como pruebas automatizadas de IU o grabaciones de vídeo al ejecutar pruebas, seleccione **Proceso interactivo**. El agente de prueba se iniciará como un proceso interactivo y no como un servicio.
 
       En la siguiente página, escriba los detalles del usuario que se va a usar cuando se inicie el agente de prueba como un proceso, además de otras opciones.
 
@@ -145,8 +145,8 @@ Para cambiar el estado y otras configuraciones de un agente de prueba, siga los 
 |Propiedad del agente de prueba|Descripción|
 |-|-----------------|
 |**Peso**|Sirve para distribuir la carga cuando se utilizan agentes de prueba con diferentes niveles de rendimiento. Por ejemplo, un agente de prueba con un peso de 100 recibe dos veces la carga de un agente de prueba con un peso de 50.|
-|**Conmutación de IP**|Sirve para configurar la conmutación de IP. La conmutación de IP permite que un agente de prueba envíe solicitudes a un servidor utilizando un intervalo de direcciones IP. De esta forma se simulan llamadas procedentes de diferentes equipos cliente.<br /><br /> La conmutación de IP es importante si la prueba de carga accede a una granja de servidores web. La mayoría de los equilibradores de carga establecen una afinidad entre un cliente y un servidor web determinado mediante la dirección IP del cliente. Si aparentemente todas las solicitudes proceden del mismo cliente, el equilibrador de carga no equilibrará la carga. Para obtener un buen equilibrio de carga en la granja de servidores web, asegúrese de que las solicitudes procedan de un intervalo de direcciones IP. **Nota:** Puede especificar un adaptador de red o usar **(Todas sin asignar)** para seleccionar automáticamente una dirección que no esté en uso. <br /><br /> Para poder usar la característica de conmutación de IP, es preciso que el servicio Visual Studio Test Agent se ejecute como usuario del grupo Administradores de ese equipo de agente. Este usuario se selecciona durante la instalación del agente, pero se puede cambiar modificando las propiedades del servicio y reiniciándolo.<br /><br /> Para comprobar que la conmutación de IP funciona correctamente, habilite el registro de IIS en el servidor web y utilice la funcionalidad de registro de IIS para comprobar que las solicitudes proceden de las direcciones IP configuradas.|
-|**Atributos**|Conjunto de pares nombre-valor que se pueden utilizar en la selección del agente de prueba. Por ejemplo, una prueba puede requerir un sistema operativo determinado. Puede agregar atributos en la pestaña **Roles** del archivo de configuración de pruebas y se pueden usar para seleccionar un agente que tenga atributos coincidentes. Si quiere ejecutar una prueba en varias máquinas, cree un atributo en el rol de la configuración de pruebas que se configura para ejecutar las pruebas y, después, configure un atributo coincidente en cada agente de prueba que quiera usar en ese rol. **Nota:** Esta configuración solo está disponible para los agentes de pruebas registrados en un controlador de pruebas que no está registrado en un proyecto, ya que estos atributos se usan únicamente en las configuraciones de pruebas de Visual Studio.|
+|**Conmutación de IP**|Sirve para configurar la conmutación de IP. La conmutación de IP permite que un agente de prueba envíe solicitudes a un servidor utilizando un intervalo de direcciones IP. De esta forma se simulan llamadas procedentes de diferentes equipos cliente.<br /><br /> La conmutación de IP es importante si la prueba de carga accede a una granja de servidores web. La mayoría de los equilibradores de carga establecen una afinidad entre un cliente y un servidor web determinado mediante la dirección IP del cliente. Si aparentemente todas las solicitudes proceden del mismo cliente, el equilibrador de carga no equilibrará la carga. Para obtener un buen equilibrio de carga en la granja de servidores web, asegúrese de que las solicitudes procedan de un intervalo de direcciones IP. **Nota:**  Puede especificar un adaptador de red o usar **(Todas sin asignar)** para seleccionar de forma automática una dirección que no esté en uso. <br /><br /> Para poder usar la característica de conmutación de IP, es preciso que el servicio Visual Studio Test Agent se ejecute como usuario del grupo Administradores de ese equipo de agente. Este usuario se selecciona durante la instalación del agente, pero se puede cambiar modificando las propiedades del servicio y reiniciándolo.<br /><br /> Para comprobar que la conmutación de IP funciona correctamente, habilite el registro de IIS en el servidor web y utilice la funcionalidad de registro de IIS para comprobar que las solicitudes proceden de las direcciones IP configuradas.|
+|**Atributos**|Conjunto de pares nombre-valor que se pueden utilizar en la selección del agente de prueba. Por ejemplo, una prueba puede requerir un sistema operativo determinado. Puede agregar atributos en la pestaña **Roles** del archivo de configuración de pruebas y se pueden usar para seleccionar un agente que tenga atributos coincidentes. Si quiere ejecutar una prueba en varias máquinas, cree un atributo en el rol de la configuración de pruebas que se configura para ejecutar las pruebas y, después, configure un atributo coincidente en cada agente de prueba que quiera usar en ese rol. **Nota:**  Esta configuración solo está disponible para los agentes de pruebas registrados en un controlador de pruebas que no está registrado en un proyecto, ya que estos atributos se usan únicamente en las configuraciones de pruebas de Visual Studio.|
 
 Los cambios en el peso y los atributos de un agente de prueba entran inmediatamente en vigor, pero no afectan a las pruebas que se están ejecutando. El intervalo de direcciones IP entra en vigor después de reiniciar el controlador de pruebas.
 

@@ -1,6 +1,6 @@
 ---
-title: Edición de código de Python
-description: La edición de Python en Visual Studio proporciona IntelliSense, fragmentos de código y características de navegación, además de formato, linting y refactorización.
+title: Editar código de Python
+description: Para Python, Visual Studio proporciona IntelliSense enriquecido, fragmentos de código y características de navegación, además de formato, detección de errores y refactorización.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,21 +8,22 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b8d92f16f869de400d0d66ff44c1848abffde67f
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 15020111702d68c8c35fb09655018215e3a11d3b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001274"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062821"
 ---
 # <a name="edit-python-code"></a>Editar código de Python
 
 Dado que invierte mucho tiempo de desarrollo en el editor de código, la [compatibilidad de Python en Visual Studio](installing-python-support-in-visual-studio.md) proporciona funciones para ayudarle a ser más productivo. Las características incluyen resalte de sintaxis de IntelliSense, finalización automática, ayuda para la firma, invalidaciones de método, búsqueda y navegación.
 
-El editor también está integrado en la ventana **interactiva** de Visual Studio, lo que hace que sea sencillo intercambiar código entre los dos. Vea [Paso 3: Usar la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) y [Uso de la ventana interactiva - Comando Enviar código a Interactive](python-interactive-repl-in-visual-studio.md#send-to-interactive-command) para obtener información detallada.
+El editor también está integrado en la ventana **interactiva** de Visual Studio, lo que hace que sea sencillo intercambiar código entre los dos. Vea [Paso 3 del tutorial: Uso de la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) y [Uso de la ventana interactiva - Comando Enviar código a Interactive](python-interactive-repl-in-visual-studio.md#send-to-interactive-command) para obtener información detallada.
 
 |   |   |
 |---|---|
@@ -44,7 +45,7 @@ Para mejorar el rendimiento, IntelliSense en **Visual Studio 2017, versión 15.5
 
 Las finalizaciones aparecen como instrucciones, identificadores y otras palabras que pueden especificarse adecuadamente en la ubicación actual en el editor. Lo que se muestra en la lista se basa en contexto y se filtra para omitir las opciones incorrectas o molestas. Las finalizaciones a menudo se desencadenan escribiendo instrucciones diferentes (como `import`) y operadores (incluido el punto), pero puede hacer que aparezcan en cualquier momento si presiona **Ctrl**+**J** > **Espacio**.
 
-![Finalizaciones de miembros](media/code-editing-completions-simple.png)
+![Finalización de miembros en el editor de Visual Studio](media/code-editing-completions-simple.png)
 
 Cuando se abre una lista de finalizaciones, puede buscar la finalización que desee con las teclas de dirección, el mouse o bien escribiendo algo más. A medida que escriba más letras, la lista se seguirá filtrando para mostrar las finalizaciones probables. También puede usar accesos directos como:
 
@@ -54,27 +55,27 @@ Cuando se abre una lista de finalizaciones, puede buscar la finalización que de
 
 Algunos ejemplos:
 
-![Finalizaciones de miembros con filtrado](media/code-editing-completion-filtering.png)
+![Finalización de miembros con filtrado en el editor de Visual Studio](media/code-editing-completion-filtering.png)
 
 Las finalizaciones de miembros aparecen automáticamente al escribir un punto después de una variable o un valor, junto con los métodos y atributos de los tipos posibles. Si una variable puede ser de más de un tipo, la lista incluye todas las posibilidades de todos los tipos, con información adicional para indicar qué tipos admite cada finalización. Cuando una finalización es compatible con todos los tipos posibles, se muestra sin la anotación.
 
-![Finalización de miembros en varios tipos](media/code-editing-completion-types.png)
+![Finalización de miembros en varios tipos en el editor de Visual Studio](media/code-editing-completion-types.png)
 
 De manera predeterminada, no se muestran los miembros "dunder" (miembros que comienzan y terminan con un doble carácter de subrayado). En general, no se debe acceder a dichos miembros directamente. En cambio, si necesita uno, al escribir el doble carácter de subrayado inicial se agregan estas finalizaciones a la lista:
 
-![Finalización de miembros privados](media/code-editing-completion-dunder.png)
+![Finalización de miembros privados en el editor de Visual Studio](media/code-editing-completion-dunder.png)
 
 Las instrucciones `import` y `from ... import` muestran una lista de módulos que pueden importarse. Con `from ... import`, la lista incluye miembros que pueden importarse desde el módulo especificado.
 
-![Finalización de importaciones](media/code-editing-completion-import.png)
+![Finalización de importaciones en el editor de Visual Studio](media/code-editing-completion-import.png)
 
 Las instrucciones `raise` y `except` muestran listas de clases que probablemente sean tipos de error. La lista puede no incluir todas las excepciones definidas por el usuario, pero le ayudan a encontrar rápidamente las excepciones integradas adecuadas:
 
-![Finalización de excepciones](media/code-editing-completion-exception.png)
+![Finalización de excepciones en el editor de Visual Studio](media/code-editing-completion-exception.png)
 
 Al escribir @ se inicia un decorador y se muestran todos los posibles decoradores. Muchos de estos elementos no se pueden usar como decoradores; consulte la documentación de la biblioteca para determinar cuál se va a usar.
 
-![Finalización de decoradores](media/code-editing-completion-decorator.png)
+![Finalización de decoradores en el editor de Visual Studio](media/code-editing-completion-decorator.png)
 
 > [!Tip]
 > Puede configurar el comportamiento de estas finalizaciones en **Herramientas** > **Opciones** > **Editor de texto** > **Python** > **Opciones avanzadas**. De estas opciones, **Filter list based on search string** (Filtrar lista en función de la cadena de búsqueda) aplica el filtrado de sugerencias de finalización mientras se escribe (activo de manera predeterminada) y **Member completion displays intersection of members** (La finalización de miembros muestra la intersección de miembros) muestra solo las finalizaciones que son compatibles con todos los posibles tipos (desactivado de manera predeterminada). Vea [Opciones: resultados de finalización](python-support-options-and-settings-in-visual-studio.md#completion-results).
@@ -123,7 +124,7 @@ Al usar el comando **Ejecutar MyPy** en este código se genera el siguiente erro
 
 Al escribir código que llama a una función, la ayuda para la firma aparece cuando se escribe el `(` de apertura y muestra la información de documentación y parámetros disponible. También puede hacer que aparezca con **Ctrl**+**Mayús**+**Espacio** dentro de una llamada de función. La información que se muestra depende de las cadenas de documentación del código fuente de la función, pero incluye los valores predeterminados.
 
-![Ayuda para la firma](media/code-editing-signature-help.png)
+![Ayuda para la firma en el editor de Visual Studio](media/code-editing-signature-help.png)
 
 > [!Tip]
 > Para deshabilitar la ayuda para la firma, vaya a **Herramientas** > **Opciones** > **Editor de texto** > **Python** > **General** y desactive **Finalización de instrucciones** > **Información de parámetros**.
@@ -132,17 +133,17 @@ Al escribir código que llama a una función, la ayuda para la firma aparece cua
 
 Al pasar el puntero del mouse sobre un identificador aparece una sugerencia de información rápida. Según el identificador, la información rápida puede mostrar los valores o tipos posibles, cualquier documentación disponible, los tipos de devolución y las ubicaciones de definición:
 
-![Información rápida](media/code-editing-quick-info.png)
+![Información rápida en el editor de Visual Studio](media/code-editing-quick-info.png)
 
 ### <a name="code-coloring"></a>Coloración de código
 
 La coloración de código utiliza información desde análisis de código a variables de colores, instrucciones y otras partes del código. Por ejemplo, las variables que hacen referencia a clases o módulos pueden mostrarse en un color diferente que las funciones u otros valores, y los nombres de los parámetros aparecen en un color diferente que las variables locales o globales. (De manera predeterminada, las funciones no se muestran en negrita):
 
-![Coloración de código](media/code-editing-code-coloring.png)
+![Colores de código y sintaxis en el editor de Visual Studio](media/code-editing-code-coloring.png)
 
 Para personalizar los colores, vaya a **Herramientas** > **Opciones** > **Entorno** > **Fuentes y colores** y modifique las entradas de **Python** en la lista **Mostrar elementos**:
 
-![Opciones de fuentes y colores](media/code-editing-customize-colors.png)
+![Opciones de fuentes y colores en Visual Studio](media/code-editing-customize-colors.png)
 
 > [!Tip]
 > Para deshabilitar la coloración de código, vaya a **Herramientas** > **Opciones** > **Editor de texto** > **Python** > **Opciones avanzadas** y desactive **Otras opciones** > **Color names based on type** (Nombres de colores basados en tipo). Vea [Opciones: Otras opciones](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
@@ -181,9 +182,9 @@ Al seleccionar este código y elegir el comando **Delimitar con** aparece una li
 
 Puede ver los fragmentos de código disponibles en el **Administrador de fragmentos de código**, que se abre con el comando de menú **Herramientas** > **Administrador de fragmentos de código**, y seleccionando **Python** como lenguaje:
 
-![Administrador de fragmentos de código](media/code-editing-code-snippets-manager.png)
+![Administrador de fragmentos de código en Visual Studio](media/code-editing-code-snippets-manager.png)
 
-Para crear sus propios fragmentos de código, vea [Tutorial: Crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md).
+Para crear fragmentos de código propios, vea [Tutorial: Creación de un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md).
 
 Si escribe un fragmento de código excelente que le gustaría compartir, no dude en publicarlo de manera resumida y [hacérnoslo saber](https://github.com/Microsoft/PTVS/issues). Es posible que podamos incluirlo en una futura versión de Visual Studio.
 
@@ -195,7 +196,7 @@ La compatibilidad con Python en Visual Studio proporciona varios medios para des
 
 La barra de navegación se muestra en la parte superior de cada ventana del editor e incluye una lista de dos niveles de definiciones. La lista desplegable de la izquierda contiene la clase de nivel superior y las definiciones de funciones en el archivo actual; la lista desplegable de la derecha muestra una lista de definiciones dentro del ámbito que se muestra en la izquierda. A medida que recorra el editor, las listas se actualizan para mostrar el contexto actual y, además, puede seleccionar una entrada de estas listas para ir directamente a ella.
 
-![Barra de navegación](media/code-editing-navigation-bar.png)
+![Barra de navegación] en el editor de Visual Studio (media/code-editing-navigation-bar.png)
 
 > [!Tip]
 > Para ocultar la barra de navegación, vaya a **Herramientas** > **Opciones** > **Editor de texto** > **Python** > **General** y desactive **Configuración** > **Barra de navegación**.
@@ -204,7 +205,7 @@ La barra de navegación se muestra en la parte superior de cada ventana del edit
 
 **Ir a definición** rápidamente salta del uso de un identificador (por ejemplo, un nombre de función, clase o variable) al código fuente donde se define. Se invoca haciendo clic con el botón derecho en un identificador y seleccionando **Ir a definición**, o colocando el símbolo de intercalación en el identificador y presionando **F12**. Funciona en todo su código y las bibliotecas externas siempre que el código fuente esté disponible. Si el código fuente de la biblioteca no está disponible, **Ir a definición** salta a la correspondiente instrucción `import` para una referencia de módulo, o mostrará un error.
 
-![Ir a definición](media/code-editing-go-to-definition.png)
+![Comando Ir a definición en Visual Studio](media/code-editing-go-to-definition.png)
 
 ### <a name="navigate-to"></a>Navegar a
 
@@ -212,7 +213,7 @@ El comando **Editar** > **Navegar a** (**Ctrl**+**,**) muestra un cuadro de bús
 
 Haga doble clic en cualquier nombre, o seleccione con las teclas de dirección y **Entrar**, para navegar a la definición de ese identificador.
 
-![Navegar a](media/code-editing-navigate-to.png)
+![Comando Navegar a en Visual Studio](media/code-editing-navigate-to.png)
 
 ### <a name="find-all-references"></a>Buscar todas las referencias
 
