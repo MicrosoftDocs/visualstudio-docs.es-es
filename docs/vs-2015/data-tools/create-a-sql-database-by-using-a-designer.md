@@ -1,4 +1,4 @@
----
+﻿---
 title: Crear una base de datos SQL mediante un diseñador | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
