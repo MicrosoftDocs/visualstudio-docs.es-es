@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3f8d6f2df0b0d9ec6e3f9d8ead7fd1e08929f8e
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 83ec85855e17f8798f55b01f043d47d7140278e7
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966536"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425778"
 ---
-# <a name="how-to-generate-code-metrics-data"></a>Cómo: generar datos de métricas de código
+# <a name="how-to-generate-code-metrics-data"></a>Procedimiento Generar datos de métricas de código
 
 Puede generar resultados de métricas de código para una solución completa o uno o varios proyectos. Las métricas del código está disponible dentro del entorno de desarrollo interactivo (IDE) de Visual Studio y, para C# y proyectos de Visual Basic, en la línea de comandos.
 
@@ -68,7 +68,7 @@ Para generar el archivo ejecutable *Metrics.exe*, siga estos pasos:
    msbuild /m /v:m /p:Configuration=Release Metrics.csproj
    ```
 
-   Un archivo ejecutable denominado *Metrics.exe* se genera en el *binarios* directorio bajo la raíz del repositorio.
+   Un archivo ejecutable denominado *Metrics.exe* se genera en el *artifacts\bin* directorio bajo la raíz del repositorio.
 
    > [!TIP]
    > Para compilar *Metrics.exe* en [modo heredado](#legacy-mode), ejecute el siguiente comando:

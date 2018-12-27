@@ -2,9 +2,8 @@
 title: ProjectSubType (elemento) (plantillas de Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectSubType
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d1ca080ea61fbaaba7992fd8f4f1f4fbeac843d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 046893f3bb3fb6dc0b4461e2d9cadcb2a95ba7bc
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824341"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561712"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType (elemento) (plantillas de Visual Studio)
 Clasifica la plantilla en una subcategoría del valor especificado en el `ProjectType` elemento.  

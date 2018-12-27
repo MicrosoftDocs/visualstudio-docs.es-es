@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - Office development in Visual Studio, deploying solutions
 - ClickOnce deployment [Office development in Visual Studio], deploying solutions
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e46a0bdc23ee16c4821d3da751d5a90aa62a14c3
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 8c690283eacabe56b18ef786bf4ab58fd03768e4
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673073"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648786"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Implementar una solución de Office mediante ClickOnce
   Puede implementar su solución de Office en menos pasos si usa ClickOnce. Si publica actualizaciones, la solución las detectará e instalará automáticamente. Sin embargo, ClickOnce requiere que instale la solución por separado para cada usuario de un equipo. Por lo tanto, debe considerar el uso de Windows Installer (*.msi*) si más de un usuario ejecutará la solución en el mismo equipo.  
@@ -262,7 +262,7 @@ ms.locfileid: "50673073"
 
 3.  Abra el **ExcelWorkbook.dll.manifest** archivo en un editor de texto como Bloc de notas.  
 
-4.  Agregue el código siguiente detrás del elemento `</vstav3:update>`. El atributo de clase de la `<vstav3:entryPoint>` elemento, use la siguiente sintaxis: *NamespaceName.ClassName*. En el ejemplo siguiente, los nombres de clase y espacio de nombres son los mismos, por lo que el nombre del punto de entrada resultante es `FileCopyPDA.FileCopyPDA`.  
+4.  Agregue el código siguiente detrás del elemento `</vstav3:update>`. El atributo de clase de la `<vstav3:entryPoint>` elemento, use la sintaxis siguiente: *NombreDeEspacioDeNombres.nombreDeClase*. En el ejemplo siguiente, los nombres de clase y espacio de nombres son los mismos, por lo que el nombre del punto de entrada resultante es `FileCopyPDA.FileCopyPDA`.  
 
     ```xml
     <vstav3:postActions>  
@@ -463,9 +463,9 @@ ms.locfileid: "50673073"
 ## <a name="see-also"></a>Vea también  
  [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)   
  [Publicar soluciones de Office](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Cómo: publicar una solución de Office mediante ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
- [Cómo: instalar una solución de ClickOnce Office](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)   
- [Cómo: publicar una solución de Office de nivel de documento en un servidor de SharePoint mediante ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)   
+ [Cómo: Publicar una solución de Office mediante ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
+ [Cómo: Instalar una solución de ClickOnce Office](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)   
+ [Cómo: Publicar una solución de Office de nivel de documento en un servidor de SharePoint mediante ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)   
  [Crear a un instalador personalizado para una solución de office ClickOnce](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)  
 
 

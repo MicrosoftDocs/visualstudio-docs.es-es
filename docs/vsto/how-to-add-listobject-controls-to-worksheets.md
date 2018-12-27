@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: agregar controles ListObject a hojas de cálculo'
+title: Procedimiento Agregar controles ListObject a hojas de cálculo
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - ListObject control, adding to worksheets
 - controls [Office development in Visual Studio], adding to worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 402e7f80ea208d714b31bd61e25b352494310487
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae6abd9791bfaa9ce0e7c15f1f6f66034a75c6c7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949258"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646976"
 ---
-# <a name="how-to-add-listobject-controls-to-worksheets"></a>Cómo: agregar controles ListObject a hojas de cálculo
+# <a name="how-to-add-listobject-controls-to-worksheets"></a>Procedimiento Agregar controles ListObject a hojas de cálculo
   Puede agregar <xref:Microsoft.Office.Tools.Excel.ListObject> controles a una hoja de cálculo de Microsoft Office Excel en tiempo de diseño y en tiempo de ejecución en los proyectos de nivel de documento.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -41,7 +41,7 @@ ms.locfileid: "49949258"
   Para obtener más información acerca de <xref:Microsoft.Office.Tools.Excel.ListObject> los controles, vea [control ListObject](../vsto/listobject-control.md).  
   
 ##  <a name="designtime"></a> Agregar controles ListObject en tiempo de diseño  
- Existen varias maneras de agregar controles <xref:Microsoft.Office.Tools.Excel.ListObject> a una hoja de cálculo en un proyecto de nivel de documento en tiempo de diseño: desde Excel, desde el **Cuadro de Herramientas**de Visual Studio y desde la ventana **Orígenes de datos** .  
+ Hay varias maneras de agregar <xref:Microsoft.Office.Tools.Excel.ListObject> controles a una hoja de cálculo en un proyecto de nivel de documento en tiempo de diseño: Desde Excel, desde Visual Studio **cuadro de herramientas**y desde el **orígenes de datos** ventana.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
@@ -95,7 +95,7 @@ ms.locfileid: "49949258"
  [ListObject (control)](../vsto/listobject-control.md)   
  [Automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md)   
  [Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)   
- [Cómo: cambiar el tamaño de los controles ListObject](../vsto/how-to-resize-listobject-controls.md)   
+ [Cómo: Cambiar el tamaño de los controles ListObject](../vsto/how-to-resize-listobject-controls.md)   
  [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Limitaciones de programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: agregar un panel de tareas personalizado a una aplicación'
+title: Procedimiento Agregar un panel de tareas personalizado a una aplicación
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - task panes [Office development in Visual Studio], adding to application
 - custom task panes [Office development in Visual Studio], adding to application
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8608fcc263be4750c38b6fe3f84967f40dd34ab
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 6436176c7af4206319d9d2f8408baccb0572da5b
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548819"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647002"
 ---
-# <a name="how-to-add-a-custom-task-pane-to-an-application"></a>Cómo: agregar un panel de tareas personalizado a una aplicación
+# <a name="how-to-add-a-custom-task-pane-to-an-application"></a>Procedimiento Agregar un panel de tareas personalizado a una aplicación
   Puede agregar un panel de tareas personalizado a las aplicaciones enumeradas anteriormente mediante el complemento de VSTO. Para obtener más información, consulte [paneles de tareas personalizados](../vsto/custom-task-panes.md).  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -35,7 +35,7 @@ ms.locfileid: "34548819"
   
 ### <a name="to-add-a-custom-task-pane-to-an-application"></a>Para agregar un panel de tareas personalizado a una aplicación  
   
-1.  Abra o cree un proyecto de complemento de VSTO para una de las aplicaciones enumeradas anteriormente. Para obtener más información, consulte [Cómo: proyectos de Office crear en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Abra o cree un proyecto de complemento de VSTO para una de las aplicaciones enumeradas anteriormente. Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
 2.  En el menú **Proyecto** , haga clic en **Agregar control de usuario**.  
   
@@ -43,9 +43,9 @@ ms.locfileid: "34548819"
   
      Se abre el control de usuario en el diseñador.  
   
-4.  Agregar uno o más controles de formularios Windows Forms desde la **cuadro de herramientas** al control de usuario.  
+4.  Agregue uno o más controles de Windows Forms desde la **cuadro de herramientas** al control de usuario.  
   
-5.  Abra la **ThisAddIn.cs** o **ThisAddIn.vb** archivo de código.  
+5.  Abra el **ThisAddIn.cs** o **ThisAddIn.vb** archivo de código.  
   
 6.  Agregue el código siguiente a la clase `ThisAddIn` . Este código declara instancias de `MyUserControl` y <xref:Microsoft.Office.Tools.CustomTaskPane> como miembros de la clase `ThisAddIn` .  
   

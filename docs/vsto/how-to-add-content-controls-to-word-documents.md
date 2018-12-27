@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: agregar contenido controles a documentos de Word'
+title: Procedimiento Contenido de agregar controles a documentos de Word
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -24,19 +24,19 @@ helpviewer_keywords:
 - ComboBoxContentControl, adding to documents
 - DatePickerContentControl, adding to documents
 - Word [Office development in Visual Studio], restricted permissions
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f654efacace3e4b7cbdfff8919309a09d4a544ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a7f99768236c8945fe82645c70c586361edcdde
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936971"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648051"
 ---
-# <a name="how-to-add-content-controls-to-word-documents"></a>Cómo: agregar contenido controles a documentos de Word
+# <a name="how-to-add-content-controls-to-word-documents"></a>Procedimiento Contenido de agregar controles a documentos de Word
   En los proyectos de nivel de documento Word, puede agregar controles de contenido al documento en el proyecto en tiempo de diseño o en tiempo de ejecución. En los proyectos de complemento VSTO de Word, puede agregar controles de contenido a cualquier documento abierto en tiempo de ejecución.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -58,7 +58,7 @@ ms.locfileid: "49936971"
   
 - Agregar un control de contenido en el documento de la misma manera en que se agregaría un control de contenido nativo en Word.  
   
-- Arrastrar un control de contenido a un documento desde la ventana **Orígenes de datos** . Esto es útil cuando se desea enlazar el control a los datos al crear el control. Para obtener más información, consulte [Cómo: rellenar documentos con datos de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md) y [Cómo: rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
+- Arrastrar un control de contenido a un documento desde la ventana **Orígenes de datos** . Esto es útil cuando se desea enlazar el control a los datos al crear el control. Para obtener más información, vea [Cómo: Rellenar documentos con datos de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md) y [Cómo: Rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
   
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
@@ -93,7 +93,7 @@ ms.locfileid: "49936971"
 2.  En la cinta de opciones, haga clic en la pestaña **Desarrollador** .  
   
     > [!NOTE]  
-    >  Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, consulte [Cómo: mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, vea [Cómo: Mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 3.  En el grupo **Controles** , haga clic en el icono del control de contenido que desea agregar.  
   

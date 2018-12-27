@@ -11,32 +11,32 @@ dev_langs:
 helpviewer_keywords:
 - InfoPath [Office development in Visual Studio], Ribbon
 - Ribbon [Office development in Visual Studio], InfoPath
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 250e3ed3fb548dad26bc29f83fae35b8e6727c9f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: HT
+ms.openlocfilehash: 6e6bdffe8de45db600d6fc456dbc75b8369bd2d7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674300"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648744"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>Personalizar una cinta para InfoPath
   Al personalizar la Cinta en Microsoft Office InfoPath, debe tener en cuenta dónde aparecerá la Cinta personalizada en la aplicación. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] puede mostrar la Cinta en los tres tipos de ventanas de la aplicación InfoPath indicados a continuación:  
   
--   Ventanas que muestran una plantilla de formulario que se abre en modo de diseño.  
+- Ventanas que muestran una plantilla de formulario que se abre en modo de diseño.  
   
--   Ventanas que muestran un formulario basado en una plantilla de formulario.  
+- Ventanas que muestran un formulario basado en una plantilla de formulario.  
   
--   La ventana Vista previa de impresión.  
+- La ventana Vista previa de impresión.  
   
- **Aplicación:** la información de este tema se aplica a los proyectos de complemento VSTO para InfoPath 2010. Para obtener más información, consulte [características disponibles por tipo de aplicación y el proyecto de Office](../vsto/features-available-by-office-application-and-project-type.md).  
+  **Se aplica a:** La información de este tema se aplica a los proyectos de complemento VSTO para InfoPath 2010. Para obtener más información, consulte [características disponibles por tipo de aplicación y el proyecto de Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
- Los usuarios y diseñadores abren una plantilla de formulario en modo de diseño para modificar la apariencia y el diseño de la plantilla. Los usuarios abren formularios basados en una plantilla de formulario para agregar contenido.  
+  Los usuarios y diseñadores abren una plantilla de formulario en modo de diseño para modificar la apariencia y el diseño de la plantilla. Los usuarios abren formularios basados en una plantilla de formulario para agregar contenido.  
   
- La ventana Vista previa de impresión permite a los diseñadores y usuarios obtener una vista previa de las páginas de un formulario o de una plantilla de formulario antes de imprimirlas.  
+  La ventana Vista previa de impresión permite a los diseñadores y usuarios obtener una vista previa de las páginas de un formulario o de una plantilla de formulario antes de imprimirlas.  
   
 > [!NOTE]  
 >  La pestaña **Complementos** no aparece en la ventana Vista previa de impresión. Si desea que una pestaña personalizada aparezca en la ventana Vista previa de impresión, asegúrese de que la propiedad **OfficeId** no se establezca en **TabAddIns**.  
@@ -68,6 +68,6 @@ ms.locfileid: "35674300"
  [Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Información general de la cinta de opciones](../vsto/ribbon-overview.md)   
  [Diseñador de cinta](../vsto/ribbon-designer.md)   
- [XML de la cinta](../vsto/ribbon-xml.md)  
+ [Ribbon XML](../vsto/ribbon-xml.md)  
   
   

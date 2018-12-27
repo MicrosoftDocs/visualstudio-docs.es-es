@@ -15,16 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eab54410c7eb1db9dfc0ac3b2c9b2f5df8b85eac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4eae301ca32ef986c76203fd04e7bd6dc9302fec
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634559"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740184"
 ---
-# <a name="code-analysis-application-errors"></a>Errores de la aplicación de análisis de código
+# <a name="code-analysis-application-errors"></a>Errores de aplicación de análisis de código
 
-En esta sección es una referencia de los mensajes de error generados por la herramienta de análisis de código administrado. Para obtener ayuda sobre un mensaje de error específico, escriba el número de error en la **buscar** cuadro en el índice.
+En esta sección es una referencia de los mensajes de error generados por la herramienta de análisis de código administrado.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -45,20 +45,20 @@ En esta sección es una referencia de los mensajes de error generados por la her
 |[CA0062](ca0062.md)|La regla '*RuleId*'hace referencia en el conjunto de reglas'*RuleSetName*' no se encontró.|
 |[CA0063](ca0063.md)|No se pudo cargar el archivo de conjunto de reglas o uno de sus archivos de conjunto de reglas dependientes.|
 |[CA0064](ca0064.md)|Ningún análisis se realizan porque el conjunto de reglas especificada no contiene ninguna regla de FxCop.|
-|[CA0065](ca0065.md)|Construcción de metadatos no admitido: tipo '*TypeName*'contiene una propiedad y un campo con el mismo nombre'*PropertyFieldName*'|
+|[CA0065](ca0065.md)|Construcción de metadatos no admitido: Tipo de '*TypeName*'contiene una propiedad y un campo con el mismo nombre'*PropertyFieldName*'|
 |[CA0066](ca0066.md)|El valor '*VersionID*' proporcionado para el **/targetframeworkversion** no es una versión reconocida.|
 |[CA0067](ca0067.md)|No se encontró el directorio.|
 |[CA0068](ca0068.md)|Depuración no se encuentra la información de ensamblado de destino *'AssemblyName'*.|
-|[CA0069](ca0069.md)|Con la plataforma alternativa. *FrameworkVersion1* no se pudo encontrar. Uso de *FrameworkVersion2* en su lugar. Para obtener los mejores resultados análisis Asegúrese de que la versión correcta de .NET Framework está instalada.|
+|[CA0069](ca0069.md)|Con la plataforma alternativa. *FrameworkVersion1* no se pudo encontrar. Uso de *FrameworkVersion2* en su lugar. Para obtener mejores resultados de análisis, asegúrese de que la versión correcta de .NET Framework está instalada.|
 |[CA0070](ca0070.md)|No se puede cargar el ensamblado o tipo debido a permisos de seguridad.|
 |[CA0501](ca0501.md)|No se puede leer el informe de salida.|
 |[CA0502](ca0502.md)|Idioma no admitido.|
-|[CA0503](ca0503.md)|La propiedad está en desuso. Utilice la propiedad sustituye|
+|[CA0503](ca0503.md)|La propiedad está en desuso. Utilice la propiedad reemplaza|
 |[CA0504](ca0504.md)|Directorio de la regla se omitió porque no existe|
-|[CA0505](ca0505.md)|La propiedad está en desuso. Utilice la propiedad sustituye|
+|[CA0505](ca0505.md)|La propiedad está en desuso. Utilice la propiedad reemplaza|
 |[Errores de FxCopCmd](fxcopcmd-errors.md)|Errores de análisis de código administrado.|
 
 ## <a name="related-sections"></a>Secciones relacionadas
 
 - [Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)
-- [Analizar la calidad del código administrado](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
+- [Analizar la calidad del código administrado](../code-quality/code-analysis-for-managed-code-overview.md)

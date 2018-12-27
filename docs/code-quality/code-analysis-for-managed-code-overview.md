@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 96f00e6080cb10778a92aaa860422da8366be54d
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: c76ee4a98694fee811b9edea4bcd8a095640cd25
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389317"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739687"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Información general del análisis de código estático de código administrado en Visual Studio
 
@@ -30,13 +30,13 @@ En el análisis de código administrado se analizan los ensamblados administrado
 La herramienta de análisis representa las comprobaciones que realiza durante un análisis como mensajes de advertencias. Los mensajes de advertencia identifican cualquier problema pertinente de programación y diseño y, cuando es posible, proporcionan información sobre la solución del problema.
 
 > [!NOTE]
-> Análisis de código estático no se admite para los proyectos de .NET Core y .NET Standard en Visual Studio. Ejecutar análisis de código en un proyecto .NET Core o .NET Standard como parte de msbuild, verá un error similar al **error: CA0055: no se pudo identificar la plataforma para \<your.dll >**. Para analizar el código en proyectos de .NET Core o .NET Standard, use [analizadores de Roslyn](../code-quality/roslyn-analyzers-overview.md) en su lugar.
+> Análisis de código estático no se admite para los proyectos de .NET Core y .NET Standard en Visual Studio. Ejecutar análisis de código en un proyecto .NET Core o .NET Standard como parte de msbuild, verá un error similar al **error: CA0055: No se pudo identificar la plataforma para \<your.dll >**. Para analizar el código en proyectos de .NET Core o .NET Standard, use [analizadores de Roslyn](../code-quality/roslyn-analyzers-overview.md) en su lugar.
 
 ## <a name="ide-integrated-development-environment-integration"></a>Integración del IDE (entorno de desarrollo integrado)
 
 Puede ejecutar análisis de código en el proyecto de forma manual o automática.
 
-Para ejecutar análisis de código cada vez que se compila un proyecto, seleccione **Habilitar análisis de código al compilar** en la página de propiedades del proyecto. Para obtener más información, consulte [Cómo: habilitar y deshabilitar el análisis de código automático](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
+Para ejecutar análisis de código cada vez que se compila un proyecto, seleccione **Habilitar análisis de código al compilar** en la página de propiedades del proyecto. Para obtener más información, vea [Cómo: Habilitar y deshabilitar el análisis de código automático](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
 Para ejecutar análisis de código manualmente en un proyecto, en la barra de menús elija **analizar** > **ejecutar análisis de código** > **ejecutar análisis de código en \<proyecto >**.
 
@@ -71,7 +71,7 @@ En una organización, puede ser necesario exigir que todas las protecciones cump
 
 - Análisis de código se ejecuta como parte de la compilación más reciente.
 
-Para conseguirlo, se especifican las directivas de inserción en el repositorio. Para obtener más información, consulte [mejorar la calidad del código con directivas de protección del proyecto](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).
+Para conseguirlo, se especifican las directivas de inserción en el repositorio. Para obtener más información, consulte [mejorar la calidad del código con directivas de protección del proyecto](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md).
 
 ## <a name="team-build-integration"></a>Integración de Team build
 
