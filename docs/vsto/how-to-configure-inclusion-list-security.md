@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: configurar la seguridad de la lista de inclusión'
+title: Procedimiento Configurar la seguridad de la lista de inclusión
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - permissions [Office development in Visual Studio
 - inclusion lists [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6e5bd1794b76485d60588b94d3ca139a314f9723
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: b13084a0010bef21283dc7890dd5b1064392e1b2
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255842"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647740"
 ---
-# <a name="how-to-configure-inclusion-list-security"></a>Cómo: configurar la seguridad de la lista de inclusión
+# <a name="how-to-configure-inclusion-list-security"></a>Procedimiento Configurar la seguridad de la lista de inclusión
   Si tiene permisos de administrador, puede configurar el [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] confiar símbolo del sistema para controlar si los usuarios finales tienen la opción de instalar soluciones de Office al guardar una decisión de confianza en la lista de inclusión. Para obtener información acerca de las listas de inclusión, vea [soluciones de Office de confianza mediante el uso de las listas de inclusión](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  

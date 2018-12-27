@@ -1,6 +1,7 @@
 ---
 title: '&lt;descripción&gt; elemento (desarrollo de Office en Visual Studio)'
-ms.custom: ''
+titleSuffix: ''
+ms.custom: secdec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -12,17 +13,17 @@ helpviewer_keywords:
 - description element
 - <description> element
 - application manifests [Office development in Visual Studio], <description> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9fcdac1e950d98394b5703322f40dd1823b246f6
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: fcd9525c5e1f4e075acdcadc94cfcd7fe0650c1c
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34265120"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648344"
 ---
 # <a name="ltdescriptiongt-element-office-development-in-visual-studio"></a>&lt;descripción&gt; elemento (desarrollo de Office en Visual Studio)
   El elemento `description` del espacio de nombres `vstov4` almacena la descripción de la solución de Office que aparece en el cuadro de diálogo de complementos COM de aplicaciones de Microsoft Office.  
@@ -34,12 +35,12 @@ ms.locfileid: "34265120"
 </description>  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementos y atributos  
+## <a name="elements-and-attributes"></a>Los elementos y atributos  
  Opcional. El elemento `description` está en el espacio de nombres `vstov4` . Contiene la descripción del complemento que se muestra en el cuadro de diálogo Complementos COM de las aplicaciones de Microsoft Office.  
   
  El elemento `description` no tiene atributos ni elementos secundarios.  
   
-## <a name="vsto-add-in-example"></a>Ejemplo para complemento de VSTO  
+## <a name="vsto-add-in-example"></a>Ejemplo de complemento de VSTO  
   
 ### <a name="description"></a>Descripción  
  En el siguiente ejemplo de código se muestra el elemento `description` en una solución de nivel de aplicación implementada mediante [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md).  

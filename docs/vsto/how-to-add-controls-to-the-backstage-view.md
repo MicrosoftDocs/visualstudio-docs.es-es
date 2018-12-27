@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: agregar controles a la vista Backstage '
+title: 'Procedimiento Agregar controles a la vista Backstage '
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,22 +18,22 @@ helpviewer_keywords:
 - Office button
 - Ribbon, menus
 - Microsoft Office Menu
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6b775c7613b8cc0953e419b2546ec017c96e8454
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 9d33d88849400857914c1daebfcd9d04a373920d
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34549082"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647128"
 ---
-# <a name="how-to-add-controls-to-the-backstage-view"></a>Cómo: agregar controles a la vista Backstage
-  Puede utilizar el Diseñador de la cinta de opciones para agregar controles al menú que se abre al hacer clic en el **archivo** ficha. Al ejecutar la aplicación, los controles que agregue a la **archivo** ficha aparece un grupo denominado **complementos**.  
+# <a name="how-to-add-controls-to-the-backstage-view"></a>Procedimiento Agregar controles a la vista Backstage
+  Puede usar el Diseñador de cinta para agregar controles al menú que se abre al hacer clic en el **archivo** ficha. Al ejecutar la aplicación, los controles que agregue a la **archivo** pestaña aparece un grupo denominado **complementos**.  
   
- No se puede colocar controles antes o después de los controles integrados mediante el Diseñador de la cinta de opciones en Visual Studio. Un control integrado es un control que ya aparece en la vista Backstage. Si desea colocar controles antes o después de los controles integrados, debe usar un XML de cinta de opciones. Para obtener más información acerca de **cinta (XML)**, consulte [XML de cinta de opciones](../vsto/ribbon-xml.md). Para obtener más información acerca de cómo personalizar la vista Backstage, consulte [Introducción a la vista Backstage de Office 2010 para desarrolladores](http://go.microsoft.com/fwlink/?LinkId=182189) y [personalizar la vista Backstage de Office 2010 para desarrolladores](http://go.microsoft.com/fwlink/?LinkId=182188).  
+ No se puede colocar controles antes o después de los controles integrados mediante el Diseñador de cinta de opciones en Visual Studio. Un control integrado es un control que ya aparece en la vista Backstage. Si desea colocar controles antes o después de los controles integrados, debe usar un archivo XML de cinta de opciones. Para obtener más información acerca de **cinta (XML)**, consulte [Ribbon XML](../vsto/ribbon-xml.md). Para obtener más información acerca de cómo personalizar la vista Backstage, consulte [Introducción a la vista Backstage de Office 2010 para desarrolladores](http://go.microsoft.com/fwlink/?LinkId=182189) y [personalizar la vista Backstage de Office 2010 para desarrolladores](http://go.microsoft.com/fwlink/?LinkId=182188).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
@@ -41,9 +41,9 @@ ms.locfileid: "34549082"
   
 1.  Abra el elemento de la cinta de opciones en la vista Diseño.  
   
-     Para obtener información sobre cómo agregar un **cinta (diseñador Visual)** elemento al proyecto, vea [Cómo: empezar a personalizar la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md).  
+     Para obtener información sobre cómo agregar un **cinta (diseñador Visual)** elemento al proyecto, vea [Cómo: Introducción a la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md).  
   
-2.  En el Diseñador de la cinta de opciones, haga clic en el **archivo** ficha.  
+2.  En el Diseñador de cinta de opciones, haga clic en el **archivo** ficha.  
   
      Aparece un diseñador de menús. Esta superficie de diseño no contiene todos los controles.  
   
@@ -67,9 +67,9 @@ ms.locfileid: "34549082"
   
 ## <a name="see-also"></a>Vea también  
  [Información general de la cinta de opciones](../vsto/ribbon-overview.md)   
- [Diseñador de la cinta](../vsto/ribbon-designer.md)   
- [XML de la cinta de opciones](../vsto/ribbon-xml.md)   
- [Cómo: empezar a personalizar la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md)   
- [Tutorial: Crear una pestaña personalizada usando el Diseñador de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
+ [Diseñador de cinta](../vsto/ribbon-designer.md)   
+ [XML de la cinta](../vsto/ribbon-xml.md)   
+ [Cómo: Empezar a personalizar la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [Tutorial: Crear una pestaña personalizada usando el Diseñador de cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
   
   

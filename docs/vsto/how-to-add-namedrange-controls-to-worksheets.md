@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: agregar controles NamedRange a hojas de cálculo'
+title: Procedimiento Agregar controles NamedRange a hojas de cálculo
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - ranges, adding to worksheets
 - NamedRange control, adding to worksheets
 - controls [Office development in Visual Studio], adding to worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 35febfa4c4d13b3f5d3d279f7d1c35e96051d54b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a279ab6419807d5010b830453ab0ec92d8c5ca7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867122"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648378"
 ---
-# <a name="how-to-add-namedrange-controls-to-worksheets"></a>Cómo: agregar controles NamedRange a hojas de cálculo
+# <a name="how-to-add-namedrange-controls-to-worksheets"></a>Procedimiento Agregar controles NamedRange a hojas de cálculo
   Puede agregar <xref:Microsoft.Office.Tools.Excel.NamedRange> controles a una hoja de cálculo de Microsoft Office Excel en tiempo de diseño y en tiempo de ejecución en los proyectos de nivel de documento.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -102,7 +102,7 @@ ms.locfileid: "49867122"
  [NamedRange (control)](../vsto/namedrange-control.md)   
  [Automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md)   
  [Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)   
- [Cómo: cambiar el tamaño de los controles NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
+ [Cómo: Cambiar el tamaño de los controles NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
  [Limitaciones de programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

@@ -8,17 +8,17 @@ ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8cc16544df224e09724cae8a1f09f72039cb61e5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b93e0de5f1d8c1d4e93189e7bfee36d44db19319
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894500"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648883"
 ---
 # <a name="getvalidcompatibleframework-function"></a>GetValidCompatibleFramework (función)
   Esta API admite la infraestructura de Office y no está diseñada para utilizarse directamente desde el código.  

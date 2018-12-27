@@ -8,17 +8,17 @@ ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 08b22ed86851a35f23306fc765f62f265da4701e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 39dcdcc5e3b8e6e5bc5834e7e05ea22516d8c7e6
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674485"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648618"
 ---
 # <a name="ensurevstocomponent-function"></a>EnsureVSTOComponent (función)
   Esta API admite la infraestructura de Office y no está diseñada para utilizarse directamente desde el código.  

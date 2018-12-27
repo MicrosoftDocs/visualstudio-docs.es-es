@@ -1,6 +1,7 @@
 ---
-title: '&lt;punto de entrada&gt; elemento (desarrollo de Office en Visual Studio)'
-ms.custom: ''
+title: '&lt;entryPoint&gt; elemento (desarrollo de Office en Visual Studio)'
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -12,19 +13,19 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <entryPoint> element
 - <entryPoint> element
 - entryPoint element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6eb617b44eb5360ea8c313431c7d8609505efa16
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f28da1a564196833adff530c3c7d31eb9ea9bb4e
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447094"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648657"
 ---
-# <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;punto de entrada&gt; elemento (desarrollo de Office en Visual Studio)
+# <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;entryPoint&gt; elemento (desarrollo de Office en Visual Studio)
   Cada elemento `entryPoint` del espacio de nombres `vstav3` identifica un ensamblado de personalización que se debe ejecutar cuando esta aplicación [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] se instala.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -35,8 +36,8 @@ ms.locfileid: "34447094"
 </entryPoint>  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementos y atributos  
- El elemento `entryPoint` es necesario y se encuentra en el espacio de nombres `vstav3` .  
+## <a name="elements-and-attributes"></a>Los elementos y atributos  
+ El elemento `entryPoint` es obligatorio y se encuentra en el espacio de nombres `vstav3` .  
   
  Cada elemento `entryPoint` puede contener solo un ensamblado de personalización. Puede haber numerosos elementos `entryPoint` en un manifiesto de aplicación.  
   
@@ -44,12 +45,12 @@ ms.locfileid: "34447094"
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`class`|Requerido. Identifica un ensamblado de personalización que se va a ejecutar. La sintaxis de este atributo es *NamespaceName.ClassName*.|  
+|`class`|Obligatorio. Identifica un ensamblado de personalización que se va a ejecutar. La sintaxis de este atributo es *NamespaceName.ClassName*.|  
   
  `entryPoint` tiene el siguiente elemento.  
   
 ### <a name="assemblyidentity"></a>assemblyIdentity  
- Requerido. El elemento `assemblyIdentity` en el espacio de nombres `vstav3` hace referencia a un elemento `assemblyIdentity` en el manifiesto de aplicación [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] .  
+ Obligatorio. El elemento `assemblyIdentity` en el espacio de nombres `vstav3` hace referencia a un elemento `assemblyIdentity` en el manifiesto de aplicación [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] .  
   
  El rol de `assemblyIdentity` y sus atributos se definen en [ &#60;assemblyIdentity&#62; elemento &#40;aplicación ClickOnce&#41;](/visualstudio/deployment/assemblyidentity-element-clickonce-application).  
   
@@ -95,7 +96,7 @@ ms.locfileid: "34447094"
 </vstav3:entryPoint>  
 ```  
   
-## <a name="vsto-add-in-example"></a>Ejemplo para complemento de VSTO  
+## <a name="vsto-add-in-example"></a>Ejemplo de complemento de VSTO  
   
 ### <a name="description"></a>Descripción  
  El ejemplo de código siguiente muestra un elemento `entryPoint` en un manifiesto de aplicación para una solución de Office de nivel de aplicación implementada mediante [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md).  

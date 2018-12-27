@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f2710693c7dae7c4238f9f31fbe8065d6864a19
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4c583b9af65610340886794c03cb92be945b73d4
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672969"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425869"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Agregar una extensión del protocolo de servidor de lenguaje
 
@@ -202,12 +202,12 @@ namespace MockLanguageExtension
             await StartAsync.InvokeAsync(this, EventArgs.Empty);
         }
 
-        public async Task OnServerInitializeFailedAsync(Exception e)
+        public Task OnServerInitializeFailedAsync(Exception e)
         {
             return Task.CompletedTask;
         }
 
-        public async Task OnServerInitializedAsync()
+        public Task OnServerInitializedAsync()
         {
             return Task.CompletedTask;
         }
@@ -243,7 +243,7 @@ Haga clic en nuevo para crear un nuevo recurso:
 ![definir el recurso MEF](media/lsp-define-asset.png)
 
 * **Tipo**: Microsoft.VisualStudio.MefComponent
-* **Origen**: un proyecto de la solución actual
+* **Origen**: Un proyecto de la solución actual
 * **Proyecto**: [su proyecto]
 
 ### <a name="content-type-definition"></a>Definición de tipo de contenido
@@ -327,7 +327,7 @@ Siga estos pasos para agregar compatibilidad para la configuración a la extensi
    ![Editar recurso de vspackage](media/lsp-add-vspackage-asset.png)
 
    * **Tipo**: Microsoft.VisualStudio.VsPackage
-   * **Origen**: archivo en filesystem
+   * **Origen**: Archivo en filesystem
    * **Ruta de acceso**: [ruta de acceso a su *.pkgdef* archivo]
 
 ### <a name="user-editing-of-settings-for-a-workspace"></a>Edición del usuario de configuración para un área de trabajo

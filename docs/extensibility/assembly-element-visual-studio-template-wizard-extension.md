@@ -2,9 +2,8 @@
 title: Elemento Assembly (extensión de Asistente de plantilla de Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9fa0728be191086ba84de86110deea122316466f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 829ba0fd25494affb2a8bf7e59c31361cbc9dc4b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153862"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562027"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Elemento Assembly (extensión de Asistente de plantilla de Visual Studio)
 Especifica el nombre o el nombre seguro del ensamblado que implementa el `IWizard` interfaz.  
@@ -93,4 +92,4 @@ Especifica el nombre o el nombre seguro del ensamblado que implementa el `IWizar
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)   
- [Cómo: usar asistentes con plantillas de proyecto](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Cómo: Usar a asistentes con plantillas de proyecto](../extensibility/how-to-use-wizards-with-project-templates.md)
