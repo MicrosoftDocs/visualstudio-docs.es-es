@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: cambiar la posición de una pestaña en la cinta de opciones'
+title: Procedimiento Cambiar la posición de una pestaña en la cinta de opciones
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -10,19 +10,19 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], tabs
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 08bbdf81023be466d30e49215fc0dbe1d3812f20
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c00fa747ee3c74592d491796e1281207d0c5a83f
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255394"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647121"
 ---
-# <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Cómo: cambiar la posición de una pestaña en la cinta de opciones
+# <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Procedimiento Cambiar la posición de una pestaña en la cinta de opciones
   Puede cambiar el orden de las pestañas personalizadas en una cinta de opciones mediante la **pestaña Editor de la colección**. Puede colocar las pestañas personalizadas antes o después de una pestaña integrada en la cinta de opciones. Una pestaña integrada es una ficha que ya está en la cinta de opciones de una aplicación de Microsoft Office. Por ejemplo, el **datos** ficha es una pestaña integrada en Excel.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
@@ -57,7 +57,7 @@ ms.locfileid: "35255394"
   
 5.  Establecer el **OfficeId** propiedad para el identificador de control de una pestaña integrada.  
   
-     Para obtener una lista de identificadores de control, vea [los archivos de Ayuda de Office 2010: identificadores de control de interfaz de usuario fluent Office](http://go.microsoft.com/fwlink/?LinkID=181052).  
+     Para obtener una lista de identificadores de control, vea [los archivos de Ayuda de Office 2010: Identificadores de control de interfaz de usuario fluent Office](http://go.microsoft.com/fwlink/?LinkID=181052).  
   
 ## <a name="see-also"></a>Vea también  
  [Información general de la cinta de opciones](../vsto/ribbon-overview.md)   

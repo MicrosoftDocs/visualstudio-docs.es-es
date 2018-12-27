@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Adjuntar extensiones de código a los documentos administrado'
+title: Procedimiento Adjuntar extensiones de código administrado a documentos
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], attaching
 - documents [Office development in Visual Studio], managed code extensions
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c6e39f27caf9d321bb83666d72114a9675091f03
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: aa7eda6dfed28ceebb9b400568463cc689993f1e
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257049"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646898"
 ---
-# <a name="how-to-attach-managed-code-extensions-to-documents"></a>Cómo: Adjuntar extensiones de código a los documentos administrado
+# <a name="how-to-attach-managed-code-extensions-to-documents"></a>Procedimiento Adjuntar extensiones de código administrado a documentos
   Puede adjuntar un ensamblado de personalización a un documento existente de Microsoft Office Word o un libro de Microsoft Office Excel. El documento o libro puede estar en cualquier formato de archivo que es compatible con los proyectos de Microsoft Office y herramientas de desarrollo en Visual Studio. Para obtener más información, consulte [arquitectura de las personalizaciones de nivel de documento](../vsto/architecture-of-document-level-customizations.md).  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -33,7 +33,7 @@ ms.locfileid: "35257049"
 > [!NOTE]  
 >  La personalización no se cargará si el código espera que los controles que no tienen el documento especificado.  
   
- ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una demostración en vídeo relacionada, vea [¿cómo lo hago?: asociar o desasociar un ensamblado de VSTO desde un documento de Word?](http://go.microsoft.com/fwlink/?LinkId=136782).  
+ ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una demostración en vídeo relacionada, vea [¿cómo lo hago?: Adjuntar o separar un ensamblado de VSTO desde un documento de Word? ](http://go.microsoft.com/fwlink/?LinkId=136782).  
   
 ### <a name="to-attach-managed-code-extensions-to-a-document"></a>Para asociar extensiones de código administrado a un documento  
   
@@ -55,6 +55,6 @@ ms.locfileid: "35257049"
   
 ## <a name="see-also"></a>Vea también  
  [Administrar documentos en un servidor mediante la clase ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [Cómo: quitar extensiones de código administrado de documentos](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
+ [Cómo: Quitar extensiones de código administrado de documentos](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
  [Manifiestos de aplicación e implementación de soluciones de Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)  
   

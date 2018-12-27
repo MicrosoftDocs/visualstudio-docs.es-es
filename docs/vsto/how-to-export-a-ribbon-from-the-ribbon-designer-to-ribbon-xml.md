@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: exportar una cinta desde el Diseñador de cinta al XML de cinta'
+title: Procedimiento Exportar una cinta desde el Diseñador de cinta al XML de cinta
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,19 +16,19 @@ helpviewer_keywords:
 - XML [Office development in Visual Studio], Ribbon
 - Ribbon Designer [Office development in Visual Studio]
 - exporting Ribbon
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f1b9e988ce6d1ad722766f3994c39827cc4272a3
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 370c2e1d08c47b8a5068d0227426d2b4083590a5
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255082"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646937"
 ---
-# <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Cómo: exportar una cinta desde el Diseñador de cinta al XML de cinta
+# <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Procedimiento Exportar una cinta desde el Diseñador de cinta al XML de cinta
   El **cinta (diseñador Visual)** elemento no admite todos los tipos posibles de personalización de la cinta. Para personalizar la cinta de maneras avanzadas, puede exportar la cinta de opciones desde el diseñador al XML de cinta y editar directamente el XML.  
   
 > [!NOTE]  

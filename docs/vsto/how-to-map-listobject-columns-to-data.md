@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: las columnas de mapa ListObject a datos'
+title: Procedimiento Asignar columnas ListObject a datos
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,24 +11,24 @@ dev_langs:
 helpviewer_keywords:
 - data [Office development in Visual Studio], mapping to ListObject column
 - ListObject control, mapping data
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b77d33b8d30ed7f581e27e1cbe07d0c90715ff04
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 64c098fe1c1d4695feb9addd8e5161175dc09dc9
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675134"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646843"
 ---
-# <a name="how-to-map-listobject-columns-to-data"></a>Cómo: las columnas de mapa ListObject a datos
+# <a name="how-to-map-listobject-columns-to-data"></a>Procedimiento Asignar columnas ListObject a datos
   Al enlazar un control <xref:Microsoft.Office.Tools.Excel.ListObject> a un <xref:System.Data.DataTable>, puede que no desee mostrar todas las columnas de una lista o puede que tenga algunas columnas que no están enlazadas a datos. Puede asignar las columnas que desea que aparezca en <xref:Microsoft.Office.Tools.Excel.ListObject> al llamar al método <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> .  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una demostración en vídeo relacionada, vea [¿cómo lo hago?: crear una lista de Excel que está conectado a una lista de SharePoint?](http://go.microsoft.com/fwlink/?LinkID=130263).  
+ ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una demostración en vídeo relacionada, vea [¿cómo lo hago?: ¿Crear una lista de Excel que está conectado a una lista de SharePoint? ](http://go.microsoft.com/fwlink/?LinkID=130263).  
   
 ## <a name="map-columns"></a>Asignar columnas  
   
@@ -66,7 +66,7 @@ ms.locfileid: "35675134"
  [Extender documentos de Word y libros de Excel en complementos VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Controles en documentos de Office](../vsto/controls-on-office-documents.md)   
  [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Cómo: controla el relleno ListObject con datos](../vsto/how-to-fill-listobject-controls-with-data.md)   
+ [Cómo: Rellenar los controles ListObject con datos](../vsto/how-to-fill-listobject-controls-with-data.md)   
  [Automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md)   
  [ListObject (control)](../vsto/listobject-control.md)  
   

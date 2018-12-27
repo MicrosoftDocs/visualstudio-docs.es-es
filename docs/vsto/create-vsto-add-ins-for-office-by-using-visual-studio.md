@@ -1,6 +1,7 @@
 ---
 title: Crear complementos de VSTO para Office con Visual Studio
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -8,17 +9,17 @@ ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ab047953c1a19d444b4315b7dc605a1a990667df
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: ae35f11066ccb0bbd5e9fa36f137c8a77281463c
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670880"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441501"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Crear complementos de VSTO para Office con Visual Studio
   Puede usar las herramientas para desarrolladores de Microsoft Office en Visual Studio para crear aplicaciones de .NET Framework que amplíen Office. Estas aplicaciones también se denominan *soluciones de Office*.  
@@ -90,7 +91,7 @@ ms.locfileid: "50670880"
  Proporciona vínculos a información detallada sobre los ensamblados de interoperabilidad primarios de Office, manifiestos, elementos de la interfaz de usuario y los mensajes de error.  
   
  [Referencia administrada de &#40;desarrollo de Office en Visual Studio&#41;](../vsto/managed-reference-office-development-in-visual-studio.md)  
- Proporciona vínculos a información acerca de los tipos y espacios de nombres de API que se usan en los proyectos de Office para [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Para obtener documentación de referencia de API sobre los espacios de nombres y tipos que se usan en proyectos de Office destinados a .NET Framework 3.5, vea la siguiente sección de referencia en la documentación de Visual Studio 2008: [referenciaadministradoporelsistemade2007](http://go.microsoft.com/fwlink/?LinkId=160658).  
+ Proporciona vínculos a información acerca de los tipos y espacios de nombres de API que se usan en los proyectos de Office para [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Para obtener documentación de referencia de API sobre los espacios de nombres y tipos que se usan en los proyectos de Office que tienen como destino .NET Framework 3.5, vea la siguiente sección de referencia en la documentación de Visual Studio 2008: [referencia administrada de 2007 system](http://go.microsoft.com/fwlink/?LinkId=160658).  
   
  [Referencia de API no administrada &#40;desarrollo de Office en Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
  Contiene vínculos a información sobre las interfaces COM que se pueden usar para realizar acciones como cargar y descargar complementos de VSTO administrados en las aplicaciones de Office.  

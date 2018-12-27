@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - form regions [Office development in Visual Studio], custom actions
 - custom actions [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4e2ad8e1c3b55d479cb031fe920e3027dbc1788c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 6b19b65c387e4ffc59108be71c143f130b347551
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671071"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441665"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Acciones personalizadas en áreas de formulario de Outlook
   Acciones muestran los botones que permiten a los usuarios respondan a un elemento de Microsoft Office Outlook. Por ejemplo, para responder a un elemento de correo, los usuarios hacen clic los **respuesta**, **responder a todos**, o **reenviar** botones de acción. Cada una de estas acciones crea un nuevo elemento de correo y rellena los campos del elemento mediante el uso de información del elemento original.  
@@ -45,7 +45,7 @@ ms.locfileid: "50671071"
 |**Cuerpo**|Especifica cómo se anexa el cuerpo del elemento original en el formulario de destino.|  
 |**Habilitado**|Indica si está habilitada la acción personalizada. Si esta propiedad se establece en **false**, se deshabilita la acción personalizada.|  
 |**Método**|Especifica el tipo de respuesta disponible cuando se ejecuta la acción personalizada. La acción personalizada puede enviar el formulario, abra el formulario o preguntar al usuario si desea volver a enviar o abrir el formulario.|  
-|**Nombre**|Especifica el nombre interno que puede usar para hacer referencia a esta acción personalizada en el código.|  
+|**Name**|Especifica el nombre interno que puede usar para hacer referencia a esta acción personalizada en el código.|  
 |**ShowOnRibbon**|Indica si se debe mostrar la acción personalizada en la cinta de opciones del elemento original.|  
 |**SubjectPrefix**|Especifica el texto que se inserta al principio de la línea de asunto del formulario de destino.|  
 |**TargetForm**|Especifica el nombre de clase de mensaje del formulario de destino. Por ejemplo, escriba **IPM. Tarea** para abrir un formulario de tareas.|  
@@ -56,7 +56,7 @@ ms.locfileid: "50671071"
   
 ## <a name="see-also"></a>Vea también  
  [Crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md)   
- [Tutorial: Diseñar un área de formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
+ [Tutorial: Diseñar un formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Asociar un área de formulario a una clase de mensaje de Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  
   
   

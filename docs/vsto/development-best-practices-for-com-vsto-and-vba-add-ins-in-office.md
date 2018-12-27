@@ -9,17 +9,17 @@ dev_langs:
 - ''
 helpviewer_keywords:
 - ''
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f821b9769b9353fbee6379ddc1b3826f87ac2de
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 53286b4545a45f1b3ed49d9470501cde9d2cca74
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671098"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648912"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Prácticas recomendadas de desarrollo de COM, VSTO y VBA complementos de Office
   Si está desarrollando complementos COM, VSTO o VBA para Office, siga las prácticas recomendadas de desarrollo se describe en este artículo.   Esto ayudará a garantizar:
@@ -28,13 +28,13 @@ ms.locfileid: "50671098"
 -  Menor complejidad de implementación de complementos para los usuarios y administradores de TI.
 -  No se producen errores de instalación o en tiempo de ejecución no deseadas de su complemento.
 
->Nota: El uso de la [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root) para preparar su COM, VSTO o VBA complemento para el Store de Windows no es compatible. No se puede distribuir complementos COM, VSTO y VBA en el Store de Windows o el Store de Office. 
+>Nota: Mediante el [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root) para preparar su COM, VSTO o VBA complemento para el Store de Windows no es compatible. No se puede distribuir complementos COM, VSTO y VBA en el Store de Windows o el Store de Office. 
   
 ## <a name="do-not-check-for-office-during-installation"></a>No busque Office durante la instalación  
  No se recomienda tener el complemento detecta si está instalado Office durante el proceso de instalación del complemento. Si Office no está instalado, puede instalar el complemento y el usuario podrá acceder a él después de instalar Office. 
   
 ## <a name="use-embedded-interop-types-nopia"></a>Usar tipos de interoperabilidad incrustados (NoPIA)  
-Si la solución utiliza .NET 4.0 o versiones posteriores, utilice tipos de interoperabilidad incrustados (NoPIA) en lugar de según el Office principal interoperabilidad ensamblados (PIA) redistribuible. Con la inserción de tipos reduce el tamaño de la instalación de la solución y garantiza la compatibilidad con versiones futura. Office 2010 fue la última versión de Office que distribuye el paquete redistribuible de PIA. Para obtener más información, consulte [Tutorial: incrustar información de tipos de ensamblados de Microsoft Office](https://msdn.microsoft.com/library/ee317478.aspx) y [equivalencia de tipos y tipos de interoperabilidad incrustados](/windows/uwp/porting/desktop-to-uwp-root).
+Si la solución utiliza .NET 4.0 o versiones posteriores, utilice tipos de interoperabilidad incrustados (NoPIA) en lugar de según el Office principal interoperabilidad ensamblados (PIA) redistribuible. Con la inserción de tipos reduce el tamaño de la instalación de la solución y garantiza la compatibilidad con versiones futura. Office 2010 fue la última versión de Office que distribuye el paquete redistribuible de PIA. Para obtener más información, vea [Tutorial: Incrustar información de tipos desde ensamblados de Microsoft Office](https://msdn.microsoft.com/library/ee317478.aspx) y [equivalencia de tipos y tipos de interoperabilidad incrustados](/windows/uwp/porting/desktop-to-uwp-root).
 
 Si la solución usa una versión anterior de. NET, se recomienda que actualice su solución para usar .NET 4.0 o posterior. El uso de .NET 4.0 o posterior reduce los requisitos previos de tiempo de ejecución en las versiones más recientes de Windows.
   

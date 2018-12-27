@@ -18,15 +18,15 @@ author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload: office
-ms.openlocfilehash: e79442ea42583f326f9cb59360777269c399b7a0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1d1b606d4416da10c329a7421378ea979a2fa4cf
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879303"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684696"
 ---
 # <a name="replaceable-parameters"></a>Parámetros reemplazables
-  Parámetros reemplazables, o *tokens*, puede usar dentro de los archivos de proyecto para proporcionar valores para los elementos de la solución de SharePoint cuyos valores reales no se conocen en tiempo de diseño. Son una función similar a la norma [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tokens de la plantilla. Para obtener más información, consulte [parámetros de plantilla](/visualstudio/ide/template-parameters).  
+  Parámetros reemplazables, o *tokens*, puede usar dentro de los archivos de proyecto para proporcionar valores para los elementos de la solución de SharePoint cuyos valores reales no se conocen en tiempo de diseño. Son una función similar a la norma [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tokens de la plantilla. Para obtener más información, consulte [parámetros de plantilla](../ide/template-parameters.md).  
   
 ## <a name="token-format"></a>Formato de token
  Los tokens comienzan y terminan con un carácter de signo de dólar ($). En la implementación, cualquier token utilizado se reemplaza por valores reales cuando un proyecto se empaqueta en un paquete de solución de SharePoint (*.wsp* archivo). Por ejemplo, el token **$SharePoint.Package.Name$** pueda resolver con la cadena "Paquete de prueba de SharePoint".  
@@ -111,4 +111,3 @@ ms.locfileid: "49879303"
   
 ## <a name="see-also"></a>Vea también
  [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

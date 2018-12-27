@@ -1,6 +1,7 @@
 ---
 title: '&lt;formRegion&gt; elemento (desarrollo de Office en Visual Studio)'
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -10,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <formRegion> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4fc98e66cd16298839e79f25c95e256f10398c49
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 7ce6d4d6bb5f74b4505603511752598d4a5180f7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675175"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646965"
 ---
 # <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;formRegion&gt; elemento (desarrollo de Office en Visual Studio)
   El `formRegion` elemento de la `vstov4` espacio de nombres identifica un área de formulario de Microsoft Office Outlook que está asociado con un complemento de VSTO.  
@@ -44,7 +45,7 @@ ms.locfileid: "35675175"
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`name`|Requerido. Identifica el nombre del área de formulario.|  
+|`name`|Obligatorio. Identifica el nombre del área de formulario.|  
   
  El elemento `formRegion` tiene los siguientes elementos secundarios.  
   
@@ -55,7 +56,7 @@ ms.locfileid: "35675175"
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`name`|Requerido. Identifica el formulario asociado a este área de formulario.|  
+|`name`|Obligatorio. Identifica el formulario asociado a este área de formulario.|  
   
 ## <a name="example"></a>Ejemplo  
  En el siguiente ejemplo de código se muestra un elemento `formRegion` en un manifiesto de aplicación para un complemento de VSTO de Outlook implementado mediante [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Hay tres clases de mensajes asociadas a esta área de formulario. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md).  

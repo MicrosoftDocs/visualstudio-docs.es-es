@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d85e915099c9d94123f7e97b0d19bf235c0efae
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: d7f6ca4310e8de644f799c8c921ac27cb3e1c458
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758046"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684336"
 ---
 # <a name="using-the-activity-designers"></a>Utilizar los diseñadores de actividades
 
@@ -30,8 +30,6 @@ El Diseñador de flujo de trabajo incluye una serie de actividades proporcionada
 
 ## <a name="related-sections"></a>Secciones relacionadas
 
- [Usar el Diseñador de flujo de trabajo](../workflow-designer/using-the-workflow-designer.md)
-
- [Depurar flujos de trabajo con el Diseñador de flujo de trabajo](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
-
- [Ayuda de la interfaz de usuario del Diseñador de flujo de trabajo](../workflow-designer/workflow-designer-ui-help.md)
+- [Usar el Diseñador de flujo de trabajo](../workflow-designer/developing-applications-with-the-workflow-designer.md)
+- [Depurar flujos de trabajo con el Diseñador de flujo de trabajo](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
+- [Ayuda de la interfaz de usuario del Diseñador de flujo de trabajo](../workflow-designer/workflow-designer-ui-help.md)
