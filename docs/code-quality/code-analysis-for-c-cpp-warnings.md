@@ -20,15 +20,15 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6922105fa66dbb5184aa7c991fe9b90278a9a052
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 86837d410b44c2508d50b1f630b43852b0fc8fea
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919682"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738455"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>Advertencias de análisis de código de C/C++
-Esta sección enumeran las advertencias de análisis de código de C/C ++, excepto aquellos que se generan mediante la [comprobadores de directrices de núcleo de C++](code-analysis-for-cpp-corecheck.md). Para obtener información sobre el análisis de código, vea [/ANALYZE (análisis de código)](/cpp/build/reference/analyze-code-analysis) y [inicio rápido: análisis de código para C/C ++](../code-quality/quick-start-code-analysis-for-c-cpp.md).
+Esta sección enumeran las advertencias de análisis de código de C o C++, excepto las que son generados por el [comprobadores de C++ Core Guidelines](code-analysis-for-cpp-corecheck.md). Para obtener información sobre el análisis de código, vea [/ analyze (análisis de código)](/cpp/build/reference/analyze-code-analysis) y [inicio rápido: Análisis de código para C/C ++](../code-quality/quick-start-code-analysis-for-c-cpp.md).
 
 ## <a name="see-also"></a>Vea también
- [Analizar la calidad de código de c/c ++ mediante el análisis de código](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md) [utilizar anotaciones SAL para reducir defectos de código de c/c ++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+ [Analizar la calidad del código de C/c ++ mediante el uso de análisis de código](../code-quality/code-analysis-for-c-cpp-overview.md) [utilizar anotaciones SAL para reducir defectos de código de c/c ++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)

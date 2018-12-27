@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: almacenar en caché datos para su uso sin conexión o en un servidor'
+title: Procedimiento Almacenar en caché datos para su uso sin conexión o en un servidor
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,19 +15,19 @@ helpviewer_keywords:
 - offline data [Office development in Visual Studio]
 - data [Office development in Visual Studio], caching
 - data caching [Office development in Visual Studio], offline use
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a53b3539d71383d4fad95838250380c5849e8c5b
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: e5c6b0155f2fbfd50fd4234bae28d69d1e83416a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254217"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647102"
 ---
-# <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Cómo: almacenar en caché datos para su uso sin conexión o en un servidor
+# <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Procedimiento Almacenar en caché datos para su uso sin conexión o en un servidor
   Puede marcar un elemento de datos en la memoria caché en el documento, por lo que esté disponible sin conexión. Esto también permite para los datos en el documento que se va a ser manipulados por otro código cuando el documento está almacenado en un servidor.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -64,8 +64,8 @@ ms.locfileid: "35254217"
   
 ## <a name="see-also"></a>Vea también  
  [Almacenar datos en caché](../vsto/caching-data.md)   
- [Cómo: almacenar en caché mediante programación un origen de datos en un documento de Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
- [Cómo: almacenar en caché datos en un documento protegido por contraseña](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
+ [Cómo: Almacenar en caché mediante programación un origen de datos en un documento de Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
+ [Cómo: Almacenar datos en caché en un documento protegido por contraseña](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
  [Acceder a los datos de documentos en el servidor](../vsto/accessing-data-in-documents-on-the-server.md)   
  [Guardar datos](/visualstudio/data-tools/saving-data)  
   

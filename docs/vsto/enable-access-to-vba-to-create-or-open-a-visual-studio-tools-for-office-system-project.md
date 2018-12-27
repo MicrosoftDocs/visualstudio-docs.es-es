@@ -1,7 +1,8 @@
 ---
 title: Habilitar el acceso a VBA para crear o abrir un proyecto de Visual Studio Tools para el proyecto de Microsoft Office system
 decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office system project
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology: office-development
 ms.prod: visual-studio-dev15
@@ -15,36 +16,36 @@ f1_keywords:
 dev_langs:
 - VB
 - CSharp
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f17c4e1481e7f33034e16d1e60a285b25c6f8230
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 1b1a7be701c9bec45011980ced63051150579ca7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448996"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647575"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Habilitar el acceso a VBA para crear o abrir un proyecto de Visual Studio Tools para el proyecto de Microsoft Office system
 
-Debe habilitar explícitamente el acceso a Visual Basic para el sistema de proyectos de aplicaciones (VBA) en Microsoft Office para poder crear o abrir un proyecto de Visual Studio Tools para el proyecto de sistema de Microsoft Office.
+Debe habilitar explícitamente acceso a Visual Basic para el sistema de proyectos de aplicaciones (VBA) en Microsoft Office antes de que puede crear o abrir un proyecto de Visual Studio Tools para el proyecto de Microsoft Office system.
 
  Proyectos de desarrollo de Microsoft Office requieren acceso a Visual Basic para el sistema de proyectos de aplicaciones (VBA) en Microsoft Office Word y Microsoft Office Excel, aunque los proyectos no usen Visual Basic para aplicaciones. La compatibilidad con controles en tiempo de diseño en proyectos de Visual Basic y C# depende del sistema de proyectos de Visual Basic para Aplicaciones.
 
  Algunos virus de macro de Microsoft Office intentan automatizar el sistema de proyectos de Visual Basic para Aplicaciones a fin de propagarse. Al habilitar el acceso al sistema de proyectos de Visual Basic para Aplicaciones, se quita una protección que ayuda a impedir la propagación de los virus de macro. No obstante, la seguridad de macros normal sigue aplicándose, con lo que el nivel de seguridad de macros y la lista de editores de confianza que mantiene para las aplicaciones de Office determinarán si se ejecuta una macro en el equipo.
 
 > [!NOTE]
-> Esto solo es válido para el equipo de desarrollo. Los equipos del usuario final no es necesario esta opción habilitada para ejecutar soluciones de Office.
+> Esto solo es válido para el equipo de desarrollo. Equipos de usuario final no necesitan esta opción habilitada para ejecutar soluciones de Office.
 
  Es importante señalar que la mera deshabilitación del acceso al sistema de proyectos de Visual Basic para Aplicaciones no le protege frente a los virus, sino que simplemente ayuda a impedir la propagación de algunos virus a otros documentos si el equipo se infecta con un virus de macro. La opción está deshabilitada de manera predeterminada como capa de protección adicional para el equipo, pero si la habilita, su equipo no será más susceptible a virus si sigue los procedimientos recomendados de seguridad.
 
- La mejor protección contra virus de macro es ejecutar Office en el nivel de seguridad alto o muy alto, confiar solo en macros de orígenes verificados y conocidos, de Office y manténgase al día con las revisiones de seguridad y antivirus.
+ La mejor protección contra virus de macro es ejecutar Office en el nivel de seguridad alto o muy alto, confiar únicamente en las macros de orígenes verificados y conocidos, de Office y mantenerse al día con las revisiones de seguridad y antivirus.
 
- Para obtener más información sobre cómo proteger su PC frente a virus y otro código malintencionado, vea [ http://www.microsoft.com/protect ](http://www.microsoft.com/protect).
+ Para obtener más información sobre cómo proteger su PC de virus y otro código malintencionado, vea [ http://www.microsoft.com/protect ](http://www.microsoft.com/protect).
 
- Puede habilitar o deshabilitar la opción de **confiar en el acceso a proyectos de Visual Basic** manualmente.
+ Puede habilitar o deshabilitar la opción **confiar en el acceso al proyecto de Visual Basic** manualmente.
 
  Puede reparar la instalación de Office si ve errores de VBA o COM.
 
@@ -58,17 +59,17 @@ Debe habilitar explícitamente el acceso a Visual Basic para el sistema de proye
 
 4. En el **centro de confianza**, haga clic en **configuración de la Macro**.
 
-5. Active o desactive **confiar en el acceso al modelo de objetos de proyecto VBA** para habilitar o deshabilitar el acceso a proyectos de Visual Basic.
+5. Active o desactive **confiar en el acceso al modelo de objetos del proyecto VBA** para habilitar o deshabilitar el acceso a proyectos de Visual Basic.
 
 6. Haga clic en **Aceptar**.
 
-### <a name="to-enable-or-disable-access-to-visual-basic-projects-with-the-2007-microsoft-office-system"></a>Para habilitar o deshabilitar el acceso a proyectos de Visual Basic con el sistema de Microsoft Office 2007
+### <a name="to-enable-or-disable-access-to-visual-basic-projects-with-the-2007-microsoft-office-system"></a>Para habilitar o deshabilitar el acceso a proyectos de Visual Basic con 2007 Microsoft Office system
 
 1. En el **herramientas** menú en Word o Excel, apunte a **Macro**y, a continuación, haga clic en **seguridad**.
 
 2. En el **seguridad** cuadro de diálogo, haga clic en el **editores de confianza** ficha.
 
-3. Seleccione para habilitar o desactive para deshabilitar, **confiar en el acceso a proyectos de Visual Basic**.
+3. Seleccione para habilitar o desactive para deshabilitar, **confiar en el acceso al proyecto de Visual Basic**.
 
 4. Haga clic en **Aceptar**.
 
@@ -82,7 +83,7 @@ Debe habilitar explícitamente el acceso a Visual Basic para el sistema de proye
 
 4. En el **centro de confianza**, haga clic en **configuración de la Macro**.
 
-5. En el **configuración de la Macro** sección, seleccione la configuración deseada.
+5. En el **configuración de la Macro** , seleccione la opción que desee.
 
 6. Haga clic en **Aceptar**.
 
@@ -90,9 +91,9 @@ Debe habilitar explícitamente el acceso a Visual Basic para el sistema de proye
 
 1. En el **herramientas** menú en Word o Excel, apunte a **Macro**y, a continuación, haga clic en **seguridad**.
 
-2. En el **nivel de seguridad** ficha, seleccione la configuración deseada.
+2. En el **nivel de seguridad** pestaña, seleccione la opción que desee.
 
-    El **nivel de seguridad** ficha contiene los detalles sobre cada nivel. Para obtener más información, vea el tema sobre los niveles de seguridad de macros en la Ayuda de Office.
+    El **nivel de seguridad** pestaña contiene detalles sobre cada nivel. Para obtener más información, vea el tema sobre los niveles de seguridad de macros en la Ayuda de Office.
 
 ### <a name="to-install-vba-with-the-2007-microsoft-office-system"></a>Para instalar VBA con 2007 Microsoft Office system
 
@@ -102,11 +103,11 @@ Debe habilitar explícitamente el acceso a Visual Basic para el sistema de proye
 
 3. Haga clic en **cambio**.
 
-4. Seleccione **agregar o quitar características**y, a continuación, haga clic en **continuar**.
+4. Seleccione **agregar o quitar funciones**y, a continuación, haga clic en **continuar**.
 
 5. Seleccione **Elegir personalización avanzada de aplicaciones**y, a continuación, haga clic en **siguiente**.
 
-6. Expanda **características compartidas de Office** en el **elija las opciones de actualización para aplicaciones y herramientas** lista.
+6. Expanda **características compartidas de Office** en el **elija las opciones de actualización de aplicaciones y herramientas** lista.
 
 7. Abra el menú desplegable junto a **Visual Basic para aplicaciones**y, a continuación, haga clic en **ejecutar desde Mi PC**.
 

@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 539ab866056b97f7054dda1843870dcfdd4379d9
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 358b61c5b09bfd9fb701bc44135101fe230dacce
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248143"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739272"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Crear una extensión con un comando de menú
 Este tutorial muestra cómo crear una extensión con un comando de menú que se inicia el Bloc de notas.  
@@ -126,4 +126,4 @@ Este tutorial muestra cómo crear una extensión con un comando de menú que se 
   
 5. Agregar páginas de propiedades y las opciones y configuración de usuario para la extensión: [Extender las propiedades y la ventana de propiedades](../extensibility/extending-properties-and-the-property-window.md) y [ampliar Ooptions y configuración de usuario](../extensibility/extending-user-settings-and-options.md)  
   
-   Otros tipos de extensiones requieren un poco más de trabajo, como la creación de un nuevo tipo de proyecto ([ampliar proyectos](../extensibility/extending-projects.md)), crear un nuevo tipo de editor ([crear diseñadores y editores personalizados](../extensibility/creating-custom-editors-and-designers.md)), o implementando la extensión en un shell aislado: [Shell de Visual Studio aislado](../extensibility/visual-studio-isolated-shell.md)
+   Otros tipos de extensiones requieren un poco más de trabajo, como la creación de un nuevo tipo de proyecto ([ampliar proyectos](../extensibility/extending-projects.md)), crear un nuevo tipo de editor ([crear diseñadores y editores personalizados](../extensibility/creating-custom-editors-and-designers.md)), o implementando la extensión en un shell aislado: [Shell de Visual Studio aislado](/visualstudio/extensibility/shell/visual-studio-isolated-shell)

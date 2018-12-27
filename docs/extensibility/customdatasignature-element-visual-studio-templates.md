@@ -2,9 +2,8 @@
 title: CustomDataSignature (elemento) (plantillas de Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - <CustomDataSignature> Element (Visual Studio Templates)
 - CustomDataSignature Element (Visual Studio Templates)
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2f32c90adf1732cac1542935a8a6ce2da983c35
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: eddff64680dd41637f78f33c46fe78f32bbc3a85
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500649"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561322"
 ---
 # <a name="customdatasignature-element-visual-studio-templates"></a>CustomDataSignature (elemento) (plantillas de Visual Studio)
 Especifica la firma de texto para buscar los datos personalizados.  

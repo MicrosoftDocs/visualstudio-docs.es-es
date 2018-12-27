@@ -1,5 +1,5 @@
 ---
-title: 'CA1903: Usar solo API de la versión de .NET Framework de destino'
+title: 'CA1903: Usar solo API de .NET framework de destino'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1d42a74cfaf93ba0e8e5aec7e15c522d2e26b7a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ace24746aafa70c73bc87c55c197913136f1a7b1
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822818"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738877"
 ---
-# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Usar solo API de la versión de .NET Framework de destino
+# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Usar solo API de .NET framework de destino
 
 |||
 |-|-|
@@ -48,7 +48,7 @@ ms.locfileid: "49822818"
 |.NET Framework 3,5|.NET Framework 3.5 SP1|
 |.NET Framework 4|N/D|
 
- Para cambiar la plataforma de destino de un proyecto, vea [como destino una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
+ Para cambiar la plataforma de destino de un proyecto, vea [como destino una versión específica de .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para quitar la dependencia en el service pack, quite todos los usos del nuevo miembro o tipo. Si se trata de una dependencia deliberada, suprimir la advertencia o desactivar esta regla.
@@ -69,4 +69,4 @@ ms.locfileid: "49822818"
 ## <a name="see-also"></a>Vea también
 
 - [Portability Warnings](../code-quality/portability-warnings.md)
-- [Elegir una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [Elegir una versión específica de .NET Framework](../ide/visual-studio-multi-targeting-overview.md)
