@@ -1,5 +1,5 @@
 ---
-title: 'Se esperaba &#39;: &#39; | Documentos de Microsoft'
+title: Se esperaba ':' | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,15 +20,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c882c2da52de7a41c558f34f6912a0da1ad272a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 23b1bcc42db9daace5a57b56346f5abe58232173
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633275"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802402"
 ---
-# <a name="expected-3939"></a>Se esperaba &#39;: &#39;
-Se intentó crear una expresión que emplea el operador condicional ternario, pero no incluye los dos puntos entre los operandos segundo y tercero. El operador condicional ternario de (tres operandos) requiere un signo de dos puntos entre el segundo (true) y el tercero (false) operandos.  
+# <a name="expected-"></a>Se esperaba ':'
+Se ha intentado crear una expresión que usa el operador condicional ternario, pero no incluye los dos puntos entre los operandos segundo y tercero. Operador condicional ternario (tres operandos) requiere dos puntos entre el segundo (true) y el tercero (false) operandos.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   

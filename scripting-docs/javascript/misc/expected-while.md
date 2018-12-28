@@ -1,5 +1,5 @@
 ---
-title: Se esperaba &#39; mientras &#39; | Documentos de Microsoft
+title: Se esperaba 'while' | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,15 +20,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de38e7e593d0547a695c2e037903d01387cdf0bb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 689e740b9954cada3788e53094e5a4fc1241baf8
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633035"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53801981"
 ---
-# <a name="expected-39while39"></a>Se esperaba &#39; mientras &#39;
-No incluía el `while` condición en un `do...while` bucle. A **hacer** instrucción debe tener su correspondiente `while` al final del bloque de código de prueba.  
+# <a name="expected-while"></a>Se esperaba 'while '
+No incluía el `while` condición en un `do...while` bucle. Un **hacer** instrucción debe tener su correspondiente `while` al final del bloque de código de prueba.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   

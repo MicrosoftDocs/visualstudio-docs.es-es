@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e4d938bbfbe1c65882e73630689edff208670e9
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: b2a8e95d8ea8e169eb75a3ecba886a96808b87a1
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739830"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802740"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Crear plantillas de proyecto y elemento personalizadas
 
@@ -29,7 +29,7 @@ También puede configurar una plantilla para instalar paquetes de NuGet. Para ob
 Para escenarios de creación de la plantilla básica, debe usar el **Exportar plantilla** asistente, que muestra los resultados en un archivo comprimido. Para obtener más información sobre la creación de una plantilla básica, vea [crear plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md).
 
 > [!NOTE]
-> A partir de Visual Studio 2017, análisis de proyecto personalizado y las plantillas de elemento ya no se realizará. En su lugar, la extensión debe proporcionar los archivos de manifiesto de plantilla que describen la ubicación de instalación de estas plantillas. Puede usar Visual Studio 2017 para actualizar las extensiones VSIX. Si implementa la extensión con un archivo MSI, debe generar manualmente los archivos de manifiesto de plantilla. Para obtener más información, consulte [actualización proyectos y elementos de las plantillas personalizadas para Visual Studio 2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). El esquema del manifiesto de plantilla está documentado en [referencia de esquema del manifiesto de plantilla de Visual Studio](../extensibility/visual-studio-template-manifest-schema-reference.md).
+> A partir de Visual Studio 2017, análisis de proyecto personalizado y las plantillas de elemento ya no se realizará. En su lugar, la extensión debe proporcionar los archivos de manifiesto de plantilla que describen la ubicación de instalación de estas plantillas. Puede usar Visual Studio 2017 para actualizar las extensiones VSIX. Si implementa la extensión con un archivo MSI, debe generar manualmente los archivos de manifiesto de plantilla. Para obtener más información, consulte [actualizar plantillas de proyecto y elemento personalizadas para Visual Studio 2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). El esquema del manifiesto de plantilla está documentado en [referencia de esquema del manifiesto de plantilla de Visual Studio](../extensibility/visual-studio-template-manifest-schema-reference.md).
 
 ## <a name="create-a-project-template"></a>Crear una plantilla de proyecto
 

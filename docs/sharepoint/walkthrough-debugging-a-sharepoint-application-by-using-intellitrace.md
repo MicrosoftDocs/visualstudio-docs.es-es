@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Depurar una aplicación de SharePoint mediante IntelliTrace | Microsoft Docs'
+title: 'Tutorial: Depurar una aplicación de SharePoint mediante IntelliTrace | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 59f801c79c8bb19a63064bdac2fe717ee3e3a845
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 307d4842f25b3227f3857cf81be154a5db817a7e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295590"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804291"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Tutorial: Depurar una aplicación de SharePoint mediante IntelliTrace
 
@@ -32,7 +32,7 @@ Con IntelliTrace, puede depurar las soluciones de SharePoint más fácilmente. L
 
  Este tutorial muestra cómo depurar un proyecto de SharePoint 2010 o SharePoint 2013 en Visual Studio mediante Microsoft Monitoring Agent para recopilar datos de IntelliTrace de las aplicaciones implementadas. Para analizar estos datos, debe usar Visual Studio Enterprise. Este proyecto incorpora un receptor de características que, cuando se activa la característica, agrega una tarea a la lista de tareas y un anuncio a la lista de anuncios. Cuando la característica está desactivada, la tarea se marca como completada y se agrega un segundo anuncio a la lista de anuncios. Sin embargo, el procedimiento contiene un error lógico que evita que el proyecto se ejecute correctamente. Mediante IntelliTrace, se puede localizar y corregir el error.
 
- **Se aplica a:** la información de este tema se aplica a las soluciones de SharePoint 2010 y SharePoint 2013 que se crearon en Visual Studio.
+ **Se aplica a:** La información de este tema se aplica a las soluciones de SharePoint 2010 y SharePoint 2013 que se crearon en Visual Studio.
 
  En este tutorial se muestran las tareas siguientes:
 
@@ -206,7 +206,7 @@ Luego, agregue el código a dos métodos del receptor de características: `Feat
     {
         // The following line induces an error to demonstrate debugging.
         // Remove this line later for proper operation.
-        throw new System.InvalidOperationException("A serious error occurred!"); 
+        throw new System.InvalidOperationException("A serious error occurred!");
         try
         {
             using (SPSite site = new SPSite(siteUrl))
@@ -261,7 +261,7 @@ Ahora que el código se agrega al receptor de características y el recopilador 
 
 2. Muestre el contenido de las listas Anuncios y Tareas.
 
-     La lista anuncios debe tener un nuevo anuncio denominado **característica activada: IntelliTraceTest_Feature1**, y la lista de tareas debe tener una nueva tarea que se denomina **desactivar característica: IntelliTraceTest_ Feature1**. Si falta cualquiera de estos elementos, compruebe si la característica está activada. Si no está activada, actívela.
+     La lista anuncios debe tener un nuevo anuncio denominado **característica activada: IntelliTraceTest_Feature1**, y la lista de tareas debe tener una nueva tarea que se denomina **desactivar característica: IntelliTraceTest_Feature1**. Si falta cualquiera de estos elementos, compruebe si la característica está activada. Si no está activada, actívela.
 
 3. Desactive la característica siguiendo estos pasos:
 
@@ -280,9 +280,9 @@ Ahora que el código se agrega al receptor de características y el recopilador 
 Si instala a Microsoft Monitoring Agent en el sistema que se está ejecutando SharePoint, puede depurar las soluciones de SharePoint mediante el uso de datos que es más específicos que la información genérica que devuelve IntelliTrace. El agente funciona fuera de Visual Studio mediante cmdlets de PowerShell para capturar información de depuración mientras se ejecuta la solución de SharePoint.
 
 > [!NOTE]
-> La información de configuración de esta sección es específica de este ejemplo. Para obtener más información sobre otras opciones de configuración, consulte [mediante el recolector independiente IntelliTrace](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).
+> La información de configuración de esta sección es específica de este ejemplo. Para obtener más información sobre otras opciones de configuración, consulte [mediante el recolector independiente IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
-1. En el equipo que ejecuta SharePoint, [configurar Microsoft Monitoring Agent y empezar a supervisar la solución](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).
+1. En el equipo que ejecuta SharePoint, [configurar Microsoft Monitoring Agent y empezar a supervisar la solución](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
 2. Desactive la característica:
 
@@ -310,7 +310,7 @@ Ahora puede ver el archivo de registro de IntelliTrace en Visual Studio para bus
 
 2. Elija la **depurar excepción** botón.
 
-     Si se le solicita, cargue los archivos de símbolos. En el **IntelliTrace** ventana, se resalta la excepción como "producida: se ha producido un error grave!".
+     Si se le solicita, cargue los archivos de símbolos. En el **IntelliTrace** ventana, se resalta la excepción como "producida: Se ha producido un error grave! ".
 
      En la ventana IntelliTrace, elija la excepción para mostrar el código que produjo un error.
 
@@ -334,6 +334,6 @@ Ahora puede ver el archivo de registro de IntelliTrace en Visual Studio para bus
 
 ## <a name="see-also"></a>Vea también
 
-[Comprobar y depurar el código de SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md)  
-[IntelliTrace](/visualstudio/debugger/intellitrace)  
-[Tutorial: Comprobar el código de SharePoint mediante pruebas unitarias](/previous-versions/visualstudio/visual-studio-2010/gg599006\(v\=vs.100\))
+- [Comprobar y depurar el código de SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md)
+- [IntelliTrace](../debugger/intellitrace.md)
+- [Tutorial: Comprobar SharePoint código utilizando pruebas unitarias](/previous-versions/visualstudio/visual-studio-2010/gg599006\(v\=vs.100\))

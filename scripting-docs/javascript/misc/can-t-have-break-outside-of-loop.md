@@ -1,5 +1,5 @@
 ---
-title: Puede&#39;t tiene &#39;salto&#39; fuera del bucle | Documentos de Microsoft
+title: No puede tener 'break' fuera del bucle | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb23f1bc3de087515cad9ba4910cf2ebaf640353
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ce142e07a47b73778ebae6b26452806b3a036d41
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928560"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802412"
 ---
-# <a name="can39t-have-39break39-outside-of-loop"></a>Puede&#39;t tiene &#39;salto&#39; fuera del bucle
+# <a name="cant-have-break-outside-of-loop"></a>'break' no puede estar fuera del bucle
 Se intentó utilizar el **salto** palabra clave fuera de un bucle. El **salto** palabra clave se usa para finalizar un bucle o `switch` instrucción. Se debe incrustar en el cuerpo de un bucle o `switch` instrucción. Sin embargo, un **etiqueta** puede seguir la palabra clave break.  
   
 ```  

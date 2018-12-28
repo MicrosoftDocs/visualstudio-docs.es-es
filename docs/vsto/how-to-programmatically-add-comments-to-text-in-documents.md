@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: agregar comentarios al texto en documentos mediante programación'
+title: Procedimiento Agregar comentarios al texto en documentos mediante programación
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - comments, adding to documents
 - documents [Office development in Visual Studio], adding comments
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ca0d15ee69bb58aae765c03c1233a78bfeeb119c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c5e7900f5316e64ef884d857bfc1448ac315fd19
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673970"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804609"
 ---
-# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Cómo: agregar comentarios al texto en documentos mediante programación
+# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Procedimiento Agregar comentarios al texto en documentos mediante programación
   La propiedad Comments de la clase de documento, agrega un comentario a un intervalo de texto en un documento de Microsoft Office Word.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -50,7 +50,7 @@ ms.locfileid: "35673970"
  Para cambiar las iniciales del usuario que Word agrega a los comentarios, use la propiedad <xref:Microsoft.Office.Interop.Word._Application.UserInitials%2A> .  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: quitar todos los comentarios de documentos mediante programación](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)   
+ [Cómo: Quitar todos los comentarios de documentos mediante programación](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)   
  [Elemento host Document](../vsto/document-host-item.md)  
   
   
