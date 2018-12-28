@@ -1,5 +1,5 @@
 ---
-title: '&#39; predeterminado &#39; solo puede aparecer una vez en un &#39; conmutador &#39; instrucción | Documentos de Microsoft'
+title: "'default' solo puede aparecer una vez en una instrucción 'switch' | Microsoft Docs"
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,19 +20,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e60dd1ce6b4102ab856cd3d45416175c7030e8d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a4f254825e27793999932b772ac4bc2512908fae
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633105"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803888"
 ---
-# <a name="39default39-can-only-appear-once-in-a-39switch39-statement"></a>&#39; predeterminado &#39; solo puede aparecer una vez en un &#39; conmutador &#39; instrucción
-Se intentó utilizar el **predeterminado** instrucción más de una vez dentro de una instrucción switch. El caso predeterminado siempre es la última instrucción case en una instrucción switch (es el caso de paso explícito).  
+# <a name="default-can-only-appear-once-in-a-switch-statement"></a>'default' solo puede aparecer una vez en una instrucción 'switch'.
+Se intentó utilizar el **predeterminada** instrucción más de una vez dentro de una instrucción switch. El caso predeterminado siempre es la última instrucción case en una instrucción switch (es el caso desestimado).  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Quite cualquier adicional **predeterminado** case, más complejas de su `switch` instrucción (use en la mayoría una instrucción case default en la instrucción switch).  
+-   Quite cualquier adicional **predeterminada** caso las instrucciones de su `switch` instrucción (uso en la mayoría una instrucción case default en la instrucción switch).  
   
 ## <a name="see-also"></a>Vea también  
  [switch (instrucción)](../../javascript/reference/switch-statement-javascript.md)   

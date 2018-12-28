@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ec436383aa745ed033858724b4d4b2ff8b929c6
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 7af96fd1973b32587a217a1cd57ef0d99b0cd626
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863925"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803012"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>Agregar un submenú a un menú
 En este tutorial se basa en la demostración en [agregar un menú en la barra de menús de Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) mostrándole cómo agregar un submenú a la **TestMenu** menú.
@@ -156,4 +156,6 @@ En este tutorial se basa en la demostración en [agregar un menú en la barra de
 5.  En el **TestMenu** menú, haga clic en **submenú** y, a continuación, haga clic en **prueba subcomando**. Debe aparecer un cuadro de mensaje y se muestra el texto, "Comando de prueba dentro de TestCommand.SubItemCallback()".
 
 ## <a name="see-also"></a>Vea también
- [Agregar un menú en la barra de menús de Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) [comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)
+
+- [Agregar un menú en la barra de menús de Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)
+- [Los comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

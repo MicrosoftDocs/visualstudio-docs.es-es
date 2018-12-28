@@ -1,5 +1,5 @@
 ---
-title: Se esperaba &#39; &#39; | Documentos de Microsoft
+title: Se esperaba ';' | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,23 +20,23 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c54fbd2eb72f6e6401eca85f61b0651a3ead4900
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: eabe34fdcb4551fc8bc794b84875a10a32e5ec33
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632795"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804343"
 ---
-# <a name="expected-3939"></a>Se esperaba &#39; &#39;
+# <a name="expected-"></a>Se esperaba ';'
 Se intentó colocar más de una instrucción en una línea, pero no sepárelos con punto y coma. Punto y coma se utiliza para finalizar las instrucciones. Aunque se pueden colocar varias instrucciones en una sola línea, cada uno de ellos debe estar separada de la siguiente con un punto y coma.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
 -   Marcar el final de cada instrucción con un punto y coma.  
   
--   Asegúrese de que las llamadas de función utilizan los paréntesis correctamente.  
+-   Asegúrese de que las llamadas de función use paréntesis correctamente.  
   
--   Asegúrese de que no olvidó el punto y coma en el encabezado de un **para** bucle.  
+-   Asegúrese de que no olvidamos los puntos y comas dentro del encabezado de un **para** bucle.  
   
 ## <a name="see-also"></a>Vea también  
  [Escribir código JavaScript](../../javascript/writing-javascript-code.md)

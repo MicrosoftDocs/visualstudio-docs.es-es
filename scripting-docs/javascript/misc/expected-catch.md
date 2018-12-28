@@ -1,5 +1,5 @@
 ---
-title: Se esperaba &#39; catch &#39; | Documentos de Microsoft
+title: Se esperaba 'catch' | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,19 +20,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e6cd1e57137d220ebcf3834070e36d8257e2dca7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 244635605abafc5c0bd22c5203b105aa6e7dc669
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633795"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53801988"
 ---
-# <a name="expected-39catch39"></a>Se esperaba &#39; catch &#39;
-Usar el control de excepciones **intente** bloquear, pero no ha escrito asociado **detectar** instrucción. El mecanismo de control de excepciones requiere que el código que puede producir un error, junto con el código que no se debe ejecutar si se produce una excepción, se ajusta dentro de un **intente** bloque. Las excepciones se inician desde el **intente** bloquee mediante el **throw** instrucción y capturadas fuera de la **intente** bloque con uno o varios **catch**instrucciones.  
+# <a name="expected-catch"></a>Se esperaba 'catch'
+Usar el control de excepciones **intente** bloquea, pero no ha escrito asociado **catch** instrucción. El mecanismo de control de excepciones requiere que el código que puede producir un error, junto con el código que no se debe ejecutar si se produce una excepción, se ajusta dentro de un **intente** bloque. Excepciones desde el **intente** bloquear mediante la **throw** instrucción y capturadas fuera el **intente** bloque con uno o varios **catch**instrucciones.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Agregar el asociado **catch** bloque.  
+-   Agregar asociado **catch** bloque.  
   
 -   Pruebe a usar un **finalmente** bloquear en lugar de un **catch** bloque.  
   
