@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b7f98dccebe9db183c63c6f859ceb2234fdb1acf
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d3dcc5390eac698f3c135c23d497073340bbd8b2
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056923"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648825"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Depurar aplicaciones de ASP.NET Azure activas con el depurador de instantáneas
 
@@ -36,7 +36,7 @@ En este tutorial va a:
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* Depurador de instantáneas solo está disponible para Visual Studio Enterprise 2017 versión 15.5 o posterior con el **carga de trabajo de desarrollo de ASP.NET y web**. Para ASP.NET Core, también necesitará el **desarrollo de .NET Core** carga de trabajo instalada.
+* Depurador de instantáneas solo está disponible para Visual Studio Enterprise 2017 versión 15.5 o posterior con el **carga de trabajo de desarrollo de Azure**. (En el **componentes individuales** pestaña, se encuentra en **depuración y pruebas** > **depurador de instantáneas**.)
 
     Si aún no está instalado, instale [Visual Studio Enterprise 2017 versión 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) o una versión posterior. Si está actualizando desde una instalación anterior de Visual Studio 2017, ejecute el instalador de Visual Studio y compruebe el componente del depurador de instantáneas el **carga de trabajo de desarrollo de ASP.NET y web**.
 
