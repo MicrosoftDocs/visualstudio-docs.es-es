@@ -29,19 +29,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ed9670795e11b0d98b3703445450b468a93aa8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: 499e1200f858530db0caad69d93bd4416f756405
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068466"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561647"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Asociar con procesos en ejecución con el depurador de Visual Studio
 Puede asociar el depurador de Visual Studio a un proceso en ejecución en un equipo local o remoto. Una vez que se ejecuta el proceso, seleccione **depurar** > **asociar al proceso** o presione **Ctrl**+**Alt** + **P** en Visual Studio y usan el **asociar al proceso** cuadro de diálogo para asociar el depurador al proceso.
 
 Puede usar **asociar al proceso** para depurar aplicaciones en ejecución en equipos locales o remotos, depurar varios procesos simultáneamente, depurar aplicaciones que no se crearon en Visual Studio o depurar cualquier aplicación que no se inició desde Visual Studio con el depurador asociado. Por ejemplo, si está ejecutando una aplicación sin el depurador y encuentra una excepción, a continuación, puede asociar al depurador al proceso que ejecuta la aplicación y comenzar la depuración.
 
-Para obtener información sobre la depuración básica en Visual Studio, consulte [introducción con el depurador](../debugger/getting-started-with-the-debugger.md).
+Para obtener información sobre la depuración básica en Visual Studio, consulte [primero analicemos el depurador](../debugger/debugger-feature-tour.md).
 
 > [!TIP]
 > ¿No está seguro de si se debe usar **asociar al proceso** para su escenario de depuración? Consulte [comunes en escenarios de depuración](#BKMK_Scenarios). 
@@ -162,7 +162,7 @@ Para seleccionar rápidamente un proceso en ejecución para adjuntar a, en Visua
 |Depuración remota de ASP.NET 4 o 4.5 en un servidor IIS|Utilizar las herramientas remotas y **asociar al proceso**|*w3wp.exe*|Consulte [ASP.NET en un equipo remoto de IIS de la depuración remota](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Depuración remota de ASP.NET Core en un servidor IIS|Utilizar las herramientas remotas y **asociar al proceso**|*dotnet.exe*|Implementación de aplicaciones, consulte [publicar en IIS](https://docs.asp.net/en/latest/publishing/iis.html). Para la depuración, vea [remoto depuración ASP.NET Core en un equipo remoto de IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |Depurar script de cliente en un servidor IIS local, para los tipos de aplicación admitidos |Use **asociar al proceso**|*Chrome.exe*, *MicrosoftEdgeCP.exe*, o *iexplore.exe*|Debe estar habilitada la depuración de scripts. Para Chrome, también debe ejecutar Chrome en modo de depuración y seleccione **código Webkit** en el **adjuntar a** campo.|
-|Depurar una aplicación de C#, Visual Basic o C++ en el equipo local|Usar [depuración estándar](../debugger/getting-started-with-the-debugger.md) o **asociar al proceso**|*\<NombreAplicación > .exe*|En la mayoría de los escenarios, use la depuración estándar y no **asociar al proceso**.|
+|Depurar una aplicación de C#, Visual Basic o C++ en el equipo local|Usar [depuración estándar](../debugger/debugger-feature-tour.md) o **asociar al proceso**|*\<NombreAplicación > .exe*|En la mayoría de los escenarios, use la depuración estándar y no **asociar al proceso**.|
 |Depuración remota de una aplicación de escritorio de Windows|Herramientas remotas|N/D| Consulte [remoto depurar una aplicación de C# o Visual Basic](../debugger/remote-debugging-csharp.md) o [depuración remota de una aplicación de C++](../debugger/remote-debugging-cpp.md)|
 |Depurar una aplicación ASP.NET en el equipo local después de iniciar la aplicación sin el depurador|Use **asociar al proceso**|*iiexpress.exe*|Esto puede resultar útil para realizar la aplicación carga más rápida, por ejemplo, (por ejemplo) al generar perfiles. |
 |Depurar otros tipos de aplicaciones compatibles en un proceso de servidor|Si el servidor remoto, use las herramientas remotas, y **asociar al proceso**|*Chrome.exe*, *iexplore.exe*, u otros procesos|Si es necesario, utilice al Monitor de recursos para ayudar a identificar el proceso. Vea [Depuración remota](../debugger/remote-debugging.md).|
