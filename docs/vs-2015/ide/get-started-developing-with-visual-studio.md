@@ -16,12 +16,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 160922088eb0d5f517de072649df94479e4d7e31
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9e43236c32f0ce7e4e260a1d44b1e64600b6dd17
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062792"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802256"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Introducción al desarrollo con Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ Le damos la bienvenida a Visual Studio. Una vez haya [descargado](http://www.vis
 
      [Realizar un tutorial](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) &#124;                               [Examinar los documentos](https://docs.asp.net/) &#124;                                   [Ver un vídeo](http://www.asp.net/vnext)
 
--   **[Asegúrese de aplicaciones móviles multiplataforma en HTML/Javascript (Apache Cordova)](http://taco.visualstudio.com/docs/get-started-first-mobile-app/)**  : Apache Cordova es un entorno de desarrollo multiplataforma de código abierto que se basa en HTML, CSS y Javascript.  El código JavaScript se ejecuta en un contenedor que tiene como destino una plataforma específica y permite acceder a todas las funciones de hardware del dispositivo. Desarrolle aplicaciones para Apple Store, la Tienda Android y la Tienda Windows.
+-   **[Crear aplicaciones móviles multiplataforma en HTML/JavaScript (Apache Cordova)](http://taco.visualstudio.com/docs/get-started-first-mobile-app/)**: Apache Cordova es un entorno multiplataforma de código abierto que se basa en HTML, CSS y JavaScript.  El código JavaScript se ejecuta en un contenedor que tiene como destino una plataforma específica y permite acceder a todas las funciones de hardware del dispositivo. Desarrolle aplicaciones para Apple Store, la Tienda Android y la Tienda Windows.
 
      [Cargar una muestra](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) &#124;   [ Realizar un tutorial](http://taco.visualstudio.com/docs/get-started-first-mobile-app/) &#124;                               [Examinar los documentos](http://taco.visualstudio.com/docs/get-started-vs-tools-apache-cordova/) &#124;                                [Ver un vídeo](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
 
--   **[Asegúrese de aplicaciones móviles multiplataforma en C# o Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)**  : Introducción al uso de herramientas para Xamarin y Visual Studio para crear aplicaciones móviles que se ejecutan en la plataforma Universal de Windows, iOS y Android desde un código base compartido.
+-   **[Crear aplicaciones móviles multiplataforma en C# o Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)** : empiece a usar Visual Studio y Tools for Xamarin para crear aplicaciones móviles que se ejecutan en la Plataforma universal de Windows, iOS y Android desde una base de código compartido.
 
      Cargar una muestra:[Tasky Portable](http://developer.xamarin.com/samples/mobile/TaskyPortable/) (interfaz de usuario nativa) o [ejemplo Xamarin Forms Todo](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (interfaz de usuario compartida de Xamarin.Forms) &#124;   [Realizar un tutorial](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124;                             [Examinar los documentos](https://msdn.microsoft.com/library/mt299001.aspx) &#124;                                  [Ver un vídeo](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)
 
@@ -60,7 +60,7 @@ Le damos la bienvenida a Visual Studio. Una vez haya [descargado](http://www.vis
 
      [Cargar una muestra](https://github.com/microsoft/windows-classic-samples) &#124;                     [ Realizar un tutorial](https://msdn.microsoft.com/library/dd492171.aspx) &#124;                               [Examinar los documentos](https://dev.windows.com/desktop)
 
--   **[Crear aplicaciones de Office](https://msdn.microsoft.com/library/fp161347.aspx)**  : Empezar a crear aplicaciones de Office que amplían y personalizan Word, Excel, Outlook y Powerpoint con servicios de Office 365.
+-   **[Crear aplicaciones de Office](https://msdn.microsoft.com/library/fp161347.aspx)**  : Empezar a crear aplicaciones de Office que amplían y personalizan Word, Excel, Outlook y PowerPoint con servicios de Office 365.
 
      [Cargar una muestra](https://code.msdn.microsoft.com/office365/) &#124;                       [ Realizar un tutorial](http://dev.office.com/getting-started/office365apis) &#124;                              [Examinar los documentos](https://msdn.microsoft.com/office/aa905340.aspx) &#124;                                   [Ver un vídeo](http://dev.office.com/videos)
 

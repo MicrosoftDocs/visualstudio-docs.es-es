@@ -16,12 +16,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: crdun
-ms.openlocfilehash: 1898d437cb7d3f439e92b88a45e7b543e8bbd0f5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c25afa4447a77c6e8bdeb0abb502235fdba1e203
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058485"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805151"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Bienvenido a Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -61,11 +61,11 @@ Le damos la bienvenida a Visual Studio. Tenemos todo lo que necesita para crear 
 
 2.  [Apache Cordova con Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): Un código base común para HTML, CSS y JavaScript o Typescript
 
-3.  [Visual Studio Tools para Unity](./cross-platform/visual-studio-tools-for-unity.md): desarrollo de juegos en 2D o 3D en C#
+3.  [Visual Studio Tools para Unity](./cross-platform/visual-studio-tools-for-unity.md): desarrollo de juegos en 2D o 3D en C#.
 
 4.  [C++ para desarrollo multiplataforma](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): Bibliotecas de código compartido y las aplicaciones en C++
 
-5.  [Emulador de Visual Studio para Android](./cross-platform/visual-studio-emulator-for-android.md): emulador de Visual Studio para Android: depure y pruebe sus aplicaciones Android independientemente del IDE
+5.  [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md): Emulador de Visual Studio para Android; depure y pruebe sus aplicaciones Android independientemente del IDE
 
 ## <a name="connect-your-apps-to-services"></a>Conectar las aplicaciones a servicios
  Puede conectarse a estos servicios desde el principio (siempre y cuando tenga una cuenta para cada servicio):
@@ -100,14 +100,14 @@ Le damos la bienvenida a Visual Studio. Tenemos todo lo que necesita para crear 
 |||||
 |-|-|-|-|
 |[Novedades de Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)|[Novedades de Visual C#](http://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[Novedades de .NET Framework 4.6](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[Novedades de ALM](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938)|
-|[Novedades de C++](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Novedades de Visual Basic](http://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[Novedades de JavaScript](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/what-s-new-in-javascript.md)||
+|[Novedades de C++](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Novedades de Visual Basic](http://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[Novedades de JavaScript](/visualstudio/scripting-docs/javascript/what-s-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 
 ## <a name="in-this-section"></a>En esta sección
 
 -   [Novedades de Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)
 
--   [Instalación de Visual Studio 2015](./install/install-visual-studio-2015.md)
+-   [Instalar Visual Studio 2015](./install/install-visual-studio-2015.md)
 
 -   [Portar, migrar y actualizar proyectos de Visual Studio](./porting/porting-migrating-and-upgrading-visual-studio-projects.md)
 
