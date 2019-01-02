@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dff6910f74b9a08a8064e4fb88828a21940c8ab9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2b56608a0d81be17fbd68ad7ccd0d5626a818376
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053174"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740356"
 ---
 # <a name="unit-test-basics"></a>Conceptos básicos de las pruebas unitarias
 
@@ -257,7 +257,7 @@ Para más información, vea [Ejecutar pruebas unitarias con el Explorador de pru
 
 2.  En el **Explorador de pruebas**, seleccione los métodos de prueba y después elija **Depurar pruebas seleccionadas** en el menú contextual.
 
-Más información sobre la [depuración de pruebas unitarias](../debugger/debugging-in-visual-studio.md).
+Más información sobre la [depuración de pruebas unitarias](../debugger/debugger-feature-tour.md).
 
 **P: Si uso TDD, ¿cómo puedo generar el código a partir de las pruebas?**
 

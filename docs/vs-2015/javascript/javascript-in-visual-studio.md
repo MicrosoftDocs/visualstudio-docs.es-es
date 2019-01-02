@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05ef916c2ed4948f23adbb09a68b096d0a704a79
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bcd092ca1631f54f758cef95895d8509d14dec96
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050353"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802983"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,16 +48,16 @@ JavaScript es un lenguaje de primera clase en Visual Studio. Puede usar la mayor
 
 |Característica|Descripción|
 |-------------|-----------------|
-|Clases|La nueva sintaxis admite la declaración de [clases](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/class-statement-javascript.md).|
-|Promises|[Promises](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/promise-object-javascript.md) permite una codificación asincrónica más fácil y limpia. Se admiten constructores Promise junto con los métodos de utilidad `all` y `race`.|
-|Iterators|Ahora puede iterar por objetos iterables (incluidas matrices, objetos similares a matrices e iteradores), invocando un enlace de iteración personalizado con instrucciones que se ejecutarán para el valor de cada propiedad distintiva. Para más información, vea [Iteradores y generadores](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/advanced/iterators-and-generators-javascript.md). **Nota:**  Todavía no se admiten generadores.|
+|Clases|La nueva sintaxis admite la declaración de [clases](/visualstudio/scripting-docs/javascript/reference/class-statement-javascript).|
+|Promises|[Promises](/visualstudio/scripting-docs/javascript/reference/promise-object-javascript) permite una codificación asincrónica más fácil y limpia. Se admiten constructores Promise junto con los métodos de utilidad `all` y `race`.|
+|Iterators|Ahora puede iterar por objetos iterables (incluidas matrices, objetos similares a matrices e iteradores), invocando un enlace de iteración personalizado con instrucciones que se ejecutarán para el valor de cada propiedad distintiva. Para más información, vea [Iteradores y generadores](/visualstudio/scripting-docs/javascript/advanced/iterators-and-generators-javascript). **Nota:**  Todavía no se admiten generadores.|
 |Funciones de flecha|La función de flecha (=>) proporciona la sintaxis abreviada para la palabra clave `function` que incluye un enlace léxico `this`.|
-|Nuevos métodos para objetos integrados|Los objetos integrados [Array (Objeto)](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/array-object-javascript.md), [Math (Objeto)](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/math-object-javascript.md), [Number (Objeto)](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/number-object-javascript.md), [Object (Objeto)](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/object-object-javascript.md) y [String (Objeto)](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/string-object-javascript.md) incluyen numerosas propiedades y funciones de utilidad nuevas para manipular e inspeccionar datos.|
-|Mejoras literales de objeto|Los objetos ahora admiten propiedades calculadas, definiciones de método concisas y sintaxis abreviada para las propiedades cuyo valor se inicializa en una variable con el mismo nombre. Para obtener más información, vea [Crear objetos](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/creating-objects-javascript.md).|
-|Servidores proxy|Los [servidores proxy](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/proxy-object-javascript.md) permiten un comportamiento personalizado para los objetos.|
-|Parámetros de REST|Los parámetros de REST permiten activar argumentos consecutivos en una llamada de función a una matriz. Para obtener más información, vea [Funciones](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/functions-javascript.md).|
-|Operador de propagación|El [operador de propagación](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/spread-operator-decrement-dot-dot-dot-javascript.md) (`…`) expande expresiones iterables en argumentos individuales. Por ejemplo, `a.b(…array)` es aproximadamente igual a que `a.b.apply(a, array)`.|
-|Símbolos|Los objetos [Símbolo](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/symbol-object-javascript.md) permiten agregar propiedades a los objetos existentes sin posibilidad de interferencias con las propiedades de objeto existentes, sin visibilidad no intencionada y sin otras adiciones no coordinadas por parte de otro código.|
-|Cadenas de plantillas|Las [cadenas de plantillas](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/advanced/template-strings-javascript.md) son literales de cadena que permiten evaluar y concatenar las expresiones con el literal de cadena.|
-|Mejoras de Unicode|Se realizaron mejoras en la compatibilidad con Unicode. Por ejemplo, un nuevo formato de secuencia de escape admite puntos de código astral (puntos de código con más de cuatro dígitos hexadecimales). Para obtener más información, consulte [Caracteres especiales](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/advanced/special-characters-javascript.md).|
-|WeakSet|Un [WeakSet](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/weakset-object-javascript.md) es una colección de objetos que se pueden recoger si no se hace referencia a ellos en ningún otro lugar.|
+|Nuevos métodos para objetos integrados|Los objetos integrados [Array (Objeto)](/visualstudio/scripting-docs/javascript/reference/array-object-javascript), [Math (Objeto)](/visualstudio/scripting-docs/javascript/reference/math-object-javascript), [Number (Objeto)](/visualstudio/scripting-docs/javascript/reference/number-object-javascript), [Object (Objeto)](/visualstudio/scripting-docs/javascript/reference/object-object-javascript) y [String (Objeto)](/visualstudio/scripting-docs/javascript/reference/string-object-javascript) incluyen numerosas propiedades y funciones de utilidad nuevas para manipular e inspeccionar datos.|
+|Mejoras literales de objeto|Los objetos ahora admiten propiedades calculadas, definiciones de método concisas y sintaxis abreviada para las propiedades cuyo valor se inicializa en una variable con el mismo nombre. Para obtener más información, vea [Crear objetos](/visualstudio/scripting-docs/javascript/creating-objects-javascript).|
+|Servidores proxy|Los [servidores proxy](/visualstudio/scripting-docs/javascript/reference/proxy-object-javascript) permiten un comportamiento personalizado para los objetos.|
+|Parámetros de REST|Los parámetros de REST permiten activar argumentos consecutivos en una llamada de función a una matriz. Para obtener más información, vea [Funciones](/visualstudio/scripting-docs/javascript/functions-javascript).|
+|Operador de propagación|El [operador de propagación](/visualstudio/scripting-docs/javascript/reference/spread-operator-decrement-dot-dot-dot-javascript) (`…`) expande expresiones iterables en argumentos individuales. Por ejemplo, `a.b(…array)` es aproximadamente igual a que `a.b.apply(a, array)`.|
+|Símbolos|Los objetos [Símbolo](/visualstudio/scripting-docs/javascript/reference/symbol-object-javascript) permiten agregar propiedades a los objetos existentes sin posibilidad de interferencias con las propiedades de objeto existentes, sin visibilidad no intencionada y sin otras adiciones no coordinadas por parte de otro código.|
+|Cadenas de plantillas|Las [cadenas de plantillas](/visualstudio/scripting-docs/javascript/advanced/template-strings-javascript) son literales de cadena que permiten evaluar y concatenar las expresiones con el literal de cadena.|
+|Mejoras de Unicode|Se realizaron mejoras en la compatibilidad con Unicode. Por ejemplo, un nuevo formato de secuencia de escape admite puntos de código astral (puntos de código con más de cuatro dígitos hexadecimales). Para obtener más información, consulte [Caracteres especiales](/visualstudio/scripting-docs/javascript/advanced/special-characters-javascript).|
+|WeakSet|Un [WeakSet](/visualstudio/scripting-docs/javascript/reference/weakset-object-javascript) es una colección de objetos que se pueden recoger si no se hace referencia a ellos en ningún otro lugar.|

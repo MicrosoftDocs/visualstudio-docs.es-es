@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48bcfe8ca54236fc2134d431f5f6dd16d4b82a48
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: 0623c3e0fdd0db0315e5fe719c9a81ec97e6a2c6
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060192"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562105"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>Tutorial: Depurar una aplicación paralela en Visual Studio
 En este tutorial se muestra cómo utilizar las ventanas **Pilas paralelas** y **Tareas paralelas** para depurar una aplicación paralela. Estas ventanas ayudan a entender y comprobar el comportamiento en tiempo de ejecución del código que usa el [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) o [Runtime de simultaneidad](/cpp/parallel/concrt/concurrency-runtime). En este tutorial se proporciona código de muestra con puntos de interrupción integrados. Una vez que el código se interrumpe, se muestra cómo utilizar las ventanas **Tareas paralelas** y **Pilas paralelas** para examinarlo.  
@@ -298,7 +298,7 @@ En este tutorial se muestra cómo utilizar las ventanas **Pilas paralelas** y **
   
 ## <a name="see-also"></a>Vea también  
  [Depurar aplicaciones multiproceso](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [Conceptos básicos del depurador](../debugger/getting-started-with-the-debugger.md)   
+ [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)  
  [Depurar código administrado](../debugger/debugging-managed-code.md)   
  [Parallel Programming](/dotnet/standard/parallel-programming/index)  (Programación en paralelo)  
  [Runtime de simultaneidad](/cpp/parallel/concrt/concurrency-runtime)   

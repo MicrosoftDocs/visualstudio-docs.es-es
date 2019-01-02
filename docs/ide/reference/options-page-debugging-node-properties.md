@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70a06548dd25ade1bf64bad6a99261e043f6ac65
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 9c0fac6932413b5d1992cf9c775415d63abf0344
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670841"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684839"
 ---
 # <a name="options-page-debugging-node-properties"></a>Página de opciones, Propiedades de nodo Depuración
 En las siguientes tablas, se describen las páginas (o colecciones de propiedades) asociadas a la categoría **Depuración**, `DTE.Properties("Debugging", <Property Page>)`, del cuadro de diálogo **Opciones**.
@@ -86,5 +86,5 @@ En las siguientes tablas, se describen las páginas (o colecciones de propiedade
 - [Página de opciones, Propiedades de nodo Fuentes y colores](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
 - [Página de opciones, Propiedades de nodo Editor de texto](../../ide/reference/options-page-text-editor-node-properties.md)
 - [General, Depuración, cuadro de diálogo Opciones](../../debugger/general-debugging-options-dialog-box.md)
-- [Editar y continuar, Depuración, Opciones (Cuadro de diálogo)](/visualstudio/debugger/edit-and-continue?view=vs-2015)
+- [Editar y continuar, Depuración, Opciones (Cuadro de diálogo)](../../debugger/edit-and-continue.md?view=vs-2015)
 - [Just-In-Time, Depuración, Cuadro de diálogo Opciones](../../debugger/just-in-time-debugging-options-dialog-box.md)

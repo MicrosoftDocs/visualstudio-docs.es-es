@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bf1ca8fabf70f2d4fbe5920803773af07db0a99
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 4ee9d52f63f3158979f2f018ea44d5b68d6612c1
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389233"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562339"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window"></a>La vista subprocesos y tareas en la ventana Pilas paralelas
 
@@ -140,8 +140,7 @@ Si cambia a un nuevo marco de pila, convertir ese método del método actual, y 
 ## <a name="see-also"></a>Vea también  
  [Empezar a depurar una aplicación multiproceso](../debugger/get-started-debugging-multithreaded-apps.md)   
  [Tutorial: Depurar una aplicación paralela](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [Conceptos básicos del depurador](../debugger/getting-started-with-the-debugger.md)   
- [Depurar código administrado](../debugger/debugging-managed-code.md)   
+ [En primer lugar, examine el depurador](../debugger/debugger-feature-tour.md) [depurar código administrado](../debugger/debugging-managed-code.md)   
  [Programación en paralelo](/dotnet/standard/parallel-programming/index)   
  [Usar la ventana Tareas](../debugger/using-the-tasks-window.md)   
  [Clase de tarea: miembros internos](../extensibility/debugger/task-class-internal-members.md)

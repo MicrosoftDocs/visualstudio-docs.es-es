@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 05d3cd5cd56010e62b6ca50a76e726cb7998070b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: d55f1ba3a9e0d30dda9d9e390bae0cc3a46f8444
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065157"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562352"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Obtenga información sobre el depurador Windows en Visual Studio
 
@@ -51,4 +51,4 @@ Puede abrir la mayoría de las ventanas del depurador mientras está depurando e
 
 ## <a name="see-also"></a>Vea también
 
-[Conceptos básicos del depurador](../debugger/getting-started-with-the-debugger.md)
+[Primer vistazo al depurador](../debugger/debugger-feature-tour.md)
