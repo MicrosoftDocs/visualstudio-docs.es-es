@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c39acdef217d2b858645073cb96da4952c91df5a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f8d31881bed3e40db5080d642c0d3043ef2da704
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066319"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562040"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>Preparación de la depuración: Tipos de proyecto de Visual C++
 En esta sección se describe cómo depurar los tipos de proyectos básicos creados mediante las plantillas de proyecto de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].  
@@ -73,7 +73,7 @@ En esta sección se describe cómo depurar los tipos de proyectos básicos cread
   
 2.  En el menú **Depurar**, elija **Iniciar**.  
   
-3.  Depurar con las técnicas descritas en [Fundamentos del depurador](../debugger/getting-started-with-the-debugger.md).  
+3.  Depurar con las técnicas descritas en [primero analicemos el depurador](../debugger/debugger-feature-tour.md).  
   
 ###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a> Para establecer manualmente una configuración de depuración  
   
@@ -111,7 +111,7 @@ En esta sección se describe cómo depurar los tipos de proyectos básicos cread
  [En este tema](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ## <a name="see-also"></a>Vea también  
- [Conceptos básicos del depurador](../debugger/getting-started-with-the-debugger.md)   
+ [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)   
  [Configuración del proyecto para una configuración de depuración de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Asociación del depurador a un programa o programas en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md)   

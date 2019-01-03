@@ -22,15 +22,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eba1f156589babb9a3bec38982bd27b7c17a83c8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: 8d8339d494845b5babe18835647868cad4c3323a
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180196"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561975"
 ---
 # <a name="debugging-native-code"></a>Depuración de código nativo
-Esta sección trata algunos problemas y técnicas de depuración comunes para aplicaciones nativas. Las técnicas descritas en esta sección son técnicas de alto nivel. Para la forma de usar el depurador de Visual Studio, consulte [guía básica del depurador](../debugger/getting-started-with-the-debugger.md).  
+Esta sección trata algunos problemas y técnicas de depuración comunes para aplicaciones nativas. Las técnicas descritas en esta sección son técnicas de alto nivel. Para la forma de usar el depurador de Visual Studio, consulte [primero analicemos el depurador](../debugger/debugger-feature-tour.md)).  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Cómo: Depurar código optimizado](../debugger/how-to-debug-optimized-code.md)  
@@ -60,8 +60,8 @@ Esta sección trata algunos problemas y técnicas de depuración comunes para ap
  [Cómo: Depurar código insertado](../debugger/how-to-debug-injected-code.md)  
  Proporciona orientación para depurar código que utiliza atributos. Se incluyen instrucciones sobre cómo activar la anotación del código fuente, cómo ver código insertado y cómo ver el código de desensamblado en el punto de ejecución actual.  
   
- [Tutorial: Depurar una aplicación paralela](../debugger/walkthrough-debugging-a-parallel-application.md)  
- Describe cómo utilizar el **tareas paralelas** y **pilas paralelas** ventanas para depurar una aplicación paralela.  
+ [Tutorial: Depuración de una aplicación paralela](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ Describe cómo se usan las ventanas de herramientas **Tareas paralelas** y **Pilas paralelas** para depurar una aplicación paralela.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Tipos de proyecto de Visual C++](../debugger/debugging-preparation-visual-cpp-project-types.md)  

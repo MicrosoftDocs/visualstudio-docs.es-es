@@ -1,13 +1,10 @@
 ---
-title: 'Cómo: establecer un nombre de subproceso en código nativo | Documentos de Microsoft'
+title: Procedimiento Establecer un nombre de subproceso en código nativo | Microsoft Docs
 ms.custom: ''
-ms.date: 04/27/2017
+ms.date: 12/17/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
-- CSharp
-- VB
-- FSharp
 - C++
 helpviewer_keywords:
 - debugging [C++], threads
@@ -21,21 +18,43 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a2b751451f1362c0ba82871b99b0dbb10434282b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 9226e009936d0a644a5a6fcfcaba57bc3af25d7d
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480035"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803103"
 ---
-# <a name="how-to-set-a-thread-name-in-native-code"></a>Cómo: Establecer un nombre de subproceso en código nativo
-La denominación de los subprocesos es posible en cualquier edición de Visual Studio. Denominación de los subprocesos es útil para realizar el seguimiento de subprocesos en la **subprocesos** ventana.
+# <a name="how-to-set-a-thread-name-in-native-code"></a>Procedimiento Establecer un nombre de subproceso en código nativo
+La denominación de los subprocesos es posible en cualquier edición de Visual Studio. La denominación de los subprocesos es útil para hacer el seguimiento en la ventana **Subprocesos**.
 
-Para establecer el nombre de un subproceso en el programa, utilice la función `SetThreadName` , como se muestra en el siguiente ejemplo de código. Observe que el nombre de subproceso se copia en el subproceso para poder liberar la memoria del parámetro `threadName` .  
-  
-## <a name="example"></a>Ejemplo  
-  
-```C++  
+## <a name="set-a-thread-name"></a>Establecer un nombre de subproceso
+
+El `SetThreadName` función es útil para establecer y ver los subprocesos si el depurador está asociado a su código en ejecución. A partir de Visual Studio 2017 versión 15.6, puede usar el [SetThreadDescription](https://docs.microsoft.com/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreaddescription) función para establecer y ver los nombres de subproceso.
+
+```C++
+#include <windows.h>
+#include <processthreadsapi.h>
+
+int main()
+{
+    HRESULT r;
+    r = SetThreadDescription(
+        GetCurrentThread(),
+        L"ThisIsMyThreadName!"
+    );
+
+    return 0;
+}
+```
+
+## <a name="set-a-thread-name-using-setthreadname"></a>Establecer un nombre de subproceso mediante SetThreadName
+
+Para establecer un nombre de subproceso en el programa, también puede usar el `SetThreadName` funcione, como se muestra en el siguiente ejemplo de código. Observe que el nombre de subproceso se copia en el subproceso para poder liberar la memoria del parámetro `threadName` .  Este método usa un enfoque basado en excepciones que solo funciona si el depurador se adjunta en el momento en que se usa el método basado en excepciones. Nombre de un subproceso que establece con este método no estará disponible en los volcados de memoria o las herramientas de análisis de rendimiento.
+
+En el ejemplo de código siguiente se muestra cómo utilizar `SetThreadName`:
+
+```C++
 //  
 // Usage: SetThreadName ((DWORD)-1, "MainThread");  
 //  
@@ -65,10 +84,9 @@ void SetThreadName(DWORD dwThreadID, const char* threadName) {
     }  
 #pragma warning(pop)  
 }  
-  
 ```  
-  
+
 ## <a name="see-also"></a>Vea también  
- [Depurar aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Ver los datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
+ [Depuración de aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
  [Cómo: Establecer un nombre de subproceso en código administrado](../debugger/how-to-set-a-thread-name-in-managed-code.md)
