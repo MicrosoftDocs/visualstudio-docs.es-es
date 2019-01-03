@@ -1,0 +1,45 @@
+items:
+- name: C# en Visual Studio
+  href: index.yml
+  items:
+  - name: Información general
+    items:
+    - name: Acerca de Visual Studio 2017
+      href: visual-studio-ide.md
+    - name: Acerca del editor de código
+      href: tutorial-editor.md
+    - name: Acerca de los proyectos y las soluciones
+      href: tutorial-projects-solutions.md
+    - name: Más características de Visual Studio
+      href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+  - name: Tutoriales
+    items:
+    - name: Crear la primera aplicación de C#
+      href: tutorial-console.md
+    - name: Creación de una aplicación web
+      href: tutorial-aspnet-core.md
+    - name: Creación de una aplicación UWP
+      href: tutorial-uwp.md
+    - name: Crear una aplicación WPF
+      href: tutorial-wpf.md
+    expanded: true
+  - name: Conocer Visual Studio
+    items:
+    - name: Escribir y editar código
+      href: tutorial-editor.md
+    - name: Compilar y generar
+      href: ../../ide/compiling-and-building-in-visual-studio.md
+    - name: Depurar el código
+      href: ../csharp/tutorial-debugger.md
+    - name: Pruebas unitarias
+      href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+    - name: Implementar el proyecto
+      href: ../../deployment/index.md
+    - name: Acceder a datos
+      href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+ms.openlocfilehash: cb9bc5df898e902292b2cf53bcb43f72f4464454
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53442989"

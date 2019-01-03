@@ -125,42 +125,42 @@ items:
       href: editor-imports.md
     - name: Compatibilidad con EditorConfig
       href: supporting-editorconfig.md
-    - name: 'Tutorial: Vinculación de un tipo de contenido con una extensión de nombre de archivo'
+    - name: 'Tutorial: Vincular un tipo de contenido con una extensión de nombre de archivo'
       href: walkthrough-linking-a-content-type-to-a-file-name-extension.md
-    - name: 'Tutorial: Creación de un glifo de margen'
+    - name: 'Tutorial: Crear un glifo de margen'
       href: walkthrough-creating-a-margin-glyph.md
-    - name: 'Tutorial: Personalización de la vista de texto'
+    - name: 'Tutorial: Personalizar la vista de texto'
       href: walkthrough-customizing-the-text-view.md
-    - name: 'Tutorial: Creación de un elemento de gráfico de vista, comandos y configuración (guías de columnas)'
+    - name: 'Tutorial: Crear un elemento de gráfico de vista, comandos y configuración (guías de columnas)'
       href: walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md
-    - name: 'Tutorial: Resaltado de texto'
+    - name: 'Tutorial: Resaltar texto'
       href: walkthrough-highlighting-text.md
-    - name: 'Tutorial: Esquematización'
+    - name: 'Tutorial: esquematizar'
       href: walkthrough-outlining.md
-    - name: 'Tutorial: Visualización de llaves coincidentes'
+    - name: 'Tutorial: Mostrar llaves que coincidan'
       href: walkthrough-displaying-matching-braces.md
-    - name: 'Tutorial: Visualización de información rápida sobre herramientas'
+    - name: 'Tutorial: Mostrar información sobre herramientas de QuickInfo'
       href: walkthrough-displaying-quickinfo-tooltips.md
-    - name: 'Tutorial: Visualización de ayuda de signatura'
+    - name: 'Tutorial: Mostrar ayuda de firma'
       href: walkthrough-displaying-signature-help.md
-    - name: 'Tutorial: Visualización de finalización de instrucciones'
+    - name: 'Tutorial: Mostrar la finalización de instrucciones'
       href: walkthrough-displaying-statement-completion.md
-    - name: 'Tutorial: Implementación de fragmentos de código'
+    - name: 'Tutorial: Implementar fragmentos de código'
       href: walkthrough-implementing-code-snippets.md
-    - name: 'Tutorial: Visualización de sugerencias de bombilla'
+    - name: 'Tutorial: Mostrar sugerencias de bombilla'
       href: walkthrough-displaying-light-bulb-suggestions.md
-    - name: 'Tutorial: Uso de un comando de shell con una extensión del editor'
+    - name: 'Tutorial: Usar un comando shell con una extensión del editor'
       href: walkthrough-using-a-shell-command-with-an-editor-extension.md
-    - name: 'Tutorial: Uso de una tecla de método abreviado con una extensión del editor'
+    - name: 'Tutorial: Usar una tecla de método abreviado con una extensión del editor'
       href: walkthrough-using-a-shortcut-key-with-an-editor-extension.md
-    - name: 'Tutorial: Acceso al objeto DTE desde una extensión del editor'
+    - name: 'Tutorial: Acceder al objeto DTE desde una extensión del editor'
       href: walkthrough-accessing-the-dte-object-from-an-editor-extension.md
   - name: Creación de diseñadores y editores personalizados
     href: creating-custom-editors-and-designers.md
     items:
-    - name: 'Tutorial: Creación de un editor personalizado'
+    - name: 'Tutorial: Crear un editor personalizado'
       href: walkthrough-creating-a-custom-editor.md
-    - name: 'Tutorial: Adición de características a un editor personalizado'
+    - name: 'Tutorial: Agregar características a un editor personalizado'
       href: walkthrough-adding-features-to-a-custom-editor.md
     - name: Inicialización de diseñador y configuración de metadatos
       href: designer-initialization-and-metadata-configuration.md
@@ -231,8 +231,10 @@ items:
       href: assembly-element-visual-studio-templates.md
     - name: Assembly (Elemento, extensión del Asistente para plantillas de Visual Studio)
       href: assembly-element-visual-studio-template-wizard-extension.md
-    - name: BuildProjectOnLoad (Plantillas de Visual Studio)
-      href: buildprojectonload-visual-studio-templates.md
+    - name: Atributo y elemento BuildOnLoad (plantillas de Visual Studio)
+      href: buildonload-visual-studio-templates.md
+    - name: BuildProjectOnload (Elemento, Plantillas de Visual Studio)
+      href: buildprojectonload-element-visual-studio-templates.md
     - name: CreateInPlace (Plantillas de Visual Studio)
       href: createinplace-visual-studio-templates.md
     - name: CreateNewFolder (Elemento, Plantillas de Visual Studio)
@@ -295,6 +297,10 @@ items:
       href: references-element-visual-studio-templates.md
     - name: RequiredFrameworkVersion (Elemento, Plantillas de Visual Studio)
       href: requiredframeworkversion-element-visual-studio-templates.md
+    - name: RequiredPlatformVersion (Elemento, Plantillas de Visual Studio)
+      href: requiredplatformversion-element-visual-studio-templates.md
+    - name: SDKReference (Elemento, Plantillas de Visual Studio)
+      href: sdkreference-element-visual-studio-templates.md
     - name: ShowByDefault (Plantillas de Visual Studio)
       href: showbydefault-visual-studio-templates.md
     - name: SolutionFolder (Elemento, Plantillas de Visual Studio)
@@ -307,6 +313,8 @@ items:
       href: supportslanguagedropdown-element-visual-studio-templates.md
     - name: SupportsMasterPage (Elemento, Plantillas de Visual Studio)
       href: supportsmasterpage-element-visual-studio-templates.md
+    - name: TargetPlatformName (Elemento, Plantillas de Visual Studio)
+      href: targetplatformname-element-visual-studio-templates.md
     - name: TemplateContent (Elemento, Plantillas de Visual Studio)
       href: templatecontent-element-visual-studio-templates.md
     - name: TemplateData (Elemento, Plantillas de Visual Studio)
@@ -321,14 +329,6 @@ items:
       href: wizarddata-element-visual-studio-templates.md
     - name: WizardExtension (Elemento, Plantillas de Visual Studio)
       href: wizardextension-element-visual-studio-templates.md
-    - name: BuildProjectOnload (Elemento, Plantillas de Visual Studio)
-      href: buildprojectonload-element-visual-studio-templates.md
-    - name: RequiredPlatformVersion (Elemento, Plantillas de Visual Studio)
-      href: requiredplatformversion-element-visual-studio-templates.md
-    - name: SDKReference (Elemento, Plantillas de Visual Studio)
-      href: sdkreference-element-visual-studio-templates.md
-    - name: TargetPlatformName (Elemento, Plantillas de Visual Studio)
-      href: targetplatformname-element-visual-studio-templates.md
   - name: Referencia de esquema de manifiesto de plantillas de Visual Studio
     href: visual-studio-template-manifest-schema-reference.md
 - name: Ampliación de configuración y opciones de usuario
@@ -365,13 +365,13 @@ items:
   - name: Creación de una página de inicio personalizada
     href: creating-a-custom-start-page.md
     items:
-    - name: 'Tutorial: Adición de XAML personalizado a la página de inicio'
+    - name: 'Tutorial: Agregar XAML personalizado a la página de inicio'
       href: walkthrough-adding-custom-xaml-to-the-start-page.md
     - name: Adición de control de usuario a la página de inicio
       href: adding-user-control-to-the-start-page.md
     - name: Adición de comandos de Visual Studio a una página de inicio
       href: adding-visual-studio-commands-to-a-start-page.md
-    - name: 'Tutorial: Guardado de la configuración de usuario en una página de inicio'
+    - name: 'Tutorial: Guardar la configuración de usuario en una página de inicio'
       href: walkthrough-saving-user-settings-on-a-start-page.md
     - name: Implementación de páginas de inicio personalizadas
       href: deploying-custom-start-pages.md
@@ -426,11 +426,11 @@ items:
     href: vsix-project-template.md
   - name: Introducción a la plantilla de proyecto de VSIX
     href: getting-started-with-the-vsix-project-template.md
-  - name: 'Tutorial: Publicación de una extensión de Visual Studio'
+  - name: 'Tutorial: Publicar una extensión de Visual Studio'
     href: walkthrough-publishing-a-visual-studio-extension.md
-  - name: 'Tutorial: Publicación de una extensión de Visual Studio mediante la línea de comandos'
+  - name: 'Tutorial: Publicar una extensión de Visual Studio mediante la línea de comandos'
     href: walkthrough-publishing-a-visual-studio-extension-via-command-line.md
-  - name: 'Tutorial: Creación de un paquete de extensión'
+  - name: 'Tutorial: Crear un paquete de extensión'
     href: walkthough-create-extension-pack.md
   - name: Agregar una dependencia a un paquete VSIX
     href: how-to-add-a-dependency-to-a-vsix-package.md
@@ -728,11 +728,11 @@ items:
 - name: Creación de un kit de desarrollo de software
   href: creating-a-software-development-kit.md
   items:
-  - name: 'Tutorial: Creación de un SDK con C# o Visual Basic'
+  - name: 'Tutorial: Crear un SDK con C# o Visual Basic'
     href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
-  - name: 'Tutorial: Creación de un SDK con C++'
+  - name: 'Tutorial: Crear un SDK con C++'
     href: walkthrough-creating-an-sdk-using-cpp.md
-  - name: 'Tutorial: Creación de un SDK con JavaScript'
+  - name: 'Tutorial: Crear un SDK con JavaScript'
     href: walkthrough-creating-an-sdk-using-javascript.md
 - name: Extensibilidad de la plataforma de compilación .NET ("Roslyn")
   href: dotnet-compiler-platform-roslyn-extensibility.md
@@ -743,9 +743,9 @@ items:
     href: roslyn-analyzers-and-code-aware-library-for-immutablearrays.md
   - name: Referencia de versión del paquete de Roslyn
     href: roslyn-version-support.md
-ms.openlocfilehash: 9416d9557265e9a5a84d115badaaa1882228b4f2
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: f16722f3f0b684b3923f2dfa5b30c06e79d0a90b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967498"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562365"
