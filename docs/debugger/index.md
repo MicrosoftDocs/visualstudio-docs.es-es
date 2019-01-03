@@ -4,16 +4,15 @@ title: Depuración de aplicaciones | Microsoft Docs
 description: Aprenda a usar Visual Studio 2017 para depurar aplicaciones, servicios y herramientas en el lenguaje de su elección para sus dispositivos y plataformas.
 ms.custom: seodec18
 ms.topic: landing-page
-ms.technology: vs-ide-debug
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: 2ee721d3febc070435419f2750b52bd4daf533b1
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 79a3aa8fd2d86b7c64d719dc745138b970b92d3c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53560718"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886642"
 ---
 # <a name="debugging-in-visual-studio"></a>Depurar en Visual Studio
 
