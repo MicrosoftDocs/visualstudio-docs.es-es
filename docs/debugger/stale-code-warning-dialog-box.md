@@ -22,19 +22,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1e212602b317127cfd14adcd246a23cdd92ed86
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 3a2f7f1817b562b555a8ac026e165712bb81f912
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281798"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684735"
 ---
 # <a name="stale-code-warning-dialog-box"></a>Advertencia de código obsoleto (cuadro de diálogo)
-Este cuadro de diálogo aparece cuando han realizado cambios a código nativo de código que **editar y continuar** no se pudo aplicar inmediatamente. Por tanto, parte del código nativo en el marco de pila actual no está actualizado, es decir, que está obsoleto. Para obtener más información, consulte [Cómo: trabajar con código obsoleto](/visualstudio/debugger/edit-and-continue-visual-cpp#bkmk_how_to_work_with_stale_code).  
-  
- **No volver a mostrar este cuadro de diálogo**  
- Si activa esta casilla, la función Editar y continuar aplicará los cambios en el código sin pedir permiso en el futuro. Puede activar esta advertencia de nuevo, vaya a la **opciones** cuadro de diálogo, abra el **depuración** carpeta, haga clic en el **editar y continuar** página y seleccionar **Avisar cuando haya código obsoleto**.  
-  
-## <a name="see-also"></a>Vea también  
- [Cambios admitidos en el código (C++)](../debugger/supported-code-changes-cpp.md)   
- [Editar y continuar, Depuración, Opciones (Cuadro de diálogo)](/visualstudio/debugger/edit-and-continue)
+
+Este cuadro de diálogo aparece cuando se han realizado cambios en el código nativo que **Editar y continuar** no pudo aplicar inmediatamente. Por tanto, parte del código nativo en el marco de pila actual no está actualizado, es decir, que está obsoleto. Para más información, consulte [Editar y continuar (C++)](edit-and-continue-visual-cpp.md).
+
+**No volver a mostrar este cuadro de diálogo**
+
+Si activa esta casilla, la función Editar y continuar aplicará los cambios en el código sin pedir permiso en el futuro. Para volver a activar esta advertencia, vaya al cuadro de diálogo **Opciones**, abra la carpeta **Depuración**, haga clic en la página **Editar** y continuar y seleccione **Avisar cuando haya código obsoleto**.
+
+## <a name="see-also"></a>Vea también
+
+- [Cambios admitidos en el código (C++)](supported-code-changes-cpp.md)
+- [Editar y continuar, Depuración, Opciones (Cuadro de diálogo)](edit-and-continue.md)

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad584ac350038ced460b42a4e63d2b140d8396d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 9d34d3a54947799e41fca20200e0fb6a5305146f
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912973"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53685011"
 ---
 # <a name="using-saved-intellitrace-data"></a>Uso de datos de IntelliTrace guardados
 Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) para ir a puntos concretos de la ejecución de la aplicación. Este archivo puede contener eventos de rendimiento, excepciones, subprocesos, pasos de prueba, módulos y otra información del sistema que IntelliTrace recopila mientras se ejecuta la aplicación.
@@ -39,7 +39,7 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
     |----------------|-------------|
     |Una sesión IntelliTrace en Visual Studio Enterprise (pero no en las ediciones Professional o Community).|[Características de IntelliTrace](../debugger/intellitrace-features.md)|
     |Una sesión de prueba en Microsoft Test Manager. Se asociará un archivo .iTrace a un elemento de trabajo de Team Foundation Server.|[Recopilar más datos de diagnóstico en las pruebas manuales](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
-    |Microsoft Monitoring Agent, solo o con System Center 2012 R2 Operations Manager, para las aplicaciones web ASP.NET y las aplicaciones de SharePoint que se ejecutan en la implementación|-   [Diagnosticar problemas después de la implementación](../debugger/diagnose-problems-after-deployment.md)<br />-   [Novedades de System Center 2012 R2 Operations Manager](http://technet.microsoft.com/library/dn249700.aspx)|
+    |Microsoft Monitoring Agent, solo o con System Center 2012 R2 Operations Manager, para las aplicaciones web ASP.NET y las aplicaciones de SharePoint que se ejecutan en la implementación|-   [Diagnosis de problemas tras la implementación](../debugger/diagnose-problems-after-deployment.md)<br />-   [Novedades de System Center 2012 R2 Operations Manager](http://technet.microsoft.com/library/dn249700.aspx)|
 
 ##  <a name="GetStarted"></a> ¿Qué desea hacer?
 
@@ -110,7 +110,7 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
 
 3.  Expanda esa llamada para revisar todas las llamadas anidadas y los valores de parámetro que se registraron en ese punto en el tiempo.
 
-     (Teclado: para mostrar u ocultar una llamada anidada, presione las teclas **Flecha derecha** o **Flecha izquierda** , respectivamente. Para mostrar y ocultar los valores de parámetro de una llamada anidada, presione la tecla **Barra espaciadora** ).
+     (Teclado: Para mostrar u ocultar una llamada anidada, presione las teclas **Flecha derecha** o **Flecha izquierda**, respectivamente. Para mostrar y ocultar los valores de parámetro de una llamada anidada, presione la tecla **Barra espaciadora** ).
 
      Inicie la depuración desde la llamada.
 
@@ -207,7 +207,7 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
 
     ![Registro de IntelliTrace &#45; las excepciones no controladas de SharePoint](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
 
-   Para ver un tutorial, vea [Tutorial: depurar una aplicación de SharePoint mediante el uso de IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Para los tipos de datos que registra el agente, vea [las características de IntelliTrace](../debugger/intellitrace-features.md).
+   Para ver un tutorial, vea [Tutorial: Depurar una aplicación de SharePoint mediante IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Para los tipos de datos que registra el agente, vea [las características de IntelliTrace](../debugger/intellitrace-features.md).
 
 ###  <a name="ThreadsList"></a> Lista de subprocesos
  Examine los subprocesos registrados que se ejecutaron en el proceso de destino. Puede iniciar la depuración desde el primer evento válido de IntelliTrace en un subproceso seleccionado.
@@ -225,7 +225,7 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
 |**Columna**|**Muestra**|
 |----------------|-------------------|
 |**ID**|El número de identificador del subproceso|
-|**Name**|El nombre del subproceso. Los subprocesos sin nombre se muestran como "\<sin nombre >".|
+|**Name**|El nombre del subproceso. Los subprocesos sin nombre se muestran como “\<Sin nombre>”.|
 |**Hora de inicio**|La hora en que se creó el subproceso|
 |**Hora de finalización**|La hora en que se completó el subproceso|
 
@@ -258,7 +258,7 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
 |----------------|-------------------|
 |**Nombre del módulo**|Nombre de archivo del módulo|
 |**Ruta de acceso del módulo**|Ubicación del disco en el que se cargó el módulo|
-|**Identificador del módulo**|Identificador único del módulo específico de esta versión que ayuda a encontrar archivos de símbolos (PDB) coincidentes. Vea [Finding symbol (.pdb) files and source files](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger).|
+|**Identificador del módulo**|Identificador único del módulo específico de esta versión que ayuda a encontrar archivos de símbolos (PDB) coincidentes. Vea [Finding symbol (.pdb) files and source files](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).|
 
 ### <a name="where-can-i-get-more-information"></a>¿Dónde puedo obtener más información?
  [Usar el recopilador independiente de IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)
@@ -273,4 +273,4 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
  [Depurador de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)
 
 #### <a name="guidance"></a>Orientación
- [Pruebas para entrega continua con Visual Studio 2012 – capítulo 6: un cuadro de herramientas de pruebas](http://go.microsoft.com/fwlink/?LinkID=255203)
+ [Pruebas para entrega continua con Visual Studio 2012 – capítulo 6: Un cuadro de herramientas de pruebas](http://go.microsoft.com/fwlink/?LinkID=255203)

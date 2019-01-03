@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c00740b31e5b9d7cc5678bfc248e673a57e59ccf
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MTE95
+ms.openlocfilehash: f35a04620da94efca70fb33933f3940005996e29
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305317"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561699"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Depurar archivos DLL en Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -52,7 +52,7 @@ Cuando se usa una plantilla de proyecto de Visual Studio para crear una aplicaci
 - [Configuración del proyecto para una configuración de depuración de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Configuración de proyectos para configuraciones de depuración en C#](../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Configuración de proyectos para una configuración de depuración en Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [How to: Set Debug and Release configurations](../debugger/how-to-set-debug-and-release-configurations.md) (Definición de configuraciones Debug y Release)  
+- [Cómo: Establecer configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md)  
   
 ### <a name="set-c-debuggableattribute"></a>Establezca el atributo DebuggableAttribute de C++
 
@@ -102,7 +102,7 @@ No se puede ejecutar un archivo DLL directamente. Debe llamarse por una aplicaci
 
 Para depurar un archivo DLL, también puede [iniciar la depuración desde la aplicación que realiza la llamada](#vxtskdebuggingdllprojectsthecallingapplication), o [depurar desde el proyecto DLL](how-to-debug-from-a-dll-project.md) mediante la especificación de su aplicación que realiza la llamada. También puede usar el depurador [ventana Inmediato](#vxtskdebuggingdllprojectstheimmediatewindow) para evaluar las funciones DLL o métodos en tiempo de diseño, sin usar una aplicación que realiza la llamada.
 
-Para obtener más información, consulte [empezar a trabajar con el depurador](getting-started-with-the-debugger.md).
+Para obtener más información, consulte [primero analicemos el depurador](../debugger/debugger-feature-tour.md).
 
 ### <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Iniciar la depuración desde la aplicación que realiza la llamada
 
@@ -119,11 +119,11 @@ Para depurar un archivo DLL desde una aplicación que realiza la llamada, hacer 
 
   o  
 
-- Adjuntar a una aplicación que ya está implementado y ejecutándose en un equipo de prueba o producción. Utilice este método para archivos DLL en sitios Web o en aplicaciones web. Para obtener más información, vea [Asociar con procesos en ejecución con el depurador de Visual Studio](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+- Adjuntar a una aplicación que ya está implementado y ejecutándose en un equipo de prueba o producción. Utilice este método para archivos DLL en sitios Web o en aplicaciones web. Para obtener más información, vea [Cómo: Adjuntar a un proceso en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
 Antes de iniciar la depuración de la aplicación que realiza la llamada, establezca un punto de interrupción en el archivo DLL. Consulte [usar puntos de interrupción](../debugger/using-breakpoints.md). Cuando se alcanza el punto de interrupción de archivo DLL, puede avanzar por el código, observando la acción en cada línea. Para obtener más información, consulte [navegar por el código en el depurador](../debugger/navigating-through-code-with-the-debugger.md).
   
-Durante la depuración, puede usar el **módulos** ventana para comprobar los archivos DLL y *.exe* archivos se cargue la aplicación. Para abrir el **módulos** ventana, durante la depuración, seleccione **depurar** > **Windows** > **módulos**. Para obtener más información, consulta [Ver los archivos DLL y ejecutables en la ventana Módulos (C#, C++, Visual Basic, F#)](../debugger/how-to-use-the-modules-window.md). 
+Durante la depuración, puede usar el **módulos** ventana para comprobar los archivos DLL y *.exe* archivos se cargue la aplicación. Para abrir el **módulos** ventana, durante la depuración, seleccione **depurar** > **Windows** > **módulos**. Para obtener más información, vea [Cómo: Utilice la ventana módulos](../debugger/how-to-use-the-modules-window.md). 
 
 ###  <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> Utilice la ventana Inmediato  
 
@@ -158,7 +158,7 @@ Por ejemplo, para probar un método denominado `Test` en clase `Class1`:
 
 ##  <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Depuración en modo mixto  
 
-Puede escribir una aplicación de llamada para un archivo DLL en código administrado o nativo. Si su aplicación nativa llama a un archivo DLL administrado y desea depurar ambos, puede habilitar a los depuradores administrados y nativos en las propiedades del proyecto. El proceso exacto depende de si desea iniciar la depuración desde el proyecto DLL o el proyecto de aplicación que realiza la llamada. Para obtener más información, vea [Cómo: depurar en modo mixto (C#, C++, Visual Basic)](../debugger/how-to-debug-in-mixed-mode.md). 
+Puede escribir una aplicación de llamada para un archivo DLL en código administrado o nativo. Si su aplicación nativa llama a un archivo DLL administrado y desea depurar ambos, puede habilitar a los depuradores administrados y nativos en las propiedades del proyecto. El proceso exacto depende de si desea iniciar la depuración desde el proyecto DLL o el proyecto de aplicación que realiza la llamada. Para obtener más información, vea [Cómo: Depurar en modo mixto](../debugger/how-to-debug-in-mixed-mode.md). 
 
 También puede depurar una DLL nativa desde un proyecto administrado que realiza la llamada. Para obtener más información, consulte [cómo depurar código administrado y nativo](how-to-debug-managed-and-native-code.md). 
 
