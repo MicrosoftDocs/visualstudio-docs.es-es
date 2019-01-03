@@ -1,0 +1,110 @@
+### YamlMime:YamlDocument
+ms.openlocfilehash: 64bf68f880b74161d8d1b95a73c5a3763a1c8192
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684397"
+documentType: LandingData
+title: Documentación del IDE de Visual Studio
+metadata:
+  title: Documentación de Visual Studio | Microsoft Docs
+  description: Tutoriales y artículos conceptuales para aprender a usar Visual Studio.
+  author: ghogen
+  manager: douge
+  ms.prod: visual-studio-dev15
+  ms.technology: vs-ide
+  ms.topic: landing-page
+  ms.date: 11/12/2018
+  ms.author: ghogen
+  ms.custom: seodec18
+sections:
+- title: Introducción a Visual Studio
+  items:
+  - type: paragraph
+    text: Instale y aprenda a usar el entorno de desarrollo integrado (IDE) de Visual Studio.
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: ../install/install-visual-studio.md
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_setup.svg
+      title: Instalar Visual Studio
+    - href: ../get-started/visual-studio-ide.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/logos/logo_visual-studio.svg
+      title: Un paseo por el IDE de Visual Studio
+    - href: /dotnet/csharp/tutorials/intro-to-csharp/
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_whats-new.svg
+      title: Novedades de Visual Studio 2017
+- title: Tutoriales
+  items:
+  - type: paragraph
+    text: Iníciese en Visual Studio en el lenguaje que prefiera.
+  - type: list
+    style: icon48
+    items:
+    - image:
+        src: https://docs.microsoft.com/media/logos/logo_csharp.svg
+      text: C#
+      href: /visualstudio/get-started/csharp/
+    - image:
+        src: https://docs.microsoft.com/media/logos/logo_fsharp.svg
+      text: F#
+      href: /dotnet/fsharp
+    - image:
+        src: https://docs.microsoft.com/media/logos/logo_vb.svg
+      text: Visual Basic
+      href: /visualstudio/get-started/visual-basic/
+    - image:
+        src: https://docs.microsoft.com/media/logos/logo_cplusplus.svg
+      text: C++
+      href: /cpp/get-started/
+    - image:
+        src: https://docs.microsoft.com/media/logos/logo_python.svg
+      text: Python
+      href: /visualstudio/python/
+    - image:
+        src: https://docs.microsoft.com/media/logos/logo_nodejs.svg
+      text: Node.js
+      href: /visualstudio/javascript/
+- title: Desarrollar aplicaciones
+  items:
+  - type: paragraph
+    text: Adquiera un mayor conocimiento con tutoriales más exhaustivos sobre el uso de Visual Studio para desarrollar y comprobar aplicaciones.
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: ../ide/index-writing-code.md
+      html: <p>Saque el máximo partido posible del editor de Visual Studio Code.</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_code-edit.svg
+      title: Escribir y editar código
+    - href: ../ide/compiling-and-building-in-visual-studio.md
+      html: <p>Configure el compilador y cree una aplicación.</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_build.svg
+      title: Compilar y generar
+    - href: ../debugger/debugger-feature-tour.md
+      html: <p>Ejecute la aplicación en el depurador para investigar problemas.</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_debug.svg
+      title: Depuración
+    - href: ../test/getting-started-with-unit-testing.md
+      html: <p>Use Visual Studio para administrar las pruebas unitarias y las pruebas de UI codificadas.</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_test.svg
+      title: Prueba
+    - href: ../data-tools/create-a-sql-database-by-using-a-designer.md
+      html: <p>Cree una base de datos SQL con las herramientas de diseño de bases de datos de Visual Studio.</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_generic-database.svg
+      title: Acceder a datos

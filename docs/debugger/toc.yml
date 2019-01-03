@@ -20,11 +20,11 @@ items:
 - name: Tutoriales
   items:
   - name: Más información sobre la depuración de C#
-    href: getting-started-with-the-debugger.md
+    href: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
   - name: Más información sobre la depuración de C++
     href: getting-started-with-the-debugger-cpp.md
   - name: Más información sobre la depuración de Visual Basic
-    href: getting-started-with-the-debugger-vb.md
+    href: /visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json
   - name: Ejecución de código Python en el depurador...
     href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
   - name: Depurar una aplicación de Azure activa
@@ -189,7 +189,7 @@ items:
           href: how-to-debug-from-a-dll-project.md
         - name: Depurar en modo mixto
           href: how-to-debug-in-mixed-mode.md
-      - name: 'Preparación de la depuración: proyectos de consola'
+      - name: 'Preparación de la depuración: Proyectos de consola'
         href: debugging-preparation-console-projects.md
       - name: Depurar un archivo ejecutable que no es parte de una solución de Visual Studio
         href: how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md
@@ -316,7 +316,7 @@ items:
       href: debug-multiple-processes.md
     - name: 'Tutorial: Depurar con la ventana Subprocesos'
       href: how-to-use-the-threads-window.md
-    - name: 'Tutorial: Depurar una aplicación paralela'
+    - name: 'Tutorial: Depuración de una aplicación paralela'
       href: walkthrough-debugging-a-parallel-application.md
     - name: Cambiar a otro subproceso durante la depuración
       href: how-to-switch-to-another-thread-while-debugging.md
@@ -408,14 +408,14 @@ items:
     - name: Depurar código administrado
       href: debugging-managed-code.md
       items:
-      - name: 'Preparación de la depuración: tipos de proyectos de C#, F# y Visual Basic'
+      - name: 'Preparación de la depuración: Tipos de proyectos de C#, F# y Visual Basic'
         href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
         items:
-        - name: 'Depuración administrada: valores de propiedad recomendados'
+        - name: 'Depuración administrada: Valores de propiedades recomendados'
           href: managed-debugging-recommended-property-settings.md
         - name: 'Preparación de la depuración: aplicaciones de Windows Forms'
           href: debugging-preparation-windows-forms-applications.md
-        - name: 'Preparación de la depuración: servicios de Windows'
+        - name: 'Preparación de la depuración: Servicios de Windows'
           href: debugging-preparation-windows-services.md
       - name: Enrutamiento de mensajes a la ventana Salida
         href: diagnostic-messages-in-the-output-window.md
@@ -423,7 +423,7 @@ items:
         href: assertions-in-managed-code.md
       - name: Instrucciones Stop en Visual Basic
         href: stop-statements-in-visual-basic.md
-      - name: 'Tutorial: Depurar Windows Forms'
+      - name: 'Tutorial: Depurar un formulario Windows Form'
         href: walkthrough-debugging-a-windows-form.md
       - name: Depurar el método OnStart
         href: how-to-debug-the-onstart-method.md
@@ -449,7 +449,7 @@ items:
     - name: Depurar código nativo
       href: debugging-native-code.md
       items:
-      - name: 'Preparación de la depuración: tipos de proyecto de Visual C++'
+      - name: 'Preparación de la depuración: Tipos de proyecto de Visual C++'
         href: debugging-preparation-visual-cpp-project-types.md
       - name: Depurar código optimizado
         href: how-to-debug-optimized-code.md
@@ -546,14 +546,14 @@ items:
         href: how-to-find-the-name-of-the-aspnet-process.md
       - name: Depurar aplicaciones web implementadas
         href: debugging-deployed-web-applications.md
-      - name: 'Tutorial: Depurar un formulario Web Forms'
+      - name: 'Tutorial: Depurar un formulario web'
         href: walkthrough-debugging-a-web-form.md
       - name: Depurar excepciones de ASP.NET
         href: how-to-debug-aspnet-exceptions.md
-      - name: 'Depurar aplicaciones web: errores y solución de problemas'
+      - name: 'Depurar aplicaciones web: Errores y solución de problemas'
         href: debugging-web-applications-errors-and-troubleshooting.md
         items:
-        - name: 'Depurar aplicaciones web: solución de problemas'
+        - name: 'Depurar aplicaciones web: Solución de problemas'
           href: debugging-web-applications-troubleshooting.md
           items:
           - name: Comprobar los valores de configuración de la propiedad IIS
@@ -840,9 +840,9 @@ items:
   items:
   - name: Novedades del depurador de Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 82809574dbbecf01e26e1677a4bb22ce9a482cf6
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: cb7973423106d5c7b2af72b005226722eb07ef5b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821401"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561741"
