@@ -1,13 +1,8 @@
 ---
-title: 'Cómo: definir el Descriptor de tipo de un parámetro | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Definir el Descriptor de tipo de un parámetro | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ec2b0173838446c770f3323aacefebabc195c48b
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 15b8a9dff10c88ce46ecfa5565eb9f411ce59798
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294986"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953162"
 ---
-# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Cómo: definir el descriptor de tipo de un parámetro
+# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Procedimiento Definir el descriptor de tipo de un parámetro
   Un descriptor de tipo contiene propiedades que describen el tipo de datos de un parámetro. Un descriptor de tipo puede definir un campo, una entidad o una colección de entidades. Para obtener más información, consulte [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).  
   
 ### <a name="to-define-the-type-descriptor-of-a-parameter"></a>Para definir el descriptor de tipo de un parámetro  
@@ -50,7 +45,7 @@ ms.locfileid: "51294986"
   
 ### <a name="to-define-an-entity"></a>Para definir una entidad  
   
-1.  En el **propiedades** ventana, establezca el **nombre** propiedad a un nombre que describa la entidad (por ejemplo: **póngase en contacto con**).  
+1.  En el **propiedades** ventana, establezca el **nombre** propiedad a un nombre que describa la entidad (por ejemplo: **Póngase en contacto con**).  
   
 2.  Establecer el **TypeName** propiedad en el nombre completo del tipo que representa la entidad. Este tipo puede ser una clase del proyecto, un tipo definido en un ensamblado al que se hace referencia en la solución o un tipo definido en el modelo de objetos de BDC.  
   
@@ -88,7 +83,7 @@ ms.locfileid: "51294986"
   
 2. En la barra de menús, elija **vista**, **ventana propiedades**.  
   
-3. En el **propiedades** ventana, establezca el **nombre** propiedad a un nombre que describa la entidad (por ejemplo: **contactos**).  
+3. En el **propiedades** ventana, establezca el **nombre** propiedad a un nombre que describa la entidad (por ejemplo: **Pone en contacto con**).  
   
 4. Establecer el **IsCollection** propiedad **True**. Esto indica que este descriptor de tipo es una colección de entidades.  
   
@@ -124,8 +119,7 @@ ms.locfileid: "51294986"
   
 ## <a name="see-also"></a>Vea también
  [Introducción a las herramientas de diseño de modelo BDC](../sharepoint/bdc-model-design-tools-overview.md)   
- [Cómo: agregar una entidad a un modelo](../sharepoint/how-to-add-an-entity-to-a-model.md)   
- [Cómo: agregar un parámetro a un método](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Cómo: definir una instancia de método](../sharepoint/how-to-define-a-method-instance.md)   
+ [Cómo: Agregar una entidad a un modelo](../sharepoint/how-to-add-an-entity-to-a-model.md)   
+ [Cómo: Agregar un parámetro a un método](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [Cómo: Definir una instancia de método](../sharepoint/how-to-define-a-method-instance.md)   
  [Diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  

@@ -1,9 +1,6 @@
 ---
 title: Obtención de propiedades locales | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, getting local properties
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b955076d79505560d187a59aa1dedec75a4fdbe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 10d4ae8cdcd6223a6e5b8e6311b0091df33c359b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850963"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859430"
 ---
 # <a name="get-local-properties"></a>Obtener propiedades locales
 > [!IMPORTANT]

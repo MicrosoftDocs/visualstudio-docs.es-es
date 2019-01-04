@@ -1,9 +1,6 @@
 ---
 title: Detectar los requisitos del sistema | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - setup, VSPackages
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a794391001934164e52bdd73d940cb73ff3b5f3b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 27fcfa7d7ad7b098bb28a3afee301444c48a46e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500087"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892408"
 ---
 # <a name="detect-system-requirements"></a>Detectar los requisitos del sistema
 Un VSPackage no puede funcionar a menos que esté instalado Visual Studio. Cuando utiliza Microsoft Windows Installer para administrar la instalación del paquete de VS, puede configurar el instalador para detectar si está instalado Visual Studio. También puede configurar para comprobar el sistema para otros requisitos, por ejemplo, una versión concreta de Windows o una cantidad determinada de RAM.  
@@ -46,7 +43,7 @@ Cuando se instala una edición más reciente, las claves del registro para esa e
 |Visual Studio 2015 Shell (integrado y aislado)|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|  
   
 ## <a name="detect-when-visual-studio-is-running"></a>Detectar cuándo se está ejecutando Visual Studio  
- No se puede registrar el VSPackage correctamente si se ejecuta Visual Studio cuando se instala el paquete VSPackage. El instalador debe detectar cuándo se está ejecutando Visual Studio y, a continuación, rechace la instalación del programa. Windows Installer no permite usar entradas de la tabla para habilitar la detección de este tipo. En su lugar, debe crear una acción personalizada, como sigue: Use el `EnumProcesses` función para detectar el *devenv.exe* procesar y, a continuación, establezca una propiedad de instalador que se usa en una condición de inicio o mostrar condicionalmente un cuadro de diálogo que pide al usuario que cierre Visual Studio.  
+ No se puede registrar el VSPackage correctamente si se ejecuta Visual Studio cuando se instala el paquete VSPackage. El instalador debe detectar cuándo se está ejecutando Visual Studio y, a continuación, rechace la instalación del programa. Windows Installer no permite usar entradas de la tabla para habilitar la detección de este tipo. En su lugar, debe crear una acción personalizada, como sigue: Use la `EnumProcesses` función para detectar el *devenv.exe* procesar y, a continuación, establezca una propiedad de instalador que se usa en una condición de inicio o mostrar condicionalmente un cuadro de diálogo que pide al usuario que cierre Visual Studio.  
   
 ## <a name="see-also"></a>Vea también  
  [Instalar VSPackages con Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

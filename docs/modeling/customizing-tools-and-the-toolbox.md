@@ -14,13 +14,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3b0acab24dbb7ff1313e62e91b17bf87190dbb99
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 705b70fd0ee71f7ea0670f64aadcbff7bc686721
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967446"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919604"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personalizar las herramientas y el cuadro de herramientas
 
@@ -71,15 +70,15 @@ El **generador de conexiones** propiedad de una herramienta de conexión hace re
 
 3.  Establecer el **icono cuadro de herramientas** propiedad para hacer referencia a un mapa de bits de 16 x 16.
 
-     Si desea definir un icono nuevo, cree un archivo de mapa de bits en el Explorador de soluciones en la **Dsl\Resources** carpeta. El archivo debe tener los siguientes valores de propiedad: **acción de compilación** = **contenido**; **Copy to Output Directory** = **no copie**.
+     Si desea definir un icono nuevo, cree un archivo de mapa de bits en el Explorador de soluciones en la **Dsl\Resources** carpeta. El archivo debe tener los siguientes valores de propiedad: **Acción de compilación** = **contenido**; **Copy to Output Directory** = **no copie**.
 
-4.  **Para una herramienta de elemento:** establecer el **clase** propiedad de la herramienta para hacer referencia a una clase de dominio concreto que se asigna a una forma.
+4.  **Para una herramienta de elemento:** Establecer el **clase** propiedad de la herramienta para hacer referencia a una clase de dominio concreto que se asigna a una forma.
 
-     **Para una herramienta de conector:** establecer el **generador de conexiones** propiedad de la herramienta para uno de los elementos que se ofrecen en la lista desplegable. Los generadores de conexiones se crean automáticamente cuando se asigna un conector a una relación de dominio. Si ha creado un conector recientemente, normalmente seleccionaría el generador de conexiones asociado.
+     **Para una herramienta de conector:** Establecer el **generador de conexiones** propiedad de la herramienta para uno de los elementos que se ofrecen en la lista desplegable. Los generadores de conexiones se crean automáticamente cuando se asigna un conector a una relación de dominio. Si ha creado un conector recientemente, normalmente seleccionaría el generador de conexiones asociado.
 
 5.  Para probar el DSL, presione F5 o CTRL+F5 y, en la instancia experimental de Visual Studio, abra un archivo de modelo de ejemplo. La nueva herramienta debería aparecer en el cuadro de herramientas. Arrástrela al diagrama para comprobar que crea un nuevo elemento.
 
-     Si la herramienta no aparece, detenga el experimental de Visual Studio. En el Windows **iniciar** menú, ejecute **restablecer el Microsoft Visual Studio 2010 Experimental Instance**. En el **compilar** menú, haga clic en **recompilar solución**. Después, vuelva a probar el DSL.
+     Si la herramienta no aparece, detenga el experimental de Visual Studio. En el Windows **iniciar** menú, ejecute **restablecer el Microsoft Visual Studio 2010 Experimental Instance**. En el menú **Compilar**, haga clic en **Recompilar solución**. Después, vuelva a probar el DSL.
 
 ## <a name="customizing"></a> Personalizar herramientas de elemento
  De forma predeterminada, la herramienta creará una instancia única de la clase especificada, pero puede cambiar esto de dos maneras:
@@ -238,6 +237,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 - [Personalizar la creación y el movimiento de los elementos](../modeling/customizing-element-creation-and-movement.md)
 - [Personalizar comportamiento de copia](../modeling/customizing-copy-behavior.md)
-- [Cómo: Agregar un controlador para arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Cómo: Agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Navegar y actualizar un modelo en el código del programa](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Ejemplo de diagramas de circuitos DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

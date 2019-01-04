@@ -1,9 +1,6 @@
 ---
 title: Ver datos del documento y el documento en editores personalizados | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document data and document view
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2076f1a6c96aea717470fa1e955e5b9786f7fcc5
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d2af41600ed809259cd7512a7fc0a146047a37ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639820"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818880"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Datos del documento y vista de documento en editores personalizados
 Un editor personalizado consta de dos partes: un objeto de datos de documento y un objeto de vista de documento. Como sugieren los nombres, el objeto de datos representa los datos de texto que se mostrará. De forma similar, el objeto de vista de documento (o "vista") representa una o varias ventanas en el que se va a mostrar el objeto de datos.  
@@ -42,7 +39,7 @@ Un editor personalizado consta de dos partes: un objeto de datos de documento y 
 ## <a name="see-also"></a>Vea también  
  [Admite varias vistas de documento](../extensibility/supporting-multiple-document-views.md)   
  [Incrustación simplificada](../extensibility/simplified-embedding.md)   
- [Cómo: adjuntar vistas a datos del documento](../extensibility/how-to-attach-views-to-document-data.md)   
+ [Cómo: Anexión de vistas a datos del documento](../extensibility/how-to-attach-views-to-document-data.md)   
  [Administración de propietarios de bloqueo de documento](../extensibility/document-lock-holder-management.md)   
  [Vistas únicas y varias pestañas](../extensibility/single-and-multi-tab-views.md)   
  [Guardar un documento estándar](../extensibility/internals/saving-a-standard-document.md)   

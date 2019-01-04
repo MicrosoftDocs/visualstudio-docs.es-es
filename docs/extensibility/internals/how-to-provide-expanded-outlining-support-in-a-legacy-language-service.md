@@ -1,9 +1,6 @@
 ---
 title: Proporcionar soporte técnico en un servicio de lenguaje de esquematización | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], outlining support
@@ -15,14 +12,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31ae8a6aeba28fbe90e68305f2b48021b4327c26
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a26d9dbc67f502e30968f3db89834b12e02ae3e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511394"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965556"
 ---
-# <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Cómo: proporcionar compatibilidad con esquematización ampliada en un servicio de lenguaje heredado
+# <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Procedimiento Proporcionar compatibilidad con esquematización ampliada en un servicio de lenguaje heredado
 Hay dos opciones para ampliar la compatibilidad con esquematización el lenguaje más allá de admitir la **contraer a definiciones** comando. Puede agregar regiones de esquema controlado por el editor y agregar regiones de esquema controlado por el cliente.  
   
 ## <a name="adding-editor-controlled-outline-regions"></a>Agregar regiones de esquema controlado por el editor  
@@ -56,4 +53,4 @@ Hay dos opciones para ampliar la compatibilidad con esquematización el lenguaje
     > [!NOTE]
     >  Cuando se llama a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A>, puede especificar un cliente de texto oculto (es decir, un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient> objeto). Este cliente le avisa cuando un texto oculto o región de esquema está expandido o contraído por el usuario.  
   
-4.  Llame a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> estructura) parámetro: especifique un valor de <xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE> en el `iType` miembro de la <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> estructura para indicar que va a crear una región de esquema, en lugar de una región oculta. Especifique si la región está controlado por el cliente o controlado por el editor en el `dwBehavior` miembro de la <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> estructura. La implementación de esquematización inteligente puede contener una combinación de regiones de esquema controlado por el cliente y el editor. Especifique el texto del titular que se muestra cuando la región de esquema está contraído, por ejemplo, "...", en el `pszBanner` miembro de la <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> estructura. Texto de titular del editor predeterminado para una región oculta es "...".
+4.  Llamar a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> estructura) parámetro: Especifique un valor de <xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE> en el `iType` miembro de la <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> estructura para indicar que va a crear una región de esquema, en lugar de una región oculta. Especifique si la región está controlado por el cliente o controlado por el editor en el `dwBehavior` miembro de la <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> estructura. La implementación de esquematización inteligente puede contener una combinación de regiones de esquema controlado por el cliente y el editor. Especifique el texto del titular que se muestra cuando la región de esquema está contraído, por ejemplo, "...", en el `pszBanner` miembro de la <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> estructura. Texto de titular del editor predeterminado para una región oculta es "...".

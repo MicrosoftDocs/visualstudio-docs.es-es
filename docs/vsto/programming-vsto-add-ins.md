@@ -1,9 +1,6 @@
 ---
 title: Programar complementos VSTO
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.Addin
@@ -35,12 +32,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 522a3cbac565e217f0b6525fb6288f5b79908a78
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b3520eb8af160a12de5cb74fa40094004e041c0e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674456"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830656"
 ---
 # <a name="program-vsto-add-ins"></a>Programar complementos VSTO
   Cuando se amplía una aplicación de Microsoft Office mediante la creación de un complemento VSTO, el código se escribe directamente en la clase `ThisAddIn` de su proyecto. Puede usar esta clase para realizar tareas tales como tener acceso al modelo de objetos de la aplicación host de Microsoft Office, personalizar la interfaz de usuario (UI) de la aplicación y exponer objetos del complemento VSTO en otras soluciones de Office.  
@@ -122,15 +119,15 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 |Tarea|Miembro para usar|  
 |----------|-------------------|  
 |Ejecute el código para inicializar el complemento VSTO cuando este se cargue.|Agregue código al método `ThisAddIn_Startup` . Este es el controlador de eventos predeterminado para el evento <xref:Microsoft.Office.Tools.AddInBase.Startup> . Para obtener más información, consulte [eventos en proyectos de Office](../vsto/events-in-office-projects.md).|  
-|Ejecute el código para limpiar los recursos usados por el complemento VSTO antes de que este se descargue.|Agregue código al método `ThisAddIn_Shutdown` . Este es el controlador de eventos predeterminado para el evento <xref:Microsoft.Office.Tools.AddInBase.Shutdown> . Para obtener más información, consulte [eventos en proyectos de Office](../vsto/events-in-office-projects.md). **Nota:** en Outlook, de forma predeterminada el `ThisAddIn_Startup` controlador de eventos no siempre se llama cuando el complemento de VSTO se descarga. Para obtener más información, consulte [eventos en proyectos de Office](../vsto/events-in-office-projects.md).|  
+|Ejecute el código para limpiar los recursos usados por el complemento VSTO antes de que este se descargue.|Agregue código al método `ThisAddIn_Shutdown`. Este es el controlador de eventos predeterminado para el evento <xref:Microsoft.Office.Tools.AddInBase.Shutdown> . Para obtener más información, consulte [eventos en proyectos de Office](../vsto/events-in-office-projects.md). **Nota:**  En Outlook, de forma predeterminada, no siempre se llama al controlador de eventos `ThisAddIn_Startup` cuando el complemento VSTO se descarga. Para obtener más información, consulte [eventos en proyectos de Office](../vsto/events-in-office-projects.md).|  
 |Mostrar un panel de tareas personalizado.|Utilice el campo `CustomTaskPanes` . Para obtener más información, consulte [paneles de tareas personalizados](../vsto/custom-task-panes.md).|  
 |Exponer objetos de un complemento VSTO en otras soluciones de Microsoft Office.|Invalide el método <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> . Para obtener más información, consulte [llamar a código en complementos VSTO desde otras soluciones de Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).|  
-|Personalizar una característica del sistema Microsoft Office implementando una interfaz de extensibilidad.|Invalide el método <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> para que devuelva una instancia de una clase que implemente la interfaz. Para obtener más información, consulte [características de personalización de la interfaz de usuario mediante interfaces de extensibilidad](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md). **Nota:** para personalizar la interfaz de usuario de la cinta de opciones, también puede invalidar el <xref:Microsoft.Office.Tools.AddInBase.CreateRibbonExtensibilityObject%2A> método.|  
+|Personalizar una característica del sistema Microsoft Office implementando una interfaz de extensibilidad.|Invalide el método <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> para que devuelva una instancia de una clase que implemente la interfaz. Para obtener más información, consulte [características de personalización de la interfaz de usuario mediante interfaces de extensibilidad](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md). **Nota:**  Para personalizar la interfaz de usuario de la cinta de opciones, también puede invalidar el método <xref:Microsoft.Office.Tools.AddInBase.CreateRibbonExtensibilityObject%2A>.|  
   
 ### <a name="understand-the-design-of-the-thisaddin-class"></a>Entender el diseño de la clase ThisAddIn  
  En los proyectos que tienen como destino [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], <xref:Microsoft.Office.Tools.AddIn> es una interfaz. La clase `ThisAddIn` se deriva de la clase <xref:Microsoft.Office.Tools.AddInBase> . Esta clase base redirige todas las llamadas a sus miembros a una implementación interna de la interfaz <xref:Microsoft.Office.Tools.AddIn> en [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
   
- En los proyectos de complemento VSTO para Outlook, la `ThisAddIn` clase se deriva de la `Microsoft.Office.Tools.Outlook.OutlookAddIn` clase en proyectos que tienen como destino .NET Framework 3.5 y de <xref:Microsoft.Office.Tools.Outlook.OutlookAddInBase> en los proyectos que tienen como destino el [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Estas clases base proporcionan funciones adicionales para admitir las áreas de formulario. Para obtener más información acerca de las áreas de formulario, consulte [crear áreas de formulario](../vsto/creating-outlook-form-regions.md).  
+ En proyectos de complementos VSTO de Outlook, la clase `ThisAddIn` se deriva de la clase `Microsoft.Office.Tools.Outlook.OutlookAddIn` en proyectos destinados a .NET Framework 3.5, y de la clase <xref:Microsoft.Office.Tools.Outlook.OutlookAddInBase> en proyectos destinados a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Estas clases base proporcionan funciones adicionales para admitir las áreas de formulario. Para obtener más información acerca de las áreas de formulario, consulte [crear áreas de formulario](../vsto/creating-outlook-form-regions.md).  
   
 ## <a name="customize-the-user-interface-of-microsoft-office-applications"></a>Personalizar la interfaz de usuario de aplicaciones de Microsoft Office  
  Puede personalizar mediante programación la interfaz de usuario de las aplicaciones de Microsoft Office mediante un complemento VSTO. Por ejemplo, puede personalizar la cinta de opciones, mostrar un panel de tareas personalizado o crear un área de formulario personalizada en Outlook. Para obtener más información, consulte [personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md).  
@@ -152,8 +149,6 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
  [Llamar a código en complementos VSTO desde otras soluciones de Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [Tutorial: Llamar a código en un complemento de VSTO desde VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)   
  [Personalizar las características de interfaz de usuario mediante interfaces de extensibilidad](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)   
- [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Arquitectura de complementos VSTO](../vsto/architecture-of-vsto-add-ins.md)   
+ [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Escribir código en soluciones de Office](../vsto/writing-code-in-office-solutions.md)  
-  
-  

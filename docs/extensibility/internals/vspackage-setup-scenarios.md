@@ -1,9 +1,6 @@
 ---
 title: Escenarios de instalación de VSPackage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, deployment considerations
@@ -12,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c194588de8dfa8746bb79a8d86bff005d90e7550
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 6bacb7a8226ac9f82987eede32b9df18a103270a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495939"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932949"
 ---
 # <a name="vspackage-setup-scenarios"></a>Escenarios de instalación de VSPackage
 
@@ -39,7 +36,7 @@ Recuento de referencias se produce en el nivel de componente. Por lo tanto, mezc
 
 Por ejemplo, los valores del registro se usan para registrar el VSPackage con el [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] deben conservarse en un componente independiente de uno se usa para registrar el VSPackage con Visual Studio. Archivos compartidos o los valores del registro van en otro componente.
 
-## <a name="scenario-1-shared-vspackage"></a>Escenario 1: Compartido VSPackage
+## <a name="scenario-1-shared-vspackage"></a>Escenario 1: VSPackage compartido
 
 En este escenario, un VSPackage compartido (un archivo binario único que admite varias versiones de Visual Studio se incluye en un paquete de Windows Installer. Registrar con cada versión de Visual Studio se controla mediante las características seleccionables por el usuario. También significa que cuando se asigna para separar las características, cada componente se puede seleccionar individualmente para la instalación o desinstalación, colocar el usuario en el control de integrar el VSPackage en diferentes versiones de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. (Consulte [características de Windows Installer](/windows/desktop/Msi/windows-installer-features) para obtener más información sobre el uso de características en los paquetes de Windows Installer.)
 
@@ -50,7 +47,7 @@ Como se muestra en la ilustración, los componentes compartidos se convierten en
 > [!NOTE]
 > Si la columna de presentación de una característica en 0 lo oculta. Un valor de columna de nivel bajo, como 1, garantiza que siempre se instalará. Para obtener más información, consulte [propiedad INSTALLLEVEL](/windows/desktop/Msi/installlevel) y [tabla de características](/windows/desktop/Msi/feature-table).
 
-## <a name="scenario-2-shared-vspackage-update"></a>Escenario 2: Actualizar de VSPackage compartida
+## <a name="scenario-2-shared-vspackage-update"></a>Escenario 2: Actualizar compartida de VSPackage
 
 En este escenario, se incluye una versión actualizada del instalador de VSPackage en el escenario 1. Para ilustrar la explicación, la actualización agrega compatibilidad para Visual Studio, pero podría también ser una revisión de seguridad más sencilla o paquete de servicio de corrección de errores. Las reglas del instalador de Windows para instalar los componentes más recientes requieren que los componentes sin cambios ya está en el sistema no se vuelven a copiar. En este caso, sobrescriba el componente actualizado Comp_MyVSPackage.dll y permitir que los usuarios a optar por agregar la nueva característica Feat_VS2005 a su componente Comp_VS2005_Reg un sistema con la versión 1.0 ya está presente.
 
@@ -61,7 +58,7 @@ En este escenario, se incluye una versión actualizada del instalador de VSPacka
 
 Este escenario presenta a un nuevo instalador de VSPackage, que aprovecha la compatibilidad del instalador de Windows para las actualizaciones menores. Los usuarios simplemente instalar la versión 1.1 y actualiza la versión 1.0. Sin embargo, no es necesario tener la versión 1.0 en el sistema. El mismo instalador instalará la versión 1.1 en un sistema sin versión 1.0. La ventaja para proporcionar las actualizaciones menores de esta manera es que no es necesario pasar por el trabajo de desarrollo de un instalador de actualización y un instalador de producto completo. Una instalador realiza dos tareas. Una revisión de seguridad o service pack es posible que en su lugar, aproveche las ventajas de las revisiones de Windows Installer. Para obtener más información, consulte [aplicación de revisiones y actualizaciones](/windows/desktop/Msi/patching-and-upgrades).
 
-## <a name="scenario-3-side-by-side-vspackage"></a>Escenario 3: Side-by-Side VSPackage
+## <a name="scenario-3-side-by-side-vspackage"></a>Escenario 3: Paquete de VS Side-by-Side
 
 Este escenario presenta dos instaladores de VSPackage, uno para cada versión de Visual Studio .NET 2003 y Visual Studio. Cada instalador instala un side-by-side o private, VSPackage (es decir, en concreto se compila y se instala una versión concreta de Visual Studio). Cada VSPackage está en su propio componente. Por lo tanto, cada uno de ellos pueden realizarse individualmente con revisiones o mantenimiento de versiones. Dado que la DLL de VSPackage ahora es específica de la versión, es seguro incluir la información de registro en el mismo componente que el archivo DLL.
 
@@ -69,7 +66,7 @@ Este escenario presenta dos instaladores de VSPackage, uno para cada versión de
 
 Cada instalador también incluye código que se comparte entre los dos instaladores. Si el código compartido se instala en una ubicación común, instalar dos archivos .msi se instalará el código compartido una sola vez. El segundo instalador acaba incrementa un recuento de referencias en el componente. El recuento de referencias garantiza que si se desinstala uno de los VSPackages, seguirá siendo el código compartido para el VSPackage del otro. Si el segundo VSPackage se desinstala así, se quitará el código compartido.
 
-## <a name="scenario-4-side-by-side-vspackage-update"></a>Escenario 4: Side-by-Side VSPackage Update
+## <a name="scenario-4-side-by-side-vspackage-update"></a>Escenario 4: Actualización del paquete de VS Side-by-Side
 
 En este escenario, el VSPackage para Visual Studio tuvieron una vulnerabilidad de seguridad y que necesita para realizar una actualización. Como se muestra en el escenario 2, puede crear un nuevo archivo .msi que actualiza una instalación existente para incluir la corrección de seguridad, así como implementar las instalaciones nuevas con la corrección de seguridad ya en su lugar.
 

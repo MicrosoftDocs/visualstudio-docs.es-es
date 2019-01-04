@@ -1,9 +1,6 @@
 ---
 title: Opciones de usuario de la solución (. Archivo suo) | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - .suo files, VSPackages
@@ -17,27 +14,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b96e3ad2ec29402dddc7354df46293b99bac3ec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 51833f22a445916d9b76955893e4ff5c567cf4f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130852"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948951"
 ---
-# <a name="solution-user-options-suo-file"></a>Opciones de usuario de la solución (. Archivo suo)
-El archivo de opciones (.suo) de usuario de solución contiene opciones de la solución por usuario. Este archivo no debe comprobarse para control de código fuente.  
+# <a name="solution-user-options-suo-file"></a>Archivo de opciones de usuario de la solución (.Suo)
+El archivo de opciones (.suo) del usuario de solución contiene opciones de la solución por usuario. Este archivo no debe comprobarse para el control de código fuente.  
   
- El archivo de opciones (.suo) de usuario de solución es un almacenamiento estructurado o compuesta, el archivo almacenado en un formato binario. Guardar información de usuario en secuencias con el nombre de la secuencia que se va a la clave que se usará para identificar la información en el archivo .suo. El archivo de opciones de usuario de solución se usa para almacenar la configuración de preferencias de usuario y se crea automáticamente cuando Visual Studio guarda una solución.  
+ El archivo de opciones (.suo) del usuario de solución es un almacenamiento estructurado o compuesto, el archivo almacenado en un formato binario. Guardar información de usuario en secuencias con el nombre de la secuencia que se va a la clave que se usará para identificar la información en el archivo .suo. El archivo de opciones de usuario de solución se usa para almacenar la configuración de preferencias de usuario y se crea automáticamente cuando Visual Studio guarda una solución.  
   
- Cuando el entorno abre un archivo .suo, enumera todos los VSPackages cargados actualmente. Si implementa un paquete VSPackage la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> interfaz y, a continuación, el entorno llama el <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.LoadUserOptions%2A> método en el VSPackage solicitando a cargar todos los datos desde el archivo .suo.  
+ Cuando el entorno abre un archivo .suo, enumera todos los VSPackages cargados actualmente. Si implementa un paquete VSPackage el <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> interfaz y, después, en el entorno llama a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.LoadUserOptions%2A> método en el VSPackage que se le pide que cargar todos los datos desde el archivo .suo.  
   
- Es responsabilidad del VSPackage saber lo que se transmita por secuencias se hayan podido escribir en el archivo .suo. Para cada flujo que escribió, el VSPackage llama de nuevo en el entorno a través de <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A> para cargar una secuencia concreta identificada por la clave, que es el nombre de la secuencia. El entorno, a continuación, vuelve a llamar a VSPackage para leer esa secuencia concreta pasando el nombre de la secuencia y un `IStream` puntero a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A> método.  
+ Es responsabilidad de VSPackage saber lo que transmite por secuencias se hayan podido escribir en el archivo .suo. Para cada secuencia que escribió, VSPackage vuelve al entorno a través de <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A> para cargar una secuencia concreta que se identifica mediante la clave, que es el nombre de la secuencia. El entorno, a continuación, devuelva la llamada a VSPackage para leer ese flujo concreto pasando el nombre de la secuencia y un `IStream` puntero a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A> método.  
   
- En ese momento, se realiza otra llamada a `LoadUserOptions` para ver si hay otra sección del archivo .suo que debe leerse. Este proceso continúa hasta que todas las secuencias de datos en el archivo .suo han leído y procesados por el entorno.  
+ En ese momento, se realiza otra llamada a `LoadUserOptions` para ver si hay otra sección del archivo .suo que tiene que leerse. Este proceso continúa hasta que todas las secuencias de datos en el archivo .suo han leído y procesados por el entorno.  
   
- Cuando la solución está guardada o cerrada, el entorno llama el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.SavePackageSolutionProps%2A> método con un puntero a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.SaveUserOptions%2A> método. Un `IStream` que contiene la información binaria que se guarde se pasa a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.WriteUserOptions%2A> método, que, a continuación, escribe la información en el archivo .suo y llama el `SaveUserOptions` método nuevo para ver si hay otro flujo de información que se va a escribir en el .suo archivo.  
+ Cuando la solución se guarda o cierra el entorno llama a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.SavePackageSolutionProps%2A> método con un puntero a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.SaveUserOptions%2A> método. Un `IStream` que contiene la información binaria que se guarde se pasa a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.WriteUserOptions%2A> método, que, a continuación, escribe la información en el archivo .suo y llama el `SaveUserOptions` nuevamente para ver si hay otro flujo de información que se va a escribir en el .suo (método) archivo.  
   
- Estos dos métodos, `SaveUserOptions` y `WriteUserOptions`, se llama de forma recursiva para cada flujo de información que se guardará en el archivo .suo, pasando el puntero a `IVsSolutionPersistence`. Se les llama para permitir la escritura de varias secuencias en el archivo .suo de forma recursiva. De esa manera, información del usuario se mantiene con la solución y se garantiza que no existe la próxima vez que se abre la solución.  
+ Estos dos métodos, `SaveUserOptions` y `WriteUserOptions`, se llama de forma recursiva para cada flujo de información se guarde en el archivo .suo, pase el puntero a `IVsSolutionPersistence`. Se denominan de forma recursiva para permitir la escritura de los que el archivo .suo varias secuencias. De esa manera, información de usuario se mantiene con la solución y se garantiza que existe la próxima vez que se abra la solución.  
   
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>   

@@ -1,9 +1,6 @@
 ---
 title: Información general sobre el modelo de objetos de Visio
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 872665a9af220e1b86a3d053254880e3ababa6cd
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 040144b1e18e216ef8ceadbd218cd42ccf7c40f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671409"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848472"
 ---
 # <a name="visio-object-model-overview"></a>Información general sobre el modelo de objetos de Visio
   Para desarrollar soluciones de Office para Microsoft Office Visio, puede interactuar con el modelo de objetos de Visio. Este modelo de objetos está compuesto por clases e interfaces que se proporcionan en el ensamblado de interoperabilidad primario de Visio y que se definen en el espacio de nombres `Microsoft.Office.Interop.Visio`.  
@@ -49,7 +46,7 @@ ms.locfileid: "50671409"
   
 -   Page (objeto)  
   
-### <a name="application-object"></a>Objeto de aplicación  
+### <a name="application-object"></a>Application (objeto)  
  El objeto Microsoft.Office.Interop.Visio.Application representa la aplicación de Visio y es el elemento primario de todos los demás objetos. Sus miembros normalmente son aplicables a Visio en su totalidad. Puede usar las propiedades y métodos de la Microsoft.Office.Interop.Visio.Application y `Microsoft.Office.Interop.Visio.ApplicationSettings` objetos que se va a controlar el entorno de Visio.  
   
  En proyectos de complemento VSTO, puede tener acceso el objeto Microsoft.Office.Interop.Visio.Application utilizando el `Application` campo de la `ThisAddIn` clase. Para obtener más información, consulta [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
@@ -83,5 +80,3 @@ ms.locfileid: "50671409"
  [Soluciones de Visio](../vsto/visio-solutions.md)   
  [Trabajar con documentos de Visio](../vsto/working-with-visio-documents.md)   
  [Trabajar con formas de Visio](../vsto/working-with-visio-shapes.md)  
-  
-  

@@ -2,7 +2,6 @@
 title: Cuadro de diálogo Esquemas XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 0271fa26-2205-49bd-96e0-ae1441571808
 author: gewarren
@@ -10,21 +9,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5357f762d2a7027db92ad1916acb279abdf23157
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: b1f8f4824d18618b40ad4073dc6be0c81d9aba37
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693645"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835213"
 ---
-# <a name="xml-schemas-dialog-box"></a>Cuadro de diálogo de esquemas XML
+# <a name="xml-schemas-dialog-box"></a>Cuadro de diálogo esquemas XML
 
-El **esquemas XML** cuadro de diálogo se usa para seleccionar qué esquemas de lenguaje (XSD) XML definición de esquema para asociar a un documento XML. Podrá seleccionar un esquema de la caché de esquema o especificar un esquema que no está ubicado en la caché. Los esquemas seleccionados se consideran parte de un conjunto de esquemas. IntelliSense y la validación de documentos XML usan el conjunto de esquemas.
+El **esquemas XML** cuadro de diálogo se usa para seleccionar qué esquemas XML esquema definición XSD (lenguaje) van a asociar a un documento XML. Podrá seleccionar un esquema de la caché de esquema o especificar un esquema que no está ubicado en la caché. Los esquemas seleccionados se consideran parte de un conjunto de esquemas. IntelliSense y la validación de documentos XML usan el conjunto de esquemas.
 
-Puede tener acceso a la **esquemas XML** cuadro de diálogo haciendo clic en el **esquemas** botón en la ventana de propiedades de documento, o bien seleccionando **esquemas** desde el **XML** menú.
+Puede tener acceso a la **esquemas XML** cuadro de diálogo haciendo clic en el **esquemas** botón en la ventana Propiedades del documento, o bien seleccionando **esquemas** desde el **XML** menú.
 
 ## <a name="uielement-list"></a>Lista de UIElement
- **Uso**
+ **Use**
 
  Seleccione cómo usar el esquema XML.
 
@@ -44,7 +43,7 @@ Muestra el nombre de archivo del esquema XML.
 
 **Add**
 
-Se abre la **Abrir esquema XSD** cuadro de diálogo que le permite seleccionar otros esquemas y agregarlos al conjunto de esquemas. Cuando se agrega un esquema para el esquema establecido, el **Use** valor de la columna se establece en **utilizar este esquema**.
+Se abre el **Abrir esquema XSD** cuadro de diálogo que le permite seleccionar otros esquemas y agregarlos al conjunto de esquemas. Cuando agrega un esquema para el esquema establecido, el **Use** el valor de columna se establece en **utilizar este esquema**.
 
 **Remove**
 
@@ -53,5 +52,5 @@ Quita el esquema seleccionado actualmente del conjunto de esquemas. Esto supone 
 ## <a name="see-also"></a>Vea también
 
 - [Componentes del Editor XML](../xml-tools/xml-editor-components.md)
-- [Cómo: seleccionar los esquemas XML para usar](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
+- [Cómo: Seleccione los esquemas XML para usar](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
 - [Caché de esquema](../xml-tools/schema-cache.md)

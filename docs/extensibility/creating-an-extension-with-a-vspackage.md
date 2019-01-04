@@ -1,9 +1,6 @@
 ---
 title: Creación de una extensión con un VSPackage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50af15e1c15b5d0b6318c498923229778e8c0169
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 1060dda64fc402e69f7f87601a1643fbabed5507
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500779"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838416"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>Crear una extensión con un VSPackage
 En este tutorial se muestra cómo crear un proyecto de VSIX y agregar un elemento de proyecto de VSPackage. Usaremos el VSPackage para obtener el servicio de Shell de interfaz de usuario con el fin de mostrar un cuadro de mensaje.  
@@ -49,7 +46,7 @@ En este tutorial se muestra cómo crear un proyecto de VSIX y agregar un element
     public sealed class FirstPackage : Package  
     ```  
   
-2.  Vamos a agregar un mensaje que nos permite saber que ha cargado el VSPackage. Usamos el VSPackage `Initialize()` método para hacer esto, ya que puede obtener Visual Studio servicios solo después de que se ha ubicado el VSPackage. (Para obtener más información sobre cómo obtener los servicios, consulte [Cómo: obtener un servicio](../extensibility/how-to-get-a-service.md).) Reemplace el `Initialize()` método de `FirstPackage` con código que obtiene el <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> de servicio, obtiene el <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interfaz y llama a su <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A> método.  
+2.  Vamos a agregar un mensaje que nos permite saber que ha cargado el VSPackage. Usamos el VSPackage `Initialize()` método para hacer esto, ya que puede obtener Visual Studio servicios solo después de que se ha ubicado el VSPackage. (Para obtener más información sobre cómo obtener los servicios, vea [Cómo: Obtener un servicio](../extensibility/how-to-get-a-service.md).) Reemplace el `Initialize()` método de `FirstPackage` con código que obtiene el <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> de servicio, obtiene el <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interfaz y llama a su <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A> método.  
   
     ```csharp  
     protected override void Initialize()  

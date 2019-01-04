@@ -1,9 +1,6 @@
 ---
 title: Las jerarquías y selección | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, hierarchies
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f5e08fad921d0d3568e05ba3b2ce2ebd5fb1ea5
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: be2d4745a4d11dd10c299637487a6f69488a4242
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510457"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874114"
 ---
 # <a name="hierarchies-and-selection"></a>Las jerarquías y selección
 Cuando se personalizan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], debe entender cómo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] controla las jerarquías como los proyectos y cómo usa el contexto de selección para determinar lo que se muestra al usuario. En esta sección se explica los conceptos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jerarquías y selección.  

@@ -1,9 +1,6 @@
 ---
 title: Información general sobre propiedades de documento personalizadas
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9fcd250f75e21d24409bb7b17764d9d18e7d6c7b
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: bd76957844008975f67c6c1cb504aa0388b9e91b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441449"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936898"
 ---
 # <a name="custom-document-properties-overview"></a>Información general sobre propiedades de documento personalizadas
 

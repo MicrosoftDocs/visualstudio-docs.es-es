@@ -2,7 +2,6 @@
 title: Vista Gráfico del Diseñador de esquemas XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 603c0849d22f658800776e8a1e4cb1f429990e00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d7623198cc31e8ee955f00cd06b7ca91f8d32a31
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894630"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826999"
 ---
 # <a name="graph-view"></a>Vista de gráfico
 
@@ -37,7 +36,7 @@ La vista Gráfico proporciona una representación gráfica de los nodos de esque
 
  ![Diseñador XSD; vista Gráfico](../xml-tools/media/xsdgraphviewwatermark.gif)
 
- Si el conjunto de esquemas tiene errores, se muestra el texto siguiente al final de la lista: "Use la lista de errores para ver y corregir los errores en el conjunto de esquemas".
+ Si el conjunto de esquemas tiene errores, se mostrará el texto siguiente al final de la lista: "Usar la lista de errores para ver y corregir los errores en el conjunto".
 
 ## <a name="breadcrumb-bar"></a>Barra de ruta de navegación
 
@@ -103,16 +102,16 @@ La vista Gráfico proporciona una representación gráfica de los nodos de esque
 
 |Opción|Descripción|
 |-|-----------------|
-|**Mostrar vista inicio**|Se activa en el [iniciar vista de](../xml-tools/start-view.md). Esta vista puede obtenerse mediante el método abreviado de teclado: **Ctrl**+**1**.|
-|**Mostrar vista modelo de contenido**|Se activa en el [vista modelo de contenido](../xml-tools/content-model-view.md). Esta vista puede obtenerse mediante el método abreviado de teclado: **Ctrl**+**2**.|
-|**Mostrar vista Gráfico**|Se activa en el [vista gráfica](../xml-tools/graph-view.md). Esta vista puede obtenerse mediante el método abreviado de teclado: **Ctrl**+**3**.|
+|**Mostrar vista inicio**|Se activa en el [iniciar vista de](../xml-tools/start-view.md). Esta vista puede obtenerse mediante el método abreviado de teclado: **CTRL**+**1**.|
+|**Mostrar vista modelo de contenido**|Se activa en el [vista modelo de contenido](../xml-tools/content-model-view.md). Esta vista puede obtenerse mediante el método abreviado de teclado: **CTRL**+**2**.|
+|**Mostrar vista Gráfico**|Se activa en el [vista gráfica](../xml-tools/graph-view.md). Esta vista puede obtenerse mediante el método abreviado de teclado: **CTRL**+**3**.|
 |**Borrar área de trabajo**|Borra el área de trabajo y la superficie de diseño.|
 |**Quitar área de trabajo**|Quita los nodos seleccionados del área de trabajo y de la superficie de diseño.|
 |**Quitar todo salvo la selección del área de trabajo**|Quita los nodos que no están seleccionados del área de trabajo y de la superficie de diseño. Esta opción está habilitada en las vistas Modelo de contenido y Gráfico.|
-|**Izquierda a derecha**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de izquierda a derecha. Esta opción puede obtenerse mediante el método abreviado de teclado: **Alt**+**flecha derecha**.|
-|**De derecha a izquierda**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de derecha a izquierda. Esta opción puede obtenerse mediante el método abreviado de teclado: **Alt**+**flecha izquierda**.|
-|**Arriba a abajo**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de arriba abajo. Esta opción puede obtenerse mediante el método abreviado de teclado: **Alt**+**flecha abajo**.|
-|**Orden descendente**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de abajo arriba. Esta opción puede obtenerse mediante el método abreviado de teclado: **Alt**+**arriba**.|
+|**Izquierda a derecha**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de izquierda a derecha. Esta opción puede obtenerse mediante el método abreviado de teclado: **ALT**+**flecha derecha**.|
+|**De derecha a izquierda**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de derecha a izquierda. Esta opción puede obtenerse mediante el método abreviado de teclado: **ALT**+**flecha izquierda**.|
+|**Arriba a abajo**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de arriba abajo. Esta opción puede obtenerse mediante el método abreviado de teclado: **ALT**+**flecha abajo**.|
+|**Orden descendente**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de abajo arriba. Esta opción puede obtenerse mediante el método abreviado de teclado: **ALT**+**arriba**.|
 
 ## <a name="panscroll"></a>Panorámica/desplazamiento
 

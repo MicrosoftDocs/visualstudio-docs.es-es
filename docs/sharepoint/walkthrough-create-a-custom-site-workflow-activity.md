@@ -1,13 +1,8 @@
 ---
-title: 'Tutorial: Crear una actividad de flujo de trabajo de sitio personalizado | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Crear una actividad de flujo de trabajo de sitio personalizado | Documentos de Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2adb6dd8788027d89a743518adee4425e424ce60
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e828926b5ddfc70f64f729849aaec99dbdade103
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894175"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951818"
 ---
-# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Tutorial: Crear una actividad de flujo de trabajo de sitio personalizado
+# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Tutorial: Crear una actividad de flujo de trabajo de sitio personalizada
   En este tutorial se muestra cómo crear una actividad personalizada para un flujo de trabajo de nivel de sitio mediante [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Los flujos de trabajo de nivel de sitio se aplican a todo el sitio, no solo en una lista en el sitio). La actividad personalizada crea una lista de anuncios de copia de seguridad y, a continuación, copia el contenido de la lista de anuncios en él.  
   
  En este tutorial se muestran las siguientes tareas:  
@@ -128,6 +123,5 @@ ms.locfileid: "49894175"
 5.  En la barra Inicio rápido, elija el **copia de seguridad de los anuncios** vínculo. Tenga en cuenta que todos los anuncios que se encuentran en el **anuncios** lista se han copiado a esta lista nueva.  
   
 ## <a name="see-also"></a>Vea también
- [Cómo: crear un receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)   
+ [Cómo: Crear un receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)   
  [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

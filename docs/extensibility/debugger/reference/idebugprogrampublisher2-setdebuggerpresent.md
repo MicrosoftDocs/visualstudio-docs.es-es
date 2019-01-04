@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramPublisher2::SetDebuggerPresent | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramPublisher2::SetDebuggerPresent
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e53fa8c1adcf9e66b06fb2b3c286c74dbc4ab7dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 76ec4bd9d1acd3ba6e780c36995c92c9b8b4fe07
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942119"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900918"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
 Indica que el publicador de programa que un depurador está presente y en ejecución.  
@@ -28,14 +25,14 @@ Indica que el publicador de programa que un depurador está presente y en ejecuc
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT SetDebuggerPresent(  
-   BOOL fDebuggerPresent  
+HRESULT SetDebuggerPresent(  
+   BOOL fDebuggerPresent  
 );  
 ```  
   
 ```csharp  
-int SetDebuggerPresent(  
-   int fDebuggerPresent  
+int SetDebuggerPresent(  
+   int fDebuggerPresent  
 );  
 ```  
   

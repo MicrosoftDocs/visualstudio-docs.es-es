@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 930d7ededf4a54aaf75516c59001eaccf38c210c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 436b327e090d11d6e0e54f1a908e3e871d2b846a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896775"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857126"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Navegar por un modelo en el código del programa y actualizarlo
 
@@ -192,7 +191,7 @@ using (Transaction t =
 
 - Establecer las propiedades de un nuevo elemento, especialmente la propiedad para el que `IsName` es true en el DslDefinition. Esta marca marca la propiedad que sirve para identificar el elemento de forma única dentro de su propietario. En este caso, la propiedad de nombre tiene dicha marca.
 
-- La definición de DSL de este DSL debe haberse cargada en el Store. Si está escribiendo una extensión como un comando de menú, normalmente será ya es true. En otros casos, puede cargar el modelo en el Store, o explícitamente usar <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> para cargarlo. Para obtener más información, consulte [Cómo: abrir un modelo desde un archivo de código de programa](../modeling/how-to-open-a-model-from-file-in-program-code.md).
+- La definición de DSL de este DSL debe haberse cargada en el Store. Si está escribiendo una extensión como un comando de menú, normalmente será ya es true. En otros casos, puede cargar el modelo en el Store, o explícitamente usar <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> para cargarlo. Para obtener más información, vea [Cómo: Abrir un modelo desde un archivo de código de programa](../modeling/how-to-open-a-model-from-file-in-program-code.md).
 
   Cuando se crea un elemento de esta manera, una forma se crea automáticamente (si el DSL no tiene un diagrama). Aparece en una ubicación asignada automáticamente, con la forma predeterminada, el color y otras características. Si desea controlar dónde y cómo aparece la forma asociada, vea [creación de un elemento y su forma](#merge).
 
@@ -475,7 +474,7 @@ partial class MyDiagram
  También puede establecer el color y otras propiedades expuestas de conectores con este método.
 
 ### <a name="use-transactions"></a>Usar transacciones
- Formas, conectores y diagramas son subtipos de <xref:Microsoft.VisualStudio.Modeling.ModelElement> y en vivo en el Store. Por lo tanto, debe realizar cambios en ellos solo dentro de una transacción. Para obtener más información, consulte [Cómo: usar transacciones para actualizar el modelo](../modeling/how-to-use-transactions-to-update-the-model.md).
+ Formas, conectores y diagramas son subtipos de <xref:Microsoft.VisualStudio.Modeling.ModelElement> y en vivo en el Store. Por lo tanto, debe realizar cambios en ellos solo dentro de una transacción. Para obtener más información, vea [Cómo: Usar transacciones para actualizar el modelo](../modeling/how-to-use-transactions-to-update-the-model.md).
 
 ##  <a name="docdata"></a> Vista de documento y los datos del documento
  ![Diagrama de clases de tipos de diagrama estándar](../modeling/media/dsldiagramsanddocs.png)

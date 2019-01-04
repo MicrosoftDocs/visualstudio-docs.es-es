@@ -1,9 +1,6 @@
 ---
 title: Comenzar a desarrollar extensiones de Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 09/18/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - getting started, Visual Studio integration
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eaae915b8e201b5596bdd435c432ffccfa9ad8c3
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 55c0e4b1c8df4ed0198c2c346f2909a4984c5e9b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739924"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830825"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Comenzar a desarrollar extensiones de Visual Studio
 

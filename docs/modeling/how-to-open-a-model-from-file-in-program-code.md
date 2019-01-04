@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Abrir un modelo desde un archivo en el código del programa'
+title: Procedimiento Abrir un modelo desde un archivo en el código del programa
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,15 +8,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 18cad086419be13a666d4eddbf454885c9cf9c36
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 52142da504b6dc2e7533a34f381a1243d44a74a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812496"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938075"
 ---
-# <a name="how-to-open-a-model-from-file-in-program-code"></a>Cómo: Abrir un modelo desde un archivo en el código del programa
+# <a name="how-to-open-a-model-from-file-in-program-code"></a>Procedimiento Abrir un modelo desde un archivo en el código del programa
 Puede abrir los modelos DSL en cualquier aplicación.
 
  Desde una extensión de Visual Studio, puede usar ModelBus para este propósito. ModelBus proporciona un mecanismo estándar para hacer referencia a un modelo o elementos en un modelo y para buscar el modelo si se ha movido. Para obtener más información, consulte [integrar modelos utilizando Modelbus de Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
@@ -42,7 +41,7 @@ Puede abrir los modelos DSL en cualquier aplicación.
 
     -   Si no ve esto en el **.NET** pestaña en el **agregar referencias** cuadro de diálogo, haga clic en el **examinar** pestaña y vaya a `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.
 
--   El ensamblado DSL, que encontrará en la carpeta bin del proyecto DSL. Su nombre suele tener el formato: *suempresa*. *Convertirá*`.Dsl.dll`.
+-   El ensamblado DSL, que encontrará en la carpeta bin del proyecto DSL. Su nombre es normalmente del formulario: *Suempresa*. *Convertirá*`.Dsl.dll`.
 
 ## <a name="important-classes-in-the-dsl"></a>Clases importantes en el DSL
  Antes de poder escribir el código que lee su DSL, debe saber los nombres de algunas de las clases generadas por su DSL. En la solución DSL, abra el **Dsl** del proyecto y busque en el **GeneratedCode** carpeta. Como alternativa, haga doble clic en el ensamblado del DSL en el proyecto **referencias**y abra el espacio de nombres DSL **Examinador de objetos**.

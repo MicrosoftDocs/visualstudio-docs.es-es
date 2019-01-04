@@ -1,29 +1,28 @@
 ---
-title: 'Diseñador de flujo de trabajo - Cómo: definir y consumir delegados de actividad'
+title: 'Diseñador de flujo de trabajo - Cómo: Definir y consumir a delegados de actividad'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 32546f551972cf97779e0828d8c47c9c892d39bf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 95aede6217bca263be7edd7440cc5e9bb23e25ab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916367"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908467"
 ---
-# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Definir y consumir delegados de actividad en el Diseñador de flujo de trabajo
+# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Procedimiento Definir y usar delegados de actividad en el Diseñador de flujo de trabajo
 
 .NET framework 4.5 incluye un diseñador de out-of-box para el <xref:System.Activities.Statements.InvokeDelegate> actividad. Este diseñador se puede usar para asignar delegados a la actividad que se derivan de <xref:System.Activities.ActivityDelegate>, como <xref:System.Activities.ActivityAction> o <xref:System.Activities.ActivityFunc%601>.
 
 ## <a name="define-an-activity-delegate"></a>Definir un delegado de actividad
 
-1. En Visual Studio, seleccione **archivo** > **New** > **proyecto**.
+1. En Visual Studio, seleccione **Archivo** > **Nuevo** > **Proyecto**.
 
 2. En el **nuevo proyecto** cuadro de diálogo, seleccione el **flujo de trabajo** categoría de la izquierda y, a continuación, seleccione el **aplicación de consola de flujos de trabajo** plantilla de proyecto. Denomine el proyecto (si lo desea) y haga clic en **Aceptar**.
 

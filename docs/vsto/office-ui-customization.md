@@ -1,9 +1,6 @@
 ---
 title: Personalización de la interfaz de usuario de Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 48c7fe1948231f88aba8309d6d06186848d32455
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f776fc7972272804adaf6fe4af8f7e3f3c0edc53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836773"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924832"
 ---
 # <a name="office-ui-customization"></a>Personalización de la interfaz de usuario de Office
   Puede personalizar la interfaz de usuario (UI) de las aplicaciones de Microsoft Office mediante el uso de las herramientas de desarrollo de Office en Visual Studio. En este tema se describen las características de la interfaz de usuario que se pueden personalizar en las secciones siguientes:  
@@ -96,7 +93,7 @@ ms.locfileid: "49836773"
  Para obtener más información, consulte [elementos Host y hospedar información general sobre controles](../vsto/host-items-and-host-controls-overview.md) y [controles de información general sobre documentos de Office de formularios de Windows forms](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
 ##  <a name="Shortcut"></a> Menús contextuales  
- Cuando hace clic en un documento o una ventana de aplicación, se muestra un menú contextual. Puede establecer que aparezca un menú contextual después de que tenga lugar un evento, como, por ejemplo, cuando un usuario hace clic con el botón derecho en un documento, libro o control host. Puede agregar diversos comandos de menú o controles a un menú contextual. Cree menús contextuales mediante XML. Si agrega un **cinta (XML)** elemento al proyecto de Office, puede agregar XML al archivo XML de cinta de opciones para crear menús contextuales. Para obtener más información sobre cómo usar XML para crear menús contextuales, vea [Cómo: agregar comandos a menús contextuales](../vsto/how-to-add-commands-to-shortcut-menus.md).  
+ Cuando hace clic en un documento o una ventana de aplicación, se muestra un menú contextual. Puede establecer que aparezca un menú contextual después de que tenga lugar un evento, como, por ejemplo, cuando un usuario hace clic con el botón derecho en un documento, libro o control host. Puede agregar diversos comandos de menú o controles a un menú contextual. Cree menús contextuales mediante XML. Si agrega un **cinta (XML)** elemento al proyecto de Office, puede agregar XML al archivo XML de cinta de opciones para crear menús contextuales. Para obtener más información sobre cómo usar XML para crear menús contextuales, vea [Cómo: Agregar comandos a menús contextuales](../vsto/how-to-add-commands-to-shortcut-menus.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Información general de la cinta de opciones](../vsto/ribbon-overview.md)   
@@ -105,8 +102,6 @@ ms.locfileid: "49836773"
  [Crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md)   
  [Paneles de tareas personalizados](../vsto/custom-task-panes.md)   
  [Usar controles WPF en soluciones de Office](../vsto/using-wpf-controls-in-office-solutions.md)   
- [Cómo: mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)   
- [Cómo: agregar en Mostrar errores de interfaz de usuario](../vsto/how-to-show-add-in-user-interface-errors.md)   
- [Tutorial: Recopilar datos mediante un formulario de Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
-  
-  
+ [Cómo: Mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)   
+ [Cómo: Mostrar errores de interfaz de usuario del complemento](../vsto/how-to-show-add-in-user-interface-errors.md)   
+ [Tutorial: Recopilación de datos mediante un formulario de Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  

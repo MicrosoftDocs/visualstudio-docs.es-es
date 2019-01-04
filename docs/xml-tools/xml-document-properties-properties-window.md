@@ -2,7 +2,6 @@
 title: Propiedades de documentos XML, Ventana Propiedades
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7c29a6e106381e23007f8cb3d899cb3b3c0e387
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a89e6f12cb3e061abc4ebbe30cfe8d3a92138df6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693570"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913315"
 ---
 # <a name="xml-document-properties-properties-window"></a>Propiedades del documento XML, ventana Propiedades
 
@@ -30,7 +29,7 @@ El **propiedades** ventana proporciona información básica sobre el documento q
 
  **Entrada**
 
- El documento de entrada asociado con la hoja de estilos XSLT. Lo utiliza el **ShowXSLT salida** comando. Un documento se puede seleccionar mediante el botón Examinar (**...** ) botón.
+ El documento de entrada asociado con la hoja de estilos XSLT. Está usando el **ShowXSLT salida** comando. Se puede seleccionar un documento mediante el examen (**...** ) botón.
 
  Esta propiedad solo está visible cuando hay un archivo XSLT activo en ese momento en la ventana del editor.
 
@@ -42,15 +41,15 @@ El **propiedades** ventana proporciona información básica sobre el documento q
 
  **Esquemas**
 
- Los esquemas que se utilizan en la validación. El botón abre la **esquemas XSD** cuadro de diálogo, que se puede usar para seleccionar los esquemas que se va a usar.
+ Los esquemas que se utilizan en la validación. El botón abre el **esquemas XSD** cuadro de diálogo que puede usarse para seleccionar los esquemas que se va a usar.
 
  También puede introducir la ruta a los esquemas. Si se especifican varios esquemas, cada una de las rutas debe ir entre comillas dobles.
 
  **Hoja de estilos**
 
- El archivo XSLT que se utiliza para transformar el documento cuando el **Mostrar resultado XSLT** se utiliza el comando. Si este campo está en blanco cuando la **Mostrar resultado XSLT** es utilizar el comando, el editor utiliza el valor proporcionado en el `xml-stylesheet` procesar instrucciones del documento, o se le pide el nombre de archivo.
+ El archivo XSLT que se utiliza para transformar el documento cuando el **Mostrar resultado XSLT** se usa el comando. Si este campo está en blanco cuando el **Mostrar resultado XSLT** es utilizar el comando, el editor utiliza el valor proporcionado en el `xml-stylesheet` procesamiento de instrucciones de documento, o bien le pedirá el nombre de archivo.
 
- Al editar un archivo XSLT, esta propiedad puede utilizarse para especificar que debe ser una hoja de estilos diferente cuando usa el **Mostrar resultado XSLT** o **depurar XSLT** comando está seleccionado. Por ejemplo, podría hacer esto cuando edita una hoja de estilos que se incluye en una hoja de estilos principal.
+ Al editar un archivo XSLT, esta propiedad puede utilizarse para especificar que debe ser una hoja de estilos diferentes cuando usa el **Mostrar resultado XSLT** o **depurar XSLT** comando está seleccionado. Por ejemplo, podría hacer esto cuando edita una hoja de estilos que se incluye en una hoja de estilos principal.
 
 ## <a name="see-also"></a>Vea también
 

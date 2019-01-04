@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0127bac6ca74be626f9ce22fb60ad5258ae6c3c9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e6c790677ea49ad784e7ff5d48326a1d5e216ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822130"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986172"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Ampliar DSL mediante MEF
 
@@ -249,7 +248,7 @@ namespace MyMefExtension
 
 Un controlador de gestos puede tratar con objetos que se arrastran al diagrama desde cualquier lugar, dentro o fuera de Visual Studio. En el siguiente ejemplo permite al usuario arrastrar archivos desde el Explorador de Windows al diagrama. Crea los elementos que contienen los nombres de archivo.
 
-Puede escribir controladores para tratar con arrastra desde otros modelos DSL y modelos UML. Para obtener más información, consulte [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md).
+Puede escribir controladores para tratar con arrastra desde otros modelos DSL y modelos UML. Para obtener más información, vea [Cómo: Agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
 ```csharp
 using System.ComponentModel.Composition;
@@ -378,5 +377,5 @@ namespace MefExtension
 
 - [Suministro de extensiones de Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
 - [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)
-- [Cómo: Agregar un controlador para arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Cómo: Agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [La validación en los lenguajes específicos de dominio](../modeling/validation-in-a-domain-specific-language.md)

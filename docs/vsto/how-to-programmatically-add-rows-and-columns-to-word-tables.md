@@ -1,9 +1,6 @@
 ---
 title: Procedimiento Agregar filas y columnas a las tablas de Word mediante programación
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 55a755ccdd7f14af5a38fc516cdb9f76e936e10d
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 539cb8311e59d43325091fd4ff0cd54e5838e854
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804583"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909091"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Procedimiento Agregar filas y columnas a las tablas de Word mediante programación
   En una tabla de Microsoft Office Word, las celdas se organizan en filas y columnas. Puede usar el método <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> del objeto <xref:Microsoft.Office.Interop.Word.Rows> para agregar filas a la tabla y el método <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> del objeto <xref:Microsoft.Office.Interop.Word.Columns> para agregar columnas.  
@@ -82,5 +79,3 @@ ms.locfileid: "53804583"
  [Cómo: Crear tablas de Word mediante programación](../vsto/how-to-programmatically-create-word-tables.md)   
  [Cómo: Agregar texto y formato a celdas de tablas de Word mediante programación](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
  [Cómo: Rellenar tablas de Word con propiedades de documento mediante programación](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)  
-  
-  

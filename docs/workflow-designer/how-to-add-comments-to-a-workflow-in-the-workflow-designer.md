@@ -1,9 +1,8 @@
 ---
-title: 'Diseñador de flujo de trabajo - Cómo: agregar comentarios a un flujo de trabajo'
+title: 'Diseñador de flujo de trabajo - Cómo: Agregar comentarios a un flujo de trabajo'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.Annotations.Annotation.UI
 - Annotation
@@ -13,14 +12,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 43b17390f077238a6874784f186eb8add3819f6d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2f440102f1a155f179273f145adc58be54c275e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883311"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882794"
 ---
-# <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Agregar comentarios a un flujo de trabajo en el Diseñador de flujo de trabajo
+# <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Procedimiento Agregar comentarios a un flujo de trabajo en el Diseñador de flujo de trabajo
 
 Para facilitar la creación de flujos de trabajo mayores y más complicados, .NET Framework 4.5 permite al desarrollador agregar anotaciones a los siguientes tipos de elemento en el diseñador:
 

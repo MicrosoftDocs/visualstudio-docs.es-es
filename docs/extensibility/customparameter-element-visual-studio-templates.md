@@ -1,6 +1,5 @@
 ---
 title: CustomParameter (elemento) (plantillas de Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2efb89f53244f2a14031ef386021e83c48b5048c
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: fcf6c82298d3ce322214b96ea638c2201e3da2d3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561283"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851529"
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>CustomParameter (elemento) (plantillas de Visual Studio)
 Contiene un nombre de parámetro personalizado y un valor que se usará cuando se crea un proyecto o elemento de la plantilla.  

@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: proporcionar el contexto para los editores | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Proporcionar contexto para los editores | Documentos de Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - provide context
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 848778506bdea1b7bf61b6a94a1fb14908a7b930
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8dec051aae8c5693d18a5cab302714fdf152f8a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908959"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909917"
 ---
-# <a name="how-to-provide-context-for-editors"></a>Cómo: proporcionar el contexto para los editores
+# <a name="how-to-provide-context-for-editors"></a>Procedimiento Proporcionar contexto para los editores
 Para un editor, el contexto está activo sólo cuando el editor tiene el foco o tenía el foco antes de que el foco se ha movido a una ventana de herramientas. Puede proporcionar contexto para un editor, realice las siguientes tareas:  
   
 1. Crear un contenedor de contextos.  

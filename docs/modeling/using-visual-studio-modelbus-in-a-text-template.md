@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8aed2920e7be177fdbccc9b71796e58cf103e846
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 69884d3dd52f2aaab04dac8f32f18d286f5929af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057599"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828243"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Usar ModelBus de Visual Studio en plantillas de texto
 Si escribe plantillas de texto que leer un modelo que contiene las referencias de ModelBus de Visual Studio, es posible que desee resolver las referencias para obtener acceso a los modelos de destino. En ese caso, tendrá que adaptar las plantillas de texto y los lenguajes específicos de dominio que se hace referencia (DSL):
@@ -160,7 +159,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 -   Use `this.ModelBus` para obtener acceso a ModelBus.
 
-## <a name="walkthrough-testing-a-text-template-that-uses-modelbus"></a>Tutorial: Probar una plantilla de texto que usa ModelBus
+## <a name="walkthrough-testing-a-text-template-that-uses-modelbus"></a>Tutorial: Prueba de una plantilla de texto que usa ModelBus
  En este tutorial, siga estos pasos:
 
 1.  Construir dos DSL. Un DSL, la *consumidor*, tiene un `ModelBusReference` propiedad que puede hacer referencia a la línea ADSL, el *proveedor*.
@@ -181,7 +180,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 2. En el diagrama de definición de DSL, haga clic en una parte en blanco del diagrama que no se encuentra en la parte superior y, a continuación, haga clic en **habilitar Modelbus**.
 
-   -   Si no ve **habilitar Modelbus**, debe descargar e instalar la extensión ModelBus de VMSDK. Encuéntrela en el sitio VMSDK: [SDK de visualización y modelado](http://go.microsoft.com/fwlink/?LinkID=185579).
+   -   Si no ve **habilitar Modelbus**, debe descargar e instalar la extensión ModelBus de VMSDK. Puede encontrarlo en el sitio VMSDK: [SDK de modelado y](http://go.microsoft.com/fwlink/?LinkID=185579).
 
 3. En el **habilitar Modelbus** cuadro de diálogo, seleccione **exponer este DSL a ModelBus**y, a continuación, haga clic en **Aceptar**.
 
@@ -211,7 +210,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
     `<MefComponent>|T4ModelBusAdapter|</MefComponent>`
 
-7. En el `T4ModelBusAdapter` proyecto, agregue una referencia a: **Microsoft.VisualStudio.TextTemplating.Modeling.11.0**
+7. En el `T4ModelBusAdapter` del proyecto, agregue una referencia al: **Microsoft.VisualStudio.TextTemplating.Modeling.11.0**
 
 8. Abra T4ModelBusAdapter\AdapterManager.tt:
 

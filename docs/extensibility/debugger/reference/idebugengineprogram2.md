@@ -1,9 +1,6 @@
 ---
-title: IDebugEngineProgram2 | Documentos de Microsoft
-ms.custom: ''
+title: IDebugEngineProgram2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngineProgram2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff075605371d39f9d3ff04df01c7022c52e809ef
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 33f1d88eaa7fe6cce34f4b386998ecc68cfe4953
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112228"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934484"
 ---
 # <a name="idebugengineprogram2"></a>IDebugEngineProgram2
 Esta interfaz proporciona compatibilidad con la depuración multiproceso.  
@@ -43,16 +40,16 @@ IDebugEngineProgram2 : IUnknown
 |Método|Descripción|  
 |------------|-----------------|  
 |[Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)|Detiene todos los subprocesos que se ejecutan en este programa.|  
-|[WatchForThreadStep](../../../extensibility/debugger/reference/idebugengineprogram2-watchforthreadstep.md)|Supervisa la ejecución (o detener ver ejecución) que se produzca en el subproceso especificado.|  
-|[WatchForExpressionEvaluationOnThread](../../../extensibility/debugger/reference/idebugengineprogram2-watchforexpressionevaluationonthread.md)|Permite la evaluación de expresiones que se produzca en el subproceso determinado, incluso si se detiene el programa (o no permite).|  
+|[WatchForThreadStep](../../../extensibility/debugger/reference/idebugengineprogram2-watchforthreadstep.md)|Supervisa la ejecución (o Detener ejecución inspeccionando) que se produzca en el subproceso especificado.|  
+|[WatchForExpressionEvaluationOnThread](../../../extensibility/debugger/reference/idebugengineprogram2-watchforexpressionevaluationonthread.md)|Permite la evaluación de expresiones que se produzca en el subproceso determinado, incluso si se detiene el programa (o impide).|  
   
 ## <a name="remarks"></a>Comentarios  
- Visual Studio llama a esta interfaz en respuesta a una [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) eventos y establecer los Estados "Inspección de paso de subproceso" y "Inspección para la expresión de evaluación en subproceso" del programa. [Detener](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) se llama cada vez que el programa se va a detener; este método da al programa la oportunidad de terminar todos los subprocesos.  
+ Visual Studio llama a esta interfaz en respuesta a una [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) eventos y establecer los Estados "Watch para subprocesos paso" y "Watch para expresión de evaluación en el subproceso" del programa. [Detener](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) se llama cada vez que el programa se detenga; este método da al programa la oportunidad de finalizar todos los subprocesos.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   

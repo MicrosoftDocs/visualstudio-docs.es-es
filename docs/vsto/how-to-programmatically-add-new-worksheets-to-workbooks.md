@@ -1,9 +1,6 @@
 ---
 title: Procedimiento Agregar nuevas hojas de cálculo a libros mediante programación
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7d5750bebc4b58305133ae762bb6cb52e0d37e62
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 0c5cfd48cf65ea8eed18606377cde2092ddaf302
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53805031"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867675"
 ---
 # <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>Procedimiento Agregar nuevas hojas de cálculo a libros mediante programación
   Puede crear una hoja de cálculo mediante programación y, a continuación, agregarla a la colección de hojas de cálculo del libro.  
@@ -56,5 +53,3 @@ ms.locfileid: "53805031"
  [Automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md)   
  [Acceso global a objetos en los proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

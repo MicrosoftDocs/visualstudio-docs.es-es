@@ -1,9 +1,6 @@
 ---
 title: Menus (elemento) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Menus
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0bfb702b9465ee4d00547f5d965bfbaae18742b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: cca8887a9daf79ef2479052a6d9fcfd1efa12b31
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637635"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925607"
 ---
 # <a name="menus-element"></a>Menus (elemento)
 Define todos los menús y barras de herramientas que implementa un paquete VSPackage.  

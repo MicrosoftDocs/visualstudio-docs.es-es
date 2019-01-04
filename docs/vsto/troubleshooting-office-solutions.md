@@ -1,9 +1,6 @@
 ---
 title: Solucionar problemas de soluciones de Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9c2997e199699bbae30e5ea02c9be400eb8250fc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8bc018e104ff06671f1012b1e2e1db4eaa62587e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673933"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926559"
 ---
 # <a name="troubleshoot-office-solutions"></a>Solucionar problemas de soluciones de Office
   En esta sección se ofrecen sugerencias para resolver problemas comunes que pudieran surgir al crear soluciones mediante las herramientas de desarrollo de Office en Visual Studio.  
@@ -31,7 +28,7 @@ ms.locfileid: "35673933"
  [Solución de problemas de errores en las soluciones de Office](../vsto/troubleshooting-errors-in-office-solutions.md)  
  Describe los problemas comunes que pueden surgir al diseñar, ejecutar y probar soluciones de Office en Visual Studio.  
   
- [Cómo: volver a habilitar un complemento de VSTO que se ha deshabilitado](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)  
+ [Cómo: Volver a habilitar un complemento de VSTO que se ha deshabilitado](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)  
  Describe cómo volver a habilitar un complemento de VSTO que se ha deshabilitado parcial o totalmente.  
   
  [Soporte técnico adicional para errores en soluciones de Office](../vsto/additional-support-for-errors-in-office-solutions.md)  
@@ -52,5 +49,3 @@ ms.locfileid: "35673933"
   
  [Tareas comunes en la programación de Office](../vsto/common-tasks-in-office-programming.md)  
  Muestra preguntas frecuentes sobre la programación de soluciones de Office y proporciona vínculos a temas que pueden ayudar a resolver problemas habituales.  
-  
-  

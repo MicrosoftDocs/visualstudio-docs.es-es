@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Interceptar un clic en una forma o decorador'
+title: Procedimiento Interceptar un clic en una forma o un elemento Decorator
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +10,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0a8af35d9edbb28c6b357149586fe7015858f4f0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d71cb172929fd9d213c0f09be21c1a844acf4462
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876534"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892751"
 ---
-# <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Cómo: Interceptar un clic en una forma o decorador
+# <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Procedimiento Interceptar un clic en una forma o un elemento Decorator
 Los procedimientos siguientes muestran cómo interceptar un clic en una forma o un elemento decorator de icono. Se puede interceptar clics, hace doble clic en, se arrastra, y otras gestos y hacer que el elemento responda.
 
 ## <a name="to-intercept-clicks-on-shapes"></a>Para interceptar los clics en las formas

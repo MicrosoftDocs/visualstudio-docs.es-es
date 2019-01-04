@@ -2,7 +2,6 @@
 title: 'Inicio rápido: Análisis de código para C/C++'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
@@ -12,12 +11,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3aefc42e77c6ccaf14a426a26e12b81b49bb5632
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 00dedc25185dfc3a9f12ba645205ce47925003df
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818775"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825206"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>Inicio rápido: Análisis de código para C/C++
 
@@ -111,9 +110,9 @@ La característica de seguimiento de elemento de trabajo permite registrar error
 
 Puedes buscar en las listas largas de mensajes de advertencia y filtrar las advertencias en las soluciones de varios proyectos.
 
-- **Para filtrar las advertencias por título o identificador de advertencia**: escriba la palabra clave en el cuadro de búsqueda.
+- **Para filtrar las advertencias por título o identificador de advertencia**: Escriba la palabra clave en el cuadro de búsqueda.
 
-- **Para filtrar las advertencias por gravedad**: de forma predeterminada, los mensajes de análisis de código tienen asignados una gravedad de **advertencia**. Puede asignar la gravedad de uno o más mensajes como **Error** en una regla personalizada establecido. En el **gravedad** columna de la **lista de errores**, elija la flecha desplegable y, a continuación, en el icono de filtro. Elija **advertencia** o **Error** para mostrar solo los mensajes que están asignados a la correspondiente gravedad. Elija **seleccionar todo** para mostrar todos los mensajes.
+- **Para filtrar las advertencias por gravedad**: De forma predeterminada, los mensajes de análisis de código tienen asignados una gravedad de **advertencia**. Puede asignar la gravedad de uno o más mensajes como **Error** en una regla personalizada establecido. En el **gravedad** columna de la **lista de errores**, elija la flecha desplegable y, a continuación, en el icono de filtro. Elija **advertencia** o **Error** para mostrar solo los mensajes que están asignados a la correspondiente gravedad. Elija **seleccionar todo** para mostrar todos los mensajes.
 
 ## <a name="see-also"></a>Vea también
 

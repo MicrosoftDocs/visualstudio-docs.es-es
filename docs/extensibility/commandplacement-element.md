@@ -1,9 +1,6 @@
 ---
 title: CommandPlacement (elemento) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - CommandPlacements element (VSCT XML schema)
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d7288de9b0724d8ff4ef7b6174f59e747a9879d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c5d694f6ed12d3fd7d531ec6a0a01ec70a826561
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870268"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941369"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement (elemento)
 CommandPlacement (elemento) permite a los botones, grupos y los menús que se incluirán en más de un grupo o menú. Mediante el uso de CommandPlacement (elemento), no es necesario redefinir completamente estos elementos con el fin de modificar la apariencia de una interfaz de usuario.  
@@ -41,16 +38,16 @@ CommandPlacement (elemento) permite a los botones, grupos y los menús que se in
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|guid|Requerido. El guid del conjunto de comandos, tal como se define en el [Symbols (elemento)](../extensibility/symbols-element.md).|  
-|id|Requerido. El identificador del menú, grupo o comando colocarse, tal como se define en el `Symbols Element`.|  
-|priority|Requerido. Determina la posición del elemento visual en su elemento primario.|  
+|guid|Obligatorio. El guid del conjunto de comandos, tal como se define en el [Symbols (elemento)](../extensibility/symbols-element.md).|  
+|id|Obligatorio. El identificador del menú, grupo o comando colocarse, tal como se define en el `Symbols Element`.|  
+|priority|Obligatorio. Determina la posición del elemento visual en su elemento primario.|  
 |Condición|Opcional. Consulte [Aattributes condicional](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|Elemento primario|Requerido. El menú o el grupo que hospeda el elemento que se va a colocar.|  
+|Elemento primario|Obligatorio. El menú o el grupo que hospeda el elemento que se va a colocar.|  
   
 ### <a name="parent-elements"></a>Elementos primarios  
   

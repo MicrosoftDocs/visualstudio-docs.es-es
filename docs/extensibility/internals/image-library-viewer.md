@@ -1,6 +1,5 @@
 ---
 title: Visor del archivo de imagen | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
@@ -9,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7808c4485a00c080a8a5b260a6472d81bfb7fd44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0ec0995068cafe277c95bd125f91d2d1d3df16b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816838"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968675"
 ---
 # <a name="image-library-viewer"></a>Visor de la biblioteca de imágenes
 La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y buscar los manifiestos de imagen, que permite al usuario manipularlos en la misma manera Visual Studio. El usuario puede modificar otras opciones, tamaños, PPP, contraste alto y en segundo plano. La herramienta también muestra información de carga para cada manifiesto de imagen y muestra información de origen para cada imagen en el manifiesto de imagen. Esta herramienta es útil para:  
@@ -132,7 +131,7 @@ La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y 
 |-|-|  
 |**Attribute**|**Definición**|  
 |URI|[Obligatorio] Un URI que define dónde se puede cargar la imagen desde. Puede ser uno de los siguientes:<br /><br /> -A [Pack URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) mediante la aplicación: / / / entidad<br /><br /> -Una referencia de recurso de componente absoluta<br /><br /> -Una ruta de acceso a un archivo que contiene un recurso nativo|  
-|Fondo|[Opcional] Indica qué tipo de fondo que el origen está pensado para usarse.<br /><br /> Puede ser uno de los siguientes:<br /><br /> - *Luz*: el origen se puede usar en un fondo claro.<br /><br /> - *Oscuro*: el origen se puede usar en un fondo oscuro.<br /><br /> - *Contraste alto*: el origen se puede usar en cualquier en segundo plano en modo de contraste alto.<br /><br /> - *HighContrastLight*: el origen se puede usar en un fondo claro en modo de contraste alto.<br /><br /> -*HighContrastDark*: el origen se puede usar en un fondo oscuro en modo de contraste alto.<br /><br /> Si el **en segundo plano** se omite el atributo, el origen se puede usar en cualquier en segundo plano.<br /><br /> Si **en segundo plano** es *luz*, *oscuro*, *HighContrastLight*, o *HighContrastDark*, el nunca se invierten los colores de origen. Si **en segundo plano** se omite o se establece en *contraste alto*, la inversión de colores de origen se controla mediante la imagen **AllowColorInversion** atributo.|  
+|Fondo|[Opcional] Indica qué tipo de fondo que el origen está pensado para usarse.<br /><br /> Puede ser uno de los siguientes:<br /><br /> - *Luz*: El origen puede utilizarse en un fondo claro.<br /><br /> - *Oscuro*: El origen puede utilizarse en un fondo oscuro.<br /><br /> - *Contraste alto*: El origen puede utilizarse en cualquier en segundo plano en modo de contraste alto.<br /><br /> - *HighContrastLight*: El origen puede utilizarse en un fondo claro en modo de contraste alto.<br /><br /> -*HighContrastDark*: El origen puede utilizarse en un fondo oscuro en modo de contraste alto.<br /><br /> Si el **en segundo plano** se omite el atributo, el origen se puede usar en cualquier en segundo plano.<br /><br /> Si **en segundo plano** es *luz*, *oscuro*, *HighContrastLight*, o *HighContrastDark*, el nunca se invierten los colores de origen. Si **en segundo plano** se omite o se establece en *contraste alto*, la inversión de colores de origen se controla mediante la imagen **AllowColorInversion** atributo.|  
   
  Un \<origen > elemento puede tener exactamente uno de los siguientes subelementos opcionales:  
   

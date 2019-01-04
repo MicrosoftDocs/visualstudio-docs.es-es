@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: Seleccionar los esquemas XML que se van a usar'
+title: Procedimiento Seleccionar los esquemas XML que se van a usar
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a04075c0625eb7b4dc899a4e183588b96eb7eadd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d49181e598c8ac6c268d1efcece43bd574003f39
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872244"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824397"
 ---
-# <a name="how-to-select-the-xml-schemas-to-use"></a>Cómo: seleccionar los esquemas XML para usar
+# <a name="how-to-select-the-xml-schemas-to-use"></a>Procedimiento Seleccione los esquemas XML para usar
 
 El Editor XML proporciona una caché de esquema que se encuentra en la *%InstallDir%\Xml\Schemas* directory. La caché de esquema incluye esquemas XML muy conocidos que se utilizan en IntelliSense y en la validación de documentos XML.
 
@@ -58,7 +57,7 @@ Los esquemas especificados se guardan en el archivo oculto de opciones de usuari
 
 3.  Busque y seleccione los esquemas que se van a agregar a la caché de esquema.
 
-4.  Haga clic en **abierto**.
+4.  Haga clic en **Abrir**.
 
      El esquema se agrega al esquema en caché y es el **Use** el valor de columna se establece en **utilizar este esquema**.
 

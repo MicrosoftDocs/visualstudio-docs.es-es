@@ -1,9 +1,6 @@
 ---
 title: Registrar una función de lenguaje heredado2 | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - registration, language services
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f247a510b6fb52903970e408f930b13a8faba08e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 689a612ad277291f72af5527300b4d49f76f173f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879023"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828646"
 ---
 # <a name="registering-a-legacy-language-service"></a>Registrar un servicio de lenguaje heredado
 Las secciones siguientes proporcionan listas de entradas del registro para el idioma de diversas opciones de servicio disponibles en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -34,7 +31,7 @@ Las secciones siguientes proporcionan listas de entradas del registro para el id
 |----------|----------|-----------|-----------------|  
 |(Predeterminado)|REG_SZ|*\<GUID &GT;*|GUID del servicio de lenguaje.|  
 |LangResID|REG_DWORD|0 x 0 a 0xffff.|Identificador de recurso (ResID) para el nombre de texto localizado del lenguaje de cadena.|  
-|Package|REG_SZ|*\<GUID &GT;*|GUID del VSPackage.|  
+|Paquete|REG_SZ|*\<GUID &GT;*|GUID del VSPackage.|  
 |ShowCompletion|REG_DWORD|0-1|Especifica si el **finalización de instrucciones** opciones en el **opciones** cuadro de diálogo están habilitadas.|  
 |ShowSmartIndent|REG_DWORD|0-1|Especifica si la opción de seleccionar **inteligente** sangría en el **opciones** cuadro de diálogo está habilitado.|  
 |RequestStockColors|REG_DWORD|0-1|Especifica si personalizado o se usan los colores predeterminados para las palabras clave de color.|  
@@ -89,7 +86,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |nombre|Tipo|Intervalo|Descripción|  
 |----------|----------|-----------|-----------------|  
 |(Predeterminado)|REG_SZ|resID|El nombre para mostrar localizado de esta página de opción. El nombre puede ser texto literal o #`nnn`, donde `nnn` es un identificador de recurso de cadena en el archivo DLL del VSPackage especificado de satélite.|  
-|Package|REG_SZ|*GUID*|El GUID del VSPackage que implemente esta página de opciones.|  
+|Paquete|REG_SZ|*GUID*|El GUID del VSPackage que implemente esta página de opciones.|  
 |Página|REG_SZ|*GUID*|El GUID de la página de propiedades para solicitar de VSPackage mediante una llamada a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> método. Si esta entrada del registro no está presente, la clave del registro describe un nodo, no una página.|  
   
 ### <a name="example"></a>Ejemplo  
@@ -144,7 +141,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |DisplayName|REG_SZ|resID|Nombre para mostrar en el **abrir con** cuadro de diálogo. El nombre es el identificador de recurso de cadena o un nombre de formato estándar.|  
 |ExcludeDefTextEditor|REG_DWORD|0-1|Utilizado para la **abrir con** comando de menú. Si no desea mostrar el editor de texto predeterminado en la lista de editores disponibles para un tipo de archivo específico, establezca este valor en 1.|  
 |LinkedEditorGUID|REG_SZ|*\<GUID &GT;*|Se usa para cualquier servicio de lenguaje que se puede abrir un archivo con el soporte técnico de la página de códigos. Por ejemplo, cuando abre un archivo .txt utilizando el **abrir con** comando, se proporcionan opciones para usar el editor de código fuente con y sin codificación.<br /><br /> El GUID que especifica el nombre de la subclave es para el generador de editores de página de códigos; es el GUID vinculado especificado en esta entrada del Registro específica para el generador de editores regular. El propósito de esta entrada es que si el IDE no abre un archivo mediante el editor de forma predeterminada, el IDE intentará utilizar el editor siguiente en la lista. Este editor siguiente no debe ser el generador de editores de página de códigos porque este generador de editores es básicamente el mismo que el generador de editores que no se pudo.|  
-|Package|REG_SZ|*\<GUID &GT;*|VSPackage GUID para el Id. de nombre para mostrar.|  
+|Paquete|REG_SZ|*\<GUID &GT;*|VSPackage GUID para el Id. de nombre para mostrar.|  
   
 ### <a name="example"></a>Ejemplo  
   

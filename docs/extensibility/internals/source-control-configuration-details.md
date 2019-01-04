@@ -1,9 +1,6 @@
 ---
 title: Detalles de configuración de Control de origen | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], configuration details
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85ba74ba9d9beabaefd22607df0fac6ebaaf2235
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ca634ae50268a87f637dd812508ae793bad74115
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825938"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894238"
 ---
 # <a name="source-control-configuration-details"></a>Detalles de configuración del control de código fuente
 Para poder implementar el control de código fuente, es preciso configurar correctamente el sistema de proyecto o el editor para hacer lo siguiente:

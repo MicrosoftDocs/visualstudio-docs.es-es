@@ -1,9 +1,6 @@
 ---
 title: Servicio de lenguaje y puntos de extensión del Editor | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2df3de4bfba0510cf3c8a5474a363a5ec579a79f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d99916c31e35f7494a402ff4c5d1a7b182a0c52d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927754"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907967"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Puntos de extensión de editor y el servicio de lenguaje
 El editor proporciona puntos de extensión que se pueden ampliar como componentes de Managed Extensibility Framework (MEF), incluidos la mayoría de las características de servicio de lenguaje. Estas son las categorías de punto de extensión principal:  
@@ -273,7 +270,7 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: asociado a un elemento de gráfico.  
   
   > [!NOTE]
-  >  Para obtener un ejemplo de un <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, consulte la definición de HighlightWordTag en [Tutorial: texto resaltado](../extensibility/walkthrough-highlighting-text.md).  
+  >  Para obtener un ejemplo de un <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, consulte la definición de HighlightWordTag en [Tutorial: Resaltar texto](../extensibility/walkthrough-highlighting-text.md).  
   
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: asociados con las regiones que se pueden expandir o contraer de esquematización.  
   
@@ -319,7 +316,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  Para aplicar esta definición de formato a una etiqueta, haga referencia al nombre que se establece en el atributo de nombre de la clase (no el nombre para mostrar).  
   
 > [!NOTE]
->  Para obtener un ejemplo de un <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, consulte la clase HighlightWordFormatDefinition en [Tutorial: texto resaltado](../extensibility/walkthrough-highlighting-text.md).  
+>  Para obtener un ejemplo de un <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, consulte la clase HighlightWordFormatDefinition en [Tutorial: Resaltar texto](../extensibility/walkthrough-highlighting-text.md).  
   
 ## <a name="extend-adornments"></a>Ampliar los elementos gráficos  
  Los elementos gráficos definen los efectos visuales que pueden agregarse al texto que se muestra en una vista de texto o para el texto de vista de sí mismo. Puede definir su propio elemento de gráfico como cualquier tipo de <xref:System.Windows.UIElement>.  
@@ -328,7 +325,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
   
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: el nombre del elemento gráfico.  
   
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: la ordenación del elemento de gráfico con respecto a otros niveles del elemento gráfico. La clase <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> define cuatro niveles de forma predeterminada: selección, esquematización, símbolo de intercalación y el texto.  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: la ordenación del elemento de gráfico con respecto a otros niveles del elemento gráfico. La clase <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> define cuatro niveles de forma predeterminada: Selección, esquematización, símbolo de intercalación y texto.  
   
   El ejemplo siguiente muestra los atributos de exportación en una definición de la capa de elemento gráfico.  
   
@@ -546,7 +543,7 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
   
  Para obtener más información acerca de cómo implementar orígenes de IntelliSense, vea los siguientes tutoriales:  
   
- [Tutorial: Información de presentación rápida](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Tutorial: Mostrar información rápida](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
  [Tutorial: Mostrar la Ayuda de firma](../extensibility/walkthrough-displaying-signature-help.md)  
   
@@ -573,4 +570,4 @@ internal class TestIntellisenseControllerProvider : IIntellisenseControllerProvi
   
  Para obtener más información sobre el uso de controladores de IntelliSense, vea los siguientes tutoriales:  
   
- [Tutorial: Información de presentación rápida](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
+ [Tutorial: Mostrar información rápida](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)

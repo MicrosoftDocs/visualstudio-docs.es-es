@@ -1,9 +1,6 @@
 ---
 title: Interfaces (depuración de Visual Studio) | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], interfaces
@@ -13,29 +10,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f5523b28d84b3fd490b2e83823462d4166e7332
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a25e66f6ee86ed0241efceae084d0e8e7abc3488
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124648"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889049"
 ---
 # <a name="interfaces-visual-studio-debugging"></a>Interfaces (depuración de Visual Studio)
-Métodos aparecen por orden alfabético en cada interfaz en la tabla de contenido y en la página de interfaz en orden de Vtable.  
+Los métodos están enumerados alfabéticamente en cada interfaz en la tabla de contenido y en la página de interfaz en el orden de Vtable.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)  
- Describe las interfaces que se usan en el motor de depuración.  
+ Describe las interfaces utilizadas en el motor de depuración.  
   
  [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)  
- Describe las interfaces que se evalúan las expresiones de una pila de llamadas durante el modo de interrupción.  
+ Describe las interfaces que se evalúan las expresiones en una pila de llamadas durante el modo de interrupción.  
   
  [Interfaces de proveedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)  
  Describe las interfaces que implementa un proveedor de símbolos para asociar tipos de identificadores.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Referencia de API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)  
- Contiene documentación de las interfaces, enumeradores y las estructuras de los [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] SDK de depuración.  
+ Contiene la documentación de las interfaces, enumeradores y estructuras de la [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] SDK de depuración.  
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

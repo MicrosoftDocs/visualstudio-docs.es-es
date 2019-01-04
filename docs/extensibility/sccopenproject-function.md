@@ -1,9 +1,6 @@
 ---
 title: SccOpenProject (función) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccOpenProject
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 928c1d63451dc49fabf01503e8cb7f6789b98998
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4fde4a8e59fb64e12b78eacc14406fdf5020b64f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837014"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856480"
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject (Función)
 Esta función abre un proyecto de control de código fuente existente o crea uno nuevo.  

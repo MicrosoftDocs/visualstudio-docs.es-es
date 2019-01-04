@@ -1,13 +1,8 @@
 ---
-title: 'Cómo: marcar los controles como seguros | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Marcar los controles como seguros | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 04470034f1fa1531a1677b4acd6b36f0b99c8a62
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 87e99937239ad080d24bf997d6c2de2a5d8f73ac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119813"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989379"
 ---
-# <a name="how-to-mark-controls-as-safe-controls"></a>Cómo: marcar los controles como seguros
+# <a name="how-to-mark-controls-as-safe-controls"></a>Procedimiento Marcar los controles como seguros
   Para la seguridad, SharePoint diferencia entre los controles Web que están protegidos contra la inyección de script y los controles Web que no están. Protegido de los controles, o *controles seguros*, pueden tener acceso a los usuarios de confianza. Puede marcar los controles como seguros en la propiedad de las entradas de Control seguro de un elemento de proyecto de SharePoint o en el **Diseñador de paquetes** cuando agrega un ensamblado para el paquete. Para obtener más información, consulte  
   
  [el archivo Web.config el cambio de configuración](http://go.microsoft.com/fwlink/?LinkId=178965) y [registrar un ensamblado de elemento Web como un Control seguro](http://go.microsoft.com/fwlink/?LinkId=171013).  
@@ -94,7 +89,7 @@ ms.locfileid: "37119813"
     |-------------------|-----------|  
     |Espacio de nombres|El espacio de nombres completo del control, como **BdcModelProject1.VisualWebPart1**.|  
     |Nombre de tipo|Button1|  
-    |Nombre del ensamblado|Un nombre seguro, como: ejemplo, versión = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|  
+    |Nombre del ensamblado|Un nombre seguro, como: Ejemplo, versión = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|  
     |Safe|Desactive el **seguro** casilla de verificación.|  
     |Protección frente a scripts|Deje el **Safe Against Script** casilla de verificación.|  
   
@@ -111,7 +106,7 @@ ms.locfileid: "37119813"
     |-------------------|-----------|  
     |Espacio de nombres|El espacio de nombres completo del control, como **BdcModelProject1.VisualWebPart1**.|  
     |Nombre de tipo|TextBox1|  
-    |Nombre del ensamblado|Un nombre seguro, como: ejemplo, versión = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|  
+    |Nombre del ensamblado|Un nombre seguro, como: Ejemplo, versión = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|  
     |Safe|Seleccione el **seguro** casilla de verificación.|  
     |Protección frente a scripts|Seleccione el **Safe Against Script** casilla de verificación.|  
   
@@ -120,4 +115,3 @@ ms.locfileid: "37119813"
 ## <a name="see-also"></a>Vea también
  [Proporcionar información de empaquetado e implementación de elementos de proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
  [Paquete e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

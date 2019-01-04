@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: Sincronizar conjuntos de reglas del proyecto de código con la directiva de protección del proyecto de equipo'
+title: Procedimiento Sincronizar conjuntos de reglas del proyecto de código con la directiva de protección del proyecto de equipo
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3769962829f5d0511b684f03ad8682071b48c07b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e8c63e7b54f1303f62fca938cb5dc44147af88dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281161"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883248"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Cómo: sincronizar conjuntos de reglas del proyecto de código con una directiva de protección de Azure DevOps Projects
+# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Procedimiento Sincronizar conjuntos de reglas del proyecto de código con una directiva de protección de Azure DevOps Projects
 
 Sincronizar la configuración de análisis de código para proyectos de código a la directiva de protección para el proyecto de DevOps de Azure mediante la especificación de un conjunto de reglas que contenga al menos las reglas que se especifican en el conjunto de reglas para la directiva de protección. El responsable de desarrollo puede informar a los que el nombre y la ubicación de la regla establecida para la directiva de protección. Puede usar una de las opciones siguientes para asegurarse de que el análisis de código para el proyecto usa el conjunto correcto de reglas:
 
@@ -55,7 +54,7 @@ Sincronizar la configuración de análisis de código para proyectos de código 
 
 1.  Siga uno de los procedimientos anteriores de este tema para seleccionar la directiva de protección de Azure DevOps Projects en la página de análisis de código del cuadro de diálogo de configuración de proyecto.
 
-2.  Haga clic en **abierto**.
+2.  Haga clic en **Abrir**.
 
 3.  Agregar o quitar reglas utilizando el [editor de conjunto de reglas](../code-quality/working-in-the-code-analysis-rule-set-editor.md).
 

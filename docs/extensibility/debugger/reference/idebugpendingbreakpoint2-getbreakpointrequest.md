@@ -1,9 +1,6 @@
 ---
 title: IDebugPendingBreakpoint2::GetBreakpointRequest | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPendingBreakpoint2::GetBreakpointRequest
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: db1553295e3b8827330c78c1f6f35c21f1380cb4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 051c2f3f9c25eebbfbf686587652df1b830806f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921007"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927121"
 ---
 # <a name="idebugpendingbreakpoint2getbreakpointrequest"></a>IDebugPendingBreakpoint2::GetBreakpointRequest
 Obtiene la solicitud de punto de interrupción que se usó para crear este punto de interrupción pendiente.  
@@ -29,13 +26,13 @@ Obtiene la solicitud de punto de interrupción que se usó para crear este punto
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT GetBreakpointRequest(   
+HRESULT GetBreakpointRequest(   
    IDebugBreakpointRequest2** ppBPRequest  
 );  
 ```  
   
 ```csharp  
-int GetBreakpointRequest(   
+int GetBreakpointRequest(   
    out IDebugBreakpointRequest2 ppBPRequest  
 );  
 ```  

@@ -1,9 +1,6 @@
 ---
-title: IDebugCoreServer2 | Documentos de Microsoft
-ms.custom: ''
+title: IDebugCoreServer2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugCoreServer2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce3e4c0c933527a5db754dcd96de97283e6e8260
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 33347f985f1c495e61e097e04890ca6931751331
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107571"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921762"
 ---
 # <a name="idebugcoreserver2"></a>IDebugCoreServer2
-Esta interfaz se usa para representar y obtener información de un servidor en un equipo en la red.  
+Esta interfaz se utiliza para representar y obtener información de un servidor en un equipo en la red.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -50,15 +47,15 @@ IDebugCoreServer2 : IUknown
 |[GetPort](../../../extensibility/debugger/reference/idebugcoreserver2-getport.md)|Obtiene un puerto que ya existe en un equipo.|  
 |[EnumPorts](../../../extensibility/debugger/reference/idebugcoreserver2-enumports.md)|Crea un enumerador para todos los puertos en un equipo.|  
 |[EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)|Crea un enumerador para todos los proveedores de puerto en un equipo.|  
-|[GetMachineUtilities_V7](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineutilities-v7.md)|Obtiene las utilidades de máquina de una máquina.|  
+|[GetMachineUtilities_V7](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineutilities-v7.md)|Obtiene las utilidades de la máquina para una máquina.|  
   
 ## <a name="remarks"></a>Comentarios  
- Esta interfaz también se usa Visual Studio para examinar los procesos que se ejecutan en equipos de la red.  
+ Esta interfaz también se utiliza Visual Studio para examinar los procesos que se ejecutan en equipos de la red.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   

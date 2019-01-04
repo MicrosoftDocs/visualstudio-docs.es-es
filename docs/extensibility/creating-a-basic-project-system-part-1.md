@@ -1,9 +1,6 @@
 ---
 title: Creación de un sistema de proyectos básico, parte 1 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d7d48a7aae98da574747da2df32c9368ab930aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43ba49107c1f3b2ab72db024b8dbfd01d8eab857
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887558"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832559"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Crear un sistema de proyectos básico, parte 1
 En Visual Studio, los proyectos son los contenedores que los desarrolladores usan para organizar los archivos de código fuente y otros activos. Los proyectos aparecen como elementos secundarios de soluciones en la **el Explorador de soluciones**. Los proyectos permiten organizar, compilar, depurar e implementar el código fuente y crear referencias a servicios Web, bases de datos y otros recursos.  
@@ -559,7 +556,7 @@ Templates
      Tenga en cuenta que los parámetros de plantilla $nameSpace$ y $className$ no tienen valores nuevos. Obtendrá información sobre cómo implementar la sustitución de parámetros de plantilla en la sección siguiente.  
   
 ## <a name="substitute-template-parameters"></a>Sustituir los parámetros de plantilla  
- En una sección anterior, se registra la plantilla de proyecto con Visual Studio mediante el `ProvideProjectFactory` atributo. Registro de la ruta de acceso de una carpeta de plantillas de esta manera le permite habilitar la sustitución de parámetros de plantilla básica reemplazando y expandir el `ProjectNode.AddFileFromTemplate` clase. Para obtener más información, consulte [nueva generación de proyectos: aspectos técnicos, segunda parte](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ En una sección anterior, se registra la plantilla de proyecto con Visual Studio mediante el `ProvideProjectFactory` atributo. Registro de la ruta de acceso de una carpeta de plantillas de esta manera le permite habilitar la sustitución de parámetros de plantilla básica reemplazando y expandir el `ProjectNode.AddFileFromTemplate` clase. Para obtener más información, consulte [nueva generación de proyectos: Internamente, la segunda parte](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  Ahora, agregue código de reemplazo para el `AddFileFromTemplate` clase.  
   

@@ -1,9 +1,6 @@
 ---
 title: Información general sobre la integración de Control de origen | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: edd2e04f4e1102d66cc04cd1365dc7abd1488c9c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f0a354ebafe81b707fa6b0560e473a753a36685d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931850"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902997"
 ---
 # <a name="source-control-integration-overview"></a>Información general de la integración del control de código fuente
 Esta sección comparan las dos maneras de integrar en el control de código fuente de Visual Studio; control de origen de un complemento y un VSPackage que proporciona una solución de control de código fuente y se resalta las nuevas características de control de código fuente. Visual Studio permite la conmutación manual entre VSPackages de control de código fuente y los complementos de control de código fuente, así como cambio automático basado en la solución.  
@@ -35,7 +32,7 @@ Esta sección comparan las dos maneras de integrar en el control de código fuen
   
 1. Crear un archivo DLL que implementa las funciones especificadas en [de complementos de Control de código fuente](../../extensibility/source-control-plug-ins.md).  
   
-2. Registrar la DLL mediante la realización de las entradas del Registro adecuados (se describe en [Cómo: instalar un complemento de Control de código fuente](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
+2. Registrar la DLL mediante la realización de las entradas del Registro adecuados (se describe en [Cómo: Instalar un complemento de Control de código fuente](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
   
 3. Crear una aplicación auxiliar de la interfaz de usuario y la presentación cuando se lo solicite el paquete de adaptador de Control de código fuente (el componente de Visual Studio que controla la funcionalidad de control de código fuente a través de los complementos de control de código fuente)  
   

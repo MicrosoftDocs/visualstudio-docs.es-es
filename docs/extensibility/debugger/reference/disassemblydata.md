@@ -1,9 +1,6 @@
 ---
 title: DisassemblyData | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - DisassemblyData
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7ab7b278c03d092e1e559f1eb74f5d6bdc86d85
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b63a2635bcfaf80dea06659ec1472fc93bc6797a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816864"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856389"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 Describe una instrucción de desensamblado para el entorno de desarrollo integrado (IDE) para mostrar.  
@@ -28,7 +25,7 @@ Describe una instrucción de desensamblado para el entorno de desarrollo integra
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-typedef struct tagDisassemblyData {   
+typedef struct tagDisassemblyData {   
    DISASSEMBLY_STREAM_FIELDS dwFields;  
    BSTR                      bstrAddress;  
    BSTR                      bstrAddressOffset;  
@@ -46,7 +43,7 @@ typedef struct tagDisassemblyData {
 ```  
   
 ```csharp  
-public struct DisassemblyData {   
+public struct DisassemblyData {   
    public uint          dwFields;  
    public string        bstrAddress;  
    public string        bstrAddressOffset;  

@@ -1,9 +1,6 @@
 ---
 title: Actualizar las áreas de formulario en los proyectos de Outlook migrados a .NET Framework 4 o .NET Framework 4.5
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,18 +12,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 97778716ad5be8e110c022048a3d04f4c980f839
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 84005dfa85c637d2ff5677e6ad02b811bd0cb671
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767980"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842809"
 ---
 # <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Actualizar las áreas de formulario en los proyectos de Outlook migrados a .NET Framework 4 o .NET Framework 4.5
   Si el marco de trabajo de destino de un proyecto de complemento de VSTO de Outlook con un área de formulario se cambia a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores, debe realizar algunos cambios en el código de área del formulario generado y en cualquier código que cree instancias de determinadas clases de área del formulario en tiempo de ejecución.  
   
 ## <a name="update-the-generated-form-region-code"></a>Actualizar el código de área de formulario generado  
- Si se cambia el marco de trabajo de destino del proyecto a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores, debe cambiar el código de área del formulario generado. Los cambios que se realizan son diferentes para las áreas del formulario diseñadas en Visual Studio y para las áreas del formulario importadas de Outlook. Para obtener más información sobre las diferencias entre estos tipos de áreas de formulario, vea [áreas de formulario de Outlook crear](../vsto/creating-outlook-form-regions.md).  
+ Si se cambia el marco de trabajo de destino del proyecto a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores, debe cambiar el código de área del formulario generado. Los cambios que se realizan son diferentes para las áreas del formulario diseñadas en Visual Studio y para las áreas del formulario importadas de Outlook. Para obtener más información sobre las diferencias entre estos tipos de áreas de formulario, consulte [crear áreas de formulario](../vsto/creating-outlook-form-regions.md).  
   
 ### <a name="to-update-the-generated-code-for-a-form-region-that-you-designed-in-visual-studio"></a>Para actualizar el código generado para un área del formulario diseñada en Visual Studio  
   
@@ -189,7 +186,7 @@ ms.locfileid: "34767980"
 ## <a name="instantiate-form-region-classes"></a>Crear instancias de clases de área de formulario  
  Debe modificar todo el código que cree dinámicamente instancias de determinadas clases de área del formulario. En proyectos destinados a .NET Framework 3.5, puede crear instancias de clases de área del formulario como `Microsoft.Office.Tools.Outlook.FormRegionManifest` directamente. En los proyectos que tienen como destino [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores, estas clases son interfaces de las que no se puede crear instancias directamente.  
   
- Si el marco de trabajo de destino del proyecto se cambia a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores, debe crear instancias de las interfaces mediante los métodos proporcionados por la propiedad `Globals.Factory`. Para obtener más información sobre la `Globals.Factory` propiedad, vea [acceso Global a objetos en los proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md).  
+ Si la plataforma de destino del proyecto se cambia a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores, debe crear instancias de las interfaces mediante los métodos proporcionados por la propiedad `Globals.Factory`. Para obtener más información sobre la `Globals.Factory` propiedad, vea [acceso Global a objetos en los proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
  En la tabla siguiente se enumeran los tipos de áreas del formulario y el método que se usa para crear instancias de los tipos en proyectos que tienen como destino [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores.  
   
@@ -200,6 +197,5 @@ ms.locfileid: "34767980"
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionManifest>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionManifest%2A>|  
   
 ## <a name="see-also"></a>Vea también  
- [Migrar soluciones de Office para .NET Framework 4 o posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
+ [Migrar soluciones de Office a .NET Framework 4 o posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [Crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md)  
-  

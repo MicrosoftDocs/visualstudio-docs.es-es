@@ -1,9 +1,6 @@
 ---
 title: SccGet (función) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccGet
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3955905252b2293d3c200640ea33d5c23c8fd208
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 089b0f56292dfdeb56eb770a5cec5abf6c0d6b82
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844463"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869419"
 ---
 # <a name="sccget-function"></a>SccGet (función)
 Esta función recupera una copia de uno o más archivos para ver y compilar, pero no para su edición. En la mayoría de los sistemas, los archivos se etiquetan como de solo lectura.  

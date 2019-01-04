@@ -1,9 +1,6 @@
 ---
 title: Localización de los comandos de menú | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - localize
@@ -18,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8eb9e566f4f5916961a95a1c61f8fdcbb689f1e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 27c12228de5a49d0b61cc61e5c1233343430b686
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876222"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934062"
 ---
 # <a name="localize-menu-commands"></a>Localizar los comandos de menú
 Puede proporcionar el texto localizado para comandos de menú y barra de herramientas mediante la creación de localizado *.vsct* archivos y localizadas *.resx* archivos para el VSPackage y, a continuación, actualizar los archivos de proyecto incorporar el cambios.  

@@ -1,9 +1,6 @@
 ---
 title: Escribir un evaluador de expresiones de Common Language Runtime | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluators, tutorial
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d93299702db0c56963eb8f404d05e8e67ab08b0
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 06feb8d0755b3fd36a418238c0f3067c3643feef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276824"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834899"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>Escribir un evaluador de expresiones de common language runtime
 > [!IMPORTANT]

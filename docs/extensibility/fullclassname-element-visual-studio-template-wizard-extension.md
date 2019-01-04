@@ -1,9 +1,7 @@
 ---
 title: FullClassName (elemento) (extensión de Asistente de plantilla de Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#FullClassName
@@ -15,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05b23039540ed520e2298222e92131248fef0e3b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: f185d791010c545dd56326505d871fb964a71b66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498372"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943744"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName (elemento) (extensión de Asistente de plantilla de Visual Studio)
 El nombre completo de la clase que implementa el `IWizard` interfaz.  
@@ -93,4 +91,4 @@ El nombre completo de la clase que implementa el `IWizard` interfaz.
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Crear plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)   
- [Cómo: usar asistentes con plantillas de proyecto](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Cómo: Usar a asistentes con plantillas de proyecto](../extensibility/how-to-use-wizards-with-project-templates.md)

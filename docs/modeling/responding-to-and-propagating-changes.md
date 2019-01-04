@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 696a874df8050d9a79f7cd07b9fc168acdc6b717
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ace1873c45ba8437ba929ec10ef75db3d0d50bf2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897985"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905207"
 ---
 # <a name="responding-to-and-propagating-changes"></a>Responder a los cambios y propagarlos
 Cuando un elemento se crea, elimina o actualiza, puede escribir código que se propaga el cambio a otras partes del modelo o recursos externos, como archivos, bases de datos u otros componentes.
@@ -33,7 +32,7 @@ Cuando un elemento se crea, elimina o actualiza, puede escribir código que se p
 |Eventos de Store|El almacén de modelado proporciona notificaciones de eventos, como agregar o eliminar un elemento o vínculo o cambiar el valor de una propiedad. El evento también se ejecuta en Deshacer y rehacer. Usar eventos de almacén para actualizar los valores que no están en el almacén.|[Los controladores de eventos propagan cambios fuera del modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md)|
 |Eventos de .NET|Las formas tienen controladores de eventos que responden a clics del mouse y otros movimientos. Tendrá que registrar estos eventos para cada objeto. El registro se suele realizar en un reemplazo de InitializeInstanceResources y debe realizarse para cada elemento.<br /><br /> Normalmente, estos eventos se producen fuera de una transacción.|[Cómo: Interceptar un clic en una forma o decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|
 |Reglas de límites|Una regla de límites se utiliza específicamente para restringir los límites de una forma.|[Ubicación y tamaño de las reglas de restricción de formas BoundsRules](../modeling/boundsrules-constrain-shape-location-and-size.md)|
-|Reglas de selección|Las reglas de selección restringen específicamente el usuario puede seleccionar.|[Cómo: Tener acceso a una selección y restringir la selección actual](../modeling/how-to-access-and-constrain-the-current-selection.md)|
+|Reglas de selección|Las reglas de selección restringen específicamente el usuario puede seleccionar.|[Cómo: Tener acceso y restringir la selección actual](../modeling/how-to-access-and-constrain-the-current-selection.md)|
 |OnAssocatedPropertyChanged|Indicar estados de los elementos del modelo mediante las características de las formas y conectores como instantáneas, las puntas de flecha, color y los anchos de línea y estilo.|[Actualizar formas y conectores para reflejar el modelo](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
 
 ## <a name="comparing-rules-and-store-events"></a>**Comparación de las reglas y eventos de Store**
@@ -47,7 +46,7 @@ Cuando un elemento se crea, elimina o actualiza, puede escribir código que se p
 
 -   **Suscribirse a eventos** para poder suscribirse a un evento, cree un controlador de eventos y el delegado. A continuación, utilice el <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>propiedad para suscribirse al evento. Para obtener más información, consulte [controladores propagar los cambios fuera el modelo de evento](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
--   **Deshaciendo cambios** al deshacer una transacción, se generan eventos, pero no se aplican las reglas. Si una regla cambia un valor y deshacer el cambio, el valor se restablece al valor original durante la acción de deshacer. Cuando se genera un evento, debe cambiar manualmente el valor a su valor original. Para obtener más información sobre transactons y deshacer, consulte [Cómo: usar transacciones para actualizar el modelo](../modeling/how-to-use-transactions-to-update-the-model.md).
+-   **Deshaciendo cambios** al deshacer una transacción, se generan eventos, pero no se aplican las reglas. Si una regla cambia un valor y deshacer el cambio, el valor se restablece al valor original durante la acción de deshacer. Cuando se genera un evento, debe cambiar manualmente el valor a su valor original. Para obtener más información sobre transactons y deshacer, vea [Cómo: Usar transacciones para actualizar el modelo](../modeling/how-to-use-transactions-to-update-the-model.md).
 
 -   **Pasar argumentos de evento para eventos y reglas** ambos eventos y las reglas se pasan un `EventArgs` parámetro que tiene información acerca de cómo puede cambiar el modelo.
 

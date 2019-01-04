@@ -1,9 +1,6 @@
 ---
 title: Referencia de esquema de elemento de proyecto de SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -26,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b94856d4e00cd15f324040ccd49c90bb1be29a7d
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e2023eb4828ab5ac59a45dd72040177a654176d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119370"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895810"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>Referencia de esquemas de elemento de proyecto de SharePoint
   Visual Studio usa el esquema de elemento de proyecto de SharePoint para validar el contenido de *.spdata* archivos. Un *.spdata* archivo especifica el contenido y el comportamiento de un elemento de proyecto de SharePoint. Para obtener más información sobre el contenido de los elementos de proyecto de SharePoint, vea [crear elementos de plantillas y plantillas de proyecto para los elementos de proyecto de SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
@@ -56,4 +53,3 @@ ms.locfileid: "37119370"
   
 ## <a name="see-also"></a>Vea también
  [Crear plantillas de elemento y plantillas de proyecto para los elementos de proyecto de SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)  
-  
