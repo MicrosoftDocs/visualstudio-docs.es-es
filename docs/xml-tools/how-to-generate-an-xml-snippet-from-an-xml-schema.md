@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: Generar un fragmento XML a partir de un esquema XML'
+title: Procedimiento Generar un fragmento de código XML a partir de un esquema XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ac437bbbe876d81acc917f011a3051c9c264b6a
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 31e1805a38d51315c4f0753f363334d1df37ece6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2018
-ms.locfileid: "34477683"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864730"
 ---
-# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Cómo: generar un fragmento XML desde un esquema XML
+# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procedimiento Generar un fragmento XML desde un esquema XML
 
 Con el Editor XML es posible generar fragmentos de código XML a partir de un esquema de lenguaje de definición de esquema XML (XSD). Por ejemplo, durante la creación de un archivo XML, mientras se coloca junto al nombre del elemento, puede presionar **ficha** para rellenar el elemento con los datos XML generados a partir de la información de esquema de ese elemento.
 
@@ -45,7 +44,7 @@ Los valores predeterminados se generan e indican como valores editables. Si el e
 
 ## <a name="example"></a>Ejemplo
 
- Los pasos de esta sección muestran cómo utilizar el fragmento XML generados por esquema, característica del Editor XML.
+ Los pasos descritos en esta sección muestran cómo usar el fragmento XML generados por esquema, característica del Editor XML.
 
 > [!NOTE]
 > Antes de comenzar estos procedimientos, guarde el archivo de esquema en el equipo local.
@@ -54,7 +53,7 @@ Los valores predeterminados se generan e indican como valores editables. Si el e
 
 1.  En el **archivo** menú, elija **New**y haga clic en **archivo**.
 
-2.  Seleccione **archivo XML** en el **plantillas** panel y haga clic en **abiertos**.
+2.  Seleccione **archivo XML** en el **plantillas** panel y haga clic en **abierto**.
 
      Se abre un nuevo archivo en el editor. El archivo contiene una declaración XML predeterminada, `<?xml version="1.0" encoding="utf-8">`.
 
@@ -66,7 +65,7 @@ Los valores predeterminados se generan e indican como valores editables. Si el e
 
      El **Abrir esquema XSD** se muestra el cuadro de diálogo.
 
-5.  Seleccione el archivo de esquema y haga clic en **abiertos**.
+5.  Seleccione el archivo de esquema y haga clic en **abierto**.
 
 6.  Haga clic en **Aceptar**.
 
@@ -90,7 +89,7 @@ Los valores predeterminados se generan e indican como valores editables. Si el e
 
      El editor agrega la etiqueta de apertura `<Contact` y coloca el cursor después del nombre del elemento.
 
-4.  Presione **ficha** para generar datos XML para el `Contact` elemento basado en su información de esquema.
+4.  Presione **ficha** para generar datos XML para el `Contact` elemento según su información de esquema.
 
 ## <a name="input"></a>Entrada
 
@@ -143,7 +142,7 @@ Los valores predeterminados se generan e indican como valores editables. Si el e
 
 ### <a name="output"></a>Salida
 
- Estos son los datos XML que se generan en función de la información de esquema asociada con el elemento `Contact`. Elementos marcados como `bold` designar los campos editables del fragmento XML.
+ Estos son los datos XML que se generan en función de la información de esquema asociada con el elemento `Contact`. Los elementos marcados como `bold` designan campos editables en el fragmento XML.
 
 ```xml
 <Contact>
@@ -159,4 +158,4 @@ Los valores predeterminados se generan e indican como valores editables. Si el e
 ## <a name="see-also"></a>Vea también
 
 - [Fragmentos XML](../xml-tools/xml-snippets.md)
-- [Cómo: usar XML fragmentos de código](../xml-tools/how-to-use-xml-snippets.md)
+- [Cómo: Utilizar fragmentos XML](../xml-tools/how-to-use-xml-snippets.md)

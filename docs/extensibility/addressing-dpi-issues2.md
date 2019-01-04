@@ -1,6 +1,5 @@
 ---
 title: Direccionamiento PPP problemas2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
@@ -9,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c4ca03c932b86ad6f9907020b037abb1308a6f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4c85d867d042ea51023fc20259814a27b108e150
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918537"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875172"
 ---
 # <a name="address-dpi-issues"></a>Valor de PPP de solucionar problemas
 Un número creciente de dispositivos se entrega con pantallas "alta resolución". Estas pantallas suelen tengan más de 200 píxeles por pulgada (PPP). Trabajar con una aplicación en estos equipos necesitará contenido necesario escalar verticalmente para satisfacer las necesidades de ver el contenido a una distancia de visualización normal para el dispositivo. A partir de 2014, el destino principal para las pantallas de alta densidad es dispositivos (teléfonos, equipos portátiles de ostra y tabletas) de informática móvil.  
@@ -174,7 +173,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  Para habilitar la interfaz de usuario usar este ajuste de escala doble, el marcado XAML para mostrar cada elemento de imagen debe modificarse. Los ejemplos siguientes muestran cómo usar el ajuste de escala doble en WPF en Visual Studio mediante la biblioteca de DpiHelper y Shell.12/14.  
   
- Paso 1: Prescale la imagen a 200%, 300% y así sucesivamente con NearestNeighbor.  
+ Paso 1: Prescale la imagen de 200%, 300% y así sucesivamente con NearestNeighbor.  
   
  Prescale la imagen mediante cualquier un convertidor que se aplica en un enlace o con una extensión de marcado XAML. Por ejemplo:  
   
@@ -204,7 +203,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 </Image>  
 ```  
   
- Paso 2: Asegurarse que el tamaño final es correcto para el valor de PPP actual.  
+ Paso 2: Asegúrese de que el tamaño final es correcto para el valor de PPP actual.  
   
  Dado que WPF escalará la interfaz de usuario para el valor de PPP actual mediante la propiedad BitmapScalingMode establecido en el UIElement, un control de imagen con una imagen prescaled como su origen tendrá un aspecto dos o tres veces mayor que la debería. Los siguientes son un par de formas para contrarrestar este efecto:  
   

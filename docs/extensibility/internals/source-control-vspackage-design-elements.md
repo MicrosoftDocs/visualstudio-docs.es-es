@@ -1,9 +1,6 @@
 ---
-title: Elementos de diseño de VSPackage de Control de origen | Documentos de Microsoft
-ms.custom: ''
+title: Los elementos de diseño de VSPackage de Control de origen | Documentos de Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, design elements
@@ -13,26 +10,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb741a7dc7423c27baed2cd79476239f4e41a170
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f4446bb0cab421e06910ac7f7c5893680c36edf6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130234"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872244"
 ---
-# <a name="source-control-vspackage-design-elements"></a>Elementos de diseño de VSPackage del Control de código fuente
-Los temas de esta sección describen la estructura de control de código fuente VSPackage debe implementar para la integración profunda. También se muestran las interfaces y los servicios que el origen de control VSPackage pueden implementar y las interfaces y los servicios puede usar el control de código fuente VSPackage desde otros [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] modelo y la funcionalidad de control de componentes para admitir su origen.  
+# <a name="source-control-vspackage-design-elements"></a>Elementos de diseño de VSPackage de control de código fuente
+Los temas de esta sección describen la estructura de VSPackage debe implementar para la integración profunda el control de código fuente. También se muestran las interfaces y que el VSPackage de control de origen de los servicios pueden implementar y las interfaces y los servicios puede usar el paquete VSPackage de control de código fuente de otros [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] componentes para admitir su origen de controlan la funcionalidad y modelo.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Estructura de VSPackage](../../extensibility/internals/vspackage-structure-source-control-vspackage.md)  
- Define la estructura del control de código fuente VSPackage.  
+ Define la estructura del VSPackage de control de origen.  
   
  [Interfaces y servicios relacionados](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)  
- Enumera los interfaces relacionadas con el paquete de control de origen y servicios.  
+ Enumera las interfaces relacionadas con el paquete de control de origen y servicios.  
   
  [Servicios proporcionados](../../extensibility/internals/services-provided-source-control-vspackage.md)  
- Describe el servicio de control de origen proporcionado por el control de código fuente VSPackage.  
+ Describe el servicio de control de código fuente proporcionado por el VSPackage de control de código fuente.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Creación de un VSPackage de control de código fuente](../../extensibility/internals/creating-a-source-control-vspackage.md)  
- Describe cómo crear un control de código fuente VSPackage que no solo proporciona funcionalidad de control de código fuente, pero se puede usar para personalizar el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfaz de usuario de control de código fuente.
+ Describe cómo crear un control de código fuente VSPackage que no solo proporciona la funcionalidad de control de código fuente, pero se puede usar para personalizar el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] la interfaz de usuario de control de código fuente.
