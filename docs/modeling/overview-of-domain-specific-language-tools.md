@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 538ebb2121c488fa56f693a424f91b8af19a0c3e
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 255dad6de728fd503f004522a79228546e4a288c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966848"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892308"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Información general sobre las herramientas de los lenguajes específicos de dominio
 Herramientas de lenguajes específicos de dominio (herramientas DSL), que se hospeda en Visual Studio, le permiten diseñar un lenguaje específico de dominio y, a continuación, generar todo lo que los usuarios deben tener para crear modelos que se basan en el lenguaje.
@@ -66,7 +65,7 @@ Herramientas de lenguajes específicos de dominio (herramientas DSL), que se hos
 ## <a name="validation-in-dsl-tools"></a>Validación de las herramientas de DSL
  DSL proporciona un nivel de validación para asegurarse de que el modelo de dominio cumple los requisitos básicos para la generación de código. Normalmente, cuando se crea su propio lenguaje específico de dominio, agregaría su propia validación para expresar las reglas de lógica de negocios. Para obtener más información acerca de la validación personalizada, vea [validación en los lenguajes específicos de dominio](../modeling/validation-in-a-domain-specific-language.md).
 
- Se recomienda que valide su lenguaje específico de dominio a menudo cuando se está diseñando. Si su lenguaje específico de dominio tiene errores de validación, no se puede generar código fuente. El proceso de generar código fuente a partir de las plantillas se realiza haciendo **Transformar todas las plantillas** en la barra de herramientas del explorador de soluciones. Cada vez que modifique la definición del lenguaje, asegúrese también de **Transformar todas las plantillas**. Para obtener más información, consulte [Cómo: crear soluciones de lenguajes específicos de dominio](../modeling/how-to-create-a-domain-specific-language-solution.md).
+ Se recomienda que valide su lenguaje específico de dominio a menudo cuando se está diseñando. Si su lenguaje específico de dominio tiene errores de validación, no se puede generar código fuente. El proceso de generar código fuente a partir de las plantillas se realiza haciendo **Transformar todas las plantillas** en la barra de herramientas del explorador de soluciones. Cada vez que modifique la definición del lenguaje, asegúrese también de **Transformar todas las plantillas**. Para obtener más información, vea [Cómo: Crear una solución de lenguaje específico de dominio](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="customization-of-dsl-tools"></a>Personalización de las herramientas DSL
  Puede proporcionar código adicional para refinar el comportamiento del modelo y para definir restricciones sobre su idioma. Si es necesario, puede realizar cambios significativos mediante la modificación de las plantillas de texto.

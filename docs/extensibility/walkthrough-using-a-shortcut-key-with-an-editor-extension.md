@@ -1,9 +1,6 @@
 ---
-title: 'Tutorial: Usar una tecla de método abreviado con una extensión del Editor | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Uso de una tecla de método abreviado con una extensión del Editor | Documentos de Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d009351efdd36e0d415d0e2e457f7974608ab665
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e669b86a84f21dd6187558fc0a853c875d5d2e71
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886505"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953016"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Tutorial: Usar una tecla de método abreviado con una extensión del editor
 Puede responder a teclas de método abreviado en la extensión del editor. El siguiente tutorial muestra cómo agregar un elemento de gráfico de vista a una vista de texto mediante una tecla de método abreviado. En este tutorial se basa en la plantilla del editor de elemento gráfico de área de visualización, y permite agregar el elemento de gráfico con el carácter +.  
@@ -80,7 +77,7 @@ Antes de Visual Studio 2017 versión 15.6, la única manera de controlar los com
 3.  La clase denominada KeyBindingCommandFilter debe heredar de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
   
     ```csharp  
-    internal class KeyBindingCommandFilter : IOleCommandTarget  
+    internal class KeyBindingCommandFilter : IOleCommandTarget  
     ```  
   
 4.  Agregue los campos privados de la vista de texto, el comando siguiente en la cadena de comandos y una marca para representar si ya se ha agregado el filtro de comandos.  
@@ -88,8 +85,8 @@ Antes de Visual Studio 2017 versión 15.6, la única manera de controlar los com
     ```csharp  
     private IWpfTextView m_textView;  
     internal IOleCommandTarget m_nextTarget;  
-    internal bool m_added;  
-    internal bool m_adorned;  
+    internal bool m_added;  
+    internal bool m_adorned;  
     ```  
   
 5.  Agregue un constructor que establece la vista de texto.  

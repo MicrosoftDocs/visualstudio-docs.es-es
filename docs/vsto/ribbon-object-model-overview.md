@@ -1,9 +1,6 @@
 ---
 title: Información general sobre el modelo de objetos de cinta de opciones
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25e34dcb38685a885ae0730740c25e1cb502e15c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e8c0e18146361cfbe89433d79962afcb89de3061
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910594"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961314"
 ---
 # <a name="ribbon-object-model-overview"></a>Información general sobre el modelo de objetos de cinta de opciones
   La [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] expone un modelo de objetos fuertemente tipados que puede usar para obtener y establecer las propiedades de controles de cinta de opciones en tiempo de ejecución. Por ejemplo, dinámicamente puede rellenar los controles de menú, o mostrar y ocultar controles contextualmente. También puede agregar pestañas, grupos y controles a una cinta de opciones, pero antes de que se carga la cinta de opciones mediante la aplicación de Office. Para obtener información, consulte [establecer las propiedades que se vuelven de solo lectura](#SettingReadOnlyProperties).  
@@ -190,13 +187,12 @@ ms.locfileid: "49910594"
 ## <a name="see-also"></a>Vea también  
  [Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Información general de la cinta de opciones](../vsto/ribbon-overview.md)   
- [Cómo: empezar a personalizar la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [Cómo: Introducción a la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Diseñador de cinta](../vsto/ribbon-designer.md)   
  [Tutorial: Crear una pestaña personalizada usando el Diseñador de cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [Tutorial: Actualizar los controles de una cinta en tiempo de ejecución](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
  [Personalizar una cinta de opciones para Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
- [Cómo: personalizar una pestaña integrada](../vsto/how-to-customize-a-built-in-tab.md)   
- [Cómo: agregar controles a la vista Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [Cómo: exportar una cinta desde el Diseñador de cinta al XML de cinta](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
- [Cómo: agregar en Mostrar errores de interfaz de usuario](../vsto/how-to-show-add-in-user-interface-errors.md)  
- 
+ [Cómo: Personalizar una pestaña integrada](../vsto/how-to-customize-a-built-in-tab.md)   
+ [Cómo: Agregar controles a la vista Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [Cómo: Exportar una cinta desde el Diseñador de cinta al XML de cinta](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
+ [Cómo: Mostrar errores de interfaz de usuario del complemento](../vsto/how-to-show-add-in-user-interface-errors.md)  

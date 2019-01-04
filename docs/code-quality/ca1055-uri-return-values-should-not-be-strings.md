@@ -2,7 +2,6 @@
 title: 'CA1055: Los valores devueltos URI no deben ser cadenas'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1055
@@ -20,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1189552960ac57aebc37373e2a6d32249faf12dd
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: d70b35b316d4299af5927759fd48601efc47b2a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548335"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838942"
 ---
 # <a name="ca1055-uri-return-values-should-not-be-strings"></a>CA1055: Los valores devueltos URI no deben ser cadenas
 

@@ -1,9 +1,6 @@
 ---
 title: Crear paquetes de soluciones de SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,31 +13,31 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 87b80d7c607cf4de686e601263bcb67dcc2f92ae
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 0d275b7d2e4ccfea5d89148b6b46883fa32e6560
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326857"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966669"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Crear paquetes de solución SharePoint
   Con el Diseñador de paquetes, puede crear y personalizar paquetes de implementación. Por ejemplo, puede agregar elementos y características de proyecto de SharePoint, restablecer el servidor IIS, establecer los ámbitos de activación de las características e identificar las dependencias de las características. El diseñador también genera un manifiesto, un archivo XML en el que se describe cada paquete.  
   
 ## <a name="packaging-tools"></a>Herramientas de empaquetado
- Puede usar el **Diseñador de paquetes** para personalizar el paquete y generar el manifiesto. Puede incluir elementos de proyecto de SharePoint, configurar si se debería restablecer el servidor web y establecer el tipo de servidor de implementación. Para obtener más información, consulte [Cómo: agregar y quitar características y elementos de un paquete mediante el Diseñador de paquetes](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).  
+ Puede usar el **Diseñador de paquetes** para personalizar el paquete y generar el manifiesto. Puede incluir elementos de proyecto de SharePoint, configurar si se debería restablecer el servidor web y establecer el tipo de servidor de implementación. Para obtener más información, vea [Cómo: Agregar y quitar características y elementos de un paquete mediante el Diseñador de paquetes](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).  
   
- Como alternativa, puede usar el **Explorador de empaquetado** para modificar las características y elementos en el archivo de paquete (*.wsp*). Para obtener más información, consulte [Cómo: agregar y quitar características y elementos de un paquete mediante el Explorador de empaquetado](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
+ Como alternativa, puede usar el **Explorador de empaquetado** para modificar las características y elementos en el archivo de paquete (*.wsp*). Para obtener más información, vea [Cómo: Agregar y quitar características y elementos de un paquete mediante el Explorador de empaquetado](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
   
- Puede usar Visual Studio y MSBuild para crear paquete (*.wsp*) archivos para implementar la solución de SharePoint. Este proceso genera los archivos de manifiesto necesarios para la implementación de SharePoint. Para obtener más información, consulte [Cómo: crear un paquete de solución de SharePoint mediante el uso de las tareas de MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).  
+ Puede usar Visual Studio y MSBuild para crear paquete (*.wsp*) archivos para implementar la solución de SharePoint. Este proceso genera los archivos de manifiesto necesarios para la implementación de SharePoint. Para obtener más información, vea [Cómo: Crear un paquete de solución de SharePoint mediante el uso de las tareas de MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).  
   
 ## <a name="package-designer-options"></a>Opciones del Diseñador de paquetes
  En la tabla siguiente se muestra las propiedades que se pueden personalizar en los paquetes de SharePoint con el **Diseñador de paquetes**.  
   
 |Propiedad del Diseñador de paquetes|Descripción del valor predeterminado|  
 |-------------------------------|------------------------------------|  
-|nombre|Requerido. El nombre predeterminado del paquete se establece en *ProjectName*.|  
+|nombre|Obligatorio. El nombre predeterminado del paquete se establece en *ProjectName*.|  
 |Restablecer WebServer|Opcional. Seleccione si desea reiniciar el servidor Web después de la *.wsp* archivo está instalado en el servidor de SharePoint.|  
-|Tipo de servidor de implementación|Requerido. De forma predeterminada, el ámbito se establece en ApplicationServer.<br /><br /> ApplicationServer: Describe un servidor que hospeda servicios.<br /><br /> WebFrontEnd: Describe un servidor que hospeda sitios Web.|  
+|Tipo de servidor de implementación|Obligatorio. De forma predeterminada, el ámbito se establece en ApplicationServer.<br /><br /> ApplicationServer: Describe un servidor que hospeda servicios.<br /><br /> WebFrontEnd: Describe un servidor que hospeda sitios web.|  
 |Elementos de la solución|Todos los elementos y las características de proyecto de SharePoint que se pueden agregar al paquete.|  
 |Elementos del paquete|Opcional. Todos los elementos y características de SharePoint que desea implementar en su paquete.|  
   
@@ -54,7 +51,7 @@ ms.locfileid: "36326857"
 |BeforeLayout|El destino que realiza las tareas inmediatamente antes de que los archivos se copien en un directorio intermedio. Puede modificar los archivos antes de crear un archivo de paquete (*.wsp*).|  
 |AfterLayout|El destino que realiza las tareas inmediatamente después de que los archivos se copien en un directorio intermedio.|  
   
- Para obtener más información, [Cómo: personalizar un paquete de solución de SharePoint mediante destinos de MSBuild](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md).  
+ Para obtener más información, [Cómo: Personalizar un paquete de solución de SharePoint mediante destinos de MSBuild](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md).  
   
 ## <a name="packaging-architecture"></a>Arquitectura de empaquetado
  Los pasos siguientes se producen cuando se crea un paquete de SharePoint (*.wsp*) en Visual Studio.  
@@ -75,10 +72,8 @@ ms.locfileid: "36326857"
  Al empaquetar el proyecto de SharePoint, un *.wsp* archivo se crea automáticamente en el *SolutionFolder\bin\\\<BuildConfiguration >* carpeta. Por ejemplo, si la solución está en *C:\Visual Studio 2013\proyectos\listdefinition1* y la configuración de compilación se establece en la versión, la *.wsp* archivo se encuentra en *C:\Visual Studio 2013\ Projects\ListDefinition1\bin\Release*.  
   
 ## <a name="see-also"></a>Vea también
- [Cómo: personalizar un paquete de solución de SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
- [Cómo: agregar y quitar características y elementos de un paquete mediante el Diseñador de paquetes](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)   
- [Cómo: crear un paquete de solución de SharePoint mediante el uso de las tareas de MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
- [Cómo: crear un paquete de solución de SharePoint mediante el uso de las tareas de MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
- [Cómo: personalizar un paquete de solución de SharePoint mediante destinos de MSBuild](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md)  
-  
- 
+ [Cómo: Personalizar un paquete de solución de SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
+ [Cómo: Agregar y quitar características y elementos de un paquete mediante el Diseñador de paquetes](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)   
+ [Cómo: Crear un paquete de solución de SharePoint mediante el uso de las tareas de MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
+ [Cómo: Crear un paquete de solución de SharePoint mediante el uso de las tareas de MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
+ [Cómo: Personalizar un paquete de solución de SharePoint mediante destinos de MSBuild](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md)  

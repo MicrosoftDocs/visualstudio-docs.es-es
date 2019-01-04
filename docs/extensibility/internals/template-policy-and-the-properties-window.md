@@ -1,9 +1,6 @@
 ---
 title: Directiva de plantilla y la ventana Propiedades | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, template policy
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cf24f6f769ea9344d2a7716856e3c84fdf122de
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ff518df5025131a369e0f82da44cb38a7e6a57da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816331"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960870"
 ---
 # <a name="template-policy-and-the-properties-window"></a>Directiva de plantilla y ventana Propiedades
 Cuando un proyecto se encuentra dentro de una plantilla de proyecto, esa plantilla de proyecto puede aplicar directivas. Directiva de plantilla se convierte en un sistema de restricción que se puede utilizar para establecer valores predeterminados para las propiedades, ocultar propiedades, agregar propiedades y así sucesivamente.  

@@ -1,9 +1,6 @@
 ---
 title: Características disponibles por tipo de aplicación y el proyecto de Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,12 +19,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c495119dea17fa7d4a848c6e3d6f5b16128af378
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 679b0456548a675545d81353332ddb70dcce8cdc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648157"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986406"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Características disponibles por tipo de aplicación y el proyecto de Office
   Visual Studio tiene varios tipos de plantillas de proyecto que admiten diferentes escenarios empresariales para las aplicaciones de Microsoft Office, incluyendo los siguientes tipos:  
@@ -77,5 +74,3 @@ ms.locfileid: "53648157"
  [Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)   
  [Datos almacenados en caché en las personalizaciones de nivel de documento](../vsto/cached-data-in-document-level-customizations.md)   
  [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)  
-  
-  

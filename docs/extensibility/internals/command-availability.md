@@ -1,8 +1,6 @@
 ---
 title: Disponibilidad de comandos | Microsoft Docs
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, context
@@ -13,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98250763f504bc7d142f15e559334f296a2e026b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 7ac9a172ee2cb7a117a1d9b63c4f1fef9f631952
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511139"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915875"
 ---
 # <a name="command-availability"></a>Disponibilidad de los comandos
 
@@ -30,17 +28,17 @@ Los siguientes contextos de comando son los más comunes:
 
 - IDE: Comandos proporcionados por el IDE están siempre disponibles.
 
-- VSPackage: Puede definir los VSPackages cuando son los comandos para mostrar u ocultar.
+- Paquete de VS: Puede definir los VSPackages cuando son los comandos para mostrar u ocultar.
 
 - Proyecto: Comandos de proyecto solo se muestran para el proyecto seleccionado actualmente.
 
-- Editor: Puede ser solo editor activo a la vez. Hay comandos desde el editor activo. Un editor trabaja en estrecha colaboración con un servicio de lenguaje. El servicio de lenguaje debe procesar sus comandos en el contexto del editor asociado.
+- Editor: Solo editor pueden activarse en un momento. Hay comandos desde el editor activo. Un editor trabaja en estrecha colaboración con un servicio de lenguaje. El servicio de lenguaje debe procesar sus comandos en el contexto del editor asociado.
 
-- Tipo de archivo: un editor puede cargar más de un tipo de archivo. Pueden cambiar los comandos disponibles según el tipo de archivo.
+- Tipo de archivo: Un editor puede cargar más de un tipo de archivo. Pueden cambiar los comandos disponibles según el tipo de archivo.
 
-- Ventana activa: la última ventana de documento activo, Establece el contexto de interfaz de usuario para los enlaces de teclado. Sin embargo, una ventana de herramientas que tiene una tabla de enlace de teclado que es similar al explorador web interno también puede establecer el contexto de interfaz de usuario. Para ventanas de documento con múltiples fichas, como el editor HTML, cada pestaña tiene un GUID de contexto de otro comando. Una vez registrada una ventana de herramientas, siempre está disponible en el **vista** menú.
+- Ventana activa: La última ventana de documento activo, Establece el contexto de interfaz de usuario para los enlaces de teclado. Sin embargo, una ventana de herramientas que tiene una tabla de enlace de teclado que es similar al explorador web interno también puede establecer el contexto de interfaz de usuario. Para ventanas de documento con múltiples fichas, como el editor HTML, cada pestaña tiene un GUID de contexto de otro comando. Una vez registrada una ventana de herramientas, siempre está disponible en el **vista** menú.
 
-- Contexto de interfaz de usuario: contextos de interfaz de usuario se identifican mediante los valores de la <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT> clase, por ejemplo, <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid> cuando se compila la solución, o <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid> cuando el depurador está activo. Varios contextos de interfaz de usuario pueden ser activos al mismo tiempo.
+- Contexto de interfaz de usuario: Contextos de interfaz de usuario se identifican mediante los valores de la <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT> clase, por ejemplo, <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid> cuando se compila la solución, o <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid> cuando el depurador está activo. Varios contextos de interfaz de usuario pueden ser activos al mismo tiempo.
 
 ## <a name="define-custom-context-guids"></a>Definir los GUID de contexto personalizado
 

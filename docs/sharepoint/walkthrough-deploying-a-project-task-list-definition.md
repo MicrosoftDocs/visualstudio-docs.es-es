@@ -1,13 +1,8 @@
 ---
-title: 'Tutorial: Implementar una definición de lista de tareas de proyecto | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Implementación de una definición de lista de tareas de proyecto | Documentos de Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0e0a0338f14ecdea36c5a5678a42a76ae234bb6d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3df4f161eddc5d10b77887b99d93be2204821c24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280368"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826629"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>Tutorial: Implementar una definición de lista de tareas de proyecto
 
@@ -143,7 +138,7 @@ Después de compilar y probar la lista de tareas de proyecto, puede implementarl
 
 En la barra de menús de Visual Studio, elija **compilar** > **implementar solución**.
 
-Visual Studio se recicla el grupo de aplicaciones de IIS, retira las versiones existentes de la solución, copia el paquete de solución (*.wsp*) del archivo a SharePoint y, a continuación, activa sus características. Ahora puede usar la solución en SharePoint. Para obtener más información acerca de los pasos de configuración de implementación, consulte [Cómo: editar una configuración de implementación de SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
+Visual Studio se recicla el grupo de aplicaciones de IIS, retira las versiones existentes de la solución, copia el paquete de solución (*.wsp*) del archivo a SharePoint y, a continuación, activa sus características. Ahora puede usar la solución en SharePoint. Para obtener más información acerca de los pasos de configuración de implementación, consulte [Cómo: Editar una configuración de implementación de SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
 
 ### <a name="to-deploy-the-project-task-list-to-a-remote-system"></a>Para implementar la lista de tareas de proyecto en un sistema remoto
 
@@ -175,7 +170,7 @@ Puede obtener más información sobre cómo personalizar e implementar solucione
 
 - [Tutorial: Crear una columna de sitio, el tipo de contenido y la lista de SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)
 
-- [Cómo: crear un receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)
+- [Cómo: Crear un receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)
 
 - [Windows PowerShell para SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=217684)
 

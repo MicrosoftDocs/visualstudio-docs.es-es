@@ -1,9 +1,6 @@
 ---
 title: '&lt;postActions&gt; elemento (desarrollo de Office en Visual Studio)'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c2036cf0d632fcf545dfde0ec4c43caa788a85ed
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 2b719ec4b796e052abc018734b4acc3acbc0b138
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804817"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845063"
 ---
 # <a name="ltpostactionsgt-element-office-development-in-visual-studio"></a>&lt;postActions&gt; elemento (desarrollo de Office en Visual Studio)
   El elemento `postActions` del espacio de nombres `vstav3` , contiene todos los elementos `postAction` que describen las acciones posteriores a la implementación y que se ejecutan una vez instaladas las soluciones de Office.

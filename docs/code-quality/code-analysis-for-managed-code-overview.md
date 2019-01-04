@@ -2,7 +2,6 @@
 title: Análisis de código estático para código administrado
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.projectpropertypages.codeanalysis
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c76ee4a98694fee811b9edea4bcd8a095640cd25
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: d609413f0c0c955ef334e6b4e25719d59ab06e64
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739687"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987108"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Información general del análisis de código estático de código administrado en Visual Studio
 

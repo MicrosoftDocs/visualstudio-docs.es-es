@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: f54589d70bc7cab3959d7f0a7ad2a84d3b028754
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f86082c1b382904dc721d3caab54bf6d18418096
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877197"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938327"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Propiedades calculadas y de almacenamiento personalizado
 Todas las propiedades de dominio en un lenguaje específico de dominio (DSL) se pueden mostrar al usuario en el diagrama y en el explorador del lenguaje y pueden tener acceso a código de programa. Sin embargo, las propiedades difieren de la manera en que se almacenan sus valores.
@@ -45,7 +44,7 @@ Todas las propiedades de dominio en un lenguaje específico de dominio (DSL) se 
 
 4.  En el menú **Compilar** , haga clic en **Compilar solución**.
 
-     Recibirá el siguiente mensaje de error: "*Suclase* no contiene una definición para Get*Supropiedad*."
+     Puede recibir el mensaje de error siguiente: "*Suclase* no contiene una definición para Get*Supropiedad*."
 
 5.  Haga doble clic en el mensaje de error.
 

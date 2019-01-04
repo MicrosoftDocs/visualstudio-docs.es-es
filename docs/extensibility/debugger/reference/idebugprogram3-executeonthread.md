@@ -1,9 +1,6 @@
 ---
 title: IDebugProgram3::ExecuteOnThread | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProgram3::ExecuteOnThread
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: afca4a97380d010897ca1dfb7c6229f3f1897ef9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cbb2650fc2c001e57de7b1820cff238c8963e8cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865952"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889441"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
 Ejecuta el programa de depurador. El subproceso se devuelve para proporcionar la información del depurador en el subproceso que el usuario está viendo cuando se ejecuta el programa.  
@@ -48,9 +45,9 @@ int ExecuteOnThread(
   
 - Ejecute: Cancelar cualquier paso anterior y ejecutar hasta el siguiente punto de interrupción y así sucesivamente.  
   
-- Paso: Cancelar un paso anterior y ejecutar hasta que se complete el paso nuevo.  
+- Paso: Cancelar cualquier paso anterior y ejecutar hasta que se complete el paso nuevo.  
   
-- Continuar: Vuelva a ejecutar y dejar activa la cualquier paso anterior.  
+- Continuar: Ejecute de nuevo y dejar activa cualquier paso anterior.  
   
   El subproceso pasa a `ExecuteOnThread` es útil al decidir qué paso para cancelar. Si no conoce el subproceso, que se ejecuta ejecutar cancela todos los pasos. Con el conocimiento del subproceso, solo deberá cancelar el paso en el subproceso activo.  
   

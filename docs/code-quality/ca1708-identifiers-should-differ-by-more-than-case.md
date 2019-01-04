@@ -1,8 +1,7 @@
 ---
-title: 'CA1708: Los identificadores se deberían diferenciar en algo más que en el uso de mayúsculas y minúsculas'
+title: 'CA1708: Los identificadores se deben diferenciar en algo más que en el uso de mayúsculas y minúsculas'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - IdentifiersShouldDifferByMoreThanCase
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b2bda5a9f5d569057455af9e31fb5d6852c9881e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4fd2ac35d5c6df5e1ffc3d49ea3089bb4ee3ea77
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815499"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833250"
 ---
-# <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: Los identificadores se deberían diferenciar en algo más que en el uso de mayúsculas y minúsculas
+# <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: Los identificadores se deben diferenciar en algo más que en el uso de mayúsculas y minúsculas
 
 |||
 |-|-|
@@ -52,4 +51,4 @@ ms.locfileid: "49815499"
  [!code-csharp[FxCop.Naming.IdentifiersShouldDifferByMoreThanCase#1](../code-quality/codesnippet/CSharp/ca1708-identifiers-should-differ-by-more-than-case_1.cs)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA1709: Los identificadores deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709: Los identificadores deberían escribirse correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)

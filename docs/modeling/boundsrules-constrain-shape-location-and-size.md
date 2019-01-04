@@ -10,21 +10,20 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 104a74a38099286675a742ce9eea367d9eeabe84
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 449fb0c12b11163ba0ceca981e66a7da0c399e1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944393"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950204"
 ---
 # <a name="boundsrules-constrain-shape-location-and-size"></a>Ubicación y tamaño de las reglas de restricción de formas BoundsRules
 
-A *regla límites* es una clase que define los límites en el tamaño y la ubicación de una forma. Proporciona un método que se llama repetidamente mientras un usuario está arrastrando una forma o los extremos o lados de una forma.
+Un *regla de límites* es una clase que define los límites en el tamaño y la ubicación de una forma. Proporciona un método que se llama repetidamente mientras un usuario está arrastrando una forma o los extremos o lados de una forma.
 
-En el ejemplo siguiente, se restringe una forma rectangular como una barra de tamaño fijo, horizontal o vertical. Cuando el usuario arrastra los extremos o lados, voltea el esquema entre las dos configuraciones permitidas de alto y ancho.
+En el ejemplo siguiente se restringe a una forma rectangular sea una barra de tamaño fijo, ya sea horizontal o vertical. Cuando el usuario arrastra los extremos o lados, el esquema se voltea entre las dos configuraciones permitidas de alto y ancho.
 
-Los límites de reglas es una clase derivada de <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>. Se crea una instancia de la regla en la forma:
+Los límites de regla es una clase derivada de <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>. En la forma se crea una instancia de la regla:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling.Diagrams; ...
@@ -66,7 +65,7 @@ public class BarBoundsRule: BoundsRules
 } } }
 ```
 
-Tenga en cuenta que la ubicación y el tamaño pueden restringirse si desea.
+Tenga en cuenta que se pueden restringir la ubicación y el tamaño si desea.
 
 ## <a name="see-also"></a>Vea también
 

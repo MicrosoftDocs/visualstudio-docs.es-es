@@ -1,9 +1,6 @@
 ---
 title: IDebugPointerObject | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPointerObject
@@ -15,23 +12,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be877cc57bfac0d4fe083f3a3101c26c2f2306cd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ea5c75c1fb2737459107b21652aa43b8ea38e526
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117353"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844700"
 ---
 # <a name="idebugpointerobject"></a>IDebugPointerObject
 > [!IMPORTANT]
->  Visual Studio 2015, esta forma de implementar los evaluadores de expresión está en desuso. Para obtener información acerca de cómo implementar los evaluadores de expresión de CLR, vea [evaluadores de expresión de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [Managed expresión evaluador Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  En Visual Studio 2015, esta forma de implementar los evaluadores de expresión está en desuso. Para obtener información sobre la implementación de evaluadores de expresión de CLR, vea [evaluadores de expresiones CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [Managed expresión del evaluador de expresiones Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Esta interfaz representa un objeto de puntero.  
   
 ## <a name="syntax"></a>Sintaxis  
   
 ```  
-IDebugPointerObject : IDebugObject  
+IDebugPointerObject : IDebugObject  
 ```  
   
 ## <a name="notes-for-implementers"></a>Notas para los implementadores  
@@ -45,9 +42,9 @@ IDebugPointerObject : IDebugObject
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[Desreferencia](../../../extensibility/debugger/reference/idebugpointerobject-dereference.md)|Obtiene el objeto al que señala la interfaz.|  
-|[GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)|Obtiene el valor al que hace referencia la interfaz como una serie de bytes consecutivos.|  
-|[SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)|Establece el valor al que apunta la interfaz de una serie de bytes consecutivos.|  
+|[Dereference](../../../extensibility/debugger/reference/idebugpointerobject-dereference.md)|Obtiene el objeto al que señala la interfaz.|  
+|[GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)|Obtiene el valor que indique la interfaz como una serie de bytes consecutivos.|  
+|[SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)|Establece el valor al que se señala la interfaz de una serie de bytes consecutivos.|  
   
 ## <a name="remarks"></a>Comentarios  
  Un evaluador de expresiones utiliza esta interfaz para representar un puntero en un árbol de análisis.  
@@ -55,7 +52,7 @@ IDebugPointerObject : IDebugObject
 ## <a name="requirements"></a>Requisitos  
  Encabezado: ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   

@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramProvider2 | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramProvider2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec46442757d7e4b59437db310a45500b2e9d0906
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6fca410ed773b2a062623465c78942484c692f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120564"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857350"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
-Esta interfaz registrada permite la depuración de sesión (SDM) para obtener información acerca de los programas que se han "publicado" mediante el Administrador de la [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) interfaz.  
+Esta interfaz registrada permite la depuración de la sesión manager (SDM) para obtener información acerca de los programas que se han "publicado" a través de la [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) interfaz.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -32,27 +29,27 @@ IDebugProgramProvider2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Notas para los implementadores  
- El motor de depuración (Alemania) implementa esta interfaz para proporcionar información acerca de los programas que se está depurando. Esta interfaz está registrada en la sección del registro con la métrica `metricProgramProvider`, tal y como se describe en [aplicaciones auxiliares de SDK para depuración](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
+ El motor de depuración (DE) implementa esta interfaz para proporcionar información acerca de los programas que se está depurando. Esta interfaz está registrada en la sección del registro con la métrica `metricProgramProvider`, tal y como se describe en [aplicaciones auxiliares de SDK para depuración](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
   
 ## <a name="notes-for-callers"></a>Notas para los llamadores  
- Llamadas de COM `CoCreateInstance` funcionando con la `CLSID` del proveedor del programa que se obtiene del registro. Vea el ejemplo.  
+ Llame a la de COM `CoCreateInstance` funcionando con el `CLSID` del proveedor de programa que se obtiene del registro. Vea el ejemplo.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|Obtiene información acerca de los programas que ejecuta, se filtran en una variedad de formas.|  
+|[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|Obtiene información acerca de los programas que está ejecutando, el filtrado en una variedad de formas.|  
 |[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|Obtiene un nodo de programa, dado un identificador de proceso específico.|  
 |[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)|Establece una devolución de llamada para inspeccionar los eventos del proveedor asociados con determinados tipos de procesos.|  
 |[SetLocale](../../../extensibility/debugger/reference/idebugprogramprovider2-setlocale.md)|Establece una configuración regional para los recursos específicos del idioma necesarios para la DE.|  
   
 ## <a name="remarks"></a>Comentarios  
- Normalmente, un proceso usa esta interfaz para obtener información acerca de los programas que se ejecutan en ese proceso.  
+ Normalmente, un proceso usa esta interfaz para obtener información sobre los programas que se ejecutan en ese proceso.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
@@ -86,6 +83,6 @@ IDebugProgramProvider2 *GetProgramProvider(GUID *pDebugEngineGuid)
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Interfaces de núcleo](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Interfaces del núcleo](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
- [Aplicaciones auxiliares de SDK para la depuración](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
+ [Asistentes de SDK para la depuración](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

@@ -1,9 +1,6 @@
 ---
-title: 'Tutorial: Extender el Explorador de servidores para mostrar elementos Web | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Extender el Explorador de servidores para mostrar elementos Web | Documentos de Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6d32f76965c0dbef359e54bda114221e460a9bfd
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: acee9055fc250f158e05945f0db30c9ffb0fee14
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296390"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957902"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Tutorial: Extender el Explorador de servidores para mostrar elementos web
   En Visual Studio, puede usar el **conexiones de SharePoint** nodo de **Explorador de servidores** para ver los componentes de sitios de SharePoint. Sin embargo, **Explorador de servidores** no muestra algunos componentes de forma predeterminada. En este tutorial, podrá ampliar **Explorador de servidores** para que se muestre la Galería de elementos Web en cada uno conectado el sitio de SharePoint.  
@@ -43,7 +40,7 @@ ms.locfileid: "51296390"
 -   Depurar y probar la extensión.  
   
 > [!NOTE]  
->  Para obtener una versión alternativa de este tutorial que usa el modelo de objetos de cliente para SharePoint en lugar de su modelo de objetos de servidor, consulte [Tutorial: llamar al modelo de objetos de cliente de SharePoint en una extensión de explorador de servidores](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
+>  Para obtener una versión alternativa de este tutorial que usa el modelo de objetos de cliente para SharePoint en lugar de su modelo de objetos de servidor, consulte [Tutorial: Llamar al modelo de objetos de cliente de SharePoint en una extensión de explorador de servidores](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Necesitará los componentes siguientes en el equipo de desarrollo para completar este tutorial:  
@@ -377,4 +374,3 @@ ms.locfileid: "51296390"
  [Tutorial: Llamar al modelo de objetos de cliente de SharePoint en una extensión de explorador de servidores](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
  [Editor de imágenes para iconos](/cpp/windows/image-editor-for-icons)   
  [Crear un icono u otra imagen &#40;Editor de imágenes para iconos&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
-  

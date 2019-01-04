@@ -1,6 +1,5 @@
 ---
 title: Proyecto de elemento (plantillas de Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19374e37f295b6d344b2c0f3991109371b1f4454
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: c74868621725d916177df73f648766f706b71d40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561780"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950334"
 ---
 # <a name="project-element-visual-studio-templates"></a>Elemento de proyecto (plantillas de Visual Studio)
 Especifica los archivos o directorios que se agregarán al proyecto.  

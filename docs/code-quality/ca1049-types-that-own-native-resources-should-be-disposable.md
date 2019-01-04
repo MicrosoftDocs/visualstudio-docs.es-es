@@ -2,7 +2,6 @@
 title: 'CA1049: Los tipos que poseen recursos nativos deben ser descartables'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1049
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f9a2eeb032951df86d38075220c14fe98488edef
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: fc947358aa4aaf3b9d4bbe646d99e289fa383a06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552001"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834755"
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: Los tipos que poseen recursos nativos deben ser descartables
 
@@ -58,13 +57,13 @@ El patrón de diseño recomendado para limpiar los recursos no administrados es 
  [!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA2115: Llamar a GC.KeepAlive cuando se utilicen recursos nativos](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+ [CA2115: Llamar a GC. KeepAlive cuando se utilicen recursos nativos](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
 
- [CA1816: Llame a GC.SuppressFinalize correctamente](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+ [CA1816: Llamar a GC. SuppressFinalize correctamente](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
 
  [CA2216: Los tipos descartables deben declarar el finalizador](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
 
- [CA1001: Los tipos que poseen campos descartables deben ser descartables](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
+ [CA1001: los tipos que poseen campos descartables deben ser descartables](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
 
 ## <a name="see-also"></a>Vea también
 

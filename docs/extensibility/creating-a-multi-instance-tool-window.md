@@ -1,9 +1,6 @@
 ---
 title: Creación de una ventana de herramientas de instancias múltiples | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - multi
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19a41e172fd68687cffeca91bdfb4bc418ecdf60
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 1c8652531379d880d44622a4f896f5a30151cdc5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499772"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860366"
 ---
 # <a name="create-a-multi-instance-tool-window"></a>Crear una ventana de herramientas de instancias múltiples
 Puede programar una ventana de herramientas para que varias instancias del mismo pueden abrir simultáneamente. De forma predeterminada, las ventanas de herramientas pueden tener solo una instancia de abrir.  

@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: copiar y pegar formas en un documento de Visio mediante programación'
-ms.custom: ''
+title: Procedimiento Copiar y pegar formas en un documento de Visio mediante programación
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e0028b11899e05adde1dd1b5483b71d2c48101db
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: a7994d605d22b38b64219a384e5afb0b002ff755
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671500"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856493"
 ---
-# <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Cómo: copiar y pegar formas en un documento de Visio mediante programación
+# <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Procedimiento Copiar y pegar formas en un documento de Visio mediante programación
   Puede copiar formas de la página de un documento y pegarlas en una nueva página en ese mismo documento, mediante programación. Puede decidir pegarlas en la ubicación predeterminada (el centro de la ventana activa) o en las mismas ubicaciones de coordenadas de la página original.  
   
 ## <a name="copy-and-paste-shapes"></a>Copiar y pegar formas  
@@ -52,6 +49,4 @@ ms.locfileid: "50671500"
  [Soluciones de Visio](../vsto/visio-solutions.md)   
  [Información general sobre el modelo de objetos de Visio](../vsto/visio-object-model-overview.md)   
  [Trabajar con formas de Visio](../vsto/working-with-visio-shapes.md)   
- [Cómo: agregar formas a un documento de Visio mediante programación](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)  
-  
-  
+ [Cómo: Agregar formas a un documento de Visio mediante programación](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)  

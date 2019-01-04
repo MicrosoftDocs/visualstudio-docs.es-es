@@ -1,9 +1,6 @@
 ---
 title: Marcadores de bits utilizados por comandos específicos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39451e8d404e586d77de31b97db6b8dd81bdc18b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 403b9649feb24ca06cb24762f1b0cf484bed0612
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152119"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875425"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Marcadores de bits utilizados por comandos específicos
 El comportamiento de una serie de funciones en la API de complemento de Control de código fuente puede modificarse estableciendo uno o más bits en un solo valor. Estos valores se conocen como marcadores de bits. Los marcadores de bits distintos usando la API de complemento de Control de código fuente se detallan en este caso, agrupados por la función que los usa.  
@@ -37,7 +34,7 @@ El comportamiento de una serie de funciones en la API de complemento de Control 
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0 x 00|Se espera el complemento de control de código fuente para detectar automáticamente si el archivo es texto o binario.|  
 |`SCC_FILETYPE_TEXT`|0 x 01|Tipo de archivo es texto.|  
-|`SCC_FILETYPE_BINARY`|0x04|Tipo de archivo es binario. **Nota:** `SCC_FILETYPE_TEXT` y `SCC_FILETYPE_BINARY` marcas son mutuamente excluyentes.   Establecer exactamente uno o ninguno.|  
+|`SCC_FILETYPE_BINARY`|0x04|Tipo de archivo es binario. **Nota:** `SCC_FILETYPE_TEXT` y `SCC_FILETYPE_BINARY` marcas son mutuamente excluyentes. Establecer exactamente uno o ninguno.|  
 |`SCC_ADD_STORELATEST`|0 x 02|Store solo la última versión (no hay diferencias).|  
   
 ## <a name="diff-flags"></a>Marcas de comparación  
@@ -46,7 +43,7 @@ El comportamiento de una serie de funciones en la API de complemento de Control 
 |Marcar|Valor|Descripción|  
 |----------|-----------|-----------------|  
 |`SCC_DIFF_IGNORECASE`|0x0002|Omitir las diferencias de caja.|  
-|`SCC_DIFF_IGNORESPACE`|0x0004|Omitir las diferencias de espacio en blanco. **Nota:** el `SCC_DIFF_IGNORECASE` y `SCC_DIFF_IGNORESPACE` marcas son marcadores de bits opcional.|  
+|`SCC_DIFF_IGNORESPACE`|0x0004|Omitir las diferencias de espacio en blanco. **Nota:**  El `SCC_DIFF_IGNORECASE` y `SCC_DIFF_IGNORESPACE` marcas son marcadores de bits opcional.|  
 |`SCC_DIFF_QD_CONTENTS`|0x0010|QD comparando el contenido completo del archivo.|  
 |`SCC_DIFF_QD_CHECKSUM`|0x0020|PC mediante la suma de comprobación.|  
 |`SCC_DIFF_QD_TIME`|0x0040|PC con la marca de fecha y hora de archivo.|  
@@ -81,8 +78,8 @@ El comportamiento de una serie de funciones en la API de complemento de Control 
   
 |Marcar|Valor|Descripción|  
 |----------|-----------|-----------------|  
-|`SCC_GET_ALL`|0x00000001L|El IDE está pasando los directorios, no archivos: obtener todos los archivos en estos directorios.|  
-|`SCC_GET_RECURSIVE`|0x00000002L|El IDE está pasando directorios: obtener estos directorios y todos sus subdirectorios.|  
+|`SCC_GET_ALL`|0x00000001L|El IDE está pasando los directorios, no archivos: Obtener todos los archivos en estos directorios.|  
+|`SCC_GET_RECURSIVE`|0x00000002L|El IDE está pasando directorios: Obtenga estos directorios y todos sus subdirectorios.|  
   
 ## <a name="noption-values"></a>valores de nOption  
  Estas marcas se usan por el [SccSetOption](../extensibility/sccsetoption-function.md) en el `nOption` parámetro.  

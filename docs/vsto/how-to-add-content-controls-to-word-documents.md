@@ -1,9 +1,6 @@
 ---
 title: Procedimiento Contenido de agregar controles a documentos de Word
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -29,12 +26,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8a7f99768236c8945fe82645c70c586361edcdde
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 10ca0276eb6ddd392fc1ac4e584f5d9caf12fde8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648051"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905285"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Procedimiento Contenido de agregar controles a documentos de Word
   En los proyectos de nivel de documento Word, puede agregar controles de contenido al documento en el proyecto en tiempo de diseño o en tiempo de ejecución. En los proyectos de complemento VSTO de Word, puede agregar controles de contenido a cualquier documento abierto en tiempo de ejecución.  
@@ -192,4 +189,3 @@ ms.locfileid: "53648051"
  [Limitaciones de programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Programar complementos VSTO](../vsto/programming-vsto-add-ins.md)   
  [Programar personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md)  
-  

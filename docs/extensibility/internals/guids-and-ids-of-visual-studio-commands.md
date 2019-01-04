@@ -1,9 +1,6 @@
 ---
 title: GUID e identificadores de comandos de Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35e2c354293679d9cb6044b0c5f21b77aadb7f52
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 1440eb7da0299b79aa063d999d581cc159a88e50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220165"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898299"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Comandos de GUID e identificadores de Visual Studio
 Los valores GUID y el Id. de los comandos incluidos en el entorno de desarrollo integrado (IDE) de Visual Studio se definen en archivos de vsct que se instalan como parte del SDK de Visual Studio. Para obtener más información, consulte [grupos, menús y comandos definidos por el IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  

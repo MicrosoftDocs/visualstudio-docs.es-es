@@ -1,9 +1,6 @@
 ---
 title: IDebugIDECallback | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugIDECallback interface
@@ -13,18 +10,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 739c419e7f71b325a74c0a7c6dbbc31b1fd0e37f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2eb504dd34db24b6628619c1adf356aaf7dd8274
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113424"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901878"
 ---
 # <a name="idebugidecallback"></a>IDebugIDECallback
 > [!IMPORTANT]
->  Visual Studio 2015, esta forma de implementar los evaluadores de expresión está en desuso. Para obtener información acerca de cómo implementar los evaluadores de expresión de CLR, vea [evaluadores de expresión de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [Managed expresión evaluador Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  En Visual Studio 2015, esta forma de implementar los evaluadores de expresión está en desuso. Para obtener información sobre la implementación de evaluadores de expresión de CLR, vea [evaluadores de expresiones CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [Managed expresión del evaluador de expresiones Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Permite a un evaluador de expresiones (EE) mostrar un mensaje en la ventana de salida del depurador.  
+ Permite que un evaluador de expresiones (EE) mostrar un mensaje en la ventana de salida del depurador.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -36,7 +33,7 @@ IDebugIDECallback : IUnknown
  Esta devolución de llamada se implementa mediante el motor de depuración administrado.  
   
 ## <a name="notes-for-callers"></a>Notas para los llamadores  
- Puede utilizar un evaluador de expresiones para enviar la salida a la ventana de salida del depurador.  
+ Se puede consumir un evaluador de expresiones para enviar la salida a la ventana de salida del depurador.  
   
 ## <a name="methods"></a>Métodos  
  Esta interfaz implementa el método siguiente:  
@@ -46,8 +43,8 @@ IDebugIDECallback : IUnknown
 |[DisplayMessage](../../../extensibility/debugger/reference/idebugidecallback-displaymessage.md)|Envía la cadena de mensaje especificado a la ventana de salida del depurador.|  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: Ee.h  
+ Encabezado: EE.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll

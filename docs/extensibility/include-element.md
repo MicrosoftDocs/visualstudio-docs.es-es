@@ -1,9 +1,6 @@
 ---
 title: Elemento de inclusión | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - Include
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ed632610f0d6bcbf8da6e7788add001740ea446
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 16941cad9ef34f93fd443f0b9bf0192cb46c0a04
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498933"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830341"
 ---
 # <a name="include-element"></a>Elemento de inclusión
 El elemento Include especifica un archivo que se puede encontrar el proporcionado incluir ruta de acceso para la inserción en el archivo actual.  Todos los símbolos y tipos definidos formarán parte del resultado compilado.  
@@ -39,7 +36,7 @@ El elemento Include especifica un archivo que se puede encontrar el proporcionad
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|href|Requerido. La ruta de acceso al archivo de encabezado:<br /><br /> href="stdidcmd.h"|  
+|href|Obligatorio. La ruta de acceso al archivo de encabezado:<br /><br /> href="stdidcmd.h"|  
 |Condición|Opcional. Consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos secundarios  

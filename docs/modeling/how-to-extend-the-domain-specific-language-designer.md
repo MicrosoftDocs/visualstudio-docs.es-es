@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Ampliar el diseñador de lenguajes específicos de dominio'
+title: Procedimiento Ampliar el Diseñador de lenguaje específico de dominio
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,15 +8,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6a2388619dea31696fe4416032cc12cd1fe5b372
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: d1cec12a7a97ffa23f2eb75ffd9fc53da8ad2ed1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860373"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940711"
 ---
-# <a name="how-to-extend-the-domain-specific-language-designer"></a>Cómo: Ampliar el diseñador de lenguajes específicos de dominio
+# <a name="how-to-extend-the-domain-specific-language-designer"></a>Procedimiento Ampliar el Diseñador de lenguaje específico de dominio
 
 Puede crear extensiones para el diseñador que se usa para editar definiciones de DSL. Tipos de extensión que puede realizar incluyen la adición de comandos de menú, agregar controladores de arrastran y haga doble clic en los gestos y reglas que se desencadenan cuando cambian de determinados tipos de valores o relaciones. Las extensiones pueden empaquetar como una extensión de integración de Visual Studio (VSIX) y distribuirse a otros usuarios.
 

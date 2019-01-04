@@ -1,8 +1,7 @@
 ---
-title: 'CA5350: No use algoritmos criptográficos no seguros'
+title: 'CA5350: No usar algoritmos criptográficos no seguros'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 4c51bb8a-fcfa-46aa-ab61-634be84c4a7a
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba5e70505db86b1497e625b216da955bba677245
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 11c13b44c2f09075550dc5872ccf76d00aae4f6f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547859"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987290"
 ---
-# <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: No use algoritmos criptográficos no seguros
+# <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: No usar algoritmos criptográficos no seguros
 
 |||
 |-|-|
@@ -47,7 +46,7 @@ Use opciones de criptografía más segura:
 
 - Para el cifrado TripleDES, use el cifrado <xref:System.Security.Cryptography.Aes> .
 
-- Para las funciones hash SHA1 o RIPEMD160, use los de la [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) familia (por ejemplo, <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
+- Para las funciones hash SHA1 o RIPEMD160, use los de la familia [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) (por ejemplo, <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>y <xref:System.Security.Cryptography.SHA256>).
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
 

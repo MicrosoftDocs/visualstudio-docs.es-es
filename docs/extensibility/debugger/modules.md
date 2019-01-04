@@ -1,9 +1,6 @@
 ---
 title: Módulos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - modules
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8750c1f6676966be8564fbf4a175a66fa180a401
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: e17bbfc494fb305e9a264c31c3b82936681347f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233170"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867334"
 ---
 # <a name="modules"></a>Módulos
 En cuanto a la arquitectura de depurador, un *módulo*:  

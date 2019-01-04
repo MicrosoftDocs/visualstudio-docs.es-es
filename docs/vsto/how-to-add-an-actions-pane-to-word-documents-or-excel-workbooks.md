@@ -1,9 +1,6 @@
 ---
 title: Procedimiento Agregar un panel de acciones a documentos de Word o libros de Excel
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7c49fcf50046148ca01e2ce4eb5ebb204874d1d0
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 4630834f1673e1c96ca67b90a8bb329951f53de1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648244"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827025"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Procedimiento Agregar un panel de acciones a documentos de Word o libros de Excel
   Para agregar un panel de acciones a un documento de Microsoft Office Word o un libro de Excel, cree primero un control de usuario de Windows Forms. A continuación, agregue el control de usuario para el <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> propiedad de la `ThisDocument.ActionsPane` campo (Word) o `ThisWorkbook.ActionsPane` campo (Excel) en el proyecto.  
@@ -83,5 +80,3 @@ ms.locfileid: "53648244"
  [Tutorial: Insertar texto en un documento desde un panel de acciones](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
  [Cómo: Administrar el diseño de controles en paneles de acciones](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
  [Tutorial: Insertar texto en un documento desde un panel de acciones](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
-  
-  

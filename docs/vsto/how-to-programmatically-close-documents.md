@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: cerrar documentos mediante programación'
-ms.custom: ''
+title: Procedimiento Cerrar documentos mediante programación
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9a846aded5d24f84fdaeac79a1bad6c61a3f5570
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7aa33ff010b85d2916c60875297709588534947d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257779"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930237"
 ---
-# <a name="how-to-programmatically-close-documents"></a>Cómo: cerrar documentos mediante programación
+# <a name="how-to-programmatically-close-documents"></a>Procedimiento Cerrar documentos mediante programación
   Puede cerrar el documento activo o especificar el documento que se va a cerrar.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -65,9 +62,8 @@ ms.locfileid: "35257779"
      [!code-csharp[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#4)]  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: abrir documentos existentes mediante programación](../vsto/how-to-programmatically-open-existing-documents.md)   
- [Cómo: guardar documentos mediante programación](../vsto/how-to-programmatically-save-documents.md)   
+ [Cómo: Abrir documentos existentes mediante programación](../vsto/how-to-programmatically-open-existing-documents.md)   
+ [Cómo: Guardar documentos mediante programación](../vsto/how-to-programmatically-save-documents.md)   
  [Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)   
  [Limitaciones de programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)  
-  

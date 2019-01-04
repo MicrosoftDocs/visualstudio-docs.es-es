@@ -1,9 +1,6 @@
 ---
 title: CONTEXT_COMPARE | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - CONTEXT_COMPARE
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a17d0b422b65093721a55d4bf8d632aba271a55
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ace149b4a7fab142749e831ddb2f56ff2d03fe40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950815"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925094"
 ---
 # <a name="contextcompare"></a>CONTEXT_COMPARE
 Especifica los criterios para comparar dos contextos de memoria.  
@@ -28,7 +25,7 @@ Especifica los criterios para comparar dos contextos de memoria.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-enum enum_CONTEXT_COMPARE {   
+enum enum_CONTEXT_COMPARE {   
    CONTEXT_EQUAL                 = 0x0001,  
    CONTEXT_LESS_THAN             = 0x0002,  
    CONTEXT_GREATER_THAN          = 0x0003,  
@@ -43,7 +40,7 @@ typedef DWORD CONTEXT_COMPARE;
 ```  
   
 ```csharp  
-public enum enum_CONTEXT_COMPARE {   
+public enum enum_CONTEXT_COMPARE {   
    CONTEXT_EQUAL                 = 0x0001,  
    CONTEXT_LESS_THAN             = 0x0002,  
    CONTEXT_GREATER_THAN          = 0x0003,  
@@ -92,7 +89,7 @@ public enum enum_CONTEXT_COMPARE {
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   

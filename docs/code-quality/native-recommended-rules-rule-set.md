@@ -2,19 +2,18 @@
 title: Conjunto de reglas Reglas recomendadas nativas
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7aab8c5796a111d90c29e7fa656749adcdf124bd
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 12e9e271e0fd6881ae19581a1678f131719c4b34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43225131"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882807"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Conjunto de reglas Reglas recomendadas nativas
 
@@ -127,7 +126,7 @@ Las reglas recomendadas nativas se centran en los problemas más graves y habitu
 |[C6518](../code-quality/c6518.md)|Tamaño de escritura en búfer no modificable|
 |[C6522](../code-quality/c6522.md)|Tipo de cadena de tamaño no válido|
 |[C6525](../code-quality/c6525.md)|Cadena de tamaño no válida, ubicación inaccesible|
-|[C6527](../code-quality/c6527.md)|Anotación no válida: la propiedad 'NeedsRelease' no se puede usar en valores de tipo void|
+|[C6527](../code-quality/c6527.md)|Anotación no válida: Propiedad 'NeedsRelease' no puede usarse en los valores de tipo void|
 |[C6530](../code-quality/c6530.md)|Estilo de cadena de formato no reconocido|
 |[C6540](../code-quality/c6540.md)|El uso de anotaciones de atributo en esta función invalidará todas las anotaciones __declspec existentes|
 |[C6551](../code-quality/c6551.md)|Especificación de tamaño no válido: no se puede analizar la expresión|
@@ -228,16 +227,16 @@ Las reglas recomendadas nativas se centran en los problemas más graves y habitu
 |[C28282](../code-quality/c28282.md)|Las cadenas de formato deben estar en las condiciones previas|
 |[C28285](../code-quality/c28285.md)|Para la función, error de sintaxis en el parámetro|
 |[C28286](../code-quality/c28286.md)|Para la función, error de sintaxis cerca del final|
-|[C28287](../code-quality/c28287.md)|Para la función, Error de sintaxis en \_en\_() anotación (nombre de parámetro no reconocido)|
-|[C28288](../code-quality/c28288.md)|Para la función, Error de sintaxis en \_en\_() anotación (nombre de parámetro no válido)|
-|[C28289](../code-quality/c28289.md)|Para la función: ReadableTo o WritableTo no tenían una especificación de límite como parámetro|
+|[C28287](../code-quality/c28287.md)|Para la función, error de sintaxis en la anotación \_At\_() (nombre de parámetro no reconocido)|
+|[C28288](../code-quality/c28288.md)|Para la función, error de sintaxis en la anotación \_At\_() (nombre de parámetro no válido)|
+|[C28289](../code-quality/c28289.md)|Para que funcione: ReadableTo o WritableTo no tenía una especificación de límite como parámetro|
 |[C28290](../code-quality/c28290.md)|la anotación de la función contiene más valores External que el número real de parámetros|
 |[C28291](../code-quality/c28291.md)|El valor null/notnull posterior en el nivel 0 de desreferenciación carece de sentido para la función.|
 |[C28300](../code-quality/c28300.md)|Operandos de expresión de tipos no compatibles para el operador|
 |[C28301](../code-quality/c28301.md)|No hay anotaciones para la primera declaración de la función.|
-|[C28302](../code-quality/c28302.md)|Adicional \_Deref\_ encontró un operador en la anotación.|
-|[C28303](../code-quality/c28303.md)|Un ambiguo \_Deref\_ encontró un operador en la anotación.|
-|[C28304](../code-quality/c28304.md)|Un mal colocado \_Notref\_ encontró un operador aplicado al token.|
+|[C28302](../code-quality/c28302.md)|Se encontró un operador \_Deref\_ adicional en la anotación.|
+|[C28303](../code-quality/c28303.md)|Se encontró un operador \_Deref\_ ambiguo en la anotación.|
+|[C28304](../code-quality/c28304.md)|Se encontró un operador \_Notref\_ mal colocado aplicado al token.|
 |[C28305](../code-quality/c28305.md)|Se descubrió un error al analizar un token.|
 |[C28306](../code-quality/c28306.md)|La anotación del parámetro está obsoleta|
 |[C28307](../code-quality/c28307.md)|La anotación del parámetro está obsoleta|

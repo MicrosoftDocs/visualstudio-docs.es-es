@@ -1,9 +1,6 @@
 ---
 title: SDK del Visor de Ayuda de Microsoft | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af324b141815813aec9eaadfcd9982689fdeb467
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 0a4ec2f9fa5fbd6e0fbbdd57bf6de6f2c9dfb0fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000352"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987056"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK del Visor de Ayuda de Microsoft
 
@@ -142,7 +139,7 @@ El cuerpo (sin incluir el encabezado y pie de página) del tema contendrá vínc
 
 4.  Agregue un fragmento de código:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5.  Agregar código específico del lenguaje texto: `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` tenga en cuenta que `devLangnu=` permite introducir otros lenguajes. Por ejemplo, `devLangnu="Fortran"` Fortran se muestra cuando el fragmento de código DisplayLanguage = Fortran
+5.  Agregue texto específico del lenguaje de código:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Tenga en cuenta que `devLangnu=` permite introducir otros lenguajes. Por ejemplo, `devLangnu="Fortran"` Fortran se muestra cuando el fragmento de código DisplayLanguage = Fortran
 
 6.  Agregar vínculos de página: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
@@ -285,11 +282,11 @@ Cuando el origen de contenido de Ayuda de Visor de Ayuda predeterminado se estab
 
 -   Características de Visual Studio asociado (VSP) emiten un valor a la bolsa de F1 (prefix.keyword de bolsa de propiedades y la dirección URL en línea para el prefijo que se encuentra en el registro): F1 envía una dirección URL de VSP + parámetros al explorador.
 
--   Las características de Visual Studio (editor de idiomas, los elementos de menú específico de Visual Studio, etc.): F1 envía una URL de Visual Studio en el explorador.
+-   Características de Visual Studio (editor de idiomas, los elementos de menú específico de Visual Studio, etcetera):  F1 envía una URL de Visual Studio en el explorador.
 
 Cuando el origen de contenido de Ayuda de Visor de Ayuda predeterminado se establece en la Ayuda local (lanzamiento en el Visor de Ayuda):
 
--   Características VSP donde coincide con la palabra clave entre F1 bolsa de propiedades y el índice de almacén local (es decir, el prefix.keyword del contenedor de propiedad = el valor se encuentra en el índice de almacén local): F1 representa el tema en el Visor de ayuda.
+-   Características VSP donde coincide con la palabra clave entre F1 bolsa de propiedades y el índice de almacén local (es decir, el prefix.keyword del contenedor de propiedad = el valor se encuentra en el índice de almacén local):  F1 representa el tema en el Visor de ayuda.
 
 -   Características de Visual Studio (ninguna opción para el archivo VSP invalidar la bolsa de propiedades que se emiten desde las características de Visual Studio): F1 representa un tema de Visual Studio en el Visor de ayuda.
 
@@ -325,7 +322,7 @@ Establezca los valores del registro siguientes para habilitar la reserva de F1 p
 
 **Base de análisis nativo Namespace**
 
-Para activar el análisis de espacio de nombres base nativo, en el registro de agregar un nuevo valor DWORD con el nombre de: BaseNativeNamespaces y establezca su valor en 1 (bajo la clave de catálogo que desean admitir).  Por ejemplo, si desea usar el catálogo de Visual Studio, puede agregar la clave para la ruta de acceso:
+Para activar el espacio de nombres base nativa de análisis, en el registro de agregar un nuevo valor DWORD con el nombre de: BaseNativeNamespaces y establezca su valor en 1 (bajo la clave de catálogo que desean admitir).  Por ejemplo, si desea usar el catálogo de Visual Studio, puede agregar la clave para la ruta de acceso:
 
 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
@@ -343,7 +340,7 @@ Un usuario, a continuación, puede registrar CustomLibrary como el espacio de no
 
 Agregue la siguiente clave del registro y el valor:
 
-Clave de ayuda HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic: mostrar los resultados de depuración en el valor de venta: Sí
+Clave de la Ayuda de HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic: Mostrar resultados de depuración en el valor de venta: SÍ
 
 En el IDE, bajo el elemento de menú Ayuda, seleccione "Depurar contexto de ayuda"
 
@@ -374,7 +371,7 @@ La versión de Visual Studio incluye a una serie de diferentes productos de Visu
 
 Personalización de marca de los paquetes se instalan por el producto que contiene el Visor de ayuda.  Productos de Visual Studio:
 
--   Un paquete de personalización de marca de reserva (Branding_\<configuración regional > MSHC) se instala en la raíz de la aplicación 2.3 de Visor de ayuda (ejemplo: C:\Program Files (x86) \Microsoft Help Viewer\v2.3) por el paquete de idioma del Visor de ayuda.  Esto se usa para los casos donde no está instalado el producto de cualquier paquete de personalización de marca (no se ha instalado contenido) o daños en el paquete de personalización de marca instalado.  Cuando se usa el paquete de personalización de marca reserva de la raíz de aplicación, se omiten los elementos de Visual Studio (logotipo y comentarios).
+-   Un paquete de personalización de marca de reserva (Branding_\<configuración regional > MSHC) se instala en la raíz de la aplicación 2.3 de Visor de ayuda (ejemplo: C:\Program archivos (x86) \Microsoft Help Viewer\v2.3) por el paquete de idioma del Visor de ayuda.  Esto se usa para los casos donde no está instalado el producto de cualquier paquete de personalización de marca (no se ha instalado contenido) o daños en el paquete de personalización de marca instalado.  Cuando se usa el paquete de personalización de marca reserva de la raíz de aplicación, se omiten los elementos de Visual Studio (logotipo y comentarios).
 
 -   Cuando se instala el contenido de Visual Studio desde el servicio de paquete de contenido, también se instala un paquete de personalización de marca (para el primer escenario de instalación del contenido de tiempo).  Si hay una actualización para el paquete de personalización de marca, la actualización se instala cuando se produce la siguiente actualización de contenido o la acción de instalación del paquete adicional.
 
@@ -445,7 +442,7 @@ Nota: las variables que se ha indicado por "{n}" tienen las dependencias del có
 | ExpandText | Expand |
 | CollapseText | Contraer |
 | Característica: | **CodeSnippet** |
-| Usar: | Texto del control de fragmento de código.  Nota: El contenido de fragmento de código con el espacio "Indivisible" cambiará a espacio. |
+| Usar: | Texto del control de fragmento de código.  Nota: Contenido de fragmento de código con el espacio "Indivisible" se cambiará a espacio. |
 | **Element** | **Valor** |
 | CopyToClipboard | Copiar en el Portapapeles |
 | ViewColorizedText | Ver texto coloreado |
@@ -615,7 +612,7 @@ El nombre de la MSHA, para los fines de este manual, es HelpContentSetup.msha (e
 
 Nota: en el siguiente ejemplo de implementación, hemos incluido el paquete de personalización de marca. Esto es importante incluir con el fin de obtener los elementos necesarios de representación de contenido de Visual Studio y los comportamientos del contenido.
 
-Ejemplo de archivo HelpContentSetup.msha: (reemplace "1 nombre de conjunto de contenido" y "contenido de conjunto de nombre 2", etc. con los nombres de archivo.)
+Ejemplo de archivo HelpContentSetup.msha: (Reemplace "1 nombre de conjunto de contenido" y "nombre de conjunto 2", etc. con los nombres de archivo de contenido.)
 
 ```html
 <html>
@@ -725,11 +722,11 @@ Definir el almacén de contenido en el registro. Para el Shell integrado, cambie
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
-   Clave: Valor de cadena LocationPath: C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15\
+   Explicación: Valor de cadena LocationPath: C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15\
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15\en-US
 
-   Clave: Valor de cadena CatalogName: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] documentación
+   Explicación: Valor de cadena CatalogName: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Documentación
 
 **Crear el proyecto**
 
@@ -806,7 +803,7 @@ Para probar esto como si implementan:
 
     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-EE. UU.
 
-    Clave: Valor de cadena CatalogName: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] documentación. Para el Shell de ISO, este es el nombre del catálogo.
+    Explicación: Valor de cadena CatalogName: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Documentación. Para el Shell de ISO, este es el nombre del catálogo.
 
 8. Copie el contenido (MSHA y MSHC o .cab) en una carpeta local.
 

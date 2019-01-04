@@ -1,9 +1,6 @@
 ---
 title: Acceso a Text vista mediante la API heredada | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text view
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fe57ab7ef5ac113f1248f89cd62ef5b9ec33ca3
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: f1878c1e3769ffaa8aedd4c4d0f26349d6f097d2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081828"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943842"
 ---
 # <a name="access-the-text-view-by-using-the-legacy-api"></a>Obtener acceso a la vista de texto mediante la API heredada
 Una vista de texto es una presentación del texto que se almacena en un búfer de texto. Puede tener acceso a la vista de texto mediante el uso de la API heredada tal como se muestra en la sección siguiente.

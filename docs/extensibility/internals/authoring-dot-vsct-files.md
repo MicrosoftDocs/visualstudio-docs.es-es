@@ -1,9 +1,6 @@
 ---
 title: Creación. Archivos Vsct | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26a5353531d997ad40b913b5ee223614d6517c55
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b39cd97bca9ee88628d064f917686d2a7f45aaa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917822"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945267"
 ---
 # <a name="author-vsct-files"></a>Archivos .vsct de autor
 Este documento muestra cómo crear un *.vsct* archivo para agregar elementos de menú, barras de herramientas y otros elementos de interfaz de usuario para el entorno de desarrollo integrado (IDE) de Visual Studio. Siga estos pasos al agregar elementos de interfaz de usuario a un paquete de Visual Studio (VSPackage) que no tenga ya una *.vsct* archivo.  
@@ -26,14 +23,14 @@ Este documento muestra cómo crear un *.vsct* archivo para agregar elementos de 
  Para proyectos nuevos, se recomienda usar la plantilla de paquete de Visual Studio porque genera un *.vsct* archivo que, dependiendo de las selecciones, ya tiene los elementos necesarios para un comando de menú, una ventana de herramientas o un editor personalizado . Puede modificar este *.vsct* archivo para cumplir los requisitos del paquete VSPackage. Para obtener más información sobre cómo modificar un *.vsct* de archivos, vea los ejemplos de [amplían los menús y comandos](../../extensibility/extending-menus-and-commands.md).  
   
 ## <a name="author-the-file"></a>Cree el archivo  
- Crear un *.vsct* archivo en estas fases: crear la estructura de archivos y recursos, declare los elementos de interfaz de usuario, coloque los elementos de interfaz de usuario en el IDE y agregue cualquier comportamiento especializado.  
+ Crear un *.vsct* archivo en estas fases: Crear la estructura de archivos y recursos, declare los elementos de interfaz de usuario, coloque los elementos de interfaz de usuario en el IDE y agregue cualquier comportamiento especializado.  
   
 ### <a name="file-structure"></a>Estructura de archivos  
  La estructura básica de un *.vsct* archivo es un [CommandTable](../../extensibility/commandtable-element.md) elemento raíz que contiene un [comandos](../../extensibility/commands-element.md) elemento y un [símbolos](../../extensibility/symbols-element.md) elemento.  
   
 #### <a name="to-create-the-file-structure"></a>Para crear la estructura de archivos  
   
-1.  Agregar un *.vsct* archivo al proyecto siguiendo los pasos descritos en [Cómo: crear un archivo .vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).  
+1.  Agregar un *.vsct* archivo al proyecto siguiendo los pasos descritos en [Cómo: Crear un archivo .vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).  
   
 2. Agregar los espacios de nombres necesarios para la `CommandTable` elemento, como se muestra en el ejemplo siguiente:  
   
@@ -54,9 +51,9 @@ Este documento muestra cómo crear un *.vsct* archivo para agregar elementos de 
   
 1. En la parte superior de la `CommandTable` elemento, agregue uno `Extern` (elemento) para cada archivo externo hacer referencia y establecer el `href` atributo por el nombre del archivo. Puede hacer referencia a los archivos de encabezado siguiente para obtener acceso a recursos de Visual Studio:  
   
-   -   *Stdidcmd.h*: define los identificadores para todos los comandos que expone Visual Studio.  
+   -   *Stdidcmd.h*: Define identificadores para todos los comandos que expone Visual Studio.  
   
-   -   *Vsshlids.h*: contiene los identificadores de comando para los menús de Visual Studio.  
+   -   *Vsshlids.h*: Contiene los identificadores de comando para los menús de Visual Studio.  
   
 2. Si el paquete llama a los comandos que se definen mediante Visual Studio o mediante otros paquetes, agregue un `UsedCommands` elemento tras el `Commands` elemento. Rellenar este elemento con un [UsedCommand](../../extensibility/usedcommand-element.md) (elemento) para cada comando que es llamar no forma parte del paquete. Establecer el `guid` y `id` los atributos de la `UsedCommand` elementos a los valores GUID y el Id. de los comandos para llamar a. 
 

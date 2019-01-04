@@ -1,8 +1,6 @@
 ---
 title: Enlazar datos a controles en soluciones de Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +19,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5b5d7a52e4f8b9e6c9741d3b62bc18b2d4cb66f7
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: bc5136b3e5c5ea09c5574e1fd3ec7ab457181112
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248025"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898640"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Enlazar datos a controles en soluciones de Office
   Puede enlazar controles de Windows Forms y *controles host* en un documento de Microsoft Office Word o una hoja de cálculo de Microsoft Office Excel a un origen de datos, de forma que los controles de muestren automáticamente los datos. Puede enlazar datos a controles en proyectos de nivel de aplicación y de nivel de documento.  
@@ -111,5 +109,3 @@ ms.locfileid: "53248025"
  [Actualizar datos mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)    
  [Almacenar datos en caché](../vsto/caching-data.md)   
  [Datos en soluciones de Office](../vsto/data-in-office-solutions.md)  
-  
-  

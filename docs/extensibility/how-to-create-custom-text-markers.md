@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: crear marcadores de texto personalizado | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Crear marcadores de texto personalizado | Documentos de Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - custom text markers
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ac2ad16c0e6a3e0a6c76e15ff6860838fa349c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1c8389788504a49bc9a4962c89ed47500a1dc7da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893109"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965225"
 ---
-# <a name="how-to-create-custom-text-markers"></a>Cómo: crear marcadores de texto personalizado
+# <a name="how-to-create-custom-text-markers"></a>Procedimiento Crear marcadores de texto personalizado
 Si desea crear un marcador de texto personalizado para enfatizar u organizar el código, debe realizar los pasos siguientes:  
   
 - Registre el nuevo marcador de texto, para que otras herramientas de acceso a él.  
@@ -29,7 +26,7 @@ Si desea crear un marcador de texto personalizado para enfatizar u organizar el 
   
 - Crear un servicio que puede usarse por otros procesos para hacer uso de marcador de texto.  
   
-  Para obtener más información sobre cómo aplicar un marcador de texto a una región de código, vea [Cómo: usar marcadores de texto](../extensibility/how-to-use-text-markers.md).  
+  Para obtener más información sobre cómo aplicar un marcador de texto a una región de código, vea [Cómo: Utilizar marcadores de texto](../extensibility/how-to-use-text-markers.md).  
   
 ## <a name="to-register-a-custom-marker"></a>Para registrar un identificador personalizado  
   
@@ -54,7 +51,7 @@ Si desea crear un marcador de texto personalizado para enfatizar u organizar el 
   
    -   DisplayName  
   
-   -   Package  
+   -   Paquete  
   
    -   `Default` es una entrada opcional del tipo REG_SZ. Cuando se establece, el valor de la entrada es una cadena que contiene la identificación información útil, por ejemplo "marcador de texto personalizado".  
   
@@ -92,6 +89,6 @@ Si desea crear un marcador de texto personalizado para enfatizar u organizar el 
   
 ## <a name="see-also"></a>Vea también  
  [Utilice marcadores de texto con la API heredada](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Cómo: agregar marcadores de texto estándar](../extensibility/how-to-add-standard-text-markers.md)   
- [Cómo: implementar los marcadores de error](../extensibility/how-to-implement-error-markers.md)   
- [Cómo: usar marcadores de texto](../extensibility/how-to-use-text-markers.md)
+ [Cómo: Agregar marcadores de texto estándar](../extensibility/how-to-add-standard-text-markers.md)   
+ [Cómo: Implementar los marcadores de error](../extensibility/how-to-implement-error-markers.md)   
+ [Cómo: Utilizar marcadores de texto](../extensibility/how-to-use-text-markers.md)

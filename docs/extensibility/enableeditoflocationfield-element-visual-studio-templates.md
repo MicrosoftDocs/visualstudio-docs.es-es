@@ -1,6 +1,5 @@
 ---
 title: EnableEditOfLocationField (elemento) (plantillas de Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ff925e4dbe32177f56b04ad645e9aeaaa815dfd
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: caf618ab0f6908f994f9f297dfb057bdf8afd1a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561949"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925620"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField (elemento) (plantillas de Visual Studio)
 Especifica si el usuario puede editar el campo de ubicación.  

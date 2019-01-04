@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: agregar un elemento de menú contextual a los proyectos de SharePoint | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Agregar un elemento de menú contextual a los proyectos de SharePoint | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9a2fbc9d71684bc44e01a1d53f5d53f35c8d7311
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: ba38984b5c49dbf834286414e61734fe46069876
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757577"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964142"
 ---
-# <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Cómo: agregar un elemento de menú contextual a los proyectos de SharePoint
+# <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Procedimiento Agregar un elemento de menú contextual a los proyectos de SharePoint
   Puede agregar un elemento de menú contextual para un proyecto de SharePoint. El elemento de menú aparece cuando un usuario del botón secundario en un nodo de proyecto **el Explorador de soluciones**.  
   
- Los pasos siguientes se supone que ya ha creado una extensión de proyecto. Para obtener más información, consulte [Cómo: crear una extensión de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
+ Los pasos siguientes se supone que ya ha creado una extensión de proyecto. Para obtener más información, vea [Cómo: Crear una extensión de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
   
 ### <a name="to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Para agregar un elemento de menú contextual a los proyectos de SharePoint  
   
@@ -43,7 +40,7 @@ ms.locfileid: "36757577"
  [!code-csharp[SPExtensibility.ProjectExtension.Menu#1](../sharepoint/codesnippet/CSharp/projectmenu/extension/projectitemextensionmenu.cs#1)]
  [!code-vb[SPExtensibility.ProjectExtension.Menu#1](../sharepoint/codesnippet/VisualBasic/projectmenu/extension/projectitemextensionmenu.vb#1)]  
   
-## <a name="compile-the-code"></a>Compile el código  
+## <a name="compile-the-code"></a>Compilar el código  
  Este ejemplo requiere un proyecto de biblioteca de clases con referencias a los ensamblados siguientes:  
   
 -   Microsoft.VisualStudio.SharePoint
@@ -55,6 +52,5 @@ ms.locfileid: "36757577"
   
 ## <a name="see-also"></a>Vea también
  [Extender los proyectos de SharePoint](../sharepoint/extending-sharepoint-projects.md)   
- [Cómo: crear una extensión de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
- [Cómo: agregar una propiedad a proyectos de SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)  
-  
+ [Cómo: Crear una extensión de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
+ [Cómo: Agregar una propiedad a proyectos de SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)  

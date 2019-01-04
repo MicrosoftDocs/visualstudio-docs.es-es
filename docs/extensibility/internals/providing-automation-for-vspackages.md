@@ -1,9 +1,6 @@
 ---
-title: Proporciona la automatización para VSPackages | Documentos de Microsoft
-ms.custom: ''
+title: Provisión de automatización de VSPackages | Documentos de Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, automation [Visual Studio SDK]
@@ -14,34 +11,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb5f3393443e41c9bd99a8890b53bedae006d7a5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fad1d3145a50238dbc2b00cc450a5065bd5e0a04
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131585"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926871"
 ---
-# <a name="providing-automation-for-vspackages"></a>Proporciona la automatización para VSPackages
-Hay dos formas principales para proporcionar la automatización para los VSPackages: mediante la implementación de objetos específicos de VSPackage y mediante la implementación de objetos de automatización estándar. Por lo general, estos se utilizan en juntos para ampliar el modelo de automatización del entorno.  
+# <a name="providing-automation-for-vspackages"></a>Provisión de automatización de VSPackages
+Hay dos formas principales para proporcionar automatización para los VSPackages: mediante la implementación de objetos específicos de VSPackage y mediante la implementación de objetos de automatización estándar. Por lo general, se utilizan conjuntamente para ampliar el modelo de automatización del entorno.  
   
 ## <a name="vspackage-specific-objects"></a>Objetos específicos de VSPackage  
- Ciertos lugares dentro del modelo de automatización requieren que proporcione los objetos de automatización que son únicos para el VSPackage. Por ejemplo, nuevos proyectos requieren distintos objetos que proporciona solo el VSPackage. Los nombres de estos objetos están escritos en el registro y se obtienen a través de llamadas en el entorno de `DTE` objeto.  
+ Ciertos lugares dentro del modelo de automatización requieren que proporcione objetos de automatización que son únicos para el VSPackage. Por ejemplo, los nuevos proyectos requieren distintos objetos que sólo el VSPackage proporciona. Los nombres de estos objetos entran en el registro y obtenidos a través de llamadas en el entorno `DTE` objeto.  
   
- También se pueden obtener objetos específicos de VSPackage cuando un consumidor de automatización usa el objeto proporcionado a través de la propiedad de objeto de un objeto estándar. Por ejemplo, el estándar `Window` objeto tiene una `Object` propiedad, que se conoce normalmente como el `Windows.Object` propiedad. Cuando llama los consumidores la `Window.Object` en una ventana que se implementa en el paquete de VS, se vuelva a pasar un objeto de automatización específico de su propio diseño.  
+ Objetos específicos de VSPackage también pueden obtenerse cuando un consumidor de automatización usa el objeto proporcionado a través de la propiedad de objeto de un objeto estándar. Por ejemplo, el estándar `Window` objeto tiene un `Object` propiedad, conocida comúnmente como el `Windows.Object` propiedad. Cuando llama los consumidores la `Window.Object` en una ventana que se implementa en el paquete de VS, devolver un objeto de automatización específico de su propio diseño.  
   
 #### <a name="projects"></a>Proyectos  
- Paquetes VSPackage puede extender el modelo de automatización para nuevos tipos de proyecto a través de sus propios objetos específicos de VSPackage. El propósito principal de proporcionar los nuevos objetos de automatización para el VSPackage es diferenciar el proyecto único objetos desde una <xref:Microsoft.VisualStudio.VCProjectEngine.VCProject> o un <xref:VSLangProj80.VSProject2> objeto. Esta diferencia resulta útil cuando desea proporcionar una manera para escoger o recorrer en iteración el tipo de proyecto además de otros tipos de proyecto, debe aparecen en paralelo en una solución. Para obtener más información, consulte [exponer objetos del proyecto](../../extensibility/internals/exposing-project-objects.md).  
+ Los paquetes VSPackage pueden extender el modelo de automatización para nuevos tipos de proyecto a través de sus propios objetos específicos de VSPackage. El propósito principal de proporcionar los nuevos objetos de automatización para el VSPackage es diferenciar el único proyecto objetos desde una <xref:Microsoft.VisualStudio.VCProjectEngine.VCProject> o un <xref:VSLangProj80.VSProject2> objeto. Esta diferencia resulta útil cuando desea proporcionar una manera única o recorrer en iteración el tipo de proyecto, además de otros tipos de proyecto, debe aparecen en paralelo en una solución. Para obtener más información, consulte [exponer objetos del proyecto](../../extensibility/internals/exposing-project-objects.md).  
   
 #### <a name="events"></a>Eventos  
- La arquitectura de eventos del entorno ofrece otro lugar para anexar sus propios objetos específicos de VSPackage. Por ejemplo, mediante la creación de sus propios objetos de evento único, puede ampliar el modelo de evento del entorno para los proyectos. Puede proporcionar sus propios eventos cuando se agrega un nuevo elemento a su propio tipo de proyecto. Para obtener más información, consulte [exponer eventos](../../extensibility/internals/exposing-events-in-the-visual-studio-sdk.md).  
+ La arquitectura de eventos del entorno ofrece otro lugar para anexar sus propios objetos específicos de VSPackage. Por ejemplo, al crear sus propios objetos de evento único, puede ampliar el modelo de eventos del entorno para los proyectos. Es posible que desee proporcionar sus propios eventos cuando se agrega un nuevo elemento a su propio tipo de proyecto. Para obtener más información, consulte [exponer eventos](../../extensibility/internals/exposing-events-in-the-visual-studio-sdk.md).  
   
 #### <a name="window-objects"></a>Window (Objetos)  
- Windows puede devolver un objeto de automatización de VSPackage específicos hacia el entorno cuando se llama. Implementar un objeto que se deriva de <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>, <xref:EnvDTE.IExtensibleObject> o `IDispatch` que entrega vuelve propiedades, extender el objeto de ventana en la que está asociada. Por ejemplo, puede usar este método para proporcionar la automatización para un control ubicado en un marco de ventana. La semántica de este objeto y cualquier otro objeto que puede ampliar el quedan a su diseño. Para obtener más información, consulte [Cómo: proporcionar automatización para Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md).  
+ Windows pueden devolver un objeto de automatización específico de VSPackage hasta que el entorno cuando se llama. Implementar un objeto que se deriva de <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>, <xref:EnvDTE.IExtensibleObject> o `IDispatch` que entrega volver propiedades, extender el objeto de ventana en la que está asociada. Por ejemplo, puede usar este enfoque para proporcionar automatización para un control situado en un marco de ventana. La semántica de este objeto y cualquier otro objeto que puede ampliar es suyos para diseñar. Para obtener más información, vea [Cómo: Provisión de automatización para Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md).  
   
 #### <a name="options-pages-on-the-tools-menu"></a>Páginas de opciones en el menú Herramientas  
- Puede crear páginas para extender las herramientas, el modelo de automatización de opciones mediante la implementación de páginas y agregando la información en el registro para crear sus propias opciones. A continuación, pueden llamar a las páginas mediante el modelo de objetos de entorno como cualquier otras páginas de opciones. Si el diseño de la característica que se va a agregar al entorno a través de VSPackages requiere que las páginas de opciones, debe agregar la compatibilidad de la automatización. Para obtener más información, consulte [compatibilidad de automatización para las páginas de opciones](../../extensibility/internals/automation-support-for-options-pages.md).  
+ Puede crear páginas para extender las herramientas, el modelo de automatización de opciones mediante la implementación de páginas y agregar información al registro para crear sus propias opciones. Las páginas, a continuación, se pueden llamar mediante el modelo de objetos de entorno como cualquier otras páginas de opciones. Si el diseño de la característica que se va a agregar al entorno a través de VSPackages requiere que las páginas de opciones, a continuación, debe agregar también la compatibilidad de automatización. Para obtener más información, consulte [compatibilidad de automatización para las páginas de opciones](../../extensibility/internals/automation-support-for-options-pages.md).  
   
 ## <a name="standard-automation-objects"></a>Objetos de automatización estándar  
- Para extender la automatización para los proyectos, también se implementan objetos de automatización estándar (derivado de `IDispatch`) que representan junto a los demás objetos de proyecto e implementar propiedades y métodos estándar. Algunos ejemplos de objetos estándar son los objetos del proyecto que se insertan en la jerarquía de la solución como `Projects`, `Project`, `ProjectItem`, y `ProjectItems`. Estos objetos (y posiblemente otros unos según la semántica del proyecto), debe implementar cada nuevo tipo de proyecto.  
+ Para ampliar la automatización de proyectos, también se implementan los objetos de automatización estándar (derivado de `IDispatch`) que representan junto a los demás objetos del proyecto e implementar métodos y propiedades estándar. Ejemplos de objetos estándar de los objetos del proyecto que se insertan en la jerarquía de la solución como `Projects`, `Project`, `ProjectItem`, y `ProjectItems`. Estos objetos (y posiblemente otros registros según la semántica del proyecto), debe implementar cada nuevo tipo de proyecto.  
   
- En un sentido, estos objetos proporcionan la ventaja de los objetos de proyecto específicos del VSPackage opuesta. Los objetos de automatización estándar permiten el proyecto que se usará de forma generalizada como cualquier otro proyecto compatible con los mismos objetos. Por lo tanto, un complemento que se escribe en general `Project` y `ProjectItem` objetos pueden funcionar en proyectos de cualquier tipo. Para obtener más información, consulte [proyecto de modelado](../../extensibility/internals/project-modeling.md).
+ En cierto sentido, estos objetos proporcionan la ventaja de los objetos de proyecto específico de VSPackage opuesta. Los objetos de automatización estándar que el proyecto que se usará de forma generalizada como cualquier otro proyecto que admiten los mismos objetos. Por lo tanto, un complemento que se escribe en general `Project` y `ProjectItem` objetos pueden funcionar con proyectos de cualquier tipo. Para obtener más información, consulte [proyecto de modelado](../../extensibility/internals/project-modeling.md).

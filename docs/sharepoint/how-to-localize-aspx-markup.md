@@ -1,13 +1,8 @@
 ---
-title: 'Cómo: localizar el marcado ASPX | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Localizar el marcado ASPX | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 68e74f743c1c00bb940a89039e4fd5cfcf8e63e4
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 0a646c84df5f6da318e8c21f6a55ac7a852a1af0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119554"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959878"
 ---
-# <a name="how-to-localize-aspx-markup"></a>Cómo: localizar el marcado ASPX
+# <a name="how-to-localize-aspx-markup"></a>Procedimiento Localizar el marcado ASPX
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] páginas (.aspx) suelen usan los valores de cadena codificados de forma rígida. Para localizar estas cadenas, reemplácelas por expresiones que hacen referencia a los recursos localizados.  
   
 ## <a name="localize-aspx-markup"></a>Localizar el marcado ASPX  
@@ -81,7 +76,6 @@ ms.locfileid: "37119554"
   
 ## <a name="see-also"></a>Vea también
  [Localizar soluciones de SharePoint](../sharepoint/localizing-sharepoint-solutions.md)   
- [Cómo: localizar una característica](../sharepoint/how-to-localize-a-feature.md)   
- [Cómo: agregar un archivo de recursos](../sharepoint/how-to-add-a-resource-file.md)   
- [Cómo: localizar código](../sharepoint/how-to-localize-code.md)  
-  
+ [Cómo: Localizar una característica](../sharepoint/how-to-localize-a-feature.md)   
+ [Cómo: Agregar un archivo de recursos](../sharepoint/how-to-add-a-resource-file.md)   
+ [Cómo: Localizar código](../sharepoint/how-to-localize-code.md)  

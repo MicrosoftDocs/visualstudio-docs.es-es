@@ -1,9 +1,6 @@
 ---
 title: Cambiar la apariencia de un comando | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, changing appearance
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61ba39bc8a312fb06499bed7ca94e33dc5e7153e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 787f334afe4c3cae06099c6db29924e7f2bbeeb4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825996"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963063"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Cambiar la apariencia de un comando
 Puede proporcionar comentarios al usuario cambiar la apariencia de un comando. Por ejemplo, es posible que desee un comando que parecen diferentes cuando no está disponible. Puede hacer que los comandos disponibles o no está disponible, ocultar o mostrar, o comprobar o anule su selección en el menú.  

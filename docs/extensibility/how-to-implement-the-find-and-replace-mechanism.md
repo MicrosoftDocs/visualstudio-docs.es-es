@@ -1,7 +1,6 @@
 ---
-title: 'Cómo: implementar la buscar y reemplazar el mecanismo | Microsoft Docs'
+title: Procedimiento Implementar la buscar y reemplazar el mecanismo | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - find and replace
@@ -11,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbd41f8f1a86a0b6177b4a1d1498075d6de77030
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: e3847b9125109cd48b458d06cbfc41fa91b7139f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636257"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943030"
 ---
-# <a name="how-to-implement-the-find-and-replace-mechanism"></a>Cómo: implementar la buscar y reemplazar el mecanismo de
+# <a name="how-to-implement-the-find-and-replace-mechanism"></a>Procedimiento Implementar la buscar y reemplazar el mecanismo de
 
 Visual Studio proporciona dos maneras de implementar la búsqueda y reemplazo. Una consiste en pasar de una imagen de texto en el shell y permitirle controlar la búsqueda, el resaltado y reemplazar texto. Esto permite a los usuarios especificar varios intervalos de texto. Como alternativa, el VSPackage puede controlar esta funcionalidad propia. En ambos casos debe notificar al shell sobre el destino actual y los destinos para todos los documentos abiertos.
 

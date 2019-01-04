@@ -16,13 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: a41b86068f9f7aedbe10635bf859818c0b468789
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 8e2ba4e158b6c012c05d29c988e9611d25f58e63
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967459"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861986"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generación de código en tiempo de diseño usando las plantillas de texto T4
 Plantillas de texto T4 de tiempo de diseño permiten generar código de programa y otros archivos en el proyecto de Visual Studio. Normalmente, las plantillas se escriben para que varíen el código que generan según los datos de un *modelo*. Un modelo es un archivo o una base de datos que contiene información esencial sobre los requisitos de la aplicación.

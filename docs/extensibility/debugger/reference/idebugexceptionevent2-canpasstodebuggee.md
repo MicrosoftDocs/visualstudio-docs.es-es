@@ -1,9 +1,6 @@
 ---
 title: IDebugExceptionEvent2::CanPassToDebuggee | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugExceptionEvent2::CanPassToDebuggee
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ea3ac73ceb5ce61cbf7cc9acb71c610b1a34b59
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c4b0112c972c5521abc1007ad98259fae145769
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846270"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822815"
 ---
 # <a name="idebugexceptionevent2canpasstodebuggee"></a>IDebugExceptionEvent2::CanPassToDebuggee
 Determina si el motor de depuración (DE) es compatible con la opción de pasar esta excepción al programa que se está depurando cuando se reanuda la ejecución.  
@@ -28,13 +25,13 @@ Determina si el motor de depuración (DE) es compatible con la opción de pasar 
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT CanPassToDebuggee(  
+HRESULT CanPassToDebuggee(  
    void  
 );  
 ```  
   
 ```csharp  
-int CanPassToDebuggee();  
+int CanPassToDebuggee();  
 ```  
   
 ## <a name="return-value"></a>Valor devuelto  

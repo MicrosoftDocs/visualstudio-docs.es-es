@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: Usar el Diseñador de esquemas XML con literales XML'
+title: Procedimiento Usar el Diseñador de esquemas XML con literales XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
 author: gewarren
@@ -12,14 +11,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9858768da0096c98ffb3014f0a52936adbf39019
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1483077142d1c60d3309458aedbe1abd7e2e2b00
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931121"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863399"
 ---
-# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Cómo: usar el Diseñador de esquemas XML con literales XML
+# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Procedimiento Usar el Diseñador de esquemas XML con literales XML
 
 En este tema se explica cómo ver un esquema asociado a un literal XML en un proyecto Visual Basic.
 

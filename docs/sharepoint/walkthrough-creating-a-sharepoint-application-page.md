@@ -1,13 +1,8 @@
 ---
-title: 'Tutorial: Crear una página de aplicación de SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Creación de una página de aplicación de SharePoint | Documentos de Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 52ff6b3431ac3f87c85eefcf728cfe4c4875f884
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 22f53a59119ed10055decdd5c055edf378838c72
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634792"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867844"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>Tutorial: Crear una página de aplicación de SharePoint
  
@@ -78,7 +73,7 @@ Para crear una página de aplicación, agregue un **página aplicación** al pro
 
 El elemento de la página de aplicación le permite usar un diseñador para agregar controles ASP.NET a la página de aplicación. Este diseñador es el mismo diseñador que se usan en Visual Web Developer. Agregar una etiqueta, una lista de botones de radio y una tabla a la **origen** ver del diseñador y, a continuación, establezca las propiedades tal como lo haría cuando diseña cualquier página ASP.NET estándar.
 
-1. En la barra de menús, elija **vista** > **cuadro de herramientas**.
+1. En la barra de menús, elija **Ver** > **Cuadro de herramientas**.
 
 2. En el nodo estándar de la **cuadro de herramientas**, realice uno de los pasos siguientes:
 
@@ -158,5 +153,5 @@ Puede aprender más sobre cómo diseñar el contenido de la página de SharePoin
 
 ## <a name="see-also"></a>Vea también
 
-[Cómo: crear una página de aplicación](../sharepoint/how-to-create-an-application-page.md)  
+[Cómo: Crear una página de aplicación](../sharepoint/how-to-create-an-application-page.md)  
 [Tipo de página _layouts de aplicaciones](http://go.microsoft.com/fwlink/?LinkID=169274)

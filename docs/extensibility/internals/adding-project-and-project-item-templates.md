@@ -1,9 +1,6 @@
 ---
 title: Agregar el proyecto y plantillas de elemento de proyecto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], adding
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: db53ddce3161097347760026aea16a51f8098519
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: c89f38c98047a8fab57317c491c051474995f472
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499639"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963662"
 ---
 # <a name="add-project-and-project-item-templates"></a>Agregar proyecto y plantillas de elemento de proyecto
 Al crear sus propios tipos de proyecto, debe proporcionar soporte técnico para agregar nuevos proyectos y elementos de proyecto mediante el estándar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrado cuadros de diálogo (IDE) del entorno de desarrollo. Los temas siguientes describen las distintas técnicas para agregar proyectos y elementos de proyecto.  
@@ -53,10 +50,10 @@ Al crear sus propios tipos de proyecto, debe proporcionar soporte técnico para 
  Enumera el CATID para los objetos que se utilizan para extender [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], y [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] sistemas del proyecto.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
- [Cómo: abrir editores específicos del proyecto](../../extensibility/how-to-open-project-specific-editors.md)  
+ [Cómo: Abrir editores específicos del proyecto](../../extensibility/how-to-open-project-specific-editors.md)  
  Proporciona instrucciones paso a paso para abrir un elemento intrínsecamente enlazado a un editor específico para un proyecto.  
   
- [Cómo: abrir editores estándar](../../extensibility/how-to-open-standard-editors.md)  
+ [Cómo: Abrir editores estándar](../../extensibility/how-to-open-standard-editors.md)  
  Proporciona instrucciones paso a paso para abrir un editor estándar.  
   
  [Subtipos de proyecto](../../extensibility/internals/project-subtypes.md)  

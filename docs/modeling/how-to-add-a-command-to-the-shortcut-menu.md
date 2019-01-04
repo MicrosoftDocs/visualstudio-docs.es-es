@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Agregar un comando a un menú contextual'
+title: Procedimiento Agregar un comando al menú contextual
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6cfbe7c83db57bbeb24089e7d3e794caaeca9d81
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 284a789a7ba4e7fec1a87723c51a32f650f6d843
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967420"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987971"
 ---
-# <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Cómo: Agregar un comando a un menú contextual
+# <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Procedimiento Agregar un comando al menú contextual
 Puede agregar comandos de menú a su lenguaje específico de dominio (DSL) para que sus usuarios puedan realizar tareas específicas de su DSL. Los comandos aparecen en el menú contextual cuando los usuarios hacen clic con el botón secundario en el diagrama. Puede definir un comando para que solo aparezca en el menú en circunstancias específicas. Por ejemplo, puede hacer que el comando sea visible solo cuando el usuario haga clic en tipos específicos de elementos, o en elementos con unos estados determinados.
 
  En resumen, los pasos se realizan en el proyecto DslPackage de la siguiente manera:
@@ -33,7 +32,7 @@ Puede agregar comandos de menú a su lenguaje específico de dominio (DSL) para 
    Para obtener ejemplos, vea el [sitio Web de SDK de visualización y modelado](http://go.microsoft.com/fwlink/?LinkID=185579).
 
 > [!NOTE]
->  También puede modificar el comportamiento de algunos comandos existentes, como Cortar, Pegar, Seleccionar todo e Imprimir invalidando los métodos en CommandSet.cs. Para obtener más información, consulte [Cómo: modificar comandos de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+>  También puede modificar el comportamiento de algunos comandos existentes, como Cortar, Pegar, Seleccionar todo e Imprimir invalidando los métodos en CommandSet.cs. Para obtener más información, vea [Cómo: Modificar un comando de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ## <a name="defining-a-command-using-mef"></a>Definir un comando mediante MEF
  Managed Extension Framework (MEF) proporciona un método alternativo para definir comandos de menú en el menú del diagrama. Su principal finalidad es habilitar un DSL para que usted u otras personas puedan ampliarlo. Los usuarios pueden elegir instalar solo el DSL o pueden instalar el DSL y las extensiones. Sin embargo, una vez hecho el trabajo inicial de habilitar MEF en el DSL, MEF reduce el trabajo de definir los comandos del menú contextual.
@@ -240,7 +239,7 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 ### <a name="define-what-the-command-does"></a>Definir la acción del comando
  Para cada comando, defina un método `OnMenu...` que realice la acción necesaria cuando el usuario haga clic en el comando de menú.
 
- Si realiza cambios en los elementos de modelo, debe hacerlo dentro de una transacción. Para obtener más información, consulte [Cómo: modificar comandos de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ Si realiza cambios en los elementos de modelo, debe hacerlo dentro de una transacción. Para obtener más información, vea [Cómo: Modificar un comando de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
  En este ejemplo, `ClassShape`, `ModelClass` y `Comment` son tipos que se definen en el DSL, y derivan de la plantilla de diagrama de clases de DSL.
 
@@ -281,7 +280,7 @@ private void OnMenuMyContextMenuCommand(object sender, EventArgs e)
 }
 ```
 
- Para obtener más información sobre cómo navegar de un objeto a objeto en el modelo y sobre cómo crear objetos y vínculos, consulte [Cómo: modificar comandos de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ Para obtener más información sobre cómo navegar de un objeto a objeto en el modelo y sobre cómo crear objetos y vínculos, vea [Cómo: Modificar un comando de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ### <a name="register-the-command"></a>Registrar el comando
  Repita en C# las declaraciones de los valores de los GUID e identificadores que realizó en la sección Symbols de CommandSet.vsct:
@@ -360,8 +359,8 @@ protected override IList<MenuCommand> GetMenuCommands()
 ## <a name="see-also"></a>Vea también
 
 - [Escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [Cómo: Modificar comandos de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
+- [Cómo: Modificar un comando de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
 - [Implementar soluciones de lenguajes específicos de dominio](../modeling/deploying-domain-specific-language-solutions.md)
-- [Código de ejemplo: diagramas de circuitos](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [Código de ejemplo: Diagramas de circuitos](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

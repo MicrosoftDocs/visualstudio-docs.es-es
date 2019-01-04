@@ -1,9 +1,6 @@
 ---
 title: IDebugReference2::SetReferenceType | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugReference2::SetReferenceType
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f36192a194e1ced3815813f87925496d2ce07979
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d05abc3aa78e7c9e449892e535110a9f6c1deae8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843033"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911590"
 ---
 # <a name="idebugreference2setreferencetype"></a>IDebugReference2::SetReferenceType
 Establece el tipo de referencia. Reservado para un uso futuro.  
@@ -28,13 +25,13 @@ Establece el tipo de referencia. Reservado para un uso futuro.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT SetReferenceType (   
+HRESULT SetReferenceType (   
    REFERENCE_TYPE dwRefType  
 );  
 ```  
   
 ```csharp  
-int SetReferenceType (   
+int SetReferenceType (   
    enum_REFERENCE_TYPE dwRefType  
 );  
 ```  
