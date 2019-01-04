@@ -1,15 +1,10 @@
 ---
-title: 'Cómo: agregar y quitar elementos de las características de SharePoint | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Agregar y quitar elementos de las características de SharePoint | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.FeatureDesigner
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2ead6b7ba57afa2adeabbbe04bc27583b2ad1593
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0a820f506154a72b797963996b39e7ec225fac31
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854837"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964022"
 ---
-# <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Cómo: agregar y quitar elementos de las características de SharePoint
+# <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Procedimiento Agregar y quitar elementos de las características de SharePoint
   Cuando se crea una solución de SharePoint, Visual Studio agrega los elementos de proyecto de SharePoint de forma predeterminada a la característica. Antes de la implementación, puede agregar y quitar elementos de proyecto de SharePoint para modificar la funcionalidad de SharePoint.  
   
 ## <a name="add-sharepoint-project-items-to-a-feature"></a>Agregar elementos de proyecto de SharePoint a una característica  
@@ -35,7 +30,7 @@ ms.locfileid: "49854837"
   
 1. Abra el Diseñador de características.  
   
-    Para obtener más información, consulte [Cómo: personalizar una característica de SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
+    Para obtener más información, vea [Cómo: Personalizar una característica de SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
 2. Agregue uno o varios elementos de la **elementos de la solución** lista para la **elementos de la característica** lista mediante la realización de uno o varios de los pasos siguientes:  
   
@@ -60,4 +55,3 @@ ms.locfileid: "49854837"
 ## <a name="see-also"></a>Vea también
  [Crear características de SharePoint](../sharepoint/creating-sharepoint-features.md)   
  [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

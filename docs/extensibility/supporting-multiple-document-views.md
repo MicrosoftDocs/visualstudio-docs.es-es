@@ -1,9 +1,6 @@
 ---
 title: Compatibilidad con varias vistas de documento | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - multiple document views
@@ -13,21 +10,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a2fafdaaa2d54cd445017ebd9120d8648bf7067
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e55eed8ffd2651ced96f192972127e710a565eaa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942353"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830734"
 ---
 # <a name="supporting-multiple-document-views"></a>Compatibilidad con vistas de varios documentos
 Puede proporcionar más de una vista de un documento mediante la creación de datos de documento independiente y objetos de vista de documento para el editor. Algunos casos en que una vista de documento adicionales sería útil son:  
   
-- Nueva compatibilidad con las ventanas: desea que el editor para proporcionar dos o más vistas del mismo tipo, para que un usuario que ya tiene una ventana abierta en el editor puede abrir una ventana nueva seleccionando el **nueva ventana** comando desde el **ventana** menú.  
+- Nueva compatibilidad con las ventanas: Desea que el editor para proporcionar dos o más vistas del mismo tipo, para que un usuario que ya tiene una ventana abierta en el editor puede abrir una ventana nueva seleccionando el **nueva ventana** comando desde el **ventana** menú.  
   
-- Formulario y el código ver soporte técnico: desea que el editor para proporcionar vistas de tipos diferentes. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], por ejemplo, proporciona una vista de formulario y una vista de código.  
+- Compatibilidad con la vista formulario y el código: Desea que el editor para proporcionar vistas de tipos diferentes. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], por ejemplo, proporciona una vista de formulario y una vista de código.  
   
-  Para obtener más información al respecto, consulte el procedimiento CreateEditorInstance en el archivo EditorFactory.cs en el proyecto de editor personalizado creado por la plantilla de paquete de Visual Studio. Para obtener más información sobre este proyecto, vea [Tutorial: crear un Editor personalizado](../extensibility/walkthrough-creating-a-custom-editor.md).  
+  Para obtener más información al respecto, consulte el procedimiento CreateEditorInstance en el archivo EditorFactory.cs en el proyecto de editor personalizado creado por la plantilla de paquete de Visual Studio. Para obtener más información sobre este proyecto, vea [Tutorial: Crear un Editor personalizado](../extensibility/walkthrough-creating-a-custom-editor.md).  
   
 ## <a name="synchronizing-views"></a>Sincronizando las vistas  
  Al implementar varias vistas, el objeto de datos es responsable de mantener sincronizadas con los datos de todas las vistas. Puede usar en las interfaces de control de eventos <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> para sincronizar varias vistas con los datos.  
@@ -42,4 +39,4 @@ Varias vistas
   
  De forma predeterminada, cada vista (objeto de vista de documento) está incluida en su propio marco de ventana (<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>). Como ya hemos visto, sin embargo, los datos de documento pueden mostrarse en varias vistas. Para habilitar esta opción, Visual Studio comprueba la RDT para determinar si el documento en cuestión ya está abierto en un editor. Cuando se llama el IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> para crear el editor, se devuelve un valor distinto de NULL en la `punkDocDataExisting` parámetro indica que el documento ya está abierto en otro editor. Para obtener más información acerca de cómo ver las funciones RDT [tabla de documentos en ejecución](../extensibility/internals/running-document-table.md).  
   
- En su <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> implementación, examine el objeto de datos de documento devuelto en `punkDocDataExisting` para determinar si los datos del documento están adecuados para el editor. (Por ejemplo, solo los datos HTML deben mostrarse mediante un editor de HTML.) Si es adecuado, el generador de editores debe proporcionar una segunda vista para los datos. Si el `punkDocDataExisting` parámetro no es `NULL`, es posible ya que el objeto de datos de documento está abierto en otro editor, o, más probable, que los datos del documento ya está abiertos en una vista diferente con el mismo que el editor. Si los datos del documento están abiertos en un editor distinto que no es compatible con el generador de editores, Visual Studio no puede abrir el generador de editores. Para obtener más información, consulte [Cómo: adjuntar vistas de datos del documento](../extensibility/how-to-attach-views-to-document-data.md).
+ En su <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> implementación, examine el objeto de datos de documento devuelto en `punkDocDataExisting` para determinar si los datos del documento están adecuados para el editor. (Por ejemplo, solo los datos HTML deben mostrarse mediante un editor de HTML.) Si es adecuado, el generador de editores debe proporcionar una segunda vista para los datos. Si el `punkDocDataExisting` parámetro no es `NULL`, es posible ya que el objeto de datos de documento está abierto en otro editor, o, más probable, que los datos del documento ya está abiertos en una vista diferente con el mismo que el editor. Si los datos del documento están abiertos en un editor distinto que no es compatible con el generador de editores, Visual Studio no puede abrir el generador de editores. Para obtener más información, vea [Cómo: Anexión de vistas de datos de documentos](../extensibility/how-to-attach-views-to-document-data.md).

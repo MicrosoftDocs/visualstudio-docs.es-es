@@ -1,9 +1,6 @@
 ---
 title: IDebugBreakpointRequest2::GetRequestInfo | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBreakpointRequest2::GetRequestInfo
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80bba52a25d6931a83724ffb17e9e34d2bbf923b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 32cdf72046b718a4a507081f194a0cc3c1742bbe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864314"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861178"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
 Obtiene la información de solicitud de punto de interrupción que describe esta solicitud de punto de interrupción.  
@@ -28,14 +25,14 @@ Obtiene la información de solicitud de punto de interrupción que describe esta
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT GetRequestInfo(   
+HRESULT GetRequestInfo(   
    BPREQI_FIELDS    dwFields,  
    BP_REQUEST_INFO* pBPRequestInfo  
 );  
 ```  
   
 ```csharp  
-int GetRequestInfo(   
+int GetRequestInfo(   
    eunm_BPREQI_FIELDS  dwFields,  
    BP_REQUEST_INFO[]   pBPRequestInfo  
 );  

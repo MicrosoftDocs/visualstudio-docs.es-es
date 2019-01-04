@@ -1,9 +1,6 @@
 ---
 title: Procedimiento Agregar controles NamedRange a hojas de cálculo
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8a279ab6419807d5010b830453ab0ec92d8c5ca7
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 1d9515f5a42d37d73a95460fa458090992c488aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648378"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928664"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>Procedimiento Agregar controles NamedRange a hojas de cálculo
   Puede agregar <xref:Microsoft.Office.Tools.Excel.NamedRange> controles a una hoja de cálculo de Microsoft Office Excel en tiempo de diseño y en tiempo de ejecución en los proyectos de nivel de documento.  
@@ -104,5 +101,3 @@ ms.locfileid: "53648378"
  [Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)   
  [Cómo: Cambiar el tamaño de los controles NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
  [Limitaciones de programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

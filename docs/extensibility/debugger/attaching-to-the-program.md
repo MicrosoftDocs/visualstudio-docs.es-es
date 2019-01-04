@@ -1,9 +1,6 @@
 ---
 title: Asociar al programa | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c87aa879009ef0cd68a83d8ad7affdf0be58f796
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 50c9ce5079f15c945c963f530997d9bbc333bc42
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903652"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832614"
 ---
 # <a name="attach-to-the-program"></a>Adjunte al programa
 Después de haber registrado sus programas con el puerto adecuado, debe asociar al depurador al programa que desea depurar.  

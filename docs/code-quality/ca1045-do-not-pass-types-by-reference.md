@@ -2,7 +2,6 @@
 title: 'CA1045: No pasar tipos por referencia'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1045
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ee365dd36a3a88b896fe9ec6e2f676b4e29bf1e
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b2516387f6de81eef2f68d521652aa85ce521aea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547846"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839062"
 ---
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045: No pasar tipos por referencia
 

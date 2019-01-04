@@ -1,9 +1,6 @@
 ---
 title: Elegir el directorio de instalación de un paquete VSPackage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, installation directory
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e32f2581e4980feebbbecb3cc8e7aa98bfeb670
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: df13749a16ad107c864fa1dcf1b3e0f4e7cbed41
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370957"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926299"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Elija el directorio de instalación de un VSPackage
 Un VSPackage y sus archivos auxiliares deben estar en el sistema de archivos de un usuario. La ubicación depende de si VSPackage está administrado o no administrados, el esquema de versiones en paralelo y la elección del usuario.  

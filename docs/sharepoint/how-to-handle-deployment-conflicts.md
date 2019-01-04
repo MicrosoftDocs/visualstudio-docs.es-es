@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: controlar conflictos de implementación | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Controlar conflictos de implementación | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
@@ -12,25 +9,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d7c30a7c634c30c9fe3e92ef988d7d8fc043cf6b
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d55c260618eb7edcf68e91b521f2ace203ddbf01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119870"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898887"
 ---
-# <a name="how-to-handle-deployment-conflicts"></a>Cómo: controlar conflictos de implementación
+# <a name="how-to-handle-deployment-conflicts"></a>Procedimiento Controlar conflictos de implementación
   Puede proporcionar su propio código para controlar conflictos de implementación para un elemento de proyecto de SharePoint. Por ejemplo, puede determinar si los archivos en el elemento de proyecto actual ya existen en la ubicación de implementación y, a continuación, eliminación los archivos implementados antes de implementa el elemento de proyecto actual. Para obtener más información acerca de los conflictos de implementación, consulte [extender SharePoint empaquetado e implementación](../sharepoint/extending-sharepoint-packaging-and-deployment.md).  
   
 ### <a name="to-handle-a-deployment-conflict"></a>Para controlar un conflicto de implementación  
   
 1.  Crear una extensión de elemento de proyecto, una extensión de proyecto o una definición de un nuevo tipo de elemento de proyecto. Para obtener más información, vea los temas siguientes:  
   
-    -   [Cómo: crear una extensión de elemento de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
+    -   [Cómo: Crear una extensión de elemento de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
   
-    -   [Cómo: crear una extensión de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)  
+    -   [Cómo: Crear una extensión de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)  
   
-    -   [Cómo: definir un tipo de elemento de proyecto de SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
+    -   [Cómo: Definir un tipo de elemento de proyecto de SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
   
 2.  En la extensión, controlar el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> eventos de un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> objeto (en una extensión de elemento de proyecto o la extensión de proyecto) o un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> objeto (en una definición de un nuevo tipo de elemento de proyecto).  
   
@@ -43,12 +40,12 @@ ms.locfileid: "37119870"
 ## <a name="example"></a>Ejemplo  
  El ejemplo de código siguiente muestra el proceso básico para controlar un conflicto de implementación en una extensión de elemento de proyecto para los elementos de proyecto de definición de lista. Para administrar un conflicto de implementación para un tipo de elemento de proyecto diferente, pasa una cadena diferente para el <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Para obtener más información, consulte [elementos de proyecto de SharePoint ampliar](../sharepoint/extending-sharepoint-project-items.md).  
   
- Por motivos de simplicidad, el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> controlador de eventos en este ejemplo se da por supuesto que existe un conflicto de implementación (es decir, siempre agrega un nuevo <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> objeto) y el `Resolve` método simplemente devuelve **true** para indicar que se resolvió el conflicto. En un escenario real, su <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> controlador de eventos podría determinar primero si existe un conflicto entre un archivo en el elemento de proyecto actual y un archivo en la ubicación de implementación y, a continuación, agregue un <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> objeto solo si hay un conflicto. Por ejemplo, podría utilizar el `e.ProjectItem.Files` propiedad en el controlador de eventos para analizar los archivos en el elemento de proyecto y puede llamar a un comando de SharePoint para analizar los archivos en la ubicación de implementación. De forma similar, en un escenario real la `Resolve` método podría llamar a un comando de SharePoint para resolver el conflicto en el sitio de SharePoint. Para obtener más información acerca de cómo crear comandos de SharePoint, vea [Cómo: crear un comando de SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md).  
+ Por motivos de simplicidad, el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> controlador de eventos en este ejemplo se da por supuesto que existe un conflicto de implementación (es decir, siempre agrega un nuevo <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> objeto) y el `Resolve` método simplemente devuelve **true** para indicar que se resolvió el conflicto. En un escenario real, su <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> controlador de eventos podría determinar primero si existe un conflicto entre un archivo en el elemento de proyecto actual y un archivo en la ubicación de implementación y, a continuación, agregue un <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> objeto solo si hay un conflicto. Por ejemplo, podría utilizar el `e.ProjectItem.Files` propiedad en el controlador de eventos para analizar los archivos en el elemento de proyecto y puede llamar a un comando de SharePoint para analizar los archivos en la ubicación de implementación. De forma similar, en un escenario real la `Resolve` método podría llamar a un comando de SharePoint para resolver el conflicto en el sitio de SharePoint. Para obtener más información acerca de cómo crear comandos de SharePoint, vea [Cómo: Crear un comando de SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md).  
   
  [!code-vb[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../sharepoint/codesnippet/VisualBasic/deploymentconflict/extension/deploymentconflictextension.vb#1)]
  [!code-csharp[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../sharepoint/codesnippet/CSharp/deploymentconflict/extension/deploymentconflictextension.cs#1)]  
   
-## <a name="compile-the-code"></a>Compile el código  
+## <a name="compile-the-code"></a>Compilar el código  
  Este ejemplo requiere referencias a los ensamblados siguientes:  
   
 -   Microsoft.VisualStudio.SharePoint  
@@ -61,6 +58,5 @@ ms.locfileid: "37119870"
 ## <a name="see-also"></a>Vea también
  [Ampliar la implementación y empaquetado de SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
  [Extender elementos de proyecto de SharePoint](../sharepoint/extending-sharepoint-project-items.md)   
- [Cómo: ejecutar código cuando se ejecutan los pasos de implementación](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)   
- [Cómo: crear un comando de SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md)  
-  
+ [Cómo: Ejecutar código cuando se ejecutan los pasos de implementación](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)   
+ [Cómo: Crear un comando de SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md)  

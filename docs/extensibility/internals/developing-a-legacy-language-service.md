@@ -1,9 +1,6 @@
 ---
 title: Desarrollar un servicio de lenguaje heredado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - vs.vsip.LangServWiz.langtoks
@@ -19,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d92c07742dcc4433aa96071d655f58d938a1f80
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: c6bcf4c6993a37ec58d288d2c31f7c4cc3ecab9b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497835"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845796"
 ---
 # <a name="develop-a-legacy-language-service"></a>Desarrollar un servicio de lenguaje heredado
 Esta sección contiene vínculos a temas que le ayudarán a crear un servicio de lenguaje heredado.  
@@ -63,8 +60,8 @@ Esta sección contiene vínculos a temas que le ayudarán a crear un servicio de
  [Información de parámetros en un servicio de lenguaje heredado](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)  
  Describe cómo proporcionar sugerencias de método para los métodos y las funciones sobrecargadas.  
   
- [Cómo: proporcionar texto oculto admitir en un servicio de lenguaje heredado](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
+ [Cómo: Proporcionar compatibilidad con texto oculto en un servicio de lenguaje heredado](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
  Explica el propósito de una región de texto oculto y se proporcionan instrucciones sobre cómo implementar una región de texto oculto.  
   
- [Cómo: proporcionar compatibilidad con esquematización ampliada en un servicio de lenguaje heredado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ [Cómo: Proporcionar compatibilidad con esquematización ampliada en un servicio de lenguaje heredado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
  Explica las dos opciones que amplían la compatibilidad con esquematización para el lenguaje más allá de admitir la *contraer a definiciones* comando.

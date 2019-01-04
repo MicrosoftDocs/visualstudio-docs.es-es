@@ -1,9 +1,6 @@
 ---
 title: Conceptos básicos del servicio de lenguaje heredado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - languages, integrating into Visual Studio
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 344a7949c5058237d8599d69ea3b234e9a6e8e72
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79ecbd971315c004a9be40221a6950afb5856823
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850185"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847209"
 ---
 # <a name="legacy-language-service-essentials"></a>Fundamentos de servicio de lenguaje heredado
 Debe proporcionar un servicio de lenguaje para integrar un lenguaje de programación en Visual Studio. En este tema se explica las características disponibles en los servicios de lenguaje heredado.  
@@ -50,4 +47,3 @@ Debe proporcionar un servicio de lenguaje para integrar un lenguaje de programac
 |-----------------------| - |
 | Evaluadores de expresión | Admite la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depurador mediante la validación de los puntos de interrupción y proporcionar una lista de expresiones que se mostrará en el **automático** ventana de depuración.<br /><br /> Para obtener más información, consulte [soporte técnico de servicio de lenguaje para depuración](../../extensibility/internals/language-service-support-for-debugging.md). |
 | Herramientas de exploración de símbolos | Admite **Examinador de objetos**, **vista de clases**, **Explorador de llamadas**, y **Buscar símbolo resultados**. |
-

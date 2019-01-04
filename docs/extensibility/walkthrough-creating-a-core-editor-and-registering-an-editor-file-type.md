@@ -1,9 +1,6 @@
 ---
 title: Crear un Editor de núcleo y registrar un tipo de archivo del Editor | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - walkthrough
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e00b96d1f5361d3d5260296532be47636f430d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c6bd1cbf23bf56a6d475f6afa3db5a6225dc75de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921462"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896024"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Tutorial: Crear un editor de núcleo y registrar un tipo de archivo del editor
 En este tutorial se muestra cómo crear un VSPackage que se inicia el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor de núcleo cuando un archivo con el *.myext* se carga la extensión de nombre de archivo.  
@@ -37,7 +34,7 @@ En este tutorial se muestra cómo crear un VSPackage que se inicia el [!INCLUDE[
   
 ### <a name="to-create-the-vspackage"></a>Para crear el VSPackage  
   
-- Iniciar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y cree un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] VSPackage llamado `MyPackage`, tal y como se describe en [Tutorial: crear un comando de menú VSPackage](https://msdn.microsoft.com/library/d699c149-5d1e-47ff-94c7-e1222af02c32).  
+- Iniciar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y cree un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] VSPackage llamado `MyPackage`, tal y como se describe en [Tutorial: Crear un comando de menú VSPackage](https://msdn.microsoft.com/library/d699c149-5d1e-47ff-94c7-e1222af02c32).  
   
 ### <a name="to-add-the-editor-factory"></a>Para agregar el generador de editores  
   
@@ -250,12 +247,12 @@ En este tutorial se muestra cómo crear un VSPackage que se inicia el [!INCLUDE[
     ppunkDocView       = IntPtr.Zero;  
     ppunkDocData       = IntPtr.Zero;  
     pbstrEditorCaption = "";  
-    pguidCmdUI         = Guid.Empty;   
+    pguidCmdUI         = Guid.Empty;   
     pgrfCDW            = 0;  
   
     if ((grfCreateDoc & (VSConstants.CEF_OPENFILE |   
           VSConstants.CEF_SILENT)) == 0)  
-    {   
+    {   
         throw new ArgumentException("Only Open or Silent is valid");  
     }  
     if (punkDocDataExisting != IntPtr.Zero)  
@@ -264,7 +261,7 @@ En este tutorial se muestra cómo crear un VSPackage que se inicia el [!INCLUDE[
     }  
   
     // Instantiate a text buffer of type VsTextBuffer.  
-    // Note: we only need an IUnknown (object) interface for   
+    // Note: we only need an IUnknown (object) interface for   
     // this invocation.  
     Guid clsidTextBuffer = typeof(VsTextBufferClass).GUID;  
     Guid iidTextBuffer   = VSConstants.IID_IUnknown;  
@@ -287,7 +284,7 @@ En este tutorial se muestra cómo crear un VSPackage que se inicia el [!INCLUDE[
         Guid clsidCodeWindow = typeof(VsCodeWindowClass).GUID;  
         Guid iidCodeWindow   = typeof(IVsCodeWindow).GUID;  
         IVsCodeWindow pCodeWindow =  
-        (IVsCodeWindow)this.parentPackage.CreateInstance(   
+        (IVsCodeWindow)this.parentPackage.CreateInstance(   
               ref clsidCodeWindow,  
               ref iidCodeWindow,  
               typeof(IVsCodeWindow));  
@@ -297,24 +294,24 @@ En este tutorial se muestra cómo crear un VSPackage que se inicia el [!INCLUDE[
             // We are giving up ownership of the text buffer!  
             pCodeWindow.SetBuffer((IVsTextLines)pTextBuffer);  
   
-            // Now tell the caller about all this new stuff   
+            // Now tell the caller about all this new stuff   
             // that has been created.  
             ppunkDocView = Marshal.GetIUnknownForObject(pCodeWindow);  
             ppunkDocData = Marshal.GetIUnknownForObject(pTextBuffer);  
   
-            // Specify the command UI to use so keypresses are   
+            // Specify the command UI to use so keypresses are   
             // automatically dealt with.  
             pguidCmdUI = VSConstants.GUID_TextEditorFactory;  
   
             // This caption is appended to the filename and  
-            // lets us know our invocation of the core editor   
+            // lets us know our invocation of the core editor   
             // is up and running.  
             pbstrEditorCaption = " [MyPackage]";  
   
             retval = VSConstants.S_OK;  
-        }   
-    }   
-    return retval;   
+        }   
+    }   
+    return retval;   
     ```  
   
 13. Compile el proyecto y asegúrese de que no hay ningún error.  

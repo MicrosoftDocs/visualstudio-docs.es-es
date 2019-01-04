@@ -2,7 +2,6 @@
 title: Examinar el modelo de contenido de los nodos mediante la vista de modelo de contenido en el Diseñador de esquemas XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
 author: gewarren
@@ -10,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 650478a92ea2dabc9aeef239a68bdff428429cd7
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: f698ab9c26b417c8f88a993863f50e0c3df574d2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548601"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936105"
 ---
-# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Cómo: examinar el modelo de contenido de los nodos mediante la vista de modelo de contenido
+# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Procedimiento Examinar el modelo de contenido de los nodos mediante la vista de modelo de contenido
 
-Este tema describe cómo explorar los nodos mediante el [vista modelo de contenido](../xml-tools/content-model-view.md).
+En este tema se describe cómo explorar los nodos mediante el [vista modelo de contenido](../xml-tools/content-model-view.md).
 
 ## <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>Para crear un nuevo archivo XSD y mostrar el elemento raíz en el vista Modelo de contenido
 
@@ -27,9 +26,9 @@ Este tema describe cómo explorar los nodos mediante el [vista modelo de conteni
 
 2.  Haga clic en **Use el Editor XML para ver y editar el archivo de esquema XML subyacente** en la vista inicio.
 
-3.  Copie el código de ejemplo de esquema XML del [esquema XML de muestra: esquema de pedido de compra](../xml-tools/sample-xsd-file-purchase-order-schema.md) y péguelo para reemplazar el código que se ha agregado el nuevo archivo XSD de forma predeterminada.
+3.  Copie el código de ejemplo de esquema XML de [esquema XML de ejemplo: esquema de pedido de compra](../xml-tools/sample-xsd-file-purchase-order-schema.md) y péguelo para reemplazar el código que se ha agregado el nuevo archivo XSD de forma predeterminada.
 
-4.  Seleccione el `purchaseOrder` elemento en el Explorador de esquema haciendo clic en el `purchaseOrder` elemento en el Editor XML y seleccionando **mostrar en explorador XML**.
+4.  Seleccione el `purchaseOrder` elemento en el Explorador de esquema haciendo clic con el `purchaseOrder` elemento en el Editor XML y seleccionando **mostrar en explorador XML**.
 
 5.  Haga clic en el `purchaseOrder` en el Explorador de XML y seleccione **mostrar en vista de modelo de contenido**.
 

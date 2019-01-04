@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: Suprimir notificaciones de cambio de archivo | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Suprimir notificaciones de cambio de archivo | Documentos de Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - suppress file change notification
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 505827d25a7e6016403567c172ad094d072f1ef3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0d2ca702be87722d2d3197d5584811d77c62472b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885829"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874289"
 ---
-# <a name="how-to-suppress-file-change-notifications"></a>Cómo: suprimir las notificaciones de cambio
+# <a name="how-to-suppress-file-change-notifications"></a>Procedimiento Suprimir notificaciones de cambio de archivo
 Cuando se ha cambiado el archivo físico que representa el búfer de texto, muestra un cuadro de diálogo con el mensaje **¿desea guardar los cambios en los siguientes elementos?** Esto se conoce como notificación de cambio de archivo. Si muchos cambios se van a estar en el archivo, sin embargo, este cuadro de diálogo muestra una y otra vez puede volverse rápidamente molesto.  
   
  Mediante programación, puede suprimir este cuadro de diálogo con el siguiente procedimiento. Mediante la supresión del cuadro de diálogo, puede volver a cargar un archivo inmediatamente sin tener que solicitar al usuario que guarde los cambios cada vez.  
@@ -79,7 +76,7 @@ void CSuspendFileChanges::Suspend()
   
     CComPtr<IUnknown> srpDocData;  
     VSCOOKIE vscookie = VSCOOKIE_NIL;  
-    pRDT->FindAndLockDocument(RDT_NoLock, T2COLE(m_strMkDocument),    
+    pRDT->FindAndLockDocument(RDT_NoLock, T2COLE(m_strMkDocument),    
       NULL, NULL, &srpDocData, &vscookie);  
     if ( (vscookie == VSCOOKIE_NIL) || !srpDocData)  
         return;  

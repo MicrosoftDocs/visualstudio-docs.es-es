@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: ocultar texto en documentos mediante programación'
-ms.custom: ''
+title: Procedimiento Ocultar texto en documentos mediante programación
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 83b25c37ee2ce4dd9cb1ffeda21fbda1b5f3f139
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 5e820cd3b4ed9ea97d9fa7268253663e2ef328c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675260"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928440"
 ---
-# <a name="how-to-programmatically-hide-text-in-documents"></a>Cómo: ocultar texto en documentos mediante programación
+# <a name="how-to-programmatically-hide-text-in-documents"></a>Procedimiento Ocultar texto en documentos mediante programación
   Puede ocultar texto en un documento si establece la propiedad <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> de <xref:Microsoft.Office.Interop.Word.Range.Font%2A> para un determinado rango de texto.  
   
  Por ejemplo, puede ocultar temporalmente el texto dentro de un <xref:Microsoft.Office.Tools.Word.Bookmark> (en una personalización de nivel de documento) o un <xref:Microsoft.Office.Interop.Word.Bookmark> (en un complemento de VSTO) antes de enviar un documento a una impresora.  
@@ -58,10 +55,8 @@ ms.locfileid: "35675260"
  Este ejemplo de código se da por supuesto que el documento contiene un <xref:Microsoft.Office.Tools.Word.Bookmark> control (en una personalización de nivel de documento) o <xref:Microsoft.Office.Interop.Word.Bookmark> control (en un complemento de VSTO) que se denomina `bookmark1`.  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: imprimir documentos mediante programación](../vsto/how-to-programmatically-print-documents.md)   
- [Cómo: definir y seleccionar rangos en documentos mediante programación](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Cómo: restablecer intervalos en documentos de Word de mediante programación](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [Cómo: actualizar texto de marcador mediante programación](../vsto/how-to-programmatically-update-bookmark-text.md)   
+ [Cómo: Imprimir documentos mediante programación](../vsto/how-to-programmatically-print-documents.md)   
+ [Cómo: Definir y seleccionar rangos en documentos mediante programación](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Cómo: Mediante programación restablecer intervalos en documentos de Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [Cómo: Actualizar texto de marcador mediante programación](../vsto/how-to-programmatically-update-bookmark-text.md)   
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

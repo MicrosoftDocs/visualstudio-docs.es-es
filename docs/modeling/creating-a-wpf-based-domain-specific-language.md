@@ -8,19 +8,18 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e2a4e569102623f711bd08e896a39f020de14d04
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9eaae58d9b805888215ccd9e69753061be7695fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946824"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877606"
 ---
 # <a name="create-a-wpf-based-domain-specific-language"></a>Crear un lenguaje específico de dominio basado en WPF
 
-Puede crear un lenguaje específico de dominio que tiene un diseñador de WPF en lugar de un diseñador gráfico.
+Puede crear un lenguaje específico de dominio que tiene un diseñador WPF en lugar de un diseñador gráfico.
 
-Información y ejemplos acerca de esta característica pueden encontrarse en la visualización de Visual Studio y el sitio Web de herramientas de modelado en [http://go.microsoft.com/fwlink/?LinkId=186128](http://go.microsoft.com/fwlink/?LinkId=186128)
+Información y ejemplos acerca de esta característica pueden encontrarse en el Visual Studio de visualización y el sitio Web de herramientas de modelado en [http://go.microsoft.com/fwlink/?LinkId=186128](http://go.microsoft.com/fwlink/?LinkId=186128)
 
 ## <a name="see-also"></a>Vea también
 
