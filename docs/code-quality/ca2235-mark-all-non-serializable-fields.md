@@ -2,7 +2,6 @@
 title: 'CA2235: Marcar todos los campos no serializables'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2235
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ad4328c13403b1bea6a4358661b3347404592c02
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 946e666faae07128378fc8063422446a39bd0791
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549724"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986575"
 ---
 # <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235: Marcar todos los campos no serializables
 
@@ -54,11 +53,11 @@ ms.locfileid: "45549724"
  [!code-vb[FxCop.Usage.MarkNonSerializable#1](../code-quality/codesnippet/VisualBasic/ca2235-mark-all-non-serializable-fields_1.vb)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA2236: Llamar a métodos de clase base en tipos ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
+ [LCA2236: Llamar a métodos de clase base en tipos ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
 
  [CA2240: Implementar ISerializable correctamente](../code-quality/ca2240-implement-iserializable-correctly.md)
 
- [CA2229: Implementar constructores de serialización](../code-quality/ca2229-implement-serialization-constructors.md)
+ [CA2229: implementar constructores de serialización](../code-quality/ca2229-implement-serialization-constructors.md)
 
  [CA2238: Implementar métodos de serialización correctamente](../code-quality/ca2238-implement-serialization-methods-correctly.md)
 
@@ -66,4 +65,4 @@ ms.locfileid: "45549724"
 
  [CA2239: Proporcionar métodos de deserialización para campos opcionales](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
 
- [CA2120: Proteger los constructores de serializaciones](../code-quality/ca2120-secure-serialization-constructors.md)
+ [CA2120: Proteger los constructores de serialización](../code-quality/ca2120-secure-serialization-constructors.md)

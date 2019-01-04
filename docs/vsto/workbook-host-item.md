@@ -1,9 +1,6 @@
 ---
 title: Elemento host Workbook
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b477b40425f7ded5fbaacf09aabc446ff207d86c
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: f15d93818c2db553d22d9639e6460f6637d33c80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258173"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952896"
 ---
 # <a name="workbook-host-item"></a>Elemento host Workbook
   El elemento host <xref:Microsoft.Office.Tools.Excel.Workbook> es un tipo que extiende el tipo <xref:Microsoft.Office.Interop.Excel.Workbook> del ensamblado de interoperabilidad primario de Excel. El elemento host <xref:Microsoft.Office.Tools.Excel.Workbook> proporciona todas las mismas propiedades, los mismos métodos y eventos que un objeto <xref:Microsoft.Office.Interop.Excel.Workbook> , pero también ofrece características adicionales.  
@@ -47,7 +44,7 @@ ms.locfileid: "35258173"
 ### <a name="limitations-of-the-workbook-host-item-in-document-level-projects"></a>Limitaciones del elemento de host de libro en proyectos de nivel de documento  
  Un proyecto de nivel de documento puede contener solamente un elemento host <xref:Microsoft.Office.Tools.Excel.Workbook> (es decir, la clase `ThisWorkbook` ). No puede agregar nuevos <xref:Microsoft.Office.Tools.Excel.Workbook> elementos host para el proyecto en tiempo de diseño, y que no se puede crear nuevos <xref:Microsoft.Office.Tools.Excel.Workbook> elementos en tiempo de ejecución desde una personalización de nivel de documento host.  
   
- Si crea un nuevo libro de Excel en tiempo de ejecución, será del tipo <xref:Microsoft.Office.Interop.Excel.Workbook>. Como no se trata de un elemento host, este no puede contener controles host ni controles de Windows Forms. Para obtener más información sobre la creación de los libros en tiempo de ejecución, consulte [Cómo: crear nuevos libros mediante programación](../vsto/how-to-programmatically-create-new-workbooks.md).  
+ Si crea un nuevo libro de Excel en tiempo de ejecución, será del tipo <xref:Microsoft.Office.Interop.Excel.Workbook>. Como no se trata de un elemento host, este no puede contener controles host ni controles de Windows Forms. Para obtener más información sobre la creación de los libros en tiempo de ejecución, vea [Cómo: Crear nuevos libros mediante programación](../vsto/how-to-programmatically-create-new-workbooks.md).  
   
  El elemento host <xref:Microsoft.Office.Tools.Excel.Workbook> no actúa como un contenedor para los controles host. Por lo tanto, no es posible agregar ningún control visible al libro, pero puede agregar componentes, como un elemento <xref:System.Data.DataSet>, de modo que los componentes puedan compartirse en todas las hojas de cálculo. En un proyecto de nivel de documento, los componentes disponibles para el libro se pueden encontrar en la pestaña **Componentes** , en la pestaña **Datos** y la pestaña **Todos los formularios Windows Forms** del **Cuadro de herramientas**.  
   
@@ -55,7 +52,7 @@ ms.locfileid: "35258173"
 >  Las herramientas de desarrollo de Office en Visual Studio no admiten libros compartidos.  
   
 ## <a name="understand-workbook-host-items-in-vsto-add-in-projects"></a>Comprender los elementos host de libro en proyectos de complemento VSTO  
- En proyectos de complemento VSTO, puede generar un <xref:Microsoft.Office.Tools.Excel.Workbook> elemento host en tiempo de ejecución para cualquier libro que está abierto en Excel. Para generar un <xref:Microsoft.Office.Tools.Excel.Workbook> elemento host, utilice el `GetVstoObject` método. Para obtener más información, consulte [documentos ampliar Word y libros de Excel en complementos VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ En proyectos de complemento VSTO, puede generar un <xref:Microsoft.Office.Tools.Excel.Workbook> elemento host en tiempo de ejecución para cualquier libro que está abierto en Excel. Para generar un elemento host <xref:Microsoft.Office.Tools.Excel.Workbook>, use el método `GetVstoObject`. Para obtener más información, consulte [documentos ampliar Word y libros de Excel en complementos VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Tutoriales y ejemplos de desarrollo de office](../vsto/office-development-samples-and-walkthroughs.md)   
@@ -64,5 +61,3 @@ ms.locfileid: "35258173"
  [Elemento host Worksheet](../vsto/worksheet-host-item.md)   
  [Automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md)   
  [Limitaciones de programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

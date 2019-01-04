@@ -1,9 +1,6 @@
 ---
 title: AsyncTaskMethodBuilder&lt;TResult&gt;. Propiedad ObjectIdForDebugger | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - ObjectForDebugger property, AsyncTaskMethodBuilder<TResult> structure [.NET Framework debug engines]
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f60f7cf4cb524a473b89528c7b7077459d140a9
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 363394e2751f6db783e4217c8414de9d65451a11
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153655"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962517"
 ---
 # <a name="asynctaskmethodbuilderlttresultgtobjectidfordebugger-property"></a>AsyncTaskMethodBuilder&lt;TResult&gt;. Propiedad ObjectIdForDebugger
 Obtiene un objeto que puede utilizarse para identificar de forma única este generador para el depurador.  
   
- **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
+ **Espacio de nombres:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
  **Ensamblado:** mscorlib (en mscorlib.dll)  
   

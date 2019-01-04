@@ -1,9 +1,6 @@
 ---
 title: TASK_STATE_CANCELED (campo) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - TASK_STATE_CANCELED field, Task class [.NET Framework debug engines]
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a934a70028f392a2a851c11c1b7bc9005dc4a38c
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 9070b2bfd9e5134b02ffcde34025b8a46b0d3687
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276785"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941224"
 ---
 # <a name="taskstatecanceled-field"></a>TASK_STATE_CANCELED (campo)
 La tarea se canceló antes de que ha alcanzado el estado de ejecución, o bien confirmado su cancelación y se completa sin excepciones.  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Espacio de nombres:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Ensamblado:** mscorlib (en mscorlib.dll)  
   
@@ -39,4 +36,4 @@ La tarea se canceló antes de que ha alcanzado el estado de ejecución, o bien c
  Si el [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) campo contiene este valor, el <xref:System.Threading.Tasks.Task.Status%2A> propiedad devuelve <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.  
   
 ## <a name="see-also"></a>Vea también  
- [Clase de tarea](../../extensibility/debugger/task-class-internal-members.md)
+ [Clase de tarea: miembros internos](../../extensibility/debugger/task-class-internal-members.md)

@@ -1,9 +1,6 @@
 ---
 title: Implementación de extensiones para las herramientas de SharePoint en Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c3bf20f945c40dd963820b1bf3f4032a2dd517ca
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 02e72a2991b5061459533cab9a3fbf213baa6b94
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295974"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880827"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Implementar extensiones para las herramientas de SharePoint en Visual Studio
 
@@ -54,9 +51,9 @@ También puede trabajar con proyectos adicionales para determinados tipos de ext
 
 -   Un proyecto de biblioteca de clases que implementa los comandos de SharePoint que utilizan la extensión. Para ver un tutorial que muestra este escenario, consulte [Tutorial: Extender el Explorador de servidores para mostrar elementos web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
 
--   Un proyecto de plantilla de elemento o la plantilla de proyecto que crea una plantilla de elemento o una plantilla de proyecto, si la extensión define un nuevo tipo de elemento de proyecto de SharePoint. Para ver un tutorial que muestra este escenario, consulte [Tutorial: crear un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
+-   Un proyecto de plantilla de elemento o la plantilla de proyecto que crea una plantilla de elemento o una plantilla de proyecto, si la extensión define un nuevo tipo de elemento de proyecto de SharePoint. Para ver un tutorial que muestra este escenario, consulte [Tutorial: Creación de un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
 
--   Un proyecto de biblioteca de clases que implementa a un asistente personalizado para una plantilla de elemento o una plantilla de proyecto, si la extensión incluye una plantilla. Para ver un tutorial que muestra este escenario, consulte [Tutorial: crear un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
+-   Un proyecto de biblioteca de clases que implementa a un asistente personalizado para una plantilla de elemento o una plantilla de proyecto, si la extensión incluye una plantilla. Para ver un tutorial que muestra este escenario, consulte [Tutorial: Creación de un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
 
 Si incluye todos los proyectos en la misma solución de Visual Studio, puede modificar el archivo source.extension.vsixmanifest del proyecto VSIX para incluir el resultado de compilación de los proyectos de biblioteca de clases.
 
@@ -219,9 +216,9 @@ En la tabla siguiente se enumera los tutoriales que muestran cómo usar un proye
 |Tipo de extensión|Tutoriales relacionados|
 |--------------------|--------------------------|
 |Una extensión que incluye únicamente el ensamblado de extensión|[Tutorial: Extender un tipo de elemento de proyecto de SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)<br /><br /> [Tutorial: Crear una extensión de proyecto de SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)<br /><br /> [Tutorial: Llamar al modelo de objetos de cliente de SharePoint en una extensión de explorador de servidores](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|
-|Una extensión que incluye los comandos de SharePoint|[Tutorial: Crear un paso de implementación personalizado para proyectos de SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)<br /><br /> [Tutorial: Extender el Explorador de servidores para mostrar elementos web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)<br /><br /> [Tutorial: Crear un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
-|Una extensión que incluye una plantilla de Visual Studio|[Tutorial: Crear un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)<br /><br /> [Tutorial: Crear un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)|
-|Una extensión que incluye a un asistente de plantilla|[Tutorial: Crear un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)<br /><br /> [Tutorial: Crear un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
+|Una extensión que incluye los comandos de SharePoint|[Tutorial: Crear un paso de implementación personalizado para proyectos de SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)<br /><br /> [Tutorial: Extender el Explorador de servidores para mostrar elementos web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)<br /><br /> [Tutorial: Creación de un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
+|Una extensión que incluye una plantilla de Visual Studio|[Tutorial: Creación de un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)<br /><br /> [Tutorial: Creación de un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)|
+|Una extensión que incluye a un asistente de plantilla|[Tutorial: Creación de un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)<br /><br /> [Tutorial: Creación de un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
 
 ## <a name="create-vsix-packages-manually"></a>Crear manualmente los paquetes VSIX
 

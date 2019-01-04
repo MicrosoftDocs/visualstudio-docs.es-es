@@ -1,9 +1,6 @@
 ---
 title: VSCodeWindowManager (objeto) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - VSCodeWindowManager
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7617062caf233f0711ce2b97d6816af25023ad83
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 2fc3aa99fd54234cdc21250a39052b37d233a70b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586744"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943293"
 ---
 # <a name="vscodewindowmanager-object"></a>VSCodeWindowManager (objeto)
 El servicio de lenguaje implementa el Administrador de ventanas de código y es responsable de administrar los elementos gráficos (por ejemplo, la barra desplegable). Para obtener más información, consulte [personalizar Windows de código mediante la API heredada](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).  

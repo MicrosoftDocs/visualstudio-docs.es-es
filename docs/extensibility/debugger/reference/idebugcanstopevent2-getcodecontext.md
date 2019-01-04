@@ -1,9 +1,6 @@
 ---
 title: IDebugCanStopEvent2::GetCodeContext | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugCanStopEvent2::GetCodeContext
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05cd4729635042d67f063bbba412c19a4a2f89f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b85ee5e502840b786fd2cfe739202558e8463500
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818346"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921142"
 ---
 # <a name="idebugcanstopevent2getcodecontext"></a>IDebugCanStopEvent2::GetCodeContext
 Obtiene el contexto del código que describe la ubicación de este evento.  
@@ -28,13 +25,13 @@ Obtiene el contexto del código que describe la ubicación de este evento.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT GetCodeContext(   
+HRESULT GetCodeContext(   
    IDebugCodeContext2** ppCodeContext  
 );  
 ```  
   
 ```csharp  
-int GetCodeContext(   
+int GetCodeContext(   
    out IDebugCodeContext2 ppCodeContext  
 );  
 ```  

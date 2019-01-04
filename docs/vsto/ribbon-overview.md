@@ -1,9 +1,6 @@
 ---
 title: Información general de la cinta de opciones
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 51de8b5fbc4e21b4dabaf34f526b85f0b98623db
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ff1cda312fdc007c1c700d2edf6576dcc91d87e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846371"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989208"
 ---
 # <a name="ribbon-overview"></a>Información general de la cinta de opciones
   La cinta de opciones es una manera de organizar comandos relacionados para que sean fáciles de encontrar. Los comandos aparecen como controles en la cinta de opciones. Los controles se organizan en *grupos* a lo largo de una franja horizontal en el borde superior de una ventana de aplicación. Los grupos relacionados se organizan en pestañas.  
@@ -84,7 +81,7 @@ ms.locfileid: "49846371"
   
  Además, los valores de propiedad predeterminados sin modificar no aparecen en el archivo XML de la cinta resultante.  
   
- Para obtener más información acerca de cómo exportar la cinta de opciones a XML, vea [Cómo: exportar una cinta de opciones desde el Diseñador de cinta a cinta XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
+ Para obtener más información acerca de cómo exportar la cinta de opciones a XML, vea [Cómo: Exportar una cinta de opciones desde el Diseñador de cinta a cinta XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
   
 ### <a name="update-the-code"></a>Actualice el código  
  Se agrega un nuevo archivo de código de la cinta de opciones a **el Explorador de soluciones**. Este archivo contiene la clase XML de la cinta. Debe crear métodos de devolución de llamada en la región `Ribbon Callbacks` de esta clase para controlar las acciones del usuario, como es el hacer clic en un botón. Mueva el código de los controladores de eventos a estos métodos de devolución de llamada y modifique el código para que funcione con el modelo de programación de extensibilidad de la cinta (RibbonX). Para obtener más información, consulta [Ribbon XML](../vsto/ribbon-xml.md).  
@@ -120,7 +117,7 @@ ms.locfileid: "49846371"
   
 |Título|Descripción|  
 |-----------|-----------------|  
-|[Cómo: empezar a personalizar la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md)|Se muestra cómo personalizar la cinta de opciones de una aplicación de Microsoft Office, agregar un **cinta (diseñador Visual)** o **cinta (XML)** a un proyecto de Office.|  
+|[Cómo: Introducción a la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md)|Se muestra cómo personalizar la cinta de opciones de una aplicación de Microsoft Office, agregar un **cinta (diseñador Visual)** o **cinta (XML)** a un proyecto de Office.|  
 |[Diseñador de cinta](../vsto/ribbon-designer.md)|Describe cómo puede utilizar el Diseñador de cinta de opciones para agregar pestañas personalizadas, grupos y controles a la cinta de opciones de una aplicación de Microsoft Office.|  
 |[Tutorial: Crear una pestaña personalizada usando el Diseñador de cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Muestra cómo crear una pestaña personalizada de la cinta mediante el diseñador de la cinta. Puede usar el diseñador de la cinta para agregar y colocar controles en la pestaña personalizada.|  
 |[Información general sobre el modelo de objetos de cinta de opciones](../vsto/ribbon-object-model-overview.md)|Proporciona información general del modelo de objetos fuertemente tipados que puede usar para obtener y establecer las propiedades de controles de cinta de opciones en tiempo de ejecución.|  
@@ -128,12 +125,10 @@ ms.locfileid: "49846371"
 |[Personalizar una cinta de opciones para Outlook](../vsto/customizing-a-ribbon-for-outlook.md)|Proporciona instrucciones para personalizar la cinta de opciones en Microsoft Office Outlook.|  
 |[Personalizar una cinta para InfoPath](../vsto/customizing-a-ribbon-for-infopath.md)|Proporciona instrucciones para personalizar la cinta de opciones en Microsoft Office InfoPath.|  
 |[Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)|Se muestra cómo mostrar, ocultar y modificar la cinta de opciones y permitir que los usuarios ejecutar el código desde los controles en un panel de tareas personalizado, un panel de acciones o un formulario de Outlook.|  
-|[Cómo: cambiar la posición de una pestaña en la cinta de opciones](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Se muestra cómo cambiar el orden de las fichas en una cinta.|  
-|[Cómo: personalizar una pestaña integrada](../vsto/how-to-customize-a-built-in-tab.md)|Muestra cómo agregar grupos y controles a una pestaña integrada.|  
-|[Cómo: agregar controles a la vista Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)|Muestra cómo agregar controles al menú que se abre al hacer clic en el **archivo**.|  
-|[Cómo: agregar un selector de cuadro de diálogo a un grupo de cinta de opciones](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Muestra cómo para agregar un selector de cuadro de diálogo a cualquier grupo de una cinta.|  
-|[Cómo: exportar una cinta desde el Diseñador de cinta al XML de cinta](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Muestra cómo personalizar la cinta de maneras avanzadas exportando la cinta de opciones desde el diseñador al XML de cinta.|  
+|[Cómo: Cambiar la posición de una pestaña en la cinta de opciones](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Se muestra cómo cambiar el orden de las fichas en una cinta.|  
+|[Cómo: Personalizar una pestaña integrada](../vsto/how-to-customize-a-built-in-tab.md)|Muestra cómo agregar grupos y controles a una pestaña integrada.|  
+|[Cómo: Agregar controles a la vista Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)|Muestra cómo agregar controles al menú que se abre al hacer clic en el **archivo**.|  
+|[Cómo: Agregar un selector de cuadro de diálogo a un grupo de cinta de opciones](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Muestra cómo para agregar un selector de cuadro de diálogo a cualquier grupo de una cinta.|  
+|[Cómo: Exportar una cinta desde el Diseñador de cinta al XML de cinta](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Muestra cómo personalizar la cinta de maneras avanzadas exportando la cinta de opciones desde el diseñador al XML de cinta.|  
 |[Ribbon XML](../vsto/ribbon-xml.md)|Explica cómo puede personalizar una cinta de opciones mediante XML de cinta de opciones.|  
 |[Tutorial: Crear una pestaña personalizada usando el Diseñador de cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Muestra cómo crear una pestaña personalizada de la cinta de opciones mediante la **cinta (XML)** elemento.|  
-  
-  

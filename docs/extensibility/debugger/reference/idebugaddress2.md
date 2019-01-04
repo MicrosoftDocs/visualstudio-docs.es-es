@@ -1,9 +1,6 @@
 ---
-title: IDebugAddress2 | Documentos de Microsoft
-ms.custom: ''
+title: IDebugAddress2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugAddress2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 588b2d3e338080a086fee421deb17760496a268f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8f8755aae5d349fcb463d7ff2be51ca4015449ac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100278"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843981"
 ---
 # <a name="idebugaddress2"></a>IDebugAddress2
-Esta interfaz proporciona acceso al identificador del proceso que posee el objeto cuya dirección está representado por esta interfaz.  
+Esta interfaz proporciona acceso al identificador de proceso que posee el objeto cuya dirección está representado por esta interfaz.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -32,7 +29,7 @@ IDebugAddress2 : IDebugAddress
 ```  
   
 ## <a name="notes-for-implementers"></a>Notas para los implementadores  
- Un proveedor de símbolos implementa esta interfaz en el mismo objeto que implementa el [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaz. Esta interfaz proporciona acceso al identificador del proceso que posee el objeto que está relacionado con esta dirección.  
+ Un proveedor de símbolos implementa esta interfaz en el mismo objeto que implementa el [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaz. Esta interfaz proporciona acceso al identificador de proceso que posee el objeto que está relacionado con esta dirección.  
   
 ## <a name="notes-for-callers"></a>Notas para los llamadores  
  Use [QueryInterface](/cpp/atl/queryinterface) para obtener esta interfaz desde el [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaz.  
@@ -42,12 +39,12 @@ IDebugAddress2 : IDebugAddress
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[GetProcessID](../../../extensibility/debugger/reference/idebugaddress2-getprocessid.md)|Recupera el identificador del proceso que posee el objeto representado por esta interfaz.|  
+|[GetProcessID](../../../extensibility/debugger/reference/idebugaddress2-getprocessid.md)|Recupera el identificador de proceso que posee el objeto representado por esta interfaz.|  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   

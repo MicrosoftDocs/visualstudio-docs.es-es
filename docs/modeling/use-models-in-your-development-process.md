@@ -2,7 +2,6 @@
 title: Usar modelos en el proceso de desarrollo
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
@@ -11,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25debac1e5f2e977e5dd36ec8b4a083a1a362d1b
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: b1a507a6995ceb3c04dfc3d9daf57fa341fe6fc7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967225"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832823"
 ---
 # <a name="use-models-in-your-development-process"></a>Usar modelos en el proceso de desarrollo
 
-En Visual Studio puede usar un modelo para que le ayude a comprender y modificar un sistema, aplicación o componente. Un modelo puede ayudarle a visualizar el mundo en el que trabaja el sistema, a clarificar las necesidades de los usuarios, a definir la arquitectura del sistema, a analizar el código y a garantizar que el código satisface los requisitos.  Consulte [vídeo de Channel 9: mejora de la arquitectura mediante modelado](http://go.microsoft.com/fwlink/?LinkID=252078).
+En Visual Studio puede usar un modelo para que le ayude a comprender y modificar un sistema, aplicación o componente. Un modelo puede ayudarle a visualizar el mundo en el que trabaja el sistema, a clarificar las necesidades de los usuarios, a definir la arquitectura del sistema, a analizar el código y a garantizar que el código satisface los requisitos.  Consulte [vídeo de Channel 9: Mejora de la arquitectura mediante modelado](http://go.microsoft.com/fwlink/?LinkID=252078).
 
 Para ver qué versiones de Visual Studio admite cada tipo de modelo, consulte [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -133,7 +132,7 @@ Los distintos tipos de diagramas resultan útiles para describir el diseño con 
 
 |**Categoría**|**Vínculos**|
 |-|-|
-|**Vídeos**|![vínculo a vídeo](../data-tools/media/playvideo.gif) [MSDN vídeos: cómo crear y usar modelos y diagramas UML (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![vínculo a vídeo](../data-tools/media/playvideo.gif) [Channel 9: UML con Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![vínculo a vídeo](../data-tools/media/playvideo.gif) [MSDN How Do I Series: extensibilidad (Visual Studio 2010 Ultimate) y herramientas UML](http://go.microsoft.com/fwlink/?LinkID=214467)|
+|**Vídeos**|![vínculo a vídeo](../data-tools/media/playvideo.gif) [MSDN vídeos: Cómo crear y usar modelos UML y diagramas (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![vínculo a vídeo](../data-tools/media/playvideo.gif) [Channel 9: UML con Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![vínculo a vídeo](../data-tools/media/playvideo.gif) [MSDN How Do I Series: Extensibilidad (Visual Studio 2010 Ultimate) y herramientas UML](http://go.microsoft.com/fwlink/?LinkID=214467)|
 |**Foros**|- [Herramientas de visualización y modelado de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [SDK de visualización y modelado de Visual Studio (Herramientas DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Blogs**|[DevOps de Microsoft](https://blogs.msdn.microsoft.com/devops/)|
 |**Artículos y diarios técnicos**|[Centro de arquitectura - MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Orientación para las herramientas de arquitectura de Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|

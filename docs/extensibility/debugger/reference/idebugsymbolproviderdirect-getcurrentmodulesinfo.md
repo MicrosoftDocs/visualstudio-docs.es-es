@@ -1,9 +1,6 @@
 ---
 title: IDebugSymbolProviderDirect::GetCurrentModulesInfo | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugSymbolProviderDirect::GetCurrentModulesInfo
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af5954fb8cd527af526702d8e290c879caa04f46
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ddd56cc5a41bcdc2d362eb5d4157d0a8e9e92c49
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875859"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860236"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
 Recupera información acerca de los módulos en el grupo de símbolos.  

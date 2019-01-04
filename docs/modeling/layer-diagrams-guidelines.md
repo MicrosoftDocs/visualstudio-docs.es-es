@@ -1,5 +1,5 @@
 ---
-title: 'Diagramas de dependencia: instrucciones'
+title: 'Diagramas de dependencia: Instrucciones'
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,17 +13,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: b7e282ed6aa93189ab15e608a5b3abe0c56411b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f4a044481b1e359b2021b16da1f0b2b5aba8a872
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863339"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924428"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramas de dependencia: instrucciones
 
-Describe la arquitectura de la aplicación en un nivel alto mediante la creación de *diagramas de dependencia* en Visual Studio. Asegúrese de que el código mantiene la coherencia con este diseño, valide el código con un diagrama de dependencia. También puede incluir la validación de capas en el proceso de compilación. Consulte [vídeo de Channel 9: diseño y validar la arquitectura mediante diagramas de dependencia](http://go.microsoft.com/fwlink/?LinkID=252073).
+Describe la arquitectura de la aplicación en un nivel alto mediante la creación de *diagramas de dependencia* en Visual Studio. Asegúrese de que el código mantiene la coherencia con este diseño, valide el código con un diagrama de dependencia. También puede incluir la validación de capas en el proceso de compilación. Consulte [vídeo de Channel 9: Diseñar y validar la arquitectura mediante diagramas de dependencia](http://go.microsoft.com/fwlink/?LinkID=252073).
 
 Para ver qué ediciones de Visual Studio admiten esta característica, vea [compatibilidad con la edición de arquitectura y las herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -32,7 +31,7 @@ Para ver qué ediciones de Visual Studio admiten esta característica, vea [comp
 
 ## <a name="what-is-a-dependency-diagram"></a>¿Qué es un diagrama de dependencias?
 
-Como un diagrama de arquitectura tradicional, un diagrama de dependencia identifica los componentes primarios o las unidades funcionales del diseño y sus interdependencias. Cada nodo en el diagrama, denominado un *capa*, representa un grupo lógico de espacios de nombres, proyectos u otros artefactos. Puede dibujar las dependencias que debería haber en el diseño. A diferencia de un diagrama de arquitectura tradicional, puede comprobar que las dependencias reales del código fuente se ajustan a las dependencias especificadas que se pretenden. Al incluir la validación en el proceso de compilación normal de [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)], tiene la garantía de que el código de programa seguirá ajustándose a la arquitectura del sistema cuando se realicen cambios. Consulte [diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md).
+Como un diagrama de arquitectura tradicional, un diagrama de dependencia identifica los componentes primarios o las unidades funcionales del diseño y sus interdependencias. Cada nodo en el diagrama, denominado un *capa*, representa un grupo lógico de espacios de nombres, proyectos u otros artefactos. Puede dibujar las dependencias que debería haber en el diseño. A diferencia de un diagrama de arquitectura tradicional, puede comprobar que las dependencias reales del código fuente se ajustan a las dependencias especificadas que se pretenden. Al incluir la validación en el proceso de compilación normal de [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)], tiene la garantía de que el código de programa seguirá ajustándose a la arquitectura del sistema cuando se realicen cambios. Consulte [diagramas de dependencia: Referencia](../modeling/layer-diagrams-reference.md).
 
 ## <a name="how-to-design-or-update-your-app-with-dependency-diagrams"></a>Cómo diseñar o actualizar la aplicación con diagramas de dependencia
 
@@ -125,7 +124,7 @@ Si esto no es el caso, el código será más difícil de cambiar a lo largo de s
 
 Cuando comience el desarrollo de un nuevo proyecto, o una nueva área de un nuevo proyecto, puede dibujar capas y dependencias que le ayuden a identificar los componentes primarios antes de empezar a desarrollar el código.
 
--   **Muestre modelos arquitectónicos identificables** en los diagramas de dependencia, si es posible. Por ejemplo, un diagrama de dependencia que describe una aplicación de escritorio puede incluir capas como presentación, lógica del dominio y Store de datos. Un diagrama de dependencia que abarque una única característica dentro de una aplicación puede tener las capas modelo, vista y controlador. Para obtener más información acerca de estos patrones, consulte [Patterns & Practices: arquitectura de la aplicación](http://go.microsoft.com/fwlink/?LinkId=145794).
+-   **Muestre modelos arquitectónicos identificables** en los diagramas de dependencia, si es posible. Por ejemplo, un diagrama de dependencia que describe una aplicación de escritorio puede incluir capas como presentación, lógica del dominio y Store de datos. Un diagrama de dependencia que abarque una única característica dentro de una aplicación puede tener las capas modelo, vista y controlador. Para obtener más información acerca de estos patrones, consulte [Patterns & Practices: Arquitectura de la aplicación](http://go.microsoft.com/fwlink/?LinkId=145794).
 
 -   **Crear un artefacto de código para cada capa** como un espacio de nombres, clase o componente. De este modo, le resultará más fácil hacer un seguimiento del código y vincular los artefactos de código a las capas. Tan pronto como cree cada uno de los artefactos, vincúlelo a la capa apropiada.
 
@@ -176,5 +175,5 @@ Para asegurarse de que los cambios futuros en el código se ajustan a los diagra
 
 ## <a name="see-also"></a>Vea también
 
-- [Diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md)
+- [Diagramas de dependencia: Referencia](../modeling/layer-diagrams-reference.md)
 - [Creación de diagramas de dependencia a partir del código](../modeling/create-layer-diagrams-from-your-code.md)

@@ -1,8 +1,7 @@
 ---
-title: 'CA1404: Llame a GetLastError inmediatamente después de P/Invoke'
+title: 'CA1404: Llamar a GetLastError inmediatamente después de P-Invoke'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CallGetLastErrorImmediatelyAfterPInvoke
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e9a339a4b665f892c3e3e63c77ba0dee5891df8
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 5ae16f99aefe4411b345a1b135c7f014a1061911
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552047"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963115"
 ---
-# <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404: Llame a GetLastError inmediatamente después de P/Invoke
+# <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404: Llamar a GetLastError inmediatamente después de P/Invoke
 
 |||
 |-|-|
@@ -69,8 +68,8 @@ Se realiza una llamada a la <xref:System.Runtime.InteropServices.Marshal.GetLast
 
  [CA1400: Deben existir puntos de entrada P/Invoke](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
 
- [CA1401: Los elementos P/Invoke no deben estar visibles](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
+ [CA1401: P/Invoke no deben estar visibles](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
 
- [CA2101: Especifique cálculo de referencias para argumentos de cadena P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+ [CA2101: Especifique serialización para argumentos de cadena P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
 
  [CA2205: Utilizar equivalentes administrados de la API Win32](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)

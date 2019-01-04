@@ -1,9 +1,6 @@
 ---
 title: Icon (elemento) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Icon
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2494e75c312385a1a0c86709eb417d4b124a97de
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 475bca35ca1bdc1879301912c7ddd271f369a6ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497698"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870013"
 ---
 # <a name="icon-element"></a>Icon (elemento)
 El atributo guid de la etiqueta de icono es el guid de un mapa de bits definido. El `id` atributo selecciona la ranura en la Tira de mapa de bits. Este elemento es opcional. Si este elemento no está incluido el valor de **guidOfficeIcon:msotcidNoIcon** se implicarse.  
@@ -37,8 +34,8 @@ El atributo guid de la etiqueta de icono es el guid de un mapa de bits definido.
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|guid|Requerido. El guid de un mapa de bits definido.|  
-|id|Requerido. Selecciona la ranura en la Tira de mapa de bits.|  
+|guid|Obligatorio. El guid de un mapa de bits definido.|  
+|id|Obligatorio. Selecciona la ranura en la Tira de mapa de bits.|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
   

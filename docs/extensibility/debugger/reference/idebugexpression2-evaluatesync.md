@@ -1,9 +1,6 @@
 ---
 title: IDebugExpression2::EvaluateSync | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugExpression2::EvaluateSync
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b288d9995797a000f16533fcee9dafd85171722
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 48e72b61f6d7504572ebcf5e9bed4be062307ed1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864614"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850770"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 Este método evalúa la expresión de forma sincrónica.  
@@ -28,7 +25,7 @@ Este método evalúa la expresión de forma sincrónica.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT EvaluateSync(   
+HRESULT EvaluateSync(   
    EVALFLAGS             dwFlags,  
    DWORD                 dwTimeout,  
    IDebugEventCallback2* pExprCallback,  

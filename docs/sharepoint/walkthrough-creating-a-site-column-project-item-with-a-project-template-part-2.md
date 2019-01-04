@@ -1,9 +1,6 @@
 ---
 title: 'Tutorial: Crear un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 2 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
@@ -14,17 +11,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d4512dc15d394cdf2442d8bfcf440ccb31623a29
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5f9f2bbad380302d2a13b4352b2c9a7a54797e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942080"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829912"
 ---
-# <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Tutorial: Crear un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 2
+# <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Tutorial: Creación de un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 2
   Después de definir un tipo personalizado de elemento de proyecto de SharePoint y asociarlo a una plantilla de proyecto en Visual Studio, es posible que desee proporcionar también un asistente para la plantilla. Puede usar el asistente con el fin de recopilar información de los usuarios cuando usan la plantilla para crear un nuevo proyecto que contiene el elemento de proyecto. La información que recopile puede usarse para inicializar el elemento de proyecto.  
   
- En este tutorial, agregará un Asistente para la plantilla de proyecto de columna de sitio que se muestra en [Tutorial: crear un elemento de proyecto de columna de sitio con una plantilla de proyecto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md). Cuando un usuario crea un proyecto de columna de sitio, el asistente recopila información acerca de la columna de sitio (por ejemplo, su tipo base y el grupo) y agrega esta información para el *Elements.xml* archivo en el nuevo proyecto.  
+ En este tutorial, agregará un Asistente para la plantilla de proyecto de columna de sitio que se muestra en [Tutorial: Crear un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md). Cuando un usuario crea un proyecto de columna de sitio, el asistente recopila información acerca de la columna de sitio (por ejemplo, su tipo base y el grupo) y agrega esta información para el *Elements.xml* archivo en el nuevo proyecto.  
   
  En este tutorial se muestran las siguientes tareas:  
   
@@ -44,7 +41,7 @@ ms.locfileid: "49942080"
 > Para una serie de flujos de trabajo de ejemplo, vea [ejemplos de flujo de trabajo de SharePoint](https://docs.microsoft.com/sharepoint/dev/general-development/sharepoint-workflow-samples).  
   
 ## <a name="prerequisites"></a>Requisitos previos  
- Para llevar a cabo este tutorial, primero debe crear la solución SiteColumnProjectItem completando [Tutorial: crear un elemento de proyecto de columna de sitio con una plantilla de proyecto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  
+ Para llevar a cabo este tutorial, primero debe crear la solución SiteColumnProjectItem completando [Tutorial: Crear un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  
   
  También necesitará los siguientes componentes en el equipo de desarrollo para completar este tutorial:  
   
@@ -54,7 +51,7 @@ ms.locfileid: "49942080"
   
   El conocimiento de los siguientes conceptos es útil, aunque no necesario, para completar el tutorial.  
   
-- Asistentes para plantillas de elementos y proyectos de Visual Studio. Para obtener más información, consulte [Cómo: usar asistentes con plantillas de proyecto](../extensibility/how-to-use-wizards-with-project-templates.md) y <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfaz.  
+- Asistentes para plantillas de elementos y proyectos de Visual Studio. Para obtener más información, vea [Cómo: Usar asistentes con plantillas de proyecto](../extensibility/how-to-use-wizards-with-project-templates.md) y <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfaz.  
   
 - Columnas de sitio de SharePoint. Para obtener más información, consulte [columnas](http://go.microsoft.com/fwlink/?LinkId=183547).  
   
@@ -70,7 +67,7 @@ ms.locfileid: "49942080"
 |Comandos de SharePoint|Estos son los métodos usados por el modelo de datos del asistente para llamar al sitio de SharePoint local mientras el asistente se está ejecutando. Dado que los comandos de SharePoint deben tener .NET Framework 3.5 como destino, se implementan en un ensamblado diferente al del resto del código del asistente.|  
   
 ## <a name="create-the-projects"></a>Crear los proyectos
- Para completar este tutorial, deberá agregar varios proyectos a la solución SiteColumnProjectItem que creó en [Tutorial: crear un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
+ Para completar este tutorial, deberá agregar varios proyectos a la solución SiteColumnProjectItem que creó en [Tutorial: Creación de un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
   
 - Un proyecto WPF. Implementará la interfaz <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> y definirá la interfaz de usuario del asistente de este proyecto.  
   
@@ -119,7 +116,7 @@ ms.locfileid: "49942080"
   
 3.  Asegúrese de que la plataforma de destino se establezca en .NET Framework 4.5, no en .NET Framework 4.5 Client Profile.  
   
-     Para obtener más información, consulte [Cómo: Usar como destino una versión de .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+     Para obtener más información, vea [Cómo: usar una versión de .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
 4.  Abra el menú contextual para el **ProjectTemplateWizard** del proyecto, elija **agregar**y, a continuación, elija **nuevo elemento**.  
   
@@ -163,7 +160,7 @@ ms.locfileid: "49942080"
   
 13. Si está desarrollando un proyecto de Visual Basic, importar el espacio de nombres ProjectTemplateWizard en el proyecto mediante el uso de la **Diseñador de proyectos**.  
   
-     Para obtener más información, consulte [Cómo: agregar o quitar espacios de nombres importados &#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
+     Para obtener más información, vea [Cómo: Agregar o quitar espacios de nombres importados &#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
   
 #### <a name="to-configure-the-sharepointcommands-project"></a>Para configurar el proyecto SharePointcommands
   
@@ -323,7 +320,7 @@ ms.locfileid: "49942080"
 1.  En la barra de menús, elija **Compilar** > **Compilar solución**.  
   
 ## <a name="removing-the-keysnk-file-from-the-project-template"></a>Quitar el archivo key.snk de la plantilla de proyecto
- En [Tutorial: crear un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md), la plantilla de proyecto que creó contiene un archivo key.snk que se usa para firmar cada instancia de proyecto de la columna de sitio. Este archivo key.snk ya no es necesario porque el asistente genera ahora un nuevo archivo key.snk para cada proyecto. Quite el archivo key.snk de la plantilla de proyecto y quite las referencias a este archivo.  
+ En [Tutorial: Creación de un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md), la plantilla de proyecto que creó contiene un archivo key.snk que se usa para firmar cada instancia de proyecto de la columna de sitio. Este archivo key.snk ya no es necesario porque el asistente genera ahora un nuevo archivo key.snk para cada proyecto. Quite el archivo key.snk de la plantilla de proyecto y quite las referencias a este archivo.  
   
 #### <a name="to-remove-the-keysnk-file-from-the-project-template"></a>Para quitar el archivo key.snk de la plantilla de proyecto  
   
@@ -542,9 +539,8 @@ ms.locfileid: "49942080"
      Para obtener información sobre cómo implementar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extensiones, vea [envío extensiones de Visual Studio](/visualstudio/extensibility/shipping-visual-studio-extensions).  
   
 ## <a name="see-also"></a>Vea también
- [Tutorial: Crear un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)   
+ [Tutorial: Creación de un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)   
  [Definir tipos de elemento de proyecto de SharePoint personalizados](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Creación de plantillas de elemento y plantillas de proyecto para los elementos de proyecto de SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Referencia de esquema de plantillas de Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)   
- [Uso de asistentes con las plantillas de proyectos](../extensibility/how-to-use-wizards-with-project-templates.md)  
-  
+ [Cómo: Usar a asistentes con plantillas de proyecto](../extensibility/how-to-use-wizards-with-project-templates.md)  

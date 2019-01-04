@@ -1,9 +1,6 @@
 ---
-title: 'Tutorial: Crear un paso de implementación personalizado para proyectos de SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Creación de un paso de implementación personalizado para proyectos de SharePoint | Documentos de Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c74feaed6c108f9dcfb5f2b374a72c34526134b0
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: e12f9d8b93b429b0ecdc433eef59809f2ca4c61d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296156"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891581"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Tutorial: Crear un paso de implementación personalizado para proyectos de SharePoint
   Al implementar un proyecto de SharePoint, Visual Studio ejecuta una serie de pasos de implementación en un orden específico. Visual Studio incluye muchos pasos de implementación integrados, pero también puede crear sus propios.  
@@ -488,4 +485,3 @@ ms.locfileid: "51296156"
   
 ## <a name="see-also"></a>Vea también
  [Ampliar la implementación y empaquetado de SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)  
-  

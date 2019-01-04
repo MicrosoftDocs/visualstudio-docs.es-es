@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 834ee518269c414c8a4ee08b056369813e0a1751
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8a682563355d37441b093db7c2e1575bf2584464
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057553"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941669"
 ---
 # <a name="domain-property-value-change-handlers"></a>Controladores de cambio de valor de propiedad de dominio
 
@@ -95,7 +94,7 @@ if (newValue > 10)
 }
 ```
 
-### <a name="alternative-technique-calculated-properties"></a>Técnica alternativa: calcula las propiedades
+### <a name="alternative-technique-calculated-properties"></a>Técnica alternativa: propiedades calculadas
 
 El ejemplo anterior muestra cómo se puede usar OnValueChanged() para propagar los valores de una propiedad de dominio a otra. Cada propiedad tiene su propio valor almacenado.
 
@@ -105,7 +104,7 @@ En lugar del ejemplo anterior, puede establecer el **tipo** campo de `TextLength
 
 Sin embargo, un posible inconveniente de las propiedades calculadas es que la expresión se evalúa cada vez que se usa el valor, lo que podría suponer un problema de rendimiento. Además, las propiedades calculadas no tienen ningún método OnValueChanging() y OnValueChanged().
 
-### <a name="alternative-technique-change-rules"></a>Técnica alternativa: cambiar las reglas
+### <a name="alternative-technique-change-rules"></a>Técnica alternativa: reglas de cambio
 
 Si define una regla de cambio, se ejecuta al final de una transacción en la que cambia el valor de la propiedad.  Para obtener más información, consulte [propagar cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).
 

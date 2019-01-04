@@ -1,9 +1,6 @@
 ---
 title: Solucionar problemas de VSPackages | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, troubleshooting
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad5ab8a337d790af8cd6d800c7bf36ea6ff01286
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 5ba413fa4b5a77c8c4f7fc9dfc9aa3c4ab87d31d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348688"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835976"
 ---
 # <a name="troubleshooting-vspackages"></a>Solución de problemas de VSPackages
 Estos son los problemas comunes que podría tener con el paquete de VS y sugerencias para solucionar los problemas.  
@@ -53,7 +50,7 @@ Estos son los problemas comunes que podría tener con el paquete de VS y sugeren
   
 5. Examine el registro de actividad.  
   
-    Para obtener más información, consulte [Cómo: usar el registro de actividad](../extensibility/how-to-use-the-activity-log.md).  
+    Para obtener más información, vea [Cómo: Usar el registro de actividad](../extensibility/how-to-use-the-activity-log.md).  
   
 6. Para obtener más información acerca de las excepciones producidas por el IDE, haga clic en **excepciones** en el **depurar** menú para habilitar las excepciones. En el **excepciones** cuadro de diálogo Seleccionar los tipos de excepciones sobre la que desea obtener más información.  
   
@@ -92,7 +89,7 @@ Estos son los problemas comunes que podría tener con el paquete de VS y sugeren
   
 2.  Utilice el registro de actividad.  
   
-     Seguimiento VSPackage comportamiento escribiendo información en el registro de actividad en los puntos clave. Esta técnica es especialmente útil cuando se ejecuta un paquete VSPackage en un entorno minorista. Para obtener más información, consulte [Cómo: usar el registro de actividad](../extensibility/how-to-use-the-activity-log.md).  
+     Seguimiento VSPackage comportamiento escribiendo información en el registro de actividad en los puntos clave. Esta técnica es especialmente útil cuando se ejecuta un paquete VSPackage en un entorno minorista. Para obtener más información, vea [Cómo: Usar el registro de actividad](../extensibility/how-to-use-the-activity-log.md).  
   
 3.  Usar símbolos públicos.  
   

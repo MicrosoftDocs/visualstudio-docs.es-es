@@ -1,9 +1,6 @@
 ---
 title: Componentes del depurador | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], components
@@ -15,27 +12,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3f79b9f22c2eb26b456e5e45c049a8f8bc04fae
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ea47a75ef943b462b35c06b20b9cd21b2ade7b70
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818983"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894264"
 ---
 # <a name="debugger-components"></a>Componentes del depurador
 El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depurador se implementa como un paquete VSPackage y administra la sesión de depuración completa. La sesión de depuración compone de los siguientes elementos:  
   
-- **Paquete de depuración:** el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depurador proporciona la misma interfaz de usuario independientemente de lo que se está depurando.  
+- **Depurar el paquete:** El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depurador proporciona la misma interfaz de usuario independientemente de lo que se está depurando.  
   
-- **Administrador de depuración de la sesión (SDM):** proporciona una interfaz de programación coherente para el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depurador para la administración de una variedad de motores de depuración. Se implementa mediante [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+- **Administrador de depuración de la sesión (SDM):** Proporciona una interfaz de programación coherente para el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depurador para la administración de una variedad de motores de depuración. Se implementa mediante [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-- **Administrador de depuración del proceso (PDM):** administra todas las instancias de ejecución de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], una lista de todos los programas que pueden o que se están depurando. Se implementa mediante [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+- **Administrador de depuración del proceso (PDM):** Administra todas las instancias de ejecución de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], una lista de todos los programas que pueden o que se están depurando. Se implementa mediante [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-- **(DE) del motor de depuración:** es responsable de supervisar un programa que se está depurando, comunica el estado del programa en ejecución en el SDM y el PDM e interactuar con el evaluador de expresiones y el proveedor de símbolos para proporcionar análisis en tiempo real de la estado de memoria y variables de un programa. Se implementa mediante [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (para los idiomas que admite) y los proveedores de terceros que va a utilizar su propio tiempo de ejecución. 
+- **Depurar el motor (DE):** Es responsable de supervisar un programa que se está depurando, comunica el estado del programa en ejecución en el SDM y el PDM e interactuar con el evaluador de expresiones y el proveedor de símbolos para proporcionar análisis en tiempo real del estado de memoria de un programa y variables. Se implementa mediante [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (para los idiomas que admite) y los proveedores de terceros que va a utilizar su propio tiempo de ejecución. 
   
-- **Evaluador de expresiones (EE):** proporciona compatibilidad para dinámicamente evaluar variables y expresiones suministradas por el usuario cuando un programa se ha detenido en un momento determinado. Se implementa mediante [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (para los idiomas que admite) y los proveedores de terceros que desean admitir en su propio idioma.  
+- **Evaluador de expresiones (EE):** Proporciona compatibilidad para dinámicamente evaluar variables y expresiones suministradas por el usuario cuando un programa se ha detenido en un momento determinado. Se implementa mediante [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (para los idiomas que admite) y los proveedores de terceros que desean admitir en su propio idioma.  
   
-- **Proveedor de símbolos (SP):** también llama a un controlador de símbolos, asigna los símbolos de depuración de un programa a una instancia en ejecución del programa para que se puede proporcionar información significativa (por ejemplo, la evaluación de expresión y depuración de nivel de código fuente). Se implementa mediante [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (para Common Language Runtime [CLR] símbolos y la base de datos de programa [PDB] símbolo de formato de archivo) y por los proveedores de terceros que tienen su propio método propietaria de almacenar información de depuración.  
+- **Proveedor de símbolos (SP):** También se denomina un controlador de símbolos, asigna los símbolos de depuración de un programa a una instancia en ejecución del programa para que se puede proporcionar información significativa (por ejemplo, la depuración de nivel de código fuente y la evaluación de expresiones). Se implementa mediante [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (para Common Language Runtime [CLR] símbolos y la base de datos de programa [PDB] símbolo de formato de archivo) y por los proveedores de terceros que tienen su propio método propietaria de almacenar información de depuración.  
   
   El siguiente diagrama muestra la relación entre estos elementos del depurador de Visual Studio.  
   

@@ -1,9 +1,6 @@
 ---
 title: Conceptos básicos de UX para Visual Studio | Documentos de Microsoft
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37d2942e64a4c964ad696d1eb2c0d4bf3c777b87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6cd0824d245e835159e3887ce7286b2e55876ba3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848597"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874880"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Conceptos básicos de UX para Visual Studio
 ## <a name="best-practices"></a>Procedimientos recomendados  
@@ -63,7 +60,7 @@ ms.locfileid: "49848597"
  - Alto del cuadro de diálogo inicial debe ser **menor de 700 píxeles**, para que quepa dentro de la resolución mínima del marco del IDE a 96 PPP.
   
 ### <a name="high-density-displays"></a>Pantallas de alta densidad  
- Interfaz de usuario en Visual Studio debe funcionar bien en todos los factores que es compatible con Windows de fábrica para PPP: 150%, 200% y % de 250.  
+ Interfaz de usuario en Visual Studio debe funcionar bien en todos los factores de escala de PPP que es compatible con Windows de fábrica: 150%, 200% y % de 250.  
   
 ## <a name="anti-patterns"></a>Los antipatrones  
  Visual Studio contiene muchos ejemplos de interfaz de usuario que siguen nuestras directrices y procedimientos recomendados. En un esfuerzo para ser coherente, los desarrolladores a menudo tomado prestado de patrones de diseño de interfaz de usuario del producto similares a lo que está creando. Aunque esto es un buen enfoque que ayuda a nosotros unidad de coherencia en la interacción del usuario y el diseño visual, en ocasiones enviamos características con algunos detalles que no acordes a nuestras directrices debido a restricciones de programación o dar de baja prioridad. En estos casos, no queremos equipos copiar uno de estos "antipatrones" porque extienden la interfaz de usuario incorrecta o incoherente en el entorno de Visual Studio.  
@@ -120,15 +117,15 @@ Hace que el usuario para leer el texto explicativo antes de descartar la interfa
 ### <a name="using-command-bars-for-settings"></a>Uso de las barras de comandos para la configuración  
  **Figura A** representa este antipatrón: poner un valor por debajo de un botón de comando que se aplica a algo más que el comando. En este esquema, hay comandos además de iniciar la depuración, como la vista de explorador, iniciar sin depurar y paso a paso, que respetará la configuración seleccionada.  
 
-  ![Figura A: antipatrón de barra de comandos](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-patrón-FigureA")<br />Figura A: antipatrón de barra comando
+  ![Figura A: Antipatrón de barra de comandos](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-patrón-FigureA")<br />Figura A: Antipatrón de barra de comandos
   
  Un poco mejor, pero aún indeseable, es colocar la configuración de este tipo en las barras de herramientas, como se muestra en **figura B**. Aunque los botones de expansión ocupen menos espacio y son, por tanto, una mejora a través de listas desplegables, ambos diseños todavía usa una barra de herramientas para promocionar algo que no es realmente un comando.  
  
- ![Figura B: mejor, pero todavía un antipatrón de barra de comandos](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-patrón-FigureB")<br />Figura B: mejor, pero todavía un antipatrón de barra de comandos
+ ![Figura B: Mejor, pero todavía un antipatrón de barra de comandos](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-patrón-FigureB")<br />Figura B: Mejor, pero todavía un antipatrón de barra de comandos
  
   En el enfoque correcto que se muestra en **figura C**, la configuración está asociada a una serie de comandos. No hay ninguna configuración global que se va a establecer y nos estamos sólo se intercambia entre cuatro comandos. Esta es la única situación en la que los comandos en la barra de herramientas son aceptables. 
 
- ![Figura C: corrija el uso del patrón de barra de comandos de Visual Studio](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-patrón-FigureC")<br />Usar figura C: correcta del patrón de barra de comandos de Visual Studio
+ ![Figura C: Corrija el uso del patrón de barra de comandos de Visual Studio](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-patrón-FigureC")<br />Figura C: Uso correcto de patrón de barra de comandos de Visual Studio
    
 ### <a name="control-anti-patterns"></a>Antipatrones de control  
  Algunos antipatrones son un uso incorrecto simplemente o la presentación de un control o un grupo de controles.  
@@ -156,7 +153,7 @@ Hace que el usuario para leer el texto explicativo antes de descartar la interfa
   
    ![Omitiendo el servicio de color y el uso de "Obtener más información" para los hipervínculos son antipatrones de Visual Studio. ](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102 j_HyperlinkIncorrect")<br />Omitiendo el servicio de color y el uso de "Obtener más información" para los hipervínculos son antipatrones de Visual Studio.  
   
-   **Una mejor solución:** suponer la pregunta al usuario haría que se esté preguntando si hace clic en el vínculo.  
+   **La mejor solución:** Suponer la pregunta al usuario haría que se esté preguntando si hace clic en el vínculo.  
   
 -   ¿Cómo funcionan los servicios de Windows Azure?  
   
@@ -165,6 +162,6 @@ Hace que el usuario para leer el texto explicativo antes de descartar la interfa
 #### <a name="using-click-here-for-links"></a>Uso de "Haga clic aquí" para vínculos  
  Los hipervínculos deben ser autodescriptivos. Es un antipatrón para usar "Haga clic aquí" o cualquier variación similar.  
   
- **Incorrecto:** "Haga clic aquí para obtener instrucciones sobre cómo crear un nuevo proyecto".
+ **Erróneo:** "Haga clic aquí para obtener instrucciones sobre cómo crear un nuevo proyecto".
   
- **Bueno:** "¿Cómo creo un nuevo proyecto?"
+ **Buena:** "¿Cómo creo un nuevo proyecto?"

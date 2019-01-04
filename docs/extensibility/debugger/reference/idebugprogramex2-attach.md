@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramEx2::Attach | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramEx2::Attach
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ac2e86c25f9f74b7be4b9606e6e1ec721743878
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f885bd3cdd09caa145451e922ad154b60fdb1ff4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906915"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900592"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
 Asociar una sesión de un programa.  
@@ -28,7 +25,7 @@ Asociar una sesión de un programa.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT Attach(   
+HRESULT Attach(   
    IDebugEventCallback2* pCallback,  
    DWORD                 dwReason,  
    IDebugSession2*       pSession  
@@ -37,7 +34,7 @@ HRESULT Attach(
   
 ```  
 [C#]  
-int Attach(   
+int Attach(   
    IDebugEventCallback2 pCallback,  
    uint                 dwReason,  
    IDebugSession2       pSession  

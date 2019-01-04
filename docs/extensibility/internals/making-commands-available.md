@@ -1,8 +1,6 @@
 ---
 title: Disposición de comandos | Microsoft Docs
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - menus [Visual Studio SDK], commands
@@ -15,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1292dc3879effa53f3b4a41b87374a3a5f46ff0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ac673709ea648a3c0fb6602797af90f86f33f0e0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857138"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949724"
 ---
 # <a name="making-commands-available"></a>Puesta a disposición de comandos
 Cuando se agregan varios VSPackages a Visual Studio, la interfaz de usuario (UI) puede convertirse en demasiado repleto con comandos. Puede programar el paquete para ayudar a reducir este problema, como sigue:

@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: ampliar intervalos en documentos de mediante programación'
-ms.custom: ''
+title: Procedimiento Mediante programación ampliar intervalos en documentos
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 810f65cbb021845c4fa659cd785e83e8c979376d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f6bfb4979285753a5dd15dd4fe4dabfab013309
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888676"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919669"
 ---
-# <a name="how-to-programmatically-extend-ranges-in-documents"></a>Cómo: ampliar mediante programación a intervalos en documentos
+# <a name="how-to-programmatically-extend-ranges-in-documents"></a>Procedimiento Mediante programación ampliar intervalos en documentos
   Después de definir un objeto <xref:Microsoft.Office.Interop.Word.Range> en un documento de Microsoft Office Word, se pueden cambiar sus puntos de inicio y final mediante los métodos <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> y <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> . Los métodos <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> y <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> usan los mismos argumentos, *Unit* y *Count*. Los métodos *Count* es el número de unidades que se mueven y el argumento *Unit* puede ser uno de los siguientes valores <xref:Microsoft.Office.Interop.Word.WdUnits> :  
   
 - <xref:Microsoft.Office.Interop.Word.WdUnits.wdCharacter>  
@@ -52,7 +49,7 @@ ms.locfileid: "49888676"
   
 ## <a name="to-extend-a-range"></a>Para extender un rango  
   
-1.  Defina un rango de caracteres. Para obtener más información, consulte [Cómo: definir y seleccionar rangos en documentos mediante programación](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md).  
+1.  Defina un rango de caracteres. Para obtener más información, vea [Cómo: Definir y seleccionar rangos en documentos mediante programación](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md).  
   
      El siguiente ejemplo de código se puede usar en una personalización de nivel de documento.  
   
@@ -93,9 +90,8 @@ ms.locfileid: "49888676"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#38](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#38)]  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: restablecer intervalos en documentos de Word de mediante programación](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [Cómo: contraer intervalos o selecciones en documentos de mediante programación](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
- [Cómo: definir y seleccionar rangos en documentos mediante programación](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Cómo: recuperar los caracteres inicial y final en los intervalos mediante programación](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
- [Cómo: excluir marcas de párrafo al crear intervalos mediante programación](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)  
-  
+ [Cómo: Mediante programación restablecer intervalos en documentos de Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [Cómo: Mediante programación contraer intervalos o selecciones en documentos](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
+ [Cómo: Definir y seleccionar rangos en documentos mediante programación](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Cómo: Recuperar los caracteres inicial y final en los intervalos mediante programación](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
+ [Cómo: Mediante programación excluir marcas de párrafo al crear intervalos](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)  

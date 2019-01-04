@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: cambiar el formato en filas de la hoja de cálculo que contienen celdas seleccionadas mediante programación'
-ms.custom: ''
+title: Procedimiento Cambiar el formato en filas de la hoja de cálculo que contienen celdas seleccionadas mediante programación
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a74f610d596a991512f7f3ba5061da6db862f0c3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e767b8af84eabe3339000a12ed7639e94ce53b0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891289"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891805"
 ---
-# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Cómo: cambiar el formato en filas de la hoja de cálculo que contienen celdas seleccionadas mediante programación
+# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Procedimiento Cambiar el formato en filas de la hoja de cálculo que contienen celdas seleccionadas mediante programación
   Puede cambiar la fuente de una fila completa que contiene una celda seleccionada para que el texto está en negrita.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -74,8 +71,6 @@ ms.locfileid: "49891289"
   
 ## <a name="see-also"></a>Vea también  
  [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)   
- [Cómo: aplicar estilos a rangos de libros mediante programación](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Cómo: copiar datos y formato entre hojas de cálculo mediante programación](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)   
+ [Cómo: Aplicar estilos a rangos de libros mediante programación](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Cómo: Copiar datos y formato entre hojas de cálculo mediante programación](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)   
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

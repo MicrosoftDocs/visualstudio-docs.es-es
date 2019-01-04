@@ -1,9 +1,6 @@
 ---
 title: La instancia Experimental | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - experimental builds
@@ -15,17 +12,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c80c071866e46528fe7edd287e082df3af166973
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cacee26fb84774eb7f1043d940419561bc55ec36
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138930"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917382"
 ---
-# <a name="the-experimental-instance"></a>La instancia Experimental
-Para proteger el entorno de desarrollo de Visual Studio desde las aplicaciones no se han comprobado que puede cambiarlo, el VSSDK proporciona un espacio experimental que puede utilizar para experimentar. Desarrollar nuevas aplicaciones con Visual Studio como de costumbre, pero su ejecución mediante el uso de esta instancia experimental.  
+# <a name="the-experimental-instance"></a>Instancia experimental
+Para proteger el entorno de desarrollo de Visual Studio desde aplicaciones no probados que puede cambiarlo, VSSDK proporciona un espacio experimental que puede usar para experimentar. Desarrollar nuevas aplicaciones con Visual Studio como de costumbre, pero ejecutar mediante el uso de esta instancia experimental.  
   
- Todas las aplicaciones que tiene un paquete VSIX inicia la instancia experimental de Visual Studio en modo de depuración.  
+ Cada aplicación que tiene un paquete VSIX inicia la instancia experimental de Visual Studio en modo de depuración.  
   
  Si desea iniciar la instancia experimental de Visual Studio fuera de una solución específica, ejecute el comando siguiente en la ventana de comandos:  
   
@@ -36,4 +33,4 @@ Para proteger el entorno de desarrollo de Visual Studio desde las aplicaciones n
 >   
 >  `HKCU\Software\Microsoft\VisualStudio\14.0Exp` y `HKCU\Software\Microsoft\VisualStudio\14.0Exp_Config`  
   
- Se recomienda ejecutar la extensión en la instancia experimental mientras se está desarrollando. Al implementar la extensión, se ejecuta en la instancia de desarrollo. Para obtener más información sobre el registro de aplicaciones, consulte [VSPackages registrar](../extensibility/internals/registering-vspackages.md).
+ Se recomienda ejecutar la extensión en la instancia experimental, mientras se está desarrollando. Al implementar la extensión, se ejecuta en la instancia de desarrollo. Para obtener más información sobre el registro de aplicaciones, consulte [VSPackages registrar](../extensibility/internals/registering-vspackages.md).

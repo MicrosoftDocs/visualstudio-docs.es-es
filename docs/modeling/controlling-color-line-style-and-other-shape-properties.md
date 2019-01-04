@@ -8,26 +8,25 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: bfe0cbdda1b3eaa7d1afc936c7dbba75df6da07b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a741a506338066dddbee2cdbfd701ad3bfb4c922
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947172"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929703"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Controlar el color, el estilo de línea y otras propiedades de forma
-Algunas propiedades de forma como color puede 'expondrán': es decir, vinculada a una propiedad de dominio de la forma. Otras personas deben controlarse directamente.
+Algunas propiedades de la forma como color puede ser 'expuesto -', es decir, vinculan a una propiedad de dominio de la forma. Otros tienen que se puede controlar directamente.
 
 ## <a name="exposing-a-property"></a>Exponer una propiedad
- Algunas propiedades de forma como color se pueden vincular al valor de una propiedad de dominio.
+ Algunas propiedades de la forma como color se pueden vincular al valor de una propiedad de dominio.
 
- En la definición DSL, seleccione una forma, conector o clase del diagrama. En el menú contextual, elija **agregar expone**y, a continuación, elija la propiedad que desee, como el Color de relleno.
+ En la definición de DSL, seleccione una forma, conector o clase del diagrama. En el menú contextual, elija **agregar expuestos**y, a continuación, elija la propiedad que desee, como el Color de relleno.
 
- La forma ahora tiene una propiedad de dominio que se puede establecer en el código de programa o como un usuario.
+ Ahora, la forma tiene una propiedad de dominio que se puede establecer en el código de programa o como un usuario.
 
 ## <a name="dynamically-updating-an-exposed-property"></a>Actualizar dinámicamente una propiedad expuesta
- Normalmente desea hacer que la propiedad expuesta dependa de otra propiedad. Por ejemplo, conviene una forma de color rojo, siempre que una propiedad de dominio en particular es menor que cero. Para realizar esta dependencia, crearía una [regla](../modeling/rules-propagate-changes-within-the-model.md). Por ejemplo:
+ Normalmente, desea hacer que la propiedad expuesta que dependa de otra propiedad. Por ejemplo, es posible que desee una forma de color rojo, siempre que una propiedad de dominio en particular es menor que cero. Para que esta dependencia, cree un [regla](../modeling/rules-propagate-changes-within-the-model.md). Por ejemplo:
 
 ```csharp
 using System;

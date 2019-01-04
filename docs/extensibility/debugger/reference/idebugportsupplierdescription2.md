@@ -1,9 +1,6 @@
 ---
 title: IDebugPortSupplierDescription2 | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugPortSupplierDescription2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c15facb38037272dcf2cef4f06d84d835b874012
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f6387708232c97a25ea11fc554d250e14e6b66e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112840"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818344"
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
-Habilita la [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] interfaz de usuario para mostrar el texto dentro de la **información de transporte** sección de la **adjuntar al proceso** cuadro de diálogo.  
+Habilita la [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] la interfaz de usuario para mostrar el texto dentro de la **información de transporte** sección de la **asociar al proceso** cuadro de diálogo.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,11 +34,11 @@ IDebugPortSupplierDescription2 : IUnknown
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)|Recupera la descripción y los metadatos de la descripción para el proveedor del puerto.|  
+|[GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)|Recupera la descripción y los metadatos de descripción para el proveedor del puerto.|  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll

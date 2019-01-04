@@ -1,9 +1,6 @@
 ---
 title: Coincidencia de llaves en un servicio de lenguaje heredado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - brace matching
@@ -14,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7564d76485fc60486a581de71a0497a1dc3e4a7
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5f1c69a280e84a3c444c371bef5c99c7a3c17506
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512752"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910040"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Coincidencia de llaves en un servicio de lenguaje heredado
 Coincidencia de llaves ayuda a los desarrolladores realizar un seguimiento de elementos del lenguaje que deben ocurren juntos, como paréntesis y llaves. Cuando un desarrollador escribe una llave de cierre, se resalta la llave de apertura.  
   
  Puede comparar dos o tres elementos que se producen conjuntamente, denominados pares y triples. Triples son conjuntos de tres elementos que se producen conjuntamente. Por ejemplo, en C#, la `foreach` instrucción forms un triple: `foreach()`, `{`, y `}`. Los tres elementos se resaltan cuando se escribe la llave de cierre.  
   
- Servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características de servicio de lenguaje es usar las extensiones MEF. Para obtener más información acerca de la nueva forma de implementar la coincidencia de llaves, consulte [Tutorial: mostrar las llaves coincidentes](../../extensibility/walkthrough-displaying-matching-braces.md).  
+ Servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características de servicio de lenguaje es usar las extensiones MEF. Para obtener más información acerca de la nueva forma de implementar la coincidencia de llaves, consulte [Tutorial: Para mostrar las llaves coincidentes](../../extensibility/walkthrough-displaying-matching-braces.md).  
   
 > [!NOTE]
 >  Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.  

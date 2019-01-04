@@ -1,9 +1,6 @@
 ---
 title: Archivos elemento | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 37fc7bb582482f645fe5699196ca33d79304a5c3
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: e27e3192ec0d9a312c3cfc0a3521daf534c68e9a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327299"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922317"
 ---
 # <a name="files-element"></a>Files (elemento)
   Especifica los archivos para implementar con el elemento de proyecto de SharePoint, como los archivos de elemento de característica y la salida de los proyectos de SharePoint que no son dependientes.  
@@ -67,5 +64,3 @@ ms.locfileid: "36327299"
   
 ## <a name="see-also"></a>Vea también
  [Referencia de esquemas de elemento de proyecto de SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
-  
-  

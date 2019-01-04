@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: registrar tipos de archivo del Editor | Microsoft Docs'
+title: Procedimiento Registrar tipos de archivo del Editor | Documentos de Microsoft
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - register file types
@@ -12,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 326b29574d8ff2562196652cdcde9865aee24c0e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 23a3277a550b17371b4d8315da64eb7507c8c863
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896931"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857807"
 ---
-# <a name="how-to-register-editor-file-types"></a>Cómo: registrar tipos de archivo del editor
+# <a name="how-to-register-editor-file-types"></a>Procedimiento Registrar tipos de archivo del editor
 Es la manera más fácil para registrar los tipos de archivo del editor mediante el uso de los atributos de registro proporcionados como parte de la [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] clases de managed package framework (MPF). Si está implementando el paquete en el modo nativo [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], también puede escribir un script de registro que registra el editor y las extensiones asociadas.
 
 ## <a name="registration-using-mpf-classes"></a>Registro de uso de clases MPF

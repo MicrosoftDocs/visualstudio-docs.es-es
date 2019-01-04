@@ -1,9 +1,6 @@
 ---
-title: Función SccGetVersion | Documentos de Microsoft
-ms.custom: ''
+title: SccGetVersion (función) | Documentos de Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccGetVersion
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70beb89f13d2f752f3adb0f25e2b370fa272171a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b997f3724dc3d1bb0f9155f3b575fef3ce9f2802
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136450"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879632"
 ---
-# <a name="sccgetversion-function"></a>SccGetVersion (función)
-Esta función obtiene el número de versión de la API de complemento de Control de origen compatible con el complemento de control de código fuente.  
+# <a name="sccgetversion-function"></a>SccGetVersion (Función)
+Esta función obtiene el número de versión de la API de complemento de Control de código fuente compatibles con el complemento de control de código fuente.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,7 +32,7 @@ LONG SccGetVersion(void);
  Ninguno.  
   
 ## <a name="return-value"></a>Valor devuelto  
- A `LONG` tipo de datos que contiene el número de versión de la API de complemento de Control de origen compatible:  
+ Un `LONG` tipo de datos que contiene el número de versión de la API de complemento de Control de origen compatibles:  
   
 |WORD|Descripción|  
 |----------|-----------------|  
@@ -43,7 +40,7 @@ LONG SccGetVersion(void);
 |LOWORD|Versión secundaria|  
   
 ## <a name="remarks"></a>Comentarios  
- Por ejemplo, si un complemento de control de origen es compatible con la versión 1.3 de la API de complemento de Control de origen, esta función devolvería 0 x 0103.  
+ Por ejemplo, si un complemento de control de origen es compatible con la versión 1.3 de la API de complemento de Control de origen, esta función debería devolver 0 x 0103.  
   
 ## <a name="see-also"></a>Vea también  
  [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

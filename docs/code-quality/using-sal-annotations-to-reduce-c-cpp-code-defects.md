@@ -2,7 +2,6 @@
 title: Utilizar anotaciones SAL para reducir defectos de código de C/C++
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - annotations
@@ -14,33 +13,33 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 92a48bca7afb59fa83e489c6f5cd96d115d8c872
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 973fcaf1a5c49332223f169cdb668526552cfe12
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921716"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954337"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Utilizar anotaciones SAL para reducir defectos de código de C/C++
-SAL es el lenguaje de anotación de código de origen de Microsoft. Mediante el uso de anotaciones de código fuente, puede aclarar la intención detrás del código explícito. Estas anotaciones también habilitar herramientas de análisis estático automático analizar el código con más precisión, con muchos menos falsos positivos y falsos negativos.
+SAL es el lenguaje de anotación del código de origen de Microsoft. Mediante el uso de anotaciones de código fuente, puede aclarar la intención detrás del código explícito. Estas anotaciones también habilitar herramientas de análisis estático automático analizar el código de forma más precisa, con significativamente menos falsos positivos y falsos negativos.
 
- Los artículos de esta sección de la documentación tratan aspectos de SAL, proporcionan referencia de sintaxis SAL y proporcionen ejemplos de su uso.
+ Los artículos de esta sección de la documentación describen aspectos del lenguaje SAL, proporcionan referencia de sintaxis SAL y ofrecen ejemplos de su uso.
 
 -   [Introducción a SAL](../code-quality/understanding-sal.md)
 
-     Proporciona información y ejemplos que muestran el núcleo de anotaciones SAL.
+     Proporciona información y ejemplos que muestran el núcleo de las anotaciones de SAL.
 
 -   [Anotar parámetros de función y valores devueltos](../code-quality/annotating-function-parameters-and-return-values.md)
 
-     Se enumeran las anotaciones SAL para las funciones y parámetros de función.
+     Se enumeran las anotaciones de SAL para las funciones y parámetros de función.
 
 -   [Anotar el comportamiento de funciones](../code-quality/annotating-function-behavior.md)
 
-     Se enumeran las anotaciones SAL para funciones y comportamiento de la función.
+     Se enumeran las anotaciones de SAL para funciones y comportamiento de la función.
 
 -   [Anotar structs y clases](../code-quality/annotating-structs-and-classes.md)
 
-     Se enumeran las anotaciones SAL para estructuras y clases.
+     Se enumeran las anotaciones de SAL para estructuras y clases.
 
 -   [Anotar comportamiento de bloqueo](../code-quality/annotating-locking-behavior.md)
 
@@ -48,7 +47,7 @@ SAL es el lenguaje de anotación de código de origen de Microsoft. Mediante el 
 
 -   [Especificar cuándo y dónde se aplica una anotación](../code-quality/specifying-when-and-where-an-annotation-applies.md)
 
-     Se enumeran las anotaciones de SAL que especifican la condición o ámbito (selección de ubicación) de otras anotaciones SAL.
+     Se enumeran las anotaciones de SAL que especifican la condición o ámbito (selección de ubicación) de otras anotaciones de SAL.
 
 -   [Funciones intrínsecas](../code-quality/intrinsic-functions.md)
 

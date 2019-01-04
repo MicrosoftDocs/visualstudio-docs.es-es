@@ -1,9 +1,6 @@
 ---
-title: Extender un servicio de lenguaje para admitir EditorConfig en Visual Studio | Documentos de Microsoft
-ms.custom: ''
+title: Ampliación de un servicio de lenguaje para admitir EditorConfig en Visual Studio | Documentos de Microsoft
 ms.date: 11/22/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editorconfig [extensibility]
@@ -13,20 +10,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2aa80903b3e5ea2723ec576fa463161b8d003c93
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3061f1a2efdf05a775f563311ccfbb4c48c49bc9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139479"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830896"
 ---
-# <a name="supporting-editorconfig-for-your-language-service"></a>Compatibilidad con EditorConfig para el servicio de lenguaje
+# <a name="supporting-editorconfig-for-your-language-service"></a>Compatibilidad con EditorConfig el servicio de lenguaje
 
-[EditorConfig](http://editorconfig.org/) archivos permiten describir opciones comunes de editor de texto, como el tamaño de sangría, en forma de cada proyecto. Para más información sobre la compatibilidad con Visual Studio EditorConfig archivos, consulte [crear una configuración de editor portátil mediante EditorConfig](../ide/create-portable-custom-editor-options.md).
+[EditorConfig](http://editorconfig.org/) archivos le permiten describir opciones comunes de editor de texto, como el tamaño de sangría, en cada proyecto. Para obtener más información sobre la compatibilidad de Visual Studio para los archivos EditorConfig, vea [crear configuración de editor y portátiles con EditorConfig](../ide/create-portable-custom-editor-options.md).
 
-En la mayoría de los casos, cuando se implementa un servicio de lenguaje de Visual Studio, no es necesario llevar a cabo ninguna tarea adicional para admitir las propiedades universales de EditorConfig. El editor principal detecta automáticamente y lee el archivo .editorconfig cuando los usuarios abren archivos, y establece el búfer de texto y las opciones de visualización adecuados. Sin embargo, edición, como tabulaciones y espacios, algunos servicios de lenguaje optar por usar una opción de vista de texto contextual adecuado en lugar de usar la configuración global. En estos casos, el servicio de lenguaje debe actualizarse para que admita archivos EditorConfig.
+En la mayoría de los casos, cuando se implementa un servicio de lenguaje de Visual Studio, no es necesario llevar a cabo ninguna tarea adicional para admitir las propiedades universales de EditorConfig. El editor principal detecta automáticamente y lee el archivo .editorconfig cuando los usuarios abren archivos, y establece el búfer de texto y las opciones de visualización adecuados. Sin embargo, para las ediciones, como tabulaciones y espacios, algunos servicios de lenguaje optar por usar una opción de vista de texto contextual adecuada en lugar de usar la configuración global. En estos casos, el servicio de lenguaje debe actualizarse para que admita archivos EditorConfig.
 
-Siguientes son los cambios que son necesarios para actualizar un servicio de lenguaje para admitir archivos EditorConfig, reemplazando global _específica del lenguaje_ opción con un _contextual_ opción:
+Estos son los cambios que son necesarios para actualizar un servicio de lenguaje para admitir los archivos EditorConfig, reemplazando una global _específico del lenguaje_ opción con un _contextuales_ opción:
 
 ## <a name="indent-style"></a>Estilo de sangría
 
@@ -48,5 +45,5 @@ Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uTabSize<br/>Microsof
 
 ## <a name="see-also"></a>Vea también
 
-[Crear una configuración de editor portátil mediante EditorConfig](../ide/create-portable-custom-editor-options.md)  
-[Ampliar los servicios de editor y el idioma](../extensibility/extending-the-editor-and-language-services.md)
+[Crear una configuración de editor y portátiles con EditorConfig](../ide/create-portable-custom-editor-options.md)  
+[Ampliar los servicios de editor y lenguaje](../extensibility/extending-the-editor-and-language-services.md)

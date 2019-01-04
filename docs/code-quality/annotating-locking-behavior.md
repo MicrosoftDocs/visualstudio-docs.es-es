@@ -2,7 +2,6 @@
 title: Anotar comportamiento de bloqueo
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - _Releases_nonreentrant_lock_
@@ -34,12 +33,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: e8b7aaa9edfeaa2f1515f3fce890c0d7ba9383d2
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 5b0a9f28da48582ac562f08e3327fb3d80375c3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804882"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835297"
 ---
 # <a name="annotating-locking-behavior"></a>Anotar comportamiento de bloqueo
 Para evitar errores de simultaneidad en el programa multiproceso, siempre que siga una disciplina de bloqueo apropiada y utilizar anotaciones SAL.

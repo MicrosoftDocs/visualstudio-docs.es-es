@@ -1,15 +1,10 @@
 ---
-title: 'Cómo: agregar un archivo de modelo BDC existente a un proyecto de SharePoint | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Agregar un archivo de modelo BDC existente a un proyecto de SharePoint | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.ImportDialog
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bda78d33a5b49d936fb632e78472c91ab1230ba5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c9efe862fcd0844d6b6e0c050d4c647b2d9c705a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922619"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950126"
 ---
-# <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Cómo: agregar un archivo de modelo BDC existente a un proyecto de SharePoint
+# <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Procedimiento Agregar un archivo de modelo BDC existente a un proyecto de SharePoint
   Puede personalizar, empaquetar y volver a implementar un modelo de conectividad de datos profesionales (BDC) mediante Visual Studio para agregar el archivo de modelo (*.bdcm*) a cualquier proyecto de la granja de servidores de SharePoint. Para obtener más información, consulte [crear un modelo de conectividad a datos empresariales](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
 ### <a name="to-add-a-bdc-model-file-to-a-sharepoint-project"></a>Para agregar un archivo de modelo BDC a un proyecto de SharePoint  
@@ -52,9 +47,7 @@ ms.locfileid: "49922619"
   
 ## <a name="see-also"></a>Vea también
  [Crear un modelo de conectividad a datos empresariales](../sharepoint/creating-a-business-data-connectivity-model.md)   
- [Cómo: crear un modelo BDC](../sharepoint/how-to-create-a-bdc-model.md)   
- [Cómo: usar un archivo de recursos para especificar nombres, propiedades y permisos localizados](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
- [Cómo: incluir un ensamblado personalizado en una característica de BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
+ [Cómo: Crear un modelo BDC](../sharepoint/how-to-create-a-bdc-model.md)   
+ [Cómo: Use un archivo de recursos para especificar los permisos, propiedades y nombres localizados](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
+ [Cómo: Incluir un ensamblado personalizado en una característica de BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
  [Integrar datos profesionales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
-  
- 

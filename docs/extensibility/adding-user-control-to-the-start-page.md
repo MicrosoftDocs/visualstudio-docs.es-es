@@ -1,9 +1,6 @@
 ---
 title: Agregar Control de usuario a la página de inicio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - start page dll
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96b280221ba7efdefd3023f015bd4075b8c03aaa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8218910c50c63e3cef8f8ad402967bd21fb0da5d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910503"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874698"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Agregar control de usuario a la página de inicio
 Este tutorial muestra cómo agregar una referencia de archivo DLL a una página de inicio personalizada. En el ejemplo se agrega un control de usuario a la solución, crea el control de usuario y, a continuación, hace referencia el ensamblado compilado desde la página de inicio *.xaml* archivo. Una nueva pestaña hospeda el control de usuario, que funciona como un explorador Web básico.  
@@ -110,7 +107,7 @@ Este tutorial muestra cómo agregar una referencia de archivo DLL a una página 
 2.  Rellene el controlador de eventos SetButton_Click como sigue.  
   
     ```csharp  
-    private void SetButton_Click(object sender, RoutedEventArgs e)  
+    private void SetButton_Click(object sender, RoutedEventArgs e)  
     {  
         try  
         {  

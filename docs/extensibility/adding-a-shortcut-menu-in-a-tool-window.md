@@ -1,9 +1,6 @@
 ---
 title: Adición de un menú contextual en una ventana de herramientas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - context menus, adding to tool windows
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5567fd2fe72b8fcc102c8609ac0d155f78141a9
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: fa350ff37a5073a5def0140db694b53c9fdf5067
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078620"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909806"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Agregar un menú contextual en una ventana de herramientas
 En este tutorial, se coloca un menú contextual en una ventana de herramientas. Un menú contextual es un menú que aparece cuando un usuario seleccione un botón, el cuadro de texto o el fondo de la ventana. Comandos de un menú contextual comportan igual que los comandos en otros menús o barras de herramientas. Para admitir un menú contextual, especifíquela en el *.vsct* de archivo y lo muestra en la respuesta para el botón secundario del mouse.  
@@ -119,10 +116,10 @@ En este tutorial, se coloca un menú contextual en una ventana de herramientas. 
   
     ```csharp  
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ  
-    public const int ColorMenu = 0x1000;  
-    public const int cmdidRed = 0x102;  
-    public const int cmdidYellow = 0x103;  
-    public const int cmdidBlue = 0x104;  
+    public const int ColorMenu = 0x1000;  
+    public const int cmdidRed = 0x102;  
+    public const int cmdidYellow = 0x103;  
+    public const int cmdidBlue = 0x104;  
     ```  
   
      Estos son los mismos identificadores de comando que se definen en la sección Symbols de la *ShortcutMenuPackage.vsct* archivo. El grupo de contexto no se incluye aquí porque es necesaria sólo en el *.vsct* archivo.  
@@ -211,7 +208,7 @@ En este tutorial, se coloca un menú contextual en una ventana de herramientas. 
 7.  En *ShortcutMenuControl.xaml.cs*, agregue un código auxiliar para el controlador de eventos.  
   
     ```csharp  
-    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
+    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
     {  
     . . .  
     }  

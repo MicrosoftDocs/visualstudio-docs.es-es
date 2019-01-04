@@ -1,9 +1,6 @@
 ---
 title: Registro y la selección (VSPackage de Control de código fuente) | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - registration, source control packages
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d601aeca3864e47da77fd6418f4cfd3a5db1623
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d549ab4af45a2571b2d20d47215109f57b3f3384
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834883"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930718"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registro y selección (VSPackage de control de código fuente)
 Un control de código fuente se debe registrar el VSPackage para exponerlo a los [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Si se registra más de un VSPackage de control de código fuente, el usuario puede seleccionar qué VSPackage para cargar en los momentos adecuados. Consulte [VSPackages](../../extensibility/internals/vspackages.md) para obtener más detalles sobre los VSPackages y cómo registrarlas.  
@@ -38,7 +35,7 @@ Un control de código fuente se debe registrar el VSPackage para exponerlo a los
   
 - GUID de Control de código fuente: Esto es un GUID para el control de código fuente VSPackage que se usa para registrar con código auxiliar Control de origen de Visual Studio y también se usa como un GUID de contexto de la interfaz de usuario de comandos. El GUID del servicio de control de código fuente está registrado con el GUID de control de código fuente. En el ejemplo, el GUID de control de código fuente se denomina ID_SccProvider.  
   
-- GUID del servicio de control de origen: éste es el servicio privado GUID que usa Visual Studio (denominado SID_SccPkgService en esta sección). Además, el paquete de control de código fuente debe definir el resto de GUID para paquetes VSPackage, ventanas de herramientas y así sucesivamente.  
+- GUID del servicio de control de código fuente: Éste es el servicio privado GUID que usa Visual Studio (denominado SID_SccPkgService en esta sección). Además, el paquete de control de código fuente debe definir el resto de GUID para paquetes VSPackage, ventanas de herramientas y así sucesivamente.  
   
   Un VSPackage de control de origen se deben realizar las siguientes entradas del registro:  
   

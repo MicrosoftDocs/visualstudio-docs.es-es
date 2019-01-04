@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0d697f1fed2a7b17862ff4c6f72488674859f754
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: b78e34205c2b7af36f3c43f2307fd62bfca6fe39
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967303"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990521"
 ---
 # <a name="writing-a-t4-text-template"></a>Escribir una plantilla de texto T4
 Una plantilla de texto contiene el texto que se generará a partir de ella. Por ejemplo, una plantilla que crea una página web contendrá "\<html >..." y todas las demás partes estándar de una página HTML. Inserta en la plantilla son *bloques de control*, que son fragmentos de código de programa. Los bloques de control proporcionan valores variables y permiten que partes del texto sean condiciones y se repitan.

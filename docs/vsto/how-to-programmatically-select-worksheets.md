@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: seleccionar hojas de cálculo de mediante programación'
-ms.custom: ''
+title: Procedimiento Seleccionar mediante programación las hojas de cálculo
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 09e477d802b9d92ca4f9e1cd3a532145ad0e68a0
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9ef332127c8c4127e78e495ca13f3b26fa64d335
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675542"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924480"
 ---
-# <a name="how-to-programmatically-select-worksheets"></a>Cómo: seleccionar hojas de cálculo de mediante programación
+# <a name="how-to-programmatically-select-worksheets"></a>Procedimiento Seleccionar mediante programación las hojas de cálculo
   El método <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> selecciona el objeto especificado, que mueve la selección del usuario al nuevo objeto. Use el método <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> si desea llevar el foco al objeto sin cambiar la selección del usuario.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -52,14 +49,12 @@ ms.locfileid: "35675542"
   
 ## <a name="see-also"></a>Vea también  
  [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)   
- [Cómo: imprimir mediante programación las hojas de cálculo](../vsto/how-to-programmatically-print-worksheets.md)   
- [Cómo: eliminar hojas de cálculo de libros mediante programación](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
- [Cómo: ocultar hojas de cálculo de mediante programación](../vsto/how-to-programmatically-hide-worksheets.md)   
- [Cómo: proteger hojas de cálculo de mediante programación](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [Cómo: Imprimir mediante programación las hojas de cálculo](../vsto/how-to-programmatically-print-worksheets.md)   
+ [Cómo: Eliminar hojas de cálculo de libros mediante programación](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
+ [Cómo: Ocultar mediante programación las hojas de cálculo](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Cómo: Proteger mediante programación las hojas de cálculo](../vsto/how-to-programmatically-protect-worksheets.md)   
  [Elemento host Worksheet](../vsto/worksheet-host-item.md)   
  [Acceso global a objetos en los proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Limitaciones de programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

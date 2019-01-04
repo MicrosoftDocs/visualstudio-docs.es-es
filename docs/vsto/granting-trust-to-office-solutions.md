@@ -1,9 +1,6 @@
 ---
 title: Conceder confianza a las soluciones de Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 49b2e66f35bf320d6eca04fd1b171a5e0c65132e
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 1acc6f73dd52bacdfd62aff3b2da62e559c4fda6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804791"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890474"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Conceder confianza a las soluciones de Office
   Conceder confianza a los medios de las soluciones de Office modificar la directiva de seguridad de cada equipo de destino debe confiar en el ensamblado de la solución, el manifiesto de aplicación, el manifiesto de implementación y el documento. Por usted o el usuario final, se puede conceder confianza a la solución de Office.

@@ -1,15 +1,10 @@
 ---
-title: 'Tutorial: Importar un flujo de trabajo reutilizable de SharePoint Designer en Visual Studio | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Importar un flujo de trabajo reutilizable de SharePoint Designer en Visual Studio | Documentos de Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.WSPImport.ImportWF
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 249799bc9daf13992bd9fe03dff8c86263f91263
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c92a1023f5099c6a6d92df825aebebf35dd678dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851483"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821364"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Tutorial: Importar un flujo de trabajo reutilizable de SharePoint Designer en Visual Studio
   Este tutorial muestra cómo importar un flujo de trabajo reutilizable creado en SharePoint Designer 2010 en un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proyecto de flujo de trabajo de SharePoint.  
@@ -269,4 +264,3 @@ ms.locfileid: "49851483"
  [Importar elementos de un sitio de SharePoint existente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Crear controles reutilizables para elementos web o páginas de aplicación](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  
-  

@@ -1,8 +1,7 @@
 ---
-title: 'CA1021: Evitar parámetros out'
+title: 'CA1021: Evitar los parámetros out'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1021
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1082aaef3422923e0f74e8bd5eb242f3ae8e6023
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 10ee8312a0861e65e0717cc6d9bec3d2530a8c80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549500"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911866"
 ---
-# <a name="ca1021-avoid-out-parameters"></a>CA1021: Evitar parámetros out
+# <a name="ca1021-avoid-out-parameters"></a>CA1021: Evitar los parámetros out
 
 |||
 |-|-|

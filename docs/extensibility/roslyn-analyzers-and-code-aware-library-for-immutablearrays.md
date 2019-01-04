@@ -1,9 +1,6 @@
 ---
 title: Analizadores de Roslyn y biblioteca compatible con el código para ImmutableArrays | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2af6141ae3b7a61805b2515f11f72f164389949
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: c59fcaa44314c421f896ca5f64e0a2582faa5eb9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821388"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833373"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analizadores de Roslyn y biblioteca compatible con el código para ImmutableArrays
 
@@ -301,7 +298,7 @@ A continuación, el método captura la raíz del documento, y dado que esto pued
 
 Ahora puede presionar **F5** para ejecutar el analizador en una segunda instancia de Visual Studio. Abra el proyecto de consola que usó antes. Ahora debería ver aparecer donde es la expresión de creación de objeto nuevo para la bombilla `ImmutableArray<int>`. Si presiona **Ctrl**+**.** (punto), a continuación, verá el código de corregir, y verá una vista previa de diferencia de código generado automáticamente en la interfaz de usuario de bombilla. Roslyn crea para usted.
 
-**Sugerencia de Pro:** si iniciar la segunda instancia de Visual Studio y no ve la luz con la corrección de código, es posible que deba borrar la caché de componentes de Visual Studio. Borrar la memoria caché, se fuerza a Visual Studio para volver a examinar los componentes, por lo que, a continuación, Visual Studio debe recoger el componente más reciente. En primer lugar, cierre la segunda instancia de Visual Studio. A continuación, en **Windows Explorer**, vaya a *%LOCALAPPDATA%\Microsoft\VisualStudio\15.0Roslyn\\*. (El "15.0" cambia según la versión con Visual Studio). Eliminar el subdirectorio *ComponentModelCache*.
+**Sugerencia de Pro:** Si inicia la segunda instancia de Visual Studio y no ve la luz con la corrección de código, es posible que deba borrar la caché de componentes de Visual Studio. Borrar la memoria caché, se fuerza a Visual Studio para volver a examinar los componentes, por lo que, a continuación, Visual Studio debe recoger el componente más reciente. En primer lugar, cierre la segunda instancia de Visual Studio. A continuación, en **Windows Explorer**, vaya a *%LOCALAPPDATA%\Microsoft\VisualStudio\15.0Roslyn\\*. (El "15.0" cambia según la versión con Visual Studio). Eliminar el subdirectorio *ComponentModelCache*.
 
 ## <a name="talk-video-and-finish-code-project"></a>Hable con vídeo y finalizar el proyecto de código
 

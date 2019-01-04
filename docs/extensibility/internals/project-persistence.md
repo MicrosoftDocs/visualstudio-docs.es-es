@@ -1,9 +1,6 @@
 ---
-title: Persistencia del proyecto | Documentos de Microsoft
-ms.custom: ''
+title: Persistencia del proyecto | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - persistence, projects
@@ -14,36 +11,36 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b85bb6155ca25abec67b582dc4d877dbd8290501
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 475120f72962d0ab1c5c0dd6e8441349dfc8086c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131129"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890055"
 ---
 # <a name="project-persistence"></a>Persistencia de un proyecto
-Persistencia es una consideración de diseño clave para el proyecto. Mayoría de los proyectos usa elementos de proyecto que representan archivos; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] también admite proyectos cuyos datos están no basados en archivos. Se deben conservar tanto los archivos que pertenecen al proyecto y el archivo de proyecto. El IDE indica el proyecto para guardar consigo mismo ni con un elemento de proyecto.  
+Persistencia es una consideración de diseño clave para el proyecto. La mayoría de los proyectos usan elementos de proyecto que representan los archivos; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] también es compatible con los proyectos cuyos datos están basados en archivos que no sean. Se deben conservar los archivos de propiedad del proyecto y el archivo de proyecto. El IDE indica que el proyecto para guardar en sí mismo o a un elemento de proyecto.  
   
- Plantillas para proyectos se pasan a la fábrica de proyecto. Las plantillas deben admitir la inicialización de todos los elementos de proyecto según los requisitos del tipo de proyecto específico. Estas plantillas más adelante se guardan como archivos de proyecto y administradas por el IDE a través de la solución. Para obtener más información, consulte [crear proyecto instancias por usar generadores de proyectos](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) y [soluciones](../../extensibility/internals/solutions.md).  
+ Plantillas de proyectos se pasan en el generador de proyectos. Las plantillas deben admitir la inicialización de todos los elementos de proyecto según los requisitos del tipo de proyecto específico. Estas plantillas más adelante pueden se guardan como archivos de proyecto y administradas por el IDE a través de la solución. Para obtener más información, consulte [crear proyecto instancias por usar generadores de proyectos](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) y [soluciones](../../extensibility/internals/solutions.md).  
   
- Elementos de proyecto pueden ser basados en archivos o no basada en archivos:  
+ Elementos de proyecto pueden ser basados en archivos o no basada en archivo:  
   
--   Elementos basados en archivos pueden ser locales o remotos. En los proyectos Web en C#, por ejemplo, las conexiones a los archivos en un sistema remoto se conservan localmente, mientras que los archivos se conservan en el sistema remoto.  
+-   Los elementos basados en el archivo pueden ser local o remoto. En los proyectos Web en C#, por ejemplo, las conexiones a los archivos en un sistema remoto se conservan localmente, mientras que los propios archivos se conservan en el sistema remoto.  
   
--   Elementos basados en archivos no pueden guardar elementos en una base de datos o en el repositorio.  
+-   Elementos basados en archivos no pueden guardar elementos en un repositorio o una base de datos.  
   
-## <a name="commit-models"></a>Confirmar modelos  
- Después de decidir dónde se encuentran los elementos de proyecto, debe elegir el modelo adecuado de confirmación. Por ejemplo, en un modelo basado en archivos con archivos locales, cada proyecto puede guardarse forma autónoma. En un modelo de repositorio, puede guardar varios elementos en una transacción. Para obtener más información, consulte [decisiones de diseño del tipo de proyecto](../../extensibility/internals/project-type-design-decisions.md).  
+## <a name="commit-models"></a>Confirmar los modelos  
+ Después de decidir dónde se encuentran los elementos de proyecto, debe elegir el modelo adecuado de confirmación. Por ejemplo, en un modelo basado en archivos con los archivos locales, cada proyecto puede guardarse forma autónoma. En un modelo de repositorio, puede guardar varios elementos en una transacción. Para obtener más información, consulte [decisiones de diseño de tipo de proyecto](../../extensibility/internals/project-type-design-decisions.md).  
   
- Para determinar las extensiones de nombre de archivo, implementan proyectos de la <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> interfaz, que proporciona información que permita al cliente de un objeto que implemente la **Guardar como** cuadro de diálogo, es decir, en blanco para igualar la **Guardar como tipo**  desplegable enumerar y administrar la extensión de nombre de archivo inicial.  
+ Para determinar las extensiones de nombre de archivo, implementan proyectos de la <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> interfaz, que proporciona información que permita al cliente de un objeto que implemente la **Guardar como** cuadro de diálogo, es decir, para rellenar el **Guardar como tipo**  desplegable enumerar y administrar la extensión de nombre de archivo inicial.  
   
- Las llamadas IDE el `IPersistFileFormat` elementos de interfaz en el proyecto para indicar que el proyecto debe conservar su proyecto según corresponda. Por lo tanto, el objeto es el propietario de todos los aspectos de su archivo y el formato. Esto incluye el nombre del formato del objeto.  
+ Las llamadas IDE el `IPersistFileFormat` elementos de interfaz en el proyecto para indicar que el proyecto debe conservar su proyecto según corresponda. Por lo tanto, el objeto posee todos los aspectos de su archivo y el formato. Esto incluye el nombre del formato del objeto.  
   
- En el caso donde los elementos no son archivos, `IPersistFileFormat` sigue siendo cómo no basado en archivos se conservan los elementos. Archivos de proyecto, como los archivos .vbp para [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] .vcproj o los proyectos de archivos para [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] proyectos, también debe conservarse.  
+ En el caso donde los elementos no son archivos, `IPersistFileFormat` sigue siendo cómo no basados en archivos se conservan los elementos. Archivos de proyecto, como los archivos .vbp para [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] .vcproj o proyectos de archivos para [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] proyectos, también deben conservarse.  
   
- Para guardar las acciones, el IDE examina la tabla document ejecución (RDT) y la jerarquía pasa los comandos para la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> interfaces. El <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.IsItemDirty%2A> se implementa el método para determinar si se ha modificado el elemento. Si el elemento tiene, el <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.SaveItem%2A> método se implementa para guardar el elemento modificado.  
+ Para guardar las acciones, el IDE examina la tabla de documentos en ejecución (RDT) y la jerarquía pasa los comandos para el <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> interfaces. El <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.IsItemDirty%2A> se implementa el método para determinar si se ha modificado el elemento. Si el elemento tiene, el <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.SaveItem%2A> método se implementa para guardar el elemento modificado.  
   
- Los métodos de la `IVsPersistHierarchyItem2` interfaz se usan para determinar si puede volver a cargar un elemento y, si el elemento puede ser a cargarlo. Además, la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A> método se puede implementar para que los elementos modificados se descarta sin que se va a guardar.  
+ Los métodos de la `IVsPersistHierarchyItem2` interfaz se usan para determinar si un elemento puede volver a cargarse y, si el elemento puede ser, al volver a cargarlo. Además, el <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A> método se puede implementar para que los elementos modificados se descarta sin que se va a guardar.  
   
 ## <a name="see-also"></a>Vea también  
  [Lista de comprobación: Creación de nuevos tipos de proyecto](../../extensibility/internals/checklist-creating-new-project-types.md)   

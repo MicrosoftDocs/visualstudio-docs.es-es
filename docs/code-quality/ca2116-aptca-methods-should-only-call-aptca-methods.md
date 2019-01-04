@@ -2,7 +2,6 @@
 title: 'CA2116: Los métodos APTCA deben llamar solo a métodos APTCA'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - AptcaMethodsShouldOnlyCallAptcaMethods
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7decf94644bdb055f38c267c945dc0dcc813550a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 03c00efe53a5385d7604d0191ff60ae70888e655
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547924"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954440"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: Los métodos APTCA deben llamar solo a métodos APTCA
 

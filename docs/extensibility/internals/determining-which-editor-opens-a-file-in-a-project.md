@@ -1,9 +1,6 @@
 ---
 title: Determinar qué Editor abre un archivo en un proyecto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], determining which editor opens a file
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 655a5a28e3e16a1b07c52c37ef00d89d145a17a1
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: b61aa726a7088d08db6d759a9835816dcaf826a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498547"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941065"
 ---
 # <a name="determine-which-editor-opens-a-file-in-a-project"></a>Determinar qué editor abre un archivo en un proyecto
 Cuando un usuario abre un archivo en un proyecto, el entorno pasa por un proceso de sondeo, finalmente, abrir el editor adecuado o el diseñador para ese archivo. El procedimiento inicial empleado por el entorno es el mismo para los editores estándar y personalizados. El entorno usa una variedad de criterios al sondear el editor que desea utilizar para abrir un archivo y el VSPackage debe coordinarse con el entorno durante este proceso.  

@@ -1,6 +1,5 @@
 ---
 title: Visual Studio Template Schema Reference | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0774cdbba791c62a5794c7f837d6ce6b32c49432
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 25c8af779c8c943e7145c44d8e64f814977f88aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561832"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966945"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Referencia de esquema de plantillas de Visual Studio
 Esta sección contiene información acerca de los elementos XML en *.vstemplate* archivos, que son archivos que almacenan los metadatos para las plantillas de proyecto, plantillas de elementos y Starter Kits.

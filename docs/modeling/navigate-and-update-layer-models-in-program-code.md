@@ -11,17 +11,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8ca10b8504dc4383ad6251e3819c14b7102d32d3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: eea76a607490bda244597e22e25246b39c2c537d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566744"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948659"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Navegar y actualizar modelos de capas en el código del programa
 
-En este artículo se describe los elementos y relaciones en modelos de capas, que puede navegar y actualizar mediante código del programa. Para obtener más información acerca de los diagramas de dependencia desde la perspectiva del usuario, consulte [diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md) y [diagramas de dependencia: instrucciones](../modeling/layer-diagrams-guidelines.md).
+En este artículo se describe los elementos y relaciones en modelos de capas, que puede navegar y actualizar mediante código del programa. Para obtener más información acerca de los diagramas de dependencia desde la perspectiva del usuario, consulte [diagramas de dependencia: Referencia](../modeling/layer-diagrams-reference.md) y [diagramas de dependencia: Directrices](../modeling/layer-diagrams-guidelines.md).
 
 El <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> modelo se describe en este tema es una fachada en más general <xref:Microsoft.VisualStudio.GraphModel> modelo. Si está escribiendo un [extensión de gestos o comandos de menú](../modeling/add-commands-and-gestures-to-layer-diagrams.md), utilice el `Layer` modelo. Si está escribiendo un [extensión de validación de capas](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), resulta más fácil de usar el `GraphModel`.
 
@@ -136,5 +135,5 @@ public void ... (...)
 - [Adición de comandos y gestos a diagramas de dependencia](../modeling/add-commands-and-gestures-to-layer-diagrams.md)
 - [Adición de validación de arquitectura personalizada a diagramas de dependencia](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
 - [Adición de propiedades personalizadas a diagramas de dependencia](../modeling/add-custom-properties-to-layer-diagrams.md)
-- [Diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md)
-- [Diagramas de dependencia: instrucciones](../modeling/layer-diagrams-guidelines.md)
+- [Diagramas de dependencia: Referencia](../modeling/layer-diagrams-reference.md)
+- [Diagramas de dependencia: Directrices](../modeling/layer-diagrams-guidelines.md)

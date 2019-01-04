@@ -1,9 +1,6 @@
 ---
 title: Procedimiento Crear controladores de eventos en proyectos de Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: be56b279750c71ab71f1337f6bc7b2038e1195fe
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 338aefadd88c80c533912be3524a496dab932ba9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648605"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859846"
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Procedimiento Crear controladores de eventos en proyectos de Office
   Hay varias maneras de crear controladores de eventos en Visual Basic y C#. En la vista Diseño, puede crear el valor predeterminado los controladores de eventos para controles haciendo doble clic en el control, o utilice el panel de eventos de la **propiedades** ventana para crear controladores para cualquier evento en el control. Sin embargo, si está en la vista código, es posible que no desea cambiar a vista de diseño para crear un controlador de eventos.  
@@ -57,5 +54,3 @@ ms.locfileid: "53648605"
  [Escribir código en soluciones de Office](../vsto/writing-code-in-office-solutions.md)   
  [Tutorial: Programar basándose en eventos de un control NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
  [Compilar soluciones de Office](../vsto/building-office-solutions.md)  
-  
-  

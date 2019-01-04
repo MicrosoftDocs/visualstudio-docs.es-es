@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0417507323a627753bc62e50b424c37b547d4dad
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 21899be482e47152e8ca60d78535f49613f52ede
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967485"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946047"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Agregar una propiedad de seguimiento a una definición de lenguaje específico de dominio
 
@@ -719,7 +718,7 @@ Agregue código para admitir el comportamiento posterior a la carga personalizad
 
 El siguiente paso es compilar y ejecutar el diseñador DSL en una nueva instancia de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] para que pueda comprobar que la propiedad de seguimiento funciona correctamente.
 
-1. En el **compilar** menú, haga clic en **recompilar solución**.
+1. En el menú **Compilar**, haga clic en **Recompilar solución**.
 
 2. En el menú **Depurar**, haga clic en **Iniciar depuración**.
 
@@ -762,4 +761,4 @@ Si tiene previsto utilizar seguimiento de más de una propiedad o implementar pr
 - <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>
 - <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>
 - [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)
-- [Cómo: Crear soluciones de lenguajes específicos de dominio](../modeling/how-to-create-a-domain-specific-language-solution.md)
+- [Cómo: Crear una solución de lenguaje específico de dominio](../modeling/how-to-create-a-domain-specific-language-solution.md)

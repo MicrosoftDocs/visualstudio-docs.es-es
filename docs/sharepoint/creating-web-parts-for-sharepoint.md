@@ -1,9 +1,6 @@
 ---
 title: Crear elementos Web para SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - Microsoft.SharePoint.WebControls.DateTimeControl
@@ -18,8 +15,6 @@ f1_keywords:
 dev_langs:
 - VB
 - CSharp
-- VB
-- CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, Web Parts
 - Web Parts [SharePoint development in Visual Studio], designing
@@ -28,15 +23,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0cbc26a198cace58a957f3d3aaf25457cf457256
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1efe8524521be590e920818f919a7a52d8fba7e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906050"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879139"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Crear elementos web para SharePoint
-  Usando elementos web, puede modificar el contenido, el aspecto y el comportamiento de las páginas de un sitio de SharePoint a través de un explorador. Los elementos web son controles de servidor que se ejecutan dentro de una página de elementos web: son los bloques de creación de las páginas que aparecen en un sitio de SharePoint. Consulte [bloques de creación: elementos Web](http://go.microsoft.com/fwlink/?LinkID=182097).  
+  Usando elementos web, puede modificar el contenido, el aspecto y el comportamiento de las páginas de un sitio de SharePoint a través de un explorador. Los elementos web son controles de servidor que se ejecutan dentro de una página de elementos web: son los bloques de creación de las páginas que aparecen en un sitio de SharePoint. Consulte [bloques de creación: Elementos Web](http://go.microsoft.com/fwlink/?LinkID=182097).  
   
  Puede crear y depurar elementos web en un sitio de SharePoint mediante el uso de plantillas de Visual Studio.  
   
@@ -54,10 +49,10 @@ ms.locfileid: "49906050"
 |Archivo .webpart|Proporciona información que SharePoint necesita para mostrar el elemento web en una galería de elementos web.|  
 |Archivo de código|Contiene métodos que agregan controles al elemento web y generan el contenido personalizado dentro del elemento web.|  
   
- Para obtener más información, consulte [Cómo: crear un elemento web de SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md).  
+ Para obtener más información, vea [Cómo: Crear un elemento web de SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md).  
   
 ### <a name="visual-web-part-item"></a>Elemento web Visual
- Un elemento web visual es un elemento web que se crea utilizando el diseñador de Visual Web Developer en Visual Studio. Un elemento web visual funciona igual que cualquier otro elemento web. Para agregar controles, como botones y cuadros de texto, a elemento web, agregue código a un archivo XML. Sin embargo, agregar controles a un elemento web visual arrastrando o copiando en el elemento web de Visual Studio **cuadro de herramientas**. El diseñador entonces genera el código necesario en el archivo XML. Consulte [Cómo: elemento web de SharePoint crear utilizando un diseñador](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
+ Un elemento web visual es un elemento web que se crea utilizando el diseñador de Visual Web Developer en Visual Studio. Un elemento web visual funciona igual que cualquier otro elemento web. Para agregar controles, como botones y cuadros de texto, a elemento web, agregue código a un archivo XML. Sin embargo, agregar controles a un elemento web visual arrastrando o copiando en el elemento web de Visual Studio **cuadro de herramientas**. El diseñador entonces genera el código necesario en el archivo XML. Vea [Cómo: Crear elemento web de SharePoint mediante un diseñador](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
   
 ## <a name="sharepoint-controls"></a>Controles de SharePoint
  Visual Studio proporciona algunos controles para crear páginas de SharePoint, como páginas de aplicación. Estos controles aparecen en la **cuadro de herramientas** en **controles de SharePoint**. La funcionalidad para estos controles se deriva de la [Microsoft.SharePoint.WebControls](http://go.microsoft.com/fwlink/?LinkId=235315) espacio de nombres que contiene los controles de servidor ASP.NET que se usan en las páginas de sitio y lista de SharePoint.  
@@ -115,10 +110,9 @@ ms.locfileid: "49906050"
   
 |Título|Descripción|  
 |-----------|-----------------|  
-|[Cómo: crear un elemento web de SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)|Muestra cómo se crean elementos web para las páginas de SharePoint.|  
-|[Cómo: crear un elemento web de SharePoint mediante un diseñador](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|Muestra cómo se crean elementos web de SharePoint utilizando una superficie de diseño visual.|  
-|[Cómo: crear un control de usuario para un elemento de página o web de la aplicación de SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|Muestra cómo se crean controles personalizados y reutilizables que se pueden usar en las páginas de aplicación y los elementos web que se ejecutan en SharePoint.|  
+|[Cómo: Crear un elemento web de SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)|Muestra cómo se crean elementos web para las páginas de SharePoint.|  
+|[Cómo: Crear un elemento web de SharePoint mediante un diseñador](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|Muestra cómo se crean elementos web de SharePoint utilizando una superficie de diseño visual.|  
+|[Cómo: Crear un control de usuario para un elemento de página o web de la aplicación de SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|Muestra cómo se crean controles personalizados y reutilizables que se pueden usar en las páginas de aplicación y los elementos web que se ejecutan en SharePoint.|  
 |[Tutorial: Crear un elemento web para SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|Describe cómo diseñar un elemento web para SharePoint.|  
 |[Tutorial: Crear un elemento web para SharePoint utilizando un diseñador](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|Describe cómo se diseña un elemento web de SharePoint arrastrando controles a una superficie de diseño visual.|  
-|[Tutorial: Crear el elemento web de Silverlight que muestre OData para SharePoint](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)|Describe cómo diseñar un elemento web para SharePoint que hospeda una aplicación de Silverlight y muestra datos de listas de SharePoint.|  
-  
+|[Tutorial: Crear elemento web de Silverlight que muestre OData para SharePoint](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)|Describe cómo diseñar un elemento web para SharePoint que hospeda una aplicación de Silverlight y muestra datos de listas de SharePoint.|  

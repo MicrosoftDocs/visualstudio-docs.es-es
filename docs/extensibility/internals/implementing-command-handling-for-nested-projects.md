@@ -1,9 +1,6 @@
 ---
 title: Implementación de control de comandos para anidar proyectos | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing command handling
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 044c39c6e3240e7777b98e8a25a94e838cc614e8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 995df1c29b94add6853adab522bb63b43892f116
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917991"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893670"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>Implementación del control de comandos para proyectos anidados
 El IDE puede pasar comandos que se pasan a través de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> y <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaces para proyectos anidados o los proyectos principales se pueden filtrar o reemplazar los comandos.  

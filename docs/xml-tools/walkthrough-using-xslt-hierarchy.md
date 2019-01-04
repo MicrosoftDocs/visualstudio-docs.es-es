@@ -1,20 +1,19 @@
 ---
-title: 'Tutorial: Usar la herramienta Jerarquía XSLT'
+title: 'Tutorial: Usar la herramienta jerarquía XSLT'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 20223a18fa422facc7d7a0a74336402d6d391b0a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 65af5f973f9440ac781a8af1042700cf89acee1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693450"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834729"
 ---
-# <a name="walkthrough-use-xslt-hierarchy"></a>Tutorial: Usar jerarquía XSLT
+# <a name="walkthrough-use-xslt-hierarchy"></a>Tutorial: Utilice la herramienta jerarquía XSLT
 
 La herramienta Jerarquía XSLT simplifica muchas tareas de desarrollo de XML. Una hoja de estilos XSLT usa a menudo instrucciones `includes` e `imports`. La compilación se inicia desde la hoja de estilos principal, pero cuando aparece un error como resultado de compilar una hoja de estilos XSLT, dicho error puede proceder de un origen distinto de la hoja de estilos principal. Es posible que se requiera acceso a las hojas de estilos importadas o incluidas para corregir el error o editar la hoja de estilos. Es posible que la ejecución paso a paso de la hoja de estilos en el depurador le permita abrir las hojas de estilos importadas e incluidas, y si lo desea puede agregar un punto de interrupción en algún punto en una o varias de las hojas de estilos incluidas.
 
@@ -24,7 +23,7 @@ El ejemplo de este tema muestra la depuración en una hoja de estilos a la que s
 
 ## <a name="to-debug-in-a-referenced-style-sheet"></a>Para depurar en una hoja de estilos que se hace referencia
 
-1. Abra un documento XML en Visual Studio. En este ejemplo se utiliza el siguiente documento:
+1. Abra un documento XML en Visual Studio. En este ejemplo se usa el siguiente documento:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>

@@ -1,9 +1,6 @@
 ---
 title: 'Tutorial: Crear una plantilla mediante controles de contenido'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e597f13d2627a8b3e40aa65926d1c990be839c38
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ad53a4e3e834959cbc37d2063a5dd2d1b0d7f6c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833192"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931991"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Tutorial: Crear una plantilla mediante controles de contenido
   Este tutorial muestra cómo crear una personalización de nivel de documento que usa controles de contenido para crear contenido estructurado y reutilizable en una plantilla de Microsoft Office Word.  
@@ -59,7 +56,7 @@ ms.locfileid: "49833192"
   
 ### <a name="to-create-a-new-word-template-project"></a>Para crear un nuevo proyecto de plantilla de Word  
   
-1.  Cree un proyecto de plantilla de Word con el nombre **MyBuildingBlockTemplate**. En el asistente, cree un nuevo documento en la solución. Para obtener más información, consulte [Cómo: proyectos de creación de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Cree un proyecto de plantilla de Word con el nombre **MyBuildingBlockTemplate**. En el asistente, cree un nuevo documento en la solución. Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] se abre la nueva plantilla de Word en el diseñador y agrega el **MyBuildingBlockTemplate** proyecto a **el Explorador de soluciones**.  
   
@@ -86,7 +83,7 @@ ms.locfileid: "49833192"
 5. En la cinta de opciones, haga clic en la pestaña **Desarrollador** .  
   
    > [!NOTE]  
-   >  Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, consulte [Cómo: mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+   >  Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, vea [Cómo: Mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 6. En el **controles** grupo, haga clic en el **texto** botón ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") para agregar un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>a la primera celda.  
   
@@ -235,15 +232,13 @@ ms.locfileid: "49833192"
 ## <a name="next-steps"></a>Pasos siguientes  
  Puede obtener más información sobre cómo usar controles de contenido en este tema:  
   
--   Enlazar controles de contenido a elementos XML (también llamados elementos XML personalizados) que están insertados en un documento. Para obtener más información, consulte [Tutorial: enlazar controles de contenido a elementos XML personalizados](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
+-   Enlazar controles de contenido a elementos XML (también llamados elementos XML personalizados) que están insertados en un documento. Para obtener más información, vea [Tutorial: Enlazar controles de contenido a elementos XML personalizados](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Automatizar Word usando objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)   
  [Controles de contenido](../vsto/content-controls.md)   
- [Cómo: agregar controles de contenido a documentos de Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [Cómo: proteger elementos de documentos mediante controles de contenido](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
+ [Cómo: Agregar controles de contenido a documentos de Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [Cómo: Proteger elementos de documentos mediante controles de contenido](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
  [Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)   
  [Limitaciones de programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md)  
-  
-  

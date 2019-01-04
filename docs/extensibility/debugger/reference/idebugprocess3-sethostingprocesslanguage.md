@@ -1,9 +1,6 @@
 ---
 title: IDebugProcess3::SetHostingProcessLanguage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProcess3::SetHostingProcessLanguage
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 537b2c2b682db1e1bed8131df6f010e55ef47744
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 170e5a2f315248164cf6af277197f7a9f9da05b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900350"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933682"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 Este método establece el idioma que se va a hospedar el proceso bajo. Este lenguaje, a continuación, puede utilizarse por el motor de depuración (DE) para cargar el evaluador de expresiones adecuado.  
@@ -28,8 +25,8 @@ Este método establece el idioma que se va a hospedar el proceso bajo. Este leng
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT SetHostingProcessLanguage(  
-   REFGUID guidLang  
+HRESULT SetHostingProcessLanguage(  
+   REFGUID guidLang  
 );  
 ```  
   
