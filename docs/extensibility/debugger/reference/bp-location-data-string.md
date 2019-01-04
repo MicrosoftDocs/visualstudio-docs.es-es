@@ -1,9 +1,6 @@
 ---
 title: BP_LOCATION_DATA_STRING | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_LOCATION_DATA_STRING
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c740c853fff0701bf27d3c37d69141440525b44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a9f822dfe13d6adf4ea79481ca5bca2cacf2463
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875780"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946948"
 ---
 # <a name="bplocationdatastring"></a>BP_LOCATION_DATA_STRING
 Se usa para establecer puntos de interrupción de datos que se basan en una cadena que el usuario puede escribir en el entorno de desarrollo integrado (IDE).  
@@ -28,7 +25,7 @@ Se usa para establecer puntos de interrupción de datos que se basan en una cade
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-typedef struct _BP_LOCATION_DATA_STRING {   
+typedef struct _BP_LOCATION_DATA_STRING {   
    IDebugThread2* pThread;  
    BSTR           bstrContext;  
    BSTR           bstrDataExpr;  
@@ -55,7 +52,7 @@ typedef struct _BP_LOCATION_DATA_STRING {
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   

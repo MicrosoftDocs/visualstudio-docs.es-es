@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: cambiar el tamaño de los controles dentro de las celdas de la hoja de cálculo'
-ms.custom: ''
+title: Procedimiento Cambiar el tamaño de los controles dentro de las celdas de la hoja de cálculo
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 91a7e66e085408b35f0ce1d8f7d4783e0c4715a8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 67ec290959263282c9a6f924ca9d6ba2c67b5930
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674882"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927355"
 ---
-# <a name="how-to-resize-controls-within-worksheet-cells"></a>Cómo: cambiar el tamaño de los controles dentro de las celdas de la hoja de cálculo
+# <a name="how-to-resize-controls-within-worksheet-cells"></a>Procedimiento Cambiar el tamaño de los controles dentro de las celdas de la hoja de cálculo
   Cuando cambia el tamaño de columnas o filas de una hoja de cálculo, los controles host dentro de las celdas que se ajustan automáticamente el alto o ancho de la celda que se cambió el tamaño. Controles de formularios Windows Forms no cambian de tamaño automáticamente de forma predeterminada.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -78,8 +75,7 @@ ms.locfileid: "35674882"
   
 ## <a name="see-also"></a>Vea también  
  [Controles en documentos de Office](../vsto/controls-on-office-documents.md)   
- [Cómo: agregar controles de formularios Windows Forms a documentos de Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Cómo: ocultar controles en hojas de cálculo al imprimir](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
+ [Cómo: Agregar controles de formularios Windows Forms a documentos de Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Cómo: Ocultar controles en hojas de cálculo al imprimir](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
  [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Limitaciones de los controles de Windows Forms en documentos de Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  

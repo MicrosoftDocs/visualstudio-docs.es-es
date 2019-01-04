@@ -1,9 +1,6 @@
 ---
 title: Procedimiento Acceso mediante programación a los contactos de Outlook
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 662190d3db9c3d384d60f4953ea3809cb726f76c
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 3b02ecc421c2e6c5876061821c8d87e180a4d9a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53801728"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965387"
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>Procedimiento Acceso mediante programación a los contactos de Outlook
   Este ejemplo busca todos los contactos cuyos apellidos contengan una cadena de búsqueda especificado.  
@@ -43,5 +40,3 @@ ms.locfileid: "53801728"
  [Cómo: Buscar un contacto específico mediante programación](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
  [Cómo: Buscar una dirección de correo electrónico en los contactos mediante programación](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)   
  [Cómo: Eliminar contactos de Outlook mediante programación](../vsto/how-to-programmatically-delete-outlook-contacts.md)  
-  
-  

@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e72814b34790dd133f09e0fb16c594e12ea8147c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: def47ec9f58db8d1a4cd1497d5c4611369167bb3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064602"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832235"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrar modelos utilizando Modelbus de Visual Studio
 
@@ -27,7 +26,7 @@ ModelBus permite crear una referencia única a un modelo o a un elemento especí
 
 Para obtener información y ejemplos de código, vea:
 
--   [Cómo: Agregar un controlador para arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)
+-   [Cómo: Agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)
 
 -   [SDK de modelado para Visual Studio](http://www.microsoft.com/download/details.aspx?id=40754)
 
@@ -520,6 +519,6 @@ Cuando haga el diagrama de definición de DSL, haga clic en **habilitar ModelBus
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Abrir un modelo desde un archivo en el código del programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)
-- [Cómo: Agregar un controlador para arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Cómo: Abrir un modelo desde un archivo de código de programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [Cómo: Agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Usar ModelBus de Visual Studio en plantillas de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md)

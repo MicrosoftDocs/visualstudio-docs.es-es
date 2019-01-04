@@ -3,7 +3,6 @@ title: Modelar el SDK de Visual Studio - Lenguajes específicos de dominio
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6de309ca6ff9c1813a2a2a6ebc54ea6baa3a795f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9524e071edc82ba2da78df77afdda85e0ac10505
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060483"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860340"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modelar el SDK de Visual Studio - Lenguajes específicos de dominio
 
@@ -71,7 +70,7 @@ Para obtener información sobre técnicas avanzadas y solución de problemas, vi
 
  [Crear lenguajes específicos de dominio basados en WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)
 
- [Cómo: Ampliar el diseñador de lenguajes específicos de dominio](../modeling/how-to-extend-the-domain-specific-language-designer.md)
+ [Cómo: Ampliar el Diseñador de lenguaje específico de dominio](../modeling/how-to-extend-the-domain-specific-language-designer.md)
 
  [Ediciones de Visual Studio compatibles con el SDK de visualización y modelado](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)
 

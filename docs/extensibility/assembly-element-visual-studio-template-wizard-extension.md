@@ -1,6 +1,5 @@
 ---
 title: Elemento Assembly (extensión de Asistente de plantilla de Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 829ba0fd25494affb2a8bf7e59c31361cbc9dc4b
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 07b01c993bb9a20dcb836a67bc2a9e8d78135adb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562027"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828191"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Elemento Assembly (extensión de Asistente de plantilla de Visual Studio)
 Especifica el nombre o el nombre seguro del ensamblado que implementa el `IWizard` interfaz.  
@@ -61,7 +60,7 @@ Especifica el nombre o el nombre seguro del ensamblado que implementa el `IWizar
 ## <a name="example"></a>Ejemplo  
  El ejemplo siguiente muestra los metadatos de la plantilla de proyecto estándar para un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación de Windows.  
   
-```  
+```xml
 <VSTemplate Version="3.0.0" Type="Item"  
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
     <TemplateData>  
@@ -87,9 +86,10 @@ Especifica el nombre o el nombre seguro del ensamblado que implementa el `IWizar
         <FullClassName>MyWizard.CustomWizard</FullClassName>  
     </WizardExtension>  
 </VSTemplate>  
-```  
+```
   
-## <a name="see-also"></a>Vea también  
- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)   
- [Cómo: Usar a asistentes con plantillas de proyecto](../extensibility/how-to-use-wizards-with-project-templates.md)
+## <a name="see-also"></a>Vea también
+
+- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)
+- [Cómo: Usar a asistentes con plantillas de proyecto](../extensibility/how-to-use-wizards-with-project-templates.md)

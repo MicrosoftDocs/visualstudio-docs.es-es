@@ -1,9 +1,6 @@
 ---
 title: Instalación de VSPackages con Windows Installer | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], with Windows Installer
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3bb49f02b7c160aa879c0652a081d8fd6cb026a
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: e0efb1b5c45595383f62d08399906cbb1b546479
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370541"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827840"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Instalación de VSPackages con Windows Installer
 Integrar el VSPackage en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] requiere algo más que copiar los archivos al equipo de un usuario. Instalador de su VSPackage debe instalar el paquete VSPackage y sus archivos dependientes y registrar e integrarlos en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. El VSPackage puede aprovechar las características de integración, como mostrar un icono en el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] cuadro de diálogo acerca de pantalla de presentación.  
@@ -51,7 +48,7 @@ Integrar el VSPackage en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md
  [Implementación de tipos de proyecto](../../extensibility/internals/deploying-project-types.md)  
  Describe cómo usar el nuevo agregador de tipo de proyecto para los tipos de proyecto de código administrado.  
   
- [Generación de información del Registro para un instalador](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)  
+ [Cómo: Generar información del registro para un instalador](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)  
  Se explica cómo usar RegPkg.exe para generar un manifiesto de registro de un VSPackage administrado.  
   
  [Comandos que se deben ejecutar después de la instalación](../../extensibility/internals/commands-that-must-be-run-after-installation.md)  

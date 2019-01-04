@@ -3,7 +3,6 @@ title: Características del shell del Diseñador de flujo de trabajo
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - WFDShellFeatures.UI
 ms.assetid: 14bfe312-9592-408e-92ce-e98585ad16e7
@@ -12,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d881a6c6e14983fd8537d8e78066ef9479b9633
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 2aaac9c6148aee2b39d0231f7b893bcfaf89e301
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757215"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880681"
 ---
 # <a name="workflow-designer-shell-features"></a>Características del shell del Diseñador de flujo de trabajo
 
-Diseñador de flujo de trabajo se compone de tres áreas principales de la interfaz de usuario: la superficie del diseñador, la barra de ruta de navegación por encima de él y el shell debajo de él. La barra de ruta de navegación, que se encuentra en la parte superior de la pantalla, se utiliza para mostrar la lista de antecesores de la actividad raíz actual. Para obtener más información, consulte [Cómo: uso de navegación tipo Breadcrumb](../workflow-designer/how-to-use-breadcrumb-navigation.md). La superficie del diseñador, que se encuentra en el centro de la pantalla, se utiliza para crear los flujos de trabajo. El shell, que se encuentra en la parte inferior de la pantalla, contiene diversos botones para administrar la vista actual.
+Diseñador de flujo de trabajo se compone de tres áreas principales de la interfaz de usuario: la superficie del diseñador, la barra de ruta de navegación por encima de él y el shell debajo de él. La barra de ruta de navegación, que se encuentra en la parte superior de la pantalla, se utiliza para mostrar la lista de antecesores de la actividad raíz actual. Para obtener más información, vea [Cómo: Usar ruta de navegación](../workflow-designer/how-to-use-breadcrumb-navigation.md). La superficie del diseñador, que se encuentra en el centro de la pantalla, se utiliza para crear los flujos de trabajo. El shell, que se encuentra en la parte inferior de la pantalla, contiene diversos botones para administrar la vista actual.
 
 ## <a name="shell-features"></a>Características del shell
  El shell tiene botones a la derecha de la barra que puede utilizar para acercar o alejar el flujo de trabajo, ajustar el contenido del flujo de trabajo según el tamaño de la pantalla y mostrar u ocultar el mapa general. También puede acercar o alejar un flujo de trabajo con los métodos abreviados de teclado CTRL++ y CTRL+ -.

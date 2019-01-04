@@ -1,9 +1,6 @@
 ---
 title: IDebugDocumentPosition2::GetFileName | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDocumentPosition2::GetFileName
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f77d7f89bd7970a17c78414393cd8856a6f62b4d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 407ddfe794d1b23e65baf1530182b9c3ec568b98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872334"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967416"
 ---
 # <a name="idebugdocumentposition2getfilename"></a>IDebugDocumentPosition2::GetFileName
 Obtiene el nombre de archivo del archivo de origen que contiene la posición del documento.  
@@ -28,13 +25,13 @@ Obtiene el nombre de archivo del archivo de origen que contiene la posición del
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT GetFileName(   
+HRESULT GetFileName(   
    BSTR* pbstrFileName  
 );  
 ```  
   
 ```csharp  
-int GetFileName(   
+int GetFileName(   
    out string pbstrFileName  
 );  
 ```  

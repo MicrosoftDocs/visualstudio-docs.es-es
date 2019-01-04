@@ -1,9 +1,6 @@
 ---
 title: Fuentes y formato de Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a758c1e44f9f78f7dc2a225e641d91f97db72cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 69ce90f8748168608d09584a4ef370fbdfac394a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942834"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989048"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Fuentes y formato de Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> La fuente del entorno
@@ -107,19 +104,19 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
  **Aparece como:** Segoe UI Light de 34 pt  
  **Uso de:** (poco frecuente) única con marca la interfaz de usuario, como en la página de inicio
 
- **Código de procedimientos:** donde `textBlock` hay un TextBlock definido previamente y `label` es una etiqueta definida anteriormente:  
+ **Código de procedimientos:** Donde `textBlock` hay un TextBlock definido previamente y `label` es una etiqueta definida anteriormente:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);  
 ```
   
- **XAML:** establecer el estilo del TextBlock o Label tal como se muestra.  
+ **XAML:** Establecer el estilo del TextBlock o Label tal como se muestra.  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey}}">Label: 375 Percent Scaling</Label>  
 ```
   
@@ -127,19 +124,19 @@ label.SetResourceReference(Label.StyleProperty,
  **Aparece como:** Segoe UI Light de 28 pt   
  **Uso de:** títulos de cuadro de diálogo de firma grandes, principales de encabezado en los informes  
   
- **Código de procedimientos:** donde `textBlock` hay un TextBlock definido previamente y `label` es una etiqueta definida anteriormente:  
+ **Código de procedimientos:** Donde `textBlock` hay un TextBlock definido previamente y `label` es una etiqueta definida anteriormente:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey);    
 ```
   
- **XAML:** establecer el estilo del TextBlock o Label tal como se muestra.  
+ **XAML:** Establecer el estilo del TextBlock o Label tal como se muestra.  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey}}">Label: 310 Percent Scaling</Label>     
 ```
   
@@ -147,19 +144,19 @@ label.SetResourceReference(Label.StyleProperty,
  **Aparece como:** 18 ptos Segoe UI Semilight    
  **Uso de:** subtítulos, títulos en los cuadros de diálogo pequeñas y medianas  
   
- **Código de procedimientos:** donde `textBlock` hay un TextBlock definido previamente y `label` es una etiqueta definida anteriormente: 
+ **Código de procedimientos:** Donde `textBlock` hay un TextBlock definido previamente y `label` es una etiqueta definida anteriormente: 
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey);    
 ```
   
- **XAML:** establecer el estilo del TextBlock o Label tal como se muestra:  
+ **XAML:** Establecer el estilo del TextBlock o Label tal como se muestra:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey}}">Label: 200 Percent Scaling</Label>    
 ```
   
@@ -167,19 +164,19 @@ label.SetResourceReference(Label.StyleProperty,
  **Aparece como:** 14 pt Segoe UI    
  **Uso de:** títulos de sección en documento bien la interfaz de usuario o los informes  
   
- **Código de procedimientos:** donde `textBlock` hay un TextBlock definido previamente y `label` es una etiqueta definida anteriormente:  
+ **Código de procedimientos:** Donde `textBlock` hay un TextBlock definido previamente y `label` es una etiqueta definida anteriormente:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey);    
 ```
   
- **XAML:** establecer el estilo del TextBlock o Label tal como se muestra:  
+ **XAML:** Establecer el estilo del TextBlock o Label tal como se muestra:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey}}">Label: 155 Percent Scaling</Label>  
 ```
   
@@ -187,39 +184,39 @@ label.SetResourceReference(Label.StyleProperty,
  **Aparece como:** 12 pt Segoe UI    
  **Uso de:** subtítulos más pequeños en los cuadros de diálogo de firma y documento bien la interfaz de usuario  
   
- **Código de procedimientos:** donde `textBlock` hay un TextBlock definido previamente y `label` es una etiqueta definida anteriormente:  
+ **Código de procedimientos:** Donde `textBlock` hay un TextBlock definido previamente y `label` es una etiqueta definida anteriormente:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey);    
 ```
   
- **XAML:** establecer el estilo del TextBlock o Label tal como se muestra:  
+ **XAML:** Establecer el estilo del TextBlock o Label tal como se muestra:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey}}">Label: 133 Percent Scaling</Label>    
 ```
   
 #### <a name="122-environment-font"></a>Fuente del entorno 122%  
- **Aparece como:** 11 pt Segoe UI    
+ **Aparece como:** pt 11 Segoe UI    
  **Uso de:** sección encabezados en los cuadros de diálogo de firma, mejores nodos en la vista de árbol, navegación por tabulación vertical  
   
- **Código de procedimientos:** donde `textBlock` hay un TextBlock definido previamente y `label` es una etiqueta definida anteriormente:  
+ **Código de procedimientos:** Donde `textBlock` hay un TextBlock definido previamente y `label` es una etiqueta definida anteriormente:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey);    
 ```
   
- **XAML:** establecer el estilo del TextBlock o Label tal como se muestra:  
+ **XAML:** Establecer el estilo del TextBlock o Label tal como se muestra:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey}}">Label: 122 Percent Scaling</Label>    
 ```
   
@@ -227,19 +224,19 @@ label.SetResourceReference(Label.StyleProperty,
  **Aparece como:** en negrita 9 pt Segoe UI    
  **Uso de:** etiquetas y subtítulos en los cuadros de diálogo de firma, informes y documentos también la interfaz de usuario  
   
- **Código de procedimientos:** donde `textBlock` hay un TextBlock definido previamente y `label` es una etiqueta definida anteriormente:  
+ **Código de procedimientos:** Donde `textBlock` hay un TextBlock definido previamente y `label` es una etiqueta definida anteriormente:  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironmentBoldStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironmentBoldStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironmentBoldStyleKey);    
 ```
   
- **XAML:** establecer el estilo del TextBlock o Label tal como se muestra:  
+ **XAML:** Establecer el estilo del TextBlock o Label tal como se muestra:  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironmentBoldStyleKey}}"> Bold Label</Label>    
 ```
   
@@ -316,7 +313,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 |Títulos del cuadro de diálogo|Etiquetas|  
 |Cuadros de grupo|Casillas de verificación|  
 |Elementos de menú|Botones de radio|  
-|Elementos de menú contextual|Elementos del cuadro de lista|  
+|Elementos del menú contextual|Elementos del cuadro de lista|  
 |Botones|Barras de estado|  
 |Etiquetas de tabla||  
 |Encabezados de columna||  
@@ -325,9 +322,9 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="title-case"></a>Mayúscula inicial  
  Mayúscula inicial es un estilo en el que se escriben las primeras letras de la mayoría o todas las palabras dentro de una frase. En Visual Studio, mayúscula inicial se usa para muchos elementos, incluidos:  
   
-- **Información sobre herramientas.** Ejemplo: "vista previa de los elementos seleccionados"  
+- **Información sobre herramientas.** Ejemplo: "Obtener una vista previa de los elementos seleccionados"  
   
-- **Encabezados de columna.** Ejemplo: "respuesta del sistema"  
+- **Encabezados de columna.** Ejemplo: "Respuesta del sistema"  
   
 - **Elementos de menú.** Ejemplo: "Guardar todo"  
   
@@ -356,9 +353,9 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="sentence-case"></a>Tipo oración  
  Oración es el método estándar de mayúsculas y minúsculas para escribir en el que aparece con mayúsculas solo la primera palabra de la oración, junto con los nombres propios y los pronombres "I". En general, el tipo oración es más fácil para un público internacional leer, especialmente cuando el contenido se traducirá en una máquina. Caso de uso oración:  
   
-1.  **Mensajes de la barra de estado.** Estos son sencillos, resumen y facilitar solo información de estado. Ejemplo: "cargar archivo de proyecto"  
+1.  **Mensajes de la barra de estado.** Estos son sencillos, resumen y facilitar solo información de estado. Ejemplo: "Cargando el archivo de proyecto"  
   
-2.  **Todos los demás elementos de interfaz de usuario**, incluidas las etiquetas, las casillas de verificación, botones de radio y los elementos del cuadro de lista. Ejemplo: "seleccionar todos los elementos de lista"  
+2.  **Todos los demás elementos de interfaz de usuario**, incluidas las etiquetas, las casillas de verificación, botones de radio y los elementos del cuadro de lista. Ejemplo: "Seleccionar todos los elementos de lista"  
   
 ### <a name="text-formatting"></a>Formato de texto  
  Texto predeterminado de formato en Visual Studio 2013 se controla mediante [la fuente del entorno](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont). Este servicio ayuda a garantizar una apariencia coherente de fuente en todo el IDE (entorno de desarrollo integrado), y se debe usar para garantizar una experiencia coherente para los usuarios.  
@@ -412,7 +409,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Uso:** poco frecuentes. Interfaz de usuario de la marca solo UNIQUE.<br /><br /> **Hacer:**<br /><br /> -Use oración<br />-Use siempre ligero<br /><br /> **No:**<br /><br /> -El uso de la interfaz de usuario que no sea de interfaz de usuario como página de inicio de la firma<br />-En negrita, cursiva o negrita cursiva<br />-Use para el texto de cuerpo<br />-Usar ventanas de herramientas|**Aparece como:** Segoe UI Light de 34 pt<br /><br /> **Ejemplo Visual:**<br /><br /> *Actualmente no usa. Puede usarse en la página de inicio.*|  
+|**Uso:** Poco frecuentes. Interfaz de usuario de la marca solo UNIQUE.<br /><br /> **Hacer:**<br /><br /> -Use oración<br />-Use siempre ligero<br /><br /> **No:**<br /><br /> -El uso de la interfaz de usuario que no sea de interfaz de usuario como página de inicio de la firma<br />-En negrita, cursiva o negrita cursiva<br />-Use para el texto de cuerpo<br />-Usar ventanas de herramientas|**Aparece como:** Segoe UI Light de 34 pt<br /><br /> **Ejemplo Visual:**<br /><br /> *Actualmente no usa. Puede usarse en la página de inicio.*|  
   
 #### <a name="310-environment-font--light"></a>Fuente del entorno 310% + claro  
   
@@ -430,19 +427,19 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Uso:**<br /><br /> -Sección títulos de documento bien la interfaz de usuario<br />: Informes<br /><br /> **Realice:** oración caso de uso<br /><br /> **No:**<br /><br /> -En negrita, cursiva o negrita cursiva<br />-Use para el texto de cuerpo<br />-Usar controles estándar de Visual Studio<br />-Usar ventanas de herramientas|**Aparece como:** 14 pt Segoe UI<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de encabezado con fuente del entorno 155%](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202 c_EF155")|  
+|**Uso:**<br /><br /> -Sección títulos de documento bien la interfaz de usuario<br />: Informes<br /><br /> **Hacer:** Caso de uso de oración<br /><br /> **No:**<br /><br /> -En negrita, cursiva o negrita cursiva<br />-Use para el texto de cuerpo<br />-Usar controles estándar de Visual Studio<br />-Usar ventanas de herramientas|**Aparece como:** 14 pt Segoe UI<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de encabezado con fuente del entorno 155%](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202 c_EF155")|  
   
 #### <a name="133-environment-font"></a>Fuente del entorno 133%  
   
 |||  
 |-|-|  
-|**Uso:**<br /><br /> -Subtítulos más pequeños en los cuadros de diálogo de firma<br />-Menores subtítulos en documento bien la interfaz de usuario<br /><br /> **Realice:** oración caso de uso<br /><br /> **No:**<br /><br /> -En negrita, cursiva o negrita cursiva<br />-Use para el texto de cuerpo<br />-Usar controles estándar de Visual Studio<br />-Usar ventanas de herramientas|**Aparece como:** 12 pt Segoe UI<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de encabezado con fuente del entorno 133%](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202 d_EF133")|  
+|**Uso:**<br /><br /> -Subtítulos más pequeños en los cuadros de diálogo de firma<br />-Menores subtítulos en documento bien la interfaz de usuario<br /><br /> **Hacer:** Caso de uso de oración<br /><br /> **No:**<br /><br /> -En negrita, cursiva o negrita cursiva<br />-Use para el texto de cuerpo<br />-Usar controles estándar de Visual Studio<br />-Usar ventanas de herramientas|**Aparece como:** 12 pt Segoe UI<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de encabezado con fuente del entorno 133%](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202 d_EF133")|  
   
 #### <a name="122-environment-font"></a>Fuente del entorno 122%  
   
 |||  
 |-|-|  
-|**Uso:**<br /><br /> : Encabezados de sección en los cuadros de diálogo de firma<br />-Nodos superior en la vista de árbol<br />-Navegación por tabulación vertical<br /><br /> **Realice:** oración caso de uso<br /><br /> **No:**<br /><br /> -En negrita, cursiva o negrita cursiva<br />-Use para el texto de cuerpo<br />-Usar controles estándar de Visual Studio<br />-Usar ventanas de herramientas|**Aparece como:** 11 pt Segoe UI<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de encabezado con fuente del entorno 122%](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202 e_EF122")|  
+|**Uso:**<br /><br /> : Encabezados de sección en los cuadros de diálogo de firma<br />-Nodos superior en la vista de árbol<br />-Navegación por tabulación vertical<br /><br /> **Hacer:** Caso de uso de oración<br /><br /> **No:**<br /><br /> -En negrita, cursiva o negrita cursiva<br />-Use para el texto de cuerpo<br />-Usar controles estándar de Visual Studio<br />-Usar ventanas de herramientas|**Aparece como:** pt 11 Segoe UI<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de encabezado con fuente del entorno 122%](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202 e_EF122")|  
   
 #### <a name="environment-font--bold"></a>Fuente del entorno + negrita  
   
@@ -454,7 +451,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Uso:** todo el texto<br /><br /> **Realice:** oración caso de uso<br /><br /> **No:** cursiva o negrita cursiva|**Aparece como:** 9 pt Segoe UI<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de fuente del entorno](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202 g_EF")|  
+|**Uso:** Todo el texto<br /><br /> **Hacer:** Caso de uso de oración<br /><br /> **No:** Cursiva en negrita o cursiva|**Aparece como:** 9 pt Segoe UI<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de fuente del entorno](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202 g_EF")|  
   
 ### <a name="padding-and-spacing"></a>Relleno y espaciado  
  Encabezados requieren espacio alrededor de ellas para darles el énfasis adecuado. Este espacio varía según el tamaño de punto y lo está cerca del encabezado, por ejemplo, una regla horizontal o una línea de texto en la fuente del entorno.  
@@ -467,4 +464,4 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 ## <a name="see-also"></a>Vea también  
  [MSDN: Fuentes (Windows)](/windows/desktop/uxguide/vis-fonts)   
- [MSDN: Texto (Windows) de la interfaz de usuario](/windows/desktop/uxguide/text-ui)
+ [MSDN: Texto de la interfaz de usuario (Windows)](/windows/desktop/uxguide/text-ui)

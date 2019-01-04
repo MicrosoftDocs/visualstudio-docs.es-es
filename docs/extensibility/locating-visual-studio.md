@@ -1,9 +1,6 @@
 ---
 title: Localización de Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 08/21/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - deployment, VSIX
@@ -12,12 +9,12 @@ ms.author: heaths
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65b0b8dfcc42cfcf80fc24f0c844469b77734e9c
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: f9d74c0a899139046cab1d73b59086e4ab9e2276
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495393"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955138"
 ---
 # <a name="locate-visual-studio"></a>Busque Visual Studio
 
@@ -25,7 +22,7 @@ A partir de Visual Studio 2017, puede instalar varias instancias de la misma ver
 
 Esto es una API rápida y de solo lectura con paquetes de NuGet disponibles para código nativo y administrado.
 
-| Código | Package |
+| Código | Paquete |
 | ---- | --- |
 | Nativo | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
 | Administrado | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |

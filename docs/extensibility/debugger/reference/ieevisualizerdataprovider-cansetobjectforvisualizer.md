@@ -1,9 +1,6 @@
 ---
 title: IEEVisualizerDataProvider::CanSetObjectForVisualizer | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEEVisualizerDataProvider::CanSetObjectForVisualizer
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9a70ca947a6b794f74baec9805941c5a9610936
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1f343d1ae2cbaf54a3956a5c98f8015d792e86f9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825724"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865679"
 ---
 # <a name="ieevisualizerdataprovidercansetobjectforvisualizer"></a>IEEVisualizerDataProvider::CanSetObjectForVisualizer
 Este método determina si el visualizador puede tener el objeto de datos que representa actualizado.  
@@ -28,14 +25,14 @@ Este método determina si el visualizador puede tener el objeto de datos que rep
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT CanSetObjectForVisualizer(  
-   BOOL* b  
+HRESULT CanSetObjectForVisualizer(  
+   BOOL* b  
 );  
 ```  
   
 ```csharp  
-int CanSetObjectForVisualizer(  
-   out int b  
+int CanSetObjectForVisualizer(  
+   out int b  
 );  
 ```  
   

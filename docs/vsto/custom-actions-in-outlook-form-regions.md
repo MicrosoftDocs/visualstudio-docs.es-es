@@ -1,9 +1,6 @@
 ---
 title: Acciones personalizadas en áreas de formulario de Outlook
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6b19b65c387e4ffc59108be71c143f130b347551
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 5f7268ed6801e06477312b47f2c890b59ba62f64
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441665"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869524"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Acciones personalizadas en áreas de formulario de Outlook
   Acciones muestran los botones que permiten a los usuarios respondan a un elemento de Microsoft Office Outlook. Por ejemplo, para responder a un elemento de correo, los usuarios hacen clic los **respuesta**, **responder a todos**, o **reenviar** botones de acción. Cada una de estas acciones crea un nuevo elemento de correo y rellena los campos del elemento mediante el uso de información del elemento original.  
@@ -58,5 +55,3 @@ ms.locfileid: "53441665"
  [Crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md)   
  [Tutorial: Diseñar un formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Asociar un área de formulario a una clase de mensaje de Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  
-  
-  

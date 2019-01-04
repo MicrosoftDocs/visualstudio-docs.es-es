@@ -1,9 +1,6 @@
 ---
 title: IDebugComPlusSymbolProvider::GetSymUnmanagedReader | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetSymUnmanagedReader
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 177ac6710fd5ab3748350194713da4cd47e44910
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bbf2714b5053ff9f4a8b9fbddf783ee8d26c6d91
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905433"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866717"
 ---
 # <a name="idebugcomplussymbolprovidergetsymunmanagedreader"></a>IDebugComPlusSymbolProvider::GetSymUnmanagedReader
 Recupera el lector de símbolos que va a usar código no administrado.  

@@ -1,9 +1,6 @@
 ---
 title: Creación de una categoría de configuración | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - profile settings, creating categories
@@ -13,16 +10,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66667b97ef10d6b07bef3e8c1c3b19842a07482e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 4653883dbb9d82fd23d5188a2a247db0ec6b69cd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388674"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935624"
 ---
 # <a name="create-a-settings-category"></a>Crear una categoría de configuración
 
-En este tutorial crea una categoría de configuración de Visual Studio y usarlo para guardar los valores para y restaurar los valores de un archivo de configuración. Una categoría de configuración es un grupo de propiedades relacionadas que aparecen como un "punto de configuración personalizada;" es decir, como una casilla en la **importar y configuraciones de exportaciones** asistente. (Puede encontrarlo en el **herramientas** menú.) Configuración se guarda o se restaura como una categoría y opciones de configuración individuales no se muestran en el asistente. Para obtener más información, consulte [configuración del entorno](../ide/environment-settings.md).
+En este tutorial crea una categoría de configuración de Visual Studio y usarlo para guardar los valores para y restaurar los valores de un archivo de configuración. Una categoría de configuración es un grupo de propiedades relacionadas que aparecen como un "punto de configuración personalizada;" es decir, como una casilla en la **importar y configuraciones de exportaciones** asistente. (Puede encontrarlo en el **herramientas** menú.) Configuración se guarda o se restaura como una categoría y opciones de configuración individuales no se muestran en el asistente. Para obtener más información, vea [Configuración del entorno](../ide/environment-settings.md).
 
 Crear una categoría de configuración mediante la derivación desde el <xref:Microsoft.VisualStudio.Shell.DialogPage> clase.
 
@@ -101,7 +98,7 @@ Para iniciar este tutorial, primero debe completar la primera sección del [crea
 
 4.  Cambie el valor de **OptionFloat** a 3,1416 y **OptionInteger** en 12. Haga clic en **Aceptar**.
 
-5.  En el **herramientas** menú, haga clic en **importar y exportar configuraciones**.
+5.  En el menú **Herramientas**, haga clic en **Importar y exportar configuraciones**.
 
      El **importar y exportar configuraciones** aparece el asistente.
 
