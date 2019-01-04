@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: implementar proyectos anidados | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Implementación de proyectos anidados | Documentos de Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bee3b5bebb8067ecc4bd1115f46d4b668b114c50
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d22d67d81776f83683e11d1ca613a9138137e75c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512905"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945814"
 ---
-# <a name="how-to-implement-nested-projects"></a>Cómo: implementar proyectos anidados
+# <a name="how-to-implement-nested-projects"></a>Procedimiento Implementación de proyectos anidados
 
 Cuando se crea un tipo de proyecto anidado, hay varios pasos adicionales que deben implementarse. Un proyecto principal que se tarda en algunas de las mismas responsabilidades que tiene la solución para sus proyectos anidados (secundarios). El proyecto principal es un contenedor de proyectos similares a una solución. En concreto, hay varios eventos que se deben generar la solución y los proyectos primario para crear la jerarquía de proyectos anidados. Estos eventos se describen en el siguiente proceso para la creación de proyectos anidados.
 

@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 806e0984ce0309ff071e595725615034a7d42f09
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 364e39744f403e83847d983e02843bf538bf5c57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882527"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856870"
 ---
 # <a name="accessing-models-from-text-templates"></a>Acceso a modelos a partir de plantillas de texto
 Mediante el uso de plantillas de texto, puede crear archivos de informe, archivos de código fuente y otros archivos de texto que se basan en modelos de lenguaje específico de dominio. Para obtener información básica acerca de las plantillas de texto, consulte [generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md). Las plantillas de texto funcionarán en modo experimental cuando se depura su DSL y también funcionará en un equipo en el que ha implementado el DSL.
@@ -143,7 +142,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 
  Para cargar el archivo, el método más eficaz es mediante ModelBus de Visual Studio. En un escenario típico, la plantilla de texto usará una directiva específica de DSL para cargar el primer modelo de la forma habitual. Ese modelo contendría las referencias de ModelBus a otro modelo. Puede usar ModelBus para abrir el modelo que se hace referencia y tener acceso a un elemento determinado. Para obtener más información, consulte [utilizando Visual Studio ModelBus en una plantilla de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
- En un escenario menos habitual, es posible que desee abrir un archivo de modelo para el que tiene solo un nombre de archivo, y que no esté en el proyecto de Visual Studio actual. En este caso, puede abrir el archivo mediante el uso de la técnica descrita en [Cómo: abrir un modelo desde un archivo de código de programa](../modeling/how-to-open-a-model-from-file-in-program-code.md).
+ En un escenario menos habitual, es posible que desee abrir un archivo de modelo para el que tiene solo un nombre de archivo, y que no esté en el proyecto de Visual Studio actual. En este caso, puede abrir el archivo mediante el uso de la técnica descrita en [Cómo: Abrir un modelo desde un archivo de código de programa](../modeling/how-to-open-a-model-from-file-in-program-code.md).
 
 ## <a name="generating-multiple-files-from-a-template"></a>Generar varios archivos desde una plantilla
  Si desea generar varios archivos: por ejemplo, para generar un archivo independiente para cada elemento en un modelo, hay varios enfoques posibles. De forma predeterminada, se genera un único archivo de cada archivo de plantilla.

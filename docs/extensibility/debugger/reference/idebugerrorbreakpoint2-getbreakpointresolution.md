@@ -1,9 +1,6 @@
 ---
 title: IDebugErrorBreakpoint2::GetBreakpointResolution | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugErrorBreakpoint2::GetBreakpointResolution
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ca913ec9110c22108b2e4125cc33a19336ad911
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6d8a97b3807b76b99544dffdc1884d0cb0de7749
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893772"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893186"
 ---
 # <a name="idebugerrorbreakpoint2getbreakpointresolution"></a>IDebugErrorBreakpoint2::GetBreakpointResolution
 Obtiene la resolución de errores de punto de interrupción que describe el error.  
@@ -28,13 +25,13 @@ Obtiene la resolución de errores de punto de interrupción que describe el erro
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT GetBreakpointResolution(   
+HRESULT GetBreakpointResolution(   
    IDebugErrorBreakpointResolution2** ppErrorResolution  
 );  
 ```  
   
 ```csharp  
-int GetBreakpointResolution(   
+int GetBreakpointResolution(   
    out IDebugErrorBreakpointResolution2 ppErrorResolution  
 );  
 ```  

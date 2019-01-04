@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 663e706dba9ec7b6479e3e9360ef8aa2d12b1400
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 2d732b050a9f12b6324abaf253739cd4f3e223aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739502"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914493"
 ---
 # <a name="vs-shell-deployment"></a>Implementación de VS Shell
 

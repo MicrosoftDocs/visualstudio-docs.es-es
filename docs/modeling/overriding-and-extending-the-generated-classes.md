@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: ff9a548a675451b28d9b08db280dd3b35cf0a53c
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3ea0446d53ad3cc74bd8af96e95fabada1098da5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511110"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929285"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Invalidar y ampliar las clases generadas
 
@@ -92,6 +91,6 @@ El almacén de modelado proporciona un mecanismo de eventos que puede usar para 
 
 Puede suscribirse a algunos eventos en las formas. Por ejemplo, puede escuchar la clics del mouse en una forma. Tendrá que escribir código que se suscribe al evento para cada objeto. Este código se puede escribir en un reemplazo de InitializeInstanceResources().
 
-Algunos eventos se generan en ShapeFields, que se usan para dibujar los elementos Decorator de una forma. Para obtener un ejemplo, vea [Cómo: interceptar un clic en una forma o decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
+Algunos eventos se generan en ShapeFields, que se usan para dibujar los elementos Decorator de una forma. Para obtener un ejemplo, vea [Cómo: Interceptar un clic en una forma o decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
 Normalmente, estos eventos no se producen dentro de una transacción. Debe crear una transacción si desea realizar cambios en el almacén.

@@ -1,9 +1,6 @@
 ---
 title: Iniciar el depurador | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], launching the debugger
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b1cc4a75a17ea686ef5c5c5c75e21f1c5f74de8
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 1d1c1ba42d1d05217eff6e8ff7a0b6f1209a05db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231121"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990888"
 ---
 # <a name="launch-the-debugger"></a>Iniciar el depurador
 Iniciar al depurador requiere el envío de la secuencia correcta de métodos y eventos con sus atributos adecuados.  

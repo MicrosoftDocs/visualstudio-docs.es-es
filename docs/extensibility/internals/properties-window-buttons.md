@@ -1,9 +1,6 @@
 ---
-title: Botones de la ventana de propiedades | Documentos de Microsoft
-ms.custom: ''
+title: Botones de la ventana Propiedades | Documentos de Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, buttons
@@ -13,31 +10,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 361333fdfceda28ecd78dc54145fded716ee81eb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3229f95f81fe839b0dd84cd7d1294600c21bbc0e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130708"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934010"
 ---
-# <a name="properties-window-buttons"></a>Botones de la ventana de propiedades
-Según el lenguaje de desarrollo y el tipo de producto, se muestran algunos botones de forma predeterminada en la barra de herramientas para el **propiedades** ventana. En todos los casos, el **por categorías**, **Alphabetized**, **propiedades**, y **páginas de propiedades** se muestran los botones. En Visual C# y Visual Basic, la **eventos** también se muestra el botón. En determinados proyectos de Visual C++, el **VC ++ mensajes** y **VC invalida** se muestran los botones. Botones adicionales pueden mostrarse para otros tipos de proyecto. Para obtener más información acerca de los botones en la **propiedades** ventana, consulte [ventana propiedades](../../ide/reference/properties-window.md).  
+# <a name="properties-window-buttons"></a>Botones de la ventana Propiedades
+Según el lenguaje de desarrollo y el tipo de producto, ciertos botones se muestran de forma predeterminada en la barra de herramientas para el **propiedades** ventana. En todos los casos, el **por categorías**, **Alphabetized**, **propiedades**, y **páginas de propiedades** se muestran los botones. En Visual C# y Visual Basic, el **eventos** también se muestra el botón. En determinados proyectos de Visual C++, el **mensajes de VC ++** y **VC invalida** se muestran los botones. Para otros tipos de proyecto se pueden mostrar botones adicionales. Para obtener más información acerca de los botones en la **propiedades** ventana, consulte [ventana propiedades](../../ide/reference/properties-window.md).  
   
-## <a name="implementation-of-properties-window-buttons"></a>Implementación de botones de la ventana de propiedades  
- Al hacer clic en el **por categorías** button, llamadas de Visual Studio la <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> interfaz en el objeto que tiene el foco para ordenar sus propiedades por categoría. <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> se implementa en el `IDispatch` objeto que se enviará a la **propiedades** ventana.  
+## <a name="implementation-of-properties-window-buttons"></a>Implementación de los botones de la ventana Propiedades  
+ Al hacer clic en el **por categorías** button, llamadas de Visual Studio la <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> interfaz en el objeto que tiene el foco para ordenar sus propiedades por categoría. <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> se implementa en el `IDispatch` objeto que se le presenta la **propiedades** ventana.  
   
- Hay 11 categorías de propiedad predefinida, que tienen valores negativos. Puede definir categorías personalizadas, pero se recomienda asignarles valores positivos para distinguirlas de las categorías predefinidas.  
+ Existen 11 categorías de propiedades predefinidas, que tienen valores negativos. Puede definir categorías personalizadas, pero se recomienda asignarles valores positivos para distinguirlas de las categorías predefinidas.  
   
- El <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties.MapPropertyToCategory%2A> método devuelve el valor de la categoría de propiedades adecuado para la propiedad especificada. El <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties.GetCategoryName%2A> método devuelve una cadena que contiene el nombre de categoría. Sólo tendrá que proporcionar soporte técnico para los valores de categoría personalizada ya que Visual Studio conoce los valores de categoría de propiedad estándar.  
+ El <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties.MapPropertyToCategory%2A> método devuelve el valor de categoría de la propiedad adecuada para la propiedad especificada. El <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties.GetCategoryName%2A> método devuelve una cadena que contiene el nombre de categoría. Solo debe proporcionan compatibilidad con valores de categoría personalizada porque Visual Studio conoce los valores de categoría de propiedad estándar.  
   
- Al hacer clic en el **Alphabetized** botón, las propiedades se muestran en orden alfabético por nombre. Los nombres se recuperan mediante `IDispatch` según un algoritmo de ordenación localizado.  
+ Al hacer clic en el **Alphabetized** botón, las propiedades se muestran en orden alfabético por nombre. Los nombres se recuperan por `IDispatch` según un algoritmo de ordenación localizado.  
   
- Cuando el **propiedades** ventana está abierta, la **propiedades** botón se muestra automáticamente como seleccionado. En otras partes del entorno, se muestra el mismo botón y hacer clic en él para mostrar el **propiedades** ventana.  
+ Cuando el **propiedades** ventana está abierta, el **propiedades** botón se muestra automáticamente como seleccionado. En otras partes del entorno, se muestra el mismo botón, y puede hacer clic para mostrar el **propiedades** ventana.  
   
- El **páginas de propiedades** botón no está disponible si `ISpecifyPropertyPages` no está implementado para el objeto seleccionado. Propiedades dependientes de la configuración de presentación que suelen estar asociadas con soluciones y proyectos de páginas de propiedades, pero pueden ser también estar asociadas con elementos de proyecto (por ejemplo, en Visual C++).  
+ El **páginas de propiedades** botón no está disponible si `ISpecifyPropertyPages` no está implementada para el objeto seleccionado. Propiedades dependientes de la configuración de presentación asociados típicamente con soluciones y proyectos de páginas de propiedades, pero se también pueden ser asociados a elementos de proyecto (por ejemplo, en Visual C++).  
   
 > [!NOTE]
->  No se puede agregar botones de barra de herramientas para el **propiedades** ventana y con código no administrado. Para agregar un botón de barra de herramientas, debe crear un objeto administrado que se deriva de <xref:System.Windows.Forms.Design.PropertyTab>.  
+>  No se puede agregar botones de barra de herramientas a la **propiedades** ventana mediante el uso de código no administrado. Para agregar un botón de barra de herramientas, debe crear un objeto administrado que se deriva de <xref:System.Windows.Forms.Design.PropertyTab>.  
   
 ## <a name="see-also"></a>Vea también  
  [Extensión de propiedades](../../extensibility/internals/extending-properties.md)

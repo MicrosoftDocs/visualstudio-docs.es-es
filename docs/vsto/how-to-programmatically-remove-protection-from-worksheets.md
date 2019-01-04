@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: quitar la protección de hojas de cálculo mediante programación'
-ms.custom: ''
+title: Procedimiento Quitar la protección de hojas de cálculo mediante programación
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e15fd2f2d4a025155bbaa1d39dc5c38155b452e2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: cd0aacdd168c65cda9f7ac57880e3216b3fb3daa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675314"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956145"
 ---
-# <a name="how-to-programmatically-remove-protection-from-worksheets"></a>Cómo: quitar la protección de hojas de cálculo mediante programación
+# <a name="how-to-programmatically-remove-protection-from-worksheets"></a>Procedimiento Quitar la protección de hojas de cálculo mediante programación
   Puede quitar mediante programación la protección de una hoja de cálculo de Microsoft Office Excel.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -48,9 +45,7 @@ ms.locfileid: "35675314"
   
 ## <a name="see-also"></a>Vea también  
  [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)   
- [Cómo: proteger hojas de cálculo de mediante programación](../vsto/how-to-programmatically-protect-worksheets.md)   
- [Cómo: proteger libros mediante programación](../vsto/how-to-programmatically-protect-workbooks.md)   
- [Cómo: ocultar hojas de cálculo de mediante programación](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Cómo: Proteger mediante programación las hojas de cálculo](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [Cómo: Proteger libros mediante programación](../vsto/how-to-programmatically-protect-workbooks.md)   
+ [Cómo: Ocultar mediante programación las hojas de cálculo](../vsto/how-to-programmatically-hide-worksheets.md)   
  [Acceso global a objetos en los proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md)  
-  
-  

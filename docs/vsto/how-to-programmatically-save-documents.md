@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: guardar documentos mediante programación'
-ms.custom: ''
+title: Procedimiento Guardar documentos mediante programación
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e794a995d1e978cf5aae8d1b6ec9c1711436af73
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 99a50ec83d69217d123d11aa83ff02600b82108c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883482"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821599"
 ---
-# <a name="how-to-programmatically-save-documents"></a>Cómo: guardar documentos mediante programación
+# <a name="how-to-programmatically-save-documents"></a>Procedimiento Guardar documentos mediante programación
   Hay varias maneras de guardar documentos de Microsoft Office Word. Puede guardar un documento sin cambiar el nombre del documento, o puede guardar un documento con un nombre nuevo.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -89,9 +86,7 @@ ms.locfileid: "49883482"
 -   Para guardar un documento con un nuevo nombre, un directorio denominado *prueba* debe existir en la unidad C.  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: cerrar documentos mediante programación](../vsto/how-to-programmatically-close-documents.md)   
- [Cómo: abrir documentos existentes mediante programación](../vsto/how-to-programmatically-open-existing-documents.md)   
+ [Cómo: Cerrar documentos mediante programación](../vsto/how-to-programmatically-close-documents.md)   
+ [Cómo: Abrir documentos existentes mediante programación](../vsto/how-to-programmatically-open-existing-documents.md)   
  [Elemento host Document](../vsto/document-host-item.md)   
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

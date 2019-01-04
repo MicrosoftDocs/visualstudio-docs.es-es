@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: recuperar una carpeta por nombre mediante programación'
-ms.custom: ''
+title: Procedimiento Recuperar una carpeta por nombre mediante programación
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 622ad7057b50f73dbd74108e3d9619017c354b86
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d772f5cb71a6921c7a89cdf8d176890c927add65
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674389"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872679"
 ---
-# <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Cómo: recuperar una carpeta por nombre mediante programación
+# <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Procedimiento Recuperar una carpeta por nombre mediante programación
   Este ejemplo obtiene una referencia a una carpeta personalizada con nombre y, a continuación, muestra el contenido de la carpeta.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -37,8 +34,6 @@ ms.locfileid: "35674389"
   
 ## <a name="see-also"></a>Vea también  
  [Trabajar con carpetas](../vsto/working-with-folders.md)   
- [Cómo: buscar en una carpeta específica mediante programación](../vsto/how-to-programmatically-search-within-a-specific-folder.md)   
- [Cómo: buscar un contacto específico mediante programación](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
- [Cómo: crear elementos de carpeta personalizados mediante programación](../vsto/how-to-programmatically-create-custom-folder-items.md)  
-  
-  
+ [Cómo: Buscar en una carpeta específica mediante programación](../vsto/how-to-programmatically-search-within-a-specific-folder.md)   
+ [Cómo: Buscar un contacto específico mediante programación](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
+ [Cómo: Crear elementos de carpeta personalizados mediante programación](../vsto/how-to-programmatically-create-custom-folder-items.md)  

@@ -1,13 +1,8 @@
 ---
 title: Integrar datos profesionales en SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e75367844a3a62e044a98f9d52c567fcfca3590e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 194f2e0c88a0cbce9ef34f77246cf7969066833e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119920"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934445"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>Integrar datos profesionales en SharePoint
   Puede integrar datos profesionales en SharePoint. Datos profesionales pueden proceder de aplicaciones de servidor back-end, como [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel y SAP, o un servicio Web. Los usuarios pueden ver, agregar, actualizar o eliminar los datos empresariales mediante el uso de listas externas o elementos Web de datos profesionales en SharePoint.  Los usuarios también pueden tener acceso a estos datos sin conexión en una aplicación de Microsoft Office como Microsoft Outlook. Para obtener más información, consulte [donde puede que muestran datos externos](http://go.microsoft.com/fwlink/?LinkId=169295).  
@@ -61,4 +56,3 @@ ms.locfileid: "37119920"
 |[Crear un modelo de conectividad a datos empresariales](../sharepoint/creating-a-business-data-connectivity-model.md)|Muestra cómo crear un nuevo modelo o importa un modelo que desea exportar desde SharePoint.|  
 |[Diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md)|Explica cómo diseñar los elementos de un modelo mediante las herramientas de diseño de Visual Studio.|  
 |[Cuándo se debe usar SharePoint Designer vs. Soluciones de Visual Studio al compilar con BCS](http://go.microsoft.com/fwlink/?LinkID=183448)|Le ayuda a decidir si desea usar Visual Studio o usar SharePoint Designer para crear un modelo de BDC.|  
-  

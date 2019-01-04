@@ -1,6 +1,5 @@
 ---
 title: SupportsCodeSeparation (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e669cf01f7becde7fa95af602ce4518bbaf6957e
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: daf9747ac8918166f08aa087640160805d850629
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561398"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959858"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation (Elemento, Plantillas de Visual Studio)
 Especifica si el **colocar código en un archivo independiente** casilla de verificación está habilitada en el **Agregar nuevo elemento** cuadro de diálogo.  

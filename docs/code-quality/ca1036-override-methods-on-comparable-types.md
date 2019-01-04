@@ -1,8 +1,7 @@
 ---
-title: 'CA1036: Reemplazar métodos en tipos comparables'
+title: 'CA1036: Invalidar métodos en tipos comparables'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1036
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed69ba759d63ba27114bc097ac1fd9ccbe424edd
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 05f4bd750f1ec2ad4d336acb1a00b8848de389bf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547743"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825586"
 ---
-# <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Reemplazar métodos en tipos comparables
+# <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Invalidar métodos en tipos comparables
 
 |||
 |-|-|

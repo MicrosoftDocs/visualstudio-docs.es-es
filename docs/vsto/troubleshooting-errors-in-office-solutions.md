@@ -1,9 +1,6 @@
 ---
 title: Solución de problemas de errores en las soluciones de Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Project.DesignerDisabled
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bcc5600f38e2d53244d972e4c4c7094182bfa48c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: d99c3ba5c393638f965fa32f03a6c534d583a166
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672956"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919029"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Solución de problemas de errores en las soluciones de Office
   Pueden surgir problemas al realizar las siguientes tareas mientras desarrolla soluciones de Office en Visual Studio:  
@@ -57,9 +54,9 @@ ms.locfileid: "50672956"
 ### <a name="errors-when-you-create-an-excel-workbook-project-based-on-an-existing-workbook"></a>Errores al crear un proyecto de libro de Excel basado en un libro existente  
  Si crea un nuevo proyecto de libro de Excel basado en un libro existente, es posible que vea una combinación de los siguientes errores.  
   
- En Excel: "Advertencia sobre confidencialidad: este documento contiene macros, controles ActiveX, información sobre paquetes de expansión XML o componentes web. Estos pueden incluir información personal que no se puede quitar por el Inspector de documento".  
+ En Excel: "Advertencia sobre confidencialidad: Este documento contiene macros, controles ActiveX, información de paquete de expansión XML o componentes Web. Estos pueden incluir información personal que no se puede quitar por el Inspector de documento".  
   
- En Visual Studio: "El diseñador no se cargó correctamente".  
+ Desde Visual Studio: "El diseñador no se pudo cargar correctamente."  
   
  Estos errores pueden producirse al intentar crear un proyecto basado en un libro cuya información personal se quitó mediante el Inspector de documento. Para evitar este error, lleve a cabo los pasos siguientes antes de crear el proyecto.  
   
@@ -139,9 +136,9 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
   
  Este código produce los siguientes errores de compilación:  
   
-- Visual Basic: "referencia a la clase 'DocumentClass' no se permite cuando su ensamblado está vinculado con el modo No-PIA."  
+- Visual Basic: "Referencia a la clase 'DocumentClass' no se permite cuando su ensamblado está vinculado con el modo No-PIA".  
   
-- Visual C#: "tipo de interoperabilidad 'Microsoft.Office.Interop.Word.DocumentClass' no se puede incrustar. Use la interfaz aplicable en su lugar".  
+- Visual C#: "Tipo de interoperabilidad 'Microsoft.Office.Interop.Word.DocumentClass' no se puede incrustar. Use la interfaz aplicable en su lugar".  
   
   Para resolver este error, modifique el código para hacer referencia a la interfaz correspondiente. Por ejemplo, en lugar de hacer referencia a un objeto <xref:Microsoft.Office.Interop.Word.DocumentClass>, haga referencia a una instancia de la interfaz <xref:Microsoft.Office.Interop.Word.Document>.  
   
@@ -220,5 +217,3 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  [Solucionar problemas de soluciones de Office](../vsto/troubleshooting-office-solutions.md)   
  [Solucionar problemas de seguridad de la solución de Office](../vsto/troubleshooting-office-solution-security.md)   
  [Solución de problemas de implementación de soluciones de Office](../vsto/troubleshooting-office-solution-deployment.md)  
-  
-  

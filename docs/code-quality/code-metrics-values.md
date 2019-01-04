@@ -2,7 +2,6 @@
 title: Calcular métricas del código
 ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code metrics [Visual Studio]
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b56db0d54e198e0d6d25b19db528ac979a3d44b4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4be2b3672741d0bcae64085d1140e5c2ae2bbf63
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056777"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855577"
 ---
 # <a name="code-metrics-values"></a>Valores de las métricas de código
 
@@ -24,7 +23,7 @@ La mayor complejidad de las aplicaciones de software moderno también aumenta la
 
 Los desarrolladores pueden usar Visual Studio para generar datos de métricas de código que medir la complejidad y el mantenimiento del código administrado. Datos de métricas de código pueden generarse para una solución completa o un proyecto único.
 
-Para obtener información sobre cómo generar datos de métricas de código en Visual Studio, consulte [Cómo: generar datos de métricas de código](../code-quality/how-to-generate-code-metrics-data.md).
+Para obtener información sobre cómo generar datos de métricas de código en Visual Studio, vea [Cómo: Generar datos de métricas de código](../code-quality/how-to-generate-code-metrics-data.md).
 
 ## <a name="software-measurements"></a>Medidas de software
 
@@ -57,5 +56,5 @@ No se omite el código generado para Windows Forms, porque es código que el des
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-- [Cómo: generar datos de métricas de código](../code-quality/how-to-generate-code-metrics-data.md)
+- [Cómo: Generar datos de métricas de código](../code-quality/how-to-generate-code-metrics-data.md)
 - [Utilice la ventana de resultados de las métricas de código](../code-quality/working-with-code-metrics-data.md)

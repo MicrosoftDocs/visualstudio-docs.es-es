@@ -1,9 +1,6 @@
 ---
-title: 'Área de prueba 6: Eliminar | Microsoft Docs'
-ms.custom: ''
+title: 'Área de prueba 6: Eliminar | Documentos de Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], deleting items
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ce67ded280fd87fbcabd72d7ca45f1af8568336
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3fff473dbd4e3bc70f1b6308ed0d6b1129c95e2c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888222"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930119"
 ---
-# <a name="test-area-6-delete"></a>Área de prueba 6: eliminar
+# <a name="test-area-6-delete"></a>Área de prueba 6: Eliminar
 Esta área de prueba de complemento de control de código fuente trata las acciones de eliminación.  
   
  Para eliminar las acciones en que responde el control de código fuente **el Explorador de soluciones**.  

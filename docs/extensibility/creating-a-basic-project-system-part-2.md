@@ -1,9 +1,6 @@
 ---
 title: Creación de un sistema de proyectos básico, parte 2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f5a059562db2409dca8eca1fb53c007059456b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d54e8833389d110efdcefd8d437645ef5824d8f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928118"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967779"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Crear un sistema de proyectos básico, parte 2
 El primer tutorial de esta serie, [crear un sistema de proyectos básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md), se muestra cómo crear un sistema de proyectos básico. En este tutorial se basa en el sistema de proyectos básico mediante la adición de una plantilla de Visual Studio, una página de propiedades y otras características. Debe completar el primer tutorial antes de iniciar esta.  
@@ -187,9 +184,9 @@ ZipProjects:
   
 1. Restablecer la instancia experimental de Visual Studio SDK.  
   
-    En [!INCLUDE[win7](../debugger/includes/win7_md.md)]: en el **iniciar** menú, busque el **Microsoft Visual Studio o Microsoft Visual Studio SDK/herramientas** carpeta y, a continuación, seleccione **restablecer Microsoft Visual Studio Experimental instancia**.  
+    En [!INCLUDE[win7](../debugger/includes/win7_md.md)]: En el **iniciar** menú, busque el **Microsoft Visual Studio o Microsoft Visual Studio SDK/herramientas** carpeta y, a continuación, seleccione **restablecer la instancia de Microsoft Visual Studio Experimental**.  
   
-    En versiones posteriores de Windows: en el **iniciar** , escriba **restablecer Microsoft Visual Studio \<versión > instancia Experimental**.  
+    En versiones posteriores de Windows: En el **iniciar** , escriba **restablecer Microsoft Visual Studio \<versión > instancia Experimental**.  
   
 2. Aparecerá una ventana de símbolo del sistema. Cuando vea las palabras **presione cualquier tecla para continuar**, haga clic en **ENTRAR**. Después de cerrar la ventana, abra Visual Studio.  
   

@@ -1,9 +1,6 @@
 ---
 title: SccDirQueryInfo (función) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccDirQueryInfo
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2c7c00f2023d7debd684b442b3901547ac8d1d2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: f710dfed6a6f5225fd74f828077eb228124714c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639424"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956808"
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo (función)
 Esta función examina una lista de directorios completos para su estado actual.  

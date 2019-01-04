@@ -1,9 +1,6 @@
 ---
 title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugDocumentChecksum2::GetChecksumAndAlgorithmI
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbb12f315bc0e83e14ad4a342443ed3207411dae
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d484b46d6df22b68249873d225571a09f6e1d35d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846387"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857561"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
 Recupera el identificador de suma de comprobación y el algoritmo de documento dado el número máximo de bytes que se utilizará.  

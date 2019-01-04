@@ -3,8 +3,6 @@ title: Referencia general (desarrollo de Office en Visual Studio)
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bdc279d72f6e088c1adc22a78d9864e1d595b764
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: ec7b021c1eddff17ccc5687ec3d16f765838d062
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646856"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933183"
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Referencia general (desarrollo de Office en Visual Studio)
   Esta sección contiene detalles técnicos acerca de los proyectos de Microsoft Office en Visual Studio.  
@@ -54,5 +52,3 @@ ms.locfileid: "53646856"
   
  [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)  
  Proporciona vínculos a información sobre cómo empezar a crear proyectos de Office en Visual Studio.  
-  
-  

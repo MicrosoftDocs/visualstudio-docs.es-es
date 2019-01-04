@@ -1,9 +1,6 @@
 ---
 title: IDebugMessageEvent2::SetResponse | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugMessageEvent2::SetResponse
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73c5b29293b8e06ec79195621c8744c71a8bdd58
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a36bab2011a522011c90589c88561719da5f59c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936152"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837750"
 ---
 # <a name="idebugmessageevent2setresponse"></a>IDebugMessageEvent2::SetResponse
 Establece la respuesta, si existe, en el cuadro de mensaje.  
@@ -29,13 +26,13 @@ Establece la respuesta, si existe, en el cuadro de mensaje.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT SetResponse(   
+HRESULT SetResponse(   
    DWORD dwResponse  
 );  
 ```  
   
 ```csharp  
-int SetResponse(   
+int SetResponse(   
    uint dwResponse  
 );  
 ```  

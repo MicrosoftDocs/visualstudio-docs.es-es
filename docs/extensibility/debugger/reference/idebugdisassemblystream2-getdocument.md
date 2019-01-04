@@ -1,9 +1,6 @@
 ---
 title: IDebugDisassemblyStream2::GetDocument | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDisassemblyStream2::GetDocument
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b0d697a7596f7582a69466193534d4f8908f2fc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9474ebf733e134363c9b2fec999432edbcd1066a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822207"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894787"
 ---
 # <a name="idebugdisassemblystream2getdocument"></a>IDebugDisassemblyStream2::GetDocument
 Obtiene el documento de origen asociado con esta secuencia de entrada.  
@@ -28,14 +25,14 @@ Obtiene el documento de origen asociado con esta secuencia de entrada.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT GetDocument(   
+HRESULT GetDocument(   
    BSTR              bstrDocumentUrl,  
    IDebugDocument2** ppDocument  
 );  
 ```  
   
 ```csharp  
-int GetDocument(   
+int GetDocument(   
    string              bstrDocumentUrl,  
    out IDebugDocument2 ppDocument  
 );  

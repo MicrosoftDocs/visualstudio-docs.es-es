@@ -1,9 +1,6 @@
 ---
 title: Proyectos Web | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - web projects
@@ -13,22 +10,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 761ad53669d45bc95769c8d81632068101a6e04c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41237c927368ff98f8e0eaa61cc1bb5717446674
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141124"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929755"
 ---
-# <a name="web-projects"></a>Proyectos Web
-Un sistema de proyectos Web es un sistema de proyecto que crea proyectos Web. Proyectos Web a su vez crean aplicaciones Web. Puede programar una página Web con los lenguajes de programación tradicionales, como [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], para recopilar y procesar la información de un usuario, almacenarlos en una base de datos y así sucesivamente. Páginas Web con código asociado se denominan inteligentes páginas Web.  
+# <a name="web-projects"></a>Proyectos web
+Un sistema de proyectos Web es un sistema de proyecto que crea proyectos Web. Los proyectos Web a su vez crean aplicaciones Web. Puede programar una página Web mediante lenguajes de programación tradicionales, tales como [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], para recopilar y procesar información de un usuario, almacenarlo en una base de datos y así sucesivamente. Las páginas Web con código asociado se denominan inteligentes páginas Web.  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Essentials](../../extensibility/internals/web-project-essentials.md)  
+ [Conceptos básicos](../../extensibility/internals/web-project-essentials.md)  
  Presenta los elementos importantes [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proyectos Web.  
   
  [Compatibilidad con sitios web](../../extensibility/internals/web-site-support.md)  
- Presenta información general sobre [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proyectos de sitios Web. Un proyecto de sitio Web genera un archivo ejecutable para cada página Web inteligente. Archivos ejecutables adicionales se generan a partir de los archivos de código fuente en la carpeta.  
+ Presenta información general de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proyectos de sitios Web. Un proyecto de sitio Web genera un archivo ejecutable para cada página Web inteligente. Se generan archivos ejecutables adicionales de los archivos de código fuente en la carpeta /bin.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Proyectos](../../extensibility/internals/projects.md)  

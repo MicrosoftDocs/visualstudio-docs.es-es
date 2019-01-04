@@ -1,9 +1,6 @@
 ---
 title: Comportamiento nuevo o modificado con los adaptadores del Editor | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - adapter behavior
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2b32eeb110240cabfec5d81cc862611a0d32fe2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d32cad965c4165a8f81e9b880121bb54ab1738b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639239"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901615"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Comportamiento nuevo o modificado con los adaptadores de editor
 Si está actualizando el código escrito en versiones anteriores del editor de núcleo de Visual Studio y tiene previsto usar el editor adaptadores (o las correcciones de compatibilidad) en lugar de usar la nueva API, debe tener en cuenta las siguientes diferencias en el comportamiento de los adaptadores de editor en relación con el anterior editor básico.  

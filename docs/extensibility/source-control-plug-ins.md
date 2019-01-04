@@ -1,9 +1,6 @@
 ---
 title: Los complementos de Control de origen | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, reference
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4be7a1d0739b6a0c8431d588b05de58a296b809c
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: f45ffeb57db79edd6305c3195a87012dc7de26b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495705"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923645"
 ---
 # <a name="source-control-plug-ins"></a>Complementos de control de código fuente
 La sección de referencia de SDK de complemento de Control de código fuente contiene la especificación de interfaz completa que permite a los sistemas de control de origen que se integra con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Especifica la sintaxis y semántica de los distintos tipos de datos y funciones que debe implementar el complemento de control de código fuente para interactuar con el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE).  
@@ -57,7 +54,7 @@ La sección de referencia de SDK de complemento de Control de código fuente con
  [Glosario](../extensibility/source-control-plug-in-glossary.md)  
  Proporciona los términos útiles y sus definiciones para leer la documentación del SDK de complemento de Control de origen.  
   
- [Desactivación de advertencias de compatibilidad para complementos de control de código fuente](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
+ [Cómo: Desactivar las advertencias de compatibilidad para complementos de Control de código fuente](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
  Describe cómo deshabilitar las advertencias.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  

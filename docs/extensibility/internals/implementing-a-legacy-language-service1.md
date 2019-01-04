@@ -1,9 +1,6 @@
 ---
-title: Implementar un Service1 de lenguaje heredado | Documentos de Microsoft
-ms.custom: ''
+title: Implementación de una función de lenguaje heredado1 | Documentos de Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services, managed
@@ -13,39 +10,39 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0486b8ad035d64f542d48f1e304413780958d90c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d3218a8cf1c61fb9b88520702a953f2288e19b3c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129341"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855892"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Implementar un servicio de lenguaje heredado
-Puede utilizar las clases de managed package framework (MPF) para implementar un servicio de lenguaje heredado que admite una amplia variedad de características, como la finalización de IntelliSense, coincidencia de llaves y resaltado de sintaxis.  
+Puede usar las clases de managed package framework (MPF) para implementar un servicio de lenguaje heredado que admite una amplia variedad de características, como resaltado de sintaxis, coincidencia de llaves y finalización de IntelliSense.  
   
- Los servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características del servicio de lenguaje es utilizar las extensiones MEF. Para obtener más información acerca de la nueva forma de implementar un servicio de lenguaje, consulte [Editor y extensiones de servicio de lenguaje](../../extensibility/editor-and-language-service-extensions.md).  
+ Servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características de servicio de lenguaje es usar las extensiones MEF. Para obtener más información acerca de la nueva forma de implementar un servicio de lenguaje, consulte [Editor y extensiones de servicio de lenguaje](../../extensibility/editor-and-language-service-extensions.md).  
   
 > [!NOTE]
->  Le recomendamos que empiece a usar el nuevo editor de API tan pronto como sea posible. Esto mejora el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.  
+>  Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Información general del servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-overview.md)  
- Información general sobre las características del servicio de lenguaje que se admiten en MPF.  
+ Información general de las características del servicio de lenguaje que se admiten en MPF.  
   
- [Implementar un servicio de lenguaje heredado](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
- Describe lo que se requiere para implementar un servicio de lenguaje mediante MPF.  
+ [Implementación de un servicio de lenguaje heredado](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
+ Describe lo que es necesario implementar un servicio de lenguaje mediante MPF.  
   
- [Registrar un servicio de lenguaje heredado](../../extensibility/internals/registering-a-legacy-language-service1.md)  
+ [Registro de un servicio de lenguaje heredado](../../extensibility/internals/registering-a-legacy-language-service1.md)  
  Describe los pasos necesarios para registrar un servicio de lenguaje basado en MPF con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
  [Escáner y analizador del servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)  
- Describe los analizadores de dos que se necesitan para implementar todas las características de un servicio de lenguaje mediante MPF.  
+ Describe los dos analizadores que son necesarios para implementar todas las características de un servicio de lenguaje mediante MPF.  
   
- [Tutorial: creación de un servicio de lenguaje heredado](../../extensibility/internals/walkthrough-creating-a-legacy-language-service.md)  
- Proporciona los pasos básicos necesarios para implementar un servicio de lenguaje MPF en un paquete VSPackage.  
+ [Tutorial: Creación de un servicio de lenguaje heredado](../../extensibility/internals/walkthrough-creating-a-legacy-language-service.md)  
+ Proporciona los pasos básicos que son necesarios para implementar un servicio de lenguaje MPF en un VSPackage.  
   
- [Tutorial: obtención de una lista de fragmentos de código instalados (implementación heredada)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)  
+ [Tutorial: Obtener una lista de fragmentos de código instalados (implementación heredada)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)  
  Muestra las técnicas de recuperación de una lista de fragmentos de código instalados.  
   
  [Características del servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-features1.md)  
- Proporciona vínculos a temas que lo que debe hacer para implementar todas las características de un servicio de lenguaje mediante MPF de detalles.
+ Proporciona vínculos a temas que detallan lo que debe realizarse para implementar todas las características de un servicio de lenguaje mediante MPF.

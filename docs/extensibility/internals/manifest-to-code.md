@@ -1,6 +1,5 @@
 ---
-title: Manifiesto de código | Documentos de Microsoft
-ms.custom: ''
+title: Manifiesto a código | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
@@ -9,15 +8,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12fc742ae77df98b67593318e08d4151e2991a4f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 597fc90ff7b98018aab0fa11fb44fb1bc152272e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132916"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895446"
 ---
-# <a name="manifest-to-code"></a>Manifiesto para código
-El manifiesto de la herramienta de código es una aplicación de consola que toma un archivo de .imagemanifest para el servicio de imágenes de Visual Studio y genera un archivo de contenedor o archivos para hacer referencia a los valores del manifiesto de imagen en C++, C#, VB o archivos de vsct de extensiones de Visual Studio. Esta herramienta genera archivos de contenedor que pueden usarse para imágenes de solicitudes desde el servicio Visual Studio imagen directamente, o para pasar los valores de manifiesto a través de API si el código no controla cualquiera de su propia interfaz de usuario y la representación.  
+# <a name="manifest-to-code"></a>Manifest to Code
+El manifiesto de la herramienta de código es una aplicación de consola que toma un archivo .imagemanifest para el servicio de imágenes de Visual Studio y genera un archivo contenedor o archivos para hacer referencia a los valores del manifiesto de la imagen en C++, C#, VB o archivos .vsct para extensiones de Visual Studio. Esta herramienta genera archivos de contenedor que se pueden usar para solicitar las imágenes desde el servicio Visual Studio imagen directamente, o para pasar los valores del manifiesto a través de API si el código no controla cualquiera de su propia interfaz de usuario y la representación.  
   
 ## <a name="how-to-use-the-tool"></a>Cómo usar la herramienta  
  **Sintaxis**  
@@ -29,19 +28,19 @@ El manifiesto de la herramienta de código es una aplicación de consola que tom
 ||||  
 |-|-|-|  
 |**Nombre del conmutador**|**Notas**|**Obligatorio u opcional**|  
-|/ manifest|La ruta de acceso al manifiesto de imagen se utiliza para crear o actualizar el contenedor de código.|Obligatorio|  
-|/ Language|El lenguaje en el que se va a generar el contenedor de código.<br /><br /> Los valores válidos: CPP, C++, CS, CSharp, C#, VB o VSCT los valores distinguen mayúsculas de minúsculas.<br /><br /> Para el idioma VSCT opción, /monikerClass, /classAccess y/Namespace opciones se omiten.|Obligatorio|  
-|/imageIdClass|El nombre de la imageIdClass y el archivo asociado creados por la herramienta. Para la opción de lenguaje C++, solo los archivos .h se generan.<br /><br /> Valor predeterminado: \<manifiesto ruta de acceso > \MyImageIds.\< Ext lang >|Optional|  
-|/monikerClass|El nombre de la monikerClass y el archivo asociado creados por la herramienta. Para la opción de lenguaje C++, solo los archivos .h se generan. Se omite para el idioma VSCT.<br /><br /> Valor predeterminado: \<manifiesto ruta de acceso > \MyMonikers.\< Ext lang >|Optional|  
-|/classAccess|El modificador de acceso para el imageIdClass y el monikerClass. Asegúrese de que el modificador de acceso es válido para el idioma especificado. Se omite para la opción de idioma VSCT.<br /><br /> Valor predeterminado: público|Optional|  
-|/ Namespace|El espacio de nombres definido en el contenedor de código. Se omite para la opción de idioma VSCT. Ya sea '. 'o'::' son los separadores de espacio de nombres válido, independientemente de la opción de lenguaje elegido.<br /><br /> Valor predeterminado: MyImages|Optional|  
-|/noLogo|Al establecer este indicador detiene la información de producto y de copyright de impresión.|Optional|  
-|/?|Imprimir la información de ayuda.|Optional|  
-|/help|Imprimir la información de ayuda.|Optional|  
+|/ manifest|La ruta de acceso al manifiesto de la imagen se utiliza para crear o actualizar el contenedor de código.|Obligatorio|  
+|/ Language|El idioma en que se va a generar el contenedor de código.<br /><br /> Valores válidos: CPP, C++, CS, CSharp, C#, VB o VSCT los valores distinguen mayúsculas de minúsculas.<br /><br /> Para el idioma VSCT se omiten las opciones de opción, /monikerClass, /classAccess y/Namespace.|Obligatorio|  
+|/imageIdClass|El nombre de la imageIdClass y el archivo asociado creado por la herramienta. La opción de lenguaje C++, solo los archivos .h se generan.<br /><br /> Predeterminado: \<Ruta de acceso de manifiesto > \MyImageIds. \<Lang Ext >|Optional|  
+|/monikerClass|El nombre de la monikerClass y el archivo asociado creado por la herramienta. La opción de lenguaje C++, solo los archivos .h se generan. Esto se omite para el lenguaje VSCT.<br /><br /> Predeterminado: \<Ruta de acceso de manifiesto > \MyMonikers. \<Lang Ext >|Optional|  
+|/classAccess|El modificador de acceso para el imageIdClass y el monikerClass. Asegúrese de que el modificador de acceso es válido para el idioma especificado. Se omite para la opción de idioma VSCT.<br /><br /> Predeterminado: Public|Optional|  
+|/ Namespace|El espacio de nombres definido en el contenedor de código. Se omite para la opción de idioma VSCT. Ya sea '. 'o'::' son los separadores de espacio de nombres válido, independientemente de la opción de lenguaje elegido.<br /><br /> Predeterminado: MyImages|Optional|  
+|/noLogo|Al establecer esta marca detiene la información de producto y copyright de impresión.|Optional|  
+|/?|Imprimir información de ayuda.|Optional|  
+|/help|Imprimir información de ayuda.|Optional|  
   
  **Ejemplos**  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:CSharp  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest/Language: CSharp  
   
 -   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++ Namespace/namespace: mi:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
   
@@ -49,14 +48,14 @@ El manifiesto de la herramienta de código es una aplicación de consola que tom
   
 ## <a name="notes"></a>Notas  
   
--   Se recomienda usar esta herramienta con manifiestos de imagen generados por el manifiesto de la herramienta de recursos.  
+-   Se recomienda usar esta herramienta con los manifiestos de imagen que se generaron mediante el manifiesto de la herramienta de recursos.  
   
--   La herramienta solo examina las entradas de símbolo para generar los contenedores de código. Si un manifiesto de imagen no contiene ningún símbolo, los contenedores de código generado estará vacíos. Si hay una imagen o un conjunto de imágenes en el manifiesto de imagen que no usan símbolos, se excluirán del contenedor de código.  
+-   La herramienta solo examina las entradas de símbolo para generar los contenedores de código. Si un manifiesto de imagen no contiene ningún símbolo, los contenedores de código generado estará vacíos. Si hay una imagen o un conjunto de imágenes en el manifiesto de imagen que no usan los símbolos, se excluirán del contenedor de código.  
   
 ## <a name="sample-output"></a>Resultados de ejemplo  
  **Contenedores de C#**  
   
- Un par de Id. de imagen simple y el moniker de imagen clases de C# será similar del siguiente código:  
+ Las clases de un par de Id. de imagen simple y el moniker de imagen para C# será similar del siguiente código:  
   
 ```csharp  
 //-----------------------------------------------------------------------------  
@@ -99,7 +98,7 @@ namespace MyImages
   
  **Contenedores de C++**  
   
- Un par de Id. de imagen simple y el moniker de imagen clases de C++ será similar del siguiente código:  
+ Las clases de un par de Id. de imagen simple y el moniker de imagen para C++ será similar del siguiente código:  
   
 ```cpp  
 //-----------------------------------------------------------------------------  
@@ -158,7 +157,7 @@ __declspec(selectany) const ImageMoniker MyMonikers::MyImage2 = { MyImageIds::As
   
  **Contenedores de Visual Basic**  
   
- Clases de un par de Id. de imagen simple y el moniker de imagen para Visual Basic será similar del siguiente código:  
+ Las clases de un par de Id. de imagen simple y el moniker de imagen para será similar a Visual Basic el siguiente código:  
   
 ```vb  
 ' -----------------------------------------------------------------------------  
@@ -214,7 +213,7 @@ End Namespace
   
  **Contenedor VSCT**  
   
- Un conjunto de identificadores de imagen para un archivo .vsct será similar al siguiente:  
+ Un conjunto de identificadores de las imágenes de un archivo .vsct será similar al siguiente:  
   
 ```xml  
 <?xml version='1.0' encoding='utf-8'?>  

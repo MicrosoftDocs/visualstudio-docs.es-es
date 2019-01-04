@@ -1,9 +1,6 @@
 ---
-title: 'Tutorial: Publicar una extensión de Visual Studio | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Publicación de una extensión de Visual Studio | Documentos de Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - publishing web controls
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae0b9d48e2a2292229b40e3aaf2a1c755e4c844e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0eef45253ff8d6aa0060c122c5003f8f239e73c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815746"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852458"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Tutorial: Publicar una extensión de Visual Studio
 
@@ -71,9 +68,9 @@ En este artículo usa una extensión predeterminada de VSPackage, pero los pasos
 
 6. Elija el editor que desee utilizar para cargar la extensión. Puede cambiar los publicadores, haga clic en los nombres de publicador que aparecen a la izquierda. Haga clic en **nueva extensión** y seleccione **Visual Studio**.
 
-7. En **1: cargar extensión**, puede elegir cargar un archivo VSIX directamente a Visual Studio Marketplace o agregar un vínculo a su propio sitio Web. En este ejemplo, la extensión, *TestPublish.vsix* se carga. Arrastre y coloque la extensión o use el **haga clic en** vínculo para buscar el archivo. Busque la extensión en la carpeta \bin\Release del proyecto.  Haga clic en **Continuar**.
+7. En **1: Cargar extensión**, puede elegir cargar un archivo VSIX directamente a Visual Studio Marketplace o agregar un vínculo a su propio sitio Web. En este ejemplo, la extensión, *TestPublish.vsix* se carga. Arrastre y coloque la extensión o use el **haga clic en** vínculo para buscar el archivo. Busque la extensión en la carpeta \bin\Release del proyecto.  Haga clic en **Continuar**.
 
-8. En **2: proporcionar detalles de la extensión**, algunos campos están rellena automáticamente desde el *source.extension.vsixmanifest* archivo desde la extensión. Encontrar más detalles sobre cada una a continuación:
+8. En **2: Proporcionar detalles de la extensión**, algunos campos están rellena automáticamente desde el *source.extension.vsixmanifest* archivo desde la extensión. Encontrar más detalles sobre cada una a continuación:
 
     * **Nombre interno** se usa en la dirección URL de página de detalles de la extensión. Para obtener un ejemplo, publicar una extensión en el nombre de publicador "MiNombre" y especificar el nombre interno para que sea "extensión my" da como resultado una dirección URL de "marketplace.visualstudio\.com/items?itemName=myname.myextension" para obtener información detallada de la extensión página.
     
@@ -123,13 +120,13 @@ Marketplace admite la concesión de permisos de usuarios adicionales para accede
 
 3. A continuación, puede especificar la dirección de correo electrónico del usuario que desea agregar y conceder el nivel adecuado de acceso bajo **seleccionar un rol**.  Puede elegir entre las siguientes opciones:
 
-   * **Creador**: el usuario puede publicar extensiones, pero no se puede ver o administrar extensiones publicadas por otros usuarios.
+   * **Creador**: El usuario puede publicar extensiones, pero no se puede ver o administrar extensiones publicadas por otros usuarios.
   
-   * **Lector**: el usuario puede ver las extensiones, pero no se puede publicar o administrar extensiones.
+   * **Lector**: El usuario puede ver las extensiones, pero no se puede publicar o administrar extensiones.
   
-   * **Colaborador**: el usuario puede publicar y administrar extensiones, pero no pueden editar la configuración del publicador ni administrar el acceso.
+   * **Colaborador**: El usuario puede publicar y administrar extensiones, pero no se puede editar la configuración del publicador o administrar el acceso.
   
-   * **Propietario**: el usuario puede publicar y administrar extensiones, editar la configuración del publicador y administrar el acceso.
+   * **Propietario**: El usuario puede publicar y administrar extensiones, editar la configuración del publicador y administrar el acceso.
   
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Instalar la extensión de Visual Studio Marketplace
 

@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: recorrer en iteración mediante programación los elementos encontrados en documentos'
-ms.custom: ''
+title: Procedimiento Recorrer en iteración mediante programación los elementos encontrados en documentos
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f36ddfa182d1a0440ca733b19c34a27b245007fc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2a04cf49d1414ae1cedf2d157237e53883182eb7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848064"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961847"
 ---
-# <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>Cómo: recorrer en iteración mediante programación los elementos encontrados en documentos
+# <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>Procedimiento Recorrer en iteración mediante programación los elementos encontrados en documentos
   La clase <xref:Microsoft.Office.Interop.Word.Find> tiene una propiedad <xref:Microsoft.Office.Interop.Word.Find.Found%2A> que devuelve el valor **true** cada vez que se encuentra el elemento buscado. Puede recorrer todas las instancias que se encuentran en un objeto <xref:Microsoft.Office.Interop.Word.Range> mediante el método <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> .  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -74,10 +71,8 @@ ms.locfileid: "49848064"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#78](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#78)]  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: buscar y reemplazar rext en documentos mediante programación](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
- [Cómo: establecer opciones de búsqueda en Word mediante programación](../vsto/how-to-programmatically-set-search-options-in-word.md)   
- [Cómo: definir y seleccionar rangos en documentos mediante programación](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Cómo: restaurar selecciones después de realizar búsquedas mediante programación](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
+ [Cómo: Buscar y reemplazar rext en documentos mediante programación](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
+ [Cómo: Establecer opciones de búsqueda en Word mediante programación](../vsto/how-to-programmatically-set-search-options-in-word.md)   
+ [Cómo: Definir y seleccionar rangos en documentos mediante programación](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Cómo: Restaurar selecciones después de realizar búsquedas mediante programación](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

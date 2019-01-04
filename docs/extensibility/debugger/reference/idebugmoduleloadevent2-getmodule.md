@@ -1,9 +1,6 @@
 ---
 title: IDebugModuleLoadEvent2::GetModule | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugModuleLoadEvent2::GetModule
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0a043b3842805357de685484fcc4daf935aefcc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f1b9170db806ac4b501d6acf7ad66f90be6aea75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906840"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892866"
 ---
 # <a name="idebugmoduleloadevent2getmodule"></a>IDebugModuleLoadEvent2::GetModule
 Obtiene el módulo que se carga o descarga.  
@@ -28,7 +25,7 @@ Obtiene el módulo que se carga o descarga.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT GetModule(   
+HRESULT GetModule(   
    IDebugModule2** pModule,  
    BSTR*           pbstrDebugMessage,  
    BOOL*           pbLoad  
@@ -36,7 +33,7 @@ HRESULT GetModule(
 ```  
   
 ```csharp  
-int GetModule(   
+int GetModule(   
    out IDebugModule2 pModule,  
    ref string        pbstrDebugMessage,  
    ref int           pbLoad  

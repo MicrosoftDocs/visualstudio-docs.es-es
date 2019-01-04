@@ -1,9 +1,6 @@
 ---
 title: IDebugProperty2::GetMemoryBytes | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProperty2::GetMemoryBytes
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b6b8b82067405e91f4d1d7fac4aeccd5e29ffa0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 80cd6e882e8131ed80e28cb90427a9c528487103
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948023"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53884677"
 ---
 # <a name="idebugproperty2getmemorybytes"></a>IDebugProperty2::GetMemoryBytes
 Obtiene los bytes de memoria que componen el valor de una propiedad.  
@@ -28,13 +25,13 @@ Obtiene los bytes de memoria que componen el valor de una propiedad.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT GetMemoryBytes (   
+HRESULT GetMemoryBytes (   
    IDebugMemoryBytes2** ppMemoryBytes  
 );  
 ```  
   
 ```csharp  
-int GetMemoryBytes (   
+int GetMemoryBytes (   
    out IDebugMemoryBytes2 ppMemoryBytes  
 );  
 ```  

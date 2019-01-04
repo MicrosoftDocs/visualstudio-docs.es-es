@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: proporcionar automatización para Windows | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Provisión de automatización para Windows | Documentos de Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], tool windows
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9158ac7d133d30ae5fbca0281cbc55138e041f6
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: eb5fe307cd477f1c1a30b402cce05850a1a35ae1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510743"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841244"
 ---
-# <a name="how-to-provide-automation-for-windows"></a>Cómo: proporcionar automatización para windows
+# <a name="how-to-provide-automation-for-windows"></a>Procedimiento Provisión de automatización para windows
 Puede proporcionar automatización para ventanas de herramientas y documentos. Proporcionar automatización es aconsejable cada vez que se desea disponer de los objetos de automatización en una ventana, y el entorno no proporciona un objeto de automatización listos para su uso, ya que lo hace con una lista de tareas.
 
 ## <a name="automation-for-tool-windows"></a>Automatización de las ventanas de herramientas

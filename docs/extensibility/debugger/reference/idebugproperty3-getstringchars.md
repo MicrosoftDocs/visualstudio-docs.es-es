@@ -1,9 +1,6 @@
 ---
 title: IDebugProperty3::GetStringChars | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProperty3::GetStringChars
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d6df39bcd02fe74e2c6ada24d341cd3d2fdfb75
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a0597d67e55cb458648b757ca0e222aee7b7a073
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932941"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927238"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 Recupera la cadena asociada a esta propiedad y lo almacena en un búfer proporcionado por el usuario.  

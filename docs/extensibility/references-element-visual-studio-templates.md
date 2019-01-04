@@ -1,6 +1,5 @@
 ---
 title: Hace referencia a elemento (plantillas de Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa4b760f9762c07ede4a21dbb37d00ef9f84dd59
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: b0da362b5c054ba5bb9b7266a3508ea73ca8dcaf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561988"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53884574"
 ---
 # <a name="references-element-visual-studio-templates"></a>Elemento References (plantillas de Visual Studio)
 Agrupa las referencias de ensamblado que la plantilla se agrega a los proyectos.  

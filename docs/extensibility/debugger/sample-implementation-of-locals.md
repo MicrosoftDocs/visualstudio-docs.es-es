@@ -1,9 +1,6 @@
 ---
 title: Ejemplo de implementación de las variables locales | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], local variables
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3faf3e42442db03bbb40bbc3e726b909956d4187
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 6245459636cb13a13d0ba088663457bce11373f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370875"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986653"
 ---
 # <a name="sample-implementation-of-locals"></a>Implementación de ejemplo de variables locales
 > [!IMPORTANT]

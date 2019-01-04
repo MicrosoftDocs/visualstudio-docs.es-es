@@ -3,8 +3,6 @@ title: '&lt;entryPointsCollection&gt; elemento (desarrollo de Office en Visual S
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 473168bea81b28de70b46baab6c3a1c7f3f0ea2e
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 5a8ae05669bcb7babedc74ad1d97e045a74f07f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803706"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933614"
 ---
 # <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;entryPointsCollection&gt; elemento (desarrollo de Office en Visual Studio)
   El elemento `entryPointsCollection` del espacio de nombres `vstav3` contiene todos los elementos `entryPoints` asociados a soluciones de Office.

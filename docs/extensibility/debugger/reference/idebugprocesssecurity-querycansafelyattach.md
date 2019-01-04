@@ -1,9 +1,6 @@
 ---
-title: IDebugProcessSecurity::QueryCanSafelyAttach | Documentos de Microsoft
-ms.custom: ''
+title: IDebugProcessSecurity::QueryCanSafelyAttach | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProcessSecurity::QueryCanSafelyAttach
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe132ddbd154e04e3cef1a20e826c3634c65bdb2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a9ecc1d7970fe8be98d199130db6e87847de3aee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114234"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839010"
 ---
 # <a name="idebugprocesssecurityquerycansafelyattach"></a>IDebugProcessSecurity::QueryCanSafelyAttach
-Este método permite que el proveedor del puerto mostrar una advertencia antes de que el usuario adjunta a un proceso no seguro.  
+Este método permite que el proveedor del puerto mostrar una advertencia antes de que el usuario se une a un proceso no seguro.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -36,11 +33,11 @@ int QueryCanSafelyAttach();
 ## <a name="return-value"></a>Valor devuelto  
  Los valores devueltos son como sigue:  
   
--   `S_OK`: Asociar al proceso es seguro para la ejecución y no se muestra ningún cuadro de diálogo de advertencia.  
+-   `S_OK`: Asociar al proceso es seguro y no se muestra ningún cuadro de diálogo de advertencia.  
   
--   `S_FALSE`: Asociar podría indicar un problema de seguridad y se muestra un cuadro de diálogo con una advertencia.  
+-   `S_FALSE`: Asociar podría ser un problema de seguridad y se muestra un cuadro de diálogo con una advertencia.  
   
--   `FAILURE`: Asociar al proceso se produce un error.  
+-   `FAILURE`: No se puede asociar al proceso.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

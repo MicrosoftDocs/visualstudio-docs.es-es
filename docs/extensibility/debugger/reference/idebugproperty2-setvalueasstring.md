@@ -1,9 +1,6 @@
 ---
 title: IDebugProperty2::SetValueAsString | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProperty2::SetValueAsString
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8f165ade12f6a4d8661ca4b0070efb1452ec09a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 22e4ccb3f02bcc98d13977553cbf9e6d6c32843b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903041"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871588"
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
 Establece el valor de una propiedad de una cadena determinada.  
@@ -28,7 +25,7 @@ Establece el valor de una propiedad de una cadena determinada.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT SetValueAsString (   
+HRESULT SetValueAsString (   
    LPCOLESTR pszValue,  
    UINT      nRadix,  
    DWORD     dwTimeout  
@@ -36,7 +33,7 @@ HRESULT SetValueAsString (
 ```  
   
 ```csharp  
-int SetValueAsString (   
+int SetValueAsString (   
    string pszValue,  
    uint   nRadix,  
    uint   dwTimeout  

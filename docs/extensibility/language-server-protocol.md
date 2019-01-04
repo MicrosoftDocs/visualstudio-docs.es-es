@@ -1,9 +1,6 @@
 ---
 title: Información general sobre el protocolo de servidor Language | Microsoft Docs
-ms.custom: ''
 ms.date: 11/14/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad0e802bd63a9d489a98eb9f216e6739e378d590
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1b2329b54ba90a37e0d6d5e782e66c4af923a646
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894864"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828230"
 ---
 # <a name="language-server-protocol"></a>Protocolo de servidor de lenguaje
 
@@ -52,13 +49,13 @@ A continuación se muestra un ejemplo de cómo se comunican una herramienta y un
 
 ![diagrama de flujo de LSP](media/lsp-flow-diagram.png)
 
-* **El usuario abre un archivo (conocido como un documento) en la herramienta**: la herramienta notifica al servidor de lenguaje que un documento está abierto (' textDocument/didOpen'). De ahora en adelante, la verdad sobre el contenido del documento ya no está en el sistema de archivos pero se mantiene mediante la herramienta en la memoria.
+* **El usuario abre un archivo (conocido como un documento) en la herramienta**: La herramienta notifica al servidor de lenguaje que un documento está abierto (' textDocument/didOpen'). De ahora en adelante, la verdad sobre el contenido del documento ya no está en el sistema de archivos pero se mantiene mediante la herramienta en la memoria.
 
-* **El usuario realiza modificaciones**: la herramienta notifica al servidor sobre el cambio de documento (' textDocument/didChange') y la información semántica del programa se actualiza el servidor de lenguaje. Como en este caso, el servidor de lenguaje analiza esta información y notifica a la herramienta con los errores detectados y advertencias (' textDocument/publishDiagnostics').
+* **El usuario realiza modificaciones**: La herramienta notifica al servidor sobre el cambio de documento (' textDocument/didChange') y la información semántica del programa se actualiza el servidor de lenguaje. Como en este caso, el servidor de lenguaje analiza esta información y notifica a la herramienta con los errores detectados y advertencias (' textDocument/publishDiagnostics').
 
-* **El usuario ejecuta "Ir a definición" en un símbolo en el editor**: la herramienta envía una solicitud de definición/textDocument con dos parámetros: (1) el identificador URI del documento y (2) la posición del texto desde donde se inició el ir a la solicitud de definición para el servidor. El servidor responde con el identificador URI del documento y la posición de la definición del símbolo dentro del documento.
+* **El usuario ejecuta "Ir a definición" en un símbolo en el editor de**: La herramienta envía una solicitud de definición/textDocument con dos parámetros: (1) el identificador URI del documento y (2) la posición del texto desde donde se inició el ir a la solicitud de definición para el servidor. El servidor responde con el identificador URI del documento y la posición de la definición del símbolo dentro del documento.
 
-* **El usuario cierra el documento (archivo)**: se envía una notificación de ' textDocument/didClose' de la herramienta, que informa el servidor de lenguaje que el documento está ahora ya no en memoria y que el contenido actual es ahora actualizadas en el sistema de archivos.
+* **El usuario cierra el documento (archivo)**: Se envía una notificación de ' textDocument/didClose' de la herramienta, que informa al servidor de lenguaje que el documento está ahora ya no en memoria y que el contenido actual es ahora actualizadas en el sistema de archivos.
 
 En este ejemplo se muestra cómo se comunica el protocolo con el servidor de lenguaje en el nivel de características del editor como "Ir a definición", "Buscar todas las referencias". Los tipos de datos usados por el protocolo están editor o IDE 'tipos de datos' como el documento de texto abierto actualmente y la posición del cursor. Los tipos de datos no están en el nivel de un modelo de dominio programación de lenguaje que normalmente proporcionaría los árboles de sintaxis abstracta y los símbolos del compilador (por ejemplo, resolver tipos, espacios de nombres,...). Esto simplifica significativamente el protocolo.
 

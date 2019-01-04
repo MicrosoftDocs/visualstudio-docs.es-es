@@ -1,13 +1,8 @@
 ---
 title: Empaquetar e implementar soluciones de SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c5993f09581faf6e3cedb4c71598ea26b16b699
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c1213d4dd2cdd347fe1d29f594fa7614df50b1e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863274"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849024"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Empaquetar e implementar soluciones de SharePoint
   Normalmente, una solución de SharePoint se implementa en un servidor de SharePoint mediante un archivo de paquete (.wsp) de la solución. Puede usar Visual Studio para organizar los elementos de proyecto de SharePoint en características y crear un paquete para implementar las características de SharePoint.  
@@ -40,9 +35,9 @@ ms.locfileid: "49863274"
 -   [Implementar archivos en soluciones de SharePoint](#DeployingFiles)  
   
 ## <a name="create-features-and-packages"></a>Creación de paquetes y características
- Puede usar Visual Studio para agrupar elementos relacionados de SharePoint en un *característica*. Por ejemplo, una característica para una definición de lista de contactos puede incluir la instancia de lista y la definición de lista. Puede combinar estos dos elementos en una sola característica para la implementación. Para obtener más información acerca de las características, consulte [bloques de creación: características](http://go.microsoft.com/fwlink/?LinkID=169183).  
+ Puede usar Visual Studio para agrupar elementos relacionados de SharePoint en un *característica*. Por ejemplo, una característica para una definición de lista de contactos puede incluir la instancia de lista y la definición de lista. Puede combinar estos dos elementos en una sola característica para la implementación. Para obtener más información acerca de las características, consulte [bloques de creación: Características](http://go.microsoft.com/fwlink/?LinkID=169183).  
   
- A continuación, puede crear un paquete de solución de SharePoint (*.wsp*) para agrupar varias características, definiciones, ensamblados y otros archivos de sitio en un paquete único, que almacena los archivos en un formato que necesita SharePoint para implementar los archivos en el servidor. Para obtener más información, consulte [bloques de creación: soluciones](http://go.microsoft.com/fwlink/?LinkID=169186).  
+ A continuación, puede crear un paquete de solución de SharePoint (*.wsp*) para agrupar varias características, definiciones, ensamblados y otros archivos de sitio en un paquete único, que almacena los archivos en un formato que necesita SharePoint para implementar los archivos en el servidor. Para obtener más información, consulte [bloques de creación: Soluciones](http://go.microsoft.com/fwlink/?LinkID=169186).  
   
 ## <a name="feature-and-packaging-tool-support"></a>Características y compatibilidad con la herramienta de empaquetado
  Puede usar las herramientas de desarrollo de SharePoint en Visual Studio para organizar rápidamente los archivos de SharePoint en características y paquetes de soluciones para una implementación más sencilla. Puede usar las herramientas siguientes para configurar el paquete de características y soluciones.  
@@ -81,9 +76,9 @@ ms.locfileid: "49863274"
   
   Las herramientas de desarrollo de SharePoint en Visual Studio tienen reglas de validación para ayudar a garantizar que el paquete de solución está formado correctamente. Además, las reglas comprueban que el *.wsp* archivo de solución se puede implementar y activar en un servidor de SharePoint correctamente. Para obtener más información acerca del esquema XML para las características, consulte [característica esquemas](http://go.microsoft.com/fwlink/?LinkID=169192).  
   
-  Puede agregar la característica personalizada y las reglas de validación del paquete al sistema del proyecto de SharePoint. Para obtener más información, consulte [Cómo: crear características personalizadas y un paquete de reglas de validación para las soluciones de SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).  
+  Puede agregar la característica personalizada y las reglas de validación del paquete al sistema del proyecto de SharePoint. Para obtener más información, vea [Cómo: Creación de reglas de validación para las soluciones de SharePoint de características y paquetes](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).  
   
-  Para obtener más información sobre el Explorador de empaquetado, consulte [Cómo: agregar y quitar características y elementos de un paquete mediante el Explorador de empaquetado](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
+  Para obtener más información sobre el Explorador de empaquetado, vea [Cómo: Agregar y quitar características y elementos de un paquete mediante el Explorador de empaquetado](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
   
 ### <a name="solution-explorer"></a>Explorador de soluciones
  Puede usar el Explorador de soluciones para navegar y abrir los archivos del proyecto de SharePoint. Use el menú contextual en el Explorador de soluciones para agregar características, receptores de eventos y los recursos de características. Además, puede abrir los diseñadores de características y los diseñadores de paquetes para configurar las características y paquetes para la implementación.  
@@ -109,4 +104,3 @@ ms.locfileid: "49863274"
 ## <a name="see-also"></a>Vea también
  [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Build and debug SharePoint solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md) (Compilar y depurar las soluciones de SharePoint)  
-  

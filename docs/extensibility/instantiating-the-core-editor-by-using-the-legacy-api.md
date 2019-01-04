@@ -1,9 +1,6 @@
 ---
 title: El Editor básico de creación de instancias mediante la API heredada | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - instantiating editor
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59642b934f82990ce50f6dabaa38a97f34575997
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14583d242c260e4b0f1a754d53faf35b645be666
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941573"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838169"
 ---
 # <a name="instantiate-the-core-editor-by-using-the-legacy-api"></a>Crear una instancia el editor básico mediante la API heredada
 El editor es responsable de las funciones como inserción, eliminación, copiar y pegar de edición de texto. Combina estas funciones con las funciones proporcionadas por los servicios de lenguaje, como el color de texto, sangría y finalización de instrucciones de IntelliSense.  
@@ -65,7 +62,7 @@ El editor es responsable de las funciones como inserción, eliminación, copiar 
   
  Si el <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> método devuelve el mismo comando GUID como el editor de texto, la instancia del editor de núcleo obtiene automáticamente el valor predeterminado teclas de método abreviado.  
   
- Para obtener información general, consulte [Tutorial: crear un núcleo de editor y registrar un tipo de archivo del editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md).  
+ Para obtener información general, consulte [Tutorial: Creación de un núcleo de editor y registrar un tipo de archivo del editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Dentro del editor de núcleo](../extensibility/inside-the-core-editor.md)   

@@ -3,19 +3,18 @@ title: Diseñador de flujo de trabajo - diseñadores de actividades Flowchart
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: 8b7b4aa6-d27d-45c8-87c2-641440d38afc
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef7fc3e956c6b31b1df8346e9b347ca3e094d878
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: d1e07cb0de11136649aabc7937a6cc2bcb1ceacc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755725"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857885"
 ---
 # <a name="flowchart-activity-designers"></a>Diseñadores de actividades Flowchart
 
@@ -37,7 +36,7 @@ Diseñador de flujo de trabajo incluye una serie de actividades proporcionadas p
 
  [Usar los diseñadores de actividad](../workflow-designer/using-the-activity-designers.md)
 
- [Mensajería](../workflow-designer/messaging-activity-designers.md)
+ [Messaging](../workflow-designer/messaging-activity-designers.md)
 
  [Tiempo de ejecución](../workflow-designer/runtime-activity-designers.md)
 

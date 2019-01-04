@@ -1,9 +1,6 @@
 ---
 title: Solución (. Los archivos sln) | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - sln files, VSPackages
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f01657d1053f2172f421bf6e265aa836f930c438
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0c7879f019be8eb151d3274eb7d69aa5b947427b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864938"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935871"
 ---
 # <a name="solution-sln-file"></a>Archivo de la solución (.Sln)
 Una solución es una estructura para organizar los proyectos en Visual Studio. La solución mantiene la información de estado para los proyectos de .sln (basado en texto, compartido) y archivos .suo (opciones de solución binarios específicos del usuario). Para obtener más información sobre .suo (archivos), consulte [opciones de usuario de la solución (. Archivo suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  

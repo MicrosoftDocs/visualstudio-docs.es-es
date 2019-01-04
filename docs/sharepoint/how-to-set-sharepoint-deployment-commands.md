@@ -1,13 +1,8 @@
 ---
-title: 'Cómo: establecer comandos de implementación de SharePoint | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Establecer comandos de implementación de SharePoint | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 060acd0164ff7819d2abfb8d92f2394b4bcc0672
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 98aedc0c7fa557a45b43ab8344a49587b8febec1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119970"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920370"
 ---
-# <a name="how-to-set-sharepoint-deployment-commands"></a>Cómo: comandos de implementación del conjunto de SharePoint
+# <a name="how-to-set-sharepoint-deployment-commands"></a>Procedimiento Establecer comandos de implementación de SharePoint
   Puede personalizar el proceso de implementación mediante el establecimiento de los comandos anteriores y posteriores a la implementación. Estos comandos se ejecutan antes y después de otras acciones de implementación al depurar soluciones de SharePoint en Visual Studio.  
   
 ### <a name="to-add-a-pre-deployment-command"></a>Para agregar un comando anterior a la implementación  
@@ -49,4 +44,3 @@ ms.locfileid: "37119970"
   
 ## <a name="see-also"></a>Vea también
  [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

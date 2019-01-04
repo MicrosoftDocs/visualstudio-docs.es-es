@@ -1,9 +1,6 @@
 ---
 title: IDebugPortEx2::ResumeProcess | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPortEx2::ResumeProcess
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47364a88ca5e49a691120b198ce32b74e9d895d8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fbef6d7c6bf6640531f69996dd421c8400dbe356
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905550"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866730"
 ---
 # <a name="idebugportex2resumeprocess"></a>IDebugPortEx2::ResumeProcess
 Reanuda la ejecución de un proceso.  
@@ -28,13 +25,13 @@ Reanuda la ejecución de un proceso.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT ResumeProcess(   
+HRESULT ResumeProcess(   
    IDebugProcess2* pPortProcess  
 );  
 ```  
   
 ```cpp  
-int ResumeProcess(   
+int ResumeProcess(   
    IDebugProcess2 pPortProcess  
 );  
 ```  

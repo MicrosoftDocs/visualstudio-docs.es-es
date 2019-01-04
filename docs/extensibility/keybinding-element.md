@@ -1,9 +1,6 @@
 ---
 title: Elemento de enlace de teclado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77fb94e702615d0d27ce2587c034000f6c4b3e3d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c401b1f5179fa03dbd43ffbcff3bd2f0151340c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905108"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931679"
 ---
 # <a name="keybinding-element"></a>KeyBinding (elemento)
 El elemento de enlace de teclado especifica métodos abreviados de teclado para los comandos.  
@@ -39,10 +36,10 @@ El elemento de enlace de teclado especifica métodos abreviados de teclado para 
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|guid|Requerido.|  
-|id|Requerido.|  
-|editor|Requerido. El GUID de editor indica el contexto de edición para el que este método abreviado de teclado estará activa. El valor de ámbito de enlace global es "guidVSStd97".|  
-|key1|Requerido. Los valores válidos incluyen caracteres alfanuméricos clasificable todo por tipo y también valores hexadecimales de dos dígitos precedidos por 0 x y [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
+|guid|Obligatorio.|  
+|id|Obligatorio.|  
+|editor|Obligatorio. El GUID de editor indica el contexto de edición para el que este método abreviado de teclado estará activa. El valor de ámbito de enlace global es "guidVSStd97".|  
+|key1|Obligatorio. Los valores válidos incluyen caracteres alfanuméricos clasificable todo por tipo y también valores hexadecimales de dos dígitos precedidos por 0 x y [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
 |MOD1|Opcional. Cualquier combinación de **Ctrl**, **Alt**, y **MAYÚS** separados por espacios.|  
 |key2|Opcional. Los valores válidos incluyen caracteres alfanuméricos clasificable todo por tipo y también valores hexadecimales de dos dígitos precedidos por 0 x y [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
 |MOD2|Opcional. Cualquier combinación de **Ctrl**, **Alt**, y **MAYÚS** separados por espacios.|  

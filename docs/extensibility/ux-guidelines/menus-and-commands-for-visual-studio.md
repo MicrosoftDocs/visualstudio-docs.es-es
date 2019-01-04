@@ -1,9 +1,6 @@
 ---
 title: Menús y comandos para Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f5686f96ce0125cac98ca08582e8407c4e1e926
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bddedab69583c8ec4ff809810e049a4aff2046ee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937959"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933804"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menús y comandos para Visual Studio
 ## <a name="command-usage"></a>Uso del comando  
@@ -52,7 +49,7 @@ ms.locfileid: "49937959"
  Es útil colocar los comandos de cerca el área de enfoque del usuario. Una manera de hacerlo es crear una barra de herramientas incrustada en la parte superior del documento o ventana de herramienta del editor. Los comandos que se coloca en la barra de herramientas deben ser específicos para el área de contenido dentro de la ventana. No se duplican los comandos compartidos en estas barras de herramientas. Por ejemplo, no coloque nunca un icono de "Guardar" dentro de una barra de herramientas incrustada.  
   
 ### <a name="content-and-command-visibility"></a>Visibilidad de comandos y contenida  
- Existen comandos en los siguientes ámbitos: **entorno**, **jerarquía**, y **documento**. Conocer cada ámbito para tener confianza en la ubicación del comando.  
+ Los comandos se encuentran en los siguientes ámbitos: **Entorno**, **jerarquía**, y **documento**. Conocer cada ámbito para tener confianza en la ubicación del comando.  
   
  Los comandos de la **entorno** ámbito establecer el contexto principal y se comparten entre varios contextos. Se modifica la visibilidad o la disposición de los documentos y ventanas de herramientas. Entre los comandos en el entorno de ámbito son **nuevo proyecto**, **conectar al servidor**, **asociar proceso**, **cortar**,  **Copia**, **pegar**, **buscar**, **opciones**, **personalizar**, **nueva ventana**, y **ver Ayuda**.  
   
@@ -284,7 +281,7 @@ ms.locfileid: "49937959"
   
 - **Siga las instrucciones de Windows para determinar qué modificador teclas emplear.** Usar combinaciones de teclas Ctrl para los comandos que tienen efectos a gran escala, como los comandos que se aplican a todo el documento. Usar combinaciones de teclas de desplazamiento para los comandos que amplían o complementan las acciones de tecla de método abreviado estándar. No use combinaciones Ctrl + Alt.  
   
-- **Quitar accesos directos extraños.** Si tiene una característica heredada, considere la posibilidad de quitar los accesos directos que se utilizan con poca extreme (que tenga menos de 10 veces en los datos del CEIP) o poca moderado (que tenga menos de 100 veces desde los datos del CEIP) si una clave de acceso proporciona acceso rápido al mismo comando. Por ejemplo: C Alt, H, abrirá el contenido de ayuda.  
+- **Quitar accesos directos extraños.** Si tiene una característica heredada, considere la posibilidad de quitar los accesos directos que se utilizan con poca extreme (que tenga menos de 10 veces en los datos del CEIP) o poca moderado (que tenga menos de 100 veces desde los datos del CEIP) si una clave de acceso proporciona acceso rápido al mismo comando. Por ejemplo: C ALT, H, abrirá y contenido de la Ayuda.  
   
   No es una manera sencilla de comprobar la disponibilidad de acceso directo. Si desea agregar un acceso directo, siga estos pasos:  
   

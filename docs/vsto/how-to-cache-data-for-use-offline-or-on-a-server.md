@@ -1,9 +1,6 @@
 ---
 title: Procedimiento Almacenar en caché datos para su uso sin conexión o en un servidor
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 671b4c18963be4f9c81e15fe33e5d68a410655c9
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: b72748a4f37aa89fd12ba8751800fa9cb3c7be84
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804661"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939429"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Procedimiento Almacenar en caché datos para su uso sin conexión o en un servidor
   Puede marcar un elemento de datos en la memoria caché en el documento, por lo que esté disponible sin conexión. Esto también permite para los datos en el documento que se va a ser manipulados por otro código cuando el documento está almacenado en un servidor.

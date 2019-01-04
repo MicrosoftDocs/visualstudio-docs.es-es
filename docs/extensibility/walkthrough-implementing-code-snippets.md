@@ -1,9 +1,6 @@
 ---
-title: 'Tutorial: Implementación de fragmentos de código | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Implementación de fragmentos de código | Documentos de Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd4a22dc63f0304cc8afa98e35c5f7afd6cac011
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4866f028851fadbee9f8ab5dbd6d4dc50015a728
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921999"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902193"
 ---
-# <a name="walkthrough-implement-code-snippets"></a>Tutorial: Fragmentos de código de implementación
+# <a name="walkthrough-implement-code-snippets"></a>Tutorial: Implementar los fragmentos de código
 Puede crear fragmentos de código e incluirlos en una extensión del editor para que los usuarios de la extensión pueden agregarlas a su propio código.  
   
  Un fragmento de código es un fragmento de código u otro texto que se puede incorporar en un archivo. Para ver todos los fragmentos de código que se han registrado para lenguajes de programación determinados, en el **herramientas** menú, haga clic en **Administrador de fragmentos de código**. Para insertar un fragmento de código en un archivo, contextual donde desea que el fragmento de código, haga clic en Insertar fragmento de código o **rodear con**, localice el fragmento de código que desee y, a continuación, haga doble clic en él. Presione **ficha** o **MAYÚS**+**ficha** para modificar las partes relevantes del fragmento de código y, a continuación, presione **ENTRAR** o **Esc** a aceptarla. Para obtener más información, consulte [fragmentos de código](../ide/code-snippets.md).  
@@ -33,7 +30,7 @@ Puede crear fragmentos de código e incluirlos en una extensión del editor para
   
 3. Implementar la expansión del fragmento de código.  
   
-   En este tutorial se basa en [Tutorial: mostrar la finalización de instrucciones](../extensibility/walkthrough-displaying-statement-completion.md).  
+   En este tutorial se basa en [Tutorial: Mostrar la finalización de instrucciones](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Ha incluido como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -112,7 +109,7 @@ Puede crear fragmentos de código e incluirlos en una extensión del editor para
   
 ### <a name="to-register-code-snippets-for-a-specific-guid"></a>Para registrar los fragmentos de código para un GUID específico  
   
-1.  Abra el **CompletionTest** proyecto. Para obtener información sobre cómo crear este proyecto, vea [Tutorial: mostrar la finalización de instrucciones](../extensibility/walkthrough-displaying-statement-completion.md).  
+1.  Abra el **CompletionTest** proyecto. Para obtener información sobre cómo crear este proyecto, vea [Tutorial: Mostrar la finalización de instrucciones](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 2.  En el proyecto, agregue referencias a los ensamblados siguientes:  
   
