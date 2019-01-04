@@ -1,9 +1,6 @@
 ---
 title: Creación de soluciones de flujo de trabajo de SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VSTO.NewSharePointWorkflowWizard.Page3
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0dd8a1339dddc52326bf7b0e42d52c1eaa53e6cf
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: b0a1e4d1e3aa548d51225ac50dacf78b73e1efae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802503"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820509"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Crear soluciones de flujo de trabajo de SharePoint
 
