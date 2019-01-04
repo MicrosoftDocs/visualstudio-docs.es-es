@@ -1,9 +1,6 @@
 ---
 title: IDebugEnumField::GetStringFromValue | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEnumField::GetStringFromValue
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9c1bd0887c8d154501a87ea9a2227e079bbb083
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb3fc6a0e8aab20659abe7a2d8601f478f948a9b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872764"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877411"
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
 Este método obtiene el nombre de la constante de enumeración dada su valor.  

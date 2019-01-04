@@ -1,9 +1,6 @@
 ---
 title: Utilidad CreatePkgDef | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - package definition
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47fee24292ee92b34cea6add21bc220a1a17f135
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c5c18e77405cd4e48c89d3b481937c7d837488cd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867668"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910940"
 ---
 # <a name="createpkgdef-utility"></a>Utilidad CreatePkgDef
 Toma un archivo .dll para una extensión de Visual Studio como un parámetro y crea un *.pkgdef* archivo para acompañar la *.dll* archivo. El *.pkgdef* archivo contiene toda la información en caso contrario, se escribiría en el registro del sistema cuando se instala la extensión.  
@@ -37,7 +34,7 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
   
 ## <a name="arguments"></a>Argumentos  
  **/ out =&lt;nombre de archivo&gt;**  
- Requerido. Establece el nombre de la *.pkgdef* archivo de salida &lt;FileName&gt;.  
+ Obligatorio. Establece el nombre de la *.pkgdef* archivo de salida &lt;FileName&gt;.  
   
  **/codebase**  
  Opcional. Fuerza el registro con el **CodeBase** utilidad.  

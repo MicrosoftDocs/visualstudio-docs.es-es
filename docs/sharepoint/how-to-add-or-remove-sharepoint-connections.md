@@ -1,13 +1,8 @@
 ---
-title: 'Cómo: agregar o quitar conexiones de SharePoint | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Agregar o quitar conexiones de SharePoint | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 17f1b1ccdee75a379dfc7bce42df2b5a117bdd2e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 02c0aa0f6b2af5123939a396f9b0ac9dc6febd17
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755420"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941958"
 ---
-# <a name="how-to-add-or-remove-sharepoint-connections"></a>Cómo: agregar o quitar conexiones de SharePoint
+# <a name="how-to-add-or-remove-sharepoint-connections"></a>Procedimiento Agregar o quitar conexiones de SharePoint
   Explorador de servidores le permite examinar los sitios de SharePoint, así como las conexiones de datos. Sin embargo, para poder examinar el contenido de un sitio de SharePoint debe agregarlo a la **conexiones de SharePoint** nodo.  
   
 ### <a name="to-add-a-sharepoint-site-to-the-sharepoint-connections-node"></a>Para agregar un sitio de SharePoint para el nodo Conexiones de SharePoint
@@ -50,4 +45,3 @@ ms.locfileid: "36755420"
   
 ## <a name="see-also"></a>Vea también
  [Examinar las conexiones de SharePoint mediante el Explorador de servidores](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)  
-  

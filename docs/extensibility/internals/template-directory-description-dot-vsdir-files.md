@@ -1,9 +1,6 @@
 ---
 title: Descripción del directorio de plantilla (. Archivos VSDir) | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - .vsdir files
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67e2cf5dcb898614750aecd7e4fe997fbde0b5cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4ff1c9d1557722b31a4375c3189b788968c2b198
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938440"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925214"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Archivos de descripción del directorio de plantilla (.Vsdir)
 Un archivo de descripción del directorio de plantilla (.vsdir) es un archivo de texto que permite que el entorno de desarrollo integrado (IDE) para mostrar las carpetas, archivos .vsz del asistente y archivos de plantilla que están asociados con el proyecto en los cuadros de diálogo. El contenido incluye un registro por cada archivo o carpeta. Se combinan todos los archivos .vsdir en una ubicación que se hace referencia, aunque generalmente se proporciona solo un archivo .vsdir para describir varias carpetas, los asistentes o los archivos de plantilla.  
@@ -43,8 +40,8 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 | Campo | Descripción |
 | - | - |
 | Nombre de ruta de acceso relativa (RelPathName) | El nombre del archivo .vsz, plantilla o carpeta, como HeaderFile.h o MyWizard.vsz. Este campo también puede ser un nombre que se utiliza para representar una carpeta. |
-| {clsidPackage} | El GUID del VSPackage que permite el acceso a las cadenas localizadas, como LocalizedName, descripción, IconResourceId y SuggestedBaseName, en recursos de biblioteca (DLL) de vínculos dinámicos de satélite de VSPackage. IconResourceId se aplica si no se proporciona DLLPath. **Nota:** este campo es opcional, a menos que uno o varios de los campos anteriores son un identificador de recurso. Este campo está normalmente en blanco para los archivos .vsdir que se corresponden con asistentes de terceros que no traduzca su texto. |
-| LocalizedName | El nombre localizado del asistente o archivo de plantilla. Este campo puede ser una cadena o un identificador de recursos de la forma "#ResID". Este nombre se muestra en el **Agregar nuevo elemento** cuadro de diálogo. **Nota:** si LocalizedName es un identificador de recurso, se requiere {clsidPackage}. |
+| {clsidPackage} | El GUID del VSPackage que permite el acceso a las cadenas localizadas, como LocalizedName, descripción, IconResourceId y SuggestedBaseName, en recursos de biblioteca (DLL) de vínculos dinámicos de satélite de VSPackage. IconResourceId se aplica si no se proporciona DLLPath. **Nota:**  Este campo es opcional, a menos que uno o varios de los campos anteriores son un identificador de recurso. Este campo está normalmente en blanco para los archivos .vsdir que se corresponden con asistentes de terceros que no traduzca su texto. |
+| LocalizedName | El nombre localizado del asistente o archivo de plantilla. Este campo puede ser una cadena o un identificador de recursos de la forma "#ResID". Este nombre se muestra en el **Agregar nuevo elemento** cuadro de diálogo. **Nota:**  Si LocalizedName es un identificador de recurso, a continuación, se requiere {clsidPackage}. |
 | SortPriority | Entero que representa la prioridad relativa de este archivo de plantilla o el asistente. Por ejemplo, si este elemento tiene un valor de 1, este artículo se muestra junto a otros elementos con un valor de 1 y por delante de todos los elementos con un valor de ordenación de 2 o superior.<br /><br /> Prioridad de ordenación es relativo a los elementos en el mismo directorio. Puede haber más de un archivo VSDir en el mismo directorio. En ese caso, los elementos de todos los <em>.</em> se combinan archivos VSDir en ese directorio. Los elementos con la misma prioridad se muestran en orden lexicográfico entre mayúsculas y minúsculas del nombre mostrado. El `_wcsicmp` función se usa para ordenar los elementos.<br /><br /> Los elementos que no se describe en los archivos .vsdir incluyen un número de prioridad mayor que el número de prioridad más alto en los archivos .vsdir. El resultado es que estos elementos están al final de la lista mostrada, independientemente de su nombre. |
 | Descripción | La descripción localizada del archivo de plantilla o asistente. Este campo puede ser una cadena o un identificador de recursos de la forma "#ResID". Esta cadena aparece en la **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo cuando se selecciona el elemento. |
 | DLLPath o {clsidPackage} | Se usa para cargar un icono para el archivo de plantilla o el asistente. El icono se carga como un recurso fuera de un archivo .dll o .exe mediante la IconResourceId. Este archivo .dll o .exe puede identificarse mediante el uso de una ruta de acceso completa o mediante el uso de un GUID de un paquete VSPackage. La implementación del archivo DLL del VSPackage se usa para cargar el icono (no el archivo DLL de satélite). |

@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: importar un tema o página maestra | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Importar un tema o página maestra | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,15 +13,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 116ab878d8591fb15bfbb319b2c1d79952fbd0e7
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7341d12571143d2725b3dd05e5d8e9f03c7d9125
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119903"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952931"
 ---
-# <a name="how-to-import-a-master-page-or-theme"></a>Cómo: importar un tema o página maestra
-  Puede dar las páginas en el sitio de SharePoint una apariencia coherente mediante la creación y uso de temas y las páginas maestras. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] no proporciona plantillas para estos elementos, pero puede crearlas en SharePoint Designer y, a continuación, importarlos en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obtener más información, consulte [bloques de creación: interfaz de usuario y las páginas](http://go.microsoft.com/fwlink/?LinkID=182095) en el sitio Web de Microsoft.  
+# <a name="how-to-import-a-master-page-or-theme"></a>Procedimiento Importar un tema o página maestra
+  Puede dar las páginas en el sitio de SharePoint una apariencia coherente mediante la creación y uso de temas y las páginas maestras. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] no proporciona plantillas para estos elementos, pero puede crearlas en SharePoint Designer y, a continuación, importarlos en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obtener más información, consulte [bloques de creación: Interfaz de usuario y las páginas](http://go.microsoft.com/fwlink/?LinkID=182095) en el sitio Web de Microsoft.  
   
 ### <a name="to-import-a-master-page-or-theme"></a>Para importar un tema o página maestra  
   
@@ -51,7 +48,7 @@ ms.locfileid: "37119903"
 8.  Si ha agregado una página maestra, cambiar su **Deployment Conflict Resolution** si se establece en **automática** en las propiedades del módulo.  
   
     > [!NOTE]  
-    >  Pueden producirse errores si el nombre de la página maestra es el mismo que el nombre de una página principal existente que está marcado como página maestra predeterminada o página maestra personalizada. Para obtener información sobre cómo resolver este problema, consulte [Tutorial: importar una página maestra personalizada y la página del sitio con una imagen](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).  
+    >  Pueden producirse errores si el nombre de la página maestra es el mismo que el nombre de una página principal existente que está marcado como página maestra predeterminada o página maestra personalizada. Para obtener información sobre cómo resolver este problema, consulte [Tutorial: Importar una página maestra personalizada y la página del sitio con una imagen](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).  
   
 9. En el módulo, abra *Elements.xml*.  
   
@@ -97,4 +94,3 @@ ms.locfileid: "37119903"
  [Importar elementos de un sitio de SharePoint existente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [Crear páginas para SharePoint](../sharepoint/creating-pages-for-sharepoint.md)   
  [Utilizar módulos para incluir archivos en la solución](../sharepoint/using-modules-to-include-files-in-the-solution.md)  
-  

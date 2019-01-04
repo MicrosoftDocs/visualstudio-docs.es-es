@@ -2,7 +2,6 @@
 title: Varios, XML, Editor de texto, Cuadro de diálogo Opciones
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: fd3fff31-cddc-422d-a2f0-a5a1ef492afd
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd6ee70f99f3b82505d210ab95f8359b5c7f90c8
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 85af563d9fb20b12785a410cf7df7e612d17dbee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571775"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941406"
 ---
 # <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>Varios, XML, Editor de texto, cuadro de diálogo Opciones
 
@@ -67,7 +66,7 @@ Este cuadro de diálogo permite cambiar las opciones de finalización automátic
 ## <a name="caching"></a>Almacenamiento en memoria caché
  **Esquemas**
 
- Especifica la ubicación de la caché de esquema. El botón Examinar (**...** ) se abre el **mostrar directorios** cuadro de diálogo en la ubicación de caché de esquema actual. Puede seleccionar un directorio diferente, o puede seleccionar una carpeta en el cuadro de diálogo secundario y elija **abiertos** para ver las novedades en el directorio.
+ Especifica la ubicación de la caché de esquema. El botón Examinar (**...** ) se abre el **Examinar directorio** cuadro de diálogo en la ubicación de caché de esquema actual. Puede seleccionar un directorio diferente, o puede seleccionar una carpeta en el cuadro de diálogo con el botón secundario y elija **abierto** ver lo que hay en el directorio.
 
 ## <a name="see-also"></a>Vea también
 

@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e1fd3b1cd19efa9032b7b92576a489e3b17373db
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 01aee6de65f1ddc0db16b0ebe527fb3d4d5480ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919345"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958818"
 ---
 # <a name="develop-tests-from-a-model"></a>Desarrollar pruebas en un modelo
 Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a organizar las pruebas del sistema y sus componentes. Con esta práctica, tendrá la certeza de que incluye en la prueba los requisitos que son importantes para los usuarios y otras partes interesadas, y podrá actualizar las pruebas rápidamente cuando cambien los requisitos. Si usa [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], también puede mantener vínculos entre los modelos y las pruebas.
@@ -52,7 +51,7 @@ Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a orga
 
     -   Si el plan de desarrollo implementa un aspecto del caso de uso antes que otro, puede habilitar las pruebas de forma independiente a medida que progresa el desarrollo.
 
--   Cuando diseñe las pruebas, separe los datos de la prueba que ha elegido del código o del script que determina si se ha logrado la condición posterior. Por ejemplo, la prueba de una función aritmética sencilla podría ser: escribir 4; comprobar que el resultado es 2. En lugar de ello, diseñe el script del siguiente modo: elegir una entrada; multiplicar la salida por sí misma y comprobar que el resultado es la entrada original. Este estilo permite variar las entradas de prueba sin cambiar el cuerpo principal de la prueba.
+-   Cuando diseñe las pruebas, separe los datos de la prueba que ha elegido del código o del script que determina si se ha logrado la condición posterior. Por ejemplo, una prueba de una función aritmética sencilla podría ser: Entrada 4; Compruebe que el resultado es 2. En su lugar, diseñe el script como: Elija una entrada; multiplique el resultado por sí mismo y compruebe que el resultado es la entrada original. Este estilo permite variar las entradas de prueba sin cambiar el cuerpo principal de la prueba.
 
 #### <a name="linking-tests-to-use-cases"></a>Vincular pruebas a casos de uso
  Si usas [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] para diseñar y ejecutar las pruebas, puede organizar las pruebas en el requisito, caso de uso o elementos de trabajo de caso de usuario. Puede vincular estos elementos de trabajo a casos de uso en el modelo. Esto le permite realizar un seguimiento rápido de los cambios en los requisitos de las pruebas y le ayuda a supervisar el progreso de cada caso de uso.

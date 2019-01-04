@@ -1,9 +1,6 @@
 ---
 title: IDebugSymbolProvider | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugSymbolProvider
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: de77e30f0e9f52af10eef1757048a078d6d4a583
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 419712760d6920874fa89e0da80cc1529f767f1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121159"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840374"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
-Esta interfaz representa un proveedor de símbolos que proporciona tipos, devolverlos como campos y símbolos.  
+Esta interfaz representa un proveedor de símbolos que proporciona los símbolos y tipos, devolverlos como campos.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -32,10 +29,10 @@ IDebugSymbolProvider : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Notas para los implementadores  
- Un proveedor de símbolos debe implementar esta interfaz para proporcionar los símbolos y escriba la información a un evaluador de expresiones.  
+ Un proveedor de símbolos debe implementar esta interfaz para proporcionar símbolos y escriba la información a un evaluador de expresiones.  
   
 ## <a name="notes-for-callers"></a>Notas para los llamadores  
- Esta interfaz se obtiene mediante el uso de COM `CoCreateInstance` función (para los proveedores de símbolos no administrado) o mediante la carga de la correspondiente administrados de ensamblado de código y creación de instancias del proveedor de símbolos en función de la información que se encuentra en ese ensamblado. El motor de depuración crea el proveedor de símbolos para trabajar conjuntamente con el evaluador de expresiones. Vea el ejemplo de un enfoque para crear instancias de esta interfaz.  
+ Esta interfaz se obtiene mediante el uso de COM `CoCreateInstance` función (por proveedores de símbolos no administrado) o cargando adecuado administrados ensamblado de código y crear instancias del proveedor de símbolos según la información encontrada en ese ensamblado. El motor de depuración crea el proveedor de símbolos para que funcione en coordinación con el evaluador de expresiones. Vea el ejemplo de un enfoque para crear una instancia de esta interfaz.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
  La tabla siguiente muestran los métodos de `IDebugSymbolProvider`.  
@@ -46,29 +43,29 @@ IDebugSymbolProvider : IUnknown
 |`Uninitialize`|Desusado. No utilizar.|  
 |[GetContainerField](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)|Obtiene el campo que contiene la dirección de depuración.|  
 |`GetField`|Desusado. No utilizar.|  
-|[GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)|Asigna una posición del documento en una matriz de direcciones de depuración.|  
+|[GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)|Asigna una posición de documento en una matriz de direcciones de depuración.|  
 |[GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)|Asigna un contexto de documento en una matriz de direcciones de depuración.|  
 |[GetContextFromAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontextfromaddress.md)|Asigna una dirección de depuración en un contexto de documento.|  
-|[GetLanguage](../../../extensibility/debugger/reference/idebugsymbolprovider-getlanguage.md)|Obtiene el idioma usado para compilar el código en la dirección de depuración.|  
+|[GetLanguage](../../../extensibility/debugger/reference/idebugsymbolprovider-getlanguage.md)|Obtiene el lenguaje usado para compilar el código en la dirección de depuración.|  
 |`GetGlobalContainer`|Desusado. No utilizar.|  
-|[GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)|Obtiene el campo que representa un nombre de método completo.|  
-|[GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)|Obtiene el tipo de campo de clase que representa un nombre de clase completo.|  
+|[GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)|Obtiene el campo que representa el nombre completo del método.|  
+|[GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)|Obtiene el tipo de campo de clase que representa el nombre completo de clase.|  
 |[GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)|Crea un enumerador para los espacios de nombres asociado a la dirección de depuración.|  
 |[GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)|Asigna un nombre de símbolo a un tipo de símbolo.|  
 |[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|Obtiene la dirección de depuración que sigue a una dirección de depuración especificado en un método.|  
   
 ## <a name="remarks"></a>Comentarios  
- Esta interfaz asigna posiciones del documento en direcciones de depuración y viceversa.  
+ Esta interfaz asigna las posiciones de documento en las direcciones de depuración y viceversa.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>Ejemplo  
- En este ejemplo se muestra cómo crear una instancia del proveedor de símbolos, dada su GUID (un motor de depuración debe conocer este valor).  
+ En este ejemplo se muestra cómo crear una instancia del proveedor de símbolos, dado su GUID (un motor de depuración debe conocer este valor).  
   
 ```cpp  
 // A debug engine uses its own symbol provider and would know the GUID  

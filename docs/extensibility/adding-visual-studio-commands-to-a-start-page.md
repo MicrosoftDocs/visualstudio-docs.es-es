@@ -1,9 +1,6 @@
 ---
 title: Adición de comandos de Visual Studio a una página de inicio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - start page commands
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22ae9ebb5e9acb3fa1787f2af3b0fbb159c1485d
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 499b6cb593dd29d9bd881203daab19fc319ff1a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153636"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902459"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>Agregar comandos de Visual Studio a una página de inicio
 Cuando se crea una página de inicio personalizada, puede agregar comandos de Visual Studio a él. Este documento describen las distintas formas para enlazar comandos de Visual Studio con objetos XAML en una página de inicio.  
@@ -108,7 +105,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 </ListBox  
 ```  
   
- Para obtener un ejemplo, vea [Tutorial: Guardar configuración de usuario en una página de inicio](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md).  
+ Para obtener un ejemplo, vea [Tutorial: Guardando la configuración de usuario en una página de inicio](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Agregar control de usuario a la página de inicio](../extensibility/adding-user-control-to-the-start-page.md)

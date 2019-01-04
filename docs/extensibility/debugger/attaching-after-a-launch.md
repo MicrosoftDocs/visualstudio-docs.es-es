@@ -1,9 +1,6 @@
 ---
 title: Asociar después de un lanzamiento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b767ef1aeed691255a62a9cb5c1e264034acf24e
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 33bc38ca3e0c9b3bde07be48c74c31e4fc5148df
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152927"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922221"
 ---
 # <a name="attach-after-a-launch"></a>Adjuntar después de un lanzamiento
 Una vez que inicia un programa, la sesión de depuración está lista para asociar el motor de depuración (DE) a dicho programa.  

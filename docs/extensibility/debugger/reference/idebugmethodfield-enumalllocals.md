@@ -1,9 +1,6 @@
 ---
 title: IDebugMethodField::EnumAllLocals | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugMethodField::EnumAllLocals
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b060e26668fb7a3c64cee9360e62c198d9c988c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5f03a285a390e244babe99b2cc0ae2db5bf9e67f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841213"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846287"
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
 Crea un enumerador para todas las variables locales del método, las generadas internamente mediante un compilador incluyendo.  
@@ -28,7 +25,7 @@ Crea un enumerador para todas las variables locales del método, las generadas i
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT EnumAllLocals(   
+HRESULT EnumAllLocals(   
    IDebugAddress*     pAddress,  
    IEnumDebugFields** ppLocals  
 );  

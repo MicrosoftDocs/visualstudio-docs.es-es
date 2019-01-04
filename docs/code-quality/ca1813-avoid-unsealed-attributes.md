@@ -1,8 +1,7 @@
 ---
-title: 'CA1813: Evitar atributos no sellados'
+title: 'CA1813: Evitar los atributos no sellados'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1813
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 45804f08ea25ab8582d28632baf07abea24e0406
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 63b69b95dc676213c39c4cf10c212472218a0c24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859489"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838929"
 ---
-# <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: Evitar atributos no sellados
+# <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: Evitar los atributos no sellados
 
 |||
 |-|-|

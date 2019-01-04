@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: imprimir mediante programación las hojas de cálculo'
-ms.custom: ''
+title: Procedimiento Imprimir mediante programación las hojas de cálculo
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c1e473baccd6e4bb4de1c36d8888082baf40034b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c5061c7b83173088a4031455f27d1332219b6f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876649"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904557"
 ---
-# <a name="how-to-programmatically-print-worksheets"></a>Cómo: imprimir mediante programación las hojas de cálculo
+# <a name="how-to-programmatically-print-worksheets"></a>Procedimiento Imprimir mediante programación las hojas de cálculo
   Puede imprimir cualquier hoja de cálculo de un libro.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -67,9 +64,7 @@ ms.locfileid: "49876649"
   
 ## <a name="see-also"></a>Vea también  
  [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)   
- [Cómo: revisar la ortografía en hojas de cálculo mediante programación](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)   
+ [Cómo: Revisar la ortografía en hojas de cálculo mediante programación](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)   
  [Elemento host Worksheet](../vsto/worksheet-host-item.md)   
  [Acceso global a objetos en los proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

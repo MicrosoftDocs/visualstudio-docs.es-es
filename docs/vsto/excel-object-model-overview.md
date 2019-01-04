@@ -1,9 +1,6 @@
 ---
 title: Información general del modelo de objetos de Excel
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,12 +19,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eb5b930df90f36395a22461ad0f26e82548afb6f
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 45ac85d47ace9c4ce1d954dff51ca4545d2cab35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647530"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821774"
 ---
 # <a name="excel-object-model-overview"></a>Información general sobre el modelo de objetos de Excel
   Para desarrollar soluciones que usen Microsoft Office Excel, puede interactuar con los objetos proporcionados por el modelo de objetos de Excel. Este tema presenta los objetos más importantes:  
@@ -123,5 +120,3 @@ ms.locfileid: "53647530"
 |[Trabajar con rangos](../vsto/working-with-ranges.md)|Proporciona ejemplos que muestran cómo realizar tareas habituales con rangos.|  
 |[Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)|Proporciona ejemplos que muestran cómo realizar tareas habituales con hojas de cálculo.|  
 |[Trabajar con libros](../vsto/working-with-workbooks.md)|Proporciona ejemplos que muestran cómo realizar tareas habituales con libros.|  
-  
-  

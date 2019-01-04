@@ -1,9 +1,6 @@
 ---
-title: 'Nueva generación de proyectos: Aspectos técnicos, segunda parte | Microsoft Docs'
-ms.custom: ''
+title: 'Nueva generación de proyectos: Internamente, la segunda parte | Documentos de Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
@@ -14,15 +11,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38f2a4a84c6223c2e195c3d703f52d7fd5b18c86
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3401523e7c8026b59f6737a8f0599b4df74a445f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837534"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943517"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>Nueva generación de proyectos: aspectos técnicos, segunda parte
-En [nueva generación de proyectos: Under the Hood, parte uno](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) vimos cómo **nuevo proyecto** se rellena el cuadro de diálogo. Supongamos que ha seleccionado un **aplicación de Windows de Visual C#**, se han rellenado los **nombre** y **ubicación** cuadros de texto y hace clic en Aceptar.  
+# <a name="new-project-generation-under-the-hood-part-two"></a>Nueva generación de proyectos: Internamente, la segunda parte
+En [nueva generación de proyectos: Internamente, una parte](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) vimos cómo **nuevo proyecto** se rellena el cuadro de diálogo. Supongamos que ha seleccionado un **aplicación de Windows de Visual C#**, se han rellenado los **nombre** y **ubicación** cuadros de texto y hace clic en Aceptar.  
   
 ## <a name="generating-the-solution-files"></a>Generar los archivos de solución  
  Elegir una plantilla de aplicación dirige [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] descomprimir y abrir el archivo .vstemplate correspondiente y para iniciar una plantilla para interpretar los comandos XML de este archivo. Estos comandos crean proyectos y elementos de proyecto en la solución nueva o existente.  
@@ -70,7 +67,7 @@ namespace Simple
  Un archivo .vstemplate básico tiene este formato  
   
 ```  
-<VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">  
+<VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">  
     <TemplateData>  
     </TemplateData>  
     <TemplateContent>  
@@ -78,7 +75,7 @@ namespace Simple
 </VSTemplate>  
 ```  
   
- Analizamos la \<TemplateData > sección la [nueva generación de proyectos: Under the Hood, parte uno](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md). Las etiquetas en esta sección se utilizan para controlar la apariencia de la **nuevo proyecto** cuadro de diálogo.  
+ Analizamos la \<TemplateData > sección la [nueva generación de proyectos: Internamente, la primera parte](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md). Las etiquetas en esta sección se utilizan para controlar la apariencia de la **nuevo proyecto** cuadro de diálogo.  
   
  Las etiquetas en el \<TemplateContent > sección control de la generación de nuevos proyectos y elementos de proyecto. Este es el \<TemplateContent > sección del archivo en la carpeta \Archivos 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip de Visual Studio \Program Files\Microsoft cswindowsapplication.vstemplate.  
   
@@ -92,13 +89,13 @@ namespace Simple
     <ProjectItem TargetFileName="Properties\Resources.resx">  
       Resources.resx  
     </ProjectItem>  
-    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Resources.Designer.cs">  
+    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Resources.Designer.cs">  
       Resources.Designer.cs  
     </ProjectItem>  
     <ProjectItem TargetFileName="Properties\Settings.settings">  
       Settings.settings  
     </ProjectItem>  
-    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Settings.Designer.cs">  
+    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Settings.Designer.cs">  
       Settings.Designer.cs  
     </ProjectItem>  
     <ProjectItem ReplaceParameters="true" OpenInEditor="true">  
@@ -157,5 +154,5 @@ namespace Simple
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Nueva generación de proyectos: aspectos técnicos, primera parte](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
+ [Nueva generación de proyectos: Internamente, la primera parte](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
  [MSBuild](../../msbuild/msbuild.md)

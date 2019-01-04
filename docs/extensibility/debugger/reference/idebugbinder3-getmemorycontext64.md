@@ -1,9 +1,6 @@
 ---
 title: IDebugBinder3::GetMemoryContext64 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - GetMemoryContext64
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccfb34e03259e67eaca17e2cee7c824e62ce0393
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4a4f4d69fe736ebe9a4ae538356b35c397e3e9d4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925916"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919924"
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
 Convierte una ubicación del objeto o una dirección de memoria de 64 bits en un contexto de la memoria.  

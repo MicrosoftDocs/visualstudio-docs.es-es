@@ -1,8 +1,7 @@
 ---
-title: 'CA1802: Usar literales cuando resulte apropiado'
+title: 'CA1802: Utilizar literales cuando sea apropiado'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - UseLiteralsWhereAppropriate
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 13cfc8b090d289173975b0ef2ee55562955de0c8
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: f86e19bc055a95b79f119f834d1d23d4f3a4e2c1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548756"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921723"
 ---
-# <a name="ca1802-use-literals-where-appropriate"></a>CA1802: Usar literales cuando resulte apropiado
+# <a name="ca1802-use-literals-where-appropriate"></a>CA1802: Utilizar literales cuando sea apropiado
 
 |||
 |-|-|

@@ -1,9 +1,6 @@
 ---
-title: IDebugPortSupplier3::CanPersistPorts | Documentos de Microsoft
-ms.custom: ''
+title: IDebugPortSupplier3::CanPersistPorts | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPortSupplier3::CanPersistPorts
@@ -15,34 +12,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ee07f9118565177e513647d28ebcb11a23de3a6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5d9038663bd74b5dabeda92d8b6b9e4e31d092de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113437"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939971"
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
-Este método determina si el proveedor del puerto puede conservar puertos (de escribirlos en disco) entre las distintas invocaciones del depurador.  
+Este método determina si el proveedor del puerto puede conservar los puertos (escribiéndolas en el disco) entre las distintas invocaciones del depurador.  
   
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT CanPersistPorts();  
+HRESULT CanPersistPorts();  
 ```  
   
 ```csharp  
-int CanPersistPorts();  
+int CanPersistPorts();  
 ```  
   
 #### <a name="parameters"></a>Parámetros  
  Ninguno.  
   
 ## <a name="return-value"></a>Valor devuelto  
- `S_OK` Si los puertos que se pueden conservar, o `S_FALSE` para indicar que los puertos no pueden ser persistentes.  
+ `S_OK` Si se pueden conservar los puertos, o `S_FALSE` para indicar que no se pueden conservar los puertos.  
   
 ## <a name="remarks"></a>Comentarios  
- Si el proveedor del puerto puede persistir puertos, debe hacerlo cuando se destruye y, a continuación, recargue cuando se crean instancias de una vez más.  
+ Si el proveedor del puerto puede persistir los puertos, debe hacerlo cuando se destruye y, a continuación, volver a cargarlos cuando se crean instancias de una vez más.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

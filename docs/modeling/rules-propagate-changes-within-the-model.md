@@ -11,13 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8f506b71240024206523821080cdf958660aa963
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 70bacc7e181c27efd14b613c20af29e850db321a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865978"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925555"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Las reglas propagan los cambios dentro del modelo
 Puede crear una regla de almacén para propagar un cambio de un elemento a otro en la visualización y el SDK de modelado (VMSDK). Cuando se produce un cambio a cualquier elemento en el Store, las reglas se programan para ejecutarse, normalmente, cuando se confirma la transacción más externa. Hay diferentes tipos de reglas para los diferentes tipos de eventos, como agregar un elemento, o eliminarlo. Puede asociar reglas a tipos específicos de elementos, formas y diagramas. Muchas características integradas se definen mediante reglas: por ejemplo, reglas garantizan que un diagrama se actualiza cuando cambia el modelo. Puede personalizar su lenguaje específico de dominio mediante la adición de sus propias reglas.
@@ -134,7 +133,7 @@ namespace ExampleNamespace
   | Clase base | Desencadenador |
   |-|-|
   | <xref:Microsoft.VisualStudio.Modeling.AddRule> | Se agrega un elemento, un vínculo o una forma.<br /><br /> Utilícelo para detectar nuevas relaciones, además de los nuevos elementos. |
-  | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | Se cambia un valor de propiedad de dominio. El argumento del método proporciona los valores antiguos y nuevos.<br /><br /> Para las formas, esta regla se desencadena cuando la integrada `AbsoluteBounds` cambios de propiedad, si se mueve la forma.<br /><br /> En muchos casos, resulta más cómodo invalidar `OnValueChanged` o `OnValueChanging` en el controlador de propiedad. Estos métodos se llama inmediatamente antes y después del cambio. Por el contrario, la regla se ejecuta normalmente al final de la transacción. Para obtener más información, consulte [controladores de cambio de valor de propiedad de dominio](../modeling/domain-property-value-change-handlers.md). **Nota:** esta regla no se desencadena cuando se crea o elimina un vínculo. En su lugar, escribir un `AddRule` y un `DeleteRule` para la relación de dominio. |
+  | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | Se cambia un valor de propiedad de dominio. El argumento del método proporciona los valores antiguos y nuevos.<br /><br /> Para las formas, esta regla se desencadena cuando la integrada `AbsoluteBounds` cambios de propiedad, si se mueve la forma.<br /><br /> En muchos casos, resulta más cómodo invalidar `OnValueChanged` o `OnValueChanging` en el controlador de propiedad. Estos métodos se llama inmediatamente antes y después del cambio. Por el contrario, la regla se ejecuta normalmente al final de la transacción. Para obtener más información, consulte [controladores de cambio de valor de propiedad de dominio](../modeling/domain-property-value-change-handlers.md). **Nota:**  Esta regla no se desencadena cuando se crea o elimina un vínculo. En su lugar, escribir un `AddRule` y un `DeleteRule` para la relación de dominio. |
   | <xref:Microsoft.VisualStudio.Modeling.DeletingRule> | Se desencadena cuando un elemento o vínculo está a punto de eliminarse. La propiedad ModelElement.IsDeleting es true hasta el final de la transacción. |
   | <xref:Microsoft.VisualStudio.Modeling.DeleteRule> | Puede realizar cuando se ha eliminado un elemento o vínculo. La regla se ejecuta después de que se han ejecutado todas las demás reglas, incluyendo DeletingRules. ModelElement.IsDeleting es false, y ModelElement.IsDeleted es true. Para permitir una operación de deshacer posteriores, el elemento no se quita de la memoria, pero se quita del Store.ElementDirectory. |
   | <xref:Microsoft.VisualStudio.Modeling.MoveRule> | Un elemento se mueve desde un almacén de partición a otra.<br /><br /> (Tenga en cuenta que esto no está relacionado con la posición de una forma gráfica). |

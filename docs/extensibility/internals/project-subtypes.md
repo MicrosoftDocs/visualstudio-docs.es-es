@@ -1,9 +1,6 @@
 ---
 title: Subtipos de proyecto | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], subtypes
@@ -14,18 +11,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e91a16ad11f7089230138919519922d58f3cc472
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9fdbc00863c7aa0d03ad94bd60966e81f7faaf81
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130677"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853468"
 ---
 # <a name="project-subtypes"></a>Subtipos de proyecto
-Subtipos de proyecto le permiten personalizar o flavor el comportamiento de los sistemas del proyecto de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Personalizaciones incluyen guardar datos adicionales en el archivo de proyecto, agregar o filtrar elementos de la **Agregar nuevo elemento** cuadro de diálogo, controlar cómo se depuran e implementados, ensamblados y ampliar el proyecto **propiedad Páginas** cuadro de diálogo. VSPackages implementar mediante la agregación de COM de subtipos de proyecto.  
+Subtipos de proyecto le permiten personalizar o flavor el comportamiento de los sistemas del proyecto de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Las personalizaciones incluyen guardando datos adicionales en el archivo de proyecto, agrega o filtra los elementos de la **Agregar nuevo elemento** cuadro de diálogo, controlar cómo se depura e implementados, los ensamblados y ampliando el proyecto **propiedad Páginas** cuadro de diálogo. Los paquetes VSPackage implementar subtipos de proyecto mediante agregación COM.  
   
 > [!NOTE]
->  El sistema de proyectos de Visual C++ no admite subtipos de proyecto. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] por sí mismo utiliza subtipos de proyecto para implementar los proyectos de Smart Device y SQL Server.  
+>  El sistema de proyectos de Visual C++ no admite subtipos de proyecto. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usa subtipos de proyecto para implementar los proyectos de SQL Server y Smart Device.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Diseño de subtipos de proyecto](../../extensibility/internals/project-subtypes-design.md)  
@@ -35,29 +32,29 @@ Subtipos de proyecto le permiten personalizar o flavor el comportamiento de los 
  Describe la secuencia de inicialización del subtipo de proyecto mediante programación por [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno.  
   
  [Propiedades y métodos ampliados por subtipos de proyecto](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)  
- Proporciona descripciones detalladas de las características y los métodos con más frecuencia extendidos con subtipos de proyecto.  
+ Proporciona descripciones detalladas de las características y los métodos con más frecuencia extendidos mediante el uso de subtipos de proyecto.  
   
  [Conservación de datos en el archivo de proyecto de MSBuild](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)  
- Describe cómo conservar los datos en un archivo de proyecto y cómo usar <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> para mantener los datos en el archivo de proyecto a través de los niveles de agregación del subtipo de proyecto.  
+ Describe cómo conservar los datos en un archivo de proyecto y cómo usar <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> para mantener los datos en el archivo de proyecto entre los niveles de agregación del subtipo de proyecto.  
   
  [Interfaz de usuario de propiedades de proyecto](../../extensibility/internals/project-property-user-interface.md)  
- Describe cómo los subtipos de proyecto pueden modificar el proyecto **páginas de propiedades** cuadro de diálogo.  
+ Se describe cómo los subtipos de proyecto pueden modificar el proyecto **páginas de propiedades** cuadro de diálogo.  
   
  [Ampliación del modelo de objetos del proyecto de base](../../extensibility/internals/extending-the-object-model-of-the-base-project.md)  
- Proporciona información acerca de cómo los subtipos de proyecto pueden utilizar extensores de automatización para ampliar el modelo de objetos de automatización.  
+ Proporciona información sobre cómo subtipos de proyecto pueden usar extensores de automatización para extender el modelo de objetos de automatización.  
   
  [Contribución al cuadro de diálogo Agregar nuevo elemento](../../extensibility/internals/contributing-to-the-add-new-item-dialog-box.md)  
  Describe cómo agregar elementos a la **Agregar nuevo elemento** cuadro de diálogo.  
   
  [Guardado de datos en archivos de proyecto](../../extensibility/saving-data-in-project-files.md)  
- Explica cómo un subtipo de proyecto puede guardar y recuperar datos específicos de subtipo en el archivo de proyecto mediante Managed Package Framework (MPF).  
+ Explica cómo puede guardar y recuperar datos específicos del subtipo en el archivo de proyecto mediante el uso de Managed Package Framework (MPF) un subtipo de proyecto.  
   
  [Control de implementación especializada](../../extensibility/internals/handling-specialized-deployment.md)  
  Explica cómo subtipos de proyecto pueden proporcionar el comportamiento de implementación especializada implementando la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interfaz.  
   
  [Adición y eliminación de páginas de propiedades](../../extensibility/adding-and-removing-property-pages.md)  
- Describe agregando y quitando páginas de propiedades en el Diseñador de proyectos.  
+ Describe la adición y eliminación de páginas de propiedades en el Diseñador de proyectos.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Tipos de proyecto](../../extensibility/internals/project-types.md)  
- Proporciona vínculos a temas que detalla [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proyectos.
+ Proporciona vínculos a temas que detallan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proyectos.

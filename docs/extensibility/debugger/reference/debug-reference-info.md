@@ -1,9 +1,6 @@
 ---
 title: DEBUG_REFERENCE_INFO | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - DEBUG_REFERENCE_INFO
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9c25c06f4fa92030bec5bd3b6f2566111dadad4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 330ed06d4993d8bbe8b8a889e8f052c8bc7e7049
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829630"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906727"
 ---
 # <a name="debugreferenceinfo"></a>DEBUG_REFERENCE_INFO
 Describe una referencia.  
@@ -28,7 +25,7 @@ Describe una referencia.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-typedef struct tagDEBUG_REFERENCE_INFO {   
+typedef struct tagDEBUG_REFERENCE_INFO {   
    DEBUGREF_INFO_FLAGS dwFields;  
    BSTR                bstrName;  
    BSTR                bstrType;  
@@ -40,7 +37,7 @@ typedef struct tagDEBUG_REFERENCE_INFO {
 ```  
   
 ```csharp  
-public struct DEBUG_REFERENCE_INFO {   
+public struct DEBUG_REFERENCE_INFO {   
    public uint             dwFields;  
    public string           bstrName;  
    public string           bstrType;  
@@ -79,7 +76,7 @@ public struct DEBUG_REFERENCE_INFO {
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   

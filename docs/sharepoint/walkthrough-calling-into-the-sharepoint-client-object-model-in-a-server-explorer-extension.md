@@ -1,9 +1,6 @@
 ---
-title: 'Tutorial: Llamar al modelo de objeto de cliente de SharePoint en una extensión de explorador de servidores | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Llamar al modelo de objeto de cliente de SharePoint en una extensión de explorador de servidores | Documentos de Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f4510aa820e0f82c2fcd73ccb83ed0f8120a1399
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: bce304bfb9657262fa7aeac43c58280e6992af17
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296039"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918893"
 ---
-# <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Tutorial: Llamar al modelo de objetos de cliente de SharePoint en una extensión de explorador de servidores
+# <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Tutorial: Una llamada al modelo de objetos de cliente de SharePoint en una extensión de explorador de servidores
   Este tutorial muestra cómo llamar al modelo de objetos de cliente de SharePoint desde una extensión para el **conexiones de SharePoint** nodo **Explorador de servidores**. Para obtener más información sobre cómo usar el modelo de objetos de cliente de SharePoint, vea [llamar a los modelos de objetos de SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
   
  En este tutorial se muestran las siguientes tareas:  

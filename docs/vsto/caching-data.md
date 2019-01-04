@@ -1,9 +1,6 @@
 ---
 title: Almacenar datos en caché
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b46fa8b0138eff03757a7bd7828053cee039090f
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 66113dae824397f46829a539a016f452cedc0383
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248129"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967260"
 ---
 # <a name="cache-data"></a>Almacenar datos en caché
   Puede almacenar en caché objetos de datos en una personalización de nivel de documento para que se tiene acceso a los datos sin conexión o sin tener que abrir Microsoft Office Word o Microsoft Office Excel. Para almacenar en caché un objeto, el objeto debe tener un tipo de datos que cumple determinados requisitos. Muchos tipos de datos comunes en .NET Framework cumplen estos requisitos, incluyendo <xref:System.String>, <xref:System.Data.DataSet>, y <xref:System.Data.DataTable>.  
@@ -91,5 +88,3 @@ ms.locfileid: "53248129"
  [Cómo: Almacenar en caché mediante programación un origen de datos en un documento de Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
  [Cómo: Almacenar datos en caché en un documento protegido por contraseña](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
  [Tutorial: Crear a una relación de maestro/detalle con un conjunto de datos en caché](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
-  
-  

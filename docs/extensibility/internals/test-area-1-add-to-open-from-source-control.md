@@ -1,9 +1,6 @@
 ---
-title: 'Área de prueba 1: Agregar a / abrir desde Control de código fuente | Microsoft Docs'
-ms.custom: ''
+title: 'Área de prueba 1: Agregar a / abrir desde Control de código fuente | Documentos de Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], adding and opening solutions
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3541fc3a4d4b802e4cd89b14dac6d6caf222152
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b50ff6c737b75fcdbd9a6fc265928301eeb4467
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861662"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842677"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Área de prueba 1: Agregar a / abrir desde Control de código fuente
 Este complemento de control de origen de prueba área abarca la colocación de las soluciones o proyectos bajo control de código fuente y recuperarlos desde el control de código fuente.  
@@ -27,15 +24,15 @@ Este complemento de control de origen de prueba área abarca la colocación de l
 ## <a name="command-menu-access"></a>Acceso al menú de comandos  
  La siguiente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] rutas de menú del entorno de desarrollo integrado que se usan en los casos de prueba:  
   
-- Para [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], abrir desde el control de código fuente: **archivo**, **abrir**, **proyecto**/**solución**; busque en el [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] ubicación.  
+- Para [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], abrir desde el control de código fuente: **Archivo**, **abierto**, **proyecto**/**solución**; busque en el [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] ubicación.  
   
-- Para otros complementos código fuente control, abra el control de código fuente: **archivo**, **Control de código fuente**, **abrir desde Control de código fuente**.  
+- Para otros complementos código fuente control, abra el control de código fuente: **Archivo**, **Control de código fuente**, **abrir desde el Control de código fuente**.  
   
-- Agregar a control de código fuente: **archivo**, **Control de código fuente**, **Agregar solución al archivo de Control de código fuente**, **Control de código fuente**, **agregar Proyectos al Control de código fuente seleccionados**.  
+- Agregar a control de código fuente: **Archivo**, **Control de código fuente**, **Agregar solución al archivo de Control de código fuente**, **Control de código fuente**, **agregar proyectos seleccionados al Control de código fuente**.  
   
 - Menú contextual (proyecto o solución), **Agregar solución al Control de código fuente**.  
   
-- Agregar control de código fuente: **archivo**, **Control de código fuente**, **Agregar proyecto desde el Control de código fuente**.  
+- Agregar desde el control de código fuente: **Archivo**, **Control de código fuente**, **Agregar proyecto desde el Control de código fuente**.  
   
 - Para [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], agregar control de código fuente también está disponible en **archivo**, **agregar**, **proyecto existente**; Fíjese en el [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] ubicación.  
   
@@ -57,7 +54,7 @@ Este complemento de control de origen de prueba área abarca la colocación de l
 ## <a name="test-cases"></a>Casos de prueba  
  Los siguientes son casos de prueba concretos para agregar a / abrir desde el área de prueba de Control de código fuente.  
   
-### <a name="case-1a-add-solution-to-source-control"></a>Caso 1a: Agregar solución al Control de código fuente  
+### <a name="case-1a-add-solution-to-source-control"></a>Case 1a: Agregar solución al Control de código fuente  
  En este caso de prueba se centra en Agregar soluciones al control de código fuente.  
   
 |Acción|Pasos de prueba|Resultados esperados para comprobar|  
@@ -77,7 +74,7 @@ Este complemento de control de origen de prueba área abarca la colocación de l
 |Abra una solución que contenga un local o un proyecto Web de IIS desde control de código fuente|1.  Cree una local o un proyecto Web de IIS.<br />2.  Agregue la solución al control de código fuente.<br />3.  Cierre la solución.<br />4.  Abra la solución del control de código fuente a una nueva ubicación.|Abrir solución o proyecto de control de código fuente.|  
 |Abrir una solución que contiene un proyecto Web de sitio remoto desde el control de código fuente|1.  Cree un proyecto Web de sitio remoto.<br />2.  Agregue la solución al control de código fuente. Si este paso se realiza correctamente, vaya al paso siguiente.<br />3.  Cierre la solución.<br />4.  Abra la solución del control de código fuente a una nueva ubicación.|`Result from Step 2:`<br /><br /> Web de sitio remoto no está bajo control de código fuente.<br /><br /> `Result from Step 4:`<br /><br /> Abre solución desde control de código fuente.<br /><br /> Se carga el proyecto de sitio remoto, pero no está bajo control de código fuente.|  
   
-### <a name="case-1c-add-solution-from-source-control"></a>Caso c de 1: agregar la solución desde Control de código fuente  
+### <a name="case-1c-add-solution-from-source-control"></a>Caso 1C: Agregar solución desde Control de código fuente  
  En este caso de prueba se centra en Agregar soluciones desde control de código fuente.  
   
 |Acción|Pasos de prueba|Resultados esperados para comprobar|  

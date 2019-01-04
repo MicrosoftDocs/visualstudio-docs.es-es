@@ -1,9 +1,6 @@
 ---
 title: IDebugWindowsComputerPort2 | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugWindowsComputerPort2 interface
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d7482adf6405d04522cbc3137be25c7a5e18b2a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1e2a037ad0477be258e33879d1dc336fa67cc915
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118104"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965293"
 ---
 # <a name="idebugwindowscomputerport2"></a>IDebugWindowsComputerPort2
 Permite consultar para obtener información sobre el equipo de destino.  
@@ -30,7 +27,7 @@ IDebugWindowsComputerPort2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Notas para los implementadores  
- Esta interfaz se implementa mediante objetos de puerto de administrador de sesión de depuración.  
+ Esta interfaz se implementa mediante objetos port del Administrador de sesión de depuración.  
   
 ## <a name="methods"></a>Métodos  
  La tabla siguiente muestran los métodos de `IDebugWindowsComputerPort2`.  
@@ -42,6 +39,6 @@ IDebugWindowsComputerPort2 : IUnknown
 ## <a name="requirements"></a>Requisitos  
  Encabezado: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll

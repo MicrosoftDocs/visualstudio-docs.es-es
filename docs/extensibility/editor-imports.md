@@ -1,9 +1,6 @@
 ---
 title: Importaciones del Editor | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ede17217dbac62bcc0086e6f4e5afca0cf9e0a0
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: cffc59c0bcaed2797b5f2548a47c067d04da56ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637221"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893936"
 ---
 # <a name="editor-imports"></a>Importaciones del Editor
 Puede importar un número de servicios del editor, generadores y agentes que proporcionan la extensión con distintos tipos de acceso para el editor básico. Por ejemplo, puede importar el <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> para proporcionarle un <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> para un tipo de contenido determinado. (Este navegador permite que realizar diferentes tipos de búsquedas en un búfer de texto).  
@@ -45,13 +42,13 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  Para obtener más ejemplos del uso de las importaciones, vea los siguientes tutoriales:  
   
- [Tutorial: Crear un glifo de margen](../extensibility/walkthrough-creating-a-margin-glyph.md)  
+ [Tutorial: Creación de un glifo de margen](../extensibility/walkthrough-creating-a-margin-glyph.md)  
   
  [Tutorial: Personalizar la vista de texto](../extensibility/walkthrough-customizing-the-text-view.md)  
   
  [Tutorial: Resaltar texto](../extensibility/walkthrough-highlighting-text.md)  
   
- [Tutorial: Información de presentación rápida](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Tutorial: Mostrar información rápida](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
  [Tutorial: Mostrar la Ayuda de firma](../extensibility/walkthrough-displaying-signature-help.md)  
   
@@ -67,7 +64,7 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
 internal SVsServiceProvider ServiceProvider = null;   
 ```  
   
- Consulte [Tutorial: acceso al objeto DTE desde una extensión del editor](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) para obtener más información.  
+ Vea [Tutorial: Tener acceso al objeto DTE desde una extensión del editor](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) para obtener más información.  
   
 ## <a name="services"></a>Servicios  
  Editor de servicios es generalmente sola entidades que proporcionan un servicio y se comparten entre varios componentes.  

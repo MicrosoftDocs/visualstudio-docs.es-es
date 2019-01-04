@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: a49d9998aa319e66c22baa345864bc473f733c87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 165798341f08afd3b55e8f6b8092457f022a0634
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816710"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960042"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personalizar y ampliar lenguajes específicos de dominio
 Visual Studio de modelado y visualización SDK (VMSDK) proporciona varios niveles en el que puede definir las herramientas de modelado:
@@ -57,13 +56,13 @@ Visual Studio de modelado y visualización SDK (VMSDK) proporciona varios nivele
 |Conservar el diseño de la forma y la apariencia en la copia y arrastrar y colocar.|Agregar las formas y conectores a copiado `ElementGroupPrototype`. Es el método más cómodo para invalidar `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Consulte [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).|
 |Pegar formas en la ubicación elegida, como la posición actual del cursor.|Invalidar `ClipboardCommandSet.ProcessOnCopy()` para usar la versión específica de la ubicación de `ElementOperations.Merge().` vea [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).|
 |Crear vínculos adicionales al pegar|Invalidar ClipboardCommandSet.ProcessOnPasteCommand()|
-|Habilitar arrastrar y colocar en este diagrama, otros lenguajes DSL y Windows elementos|Vea [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)|
+|Habilitar arrastrar y colocar en este diagrama, otros lenguajes DSL y Windows elementos|Vea [Cómo: Agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)|
 |Permitir que una forma o la herramienta y se puedan arrastrar una forma secundaria, como un puerto, como si se arrastró el elemento primario.|Definir una directiva de mezcla de elementos en la clase de objeto de destino, para reenviar el objeto colocado con el elemento primario. Consulte [personalizar la creación de elemento y movimiento](../modeling/customizing-element-creation-and-movement.md).|
 |Permiten una forma o una herramienta que se puedan arrastrar una forma y hacer que los vínculos adicionales o los objetos creados. Por ejemplo, para permitir un comentario que se pueden colocar en un elemento al que está vinculado.|Definir una directiva de mezcla de elementos en la clase de dominio de destino y definir los vínculos que se genere. En casos complejos, puede agregar código personalizado. Consulte [personalizar la creación de elemento y movimiento](../modeling/customizing-element-creation-and-movement.md).|
 |Cree un grupo de elementos con una herramienta. Por ejemplo, un componente con un conjunto fijo de puertos.|Invalide el método de inicialización del cuadro de herramientas de ToolboxHelper.cs. Crear un prototipo de grupo del elemento (EGP) que contiene los elementos y sus vínculos de relación. Consulte [personalizar las herramientas y el cuadro de herramientas](../modeling/customizing-tools-and-the-toolbox.md).<br /><br /> Incluya las formas de entidad de seguridad y el puertos en el EGP o definir elemento BoundsRules para colocar las formas de puerto cuando se crea una instancia de EGP. Consulte [de formas Boundsrules ubicación y tamaño](../modeling/boundsrules-constrain-shape-location-and-size.md).|
 |Usar una herramienta de conexión para crear instancias de varios tipos de relación.|Agregar directivas de conectar vínculo (LCD) a la que se invoca mediante la herramienta Generador de conexiones. Los paneles LCD determinan el tipo de la relación entre los tipos de los dos elementos. Para facilitar esta dependen de los Estados de los elementos, puede agregar código personalizado. Consulte [personalizar las herramientas y el cuadro de herramientas](../modeling/customizing-tools-and-the-toolbox.md).|
 |Herramientas rápidas - el usuario hacer doble clic en cualquier herramienta para crear muchas formas o conectores en sucesión.|En el Explorador de DSL, seleccione el `Editor` nodo. En la ventana Propiedades, establezca **usa elementos de cuadro de herramientas rápidas**.|
-|Definir comandos de menú|Vea [Cómo: modificar comandos de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|
+|Definir comandos de menú|Vea [Cómo: Modificar un comando de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|
 |Restringir el modelo con las reglas de validación|Consulte [validación en los lenguajes específicos de dominio](../modeling/validation-in-a-domain-specific-language.md)|
 |Generar código, archivos de configuración o documentos desde un DSL.|[Generar código a partir de lenguajes específicos de dominio](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Personalizar cómo los modelos se guardan en el archivo.|Consulte [personalizar el almacenamiento de archivo y la serialización XML](../modeling/customizing-file-storage-and-xml-serialization.md)|

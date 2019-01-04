@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 984b27b65b251a1e87c72962e488fd0d4036a4d0
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 13a8ab293a6a18856ba98edc7aa04154bc876d40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749549"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834937"
 ---
 # <a name="domain-path-syntax"></a>Sintaxis de las rutas de dominio
 Las definiciones de DSL usan una sintaxis del estilo de XPath para ubicar elementos específicos en un modelo.
@@ -29,9 +28,9 @@ Las definiciones de DSL usan una sintaxis del estilo de XPath para ubicar elemen
 
  ![Relación de referencia CommentReferencesSubjects](../modeling/media/dsl_reference.png)
 
- La sintaxis atraviesa el árbol del modelo. Por ejemplo, la relación de dominio **CommentReferencesSubjects** en la ilustración anterior tiene un **asuntos** rol. El segmento de ruta de acceso **/! Subjectt** especifica que la ruta de acceso se ejecuta en los elementos que se tiene accesibles a través de la **asuntos** rol.
+ La sintaxis atraviesa el árbol del modelo. Por ejemplo, la relación de dominio **CommentReferencesSubjects** en la ilustración anterior tiene un **asuntos** rol. El segmento de ruta de acceso **/! Subjectt** especifica que la ruta de acceso termina en los elementos que se tiene acceso a través del **asuntos** rol.
 
- Cada segmento comienza con el nombre de una relación de dominio. Si el recorrido es de un elemento a una relación, el segmento de ruta de acceso aparece como *Relationship.PropertyName*. Si el salto es de un vínculo a un elemento, aparece el segmento de ruta de acceso como *relación /! RoleName*.
+ Cada segmento comienza con el nombre de una relación de dominio. Si el recorrido es de un elemento a una relación, el segmento de ruta aparece como *relación.NombrePropiedad*. Si el salto es de un vínculo a un elemento, el segmento de ruta aparece como *relación /! RoleName*.
 
  La sintaxis de una ruta se separa con barras inclinadas. Cada segmento de ruta es un salto desde un elemento a un vínculo (una instancia de una relación) o desde un vínculo a un elemento. Los segmentos de ruta suelen aparecer en parejas. Un segmento de ruta representa un salto desde un elemento a un vínculo, y el siguiente representa un salto desde el vínculo al elemento del otro extremo. (Un vínculo puede ser también origen o destino de una relación).
 

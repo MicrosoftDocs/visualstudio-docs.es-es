@@ -1,9 +1,6 @@
 ---
 title: Creación de un archivo de página de inicio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30c161478bb04dcf964cb2054e714689c13b6538
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 52050641ee9d2d522ff07dd5eaed72ecbec2b09e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497643"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941445"
 ---
 # <a name="creating-a-custom-start-page"></a>Creación de una página de inicio personalizada
 Puede crear una página de inicio personalizada siguiendo los pasos descritos en este documento.  
@@ -90,5 +87,5 @@ Puede crear una página de inicio personalizada siguiendo los pasos descritos en
  [Tutorial: Agregar XAML personalizado a la página de inicio](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)   
  [Agregar control de usuario a la página de inicio](../extensibility/adding-user-control-to-the-start-page.md)   
  [Agregar comandos de Visual Studio a una página de inicio](../extensibility/adding-visual-studio-commands-to-a-start-page.md)   
- [Tutorial: Guardar configuración de usuario en una página de inicio](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)   
+ [Tutorial: Guardar la configuración de usuario en una página de inicio](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)   
  [Implementar páginas principales personalizadas](../extensibility/deploying-custom-start-pages.md)

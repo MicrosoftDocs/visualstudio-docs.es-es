@@ -1,9 +1,6 @@
 ---
 title: 'Tutorial: Crear menús contextuales para marcadores'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ff261fd6032f3c666dfa3d745508586ffede6504
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8cf987c458fb3a79c17fc6efedb34fefd8a53179
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884087"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940562"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Tutorial: Crear menús contextuales para marcadores
   En este tutorial se muestra cómo crear menús contextuales para <xref:Microsoft.Office.Tools.Word.Bookmark> controles en una personalización de nivel de documento para Word. Cuando un usuario seleccione el texto de un marcador, un menú contextual aparece y proporciona las opciones de usuario para dar formato al texto.  
@@ -54,7 +51,7 @@ ms.locfileid: "49884087"
   
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto  
   
--   Crear un proyecto de documento de Word con el nombre **mi menú contextual de marcador**. En el asistente, seleccione **crear un nuevo documento**. Para obtener más información, consulte [Cómo: proyectos de creación de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+-   Crear un proyecto de documento de Word con el nombre **mi menú contextual de marcador**. En el asistente, seleccione **crear un nuevo documento**. Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio abre el nuevo documento de Word en el diseñador y agrega el **mi menú contextual de marcador** proyecto a **el Explorador de soluciones**.  
   
@@ -91,7 +88,7 @@ ms.locfileid: "49884087"
   
 ### <a name="to-add-commands-to-a-shortcut-menu"></a>Para agregar comandos a un menú contextual  
   
-1.  Agregar un **Ribbon XML** al proyecto. Para obtener más información, consulte [Cómo: empezar a personalizar la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md).  
+1.  Agregar un **Ribbon XML** al proyecto. Para obtener más información, vea [Cómo: Introducción a la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md).  
   
 2.  En **el Explorador de soluciones**, seleccione **ThisDocument.cs** o **ThisDocument.vb**.  
   
@@ -169,7 +166,7 @@ ms.locfileid: "49884087"
     > [!NOTE]  
     >  Debe escribir código para controlar el caso de que se superponen a marcadores. Si no lo hace, de forma predeterminada, el código se llamará para todos los marcadores de la selección.  
   
-5.  En C#, debe agregar controladores de eventos para los controles de marcador para el <xref:Microsoft.Office.Tools.Word.Document.Startup> eventos. Para obtener información acerca de cómo crear controladores de eventos, vea [Cómo: crear controladores de eventos en proyectos de Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+5.  En C#, debe agregar controladores de eventos para los controles de marcador para el <xref:Microsoft.Office.Tools.Word.Document.Startup> eventos. Para obtener información acerca de cómo crear controladores de eventos, vea [Cómo: Crear controladores de eventos en proyectos de Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_Word_Document_Menus#4](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#4)]  
   
@@ -191,9 +188,9 @@ ms.locfileid: "49884087"
 ## <a name="next-steps"></a>Pasos siguientes  
  A continuación, podría realizar las siguientes tareas:  
   
--   Escribir código para responder a eventos de los controles host en Excel. Para obtener más información, consulte [Tutorial: programar basándose en eventos de un control NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
+-   Escribir código para responder a eventos de los controles host en Excel. Para obtener más información, vea [Tutorial: Programar basándose en eventos de un control NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
   
--   Utilice una casilla de verificación para cambiar el formato de un marcador. Para obtener más información, consulte [Tutorial: cambiar el documento formato utilizando controles CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
+-   Utilice una casilla de verificación para cambiar el formato de un marcador. Para obtener más información, vea [Tutorial: Cambiar formato de documento utilizando controles CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Tutoriales para Word](../vsto/walkthroughs-using-word.md)   
@@ -201,5 +198,3 @@ ms.locfileid: "49884087"
  [Automatizar Word usando objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)   
  [Bookmark (control)](../vsto/bookmark-control.md)   
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

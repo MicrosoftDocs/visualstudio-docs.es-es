@@ -1,9 +1,6 @@
 ---
 title: IDebugFunctionObject2::Evaluate | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugFunctionObject2::Evaluate
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f7ec017e67543fab60f98839581aaa85e48f87f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f785e698e0c73146e4b80838d815c300bffa7abc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880331"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991222"
 ---
 # <a name="idebugfunctionobject2evaluate"></a>IDebugFunctionObject2::Evaluate
 Llama a la función y devuelve el valor resultante como un objeto.  

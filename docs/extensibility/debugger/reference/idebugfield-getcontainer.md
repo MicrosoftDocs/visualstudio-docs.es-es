@@ -1,9 +1,6 @@
 ---
 title: IDebugField::GetContainer | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugField::GetContainer
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b9078fdc7849912436c0b8dc3d72338f746b36c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: de664eb2a5c53317da9732101187965e6e5c7509
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942041"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945839"
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
 Este método obtiene el contenedor de un campo.  
@@ -28,7 +25,7 @@ Este método obtiene el contenedor de un campo.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT GetContainer(   
+HRESULT GetContainer(   
    IDebugContainerField** ppContainerField  
 );  
 ```  

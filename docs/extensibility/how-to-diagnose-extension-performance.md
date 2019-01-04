@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: diagnosticar el rendimiento de la extensión | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Diagnóstico de rendimiento de la extensión | Documentos de Microsoft
 ms.date: 11/08/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
 author: BertanAygun
@@ -11,12 +8,12 @@ ms.author: bertaygu
 manager: douge
 ms.workload:
 - bertaygu
-ms.openlocfilehash: d1f2942c9f5987a686226c94e9764b8ab6300050
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fd51728f5e57af1017cb4b280f9ffc9d1c50df98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934930"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943426"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Medir el impacto de la extensión de inicio
 
@@ -31,7 +28,7 @@ Para ayudar a los usuarios a comprender mejor este efecto, hemos agregado una ca
 El objetivo de este documento es ayudar a los desarrolladores de extensiones con la descripción de cómo se calcula el impacto de la extensión. Este documento también describe cómo se puede analizar el impacto de extensión localmente. Localmente análisis del impacto de la extensión determinará si una extensión se muestren como un rendimiento que afectan a la extensión.
 
 > [!NOTE]
-> Este documento se centra en el impacto de las extensiones de carga de inicio y la solución. Las extensiones también afectan el rendimiento de Visual Studio cuando hacen que la interfaz de usuario deje de responder. Para obtener más información sobre este tema, consulte [Cómo: retrasos de la interfaz de usuario diagnosticar causados por las extensiones](how-to-diagnose-ui-delays-caused-by-extensions.md).
+> Este documento se centra en el impacto de las extensiones de carga de inicio y la solución. Las extensiones también afectan el rendimiento de Visual Studio cuando hacen que la interfaz de usuario deje de responder. Para obtener más información sobre este tema, consulte [Cómo: Interfaz de usuario de diagnosticar retrasos causados por las extensiones](how-to-diagnose-ui-delays-caused-by-extensions.md).
 
 ## <a name="how-extensions-can-impact-startup"></a>Cómo las extensiones pueden afectar al inicio
 
@@ -51,11 +48,11 @@ Hemos agregado muchas características a partir de Visual Studio 2015. Estas car
 
 Puede encontrar más detalles sobre estas características en los siguientes documentos:
 
-[Contextos de interfaz de usuario basada en reglas](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): un motor más completo de están basadas en reglas creado en torno a los contextos de interfaz de usuario le permite crear contextos personalizados basados en tipos de proyecto sabores y los atributos. Contextos personalizados pueden utilizarse para cargar un paquete durante escenarios más específicos. Estos escenarios específicos incluyen la presencia de un proyecto con una función específica en lugar de inicio. También permiten contextos personalizados [comando visibilidad esté vinculada a un contexto personalizado](visibilityconstraints-element.md) en función de los componentes del proyecto u otros términos disponibles. Esta característica elimina la necesidad de cargar un paquete para registrar un controlador de consulta de estado de comandos.
+[Contextos de interfaz de usuario basada en reglas](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): Un motor más completo de están basadas en reglas creado en torno a los contextos de interfaz de usuario permite crear contextos personalizados basadas en atributos, tipos y tipos de proyecto. Contextos personalizados pueden utilizarse para cargar un paquete durante escenarios más específicos. Estos escenarios específicos incluyen la presencia de un proyecto con una función específica en lugar de inicio. También permiten contextos personalizados [comando visibilidad esté vinculada a un contexto personalizado](visibilityconstraints-element.md) en función de los componentes del proyecto u otros términos disponibles. Esta característica elimina la necesidad de cargar un paquete para registrar un controlador de consulta de estado de comandos.
 
-[Compatibilidad con paquetes asincrónica](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): la nueva clase de base de AsyncPackage en Visual Studio 2015 permite que los paquetes de Visual Studio que se cargue en segundo plano forma asincrónica si se ha solicitado la carga del paquete mediante un atributo de la carga automática o una consulta de servicio asincrónico . Esta carga en segundo plano permite que el IDE a fin de responder. El IDE está respondiendo incluso mientras se inicializa la extensión en segundo plano y no se verá afectados escenarios críticos, como la carga de inicio y la solución.
+[Compatibilidad con paquetes asincrónica](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): La nueva clase de base de AsyncPackage en Visual Studio 2015 permite que los paquetes de Visual Studio que se cargue en segundo plano forma asincrónica si se solicitó la carga del paquete mediante un atributo de la carga automática o una consulta de servicio asincrónico. Esta carga en segundo plano permite que el IDE a fin de responder. El IDE está respondiendo incluso mientras se inicializa la extensión en segundo plano y no se verá afectados escenarios críticos, como la carga de inicio y la solución.
 
-[Servicios asincrónicos](how-to-provide-an-asynchronous-visual-studio-service.md): con compatibilidad asincrónica de paquete, también hemos agregado compatibilidad para consultar los servicios de forma asincrónica y poder registrar los servicios asincrónicos. Más importante aún estamos trabajando de conversión de los servicios de Visual Studio principales para admitir la consulta asincrónica para que se produzca la mayoría del trabajo en una consulta de async en subprocesos en segundo plano. SComponentModel (host de MEF de Visual Studio) es uno de los servicios principales que ahora es compatible con una consulta asincrónica para permitir las extensiones admitir la carga asincrónica por completo.
+[Servicios asincrónicos](how-to-provide-an-asynchronous-visual-studio-service.md): Con compatibilidad asincrónica de paquete, también hemos agregado compatibilidad para consultar los servicios de forma asincrónica y poder registrar los servicios asincrónicos. Más importante aún estamos trabajando de conversión de los servicios de Visual Studio principales para admitir la consulta asincrónica para que se produzca la mayoría del trabajo en una consulta de async en subprocesos en segundo plano. SComponentModel (host de MEF de Visual Studio) es uno de los servicios principales que ahora es compatible con una consulta asincrónica para permitir las extensiones admitir la carga asincrónica por completo.
 
 ## <a name="reducing-impact-of-auto-loaded-extensions"></a>Reducir el impacto de auto extensiones cargadas
 
@@ -167,11 +164,11 @@ Ahora la vista solo mostrará el costo asociado con los ensamblados relacionados
 
 Para el ejemplo anterior, algunos interesante llamada pilas sería:
 
-1. Uso de E/S `System.IO` clase: mientras inclusivo costo de estos marcos podría no ser demasiado costosa en el seguimiento, son una posible causa de un problema ya que la velocidad de E/S de archivos puede variar de un equipo a otro.
+1. Uso de E/S `System.IO` clase: Aunque inclusivo costo de estos marcos podría no ser demasiado costosa en el seguimiento, son una posible causa de un problema ya que la velocidad de E/S de archivos puede variar de un equipo a otro.
 
    ![marcos de e/s del sistema](media/perfview-system-io-frames.png)
 
-2. Bloqueo de las llamadas a la espera en otro trabajo asincrónico: en este caso, el tiempo inclusivo representaría el tiempo que se bloquea el subproceso principal tras la finalización del trabajo asincrónico.
+2. Bloqueo de las llamadas a la espera en otro trabajo asincrónico: En este caso, el tiempo inclusivo representaría el tiempo que se bloquea el subproceso principal tras la finalización del trabajo asincrónico.
 
    ![marcos de llamada de bloqueo](media/perfview-blocking-call-frames.png)
 

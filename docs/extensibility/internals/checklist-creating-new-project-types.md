@@ -1,9 +1,6 @@
 ---
-title: 'Lista de comprobación: Creación de nuevos tipos de proyecto | Microsoft Docs'
-ms.custom: ''
+title: 'Lista de comprobación: Creación de nuevos tipos de proyecto | Documentos de Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], creating new types
@@ -14,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3da952e22515b48f06fdc50b34b2eb49f5709cc2
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: edd4c0a1bf4b6cbc76c2bc4bdbc597efd348799c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370580"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861590"
 ---
 # <a name="checklist-create-new-project-types"></a>Lista de comprobación: Crear nuevos tipos de proyecto
 Debe completar varias tareas para crear un nuevo tipo de proyecto. La siguiente lista de comprobación proporciona a una guía para esas tareas:  
   
 1.  Diseñe la funcionalidad para el tipo de proyecto nuevo. Para obtener más información, consulte [decisiones de diseño de tipo de proyecto](../../extensibility/internals/project-type-design-decisions.md).  
   
-2.  Determinar qué editores se utilizan para código y otros elementos de proyecto. Puede usar el núcleo o editores estándar, o puede crear y usar los editores específicos del proyecto. Para obtener más información, consulte [crear editores personalizados y diseñadores](../../extensibility/creating-custom-editors-and-designers.md) y [Cómo: abrir editores específicos del proyecto](../../extensibility/how-to-open-project-specific-editors.md).  
+2.  Determinar qué editores se utilizan para código y otros elementos de proyecto. Puede usar el núcleo o editores estándar, o puede crear y usar los editores específicos del proyecto. Para obtener más información, consulte [crear editores personalizados y diseñadores](../../extensibility/creating-custom-editors-and-designers.md) y [Cómo: Apertura de editores específicos del proyecto](../../extensibility/how-to-open-project-specific-editors.md).  
   
 3.  Determinar el nivel de participación que tendrán los elementos de proyecto en el **vista de clases** y **Examinador de objetos**. Para obtener más información, consulte [compatibilidad con herramientas de exploración de símbolos](../../extensibility/internals/supporting-symbol-browsing-tools.md).  
   
@@ -56,7 +53,7 @@ Debe completar varias tareas para crear un nuevo tipo de proyecto. La siguiente 
   
 6.  Probar, depurar e iniciar el tipo de proyecto.  
   
-7.  Mostrar el proyecto en el **proyecto** pestaña de la **Agregar referencia** cuadro de diálogo estableciendo `VARIANT_TRUE` como el valor de `VSHPROPID_ShowProjInSolutionPage`. Para obtener más información, consulte <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>.  
+7.  Mostrar el proyecto en el **proyecto** pestaña de la **Agregar referencia** cuadro de diálogo estableciendo `VARIANT_TRUE` como el valor de `VSHPROPID_ShowProjInSolutionPage`. Para obtener más información, vea <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>.  
   
 8.  Creación de Microsoft Installer (*.msi*) el archivo para instalar los paquetes VSPackage. Para obtener más información, consulte [instalar VSPackages con Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [registrar un tipo de proyecto](../../extensibility/internals/registering-a-project-type.md), y [VSPackages](../../extensibility/internals/vspackages.md).  
   

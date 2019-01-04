@@ -1,9 +1,6 @@
 ---
 title: Galerías privadas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSIX galleries, private
@@ -14,17 +11,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e91b3ecec969ab6a717598d8dfb77e674890216a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: f1be2f2327ac48f46894f66d35f6a392608b6177
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638588"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897779"
 ---
 # <a name="private-galleries"></a>Galerías privadas
 Puede compartir los controles, plantillas y herramientas que desarrolla publicándolas en un *Galería privada* en la intranet de su organización, como se indica a continuación:  
   
--   Crear una Atom (RSS) de la fuente en una ubicación central (repositorio) configurada de forma adecuada de la intranet. Para obtener más información, consulte [Cómo: crear una fuente Atom para una galería privada](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).  
+-   Crear una Atom (RSS) de la fuente en una ubicación central (repositorio) configurada de forma adecuada de la intranet. Para obtener más información, vea [Cómo: Crear una fuente Atom para una galería privada](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).  
   
 -   Distribuir un *.pkgdef* archivo que describe la Galería privada. Se recomienda esta configuración para los administradores que deseen conectarse una galería privada a muchos equipos al mismo tiempo.  
   
@@ -54,7 +51,7 @@ Puede compartir los controles, plantillas y herramientas que desarrolla publicá
   
 ```  
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]  
-@={URI}  (REG_SZ)  
+@={URI}  (REG_SZ)  
 Disabled=0 | 1 (DWORD)  
 Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)  
 Protocol=Atom|Sharepoint (REG_SZ)  
@@ -64,7 +61,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 ```  
   
- Para obtener más información, consulte [Cómo: administrar una galería privada mediante la configuración del registro](../extensibility/how-to-manage-a-private-gallery-by-using-registry-settings.md).  
+ Para obtener más información, vea [Cómo: Administrar una galería privada mediante la configuración del registro](../extensibility/how-to-manage-a-private-gallery-by-using-registry-settings.md).  
   
 ## <a name="install-extensions-from-a-private-gallery"></a>Instalar extensiones desde una galería privada  
  Puede buscar e instalar extensiones de Visual Studio desde una galería privada en **extensiones y actualizaciones**. Los pasos siguientes utilizan una galería privada denominada `My Gallery`.  

@@ -1,9 +1,6 @@
 ---
 title: Personalización de Windows de código mediante la API heredada | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - code windows
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 454d58a48abafe9b23f8a812e5d40b9fc6477b50
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 07627ddbc8cf8e6f030418956931ad2e4af544af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499359"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883044"
 ---
 # <a name="customize-code-windows-by-using-the-legacy-api"></a>Personalizar las ventanas de código mediante el uso de la API heredada
 Una ventana de código es un objeto de ventana de documento que admita una o varias vistas de texto. Las características exactas de una ventana de código dependen del servicio de lenguaje asociado. En el modo de interfaz de múltiples documentos (MDI), la ventana de código es el marco MDI secundario.  
@@ -36,10 +33,10 @@ Ventana Código
  `Customizing Code Windows by Using the Legacy API`  
  Explica cómo personalizar las ventanas de código mediante la API heredada.  
   
- [Cómo: hospedar un editor en otro editor](../extensibility/how-to-host-an-editor-in-another-editor.md)  
+ [Cómo: Hospedar un editor en otro editor](../extensibility/how-to-host-an-editor-in-another-editor.md)  
  Explica cómo hospedar un segundo editor dentro de una ventana del editor.  
   
- [Cómo: desencadenar eventos cuando el editor pierde el foco](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
+ [Cómo: Desencadenar eventos cuando el editor pierde el foco](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
  Explica cómo asociar una vista de documento a un objeto de datos del documento.  
   
 ## <a name="see-also"></a>Vea también  

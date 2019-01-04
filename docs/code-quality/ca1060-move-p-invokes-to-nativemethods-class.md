@@ -1,8 +1,7 @@
 ---
-title: 'CA1060: Mueva P/Invokes a la clase NativeMethods'
+title: 'CA1060: Mover P/Invokes a la clase NativeMethods'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - MovePInvokesToNativeMethodsClass
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bf3e3f01eb6decb1ac2705655675455485bceb5b
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e1dc9cf738e74390ea1867966d20f4246d0b1f8c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551956"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874237"
 ---
-# <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: Mueva P/Invokes a la clase NativeMethods
+# <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: Mover P/Invokes a la clase NativeMethods
 
 |||
 |-|-|
@@ -94,7 +93,7 @@ Estas clases se declaran como `internal` (`Friend`, en Visual Basic) y declarar 
 ## <a name="unsafenativemethods-example"></a>Ejemplo de UnsafeNativeMethods
 
 ### <a name="description"></a>Descripción
- Los métodos que no se puede llamar de forma segura y que podría provocar efectos secundarios de P/Invoke deben colocarse en una clase que se denomina **UnsafeNativeMethods**. Estos métodos deben comprobarse exhaustivamente para asegurarse de que no se exponen al usuario involuntariamente. La regla [CA2118: el uso de SuppressUnmanagedCodeSecurityAttribute revisión](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) puede ayudarle con esto. Como alternativa, los métodos deben tener otro permiso que se requiere en lugar de **UnmanagedCode** cuando usen.
+ Los métodos que no se puede llamar de forma segura y que podría provocar efectos secundarios de P/Invoke deben colocarse en una clase que se denomina **UnsafeNativeMethods**. Estos métodos deben comprobarse exhaustivamente para asegurarse de que no se exponen al usuario involuntariamente. La regla [CA2118: Revise el uso de SuppressUnmanagedCodeSecurityAttribute](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) puede ayudarle con esto. Como alternativa, los métodos deben tener otro permiso que se requiere en lugar de **UnmanagedCode** cuando usen.
 
  El ejemplo siguiente se muestra un **Cursor.Hide** método que encapsula el **ShowCursor** función desde user32.dll.
 

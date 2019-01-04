@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e9f4c77f06e1a899cd6490479802ef300bea4256
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 4e3f767eeb6ed79aed3281cbe88b1eb1fe46738d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966458"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847493"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Trabajar con soluciones de lenguajes específicos de dominio
 Un lenguaje específico de dominio (DSL) se crea mediante una solución de Visual Studio. Esta sección trata sobre cómo configurar y personalizar la solución.
@@ -28,14 +27,14 @@ Un lenguaje específico de dominio (DSL) se crea mediante una solución de Visua
 
  [Elegir una plantilla de solución de lenguajes específicos de dominio](../modeling/choosing-a-domain-specific-language-solution-template.md) explica cómo elegir una plantilla para iniciar el proyecto DSL.
 
- [Cómo: crear soluciones de lenguajes específicos de dominio](../modeling/how-to-create-a-domain-specific-language-solution.md) se describen los pasos para configurar un DSL.
+ [Cómo: Crear soluciones de lenguajes específicos de dominio](../modeling/how-to-create-a-domain-specific-language-solution.md) se describen los pasos para configurar un DSL.
 
  [Trabajar con diagramas de definición DSL](../modeling/working-with-the-dsl-definition-diagram.md) explica las partes del diagrama.
 
  [Trabajar con el Explorador de lenguajes específicos de dominio](../modeling/working-with-the-domain-specific-language-explorer.md) explica el contenido del explorador
 
- [Cómo: cambiar el Namespace de un lenguaje específico de dominio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md) el código que se genera desde un DSL tiene un espacio de nombres que se establece cuando se inicia la solución, pero puede cambiarlo posteriormente.
+ [Cómo: Cambiar el Namespace de un lenguaje específico de dominio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md) el código que se genera desde un DSL tiene un espacio de nombres que se establece cuando se inicia la solución, pero puede cambiarlo posteriormente.
 
- [Cómo: ampliar el Diseñador de lenguaje específico de dominio](../modeling/how-to-extend-the-domain-specific-language-designer.md) puede personalizar el Diseñador de DSL con comandos de menú.
+ [Cómo: Ampliar el Diseñador de lenguaje específico de dominio](../modeling/how-to-extend-the-domain-specific-language-designer.md) puede personalizar el Diseñador de DSL con comandos de menú.
 
  [Cómo automatizar Transformar todas las plantillas](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)) para evitar hacer clic en Transformar todas las plantillas, puede realizar una parte de la compilación automática.

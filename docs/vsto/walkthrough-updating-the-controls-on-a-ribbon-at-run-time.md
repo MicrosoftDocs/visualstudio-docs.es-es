@@ -1,9 +1,6 @@
 ---
 title: 'Tutorial: Actualizar los controles de una cinta en tiempo de ejecución'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 40072b1dcd6b24f552a3c87c8241ea4498229053
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: cd318be64bb15f72a0bd0147e2b14e79301fb7d6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389155"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926960"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>Tutorial: Actualizar los controles de una cinta en tiempo de ejecución
 
@@ -68,7 +65,7 @@ En primer lugar, cree un proyecto de complemento de VSTO de Outlook.
 
 3.  Guarde el proyecto en el directorio de proyecto predeterminado.
 
-     Para obtener más información, consulte [Cómo: proyectos de creación de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+     Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 ## <a name="design-a-custom-ribbon-group"></a>Diseñar un grupo personalizado de la cinta de opciones
 
@@ -294,7 +291,7 @@ Puede aprender más acerca de la personalización de la interfaz de usuario de O
 
 -   Agregar una interfaz de usuario basada en contexto a cualquier personalización de nivel de documento. Para obtener más información, consulte [información general sobre el panel de acciones](../vsto/actions-pane-overview.md).
 
--   Extender un formulario estándar o personalizado de Microsoft Office Outlook. Para obtener más información, consulte [Tutorial: diseñar un área de formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
+-   Extender un formulario estándar o personalizado de Microsoft Office Outlook. Para obtener más información, vea [Tutorial: Diseñar un formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
 -   Agregar un panel de tareas personalizado a Outlook. Para obtener más información, consulte [paneles de tareas personalizados](../vsto/custom-task-panes.md).
 
@@ -303,13 +300,13 @@ Puede aprender más acerca de la personalización de la interfaz de usuario de O
 - [Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Información general de la cinta de opciones](../vsto/ribbon-overview.md)
 - [Language-Integrated Query (LINQ)](/dotnet/csharp/linq/index)
-- [Cómo: empezar a personalizar la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [Cómo: Introducción a la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [Diseñador de la cinta](../vsto/ribbon-designer.md)
 - [Tutorial: Crear una pestaña personalizada usando el Diseñador de cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Información general sobre el modelo de objetos de cinta de opciones](../vsto/ribbon-object-model-overview.md)
 - [Personalizar una cinta de opciones para Outlook](../vsto/customizing-a-ribbon-for-outlook.md)
-- [Cómo: cambiar la posición de una pestaña en la cinta de opciones](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
-- [Cómo: personalizar una pestaña integrada](../vsto/how-to-customize-a-built-in-tab.md)
-- [Cómo: agregar controles a la vista Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
-- [Cómo: exportar una cinta desde el Diseñador de cinta al XML de cinta](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
-- [Cómo: agregar en Mostrar errores de interfaz de usuario](../vsto/how-to-show-add-in-user-interface-errors.md)
+- [Cómo: Cambiar la posición de una pestaña en la cinta de opciones](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
+- [Cómo: Personalizar una pestaña integrada](../vsto/how-to-customize-a-built-in-tab.md)
+- [Cómo: Agregar controles a la vista Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
+- [Cómo: Exportar una cinta desde el Diseñador de cinta al XML de cinta](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
+- [Cómo: Mostrar errores de interfaz de usuario del complemento](../vsto/how-to-show-add-in-user-interface-errors.md)

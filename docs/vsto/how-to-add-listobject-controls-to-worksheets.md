@@ -1,9 +1,6 @@
 ---
 title: Procedimiento Agregar controles ListObject a hojas de cálculo
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ae6abd9791bfaa9ce0e7c15f1f6f66034a75c6c7
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 891b7fbbc4f2bf0fc0fa40fe983435a19978d081
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646976"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909065"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Procedimiento Agregar controles ListObject a hojas de cálculo
   Puede agregar <xref:Microsoft.Office.Tools.Excel.ListObject> controles a una hoja de cálculo de Microsoft Office Excel en tiempo de diseño y en tiempo de ejecución en los proyectos de nivel de documento.  
@@ -98,5 +95,3 @@ ms.locfileid: "53646976"
  [Cómo: Cambiar el tamaño de los controles ListObject](../vsto/how-to-resize-listobject-controls.md)   
  [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Limitaciones de programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

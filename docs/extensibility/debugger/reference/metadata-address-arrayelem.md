@@ -1,9 +1,6 @@
 ---
 title: METADATA_ADDRESS_ARRAYELEM | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - METADATA_ADDRESS_ARRAYELEM
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ab973f1f3389d6a861a0629dae3e2eb7f1b88f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 80839c9c2a73e71d0d70301e8c4dfcd81913ed8c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926558"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822937"
 ---
 # <a name="metadataaddressarrayelem"></a>METADATA_ADDRESS_ARRAYELEM
 Esta estructura representa un elemento de matriz dentro de una matriz.  
@@ -56,7 +53,7 @@ public struct METADATA_ADDRESS_ARRAYELEM {
 ## <a name="requirements"></a>Requisitos  
  Encabezado: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   

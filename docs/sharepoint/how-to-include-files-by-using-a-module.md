@@ -1,13 +1,8 @@
 ---
-title: 'Cómo: incluir archivos mediante un módulo | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Incluir archivos mediante un módulo | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5c5152221e5e58504ba84e0ad0f31511b4d93aa0
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d0cfe558c21a941ed5cc16eccef2e014acfbcdb7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119379"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923502"
 ---
-# <a name="how-to-include-files-by-using-a-module"></a>Cómo: incluir archivos mediante un módulo
+# <a name="how-to-include-files-by-using-a-module"></a>Procedimiento Incluir archivos mediante un módulo
   *Módulos* (para que no se debe confundir con [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] módulos) son contenedores que permiten implementar imágenes, archivos de texto o archivos como páginas maestras de ASPX en SharePoint.  
   
  Puede elegir implementar un archivo en una biblioteca de documentos o como un archivo normal (por ejemplo, default.aspx) fuera de una biblioteca de documentos. Para agregar un archivo a una biblioteca de documentos, especifique `Type="GhostableInLibrary"` como un atributo en el **archivo** elemento. Esta opción indica que la creación de un elemento de lista que acompañe al archivo cuando se agrega a la biblioteca de SharePoint. Para implementar un archivo fuera de una biblioteca de documentos, especifique `Type="Ghostable"` o simplemente omita el **tipo** atributo.  
@@ -71,4 +66,3 @@ ms.locfileid: "37119379"
 ## <a name="see-also"></a>Vea también
  [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
  [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

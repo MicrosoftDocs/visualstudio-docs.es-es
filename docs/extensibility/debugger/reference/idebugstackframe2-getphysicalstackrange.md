@@ -1,9 +1,6 @@
 ---
 title: IDebugStackFrame2::GetPhysicalStackRange | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugStackFrame2::GetPhysicalStackRange
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1b46dd9993eb8a7611b4d84211016168d609101
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56121c7a0e58d90fd3ab0384a39916c102056c50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950386"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958701"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 Obtiene una representación de dependiente de la máquina del intervalo de direcciones físicas asociado con un marco de pila.  
@@ -28,14 +25,14 @@ Obtiene una representación de dependiente de la máquina del intervalo de direc
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT GetPhysicalStackRange (   
+HRESULT GetPhysicalStackRange (   
    UINT64* paddrMin,  
    UINT64* paddrMax  
 );  
 ```  
   
 ```csharp  
-int GetPhysicalStackRange (   
+int GetPhysicalStackRange (   
    out ulong paddrMin,  
    out ulong paddrMax  
 );  

@@ -1,9 +1,6 @@
 ---
 title: Ampliación de las opciones y configuración de usuario | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - user preferences
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60e5f70e471c3385ccae5ee39e9e68db1e93b20c
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: d59fa13d65f04631c41681fdb82c18624f7d69a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498638"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883125"
 ---
 # <a name="extend-user-settings-and-options"></a>Extender las opciones y configuración de usuario
 En Visual Studio, hay dos formas principales para conservar las preferencias del usuario. El **herramientas** > **opciones** páginas permiten a los usuarios definir sus propios valores para muchos tipos diferentes de configuración general y específicos del idioma. Configuración de usuario permite a los usuarios especificar las propiedades generales de configuración de Visual Studio. Para obtener más información acerca de las páginas de opciones, consulte [opciones y páginas de opciones](../extensibility/internals/options-and-options-pages.md). Para obtener más información acerca de la configuración de usuario, consulte [soporte técnico para la configuración de usuario](../extensibility/internals/support-for-user-settings.md).  

@@ -1,9 +1,6 @@
 ---
 title: m_children (campo) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - m_children field, ContingentProperties class [.NET Framework debug engines]
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e27704484e5cfb320c8b65432fb3efb283054019
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: a5d924e0439be2f8ab615d18a61f1303994b8dde
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231153"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923697"
 ---
 # <a name="mchildren-field"></a>m_children campo
 La lista de tareas secundarias que están registrados en esta tarea.  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Espacio de nombres:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Ensamblado:** mscorlib (en *mscorlib.dll*)  
   

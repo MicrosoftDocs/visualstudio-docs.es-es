@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Agregar un controlador para arrastrar y colocar'
+title: Procedimiento Agregar un controlador para arrastrar y colocar
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,15 +8,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 260a1fdb78f1a9acf72a9789f12d7024cafe0c93
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 90385b233e859bf1cdd8ea1617b94efe58ec4cbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859203"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876398"
 ---
-# <a name="how-to-add-a-drag-and-drop-handler"></a>Cómo: Agregar un controlador para arrastrar y colocar
+# <a name="how-to-add-a-drag-and-drop-handler"></a>Procedimiento Agregar un controlador para arrastrar y colocar
 
 Puede agregar controladores para eventos de arrastrar y colocar su DSL, para que los usuarios podrán arrastrar elementos al diagrama desde otros diagramas o desde otras partes de Visual Studio. También puede agregar controladores para eventos como doble clic. Juntos, los controladores de arrastrar y colocar y haga doble clic se conocen como *controladores de gestos*.
 
@@ -70,7 +69,7 @@ En el nuevo archivo, defina una clase parcial para la clase de forma o diagrama 
 
 -   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> : Este método se llama cuando el usuario hace doble clic en la forma o diagrama.
 
-     Para obtener más información, consulte [Cómo: interceptar un clic en una forma o decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
+     Para obtener más información, vea [Cómo: Interceptar un clic en una forma o decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
 Defina `IsAcceptableDropItem(e)` para determinar si el elemento arrastrado es aceptable, y ProcessDragDropItem(e) para actualizar su modelo cuando el elemento se suelta. Estos métodos deben extraer primero el elemento de los argumentos de evento. Para obtener información acerca de cómo hacerlo, consulte [cómo obtener una referencia al elemento arrastrado](#extracting).
 
@@ -322,7 +321,7 @@ Las propiedades `Data` y `Prototype` de los argumentos de evento solo contienen 
     }  }  }
     ```
 
-## <a name="using-mouse-actions-dragging-compartment-items"></a>Usar acciones del Mouse: Arrastrar elementos de compartimiento
+## <a name="using-mouse-actions-dragging-compartment-items"></a>Usar acciones del mouse: arrastrar elementos de compartimiento
 
 Puede escribir un controlador que intercepta acciones del mouse en los campos de una forma. En el siguiente ejemplo permite al usuario reordenar los elementos de un compartimiento arrastrando con el mouse.
 

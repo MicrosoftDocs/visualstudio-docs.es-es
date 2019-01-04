@@ -3,7 +3,6 @@ title: Diseñador de flujo de trabajo - Diseñador de actividades Send
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.Send.UI
 ms.assetid: b514f2e4-767c-4b94-ac61-dd3a54d4b96d
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cbbcc01001d663e927431b99915bf69d9a223ce
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 788884590054b29ae31df9c5ba2ca31ac0ea5c49
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836429"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954034"
 ---
 # <a name="send-activity-designer"></a>Diseñador de actividad Sent
 
@@ -46,7 +45,7 @@ En la tabla siguiente se muestran las propiedades <xref:System.ServiceModel.Acti
 | <xref:System.ServiceModel.Activities.Send.OperationName%2A> | True | El nombre de la operación de servicio llamada por esta actividad <xref:System.ServiceModel.Activities.Send>. Esta propiedad se utiliza para construir el valor predeterminado para el **acción** propiedad si el **acción** propiedad no se establece explícitamente. |
 | <xref:System.ServiceModel.Activities.Send.ServiceContractName%2A> | True | El nombre del contrato de servicios que implementa el servicio al que se va a llamar. |
 | <xref:System.ServiceModel.Activities.Send.Content%2A> | False | Especifica el mensaje o contenido del parámetro que se va a recibir. Puede ser una actividad <xref:System.ServiceModel.Activities.ReceiveMessageContent> o una actividad <xref:System.ServiceModel.Activities.ReceiveParametersContent>. Editar esta propiedad seleccionando el botón de puntos suspensivos junto a la **contenido** campo en la cuadrícula de propiedades o haga clic en el **definir...**  situado junto a la **contenido** etiquetar en el **recepción** superficie del Diseñador de actividad. Ambos muestran el **definición de contenido** cuadro de diálogo. Para obtener más información sobre cómo usar este cuadro, vea el [cuadro de diálogo de definición de contenido](../workflow-designer/content-definition-dialog-box.md) tema. |
-| <xref:System.ServiceModel.Activities.Send.CorrelatesWith%2A> | False | Especifica la clase <xref:System.ServiceModel.Activities.CorrelationHandle> que se utiliza para enrutar el mensaje hacia la instancia de flujo de trabajo adecuada.<br /><br /> Haga clic en el botón de puntos suspensivos junto a la <xref:System.ServiceModel.Activities.Send.CorrelatesWith%2A> propiedad en la cuadrícula de propiedades para abrir el **Editor de expresiones** cuadro de diálogo. Para obtener más información sobre el uso de este cuadro de diálogo, vea el [Cómo: usar el Editor de expresiones](../workflow-designer/how-to-use-the-expression-editor.md) tema. |
+| <xref:System.ServiceModel.Activities.Send.CorrelatesWith%2A> | False | Especifica la clase <xref:System.ServiceModel.Activities.CorrelationHandle> que se utiliza para enrutar el mensaje hacia la instancia de flujo de trabajo adecuada.<br /><br /> Haga clic en el botón de puntos suspensivos junto a la <xref:System.ServiceModel.Activities.Send.CorrelatesWith%2A> propiedad en la cuadrícula de propiedades para abrir el **Editor de expresiones** cuadro de diálogo. Para obtener más información sobre el uso de este cuadro de diálogo, vea el [Cómo: Utilice el Editor de expresiones](../workflow-designer/how-to-use-the-expression-editor.md) tema. |
 | <xref:System.ServiceModel.Activities.Send.CorrelationInitializers%2A> | False | Especifica la colección de objetos <xref:System.ServiceModel.Activities.CorrelationInitializer> que inicializan varios objetos <xref:System.ServiceModel.Activities.CorrelationHandle> que configuran esta actividad <xref:System.ServiceModel.Activities.Send> en el flujo de trabajo. Haga clic en el botón de puntos suspensivos junto a la <xref:System.ServiceModel.Activities.Send.CorrelationInitializers%2A> propiedad en la cuadrícula de propiedades para abrir el **agregar inicializadores de correlación** cuadro de diálogo. Para obtener más información sobre el uso de este cuadro, vea el [cuadro de diálogo Agregar CorrelationInitializers](../workflow-designer/add-correlationinitializers-dialog-box.md) tema. |
 | <xref:System.ServiceModel.Activities.Send.KnownTypes%2A> | False | Una colección de tipos conocidos para la operación de servicio que va llamar esta actividad <xref:System.ServiceModel.Activities.Send>. Esta propiedad se puede utilizar junto con el conjunto de propiedades <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> para <xref:System.Runtime.Serialization.DataContractSerializer>. Se ignorará si se usa <xref:System.Xml.Serialization.XmlSerializer>.<br /><br /> Seleccione el botón de puntos suspensivos junto a la **KnownTypes** campo en la cuadrícula de propiedades para mostrar el **Editor de la colección de tipo** cuadro de diálogo con el que puede agregar los tipos pertinentes.<br /><br /> Seleccione el botón de puntos suspensivos junto a la **KnownTypes** campo en la cuadrícula de propiedades para mostrar el **Editor de la colección de tipo** cuadro de diálogo con el que puede agregar los tipos pertinentes. Para obtener más información sobre el uso de este cuadro, vea el [cuadro de diálogo del Editor de colección de tipo](../workflow-designer/type-collection-editor-dialog-box.md) tema. |
 | <xref:System.ServiceModel.Activities.Send.ProtectionLevel%2A> | True | Especifica la enumeración <xref:System.Net.Security.ProtectionLevel> para el mensaje.<br /><br /> 1. <xref:System.Net.Security.ProtectionLevel> significa que sólo la autenticación.<br />2. <xref:System.Net.Security.ProtectionLevel> significa firmar datos para ayudar a garantizar la integridad de los datos transmitidos.<br />3. <xref:System.Net.Security.ProtectionLevel> significa cifrar y firmar datos para ayudar a garantizar la confidencialidad e integridad de los datos transmitidos. |

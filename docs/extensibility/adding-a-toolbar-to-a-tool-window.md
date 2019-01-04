@@ -1,9 +1,6 @@
 ---
 title: Agregar una barra de herramientas a una ventana de herramientas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, adding toolbars
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59e540ec840bc7aadb2465c7f7c71433bf2ddb27
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 3eefb192c5e0ec660a614af8c32ecc34cc683888
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39150768"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934432"
 ---
 # <a name="add-a-toolbar-to-a-tool-window"></a>Agregar una barra de herramientas a una ventana de herramientas
 Este tutorial muestra cómo agregar una barra de herramientas a una ventana de herramientas.  

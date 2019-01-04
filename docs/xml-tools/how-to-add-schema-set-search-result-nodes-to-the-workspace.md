@@ -1,8 +1,7 @@
 ---
-title: Agregar nodos de resultados de búsqueda XML esquemas conjunto al área de trabajo
+title: Agregar nodos de resultados de búsqueda del conjunto de esquemas XML al área de trabajo
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: ff33b3cc-4db9-4b4e-9378-b45ed5999b18
 author: gewarren
@@ -10,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04e74057bd059c82010678b7de571ff180e7fbfe
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 9e9f004943474f9b1c0fb449c1aec23f70034c3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751915"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875039"
 ---
-# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Cómo: agregar nodos de resultados de búsqueda de conjunto de esquema para el área de trabajo
+# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Procedimiento Agregar nodos de resultados de búsqueda de conjunto de esquemas al área de trabajo
 
-Este tema explica cómo agregar nodos que están resaltados en el **Explorador de esquemas XML** como resultado de una búsqueda de palabra clave en el área de trabajo.
+En este tema se explica cómo agregar nodos que están resaltados en la **Explorador de esquemas XML** como resultado de una búsqueda de palabra clave en el área de trabajo.
 
 > [!NOTE]
 > Solo los nodos globales se pueden agregar a la [área de trabajo](../xml-tools/xml-schema-designer-workspace.md).
@@ -29,16 +28,16 @@ Este tema explica cómo agregar nodos que están resaltados en el **Explorador d
 
 ## <a name="to-add-schema-set-result-nodes"></a>Para agregar nodos de resultados del conjunto de esquemas
 
-1.  Siga los pasos de [Cómo: crear y editar un archivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1.  Siga los pasos de [Cómo: Crear y editar un archivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
 2.  Escriba "purchaseOrder" en el cuadro de texto de búsqueda de la [explorador XML](../xml-tools/xml-schema-explorer.md) barra de herramientas y haga clic en el botón de búsqueda.
 
      ![Búsqueda de palabras clave en el Explorador de esquemas XML](../xml-tools/media/schemaexplorersearch.gif)
 
-     Los resultados de búsqueda se resaltan en el **Explorador de esquemas XML** y se marcan en la barra de desplazamiento vertical.
+     Los resultados de búsqueda se resaltan en la **Explorador de esquemas XML** y marcan en la barra de desplazamiento vertical.
 
-3.  Agregar los resultados de búsqueda al área de trabajo haciendo clic en el **agregar nodos resaltados al área de trabajo** botón en el panel de resultados de resumen.
+3.  Agregar los resultados de búsqueda al área de trabajo, haga clic en el **agregar nodos resaltados al área de trabajo** botón en el panel de resultados de resumen.
 
      ![Resultado de búsqueda en el Explorador de esquemas XML](../xml-tools/media/schemaexplorersearchresult.gif)
 
-     El `purchaseOrder` nodo y `PurchaseOrderType` nodo aparece junto a la otra en la superficie de diseño de la [vista gráfico](../xml-tools/graph-view.md). Dado que los dos nodos están relacionados (el elemento `purchaseOrder` es del tipo `PurchaseOrderType`), se dibuja una flecha entre ellos.
+     El `purchaseOrder` nodo y el `PurchaseOrderType` nodo aparecen junto a la otra en la superficie de diseño de la [vista gráfico](../xml-tools/graph-view.md). Dado que los dos nodos están relacionados (el elemento `purchaseOrder` es del tipo `PurchaseOrderType`), se dibuja una flecha entre ellos.

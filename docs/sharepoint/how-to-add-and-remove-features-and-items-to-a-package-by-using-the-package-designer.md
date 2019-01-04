@@ -1,15 +1,10 @@
 ---
-title: 'Cómo: agregar y quitar características y elementos de un paquete mediante el Diseñador de paquetes | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Agregar y quitar características y elementos de un paquete mediante el Diseñador de paquetes | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.PackageDesignerDesign
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 60a1de6a499b033f99844280c3d2aa73b6ed8ba6
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 5b28db9329debba9e46606d0f57117e4f01a8f26
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294973"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906922"
 ---
-# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Cómo: agregar y quitar características y elementos de un paquete mediante el Diseñador de paquetes
+# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Procedimiento Agregar y quitar características y elementos de un paquete mediante el Diseñador de paquetes
   Cuando se crea una solución de SharePoint, Visual Studio agrega las características de SharePoint predeterminado para el paquete de la solución. Antes de la implementación final, puede agregar y quitar elementos de proyecto de SharePoint y las características para modificar el paquete de SharePoint.  
   
- Como alternativa, puede usar el Explorador de empaquetado para agregar y quitar elementos de proyecto de SharePoint. También puede ver y cambiar la jerarquía de los elementos de proyecto de SharePoint y características que se colocan en el paquete (.wsp). Para obtener más información, consulte [Cómo: agregar y quitar características y elementos de un paquete mediante el Explorador de empaquetado](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
+ Como alternativa, puede usar el Explorador de empaquetado para agregar y quitar elementos de proyecto de SharePoint. También puede ver y cambiar la jerarquía de los elementos de proyecto de SharePoint y características que se colocan en el paquete (.wsp). Para obtener más información, vea [Cómo: Agregar y quitar características y elementos de un paquete mediante el Explorador de empaquetado](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
   
 ## <a name="add-features-to-a-sharepoint-package"></a>Agregar características a un paquete de SharePoint  
  Puede usar el Diseñador de paquetes para agregar características a un paquete de SharePoint.  
@@ -38,7 +33,7 @@ ms.locfileid: "51294973"
   
 1. Abra el **diseñador del paquete**.  
   
-    Para obtener más información, consulte [Cómo: personalizar un paquete de solución SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+    Para obtener más información, vea [Cómo: Personalizar un paquete de solución SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 2. Agregue una o varias características de SharePoint mediante la realización de uno o varios de los pasos siguientes:  
   
@@ -63,6 +58,5 @@ ms.locfileid: "51294973"
   
 ## <a name="see-also"></a>Vea también
  [Crear paquetes de solución SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)   
- [Cómo: personalizar un paquete de solución de SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
- [Cómo: crear un paquete](https://msdn.microsoft.com/b24be45c-e91d-49bb-afb0-7b265404214b)  
-  
+ [Cómo: Personalizar un paquete de solución de SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
+ [Cómo: Crear un paquete](https://msdn.microsoft.com/b24be45c-e91d-49bb-afb0-7b265404214b)  
