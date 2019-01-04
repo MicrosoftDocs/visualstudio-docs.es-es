@@ -2,7 +2,6 @@
 title: 'CA1816: Llamar a GC.SuppressFinalize correctamente'
 ms.date: 06/30/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1816
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c874aac5d84d45159ef7d169ab2749269fa0905
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: a3dcfdf8f094d50c5f462ae1a9d0ef4e85a0bb87
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174236"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882291"
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816: Llamar a GC.SuppressFinalize correctamente
 
@@ -81,7 +80,7 @@ En este ejemplo se muestra un método que correctamente las llamadas <xref:Syste
 
 ## <a name="related-rules"></a>Reglas relacionadas
 
-- [CA2215: Los métodos Dispose deben llamar al método Dispose de la clase base](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
+- [CA2215: Los métodos Dispose deben llamar al método dispose de clase base](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
 - [CA2216: Los tipos descartables deben declarar el finalizador](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
 
 ## <a name="see-also"></a>Vea también

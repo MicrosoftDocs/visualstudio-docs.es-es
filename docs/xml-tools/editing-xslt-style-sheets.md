@@ -2,7 +2,6 @@
 title: Editar hojas de estilos XSLT
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 080bed0f-0ca9-4be7-aecd-6bdaebc04007
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 72f224e91f72d2fa751ddc8b170f78b8859c43f4
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: d98fbf2a1041260370946a059599a601f57c482c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548455"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867412"
 ---
 # <a name="edit-xslt-style-sheets"></a>Editar hojas de estilos XSLT
 
@@ -24,13 +23,13 @@ El Editor XML se puede utilizar también para editar hojas de estilos XSLT. Pued
 ## <a name="xslt-features"></a>Características XSLT
  En la siguiente tabla se describen características específicas del trabajo con hojas de estilos XSLT.
 
- **Colorear la sintaxis**
+ **Color de sintaxis**
 
  Las palabras clave XSLT, como `template`, `match`, y así sucesivamente, se muestran en el color de palabra clave XSLT especificado por el **fuentes y colores** configuración.
 
- **Subrayados ondulados**
+ **Subrayado ondulado**
 
- El Editor XML utiliza instalado *xslt.xsd* archivo para validar las hojas de estilos XSLT. Los errores de validación se muestran con un subrayado ondulado de color azul. El Editor XML también compila la hoja de estilos en segundo plano e informa de los errores o advertencias del compilador mediante el subrayado ondulado adecuado.
+ El Editor XML utiliza el instalado *xslt.xsd* archivo para validar las hojas de estilos XSLT. Los errores de validación se muestran con un subrayado ondulado de color azul. El Editor XML también compila la hoja de estilos en segundo plano e informa de los errores o advertencias del compilador mediante el subrayado ondulado adecuado.
 
  **Compatibilidad con bloques de scripts**
 
@@ -38,7 +37,7 @@ El Editor XML se puede utilizar también para editar hojas de estilos XSLT. Pued
 
  **Ver el resultado XSLT**
 
- Puede ejecutar una transformación XSL y ver el resultado desde el Editor XML. Para obtener más información, consulte [Cómo: ejecutar una transformación XSLT desde el Editor XML](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md).
+ Puede ejecutar una transformación XSL y ver el resultado desde el Editor XML. Para obtener más información, vea [Cómo: Ejecutar una transformación XSLT desde el Editor XML](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md).
 
  **Depurar XSLT**
 
