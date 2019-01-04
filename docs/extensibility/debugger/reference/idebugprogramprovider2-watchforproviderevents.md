@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramProvider2::WatchForProviderEvents | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramProvider2::WatchForProviderEvents
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20070349adb7fe66966edf0cdc044d145e56fb6e
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: a362b87971a3c75e44ab2f19e0a0442af5942f36
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803195"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834664"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 Permite que el proceso recibir una notificación de eventos de puerto.  

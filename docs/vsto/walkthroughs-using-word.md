@@ -1,9 +1,6 @@
 ---
 title: Tutoriales para Word
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c8baedac87ae0f740c9413d4cdba2f07aa0d978a
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a439b100c273ee7e884e54b03a44049ad8494935
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258332"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822924"
 ---
 # <a name="walkthroughs-using-word"></a>Tutoriales para Word
   En los siguientes tutoriales se muestran las maneras en las que puede usar las personalizaciones de nivel de documento y los complementos de VSTO para automatizar Microsoft Office Word y personalizar la interfaz de usuario (IU).  
@@ -75,5 +72,3 @@ ms.locfileid: "35258332"
  [Tutoriales y ejemplos de desarrollo de office](../vsto/office-development-samples-and-walkthroughs.md)   
  [Programar complementos VSTO](../vsto/programming-vsto-add-ins.md)   
  [Programar personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md)  
-  
-  

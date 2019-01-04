@@ -1,9 +1,6 @@
 ---
 title: Errores de punto de interrupción | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints, errors
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b08b9bee82a2505411be95ef2e6634e7897c15ec
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: a51f418483d58a5fce33fed0e49b695043c16cde
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153766"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857166"
 ---
 # <a name="breakpoint-errors"></a>Errores de punto de interrupción
 Siguiente describe el proceso cuando un punto de interrupción intenta enlazar al código, pero se produce un error.  

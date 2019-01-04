@@ -1,13 +1,8 @@
 ---
-title: 'Cómo: crear un elemento Web de SharePoint | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Crear un elemento Web de SharePoint | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,15 +13,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6437620b4215726ba48ea3234e37c76e77d21ebe
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 43d776a4031cabfd027c96105f3e71a93ea1c07f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119840"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858428"
 ---
-# <a name="how-to-create-a-sharepoint-web-part"></a>Cómo: crear un elemento web de SharePoint
-  Puede crear y personalizar un elemento web agregando un **elemento Web** elemento a cualquier proyecto de SharePoint y, a continuación, modificar el archivo de código para el elemento web o utilizando un diseñador. Para obtener más información, consulte [Cómo: crear un elemento web de SharePoint mediante un diseñador](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
+# <a name="how-to-create-a-sharepoint-web-part"></a>Procedimiento Crear un elemento web de SharePoint
+  Puede crear y personalizar un elemento web agregando un **elemento Web** elemento a cualquier proyecto de SharePoint y, a continuación, modificar el archivo de código para el elemento web o utilizando un diseñador. Para obtener más información, vea [Cómo: Crear un elemento web de SharePoint mediante un diseñador](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
   
 ### <a name="to-create-a-sharepoint-web-part"></a>Para crear un elemento web de SharePoint
   
@@ -50,12 +45,10 @@ ms.locfileid: "37119840"
   
 7.  En el archivo de código, agregue controles al método <xref:System.Web.UI.Control.CreateChildControls%2A>.  
   
-     Para obtener un ejemplo, vea [Tutorial: crear un elemento web para SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md).  
+     Para obtener un ejemplo, vea [Tutorial: Crear un elemento web para SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md).  
   
 ## <a name="see-also"></a>Vea también
  [Crear elementos web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
- [Cómo: crear un elemento web de SharePoint mediante un diseñador](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)   
+ [Cómo: Crear un elemento web de SharePoint mediante un diseñador](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)   
  [Tutorial: Crear un elemento web para SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)   
  [Tutorial: Crear un elemento web para SharePoint utilizando un diseñador](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)  
-  
-  

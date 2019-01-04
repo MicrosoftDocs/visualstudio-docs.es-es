@@ -1,9 +1,6 @@
 ---
 title: IEnumDebugReferenceInfo2::Next | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumDebugReferenceInfo2::Next
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccb977b637f15493ca64c6cb817565279888281f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e2ae764ec5dfd1c7d1ae9c3e514037955b009742
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934176"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852854"
 ---
 # <a name="ienumdebugreferenceinfo2next"></a>IEnumDebugReferenceInfo2::Next
 Devuelve el siguiente conjunto de elementos de la enumeración.  

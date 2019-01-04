@@ -1,9 +1,6 @@
 ---
 title: Empezar a programar complementos de VSTO
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.Outlook
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bf6577d48bed61a6dd5a1775da499ddd89f3769c
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: eef79de32a467bee1d96972da0ccdfd91eede350
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648686"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853049"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>Empezar a programar complementos de VSTO
   Puede utilizar complementos de VSTO para automatizar las aplicaciones de Microsoft Office, ampliar las características de la aplicación y personalizar la interfaz de usuario de la aplicación. Para obtener información acerca de cómo se comparan los complementos de VSTO para otros tipos de soluciones de Office puede crear con Visual Studio, consulte [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -95,5 +92,3 @@ ms.locfileid: "53648686"
  [Escribir código en soluciones de Office](../vsto/writing-code-in-office-solutions.md)   
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Programar complementos VSTO](../vsto/programming-vsto-add-ins.md)  
-  
-  

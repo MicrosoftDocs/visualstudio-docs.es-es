@@ -3,7 +3,6 @@ title: Diseñador de flujo de trabajo - Diseñador de actividades Receive
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.Receive.UI
 ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb48c19befc3cf2c155248cfc33c01eedd16ce26
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 86c2d67d3922679096a3b3980a928a234515b78e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950100"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859002"
 ---
 # <a name="receive-activity-designer"></a>Diseñador de actividades Receive
 
@@ -47,7 +46,7 @@ En la tabla siguiente se muestran las propiedades <xref:System.ServiceModel.Acti
 | <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A> | False | Especifica el nombre del contrato de servicios. Esta propiedad se utiliza para agrupar las operaciones de servicio en los contratos de servicios individuales. Todas las actividades <xref:System.ServiceModel.Activities.Receive> que tienen la misma propiedad <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A> están agrupadas en el mismo contrato de servicios (tipo de puerto WSDL asociado). El valor predeterminado es el nombre completo de CLR de la actividad de nivel superior (raíz). |
 | <xref:System.ServiceModel.Activities.Receive.Content%2A> | False | Especifica el mensaje o contenido del parámetro que se va a recibir. Puede ser una actividad <xref:System.ServiceModel.Activities.ReceiveMessageContent> o una actividad <xref:System.ServiceModel.Activities.ReceiveParametersContent>. Editar esta propiedad seleccionando el botón de puntos suspensivos junto a la **contenido** campo en la cuadrícula de propiedades o haga clic en el **definir...**  situado junto a la **contenido** etiquetar en el **recepción** superficie del Diseñador de actividad. Ambos muestran el **definición de contenido** cuadro de diálogo. Para obtener más información sobre cómo usar este cuadro, vea el [cuadro de diálogo de definición de contenido](../workflow-designer/content-definition-dialog-box.md) tema. |
 | <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> | False | Especifica las correlaciones entre las actividades <xref:System.ServiceModel.Activities.Receive> en operaciones de servicio de un flujo de trabajo con un objeto <xref:System.ServiceModel.MessageQuerySet>. Haga clic en el botón de puntos suspensivos junto a la <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> propiedad en la cuadrícula de propiedades para abrir el **Definition de CorrelatesOn** cuadro de diálogo. Para obtener más información sobre el uso de este cuadro de diálogo, vea el [cuadro de diálogo de definición de contenido](../workflow-designer/content-definition-dialog-box.md) tema. |
-| <xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A> | False | Especifica la clase <xref:System.ServiceModel.Activities.CorrelationHandle> que se utiliza para enrutar el mensaje hacia la instancia de flujo de trabajo adecuada.<br /><br /> Haga clic en el botón de puntos suspensivos junto a la <xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A> propiedad en la cuadrícula de propiedades para abrir el **Editor de expresiones** cuadro de diálogo. Para obtener más información sobre el uso de este cuadro de diálogo, vea el [Cómo: usar el Editor de expresiones](../workflow-designer/how-to-use-the-expression-editor.md) tema. |
+| <xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A> | False | Especifica la clase <xref:System.ServiceModel.Activities.CorrelationHandle> que se utiliza para enrutar el mensaje hacia la instancia de flujo de trabajo adecuada.<br /><br /> Haga clic en el botón de puntos suspensivos junto a la <xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A> propiedad en la cuadrícula de propiedades para abrir el **Editor de expresiones** cuadro de diálogo. Para obtener más información sobre el uso de este cuadro de diálogo, vea el [Cómo: Utilice el Editor de expresiones](../workflow-designer/how-to-use-the-expression-editor.md) tema. |
 | <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> | False | Especifica la colección de objetos <xref:System.ServiceModel.Activities.CorrelationInitializer> que inicializan varios objetos <xref:System.ServiceModel.Activities.CorrelationHandle> que configuran esta actividad <xref:System.ServiceModel.Activities.Receive> en el flujo de trabajo. Haga clic en el botón de puntos suspensivos junto a la <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> propiedad en la cuadrícula de propiedades para abrir el **agregar inicializadores de correlación** cuadro de diálogo. Para obtener más información sobre el uso de este cuadro, vea el [cuadro de diálogo Agregar CorrelationInitializers](../workflow-designer/add-correlationinitializers-dialog-box.md) tema. |
 | <xref:System.ServiceModel.Activities.Receive.CanCreateInstance%2A> | False | Especifica un valor que determina si una nueva instancia de flujo de trabajo se crea para procesar el mensaje en caso de que el mensaje no se correlacione con una instancia de flujo de trabajo existente. Si el valor se establece en **true**, se crea una nueva instancia de flujo de trabajo para procesar el mensaje cuando el mensaje no está correlacionado con una instancia de flujo de trabajo existente. |
 | <xref:System.ServiceModel.Activities.Receive.KnownTypes%2A> | False | Especifica una colección de tipos conocidos para la operación de servicio implementada por esta actividad <xref:System.ServiceModel.Activities.Receive>. Esta propiedad se puede utilizar junto con el conjunto de propiedades <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> para <xref:System.Runtime.Serialization.DataContractSerializer>. Se ignorará si se usa <xref:System.Xml.Serialization.XmlSerializer>.<br /><br /> Seleccione el botón de puntos suspensivos junto a la **KnownTypes** campo en la cuadrícula de propiedades para mostrar el **Editor de la colección de tipo** cuadro de diálogo con el que puede agregar los tipos pertinentes. Para obtener más información sobre el uso de este cuadro, vea el [cuadro de diálogo del Editor de colección de tipo](../workflow-designer/type-collection-editor-dialog-box.md) tema. |
