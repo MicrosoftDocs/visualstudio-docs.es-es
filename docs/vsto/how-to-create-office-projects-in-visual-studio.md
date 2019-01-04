@@ -3,8 +3,6 @@ title: Procedimiento Crear proyectos de Office en Visual Studio
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.SelectDocWizard.Page1
@@ -25,12 +23,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 90dc0903f1a653ab2402d5877ebd4f962ba8cbe1
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 66263d8453fc550f0edb9c81d9c424f04a07c1b0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647892"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902245"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Procedimiento Crear proyectos de Office en Visual Studio
   Puede usar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para crear complementos de VSTO y de nivel de documento personalizaciones para aplicaciones de Microsoft Office. Para obtener más información acerca de estos tipos de proyectos, vea [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -165,5 +163,3 @@ ms.locfileid: "53647892"
  [Desarrollo en colaboración de las soluciones de Office](../vsto/collaborative-development-of-office-solutions.md)   
  [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)   
  [Empezar a programar complementos de VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
-  
-  

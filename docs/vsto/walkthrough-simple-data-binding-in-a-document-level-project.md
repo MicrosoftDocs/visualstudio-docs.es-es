@@ -1,9 +1,6 @@
 ---
-title: 'Tutorial: Enlace de datos Simple en un proyecto de nivel de documento'
-ms.custom: ''
+title: 'Tutorial: Enlace de datos simple en un proyecto de nivel de documento'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25173e5c4d4aeb02045cf858ae1e093b7a04d2bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a9967d830d72355f23173a7dfc6f1a95be073959
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824385"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895498"
 ---
-# <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Tutorial: Enlace de datos Simple en un proyecto de nivel de documento
+# <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Tutorial: Enlace de datos simple en un proyecto de nivel de documento
   Este tutorial muestra los aspectos básicos del enlace de datos en un proyecto de nivel de documento. Un único campo de datos en una base de datos de SQL Server está enlazado a un rango con nombre en Microsoft Office Excel. El tutorial también muestra cómo agregar controles que permiten desplazarse por todos los registros de la tabla.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -57,7 +54,7 @@ ms.locfileid: "49824385"
   
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto  
   
-1. Cree un proyecto de libro de Excel con el nombre **Mi enlace de datos Simple**, mediante Visual Basic o C#. Asegúrese de que **crear un nuevo documento** está seleccionada. Para obtener más información, consulte [Cómo: proyectos de creación de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1. Cree un proyecto de libro de Excel con el nombre **Mi enlace de datos Simple**, mediante Visual Basic o C#. Asegúrese de que **crear un nuevo documento** está seleccionada. Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
    Visual Studio abre el nuevo libro de Excel en el diseñador y agrega el **Mi enlace de datos Simple** proyecto a **el Explorador de soluciones**.  
   
@@ -188,15 +185,13 @@ ms.locfileid: "49824385"
 ## <a name="next-steps"></a>Pasos siguientes  
  En este tutorial se muestra los aspectos básicos del enlace de un rango con nombre a un campo en una base de datos. A continuación, podría realizar las siguientes tareas:  
   
--   Almacenar en caché los datos para que se puede usar sin conexión. Para obtener más información, consulte [Cómo: almacenar en caché datos para su uso sin conexión o en un servidor](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+-   Almacenar en caché los datos para que se puede usar sin conexión. Para obtener más información, vea [Cómo: Almacenar en caché datos para su uso sin conexión o en un servidor](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
--   Enlazar celdas a varias columnas en una tabla, en lugar de a un campo. Para obtener más información, consulte [Tutorial: enlace de datos complejo en un proyecto de nivel de documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).  
+-   Enlazar celdas a varias columnas en una tabla, en lugar de a un campo. Para obtener más información, vea [Tutorial: Enlace de datos complejo en un proyecto de nivel de documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).  
   
--   Use un <xref:System.Windows.Forms.BindingNavigator> control para desplazarse por los registros. Para obtener más información, consulte [Cómo: desplazarse por datos con el control BindingNavigator de Windows Forms](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).  
+-   Use un <xref:System.Windows.Forms.BindingNavigator> control para desplazarse por los registros. Para obtener más información, vea [Cómo: Explorar datos con el control BindingNavigator de Windows Forms](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).  
   
 ## <a name="see-also"></a>Vea también  
  [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Datos en soluciones de Office](../vsto/data-in-office-solutions.md)   
  [Tutorial: Enlace de datos complejo en un proyecto de nivel de documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  
-  
-  

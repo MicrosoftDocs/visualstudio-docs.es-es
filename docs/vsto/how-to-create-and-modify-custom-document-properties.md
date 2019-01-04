@@ -1,9 +1,6 @@
 ---
 title: Procedimiento Crear y modificar propiedades de documento personalizadas
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 71ff5c37eee21092e186e50547cf9c0b72f1b20e
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 0a3dd497bc2c63c58e6072cd48f58cba071ea4f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646514"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891594"
 ---
 # <a name="how-to-create-and-modify-custom-document-properties"></a>Procedimiento Crear y modificar propiedades de documento personalizadas
   Las aplicaciones de Microsoft Office enumeradas anteriormente proporcionan propiedades integradas que se almacenan con los documentos. Además, puede crear y modificar propiedades de documento personalizadas si hay información adicional que desea almacenar con el documento.  
@@ -46,5 +43,3 @@ ms.locfileid: "53646514"
  [Programar complementos VSTO](../vsto/programming-vsto-add-ins.md)   
  [Programar personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md)   
  [Cómo: Leer y escribir en las propiedades del documento](../vsto/how-to-read-from-and-write-to-document-properties.md)  
-  
-  

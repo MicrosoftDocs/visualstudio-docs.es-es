@@ -1,9 +1,6 @@
 ---
-title: 'Tutorial: Personalizar la vista de texto | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Personalizar la vista de texto | Documentos de Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - customizing the view
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c328925fd558e01138354427a80db7a692753710
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8748ccade8e610c66d9c4142312c2c5dfed1ddf9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924920"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917324"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>Tutorial: Personalizar la vista de texto
 Puede personalizar una vista de texto mediante la modificación de cualquiera de las siguientes propiedades en su mapa de formato del editor:  

@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: mostrar todas las hojas de cálculo en un libro de mediante programación'
-ms.custom: ''
+title: Procedimiento Mostrar todas las hojas de cálculo en un libro de mediante programación
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bb82b26fedce0590c5c2fe9cfa1b321fef5dbf19
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 2cab3547bb23aa563e2c6b5bfe6a82a93fd5e29e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257766"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928729"
 ---
-# <a name="how-to-programmatically-list-all-worksheets-in-a-workbook"></a>Cómo: mostrar todas las hojas de cálculo en un libro de mediante programación
+# <a name="how-to-programmatically-list-all-worksheets-in-a-workbook"></a>Procedimiento Mostrar todas las hojas de cálculo en un libro de mediante programación
   La clase <xref:Microsoft.Office.Interop.Excel.Workbook> proporciona un objeto <xref:Microsoft.Office.Interop.Excel.Worksheets>. Este objeto contiene una colección de todos los objetos <xref:Microsoft.Office.Interop.Excel.Worksheet> del libro.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -44,8 +41,6 @@ ms.locfileid: "35257766"
   
 ## <a name="see-also"></a>Vea también  
  [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)   
- [Cómo: agregar nuevas hojas de cálculo a libros mediante programación](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
- [Cómo: mover hojas de cálculo dentro de los libros de programación](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
+ [Cómo: Agregar nuevas hojas de cálculo a libros mediante programación](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
+ [Cómo: Mover hojas de cálculo dentro de los libros de programación](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
  [Acceso global a objetos en los proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md)  
-  
-  

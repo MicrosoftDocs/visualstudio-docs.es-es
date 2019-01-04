@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: desplazarse por los registros de base de datos en una hoja de cálculo'
-ms.custom: ''
+title: Procedimiento Desplazarse por los registros de base de datos en una hoja de cálculo
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e9ffaffdefda98e3e074467fcd4df8cacce91b4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1459ee941a8cb88d102e14ccfc7f128796c4c333
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674875"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897475"
 ---
-# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Cómo: desplazarse por los registros de base de datos en una hoja de cálculo
+# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Procedimiento Desplazarse por los registros de base de datos en una hoja de cálculo
   El procedimiento siguiente muestra cómo usar el diseñador para mostrar un único campo de una tabla de base de datos en una hoja de cálculo de Microsoft Office Excel, con controles que permiten al usuario final para desplazarse por todos los registros.  
   
- Puede utilizar el diseñador solo en los proyectos de nivel de documento. Sin embargo, también puede agregar controles y enlazarlos a datos mediante programación en tiempo de ejecución. Para obtener más información, consulte [Tutorial: enlace de datos Simple en el proyecto de complemento VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).  
+ Puede utilizar el diseñador solo en los proyectos de nivel de documento. Sin embargo, también puede agregar controles y enlazarlos a datos mediante programación en tiempo de ejecución. Para obtener más información, vea [Tutorial: Enlace de datos simple en el proyecto de complemento VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
@@ -48,5 +45,3 @@ ms.locfileid: "35674875"
   
 ## <a name="see-also"></a>Vea también  
  [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  
-  

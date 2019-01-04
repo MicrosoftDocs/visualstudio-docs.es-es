@@ -1,9 +1,6 @@
 ---
 title: Texto de la interfaz de usuario y la Ayuda de Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52260b2cd401f8cdbd3a94704ab29db2f64fdc6d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bca879905e524e80205878034773349ddff06460
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842240"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907172"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Texto de la interfaz de usuario y la Ayuda de Visual Studio
 ##  <a name="BKMK_UITextAndTerminology"></a> Terminología y el texto de la interfaz de usuario  
@@ -262,7 +259,7 @@ ms.locfileid: "49842240"
   
 |Bueno|incorrecto|  
 |----------|---------|  
-|"El número que marcado ya no está en servicio. Compruebe el número y vuelva a marcar o marcar 0 para el operador."|-"Error (449): número no válido"<br />-"Este error de excepción no controlada indica que la operación se completó correctamente".<br /><br /> ![Mensaje de error incorrecto en Visual Studio](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "0602 a_ErrorDialog")|  
+|"El número que marcado ya no está en servicio. Compruebe el número y vuelva a marcar o marcar 0 para el operador."|-"Error (449): Número no válido"<br />-"Este error de excepción no controlada indica que la operación se completó correctamente".<br /><br /> ![Mensaje de error incorrecto en Visual Studio](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "0602 a_ErrorDialog")|  
   
 ## <a name="accessing-help"></a>Acceso a la Ayuda  
   

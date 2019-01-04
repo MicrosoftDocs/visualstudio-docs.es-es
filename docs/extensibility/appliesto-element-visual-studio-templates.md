@@ -1,6 +1,5 @@
 ---
 title: AppliesTo (elemento) (plantillas de Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f26461291e6e74dd4fe7130b331fc6b38692e252
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 4c760c4a66a3f1d4bc9e3956d2d7dc824145d7cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562157"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912787"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo (elemento) (plantillas de Visual Studio)
 Especifica una expresión opcional para buscar una o varias funciones coincidentes. (vea <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>). Las funciones las exponen los tipos de proyecto a través de la jerarquía como una propiedad <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5>. De esta manera, la plantilla se puede compartir en varios tipos de proyecto que tengan funciones aplicables comunes.  

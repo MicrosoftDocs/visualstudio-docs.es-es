@@ -1,9 +1,6 @@
 ---
 title: 'Tutorial: Cambiar el formato de un documento utilizando controles CheckBox'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 86cf89f7853308e93c55e30deae17786fdb3e413
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e33d7b683e55f570961d9f9f8f77ea1491db3f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863937"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913874"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Tutorial: Cambiar el formato de un documento utilizando controles CheckBox
   Este tutorial muestra cómo usar controles de formularios Windows Forms en una personalización de nivel de documento para Microsoft Office Word para cambiar el formato de texto.  
@@ -55,7 +52,7 @@ ms.locfileid: "49863937"
   
 1.  Cree un proyecto de documento de Word con el nombre **Mi formato de Word**. En el asistente, seleccione **crear un nuevo documento**.  
   
-     Para obtener más información, consulte [Cómo: proyectos de creación de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio abre el nuevo documento de Word en el diseñador y agrega el **Mi formato de Word** proyecto a **el Explorador de soluciones**.  
   
@@ -137,7 +134,7 @@ ms.locfileid: "49863937"
      [!code-vb[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#5)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#5)]  
   
-6.  En C#, debe agregar controladores de eventos para los cuadros de texto para el <xref:Microsoft.Office.Tools.Word.Document.Startup> eventos. Para obtener información sobre cómo crear controladores de eventos, vea [Cómo: crear controladores de eventos en proyectos de Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+6.  En C#, debe agregar controladores de eventos para los cuadros de texto para el <xref:Microsoft.Office.Tools.Word.Document.Startup> eventos. Para obtener información sobre cómo crear controladores de eventos, vea [Cómo: Crear controladores de eventos en proyectos de Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#6)]  
   
@@ -155,9 +152,9 @@ ms.locfileid: "49863937"
 ## <a name="next-steps"></a>Pasos siguientes  
  En este tutorial se muestra los aspectos básicos del uso de las casillas de verificación y cambio del formato del texto en documentos de Word mediante programación. A continuación, podría realizar las siguientes tareas:  
   
--   Usar un botón para rellenar un cuadro de texto. Para obtener más información, consulte [Tutorial: mostrar texto en un cuadro de texto en un documento utilizando un botón](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
+-   Usar un botón para rellenar un cuadro de texto. Para obtener más información, vea [Tutorial: Mostrar texto en un cuadro de texto en un documento utilizando un botón](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
   
--   Usar botones de radio para seleccionar estilos de gráfico. Para obtener más información, consulte [Tutorial: actualizar un gráfico en un documento utilizando botones de radio](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
+-   Usar botones de radio para seleccionar estilos de gráfico. Para obtener más información, vea [Tutorial: Actualizar un gráfico en un documento utilizando botones de radio](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
   
 
 ## <a name="see-also"></a>Vea también  
@@ -165,5 +162,3 @@ ms.locfileid: "49863937"
  [Tutoriales y ejemplos de desarrollo de office](../vsto/office-development-samples-and-walkthroughs.md)   
  [NamedRange (control)](../vsto/namedrange-control.md)   
  [Limitaciones de los controles de Windows Forms en documentos de Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  
-  

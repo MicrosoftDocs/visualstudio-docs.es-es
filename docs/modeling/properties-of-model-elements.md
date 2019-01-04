@@ -8,18 +8,17 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 464616a70d1c6779b2dd370933acc4a56300d17e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b7886a42466e0840c45ae0063a69b049ef7582b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947721"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900748"
 ---
 # <a name="properties-of-model-elements"></a>Propiedades de los elementos del modelo
-Esta sección enumeran las propiedades que se ven en la ventana Propiedades cuando se selecciona un elemento en el diagrama de definición DSL o en el Explorador de DSL.
+Esta sección enumeran las propiedades que se ven en la ventana Propiedades cuando selecciona un elemento en el diagrama de definición de DSL o en el Explorador de DSL.
 
- En algunos casos, las propiedades adicionales se pueden encontrar en la ventana Detalles de DSL.
+ En algunos casos, las propiedades adicionales pueden encontrarse en la ventana Detalles de DSL.
 
 ## <a name="related-sections"></a>Secciones relacionadas
  [Personalizar y ampliar lenguajes específicos de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md)

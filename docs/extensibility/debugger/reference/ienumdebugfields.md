@@ -1,9 +1,6 @@
 ---
 title: IEnumDebugFields | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumDebugFields
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a475d7e163cd146a0fd200c1bcac2f3a572ef9e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e71e9e8f0d326e37184568d316f34cbbc34950f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124217"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942312"
 ---
 # <a name="ienumdebugfields"></a>IEnumDebugFields
 Esta interfaz representa una colección de objetos que implementan la [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaz.  
@@ -44,8 +41,8 @@ IEnumDebugFields : IUnknown
 |------------|-----------------|  
 |[Siguiente](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|Recupera el siguiente conjunto de [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objetos de la enumeración.|  
 |[Skip](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|Omite un número especificado de entradas.|  
-|[Restablecer](../../../extensibility/debugger/reference/ienumdebugfields-reset.md)|Restablece la enumeración a la primera entrada.|  
-|[clon](../../../extensibility/debugger/reference/ienumdebugfields-clone.md)|Recupera una copia de la enumeración actual.|  
+|[Reset](../../../extensibility/debugger/reference/ienumdebugfields-reset.md)|Restablece la enumeración a la primera entrada.|  
+|[Clone](../../../extensibility/debugger/reference/ienumdebugfields-clone.md)|Recupera una copia de la enumeración actual.|  
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md)|Recupera el número de entradas de la enumeración.|  
   
 ## <a name="remarks"></a>Comentarios  
@@ -53,7 +50,7 @@ IEnumDebugFields : IUnknown
 ## <a name="requirements"></a>Requisitos  
  Encabezado: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   

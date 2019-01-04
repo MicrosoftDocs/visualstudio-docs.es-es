@@ -1,8 +1,7 @@
 ---
-title: 'Tutorial: Usar las características del Editor XML'
+title: 'Tutorial: Uso de características del Editor XML'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
 author: gewarren
@@ -10,25 +9,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afda2968ece2a18b7abdc2c4c35e4353206cbe42
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 524b96fea7fedba248c04f384445ee3a03a3595b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693830"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902011"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Tutorial: Usar características del editor XML
 
 En este tutorial se indican los pasos para crear un nuevo documento XML. El tutorial también utiliza algunas de las características del Editor XML que lo convierten en una valiosa herramienta para la creación de XML.
 
 > [!NOTE]
-> Antes de comenzar el tutorial, guarde el *hireDate.xsd* archivo (que se incluye a continuación en este tema) en el equipo local.
+> Antes de comenzar el tutorial, guarde el *hireDate.xsd* archivo (incluido a continuación en este tema) en el equipo local.
 
 ## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Para crear un nuevo archivo XML y asociarlo con un esquema XML
 
 1.  En el **archivo** menú, elija **New**y haga clic en **archivo**.
 
-2.  Seleccione **archivo XML** en el **plantillas** panel y haga clic en **abiertos**.
+2.  Seleccione **archivo XML** en el **plantillas** panel y haga clic en **abierto**.
 
      Se abre un nuevo archivo en el editor. El archivo contiene una declaración XML predeterminada, `<?xml version="1.0" encoding="utf-8">`.
 
@@ -40,7 +39,7 @@ En este tutorial se indican los pasos para crear un nuevo documento XML. El tuto
 
      El **Abrir esquema XSD** se muestra el cuadro de diálogo.
 
-5.  Seleccione el *hireDate.xsd* de archivo y haga clic en **abiertos**.
+5.  Seleccione el *hireDate.xsd* de archivo y haga clic en **abierto**.
 
 6.  Haga clic en **Aceptar**.
 
@@ -66,35 +65,35 @@ En este tutorial se indican los pasos para crear un nuevo documento XML. El tuto
 
 3.  Escriba en **probar archivo XML**.
 
-4.  En una línea nueva, escriba `<`y seleccione **empleado** desde la lista de miembros.
+4.  En una nueva línea, escriba `<`y seleccione **empleado** en la lista de miembros.
 
      El editor agrega el comienzo de un elemento XML, `<employee`. Llegados a este punto, puede agregar atributos al elemento o bien cerrar la etiqueta de apertura escribiendo `>`.
 
 5.  Escriba `>` para cerrar la etiqueta.
 
-6.  El editor agrega la etiqueta de cierre. Ésta se agrega con un subrayado ondulado que indica un error de validación. El **información sobre herramientas** muestra el mensaje: **el elemento 'empleado' contenido está incompleto. Se esperaba 'ID'**.
+6.  El editor agrega la etiqueta de cierre. Ésta se agrega con un subrayado ondulado que indica un error de validación. El **información sobre herramientas** muestra el mensaje: **El elemento 'empleado' tiene contenido incompleto. Se esperaba 'ID'**.
 
-7.  Tipo de `<` y seleccione **ID** en la lista de miembros. A continuación, escriba `>`.
+7.  Tipo `<` y seleccione **ID** en la lista de miembros. A continuación, escriba `>`.
 
      El editor agrega el elemento XML, `<ID></ID>`, y coloca el cursor después de la etiqueta de apertura de ID.
 
-8.  Tipo de **abc**.
+8.  Tipo **abc**.
 
-     El **abc** texto tiene un subrayado ondulado de color. El **información sobre herramientas** muestra el mensaje: **el elemento 'ID' tiene un valor no válido según su tipo de datos**.
+     El **abc** texto tiene un subrayado ondulado. El **información sobre herramientas** muestra el mensaje: **El elemento 'ID' tiene un valor no válido según su tipo de datos**.
 
 9. Haga doble clic en el elemento ID y seleccione **ir a definición**.
 
-     Se abrirá el editor de la *hireDate.xsd* archivo en una nueva ventana de documento y coloca el cursor en la definición de elemento de esquema de identificador.
+     Se abre el editor de la *hireDate.xsd* archivo en una nueva ventana de documento y coloca el cursor en la definición de elemento de esquema de identificador.
 
-10. Vuelva al archivo XML y reemplace la **abc** texto con **123**.
+10. Vuelva al archivo XML y sustituya el **abc** texto con **123**.
 
-     El subrayado ondulado de color y **información sobre herramientas** desaparecen bajo el valor del elemento ID. El **información sobre herramientas** para el extremo de empleado etiqueta ahora muestra el mensaje: **el elemento 'empleado' contenido está incompleto. Se esperaba 'fecha-contratación'**.
+     El subrayado ondulado de color y **información sobre herramientas** desaparecen bajo el valor del elemento ID. El **información sobre herramientas** para el final de empleado muestra ahora el mensaje etiqueta: **El elemento 'empleado' tiene contenido incompleto. Se esperaba 'fecha-contratación'**.
 
-11. Coloque el cursor después de la etiqueta de cierre de ID, escriba `<`, seleccione **fecha-contratación** desde la lista de miembros y, a continuación, escriba en `>`.
+11. Coloque el cursor después de la etiqueta de cierre de identificador, escriba en `<`, seleccione **fecha-contratación** desde la lista de miembros y, a continuación, escriba en `>`.
 
      El editor agrega el elemento XML, `<hire-date></hire-date>`, y coloca el cursor después de la etiqueta de apertura de fecha-contratación.
 
-12. Escriba en **2003-01-10** para el valor de fecha de contratación.
+12. Escriba en **2003-01-10** para el valor de fecha-contratación.
 
 ## <a name="to-format-the-xml-document"></a>Para dar formato al documento XML
 

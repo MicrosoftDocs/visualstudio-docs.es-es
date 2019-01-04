@@ -1,6 +1,5 @@
 ---
 title: Servicio y el catálogo de imágenes | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
@@ -9,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c37da890842711b941e61aadc23ed85d60672f3c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fb493e2ebd590edcf210c5c38010b0168e06fbe3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823767"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899709"
 ---
 # <a name="image-service-and-catalog"></a>Catálogo y servicio de imágenes
 Esta guía contiene instrucciones y procedimientos recomendados para adoptar el servicio de imágenes de Visual Studio y el catálogo de imágenes que se introdujo en Visual Studio 2015.  
@@ -49,7 +48,7 @@ Esta guía contiene instrucciones y procedimientos recomendados para adoptar el 
   
 - WPF: BitmapSource  
   
-- WinForms: System.Drawing.Bitmap  
+- Formularios Windows Forms: System.Drawing.Bitmap  
   
 - Win32: HBITMAP  
   
@@ -166,7 +165,7 @@ Esta guía contiene instrucciones y procedimientos recomendados para adoptar el 
 |-|-|  
 |**Attribute**|**Definición**|  
 |URI|[Obligatorio] Un URI que define dónde se puede cargar la imagen desde. Puede ser uno de los siguientes:<br /><br /> -A [Pack URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) mediante la aplicación: / / / entidad<br />-Una referencia de recurso de componente absoluta<br />-Una ruta de acceso a un archivo que contiene un recurso nativo|  
-|Fondo|[Opcional] Indica qué tipo de fondo que el origen está pensado para usarse.<br /><br /> Puede ser uno de los siguientes:<br /><br /> *Luz:* se puede usar el origen en un fondo claro.<br /><br /> *Oscuro:* se puede usar el origen en un fondo oscuro.<br /><br /> *Contraste alto:* el origen se puede usar en cualquier en segundo plano en modo de contraste alto.<br /><br /> *HighContrastLight:* se puede usar el origen en un fondo claro en modo de contraste alto.<br /><br /> *HighContrastDark:* se puede usar el origen en un fondo oscuro en modo de contraste alto.<br /><br /> Si se omite el atributo en segundo plano, el origen puede usarse en cualquier en segundo plano.<br /><br /> Si está en segundo plano *luz*, *oscuro*, *HighContrastLight*, o *HighContrastDark*, nunca se invierten los colores de origen. Si se omite o se establece en fondo *contraste alto*, la inversión de colores de origen se controla mediante la imagen **AllowColorInversion** atributo.|  
+|Fondo|[Opcional] Indica qué tipo de fondo que el origen está pensado para usarse.<br /><br /> Puede ser uno de los siguientes:<br /><br /> *Luz:* El origen puede utilizarse en un fondo claro.<br /><br /> *Oscuro:* El origen puede utilizarse en un fondo oscuro.<br /><br /> *Contraste alto:* El origen puede utilizarse en cualquier en segundo plano en modo de contraste alto.<br /><br /> *HighContrastLight:* El origen puede utilizarse en un fondo claro en modo de contraste alto.<br /><br /> *HighContrastDark:* El origen puede utilizarse en un fondo oscuro en modo de contraste alto.<br /><br /> Si se omite el atributo en segundo plano, el origen puede usarse en cualquier en segundo plano.<br /><br /> Si está en segundo plano *luz*, *oscuro*, *HighContrastLight*, o *HighContrastDark*, nunca se invierten los colores de origen. Si se omite o se establece en fondo *contraste alto*, la inversión de colores de origen se controla mediante la imagen **AllowColorInversion** atributo.|  
 
 |||  
   
