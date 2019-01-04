@@ -2,7 +2,6 @@
 title: 'CA1500: Los nombres de las variables no deben coincidir con los nombres de los campos'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - VariableNamesShouldNotMatchFieldNames
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 74f9cfadc4bc413c3b176d5f37f1017074547435
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 8d82795669bb1d490af3f78c8d1f1d35afe2b3e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548290"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885390"
 ---
 # <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500: Los nombres de las variables no deben coincidir con los nombres de los campos
 

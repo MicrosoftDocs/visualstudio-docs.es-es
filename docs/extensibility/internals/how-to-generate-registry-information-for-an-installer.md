@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: generar información del registro para un instalador | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Generar información del registro para un instalador | Documentos de Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - registration, VSPackages
@@ -15,14 +12,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b52d0c894aadd829806e7cc41ac9e78e95df32ba
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: f66df6b19e3c47151907ffad04072c378fd1a8fd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513263"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875399"
 ---
-# <a name="how-to-generate-registry-information-for-an-installer"></a>Cómo: generar información del registro para un instalador
+# <a name="how-to-generate-registry-information-for-an-installer"></a>Procedimiento Generar información del registro para un instalador
 El *RegPkg.exe* utilidad puede utilizarse para generar un manifiesto de registro para un VSPackage administrado. El manifiesto se puede incorporar en un paquete de instalación de Windows Installer. RegPkg también puede generar un archivo que puede incluirse en un archivo de origen de instalación según la [Windows Installer XML toolset](http://go.microsoft.com/fwlink/?LinkId=62238).  
   
 > [!IMPORTANT]

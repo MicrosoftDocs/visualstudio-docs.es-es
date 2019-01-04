@@ -2,7 +2,6 @@
 title: Formato, XML, Editor de texto, Cuadro de diálogo Opciones
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: bb539b3a-027c-4b2f-906e-403e0e22ba8d
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f92ced5ca5ac007969a06cec7f253617ee293e3
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 05ddfcb0613dac08fb6e4323062f87475bd8f0d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548796"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938597"
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>Formato, XML, editor de texto, cuadro de diálogo Opciones
 
@@ -32,7 +31,7 @@ Este cuadro de diálogo permite especificar las opciones de formato del Editor X
 > [!NOTE]
 > Si los atributos están en varias líneas, el editor aplica sangría a cada línea de atributos para que coincida con la sangría del elemento primario.
 
- **Alinear los atributos en su propia línea**
+ **Alinear cada atributo en su propia línea**
 
  Alinea el segundo atributo y los posteriores en vertical para que coincidan con la sangría del primer atributo. La siguiente prueba XML es un ejemplo de cómo se alinearían los atributos.
 
@@ -43,16 +42,16 @@ Este cuadro de diálogo permite especificar las opciones de formato del Editor X
 </item>
 ```
 
-## <a name="auto-reformat"></a>Formatear automáticamente
+## <a name="auto-reformat"></a>Formato automático
  **Al pegar desde el Portapapeles**
 
  Vuelve a dar formato al texto XML pegado desde el portapapeles.
 
- **En la realización de la etiqueta de cierre**
+ **Al terminar la etiqueta final**
 
  Vuelve a dar formato el elemento cuando se completa la etiqueta de cierre.
 
-## <a name="mixed-content"></a>Contenido mixto
+## <a name="mixed-content"></a>contenido mixto
  **Conservar el contenido mixto de forma predeterminada**
 
  Determina si el editor volverá a dar formato al contenido mixto. De forma predeterminada, el editor intenta volver a dar formato al contenido mixto, excepto cuando el contenido se halla en un ámbito `xml:space="preserve"`.

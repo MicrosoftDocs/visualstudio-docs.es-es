@@ -13,13 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 20da1fc95160be69c1388f9d2986c7dc254eefa2
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 506792f6a6be550377a4cd711ffc7f04e1b9091f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967134"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822268"
 ---
 # <a name="properties-of-image-shapes"></a>Propiedades de las formas de imagen
 

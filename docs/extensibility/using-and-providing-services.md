@@ -1,9 +1,6 @@
 ---
-title: Uso y proporciona servicios | Documentos de Microsoft
-ms.custom: ''
+title: Uso y provisión de servicios | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - examples [Visual Studio SDK], services
@@ -15,41 +12,41 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 351b5b5c0ab32ab7e8267864eddaae10459a23bd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f547afd33166a6a7b10284e6cb55e73baeefc861
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138345"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886285"
 ---
-# <a name="using-and-providing-services"></a>Uso y proporciona servicios
-Un servicio es un contrato entre dos VSPackages. Un VSPackage ofrece un conjunto específico de interfaces para otro VSPackage consumir. Por ejemplo, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ofrece el <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> servicio a cualquier VSPackage se carga. Este servicio proporciona la <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interfaz, que se puede usar para escribir en el registro de actividad. Para obtener más información, consulte [Cómo: usar el registro de actividad](../extensibility/how-to-use-the-activity-log.md).  
+# <a name="using-and-providing-services"></a>Uso y prestación de servicios
+Un servicio es un contrato entre dos VSPackages. Un VSPackage ofrece un conjunto específico de interfaces para otro paquete de VS consumir. Por ejemplo, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ofrece el <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> atenderla a cualquier VSPackage cargas. Este servicio proporciona la <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interfaz, que puede usarse para escribir en el registro de actividad. Para obtener más información, vea [Cómo: Usar el registro de actividad](../extensibility/how-to-use-the-activity-log.md).  
   
- VSPackages puede ofrecer servicios de su cuenta desde la <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> interfaz...  
+ Los paquetes VSPackage pueden ofrecer servicios de su cuenta desde la <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> interfaz...  
   
  Visual Studio ofrece servicios importantes, como las siguientes:  
   
 |Servicio IDE|Descripción|  
 |-----------------|-----------------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>|Proporciona acceso al IDE de servicios de tratar con la funcionalidad básica, VSPackages y el registro.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>|Proporciona acceso al IDE de servicios de tratar con funcionalidad básica, VSPackages y el registro.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|Proporciona básica basada en ventanas y funcionalidad relacionada con la interfaz de usuario en el IDE, como la capacidad para crear herramientas y ventanas de documento.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|Proporciona funciones básicas relacionadas con la solución, como la capacidad para enumerar los proyectos, crear nuevos proyectos y supervisar cambios en el proyecto.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|Proporciona funciones básicas relacionadas con la solución, como la capacidad para enumerar los proyectos, crear nuevos proyectos y supervisar los cambios del proyecto.|  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Conceptos básicos del servicio](../extensibility/internals/service-essentials.md)  
  Presenta los elementos importantes de un servicio de Visual Studio.  
   
- [Obtención de un servicio](../extensibility/how-to-get-a-service.md)  
- Describe cómo solicitar (consumir) un servicio.  
+ [Cómo: Obtener un servicio](../extensibility/how-to-get-a-service.md)  
+ Se describe cómo solicitar (consumir) un servicio.  
   
- [Provisión de un servicio](../extensibility/how-to-provide-a-service.md)  
+ [Cómo: Proporcionar un servicio](../extensibility/how-to-provide-a-service.md)  
  Describe cómo proporcionar un servicio.  
   
- [Provisión de un servicio asincrónico de Visual Studio](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
+ [Cómo: Proporciona un servicio asincrónico de Visual Studio](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
  Describe cómo proporcionar un servicio asincrónico.  
   
- [Servicios de solución de problemas](../extensibility/how-to-troubleshoot-services.md)  
- Describe los problemas comunes y se presentan soluciones a ellos.  
+ [Cómo: Solucionar problemas de servicios](../extensibility/how-to-troubleshoot-services.md)  
+ Se describen problemas comunes y se presentan soluciones a ellos.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Visual Studio SDK](../extensibility/visual-studio-sdk.md)

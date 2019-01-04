@@ -2,7 +2,6 @@
 title: 'CA2217: No marcar enumeraciones con FlagsAttribute'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotMarkEnumsWithFlags
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 12cc5f9fc58ac533d118b693587cf807f44b288f
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: d8afe63de8630b3fa7466e8c0784c26ba00bb1ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031649"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852484"
 ---
 # <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217: No marcar enumeraciones con FlagsAttribute
 
@@ -52,9 +51,9 @@ Para corregir una infracción de esta regla, quite <xref:System.FlagsAttribute> 
 
 No suprima las advertencias de esta regla.
 
-## <a name="example-that-should-not-have-the-attribute"></a>Ejemplo en el que no debe tener el atributo
+## <a name="example-that-should-not-have-the-attribute"></a>Ejemplo que no debería tener el atributo
 
-En el ejemplo siguiente se muestra una enumeración, `Color`, que contiene el valor 3. 3 no es una potencia de dos o una combinación de cualquiera de los valores definidos. El `Color` enumeración no debe marcarse con <xref:System.FlagsAttribute>.
+El ejemplo siguiente muestra una enumeración, `Color`, que contiene el valor 3. 3 no es una potencia de dos, o una combinación de cualquiera de los valores definidos. El `Color` enumeración no debe marcarse con <xref:System.FlagsAttribute>.
 
 [!code-cpp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_1.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_1.cs)]
@@ -62,7 +61,7 @@ En el ejemplo siguiente se muestra una enumeración, `Color`, que contiene el va
 
 ## <a name="example-that-should-have-the-attribute"></a>Ejemplo que debe tener el atributo
 
-En el ejemplo siguiente se muestra una enumeración, `Days`, que cumple los requisitos para que se marcan con <xref:System.FlagsAttribute>.
+El ejemplo siguiente muestra una enumeración, `Days`, que cumple los requisitos para que se marcan con <xref:System.FlagsAttribute>.
 
 [!code-cpp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_2.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_2.cs)]

@@ -1,15 +1,10 @@
 ---
-title: 'Cómo: agregar y quitar ensamblados adicionales | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Agregar y quitar ensamblados adicionales | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.CustomAssembly
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4178f1ca5a437c52754199d26a6d39023193aaf8
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: e9653fe6ab79e3615ecb231d19dd9ee20133faf6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219151"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887015"
 ---
-# <a name="how-to-add-and-remove-additional-assemblies"></a>Cómo: agregar y quitar ensamblados adicionales
+# <a name="how-to-add-and-remove-additional-assemblies"></a>Procedimiento Agregar y quitar ensamblados adicionales
   Si un paquete de SharePoint depende de otros ensamblados para la funcionalidad o los datos, puede agregar esos ensamblados al paquete de solución (.wsp). De esta manera, el servidor de SharePoint se asegura de que los ensamblados personalizados se instalan con un paquete.  
   
  También puede agregar y cambiar los controles seguros y los archivos de recursos de clase asociados a los ensamblados.  
@@ -36,7 +31,7 @@ ms.locfileid: "50219151"
   
 #### <a name="to-add-an-existing-assembly"></a>Para agregar un ensamblado existente  
   
-1.  Abra el **diseñador del paquete**. Para obtener más información, consulte [Cómo: personalizar un paquete de solución SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+1.  Abra el **diseñador del paquete**. Para obtener más información, vea [Cómo: Personalizar un paquete de solución de SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 2.  Elija la **avanzadas** ficha.  
   
@@ -52,7 +47,7 @@ ms.locfileid: "50219151"
   
 1.  Abra el **diseñador del paquete**.  
   
-     Para obtener más información, consulte [Cómo: personalizar un paquete de solución SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+     Para obtener más información, vea [Cómo: Personalizar un paquete de solución SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 2.  Elija la **avanzadas** ficha.  
   
@@ -89,7 +84,7 @@ ms.locfileid: "50219151"
   
 #### <a name="to-delete-an-existing-assembly"></a>Para eliminar un ensamblado existente  
   
-1.  Abra el **diseñador del paquete**. Para obtener más información, consulte [Cómo: personalizar un paquete de solución SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+1.  Abra el **diseñador del paquete**. Para obtener más información, vea [Cómo: Personalizar un paquete de solución SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 2.  Elija la **avanzadas** ficha.  
   
@@ -115,6 +110,5 @@ ms.locfileid: "50219151"
   
 ## <a name="see-also"></a>Vea también
  [Crear características de SharePoint](../sharepoint/creating-sharepoint-features.md)   
- [Cómo: personalizar una característica de SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
- [Cómo: agregar y quitar elementos de las características de SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
-  
+ [Cómo: Personalizar una característica de SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
+ [Cómo: Agregar y quitar elementos de las características de SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   

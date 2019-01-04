@@ -11,15 +11,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: b97a58a7f5ba3808c658b838de942e94c12b9b79
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 46df354cf860aa1aa08fd8d738711dad41fd6741
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049099"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861308"
 ---
 # <a name="automatic-feature-suspension"></a>Suspensión automática de la característica
 
@@ -43,7 +42,7 @@ Para sugerencias y trucos sobre cómo mejorar el rendimiento de Visual Studio cu
 
 ## <a name="full-solution-analysis-suspended"></a>Análisis de la solución completa suspendido
 
-De forma predeterminada, análisis de la solución completa está habilitado para Visual Basic y deshabilitado para Visual C#. Sin embargo, en una condición de memoria insuficiente, análisis de la solución completa se deshabilita automáticamente para Visual Basic y Visual C#, independientemente de su configuración en el cuadro de diálogo Opciones. Sin embargo, puede volver a habilitar análisis de la solución completa eligiendo el **rehabilitar** botón en la información de la barra cuando aparezca, seleccionando la **Habilitar análisis de la solución completa** casilla de verificación en el cuadro de diálogo Opciones, o bien reiniciar Visual Studio. El cuadro de diálogo Opciones siempre muestra la solución completa actual configuración de análisis. Para obtener más información, consulte [Cómo: habilitar y deshabilitar el análisis de la solución completa](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+De forma predeterminada, análisis de la solución completa está habilitado para Visual Basic y deshabilitado para Visual C#. Sin embargo, en una condición de memoria insuficiente, análisis de la solución completa se deshabilita automáticamente para Visual Basic y Visual C#, independientemente de su configuración en el cuadro de diálogo Opciones. Sin embargo, puede volver a habilitar análisis de la solución completa eligiendo el **rehabilitar** botón en la información de la barra cuando aparezca, seleccionando la **Habilitar análisis de la solución completa** casilla de verificación en el cuadro de diálogo Opciones, o bien reiniciar Visual Studio. El cuadro de diálogo Opciones siempre muestra la solución completa actual configuración de análisis. Para obtener más información, vea [Cómo: Habilitar y deshabilitar el análisis de la solución completa](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
 
 ## <a name="gc-low-latency-disabled"></a>GC baja latencia deshabilitada
 
@@ -66,6 +65,6 @@ Además, también se borran las memorias caché que se utiliza para operaciones 
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Habilitar y deshabilitar el análisis completo de la solución](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
+- [Cómo: Habilitar y deshabilitar el análisis de la solución completa](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
 - [Fundamentos de la recolección de elementos no utilizados](/dotnet/standard/garbage-collection/fundamentals)
 - [Consideraciones de rendimiento para soluciones de gran tamaño](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)

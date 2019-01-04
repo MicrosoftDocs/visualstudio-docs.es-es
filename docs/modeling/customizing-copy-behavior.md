@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6839385e64503ce939d5244b116a9f24be786395
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4786b0ba6ee981ce14b60b1af87252e3d9582a0e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904445"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885632"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizar comportamiento de copia
 En un lenguaje de específicos de dominio (DSL) creado con el SDK de modelado y visualización de Visual Studio, puede modificar lo que sucede cuando el usuario copia y pega elementos.
@@ -88,7 +87,7 @@ Invalidar *Midsl* `ClipboardCommandSet.ProcessOnMenuCopyCommand()` en el proyect
 Invalidar *Midsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` en el proyecto DslPackage.
 
  **Conservar el diseño de la forma mediante copiar y pegar.**
-Cuando el usuario copia varias formas, puede conservar su posición relativa cuando se peguen. Esta técnica se muestra en el ejemplo en [VMSDK: diagramas de circuitos](http://go.microsoft.com/fwlink/?LinkId=213879).
+Cuando el usuario copia varias formas, puede conservar su posición relativa cuando se peguen. Esta técnica se muestra en el ejemplo en [VMSDK: Ejemplo de diagramas de circuitos](http://go.microsoft.com/fwlink/?LinkId=213879).
 
  Para lograr este efecto, agregue las formas y conectores al ElementGroupPrototype copiado. El método más cómodo para invalidar es ElementOperations.CreateElementGroupPrototype(). Para ello, agregue el siguiente código al proyecto Dsl:
 
@@ -144,7 +143,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **Pegar formas en la ubicación elegida, como la posición actual del cursor.**
-Cuando el usuario copia varias formas, puede conservar su posición relativa cuando se peguen. Esta técnica se muestra en el ejemplo en [VMSDK: diagramas de circuitos](http://go.microsoft.com/fwlink/?LinkId=213879).
+Cuando el usuario copia varias formas, puede conservar su posición relativa cuando se peguen. Esta técnica se muestra en el ejemplo en [VMSDK: Ejemplo de diagramas de circuitos](http://go.microsoft.com/fwlink/?LinkId=213879).
 
  Para lograr este efecto, invalide `ClipboardCommandSet.ProcessOnMenuPasteCommand()` para usar la versión específica de la ubicación de `ElementOperations.Merge()`. Para ello, agregue el siguiente código al proyecto DslPackage:
 
@@ -211,7 +210,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 ```
 
  **Permitir que el usuario arrastre y coloque elementos.**
-Consulte [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md).
+Vea [Cómo: Agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
 ## <a name="customizeLinks"></a> Personalizar el comportamiento de copiar vínculos
  Cuando el usuario copia un elemento, el comportamiento estándar es que los elementos incrustados también se copien. Puede modificar el comportamiento estándar de la operación de copiar. En la definición de DSL, seleccione un rol en un lado de una relación y, en la ventana de propiedades establecidas la **Propagates Copy** valor.
@@ -282,7 +281,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 ```
 
 ## <a name="receiving-items-dragged-from-other-models"></a>Recibir elementos arrastrados de otros modelos
- ElementOperations también se puede usar para definir el comportamiento de copiar, mover, eliminar y arrastrar y colocar. Para demostrar el uso de ElementOperations, el ejemplo que se proporciona define un comportamiento de arrastrar y colocar personalizado. Sin embargo, para ello podría considerar el enfoque alternativo descrito en [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md), que es más extensible.
+ ElementOperations también se puede usar para definir el comportamiento de copiar, mover, eliminar y arrastrar y colocar. Para demostrar el uso de ElementOperations, el ejemplo que se proporciona define un comportamiento de arrastrar y colocar personalizado. Sin embargo, para ello podría considerar el enfoque alternativo descrito en [Cómo: Agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md), que es más extensible.
 
  Defina dos métodos en su clase ElementOperations:
 
@@ -367,7 +366,7 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
 ## <a name="standard-copy-behavior"></a>Comportamiento estándar de copiar
  El código de esta sección muestra los métodos que puede invalidar para alterar el comportamiento de copiar. Para ayudarle a ver cómo conseguir sus propias personalizaciones, esta sección muestra el código que invalida los métodos implicados en la copia, pero no cambia el comportamiento estándar.
 
- Cuando el usuario presiona CTRL+C o usa el comando de menú Copiar, se llama al método <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A>. Puede ver cómo esto se configura **DslPackage\Generated Code\CommandSet.cs**. Para obtener más información acerca de cómo de comandos, consulte [Cómo: agregar un comando al menú contextual](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
+ Cuando el usuario presiona CTRL+C o usa el comando de menú Copiar, se llama al método <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A>. Puede ver cómo esto se configura **DslPackage\Generated Code\CommandSet.cs**. Para obtener más información acerca de cómo de comandos, vea [Cómo: Agregar un comando al menú contextual](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
  Puede invalidar la processonmenucopycommand, puede agregar una definición de clase parcial de *Midsl* `ClipboardCommandSet` en el proyecto DslPackage.
 
@@ -557,8 +556,8 @@ namespace Company.MyDsl
 ## <a name="see-also"></a>Vea también
 
 - [Personalizar la creación y el movimiento de los elementos](../modeling/customizing-element-creation-and-movement.md)
-- [Cómo: Agregar un controlador para arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Cómo: Agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Personalizar el comportamiento de eliminación](../modeling/customizing-deletion-behavior.md)
-- [Ejemplo: Ejemplo de diagramas de circuitos VMSDK](http://go.microsoft.com/fwlink/?LinkId=213879)
+- [Ejemplo: Diagramas de circuitos de VMSDK](http://go.microsoft.com/fwlink/?LinkId=213879)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

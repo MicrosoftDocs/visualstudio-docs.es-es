@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2c279da9aed4a11799004a38004f8b82dca65174
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: fba020f27db73c5a96225c777f68e21db449b331
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966718"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831542"
 ---
 # <a name="structure-your-modeling-solution"></a>Estructurar la solución de modelado
 
@@ -36,7 +35,7 @@ En un proyecto grande o mediano, la estructura del equipo se basa en la estructu
 
 2. Crear una solución de Visual Studio, que llamaremos a la solución de arquitectura. Esta solución se usará para crear el diseño general del sistema. Contendrá modelos, pero ningún código.
 
-   Agregue un diagrama de dependencia para esta solución. En el diagrama de dependencia, dibuje la arquitectura que ha elegido para la aplicación. Por ejemplo, el diagrama puede mostrar estas capas y las dependencias entre ellas: presentación, lógica de negocios y datos.
+   Agregue un diagrama de dependencia para esta solución. En el diagrama de dependencia, dibuje la arquitectura que ha elegido para la aplicación. Por ejemplo, el diagrama puede mostrar estas capas y las dependencias entre ellos: Presentación; Lógica de negocios; y los datos.
 
 4. Crear una solución de Visual Studio independiente para cada capa en el diagrama de la dependencia de arquitectura.
 
@@ -76,7 +75,7 @@ En un proyecto grande o mediano, la estructura del equipo se basa en la estructu
 
 1. En la solución para cada capa, agregue el proyecto de modelado de arquitectura. En **el Explorador de soluciones**, haga clic en el nodo de solución, seleccione **agregar**y, a continuación, haga clic en **proyecto existente**. Ahora, se puede acceder al proyecto de modelado desde cada solución: el proyecto de la arquitectura y el proyecto de desarrollo de cada capa.
 
-2. En el modelo compartido, cree un paquete para cada capa: en **el Explorador de soluciones**, seleccione el proyecto de modelado. En **Explorador de modelos UML**, haga clic en el nodo raíz del modelo, seleccione **agregar**y, a continuación, haga clic en **paquete**.
+2. En el modelo compartido, cree un paquete para cada capa: En **el Explorador de soluciones**, seleccione el proyecto de modelado. En **Explorador de modelos UML**, haga clic en el nodo raíz del modelo, seleccione **agregar**y, a continuación, haga clic en **paquete**.
 
    Cada paquete incluirá diagramas que se describen los requisitos y diseño de la capa correspondiente.
 

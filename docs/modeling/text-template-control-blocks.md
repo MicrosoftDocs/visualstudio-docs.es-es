@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 90668c751005e697c4b78d0f3caf58f8a85db925
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 783adf81fd622fd179a4871823a147246df92ff7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812029"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876738"
 ---
 # <a name="text-template-control-blocks"></a>Bloques de control de las plantillas de texto
 Bloques de control le permite escribir código en su plantilla de texto para variar el resultado. Hay tres tipos de bloques de control, que se distinguen por los corchetes de apertura:

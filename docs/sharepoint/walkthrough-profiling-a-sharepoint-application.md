@@ -1,9 +1,6 @@
 ---
-title: 'Tutorial: Generar perfiles de una aplicación de SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Generación de perfiles de una aplicación de SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5db5e9408a64df80311667267561ee69234fd7d5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e5fb918761cc8e8d68aaaaa5e6a420bb6758a1e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852757"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913822"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Tutorial: Generar perfiles de una aplicación de SharePoint
   En este tutorial se muestra cómo usar las herramientas de generación de perfiles de Visual Studio para optimizar el rendimiento de una aplicación de SharePoint. La aplicación de ejemplo es un receptor de eventos de características de SharePoint que contiene un bucle inactivo que merma el rendimiento del receptor de eventos de características. El generador de perfiles de Visual Studio le permite encontrar y eliminar la parte más cara (rendimiento más lento) del proyecto, también conocido como el *caliente*.  
@@ -280,4 +277,3 @@ ms.locfileid: "49852757"
  [Información general sobre la sesión de rendimiento](/visualstudio/profiling/performance-session-overview)   
  [Guía básica para la generación de perfiles de rendimiento](/visualstudio/profiling/beginners-guide-to-performance-profiling)   
  [Encontrar cuellos de botella de aplicación con Visual Studio Profiler](http://go.microsoft.com/fwlink/?LinkID=137266)  
-  

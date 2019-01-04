@@ -1,9 +1,6 @@
 ---
 title: Procedimiento Cambiar la posición de una pestaña en la cinta de opciones
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c00fa747ee3c74592d491796e1281207d0c5a83f
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: f1b324ec6e43639b55ba308aab7028592c8671d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647121"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956523"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Procedimiento Cambiar la posición de una pestaña en la cinta de opciones
   Puede cambiar el orden de las pestañas personalizadas en una cinta de opciones mediante la **pestaña Editor de la colección**. Puede colocar las pestañas personalizadas antes o después de una pestaña integrada en la cinta de opciones. Una pestaña integrada es una ficha que ya está en la cinta de opciones de una aplicación de Microsoft Office. Por ejemplo, el **datos** ficha es una pestaña integrada en Excel.  
@@ -65,5 +62,3 @@ ms.locfileid: "53647121"
  [XML de la cinta](../vsto/ribbon-xml.md)   
  [Tutorial: Crear una pestaña personalizada usando el Diseñador de cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [Tutorial: Crear una pestaña personalizada usando XML de cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
-  
-  

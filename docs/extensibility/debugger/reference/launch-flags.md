@@ -1,9 +1,6 @@
 ---
 title: LAUNCH_FLAGS | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - LAUNCH_FLAGS
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74ec5b3cc02efa75e84d52910c02ea693a7ab8a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 26db88687a6e2c11fca366e0e3beab25a6a221fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903496"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965374"
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
 Especifica las marcas de inicio de depuración.  
@@ -28,7 +25,7 @@ Especifica las marcas de inicio de depuración.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-enum enum_LAUNCH_FLAGS {   
+enum enum_LAUNCH_FLAGS {   
    LAUNCH_DEBUG      = 0x0000,  
    LAUNCH_NODEBUG    = 0x0001,  
    LAUNCH_ENABLE_ENC = 0x0002,  
@@ -38,7 +35,7 @@ typedef DWORD LAUNCH_FLAGS;
 ```  
   
 ```csharp  
-public enum enum_LAUNCH_FLAGS {   
+public enum enum_LAUNCH_FLAGS {   
    LAUNCH_DEBUG      = 0x0000,  
    LAUNCH_NODEBUG    = 0x0001,  
    LAUNCH_ENABLE_ENC = 0x0002,  
@@ -67,7 +64,7 @@ public enum enum_LAUNCH_FLAGS {
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   

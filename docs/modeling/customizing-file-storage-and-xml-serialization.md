@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8a21067eab6e55f3fb031e57fa2257b0d40a7eb6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 443d6ebd98c8e4a5c583658d46663e34769f72de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886466"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858258"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Personalizar el almacenamiento de archivos y la serialización XML
 

@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 01b2b906d514d8fd9042c1046ea2481faee39499
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 75c50780a8ad48fdd4766576e3d6fe94a580b777
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926688"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869932"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Crear lenguajes específicos de dominio basados en Windows Forms
 Puede usar Windows Forms para mostrar el estado de un modelo de lenguaje específico de dominio (DSL), en lugar de usar un diagrama DSL. Este tema le guiará a través de enlazar un formulario de Windows a un DSL, mediante el SDK de modelado y visualización de Visual Studio.
@@ -118,9 +117,9 @@ Puede usar Windows Forms para mostrar el estado de un modelo de lenguaje especí
 
 1.  En el **datos** menú, elija **Mostrar orígenes de datos**.
 
-     El **orígenes de datos** abre la ventana.
+     Se abre la ventana **Orígenes de datos**.
 
-     Elija **Agregar nuevo origen de datos**. El **Asistente para configuración de origen de datos** se abre.
+     Elija **Agregar nuevo origen de datos**. Se abrirá el **Asistente para configuración de orígenes de datos**.
 
 2.  Elija **objeto**, **siguiente**.
 

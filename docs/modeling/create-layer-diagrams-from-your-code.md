@@ -13,13 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7a613874a45939d9c9f2546edbb5545d8be31ccb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f10323a1123b795f1fa6b09d52252b8038b1a732
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951176"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846170"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Crear diagramas de dependencia a partir del código
 
@@ -89,12 +88,12 @@ Antes de crear un diagrama de dependencia, asegúrese de que su solución tiene 
 
 |**En**|**Siga estos pasos**|
 |-|-|
-|Crear una capa para un único artefacto|<ol><li>Arrastre el elemento al diagrama de dependencia desde estos orígenes:<br /><br /> <ul><li>**Explorador de soluciones**<br /><br />         Por ejemplo, puede arrastrar archivos o proyectos.</li><li>Mapas de código<br /><br />         Consulte [asignar dependencias en sus soluciones](../modeling/map-dependencies-across-your-solutions.md) y [usar mapas de código para depurar aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Vista de clases** o **Examinador de objetos**</li></ul><br />     Aparecerá una capa en el diagrama que estará vinculada al artefacto.</li><li>Cambie el nombre de la capa para que refleje las responsabilidades del código asociado u otros artefactos.</li></ol> **Importante:** arrastrar archivos binarios al diagrama de dependencia no agrega automáticamente sus referencias al proyecto de modelado. Debe agregar manualmente los archivos binarios que desee validar al proyecto de modelado. **Para agregar archivos binarios al proyecto de modelado** <ol><li>En **el Explorador de soluciones**, abra el menú contextual del proyecto de modelado y, a continuación, elija **Agregar elemento existente**.</li><li>En el **Agregar elemento existente** cuadro de diálogo, busque los archivos binarios, selecciónelos y, a continuación, elija **Aceptar**.     Los archivos binarios aparecen en el proyecto de modelado.</li><li>En **el Explorador de soluciones**, elija un archivo binario que ha agregado y, a continuación, presione **F4** para abrir el **propiedades** ventana.</li><li>En cada archivo binario, establezca el **acción de compilación** propiedad **validar**.</li></ol>|
+|Crear una capa para un único artefacto|<ol><li>Arrastre el elemento al diagrama de dependencia desde estos orígenes:<br /><br /> <ul><li>**Explorador de soluciones**<br /><br />         Por ejemplo, puede arrastrar archivos o proyectos.</li><li>Mapas de código<br /><br />         Consulte [asignar dependencias en sus soluciones](../modeling/map-dependencies-across-your-solutions.md) y [usar mapas de código para depurar aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Vista de clases** o **Examinador de objetos**</li></ul><br />     Aparecerá una capa en el diagrama que estará vinculada al artefacto.</li><li>Cambie el nombre de la capa para que refleje las responsabilidades del código asociado u otros artefactos.</li></ol> **Importante:**  Arrastre los archivos binarios al diagrama de dependencia no agrega automáticamente sus referencias al proyecto de modelado. Debe agregar manualmente los archivos binarios que desee validar al proyecto de modelado. **Para agregar archivos binarios al proyecto de modelado** <ol><li>En **el Explorador de soluciones**, abra el menú contextual del proyecto de modelado y, a continuación, elija **Agregar elemento existente**.</li><li>En el **Agregar elemento existente** cuadro de diálogo, busque los archivos binarios, selecciónelos y, a continuación, elija **Aceptar**.     Los archivos binarios aparecen en el proyecto de modelado.</li><li>En **el Explorador de soluciones**, elija un archivo binario que ha agregado y, a continuación, presione **F4** para abrir el **propiedades** ventana.</li><li>En cada archivo binario, establezca el **acción de compilación** propiedad **validar**.</li></ol>|
 |Crear una única capa para todos los artefactos seleccionados|Arrastre todos los artefactos al diagrama de dependencia al mismo tiempo.<br /><br /> Aparecerá una capa en el diagrama que estará vinculada a todos los artefactos.|
-|Crear una capa para cada artefacto seleccionado|Presione y mantenga presionada la **MAYÚS** mientras arrastra al mismo tiempo todos los artefactos al diagrama de dependencia de clave. **Nota:** si usas el **MAYÚS** clave para seleccionar un intervalo de elementos, suelte la tecla después de seleccionar los artefactos. Cuando arrastre los artefactos al diagrama, vuelva a mantener la tecla presionada. <br /><br /> Aparecerá una capa para cada artefacto y cada capa estará vinculada a cada uno de los artefactos.|
+|Crear una capa para cada artefacto seleccionado|Presione y mantenga presionada la **MAYÚS** mientras arrastra al mismo tiempo todos los artefactos al diagrama de dependencia de clave. **Nota:**  Si usas el **MAYÚS** clave para seleccionar un intervalo de elementos, suelte la tecla después de seleccionar los artefactos. Cuando arrastre los artefactos al diagrama, vuelva a mantener la tecla presionada. <br /><br /> Aparecerá una capa para cada artefacto y cada capa estará vinculada a cada uno de los artefactos.|
 |Agregar un artefacto a una capa|Arrastre el artefacto hasta la capa.|
-|Crear una nueva capa que no tenga vínculos|En el **cuadro de herramientas**, expanda el **diagrama dependencias** sección y, a continuación, arrastre un **capa** al diagrama de dependencia.<br /><br /> Para agregar varias capas, haga doble clic en la herramienta. Cuando haya terminado, elija el **puntero** herramientas o presione la **ESC** clave.<br /><br /> O bien<br /><br /> Abra el menú contextual para el diagrama de dependencia, elija **agregar**y, a continuación, elija **capa**.|
-|Crear capas anidadas|Arrastre una capa existente a otro nivel.<br /><br /> O bien<br /><br /> Abra el menú contextual de una capa, elija **agregar**y, a continuación, elija **capa**.|
+|Crear una nueva capa que no tenga vínculos|En el **cuadro de herramientas**, expanda el **diagrama dependencias** sección y, a continuación, arrastre un **capa** al diagrama de dependencia.<br /><br /> Para agregar varias capas, haga doble clic en la herramienta. Cuando haya terminado, elija el **puntero** herramientas o presione la **ESC** clave.<br /><br /> o bien<br /><br /> Abra el menú contextual para el diagrama de dependencia, elija **agregar**y, a continuación, elija **capa**.|
+|Crear capas anidadas|Arrastre una capa existente a otro nivel.<br /><br /> o bien<br /><br /> Abra el menú contextual de una capa, elija **agregar**y, a continuación, elija **capa**.|
 |Crear una nueva capa que contenga dos o más capas existentes|Seleccione las capas, abra el menú contextual de la selección y, a continuación, elija **grupo**.|
 |Cambiar el color de una capa|Establezca su **Color** propiedad para el color que desee.|
 |Especificar qué artefactos asociados a una capa no deben pertenecer a los espacios de nombres especificados|Escriba los espacios de nombres en la capa **Forbidden Namespaces** propiedad. Use un punto y coma (**;**) para separar los espacios de nombres.|
@@ -120,7 +119,7 @@ Antes de crear un diagrama de dependencia, asegúrese de que su solución tiene 
 |**En**|**En el Explorador de capas**|
 |-|-|
 |Eliminar el vínculo entre la capa y un artefacto|Abra el menú contextual para el vínculo del artefacto y, a continuación, elija **eliminar**.|
-|Mover el vínculo de una capa a otra|Arrastre el vínculo del artefacto a una capa del diagrama.<br /><br /> O bien<br /><br /> 1.  Abra el menú contextual para el vínculo del artefacto y, a continuación, elija **cortar**.<br />2.  En el diagrama de dependencia, abra el menú contextual para la capa y, a continuación, elija **pegar**.|
+|Mover el vínculo de una capa a otra|Arrastre el vínculo del artefacto a una capa del diagrama.<br /><br /> o bien<br /><br /> 1.  Abra el menú contextual para el vínculo del artefacto y, a continuación, elija **cortar**.<br />2.  En el diagrama de dependencia, abra el menú contextual para la capa y, a continuación, elija **pegar**.|
 |Copiar el vínculo de una capa a otra|1.  Abra el menú contextual para el vínculo del artefacto y, a continuación, elija **copia**.<br />2.  En el diagrama de dependencia, abra el menú contextual para la capa y, a continuación, elija **pegar**.|
 |Crear una nueva capa a partir del vínculo de un artefacto existente|Arrastre el vínculo del artefacto a un espacio en blanco del diagrama.|
 |Compruebe que el artefacto vinculado admite la validación en el diagrama de dependencia.|Examine el **admite validación** columna para el vínculo del artefacto.|
@@ -161,7 +160,7 @@ Antes de crear un diagrama de dependencia, asegúrese de que su solución tiene 
 ## <a name="see-also"></a>Vea también
 
 - [Vídeo: Validar las dependencias de arquitectura en tiempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
-- [Diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md)
-- [Diagramas de dependencia: instrucciones](../modeling/layer-diagrams-guidelines.md)
+- [Diagramas de dependencia: Referencia](../modeling/layer-diagrams-reference.md)
+- [Diagramas de dependencia: Directrices](../modeling/layer-diagrams-guidelines.md)
 - [Validación de código con diagramas de dependencia](../modeling/validate-code-with-layer-diagrams.md)
 - [Visualizar el código](../modeling/visualize-code.md)

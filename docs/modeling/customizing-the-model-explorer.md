@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 32ee70edb27ff68d7e2ee4c83a600a8725e6c08e
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: f3b9df35c4dd69b52c6c4562f3e634dd9a2bdb56
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966656"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986822"
 ---
 # <a name="customizing-the-model-explorer"></a>Personalizar el Explorador de modelos
 Puede cambiar la apariencia y comportamiento del explorador para el Diseñador de lenguaje específico de dominio como sigue:

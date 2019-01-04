@@ -1,9 +1,6 @@
 ---
 title: Desarrollar soluciones de SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.ProjectProperties
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25a7402a8d0464152e9b1bdd9d2edcdc66824914
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: bc45f1420f073347153c6b7b8dd72cae44dd6b0f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295909"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871062"
 ---
 # <a name="develop-sharepoint-solutions"></a>Desarrollar soluciones de SharePoint
   En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] están disponibles varias plantillas de tipo de proyecto de SharePoint para crear sitios y elementos de sitio de SharePoint. Para obtener una lista de los tipos de proyecto disponibles, consulte [SharePoint plantillas de elemento de proyecto y](../sharepoint/sharepoint-project-and-project-item-templates.md). A continuación se ofrece una descripción de los elementos y las propiedades de un proyecto de SharePoint.  
@@ -48,7 +45,7 @@ ms.locfileid: "51295909"
   
  Al agregar un elemento, como un tipo de contenido o una instancia de lista, a un proyecto SharePoint, se agrega a una característica del nodo **Características** . El ámbito del elemento determina si se agrega a una característica nueva o existente. Si el nuevo elemento tiene el mismo ámbito que una característica existente, se agrega a esa característica. De lo contrario, se agrega a una nueva característica.  
   
- Para agregar una característica manualmente, ejecute el comando **Agregar característica** del menú contextual del nodo Características. Puede ver o cambiar el contenido de una característica utilizando el Diseñador de características. Para obtener más información, consulte [Cómo: personalizar una característica de SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
+ Para agregar una característica manualmente, ejecute el comando **Agregar característica** del menú contextual del nodo Características. Puede ver o cambiar el contenido de una característica utilizando el Diseñador de características. Para obtener más información, vea [Cómo: Personalizar una característica de SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
  Cuando una característica se agrega a un proyecto de SharePoint, aparece en el **Explorador de soluciones** como un nodo con el nombre predeterminado Feature*x*.feature, donde *x* es un número único. Una vez implementada en el servidor de SharePoint, un administrador de SharePoint puede activarla y ponerla a disposición de los usuarios del sitio de SharePoint.  
   
@@ -66,14 +63,14 @@ ms.locfileid: "51295909"
   
 |Nombre de la propiedad|Descripción|  
 |-------------------|-----------------|  
-|Configuración de implementación activa|Especifica la serie de pasos realizados durante la implementación. Para obtener más información, consulte [Cómo: editar una configuración de implementación de SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).|  
+|Configuración de implementación activa|Especifica la serie de pasos realizados durante la implementación. Para obtener más información, vea [Cómo: Editar una configuración de implementación de SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).|  
 |Destino de implementación del ensamblado|Determina dónde se encuentran los *ensamblados de aplicación de SharePoint* . Los valores de ubicación de ensamblados válidos son *GlobalAssemblyCache* (valor predeterminado) o *WebApplication*.<br /><br /> Si la propiedad *Sandboxed Solution* está establecida en **true**, esta propiedad estará deshabilitada.|  
 |Retraer automáticamente después de depurar|Especifica si la solución implementada se retrae automáticamente de SharePoint tras ejecutar la aplicación en modo de depuración en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Cuando está activada, la solución se retracta si el IDE vuelve a la Vista de diseño tras la depuración. Cuando está desactivada, la solución no se retrae. Para más información, vea [Retracción de una solución](http://go.microsoft.com/fwlink/?LinkId=183819).|  
-|Editar configuración|Especifica la configuración de implementación que se va a usar en el proyecto. Para obtener más información, consulte [Cómo: editar una configuración de implementación de SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) y [implementar, publicar y actualizar paquetes de solución SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).|  
+|Editar configuración|Especifica la configuración de implementación que se va a usar en el proyecto. Para obtener más información, vea [Cómo: Editar una configuración de implementación de SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) y [implementar, publicar y actualizar paquetes de solución SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).|  
 |Habilitar depuración de Silverlight (en lugar de depuración de script)|Cuando está activada, el depurador de Silverlight se incorpora al proceso de depuración. Cuando está desactivada, el depurador de script se incorpora al proceso de depuración. Para más información, vea la [información general sobre depuración de Silverlight](http://go.microsoft.com/fwlink/?LinkId=179826).|  
 |Incluir ensamblado en paquete|Especifica si el ensamblado del proyecto se empaqueta en tiempo de compilación o no.|  
-|Línea de comandos posterior a la implementación|Especifica los comandos que se van a ejecutar después de implementar la solución de SharePoint. Esta línea admite los comandos de proceso por lotes así como la resolución de variables de MSBuild. Para obtener más información, consulta [How to: Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md).|  
-|Línea de comandos anterior a la implementación|Especifica los comandos que se van a ejecutar antes de implementar la solución de SharePoint. Esta línea admite los comandos de proceso por lotes así como la resolución de variables de MSBuild. Para obtener más información, consulta [How to: Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md).|  
+|Línea de comandos posterior a la implementación|Especifica los comandos que se van a ejecutar después de implementar la solución de SharePoint. Esta línea admite los comandos de proceso por lotes así como la resolución de variables de MSBuild. Para obtener más información, vea [Cómo: Establecer comandos de implementación de SharePoint](../sharepoint/how-to-set-sharepoint-deployment-commands.md).|  
+|Línea de comandos anterior a la implementación|Especifica los comandos que se van a ejecutar antes de implementar la solución de SharePoint. Esta línea admite los comandos de proceso por lotes así como la resolución de variables de MSBuild. Para obtener más información, vea [Cómo: Establecer comandos de implementación de SharePoint](../sharepoint/how-to-set-sharepoint-deployment-commands.md).|  
 |Archivo de proyecto|Nombre del archivo que contiene la información sobre el proyecto, incluyendo el modo de compilación, la configuración y otros datos.|  
 |Carpeta de proyecto|Ubicación del archivo de proyecto en el sistema. (Solo lectura).|  
 |Sandboxed Solution|Especifica si el proyecto se debería implementar como una *solución en espacio aislado*, también conocida como *solución creada por el usuario*. Las soluciones en espacio aislado no son necesariamente de confianza. Un valor de **true** significa que el proyecto se implementa como una solución en un espacio aislado y un valor de **false** significa que el proyecto se implementa como una solución de granja. Para obtener más información, vea [Sandboxed Solution Considerations](../sharepoint/sandboxed-solution-considerations.md) y [Differences Between Sandboxed and Farm Solutions](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).|  
@@ -104,7 +101,7 @@ ms.locfileid: "51295909"
 |Ubicación de la implementación|Ruta de acceso completa del archivo en el servidor de SharePoint. Esta ruta de acceso se compone de las subpropiedades Raíz de la implementación y Ruta de acceso de la implementación.|  
 |Ruta de acceso de la implementación|La ruta de acceso relativa del archivo en el archivo de SharePoint Server, como Workflow1\\. La ruta de acceso completa del archivo se crea concatenando el valor de *Deployment Path* al final del valor de *Deployment Root* .<br /><br /> Al seleccionar un valor de *RootFile* para el *tipo de implementación* los cambios de propiedad el *Deployment Root* propiedad \<SharePointRoot >\\, lo que da una ruta de acceso completa de \<SharePointRoot > \Workflow1\\. Para obtener más información, consulte [empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|  
 |Deployment Root|Cadena. Carpeta raíz donde se implementa el archivo en el servidor de SharePoint. Por ejemplo, \<SharePointRoot > \Template\Features\\\<NombreDeCaracterística >\\.<br /><br /> El valor de la propiedad *Deployment Root* viene determinado por el valor de *Deployment Type* .|  
-|Deployment Type|Tipo de implementación del archivo, que determina su valor *Deployment Root* . Puede presentar uno de los siguientes valores:<br /><br /> NoDeployment:  *\<ningún valor >*<br /><br /> ElementManifest:  *\<SharePointRoot > \Template\Features\\\<NombreDeCaracterística >*\\<br /><br /> ElementFile:  *\<SharePointRoot > \Template\Features\\\<NombreDeCaracterística >\\*<br /><br /> TemplateFile:  *\<SharePointRoot > \Template\\*<br /><br /> RootFile:  *\<SharePointRoot >\\*<br /><br /> GlobalResource:  *\<SharePointRoot > \Resources\\*<br /><br /> ClassResource:  *\<ClassResourcePath >\\*<br /><br /> Para obtener más información, consulta <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
+|Deployment Type|Tipo de implementación del archivo, que determina su valor *Deployment Root* . Puede presentar uno de los siguientes valores:<br /><br /> NoDeployment:  *\<ningún valor >*<br /><br /> ElementManifest: *\<SharePointRoot > \Template\Features\\\<NombreDeCaracterística >*\\<br /><br /> ElementFile: *\<SharePointRoot > \Template\Features\\\<NombreDeCaracterística >\\*<br /><br /> TemplateFile: *\<SharePointRoot > \Template\\*<br /><br /> RootFile: *\<SharePointRoot >\\*<br /><br /> GlobalResource: *\<SharePointRoot > \Resources\\*<br /><br /> ClassResource: *\<ClassResourcePath >\\*<br /><br /> Para obtener más información, consulta <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
 |Nombre de archivo|Nombre del archivo o carpeta para el archivo de elementos.|  
 |Ruta de acceso completa|Ubicación del archivo del elemento. (Solo lectura).|  
   
@@ -115,7 +112,7 @@ ms.locfileid: "51295909"
 |[Plantillas de proyecto y de elementos de proyecto de SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md)|Describe el proyecto de SharePoint y las plantillas de elementos de proyecto disponibles en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
 |[Cómo: Agregar elementos a un proyecto de SharePoint](../sharepoint/how-to-add-items-to-a-sharepoint-project.md)|Describe cómo agregar elementos nuevos o existentes a un proyecto de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|  
 |[Tutorial: Crear una columna de sitio, el tipo de contenido y la lista de SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Ofrece instrucciones paso a paso para crear un campo de clientes, un tipo de contenido, una definición de lista y una instancia de lista.|  
-|[Cómo: crear un receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)|Describe cómo agregar un receptor de eventos para el proyecto creado en [Tutorial: crear una columna de sitio, el tipo de contenido y la lista de SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).|  
+|[Cómo: Crear un receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)|Describe cómo agregar un receptor de eventos para el proyecto creado en [Tutorial: Crear una columna de sitio, el tipo de contenido y la lista de SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).|  
 |[Crear soluciones de flujo de trabajo de SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)|Describe cómo crear proyectos de flujo de trabajo que incluye formularios de asociación y formularios de iniciación de flujos de trabajo.|  
 |[Crear páginas para SharePoint](../sharepoint/creating-pages-for-sharepoint.md)|Describe cómo se pueden crear páginas para SharePoint como páginas de aplicación, páginas de sitio, páginas maestras y diseños de página.|  
 |[Crear elementos web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Describe cómo se agregan controles que permiten a los usuarios modificar directamente el contenido, el aspecto y el comportamiento de las páginas del sitio de SharePoint a través de un explorador.|  
@@ -126,7 +123,7 @@ ms.locfileid: "51295909"
 |[Usar módulos para incluir archivos en la solución](../sharepoint/using-modules-to-include-files-in-the-solution.md)|Describe cómo utilizar los módulos para implementar los archivos del proyecto de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] en el sitio de SharePoint.|  
 |[Examinar las conexiones de SharePoint mediante el Explorador de servidores](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Describe cómo examinar los sitios locales de SharePoint mediante el Explorador de servidores.|  
 |[Proporcionar información de empaquetado e implementación de elementos de proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)|Describe cómo utilizar las propiedades de los elementos de proyecto para proporcionar información de empaquetado y distribución de los proyectos, como entradas de controles seguros, referencias de salida del proyecto y propiedades de las características.|  
-|[Cómo: agregar y quitar carpetas asignadas](../sharepoint/how-to-add-and-remove-mapped-folders.md)|Describe cómo se pueden agregar las carpetas asignadas a un proyecto para facilitar el acceso a los recursos de SharePoint.|  
+|[Cómo: Agregar y quitar carpetas asignadas](../sharepoint/how-to-add-and-remove-mapped-folders.md)|Describe cómo se pueden agregar las carpetas asignadas a un proyecto para facilitar el acceso a los recursos de SharePoint.|  
 |[Consideraciones sobre la solución en espacio aislado](../sharepoint/sandboxed-solution-considerations.md)|Describe los problemas asociados a las soluciones en recintos de seguridad.|  
 |[Seguridad para las soluciones de SharePoint](../sharepoint/security-for-sharepoint-solutions.md)|Describe cuestiones de seguridad relacionadas con el desarrollo de soluciones de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
 |[Cuadro de diálogo Selector de URL &#40;desarrollo de SharePoint en Visual Studio&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Describe un cuadro de diálogo que se puede usar para agregar las referencias de la ruta de acceso a los recursos en el proyecto o en el servidor de SharePoint local.|  
@@ -136,5 +133,3 @@ ms.locfileid: "51295909"
  [Examinar las conexiones de SharePoint mediante el Explorador de servidores](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [Compilar y depurar soluciones de SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
-  

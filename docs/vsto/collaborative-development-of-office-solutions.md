@@ -1,9 +1,6 @@
 ---
 title: Desarrollo en colaboración de las soluciones de Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b4d22c92bd180eb27f8ebb50e65b24d17a92e47
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 2d8c6d19442a1735ee90db52e4c5f1a98e1fe860
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441553"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876502"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Desarrollo en colaboración de las soluciones de Office
   Varios desarrolladores pueden trabajar en un proyecto de Office en la misma manera que colaboran en otros proyectos de Visual Studio. Visual Studio localiza correctamente la instalación de Microsoft Office en cada equipo, incluso si está instalado Office en distintas ubicaciones. Sin embargo, hay algunas consideraciones importantes a tener en cuenta.  
@@ -49,5 +46,3 @@ ms.locfileid: "53441553"
  [Proteger soluciones de Office](../vsto/securing-office-solutions.md)   
  [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)   
  [Compilar soluciones de Office](../vsto/building-office-solutions.md)  
-  
-  

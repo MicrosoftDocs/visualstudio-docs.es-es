@@ -2,7 +2,6 @@
 title: 'CA1811: Evitar código privado al que no se llama'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - AvoidUncalledPrivateCode
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b8c71c7dc549c980be8ae7a2241629774f32150
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e40ea8d8168d557374e509a3e93b263ef1fe5724
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822981"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986783"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811: Evitar código privado al que no se llama
 
@@ -59,4 +58,4 @@ ms.locfileid: "49822981"
 
  [CA1801: Revisar parámetros sin utilizar](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA1804: Quitar variables locales no utilizadas](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804: Quitar a variables locales no utilizadas](../code-quality/ca1804-remove-unused-locals.md)

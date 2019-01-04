@@ -1,9 +1,6 @@
 ---
-title: 'Tutorial: Extender un tipo de elemento de proyecto de SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Extender un tipo de elemento de proyecto de SharePoint | Documentos de Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 756486daa709efd6ce1ff697d6d190bb7f4a2e34
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: a32182b4df4851bb7befb1a95af70d2e4da6666c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295727"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868672"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Tutorial: Extender un tipo de elemento de proyecto de SharePoint
   Puede usar el **modelo de conectividad a datos empresariales** elemento de proyecto para crear un modelo para el servicio de conectividad de datos profesionales (BDC) en SharePoint. De forma predeterminada, al crear un modelo utilizando este elemento de proyecto, los datos del modelo no se muestran a los usuarios. Por esta razón debe crear una lista externa en SharePoint que permita a los usuarios ver los datos.  
@@ -299,5 +296,3 @@ ms.locfileid: "51295727"
  [Extender el sistema de proyecto de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)   
  [Crear un modelo de conectividad a datos empresariales](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  
-  

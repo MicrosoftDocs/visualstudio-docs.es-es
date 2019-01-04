@@ -1,8 +1,6 @@
 ---
 title: Obtener acceso a un área de formulario en tiempo de ejecución
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f2c1f3e80f5ca4015a19b5eee7f2f4c673dcc615
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 82f613711d1d95b271bd0d1ca558b193a1aa90cb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304485"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875438"
 ---
 # <a name="access-a-form-region-at-runtime"></a>Obtener acceso a un área de formulario en tiempo de ejecución
 
@@ -71,17 +69,17 @@ ms.locfileid: "52304485"
 
  Para habilitar el acceso a un control desde fuera del archivo de código del área del formulario, cree una propiedad en el archivo de código del área del formulario que devuelva dicho control.  
 
- Para obtener más información acerca de cómo crear propiedades en C#, consulte [Cómo: declarar y usar leer escribir propiedades &#40;C&#35; Guía de programación&#41;](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties).  
+ Para obtener más información acerca de cómo crear propiedades en C#, vea [Cómo: Declarar y usar leer escribir propiedades &#40;C&#35; Guía de programación&#41;](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties).  
 
- Para obtener más información sobre cómo crear propiedades en Visual Basic, vea [Cómo: crear una propiedad (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property).  
+ Para obtener más información sobre cómo crear propiedades en Visual Basic, vea [Cómo: Crear una propiedad (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property).  
 
 ## <a name="see-also"></a>Vea también  
  [Directrices para crear áreas de formulario de Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
- [Tutorial: Diseñar un área de formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Cómo: agregar un área de formulario a un proyecto de complemento de Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
+ [Tutorial: Diseñar un formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
+ [Cómo: Agregar un área de formulario a un proyecto de complemento de Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [Acciones personalizadas en áreas de formulario de Outlook](../vsto/custom-actions-in-outlook-form-regions.md)   
  [Asociar un área de formulario a una clase de mensaje de Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
  [Tutorial: Importar un área de formulario diseñada en Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)   
- [Cómo: impedir que Outlook muestre un área de formulario](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)   
+ [Cómo: Impedir que Outlook muestre un área de formulario](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)   
  [Crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md)   
  [Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)  

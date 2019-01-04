@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Modificar comandos de menú estándar en lenguajes específicos de dominio'
+title: Procedimiento Modificar un comando de menú estándar en un lenguaje específico de dominio
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,19 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6aa827781cb8ea78aa5df79f8cb839a6f3548e11
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: bc7eedfbdf725333a5cd6d3cdd3d683437d1979c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967056"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870195"
 ---
-# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Cómo: Modificar comandos de menú estándar en lenguajes específicos de dominio
+# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Procedimiento Modificar un comando de menú estándar en un lenguaje específico de dominio
 
 Puede modificar el comportamiento de algunos de los comandos estándar que se definen automáticamente en su DSL. Por ejemplo, podría modificar **cortar** para que excluya información confidencial. Para ello, se invalidan los métodos en una clase de conjunto de comandos. Estas clases se definen en el archivo CommandSet.cs, en el proyecto DslPackage, y derivan de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
 
 > [!NOTE]
-> Si desea crear sus propios comandos de menú, vea [Cómo: agregar un comando al menú contextual](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
+> Si desea crear sus propios comandos de menú, vea [Cómo: Agregar un comando al menú contextual](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
 ## <a name="what-commands-can-you-modify"></a>¿Qué comandos puede modificar?
 
@@ -71,7 +70,7 @@ Cree un nuevo archivo que contiene una declaración parcial de la clase de conju
 
 ## <a name="override-the-command-methods"></a>Invalidar los métodos de comando
 
-Mayoría de los comandos tiene dos métodos asociados: el método con un nombre como `ProcessOnStatus`... determina si el comando debe estar visible y habilitado. Se llama siempre que el usuario hace clic con el botón secundario en el diagrama, debe ejecutarse rápidamente y no realiza cambios. `ProcessOnMenu`... se llama cuando el usuario hace clic en el comando y debe realizar la función del comando. Quizás quiera invalidar uno o los dos métodos.
+La mayoría de los comandos tienen dos métodos asociados: El método con un nombre como `ProcessOnStatus`... determina si el comando debe estar visible y habilitado. Se llama siempre que el usuario hace clic con el botón secundario en el diagrama, debe ejecutarse rápidamente y no realiza cambios. `ProcessOnMenu`... se llama cuando el usuario hace clic en el comando y debe realizar la función del comando. Quizás quiera invalidar uno o los dos métodos.
 
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Para cambiar cuándo aparece el comando en un menú
 
@@ -148,7 +147,7 @@ Para obtener más información sobre cómo navegar de un elemento a otro y sobre
 
 - <xref:System.ComponentModel.Design.MenuCommand>
 - [Escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [Cómo: Agregar un comando a un menú contextual](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
+- [Cómo: Agregar un comando al menú contextual](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
 - [Adición de elementos de la interfaz de usuario por VSPackages](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Referencia del esquema XML de VSCT](../extensibility/vsct-xml-schema-reference.md)

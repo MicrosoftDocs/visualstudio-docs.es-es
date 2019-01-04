@@ -1,8 +1,7 @@
 ---
-title: 'CA2202: No aplicar Dispose a los objetos varias veces'
+title: 'CA2202: No usar Dispose varias veces en objetos'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2202
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4f666ba0cf620249e9308179d715ca38bf0f18b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ac1e6aafd9894cd59db1a1d842d560d4b7229860
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822870"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822131"
 ---
-# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: No aplicar Dispose a los objetos varias veces
+# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: No usar Dispose varias veces en objetos
 
 |||
 |-|-|
@@ -42,7 +41,7 @@ Una correcta ejecución <xref:System.IDisposable.Dispose%2A> método puede llama
 
 ## <a name="related-rules"></a>Reglas relacionadas
 
-- [CA2000: Desechar (Dispose) objetos antes de perder el ámbito](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
+- [CA2000: Eliminar objetos antes de perder el ámbito](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
