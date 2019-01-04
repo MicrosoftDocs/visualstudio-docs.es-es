@@ -1,9 +1,6 @@
 ---
 title: Control de glifo (VSPackage de Control de código fuente) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - glyphs, source control packages
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c791647e9718686c5a6c7cf250ca84c74aabbfcc
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 2e432e045a55593f0967c7805323785cfc6acaa7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499255"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870052"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>Control de glifo (VSPackage de control de código fuente)
 Parte de la integración profunda disponible para VSPackages de control de código fuente es la capacidad para mostrar sus propios glifos para indicar el estado de los elementos bajo control de código fuente.  

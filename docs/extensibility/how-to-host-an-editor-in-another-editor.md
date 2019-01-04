@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: hospedar un Editor en otro Editor | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Hospedar un Editor en otro Editor | Documentos de Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - host a nested editor
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53b4f02135b18c4641d4e802df3d1124a5d06b47
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 6a9de111a1747e9f5451bff2c8bd3e5edf171d9a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058391"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833612"
 ---
-# <a name="how-to-host-an-editor-in-another-editor"></a>Cómo: hospedar un editor en otro editor
+# <a name="how-to-host-an-editor-in-another-editor"></a>Procedimiento Hospedar un editor en otro editor
 
 En Visual Studio, puede hospedar un editor dentro de otra mediante la especificación de la ventana de hospedaje como una ventana primaria. Para ello, establezca los parámetros <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2.VSFPROPID_ParentHwnd> y <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2.VSFPROPID_ParentFrame> en el marco de ventana secundaria.
 

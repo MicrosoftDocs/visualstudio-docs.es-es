@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: crear características personalizadas y las reglas de validación de paquete para las soluciones de SharePoint | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Crear característica personalizada y las reglas de validación de paquete para las soluciones de SharePoint | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1d36b049aefe9eb574809cfedf4aa1f2ebddbc4c
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: a8b27b3b2900521a61612eafb4d91ef94740bbcd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119833"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939233"
 ---
-# <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Cómo: crear características personalizadas y un paquete de reglas de validación para las soluciones de SharePoint
+# <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Procedimiento Crear paquetes y características personalizado reglas de validación para las soluciones de SharePoint
   Puede crear reglas de validación personalizadas para comprobar el paquete de solución generado por Visual Studio. Puede realizar la validación completa en una característica completa o el paquete seleccionando **validar** en el menú contextual de un paquete o una característica en el **PackagingExplorer**. Al agregar nuevos elementos de proyecto SharePonit o características al proyecto para determinar si el paquete o la característica sería un estado válido, se realiza una validación parcial.  
   
 ### <a name="to-create-a-custom-package-validation-rule"></a>Para crear una regla de validación de paquete personalizado  
@@ -50,7 +47,7 @@ ms.locfileid: "37119833"
  [!code-vb[SPExtensibility.FeatureValidation#1](../sharepoint/codesnippet/VisualBasic/featurevalidation/extension/customvalidationrule.vb#1)]
  [!code-csharp[SPExtensibility.FeatureValidation#1](../sharepoint/codesnippet/CSharp/featurevalidation/extension/customfeaturevalidationrule.cs#1)]  
   
-## <a name="compile-the-code"></a>Compile el código  
+## <a name="compile-the-code"></a>Compilar el código  
  Este ejemplo requiere referencias a los ensamblados siguientes:  
   
 -   Microsoft.VisualStudio.SharePoint.  
@@ -62,4 +59,3 @@ ms.locfileid: "37119833"
   
 ## <a name="see-also"></a>Vea también
  [Ampliar la implementación y empaquetado de SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)  
-  

@@ -1,16 +1,11 @@
 ---
 title: Información adicional para errores de SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.errors.general
 - VS.SharePointTools.Project.Errors.General
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0ee3f5765c3be3228453ef6c870335bde5e999d8
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 3a3547c4209b098a8756cf143888589db20b80f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295025"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968448"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Información adicional para errores de SharePoint
   Puede encontrar ayuda para solucionar problemas de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] errores y advertencias en los temas y los foros públicos de la solución de problemas de herramientas de SharePoint.  
@@ -53,5 +48,3 @@ ms.locfileid: "51295025"
   
 ## <a name="see-also"></a>Vea también
  [Build and debug SharePoint solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md) (Compilar y depurar las soluciones de SharePoint)  
-  
- 

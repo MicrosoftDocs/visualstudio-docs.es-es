@@ -1,9 +1,6 @@
 ---
 title: Motor de depuración | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78bd5b732d7ea1714bb1c5627b570976e33a82c4
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: db4874c842775c02fdf50d827aea7daaac008587
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203893"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836243"
 ---
 # <a name="debug-engine"></a>Motor de depuración
 Un motor de depuración (DE) funciona con el sistema operativo o intérprete para proporcionar servicios de depuración, como la evaluación de expresión, los puntos de interrupción y control de ejecución. La DE es responsable de supervisar el estado de un programa que se está depurando. Para lograr esto, la DE usa los métodos que sean a su disposición en el runtime compatible, si de la CPU o de API proporcionado por el tiempo de ejecución.  

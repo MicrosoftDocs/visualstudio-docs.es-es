@@ -1,9 +1,6 @@
 ---
 title: Exponer propiedades a la ventana Propiedades | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - properties [Visual Studio SDK], exposing in Property Browser
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a37dcac9d75cbd773894b3d708dd4931f77b4ce
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e696e1dc71af4dbcfc408e169c1a6e5ba8984921
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888416"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921843"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>Exponer propiedades a la ventana Propiedades
 En este tutorial expone las propiedades públicas de un objeto para el **propiedades** ventana. Los cambios que realice para estas propiedades se reflejan en el **propiedades** ventana.  
@@ -114,10 +111,10 @@ En este tutorial expone las propiedades públicas de un objeto para el **propied
     ```csharp  
     [Category("My Properties")]  
     [Description("MyToolWindowControl properties")]  
-    public bool IsChecked  
+    public bool IsChecked  
     {  
         get {  
-            if (base.Content == null)  return false;  
+            if (base.Content == null)  return false;  
             return (bool)(( MyToolWindowControl) base.Content).checkBox.IsChecked;   
         }  
         set {  
@@ -188,14 +185,14 @@ En este tutorial expone las propiedades públicas de un objeto para el **propied
 1.  Abra *MyToolWindow.cs* y agregue una clase pública denominada `Simple`.  
   
     ```csharp  
-    public class Simple  
+    public class Simple  
     {  
-        private string someText = "";  
+        private string someText = "";  
   
         [Category("My Properties")]  
         [Description("Simple Properties")]  
         [DisplayName("My Text")]  
-        public string SomeText  
+        public string SomeText  
         {  
             get { return someText; }  
             set { someText = value; }  

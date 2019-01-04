@@ -1,9 +1,6 @@
 ---
 title: Empezar a programar personalizaciones de nivel de documento para Excel
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 808b463445934ecf5cc973b571b4b64d181eb692
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 4c75b02fa3624ab56539e7ea9fbe7792632c272c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646950"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937457"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Empezar a programar personalizaciones de nivel de documento para Excel
   Si acaba de empezar a crear personalizaciones de nivel de documento para Microsoft Office Excel mediante el uso de Visual Studio, aquí es lo que necesita saber.  
@@ -74,5 +71,3 @@ ms.locfileid: "53646950"
  [Tutoriales para Excel](../vsto/walkthroughs-using-excel.md)   
  [Información general sobre el modelo de objetos de Excel](../vsto/excel-object-model-overview.md)   
  [Escribir código en soluciones de Office](../vsto/writing-code-in-office-solutions.md)  
-  
-  

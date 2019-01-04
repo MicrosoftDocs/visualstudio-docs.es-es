@@ -10,18 +10,17 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 490c9c3fe5724373072b2857eb0ce3da7905b172
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a0b540eb6f8e8c09845e069275a0a901c2809806
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813329"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886376"
 ---
 # <a name="understanding-the-dsl-code"></a>Introducción al código DSL
 Una solución de lenguaje específico de dominio (DSL) genera una API que puede usar para leer y actualizar las instancias del DSL en Visual Studio. Esta API se define en el código que se genera a partir de la definición de DSL. Este tema describe la API que se genera.
 
-## <a name="the-example-solution-component-diagrams"></a>La solución de ejemplo: diagramas de componentes
+## <a name="the-example-solution-component-diagrams"></a>Solución de ejemplo: Diagrama de componentes
  Para crear la solución que es el origen de la mayoría de los ejemplos de este tema, cree un DSL desde el **modelos de componentes** plantilla de solución. Esta es una de las plantillas estándar que aparece al crear una nueva solución de DSL.
 
 > [!NOTE]
@@ -66,7 +65,7 @@ Una solución de lenguaje específico de dominio (DSL) genera una API que puede 
 
  `ConnectionBuilders.cs`
 
- Un generador de conexiones es una clase que crea relaciones. Es el código que hay detrás de una herramienta de conexión. Este archivo contiene un par de clases para cada herramienta de conexión. Sus nombres se derivan de los nombres de la herramienta de conexión y relación de dominio: *relación*Builder, y *Herramientadeconector*ConnectAction.
+ Un generador de conexiones es una clase que crea relaciones. Es el código que hay detrás de una herramienta de conexión. Este archivo contiene un par de clases para cada herramienta de conexión. Sus nombres derivan de los nombres de la relación de dominio y de la herramienta de conexión: *Relación*Builder, y *Herramientadeconector*ConnectAction.
 
  (En la solución de componentes de ejemplo, uno de los generadores de conexiones se llama ConnectionBuilder. Esto es una coincidencia porque la relación de dominio se llama Connection).
 

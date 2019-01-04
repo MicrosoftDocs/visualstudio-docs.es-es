@@ -1,9 +1,6 @@
 ---
 title: Agregar dinámicamente elementos de menú | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - DYNAMICITEMSTART
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69a6b50702f444064715e08b31a1b014f8a1028f
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ddbab3be089d022b85383cb123734546249b376e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639674"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823359"
 ---
 # <a name="dynamically-add-menu-items"></a>Agregar dinámicamente elementos de menú
 Puede agregar elementos de menú en tiempo de ejecución mediante la especificación de la `DynamicItemStart` comando marca en una definición de botón de marcador de posición en la tabla de comandos de Visual Studio (*.vsct*) archivo y, después, definir (en código) el número de elementos de menú para mostrar y los comandos de control. Cuando se carga el VSPackage, el marcador de posición se reemplaza con los elementos de menú dinámico.  

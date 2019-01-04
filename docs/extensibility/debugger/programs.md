@@ -1,9 +1,6 @@
 ---
 title: Programas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], programs
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8bd34f72f54fe068ff39b752ddbd6348e4970db
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 62bd59222fa8b173f3e805f60f4b8bd3ad245c6f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252380"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964629"
 ---
 # <a name="programs"></a>Programas
 En la arquitectura de depurador, un *programa*:  

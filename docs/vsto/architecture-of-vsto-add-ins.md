@@ -1,8 +1,6 @@
 ---
 title: Arquitectura de complementos de VSTO
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dccfd3a3344ef9bde46b0b1e6bed50294d832acb
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 0a7453ad957b5f3da0907ac6887524d6523ac2c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248168"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945891"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>Arquitectura de complementos de VSTO
   Los complementos de VSTO creados con Office Developer Tools en Visual Studio tienen unas características arquitectónicas que resaltan la estabilidad y seguridad, y que pueden trabajar en estrecha colaboración con Microsoft Office. En este tema, se describen los siguientes aspectos de los complementos de VSTO:  
@@ -115,5 +113,3 @@ ms.locfileid: "53248168"
  [Desarrollar soluciones de Office](../vsto/developing-office-solutions.md)   
  [Proteger soluciones de Office](../vsto/securing-office-solutions.md)   
  [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)  
-  
-  

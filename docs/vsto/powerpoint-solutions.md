@@ -1,9 +1,6 @@
 ---
 title: Soluciones de PowerPoint
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d7a2775526a088129060fc6375958b08cf6b19eb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0f264cd7382ea16a7c4cfa5896241f4359b0cd67
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906564"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906051"
 ---
 # <a name="powerpoint-solutions"></a>Soluciones de PowerPoint
   Visual Studio ofrece plantillas de proyecto que puede usarse para crear complementos de VSTO para Microsoft Office Outlook. Los complementos de VSTO se pueden usar para automatizar PowerPoint, ampliar las características de PowerPoint o personalizar la interfaz de usuario (UI) de PowerPoint.  
@@ -37,7 +34,7 @@ ms.locfileid: "49906564"
 > [!NOTE]  
 >  ¿Está interesado en desarrollar soluciones que amplían la experiencia de Office a través de [varias plataformas](https://dev.office.com/add-in-availability)? Visite el nuevo [modelo de complementos de Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Complementos de Office tienen una superficie pequeña en comparación con las soluciones y complementos VSTO, y puede crearlas con prácticamente cualquier tecnología, como HTML5, CSS3, JavaScript y XML de programación web.  
   
- ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una demostración en vídeo relacionada, vea [¿cómo lo hago?: crear un complemento para Microsoft PowerPoint?](http://go.microsoft.com/fwlink/?LinkId=132767).  
+ ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una demostración en vídeo relacionada, vea [¿cómo lo hago?: ¿Crear un complemento para PowerPoint de Microsoft? ](http://go.microsoft.com/fwlink/?LinkId=132767).  
   
 ## <a name="automate-powerpoint-by-using-the-powerpoint-object-model"></a>Automatizar PowerPoint usando el modelo de objetos de PowerPoint  
  El modelo de objetos de PowerPoint expone muchos tipos que puede usar para automatizar PowerPoint. Estos tipos le permiten escribir código para llevar a cabo tareas comunes:  
@@ -56,7 +53,7 @@ ms.locfileid: "49906564"
  Para obtener información completa sobre el modelo de objetos de PowerPoint, puede consultar la referencia del ensamblado de interoperabilidad primario (PIA) de PowerPoint y la referencia del modelo de objetos VBA.  
   
 ### <a name="primary-interop-assembly-reference"></a>Referencia de ensamblado de interoperabilidad primario  
- La documentación de referencia de los PIA de PowerPoint describe los tipos Del ensamblado de interoperabilidad primario para PowerPoint. Esta documentación está disponible en la siguiente ubicación: [referencia de ensamblado de interoperabilidad primario de PowerPoint 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
+ La documentación de referencia de los PIA de PowerPoint describe los tipos Del ensamblado de interoperabilidad primario para PowerPoint. Esta documentación está disponible en la siguiente ubicación: [Referencia de ensamblado de interoperabilidad primario de PowerPoint 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
   
  Para obtener más información sobre el diseño de los PIA de PowerPoint, como las diferencias entre las clases e interfaces en los PIA y cómo se implementan los eventos en lo PIA, consulte [información general de las clases e interfaces de los ensamblados de interoperabilidad primarios de Office ](http://go.microsoft.com/fwlink/?LinkId=199885).  
   
@@ -72,7 +69,7 @@ ms.locfileid: "49906564"
 |----------|--------------------------|  
 |Crear un panel de tareas personalizado.|[Paneles de tareas personalizados](../vsto/custom-task-panes.md)|  
 |Agregar pestañas personalizadas a la cinta.|[Información general de la cinta de opciones](../vsto/ribbon-overview.md)|  
-|Agregar grupos personalizados a una pestaña integrada en la cinta.|[Cómo: personalizar una pestaña integrada](../vsto/how-to-customize-a-built-in-tab.md)|  
+|Agregar grupos personalizados a una pestaña integrada en la cinta.|[Cómo: Personalizar una pestaña integrada](../vsto/how-to-customize-a-built-in-tab.md)|  
   
  Para obtener más información sobre cómo personalizar la interfaz de usuario de PowerPoint y otras aplicaciones de Microsoft Office, consulte [personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md).  
   
@@ -81,11 +78,9 @@ ms.locfileid: "49906564"
  [Empezar a programar complementos de VSTO](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
- [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Programar complementos VSTO](../vsto/programming-vsto-add-ins.md)   
  [Escribir código en soluciones de Office](../vsto/writing-code-in-office-solutions.md)   
  [Ensamblados de interoperabilidad primarios de Office](../vsto/office-primary-interop-assemblies.md)   
  [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md)   
  [PowerPoint 2010 en el desarrollo de Office](http://go.microsoft.com/fwlink/?LinkId=199015)  
-  
-  

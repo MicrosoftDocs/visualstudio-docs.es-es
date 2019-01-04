@@ -1,9 +1,6 @@
 ---
-title: IDebugSourceServerModule | Documentos de Microsoft
-ms.custom: ''
+title: IDebugSourceServerModule | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugSourceServerModule interface
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5210b819d78bcec1cac5179ac679cf201279e9fc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fcdeac3d68b2b26f0613dc92b473a17ce2ffd122
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116173"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945800"
 ---
 # <a name="idebugsourceservermodule"></a>IDebugSourceServerModule
 Representa la información del servidor de origen que se encuentra en un archivo PDB.  
@@ -30,7 +27,7 @@ IDebugSourceServerModule : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Notas para los implementadores  
- Esta interfaz se implementa mediante motores de depuración y utilizada por la interfaz de usuario del depurador.  
+ Esta interfaz se implementa mediante motores de depuración y consumida por la interfaz de usuario del depurador.  
   
 ## <a name="methods"></a>Métodos  
  La tabla siguiente muestran los métodos de `IDebugSourceServerModule`.  
@@ -42,6 +39,6 @@ IDebugSourceServerModule : IUnknown
 ## <a name="requirements"></a>Requisitos  
  Encabezado: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll

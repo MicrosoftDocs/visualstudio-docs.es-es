@@ -1,9 +1,6 @@
 ---
 title: Diseñador de manifiestos VSIX | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - VS.Sdk.VsixManifestEditor
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93780f0d8c85eaa2736759f3765c34edfb7c9998
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 54ad66452151142b3ad18a97591a5cf774896a14
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853875"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852354"
 ---
 # <a name="vsix-manifest-designer"></a>Diseñador de manifiestos de VSIX
 Modifica un archivo de manifiesto de paquete VSIX, que establece el comportamiento de instalación para una extensión de Visual Studio.  

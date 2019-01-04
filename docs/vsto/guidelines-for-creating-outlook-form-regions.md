@@ -1,9 +1,6 @@
 ---
 title: Directrices para crear áreas de formulario de Outlook
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d2a052cbad69f87c5b25005ff21959841af55f68
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: c5ecb22caaa7b86b4bc777b08e749d0fd75bd5e0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648760"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873254"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>Directrices para crear áreas de formulario de Outlook
   La siguiente información puede ayudarle a optimizar las áreas del formulario y a evitar posibles problemas:  
@@ -95,5 +92,3 @@ ms.locfileid: "53648760"
  [Tutorial: Diseñar un formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Cómo: Agregar un área de formulario a un proyecto de complemento de Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [Asociar un área de formulario a una clase de mensaje de Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  
-  
-  

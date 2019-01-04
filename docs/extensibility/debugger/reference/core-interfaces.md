@@ -1,9 +1,6 @@
 ---
 title: Principales de Interfaces | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], core interfaces
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1eb747e15f5c8d8b02aa8a5c80f261d64044b958
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 791e76b462a7ae12ac11b9eb5f33c94baff49888
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875416"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919579"
 ---
 # <a name="core-interfaces"></a>Interfaces básicas
 Las interfaces siguientes son las interfaces principales para ampliar el depurador mediante el uso de la [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].  

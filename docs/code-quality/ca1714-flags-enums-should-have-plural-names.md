@@ -1,8 +1,7 @@
 ---
-title: 'CA1714: Las enumeraciones Flags deberían tener nombres en plural'
+title: 'CA1714: Las enumeraciones Flags deben tener nombres en plural'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - FlagsEnumsShouldHavePluralNames
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc24a758d5c3c124267e4c967c6eb4afd1364cc2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cf78041d61da991804a4dcdb0f924dc4a5f489e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49871555"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881818"
 ---
-# <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714: Las enumeraciones Flags deberían tener nombres en plural
+# <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714: Las enumeraciones Flags deben tener nombres en plural
 
 |||
 |-|-|

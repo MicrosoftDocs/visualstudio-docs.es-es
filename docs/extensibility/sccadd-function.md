@@ -1,9 +1,6 @@
 ---
 title: SccAdd (función) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccAdd
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: defb9a682b7f382f414d7bedfe60509d73cea64b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7fc2b74b32c0fb90a578644df0065e24eb8e373f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840030"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830909"
 ---
 # <a name="sccadd-function"></a>SccAdd (función)
 Esta función agrega nuevos archivos al sistema de control de código fuente.  

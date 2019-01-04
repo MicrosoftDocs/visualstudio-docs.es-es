@@ -1,8 +1,6 @@
 ---
 title: Accesibilidad en proyectos de Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -18,19 +16,20 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 97f96e5a79a6e98bb6367d9c00975e3e6288385a
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 32d44c33192d9d4e4fdcf1b8db8cb47102a1df61
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803816"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833331"
 ---
 # <a name="accessibility-in-office-projects"></a>Accesibilidad en proyectos de Office
-  Microsoft Visual Studio y Microsoft Office incluyen muchas características de accesibilidad que permiten crear soluciones personalizadas que satisfagan los requisitos de accesibilidad estándar. Microsoft publica directrices para mejorar la accesibilidad en la Web. Para obtener más información, consulte el [sitio Web de accesibilidad](http://go.microsoft.com/fwlink/?LinkID=37113).
 
- En la mayoría de los casos, los proyectos de Office en Visual Studio cumplen accesibilidad estándares o expone propiedades que se pueden establecer para que sea accesible sus soluciones. Sin embargo, hay algunas características con acceso limitado.
+Microsoft Visual Studio y Microsoft Office incluyen muchas características de accesibilidad que permiten crear soluciones personalizadas que satisfagan los requisitos de accesibilidad estándar. Microsoft publica directrices para mejorar la accesibilidad en la Web. Para obtener más información, consulte el [sitio Web de accesibilidad](http://go.microsoft.com/fwlink/?LinkID=37113).
 
- [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
+En la mayoría de los casos, los proyectos de Office en Visual Studio cumplen accesibilidad estándares o expone propiedades que se pueden establecer para que sea accesible sus soluciones. Sin embargo, hay algunas características con acceso limitado.
+
+[!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="accessibility-at-design-time"></a>Accesibilidad en tiempo de diseño
 

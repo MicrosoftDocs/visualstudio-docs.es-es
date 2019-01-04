@@ -16,13 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: dde7b368297979e53d4ee09b75961652749d3321
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: bfbb0affe6c159f27a2568d5da35bcb98e80cdeb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380748"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939932"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generación de texto en tiempo de ejecución con plantillas de texto T4
 
@@ -300,7 +299,7 @@ La directiva de inclusión puede usarse en cualquier lugar dentro del texto de u
 
 Puede compartir contenido entre las plantillas de tiempo de ejecución mediante la escritura de una plantilla de clase base, que puede ser abstracta. Use la `inherits` parámetro de la `<@#template#>` directiva para hacer referencia a otra clase de plantilla en tiempo de ejecución.
 
-#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Patrón de herencia: fragmentos de métodos Base
+#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Patrón de herencia: Fragmentos de métodos Base
 
 En el patrón utilizado en el ejemplo siguiente, tenga en cuenta los siguientes puntos:
 
@@ -431,7 +430,7 @@ End material for DerivedTemplate1.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-Plantillas en tiempo de diseño: si desea usar una plantilla para generar el código que pasa a formar parte de la aplicación, consulte [generación de código de tiempo de diseño mediante el uso de plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
+Plantillas en tiempo de diseño: Si desea usar una plantilla para generar el código que pasa a formar parte de la aplicación, consulte [generación de código de tiempo de diseño mediante el uso de plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
 Pueden usar plantillas en tiempo de ejecución en cualquier aplicación, donde las plantillas y su contenido se determinan en tiempo de compilación. Pero si desea escribir una extensión de Visual Studio que genera el texto de las plantillas que cambian en tiempo de ejecución, consulte [invocar la transformación de texto en una extensión de VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 

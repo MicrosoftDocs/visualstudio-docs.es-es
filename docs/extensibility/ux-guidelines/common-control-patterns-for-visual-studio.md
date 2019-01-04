@@ -1,9 +1,6 @@
 ---
 title: Patrones de Control comunes para Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e10fdcea9819c34735f285c78a0e2ebb0650f64a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5c281aa989abc32e4287e49d05af03b198adc013
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512322"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832640"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Patrones de Control comunes para Visual Studio
 ##  <a name="BKMK_CommonControls"></a> Controles comunes  
@@ -49,7 +46,7 @@ Lo primero que debe considerar al aplicar un estilo a controles es si se usará 
   
 -   **Los cuadros de diálogo estándar (utilidad):** no temáticas. No re-template. Usar valores predeterminados de estilo de control básico.  
   
--   **Ventanas de herramientas, editores de documentos, superficies de diseño y los cuadros de diálogo con temas:** usar apariencia con temas especializado con el servicio de color.  
+-   **Ventanas de herramientas, editores de documentos, superficies de diseño y los cuadros de diálogo con temas:** Utilice apariencia con temas especializado con el servicio de color.  
   
 ###  <a name="BKMK_Scrollbars"></a> Barras de desplazamiento  
  Deben seguir las barras de desplazamiento [barras de desplazamiento de los patrones comunes de interacción de Windows](/windows/desktop/Controls/about-scroll-bars) a menos que estén ampliadas con información de contenido, como en el editor de código.  
@@ -69,7 +66,7 @@ Lo primero que debe considerar al aplicar un estilo a controles es si se usará 
   
 -   Requiere los campos deben tener  **\<necesario >** como marcas de agua dentro de ellos. No debe cambiar el color de fondo, excepto en situaciones excepcionales.  
   
--   Validación de errores: consulte [notificaciones y progreso para Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)  
+-   Validación de errores: Consulte [notificaciones y progreso para Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)  
   
 -   Los campos de entrada deben ajustarse al contenido, no para ajustarse al ancho de la ventana en la que se muestran, ni para arbitrariamente que coincida con la longitud de un campo largo, como una ruta de acceso. Longitud podría ser una indicación al usuario de límite en cuanto a cuántos caracteres se permiten en el campo.  
   
@@ -192,7 +189,7 @@ Siga las ubicaciones comunes para el texto de la aplicación auxiliar y sea sele
 
 -   Marca de agua texto en un editor vacío, explicar qué acción debe realizar el usuario para empezar a trabajar.
   
-### <a name="dialog-helper-text"></a>Texto auxiliar del cuadro de diálogo
+### <a name="dialog-helper-text"></a>Texto del asistente del cuadro de diálogo
 
 Un diseñador de la experiencia de usuario puede ayudar a determinar cuándo es apropiado el texto de la aplicación auxiliar. El diseñador puede definir donde aparece el texto de la aplicación auxiliar, así como su contenido general. Asistencia al usuario puede escribir o editar el texto real.
 
@@ -299,7 +296,7 @@ Directrices para usar el botón:
 #### <a name="graphical-buttons"></a>Botones gráficos  
 Algunos de los botones deben utilizar siempre una imagen gráfica y nunca incluyen texto para ahorrar espacio y evitar problemas de localización. A menudo se usan en otras listas que se puede ordenar y selectores de campo.  
   
-> **Nota:** los usuarios tienen que tabulador para ir a estos botones (no hay ninguna clave de acceso), colóquelos en un orden significativo. Mapa del `name` propiedad del botón a la acción que se tarda para que los lectores de pantalla interpretan correctamente la acción del botón.  
+> **Nota:** Los usuarios tienen que tabulador para ir a estos botones (no hay ninguna clave de acceso), colóquelos en un orden significativo. Mapa del `name` propiedad del botón a la acción que se tarda para que los lectores de pantalla interpretan correctamente la acción del botón.  
   
 | Función | Botón |  
 | --- | --- |  
@@ -371,23 +368,23 @@ La vista de árbol debe proporcionar la capacidad de expandir y contraer los nod
 ##### <a name="tree-view-control"></a>Control de vista de árbol  
 Controles de árbol Visual Studio deben seguir la navegación de teclado comunes:  
   
--   **Flecha arriba:** seleccionar elementos moviendo el árbol  
+-   **Arriba:** Seleccionar elementos moviendo el árbol  
   
--   **Flecha abajo:** seleccionar bajando el árbol de elementos  
+-   **Abajo:** Seleccione los elementos al mover hacia abajo en el árbol  
   
--   **Flecha derecha:** expandir un nodo en el árbol  
+-   **Flecha derecha:** Expanda un nodo en el árbol  
   
--   **Flecha izquierda:** contraer un nodo en el árbol  
+-   **Flecha izquierda:** Contraer un nodo en el árbol  
   
--   **Escriba la clave:** iniciar, cargar, ejecutar el elemento seleccionado  
+-   **Escriba la clave:** Iniciar, cargar, ejecutar el elemento seleccionado  
   
 ##### <a name="trid-tree-view-and-grid-view"></a>Trid (vista de árbol y vista de cuadrícula)  
 Un control de trid es un control complejo que contiene una vista de árbol dentro de una cuadrícula. Expandir, contraer y navegar por el árbol deben respetar los mismos comandos de teclado que una vista de árbol, con las siguientes adiciones:  
   
--   **Flecha derecha:** expandir un nodo. Después de que el nodo está expandido, debe continuar navegar a la columna más cercana a la derecha. Exploración debe detenerse al final de la fila.  
+-   **Flecha derecha:** Expanda un nodo. Después de que el nodo está expandido, debe continuar navegar a la columna más cercana a la derecha. Exploración debe detenerse al final de la fila.  
   
--   **Ficha:** va a la celda más cercana a la derecha.  Al final de la fila, navegación sigue a la siguiente fila.  
+-   **Pestaña:** Navega a la celda más cercana a la derecha.  Al final de la fila, navegación sigue a la siguiente fila.  
   
--   **Mayús + Tab:** va a la celda más cercana a la izquierda.  Al principio de la fila, navegación sigue a la celda situada en la fila anterior.  
+-   **Mayús + Tab:** Navega a la celda más cercana a la izquierda.  Al principio de la fila, navegación sigue a la celda situada en la fila anterior.  
   
 ![Un control de trid en Visual Studio](../../extensibility/ux-guidelines/media/070705-6_trid.png "070705 6_Trid")<br />Un control de trid en Visual Studio

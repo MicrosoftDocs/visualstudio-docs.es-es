@@ -1,9 +1,6 @@
 ---
 title: Tutoriales y ejemplos de desarrollo de office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 925886683b274ddff704771d4939c2112003bb58
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 989536860500e092a36addc74eedc4759c959160
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674863"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909793"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Tutoriales y ejemplos de desarrollo de office
   Esta sección contiene aplicaciones de ejemplo, el código de ejemplo y tutoriales paso a paso que ilustran la sintaxis, estructura y técnicas usadas para crear soluciones de Microsoft Office.  
@@ -60,5 +57,3 @@ ms.locfileid: "35674863"
 |[Tareas comunes en la programación de Office](../vsto/common-tasks-in-office-programming.md)|Se enumeran las preguntas más frecuentes sobre la programación con el desarrollo de Office en Visual Studio y proporciona vínculos a temas que pueden ayudar a resolver problemas comunes.|  
 |[Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)|Proporciona vínculos a información acerca de cómo crear soluciones de Microsoft Office y el papel de los ensamblados de la solución.|  
 |[Información general sobre el panel de acciones](../vsto/actions-pane-overview.md)|Proporciona información general del panel de tareas de nivel de documento llamado panel de acciones.|  
-  
-  
