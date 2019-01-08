@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Personalizar los diagramas de clases (Diseñador de clases)'
+title: Procedimiento Personalizar diagramas de clases (Diseñador de clases)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4546324a5789c408c22ac610d7a878ad990af2a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79279c4450e8dbf325ce8b64879ad2cb9569455e
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913220"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684436"
 ---
-# <a name="how-to-customize-class-diagrams"></a>Cómo: Personalizar los diagramas de clases
+# <a name="how-to-customize-class-diagrams"></a>Procedimiento Personalizar diagramas de clases
 
 Es posible cambiar la manera en que se muestra la información en los diagramas de clases. Se puede personalizar el diagrama entero o los tipos individuales en la superficie de diseño.
 
@@ -129,7 +129,6 @@ Se puede quitar una forma de tipo del diagrama de clase sin que ello afecte al c
 
 ## <a name="see-also"></a>Vea también
 
-- [Trabajar con diagramas de clases](working-with-class-diagrams.md)
 - [Cómo: Cambiar entre notación de miembro y notación de asociación](how-to-change-between-member-notation-and-association-notation.md)
-- [Cómo: Ver los tipos existentes](how-to-view-existing-types.md)
-- [Visualización de tipos y relaciones](viewing-types-and-relationships.md)
+- [Cómo: Ver tipos existentes](how-to-view-existing-types.md)
+- [Visualización de tipos y relaciones](designing-and-viewing-classes-and-types.md)

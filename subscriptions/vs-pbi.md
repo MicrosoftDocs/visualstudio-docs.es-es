@@ -3,18 +3,18 @@ title: Beneficio de Power BI Pro en las suscripciones de Visual Studio | Microso
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/12/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Obtenga información sobre la suscripción de Power BI Pro incluida en la suscripción de Visual Studio seleccionada.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 50c9b39772e65ba00f859254df4a993870f08023
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 0fb3033699c3331ec61e6d3fe30dd70fd47cc759
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219541"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739648"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro en suscripciones de Visual Studio
 
@@ -73,30 +73,33 @@ Para usar Power BI Pro, debe configurar una cuenta o iniciar sesión con una cue
 
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (estándar, de nube anual)   | Licencia por volumen, Azure, venta directa, no para reventa<sup>1</sup> | Disponible       |  Sí|
-| Visual Studio Professional (estándar, de nube anual, de nube mensual) | Licencia por volumen, Azure, venta directa                                       | No disponible                                                            |NA         |
+| Visual Studio Enterprise (estándar)   | Licencia por volumen, Azure, venta directa, no para reventa<sup>1</sup> | Disponible       |  Sí|
+| Visual Studio Professional (estándar, de nube mensual) | Licencia por volumen, Azure, venta directa                                       | No disponible                                                            |NA         |
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | No disponible                                                            |NA         |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | Disponible       |  Sí|
 | Visual Studio Dev Essentials | NA  | No disponible |NA|
 | Visual Studio Enterprise (nube mensual) | Azure                                       | No disponible                                  |NA|
 
-<sup>1</sup> *Incluye: No para reventa (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Microsoft Valued Professional (MVP), Region Director (RD).  Excluye:  Microsoft Partner Network (MPN), FTE, Imagine.*
+<sup>1</sup>  *Incluye:  No para reventa (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Microsoft Valued Professional (MVP), Region Director (RD).  Excluye:  Microsoft Partner Network (MPN), FTE, Imagine.*
+
+> [!NOTE]
+> Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
 
 
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
 
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
-### <a name="q--if-the-benefit-is-free-why-do-i-have-to-supply-a-credit-card-number"></a>P: Si la ventaja es gratuita, ¿por qué tengo que proporcionar un número de tarjeta de crédito?
-R: La ventaja es gratuita, pero la activación utiliza el mismo sistema que para procesar las órdenes de pago.  Hay dos tipos de pago disponibles. 
+### <a name="q--if-the-benefit-is-free-why-do-i-have-to-supply-a-credit-card-number"></a>P:  Si la ventaja es gratuita, ¿por qué tengo que proporcionar un número de tarjeta de crédito?
+A:  La ventaja es gratuita, pero la activación utiliza el mismo sistema que para procesar las órdenes de pago.  Hay dos tipos de pago disponibles. 
 - Tarjeta de crédito.  Si proporciona un número de tarjeta de crédito, NO se le hará ningún cargo. 
 - Factura.  Si selecciona "Factura" como tipo de pago, no es necesario que proporcione ningún número de tarjeta de crédito.  También puede establecer el intervalo como "anual".  De este modo, recibirá un solo correo electrónico para informarle de que tiene lista una factura.  La cantidad de factura será de 0,00 USD.  
 
-### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licenses-for-use-in-a-production-environment"></a>P: ¿La ventaja de Power BI Pro incluida en mis licencias de la suscripción se puede utilizar en un entorno de producción?
-R: Sí.  
+### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licenses-for-use-in-a-production-environment"></a>P:  ¿La ventaja de Power BI Pro incluida en mis licencias de la suscripción se puede utilizar en un entorno de producción?
+A:  Sí.  
 
-### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>P: Al intentar activar Power BI Pro, aparece el mensaje “Ya tiene una cuenta a través del trabajo”.  ¿Puedo seguir usando la ventaja?
-R: Sí.  El mensaje indica que se ha conectado a un dominio que ya tiene inquilinos de Office 365 activos en el que no es un administrador.  Para agregar Power BI Pro a un inquilino, debe ser administrador en dicho inquilino.  Para resolver este problema, siga estos pasos para crear a su propio inquilino.
+### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>P:  Al intentar activar Power BI Pro, aparece el mensaje “Ya tiene una cuenta a través del trabajo”.  ¿Puedo seguir usando la ventaja?
+A:  Sí.  El mensaje indica que se ha conectado a un dominio que ya tiene inquilinos de Office 365 activos en el que no es un administrador.  Para agregar Power BI Pro a un inquilino, debe ser administrador en dicho inquilino.  Para resolver este problema, siga estos pasos para crear a su propio inquilino.
 1.  Cuando aparezca el mensaje que le indica que ya tiene una cuenta a través del trabajo, haga clic en **Crear una cuenta nueva**.
 
 2.  En la siguiente pantalla, indique su información de contacto y haga clic en **Siguiente**.
@@ -108,8 +111,8 @@ R: Sí.  El mensaje indica que se ha conectado a un dominio que ya tiene inquili
 4.  El resto de los pasos del proceso son idénticos a los que aparecen en el cuerpo del artículo, comenzando por el paso 6.
 
 
-### <a name="q--im-on-a-government-domain--can-i-use-the-benefit"></a>P: Estoy en un dominio de la administración pública.  ¿Puedo usar la ventaja? 
-R: No.  La ventaja de Power BI Pro no puede agregarse a los inquilinos en un dominio de la administración pública. 
+### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>P:  Estoy en un inquilino de administración pública.  ¿Puedo usar la ventaja? 
+A:  No.  La ventaja de Power BI Pro no se puede agregar a inquilinos de administración pública. 
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
 -  ¿Necesita ayuda con Power BI Pro?

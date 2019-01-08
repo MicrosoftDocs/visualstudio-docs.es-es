@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27a9da182a2e4db76db0b5221178dfa6dc371723
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 768824995bcc0c99cc4c6ad400888e056619b6b7
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943003"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561673"
 ---
 # <a name="immediate-window"></a>Inmediato (ventana)
 La ventana **Inmediato** sirve para depurar y evaluar expresiones, ejecutar instrucciones, imprimir valores de variables, etc. Permite escribir expresiones para evaluarlas o ejecutarlas mediante el lenguaje de desarrollo durante la depuración. Para mostrar la ventana **Inmediato**, abra un proyecto para editarlo, elija **Ventanas** en el menú **Depurar** y seleccione **Inmediato**, o bien presione CTRL+ALT+I.
@@ -76,7 +76,7 @@ La ventana **Inmediato** sirve para depurar y evaluar expresiones, ejecutar inst
 
     La ventana **Inmediato** ejecutará `MyFunction` y mostrará `4`.
 
-Si la función o la subrutina contienen un punto de interrupción, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interrumpirá la ejecución en el punto adecuado. A continuación puede utilizar las ventanas del depurador para examinar el estado del programa. Para más información, vea [Tutorial: Depurar en tiempo de diseño](../../debugger/walkthrough-debugging-at-design-time.md).
+Si la función o la subrutina contienen un punto de interrupción, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interrumpirá la ejecución en el punto adecuado. A continuación puede utilizar las ventanas del depurador para examinar el estado del programa. Para más información, vea [Tutorial: Depuración en tiempo de diseño](../../debugger/walkthrough-debugging-at-design-time.md).
 
 No puede usar la evaluación de expresiones en tiempo de diseño en los tipos de proyectos que requieren que se inicie un entorno de ejecución, incluidos los proyectos de [!INCLUDE[trprVSTOshort](../../ide/reference/includes/trprvstoshort_md.md)], proyectos web, proyectos de Smart Device y proyectos de SQL.
 
@@ -128,8 +128,7 @@ No puede usar la evaluación de expresiones en tiempo de diseño en los tipos de
 
 - [Desplazarse por el código con el depurador](../../debugger/navigating-through-code-with-the-debugger.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)
-- [Depurar en Visual Studio](../../debugger/debugging-in-visual-studio.md)
-- [Conceptos básicos del depurador](../../debugger/getting-started-with-the-debugger.md)
-- [Tutorial: Depurar en tiempo de diseño](../../debugger/walkthrough-debugging-at-design-time.md)
+- [Primer vistazo al depurador](../../debugger/debugger-feature-tour.md)   
+- [Tutorial: Depuración en tiempo de diseño](../../debugger/walkthrough-debugging-at-design-time.md)
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [Usar expresiones regulares en Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

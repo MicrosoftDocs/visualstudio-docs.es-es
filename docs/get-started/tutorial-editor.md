@@ -1,8 +1,9 @@
 ---
-title: Introducción a la edición
+title: Introducción a la edición en el editor de código
 ms.date: 11/30/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.technology: vs-ide-general
+ms.custom: get-started
 ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
@@ -11,20 +12,21 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e2f451ecfb73e0c1ac69da4e48f3d2c8033aa51
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 6c3953f69d263b948e84f0d1aa48d878cd39afe6
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027878"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803338"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Aprender a usar el editor de código
 
 En esta introducción de 10 minutos al editor de código, se agrega código a un archivo para ver algunas de las formas en que Visual Studio hace que escribir y comprender el código (así como desplazarse por él) sea más fácil.
 
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita.
+> [!TIP]
+> Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita.
 
-En este artículo se presupone que ya está familiarizado con un lenguaje de programación. Si no lo está, le sugerimos que primero lea guías de inicio rápido de programación, como para crear una aplicación web con [Python](../ide/quickstart-python.md) o [C#](../ide/tutorial-csharp-aspnet-core.md), o bien crear una aplicación de consola con [Visual Basic](../ide/quickstart-visual-basic-console.md) o [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
+En este artículo se presupone que ya está familiarizado con un lenguaje de programación. Si no lo está, le sugerimos que primero lea guías de inicio rápido de programación, como para crear una aplicación web con [Python](../ide/quickstart-python.md) o [C#](../get-started/csharp/tutorial-aspnet-core.md), o bien crear una aplicación de consola con [Visual Basic](../ide/quickstart-visual-basic-console.md) o [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
 
 ## <a name="create-a-new-code-file"></a>Crear un archivo de código
 
@@ -42,7 +44,7 @@ Empezaremos creando un archivo y agregándole código.
 
 Visual Studio proporciona *fragmentos de código* muy prácticos que pueden servir para generar bloques de código de uso común de forma rápida y sencilla. Existen [fragmentos de código](../ide/code-snippets.md) disponibles para diferentes lenguajes de programación, como C#, Visual Basic y C++. Vamos a agregar el fragmento de código de C# `void Main` a nuestro archivo.
 
-1. Coloque el cursor justo encima de la llave de cierre final **}** en el archivo y escriba los caracteres `svm` (que es el acrónimo de `static void Main` &mdash;no se preocupe demasiado si no sabe lo que significa).
+1. Coloque el cursor justo encima de la llave de cierre final **}** en el archivo y escriba los caracteres `svm` (`svm` es el acrónimo de `static void Main`; el método [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) es el punto de entrada para la aplicación).
 
    Aparece un cuadro de diálogo emergente con información sobre el fragmento de código `svm`.
 
@@ -50,7 +52,7 @@ Visual Studio proporciona *fragmentos de código* muy prácticos que pueden serv
 
 1. Presione la tecla **TAB** dos veces para insertar el fragmento de código.
 
-   Verá cómo la firma del método `static void Main()` se agrega al archivo. El método [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) es el punto de entrada de las aplicaciones de C#.
+   Verá cómo la firma del método `static void Main()` se agrega al archivo.
 
 Los fragmentos de código disponibles varían según el lenguaje de programación. Para ver los fragmentos de código disponibles para el lenguaje, seleccione **Editar** > **IntelliSense** > **Insertar fragmento de código** y luego elija la carpeta del lenguaje. En C#, la lista tiene el siguiente aspecto:
 

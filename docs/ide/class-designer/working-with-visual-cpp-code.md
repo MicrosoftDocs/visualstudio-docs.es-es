@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 109c2408e16c5ca4943855889191733234778761
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 19c3e72dd6f02d97dcb083cd61d7102a6926eb2e
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33958456"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684592"
 ---
 # <a name="work-with-visual-c-code-in-class-designer"></a>Trabajar con código de Visual C++ en el Diseñador de clases
 
@@ -48,7 +48,7 @@ El **Diseñador de clases** admite los siguientes elementos de código de C++:
 - Definición de tipo
 
 > [!NOTE]
-> No es igual que el diagrama de clases UML, que se puede crear en un proyecto de modelado. Para obtener más información, vea [Diagramas de clases de UML: referencia](../../modeling/uml-class-diagrams-reference.md).
+> No es igual que el diagrama de clases UML, que se puede crear en un proyecto de modelado. Para más información, vea [Diagramas de clases de UML: referencia](../../modeling/create-uml-modeling-projects-and-diagrams.md).
 
 ## <a name="troubleshoot-type-resolution-and-display-issues"></a>Solucionar problemas de visualización y resolución de tipos
 
@@ -112,8 +112,6 @@ Puede encontrar ayuda para solucionar problemas referentes a errores y advertenc
 
 ## <a name="see-also"></a>Vea también
 
-- [Diseñar y ver clases y tipos](designing-and-viewing-classes-and-types.md)
-- [Trabajar con diagramas de clases](working-with-class-diagrams.md)
 - [Diseñar y ver clases y tipos](designing-and-viewing-classes-and-types.md)
 - [Información adicional sobre los errores del Diseñador de clases](additional-information-about-errors.md)
 - [Clases de Visual C++ en el Diseñador de clases](visual-cpp-classes.md)

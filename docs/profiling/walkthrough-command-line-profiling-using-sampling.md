@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db4b47582d03a7f040850dd69e61d5fee2b80020
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 8dbb5daff9db064cedcfaa6713f5c31a72f961af
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815261"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592435"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Tutorial: Generar perfiles mediante muestreo desde la línea de comandos
 
@@ -43,7 +43,7 @@ En este tutorial realizará los siguientes pasos:
 El muestreo es un método de generación de perfiles mediante el cual un proceso específico se sondea periódicamente para determinar la función activa. Los datos resultantes proporcionan un recuento de la frecuencia con que esa función ha estado en la parte superior de la pila de llamadas al muestrear el proceso.
 
 > [!NOTE]
-> Las herramientas de línea de comandos de las Herramientas de generación de perfiles se encuentran en el subdirectorio *\Team Tools\Performance Tools* del directorio de instalación de Visual Studio. En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso a la variable de entorno PATH de la ventana de símbolo del sistema o agregarla al propio comando. Para más información, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). PeopleTrax es una aplicación de 32 bits.
+>  Para obtener la ruta de acceso a las herramientas de generación de perfiles, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana Símbolo del sistema o agregarla al propio comando.  
 
 ### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>Para generar perfiles de la aplicación PeopleTrax utilizando el método de muestreo
 

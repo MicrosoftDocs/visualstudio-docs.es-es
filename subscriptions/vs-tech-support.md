@@ -3,18 +3,18 @@ title: Ventaja de soporte técnico
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 10/03/2017
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Vea cómo activar la ventaja de soporte técnico que se incluye con la suscripción de Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9fa92d530ac6db46ce014210bf1c4c91836b2d32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 635280cf52ca82af67ec1b3fc321f5ea6955128a
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950075"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740438"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activación de la ventaja de soporte técnico en suscripciones de Visual Studio
 
@@ -95,8 +95,8 @@ Una vez que complete estos pasos, podrá seleccionar el plan de soporte técnico
 
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (estándar, de nube anual)   | Licencia por volumen, Azure, venta directa, no para reventa<sup>1</sup> | Cuatro incidentes       |  Sí|
-| Visual Studio Professional (estándar, de nube anual) | Licencia por volumen, Azure, venta directa, no para reventa<sup>2</sup>                                        | Dos incidentes                                                          |Sí         |
+| Visual Studio Enterprise (estándar)   | Licencia por volumen, Azure, venta directa, no para reventa<sup>1</sup> | Cuatro incidentes       |  Sí|
+| Visual Studio Professional (estándar) | Licencia por volumen, Azure, venta directa, no para reventa<sup>2</sup>                                        | Dos incidentes                                                          |Sí         |
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | Dos incidentes                                             |  Sí         |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | Dos incidentes                                               | Sí         |
 | Visual Studio Dev Essentials | NA | No disponible |NA|
@@ -105,3 +105,8 @@ Una vez que complete estos pasos, podrá seleccionar el plan de soporte técnico
 <sup>1</sup> *Incluye: Imagine Premium. Excluye: No para reventa (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine Standard, Microsoft Valued Professional (MVP), Region Director (RD), MCT Software & Services.*
 
 <sup>2</sup> *Incluye: Imagine Standard.*
+
+> [!NOTE]
+> Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
+
+¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.

@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Ver los tipos existentes (Diseñador de clases)'
+title: Procedimiento Ver los tipos existentes (Diseñador de clases)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,20 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f477f64188c9592db65d0a82c8a1b8b3ec5b776
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 16e1c31585296913647b5c3d641126c3abca22a8
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956658"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684449"
 ---
-# <a name="how-to-view-existing-types-in-class-designer"></a>Cómo: Ver los tipos existentes en el Diseñador de clases
+# <a name="how-to-view-existing-types-in-class-designer"></a>Procedimiento Ver los tipos existentes en el Diseñador de clases
 
 Para ver un tipo existente y sus miembros, agregue su forma a un diagrama de clases.
 
 Puede ver los tipos locales y aquellos a los que se hace referencia. Los tipos locales existen en el proyecto que está abierto y son de lectura y escritura. Los tipos a los que se hace referencia existen en otros proyectos o en un ensamblado al que se hace referencia y son de sólo lectura.
 
-Para diseñar nuevos tipos en los diagramas de clases, vea [Cómo: Crear tipos con el Diseñador de clases](how-to-create-types.md).
+Para diseñar nuevos tipos en diagramas de clases, vea [Cómo: Crear tipos con el Diseñador de clases](how-to-create-types.md).
 
 ## <a name="to-see-types-in-a-project-on-a-class-diagram"></a>Para ver los tipos de un proyecto en un diagrama de clase
 
@@ -66,5 +66,5 @@ En el **Explorador de soluciones** o en la **Vista de clases**, haga clic con el
 ## <a name="see-also"></a>Vea también
 
 - [Cómo: Ver la herencia entre tipos](how-to-view-inheritance-between-types.md)
-- [Cómo: Personalizar los diagramas de clases](how-to-customize-class-diagrams.md)
-- [Visualización de tipos y relaciones](viewing-types-and-relationships.md)
+- [Cómo: Personalizar diagramas de clases](how-to-customize-class-diagrams.md)
+- [Visualización de tipos y relaciones](designing-and-viewing-classes-and-types.md)

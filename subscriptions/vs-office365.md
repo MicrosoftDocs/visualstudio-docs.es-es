@@ -3,18 +3,18 @@ title: Ventaja de Office 365 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 10/4/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Obtenga información sobre la ventaja de Office 365 que se incluye en algunas suscripciones de Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 273bba31f0b080116677e9a8dfa727af462fb7bc
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+ms.openlocfilehash: eef2adf189650da528c2f76df88ff8b648ad7ba4
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244468"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802113"
 ---
 # <a name="office-365-in-visual-studio-subscriptions"></a>Office 365 en suscripciones de Visual Studio
 
@@ -55,15 +55,20 @@ Si planea desarrollar aplicaciones para Office, querrá activar su [suscripción
 
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (estándar, de nube anual)   | Licencia por volumen, Azure, venta directa| Disponible       |  Sí          |
+| Visual Studio Enterprise (estándar)   | Licencia por volumen, Azure, venta directa| Disponible       |  Sí          |
 | Visual Studio Enterprise (estándar)   | NFR<sup>1</sup> | No disponible       |  N/D          |
-| Visual Studio Professional (estándar, de nube anual) | Licencia por volumen, Azure, venta directa                                       | No disponible                                                            |  N/D          |
+| Visual Studio Professional (estándar) | Licencia por volumen, Azure, venta directa                                       | No disponible                                                            |  N/D          |
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | No disponible                                             |  N/D          |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | No disponible                                              |  N/D          |
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure | No disponible | N/D |
 | Visual Studio Dev Essentials | N/D  | No disponible |N/D |
 
-<sup>1</sup> *Incluye: No para reventa (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Microsoft Valued Professional (MVP), Region Director (RD), MCT Software & Services, Imagine, Microsoft Partner Network.*
+<sup>1</sup>  *Incluye:  No para reventa (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Microsoft Valued Professional (MVP), Region Director (RD), MCT Software & Services, Imagine, Microsoft Partner Network.*
+
+
+> [!NOTE]
+> Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
+
 
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
 

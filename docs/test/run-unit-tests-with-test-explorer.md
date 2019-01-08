@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc918adb6a66f64cdcda46ea535cd0ab017c0676
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 177882e93377e428814d6a529c9826f4bf9e1ea2
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939523"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740413"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ejecutar pruebas unitarias con el Explorador de pruebas
 
@@ -187,7 +187,7 @@ Se puede usar el Explorador de pruebas para iniciar una sesión de depuración p
 
 2. En el Explorador de pruebas, seleccione los métodos de prueba y elija **Depurar pruebas seleccionadas** en el menú contextual.
 
-   Para obtener más información sobre el depurador, vea [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md).
+   Para obtener más información sobre el depurador, vea [Depurar en Visual Studio](../debugger/debugger-feature-tour.md).
 
 ### <a name="diagnose-test-method-performance-issues"></a>Diagnosticar problemas de rendimiento del método de prueba
 

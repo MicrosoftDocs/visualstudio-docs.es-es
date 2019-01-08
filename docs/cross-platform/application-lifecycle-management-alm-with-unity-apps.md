@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 41e27d2d7a3fc79695fa1d476a76e199348c5320
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ca0c3da5048194ce438e815bd1612f6b166bb29b
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320896"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802571"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps con aplicaciones de Unity
 
@@ -42,7 +42,7 @@ Comentario general: todas las características de planeación y seguimiento son 
 
 Vínculo de referencia: **[Analizar y modelar la arquitectura](../modeling/analyze-and-model-your-architecture.md)**
 
-Comentario general: aunque estas características de diseño son independientes del lenguaje de codificación o funcionan con lenguajes .NET como C#, operan en un paradigma de aplicaciones tradicional con jerarquías de objetos y relaciones de clases. Diseñar un juego en Unity implica todo un paradigma diferente, como por ejemplo, relaciones de objetos gráficos, sonidos, sombreadores y scripts. Por este motivo, las herramientas del diagrama de modelado de Visual Studio no son especialmente relevantes para la totalidad de un proyecto de Unity. Posiblemente se podrían usar para administrar las relaciones entre scripts C#, pero eso es solo una parte del conjunto.
+Comentario general: Aunque estas características de diseño son independientes del lenguaje de codificación o trabajan con lenguajes .NET como C#, operan en un paradigma de aplicaciones tradicional con jerarquías de objetos y relaciones de clases. Diseñar un juego en Unity implica todo un paradigma diferente, como por ejemplo, relaciones de objetos gráficos, sonidos, sombreadores y scripts. Por este motivo, las herramientas del diagrama de modelado de Visual Studio no son especialmente relevantes para la totalidad de un proyecto de Unity. Posiblemente se podrían usar para administrar las relaciones entre scripts C#, pero eso es solo una parte del conjunto.
 
 |Característica|Compatible con Unity|Comentarios adicionales|
 |-------------|--------------------------|-------------------------|
@@ -102,9 +102,9 @@ Vínculo de referencia: **[Mejorar la calidad del código](../test/improve-code-
 
 |Característica|Compatible con Unity|Comentarios adicionales|
 |-------------|--------------------------|-------------------------|
-|[Analizar la calidad del código administrado](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Sí|Se puede analizar el código de script de C# en Visual Studio.|
+|[Analizar la calidad del código administrado](../code-quality/code-analysis-for-managed-code-overview.md)|Sí|Se puede analizar el código de script de C# en Visual Studio.|
 |[Buscar código duplicado mediante la detección de clones de código](https://msdn.microsoft.com/library/hh205279.aspx)|Sí|Se puede analizar el código de script de C# en Visual Studio.|
-|[Medir la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Sí|Se puede analizar el código de script de C# en Visual Studio.|
+|[Medir la complejidad y el mantenimiento del código administrado](../code-quality/code-metrics-values.md)|Sí|Se puede analizar el código de script de C# en Visual Studio.|
 |[Explorador de rendimiento](../profiling/performance-explorer.md)|No|Use el [generador de perfiles de Unity](http://docs.unity3d.com/Manual/Profiler.html) (sitio web de Unity).|
 |[Analizar problemas de memoria de .NET Framework](https://msdn.microsoft.com/library/dn342825.aspx)|No|Las herramientas de Visual Studio no tienen enlaces al marco de trabajo de Mono (usado por Unity) para la generación de perfiles. Use el [generador de perfiles de Unity](http://docs.unity3d.com/Manual/Profiler.html) (documentación de Unity).|
 

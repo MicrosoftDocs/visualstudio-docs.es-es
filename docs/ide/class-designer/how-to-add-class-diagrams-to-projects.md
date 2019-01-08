@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Agregar diagramas de clases a proyectos (Diseñador de clases)'
+title: Procedimiento Agregar diagramas de clases a proyectos (Diseñador de clases)
 ms.date: 05/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 133f15f6c160e9ec48b1db4ab8713023e492cbae
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 081a80fd6521bc286f931334762a05495b038a37
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901303"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684323"
 ---
-# <a name="how-to-add-class-diagrams-to-projects"></a>Cómo: Agregar diagramas de clases a proyectos
+# <a name="how-to-add-class-diagrams-to-projects"></a>Procedimiento Agregar diagramas de clases a proyectos
 
 Para diseñar, editar y refactorizar clases y otros tipos, agregue un diagrama de clases al proyecto de C#, Visual Basic o C++. Para visualizar distintas partes del código de un proyecto, agregue varios diagramas de clases al proyecto.
 
@@ -77,7 +77,5 @@ Se crea un diagrama de clases que se rellena automáticamente.
 ## <a name="see-also"></a>Vea también
 
 - [Cómo: Crear tipos con el Diseñador de clases](how-to-create-types.md)
-- [Cómo: Ver los tipos existentes](how-to-view-existing-types.md)
+- [Cómo: Ver tipos existentes](how-to-view-existing-types.md)
 - [Diseñar y ver clases y tipos](designing-and-viewing-classes-and-types.md)
-- [Visualización de tipos y relaciones](viewing-types-and-relationships.md)
-- [Trabajar con diagramas de clases](working-with-class-diagrams.md)

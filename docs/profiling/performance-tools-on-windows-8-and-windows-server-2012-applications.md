@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 404a8a3f40d5d84d60fe4822fb692e4f48a57503
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: ca8434f6aaf0137da51612665833150b783d01d1
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220812"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592942"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012
 
@@ -76,7 +76,7 @@ Para generar perfiles de aplicaciones en dispositivos que no tienen Visual Studi
 
 - Descargue las herramientas como parte de las Herramientas remotas para Visual Studio desde el [sitio web de MSDN](http://go.microsoft.com/fwlink/?LinkID=219549).
 
-- Copie y ejecute el programa de instalación independiente de las herramientas de generación de perfiles desde el equipo de Visual Studio. Los programas de instalación están en la carpeta *%VSInstallDir%\Team Tools\Performance Tools\Setups*. Elija el programa de instalación para el sistema operativo (x86/x64) del equipo remoto.
+- Copie y ejecute el programa de instalación independiente de las herramientas de generación de perfiles desde el equipo de Visual Studio. Para obtener la ruta de acceso a las herramientas de generación de perfiles, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Elija el programa de instalación para el sistema operativo (x86/x64) del equipo remoto.
 
 > [!NOTE]
 > Para recopilar datos de generación de perfiles TIP, debe instalar el generador de perfiles independiente del equipo de Visual Studio en el equipo remoto.

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5a2158663defe02dc51e91e888d47f325db7226a
-ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
+ms.openlocfilehash: 731097ac74a4c1dfd5db74d55549b8a2b9c33176
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645151"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684985"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Guía de productividad de C# para Visual Studio 2017
 
@@ -135,7 +135,7 @@ Hemos agregado una gran cantidad de nuevas funcionalidades de depuración en Vis
 
 - *Ejecutar hasta hacer clic* le permite mantener el puntero junto a una línea de código, hacer clic en el icono verde "reproducir" que aparece y ejecutar el programa hasta que llegue a esa línea.
 - La nueva **Asistente de excepciones** coloca la información más importante, como qué variables son "null" en NullReferenceException, en el nivel superior del cuadro de diálogo.
-- La depuración [Retroceder](../debugger/how-to-use-intellitrace-step-back.md) le permite volver a puntos de interrupción anteriores y ver el estado de la aplicación tal y como estaba en un momento anterior.
+- La depuración [Retroceder](../debugger/view-historical-application-state.md) le permite volver a puntos de interrupción anteriores y ver el estado de la aplicación tal y como estaba en un momento anterior.
 - [Depuración de instantáneas](/azure/application-insights/app-insights-snapshot-debugger) le permite investigar el estado de una aplicación web en directo en el momento en que se inició una excepción (debe estar en Azure).
 
 ![Nuevo asistente de excepciones de Visual Studio 2017](../ide/media/VSGuide_Debugging.png)

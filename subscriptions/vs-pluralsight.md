@@ -3,18 +3,18 @@ title: Ventaja de Pluralsight en las suscripciones de Visual Studio | Microsoft 
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/04/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Obtenga información sobre la suscripción de aprendizaje de Pluralsight incluida en la suscripción de Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 18de63935f4d8c85e5b5f8d2c3ca26fa4d09b4fc
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: b30096d3c0217c169d107dc882103f0468e57278
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895358"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740343"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Ventajas de aprendizaje de Pluralsight en las suscripciones de Visual Studio
 
@@ -33,7 +33,7 @@ En la tabla siguiente se detallan los beneficios de la suscripción de Pluralsig
    > [!IMPORTANT]
    > Cuando haga clic en el vínculo "Obtener código" en el icono del beneficio de Pluralsight, es posible que reciba el mensaje siguiente:
    > 
-   > **"Please note:   If you have previously activated a different Pluralsight offer through your Visual Studio subscription, this code may not enable you to create a new Pluralsight account."** (Nota: Si anteriormente activó otra oferta de Pluralsight mediante la suscripción de Visual Studio, es posible que este código no le permita crear una cuenta de Pluralsight nueva).
+   > **"Please note:   If you have previously activated a different Pluralsight offer through your Visual Studio subscription, this code may not enable you to create a new Pluralsight account."** (Nota: Si anteriormente activó otra oferta de Pluralsight mediante la suscripción de Visual Studio, es posible que este código no le permita crear una cuenta de Pluralsight).
 
 2. Recibirá una notificación que indica que el código del cupón se ha recuperado correctamente.  Haga clic en **Activar**.
    > [!div class="mx-imgBorder"]
@@ -71,27 +71,31 @@ En la tabla siguiente se detallan los beneficios de la suscripción de Pluralsig
 
 |                          Nivel de suscripción                          |     Canales      |    Prestación    |   ¿Renovable?   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
-|          Visual Studio Enterprise (estándar, de nube anual)           | Licencia por volumen, Azure, venta directa |   6 meses    | No<sup>2</sup> |
-|         Visual Studio Professional (estándar, de nube anual)          | Licencia por volumen, Azure, venta directa |   3 meses    | No<sup>2</sup> |
+|          Visual Studio Enterprise (estándar)           | Licencia por volumen, Azure, venta directa |   6 meses    | No<sup>2</sup> |
+|         Visual Studio Professional (estándar)          | Licencia por volumen, Azure, venta directa |   3 meses    | No<sup>2</sup> |
 |              Visual Studio Test Professional (estándar)              |    Licencia por volumen, venta directa     |   3 meses    | No<sup>2</sup> |
 |                      Plataformas MSDN (estándar)                       |    Licencia por volumen, venta directa     |   3 meses    | No<sup>2</sup> |
 |                     Visual Studio Dev Essentials                     |        NA         |   1 mes    |       No       |
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) |       Azure       | No disponible |       NA       |
 |             Visual Studio Enterprise (NFR<sup>1</sup>)              |      Programa      | No disponible |       NA       |
 
-<sup>1</sup> *Incluye: No para reventa (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Microsoft Valued Professional (MVP), Region Director (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
+<sup>1</sup>  *Incluye:  No para reventa (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Microsoft Valued Professional (MVP), Region Director (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
 
 <sup>2</sup> *La ventaja de Pluralsight es de un solo uso, asociado al usuario.  Una vez que el suscriptor usa el beneficio, no se restablece.*
+
+> [!NOTE]
+> Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
+
 
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="q-i-have-a-visual-studio-enterprise-subscription-but-i-dont-see-the-pluralsight-tile-on-the-benefits-page-whats-wrong"></a>P: ¿Tengo una suscripción de Visual Studio Enterprise, pero no se ve el icono de Pluralsight en la página de beneficios. ¿Qué ocurre?
-R: No todas las suscripciones de Visual Studio Enterprise incluyen el beneficio de Pluralsight.  Consulte la [tabla de elegibilidad](#eligibility) para ver si su suscripción puede optar a ellos.
+A: No todas las suscripciones de Visual Studio Enterprise incluyen el beneficio de Pluralsight.  Consulte la [tabla de elegibilidad](#eligibility) para ver si su suscripción puede optar a ellos.
 
-### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>P: ¿Tengo acceso a cualquier lista de reproducción de aprendizaje o canal personalizado?
-R: Sí, como suscriptor de Visual Studio obtiene acceso a canales expertos como parte de la ventaja de aprendizaje de Pluralsight. Estos canales han sido seleccionados especialmente por expertos de Microsoft y están orientados específicamente al aprendizaje de las áreas de. NET, Azure, DevOps y Mobility. Active la ventaja de Pluralsight a través del portal de suscripción de Visual Studio [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) para obtener acceso a estos canales en la página de aterrizaje de Pluralsight:
+### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>P: ¿Tengo acceso a cualquier lista de reproducción de aprendizaje o canal personalizados?
+A: Sí, como suscriptor de Visual Studio obtiene acceso a canales expertos como parte de la ventaja de aprendizaje de Pluralsight. Estos canales han sido seleccionados especialmente por expertos de Microsoft y están orientados específicamente al aprendizaje de las áreas de. NET, Azure, DevOps y Mobility. Active la ventaja de Pluralsight a través del portal de suscripción de Visual Studio [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) para obtener acceso a estos canales en la página de aterrizaje de Pluralsight:
 
 •   Scott Hanselmann (.Net, Azure): [http://go.pluralsight.com/scott-hanselman](http://go.pluralsight.com/scott-hanselman)
 
@@ -101,10 +105,10 @@ R: Sí, como suscriptor de Visual Studio obtiene acceso a canales expertos como 
 
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>P: ¿Qué ocurre cuando se agote mi suscripción a Pluralsight?
-R: Al final de su suscripción gratuita de Pluralsight, puede comprar una suscripción directamente desde Pluralsight.  Póngase en contacto con [Pluralsight](http://www.pluralsight.com) para obtener toda la información.
+A:  Al final de su suscripción gratuita de Pluralsight, puede comprar una suscripción directamente desde Pluralsight.  Póngase en contacto con [Pluralsight](http://www.pluralsight.com) para obtener toda la información.
 
 ### <a name="q-my-company-renews-their-visual-studio-subscription-through-an-enterprise-agreement-does-the-pluralsight-benefit-reset"></a>P: Mi empresa renueva su suscripción de Visual Studio mediante un contrato Enterprise. ¿Se restablece el beneficio de Pluralsight?
-R: No.  La ventaja de Pluralsight es de un solo uso, asociado a la persona.  Una vez que el suscriptor consume el beneficio, no se restablece.  Esto es así para todos los canales de compras, incluidas las compras al por menor, en la nube y de licencias por volumen (VL).
+A:  No.  La ventaja de Pluralsight es de un solo uso, asociado a la persona.  Una vez que el suscriptor consume el beneficio, no se restablece.  Esto es así para todos los canales de compras, incluidas las compras al por menor, en la nube y de licencias por volumen (VL).
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
 -  El [centro de ayuda de Pluralsight](https://help.pluralsight.com/help) proporciona asistencia para la realización de los cursos de Pluralsight o el uso del sitio web de Pluralsight.

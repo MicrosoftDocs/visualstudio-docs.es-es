@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 2dd23b87bc3d362f7d198cdd0e5d63e0ebac26d5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 91204ea5b4303b38397d90761fd9648159174dd4
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667059"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348403"
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>Presentación de Herramientas de R para Visual Studio
 

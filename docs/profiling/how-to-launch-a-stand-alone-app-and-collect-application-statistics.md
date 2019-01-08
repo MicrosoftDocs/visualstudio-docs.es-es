@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Iniciar una aplicación independiente con el generador de perfiles y recopilar estadísticas de aplicación mediante la línea de comandos | Microsoft Docs'
+title: Procedimiento Iniciar una aplicación independiente con el generador de perfiles y recopilar estadísticas de aplicación mediante la línea de comandos | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a57d56564b7be9051efb1a5d153a2a797fcc2211
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3ea9027f6589c7d7993aab1652fd89117239940a
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820010"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592916"
 ---
-# <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>Cómo: Iniciar una aplicación independiente con el generador de perfiles y recopilar estadísticas de aplicación mediante la línea de comandos
+# <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>Procedimiento Iniciar una aplicación independiente con el generador de perfiles y recopilar estadísticas de aplicación mediante la línea de comandos
 En este tema se describe cómo utilizar las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para iniciar una aplicación independiente (cliente) y recopilar estadísticas de rendimiento utilizando el método de muestreo.  
 
 > [!NOTE]
@@ -30,7 +30,7 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 1.  Si está ejecutando las herramientas de generación de perfiles en un equipo donde esté instalado Visual Studio, una ventana de comandos de Visual Studio establece las rutas de acceso correctas. En el menú **Herramientas**, elija **Símbolo del sistema de VS**  
 
 > [!NOTE]
->  Las herramientas de línea de comandos de las Herramientas de generación de perfiles se encuentran en el subdirectorio *\Team Tools\Performance Tools* del directorio de instalación de Visual Studio. En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso a la variable de entorno PATH de la ventana del símbolo del sistema o agregarla al propio comando. Para más información, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Para obtener la ruta de acceso a las herramientas de generación de perfiles, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana Símbolo del sistema o agregarla al propio comando.  
 
 ## <a name="start-the-application-with-the-profiler"></a>Iniciar la aplicación con el generador de perfiles  
  Para iniciar una aplicación de destino con el generador de perfiles, utilice las opciones **/start** y **/launch** de VSPerfCmd para inicializar el generador de perfiles e iniciar la aplicación. Puede especificar **/start** y **/launch** y sus respectivas opciones en una línea de comandos única.  

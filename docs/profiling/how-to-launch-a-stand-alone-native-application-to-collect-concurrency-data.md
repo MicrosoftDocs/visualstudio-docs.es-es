@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Iniciar una aplicación nativa independiente con el generador de perfiles para recopilar datos de simultaneidad utilizando la línea de comandos | Microsoft Docs'
+title: Procedimiento Iniciar una aplicación nativa independiente con el generador de perfiles para recopilar datos de simultaneidad utilizando la línea de comandos | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27c2969286d61738ed059e3973b09843bebc5153
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: a144462902ec13d116a083c3475b6ec3f8f01a8a
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39277831"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592591"
 ---
-# <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Cómo: Iniciar una aplicación nativa independiente con el generador de perfiles para recopilar datos de simultaneidad utilizando la línea de comandos
+# <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Procedimiento Iniciar una aplicación nativa independiente con el generador de perfiles para recopilar datos de simultaneidad mediante la línea de comandos
 En este tema se describe cómo utilizar las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para iniciar una aplicación independiente nativa (cliente) y recopilar datos de simultaneidad de procesos y de subprocesos.  
   
  Una sesión de generación de perfiles tiene las siguientes partes:  
@@ -29,8 +29,8 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 -   Finalizar la sesión de generación de perfiles  
   
 > [!NOTE]
->  Las herramientas de línea de comandos de las Herramientas de generación de perfiles se encuentran en el subdirectorio *\Team Tools\Performance Tools* del directorio de instalación de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar el generador de perfiles en un símbolo del sistema, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana **Símbolo del sistema** o agregarla al propio comando. Para más información, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
-  
+>  Para obtener la ruta de acceso a las herramientas de generación de perfiles, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana Símbolo del sistema o agregarla al propio comando.
+
 ## <a name="start-the-application-with-the-profiler"></a>Iniciar la aplicación con el generador de perfiles  
  Para iniciar una aplicación de destino mediante el generador de perfiles, utilice las opciones **/start** y **/launch** de [VSPerfCmd.exe](../profiling/vsperfcmd.md) para inicializar el generador de perfiles e iniciar la aplicación. Puede especificar **/start** y **/launch** y sus opciones respectivas. También puede agregar la opción **/globaloff** para pausar la recolección de datos en el inicio de la aplicación de destino. Después, use **/globalon** para empezar a recopilar datos.  
   

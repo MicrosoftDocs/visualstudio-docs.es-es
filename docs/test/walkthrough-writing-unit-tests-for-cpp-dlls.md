@@ -1,5 +1,5 @@
 ---
-title: Cómo escribir pruebas unitarias de DLL de C++
+title: Procedimiento Escribir pruebas unitarias para archivos DLL de C++
 ms.date: 11/04/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,14 +9,14 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 9458fd6886243102f6479166fb9df21f9e4869fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a596281d156882dffbef6e1c0993f2c91015e960
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877262"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740171"
 ---
-# <a name="how-to-write-unit-tests-for-c-dlls"></a>Cómo escribir pruebas unitarias de DLL de C++
+# <a name="how-to-write-unit-tests-for-c-dlls"></a>Procedimiento Escribir pruebas unitarias para archivos DLL de C++
 
 En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando antes una prueba. Estos son los pasos básicos:
 
@@ -329,8 +329,8 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
 ## <a name="see-also"></a>Vea también
 
-- [Agregar pruebas unitarias a aplicaciones C++ existentes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
+- [Agregar pruebas unitarias a aplicaciones C++ existentes](../test/how-to-use-microsoft-test-framework-for-cpp.md)
 - [Usar Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)
 - [Depuración del código nativo](../debugger/debugging-native-code.md)
-- [Tutorial: Crear y usar una biblioteca de vínculos dinámicos (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
+- [Tutorial: Creación y uso de una biblioteca de vínculos dinámicos (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [Importar y exportar](/cpp/build/importing-and-exporting)

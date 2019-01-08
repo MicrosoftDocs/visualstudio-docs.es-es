@@ -3,18 +3,18 @@ title: Beneficio de la Comunidad Azure en las suscripciones de Visual Studio | M
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/08/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Obtenga información sobre la ventaja Comunidad Azure incluida en las suscripciones de Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 693e51d969481d6511e3663d2f675861821c99fb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f3e0890d6b8f5e64535deea52670877d3c356f8d
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937465"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739392"
 ---
 # <a name="azure-community"></a>Comunidad Azure
 
@@ -54,15 +54,19 @@ La disponibilidad de la ventaja Comunidad Azure depende del nivel de suscripció
 
 |                                          Nivel de suscripción                                           |     Canales      |    Prestación    | ¿Renovable? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                           Visual Studio Enterprise (estándar, de nube anual)                           | Licencia por volumen, Azure, venta directa |   Un año    |    Sí     |
-|                          Visual Studio Professional (estándar, de nube anual)                          | Licencia por volumen, Azure, venta directa |   Un año    |    Sí     |
+|                           Visual Studio Enterprise (estándar)                           | Licencia por volumen, Azure, venta directa |   Un año    |    Sí     |
+|                          Visual Studio Professional (estándar)                          | Licencia por volumen, Azure, venta directa |   Un año    |    Sí     |
 |                              Visual Studio Test Professional (estándar)                               |    Licencia por volumen, venta directa     |   Un año    |    Sí     |
 |                                       Plataformas MSDN (estándar)                                       |    Licencia por volumen, venta directa     |   Un año    |    Sí     |
 | Visual Studio Enterprise (de nube mensual) Visual Studio Professional (de nube mensual), NFR<sup>1</sup> |        Todas        | No disponible |     No     |
 |                                     Visual Studio Dev Essentials                                      |        N/D        | No disponible |     No     |
 |                                                                                                       |                   |               |            |
 
-<sup>1</sup> *Incluye: No para reventa (NFR), Microsoft FTE, Microsoft Valued Professional (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
+<sup>1</sup>  *Incluye:  Incluye: No para reventa (NFR), Microsoft FTE, Microsoft Valued Professional (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
+
+> [!NOTE]
+> Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
+
 
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
 

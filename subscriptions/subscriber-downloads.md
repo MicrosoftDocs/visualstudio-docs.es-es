@@ -9,12 +9,12 @@ description: Sepa cómo encontrar y descargar los productos de Microsoft incluid
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ec2dd900e0cfae3b150bba52e31834efb53628e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f8bfc394c2c40ee18df8a741f5101105cc2e189e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831437"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803219"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Uso de descargas de suscriptor en suscripciones de Visual Studio
 Una de sus prestaciones como suscriptor es el acceso a un amplio abanico de descargas de software.

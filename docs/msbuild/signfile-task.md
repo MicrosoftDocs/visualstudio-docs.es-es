@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 765e5b154e7787af7afae8ca1f52338cc061a598
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: eedec77ab44f591532a5a2bb827a46965ec242e7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220754"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647383"
 ---
 # <a name="signfile-task"></a>SignFile (tarea)
 
@@ -73,7 +73,7 @@ Firma un archivo determinado con el certificado especificado.
 ```
 
 > [!NOTE]
-> La huella digital del certificado es el hash SHA-1 del certificado. Para más información, consulte [Obtain the SHA-1 hash of a trusted root CA certificate](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\)) (Obtener el hash SHA-1 de un certificado de entidad de certificación raíz de confianza).
+> La huella digital del certificado es el hash SHA-1 del certificado. Para más información, consulte [Obtain the SHA-1 hash of a trusted root CA certificate](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\)) (Obtener el hash SHA-1 de un certificado de entidad de certificación raíz de confianza). Si copia y pega la huella digital de los detalles del certificado, asegúrese de que no incluye los caracteres invisibles (3F) adicionales, ya que esto puede impedir que `SignFile` encuentre el certificado.
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   

@@ -1,43 +1,49 @@
 ---
 title: Sugerir una característica
-description: Describe cuáles son las sugerencias que hay en la Comunidad de desarrolladores, cómo hacer una sugerencia y cómo Microsoft utiliza las sugerencias en la hoja de ruta de Visual Studio
-ms.date: 11/15/2018
+description: Describe cuáles son las sugerencias que hay en la Comunidad de desarrolladores, cómo hacer una sugerencia y cómo Microsoft utiliza las sugerencias en la hoja de ruta de Visual Studio.
+ms.date: 12/17/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.technology: vs-ide-general
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 541d8968ea71844d89903b9e4f146e86a15737e2
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 6c92c2d67419b82b11dfb65898d44e0da7901818
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160041"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592461"
 ---
 # <a name="overview-suggest-a-feature"></a>Información general: Sugerencia de una característica
 
-Hemos introducido una experiencia totalmente nueva para sugerir características junto con la capacidad actual para notificar los problemas en la [Comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com). Esta es una nueva forma mediante la que se puede involucrar directamente en el flujo de trabajo de ingeniería de Visual Studio.
+Hemos introducido una nueva experiencia para sugerir características junto con la capacidad actual para notificar los problemas en la [Comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com). Esta es una nueva forma mediante la que se puede involucrar directamente en el flujo de trabajo de ingeniería de Visual Studio.
 
-Hasta ahora, los usuarios de Visual Studio han usado el foro de UserVoice para proponer nuevas ideas de características. La experiencia *Sugerir una característica* de la Comunidad de desarrolladores le permite realizar la transición del foro UserVoice a una sola plataforma para todos sus comentarios que se relaciona directamente con los equipos de productos de Visual Studio.
+![Botón Sugerir una característica en la Comunidad de desarrolladores](media/suggest-a-feature/suggest-feature-button.png)
+
+También puede iniciar una sugerencia de característica directamente desde Visual Studio; para ello, hay que seleccionar la opción **Proporcionar una sugerencia** del icono **Proporcionar comentarios** situado en la parte superior derecha de la ventana principal de Visual Studio:
+
+![Menú Proporcionar una sugerencia en Visual Studio](media/suggest-a-feature/provide-suggestion.png)
+
+Si selecciona **Proporcionar una sugerencia**, se le llevará a la [Comunidad de desarrolladores](https://developercommunity.visualstudio.com), donde puede redactar su sugerencia.
+
+## <a name="user-voice"></a>UserVoice
+
+Hasta ahora, los usuarios de Visual Studio proponían nuevas ideas sobre características en UserVoice. Ahora, al incorporar la funcionalidad *Sugerir una característica* a la Comunidad de desarrolladores, todos los comentarios del equipo de producto de Visual Studio están en un mismo lugar.
+
+El sitio de UserVoice pasa a ser de solo lectura. Se podrá consultar para obtener contexto, pero todas las sugerencias de características nuevas se deben enviar en la Comunidad de desarrolladores.
 
 Hemos migrado un conjunto inicial de las ideas del foro UserVoice a la Comunidad de desarrolladores. La migración se realizó basándose en el impacto de la comunidad de los comentarios y nuestras prioridades de la hoja de ruta del producto. Si lo estaba esperando ver una sugerencia que puede que hayamos perdido, no dude en agregarla a la Comunidad de desarrolladores.
 
 ## <a name="votes"></a>Votos
 
-El sistema de votación de UserVoice funciona de forma diferente a los votos de la Comunidad de desarrolladores. Para mantener la integridad de los recuentos de los votos de la Comunidad de desarrolladores y para evitar la distorsión de los votos, los recuentos de los votos de UserVoice se muestran de forma destacada como una etiqueta junto a cada sugerencia de característica. Mientras continúa votando sugerencias en la Comunidad de desarrolladores mejorada, los nuevos recuentos de votos se mostrarán por separado de los recuentos de los votos de UserVoice.
-
-## <a name="user-voice"></a>UserVoice
-
-El sitio de UserVoice ahora es de solo lectura, lo que le permite volver a él cuando necesita buscar contexto. Todas las sugerencias de características nuevas se deben enviar en la Comunidad de desarrolladores.
+El sistema de votación de la Comunidad de desarrolladores es distinto del de UserVoice. Para mantener la integridad de los recuentos de los votos de la Comunidad de desarrolladores y para evitar la distorsión de los votos, los recuentos de los votos de UserVoice se muestran de forma destacada como una etiqueta junto a cada sugerencia de característica. Mientras continúa votando sugerencias en la Comunidad de desarrolladores mejorada, los nuevos recuentos de votos se mostrarán por separado de los recuentos de los votos de UserVoice.
 
 ## <a name="suggestion-status"></a>Estado de la sugerencia
 
-Después de enviar una sugerencia de característica, los estados indican dónde se encuentra el envío de dicha sugerencia en su ciclo de vida. Como tenemos en cuenta sus comentarios y los movemos a lo largo del flujo de trabajo, los etiquetamos con el estado correspondiente.
-
-A continuación se enumeran los distintos estados asociados con las sugerencias de características, junto con una descripción de su significado y los indicadores de color.
+Después de enviar una sugerencia de característica, los estados indican dónde se encuentra el envío de dicha sugerencia en su ciclo de vida. Como tenemos en cuenta sus comentarios y los movemos a lo largo del flujo de trabajo, los etiquetamos con el estado correspondiente. Aquí se enumeran los distintos estados asociados con las sugerencias de características, junto con una descripción de su significado y los indicadores de color.
 
 ![Estado New (Nueva) para sugerencias en la Comunidad de desarrolladores](../ide/media/SuggestStates/New.jpg)
 
@@ -122,3 +128,7 @@ El sistema de votación de UserVoice funciona de forma diferente a los votos de 
 Estamos totalmente comprometidos a escuchar sus sugerencias de características y a llevar a cabo acciones orientadas a proporcionar una experiencia valiosa a nuestros clientes. Las acciones sobre las sugerencias se priorizan basándose en el impacto en comunidad más amplia. Aunque no seamos capaces de responder personalmente a cada sugerencia, nos aseguraremos de que sus comentarios van a parar al equipo adecuado y se evalúan con suma atención.
 
 El tiempo de respuesta depende del estado en el que se encuentran sus comentarios. Revise la explicación de los estados de este documento para entender los tiempos de respuesta.
+
+## <a name="see-also"></a>Vea también
+
+- Blog de Visual Studio [Introducing 'Suggest a Feature' in Developer Community](https://blogs.msdn.microsoft.com/visualstudio/2018/10/09/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral) (Incorporación de "Sugerir una característica" a la Comunidad de desarrolladores)

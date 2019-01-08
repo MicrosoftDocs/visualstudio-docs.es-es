@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 585fb2fa8d2662d1a2bec7915bf1f08a4dc771e4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cf9b1d1a336a2567a2d583e0cd68899dd03d42b8
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865926"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592448"
 ---
 # <a name="cpu-and-windows-counters"></a>Contadores de Windows y de CPU
 
@@ -127,13 +127,11 @@ Mediante la herramienta de línea de comandos [VSPerfCmd](../profiling/vsperfcmd
 
      **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**
 
-     donde *\<Visual Studio Performance Tools Directory>* es la ruta de acceso al directorio de herramientas de rendimiento de la instalación de Visual Studio, normalmente
-
-     *C:\Archivos de programa\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*
+     donde *\<Visual Studio Performance Tools Directory>* es la ruta de acceso al directorio de herramientas de rendimiento de la instalación de Visual Studio. Para obtener la ruta de acceso a las herramientas de rendimiento, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
 ## <a name="see-also"></a>Vea también
 
 [Información general](../profiling/overviews-performance-tools.md)  
-[Elección de eventos de muestreo](../profiling/how-to-choose-sampling-events.md)  
-[Recopilación de datos de contadores de CPU](../profiling/how-to-collect-cpu-counter-data.md)  
+[Cómo: Elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md)  
+[Cómo: Recopilar datos de contadores de CPU](../profiling/how-to-collect-cpu-counter-data.md)  
 [Cómo: Recopilar datos de contadores de Windows](../profiling/how-to-collect-windows-counter-data.md)
