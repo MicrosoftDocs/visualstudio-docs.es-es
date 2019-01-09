@@ -13,13 +13,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: c106eeda8ad3fd1f9293d6f7c3c7df1a8b48767b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1805efbe676273ceac2f0e264e53946eea1be79f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064723"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878567"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Procedimiento Crear un complemento de prueba de carga
 

@@ -1,8 +1,6 @@
 ---
 title: Establecer opciones generales de sesión de rendimiento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.general
@@ -11,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6c44435f69b5a94433081a518be14f8ffd1756e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b3dce2f53ef0e16563ff73d188e5d475c42bf0fb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834232"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896414"
 ---
 # <a name="set-general-performance-session-options"></a>Establecer opciones generales de sesión de rendimiento
 
@@ -47,4 +45,4 @@ El método de recolección base se establece mediante la selección de una opci�
 
 |||
 |-|-|
-|**Informe**. De forma predeterminada, el archivo de datos de generación de perfiles (.vsp) recibe el nombre de la aplicación de la que se generan perfiles y se sitúa en la carpeta de la solución o el proyecto. También se anexa al nombre una cadena de fecha y, en los archivos de datos que tendrían nombres duplicados, un número incrementado. Estas opciones se pueden modificar.|- [Cómo: Establecer opciones de nombre de archivo de datos de rendimiento](../profiling/how-to-set-performance-data-file-name-options.md)|
+|**Informe**. De forma predeterminada, el archivo de datos de generación de perfiles (.vsp) recibe el nombre de la aplicación de la que se generan perfiles y se sitúa en la carpeta de la solución o el proyecto. También se anexa al nombre una cadena de fecha y, en los archivos de datos que tendrían nombres duplicados, un número incrementado. Estas opciones se pueden modificar.|- [Cómo: Establecimiento de opciones de nombre de archivo de datos de rendimiento](../profiling/how-to-set-performance-data-file-name-options.md)|

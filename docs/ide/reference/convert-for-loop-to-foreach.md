@@ -2,7 +2,6 @@
 title: Refactorización del código para convertir un bucle for en una instrucción foreach
 ms.date: 05/10/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -11,12 +10,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6a200874cec92fada17c13eb45e226ce26119a60
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 85a8d0c5644d1a7daf342b9524e75f7969b3781a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267678"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888197"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>Refactorización para convertir un bucle for en una instrucción foreach y viceversa
 

@@ -2,19 +2,18 @@
 title: Administrar controladores de pruebas y agentes de pruebas
 ms.date: 09/18/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccc3a6342857d1f228118ef7b26601f3787908e4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b687504ae69d7b133aba107c7705eeb50f6f8953
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059501"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891406"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Administrar controladores de pruebas y agentes de pruebas
 
@@ -118,7 +117,7 @@ El agente de prueba puede encontrarse en uno de los siguientes estados:
 
 |Estado|Descripción|
 |-|-----------------|
-|Ejecutando prueba|Ejecutando pruebas|
+|Ejecutando prueba|Ejecutar pruebas|
 |Listo|Disponible para la ejecución de pruebas y para la recopilación de datos y diagnósticos.|
 |Sin conexión|No está disponible para la ejecución de pruebas ni para la recopilación de datos y diagnósticos.|
 |Desconectado|El agente de prueba no se ha iniciado.|

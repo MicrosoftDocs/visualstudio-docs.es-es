@@ -12,13 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: ac4b542c7f9b557ad04ead05422f8c89cd4f909c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 76cf2ff3cd5ab3f18f76a5c6ea68be2411b76d84
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063375"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896336"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Procedimiento para agregar una regla de umbral mediante el Editor de pruebas de carga
 
