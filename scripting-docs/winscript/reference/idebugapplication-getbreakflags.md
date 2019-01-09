@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3bdccefb3a679694360ed9a7c6fea35eae6bdb1b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a44f56e4070c159e67b1303514592c5dda25f56d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725555"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087248"
 ---
 # <a name="idebugapplicationgetbreakflags"></a>IDebugApplication::GetBreakFlags
-Devuelve las marcas de salto actual de la aplicación.  
+Devuelve las marcas de interrupción actual de la aplicación.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetBreakFlags(  
    APPBREAKFLAGS*                   pabf,  
    IRemoteDebugApplicationThread**  pprdatSteppingThread  
@@ -39,7 +39,7 @@ HRESULT GetBreakFlags(
   
 #### <a name="parameters"></a>Parámetros  
  `pabf`  
- [out] Las marcas de salto actual de la aplicación.  
+ [out] Las marcas de interrupción actual de la aplicación.  
   
  `pprdatSteppingThread`  
  [out] El subproceso actualmente en ejecución.  
@@ -52,7 +52,7 @@ HRESULT GetBreakFlags(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método devuelve las marcas de salto actual de la aplicación.  
+ Este método devuelve las marcas de interrupción actual de la aplicación.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugApplication (interfaz)](../../winscript/reference/idebugapplication-interface.md)   

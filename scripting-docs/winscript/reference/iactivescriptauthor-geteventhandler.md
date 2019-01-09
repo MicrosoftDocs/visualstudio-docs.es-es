@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2b09f900162b6dba82696c946b53ab131691530c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2e7f6cc265815db4acd847270b28c3e744257fa0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645585"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086689"
 ---
 # <a name="iactivescriptauthorgeteventhandler"></a>IActiveScriptAuthor::GetEventHandler
 Devuelve el scriptlet que tiene los atributos especificados.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetEventHandler(  
    IDispatch          *pdisp,  
    LPCOLESTR          pszItem,  
@@ -42,13 +42,13 @@ HRESULT GetEventHandler(
   
 #### <a name="parameters"></a>Parámetros  
  `pdisp`  
- [in] El `IDispatch` objeto que corresponde a la `NamedItem` a la que está asociado el scriptlet.  
+ [in] El `IDispatch` objeto que corresponde a la `NamedItem` al que está asociado el scriptlet.  
   
  `pszItem`  
- [in] La dirección del búfer del identificador del nivel superior del nombre completo scriptlet en el host.  
+ [in] La dirección de búfer del identificador del nombre completo del scriptlet en el host de nivel superior.  
   
  `pszSubItem`  
- [in] La dirección del búfer del identificador de segundo nivel del nombre completo scriptlet en el host. Se establece en NULL si el nombre tiene un solo nivel.  
+ [in] La dirección de búfer del identificador del nombre completo del scriptlet en el host de segundo nivel. Se establece en NULL si el nombre tiene un solo nivel.  
   
  `pszEvent`  
  [in] La dirección de un búfer que contiene el nombre del evento. El scriptlet es un controlador de eventos para este evento.  
@@ -57,7 +57,7 @@ HRESULT GetEventHandler(
  [out] La dirección de una variable que recibe un puntero a la `IScriptEntry` interfaz del scriptlet que tiene los atributos especificados.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  

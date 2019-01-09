@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetNextDispID | Documentos de Microsoft
+title: IDispatchEx::GetNextDispID | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ece7bde3230da370c8434cef7f780a92604df34c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 24aa5ad2b780d5ff61efcde4d24b6700bb5b353e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728525"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092994"
 ---
 # <a name="idispatchexgetnextdispid"></a>IDispatchEx::GetNextDispID
 Enumera a los miembros del objeto.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetNextDispID(  
    DWORD grfdex,  
    DISPID id,  
@@ -44,16 +44,16 @@ HRESULT GetNextDispID(
   
 |Valor|Significado|  
 |-----------|-------------|  
-|fdexEnumDefault|Solicitudes que el objeto enumera los elementos de forma predeterminada. El objeto puede enumerar todos los conjuntos de elementos.|  
-|fdexEnumAll|Solicitudes que el objeto enumera todos los elementos. El objeto puede enumerar todos los conjuntos de elementos.|  
+|fdexEnumDefault|Solicita que el objeto enumera los elementos de forma predeterminada. El objeto se puede enumerar cualquier conjunto de elementos.|  
+|fdexEnumAll|Solicita que el objeto enumera todos los elementos. El objeto se puede enumerar cualquier conjunto de elementos.|  
   
  `id`  
- Identifica al miembro actual. GetNextDispID recupera el elemento de la enumeración después de éste. Usa GetDispID o una llamada anterior a GetNextDispID para obtener este identificador. Utiliza el valor DISPID_STARTENUM para obtener el primer identificador del primer elemento.  
+ Identifica al miembro actual. GetNextDispID recupera el elemento de la enumeración después de este. Para obtener este identificador se utiliza GetDispID o una llamada anterior a GetNextDispID. Usa el valor DISPID_STARTENUM para obtener el primer identificador del primer elemento.  
   
  `pid`  
- Dirección de una variable DISPID que recibe el identificador del siguiente elemento de la enumeración.  
+ Dirección de una variable de identificador de envío que recibe el identificador del elemento siguiente en la enumeración.  
   
- Si se elimina un miembro por `DeleteMemberByName` o `DeleteMemberByDispID`, `DISPID` necesite siguen siendo válidas para `GetNextDispID`.  
+ Si se elimina un miembro por `DeleteMemberByName` o `DeleteMemberByDispID`, el `DISPID` deba sigan siendo válidos `GetNextDispID`.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Devuelve uno de los siguientes valores:  
@@ -65,7 +65,7 @@ HRESULT GetNextDispID(
   
 ## <a name="example"></a>Ejemplo  
   
-```  
+```cpp
 HRESULT hr;  
    BSTR bstrName;  
    DISPID dispid;  

@@ -18,19 +18,19 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6137f1cd77d2f305a9ff9d51ac49c214e4c4237b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: dca878d6d4fd15db4b516e37932fbfebd30607a2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645545"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093202"
 ---
 # <a name="iactivescriptauthorgetlanguageflags"></a>IActiveScriptAuthor::GetLanguageFlags
 Devuelve información del idioma.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetLanguageFlags(  
    DWORD              *pgrfasa  
 );  
@@ -42,21 +42,21 @@ HRESULT GetLanguageFlags(
   
 |Constante|Valor|Descripción|  
 |--------------|-----------|-----------------|  
-|fasaPreferInternalHandler|0 x 0001|El idioma prefiere creación de controlador de eventos de secuencia de comandos por el motor en lugar de la aplicación de creación de script.|  
-|fasaSupportInternalHandler|0 x 0002|El lenguaje admite controladores de eventos de script creados por el motor de creación de script.|  
-|fasaCaseSensitive|0 x 0004|El lenguaje de script distingue mayúsculas de minúsculas.|  
+|fasaPreferInternalHandler|0 x 0001|El lenguaje prefiere la creación del controlador de eventos de secuencia de comandos por el motor en lugar de la aplicación de creación de script.|  
+|fasaSupportInternalHandler|0x0002|El lenguaje admite controladores de eventos de script creados por el motor de creación de script.|  
+|fasaCaseSensitive|0x0004|El lenguaje de script distingue mayúsculas de minúsculas.|  
   
 ## <a name="return-value"></a>Valor devuelto  
- Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Si el motor de creación de script administra controladores de eventos, la aplicación debe llamar a `CreateChildHandler` desde un `IScriptEntry` objeto. Esto crea una `IScriptScriptlet` objeto que corresponde al controlador de eventos. El motor también agrega un controlador de eventos a la entrada de secuencia de comandos. El controlador de eventos es una función vacía que contiene la información de firma especificado.  
+ Si el motor de creación de script administra los controladores de eventos, la aplicación debe llamar a `CreateChildHandler` desde un `IScriptEntry` objeto. Esto crea un `IScriptScriptlet` objeto que se corresponde con el controlador de eventos. El motor también agrega un controlador de eventos a la entrada de secuencia de comandos. El controlador de eventos es una función vacía que contiene la información de firma especificado.  
   
- Si la aplicación administra controladores de eventos, debe llamar a `CreateChildHandler` desde un `IScriptNode` objeto que representa un scriptlet de controlador de eventos. Esto crea una `IScriptScriptlet` objeto que está asociado con el scriptlet de controlador de eventos. La aplicación también tiene que agregar una función vacía como un evento de controlador a una nueva o existente `IScriptEntry` objeto.  
+ Si la aplicación administra los controladores de eventos, debe llamar a `CreateChildHandler` desde un `IScriptNode` objeto que representa un scriptlet de controlador de eventos. Esto crea un `IScriptScriptlet` objeto que está asociado con el scriptlet de controlador de eventos. La aplicación también tiene que agregar una función vacía como un evento de controlador a una nueva o existente `IScriptEntry` objeto.  
   
 ## <a name="see-also"></a>Vea también  
  [IActiveScriptAuthor (Interfaz)](../../winscript/reference/iactivescriptauthor-interface.md)

@@ -18,20 +18,20 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 93595cd2d0f88244866ab7363ecd68c6d8073b48
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c466ec767be53d100b970314bf0d81d5dd9dfb20
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729055"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097544"
 ---
 # <a name="idispatchexgetdispid"></a>IDispatchEx::GetDispID
 Asigna un nombre de miembro único a su correspondiente identificador DISPID, que, a continuación, se puede usar en las llamadas subsiguientes a `IDispatchEx::InvokeEx`.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
- HRESULT GetDispID(  
+```cpp
+HRESULT GetDispID(  
    BSTR bstrName,  
    DWORD grfdex,  
    DISPID *pid  
@@ -40,17 +40,17 @@ Asigna un nombre de miembro único a su correspondiente identificador DISPID, qu
   
 #### <a name="parameters"></a>Parámetros  
  `bstrName`  
- Se pasa en el nombre que debe asignarse.  
+ Pasa el nombre que debe asignarse.  
   
  `grfdex`  
  Determina las opciones para obtener el identificador de miembro. Esto puede ser una combinación de los siguientes valores:  
   
 |Valor|Significado|  
 |-----------|-------------|  
-|fdexNameCaseSensitive|Solicitudes que se lleva a cabo la búsqueda de nombre de una manera entre mayúsculas y minúsculas. Se puede omitir por objeto que no se admite la búsqueda distingue mayúsculas de minúsculas.|  
-|fdexNameEnsure|Solicita que el miembro creará si aún no existe. Se debe crear el nuevo miembro con el valor `VT_EMPTY`.|  
-|fdexNameImplicit|Indica que el autor de llamada busca los objetos de un miembro de un nombre determinado cuando no se especifica explícitamente el objeto base.|  
-|fdexNameCaseInsensitive|Solicitudes que puede realizar la búsqueda de nombre en mayúsculas y minúsculas. Se puede omitir por objeto que no se admite la búsqueda entre mayúsculas y minúsculas.|  
+|fdexNameCaseSensitive|Solicitudes que se realiza la búsqueda de nombre en minúsculas. Puede omitir el objeto que no es compatible con la búsqueda distingue mayúsculas de minúsculas.|  
+|fdexNameEnsure|Solicita que el miembro se crean si aún no existe. Se debe crear el nuevo miembro con el valor `VT_EMPTY`.|  
+|fdexNameImplicit|Indica que el llamador está buscando objetos miembro de un nombre determinado cuando no se especifica explícitamente el objeto base.|  
+|fdexNameCaseInsensitive|Solicitudes que se realiza la búsqueda de nombre en mayúsculas y minúsculas. Puede omitir el objeto que no es compatible con la búsqueda de mayúsculas y minúsculas.|  
   
  `pid`  
  Puntero a la ubicación asignada por el llamador para recibir el resultado DISPID. Si se produce un error, `pid` contiene DISPID_UNKNOWN.  
@@ -65,15 +65,15 @@ Asigna un nombre de miembro único a su correspondiente identificador DISPID, qu
 |`DISP_E_UNKNOWNNAME`|No se conoce el nombre.|  
   
 ## <a name="remarks"></a>Comentarios  
- `GetDispID`puede usarse en lugar de `GetIDsOfNames` para obtener el DISPID de un miembro determinado.  
+ `GetDispID` puede usarse en lugar de `GetIDsOfNames` para obtener el DISPID de un miembro determinado.  
   
  Dado que `IDispatchEx` permite la adición y eliminación de miembros, el conjunto de identificadores DispId no permanezca constante durante la vigencia de un objeto.  
   
- El sin usar `riid` parámetro `IDispatch::GetIDsOfNames` se ha quitado.  
+ Los no usados `riid` parámetro `IDispatch::GetIDsOfNames` se ha quitado.  
   
 ## <a name="example"></a>Ejemplo  
   
-```  
+```cpp
 BSTR bstrName;  
    DISPID dispid;  
    IDispatchEx *pdex;   

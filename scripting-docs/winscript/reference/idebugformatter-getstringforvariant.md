@@ -1,5 +1,5 @@
 ---
-title: IDebugFormatter::GetStringForVariant | Documentos de Microsoft
+title: IDebugFormatter::GetStringForVariant | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bfc31b0fdbf6d1f4a29b1322dc3a3c4015f9c8ff
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a7b2eefb69435333509c4b9cda986cc75e431f73
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726665"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097453"
 ---
 # <a name="idebugformattergetstringforvariant"></a>IDebugFormatter::GetStringForVariant
 Devuelve una cadena que representa el valor de variante especificado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetStringForVariant(  
    VARIANT*  pvar,  
    ULONG     nRadix,  
@@ -43,7 +43,7 @@ HRESULT GetStringForVariant(
  [in] VARIANTE para representar como una cadena.  
   
  `nRadix`  
- [in] Base que se usará para valores numéricos.  
+ [in] Base a utilizar para los valores numéricos.  
   
  `pbstrValue`  
  [out] Cadena que representa `pvar`.  

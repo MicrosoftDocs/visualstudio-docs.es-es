@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b8d95be6227f192596e174095744a4e0247e0c37
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c163f756e426cab9ce36c1c8343b142bf76aafd6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729185"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086520"
 ---
 # <a name="iprocessdebugmanagerremoveapplication"></a>IProcessDebugManager::RemoveApplication
-Quita una aplicación desde el que se ejecuta lista de aplicaciones.  
+Quita el que se ejecuta en una aplicación lista de aplicaciones.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT RemoveApplication(  
    DWORD  dwAppCookie  
 );  
@@ -38,7 +38,7 @@ HRESULT RemoveApplication(
   
 #### <a name="parameters"></a>Parámetros  
  `dwAppCookie`  
- [in] La cookie proporcionada por `IProcessDebugManager::AddApplication` cuando la aplicación se agregó a la lista de aplicaciones.  
+ [in] Cookie proporcionada por `IProcessDebugManager::AddApplication` cuando la aplicación se agregó a la lista de aplicaciones.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -48,8 +48,8 @@ HRESULT RemoveApplication(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método quita una aplicación desde el que se ejecuta lista de aplicaciones.  
+ Este método quita una aplicación de la ejecución lista de aplicaciones.  
   
 ## <a name="see-also"></a>Vea también  
- [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)   
+ [Iprocessdebugmanager:: Addapplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)   
  [IProcessDebugManager (Interfaz)](../../winscript/reference/iprocessdebugmanager-interface.md)

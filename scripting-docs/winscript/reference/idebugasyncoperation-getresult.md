@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 60181904408010f35fa4d99d182216e665583aab
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d86e9eb2b934bc6bd4027405d06960cd107f81c1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726165"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087482"
 ---
 # <a name="idebugasyncoperationgetresult"></a>IDebugAsyncOperation::GetResult
-Proporciona el valor devuelto y el parámetro de objeto de valor devuelto de la operación sincrónica de depuración.  
+Proporciona el valor devuelto y el parámetro de objeto de valor devuelto de la operación de depuración sincrónica.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetResult(  
    HRESULT*    phrResult,  
    IUnknown**  ppunkResult  
@@ -39,10 +39,10 @@ HRESULT GetResult(
   
 #### <a name="parameters"></a>Parámetros  
  `phrResult`  
- [out] Si la operación se completa, `phrResult` es el valor devuelto de `IDebugSyncOperation::Execute`.  
+ [out] Si la operación se ha completado, `phrResult` es el valor devuelto de `IDebugSyncOperation::Execute`.  
   
  `ppunkResult`  
- [out] Si la operación se completa, `ppunkResult` es el parámetro del objeto devuelto por la operación.  
+ [out] Si la operación se ha completado, `ppunkResult` es el parámetro de objeto devuelto por la operación.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -50,10 +50,10 @@ HRESULT GetResult(
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
-|`E_PENDING`|No se complete la operación.|  
+|`E_PENDING`|No se completó la operación.|  
   
 ## <a name="remarks"></a>Comentarios  
- Si ha completado la operación, este método devuelve el `HRESULT` y objeto de parámetro de `IDebugSyncOperation::Execute`.  
+ Si se ha completado la operación, este método devuelve el `HRESULT` y objeto de parámetro de `IDebugSyncOperation::Execute`.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugAsyncOperation (interfaz)](../../winscript/reference/idebugasyncoperation-interface.md)   

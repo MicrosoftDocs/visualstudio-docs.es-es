@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 15612330f160f694202bb2158f970e0633fe53bd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 784463f9e465aac005f5454be28a0043069dcb69
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725275"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090004"
 ---
 # <a name="icanhandleexceptioncanhandleexception"></a>ICanHandleException::CanHandleException
-Determina si el autor de la llamada del motor de secuencia de comandos puede controlar una excepción especificada.  
+Determina si el autor de llamada del motor de secuencia de comandos puede controlar una excepción especificada.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT CanHandleException(  
    EXCEPINFO*  pExcepInfo,  
    VARIANT*    pvar  
@@ -39,10 +39,10 @@ HRESULT CanHandleException(
   
 #### <a name="parameters"></a>Parámetros  
  `pExcepInfo`  
- [in] Puntero a un `EXCEPINFO` estructura que contiene la información que se notificará si no se encuentra ningún controlador de excepción.  
+ [in] Puntero a un `EXCEPINFO` estructura que contiene la información que se notificará si no se encuentra ningún controlador de excepciones.  
   
  `pvar`  
- [in] Un valor asociado a la excepción, como el valor producida por un `throw` instrucción. Este parámetro puede ser `NULL`.  
+ [in] Un valor asociado con la excepción, como el valor producida por un `throw` instrucción. Este parámetro puede ser `NULL`.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -53,7 +53,7 @@ HRESULT CanHandleException(
 |`E_FAIL`|El llamador no puede controlar la excepción.|  
   
 ## <a name="remarks"></a>Comentarios  
- Si una llamada a `IDispatchEx::InvokeEx`, o un método similar, produce una excepción, el motor de script se comprueba para un llamador de la cadena de llamada de la secuencia de comandos que admite el `ICanHandleException` interfaz e indica que puede controlar la excepción. Si ningún llamador pueda controlar la excepción, detiene el motor de scripts.  
+ Si una llamada a `IDispatchEx::InvokeEx`, o un método similar, da como resultado una excepción, el motor de secuencia de comandos comprueba para un llamador de cadena de autor de llamada de la secuencia de comandos que admite el `ICanHandleException` interfaz e indica que puede controlar la excepción. Si ningún llamador pueda controlar la excepción, se detiene el motor de scripts.  
   
 ## <a name="see-also"></a>Vea también  
  [ICanHandleException (interfaz)](../../winscript/reference/icanhandleexception-interface.md)   

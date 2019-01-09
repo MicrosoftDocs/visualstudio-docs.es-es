@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrameSnifferEx::EnumStackFramesEx | Documentos de Microsoft
+title: IDebugStackFrameSnifferEx::EnumStackFramesEx | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a96a382c1dce73731fdd4326d8b0d1c35b7aa33
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8c34ce267113ae5576a8b3bdca9ac34d4abc00f7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727585"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086976"
 ---
 # <a name="idebugstackframesnifferexenumstackframesex"></a>IDebugStackFrameSnifferEx::EnumStackFramesEx
-Devuelve un enumerador de los marcos de pila del subproceso actual.  
+Devuelve un enumerador de marcos de pila del subproceso actual.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT EnumStackFramesEx(  
    DWORD_PTR                dwSpMin,  
    IEnumDebugStackFrames**  ppedsf  
@@ -42,7 +42,7 @@ HRESULT EnumStackFramesEx(
  [in] El límite inferior de dirección para enumerar los marcos de pila.  
   
  `ppedsf`  
- [out] Enumerador de los marcos de pila del subproceso actual.  
+ [out] Enumerador de marcos de pila del subproceso actual.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -52,7 +52,7 @@ HRESULT EnumStackFramesEx(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- El enumerador de marco de pila devuelve los fotogramas desde la parte superior de la pila, con el marco insertado más recientemente. El enumerador contiene marcos de pila solo con direcciones mayores o iguales que `dwSpMin`.  
+ El enumerador del marco de pila devuelve los marcos desde la parte superior de la pila, con el marco insertado más recientemente. El enumerador contiene marcos de pila solo con direcciones mayores o iguales que `dwSpMin`.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugStackFrameSnifferEx (Interfaz)](../../winscript/reference/idebugstackframesnifferex-interface.md)

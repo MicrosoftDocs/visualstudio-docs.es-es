@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::AddUnicodeText | Documentos de Microsoft
+title: 'Idebugdocumenthelper:: Addunicodetext | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f387142675b0def99fb2cc0695bd3f9416d66809
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 190df1f621b450c6d3b34c339d21f947f48636f2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726245"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093527"
 ---
 # <a name="idebugdocumenthelperaddunicodetext"></a>IDebugDocumentHelper::AddUnicodeText
-Anexa una cadena Unicode al final de este documento.  
+Una cadena Unicode se anexa al final de este documento.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT AddUnicodeText(  
    LPCOLESTR  pszText  
 );  
@@ -52,9 +52,9 @@ HRESULT AddUnicodeText(
  Este método genera `IDebugDocumentTextEvents` notificaciones.  
   
 > [!NOTE]
->  Si se llama a este método después de `AddDeferredText` se ha llamado `E_FAIL` se devuelve.  
+>  Si se llama a este método después de `AddDeferredText` se ha llamado, `E_FAIL` se devuelve.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugDocumentHelper (interfaz)](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
+ [Idebugdocumenthelper:: Adddeferredtext](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [IDebugDocumentTextEvents (Interfaz)](../../winscript/reference/idebugdocumenttextevents-interface.md)

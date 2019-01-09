@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCodeContexts::Skip | Documentos de Microsoft
+title: IEnumDebugCodeContexts::Skip | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d053fdfe079636755acf125f5a2c02f8690b2a53
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e90036ef2536c82e5742328d5a9342de2cf1f438
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727525"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089770"
 ---
 # <a name="ienumdebugcodecontextsskip"></a>IEnumDebugCodeContexts::Skip
 Omite un número especificado de segmentos en una secuencia de enumeración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT Skip(  
    ULONG  celt  
 );  
@@ -38,7 +38,7 @@ HRESULT Skip(
   
 #### <a name="parameters"></a>Parámetros  
  `celt`  
- [in] Número de segmentos en la secuencia de enumeración que se va a omitir.  
+ [in] Número de segmentos de la secuencia de enumeración que se omitirán.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  

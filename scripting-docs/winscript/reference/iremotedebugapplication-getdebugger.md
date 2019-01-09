@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 908d6b43ca33a3b9c35d2690ccb5453032ce151a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ddb6ac5ab9f8597b1f8d22924bdd57204f66c359
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729195"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095451"
 ---
 # <a name="iremotedebugapplicationgetdebugger"></a>IRemoteDebugApplication::GetDebugger
 Devuelve el depurador actual conectado a la aplicación.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetDebugger(  
    IApplicationDebugger**  pad  
 );  

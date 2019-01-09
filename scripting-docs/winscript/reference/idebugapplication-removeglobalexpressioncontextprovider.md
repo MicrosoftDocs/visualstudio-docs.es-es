@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 791d6a3a237c36c123aea662dc4bb933b97d35d3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5038d85e48b6735c81977d20f295dd4e0868e2e2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725975"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093891"
 ---
 # <a name="idebugapplicationremoveglobalexpressioncontextprovider"></a>IDebugApplication::RemoveGlobalExpressionContextProvider
 Quita un proveedor de contexto de expresión global de esta aplicación.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT RemoveGlobalExpressionContextProvider(  
    DWORD_PTR  dwCookie  
 );  

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: affb385f2c057b7ac69b56d1e8b8c22d7391e43f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b9331738c52453f4ef80b70ab7eebd79907d1f54
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645745"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094138"
 ---
 # <a name="iactivescripterrordebuggetstackframe"></a>IActiveScriptErrorDebug::GetStackFrame
-Proporciona el marco de pila que está en vigor para errores de tiempo de ejecución.  
+Proporciona el marco de pila que está en vigor para los errores en tiempo de ejecución.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetStackFrame(  
    IDebugStackFrame**  ppdsf  
 );  
@@ -38,7 +38,7 @@ HRESULT GetStackFrame(
   
 #### <a name="parameters"></a>Parámetros  
  `ppdsf`  
- [out] El marco de pila para el error.  
+ [out] El marco de pila del error.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -48,7 +48,7 @@ HRESULT GetStackFrame(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método proporciona el marco de pila que está en vigor para errores en tiempo de ejecución.  
+ Este método proporciona el marco de pila que está en vigor para errores de tiempo de ejecución.  
   
 ## <a name="see-also"></a>Vea también  
  [IActiveScriptErrorDebug (Interfaz)](../../winscript/reference/iactivescripterrordebug-interface.md)

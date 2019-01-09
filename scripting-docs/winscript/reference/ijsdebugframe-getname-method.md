@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugframe:: GetName (método) | Documentos de Microsoft'
+title: Método Ijsdebugframe | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 34bb58444a30926ac558ca63a3a7ffff4ed5ca50
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6fdf708c833bff4501718a12d009441db90b363b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727625"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097466"
 ---
 # <a name="ijsdebugframegetname-method"></a>IJsDebugFrame::GetName (Método)
 Obtiene el nombre descriptivo del marco de pila.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetName(  
    BSTR *pName  
 );  

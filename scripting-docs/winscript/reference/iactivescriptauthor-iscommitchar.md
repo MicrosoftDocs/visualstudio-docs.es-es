@@ -18,19 +18,19 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67dcdd7107372ee2766d59374a1d5aa9eb98576d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8c2446cf57417434a1925fab24f51e8b34694775
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645565"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096179"
 ---
 # <a name="iactivescriptauthoriscommitchar"></a>IActiveScriptAuthor::IsCommitChar
 Devuelve un valor que indica si un carácter dado debe desencadenar una confirmación de finalización de la instrucción por la aplicación.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT IsCommitChar(  
    OLECHAR    ch,  
    BOOL       *pfcommit  
@@ -42,10 +42,10 @@ HRESULT IsCommitChar(
  [in] El carácter que se va a probar.  
   
  `pfcommit`  
- [out] `True` si el carácter es una instrucción commit carácter; en caso contrario, `False`.  
+ [out] `True` si el carácter es una confirmación carácter; en caso contrario, `False`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  

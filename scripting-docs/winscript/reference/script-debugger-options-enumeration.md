@@ -1,5 +1,5 @@
 ---
-title: Enumeración SCRIPT_DEBUGGER_OPTIONS | Documentos de Microsoft
+title: Enumeración SCRIPT_DEBUGGER_OPTIONS | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,22 +14,22 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 54b910562670104f0fb5679f2b09780afcd17751
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e35d90a3750c759282d86c7383bf25204fbf4fcd
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734095"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088600"
 ---
 # <a name="scriptdebuggeroptions-enumeration"></a>Enumeración SCRIPT_DEBUGGER_OPTIONS
-Indica un conjunto de opciones o capacidades que se aplican al depurador adjunto. Usar en [IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md) y [IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)  
+Indica un conjunto de opciones o capacidades que se aplican al depurador adjunto. Utilizado en [IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md) y [IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)  
   
 > [!IMPORTANT]
 >  Estas constantes se implementan mediante PDM v10.0 y versiones posteriores. Se encuentra en activdbg100.h.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 typedef SCRIPT_DEBUGGER_OPTIONS  
 ```  
   
@@ -38,8 +38,8 @@ typedef SCRIPT_DEBUGGER_OPTIONS
 |Miembro|Valor|Descripción|  
 |------------|-----------|-----------------|  
 |SDO_NONE|0x00000000|Se establece ninguna opción.|  
-|SDO_ENABLE_FIRST_CHANCE_EXCEPTIONS|0x00000001|Indica que el tiempo de ejecución de secuencia de comandos debe provocar eventos BREAKREASON_ERROR cuando se produce una excepción. Esta opción puede ser definida por el depurador o establecida mediante código de usuario a través de `Debug.enableFirstChanceExceptions(<true&#124;false>)`.|  
-|SDO_ENABLE_WEB_WORKER_SUPPORT|0x00000002|Indica que el depurador asociado es compatible con los trabajos web.|  
+|SDO_ENABLE_FIRST_CHANCE_EXCEPTIONS|0x00000001|Indica que el tiempo de ejecución del script debe provocar eventos BREAKREASON_ERROR cuando se produce una excepción. Esta opción se puede definida por el depurador o establecida por el código de usuario a través de `Debug.enableFirstChanceExceptions(<true&#124;false>)`.|  
+|SDO_ENABLE_WEB_WORKER_SUPPORT|0x00000002|Indica que el depurador asociado es compatible con trabajos web.|  
   
 ## <a name="see-also"></a>Vea también  
  [Active Script Debugger (Constantes, Enumeraciones y Estructuras)](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

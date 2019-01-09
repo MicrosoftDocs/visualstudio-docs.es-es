@@ -1,8 +1,6 @@
 ---
-title: Referencia (captura mediante programación) | Documentos de Microsoft
-ms.custom: ''
+title: Referencia (captura mediante programación) | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: ef60eb8d-1ac2-4e3a-9b4b-f6da0bdd9da8
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0046268ff073949db3e3fc0c0753c9008b262c6e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 826b399aa0ad0b5a45bc6fd80eb73b555cb3f01c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847193"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836364"
 ---
 # <a name="reference-programmatic-capture"></a>Referencia (captura mediante programación)
 Diagnóstico de gráficos admite el control mediante programación de sus características de captura a través de la API de captura mediante programación. Puede utilizar esta API para alternar y agregar mensajes al HUD (pantalla de visualización frontal) de diagnóstico de gráficos, inicializar y crear archivos de registro de gráficos, y capturar información de gráficos.  
@@ -24,7 +22,7 @@ Diagnóstico de gráficos admite el control mediante programación de sus caract
 
 ### <a name="classes"></a>Clases  
 
-|Name|Descripción|  
+|nombre|Descripción|  
 |----------|-----------------|  
 |[Case VsgDbg](vsgdbg-class.md)|Representa la interfaz a través de la que se controla mediante programación el componente de aplicación de diagnóstico de gráficos.|  
 
@@ -38,8 +36,7 @@ Diagnóstico de gráficos admite el control mediante programación de sus caract
 
 ## <a name="related-articles"></a>Artículos relacionados  
 
-| Título | Descripción |
+| Title | Descripción |
 | - | - |
 | [Capturing Graphics Information](capturing-graphics-information.md) | Muestra cómo capturar información de gráficos desde la aplicación basada en DirectX para que pueda utilizar las herramientas de Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] con el fin de diagnosticar problemas de representación. |
 | [Información general](overview-of-visual-studio-graphics-diagnostics.md) | Muestra cómo Diagnóstico de gráficos puede ayudarle a depurar errores de representación en juegos y aplicaciones de DirectX. |
-

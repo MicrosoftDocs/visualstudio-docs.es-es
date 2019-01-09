@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint::GetEventCount | Documentos de Microsoft
+title: ISimpleConnectionPoint::GetEventCount | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 523748112d99f000d2eb88a7a64c88b60d5ea44f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ce53089b3dc468043648378d80e54cc2d3188358
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734485"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089809"
 ---
 # <a name="isimpleconnectionpointgeteventcount"></a>ISimpleConnectionPoint::GetEventCount
 Devuelve el número de eventos que se exponen en esta interfaz.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetEventCount(  
    ULONG*  pulCount  
 );  

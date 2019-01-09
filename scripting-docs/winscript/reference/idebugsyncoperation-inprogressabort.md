@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1df0b0ca1d775d4d99e1da5f88a207bd4f78f99b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: cab8bae7f131d24c1a2c7272dc8d1178e12bf0e6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728265"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095529"
 ---
 # <a name="idebugsyncoperationinprogressabort"></a>IDebugSyncOperation::InProgressAbort
 Cancela una operación en curso en otro subproceso.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT InProgressAbort();  
 ```  
   

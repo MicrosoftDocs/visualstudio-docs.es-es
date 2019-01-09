@@ -1,5 +1,5 @@
 ---
-title: 'Iactivescriptsitetraceinfo:: Sendscripttraceinfo (método) | Documentos de Microsoft'
+title: Método Iactivescriptsitetraceinfo | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5290cc6a92be7c8bc99e4715c77bfe6f8f6abb53
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0f08a5cb0e7bd297dede85190ac694185e2fd795
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724845"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091629"
 ---
 # <a name="iactivescriptsitetraceinfosendscripttraceinfo-method"></a>IActiveScriptSiteTraceInfo::SendScriptTraceInfo (Método)
 Envía información de seguimiento que incluye el tipo de evento, el contexto y la instrucción de script.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT SendScriptTraceInfo(     [in] SCRIPTTRACEINFO stiEventType,     [in] GUID guidContextID,     [in] DWORD dwScriptContextCookie,     [in] LONG lScriptStatementStart,     [in] LONG lScriptStatementEnd,     [in] DWORD64 dwReserved );   
 ```  
   

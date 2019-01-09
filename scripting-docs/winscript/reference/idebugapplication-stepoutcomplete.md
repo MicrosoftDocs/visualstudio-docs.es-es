@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::StepOutComplete | Documentos de Microsoft
+title: IDebugApplication::StepOutComplete | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c344f0316bda6ed5ef895c1b88ae7b1a6465e73
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1798d347fff11a49b945519fd20c370eca75d590
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725645"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089926"
 ---
 # <a name="idebugapplicationstepoutcomplete"></a>IDebugApplication::StepOutComplete
 Notifica al administrador de depuración de proceso que un motor de lenguaje en modo paso a paso está a punto de volver a su llamador.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT StepOutComplete();  
 ```  
   
@@ -45,7 +45,7 @@ HRESULT StepOutComplete();
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Motores de idioma llamar a este método en modo paso a paso justo antes de que vuelvan a su llamador. El Administrador de depuración de procesos usa esta oportunidad para notificar a todos los otros motores de secuencias de comandos que deben interrumpir en la primera oportunidad. Esta técnica es que se implementan los modos de paso de cómo entre lenguajes.  
+ Motores de lenguaje llamar a este método en modo paso a paso antes de que se devuelven a su llamador. El Administrador de depuración de procesos utiliza esta oportunidad para notificar a todos los otros motores de script que deben interrumpir en la primera oportunidad. Esta técnica es paso entre lenguajes cómo se implementan los modos.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugApplication (Interfaz)](../../winscript/reference/idebugapplication-interface.md)

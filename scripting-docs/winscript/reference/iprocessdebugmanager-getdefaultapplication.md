@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27fc46e8a5e07c4eb25c5e246db138a27e5511ae
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6ae3b1bec5fc3aba6ad8e53343f929d133f05493
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729035"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091395"
 ---
 # <a name="iprocessdebugmanagergetdefaultapplication"></a>IProcessDebugManager::GetDefaultApplication
 Devuelve un objeto de aplicación predeterminado para el proceso actual.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetDefaultApplication(  
    IDebugApplication**  ppda  
 );  
@@ -50,7 +50,7 @@ HRESULT GetDefaultApplication(
 ## <a name="remarks"></a>Comentarios  
  Este método crea un nuevo objeto de aplicación de depuración y lo agrega a la que se ejecuta la lista de aplicaciones, si es necesario.  
   
- Motores de idioma deben usar la aplicación especificada por el `GetDefaultApplication` método si se están ejecutando en un host que no proporciona una aplicación.  
+ Motores de lenguaje deben usar la aplicación especificada por el `GetDefaultApplication` método si se están ejecutando en un host que no proporciona una aplicación.  
   
 ## <a name="see-also"></a>Vea también  
  [IProcessDebugManager (Interfaz)](../../winscript/reference/iprocessdebugmanager-interface.md)

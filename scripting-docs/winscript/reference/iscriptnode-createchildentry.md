@@ -18,19 +18,19 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8fcc010efe8fcf30a8f467dd94befff54bc5fac5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a8ca4ab504a9da2a63d5c70330d50e2c97e09817
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729695"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088236"
 ---
 # <a name="iscriptnode-createchildentry"></a>IScriptNode:: CreateChildEntry
-Agrega una instancia del elemento secundario de `IScriptEntry`.  
+Agrega una instancia secundaria de `IScriptEntry`.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT CreateChildEntry(  
    ULONG              isn,  
    DWORD              dwCookie,  
@@ -44,14 +44,14 @@ HRESULT CreateChildEntry(
  [in] El índice del elemento secundario en el elemento primario.  
   
  `dwCookie`  
- [in] Un valor definido por la aplicación usa para asociar la entrada secundaria con el objeto host.  
+ [in] Un valor definido por la aplicación usado para asociar la entrada secundaria con el objeto host.  
   
  `pszDelimiter`  
- [in] La dirección del delimitador final del bloque de script. Para el análisis, el host normalmente usa un delimitador (por ejemplo, dos comillas simples), para detectar el final del bloque de script.  
+ [in] La dirección del delimitador final del bloque de script. Para el análisis, el host normalmente utiliza un delimitador (por ejemplo, dos comillas simples), para detectar el final del bloque de script.  
   
- El delimitador permite que el script de creación motor para proporcionar el preprocesamiento. Por ejemplo, el motor podría reemplazar una comilla simple con dos comillas simples para su uso como un delimitador. El motor determina cómo se usa el delimitador.  
+ El delimitador permite que el motor para proporcionar el preprocesamiento de creación de script. Por ejemplo, el motor podría reemplazar una comilla simple con dos comillas simples para su uso como un delimitador. El motor determina cómo se usa el delimitador.  
   
- Se establece en NULL si un delimitador no marcar el final del bloque de script.  
+ Se establece en NULL si un delimitador no marca el final del bloque de script.  
   
  `ppse`  
  [out] La dirección de una variable que recibe un puntero a la `IScriptEntry` interfaz de la instancia secundaria.  
@@ -65,14 +65,14 @@ HRESULT CreateChildEntry(
  Para `IScriptScriptlet` objetos, este método produce un error.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- El `IScriptNode` interfaz representa una página Web o sus elementos. El `IScriptEntry` interfaz (que se deriva de `IScriptNode`) representa un bloque de script o un objeto de función. El `IScriptScriptlet` interfaz (que se deriva de `IScriptEntry`) representa un controlador de eventos.  
+ El `IScriptNode` interfaz representa una página Web o sus elementos. El `IScriptEntry` interfaz (que se deriva `IScriptNode`) representa un bloque de script o un objeto de función. El `IScriptScriptlet` interfaz (que se deriva `IScriptEntry`) representa un controlador de eventos.  
   
 ## <a name="see-also"></a>Vea también  
  [IScriptNode (interfaz)](../../winscript/reference/iscriptnode-interface.md)   

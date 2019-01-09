@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e33bf254d2e688451f1b69a3b3eb1b676a9e9b1a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a485a7195f64754bc28d0c1905d30d6f22747c31
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724765"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090121"
 ---
 # <a name="iactivescriptsitedebuggetapplication"></a>IActiveScriptSiteDebug::GetApplication
 Devuelve el objeto de aplicación de depuración asociado a este sitio de la secuencia de comandos.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetApplication(  
    IDebugApplication**  ppda  
 );  
@@ -38,7 +38,7 @@ HRESULT GetApplication(
   
 #### <a name="parameters"></a>Parámetros  
  `ppda`  
- [out] Puntero al objeto de aplicación de depuración asociados al sitio de la secuencia de comandos.  
+ [out] Puntero al objeto de aplicación de depuración asociado con el sitio de la secuencia de comandos.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -49,7 +49,7 @@ HRESULT GetApplication(
 |`E_NOTIMPL`|El host no admite directamente la depuración.|  
   
 ## <a name="remarks"></a>Comentarios  
- El `GetApplication` método proporciona una manera para que un host inteligente definir el objeto de aplicación a la que pertenece cada secuencia de comandos. Motores de scripts deben intentar llamar a este método para obtener su aplicación contenedora y recurrir a `IProcessDebugManager::GetDefaultApplication` si se produce un error.  
+ El `GetApplication` método proporciona una forma de un host inteligente definir el objeto de aplicación a la que pertenece cada secuencia de comandos. Motores de script deben intentar llamar a este método para obtener su aplicación contenedora y recurrir a `IProcessDebugManager::GetDefaultApplication` si se produce un error.  
   
 ## <a name="see-also"></a>Vea también  
  [IActiveScriptSiteDebug (interfaz)](../../winscript/reference/iactivescriptsitedebug-interface.md)   

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 35e791661de6d360f747f8d823ad073c2eb81115
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0d00c438f0fe03566dfb7efb93645cad02dc7477
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725235"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095399"
 ---
 # <a name="iactivescriptstatsgetstat"></a>IActiveScriptStats::GetStat
 Devuelve una de las estadísticas de la secuencia de comandos estándar.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetStat(  
    DWORD   stid,  
    ULONG*  pluHi,  
@@ -47,10 +47,10 @@ HRESULT GetStat(
 |SCRIPTSTAT_STATEMENT_COUNT|1|Devuelve el número de instrucciones ejecutadas desde que se inició la secuencia de comandos o se restablecieron las estadísticas.|  
   
  `pluHi`  
- [out] Los 32 bits superiores de un entero de 64 bits sin signo que representa la estadística.  
+ [out] 32 bits superiores de un entero de 64 bits sin signo que representa la estadística.  
   
  `pluLo`  
- [out] Los 32 bits inferiores de un entero de 64 bits sin signo que representa la estadística.  
+ [out] 32 bits inferiores de un entero de 64 bits sin signo que representa la estadística.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Los valores posibles incluyen, pero no se limitan a los valores en la tabla siguiente.  

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3257ac5632a2f3d713b6329a9a1eeebc4415851
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 268a54ccdcbd70ed159758720db0735f16d81492
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724905"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097401"
 ---
 # <a name="iactivescriptsitewindowgetwindow"></a>IActiveScriptSiteWindow::GetWindow
-Recupera el identificador a una ventana que puede actuar como el propietario de una ventana emergente que debe mostrar el motor de scripting.  
+Recupera el identificador de una ventana que puede actuar como el propietario de una ventana emergente que se debe mostrar el motor de scripting.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetWindow(  
     HWND *phwnd  // address of variable for window handle  
 );  

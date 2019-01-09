@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b872e63169f6c2d70cd3476324b3d0071718350
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 14c7acc9070edb0e63dee8c71cb0b16c5f85e4cd
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726915"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095620"
 ---
 # <a name="idebugstackframegetcodecontext"></a>IDebugStackFrame::GetCodeContext
-Devuelve el contexto actual de código asociado con el marco de pila.  
+Devuelve el contexto de código actual asociado con el marco de pila.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetCodeContext(  
    IDebugCodeContext**  ppcc  
 );  
@@ -48,7 +48,7 @@ HRESULT GetCodeContext(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método devuelve el contexto actual de código asociado con el marco de pila.  
+ Este método devuelve el contexto de código actual asociado con el marco de pila.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugStackFrame (Interfaz)](../../winscript/reference/idebugstackframe-interface.md)

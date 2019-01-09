@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnDisconnectDebugger | Documentos de Microsoft
+title: IRemoteDebugApplicationEvents::OnDisconnectDebugger | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 014da34fb9f7c6f3841d44a354320ff55bacc316
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 54d2f87e0dc53e5b7873cf78cf5b4204de94eb92
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728515"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094644"
 ---
 # <a name="iremotedebugapplicationeventsondisconnectdebugger"></a>IRemoteDebugApplicationEvents::OnDisconnectDebugger
-Evento de desconexión controla un depurador.  
+Controla un depurador desconecta eventos.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT OnDisconnectDebugger();  
 ```  
   
@@ -45,7 +45,7 @@ HRESULT OnDisconnectDebugger();
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método controla el depurador suceso de desconexión.  
+ Este método controla el depurador desconectar eventos.  
   
 ## <a name="see-also"></a>Vea también  
  [IRemoteDebugApplicationEvents (Interfaz)](../../winscript/reference/iremotedebugapplicationevents-interface.md)

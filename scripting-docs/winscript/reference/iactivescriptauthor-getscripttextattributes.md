@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6aa96623b4356f0a3d17c8b2631840953dac2d51
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 57513e51248e26e39f95871e0dad329e8cc2f82c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645525"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094710"
 ---
 # <a name="iactivescriptauthorgetscripttextattributes"></a>IActiveScriptAuthor::GetScriptTextAttributes
 Devuelve los atributos de texto de un bloque de script.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetScriptTextAttributes(  
     LPCOLESTR        pszCode,  
     ULONG            cch,  
@@ -42,28 +42,28 @@ HRESULT GetScriptTextAttributes(
   
 #### <a name="parameters"></a>Parámetros  
  `pszCode`  
- [in, size_is (`cch`)] el texto del bloque de script. Esta cadena no tiene como terminadas en null.  
+ [in, size_is (`cch`)] el texto del bloque de script. Esta cadena no tiene que estar terminado en null.  
   
  `cch`  
  [in] El tamaño usado para la `pszCode` y `pattr` parámetros.  
   
  `pszDelimiter`  
- [in] La dirección del delimitador de fin de secuencia de comandos. Cuando `pszCode` se analiza desde una secuencia de texto, el host normalmente usa un delimitador (por ejemplo, dos comillas simples), para detectar el final de la scriptlet. Establezca este parámetro en NULL si no hay ningún delimitador para identificar el final del bloque de script.  
+ [in] La dirección del delimitador de fin de secuencia de comandos. Cuando `pszCode` se analiza desde una secuencia de texto, el host normalmente utiliza un delimitador (por ejemplo, dos comillas simples), para detectar el final del scriptlet. Establezca este parámetro en NULL si no hay ningún delimitador para identificar el final del bloque de script.  
   
  `dwFlags`  
- [in] Los marcadores que están asociados con los atributos de texto del bloque de script. Puede ser una combinación de los siguientes valores:  
+ [in] Marcas que están asociadas con los atributos de texto del bloque de script. Puede ser una combinación de los siguientes valores:  
   
 |Constante|Valor|Descripción|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0 x 0001|Identificar identificadores que tienen el atributo SOURCETEXT_ATTR_IDENTIFIER e identificar los operadores de punto que tienen el atributo SOURCETEXT_ATTR_MEMBERLOOKUP.|  
+|GETATTRTYPE_DEPSCAN|0 x 0001|Identificar los identificadores que tienen el atributo SOURCETEXT_ATTR_IDENTIFIER e identificar los operadores de puntos que tienen el atributo SOURCETEXT_ATTR_MEMBERLOOKUP.|  
 |GETATTRFLAG_THIS|0 x 0100|Identificar el objeto actual que tiene el atributo SOURCETEXT_ATTR_THIS.|  
-|GETATTRFLAG_HUMANTEXT|0 x 8000|Identificar el texto de contenido y un comentario de cadena que tiene el atributo SOURCETEXT_ATTR_HUMANTEXT.|  
+|GETATTRFLAG_HUMANTEXT|0 x 8000|Identificar el texto de comentario y el contenido de cadena que tiene el atributo SOURCETEXT_ATTR_HUMANTEXT.|  
   
  `pattr`  
- [entrada, salida, size_is (`cch`)] la información de color para el código del bloque de script.  
+ [in, out, size_is (`cch`)] la información de color para el código del bloque de script.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce34fa73f97b92d08193c697e991c9e922ac17ee
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 481beb69d2c4729bb2a030d257e802598131ea00
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729785"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088886"
 ---
 # <a name="iremotedebugapplicationthreadgetstate"></a>IRemoteDebugApplicationThread::GetState
 Obtiene el estado de este subproceso.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetState(  
    DWORD*  pState  
 );  

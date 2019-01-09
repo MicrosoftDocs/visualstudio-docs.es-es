@@ -18,19 +18,19 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f3acc7d61d63ce4fb4fe53729ce43324b9718a8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 64f62acd02e0901af341a571fb09ba81f3a11f28
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645605"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088834"
 ---
 # <a name="iactivescriptauthorremovenameditem"></a>IActiveScriptAuthor::RemoveNamedItem
-Quita un `NamedItem` objetos del espacio de nombres del motor de creación de script.  
+Quita un `NamedItem` objeto del espacio de nombres del motor de creación de script.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT RemoveNamedItem(  
    LPCOLESTR          pszName  
 );  
@@ -41,7 +41,7 @@ HRESULT RemoveNamedItem(
  [in] La dirección del búfer que identifica el `NamedItem` objeto que se va a quitar.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
@@ -49,7 +49,7 @@ HRESULT RemoveNamedItem(
 |`S_FALSE`|La `NamedItem` objeto no está presente en el espacio de nombres del motor de creación de script.|  
   
 ## <a name="remarks"></a>Comentarios  
- [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) se utiliza para insertar la `NamedItem` objeto en el espacio de nombres del motor de creación de script.  
+ [IActiveScript:: Addnameditem](../../winscript/reference/iactivescript-addnameditem.md) se usa para inyectar el `NamedItem` objeto en el espacio de nombres del motor de creación de script.  
   
 ## <a name="see-also"></a>Vea también  
  [IActiveScriptAuthor (interfaz)](../../winscript/reference/iactivescriptauthor-interface.md)   

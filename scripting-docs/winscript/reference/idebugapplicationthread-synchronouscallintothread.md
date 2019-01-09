@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fdeb57380975f19424f8b7da783846b5aae976ed
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e5e25f42b2bce66cf3bb7ab3e69d3711e2526ae1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726465"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097063"
 ---
 # <a name="idebugapplicationthreadsynchronouscallintothread"></a>IDebugApplicationThread::SynchronousCallIntoThread
 Proporciona un mecanismo para que el llamador ejecutar código en el subproceso de la aplicación.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT SynchronousCallIntoThread(  
    IDebugThreadCall*  pstcb,  
    DWORD_PTR          dwParam1,  
@@ -41,10 +41,10 @@ HRESULT SynchronousCallIntoThread(
   
 #### <a name="parameters"></a>Parámetros  
  `pstcb`  
- [in] Objeto que se va a llamar.  
+ [in] El objeto va a llamar.  
   
  `dwParam1`  
- [in] El primer parámetro para pasar a la `IDebugThreadCall::ThreadCallHandler` método.  
+ [in] Primer parámetro para pasar a la `IDebugThreadCall::ThreadCallHandler` método.  
   
  `dwParam2`  
  [in] Segundo parámetro para pasar a la `IDebugThreadCall::ThreadCallHandler` método.  
@@ -60,7 +60,7 @@ HRESULT SynchronousCallIntoThread(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método proporciona un mecanismo para que el llamador ejecutar código en el subproceso del depurador. Los hosts y motores de idioma suelen usar este método para implementar objetos de subprocesamiento libre encima de sus implementaciones de subprocesos únicos.  
+ Este método proporciona un mecanismo para que el llamador ejecutar código en el subproceso del depurador. Hosts y motores de lenguaje normalmente utilizan este método para implementar objetos de subprocesamiento libre encima de sus implementaciones de subprocesos únicos.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugApplicationThread (interfaz)](../../winscript/reference/idebugapplicationthread-interface.md)   

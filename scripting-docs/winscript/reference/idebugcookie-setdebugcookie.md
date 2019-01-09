@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1155b00750cfe2a91625ba0f531622f381467198
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d67ea7f4cc8a27364226a613c77d837f476c2530
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725825"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095048"
 ---
 # <a name="idebugcookiesetdebugcookie"></a>IDebugCookie::SetDebugCookie
-Establece la cookie de aplicación de depuración.  
+Establece la cookie de la aplicación de depuración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT SetDebugCookie(  
    DWORD  dwDebugAppCookie  
 );  
@@ -38,7 +38,7 @@ HRESULT SetDebugCookie(
   
 #### <a name="parameters"></a>Parámetros  
  `dwDebugAppCookie`  
- [in] Cookie que identifica la aplicación de depuración.  
+ [in] Una cookie que identifica la aplicación de depuración.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  

@@ -1,5 +1,5 @@
 ---
-title: IJsDebugDataTarget (interfaz) | Documentos de Microsoft
+title: IJsDebugDataTarget (interfaz) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 94e158ced0da6d59bfcadeb87bf206c94a6099ad
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e14046443ca0560deacb6ddb6e39b1fc25d18fea
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729285"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097427"
 ---
 # <a name="ijsdebugdatatarget-interface"></a>IJsDebugDataTarget (Interfaz)
-Implementa el depurador para proporcionar la funcionalidad necesaria para tener acceso y cambiar el estado del proceso del depurador de destino.  
+Implementado por el depurador para proporcionar funcionalidad para obtener acceso y cambiar el estado del proceso del depurador de destino.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 IJsDebugDataTarget : public IUnknown;  
 ```  
   
@@ -32,14 +32,14 @@ IJsDebugDataTarget : public IUnknown;
   
 ### <a name="public-methods"></a>Métodos públicos  
   
-|Nombre|Descripción|  
+|Name|Descripción|  
 |----------|-----------------|  
-|[IJsDebugDataTarget::AllocateVirtualMemory (Método)](../../winscript/reference/ijsdebugdatatarget-allocatevirtualmemory-method.md)|Reserva o confirma una región de memoria en el espacio de direcciones virtuales del proceso de destino.|  
-|[IJsDebugDataTarget::CreateStackFrameEnumerator (Método)](../../winscript/reference/ijsdebugdatatarget-createstackframeenumerator-method.md)|Crea un enumerador para los marcos de pila.|  
-|[IJsDebugDataTarget::FreeVirtualMemory (Método)](../../winscript/reference/ijsdebugdatatarget-freevirtualmemory-method.md)|Libera o anula el registro de una región de memoria en el espacio de direcciones virtuales del proceso de destino.|  
-|[IJsDebugDataTarget::GetThreadContext (Método)](../../winscript/reference/ijsdebugdatatarget-getthreadcontext-method.md)|Contexto de recupera para tiene subprocesos.|  
-|[IJsDebugDataTarget::GetTlsValue (Método)](../../winscript/reference/ijsdebugdatatarget-gettlsvalue-method.md)|Para el subproceso que se está depurando, recupera el valor de la ranura de almacenamiento local (TLS) del subproceso para el índice especificado de TLS.|  
-|[IJsDebugDataTarget::ReadBSTR (Método)](../../winscript/reference/ijsdebugdatatarget-readbstr-method.md)|Lee una cadena BSTR desde el destino de depuración.|  
+|[IJsDebugDataTarget::AllocateVirtualMemory (Método)](../../winscript/reference/ijsdebugdatatarget-allocatevirtualmemory-method.md)|Reserva y/o confirma una región de memoria en el espacio de direcciones virtuales del proceso de destino.|  
+|[IJsDebugDataTarget::CreateStackFrameEnumerator (Método)](../../winscript/reference/ijsdebugdatatarget-createstackframeenumerator-method.md)|Crea un enumerador para marcos de pila.|  
+|[IJsDebugDataTarget::FreeVirtualMemory (Método)](../../winscript/reference/ijsdebugdatatarget-freevirtualmemory-method.md)|Libera y/o anula una región de memoria en el espacio de direcciones virtuales del proceso de destino.|  
+|[IJsDebugDataTarget::GetThreadContext (Método)](../../winscript/reference/ijsdebugdatatarget-getthreadcontext-method.md)|Recupera contexto para el subproceso especificado.|  
+|[IJsDebugDataTarget::GetTlsValue (Método)](../../winscript/reference/ijsdebugdatatarget-gettlsvalue-method.md)|Para el subproceso que se está depurando, recupera el valor en la ranura de subproceso (TLS) de almacenamiento local para el índice especificado de TLS.|  
+|[IJsDebugDataTarget::ReadBSTR (Método)](../../winscript/reference/ijsdebugdatatarget-readbstr-method.md)|Lee BSTR del destino de depuración.|  
 |[IJsDebugDataTarget::ReadMemory (Método)](../../winscript/reference/ijsdebugdatatarget-readmemory-method.md)|Lee la memoria del proceso de destino.|  
 |[IJsDebugDataTarget::ReadNullTerminatedString (Método)](../../winscript/reference/ijsdebugdatatarget-readnullterminatedstring-method.md)|Lee el número especificado de caracteres desde el destino.|  
 |[IJsDebugDataTarget::WriteMemory (Método)](../../winscript/reference/ijsdebugdatatarget-writememory-method.md)|Lee la memoria del proceso de destino.|  

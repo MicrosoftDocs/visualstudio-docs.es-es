@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetCurrentScriptThreadID | Documentos de Microsoft
+title: IActiveScript::GetCurrentScriptThreadID | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5921dc4d0f9a9bf0d505fece0f47354cb16d440c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bac3b5755328e643c26c8f3746af6648d8ac06aa
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640795"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094643"
 ---
 # <a name="iactivescriptgetcurrentscriptthreadid"></a>IActiveScript::GetCurrentScriptThreadID
-Recupera un identificador de scripting motor-definido por el subproceso actualmente en ejecución. El identificador se puede utilizar en llamadas posteriores a métodos de control de la ejecución de subprocesos de script como el [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) método.  
+Recupera un identificador de scripting motor-definidas para el subproceso actualmente en ejecución. El identificador puede usarse en posteriores llamadas a métodos de control de la ejecución del subproceso de script, como el [IActiveScript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md) método.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetCurrentScriptThreadID(  
     SCRIPTTHREADID *pstidThread  // receives scripting thread identifier  
 );  
@@ -38,13 +38,13 @@ HRESULT GetCurrentScriptThreadID(
   
 #### <a name="parameters"></a>Parámetros  
  `pstidThread`  
- [out] Dirección de una variable que recibe el identificador de subproceso de secuencia de comandos asociado al subproceso actual. La interpretación de este identificador se deja al motor de scripting, pero puede ser simplemente una copia del identificador de subproceso de Windows. Si finaliza el subproceso de Win32, este identificador se convierte en sin asignar y posteriormente se puede asignar a otro subproceso.  
+ [out] Dirección de una variable que recibe el identificador de subproceso de la secuencia de comandos asociado al subproceso actual. La interpretación de este identificador se deja al motor de scripting, pero puede ser simplemente una copia del identificador de subproceso de Windows. Si finaliza el subproceso de Win32, este identificador se convierte en sin asignar y posteriormente se puede asignar a otro subproceso.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve `S_OK` si se realiza correctamente, o `E_POINTER` si se especificó un puntero no válido.  
+ Devuelve `S_OK` si se realiza correctamente, o `E_POINTER` si se ha especificado un puntero no válido.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método se pueda llamar desde subprocesos no sea de base sin resultante en una llamada no sea de base a los objetos de host o a la [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) interfaz.  
+ Este método se pueda llamar desde subprocesos no son de base sin resultante en una llamada que no sea de base a los objetos de host o a la [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) interfaz.  
   
 ## <a name="see-also"></a>Vea también  
  [IActiveScript](../../winscript/reference/iactivescript.md)

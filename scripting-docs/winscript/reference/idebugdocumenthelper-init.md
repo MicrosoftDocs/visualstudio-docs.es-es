@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::Init | Documentos de Microsoft
+title: Idebugdocumenthelper | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 45cd57e4ba9e86bf84f927f487c637d61aa5339b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d4bcb64b7bbb1c61e7f031d872f7d1440fd17833
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726325"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086637"
 ---
 # <a name="idebugdocumenthelperinit"></a>IDebugDocumentHelper::Init
 El `Init` método inicializa una aplicación auxiliar de documento de depuración con un nombre y atributos iniciales.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT Init(  
    IDebugApplication*  pda,  
    LPCOLESTR           pszShortName,  
@@ -41,7 +41,7 @@ HRESULT Init(
   
 #### <a name="parameters"></a>Parámetros  
  `pda`  
- [in] La aplicación de depuración asociada a este documento.  
+ [in] La aplicación de depuración asociada con este documento.  
   
  `pszShortName`  
  [in] Una cadena terminada en null que contiene el nombre corto del documento.  
@@ -60,11 +60,11 @@ HRESULT Init(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método inicializa un Ayudante de documento de depuración con un nombre y atributos iniciales.  
+ Este método inicializa una aplicación auxiliar de documento de depuración con un nombre y atributos iniciales.  
   
  Este documento no aparece en el árbol hasta `IDebugDocumentHelper::Attach` se llama.  
   
 ## <a name="see-also"></a>Vea también  
- [IDebugDocumentHelper::Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
+ [Idebugdocumenthelper](../../winscript/reference/idebugdocumenthelper-attach.md)   
  [IDebugDocumentHelper (interfaz)](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [TEXT_DOC_ATTR (Constantes)](../../winscript/reference/text-doc-attr-constants.md)

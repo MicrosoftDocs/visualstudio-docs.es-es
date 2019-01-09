@@ -18,19 +18,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ffb5ff1d23c832f5710abf6d97199afe3f777b67
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7570abb8436a49fb80f548d1a7136bf0fe7e0814
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728585"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091460"
 ---
 # <a name="iremotedebugapplicationexgethostpid"></a>IRemoteDebugApplicationEx:GetHostPid
-Devuelve el identificador de proceso de la aplicación host.  
+Devuelve el identificador de proceso para la aplicación host.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetHostPid(  
    DWORD*  dwHostPid  
 );  
@@ -38,7 +38,7 @@ HRESULT GetHostPid(
   
 #### <a name="parameters"></a>Parámetros  
  `dwHostPid`  
- [out] El identificador del proceso host.  
+ [out] El identificador de proceso de host.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  

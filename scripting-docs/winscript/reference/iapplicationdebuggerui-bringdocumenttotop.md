@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebuggerUI::BringDocumentToTop | Documentos de Microsoft
+title: IApplicationDebuggerUI::BringDocumentToTop | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57b76f44eeeaad1946d40435c770b0687b82fd17
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5c77c87011c539e02f92aa2aedfdcd7659466d37
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725315"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096257"
 ---
 # <a name="iapplicationdebuggeruibringdocumenttotop"></a>IApplicationDebuggerUI::BringDocumentToTop
-Abre la ventana que contiene el documento de depuración especificado a la parte superior en el depurador de interfaz de usuario.  
+Ofrece interfaz de usuario de la ventana que contiene el documento de depuración especificado en la parte superior en el depurador.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT BringDocumentToTop(  
    IDebugDocumentText*  pddt  
 );  
@@ -38,7 +38,7 @@ HRESULT BringDocumentToTop(
   
 #### <a name="parameters"></a>Parámetros  
  `pddt`  
- [in] Depurar el documento que se va a poner en la parte superior de la interfaz de usuario del depurador.  
+ [in] Depurar el documento para dar a la parte superior de la interfaz de usuario del depurador.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -49,7 +49,7 @@ HRESULT BringDocumentToTop(
 |`E_INVALIDARG`|No se conoce el documento.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método pone la ventana que contiene el documento de depuración especificado a la parte superior en el depurador de interfaz de usuario.  
+ Este método muestra la ventana que contiene el documento de depuración especificado en la parte superior en el depurador de interfaz de usuario.  
   
 ## <a name="see-also"></a>Vea también  
  [IApplicationDebuggerUI (Interfaz)](../../winscript/reference/iapplicationdebuggerui-interface.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cdc77aa2ef2f9d7c95b0b82d5195a6a73524f055
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1f6479485a508f71797d6965f71edd3253927088
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729375"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097232"
 ---
 # <a name="idebugstackframegetdescriptionstring"></a>IDebugStackFrame::GetDescriptionString
-Devuelve una descripción a corta o largo textual del marco de pila.  
+Devuelve una descripción de texto largos o corta del marco de pila.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetDescriptionString(  
    BOOL   fLong,  
    BSTR*  pbstrDescription  
@@ -52,7 +52,7 @@ HRESULT GetDescriptionString(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Por lo general, si `fLong` es `FALSE`, este método proporciona solo el nombre de la función asociada con el marco de pila. Cuando `fLong` es `TRUE`, este método también puede proporcionar los parámetros de función y otra información relevante.  
+ Normalmente, si `fLong` es `FALSE`, este método proporciona solo el nombre de la función asociada con el marco de pila. Cuando `fLong` es `TRUE`, este método también puede proporcionar los parámetros de función y otra información relevante.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugStackFrame (Interfaz)](../../winscript/reference/idebugstackframe-interface.md)

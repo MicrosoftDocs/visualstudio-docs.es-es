@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback2::OnFunctionEnterByName | Documentos de Microsoft
+title: IActiveScriptProfilerCallback2::OnFunctionEnterByName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,19 +14,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ea74d9e9e00485c86d26bb01c486992f85ffeb8f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 40c527881c45a935344aa5444d7397ccdb6d99e4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724495"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092500"
 ---
 # <a name="iactivescriptprofilercallback2onfunctionenterbyname"></a>IActiveScriptProfilerCallback2::OnFunctionEnterByName
-Notifica al objeto de generador de perfiles que el motor de scripting se va a ejecutar una llamada de función de Document Object Model (DOM).  
+Notifica al objeto de generador de perfiles que el motor de scripting que se va a ejecutar una llamada de función de Document Object Model (DOM).  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT OnFunctionEnterByName(  
     [in] [string] const WCHAR *pwszFunctionName,  
     [in] PROFILER_SCRIPT_TYPE scriptType);  
@@ -34,16 +34,16 @@ HRESULT OnFunctionEnterByName(
   
 #### <a name="parameters"></a>Parámetros  
  `pwszFunctionName`  
- [in] El nombre de la función que el motor de scripting se va a ejecutar.  
+ [in] El nombre de la función que se va a ejecutar el motor de scripting.  
   
  `scriptType`  
- [in] El tipo de la función. Para obtener descripciones de los valores válidos, consulte [PROFILER_SCRIPT_TYPE (enumeración)](../../winscript/reference/profiler-script-type-enumeration.md).  
+ [in] El tipo de la función. Para obtener descripciones de los valores válidos, vea [PROFILER_SCRIPT_TYPE (enumeración)](../../winscript/reference/profiler-script-type-enumeration.md).  
   
 ## <a name="return-value"></a>Valor devuelto  
  Se omite el valor devuelto de este método por el motor de scripting.  
   
 ## <a name="remarks"></a>Comentarios  
- Para las llamadas de DOM, el motor de scripting llama a este método en lugar de llamar [IActiveScriptProfilerCallback::OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md). Esto es debido al elevado número de únicos métodos y propiedades en el DOM.  
+ Para las llamadas de DOM, el motor de scripting, llama a este método en lugar de llamar [IActiveScriptProfilerCallback::OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md). Esto es debido al gran número de métodos únicos y propiedades en el DOM.  
   
 ## <a name="see-also"></a>Vea también  
  [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)   

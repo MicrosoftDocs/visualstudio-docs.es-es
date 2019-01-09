@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c754ce92a342163acc07b69c097af5df4c226cf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 20abe2c10a0959f00e67d98ac405b74c35a0c032
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729015"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093282"
 ---
 # <a name="iremotedebugapplicationthreadenumstackframes"></a>IRemoteDebugApplicationThread::EnumStackFrames
 Devuelve un enumerador para los marcos de pila asociada a este subproceso.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT EnumStackFrames(  
    IEnumDebugStackFrames**  ppedsf  
 );  
@@ -48,7 +48,7 @@ HRESULT EnumStackFrames(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método se debe invocar desde dentro de un punto de interrupción. El enumerador de marco de pila debe devolver los fotogramas desde la parte superior de la pila, empezando por el marco insertado más recientemente.  
+ Este método debe llamarse desde dentro de un punto de interrupción. El enumerador del marco de pila debe devolver los marcos desde la parte superior de la pila, empezando por el marco insertado más recientemente.  
   
 ## <a name="see-also"></a>Vea también  
  [IRemoteDebugApplicationThread (Interfaz)](../../winscript/reference/iremotedebugapplicationthread-interface.md)

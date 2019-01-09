@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc518e87414d051e9b1393b60b5874a0204b78b2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c388340c35afe2ae7e5e7d0f5078e70b46c0b1bc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729555"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090888"
 ---
 # <a name="iscriptentrygetname"></a>IScriptEntry::GetName
 Para las entradas que representan un único objeto (por ejemplo, una función), devuelve el nombre del objeto.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetName(  
    BSTR               *pbstr  
 );  
@@ -40,10 +40,10 @@ HRESULT GetName(
  `pbstr`  
  [out] El nombre del objeto representado por la `IScriptEntry` bloque de script. Si una entrada no representa un único objeto, se devuelve NULL.  
   
- Las entradas secundarias representan un objeto de función única.  
+ Entradas secundarias representan un objeto de función única.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  

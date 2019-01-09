@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::QueryIsComplete | Documentos de Microsoft
+title: IDebugExpression::QueryIsComplete | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c1d72b2a2d41b748954f2e4b2b4aa9f0011ca670
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0b4fa4b027f0ee8d848f52c063cbfd1f7679d4a6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726735"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087157"
 ---
 # <a name="idebugexpressionqueryiscomplete"></a>IDebugExpression::QueryIsComplete
-Determina si la operación se completa.  
+Determina si la operación completada.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT QueryIsComplete();  
 ```  
   
@@ -42,11 +42,11 @@ HRESULT QueryIsComplete();
   
 |Valor|Descripción|  
 |-----------|-----------------|  
-|`S_OK`|El método se realizó correctamente y la operación se completa.|  
+|`S_OK`|El método se realizó correctamente y la operación ha finalizado.|  
 |`S_FALSE`|La operación todavía está pendiente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método determina si la operación está terminada.  
+ Este método determina si la operación completada.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugExpression (Interfaz)](../../winscript/reference/idebugexpression-interface.md)

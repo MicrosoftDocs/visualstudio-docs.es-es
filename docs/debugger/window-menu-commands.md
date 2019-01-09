@@ -1,8 +1,6 @@
 ---
-title: Comandos del menú Ventana | Documentos de Microsoft
-ms.custom: ''
+title: Comandos del menú Ventana | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Window menu commands
@@ -12,33 +10,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1379bb236b1b29cd5747e67e73abcb1bc069acb0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 5e90d6dc7074ad6d70be783326e7617d0fd7e337
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481962"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895654"
 ---
 # <a name="window-menu-commands"></a>Comandos del menú Ventana
 El **ventana** menú proporciona comandos para administrar ventanas de Spy ++.  
   
- **En cascada**  
+ **Cascade**  
  Reorganiza todas las ventanas en cascada.  
   
- **Mosaico horizontal**  
- Reorganiza todas las ventanas en un modelo de mosaico horizontal.  
+ Mosaico horizontal  
+ Reorganice todas las ventanas en un patrón de mosaico horizontal.  
   
- **Mosaico vertical**  
- Reorganiza todas las ventanas en un modelo de mosaico vertical.  
+ Mosaico vertical  
+ Reorganiza todas las ventanas en un patrón de mosaico vertical.  
   
- **Organizar los iconos**  
- Reorganiza los iconos de la vista, si se han minimizado windows.  
+ &Organizar iconos  
+ Reorganiza los iconos de la vista, si windows se han minimizado.  
   
- **Cerrar, cerrar todo**  
+ **Cerrar Cerrar todo**  
  Cierra una o todas las ventanas de Spy ++.  
   
  **Actualizar**  
  Actualiza la vista seleccionada actualmente.  
   
  **Ventana**  
- Permite la selección de una ventana concreta.
+ Permite la selección de una ventana específica.

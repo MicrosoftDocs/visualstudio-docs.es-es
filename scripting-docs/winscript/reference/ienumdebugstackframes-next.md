@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugStackFrames::Next | Documentos de Microsoft
+title: IEnumDebugStackFrames::Next | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3e148b5e13bc3d7986451ece11a3a2eada5baa28
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1366a33a9b6ea4bcfe9e0bb61cf8c61500853e7c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728465"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092033"
 ---
 # <a name="ienumdebugstackframesnext"></a>IEnumDebugStackFrames::Next
 Recupera un número especificado de segmentos de la secuencia de enumeración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT Next(  
    ULONG                       celt,  
    DebugStackFrameDescriptor*  prgdsfd,  
@@ -40,13 +40,13 @@ HRESULT Next(
   
 #### <a name="parameters"></a>Parámetros  
  `celt`  
- [in] El número de segmentos para recuperar.  
+ [in] El número de segmentos se van a recuperar.  
   
  `prgdsfd`  
  [out] Devuelve una matriz de `DebugStackFrameDescriptor` interfaces que representa los segmentos que se va a recuperar.  
   
  `pceltFetched`  
- [out] El número real de segmentos capturados por el enumerador.  
+ [out] El número real de capturado por el enumerador de segmentos.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  

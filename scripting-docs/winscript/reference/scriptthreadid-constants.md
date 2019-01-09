@@ -1,5 +1,5 @@
 ---
-title: Constantes SCRIPTTHREADID | Documentos de Microsoft
+title: SCRIPTTHREADID (constantes) | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc692716115ea0c205b1cfd982b189fffd54a9ac
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 27852f97cf0a78919b10043c64b1c5a7cc7d3ec5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734195"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097817"
 ---
 # <a name="scriptthreadid-constants"></a>Constantes SCRIPTTHREADID
-Se utiliza para especificar el tipo de subproceso.  
+Se usa para especificar el tipo de subproceso.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 typedef DWORD SCRIPTTHREADID;  
 ```  
   
@@ -43,7 +43,7 @@ typedef DWORD SCRIPTTHREADID;
 |SCRIPTTHREADID_ALL|0xFFFFFFFF|Todos los subprocesos.|  
   
 ## <a name="remarks"></a>Comentarios  
- El `SCRIPTTHREADID` tipo lo utilizan `IActiveScript::GetCurrentScriptThreadID`, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState`, y `IActiveScript::InterruptScriptThread`, pero solo se pueden usar las constantes por `IActiveScript::GetScriptThreadState` y `IActiveScript::InterruptScriptThread`.  
+ El `SCRIPTTHREADID` tipo lo utilizan los `IActiveScript::GetCurrentScriptThreadID`, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState`, y `IActiveScript::InterruptScriptThread`, pero solo se pueden usar las constantes por `IActiveScript::GetScriptThreadState` y `IActiveScript::InterruptScriptThread`.  
   
 ## <a name="see-also"></a>Vea también  
  [IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)   

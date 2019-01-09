@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::GetDeferredText | Documentos de Microsoft
+title: 'Idebugdocumenthost:: Getdeferredtext | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ace3bdbfef143a3307d81455788a1e81788cb50b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1f2a39122454ea170177aee9ce7b2bbeb7ea248e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727125"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092565"
 ---
 # <a name="idebugdocumenthostgetdeferredtext"></a>IDebugDocumentHost::GetDeferredText
-Devuelve un intervalo de caracteres que se han agregado mediante el `IDebugDocumentHelper::AddDeferredText` método, en el documento de host original.  
+Devuelve un rango de caracteres que se han agregado mediante el `IDebugDocumentHelper::AddDeferredText` método, en el documento de host original.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetDeferredText(  
    DWORD              dwTextStartCookie,  
    WCHAR*             pcharText,  
@@ -42,16 +42,16 @@ HRESULT GetDeferredText(
   
 #### <a name="parameters"></a>Parámetros  
  `dwTextStartCookie`  
- [in] Cookie definidos por el host que representa la posición inicial del texto.  
+ [in] Cookie definido por el host que representa la posición inicial del texto.  
   
  `pcharText`  
- [entrada, salida] Un búfer de texto de caracteres. Este método no devuelve caracteres si este parámetro es `NULL`.  
+ [in, out] Un búfer de texto del carácter. Este método no devuelve caracteres si este parámetro es `NULL`.  
   
  `pstaTextAttr`  
- [entrada, salida] Un búfer de atributo de carácter. Este método no devuelve los atributos si este parámetro es `NULL`.  
+ [in, out] Un búfer de atributo de caracteres. Este método no devuelve los atributos si este parámetro es `NULL`.  
   
  `pcNumChars`  
- [entrada, salida] Indica el número real de caracteres/atributos devueltos. Este parámetro debe establecerse en cero antes de llamar a este método.  
+ [in, out] Indica el número real de caracteres y los atributos devueltos. Este parámetro debe establecerse en cero antes de llamar a este método.  
   
  `cMaxChars`  
  [in] El número máximo de caracteres que se va a devolver.  
@@ -68,9 +68,9 @@ HRESULT GetDeferredText(
  Este método puede devolver `E_NOTIMPL`, si el host no llama a `IDebugDocumentHelper::AddDeferredText`.  
   
 > [!NOTE]
->  Este método devuelve el texto del documento original. El host no realizar un seguimiento de cambios u otros cambios en el documento.  
+>  Este método devuelve el texto del documento original. El host no realizar un seguimiento de las modificaciones u otros cambios en el documento.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugDocumentHost (interfaz)](../../winscript/reference/idebugdocumenthost-interface.md)   
- [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
+ [Idebugdocumenthelper:: Adddeferredtext](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [SOURCE_TEXT_ATTR (Enumeración)](../../winscript/reference/source-text-attr-enumeration.md)

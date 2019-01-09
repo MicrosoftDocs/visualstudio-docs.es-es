@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3862a48ff4649f018eec79bf0411f23bc9f6d7bd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c484d212e2dccf20717aec5dca44d5c3319e15c9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733655"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089575"
 ---
 # <a name="iscriptnodegetindexinparent"></a>IScriptNode::GetIndexInParent
-Devuelve el índice de un objeto de lista de nodos secundarios del elemento primario.  
+Devuelve el índice de un objeto en la lista de nodos secundarios del elemento primario.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetIndexInParent(  
    ULONG              pisn,  
 );  
@@ -38,12 +38,12 @@ HRESULT GetIndexInParent(
   
 #### <a name="parameters"></a>Parámetros  
  `pisn`  
- [out] Devuelve el índice de un objeto de lista de nodos secundarios del elemento primario.  
+ [out] Devuelve el índice de un objeto en la lista de nodos secundarios del elemento primario.  
   
- Si este método es invocado por un `IScriptNode` del objeto que representa una página Web, este parámetro devuelve 0.  
+ Si este método es invocado por un `IScriptNode` de objeto que representa una página Web, este parámetro devuelve 0.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
