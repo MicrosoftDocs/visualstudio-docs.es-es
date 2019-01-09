@@ -2,7 +2,6 @@
 title: -DebugExe (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Devenv, /DebugExe switch
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1badcaba6f6461f6a2c6b73580d8d12c50481c2b
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 99f256b47125f4e07ca5dc148c4351871389a94b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948782"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889415"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
 Abre el archivo ejecutable especificado que se va a depurar.

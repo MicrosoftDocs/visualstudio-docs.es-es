@@ -1,10 +1,8 @@
 ---
 title: Tarea ZipDirectory | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
-ms.technology: msbuild
 ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fffaa61a494c507aedf22238d22c861ba9f11bc
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 320fd3a62c3283b0c442f0f7bbc3df5512eb7bcc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671045"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930965"
 ---
 # <a name="zipdirectory-task"></a>Tarea ZipDirectory
 Crea un archivo *.zip* desde el contenido de un directorio.

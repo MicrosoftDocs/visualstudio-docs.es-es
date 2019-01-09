@@ -12,13 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: c4cb68370a743381a13b88c8a5fdc7d61700cb17
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 079a7390b462dd8d48535f683f391ec2dca4827d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049955"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916802"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Procedimiento para agregar y eliminar contadores de los gráficos de resultados de pruebas de carga
 
