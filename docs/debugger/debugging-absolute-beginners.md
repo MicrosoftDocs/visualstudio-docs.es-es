@@ -1,9 +1,7 @@
 ---
 title: Código de depuración para principiantes sin experiencia
 description: Si depura por primera vez, obtenga información sobre algunos principios que le ayudarán a ejecutar la aplicación en modo de depuración con Visual Studio.
-ms.custom: ''
 ms.date: 07/06/2018
-ms.technology: vs-ide-debug
 ms.topic: tutorial
 helpviewer_keywords:
 - debugger
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2540f5ed20ae07ab317c0ea23f35de386117fa13
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 35f9e866f58d52b7f74ac0a136b0eeb49382c612
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561517"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927329"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Cómo depurar para principiantes sin experiencia
 

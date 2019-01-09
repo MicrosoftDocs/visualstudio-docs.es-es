@@ -3,7 +3,6 @@ title: 'Inició rápido: Clonación de un repositorio de código Python'
 description: En este inicio rápido, creará un proyecto de Python en Visual Studio mediante la clonación del repositorio de Python Koans mediante Visual Studio Team Explorer.
 ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 871a5f620cc90db5064562461336fdeac38ba757
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a98b236d12954d5707df7fa4933c1f31150c7a0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068398"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922852"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Inicio rápido: Clonar un repositorio de código de Python en Visual Studio
 
