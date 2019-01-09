@@ -2,7 +2,6 @@
 title: Seleccionar ubicaciones de instalación
 description: Obtenga información sobre cómo reducir la huella de instalación de Visual Studio en la unidad del sistema al cambiar la ubicación de la caché de descarga, los componentes compartidos, los SDK y las herramientas a otras unidades.
 ms.date: 11/07/2018
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -16,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2acefee22976e061b3feff83b00891037a0f2bbd
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: ce04592b6de6be16047baf3736e020c2ba71536a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159846"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837620"
 ---
 # <a name="select-the-installation-locations-in-visual-studio-2017"></a>Seleccionar las ubicaciones de instalación en Visual Studio 2017
 

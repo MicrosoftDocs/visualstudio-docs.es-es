@@ -2,9 +2,8 @@
 title: Información sobre el paso 1 del tutorial de Flask en Visual Studio, Conceptos básicos de Flask
 titleSuffix: ''
 description: Un tutorial sobre los aspectos básicos de Flask en el contexto de los proyectos de Visual Studio, incluidos los requisitos previos, Git y los entornos virtuales.
-ms.date: 09/04/2018
+ms.date: 01/07/2019
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0603c1b8dcabc37631c7a52e11cfa964331010d8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 490356eae7467eded983b117a88c35c9785f3f93
+ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066644"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060769"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutorial: Introducción al marco web Flask en Visual Studio
 
