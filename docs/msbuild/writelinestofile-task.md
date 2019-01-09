@@ -1,8 +1,6 @@
 ---
 title: WriteLinesToFile (Tarea) | Microsoft Docs
-ms.custom: ''
 ms.date: 09/20/2018
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#WriteLinesToFile
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 909c35ca889295385cae98d51a81b22b4f7eb5d8
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 6e41cc7e7be90497995bbadaced4a002ad0bd42d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228843"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908793"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile (tarea)
 Escribe las rutas de acceso de los elementos especificados en el archivo de texto especificado.  

@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: c65b9ad5c6a9d554f2c71cc5d17c63ce9368df2c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: cc7673ad7f7542595a883e81a8064964dd054729
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055405"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958006"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>Procedimiento para crear gráficos personalizados en los resultados de pruebas de carga
 
