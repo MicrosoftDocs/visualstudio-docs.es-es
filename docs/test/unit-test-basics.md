@@ -2,7 +2,6 @@
 title: Conceptos básicos de prueba unitaria
 ms.date: 2016-01-07
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b56608a0d81be17fbd68ad7ccd0d5626a818376
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: ce1689f6780f88dd57d41090969082de7ac5685d
+ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740356"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060808"
 ---
 # <a name="unit-test-basics"></a>Conceptos básicos de las pruebas unitarias
 
@@ -26,7 +25,7 @@ Las pruebas unitarias tienen el mayor efecto en la calidad del código cuando so
 
 Puede generar rápidamente proyectos y métodos de prueba a partir del código o crear manualmente las prueba a medida que las necesite. Cuando use IntelliTest para explorar el código .NET, puede generar datos de prueba y un conjunto de pruebas unitarias. Para cada instrucción en el código, se genera una entrada de prueba que ejecutará esa instrucción. Descubra cómo [generar pruebas unitarias para el código](generate-unit-tests-for-your-code-with-intellitest.md).
 
-El Explorador de pruebas también puede ejecutar marcos de pruebas unitarias de terceros y de código abierto que hayan implementado interfaces complementarias del Explorador de pruebas. Muchos de estos marcos se pueden agregar a través del Administrador de extensiones de Visual Studio y la galería de Visual Studio. Vea [Instalar marcos de prueba unitaria de terceros](../test/install-third-party-unit-test-frameworks.md).
+El Explorador de pruebas también puede ejecutar marcos de pruebas unitarias de terceros y de código abierto que hayan implementado interfaces complementarias del Explorador de pruebas. Muchos de estos marcos se pueden agregar a través del Administrador de extensiones de Visual Studio y la galería de Visual Studio. Para más información, vea [Instalar marcos de prueba unitaria de terceros](../test/install-third-party-unit-test-frameworks.md).
 
 ## <a name="get-started"></a>Primeros pasos
 
@@ -127,7 +126,7 @@ Cada proyecto de prueba unitaria contiene clases que reflejan los nombres de las
 
 -   La clase`AccountInfoTests` contiene los métodos de prueba unitaria para la clase `AccountInfo` del proyecto `Accounts` .
 
--   La clase `CheckingAccountTests` contiene los métodos de prueba unitaria para la clase `CheckingAccount`.
+-   La clase`CheckingAccountTests` contiene los métodos de prueba unitaria para la clase `CheckingAccount` .
 
 ## <a name="write-your-tests"></a>Escribir las pruebas
 
