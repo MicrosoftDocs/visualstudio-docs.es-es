@@ -1,8 +1,6 @@
 ---
 title: Eventos de montón ETW nativos personalizados | Microsoft Docs
-ms.custom: ''
 ms.date: 02/24/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
 author: mikejo5000
@@ -12,12 +10,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 98fc473a9459aa6d1a1d7c10be7b6f240a4ab7d0
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 1414c2102d2b19728c8dfb74470fefae499bc622
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50744995"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877142"
 ---
 # <a name="custom-native-etw-heap-events"></a>Eventos de montón ETW nativos personalizados
 

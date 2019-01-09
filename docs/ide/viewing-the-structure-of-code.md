@@ -2,7 +2,6 @@
 title: Visualización de la estructura del código con las ventanas Vista de clases, Jerarquía de llamadas, Examinador de objetos y Definición de código
 ms.date: 05/18/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.documentoutline.window
@@ -27,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a271dfaba8fe533fee84799a0585a29d97e9c70
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 4b3419c7f6b08fbedbe7af684a5c3b2de8967b55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336144"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880918"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Visualización de la estructura del código mediante distintas ventanas de herramienta
 

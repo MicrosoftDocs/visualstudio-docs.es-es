@@ -2,7 +2,6 @@
 title: Usar expresiones regulares
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vsregularexpressionhelp
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40983e4180db9530983217d581b898806dd85d27
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e272e1aba8f7572ba3c4ce1f90a7b12676eb18b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063803"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880616"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usar expresiones regulares en Visual Studio
 

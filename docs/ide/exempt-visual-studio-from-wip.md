@@ -2,19 +2,18 @@
 title: Exención de Windows Information Protection
 ms.date: 06/01/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a1b38e6e30a816382da72ef8280868fa68dfb10
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 665a4e893b8b146555dd35caad5cc521e1630dd9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845915"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891510"
 ---
 # <a name="configure-visual-studio-as-a-wip-exempt-app"></a>Configurar Visual Studio como una aplicación exenta de WIP
 

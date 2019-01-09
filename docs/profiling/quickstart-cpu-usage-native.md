@@ -1,9 +1,7 @@
 ---
 title: Análisis de datos de uso de CPU (C++)
 description: Medición del rendimiento de aplicación en C++ con la herramienta de diagnóstico de uso de CPU
-ms.custom: ''
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 f1_keywords:
 - ''
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c4cf51a4961d6b9139d4f8fdbfd6c5df2ab0052c
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 38bacd51727ea2091e23adb606ff65de901f479a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626639"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883177"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Inicio rápido: Análisis de datos de uso de CPU en Visual Studio (C++)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Inicio rápido: Analizar datos de uso de CPU en Visual Studio (C++)
 
 Visual Studio proporciona muchas características eficaces para ayudarle a analizar problemas de rendimiento de la aplicación. En este tema se proporciona una forma rápida de obtener información sobre las características básicas. A continuación, veremos la herramienta para identificar los cuellos de botella de rendimiento debido al uso elevado de la CPU. Se admiten las herramientas de diagnóstico para el desarrollo de .NET en Visual Studio, incluido ASP.NET, y para el desarrollo nativo de C++.
 
