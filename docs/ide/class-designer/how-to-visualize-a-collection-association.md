@@ -2,7 +2,6 @@
 title: Procedimiento Visualizar una asociación de colecciones (Diseñador de clases)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.collectionassociationline
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2957492224f4d69a9536b4dfd6f47c136f72b0c
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: acf1fd75770888f492833235f09a381d0836be34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684069"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925399"
 ---
 # <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Procedimiento Visualizar una asociación de colecciones en el Diseñador de clases
 

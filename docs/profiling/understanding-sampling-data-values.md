@@ -1,8 +1,6 @@
 ---
 title: Introducción a los valores de datos de muestreo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6eb52273633e0b65aa4a7a7049198c49c20633d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d98a34abcd0e17f7b453ab3bd6e706665a9379bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477007"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863477"
 ---
 # <a name="understand-sampling-data-values"></a>Introducción a los valores de datos de muestreo
 
@@ -53,5 +51,5 @@ El porcentaje del número total de muestras exclusivas de la generación de perf
 
 ## <a name="see-also"></a>Vea también
 
-[Elección de métodos de recopilación](../profiling/how-to-choose-collection-methods.md)  
+[Cómo: Elegir métodos de recopilación](../profiling/how-to-choose-collection-methods.md)  
 [Análisis de datos de herramientas de rendimiento](../profiling/analyzing-performance-tools-data.md)

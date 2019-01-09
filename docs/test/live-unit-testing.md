@@ -2,7 +2,6 @@
 title: Live Unit Testing
 ms.date: 2017-03-07
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -11,12 +10,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7be078044454ebf5d6b3a6d99a60fff66ab1f69b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5a443eddc56b3aa5af6e4ce1cb8cab958d2be621
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066215"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892853"
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Live Unit Testing con Visual Studio 2017
 
@@ -117,7 +116,7 @@ Live Unit Testing puede pausarse temporalmente o detenerse por completo en cualq
 
 ## <a name="view-coverage-visualization-in-the-editor-as-you-type"></a>Presentar la visualización de la cobertura en el editor a medida que escribe
 
-Cuando ya se ha habilitado, Live Unit Testing actualiza cada línea de código en el editor de Visual Studio para mostrar si el código que está escribiendo está cubierto por las pruebas unitarias y si las pruebas que cubre se superan.  La siguiente figura muestra líneas de código tanto con pruebas que se superan como con pruebas con error, así como líneas de código que no están cubiertas por las pruebas. Las líneas representadas con un símbolo "✓" de color verde solo están cubiertas por pruebas superadas, las líneas representadas con una "x" de color rojo están cubiertas por una o varias pruebas con error y las líneas representadas con un símbolo "" de color azul no están cubiertas por ninguna prueba.
+Cuando ya se ha habilitado, Live Unit Testing actualiza cada línea de código en el editor de Visual Studio para mostrar si el código que está escribiendo está cubierto por las pruebas unitarias y si las pruebas que cubre se superan.  La siguiente figura muestra líneas de código tanto con pruebas que se superan como con pruebas con error, así como líneas de código que no están cubiertas por las pruebas. Las líneas representadas con un símbolo "✓" de color verde solo están cubiertas por pruebas superadas, las líneas representadas con una "x" de color rojo están cubiertas por una o varias pruebas con error y las líneas representadas con un símbolo "➖" de color azul no están cubiertas por ninguna prueba.
 
   ![Imagen](./media/lut-codewindow.png)
 
@@ -137,7 +136,7 @@ Cuando mantiene el puntero sobre una prueba con error en la información sobre h
 
   ![Imagen](./media/lut-failedmsg.png)
 
-Cuando se navega a la prueba con error, Live Unit Testing también indica de manera visual en la signatura de método las pruebas que se aprobaron (lo que se indica con una probeta a medio llenar junto con un símbolo "✓" de color verde), las que no se aprobaron (una probeta a medio llenar junto con un símbolo "🞩" de color rojo) o que no participaron en Live Unit Testing (una probeta a medio llenar junto con un símbolo "" de color azul). Los métodos que no son de prueba no se muestran con ningún símbolo. En la figura siguiente se muestran los cuatro tipos de métodos.
+Cuando se navega a la prueba con error, Live Unit Testing también indica de manera visual en la signatura de método las pruebas que se aprobaron (lo que se indica con una probeta a medio llenar junto con un símbolo "✓" de color verde), las que no se aprobaron (una probeta a medio llenar junto con un símbolo "🞩" de color rojo) o que no participaron en Live Unit Testing (una probeta a medio llenar junto con un símbolo "➖" de color azul). Los métodos que no son de prueba no se muestran con ningún símbolo. En la figura siguiente se muestran los cuatro tipos de métodos.
 
   ![Imagen](media/lut-testsource.png)
 

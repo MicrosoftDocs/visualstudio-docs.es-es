@@ -12,13 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 53127df8837f9f86d49cb5d5fa36ca3b50f401fa
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 49d81090a0db94fe0215d01a1194f3eb4fabfcad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064684"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870458"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Procedimiento para especificar periodos de tiempo de espera para controladores de pruebas y agentes de pruebas
 
@@ -70,7 +69,7 @@ Para editar diversas configuraciones de tiempo de espera de un controlador de pr
     <add key="AgentConnectionTimeoutInSeconds" value="180"/>
     ```
 
-    O bien
+    o bien
 
     Agregue una clave adicional y especifique un valor de tiempo de espera. Por ejemplo, puede agregar la clave `AgentInitializeTimeout` en la sección `<appSettings>` y especificar un valor de cinco minutos:
 
@@ -104,7 +103,7 @@ Para editar diversas configuraciones de tiempo de espera de un controlador de pr
     <add key="ControllerConnectionPeriodInSeconds" value="60"/>
     ```
 
-    O bien
+    o bien
 
     Agregue una clave adicional y especifique un valor de tiempo de espera. Por ejemplo, puede agregar la clave `RemotingTimeoutSeconds` en la sección `<appSettings>` y especificar un valor de quince minutos:
 
