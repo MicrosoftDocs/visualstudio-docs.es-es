@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Paso 4 de un tutorial básico sobre las funcionalidades de Python en Visual Studio, que trata cómo ejecutar código de Python en el depurador.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5facce6eff378586ece01b5774089e76058615f9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7299765435cae99afedb176f0b8613d7b504b09f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060425"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931546"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Paso 4: Ejecución de código en el depurador
 

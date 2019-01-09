@@ -2,19 +2,18 @@
 title: Características de generación de código
 ms.date: 01/11/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 79e3f2d47aee0bc2de43ab9db657cfa96bc1c2ac
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c1633e6efb2637a3e7667b3e49f5f5abf4549e5b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063145"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924064"
 ---
 # <a name="code-generation-features-in-visual-studio"></a>Características de generación de código en Visual Studio
 

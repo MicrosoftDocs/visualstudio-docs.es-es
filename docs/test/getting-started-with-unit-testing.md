@@ -2,7 +2,6 @@
 title: Introducción a las pruebas unitarias
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e8835edb2b340778c4431d3de5b554d6aeb6c6d
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 557102378757919abfff4280e4a8d842707c74a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53158819"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959515"
 ---
 # <a name="get-started-with-unit-testing"></a>Introducción a las pruebas unitarias
 

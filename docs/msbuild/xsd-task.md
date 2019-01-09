@@ -1,8 +1,6 @@
 ---
 title: XSD (tarea) | Microsoft Docs
-ms.custom: ''
 ms.date: 06/27/2018
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - vc.task.xsd
@@ -22,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3eb81e05a16eb504b14e94de2c1270057311b85a
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 44113f00f56ca471b0d8a922fc68b0003645b329
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231602"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991025"
 ---
 # <a name="xsd-task"></a>XSD (tarea)
 Encapsula la herramienta de definición de esquema XML (*xsd.exe*), que genera archivos de esquema o clase desde un origen.  
