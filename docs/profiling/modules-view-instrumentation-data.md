@@ -1,8 +1,6 @@
 ---
 title: 'Vista Módulos: datos de instrumentación | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c849971da7681322b15365bc0d59ce8b3529f508
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a2c5b1d7db173a932de186f67b0f0eb96a6350f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256115"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965991"
 ---
 # <a name="modules-view---instrumentation-data"></a>Vista Módulos: datos de instrumentación
 La vista Módulos muestra datos de rendimiento agrupados por los módulos incluidos en los datos de generación de perfiles. Las funciones del módulo se enumeran bajo el nodo de módulo.  

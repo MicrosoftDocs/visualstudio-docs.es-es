@@ -2,7 +2,6 @@
 title: Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.FontsAndColors
@@ -27,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f15ac427d3e6fd6ddf7988c82ad46ffe537d299
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 55f402eaaa1ee11feb115e38ae5e7759bbbb93f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389272"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966017"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)
 
@@ -106,7 +105,7 @@ Entre los elementos para mostrar se incluyen:
 |**Marcador**|Líneas con marcadores. **Marcador** solo está visible si el margen del indicador está deshabilitado.|
 |**Coincidencia de llaves (resaltar)**|Resaltado que suele ser el formato de negrita para la coincidencia de llaves.|
 |**Coincidencia de llaves (rectángulo)**|Resaltado que suele ser un rectángulo gris en segundo plano.|
-|**Punto de interrupción (deshabilitado)**|No usado.|
+|**Punto de interrupción (deshabilitado)**|No se utiliza.|
 |**Punto de interrupción (habilitado)**|Especifica el color de resaltado para las instrucciones o líneas que contienen puntos de interrupción simples. Esta opción solo es aplicable si los puntos de interrupción de nivel de instrucción están activos o si está seleccionada la opción **Resaltar la línea de código fuente para los puntos de interrupción o la instrucción actual** en [General, Depuración, Opciones (Cuadro de diálogo)](../../debugger/general-debugging-options-dialog-box.md).|
 |**Punto de interrupción (error)**|Especifica el color de resaltado para las instrucciones o líneas que contienen puntos de interrupción que están en un estado de error. Solo es aplicable si los puntos de interrupción de nivel de instrucción están activos o si está seleccionada la opción **Resaltar la línea de código fuente para los puntos de interrupción o la instrucción actual** en [General, Depuración, Opciones (Cuadro de diálogo)](../../debugger/general-debugging-options-dialog-box.md).|
 |**Punto de interrupción (advertencia)**|Especifica el color de resaltado para las instrucciones o líneas que contienen puntos de interrupción simples que están en un estado de advertencia. Solo es aplicable si los puntos de interrupción de nivel de instrucción están activos o si está seleccionada la opción **Resaltar la línea de código fuente para los puntos de interrupción o la instrucción actual** en [General, Depuración, Opciones (Cuadro de diálogo)](../../debugger/general-debugging-options-dialog-box.md).|
@@ -167,7 +166,7 @@ Entre los elementos para mostrar se incluyen:
 |**Cadena (C# @ Verbatim)**|Literales de cadena en C# que se interpretan literalmente. Por ejemplo:<br /><br /> @"x"|
 |**Error de sintaxis**|Errores de análisis.|
 |**Acceso directo de la Lista de tareas**|Si se agrega a una línea un acceso directo de la **Lista de tareas** y el margen del indicador está deshabilitado, se resaltará la línea.|
-|**Punto de seguimiento (deshabilitado)**|No usado.|
+|**Punto de seguimiento (deshabilitado)**|No se utiliza.|
 |**Punto de seguimiento (habilitado)**|Especifica el color de resaltado para las instrucciones o líneas que contienen puntos de seguimiento simples. Esta opción solo es aplicable si los puntos de seguimiento de nivel de instrucción están activos o si está seleccionada la opción **Resaltar la línea de código fuente para los puntos de interrupción o la instrucción actual** en [General, Depuración, Opciones (Cuadro de diálogo)](../../debugger/general-debugging-options-dialog-box.md).|
 |**Punto de seguimiento (error)**|Especifica el color de resaltado para las instrucciones o líneas que contienen puntos de seguimiento que están en un estado de error. Esta opción solo es aplicable si los puntos de seguimiento de nivel de instrucción están activos o si está seleccionada la opción **Resaltar la línea de código fuente para los puntos de interrupción o la instrucción actual** en [General, Depuración, Opciones (Cuadro de diálogo)](../../debugger/general-debugging-options-dialog-box.md).|
 |**Punto de seguimiento (advertencia)**|Especifica el color de resaltado para las instrucciones o líneas que contienen puntos de seguimiento que están en un estado de advertencia. Esta opción solo es aplicable si los puntos de seguimiento de nivel de instrucción están activos o si está seleccionada la opción **Resaltar la línea de código fuente para los puntos de interrupción o la instrucción actual** en [General, Depuración, Opciones (Cuadro de diálogo)](../../debugger/general-debugging-options-dialog-box.md).|
@@ -251,4 +250,4 @@ Muestra un ejemplo de la combinación de colores, del tamaño y del estilo de la
 
 - [Opciones de entorno (Cuadro de diálogo)](../../ide/reference/environment-options-dialog-box.md)
 - [Opciones (cuadro de diálogo)](../../ide/reference/options-dialog-box-visual-studio.md)
-- [Cómo: Cambiar fuentes y colores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Cómo: cambiar fuentes y colores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

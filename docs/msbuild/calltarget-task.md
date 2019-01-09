@@ -1,8 +1,6 @@
 ---
 title: Tarea CallTarget | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4546fc47ddb38fabcd0ff84926d942f6ae10d59e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bff9d8967d02f8950cc5518f00baa9551c93ec76
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874688"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962368"
 ---
 # <a name="calltarget-task"></a>CallTarget (tarea)
 Invoca los destinos especificados en el archivo del proyecto.  

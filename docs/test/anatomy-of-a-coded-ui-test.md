@@ -2,7 +2,6 @@
 title: Anatomía de una prueba de IU codificada
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c1a8bcc8ee43aa36b8a39cd53f4be4f6882f06
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: dbee9735922b680daad51a698b3e05ad54f31115
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896593"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949315"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Anatomía de una prueba automatizada de IU
 

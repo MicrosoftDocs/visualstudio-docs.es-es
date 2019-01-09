@@ -1,8 +1,6 @@
 ---
 title: Uso de AspNetCompiler (Tarea) para precompilar aplicaciones de ASP.NET | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#AspNetCompiler
@@ -20,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 69971e72569dcae1f02f1e2b7988ef15f881fe85
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 84367bdf99ae7c29f5ecac4d345cd21c8cc17689
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945174"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935296"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler (tarea)
 La tarea `AspNetCompiler` contiene *aspnet_compiler.exe*, una utilidad que sirve para precompilar aplicaciones [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
   
-## <a name="task-parameters"></a>Parámetros de la tarea  
+## <a name="task-parameters"></a>Parámetros de tareas  
  En la siguiente tabla se describen los parámetros de la tarea `AspNetCompiler` .  
   
 |Parámetro|Descripción|  
@@ -51,7 +49,7 @@ La tarea `AspNetCompiler` contiene *aspnet_compiler.exe*, una utilidad que sirve
 |`VirtualPath`|Parámetro `String` opcional.<br /><br /> Ruta de acceso virtual de la aplicación que se va a compilar. Si se especifica `PhysicalPath`, la ruta de acceso física se utiliza para buscar la aplicación. En caso contrario, se utiliza la metabase de IIS y se supone que la aplicación se encuentra en el lugar predeterminado. Este parámetro corresponde al modificador **-v** en *aspnet_compiler.exe*.|  
   
 ## <a name="remarks"></a>Comentarios  
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.ToolTaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.ToolTask>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [ToolTaskExtension (Clase base)](../msbuild/tooltaskextension-base-class.md).  
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.ToolTaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.ToolTask>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [ToolTaskExtension (Clase base)](../msbuild/tooltaskextension-base-class.md).  
   
 ## <a name="example"></a>Ejemplo  
  En el siguiente ejemplo de código se utiliza la tarea `AspNetCompiler` para precompilar una aplicación de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  

@@ -1,9 +1,8 @@
 ---
 title: Configuración de Python en Azure App Service (Windows)
 description: Describe cómo instalar un intérprete y las bibliotecas de Python en Azure App Service y configuración de las aplicaciones web para que hagan referencia correctamente al intérprete.
-ms.date: 10/18/2018
+ms.date: 01/07/2019
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e21be06c26ec6a15b46ef72c0fe33a35b314c989
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5bfa048f7f836e2e4108c3d30a1dfb89b764c59c
+ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051298"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060755"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Configuración de un entorno de Python en Azure App Service (Windows)
 

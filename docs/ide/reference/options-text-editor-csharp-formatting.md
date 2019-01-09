@@ -2,7 +2,6 @@
 title: Opciones de formato del editor de C#
 ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.Spacing
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 542d14e5913b1537d5e5e6aabb7264cd15add793
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: b3c4aa17e31797c9c8bbfa1a931369f371977e26
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220526"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946414"
 ---
 # <a name="options-text-editor-c-code-style-formatting"></a>Opciones, editor de texto, C#, estilo de código, formato
 
