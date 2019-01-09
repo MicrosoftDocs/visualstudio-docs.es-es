@@ -1,8 +1,6 @@
 ---
 title: Actividad de GPU (paginación) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.gpuactivity
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b8b682c47844a9bc88afdce4a532b1188746a85
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 919f99ad24764017e823dbceda51bec4461401e4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35238038"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942728"
 ---
 # <a name="gpu-activity-paging"></a>Actividad de GPU (Paginación)
 Los segmentos **Actividad de GPU (paginación)** en la pestaña **Subprocesos**  representan los momentos en que la GPU estaba procesando solicitudes de paginación.  La longitud de un segmento representa la cantidad de tiempo que la GPU estuvo procesando un paquete de paginación de acceso a memoria directa (DMA). Normalmente, los paquetes de paginación se asocian a la transferencia de memoria entre la CPU y la GPU.  
