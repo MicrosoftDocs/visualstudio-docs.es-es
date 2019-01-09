@@ -1,8 +1,6 @@
 ---
 title: Filtro de vista Informe de rendimiento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, Profiler Report view filter
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 17fc42eab94d98ceb636e53e3ed6efd39a08f920
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: be48c6d0879a257e17be2d92dc00829097d11c15
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254275"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939892"
 ---
 # <a name="performance-report-view-filter"></a>Filtro de vista Informe de rendimiento
 La ventana **Filtro de vista Informe de rendimiento** se encuentra en la parte superior de la ventana **Informe de generador de perfiles**. Si no la ve, haga clic en el botón **Mostrar filtro**.  

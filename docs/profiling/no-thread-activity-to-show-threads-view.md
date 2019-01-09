@@ -1,8 +1,6 @@
 ---
 title: No hay actividades de subprocesos que mostrar (Vista de subprocesos) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.nothreadreport
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8edd84e68b7fbf2f361fe7f3b04807ce2feda95f
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 1bcfbc1a4e2995ca0a8d676b9352b2d7bcba9272
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257883"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858329"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>No hay actividades de subprocesos que mostrar (vista de subprocesos)
 En esta área se muestran datos sobre los subprocesos que no están ocultos en el intervalo de tiempo visible actualmente.  

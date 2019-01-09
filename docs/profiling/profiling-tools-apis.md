@@ -1,8 +1,6 @@
 ---
 title: API de herramientas de generación de perfiles | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: bd9ca972-e5bf-45a6-9a5d-ac30a4d9ee02
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62c7f173f278e03f5e28d6b03c117c7b69415abb
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: d8bc3326bfe194815f043233120f3e2ee5fae571
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255150"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942572"
 ---
 # <a name="profiling-tools-apis"></a>APIs de herramientas de generación de perfiles
 Puede insertar métodos administrados o nativos de las API de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para controlar la recopilación de datos en una generación de perfiles. En esta sección se describen los métodos de las API y cómo utilizarlos.  

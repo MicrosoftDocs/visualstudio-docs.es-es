@@ -2,7 +2,6 @@
 title: Globalizar y localizar aplicaciones
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - globalization [Visual Studio]
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 73e638b2474342987963c02f442f5d7a98a6e44e
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 6f08ad869e1a8d06a8a29325c2cbeb723734c6f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863601"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991076"
 ---
 # <a name="globalizing-and-localizing-applications"></a>Globalizar y localizar aplicaciones
 

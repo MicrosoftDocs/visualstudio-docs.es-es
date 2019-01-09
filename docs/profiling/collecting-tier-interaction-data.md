@@ -1,8 +1,6 @@
 ---
 title: Recopilar datos de interacción de capas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.tierinteraction
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f5e86cd1318d4b0db35ce6fa0e0abd925100fe34
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 1f2c18ba6cb7360be904d491f29195eea7add6c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548442"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819918"
 ---
 # <a name="collect-tier-interaction-data"></a>Recopilar datos de interacción de capas
 

@@ -3,7 +3,6 @@ title: Paseo por las características de implementación
 description: Conozca las opciones para implementar aplicaciones desde Visual Studio.
 ms.custom: mvc
 ms.date: 06/22/2018
-ms.technology: vs-ide-deployment
 ms.topic: quickstart
 dev_langs:
 - FSharp
@@ -24,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79cdab9ef8cd127b54117188c9d1a49ad4948c9e
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: d0db2a9dcd19b2100239a99ec8fc08850432aa80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53805164"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860041"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Inicio rápido: Primer vistazo a la implementación en Visual Studio
 

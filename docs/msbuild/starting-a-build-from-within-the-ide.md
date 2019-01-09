@@ -1,8 +1,6 @@
 ---
 title: Iniciar una compilación desde el IDE | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - build
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 32a2923342fd62428095babdaecc5bd9c5cac06e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 64d5d9022362b39dea4e9a36155c4c1b3b056c6f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850066"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940578"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>Iniciar una compilación desde el IDE
 Los sistemas de proyectos personalizados deben utilizar <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> para iniciar las compilaciones. En este artículo se describen las razones de este requisito y se examina el procedimiento.  
