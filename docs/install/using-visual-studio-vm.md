@@ -3,7 +3,6 @@ title: Uso de Visual Studio en una máquina virtual de Azure
 titleSuffix: ''
 description: Aprenda a usar Visual Studio en una máquina virtual de Azure
 ms.date: 09/12/2018
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -17,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fdebcfcab1907c6e91b2d4926b86038c560d040e
-ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
+ms.openlocfilehash: f139c93eeb64a56f0bd422137417e5ad6e36cb11
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53425817"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836629"
 ---
 # <a id="top"> </a> Imágenes de Visual Studio en Azure
 

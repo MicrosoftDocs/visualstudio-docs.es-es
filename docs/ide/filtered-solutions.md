@@ -3,19 +3,18 @@ title: Carga de un subconjunto de proyectos
 ms.date: 12/04/2018
 ms.topic: conceptual
 ms.prod: visual-studio-dev16
-ms.technology: vs-ide-general
 helpviewer_keywords:
 - filtered solution
 - solution filtering
 author: gewarren
 ms.author: stsu
 manager: douge
-ms.openlocfilehash: 655644e936bdfb1382e70d746f589b8fcfabf488
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 689f0f2c4ba6d6b8e2e94c2b7982604b1d444745
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52897268"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822802"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Soluciones filtradas en Visual Studio
 

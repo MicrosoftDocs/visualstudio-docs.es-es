@@ -2,7 +2,6 @@
 title: Página de opciones, Propiedades de nodo Fuentes y colores
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Fonts and Colors node properties
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94a253d6e723cfa810ada9a7384fe1cda0826ac4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 61b36afc1098a5045bfefcb92fb2a3fda36d81ca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672269"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938700"
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>Página de opciones, Propiedades de nodo Fuentes y colores
 En este documento se describen las propiedades de fuente y color de una ventana de herramientas registrada para aparecer en **Fuentes y colores** en la categoría **Entorno** del cuadro de diálogo **Opciones**. Esto apoya la naturaleza dinámica de los grupos de elementos coloreables, que pueden cambiar si se instalan o desinstalan VSPackages.
@@ -28,11 +27,11 @@ En este documento se describen las propiedades de fuente y color de una ventana 
 ## <a name="text-editor-or-printer-or-dialogs-and-tool-windows"></a>Editor de texto o Impresora o Cuadros de diálogo y Ventanas de herramientas
  `DTE.Properties("FontsAndColors", "TextEditor")`
 
- O bien
+ o bien
 
  `DTE.Properties("FontsAndColors", "Printer")`
 
- O bien
+ o bien
 
  `DTE.Properties("FontsAndColors", "Dialogs and Tool Windows")`
 
