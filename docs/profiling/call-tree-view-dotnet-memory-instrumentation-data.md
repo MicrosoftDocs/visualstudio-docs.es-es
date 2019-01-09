@@ -1,8 +1,6 @@
 ---
 title: 'Vista Árbol de llamadas: datos de instrumentación de memoria de .NET | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e05286c10758c19f1e3f5a5692f814a096763544
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 51bdbe7f36b37ffbc0e1c911a8aa122cd3a44dd2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263603"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917571"
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>Vista Árbol de llamadas: datos de instrumentación de memoria de .NET
 En la vista Árbol de llamadas de los datos de generación de perfiles de asignación de memoria de .NET recopilados con el método de instrumentación se muestran las rutas de acceso de ejecución de función que se recorrieron en la aplicación en la que se generaron perfiles. La raíz del árbol es el punto de entrada a la aplicación o el componente. Cada nodo de función muestra todas las funciones a las que llamó, así como los datos de tiempo y de memoria de .NET de dicha función.  
@@ -34,7 +32,7 @@ En la vista Árbol de llamadas de los datos de generación de perfiles de asigna
   
 ## <a name="general"></a>General  
   
-|Columna|Description|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Nombre de la función**|Nombre de la función.|  
 |**Dirección de la función**|Dirección de la función.|  
@@ -55,7 +53,7 @@ En la vista Árbol de llamadas de los datos de generación de perfiles de asigna
   
  Los valores de memoria exclusivos indican el número y el tamaño de los objetos creados mediante código en el cuerpo de la función, y no por las funciones llamadas por dicha función.  
   
-|Columna|Description|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Asignaciones inclusivas**|Número de objetos asignados por las instancias de esta función a las que llamó la función primaria del árbol de llamadas. Este número incluye las asignaciones realizadas por funciones secundarias.|  
 |**Porcentaje de asignaciones inclusivas**|Porcentaje de objetos creados en la ejecución de generación de perfiles que eran asignaciones inclusivas de las instancias de la función llamadas por la función primaria del árbol de llamadas.|  
@@ -65,7 +63,7 @@ En la vista Árbol de llamadas de los datos de generación de perfiles de asigna
 ## <a name="elapsed-inclusive-values"></a>Valores de tiempo inclusivo transcurrido  
  Los valores inclusivos transcurridos indican el tiempo que una función estuvo en la pila de llamadas. Incluye el tiempo dedicado a funciones a las que llamó la función y a llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S.  
   
-|Columna|Description|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Tiempo inclusivo transcurrido**|El tiempo inclusivo total transcurrido de todas las llamadas a esta función cuando la llamó la función primaria en el árbol de llamadas.|  
 |**Porcentaje de tiempo inclusivo transcurrido**|El porcentaje de tiempo inclusivo transcurrido total de la ejecución de generación de perfiles que se ha empleado en el tiempo inclusivo total transcurrido de esta función cuando la llamó la función primaria del árbol de llamadas.|  
@@ -76,7 +74,7 @@ En la vista Árbol de llamadas de los datos de generación de perfiles de asigna
 ## <a name="elapsed-exclusive-values"></a>Valores de tiempo exclusivo transcurrido  
  Los valores exclusivos transcurridos indican el tiempo que una función se estaba ejecutando directamente en la parte superior de la pila de llamadas. El tiempo también incluye el tiempo dedicado a las llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S. Sin embargo, el tiempo no incluye el tiempo dedicado a las funciones a las que llamó la función.  
   
-|Columna|Description|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Tiempo exclusivo transcurrido**|El tiempo exclusivo total transcurrido de todas las llamadas a esta función cuando la llamó la función primaria en el árbol de llamadas.|  
 |**Porcentaje de tiempo exclusivo transcurrido**|El porcentaje de tiempo exclusivo transcurrido total de la ejecución de generación de perfiles que se ha empleado en el tiempo exclusivo total transcurrido de esta función cuando la llamó la función primaria del árbol de llamadas.|  
@@ -87,7 +85,7 @@ En la vista Árbol de llamadas de los datos de generación de perfiles de asigna
 ## <a name="application-inclusive-values"></a>Valores de tiempo inclusivo de aplicación  
  Los valores inclusivos de aplicación indican el tiempo que una función estuvo en la pila de llamadas. No incluye el tiempo dedicado a llamadas al sistema operativo, como cambios de contexto y operaciones de E/S. El tiempo incluye el tiempo dedicado a funciones secundarias a las que llamó la función.  
   
-|Columna|Description|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Tiempo inclusivo de aplicación**|El tiempo inclusivo de aplicación total de todas las llamadas a esta función cuando la llamó la función primaria en el árbol de llamadas.|  
 |**Porcentaje de tiempo inclusivo de aplicación**|El porcentaje de tiempo inclusivo transcurrido total de la ejecución de generación de perfiles que se ha empleado en el tiempo inclusivo de aplicación total de esta función cuando fue llamada por la función primaria del árbol de llamadas.|  
@@ -98,7 +96,7 @@ En la vista Árbol de llamadas de los datos de generación de perfiles de asigna
 ## <a name="application-exclusive-values"></a>Valores de tiempo exclusivo de aplicación  
  Los valores exclusivos de aplicación indican el tiempo dedicado a la función, excluido el tiempo dedicado a funciones secundarias llamadas por dicha función. El tiempo también excluye las llamadas al sistema operativo, como cambios de contexto y operaciones de E/S.  
   
-|Columna|Description|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Tiempo exclusivo de aplicación**|El tiempo exclusivo de aplicación total de todas las llamadas a esta función cuando la llamó la función primaria en el árbol de llamadas.|  
 |**Porcentaje de tiempo exclusivo de aplicación**|El porcentaje de tiempo exclusivo transcurrido total de la ejecución de generación de perfiles que se ha empleado en el tiempo exclusivo de aplicación total de esta función cuando fue llamada por la función primaria del árbol de llamadas.|  

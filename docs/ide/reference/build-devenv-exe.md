@@ -2,7 +2,6 @@
 title: Modificador Build de DevEnv
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - builds, command-line
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdd510e523aaabc468c1f01626593e51d0ad1558
-ms.sourcegitcommit: 9571742f4a808c75b1034aa72fc24b54bc50692e
+ms.openlocfilehash: 9caddb066d02366cac7ee9e34f2d55c726a69896
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49410967"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824449"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 

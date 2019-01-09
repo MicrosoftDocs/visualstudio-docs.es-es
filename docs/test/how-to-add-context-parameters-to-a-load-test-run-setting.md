@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: cefa93a6f65b4b84b4ece5a4eb428d909dd0596d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 378fc29fa7f867eee1be9e30e58c80149d1ed835
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048501"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898393"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Procedimiento para agregar parámetros de contexto a los parámetros de ejecución de una prueba de carga
 
@@ -62,7 +61,7 @@ Además, si asigna valores diferentes a un parámetro de contexto usando el mism
 
      Se agregará un nuevo parámetro de contexto a la carpeta **Parámetros de contexto** de la carpeta **Parámetros de ejecución** del árbol de pruebas de carga.
 
-     O bien
+     o bien
 
      Si el parámetro de ejecución ya contiene una carpeta **Parámetros de contexto**, puede hacer clic en ella con el botón derecho y, a continuación, elegir **Agregar parámetro de contexto**.
 

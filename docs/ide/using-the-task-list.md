@@ -2,7 +2,6 @@
 title: Uso de la lista de tareas
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - TaskListWindow
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7766a7fd935cc1e1131c4780a5a88ef6fa54e838
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 0b30abf88a00934670ba2d34873ad883c833aae8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349405"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831107"
 ---
 # <a name="use-the-task-list"></a>Uso de la lista de tareas
 
