@@ -2,7 +2,6 @@
 title: Glosario de atributos | Herramientas de prueba para desarrolladores de Microsoft IntelliTest
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Attribute glossary
@@ -11,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0a83a7bd2fc40862411bbfd85f72b804318983c5
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: e858c85c81e23fc460e858a0d2001c65b4877838
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294219"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834391"
 ---
 # <a name="attribute-glossary"></a>Glosario de atributos
 

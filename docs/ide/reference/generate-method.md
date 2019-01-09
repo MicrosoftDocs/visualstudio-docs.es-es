@@ -2,19 +2,18 @@
 title: Generación de un método
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1e5cf156c6c17e8a9bf1fb9f40f75c1e72b7be94
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c0b84ac126bd7a7bb14a90f03e2d2dd10f881b01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057183"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836368"
 ---
 # <a name="generate-a-method-in-visual-studio"></a>Generación de un método en Visual Studio
 

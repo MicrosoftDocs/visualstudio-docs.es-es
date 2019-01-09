@@ -1,8 +1,6 @@
 ---
 title: RemoveDir (Tarea) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#RemoveDir
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e835d50e0c6a0168795409b91301faa289bf1dc5
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 075eb8b688fa7cab1da7e6ef6c81363795ab6481
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153681"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831828"
 ---
 # <a name="removedir-task"></a>RemoveDir (tarea)
 Quita los directorios especificados y todos sus archivos y subdirectorios.  

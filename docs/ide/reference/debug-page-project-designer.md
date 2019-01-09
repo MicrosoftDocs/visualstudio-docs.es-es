@@ -2,7 +2,6 @@
 title: Página Depuración, Diseñador de proyectos
 ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesDebug
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7b79b5aa5054781813d561089dab204bd1763bf
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: f383701017e9fb830333f7a9869aac99684333a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684767"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848264"
 ---
 # <a name="debug-page-project-designer"></a>Página Depuración, Diseñador de proyectos
 
@@ -88,5 +87,5 @@ Active o desactive esta casilla para habilitar o deshabilitar la depuración de 
 - [Depurar en Visual Studio](../../debugger/debugger-feature-tour.md)
 - [Configuración del proyecto para configuraciones de depuración en C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Configuración del proyecto para una configuración de depuración de Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [Cómo: Depurar una aplicación ClickOnce con permisos restringidos](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [Cómo: Depuración de una aplicación ClickOnce con permisos restringidos](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
 - [Cómo: Crear y editar configuraciones](../../ide/how-to-create-and-edit-configurations.md)

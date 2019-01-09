@@ -2,7 +2,6 @@
 title: Solucionar problemas de referencias rotas
 ms.date: 03/21/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: troubleshooting
 helpviewer_keywords:
 - C# projects, references
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c1879b67558cb57fba7bc462e4c7df03fb5efc8
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: c4d45dc01201747240f2ebbc50854b77fd31ec0f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32064355"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847131"
 ---
 # <a name="troubleshoot-broken-references"></a>Solucionar problemas de referencias rotas
 

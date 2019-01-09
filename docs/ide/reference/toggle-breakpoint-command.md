@@ -2,7 +2,6 @@
 title: Alternar puntos de interrupción (Comando)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.togglebreakpoint
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14f4d60bcbf7c7f394d62cc881c78ef9aa51e545
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7a2e9857e752d01f03e7d9219c5e030dae921cc9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946811"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833758"
 ---
 # <a name="toggle-breakpoint-command"></a>Alternar puntos de interrupción (Comando)
 Activa o desactiva el punto de interrupción, en función del estado actual, en la ubicación actual del archivo.
@@ -47,4 +46,4 @@ Debug.ToggleBreakpoint [text]
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Cuadro Buscar/Comando](../../ide/find-command-box.md)
-- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

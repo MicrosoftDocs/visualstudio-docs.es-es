@@ -1,8 +1,6 @@
 ---
 title: Publicación en Azure App Service
-ms.custom: ''
 ms.date: 06/22/2018
-ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: a8de7175b33a91c310da4b3d6d9e4c05c40c3522
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 4e7cf13658c33caf6b58d6a4e661a8431f377845
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341695"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853598"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Publique una aplicación web en Azure App Service mediante Visual Studio
 
@@ -35,13 +33,13 @@ Puede usar la herramienta **Publicar** para publicar aplicaciones ASP.NET, ASP.N
 
 1. En el cuadro de diálogo **Elegir un destino de publicación**, elija **App Service**.
 
-    ![Elección de Azure App Service](../deployment/media/quickstart-publish-azure.png "Choose Azure App Service")
+    ![Elección de Azure App Service](../deployment/media/quickstart-publish-azure.png "Elección Azure App Service")
 
-1. Seleccione **Publicar**. Aparece el cuadro de diálogo **Crear servicio de aplicaciones**. Inicie sesión con la cuenta de Azure, si fuera necesario; la configuración predeterminada de App Service rellena los campos.
+1. Seleccione **Publicar**. Aparecerá el cuadro de diálogo **Crear servicio de aplicaciones**. Inicie sesión con la cuenta de Azure, si fuera necesario; después la configuración predeterminada de App Service rellenará los campos.
 
-    ![Crear servicio de aplicaciones](../deployment/media/quickstart-publish-settings-app-service.png "Create Azure App Service")
+    ![Crear servicio de aplicaciones](../deployment/media/quickstart-publish-settings-app-service.png "Crear Azure App Service")
 
-1. Seleccione **Crear**. Visual Studio implementa la aplicación en Azure App Service y la aplicación web se carga en el explorador. El panel de propiedades del proyecto **Publicar** muestra la dirección URL del sitio y otros detalles.
+1. Seleccione **Crear**. Visual Studio implementará la aplicación en Azure App Service y la aplicación web se cargará en el explorador. El panel de propiedades del proyecto **Publicar** muestra la dirección URL del sitio y otros detalles.
 
     ![Panel de propiedades Publicar que muestra un resumen de perfil](../deployment/media/quickstart-publish-app-service-summary.png)
 
