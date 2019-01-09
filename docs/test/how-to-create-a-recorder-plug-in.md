@@ -9,13 +9,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 822c5cc1b657e6b5ada886ef7f10219a42df723a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d047298a263e707c2f4e09475d2f6510a586a4f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064633"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945826"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Procedimiento Crear un complemento de grabadora
 

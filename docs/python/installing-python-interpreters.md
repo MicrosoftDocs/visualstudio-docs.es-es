@@ -3,7 +3,6 @@ title: Selección e instalación de intérpretes de Python
 description: Una lista completa de los intérpretes de Python compatibles con Visual Studio, con instrucciones breves sobre dónde encontrar sus instaladores.
 ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de7bd0dcbdd36b9d30ea252a70a380b190adcce2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 60a3aff0cf0a5803cfc60b0215ca1f3cda44cef4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063566"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905233"
 ---
 # <a name="install-python-interpreters"></a>Instalación de intérpretes de Python
 

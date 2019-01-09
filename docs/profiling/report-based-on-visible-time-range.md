@@ -1,8 +1,6 @@
 ---
 title: Informe basado en el intervalo de tiempo visible | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.reportnav.profile
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9de75488c297eef426fb5a93c71f0ff3bad148d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c46404eba23c2e80a18232d01ff7a58fb92070c8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255611"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938334"
 ---
 # <a name="report-based-on-visible-time-range"></a>Informe basado en el intervalo de tiempo visible
 La vista Perfil muestra los informes que se basan en los canales y el intervalo de tiempo visible en ese momento. Para ver detalles de los diferentes subconjuntos de datos, haga clic en los elementos de la leyenda.  

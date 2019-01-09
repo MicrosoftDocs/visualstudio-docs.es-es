@@ -1,8 +1,6 @@
 ---
 title: Procedimiento Especificar comandos anteriores y posteriores a la instrumentación | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.instrument
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94c27fe4616ffcf541602cc8ab61bbaa26ddbb18
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: c80e16b3566fd0687b74c5a43363864038f88cbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53593007"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861467"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Procedimiento Especificar comandos anteriores y posteriores a la instrumentación
 

@@ -3,19 +3,18 @@ title: Medición del uso de memoria en las aplicaciones
 description: Busque pérdidas de memoria y memoria ineficaz durante la depuración con la herramienta de diagnóstico integrada del depurador.
 ms.custom: seodec18
 ms.date: 04/25/2017
-ms.technology: vs-ide-debug
 ms.topic: tutorial
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 622f35ccbe29130dea3b35b96373da0c8b39e0b7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 62bf07ba0f5f63daa369e88795824f53f9109ce6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052082"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942299"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Medición del uso de memoria en Visual Studio
 Busque pérdidas de memoria y memoria ineficaz durante la depuración con la herramienta de diagnóstico **Uso de memoria** integrada del depurador. La herramienta Uso de memoria permite tomar una o más *instantáneas* del montón de memoria nativa y administrada para que pueda conocer el impacto del uso de memoria de los tipos de objeto. Puede recopilar instantáneas de aplicaciones .NET, nativas o de modo mixto (.NET y nativo).  

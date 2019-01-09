@@ -3,7 +3,6 @@ title: Administración de las dependencias de paquete con un archivo requirement
 description: Un archivo requirements.txt describe las dependencias de un proyecto. Si recibe un proyecto que contiene un archivo requirements.txt, puede instalar fácilmente esas dependencias en un solo paso.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1f6fefdeac06d28229b99a79f432f82ed844d950
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 209944ddfc86feb3fe5dbfcd7144f3f6e0d66451
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066183"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968532"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Administración de los paquetes necesarios con requirements.txt
 

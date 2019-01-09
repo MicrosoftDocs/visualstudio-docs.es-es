@@ -1,8 +1,6 @@
 ---
 title: Escribir tareas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, writing tasks
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cf8c8a05d07d1a75a8794c52a2f89a55f01419e
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 471e707b13992a0edf06eb8136d36f3f415b9d11
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152072"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922170"
 ---
 # <a name="task-writing"></a>Escribir tareas
 Las tareas proporcionan el código que se ejecuta durante el proceso de compilación. Las tareas están contenidas en destinos. En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] se incluye una biblioteca de tareas típicas, y también puede crear sus propias tareas. Para más información sobre la biblioteca de tareas incluida en [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], consulte [Referencia de tareas](../msbuild/msbuild-task-reference.md).  
@@ -31,7 +29,7 @@ Las tareas proporcionan el código que se ejecuta durante el proceso de compilac
   
 -   Implementar la interfaz <xref:Microsoft.Build.Framework.ITask> directamente.  
   
--   Derive la clase de la clase auxiliar, <xref:Microsoft.Build.Utilities.Task>, que se define en el ensamblado *Microsoft.Build.Utilities.dll*. La tarea implementa ITask y proporciona implementaciones predeterminadas de algunos miembros ITask. Además, el registro es más sencillo.  
+-   Derivar la clase de la clase del asistente, <xref:Microsoft.Build.Utilities.Task>, que se define en el ensamblado *Microsoft.Build.Utilities.dll*. La tarea implementa ITask y proporciona implementaciones predeterminadas de algunos miembros ITask. Además, el registro es más sencillo.  
 
 En ambos casos, debe agregar a la clase un método denominado `Execute`, que es el método al que se llama cuando se ejecuta la tarea. Este método no utiliza ningún parámetro y devuelve un valor `Boolean`: `true` si la tarea se realizó correctamente o `false` si se produjo un error. En el ejemplo siguiente se muestra una tarea que no realiza ninguna acción y devuelve `true`.  
   
@@ -107,7 +105,7 @@ namespace MyTasks
 >  Para ver una lista de las tareas que se proporcionan con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], puede visualizar el contenido de *Microsoft.Common.Tasks*.  
   
 ## <a name="raise-events-from-a-task"></a>Generación de eventos de una tarea  
- Si la tarea se deriva de la clase auxiliar <xref:Microsoft.Build.Utilities.Task>, puede usar cualquiera de los siguientes métodos auxiliares en la clase <xref:Microsoft.Build.Utilities.Task> para generar eventos que cualquier registrador registrado detectará y mostrará:  
+ Si la tarea se deriva de la clase del asistente <xref:Microsoft.Build.Utilities.Task>, puede usar cualquiera de los siguientes métodos del asistente en la clase <xref:Microsoft.Build.Utilities.Task> para generar eventos que cualquier registrador registrado detectará y mostrará:  
   
 ```csharp
 public override bool Execute()  
@@ -162,7 +160,7 @@ public string RequiredProperty
 ## <a name="example"></a>Ejemplo  
   
 ### <a name="description"></a>Descripción  
- La clase [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] siguiente muestra una tarea que deriva de la clase auxiliar <xref:Microsoft.Build.Utilities.Task>. Esta tarea devuelve `true`, lo que indica que se ha realizado correctamente.  
+ La clase [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] siguiente muestra una tarea que deriva de la clase del asistente <xref:Microsoft.Build.Utilities.Task>. Esta tarea devuelve `true`, lo que indica que se ha realizado correctamente.  
   
 ### <a name="code"></a>Código  
   
@@ -244,7 +242,7 @@ namespace SimpleTask2
 ## <a name="example"></a>Ejemplo  
   
 ### <a name="description"></a>Descripción  
- Esta clase [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] muestra una tarea que deriva de la clase auxiliar <xref:Microsoft.Build.Utilities.Task>. Tiene una propiedad de cadena necesaria y genera un evento que todos los registradores registrados muestran.  
+ Esta clase [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] muestra una tarea que deriva de la clase del asistente <xref:Microsoft.Build.Utilities.Task>. Tiene una propiedad de cadena necesaria y genera un evento que todos los registradores registrados muestran.  
   
 ### <a name="code"></a>Código  
  [!code-csharp[msbuild_SimpleTask3#1](../msbuild/codesnippet/CSharp/task-writing_1.cs)]  

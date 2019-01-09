@@ -2,9 +2,8 @@
 title: Información sobre el paso 4 del tutorial de Flask en Visual Studio, Plantillas de proyecto web
 titleSuffix: ''
 description: Un recorrido por los aspectos básicos de Flask en el contexto de los proyectos de Visual Studio, en particular las características que ofrecen las plantillas Proyecto web de Flask y Proyecto web de Flask/Jade.
-ms.date: 09/04/2018
+ms.date: 01/07/2019
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c072d1187abf463cc2f185946f7e238bb091a534
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 74118aee63a67310656926d84300ba180ff74188
+ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051706"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060834"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Paso 4: Uso de la plantilla de proyecto web completa de Flask
 

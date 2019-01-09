@@ -1,8 +1,6 @@
 ---
 title: Tiempo de procesamiento de la interfaz de usuario | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.uiprocessing
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad48cd912bfdc117496bc9f876a1a2174e76dc04
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 51f34bb5396c1cadeab7c02c72f8ed13412e33b0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34477540"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858943"
 ---
 # <a name="ui-processing-time"></a>Tiempo de procesamiento de la interfaz de usuario
 Estos segmentos de la escala de tiempo están asociados a tiempos de bloqueo que se clasifican como procesamiento de la interfaz de usuario. Esto implica que un subproceso está generando mensajes de Windows o realizando otro trabajo de la interfaz de usuario. Durante este tiempo, se ha bloqueado un subproceso en una API que el visualizador de simultaneidad está contando como procesamiento de la interfaz de usuario. Las API como `GetMessage()` y `MsgWaitForMultipleObjects()` se incluyen en este grupo.  

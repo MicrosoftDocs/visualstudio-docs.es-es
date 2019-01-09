@@ -1,8 +1,6 @@
 ---
 title: Registrar en un entorno de varios procesadores | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, multi-processor logging
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f418c9f3823aaceb4237546cadc68ea2f2bf95e
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: aad9079322dcc561922e37ffa8b56f417d9b932b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879257"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950058"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Registrar en un entorno de varios procesadores
 La capacidad de MSBuild para usar varios procesadores puede reducir significativamente el tiempo de compilación de los proyectos, pero también agrega complejidad al proceso de registro. En un entorno de un solo procesador, el registrador puede administrar eventos de entrada, mensajes, advertencias y errores de una manera predecible y secuencial. Sin embargo, en un entorno de varios procesadores, los eventos de varios orígenes pueden llegar simultáneamente o desordenados. MSBuild dispone de un nuevo registrador para varios procesadores y habilita la creación de "registradores de reenvío" personalizados.  

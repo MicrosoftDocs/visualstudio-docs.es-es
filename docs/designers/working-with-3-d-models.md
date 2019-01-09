@@ -2,7 +2,6 @@
 title: Trabajo con modelos en 3D
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: fa035091-1354-4d1c-be44-4fb83860466f
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d38eb26e40d78ccdca57110d5a7b7966393e7859
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 4c1fd3c3a5067c565924a3580691c386453a23b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077833"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850744"
 ---
 # <a name="work-with-3d-models"></a>Trabajar con modelos en 3D
 

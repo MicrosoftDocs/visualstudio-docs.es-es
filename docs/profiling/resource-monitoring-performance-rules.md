@@ -1,8 +1,6 @@
 ---
 title: Reglas de rendimiento de la supervisión de recursos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: f0f77faf-0a05-4718-a2c5-47934be40868
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 433a89ae2a7cf8c9e20ec3711dcebe1514ae021b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7e4071820aece2f58f0a1345e1110a80c9f76f0f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31584586"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947925"
 ---
 # <a name="resource-monitoring-performance-rules"></a>Reglas de rendimiento de la supervisión de recursos
 En la categoría de supervisión de recursos, los mensajes de rendimiento proporcionan datos adicionales sobre el rendimiento de la aplicación. Puede usar estos datos para analizar problemas de rendimiento. Estas reglas son informativas y se notifican para cada generación de perfiles.  

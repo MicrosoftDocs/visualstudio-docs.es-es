@@ -3,7 +3,6 @@ title: Referencia de ventana Entornos de Python
 description: Detalles de cada una de las pestañas que aparecen en la ventana Entornos de Python en Visual Studio.
 ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3bd65efb0cbaf38de88acb87c9078ee98f3869bc
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 076deaaa326f1e19b14670a91e988dc8eebef450
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051435"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989573"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Referencia de pestañas de la ventana Entorno de Python
 
