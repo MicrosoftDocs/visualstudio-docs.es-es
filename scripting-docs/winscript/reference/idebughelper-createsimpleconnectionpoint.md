@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fcc598fa97d47a564ddb12aaa0480e42b6601118
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6b478f425b1aaf284bc7af744f5ac99f9be7fe8c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727815"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097076"
 ---
 # <a name="idebughelpercreatesimpleconnectionpoint"></a>IDebugHelper::CreateSimpleConnectionPoint
-Devuelve una interfaz de evento que contenga un determinado `IDispatch` objeto.  
+Devuelve una interfaz de evento que encapsula un determinado `IDispatch` objeto.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT CreateSimpleConnectionPoint(  
    IDispatch*                pdisp  
    ISimpleConnectionPoint**  ppscp  
@@ -42,7 +42,7 @@ HRESULT CreateSimpleConnectionPoint(
  [in] La `IDispatch` objeto que se va a ajustar.  
   
  `ppscp`  
- [out] La interfaz de eventos que contiene `pdisp`.  
+ [out] La interfaz de eventos que se ajusta `pdisp`.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -52,7 +52,7 @@ HRESULT CreateSimpleConnectionPoint(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Devuelve una interfaz de evento que ajusta el determinado `IDispatch` (consulte [ISimpleConnectionPoint (interfaz)](../../winscript/reference/isimpleconnectionpoint-interface.md)).  
+ Devuelve una interfaz de eventos que se ajusta el determinado `IDispatch` (consulte [ISimpleConnectionPoint (interfaz)](../../winscript/reference/isimpleconnectionpoint-interface.md)).  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugHelper (interfaz)](../../winscript/reference/idebughelper-interface.md)   

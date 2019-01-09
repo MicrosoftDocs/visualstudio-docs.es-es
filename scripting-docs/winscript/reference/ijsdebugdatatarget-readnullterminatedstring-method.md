@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugdatatarget:: Readnullterminatedstring (método) | Documentos de Microsoft'
+title: Readnullterminatedstring (método) | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 94cb90b8b44aa5dab13a2e916dec22ae950e77ef
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a681dcedf873f0cb96f47b14278f47271cd43ec8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729505"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093332"
 ---
 # <a name="ijsdebugdatatargetreadnullterminatedstring-method"></a>IJsDebugDataTarget::ReadNullTerminatedString (Método)
 Lee el número especificado de caracteres desde el destino.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT ReadNullTerminatedString(  
    UINT64 address,  
    UINT16 characterSize,  
@@ -39,21 +39,21 @@ HRESULT ReadNullTerminatedString(
   
 #### <a name="parameters"></a>Parámetros  
  `address`  
- [in] La dirección que leer.  
+ [in] Para leer desde la dirección.  
   
  `characterSize`  
  [in] tamaño de cada carácter de la cadena  
   
  `maxCharacters`  
- [in] El número máximo de caracteres que se va a leer. maxCharacters debe ser razonable. Se producirá un error en cualquier solicitud de más de 128MB de memoria.  Si la cadena es mayor que maxCharacters, la cadena de resultado se truncará después maxCharacters.  
+ [in] El número máximo de caracteres que se va a leer. maxCharacters debe ser razonable. Se producirá un error en cualquier solicitud de más de 128MB de memoria.  Si la cadena es mayor que maxCharacters, la cadena de resultado se truncará después de maxCharacters.  
   
  `pString`  
- [out] El BSTR lee desde el destino.  
+ [out] El BSTR leído del destino.  
   
 ## <a name="return-value"></a>Valor devuelto  
   
 ## <a name="remarks"></a>Comentarios  
- Devuelva S_FALSE si truncado.  
+ Devuelve S_FALSE si se trunca.  
   
 ## <a name="requirements"></a>Requisitos  
  **Encabezado:** jscript9diag.h  

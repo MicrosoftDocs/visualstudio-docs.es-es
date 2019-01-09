@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetDebugDocumentHost | Documentos de Microsoft
+title: 'Idebugdocumenthelper:: Setdebugdocumenthost | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d1377edaa5b10a7ebb06713e512010be010a9d3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9c4a935d849fed2b617abf5ee33ca2901b9c944c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726375"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088223"
 ---
 # <a name="idebugdocumenthelpersetdebugdocumenthost"></a>IDebugDocumentHelper::SetDebugDocumentHost
 Establece el `IDebugDocumentHost` para este documento.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT SetDebugDocumentHost(  
    IDebugDocumentHost*  pddh  
 );  
@@ -48,7 +48,7 @@ HRESULT SetDebugDocumentHost(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- El `IDebugDocumentHost` interfaz se usa para colorear la sintaxis de host inteligente, capturar texto aplazada y devolver objetos de control de recién creado en el documento contextos.  
+ El `IDebugDocumentHost` interfaz se utiliza para colorear la sintaxis para hosts inteligentes, contextos de documento de recuperar texto diferido y devolver objetos de control para recién creada.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugDocumentHelper (interfaz)](../../winscript/reference/idebugdocumenthelper-interface.md)   

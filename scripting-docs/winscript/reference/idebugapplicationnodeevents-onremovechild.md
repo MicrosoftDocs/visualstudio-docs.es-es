@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a62f187286f66f8adff8acda339e02a02bc6225
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fab0d9e70a3c3536043b4050b2f34bf2ae7ab32c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725995"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092214"
 ---
 # <a name="idebugapplicationnodeeventsonremovechild"></a>IDebugApplicationNodeEvents::onRemoveChild
 Controla el evento cuando se quita un nodo secundario de un objeto de nodo de la aplicación de depuración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT onRemoveChild(  
    IDebugApplicationNode*  prddpChild  
 );  
@@ -38,7 +38,7 @@ HRESULT onRemoveChild(
   
 #### <a name="parameters"></a>Parámetros  
  `prddpChild`  
- [in] El nodo de aplicación secundario que se quitó.  
+ [in] El nodo de aplicación secundario que se ha quitado.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  

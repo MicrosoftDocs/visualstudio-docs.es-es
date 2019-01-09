@@ -12,22 +12,22 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e0c8b464004337b41280d6d19821f0fb9f1f50a5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1b20afd05116a98e81a3eeea82e83e6ed200c44a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724465"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090823"
 ---
 # <a name="iactivescriptprofilercontrol5-interface"></a>IActiveScriptProfilerControl5 (Interfaz)
-Proporciona un método para enumerar sobre los objetos del montón GC asociados con un motor de scripts.  
+Proporciona un método para enumerar los objetos del montón GC asociados con un motor de scripts.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 interface IActiveScriptProfilerControl5 : IActiveScriptProfilerControl4  
 ```  
   
 ## <a name="methods"></a>Métodos  
  [IActiveScriptProfilerControl5::EnumHeap2 (Método)](../../winscript/reference/iactivescriptprofilercontrol5-enumheap2-method.md)  
- Devuelve una interfaz ([IActiveScriptProfilerHeapEnum (interfaz)](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)) que se puede utilizar para recorrer en iteración los objetos de montón del GC en el contexto del motor de script asociado.
+ Devuelve una interfaz ([IActiveScriptProfilerHeapEnum (interfaz)](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)) que puede utilizarse para recorrer en iteración los objetos del montón GC en el contexto del motor de script asociado.

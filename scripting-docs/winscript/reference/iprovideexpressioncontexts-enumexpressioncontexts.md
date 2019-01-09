@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c47619fface892e7e0d80141d7d4be53398a356e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2dd18408235a5621354531a2fd228ff44a19d6a1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729425"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088717"
 ---
 # <a name="iprovideexpressioncontextsenumexpressioncontexts"></a>IProvideExpressionContexts::EnumExpressionContexts
 Devuelve un enumerador de contextos de expresión que se conoce por este componente.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT EnumExpressionContexts(  
    IEnumDebugExpressionContexts**  ppedec  
 );  
@@ -38,7 +38,7 @@ HRESULT EnumExpressionContexts(
   
 #### <a name="parameters"></a>Parámetros  
  `ppedec`  
- [out] Enumerador de contextos de expresión que se conoce por este componente.  
+ [out] Un enumerador de los contextos de expresión conocido por este componente.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -48,10 +48,10 @@ HRESULT EnumExpressionContexts(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- El Administrador de depuración de procesos usa este método para buscar todos los contextos de expresión global asociados a un subproceso determinado.  
+ El Administrador de depuración del proceso, usa este método para buscar todos los contextos de expresión global asociados a un subproceso determinado.  
   
 > [!NOTE]
->  Este método se llama desde el subproceso de interés. Es responsabilidad del implementador para identificar el subproceso actual y devuelve un enumerador correspondiente.  
+>  Este método se llama desde dentro del subproceso de interés. Es responsabilidad del implementador para identificar el subproceso actual y devuelve un enumerador correspondiente.  
   
 ## <a name="see-also"></a>Vea también  
  [IProvideExpressionContexts (Interfaz)](../../winscript/reference/iprovideexpressioncontexts-interface.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2eafe5477759dbad109e5ae6294b477d56f9ee14
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4190bef0ca5cbedf709e65fafd1f49911ebb6510
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726205"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090199"
 ---
 # <a name="idebugapplicationthreadsetstatestring"></a>IDebugApplicationThread::SetStateString
-Establece la descripción del estado de los subprocesos.  
+Establece la descripción del estado del subproceso.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT SetStateString(  
    LPCOLESTR  pstrState  
 );  
@@ -38,7 +38,7 @@ HRESULT SetStateString(
   
 #### <a name="parameters"></a>Parámetros  
  `pstrState`  
- [in] La descripción del estado de subproceso.  
+ [in] La descripción del estado del subproceso.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -48,7 +48,7 @@ HRESULT SetStateString(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método establece la descripción del estado de subproceso.  
+ Este método establece la descripción del estado del subproceso.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugApplicationThread (Interfaz)](../../winscript/reference/idebugapplicationthread-interface.md)

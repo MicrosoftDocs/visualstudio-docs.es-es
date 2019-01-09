@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 922f95206d341773632b84c3922ea3b240d8d1ed
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 629ecb8427539069bb9e235e733140331875288c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727975"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091824"
 ---
 # <a name="idisperrorgetsource"></a>IDispError::GetSource
-Devuelve el identificador de programación dependiente del idioma para la clase o la aplicación que ha provocado el error.  
+Devuelve el identificador de programación dependiente del idioma para la clase o aplicación que generó el error.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetSource(  
    BSTR*  pbstrSource  
 );  
@@ -48,7 +48,7 @@ HRESULT GetSource(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método se utiliza para determinar la clase o la aplicación donde se produjo la excepción. Puede devolver el identificador de programación en el idioma especificado por el identificador de configuración regional (LCID) suministrado en el momento de la invocación.  
+ Este método se utiliza para determinar la clase o la aplicación donde se produjo la excepción. El identificador de programación puede devolverse en el idioma especificado por el identificador de configuración regional (LCID) suministrado en el momento de invocación.  
   
 > [!NOTE]
 >  Este método no se implementa.  

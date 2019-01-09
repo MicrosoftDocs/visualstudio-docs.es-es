@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14d293649e3a6a87c7f594e244378dc2a7e15ac6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2c0d7b809f18407bfeb3de59c9cbb6e6e26911ad
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727605"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093345"
 ---
 # <a name="idebugexpressionstart"></a>IDebugExpression::Start
 Comienza la evaluación de la expresión.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT Start(  
    IDebugExpressionCallBack*  pdecb  
 );  
@@ -38,7 +38,7 @@ HRESULT Start(
   
 #### <a name="parameters"></a>Parámetros  
  `pdecb`  
- [in] Devolución de llamada para que indica cuándo se completa la evaluación de expresiones. Si este parámetro es `NULL`, se desencadena ningún evento y el cliente debe sondear el estado de la expresión utilizando `QueryIsComplete`.  
+ [in] Devolución de llamada para que indica cuándo se completa la evaluación de expresiones. Si este parámetro es `NULL`, se desencadenará ningún evento y el cliente debe sondear el estado de la expresión utilizando `QueryIsComplete`.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  

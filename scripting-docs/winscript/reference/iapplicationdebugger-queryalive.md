@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48571476407c29b9af949bd6f626d14ea822f2e8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 00055eaaf79e24a9f59c380318b9c24fa476f1af
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725325"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096075"
 ---
 # <a name="iapplicationdebuggerqueryalive"></a>IApplicationDebugger::QueryAlive
 Indica si el depurador está respondiendo.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT QueryAlive();  
 ```  
   
@@ -47,7 +47,7 @@ HRESULT QueryAlive();
 ## <a name="remarks"></a>Comentarios  
  Este método indica si el depurador está respondiendo. Las implementaciones de este método siempre deben devolver `S_OK`.  
   
- Si el proceso del depurador finaliza inesperadamente, COM devuelve un error en el proxy de cálculo de referencias para las llamadas a este método.  
+ Si el proceso del depurador finaliza inesperadamente, COM devuelve un error desde el proxy de cálculo de referencias para las llamadas a este método.  
   
 ## <a name="see-also"></a>Vea también  
  [IApplicationDebugger (Interfaz)](../../winscript/reference/iapplicationdebugger-interface.md)

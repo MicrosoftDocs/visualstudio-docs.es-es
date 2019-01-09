@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99a805d810c928e8e9a1b6f4e569f8eaa89f63d7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a7e4f3e7cffe7c127b7ad4fdde47e58e6bc2a31c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728695"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091278"
 ---
 # <a name="iremotedebugapplicationenumglobalexpressioncontexts"></a>IRemoteDebugApplication::EnumGlobalExpressionContexts
-Enumera los contextos de expresión global para todos los lenguajes que se ejecutan en esta aplicación.  
+Enumera los contextos de expresión global para todos los idiomas que se ejecutan en esta aplicación.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT EnumGlobalExpressionContexts(  
    IEnumDebugExpressionContexts**  ppedec  
 );  
@@ -38,7 +38,7 @@ HRESULT EnumGlobalExpressionContexts(
   
 #### <a name="parameters"></a>Parámetros  
  `ppedec`  
- [out] Enumerador que se enumera los contextos de expresión global para todos los lenguajes que se ejecutan en esta aplicación.  
+ [out] Enumerador que enumera los contextos de expresión global para todos los idiomas que se ejecutan en esta aplicación.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -48,7 +48,7 @@ HRESULT EnumGlobalExpressionContexts(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método enumera los contextos de expresión global para todos los lenguajes que se ejecutan en esta aplicación.  
+ Este método enumera los contextos de expresión global para todos los idiomas que se ejecutan en esta aplicación.  
   
 ## <a name="see-also"></a>Vea también  
  [IRemoteDebugApplication (Interfaz)](../../winscript/reference/iremotedebugapplication-interface.md)

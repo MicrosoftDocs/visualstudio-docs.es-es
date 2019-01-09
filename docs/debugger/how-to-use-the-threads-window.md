@@ -1,9 +1,7 @@
 ---
 title: Depurar una aplicación multiproceso
 description: Depurar con la ventana subprocesos y la barra de herramientas ubicación de depuración en Visual Studio
-ms.custom: ''
 ms.date: 11/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd66d7f9d8f214e8e7166a77162553b694e20cc5
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: f86e85fd7f5d8c767b64d55efd0837de9f99b340
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389408"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893712"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window"></a>Tutorial: Depurar una aplicación multiproceso con la ventana subprocesos
 
@@ -99,7 +97,7 @@ Marcar y desmarcar subprocesos desde el editor de código fuente o desde el **su
 
 1. Abra el **ubicación de depuración** barra de herramientas seleccionando **vista** > **las barras de herramientas** > **ubicación de depuración**. También puede haga clic en el área de barra de herramientas y seleccione **ubicación de depuración**. 
    
-1. El **ubicación de depuración** barra de herramientas tiene tres campos: **proceso**, **subprocesos**, y **marco de pila**. Lista desplegable el **subprocesos** lista y tenga en cuenta cuántos subprocesos no existe. En el **subproceso** lista, el subproceso actualmente en ejecución se ha marcado por un **>** símbolos. 
+1. El **ubicación de depuración** barra de herramientas tiene tres campos: **Proceso**, **subprocesos**, y **marco de pila**. Lista desplegable el **subprocesos** lista y tenga en cuenta cuántos subprocesos no existe. En el **subproceso** lista, el subproceso actualmente en ejecución se ha marcado por un **>** símbolos. 
    
 1. En la ventana de código fuente, mantenga el mouse sobre un icono de marcador de subproceso en el margen interno y seleccione el icono de marca (o uno de los iconos de indicador vacío) en la información sobre datos. El icono de marca cambia a rojo. 
    
@@ -188,4 +186,4 @@ Ahora que ha aprendido los conceptos básicos de depurar aplicaciones multiproce
   
 ## <a name="see-also"></a>Vea también  
  [Depuración de aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Cambio a otro subproceso durante la depuración](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+ [Cómo: cambiar a otro subproceso durante la depuración](../debugger/how-to-switch-to-another-thread-while-debugging.md)

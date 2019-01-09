@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::GetSubItemName | Documentos de Microsoft
+title: IScriptScriptlet::GetSubItemName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 43b8483e8a61c25a3911a35d4721c51f7b558530
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6962edbc1f639e23e159915ca1aa6ef165433ce0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733705"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096647"
 ---
 # <a name="iscriptscriptletgetsubitemname"></a>IScriptScriptlet::GetSubItemName
 Devuelve el último identificador en el nombre completo de host del objeto del scriptlet.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetSubItemName(  
    BSTR               *pbstr  
 );  
@@ -40,10 +40,10 @@ HRESULT GetSubItemName(
  `pbstr`  
  [out] Si el host completo del scriptlet nombre tiene más de un nivel, `pbstr` devuelve la dirección del búfer del identificador en el segundo nivel.  
   
- Si el host completo del nombre de scriptlet tiene un nivel, `pbstr` devuelve la dirección del búfer del identificador del primer nivel.  
+ Si el host completo del scriptlet nombre tiene un nivel `pbstr` devuelve la dirección del búfer del identificador del primer nivel.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  

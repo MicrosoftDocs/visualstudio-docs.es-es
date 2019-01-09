@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63489dad447ece245e14e483127cb67327d55fe5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4f042fa0f8fb087b796e306074152f11afd7fed4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727925"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091486"
 ---
 # <a name="idispatchexgetmembername"></a>IDispatchEx::GetMemberName
 Recupera el nombre de un miembro.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetMemberName(  
    DISPID id,  
    BSTR *pbstrName  
@@ -54,7 +54,7 @@ HRESULT GetMemberName(
   
 ## <a name="example"></a>Ejemplo  
   
-```  
+```cpp
 HRESULT hr;  
    BSTR bstrName;  
    DISPID dispid;  

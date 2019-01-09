@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::CreateApplicationNode | Documentos de Microsoft
+title: IDebugApplication::CreateApplicationNode | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26ed66921175659d7125a0e32a043e7ebcf98cc6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 71aea5c3a7efb6534daab5fc916187c0f56122b3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725255"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095555"
 ---
 # <a name="idebugapplicationcreateapplicationnode"></a>IDebugApplication::CreateApplicationNode
-Crea un nuevo nodo de aplicación que está asociado a un proveedor de documento específico.  
+Crea un nuevo nodo de la aplicación que está asociado con un proveedor de documento específico.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT CreateApplicationNode(  
    IDebugApplicationNode**  ppdanNew  
 );  
@@ -48,7 +48,7 @@ HRESULT CreateApplicationNode(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- El nuevo nodo de aplicación no está visible hasta que se conecta a un nodo primario.  
+ El nuevo nodo de la aplicación no es visible hasta que se conecta a un nodo primario.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugApplication (Interfaz)](../../winscript/reference/idebugapplication-interface.md)

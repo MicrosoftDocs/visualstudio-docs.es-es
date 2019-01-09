@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57cb567926f92c77f52a339fa2fecd7a315bd1b6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2694ba3a1ddb70127de5ba3b197cd044f3b6b9af
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893629"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086326"
 ---
 # <a name="ienumdebugextendedpropertyinfonext"></a>IEnumDebugExtendedPropertyInfo::Next
 Recupera un número especificado de`ExtendedDebugPropertyInfo` estructuras en una secuencia de enumeración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT Next (  
    ULONGcelt,  
    ExtendedDebugPropertyInfo *rgelt,  

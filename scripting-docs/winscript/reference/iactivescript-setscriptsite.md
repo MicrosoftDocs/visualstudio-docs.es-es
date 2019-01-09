@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::SetScriptSite | Documentos de Microsoft
+title: 'IActiveScript:: Setscriptsite | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 11fa9003abb03c42adcbf3a548bb5b90d763a344
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b2a96732e904c7249dc5228ef414c3315012ec56
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645575"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097440"
 ---
 # <a name="iactivescriptsetscriptsite"></a>IActiveScript::SetScriptSite
-Notifica al motor de scripting de la [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) sitio de la interfaz proporcionada por el host. Llamar a este método antes que cualquier otro [IActiveScript](../../winscript/reference/iactivescript.md) se utiliza métodos de interfaz.  
+Notifica al motor de scripting de la [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) sitio de interfaz proporcionado por el host. Llame a este método antes que cualquier otro [IActiveScript](../../winscript/reference/iactivescript.md) se usa los métodos de interfaz.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT SetScriptSite(  
     IActiveScriptSite *pScriptSite  // address of host script site  
 );  
@@ -38,7 +38,7 @@ HRESULT SetScriptSite(
   
 #### <a name="parameters"></a>Parámetros  
  `pScriptSite`  
- [in] Dirección del sitio de script proporcionado por el host que desee asociar a esta instancia del motor de scripting. El sitio debe asignarse de forma exclusiva a esta instancia del motor de scripting; estos no se comparten con otros motores de secuencias de comandos.  
+ [in] Dirección del sitio proporcionada por el host de script que se asociará con esta instancia del motor de scripting. El sitio debe asignarse de forma exclusiva a esta instancia del motor de scripting; no se puede compartir con otros motores de scripting.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Devuelve uno de los siguientes valores:  
@@ -49,7 +49,7 @@ HRESULT SetScriptSite(
 |`E_FAIL`|Se produjo un error no especificado; el motor de scripting no pudo finalizar la inicialización del sitio.|  
 |`E_INVALIDARG`|Un argumento no era válido.|  
 |`E_POINTER`|Se especificó un puntero no válido.|  
-|`E_UNEXPECTED`|No se esperaba la llamada (por ejemplo, ya se estableció un sitio).|  
+|`E_UNEXPECTED`|No se esperaba la llamada (por ejemplo, ya se ha establecido un sitio).|  
   
 ## <a name="see-also"></a>Vea también  
  [IActiveScript](../../winscript/reference/iactivescript.md)

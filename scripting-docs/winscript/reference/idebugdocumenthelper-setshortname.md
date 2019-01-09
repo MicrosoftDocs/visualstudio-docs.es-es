@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 69674b5639c7d59a4551192177d9ebdafd27ac99
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7014ecc858734a4dea6f9c4c2453f101c28d8996
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726095"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089939"
 ---
 # <a name="idebugdocumenthelpersetshortname"></a>IDebugDocumentHelper::SetShortName
 Establece el nombre corto para el documento.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT SetShortName(  
    LPCOLESTR  pszShortName  
 );  
@@ -48,7 +48,7 @@ HRESULT SetShortName(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método establece un nuevo nombre corto para el documento.  
+ Este método establece un nombre corto para el documento.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugDocumentHelper (Interfaz)](../../winscript/reference/idebugdocumenthelper-interface.md)

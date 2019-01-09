@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62b9f3b5877f7919a57e9747355276e438240796
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e0251d4b578a33a9eb5448c1ceb2b2607f82d43a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888910"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096777"
 ---
 # <a name="extendeddebugpropertyinfo-structure"></a>ExtendedDebugPropertyInfo (Estructura)
 Extiende el `DebugPropertyInfo` estructura con miembros adicionales para caracterizar la propiedad extendida.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 typedef struct ExtendedDebugPropertyInfo{  
    DBGPROP_INFO_FLAGS  dwValidFields;  
    LPOLESTR  bstrName;  

@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugdatatarget:: Allocatevirtualmemory (método) | Documentos de Microsoft'
+title: Allocatevirtualmemory (método) | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 65b29bbf9a3405bcfab779bd877f798a863538d5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4eaf448e0be224f853674084a18f7aa2a6bd5ed7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728405"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086923"
 ---
 # <a name="ijsdebugdatatargetallocatevirtualmemory-method"></a>IJsDebugDataTarget::AllocateVirtualMemory (Método)
-Reserva o confirma una región de memoria en el espacio de direcciones virtuales del proceso de destino.  
+Reserva y/o confirma una región de memoria en el espacio de direcciones virtuales del proceso de destino.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT AllocateVirtualMemory(  
    UINT64 address,  
    DWORD size,  
@@ -40,24 +40,24 @@ HRESULT AllocateVirtualMemory(
   
 #### <a name="parameters"></a>Parámetros  
  `address`  
- [in] La dirección dentro del proceso de destino donde la memoria debe ser confirmada o reservada. Normalmente, este valor es cero, en la que el sistema elige una dirección.  
+ [in] La dirección dentro del proceso de destino donde la memoria debería asignarse o reservada. Normalmente, este valor es cero, en la que el sistema elige una dirección.  
   
  `size`  
- [in] El tamaño de la región de memoria para asignar, en bytes. El sistema automáticamente redondeará al límite de página siguiente.  
+ [in] El tamaño de la región de memoria para asignar, en bytes. El sistema redondea automáticamente hasta que el límite de página siguiente.  
   
  `allocationType`  
- [in] Indica el tipo de asignación para realizar. Esto suele ser MEM_COMMIT &#124; MEM_RESERVE (0 x 3000) que se reserva y confirma una asignación en un solo paso.  
+ [in] Indica el tipo de asignación a realizar. Normalmente es MEM_COMMIT &#124; MEM_RESERVE (0 x 3000) que se reserva y confirma una asignación en un solo paso.  
   
  `pageProtection`  
- [in] La protección de memoria para la región de páginas que se va a asignar. Si las páginas se confirmarse, puede especificar cualquiera de las constantes de protección de memoria (por ejemplo, PAGE_READWRITE, PAGE_EXECUTE).  
+ [in] La protección de memoria para la región de páginas asignadas. Si las páginas están confirmadas, puede especificar cualquiera de las constantes de protección de memoria (por ejemplo, PAGE_READWRITE, PAGE_EXECUTE).  
   
  `pAllocatedAddress`  
- [out] Dirección base de la región asignada de páginas.  
+ [out] Dirección base de la región de páginas asignada.  
   
 ## <a name="return-value"></a>Valor devuelto  
   
 ## <a name="remarks"></a>Comentarios  
- La función inicializa la memoria que asigna a cero, a menos que se utiliza MEM_RESET. Para obtener más información, vea la API de Win32 VirtualAlloc.  
+ La función inicializa la memoria que asigna a cero, a menos que se utilice mem_reset. Para obtener más información, vea la API VirtualAlloc de Win32.  
   
 ## <a name="requirements"></a>Requisitos  
  **Encabezado:** jscript9diag.h  

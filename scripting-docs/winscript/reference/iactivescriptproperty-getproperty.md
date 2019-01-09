@@ -18,19 +18,19 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7cd5c7ac948a9001688de69f9db9ee31624ca33d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 0e68cb73b1b94b84d5133e1c7489bc8bf6309aea
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284151"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091304"
 ---
 # <a name="iactivescriptpropertygetproperty"></a>IActiveScriptProperty::GetProperty
 Obtiene la propiedad especificada por el parámetro.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetProperty(  
 // The property value:  
     uint dwProperty,    
@@ -46,7 +46,7 @@ HRESULT GetProperty(
  Para obtener el valor de propiedad.  
   
  `pvarIndex`  
- No usado.  
+ No se utiliza.  
   
  `pvarValue`  
  El valor de la propiedad.  

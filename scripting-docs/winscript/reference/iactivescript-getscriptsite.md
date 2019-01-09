@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptSite | Documentos de Microsoft
+title: IActiveScript::GetScriptSite | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 961483d45c72018bc216306d6c1aba0400a367ad
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 85b7d94ccb9e2589b10bf705721fc289df9638a9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640375"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094164"
 ---
 # <a name="iactivescriptgetscriptsite"></a>IActiveScript::GetScriptSite
 Recupera el objeto de sitio asociado con el motor de scripts de Windows.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetScriptSite(  
     REFIID iid,           // interface identifier  
     void **ppvSiteObject  // address of host site interface  

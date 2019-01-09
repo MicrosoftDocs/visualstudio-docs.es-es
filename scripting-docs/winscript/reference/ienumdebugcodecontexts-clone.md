@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCodeContexts::Clone | Documentos de Microsoft
+title: IEnumDebugCodeContexts::Clone | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ae10efb0f3429d0355b270be69d073876ca1b74
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0bdf003c73dd6f98f6f102f3b7dd36b1d69a522c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727495"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089536"
 ---
 # <a name="ienumdebugcodecontextsclone"></a>IEnumDebugCodeContexts::Clone
 Crea un enumerador que contiene el mismo estado que el enumerador actual.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT Clone(  
    IEnumDebugCodeContexts**  ppescc  
 );  

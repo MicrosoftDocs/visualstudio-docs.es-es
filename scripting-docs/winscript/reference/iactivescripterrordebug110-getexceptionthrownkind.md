@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8306b1d4ff68fe9eec00d47d8c702278e89fc37b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ce3a164f3ee4d81ca849db7c4745948ffe17d56e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724395"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097193"
 ---
 # <a name="iactivescripterrordebug110getexceptionthrownkind"></a>IActiveScriptErrorDebug110::GetExceptionThrownKind
 Devuelve un valor que indica la clase de excepción producida.  
@@ -29,7 +29,7 @@ Devuelve un valor que indica la clase de excepción producida.
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetExceptionThrownKind(  
    SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND*  pExceptionKind  
 );  
@@ -37,7 +37,7 @@ HRESULT GetExceptionThrownKind(
   
 #### <a name="parameters"></a>Parámetros  
  `pExceptionKind`  
- [out] El tipo de excepción que se produce (por ejemplo, primeras o no controlada), representado por un [enumeración SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND](../../winscript/reference/script-error-debug-exception-thrown-kind-enumeration.md) valor de enumeración.  
+ [out] El tipo de excepción que se produce (por ejemplo, primera aparición o no controlada), representado por un [enumeración SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND](../../winscript/reference/script-error-debug-exception-thrown-kind-enumeration.md) valor de enumeración.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  

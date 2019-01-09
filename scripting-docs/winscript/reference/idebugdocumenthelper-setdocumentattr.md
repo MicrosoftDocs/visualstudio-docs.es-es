@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d0fb7fc506c8ed0284fe7d0f4853c6410218865b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e743242366c040c02595642fd594ae184436d282
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725895"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090329"
 ---
 # <a name="idebugdocumenthelpersetdocumentattr"></a>IDebugDocumentHelper::SetDocumentAttr
 Establece los atributos de este documento.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT SetDocumentAttr(  
    TEXT_DOC_ATTR  pszAttributes  
 );  
@@ -38,7 +38,7 @@ HRESULT SetDocumentAttr(
   
 #### <a name="parameters"></a>Parámetros  
  `pszAttributes`  
- [in] Los atributos que se aplican al documento.  
+ [in] Los atributos para aplicar al documento.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  

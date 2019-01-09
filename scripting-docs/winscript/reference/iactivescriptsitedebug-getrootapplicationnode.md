@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug::GetRootApplicationNode | Documentos de Microsoft
+title: 'Iactivescriptsitedebug:: Getrootapplicationnode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abcb7c307513e513f3ba4d3a64d34f1e07e60d74
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 40c837d5ee2e8b75bfe7603370d61385a67080cc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724725"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088522"
 ---
 # <a name="iactivescriptsitedebuggetrootapplicationnode"></a>IActiveScriptSiteDebug::GetRootApplicationNode
-Obtiene el nodo de aplicación en las secuencias de comandos deben agregarse documentos.  
+Obtiene el nodo de la aplicación en qué secuencia de comandos se deben agregar documentos.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetRootApplicationNode(  
    IDebugApplicationNode**  ppdanRoot  
 );  
@@ -38,7 +38,7 @@ HRESULT GetRootApplicationNode(
   
 #### <a name="parameters"></a>Parámetros  
  `ppdanRoot`  
- [out] El nodo de aplicación de depuración que contiene documentos de script. Puede ser `NULL`.  
+ [out] El nodo de la aplicación de depuración que contiene los documentos de script. Puede ser `NULL`.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -48,7 +48,7 @@ HRESULT GetRootApplicationNode(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método devuelve el nodo de la aplicación en la que se deben agregar a documentos de script. El método puede devolver `NULL` para `ppdanRoot` si documentos de script deben ser de nivel superior.  
+ Este método devuelve el nodo de la aplicación en la que se deben agregar a documentos de script. El método puede devolver `NULL` para `ppdanRoot` si los documentos de script deben ser de nivel superior.  
   
 ## <a name="see-also"></a>Vea también  
  [IActiveScriptSiteDebug (Interfaz)](../../winscript/reference/iactivescriptsitedebug-interface.md)

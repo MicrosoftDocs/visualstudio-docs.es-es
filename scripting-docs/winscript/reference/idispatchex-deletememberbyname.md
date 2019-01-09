@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5cb9a9dfd979954c42101fde41819d7e12db59e1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1866b5135d2c98ccacb34c2c776c69dd7d25db3f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728135"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096439"
 ---
 # <a name="idispatchexdeletememberbyname"></a>IDispatchEx::DeleteMemberByName
 Elimina a un miembro por su nombre.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT DeleteMemberByName(  
    BSTR bstrName,  
    DWORD grfdex  
@@ -46,8 +46,8 @@ HRESULT DeleteMemberByName(
   
 |Valor|Significado|  
 |-----------|-------------|  
-|fdexNameCaseSensitive|Solicitudes que se lleva a cabo la búsqueda de nombre de una manera entre mayúsculas y minúsculas. Se pueden omitir si el objeto que no se admite la búsqueda distingue mayúsculas de minúsculas.|  
-|fdexNameCaseInsensitive|Solicitudes que puede realizar la búsqueda de nombre en mayúsculas y minúsculas. Se pueden omitir si el objeto que no se admite la búsqueda entre mayúsculas y minúsculas.|  
+|fdexNameCaseSensitive|Solicitudes que se realiza la búsqueda de nombre en minúsculas. Se pueden omitir si el objeto que no es compatible con la búsqueda distingue mayúsculas de minúsculas.|  
+|fdexNameCaseInsensitive|Solicitudes que se realiza la búsqueda de nombre en mayúsculas y minúsculas. Se pueden omitir si el objeto que no es compatible con la búsqueda de mayúsculas y minúsculas.|  
   
 ## <a name="return-value"></a>Valor devuelto  
  Devuelve uno de los siguientes valores:  
@@ -58,13 +58,13 @@ HRESULT DeleteMemberByName(
 |`S_FALSE`|Miembro existe pero no se puede eliminar.|  
   
 ## <a name="remarks"></a>Comentarios  
- Si se elimina el miembro, el identificador DISPID debe siguen siendo válidas para `GetNextDispID`.  
+ Si se elimina el miembro, debe permanecer válido para el identificador DISPID `GetNextDispID`.  
   
- Si se elimina un miembro con un nombre determinado y posteriormente se vuelve a crear un miembro con el mismo nombre, el identificador DISPID debe ser el mismo. (Si los miembros que se diferencian sólo por mayúsculas o minúsculas son el "mismo" depende del objeto.)  
+ Si se elimina un miembro con un nombre determinado y posteriormente se vuelve a crear un miembro con el mismo nombre, el identificador DISPID debe ser el mismo. (Si los miembros que difieran solo por caso son "iguales" es el objeto dependiente).  
   
 ## <a name="example"></a>Ejemplo  
   
-```  
+```cpp
 BSTR bstrName;  
 IDispatchEx *pdex;  
   

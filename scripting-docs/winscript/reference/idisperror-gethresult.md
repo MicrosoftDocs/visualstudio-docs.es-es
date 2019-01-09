@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 859708b8aec4f89dd1ea49bf6e248d7bcade7624
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 08020ea38c687cb0f69b1108935fd79802cc3120
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726855"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086286"
 ---
 # <a name="idisperrorgethresult"></a>IDispError::GetHresult
 Recupera el código de error desde el `IDispError` objeto.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetHresult(  
    HRESULT*  phr  
 );  

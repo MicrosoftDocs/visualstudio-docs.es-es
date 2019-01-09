@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ea7caa1c1632e1a85e12010ec39593b8e0a6d63
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2c2e5624e7cbefdca929a11b75f0273337fab30c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727355"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097167"
 ---
 # <a name="idebugdocumenttexteventsonupdatetextattributes"></a>IDebugDocumentTextEvents::onUpdateTextAttributes
 Indica que los atributos de texto asociados al intervalo de posición de carácter subyacente han cambiado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT onUpdateTextAttributes(  
    ULONG  cCharacterPosition,  
    ULONG  cNumToUpdate  
@@ -39,10 +39,10 @@ HRESULT onUpdateTextAttributes(
   
 #### <a name="parameters"></a>Parámetros  
  `cCharacterPosition`  
- [in] Posición del carácter del primer carácter que han cambiado los atributos.  
+ [in] Posición de carácter del primer carácter que han cambiado los atributos.  
   
  `cNumToUpdate`  
- [in] El número de caracteres en el intervalo.  
+ [in] El número de caracteres del intervalo.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  

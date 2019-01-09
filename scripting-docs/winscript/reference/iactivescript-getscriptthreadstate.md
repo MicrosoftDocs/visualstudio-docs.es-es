@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptThreadState | Documentos de Microsoft
+title: IActiveScript::GetScriptThreadState | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b11b8566857bc70aaeac5bdf8e8e357fa5d9c2e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2b191f1b70aa522cba0a04e0781ada69a8fe5ca5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641265"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097531"
 ---
 # <a name="iactivescriptgetscriptthreadstate"></a>IActiveScript::GetScriptThreadState
-Recupera el estado actual de un subproceso de la secuencia de comandos.  
+Recupera el estado actual de un subproceso de script.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetScriptThreadState(  
     SCRIPTTHREADID stidThread,    // identifier of script thread  
     SCRIPTTHREADSTATE *pstsState  // receives state flag  
@@ -39,7 +39,7 @@ HRESULT GetScriptThreadState(
   
 #### <a name="parameters"></a>Parámetros  
  `stidThread`  
- [in] Identificador del subproceso para el que se desea el estado, o uno de los identificadores de subproceso especiales siguientes:  
+ [in] Identificador del subproceso para el que se desea obtener el estado, o uno de los identificadores de subproceso especiales siguientes:  
   
 |Valor|Significado|  
 |-----------|-------------|  
@@ -56,10 +56,10 @@ HRESULT GetScriptThreadState(
 |------------------|-------------|  
 |`S_OK`|Correcto.|  
 |`E_POINTER`|Se especificó un puntero no válido.|  
-|`E_UNEXPECTED`|No se esperaba la llamada (por ejemplo, el motor de scripting se aún no ha cargado o inicializar).|  
+|`E_UNEXPECTED`|No se esperaba la llamada (por ejemplo, el motor de scripting no se ha cargado o inicializado).|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método se pueda llamar desde subprocesos no sea de base sin resultante en una llamada no sea de base a los objetos de host o a la [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) interfaz.  
+ Este método se pueda llamar desde subprocesos no son de base sin resultante en una llamada que no sea de base a los objetos de host o a la [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) interfaz.  
   
 ## <a name="see-also"></a>Vea también  
  [IActiveScript](../../winscript/reference/iactivescript.md)

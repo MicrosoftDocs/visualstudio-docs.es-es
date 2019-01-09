@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb23fa643f9a2333e17239a74d0da2f75e1ea791
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f79fa7114892e378c51a9cccf51ac6804c4adabf
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729155"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096387"
 ---
 # <a name="iremotedebugapplicationthreadsetnextstatement"></a>IRemoteDebugApplicationThread::SetNextStatement
-Ejecución de las fuerzas lo más cerca posible del contexto de código determinado, continúe en el contexto del marco especificado.  
+Ejecución de fuerzas lo antes posible en el contexto de código dado, continúe en el contexto del marco especificado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT SetNextStatement(  
    IDebugStackFrame*   pStackFrame,  
    IDebugCodeContext*  pCodeContext  
@@ -39,10 +39,10 @@ HRESULT SetNextStatement(
   
 #### <a name="parameters"></a>Parámetros  
  `pStackFrame`  
- [in] El objeto de marco de pila. Este argumento puede ser NULL, lo que implica que debe usarse el marco de pila actual.  
+ [in] El objeto de marco de pila. Este argumento puede ser NULL, lo que implica que se debe usar el marco de pila actual.  
   
  `pCodeContext`  
- [in] El contexto del código. Este argumento puede ser NULL, lo que implica que debe usarse al contexto actual del código.  
+ [in] El contexto del código. Este argumento puede ser NULL, lo que implica que se debe usar el contexto de código actual.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -52,7 +52,7 @@ HRESULT SetNextStatement(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método obliga a que continúe lo más cerca posible en el contexto del código especificado por la ejecución `pCodeContext`, en el contexto del marco especificado por `pStackFrame`. Cualquiera de estos argumentos puede ser `NULL`, que representa el contexto o el marco actual.  
+ Este método obliga a que continúe lo antes posible para el contexto de código especificado por la ejecución `pCodeContext`, en el contexto del marco especificado por `pStackFrame`. Puede ser cualquiera de estos argumentos `NULL`, que representa el contexto o el marco actual.  
   
 ## <a name="see-also"></a>Vea también  
  [IRemoteDebugApplicationThread (Interfaz)](../../winscript/reference/iremotedebugapplicationthread-interface.md)

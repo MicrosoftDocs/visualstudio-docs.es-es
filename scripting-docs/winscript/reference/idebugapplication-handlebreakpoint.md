@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16b05533c566cb90529766d81fb7197dbc284664
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0478d0154ee79c1781885b94ae342e421e61e5e1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726145"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095373"
 ---
 # <a name="idebugapplicationhandlebreakpoint"></a>IDebugApplication::HandleBreakPoint
-Hace que el subproceso actual se bloquee y envía una notificación del punto de interrupción en el depurador IDE.  
+Hace que el subproceso actual se bloquea y envía una notificación del punto de interrupción en el IDE del depurador.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT HandleBreakPoint(  
    BREAKREASON         br,  
    BREAKRESUMEACTION*  pbra  
@@ -39,10 +39,10 @@ HRESULT HandleBreakPoint(
   
 #### <a name="parameters"></a>Parámetros  
  `br`  
- [in] El motivo de la interrupción.  
+ [in] La razón por la interrupción.  
   
  `pbra`  
- [out] Acción a realizar cuando el depurador reanuda la aplicación.  
+ [out] Acción necesaria cuando el depurador reanuda la aplicación.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -52,15 +52,15 @@ HRESULT HandleBreakPoint(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Un motor de lenguaje llama a este método en el contexto de un subproceso que visita un punto de interrupción. Este método bloquea el subproceso actual y envía una notificación de punto de interrupción en el depurador IDE. Cuando el depurador reanuda la aplicación, el `pbra` parámetro especifica qué acción realizar.  
+ Un motor de lenguaje llama a este método en el contexto de un subproceso que alcanza un punto de interrupción. Este método bloquea el subproceso actual y envía una notificación de punto de interrupción en el IDE del depurador. Cuando el depurador reanuda la aplicación, el `pbra` parámetro especifica qué acción realizar.  
   
 > [!NOTE]
->  El motor del lenguaje puede llamarse mediante el subproceso para realizar tareas tales como la pila de enumerar los marcos o expresiones evalúan durante el punto de interrupción.  
+>  El motor de lenguaje puede llamarse mediante el subproceso para realizar tareas tales como enumerar la pila de marcos o evaluación expresiones durante el punto de interrupción.  
   
- Este método provoca `IApplicationDebugger::onHandleBreakPoint` para llamarlo.  
+ Este método provoca que `IApplicationDebugger::onHandleBreakPoint` llamarse.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugApplication (interfaz)](../../winscript/reference/idebugapplication-interface.md)   
  [IApplicationDebugger::onHandleBreakPoint](../../winscript/reference/iapplicationdebugger-onhandlebreakpoint.md)   
- [Enumeración BREAKREASON](../../winscript/reference/breakreason-enumeration.md)   
+ [BREAKREASON (enumeración)](../../winscript/reference/breakreason-enumeration.md)   
  [BREAKRESUMEACTION (Enumeración)](../../winscript/reference/breakresumeaction-enumeration.md)

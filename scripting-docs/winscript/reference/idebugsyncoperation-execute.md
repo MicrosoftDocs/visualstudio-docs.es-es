@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 69e07c646bfa176f5e2dc07539f301a8ef5c5273
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d8c10973bddef45321b9942afef05a696010433f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726955"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090225"
 ---
 # <a name="idebugsyncoperationexecute"></a>IDebugSyncOperation::Execute
 Sincrónicamente realiza la operación y devuelve.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT Execute(  
    IUnknown**  ppunkResult  
 );  
@@ -49,7 +49,7 @@ HRESULT Execute(
 |`E_ABORT`|Se anuló la operación mediante una llamada a la `IDebugSyncOperation::InProgressAbort` método.|  
   
 ## <a name="remarks"></a>Comentarios  
- El Administrador de procesos de depuración en el subproceso de destino llama el `Execute` método sincrónicamente.  
+ El Administrador de procesos de depuración en el subproceso de destino llama a la `Execute` método sincrónicamente.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugSyncOperation (Interfaz)](../../winscript/reference/idebugsyncoperation-interface.md)

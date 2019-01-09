@@ -1,5 +1,5 @@
 ---
-title: 'Ienumjsstackframes:: Reset (método) | Documentos de Microsoft'
+title: Método Ienumjsstackframes | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 130db93a9ecedba039c8e422b2cba8aec2b5a6d2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b9d66f6e36284f0627af7fd44f41fafd6b798e50
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727785"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096556"
 ---
 # <a name="ienumjsstackframesreset-method"></a>IEnumJsStackFrames::Reset (Método)
 Restablece el marco de pila a la posición anterior al primer elemento.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT Reset(void);  
 ```  
   

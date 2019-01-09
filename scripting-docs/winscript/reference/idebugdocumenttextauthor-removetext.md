@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 24a366b35c777d09a14a0ad96e0f6dc25c03a26b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8972c0ed03a7d926d080382a7825c295ca7c72a1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726835"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097102"
 ---
 # <a name="idebugdocumenttextauthorremovetext"></a>IDebugDocumentTextAuthor::RemoveText
 Quita el texto del documento.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT RemoveText(  
    ULONG  cCharacterPosition,  
    ULONG  cNumToRemove  
@@ -39,7 +39,7 @@ HRESULT RemoveText(
   
 #### <a name="parameters"></a>Parámetros  
  `cCharacterPosition`  
- [in] Iniciar ubicación del intervalo de caracteres que se va a quitar.  
+ [in] Iniciar ubicación del intervalo de caracteres a quitar.  
   
  `cNumToRemove`  
  [in] Número de caracteres que se va a quitar.  
@@ -52,7 +52,7 @@ HRESULT RemoveText(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método elimina el texto del documento.  
+ Este método quita el texto del documento.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugDocumentTextAuthor (interfaz)](../../winscript/reference/idebugdocumenttextauthor-interface.md)   

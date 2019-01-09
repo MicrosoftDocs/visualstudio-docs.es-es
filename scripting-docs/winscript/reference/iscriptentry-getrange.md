@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetRange | Documentos de Microsoft
+title: IScriptEntry::GetRange | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0ae0ee34298e03fdd2e9c6bc841d9fbe90967e8f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6a4e053817ed4c503ebb41e2f3828da421e69ec7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729045"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088743"
 ---
 # <a name="iscriptentrygetrange"></a>IScriptEntry::GetRange
-Devuelve la posición de inicio y la longitud de una entrada.  
+Devuelve la posición inicial y longitud de una entrada.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetRange(  
    ULONG              *pichMin  
    ULONG              *pcch  
@@ -41,19 +41,19 @@ HRESULT GetRange(
  `pichMin`  
  [out] Para `IScriptEntry` objetos que especifican un bloque de script, devuelve 0.  
   
- Para `IScriptEntry` objetos que especifican un objeto de función, se devuelve la posición inicial de la función en el bloque de script actual.  
+ Para `IScriptEntry` objetos que especifican un objeto de función devuelve la posición inicial de la función en el bloque de script actual.  
   
  Para `IScriptScriptlet` los objetos, devuelve 0.  
   
  `pcch`  
  [out] Para `IScriptEntry` objetos que especifican un bloque de script, se devuelve la longitud del texto.  
   
- Para `IScriptEntry` objetos que especifican un objeto de función, devuelve la longitud de la definición de función.  
+ Para `IScriptEntry` objetos que especifican un objeto de función devuelve la longitud de la definición de función.  
   
  Para `IScriptScriptlet` los objetos, devuelve la longitud de la entrada.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  

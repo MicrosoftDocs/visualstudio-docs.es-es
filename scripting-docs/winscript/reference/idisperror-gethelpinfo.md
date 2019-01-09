@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17098b4055bb61e9a2f639404edfe2214abc931e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8c2c8ae3a3cff2485c50901bb94ced83098e6000
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728015"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087495"
 ---
 # <a name="idisperrorgethelpinfo"></a>IDispError::GetHelpInfo
 Devuelve la ruta de acceso del archivo de ayuda y el identificador de contexto del tema que explica el error, si es posible.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetHelpInfo(  
    BSTR*  pbstrFileName,  
    DWORD*  pdwContext  
@@ -42,7 +42,7 @@ HRESULT GetHelpInfo(
  [out] Cadena que contiene la ruta de acceso completa del archivo de ayuda. Si no hay ningún archivo de ayuda o se produce un error, el valor devuelto es NULL.  
   
  `pdwContext`  
- [out] Id. de contexto de ayuda para el error. Si no hay ningún archivo de ayuda (si `pbstrFileName` es NULL), este parámetro no tiene ningún significado.  
+ [out] El identificador de contexto de ayuda para el error. Si no hay ningún archivo de ayuda (si `pbstrFileName` es NULL), este parámetro no tiene ningún significado.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -50,8 +50,8 @@ HRESULT GetHelpInfo(
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
-|`E_FAIL`|Se produjo un error específico del proveedor.|  
-|`E_INVALIDARG`|`pbstrFileName`o `pdwContext` era nulo.|  
+|`E_FAIL`|Se ha producido un error específico del proveedor.|  
+|`E_INVALIDARG`|`pbstrFileName` o `pdwContext` era NULL.|  
 |`E_OUTOFMEMORY`|El proveedor no pudo asignar suficiente memoria en el que se va a devolver la ruta de acceso del archivo de ayuda.|  
   
 ## <a name="remarks"></a>Comentarios  

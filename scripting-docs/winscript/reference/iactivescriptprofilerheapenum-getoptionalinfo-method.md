@@ -1,5 +1,5 @@
 ---
-title: 'Iactivescriptprofilerheapenum:: Getoptionalinfo (método) | Documentos de Microsoft'
+title: Método Iactivescriptprofilerheapenum | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,21 +12,21 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e6ad237f2feb173408e895984dab7e7455004d16
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bcba1214a0c57e738dec41cdc4976f478802fedc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724685"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088808"
 ---
 # <a name="iactivescriptprofilerheapenumgetoptionalinfo-method"></a>IActiveScriptProfilerHeapEnum::GetOptionalInfo (Método)
-Obtiene información adicional en el objeto especificado (desde el conjunto de objetos del montón devuelto desde el [método iactivescriptprofilercontrol3:: Enumheap](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)).  
+Obtiene información opcional sobre el objeto especificado (en el conjunto de objetos de montón devueltos desde el [Iactivescriptprofilercontrol3 método](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)).  
   
- No debe liberar la memoria asignada devuelta a los objetos devueltos. En su lugar, debe llamar a la [método iactivescriptprofilerheapenum:: Freeobjectandoptionalinfo](../../winscript/reference/iactivescriptprofilerheapenum-freeobjectandoptionalinfo-method.md).  
+ No debe liberar la memoria asignada devuelta a los objetos devueltos. En su lugar, debe llamar a la [Iactivescriptprofilerheapenum método](../../winscript/reference/iactivescriptprofilerheapenum-freeobjectandoptionalinfo-method.md).  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetOptionalInfo (    [in] PROFILER_HEAP_OBJECT* heapObject,    [in] ULONG celt,    [out, size_is(celt)] PROFILER_HEAP_OBJECT_OPTIONAL_INFO* optionalInfo);  
 ```  
   

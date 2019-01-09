@@ -1,8 +1,6 @@
 ---
-title: Comandos del menú Ayuda | Documentos de Microsoft
-ms.custom: ''
+title: Comandos del menú Ayuda | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Help menu commands
@@ -12,21 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d23d0fdc601c36ae75c1fbdab2bf2e1964d3c2e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 22ea48a465b273f3dfcb3934c620cf053597b4ca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472021"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922447"
 ---
 # <a name="help-menu-commands"></a>Comandos del menú Ayuda
-El **ayuda** menú proporciona comandos para abrir archivos de ayuda.  
+El **ayuda** menú proporciona comandos para abrir los archivos de ayuda.  
   
- **Índice**  
+ **Index**  
  Se abre la pantalla de contenido de Ayuda de Spy ++.  
   
- **Uso de la Ayuda**  
- Abre un archivo de ayuda que describe cómo usar la Ayuda.  
+ &Uso de la Ayuda  
+ Se abre un archivo de ayuda que se describe cómo usar la Ayuda.  
   
- **Acerca de Spy ++**  
- Muestra la información de versión y copyright de software de Spy ++.
+ &Acerca de Spy++...  
+ Muestra la información de copyright y de versión de software de Spy ++.

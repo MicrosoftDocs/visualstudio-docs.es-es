@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperation::QueryIsComplete | Documentos de Microsoft
+title: IDebugAsyncOperation::QueryIsComplete | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e985697e425ec4966f2260792a9698fa50b4c98d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 90d054eb6f7e98a604815c559bee4e326b19692d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725665"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092943"
 ---
 # <a name="idebugasyncoperationqueryiscomplete"></a>IDebugAsyncOperation::QueryIsComplete
 Determina si se ha completado la operación de depuración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT QueryIsComplete();  
 ```  
   
@@ -42,7 +42,7 @@ HRESULT QueryIsComplete();
   
 |Valor|Descripción|  
 |-----------|-----------------|  
-|`S_OK`|La operación está completa.|  
+|`S_OK`|Completada la operación.|  
 |`S_FALSE`|La operación no está completa.|  
   
 ## <a name="remarks"></a>Comentarios  

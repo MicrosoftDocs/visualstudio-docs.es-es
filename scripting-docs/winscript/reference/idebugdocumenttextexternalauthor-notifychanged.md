@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 016eda303f5a5a74a20e42112890698a1ca28798
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6338a4f88435f47ef33abe593c0bb4e000ae6ee2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727025"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094112"
 ---
 # <a name="idebugdocumenttextexternalauthornotifychanged"></a>IDebugDocumentTextExternalAuthor::NotifyChanged
 Notifica al host que ha cambiado el código fuente del documento.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT NotifyChanged();  
 ```  
   
@@ -45,7 +45,7 @@ HRESULT NotifyChanged();
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método es llamado por un editor externo después de un documento basado en archivos depurador se ha modificado y guardado para notificar al host que ha cambiado el código fuente del documento. El host, a continuación, actualiza el documento desde el archivo de origen.  
+ Un editor externo llama a este método después de un documento basado en archivos depurador se puede modificar y guardar para notificar al host que ha cambiado el código fuente del documento. El host, a continuación, actualiza el documento desde el archivo de origen.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugDocumentTextExternalAuthor (Interfaz)](../../winscript/reference/idebugdocumenttextexternalauthor-interface.md)

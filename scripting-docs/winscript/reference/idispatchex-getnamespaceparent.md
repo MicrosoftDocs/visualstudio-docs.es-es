@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 12168ddb5f65c62e81a8f724cacf8b3fd4a1b3a9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 142248d4cfedb2d63025fc873c5574c163fcafd4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728165"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087508"
 ---
 # <a name="idispatchexgetnamespaceparent"></a>IDispatchEx::GetNameSpaceParent
 Recupera la interfaz para el elemento de espacio de nombres primario de un objeto.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetNameSpaceParent(  
    IUnknown **ppunk  
 );  
@@ -41,7 +41,7 @@ HRESULT GetNameSpaceParent(
  Dirección de un `IUnknown` puntero de interfaz que recibe la interfaz del espacio de nombres primario.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve `S_OK` si se realiza correctamente o un código de error definido por OLE en caso contrario.  
+ Devuelve `S_OK` si es correcto o un código de error definido por OLE en caso contrario.  
   
 ## <a name="see-also"></a>Vea también  
  [IDispatchEx (Interfaz)](../../winscript/reference/idispatchex-interface.md)

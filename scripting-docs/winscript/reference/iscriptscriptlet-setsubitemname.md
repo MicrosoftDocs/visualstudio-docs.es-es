@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::SetSubItemName | Documentos de Microsoft
+title: IScriptScriptlet::SetSubItemName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0d038330d502dd9a230fdb82c14d36732fed7e8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 777a69e47ed7f88851cae0d20f2eb23ee6978296
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733875"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097726"
 ---
 # <a name="iscriptscriptletsetsubitemname"></a>IScriptScriptlet::SetSubItemName
-Establece el identificador del último en el nombre completo de host del objeto del scriptlet.  
+Establece el identificador de la última en el nombre completo de host del objeto del scriptlet.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT SetSubItemName(  
    LPCOLESTR          psz  
 );  
@@ -38,12 +38,12 @@ HRESULT SetSubItemName(
   
 #### <a name="parameters"></a>Parámetros  
  `psz`  
- Si el host completo del scriptlet nombre tiene más de un nivel, `psz` es la dirección del búfer del identificador en el segundo nivel.  
+ Si el host completo del scriptlet nombre tiene más de un nivel `psz` es la dirección del búfer del identificador en el segundo nivel.  
   
- Si el host completo del nombre de scriptlet tiene un nivel, `psz` es la dirección del búfer del identificador del primer nivel.  
+ Si el host completo del scriptlet nombre tiene un nivel `psz` es la dirección del búfer del identificador del primer nivel.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  

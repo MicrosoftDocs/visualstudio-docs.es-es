@@ -1,5 +1,5 @@
 ---
-title: Enumeración BREAKREASON | Documentos de Microsoft
+title: BREAKREASON (enumeración) | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bf1baa8b627df50db33cbd86302ce06e80c1cf34
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d5c0dc03d8d24014e28ecf9510fa3d5faa21dba2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641025"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096803"
 ---
 # <a name="breakreason-enumeration"></a>Enumeración BREAKREASON
 Indica qué produjo la interrupción.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 typedef enum tagBREAKREASON {  
    BREAKREASON_STEP,  
    BREAKREASON_BREAKPOINT,  
@@ -48,12 +48,12 @@ typedef enum tagBREAKREASON {
 |Miembro|Descripción|  
 |------------|-----------------|  
 |BREAKREASON_STEP|El motor de lenguaje está en el modo de ejecución paso a paso.|  
-|BREAKREASON_BREAKPOINT|El motor del lenguaje encontró un punto de interrupción explícito.|  
+|BREAKREASON_BREAKPOINT|El motor de lenguaje detectó un punto de interrupción explícito.|  
 |BREAKREASON_DEBUGGER_BLOCK|El motor de lenguaje detectó un bloque de depurador en otro subproceso.|  
-|BREAKREASON_HOST_INITIATED|El host había solicitado un salto.|  
-|BREAKREASON_LANGUAGE_INITIATED|El motor del lenguaje había solicitado un salto.|  
-|BREAKREASON_DEBUGGER_HALT|Un salto había solicitada por el depurador IDE.|  
-|BREAKREASON_ERROR|Un error de ejecución produjo la interrupción.|  
+|BREAKREASON_HOST_INITIATED|El host solicita un salto.|  
+|BREAKREASON_LANGUAGE_INITIATED|El motor de lenguaje había solicitado un salto.|  
+|BREAKREASON_DEBUGGER_HALT|El IDE del depurador solicita un salto.|  
+|BREAKREASON_ERROR|Un error de ejecución había producido la interrupción.|  
 |BREAKREASON_JIT|Causados por el inicio de depuración JIT.|  
   
 ## <a name="see-also"></a>Vea también  

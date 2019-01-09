@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d127b1b8a8db0c6d272e50d33b523fbe182a9e21
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 55cd6cf5233e850e4109128e322d3fc5bd0b1355
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734225"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086598"
 ---
 # <a name="iscriptnodegetchild"></a>IScriptNode::GetChild
 Devuelve al elemento secundario que está en el índice especificado en el nodo.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetChild(  
    ULONG              isn,  
    IScriptNode        **ppsn  
@@ -49,14 +49,14 @@ HRESULT GetChild(
  Para `IScriptEntry` objetos que especifican un bloque de script, este parámetro devuelve un objeto que especifica una función.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Para `IScriptEntry` objetos que especifican un objeto de función y para `IScriptScriptlet` objetos, este método produce un error porque no hay entradas secundarias.  
+ Para `IScriptEntry` objetos que especifican un objeto de función y para `IScriptScriptlet` objetos, este método produce un error porque no hay ningún entradas secundarias.  
   
 ## <a name="see-also"></a>Vea también  
  [IScriptNode (Interfaz)](../../winscript/reference/iscriptnode-interface.md)

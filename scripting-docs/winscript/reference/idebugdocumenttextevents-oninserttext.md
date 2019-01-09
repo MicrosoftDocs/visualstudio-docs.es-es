@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a00adb996711dc6364edd44babf0c3cde1595947
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ce5cd786cead548e7a088f362930b2d27d2e8d69
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728075"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089393"
 ---
 # <a name="idebugdocumenttexteventsoninserttext"></a>IDebugDocumentTextEvents::onInsertText
 Indica que se ha agregado el nuevo texto al documento.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT onInsertText(  
    ULONG  cCharacterPosition,  
    ULONG  cNumToInsert  
@@ -39,7 +39,7 @@ HRESULT onInsertText(
   
 #### <a name="parameters"></a>Parámetros  
  `cCharacterPosition`  
- [in] Posición del carácter donde se insertó el nuevo texto.  
+ [in] La posición del carácter donde se insertó el nuevo texto.  
   
  `cNumToInsert`  
  [in] El número de caracteres que se han insertado.  

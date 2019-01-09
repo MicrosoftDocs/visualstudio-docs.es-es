@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e18cc6f5f2afb1dcea6835983f69f6a6f7b9280
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2c66d078effd510b3f64cf1f443926984ff2e282
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733925"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094125"
 ---
 # <a name="scriptthreadstate-enumeration"></a>SCRIPTTHREADSTATE (Enumeración)
-Especifica el estado de un subproceso de un motor de scripting. Esta enumeración se usa en la [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md) método.  
+Especifica el estado de un subproceso en un motor de scripting. Esta enumeración se utiliza en el [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md) método.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 typedef enum tagSCRIPTTHREADSTATE {  
     SCRIPTTHREADSTATE_NOTINSCRIPT  = 0,  
     SCRIPTTHREADSTATE_RUNNING      = 1  
@@ -41,8 +41,8 @@ typedef enum tagSCRIPTTHREADSTATE {
   
 |||  
 |-|-|  
-|SCRIPTTHREADSTATE_NOTINSCRIPT|Subproceso especificado actualmente no es atender un evento con scripts, texto de script de procesamiento que se ejecuta inmediatamente, o ejecutar una macro de secuencia de comandos.|  
-|SCRIPTTHREADSTATE_RUNNING|Subproceso especificado activamente es atender un evento con scripts, texto de script de procesamiento que se ejecuta inmediatamente, o ejecutar una macro de secuencia de comandos.|  
+|SCRIPTTHREADSTATE_NOTINSCRIPT|Subproceso especificado actualmente no es un evento con secuencias de comandos, el texto del script se ejecuta inmediatamente el procesamiento, de mantenimiento o ejecuta una macro de secuencia de comandos.|  
+|SCRIPTTHREADSTATE_RUNNING|Subproceso especificado activamente el mantenimiento de un evento con secuencias de comandos, el texto del script se ejecuta inmediatamente el procesamiento, o ejecuta una macro de secuencia de comandos.|  
   
 ## <a name="see-also"></a>Vea también  
  [Active Script (Constantes, Enumeraciones y Códigos de error)](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

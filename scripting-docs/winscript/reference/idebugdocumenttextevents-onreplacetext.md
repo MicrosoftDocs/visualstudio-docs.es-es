@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1cbe022113e8a97dc31b4cf5a2286ec0b5096d3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6f04424eb12d0905c128913e2b0f8abe80ef5655
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726515"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089827"
 ---
 # <a name="idebugdocumenttexteventsonreplacetext"></a>IDebugDocumentTextEvents::onReplaceText
 Indica que se ha reemplazado el texto.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT onReplaceText(  
    ULONG  cCharacterPosition,  
    ULONG  cNumToReplace  

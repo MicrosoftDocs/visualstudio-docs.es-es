@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3df872cd14b6d7fcd455371d1601b2a4082fb39a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0a211989202c0d5b5c0d6c99fe2d6fbb00978787
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726155"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088691"
 ---
 # <a name="idebugapplicationnodeeventsonaddchild"></a>IDebugApplicationNodeEvents::onAddChild
 Controla el evento cuando se agrega un nodo secundario a un objeto de nodo de la aplicación de depuración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT onAddChild(  
    IDebugApplicationNode*  prddpChild  
 );  
@@ -38,7 +38,7 @@ HRESULT onAddChild(
   
 #### <a name="parameters"></a>Parámetros  
  `prddpChild`  
- [in] El nodo de aplicación de depuración secundario que se agregó.  
+ [in] El nodo de aplicación de depuración secundario que se ha agregado.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  

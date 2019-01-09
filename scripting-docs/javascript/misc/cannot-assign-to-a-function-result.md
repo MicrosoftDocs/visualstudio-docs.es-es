@@ -20,17 +20,17 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f7e7ea718aa97ab7b2eb0924458826cd1eac5672
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1a29c3f20392dc216c0306137c0dec6b22aaa58a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632985"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093866"
 ---
 # <a name="cannot-assign-to-a-function-result"></a>No se puede asignar al resultado de una función
-Se intentó asignar un valor al resultado de una función. El resultado de una función puede asignarse a una variable, pero no se puede usar como una variable. Si desea asignar un nuevo valor a la propia función, omita los paréntesis (operador de llamada de función). En el ejemplo siguiente se muestra una situación en la que se genera este error.  
+Se intentó asignar un valor a un resultado de la función. El resultado de una función puede asignarse a una variable, pero no se puede usar como una variable. Si desea asignar un nuevo valor a la propia función, omitir los paréntesis (operador de llamada de función). El ejemplo siguiente muestra una situación en la que se genera este error.  
   
-```  
+```js
 myFunction() = 42;  // Attempting to assign the value 42 to the result of the function call.  
 ```  
   
@@ -42,7 +42,7 @@ myFunction() = 42;  // Attempting to assign the value 42 to the result of the fu
     myVar = myFunction(42);  
     ```  
   
--   Como alternativa, puede asignar la función propia (y no su valor devuelto) a una variable.  
+-   Como alternativa, puede asignar la función propia (y no el valor devuelto) a una variable.  
   
     ```JavaScript  
     myFunction = new Function("return 42;");  

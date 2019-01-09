@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a0111deba23f29aa6b7d31a1aed8d729ff4e7fa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f7f0199c111e620d9b1783ed8da7163d10f2e20b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725835"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095789"
 ---
 # <a name="idebugcodecontextsetbreakpoint"></a>IDebugCodeContext::SetBreakPoint
-Establece o borra un punto de interrupción en este contexto del código.  
+Establece o borra un punto de interrupción en este contexto de código.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT SetBreakPoint(  
    BREAKPOINT_STATE  bps  
 );  
@@ -48,7 +48,7 @@ HRESULT SetBreakPoint(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método establece o borra un punto de interrupción en este contexto del código.  
+ Este método establece o borra un punto de interrupción en este contexto de código.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugCodeContext (interfaz)](../../winscript/reference/idebugcodecontext-interface.md)   

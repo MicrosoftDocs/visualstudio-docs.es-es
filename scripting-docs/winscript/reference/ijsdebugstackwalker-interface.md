@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dbea11bf1188d148818ea8a082bceec76c704c2b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d79950c6d5595a0a8a95623a7510c5523f16e41b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728555"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087907"
 ---
 # <a name="ijsdebugstackwalker-interface"></a>IJsDebugStackWalker (Interfaz)
 Representa un rastreador de pila para un subproceso especificado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 IJsDebugStackWalker : public IUnknown;  
 ```  
   
@@ -32,12 +32,12 @@ IJsDebugStackWalker : public IUnknown;
   
 ### <a name="public-methods"></a>Métodos públicos  
   
-|Nombre|Descripción|  
+|Name|Descripción|  
 |----------|-----------------|  
 |[IJsDebugStackWalker::GetNext (Método)](../../winscript/reference/ijsdebugstackwalker-getnext-method.md)|Obtiene el siguiente fotograma.|  
   
 ## <a name="remarks"></a>Comentarios  
- Andadores de pila solo pueden crearse mientras el destino se ha detenido y no son válido una vez que el proceso de destino se ha ido de nuevo.  
+ Solo se pueden crear rastreadores de pila, mientras que el destino se ha detenido y no son válido una vez que se ha seguido el proceso de destino.  
   
 ## <a name="requirements"></a>Requisitos  
  **Encabezado:** jscript9diag.h  

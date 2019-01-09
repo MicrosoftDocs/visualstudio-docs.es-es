@@ -1,5 +1,5 @@
 ---
-title: Estructura PROFILER_PROPERTY_TYPE_SUBSTRING_INFO | Documentos de Microsoft
+title: PROFILER_PROPERTY_TYPE_SUBSTRING_INFO (estructura) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -10,19 +10,19 @@ ms.assetid: 3845c872-4302-47b6-8912-7b2d7a3b3357
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: ba7c0c865ae875d22fa82e48557eb2ed8b170e65
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5f873cdf2ebd394e48c1513135f1acdcd700c283
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734185"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089978"
 ---
-# <a name="profilerpropertytypesubstringinfo-structure"></a>Estructura PROFILER_PROPERTY_TYPE_SUBSTRING_INFO
-Representa información sobre el tipo de subcadena usado en la relación. Usar en [PROFILER_HEAP_OBJECT_RELATIONSHIP (estructura)](../../winscript/reference/profiler-heap-object-relationship-structure.md).  
+# <a name="profilerpropertytypesubstringinfo-structure"></a>PROFILER_PROPERTY_TYPE_SUBSTRING_INFO (estructura)
+Representa información sobre el tipo de subcadena utilizado en la relación. Utilizado en [PROFILER_HEAP_OBJECT_RELATIONSHIP (estructura)](../../winscript/reference/profiler-heap-object-relationship-structure.md).  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 typedef struct _PROFILER_PROPERTY_TYPE_SUBSTRING_INFO {    UINT length;    LPCWSTR value; } PROFILER_PROPERTY_TYPE_SUBSTRING_INFO;  
 ```  
   
@@ -31,4 +31,4 @@ typedef struct _PROFILER_PROPERTY_TYPE_SUBSTRING_INFO {    UINT length;    LPCWS
 |Miembro|Tipo|Descripción|  
 |------------|----------|-----------------|  
 |longitud|UINT|El objeto es un tipo UINT.|  
-|valor|LPCWSTR|El objeto es un LPCWSTR.|
+|value|LPCWSTR|El objeto es un LPCWSTR.|

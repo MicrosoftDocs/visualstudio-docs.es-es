@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a45fff15ce4f7faf6cf8714cbf01289e69f67691
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 85147e667f4e83698e23792a43020641974482a6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725965"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091265"
 ---
 # <a name="idebugapplicationnodeeventsonattach"></a>IDebugApplicationNodeEvents::onAttach
-Controla un evento que lo que significa que el objeto de nodo de la aplicación de depuración se conectó a un nodo primario.  
+Controla un evento lo que significa que el objeto de nodo de la aplicación de depuración se ha adjuntado a un nodo primario.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT onAttach(  
    IDebugApplicationNode*  prddpParent  
 );  
@@ -38,7 +38,7 @@ HRESULT onAttach(
   
 #### <a name="parameters"></a>Parámetros  
  `prddpParent`  
- [in] El nodo de aplicación de depuración que es el elemento primario de este nodo.  
+ [in] El nodo de aplicación de depuración es el elemento primario de este nodo.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -48,7 +48,7 @@ HRESULT onAttach(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método controla un evento que lo que significa que el objeto de nodo de la aplicación de depuración se conectó a un nodo primario.  
+ Este método controla un evento lo que significa que el objeto de nodo de la aplicación de depuración se ha adjuntado a un nodo primario.  
   
  Los implementadores de la `IDebugApplicationNode` interfaz se genera este evento.  
   

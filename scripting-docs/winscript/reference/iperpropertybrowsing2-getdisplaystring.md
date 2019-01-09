@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be88a76ce22dfd863e680fcc1a6794065ecaf76f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e4947ebdeac26ae759fb739dd417607dea885ee5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836884"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091578"
 ---
 # <a name="iperpropertybrowsing2getdisplaystring"></a>IPerPropertyBrowsing2::GetDisplayString
 Obtiene una cadena para mostrar tipos que no son visibles de forma inherente el texto devuelto es un nombre que describe la propiedad y se puede mostrar en interfaz de usuario del llamador.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetDisplayString(  
    DISPID  dispid,  
    BSTR*  pBstr  

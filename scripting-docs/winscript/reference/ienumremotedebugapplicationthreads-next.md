@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d8ce0dc7c77cd3b58f388ab63a9d5a3573c93419
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9b2aaa1882b5699343d82ecae5fe236574802d7d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729135"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092396"
 ---
 # <a name="ienumremotedebugapplicationthreadsnext"></a>IEnumRemoteDebugApplicationThreads::Next
 El `Next` método recupera un número especificado de segmentos de la secuencia de enumeración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT Next(  
    ULONG                            celt,  
    IRemoteDebugApplicationThread**  pprdat,  
@@ -40,13 +40,13 @@ HRESULT Next(
   
 #### <a name="parameters"></a>Parámetros  
  `celt`  
- [in] El número de segmentos para recuperar.  
+ [in] El número de segmentos se van a recuperar.  
   
  `pprdat`  
  [out] Devuelve una matriz de `IRemoteDebugApplicationThread` interfaces que representa los segmentos que se va a recuperar.  
   
  `pceltFetched`  
- [out] El número real de segmentos capturados por el enumerador.  
+ [out] El número real de capturado por el enumerador de segmentos.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  

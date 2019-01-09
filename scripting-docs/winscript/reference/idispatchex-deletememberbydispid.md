@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::DeleteMemberByDispID | Documentos de Microsoft
+title: IDispatchEx::DeleteMemberByDispID | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 573eb60dc901e43706835c4d627b25bd54bbe751
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: de99e74cf12939a31c99cdc59ce8ad7fd685ae03
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727755"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086871"
 ---
 # <a name="idispatchexdeletememberbydispid"></a>IDispatchEx::DeleteMemberByDispID
 Elimina a un miembro por DISPID.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT DeleteMemberByDispID(  
     DISPID id  
 );  
@@ -49,13 +49,13 @@ HRESULT DeleteMemberByDispID(
 |`S_FALSE`|Miembro existe pero no se puede eliminar.|  
   
 ## <a name="remarks"></a>Comentarios  
- Si se elimina el miembro, el identificador DISPID debe siguen siendo válidas para `GetNextDispID`.  
+ Si se elimina el miembro, debe permanecer válido para el identificador DISPID `GetNextDispID`.  
   
- Si se elimina un miembro con un nombre determinado y posteriormente se vuelve a crear un miembro con el mismo nombre, el identificador DISPID debe ser el mismo. (Si los nombres de miembro que se diferencian sólo por mayúsculas o minúsculas son el "mismo" depende del objeto.)  
+ Si se elimina un miembro con un nombre determinado y posteriormente se vuelve a crear un miembro con el mismo nombre, el identificador DISPID debe ser el mismo. (Si los nombres de miembro que difieran solo por caso son "iguales" es el objeto dependiente).  
   
 ## <a name="example"></a>Ejemplo  
   
-```  
+```cpp
 BSTR bstrName;  
 DISPID dispid;  
 IDispatchEx *pdex;   

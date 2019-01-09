@@ -1,5 +1,5 @@
 ---
-title: IProcessDebugManager::AddApplication | Documentos de Microsoft
+title: 'Iprocessdebugmanager:: Addapplication | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a221aa0038b0b3fd5046b9ada08e2de86f33a895
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fa0b811a23f8c97f1924883a04878f22cabc9b26
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729525"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087534"
 ---
 # <a name="iprocessdebugmanageraddapplication"></a>IProcessDebugManager::AddApplication
-Agrega una aplicación a la lista del Administrador de máquina depurar las aplicaciones en ejecución.  
+Agrega una aplicación a la lista del Administrador de máquina depuración de aplicaciones en ejecución.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT AddApplication(  
    IDebugApplication*  pda,  
    DWORD*              pdwAppCookie  
@@ -39,10 +39,10 @@ HRESULT AddApplication(
   
 #### <a name="parameters"></a>Parámetros  
  `pda`  
- [in] Aplicación de depuración que se va a agregar a la lista de aplicaciones en ejecución.  
+ [in] La aplicación de depuración para agregar a la lista de aplicaciones en ejecución.  
   
  `pdwAppCookie`  
- [out] Cookie que se utiliza para quitar la aplicación desde el Administrador de depuración de la máquina.  
+ [out] Una cookie que se usa para quitar la aplicación desde el Administrador de depuración de la máquina.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  

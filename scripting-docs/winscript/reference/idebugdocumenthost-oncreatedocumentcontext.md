@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::OnCreateDocumentContext | Documentos de Microsoft
+title: 'Idebugdocumenthost:: Oncreatedocumentcontext | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 55598a4191d421d3aea01d27cc7991b70bd6a019
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c0f8ce73e05fa8dd163564184361254fd58163ee
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726725"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096346"
 ---
 # <a name="idebugdocumenthostoncreatedocumentcontext"></a>IDebugDocumentHost::OnCreateDocumentContext
-Notifica al host que un nuevo contexto de documento se está creando y permite que el host también pueden devolver un control desconocido para el nuevo contexto.  
+Notifica al host que un nuevo contexto de documento se está creando y permite al host también puede devolver un control desconocido para el nuevo contexto.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT OnCreateDocumentContext(  
    IUnknown**  ppunkOuter  
 );  
@@ -49,7 +49,7 @@ HRESULT OnCreateDocumentContext(
 |`E_NOTIMPL`|El host no proporciona un objeto de control.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método permite al host agregar nuevas funciones a los contextos de documento proporcionado por el Ayudante. Este método puede devolver **E_NOTIMPL** o un objeto externo null, en cuyo caso el llamador es responsable de crear el contexto.  
+ Este método permite al host agregar nueva funcionalidad a los contextos de la aplicación auxiliar proporcionado por el documento. Este método puede devolver **E_NOTIMPL** o un objeto externo null, en cuyo caso el llamador es responsable de crear el contexto.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugDocumentHost (Interfaz)](../../winscript/reference/idebugdocumenthost-interface.md)

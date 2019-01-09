@@ -20,17 +20,17 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce142e07a47b73778ebae6b26452806b3a036d41
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 53f32da997b775e01959df5abc7e72fb55c1b194
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802412"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086702"
 ---
 # <a name="cant-have-break-outside-of-loop"></a>'break' no puede estar fuera del bucle
 Se intentó utilizar el **salto** palabra clave fuera de un bucle. El **salto** palabra clave se usa para finalizar un bucle o `switch` instrucción. Se debe incrustar en el cuerpo de un bucle o `switch` instrucción. Sin embargo, un **etiqueta** puede seguir la palabra clave break.  
   
-```  
+```js
 break labelname;  
 ```  
   
