@@ -2,7 +2,6 @@
 title: Trabajar con texturas e imágenes
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb7cc97a797d02bd8353cbcfb19af6b8f9edf674
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d7e7519817c15a73ad0c4e6b136790984cbe1cdf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079665"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913887"
 ---
 # <a name="work-with-textures-and-images"></a>Trabajar con texturas e imágenes
 
@@ -54,5 +53,5 @@ Los mapas de cubo pueden contener diferentes tipos de datos, por ejemplo, colore
 
 |Title|Descripción|
 |-----------|-----------------|
-|[Editor de imágenes](../designers/image-editor.md)|Se describe el uso del editor de imágenes para trabajar con texturas e imágenes.|
+|[Image Editor](../designers/image-editor.md)|Se describe el uso del editor de imágenes para trabajar con texturas e imágenes.|
 |[Ejemplos del Editor de imágenes](../designers/image-editor-examples.md)|Se ofrecen vínculos a temas que muestran cómo usar el editor de imágenes para realizar tareas comunes de procesamiento de imágenes.|

@@ -2,7 +2,6 @@
 title: Generación de una clase o tipo
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -14,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4f7d722669ddf51715b21ddaf1f253fb0668dfaa
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a98ccfc73a1d0390cdec101ed763535f316a5625
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065479"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965835"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generación de una clase o tipo en Visual Studio
 

@@ -3,7 +3,6 @@ title: Uso de plantillas de CookieCutter con Python
 description: Visual Studio admite la extensión gráfica Cookiecutter para detectar plantillas del código de Python y crear proyectos a partir de ellas.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ca47c1410fd11c32cbce95b9adc5a62c6c26dcf
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1f5123323794d7a333440cb8aa94c51e44c8fc87
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057196"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958240"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Uso de la extensión Cookiecutter
 

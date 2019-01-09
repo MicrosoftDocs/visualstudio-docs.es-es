@@ -1,8 +1,6 @@
 ---
 title: Contadores de Windows y de CPU | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.counters
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf9b1d1a336a2567a2d583e0cd68899dd03d42b8
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: ddf173f39accb0bb9d2907349c82accdd4f21b40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592448"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912641"
 ---
 # <a name="cpu-and-windows-counters"></a>Contadores de Windows y de CPU
 
@@ -97,7 +95,7 @@ Para enumerar los contadores disponibles en un equipo en el IDE de Visual Studio
 
       **Nota** Haga clic en **Cancelar** para volver a la configuración de muestreo anterior.
 
-     O bien
+     o bien
 
    - Seleccione **Contadores de CPU** y, a continuación, seleccione **Recopilar contadores de CPU**. Los contadores de CPU se enumeran en **Contadores disponibles**.
 

@@ -1,8 +1,6 @@
 ---
 title: No hay actividades de disco que mostrar (Vista de subprocesos) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.nodiskreport
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb7ab1e30eeb20622964cd410adb0300843b964f
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 52b522dfe2f213e75454495fb593165edc282d33
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254636"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836354"
 ---
 # <a name="no-disk-activity-to-show-threads-view"></a>No hay actividades de disco que mostrar (Vista de subprocesos)
 No se puede mostrar la actividad de disco para el intervalo temporal actual en los canales de E/S de disco. Se puede mostrar la actividad de disco si reduce con el zoom o se desplaza. Además, debe asegurarse de que no haya ningún canal de disco oculto.  

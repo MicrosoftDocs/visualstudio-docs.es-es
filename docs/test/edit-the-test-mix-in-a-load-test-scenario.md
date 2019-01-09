@@ -12,13 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 3b3bd0ae4df657d7234a77413003b18d5db86138
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 8a54c20d90edacbd29169320bc746e5b9cb724f9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895995"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905324"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Edición de la combinación de pruebas para especificar qué pruebas de rendimiento web, unitarias y automatizadas de IU incluir en un escenario de prueba de carga
 

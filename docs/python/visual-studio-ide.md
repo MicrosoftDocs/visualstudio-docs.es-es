@@ -3,7 +3,6 @@ title: Información general de Visual Studio para desarrolladores de Python
 titleSuffix: ''
 ms.date: 12/14/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5c7e8c81b52744d62dbdc60259462e7dedc1388e
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: d671a81c75483bfc21cf83954e03307d05a93ce8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804908"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950756"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Bienvenida al IDE de Visual Studio | Python
 

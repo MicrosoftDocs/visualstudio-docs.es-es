@@ -3,7 +3,6 @@ title: Referencia a la API del generador de perfiles de Visual Studio (Nativa)
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, API
@@ -14,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: debb3c0d2fcbb9f1568acd7ae0f09fc6d1d099fb
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: e0926c80954c83dd1c0c1a72e7c693e8ea266713
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592773"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945030"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Referencia de la API del generador de perfiles de Visual Studio (nativa)
 Las API del generador de perfiles de Visual Studio permiten controlar mediante programación la cantidad de datos recopilados e insertar marcas de tiempo y de perfil durante la generación de perfiles. Para usar las API nativas, se incluye el archivo de encabezado *VSPerf.h* y se agrega *VSPerf.lib* al proyecto.  

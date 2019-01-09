@@ -2,7 +2,6 @@
 title: Crear una prueba de IU codificada controlada por datos
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, data-driven
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92bbeb34733332b2bada3955dda2058d63460fec
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e46353f7e38a1822d5cbcc21441d1d4dccdf5c57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068492"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968610"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Crear una prueba de IU codificada controlada por datos
 

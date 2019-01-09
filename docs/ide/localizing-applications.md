@@ -2,7 +2,6 @@
 title: Localizar aplicaciones
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Basic code, international applications
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16b8c3a35a7d4a489a199b4de9f7fbe34bca9361
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: bbde4f1afb539754708582ebfc85495e5de94e98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671019"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966854"
 ---
 # <a name="localizing-applications"></a>Localizar aplicaciones
 

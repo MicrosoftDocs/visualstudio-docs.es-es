@@ -1,8 +1,6 @@
 ---
 title: SetEnv (tarea) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/05/2018
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - vc.task.setenv
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3024a0477193647a6949eeaa4d8d40d4d965f940
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: a6e0a0e4feaaa3aca4a1f6bfb367644bbfabac5e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220412"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844150"
 ---
 # <a name="setenv-task"></a>Tarea SetEnv
 Establece o elimina el valor de una variable de entorno especificada.  

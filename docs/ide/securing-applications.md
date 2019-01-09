@@ -2,7 +2,6 @@
 title: Seguridad
 ms.date: 06/01/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - security [Visual Studio], applications
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87e9cb7e9400253713caab17da04c44eb11f5ed1
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 74643454c4e96f5f4c1faa98b26fa1f26bd2790b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843915"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904635"
 ---
 # <a name="secure-applications"></a>Proteger aplicaciones
 

@@ -2,7 +2,6 @@
 title: Mostrar registros (Comando)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.listregisters
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce91abde91edf989b33c476b042abaf16c685df0
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 942ab10a1d660ea5e33ca2cb679e4655bd6b3fbc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704907"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959970"
 ---
 # <a name="list-registers-command"></a>Mostrar registros (Comando)
 Muestra el valor de los registros seleccionados y permite modificar la lista de registros que se van a mostrar.
@@ -70,5 +69,5 @@ r /Display Flags
 ## <a name="see-also"></a>Vea también
 
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Fundamentos de la depuración: ventana Registros](../../debugger/debugging-basics-registers-window.md)
-- [Cómo: Usar la ventana Registros](../../debugger/how-to-use-the-registers-window.md)
+- [Fundamentos de la depuración: Ventana Registros](../../debugger/debugging-basics-registers-window.md)
+- [Cómo: Uso de la ventana Registros](../../debugger/how-to-use-the-registers-window.md)

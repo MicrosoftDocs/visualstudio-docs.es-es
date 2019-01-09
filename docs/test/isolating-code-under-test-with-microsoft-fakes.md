@@ -2,7 +2,6 @@
 title: Aislar el código probado con Microsoft Fakes
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
@@ -12,12 +11,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 0ca26ca155f14ada97e432aea044166fbe32eee7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f38ce5a070214d96e969d3b27eb1662448e8360c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067160"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966526"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Aislar el código en pruebas con Microsoft Fakes
 

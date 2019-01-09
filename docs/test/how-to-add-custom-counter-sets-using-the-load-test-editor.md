@@ -11,13 +11,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 7f916e469453d41321dd30404be6c0a6e4f5e56f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0e610e29c623ecc7e67dcaa87ac1d7ce5417fb5f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051489"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956210"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Procedimiento para agregar conjuntos de contadores personalizados mediante el Editor de pruebas de carga
 

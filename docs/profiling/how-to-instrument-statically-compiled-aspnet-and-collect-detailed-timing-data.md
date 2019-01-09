@@ -1,8 +1,6 @@
 ---
 title: Procedimiento Instrumentar una aplicación web ASP.NET compilada dinámicamente y recopilar datos de tiempo detallados con el generador de perfiles mediante la línea de comandos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: b260ce68-76e6-4c3b-8062-3c00bd5cf7b8
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 512fbb58c9f0b4abb9826e555e148e90902b218d
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 41afd25ba67fcac89ebe577636f6dec9915af389
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592345"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960883"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Procedimiento Instrumentar una aplicación web ASP.NET compilada estáticamente y recopilar datos detallados de control de tiempo con el generador de perfiles mediante la línea de comandos
 En este artículo se describe cómo usar las herramientas de línea de comandos de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para instrumentar un componente web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] precompilado o un sitio web, y recopilar datos de tiempo detallados.  
