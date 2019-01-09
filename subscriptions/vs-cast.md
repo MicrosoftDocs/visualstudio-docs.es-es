@@ -3,18 +3,18 @@ title: Ventaja de CAST Highlight en las suscripciones de Visual Studio | Microso
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/04/2018
+ms.date: 12/19/2018
 ms.topic: conceptual
 description: Obtenga información sobre la ventaja de CAST Highlight disponible en las suscripciones de Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 74ed8a20195936c5ba7ef9c7ce7591838b620d5d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 7ee8059a8e80834b6b35f93be888d7fd90e4a3a3
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52897070"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740002"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Ventaja de CAST Highlight para suscripciones de Visual Studio
 
@@ -89,8 +89,8 @@ Tras la aprobación de su solicitud, recibirá un segundo correo electrónico en
 
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (estándar, de nube anual)   | Licencia por volumen, Azure, venta directa | Evaluación de 5 aplicaciones durante 30 días|  No.  Disponible solo para nuevos suscriptores          |
-| Visual Studio Professional (estándar, de nube anual) | Licencia por volumen, Azure, venta directa                                       | No disponible                                                             |  N/D          |
+| Visual Studio Enterprise (estándar)   | Licencia por volumen, Azure, venta directa | Evaluación de 5 aplicaciones durante 30 días|  No.  Disponible solo para nuevos suscriptores          |
+| Visual Studio Professional (estándar) | Licencia por volumen, Azure, venta directa                                       | No disponible                                                             |  N/D          |
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | No disponible                                             |  N/D           |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | No disponible                                              |  N/D          |
 | Visual Studio Dev Essentials | N/D  | No disponible | N/D |
@@ -99,8 +99,11 @@ Tras la aprobación de su solicitud, recibirá un segundo correo electrónico en
 
 
 
-<sup>1</sup> *Incluye: No para reventa (NFR), FTE, Microsoft Valued Professional (MVP), Region Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup>1</sup>  *Incluye:  No para reventa (NFR), FTE, Microsoft Valued Professional (MVP), Region Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
 
+
+> [!NOTE]
+> Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
 
 
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.

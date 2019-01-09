@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 682010bc4235948918b3bffce70d04d5db0781af
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79cdab9ef8cd127b54117188c9d1a49ad4948c9e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861636"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805164"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Inicio rápido: Primer vistazo a la implementación en Visual Studio
 
@@ -41,7 +41,7 @@ Vea los inicios rápidos y los tutoriales para obtener instrucciones de implemen
 
 La implementación en una carpeta local se suele usar para las pruebas, o para iniciar una implementación de ensayo en la que se vaya a emplear otra herramienta para la implementación final.
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** y **.NET Core**: use la herramienta Publicar para implementar en una carpeta local. Las opciones concretas disponibles dependen del tipo de la aplicación. En el Explorador de soluciones, haga clic con el botón derecho en el proyecto y elija **Publicar**. (Si anteriormente ha configurado algún perfil de publicación, debe hacer clic en **Crear nuevo perfil**). Luego elija **Carpeta**. Para obtener más información, vea [Implementar en una carpeta local](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** y .**NET Core**: utilice la opción Publicar para implementar en una carpeta local. Las opciones concretas disponibles dependen del tipo de la aplicación. En el Explorador de soluciones, haga clic con el botón derecho en el proyecto y elija **Publicar**. (Si anteriormente ha configurado algún perfil de publicación, debe hacer clic en **Crear nuevo perfil**). Luego elija **Carpeta**. Para obtener más información, vea [Implementar en una carpeta local](quickstart-deploy-to-local-folder.md).
 
     ![Elección de Publicar](../deployment/media/quickstart-publish.png)
 
@@ -49,13 +49,13 @@ La implementación en una carpeta local se suele usar para las pruebas, o para i
 
 ## <a name="publish-to-azure"></a>Publicar en Azure
 
-- **ASP.NET**, **ASP.NET Core**, **Python** y **Node.js**: puede usar la herramienta Publicar para implementar rápidamente las aplicaciones en Azure App Service o en una instancia de Azure Virtual Machines. En el Explorador de soluciones, haga clic con el botón derecho en el proyecto y seleccione **Publicar**. (Si anteriormente ha configurado algún perfil de publicación, debe hacer clic en **Crear nuevo perfil**). En el cuadro de diálogo Publicar, elija **App Service** o **Azure Virtual Machines** y luego siga los pasos de configuración.
+- **ASP.NET**, **ASP.NET Core**, **Python** y **Node.js**: puede usar la opción Publicar para implementar rápidamente las aplicaciones en Azure App Service o en una instancia de Azure Virtual Machines. En el Explorador de soluciones, haga clic con el botón derecho en el proyecto y seleccione **Publicar**. (Si anteriormente ha configurado algún perfil de publicación, debe hacer clic en **Crear nuevo perfil**). En el cuadro de diálogo Publicar, elija **App Service** o **Azure Virtual Machines** y luego siga los pasos de configuración.
 
     ![Elección de Azure App Service](../deployment/media/quickstart-publish-azure.png "Choose Azure App Service")
 
     En Visual Studio 2017 versión 15.7 y posteriores, puede implementar aplicaciones ASP.NET Core en **App Service para Linux**.
 
-    En el caso de las aplicaciones de Python, vea también [Python: Publicación en Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
+    En el caso de las aplicaciones de Python, vea también [Python: Publicación en Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
 
     Para obtener una introducción rápida, vea [Publicar en Azure](quickstart-deploy-to-azure.md) y [Publicar en Linux](quickstart-deploy-to-linux.md). Además, vea [Publicar una aplicación de ASP.NET Core en Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Para implementar mediante Git, vea [Implementación continua en Azure con Visual Studio y Git con ASP.NET Core](/aspnet/core/publishing/azure-continuous-deployment).
 
@@ -66,7 +66,7 @@ La implementación en una carpeta local se suele usar para las pruebas, o para i
 
 ## <a name="publish-to-web-or-deploy-to-network-share"></a>Publicar en Internet o implementar en un recurso compartido de red
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js** y **Python**: puede usar la herramienta Publicar para implementar en un sitio web mediante FTP o Web Deploy. Para obtener más información, vea [Implementar en un sitio web](quickstart-deploy-to-a-web-site.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js** y **Python**: puede usar la opción Publicar para implementar en un sitio web mediante FTP o Web Deploy. Para obtener más información, vea [Implementar en un sitio web](quickstart-deploy-to-a-web-site.md).
 
     En el Explorador de soluciones, haga clic con el botón derecho en el proyecto y seleccione **Publicar**. (Si anteriormente ha configurado algún perfil de publicación, debe hacer clic en **Crear nuevo perfil**). En la herramienta Publicar, elija la opción que quiera y siga los pasos de configuración.
 

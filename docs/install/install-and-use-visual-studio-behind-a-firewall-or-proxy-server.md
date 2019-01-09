@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91074815c0723f24bbb89bcb45eafc0fae5866d6
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 3a4e3ec3c7d581d8c99018b2dd8c89f37e33c6ea
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160171"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348501"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalación y uso de Visual Studio y de servicios de Azure detrás de un firewall o servidor proxy
 
@@ -101,7 +101,7 @@ Para asegurarse de que tiene acceso a todo lo que necesita cuando utiliza Visual
 | NuGet<br><br>Detección de<br> paquetes NuGet | Api.nuget.org <br>www.nuget.org <br>Nuget.org<br><br>crl3.digicert.com <br>crl4.digicert.com <br>ocsp.digicert.com <br>cacerts.digicert.com | https<br><br>http/s | 443<br><br>80/443<br> | Se usa para comprobar paquetes NuGet firmados.<br><br>Necesario para la búsqueda de versiones y paquetes NuGet. |
 | Información sobre el repositorio de GitHub | api.github.com | https | 443 | Necesario para obtener información adicional acerca de los paquetes Bower. |
 | Linter web | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | http | 80 | |
-| Detección de<br>plantillas del explorador<br>de cookiecutter <br><br>Creación de <br>proyectos del explorador<br> de cookiecutter | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | https | 443<br> | Se usa para detectar plantillas en línea de nuestra fuente recomendada y de repositorios github. <br><br>Se utiliza para crear un proyecto de una plantilla de cookiecutter que requiere una única instalación a petición de un paquete Python cookiecutter desde el índice de paquetes Python (PyPI). |
+| Detección de<br>plantillas del explorador<br>de cookiecutter <br><br>Creación de <br>proyectos del explorador<br> de cookiecutter | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | https | 443<br> | Se usa para detectar plantillas en línea de nuestra fuente recomendada y de repositorios GitHub. <br><br>Se utiliza para crear un proyecto de una plantilla de cookiecutter que requiere una única instalación a petición de un paquete Python cookiecutter desde el índice de paquetes Python (PyPI). |
 | Detección de <br>paquetes Python<br><br>Administración <br>de paquetes Python<br><br>Plantillas de <br>nuevo proyecto <br>Python | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https | 443 | Permite buscar paquetes pip.<br><br>Se utiliza para instalar un paquete pip automáticamente si falta. <br><br> Se utiliza para crear <br><br>Se utiliza para resolver las siguiente plantillas de proyecto Python en el cuadro de diálogo Nuevo proyecto a direcciones URL de la plantilla de cookiecutter:<br> - Proyecto de clasificador<br>- Proyecto de agrupación en clústeres <br> - Proyecto de regresión <br> - PyGame con PyKinect <br> - Proyecto de Pyvot |
 | Servicio <br>de comprobación <br> de manifiesto <br>para complementos <br>web de Office | verificationservice.osi.office.net | https | 443 | Se utiliza para validar los manifiestos para complementos web de Office |
 | Complementos de Office <br>y SharePoint | sharepoint.com | https | 443 | Se utiliza para publicar y probar los complementos de Office y SharePoint en SharePoint Online |

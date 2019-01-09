@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31856366712da0a2287f73906c6e3a5f81f63a00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 85ae5d93d5bb05aa8511b17a5b2d5b775dcc0aae
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857593"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684670"
 ---
-# <a name="customize-your-build"></a>Personalizar una compilación
+# <a name="customize-your-build-c-visual-basic"></a>Personalizar una compilación (C#, Visual Basic)
 
 Los proyectos de MSBuild que usan el proceso de compilación estándar (la importación de *Microsoft.Common.props* y *Microsoft.Common.targets*) tienen varios enlaces de extensibilidad que se pueden usar para personalizar el proceso de compilación.
 

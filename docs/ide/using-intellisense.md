@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e00b43f1705079a86d511239d7b38119868d8f4
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 7e28c3a09197fd3fe0b45d40a3402f484ab867d7
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748480"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684907"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense en Visual Studio
 
@@ -54,7 +54,7 @@ El parámetro en negrita indica el siguiente parámetro requerido a medida que e
 
 ![Información de parámetros](../ide/media/vs2015_param_info.png)
 
-Cuando se anotan funciones y parámetros con comentarios de documentación XML, los comentarios se muestran como Información de parámetros. Para obtener más información, vea [Proporcionar comentarios del código XML](../ide/supplying-xml-code-comments.md).
+Cuando se anotan funciones y parámetros con comentarios de documentación XML, los comentarios se muestran como Información de parámetros. Para obtener más información, vea [Proporcionar comentarios del código XML](reference/generate-xml-documentation-comments.md).
 
 Para invocar manualmente la información de parámetros, elija **Edición** > **IntelliSense** > **Información de parámetros**, presione **CTRL**+**MAYÚS**+**Barra espaciadora** o seleccione el botón **Información de parámetros** de la barra de herramientas del editor.
 
@@ -104,4 +104,4 @@ MessageBox( hWnd, "String literal|")
 - [IntelliSense para C#](../ide/visual-csharp-intellisense.md)
 - [IntelliSense para JavaScript](../ide/javascript-intellisense.md)
 - [Escribir y refactorizar código (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
-- [Proporcionar comentarios en código XML](../ide/supplying-xml-code-comments.md)
+- [Proporcionar comentarios en código XML](reference/generate-xml-documentation-comments.md)

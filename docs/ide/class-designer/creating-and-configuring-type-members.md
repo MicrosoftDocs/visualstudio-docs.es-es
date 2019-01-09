@@ -31,12 +31,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b93fa4720a6f0de9e2d7a64eb2c820811610297
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d1141c8d54bf545983c89e13ddbf17ffd41e5011
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938804"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684946"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Crear y configurar miembros de tipo en el Diseñador de clases
 
@@ -59,12 +59,12 @@ Puede agregar estos miembros a los tipos en un diagrama de clase y configurarlos
 
 |Tarea|Contenido adicional|
 |----------| - |
-|**Introducción:** antes de crear y configurar los miembros de tipo, debe abrir la ventana **Detalles de clase**.|- [Abrir la ventana Detalles de clase](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Notas de uso de Detalles de clase](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Presentación de la información de solo lectura](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Métodos abreviados de teclado y de mouse en el Diagrama de clases y la ventana Detalles de clase](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
+|**Primer paso:** antes de crear y configurar los miembros de tipo, debe abrir la ventana **Detalles de clase**.|- [Abrir la ventana Detalles de clase](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Notas de uso de Detalles de clase](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Presentación de la información de solo lectura](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Métodos abreviados de teclado y de mouse en el Diagrama de clases y la ventana Detalles de clase](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
 |**Crear y modificar miembros de tipo:** puede crear nuevos miembros, modificar miembros y agregar parámetros a un método mediante la ventana **Detalles de clase**.|- [Crear miembros](creating-and-configuring-type-members.md#create-members)<br />- [Modificar miembros de tipo](creating-and-configuring-type-members.md#modify-type-members)<br />- [Agregar parámetros a métodos](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
 ## <a name="open-the-class-details-window"></a>Abrir la ventana Detalles de clase
 
-De manera predeterminada, la ventana **Detalles de clase** aparece automáticamente cuando se abre un nuevo diagrama de clases. Vea [Cómo: Agregar diagramas de clases a proyectos](how-to-add-class-diagrams-to-projects.md). También puede abrir la ventana **Detalles de clase** de las maneras siguientes:
+De manera predeterminada, la ventana **Detalles de clase** aparece automáticamente cuando se abre un nuevo diagrama de clases. Vea [Cómo: Agregar diagramas de clases a proyectos](how-to-add-class-diagrams-to-projects.md)). También puede abrir la ventana **Detalles de clase** de las maneras siguientes:
 
 - Haga clic con el botón derecho en cualquier clase del diagrama para que aparezca un menú contextual y después seleccione **Detalles de clase**.
 
@@ -209,7 +209,7 @@ Las filas de parámetros contienen los elementos siguientes:
 
      La última fila de parámetros de un miembro contiene el texto **<add parameter>** en la celda **Nombre**. Haga clic en esta celda para crear un nuevo parámetro. Para obtener más información, vea [Para agregar un parámetro a un método](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
-La ventana **Propiedades** muestra las mismas propiedades de parámetro que la ventana **Detalles de clase**: **Nombre**, **Tipo**, **Modificador**, **Resumen**, así como la propiedad **Valor predeterminado opcional**. Al cambiar una propiedad en una ubicación, se actualiza globalmente el valor de la propiedad, incluida la presentación de su valor en la otra ubicación.
+La ventana **Propiedades** muestra las mismas propiedades de parámetro que la ventana **Detalles de clase**: **Nombre**, **Tipo**, **Modificador** y **Resumen**, así como la propiedad **Valor predeterminado opcional**. Al cambiar una propiedad en una ubicación, se actualiza globalmente el valor de la propiedad, incluida la presentación de su valor en la otra ubicación.
 
 > [!NOTE]
 > Para agregar un parámetro a un delegado, vea [Crear miembros](creating-and-configuring-type-members.md#create-members).
@@ -320,5 +320,5 @@ No puede modificar código C++ nativo mediante el Diseñador de clases o la vent
 
 ## <a name="see-also"></a>Vea también
 
-- [Visualización de tipos y relaciones](viewing-types-and-relationships.md)
+- [Visualización de tipos y relaciones](designing-and-viewing-classes-and-types.md)
 - [Refactorización de clases y tipos](refactoring-classes-and-types.md)

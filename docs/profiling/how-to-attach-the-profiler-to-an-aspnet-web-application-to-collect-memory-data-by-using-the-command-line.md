@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7f5c592733cc43101cb5cf022caf84892a55af7a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: dd601612071c2d310986692c3242c4232da328a1
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052963"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592747"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Procedimiento para adjuntar el generador de perfiles a una aplicación web ASP.NET para recopilar datos de memoria mediante la línea de comandos
 En este artículo se describe cómo usar las herramientas de línea de comandos de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para adjuntar el generador de perfiles a una aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] y recopilar datos sobre el número y tamaño de asignaciones de memoria de .NET Framework. También puede recopilar datos sobre la duración de los objetos de memoria de .NET Framework.  
 
 > [!NOTE]
->  Las herramientas de línea de comandos de las Herramientas de generación de perfiles se encuentran en el subdirectorio *\Team Tools\Performance Tools* del directorio de instalación de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana Símbolo del sistema o agregarla al propio comando. Para obtener más información, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Para obtener la ruta de acceso a las herramientas de generación de perfiles, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana Símbolo del sistema o agregarla al propio comando.
 
  Para recopilar datos de rendimiento de una aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], debe usar la herramienta [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) para inicializar las variables de entorno adecuadas en el equipo que hospeda la aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. A continuación, debe reiniciar el equipo para configurar el servidor web para la generación de perfiles.  
 

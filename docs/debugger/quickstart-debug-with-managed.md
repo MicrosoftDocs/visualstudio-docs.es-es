@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e35d102a30ffc7b80d39f359542bbdc4c00feff6
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 891387d244a805df2929a120a9312697ad79f192
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257191"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562079"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Inicio rápido: Depurar con C# o Visual Basic mediante el depurador de Visual Studio
 
@@ -151,7 +151,7 @@ Mientras la ejecución está detenida en el punto de interrupción, mantenga el 
 
 La aplicación se sigue ejecutando, llama a `doWork` y se detiene en la línea de código donde se ha hecho clic en el botón.
 
-Los comandos de teclado habituales usados para ejecutar el código paso a paso son **F10** y **F11**. Para obtener más instrucciones detalladas, vea la [Guía para principiantes](../debugger/getting-started-with-the-debugger.md).
+Los comandos de teclado habituales usados para ejecutar el código paso a paso son **F10** y **F11**. Para obtener instrucciones más detalladas, vea [Primer vistazo al depurador](../debugger/debugger-feature-tour.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Inspeccionar las variables de una información sobre datos
 

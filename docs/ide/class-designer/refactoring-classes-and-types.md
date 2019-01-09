@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d5683f28150089335f04e9cf2e5274ad3ff413c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 84850d9de539267385ddddf39cea55672ad60034
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922528"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684709"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>Refactorizar clases y tipos en el Diseñador de clases
 
@@ -40,8 +40,8 @@ Al refactorizar el código, lo hace más fácil de entender y mantener, y más e
 |Tarea|Contenido adicional|
 |----------| - |
 |**Refactorización de clases:** puede utilizar operaciones de refactorización para dividir una clase en clases parciales o para implementar una clase base abstracta.|-   [Cómo: Dividir una clase en clases parciales](how-to-split-a-class-into-partial-classes.md)|
-|**Trabajo con interfaces:** en el Diseñador de clases, puede implementar una interfaz en el diagrama de clases conectándola a una clase que proporcione el código para los métodos de interfaz.|-   [Cómo: Implementar una interfaz](how-to-implement-an-interface.md)|
-|**Refactorización de tipos, miembros de tipos y parámetros:** con el Diseñador de clases puede cambiar el nombre de tipos, invalidar miembros de tipos o moverlos de un tipo a otro. También puede crear tipos que acepten valores NULL.|-   [Cambio de nombre de tipos y miembros de tipos](#rename-types-and-type-members)<br />-   [Traslado de miembros de tipo de un tipo a otro](#move-type-members-from-one-type-to-another)<br />-   [Cómo: Crear un tipo que acepta valores NULL](how-to-create-a-nullable-type.md)|
+|**Trabajo con interfaces:** En el Diseñador de clases, puede implementar una interfaz en el diagrama de clases si la conecta a una clase que proporcione el código para los métodos de interfaz.|-   [Cómo: Implementar una interfaz](how-to-implement-an-interface.md)|
+|**Refactorización de tipos, miembros de tipo y parámetros:** con el Diseñador de clases puede cambiar el nombre de tipos, invalidar miembros de tipos o moverlos de un tipo a otro. También puede crear tipos que acepten valores NULL.|-   [Cambio de nombre de tipos y miembros de tipos](#rename-types-and-type-members)<br />-   [Traslado de miembros de tipo de un tipo a otro](#move-type-members-from-one-type-to-another)<br />-   [Cómo: Crear un tipo que acepta valores NULL](how-to-create-a-nullable-type.md)|
 
 ## <a name="rename-types-and-type-members"></a>Cambio de nombre de tipos y miembros de tipos
 
@@ -90,5 +90,4 @@ Con el **Diseñador de clases**, puede mover un miembro de tipo de un tipo a otr
 
 ## <a name="see-also"></a>Vea también
 
-- [Visualización de tipos y relaciones](viewing-types-and-relationships.md)
-- [Diseño de clases y tipos](designing-classes-and-types.md)
+- [Diseño de clases y tipos](designing-and-viewing-classes-and-types.md)

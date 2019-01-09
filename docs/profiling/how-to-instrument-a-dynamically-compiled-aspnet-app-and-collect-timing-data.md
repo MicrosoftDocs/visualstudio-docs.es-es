@@ -1,5 +1,5 @@
 ---
-title: Instrumentación de una aplicación web ASP.NET compilada dinámicamente y recopilación de datos detallados de control de tiempo con el generador de perfiles mediante la línea de comandos | Microsoft Docs
+title: Procedimiento Instrumentar una aplicación web ASP.NET compilada dinámicamente y recopilación de datos detallados de control de tiempo con el generador de perfiles mediante la línea de comandos | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -9,19 +9,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: bcc5d167fdd53a597fb171881ae61281c8280c8d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 653b4c9b04f3a126e4c63384d99fafce6c9cfcff
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894578"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592487"
 ---
-# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Procedimiento para instrumentar una aplicación web ASP.NET compilada dinámicamente y recopilar datos de tiempo detallados con el generador de perfiles mediante la línea de comandos
+# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Procedimiento Instrumentar una aplicación web ASP.NET compilada dinámicamente y recopilar datos detallados de control de tiempo con el generador de perfiles mediante la línea de comandos
 
 En este artículo se explica cómo usar las herramientas de línea de comandos de las Herramientas de generación de perfiles de Visual Studio para recopilar datos de tiempo detallados de una aplicación [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilada dinámicamente mediante el método de generación de perfiles de instrumentación.
 
 > [!NOTE]
-> Las herramientas de línea de comandos de las Herramientas de generación de perfiles se encuentran en el subdirectorio *\Team Tools\Performance Tools* del directorio de instalación de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana Símbolo del sistema o agregarla al propio comando. Para más información, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+>  Para obtener la ruta de acceso a las herramientas de generación de perfiles, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana Símbolo del sistema o agregarla al propio comando.
 
 Para recopilar datos de rendimiento de una aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], debe modificar el archivo *web.config* de la aplicación de destino para permitir que la herramienta [VSInstr.exe](../profiling/vsinstr.md) instrumente los archivos de aplicación compilados dinámicamente. Luego, use la herramienta [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) para establecer las variables de entorno adecuadas en el servidor web que habiliten la generación de perfiles y, después, reinicie el equipo.
 

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e7bc849a48161fdf1763517f90514dfb464b74e
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: c7b79b5aa5054781813d561089dab204bd1763bf
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37090028"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684767"
 ---
 # <a name="debug-page-project-designer"></a>Página Depuración, Diseñador de proyectos
 
@@ -85,7 +85,7 @@ Active o desactive esta casilla para habilitar o deshabilitar la depuración de 
 
 ## <a name="see-also"></a>Vea también
 
-- [Depurar en Visual Studio](../../debugger/debugging-in-visual-studio.md)
+- [Depurar en Visual Studio](../../debugger/debugger-feature-tour.md)
 - [Configuración del proyecto para configuraciones de depuración en C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Configuración del proyecto para una configuración de depuración de Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
 - [Cómo: Depurar una aplicación ClickOnce con permisos restringidos](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)

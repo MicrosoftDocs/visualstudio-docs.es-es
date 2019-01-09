@@ -3,24 +3,24 @@ title: Suscripciones de Visual Studio ofrecidas a partners de Microsoft Partner 
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 03/16/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Información detallada sobre qué suscripciones se ofrecen, las reglas que se aplican y cuántas suscripciones se ofrecen en MPN.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7175dd503c2e91091b5bb6499fa54c0e5f2586ec
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 72889ca5d206a8f04562b3a91e5d116339279417
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876775"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739457"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Suscripciones de Visual Studio ofrecidas a partners de Microsoft Partner Network (MPN)
 Los partners que hayan obtenido una competencia o que hayan adquirido el Action Pack en MPN pueden optar a usar suscripciones de Visual Studio. Estas suscripciones se proporcionan con licencia por usuario y son válidas solo si están asignadas a un determinado nombre de usuario que trabaja en la compañía asociada.
 
 ## <a name="subscriptions-for-partners-with-an-mpn-competency"></a>Suscripciones para partners con una competencia de MPN
-Cuando un partner obtiene una competencia (ya sea Silver o Gold), adquiere un número básico de suscripciones de Visual Studio Enterprise. Las ventajas centrales varían si el partner obtiene al menos una competencia Gold. La suscripción de Visual Studio Enterprise es una oferta personalizada que equivale aproximadamente a la [suscripción de nube anual de Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/), si bien prescindiendo de ciertas ventajas (muchas de las cuales se ofrecen por separado a los partners como ventajas de MPN generales, más que como parte de las suscripciones de Visual Studio Enterprise ofrecidas a través de MPN).
+Cuando un partner obtiene una competencia (ya sea Silver o Gold), adquiere un número básico de suscripciones de Visual Studio Enterprise. Las ventajas centrales varían si el partner obtiene al menos una competencia Gold. La suscripción de Visual Studio Enterprise es una oferta personalizada que equivale aproximadamente a la [suscripción estándar de Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/), si bien prescindiendo de ciertas ventajas (muchas de las cuales se ofrecen por separado a los partners como ventajas de MPN generales, más que como parte de las suscripciones de Visual Studio Enterprise ofrecidas a través de MPN).
 
 ### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>Ventajas centrales de Visual Studio para obtener al menos una competencia de cualquier tipo
 

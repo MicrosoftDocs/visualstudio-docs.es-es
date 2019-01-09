@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Modificar archivos web.config para instrumentar y generar perfiles de aplicaciones web ASP.NET compiladas dinámicamente | Microsoft Docs'
+title: Procedimiento Modificar archivos web.config para instrumentar y generar perfiles de aplicaciones web ASP.NET compiladas dinámicamente | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 521da3263d3ea893613bf3b5211763230d07c67f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c3fe6e9efdf787df351ffc41e7d31b76a2162b8
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830995"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592630"
 ---
-# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Cómo: Modificar archivos Web.config para instrumentar y generar perfiles de aplicaciones web ASP.NET compiladas dinámicamente
+# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Procedimiento Modificar archivos web.config para instrumentar y generar perfiles de aplicaciones web ASP.NET compiladas dinámicamente
 Puede usar el método de instrumentación de las herramientas de generación de perfiles [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para recopilar datos detallados de tiempo, los datos de asignación de memoria de .NET y datos de duración de objetos .NET de aplicaciones web compiladas de forma dinámica [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
 
  En este tema se describe cómo modificar el archivo de configuración *web.config* para habilitar la instrumentación y la generación de perfiles de aplicaciones web de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
@@ -146,7 +146,7 @@ Puede usar el método de instrumentación de las herramientas de generación de 
    | Nombre de atributo | Valor del atributo |
    |----------------| - |
    | **key** | **Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation** |
-   | **valor** | `PerformanceToolsFolder` **\VSInstr.Exe** |
+   | **value** | `PerformanceToolsFolder` **\VSInstr.Exe** |
 
 
 4. Agregue otro elemento **add** como elemento secundario del elemento **appSettings**.  
@@ -156,9 +156,10 @@ Puede usar el método de instrumentación de las herramientas de generación de 
    |Nombre de atributo|Valor del atributo|  
    |--------------------|---------------------|  
    |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|  
-   |**valor**|`PerformanceToolsFolder`|  
+   |**value**|`PerformanceToolsFolder`|  
 
-    `PerformanceToolsFolder` es la ruta de acceso de los archivos ejecutables del generador de perfiles. Si [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] está instalado en la ubicación predeterminada, el valor será **C:\Archivos de programa\Microsoft Visual Studio 10.0\Team Tools\Performance Tools**  
+    `PerformanceToolsFolder` es la ruta de acceso de los archivos ejecutables del generador de perfiles. Para obtener la ruta de acceso a las herramientas de generación de perfiles, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+
 
 ```xml  
     <configuration>  
@@ -171,11 +172,11 @@ Puede usar el método de instrumentación de las herramientas de generación de 
         <appSettings>  
             <add  
                 key="Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation"  
-                value="C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\vsinstr.exe"  
+                value="C:\Program Files\Microsoft Visual Studio 14.0\Team Tools\Performance Tools\vsinstr.exe"  
         />  
             <add  
                 key="Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools"  
-                value="C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\"  
+                value="C:\Program Files\Microsoft Visual Studio 14.0\Team Tools\Performance Tools\"  
             />  
         </appSettings>  
     </configuration>  
@@ -216,11 +217,11 @@ Puede usar el método de instrumentación de las herramientas de generación de 
         <appSettings>  
             <add  
                 key="Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation"  
-                value="C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\vsinstr.exe"  
+                value="C:\Program Files\Microsoft Visual Studio 14.0\Team Tools\Performance Tools\vsinstr.exe"  
             />  
             <add  
                 key="Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools"  
-                value="C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\"  
+                value="C:\Program Files\Microsoft Visual Studio 14.0\Team Tools\Performance Tools\"  
             />  
         </appSettings>  
     </configuration>  

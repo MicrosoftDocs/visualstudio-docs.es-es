@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b3d4d6a352d2ff1b71796d64c34992af493867a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 65cf3b0d716251b41f144f523f12e1284357ed3a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063268"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647837"
 ---
 # <a name="analyze-cpu-usage"></a>Analizar el uso de CPU 
 
@@ -84,7 +84,7 @@ Para ver el árbol de llamadas, seleccione el nodo primario en el informe. La p�
 
  Las funciones del sistema y del marco que ejecuta el código se llaman *código externo*. Las funciones de código externo inician y detienen la aplicación, dibujan la interfaz de usuario, controlan los subprocesos y proporcionan otros servicios de bajo nivel a la aplicación. En la mayoría de los casos no le interesará el código externo, por lo que el árbol de llamadas de Uso de CPU reúne las funciones externas de un método de usuario en un nodo **[Código externo]**.  
   
- Para ver las rutas de llamada de código externo, en la página de informe de diagnóstico principal, seleccione **Mostrar código externo** en la lista desplegable **Filtro** y después haga clic en **Aplicar**. Después, la vista **Árbol de llamadas** de la página **Uso de CPU** expande las llamadas a código externo.  
+ Para ver las rutas de llamada de código externo, en la página de informe de diagnóstico principal (panel derecho), seleccione **Mostrar código externo** en la lista desplegable **Filtro** y después haga clic en **Aplicar**. Después, la vista **Árbol de llamadas** de la página **Uso de CPU** expande las llamadas a código externo. (La lista desplegable **Filtro** está disponible en la página principal de diagnóstico, no en las vistas detalladas).
   
  ![Mostrar código externo](../profiling/media/cpu_use_wt_filterview.png "Show External Code")  
   

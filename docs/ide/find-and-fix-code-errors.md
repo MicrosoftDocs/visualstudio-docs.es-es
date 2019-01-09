@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 320615daa95ba9fad69fe48490f83c19ccf8e1ce
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 148d839ccfac7b3a8fb9b75ba4d7e1f632cb5676
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34065122"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684826"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Hacer que el código funcione en Visual Studio
 
@@ -26,7 +26,7 @@ Ha ideado el editor y creado parte del código. Ahora, quiere asegurarse de que 
 
 ## <a name="build-your-code"></a>Compilar el código
 
-Hay dos tipos básicos de configuración de compilación: **Depuración** y **Versión**. La configuración de **Depuración** genera un archivo ejecutable más lento y más grande que permite una experiencia de depuración en tiempo de ejecución interactiva y más completa. Nunca se debe enviar el archivo ejecutable de **Depuración**. La configuración de **Release** crea un archivo ejecutable más rápido y optimizado, adecuado para enviar (al menos desde la perspectiva del compilador). La configuración de compilación predeterminada es **Depuración**.
+Hay dos tipos básicos de configuración de compilación: **depuración** y **lanzamiento**. La configuración de **Depuración** genera un archivo ejecutable más lento y más grande que permite una experiencia de depuración en tiempo de ejecución interactiva y más completa. Nunca se debe enviar el archivo ejecutable de **Depuración**. La configuración de **Release** crea un archivo ejecutable más rápido y optimizado, adecuado para enviar (al menos desde la perspectiva del compilador). La configuración de compilación predeterminada es **Depuración**.
 
 La manera más sencilla de compilar el proyecto consiste en presionar **F7**, pero también se puede iniciar la compilación seleccionando **Compilar** > **Compilar solución** en el menú principal.
 
@@ -144,7 +144,7 @@ Cuando el depurador está pausado, puede inspeccionar las variables y pilas de l
 
 ![Inspección del valor de tiempo de ejecución de Visual Studio](../ide/media/vs_ide_gs_debug_inspect_value.png)
 
-Mantenga el mouse sobre una variable para ver su valor actual y las referencias. Si ve un valor que no esperaba, probablemente tenga un error en las líneas de código anteriores o en el código que realiza la llamada. Para obtener información sobre depuración más detallada, [vea más información](../debugger/getting-started-with-the-debugger.md) sobre cómo usar el depurador.
+Mantenga el mouse sobre una variable para ver su valor actual y las referencias. Si ve un valor que no esperaba, probablemente tenga un error en las líneas de código anteriores o en el código que realiza la llamada. Para obtener información sobre depuración más detallada, [vea más información](../debugger/debugger-feature-tour.md) sobre cómo usar el depurador.
 
 Además, Visual Studio muestra la ventana **Herramientas de diagnóstico**, donde puede observar el uso que hace la aplicación de la memoria y la CPU con el tiempo. Más adelante en el desarrollo de aplicaciones, puede usar estas herramientas para buscar un uso elevado de la CPU inesperado o de asignación de memoria. Úsela con la ventana **Inspección** y con puntos de interrupción para determinar qué está causando un uso intensivo o problemas de liberación de recursos inesperados. Para más información, vea [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md).
 
@@ -159,5 +159,5 @@ Para obtener más información sobre las pruebas unitarias en Visual Studio y c�
 ## <a name="see-also"></a>Vea también
 
 - [Guía de características del depurador](../debugger/debugger-feature-tour.md)
-- [Más información sobre cómo usar el depurador](../debugger/getting-started-with-the-debugger.md)
+- [Más información sobre cómo usar el depurador](../debugger/debugger-feature-tour.md)
 - [Generación y corrección del código](../ide/code-generation-in-visual-studio.md)

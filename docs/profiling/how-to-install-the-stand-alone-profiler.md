@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Instalar el generador de perfiles independiente | Microsoft Docs'
+title: Procedimiento Instalar el generador de perfiles independiente | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -13,27 +13,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c9e7c6ec4a34d59c45b2a56abedaa6d3fd2974
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0f8f4204a48a9846a6193c6b8b60c3ef321816e
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942454"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648673"
 ---
-# <a name="how-to-install-the-stand-alone-profiler"></a>Cómo: Instalar el generador de perfiles independiente
+# <a name="how-to-install-the-stand-alone-profiler"></a>Procedimiento Instalar el generador de perfiles independiente
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proporciona un generador de perfiles independiente basado en la línea de comandos que se puede ejecutar sin tener que instalar el IDE de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Esta situación se da si un equipo no tiene o no puede tener instalado un entorno de desarrollo. Por ejemplo, no debe instalar un entorno de desarrollo en un servidor web de producción.  
   
 > [!NOTE]
 >  Al usar el generador de perfiles independiente para recopilar datos de rendimiento para un sitio web de ASP.NET, es preferible usar la herramienta de línea de comandos [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) en vez de la herramienta [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-install-the-stand-alone-profiler"></a>Para instalar el generador de perfiles independiente  
-  
-1. Busque el instalador del generador de perfiles independiente (*vs_profiler.exe*) en los medios de instalación de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], en el directorio que incluye la ruta de acceso *\Standalone Profiler* y ejecútelo.  
+
+1. Descargue las [Herramientas de rendimiento para Visual Studio](https://visualstudio.microsoft.com/downloads/?q=performance+tools#performance-tools-for-visual-studio-2017).
+
+1. Busque el instalador de perfiles independiente (*vs_standaloneprofiler.exe*) donde haya descargado las herramientas de rendimiento y ejecútelo.
   
 2. Agregue las rutas de acceso de *vsintr.exe* y *msdis150.dll* a la ruta de acceso del sistema.  
   
    > [!NOTE]
-   >  En la instalación predeterminada de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], *vsinstr.exe* y *msdis150.dll* se encuentran en *\Archivos de programa\Visual Studio 10\Team Tools\Performance Tools*.  
+   >  Para obtener la ruta de acceso a las herramientas de generación de perfiles, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana Símbolo del sistema o agregarla al propio comando. 
   
 3. En el símbolo del sistema, escriba **VSInstr**.  
   
@@ -53,7 +55,7 @@ ms.locfileid: "49942454"
   
 ## <a name="see-also"></a>Vea también  
  [Generación de perfiles desde la línea de comandos](../profiling/using-the-profiling-tools-from-the-command-line.md)   
- [Tutorial: Generación de perfiles de línea de comandos mediante muestreo](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
+ [Tutorial: Generar perfiles mediante muestreo desde la línea de comandos](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
  [Tutorial: Generar perfiles mediante instrumentación desde la línea de comandos](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)   
  [Cómo: Hacer referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

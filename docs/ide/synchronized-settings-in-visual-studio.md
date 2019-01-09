@@ -1,23 +1,21 @@
 ---
 title: Sincronizar la configuración
-ms.date: 11/21/2018
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-f1_keywords:
-- VS.ToolsOptionsPages.Environment.RoamingSettings
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecac148e745eff956151af71a37b23f67a816f56
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 7dcddc06233f439547f0725c1fb39fff26152237
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388496"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348413"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Sincronizar la configuración de Visual Studio en varios equipos
 
@@ -51,11 +49,16 @@ De forma predeterminada, se sincroniza la configuración siguiente:
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>Desactivar la configuración sincronizada en un equipo concreto
 
-La configuración sincronizada de Visual Studio está activada de forma predeterminada. Puede desactivar la configuración sincronizada en un equipo si va a la página **Herramientas** > **Opciones** > **Entorno** > **Cuentas** y desactiva **Sincronizar la configuración en todos los dispositivos al iniciar sesión en Visual Studio**. Por ejemplo, si decide no sincronizar la configuración de Visual Studio en el equipo "A", los cambios de configuración realizados en ese equipo no aparecerán en el equipo "B" ni en el equipo "C". Los equipos "B" y "C" se seguirán sincronizando entre ellos, pero no lo harán con el equipo "A".
+La configuración sincronizada de Visual Studio está activada de forma predeterminada. Puede desactivar la configuración sincronizada en un equipo si va a la página **Herramientas** > **Opciones** > **Entorno** > **Cuentas** y desactiva **Sincronizar la configuración en todos los dispositivos al iniciar sesión en Visual Studio**.
+
+Por ejemplo, si decide no sincronizar la configuración de Visual Studio en el equipo "A", los cambios de configuración realizados en ese equipo no aparecerán en el equipo "B" ni en el equipo "C". Los equipos "B" y "C" se seguirán sincronizando entre ellos, pero no lo harán con el equipo "A".
+
+> [!NOTE]
+> Si decide no sincronizar la configuración dejando sin seleccionar la opción en la página **Herramientas** > **Opciones** > **Entorno** > **Cuentas**, las otras versiones o ediciones de Visual Studio que haya en el mismo equipo no se verán afectadas. Esas instalaciones en paralelo de Visual Studio seguirán sincronizando su configuración (a menos que no seleccione la opción también en ellas).
 
 ## <a name="synchronize-settings-across-visual-studio-family-products-and-editions"></a>Sincronizar la configuración en todos los productos y ediciones de la familia Visual Studio
 
-La configuración se puede sincronizar en cualquier edición de Visual Studio, incluida la edición Community. La configuración también se sincroniza en los productos de la familia Visual Studio. Pero es posible que estos productos de la familia tengan su propia configuración que no se comparta con Visual Studio. Por ejemplo, la configuración específica de un producto en el equipo "A" se comparte con otro producto en el equipo "B", pero no con Visual Studio en los equipos "A" o "B".
+La configuración se sincroniza en todas las versiones y ediciones de Visual Studio instaladas *en paralelo*. También se sincroniza en los productos de la familia Visual Studio, incluido Blend para Visual Studio. Con todo, es posible que un producto en concreto de la familia tenga su propia configuración que no se comparta con Visual Studio. Por ejemplo, la configuración específica de Blend para Visual Studio en el equipo "A" no se comparte con Visual Studio en los equipos "A" o "B".
 
 ## <a name="side-by-side-synchronized-settings"></a>Configuración sincronizada en paralelo
 
@@ -78,4 +81,4 @@ Si actualmente tiene instalaciones en paralelo de Visual Studio 2017 y quiere us
 
 - [Personalizar el IDE](../ide/personalizing-the-visual-studio-ide.md)
 - [Configuración del entorno](../ide/environment-settings.md)
-- [Environment > Accounts Options dialog box](reference/synchronized-settings-environment-options-dialog-box.md) (Entorno > Opciones de cuentas [Cuadro de diálogo])
+- [Environment > Accounts Options dialog box](reference/accounts-environment-options-dialog-box.md) (Entorno > Opciones de cuentas [Cuadro de diálogo])

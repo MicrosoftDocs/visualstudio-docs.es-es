@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e5baebb527c09d833e405a98bd701ad02b7fe86
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d5f1d842c6dcfd4385c800a593ccb20b4ee25129
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928066"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592643"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Tutorial: Uso de las API del generador de perfiles
 
@@ -32,16 +32,18 @@ En el tutorial se usa una aplicación de C# para mostrar cómo usar las API de l
   
  El generador de perfiles de Visual Studio le permite limitar la recopilación de datos. En este tutorial se ofrece un ejemplo de cómo limitar la recopilación de datos mediante las API del generador de perfiles. El generador de perfiles de Visual Studio proporciona una API para controlar la recopilación de datos desde dentro de una aplicación.  
   
- Para el código nativo, las API del generador de perfiles de Visual Studio se encuentran en *VSPerf.dll*. El archivo de encabezado (*VSPerf.h*) y la biblioteca de importación (*VSPerf.lib*) se encuentran en el directorio *Microsoft Visual Studio 9\Team Tools\Performance Tools*.  
+ Para el código nativo, las API del generador de perfiles de Visual Studio se encuentran en *VSPerf.dll*. El archivo de encabezado (*VSPerf.h*) y la biblioteca de importación (*VSPerf.lib*) se encuentran en el directorio *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*.  La carpeta relativa a las aplicaciones de 64 bits se encuentra en *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*.
   
- Para el código administrado, las API del generador de perfiles se encuentran en *Microsoft.VisualStudio.Profiler.dll*. Este archivo DLL se encuentra en el directorio *Microsoft Visual Studio 9\Team Tools\Performance Tools*. Para obtener más información, vea <xref:Microsoft.VisualStudio.Profiler>.  
+ Para el código administrado, las API del generador de perfiles se encuentran en *Microsoft.VisualStudio.Profiler.dll*. Este archivo DLL se encuentra en el directorio *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*. La carpeta relativa a las aplicaciones de 64 bits se encuentra en *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Para obtener más información, vea <xref:Microsoft.VisualStudio.Profiler>. 
+ 
+  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  En este tutorial se da por supuesto que la elección del entorno de desarrollo está configurada para admitir la depuración y el muestreo. En los temas siguientes se proporciona una introducción de estos requisitos previos:  
   
- [Elección de métodos de recopilación](../profiling/how-to-choose-collection-methods.md)  
+ [Cómo: Elegir métodos de recopilación](../profiling/how-to-choose-collection-methods.md)  
   
- [Referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md)  
+ [Cómo: Hacer referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md)  
   
  De forma predeterminada, cuando se inicia el generador de perfiles, recopila datos en el nivel global. El código siguiente al principio del programa desactiva la generación de perfiles global.  
   
@@ -60,7 +62,7 @@ DataCollection.CurrentId);
 1.  Cree un nuevo proyecto de C# en Visual Studio, o use una compilación de línea de comandos, según sus preferencias.  
   
     > [!NOTE]
-    >  La compilación debe hacer referencia a la biblioteca *Microsoft.VisualStudio.Profiler.dll*, ubicada en el directorio *Microsoft Visual Studio 9\Team Tools\Performance Tools*.  
+    >  La compilación debe hacer referencia a la biblioteca *Microsoft.VisualStudio.Profiler.dll*, que está en el directorio *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*.  
   
 2.  Copie y pegue el código siguiente en el proyecto:  
   

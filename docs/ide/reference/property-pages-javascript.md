@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a35ee6d086153adc718a1616c0c8f0c8c606fbb7
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: eabc82926c821fb5a8d83637fb9118bc25df82bc
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220035"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684998"
 ---
 # <a name="property-pages-javascript"></a>Página de propiedades, JavaScript
 Las **Páginas de propiedades** proporcionan acceso a la configuración del proyecto. Puede usar las páginas que aparecen en las **páginas Propiedades** para cambiar las propiedades del proyecto.
@@ -73,7 +73,7 @@ Las siguientes páginas y opciones aparecen en las **páginas Propiedades**.
 
  Especifica el host predeterminado para el depurador.
 
--   Seleccione **Equipo Local** para iniciar la aplicación en el equipo host de Visual Studio. Para obtener más información, vea [Ejecutar aplicaciones en el equipo local](../../debugger/run-windows-store-apps-on-the-local-machine.md).
+-   Seleccione **Equipo Local** para iniciar la aplicación en el equipo host de Visual Studio. Para obtener más información, vea [Ejecutar aplicaciones en el equipo local](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
 
 -   Seleccione **Simulador** para iniciar la aplicación en el simulador. Para obtener más información, vea [Ejecutar aplicaciones en el simulador](../../debugger/run-windows-store-apps-in-the-simulator.md).
 

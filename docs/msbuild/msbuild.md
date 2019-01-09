@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e87b1a71cde4d6fb37e05fa99698b636ff87bf4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ea1db2c465c362fee0f3e06074b1cea3562d21fd
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876729"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739950"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] es una plataforma para compilar aplicaciones. Este motor, que también se conoce como MSBuild, proporciona un esquema XML para un archivo del proyecto que controla cómo la plataforma de compilación procesa y compila el software. Visual Studio utiliza MSBuild, pero no depende de Visual Studio. Al invocar *msbuild.exe* en el archivo de proyecto o solución, puede orquestar y compilar productos en entornos donde no está instalado Visual Studio.
@@ -29,7 +29,7 @@ ms.locfileid: "49876729"
 
  En los ejemplos siguientes se muestra cuándo pueden ejecutarse las compilaciones mediante una línea de comandos de MSBuild en lugar de usar el IDE de Visual Studio.
 
--   Visual Studio no está instalado.
+-   Visual Studio no está instalado. ([Descargue MSBuild sin Visual Studio](https://visualstudio.microsoft.com/downloads/?q=build+tools)).
 
 -   Desea utilizar la versión de 64 bits de MSBuild. Esta versión de MSBuild normalmente es innecesaria, pero permite que MSBuild tenga acceso a más memoria.
 
@@ -50,7 +50,7 @@ Puede escribir código en el IDE de Visual Studio, pero ejecutar las compilacion
 > [!NOTE]
 >  Puede utilizar Team Foundation Build para compilar, probar e implementar automáticamente la aplicación. El sistema de compilación puede ejecutar automáticamente las compilaciones cuando los desarrolladores protegen el código (por ejemplo, como parte de una estrategia de integración continua) o según una programación (por ejemplo, una prueba nocturna de comprobación de la compilación). Team Foundation Build compila el código con MSBuild. Para obtener más información, consulte [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
- En este tema se proporciona información general sobre MSBuild. Para obtener un tutorial de introducción, consulte [Tutorial: Utilizar MSBuild](../msbuild/walkthrough-using-msbuild.md).
+ En este tema se proporciona información general sobre MSBuild. Para obtener un tutorial de introducción, consulte [Tutorial: Usar MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
 ##  <a name="use-msbuild-at-a-command-prompt"></a>Uso de MSBuild en un símbolo del sistema
  Para ejecutar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] en un símbolo del sistema, pase un archivo del proyecto a *MSBuild.exe* junto con las opciones de la línea de comandos adecuadas. Las opciones de la línea de comandos permiten establecer propiedades, ejecutar destinos concretos y establecer otras opciones que controlan el proceso de compilación. Por ejemplo, para compilar el archivo *MyProj.proj* con la propiedad `Configuration` establecida en `Debug`, usaría la siguiente sintaxis de línea de comandos.
@@ -67,7 +67,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 ##  <a name="project-file"></a>Archivo del proyecto
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] utiliza un formato de archivo del proyecto basado en XML que es sencillo y extensible. El formato de archivo del proyecto de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] permite a los desarrolladores describir los elementos que se van a compilar, y también cómo se van a compilar en diferentes sistemas operativos y configuraciones. Además, el formato del archivo de proyecto permite a los desarrolladores crear reglas de compilación reutilizables que se pueden factorizar en archivos independientes para que las compilaciones se ejecuten de forma coherente en los distintos proyectos del producto.
 
- En las secciones siguientes se describen algunos de los elementos básicos del formato de archivo de proyecto de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Para ver un tutorial sobre cómo crear un archivo de proyecto básico, consulte [Tutorial: Crear un archivo del proyecto desde cero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
+ En las secciones siguientes se describen algunos de los elementos básicos del formato de archivo de proyecto de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Para obtener un tutorial sobre cómo crear un archivo de proyecto básico, vea [Tutorial: Crear un archivo de proyecto de MSBuild desde cero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
 
 ###  <a name="BKMK_Properties"></a> Propiedades
  Las propiedades representan pares clave/valor que se pueden utilizar para configurar compilaciones. Las propiedades se declaran mediante la creación de un elemento que tenga el nombre de la propiedad como elemento secundario de un elemento [PropertyGroup](../msbuild/propertygroup-element-msbuild.md). Por ejemplo, el código siguiente crea una propiedad denominada `BuildDir` cuyo valor es `Build`.
@@ -149,7 +149,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 ## <a name="use-msbuild-in-visual-studio"></a>Uso de MSBuild en Visual Studio
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utiliza el formato de archivo de proyecto de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para almacenar información de compilación sobre proyectos administrados. La configuración del proyecto que se agrega o se modifica mediante la interfaz de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se refleja en el archivo *.\*proj* que se genera para cada proyecto. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utiliza una instancia hospedada de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para compilar proyectos administrados. Esto significa que un proyecto administrado se puede compilar en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o en el símbolo del sistema (aunque [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] no esté instalado) y los resultados serán idénticos.
 
- Para obtener un tutorial sobre cómo utilizar MSBuild en Visual Studio, consulte [Tutorial: Cómo utilizar MSBuild](../msbuild/walkthrough-using-msbuild.md).
+ Para obtener un tutorial sobre cómo utilizar MSBuild en Visual Studio, vea [Tutorial: Usar MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
 ##  <a name="BKMK_Multitargeting"></a> Compatibilidad con múltiples versiones (multi-targeting)
  Con Visual Studio, puede compilar una aplicación para que se ejecute en cualquiera de las versiones de .NET Framework. Por ejemplo, puede compilar una aplicación para que se ejecute en .NET Framework 2.0 en una plataforma de 32 bits y compilar esa misma aplicación para que se ejecute en .NET Framework 4.5 en una plataforma de 64 bits. La capacidad de compilar para más de una versión de Framework se denomina multitargeting.
@@ -172,7 +172,7 @@ Para obtener más información, consulte [Compatibilidad con múltiples versione
 
 | Title | Descripción |
 | - | - |
-| [Tutorial: Crear un archivo del proyecto de MSBuild desde el principio](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | Muestra la forma de crear un archivo básico del proyecto de forma incremental, utilizando solo un editor de texto. |
+| [Tutorial: Crear un archivo de proyecto de MSBuild desde cero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | Muestra la forma de crear un archivo básico del proyecto de forma incremental, utilizando solo un editor de texto. |
 | [Tutorial: Usar MSBuild](../msbuild/walkthrough-using-msbuild.md) | Presenta los bloques de compilación de MSBuild y muestra la forma de escribir, manipular y depurar proyectos de MSBuild sin cerrar el IDE de Visual Studio. |
 | [Conceptos de MSBuild](../msbuild/msbuild-concepts.md) | Presenta los cuatro bloques de compilación de MSBuild: propiedades, elementos, destinos y tareas. |
 | [Elementos](../msbuild/msbuild-items.md) | Describe los conceptos generales en que se basa el formato de archivo de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] y la manera de encajar las piezas. |
@@ -182,7 +182,7 @@ Para obtener más información, consulte [Compatibilidad con múltiples versione
 | [Condiciones](../msbuild/msbuild-conditions.md) | Explica la forma de utilizar el atributo `Condition` en un elemento de MSBuild. |
 | [Conceptos avanzados](../msbuild/msbuild-advanced-concepts.md) | Presenta el procesamiento por lotes, la realización de transformaciones, la compatibilidad con múltiples versiones (multitargeting) y otras técnicas avanzadas. |
 | [Registro de MSBuild](../msbuild/logging-in-msbuild.md) | Describe cómo registrar los eventos, mensajes y errores de compilación. |
-| [Recursos adicionales](../msbuild/additional-msbuild-resources.md) | Enumera los recursos de compatibilidad y comunidad para obtener más información sobre MSBuild. |
+| [Recursos adicionales](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) | Enumera los recursos de compatibilidad y comunidad para obtener más información sobre MSBuild. |
 
 ## <a name="reference"></a>Referencia
  [Referencia de MSBuild](../msbuild/msbuild-reference.md) Muestra vínculos a temas que contienen información de referencia.

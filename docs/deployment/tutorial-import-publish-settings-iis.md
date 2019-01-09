@@ -1,6 +1,6 @@
 ---
 title: Publicar en IIS mediante la importación de la configuración de publicación
-ms.custom: Create and import a publishing profile to deploy an application from Visual Studio to IIS
+description: Creación e importación de un perfil de publicación para implementar una aplicación desde Visual Studio en IIS
 ms.date: 05/07/2018
 ms.technology: vs-ide-deployment
 ms.topic: tutorial
@@ -11,18 +11,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6df935578955d3c72b6f4fa61efdf614229bca0
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 4da4a45566fc6d773f185a6a34f7e02cb093fff5
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808470"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348513"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Publicar una aplicación en IIS mediante la importación de la configuración de publicación en Visual Studio
 
 Puede usar la herramienta **Publicar** para importar la configuración de publicación y después implementar la aplicación. En este artículo, se usa la configuración de publicación de IIS, pero puede usar los mismos pasos para importar la configuración de publicación para [Azure App Service](../deployment/tutorial-import-publish-settings-azure.md). En algunos escenarios, el uso de un perfil de configuración de publicación puede ser más rápido que configurar manualmente la implementación en IIS para cada instalación de Visual Studio.
 
-Estos pasos se aplican a las aplicaciones de ASP.NET, ASP.NET Core y .NET Core en Visual Studio. Estos pasos se corresponden con Visual Studio 2017 versión 15.6.
+Estos pasos se aplican a las aplicaciones de ASP.NET, ASP.NET Core y .NET Core en Visual Studio. Estos pasos corresponden a Visual Studio 2017 versión 15.6.
 
 En este tutorial va a:
 
@@ -41,17 +41,17 @@ Un archivo de configuración de publicación (*\*.publishsettings*) es diferente
 
 * Debe tener instalado Visual Studio 2017 y la carga de trabajo de desarrollo de **ASP.NET** y de **.NET Framework**. Para una aplicación de .NET Core, también necesitará la carga de trabajo **.NET Core**.
 
-    Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita.
+    Si todavía no ha instalado Visual Studio, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  para instalarlo de forma gratuita.
 
 * Para generar el archivo de configuración de publicación de IIS, debe tener un equipo que ejecute Windows Server 2012 o Windows Server 2016 y debe tener el rol de servidor web de IIS configurado correctamente. También se debe instalar ASP.NET 4.5 o ASP.NET Core. Para ASP.NET Core, vea [Publicar en IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). Para ASP.NET 4.5, vea [IIS 8.0 Using ASP.NET 3.5 and ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) (IIS 8.0 utilizando ASP.NET 3.5 y ASP.NET 4.5).
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Crear un nuevo proyecto de ASP.NET en Visual Studio
 
-1. En el equipo en el que se ejecuta Visual Studio, seleccione **Archivo** > **Nuevo proyecto**.
+1. En el equipo con Visual Studio, elija **Archivo** > **Nuevo proyecto**.
 
-1. En **Visual C#** o **Visual Basic**, elija **Web**y después en el panel central seleccione **Aplicación web de ASP.NET (.NET Framework)** o (solo para C#) **Aplicación web de ASP.NET Core** y después haga clic en **Aceptar**.
+1. En **Visual C#** o **Visual Basic**, elija **Web** y, en el panel central, elija **Aplicación web ASP.NET (.NET Framework)** o (solo C#) **Aplicación web ASP.NET Core** y haga clic en **Aceptar**.
 
-    Si no ve las plantillas de proyecto especificadas, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Consulte los requisitos previos de este artículo para identificar las cargas de trabajo de Visual Studio necesarias, que debe instalar.
+    Si no ve las plantillas de proyecto especificadas, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Vea los requisitos previos de este artículo para identificar las cargas de trabajo necesarias de Visual Studio, que debe instalar.
 
 1. Elija **MVC** (.NET Framework) o **Aplicación web (Modelo-Vista-Controlador)** (para .NET Core), y asegúrese de que la opción **Sin autenticación** está seleccionada y después haga clic en **Aceptar**.
 

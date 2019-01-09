@@ -3,18 +3,18 @@ title: Beneficio de LinkedIn Learning en suscripciones de Visual Studio | Micros
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/12/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Obtenga información sobre el beneficio de LinkedIn Learning incluido como parte de una suscripción a LinkedIn Premium incluida en suscripciones seleccionadas de Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 8424e42923474284e45abba62bd13a0038263d90
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fa98ce41f0b88bd679568247eea57aa3e62318d3
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942249"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739541"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Beneficio de LinkedIn Learning en suscripciones de Visual Studio
 
@@ -95,22 +95,25 @@ Para activar la suscripción LinkedIn Premium y el beneficio LinkedIn Learning:
 
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (estándar, de nube anual)   | Licencia por volumen, Azure, venta directa, no para reventa<sup>1</sup> | 6 meses       |  No.  Disponible solo para nuevos suscriptores          |
-| Visual Studio Professional (estándar, de nube anual) | Licencia por volumen, Azure, venta directa                                       | 3 meses                                                            |No.  Disponible solo para nuevos suscriptores         |
+| Visual Studio Enterprise (estándar)   | Licencia por volumen, Azure, venta directa, no para reventa<sup>1</sup> | 6 meses       |  No.  Disponible solo para nuevos suscriptores          |
+| Visual Studio Professional (estándar) | Licencia por volumen, Azure, venta directa                                       | 3 meses                                                            |No.  Disponible solo para nuevos suscriptores         |
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | 3 meses                                             |  No.  Disponible solo para nuevos suscriptores         |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | 3 meses                                              | No.  Disponible solo para nuevos suscriptores         |
 | Visual Studio Dev Essentials | NA  | 3 meses |No.  Disponible solo para nuevos suscriptores |
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure                                       | No disponible                                                           |NA|
 
-<sup>1</sup> *Incluye: No para reventa (NFR), Visual Studio Industry Partner (VSIP).  Excluye: Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Microsoft Valued Professional (MVP), Region Director (RD).  MCT Software & Services.*
+<sup>1</sup>  *Incluye:  No para reventa (NFR), Visual Studio Industry Partner (VSIP).  Excluye:  Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Microsoft Valued Professional (MVP), Region Director (RD).  MCT Software & Services.*
 
+
+> [!NOTE]
+> Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
 
 
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 ### <a name="q-if-i-renew-my-subscription-does-my-linkedin-learning-benefit-also-renew"></a>P: Si renuevo la suscripción, ¿también se renueva mi beneficio de LinkedIn Learning?
-R: No, la oferta de LinkedIn Learning solo está disponible para nuevos suscriptores.
+A:  No, la oferta de LinkedIn Learning solo está disponible para nuevos suscriptores.
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
 -  ¿Necesita ayuda con LinkedIn Learning?  Consulte estos recursos:

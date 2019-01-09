@@ -3,18 +3,18 @@ title: Beneficio de chat de soporte técnico en las suscripciones de Visual Stud
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/16/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Obtenga información sobre la ventaja Chat de soporte técnico incluida en las suscripciones de Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 06b890ea79bafade2d33f341d3411c38196c7cc9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e8a039593d0d08add10e948eee1d923b818e4cb
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831853"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740239"
 ---
 # <a name="concierge-chat"></a>Chat de soporte técnico
 
@@ -42,21 +42,25 @@ Obtener ayuda a través del servicio de chat de soporte técnico es un proceso m
 
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (estándar, de nube anual)   | Licencia por volumen, Azure, venta directa, no para reventa<sup>1</sup> | Disponible       |  Sí          |
-| Visual Studio Professional (estándar, de nube anual) | Licencia por volumen, Azure, venta directa                                       | Disponible                                                            |  Sí          |
+| Visual Studio Enterprise (estándar)   | Licencia por volumen, Azure, venta directa, no para reventa<sup>1</sup> | Disponible       |  Sí          |
+| Visual Studio Professional (estándar) | Licencia por volumen, Azure, venta directa                                       | Disponible                                                            |  Sí          |
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | Disponible                                             |  Sí          |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | Disponible                                              |  Sí          |
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure | No disponible | N/D |
 | Visual Studio Dev Essentials | NA  | No disponible |N/D |
 
-<sup>1</sup> *incluye: No para reventa (NFR), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Excluye: FTE, Microsoft Valued Professional (MVP), Region Director (RD), Microsoft Partner Network (MPN), Imagine.*
+<sup>1</sup>  *Incluye:  No para reventa (NFR), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Excluye:  FTE, Microsoft Valued Professional (MVP), Region Director (RD), Microsoft Partner Network (MPN), Imagine.*
+
+> [!NOTE]
+> Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
+
 
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
-### <a name="q--is-the-chat-service-available-in-multiple-languages"></a>P: ¿El servicio de chat está disponible en varios idiomas?
-   R: La asistencia con problemas de cuentas, suscripciones y facturación está disponible en varios idiomas.  La asistencia con la búsqueda de información de productos y documentación técnica está disponible en inglés.
+### <a name="q--is-the-chat-service-available-in-multiple-languages"></a>P:  ¿El servicio de chat está disponible en varios idiomas?
+   A: La asistencia con problemas de cuentas, suscripciones y facturación está disponible en varios idiomas.  La asistencia con la búsqueda de información de productos y documentación técnica está disponible en inglés.
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
 -  Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.

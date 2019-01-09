@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 74671401b3e3eaeae5840110dfc37c926266f98a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 82288b67916255914d352e4f0f6f2fd75aa9571d
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636992"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561962"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Inicio rápido: Depurar ASP.NET con el depurador de Visual Studio
 
@@ -103,7 +103,7 @@ Mientras la ejecución está detenida en el punto de interrupción, mantenga el 
 
 La aplicación se sigue ejecutando y se detiene en la línea de código donde se ha hecho clic en el botón.
 
-Los comandos de teclado habituales usados para ejecutar el código paso a paso son **F10** y **F11**. Para obtener más instrucciones detalladas, vea la [Guía para principiantes](../debugger/getting-started-with-the-debugger.md).
+Los comandos de teclado habituales usados para ejecutar el código paso a paso son **F10** y **F11**. Para obtener instrucciones más detalladas, vea [Primer vistazo al depurador](../debugger/debugger-feature-tour.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Inspeccionar las variables de una información sobre datos
 
@@ -133,7 +133,7 @@ Para obtener más información sobre el uso de Editar y continuar y las limitaci
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-En este tutorial, ha aprendido a iniciar el depurador, a ejecutar el código paso a paso y a inspeccionar variables. Es posible que quiera obtener una visión global de las características del depurador con vínculos a más información.
+En este tutorial, ha aprendido a iniciar el depurador, a ejecutar el código paso a paso y a inspeccionar variables. Puede ser que le interese analizar las características del depurador con más detenimiento, así como consultar los vínculos disponibles con más información.
 
 > [!div class="nextstepaction"]
 > [Guía de características del depurador](../debugger/debugger-feature-tour.md)
