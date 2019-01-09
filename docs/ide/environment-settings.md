@@ -2,19 +2,18 @@
 title: Configuración del entorno
 ms.date: 11/21/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 269a5a4e9cd1b2598ca41ad7b4f4ceb0535d3515
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: ba582f0c7445a64eb27ea2d3875cd7072f65fe3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389991"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927108"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Configuración del entorno de Visual Studio
 

@@ -1,8 +1,6 @@
 ---
 title: Informe de resumen por subproceso | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.executionbreakdown
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba1bc49cc9b2a16f32c854805fdd31b095af1629
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 737e879f040f503ec367438273d2136670a44e21
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255407"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869588"
 ---
 # <a name="per-thread-summary-report"></a>Informe de resumen por subproceso
 Este gráfico de barras muestra la proporción de tiempo que cada subproceso no oculto invierte en cada categoría de actividad durante el intervalo de tiempo visible actualmente. "Ejecución" significa que se está ejecutando el subproceso, todas las demás categorías significan que el subproceso está esperando algo.  

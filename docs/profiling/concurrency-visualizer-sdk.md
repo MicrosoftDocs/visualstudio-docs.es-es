@@ -1,8 +1,6 @@
 ---
 title: SDK del visualizador de simultaneidad | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.sdk.about
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c02959f30f89b8f7c79527026404099a4452a827
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a9898037e7dc6beae5d984856ff5c12b74183049
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691191"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53884975"
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK del Visualizador de simultaneidad
 Puede instrumentar el código fuente mediante el uso del SDK del visualizador de simultaneidad para mostrar información adicional en el visualizador de simultaneidad. Puede asociar los datos adicionales a fases y eventos en el código. Estas visualizaciones adicionales se denominan *marcadores*.  Para obtener un tutorial de introducción, consulte [Introducción al SDK del visualizador de simultaneidad](http://go.microsoft.com/fwlink/?LinkId=235405).  
@@ -123,9 +121,9 @@ Puede instrumentar el código fuente mediante el uso del SDK del visualizador de
   
 ## <a name="see-also"></a>Vea también  
   
-|Title|Description|  
+|Title|Descripción|  
 |-----------|-----------------|  
-|[Referencia de la biblioteca de C++](../profiling/cpp-library-reference.md)|Describe la API del visualizador de simultaneidad de C++.|  
-|[Referencia de la biblioteca de C](../profiling/c-library-reference.md)|Describe la API del visualizador de simultaneidad de C.|  
+|[Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)|Describe la API del visualizador de simultaneidad de C++.|  
+|[Referencia de la biblioteca C](../profiling/c-library-reference.md)|Describe la API del visualizador de simultaneidad de C.|  
 |<xref:Microsoft.ConcurrencyVisualizer.Instrumentation>|Describe la API del visualizador de simultaneidad del código administrado.|  
 |[Visualizador de simultaneidad](../profiling/concurrency-visualizer.md)|Información de referencia para las vistas y los informes de archivos de datos de generación de perfiles generados mediante el método de simultaneidad y que incluyen datos de ejecución de subprocesos.|

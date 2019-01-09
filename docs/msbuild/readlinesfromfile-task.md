@@ -1,8 +1,6 @@
 ---
 title: ReadLinesFromFile (Tarea) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ReadLinesFromFile
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b545efb397e2dcd5052605db1d14e113ea9fc76
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: ee4062f8bb2620dfcd3d8cf8c3406bcd10f16578
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152053"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885671"
 ---
 # <a name="readlinesfromfile-task"></a>ReadLinesFromFile (tarea)
 Lee una lista de elementos de un archivo de texto.  

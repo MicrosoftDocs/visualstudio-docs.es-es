@@ -3,7 +3,6 @@ title: Plantilla de proyecto de servicio de nube de Azure para Python
 description: Visual Studio proporciona plantillas para los servicios en la nube de Azure escritas en Python, que incluyen la implementación de roles, dependencias y solución de problemas.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 5eafbf0b24e464e81447c0677d53096032343580
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d89c880754683682e443bac1a18204319740b903
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068531"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879561"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Proyectos de servicio en la nube de Azure para Python
 
