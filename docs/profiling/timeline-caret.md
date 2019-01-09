@@ -1,8 +1,6 @@
 ---
 title: Símbolo de intercalación de la escala de tiempo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.caret
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f55f42e17dec1a1b236d713ac31c2dfa681cd913
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2a8356befd8afd6c3057ecf9005ce0af16d800b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34476669"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846930"
 ---
 # <a name="timeline-caret"></a>Símbolo de intercalación de la escala de tiempo
 Cuando se selecciona un punto de la escala de tiempo de un segmento de subproceso en ejecución, aparece un símbolo de intercalación de la escala de tiempo por encima de él. La pila de llamadas que se muestra en la pestaña de pila actual es la más cercana en el tiempo a donde hizo clic en el segmento. El símbolo de intercalación se utiliza para asociar la pila de llamadas, que se muestra en la pestaña **Actual**, con el momento en el que se tomó la muestra. El símbolo de intercalación muestra la ubicación exacta de la pila de llamadas, que es la pila de llamadas más cercana a la ubicación que el usuario seleccionó.  

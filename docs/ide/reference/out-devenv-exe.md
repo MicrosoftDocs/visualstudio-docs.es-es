@@ -2,7 +2,6 @@
 title: -Out (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio], builds
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5778cb281ca6edcf8045620aee049b0f115a50a
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: f240b464ddba4e0549e3faff432685201e4560f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948249"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985646"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 Especifica un archivo que se va a almacenar y muestra los errores al ejecutar, compilar, recompilar o implementar una solución.

@@ -2,7 +2,6 @@
 title: Teclas modificadoras de la herramienta Pluma en fusión
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: c3ab14c6-a320-46db-a6b3-7fd1ca261587
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ddedc1d46c82c20580575a85db92b2c8049c813e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b6608ede14ab35697462777fcd7b8f4a58e68358
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908759"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831698"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Teclas modificadoras de la herramienta Pluma en fusión
 En la tabla siguiente se enumeran los métodos abreviados que se pueden usar para modificar un trazado al crearlo con la herramienta **Pluma** ![Pen tool](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png). También se puede usar la herramienta **Pluma** para agregar o eliminar puntos de un trazado existente, o para unir dos trazados existentes.
