@@ -1,9 +1,7 @@
 ---
 title: Usar el REPL de Node.js
 description: Visual Studio permite interactuar con el tiempo de ejecución de Node.js.
-ms.custom: ''
 ms.date: 12/04/2018
-ms.technology: vs-nodejs
 ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
@@ -13,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7b980634a95c14413dd07649893a26b21de6f78d
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: bdb5202f383a0e9145a03dae71e11894555f5e33
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53442072"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926494"
 ---
 # <a name="work-with-the-nodejs-interactive-window"></a>Trabajar con la ventana interactiva de Node.js
 

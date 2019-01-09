@@ -1,8 +1,6 @@
 ---
 title: 'Tutorial: Generar perfiles utilizando el método de muestreo en la línea de comandos | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dbb5daff9db064cedcfaa6713f5c31a72f961af
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 10fe1aaaa9301429d3ef80fa12713b5cc4fbcc68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592435"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886814"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Tutorial: Generar perfiles mediante muestreo desde la línea de comandos
 
@@ -35,7 +33,7 @@ En este tutorial realizará los siguientes pasos:
 
 - Conocimientos intermedios de [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)]
 - Conocimientos intermedios del uso de herramientas de la línea de comandos
-- Una copia de la [muestra PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)
+- Una copia de la [muestra PeopleTrax](/visualstudio/profiling/performance-explorer)
 - Para trabajar con la información proporcionada por la generación de perfiles, es preferible disponer de la información de símbolos de depuración.
 
 ## <a name="command-line-profiling-using-the-sampling-method"></a>Generación de perfiles mediante el método de muestreo en la línea de comandos
