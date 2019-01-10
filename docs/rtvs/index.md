@@ -56,4 +56,4 @@ Vea también las [preguntas más frecuentes](faq.md).
 
 1. **Enviar una sonrisa/desaprobación**: el menú **Herramientas de R** > **Comentarios** es una forma rápida de enviar comentarios y adjuntar archivos de registro de RTVS para ayudar en el diagnóstico del problema. (Los registros se escriben en *%temp%/RTVSlogs.zip*, en caso de que quiera enviarlos por separado). Si ha desactivado la telemetría de Visual Studio a través del comando de menú **Ayuda** > **Comentarios** > **Configuración** o durante la instalación, el registro está deshabilitado.
 
-1. **Correo electrónico**: puede enviar comentarios directamente al equipo a *rtvsuserfeedback@microsoft.com*.
+1. **Correo electrónico**: puede enviar comentarios directamente al equipo a *rtvsuserfeedback (at) microsoft.com*.
