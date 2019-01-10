@@ -2,7 +2,6 @@
 title: Inspeccionar variables - ventanas automático y variables locales | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/18/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.autos
@@ -16,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 584704471f9346611f240a3a24e0d45cf2eec364
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e23f61f7de4b2723e7be18b6beb76b17fd278cf2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068359"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947418"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspeccionar las variables en las ventanas automático y variables locales
 

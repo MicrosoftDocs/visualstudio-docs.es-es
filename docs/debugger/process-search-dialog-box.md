@@ -1,8 +1,6 @@
 ---
-title: Cuadro de diálogo de búsqueda procesar | Documentos de Microsoft
-ms.custom: ''
+title: Procesar el cuadro de diálogo Buscar | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Process Search
@@ -12,25 +10,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5f133833114398ceb257fcceeaab7e7f4f5da2c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: c795671f6e8f5f47d8b0da7e36fbb1f81ab95c28
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475514"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958070"
 ---
 # <a name="process-search-dialog-box"></a>Cuadro de diálogo Buscar proceso
-Utilice este cuadro de diálogo para buscar y seleccionar el nodo de un proceso específico en [vista procesos](../debugger/processes-view.md). Para mostrar este cuadro de diálogo, mueva el foco a un **procesos** ventana de vista. A continuación, elija **Buscar proceso** desde el **búsqueda** menú.  
+Utilice este cuadro de diálogo para buscar y seleccionar el nodo de un proceso concreto en [vista procesos](../debugger/processes-view.md). Para mostrar este cuadro de diálogo, mueva el foco a un **procesos** ventana de vista. A continuación, elija **Buscar proceso** desde el **búsqueda** menú.  
   
  Las siguientes opciones están disponibles:  
   
  **Process**  
- El identificador de proceso que se busca.  
+ Para buscar el identificador de proceso.  
   
  **Módulo**  
- La cadena de módulo que se buscará.  
+ Para buscar la cadena de módulo.  
   
- **Dirección de la búsqueda hacia arriba o hacia abajo**  
+ **Dirección de búsqueda hacia arriba o hacia abajo**  
  La dirección inicial de la búsqueda.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
@@ -41,7 +39,7 @@ Utilice este cuadro de diálogo para buscar y seleccionar el nodo de un proceso 
  Muestra una vista de árbol de procesos activos.  
   
  [Vistas de Spy++](../debugger/spy-increment-views.md)  
- Explica las vistas de árbol de Spy ++ de ventanas, mensajes, procesos y subprocesos.  
+ Explica las vistas de árbol de Spy ++ de windows, los mensajes, los procesos y subprocesos.  
   
  [Usar Spy++](../debugger/using-spy-increment.md)  
  Presenta la herramienta Spy ++ y explica cómo se puede usar.  

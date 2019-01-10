@@ -2,7 +2,6 @@
 title: Depurador propiedad configuración recomendada para C#, VB | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 69b98fe00301ad9230cb4f560a0a1d9dc1d3922f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1acc20c8987b3a5fced5826c8a2bfc068ce18c01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064963"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887044"
 ---
 # <a name="managed-debugging-recommended-property-settings"></a>Depuración administrada: Valores de propiedad recomendados
 Algunas propiedades se deben establecer de la misma manera para todos los escenarios de depuración administrados.  

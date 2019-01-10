@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -24,12 +23,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ac425903ade4dbf90f094376927d46629b1c675d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3dbb6c9c778ed1010c90a901fa9ee9e2e9299252
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054004"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931182"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identificar y personalizar métodos abreviados de teclado en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,7 +95,7 @@ Puede identificar los métodos abreviados de teclado de los comandos de Visual S
      Por ejemplo, puede elegir **Global** si quiere que el método abreviado funcione en todos los contextos. Puede usar cualquier método abreviado que no esté asignado (como Global) en otro editor. De lo contrario, el editor reemplaza el método abreviado.
 
     > [!NOTE]
-    >  No se puede asignar las siguientes claves como parte de un método abreviado de teclado en **Global**: Imprimir PANT/PET SIS, Bloq Despl, pausa/interrumpir, ficha, BLOQ MAYÚS, Insert, principal, fin, RE PÁG, AV PÁG, la tecla del logotipo de Windows, la clave de aplicación, cualquiera de las teclas de dirección o ENTRAR; BLOQ NUM, eliminar o borrar en el teclado numérico; o Ctrl + Alt + Supr.
+    >  No se pueden asignar las teclas siguientes como parte de un método abreviado de teclado en **Global**: Imprimir PANT/PET SIS, Bloq Despl, pausa/interrumpir, ficha, BLOQ MAYÚS, Insert, principal, fin, RE PÁG, AV PÁG, la tecla del logotipo de Windows, la clave de aplicación, cualquiera de las teclas de dirección o ENTRAR; BLOQ NUM, eliminar o borrar en el teclado numérico; o Ctrl + Alt + Supr.
 
 6.  En el cuadro **Presionar teclas de método abreviado**, especifique el método abreviado que quiere usar.
 

@@ -2,7 +2,6 @@
 title: Solución de problemas de depuración de instantáneas | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/07/2017
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 helpviewer_keywords:
 - debugger
@@ -12,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82d8a310b86d5dc3c776243293a91f176025f897
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3f16206b4c537c141bd90615580934c4481ddf06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059832"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880668"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Solución de problemas y problemas conocidos para la instantánea de depuración en Visual Studio
 

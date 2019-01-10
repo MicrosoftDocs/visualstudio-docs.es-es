@@ -1,8 +1,6 @@
 ---
 title: Get_localbasepointerregisterid | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7775de97e8bdd37223b772999f30f5808bf1b2b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 040905a1e61f84e36bc2f01191a69ca1eceda0f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819985"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896765"
 ---
 # <a name="idiasymbolgetlocalbasepointerregisterid"></a>IDiaSymbol::get_localBasePointerRegisterId
 Recupera el identificador del registro que contiene un puntero base a las variables locales en la pila. Cuando utilice el [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) está establecido en `SymTagFunction`.  
@@ -27,7 +25,7 @@ Recupera el identificador del registro que contiene un puntero base a las variab
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT get_localBasePointerRegisterId (   
+HRESULT get_localBasePointerRegisterId (   
    DWORD* pRetVal  
 );  
 ```  
@@ -45,7 +43,7 @@ HRESULT get_localBasePointerRegisterId (
 ## <a name="remarks"></a>Comentarios  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: Dia2.h  
+ Encabezado: dia2.h  
   
  Biblioteca: diaguids.lib  
   

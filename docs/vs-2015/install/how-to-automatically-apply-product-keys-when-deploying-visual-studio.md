@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
@@ -14,12 +13,12 @@ caps.latest.revision: 11
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 32f8845790168aae784f3659f54c89e000681a15
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1dd9127895a375ae02e6d4f18bae0a09bef494bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050232"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942049"
 ---
 # <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>Procedimiento Aplicación automática de claves de producto durante la implementación de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

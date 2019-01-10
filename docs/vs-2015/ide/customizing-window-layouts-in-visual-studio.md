@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -29,12 +28,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e37adb6296a805b8a0fd06196e7ccf1acf5bc32e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7a0f6b087f512750ae729d52c0855e3d4981d330
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057573"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934380"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Personalizar los diseños de ventana de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +57,7 @@ En Visual Studio puede personalizar la posición, el tamaño y el comportamiento
  Cuando tiene que ver o editar dos ubicaciones a la vez en un documento, puede dividir las ventanas. Para dividir el documento en dos secciones con desplazamiento independiente, haga clic en **Dividir** en el menú **Ventana** . Haga clic en **Quitar división** en el menú **Ventana** para restaurar la vista única.
 
 ### <a name="toolbars"></a>Barras de herramientas
- Se pueden organizar las barras de herramientas arrastrando o utilizando el cuadro de diálogo **Personalizar** . Para obtener más información acerca de cómo ubicar y personalizar las barras de herramientas, consulte [Cómo: personalizar menús y barras de herramientas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+ Se pueden organizar las barras de herramientas arrastrando o utilizando el cuadro de diálogo **Personalizar** . Para obtener más información acerca de cómo ubicar y personalizar las barras de herramientas, vea [Cómo: Personalizar menús y barras de herramientas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ## <a name="arranging-and-docking-windows"></a>Organizar y acoplar ventanas
  Tanto las ventanas de documento como las ventanas de herramientas se pueden *acoplar*para que ocupen una posición dentro del marco de ventana del IDE o floten como una ventana independiente del IDE. Las ventanas de herramientas se pueden acoplar en cualquier lugar dentro del marco del IDE; algunas ventanas de herramientas se pueden acoplar como ventanas con fichas en el marco del editor. Las ventanas de documento se pueden acoplar dentro del marco del editor y se pueden anclar en su posición actual en el orden de tabulación. Puede acoplar varias ventanas flotantes juntas para que compartan espacio sobre el IDE o fuera de él. Las ventanas de herramientas también se pueden ocultar o minimizar.

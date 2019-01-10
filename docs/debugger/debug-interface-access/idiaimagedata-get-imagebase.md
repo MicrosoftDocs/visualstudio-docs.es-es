@@ -1,8 +1,6 @@
 ---
 title: Get_imagebase | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e0037ef4bbbfc499d23e517e0fb3522b8f042c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0dea0b3e717187bb79525fde0be02d0482e53243
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822989"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912667"
 ---
 # <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
 Recupera la ubicación de memoria donde se debe basar la imagen.  
@@ -27,7 +25,7 @@ Recupera la ubicación de memoria donde se debe basar la imagen.
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT get_imageBase (   
+HRESULT get_imageBase (   
    ULONGLONG* pRetVal  
 );  
 ```  

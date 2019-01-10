@@ -2,7 +2,6 @@
 title: Aplicar tareas de edición en modo de interrupción con Editar y continuar | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.variables.failededit
@@ -24,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fdf27353462645916f14fe10c2fdc521504024b
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: a8b63a93984fc65790bd8fcdadf8294cadf8e04e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684267"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821706"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Procedimiento Aplicar tareas de edición en modo de interrupción con Editar y continuar (Visual Basic)
 Puede utilizar la opción Editar y continuar para modificar el código en modo de interrupción y, posteriormente, continuar sin detener ni reiniciar la ejecución.  
@@ -42,11 +41,11 @@ Para conocer las limitaciones sobre el uso de editar y continuar durante la depu
   
     -   Establezca un punto de interrupción en el código y, a continuación, elija **Iniciar depuración** en el menú **Depurar**. Luego, espere a que la aplicación llegue al punto de interrupción.  
   
-         O bien  
+         o bien  
   
     -   Inicie la depuración y, a continuación, seleccione **Interrumpir todo** en el menú **Depurar**.  
   
-         O bien  
+         o bien  
   
     -   Si se produce una excepción, elija **Habilitar edición** en el **Asistente de excepciones**.  
   

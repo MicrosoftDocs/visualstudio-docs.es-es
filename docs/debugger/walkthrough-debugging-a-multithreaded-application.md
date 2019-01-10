@@ -1,8 +1,6 @@
 ---
 title: Ver conversaciones en el depurador | Microsoft Docs
-ms.custom: ''
 ms.date: 10/29/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.threads
@@ -25,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 764eb46fb387e1a007362b02a0f62cf478c771fe
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e3b2ed9001d1096dca82a30dab29a67b9e962354
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066228"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946167"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window"></a>Vista de subprocesos en el depurador de Visual Studio mediante el uso de la ventana subprocesos
 En el **subprocesos** ventana, puede examinar y trabajar con los subprocesos en la aplicación que está depurando. Para obtener instrucciones detalladas sobre cómo usar el **subprocesos** ventana, consulte [Tutorial: Depuración mediante la ventana subprocesos](../debugger/how-to-use-the-threads-window.md).
@@ -38,7 +36,7 @@ En el **subprocesos** ventana, puede examinar y trabajar con los subprocesos en 
 ## <a name="use-the-threads-window"></a>Usar la ventana Subprocesos 
  El **subprocesos** ventana contiene una tabla donde cada fila describe un subproceso independiente en la aplicación. De forma predeterminada, en la tabla se enumeran todos los subprocesos, pero puede filtrar la lista para mostrar solo los que le interesen. Cada columna describe un tipo diferente de información. También puede ocultar algunas columnas. Si muestra todas las columnas, aparecerán las siguientes columnas, de izquierda a derecha:  
   
-- **Marcar** En esta columna no etiquetada, puede marcar un subproceso al que desea prestar atención especial. Para obtener información acerca de cómo marcar un subproceso, vea [Cómo: marca y desmarcar subprocesos](../debugger/how-to-flag-and-unflag-threads.md).  
+- **Marcar** En esta columna no etiquetada, puede marcar un subproceso al que desea prestar atención especial. Para obtener información acerca de cómo marcar un subproceso, vea [Cómo: Marcado y desmarcado de subprocesos](../debugger/how-to-flag-and-unflag-threads.md)  
   
 - Subproceso actual En esta columna no etiquetada, una flecha amarilla indica el subproceso actual. Esquema de una flecha indica el contexto del depurador actual para un subproceso distinto del actual.
   
@@ -50,7 +48,7 @@ En el **subprocesos** ventana, puede examinar y trabajar con los subprocesos en 
   
 - **name**). Identifica cada subproceso por su nombre, si lo tiene, o como \<sin nombre >.  
   
-- **Ubicación** Se muestra donde se está ejecutando el subproceso. Puede expandir esta ubicación para mostrar la pila de llamadas completa del subproceso.  
+- **location**: Se muestra donde se está ejecutando el subproceso. Puede expandir esta ubicación para mostrar la pila de llamadas completa del subproceso.  
   
 - Prioridad Una columna avanzada (oculta de forma predeterminada) que muestra la prioridad o prioridad que el sistema ha asignado a cada subproceso.  
   

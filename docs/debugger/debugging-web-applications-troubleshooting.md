@@ -2,7 +2,6 @@
 title: 'Depuración de aplicaciones web: solución de problemas | Microsoft Docs'
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5f931a9942a89ae56836b5fbe91473b9dc9f568
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 664ec654d52b8b5c17ff89429ba1f78033cfffc7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064000"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923590"
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>Depurar aplicaciones web: Solución de problemas
 Esta sección contiene varios procedimientos habituales para la resolución de errores.  
@@ -37,5 +36,5 @@ Esta sección contiene varios procedimientos habituales para la resolución de e
  [Depurar aplicaciones web: errores y solución de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
  Explica la resolución de problemas y errores.  
   
- [Depurar script y aplicaciones web](../debugger/debugging-web-applications-and-script.md)  
+ [Depurar script y aplicaciones web](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)  
  Ofrece información general sobre la depuración de aplicaciones Web como [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], servicios Web XML y proyectos de servidor ATL.
