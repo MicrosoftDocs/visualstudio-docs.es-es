@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 946e666faae07128378fc8063422446a39bd0791
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 484755feac873be04648cfef936b2faa701bba2c
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986575"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154155"
 ---
 # <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235: Marcar todos los campos no serializables
 
@@ -38,7 +38,9 @@ ms.locfileid: "53986575"
  Un campo de instancia de un tipo que no es serializable se declara en un tipo que es serializable.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Un tipo serializable es aquel que está marcado con el <xref:System.SerializableAttribute?displayProperty=fullName> atributo. Cuando se serializa el tipo, un <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> excepción se produce si un tipo contiene un campo de instancia de un tipo que no es serializable.
+ Un tipo serializable es aquel que está marcado con el <xref:System.SerializableAttribute?displayProperty=fullName> atributo. Cuando se serializa el tipo, un <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> excepción se produce si el tipo contiene un campo de instancia de un tipo que no es serializable.
+ 
+ Una excepción a esto es cuando el tipo no usa la serialización personalizada a través de la <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaz. Tipos que implementan esta interfaz proporcionan su propia lógica de serialización y, por lo que no se activarán CA2235 para los campos de instancia que no son serializables de esos tipos.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, aplique el <xref:System.NonSerializedAttribute?displayProperty=fullName> atributo en el campo que no es serializable.

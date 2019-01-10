@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd25b7ed02cb8d45ae693eacdb397a250d2456e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80d68a254cf2d1a896be86072d50a13be2f7a44f
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847829"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154426"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Crear una extensión con un comando de menú
 Este tutorial muestra cómo crear una extensión con un comando de menú que se inicia el Bloc de notas.  
@@ -121,6 +121,6 @@ Este tutorial muestra cómo crear una extensión con un comando de menú que se 
   
 4. Agregar IntelliSense, las sugerencias de código y otras características de los editores de código existentes: [Ampliar los servicios de editor y lenguaje](../extensibility/extending-the-editor-and-language-services.md)  
   
-5. Agregar páginas de propiedades y las opciones y configuración de usuario para la extensión: [Extender las propiedades y la ventana de propiedades](../extensibility/extending-properties-and-the-property-window.md) y [ampliar Ooptions y configuración de usuario](../extensibility/extending-user-settings-and-options.md)  
+5. Agregar páginas de propiedades y las opciones y configuración de usuario para la extensión: [Extender las propiedades y la ventana de propiedades](../extensibility/extending-properties-and-the-property-window.md) y [ampliar las opciones y configuración de usuario](../extensibility/extending-user-settings-and-options.md)  
   
    Otros tipos de extensiones requieren un poco más de trabajo, como la creación de un nuevo tipo de proyecto ([ampliar proyectos](../extensibility/extending-projects.md)), crear un nuevo tipo de editor ([crear diseñadores y editores personalizados](../extensibility/creating-custom-editors-and-designers.md)), o implementando la extensión en un shell aislado: [Shell de Visual Studio aislado](/visualstudio/extensibility/shell/visual-studio-isolated-shell)

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - sentences, selecting in documents
 - ranges, selecting in documents
 - ranges, defining in documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b6922613c7a1493d5b40b807166281ae11eb04d6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2955dcf0b205293fc31de65f159b51ece9c22ad9
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835505"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154481"
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Procedimiento Definir y seleccionar rangos en documentos mediante programación
   Puede definir un intervalo en un documento de Microsoft Office Word mediante un objeto <xref:Microsoft.Office.Interop.Word.Range>. Puede seleccionar todo el documento de varias maneras, por ejemplo, mediante el <xref:Microsoft.Office.Interop.Word.Range.Select%2A> método de la <xref:Microsoft.Office.Interop.Word.Range> de objeto, o mediante la propiedad de contenido de la <xref:Microsoft.Office.Tools.Word.Document> clase (en una personalización de nivel de documento) o la <xref:Microsoft.Office.Interop.Word.Document> clase (en un Complemento de VSTO).  
