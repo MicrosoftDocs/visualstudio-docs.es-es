@@ -1,8 +1,6 @@
 ---
 title: Idiaenumsourcefiles | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6f2a7d01bc8c72a87101d5b048cff99ed8887b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: b2a3556578f733881e7df440d3205f97e1e99e15
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863001"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851685"
 ---
 # <a name="idiaenumsourcefilesclone"></a>IDiaEnumSourceFiles::Clone
 Crea un enumerador que contiene el mismo estado de enumeración que el enumerador actual.  
@@ -27,7 +25,7 @@ Crea un enumerador que contiene el mismo estado de enumeración que el enumerado
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT Clone (   
+HRESULT Clone (   
    IDiaEnumSourceFiles** ppenum  
 );  
 ```  

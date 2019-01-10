@@ -2,7 +2,6 @@
 title: Configuración de propiedades para proyectos Web | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -22,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fbe5ab8d863cbf77647bde8b8d7da69d9c4823e5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 09aeb8d97c1caf3eca067cd7992eb96c9d7ef7c1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064224"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892668"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Configuración de páginas de propiedades para proyectos web
 Se pueden cambiar los valores de las propiedades para una configuración de depuración de sitio Web en el cuadro de diálogo **Páginas de propiedades**, como se describe en [Configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md). En las siguientes tablas se muestra dónde encontrar los valores relacionados con el depurador en el cuadro de diálogo **Páginas de propiedades**.  

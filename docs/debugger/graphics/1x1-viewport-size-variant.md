@@ -1,8 +1,6 @@
 ---
 title: Variante de tamaño de la ventanilla 1 x 1 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 3dbc3247-00f5-4644-8ff9-72e9febcf09a
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 168b358bf58dcb2c91814f5460b203873255e275
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
-ms.translationtype: MT
+ms.openlocfilehash: e27383fc51c6c49ddabc9be0d59f68aa5ec9c896
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433251"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990823"
 ---
 # <a name="1x1-viewport-size-variant"></a>1x1 Viewport (Variante de tamaño)
 Reduce las dimensiones de la ventanilla de todos los objetivos de presentación a 1x1 píxeles.  

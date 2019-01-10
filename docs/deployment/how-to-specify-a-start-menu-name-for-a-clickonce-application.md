@@ -1,8 +1,6 @@
 ---
 title: Procedimiento Especifique un nombre de menú de inicio para una aplicación ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7cf4f2b30079a76012acfe972ea0de0b9e0ea78
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
-ms.translationtype: HT
+ms.openlocfilehash: eeee762f8bf4ce8df9744e6e39d1f0bd4345cb10
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592838"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947821"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>Procedimiento Especificar un nombre de menú Inicio para una aplicación ClickOnce
 Cuando un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se instala la aplicación para su uso en línea y sin conexión, se agrega una entrada para el **iniciar** menú y el **agregar o quitar programas** lista. De forma predeterminada, el nombre para mostrar es el mismo que el nombre del ensamblado de la aplicación, pero puede cambiar el nombre para mostrar estableciendo **nombre de producto** en el **opciones de publicación** cuadro de diálogo.  

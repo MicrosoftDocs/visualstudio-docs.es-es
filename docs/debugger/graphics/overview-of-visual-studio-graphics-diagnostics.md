@@ -2,19 +2,18 @@
 title: Información general de diagnóstico de gráficos | Microsoft Docs
 ms.custom: seodec18
 ms.date: 02/09/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a88bcdad960e79c64a463fecf88bbf893b0181b0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 25b15e45d464c78aa24fa6fed7292b3eb7140835
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059118"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831383"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Información general de Diagnóstico de gráficos de Visual Studio
 El *Diagnóstico de gráficos* de Visual Studio es un conjunto de herramientas para grabar y analizar problemas de representación y rendimiento de las aplicaciones de Direct3D. Diagnóstico de gráficos puede usarse en aplicaciones que se ejecutan localmente en su PC de Windows o en un dispositivo o equipo remoto.  
@@ -53,7 +52,7 @@ El *Diagnóstico de gráficos* de Visual Studio es un conjunto de herramientas p
 ### <a name="gpu-usage"></a>Uso de GPU  
  Diagnóstico de gráficos también puede generar un perfil de rendimiento de la aplicación Direct3D. Para evitar que los datos del perfil resulten sesgados a causa de la grabación de detalles de eventos gráficos, esta función está separada de la captura de fotogramas que se usará con el Analizador de gráficos.  
   
- Vea [Uso de GPU](gpu-usage.md) para obtener más información.  
+ Vea [Uso de GPU](/visualstudio/profiling/gpu-usage) para obtener más información.  
   
 ### <a name="directx-control-panel"></a>Panel de control de DirectX  
  El panel de control de DirectX es un componente de DirectX que puede utilizar para cambiar la forma en que DirectX se comporta; por ejemplo, puede habilitar la versión de depuración de los componentes de tiempo de ejecución de DirectX, seleccionar la clase de mensajes de depuración que se notifican e impedir el uso de ciertas funciones del hardware gráfico para emular el hardware menos eficaz. Este nivel de control sobre DirectX puede ayudarle a depurar y probar la aplicación DirectX. Puede acceder al panel de control de DirectX desde Visual Studio.  

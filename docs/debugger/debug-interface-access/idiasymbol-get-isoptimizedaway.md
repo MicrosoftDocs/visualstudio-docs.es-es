@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_isOptimizedAway | Documentos de Microsoft
-ms.custom: ''
+title: IDiaSymbol::get_isOptimizedAway | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a0dd37a718a468b43547cf77b8611264f909564
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 887bcaae0e87aabd3f2ecd9a051d33b0b41ed771
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462349"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917402"
 ---
 # <a name="idiasymbolgetisoptimizedaway"></a>IDiaSymbol::get_isOptimizedAway
-Especifica si la variable es optimizarse.  
+Especifica si la variable se ha optimizado fuera.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -31,10 +29,10 @@ HRESULT get_isOptimizedAway(
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Un puntero a un `BOOL` que especifica si la variable es optimizarse.  
+ [out] Un puntero a un `BOOL` que especifica si la variable se ha optimizado fuera.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

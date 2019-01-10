@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -22,12 +21,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c0a4ebdc99a416d46b9329137211a79d01700003
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
-ms.translationtype: HT
+ms.openlocfilehash: 31d11e16eba87efd19ae07afde64e27e9905636c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804570"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899605"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usar UI Automation para probar el código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

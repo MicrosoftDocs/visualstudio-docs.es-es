@@ -20,15 +20,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 52225ba4801fcee92b3f68fd6ec1cf7cc6c63086
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 95aa29fc9856777912afa2efac2551ec4a703506
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305720"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892707"
 ---
 # <a name="hierarchical-update"></a>Actualización jerárquica
 

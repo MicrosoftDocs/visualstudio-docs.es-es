@@ -2,10 +2,9 @@
 title: Solucione errores escribiendo mejor el código de C#
 description: Aprender a escribir código mejor con menos errores
 ms.custom:
-- debug-experiments
+- debug-experiment
 - seodec18
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
@@ -14,16 +13,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2e3aaebd02754556f028f53a190160f502ef9ca
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a6be1f46c8a529eb7f2e7d21e34fb1a58458a3de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051680"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967581"
 ---
 # <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>Corregir errores al escribir mejor C# código con Visual Studio
 
-Depuración de código puede llevar mucho tiempo y a veces frustrante--la tarea. Se necesita tiempo para obtener información sobre cómo depurar de forma eficaz, pero un eficaz IDE como Visual Studio puede hacer mucho más fácil su trabajo. Un IDE puede ayudarle a depurar el código más rápidamente y no sólo eso, sino también puede ayudarle a escribir código mejor con menos errores. Nuestro objetivo en este artículo es proporcionarle una visión holística del proceso de depuración, para que sepa cuándo se debe usar el analizador de código, al que se usará el depurador y cuándo usar otras herramientas.  
+Depuración de código puede llevar mucho tiempo y a veces frustrante--la tarea. Se necesita tiempo para obtener información sobre cómo depurar de forma eficaz, pero un eficaz IDE como Visual Studio puede hacer mucho más fácil su trabajo. Un IDE puede ayudarle a depurar el código más rápidamente y no sólo eso, sino también puede ayudarle a escribir código mejor con menos errores. Nuestro objetivo en este artículo es proporcionarle una visión holística del proceso de depuración, para que sepa cuándo se debe usar el analizador de código, al que se usará el depurador y cuándo usar otras herramientas.
 
 En este artículo, hablamos sobre el aprovechamiento del IDE para aumentar la productividad de las sesiones de depuración. Nos toque en varias tareas, tales como:
 
@@ -305,7 +304,7 @@ namespace Console_Parse_JSON_DotNetCore
 
             for (int i = 0; i < users.Length; i++)
             {
-                List<User> result = localDB.FindAll(delegate (User u) { 
+                List<User> result = localDB.FindAll(delegate (User u) {
                     return u.lastname == users[i].lastname;
                     });
                 foreach (var item in result)
@@ -317,7 +316,7 @@ namespace Console_Parse_JSON_DotNetCore
             Console.ReadKey();
         }
 
-        // Deserialize a JSON stream to a User object.  
+        // Deserialize a JSON stream to a User object.
         public static User[] ReadToObject(string json)
         {
             User deserializedUser = new User();

@@ -1,8 +1,6 @@
 ---
 title: JIT optimización y depuración | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a8cb56b35092bb958ebf2e6947006acb3d0d240
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 917c9bab910b8f3153af46dc9d1d1a64ec6e529d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646579"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841270"
 ---
 # <a name="jit-optimization-and-debugging"></a>Optimización y depuración JIT
 **Funcionan de las optimizaciones en. NET:** Si intenta depurar código, resulta más fácil cuando que el código está **no** optimizado. Esto es porque cuando se optimiza el código, el compilador y el tiempo de ejecución realizar cambios en el código emitido de CPU para que se ejecuta más rápido, pero tiene una asignación menos directa al código fuente original. Esto significa que los depuradores son con frecuencia no se puede indicará el valor de las variables locales y desplazarse por el código y los puntos de interrupción no funcionen según lo esperado.

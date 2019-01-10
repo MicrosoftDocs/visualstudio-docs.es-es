@@ -11,15 +11,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ddb950fd916df6ff514e13435765b118e1e579dd
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 064e6042e734b5564c1f7270ef41a1747919b877
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049565"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880330"
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Sistemas de bases de datos compatibles para Visual Studio
 

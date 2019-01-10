@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +22,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 761264d80c04f0e2ce13a365071f56739d6961a2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 55dad8adf4b3ce6e79214471c93052318f7228f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055172"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828061"
 ---
 # <a name="install-visual-studio-2015"></a>Instalación de Visual Studio 2015
 
@@ -191,7 +190,7 @@ Antes de profundizar en los detalles, se muestra a continuación una lista de lo
 |Title|Descripción|
 |-----------|-----------------|
 |[Crear una instalación sin conexión de Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)|Describe cómo instalar Visual Studio cuando no están conectados a Internet.
-|[Instalación de distintas versiones de Visual Studio en paralelo](../install/install-visual-studio-versions-side-by-side.md)|Proporciona información sobre cómo instalar varias versiones de Visual Studio en el mismo equipo.|
+|[Instalar distintas versiones de Visual Studio en paralelo](../install/install-visual-studio-versions-side-by-side.md)|Proporciona información sobre cómo instalar varias versiones de Visual Studio en el mismo equipo.|
 |[Usar parámetros de la línea de comandos para instalar Visual Studio](/visualstudio/install/use-command-line-parameters-to-install-visual-studio)|Muestra los parámetros de línea de comandos que puede usar al instalar Visual Studio desde un símbolo del sistema.|
 |[Desinstalar Visual Studio](../install/uninstall-visual-studio.md)|Describe cómo desinstalar Visual Studio.|
 |[Guía del administrador de Visual Studio](../install/visual-studio-administrator-guide.md)|Proporciona información sobre las opciones de implementación de Visual Studio.|

@@ -1,8 +1,6 @@
 ---
-title: 'Error: La depuración en modo mixto para procesos IA64 no se admite | Documentos de Microsoft'
-ms.custom: ''
+title: 'Error: No se admite la depuración en modo mixto para los procesos IA64 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.interop_unsupported_ia64
@@ -16,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0446463142447dc05dc8ef50fb489585db21b381
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 56df416b7142e0ff9f7e96b8c1b2cba6e73b65a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471364"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916790"
 ---
-# <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Error: No se admite la depuración en modo mixto para procesos IA64
+# <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Error: No se admite la depuración en modo mixto de procesos IA64
 El depurador [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] no permite depurar código nativo y administrado mixto en un proceso basado en Itanium.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
@@ -31,4 +29,4 @@ El depurador [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] no permit
 -   Compile una versión de 32 bits de su aplicación para la depuración.  
   
 ## <a name="see-also"></a>Vea también  
- [Depuración remota](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)

@@ -1,8 +1,6 @@
 ---
 title: Get_name | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 247ad261d25cfd0624a5c1d02c17149c9a6a9c6d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: b7706182a43eae60e16466f56a56b06bf97fce6e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902924"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847803"
 ---
 # <a name="idiaenumdebugstreamdatagetname"></a>IDiaEnumDebugStreamData::get_name
 Recupera el nombre de un flujo de datos de depuración.  
@@ -27,7 +25,7 @@ Recupera el nombre de un flujo de datos de depuración.
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT get_Name (   
+HRESULT get_Name (   
    BSTR * pRetVal  
 )  
 ```  

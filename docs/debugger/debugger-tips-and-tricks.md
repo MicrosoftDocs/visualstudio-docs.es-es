@@ -3,7 +3,6 @@ title: Sugerencias y trucos en el depurador
 description: Obtenga información sobre algunas de las características menos conocidas compatibles con el depurador de Visual Studio
 ms.custom: seodec18
 ms.date: 06/15/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - stepping
@@ -15,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 238236df48adab491cd8a1f9282a8f6a440c5321
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 87d74eb960d4e445e457744fd0325e7beb15262e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055230"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927160"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Obtenga información sobre sugerencias de productividad y trucos del depurador de Visual Studio
 

@@ -1,8 +1,6 @@
 ---
 title: Procedimiento Establecer un nombre de subproceso en código nativo | Microsoft Docs
-ms.custom: ''
 ms.date: 12/17/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9226e009936d0a644a5a6fcfcaba57bc3af25d7d
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: acddd39df0c91aeef5c425ffa67cb234d76d0473
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803103"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961359"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Procedimiento Establecer un nombre de subproceso en código nativo
 La denominación de los subprocesos es posible en cualquier edición de Visual Studio. La denominación de los subprocesos es útil para hacer el seguimiento en la ventana **Subprocesos**.

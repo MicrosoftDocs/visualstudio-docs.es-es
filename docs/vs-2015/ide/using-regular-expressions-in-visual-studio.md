@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -24,12 +23,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 90639e9f3f24a7985255e0a7ea42e303b9917739
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5ca54797fe9a8aa4adac7883aaeda761ba08509d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059436"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959591"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Uso de expresiones regulares en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +40,7 @@ En las versiones previas a Visual Studio 2012, se usaba una sintaxis de expresio
 > En sistemas operativos Windows, la mayoría de las líneas terminan en “\r\n” (un retorno de carro seguido de una nueva línea). Estos caracteres no se ven, pero están presentes en el editor y se pasan al servicio de expresiones regulares de .NET.
 
 > [!TIP]
-> Para obtener información sobre las expresiones regulares que se usan en patrones de reemplazo, consulte [Sustituciones](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Para usar un grupo de captura numerado, la sintaxis es `$1` para especificar el grupo numerado y `(x)` para especificar el grupo en cuestión. Por ejemplo, la expresión regular agrupada `(\d)([a-z])` encuentra cuatro coincidencias en la siguiente cadena: **1a 2b 3C 4D**. La cadena de reemplazo `z$1` convierte esa cadena a **z1 z2 z3 z4**.
+> Para obtener información sobre las expresiones regulares que se usan en patrones de reemplazo, consulte [Sustituciones](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Para usar un grupo de captura numerado, la sintaxis es `$1` para especificar el grupo numerado y `(x)` para especificar el grupo en cuestión. Por ejemplo, la expresión regular agrupada `(\d)([a-z])` encuentra cuatro coincidencias en la siguiente cadena: 1a 2b 3c 4d**. La cadena de reemplazo `z$1` convierte esa cadena a **z1 z2 z3 z4**.
 
 ## <a name="regular-expression-examples"></a>Ejemplos de expresiones regulares
 

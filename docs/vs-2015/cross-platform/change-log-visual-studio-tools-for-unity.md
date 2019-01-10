@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -14,12 +13,12 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: ghogen
-ms.openlocfilehash: f21a5491d1b0e23bff90ce0105b81eb6291ac7e5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: e23608f3fbbb14bd6d8f8c0494cb1ae2784358fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807198"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837974"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Registro de cambios (Visual Studio Tools para Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -126,7 +125,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 -   Referencias fijas a ensamblados UnityEngine y UnityEditor para las aplicaciones de la Tienda Windows.
 
--   Error fijo al entrar en el depurador: No se puede administrar, excepción general.
+-   Se ha corregido el error al entrar en el depurador: No se puede administrar, excepción general.
 
 -   Puntos de interrupción de recuento de visitas fijas en Visual Studio 2015.
 
@@ -206,13 +205,13 @@ Registro de cambios de Visual Studio Tools para Unity.
 
     -   Instala el paquete de Visual Studio Tools para Unity para Unity 5.
 
--   **Documentación:** mejora el rendimiento de la generación de documentación.
+-   **Documentación:** Se mejora el rendimiento de la generación de documentación.
 
--   **Asistentes:** compatibilidad con nuevos métodos de MonoBehavior Unity 4.6 y 5.
+-   **Asistentes:** Compatibilidad con nuevos métodos de MonoBehavior para Unity 4.6 y 5.
 
--   **Unity:** busca indicadores no seguros y personaliza definiciones en archivos .rsp durante la generación de archivos de proyecto.
+-   **Unity:** Indicadores no seguros de búsqueda y definiciones personalizadas en archivos .rsp durante la generación de archivos de proyecto.
 
--   **UI:** diálogo **Opciones** de Visual Studio Tools para Unity agregado en Visual Studio.
+-   **IU:** Se ha agregado Visual Studio Tools para Unity al cuadro de diálogo **Opciones** de Visual Studio.
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
@@ -246,16 +245,16 @@ Registro de cambios de Visual Studio Tools para Unity.
 
     -   Se envían registros de la consola de Unity a la lista de errores de VS.
 
--   **Documentación:** se ha corregido la generación de documentación para la nueva documentación de Unity.
+-   **Documentación:** Se ha corregido la generación de documentación para la nueva documentación de Unity.
 
--   **Proyecto:** se mueven y se cambia el nombre de los archivos .meta de Unity cuando es necesario, incluso en las carpetas.
+-   **Proyecto:** Se mueve y se cambia el nombre de los archivos .meta de Unity cuando es necesario, incluso en las carpetas.
 
--   **Asistentes:** se ha corregido el orden de los parámetros de métodos MonoBehavior al generar código.
+-   **Asistentes:** Se ha corregido el orden de los parámetros de métodos MonoBehavior al generar código.
 
--   **UI:** compatible con temas de Visual Studio para iconos y menú contextual.
+-   **IU:** Compatibilidad con temas de Visual Studio para iconos y menú contextual.
 
 ## <a name="20-preview"></a>2.0 Preview
- Lanzamiento 12-11-2014
+ Fecha de publicación: 12 de noviembre de 2014
 
 ### <a name="new-features"></a>Características nuevas
 
@@ -597,21 +596,21 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 -   Se ha corregido el UVS-48: escribir dobles comillas a veces produce un error e interrumpe todas las funciones (finalización de código, resaltado de sintaxis, etc.).
 
--   Se corrigió el error UVS-46: archivo de script abierto duplicado (UnityScript) al hacer clic en la Lista de errores de Visual Studio.
+-   Se ha corregido el error UVS-46: Archivo de script abierto duplicado (UnityScript) al hacer clic en la Lista de errores de Visual Studio.
 
--   Se corrigió el error UVS-42: el logotipo de conectividad de Unity de la barra de estado no procesa eventos de mouse en VS 2012.
+-   Se ha corregido el error UVS-42: El logotipo de conectividad de Unity de la barra de estado no procesa eventos de mouse en VS 2012.
 
--   Se corrigió el error UVS-44: CTRL+MAYÚS+Q no está disponible en VS 2012 para MonoBehaviours rápidas.
+-   Se ha corregido el error UVS-44: CTRL+MAYÚS+Q no está disponible en VS 2012 para clases MonoBehaviour rápidas.
 
--   Se corrigió el error UVS-40: los elementos seleccionados en el Explorador de proyectos de Unity no se pueden leer si la ventana está inactiva en el tema "oscuro" de VS2012.
+-   Se ha corregido el error UVS-40: Los elementos seleccionados en el Explorador de proyectos de Unity no se pueden leer si la ventana está inactiva en el tema "oscuro" de VS2012.
 
--   Se corrigió el error UVS-39: problema al convertir cadenas de caracteres de escape en tokens.
+-   Se ha corregido el error UVS-39: Problema al convertir cadenas de caracteres de escape en tokens.
 
--   Se corrigió el error UVS-35: invocar ToString en objetos al inspeccionar variables.
+-   Se ha corregido el error UVS-35: Invocar ToString en objetos al inspeccionar variables.
 
--   Se corrigió el error UVS-27: incoherencia de la ventana Ir al símbolo con el tema "oscuro" en VS2012.
+-   Se ha corregido el error UVS-27: Incoherencia de la ventana Ir al símbolo con el tema "oscuro" en VS2012.
 
--   Se corrigió el error UVS-11: variables locales en las corrutinas.
+-   Se ha corregido el error UVS-11: Variables locales en las corrutinas.
 
 ## <a name="11--beta-release"></a>1.1 – versión beta
  Fecha de publicación: 9 de octubre de 2014
@@ -717,9 +716,9 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 -   Se ha corregido cómo se buscan los tipos en los ensamblados cargados para la evaluación de expresiones.
 
--   Se corrigió el error UVS-21: la evaluación de asignación en objetos de Unity no tiene ningún efecto.
+-   Se ha corregido el error UVS-21: La evaluación de asignación en objetos de Unity no tiene ningún efecto.
 
--   Se corrigió el error UVS-21: puntero no válido al evaluar una invocación de método a la API Math de Unity.
+-   Se ha corregido el error UVS-21: Puntero no válido al evaluar una invocación de método a la API Math de Unity.
 
 ## <a name="108"></a>1.0.8
  Lanzamiento 26-09-2012
@@ -818,4 +817,3 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ## <a name="10--initial-release"></a>1.0 – versión inicial
  Lanzamiento 22-08-2012
-

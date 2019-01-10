@@ -1,8 +1,6 @@
 ---
-title: Idiaenuminjectedsources | Documentos de Microsoft
-ms.custom: ''
+title: Idiaenuminjectedsources | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ed94c7e70d3d4800f8662b35bd13bc351d5bc83
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 9e5e3525e39fe8eea0614f18067922f6efa3ba11
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863807"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824056"
 ---
 # <a name="idiaenuminjectedsourcesskip"></a>IDiaEnumInjectedSources::Skip
 Omite un número especificado de orígenes insertados en una secuencia de enumeración.  
@@ -27,7 +25,7 @@ Omite un número especificado de orígenes insertados en una secuencia de enumer
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT Skip (   
+HRESULT Skip (   
    ULONG celt  
 );  
 ```  

@@ -2,7 +2,6 @@
 title: Depurar un formulario Windows Forms | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -24,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 545155f622111c2452af3bacb57fd88930ce5ab0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4d0e04b407303b1d6f98862fdef36bb8228fd780
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066761"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851974"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Tutorial: Depurar un formulario Windows Form
 Un Windows Form es una de las aplicaciones administradas más comunes. Con un Windows Form se crean aplicaciones estándar de Windows. Puede completar este tutorial utilizando Visual Basic, C# o C++.  

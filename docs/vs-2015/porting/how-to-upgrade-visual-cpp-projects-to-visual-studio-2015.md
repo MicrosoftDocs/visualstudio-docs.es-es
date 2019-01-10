@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -16,12 +15,12 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 493b96d4c66c35a242efd4957288d215ab2877ed
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bd2cf85abd5b36ba0a3797ef711b4c9364b35c4e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063294"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945202"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Procedimiento Actualizar proyectos de Visual C++ a Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +31,13 @@ Cuando se abre por primera vez un proyecto de Visual C++ creado en una versión 
 
  Puede usar [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] para abrir, editar y compilar proyectos de [!INCLUDE[win8](../includes/win8-md.md)] creados en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], pero para crear un nuevo proyecto de [!INCLUDE[win8](../includes/win8-md.md)] debe usar [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. (Para crear un proyecto de [!INCLUDE[win81](../includes/win81-md.md)] , debe usar [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]).
 
- Para crear un proyecto de Windows 10, debe usar [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)].
+ Para crear un proyecto de Windows 10, debe usar [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)].
 
  Si no se le pide que actualice el proyecto, es posible que no tenga que hacer nada para actualizarlo.
 
 -   Si el proyecto (.vcproj) se creó en una versión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que es anterior a [!INCLUDE[vs2010](../includes/vs2010-md.md)], debe actualizar el proyecto.
 
--   Si el proyecto (.vcxproj) se creó en[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] o [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], tiene dos opciones:
+-   Si el proyecto (.vcxproj) se creó en [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)],  [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]o [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] , tiene dos opciones:
 
     -   Puede omitir la actualización. [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] cargará el proyecto sin realizar ningún cambio si tiene acceso a las herramientas de Visual C++ en [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] con SP1, [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] o [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Puede proporcionar este acceso instalando la versión de Visual Studio con la que se creó el proyecto en el mismo equipo que tiene [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]. Para obtener más información, consulta [Installing Visual Studio Versions Side-by-Side](../install/install-visual-studio-versions-side-by-side.md).
 

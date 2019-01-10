@@ -1,8 +1,6 @@
 ---
 title: Get_upperbound | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc90b0456b2274bc995262244b2432c89a34aba9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: aef0ddd34a9ff203c444e5072f834e081427d340
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849104"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879976"
 ---
 # <a name="idiasymbolgetupperbound"></a>IDiaSymbol::get_upperBound
 Recupera un símbolo que representa el límite superior de una dimensión de matriz de FORTRAN.  
@@ -27,7 +25,7 @@ Recupera un símbolo que representa el límite superior de una dimensión de mat
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT get_upperBound (   
+HRESULT get_upperBound (   
    IDiaSymbol** pRetVal  
 );  
 ```  

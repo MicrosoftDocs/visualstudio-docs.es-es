@@ -1,8 +1,6 @@
 ---
-title: 'Idialoadcallback2:: Restrictdbgaccess | Documentos de Microsoft'
-ms.custom: ''
+title: Idialoadcallback2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b75db393822dc6c5d65bbbab4c9ccc64eed9f630
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 8238469232656d4fa32b71fbfb7704afd6870b54
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459050"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843861"
 ---
 # <a name="idialoadcallback2restrictdbgaccess"></a>IDiaLoadCallback2::RestrictDBGAccess
-Determina si se permite el buscando información de depuración desde archivos .dbg.  
+Determina si se permite la búsqueda de información de depuración desde archivos .dbg.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -31,10 +29,10 @@ HRESULT RestrictDBGAccess();
 ```  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Cualquier valor devuelto distinto de `S_OK` para evitar que desea obtener información de depuración desde archivos .dbg.  
+ Cualquier valor devuelto distinto `S_OK` para evitar que se busca información de depuración desde archivos .dbg.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

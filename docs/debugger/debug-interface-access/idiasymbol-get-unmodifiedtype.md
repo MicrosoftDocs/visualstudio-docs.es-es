@@ -1,8 +1,6 @@
 ---
 title: Get_unmodifiedtype | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e636a35d1cfed085ddf1bc44d60249a71d0b69
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: fe76a3155941c9f7a3c6cc02d02291e61c8e4e89
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935759"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898562"
 ---
 # <a name="idiasymbolgetunmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
 Recupera el tipo original para este símbolo. Cuando utilice el [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) se establece en un tipo.  
@@ -27,7 +25,7 @@ Recupera el tipo original para este símbolo. Cuando utilice el [SymTagEnum (enu
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT get_unmodifiedType(   
+HRESULT get_unmodifiedType(   
    IDiaSymbol** pRetVal  
 );  
 ```  
@@ -46,7 +44,7 @@ HRESULT get_unmodifiedType(
  El tipo actual es una modificación del tipo devuelto original. Obteniendo primero el tipo del símbolo de y, a continuación, interrogar que devuelve el tipo para el tipo original, se puede determinar el tipo original para un símbolo. Tenga en cuenta que algunos símbolos pueden no tener un tipo modificado del tipo original.  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: Dia2.h  
+ Encabezado: dia2.h  
   
  Biblioteca: diaguids.lib  
   

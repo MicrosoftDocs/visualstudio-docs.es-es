@@ -1,8 +1,6 @@
 ---
 title: Get_consttype | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0880e8b22a31809a1d6e2d4d673c00e2dac2ff60
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ed7eae61169a8b6c8dd0670fed0648598a40ae06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870632"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935299"
 ---
 # <a name="idiasymbolgetconsttype"></a>IDiaSymbol::get_constType
 Recupera una marca que especifica si el tipo de datos definido por el usuario es constante.  
@@ -27,7 +25,7 @@ Recupera una marca que especifica si el tipo de datos definido por el usuario es
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT get_constType (   
+HRESULT get_constType (   
    BOOL* pRetVal  
 );  
 ```  
@@ -46,7 +44,7 @@ HRESULT get_constType (
   
 |Requisito|Descripción|  
 |-----------------|-----------------|  
-|Encabezado:|Dia2.h|  
+|Encabezado:|dia2.h|  
 |Versión:|SDK de DIA v7.0|  
   
 ## <a name="see-also"></a>Vea también  

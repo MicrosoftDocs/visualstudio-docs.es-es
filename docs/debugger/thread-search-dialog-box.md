@@ -1,8 +1,6 @@
 ---
-title: Cuadro de diálogo Buscar subproceso | Documentos de Microsoft
-ms.custom: ''
+title: Cuadro de diálogo Buscar subproceso | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Thread Search
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44ce2c01bc943945439e0682b9462f24c7d9c5fd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 654e2a43c45364c7050c84c3d98ca08f6e03e9c4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475131"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885866"
 ---
 # <a name="thread-search-dialog-box"></a>Cuadro de diálogo Buscar subproceso
 Utilice este cuadro de diálogo para buscar y seleccionar el nodo de un subproceso concreto en [vista de subprocesos](../debugger/threads-view.md). Para mostrar este cuadro de diálogo, mueva el foco a un **subprocesos** ventana de vista. A continuación, elija **Buscar subproceso** desde el **búsqueda** menú.  
@@ -25,12 +23,12 @@ Utilice este cuadro de diálogo para buscar y seleccionar el nodo de un subproce
  Las siguientes opciones están disponibles:  
   
  **Subproceso**  
- El identificador del subproceso que se buscará.  
+ Para buscar el identificador de subproceso.  
   
  **Módulo**  
- La cadena de módulo que se buscará.  
+ Para buscar la cadena de módulo.  
   
- **Dirección de la búsqueda hacia arriba o hacia abajo**  
+ **Dirección de búsqueda hacia arriba o hacia abajo**  
  La dirección inicial de la búsqueda.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
@@ -41,13 +39,13 @@ Utilice este cuadro de diálogo para buscar y seleccionar el nodo de un subproce
  Incluye secciones que describen cada Spy ++ menú y cuadro de diálogo.  
   
  [Buscar un subproceso en la vista de subprocesos](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
- Explica cómo encontrar un subproceso concreto en la vista de subprocesos.  
+ Explica cómo buscar un subproceso concreto en la vista de subprocesos.  
   
  [Vista de subprocesos](../debugger/threads-view.md)  
  Muestra una vista de árbol de subprocesos activos  
   
  [Vistas de Spy++](../debugger/spy-increment-views.md)  
- Explica las vistas de árbol de Spy ++ de ventanas, mensajes, procesos y subprocesos.  
+ Explica las vistas de árbol de Spy ++ de windows, los mensajes, los procesos y subprocesos.  
   
  [Usar Spy++](../debugger/using-spy-increment.md)  
  Presenta la herramienta Spy ++ y explica cómo se puede usar.

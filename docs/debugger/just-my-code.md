@@ -1,8 +1,6 @@
 ---
 title: Depurar el código de usuario con sólo mi código | Documentos de Microsoft
-ms.custom: ''
 ms.date: 10/22/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01e36c528b71bb49b29265890ca6c48863f01be9
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 99c31291e31821f79e23f507e37003c571a8ab7c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389032"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952052"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Depurar código de usuario sólo con sólo mi código 
 

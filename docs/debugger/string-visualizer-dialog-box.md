@@ -1,8 +1,6 @@
 ---
 title: Ver cadenas en un visualizador de cadenas | Microsoft Docs
-ms.custom: ''
 ms.date: 10/10/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.stringviewer
@@ -22,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb447a29ea669dbea3a68312884760f8984cc2de
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: d4808e1a6f3086e15162bf2f25c1df369ab90866
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388561"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901235"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Ver cadenas en un visualizador de cadenas en Visual Studio
 
