@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fc3aef8605f5c3343bcc6aca86513d631cace35
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0f761bd99fe13822c0e3a5abdb35be85bd3395ef
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941695"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227920"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Procedimiento Crear una fuente Atom para una galería privada
 Puede crear un átomo (RSS) de la fuente en una ubicación de la intranet que contiene las extensiones y agrega la fuente a **extensiones y actualizaciones** como una galería privada. Para obtener más información, consulte [galerías privadas](../extensibility/private-galleries.md).  
@@ -37,36 +37,36 @@ Puede crear un átomo (RSS) de la fuente en una ubicación de la intranet que co
   El contenido de la *atom.xml* archivo podría parecerse al siguiente ejemplo:  
   
 ```xml  
-<?xml version="1.0" encoding="utf-8" ?>   
-<feed xmlns="http://www.w3.org/2005/Atom">  
-<title type="text" />   
-<id>uuid:bcecded5-97c8-4d24-96f1-7d9e16652433;id=1</id>   
-<updated>2011-04-14T21:25:48Z</updated>   
-<entry>  
-<id>SelectionHighlight..a14874d2-8199-4a60-af8a-11d6447813aa</id>   
-<title type="text">Highlight all occurrences of selected word</title>   
-<summary type="text">This extends the editor to highlight ....</summary>   
-<published>2011-04-14T14:24:51-07:00</published>   
-<updated>2011-04-14T14:24:22-07:00</updated>   
-<author>  
-<name>Microsoft</name>   
-</author>  
-<link rel="icon" href="VSIXImages/SelectionHighlight..a14874d2-8199-4a60-af8a-11d6447813aa_Icon_SelectionHighlightIcon.jpg" />   
-<link rel="previewimage" href="VSIXImages/SelectionHighlight..a14874d2-8199-4a60-af8a-11d6447813aa_PreviewImage_SelectionHighlight.jpg" />   
-<content type="application/octet-stream" src="SelectionHighlight.vsix" />   
-<Vsix xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/developer/vsx-syndication-schema/2010">  
-<Id>SelectionHighlight..a14874d2-8199-4a60-af8a-11d6447813aa</Id>   
-<Version>1.31</Version>   
-<References />   
-<Rating xsi:nil="true" />   
-<RatingCount xsi:nil="true" />   
-<DownloadCount xsi:nil="true" />   
-</Vsix>  
-</entry>  
-<entry>  
-<id>Template_Wizard_239.Microsoft.3b38a7e3-5cbc-4389-a92a-d82tyc2ed592</id>   
-...  
-</entry>  
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text" />
+  <id>uuid:bcecded5-97c8-4d24-96f1-7d9e16652433;id=1</id>
+  <updated>2011-04-14T21:25:48Z</updated>
+  <entry>
+    <id>SelectionHighlight..a14874d2-8199-4a60-af8a-11d6447813aa</id>
+    <title type="text">Highlight all occurrences of selected word</title>
+    <summary type="text">This extends the editor to highlight ....</summary>
+    <published>2011-04-14T14:24:51-07:00</published>
+    <updated>2011-04-14T14:24:22-07:00</updated>
+    <author>
+      <name>Microsoft</name>
+    </author>
+    <link rel="icon" href="VSIXImages/SelectionHighlight..a14874d2-8199-4a60-af8a-11d6447813aa_Icon_SelectionHighlightIcon.jpg" />
+    <link rel="previewimage" href="VSIXImages/SelectionHighlight..a14874d2-8199-4a60-af8a-11d6447813aa_PreviewImage_SelectionHighlight.jpg" />
+    <content type="application/octet-stream" src="SelectionHighlight.vsix" />
+    <Vsix xmlns="http://schemas.microsoft.com/developer/vsx-syndication-schema/2010" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Id>SelectionHighlight..a14874d2-8199-4a60-af8a-11d6447813aa</Id>
+      <Version>1.31</Version>
+      <References />
+      <Rating xsi:nil="true" />
+      <RatingCount xsi:nil="true" />
+      <DownloadCount xsi:nil="true" />
+    </Vsix>
+  </entry>
+  <entry>
+    <id>Template_Wizard_239.Microsoft.3b38a7e3-5cbc-4389-a92a-d82tyc2ed592</id>
+    ...
+  </entry>
 </feed>
 ```  
   
