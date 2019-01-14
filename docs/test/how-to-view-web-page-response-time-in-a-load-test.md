@@ -11,13 +11,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 73ba296be1c001415746145c7bcf4d13c8b25053
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 885729100f56c7f3491f17b10f6731e3d4df6eb1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068100"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850143"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Procedimiento para ver el tiempo de respuesta de la página web en una prueba de carga mediante el Analizador de pruebas de carga
 
@@ -86,7 +85,7 @@ Para ver los datos de tiempo de respuesta en un gráfico:
 
     Los datos se agregan al gráfico.
 
-7. (Opcional) Repita el paso anterior para **Tiempo promedio de la página**, **Objetivo de tiempo de respuesta** y **Total de páginas**.
+7. (Opcional) Repita el paso anterior para Tiempo promedio de la página**, **Objetivo de tiempo de respuesta** y **Total de páginas**.
 
    > [!NOTE]
    > **Objetivo de tiempo de respuesta** es constante.

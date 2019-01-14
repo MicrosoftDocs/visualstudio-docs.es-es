@@ -2,19 +2,18 @@
 title: Solución de problemas de carga de plantillas de proyecto y de elemento
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: troubleshooting
 helpviewer_keywords:
 - templates [Visual Studio], troubleshooting
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2963bdbd4f788f6321d963bc52001f1875c48a14
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4908716ce5f984aef6dbd3d482a26e1aeb94623d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061874"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890922"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Procedimiento Solucionar problemas de plantillas
 
