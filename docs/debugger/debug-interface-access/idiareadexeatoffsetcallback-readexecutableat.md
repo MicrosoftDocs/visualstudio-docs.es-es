@@ -1,8 +1,6 @@
 ---
 title: Idiareadexeatoffsetcallback | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9f1c1ab49205a299b73837685b3d35b352a855d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d75529a2baebc6a5f488122106f47e512a4b9ac0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837989"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962161"
 ---
 # <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
 Lee el número especificado de bytes a partir del desplazamiento especificado desde un archivo ejecutable.  
@@ -27,7 +25,7 @@ Lee el número especificado de bytes a partir del desplazamiento especificado de
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT ReadExecutableAt (   
+HRESULT ReadExecutableAt (   
    DWORDLONG fileOffset,  
    DWORD     cbData,  
    DWORD*    pcbData,  
@@ -45,7 +43,7 @@ HRESULT ReadExecutableAt (
  pcbData  
  [out] Devuelve el número de bytes leídos.  
   
- datos]  
+ data[]  
  [in, out] Una matriz que se rellena con los bytes leídos del archivo.  
   
 ## <a name="remarks"></a>Comentarios  
