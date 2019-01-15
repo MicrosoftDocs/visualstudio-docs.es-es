@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: d5d4b4c50a02a92d150a87788e6dc307dd2f8e64
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 11ff8764395f10a4937143d6f51d220f970193af
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865523"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270237"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generación de código en un proceso de compilación
 
@@ -58,7 +58,7 @@ Si [el servidor de compilación](/azure/devops/pipelines/agents/agents) se ejecu
 
 Tendrá que editar el archivo de proyecto para configurar algunas de las características de MSBuild.
 
-En **el Explorador de soluciones**, elija **Unload** en el menú contextual del proyecto. Esto permite editar el archivo .csproj o .vbproj en el editor XML.
+En **el Explorador de soluciones**, elija **Unload** desde el menú contextual del proyecto. Esto permite editar el archivo .csproj o .vbproj en el editor XML.
 
 Cuando haya terminado de editar, elija **recarga**.
 

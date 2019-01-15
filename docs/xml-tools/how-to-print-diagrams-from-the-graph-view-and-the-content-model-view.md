@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d4710752c4825ce576b20a823735b5ed1e2ebad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd147b5a7b491c17e0ed0024cfe471762e6160b1
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900943"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269714"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Procedimiento Imprimir diagramas desde las vistas gráfico y la vista de modelo de contenido
 
@@ -24,7 +24,7 @@ Este tema describe cómo imprimir un diagrama de la vista gráfico o el contenid
 
 1.  Abra un archivo XSD en Visual Studio y agregue algunos nodos a la [área de trabajo del Diseñador de esquemas XML](../xml-tools/xml-schema-designer-workspace.md).
 
-2.  Exportar el diagrama a un archivo XPS mediante el **Exportar diagrama como imagen** elemento de menú contextual en la superficie de diseño de la vista gráfico o la vista de modelo de contenido.
+2.  Exportar el diagrama a un archivo XPS mediante el **Exportar diagrama como imagen** elemento de menú contextual (clic derecho) en la superficie de diseño de la vista gráfico o la vista de modelo de contenido.
 
      Al exportar un diagrama de la vista gráfico, la superficie de diseño completo se exporta al archivo XPS. Al exportar un diagrama de la vista de modelo de contenido y más de un nodo aparece en la superficie de diseño de la vista modelo de contenido, solo el primer nodo se exporta al archivo XPS.
 

@@ -1,8 +1,6 @@
 ---
 title: Get_frontendbuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba1b74ae23d8ccfd963e60d6b794d656c2e72e8f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 36b931323c676c23d56cff9810f45df200e3cf88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857710"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904999"
 ---
 # <a name="idiasymbolgetfrontendbuild"></a>IDiaSymbol::get_frontEndBuild
 Recupera el número de compilación de front-end.  
@@ -27,7 +25,7 @@ Recupera el número de compilación de front-end.
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT get_frontEndBuild (   
+HRESULT get_frontEndBuild (   
    DWORD* pRetVal  
 );  
 ```  
@@ -51,7 +49,7 @@ HRESULT get_frontEndBuild (
   
 |Requisito|Descripción|  
 |-----------------|-----------------|  
-|Encabezado:|Dia2.h|  
+|Encabezado:|dia2.h|  
 |Versión:|SDK de DIA v7.0|  
   
 ## <a name="see-also"></a>Vea también  

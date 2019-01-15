@@ -10,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a0b540eb6f8e8c09845e069275a0a901c2809806
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b47fe1e80f2441c729dd2d971bfadffb80dfbd04
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886376"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270299"
 ---
 # <a name="understanding-the-dsl-code"></a>Introducción al código DSL
 Una solución de lenguaje específico de dominio (DSL) genera una API que puede usar para leer y actualizar las instancias del DSL en Visual Studio. Esta API se define en el código que se genera a partir de la definición de DSL. Este tema describe la API que se genera.
@@ -191,7 +191,7 @@ Una solución de lenguaje específico de dominio (DSL) genera una API que puede 
 
  `CommandSet.cs`
 
- Comandos de menú contextual que son visibles en el diagrama. Puede adaptar o ampliar este conjunto. Este archivo contiene el código de los comandos. El archivo Commands.vsct determina la ubicación de los comandos en los menús. Para obtener más información, consulte [escribir comandos de usuario y las acciones](../modeling/writing-user-commands-and-actions.md).
+ Los comandos de menú contextual que están visibles en el diagrama. Puede adaptar o ampliar este conjunto. Este archivo contiene el código de los comandos. El archivo Commands.vsct determina la ubicación de los comandos en los menús. Para obtener más información, consulte [escribir comandos de usuario y las acciones](../modeling/writing-user-commands-and-actions.md).
 
  `Constants.cs`
 
@@ -281,7 +281,7 @@ namespace Company.EmbedInForm
 
  `GeneratedVSCT.vsct`
 
- Ubica los comandos de menú estándar en los menús, como el menú contextual del diagrama, el **editar** menú y así sucesivamente. El código de comandos está en CommandSet.cs. Puede reubicar o modificar los comandos estándar y puede agregar sus propios comandos. Para obtener más información, consulte [escribir comandos de usuario y las acciones](../modeling/writing-user-commands-and-actions.md).
+ Busca los comandos de menú estándar en los menús, como el menú contextual (contexto) del diagrama, el **editar** menú y así sucesivamente. El código de comandos está en CommandSet.cs. Puede reubicar o modificar los comandos estándar y puede agregar sus propios comandos. Para obtener más información, consulte [escribir comandos de usuario y las acciones](../modeling/writing-user-commands-and-actions.md).
 
  `ModelExplorer.cs`
 
@@ -291,7 +291,7 @@ namespace Company.EmbedInForm
 
  Si quiere que la selección en el explorador del modelo se mantenga sincronizada con la selección en el diagrama, use el código siguiente:
 
-```
+```csharp
 protected override void OnSelectionChanged(global::System.EventArgs e)
 {
 base.OnSelectionChanged(e);

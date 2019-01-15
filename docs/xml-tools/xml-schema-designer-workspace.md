@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab8d2a0e8e3a243828db3f39e95801eafeee5efb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cbedf6454ae97ee97d29d836dd8f8012fb6ca222
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825267"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269155"
 ---
 # <a name="xml-schema-designer-workspace"></a>Área de trabajo del Diseñador de esquemas XML
 
@@ -30,7 +30,7 @@ Puede agregar nodos al área de trabajo de las maneras siguientes:
 
 -   Arrastre y coloque nodos globales, nodos de archivo y los nodos de espacio de nombres desde el **Explorador de esquemas XML** en cualquiera de las tres vistas. Para obtener más información, vea la sección "Arrastrar y colocar nodos" en [Explorador de esquemas XML](../xml-tools/xml-schema-explorer.md).
 
--   Use el menú contextual en el **Explorador de esquemas XML**. Para obtener más información, consulte [menús contextuales](../xml-tools/context-menus-xml-schema-explorer.md).
+-   Use el menú contextual (clic derecho) en el **Explorador de esquemas XML**. Para obtener más información, consulte [menús contextuales](../xml-tools/context-menus-xml-schema-explorer.md).
 
 -   Realizar una búsqueda en el explorador XSD y haga clic en el **agregar nodos resaltados al área de trabajo** botón en el panel de resultados de resumen. Para obtener más información, consulte [buscar el conjunto de esquemas](../xml-tools/searching-the-schema-set.md).
 
@@ -40,7 +40,7 @@ Para cambiar de vista, use una de las opciones siguientes:
 
 -   La barra de herramientas del Diseñador XSD.
 
--   Los menús contextuales de las vistas Modelo de contenido y Gráfico.
+-   Los menús contextuales (clic derecho) de la vista de modelo de contenido y la vista gráfico.
 
 -   Las marcas de agua de la página de la vista Inicio o la marca de agua de las vistas en blanco Modelo de contenido y Gráfico.
 

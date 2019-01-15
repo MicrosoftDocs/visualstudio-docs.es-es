@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb49560074b3a4c43efe13ea568207b52536e562
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37733ddb09fb726c5407888af91db2bc32713799
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918984"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268505"
 ---
 # <a name="xml-schema-explorer"></a>Explorador de esquemas XML
 
@@ -40,7 +40,7 @@ El **Explorador de esquemas XML** proporciona una vista jerárquica del esquema 
 
 -   Si se encuentra en la [vista inicio](../xml-tools/start-view.md), haga clic en el **Explorador de esquemas XML** vínculo.
 
--   Si se encuentra en la [vista gráfico](../xml-tools/graph-view.md) o [vista modelo de contenido](../xml-tools/content-model-view.md) y tiene nodos en el área de trabajo, use el menú contextual para seleccionar el **Explorador de esquemas XML**.
+-   Si se encuentra en la [vista gráfico](../xml-tools/graph-view.md) o [vista modelo de contenido](../xml-tools/content-model-view.md) y tiene nodos en el área de trabajo, use el menú contextual (clic derecho) para seleccionar el **Explorador de esquemas XML**.
 
 -   También puede seleccionar la **Explorador de esquemas XML** desde el **vista** menú.
 

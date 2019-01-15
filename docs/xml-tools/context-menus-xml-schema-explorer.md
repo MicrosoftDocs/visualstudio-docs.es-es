@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d38dea96b109db9d60014df9bf7d4d420308f195
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6a5a02169a76718d5abfd5f08bd6c03c7f7dda26
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898901"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270169"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menús contextuales (Explorador de esquemas XML)
 
-Los elementos de menú contextual siguientes se usan para realizar búsquedas específicas del esquema y otras operaciones.
+Un menú contextual es el menú que aparece cuando hace clic en un elemento. Los elementos de menú contextual siguientes se usan para realizar búsquedas específicas del esquema y otras operaciones.
 
 ## <a name="node-type-schema-set"></a>Tipo de nodo: Conjunto de esquemas
 

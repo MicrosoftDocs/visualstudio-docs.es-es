@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 471b62c35cbe7098d52e9cbeb08be29cd39c7d58
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: ecedfce45ab30d70138511ab0c87206bb35a2148
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180430"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919474"
 ---
 # <a name="troubleshoot-service-references"></a>Solucionar problemas de referencias de servicio
 
@@ -31,7 +30,7 @@ En este tema se enumera los problemas comunes que pueden producirse cuando se tr
 
 ## <a name="error-returning-data-from-a-service"></a>Error al devolver datos de un servicio
 
-Cuando vuelva un `DataSet` o `DataTable` desde un servicio, puede recibir una excepción "se superó la cuota de tamaño máximo para los mensajes entrantes". De forma predeterminada, el `MaxReceivedMessageSize` algunos enlaces de propiedad se establece en un valor relativamente pequeño para limitar la exposición a ataques por denegación de servicio. Puede aumentar este valor para evitar la excepción. Para obtener más información, consulta <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>.
+Cuando vuelva un `DataSet` o `DataTable` desde un servicio, puede recibir una excepción "se superó la cuota de tamaño máximo para los mensajes entrantes". De forma predeterminada, el `MaxReceivedMessageSize` algunos enlaces de propiedad se establece en un valor relativamente pequeño para limitar la exposición a ataques por denegación de servicio. Puede aumentar este valor para evitar la excepción. Para obtener más información, vea <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>.
 
 Para corregir este error:
 
@@ -49,7 +48,7 @@ Para corregir este error:
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Error al acceder a un servicio a través de un escritorio remoto
 
-Cuando un usuario accede a un servicio WCF hospedado en Web a través de una conexión a escritorio remota y el usuario no tiene permisos administrativos, se usa la autenticación NTLM. Si el usuario no tiene permisos administrativos, el usuario puede recibir el siguiente mensaje de error: "la solicitud HTTP no está autorizada con el esquema de autenticación de cliente 'Anónimo'. El encabezado de autenticación recibido del servidor era 'NTLM'."
+Cuando un usuario accede a un servicio WCF hospedado en Web a través de una conexión a escritorio remota y el usuario no tiene permisos administrativos, se usa la autenticación NTLM. Si el usuario no tiene permisos administrativos, el usuario puede recibir el mensaje de error siguiente: "La solicitud HTTP no está autorizada con el esquema de autenticación de cliente 'Anónimo'. El encabezado de autenticación recibido del servidor era 'NTLM'."
 
 Para corregir este error:
 
@@ -84,7 +83,7 @@ Para corregir este error, tendrá que volver a crear el proyecto de servicio:
 
 4.  Cargue el proyecto de servicio WCF.
 
-5.  En el **Configuration Manager** cuadro de diálogo, establezca el **configuración de soluciones activas** a **depurar**. Para obtener más información, consulte [Cómo: Crear y editar configuraciones](../ide/how-to-create-and-edit-configurations.md).
+5.  En el **Configuration Manager** cuadro de diálogo, establezca el **configuración de soluciones activas** a **depurar**. Para obtener más información, vea [Cómo: crear y editar configuraciones](../ide/how-to-create-and-edit-configurations.md).
 
 6.  En **el Explorador de soluciones**, seleccione el proyecto de servicio WCF.
 
@@ -96,13 +95,13 @@ Cuando intenta ver una representación XML de los datos en un [!INCLUDE[ss_data_
 
 Para corregir este error, deshabilite las fuentes RSS:
 
-1.  En Internet Explorer, en el **herramientas** menú, haga clic en **opciones de Internet**.
+1.  En Internet Explorer, en el menú **Herramientas**, haga clic en **Opciones de Internet**.
 
 2.  En el **contenido** ficha la **fuentes** sección, haga clic en **configuración**.
 
 3.  En el **configuración de fuente** cuadro de diálogo, desactive la **activar la vista de lectura de fuentes** casilla de verificación y, a continuación, haga clic en **Aceptar**.
 
-4.  Haga clic en **Aceptar** para cerrar el **opciones de Internet** cuadro de diálogo.
+4.  Elija **Aceptar** para cerrar el cuadro de diálogo **Opciones de Internet**.
 
 ## <a name="see-also"></a>Vea también
 

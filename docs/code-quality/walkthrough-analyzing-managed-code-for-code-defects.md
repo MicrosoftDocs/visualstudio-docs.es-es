@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fd24485d02d20bf4ab1b5def30e34b8d14a71cb3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9b4631b320138d045e910c612c1fa4558a07e56
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955258"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269229"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Tutorial: Análisis de código administrado en previsión de defectos de código
 
@@ -183,13 +183,11 @@ En este tutorial le guiará por el proceso de uso de análisis de código para a
 
 ## <a name="exclude-code-analysis-warnings"></a>Excluya las advertencias de análisis de código
 
-### <a name="to-exclude-code-defect-warnings"></a>Para excluir las advertencias de defectos de código
-
 1. Para cada una de las advertencias restantes, realice lo siguiente:
 
     1. Seleccione la advertencia en el **lista de errores**.
 
-    1. En el menú contextual, elija **suprimir** > **en el archivo de supresión**.
+    1. En el menú contextual (menú contextual), elija **suprimir** > **en el archivo de supresión**.
 
 1. Recompile el proyecto.
 

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de80c4def42febcc7029654ef22cfbab28a3796a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 372c1c613aca71f72e57a3a5c9a5d2e82726a03b
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868188"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269558"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>System.Activities (pestaña), Elegir elementos del cuadro de herramientas (cuadro de diálogo)
 
@@ -30,7 +30,7 @@ Esta pestaña de la **elegir elementos del cuadro de herramientas** cuadro de di
 
  El filtrado se efectúa en cada pestaña. Esto significa que no es posible agregar actividades de flujo de trabajo a través de la **componente .NET** ficha. Tienen que agregarse a través de la **System.Activities** propia pestaña.
 
- Puede desactivar los elementos que no desea ver en el **cuadro de herramientas** desde este cuadro de diálogo tabulador, o como alternativa, puede hacerlo mediante el **eliminar** opción del menú contextual en el **cuadro de herramientas** y anulando las referencias a un ensamblado no quitan el elemento de la **cuadro de herramientas**.
+ Puede desactivar los elementos que no desea ver en el **cuadro de herramientas** desde este cuadro de diálogo tabulador, o como alternativa, puede hacerlo mediante el **eliminar** haga clic en la opción de menú en el **delcuadrodeherramientas**y anulando las referencias a un ensamblado no quitan el elemento de la **cuadro de herramientas**.
 
  Al crear instancias de la actividad, para lo cual se debe arrastrar y colocar en el diseñador, se agrega automáticamente el ensamblado que contiene el elemento a la lista de ensamblados a la que se hace referencia. También si la actividad hace referencia a un ensamblado C, no agrega C a la lista de ensamblados a la que se hace referencia. Ensamblado C tiene que estar en la GAC o en el mismo directorio que la actividad B. En el caso independiente, el ensamblado debe estar en la GAC o las rutas de acceso de sondeo de VS. A continuación solo puede arrastrar y colocar la actividad en la superficie del diseñador de flujo de trabajo.
 
