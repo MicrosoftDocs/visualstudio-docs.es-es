@@ -9,12 +9,12 @@ description: Obtenga información sobre la ventaja Enterprise Mobility + Securit
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b6b4d4965ec2b7145ab388dff7df226ec16603e5
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 0e0af0c1f934163efeafd19110df7a30078bb23c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739609"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092071"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Beneficio de Enterprise Mobility + Security (EMS) en suscripciones de Visual Studio
 
@@ -75,6 +75,6 @@ Para usar EMS, deberá configurar una cuenta o iniciar sesión con una existente
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
 -  ¿Necesita ayuda con EMS?  Consulte la [documentación de EMS](/enterprise-mobility-security/) en línea.
--  Para obtener soporte técnico con cualquier componente de EMS, visite https://support.microsoft.com/allproducts y seleccione el producto.
+-  Para obtener soporte técnico con cualquier componente de EMS, visite las [preguntas más frecuentes de soporte de EMS](https://docs.microsoft.com/en-us/enterprise-mobility-security/solutions/ems-support-faq) para buscar el soporte adecuado para la pregunta.
 -  Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
 -  ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
