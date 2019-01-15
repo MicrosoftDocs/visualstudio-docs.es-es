@@ -1,8 +1,6 @@
 ---
 title: '&lt;assemblyIdentity&gt; elemento (aplicación ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assemblyIdentity
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89b54c52625578b6ba1f7859654804fa1caaad32
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: d83c750cdf08d79fc4402f08cf8a9e3a5ea218f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081275"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911473"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity&gt; elemento (aplicación ClickOnce)
 Identifica la aplicación implementada en un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación.  
@@ -41,16 +39,16 @@ Identifica la aplicación implementada en un [!INCLUDE[ndptecclick](../deploymen
 />  
 ```  
   
-## <a name="elements-and-attributes"></a>Los elementos y atributos  
+## <a name="elements-and-attributes"></a>Elementos y atributos  
  El `assemblyIdentity` elemento es necesario. No contiene elementos secundarios y tiene los siguientes atributos.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Name`|Requerido. Identifica el nombre de la aplicación.<br /><br /> Si `Name` contiene caracteres especiales, como las comillas simples o dobles, es posible que no activa la aplicación.|  
-|`Version`|Requerido. Especifica el número de versión de la aplicación en el formato siguiente: `major.minor.build.revision`|  
+|`Name`|Obligatorio. Identifica el nombre de la aplicación.<br /><br /> Si `Name` contiene caracteres especiales, como las comillas simples o dobles, es posible que no activa la aplicación.|  
+|`Version`|Obligatorio. Especifica el número de versión de la aplicación en el formato siguiente: `major.minor.build.revision`|  
 |`publicKeyToken`|Opcional. Especifica una cadena hexadecimal de 16 caracteres que representa los últimos 8 bytes de la `SHA-1` valor hash de la clave pública con la que se firma la aplicación o el ensamblado. La clave pública que se usa para firmar el catálogo debe ser 2048 bits o superior.<br /><br /> Aunque al firmar un ensamblado es opcional pero recomendado, este atributo es necesario. Si un ensamblado está firmado, debe copiar un valor de un ensamblado autofirmado o usar un valor "ficticio" de todos los ceros.|  
-|`processorArchitecture`|Requerido. Especifica el procesador. Los valores válidos son `msil` para todos los procesadores, `x86` para Windows de 32 bits, `IA64` para Windows de 64 bits, y `Itanium` para procesadores Itanium de Intel de 64 bits.|  
-|`language`|Requerido. Identifica los códigos de idioma de dos partes (por ejemplo, `en-US`) del ensamblado. Este elemento está en el `asmv2` espacio de nombres. Si no se especifica, el valor predeterminado es `neutral`.|  
+|`processorArchitecture`|Obligatorio. Especifica el procesador. Los valores válidos son `msil` para todos los procesadores, `x86` para Windows de 32 bits, `IA64` para Windows de 64 bits, y `Itanium` para procesadores Itanium de Intel de 64 bits.|  
+|`language`|Obligatorio. Identifica los códigos de idioma de dos partes (por ejemplo, `en-US`) del ensamblado. Este elemento está en el `asmv2` espacio de nombres. Si no se especifica, el valor predeterminado es `neutral`.|  
   
 ## <a name="examples"></a>Ejemplos  
   

@@ -1,9 +1,8 @@
 ---
-title: 'Cómo: Establecer opciones de accesibilidad del IDE'
+title: Procedimiento Establecimiento de opciones de accesibilidad de IDE
 description: Obtenga información sobre cómo establecer las opciones de accesibilidad en Visual Studio para que el entorno de desarrollo integrado (IDE) sea más fácil de usar para todos, incluidos los usuarios con problemas de visión para leer y con limitaciones para escribir.
 ms.date: 08/22/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -13,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df94a57358edd9619b43bbcddb26d4e3485a1ab1
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 3c8fa92644221149d3405eea25b1c85e229861e4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388431"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906779"
 ---
-# <a name="how-to-set-ide-accessibility-options"></a>Cómo: Establecer opciones de accesibilidad del IDE
+# <a name="how-to-set-ide-accessibility-options"></a>Procedimiento Establecimiento de opciones de accesibilidad de IDE
 
 > [!TIP]
 > Para más información sobre las actualizaciones de accesibilidad recientes, vea la entrada de blog [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Mejoras de accesibilidad en Visual Studio 2017 versión 15.3).
@@ -90,7 +89,7 @@ Además, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] admite los
 
 4.  Desde **Mostrar elementos**, seleccione un elemento cuya visualización necesita cambiar, como **Texto sin formato**, **Margen del indicador**, **Espacio en blanco visible**, **Nombre del atributo HTML** o **Atributo XML**.
 
-5.  Seleccione la configuración de visualización desde las siguientes opciones: **Primer plano del elemento**, **Fondo del elemento** y **Negrita**.
+5.  Seleccione la configuración de pantalla en las siguientes opciones: **Primer plano del elemento**, **Fondo del elemento** y **Negrita**.
 
 6.  Elija **Aceptar**.
 

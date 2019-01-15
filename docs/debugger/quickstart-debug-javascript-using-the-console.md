@@ -1,8 +1,6 @@
 ---
 title: Depurar JavaScript mediante la consola | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.JavaScriptConsole
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c76f9c533fd83584c12f03b4e0c0f1d44e281c8e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d97b7d8a4143ba48e0b5c411539deeb85a0cd70f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861831"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840387"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Depurar JavaScript mediante la consola en Visual Studio
   
@@ -45,7 +43,7 @@ ms.locfileid: "49861831"
 > [!TIP]
 >  Si la ventana Consola JavaScript está cerrada, elija **Depurar**> **Ventanas** > **Consola de JavaScript** para abrirla de nuevo. La ventana únicamente aparece durante las sesiones de depuración de script.  
   
- La ventana Consola JavaScript le permite interactuar con su aplicación sin tener que detener y reiniciar el depurador. Para obtener más información, consulte [actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md). Para obtener información sobre otras características, como el explorador DOM y establecer puntos de interrupción, la depuración de JavaScript consulte [inicio rápido: depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md) y [depurar aplicaciones en Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+ La ventana Consola JavaScript le permite interactuar con su aplicación sin tener que detener y reiniciar el depurador. Para obtener más información, consulte [actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md). Para obtener información sobre otras características, como el explorador DOM y establecer puntos de interrupción, la depuración de JavaScript consulte [inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md) y [depurar aplicaciones en Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).  
   
 ##  <a name="InteractiveConsole"></a> Depuración mediante la ventana Consola JavaScript  
  Los siguientes pasos sirven para crear una aplicación `FlipView` y demostrar cómo depurar interactivamente un error de codificación de JavaScript.  
@@ -181,7 +179,7 @@ ms.locfileid: "49861831"
   
 13. Elige el símbolo de flecha verde para ejecutar el script.  
   
-14. Presione Ctrl + Alt + M para cambiar el indicador de entrada de la consola al modo de una línea y, a continuación, elija **Borrar entrada** (la "X" roja) para eliminar el código desde el símbolo del sistema de entrada.  
+14. Presiona Ctrl+Alt+M para cambiar el indicador de la entrada de la consola al modo de una línea y, a continuación, elige **Borrar entrada** (la “X” roja) para eliminar el código del indicador de entrada.  
   
 15. Escriba `Data.items.length = 3` en el símbolo del sistema y presione Entrar. Al hacerlo, se quitan los elementos extraños de los datos.  
   
@@ -191,7 +189,7 @@ ms.locfileid: "49861831"
   
 18. Detenga la depuración eligiendo **Depurar** > **Detener depuración** o presionando Mayús+F5. Luego, corrija el código fuente.  
   
-     Para la página default.html completa que contiene el código de ejemplo corregido, consulte [depurar HTML, CSS y JavaScript, código de ejemplo](../debugger/debug-html-css-and-javascript-sample-code.md).  
+     Para obtener la página default.html completa que contiene el código de ejemplo corregido, consulte [Depurar código de ejemplo HTML, CSS y JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md).  
   
 ##  <a name="InteractiveDebuggingBreakMode"></a> Depuración interactiva y modo de interrupción  
  Puedes utilizar puntos de interrupción y depurar el código paso a paso por instrucciones mientras utilizas herramientas de depuración de JavaScript, como la ventana Consola JavaScript. Cuando un programa que se ejecuta en el depurador encuentra un punto de interrupción, el depurador suspende temporalmente la ejecución de ese programa. Cuando se suspende la ejecución, el programa cambia del modo de ejecución al modo de interrupción. Puedes reanudar la ejecución en cualquier momento.  
@@ -239,7 +237,7 @@ ms.locfileid: "49861831"
   
  El modo de una línea proporciona un historial de entradas. Puedes navegar por el historial de entradas mediante las teclas Flecha arriba y Flecha abajo. El modo de una línea borra el indicador de entrada cuando se ejecutan scripts. Para ejecutar un script en modo de una línea, presiona Intro.  
   
- El modo de varias líneas no borrar el indicador de entrada cuando se ejecutan scripts. Cuando se cambia a modo de una línea desde el modo de varias líneas, puede borrar la línea de entrada presionando **Borrar entrada** (la "X" roja). Para ejecutar un script en modo de varias líneas, presiona Ctrl+Intro o elige el símbolo de flecha de la esquina inferior derecha de la ventana.  
+ El modo de varias líneas no borrar el indicador de entrada cuando se ejecutan scripts. Al cambiar al modo de una línea desde el modo de varias líneas, puedes borrar la línea de entrada presionando **Borrar entrada** (la “X” roja). Para ejecutar un script en modo de varias líneas, presiona Ctrl+Intro o elige el símbolo de flecha de la esquina inferior derecha de la ventana.  
   
 ##  <a name="Switching"></a> Cambio del contexto de ejecución del script  
  La ventana Consola JavaScript permite interactuar con un solo contexto de ejecución, que representa una única instancia del host de la plataforma web (WWAHost.exe). En algunos casos, la aplicación puede iniciar otra instancia del host, como al usar un `iframe`, un contrato de participación, un trabajo web o un control `WebView` . Si se está ejecutando otra instancia del host, puede seleccionar un contexto de ejecución distinto mientras ejecuta la aplicación seleccionando el contexto de ejecución en la lista **Destino** .  
@@ -251,11 +249,11 @@ ms.locfileid: "49861831"
  Puede cambiar el contexto de ejecución mediante el comando `cd` , pero debe saber el nombre del otro contexto de ejecución, y la referencia que use debe estar en el ámbito. La lista **Destino** permite un acceso mejorado a otros contextos de ejecución.   
   
 ## <a name="see-also"></a>Vea también  
- [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
+ [Debug apps in Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)   
  [JavaScript Console commands](../debugger/javascript-console-commands.md)   
- [Actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md)   
+ [Actualización de una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Métodos abreviados de teclado](../debugger/keyboard-shortcuts-html-and-javascript.md)   
- [Depurar código de ejemplo HTML, CSS y JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
- [Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md)   
- [Depurar un control WebView](../debugger/debug-a-webview-control.md)   
+ [Depuración de código de ejemplo HTML, CSS y JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
+ [Inicio rápido: Depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Depuración de un control WebView](../debugger/debug-a-webview-control.md)   
  [Compatibilidad de productos y accesibilidad](https://visualstudio.microsoft.com/vs/support/)

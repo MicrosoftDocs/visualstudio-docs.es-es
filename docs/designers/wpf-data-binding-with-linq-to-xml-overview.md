@@ -2,7 +2,6 @@
 title: Información general de enlace de datos WPF con LINQ to XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 3bf80845-891b-41de-a71b-4080b5bd3ea6
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15f726527a743e70cced0e274fbde6b7afa8691a
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: bc67ec6beb42c3bce82f3a32f6e40f052f8ad0ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890375"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850731"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Información general de enlace de datos WPF con LINQ to XML
 
@@ -41,7 +40,7 @@ El enlace de datos en WPF permite a un elemento de interfaz de usuario asociar u
 |---------------|-----------------|
 |Destino de enlace|El elemento de IU debe estar asociado con el origen de datos. Los elementos visuales de WPF se derivan de la clase <xref:System.Windows.UIElement>.|
 |Propiedad de destino|*Propiedad de dependencia* del destino de enlace que refleja el valor del origen de enlace de datos. Las propiedades de dependencia son compatibles directamente con la clase <xref:System.Windows.DependencyObject>, de la que se deriva <xref:System.Windows.UIElement>.|
-|Origen de enlace|Objeto de origen para uno o más valores que se proporcionan al elemento de la IU para la presentación. WPF admite automáticamente los siguientes tipos como orígenes de enlace: objetos CLR, objetos de datos ADO.NET, datos XML (de consultas XPath o LINQ to XML) u otro <xref:System.Windows.DependencyObject>.|
+|Origen de enlace|Objeto de origen para uno o más valores que se proporcionan al elemento de la IU para la presentación. WPF admite automáticamente los siguientes tipos como orígenes de enlace: Objetos CLR, objetos de datos ADO.NET, datos XML (de consultas XPath o LINQ to XML) u otro <xref:System.Windows.DependencyObject>.|
 |Ruta de acceso de origen|Propiedad del origen de enlace que se resuelve en valor o conjunto de valores que debe enlazar.|
 
 Una propiedad de dependencia es un concepto específico de WPF que representa una propiedad calculada dinámicamente de un elemento de IU. Por ejemplo, las propiedades de dependencia suelen presentar valores predeterminados o valores proporcionados por un elemento primario. Estas propiedades especiales están asistidas por instancias de la clase <xref:System.Windows.DependencyProperty> (y no campos como en las propiedades estándar). Para obtener más información sobre las propiedades de dependencia, vea [Información general sobre las propiedades de dependencia](/dotnet/framework/wpf/advanced/dependency-properties-overview).

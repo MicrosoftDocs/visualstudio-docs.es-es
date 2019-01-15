@@ -1,8 +1,6 @@
 ---
 title: UdtKind | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49ea6a46825bbb94d55b0e9f9a4c052a1c12ae5f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 35631a3913f067e6520da630cd49969d8a2b40f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936568"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924233"
 ---
 # <a name="udtkind"></a>UdtKind
 Describe la variedad de tipo definido por el usuario (UDT).  
@@ -27,7 +25,7 @@ Describe la variedad de tipo definido por el usuario (UDT).
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-enum UdtKind {   
+enum UdtKind {   
    UdtStruct,  
    UdtClass,  
    UdtUnion,  

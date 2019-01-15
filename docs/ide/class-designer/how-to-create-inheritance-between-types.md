@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: Crear la herencia entre tipos (Diseñador de clases)'
+title: Procedimiento Crear la herencia entre tipos en el Diseñador de clases
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.inheritanceline
@@ -15,14 +14,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8151020294f4fd5574a1de886509c5b11f0a326
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: b94d89f6051b47f8500886348b335754abae9b72
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956684"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925568"
 ---
-# <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Cómo: Crear la herencia entre tipos en el Diseñador de clases
+# <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Procedimiento Crear la herencia entre tipos en el Diseñador de clases
 
 Para crear una relación de herencia entre dos tipos de un diagrama de clases mediante el **Diseñador de clases**, conecte el tipo base con su tipo o tipos derivados. Puede haber una relación de herencia entre dos clases, entre una clase y una interfaz o entre dos interfaces.
 

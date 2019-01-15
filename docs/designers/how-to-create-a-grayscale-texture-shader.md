@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: Crear un sombreador de textura de escala de grises'
+title: Procedimiento Crear un sombreador de textura de escala de grises
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 79181d81-44af-445e-9a18-03483dd70260
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c1910926c6cb2d181f4e5e24ffb1bc1c75a56b3
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 0634d08f386c638cf141b6e8085982b74377ab55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924192"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933546"
 ---
-# <a name="how-to-create-a-grayscale-texture-shader"></a>Cómo: Crear un sombreador de textura de escala de grises
+# <a name="how-to-create-a-grayscale-texture-shader"></a>Procedimiento Crear un sombreador de textura de escala de grises
 
 En este artículo se muestra cómo usar el Diseñador de sombras y el lenguaje DGSL (Directed Graph Shader Language) para crear un sombreador de textura de escala de grises. Este sombreador modifica el valor de color RGB del ejemplo de textura y después lo usa junto con el valor alfa sin modificar para establecer el color final.
 
@@ -27,7 +26,7 @@ Puede implementar un sombreador de textura de escala de grises modificando el va
 
 Antes de empezar, asegúrese de que se muestran la ventana **Propiedades** y el **Cuadro de herramientas**.
 
-1.  Cree un sombreador de textura básico, como se describe en [Cómo: Crear un sombreador de textura básico](../designers/how-to-create-a-basic-texture-shader.md).
+1.  Cree un sombreador de textura básico, como se explica en [Cómo: Crear un sombreador de textura básico](../designers/how-to-create-a-basic-texture-shader.md).
 
 2.  Desconecte el terminal **RGB** del nodo **Muestra de textura** del terminal **RGB** del nodo **Color final**. En el modo **Seleccionar**, elija el terminal **RGB** del nodo **Muestra de textura** y, después, elija **Romper vínculos**. Esto hace sitio para el nodo que se agrega en el paso siguiente.
 
@@ -51,8 +50,8 @@ Es posible que algunas formas proporcionen mejores vistas previas para algunos s
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Cómo: exportar un sombreador](../designers/how-to-export-a-shader.md)
-- [Editor de imágenes](../designers/image-editor.md)
+- [Cómo: Aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Cómo: Exportar un sombreador](../designers/how-to-export-a-shader.md)
+- [Image Editor](../designers/image-editor.md)
 - [Diseñador de sombras](../designers/shader-designer.md)
 - [Nodos del Diseñador de sombras](../designers/shader-designer-nodes.md)

@@ -1,8 +1,6 @@
 ---
 title: 'Tutorial: Objetos ausentes debido al canalización mal configurada | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88e313b7db1306465bce530eea41e875227abc0e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4619876794abb07a76a38af78d21e51f8a1e86dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855188"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863974"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Tutorial: Objetos ausentes debido a una canalización mal configurada
 En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráficos [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para investigar un objeto que falta como consecuencia de un sombreador de píxeles sin establecer.  
@@ -73,7 +71,7 @@ En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráf
   
 #### <a name="to-examine-device-context"></a>Para examinar el contexto del dispositivo  
   
-1. Abra el **contexto del dispositivo d3d11**. En el **etapas de canalización de gráficos** ventana, elija el **ID3D11DeviceContext** vínculo que forma parte de la `DrawIndexed` llamada que se muestra en la parte superior de la ventana.  
+1. Abra el **contexto del dispositivo d3d11**. En la ventana **Etapas de canalización de gráficos** , elija el vínculo **ID3D11DeviceContext** que forma parte de la llamada `DrawIndexed` que se muestra en la parte superior de la ventana.  
   
 2. Examine el estado del dispositivo que se muestra en el **contexto del dispositivo d3d11** para confirmar que no había ningún sombreador de píxeles activo durante la llamada a draw. En este escenario, la **información general del sombreador**, que aparece debajo del **estado del sombreador de píxeles**, indica que el sombreador es **NULL**:  
   

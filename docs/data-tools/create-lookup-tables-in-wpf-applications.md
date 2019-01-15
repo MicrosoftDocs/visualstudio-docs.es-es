@@ -1,5 +1,5 @@
 ---
-title: Crear tablas de búsqueda en aplicaciones WPF
+title: Creación de tablas de búsqueda en aplicaciones WPF
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,17 +15,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c76f769234d8b8c14ccd44d8c2cf4c669bf48ffd
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 5cf04b804ea377723a268c080b96a24442e31486
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305486"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947665"
 ---
-# <a name="create-lookup-tables-in-wpf-applications"></a>Crear tablas de búsqueda en aplicaciones WPF
+# <a name="create-lookup-tables-in-wpf-applications"></a>Creación de tablas de búsqueda en aplicaciones WPF
 
 El término *tabla de búsqueda* (a veces denominado un *enlace búsqueda*) describe un control que muestra información de una tabla de datos en función del valor de un campo de clave externa de otra tabla. Puede crear una tabla de búsqueda arrastrando el nodo principal de una tabla primaria o de objeto en el **orígenes de datos** ventana a un control que ya está enlazado a una columna o propiedad en una tabla secundaria relacionada.
 
@@ -37,9 +36,9 @@ Por ejemplo, considérese una tabla de `Orders` en una base de datos de ventas. 
 
     -   Conjunto de datos o Entity Data Model.
 
-    -   Servicio de datos de WCF, servicio WCF o servicio web. Para obtener más información, consulte [Cómo: conectarse a datos en un servicio](../data-tools/how-to-connect-to-data-in-a-service.md).
+    -   Servicio de datos de WCF, servicio WCF o servicio web. Para obtener más información, vea [Cómo: Conexión a los datos en un servicio](../data-tools/how-to-connect-to-data-in-a-service.md).
 
-    -   Objects Para obtener más información, consulte [enlazar a objetos en Visual Studio](bind-objects-in-visual-studio.md).
+    -   Objetos. Para obtener más información, consulte [enlazar a objetos en Visual Studio](bind-objects-in-visual-studio.md).
 
     > [!NOTE]
     > Para poder crear una tabla de búsqueda, deben existir dos tablas u objetos relacionados como un origen de datos para el proyecto.
@@ -48,7 +47,7 @@ Por ejemplo, considérese una tabla de `Orders` en una base de datos de ventas. 
 
      Para obtener más información acerca de los destinos de colocación válidos, vea [WPF enlazar controles a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
-3.  En el menú Datos **, haga clic en Mostrar orígenes de datos** para abrir la ventana Orígenes de datos **.
+3.  En el menú **Datos**, haga clic en **Mostrar orígenes de datos** para abrir la ventana **Orígenes de datos**.
 
 4.  Expanda los nodos en el **orígenes de datos** ventana hasta que pueda ver la tabla primaria o el objeto y la tabla secundaria relacionada u objeto.
 
@@ -94,4 +93,4 @@ Por ejemplo, considérese una tabla de `Orders` en una base de datos de ventas. 
 
 - [Enlace de controles de WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Mostrar datos relacionados en aplicaciones WPF](../data-tools/display-related-data-in-wpf-applications.md)
-- [Tutorial: Mostrar datos relacionados en una aplicación WPF](../data-tools/display-related-data-in-wpf-applications.md)
+- [Tutorial: Visualización de datos relacionados en una aplicación de WPF](../data-tools/display-related-data-in-wpf-applications.md)

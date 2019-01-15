@@ -2,7 +2,6 @@
 title: Crear aplicaciones en lenguajes bidireccionales
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Hebrew character display, creating applications
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f93dea099d9223347c727f3e7a838fcb78d3742
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 26c3ea5073d4b53c0a9d75c18722f1569aff8646
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863639"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891620"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Creación de aplicaciones en lenguajes bidireccionales
 
@@ -43,7 +42,7 @@ Puede usar Visual Studio para crear aplicaciones que muestren correctamente el t
 
 -   **Nombres de objetos** Puede usar idiomas bidireccionales para asignar nombres a soluciones, proyectos, archivos, carpetas, etc. En el código, puede usar idiomas bidireccionales para los nombres de variables, clases, objetos, atributos, metadatos y otros elementos.
 
--   **Codificación de archivo** Puede guardar y abrir archivos con una codificación Unicode o específica del idioma. Para más información, consulte [Cómo: Guardar y abrir archivos con codificación](../ide/how-to-save-and-open-files-with-encoding.md).
+-   **Codificación de archivo** Puede guardar y abrir archivos con una codificación Unicode o específica del idioma. Para obtener más información, vea [Cómo: Guardar y abrir archivos con codificación](../ide/how-to-save-and-open-files-with-encoding.md).
 
 ## <a name="features-with-limited-or-no-support"></a>Características con compatibilidad limitada o sin ella
  Otras características comunes a las aplicaciones de idiomas bidireccionales no son completamente compatibles con Visual Studio o, en algunos casos, no son compatibles. Se incluyen los siguientes:

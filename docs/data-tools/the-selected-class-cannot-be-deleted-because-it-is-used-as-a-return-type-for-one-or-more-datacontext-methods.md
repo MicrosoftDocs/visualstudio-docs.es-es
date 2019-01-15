@@ -7,29 +7,28 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 21ef0f86d701c899328044a03cde8035a1e7292d
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 36ad2afe48b5af06bf7ee59fa3043221bc787ba6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174216"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988980"
 ---
 # <a name="the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods"></a>No se puede eliminar la clase seleccionada porque se usa como tipo devuelto de uno o varios métodos DataContext
 
 El tipo de valor devuelto de uno o varios métodos de <xref:System.Data.Linq.DataContext> es la clase de entidad seleccionada. Eliminación de una clase de entidad que se usa como el tipo de valor devuelto para un <xref:System.Data.Linq.DataContext> método hace que la compilación del proyecto que se producirá un error. Para eliminar la clase de entidad seleccionada, identifique los métodos de <xref:System.Data.Linq.DataContext> que la usan y establezca sus tipos de valor devuelto en otra clase de entidad.
 
-Para revertir los tipos de valor devueltos de <xref:System.Data.Linq.DataContext> métodos a los tipos originales generados automáticamente, primero debe eliminar el <xref:System.Data.Linq.DataContext> método desde el **métodos** panel y, a continuación, arrastre el objeto desde **Explorador de servidores** / **Database Explorer** hasta la **Object Relational Designer** nuevo.
+Para revertir los tipos de valor devuelto de los métodos de <xref:System.Data.Linq.DataContext> a sus tipos originales generados automáticamente, primero elimine el método de <xref:System.Data.Linq.DataContext> del panel **Métodos** y después arrastre el objeto desde el **Explorador de servidores**/**Explorador de bases de datos** hasta **Object Relational Designer**.
 
 ## <a name="to-correct-this-error"></a>Para corregir este error
 
-1. Identificar <xref:System.Data.Linq.DataContext> métodos que usan la clase de entidad como un tipo de valor devuelto seleccionando un <xref:System.Data.Linq.DataContext> método en el **métodos** panel e inspeccionando el **tipo de valor devuelto** propiedad en el **Propiedades** ventana.
+1. Para identificar los métodos de <xref:System.Data.Linq.DataContext> que usan la clase de entidad como tipo de valor devuelto, seleccione un método de <xref:System.Data.Linq.DataContext> en el panel **Métodos** y examine la propiedad **Tipo devuelto** en la ventana **Propiedades**.
 
-2. Establecer el **Return Type** con otra clase de entidad o elimine la <xref:System.Data.Linq.DataContext> método desde el panel de métodos.
+2. Establezca **Tipo devuelto** en otra clase de entidad o elimine el método de <xref:System.Data.Linq.DataContext> del panel de métodos.
 
 ## <a name="see-also"></a>Vea también
 
 - [Mensajes de Object Relational Designer](../data-tools/o-r-designer-messages.md)
-- [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Herramientas LINQ to SQL en Visual Studio)

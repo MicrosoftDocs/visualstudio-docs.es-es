@@ -1,8 +1,6 @@
 ---
-title: Findsymbolbyrvaex | Documentos de Microsoft
-ms.custom: ''
+title: Findsymbolbyrvaex | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7dc9cfb435da1a4204c8a7ed23e398478aef0ea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 166a5cd0de9980a72cdcf83a4e4cd12f02642d90
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832438"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895118"
 ---
 # <a name="idiasessionfindsymbolbyrvaex"></a>IDiaSession::findSymbolByRVAEx
 Recupera un tipo de símbolo especificado que contiene, o más cercana a una dirección virtual relativa (RVA) especificado y el desplazamiento.  
@@ -27,7 +25,7 @@ Recupera un tipo de símbolo especificado que contiene, o más cercana a una dir
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT findSymbolByRVAEx (   
+HRESULT findSymbolByRVAEx (   
    DWORD        rva,  
    SymTagEnum   symtag,  
    IDiaSymbol** ppSymbol,  

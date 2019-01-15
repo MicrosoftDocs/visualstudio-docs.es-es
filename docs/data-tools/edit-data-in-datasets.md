@@ -13,15 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c1ad74243c70b4ca7aaa8460759abbc898d30bb9
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: MT
+ms.openlocfilehash: 733d1d3f1c105116a97d198a9bb4fa1bf1c1c2f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757154"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885215"
 ---
 # <a name="edit-data-in-datasets"></a>Editar datos en conjuntos de datos
 Editar tablas de datos al igual que editar los datos en una tabla en cualquier base de datos. El proceso puede incluir insertar, actualizar y eliminar registros en la tabla. En un formulario enlazado a datos, puede especificar cuáles son los campos editables del usuario. En esos casos, la infraestructura de enlace de datos controla todo el seguimiento de cambios para que los cambios se puedan enviar a la base de datos más adelante. Si realiza ediciones mediante programación a los datos y tiene pensado enviar los cambios a la base de datos, debe usar los objetos y métodos que realizan el seguimiento de cambios para usted.
@@ -82,7 +81,7 @@ El método <xref:System.Data.DataSet.HasChanges%2A> de un conjunto de datos devu
 
 -   Llame al método <xref:System.Data.DataSet.HasChanges%2A> de un conjunto de datos para comprobar si hay filas modificadas.
 
-El ejemplo siguiente muestra cómo comprobar el valor devuelto por la <xref:System.Data.DataSet.HasChanges%2A> método para detectar si hay filas modificadas en un conjunto de datos denominado `NorthwindDataset1`:
+En el ejemplo siguiente, se muestra cómo comprobar el valor devuelto del método <xref:System.Data.DataSet.HasChanges%2A> para detectar si hay filas modificadas en un conjunto de datos denominado `NorthwindDataset1`:
 
 [!code-csharp[VbRaddataEditing#12](../data-tools/codesnippet/CSharp/edit-data-in-datasets_5.cs)]
 [!code-vb[VbRaddataEditing#12](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_5.vb)]

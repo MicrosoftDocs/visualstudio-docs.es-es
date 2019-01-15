@@ -2,7 +2,6 @@
 title: Procedimientos recomendados para usar fragmentos de código
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, best practices
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8c7a04f2a2fb2ef59a41953c82da4254f213084
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: d95b1b95d1859d29f82f7de45aa6ddb9cde7554f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179536"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908923"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Procedimientos recomendados para usar fragmentos de código
 
@@ -25,7 +24,7 @@ El código de un fragmento de código muestra solo la forma más sencilla de hac
 
 ## <a name="handling-exceptions"></a>Control de excepciones
 
-Normalmente, el fragmento de código Try...Catch bloquea catch y vuelve a iniciar todas las excepciones. Es posible que esta no sea la elección correcta para su proyecto. Para cada excepción, hay varias formas de responder. Para obtener ejemplos, vea [Cómo: Controlar una excepción mediante Try y Catch (Guía de programación de C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) e [Instrucción Try...Catch...Finally (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
+Normalmente, el fragmento de código Try...Catch bloquea catch y vuelve a iniciar todas las excepciones. Es posible que esta no sea la elección correcta para su proyecto. Para cada excepción, hay varias formas de responder. Para obtener ejemplos, vea [Cómo: Controlar una excepción mediante Try y Catch (C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) e [Instrucción Try...Catch...Finally (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
 
 ## <a name="file-locations"></a>Ubicaciones de archivos
 

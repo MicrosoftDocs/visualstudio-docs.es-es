@@ -2,7 +2,6 @@
 title: Ventanas del depurador | Microsoft Docs
 ms.custom: seodec18
 ms.date: 04/25/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
 author: mikejo5000
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d55f1ba3a9e0d30dda9d9e390bae0cc3a46f8444
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: c546bd408d1c4c91ec19962536e1e4fe774dbd84
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562352"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875811"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Obtenga información sobre el depurador Windows en Visual Studio
 
@@ -35,19 +34,19 @@ Puede abrir la mayoría de las ventanas del depurador mientras está depurando e
 |Inmediato|CTRL+ALT+I|[Ventana Inmediato](../ide/reference/immediate-window.md)|
 |Pilas paralelas|CTR:+MAYÚS+D, S|[Uso de la ventana Pilas paralelas](../debugger/using-the-parallel-stacks-window.md)|
 |Inspección paralela|CTR:+MAYÚS+D, (1, 2, 3, 4)|[Introducción a la depuración de aplicaciones multiproceso](../debugger/get-started-debugging-multithreaded-apps.md)|
-|Subprocesos|CTRL+ALT+H|[Depuración mediante la ventana subprocesos](../debugger/how-to-use-the-threads-window.md)|
-|Módulos|CTRL+ALT+U|[Cómo: Utilice la ventana módulos](../debugger/how-to-use-the-modules-window.md)|
-|Subprocesos de GPU|-|[Cómo: usar la ventana Subprocesos de GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
+|Subprocesos|CTRL+ALT+H|[Depurar con la ventana Subprocesos](../debugger/how-to-use-the-threads-window.md)|
+|Módulos|CTRL+ALT+U|[Cómo: Uso de la ventana Módulos](../debugger/how-to-use-the-modules-window.md)|
+|Subprocesos de GPU|-|[Cómo: Uso de la ventana Subprocesos de GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
 |Tareas|CTR:+MAYÚS+D, K|[Usar la ventana Tareas](../debugger/using-the-tasks-window.md)|
-|Depuración de Python interactiva|MAYÚS+ALT+I|[REPL interactivo de Python](../python/python-interactive-repl-in-visual-studio.md)|
-|Consola de JavaScript|CTRL+ALT+V, C|[Inicio rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
-|Explorador de DOM|CTRL+ALT+V, D|[Depurar el diseño mediante el Explorador DOM](../debugger/debug-layout-using-dom-explorer.md)|
+|Depuración de Python interactiva|MAYÚS+ALT+I|[Ventana de REPL interactiva](../python/python-interactive-repl-in-visual-studio.md)|
+|Consola de JavaScript|CTRL+ALT+V, C|[Inicio rápido: Depuración de JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
+|Explorador de DOM|CTRL+ALT+V, D|[Depurar el diseño mediante el Explorador DOM](/visualstudio/debugger/quickstart-debug-html-and-css)|
 |Árbol visual dinámico|-|[Inspeccionar las propiedades XAML durante la depuración](../debugger/inspect-xaml-properties-while-debugging.md)|
 |Explorador de propiedades dinámico|-|[Inspeccionar las propiedades XAML durante la depuración](../debugger/inspect-xaml-properties-while-debugging.md)|
 |Procesos|CTRL+ALT+Z|[Depurar procesos y subprocesos](../debugger/debug-threads-and-processes.md)|
 |Memoria|CTRL+ALT+M, (1, 2, 3, 4)|[Ventana Memoria](../debugger/memory-windows.md)|
-|Desensamblado|CTRL+ALT+D|[Cómo: Utilice la ventana Desensamblado](../debugger/how-to-use-the-disassembly-window.md)|
-|Registros|CTRL+ALT+G|[Cómo: Utilice la ventana registros](../debugger/how-to-use-the-registers-window.md)|
+|Desensamblado|CTRL+ALT+D|[Cómo: Uso de la ventana Desensamblado](../debugger/how-to-use-the-disassembly-window.md)|
+|Registros|CTRL+ALT+G|[Cómo: Uso de la ventana Registros](../debugger/how-to-use-the-registers-window.md)|
 
 ## <a name="see-also"></a>Vea también
 

@@ -1,8 +1,6 @@
 ---
 title: '&lt;dependencia&gt; elemento (aplicación ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
@@ -28,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d47775f928fc52fb7ffce2e0818fea19e30dee0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c95d2caea47db9429f62eaf0527aa36ddcec2ca3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950217"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898629"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;dependencia&gt; elemento (aplicación ClickOnce)
 Identifica una dependencia de plataforma o ensamblado que se requiere para la aplicación.  
@@ -88,7 +86,7 @@ Identifica una dependencia de plataforma o ensamblado que se requiere para la ap
 </dependency>  
 ```  
 
-## <a name="elements-and-attributes"></a>Los elementos y atributos  
+## <a name="elements-and-attributes"></a>Elementos y atributos  
  El `dependency` elemento es necesario. Puede haber varias instancias de `dependency` en el manifiesto de aplicación mismo.  
 
  El `dependency` elemento no tiene atributos y contiene los siguientes elementos secundarios.  
@@ -104,20 +102,20 @@ Identifica una dependencia de plataforma o ensamblado que se requiere para la ap
 |`description`|Opcional. Se describe en forma legible, el sistema operativo descrito por el `dependentOS` elemento.|  
 
 ### <a name="osversioninfo"></a>osVersionInfo  
- Requerido. Este elemento es un elemento secundario del elemento `dependentOS` y contiene el elemento `os` . Este elemento no tiene atributos.  
+ Obligatorio. Este elemento es un elemento secundario del elemento `dependentOS` y contiene el elemento `os` . Este elemento no tiene atributos.  
 
-### <a name="os"></a>sistema operativo  
- Requerido. Este elemento es un elemento secundario del elemento `osVersionInfo` . Este elemento tiene los atributos siguientes.  
+### <a name="os"></a>Elementos y atributos  
+ Obligatorio. Este elemento es un elemento secundario del elemento `osVersionInfo` . Este elemento tiene los atributos siguientes.  
 
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`majorVersion`|Requerido. Especifica el número de versión principal del sistema operativo.|  
-|`minorVersion`|Requerido. Especifica el número de versión secundaria del sistema operativo.|  
-|`buildNumber`|Requerido. Especifica el número de compilación del sistema operativo.|  
-|`servicePackMajor`|Requerido. Especifica el número principal de service pack del sistema operativo.|  
+|`majorVersion`|Obligatorio. Especifica el número de versión principal del sistema operativo.|  
+|`minorVersion`|Obligatorio. Especifica el número de versión secundaria del sistema operativo.|  
+|`buildNumber`|Obligatorio. Especifica el número de compilación del sistema operativo.|  
+|`servicePackMajor`|Obligatorio. Especifica el número principal de service pack del sistema operativo.|  
 |`servicePackMinor`|Opcional. Especifica el número secundario de service pack del sistema operativo.|  
 |`productType`|Opcional. Identifica el valor de tipo de producto. Valores válidos son `server`, `workstation` y `domainController`. Por ejemplo, para Windows 2000 Professional, este valor de atributo es `workstation`.|  
-|`suiteType`|Opcional. Identifica un conjunto de productos disponible en el sistema o el tipo de configuración del sistema. Los valores válidos son `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted`, y `terminal`. Por ejemplo, para Windows 2000 Professional, este valor de atributo es `professional`.|  
+|`suiteType`|Opcional. Identifica un conjunto de productos disponible en el sistema o el tipo de configuración del sistema. Los valores válidos son `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted` y `terminal`. Por ejemplo, para Windows 2000 Professional, este valor de atributo es `professional`.|  
 
 ### <a name="dependentassembly"></a>dependentAssembly  
  Opcional. Contiene el `assemblyIdentity` elemento. El `dependentOS` y `dependentAssembly` elementos se excluyen mutuamente: uno de ellos debe existir para un `dependency` elemento, pero no ambos.  
@@ -127,19 +125,19 @@ Identifica una dependencia de plataforma o ensamblado que se requiere para la ap
 
 | Atributo | Descripción |
 |-----------------------| - |
-| `dependencyType` | Requerido. Especifica el tipo de dependencia. Los valores válidos son `preprequisite` y `install`. Un `install` ensamblado se instala como parte de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Un `prerequisite` ensamblado debe estar presente en la caché de ensamblados global (GAC) antes de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] puede instalar la aplicación. |
-| `allowDelayedBinding` | Requerido. Especifica si el ensamblado se puede cargar mediante programación en tiempo de ejecución. |
-| `group` | Opcional. Si el `dependencyType` atributo está establecido en `install`, designa un grupo de ensamblados con nombre que solo se instalan a petición. Para más información, consulte [Tutorial: Descargar ensamblados a petición con la API de implementación de ClickOnce mediante el diseñador](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Si establece en `framework` y `dependencyType` atributo está establecido en `prerequisite`, designa el ensamblado como parte de .NET Framework. No se comprueba la caché de ensamblado global (GAC) para este ensamblado cuando se instala en [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] y versiones posteriores. |
+| `dependencyType` | Obligatorio. Especifica el tipo de dependencia. Los valores válidos son `preprequisite` y `install`. Un `install` ensamblado se instala como parte de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Un `prerequisite` ensamblado debe estar presente en la caché de ensamblados global (GAC) antes de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] puede instalar la aplicación. |
+| `allowDelayedBinding` | Obligatorio. Especifica si el ensamblado se puede cargar mediante programación en tiempo de ejecución. |
+| `group` | Opcional. Si el `dependencyType` atributo está establecido en `install`, designa un grupo de ensamblados con nombre que solo se instalan a petición. Para obtener más información, vea [Tutorial: Descarga de ensamblados a petición con la API de implementación ClickOnce mediante el diseñador](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Si establece en `framework` y `dependencyType` atributo está establecido en `prerequisite`, designa el ensamblado como parte de .NET Framework. No se comprueba la caché de ensamblado global (GAC) para este ensamblado cuando se instala en [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] y versiones posteriores. |
 | `codeBase` | Obligatorio cuando el `dependencyType` atributo está establecido en `install`. La ruta de acceso al ensamblado dependiente. Puede ser una ruta de acceso absoluta o una ruta de acceso en relación con el código del manifiesto a la base. Esta ruta de acceso debe ser un URI válido en orden para el manifiesto del ensamblado sea válido. |
 | `size` | Obligatorio cuando el `dependencyType` atributo está establecido en `install`. El tamaño del ensamblado dependiente, en bytes. |
 
 ### <a name="assemblyidentity"></a>assemblyIdentity  
- Requerido. Este elemento es un elemento secundario del elemento `dependentAssembly` y tiene los atributos siguientes.  
+ Obligatorio. Este elemento es un elemento secundario del elemento `dependentAssembly` y tiene los atributos siguientes.  
 
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`name`|Requerido. Identifica el nombre de la aplicación.|  
-|`version`|Requerido. Especifica el número de versión de la aplicación en el formato siguiente: `major.minor.build.revision`|  
+|`name`|Obligatorio. Identifica el nombre de la aplicación.|  
+|`version`|Obligatorio. Especifica el número de versión de la aplicación en el formato siguiente: `major.minor.build.revision`|  
 |`publicKeyToken`|Opcional. Especifica una cadena hexadecimal de 16 caracteres que representa los últimos 8 bytes de la `SHA-1` valor hash de la clave pública con la que se firma la aplicación o el ensamblado. La clave pública utilizada para firmar el catálogo debe ser 2048 bits o más.|  
 |`processorArchitecture`|Opcional. Especifica el procesador. Los valores válidos son `x86` para Windows de 32 bits y `I64` para Windows de 64 bits.|  
 |`language`|Opcional. Identifica los códigos de idioma de dos partes, como EN-US, del ensamblado.|  

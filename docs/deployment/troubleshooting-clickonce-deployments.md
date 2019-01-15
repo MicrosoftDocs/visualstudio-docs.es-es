@@ -1,8 +1,6 @@
 ---
 title: Solucionar problemas en implementaciones ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af05eee471581df756d17bc00e1f3a18fa032598
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 25d352666b66202b40d5d1d397aa36a978f695a4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153181"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944488"
 ---
 # <a name="troubleshoot-clickonce-deployments"></a>Solución de problemas de implementaciones de ClickOnce
 Este tema le ayudará a diagnosticar y resolver los problemas más comunes con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementaciones.  
@@ -34,22 +32,22 @@ Este tema le ayudará a diagnosticar y resolver los problemas más comunes con [
 
 ## <a name="deployment-considerations"></a>Consideraciones de implementación
 
- [Cómo: establecer una ubicación de archivo de registro personalizado para errores de implementación de ClickOnce](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)  
+ [Cómo: Establecimiento de una ubicación de archivos de registro personalizada para los errores de implementaciones de ClickOnce](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)  
  Describe cómo redirigir todas [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] errores de activación en un equipo a un archivo de registro.  
   
- [Cómo: especificar archivos de registro detallados para las implementaciones de ClickOnce](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)  
+ [Cómo: Especificación de archivos de registro detallados para implementaciones de ClickOnce](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)  
  Describe cómo aumentar el detalle que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] escribe en archivos de registro.  
   
- [Problemas de configuración de servidor y cliente en implementaciones ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)  
+ [Problemas de configuración de servidor y cliente en implementaciones de ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)  
  Describe varios problemas con la configuración del servidor Web que podría causar problemas para descargar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicaciones.  
   
- [Seguridad, control de versiones y manifiestos problemas en implementaciones ClickOnce](../deployment/security-versioning-and-manifest-issues-in-clickonce-deployments.md)  
+ [Seguridad, control de versiones y manifiestos problemas en implementaciones de ClickOnce](../deployment/security-versioning-and-manifest-issues-in-clickonce-deployments.md)  
  Describe varios problemas relacionados con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementaciones.  
   
- [Solución de problemas de errores específicos en las implementaciones de ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)  
+ [Solución de problemas de errores específicos de implementaciones de ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)  
  Describe escenarios concretos en el que un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación no se ejecuta correctamente y se proporcionan pasos para resolverlos.  
   
- [Depurar aplicaciones ClickOnce que utilizan System.Deployment.Application](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)  
+ [Depuración de aplicaciones ClickOnce que usan System.Deployment.Application](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)  
  Describe una técnica para depurar aplicaciones ClickOnce que utilizan System.Deployment.Application.  
   
 ## <a name="see-also"></a>Vea también  

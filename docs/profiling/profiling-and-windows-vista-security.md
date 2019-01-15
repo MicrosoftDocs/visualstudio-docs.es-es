@@ -1,8 +1,6 @@
 ---
 title: Generación de perfiles y seguridad en Windows Vista | Microsoft Docs
-ms.custom: ''
 ms.date: 11/02/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,security
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 767210a934753dd85b22728813d7608618a2b8d3
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 58c0e7c8eec4f3ab4ebc0c65798c6b3308248613
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220662"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937811"
 ---
 # <a name="profiling-and-windows-vista-security"></a>Generación de perfiles y seguridad en Windows Vista
 
@@ -50,4 +48,4 @@ Puede ver una lista de los procesos que están disponibles mediante el estableci
 
 - [Información general](../profiling/overviews-performance-tools.md)
 - [VSPerfCmd](../profiling/vsperfcmd.md)
-- [Cómo: Conectar a procesos en ejecución](/previous-versions/visualstudio/visual-studio-2010/c6wf8e4z\(v\=vs.100\))
+- [Cómo: Asociar con procesos en ejecución](/previous-versions/visualstudio/visual-studio-2010/c6wf8e4z\(v\=vs.100\))

@@ -1,8 +1,6 @@
 ---
 title: '&lt;ensamblado&gt; elemento (aplicación ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assembly
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd872053117388e9e08dcb8c4c2bfedcba622fd4
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 35c8193c2210d2a16a7d73164b551adb5a0f06bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077095"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878358"
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;ensamblado&gt; elemento (aplicación ClickOnce)
 El elemento de nivel superior para el manifiesto de aplicación.  
@@ -37,7 +35,7 @@ El elemento de nivel superior para el manifiesto de aplicación.
 />  
 ```  
   
-## <a name="elements-and-attributes"></a>Los elementos y atributos  
+## <a name="elements-and-attributes"></a>Elementos y atributos  
  El `assembly` es el elemento raíz y es necesario. Su primer elemento contenido debe ser un `assemblyIdentity` elemento. Los elementos del manifiesto deben estar en uno de los espacios de nombres siguientes:  
   
  `urn:schemas-microsoft-com:asm.v1`  
@@ -48,11 +46,11 @@ El elemento de nivel superior para el manifiesto de aplicación.
   
  También deben ser elementos secundarios del ensamblado en estos espacios de nombres, mediante herencia o etiquetado.  
   
- El `assembly` elemento tiene el siguiente atributo.  
+ El elemento `assembly` tiene los atributos siguientes:  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`manifestVersion`|Requerido. El `manifestVersion` atributo debe establecerse en `1.0`.|  
+|`manifestVersion`|Obligatorio. El `manifestVersion` atributo debe establecerse en `1.0`.|  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo de código siguiente se ilustra un `assembly` elemento en un manifiesto de aplicación para un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md).  

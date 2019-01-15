@@ -2,7 +2,6 @@
 title: Agregar referencias en el Administrador de referencias
 ms.date: 04/11/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - VS.ReferenceManager
@@ -23,14 +22,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3668b5e4275071513deb31e2e479adcd91d11589
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4e3e21f38f8b4f60678aa4bb767368393c666cab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839276"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856285"
 ---
-# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Cómo: Agregar o quitar referencias mediante el Administrador de referencias
+# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedimiento Agregar o quitar referencias con el Administrador de referencias
 
 Puede usar el cuadro de diálogo **Administrador de referencias** para agregar y administrar referencias a componentes que usted, Microsoft u otra empresa hayan desarrollado. Si va a desarrollar una aplicación de Windows universal, el proyecto hará referencia automáticamente a todos los archivos DLL correctos del SDK de Windows. Si va a desarrollar una aplicación .NET, el proyecto hará referencia automáticamente a *mscorlib.dll*. Algunas API de .NET se exponen en los componentes que debe agregar manualmente. Las referencia a los componentes COM o a los componentes personalizados tienen que agregarse manualmente.
 
@@ -72,7 +71,7 @@ La pestaña **Ensamblados** consta de dos subpestañas:
 
 1. En **Framework** se enumeran todos los ensamblados que conforman la versión de la plataforma de destino.
 
-    Los proyectos de las aplicaciones de la Tienda Windows 8.x contienen referencias a todos los ensamblados de las [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] de destino de forma predeterminada cuando se crea un proyecto. En los proyectos administrados, un nodo de solo lectura bajo la carpeta **Referencias** del **Explorador de soluciones** indica la referencia a todo el marco. Por consiguiente, la pestaña **Marco** no mostrará ninguno de los ensamblados del marco y en su lugar mostrará el siguiente mensaje: "Ya se hace referencia a todos los ensamblados de .NET Framework. Use el Examinador de objetos para ver las referencias de .NET Framework". Para los proyectos de escritorio, la pestaña **Marco** muestra los ensamblados de la plataforma de destino, y el usuario debe agregar las referencias que requiera la aplicación.
+    Los proyectos de las aplicaciones de la Tienda Windows 8.x contienen referencias a todos los ensamblados de las [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] de destino de forma predeterminada cuando se crea un proyecto. En los proyectos administrados, un nodo de solo lectura bajo la carpeta **Referencias** del **Explorador de soluciones** indica la referencia a todo el marco. Por consiguiente, la pestaña **Marco** no enumera ninguno de los ensamblados del marco y en su lugar muestra el siguiente mensaje: "Ya se hace referencia a todos los ensamblados de .NET Framework. Use el Examinador de objetos para ver las referencias de .NET Framework". Para los proyectos de escritorio, la pestaña **Marco** muestra los ensamblados de la plataforma de destino, y el usuario debe agregar las referencias que requiera la aplicación.
 
 2. En **Extensiones** se muestran todos los ensamblados que los proveedores externos de componentes y controles han desarrollado para ampliar la plataforma de destino. Dependiendo del propósito de la aplicación del usuario, puede que se necesiten estos ensamblados.
 
@@ -94,7 +93,7 @@ Dependiendo de la versión de .NET Framework del proyecto, es posible que alguno
 
 - Un componente que utiliza una versión reciente de .NET Framework es incompatible con un proyecto que tiene como destino una versión anterior de .NET Framework.
 
-    Para más información sobre cómo cambiar la versión de destino de .NET Framework de un proyecto, vea [Cómo: Usar como destino una versión de .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+    Para obtener información sobre cómo cambiar la versión de .NET Framework de destino de un proyecto, vea [Cómo: Usar una versión de .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 - Un componente que utiliza [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] es incompatible con un proyecto que tiene como destino [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)].
 
@@ -155,9 +154,9 @@ La pestaña **Windows** muestra todos los SDK que son específicos de las plataf
 
 Puede generar un archivo WinMD en Visual Studio de dos maneras:
 
-- **Proyectos administrados de aplicaciones de la Tienda Windows 8.x**: los proyectos de aplicaciones de la Tienda Windows 8.x pueden generar archivos binarios WinMD al establecer **Propiedades de proyecto** > **Tipo de salida en Archivo WinMD**. El nombre de archivo WinMD debe ser el espacio de nombres que engloba a todos los espacios de nombres que existen en él. Por ejemplo, si un proyecto consta de los espacios de nombres `A.B` y `A.B.C`, los nombres posibles para sus archivos WinMD resultantes son *A.winmd* y *A.B.winmd*. Si un usuario especifica un valor de **Propiedades del proyecto** > **Nombre del ensamblado** o **Propiedades del proyecto** > **Espacio de nombres** que diverge del conjunto de espacios de nombres del proyecto, o si no hay un espacio de nombres englobador dentro de un proyecto, se genera una advertencia de compilación: “A.winmd” no es un nombre de archivo .winmd válido para este ensamblado. Todos los tipos de un archivo de metadatos de Windows deben existir en un subespacio de nombres del nombre de archivo. Los tipos que no existen en un subespacio de nombres del nombre de archivo no podrán encontrarse en tiempo de ejecución. En este ensamblado, el espacio de nombres común más pequeño es `CSWSClassLibrary1`. Un proyecto de escritorio de Visual Basic o C# solo puede usar archivos WinMD que hayan sido generados mediante los SDK de Windows 8, denominados archivos WinMD propios, y no puede generar archivos WinMD.
+- **Proyectos administrados de aplicación de Windows 8.x Store**: Los proyectos de aplicación de Windows 8.x Store pueden generar archivos binarios WinMD al establecer **Propiedades del proyecto** > **Tipo de salida = Archivo WinMD**. El nombre de archivo WinMD debe ser el espacio de nombres que engloba a todos los espacios de nombres que existen en él. Por ejemplo, si un proyecto consta de los espacios de nombres `A.B` y `A.B.C`, los nombres posibles para sus archivos WinMD resultantes son *A.winmd* y *A.B.winmd*. Si un usuario especifica un valor de **Propiedades del proyecto** > **Nombre del ensamblado** o **Propiedades del proyecto** > **Espacio de nombres** que diverge del conjunto de espacios de nombres del proyecto, o si no hay un espacio de nombres englobador dentro de un proyecto, se genera una advertencia de compilación: “A.winmd” no es un nombre de archivo .winmd válido para este ensamblado. Todos los tipos de un archivo de metadatos de Windows deben existir en un subespacio de nombres del nombre de archivo. Los tipos que no existen en un subespacio de nombres del nombre de archivo no podrán encontrarse en tiempo de ejecución. En este ensamblado, el espacio de nombres común más pequeño es `CSWSClassLibrary1`. Un proyecto de escritorio de Visual Basic o C# solo puede usar archivos WinMD que hayan sido generados mediante los SDK de Windows 8, denominados archivos WinMD propios, y no puede generar archivos WinMD.
 
-- **Proyectos nativos de aplicaciones de la Tienda Windows 8.x**: un archivo WinMD nativo solo contiene metadatos. Su implementación está en un archivo DLL distinto. Se pueden generar archivos binarios nativos si se elige la plantilla del proyecto Componente de Windows Runtime en el cuadro de diálogo **Nuevo proyecto** o si se empieza a partir de un proyecto en blanco y se modifican las propiedades del proyecto para generar un archivo WinMD. Si el proyecto está compuesto de espacios de nombres dispares, un error de compilación indicará al usuario que combine los espacios de nombres o ejecute la herramienta MSMerge.
+- **Proyectos nativos de aplicación de Windows 8.x Store**: Un archivo WinMD nativo solo contiene metadatos. Su implementación está en un archivo DLL distinto. Se pueden generar archivos binarios nativos si se elige la plantilla del proyecto Componente de Windows Runtime en el cuadro de diálogo **Nuevo proyecto** o si se empieza a partir de un proyecto en blanco y se modifican las propiedades del proyecto para generar un archivo WinMD. Si el proyecto está compuesto de espacios de nombres dispares, un error de compilación indicará al usuario que combine los espacios de nombres o ejecute la herramienta MSMerge.
 
 La pestaña **Windows** se compone de dos subgrupos.
 
@@ -165,7 +164,7 @@ La pestaña **Windows** se compone de dos subgrupos.
 
 El subgrupo **Principal** muestra todos los archivos WinMD (para los elementos de Windows Runtime) del SDK de la versión de Windows de destino.
 
-Los proyectos de aplicaciones de la Tienda Windows 8.x contienen referencias a todos los archivos WinMD del SDK de Windows 8 de forma predeterminada cuando se crea el proyecto. En los proyectos administrados, un nodo de solo lectura bajo la carpeta **Referencias** del **Explorador de soluciones** indica la referencia a la versión completa del SDK de Windows 8. Por tanto, el subgrupo **Principal** del **Administrador de referencias** no mostrará los ensamblados del SDK de Windows 8, y en su lugar mostrará un mensaje: "Ya se hace referencia a Windows SDK. Use el Examinador de objetos para explorar las referencias en el Windows SDK".
+Los proyectos de aplicaciones de la Tienda Windows 8.x contienen referencias a todos los archivos WinMD del SDK de Windows 8 de forma predeterminada cuando se crea el proyecto. En los proyectos administrados, un nodo de solo lectura bajo la carpeta **Referencias** del **Explorador de soluciones** indica la referencia a la versión completa del SDK de Windows 8. Por tanto, el subgrupo **Principal** del **Administrador de referencias** no enumera ninguno de los ensamblados de Windows 8 SDK y, en su lugar, muestra un mensaje: "Ya se hace referencia a Windows SDK. Use el Examinador de objetos para explorar las referencias en el Windows SDK".
 
 En los proyectos de escritorio, el subgrupo **Principal** no aparece de manera predeterminada. Puede agregar Windows Runtime si abre el menú contextual del nodo del proyecto, elige **Descargar el proyecto**, agrega el siguiente fragmento de código y vuelve a abrir el proyecto (en el nodo del proyecto, elija **Volver a cargar el proyecto**). Cuando se invoca el cuadro de diálogo **Administrador de referencias**, aparece el subgrupo **Principal**.
 

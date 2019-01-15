@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: Mostrar una lista de elementos separados por comas | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Mostrar una lista de elementos separados por comas | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, separating items with semicolons
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1507a297c1baf7f410bde1c6d32e48b43a9cdc2
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: cb9645ffef5c6b9208a6d3b940b145068a6bd12d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880240"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854157"
 ---
-# <a name="how-to-display-an-item-list-separated-with-commas"></a>Cómo: Mostrar una lista de elementos separados por comas
+# <a name="how-to-display-an-item-list-separated-with-commas"></a>Procedimiento Mostrar una lista de elementos separados por comas
 Cuando se trabaja con listas de elementos en [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]), a veces resulta útil mostrar el contenido de las listas de elementos de tal forma que sea fácil de leer. O puede que tenga una tarea que toma una lista de elementos separados con una cadena de separación especial. En ambos casos, puede especificar una cadena de separación para una lista de elementos.  
   
 ## <a name="separate-items-in-a-list-with-commas"></a>Separar los elementos de una lista con comas  

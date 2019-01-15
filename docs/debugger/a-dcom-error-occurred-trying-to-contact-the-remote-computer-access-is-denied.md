@@ -1,8 +1,6 @@
 ---
 title: Error DCOM al intentar ponerse en contacto con el equipo remoto. Se denegó el acceso. | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.remote.dcom_access_denied
@@ -22,21 +20,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 193c93e7c29d3ea9fa13c08c9d77e4e88026d814
-ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
-ms.translationtype: MT
+ms.openlocfilehash: c329704ee7f2ea19f56d3bd9201783a04d967de7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "49900519"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938667"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>Error DCOM al intentar ponerse en contacto con el equipo remoto. Se denegó el acceso.
 La depuración remota utiliza DCOM para la comunicación entre el host y los equipos remotos en las siguientes situaciones:  
   
-- El depurador está configurado para **modo de compatibilidad nativa** o **modo de compatibilidad administrado** está activada en la **Herramientas > Opciones > depuración** página  
+- El depurador está establecido en el **Modo de compatibilidad nativa** o el **Modo de compatibilidad administrado** está activado en la página **Herramientas / Opciones / Depuración**.  
   
 - Está depurando código C++ (C++ / CLI) administrado.  
   
-- En Visual Studio 2013, cuando **Habilitar Editar y continuar nativa** está activada en la **Herramientas > Opciones > depuración** página  
+- En Visual Studio 2013, cuando se activa **Habilitar la opción Editar y continuar nativa** en la página **Herramientas / Opciones / Depuración**.  
   
 - Algunos escenarios de depuración de terceros  
   
@@ -51,5 +49,5 @@ La depuración remota utiliza DCOM para la comunicación entre el host y los equ
 - Si la depuración remota requiere proporcionar las credenciales, active la opción para guardar las credenciales.  
   
 ## <a name="see-also"></a>Vea también  
- [Errores de depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+ [Errores de la depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

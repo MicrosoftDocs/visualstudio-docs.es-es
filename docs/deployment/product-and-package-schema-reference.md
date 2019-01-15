@@ -1,8 +1,6 @@
 ---
 title: Referencia de esquemas de paquete y producto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.CircularIncludes
@@ -27,14 +25,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fae53ad5143df91d74ad9c5e3cd19c1bdafd0da
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 4fe8a7e30c61105cc78d0e23ac35683e72e82ffc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080654"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844674"
 ---
-# <a name="product-and-package-schema-reference"></a>Referencia de esquema de paquete y del producto
+# <a name="product-and-package-schema-reference"></a>Referencia de esquemas de productos y paquetes
 Un *archivo producto* es un manifiesto XML que describe todas las dependencias externas requeridas por un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Algunos ejemplos de dependencias externas son el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] y Microsoft Data Access Components (MDAC). Un archivo de paquete es similar a un archivo de producto, pero se usa para instalar los componentes dependientes de la referencia cultural de una dependencia, como ensamblados localizables, contratos de licencia y documentación.  
   
  El archivo del producto y de paquetes consta de un nivel superior `Product` o `Package` elemento, cada uno de los cuales contiene los siguientes elementos.  

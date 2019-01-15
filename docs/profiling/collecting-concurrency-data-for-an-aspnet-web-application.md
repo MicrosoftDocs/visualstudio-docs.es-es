@@ -1,8 +1,6 @@
 ---
 title: Recopilar datos de simultaneidad para una aplicación web ASP.NET con la línea de comandos del generador de perfiles | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - concurrency profiling method
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: a5cdb1a0a77ece78f623a0fa21bc48672d1624cb
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 6a11614d7dbd7d72dfadcaebc4a0f789bf29c123
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335923"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913574"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Recopilación de datos de simultaneidad para una aplicación web ASP.NET con la línea de comandos del generador de perfiles
 El método de simultaneidad de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite recopilar datos de contención de recursos.  
@@ -27,7 +25,7 @@ El método de simultaneidad de las herramientas de generación de perfiles de [!
   
 |Tarea|Contenido relacionado|  
 |----------|---------------------|  
-|Adjuntar el generador de perfiles a una aplicación ASP.NET en ejecución|-   [Cómo: Adjuntar el generador de perfiles a una aplicación ASP.NET para recopilar datos de simultaneidad](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|Adjuntar el generador de perfiles a una aplicación ASP.NET en ejecución|-   [Cómo: Adjuntar el generador de perfiles a una aplicación web ASP.NET para recopilar datos de simultaneidad](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
   
 ## <a name="reference"></a>Referencia  
  [Referencia de las herramientas de generación de perfiles de la línea de comandos](../profiling/command-line-profiling-tools-reference.md)  
@@ -47,8 +45,8 @@ El método de simultaneidad de las herramientas de generación de perfiles de [!
   
 |Tarea|Contenido relacionado|  
 |----------|---------------------|  
-|**Generar perfiles de aplicaciones independientes (cliente)**|-   [Recopilar datos de simultaneidad](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|  
-|**Generar perfiles para servicios**|-   [Recopilar datos de simultaneidad](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|  
+|**Generar perfiles de aplicaciones independientes (cliente)**|-   [Recopilación de datos de simultaneidad](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|  
+|**Generar perfiles para servicios**|-   [Recopilación de datos de simultaneidad](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|  
   
 ### <a name="analyze-concurrency-data-views-and-reports"></a>Análisis de vistas e informes de datos de simultaneidad  
  [Vistas de datos de contención de recursos](../profiling/resource-contention-data-views.md)  

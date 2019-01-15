@@ -1,8 +1,6 @@
 ---
 title: Usar el atributo DebuggerDisplay | Microsoft Docs
-ms.custom: ''
 ms.date: 08/09/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - attributes [C#], debugger
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3adb481ba06c086db3a272c026543464018b542
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 922e9eea80344d5a02e4f54f173b374ca7faa78e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926207"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951685"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Usar el atributo DebuggerDisplay
 El atributo <xref:System.Diagnostics.DebuggerDisplayAttribute> controla la forma en que se muestra un objeto, una propiedad o un campo en las ventanas de variables del depurador. Este atributo se puede aplicar a tipos, delegados, propiedades, campos y ensamblados.  
@@ -35,7 +33,7 @@ El atributo <xref:System.Diagnostics.DebuggerDisplayAttribute> controla la forma
   
  En la tabla siguiente se muestran algunos posibles usos del atributo `DebuggerDisplay` y resultados de ejemplo.  
   
-|Atributo|Resultado que aparece en la columna valor|  
+|Atributo|Resultado que aparece en la columna Valor|  
 |---------------| - |  
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> Se utiliza en un tipo con campos `x` y `y`.|`x = 5 y = 18`|  
 |La sintaxis del parámetro`[DebuggerDisplay("String value is {getString()}")]`puede variar según el lenguaje. Por consiguiente, utilícela con cuidado.|`String value is [5, 6, 6]`|  
@@ -76,15 +74,15 @@ csc /t:library autoexp.cs
 ```csharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  
 public sealed class MyClass   
-{      
-    public int count { get; set; }      
-    public bool flag { get; set; }      
+{      
+    public int count { get; set; }      
+    public bool flag { get; set; }      
     private string DebuggerDisplay  
-   {         
+   {         
         get  
         {  
              return string.Format("Object {0}", count - 2);  
-        }      
+        }      
     }  
 }  
 ```  
@@ -177,7 +175,7 @@ class MyHashtable
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Usar el atributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
+ [Uso del atributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
  [Crear vistas personalizadas de objetos administrados](../debugger/create-custom-views-of-dot-managed-objects.md)   
  [Especificadores de formato en C#](../debugger/format-specifiers-in-csharp.md)   
  [Mejorar la depuración con los atributos de visualización del depurador](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

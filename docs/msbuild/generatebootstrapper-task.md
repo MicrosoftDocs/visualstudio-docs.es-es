@@ -1,8 +1,6 @@
 ---
 title: GenerateBootstrapper (Tarea) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateBootstrapper
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 53ad85f77d014d534d625b8d08e36b7eb8c01f7f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65e8980df4d98e4d7c76df43f32d7ca0a224e699
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895735"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891847"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper (tarea)
 Proporciona una forma automatizada de detectar, descargar e instalar una aplicación y sus requisitos previos. Actúa como instalador único que integra los instaladores independientes de todos los componentes que forman una aplicación.  
@@ -94,11 +92,11 @@ Proporciona una forma automatizada de detectar, descargar e instalar una aplicac
   
    Especifica una ubicación en que el programa previo va a buscar los requisitos previos de instalación que se deben instalar. Este parámetro puede tener los valores siguientes:  
   
-  - `HomeSite`: indica que el proveedor del componente hospeda el requisito previo.  
+  - `HomeSite`: Indica que el proveedor del componente hospeda el requisito previo.  
   
-  - `Relative`: indica que el requisito previo está en la misma ubicación que la aplicación.  
+  - `Relative`: Indica que el requisito previo está en la misma ubicación que la aplicación.  
   
-  - `Absolute`: indica que todos los componentes deben encontrarse en una dirección URL centralizada. Este valor debe utilizarse junto con el parámetro de entrada `ComponentsUrl`.  
+  - `Absolute`: Indica que todos los componentes deben encontrarse en una dirección URL centralizada. Este valor debe utilizarse junto con el parámetro de entrada `ComponentsUrl`.  
   
     Si `ComponentsLocation` no se especifica, `HomeSite` se utiliza de forma predeterminada.  
   

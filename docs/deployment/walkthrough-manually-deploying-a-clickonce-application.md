@@ -1,8 +1,6 @@
 ---
 title: 'Tutorial: Implementar manualmente una aplicación ClickOnce | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f25c0e0b60a3b0f52df534db8f3593a26a435a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 652c7eee2e4b3830966882afd4a9b9b31c8aceb3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902891"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923275"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Tutorial: Implementar manualmente una aplicación ClickOnce
 Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación, o si necesita usar características avanzadas de implementación, como la implementación de aplicaciones de confianza, debe usar el *Mage.exe* herramienta de línea de comandos para crear su [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiestos. En este tutorial se describe cómo crear un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación mediante el uso de la versión de línea de comandos (*Mage.exe*) o la versión gráfica (*MageUI.exe*) de la generación de manifiestos y Herramienta de edición.  
@@ -45,15 +43,15 @@ Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../
   
 - Determinar cómo se distribuirá la implementación.  
   
-   Las opciones de distribución incluyen: Web, recurso compartido de archivos o CD. Para obtener más información, consulta [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).  
+   Las opciones de distribución se incluyen: Web, recurso compartido de archivos o CD. Para obtener más información, consulta [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).  
   
 - Determinar si la aplicación requiere un nivel elevado de confianza.  
   
-   Si la aplicación requiere plena confianza, por ejemplo, acceso total al sistema del usuario, puede usar el `-TrustLevel` opción de *Mage.exe* establecerlo. Si desea definir un permiso personalizado establecido para la aplicación, puede copiar la sección de permisos de Internet o intranet de otro manifiesto, modificarlo para adaptarlo a sus necesidades y agregarla al manifiesto de aplicación mediante un editor de texto o  *MageUI.exe*. Para obtener más información, consulte [información general de la implementación de aplicaciones de confianza](../deployment/trusted-application-deployment-overview.md).  
+   Si la aplicación requiere plena confianza, por ejemplo, acceso total al sistema del usuario, puede usar el `-TrustLevel` opción de *Mage.exe* establecerlo. Si desea definir un permiso personalizado establecido para la aplicación, puede copiar la sección de permisos de Internet o intranet de otro manifiesto, modificarlo para adaptarlo a sus necesidades y agregarla al manifiesto de aplicación mediante un editor de texto o  *MageUI.exe*. Para más información, vea [Introducción a la implementación de aplicaciones de confianza](../deployment/trusted-application-deployment-overview.md).  
   
 - Obtenga un certificado de Authenticode.  
   
-   Debe firmar la implementación con un certificado Authenticode. Puede generar un certificado de prueba mediante el uso de Visual Studio, *MageUI.exe*, o *MakeCert.exe* y *Pvk2Pfx.exe* herramientas, o bien puede obtener un certificado de un certificado Entidad emisora (CA). Si decide usar la implementación de aplicaciones de confianza, también debe realizar una instalación única del certificado en todos los equipos cliente. Para obtener más información, consulta [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
+   Debe firmar la implementación con un certificado Authenticode. Puede generar un certificado de prueba mediante el uso de Visual Studio, *MageUI.exe*, o *MakeCert.exe* y *Pvk2Pfx.exe* herramientas, o bien puede obtener un certificado de un certificado Entidad emisora (CA). Si decide usar la implementación de aplicaciones de confianza, también debe realizar una instalación única del certificado en todos los equipos cliente. Para obtener más información, vea [Introducción a la implementación de aplicaciones de confianza](../deployment/trusted-application-deployment-overview.md).  
   
   > [!NOTE]
   >  También puede firmar la implementación con un certificado CNG que puede obtener de una entidad de certificación.  
@@ -151,7 +149,7 @@ Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../
   
 13. Si tiene un certificado almacenado como un archivo en el sistema de archivos, use el **firmar con archivo de certificado** opción y seleccione el certificado en el sistema de archivos mediante el uso de los puntos suspensivos (**...** ) botón. A continuación, escriba la contraseña del certificado.  
   
-     O bien  
+     o bien  
   
      Si el certificado se guarda en un almacén de certificados accesible desde el equipo, seleccione el **firmar con certificado almacenado** opción y seleccione el certificado de la lista proporcionada.  
   
@@ -179,7 +177,7 @@ Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../
   
 25. Si tiene un certificado almacenado como un archivo en el sistema de archivos, use el **firmar con archivo de certificado** opción y seleccione el certificado en el sistema de archivos mediante el uso de los puntos suspensivos (**...** ) botón. A continuación, escriba la contraseña del certificado.  
   
-     O bien  
+     o bien  
   
      Si el certificado se guarda en un almacén de certificados accesible desde el equipo, seleccione el **firmar con certificado almacenado** opción y seleccione el certificado de la lista proporcionada.  
   

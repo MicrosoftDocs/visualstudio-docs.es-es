@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: Comparar archivos de datos de rendimiento | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Comparar archivos de datos de rendimiento | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vsperf.choosediffbinaries
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eeb9f26091deaf995ef1221d39aa7264553f5c70
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 743184a0f28df90e703ce355ecf5c2642036d2ed
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815384"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961704"
 ---
-# <a name="how-to-compare-performance-data-files"></a>Cómo: Comparar archivos de datos de rendimiento
+# <a name="how-to-compare-performance-data-files"></a>Procedimiento Comparar archivos de datos de rendimiento
 Puede crear un informe o una vista de comparación ("Diff") para comparar los resultados de dos archivos de datos de generador de perfiles diferentes (.*vsp* o .*vsps*). La comparación muestra las diferencias, reducciones de rendimiento y mejoras producidas de una sesión de generación de perfiles a la otra.  
   
  El informe Diff presenta una vista de tabla de los datos. La tabla presenta el delta o cambio de la línea base. Esto se calcula determinando la diferencia entre el valor anterior, el valor de la línea base y el valor de resultado del nuevo análisis.  

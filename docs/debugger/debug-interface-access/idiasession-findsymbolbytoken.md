@@ -1,8 +1,6 @@
 ---
-title: Findsymbolbytoken | Documentos de Microsoft
-ms.custom: ''
+title: Findsymbolbytoken | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4758aeb569e0218d219ddca06042f4b32e61e467
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6115a2446b8a8a34fdd1531747fc52f74a96de5f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935983"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919287"
 ---
 # <a name="idiasessionfindsymbolbytoken"></a>IDiaSession::findSymbolByToken
 Recupera el símbolo que contiene un token de metadatos especificado.  
@@ -27,7 +25,7 @@ Recupera el símbolo que contiene un token de metadatos especificado.
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT findSymbolByToken (   
+HRESULT findSymbolByToken (   
    ULONG        token,  
    SymTagEnum   symtag,  
    IDiaSymbol** ppSymbol  

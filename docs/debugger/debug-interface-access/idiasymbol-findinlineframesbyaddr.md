@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::findInlineFramesByAddr | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b0ddc8e2ea4c4ba8e2f142a3f30ec1206a8abc4c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 2c5292771446890a4968c2b8b7988da7242edf14
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862377"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854703"
 ---
 # <a name="idiasymbolfindinlineframesbyaddr"></a>IDiaSymbol::findInlineFramesByAddr
 Recupera una enumeración que permite que un cliente recorrer en iteración todos los marcos en línea en una dirección determinada.  
@@ -25,7 +23,7 @@ Recupera una enumeración que permite que un cliente recorrer en iteración todo
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT findInlineFramesByAddr (   
+HRESULT findInlineFramesByAddr (   
    DWORD             isect,  
    DWORD             offset,  
    IDiaEnumSymbols** ppResult  
@@ -48,5 +46,5 @@ HRESULT findInlineFramesByAddr (
 ## <a name="see-also"></a>Vea también  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md)   
+ [Enumeración SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

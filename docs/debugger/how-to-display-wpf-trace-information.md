@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: mostrar información de seguimiento WPF | Documentos de Microsoft'
-ms.custom: ''
+title: Procedimiento Mostrar información de seguimiento WPF | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,49 +16,49 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99fc861c627a094f9f5e4e67a6b034ecdd407688
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 63708c133a4ce8c7deafc9c6861a9960d8327061
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476229"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893411"
 ---
-# <a name="how-to-display-wpf-trace-information"></a>Cómo: Mostrar información de seguimiento de WPF
-[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] puede recibir información de seguimiento de depuración de las aplicaciones de WPF y mostrar esa información en el **salida** ventana. Para mostrar información de seguimiento de depuración, debe estar habilitada la traza de WPF.  
+# <a name="how-to-display-wpf-trace-information"></a>Procedimiento Presentación de información de seguimiento de WPF
+[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] puede recibir información de seguimiento de la depuración de las aplicaciones WPF y mostrar esa información en la ventana **Salida**. Para mostrar la información de seguimiento de depuración, debe estar habilitada la traza de WPF.  
   
- Puede habilitar la traza de WPF en su archivo App.Config o, mediante programación, utilizando la clase <xref:System.Diagnostics.PresentationTraceSources>. Es una manera más fácil de habilitar la traza de WPF mediante la **opciones** ventana. No se admite la traza WPF en las aplicaciones web.  
+ Puede habilitar la traza de WPF en su archivo App.Config o, mediante programación, utilizando la clase <xref:System.Diagnostics.PresentationTraceSources>. Una manera más fácil de habilitar la traza de WPF es usar la ventana **Opciones**. No se admite la traza WPF en las aplicaciones web.  
   
 ### <a name="to-enable-or-customize-wpf-trace-information"></a>Para habilitar o personalizar la información de seguimiento de WPF  
   
 1.  En el menú **Herramientas**, seleccione **Opciones**.  
   
-2.  En el **opciones** cuadro de diálogo, en el cuadro de la izquierda, abra el **depuración** nodo.  
+2.  En el cuadro de diálogo **Opciones**, en el cuadro de la izquierda, abra el nodo **Depuración**.  
   
-3.  En **depuración**, haga clic en **resultados (ventana)**.  
+3.  En **Depuración**, haga clic en **Ventana de salida**.  
   
-4.  En **configuración General de salida**, seleccione **todos salida de depuración**.  
+4.  En **Configuración general de salida**, seleccione **Toda la salida de depuración**.  
   
-5.  En el cuadro de la derecha, busque **configuración de seguimiento de WPF**.  
+5.  En el cuadro de la derecha, busque **Configuración de seguimiento de WPF**.  
   
-6.  Abra la **configuración de seguimiento de WPF** nodo.  
+6.  Abra el nodo **Configuración de seguimiento de WPF**.  
   
-7.  En **configuración de seguimiento de WPF**, haga clic en la categoría de configuración que desea habilitar (por ejemplo, **enlace de datos**).  
+7.  En **Configuración de seguimiento de WPF**, haga clic en la categoría de valores que desea habilitar (por ejemplo, **Enlace de datos**).  
   
-     Un control de lista desplegable que aparece junto a en la columna configuración **enlace de datos** o cualquier categoría que hizo clic.  
+     Aparecerá un control de lista desplegable en la columna Configuración, al lado de **Enlace de datos** o de la categoría en la que haya hecho clic.  
   
-8.  Haga clic en la lista desplegable y seleccione el tipo de información de seguimiento que desea ver: **todos los**, **crítico**, **Error**, **advertencia**,  **Información**, **detallado**, o **ActivityTracing**.  
+8.  Haga clic en la lista desplegable y seleccione el tipo de información de seguimiento que desea ver: **Todos los**, **críticos**, **Error**, **advertencia**, **información**, **detallado**, o **ActivityTracing**.  
   
-     **Crítico** habilita la traza de sólo eventos críticos.  
+     **Critical** solo habilita la traza de los eventos críticos.  
   
-     **Error** habilita la traza de eventos críticos y de Error.  
+     **Error** habilita la traza de los eventos críticos y de error.  
   
-     **Advertencia** habilita la traza de críticos, de Error y eventos de advertencia.  
+     **Warning** habilita la traza de los eventos críticos, de error y de advertencia.  
   
-     **Información** habilita la traza de eventos crítico, Error, advertencia e informativos.  
+     **Information** habilita la traza de los eventos críticos, de error, de advertencia y de información.  
   
-     **Detallado** habilita la traza de eventos crítico, Error, advertencia, información y detallado.  
+     **Verbose** habilita la traza de los eventos críticos, de error, de advertencia, de información y detallados.  
   
-     **ActivityTracing** habilita la traza de eventos de detención, inicio, suspensión, transferencia y reanudar.  
+     **ActivityTracing** habilita la traza de los eventos de detención, inicio, suspensión, transferencia y reanudación.  
   
      Para obtener más información sobre el significado de estos niveles de información de seguimiento, vea <xref:System.Diagnostics.SourceLevels>.  
   
@@ -70,19 +68,19 @@ ms.locfileid: "31476229"
   
 1.  En el menú **Herramientas**, seleccione **Opciones**.  
   
-2.  En el **opciones** cuadro de diálogo, en el cuadro de la izquierda, abra el **depuración** nodo.  
+2.  En el cuadro de diálogo **Opciones**, en el cuadro de la izquierda, abra el nodo **Depuración**.  
   
-3.  En **depuración**, haga clic en **resultados (ventana)**.  
+3.  En **Depuración**, haga clic en **Ventana de salida**.  
   
-4.  En el cuadro de la derecha, busque **configuración de seguimiento de WPF**.  
+4.  En el cuadro de la derecha, busque **Configuración de seguimiento de WPF**.  
   
-5.  Abra la **configuración de seguimiento de WPF** nodo.  
+5.  Abra el nodo **Configuración de seguimiento de WPF**.  
   
-6.  En **configuración de seguimiento de WPF**, haga clic en la categoría de configuración que desea habilitar (por ejemplo, **enlace de datos**).  
+6.  En **Configuración de seguimiento de WPF**, haga clic en la categoría de valores que desea habilitar (por ejemplo, **Enlace de datos**).  
   
-     Un control de lista desplegable que aparece junto a en la columna configuración **enlace de datos** o cualquier categoría que hizo clic.  
+     Aparecerá un control de lista desplegable en la columna Configuración, al lado de **Enlace de datos** o de la categoría en la que haya hecho clic.  
   
-7.  Haga clic en la lista desplegable y seleccione **desactivar**.  
+7.  Haga clic en la lista desplegable y seleccione **Desactivado**.  
   
 8.  Haga clic en **Aceptar**.  
   

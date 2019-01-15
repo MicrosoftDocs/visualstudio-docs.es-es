@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: depurar un servicio WCF Autohospedado | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Depurar un servicio WCF Autohospedado | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,15 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 255ca0f7d472060d110135536d76de99dc46a18e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1a847071fa62e0ae168a5c830bd7f52a80edf740
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872127"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956132"
 ---
-# <a name="how-to-debug-a-self-hosted-wcf-service"></a>Cómo: Depurar un servicio WCF independiente
-Un *autohospedado servicio* es un servicio WCF que no se ejecuta dentro de IIS, el Host de servicio WCF o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] servidor de desarrollo. La manera más fácil de depurar un WCF autohospedado es configurar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para iniciar el cliente y servidor cuando se elige **Iniciar depuración** en el **depurar** menú.  
+# <a name="how-to-debug-a-self-hosted-wcf-service"></a>Procedimiento Depuración de un servicio WCF autohospedado
+Un *servicio que se hospeda a sí mismo* es un servicio WCF que no se ejecuta dentro de IIS, el host de servicio WCF o el servidor de desarrollo de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. La manera más fácil de depurar un WCF que se hospeda a sí mismo es configurar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para que inicie tanto el cliente como el servidor si elige **Iniciar depuración** en el menú **Depurar**.  
   
  Si el servicio WCF se hospeda a sí mismo dentro de un proceso que no se puede iniciar de esta manera, por ejemplo un servicio NT, no podrá utilizar este método. En su lugar, puede realizar uno de los siguientes procedimientos:  
   
@@ -41,21 +39,21 @@ Un *autohospedado servicio* es un servicio WCF que no se ejecuta dentro de IIS, 
   
 1. Cree una solución de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que contenga los proyectos de cliente y servidor.  
   
-2. Configurar la solución para iniciar los procesos de cliente y servidor cuando se elige **iniciar** en el **depurar** menú.  
+2. Configure la solución para iniciar los procesos de cliente y servidor al elegir **Inicio** en el menú **Depurar**.  
   
-   1.  En **el Explorador de soluciones**, haga clic en el nombre de la solución.  
+   1.  En el **Explorador de soluciones**, haga clic con el botón derecho del mouse en el nombre de la solución.  
   
    2.  Haga clic en **Establecer proyectos de inicio**.  
   
-   3.  En el **solución \<nombre > propiedades** cuadro de diálogo, seleccione **varios proyectos de inicio**.  
+   3.  En el cuadro de diálogo **Solución \<nombre> Propiedades**, seleccione **Proyectos de inicio múltiples**.  
   
-   4.  En el **varios proyectos de inicio** cuadrícula, en la línea que corresponde al proyecto de servidor, haga clic en **acción** y elija **iniciar**.  
+   4.  En la cuadrícula **Proyectos de inicio múltiples**, en la línea que corresponde al proyecto de servidor, haga clic en **Acción** y elija **Inicio**.  
   
-   5.  En la línea que corresponde al proyecto de cliente, haga clic en **acción** y elija **iniciar**.  
+   5.  En la línea que corresponde al proyecto de cliente, haga clic en **Acción** y elija **Inicio**.  
   
    6.  Haga clic en **Aceptar**.  
   
 ## <a name="see-also"></a>Vea también  
- [Depurar servicios WCF](../debugger/debugging-wcf-services.md)   
- [Limitaciones sobre la depuración de WCF](../debugger/limitations-on-wcf-debugging.md)   
- [Cómo: Ir a servicios WCF](../debugger/how-to-step-into-wcf-services.md)
+ [Depuración de servicios WCF](../debugger/debugging-wcf-services.md)   
+ [Limitaciones de la depuración de WCF](../debugger/limitations-on-wcf-debugging.md)   
+ [Cómo: Depuración paso a paso por instrucciones de servicios WCF](../debugger/how-to-step-into-wcf-services.md)

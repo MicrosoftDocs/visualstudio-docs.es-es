@@ -1,8 +1,6 @@
 ---
 title: Orden de compilación de destinos | Microsoft Docs
-ms.custom: ''
 ms.date: 09/04/2018
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, build order
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13405d197fc5ab64d4c7b7040580f073e36f98c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 96eb3aacfd83ad60ae6c0e0f1fa95209136307ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812665"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881531"
 ---
 # <a name="target-build-order"></a>Orden de compilación de destinos
 Los destinos se deben ordenar si la entrada a un destino depende de la salida de otro destino. Puede usar estos atributos para especificar el orden en el que se ejecutan los destinos:  
@@ -45,7 +43,7 @@ Los destinos se deben ordenar si la entrada a un destino depende de la salida de
   
  Los proyectos importados pueden tener sus propios atributos `InitialTargets`. Todos los destinos iniciales se agregan conjuntamente y se ejecutan en orden.  
   
- Para más información, consulte [Cómo: Especificar qué destino utilizar primero al compilar](../msbuild/how-to-specify-which-target-to-build-first.md).  
+ Para obtener más información, vea [Cómo: Especificar qué destino usar primero al compilar](../msbuild/how-to-specify-which-target-to-build-first.md).  
   
 ## <a name="default-targets"></a>Destinos predeterminados  
  El atributo `DefaultTargets` del elemento [Project](../msbuild/project-element-msbuild.md) especifica qué destinos se compilan si un destino no se especifica explícitamente en la línea de comandos.  
@@ -64,7 +62,7 @@ Los destinos se deben ordenar si la entrada a un destino depende de la salida de
   
  Los proyectos importados pueden tener sus propios atributos `DefaultTargets`. El primer atributo `DefaultTargets` encontrado determina qué destinos predeterminados se ejecutarán.  
   
- Para más información, consulte [Cómo: Especificar qué destino utilizar primero al compilar](../msbuild/how-to-specify-which-target-to-build-first.md).  
+ Para obtener más información, vea [Cómo: Especificar qué destino usar primero al compilar](../msbuild/how-to-specify-which-target-to-build-first.md).  
   
 ## <a name="first-target"></a>Primer destino  
  Si no hay destinos iniciales, destinos predeterminados ni destinos de línea de comandos, MSBuild ejecuta el primer destino que encuentra en el archivo del proyecto o en cualquier archivo del proyecto importado.  

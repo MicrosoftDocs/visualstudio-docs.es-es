@@ -3,7 +3,6 @@ title: Medición del rendimiento con herramientas de generación de perfiles
 description: Eche un vistazo breve a las distintas herramientas de diagnóstico disponibles en Visual Studio.
 ms.custom: mvc
 ms.date: 05/18/2017
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - diagnostic tools
@@ -13,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f884b92d03027782eed27f4583e06b1141341db
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 9cfa2bcb98e686c04af359900a3c925686659df5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356800"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880317"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Inicio rápido: Un primer vistazo a las herramientas de generación de perfiles
 
@@ -168,4 +167,4 @@ En esta tabla se muestra una lista de las distintas herramientas que ofrece Visu
 |[Memoria de JavaScript](../profiling/javascript-memory.md)|No|sí para HTML, no para XAML|No|
 
 ## <a name="see-also"></a>Vea también  
- [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md)
+ [Depurar en Visual Studio](/visualstudio/debugger/debugger-feature-tour)

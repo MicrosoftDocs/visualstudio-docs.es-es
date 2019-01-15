@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: Limpiar una compilación | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Limpiar una compilación | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - Exec task [MSBuild]
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9d039d6f6f5593538063e751348148786667000
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: ddd4158561b0bac7ea3347738f13f0f9530002ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879062"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841137"
 ---
-# <a name="how-to-clean-a-build"></a>Cómo: Limpiar una compilación
+# <a name="how-to-clean-a-build"></a>Procedimiento Limpiar una compilación
 Cuando se limpia una compilación, se eliminan todos los archivos intermedios y de salida, de modo que solo queden los archivos de proyecto y de componentes. A partir de los archivos de proyecto y de componentes, se pueden compilar nuevas instancias de archivos intermedios y de salida. La biblioteca de tareas comunes que se proporciona con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] incluye una tarea [Exec](../msbuild/exec-task.md) que se puede usar para ejecutar comandos del sistema. Para obtener más información sobre la biblioteca de tareas, vea [Referencia de tareas](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="create-a-directory-for-output-items"></a>Crear un directorio de elementos de salida  

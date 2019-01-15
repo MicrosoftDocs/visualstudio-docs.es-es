@@ -1,8 +1,6 @@
 ---
 title: Get_noreturn | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fc0410c045a42412866d1c85f84b13aa6acd796
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 817d515d9ab744ec7be146e6ee39373cb7d2d2ee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846114"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863881"
 ---
 # <a name="idiasymbolgetnoreturn"></a>IDiaSymbol::get_noReturn
 Recupera una marca que especifica si la función se ha marcado como nunca se devuelve con el [noreturn](/cpp/cpp/noreturn) atributo.  
@@ -46,7 +44,7 @@ HRESULT get_noReturn(
   
 |Requisito|Descripción|  
 |-----------------|-----------------|  
-|Encabezado:|Dia2.h|  
+|Encabezado:|dia2.h|  
 |Versión:|SDK de DIA v8.0|  
   
 ## <a name="see-also"></a>Vea también  

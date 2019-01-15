@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: Exportar una textura que contiene mapas MIP'
+title: Procedimiento Exportar una textura que contiene mapas MIP
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 3d1ad14b-44fb-4cf0-a995-5e2f60026524
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67eb30f340afcd2f8e631170fc84fd00f5a9d43c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7bddd2eec1da77ad6f128f6010e485b7efaf1866
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831334"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836642"
 ---
-# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Cómo: Exportar una textura que contiene mapas MIP
+# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Procedimiento Exportar una textura que contiene mapas MIP
 
 La canalización de contenido de la imagen puede generar mapas MIP a partir de una imagen de origen como parte de la fase de compilación del proyecto. Para lograr determinados efectos, a veces hay que especificar manualmente el contenido de la imagen de cada nivel de MIP. Cuando no es necesario especificar manualmente el contenido de la imagen de cada nivel de MIP, generar asignaciones MIP en tiempo de compilación garantiza que el contenido de la asignación MIP se mantiene siempre sincronizado. También elimina el costo de rendimiento derivado de generar asignaciones MIP en tiempo de ejecución.
 
@@ -33,7 +32,7 @@ Los mapas MIP proporcionan el nivel de detalle del espacio de pantalla automáti
 
 ### <a name="to-export-a-texture-that-has-mipmaps"></a>Para exportar una textura que tiene mapas MIP
 
-1. Comience con una textura básica. Cargue un archivo de imagen existente o cree uno como se describe en [Cómo: Crear una textura básica](../designers/how-to-create-a-basic-texture.md). Para admitir mapas MIP, especifique una textura con un ancho y un alto que sean ambos la misma potencia de dos de tamaño, por ejemplo, 64x64, 256x256 o 512x512.
+1. Comience con una textura básica. Cargue un archivo de imagen existente o cree uno como se explica en [Cómo: Crear una textura básica](../designers/how-to-create-a-basic-texture.md). Para admitir mapas MIP, especifique una textura con un ancho y un alto que sean ambos la misma potencia de dos de tamaño, por ejemplo, 64x64, 256x256 o 512x512.
 
 2. Configure el archivo de textura que acaba de crear para que sea procesado por la canalización de contenido de imagen. En el **Explorador de soluciones**, abra el menú contextual del archivo de textura que ha creado y seleccione **Propiedades**. En la página **Propiedades de configuración** > **General**, establezca la propiedad **Tipo de elemento** en **Canalización de contenido de la imagen**. Asegúrese de que la propiedad **Contenido** esté establecida en **Sí** y **Excluir de la compilación** esté establecido en **No**. Seleccione **Aplicar**.
 

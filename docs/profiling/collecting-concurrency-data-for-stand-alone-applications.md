@@ -1,8 +1,6 @@
 ---
 title: Recopilar datos de simultaneidad para aplicaciones independientes mediante la línea de comandos del generador de perfiles | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - concurrency profiling method
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7966bcffff03c23b99837ba69f591d76258146c
-ms.sourcegitcommit: 4400926d00b5f5d52f03cb5d6f8a582d6049ecd9
+ms.openlocfilehash: 1792af9740d30617d44d823e3abf01795fd05682
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "39276486"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947093"
 ---
 # <a name="collect-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Recopilar datos de simultaneidad para aplicaciones independientes mediante la línea de comandos del generador de perfiles
 El método de simultaneidad de herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite recopilar datos de contención de recursos y de actividad de subprocesos que muestran el uso de CPU, la contención de subprocesos, la migración de subprocesos, los retrasos de sincronización, las áreas de E/S superpuesta y otros eventos del sistema.  
@@ -28,10 +26,10 @@ El método de simultaneidad de herramientas de generación de perfiles de [!INCL
   
 |Tarea|Contenido relacionado|  
 |----------|---------------------|  
-|**Iniciar una aplicación de .NET Framework y generar perfiles de datos de simultaneidad**|-   [Cómo: Iniciar una aplicación de .NET Framework para recopilar datos de simultaneidad](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md)|  
-|**Iniciar una aplicación de C o C++ y generar perfiles de datos de simultaneidad**|-   [Cómo: Iniciar una aplicación nativa para recopilar datos de simultaneidad](../profiling/how-to-launch-a-stand-alone-native-application-to-collect-concurrency-data.md)|  
-|**Adjuntar el generador de perfiles a una aplicación de .NET Framework en ejecución**|-   [Cómo: Adjuntar el generador de perfiles a una aplicación de .NET Framework para recopilar datos de simultaneidad](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md)|  
-|**Adjuntar el generador de perfiles a una aplicación de C o C++ en ejecución**|-   [Cómo: Adjuntar el generador de perfiles a una aplicación nativa y recopilar datos de simultaneidad](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md)|  
+|**Iniciar una aplicación de .NET Framework y generar perfiles de datos de simultaneidad**|-   [Cómo: Iniciar una aplicación de .NET Framework independiente con el generador de perfiles para recopilar datos de simultaneidad](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md)|  
+|**Iniciar una aplicación de C o C++ y generar perfiles de datos de simultaneidad**|-   [Cómo: Iniciar una aplicación nativa independiente con el generador de perfiles para recopilar datos de simultaneidad](../profiling/how-to-launch-a-stand-alone-native-application-to-collect-concurrency-data.md)|  
+|**Adjuntar el generador de perfiles a una aplicación de .NET Framework en ejecución**|-   [Cómo: Asociar el generador de perfiles a una aplicación independiente de .NET Framework para recopilar datos de simultaneidad](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md)|  
+|**Adjuntar el generador de perfiles a una aplicación de C o C++ en ejecución**|-   [Cómo: Asociar el generador de perfiles a una aplicación nativa independiente y recopilar datos de simultaneidad](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md)|  
   
 ## <a name="related-tasks"></a>Tareas relacionadas
   

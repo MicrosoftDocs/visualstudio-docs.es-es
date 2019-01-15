@@ -1,8 +1,6 @@
 ---
 title: 'Tutorial: Descargar ensamblados satélite a petición con la API mediante el Diseñador de implementación de ClickOnce | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79c5616a9233466c71ca036c4c0cb70d43649979
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: db13440155ca27c9a71e523cea4f0ef69b9eaacf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154864"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925816"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Tutorial: Descargar ensamblados satélite a petición con la API mediante el Diseñador de implementación de ClickOnce
 Las aplicaciones de Windows Forms pueden configurarse para varias referencias culturales utilizando ensamblados satélite. Un *ensamblado satélite* es un ensamblado que contiene los recursos de aplicación para una referencia cultural que no sea la referencia cultural predeterminada de la aplicación.  
@@ -43,21 +41,21 @@ Las aplicaciones de Windows Forms pueden configurarse para varias referencias cu
   
 1.  Compilar el proyecto. Esto generará los ensamblados satélite para todas las referencias culturales a las que vaya a realizar la localización.  
   
-2.  Haga doble clic en el nombre del proyecto en el Explorador de soluciones y haga clic en **propiedades**.  
+2.  Haga clic con el botón derecho en el nombre del proyecto en el Explorador de soluciones y, a continuación, haga clic en **Propiedades**.  
   
-3.  Haga clic en el **publicar** pestaña y, a continuación, haga clic en **archivos de la aplicación**.  
+3.  Haga clic en la pestaña **Publicar** y, a continuación, haga clic en **Archivos de aplicación**.  
   
-4.  Seleccione el **mostrar todos los archivos** casilla de verificación para mostrar los ensamblados satélite. De forma predeterminada, todos los ensamblados satélite se incluirán en la implementación y estarán visibles en este cuadro de diálogo.  
+4.  Seleccione la casilla **Mostrar todos los archivos** para que se muestren los ensamblados satélite. De forma predeterminada, todos los ensamblados satélite se incluirán en la implementación y estarán visibles en este cuadro de diálogo.  
   
-     Un ensamblado satélite tendrá un nombre en el formulario  *\<isoCode > \ApplicationName.resources.dll*, donde \<isoCode > es un identificador de idioma en formato RFC 1766.  
+     El nombre de los ensamblados satélite tiene la siguiente forma: *\<isoCode\ApplicationName.resources.dll*, donde \<isoCode> es un identificador de idioma en formato RFC 1766.  
   
-5.  Haga clic en **New** en el **grupo de descarga** lista para cada identificador de idioma. Cuando se le pida un nombre de grupo de descarga, escriba el identificador de idioma. Por ejemplo, para un ensamblado satélite japonés, especificaría el nombre del grupo de descarga `ja-JP`.  
+5.  Haga clic en **Nuevo** en la lista **Grupo de descarga** para cada identificador de idioma. Cuando se le pida un nombre de grupo de descarga, escriba el identificador de idioma. Por ejemplo, para un ensamblado satélite japonés, especificaría el nombre del grupo de descarga `ja-JP`.  
   
-6.  Cerrar la **archivos de la aplicación** cuadro de diálogo.  
+6.  Cierre el cuadro de diálogo **Archivos de aplicación**.  
   
 ### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>Para descargar ensamblados satélite a petición en C# 
   
-1.  Abra el archivo *Program.cs*. Si no ve este archivo en el Explorador de soluciones, seleccione el proyecto y en el **proyecto** menú, haga clic en **mostrar todos los archivos**.  
+1.  Abra el archivo *Program.cs*. Si no ve este archivo en el Explorador de soluciones, seleccione el proyecto y en el menú **Proyecto** haga clic en **Mostrar todos los archivos**.  
   
 2.  Utilice el código siguiente para descargar el ensamblado satélite adecuado e iniciar la aplicación.  
   
@@ -65,15 +63,15 @@ Las aplicaciones de Windows Forms pueden configurarse para varias referencias cu
   
 ### <a name="to-download-satellite-assemblies-on-demand-in-visual-basic"></a>Para descargar ensamblados satélite a petición en Visual Basic  
   
-1.  En el **propiedades** ventana de la aplicación, haga clic en el **aplicación** ficha.  
+1.  En la ventana **Propiedades** de la aplicación haga clic en la pestaña **Aplicación**.  
   
-2.  En la parte inferior de la página de ficha, haga clic en **ver eventos de aplicación**.  
+2.  En la parte inferior de la ficha, haga clic en **Ver eventos de aplicaciones**.  
   
-3.  Agregue las siguientes importaciones al principio de la *ApplicationEvents.VB* archivo.  
+3.  Agregue las siguientes importaciones al principio del archivo *ApplicationEvents.VB*.  
   
      [!code-vb[ClickOnce.SatelliteAssembliesVB#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.vb)]  
   
-4.  Agregue el código siguiente a la clase `MyApplication`.  
+4.  Agregue el código siguiente a la clase `MyApplication` .  
   
      [!code-vb[ClickOnce.SatelliteAssembliesVB#2](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_3.vb)]  
   
@@ -82,4 +80,4 @@ Las aplicaciones de Windows Forms pueden configurarse para varias referencias cu
   
 ## <a name="see-also"></a>Vea también  
  [Tutorial: Descargar ensamblados satélite a petición con la API de implementación de ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)   
- [Localizar aplicaciones ClickOnce](../deployment/localizing-clickonce-applications.md)
+ [Localización de aplicaciones ClickOnce](../deployment/localizing-clickonce-applications.md)

@@ -1,8 +1,6 @@
 ---
 title: Recopilar datos de memoria de servicios de .NET Framework mediante la línea de comandos del generador de perfiles | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: b1361333-8a09-4a65-87a9-4ac94ceb2d9f
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8989209a5abefb05f0f3f9b90357ab0f2a895786
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d9b76f779af88a6ad02dc61d73a0beb31691c03a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690905"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902729"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Recopilar datos de memoria de servicios de .NET Framework utilizando la línea de comandos del generador de perfiles
 En esta sección se describen los procedimientos y las opciones para recopilar datos de asignación de memoria y de duración de objetos para un servicio [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] mediante el método de muestreo desde la línea de comandos.  
@@ -24,7 +22,7 @@ En esta sección se describen los procedimientos y las opciones para recopilar d
   
 |Tarea|Contenido relacionado|  
 |----------|---------------------|  
-|**Adjuntar el generador de perfiles a un servicio de .NET**|-   [Cómo: Adjuntar el generador de perfiles a un servicio de .NET Framework para recopilar datos de memoria](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|  
+|**Adjuntar el generador de perfiles a un servicio de .NET**|-   [Cómo: Asociar el generador de perfiles a un servicio .NET para recopilar datos de memoria](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|  
 |**Instrumentar un servicio de .NET y recopilar datos de memoria de .NET**|-   [Cómo: Instrumentar un servicio de .NET Framework y recopilar datos de memoria](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
 |**Agregar datos de interacción de capas**|-   [Recopilación de datos de interacción de capas](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   

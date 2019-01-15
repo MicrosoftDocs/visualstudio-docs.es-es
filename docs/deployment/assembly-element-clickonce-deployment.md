@@ -1,8 +1,6 @@
 ---
 title: '&lt;ensamblado&gt; elemento (implementación ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assembly
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c9d72eafb03f22a01d22894bb887085648c324e3
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 10e9119f54eeb428e94b9e9055b9845fbc7cb9a2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080638"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899829"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;ensamblado&gt; elemento (implementación ClickOnce)
 El elemento de nivel superior para el manifiesto de implementación.  
@@ -32,19 +30,19 @@ El elemento de nivel superior para el manifiesto de implementación.
   
 ```xml  
   
-      <assembly    
+      <assembly    
    manifestVersion  
 />  
 ```  
   
-## <a name="elements-and-attributes"></a>Los elementos y atributos  
+## <a name="elements-and-attributes"></a>Elementos y atributos  
  El `assembly` es el elemento raíz y es necesario. Su primer elemento contenido debe ser un `assemblyIdentity` elemento. Los elementos del manifiesto deben estar en los espacios de nombres siguientes: `urn:schemas-microsoft-com:asm.v1`, `urn:schemas-microsoft-com:asm.v2`, y `http://www.w3.org/2000/09/xmldsig#`. También deben ser elementos secundarios del ensamblado en estos espacios de nombres, mediante herencia o etiquetado.  
   
- El `assembly` elemento tiene el siguiente atributo.  
+ El elemento `assembly` tiene los atributos siguientes:  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`manifestVersion`|Requerido. Este atributo debe establecerse en `1.0`.|  
+|`manifestVersion`|Obligatorio. Este atributo debe establecerse en `1.0`.|  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo de código siguiente se ilustra un `assembly` elemento en un manifiesto de implementación para una aplicación implementada mediante [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Este ejemplo de código forma parte de un ejemplo más extenso proporcionado para el [del manifiesto de implementación ClickOnce](../deployment/clickonce-deployment-manifest.md) tema.  

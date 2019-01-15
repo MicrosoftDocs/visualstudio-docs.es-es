@@ -26,7 +26,7 @@ El **vista** menú proporciona comandos para controlar la Spy ++ interfaz de usu
  **Toolbar**  
  Oculta o muestra la barra de herramientas.  
   
- Barra de estado  
+ **Barra de estado**  
  Oculta o muestra la barra de estado.  
   
  **Propiedades**  

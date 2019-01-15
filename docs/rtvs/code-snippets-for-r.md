@@ -3,19 +3,18 @@ title: Fragmentos de código para R
 description: Los fragmentos de código para R en Visual Studio ofrecen accesos directos para insertar rápidamente bloques de código de cualquier longitud, lo que evita que tenga que escribir código similar una y otra vez.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 0c9db243b3903ddcbaa310bbf5ba3fd911eee7fc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0b9a06a747fb0169c22f251c1beb22dad3b86c9e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667735"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860902"
 ---
 # <a name="code-snippets"></a>Fragmentos de código
 
@@ -38,7 +37,7 @@ Para ver todos los fragmentos de código disponibles, abra el cuadro de diálogo
 
 ![Cuadro de diálogo Fragmentos de código de R](media/code-snippet-dialog.png)
 
-Para crear fragmentos de código personalizados, siga las instrucciones en [Tutorial: Crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md). Por último, un fragmento de código es solo un archivo XML. Por ejemplo, el siguiente código es el fragmento de código de la operación de canalización (acceso directo `>`):
+Para crear fragmentos de código personalizados, siga las instrucciones de [Tutorial: Creación de un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md). Por último, un fragmento de código es solo un archivo XML. Por ejemplo, el siguiente código es el fragmento de código de la operación de canalización (acceso directo `>`):
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

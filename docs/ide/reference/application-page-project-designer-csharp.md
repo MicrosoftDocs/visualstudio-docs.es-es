@@ -2,7 +2,6 @@
 title: Página Aplicación de propiedades de proyecto de C#
 ms.date: 10/30/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesApplicationWPF
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6ac755bfab72a2e87b652bfb92d3343b46ff45dc
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: cd8b2de9d4e878a524ee5c1e012e26c8d2224957
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672826"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850932"
 ---
 # <a name="application-page-project-designer-c"></a>Página de aplicación, Diseñador de proyectos (C#)
 

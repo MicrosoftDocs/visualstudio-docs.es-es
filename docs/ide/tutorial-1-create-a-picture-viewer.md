@@ -1,9 +1,7 @@
 ---
 title: 'Tutorial 1: Crear un visor de imágenes'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 author: TerryGLee
@@ -11,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 966634ee9a71854334bdd5342326c1663b9ad16c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 8f44174f98c69f05cf7a0030e642dc9d9e065201
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672163"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861655"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Crear un visor de imágenes
 
@@ -44,7 +42,7 @@ Cuando termine, el programa se parecerá al de la ilustración siguiente:
 
 Para descargar una versión completa del ejemplo, vea [Complete Picture Viewer tutorial sample](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8) (Ejemplo completo del tutorial de visor de imágenes).
 
-![vínculo al vídeo](../data-tools/media/playvideo.gif)Para obtener una versión en vídeo de este tema, vea [Tutorial: Crear un visor de imágenes en Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205207) o [Tutorial: Crear un visor de imágenes en C#](http://go.microsoft.com/fwlink/?LinkId=205198).
+![vínculo al vídeo](../data-tools/media/playvideo.gif) Para obtener una versión en vídeo de este tema, vea [Cómo: Crear un visor de imágenes en Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205207) o [Cómo: Crear un visor de imágenes en C#](http://go.microsoft.com/fwlink/?LinkId=205198).
 
 > [!NOTE]
 > En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio. En este tutorial, se trata tanto Visual C# como Visual Basic, por lo que deberá centrarse en la información específica del lenguaje de programación que use.

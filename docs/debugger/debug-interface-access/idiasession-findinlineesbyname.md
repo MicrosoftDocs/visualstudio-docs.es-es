@@ -1,8 +1,6 @@
 ---
 title: IDiaSession::findInlineesByName | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47d01237d7e2235f2d50e82a8fd599384e930d2c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c81bc9c82c2e6056284e63a7391c202c760022b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896268"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951097"
 ---
 # <a name="idiasessionfindinlineesbyname"></a>IDiaSession::findInlineesByName
 Recupera una enumeración que permite que un cliente iterar por la información de número de línea de todas las funciones insertadas que coinciden con un nombre especificado.  
@@ -25,7 +23,7 @@ Recupera una enumeración que permite que un cliente iterar por la información 
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT findInlineesByName (   
+HRESULT findInlineesByName (   
    LPCOLESTR             name,  
    DWORD                 option,  
    IDiaEnumLineNumbers** ppResult  
@@ -49,5 +47,5 @@ HRESULT findInlineesByName (
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md)   
+ [Enumeración SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

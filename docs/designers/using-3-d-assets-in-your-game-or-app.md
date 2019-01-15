@@ -2,7 +2,6 @@
 title: Uso de recursos en 3D en un juego o una aplicación
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - VC.Project.ImageContentTask.ContentOutput
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b41416ea923e8f14aa39bf1607ad7c349e0b149c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d346982d682305f3c80531bd4386fbefda536a9f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880683"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986770"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>Usar recursos en 3D en un juego o una aplicación
 
@@ -95,7 +94,7 @@ Cuando se utiliza la herramienta de canalización de contenido de la imagen para
 |**Compress**|Especifica el tipo de compresión que se utiliza para el archivo de salida.<br /><br /> Las opciones disponibles son:<br /><br /> -   **Sin compresión**<br />-   **Compresión BC1_UNORM**<br />-   **Compresión BC1_UNORM_SRGB**<br />-   **Compresión BC2_UNORM**<br />-   **Compresión BC2_UNORM_SRGB**<br />-   **Compresión BC3_UNORM**<br />-   **Compresión BC3_UNORM_SRGB**<br />-   **Compresión BC4_UNORM**<br />-   **Compresión BC4_SNORM**<br />-   **Compresión BC5_UNORM**<br />-   **Compresión BC5_SNORM**<br />-   **Compresión BC6H_UF16**<br />-   **Compresión BC6H_SF16**<br />-   **Compresión BC7_UNORM**<br />-   **Compresión BC7_UNORM_SRGB**<br /><br /> Para obtener información sobre qué formatos de compresión se admiten en las diferentes versiones de DirectX, vea la [Guía de programación para DXGI](http://go.microsoft.com/fwlink/p/?LinkId=246265).|
 |Convertir a formato alpha premultiplicado|**Sí** para convertir la imagen al formato alfa premultiplicado en el archivo de salida, de lo contrario, **No**. Solo se cambia el archivo de salida, la imagen original no se cambia.|
 |**Generar MIP**|**Sí** para generar una cadena completa de mapas MIP en tiempo de compilación e incluirla en el archivo de salida; de lo contrario, **No**. Si es **No** y el archivo de código fuente ya contiene una cadena de mapas MIP, el archivo de salida tendrá una cadena de mapas MIP; de lo contrario, el archivo de salida no tendrá ninguna cadena de mapas MIP.|
-|**Salida de contenido**|Especifica el nombre del archivo de salida. **Importante:** Cambiar la extensión del nombre del archivo de salida no tiene ningún efecto sobre el formato del archivo.|
+|**Salida de contenido**|Especifica el nombre del archivo de salida. **Importante:**  Cambiar la extensión del nombre del archivo de salida no tiene ningún efecto sobre el formato del archivo.|
 
 ### <a name="mesh-content-pipeline-configuration"></a>Configuración de la canalización de contenido de mallas
 
@@ -103,7 +102,7 @@ Cuando se utiliza la herramienta de canalización de contenido de mallas para co
 
 |Propiedad.|Descripción|
 |--------------|-----------------|
-|**Salida de contenido**|Especifica el nombre del archivo de salida. **Importante:** Cambiar la extensión del nombre del archivo de salida no tiene ningún efecto sobre el formato del archivo.|
+|**Salida de contenido**|Especifica el nombre del archivo de salida. **Importante:**  Cambiar la extensión del nombre del archivo de salida no tiene ningún efecto sobre el formato del archivo.|
 
 ### <a name="shader-content-pipeline-configuration"></a>Configuración de la canalización de contenido del sombreador
 
@@ -111,13 +110,13 @@ Cuando se utiliza la herramienta de canalización de contenido del sombreador pa
 
 |Propiedad.|Descripción|
 |--------------|-----------------|
-|**Salida de contenido**|Especifica el nombre del archivo de salida. **Importante:** Cambiar la extensión del nombre del archivo de salida no tiene ningún efecto sobre el formato del archivo.|
+|**Salida de contenido**|Especifica el nombre del archivo de salida. **Importante:**  Cambiar la extensión del nombre del archivo de salida no tiene ningún efecto sobre el formato del archivo.|
 
 ## <a name="load-and-use-3d-assets-at-run-time"></a>Cargar y usar recursos 3D en tiempo de ejecución
 
 ### <a name="use-textures-and-images"></a>Utilizar texturas e imágenes
 
-Direct3D proporciona funciones para crear recursos de textura. En Direct3D 11, la biblioteca de utilidades D3DX11 proporciona funciones adicionales para crear recursos de texturas y vistas de recursos de textura directamente a partir de archivos de imagen. Para más información sobre cómo crear un recurso de textura en Direct3D 11, vea [Texturas](http://go.microsoft.com/fwlink/p/?LinkID=246267). Para obtener más información sobre cómo usar la biblioteca D3DX11 para crear un recurso o una vista de recursos de textura a partir de un archivo de imagen, vea [How to: Initialize a texture from a file](http://go.microsoft.com/fwlink/p/?LinkId=246268) (Cómo: Inicializar una textura a partir de un archivo).
+Direct3D proporciona funciones para crear recursos de textura. En Direct3D 11, la biblioteca de utilidades D3DX11 proporciona funciones adicionales para crear recursos de texturas y vistas de recursos de textura directamente a partir de archivos de imagen. Para más información sobre cómo crear un recurso de textura en Direct3D 11, vea [Texturas](http://go.microsoft.com/fwlink/p/?LinkID=246267). Para obtener más información sobre cómo usar la biblioteca D3DX11 para crear un recurso o una vista de recursos de textura a partir de un archivo de imagen, vea [How to: Initialize a texture from a file](http://go.microsoft.com/fwlink/p/?LinkId=246268) (Cómo inicializar una textura a partir de un archivo).
 
 ### <a name="use-3d-models"></a>Usar modelos 3D
 
@@ -208,8 +207,8 @@ cbuffer MiscVars : register(b3)
 
 |Title|Descripción|
 |-----------|-----------------|
-|[Cómo: exportar una textura que contiene mapas MIP](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Describe cómo utilizar la canalización de contenido de la imagen para exportar una textura que contiene mapas MIP calculados previamente.|
-|[Cómo: exportar una textura que tiene valores alfa previamente multiplicados](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Describe cómo utilizar la canalización de contenido de imagen para exportar una textura que contiene valores alfa multiplicados previamente.|
-|[Cómo: exportar una textura para usarla con aplicaciones de Direct2D o Javascipt](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Describe cómo utilizar la canalización de contenido de la imagen para exportar una textura que se puede utilizar en una aplicación de Direct2D o JavaScript.|
+|[Cómo: Exportar una textura que contiene mapas MIP](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Describe cómo utilizar la canalización de contenido de la imagen para exportar una textura que contiene mapas MIP calculados previamente.|
+|[Cómo: Exportar una textura que tiene valores alfa previamente multiplicados](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Describe cómo utilizar la canalización de contenido de imagen para exportar una textura que contiene valores alfa multiplicados previamente.|
+|[Cómo: Exportar una textura para usarla con aplicaciones de Direct2D o Javascipt](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Describe cómo utilizar la canalización de contenido de la imagen para exportar una textura que se puede utilizar en una aplicación de Direct2D o JavaScript.|
 |[Trabajar con activos 3D para juegos y aplicaciones](../designers/working-with-3-d-assets-for-games-and-apps.md)|Describe las herramientas de edición que proporciona Visual Studio para crear y manipular recursos 3D, que incluyen texturas e imágenes, modelos 3D y sombreadores.|
-|[Cómo: exportar un sombreador](../designers/how-to-export-a-shader.md)|Describe cómo exportar un sombreador desde el Diseñador de sombras.|
+|[Cómo: Exportar un sombreador](../designers/how-to-export-a-shader.md)|Describe cómo exportar un sombreador desde el Diseñador de sombras.|

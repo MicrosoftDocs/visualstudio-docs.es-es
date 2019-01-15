@@ -1,8 +1,6 @@
 ---
-title: Depurar proyectos DLL | Microsoft Docs
-ms.custom: ''
+title: Depuración de proyectos DLL | Microsoft Docs
 ms.date: 11/06/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f35a04620da94efca70fb33933f3940005996e29
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: baca738ef60ae727db852d00ed821e024f62c22f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561699"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871643"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Depurar archivos DLL en Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -123,7 +121,7 @@ Para depurar un archivo DLL desde una aplicación que realiza la llamada, hacer 
   
 Antes de iniciar la depuración de la aplicación que realiza la llamada, establezca un punto de interrupción en el archivo DLL. Consulte [usar puntos de interrupción](../debugger/using-breakpoints.md). Cuando se alcanza el punto de interrupción de archivo DLL, puede avanzar por el código, observando la acción en cada línea. Para obtener más información, consulte [navegar por el código en el depurador](../debugger/navigating-through-code-with-the-debugger.md).
   
-Durante la depuración, puede usar el **módulos** ventana para comprobar los archivos DLL y *.exe* archivos se cargue la aplicación. Para abrir el **módulos** ventana, durante la depuración, seleccione **depurar** > **Windows** > **módulos**. Para obtener más información, vea [Cómo: Utilice la ventana módulos](../debugger/how-to-use-the-modules-window.md). 
+Durante la depuración, puede usar el **módulos** ventana para comprobar los archivos DLL y *.exe* archivos se cargue la aplicación. Para abrir el **módulos** ventana, durante la depuración, seleccione **depurar** > **Windows** > **módulos**. Para obtener más información, vea [Cómo: Uso de la ventana Módulos](../debugger/how-to-use-the-modules-window.md). 
 
 ###  <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> Utilice la ventana Inmediato  
 

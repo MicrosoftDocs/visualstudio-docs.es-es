@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: Elegir eventos de muestreo | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Elegir eventos de muestreo | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.sampling
@@ -20,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8af903abb15d06d8d76d73cca4a9c337d45ee45
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 7cb4e501985d5a9043d381e02acbe70a45d0ee22
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765637"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962972"
 ---
-# <a name="how-to-choose-sampling-events"></a>Cómo: Elegir eventos de muestreo
+# <a name="how-to-choose-sampling-events"></a>Procedimiento Elegir eventos de muestreo
 De forma predeterminada, las herramientas de generación de perfiles [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] recopilan datos de rendimiento en un intervalo especificado como un número de ciclos de procesador que utiliza el proceso del que se genera el perfil. El número predeterminado de ciclos en un intervalo es de 10 000 000, que es aproximadamente 0,01 segundos en un equipo de 1 GH. Puede cambiar el número de ciclos en un intervalo, así como el evento de muestras. Los siguientes eventos de muestras están disponibles:  
   
 -   Ciclos de reloj: para problemas relacionados con la CPU.  

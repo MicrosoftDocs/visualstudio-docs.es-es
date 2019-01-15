@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: Limitar la instrumentación a archivos DLL específicos | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Limitar la instrumentación a archivos DLL específicos | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, runtime profiling control window
@@ -11,14 +9,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aefa0d5953d1e8d61615ac5bfe0af136082c96f3
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: c20dde749f95a24c6d83c7b6693220a5552f89fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843954"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885173"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Cómo: Limitar la instrumentación a archivos DLL específicos
+# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Procedimiento Limitar la instrumentación a archivos DLL específicos
 
 El método de generación de perfiles de instrumentación permite limitar la recopilación de datos de generación de perfiles a uno o más archivos DLL en una aplicación. Para generar perfiles de uno o más archivos DLL en una aplicación, debe crearse una sesión de rendimiento que incluya los archivos .*dll* como destinos. Se pueden especificar los archivos DLL de los que se desea generar perfiles como proyectos de una solución de Visual Studio o como archivos binarios independientes.
 
@@ -72,4 +70,4 @@ El método de generación de perfiles de instrumentación permite limitar la rec
 ## <a name="see-also"></a>Vea también
 
 [Control de la recopilación de datos](../profiling/controlling-data-collection.md)  
-[Limitación de la instrumentación a funciones específicas](../profiling/how-to-limit-instrumentation-to-specific-functions.md)
+[Cómo: Limitar la instrumentación a funciones específicas](../profiling/how-to-limit-instrumentation-to-specific-functions.md)

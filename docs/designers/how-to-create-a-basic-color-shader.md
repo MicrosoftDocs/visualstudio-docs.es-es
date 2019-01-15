@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: Crear un sombreador de color básico'
+title: Procedimiento Crear un sombreador de color básico
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88a5b14d98dc9459aa0d0f87a4ddba52de18ac06
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: d81bbc96e2191d7e637c63a3d28364f957ed5e55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924361"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950860"
 ---
-# <a name="how-to-create-a-basic-color-shader"></a>Cómo: Crear un sombreador de color básico
+# <a name="how-to-create-a-basic-color-shader"></a>Procedimiento Crear un sombreador de color básico
 
 En este artículo se muestra cómo usar el Diseñador de sombras y el lenguaje DGSL (Directed Graph Shader Language) para crear un sombreador de color plano. Este sombreador establece el color final en un valor de color RGB constante.
 
@@ -48,7 +47,7 @@ Es posible que algunas formas proporcionen mejores vistas previas para algunos s
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Cómo: exportar un sombreador](../designers/how-to-export-a-shader.md)
+- [Cómo: Aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Cómo: Exportar un sombreador](../designers/how-to-export-a-shader.md)
 - [Diseñador de sombras](../designers/shader-designer.md)
 - [Nodos del Diseñador de sombras](../designers/shader-designer-nodes.md)

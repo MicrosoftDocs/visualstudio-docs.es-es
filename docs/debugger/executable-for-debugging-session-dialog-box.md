@@ -1,8 +1,6 @@
 ---
-title: Archivo ejecutable para sesión de cuadro de diálogo de depuración | Documentos de Microsoft
-ms.custom: ''
+title: Archivo ejecutable para el cuadro de diálogo de la sesión de depuración | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.exefordebug
@@ -22,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 98cee61b9a43e031daf468555f31349d10023fcc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 681a1b150058c66be42caca7241b9054151098f8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473464"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858797"
 ---
 # <a name="executable-for-debugging-session-dialog-box"></a>Archivo ejecutable para sesión de depuración (cuadro de diálogo)
 Este cuadro de diálogo aparece si se intenta depurar un archivo DLL para el que no se ha especificado ningún archivo ejecutable. Visual Studio no puede iniciar un archivo DLL directamente. En su lugar, iniciará el archivo ejecutable especificado. Puede depurar el archivo DLL cuando lo llame el archivo ejecutable.  
@@ -35,10 +33,10 @@ Este cuadro de diálogo aparece si se intenta depurar un archivo DLL para el que
  **Nombre del archivo ejecutable**  
  Escriba el nombre de ruta de acceso a un archivo ejecutable que llama al archivo DLL que está depurando.  
   
- **Acceso de dirección URL donde puede ser el proyecto (sólo servidor ATL)**  
+ **Dirección URL del proyecto (solo servidor ATL)**  
  Si está depurando un archivo DLL de un servidor ATL, escriba la dirección URL en la que se puede encontrar el proyecto.  
   
- Una vez escrita, esta configuración se almacena en las Páginas de propiedades del proyecto, por lo que no hace falta volver a escribirla para las siguientes sesiones de depuración. Si necesita cambiar la configuración, puede abrir las Páginas de propiedades y cambiar los valores. Para obtener más información sobre cómo especificar un archivo ejecutable para la sesión de depuración, consulte [depurar archivos DLL](../debugger/how-to-debug-from-a-dll-project.md).  
+ Una vez escrita, esta configuración se almacena en las Páginas de propiedades del proyecto, por lo que no hace falta volver a escribirla para las siguientes sesiones de depuración. Si necesita cambiar la configuración, puede abrir las Páginas de propiedades y cambiar los valores. Para obtener más información sobre cómo especificar un archivo ejecutable para la sesión de depuración, vea [Depurar archivos DLL](../debugger/how-to-debug-from-a-dll-project.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Depurar en Visual Studio](../debugger/index.md)  

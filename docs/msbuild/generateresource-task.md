@@ -1,8 +1,6 @@
 ---
 title: GenerateResource (Tarea) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateResource
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c830b640b3efb4e963d62402bbf68d1bc7dff0e9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: c879ddc38b2dd3988878119f87c3d777aea7c09d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176959"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917506"
 ---
 # <a name="generateresource-task"></a>GenerateResource (tarea)
 Convierte entre archivos *.txt* y *.resx* (formato de recursos basado en XML) y archivos *.resources* binarios de Common Language Runtime, que se pueden insertar en un archivo ejecutable binario en tiempo de ejecución o compilar en ensamblados satélite. Esta tarea normalmente se usa para convertir archivos *.txt* o *.resx* en archivos *.resources*. La tarea `GenerateResource` es funcionalmente similar a [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  
@@ -45,8 +43,8 @@ Convierte entre archivos *.txt* y *.resx* (formato de recursos basado en XML) y 
 |`OutputResources`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica el nombre de los archivos generados, como los archivos *.resources*. Si no especifica un nombre, se usa el nombre del archivo de entrada coincidente, y el archivo *.resources* que se crea se coloca en el directorio que contiene el archivo de entrada.|  
 |`PublicClass`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, crea una clase de recurso fuertemente tipada como clase pública.|  
 |`References`|Parámetro `String[]` opcional.<br /><br /> Hace referencia a tipos de carga en archivos *.resx*. Los elementos de datos del archivo *.resx* pueden tener un tipo .NET. Cuando se lee el archivo *.resx*, se debe resolver esta situación. Normalmente, se resuelve correctamente utilizando reglas de carga de tipo estándar. Si proporciona los ensamblados en `References`, serán prioritarios.<br /><br /> Este parámetro no se requiere para los recursos fuertemente tipados.|  
-|`SdkToolsPath`|Parámetro `String` opcional.<br /><br /> Especifica la ruta de acceso a las herramientas del SDK, como *resgen.exe*.|  
-|`Sources`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica los elementos que se van a convertir. Los elementos pasados a este parámetro deben tener una de las extensiones de archivo siguientes:<br /><br /> -   *.txt*: especifica la extensión de un archivo de texto que se va a convertir. Los archivos de texto solo pueden contener recursos de cadena.<br />-   *.resx*: especifica la extensión de un archivo de recursos basado en XML que se va a convertir.<br />-   *.restext*: especifica el mismo formato que *.txt*. Esta extensión diferente es útil si desea distinguir claramente los archivos de origen que contienen recursos de otros archivos de origen en su proceso de compilación.<br />-   *.resources*: especifica la extensión de un archivo de recursos que se va a convertir.|  
+|`SdkToolsPath`|Parámetro `String` opcional.<br /><br /> Especifica la ruta de acceso a las herramientas del SDK, tales como *resgen.exe*.|  
+|`Sources`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica los elementos que se van a convertir. Los elementos pasados a este parámetro deben tener una de las extensiones de archivo siguientes:<br /><br /> -   *.txt*: Especifica la extensión de un archivo de texto que se va a convertir. Los archivos de texto solo pueden contener recursos de cadena.<br />-   *.resx*: Especifica la extensión de un archivo de recursos basado en XML que se va a convertir.<br />-   *.restext*: Especifica el mismo formato que *.txt*. Esta extensión diferente es útil si desea distinguir claramente los archivos de origen que contienen recursos de otros archivos de origen en su proceso de compilación.<br />-   *.resources*: Especifica la extensión de un archivo de recursos que se va a convertir.|  
 |`StateFile`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica la ruta de acceso a un archivo de la caché opcional que se usa para acelerar la comprobación de dependencias de vínculos en archivos de entrada *.resx*.|  
 |`StronglyTypedClassName`|Parámetro `String` opcional.<br /><br /> Especifica el nombre de clase para la clase de recurso fuertemente tipada. Si no se especifica este parámetro, se utiliza el nombre base del archivo de recursos.|  
 |`StronglyTypedFilename`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica el nombre de archivo para el archivo de origen. Si no se especifica este parámetro, el nombre de la clase se utiliza como nombre de archivo base, y la extensión depende del lenguaje. Por ejemplo: *MyClass.cs*.|  
@@ -65,7 +63,7 @@ Convierte entre archivos *.txt* y *.resx* (formato de recursos basado en XML) y 
 ## <a name="remarks"></a>Comentarios  
  Debido a que los archivos *.resx* pueden contener vínculos a otros archivos de recursos, no basta con comparar las marcas de tiempo de los archivos *.resx* y *.resources* para ver si las salidas están actualizadas. En su lugar, la tarea `GenerateResource` sigue los vínculos de los archivos *.resx* y comprueba también las marcas de tiempo de los archivos vinculados. Esto significa que, por lo general, no debe utilizar los atributos `Inputs` y `Outputs` en el destino que contiene la tarea `GenerateResource`, puesto que podría causar que se omitiera cuando tendría que ejecutarse.  
   
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension (Clase base)](../msbuild/taskextension-base-class.md).  
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).  
   
  Cuando se utiliza MSBuild 4.0 para proyectos de .NET 3.5, la compilación puede dar error en los recursos x86. Para evitar este problema, puede compilar el destino como un ensamblado AnyCPU.  
   
@@ -87,7 +85,7 @@ Convierte entre archivos *.txt* y *.resx* (formato de recursos basado en XML) y 
  Si se da por hecho que el ensamblado se denomina myAssembly, el siguiente código genera un recurso insertado denominado *someQualifier.someResource.resources*:  
   
 ```xml  
-<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
+<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
 ```  
   
  Sin los metadatos \<LogicalName>, el recurso se denominaría *myAssembly.myResource.resources*.  Este ejemplo solo se aplica al proceso de compilación de Visual Basic y Visual C#.  

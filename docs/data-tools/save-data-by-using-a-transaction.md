@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: guardar datos mediante el uso de una transacción'
+title: Procedimiento Guardar datos mediante una transacción
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +15,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 28beeec474af9b05153e787c6cbe22034d09b350
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: daf589eeabbdf753512cc31ca00b6a88e001c0db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750993"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918758"
 ---
-# <a name="how-to-save-data-by-using-a-transaction"></a>Cómo: guardar datos mediante el uso de una transacción
+# <a name="how-to-save-data-by-using-a-transaction"></a>Procedimiento Guardar datos mediante una transacción
 
 Guardar datos en una transacción mediante la <xref:System.Transactions> espacio de nombres. Use la <xref:System.Transactions.TransactionScope> objeto participe en una transacción que se administra automáticamente.
 
@@ -55,4 +54,4 @@ Para revertir la transacción, producir una excepción antes de llamar a la <xre
 ## <a name="see-also"></a>Vea también
 
 - [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)
-- [Tutorial: Guardado de datos en una transacción](../data-tools/save-data-in-a-transaction.md)
+- [Tutorial: Guardar datos en una transacción](../data-tools/save-data-in-a-transaction.md)

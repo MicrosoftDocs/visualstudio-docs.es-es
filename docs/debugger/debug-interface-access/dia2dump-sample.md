@@ -1,8 +1,6 @@
 ---
 title: Ejemplo Dia2dump | Microsoft Docs
-ms.custom: ''
 ms.date: 07/24/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2e44abdce737df335133d5e54b6b022c97f639a
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
-ms.translationtype: MT
+ms.openlocfilehash: 93c103387ff2acd7b041fc103bc519e9ac166593
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252286"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859651"
 ---
 # <a name="dia2dump-sample"></a>Ejemplo Dia2dump
 
@@ -34,7 +32,7 @@ El ejemplo se instala al elegir el **desarrollo de escritorio con C++** carga de
 
 Cuando se instala, el ejemplo está en el directorio de instalación de Visual Studio, en un subdirectorio denominado \DIA SDK\Samples\DIA2Dump.
 
-## <a name="build-the-sample"></a>Generar el ejemplo
+## <a name="build-the-sample"></a>Compilar el ejemplo
 
 De forma predeterminada, el directorio de instalación es un directorio protegido. Esto significa que debe usar un símbolo del sistema para desarrolladores con privilegios elevados o instancia de Visual Studio para crear y editar la solución de ejemplo en esta ubicación. Para simplificar la compilación, se recomienda en primer lugar copie los archivos desde el directorio de ejemplo en otro directorio, como una carpeta en la carpeta documentos y, a continuación, compile el ejemplo.
 

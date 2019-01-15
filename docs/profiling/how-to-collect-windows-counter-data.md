@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: Recopilar datos de contadores de Windows | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Recopilar datos de contadores de Windows | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.syscounter
@@ -16,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea074024e605d2dcc91500fb00fe0d7b6781692
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9fc551fd84197e936ef0f6069ecbc4beaecdf25a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669383"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961379"
 ---
-# <a name="how-to-collect-windows-counter-data"></a>Cómo: Recopilar datos de contadores de Windows
+# <a name="how-to-collect-windows-counter-data"></a>Procedimiento Recopilar datos de contadores de Windows
 
 Los contadores de Windows son contadores de rendimiento del sistema que se pueden recopilar durante la generación de perfiles a intervalos establecidos. En la vista Marcas del informe de herramientas de generación de perfiles, aparece una fila **AutoMark** para cada intervalo de la colección. La fila contiene columnas que describen los valores de contador de rendimiento en ese intervalo. Para restringir el análisis a un período de tiempo entre dos marcas concretas, seleccione las marcas, haga clic con el botón derecho y después seleccione **Filtrar por** > **marcas** en el menú contextual.
 

@@ -1,8 +1,6 @@
 ---
 title: VSPerfReport | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - command-line tools, VSPerfReporttool
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c679acf7ce6a767702da05bde6fb4a1e6f8a7df
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d617d6fec273997f135010271de1df0240f58594
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572220"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915473"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 La herramienta de la línea de comandos VSPerfReport se usa para crear informes mediante los archivos de datos para la generación de perfiles de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. El formato de informe predeterminado es un archivo .*csv*.  
@@ -44,12 +42,12 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
  `vspfilename1 and vspfilename2` deben ser archivos .*vsp* o .*vsps* válidos.  
   
 ## <a name="symbol-files"></a>Archivos de símbolos  
- Para mostrar información de símbolos como nombres de función y números de línea, VSPerfReport requiere acceso a los archivos de símbolos (.PDB) de los componentes para los que se generan perfiles y a los archivos de símbolos de Windows. Para más información, vea [Cómo: Especificar ubicaciones del archivo de símbolos desde la línea de comandos](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
+ Para mostrar información de símbolos como nombres de función y números de línea, VSPerfReport requiere acceso a los archivos de símbolos (.PDB) de los componentes para los que se generan perfiles y a los archivos de símbolos de Windows. Para obtener más información, vea [Cómo: Especificar ubicaciones del archivo de símbolos desde la línea de comandos](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
   
 ## <a name="general-report-options"></a>Opciones generales de informe  
  En la tabla siguiente se describen las opciones generales de formato del informe y las opciones que seleccionan los datos de los que se va a informar.  
   
-|Opciones|Description|  
+|Opciones|Descripción|  
 |-------------|-----------------|  
 |**U**|El informe de resultados y la salida de la consola redirigida se escriben como Unicode. Esta debe ser la primera opción especificada.|  
 |**Summary:**[*types*]|Crea uno o varios tipos de informes.<br /><br /> -   `All`: se generan todos los tipos de informes.<br />-   `CallerCallee`: relaciones de elemento primario/secundario entre funciones.<br />-   `Function`: funciones llamadas.<br />-   `CallTree`: jerarquía de funciones llamadas.<br />-   `Counter`: todas las marcas junto con valores del contador de rendimiento de Windows.<br />-   `Ip`: instrucciones para las que se generan perfiles.<br />-   `Life`: duración de los objetos asignados (disponible cuando se han recopilado datos de asignaciones).<br />-   `Line`: datos del perfil de la línea de código fuente.<br />-   `Header`: el informe contiene información del encabezado del archivo.<br />-   `Mark`: todas las marcas.<br />-   `Module`: módulos para los que se generan perfiles.<br />-   `Process`: procesos para los que se generan perfiles.<br />-   `Thread`: subprocesos para los que se generan perfiles.<br />-   `Type`: tipos asignados.<br />-   `Contention`: contenciones de recursos.<br />-   `RuleWarnings`: problemas de reglas de rendimiento.<br />-   `ETW`: todos los eventos de Seguimiento de eventos para Windows (ETW) recopilados en la generación de perfiles. El archivo de datos .etl debe estar en su ubicación original o en el directorio que contiene el archivo .vsp o .vsps.|  
@@ -69,7 +67,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 ## <a name="filter-options"></a>Opciones de filtro  
  En la tabla siguiente se describen las opciones para filtrar los datos disponibles.  
   
-|Opciones|Description|  
+|Opciones|Descripción|  
 |-------------|-----------------|  
 |**JustMyCode**[**:**[`caller`][,`callee`]]|Solo se muestran las llamadas a funciones de aplicación de usuario; se ocultan las llamadas al sistema.<br /><br /> - Ningún parámetro: se ocultan todas las funciones del sistema.<br />-   `caller`: se muestra un nivel de las funciones del sistema que llaman a las funciones de aplicación.<br />-   `callee`: se muestra un nivel de las funciones del sistema invocadas por las funciones de aplicación de usuario.|  
 |**StartTime:**[*value*]|Solo muestra los datos recopilados tras el valor (en milisegundos).|  
@@ -83,7 +81,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 ## <a name="difference-report-options"></a>Opciones del informe de diferencias  
  En la tabla siguiente se describen las opciones para comparar archivos de informe.  
   
-|Opciones|Description|  
+|Opciones|Descripción|  
 |-------------|-----------------|  
 |**Diff**  `vspfile1 vspfile2`|Se comparan dos archivos de informe (.*vsp* o .*vsps*). Las opciones de resumen se omitirán mediante la opción diff.|  
 |**Diff:**[*value*]|Se descarta cualquier diferencia entre dos valores que se encuentre bajo este valor de umbral. Asimismo, no se muestran nuevos datos que tengan valores por debajo de este umbral.|  

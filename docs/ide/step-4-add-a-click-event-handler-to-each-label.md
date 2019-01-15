@@ -1,9 +1,7 @@
 ---
 title: 'Paso 4: Agregar un controlador de eventos Click a cada etiqueta'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 16bdbc7c-4129-411d-bace-f4a3e5375975
 author: TerryGLee
@@ -11,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04054d353e0260e7a38a189fc6946aacd353b6c4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cc39a2d92b4c0851d6d7c17b1c988ab0c1f0b184
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897958"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942832"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Paso 4: Agregar un controlador de eventos Click a cada etiqueta
 
@@ -51,9 +49,9 @@ El juego de formar parejas funciona como sigue:
     > Si copia y pega el bloque `label_Click()` de código, en lugar de escribirlo manualmente, asegúrese de reemplazar el código `label_Click()` existente. De lo contrario, se encontrará con un bloque de código duplicado.
 
     > [!NOTE]
-    > Tal vez reconozca `object sender` de la parte superior del controlador de eventos como el utilizado en el [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md). Como enlazó distintos eventos Click de control de etiqueta a un único método de controlador de eventos, se llama al mismo método con independencia de la etiqueta que elija el usuario. El método del controlador de eventos necesita saber qué etiqueta se ha elegido, de forma que usa el nombre `sender` para identificar el control de la etiqueta. La primera línea del método indica al programa que no es solo un objeto genérico, sino que es, en concreto, un control Label y que, a través del nombre `clickedLabel`, tiene acceso a las propiedades y los métodos de la etiqueta.
+    > Tal vez reconozca `object sender` de la parte superior del controlador de eventos como el usado en [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md). Como enlazó distintos eventos Click de control de etiqueta a un único método de controlador de eventos, se llama al mismo método con independencia de la etiqueta que elija el usuario. El método del controlador de eventos necesita saber qué etiqueta se ha elegido, de forma que usa el nombre `sender` para identificar el control de la etiqueta. La primera línea del método indica al programa que no es solo un objeto genérico, sino que es, en concreto, un control Label y que, a través del nombre `clickedLabel`, tiene acceso a las propiedades y los métodos de la etiqueta.
 
-     Este método comprueba primero si `clickedLabel` se convirtió (mediante conversión de tipos) correctamente de un objeto en un control Label. Si no, tiene un valor `null` (C#) o `Nothing` (Visual Basic) y no es preciso ejecutar el resto del código del método. Luego, el método comprueba el color del texto de la etiqueta elegida mediante la propiedad **ForeColor** de la etiqueta. Si el color del texto de la etiqueta es negro, significa que el icono ya se ha elegido y el método ha terminado. (Esto es lo que hace la instrucción `return`: indicar al programa que deje de ejecutar el método). Si no, el icono no se ha elegido, por lo que el programa cambia el color del texto de la etiqueta a negro.
+     Este método comprueba primero si `clickedLabel` se convirtió (mediante conversión de tipos) correctamente de un objeto en un control Label. Si no, tiene un valor `null` (C#) o `Nothing` (Visual Basic) y no es preciso ejecutar el resto del código del método. Luego, el método comprueba el color del texto de la etiqueta elegida mediante la propiedad **ForeColor** de la etiqueta. Si el color del texto de la etiqueta es negro, significa que el icono ya se ha elegido y el método ha terminado. (Eso es lo que hace la instrucción `return`: indica al programa que deje de ejecutar el método). Si no, el icono no se ha elegido, por lo que el programa cambia el color del texto de la etiqueta a negro.
 
 6.  En la barra de menús, elija **Archivo** > **Guardar todo** para guardar el progreso y, a continuación, en la barra de menús, elija **Depurar** > **Iniciar depuración** para ejecutar el programa. Debería ver un formulario vacío con un fondo azul. Al elegir cualquiera de las celdas del formulario, uno de los iconos debería hacerse visible. Siga eligiendo distintas partes del formulario. A medida que elija los iconos, estos deberían mostrarse.
 
@@ -61,4 +59,4 @@ El juego de formar parejas funciona como sigue:
 
 -   Para ir al siguiente paso del tutorial, vea [Paso 5: Agregar referencias a etiquetas](../ide/step-5-add-label-references.md).
 
--   Para volver al paso previo del tutorial, vea [Paso 3: Asignar un icono aleatorio a cada etiqueta](../ide/step-3-assign-a-random-icon-to-each-label.md).
+-   Para volver al paso anterior del tutorial, vea [Paso 3: Asignar un icono aleatorio a cada etiqueta](../ide/step-3-assign-a-random-icon-to-each-label.md).

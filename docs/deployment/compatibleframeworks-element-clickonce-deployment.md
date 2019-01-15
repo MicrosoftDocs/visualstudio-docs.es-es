@@ -1,8 +1,6 @@
 ---
 title: '&lt;compatibleFrameworks&gt; elemento (implementación ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -16,33 +14,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44329fc4c2ec5e9f2f8352d69ea487f23cbe3c5a
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: df45e5bc3f9294ac1a53353ec784d83c9220f1cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077690"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900969"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt; elemento (implementación ClickOnce)
 Identifica las versiones de .NET Framework en las que se puede instalar y ejecutar esta aplicación.  
   
 > [!NOTE]
->  [*MageUI.exe* ](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client) no admite el `compatibleFrameworks` elemento cuando se guarda un manifiesto de aplicación que ya se ha firmado con un certificado mediante [ *MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client). En su lugar, debe usar [ *Mage.exe*](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).  
+>  [*MageUI.exe* ](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client) no admite el `compatibleFrameworks` elemento cuando se guarda un manifiesto de aplicación que ya se ha firmado con un certificado mediante [ *MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client). En su lugar, debe usar [*Mage.exe*](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).  
   
 ## <a name="syntax"></a>Sintaxis  
   
 ```xml  
 <compatibleFrameworks  
-      SupportUrl>   
+      SupportUrl>   
    <framework  
       targetVersion  
       profile  
       supportedRuntime  
-   />   
+   />   
 </ compatibleFrameworks>  
 ```  
   
-## <a name="elements-and-attributes"></a>Los elementos y atributos  
+## <a name="elements-and-attributes"></a>Elementos y atributos  
  El `compatibleFrameworks` elemento es necesario para los manifiestos de implementación que tienen como destino el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] en tiempo de ejecución proporcionado por [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] o una versión posterior. El `compatibleFrameworks` elemento contiene uno o varios `framework` elementos que especifican las versiones de .NET Framework en el que se puede ejecutar esta aplicación. El [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] en tiempo de ejecución ejecutará la aplicación en la primera disponible `framework` en esta lista.  
   
  En la tabla siguiente se enumera el atributo que el `compatibleFrameworks` admite el elemento.  
@@ -52,13 +50,13 @@ Identifica las versiones de .NET Framework en las que se puede instalar y ejecut
 |`S` `upportUrl`|Opcional. Especifica una dirección URL donde se puede descargar la versión de .NET Framework compatible preferida.|  
   
 ## <a name="framework"></a>marco de trabajo  
- Requerido. En la tabla siguiente se enumera los atributos que el `framework` admite el elemento.  
+ Obligatorio. En la tabla siguiente se enumera los atributos que el `framework` admite el elemento.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`targetVersion`|Requerido. Especifica el número de versión de .NET Framework de destino.|  
-|`profile`|Requerido. Especifica el perfil de .NET Framework de destino.|  
-|`supportedRuntime`|Requerido. Especifica el número de versión del tiempo de ejecución asociada con el destino es .NET Framework.|  
+|`targetVersion`|Obligatorio. Especifica el número de versión de .NET Framework de destino.|  
+|`profile`|Obligatorio. Especifica el perfil de .NET Framework de destino.|  
+|`supportedRuntime`|Obligatorio. Especifica el número de versión del tiempo de ejecución asociada con el destino es .NET Framework.|  
   
 ## <a name="remarks"></a>Comentarios  
   

@@ -1,8 +1,6 @@
 ---
 title: Manifiesto de aplicación ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5326f71ba7a075cc6ca3e321318de89624c56894
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 550b4122775f8d38ed874227bb5b36066f411b9f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872895"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929233"
 ---
 # <a name="clickonce-application-manifest"></a>Manifiesto de aplicación ClickOnce
 Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto de aplicación es un archivo XML que describe una aplicación que se implementa mediante [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
@@ -32,11 +30,11 @@ Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto 
 
 | Elemento | Descripción | Atributos |
 | - | - | - |
-| [\<ensamblado > elemento](../deployment/assembly-element-clickonce-application.md) | Requerido. Elemento de nivel superior. | `manifestVersion` |
-| [\<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-application.md) | Requerido. Identifica el ensamblado principal de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language` |
+| [\<ensamblado > elemento](../deployment/assembly-element-clickonce-application.md) | Obligatorio. Elemento de nivel superior. | `manifestVersion` |
+| [\<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-application.md) | Obligatorio. Identifica el ensamblado principal de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language` |
 | [\<trustInfo > elemento](../deployment/trustinfo-element-clickonce-application.md) | Identifica los requisitos de seguridad de la aplicación. | Ninguna |
-| [\<entryPoint > elemento](../deployment/entrypoint-element-clickonce-application.md) | Requerido. Identifica el punto de entrada de código de aplicación. | `name` |
-| [\<dependencia > elemento](../deployment/dependency-element-clickonce-application.md) | Requerido. Identifica cada dependencia necesaria para que se ejecute la aplicación. Identifica opcionalmente los ensamblados que se tienen que preinstalar. | Ninguna |
+| [\<entryPoint > elemento](../deployment/entrypoint-element-clickonce-application.md) | Obligatorio. Identifica el punto de entrada de código de aplicación. | `name` |
+| [\<dependencia > elemento](../deployment/dependency-element-clickonce-application.md) | Obligatorio. Identifica cada dependencia necesaria para que se ejecute la aplicación. Identifica opcionalmente los ensamblados que se tienen que preinstalar. | Ninguna |
 | [Elemento \<file>](../deployment/file-element-clickonce-application.md) | Opcional. Identifica cada archivo nonassembly utilizado por la aplicación. Puede incluir datos de aislamiento del modelo de objetos componentes (COM) asociados al archivo. | `name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType` |
 | [\<fileAssociation > elemento](../deployment/fileassociation-element-clickonce-application.md) | Opcional. Identifica una extensión de archivo que se asociará con la aplicación. | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
 
@@ -46,10 +44,10 @@ Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto 
 ## <a name="file-location"></a>Ubicación del archivo  
  Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto de aplicación es específico para una única versión de una implementación. Por este motivo, deben almacenarse por separado de los manifiestos de implementación. La convención común es colocarlos en un subdirectorio con el nombre de la versión asociada.  
 
- El manifiesto de aplicación siempre debe estar firmado antes de la implementación. Si cambia un manifiesto de aplicación manualmente, debe usar *mage.exe* para volver a firmar el manifiesto de aplicación, puede actualizar el manifiesto de implementación y, a continuación, volver a firmar el manifiesto de implementación. Para obtener más información, consulte [Tutorial: implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ El manifiesto de aplicación siempre debe estar firmado antes de la implementación. Si cambia un manifiesto de aplicación manualmente, debe usar *mage.exe* para volver a firmar el manifiesto de aplicación, puede actualizar el manifiesto de implementación y, a continuación, volver a firmar el manifiesto de implementación. Para obtener más información, vea [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
 
-## <a name="file-name-syntax"></a>Sintaxis de nombre de archivo  
- El nombre de un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] archivo de manifiesto de aplicación debe ser el nombre completo y la extensión de la aplicación, tal como se mencionó en el `assemblyIdentity` elemento, seguido por la extensión *.manifest*. Por ejemplo, un manifiesto de aplicación que hace referencia a la *Example.exe* aplicación utilizaría la siguiente sintaxis de nombre de archivo.  
+## <a name="file-name-syntax"></a>Sintaxis de los nombres de archivo  
+ El nombre de un archivo de manifiesto de aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] debe ser el nombre completo y la extensión de la aplicación según se identifica en el elemento `assemblyIdentity`, seguido por la extensión *.manifest*. Por ejemplo, un manifiesto de aplicación que hace referencia a la *Example.exe* aplicación utilizaría la siguiente sintaxis de nombre de archivo.  
 
  `example.exe.manifest`  
 

@@ -2,7 +2,6 @@
 title: Mostrar datos en Blend
 ms.date: 03/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 87d31b6c-4607-4121-bb7d-cfc80390ab93
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae09c6921bc4f6e0b3bb2a91eb9c3972c997d566
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: cae026f0b4a7be3a0ed9a389f3f6d9b8a6a911f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282175"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924402"
 ---
 # <a name="display-data-in-blend"></a>Mostrar datos en Blend
 
@@ -43,7 +42,7 @@ Si ya ha creado las clases que describen la estructura de los datos, puede gener
 
 Para generar datos de ejemplo desde una clase, abra un documento XAML y, en el panel **Datos**, haga clic en el botón **Crear datos de ejemplo** ![Icono Crear datos de ejemplo](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) y, después, haga clic en **Crear datos de ejemplo desde clase**.
 
-**Vea un vídeo corto:** ![Icono de reproducción](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Crear datos de ejemplo desde clase](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML).
+**Vea un vídeo corto:** ![Icono de reproducción](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Crear datos de ejemplo desde una clase](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML).
 
 **Vea un vídeo corto:** ![Icono de reproducción](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Mezclar algunos enlaces de datos con Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 

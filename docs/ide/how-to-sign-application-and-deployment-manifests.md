@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: Firmar aplicaciones y manifiestos de implementación'
+title: Procedimiento Firmar manifiestos de implementación y aplicación
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -19,14 +18,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 903bc0df9b24cd6f944e9e92c6dc5283cd1d25ea
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 45199d736e1402c67ca84ced8db95d81534a7c3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381952"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852919"
 ---
-# <a name="how-to-sign-application-and-deployment-manifests"></a>Cómo: Firmar aplicaciones y manifiestos de implementación
+# <a name="how-to-sign-application-and-deployment-manifests"></a>Procedimiento Firmar manifiestos de implementación y aplicación
 
 Si quiere publicar una aplicación mediante la implementación ClickOnce, los manifiestos de aplicación e implementación deben estar firmados con un par de claves pública y privada mediante la tecnología Authenticode. Puede firmar los manifiestos con un certificado del almacén de certificados de Windows o un archivo de clave.
 
@@ -34,7 +33,7 @@ Si quiere publicar una aplicación mediante la implementación ClickOnce, los ma
 
  Firmar los manifiestos de ClickOnce es opcional para aplicaciones basadas en *.exe*. Para obtener más información, consulte la sección "Generar manifiestos sin firmar" de este documento.
 
- Para obtener información sobre la creación de archivos de claves, consulte [Cómo: Crear un par de claves privada y pública](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
+ Para obtener información sobre cómo crear archivos de clave, vea [Cómo: Crear un par de claves privada y pública](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
 
 > [!NOTE]
 > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solo admite archivos de claves de intercambio de información personal (PFX) que tienen la extensión *.pfx*. En cambio, puede seleccionar otros tipos de certificados desde el almacén de certificados de Windows del usuario actual si hace clic en **Seleccionar del almacén** en la página **Firma** de las propiedades del proyecto.
@@ -94,7 +93,7 @@ Firmar los manifiestos de ClickOnce es opcional para aplicaciones basadas en *.e
 
 2.  En la página **Firma**, desactive la casilla **Firmar los manifiestos de ClickOnce**.
 
-3.  Restablezca la versión de publicación para que solo esté disponible una versión de la aplicación. De manera predeterminada, Visual Studio incrementa de forma automática el número de revisión de la versión de publicación cada vez que se publica una aplicación. Para obtener más información, consulte [Cómo: Establecer la versión de publicación de ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).
+3.  Restablezca la versión de publicación para que solo esté disponible una versión de la aplicación. De manera predeterminada, Visual Studio incrementa de forma automática el número de revisión de la versión de publicación cada vez que se publica una aplicación. Para obtener más información, vea [Cómo: Establecimiento de la versión de publicación de ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).
 
 4.  Publique la aplicación.
 
@@ -112,6 +111,6 @@ Firmar los manifiestos de ClickOnce es opcional para aplicaciones basadas en *.e
 ## <a name="see-also"></a>Vea también
 
 - [Ensamblados con nombre seguro](/dotnet/framework/app-domains/strong-named-assemblies)
-- [Cómo: Crear un par de claves pública y privada](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)
+- [Cómo: Crear un par de claves privada y pública](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)
 - [Página Firma, Diseñador de proyectos](../ide/reference/signing-page-project-designer.md)
 - [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)

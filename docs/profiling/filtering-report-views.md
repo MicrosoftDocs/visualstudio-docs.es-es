@@ -1,8 +1,6 @@
 ---
 title: Filtrar las vistas de informe | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, configuring
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf8e172f6693b4efcff1cfff3eb8c79178bb9f90
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d4922020a6020630ce54767e788b14a1ed7c0462
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919174"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986380"
 ---
 # <a name="filter-report-views"></a>Filtrar las vistas de informe
 Puede aplicar filtros a los archivos de datos de generación de perfiles para limitar los datos que se muestran en las vistas de los informes de rendimiento y que se exportan a los archivos de informe. Puede limitar un informe a los datos entre valores de marcas de tiempo y puede limitar los datos a procesos y subprocesos concretos. Puede guardar los filtros en un archivo y después crear un filtro en un archivo de datos de generación de perfiles diferente importando el filtro guardado.  
   
- También puede limitar un informe a un segmento horario utilizando la escala de tiempo gráfica de la vista de resumen. Vea [Filtrado de vistas de informe desde la escala de tiempo de resumen](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
+ También puede limitar un informe a un segmento horario utilizando la escala de tiempo gráfica de la vista de resumen. Vea [Cómo: Filtrar vistas de informe desde la escala de tiempo de resumen](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
   
- Para excluir de un informe el código del sistema y de aplicaciones de terceros, vea [Cómo: filtrar vistas de herramientas de generación de perfiles para mostrar Solo mi código](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md).  
+ Para excluir código del sistema y de terceros de un informe, vea [Cómo: Filtrado de vistas de Herramientas de generación de perfiles para mostrar Solo mi código](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)  
   
 ## <a name="procedures"></a>Procedimientos  
   

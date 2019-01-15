@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: Utilizar variables de entorno en una compilación | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Usar variables de entorno en una compilación | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - environment variables, referencing
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d57709b2e1ff4f3721644f2f61e030ea8ccccf82
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 93e77ee2a3ca9a3c4ef3f3ceb7491e1b2ecdf074
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828380"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845400"
 ---
-# <a name="how-to-use-environment-variables-in-a-build"></a>Cómo: Usar variables de entorno en una compilación
+# <a name="how-to-use-environment-variables-in-a-build"></a>Procedimiento Usar variables de entorno en una compilación
 Al compilar proyectos, a menudo es necesario establecer las opciones de compilación mediante información que no está en el archivo del proyecto o en los archivos que componen el proyecto. Normalmente, esta información se almacena en variables de entorno.  
   
 ## <a name="reference-environment-variables"></a>Referencia a variables de entorno  

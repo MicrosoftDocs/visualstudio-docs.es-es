@@ -1,8 +1,6 @@
 ---
 title: Get_sourcefile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0239a74bc6f2ddf616b03037b3a9a021662d6d07
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bf68651cf94341176de6c15b704a22d291d6dd12
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899713"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872312"
 ---
 # <a name="idialinenumbergetsourcefile"></a>IDiaLineNumber::get_sourceFile
 Recupera una referencia al archivo de origen.  
@@ -27,7 +25,7 @@ Recupera una referencia al archivo de origen.
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT get_sourceFile (   
+HRESULT get_sourceFile (   
    IDiaSourceFile** pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_sourceFile (
  [out] Devuelve un [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) objeto que representa el archivo de origen.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)   

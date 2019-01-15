@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 11f7249f30b1866ca7c4aea4bbefa850a5353c0f
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 396afaf7b2cd5821db05ee4a6291d976fc852878
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305590"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847972"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizar el modo en que Visual Studio crea los títulos de controles enlazados a datos
 
@@ -44,13 +43,13 @@ La tabla siguiente muestra la configuración predeterminada interna para estos v
 |Elemento del registro|Valor predeterminado|Explicación|
 |-------------------|-------------------|-----------------|
 |**SmartCaptionExpression**|**(\\\p{Ll}) (\\\p{Lu})&#124;_ +**|Coincide con un carácter en minúscula seguido por un carácter en mayúscula o un carácter de subrayado.|
-|**SmartCaptionReplacement**|"$1"|El **$1** representa cualquier carácter coincidente en el primer paréntesis de la expresión y el **$2** representa cualquier carácter coincidente en el segundo paréntesis. La sustitución es la primera coincidencia, un espacio y, a continuación, la segunda coincidencia.|
+|**SmartCaptionReplacement**|**$1 $2**|El **$1** representa cualquier carácter coincidente en el primer paréntesis de la expresión y el **$2** representa cualquier carácter coincidente en el segundo paréntesis. La sustitución es la primera coincidencia, un espacio y, a continuación, la segunda coincidencia.|
 |**SmartCaptionSuffix**|**:**|Representa un carácter que se anexa a la cadena devuelta. Por ejemplo, si el título es `Company Name`, el sufijo facilita `Company Name:`|
 
 > [!CAUTION]
 > Debe tener mucho cuidado al hacer nada en el Editor del registro. Realizar una copia de seguridad del registro antes de editarlo. Si utiliza incorrectamente el Editor del registro, puede provocar problemas graves que quizás requieran reinstalar el sistema operativo. Microsoft no garantiza que se pueden resolver los problemas que provocan utilizando el Editor del Registro incorrectamente. Utilice el Editor del registro bajo su propia responsabilidad.
 >
-> El siguiente artículo de Knowledge Base contiene instrucciones para realizar copias de seguridad, editar y restaurar el registro: [descripción del registro de Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
+> El siguiente artículo de Knowledge Base contiene instrucciones para realizar copias de seguridad, editar y restaurar el registro: [Descripción del registro de Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
 
 ## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Modificar el comportamiento inteligente subtítulos (CC) de la ventana de orígenes de datos
 

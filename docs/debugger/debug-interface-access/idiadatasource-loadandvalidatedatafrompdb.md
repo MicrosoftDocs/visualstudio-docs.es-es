@@ -1,8 +1,6 @@
 ---
 title: Loadandvalidatedatafrompdb | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 272b43f7e33ce495aabd53f33022bdeaf4b951fc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 88bb10e46d9007878282338aff0379c57eca2aba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948907"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911707"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 Se abre y comprueba que el archivo de programa (.pdb) de la base de datos coincide con la información de la firma proporcionada y prepara el archivo .pdb como un origen de datos de depuración.  
@@ -27,7 +25,7 @@ Se abre y comprueba que el archivo de programa (.pdb) de la base de datos coinci
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT loadAndValidateDataFromPdb (   
+HRESULT loadAndValidateDataFromPdb (   
    LPCOLESTR pdbPath,  
    GUID*     pcsig70,  
    DWORD     sig,  
@@ -91,6 +89,6 @@ if (FAILED(hr))
   
 ## <a name="see-also"></a>Vea también  
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
- [Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
- [Loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)   
+ [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
+ [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)   
  [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)

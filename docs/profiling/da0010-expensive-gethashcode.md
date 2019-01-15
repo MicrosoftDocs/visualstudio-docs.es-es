@@ -1,8 +1,6 @@
 ---
-title: 'DA0010: GetHashCode consume muchos recursos | Microsoft Docs'
-ms.custom: ''
+title: 'DA0010: GetHashCode que consume muchos recursos | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.rules.DAExpensiveGetHashCode
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4bb60104fa865cffa3e06ac088b92081e444457
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4ddf59bdf6ad356a36a730982b7ac0b681bd66d3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877236"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932345"
 ---
-# <a name="da0010-expensive-gethashcode"></a>DA0010: GetHashCode consume muchos recursos
+# <a name="da0010-expensive-gethashcode"></a>DA0010: GetHashCode que consume muchos recursos
 
 |||  
 |-|-|  

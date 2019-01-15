@@ -1,8 +1,6 @@
 ---
 title: Put_imagealign | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06110568e0854692b19c3c118e948024bd346295
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0188a0faa4f9fe7a711cbdfd7c006e7e423713fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904003"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879736"
 ---
 # <a name="idiaaddressmapputimagealign"></a>IDiaAddressMap::put_imageAlign
 Establece la alineación de imagen.  
@@ -27,7 +25,7 @@ Establece la alineación de imagen.
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT put_imageAlign (   
+HRESULT put_imageAlign (   
    DWORD NewVal  
 );  
 ```  
@@ -40,7 +38,7 @@ HRESULT put_imageAlign (
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Imágenes (cargar archivos ejecutables) se alinean en límites de memoria especificada. Esta alineación puede verse afectada por la arquitectura del sistema actual y por las opciones de tiempo de compilación y vinculación. Alineación de la imagen está siempre en límites de bytes. Los valores de alineación de imagen siguientes son válidos: los límites de 1, 2, 4, 8, 16, 32 y 64 bytes.  
+ Imágenes (cargar archivos ejecutables) se alinean en límites de memoria especificada. Esta alineación puede verse afectada por la arquitectura del sistema actual y por las opciones de tiempo de compilación y vinculación. Alineación de la imagen está siempre en límites de bytes. Los valores de alineación de imagen siguientes son válidos: límites de 1, 2, 4, 8, 16, 32 y 64 bytes.  
   
  La alineación de imagen actual se puede recuperar con una llamada a la [Get_imagealign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md) método.  
   

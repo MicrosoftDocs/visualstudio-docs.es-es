@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e4c5fbbbe878e14c6c88c872ece2b3d492e3ea7c
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
-ms.translationtype: MT
+ms.openlocfilehash: c2d1784e498cb856cc388b8e7f26dd57f978e79f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844038"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927394"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Agregar código a conjuntos de datos en aplicaciones de n niveles
 Puede ampliar la funcionalidad de un conjunto de datos mediante la creación de un archivo de clase parcial para el conjunto de datos y agregar código a ella (en lugar de agregar código a la *DatasetName*. Archivo Dataset.Designer). Las clases parciales permiten código para una clase específica que va a dividir entre varios archivos físicos. Para obtener más información, consulte [parcial](/dotnet/visual-basic/language-reference/modifiers/partial) o [clases y métodos parciales](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
@@ -65,8 +64,8 @@ De forma predeterminada, después de separar el conjunto de datos y el código d
 
 ## <a name="see-also"></a>Vea también
 
-- [Introducción a las aplicaciones de datos con N niveles](../data-tools/n-tier-data-applications-overview.md)
+- [Introducción a las aplicaciones de datos de n niveles](../data-tools/n-tier-data-applications-overview.md)
 - [Agregar código a TableAdapters en aplicaciones con n niveles](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
 - [Crear y configurar TableAdapters](create-and-configure-tableadapters.md)
-- [Información general de la actualización jerárquica](hierarchical-update.md)
+- [Información general sobre la actualización jerárquica](hierarchical-update.md)
 - [Herramientas de conjunto de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

@@ -2,19 +2,18 @@
 title: Analizar pruebas de IU codificadas usando los registros de pruebas de IU codificadas
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9c31dd90981cf39f1de296b2c96d6064afc730b4
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 7a0913159b59e12c4491331a123045074cbea35f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896684"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944965"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Análisis de pruebas automatizadas de IU mediante los registros de pruebas automatizadas de IU
 
@@ -22,7 +21,7 @@ Los registros de pruebas de IU codificadas filtran y guardan información import
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-## <a name="step-1-enable-logging"></a>Paso 1: habilitar el registro
+## <a name="step-1-enable-logging"></a>Paso 1: Habilite el registro
 
 En función de su escenario, use uno de los siguientes métodos para habilitar el registro:
 
@@ -58,7 +57,7 @@ En función de su escenario, use uno de los siguientes métodos para habilitar e
 
    <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;
 
-## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Paso 2: ejecutar la prueba de interfaz de usuario codificada y ver el registro
+## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Paso 2: Ejecutar la prueba de IU codificada y ver el registro
 
 Cuando ejecute una prueba automatizada de IU una vez realizadas las modificaciones en el archivo *QTAgent32.exe.config*, verá que hay un vínculo de salida en los resultados del **Explorador de pruebas**. Los archivos de registro no solo se generan cuando la prueba produzca un error, sino también para las pruebas correctas cuando el nivel de seguimiento sea "detallado".
 

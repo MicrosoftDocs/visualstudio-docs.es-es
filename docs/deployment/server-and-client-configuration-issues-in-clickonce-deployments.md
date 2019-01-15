@@ -1,8 +1,6 @@
 ---
 title: Servidor y problemas de configuración de cliente en implementaciones ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 444cfa375fd4e2059ddf6458224836cdec6ff18f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7bbc55e5502364c3ca3eb8ca11dec1848490eaf9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849448"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955560"
 ---
-# <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemas de configuración de servidor y cliente en implementaciones ClickOnce
+# <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemas de configuración de servidor y cliente en implementaciones de ClickOnce
 Si usa Internet Information Services (IIS) en Windows Server y la implementación contiene un tipo de archivo que Windows no reconocen, como un archivo de Microsoft Word, IIS no transmitirá dicho archivo y no se realizará correctamente la implementación.  
 
  Además, algunos servidores Web y Web como aplicación de software, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], contienen una lista de archivos y tipos de archivo que no se puede descargar. Por ejemplo, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] evita la descarga de todos los *Web.config* archivos. Estos archivos pueden contener información confidencial como nombres de usuario y contraseñas.  
@@ -35,11 +33,11 @@ Si usa Internet Information Services (IIS) en Windows Server y la implementació
 
  Algunos servidores Web podrían bloquear los archivos con extensiones como *.dll*, *.config*, y *.mdf*. Las aplicaciones basadas en Windows normalmente incluyen archivos con algunas de estas extensiones. Si un usuario intenta ejecutar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación que tiene acceso a un archivo bloqueado en un servidor Web, se producirá un error. En lugar de desbloquear todas las extensiones de archivo, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] publica cada archivo de aplicación con un *.deploy* extensión de archivo de forma predeterminada. Por lo tanto, solo el administrador debe configurar el servidor Web para desbloquear las siguientes extensiones de archivo de tres:  
 
-- *.Application*  
+- *.application*  
 
-- *manifest*  
+- *.manifest*  
 
-- *Deploy* 
+- *.deploy* 
 
   Sin embargo, puede deshabilitar esta opción si desactiva la **usar extensión de archivo ".deploy"** opción el [Publish Options Dialog Box](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100)), en cuyo caso debe configurar el servidor Web para desbloquear todas las extensiones de archivo se usa en la aplicación.  
 
@@ -51,7 +49,7 @@ Si usa Internet Information Services (IIS) en Windows Server y la implementació
 ## <a name="clickonce-and-proxy-authentication"></a>Autenticación de proxy y ClickOnce  
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] proporciona compatibilidad para la autenticación integrada de Windows de proxy a partir de .NET Framework 3.5. No se requiere ninguna directiva machine.config concreta. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] no proporciona soporte técnico para otros protocolos de autenticación como básica o implícita.  
 
- También puede aplicar una revisión para .NET Framework 2.0 para habilitar esta característica. Para obtener más información, consulta http://go.microsoft.com/fwlink/?LinkId=158730.  
+ También puede aplicar una revisión para .NET Framework 2.0 para habilitar esta característica. Para obtener más información, vea http://go.microsoft.com/fwlink/?LinkId=158730.  
 
  Para obtener más información, consulte [ \<defaultProxy > (configuración de red) del elemento](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings).  
 
@@ -99,20 +97,20 @@ Si usa Internet Information Services (IIS) en Windows Server y la implementació
 
 | Tipo de dirección URL | Descripción |
 |----------| - |
-| FTP: / / | Puede publicar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación mediante este protocolo. |
+| ftp:// | Puede publicar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación mediante este protocolo. |
 | http:// | Puede instalar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación mediante este protocolo. |
 | https:// | Puede instalar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación mediante este protocolo. |
-| File:// | Puede instalar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación mediante este protocolo. |
+| file:// | Puede instalar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación mediante este protocolo. |
 
-## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Firewall de Windows  
+## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: firewall de Windows  
  De forma predeterminada, Windows XP Service Pack 2 habilita el Firewall de Windows. Si está desarrollando su aplicación en un equipo que tiene instalado de Windows XP, están todavía puede publicar y ejecutar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicaciones desde el servidor local que ejecuta IIS. Sin embargo, no se puede acceder al servidor que ejecuta IIS desde otro equipo a menos que abra el Firewall de Windows. Para obtener instrucciones acerca de cómo administrar el Firewall de Windows, consulte la Ayuda de Windows.  
 
-## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server: Habilitar extensiones de servidor  
+## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server Habilitar extensiones de servidor  
  Extensiones de servidor de FrontPage de Microsoft es necesaria para publicar aplicaciones en un servidor Web de Windows que utiliza HTTP.  
 
  De forma predeterminada, Windows Server no tiene instalado FrontPage Server Extensions. Si desea usar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para publicar en un servidor Web de Windows Server que utiliza HTTP con las extensiones de servidor de FrontPage, debe instalar primero extensiones de servidor. Puede realizar la instalación mediante el uso de la herramienta de administración administrar el servidor en Windows Server.  
 
-## <a name="windows-server-locked-down-content-types"></a>Windows Server: Tipos de contenido bloqueado  
+## <a name="windows-server-locked-down-content-types"></a>Windows Server Tipos de contenido bloqueado  
  IIS en [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] bloquea todos los tipos de archivo salvo ciertos tipos de contenido conocidos (por ejemplo, *.htm*, *.html*, *.txt*, y así sucesivamente). Para habilitar la implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicaciones que usen este servidor, deberá cambiar la configuración de IIS para permitir la descarga de archivos de tipo *.application*, *.manifest*y otros tipos de archivo personalizados usado por la aplicación.  
 
  Si implementa mediante un servidor IIS, ejecute *inetmgr.exe* y agregar nuevos tipos de archivo para la página Web predeterminada:  
@@ -137,5 +135,5 @@ Si usa Internet Information Services (IIS) en Windows Server y la implementació
 
 ## <a name="see-also"></a>Vea también  
  [Solución de problemas de implementaciones de ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   
- [Elegir una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)   
+ [Selección de una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [Requisitos previos para la implementación de aplicaciones](../deployment/application-deployment-prerequisites.md)

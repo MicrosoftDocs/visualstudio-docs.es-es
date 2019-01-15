@@ -1,8 +1,6 @@
 ---
 title: No se puede conectar a Microsoft Visual Studio Monitor de depuración remota | Microsoft Docs
-ms.custom: ''
 ms.date: 08/24/2017
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.error.remote_debug
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1096188a6cf6be34d56c6330d588e56e0c306581
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
-ms.translationtype: MT
+ms.openlocfilehash: 8babc9b86cc006e120a76a037260b62852e8f041
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073940"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931338"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>No se puede conectar al Monitor de depuración remota de Microsoft Visual Studio
 Este mensaje puede producirse porque el monitor de depuración remota no está correctamente configurado en el equipo remoto o el equipo remoto es accesible debido a problemas de red o la presencia de un firewall.
@@ -112,7 +110,7 @@ Esto puede ser un problema heredado específico de Windows XP y Windows 7. Vea e
 
 ## <a name="causes-and-recommendations"></a>Las causas y recomendaciones
 
-### <a name="dns"></a> El equipo remoto no está accesible 
+### <a name="dns"></a> Falta de accesibilidad al equipo remoto 
 
 Si no se puede conectar con el nombre del equipo remoto, pruebe a usar la dirección IP en su lugar. Puede usar `ipconfig` en una línea de comandos en el equipo remoto para obtener la dirección IPv4. Si usa un archivo de HOSTS, compruebe que está configurado correctamente.
 
@@ -127,7 +125,7 @@ En Visual Studio, examine las propiedades del proyecto y asegúrese de que el no
 
 Si el nombre del servidor es correcto, el software antivirus o un firewall de terceros puede estar bloqueando al depurador remoto. Cuando se depura localmente, esto puede ocurrir porque Visual Studio es una aplicación de 32 bits, por lo que usa la versión de 64 bits del depurador remoto para depurar aplicaciones de 64 bits. Los procesos de 32 bits y 64 bits se comunican con la red local en el equipo local. Nada de tráfico de red sale del equipo, pero es posible que el software de seguridad de terceros bloquee la comunicación.
 
-### <a name="user_accounts"></a> El depurador remoto se está ejecutando bajo una cuenta de usuario diferente 
+### <a name="user_accounts"></a> Ejecución del depurador remoto bajo una cuenta de usuario diferente 
 
 El depurador remoto, de forma predeterminada, sólo aceptará las conexiones del usuario que inició el depurador remoto y los miembros del grupo Administradores. Los usuarios adicionales se deben conceder explícitamente los permisos. 
  
@@ -140,11 +138,11 @@ Puede resolver este problema de una de las siguientes formas:
     > [!NOTE]
     > Si se ejecuta el depurador remoto en un servidor remoto, haga clic en la aplicación del depurador remoto y elija **ejecutar como administrador** (o bien, puede ejecutar el depurador remoto como servicio). Si no se está ejecutando en un servidor remoto, simplemente inícielo con normalidad.
   
--   Puede iniciar el depurador remoto desde la línea de comandos con el **/ allow \<username >** parámetro: `msvsmon /allow <username@computer>`. 
+-   Puede iniciar el depurador remoto desde la línea de comandos con el parámetro **/allow \<username>**: `msvsmon /allow <username@computer>`. 
   
--   Como alternativa, puede permitir que cualquier usuario al realizar la depuración remota. En la ventana del depurador remoto, vaya a la **Herramientas > opciones** cuadro de diálogo. Al seleccionar   **Sin autenticación**, podrá activar **Permitir que cualquier usuario depure**. Sin embargo, debe probar esta opción solo si el resto de opciones fallen o si se encuentra en una red privada.
+-   Como alternativa, puede permitir que cualquier usuario al realizar la depuración remota. En la ventana del depurador remoto, vaya al cuadro de diálogo **Herramientas > Opciones**. Al seleccionar   **Sin autenticación**, podrá activar **Permitir que cualquier usuario depure**. Sin embargo, debe probar esta opción solo si el resto de opciones fallen o si se encuentra en una red privada.
 
-### <a name="firewall"></a> El firewall en el equipo remoto no permite conexiones entrantes al depurador remoto  
+### <a name="firewall"></a> Falta de permisos para conexiones entrantes al depurador remoto por parte del firewall del equipo remoto  
  El firewall del equipo de Visual Studio y el firewall del equipo remoto deben configurarse para permitir la comunicación entre Visual Studio y el depurador remoto. Para obtener información sobre los puertos que usa el depurador remoto, vea [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md). Para obtener información sobre de cómo configurar el firewall de Windows, vea [Configure the Windows Firewall for Remote Debugging](../debugger/configure-the-windows-firewall-for-remote-debugging.md).
   
 ### <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>La versión del depurador remoto no coincide con la versión de Visual Studio  

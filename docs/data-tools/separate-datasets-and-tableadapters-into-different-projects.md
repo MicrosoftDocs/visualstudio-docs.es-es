@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 01e572a2ac20d1cfb103e1600307b51bdf58a0b8
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 87d4e11ffcb485ac96d2ecdb53951532a2c1305a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174324"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932043"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Separar conjuntos de datos y TableAdapters en proyectos diferentes
 Objetos DataSet con tipo se han mejorado para que la [TableAdapters](create-and-configure-tableadapters.md) y clases de conjunto de datos se pueden generar en proyectos independientes. Esto permite separar rápidamente los niveles de la aplicación y generar aplicaciones de datos con n niveles.
@@ -32,12 +31,12 @@ Al separar el código de conjunto de datos de código del TableAdapter, el proye
 
 #### <a name="to-separate-the-dataset-into-a-different-project"></a>Para separar el conjunto de datos en un proyecto diferente
 
-1.  Abra una solución que contiene un conjunto de datos (*.xsd* archivo).
+1.  Abra una solución que contenga un conjunto de datos (archivo *.xsd*).
 
     > [!NOTE]
     >  Si la solución no contiene el proyecto en el que desea separar el código del conjunto de datos, crear el proyecto, o agregar un proyecto existente a la solución.
 
-2.  Haga doble clic en un archivo de conjunto de datos con tipo (un *.xsd* archivo) en **el Explorador de soluciones** para abrir el conjunto de datos en el **Diseñador de Dataset**.
+2.  Haga doble clic en un archivo de conjunto de datos con tipo (un archivo *.xsd*) en el **Explorador de soluciones** para abrir el conjunto de datos en el **Diseñador de DataSet**.
 
 3.  Seleccione un área vacía de la **Diseñador de Dataset**.
 
@@ -45,7 +44,7 @@ Al separar el código de conjunto de datos de código del TableAdapter, el proye
 
 5.  En el **DataSet Project** lista, seleccione el nombre del proyecto en el que desea generar el código del conjunto de datos.
 
-     Después de seleccionar el proyecto en el que desea generar el código del conjunto de datos, el **DataSet File** propiedad se rellena con un nombre de archivo predeterminado. Puede cambiar este nombre si es necesario. Además, si desea generar el código de conjunto de datos en un directorio específico, puede establecer el **carpeta del proyecto** propiedad en el nombre de una carpeta.
+     Después de seleccionar el proyecto en el que desea generar el código del conjunto de datos, el **DataSet File** propiedad se rellena con un nombre de archivo predeterminado. Puede cambiar este nombre si es necesario. Además, si desea generar el código del conjunto de datos en un directorio concreto, puede establecer la propiedad **Carpeta de proyecto** con el nombre de una carpeta.
 
     > [!NOTE]
     >  Al separar conjuntos de datos y TableAdapters (estableciendo la **DataSet Project** propiedad), las clases de conjunto de datos parciales existentes en el proyecto no se moverá automáticamente. Las clases de conjunto de datos parciales existentes se deben mover manualmente al proyecto de conjunto de datos.
@@ -61,8 +60,8 @@ De forma predeterminada, después de separar el conjunto de datos y el código d
 
 ## <a name="see-also"></a>Vea también
 
-- [Introducción a las aplicaciones de datos con N niveles](../data-tools/n-tier-data-applications-overview.md)
-- [Tutorial: Crear una aplicación de datos con N niveles](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [Introducción a las aplicaciones de datos de n niveles](../data-tools/n-tier-data-applications-overview.md)
+- [Tutorial: Creación de una aplicación de datos de n niveles](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Actualización jerárquica](../data-tools/hierarchical-update.md)
 - [Obtener acceso a los datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [ADO.NET](/dotnet/framework/data/adonet/index)

@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: establecer opciones de nombre de archivo de datos de rendimiento | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Establecer opciones de nombre de archivo de datos de rendimiento | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2f9d47107d8a5e0fb4c10e058c2fc4c7ca3ed5e
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 6e0027457e099c57423989070e6f30f275d7982e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844474"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990573"
 ---
-# <a name="how-to-set-performance-data-file-name-options"></a>Cómo: establecer opciones de nombre de archivo de datos de rendimiento
+# <a name="how-to-set-performance-data-file-name-options"></a>Procedimiento Establecer opciones de nombre de archivo de datos de rendimiento
 
 De forma predeterminada, se guarda un archivo de generación de perfiles de datos (.*vsp*) mediante la siguiente sintaxis:
 
@@ -27,7 +25,7 @@ Puede cambiar cualquier parámetro de nomenclatura en la página **General** del
 
 |||
 |-|-|
-|*Path*|El directorio que contiene el informe. La ubicación predeterminada es la carpeta de soluciones o la ubicación predeterminada de los proyectos y soluciones del usuario.|
+|*Ruta de acceso*|El directorio que contiene el informe. La ubicación predeterminada es la carpeta de soluciones o la ubicación predeterminada de los proyectos y soluciones del usuario.|
 |*VSP-File*|El nombre del archivo de datos de generación de perfiles. El nombre predeterminado es el nombre de la solución o ejecutable del que se generan perfiles.|
 |*YYMMDD*|Una marca de fecha que muestra el año, mes y día en que se recopilaron los datos de generación de perfiles.|
 |*(N)*|Si existe más de un archivo de datos de generación de perfiles, se agrega un número incrementado al nombre de archivo entre paréntesis.|

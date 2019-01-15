@@ -1,8 +1,6 @@
 ---
 title: '&lt;assemblyIdentity&gt; elemento (implementación ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assemblyIdentity
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51ee3ae65c107fc3e6fafbacc3b2e20652ae998d
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 3749fdbdebaaf48cbbf073486e2e44ae2f2519d5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078032"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859271"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;assemblyIdentity&gt; elemento (implementación ClickOnce)
 Identifica el ensamblado principal de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación.  
@@ -32,8 +30,8 @@ Identifica el ensamblado principal de la [!INCLUDE[ndptecclick](../deployment/in
   
 ```xml  
   
-      <assemblyIdentity    
-   name   
+      <assemblyIdentity    
+   name   
    version  
    publicKeyToken  
    processorArchitecture  
@@ -41,16 +39,16 @@ Identifica el ensamblado principal de la [!INCLUDE[ndptecclick](../deployment/in
 />  
 ```  
   
-## <a name="elements-and-attributes"></a>Los elementos y atributos  
+## <a name="elements-and-attributes"></a>Elementos y atributos  
  El `assemblyIdentity` elemento es necesario. No contiene elementos secundarios y tiene los siguientes atributos.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`name`|Requerido. Identifica el nombre legible de la implementación con fines informativos.<br /><br /> Si `name` contiene caracteres especiales, como las comillas simples o dobles, es posible que no activa la aplicación.|  
-|`version`|Requerido. Especifica el número de versión del ensamblado, en el siguiente formato: `major.minor.build.revision`.<br /><br /> Este valor se debe incrementar en un manifiesto actualizado para desencadenar una actualización de la aplicación.|  
-|`publicKeyToken`|Requerido. Especifica una cadena hexadecimal de 16 caracteres que representa los últimos 8 bytes del valor hash SHA-1 de la clave pública con la que se firma el manifiesto de implementación. La clave pública que se usa para iniciar sesión debe ser 2048 bits o superior.<br /><br /> Aunque al firmar un ensamblado es opcional pero recomendado, este atributo es necesario. Si un ensamblado está firmado, debe copiar un valor de un ensamblado autofirmado o usar un valor "ficticio" de todos los ceros.|  
-|`processorArchitecture`|Requerido. Especifica el procesador. Los valores válidos son `msil` para todos los procesadores, `x86` para Windows de 32 bits, `IA64` para Windows de 64 bits, y `Itanium` para procesadores Itanium de Intel de 64 bits.|  
-|`type`|Requerido. Por compatibilidad con la tecnología de instalación en paralelo de Windows. El único valor permitido es `win32`.|  
+|`name`|Obligatorio. Identifica el nombre legible de la implementación con fines informativos.<br /><br /> Si `name` contiene caracteres especiales, como las comillas simples o dobles, es posible que no activa la aplicación.|  
+|`version`|Obligatorio. Especifica el número de versión del ensamblado, en el siguiente formato: `major.minor.build.revision`.<br /><br /> Este valor se debe incrementar en un manifiesto actualizado para desencadenar una actualización de la aplicación.|  
+|`publicKeyToken`|Obligatorio. Especifica una cadena hexadecimal de 16 caracteres que representa los últimos 8 bytes del valor hash SHA-1 de la clave pública con la que se firma el manifiesto de implementación. La clave pública que se usa para iniciar sesión debe ser 2048 bits o superior.<br /><br /> Aunque al firmar un ensamblado es opcional pero recomendado, este atributo es necesario. Si un ensamblado está firmado, debe copiar un valor de un ensamblado autofirmado o usar un valor "ficticio" de todos los ceros.|  
+|`processorArchitecture`|Obligatorio. Especifica el procesador. Los valores válidos son `msil` para todos los procesadores, `x86` para Windows de 32 bits, `IA64` para Windows de 64 bits, y `Itanium` para procesadores Itanium de Intel de 64 bits.|  
+|`type`|Obligatorio. Por compatibilidad con la tecnología de instalación en paralelo de Windows. El único valor permitido es `win32`.|  
   
 ## <a name="remarks"></a>Comentarios  
   

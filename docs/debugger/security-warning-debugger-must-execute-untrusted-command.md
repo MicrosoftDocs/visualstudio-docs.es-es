@@ -1,8 +1,6 @@
 ---
 title: 'Advertencia de seguridad: El depurador debe ejecutar un comando que no se confía | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.sourceserver.securityalert
@@ -17,22 +15,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e99c56efc5338feeded20621c7467bbf8274bc9
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
-ms.translationtype: MT
+ms.openlocfilehash: 3e421521bd40ff4369433b0a0c3c323579e36125
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510929"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855621"
 ---
 # <a name="security-warning-debugger-must-execute-untrusted-command"></a>Advertencia de seguridad: El depurador debe ejecutar un comando que no es de confianza
 Este cuadro de diálogo de advertencia aparece cuando utiliza un servidor de origen. Indica que el comando que el depurador debe ejecutar para obtener el código fuente no figura en la lista de comandos de confianza del servidor de origen incluida en el archivo srcsvr.ini. Si es un comando válido, se puede agregar al archivo srcsvr.ini. De lo contrario, no debe ejecutarse. Para obtener más información, consulte [Especificar archivos de código fuente y símbolos (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 ## <a name="message-text"></a>Texto del mensaje  
- **El depurador debe ejecutar el siguiente comando de confianza para obtener el código fuente desde el servidor de origen.**  
+ **El depurador debe ejecutar el siguiente comando que no es de confianza para obtener el código fuente del servidor de origen.**  
   
- **Si el archivo de símbolos de depuración (\*.pdb) es no de una fuente conocida y de confianza, este comando podría ser peligroso para ejecutar o no válido.**  
+ **Si el archivo de símbolo de depuración (\*.pdb) no procede de una fuente conocida y de confianza, este comando puede no ser válido o su ejecución puede ser peligrosa.**  
   
- **¿Desea ejecutar este comando?**  
+ **¿Quiere ejecutar este comando?**  
   
 ## <a name="uielement-list"></a>Lista de UIElement  
  Cuadro de texto  
@@ -45,6 +43,6 @@ Este cuadro de diálogo de advertencia aparece cuando utiliza un servidor de ori
  Detiene la ejecución del comando y la descarga del archivo del servidor de origen.  
   
 ## <a name="see-also"></a>Vea también  
- [Especificar símbolos (.pdb) y los archivos de origen](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [Especificación de archivos de código fuente y símbolos (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [Seguridad del depurador](../debugger/debugger-security.md)   
  [Servidor de origen](/windows/desktop/Debug/source-server-and-source-indexing)

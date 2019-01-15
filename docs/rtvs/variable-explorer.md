@@ -3,19 +3,18 @@ title: Explorador de variables de R
 description: El Explorador de variables de Visual Studio muestra todas las variables en un ámbito determinado en la sesión actual de R.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: fbd20c362c407148262d8e1e61e15d22d9cbcf2f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 8969379727da2f7e01e15fcb10150195bc32749e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978130"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988941"
 ---
 # <a name="variable-explorer"></a>Explorador de variables
 
@@ -71,7 +70,7 @@ El **Explorador de variables** cambia automáticamente el ámbito de función a 
 
 ## <a name="import-data-into-variable-explorer"></a>Importar datos en el Explorador de variables
 
-Dos comandos de la barra de herramientas del **Explorador de variables**, que también están disponibles a través del menú **Herramientas de R** > **Datos**, importan conjuntos de datos CSV externos en la sesión de R: **Importar conjunto de datos en la sesión de R a partir de una URL web** y **Importar conjunto de datos en la sesión de R a partir de un archivo de texto**.
+Dos comandos de la barra de herramientas de **Explorador de variables**, que también están disponibles a través del menú **Herramientas de R** > **Datos**, importan conjuntos de datos CSV externos en la sesión de R:  **Importar conjunto de datos en la sesión de R a partir de una URL web** e **Importar conjunto de datos en la sesión de R a partir de un archivo de texto**.
 
 Una vez que haya identificado el archivo CSV que se va a importar, Visual Studio muestra un cuadro de diálogo **Importar conjunto de datos** en el que tiene opciones para controlar cómo se analiza ese archivo de datos (es decir, cuál es el separador de campos y cómo controlar las comillas). También puede ver una vista previa del marco de datos importado y del archivo de datos original:
 

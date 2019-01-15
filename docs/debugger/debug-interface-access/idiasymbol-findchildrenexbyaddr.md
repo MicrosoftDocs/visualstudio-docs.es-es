@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::findChildrenExByAddr | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7398f3afdf8a6895d0feaec35ca33b95e9054060
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 900699fc543da7eba25624766ac6c8b0d5cf88bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834869"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875104"
 ---
 # <a name="idiasymbolfindchildrenexbyaddr"></a>IDiaSymbol::findChildrenExByAddr
 Recupera a los elementos secundarios del símbolo que son válidos en una dirección especificada.  
@@ -27,7 +25,7 @@ Recupera a los elementos secundarios del símbolo que son válidos en una direcc
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT findChildrenExByAddr (   
+HRESULT findChildrenExByAddr (   
    enum SymTagEnum   symtag,  
    LPCOLESTR         name,  
    DWORD             compareFlags,  
@@ -59,7 +57,7 @@ HRESULT findChildrenExByAddr (
  Los símbolos locales que se devuelven incluyen información de rango en vivo.  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: Dia2.h  
+ Encabezado: dia2.h  
   
  Biblioteca: diaguids.lib  
   
@@ -67,7 +65,7 @@ HRESULT findChildrenExByAddr (
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md)   
+ [Enumeración SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
- [Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
  [Enumeración NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md)

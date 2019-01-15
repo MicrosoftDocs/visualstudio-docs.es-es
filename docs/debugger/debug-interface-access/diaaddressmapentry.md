@@ -1,8 +1,6 @@
 ---
-title: DiaAddressMapEntry | Documentos de Microsoft
-ms.custom: ''
+title: DiaAddressMapEntry | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 501defcd2274ab32624a97b9a1463e8f4a515c1e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6cadfe96bc0bf0ac0395d93c2ef0b156b9965ed2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819061"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964090"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 Describe una entrada en un mapa de direcciones.  
@@ -27,7 +25,7 @@ Describe una entrada en un mapa de direcciones.
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-struct DiaAddressMapEntry {   
+struct DiaAddressMapEntry {   
    DWORD rva,  
    DWORD rvaTo  
 };  
@@ -47,9 +45,9 @@ struct DiaAddressMapEntry {
   
 1. Buscar la asignación de la entrada de `e`, con el mayor `rva` menor o igual a `addrA`.  
   
-2. Establecer `delta = addrA - e.rva`.  
+2. Establezca `delta = addrA - e.rva`.  
   
-3. Establecer `addrB = e.rvaTo + delta`.  
+3. Establezca `addrB = e.rvaTo + delta`.  
   
    Una matriz de `DiaAddressMapEntry` estructuras se pasa a la [Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) método.  
   

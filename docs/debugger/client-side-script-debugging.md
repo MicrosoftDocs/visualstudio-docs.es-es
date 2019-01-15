@@ -1,8 +1,6 @@
 ---
 title: Depuración de scripts del lado cliente | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,18 +16,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a42ee63b863393c3cc2bad789d14404def8d1f5d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 89a5f1a5e5f90357d2f48ccd295356129da8a398
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894994"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898737"
 ---
 # <a name="client-side-script-debugging"></a>Depuración de secuencias de comandos en el cliente
 El depurador de Visual Studio proporciona un entorno de depuración completo para encontrar y corregir errores en los scripts de cliente en las páginas de ASP.NET.  
   
 ## <a name="opening-script-documents"></a>Abrir documentos de script  
-Puede ver listas de documentos de script de cliente y servidor en el **el Explorador de soluciones** para ver. Puede abrir cualquier documento de script en el **Explorador de soluciones**. Para obtener más información, consulta [How to: View Script Documents](../debugger/how-to-view-script-documents.md).  
+En el **Explorador de soluciones** , puede ver listas de documentos de script de cliente y servidor. Puede abrir cualquier documento de script en el **Explorador de soluciones**. Para obtener más información, vea [Cómo: Visualización de documentos de script](../debugger/how-to-view-script-documents.md).  
   
 ## <a name="breakpoint-mapping"></a>Asignación de puntos de interrupción  
  En Visual Studio, no puede depurar directamente código de servidor, pero puede establecer un punto de interrupción en un archivo de servidor. Visual Studio asigna automáticamente el punto de interrupción a una ubicación correspondiente en el archivo de cliente y crea un punto de interrupción asignado en el código de cliente.  
@@ -37,7 +35,7 @@ Puede ver listas de documentos de script de cliente y servidor en el **el Explor
 ## <a name="manually-or-automatically-attaching-to-script"></a>Asociar a script manual o automáticamente  
  Para empezar a depurar el script en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], el depurador debe asociarse al script que se desea depurar. Esto se puede realizar manual o automáticamente.  
   
- Puede establecer una asociación manualmente utilizando la interfaz del depurador de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para elegir un proceso de script en ejecución al que desee asociarse. Para obtener más información, consulta [How to: Attach to Script](../debugger/how-to-attach-to-script.md).  
+ Puede establecer una asociación manualmente utilizando la interfaz del depurador de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para elegir un proceso de script en ejecución al que desee asociarse. Para obtener más información, vea [Cómo: Asociación a script](../debugger/how-to-attach-to-script.md).  
   
  El depurador se asocia automáticamente al script cuando se produce una de las siguientes situaciones:  
   
@@ -62,8 +60,8 @@ Puede ver listas de documentos de script de cliente y servidor en el **el Explor
  [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
   
 ## <a name="see-also"></a>Vea también  
- [Depuración de aplicaciones de ASP.NET y AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
+ [Depurar aplicaciones de ASP.NET y AJAX](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)   
  [Limitaciones de la depuración de scripts](../debugger/limitations-on-script-debugging.md)   
- [Windows variable](../debugger/debugger-windows.md)   
+ [Ventanas de variables](../debugger/debugger-windows.md)   
  [Ventana Inmediato](../ide/reference/immediate-window.md)   
  [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

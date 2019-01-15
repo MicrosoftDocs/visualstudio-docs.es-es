@@ -1,20 +1,18 @@
 ---
 title: Uso de GPU | Microsoft Docs
-ms.custom: ''
 ms.date: 11/01/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8265ae81b5ea1c6395af352f8f981f41f77cea8
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: d8971a626d1cff33fa3799f20d6a53bb212a0dac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220949"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941091"
 ---
 # <a name="gpu-usage"></a>Uso de GPU
 
@@ -41,7 +39,7 @@ Los siguientes requisitos para usar la herramienta Uso de GPU se suman a los de 
 
 **Para iniciar la herramienta Uso de GPU:**
 
-1. En el menú principal, seleccione **Depurar** y **Rendimiento y diagnósticos** (teclado: presione Alt+F2).
+1. En el menú principal, seleccione **Depurar** y **Rendimiento y diagnósticos** (teclado: Alt + F2).
 
 2. En el concentrador de rendimiento y diagnóstico, active la casilla junto a **Uso de GPU**. Si lo prefiere, active las casillas situadas junto a otras herramientas que le interesen. Puede ejecutar varias herramientas de rendimiento y diagnóstico de manera simultánea para obtener una imagen más completa del rendimiento de la aplicación.
 
@@ -104,7 +102,7 @@ Para encontrar lo que busca, filtre el informe Uso de GPU por nombres de proceso
 |--------------------|-----------------|
 |**Process**|El nombre del proceso que le interesa. Este menú desplegable contiene todos los procesos que usan la GPU durante la sesión de diagnóstico. El color asocia con el proceso en este menú es el color de la actividad del subproceso en las escalas de tiempo que aparecen más abajo.|
 |**Subproceso**|El identificador de subproceso que le interesa. En una aplicación multiproceso, esta información puede ayudarle a aislar subprocesos concretos pertenecientes al proceso que le interesa. En cada línea de tiempo se resaltan los eventos asociados con el subproceso seleccionado.|
-|**Pantalla**|Número de la pantalla cuya frecuencia de actualización se muestra. **Nota**: Algunos controladores pueden configurarse para mostrar varias pantallas físicas como una única pantalla virtual más grande. En ese caso, solo aparecería una pantalla en la lista, incluso aunque la máquina esté conectada a varias pantallas.|
+|**Pantalla**|El número de la pantalla cuya frecuencia de actualización se muestra **Nota:**  Algunos controladores pueden configurarse para mostrar varias pantallas físicas como una única pantalla virtual más grande. En ese caso, solo aparecería una pantalla en la lista, incluso aunque la máquina esté conectada a varias pantallas.|
 |**Filtrar**|Las palabras clave que le interesan. Solo aparecen en la parte inferior del informe los eventos que coinciden, total o parcialmente, con una palabra clave. Si desea especificar varias palabras clave, sepárelas con punto y coma (;).|
 |**Orden de jerarquía**|Una casilla que indica si se deben conservar o ignorar las jerarquías de eventos que se han definido con marcadores de usuario.|
 
@@ -128,7 +126,7 @@ Si no desea comenzar a recopilar la información de generación de perfiles en c
 
 **Para posponer la generación de perfiles de modo que no se produzca al iniciar la aplicación:**
 
-1. En el menú principal, seleccione **Depurar** y **Rendimiento y diagnósticos** (teclado: presione Alt+F2).
+1. En el menú principal, seleccione **Depurar** y **Rendimiento y diagnósticos** (teclado: Alt + F2).
 
 2. En el concentrador de rendimiento y diagnóstico, siga el vínculo de **configuración** situado junto a **Uso de GPU**.
 

@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 65508c3a7594c0943b80fbbb898c62b0fc013557
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 1887f1e5eb2ac77520f54c50d0f4ab16772f5e17
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894604"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843624"
 ---
 # <a name="load-test-scenario-properties"></a>Propiedades de los escenarios de pruebas de carga
 
@@ -44,7 +43,7 @@ Cambie la configuración de las propiedades de los escenarios de prueba de carga
 |Propiedad.|de esquema JSON|
 |-|----------------|
 |**Agentes que se usarán**|Especifica los agentes que se quieren usar en el escenario si la prueba de carga se ejecuta de forma remota. Por ejemplo, puede especificar un conjunto específico de agentes para mantener la coherencia al analizar las tendencias de rendimiento. Además, los agentes pueden estar distribuidos geográficamente, de forma que haya una afinidad entre los scripts que ejecutan y dónde se encuentra el agente.<br /><br />Los agentes deben estar separados por comas, por ejemplo, "**Agent1, Agent2, Agent3**". Al dejar la propiedad en blanco se indica que el escenario debería utilizar todos los agentes disponibles.<br /><br />Para obtener más información, vea [Cómo: Especificar los agentes de pruebas que se van a usar](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md).|
-|**Aplicar distribución a intervalo de velocidad**|Valor booleano que se usa para especificar si se quieren aplicar retrasos de distribución típicos en el modelo de combinación de pruebas de la velocidad del usuario. Esta propiedad solo se aplica si la propiedad **Tipo de combinación de pruebas** está establecida en **A partir de la velocidad del usuario**.<br /><br />Para obtener más información, vea [Cómo: Aplicar distribución a intervalo de velocidad en un modelo de combinación de pruebas basado en el ritmo del usuario](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
+|**Aplicar distribución a intervalo de velocidad**|Valor booleano que se usa para especificar si se quieren aplicar retrasos de distribución típicos en el modelo de combinación de pruebas de la velocidad del usuario. Esta propiedad solo se aplica si la propiedad **Tipo de combinación de pruebas** está establecida en **A partir de la velocidad del usuario**.<br /><br />Para obtener más información, vea [Cómo: Aplicar distribución a intervalo de velocidad](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
 |**Conmutación de IP**|Valor booleano que se usa para especificar si se emplea la conmutación de IP.<br /><br />La conmutación de IP permite a un agente de prueba enviar solicitudes a un servidor mediante un intervalo de direcciones IP. De esta forma se simulan llamadas procedentes de diferentes equipos cliente. La conmutación de IP es importante para realizar pruebas en una granja de servidores web con carga equilibrada. La mayoría de los equilibradores de carga establecen una afinidad entre un cliente y un servidor web determinado mediante la dirección IP del cliente. Si aparentemente todas las solicitudes proceden del mismo cliente, el equilibrador de carga no equilibrará la carga. Para obtener un buen equilibrio de carga en la granja de servidores web es importante que las solicitudes procedan de un intervalo de direcciones IP.<br /><br />La conmutación de IP solo está disponible con el agente de prueba.|
 |**Iteraciones de pruebas máximas**|Valor numérico que se utiliza para especificar el número máximo de pruebas para ejecutarse en el escenario. Un valor de 0 no especifica ningún máximo.<br /><br />Para obtener más información, vea [Configurar iteraciones de prueba en un escenario de prueba de carga](../test/configure-test-iterations-in-a-load-test-scenario.md).|
 |**Porcentaje de nuevos usuarios**|Valor numérico que especifica el porcentaje de nuevos usuarios o primeros visitantes en el escenario.<br /><br />Para obtener más información, vea [Cómo: Especificar el porcentaje de usuarios virtuales que usan datos de caché web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md).|

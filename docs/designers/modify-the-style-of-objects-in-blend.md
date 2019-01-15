@@ -2,19 +2,18 @@
 title: Modificar el estilo de objetos en Blend
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ae494a82e92086cfa0e8e2a69b7f7eee022807a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3cd8b8d9b3f9a12fa69cf708b0f7a3b16bae83d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917207"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906792"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Modificar el estilo de objetos en Blend
 
@@ -22,7 +21,7 @@ La manera más fácil de personalizar un objeto es establecer propiedades en el 
 
 Si desea volver a utilizar la configuración o un conjunto de configuraciones, cree un recurso reutilizable. Podría tratarse de un *estilo*, una *plantilla* o algo simple como un color personalizado. También puede hacer la apariencia de un control sea distinta en función de su estado. Por ejemplo, que un botón se vuelva verde cuando el usuario haga clic en él.
 
-## <a name="brushes-modify-the-appearance-of-an-object"></a>Pinceles: modificar la apariencia de un objeto
+## <a name="brushes-modify-the-appearance-of-an-object"></a>Pinceles: Modificar la apariencia de un objeto
 
 Aplique un pincel a un objeto si desea cambiar su apariencia.
 
@@ -44,7 +43,7 @@ Cree un pincel visual a partir de un control como un botón. Las ilustraciones s
 
 ![Pincel visual](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png) ![Pincel visual en mosaico](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png)
 
-## <a name="styles-and-templates-create-a-consistent-look-and-feel-across-controls"></a>Estilos y plantillas: crear una apariencia coherente en todos los controles
+## <a name="styles-and-templates-create-a-consistent-look-and-feel-across-controls"></a>Estilos y plantillas: Crear una apariencia coherente en todos los controles
 
 Puede diseñar la apariencia y el comportamiento de un control una vez y aplicar ese diseño a otros controles para no tener que hacerlo de manera individual.
 
@@ -94,9 +93,9 @@ Los controles pueden tener una apariencia visual distinta según las interaccion
 
 ![Mouse sobre el estado](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png)
 
-**Vea un vídeo corto:** ![botón Reproducir](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Administrar el estado de los controles WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
+**Vea un vídeo corto:** ![Botón Reproducir](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Administrar el estado de los controles WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
 
-## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Recursos: crear colores, estilos y plantillas y volver a usarlos más adelante
+## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Recursos: Crear colores, estilos y plantillas y volver a usarlos más adelante
 
 Prácticamente cualquier elemento del proyecto se puede convertir en un recurso. Un recurso es tan solo un objeto que se puede volver a usar en diferentes sitios de la aplicación. Por ejemplo, puede crear un color, convertirlo en un recurso y después usar ese color en varios objetos. Para cambiar el color de todos esos objetos, simplemente cambie el recurso de color.
 

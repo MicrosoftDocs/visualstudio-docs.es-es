@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: incluir un archivo de datos en una aplicación ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Incluir un archivo de datos en una aplicación ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfba7612ec0e019b8c8dfa7c7406435b6e43e6cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0ea6f111aea8d5008ad5d9f933ded37c6df0c465
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917926"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990219"
 ---
-# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Cómo: incluir un archivo de datos en una aplicación ClickOnce
+# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Procedimiento Inclusión de un archivo de datos en una aplicación ClickOnce
 Cada [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación que se instala se asigna a un directorio de datos en el disco local del equipo de destino donde la aplicación puede administrar sus propios datos. Los archivos de datos pueden incluir cualquier tipo de archivo: archivos de texto, archivos XML o incluso bases de datos de Microsoft Access (*.mdb*) los archivos. Los procedimientos siguientes muestran cómo agregar un archivo de datos de cualquier tipo en su [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación.  
   
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>Para incluir un archivo de datos mediante Mage.exe  
@@ -85,4 +83,4 @@ Cada [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicaci�
      Deberá volver a firmar el manifiesto de implementación porque ha cambiado su hash del manifiesto de aplicación.  
   
 ## <a name="see-also"></a>Vea también  
- [Acceder a los datos locales y remotos en aplicaciones ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
+ [Acceso a datos locales y remotos en aplicaciones ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

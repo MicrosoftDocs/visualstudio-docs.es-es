@@ -3,7 +3,6 @@ title: Ver los archivos DLL y ejecutables
 titleSuffix: Visual Studio Modules window
 ms.custom: seodec18
 ms.date: 11/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.modules
@@ -26,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec90c7f797c8b25337a23a12321352ff487a12ca
-ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
+ms.openlocfilehash: 81f0e9bb20e7024a06c2db7c073b4d2a1d92fecc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53443930"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956834"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>Ver los archivos DLL y ejecutables en la ventana Módulos (C#, C++, Visual Basic, F#)
  
@@ -40,7 +39,7 @@ Durante la depuración de Visual Studio, el **módulos** ventana enumera y muest
 > [!NOTE]
 > La ventana módulos no está disponible para la depuración de script o SQL. 
   
-## <a name="use-the-modules-window"></a>Utilice la ventana módulos
+## <a name="use-the-modules-window"></a>Uso de la ventana Módulos
 
 Para abrir la ventana módulos, durante la depuración, seleccione **depurar** > **Windows** > **módulos** (o presione **Ctrl + Alt + U** ). 
   

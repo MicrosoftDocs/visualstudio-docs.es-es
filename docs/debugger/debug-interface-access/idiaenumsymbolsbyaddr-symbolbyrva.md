@@ -1,8 +1,6 @@
 ---
 title: Symbolbyrva | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e746cf0b93f5a9c0944a80c6cbaabedfbb9cc23
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 9cbd35446a279d3054b9cf4ab095f7c654c4c98e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895234"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966416"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyrva"></a>IDiaEnumSymbolsByAddr::symbolByRVA
 Coloca el enumerador realizando una búsqueda por dirección virtual relativa (RVA).  
@@ -27,7 +25,7 @@ Coloca el enumerador realizando una búsqueda por dirección virtual relativa (R
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT symbolByRVA (   
+HRESULT symbolByRVA (   
    DWORD**      relativeVirtualAddress,  
    IDiaSymbol** ppsymbol  
 );  
@@ -41,9 +39,9 @@ HRESULT symbolByRVA (
  [out] Devuelve un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa el símbolo se encuentra.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`. Devuelve `S_FALSE` si no se encontró el símbolo. De lo contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se encontró el símbolo. De lo contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
- [Symbolbyva](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)   
+ [IDiaEnumSymbolsByAddr::symbolByVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

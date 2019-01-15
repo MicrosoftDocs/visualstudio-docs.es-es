@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: buscar un proceso en la vista procesos | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Buscar un proceso en la vista procesos | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Processes view
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8129516476977e526cde9c3eb3dbe546bdbe3876
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4ba4d0f6aee4b81e5be4c9ff896043bd8a164abb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822922"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988759"
 ---
-# <a name="how-to-search-for-a-process-in-processes-view"></a>Cómo: Buscar un proceso en la vista Procesos
+# <a name="how-to-search-for-a-process-in-processes-view"></a>Procedimiento Búsqueda de un proceso en la vista Procesos
 Puede buscar un proceso específico en la vista procesos mediante el uso de su cadena de identificador o el módulo de proceso como criterios de búsqueda. También puede especificar la dirección inicial de la búsqueda. Los campos en el cuadro de diálogo mostrará los atributos del proceso seleccionado en el árbol de procesos.  
   
 ### <a name="to-search-for-a-process-in-processes-view"></a>Para buscar un proceso en la vista procesos  

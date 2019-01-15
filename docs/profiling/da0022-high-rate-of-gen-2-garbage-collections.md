@@ -1,8 +1,6 @@
 ---
 title: 'DA0022: Alta frecuencia de recolección de elementos no utilizados de gen 2 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.DA0022
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f310a099deb1106baa375996f50919e2ab1814c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4e1b55423eaccd0b523c4107211c7ad17291288e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861649"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898273"
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Alta frecuencia de recolección de elementos no utilizados de gen 2
 

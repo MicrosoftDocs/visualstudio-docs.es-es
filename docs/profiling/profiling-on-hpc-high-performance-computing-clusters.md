@@ -1,8 +1,6 @@
 ---
 title: Generar perfiles en clústeres HPC (Sistemas de alto rendimiento) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.hpc.wizard.exeoptions
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aefdd145abce513e5311d4572a9da64105226b3b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ff46104493cfe0c690594d8b67bb64c401104f5f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842383"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856662"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Generar perfiles en clústeres HPC (informática de alto rendimiento)
 
@@ -55,8 +53,8 @@ Para generar perfiles en un nodo de ejecución HPC, debe hacer lo siguiente:
 | | |
 |------------------| - |
 | *%HeadNode%* | Nombre del nodo principal del clúster. |
-| *%FxPath%* | Ruta de acceso al instalador de [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)]. En el soporte de instalación de Visual Studio, la ruta de acceso es: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
-| *%ProfilerPath%* | Ruta de acceso a la versión independiente del instalador de las herramientas de generación de perfiles. En el soporte de instalación de Visual Studio la ruta de acceso es: Standalone Profiler\x64\vs_profiler.exe |
+| *%FxPath%* | Ruta de acceso al instalador de [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)]. En el medio de instalación de Visual Studio, la ruta de acceso es: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
+| *%ProfilerPath%* | Ruta de acceso a la versión independiente del instalador de las herramientas de generación de perfiles. En el medio de instalación de Visual Studio, la ruta de acceso es: Standalone Profiler\x64\vs_profiler.exe |
 
 ## <a name="profile-on-an-hpc-compute-node"></a>Generación de perfiles en un nodo de ejecución HPC
 
@@ -150,4 +148,3 @@ Puede cambiar las propiedades de la sesión de rendimiento que estableció en el
 | **Argumentos de script anteriores a la generación de perfiles** | Especifica los argumentos para pasar al script que se ejecuta antes de la generación de perfiles. |
 | **Script posterior a la generación de perfiles** | Especifica la ruta de acceso y el nombre de archivo de un script que se ejecutará en el equipo de desarrollo local después de finalizar la sesión de generación de perfiles. |
 | **Argumentos de script posteriores a la generación de perfiles** | Especifica los argumentos para pasar al script que se ejecuta después de la generación de perfiles. |
-

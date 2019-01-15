@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: Serializar la información de símbolos | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Serializar la información de símbolos | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Performance.General
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b608b41ea4fd1b5b7544604e8d04bed02361b06
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 5ae49e4656bcbeb8e1048331b9fb0b61849e4099
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220871"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987606"
 ---
-# <a name="how-to-serialize-symbol-information"></a>Cómo: Serializar la información de símbolos
+# <a name="how-to-serialize-symbol-information"></a>Procedimiento Serializar la información de símbolos
 Puede serializar símbolos que debe tener para analizar la aplicación. La serialización de símbolos agrega símbolos al archivo .*vsp*. Al agregar información de símbolos al archivo .*vsp*, otros usuarios pueden analizar un informe de rendimiento sin tener acceso a los símbolos originales. Si no se serializan los símbolos, debe tener archivos .*exe* y .*pdb* originales instrumentados para analizar el archivo .*vsp*.  
   
 ### <a name="to-automatically-serialize-symbol-information"></a>Para serializar información de símbolos automáticamente  

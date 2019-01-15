@@ -2,7 +2,6 @@
 title: Pruebas de cobertura de código
 ms.date: 09/18/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - code coverage
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc8b08b68bb6c48fa22abaa90ba8b0b9daa25e89
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 3ff77dc6c434a58ee916ea1eb4ffcab932d7a675
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370944"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958136"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar cobertura de código para determinar la cantidad de código que se está probando
 
@@ -42,7 +41,7 @@ La característica de cobertura de código solo está disponible en la edición 
 
 2. Para ver qué líneas se han ejecutado, elija ![Icono Mostrar colores en cobertura de código](../test/media/codecoverage-showcoloringicon.png) **Mostrar colores en cobertura de código**.
 
-   Para modificar los colores o utilizar la negrita, elija **Herramientas** > **Opciones** > **Entorno** > **Fuentes y colores** > **Mostrar valores para: Editor de texto**. En **Mostrar los elementos**, ajuste los elementos de cobertura.
+   Para modificar los colores o usar la negrita, elija **Herramientas** > **Opciones** > **Entorno** > **Fuentes y colores** > **Mostrar valores para: Editor de texto**. En **Mostrar los elementos**, ajuste los elementos de cobertura.
 
 3. Si los resultados muestran una cobertura baja, investigue qué partes del código no se están ensayando y escriba más pruebas para abarcarlas. Los equipos de desarrollo normalmente aspiran a una cobertura de código de un 80 %. En algunas situaciones, una cobertura menor es aceptable. Por ejemplo, una cobertura menor es aceptable cuando el código se genera a partir de una plantilla estándar.
 

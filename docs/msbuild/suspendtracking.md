@@ -1,8 +1,6 @@
 ---
 title: SuspendTracking | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 apiname:
 - SuspendTracking
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b0d52fb5d50a75207a0aad49f7b29cfc66b8e889
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 70411d7279dd3f8023971546fd1d228298ce1634
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154201"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911761"
 ---
 # <a name="suspendtracking"></a>SuspendTracking
 Suspende el seguimiento en el contexto actual.  
@@ -37,7 +35,7 @@ HRESULT WINAPI SuspendTracking(void);
  Un elemento **HRESULT** con el conjunto de bits **SUCCEEDED** si el seguimiento se ha suspendido.  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** *FileTracker.h*  
+ **Encabezado**: *FileTracker.h*  
   
 ## <a name="see-also"></a>Vea también  
  [ResumeTracking](../msbuild/resumetracking.md)

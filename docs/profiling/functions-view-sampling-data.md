@@ -1,8 +1,6 @@
 ---
 title: 'Vista Funciones: datos de muestreo | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method,Functions View
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9084aad27d14825f4b3d0a648f0880d4db329c78
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: d1f45c2437a1bf1f5d0c81d91bced3f26a6faaad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237499"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942585"
 ---
 # <a name="functions-view---sampling-data"></a>Vista Funciones: datos de muestreo
 La vista de informe de funciones para el método de perfiles de muestreo enumera las funciones que se muestrearon durante la ejecución de generación de perfiles.  

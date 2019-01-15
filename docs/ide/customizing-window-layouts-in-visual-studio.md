@@ -2,7 +2,6 @@
 title: Personalizar los diseños de ventana
 ms.date: 01/23/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.windows
@@ -25,12 +24,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 849f94d178453d3b90140f59dc9ed5a84cd98466
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: ef1b20741684a8d450d86bf4f41c71516f8eaba6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389648"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959331"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personalizar los diseños de ventana de Visual Studio
 
@@ -58,7 +57,7 @@ Cuando tiene que ver o editar dos ubicaciones a la vez en un documento, puede di
 
 ### <a name="toolbars"></a>Barras de herramientas
 
-Se pueden organizar las barras de herramientas arrastrando o utilizando el cuadro de diálogo **Personalizar** . Para obtener más información sobre cómo ubicar y personalizar las barras de herramientas, vea [Cómo: Personalizar menús y barras de herramientas en Visual Studio](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+Se pueden organizar las barras de herramientas arrastrando o utilizando el cuadro de diálogo **Personalizar** . Para obtener más información sobre cómo ubicar y personalizar barras de herramientas, vea [Cómo: Personalizar menús y barras de herramientas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ## <a name="arrange-and-dock-windows"></a>Ordenar y acoplar las ventanas
 
@@ -186,4 +185,4 @@ Estos diseños se transmiten automáticamente entre las ediciones de Visual Stud
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: moverse por el IDE de Visual Studio](../ide/how-to-move-around-in-the-visual-studio-ide.md)
+- [Cómo: Moverse por el IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)

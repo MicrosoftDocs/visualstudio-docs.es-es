@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: depurar servidores COM | Documentos de Microsoft'
-ms.custom: ''
+title: Procedimiento Depurar servidores COM | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
@@ -24,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87d5bedd98aed5ab7bddc7027eaac9e7678d533c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 6343366478e360631b5a50c8c6d36ca4b31c27cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481689"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853936"
 ---
-# <a name="how-to-debug-com-servers"></a>Cómo: Depurar servidores COM
+# <a name="how-to-debug-com-servers"></a>Procedimiento Depuración de servidores COM
 La depuración de aplicaciones de servidor COM presenta un conjunto de problemas únicos que no siempre son fáciles de resolver.  
   
  Si no tiene o no desea utilizar información de depuración para la aplicación contenedora, puede empezar el proceso de depuración de la aplicación del servidor en tres pasos.  
@@ -45,8 +43,8 @@ La depuración de aplicaciones de servidor COM presenta un conjunto de problemas
 3.  Inicie la aplicación contenedora.  
   
 ## <a name="see-also"></a>Vea también  
- [Depurar COM y ActiveX](../debugger/com-and-activex-debugging.md)   
- [Cómo: depurar clientes y servidores mediante la depuración RPC COM](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
- [Servidor COM y un contenedor de depuración](../debugger/com-server-and-container-debugging.md)   
+ [Depuración de COM y ActiveX](../debugger/com-and-activex-debugging.md)   
+ [Cómo: Depuración de clientes y servidores COM mediante la depuración RPC](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
+ [Depuración de servidores y contenedores COM](../debugger/com-server-and-container-debugging.md)   
  [Depurar en Visual Studio](../debugger/index.md)  
  [Guía de características del depurador](../debugger/debugger-feature-tour.md)

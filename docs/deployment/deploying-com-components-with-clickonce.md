@@ -1,8 +1,6 @@
 ---
 title: Implementar componentes COM con ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e81462b2ccb5d29a0090623d72cf78183abd6917
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: 216d3802ddac4e2a4cee2b8ab20d4d3abd381424
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348752"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888457"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Implementar componentes COM con ClickOnce
 Implementación de componentes COM heredados ha sido tradicionalmente una tarea difícil. Los componentes deben estar registrados globalmente y, por tanto, pueden provocar efectos secundarios no deseados entre aplicaciones que se superponen. Por lo general esta situación no es un problema en las aplicaciones de .NET Framework porque los componentes están completamente aislados para una aplicación o son compatibles en paralelo. Visual Studio permite implementar los componentes COM aislados en Windows XP o en un sistema operativo posterior.  
@@ -139,7 +137,7 @@ Implementación de componentes COM heredados ha sido tradicionalmente una tarea 
   
 2. En el Asistente para publicación, especifique una ubicación en los discos del equipo local donde puede acceder y examine los archivos publicados.  
   
-3. Haga clic en **finalizar** para publicar la aplicación.  
+3. Haga clic en **Finalizar** para publicar la aplicación.  
   
    Si examina los archivos publicados, observará que se incluye el archivo sysmon.ocx. El control está completamente aislado para esta aplicación, lo que significa que si el equipo del usuario final tiene otra aplicación que utilice una versión diferente del control, no puede interferir con esta aplicación.  
   
@@ -165,7 +163,7 @@ Implementación de componentes COM heredados ha sido tradicionalmente una tarea 
   
 - El componente administra un dispositivo físico o virtual para el sistema, por ejemplo, un controlador de dispositivo para una cola de impresión.  
   
-- El componente es un acceso a datos redistribuible. Aplicaciones de datos generalmente requieren un acceso de datos independiente redistribuible instalarse antes de poder ejecutarlos. No debe intentar aislar componentes como el Control de datos de Microsoft ADO, OLE DB de Microsoft o Microsoft Data Access Components (MDAC). En su lugar, si la aplicación utiliza MDAC o SQL Server Express, debe establecerlos como requisitos previos; consulte [Cómo: instalar los requisitos previos mediante una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+- El componente es un acceso a datos redistribuible. Aplicaciones de datos generalmente requieren un acceso de datos independiente redistribuible instalarse antes de poder ejecutarlos. No debe intentar aislar componentes como el Control de datos de Microsoft ADO, OLE DB de Microsoft o Microsoft Data Access Components (MDAC). En su lugar, si la aplicación utiliza MDAC o SQL Server Express, debe establecerlos como requisitos previos; vea [Cómo: Instalación de requisitos previos con una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)  
   
   En algunos casos, es posible para el desarrollador del componente cambiar el diseño de COM sin registro. Si esto no es posible, puede generar y publicar aplicaciones que dependen de ellos a través del esquema del registro estándar mediante el programa previo. Para obtener más información, consulte [crear paquetes de programa previo](../deployment/creating-bootstrapper-packages.md).  
   

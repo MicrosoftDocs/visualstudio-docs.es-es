@@ -1,8 +1,6 @@
 ---
-title: API de gráficos y estadísticas de memoria | Documentos de Microsoft
-ms.custom: ''
+title: API de gráficos y estadísticas de memoria | Microsoft Docs
 ms.date: 03/02/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.apistatistics
@@ -13,36 +11,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48c8ed3c8c2ebffc57ac46e987dbc37950cba0fd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 36feec786ba0bba71723073fb990054cc0206847
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481533"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916684"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>API de gráficos y estadísticas de memoria
-<!-- VERSIONLESS -->
-2017 de Visual Studio y mayor compatibilidad con las estadísticas de la API de gráficos y las herramientas de estadísticas de memoria.  Ambas herramientas le permiten ver varios bits de información en uso de la API de Direct3D, así como el consumo de memoria GPU de varios recursos.
+<!-- VERSIONLESS --> Visual Studio 2017 y mayor compatibilidad con las estadísticas de la API de gráficos y herramientas de estadísticas de memoria.  Ambas herramientas le permiten ver los distintos bits de información en uso de la API de Direct3D, así como el consumo de memoria GPU de diversos recursos.
 
 ## <a name="graphics-api-statistics"></a>Estadísticas de la API de gráficos
-Las estadísticas de la API de gráficos de diagnóstico de gráficos de Visual Studio le permite ver todas las llamadas de Direct3D que se realizaron y el recuento de cada llamada.  Para ver la ventana, seleccione la **Vista > API estadísticas** elemento de menú.
+Las estadísticas de la API de gráficos en diagnóstico de gráficos de Visual Studio le permite ver todas las llamadas de Direct3D que se realizaron y el recuento de cada llamada.  Para ver la ventana, seleccione el **Vista > estadísticas de API** elemento de menú.
 
 ![Estadísticas de API](media/gfx_diag_api_statistics.png)
 
-Esta herramienta puede resultar útil en detectar llamadas de DirectX que no puede saber está realizando o llamadas que se realizan con demasiada frecuencia.
+Esta herramienta puede ser útil para detectar llamadas de DirectX que tal vez no sepa que se va a realizar o llamadas que realiza con demasiada frecuencia.
 
 Puede hacer clic en la ventana para copiar todos los datos como CSV, que se puede pegar en algo parecido a Excel para su posterior análisis.
 
 ## <a name="memory-statistics"></a>Estadísticas de memoria
-Esta herramienta mostrará la cantidad de memoria es asignar el controlador de gráficos de los recursos se crea en un marco.  Para ver esta ventana, seleccione la **Vista > estadísticas de memoria** elemento de menú.
+Esta herramienta mostrará cuánta memoria está asignando el controlador de gráficos para los recursos se crea en un marco.  Para ver esta ventana, seleccione el **Vista > estadísticas de memoria** elemento de menú.
 
 ![Estadísticas de memoria](media/gfx_diag_memory_statistics.png)
 
-El **GPU asignación** columna muestra la cantidad de memoria utilizada por el evento que se muestra en el **eventos** columna.  También puede seleccionar el icono de inspección ![icono inspección](media/gfx_watch.png) para ver el [recursos historial](graphics-event-list.md#resource-history) del evento seleccionado.
+El **GPU asignación** columna muestra la cantidad de memoria utilizada por el evento que se muestra en el **eventos** columna.  También puede seleccionar el icono de inspección ![icono inspección](media/gfx_watch.png) para ver el [historial de recursos](graphics-event-list.md#resource-history) del evento seleccionado.
 
-Al igual que con la herramienta de estadísticas de API, puede hacer clic en la ventana para copiar todos los datos como CSV, que se puede pegar en algo parecido a Excel para su posterior análisis.
+Al igual que con la herramienta de estadísticas de API, hacer clic en la ventana para copiar todos los datos como CSV, que se puede pegar en algo parecido a Excel para su posterior análisis.
 
 ## <a name="see-also"></a>Vea también  
-[Diagnóstico de gráficos (depurar gráficos de DirectX)](visual-studio-graphics-diagnostics.md)   
+[Diagnóstico de gráficos (depuración de gráficos DirectX)](visual-studio-graphics-diagnostics.md)   
 [Historial de recursos](graphics-event-list.md#resource-history)
 <!-- /VERSIONLESS -->

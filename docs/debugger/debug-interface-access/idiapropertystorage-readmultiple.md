@@ -1,8 +1,6 @@
 ---
 title: IDiaPropertyStorage::ReadMultiple | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b8be22e2a855f19c412725833fa18e182ebff6d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: b3d51e398da337a12f38a099045bd82222ca3105
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904060"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948029"
 ---
 # <a name="idiapropertystoragereadmultiple"></a>IDiaPropertyStorage::ReadMultiple
 Lee especificado las propiedades desde el conjunto de propiedades actual.  
@@ -27,7 +25,7 @@ Lee especificado las propiedades desde el conjunto de propiedades actual.
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT ReadMultiple(   
+HRESULT ReadMultiple(   
    ULONG          cpspec,  
    PROPSPEC const rgpspec,  
    PROPVARIANT    rgvar  
@@ -45,7 +43,7 @@ HRESULT ReadMultiple(
  [in, out] Una matriz de `PROPVARIANT` estructuras (en el espacio de nombres de ensamblados Microsoft.VisualStudio.OLE.Interop) que se rellena con los valores para cada propiedad. La matriz debe ser al menos `cpspec` elementos de tamaño. El llamador no necesita inicializar los valores de la matriz.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`. Devuelve `S_FALSE` si no se encontraron una o varias de las propiedades. En caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se encontraron una o varias de las propiedades. En caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
  Si una propiedad no se encontró, la entrada correspondiente en el `rgvar` matriz contiene un `VARIANT` con el tipo de `VT_EMPTY`.  

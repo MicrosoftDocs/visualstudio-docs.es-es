@@ -1,8 +1,6 @@
 ---
 title: Depurar LINQ | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,17 +19,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8511c3ac9efd79b712680bfe3f9d5611f3c5aa9c
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: 13c6b8eb4db3448b52ace999f379eab7bea20523
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349431"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871010"
 ---
 # <a name="debugging-linq"></a>Depurar LINQ
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] admite la depuración de código de Language-Integrated Query (LINQ), con algunas limitaciones. La mayor parte de las características de depuración funcionan con instrucciones LINQ, entre ellas la ejecución paso a paso, el establecimiento de puntos de interrupción y la presentación de resultados en las ventanas del depurador. En este tema se describe las principales limitaciones de la depuración LINQ.  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] admite la depuración de código de Language-Integrated Query (LINQ), con algunas limitaciones. La mayor parte de las características de depuración funcionan con instrucciones LINQ, entre ellas la ejecución paso a paso, el establecimiento de puntos de interrupción y la presentación de resultados en las ventanas del depurador. En este tema se describen las principales limitaciones de la depuración LINQ.  
   
-##  <a name="BKMK_ViewingLINQResults"></a> Ver los resultados LINQ  
+##  <a name="BKMK_ViewingLINQResults"></a> Visualización de los resultados LINQ  
  Puede ver el resultado de una instrucción LINQ mediante Información sobre datos, ventana Inspección y cuadro de diálogo Inspección rápida. Al usar una ventana de código fuente, puede pausar el puntero en una consulta en la ventana de código fuente para que aparezca una información sobre datos. Puede copiar una variable LINQ y pegarla en la ventana Inspección o en el cuadro de diálogo Inspección rápida.  
   
  En LINQ, una consulta no se evalúa cuando se crea o declara, pero únicamente cuando se usa. Por consiguiente, la consulta no tiene un valor hasta que se evalúe. Para obtener una descripción completa de evaluación y creación de consultas, vea [Introducción a las consultas LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries) o [escribir su primera consulta con LINQ](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query).  
@@ -42,7 +40,7 @@ ms.locfileid: "51349431"
   
 -   Evaluar una consulta puede producir efectos secundarios, que son cambios en el valor de los datos o en el estado del programa. No todas las consultas tienen los efectos secundarios. Para determinar si una consulta se puede evaluar sin ningún riesgo ni efectos secundarios, debe entender el código que implementa la consulta.  
   
-##  <a name="BKMK_SteppingAndLinq"></a> Ejecución paso a paso y LINQ  
+##  <a name="BKMK_SteppingAndLinq"></a> Depuración paso a paso por instrucciones y LINQ  
  Si depura código LINQ, la ejecución paso a paso presenta algunas diferencias de comportamiento que debe conocer.  
   
 ### <a name="linq-to-sql"></a>LINQ to SQL  
@@ -106,7 +104,7 @@ End Function
   
  La consulta revisada llama a la función `IsEven` en cada paso a través de `items`. Puede usar las ventanas del depurador para ver si cada elemento cumple la condición especificada, y puede recorrer paso a paso el código en `IsEven`. El predicado en este ejemplo es bastante simple. Sin embargo, si tiene un predicado más complejo debe realizar la depuración, esta técnica puede ser muy útil.  
   
-##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Editar y continuar no se admite en LINQ  
+##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Función Editar y Continuar no admitida en LINQ  
  Editar y continuar admite cambios en las consultas LINQ con limitaciones. Para obtener más información, consulte [cambios admitidos en EnC](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))
   
 ## <a name="see-also"></a>Vea también

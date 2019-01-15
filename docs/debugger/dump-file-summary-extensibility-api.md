@@ -1,8 +1,6 @@
 ---
-title: API de extensibilidad de resumen de archivos de volcado de memoria | Documentos de Microsoft
-ms.custom: ''
+title: API de extensibilidad de resumen de archivos de volcado de memoria | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,18 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c4bd5b5102219af530d7159b5481447b9c4e7ea
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: ade8a24e8371fe78286b794ad0437b9f50ae30cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471026"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938924"
 ---
 # <a name="dump-file-summary-extensibility-api"></a>API de extensibilidad de resumen de archivos de volcado de memoria
-Al utilizar las API de extensibilidad en esta sección, puede ampliar el. Sistema de proyectos exe y **resumen de volcado de memoria** página para su uso con su propio motor de depuración personalizadas.  
+Mediante las API de extensibilidad de esta sección, puede ampliar el sistema de proyectos .Exe y la página **Resumen del volcado de memoria** para utilizarlos con su propio motor de depuración.  
   
 ## <a name="in-this-section"></a>En esta sección  
- Las API para ampliar la **resumen de volcado de memoria** página y la. Sistema de proyectos exe están disponibles en el espacio de nombres siguiente:  
+ Las API para ampliar la página **Resumen del volcado de memoria** y el sistema del proyecto .Exe están disponibles en el siguiente espacio de nombres:  
   
  <xref:Microsoft.VisualStudio.Debugger.VsDebugPresentationExtension>  
   

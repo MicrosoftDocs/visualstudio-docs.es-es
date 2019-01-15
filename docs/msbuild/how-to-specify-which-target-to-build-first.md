@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: Especificar qué destino utilizar primero al compilar | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Especificar qué destino usar primero al compilar | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - DefaultTargets attribute [MSBuild]
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d73ef1935f01a48d756ce39df934f3afa83c2d30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e1ba67ee5a4ea6831d21163b467f5d638a6f16c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864847"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967036"
 ---
-# <a name="how-to-specify-which-target-to-build-first"></a>Cómo: Especificar qué destino usar primero al compilar
+# <a name="how-to-specify-which-target-to-build-first"></a>Procedimiento Especificar qué destino usar primero al compilar
 Un archivo del proyecto puede contener uno o vario elementos `Target` que definen cómo se compila el proyecto. El motor [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) compila el primer proyecto que encuentra, así como las dependencias, a menos que el archivo del proyecto contenga un atributo `DefaultTargets`, un atributo `InitialTargets` o que un destino se especifique en la línea de comandos mediante el modificador **-target**.  
   
 ## <a name="use-the-initialtargets-attribute"></a>Usar el atributo InitialTargets  
@@ -77,4 +75,4 @@ Un archivo del proyecto puede contener uno o vario elementos `Target` que define
 ## <a name="see-also"></a>Vea también
   [MSBuild](../msbuild/msbuild.md)  
  [Destinos](../msbuild/msbuild-targets.md)   
- [Cómo: Limpiar los resultados de una compilación](../msbuild/how-to-clean-a-build.md)
+ [Cómo: Limpiar una compilación](../msbuild/how-to-clean-a-build.md)

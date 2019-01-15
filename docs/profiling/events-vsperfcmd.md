@@ -1,8 +1,6 @@
 ---
 title: Events (VSPerfCmd) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: eb139327-4783-4f2a-874c-efad377a7be4
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb99ec5bab1098f3551548698919cb1f2fc8f8b1
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 1b8d6085f21035408b33b229220e4aea10b2b6c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764337"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842088"
 ---
 # <a name="events-vsperfcmd"></a>Events (VSPerfCmd)
 La opción **Events** de *VSPerfCmd.exe* controla el registro del Seguimiento de eventos para Windows (ETW). Los datos de ETW se guardan en un archivo .etl que es independiente del archivo de datos del generador de perfiles. Los datos se pueden ver en un informe mediante el comando [VSPerfReport](../profiling/vsperfreport.md) /summary:etw.  
@@ -85,7 +83,7 @@ C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5
 ```  
   
 > [!IMPORTANT]
->  Si no excluye los eventos de inicio, dado que estos eventos no se muestran en el archivo de Managed Object Format (MOF), se muestran como GUID en el informe. Para obtener más información, vea esta página en el sitio web de Microsoft: [Sample Managed Object Format (MOF) File](http://go.microsoft.com/fwlink/?linkid=37118) [Archivo de ejemplo de Managed Object Format (MOF)].  
+>  Si no excluye los eventos de inicio, dado que estos eventos no se muestran en el archivo de Managed Object Format (MOF), se muestran como GUID en el informe. Para obtener más información, vea esta página en el sitio web de Microsoft: [Sample Managed Object Format (MOF) file](http://go.microsoft.com/fwlink/?linkid=37118) (Archivo Managed Object Format (MOF) de ejemplo).  
   
 ## <a name="see-also"></a>Vea también  
  [VSPerfCmd](../profiling/vsperfcmd.md)   

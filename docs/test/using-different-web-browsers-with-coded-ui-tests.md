@@ -2,19 +2,18 @@
 title: Usar diferentes exploradores web con las pruebas de IU codificadas
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f7301ef674e3ad3b940204be30bfffa878f88e45
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 77af6795e8c00a9226c54ee8d9c0de09c9154065
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895111"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986146"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Usar diferentes exploradores web con las pruebas automatizadas de IU
 
@@ -40,14 +39,14 @@ Al probar la aplicación web en varios tipos de explorador web, se emula mejor l
 
 ## <a name="how-do-i-record-and-play-back-coded-ui-tests-on-web-applications-using-the-supported-web-browsers"></a>¿Cómo grabar y reproducir pruebas de IU codificadas en aplicaciones web mediante los exploradores web admitidos?
 
-**Grabación**: debe usar el generador de pruebas automatizadas de IU para grabar la prueba de la aplicación web mediante Internet Explorer. Puede agregar opcionalmente validación y código personalizado para los controles probados utilizando un conjunto predefinido de propiedades, como lo haría normalmente para las pruebas de IU codificadas. Para obtener más información, vea [Usar la automatización de IU para probar el código](../test/use-ui-automation-to-test-your-code.md).
+**Grabación:** Debe usar el generador de pruebas automatizadas de IU para grabar la prueba de la aplicación web mediante Internet Explorer. Puede agregar opcionalmente validación y código personalizado para los controles probados utilizando un conjunto predefinido de propiedades, como lo haría normalmente para las pruebas de IU codificadas. Para obtener más información, vea [Usar la automatización de IU para probar el código](../test/use-ui-automation-to-test-your-code.md).
 
 > [!NOTE]
 > No puede grabar pruebas de IU codificadas con los exploradores Google Chrome o Mozilla Firefox.
 
- **Reproducción con Internet Explorer:** cuando no se especifica ningún explorador explícitamente, las pruebas se ejecutarán en Internet Explorer de forma predeterminada. Puede indicar explícitamente el explorador que se usará mediante el establecimiento de la propiedad **BrowserWindow.CurrentBrowser** en el código de prueba. Con Internet Explorer, esta propiedad se debe establecer en **IE** o **Internet Explorer**.
+ **Reproducción con Internet Explorer:** Cuando no se especifica ningún explorador explícitamente, las pruebas se ejecutan en Internet Explorer de forma predeterminada. Puede indicar explícitamente el explorador que se usará mediante el establecimiento de la propiedad **BrowserWindow.CurrentBrowser** en el código de prueba. Con Internet Explorer, esta propiedad se debe establecer en **IE** o **Internet Explorer**.
 
- **Reproducción con exploradores web que no son Internet Explorer:** para reproducir en exploradores web que no son Internet Explorer, cambie la propiedad BrowserWindow.CurrentBrowser del código de prueba a **Firefox** o **Chrome**.
+ **Reproducción con exploradores web que no son Internet Explorer:** Para reproducir en exploradores web que no son Internet Explorer, cambie la propiedad BrowserWindow.CurrentBrowser del código de prueba a **Firefox** o **Chrome**.
 
  Para reproducir pruebas en exploradores web que no son IE, debe instalar los **componentes Selenium para pruebas automatizadas de interfaz de usuario en distintos exploradores**.
 

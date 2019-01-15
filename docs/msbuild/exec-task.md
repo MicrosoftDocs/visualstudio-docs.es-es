@@ -1,8 +1,6 @@
 ---
 title: Exec (Tarea) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Exec
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bbefb90cad3b2aa3e6e7b0870548d44567ea8914
-ms.sourcegitcommit: 56f3c31f1a06f6a6d2a8793b1abfa60cdf482497
+ms.openlocfilehash: 6fd259f00fdb5af2e3125782bda28c17858eff80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48817326"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959253"
 ---
 # <a name="exec-task"></a>Exec (tarea)
 Ejecuta el programa o comando especificado mediante los argumentos especificados.  
@@ -47,7 +45,7 @@ Ejecuta el programa o comando especificado mediante los argumentos especificados
 |`Outputs`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene los elementos de salida de la tarea. La tarea `Exec` no los establece por sí misma. En cambio, puede proporcionarlos como si los estableciera, para que se puedan utilizar después en el proyecto.|  
 |`StdErrEncoding`|Parámetro de salida `String` opcional.<br /><br /> Especifica la codificación del flujo de error estándar de la tarea capturada. El valor predeterminado es la codificación generada de la consola actual.|  
 |`StdOutEncoding`|Parámetro de salida `String` opcional.<br /><br /> Especifica la codificación del flujo de salida estándar de la tarea capturada. El valor predeterminado es la codificación generada de la consola actual.|  
-|`WorkingDirectory`|Parámetro `String` opcional.<br /><br /> Especifica el directorio en el que se ejecutará el comando.<br /><br />Predeterminado: directorio de trabajo actual del proyecto.|  
+|`WorkingDirectory`|Parámetro `String` opcional.<br /><br /> Especifica el directorio en el que se ejecutará el comando.<br /><br />Predeterminado: Directorio de trabajo actual del proyecto.|  
   
 ## <a name="remarks"></a>Comentarios  
  Esta tarea es útil cuando una tarea de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] específica para el trabajo que desea realizar no está disponible. Sin embargo, la tarea `Exec`, a diferencia de una tarea más específica, no puede realizar un procesamiento adicional ni operaciones condicionales en función del resultado de la herramienta o el comando que se ejecuta.

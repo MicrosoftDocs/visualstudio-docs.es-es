@@ -1,8 +1,6 @@
 ---
 title: 'Tutorial: Crear un arranque personalizado con un aviso de privacidad | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18ac2ad1125067109b0ca02d552e997f2c30482f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7e32ea7053d79a64e0c1502ed251d55f6150500a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873791"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882727"
 ---
-# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Tutorial: Crear un programa previo personalizado con un mensaje de privacidad
+# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Tutorial: Crear a un arranque personalizado con un aviso de privacidad
 Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuando estén disponibles los ensamblados con versiones más recientes de los archivos y las versiones de ensamblado. Para asegurarse de que los clientes dar su consentimiento a este comportamiento, puede mostrar un aviso de privacidad a ellos. A continuación, puede elegir si se debe conceder permiso a la aplicación se actualice automáticamente. Si la aplicación no tiene permiso para actualizar automáticamente, no se instala.  
   
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
@@ -148,7 +146,7 @@ Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuand
   
 -   Un documento para los términos de licencia del software.  
   
-#### <a name="step-1-to-create-the-bootstrapper-directory"></a>Paso 1: Crear el directorio de arranque  
+#### <a name="step-1-to-create-the-bootstrapper-directory"></a>Paso 1: Para crear el directorio de arranque  
   
 1.  Cree un directorio denominado **UpdateConsentDialog** en el *%PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*.  
   
@@ -160,7 +158,7 @@ Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuand
     > [!NOTE]
     >  Cree un nuevo directorio para cada configuración regional. Por ejemplo, puede agregar subdirectorios para las configuraciones regionales fr y de. Estos directorios contendría las cadenas de francés y alemán y paquetes de idioma, si es necesario.  
   
-#### <a name="step-2-to-create-the-productxml-manifest-file"></a>Paso 2: Crear el archivo de manifiesto product.xml  
+#### <a name="step-2-to-create-the-productxml-manifest-file"></a>Paso 2: Para crear el archivo de manifiesto product.xml  
   
 1.  Cree un archivo de texto llamado *product.xml*.  
   
@@ -192,7 +190,7 @@ Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuand
   
 3.  Guarde el archivo en el directorio de arranque UpdateConsentDialog.  
   
-#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Paso 3: Crear el manifiesto package.xml archivo y el software de los términos de licencia  
+#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Paso 3: Para crear el archivo de manifiesto package.xml y los términos de licencia de software  
   
 1.  Cree un archivo de texto llamado *package.xml*.  
   
@@ -236,7 +234,7 @@ Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuand
   
 1.  En **el Explorador de soluciones**, haga clic en el nombre de la aplicación que desea implementar.  
   
-2.  En el **proyecto** menú, haga clic en *ProjectName* **propiedades**.  
+2.  En el menú **Proyecto**, haga clic en **Propiedades** de *NombreDelProyecto*.  
   
 3.  Haga clic en el **publicar** página y, a continuación, haga clic en **requisitos previos**.  
   
@@ -254,7 +252,7 @@ Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuand
   
 1.  En **el Explorador de soluciones**, haga clic en el nombre de la aplicación que desea implementar.  
   
-2.  En el **proyecto** menú, haga clic en *ProjectName* **propiedades**.  
+2.  En el menú **Proyecto**, haga clic en **Propiedades** de *NombreDelProyecto*.  
   
 3.  Haga clic en el **publicar** página y, a continuación, haga clic en **publicar ahora**.  
   
@@ -266,13 +264,13 @@ Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuand
   
 6.  Lea el contrato de licencia de software y, a continuación, haga clic en **Accept**.  
   
-     La aplicación del cuadro de diálogo de consentimiento de actualización aparece y muestra el siguiente texto: comprobaciones de la aplicación que va a instalar las actualizaciones más recientes en la Web. Al hacer clic en acepto, autorizar a la aplicación para buscar actualizaciones automáticamente en Internet.  
+     La aplicación del cuadro de diálogo de consentimiento de actualización aparece y muestra el texto siguiente: Comprueba la aplicación que va a instalar las actualizaciones más recientes en la Web. Al hacer clic en acepto, autorizar a la aplicación para buscar actualizaciones automáticamente en Internet.  
   
 7.  Cierre la aplicación o haga clic en Cancelar.  
   
-     La aplicación muestra un error: se produjo un error durante la instalación de componentes del sistema para *ApplicationName*. El programa de instalación no puede continuar hasta que se hayan instalado correctamente todos los componentes del sistema.  
+     La aplicación muestra un error: Se produjo un error durante la instalación de componentes del sistema para *ApplicationName*. El programa de instalación no puede continuar hasta que se hayan instalado correctamente todos los componentes del sistema.  
   
-8.  Haga clic en detalles para mostrar el siguiente mensaje de error: cuadro de diálogo de consentimiento de componente actualizar no se pudo instalar el siguiente mensaje de error: "no se acepta el contrato de actualización automática". No se pudo instalar los componentes siguientes:-cuadro de diálogo de consentimiento de actualización  
+8.  Haga clic en detalles para mostrar el mensaje de error siguiente: Cuadro de diálogo de componente actualización consentimiento no se pudo instalar con el mensaje de error siguiente: "No se acepta el contrato de actualización automática". No se pudo instalar los componentes siguientes:-cuadro de diálogo de consentimiento de actualización  
   
 9. Haga clic en **Cerrar**.  
   
@@ -280,7 +278,7 @@ Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuand
   
 1.  En **el Explorador de soluciones**, haga clic en el nombre de la aplicación que desea implementar.  
   
-2.  En el **proyecto** menú, haga clic en *ProjectName* **propiedades**.  
+2.  En el menú **Proyecto**, haga clic en **Propiedades** de *NombreDelProyecto*.  
   
 3.  Haga clic en el **publicar** página y, a continuación, haga clic en **publicar ahora**.  
   
@@ -292,7 +290,7 @@ Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuand
   
 6.  Lea el contrato de licencia de software y, a continuación, haga clic en **Accept**.  
   
-     La aplicación del cuadro de diálogo de consentimiento de actualización aparece y muestra el siguiente texto: comprobaciones de la aplicación que va a instalar las actualizaciones más recientes en la Web. Al hacer clic en acepto, autorizar a la aplicación para buscar actualizaciones automáticamente en Internet.  
+     La aplicación del cuadro de diálogo de consentimiento de actualización aparece y muestra el texto siguiente: Comprueba la aplicación que va a instalar las actualizaciones más recientes en la Web. Al hacer clic en acepto, autorizar a la aplicación para buscar actualizaciones automáticamente en Internet.  
   
 7.  Haga clic en **acepto**y, a continuación, haga clic en **continuar**.  
   
@@ -301,8 +299,8 @@ Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuand
 8.  Si aparece el cuadro de diálogo de instalación de la aplicación, haga clic en **instalar**.  
   
 ## <a name="see-also"></a>Vea también  
- [Requisitos previos de implementación de aplicación](../deployment/application-deployment-prerequisites.md)   
- [Crear paquetes de arranque](../deployment/creating-bootstrapper-packages.md)   
- [Cómo: crear un manifiesto de producto](../deployment/how-to-create-a-product-manifest.md)   
- [Cómo: crear un manifiesto del paquete](../deployment/how-to-create-a-package-manifest.md)   
- [Referencia de esquema de paquete y del producto](../deployment/product-and-package-schema-reference.md)
+ [Requisitos previos para la implementación de aplicaciones](../deployment/application-deployment-prerequisites.md)   
+ [Creación de paquetes de programa previo](../deployment/creating-bootstrapper-packages.md)   
+ [Cómo: Creación de un manifiesto de producto](../deployment/how-to-create-a-product-manifest.md)   
+ [Cómo: Creación de un manifiesto de paquete](../deployment/how-to-create-a-package-manifest.md)   
+ [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)

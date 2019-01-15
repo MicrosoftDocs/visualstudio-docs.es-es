@@ -1,8 +1,6 @@
 ---
 title: IDiaEnumLineNumbers | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 388bb5e16ae54199989dd125e0c3580102bca292
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: 933cbe4f95c5082fb4c5d8b9958c7cd43e9e95d3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057326"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838536"
 ---
 # <a name="idiaenumlinenumbers"></a>IDiaEnumLineNumbers
 Enumera los distintos números de línea incluidos en el origen de datos.  
@@ -27,7 +25,7 @@ Enumera los distintos números de línea incluidos en el origen de datos.
 ## <a name="syntax"></a>Sintaxis  
   
 ```  
-IDiaEnumLineNumbers : IUnknown  
+IDiaEnumLineNumbers : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
@@ -88,17 +86,17 @@ void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
 ```  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: Dia2.h  
+ Encabezado: dia2.h  
   
  Biblioteca: diaguids.lib  
   
  Archivo DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Vea también  
- [Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Interfaces (SDK de acceso a la interfaz de depuración)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [Findlinesbylinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
- [Findlinesbyrva](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)   
- [Findlinesbyva](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)   
- [Findlines](../../debugger/debug-interface-access/idiasession-findlines.md)   
+ [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
+ [IDiaSession::findLinesByRVA](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)   
+ [IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)   
+ [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)   
  [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)

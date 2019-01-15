@@ -2,7 +2,6 @@
 title: Página de opciones, Propiedades de nodo Editor de texto
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Text Editor node properties
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e16bdece503babe9a50bc83d64da582d390843b6
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 3339884fe14b0dbc40fe9297f06b0462696b8040
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670824"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935676"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Página de opciones, Propiedades de nodo Editor de texto
 En este documento, se describen algunas páginas (o colecciones de propiedades) asociadas a la categoría **Editor de texto**, `DTE.Properties("TextEditor", <Property Page>)`, del cuadro de diálogo **Opciones**. El título de cada subsección es la llamada que se usa para obtener acceso a la colección `Properties` y, en la tabla de cada subsección, se muestran las propiedades que se encuentran en la colección.
@@ -56,7 +55,7 @@ En este documento, se describen algunas páginas (o colecciones de propiedades) 
 |WordWrap|Get/Set (Boolean)|Determina si se ajustan las líneas largas en los límites de las palabras. Si se establece como `true`, el elemento de propiedades `VirtualSpace` (de esta lista) se establecerá en `false`.|
 |WordWrapGlyphs|Get/Set (Boolean)|Muestra un glifo al final de una línea; esto indica que la línea se ajusta a la línea siguiente.|
 |EnableLeftClickForURLs|Get/Set (Boolean)|Determina si el editor subraya las direcciones URL y permite efectuar un solo clic con el botón izquierdo del mouse para saltar a la dirección URL del explorador web registrado en el sistema.|
-|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Determina el estilo de sangría: Default, Smart o None.|
+|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Determina el estilo de sangría: Predeterminado, Inteligente o Ninguno.|
 |TabSize|Get/Set (Long)|Representa el número de espacios a los que equivale un tabulador. Si se selecciona un entero fuera del intervalo de 1 a 60 (incluidos), se producirá un error.|
 |InsertTabs|Get/Set (Boolean)|Si es `True`, se utilizan caracteres de tabulación al aplicar sangría.|
 |IndentSize|Get/Set (Long)|Representa el número de espacios a los que equivale un nivel de sangría. Si se selecciona un valor entero fuera del intervalo de 1 a 60 (incluidos), se producirá un error.|

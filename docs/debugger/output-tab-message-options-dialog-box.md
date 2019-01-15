@@ -1,8 +1,6 @@
 ---
-title: Pestaña de resultados, cuadro de diálogo Opciones de mensaje | Documentos de Microsoft
-ms.custom: ''
+title: Salida (pestaña), cuadro de diálogo Opciones de mensaje | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - message options, Output
@@ -12,32 +10,32 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e559edf5028d339b6086a413fb2dcb040aafb355
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: c79b823b850aabc98290df0157da673d11d9a268
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475410"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885840"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>Pestaña Salida (Cuadro de diálogo Opciones de mensaje)
-Use la **salida** ficha para especificar qué datos de cada mensaje a la lista en [vista mensajes](../debugger/messages-view.md). Para mostrar la [cuadro de diálogo Opciones de mensaje](../debugger/message-options-dialog-box.md), elija **mensajes de registro** desde el **Spy** menú.  
+Use la **salida** tab para especificar qué datos de cada mensaje a la lista en [vista mensajes](../debugger/messages-view.md). Para mostrar el [cuadro de diálogo Opciones de mensaje](../debugger/message-options-dialog-box.md), elija **los mensajes de registro** desde el **Spy** menú.  
   
- Las siguientes opciones están disponibles en la **salida** ficha:  
+ Las siguientes opciones están disponibles en el **salida** pestaña:  
   
  **Números de línea**  
  Mostrar números de línea.  
   
  **Nivel de anidamiento de mensaje**  
- Prefijo mensajes anidados con un punto por nivel.  
+ Prefijo de mensajes anidados con un punto por nivel.  
   
- **Parámetros de mensaje sin formato**  
- Mostrar el valor hexadecimal **wParam** y **lParam** valores.  
+ **Parámetros de mensaje originales**  
+ Mostrar hexadecimal **wParam** y **lParam** valores.  
   
- **Parámetros de mensaje descodificado**  
+ **Parámetros de mensaje descodificados**  
  Mostrar los resultados de la descodificación de mensaje específico de la **wParam** y **lParam** valores.  
   
- **Valores devueltos sin formato**  
- Mostrar el valor hexadecimal **lResult** valor devuelto.  
+ **Valores devueltos originales**  
+ Mostrar hexadecimal **lResult** valor devuelto.  
   
  **Valores devueltos descodificados**  
  Mostrar los resultados de la descodificación de mensaje específico de la **lResult** valor devuelto.  
@@ -46,12 +44,12 @@ Use la **salida** ficha para especificar qué datos de cada mensaje a la lista e
  El tiempo transcurrido desde que se inició el sistema de Windows (sólo para mensajes expuestos).  
   
  **Posición del Mouse en el mensaje**  
- Las coordenadas de pantalla del mouse cuando se expuso el mensaje (sólo para mensajes expuestos).  
+ Las coordenadas de pantalla del puntero del mouse cuando se expuso el mensaje (sólo para mensajes expuestos).  
   
- **Máximo de líneas**  
- Limitar el número de líneas que se conservan en la vista mensajes seleccionada actualmente.  
+ **Líneas como máximo**  
+ Limitar el número de líneas que se conservan en la vista mensajes actualmente seleccionada.  
   
- **Registrar también en el archivo**  
+ **También registrar mensajes en el archivo**  
  Especifique un archivo de salida para el registro de mensajes. Este archivo de salida se escribe simultáneamente con la ventana de registro de mensajes.  
   
  **Guardar configuración como predeterminada**  

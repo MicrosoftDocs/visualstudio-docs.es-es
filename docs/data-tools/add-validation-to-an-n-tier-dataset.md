@@ -14,15 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20a1cd033763e7aa98eb2798357109e300deaff1
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
-ms.translationtype: HT
+ms.openlocfilehash: 5aa324321630d172ddf8fb7938e1bab34a02b8e0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739473"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868214"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Agregar validación a un conjunto de datos de n niveles
 Agregar validación a un conjunto de datos separado en una solución de n niveles es básicamente igual que agregar validación a un conjunto de datos de un solo archivo (un conjunto de datos en un único proyecto). La ubicación sugerida para realizar la validación en datos está durante <xref:System.Data.DataTable.ColumnChanging> y/o los eventos <xref:System.Data.DataTable.RowChanging> de una tabla de datos.
@@ -169,5 +168,5 @@ End Sub
 ## <a name="see-also"></a>Vea también
 
 - [Introducción a las aplicaciones de datos de n niveles](../data-tools/n-tier-data-applications-overview.md)
-- [Tutorial: Creación de una aplicación de datos con N niveles](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [Tutorial: Creación de una aplicación de datos de n niveles](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Validar los datos en conjuntos de datos](../data-tools/validate-data-in-datasets.md)

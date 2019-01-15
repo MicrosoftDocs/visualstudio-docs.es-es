@@ -1,8 +1,6 @@
 ---
-title: DebugBreak y __debugbreak | Documentos de Microsoft
-ms.custom: ''
+title: DebugBreak y __debugbreak | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - DebugBreak
@@ -21,20 +19,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5eda428410733bf72174676f5a2303a7f625aa7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: db3af2a2bef69a9329a20523ad5bed4444631410
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470478"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933854"
 ---
 # <a name="debugbreak-and-debugbreak"></a>DebugBreak y __debugbreak
-Puede llamar a la función DebugBreak de Win32 o la [__debugbreak](/cpp/intrinsics/debugbreak) intrínseco en cualquier momento en el código. `DebugBreak` y `__debugbreak` tienen el mismo efecto que Establecer un punto de interrupción en dicha posición.  
+La función DebugBreak de Win32 o la función [__debugbreak](/cpp/intrinsics/debugbreak) intrínseca se puede llamar en cualquier punto del código. `DebugBreak` y `__debugbreak` tienen el mismo efecto que Establecer un punto de interrupción en dicha posición.  
   
  Como `DebugBreak` es una llamada a una función del sistema, se deben instalar los símbolos de depuración del sistema para asegurarse de que se muestra la información correcta de la pila de llamadas tras una interrupción. De lo contrario, la información de la pila de llamadas mostrada por el depurador podría ser incorrecta. Si utiliza `__debugbreak`, no es necesario ningún símbolo.  
   
 ## <a name="see-also"></a>Vea también  
- [Funciones intrínsecas del compilador](/cpp/intrinsics/compiler-intrinsics)   
+ [Intrínsecos del controlador](/cpp/intrinsics/compiler-intrinsics)   
  [Seguridad del depurador](../debugger/debugger-security.md)   
  [Depuración de código nativo](../debugger/debugging-native-code.md)   
- [Especificar los símbolos (.pdb) y archivos de código fuente](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+ [Especificar archivos de código fuente y símbolos (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

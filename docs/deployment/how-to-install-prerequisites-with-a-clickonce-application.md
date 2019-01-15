@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: instalar requisitos previos mediante una aplicación ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Instalar requisitos previos mediante una aplicación ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,20 +16,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e363b021f8dfb82aa641a1baac4d2f33e0bd3d2e
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 2e474bba5168867180f0f50a927ea4c71ebe0370
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152479"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907857"
 ---
-# <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Cómo: instalar requisitos previos mediante una aplicación ClickOnce
+# <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Procedimiento Requisitos previos de instalación con una aplicación ClickOnce
 Todos los [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicaciones requieren que la versión correcta de .NET Framework está instalada en un equipo antes de poder ejecutar; muchas aplicaciones tienen también otros requisitos previos. Al publicar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación, puede elegir un conjunto de componentes de requisitos previos pueden empaquetarse junto con la aplicación. Durante la instalación, se realizará una comprobación para que todos los requisitos previos determinar si ya existe; Si no se instalará antes de instalar el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación.  
   
  En lugar de empaquetar y publicar los requisitos previos, también puede especificar una ubicación de descarga de los componentes. Por ejemplo, en lugar de incluir requisitos previos con todas las aplicaciones que publique, puede usar un recurso compartido de archivos centralizado o la ubicación Web que contenga los instaladores para todos los requisitos previos, durante la instalación, se descargarán los componentes y instalada desde esa ubicación.  
   
 > [!IMPORTANT]
->  Debe agregar los paquetes de instalador de requisitos previos para el equipo de desarrollo antes de publicar su primer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Para obtener más información, consulte [Cómo: incluir requisitos previos mediante una aplicación ClickOnce](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).  
+>  Debe agregar los paquetes de instalador de requisitos previos para el equipo de desarrollo antes de publicar su primer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Para obtener más información, vea [Cómo: Inclusión de requisitos previos con una aplicación ClickOnce](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).  
   
  Requisitos previos se administran en el **requisitos previos** cuadro de diálogo, accesible desde el **publicar** panel de la **Diseñador de proyectos**.  
   
@@ -71,4 +69,4 @@ Todos los [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] apli
   
 ## <a name="see-also"></a>Vea también  
  [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Cómo: publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Cómo: Publicación de una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

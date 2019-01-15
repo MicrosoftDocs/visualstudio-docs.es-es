@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: Hacer referencia al nombre o la ubicación del archivo de proyecto | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Hacer referencia al nombre o la ubicación del archivo de proyecto | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - locations, referencing
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dceca1e518783f405490d3f2527156bd20bf81aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ce03be9eb9d1fa4926eb1100f9a2aad5612a61d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911530"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906038"
 ---
-# <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Cómo: Hacer referencia al nombre o la ubicación del archivo de proyecto
+# <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Procedimiento Hacer referencia al nombre o la ubicación del archivo de proyecto
 Puede utilizar el nombre o la ubicación del proyecto en el archivo del proyecto sin tener que crear su propia propiedad. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proporciona propiedades reservadas que hacen referencia al nombre de archivo del proyecto y a otras propiedades relacionadas con el proyecto. Para obtener más información sobre las propiedades reservadas, vea [Propiedades reservadas y conocidas de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).  
   
 ## <a name="use-the-project-properties"></a>Usar las propiedades de proyecto

@@ -2,7 +2,6 @@
 title: Compilar (Página, Diseñador de proyectos) (C#)
 ms.date: 06/20/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuild
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b003b3f965ab4f3857e2a532ae715d99533aa8e7
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: b690340440cfeeb13cecd82ed39109f688d24760
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783823"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908022"
 ---
 # <a name="build-page-project-designer-c"></a>Compilar (Página, Diseñador de proyectos) (C#)
 Use la página **Compilar** del **Diseñador de proyectos** para especificar las propiedades de configuración de compilación del proyecto. Esta página se aplica solo a proyectos de [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].
@@ -37,7 +36,7 @@ Las siguientes opciones le permiten seleccionar la configuración y la plataform
 
 **Configuración** Especifica qué opciones de configuración se van a mostrar o modificar. Los valores pueden ser **(Depurar) activa** (es el valor predeterminado), **Depuración**, **Lanzamiento** o **Todas las configuraciones**.
 
-**Plataforma** Especifica qué configuración de plataforma se va a mostrar o modificar. La configuración predeterminada es **(Cualquier CPU) activa**. Puede cambiar la plataforma activa mediante el **Administrador de configuración**. Para obtener más información, consulte [Cómo: Crear y editar configuraciones](../../ide/how-to-create-and-edit-configurations.md).
+**Plataforma** Especifica qué configuración de plataforma se va a mostrar o modificar. La configuración predeterminada es **(Cualquier CPU) activa**. Puede cambiar la plataforma activa mediante el **Administrador de configuración**. Para obtener más información, vea [Cómo: Crear y editar configuraciones](../../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="general"></a>General
 Las opciones siguientes le permiten configurar varias opciones del compilador de C#.

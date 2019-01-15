@@ -1,9 +1,7 @@
 ---
 title: 'Paso 7: Mantener visibles los pares'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 42e1d08c-7b2e-4efd-9f47-85d6206afe35
 author: TerryGLee
@@ -11,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e27a5378aacec6af4ca07f13242f24bd665a762e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d541c28148c6e1fca9b1b1b7411b2b4d99715d8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747859"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881002"
 ---
 # <a name="step-7-keep-pairs-visible"></a>Paso 7: Mantener visibles los pares
 El juego funciona bien siempre y cuando el jugador elija únicamente parejas de iconos que no coinciden. Sin embargo, piense qué sucedería si el jugador elige una pareja coincidente. En lugar de hacer que los iconos desaparezcan activando el temporizador (con el método <xref:System.Windows.Forms.Timer.Start>), el juego se debería restablecer automáticamente para dejar de realizar el seguimiento de las etiquetas mediante las variables de referencia `firstClicked` y `secondClicked`, sin restablecer los colores de las dos etiquetas elegidas.
@@ -61,6 +59,6 @@ El juego funciona bien siempre y cuando el jugador elija únicamente parejas de 
 
 ## <a name="to-continue-or-review"></a>Para continuar o revisar
 
--   Para ir al paso siguiente del tutorial, consulte [Paso 8: Agregar un método para comprobar si el jugador ganó](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).
+-   Para ir al siguiente paso del tutorial, vea [Paso 8: Agregar un método para comprobar si el jugador ganó](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).
 
 -   Para volver al paso anterior del tutorial, vea [Paso 6: Agregar un temporizador](../ide/step-6-add-a-timer.md).
