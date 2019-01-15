@@ -8,15 +8,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a741a506338066dddbee2cdbfd701ad3bfb4c922
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea0b73470bc9f3bed76328c55d823cef3c5b8e9e
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929703"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269324"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Controlar el color, el estilo de línea y otras propiedades de forma
-Algunas propiedades de la forma como color puede ser 'expuesto -', es decir, vinculan a una propiedad de dominio de la forma. Otros tienen que se puede controlar directamente.
+
+Algunas propiedades de la forma como color pueden 'exponerse'. Es decir, las propiedades se pueden vincular a una propiedad de dominio de la forma. Otros tienen que se puede controlar directamente.
 
 ## <a name="exposing-a-property"></a>Exponer una propiedad
  Algunas propiedades de la forma como color se pueden vincular al valor de una propiedad de dominio.

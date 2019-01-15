@@ -1,8 +1,6 @@
 ---
 title: ClickOnce y configuración de la aplicación | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d3cf6320401f58cd8ea1733e3b972202ba9b6d3
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 40077a30a49842187c24b4cf8b0cba18b3d0a46a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081099"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850971"
 ---
-# <a name="clickonce-and-application-settings"></a>Configuración de ClickOnce y la aplicación
+# <a name="clickonce-and-application-settings"></a>ClickOnce y configuración de la aplicación
 Configuración de la aplicación para Windows Forms facilita crear, almacenar y mantener aplicaciones personalizadas y las preferencias del usuario en el cliente. El siguiente documento describe cómo funcionan los archivos de configuración de aplicación en una aplicación ClickOnce y cómo ClickOnce migra la configuración cuando el usuario realiza una actualización a la siguiente versión.  
   
  La siguiente información se aplica solo para el proveedor de configuración de aplicación predeterminado, el \<xref:System.Configuration.LocalFileSettingsProvider > clase. Si se proporciona un proveedor personalizado, ese proveedor determinará cómo almacena sus datos y cómo actualiza la configuración entre versiones. Para obtener más información sobre los proveedores de configuración de aplicación, consulte [arquitectura de configuración de aplicación](/dotnet/framework/winforms/advanced/application-settings-architecture).  
@@ -56,6 +54,6 @@ Si ha creado su propia configuración de la aplicación de clase de contenedor y
   
 ## <a name="see-also"></a>Vea también  
  [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)   
- [Introducción a la configuración de aplicación](/dotnet/framework/winforms/advanced/application-settings-overview)   
+ [Introducción a la configuración de la aplicación](/dotnet/framework/winforms/advanced/application-settings-overview)   
  [Información general sobre la memoria caché de ClickOnce](../deployment/clickonce-cache-overview.md)   
- [Acceder a los datos locales y remotos en aplicaciones ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
+ [Acceso a datos locales y remotos en aplicaciones ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

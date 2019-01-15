@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: editar un valor del registro | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Editar un valor del registro | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.register.edit
@@ -21,20 +19,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d0337f7c77d1ed601c7a6c13c702f4758cbfdbd
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: a84cd75dd6ae6ecd2e62bd41ed384cd03305bbf0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257089"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963460"
 ---
-# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Cómo: editar un valor del registro (C#, C++, Visual Basic, F#)
+# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Procedimiento Editar un valor del registro (C#, C++, Visual Basic, F#)
 
-La ventana registros sólo está disponible si la depuración de nivel de dirección está habilitada en el **opciones** cuadro de diálogo, **depuración** nodo.  
+La ventana Registros solo está disponible si está habilitada la depuración de nivel de dirección en el cuadro de diálogo **Opciones**, nodo **Depuración**.  
   
 ### <a name="to-change-the-value-of-a-register"></a>Para cambiar el valor de un registro  
   
-1.  En el **registra** ventana, utilice la tecla TAB o el mouse para mover la inserción del punto en el valor que desee cambiar. Cuando empiece a escribir, el cursor deberá estar situado delante del valor que desea sobrescribir.  
+1.  En la ventana **Registros**, utilice la tecla TAB o el mouse para mover el punto de inserción hasta el valor que desee cambiar. Cuando empiece a escribir, el cursor deberá estar situado delante del valor que desea sobrescribir.  
   
 2.  Escriba el nuevo valor.  
   
@@ -45,4 +43,4 @@ La ventana registros sólo está disponible si la depuración de nivel de direcc
     >  La modificación de valores de punto flotante puede dar lugar a ligeras imprecisiones debido a la conversión de decimal a binario de los componentes fraccionarios. Incluso una operación de edición aparentemente inocua puede causar cambios en alguno de los bits menos significativos de un registro de punto flotante.  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Usar la ventana Registros](../debugger/how-to-use-the-registers-window.md)
+ [Cómo: Uso de la ventana Registros](../debugger/how-to-use-the-registers-window.md)

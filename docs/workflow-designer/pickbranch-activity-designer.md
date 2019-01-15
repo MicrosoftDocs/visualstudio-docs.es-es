@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3a692d08a8117eca4bbd4765cc9d21ba7b8c770
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 86948845f2537f0785daeebbc349292891a7a3e2
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860262"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269870"
 ---
 # <a name="pickbranch-activity-designer"></a>Diseñador de actividades PickBranch
 
@@ -32,7 +32,7 @@ Acceso a la **PickBranch** diseñador en la **flujo de Control** categoría de l
 
 Dos vacío <xref:System.Activities.Statements.PickBranch> objetos con los nombres para mostrar **Branch1** y **Branch2** se crean de forma predeterminada como elementos de un <xref:System.Activities.Statements.Pick> actividad cuando la **elegir** Diseñador de actividad se coloca inicialmente en el Diseñador de flujo de trabajo. Los respectivos <xref:System.Activities.Statements.PickBranch.DisplayName%2A> se pueden editar los valores de propiedad en el **PickBranch** encabezado del diseñador o dentro del **propiedades** ventana para cada bifurcación.
 
-Hay dos maneras de agregar <xref:System.Activities.Statements.PickBranch> objetos a la colección de un <xref:System.Activities.Statements.Pick> objeto: arrastrando y colocando el **PickBranch** diseñador desde el **cuadro de herramientas**, o mediante el menú contextual dentro de la **elegir** superficie de diseño:
+Hay dos maneras de agregar <xref:System.Activities.Statements.PickBranch> objetos a la colección de un <xref:System.Activities.Statements.Pick> objeto: arrastrando y colocando el **PickBranch** diseñador desde el **cuadro de herramientas**, o mediante el menú contextual de dentro de la **elegir** superficie de diseño:
 
 - El **PickBranch** el diseñador crea un <xref:System.Activities.Statements.PickBranch> cuando se arrastra desde el **cuadro de herramientas** y coloca en una de las bifurcaciones de un **elegir** Diseñador de actividad en el Superficie del Diseñador de flujo de trabajo. Los nuevos objetos <xref:System.Activities.Statements.PickBranch> se pueden colocar dentro del diseñador <xref:System.Activities.Statements.Pick> a la izquierda o derecha de cualquier elemento <xref:System.Activities.Statements.PickBranch> existente que ya se encuentre en la colección. Al arrastrar un **PickBranch** diseñador la **elegir** diseñador con un mouse, el **elegir** diseñador utiliza una banda azul grisáceo vertical para indicar dónde el <xref:System.Activities.Statements.PickBranch> se agrega una posición determinada del mouse.
 

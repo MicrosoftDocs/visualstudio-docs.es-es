@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c4e27f5ce9536e7128330ebe932709a9be408b7e
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MTE95
+ms.openlocfilehash: a84fb954d0d632c217e9a4282f7c33fd6226d677
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305268"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987225"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Enlazar controles a los datos en Visual Studio
 
@@ -30,9 +29,9 @@ En este tema se describen los orígenes de datos que puede utilizar para crear c
 
 ## <a name="data-sources"></a>Orígenes de datos
 
-En el contexto de enlace de datos, un origen de datos representa los datos en memoria que se puede enlazar a la interfaz de usuario. En términos prácticos, un origen de datos puede ser una clase de Entity Framework, un conjunto de datos, un punto de conexión de servicio que se encapsula en un objeto de proxy. NET, una clase LINQ to SQL, o cualquier objeto .NET o colección. Algunos orígenes de datos permiten crear controles enlazados a datos arrastrando los elementos de la ventana Orígenes de datos **, mientras que otros no lo permiten. En la tabla siguiente se muestran los orígenes de datos que se admiten.
+En el contexto de enlace de datos, un origen de datos representa los datos en memoria que se puede enlazar a la interfaz de usuario. En términos prácticos, un origen de datos puede ser una clase de Entity Framework, un conjunto de datos, un punto de conexión de servicio que se encapsula en un objeto de proxy. NET, una clase LINQ to SQL, o cualquier objeto .NET o colección. Algunos orígenes de datos permiten crear controles enlazados a datos arrastrando los elementos de la ventana **Orígenes de datos**, mientras que otros no lo permiten. En la tabla siguiente se muestran los orígenes de datos que se admiten.
 
-| Origen de datos | Compatibilidad con arrastrar y colocar en el Diseñador de Windows Forms** | Compatibilidad con arrastrar y colocar en WPF Designer** | Compatibilidad con arrastrar y colocar en el Diseñador de Silverlight** |
+| Origen de datos | Compatibilidad con arrastrar y colocar en el **Diseñador de Windows Forms** | Compatibilidad con arrastrar y colocar en **WPF Designer** | Compatibilidad con arrastrar y colocar en el **Diseñador de Silverlight** |
 | - | - | - | - |
 | Conjunto de datos | Sí | Sí | No |
 | Entity Data Model | Sí<sup>1</sup> | Sí | Sí |
@@ -43,15 +42,15 @@ En el contexto de enlace de datos, un origen de datos representa los datos en me
 
 1. Generar el modelo mediante el **Entity Data Model** asistente, a continuación, arrastrar esos objetos al diseñador.
 
-2. Las clases LINQ to SQL no aparecen en la ventana Orígenes de datos **. Sin embargo, puede agregar un nuevo origen de datos de objeto basado en clases LINQ to SQL y, a continuación, arrastrar esos objetos al diseñador para crear los controles enlazados a datos. Para obtener más información, consulte [Tutorial: crear clases de LINQ to SQL (Object Relational Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
+2. Las clases LINQ to SQL no aparecen en la ventana **Orígenes de datos**. Sin embargo, puede agregar un nuevo origen de datos de objeto basado en clases LINQ to SQL y, a continuación, arrastrar esos objetos al diseñador para crear los controles enlazados a datos. Para obtener más información, vea [Tutorial: Crear clases LINQ to SQL (Object Relational Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
 
 ## <a name="data-sources-window"></a>Ventana de orígenes de datos
 
-Los orígenes de datos están disponible para su proyecto como elementos en la ventana Orígenes de datos **. Esta ventana está visible cuando una superficie de diseño del formulario es la ventana activa en el proyecto, o bien puede abrirla (cuando se abre un proyecto) eligiendo **vista** > **Other Windows**  >   **Orígenes de datos**. Puede arrastrar elementos desde esta ventana para crear controles enlazados a los datos subyacentes y también puede configurar los orígenes de datos con el botón secundario.
+Los orígenes de datos están disponible para su proyecto como elementos en la ventana **Orígenes de datos**. Esta ventana está visible cuando una superficie de diseño del formulario es la ventana activa en el proyecto, o bien puede abrirla (cuando se abre un proyecto) eligiendo **vista** > **Other Windows**  >   **Orígenes de datos**. Puede arrastrar elementos desde esta ventana para crear controles enlazados a los datos subyacentes y también puede configurar los orígenes de datos con el botón secundario.
 
 ![Ventana de orígenes de datos](../data-tools/media/raddata-data-sources-window.png)
 
-Por cada tipo de datos que aparece en la ventana Orígenes de datos **, se crea un control predeterminado al arrastrar el elemento hasta el diseñador. Antes de arrastrar un elemento desde el **orígenes de datos** ventana, puede cambiar el control que se crea. Para obtener más información, consulte [establecer el control que se creará al arrastrar desde la ventana Orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+Por cada tipo de datos que aparece en la ventana **Orígenes de datos**, se crea un control predeterminado al arrastrar el elemento hasta el diseñador. Antes de arrastrar un elemento desde el **orígenes de datos** ventana, puede cambiar el control que se crea. Para obtener más información, consulte [establecer el control que se creará al arrastrar desde la ventana Orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
 ## <a name="tasks-involved-in-binding-controls-to-data"></a>Tareas necesarias para enlazar controles a datos
 
@@ -59,10 +58,10 @@ En la tabla siguiente se enumera algunas de las tareas más comunes que realizar
 
 |Tarea|Más información|
 |----------| - |
-|Abra la ventana Orígenes de datos **.|Abra una superficie de diseño en el editor y elija **vista** > **orígenes de datos**.|
-|Agregar un origen de datos al proyecto.|[Agregar nuevos orígenes de datos](../data-tools/add-new-data-sources.md)|
-|Establecer el control que se crea cuando se arrastra un elemento de la ventana Orígenes de datos** al diseñador.|[Establecer el control que se creará al arrastrar desde la ventana Orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|
-|Modifique la lista de controles que están asociados a elementos en la ventana Orígenes de datos **.|[Agregar controles personalizados a la ventana Orígenes de datos](../data-tools/add-custom-controls-to-the-data-sources-window.md)|
+|Abra la ventana **Orígenes de datos**.|Abra una superficie de diseño en el editor y elija **vista** > **orígenes de datos**.|
+|Agregue un origen de datos al proyecto.|[Agregar nuevos orígenes de datos](../data-tools/add-new-data-sources.md)|
+|Establezca el control que se crea cuando se arrastra un elemento de la ventana **Orígenes de datos** al diseñador.|[Establecer el control que se creará al arrastrar desde la ventana Orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|
+|Modifique la lista de controles que están asociados a elementos en la ventana **Orígenes de datos**.|[Agregar controles personalizados a la ventana Orígenes de datos](../data-tools/add-custom-controls-to-the-data-sources-window.md)|
 |Crear controles enlazados a datos.|[Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)<br /><br /> [Enlace de controles de WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)|
 |Enlazar a un objeto o colección.|[Enlazar objetos en Visual Studio](../data-tools/bind-objects-in-visual-studio.md)|
 |Filtrar los datos que aparece en la interfaz de usuario.|[Filtrar y ordenar los datos en una aplicación Windows Forms](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|
@@ -71,4 +70,4 @@ En la tabla siguiente se enumera algunas de las tareas más comunes que realizar
 ## <a name="see-also"></a>Vea también
 
 - [Visual Studio Data Tools para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
-- [Enlace de datos en Windows Forms](/dotnet/framework/winforms/windows-forms-data-binding)
+- [Windows Forms data binding](/dotnet/framework/winforms/windows-forms-data-binding) (Enlace de datos de Windows Forms)

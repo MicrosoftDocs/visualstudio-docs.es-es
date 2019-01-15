@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7623198cc31e8ee955f00cd06b7ca91f8d32a31
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 252b22305579f3c0beccdca0a5464f7d08bbc985
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826999"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269909"
 ---
 # <a name="graph-view"></a>Vista de gráfico
 
@@ -42,7 +42,7 @@ La vista Gráfico proporciona una representación gráfica de los nodos de esque
 
  La barra de ruta de navegación situada en la parte inferior de la vista Gráfico muestra la ubicación del nodo seleccionado en el conjunto de esquemas. Si se han seleccionado varios elementos, la barra de ruta de navegación estará en blanco.
 
-## <a name="context-menu"></a>Menú contextual
+## <a name="context-right-click-menu"></a>Menú contextual (clic derecho)
 
  En la tabla siguiente se describen las opciones disponibles para todos los nodos existentes en la superficie de diseño de la vista Gráfico.
 
@@ -92,7 +92,7 @@ La vista Gráfico proporciona una representación gráfica de los nodos de esque
 
 ## <a name="properties-window"></a>Propiedades (ventana)
 
- Use el menú contextual para abrir inicialmente la **propiedades** ventana. De forma predeterminada, el **propiedades** ventana aparece en la esquina inferior derecha de Visual Studio. Al hacer clic en un nodo que se presenta en la vista de modelo de contenido, las propiedades de ese nodo se mostrará en el **propiedades** ventana.
+ Use el menú contextual (clic derecho) para abrir inicialmente la **propiedades** ventana. De forma predeterminada, el **propiedades** ventana aparece en la esquina inferior derecha de Visual Studio. Al hacer clic en un nodo que se presenta en la vista de modelo de contenido, las propiedades de ese nodo se mostrará en el **propiedades** ventana.
 
 ## <a name="xsd-toolbar"></a>Barra de herramientas XSD
 
@@ -102,9 +102,9 @@ La vista Gráfico proporciona una representación gráfica de los nodos de esque
 
 |Opción|Descripción|
 |-|-----------------|
-|**Mostrar vista inicio**|Se activa en el [iniciar vista de](../xml-tools/start-view.md). Esta vista puede obtenerse mediante el método abreviado de teclado: **CTRL**+**1**.|
-|**Mostrar vista modelo de contenido**|Se activa en el [vista modelo de contenido](../xml-tools/content-model-view.md). Esta vista puede obtenerse mediante el método abreviado de teclado: **CTRL**+**2**.|
-|**Mostrar vista Gráfico**|Se activa en el [vista gráfica](../xml-tools/graph-view.md). Esta vista puede obtenerse mediante el método abreviado de teclado: **CTRL**+**3**.|
+|**Mostrar vista inicio**|Se activa en el [iniciar vista de](../xml-tools/start-view.md). Esta vista puede obtenerse mediante el método abreviado de teclado: **Ctrl**+**1**.|
+|**Mostrar vista modelo de contenido**|Se activa en el [vista modelo de contenido](../xml-tools/content-model-view.md). Esta vista puede obtenerse mediante el método abreviado de teclado: **Ctrl**+**2**.|
+|**Mostrar vista Gráfico**|Se activa en el [vista gráfica](../xml-tools/graph-view.md). Esta vista puede obtenerse mediante el método abreviado de teclado: **Ctrl**+**3**.|
 |**Borrar área de trabajo**|Borra el área de trabajo y la superficie de diseño.|
 |**Quitar área de trabajo**|Quita los nodos seleccionados del área de trabajo y de la superficie de diseño.|
 |**Quitar todo salvo la selección del área de trabajo**|Quita los nodos que no están seleccionados del área de trabajo y de la superficie de diseño. Esta opción está habilitada en las vistas Modelo de contenido y Gráfico.|
@@ -141,7 +141,7 @@ El control deslizante de Zoom es opaco al seleccionarla, mantenga el mouse sobre
 
 ## <a name="xml-editor-integration"></a>Integración del editor XML
 
- Puede cambiar entre la vista Gráfico y el Editor XML haciendo clic en un nodo y usando el menú contextual de Ver código.
+ Puede alternar entre las vistas gráfico y el Editor XML haciendo clic en un nodo y mediante el menú contextual (clic derecho) de la vista código.
 
  Si realiza modificaciones en el conjunto de esquemas en el Editor XML, dichas modificaciones se sincronizarán en la vista Gráfico. Para obtener más información, consulte [integración con el editor XML](../xml-tools/integration-with-xml-editor.md).
 

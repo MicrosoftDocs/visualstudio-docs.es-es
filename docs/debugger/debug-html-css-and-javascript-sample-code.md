@@ -1,8 +1,6 @@
 ---
-title: Depurar código de ejemplo HTML y CSS | Documentos de Microsoft
-ms.custom: ''
+title: Depurar código de ejemplo HTML y CSS | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,19 +13,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 182cda17cdd8a9b08a6e0d8b0130efa887be6368
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 1ffb41dc978598264cfff165602c9c9a8e4cce71
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456798"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947561"
 ---
 # <a name="debug-html-and-css-sample-code"></a>Depurar código de ejemplo HTML y CSS
   
- El código de este tema es el archivo de ejemplo para [inicio rápido: depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md). Los errores presentes por diseño en el tutorial rápido se corrigen en esta versión del código.  
+ El código de este tema es el archivo de ejemplo para [inicio rápido: depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md) Los errores presentes por diseño en el tutorial rápido se corrigen en esta versión del código.  
   
 ## <a name="sample-code"></a>Código de ejemplo  
- El siguiente código HTML se usa en la \<cuerpo > etiqueta del tutorial rápido.  
+ El siguiente código HTML se usa en la etiqueta \<body> del Inicio rápido.  
   
 ```html  
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -51,7 +49,7 @@ ms.locfileid: "31456798"
 }  
 ```  
   
- En el ejemplo de código siguiente se muestra el código de JavaScript completo de default.js. Las referencias a espacios de nombres de WinJS para este código están en el archivo default.html de la plantilla.  
+ En el ejemplo de código siguiente se muestra el código de JavaScript completo de default.js. Las referencias a los espacios de nombres de WinJS para este código están en el archivo default.html de la plantilla.  
   
 ```javascript  
 (function () {  
@@ -103,4 +101,4 @@ ms.locfileid: "31456798"
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md)
+ [Inicio rápido: depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md)

@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: crear un manifiesto de paquete | Microsoft Docs'
-ms.custom: ''
+title: 'Cómo: Creación de un manifiesto de paquete | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -20,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38a0c448bcf629c4e914393cb8eabad93ced574c
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: a1f965bdbd19193bfaa942d5f3635b0652f0e9c4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154634"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943478"
 ---
-# <a name="how-to-create-a-package-manifest"></a>Cómo: crear un manifiesto del paquete
+# <a name="how-to-create-a-package-manifest"></a>Procedimiento Creación de un manifiesto de paquete
 Para implementar los requisitos previos para la aplicación, puede usar un paquete de arranque. Un paquete de arranque contiene un archivo de manifiesto de producto único, pero un manifiesto del paquete para cada configuración regional. Funcionalidad compartida entre diferentes versiones localizadas debe incluirse en el manifiesto del producto.  
   
- Para obtener más información acerca de los manifiestos de paquete, consulte [Cómo: crear un manifiesto de producto](../deployment/how-to-create-a-product-manifest.md).  
+ Para obtener más información acerca de los manifiestos de paquete, vea [Cómo: Creación de un manifiesto de producto](../deployment/how-to-create-a-product-manifest.md)  
   
 ## <a name="create-the-package-manifest"></a>Crear el manifiesto del paquete  
   
@@ -101,4 +99,4 @@ installing this package.</String>
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Referencia de esquema de paquete y del producto](../deployment/product-and-package-schema-reference.md)
+ [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)
