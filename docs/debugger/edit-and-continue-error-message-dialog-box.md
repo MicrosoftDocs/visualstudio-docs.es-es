@@ -1,8 +1,6 @@
 ---
 title: Editar y continuar en el cuadro de diálogo de mensaje de error | Microsoft Docs
-ms.custom: ''
 ms.date: 10/15/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.SupportedButNotAvaiable
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba573a6b6bffdfeebf37c5f46f1f774d699a1131
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: MTE95
+ms.openlocfilehash: 9eddfbcc709048469b06702d9a685d43a7188758
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388717"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828675"
 ---
 # <a name="edit-and-continue-error-message"></a>Editar y continuar el mensaje de error 
 
@@ -37,7 +35,7 @@ Las posibles razones para este mensaje de error incluyen:
 -   Se está intentando editar código optimizado. Es posible que deba cambiar de una versión de lanzamiento a una compilación de depuración.
 -   Si intenta modificar el código mientras se está ejecutando, en lugar de mientras está en pausa en el depurador. Pruebe [establecer un punto de interrupción](../debugger/using-breakpoints.md)y editar el código mientras está en pausa.
 -   Se está intentando editar código administrado cuando está habilitada la depuración solo no administrado. Editar y continuar no funciona con [depuración en modo mixto](../debugger/how-to-debug-in-mixed-mode.md).
--   Por lo que un código de cambio que no es compatible con Editar y continuar en el lenguaje de programación. Para obtener más información, consulte los artículos [admite cambios de código en C# ](supported-code-changes-csharp.md), [no admite la edición de Visual Basic editar y continuar](unsupported-edits-in-visual-basic-edit-and-continue.md), y [admite cambios en el código C++](supported-code-changes-cpp.md).
+-   Por lo que un código de cambio que no es compatible con Editar y continuar en el lenguaje de programación. Para obtener más información, consulte los artículos [admite cambios de código en C# ](supported-code-changes-csharp.md), [no admite la edición de Visual Basic editar y continuar](/visualstudio/debugger/supported-code-changes-csharp), y [admite cambios en el código C++](supported-code-changes-cpp.md).
 -   Si intenta modificar el código en una aplicación que está conectado, en lugar de iniciar la depuración desde el **depurar** menú.  
 -   Se está intentando editar código mientras se depuraba una recuperación ante desastres. Volcado de memoria de Watson.  
 -   Si intenta modificar el código después de que se produce una excepción no controlada y la opción **desenredar la pila de llamadas en las excepciones no controladas** no está seleccionada.  

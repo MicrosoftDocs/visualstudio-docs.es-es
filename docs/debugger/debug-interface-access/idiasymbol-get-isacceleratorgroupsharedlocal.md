@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_isAcceleratorGroupSharedLocal | Documentos de Microsoft
-ms.custom: ''
+title: IDiaSymbol::get_isAcceleratorGroupSharedLocal | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1d1ccb6643973dc61e169930f57b4f279ad4c1d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: a6bf469433a4356c86aba36478f8a07e3437c9f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466814"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828295"
 ---
 # <a name="idiasymbolgetisacceleratorgroupsharedlocal"></a>IDiaSymbol::get_isAcceleratorGroupSharedLocal
 Recupera una marca que indica si el símbolo corresponde a una variable local compartida de grupo en el código compilado para un acelerador de AMP de C++.  
@@ -31,10 +29,10 @@ HRESULT get_isAcceleratorGroupSharedLocal(
   
 #### <a name="parameters"></a>Parámetros  
  `pFlag`  
- [out] Un puntero a un `BOOL` que indica si el símbolo corresponde a una variable local compartida de grupo en el código compilado para un acelerador de AMP de C++. Si `TRUE`, `get_baseDataSlot` y `get_baseDataOffset` métodos pueden utilizarse para obtener la información de ubicación de almacenamiento para la variable.  
+ [out] Un puntero a un `BOOL` que indica si el símbolo corresponde a una variable local compartida de grupo en el código compilado para un acelerador de AMP de C++. Si `TRUE`, `get_baseDataSlot` y `get_baseDataOffset` pueden usarse los métodos para obtener la información de ubicación de almacenamiento para la variable.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

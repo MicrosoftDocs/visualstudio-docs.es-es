@@ -14,15 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 812b464fe3e9742309a1ce6918d8d6b383101bf8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 38ed283a70716f0f282bdcdf60c18f0f38fc8bb2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864132"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822167"
 ---
 # <a name="create-relationships-between-datasets"></a>Crear relaciones entre conjuntos de datos
 Uso de tablas de conjuntos de datos que contienen datos relacionados <xref:System.Data.DataRelation> objetos para representar una relación primaria-secundaria entre las tablas y devolver los registros relacionados entre sí. Agregar tablas relacionadas a conjuntos de datos mediante el **Asistente para configuración de origen de datos**, o el **Diseñador de Dataset**, crea y configura el <xref:System.Data.DataRelation> objeto automáticamente.
@@ -60,7 +59,7 @@ Se especifican las reglas que se pueden realizar en el <xref:System.Data.Rule> e
 |Regla de restricción de clave externa|Acción|
 | - |------------|
 |<xref:System.Data.Rule.Cascade>|También se realiza el cambio realizado en el registro primario (update o delete) en los registros relacionados en la tabla secundaria.|
-|<xref:System.Data.Rule.SetNull>|No se eliminan los registros secundarios, pero la clave externa en los registros secundarios se establece en <xref:System.DBNull>. Con esta configuración, los registros secundarios pueden dejarse como "huérfanos", es decir, no tienen ninguna relación con los registros primarios. **Nota:** mediante esta regla puede dar lugar a datos no válidos en la tabla secundaria.|
+|<xref:System.Data.Rule.SetNull>|No se eliminan los registros secundarios, pero la clave externa en los registros secundarios se establece en <xref:System.DBNull>. Con esta configuración, los registros secundarios pueden dejarse como "huérfanos", es decir, no tienen ninguna relación con los registros primarios. **Nota:** Mediante esta regla puede dar lugar a que los datos no válidos en la tabla secundaria.|
 |<xref:System.Data.Rule.SetDefault>|La clave externa en los registros secundarios relacionados se establece en su valor predeterminado (según lo establecido por la columna <xref:System.Data.DataColumn.DefaultValue%2A> propiedad).|
 |<xref:System.Data.Rule.None>|No se realiza ningún cambio en los registros secundarios relacionados. Con esta configuración, los registros secundarios pueden contener referencias a los registros primarios no válido.|
 
@@ -78,7 +77,7 @@ Las relaciones entre tablas de datos aparecen como líneas en el **Diseñador de
 
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>Para crear una relación entre dos tablas de datos
 
-1.  Abra el conjunto de datos en el **Diseñador de Dataset**. Para obtener más información, consulte [Tutorial: crear un conjunto de datos en el Diseñador de Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Abra su conjunto de datos en el **Diseñador de Dataset**. Para obtener más información, vea [Tutorial: Creación de un conjunto de datos en el Diseñador de Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Arrastre un **relación** objeto desde el **DataSet** cuadro de herramientas a la tabla de datos secundaria en la relación.
 
@@ -96,13 +95,13 @@ Las relaciones entre tablas de datos aparecen como líneas en el **Diseñador de
 
 8.  Active o desactive el **relación anidada** cuadro. Seleccione esta opción establece la <xref:System.Data.DataRelation.Nested%2A> propiedad `true`, y hace que el elemento secundario filas de la relación se anidan dentro de la columna primaria cuando se escribe como datos XML o sincronizadas con esas filas <xref:System.Xml.XmlDataDocument>. Para obtener más información, consulte [anidar objetos DataRelation](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations).
 
-9. Establezca las reglas que se aplicará cuando se va a realizar cambios en los registros en estas tablas. Para obtener más información, consulta <xref:System.Data.Rule>.
+9. Establezca las reglas que se aplicará cuando se va a realizar cambios en los registros en estas tablas. Para obtener más información, vea <xref:System.Data.Rule>.
 
 10. Haga clic en **Aceptar** para crear la relación. Aparece una línea de relación en el diseñador entre las dos tablas.
 
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Para mostrar el nombre de una relación en el Diseñador de Dataset
 
-1.  Abra el conjunto de datos en el **Diseñador de Dataset**. Para obtener más información, consulte [Tutorial: crear un conjunto de datos en el Diseñador de Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Abra su conjunto de datos en el **Diseñador de Dataset**. Para obtener más información, vea [Tutorial: Creación de un conjunto de datos en el Diseñador de Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Desde el **datos** menú, seleccione el **Mostrar etiquetas de relación** comando para mostrar el nombre de relación. Borrar ese comando para ocultar el nombre de relación.
 

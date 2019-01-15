@@ -1,8 +1,6 @@
 ---
 title: '&lt;Producto&gt; (elemento, arranque) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90179df4595ea58a771dd941ea388555b52c7374
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 32e1689331ff41cec007c98be5410b518f1e44e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080410"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821236"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;Producto&gt; (elemento, arranque)
 El `Product` elemento es el elemento XML de nivel superior dentro de un archivo de producto.  
@@ -139,7 +137,7 @@ ProductCode
 </Package>  
 ```  
   
-## <a name="elements-and-attributes"></a>Los elementos y atributos  
+## <a name="elements-and-attributes"></a>Elementos y atributos  
  El `Product` elemento es necesario en un archivo de producto. Tiene el siguiente atributo.  
   
 |Atributo|Descripción|  
@@ -252,4 +250,4 @@ ProductCode
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Referencia de esquema de paquete y del producto](../deployment/product-and-package-schema-reference.md)
+ [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)

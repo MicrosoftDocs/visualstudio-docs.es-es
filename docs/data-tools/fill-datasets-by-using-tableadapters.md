@@ -1,5 +1,5 @@
 ---
-title: Llenar conjuntos de datos mediante TableAdapters
+title: Rellenar conjuntos de datos mediante TableAdapters
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,17 +18,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 673c364c1750afbaa4b319c40550be7cfac3b53b
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
-ms.translationtype: MT
+ms.openlocfilehash: 260ea65af041e6a50afb163f697d5ff366cff825
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131978"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835989"
 ---
-# <a name="fill-datasets-by-using-tableadapters"></a>Llenar conjuntos de datos mediante TableAdapters
+# <a name="fill-datasets-by-using-tableadapters"></a>Rellenar conjuntos de datos mediante TableAdapters
 
 Un componente de TableAdapter rellena un dataset con los datos de la base de datos, en función de una o varias consultas o procedimientos almacenados que especifique. También puede llevar a cabo los TableAdapters agrega, actualiza y elimina la base de datos para conservar los cambios realizados en el conjunto de datos. También puede emitir comandos globales que están relacionados con una tabla específica.
 
@@ -43,12 +42,12 @@ Para obtener información detallada acerca de las operaciones de TableAdapter, p
 |[Crear consultas parametrizadas de TableAdapter](../data-tools/create-parameterized-tableadapter-queries.md)|Cómo habilitar usuarios proporcionar argumentos a las consultas o procedimientos de TableAdapter|
 |[Obtener acceso directamente a la base de datos con un TableAdapter](../data-tools/directly-access-the-database-with-a-tableadapter.md)|Cómo usar los métodos Dbdirect de TableAdapter|
 |[Desactivar restricciones al llenar un conjunto de datos](../data-tools/turn-off-constraints-while-filling-a-dataset.md)|Cómo trabajar con restricciones foreign key durante la actualización de datos|
-|[Cómo ampliar la funcionalidad de un TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)|Cómo agregar código personalizado a los TableAdapters|
+|[Cómo extender la funcionalidad de un TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)|Cómo agregar código personalizado a los TableAdapters|
 |[Leer datos XML en un conjunto de datos](../data-tools/read-xml-data-into-a-dataset.md)|Cómo trabajar con XML|
 
 <a name="tableadapter-overview"></a>
 
-## <a name="tableadapter-overview"></a>Información general sobre TableAdapter
+## <a name="tableadapter-overview"></a>Introducción a TableAdapter
 
 Los TableAdapters son componentes generados por diseñador que se conectan a una base de datos, ejecutar consultas o procedimientos almacenados y completar su DataTable con los datos devueltos. Los TableAdapters también enviar datos actualizados desde la aplicación a la base de datos. Puede ejecutar tantas consultas como desee en un TableAdapter, siempre se devuelven los datos que se ajustan al esquema de la tabla que está asociado al TableAdapter. El siguiente diagrama muestra cómo interactúan los TableAdapters con bases de datos y otros objetos en memoria:
 
@@ -85,9 +84,9 @@ De forma predeterminada, cada vez que ejecute una consulta para rellenar la tabl
 
 Los TableAdapter amplían la funcionalidad de los adaptadores de datos estándar encapsulando un <xref:System.Data.Common.DataAdapter> clase. De forma predeterminada, el objeto TableAdapter hereda el <xref:System.ComponentModel.Component> clase y no puede convertirse el <xref:System.Data.Common.DataAdapter> clase. Convertir un TableAdapter a la <xref:System.Data.Common.DataAdapter> clase da como resultado un <xref:System.InvalidCastException> error. Para cambiar la clase base de un TableAdapter, puede especificar una clase que derive de <xref:System.ComponentModel.Component> en el **clase Base** propiedad del TableAdapter en el **Diseñador de Dataset**.
 
-## <a name="tableadapter-methods-and-properties"></a>Las propiedades y métodos de TableAdapter
+## <a name="tableadapter-methods-and-properties"></a>Métodos y propiedades de TableAdapter
 
-La clase TableAdapter no es parte de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Esto significa que no puede buscarla en la documentación o **Examinador de objetos**. Se crea en tiempo de diseño cuando se usa uno de los asistentes que se ha mencionado anteriormente. El nombre que se asigna a un TableAdapter al crearlo se basa en el nombre de la tabla que está trabajando. Por ejemplo, cuando se crea un TableAdapter basado en una tabla en una base de datos denominada `Orders`, lo TableAdapter se denomina `OrdersTableAdapter`. Se puede cambiar el nombre de clase del TableAdapter utilizando la **nombre** propiedad en el **Diseñador de Dataset**.
+La clase TableAdapter no es parte de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Esto significa que no puede buscarla en la documentación o **Examinador de objetos**. Se crea en tiempo de diseño cuando se usa uno de los asistentes que se ha mencionado anteriormente. El nombre que se asigna a un TableAdapter al crearlo se basa en el nombre de la tabla que está trabajando. Por ejemplo, cuando se crea un TableAdapter basado en una tabla en una base de datos denominada `Orders`, lo TableAdapter se denomina `OrdersTableAdapter`. Se puede cambiar el nombre de clase del TableAdapter utilizando la propiedad **Name** en el **Diseñador de DataSet**.
 
 Siguiente es las propiedades de los TableAdapters y los métodos más utilizados:
 
@@ -114,7 +113,7 @@ Además `InsertCommand`, `UpdateCommand`, y `DeleteCommand`, los TableAdapters s
 
 Si no desea crear estos métodos directos, establezca el TableAdapter **GenerateDbDirectMethods** propiedad `false` (en el **propiedades** ventana). Las consultas adicionales que se agregan al objeto TableAdapter son consultas independientes, que no generan estos métodos.
 
-## <a name="tableadapter-support-for-nullable-types"></a>Compatibilidad de TableAdapter para tipos que aceptan valores null
+## <a name="tableadapter-support-for-nullable-types"></a>Compatibilidad del objeto TableAdapter con los tipos que aceptan valores NULL
 
 Los TableAdapters admiten tipos que aceptan valores NULL `Nullable(Of T)` y `T?`. Para más información sobre los tipos que aceptan valores NULL en Visual Basic, vea [Tipos que admiten valores null](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types). Para obtener más información acerca de los tipos que aceptan valores NULL en C#, vea [utilizar tipos que aceptan valores NULL](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types).
 
@@ -131,9 +130,9 @@ Los siguientes son los métodos usados con frecuencia y propiedades de la `Table
 |Miembro|Descripción|
 |------------|-----------------|
 |Método `UpdateAll`|Guarda todos los datos de todas las tablas de datos.|
-|Propiedad `BackUpDataSetBeforeUpdate`|Determina si se debe crear una copia de seguridad del conjunto de datos antes de ejecutar el `TableAdapterManager.UpdateAll` método. Valor booleano.|
+|Propiedad`BackUpDataSetBeforeUpdate` |Determina si se debe crear una copia de seguridad del conjunto de datos antes de ejecutar el `TableAdapterManager.UpdateAll` método. Valor booleano.|
 |*tableName* `TableAdapter` propiedad|Representa un TableAdapter. TableAdapterManager generado contiene una propiedad para cada `TableAdapter` lo administra. Por ejemplo, se genera un conjunto de datos con una tabla de clientes y pedidos con un TableAdapterManager que contiene `CustomersTableAdapter` y `OrdersTableAdapter` propiedades.|
-|Propiedad `UpdateOrder`|Controla el orden de los individual insert, update y los comandos delete. Establezca esta opción a uno de los valores de la `TableAdapterManager.UpdateOrderOption` enumeración.<br /><br /> De forma predeterminada, el `UpdateOrder` está establecido en **InsertUpdateDelete**. Esto significa que se inserta, a continuación, actualizaciones y eliminaciones, a continuación, se realizan para todas las tablas del conjunto de datos.|
+|Propiedad`UpdateOrder` |Controla el orden de los individual insert, update y los comandos delete. Establezca esta opción a uno de los valores de la `TableAdapterManager.UpdateOrderOption` enumeración.<br /><br /> De forma predeterminada, el `UpdateOrder` está establecido en **InsertUpdateDelete**. Esto significa que se inserta, a continuación, actualizaciones y eliminaciones, a continuación, se realizan para todas las tablas del conjunto de datos.|
 
 ## <a name="security"></a>Seguridad
 

@@ -1,8 +1,6 @@
 ---
 title: Recopilar datos detallados de tiempo para una aplicación independiente mediante la línea de comandos del generador de perfiles | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools,instrumentation method
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 63ebe0869ec0450604468283f9db1769314a3ce7
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 21cb675136ba5180c8a7d26073ea16e6c6831aac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276356"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831685"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Recopilación de datos detallados de tiempo para una aplicación independiente mediante la línea de comandos del generador de perfiles
 En esta sección se describen los procedimientos y las opciones para recopilar datos de rendimiento detallados para un componente cliente (independiente) mediante el método de instrumentación desde la línea de comandos.  
@@ -27,8 +25,8 @@ En esta sección se describen los procedimientos y las opciones para recopilar d
   
 |Tarea|Contenido relacionado|  
 |----------|---------------------|  
-|**Generar perfiles de una aplicación de .NET Framework mediante la instrumentación**|-   [Cómo: Instrumentar un componente de .NET y recopilar datos de control de tiempo detallados](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)|  
-|**Generar perfiles de una aplicación de C/C++ mediante la instrumentación**|-   [Cómo: Instrumentar un componente nativo y recopilar datos de control de tiempo detallados](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)|  
+|**Generar perfiles de una aplicación de .NET Framework mediante la instrumentación**|-   [Cómo: Instrumentar un componente de .NET Framework independiente y recopilar datos de control de tiempo](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)|  
+|**Generar perfiles de una aplicación de C/C++ mediante la instrumentación**|-   [Cómo: Instrumentar un componente nativo independiente y recopilar datos de control de tiempo](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)|  
 |**Agregar datos de interacción de capas**|-   [Recopilación de datos de interacción de capas](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Tareas relacionadas

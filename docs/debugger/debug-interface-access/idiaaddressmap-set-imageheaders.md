@@ -1,8 +1,6 @@
 ---
 title: Set_imageheaders | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b72b8b7d1531a75568e97ac4d18c85f80508f9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6593092fc155a375480f082a1f82dc53a1d851fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869007"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834144"
 ---
 # <a name="idiaaddressmapsetimageheaders"></a>IDiaAddressMap::set_imageHeaders
 Conjuntos de encabezados para habilitar la traducción de dirección virtual relativa de la imagen.  
@@ -27,7 +25,7 @@ Conjuntos de encabezados para habilitar la traducción de dirección virtual rel
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT set_imageHeaders (   
+HRESULT set_imageHeaders (   
    DWORD cbData,  
    BYTE  data[],  
    BOOL  originalHeaders  
@@ -38,7 +36,7 @@ HRESULT set_imageHeaders (
  cbData  
  [in] Número de bytes de datos de encabezado. Debe ser `n*sizeof(IMAGE_SECTION_HEADER)` donde `n` es el número de encabezados de sección en el archivo ejecutable.  
   
- datos]  
+ data[]  
  [in] Una matriz de `IMAGE_SECTION_HEADER` estructuras que se usará como los encabezados de la imagen.  
   
  originalHeaders  
@@ -54,6 +52,6 @@ HRESULT set_imageHeaders (
   
 ## <a name="see-also"></a>Vea también  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)   
- [Get_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)   
+ [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)   
+ [IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)   
  [IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)

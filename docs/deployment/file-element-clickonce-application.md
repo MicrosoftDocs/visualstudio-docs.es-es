@@ -1,8 +1,6 @@
 ---
 title: '&lt;archivo&gt; elemento (aplicación ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - http://www.w3.org/2000/09/xmldsig#Transform
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b516a8e63d29f91b3404e8e62d910ca18ca69c1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c16c2cb00bf91d3fc0d991be71ba9b387d5a09cb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933539"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828308"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;archivo&gt; elemento (aplicación ClickOnce)
 Identifica todos los archivos nonassembly descargado y usado por la aplicación.  
@@ -85,34 +83,34 @@ Identifica todos los archivos nonassembly descargado y usado por la aplicación.
 </file>  
 ```  
 
-## <a name="elements-and-attributes"></a>Los elementos y atributos  
- El elemento `file` es opcional. El elemento tiene los siguientes atributos.  
+## <a name="elements-and-attributes"></a>Elementos y atributos  
+ El elemento `file` es opcional. El elemento tiene los atributos siguientes.  
 
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`name`|Requerido. Identifica el nombre del archivo.|  
-|`size`|Requerido. Especifica el tamaño, en bytes, del archivo.|  
+|`name`|Obligatorio. Identifica el nombre del archivo.|  
+|`size`|Obligatorio. Especifica el tamaño, en bytes, del archivo.|  
 |`group`|Opcional, si la `optional` atributo no se especifica o se establece en `false`; es necesario si `optional` es `true`. El nombre del grupo al que pertenece este archivo. El nombre puede ser cualquier valor de cadena Unicode elegido por el desarrollador y se usa para descargar archivos a petición con la <xref:System.Deployment.Application.ApplicationDeployment> clase.|  
 |`optional`|Opcional. Especifica si este archivo debe descargar cuando la aplicación es la primera ejecución, o si el archivo debe residir únicamente en el servidor hasta que la aplicación lo solicita a petición. Si `false` o undefined, el archivo se descarga cuando la aplicación se ejecuta o se instala en primer lugar. Si `true`, un `group` debe especificarse para que el manifiesto de aplicación sea válido. `optional` no puede ser true si `writeableType` se especifica con el valor `applicationData`.|  
-|`writeableType`|Opcional. Especifica que este archivo es un archivo de datos. Actualmente, el único valor válido es `applicationData`.|  
+|`writeableType`|Opcional. Especifica que este archivo es un archivo de datos. Actualmente, el único valor válido es: `applicationData`.|  
 
 ## <a name="typelib"></a>biblioteca de tipos  
- El `typelib` elemento es un elemento secundario opcional del elemento file. El elemento describe la biblioteca de tipos al que pertenece el componente COM. El elemento tiene los siguientes atributos.  
+ El `typelib` elemento es un elemento secundario opcional del elemento file. El elemento describe la biblioteca de tipos al que pertenece el componente COM. El elemento tiene los atributos siguientes.  
 
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`tlbid`|Requerido. El GUID asignado a la biblioteca de tipos.|  
-|`version`|Requerido. El número de versión de la biblioteca de tipos.|  
-|`helpdir`|Requerido. El directorio que contiene los archivos de ayuda para el componente. Puede ser de longitud cero.|  
+|`tlbid`|Obligatorio. El GUID asignado a la biblioteca de tipos.|  
+|`version`|Obligatorio. El número de versión de la biblioteca de tipos.|  
+|`helpdir`|Obligatorio. El directorio que contiene los archivos de ayuda para el componente. Puede ser de longitud cero.|  
 |`resourceid`|Opcional. La representación de cadena hexadecimal del identificador de configuración regional (LCID). Es uno a cuatro dígitos hexadecimales sin un prefijo 0 x y sin ceros iniciales. El LCID puede tener un identificador de subidioma neutro.|  
 |`flags`|Opcional. La representación de cadena de los marcadores de biblioteca de tipos para esta biblioteca de tipos. En concreto, debe ser uno de "RESTRICTED", "CONTROL", "HIDDEN" y "HASDISKIMAGE".|  
 
 ## <a name="comclass"></a>comClass  
- El `comClass` elemento es un elemento secundario opcional de la `file` elemento, pero es necesario si la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación contiene un componente COM intenta implementar mediante COM sin registro. El elemento tiene los siguientes atributos.  
+ El `comClass` elemento es un elemento secundario opcional de la `file` elemento, pero es necesario si la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación contiene un componente COM intenta implementar mediante COM sin registro. El elemento tiene los atributos siguientes.  
 
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`clsid`|Requerido. El identificador de clase del componente COM expresado como un GUID.|  
+|`clsid`|Obligatorio. El identificador de clase del componente COM expresado como un GUID.|  
 |`description`|Opcional. Nombre de la clase.|  
 |`threadingModel`|Opcional. El modelo de subprocesos utilizado por las clases de COM en proceso. Si esta propiedad es null, no se utiliza ningún modelo de subprocesos. El componente se crea en el subproceso principal del cliente y las llamadas de otros subprocesos se calculan las referencias a este subproceso. La siguiente lista muestra los valores válidos:<br /><br /> `Apartment`, `Free`, `Both`y `Neutral`.|  
 |`tlbid`|Opcional. GUID de la biblioteca de tipos para este componente COM.|  
@@ -128,7 +126,7 @@ Identifica todos los archivos nonassembly descargado y usado por la aplicación.
 
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`iid`|Requerido. La interfaz de identificador (IID) que atienden a este proxy. El IID debe tener las llaves que lo rodea.|  
+|`iid`|Obligatorio. La interfaz de identificador (IID) que atienden a este proxy. El IID debe tener las llaves que lo rodea.|  
 |`baseInterface`|Opcional. El IID de la interfaz desde la que hace referencia la interfaz `iid` derivada.|  
 |`numMethods`|Opcional. El número de métodos implementados por la interfaz.|  
 |`name`|Opcional. El nombre de la interfaz tal y como aparecerá en el código.|  
@@ -140,7 +138,7 @@ Identifica todos los archivos nonassembly descargado y usado por la aplicación.
 
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`iid`|Requerido. La interfaz de identificador (IID) que atienden a este proxy. El IID debe tener las llaves que lo rodea.|  
+|`iid`|Obligatorio. La interfaz de identificador (IID) que atienden a este proxy. El IID debe tener las llaves que lo rodea.|  
 |`baseInterface`|Opcional. El IID de la interfaz desde la que hace referencia la interfaz `iid` derivada.|  
 |`numMethods`|Opcional. El número de métodos implementados por la interfaz.|  
 |`Name`|Opcional. El nombre de la interfaz tal y como aparecerá en el código.|  
