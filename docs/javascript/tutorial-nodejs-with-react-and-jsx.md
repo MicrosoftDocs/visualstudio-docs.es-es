@@ -285,7 +285,7 @@ En los pasos anteriores, se agregó *webpack-config.js* al proyecto. A continuac
 
 ## <a name="transpile-the-jsx"></a>Transpilar el JSX
 
-1. En el Explorador de soluciones, haga clic con el botón derecho en el nodo del proyecto y elija **	Abrir símbolo del sistema aquí**.
+1. En el Explorador de soluciones, haga clic con el botón derecho en el nodo del proyecto y elija **Abrir símbolo del sistema aquí**.
 
 1. En el símbolo del sistema, escriba el siguiente comando:
 
