@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: instalar un visualizador | Documentos de Microsoft'
-ms.custom: ''
+title: Procedimiento Instalar un visualizador | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,18 +17,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87feaebf16168744467137fdf4af54538a316cdf
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: e62637581fbb65eb8efd20e048cc364895cfbcdc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473782"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914576"
 ---
-# <a name="how-to-install-a-visualizer"></a>Cómo: Instalar un visualizador
+# <a name="how-to-install-a-visualizer"></a>Procedimiento Instalación de un visualizador
 Después de crear un visualizador, hay que instalarlo para que esté disponible en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Instalar un visualizador es un proceso sencillo.  
   
 > [!NOTE]
->  En las aplicaciones UWP, sólo el texto estándar, se admiten los visualizadores HTML, XML y JSON. No se admiten los visualizadores personalizados (creados por el usuario).  
+>  En aplicaciones UWP, sólo el texto estándar, se admiten los visualizadores HTML, XML y JSON. No se admiten los visualizadores personalizados (creados por el usuario).  
   
 ### <a name="to-install-a-visualizer"></a>Para instalar un visualizador  
   
@@ -47,5 +45,5 @@ Después de crear un visualizador, hay que instalarlo para que esté disponible 
 4.  Reinicie la sesión de depuración.  
   
 ## <a name="see-also"></a>Vea también  
- [Crear los visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
- [Cómo: Escribir un visualizador](../debugger/how-to-write-a-visualizer.md)
+ [Creación de visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
+ [Cómo: Escritura de un visualizador](/visualstudio/debugger/create-custom-visualizers-of-data)

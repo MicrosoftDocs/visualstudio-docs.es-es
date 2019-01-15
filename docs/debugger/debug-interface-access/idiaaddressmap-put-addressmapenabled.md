@@ -1,8 +1,6 @@
 ---
 title: Put_addressmapenabled | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f139e6d034fc3b738e345f385fbb8e8ad2150da4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6894cb14d2aee6a4e1999eab38e095911d51360d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915391"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876025"
 ---
 # <a name="idiaaddressmapputaddressmapenabled"></a>IDiaAddressMap::put_addressMapEnabled
 Especifica si se debe usar la asignación de dirección para traducir las direcciones de símbolos.  
@@ -27,7 +25,7 @@ Especifica si se debe usar la asignación de dirección para traducir las direcc
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT put_addressMapEnabled (   
+HRESULT put_addressMapEnabled (   
    BOOL NewVal  
 );  
 ```  
@@ -48,5 +46,5 @@ HRESULT put_addressMapEnabled (
   
 ## <a name="see-also"></a>Vea también  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)   
+ [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)   
  [IDiaAddressMap::get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)

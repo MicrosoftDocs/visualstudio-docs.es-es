@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: establecer permisos personalizados para una aplicación ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Establecer permisos personalizados para una aplicación ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4003dd1434d55bb43f52ee02801da0f843563456
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 7bfacf983af73ba8acb1f8f9ed2705ad5cd8e544
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077482"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929220"
 ---
-# <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Cómo: establecer permisos personalizados para una aplicación ClickOnce
+# <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Procedimiento Establecimiento de permisos personalizados para una aplicación ClickOnce
 Puede implementar una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] que use los permisos predeterminados de las zonas de Internet o de la intranet local. Como alternativa, puede crear una zona personalizada para los permisos específicos necesarios para la aplicación. Para ello, personalice los permisos de seguridad en la página **Seguridad** del **Diseñador de proyectos**.  
   
 ### <a name="to-customize-a-permission"></a>Para personalizar un permiso  
@@ -43,7 +41,7 @@ Puede implementar una aplicación [!INCLUDE[ndptecclick](../deployment/includes/
   
 6.  Haga clic en **Editar XML de permisos**.  
   
-     El *app.manifest* archivo se abre en el Editor XML.  
+     El archivo *app.manifest* se abrirá en el Editor XML.  
   
 7.  Antes del elemento `</applicationRequestMinimum>` , agregue el código XML de los permisos necesarios para la aplicación.  
   
@@ -51,5 +49,5 @@ Puede implementar una aplicación [!INCLUDE[ndptecclick](../deployment/includes/
     >  Puede usar el método `ToXml` de un conjunto de permisos para generar el código XML del manifiesto de la aplicación. Por ejemplo, para generar el XML del conjunto de permisos <xref:System.Security.Permissions.EnvironmentPermission> , llame al método <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> .  
   
 ## <a name="see-also"></a>Vea también  
- [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)   
+ [Protección de las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Seguridad de acceso del código para aplicaciones ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   

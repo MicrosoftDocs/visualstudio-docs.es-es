@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: buscar el archivo DLL que se bloqueó en el programa | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Busque el archivo DLL que se bloqueó en el programa | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.dll
@@ -24,16 +22,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40f27e0bec20e1dd037beaa5f60ea648c0ccb171
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 7726c7fff2f747fcde3fe62bcdcc0866b375728d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257102"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879126"
 ---
-# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>Cómo: buscar el archivo DLL que se bloqueó en el programa (C#, C++, Visual Basic, F#)
+# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>Procedimiento Busque el archivo DLL que se bloqueó en el programa (C#, C++, Visual Basic, F#)
   
- Si la aplicación se bloquea durante una llamada a un archivo DLL del sistema o el código de un tercero, es necesario que encuentre qué archivo DLL estaba activo cuando ocurrió el bloqueo. Si experimenta un bloqueo en un archivo DLL fuera de su propio programa, puede identificar la ubicación mediante el **módulos** ventana.  
+ Si la aplicación se bloquea durante una llamada a un archivo DLL del sistema o el código de un tercero, es necesario que encuentre qué archivo DLL estaba activo cuando ocurrió el bloqueo. Si se produce un bloqueo de un archivo DLL fuera de su programa, puede identificar la ubicación mediante la ventana **Módulos**.  
   
 ### <a name="to-find-where-a-crash-occurred-using-the-modules-window"></a>Para averiguar dónde se produjo un bloqueo mediante la ventana Módulos  
   
@@ -41,16 +39,16 @@ ms.locfileid: "52257102"
 
     Si la dirección no se muestra en el mensaje de error, deberá usar los métodos alternativos para identificar el archivo DLL. Si sospecha que una DLL del sistema, también puede [cargar símbolos](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) desde los servidores de símbolos de Microsoft cuando se depura. En caso contrario, es posible que deba [crear un archivo de volcado](../debugger/using-dump-files.md) con el montón información en su lugar. Diversos [herramientas](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/) están disponibles para crear archivos de volcado.
   
-2.  En el **depurar** menú, elija **Windows**y haga clic en **módulos**.  
+2.  En el menú **Depurar**, elija **Ventanas** y haga clic en **Módulos**.  
   
-3.  En el **módulos** ventana, busque la **dirección** columna. Es posible que necesite utilizar la barra de desplazamiento para verla.  
+3.  En la ventana **Módulos**, busque la columna **Dirección**. Es posible que necesite utilizar la barra de desplazamiento para verla.  
   
-4.  Haga clic en el **dirección** situado en la parte superior de la columna para ordenar los archivos DLL por dirección.  
+4.  Haga clic en el botón **Dirección** en la parte superior de la columna para ordenar los archivos DLL por dirección.  
   
 5.  Busque en la lista ordenada el archivo DLL cuyo intervalo de direcciones contiene la ubicación del bloqueo.  
   
-6.  Examine el **nombre** y **ruta** columnas para ver el nombre del archivo DLL y la ruta de acceso.  
+6.  Consulte las columnas **Nombre** y **Ruta de acceso** para ver el nombre y la ruta del archivo DLL.  
   
 ## <a name="see-also"></a>Vea también  
- [Depurar proyectos DLL](../debugger/debugging-dll-projects.md)   
- [Cómo: Usar la ventana Módulos](../debugger/how-to-use-the-modules-window.md)
+ [Depuración de proyectos DLL](../debugger/debugging-dll-projects.md)   
+ [Cómo: Uso de la ventana Módulos](../debugger/how-to-use-the-modules-window.md)

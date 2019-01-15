@@ -2,7 +2,6 @@
 title: Análisis del uso de memoria de JavaScript en aplicaciones de UWP | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - JavaScript
@@ -20,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af0871e428d57d9bb4da85a16963f539ecd08d96
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: fca1abfe267d877dbe5eec45ecf29c9f73781ce8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51221040"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962381"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Análisis del uso de memoria de JavaScript en aplicaciones de UWP
 El analizador de memoria de JavaScript está disponible en Visual Studio para ayudarle a entender el uso de memoria y a localizar fugas de memoria en las aplicaciones para UWP creadas para Windows con JavaScript. Las aplicaciones compatibles comprenden las aplicaciones universales de Windows.
@@ -99,7 +98,7 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
 -   [Ver una diferencia de instantánea](#view-a-snapshot-diff). Muestra valores diferenciales entre las instantáneas. Estas vistas muestran diferencias respecto al tamaño del objeto y los recuentos de objetos.  
   
 ## <a name="isolate-a-memory-leak"></a>Isolate a memory leak  
- Estos pasos proporcionan un flujo de trabajo que puede ayudarte a usar el analizador de memoria de JavaScript de forma más eficaz. Estos pasos pueden resultar útiles si sospechas que tu aplicación tiene una pérdida de memoria. Para obtener un tutorial que le guíe por el proceso de identificación de una fuga de memoria en una aplicación en funcionamiento, consulte [Tutorial: buscar una fuga de memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
+ Estos pasos proporcionan un flujo de trabajo que puede ayudarte a usar el analizador de memoria de JavaScript de forma más eficaz. Estos pasos pueden resultar útiles si sospechas que tu aplicación tiene una pérdida de memoria. Para obtener un tutorial que le guíe a lo largo del proceso de identificación de una fuga de memoria en una aplicación en funcionamiento, vea [Tutorial: Buscar una fuga de memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
 1. Abre la aplicación en Visual Studio.  
   
@@ -141,7 +140,7 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
   
     - Tamaño diferencial del montón (vínculo izquierdo debajo del tamaño del montón). El texto del vínculo muestra la diferencia entre el tamaño del montón de la instantánea actual y el de la instantánea anterior.  
   
-    - Recuento diferencial de objetos (vínculo derecho debajo del recuento de objetos). El texto del vínculo muestra dos valores (por ejemplo, +1858/-1765): el primer valor es el número de objetos nuevos agregados desde la instantánea anterior, mientras que el segundo es el número de objetos que se han quitado desde la instantánea anterior.  
+    - Recuento diferencial de objetos (vínculo derecho debajo del recuento de objetos). El texto del vínculo muestra dos valores (por ejemplo, +1858 / -1765): El primer valor es el número de objetos nuevos agregados desde la instantánea anterior, mientras que el segundo es el número de objetos que se han quitado desde la instantánea anterior.  
   
       Estos vínculos abren una vista diferencial de detalles de instantánea de tipos en el montón, ordenada por tamaño retenido o recuento de objetos, en función de qué vínculo se abriera.  
   
@@ -197,7 +196,7 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
   
 -   Recuento de objetos. Este recuento solo muestra los objetos creados en la aplicación y filtra los objetos integrados creados por el runtime de JavaScript. El recuento de objetos tiene un vínculo a la vista Tipos de los detalles de la instantánea.  
   
--   Recuento diferencial de objetos. Esto muestra dos valores: el primer valor es el número de objetos nuevos agregados desde la instantánea anterior. El segundo valor es el número de objetos que se han quitado desde la instantánea anterior. Por ejemplo, la ilustración muestra que se agregaron 1.859 objetos y se quitaron 1.733 objetos de la instantánea 1. Esta información va seguida de una flecha arriba de color rojo si el recuento total de objetos ha aumentado o de una flecha abajo de color verde si se ha reducido. Si el recuento de objetos no ha cambiado, verás el texto **No cambia** en lugar de un número. Para la primera instantánea, verás el texto **Línea de base**. El recuento diferencial de objetos es un vínculo a la vista Tipos de la diferencia de instantánea.  
+-   Recuento diferencial de objetos. Muestra dos valores: El primer valor es el número de objetos nuevos agregados desde la instantánea anterior, mientras que el segundo es el número de objetos que se han quitado desde la instantánea anterior. Por ejemplo, la ilustración muestra que se agregaron 1.859 objetos y se quitaron 1.733 objetos de la instantánea 1. Esta información va seguida de una flecha arriba de color rojo si el recuento total de objetos ha aumentado o de una flecha abajo de color verde si se ha reducido. Si el recuento de objetos no ha cambiado, verás el texto **No cambia** en lugar de un número. Para la primera instantánea, verás el texto **Línea de base**. El recuento diferencial de objetos es un vínculo a la vista Tipos de la diferencia de instantánea.  
   
 -   Captura de la pantalla en el momento en que se toma la instantánea.  
   
@@ -282,7 +281,7 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
  Cada vista tiene su propio filtro, por lo que el filtro no se conserva al pasar a otra vista.  
   
 ## <a name="find-an-object-in-the-object-tree"></a>Buscar un objeto en el árbol de objetos  
- En las vistas Tipos y Dominadores, puedes ver la relación de un objeto determinado con el objeto `Global`. Los objetos con raíz en el objeto `Global` no se detectarán durante la recolección de elementos no utilizados. Puedes buscar fácilmente un objeto conocido en la vista Raíces sin buscar a través del árbol de objetos de `Global` . Para ello, abre el menú contextual de un objeto en la vista Dominadores o Tipo y elige **Mostrar en vista de raíces**.  
+ En las vistas Tipos y Dominadores, puedes ver la relación de un objeto determinado con el objeto `Global` . Los objetos con raíz en el objeto `Global` no se detectarán durante la recolección de elementos no utilizados. Puedes buscar fácilmente un objeto conocido en la vista Raíces sin buscar a través del árbol de objetos de `Global` . Para ello, abre el menú contextual de un objeto en la vista Dominadores o Tipo y elige **Mostrar en vista de raíces**.  
   
 ## <a name="view-shared-object-references"></a>Ver referencias de objeto compartidas  
  En las vistas Tipos y Dominadores, el panel inferior contiene una lista de referencias de objeto que muestra las referencias compartidas. Al elegir un objeto en el panel superior, la lista de referencias de objeto muestra todos los objetos que apuntan a ese objeto.  
@@ -359,7 +358,7 @@ if (performance && performance.mark) {
   
     -   Algunos objetos pueden proporcionar un método `dispose` y recomendaciones de uso. Por ejemplo, debería llamar a `dispose` en [WinJS.Binding.List](/previous-versions/windows/apps/hh700774\(v\=win.10\)) si llama al método `createFiltered` de la lista y luego sale de una página.  
   
-    -   Podrías tener que quitar uno o varios agentes de escucha de eventos. Para obtener más información, consulta [View DOM event listeners](../debugger/view-dom-event-listeners.md).  
+    -   Podrías tener que quitar uno o varios agentes de escucha de eventos. Para obtener más información, consulta [View DOM event listeners](/visualstudio/debugger/quickstart-debug-html-and-css).  
   
 -   Mira la última parte de [este vídeo](https://channel9.msdn.com/Events/Build/2013/3-316) de la conferencia Build 2013 sobre el analizador de memoria de JavaScript.  
   

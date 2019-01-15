@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: Hacer referencia a información de símbolos de Windows | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Hacer referencia a información de símbolos de Windows | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, symbol servers
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ace6b0eaf71b4bfb992d0ff0ccdb09351eac2c19
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: ee80d19dea5956c85c844863ffd41ec94c486486
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844175"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841682"
 ---
-# <a name="how-to-reference-windows-symbol-information"></a>Cómo: Hacer referencia a información de símbolos de Windows
+# <a name="how-to-reference-windows-symbol-information"></a>Procedimiento Hacer referencia a información de símbolos de Windows
 Las herramientas de generación de perfiles de Visual Studio usan archivos de símbolos (.*pdb*) para resolver nombres simbólicos como los nombres de función en los archivos binarios del programa. Puede seguir estos pasos para descargar y actualizar automáticamente los archivos .*pdb* correctos para la versión de Windows en el equipo local.  
   
 > [!NOTE]
@@ -50,4 +48,4 @@ Las herramientas de generación de perfiles de Visual Studio usan archivos de s�
   
 ## <a name="see-also"></a>Vea también  
  [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
- [Serialización de la información de símbolos](../profiling/how-to-serialize-symbol-information.md)
+ [Cómo: Serializar la información de símbolos](../profiling/how-to-serialize-symbol-information.md)

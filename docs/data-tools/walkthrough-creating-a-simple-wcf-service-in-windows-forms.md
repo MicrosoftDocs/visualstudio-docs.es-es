@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e2c9d0bd58adcd0a0595c061fa4dfaa81f629601
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 466514f0bfd343dc985021a3a081739a91946f8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174252"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882070"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Tutorial: Crear un servicio WCF sencillo en Windows Forms
 
@@ -37,7 +36,7 @@ Este tutorial muestra cómo se crea un sencillo servicio de [!INCLUDE[vsindigo](
 
 1.  En el menú **Archivo** , elija **Nuevo** y haga clic en **Proyecto**.
 
-2.  En el **nuevo proyecto** cuadro de diálogo, expanda el **Visual Basic** o **Visual C#** nodo y haga clic en **WCF**, seguido de **WCF Biblioteca de servicios de**. Haga clic en **Aceptar** para abrir el proyecto.
+2.  En el cuadro de diálogo **Nuevo proyecto**, expanda los nodos **Visual Basic** o  **Visual C#**. Después, haga clic en **WCF** y **Biblioteca de servicios WCF**. Haga clic en **Aceptar** para abrir el proyecto.
 
      ![El proyecto de biblioteca de servicios de WCF](../data-tools/media/wcf1.png)
 
@@ -46,7 +45,7 @@ Este tutorial muestra cómo se crea un sencillo servicio de [!INCLUDE[vsindigo](
 
 3.  ![El archivo IService1](../data-tools/media/wcf2.png)
 
-     En **el Explorador de soluciones**, haga doble clic en **IService1.vb** o **IService1.cs** y busque la línea siguiente:
+     En el **Explorador de soluciones**, haga doble clic en **IService1.vb** o **IService1.cs** y busque la línea siguiente:
 
      [!code-csharp[WCFWalkthrough#4](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_1.cs)]
      [!code-vb[WCFWalkthrough#4](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_1.vb)]
@@ -60,7 +59,7 @@ Este tutorial muestra cómo se crea un sencillo servicio de [!INCLUDE[vsindigo](
 
 4.  ![El archivo Service1](../data-tools/media/wcf3.png)
 
-     En **el Explorador de soluciones**, haga doble clic en **Service1.vb** o **Service1.cs** y busque la línea siguiente:
+     En el **Explorador de soluciones**, haga doble clic en **Service1.vb** o **Service1.cs** y busque la siguiente línea:
 
      [!code-vb[WCFWalkthrough#5](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_3.vb)]
      [!code-csharp[WCFWalkthrough#5](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_3.cs)]
@@ -76,45 +75,45 @@ Este tutorial muestra cómo se crea un sencillo servicio de [!INCLUDE[vsindigo](
 
 1.  Presione **F5** para ejecutar el servicio. Un **cliente de prueba WCF** el formulario aparece y carga el servicio.
 
-2.  En el **cliente de prueba WCF** formulario, haga doble clic en el **GetData()** método sometido a **IService1**. El **GetData** aparecerá la pestaña.
+2.  En el formulario **Cliente de prueba WCF**, haga doble clic en el método **GetData()** en **IService1**. El **GetData** aparecerá la pestaña.
 
      ![El método GetData&#40; &#41; (método)](../data-tools/media/wcf4.png)
 
-3.  En el **solicitar** cuadro, seleccione el **valor** campo y el tipo `Hello`.
+3.  En el cuadro **Solicitar**, seleccione el campo **Valor** y escriba `Hello`.
 
      ![El campo Valor](../data-tools/media/wcf5.png)
 
-4.  Haga clic en el **Invoke** botón. Si un **advertencia de seguridad** aparece el cuadro de diálogo, haga clic en **Aceptar**. El resultado se muestra en el **respuesta** cuadro.
+4.  Haga clic en el botón **Invocar**. Si un **advertencia de seguridad** aparece el cuadro de diálogo, haga clic en **Aceptar**. El resultado se muestra en el **respuesta** cuadro.
 
      ![El resultado en el cuadro Respuesta](../data-tools/media/wcf6.png)
 
-5.  En el **archivo** menú, haga clic en **Exit** para cerrar el formulario de prueba.
+5.  En el menú **Archivo**, haga clic en **Salir** para cerrar el formulario de prueba.
 
 ## <a name="access-the-service"></a>Obtener acceso al servicio
 
 ### <a name="to-reference-a-wcf-service"></a>Para hacer referencia a un servicio WCF
 
-1.  En el **archivo** menú, elija **agregar** y, a continuación, haga clic en **nuevo proyecto**.
+1.  En el menú **Archivo**, apunte a **Agregar**y haga clic en **Nuevo proyecto**.
 
 2.  En el **nuevo proyecto** cuadro de diálogo, expanda el **Visual Basic** o **Visual C#** nodo, seleccione **Windows**y, a continuación, seleccione  **Aplicación de Windows Forms**. Haga clic en **Aceptar** para abrir el proyecto.
 
      ![Proyecto de Aplicación de Windows Forms](../data-tools/media/wcf7.png)
 
-3.  Haga clic en **WindowsApplication1** y haga clic en **Add Service Reference**. El **Add Service Reference** aparece el cuadro de diálogo.
+3.  Haga clic con el botón derecho en **WindowsApplication1** y haga clic en **Agregar referencia de servicio**. El **Add Service Reference** aparece el cuadro de diálogo.
 
-4.  En el **Add Service Reference** cuadro de diálogo, haga clic en **Discover**.
+4.  En el cuadro de diálogo **Agregar referencia de servicio**, haga clic en **Detectar**.
 
      ![El cuadro de diálogo Agregar referencia de servicio](../data-tools/media/wcf8.png)
 
      **Service1** se muestra en el **servicios** panel.
 
-5.  Haga clic en **Aceptar** para agregar la referencia de servicio.
+5.  Haga clic en **Aceptar** para agregar la referencia del servicio.
 
 ### <a name="to-build-a-client-application"></a>Para compilar una aplicación cliente
 
-1.  En **el Explorador de soluciones**, haga doble clic en **Form1.vb** o **Form1.cs** para abrir el Diseñador de formularios de Windows si no está ya abierto.
+1.  En el **Explorador de soluciones**, haga doble clic en **Form1.vb** o **Form1.cs** para abrir el Diseñador de Windows Forms, si no está ya abierto.
 
-2.  Desde el **cuadro de herramientas**, arrastre un `TextBox` (control), un `Label` control y un `Button` al formulario.
+2.  Desde el **Cuadro de herramientas**, arrastre un control `TextBox`, un control `Label` y un control `Button` al formulario.
 
      ![Agregar controles al formulario](../data-tools/media/wcf9.png)
 
@@ -123,7 +122,7 @@ Este tutorial muestra cómo se crea un sencillo servicio de [!INCLUDE[vsindigo](
      [!code-csharp[WCFWalkthrough#3](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_5.cs)]
      [!code-vb[WCFWalkthrough#3](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_5.vb)]
 
-4.  En **el Explorador de soluciones**, haga clic en **WindowsApplication1** y haga clic en **establecer como proyecto de inicio**.
+4.  En el **Explorador de soluciones**, haga clic con el botón derecho en **WindowsApplication1** y haga clic en **Establecer como proyecto de inicio**.
 
 5.  Presione **F5** para ejecutar el proyecto. Escriba algún texto y haga clic en el botón. Muestra la etiqueta "escribió:" y se muestra el texto que escribió.
 

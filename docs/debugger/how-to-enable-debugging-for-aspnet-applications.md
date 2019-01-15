@@ -2,7 +2,6 @@
 title: Habilitar la depuración de aplicaciones ASP.NET | Microsoft Docs
 ms.custom: H1HackMay2017
 ms.date: 09/21/18
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 41da2eb360bac4c50f85bd908f980f5ee3c1d141
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c8723a97f5751b790c946055693064c3b7d12237
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813432"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881106"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Depurar aplicaciones ASP.NET o ASP.NET Core en Visual Studio
 
@@ -139,7 +138,7 @@ Los proyectos de ASP.NET tienen *web.config* de forma predeterminada, los archiv
    </configuration>  
    ```
 
-[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] detecta automáticamente los cambios realizados en *web.config* archivos y aplica la nueva configuración. No tiene que reiniciar el equipo o el servidor IIS para que los cambios surtan efecto.  
+[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] detecta automáticamente los cambios realizados en los archivos *web.config* y aplica la nueva configuración. No tiene que reiniciar el equipo o el servidor IIS para que los cambios surtan efecto.  
   
 Un sitio Web puede contener varios directorios y subdirectorios virtuales, con *web.config* archivos en cada uno de ellos. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] las aplicaciones heredan los valores de configuración de *web.config* archivos en niveles superiores de la ruta de acceso de dirección URL. El jerárquica *web.config* configuración del archivo que se aplicará a todos los [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicaciones por debajo de ellas en la jerarquía. Establecer una configuración diferente en un *web.config* inferior en la jerarquía del archivo invalida los valores en el archivo mayor.  
   
@@ -185,10 +184,9 @@ Hay diferentes maneras de publicar aplicaciones en IIS. Estos pasos muestran có
 
 ## <a name="see-also"></a>Vea también  
 [Depuración ASP.NET: requisitos del sistema](aspnet-debugging-system-requirements.md)   
-[Cómo: ejecutar el proceso de trabajo en una cuenta de usuario](how-to-run-the-worker-process-under-a-user-account.md)   
-[Cómo: buscar el nombre del proceso de ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)   
-[Depurar aplicaciones web implementadas](debugging-deployed-web-applications.md)   
-[Tutorial: Depurar un formulario web Forms](walkthrough-debugging-a-web-form.md)   
-[Cómo: depurar excepciones de ASP.NET](how-to-debug-aspnet-exceptions.md)   
-[Depurar aplicaciones web: errores y solución de problemas](debugging-web-applications-errors-and-troubleshooting.md)
-  
+[Cómo: Ejecución de un proceso de trabajo en una cuenta de usuario](how-to-run-the-worker-process-under-a-user-account.md)   
+[Cómo: Búsqueda del nombre de un proceso de ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)   
+[Depuración de aplicaciones web implementadas](debugging-deployed-web-applications.md)   
+[Tutorial: Depuración de un formulario web](walkthrough-debugging-a-web-form.md)   
+[Cómo: Depuración de excepciones de ASP.NET](how-to-debug-aspnet-exceptions.md)   
+[Depuración de aplicaciones web: errores y solución de problemas](debugging-web-applications-errors-and-troubleshooting.md)

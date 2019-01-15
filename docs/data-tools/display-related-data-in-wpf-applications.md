@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f37fdeb7ddd305c7c258958d92c08cf1d8f2a4a8
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 5666197598eae96322c79724555b2cd884be70cd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304602"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824280"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Mostrar datos relacionados en aplicaciones WPF
 
@@ -33,9 +32,9 @@ Puede crear controles enlazados a datos que muestran datos relacionados arrastra
 
 ## <a name="to-create-controls-that-display-related-records"></a>Para crear controles que muestren los registros relacionados
 
-1. En el menú Datos **, haga clic en Mostrar orígenes de datos** para abrir la ventana Orígenes de datos **.
+1. En el menú **Datos**, haga clic en **Mostrar orígenes de datos** para abrir la ventana **Orígenes de datos**.
 
-2. Haga clic en Agregar nuevo origen de datos **y complete el Asistente para configuración de orígenes de datos**.
+2. Haga clic en **Agregar nuevo origen de datos** y complete el **Asistente para configuración de orígenes de datos**.
 
 3. Abra el diseñador WPF y asegúrese de que el diseñador contiene un contenedor que sea un destino válido para los elementos de la **orígenes de datos** ventana.
 

@@ -1,8 +1,6 @@
 ---
 title: Buscar pérdidas de memoria con la biblioteca CRT | Microsoft Docs
-ms.custom: ''
 ms.date: 10/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -31,14 +29,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b797e8c8068523b4c782c4d7f02a3853c1d37d1
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
-ms.translationtype: MT
+ms.openlocfilehash: e29ef610fdfe114525e7da22b58635e0f3e4a3af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050117"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931032"
 ---
-# <a name="find-memory-leaks-with-the-crt-library"></a>Buscar pérdidas de memoria con la biblioteca CRT
+# <a name="find-memory-leaks-with-the-crt-library"></a>Búsqueda de fugas de memoria con la biblioteca de CRT
 
 Pérdidas de memoria se encuentran entre los errores más sutiles y difíciles de detectar en las aplicaciones de C o C++. Resultado de error al desasignar correctamente memoria asignada previamente de pérdidas de memoria. Una pequeña pérdida de memoria podría no distinguirse en primer lugar, pero con el tiempo puede causar síntomas que van desde un bajo rendimiento hasta el bloqueo cuando se ejecuta la aplicación no hay memoria suficiente. Una aplicación de pérdidas que toda la memoria disponible puede dar lugar a otras aplicaciones que se bloquee, creando confusión con respecto a qué aplicación es responsable. Pérdidas de memoria aparentemente inocuas incluso podrían indicar otros problemas que se deben corregir.  
 
@@ -183,7 +181,7 @@ El número de asignación de memoria le indica cuándo se asignó un bloque de p
 
 Puede utilizar el número de asignación para establecer un punto de interrupción en la asignación de memoria.  
 
-**Para establecer un punto de interrupción de asignación de memoria mediante la ventana Inspección:**  
+**Para definir un punto de interrupción de asignación de memoria mediante la ventana Inspección:**  
 
 1. Establezca un punto de interrupción al principio de la aplicación e iniciar la depuración.  
    
@@ -195,13 +193,13 @@ Puede utilizar el número de asignación para establecer un punto de interrupci�
    
 1. Presione **ENTRAR**.  
    
-   El depurador evalúa la llamada y coloca el resultado en la columna **Valor** . Este valor será **-1** si no ha establecido ningún punto de interrupción sobre asignaciones de memoria.  
+   El depurador evalúa la llamada y coloca el resultado en la columna **Valor** . Este valor será **–1** si no se han definido puntos de interrupción sobre asignaciones de memoria.  
    
 1. En el **valor** columna, reemplace el valor con el número de asignación de la asignación de memoria donde desea que el depurador se interrumpa.  
 
 Después de establecer un punto de interrupción en un número de asignación de memoria, continuar la depuración. Asegúrese de que se ejecuten en las mismas condiciones, por lo que no cambia el número de asignación de memoria. Cuando el programa se interrumpe en la asignación de memoria especificada, use el **pila de llamadas** ventana y otras ventanas del depurador para determinar las condiciones en las que se asignó la memoria. A continuación, puede continuar la ejecución para observar lo que sucede en el objeto y determinar por qué no se desasigna correctamente.  
 
-También podría resultar útil definir un punto de interrupción de datos sobre el objeto. Para obtener más información, consulte [usar puntos de interrupción](../debugger/using-breakpoints.md).  
+También podría resultar útil definir un punto de interrupción de datos sobre el objeto. Para más información, vea [Uso de puntos de interrupción](../debugger/using-breakpoints.md).  
 
 También puede establecer puntos de interrupción de asignación de memoria en el código. Puede establecer:  
 

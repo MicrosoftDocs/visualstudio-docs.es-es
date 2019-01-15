@@ -2,7 +2,6 @@
 title: Configuración de compilador avanzada (Cuadro de diálogo, Visual Basic)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedCompile
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 593bb95e45ecdbda14eba49425ce5db08369e6cf
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 34880d96effb9c1c77c1d88c22f61967741b693e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783693"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878278"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Configuración de compilador avanzada (Cuadro de diálogo, Visual Basic)
 
@@ -73,7 +72,7 @@ Las constantes de compilación condicionales tienen un efecto parecido al de usa
 
  **Constantes personalizadas**
 
- Escriba una de estas constantes personalizada para su aplicación en este cuadro de texto. Las entradas deben estar delimitadas por comas, con este formato: **Nombre1="Valor1",Nombre2="Valor2",Nombre3="Valor3"**.
+ Escriba una de estas constantes personalizada para su aplicación en este cuadro de texto. Las entradas deben delimitarse mediante comas, con este formato: **Name1="Value1",Name2="Value2",Name3="Value3"**.
 
 ## <a name="other-settings"></a>Otras configuraciones
 

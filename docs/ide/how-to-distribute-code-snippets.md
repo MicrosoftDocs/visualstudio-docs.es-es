@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: Distribuir fragmentos de código'
+title: Procedimiento Distribuir fragmentos de código
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
@@ -14,14 +13,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cd6aba7c20c920c0c4351a1e9aa263fc73cd4415
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: e624f313c66df09c7496babe08a32dfd8453829c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380422"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836067"
 ---
-# <a name="how-to-distribute-code-snippets"></a>Cómo: Distribuir fragmentos de código
+# <a name="how-to-distribute-code-snippets"></a>Procedimiento Distribuir fragmentos de código
 
 Los fragmentos de código se pueden entregar a los compañeros para que los instalen en sus equipos mediante el **Administrador de fragmentos de código**. Pero si tiene que distribuir varios fragmentos de código o le gustaría distribuirlos más ampliamente, incluya el archivo de fragmento de código en una extensión de Visual Studio. Los usuarios de Visual Studio pueden, entonces, instalar la extensión.
 
@@ -29,7 +28,7 @@ Debe instalar el SDK de Visual Studio para poder crear extensiones de Visual Stu
 
 ## <a name="set-up-the-extension"></a>Configurar la extensión
 
-En este procedimiento se usará el mismo fragmento de código de Hola mundo creado en [Tutorial: Crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md). Nosotros le proporcionaremos el texto *.snippet* para que no tenga que volver a crearlo.
+En este procedimiento se usa el mismo fragmento de código de Hola mundo creado en [Tutorial: Creación de un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md). Nosotros le proporcionaremos el texto *.snippet* para que no tenga que volver a crearlo.
 
 1. Cree un nuevo proyecto de VSIX denominado **TestSnippet**. (**Archivo** > **Nuevo** > **Proyecto** > **Visual C# (o Visual Basic)** > **Extensibilidad**).
 
@@ -103,7 +102,7 @@ En este procedimiento se usará el mismo fragmento de código de Hola mundo crea
 
 4. Pruebe el fragmento de código. En la instancia experimental, abra un proyecto de Visual Basic y luego abra uno de los archivos de código. Coloque el cursor en algún lugar del código, haga clic con el botón derecho y, en el menú contextual, seleccione **Insertar fragmento de código**.
 
-5. Verá que una de las carpetas es *HelloWorldVB*. Haga doble clic en ella. Debería ver un elemento emergente **Insertar fragmento de código: HellowWorldVB >** con una lista desplegable **HelloWorldVB**. Haga clic en la lista desplegable de **HelloWorldVB**. Verá la línea siguiente agregada al archivo:
+5. Verá que una de las carpetas es *HelloWorldVB*. Haga doble clic en ella. Se debería ver un elemento emergente **Insertar fragmento de código: HelloWorldVB >** con una lista desplegable **HelloWorldVB**. Haga clic en la lista desplegable de **HelloWorldVB**. Verá la línea siguiente agregada al archivo:
 
     ```vb
     Console.WriteLine("Hello, World!")

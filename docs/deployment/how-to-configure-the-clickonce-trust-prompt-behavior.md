@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: configurar el comportamiento mensaje de confianza de ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Configurar el comportamiento mensaje de confianza de ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 103fcd8b47e423aaa8d66c3df96afe3598818de2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: MT
+ms.openlocfilehash: 6e9e0f9f0af2ba8dd30a64810bfa655001ef38a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774812"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955183"
 ---
-# <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Cómo: configurar el comportamiento del mensaje de confianza de ClickOnce
+# <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Procedimiento Configuración del comportamiento del mensaje sobre la confianza de ClickOnce
 Puede configurar el aviso de confianza de ClickOnce para controlar si los usuarios finales tienen la opción de instalar las aplicaciones ClickOnce, por ejemplo, las aplicaciones de Windows Forms, aplicaciones de Windows Presentation Foundation, las aplicaciones de consola, WPF en explorador las aplicaciones y soluciones de Office. Configure el aviso de confianza mediante el establecimiento de las claves del registro en cada equipo de usuario final.  
   
  La siguiente tabla muestra las opciones de configuración que se pueden aplicar a cada una de las cinco zonas (Internet, UntrustedSites, MyComputer, LocalIntranet y TrustedSites).  
@@ -55,9 +53,9 @@ Puede configurar el aviso de confianza de ClickOnce para controlar si los usuari
   
 #### <a name="to-enable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Para habilitar el aviso de confianza de ClickOnce mediante el editor del registro  
   
-1.  Abra el editor del registro:  
+1.  Abra el Editor del Registro:  
   
-    1.  Haga clic en **iniciar**y, a continuación, haga clic en **ejecutar**.  
+    1.  Haga clic en **Inicio** y después en **Ejecutar**.  
   
     2.  En el **abierto** , escriba `regedit`y, a continuación, haga clic en **Aceptar**.  
   
@@ -114,9 +112,9 @@ Puede configurar el aviso de confianza de ClickOnce para controlar si los usuari
   
 #### <a name="to-restrict-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Para restringir el aviso de confianza de ClickOnce mediante el editor del registro  
   
-1.  Abra el editor del registro:  
+1.  Abra el Editor del Registro:  
   
-    1.  Haga clic en **iniciar**y, a continuación, haga clic en **ejecutar**.  
+    1.  Haga clic en **Inicio** y después en **Ejecutar**.  
   
     2.  En el **abierto** , escriba `regedit`y, a continuación, haga clic en **Aceptar**.  
   
@@ -171,9 +169,9 @@ Puede configurar el aviso de confianza de ClickOnce para controlar si los usuari
   
 #### <a name="to-disable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Para deshabilitar el aviso de confianza de ClickOnce mediante el editor del registro  
   
-1.  Abra el editor del registro:  
+1.  Abra el Editor del Registro:  
   
-    1.  Haga clic en **iniciar**y, a continuación, haga clic en **ejecutar**.  
+    1.  Haga clic en **Inicio** y después en **Ejecutar**.  
   
     2.  En el **abierto** , escriba `regedit`y, a continuación, haga clic en **Aceptar**.  
   
@@ -225,13 +223,13 @@ Puede configurar el aviso de confianza de ClickOnce para controlar si los usuari
 3.  Compile y ejecute la aplicación.  
   
 ## <a name="see-also"></a>Vea también  
- [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)   
+ [Protección de las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Seguridad de acceso del código para aplicaciones ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce y Authenticode](../deployment/clickonce-and-authenticode.md)   
  [Introducción a la implementación de aplicaciones de confianza](../deployment/trusted-application-deployment-overview.md)   
- [Cómo: habilitar la configuración de seguridad de ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
- [Cómo: establecer una zona de seguridad para una aplicación ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [Cómo: establecer permisos personalizados para una aplicación ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [Cómo: depurar una aplicación ClickOnce con permisos restringidos](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [Cómo: agregar un publicador de confianza en un equipo cliente para aplicaciones ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
- [Cómo: volver a firmar manifiestos de aplicación e implementación](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+ [Cómo: Activación de la configuración de seguridad de ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Cómo: Establecimiento de una zona de seguridad para una aplicación ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [Cómo: Establecimiento de permisos personalizados para una aplicación ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Cómo: Depuración de una aplicación ClickOnce con permisos restringidos](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [Cómo: Adición de un publicador de confianza a un equipo cliente para aplicaciones ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
+ [Cómo: Repetición de la firma de manifiestos de implementación y aplicación](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

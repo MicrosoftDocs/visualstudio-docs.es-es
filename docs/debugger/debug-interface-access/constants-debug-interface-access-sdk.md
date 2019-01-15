@@ -1,8 +1,6 @@
 ---
 title: Constantes (Debug Interface Access SDK) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd6908a8a0b49f5078e4c0d448ba2dedbe8f720a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bdc54e15014e05f539c115675a97690e685cb5f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872049"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852068"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Constantes (Debug Interface Access SDK)
 Estas constantes de cadena pueden utilizarse para identificar las distintas secciones de un archivo de base de datos (PDB) de depuración de programa a través del SDK de DIA.  
@@ -58,7 +56,7 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
  Encabezado: dia2.h  
   
 ## <a name="see-also"></a>Vea también  
- [Referencia](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)   
+ [Reference](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  (Referencia)  
  [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Interfaces (SDK de acceso a la interfaz de depuración)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)

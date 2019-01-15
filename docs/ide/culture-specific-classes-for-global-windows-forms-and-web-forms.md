@@ -2,7 +2,6 @@
 title: Clases específicas de las referencias culturales para Windows Forms y formularios Web Forms globales
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - globalization [Windows Forms], classes
@@ -30,12 +29,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d0a6947127fd564eace97c919a425d4a3a3360c4
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: cb0215c27b8d1fb09f54bc8590d24b99403670f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863574"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989966"
 ---
 # <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>Clases específicas de las referencias culturales para Windows Forms y formularios Web Forms globales
 
@@ -46,7 +45,7 @@ Cada referencia cultural tiene distintas convenciones para mostrar fechas, horas
 
 ## <a name="using-the-culture-setting"></a>Uso de la configuración de la referencia cultural
 
-Use la configuración de la referencia cultural, almacenada en la aplicación o en el panel de control **Configuración Regional**, para determinar las convenciones culturales en tiempo de ejecución y dar formato a la información en consecuencia. Para obtener más información sobre cómo establecer la referencia cultural, consulte [Cómo: establecer la referencia cultural y la referencia cultural de la interfaz de usuario para la globalización de páginas web de ASP.NET](https://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0). Las clases que dan formato automáticamente a la información según la configuración de la referencia cultural se denominan *específicas de referencias culturales*. Algunos métodos específicos de referencias culturales son
+Use la configuración de la referencia cultural, almacenada en la aplicación o en el panel de control **Configuración Regional**, para determinar las convenciones culturales en tiempo de ejecución y dar formato a la información en consecuencia. Para obtener más información sobre cómo establecer la referencia cultural, vea [Cómo: Set the culture and UI culture for ASP.NET web page globalization](https://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0) (Cómo: Establecer la referencia cultural y la referencia cultural de la interfaz de usuario para la globalización de páginas web de ASP.NET). Las clases que dan formato automáticamente a la información según la configuración de la referencia cultural se denominan *específicas de referencias culturales*. Algunos métodos específicos de referencias culturales son
 - <xref:System.IFormattable.ToString%2A?displayProperty=fullName>
 - <xref:System.Console.WriteLine%2A?displayProperty=fullName>
 - <xref:System.String.Format%2A?displayProperty=fullName>

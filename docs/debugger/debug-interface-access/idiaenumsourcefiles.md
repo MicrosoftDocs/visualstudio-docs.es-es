@@ -1,8 +1,6 @@
 ---
 title: IDiaEnumSourceFiles | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33960cf8cfde8d781d52e0519911093019a93941
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
-ms.translationtype: MT
+ms.openlocfilehash: 3ac732052c415341cf0cb8f04bfd94c8b1d797cb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511029"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872007"
 ---
 # <a name="idiaenumsourcefiles"></a>IDiaEnumSourceFiles
 Enumera los distintos archivos de origen contenidos en el origen de datos.  
@@ -27,7 +25,7 @@ Enumera los distintos archivos de origen contenidos en el origen de datos.
 ## <a name="syntax"></a>Sintaxis  
   
 ```  
-IDiaEnumSourceFiles : IUnknown  
+IDiaEnumSourceFiles : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
@@ -82,14 +80,14 @@ IDiaEnumSourceFiles* GetEnumSourceFiles(IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: Dia2.h  
+ Encabezado: dia2.h  
   
  Biblioteca: diaguids.lib  
   
  Archivo DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Vea también  
- [Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiasession](../../debugger/debug-interface-access/idiasession-findfile.md)   
- [Findlinesbylinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
+ [Interfaces (SDK de acceso a la interfaz de depuración)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)   
+ [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

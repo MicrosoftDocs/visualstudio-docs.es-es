@@ -1,8 +1,6 @@
 ---
 title: Introducción a las herramientas de rendimiento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - getting started, performance
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10c568705be09948b96f8c8b3df23be1f5e8d137
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: cf973c05e3ee70654fee1655591da11f54bc826b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948912"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942858"
 ---
 # <a name="getting-started-with-performance-tools"></a>Introducción a las herramientas de rendimiento
 
@@ -28,7 +26,7 @@ Visual Studio ofrece varias maneras de recopilar, ver y analizar los datos de re
 
 - Los informes de rendimiento proporcionan vistas de diferentes niveles de la estructura, las líneas de código fuente y los procesos de la aplicación. Los informes de rendimiento muestran datos de ejecución de la aplicación, desde las funciones que realizan llamadas y a las que se llama de una función específica en el árbol de llamadas de toda la aplicación.  
   
-Para generar rápidamente el perfil de un proyecto, una aplicación o un sitio web de ASP.NET, seleccione **Depurar** > **Generador de perfiles de rendimiento** y elija **Asistente de rendimiento**. Para obtener instrucciones detalladas, vea [Guía para principiantes para el muestreo de la CPU](../profiling/beginners-guide-to-cpu-sampling.md) y [Recopilación de datos de rendimiento de un sitio web](../profiling/how-to-collect-performance-data-for-a-web-site.md).  
+Para generar rápidamente el perfil de un proyecto, una aplicación o un sitio web de ASP.NET, seleccione **Depurar** > **Generador de perfiles de rendimiento** y elija **Asistente de rendimiento**. Para obtener instrucciones detalladas, vea [Guía básica para la generación de perfiles de rendimiento](../profiling/beginners-guide-to-cpu-sampling.md) y [Cómo: Recopilar datos de rendimiento de un sitio web](../profiling/how-to-collect-performance-data-for-a-web-site.md).  
 
 Para especificar y configurar una sesión de generación de perfiles de rendimiento manualmente, seleccione **Depurar** > **Generador de perfiles** > **Explorador de rendimiento**. Use la carpeta **Destinos** y las páginas **Propiedades** en el **Explorador de rendimiento** para configurar las sesiones. Para obtener instrucciones, vea [Cómo: Crear manualmente sesiones de rendimiento](../profiling/how-to-manually-create-performance-sessions.md).  
   

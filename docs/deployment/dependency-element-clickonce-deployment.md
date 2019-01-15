@@ -1,8 +1,6 @@
 ---
 title: '&lt;dependencia&gt; elemento (implementación ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
@@ -27,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33e210b0787c3325a009bc54505812f22c44da84
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4d16b4e82dc84ce88ac47fd623502891c7b85ba1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916899"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834170"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;dependencia&gt; elemento (implementación ClickOnce)
 Identifica la versión de la aplicación que desea instalar y la ubicación del manifiesto de aplicación.  
@@ -72,32 +70,32 @@ Identifica la versión de la aplicación que desea instalar y la ubicación del 
 </dependency>  
 ```  
 
-## <a name="elements-and-attributes"></a>Los elementos y atributos  
+## <a name="elements-and-attributes"></a>Elementos y atributos  
  El `dependency` elemento es necesario. No tiene atributos. Un manifiesto de implementación puede tener varios `dependency` elementos.  
 
  El `dependency` elemento normalmente expresa las dependencias de la aplicación principal en los ensamblados contenidos dentro de un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Si su aplicación Main.exe utiliza un ensamblado denominado DotNetAssembly.dll, dicho ensamblado debe estar incluido en una sección de dependencia. Dependencia, sin embargo, también puede expresar otros tipos de dependencias, como las dependencias de una versión específica de common language runtime, en un ensamblado en la caché de ensamblados global (GAC) o en un objeto COM. Porque es una tecnología de implementación "no-touch" [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] no se iniciará la descarga e instalación de estos tipos de dependencias, pero ¿evita que la aplicación se ejecute si no existen una o varias de las dependencias especificadas.  
 
 ## <a name="dependentassembly"></a>dependentAssembly  
- Requerido. Este elemento contiene el `assemblyIdentity` elemento. En la tabla siguiente se muestra los atributos del `dependentAssembly` admite.  
+ Obligatorio. Este elemento contiene el `assemblyIdentity` elemento. En la tabla siguiente se muestra los atributos del `dependentAssembly` admite.  
 
 
 | Atributo | Descripción |
 |------------------| - |
 | `preRequisite` | Opcional. Especifica que este ensamblado debe existir en la GAC. Los valores válidos son `true` y `false`. Si `true`y el ensamblado especificado no existe en la GAC, no se puede ejecutar la aplicación. |
 | `visible` | Opcional. Identifica la identidad de aplicación de nivel superior, incluidas sus dependencias. Utilizado internamente por [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] para administrar el almacenamiento de aplicaciones y activación. |
-| `dependencyType` | Requerido. La relación entre esta dependencia y la aplicación. Los valores válidos son:<br /><br /> -   `install`. Componente representa una instalación independiente de la aplicación actual.<br />-   `preRequisite`. Componente es necesario para la aplicación actual. |
+| `dependencyType` | Obligatorio. La relación entre esta dependencia y la aplicación. Los valores válidos son:<br /><br /> -   `install`. Componente representa una instalación independiente de la aplicación actual.<br />-   `preRequisite`. Componente es necesario para la aplicación actual. |
 | `codebase` | Opcional. La ruta de acceso completa al manifiesto de aplicación. |
 | `size` | Opcional. El tamaño del manifiesto de aplicación, en bytes. |
 
 ## <a name="assemblyidentity"></a>assemblyIdentity  
- Requerido. Este elemento es un elemento secundario del elemento `dependentAssembly` . El contenido de `assemblyIdentity` debe ser el mismo como se describe en el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto de aplicación. En la tabla siguiente se muestra los atributos de la `assemblyIdentity` elemento.  
+ Obligatorio. Este elemento es un elemento secundario del elemento `dependentAssembly` . El contenido de `assemblyIdentity` debe ser el mismo como se describe en el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto de aplicación. En la tabla siguiente se muestra los atributos de la `assemblyIdentity` elemento.  
 
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Name`|Requerido. Identifica el nombre de la aplicación.|  
-|`Version`|Requerido. Especifica el número de versión de la aplicación, en el formato siguiente: `major.minor.build.revision`|  
-|`publicKeyToken`|Requerido. Especifica una cadena hexadecimal de 16 caracteres que representa los últimos 8 bytes del hash SHA-1 de la clave pública con la que se firma la aplicación o el ensamblado. La clave pública utilizada para iniciar sesión debe ser 2048 bits o superior.|  
-|`processorArchitecture`|Requerido. Especifica el microprocesador. Los valores válidos son `x86` para Windows de 32 bits y `IA64` para Windows de 64 bits.|  
+|`Name`|Obligatorio. Identifica el nombre de la aplicación.|  
+|`Version`|Obligatorio. Especifica el número de versión de la aplicación, en el formato siguiente: `major.minor.build.revision`|  
+|`publicKeyToken`|Obligatorio. Especifica una cadena hexadecimal de 16 caracteres que representa los últimos 8 bytes del hash SHA-1 de la clave pública con la que se firma la aplicación o el ensamblado. La clave pública utilizada para iniciar sesión debe ser 2048 bits o superior.|  
+|`processorArchitecture`|Obligatorio. Especifica el microprocesador. Los valores válidos son `x86` para Windows de 32 bits y `IA64` para Windows de 64 bits.|  
 |`Language`|Opcional. Identifica los códigos de idioma de dos partes del ensamblado. Por ejemplo, EN-US, lo que significa para inglés (Estados Unidos). De manera predeterminada, es `neutral`. Este elemento está en el `asmv2` espacio de nombres.|  
 |`type`|Opcional. Por razones de compatibilidad con Windows side-by-side instalación tecnología. El único valor permitido es `win32`.|  
 

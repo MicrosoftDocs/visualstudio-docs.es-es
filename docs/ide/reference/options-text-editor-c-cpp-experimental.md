@@ -10,15 +10,14 @@ author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3f5ddf5a42199c8097e982c6ddd8e559185787fb
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 13bcc65b3d8ffe4872c8b7d5f18b1bbf13bc67c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672345"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893333"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opciones, editor de texto, C/C++, experimental
 
@@ -37,7 +36,7 @@ IntelliSense predictivo limita el número de resultados que se muestran en la li
 
 ## <a name="enable-faster-project-load"></a>Habilitar la carga de proyectos más rápida
 
-**Visual Studio 2017 versión 15.3 y posteriores**: esta característica ahora se denomina **Habilitar almacenamiento en caché de los proyectos** y se ha movido a la página de propiedades [Configuración de proyecto de VC++](vcpp-project-settings-projects-and-solutions-options-dialog-box.md).
+**Visual Studio 2017 versión 15.3 y posteriores:** Esta característica ahora se denomina **Habilitar almacenamiento en caché de los proyectos** y se ha movido a la página de propiedades [Configuración de proyecto de VC++](vcpp-project-settings-projects-and-solutions-options-dialog-box.md).
 Esta opción permite que Visual Studio copie en caché los datos de un proyecto para que, cuando lo abra la próxima vez, se carguen esos datos en lugar de volver a calcularlos desde los archivos de proyecto. Usar datos en caché puede acelerar de forma significativa el tiempo de carga de un proyecto.
 
 ## <a name="additional-features-in-the-visual-studio-marketplace"></a>Características adicionales de Visual Studio Marketplace

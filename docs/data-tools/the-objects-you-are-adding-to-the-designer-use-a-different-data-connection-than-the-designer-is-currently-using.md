@@ -7,21 +7,20 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a2fb26fa8960c652feefa157fb04c31b9ed7abb9
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 23abfbdc1b0bf922e3d15f0181afd7d01aa7ee2f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174200"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935663"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer"></a>Los objetos que se va a agregar al diseñador usan una conexión de datos diferente que el diseñador
 
 Los objetos que va a agregar al diseñador usan una conexión de datos diferente a la que está usando el diseñador. ¿Desea reemplazar la conexión que usa el diseñador?
 
-Cuando se agregan elementos a la **Object Relational Designer** (**Object Relational Designer**), todos los elementos usan una conexión de datos compartido. (La superficie de diseño representa la clase <xref:System.Data.Linq.DataContext>, que usa una sola conexión para todos los objetos en la superficie.) Si agrega al diseñador un objeto que usa una conexión de datos distinta de la conexión de datos que usa actualmente el diseñador, aparece este mensaje. Para resolver este error, puede optar por mantener la conexión existente. Si elige esta opción, no se agregará el objeto seleccionado. Como alternativa, puede agregar el objeto y restablecer el <xref:System.Data.Linq.DataContext> conexión a la nueva conexión.
+Cuando se agregan elementos a la **Object Relational Designer** (**Object Relational Designer**), todos los elementos usan una conexión de datos compartido. (La superficie de diseño representa la clase <xref:System.Data.Linq.DataContext>, que usa una sola conexión para todos los objetos en la superficie.) Si agrega al diseñador un objeto que usa una conexión de datos distinta de la conexión de datos que usa actualmente el diseñador, aparece este mensaje. Para resolver este error, puede optar por mantener la conexión existente. Si elige esta opción, no se agregará el objeto seleccionado. Asimismo, puede optar por agregar el objeto y restablecer la conexión de <xref:System.Data.Linq.DataContext> en la nueva conexión.
 
 > [!NOTE]
 > Si hace clic en **Sí**, entidad de todas las clases en el **Object Relational Designer** se asignan a la nueva conexión.
@@ -36,9 +35,9 @@ Cuando se agregan elementos a la **Object Relational Designer** (**Object Relati
 
 - Haga clic en **No**.
 
-    Se cancela la acción. El *DataContext.Connection* mantiene establecido en la conexión existente.
+    Se cancela la acción. *DataContext.Connection* se mantiene establecido en la conexión existente.
 
 ## <a name="see-also"></a>Vea también
 
 - [Mensajes de Object Relational Designer](../data-tools/o-r-designer-messages.md)
-- [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Herramientas LINQ to SQL en Visual Studio)

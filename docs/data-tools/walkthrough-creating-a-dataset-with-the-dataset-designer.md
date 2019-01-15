@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Crear un conjunto de datos con el Diseñador de Dataset'
+title: 'Tutorial: Creación de un conjunto de datos con el Diseñador de Dataset'
 ms.date: 09/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 32a093e59d918f34ddf5da9cbb5edb13c96b2777
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
-ms.translationtype: MT
+ms.openlocfilehash: e79646609bf592b7a8d71d3e0ba8660c65520715
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117932"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868526"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Tutorial: Crear un conjunto de datos con el Diseñador de Dataset
 
@@ -58,7 +57,7 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
 
 ## <a name="add-a-new-dataset-to-the-application"></a>Agregar un nuevo conjunto de datos a la aplicación
 
-1.  En el **proyecto** menú, seleccione **Agregar nuevo elemento**.
+1.  En el menú **Proyecto**, seleccione **Agregar nuevo elemento**.
 
      Aparecerá el cuadro de diálogo **Agregar nuevo elemento**.
 
@@ -70,9 +69,9 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
 
 ## <a name="create-a-data-connection-in-server-explorer"></a>Crear una conexión de datos en el Explorador de servidores
 
-1.  En el **vista** menú, haga clic en **Explorador de servidores**.
+1.  En el menú **Ver**, haga clic en el **Explorador de servidores**.
 
-2.  En **Explorador de servidores**, haga clic en el **conectar con base de datos** botón.
+2.  En el **Explorador de servidores**, haga clic en el botón **Conectar con base de datos**.
 
 3.  Crear una conexión a la base de datos de ejemplo Northwind.
 
@@ -82,21 +81,21 @@ Esta sección explica cómo agregar tablas al conjunto de datos.
 
 ### <a name="to-create-the-customers-table"></a>Para crear la tabla Customers
 
-1.  Expanda la conexión de datos que creó en **Explorador de servidores**y, a continuación, expanda el **tablas** nodo.
+1.  Expanda la conexión de datos que creó en el **Explorador de servidores** y, a continuación, expanda el nodo **Tablas**.
 
-2.  Arrastre el **clientes** desde la tabla **Explorador de servidores** hasta la **Diseñador de Dataset**.
+2.  Arrastre la tabla **Customers** desde el **Explorador de servidores** al **Diseñador de DataSet**.
 
-     Un **clientes** tabla de datos y **CustomersTableAdapter** se agregan al conjunto de datos.
+     Se agregan una tabla de datos **Customers** y **CustomersTableAdapter** al conjunto de datos.
 
 ### <a name="to-create-the-orders-table"></a>Para crear la tabla Orders
 
--   Arrastre el **pedidos** desde la tabla **Explorador de servidores** hasta la **Diseñador de Dataset**.
+-   Arrastre la tabla **Orders** desde el **Explorador de servidores** al **Diseñador de DataSet**.
 
-     Un **pedidos** tabla de datos, **OrdersTableAdapter**y la relación de datos entre el **clientes** y **pedidos** tablas se agregarán a la conjunto de datos.
+     Una tabla de datos **Orders**, **OrdersTableAdapter** y una relación de datos entre las tablas **Customers** y **Orders** se agregan al conjunto de datos.
 
 ### <a name="to-create-the-orderdetails-table"></a>Para crear la tabla OrderDetails
 
--   Arrastre el **Order Details** desde la tabla **Explorador de servidores** hasta la **Diseñador de Dataset**.
+-   Arrastre la tabla **Order Details** desde el **Explorador de servidores** hasta el **Diseñador de DataSet**.
 
      Un **Order Details** tabla de datos, **OrderDetailsTableAdapter**y una relación de datos entre el **pedidos** y **OrderDetails** tablas se agregan al conjunto de datos.
 
@@ -104,7 +103,7 @@ Esta sección explica cómo agregar tablas al conjunto de datos.
 
 -   Guarde el conjunto de datos.
 
--   Seleccione los elementos en el **orígenes de datos** ventana y arrástrelos hasta un formulario. Para obtener más información, consulte [controla el enlace Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
+-   Seleccione elementos en la ventana **Orígenes de datos** y arrástrelos a un formulario. Para obtener más información, consulte [controla el enlace Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
 
 -   Agregar más consultas a los TableAdapters.
 

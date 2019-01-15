@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c4e5ca1e9903089cbcc9daf99e8c8d49d170b1c8
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 2a9cde551796d43cf94c20a9e54768ea9df3ddb5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388824"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924805"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Guardar datos en una base de datos (varias tablas)
 
@@ -33,13 +32,13 @@ Puede guardar los datos de su aplicación en la base de datos llamando al métod
 
 Las tareas ilustradas en este tutorial incluyen:
 
--   Crear un proyecto nuevo de aplicación Windows Forms **.
+-   Crear un proyecto nuevo de **aplicación de Windows Forms**.
 
 -   Crear y configurar un origen de datos en la aplicación con el [Asistente para configuración de origen de datos](../data-tools/media/data-source-configuration-wizard.png).
 
 -   Establecer los controles de los elementos de la [ventana Orígenes de datos](add-new-data-sources.md#data-sources-window). Para obtener más información, consulte [establecer el control que se creará al arrastrar desde la ventana Orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
--   Crear controles enlazados a datos arrastrando elementos desde la ventana Orígenes de datos** hasta el formulario.
+-   Crear controles enlazados a datos arrastrando elementos desde la ventana **Orígenes de datos** hasta el formulario.
 
 -   Modificación de algunos registros de cada tabla en el conjunto de datos.
 
@@ -75,17 +74,17 @@ El primer paso es crear un **aplicación de Windows Forms**. Asignar un nombre a
 
 4. Denomine el proyecto **UpdateMultipleTablesWalkthrough**y, a continuación, elija **Aceptar**.
 
-     Se crea el proyecto UpdateMultipleTablesWalkthrough **y se agrega al Explorador de soluciones**.
+     Se crea el proyecto **UpdateMultipleTablesWalkthrough** y se agrega al **Explorador de soluciones**.
 
 ## <a name="create-the-data-source"></a>Crear el origen de datos
 
-Este paso crea un origen de datos a partir de la base de datos Northwind utilizando el Asistente para la configuración de orígenes de datos **. Debe tener acceso a la base de datos de ejemplo Northwind para crear la conexión. Para obtener información acerca de cómo configurar la base de datos de ejemplo Northwind, vea [Cómo: instalar bases de datos de ejemplo](../data-tools/installing-database-systems-tools-and-samples.md).
+Este paso crea un origen de datos a partir de la base de datos Northwind utilizando el **Asistente para la configuración de orígenes de datos**. Debe tener acceso a la base de datos de ejemplo Northwind para crear la conexión. Para obtener información acerca de cómo configurar la base de datos de ejemplo Northwind, vea [Cómo: Instalar bases de datos de ejemplo](../data-tools/installing-database-systems-tools-and-samples.md).
 
 1. En el **datos** menú, seleccione **Mostrar orígenes de datos**.
 
-   Se abre la ventana Orígenes de datos **.
+   Se abre la ventana **Orígenes de datos**.
 
-2. En la ventana Orígenes de datos **, seleccione Agregar nuevo origen de datos** para iniciar el Asistente para configuración de orígenes de datos **.
+2. En la ventana **Orígenes de datos**, seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
 
 3. En el **elegir un tipo de origen de datos** pantalla, seleccione **base de datos**y, a continuación, seleccione **siguiente**.
 
@@ -93,9 +92,9 @@ Este paso crea un origen de datos a partir de la base de datos Northwind utiliza
 
     -   Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.
 
-         O bien
+         o bien
 
-    -   Seleccione Nueva conexión **para abrir el cuadro de diálogo Agregar o modificar conexión**.
+    -   Seleccione **Nueva conexión** para abrir el cuadro de diálogo **Agregar o modificar conexión**.
 
 5. Si la base de datos requiere una contraseña, seleccione la opción para incluir datos confidenciales y, a continuación, seleccione **siguiente**.
 
@@ -105,7 +104,7 @@ Este paso crea un origen de datos a partir de la base de datos Northwind utiliza
 
 8. Seleccione el **clientes** y **pedidos** tablas y, a continuación, seleccione **finalizar**.
 
-     Se agrega NorthwindDataSet **al proyecto y las tablas aparecen en la ventana Orígenes de datos**.
+     Se agrega **NorthwindDataSet** al proyecto y las tablas aparecen en la ventana **Orígenes de datos**.
 
 ## <a name="set-the-controls-to-be-created"></a>Establecer los controles que se puede crear
 
@@ -119,22 +118,22 @@ En este tutorial, los datos en el `Customers` la tabla está en un **detalles** 
 
 ## <a name="create-the-data-bound-form"></a>Crear el formulario enlazado a datos
 
-Puede crear los controles enlazados a datos arrastrando elementos desde la ventana Orígenes de datos** al formulario.
+Puede crear los controles enlazados a datos arrastrando elementos desde la ventana **Orígenes de datos** al formulario.
 
-1. Arrastre el nodo principal Customers **desde la ventana Orígenes de datos** hasta Form1.
+1. Arrastre el nodo principal **Customers** desde la ventana **Orígenes de datos** hasta **Form1**.
 
      Los controles enlazados a datos con etiquetas descriptivas aparecen en el formulario, junto con una barra de herramientas (<xref:System.Windows.Forms.BindingNavigator>) para navegar por los registros. Un [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>, y <xref:System.Windows.Forms.BindingNavigator> aparecen en la Bandeja de componentes.
 
-2. Arrastre el nodo Orders **relacionado desde la ventana Orígenes de datos** hasta Form1 **.
+2. Arrastre el nodo **Orders** relacionado desde la ventana **Orígenes de datos** hasta **Form1**.
 
     > [!NOTE]
-    > El nodo Orders **relacionado se encuentra debajo de la columna Fax** y es un nodo secundario del nodo Customers **.
+    > El nodo **Orders** relacionado se encuentra debajo de la columna **Fax** y es un nodo secundario del nodo **Customers**.
 
      En el formulario aparecen un control <xref:System.Windows.Forms.DataGridView> y una barra de herramientas (<xref:System.Windows.Forms.BindingNavigator>) para navegar por los registros. Un `OrdersTableAdapter` y <xref:System.Windows.Forms.BindingSource> aparecen en la Bandeja de componentes.
 
 ## <a name="add-code-to-update-the-database"></a>Agregue código para actualizar la base de datos
 
-Puede actualizar la base de datos llamando a los métodos `Update` de los TableAdapters Customers **y Orders**. De forma predeterminada, un controlador de eventos para el **guardar** botón de la<xref:System.Windows.Forms.BindingNavigator> se agrega al código del formulario para enviar actualizaciones a la base de datos. Este procedimiento modifica el código para enviar las actualizaciones en el orden correcto. Esto elimina la posibilidad de generar errores de integridad referencial. El código también implementa el control de errores colocando la llamada de actualización en un bloque try-catch. Puede modificar el código para satisfacer las necesidades de la aplicación.
+Puede actualizar la base de datos llamando a los métodos `Update` de los TableAdapters **Customers** y **Orders**. De forma predeterminada, un controlador de eventos para el **guardar** botón de la<xref:System.Windows.Forms.BindingNavigator> se agrega al código del formulario para enviar actualizaciones a la base de datos. Este procedimiento modifica el código para enviar las actualizaciones en el orden correcto. Esto elimina la posibilidad de generar errores de integridad referencial. El código también implementa el control de errores colocando la llamada de actualización en un bloque try-catch. Puede modificar el código para satisfacer las necesidades de la aplicación.
 
 > [!NOTE]
 > Para mayor claridad, este tutorial no utiliza una transacción. Sin embargo, si va a actualizar dos o más tablas relacionadas, incluir toda la lógica de actualización dentro de una transacción. Una transacción es un proceso que asegura que todos los cambios relacionados en una base de datos sean correctos antes de confirmados los cambios. Para obtener más información, consulte [transacciones y simultaneidad](/dotnet/framework/data/adonet/transactions-and-concurrency).

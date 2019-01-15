@@ -1,8 +1,6 @@
 ---
 title: '&lt;Cadenas&gt; (elemento, arranque) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.NoStringsForCulture
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc1cab2fdb0a175fc9365b2a8b4b17dca46a30a2
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 5b1cc6f4341f1a4ffdc01ec22b559fb1fa72cb66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077677"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886869"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;Cadenas&gt; (elemento, arranque)
 Define las cadenas localizadas para los nombres de productos, nombres de paquete y los mensajes de error de instalación.  
@@ -41,7 +39,7 @@ Define las cadenas localizadas para los nombres de productos, nombres de paquete
 </Strings>  
 ```  
   
-## <a name="elements-and-attributes"></a>Los elementos y atributos  
+## <a name="elements-and-attributes"></a>Elementos y atributos  
  El `Strings` es un elemento secundario de la `Package` elemento. No tiene atributos.  
   
 ## <a name="string"></a>String  
@@ -51,7 +49,7 @@ Define las cadenas localizadas para los nombres de productos, nombres de paquete
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Name`|Requerido. El nombre de la cadena.|  
+|`Name`|Obligatorio. El nombre de la cadena.|  
   
 ## <a name="example"></a>Ejemplo  
  El ejemplo de código siguiente especifica todas las cadenas en inglés para el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] instalador.  

@@ -2,7 +2,6 @@
 title: Opciones, editor de texto, C#, avanzado
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7cfbc6d57e5bfd3c6a8f317967448039a9b3f5e4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4fdb52b4fbdeac437a3833e0030acedfa382f81c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670720"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887911"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opciones, editor de texto, C#, avanzado
 
@@ -126,7 +125,7 @@ Use la página de opciones **Avanzado** para modificar la configuración del for
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo insertar comentarios XML para la generación de documentación](../../ide/reference/generate-xml-documentation-comments.md)
+- [Cómo: Insertar comentarios XML para la generación de documentación](../../ide/reference/generate-xml-documentation-comments.md)
 - [Comentarios de documentación XML (Guía de programación de C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [Documentar el código con comentarios XML (Guía de C#)](/dotnet/csharp/codedoc)
 - [Opciones del editor específicas del lenguaje](../../ide/reference/setting-language-specific-editor-options.md)

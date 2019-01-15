@@ -1,8 +1,6 @@
 ---
 title: Get_frontendminor | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f02950b3eb3f55cb46be9689403d3c4f743fc988
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 9c4cadb5dbea74bcdd3c020ba8a08ccd8bbb76fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923914"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847235"
 ---
 # <a name="idiasymbolgetfrontendminor"></a>IDiaSymbol::get_frontEndMinor
 Recupera el número de versión secundaria de front-end.  
@@ -27,7 +25,7 @@ Recupera el número de versión secundaria de front-end.
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT get_frontEndMinor (   
+HRESULT get_frontEndMinor (   
    DWORD* pRetVal  
 );  
 ```  
@@ -51,7 +49,7 @@ HRESULT get_frontEndMinor (
   
 |Requisito|Descripción|  
 |-----------------|-----------------|  
-|Encabezado:|Dia2.h|  
+|Encabezado:|dia2.h|  
 |Versión:|SDK de DIA v7.0|  
   
 ## <a name="see-also"></a>Vea también  

@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: depurar una aplicación ClickOnce con permisos restringidos | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Depurar una aplicación ClickOnce con permisos restringidos | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c30766b50692052ec9fdd04c5ec1b156738c47b5
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 880966e78bd2e27159b1ede81c07aa15aa994e75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152976"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921262"
 ---
-# <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Cómo: depurar una aplicación ClickOnce con permisos restringidos
+# <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Procedimiento Depuración de una aplicación ClickOnce con permisos restringidos
 Como desarrollador, probablemente esté ejecutando su equipo de desarrollo con permisos de plena confianza, por lo que no verá las mismas excepciones de seguridad al depurar una aplicación ClickOnce que las que podría ver el usuario final al ejecutarlo con permisos restringidos.  
   
  Para detectar estas excepciones, debe depurar la aplicación con los mismos permisos que el usuario final. Se puede habilitar la depuración con permisos restringidos en la página **Seguridad** del **Diseñador de proyectos**.  
@@ -61,7 +59,7 @@ Como desarrollador, probablemente esté ejecutando su equipo de desarrollo con p
 6.  En el cuadro de texto **Depurar esta aplicación como si se hubiera descargado de la siguiente dirección URL** , indique una dirección URL o una ruta de acceso a la red.  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: establecer permisos personalizados para una aplicación ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)   
+ [Cómo: Establecimiento de permisos personalizados para una aplicación ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Protección de las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Seguridad de acceso del código para aplicaciones ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
- [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)
+ [Proteger aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)

@@ -2,7 +2,6 @@
 title: Página Compilación, Diseñador de proyectos (Visual Basic)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesCompile
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d1b5c55c3bc1732d0b394473f25c0b103c917f4
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 890754002c6b3d911b26fe7b1d6aa97b339880c1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808379"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874896"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Página Compilación, Diseñador de proyectos (Visual Basic)
 
@@ -44,7 +43,7 @@ Los valores siguientes le permiten seleccionar la configuración y la plataforma
 
  **Configuración**
 
- Especifica qué opciones de configuración se mostrarán o modificarán. Los valores son **Depurar** (el valor predeterminado), **Versión** o **Todas las configuraciones**. Para más información, vea [Descripción de las configuraciones de compilación](../../ide/understanding-build-configurations.md) y [Cómo: Crear y editar configuraciones](../../ide/how-to-create-and-edit-configurations.md).
+ Especifica qué opciones de configuración se mostrarán o modificarán. Los valores son **Depurar** (el valor predeterminado), **Versión** o **Todas las configuraciones**. Para obtener más información, vea [Descripción de las configuraciones de compilación](../../ide/understanding-build-configurations.md) y [Cómo: Crear y editar configuraciones](../../ide/how-to-create-and-edit-configurations.md).
 
  **Plataforma**
 

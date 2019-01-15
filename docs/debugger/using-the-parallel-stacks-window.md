@@ -1,8 +1,6 @@
 ---
 title: Ver los subprocesos en la ventana Pilas paralelas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.parallelstacks
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ee9d52f63f3158979f2f018ea44d5b68d6612c1
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: MTE95
+ms.openlocfilehash: ad685fc33c831d37cee955fda7e965ecd65e9bf7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562339"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902064"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window"></a>La vista subprocesos y tareas en la ventana Pilas paralelas
 
@@ -139,7 +137,7 @@ Si cambia a un nuevo marco de pila, convertir ese método del método actual, y 
   
 ## <a name="see-also"></a>Vea también  
  [Empezar a depurar una aplicación multiproceso](../debugger/get-started-debugging-multithreaded-apps.md)   
- [Tutorial: Depurar una aplicación paralela](../debugger/walkthrough-debugging-a-parallel-application.md)   
+ [Tutorial: Depuración de una aplicación paralela](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [En primer lugar, examine el depurador](../debugger/debugger-feature-tour.md) [depurar código administrado](../debugger/debugging-managed-code.md)   
  [Programación en paralelo](/dotnet/standard/parallel-programming/index)   
  [Usar la ventana Tareas](../debugger/using-the-tasks-window.md)   

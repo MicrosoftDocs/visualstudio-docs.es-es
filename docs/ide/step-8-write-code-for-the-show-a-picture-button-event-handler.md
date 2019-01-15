@@ -1,9 +1,7 @@
 ---
 title: 'Paso 8: Escribir código para el controlador de eventos del botón Mostrar una imagen'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 07f4ec00-cda4-42f4-98bb-37edc7167de7
 author: TerryGLee
@@ -11,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2c76a6eb760e55659c7da4df2a1a341426f0c6e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: be9163ce831f556310a17b72c3833d9756ddf952
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671812"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887898"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Paso 8: Escribir código para el controlador de eventos del botón Mostrar una imagen
 
@@ -28,7 +26,7 @@ En este paso, conseguirá que el botón **Mostrar una imagen** funcione así:
 
 El IDE incluye una eficaz herramienta denominada IntelliSense que ayuda a escribir código. Cuando se escribe código, el IDE abre un cuadro con sugerencias para completar las palabras parciales que se escriben. Intenta determinar lo que se desea hacer a continuación y salta automáticamente al último elemento que se elige en la lista. Puede utilizar las flechas arriba o abajo para moverse por la lista o bien continuar escribiendo letras para reducir las opciones propuestas. Cuando vea la opción que busca, elija la tecla **Tab** para seleccionarla. Otra opción es pasar por alto las sugerencias, si no las necesita.
 
-![vínculo al vídeo](../data-tools/media/playvideo.gif)Para obtener una versión en vídeo de este tema, vea [Tutorial 1: Create a picture viewer in Visual Basic - Video 4](https://msdn.microsoft.com/vstudio/gg315355.aspx) [Tutorial 1: Crear un visor de imágenes en Visual Basic (vídeo 4)]. En este vídeo se usa una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
+![vínculo al vídeo](../data-tools/media/playvideo.gif)Para obtener una versión en vídeo de este tema, vea [Tutorial 1: Crear un visor de imágenes en Visual Basic - Vídeo 4](https://msdn.microsoft.com/vstudio/gg315355.aspx). En este vídeo se usa una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
 
 ## <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>Para escribir código para el controlador de eventos de botón Mostrar una imagen
 
@@ -65,7 +63,7 @@ El IDE incluye una eficaz herramienta denominada IntelliSense que ayuda a escrib
 
          Para obtener más información sobre el método `ShowDialog()`, vea [ShowDialog Method](<xref:System.Windows.Forms.Form.ShowDialog%2A>).
 
-    5.  Cuando se usa un método con un control o un componente (lo que se denomina *llamar a un método*), es preciso agregar paréntesis. Así pues, especifique los paréntesis de apertura y cierre inmediatamente después de la "g" en `ShowDialog`: `()` Debe tener la apariencia siguiente: "openFileDialog1.ShowDialog()".
+    5.  Cuando se usa un método con un control o un componente (lo que se denomina *llamar a un método*), es preciso agregar paréntesis. Por tanto, escriba paréntesis de apertura y cierre inmediatamente después de la "g" en `ShowDialog`: `()` Ahora debería tener este aspecto: "openFileDialog1.ShowDialog()".
 
         > [!NOTE]
         > Los métodos constituyen una parte importante de cualquier programa. En este tutorial se han mostrado varias maneras de utilizarlos. Se puede llamar al método de un componente para ordenarle que haga algo, por ejemplo, como cuando llamó al método `ShowDialog()` del componente **OpenFileDialog**. Puede crear sus propios métodos para que los programas realicen acciones, como el que estamos construyendo ahora, que se denomina método `showButton_Click()` y que abre un cuadro de diálogo y una imagen cuando un usuario elige en un botón.

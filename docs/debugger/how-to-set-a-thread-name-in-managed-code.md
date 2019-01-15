@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: establecer un nombre de subproceso en código administrado | Documentos de Microsoft'
-ms.custom: ''
+title: Procedimiento Establecer un nombre de subproceso en código administrado | Microsoft Docs
 ms.date: 04/27/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 39a732f691cbed525e853d74b5cf4e4abb55eb47
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 01869f320318f6708b04fce539ada95211468131
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472306"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867649"
 ---
-# <a name="how-to-set-a-thread-name-in-managed-code"></a>Cómo: Establecer un nombre de subproceso en código administrado
-La denominación de los subprocesos es posible en cualquier edición de Visual Studio. Denominación de los subprocesos es útil para realizar el seguimiento de subprocesos en la **subprocesos** ventana.
+# <a name="how-to-set-a-thread-name-in-managed-code"></a>Procedimiento Establecimiento de un nombre de subproceso en código administrado
+La denominación de los subprocesos es posible en cualquier edición de Visual Studio. La denominación de los subprocesos es útil para hacer el seguimiento en la ventana **Subprocesos**.
   
  Para establecer un nombre de subproceso en código administrado, utilice la propiedad <xref:System.Threading.Thread.Name%2A>.  
   
@@ -78,5 +76,5 @@ End Sub
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Depurar aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Cómo: Establecer un nombre de subproceso en código nativo](../debugger/how-to-set-a-thread-name-in-native-code.md)
+ [Depuración de aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Cómo: Establecimiento de un nombre de subproceso en código nativo](../debugger/how-to-set-a-thread-name-in-native-code.md)

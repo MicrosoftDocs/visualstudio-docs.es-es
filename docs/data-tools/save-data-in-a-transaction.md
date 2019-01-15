@@ -16,15 +16,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f9b4fad02b6b0d8324e13d4465f4602c16ce85ba
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: eddd0252bca5cea3f683f0e00133b8e6e66392f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305057"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952185"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Tutorial: Guardar datos en una transacción
 
@@ -76,7 +75,7 @@ Este paso se usa el **Asistente para configuración de origen de datos** para cr
 
     -   Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.
 
-         O bien
+         o bien
 
     -   Seleccione **Nueva conexión** para iniciar el cuadro de diálogo **Agregar o modificar conexión** y cree una conexión con la base de datos Northwind.
 

@@ -2,7 +2,6 @@
 title: Ver el código de desensamblado en el depurador | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/30/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.disassembly
@@ -23,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c35432bdd01b9b79c2afaa266d8078caf04bd62b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c3af42271e3d08a7910c1eae01bcd6563e46dda1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063841"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922239"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Ver el código de desensamblado en el depurador de Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -57,7 +56,7 @@ Código de ensamblado se basa principalmente en los registros del procesador, o 
 
 Para ver las instrucciones de código máquina en su formato numérico sin procesar, en lugar de como lenguaje de ensamblado, utilice el **memoria** ventana o seleccione **Bytes de código** en el menú contextual en el **desensamblado**  ventana.
 
-## <a name="use-the-disassembly-window"></a>Utilice la ventana Desensamblado
+## <a name="use-the-disassembly-window"></a>Uso de la ventana Desensamblado
 
 Para habilitar el **desensamblado** ventana, en **herramientas** > **opciones** (o **herramientas**  >  **Opciones**) > **depuración**, seleccione **habilitar la depuración de nivel de dirección**.
 
@@ -74,4 +73,4 @@ Una flecha amarilla en el margen izquierdo marca el punto de ejecución actual. 
 
 * [Retroceder o avanzar en la memoria](../debugger/how-to-page-up-or-down-in-memory.md)
 * [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)
-* [Cómo: Utilice la ventana registros](../debugger/how-to-use-the-registers-window.md)
+* [Cómo: Uso de la ventana Registros](../debugger/how-to-use-the-registers-window.md)

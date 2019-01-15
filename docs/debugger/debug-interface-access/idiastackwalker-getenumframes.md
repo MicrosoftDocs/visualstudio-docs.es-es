@@ -1,8 +1,6 @@
 ---
-title: IDiaStackWalker::getEnumFrames | Documentos de Microsoft
-ms.custom: ''
+title: IDiaStackWalker::getEnumFrames | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4c7d8d30dee1d9c0a058177ad54aab864cee28d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 9d1ab73810b79db8c98f45727d4019da1e7055db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836169"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935715"
 ---
 # <a name="idiastackwalkergetenumframes"></a>IDiaStackWalker::getEnumFrames
 Recupera un enumerador de marco de pila para x86 plataformas.  
@@ -27,7 +25,7 @@ Recupera un enumerador de marco de pila para x86 plataformas.
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT getEnumFrames(   
+HRESULT getEnumFrames(   
    IDiaStackWalkHelper*   pHelper,  
    IDiaEnumStackFrames**  ppEnum  
 );  

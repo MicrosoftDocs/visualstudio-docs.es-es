@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Crear un servicio de datos de WCF con WPF y Entity Framework'
+title: 'Tutorial: Creación de un servicio de datos de WCF con WPF y Entity Framework'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +15,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: cbafb006091956ce5359bc6b575accd057b2ee37
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: b0353688be3b6fa62a0f33338461eeab78ee33d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305356"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888509"
 ---
-# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Tutorial: Crear un servicio de datos de WCF con WPF y Entity Framework
+# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Tutorial: Creación de un servicio de datos de WCF con WPF y Entity Framework
 En este tutorial se muestra cómo crear un sencillo [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] que se hospeda en una aplicación web de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] y al que se accede desde una aplicación de Windows Forms.
 
 En este tutorial le:
@@ -94,7 +93,7 @@ En el paso siguiente, creará un [!INCLUDE[adonet_edm](../data-tools/includes/ad
 
     -   Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, elíjala.
 
-         O bien
+         o bien
 
     -   Elija el botón **Nueva conexión** para configurar una nueva conexión de datos. Para obtener más información, consulte [agregar nuevas conexiones](../data-tools/add-new-connections.md).
 
@@ -291,4 +290,4 @@ En el siguiente paso opcional, obtenga información sobre cómo filtrar los dato
 ## <a name="see-also"></a>Vea también
 
 - [Servicios de Windows Communication Foundation y Servicios de datos de WCF en Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
-- [Cómo: agregar, actualizar o quitar una referencia de servicio de datos WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [Cómo: Adición, actualización o eliminación de una referencia de servicio de datos de WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

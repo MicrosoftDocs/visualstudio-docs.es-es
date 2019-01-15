@@ -1,8 +1,6 @@
 ---
 title: Get_imagealign | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 409b33953d6674066eff9570288de2e3912bdab3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 03f288b0da63e3740a2d954aab2100fa97551154
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908859"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936040"
 ---
 # <a name="idiaaddressmapgetimagealign"></a>IDiaAddressMap::get_imageAlign
 Recupera la alineación de imagen actual.  
@@ -27,7 +25,7 @@ Recupera la alineación de imagen actual.
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT get_imageAlign (   
+HRESULT get_imageAlign (   
    DWORD* pRetVal  
 );  
 ```  

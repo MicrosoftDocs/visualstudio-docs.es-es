@@ -1,8 +1,6 @@
 ---
 title: Copy (tarea) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Copy
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a261c6c692fe0a1bc08f185f0b37c73e8838375
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ba0e7e85f4367c775c8b9185c6c2684b728cc4d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945928"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943907"
 ---
 # <a name="copy-task"></a>Copy (tarea)
 Copia los archivos en una nueva ubicación del sistema de archivos.  
@@ -44,7 +42,7 @@ Copia los archivos en una nueva ubicación del sistema de archivos.
 |`OverwriteReadOnlyFiles`|Parámetro `Boolean` opcional.<br /><br /> Sobrescribe los archivos aunque estén marcados como archivos de solo lectura|  
 |`Retries`|Parámetro `Int32` opcional.<br /><br /> Especifica cuántas veces se intentará copiar, si se produjera un error en todos los intentos anteriores. Se establece en cero de forma predeterminada.<br /><br /> **Nota:** El uso de reintentos puede enmascarar un problema de sincronización en el proceso de compilación.|  
 |`RetryDelayMilliseconds`|Parámetro `Int32` opcional.<br /><br /> Especifica el retraso entre los reintentos necesarios. Adopta como valor predeterminado el argumento RetryDelayMillisecondsDefault, que se pasa al constructor CopyTask.|  
-|`SkipUnchangedFiles`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, se omite la copia de los archivos sin modificar entre el origen y destino. La tarea `Copy` considera que los archivos están sin modificar si tienen el mismo tamaño y la misma hora de última modificación. <br /><br /> **Nota:** Si se establece este parámetro como `true`, no debe usar el análisis de dependencias en el destino continente, ya que solo se ejecuta la tarea si las horas de última modificación de los archivos de origen son más recientes que las de los archivos de destino.|  
+|`SkipUnchangedFiles`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, se omite la copia de los archivos sin modificar entre el origen y destino. La tarea `Copy` considera que los archivos están sin modificar si tienen el mismo tamaño y la misma hora de última modificación. <br /><br /> **Nota:**  Si se establece este parámetro como `true`, no deberá usar el análisis de dependencias en el destino continente, ya que solo se ejecuta la tarea si las horas de última modificación de los archivos de origen son más recientes que las de los archivos de destino.|  
 |`SourceFiles`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica los archivos que se van a copiar.|  
 |`UseHardlinksIfPossible`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, crea vínculos físicos para los archivos copiados en lugar de copiar los archivos.|  
   
@@ -70,7 +68,7 @@ Copia los archivos en una nueva ubicación del sistema de archivos.
 ## <a name="remarks"></a>Comentarios  
  Se debe especificar el parámetro `DestinationFolder` o `DestinationFiles`, pero no ambos. Si se especifican los dos, la tarea produce un error y se registra un error.  
   
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension (Clase base)](../msbuild/taskextension-base-class.md).  
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se copian los elementos de la colección de elementos `MySourceFiles` en la carpeta *c:\MyProject\Destination*.  

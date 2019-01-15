@@ -1,12 +1,11 @@
 ---
-title: Usar parámetros de la línea de comandos para instalar Visual Studio 2015 | Microsoft Docs
+title: Uso de parámetros de la línea de comandos para instalar Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -18,17 +17,17 @@ caps.latest.revision: 10
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: e84d9d7bde30ab781da2f135c94baf74b697e567
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e81e9f7fad5976ad853254e04289d89d09b87ac6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059144"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922190"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Usar parámetros de la línea de comandos para instalar Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obtener la documentación más reciente de Visual Studio 2017, consulte [Usar parámetros de la línea de comandos para instalar Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/use-command-line-parameters-to-install-visual-studio).
+Para consultar la documentación más reciente sobre Visual Studio 2017, vea [Uso de parámetros de la línea de comandos para instalar Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/use-command-line-parameters-to-install-visual-studio).
 
 Al instalar Visual Studio 2015 desde un símbolo del sistema, puede usar los siguientes parámetros de línea de comandos, también conocidos como modificadores.
 

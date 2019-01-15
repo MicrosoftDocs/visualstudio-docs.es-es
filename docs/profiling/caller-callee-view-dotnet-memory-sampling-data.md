@@ -1,8 +1,6 @@
 ---
 title: 'Vista Llamador y destinatario: datos de muestreo de memoria de .NET | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Caller/Callee view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e2115f2f5c23d244d3a8650b46fff1f0f74689ec
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8ef27cae8825fc77f49f5201ef03615227e383e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548126"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871348"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Vista Llamador y destinatario: datos de muestreo de memoria de .NET
 La vista Llamador y destinatario muestra datos de la generación de perfiles de memoria de. NET para una función seleccionada y sus funciones primarias y secundarias. La vista Llamador y destinatario contiene tres cuadrículas.  
@@ -30,7 +28,7 @@ La vista Llamador y destinatario muestra datos de la generación de perfiles de 
   
  Haga doble clic en una fila de función de llamador o destinatario para hacer que esa fila sea la función actual.  
   
-|Columna|Description|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|  
 |**Nombre de proceso**|Nombre del proceso.|  

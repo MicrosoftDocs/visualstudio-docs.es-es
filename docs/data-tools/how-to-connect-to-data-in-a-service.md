@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Conectarse a los datos en un servicio'
+title: Procedimiento Conexión a los datos en un servicio
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,24 +15,23 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f8f7371418df19ec8452334641c7c9414328e557
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 66a13ac6f23caa3e6ccf28d5d68c03b3fe7fdb4f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305018"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923879"
 ---
-# <a name="how-to-connect-to-data-in-a-service"></a>Cómo: Conectarse a los datos en un servicio
+# <a name="how-to-connect-to-data-in-a-service"></a>Procedimiento Conexión a los datos en un servicio
 
 Conectar la aplicación a los datos devueltos desde un servicio mediante la ejecución de la [Asistente para configuración de origen de datos](../data-tools/media/data-source-configuration-wizard.png) y seleccionando **servicio** en el **elegir un tipo de origen de datos**página.
 
 Tras la finalización del asistente, se agrega al proyecto una referencia de servicio y esté disponible inmediatamente en el [ventana Orígenes de datos](add-new-data-sources.md#data-sources-window).
 
 > [!NOTE]
-> Los elementos que aparecen en la ventana Orígenes de datos** dependen de la información devuelta por el servicio. Algunos servicios podrían no proporcionar suficiente información para que el Asistente para la configuración de orígenes de datos** pueda crear objetos enlazables. Por ejemplo, si el servicio devuelve un conjunto de datos sin tipo, no hay elementos aparecen en la **orígenes de datos** ventana tras la finalización del asistente. Esto es porque los datasets no escritos no proporcionan esquemas, por lo que el asistente no tiene información suficiente para crear el origen de datos.
+> Los elementos que aparecen en la ventana **Orígenes de datos** dependen de la información devuelta por el servicio. Algunos servicios podrían no proporcionar suficiente información para que el **Asistente para configuración de orígenes de datos** pueda crear objetos enlazables. Por ejemplo, si el servicio devuelve un conjunto de datos sin tipo, no hay elementos aparecen en la **orígenes de datos** ventana tras la finalización del asistente. Esto es porque los datasets no escritos no proporcionan esquemas, por lo que el asistente no tiene información suficiente para crear el origen de datos.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -53,7 +52,7 @@ Tras la finalización del asistente, se agrega al proyecto una referencia de ser
 
 6.  Haga clic en **Finalizar**.
 
-     El origen de datos  **se agrega a la ventana Orígenes de datos**.
+     El origen de datos se agrega a la ventana **Orígenes de datos**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

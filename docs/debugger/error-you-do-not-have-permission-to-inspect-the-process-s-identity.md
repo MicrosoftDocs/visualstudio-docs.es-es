@@ -1,8 +1,6 @@
 ---
-title: 'Error: No tiene permiso para inspeccionar el proceso&#39;identidad s | Documentos de Microsoft'
-ms.custom: ''
+title: 'Error: No tiene permiso para inspeccionar el proceso&#39;identidad s | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 dev_langs:
 - CSharp
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f37cf6f6a1a72435b549942fa03d821c900718a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2424379a016a80d251b53e79799fd0d39e059218
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472037"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941867"
 ---
 # <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Error: No tiene permiso para inspeccionar el proceso&#39;identidad s
 No tiene permiso para inspeccionar la identidad del proceso. Probablemente se deba a la configuración del sistema.  
@@ -28,21 +26,21 @@ No tiene permiso para inspeccionar la identidad del proceso. Probablemente se de
   
 ### <a name="to-enable-terminal-services"></a>Para habilitar Terminal Services  
   
-1.  Haga clic en **iniciar** y, a continuación, elija **el Panel de Control**.  
+1.  Haga clic en **Inicio** y después elija **Panel de control**.  
   
-2.  En el Panel de Control, elija **cambiar a vista clásica**, si es necesario y, a continuación, haga doble clic en **herramientas administrativas**.  
+2.  En el Panel de control, elija **Cambiar a Vista clásica** si es necesario y, a continuación, haga doble clic en **Herramientas administrativas**.  
   
-3.  En el **herramientas administrativas** ventana, haga doble clic en **administración de equipos**.  
+3.  En la ventana **Herramientas administrativas**, haga doble clic en **Administración de equipos**.  
   
-4.  En la ventana Administración de equipos, expanda el **servicios y aplicaciones** nodo.  
+4.  En la ventana Administración de equipos, expanda el nodo **Servicios y Aplicaciones**.  
   
-5.  En el **servicios y aplicaciones**, haga clic en **Services**.  
+5.  En **Servicios y Aplicaciones**, haga clic en **Servicios**.  
   
      Se mostrará una lista de servicios en el panel derecho.  
   
-6.  En el **servicios** lista, haga clic en **servicios de Terminal Server** y, a continuación, elija **propiedades**.  
+6.  En la lista **Servicios**, haga clic con el botón derecho en **Terminal Services** y después elija **Propiedades**.  
   
-7.  En el **propiedades Terminal Services** ventana, vaya a la **General** pestaña y establecer **tipo de inicio** a **Manual**.  
+7.  En el **propiedades de Terminal Services** ventana, vaya a la **General** pestaña y establezca **tipo de inicio** a **Manual**.  
   
 8.  Haga clic en **Aceptar**.  
   
@@ -52,15 +50,15 @@ No tiene permiso para inspeccionar la identidad del proceso. Probablemente se de
   
 ### <a name="to-enable-remote-desktop"></a>Para habilitar Escritorio remoto  
   
-1.  Haga clic en **iniciar** y, a continuación, haga clic en **Mi PC**.  
+1.  Haga clic en **Inicio** y, a continuación, haga clic con el botón derecho en **Mi PC**.  
   
 2.  Elija **Propiedades**.  
   
-     El **propiedades del sistema** se muestra la ventana.  
+     Se mostrará la ventana **Propiedades del sistema**.  
   
-3.  Haga clic en **remoto**.  
+3.  Haga clic en **Remoto**.  
   
-4.  En **escritorio remoto**, seleccione **permiten a los usuarios conectarse remotamente a este equipo**.  
+4.  En **Escritorio remoto**, seleccione **Permitir que los usuarios se conecten de manera remota a este equipo**.  
   
 5.  Haga clic en **Aceptar**.  
   

@@ -2,7 +2,6 @@
 title: Fragmentos de código de Visual C++
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -11,12 +10,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f119f3b2bc438eacfaaa722bd57fb440aa303052
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5069d1b92b9c4f73fdb8eca50eabce170f42cef1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948933"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937444"
 ---
 # <a name="visual-c-code-snippets"></a>Fragmentos de código de Visual C++
 
@@ -52,7 +51,7 @@ Para rodear el código seleccionado con un fragmento de código, seleccione una 
 
 - En el menú **Edición** > **IntelliSense**, seleccione **Envolver con**.
 
-- En un teclado, presione: **CTRL**+**K**+**S**
+- En un teclado, presione: **Ctrl**+**K**+**S**
 
 Seleccione **#if**. Verá algo parecido a esto:
 

@@ -1,8 +1,6 @@
 ---
-title: Cuadro de diálogo de páginas de propiedades de origen archivos, propiedades comunes, solución de depurar | Documentos de Microsoft
-ms.custom: ''
+title: Cuadro de diálogo de páginas de propiedad de origen archivos, propiedades comunes, solución de depuración | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.FindSource
@@ -24,23 +22,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 844d189b9dd11945f4257b1fc9dfbd3117ac5199
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: a722422306a16ee7e2dc340448f0e082f8a1f014
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470769"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931913"
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>Depurar archivos de código fuente, Propiedades comunes, Páginas de propiedades de Solución (Cuadro de diálogo)
 Esta página de propiedades especifica si el depurador buscará archivos de código fuente al depurar la solución.  
   
- Para tener acceso a la **depurar archivos de código fuente** página de propiedades, el botón secundario en la solución en **el Explorador de soluciones** y seleccione **propiedades** en el menú contextual. Expanda el **propiedades comunes** carpeta y haga clic en el **depurar archivos de código fuente** página.  
+ Para obtener acceso a la página de propiedades **Depurar archivos de código fuente**, en el **Explorador de soluciones**, haga clic con el botón derecho en la Solución y, a continuación, seleccione **Propiedades** en el menú contextual. Expanda la carpeta **Propiedades comunes** y haga clic en la página **Depurar archivos de código fuente**.  
   
  **Directorios que contienen código fuente**  
  Contiene una lista de directorios en los que el depurador busca archivos de código fuente al depurar la solución. Los subdirectorios de los directorios especificados también se incluyen en la búsqueda.  
   
- **No busque estos archivos de origen**  
- Especifique los nombres de los archivos que no desea que lea el depurador. Si el depurador encuentra uno de estos archivos en uno de los directorios especificados anteriormente, lo omitirá. Si el **Buscar código fuente** cuadro de diálogo aparece mientras se está depurando y, al hacer clic en **cancelar**, el archivo que buscaba se agregará a esta lista para que el depurador no seguirá buscándolo.  
+ **No busque los siguientes archivos de código fuente**  
+ Especifique los nombres de los archivos que no desea que lea el depurador. Si el depurador encuentra uno de estos archivos en uno de los directorios especificados anteriormente, lo omitirá. Si aparece el cuadro de diálogo **Buscar código fuente** mientras está depurando y hace clic en **Cancelar**, el archivo que buscaba se agregará a dicha lista y el depurador no seguirá buscándolo.  
   
 ## <a name="see-also"></a>Vea también  
  [Seguridad del depurador](../debugger/debugger-security.md)   

@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: crear un manifiesto de producto | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Crear un manifiesto de producto | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -20,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69ecc5e6547d84531579169ac7dcf7fcc31bc8f7
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 879dffc554a05d6c90680cd95e5bb934550d2bbd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153116"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824605"
 ---
-# <a name="how-to-create-a-product-manifest"></a>Cómo: crear un manifiesto de producto
+# <a name="how-to-create-a-product-manifest"></a>Procedimiento Crear un manifiesto de producto
 Para implementar los requisitos previos para la aplicación, puede crear un paquete de arranque. Un paquete de arranque contiene un archivo de manifiesto de producto único, pero un manifiesto del paquete para cada configuración regional. El manifiesto del paquete contiene aspectos específicos de la localización del paquete. Esto incluye cadenas, contratos de licencia del usuario final y los paquetes de idioma.  
   
- Para obtener más información acerca de los manifiestos de producto, consulte [Cómo: crear un manifiesto del paquete](../deployment/how-to-create-a-package-manifest.md).  
+ Para obtener más información acerca de los manifiestos de producto, consulte [Cómo: Creación de un manifiesto de paquete](../deployment/how-to-create-a-package-manifest.md)  
   
 ## <a name="create-the-product-manifest"></a>Crear el manifiesto del producto  
   
@@ -161,4 +159,4 @@ Para implementar los requisitos previos para la aplicación, puede crear un paqu
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Referencia de esquema de paquete y del producto](../deployment/product-and-package-schema-reference.md)
+ [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)

@@ -1,8 +1,7 @@
 ---
-title: Creación de una UI en el Diseñador XAML
+title: Crear una UI en el Diseñador XAML
 ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: b991b50ab2ee329adaaff7a31c2dbb4f2d5bb806
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: a47c0f9718f43c86375f9ff8668d2dfa1efa9785
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51221001"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880415"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Creación de una UI con el Diseñador XAML en Visual Studio
 
@@ -127,7 +126,7 @@ Especifica las diferentes orientaciones de la aplicación: **Horizontal** o **Ve
 
 **Borde**
 
-Especifica las diferentes alineaciones de los bordes de la aplicación: **Ambos**, **Izquierdo**, **Derecho**o **Ninguno**.
+Especifica las diferentes alineaciones de los bordes de la aplicación: **Ambos**, **Izquierdo**, **Derecho** o **Ninguno**.
 
 **Contraste alto**
 
@@ -201,4 +200,4 @@ A la derecha de cada propiedad de valor se encuentra un *marcador de propiedad* 
 
 - [Trabajar con elementos en el Diseñador XAML](../designers/working-with-elements-in-xaml-designer.md)
 - [Cómo crear y aplicar un recurso](../designers/how-to-create-and-apply-a-resource.md)
-- [Tutorial: Enlazar a datos en el Diseñador XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+- [Tutorial: Enlace a datos en el Diseñador XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

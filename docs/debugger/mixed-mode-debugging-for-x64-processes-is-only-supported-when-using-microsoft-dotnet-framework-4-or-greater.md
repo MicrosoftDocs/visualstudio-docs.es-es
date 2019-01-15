@@ -1,8 +1,6 @@
 ---
 title: Modo mixto depuración para x64 procesos solo se admite cuando se usa Microsoft.NET Framework 4 o posterior | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.interop_unsupported_x64
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6d58713da9a4c809d5f9c3db6f7157a699a467f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: f472f8756a0599102a0da99b6db1cc3496b41f42
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284099"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830643"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>El modo de depuración mixto para procesos x64 solo se admite cuando se usa Microsoft .NET Framework 4 o posterior
 Las versiones de .NET Framework anteriores a la 4 no proporcionan compatibilidad para la depuración en modo mixto de procesos de 64 bits. Esto significa que no puede pasar de código administrado a código nativo, o de código nativo a código administrado, mientras está depurando.  
@@ -31,29 +29,29 @@ Las versiones de .NET Framework anteriores a la 4 no proporcionan compatibilidad
   
 -   Actualice el proyecto para usar Microsoft .NET Framework 4 o posterior.  
   
-     O bien  
+     o bien  
   
      Depurar el código administrado y el código nativo en sesiones de depuración independientes.  
   
-     O bien  
+     o bien  
   
      Depurar el código mixto como un proceso de 32 bits, tal y como se describe en los procedimientos siguientes.  
   
 ### <a name="to-change-the-platform-to-32-bit-visual-basic-or-c"></a>Para cambiar la plataforma a de 32 bits (Visual Basic o C#)  
   
-1.  En **el Explorador de soluciones**, haga clic en el proyecto y, a continuación, haga clic en **propiedades**.  
+1.  En el **Explorador de soluciones**, haga clic con el botón derecho del mouse en su proyecto y después seleccione **Propiedades**.  
   
-2.  En las páginas de propiedades, haga clic en el **compilar** o **depurar** ficha.  
+2.  En las páginas de propiedades, haga clic en la pestaña **Compilar** o **Depurar**.  
   
-3.  Haga clic en **plataforma** y seleccione x86 en la lista de plataformas.  
+3.  Haga clic en **Plataforma** y seleccione x86 en la lista de plataformas.  
   
-     De forma predeterminada, los compiladores de C# y Visual Basic generan código que puede ejecutarse en cualquier CPU. En un equipo de 64 bits, estos archivos binarios se ejecutan como procesos de 64 bits. Para ejecutar en un proceso de 32 bits, debe elegir **Win32**, no **AnyCPU**.  
+     De forma predeterminada, los compiladores de C# y Visual Basic generan código que puede ejecutarse en cualquier CPU. En un equipo de 64 bits, estos archivos binarios se ejecutan como procesos de 64 bits. Para ejecutarse en un proceso de 32 bits, debe elegir **Win32**, no **AnyCPU**.  
   
 ### <a name="to-change-the-platform-to-32-bit-cc"></a>Para cambiar la plataforma a 32 bits (C/C++)  
   
-1.  En **el Explorador de soluciones**, haga clic en el proyecto y luego haga clic en **propiedades**.  
+1.  En el **Explorador de soluciones**, haga clic con el botón derecho del mouse en el proyecto y, a continuación, haga clic en **Propiedades**.  
   
-2.  En las páginas de propiedades, haga clic en **plataforma** y seleccione Win32 en la lista de plataformas.  
+2.  En las páginas de propiedades, haga clic en **Plataforma** y seleccione Win32 en la lista de plataformas.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   

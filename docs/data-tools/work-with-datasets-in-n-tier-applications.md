@@ -18,23 +18,22 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 23dc346ac1d8495c3aef191ee3228087e1b222c3
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
-ms.translationtype: MT
+ms.openlocfilehash: d89c3a5582ef1c84c455801d3766d65246e34dea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37116970"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899644"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Trabajar con conjuntos de datos en aplicaciones de n niveles
 
-*Las aplicaciones de datos con N niveles* son aplicaciones centradas en datos que se dividen en varias capas lógicas (o *niveles*). Dicho de otro modo, una aplicación de datos con n niveles es una aplicación dividida en varios proyectos, con el correspondiente nivel de acceso a datos, nivel de lógica empresarial y nivel de presentación en cada proyecto. Para obtener más información, consulte [Introducción a las aplicaciones de datos con N niveles](../data-tools/n-tier-data-applications-overview.md).
+Las *aplicaciones de datos con n niveles* son aplicaciones centradas en datos que están separadas en varias capas lógicas (o *niveles*). Dicho de otro modo, una aplicación de datos con n niveles es una aplicación dividida en varios proyectos, con el correspondiente nivel de acceso a datos, nivel de lógica empresarial y nivel de presentación en cada proyecto. Para obtener más información, consulte [Introducción a las aplicaciones de datos con N niveles](../data-tools/n-tier-data-applications-overview.md).
 
 Los conjuntos de datos con tipo se han mejorado de forma que los TableAdapter y las clases de conjunto de datos se puedan generar en proyectos discretos. Esto hace posible que los niveles de la aplicación se puedan separar rápidamente, así como generar aplicaciones de datos con n niveles.
 
-Compatibilidad con N niveles en conjuntos de datos con tipo permite el desarrollo iterativo de la arquitectura de aplicación para un diseño de n niveles. También quita el requisito de separar manualmente el código en más de un proyecto. Empiece a diseñar la capa de datos mediante el uso de la **Diseñador de Dataset**. Cuando esté listo para aprovechar la arquitectura de aplicación a un diseño de n niveles, establezca el **DataSet Project** propiedad de un conjunto de datos para generar la clase de conjunto de datos en un proyecto independiente.
+Compatibilidad con N niveles en conjuntos de datos con tipo permite el desarrollo iterativo de la arquitectura de aplicación para un diseño de n niveles. También quita el requisito de separar manualmente el código en más de un proyecto. Empiece a diseñar la capa de datos mediante el uso de la **Diseñador de Dataset**. Cuando esté listo para llevar la arquitectura de la aplicación a un diseño con n niveles, establezca la propiedad **DataSet Project** de un conjunto de datos de forma que la clase del conjunto de datos se genere en un proyecto por separado.
 
 ## <a name="reference"></a>Referencia
 
@@ -43,8 +42,8 @@ Compatibilidad con N niveles en conjuntos de datos con tipo permite el desarroll
 
 ## <a name="see-also"></a>Vea también
 
-- [Introducción a las aplicaciones de datos con N niveles](../data-tools/n-tier-data-applications-overview.md)
-- [Tutorial: Crear una aplicación de datos con n niveles](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [Introducción a las aplicaciones de datos de n niveles](../data-tools/n-tier-data-applications-overview.md)
+- [Tutorial: Creación de una aplicación de datos de n niveles](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Agregar código a TableAdapters en aplicaciones con n niveles](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
 - [Agregar código a conjuntos de datos en aplicaciones con n niveles](../data-tools/add-code-to-datasets-in-n-tier-applications.md)
 - [Agregar validación a un conjunto de datos con n niveles](../data-tools/add-validation-to-an-n-tier-dataset.md)
@@ -53,4 +52,4 @@ Compatibilidad con N niveles en conjuntos de datos con tipo permite el desarroll
 - [Herramientas de conjunto de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Obtener acceso a los datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [Crear y configurar TableAdapters](../data-tools/create-and-configure-tableadapters.md)
-- [N niveles y las aplicaciones remotas con LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
+- [Aplicaciones de n niveles y remotas con LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)

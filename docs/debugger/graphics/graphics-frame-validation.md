@@ -1,8 +1,6 @@
 ---
 title: Validación de fotogramas de gráficos | Microsoft Docs
-ms.custom: ''
 ms.date: 03/02/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.FrameValidation
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cdfdee83a9c78069b3f086ef84b280ba9328e4f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 2add8032a1fa5da983c66ab5cfabede78f4c65c8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850885"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891779"
 ---
 # <a name="graphics-frame-validation"></a>Validación de fotogramas de gráficos
 <!-- VERSIONLESS --> Visual Studio 2017 y mayor compatibilidad con la **validación de fotogramas** herramienta.  La ventana de validación de fotogramas muestra errores y advertencias asociadas con la lista de eventos.  Para ver esta ventana, seleccione el **Ver > validación de fotogramas** menú.
@@ -36,5 +34,5 @@ Haga clic en el **ejecutar validación** situado en la esquina superior izquierd
 | evento | El evento asociado al error o advertencia. |
 
 ## <a name="see-also"></a>Vea también  
-[Diagnóstico de gráficos (depurar gráficos de DirectX)](visual-studio-graphics-diagnostics.md)   
+[Diagnóstico de gráficos (depuración de gráficos DirectX)](visual-studio-graphics-diagnostics.md)   
 <!-- /VERSIONLESS -->

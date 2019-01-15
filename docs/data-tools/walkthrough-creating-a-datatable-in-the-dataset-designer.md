@@ -11,21 +11,20 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2cff383b6e06d8793a7730c36df01e2538b02c36
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 505c27787b033a6ccee9f89a19962d5fc81b9912
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174501"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824839"
 ---
-# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Tutorial: Crear un DataTable en el Diseñador de Dataset
+# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Tutorial: Crear un objeto DataTable en el Diseñador de Dataset
 
 En este tutorial se explica cómo crear un <xref:System.Data.DataTable> (sin un TableAdapter) mediante el **Diseñador de Dataset**. Para obtener información sobre la creación de tablas de datos que incluyen los TableAdapters, vea [crear y configurar TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-## <a name="create-a-new-windows-forms-application"></a>Cree una nueva aplicación de Windows Forms
+## <a name="create-a-new-windows-forms-application"></a>Crear una nueva aplicación de Windows Forms
 
 1. En Visual Studio, en el **archivo** menú, seleccione **New** > **proyecto**.
 
@@ -39,7 +38,7 @@ En este tutorial se explica cómo crear un <xref:System.Data.DataTable> (sin un 
 
 ## <a name="add-a-new-dataset-to-the-application"></a>Agregar un nuevo conjunto de datos a la aplicación
 
-1.  En el **proyecto** menú, seleccione **Agregar nuevo elemento**.
+1.  En el menú **Proyecto**, seleccione **Agregar nuevo elemento**.
 
      Aparecerá el cuadro de diálogo **Agregar nuevo elemento**.
 
@@ -59,11 +58,11 @@ En este tutorial se explica cómo crear un <xref:System.Data.DataTable> (sin un 
 
 ## <a name="add-columns-to-the-datatable"></a>Agregar columnas a la DataTable
 
-1.  Haga clic en el **música** tabla. Seleccione **agregar**y, a continuación, haga clic en **columna**.
+1.  Haga clic en el **música** tabla. Seleccione **Agregar** y, a continuación, haga clic en **Columna**.
 
 2.  Nombre de la columna `SongID`.
 
-3.  En el **propiedades** ventana, establezca el <xref:System.Data.DataColumn.DataType%2A> propiedad <xref:System.Int16?displayProperty=fullName>.
+3.  En la ventana **Propiedades** , establezca la propiedad <xref:System.Data.DataColumn.DataType%2A> en <xref:System.Int16?displayProperty=fullName>.
 
 4.  Repita este proceso y agregue las siguientes columnas:
 
@@ -79,7 +78,7 @@ Todas las tablas de datos deben tener una clave principal. Una clave principal i
 
 Para establecer la clave principal, haga clic en el **IdCanción** columna y, a continuación, haga clic en **establecer clave principal**. Un icono clave aparece junto a la **IdCanción** columna.
 
-## <a name="save-your-project"></a>Guarde el proyecto
+## <a name="save-your-project"></a>Guardar el proyecto
 
 Para guardar la **DataTableWalkthrough** proyecto, en el **archivo** menú, seleccione **guardar todo**.
 
@@ -87,4 +86,4 @@ Para guardar la **DataTableWalkthrough** proyecto, en el **archivo** menú, sele
 
 - [Crear y configurar conjuntos de datos en Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Enlazar controles a los datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
-- [Validación de datos](../data-tools/validate-data-in-datasets.md)
+- [Validar datos](../data-tools/validate-data-in-datasets.md)

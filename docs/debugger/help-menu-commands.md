@@ -23,8 +23,8 @@ El **ayuda** menú proporciona comandos para abrir los archivos de ayuda.
  **Index**  
  Se abre la pantalla de contenido de Ayuda de Spy ++.  
   
- &Uso de la Ayuda  
+ **Uso de la Ayuda**  
  Se abre un archivo de ayuda que se describe cómo usar la Ayuda.  
   
- &Acerca de Spy++...  
+ **Acerca de Spy++**  
  Muestra la información de copyright y de versión de software de Spy ++.

@@ -1,8 +1,6 @@
 ---
 title: Técnicas de depuración de MFC | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - AfxEnableMemoryTracking
@@ -27,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bb41fbf0fc4a41a5cf45d68f6453f2ef6ebdd6c
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: a2bfc9e9c45e7bf3413c1733dd57534f3675a2f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219944"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832222"
 ---
 # <a name="mfc-debugging-techniques"></a>Técnicas de depuración de MFC
 Si está depurando un programa MFC, estas técnicas de depuración pueden resultar de utilidad.  
@@ -99,7 +97,7 @@ TRACE( "x = %d and y = %d\n", x, y );
 TRACE( "x = %d and y = %x and z = %f\n", x, y, z );  
 ```  
 
- La macro TRACE controla correctamente char * y wchar_t\* parámetros. En los ejemplos siguientes se muestra el uso de la macro TRACE junto con diferentes tipos de parámetros de cadena.  
+ La macro TRACE controla correctamente los parámetros char* y wchar_t\*. En los ejemplos siguientes se muestra el uso de la macro TRACE junto con diferentes tipos de parámetros de cadena.  
 
 ```cpp
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);  
@@ -337,7 +335,7 @@ Phone #: 581-0215
 
  **Asignaciones de elementos que no son objetos**  
 
- Observe que algunas asignaciones corresponden a objetos (como `CPerson`) y otras son asignaciones de elementos que no son objetos. "Asignaciones de elementos" son asignaciones de objetos no derivados de `CObject` o asignaciones de tipos C primitivos como `char`, `int`, o `long`. Si la clase derivada de **CObject**asigna espacio adicional, como para los búferes internos, esos objetos mostrarán asignaciones de objetos y de elementos que no son objetos.  
+ Observe que algunas asignaciones corresponden a objetos (como `CPerson`) y otras son asignaciones de elementos que no son objetos. "Asignaciones de elementos que no son objetos" son asignaciones de objetos que no derivan de `CObject` o asignaciones de tipos C primitivos como `char`, `int`o `long`. Si la clase derivada de **CObject**asigna espacio adicional, como para los búferes internos, esos objetos mostrarán asignaciones de objetos y de elementos que no son objetos.  
 
  **Evitar pérdidas de memoria**  
 
@@ -432,9 +430,9 @@ pMyPerson->Dump( afxDump );
 
 3. Primero, se creará la configuración para un nuevo proyecto.  
 
-   1.  En el  **\<proyecto > páginas de propiedades** cuadro de diálogo, haga clic en el **Configuration Manager** botón.  
+   1.  En el cuadro de diálogo **\<Proyecto> Páginas de propiedades**, haga clic en el botón **Administrador de configuración**.  
 
-   2.  En el [cuadro de diálogo Administrador de configuración](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)), localice el proyecto en la cuadrícula. En el **configuración** columna, seleccione  **\<nuevo... >**.  
+   2.  En el [cuadro de diálogo Administrador de configuración](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)), localice el proyecto en la cuadrícula. En la columna **Configuración**, seleccione **\<Nueva...>**.  
 
    3.  En el [cuadro de diálogo Nueva configuración del proyecto](/previous-versions/visualstudio/visual-studio-2010/0eh8w4cf(v=vs.100)), escriba un nombre para la nueva configuración, como "Depuración parcial", en el cuadro **Nombre de configuración del proyecto** .  
 
@@ -474,7 +472,7 @@ pMyPerson->Dump( afxDump );
 
    6.  Haga clic en los valores de **Formato de la información de depuración** y seleccione la opción deseada (normalmente **/ZI**) para la información de depuración.  
 
-   7.  Si está utilizando una aplicación generada con el Asistente para aplicaciones, o dispone de encabezados precompilados, deberá desactivar los encabezados precompilados o volver a compilarlos antes de compilar los otros módulos. Si no lo hace así, recibirá la advertencia C4650 y el mensaje de error C2855. Puede desactivar los encabezados precompilados, cambie el **crear o usar encabezados precompilados** en el  **\<proyecto > propiedades** cuadro de diálogo (**propiedades de configuración**  carpeta, **C o C++** subcarpeta, **encabezados precompilados** categoría).  
+   7.  Si está utilizando una aplicación generada con el Asistente para aplicaciones, o dispone de encabezados precompilados, deberá desactivar los encabezados precompilados o volver a compilarlos antes de compilar los otros módulos. Si no lo hace así, recibirá la advertencia C4650 y el mensaje de error C2855. Para desactivar los encabezados precompilados, cambie el valor de la opción **Crear o usar encabezados precompilados** en el cuadro de diálogo **\<Proyecto> Propiedades** (carpeta **Propiedades de configuración**, subcarpeta **C/C++**, categoría **Encabezados precompilados**).  
 
 7. En el menú **Compilar** , seleccione **Compilar** para recompilar los archivos del proyecto que no estén actualizados.  
 

@@ -1,8 +1,6 @@
 ---
-title: Abreviados (HTML y JavaScript) | Documentos de Microsoft
-ms.custom: ''
+title: Métodos abreviados (HTML y JavaScript) de teclado | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07a528c0dda6237efc280644040a48d42c4b0f85
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 5dda5bdb73ea4d673341309f24985455ecc2ce35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475501"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949474"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Métodos abreviados de teclado (HTML y JavaScript)
   
@@ -51,12 +49,12 @@ ms.locfileid: "31475501"
 |Acción|Acceso directo|  
 |------------|--------------|  
 |Seleccionar elemento|Ctrl+B|  
-|Alternar entre mostrar y ocultar cuadros de resaltado de página Web al usar **Seleccionar elemento**|Ctrl+Mayús+I|  
-|Confirmar cambios mediante **editar como HTML**|Ctrl+Intro|  
-|Descartar los cambios con **editar como HTML**|Esc|  
+|Alternancia entre mostrar y ocultar cuadros de resaltado de página web al usar **Seleccionar elemento**|Ctrl+Mayús+I|  
+|Confirmación de cambios mediante **Editar como HTML**|Ctrl+Intro|  
+|Descarte de cambios mediante **Editar como HTML**|Esc|  
 |Aumentar en 1 el valor CSS seleccionado|Flecha arriba|  
 |Reducir en 1 el valor CSS seleccionado|Flecha abajo|  
   
 ## <a name="see-also"></a>Vea también  
- [Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md)   
- [Inicio rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
+ [Inicio rápido: Depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Inicio rápido: Depuración de JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)

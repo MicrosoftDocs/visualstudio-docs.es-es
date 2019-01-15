@@ -1,8 +1,6 @@
 ---
 title: Busque el proceso ASP.NET en ejecución | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 6bbb2aed6f7218170e26b736d82ba0f3d88b2fae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 4a65269f9fd99b31ee797be0d5e27559daa1f25a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751768"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836171"
 ---
 # <a name="find-the-name-of-the-aspnet-process"></a>Buscar el nombre de un proceso de ASP.NET
 
@@ -47,6 +45,6 @@ Para depurar un ejecución [!INCLUDE[vstecasp](../code-quality/includes/vstecasp
 **Vea también:**
 
  [Adjuntar a un proceso en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
- [Requisitos previos para la depuración remota de aplicaciones web](../debugger/prerequistes-for-remote-debugging-web-applications.md)   
+ [Requisitos previos para la depuración remota de aplicaciones web](/visualstudio/debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer)   
  [Requisitos del sistema](../debugger/aspnet-debugging-system-requirements.md)   
  [Depuración de aplicaciones de ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

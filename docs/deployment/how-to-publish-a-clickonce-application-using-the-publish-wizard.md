@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: publicar una aplicación ClickOnce mediante el Asistente para publicación | Microsoft Docs'
-ms.custom: ''
+title: Publicación de una aplicación ClickOnce mediante el Asistente para publicación | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 890a61290d7606fb2a03ea7aed2c4782e5b69b67
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 1a6b916e8050bd68f4ccd601e92725768a01c4c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388868"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935052"
 ---
-# <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Cómo: Publicar una aplicación ClickOnce mediante el Asistente para publicación
+# <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Procedimiento Publicación de una aplicación ClickOnce mediante el Asistente para publicación
 Para que una aplicación ClickOnce esté disponible para los usuarios, debe publicarla en un recurso compartido de archivos o ruta de acceso, en un servidor FTP o en un medio extraíble. Puede publicar la aplicación con el Asistente para publicación. En la página **Publicar** del **Diseñador de proyectos** hay disponibles más propiedades relativas a la publicación. Para obtener más información, vea [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md).
 
 Antes de ejecutar el Asistente para publicación, debe establecer las propiedades de publicación correctamente. Por ejemplo, si quiere designar una clave para firmar la aplicación ClickOnce, puede hacerlo en la página **Firma** del **Diseñador de proyectos**. Para obtener más información, consulte [aplicaciones ClickOnce Secure](../deployment/securing-clickonce-applications.md).
@@ -35,7 +33,7 @@ Antes de ejecutar el Asistente para publicación, debe establecer las propiedade
 > Cuando se instala más de una versión de una aplicación con ClickOnce, la instalación mueve las versiones anteriores de la aplicación a una carpeta llamada *Archivo*, en la ubicación de publicación que especifiques. Al archivar las versiones anteriores de esta manera, el directorio de instalación se mantiene limpio de carpetas de versiones anteriores.
 
 > [!NOTE]
-> Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en la Ayuda, dependiendo de los valores de configuración o de edición activos. Para cambiar la configuración, haga clic en **Importar y exportar configuraciones** en el menú **Herramientas** . Para obtener más información, consulte [Restablecer configuración](../ide/environment-settings.md#reset-settings).
+> Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en la Ayuda, dependiendo de los valores de configuración o de edición activos. Para cambiar la configuración, haga clic en **Importar y exportar configuraciones** en el menú **Herramientas** . Para obtener más información, vea [Restablecer la configuración](../ide/environment-settings.md#reset-settings).
 
 ## <a name="to-publish-to-a-file-share-or-path"></a>Para publicar en un recurso compartido de archivos o en una ruta de acceso
 

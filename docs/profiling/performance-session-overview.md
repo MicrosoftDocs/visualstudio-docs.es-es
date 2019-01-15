@@ -1,8 +1,6 @@
 ---
 title: Información general sobre las sesiones de rendimiento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, performance session
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a385b425ee8dead7df0faad302e6cf270b739034
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b673bad7bbcd552140cca25cc5a3fe90404c0716
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828538"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867178"
 ---
 # <a name="performance-session-overview"></a>Información general sobre las sesiones de rendimiento
 Esta introducción explica los conceptos básicos de la generación de perfiles. Los desarrolladores que no tienen experiencia en el trabajo de rendimiento verán cómo las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pueden ayudarles a ser productivos rápidamente y a aumentar el rendimiento de su código. Los desarrolladores con experiencia en la generación de perfiles pueden obtener una visión general de las características específicas y procesos de las herramientas.  
@@ -77,4 +75,4 @@ Esta introducción explica los conceptos básicos de la generación de perfiles.
   
 ## <a name="see-also"></a>Vea también  
  [Temas de introducción](../profiling/overviews-performance-tools.md)   
- [Tutorial: Identificación de problemas de rendimiento](../profiling/walkthrough-identifying-performance-problems.md)
+ [Tutorial: Identificación de problemas de rendimiento](/visualstudio/profiling/beginners-guide-to-cpu-sampling)

@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: Personalizar las columnas de la vista de informes | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Personalizar las columnas de la vista de informes | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.test.columnchooser.dialogbox
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6f06b360348ad06df6433c67a4cae7f543ea5ce
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: bc8fc2cf5dd2994384f0e01c6dbbb64438515f1f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815857"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861165"
 ---
-# <a name="how-to-customize-report-view-columns"></a>Cómo: Personalizar las columnas de la vista de informes
+# <a name="how-to-customize-report-view-columns"></a>Procedimiento Personalizar las columnas de la vista de informes
 Las herramientas de rendimiento de Visual Studio Team System Development Edition están totalmente integradas en el entorno de desarrollo integrado (IDE) para proporcionar una experiencia de usuario sin problemas. La lista siguiente es representativa de las vistas que se pueden personalizar agregando, quitando y reorganizando columnas:  
   
 -   [Vista Módulos](../profiling/modules-view.md)  

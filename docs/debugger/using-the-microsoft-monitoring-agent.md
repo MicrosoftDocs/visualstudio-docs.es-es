@@ -1,8 +1,6 @@
 ---
 title: Uso de Microsoft Monitoring Agent | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: fd0a86b9-015d-408e-aa58-59a0a97826ac
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3146de7efb7db567149b7741f2868a932f8476ac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 21ebc3e81852abb11a8c48c426d56eb837a19005
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842071"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821053"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Usar Microsoft Monitoring Agent
 Puede usar **Microsoft Monitoring Agent**para supervisar localmente las aplicaciones web ASP.NET hospedadas en IIS y las aplicaciones de SharePoint 2010 o 2013 y comprobar si tienen errores, problemas de rendimiento u otro tipo de problemas. Puede guardar eventos de diagnóstico del agente en un archivo de registro de IntelliTrace (.iTrace). Después podrá abrir el registro en Visual Studio Enterprise (pero no en las versiones de Visual Studio Professional o Community) para depurar los problemas con todas las herramientas de diagnóstico de Visual Studio. También puede recopilar datos de diagnóstico de IntelliTrace y datos sobre métodos si ejecuta el agente en modo **Trace** . El agente de supervisión de Microsoft puede integrarse con [Application Insights](/azure/application-insights/) y [System Center Operation Manager](/previous-versions/system-center/system-center-2012-R2/hh205987(v=sc.12)). Microsoft Monitoring Agent sí modifica el entorno del sistema de destino cuando se instala.  
@@ -27,13 +25,13 @@ Puede usar **Microsoft Monitoring Agent**para supervisar localmente las aplicaci
   
  Antes de empezar, compruebe que tiene el código fuente y los símbolos correspondientes para el código compilado e implementado. Esto le ayudará a ir directamente al código de la aplicación al iniciar la depuración y examinar los eventos de diagnóstico en el registro de IntelliTrace. [Configure las compilaciones](../debugger/diagnose-problems-after-deployment.md) para que Visual Studio puede encontrar y abrir automáticamente el código fuente correspondiente para el código implementado.  
   
-1.  [Paso 1: Configurar Microsoft Monitoring Agent](#SetUpMonitoring)  
+1.  [Paso 1: Configuración de Microsoft Monitoring Agent](#SetUpMonitoring)  
   
-2.  [Paso 2: Iniciar la supervisión de la aplicación](#MonitorEvents)  
+2.  [Paso 2: Inicio de la supervisión de la aplicación](#MonitorEvents)  
   
-3.  [Paso 3: Guardar los eventos registrados](#SaveEvents)  
+3.  [Paso 3: Guardar eventos grabados](#SaveEvents)  
   
-##  <a name="SetUpMonitoring"></a> Paso 1: Configurar Microsoft Monitoring Agent  
+##  <a name="SetUpMonitoring"></a> Paso 1: Configuración de Microsoft Monitoring Agent  
  Configure el agente independiente en el servidor web para realizar la supervisión local sin modificar la aplicación. Si usa System Center 2012, vea [Instalar Microsoft Monitoring Agent](/previous-versions/system-center/system-center-2012-R2/dn465156(v=sc.12)).  
   
 ###  <a name="SetUpStandaloneMMA"></a> Configurar el agente independiente  
@@ -56,7 +54,7 @@ Puede usar **Microsoft Monitoring Agent**para supervisar localmente las aplicaci
   
 4.  Cree un directorio seguro en el servidor web para almacenar los registros de IntelliTrace, por ejemplo, **C:\IntelliTraceLogs**.  
   
-     Asegúrese de crear este directorio antes de iniciar la supervisión. Para evitar ralentizar la aplicación, elija una ubicación en un disco local de alta velocidad que no está muy activo.  
+     Asegúrese de crear este directorio antes de iniciar la supervisión. Para evitar ralentizar la aplicación, elija una ubicación en un disco de alta velocidad local que no sea muy activo.  
   
     > [!IMPORTANT]
     >  Los registros de IntelliTrace podrían contener datos personales y confidenciales. Restrinja el acceso a este directorio a las identidades que deben usar los archivos. Compruebe las directivas de privacidad de su compañía.  
@@ -89,7 +87,7 @@ Puede usar **Microsoft Monitoring Agent**para supervisar localmente las aplicaci
   
      `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\SharePoint - 80":RX`  
   
-    O bien  
+    o bien  
   
 - Para configurar permisos con el Explorador de Windows (o el Explorador de archivos):  
   
@@ -97,17 +95,17 @@ Puede usar **Microsoft Monitoring Agent**para supervisar localmente las aplicaci
   
   2.  En la pestaña **Seguridad** , elija **Editar** **Agregar**.  
   
-  3.  Asegúrese de que **Entidades de seguridad integradas** aparezca en el cuadro **Seleccionar este tipo de objeto** . Si no está allí, elija **tipos de objeto** para agregarlo.  
+  3.  Asegúrese de que **Entidades de seguridad integradas** aparezca en el cuadro **Seleccionar este tipo de objeto** . Si no está allí, elija **Tipos de objeto** para agregarlo.  
   
-  4.  Asegúrese de que el equipo local aparece en el cuadro **Desde esta ubicación** . Si no está allí, elija **ubicaciones** para cambiarlo.  
+  4.  Asegúrese de que el equipo local aparece en el cuadro **Desde esta ubicación** . Si no está allí, elija **Ubicaciones** para cambiarlo.  
   
   5.  En el cuadro **Escriba los nombres de objeto que desea seleccionar** , agregue el grupo de aplicaciones para la aplicación web o la aplicación de SharePoint.  
   
   6.  Elija **Comprobar nombres** para resolver el nombre. Elija **Aceptar**.  
   
-  7.  Asegúrese de que el grupo de aplicaciones tiene **lectura & ejecutar** permisos.  
+  7.  Asegúrese de que el grupo de aplicaciones tenga permisos de **lectura y ejecución**.  
   
-##  <a name="MonitorEvents"></a> Paso 2: Iniciar la supervisión de la aplicación  
+##  <a name="MonitorEvents"></a> Paso 2: Inicio de la supervisión de la aplicación  
  Use el comando [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) de Windows PowerShell para iniciar la supervisión de la aplicación. Si usa System Center 2012, vea la página [Supervisión con el Agente de Microsoft Monitoring](http://technet.microsoft.com/library/dn465157.aspx).  
   
 1.  En el servidor web, abra una ventana de símbolo del sistema de **Windows PowerShell** o **Windows PowerShell ISE** como administrador.  
@@ -134,19 +132,19 @@ Puede usar **Microsoft Monitoring Agent**para supervisar localmente las aplicaci
   
     |||  
     |-|-|  
-    |*"\<appName >"*|Especifique la ruta de acceso al sitio web y el nombre de la aplicación en IIS. Puede incluir también la ruta de acceso de IIS, si lo prefiere.<br /><br /> *"\<IISWebsiteName >\\< IISWebAppName\>"*<br /><br /> O bien<br /><br /> **"IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*<br /><br /> Puede encontrarla en el Administrador de IIS. Por ejemplo:<br /><br /> ![Ruta de acceso al sitio web de IIS y web app](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> También puede usar los comandos [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) y [Get WebApplication](http://technet.microsoft.com/library/ee790554.aspx) .|  
-    |*\<monitoringMode >*|Especifique el modo de supervisión:<br /><br /> <ul><li>**Monitor**: registra detalles mínimos sobre eventos de excepción y de rendimiento. Este modo usa el plan de recolección predeterminado.</li><li>**Trace**: registra detalles en el nivel de función o supervisa aplicaciones de SharePoint 2010 y SharePoint 2013 mediante el plan de recolección especificado. Este modo puede ralentizar la ejecución de la aplicación.<br /><br /> <ul><li>[P: ¿Cómo configuro permisos para el grupo de aplicaciones?](#FullPermissionsITLog)</li><li>[P: ¿Cómo obtengo la mayoría de los datos sin ralentizar la aplicación?](#Minimizing)</li></ul><br />     En este ejemplo se registran eventos para una aplicación de SharePoint hospedada en un sitio de SharePoint:<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp" seguimiento "C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml" "C:\IntelliTraceLogs"**</li><li>**Custom**: registra detalles personalizados mediante el plan de recolección personalizado especificado. Si edita el plan de recolección una vez iniciada la supervisión, tendrá que reiniciar esta.</li></ul>|  
+    |*"\<appName >"*|Especifique la ruta de acceso al sitio web y el nombre de la aplicación en IIS. Puede incluir también la ruta de acceso de IIS, si lo prefiere.<br /><br /> *"\<IISWebsiteName >\\< IISWebAppName\>"*<br /><br /> o bien<br /><br /> **"IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*<br /><br /> Puede encontrarla en el Administrador de IIS. Por ejemplo:<br /><br /> ![Ruta de acceso al sitio web de IIS y web app](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> También puede usar los comandos [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) y [Get WebApplication](http://technet.microsoft.com/library/ee790554.aspx) .|  
+    |*\<monitoringMode >*|Especifique el modo de supervisión:<br /><br /> <ul><li>**Supervisión**: registra detalles mínimos sobre eventos de excepción y de rendimiento. Este modo usa el plan de recolección predeterminado.</li><li>**Seguimiento**: registra detalles en el nivel de función o supervisa aplicaciones de SharePoint 2010 y SharePoint 2013 mediante el plan de recolección especificado. Este modo puede ralentizar la ejecución de la aplicación.<br /><br /> <ul><li>[P: ¿Cómo configuro permisos para el grupo de aplicaciones?](#FullPermissionsITLog)</li><li>[P: ¿Cómo puedo obtener la mayoría de los datos sin ralentizar la aplicación?](#Minimizing)</li></ul><br />     En este ejemplo se registran eventos para una aplicación de SharePoint hospedada en un sitio de SharePoint:<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp" seguimiento "C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml" "C:\IntelliTraceLogs"**</li><li>**Personalizada**: registra detalles personalizados mediante el plan de recolección personalizado especificado. Si edita el plan de recolección una vez iniciada la supervisión, tendrá que reiniciar esta.</li></ul>|  
     |*"\<outputPath >"*|Especifique la ruta de acceso completa al directorio para almacenar los registros de IntelliTrace. Asegúrese de crear este directorio antes de iniciar la supervisión.|  
     |*\<UInt32 >*|Especifique el tamaño máximo del registro de IntelliTrace. El tamaño máximo predeterminado de registro de IntelliTrace es 250 MB.<br /><br /> Cuando el registro alcanza este límite, el agente sobrescribe las entradas más antiguas para conseguir espacio para más entradas. Para cambiar este límite, use la opción **-MaximumFileSizeInMegabytes** o modifique el atributo `MaximumLogFileSize` del plan de recolección.|  
-    |*"\<collectionPlanPathAndFileName >"*|Especifique la ruta de acceso completa o relativa y el nombre de archivo del plan de recolección. Este plan es un archivo .xml que permite configurar el agente.<br /><br /> Estos planes se incluyen con el agente y se pueden usar con aplicaciones web y aplicaciones de SharePoint:<br /><br /> -   **collection_plan.ASP.NET.default.xml**<br />     Obtiene solo eventos, como excepciones, eventos de rendimiento, llamadas a la base de datos y solicitudes del servidor web.<br />-   **collection_plan.ASP.NET.trace.xml**<br />     Recopila llamadas en el nivel de función, así como todos los datos del plan de recolección predeterminado. Este plan es práctico para el análisis detallado, pero podría ralentizar la aplicación.<br /><br /> Puede encontrar versiones localizadas de estos planes en las subcarpetas del agente. También puede [personalizar estos planes o crear los suyos propios](http://go.microsoft.com/fwlink/?LinkId=227871) para evitar ralentizar la aplicación. Coloque los planes personalizados en la misma ubicación segura que el agente.<br /><br /> [P: ¿Cómo obtengo la mayoría de los datos sin ralentizar la aplicación?](#Minimizing)|  
+    |*"\<collectionPlanPathAndFileName >"*|Especifique la ruta de acceso completa o relativa y el nombre de archivo del plan de recolección. Este plan es un archivo .xml que permite configurar el agente.<br /><br /> Estos planes se incluyen con el agente y se pueden usar con aplicaciones web y aplicaciones de SharePoint:<br /><br /> -   **collection_plan.ASP.NET.default.xml**<br />     Obtiene solo eventos, como excepciones, eventos de rendimiento, llamadas a la base de datos y solicitudes del servidor web.<br />-   **collection_plan.ASP.NET.trace.xml**<br />     Recopila llamadas en el nivel de función, así como todos los datos del plan de recolección predeterminado. Este plan es práctico para el análisis detallado, pero podría ralentizar la aplicación.<br /><br /> Puede encontrar versiones localizadas de estos planes en las subcarpetas del agente. También puede [personalizar estos planes o crear los suyos propios](http://go.microsoft.com/fwlink/?LinkId=227871) para evitar ralentizar la aplicación. Coloque los planes personalizados en la misma ubicación segura que el agente.<br /><br /> [P: ¿Cómo puedo obtener la mayoría de los datos sin ralentizar la aplicación?](#Minimizing)|  
   
-     Para más información sobre la sintaxis completa y otros ejemplos, ejecute el **get-help Start-WebApplicationMonitoring-detailed** comando o la **get-help Start-WebApplicationMonitoring-ejemplos** comando.  
+     Para obtener más información sobre la sintaxis completa y otros ejemplos, ejecute el comando **get-help Start-WebApplicationMonitoring –detailed** o **get-help Start-WebApplicationMonitoring –examples**.  
   
 3.  Para comprobar el estado de todas las aplicaciones web supervisadas, ejecute el comando [Get-WebApplicationMonitoringStatus](http://go.microsoft.com/fwlink/?LinkID=313685) .  
   
 ### <a name="q--a"></a>Preguntas y respuestas  
   
-####  <a name="Minimizing"></a> P: ¿Cómo obtengo la mayoría de los datos sin ralentizar la aplicación?  
+####  <a name="Minimizing"></a> P: ¿Cómo puedo obtener la mayoría de los datos sin ralentizar la aplicación?  
  **R:** Microsoft Monitoring Agent puede recopilar grandes cantidades de datos y el efecto que tendrá en el rendimiento de la aplicación dependerá de los datos que decida recopilar y de cómo se recopilen. A continuación, se muestran algunas maneras de obtener la mayoría de los datos sin ralentizar la aplicación:  
   
 - En las aplicaciones web y de SharePoint, el agente registra los datos para cada aplicación web que comparte el grupo de aplicaciones especificado. Esto puede ralentizar cualquier aplicación que comparte el mismo grupo de aplicaciones, aunque puede restringir la recopilación únicamente a los módulos para una sola aplicación. Para evitar ralentizar otras aplicaciones, hospede cada aplicación en su propio grupo de aplicaciones.  
@@ -208,7 +206,7 @@ Puede usar **Microsoft Monitoring Agent**para supervisar localmente las aplicaci
   
    **P: ¿Por qué no excluir simplemente módulos en su lugar?**  
   
-   **R:** De forma predeterminada, los planes de recolección excluyen los módulos estableciendo el atributo `isExclusionList` en `true`. Sin embargo, esto podría dar lugar a que se recopilen datos de módulos que no cumplen los criterios de lista o que no interesen, como los módulos de terceros o de código abierto.  
+   **R:** Los planes de recolección excluyen módulos de forma predeterminada estableciendo el atributo `isExclusionList` en `true`. Sin embargo, esto podría dar lugar a que se recopilen datos de módulos que no cumplen los criterios de lista o que no interesen, como los módulos de terceros o de código abierto.  
   
 #### <a name="q-what-values-does-the-agent-collect"></a>P: ¿Qué valores recopila el agente?  
  **R:** Para reducir el impacto en el rendimiento, el agente recopila solo estos valores:  
@@ -227,7 +225,7 @@ Puede usar **Microsoft Monitoring Agent**para supervisar localmente las aplicaci
   
   El agente registra los valores de `id`, `Employee.Id`, `Employee.Name` y el objeto `Employee` devuelto del método `AlterEmployee` . Sin embargo, el agente únicamente registra información sobre si es null o no el objeto `Address` . El agente tampoco registra datos sobre variables locales del método `AlterEmployee` a menos que otros métodos utilicen esas variables locales como parámetros en el punto en el que se registran como parámetros de método.  
   
-##  <a name="SaveEvents"></a> Paso 3: Guardar los eventos registrados  
+##  <a name="SaveEvents">Paso 3:</a> Guardar eventos grabados  
  Si encuentra un error o un problema de rendimiento, guarde los eventos registrados en un registro de IntelliTrace. El agente crea el registro solo si se registró algún evento. Si usa System Center 2012, vea la página [Supervisión con el Agente de Microsoft Monitoring](http://technet.microsoft.com/library/dn465157.aspx).  
   
 ### <a name="save-recorded-events-but-continue-monitoring"></a>Guardar los eventos registrados pero seguir supervisando  
@@ -247,18 +245,18 @@ Puede usar **Microsoft Monitoring Agent**para supervisar localmente las aplicaci
   
     **PS C:\\> Checkpoint-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**  
   
-    O bien  
+    o bien  
   
     **PS C: > Checkpoint-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web"**  
   
-    Para obtener más información, ejecute el **get-help Checkpoint-WebApplicationMonitoring-detailed** comando o la **get-help Checkpoint-WebApplicationMonitoring-ejemplos** comando.  
+    Para obtener más información, ejecute el comando **get-help Checkpoint-WebApplicationMonitoring –detailed** o **get-help Checkpoint-WebApplicationMonitoring –examples**.  
   
 3. Copie el registro en una carpeta compartida segura y después abra el registro desde un equipo con Visual Studio Enterprise (pero no con las versiones Professional o Community).  
   
    > [!IMPORTANT]
    >  Tenga cuidado cuando comparta registros de IntelliTrace porque podrían contener datos personales y confidenciales. Asegúrese de que quienquiera que pueda obtener acceso a estos registros tenga permisos para consultar esos datos. Compruebe las directivas de privacidad de su compañía.  
   
-   **Siguiente:** [Diagnosticar eventos registrados en Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
+   **Siguiente** [Diagnosticar eventos registrados en Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
   
 ### <a name="save-recorded-events-and-stop-monitoring"></a>Guardar los eventos registrados y detener la supervisión  
  Siga estos pasos si únicamente desea obtener información de diagnóstico mientras se reproduce un problema concreto. Esto reiniciará todas las aplicaciones web del servidor web.  
@@ -285,11 +283,11 @@ Puede usar **Microsoft Monitoring Agent**para supervisar localmente las aplicaci
   
     **PS C:\\> Stop-WebApplicationMonitoring "IIS:\sites\Fabrikam\FabrikamFiber.Web"**  
   
-    Para obtener más información, ejecute el **get-help Stop-WebApplicationMonitoring-detailed** comando o la **get-help Stop-WebApplicationMonitoring-ejemplos** comando.  
+    Para obtener más información, ejecute el comando **get-help Stop-WebApplicationMonitoring –detailed** o **get-help Stop-WebApplicationMonitoring –examples**.  
   
 3. Copie el registro en una carpeta compartida segura y después abra el registro desde un equipo con Visual Studio Enterprise.  
   
-   **Siguiente:** [Diagnosticar eventos registrados en Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
+   **Siguiente** [Diagnosticar eventos registrados en Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
   
 ## <a name="q--a"></a>Preguntas y respuestas  
   

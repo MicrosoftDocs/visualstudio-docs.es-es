@@ -1,9 +1,7 @@
 ---
 title: 'Paso 5: Agregar controladores de eventos Enter para los controles NumericUpDown'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
 author: TerryGLee
@@ -11,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e05d6cc201819d37e77587529ffd79a740003a10
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 393e43a44045f4551fbf567f1de037e77dbae00e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747924"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846904"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Paso 5: Agregar controladores de eventos Enter para los controles NumericUpDown
 En la quinta parte de este tutorial, agregará <xref:System.Windows.Forms.Control.Enter> controladores de eventos Enter para hacer que sea un poco más fácil escribir las respuestas a los problemas de la prueba. Este código seleccionará y borrará el valor actual de cada uno de los controles <xref:System.Windows.Forms.NumericUpDown> en cuanto el jugador lo elija y comience a escribir un valor diferente.

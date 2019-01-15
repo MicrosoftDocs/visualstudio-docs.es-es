@@ -9,17 +9,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 81373e30498ad02f4007e096cfbc6a7cff953402
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 4338ba11116ce8077cff8e15a6bb8093214917d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895724"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925763"
 ---
-# <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Cómo: Especificar la propiedad Tiempo de rampa de paso de un modelo de carga por pasos
+# <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Procedimiento Especificar la propiedad Tiempo de rampa de paso de un modelo de carga por pasos
 
-Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades de los escenarios de modo que satisfagan las necesidades y los objetivos de la prueba. Para obtener más información, vea [Tutorial: Crear y ejecutar una prueba de carga](../test/walkthrough-create-and-run-a-load-test.md).
+Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades de los escenarios de modo que satisfagan las necesidades y los objetivos de la prueba. Para obtener más información, vea [Tutorial: Creación y ejecución de una prueba de carga](../test/walkthrough-create-and-run-a-load-test.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -40,7 +39,7 @@ Los modelos de carga por pasos se usan para aumentar la carga en el servidor o l
 
 -   Tiempo de rampa de paso (segundos): 20
 
--   Recuento de pasos de usuario: 100
+-   Recuento de usuarios por pasos: 100
 
 Estas configuraciones hacen que la prueba de carga se ejecute durante 30 minutos (1800 segundos) con cargas de 100, 200, 300 y hasta 2000 usuarios.
 

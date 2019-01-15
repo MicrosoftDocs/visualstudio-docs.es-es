@@ -1,8 +1,6 @@
 ---
 title: 'Vista Módulos: datos de contención | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f9ad65a81820e37c01d55a0ddba441dd30977b4
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: edd882b00c5bdaf62ae280cb0e4986662b05ad83
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256063"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926404"
 ---
 # <a name="modules-view---contention-data"></a>Vista Módulos: datos de contención
 En la vista Módulos de datos de contención se muestran datos de simultaneidad agrupados por los módulos de los que se toman muestras en los datos de generación de perfiles. Cada módulo es la raíz de un árbol jerárquico. Las funciones del módulo en el que se produjeron los eventos de contención se muestran debajo del nodo de módulo.  
@@ -48,6 +46,6 @@ En la vista Módulos de datos de contención se muestran datos de simultaneidad 
  [Cómo: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)   
  [Vista Módulos](../profiling/modules-view.md)   
  [Vista Módulos: instrumentación](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
- [Vista Módulos: muestreo](../profiling/modules-view-dotnet-memory-sampling-data.md)   
+ [Vista Módulos: datos de muestreo](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [Vista Módulos](../profiling/modules-view-instrumentation-data.md)   
  [Vista Módulos](../profiling/modules-view-sampling-data.md)

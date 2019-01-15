@@ -1,9 +1,7 @@
 ---
 title: 'Paso 4: Diseñar un formulario con un control TableLayoutPanel'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 author: TerryGLee
@@ -11,17 +9,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 164b0974d751dcfd164efab765432c1f9c23458c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5f60d39cb14bfb471e677a8c231091e97d3016a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748301"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821357"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Paso 4: Diseñar un formulario con un control TableLayoutPanel
 En este paso, agregará un control <xref:System.Windows.Forms.TableLayoutPanel> al formulario. El control TableLayoutPanel ayuda a alinear correctamente los controles del formulario que se agregarán posteriormente.
 
- ![vínculo al vídeo](../data-tools/media/playvideo.gif)Para obtener una versión en vídeo de este tema, vea el [Tutorial 1: Crear un visor de imágenes en Visual Basic (vídeo 2)](http://go.microsoft.com/fwlink/?LinkId=205211) o el [Tutorial 1: Crear un visor de imágenes en C# (vídeo 2)](http://go.microsoft.com/fwlink/?LinkId=205200). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
+ ![vínculo al vídeo](../data-tools/media/playvideo.gif)Para obtener una versión en vídeo de este tema, vea [Tutorial 1: Crear un visor de imágenes en Visual Basic - Vídeo 2](http://go.microsoft.com/fwlink/?LinkId=205211) o [Tutorial 1: Crear un visor de imágenes en C# - Vídeo 2](http://go.microsoft.com/fwlink/?LinkId=205200). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
 
 ## <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Para diseñar el formulario con un control TableLayoutPanel
 
@@ -62,7 +60,7 @@ En este paso, agregará un control <xref:System.Windows.Forms.TableLayoutPanel> 
 7.  Después de establecer la propiedad **Dock** de TableLayoutPanel en **Fill**, el panel rellena el formulario completo. Si vuelve a cambiar el tamaño del formulario, TableLayoutPanel permanecerá acoplado y cambiará de tamaño para ajustarse al formulario.
 
     > [!NOTE]
-    >  TableLayoutPanel funciona exactamente igual que una tabla de Microsoft Office Word: tiene filas y columnas, y una celda individual puede abarcar varias filas y columnas. Cada celda puede contener un control (como un botón, una casilla o una etiqueta). Este control TableLayoutPanel va a contener un control <xref:System.Windows.Forms.PictureBox> que abarcará completamente su fila superior, un control <xref:System.Windows.Forms.CheckBox> en la celda inferior izquierda, y cuatro controles <xref:System.Windows.Forms.Button> en la celda inferior derecha.
+    >  TableLayoutPanel funciona como una tabla de Microsoft Office Word: Tiene filas y columnas y una celda individual puede abarcar varias filas y columnas. Cada celda puede contener un control (como un botón, una casilla o una etiqueta). Este control TableLayoutPanel va a contener un control <xref:System.Windows.Forms.PictureBox> que abarcará completamente su fila superior, un control <xref:System.Windows.Forms.CheckBox> en la celda inferior izquierda, y cuatro controles <xref:System.Windows.Forms.Button> en la celda inferior derecha.
 
 8.  Actualmente, TableLayoutPanel tiene dos filas del mismo tamaño y dos columnas del mismo tamaño. Tenemos que cambiar su tamaño de modo que la fila superior y la columna derecha sean mucho mayores. En el **Diseñador de Windows Forms**, seleccione TableLayoutPanel. En la esquina superior derecha, hay un botoncito triangular de color negro, con el siguiente aspecto.
 

@@ -19,15 +19,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1e43d118a5fcfe00a8eb6eaa7f34a17ff1f6a4be
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 2f1eb51286ae2d64738b91d997a21596fa2a7c35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389220"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921476"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Leer datos XML en un conjunto de datos
 
@@ -51,7 +50,7 @@ En este paso, creará un proyecto de Visual Basic o Visual C#.
 
 Dado que este tutorial se centra en la lectura de datos XML en un conjunto de datos, se proporciona el contenido de un archivo XML.
 
-1. En el menú Proyecto **, seleccione Agregar nuevo elemento**.
+1. En el menú **Proyecto**, seleccione **Agregar nuevo elemento**.
 
 2. Seleccione **archivo XML**, asigne el nombre **authors.xml**y, a continuación, seleccione **agregar**.
 
@@ -152,7 +151,7 @@ La interfaz de usuario para esta aplicación consta de las siguientes acciones:
     |Control|Propiedad.|Parámetro|
     |-------------|--------------|-------------|
     |`TextBox1`|**Multiline**|`true`|
-    ||ScrollBars|**Vertical**|
+    ||**ScrollBars**|**Vertical**|
     |`Button1`|**Name**|`ReadXmlButton`|
     ||**Texto**|`Read XML`|
     |`Button2`|**Name**|`ShowSchemaButton`|
@@ -199,7 +198,7 @@ El **Mostrar esquema** botón crea un <xref:System.IO.StringWriter> objeto que s
 
      El **Editor de código** se abre en el `ShowSchemaButton_Click` controlador de eventos.
 
-3.  Pegue el código siguiente en el controlador de eventos `ShowSchemaButton_Click`:
+3.  Pegue el código siguiente en el controlador de eventos `ShowSchemaButton_Click`.
 
      [!code-csharp[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_2.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_2.vb)]

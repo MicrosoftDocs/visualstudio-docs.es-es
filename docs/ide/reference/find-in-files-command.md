@@ -2,7 +2,6 @@
 title: Buscar en archivos (Comando)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - edit.findinfiles
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a4cf5078bb16d90744b83dfd99cf0c1da663149a
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 9aab2251f8859cb8e6a5699ba3cd2d4828bd32a4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33705026"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831211"
 ---
 # <a name="find-in-files-command"></a>Buscar en archivos (Comando)
 Busca en los archivos mediante el uso de un subconjunto de las opciones disponibles en la pestaña **Buscar en archivos** de la ventana **Buscar y reemplazar**.
@@ -78,4 +77,4 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Cuadro Buscar/Comando](../../ide/find-command-box.md)
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,8 +1,6 @@
 ---
 title: Información general de la memoria caché de ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d846ec60f6cf1722584c4ea93c56c29bc7007b89
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 323b179a81f9bdd66858c1ff2f96b8ce86b30b10
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077625"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865042"
 ---
 # <a name="clickonce-cache-overview"></a>Información general sobre la memoria caché de ClickOnce
 Todos los [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicaciones, si se instalan localmente u hospedados en línea, se almacenan en el equipo cliente en un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]aplicación *caché*. Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] caché es una familia de directorios ocultos situados bajo el directorio de configuración Local de la carpeta de Documents and Settings del usuario actual. Esta memoria caché contiene todos los archivos de la aplicación, incluidos los ensamblados, archivos de configuración, aplicación y configuración de usuario y directorio de datos. La memoria caché también es responsable de la migración de directorio de datos de la aplicación a la versión más reciente. Para obtener más información sobre la migración de datos, vea [obtener acceso Local y remota de datos en aplicaciones ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  
@@ -36,4 +34,4 @@ Todos los [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] apli
  De forma predeterminada, los equipos cliente tienen 250 MB de almacenamiento en línea [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicaciones. Archivos de datos no cuentan para este límite. Puede ampliar o reducir esta cuota en un equipo cliente en particular cambiando la clave del registro, un administrador del sistema **HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment\OnlineAppQuotaInKB**, que es un valor DWORD que expresa el tamaño de caché en kilobytes. Por ejemplo, para reducir el tamaño de caché a 50 MB, cambiaría este valor a 51200.  
   
 ## <a name="see-also"></a>Vea también  
- [Acceder a los datos locales y remotos en aplicaciones ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
+ [Acceso a datos locales y remotos en aplicaciones ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

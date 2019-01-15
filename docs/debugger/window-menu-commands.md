@@ -23,13 +23,13 @@ El **ventana** menú proporciona comandos para administrar ventanas de Spy ++.
  **Cascade**  
  Reorganiza todas las ventanas en cascada.  
   
- Mosaico horizontal  
+ **Mosaico horizontal**  
  Reorganice todas las ventanas en un patrón de mosaico horizontal.  
   
- Mosaico vertical  
+ **Mosaico vertical**  
  Reorganiza todas las ventanas en un patrón de mosaico vertical.  
   
- &Organizar iconos  
+ **Organizar iconos**  
  Reorganiza los iconos de la vista, si windows se han minimizado.  
   
  **Cerrar Cerrar todo**  

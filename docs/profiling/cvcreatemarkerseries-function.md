@@ -1,8 +1,6 @@
 ---
 title: CvCreateMarkerSeries (función) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvCreateMarkerSeriesA
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55dd6658aca332937299b2301d8294081bc7d3fd
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 9395f576e942e799312dad2e22be79942110a8ae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750209"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967805"
 ---
 # <a name="cvcreatemarkerseries-function"></a>Función CvCreateMarkerSeries
 Crea series de marcadores para un proveedor determinado.  

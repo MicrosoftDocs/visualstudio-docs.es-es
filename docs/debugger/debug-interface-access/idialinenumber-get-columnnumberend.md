@@ -1,8 +1,6 @@
 ---
 title: Get_columnnumberend | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b39cd627ab41d44ac65acbe13516fc3e5597b8a7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bbf8a7b7e7d71172f93fee3d6548c69254301a98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875650"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895199"
 ---
 # <a name="idialinenumbergetcolumnnumberend"></a>IDiaLineNumber::get_columnNumberEnd
 Recupera el número de columna de origen basado en uno donde la expresión o instrucción finaliza.  
@@ -27,7 +25,7 @@ Recupera el número de columna de origen basado en uno donde la expresión o ins
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT get_columnNumberEnd (   
+HRESULT get_columnNumberEnd (   
    DWORD* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_columnNumberEnd (
  [out] Devuelve el número de columna donde finaliza la expresión o instrucción. Si el valor es cero, la información de final de la columna no está presente.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
  El valor de columna devuelto por este método es un byte en la línea a la posición de desplazamiento después del último carácter de la instrucción en la línea.  

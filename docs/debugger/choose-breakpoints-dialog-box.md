@@ -1,8 +1,6 @@
 ---
-title: Elija el cuadro de diálogo de los puntos de interrupción | Documentos de Microsoft
-ms.custom: ''
+title: Elija el cuadro de diálogo de los puntos de interrupción | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.breakpt.choose
@@ -23,24 +21,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ca31b8fa1536e23cce691629ddf5015721d9c9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 7ab243a79d4e0b79150b86fb4a6fbdf3424f3624
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458250"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898796"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Cuadro de diálogo Elegir puntos de interrupción
-El **elegir puntos de interrupción** abre el cuadro de diálogo cuando se intenta establecer un punto de interrupción de una entrada ambigua en el **nuevo punto de interrupción** cuadro de diálogo. Un ejemplo común de entrada ambigua es el de un nombre de función sobrecargada.  
+El cuadro de diálogo **Elegir puntos de interrupción** se abre al intentar establecer un punto de interrupción a partir de una entrada ambigua en el cuadro de diálogo **Nuevo punto de interrupción**. Un ejemplo común de entrada ambigua es el de un nombre de función sobrecargada.  
   
  **Puntos de interrupción**  
  Enumera los posibles puntos de interrupción que se pueden establecer a partir de la entrada ambigua. Se puede seleccionar uno o varios puntos de interrupción para establecer.  
   
  **All**  
- Selecciona todos los puntos de interrupción que aparecen en la **puntos de interrupción** cuadro.  
+ Selecciona todos los puntos de interrupción que aparecen en el cuadro **Puntos de interrupción**.  
   
  **Ninguno**  
- Borra todos los puntos de interrupción que aparecen en la **puntos de interrupción** cuadro.  
+ Borra todos los puntos de interrupción que aparecen en el cuadro **Puntos de interrupción**.  
   
 ## <a name="see-also"></a>Vea también  
  [Usar puntos de interrupción](../debugger/using-breakpoints.md)

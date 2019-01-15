@@ -17,15 +17,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fef30f836ab27cd7a67d85a04254be0018d5b33e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: b626aa489323d26ef439ade216d1fa97a52a8d13
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388743"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825651"
 ---
 # <a name="handle-a-concurrency-exception"></a>Tratar las excepciones de simultaneidad
 
@@ -85,7 +84,7 @@ A continuación, cree un conjunto de datos denominado **NorthwindDataSet**:
 
 1. En el **datos** menú, elija **Agregar nuevo origen de datos**.
 
-   Se abrirá el Asistente para la configuración de orígenes de datos.
+   Se abrirá el Asistente para configuración de orígenes de datos.
 
 2. En el **elegir un tipo de origen de datos** pantalla, seleccione **base de datos**.
 
@@ -136,7 +135,7 @@ La aplicación presentará al usuario tres versiones del registro:
 
 - El registro original cargado en el conjunto de datos
 
-- Los cambios propuestos en el conjunto de datos.
+- Los cambios propuestos en el conjunto de datos
 
 Entonces, el usuario puede sobrescribir la base de datos con la versión propuesta o cancelar la actualización y actualizar el conjunto de datos con los nuevos valores de la base de datos.
 
@@ -167,11 +166,11 @@ Cuando se intenta realizar una actualización y se produce una excepción, por l
    [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]
    [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]
 
-### <a name="display-choices-to-the-user"></a>Presentar opciones al usuario.
+### <a name="display-choices-to-the-user"></a>Presentar opciones al usuario
 
 El código que acaba de escribir llama al procedimiento `CreateMessage` para mostrar información de error al usuario. En este tutorial, usará un cuadro de mensaje para mostrar las diferentes versiones del registro para el usuario. Esto permite al usuario elegir si desea sobrescribir el registro con los cambios o cancelar la edición. Cuando el usuario selecciona una opción (hace clic en un botón) en el cuadro de mensaje, la respuesta se pasa al método `ProcessDialogResult`.
 
-Cree el mensaje agregando el código siguiente en el Editor de código **. Escriba este código debajo del método `UpdateDatabase`.
+Cree el mensaje agregando el código siguiente en el **Editor de código**. Escriba este código debajo del método `UpdateDatabase`:
 
 [!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
 [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
@@ -195,7 +194,7 @@ Puede comprobar el formulario para asegurarse de que se comporta de la forma pre
 
 3. En el **vista** menú, elija **Explorador de servidores**.
 
-4. En el Explorador de servidores **, expanda la conexión que utiliza la aplicación y, a continuación, expanda el nodo Tablas**.
+4. En el **Explorador de servidores**, expanda la conexión que utiliza la aplicación y, a continuación, expanda el nodo **Tablas**.
 
 5. Haga clic en el **clientes** de tabla y, a continuación, seleccione **mostrar datos de tabla**.
 

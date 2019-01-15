@@ -1,8 +1,6 @@
 ---
 title: ResumeProfile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - ResumeProfile
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b15c57766c2deadc65e0d2d7d2b41baa50bf50e5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c503c0fccf6cd78a01914647294a37e0b86f55e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669407"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947912"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 El método `ResumeProfile` reduce el contador de suspensiones y reanudaciones para el nivel de generación de perfiles especificado.  
@@ -67,7 +65,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
  *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Información de la función  
- Encabezado: declarado en *VSPerf.h*  
+ Encabezado: Declarado en *VSPerf.h*  
   
  Biblioteca de importación: *VSPerf.lib*  
   

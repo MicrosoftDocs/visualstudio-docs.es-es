@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: depurar código optimizado | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Depurar código optimizado | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -23,17 +21,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6e212129c17ec7b4fe6cb9a6808c91cb302deb3
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: MTE95
+ms.openlocfilehash: 8407f360ee35b0210a5ca6411af8720b0191a080
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52387868"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843481"
 ---
-# <a name="how-to-debug-optimized-code"></a>Cómo: Depurar código optimizado
+# <a name="how-to-debug-optimized-code"></a>Procedimiento Depuración de código optimizado
 
 > [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para obtener más información, consulte [Restablecer configuración](../ide/environment-settings.md#reset-settings).
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para obtener más información, vea [Restablecer la configuración](../ide/environment-settings.md#reset-settings).
 
 > [!NOTE]
 > La opción de compilador [/Zo (Mejorar la depuración optimizada)](/cpp/build/reference/zo-enhance-optimized-debugging) (introducida en Visual Studio Update 3) genera información de depuración más enriquecida para código optimizado (proyectos que no se compilan con la opción de compilador **/Od**. Vea [Opciones /O (Optimizar código)](/cpp/build/reference/o-options-optimize-code). Esto incluye compatibilidad mejorada para la depuración de las variables locales y las funciones insertadas.

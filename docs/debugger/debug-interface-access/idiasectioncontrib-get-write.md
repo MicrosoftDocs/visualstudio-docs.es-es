@@ -1,8 +1,6 @@
 ---
 title: Get_write | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7884177bc35b007b9c1d5a0149f78f514af3e58
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 677e42799c4098d2ba1100dd27b234855c7e7fcd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887805"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832744"
 ---
 # <a name="idiasectioncontribgetwrite"></a>IDiaSectionContrib::get_write
 Recupera una marca que indica si se puede modificar la sección.  
@@ -27,7 +25,7 @@ Recupera una marca que indica si se puede modificar la sección.
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT get_write (   
+HRESULT get_write (   
    BOOL* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_write (
  [out] Devuelve `TRUE` si la sección puede escribirse; de lo contrario, devuelve `FALSE`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

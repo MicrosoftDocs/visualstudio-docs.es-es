@@ -2,7 +2,6 @@
 title: Establece los archivos de código fuente y símbolos (.pdb) en el depurador
 ms.custom: seodec18
 ms.date: 10/08/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.Native
@@ -29,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ba2f7794b052712d35bbdadb02a0ea8551dc78b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d970d2b761b2987bc74e94eb5bfefa8f0ffc78ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060451"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892460"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Especificar archivos de código fuente y símbolos (.pdb) en el depurador de Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -156,7 +155,7 @@ Puede seleccionar opciones de símbolos adicionales en **herramientas** > **opci
   Puede limitar los comandos que *srcsrv.dll* puede ejecutar desde la aplicación *.pdb* archivo con una lista de los comandos permitidos en un archivo denominado *srcsrv.ini*. Colocar el *srcsrv.ini* archivo en la misma carpeta que *srcsrv.dll* y *devenv.exe*.  
   
   >[!IMPORTANT]
-  >Se pueden incrustar comandos arbitrarios en una aplicación *.pdb* de archivos, así que asegúrese de colocar únicamente los comandos que desea ejecutar en un *srcsrv.ini* archivo. Todo intento de ejecutar un comando no incluido en el archivo *srcsvr.ini* provocará la aparición de un cuadro de diálogo de confirmación. Para obtener más información, consulte [advertencia de seguridad: El depurador debe ejecutar un comando que no se confía](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
+  >Se pueden incrustar comandos arbitrarios en una aplicación *.pdb* de archivos, así que asegúrese de colocar únicamente los comandos que desea ejecutar en un *srcsrv.ini* archivo. Todo intento de ejecutar un comando no incluido en el archivo *srcsvr.ini* provocará la aparición de un cuadro de diálogo de confirmación. Para obtener más información, consulte [advertencia de seguridad: El depurador debe ejecutar un comando que no es de confianza](../debugger/security-warning-debugger-must-execute-untrusted-command.md) 
   >
   >No se realiza ninguna validación de los parámetros de comando, por lo que debe tener cuidado con los comandos de confianza. Por ejemplo, si se ha incluido *cmd.exe* en su *srcsrv.ini*, un usuario malintencionado podría especificar parámetros de *cmd.exe* que sería peligroso.  
   
@@ -204,7 +203,7 @@ Establecer el *web.config* archivo de la aplicación ASP.NET en modo de depuraci
 
 Puede usar el **módulos**, **pila de llamadas**, **variables locales**, **automático**, o cualquier **inspección** ventana para cargar los símbolos o cambiar las opciones de símbolos durante la depuración. Para obtener más información, consulte [familiarizarse más con cómo el depurador se asocia a la aplicación](../debugger/debugger-tips-and-tricks.md#modules_window).
 
-### <a name="use-the-modules-window"></a>Utilice la ventana módulos
+### <a name="use-the-modules-window"></a>Uso de la ventana Módulos
 
 Durante la depuración, la **módulos** ventana muestra los módulos de código, el depurador está tratando como código de usuario, o mi código y su estado de carga de símbolos. También puede supervisar el estado de la carga de símbolos, cargar los símbolos y cambiar las opciones del símbolo en el **módulos** ventana.
 

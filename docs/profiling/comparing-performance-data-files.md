@@ -1,8 +1,6 @@
 ---
 title: Comparar archivos de datos de rendimiento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, comparing profiling tools report files
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20324a3026f5c32fcc1525f1c5afcd20b1b62332
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: e75a5da65343a08f0c94be27837e70f4078192d5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690736"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893054"
 ---
 # <a name="compare-performance-data-files"></a>Comparar archivos de datos de rendimiento
 La funcionalidad de comparación de archivos de datos de las herramientas de generación de perfiles permite seleccionar dos archivos de informe (.*vsp* o .*vsps*) y generar un informe en el que se muestran las diferencias, las regresiones de rendimiento y las mejoras producidas de una sesión de generación de perfiles a otra.  
@@ -34,4 +32,4 @@ La funcionalidad de comparación de archivos de datos de las herramientas de gen
  Puede establecerse un umbral para reducir el ruido y filtrar los datos en la vista de la tabla de comparación de las filas que no han cambiado en una cantidad especificada.  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Comparación de archivos de datos de rendimiento](../profiling/how-to-compare-performance-data-files.md)
+ [Cómo: Comparar archivos de datos de rendimiento](../profiling/how-to-compare-performance-data-files.md)

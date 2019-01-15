@@ -1,8 +1,6 @@
 ---
 title: ResolveComReference (Tarea) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveComReference
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f13efe45547b657f9e07c12d8eee4160ec7b95e
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 565b69de16768175e520e06333d714865bbcc0a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152404"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893346"
 ---
 # <a name="resolvecomreference-task"></a>Tarea ResolveComReference
 Toma una lista de uno o varios nombres de biblioteca de tipos o archivos *.tlb* y resuelve esas bibliotecas de tipos en ubicaciones de disco.  
@@ -62,14 +60,14 @@ Toma una lista de uno o varios nombres de biblioteca de tipos o archivos *.tlb* 
 |`VersionMajor`|Metadatos de elementos necesarios.<br /><br /> La versión principal de la biblioteca de tipos. Si estos metadatos de elementos no se especifican, se produce un error en la tarea.|  
 |`VersionMinor`|Metadatos de elementos necesarios.<br /><br /> La versión secundaria de la biblioteca de tipos. Si estos metadatos de elementos no se especifican, se produce un error en la tarea.|  
 |`LocaleIdentifier`|Metadatos de elementos opcionales.<br /><br /> El identificador de configuración regional (o LCID) de la biblioteca de tipos. Esto se especifica como un valor de 32 bits que identifica el lenguaje humano preferido por un usuario, una región o una aplicación. Si estos metadatos de elementos no se especifican, la tarea usa un identificador de configuración regional predeterminado de "0".|  
-|`WrapperTool`|Metadatos de elementos opcionales.<br /><br /> Especifica la herramienta contenedor que se usa para generar el contenedor de ensamblado para esta biblioteca de tipos. Si estos metadatos de elementos no se especifican, la tarea usa una herramienta contenedor predeterminada de "tlbimp". Las opciones que no distinguen mayúsculas de minúsculas disponibles de typelibs son:<br /><br /> -   `Primary`: use esta herramienta contenedor cuando quiera usar un ensamblado de interoperabilidad primario que ya se ha generado para el componente COM. Cuando use esta herramienta contenedor, no especifique un directorio de salida del contenedor porque provocará un error en la tarea.<br />-   `TLBImp`: use esta herramienta contenedor cuando quiera generar un ensamblado de interoperabilidad para el componente COM.<br />-   `AXImp`: use esta herramienta contenedor cuando quiera generar un ensamblado de interoperabilidad para un control ActiveX.|  
+|`WrapperTool`|Metadatos de elementos opcionales.<br /><br /> Especifica la herramienta contenedor que se usa para generar el contenedor de ensamblado para esta biblioteca de tipos. Si estos metadatos de elementos no se especifican, la tarea usa una herramienta contenedor predeterminada de "tlbimp". Las opciones que no distinguen mayúsculas de minúsculas disponibles de typelibs son:<br /><br /> -   `Primary`: Use esta herramienta contenedor cuando quiera usar un ensamblado de interoperabilidad primario que ya se ha generado para el componente COM. Cuando use esta herramienta contenedor, no especifique un directorio de salida del contenedor porque provocará un error en la tarea.<br />-   `TLBImp`: Use esta herramienta contenedor cuando quiera generar un ensamblado de interoperabilidad para el componente COM.<br />-   `AXImp`: use esta herramienta contenedor cuando quiera generar un ensamblado de interoperabilidad para un control ActiveX.|  
   
 ## <a name="typelibfiles-item-metadata"></a>Metadatos de elementos TypeLibFiles  
  En la tabla siguiente se describen los metadatos de elementos disponibles para los elementos que se han pasado al parámetro `TypeLibFiles`.  
   
 |Metadatos|Descripción|  
 |--------------|-----------------|  
-|`WrapperTool`|Metadatos de elementos opcionales.<br /><br /> Especifica la herramienta contenedor que se usa para generar el contenedor de ensamblado para esta biblioteca de tipos. Si estos metadatos de elementos no se especifican, la tarea usa una herramienta contenedor predeterminada de "tlbimp". Las opciones que no distinguen mayúsculas de minúsculas disponibles de typelibs son:<br /><br /> -   `Primary`: use esta herramienta contenedor cuando quiera usar un ensamblado de interoperabilidad primario que ya se ha generado para el componente COM. Cuando use esta herramienta contenedor, no especifique un directorio de salida del contenedor porque provocará un error en la tarea.<br />-   `TLBImp`: use esta herramienta contenedor cuando quiera generar un ensamblado de interoperabilidad para el componente COM.<br />-   `AXImp`: use esta herramienta contenedor cuando quiera generar un ensamblado de interoperabilidad para un control ActiveX.|  
+|`WrapperTool`|Metadatos de elementos opcionales.<br /><br /> Especifica la herramienta contenedor que se usa para generar el contenedor de ensamblado para esta biblioteca de tipos. Si estos metadatos de elementos no se especifican, la tarea usa una herramienta contenedor predeterminada de "tlbimp". Las opciones que no distinguen mayúsculas de minúsculas disponibles de typelibs son:<br /><br /> -   `Primary`: Use esta herramienta contenedor cuando quiera usar un ensamblado de interoperabilidad primario que ya se ha generado para el componente COM. Cuando use esta herramienta contenedor, no especifique un directorio de salida del contenedor porque provocará un error en la tarea.<br />-   `TLBImp`: Use esta herramienta contenedor cuando quiera generar un ensamblado de interoperabilidad para el componente COM.<br />-   `AXImp`: Use esta herramienta contenedor cuando quiera generar un ensamblado de interoperabilidad para un control ActiveX.|  
   
 > [!NOTE]
 >  Cuanta más información proporcione para identificar de manera exclusiva una biblioteca de tipos, mayor será la posibilidad de que la tarea resuelva el archivo correcto en el disco.  

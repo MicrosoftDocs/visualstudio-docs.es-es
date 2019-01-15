@@ -2,7 +2,6 @@
 title: Explorador web, Entorno, Opciones (Cuadro de diálogo)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.Environment.Web Browser
@@ -24,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56bd77bb833e0fcc7e4e6e35304387d23b7c3f52
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 9bdfc727e3214292aade933abde6d6671c4b02fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389450"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955164"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Explorador web, Entorno, Opciones (Cuadro de diálogo)
 
@@ -55,7 +54,7 @@ Establece el editor que se usa para abrir una página web cuando se elige **Ver 
 
 -   **Editor de código fuente** Seleccione esta opción para ver código fuente en el [editor](../../ide/writing-code-in-the-code-and-text-editor.md).
 
--   **Editor HTML** Seleccione esta opción para ver código fuente en el [Diseñador HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Use esta selección para editar la página web en una de las dos vistas: vista de diseño o la vista de código fuente estándar basada en texto.
+-   **Editor HTML** Seleccione esta opción para ver código fuente en el [Diseñador HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Use esta selección para editar la página web en una de entre dos vistas: Vista de diseño o vista estándar de código fuente basada en texto.
 
 -   **Editor externo** Seleccione esta opción para ver código fuente en otro editor. Especifique la ruta de acceso al editor que elija, por ejemplo, Notepad.exe.
 

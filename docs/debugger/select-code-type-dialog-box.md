@@ -1,8 +1,6 @@
 ---
-title: Seleccione el cuadro de diálogo de tipo de código | Documentos de Microsoft
-ms.custom: ''
+title: Seleccione el cuadro de diálogo de tipo de código | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.selectengines
@@ -23,15 +21,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c0f291df376de5de00f1cc6a8a2f94767eccec49
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 3ef9edc87963e6c2e3a4ba6ab8eebda429a41a60
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475147"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856165"
 ---
 # <a name="select-code-type-dialog-box"></a>Seleccionar tipo de código (Cuadro de diálogo)
-Para abrir este cuadro de diálogo, abra el **adjuntar al proceso** cuadro de diálogo y, a continuación, haga clic en el **seleccione** botón.  
+Para abrir este cuadro de diálogo, abra el cuadro de diálogo **Asociar al proceso** y haga clic en el botón **Seleccionar**.  
   
  **Determinar automáticamente el tipo de código para depurar**  
  Se seleccionará el depurador adecuado en función del tipo de código que se está ejecutando.  
@@ -41,4 +39,4 @@ Para abrir este cuadro de diálogo, abra el **adjuntar al proceso** cuadro de di
   
 ## <a name="see-also"></a>Vea también  
  [Seguridad del depurador](../debugger/debugger-security.md)   
- [Adjuntar a procesos en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+ [Asociar a procesos en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: depurar un Control ActiveX | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Depurar un Control ActiveX | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vc.controls.debug
@@ -26,17 +24,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d53c2601bc8c4490f9ca43a7e213a90d66b26aac
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: MTE95
+ms.openlocfilehash: 036e50fde887786736aee1e7f8565cc9708bb2e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389298"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924793"
 ---
-# <a name="how-to-debug-an-activex-control"></a>Cómo: Depurar un control ActiveX
+# <a name="how-to-debug-an-activex-control"></a>Procedimiento Depuración de un control ActiveX
 
 > [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para obtener más información, consulte [Restablecer configuración](../ide/environment-settings.md#reset-settings).
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para obtener más información, vea [Restablecer la configuración](../ide/environment-settings.md#reset-settings).
 
 Para depurar el control ActiveX, debe especificar un contenedor (ejecutable) en el que ejecutar el control.
 

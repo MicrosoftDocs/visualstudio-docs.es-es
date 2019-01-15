@@ -1,8 +1,6 @@
 ---
 title: Depurar varios procesos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.programs
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b306bcca4ac8cc0568fc609ec25c8b335d18010
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MTE95
+ms.openlocfilehash: e5fbd6c503ef526b1b82736c22e36534bb09a8c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305655"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968584"
 ---
 # <a name="debug-multiple-processes"></a>Depurar varios procesos
 
@@ -50,7 +48,7 @@ Para empezar a depurar un proyecto de **el Explorador de soluciones** sin establ
    
 1. Seleccione **selección actual**, **proyecto de inicio único** y un archivo de proyecto o **varios proyectos de inicio**. 
 
-   Si selecciona **varios proyectos de inicio**, puede cambiar el orden de inicio y la acción que se realizará para cada proyecto: **iniciar**, **iniciar sin depurar**, o **Ninguno**.  
+   Si selecciona **varios proyectos de inicio**, puede cambiar el orden de inicio y la acción que se realizará para cada proyecto: **Iniciar**, **iniciar sin depurar**, o **ninguno**.  
    
 1. Seleccione **aplicar**, o **Aceptar** para aplicar y cerrar el cuadro de diálogo. 
 
@@ -122,7 +120,7 @@ En la tabla siguiente se describe los comportamientos de depuración de comandos
 ###  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Buscar archivos de origen y de símbolos (.pdb)  
 Para navegar por el código fuente de un proceso, el depurador necesita acceso a sus archivos de código fuente y los archivos de símbolos. Para obtener más información, vea [Especificar archivos de código fuente y símbolos (.pdb) en el depurador de Visual Studio (C#, C++, Visual Basic, F#)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
-Si no se puede obtener acceso a los archivos de un proceso, puede navegar mediante el uso de la **desensamblado** ventana. Para obtener más información, consulte [Cómo: usar la ventana Desensamblado](../debugger/how-to-use-the-disassembly-window.md).  
+Si no se puede obtener acceso a los archivos de un proceso, puede navegar mediante el uso de la **desensamblado** ventana. Para obtener más información, vea [Cómo: Uso de la ventana Desensamblado](../debugger/how-to-use-the-disassembly-window.md).  
 
 ###  <a name="BKMK_Switch_between_processes"></a> Cambiar entre procesos  
 

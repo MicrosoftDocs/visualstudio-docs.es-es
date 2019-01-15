@@ -16,13 +16,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 9c635d3a2c21d1ab84feca285c8cea8eb2aac68f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: f27689d5e3c322a539a0db5ee1f93c569cb181a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895085"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914562"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analizar los resultados de pruebas de carga en la vista Gráficos del Analizador de pruebas de carga
 
@@ -34,7 +33,7 @@ Para mostrar los resultados de las pruebas como gráficos, elija **Gráficos** e
 
 Se pueden mostrar hasta cuatro paneles de gráficos a la vez. Puede alternar entre los distintos diseños de panel usando el botón de la barra de herramientas de **diseño de panel**.
 
-Se proporcionan varios gráficos integrados. Puede utilizar estos gráficos integrados tal cual o puede personalizarlos. Además, puede crear sus propios gráficos. Para obtener más información, vea [Cómo: Agregar y eliminar contadores de los gráficos](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md) y [Cómo: Crear gráficos personalizados](../test/how-to-create-custom-graphs-in-load-test-results.md).
+Se proporcionan varios gráficos integrados. Puede utilizar estos gráficos integrados tal cual o puede personalizarlos. Además, puede crear sus propios gráficos. Para obtener más información, vea [Cómo: Agregar y eliminar contadores de los gráficos de resultados de pruebas de carga](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md) y [Cómo: Crear gráficos personalizados](../test/how-to-create-custom-graphs-in-load-test-results.md).
 
 ## <a name="built-in-graphs"></a>Gráficos integrados
 
@@ -54,7 +53,7 @@ En la tabla siguiente se muestran los gráficos integrados disponibles para anal
 > [!NOTE]
 > Sólo se pueden agregar contadores de rendimiento de tiempo de respuesta a un gráfico de tiempo de respuesta generado automáticamente.
 
- La información del contador se muestra en el gráfico y en la leyenda situada debajo de los gráficos. También puede acercar con el zoom una sección del gráfico. Para más información, consulte [Cómo: Acercar una región del gráfico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+ La información del contador se muestra en el gráfico y en la leyenda situada debajo de los gráficos. También puede acercar con el zoom una sección del gráfico. Para obtener más información, vea [Cómo: Acercar una región del gráfico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
 ## <a name="counters-displayed-in-graphs"></a>Contadores mostrados en gráficos
 
@@ -72,7 +71,7 @@ En la tabla siguiente se muestran los gráficos integrados disponibles para anal
 |Color|El color de la línea del gráfico.|
 |Intervalo|Indica el número que representa el 100 en el gráfico para ese contador. Por ejemplo, para un intervalo cuyo valor superior es 10.000, la etiqueta 100 situada en la parte superior del gráfico representa 10.000.|
 |Mín.|Indica el valor mínimo del contador en milisegundos.|
-|Max|Indica el valor máximo del contador en milisegundos.|
+|Máx.|Indica el valor máximo del contador en milisegundos.|
 |Avg.|Indica el valor medio del contador en milisegundos.|
 |Último|Muestra el valor del contador durante el intervalo de muestreo más reciente en milisegundos.|
 
@@ -80,23 +79,23 @@ En la tabla siguiente se muestran los gráficos integrados disponibles para anal
 
 |Tareas|Temas relacionados|
 |-|-|
-|**Personalizar los gráficos mediante la leyenda:** la leyenda de la vista Gráficos muestra información de cada contador de rendimiento asociado a un gráfico. Puede utilizar la leyenda para quitar los contadores de rendimiento, resaltarlos en el gráfico y personalizar las opciones de trazado.|-   [Usar la leyenda de la vista Diagramas para analizar pruebas de carga](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
-|**Mostrar contadores en los gráficos:** puede agregar diferentes tipos de datos a un gráfico de resultados de pruebas de carga si coloca contadores en el gráfico.|-   [Cómo: Agregar y eliminar contadores de los gráficos de resultados de pruebas de carga](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
-|**Acercar gráficos:** una vez terminada una prueba de carga, puede usar las barras de zoom para acercar una región del gráfico y desplazarse por ella. Al aplicar el zoom para acercar, puede examinar los datos que se generaron durante la ejecución de una prueba de carga con más detalle.|-   [Cómo: Acercar una región del gráfico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
-|**Mostrar gráficos en mosaico:** puede organizar los gráficos de resultados de pruebas de carga de varias formas. Puede colocar en mosaico hasta cuatro gráficos.||
+|**Personalizar los gráficos mediante la leyenda:** en la leyenda de la vista Gráficos se muestra información sobre los contadores de rendimiento asociados a un gráfico. Puede utilizar la leyenda para quitar los contadores de rendimiento, resaltarlos en el gráfico y personalizar las opciones de trazado.|-   [Usar la leyenda de la vista Diagramas para analizar pruebas de carga](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
+|**Mostrar contadores en los gráficos:** puede agregar diferentes tipos de datos a un gráfico de resultados de pruebas de carga mediante la inclusión de contadores en el gráfico.|-   [Cómo: Agregar y eliminar contadores de los gráficos](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
+|**Acercar en gráficos:** Una vez terminada una prueba de carga, puede usar las barras de zoom para acercar una región del gráfico y desplazarse por ella. Al aplicar el zoom para acercar, puede examinar los datos que se generaron durante la ejecución de una prueba de carga con más detalle.|-   [Cómo: Acercar una región del gráfico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
+|**Mostrar gráficos en mosaico:** Puede organizar los gráficos de resultados de pruebas de carga de varias formas. Puede colocar en mosaico hasta cuatro gráficos.||
 |**Crear gráficos personalizados:** puede diseñar gráficos que muestren información específica sobre los resultados de pruebas de carga. Los gráficos personalizados se diseñan especificando los contadores de la prueba de carga que se van a mostrar en el gráfico.|-   [Cómo: Crear gráficos personalizados](../test/how-to-create-custom-graphs-in-load-test-results.md)|
-|**Exportar los datos de los contadores de rendimiento del gráfico:** puede exportar los datos del gráfico a Microsoft Excel con el botón **Exportar datos de gráfico a Excel** de la barra de herramientas del **Analizador de pruebas de carga** mientras está en la vista **Gráficos**.||
+|**Exportar los datos de los contadores de rendimiento del gráfico:** Puede exportar los datos del gráfico a Microsoft Excel con el botón **Exportar datos de gráfico a Excel** de la barra de herramientas **Analizador de pruebas de carga** mientras está en la vista **Gráficos**.||
 
 ## <a name="related-tasks"></a>Tareas relacionadas
 
  [Analizar los errores y resultados de pruebas de carga en la vista Tablas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
 
- [Cómo: Obtener acceso a los resultados de pruebas de carga para su análisis](../test/how-to-access-load-test-results-for-analysis.md)
+ [Cómo: Acceder a los resultados de pruebas de carga para el análisis](../test/how-to-access-load-test-results-for-analysis.md)
 
  [Analizar los resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Agregar y eliminar contadores de los gráficos de resultados de pruebas de carga](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
+- [Cómo: Agregar y eliminar contadores de los gráficos](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
 - [Cómo: Crear gráficos personalizados](../test/how-to-create-custom-graphs-in-load-test-results.md)
 - [Cómo: Acercar una región del gráfico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)

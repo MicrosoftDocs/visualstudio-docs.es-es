@@ -2,7 +2,6 @@
 title: Página de opciones, Propiedades de nodo Entorno
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - automation [Visual Studio], controlling Tools Options
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e22b24889a14d49afddd3c30858814ddec663e6a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 54ce1d5fdd318ddd8c1ac4cd1a988b458898327a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672735"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914973"
 ---
 # <a name="options-page-environment-node-properties"></a>Página de opciones, Propiedades de nodo Entorno
 En este documento se describen las páginas (o colecciones de propiedades) asociadas a la categoría **Entorno**, `DTE.Properties("Environment", <Property Page>)`, del cuadro de diálogo **Opciones**. El título de cada subsección es la llamada que se usa para acceder a la colección Propiedades y, en la tabla de cada subsección, se muestran las propiedades que se encuentran en la colección.

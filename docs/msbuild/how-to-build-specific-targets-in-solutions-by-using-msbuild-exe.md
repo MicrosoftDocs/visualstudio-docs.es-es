@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: Compilar destinos específicos en soluciones mediante MSBuild.exe | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Compilar destinos específicos en soluciones mediante MSBuild.exe | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, building specific targets in a solution
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb1dc2885d64999ac9f4d12568fd7da29a783d8e
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 12405ef76955c9200fd5a83a079b7e0155f3dd09
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880661"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924012"
 ---
-# <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Cómo: Compilar destinos específicos en soluciones mediante MSBuild.exe
+# <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Procedimiento Compilar destinos específicos en soluciones mediante MSBuild.exe
 Puede usar *MSBuild.exe* para compilar destinos concretos de proyectos específicos en una solución.  
   
 #### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>Para compilar un destino concreto de un proyecto específico en una solución  

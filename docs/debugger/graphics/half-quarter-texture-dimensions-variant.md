@@ -1,8 +1,6 @@
 ---
-title: Variante de dimensiones de textura mitad / cuarto | Documentos de Microsoft
-ms.custom: ''
+title: Variante de dimensiones de textura mitad / cuarto | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 282e9bbb-51aa-4cd0-8e5c-0901268c29e5
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94820b2930bbe689c37b90443ac007b137f162d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ecd986f56185b68c8d88788b569dcd2ee0398d6f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870203"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956223"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>MItad/cuarto (Variante de dimensiones de textura)
 Reduce las dimensiones de la textura en texturas que no son objetivos de presentación.  
@@ -46,5 +44,5 @@ Reduce las dimensiones de la textura en texturas que no son objetivos de present
  Esta variante modifica el tamaño de las texturas en el tiempo de ejecución antes de llamar a `CreateTexture2D`. No recomendamos este procedimiento para el código de producción, porque las texturas a tamaño completo consumen más espacio de disco y porque el paso adicional puede aumentar significativamente los tiempos de carga en la aplicación, especialmente para las texturas comprimidas, que requieren una gran cantidad de recursos técnicos para codificar. En su lugar, recomendamos que cambie el tamaño las texturas sin conexión utilizando un editor o un procesador de imágenes que forme parte de la canalización integrada. Estos procedimientos reducen los requisitos de espacio en disco, eliminan la sobrecarga del tiempo de ejecución en la aplicación y proporcionan más tiempo de procesamiento para que pueda mantener la mejor calidad de imagen al reducir o comprimir las texturas.  
   
 ## <a name="see-also"></a>Vea también  
- [Variante de generación MIP-map](mip-map-generation-variant.md)   
+ [Variante de generación Mip-map](mip-map-generation-variant.md)   
  [Variante de compresión de textura BC](bc-texture-compression-variant.md)

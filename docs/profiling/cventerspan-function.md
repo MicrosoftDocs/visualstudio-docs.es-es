@@ -1,8 +1,6 @@
 ---
 title: CvEnterSpan (Función) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvEnterSpanVA
@@ -26,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4084ce78d1acaf5a34f95ea88046bf0860efc9ca
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6b757d02f5a0da520f4bcb929b8c4f9eff4b4419
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750121"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892590"
 ---
 # <a name="cventerspan-function"></a>Función CvEnterSpan
 Marca el principio de un nuevo intervalo.  

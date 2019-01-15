@@ -1,9 +1,7 @@
 ---
 title: Crear vistas personalizadas de objetos nativos
 description: Usar el marco Natvis para personalizar la forma en que Visual Studio muestra los tipos nativos en el depurador
-ms.custom: ''
 ms.date: 10/31/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - natvis
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 937692f11cbd642da823d6f7d13bcd90de59b388
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.openlocfilehash: d91a62971db47b78b974cc2dede77d0a47b5c851
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000866"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821197"
 ---
-# <a name="create-custom-views-of-native-objects-in-the-debugger"></a>Crear vistas personalizadas de los objetos nativos en el depurador
+# <a name="create-custom-views-of-native-objects-in-the-debugger"></a>Creación de vistas personalizadas de objetos nativos en el depurador
 
 Visual Studio *Natvis* framework personaliza la forma en que los tipos nativos aparecen en ventanas de variables del depurador, como la **variables locales** y **inspección** windows y en **DataTips**. Las visualizaciones de Natvis pueden ayudar a los tipos creados más visible durante la depuración. 
 
@@ -169,7 +167,7 @@ Los errores aparecen en la **salida** ventana.
 ##  <a name="BKMK_Syntax_reference"></a> Referencia de la sintaxis de Natvis  
 
 ###  <a name="BKMK_AutoVisualizer"></a> Elemento AutoVisualizer  
-El `AutoVisualizer` elemento es el nodo raíz de la *.natvis* y contiene el espacio de nombres `xmlns:` atributo. 
+El elemento `AutoVisualizer` es el nodo raíz del archivo *.natvis* y contiene el atributo `xmlns:` del espacio de nombres. 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>  
@@ -213,7 +211,7 @@ En el ejemplo siguiente, se utiliza la misma visualización si el objeto es un `
 </Type>  
 ```  
 
-Puede hacer referencia a parámetros de plantilla en la entrada de visualización mediante macros $t1, $t2 y así sucesivamente. Para obtener ejemplos de estas macros, vea el *.natvis* archivos incluidos con Visual Studio.  
+Puede hacer referencia a parámetros de plantilla en la entrada de visualización mediante macros $t1, $t2 y así sucesivamente. Para buscar ejemplos de estas macros, vea los archivos *.natvis* incluidos con Visual Studio.  
 
 ####  <a name="BKMK_Visualizer_type_matching"></a> Coincidencia de tipos del visualizador  
 Si no se puede validar una entrada de visualización, se usa la siguiente visualización disponible.  
@@ -421,7 +419,7 @@ Utilice el nodo `ArrayItems` para que el depurador de Visual Studio interprete e
 
 El `ArrayItems` nodo debe tener:  
 
-- Un `Size` expresión (que debe evaluarse como un número entero) para que el depurador comprenda la longitud de la matriz.  
+- Expresión `Size` (que debe evaluarse como entero) para que el depurador comprenda la longitud de la matriz.  
 - Un `ValuePointer` expresión que apunta al primer elemento (que debe ser un puntero de un tipo de elemento que no es `void*`).  
 
 El valor predeterminado del límite inferior de la matriz es 0. Para invalidar el valor, use un `LowerBound` elemento. El *.natvis* archivos incluidos con Visual Studio tienen algunos ejemplos.  
@@ -448,7 +446,7 @@ También puede especificar matrices multidimensionales. En ese caso, el depurado
 
 - `Direction` Especifica si la matriz está en orden fila principal o por columna principal. 
 - `Rank` especifica el rango de la matriz. 
-- El `Size` elemento acepta implícito `$i` parámetro, que sustituye el índice de dimensión para buscar la longitud de la matriz en esa dimensión. En el ejemplo anterior, la expresión `_M_extent.M_base[0]` debe proporcionar la longitud de la dimensión 0, `_M_extent._M_base[1]` el día 1 y así sucesivamente.  
+- El elemento `Size` acepta el parámetro `$i` implícito que sustituye al índice de dimensión para buscar la longitud de la matriz en esa dimensión. En el ejemplo anterior, la expresión `_M_extent.M_base[0]` debe proporcionar la longitud de la dimensión 0, `_M_extent._M_base[1]` el día 1 y así sucesivamente.  
 
 Le mostramos cómo un bidimensional `Concurrency::array` objeto busca en la ventana del depurador:  
 
@@ -582,7 +580,7 @@ Por ejemplo, el tipo de puntero inteligente `auto_ptr<vector<int>>` normalmente 
 
  ![Auto&#95;ptr&#60;vector&#60;int&#62; &#62; expansión predeterminada](../debugger/media/dbg_natvis_expand_expandeditem_default.png "expansión predeterminada")  
 
- Para ver los valores del vector, tiene que explorar en profundidad de dos niveles en la ventana de variables, pasar a través de la `_Myptr` miembro. Agregando un `ExpandedItem` elemento, puede eliminar el `_Myptr` variable desde la jerarquía y directamente ver los elementos de vector:  
+ Para ver los valores del vector, tiene que explorar en profundidad de dos niveles en la ventana de variables, pasar a través de la `_Myptr` miembro. Al agregar un elemento `ExpandedItem`, puede eliminar la variable `_Myptr` de la jerarquía y ver directamente los elementos de vector:  
 
 ```xml
 <Type Name="std::auto_ptr&lt;*&gt;">  
@@ -607,10 +605,10 @@ El ejemplo siguiente muestra cómo agregar propiedades de la clase base en una c
 </Type>  
 ```  
 
-El **nd** especificador de formato, que desactiva la visualización de coincidencia para la clase derivada, aquí es necesario. En caso contrario, la expresión `*(CFrameworkElement*)this` provocaría el `CPanel` visualización se vuelva a aplicar, porque las reglas de coincidencia de tipos de la visualización predeterminada se considere lo más adecuado. Utilice la **nd** especificador para indicar al depurador que use la visualización de la clase base, o la expansión predeterminada si la clase base no tiene ninguna visualización de formato.  
+Aquí es necesario usar el especificador de formato **nd** que desactiva la coincidencia de visualización para la clase derivada. En caso contrario, la expresión `*(CFrameworkElement*)this` provocaría el `CPanel` visualización se vuelva a aplicar, porque las reglas de coincidencia de tipos de la visualización predeterminada se considere lo más adecuado. Utilice la **nd** especificador para indicar al depurador que use la visualización de la clase base, o la expansión predeterminada si la clase base no tiene ninguna visualización de formato.  
 
-####  <a name="BKMK_Synthetic_Item_expansion"></a> Expansión de item sintético  
- Mientras el `ExpandedItem` elemento proporciona una vista más plana de datos mediante la eliminación de las jerarquías, los `Synthetic` nodo hace lo contrario. Permite crear un elemento secundario artificial que no es un resultado de una expresión. El elemento artificial puede tener elementos secundarios propios. En el ejemplo siguiente, la visualización del tipo `Concurrency::array` usa un nodo `Synthetic` para mostrar un mensaje de diagnóstico al usuario:  
+####  <a name="BKMK_Synthetic_Item_expansion"></a> Expansión de elemento Synthetic  
+ En los casos donde el elemento `ExpandedItem` elimina las jerarquías para proporcionar una vista de datos más plana, el nodo `Synthetic` hace lo contrario. Permite crear un elemento secundario artificial que no es un resultado de una expresión. El elemento artificial puede tener elementos secundarios propios. En el ejemplo siguiente, la visualización del tipo `Concurrency::array` usa un nodo `Synthetic` para mostrar un mensaje de diagnóstico al usuario:  
 
 ```xml
 <Type Name="Concurrency::array&lt;*,*&gt;">  
@@ -632,7 +630,7 @@ El **nd** especificador de formato, que desactiva la visualización de coinciden
  ![Concurrency:: Array con expansión de elemento sintéticas](../debugger/media/dbg_natvis_expand_synthetic.png "Concurrency:: Array con expansión de elemento sintético")  
 
 ###  <a name="BKMK_HResult"></a> Elemento HResult 
- El `HResult` elemento le permite personalizar la información que se muestra para un **HRESULT** en ventanas del depurador. El `HRValue` elemento debe contener el valor de 32 bits de la **HRESULT** que consiste en Personalizar. El `HRDescription` elemento contiene la información que se muestra en la ventana del depurador.  
+ El `HResult` elemento le permite personalizar la información que se muestra para un **HRESULT** en ventanas del depurador. El elemento `HRValue` debe contener el valor de 32 bits de **HRESULT** que se debe personalizar. El `HRDescription` elemento contiene la información que se muestra en la ventana del depurador.  
 
 ```xml
 

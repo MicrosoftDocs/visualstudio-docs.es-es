@@ -1,8 +1,6 @@
 ---
-title: Usar el atributo DebuggerTypeProxy | Documentos de Microsoft
-ms.custom: ''
+title: Usar el atributo DebuggerTypeProxy | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,16 +17,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab54c754fdc3b7ae773e71a96936a1c17c6bc5ce
-ms.sourcegitcommit: 9571742f4a808c75b1034aa72fc24b54bc50692e
-ms.translationtype: MT
+ms.openlocfilehash: b75f8ddff8aa210ef09423dc4ba12589c479f3f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49411071"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889169"
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>Utilizar el atributo DebuggerTypeProxy
 
-<xref:System.Diagnostics.DebuggerTypeProxyAttribute> especifica un proxy, o suplente, para un tipo y cambia la forma en que se muestra el tipo en las ventanas del depurador. Cuando ve una variable que tiene un proxy, el proxy reemplaza al tipo original en el **mostrar**. En la ventana de las variables del depurador se muestran sólo los miembros públicos del tipo de servidor proxy. No se muestran los miembros privados.
+<xref:System.Diagnostics.DebuggerTypeProxyAttribute> especifica un proxy, o suplente, para un tipo y cambia la forma en que se muestra el tipo en las ventanas del depurador. Cuando se ve una variable que tiene un proxy, el proxy reemplaza al tipo original en la **presentación**. En la ventana de las variables del depurador se muestran sólo los miembros públicos del tipo de servidor proxy. No se muestran los miembros privados.
 
 Este atributo se puede aplicar a:
 

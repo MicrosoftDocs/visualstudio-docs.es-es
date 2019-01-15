@@ -1,8 +1,6 @@
 ---
 title: Referencia a ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,18 +15,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16e2752181b05719969e787ccf90aaa72ae5b620
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 3353240e5b6d1a1218c4a6afc663c7778867e414
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081571"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945462"
 ---
-# <a name="clickonce-reference"></a>Referencia de ClickOnce
+# <a name="clickonce-reference"></a>Referencia a ClickOnce
 Las páginas siguientes describen la estructura de los archivos XML que se utiliza para representar las aplicaciones ClickOnce.  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md)  
+ [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)  
  Enumera y describe los elementos y atributos que componen un manifiesto de aplicación.  
   
  [Manifiesto de la implementación ClickOnce](../deployment/clickonce-deployment-manifest.md)  

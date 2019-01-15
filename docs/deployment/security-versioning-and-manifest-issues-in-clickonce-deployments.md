@@ -1,8 +1,6 @@
 ---
-title: Seguridad, control de versiones y manifiestos problemas en implementaciones ClickOnce | Microsoft Docs
-ms.custom: ''
+title: Seguridad, control de versiones y manifiestos problemas en implementaciones de ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -24,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ae835b53960ca6952b71c10a2348f707785e16
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 366e384ec01c67a1beb6b08b018365cbb3c73bf4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081750"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927147"
 ---
-# <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Seguridad, control de versiones y manifiestos problemas en implementaciones ClickOnce
+# <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Seguridad, control de versiones y manifiestos problemas en implementaciones de ClickOnce
 
 Hay una variedad de problemas con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] seguridad, versiones de las aplicaciones y manifiestos sintaxis y semántica que puede causar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación se realice correctamente.
 
@@ -51,7 +49,7 @@ Si su [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicaci
 
 Para más información e instrucciones sobre cómo cambiar la cuota de aplicaciones en línea, consulte [información general sobre la memoria caché de ClickOnce](../deployment/clickonce-cache-overview.md).
 
-## <a name="versioning-issues"></a>Problemas de versiones
+## <a name="versioning-issues"></a>Problemas de control de versiones
 
 Puede experimentar problemas si incrementa el número de versión del ensamblado para reflejar la actualización de la aplicación y asigne nombres seguros al ensamblado. Cualquier ensamblado compilado con una referencia a un ensamblado con nombre seguro debe compilarse por sí o el ensamblado intentará hacer referencia a la versión anterior. El ensamblado intentará esto porque el ensamblado está utilizando el valor de la versión anterior en su solicitud de enlace.
 
@@ -100,4 +98,4 @@ Si desea mover o copiar una aplicación, también debe actualizar el `deployment
 
 [Solución de problemas de implementaciones de ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)  
 [Aplicaciones Securw ClickOnce](../deployment/securing-clickonce-applications.md)  
-[Elegir una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
+[Selección de una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)

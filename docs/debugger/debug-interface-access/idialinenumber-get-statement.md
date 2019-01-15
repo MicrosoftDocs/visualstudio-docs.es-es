@@ -1,8 +1,6 @@
 ---
 title: Get_statement | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b1c2602f9336d5e59a9e692f13170aacf68a1c1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 8c6b16d142f5bdc83b9a16e3299c15a0c845cf2c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49947938"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949328"
 ---
 # <a name="idialinenumbergetstatement"></a>IDiaLineNumber::get_statement
 Recupera una marca que indica que esta información de línea describe el principio de una instrucción, en lugar de una expresión, en el código fuente del programa.  
@@ -27,7 +25,7 @@ Recupera una marca que indica que esta información de línea describe el princi
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT get_statement (   
+HRESULT get_statement (   
    BOOL* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_statement (
  [out] Devuelve `TRUE` si esta información de línea describe al principio de una instrucción en el código fuente del programa.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
  Las instrucciones pueden abarcar varias líneas. Este método indica si el número de línea asociado marca el principio de este tipo en una instrucción multilínea.  

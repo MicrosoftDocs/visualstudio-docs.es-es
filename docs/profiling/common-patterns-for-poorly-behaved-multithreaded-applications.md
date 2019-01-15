@@ -1,8 +1,6 @@
 ---
 title: Modelos comunes para aplicaciones multiproceso con comportamiento deficiente | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.gallery
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9929fc5acfe58d51de9142abc7addd539cf2b74e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 19f868089c5f8a6187d1bdd36adaf22162b8e2b8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34549011"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878749"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Modelos comunes para aplicaciones multiproceso con comportamiento deficiente
 
@@ -32,7 +30,7 @@ A veces, una aplicación en paralelo continúa ejecutándose en serie repetidame
 
 Como se muestra en la siguiente ilustración, el visualizador de simultaneidad también puede exponer este síntoma en la vista Uso de CPU, donde, a pesar de la presencia de varios subprocesos, la aplicación consume solo un núcleo lógico.
 
-Para obtener más información, vea "Patrón de rendimiento 1: identificar la contención de bloqueo" en el blog de Hazim Shafi [Herramientas de rendimiento en paralelo para Windows](http://go.microsoft.com/fwlink/?LinkID=160569) en el sitio web del blog de MSDN.
+Para obtener más información, vea "Performance pattern 1: Identifying lock contention" (Patrón de rendimiento 1: identificar la contención de bloqueo) en el blog de Hazim Shafi [Parallel performance tools for Windows](http://go.microsoft.com/fwlink/?LinkID=160569) (Herramientas de rendimiento en paralelo para Windows) en el sitio web de blogs de MSDN.
 
 ![Contención de bloqueo](../profiling/media/lockcontention_2.png "LockContention_2")
 

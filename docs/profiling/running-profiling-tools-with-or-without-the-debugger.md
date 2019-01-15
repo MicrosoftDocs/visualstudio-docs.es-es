@@ -1,8 +1,6 @@
 ---
 title: Ejecución de herramientas de generación de perfiles con o sin el depurador | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8d088978e166f24f624b8ae05cdeb04137d8135
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: f80f6018583194e352210057f31b741ae1b6ac2c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948717"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941419"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Ejecutar herramientas de generación de perfiles con o sin el depurador
 
@@ -55,7 +53,7 @@ También puede ver **Herramientas de diagnóstico** para destinos de depuración
 
 ### <a name="the-events-tab"></a>La pestaña Eventos
 
-Durante una sesión de depuración, en la pestaña **Eventos** de la ventana **Herramientas de diagnóstico** se enumeran los eventos de diagnóstico que se producen. Los prefijos de categoría: **Punto de interrupción**, **Archivo** y otros, le permiten examinar rápidamente la lista en busca de una categoría u omitir las categorías que no le interesan.  
+Durante una sesión de depuración, en la pestaña **Eventos** de la ventana **Herramientas de diagnóstico** se enumeran los eventos de diagnóstico que se producen. Los prefijos de categoría: **Punto de interrupción**, **Archivo** y otros, permiten examinar rápidamente la lista en busca de una categoría u omitir las categorías que no interesan.  
   
 Use la lista desplegable **Filtro** para filtrar los eventos dentro y fuera de la vista seleccionando o anulando la selección de categorías de eventos concretas. 
 
@@ -116,17 +114,17 @@ Puede guardar los informes y abrirlos desde la lista **Sesiones abiertas recient
 ## <a name="see-also"></a>Vea también
 
 A continuación hay entradas de blog y artículos de MSDN del equipo de desarrollo de diagnóstico:  
- [MSDN Magazine: Analizar el rendimiento durante la depuración en Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx)
+ [MSDN Magazine: Analyze Performance While Debugging in Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx) (Analizar el rendimiento durante la depuración en Visual Studio 2015)
   
- [MSDN Magazine: Usar IntelliTrace para diagnosticar problemas](https://msdn.microsoft.com/magazine/dn973014.aspx)
+ [MSDN Magazine: Use IntelliTrace to Diagnose Issues Faster](https://msdn.microsoft.com/magazine/dn973014.aspx) (Usar IntelliTrace para diagnosticar problemas con mayor rapidez)
   
- [Entrada de blog: Diagnosticar pérdidas del controlador de eventos con la herramienta de uso de memoria en Visual Studio 2015](https://blogs.msdn.microsoft.com/devops/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/)
+ [Entrada de blog: Diagnosing Event Handler Leaks with the Memory Usage Tool in Visual Studio 2015](https://blogs.msdn.microsoft.com/devops/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/) (Diagnosticar fugas del controlador de eventos con la herramienta de uso de memoria en Visual Studio 2015)
   
- [Vídeo: Depuración histórica con IntelliTrace en Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)
+ [Vídeo: Historical Debugging with IntelliTrace in Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716) (Depuración histórica con IntelliTrace en Microsoft Visual Studio Ultimate 2015)
   
- [Vídeo: Depurar problemas de rendimiento con Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)
+ [Vídeo: Debugging Performance Issues Using Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731) (Depurar problemas de rendimiento con Visual Studio 2015)
   
- [PerfTips: Información de rendimiento de un vistazo mientras se depura con Visual Studio](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
+ [Sugerencias de rendimiento: Performance Information at-a-glance while Debugging with Visual Studio](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/) (Información de rendimiento de un solo vistazo mientras se realiza la depuración con Visual Studio)
   
  [Ventana del depurador de Herramientas de diagnóstico en Visual Studio 2015](https://blogs.msdn.microsoft.com/devops/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015/)
   

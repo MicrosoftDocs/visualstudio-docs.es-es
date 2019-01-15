@@ -1,8 +1,6 @@
 ---
 title: 'DA0017: Alta frecuencia de paginación de memoria activa en el disco | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.17
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6128e5f98efe2a5ef29ffff407918be5d925c75b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5d7dc552119390660dcc70e8fb670918e357a2d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824353"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864782"
 ---
-# <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: Tasas altas de memoria paginada activa en disco
+# <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: Alta frecuencia de paginación de memoria activa en el disco
 
 |||  
 |-|-|  
@@ -39,7 +37,7 @@ ms.locfileid: "49824353"
 ## <a name="rule-description"></a>Descripción de la regla  
 
 > [!NOTE]
->  Esta regla informativa se desencadena cuando los niveles de paginación de memoria activa alcanzan una cantidad significativa. Cuando se produce un nivel extremadamente alto de paginación, se desencadena en su lugar la regla de advertencia [DA0014: Frecuencia extremadamente alta de paginación de memoria activa en el disco](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md).  
+>  Esta regla informativa se desencadena cuando los niveles de paginación de memoria activa alcanzan una cantidad significativa. Cuando se produce un nivel extremadamente alto de paginación, se desencadena la regla de advertencia [DA0014: Frecuencia extremadamente alta de paginación de memoria activa en el disco](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md).  
 
  La paginación excesiva en el disco puede deberse a una escasez de memoria física. Si las operaciones de paginación dominan el uso del disco físico en que reside el archivo de paginación, podrían ralentizar otras operaciones de disco orientadas a aplicaciones en el mismo disco.  
 

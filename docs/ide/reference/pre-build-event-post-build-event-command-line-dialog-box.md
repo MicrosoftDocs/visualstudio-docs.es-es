@@ -2,7 +2,6 @@
 title: Línea de comandos del evento anterior/posterior a la compilación (Cuadro de diálogo)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuildEventsBuilder
@@ -35,12 +34,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e27a7e624607009e986d301fa802fdbe1597a3c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7cc93b398791d01cc29025772a6cd086f0d0c740
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947978"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877908"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Línea de comandos del evento anterior/posterior a la compilación (Cuadro de diálogo)
 Puede escribir eventos anteriores o posteriores a la compilación para la [página Eventos de compilación, Diseñador de proyectos (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) directamente en el cuadro de edición o puede seleccionar macros anteriores o posteriores a la compilación de una lista de macros disponibles.
@@ -73,7 +72,7 @@ Puede escribir eventos anteriores o posteriores a la compilación para la [pági
 ### <a name="macros"></a>Macros
  Puede usar cualquiera de estas macros para especificar las ubicaciones de los archivos o para obtener el nombre real del archivo de entrada en el caso de las selecciones múltiples. Estas macros no distinguen entre mayúsculas y minúsculas.
 
-|Macro|Description|
+|Macro|Descripción|
 |-----------|-----------------|
 |`$(ConfigurationName)`|El nombre de la configuración del proyecto actual (por ejemplo, "Depuración").|
 |`$(OutDir)`|Ruta de acceso al directorio de archivos de salida relativo al directorio del proyecto. Se resuelve en el valor de la propiedad Directorio de salida. Incluye la barra diagonal inversa final “\\”.|

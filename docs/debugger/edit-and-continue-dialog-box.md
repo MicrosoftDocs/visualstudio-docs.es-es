@@ -1,8 +1,6 @@
 ---
 title: Cuadro de diálogo Editar y continuar | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.welcome
@@ -19,18 +17,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1556897fe3efb2e8b1a4060ff8de20ca159a68d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 3ebec5936249e0d4e9764438060c13411cec8a0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279146"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985925"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Cuadro de diálogo Editar y continuar
-(Solo nativo) Este cuadro de diálogo aparece cuando se ha editado código durante la depuración y **editar y continuar** reconoce que puede aplicar los cambios de código. Para obtener más información, consulte [editar y continuar](../debugger/edit-and-continue.md).  
+(Solo nativo) Este cuadro de diálogo aparece cuando se ha editado código durante la depuración y **Editar y continuar** reconoce que puede aplicar cambios en el código. Para obtener más información, vea [Editar y continuar](../debugger/edit-and-continue.md).  
   
- **Nunca este cuadro de diálogo volver a mostrar**  
- Si selecciona esta casilla de verificación **editar y continuar** aplicará los cambios en el código sin pedir permiso en el futuro. Puede activar esta advertencia de nuevo, vaya a la **opciones** cuadro de diálogo, abra el **depuración** carpeta, haga clic en el **editar y continuar** página y seleccionar **Invocado por comandos de depuración** y **Preguntar antes**.  
+ **No volver a mostrar este cuadro de diálogo**  
+ Si activa esta casilla, la función **Editar y continuar** aplicará los cambios en el código sin pedir permiso en el futuro. Para volver a activar esta advertencia, vaya al cuadro de diálogo **Opciones**, abra la carpeta **Depuración**, haga clic en la página **Editar y continuar** y seleccione **Invocado por comandos de depuración** y **Preguntar antes**.  
   
 ## <a name="see-also"></a>Vea también  
  [Seguridad del depurador](../debugger/debugger-security.md)   

@@ -1,8 +1,6 @@
 ---
 title: Recopilar datos de simultaneidad para un servicio utilizando la línea de comandos del generador de perfiles | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 275aacba-b2af-4d34-8931-ee30d777a256
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fb73d202251df71a165c586d02d345329b97342
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 7a782c57fcbadc40839c652b5fbd89ca3ba47179
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267370"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949542"
 ---
 # <a name="collect-concurrency-data-for-a-service-by-using-the-profiler-command-line"></a>Recopilar datos de simultaneidad para un servicio utilizando la línea de comandos del generador de perfiles
 El método de simultaneidad de herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite recopilar datos de contención de recursos y de actividad de subprocesos que muestran el uso de CPU, la contención de subprocesos, la migración de subprocesos, los retrasos de sincronización, las áreas de E/S superpuesta y otros eventos del sistema.  
@@ -27,9 +25,9 @@ El método de simultaneidad de herramientas de generación de perfiles de [!INCL
   
 |Tarea|Contenido relacionado|  
 |----------|---------------------|  
-|**Adjuntar a un servicio .NET en ejecución**|-   [Cómo: Adjuntar el generador de perfiles a un servicio .NET y recopilar datos de simultaneidad](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Adjuntar a un servicio .NET en ejecución**|-   [Cómo: Asociar el generador de perfiles a un servicio .NET para recopilar datos de simultaneidad](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md)|  
 |**Agregar datos de interacción de capas**|-   [Recopilación de datos de interacción de capas](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
-|**Adjuntar a un servicio C o C++ en ejecución**|-   [Cómo: Adjuntar el generador de perfiles a un servicio nativo y recopilar datos de simultaneidad](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Adjuntar a un servicio C o C++ en ejecución**|-   [Cómo: Asociar el generador de perfiles a un servicio nativo para recopilar datos de simultaneidad](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Tareas relacionadas  
   
@@ -45,8 +43,8 @@ El método de simultaneidad de herramientas de generación de perfiles de [!INCL
   
 |Tarea|Contenido relacionado|  
 |----------|---------------------|  
-|**Generar perfiles de aplicaciones independientes**|-   [Recopilar datos de simultaneidad](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|  
-|**Generar perfiles de aplicaciones web ASP.NET**|-   [Recopilar datos de simultaneidad](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|  
+|**Generar perfiles de aplicaciones independientes**|-   [Recopilación de datos de simultaneidad](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|  
+|**Generar perfiles de aplicaciones web ASP.NET**|-   [Recopilación de datos de simultaneidad](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|  
   
 ### <a name="analyze-concurrency-data-views-and-reports"></a>Análisis de vistas e informes de datos de simultaneidad  
  [Vistas de datos de contención de recursos](../profiling/resource-contention-data-views.md)  

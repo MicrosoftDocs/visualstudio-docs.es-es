@@ -2,7 +2,6 @@
 title: 'Tutorial: Ejemplo de LinqToXmlDataBinding'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: aedf42e8-896c-48fa-88df-7f7c9536aa69
 author: gewarren
@@ -10,18 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 824896a4e381a6a8d5c5e0935010b1cf224ed9b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a6642981934c764fc2f6d512cb19502a21ac224e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839237"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850705"
 ---
 # <a name="walkthrough-linqtoxmldatabinding-example"></a>Tutorial: Ejemplo de LinqToXmlDataBinding
 En este tutorial se describe el ejemplo LinqToXmlDataBinding y se explica parte del contenido más interesante de sus dos archivos de origen principales, *L2DBForm.xaml* y *L2DBForm.xaml.cs*.
 
 ## <a name="prerequisites"></a>Requisitos previos
- Antes de leer este tutorial, se recomienda encarecidamente compilar y ejecutar el programa LinqToXmlDataBinding, como se describe en [Cómo compilar y ejecutar el ejemplo LinqToXmlDataBinding](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md).
+ Antes de leer este tutorial, se recomienda encarecidamente compilar y ejecutar el programa LinqToXmlDataBinding tal como se explica en [Cómo: Compilar y ejecutar el ejemplo LinqToXmlDataBinding](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md).
 
 ## <a name="remarks"></a>Comentarios
  El programa LinqToXmlDataBinding es una aplicación de Windows Presentation Foundation (WPF) que consta de archivos de origen C# y XAML. Contiene un documento XML incrustado que define una lista de libros, y permite que el usuario vea, agregue, elimine y edite estas entradas. Consta de los dos archivos de origen principales siguientes:
@@ -50,4 +49,4 @@ En este tutorial se describe el ejemplo LinqToXmlDataBinding y se explica parte 
 ## <a name="see-also"></a>Vea también
 
 - [Ejemplo de enlace de datos de WPF con LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md)
-- [Cómo: compilar y ejecutar el ejemplo LinqToXmlDataBinding](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)
+- [Cómo: Compilar y ejecutar el ejemplo LinqToXmlDataBinding](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)

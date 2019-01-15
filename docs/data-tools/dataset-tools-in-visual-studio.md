@@ -2,7 +2,6 @@
 title: Herramientas de conjunto de datos
 ms.date: 11/21/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.topic: conceptual
 f1_keywords:
 - vs.data.DataSet
@@ -49,14 +48,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3a8a1ac0f2ac4e4b147fbe11dba8d88ccea4c255
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 8c48420ca03e2e6de8d240fd4f28fbe80bcbcd18
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304992"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863100"
 ---
-# <a name="dataset-tools-in-visual-studio"></a>Herramientas de conjuntos de datos en Visual Studio
+# <a name="dataset-tools-in-visual-studio"></a>Herramientas de conjunto de datos en Visual Studio
 
 > [!NOTE]
 > Los conjuntos de datos y las clases relacionadas son tecnologías heredadas de .NET desde el año 2000 temprana que permiten que las aplicaciones trabajar con datos en memoria, mientras que las aplicaciones están desconectadas de la base de datos. Son especialmente útiles para las aplicaciones que los usuarios puedan modificar los datos y conservar los cambios en la base de datos. Aunque los conjuntos de datos han demostrado para ser una tecnología muy correcta, se recomienda que las nuevas aplicaciones de .NET usar Entity Framework. Entity Framework proporciona una manera más natural para trabajar con datos tabulares como modelos de objetos y tiene una interfaz de programación más sencilla.

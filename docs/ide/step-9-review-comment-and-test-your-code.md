@@ -1,9 +1,7 @@
 ---
 title: 'Paso 9: Revisar, comentar y probar el código'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: f26f79ba-c91b-4164-b87f-679a1b231c09
 author: TerryGLee
@@ -11,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de7ca2509c8489c7a9d541135401949ef3e4b20e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4cb11810a8e87dfe2a21538b5c69c027e84f4f4b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856033"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821210"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Paso 9: Revisar, comentar y probar el código
 A continuación, se agrega un comentario al código. Un comentario es una nota que no cambia la forma de comportarse del programa. Hace que resulte más fácil entender el código a la persona que lo lee. Agregar comentarios al código es un hábito recomendable. En Visual C#, se utilizan dos barras diagonales (//) para marcar una línea como comentario. En Visual Basic, se utiliza una comilla sencilla (') para marcar una línea como comentario. Después de agregar un comentario, se prueba el programa. Es recomendable ejecutar y probar el código con frecuencia mientras trabaja en sus proyectos para que pueda detectar y corregir pronto cualquier problema, antes de que la complejidad del código aumente. Esto se denomina *prueba iterativa*.
@@ -25,7 +23,7 @@ A continuación, se agrega un comentario al código. Un comentario es una nota q
 
 - Al hacer doble clic en el botón **Show a picture** (Mostrar una imagen) en el **Diseñador de Windows Forms**, el IDE agregó automáticamente un *método* al código del programa.
 
-- Los métodos permiten organizar el código: son la manera de agrupar las partes del código.
+- Los métodos sirven para organizar el código: Son la forma de agrupar el código.
 
 - Casi siempre, un método realiza una cantidad reducida de acciones en un orden concreto; por ejemplo, el método `showButton_Click()` muestra un cuadro de diálogo y, a continuación, carga una imagen.
 
@@ -45,7 +43,7 @@ A continuación, se agrega un comentario al código. Un comentario es una nota q
 
    Las instrucciones son lo que permite que el programa haga cosas. En Visual C#, una instrucción finaliza siempre en un signo de punto y coma. En Visual Basic, el final de una línea es el final de una instrucción. (No se necesita indicar el signo de punto y coma en Visual Basic.) La instrucción anterior ordena al control <xref:System.Windows.Forms.PictureBox> que cargue el archivo que el usuario ha seleccionado con el componente **OpenFileDialog**.
 
-  ![vínculo al vídeo](../data-tools/media/playvideo.gif)Para obtener una versión en vídeo de este tema, vea el [Tutorial 1: Crear un visor de imágenes en Visual Basic (vídeo 5)](http://go.microsoft.com/fwlink/?LinkId=205216) o el [Tutorial 1: Crear un visor de imágenes en C# (vídeo 5)](http://go.microsoft.com/fwlink/?LinkId=205206). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
+  ![vínculo al vídeo](../data-tools/media/playvideo.gif)Para obtener una versión en vídeo de este tema, vea [Tutorial 1: Crear un visor de imágenes en Visual Basic - Vídeo 5](http://go.microsoft.com/fwlink/?LinkId=205216) o [Tutorial 1: Crear un visor de imágenes en C# - Vídeo 5](http://go.microsoft.com/fwlink/?LinkId=205206). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
 
 ## <a name="to-add-comments"></a>Para agregar comentarios
 
@@ -85,12 +83,12 @@ Botón **Guardar todo**
     > [!NOTE]
     >  Si no ve ninguna imagen en el cuadro de diálogo **Select a picture file** (Seleccionar un archivo de imagen), asegúrese de que el filtro **Todos los archivos (*.\*)** esté seleccionado en la lista desplegable situada en la parte inferior derecha del cuadro de diálogo.
 
-3.  Cargue una imagen y esta aparecerá en el control PictureBox. A continuación intente cambiar el tamaño del formulario arrastrando los bordes. Como el control PictureBox está acoplado dentro de un control TableLayoutPanel, que a su vez está acoplado en el formulario, el ancho del área de imagen se ajustará al ancho del formulario y el alto ocupará el 90 por ciento superior del formulario. Por este motivo hemos utilizado los contenedores <xref:System.Windows.Forms.TableLayoutPanel> y <xref:System.Windows.Forms.FlowLayoutPanel>: mantienen el tamaño del formulario correcto cuando el usuario lo modifica.
+3.  Cargue una imagen y esta aparecerá en el control PictureBox. A continuación intente cambiar el tamaño del formulario arrastrando los bordes. Como el control PictureBox está acoplado dentro de un control TableLayoutPanel, que a su vez está acoplado en el formulario, el ancho del área de imagen se ajustará al ancho del formulario y el alto ocupará el 90 por ciento superior del formulario. Por eso se han usado los contenedores <xref:System.Windows.Forms.TableLayoutPanel> y <xref:System.Windows.Forms.FlowLayoutPanel>: Mantienen el tamaño del formulario correcto cuando el usuario lo modifica.
 
      En este momento, las imágenes más grandes sobrepasan los bordes del visor de imágenes. En el paso siguiente, agregará código para que las imágenes se ajusten a la ventana.
 
 ## <a name="to-continue-or-review"></a>Para continuar o revisar
 
--   Para ir al paso siguiente del tutorial, vea [Paso 10: Escribir código para botones adicionales y una casilla](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
+-   Para ir al siguiente paso del tutorial, vea [Paso 10: Escribir código para botones adicionales y una casilla](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
 
 -   Para volver al paso anterior del tutorial, vea [Paso 8: Escribir código para el controlador de eventos del botón Mostrar una imagen](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).

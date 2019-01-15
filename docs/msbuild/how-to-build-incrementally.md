@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: Compilar de forma incremental | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Compilar de forma incremental | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, incremental builds
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9e0251d41feb5bd9c61a719d932c6fd954be947
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d1fc2b076bffd843c4882e40f1c3c18dbf161e8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932435"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883219"
 ---
-# <a name="how-to-build-incrementally"></a>Cómo: Compilar de forma incremental
+# <a name="how-to-build-incrementally"></a>Procedimiento Compilación de forma incremental
 Cuando se compila un proyecto grande, es importante que los componentes que se compilaron previamente y que aún están actualizados no se recompilen. Si todos los destinos se compilan cada vez, llevará más tiempo finalizar la compilación. Para habilitar las compilaciones incrementales (aquellas en las que solo se compilan los destinos no compilados con anterioridad o no actualizados), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) compara las marcas de tiempo de los archivos de entrada con las de los archivos de salida y determina si debe omitir, compilar o recompilar parcialmente un destino. En cambio, debe haber una asignación unívoca entre las entradas y resultados. Se pueden usar las transformaciones para permitir que los destinos identifiquen esta asignación directa. Para obtener más información sobre transformaciones, vea [Transformaciones](../msbuild/msbuild-transforms.md).  
   
 ## <a name="specify-inputs-and-outputs"></a>Definición de entradas y salidas  
@@ -60,9 +58,9 @@ Cuando se compila un proyecto grande, es importante que los componentes que se c
 ## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se usa un proyecto que compila archivos de Ayuda para un sistema de Ayuda hipotético. El proyecto convierte archivos *.txt* de origen en archivos *.content* intermedios que, después, se combinan con archivos XML de metadatos para generar el archivo *.help* definitivo que usa el sistema de ayuda. El proyecto usa las tareas hipotéticas siguientes:  
   
--   `GenerateContentFiles`: convierte archivos *.txt* en archivos *.content*.  
+-   `GenerateContentFiles`: Convierte archivos *.txt* en archivos *.content*.  
   
--   `BuildHelp`: combina archivos *.content* y archivos XML de metadatos para compilar el archivo *.help* definitivo.  
+-   `BuildHelp`: Combina archivos *.content* y archivos XML de metadatos para compilar el archivo *.help* definitivo.  
   
 
  El proyecto usa transformaciones para crear una asignación unívoca entre las entradas y los resultados en la tarea `GenerateContentFiles`. Para obtener más información, consulte [Transformaciones](../msbuild/msbuild-transforms.md). Además, el elemento `Output` se establece para que use automáticamente los resultados de la tarea `GenerateContentFiles` como entradas para la tarea `BuildHelp`.  

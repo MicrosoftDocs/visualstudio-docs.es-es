@@ -3,7 +3,6 @@ title: Análisis de datos de uso de la CPU (código administrado)
 description: Medición del rendimiento de aplicación en C# y Visual Basic con la herramienta de diagnóstico de uso de CPU
 ms.custom: mvc
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - Profiling Tools, quick start
@@ -13,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 35c6fd1ea079dd95367bcb7763787f0b06839ecb
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 68d8319082fbcbe232989814c190f9a4746c11f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626876"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899579"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Inicio rápido: Análisis de datos de uso de la CPU en Visual Studio (código administrado)
 

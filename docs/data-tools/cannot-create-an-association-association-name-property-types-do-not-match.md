@@ -1,5 +1,5 @@
 ---
-title: No se puede crear una asociación - propiedad los tipos no coinciden
+title: No se puede crear una asociación; los tipos de propiedad no coinciden.
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 97ec5a04-6e23-45a2-9226-d77ead854392
@@ -7,21 +7,20 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7f0ef5829c89a10dcf985d0815ae8144b6cb791b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
-ms.translationtype: MT
+ms.openlocfilehash: 1d0ed4ba38f93d57c8f8ab18245155dbd9013a5f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920183"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880642"
 ---
-# <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>No se puede crear una asociación &lt;nombre de la asociación&gt; -no coinciden con los tipos de propiedad
+# <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>No se puede crear una asociación &lt;nombre de asociación&gt;; los tipos de propiedad no coinciden.
 
-No se puede crear una asociación \<nombre de asociación >-no coinciden con los tipos de propiedad. Propiedades no tienen tipos coincidentes: \<nombres de propiedad >.
+No se puede crear una asociación \<nombre de asociación>; los tipos de propiedad no coinciden. Las propiedades no tienen tipos coincidentes: \<nombres de propiedades>.
 
-Las asociaciones se definen por seleccionado **propiedades de la asociación** en el **Editor de asociaciones** cuadro de diálogo. Las propiedades a ambos lados de la asociación deben ser del mismo tipo de datos.
+Las asociaciones las define el comando **Propiedades de la asociación** seleccionado en el cuadro de diálogo **Editor de asociaciones**. Las propiedades a ambos lados de la asociación deben ser del mismo tipo de datos.
 
 Las propiedades especificadas en el mensaje no tienen los mismos tipos de datos.
 
@@ -31,12 +30,12 @@ Las propiedades especificadas en el mensaje no tienen los mismos tipos de datos.
 
 2. Haga clic en **Aceptar** para descartar el cuadro de diálogo.
 
-3. Inspeccionar el **propiedades de la asociación** y seleccione propiedades que tengan el mismo tipo de datos.
+3. Examine las **Propiedades de la asociación** y seleccione propiedades que tengan el mismo tipo de datos.
 
 4. Haga clic en **Aceptar**.
 
 ## <a name="see-also"></a>Vea también
 
 - [Mensajes de Object Relational Designer](../data-tools/o-r-designer-messages.md)
-- [LINQ to SQL de las herramientas en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Cómo: crear una asociación entre clases LINQ to SQL (Object Relational Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)
+- [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Herramientas LINQ to SQL en Visual Studio)
+- [Cómo: Crear una asociación entre clases LINQ to SQL (Object Relational Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

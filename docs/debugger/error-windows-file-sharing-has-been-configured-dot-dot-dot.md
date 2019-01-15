@@ -1,8 +1,6 @@
 ---
-title: 'Error: el uso compartido de archivos de Windows se configuró... | Documentos de Microsoft'
-ms.custom: ''
+title: 'Error: Uso compartido de archivos de Windows se ha configurado... | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.remote_credentials_prohibited
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 591b051cb6164f4c8d260be3de29833154c96255
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 3bc3388bcf80d471c8dc6d45b0035f74d57abc93
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472794"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942218"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>Error: Se ha configurado el uso compartido de archivos de Windows…
 Se ha configurado el uso compartido de archivos de Windows para que se conecte al equipo remoto mediante un nombre de usuario distinto. Este proceso no es compatible con la depuración remota   
@@ -40,7 +38,7 @@ Se ha configurado el uso compartido de archivos de Windows para que se conecte a
   
      . Desconecte del equipo remoto y, a continuación, vuelva a configurar el uso compartido de archivos para conectarse al otro equipo mediante su nombre de cuenta:  
   
-    1.  En el **iniciar** menú, elija **Accesorios**y, a continuación, haga clic en **símbolo**.  
+    1.  En el menú **Inicio**, elija **Accesorios** y, a continuación, haga clic en **Símbolo del sistema**.  
   
     2.  En la línea de comandos de Windows, escriba:  
   

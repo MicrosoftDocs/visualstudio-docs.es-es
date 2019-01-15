@@ -1,8 +1,6 @@
 ---
-title: 'Error: Firewall sin autenticación | Documentos de Microsoft'
-ms.custom: ''
+title: 'Error: Firewall sin autenticación | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.firewall.noauth
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ca9603b7b678eb288b78d09f62cc8aac5774ebc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: a37fc9c1df938c1cb4817b74d2ebb1d239377823
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481465"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827239"
 ---
 # <a name="error-firewall-no-authentication"></a>Error: Firewall sin autenticación
 El firewall de conexión a Internet en el equipo remoto no está configurado para permitir la depuración remota. Para la depuración remota con `No Authentication`, msvsmon.exe se debe agregar a la lista de excepciones. Puede que también resulte necesario abrir algunos puertos IPSEC.  

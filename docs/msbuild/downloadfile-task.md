@@ -1,10 +1,8 @@
 ---
 title: DownloadFile (Tarea) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
-ms.technology: msbuild
 ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14b5daafbc4c11547515b9d77be2877eb07bcb8b
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: cb7b67c4ad567587278c805485e0b8e65ca44e94
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945349"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832929"
 ---
 # <a name="downloadfile-task"></a>DownloadFile (Tarea)
 Descarga los archivos especificados mediante el Protocolo de transferencia de hipertexto (HTTP).
@@ -47,11 +45,11 @@ Descarga los archivos especificados mediante el Protocolo de transferencia de hi
 |`DownloadedFile`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica el archivo que se ha descargado.|
 |`Retries`|Parámetro `Int32` opcional.<br /><br /> Especifica cuántas veces se intenta descargar, si se ha producido un error en todos los intentos anteriores. Se establece en cero de forma predeterminada.|  
 |`RetryDelayMilliseconds`|Parámetro `Int32` opcional.<br /><br /> Especifica el retraso en milisegundos entre los reintentos necesarios. Tiene como valor predeterminado 5000.|  
-|`SkipUnchangedFiles`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, omite la descarga de archivos sin modificar. Tiene como valor predeterminado `true`. La tarea `DownloadFile` considera que los archivos están sin modificar si tienen el mismo tamaño y la misma hora de última modificación según el servidor remoto. <br /><br />**Nota:** No todos los servidores HTTP indican la fecha de última modificación de los archivos, lo que hace que el archivo se vuelva a descargar.|
+|`SkipUnchangedFiles`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, omite la descarga de archivos sin modificar. Tiene como valor predeterminado `true`. La tarea `DownloadFile` considera que los archivos están sin modificar si tienen el mismo tamaño y la misma hora de última modificación según el servidor remoto. <br /><br />**Nota:**  No todos los servidores HTTP indican la fecha de última modificación de los archivos, lo que hace que el archivo se vuelva a descargar.|
 |`SourceUrl`|Parámetro `String` requerido.<br /><br /> Especifica la dirección URL que se va a descargar.|
   
 ## <a name="remarks"></a>Comentarios  
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension (Clase base)](../msbuild/taskextension-base-class.md).  
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Ejemplo  
  El ejemplo siguiente descarga un archivo y lo incluye en los elementos `Content` antes de compilar el proyecto.

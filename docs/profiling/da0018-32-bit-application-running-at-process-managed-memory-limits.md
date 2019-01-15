@@ -1,8 +1,6 @@
 ---
 title: 'DA0018: Aplicación de 32 bits ejecutándose con límites de memoria administrada de procesos | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.18
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 013f4b0ed19a2227d6b86fe5fca2f8343d88f554
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c3a4424394a98e9a4c4fb1d023f26ff2f1ce722e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921254"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881281"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Una aplicación de 32 bits se está ejecutando en límites de memoria administrados del proceso
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Aplicación de 32 bits ejecutándose con límites de memoria administrada de procesos
 
 |||  
 |-|-|  
@@ -56,7 +54,7 @@ ms.locfileid: "49921254"
 
 - optimizar el uso de la aplicación de recursos de memoria administrada  
 
-   O bien  
+   o bien  
 
 - tomar medidas para aligerar las restricciones arquitectónicas sobre el tamaño máximo de memoria virtual para un proceso de 32 bits  
 
