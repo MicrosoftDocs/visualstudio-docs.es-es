@@ -1,5 +1,5 @@
 ---
-title: Marcado y desmarcado de subprocesos | Microsoft Docs
+title: Procedimiento Marcar y desmarcar subprocesos | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,19 +15,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52103870207ae93731cc82969abdd377aff2d381
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 8d6f50827e81d9aecce4878df00f99e155edb04f
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851409"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227296"
 ---
-# <a name="how-to-flag-and-unflag-threads"></a>Procedimiento Marcado y desmarcado de subprocesos
+# <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>Procedimiento Marcar y desmarcar subprocesos (C#, Visual Basic, C++)
+
 Puede marcar un subproceso que desea prestar atención especial con un icono en el **subprocesos**, **pilas paralelas** (vista de subprocesos), **inspección paralela**y  **Subprocesos de GPU** windows. Este icono ayuda a distinguir estos subprocesos marcados de otros.  
   
 Los subprocesos marcados también reciben un tratamiento especial en el **subprocesos** lista el **ubicación de depuración** barra de herramientas y en las otras ventanas de depuración multiproceso. Puede mostrar todos los subprocesos o solo subprocesos marcados en el **subprocesos** lista o en las otras ventanas.
   
-### <a name="to-flag-or-unflag-a-thread"></a>Para marcar o quitar marcador de un subproceso 
+### <a name="to-flag-or-unflag-a-thread"></a>Para marcar o quitar marcador de un subproceso
   
 - En el **subprocesos** o **inspección paralela** , busque el subproceso que esté interesado y haga clic en el icono de marca para seleccionar o borrar la marca. 
 - En el **pilas paralelas** ventana, el botón secundario en un subproceso o el grupo de subprocesos y seleccione **marca / <thread>**  o **Quitar marcador / <thread>** .

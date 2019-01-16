@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fee8523f48dd94b0ebeacd87dd7d04f6fa172a91
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: fbc48fdc93feebf2f78b6d11ae2b7cc744c46f98
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898143"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269740"
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>Novedades del depurador de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -71,4 +71,4 @@ Para obtener más información sobre estas nuevas características, consulte el 
 ## <a name="see-also"></a>Vea también
 
 - [Depurar en Visual Studio](../debugger/index.md)
-- [Guía de características del depurador](../debugger/debugger-feature-tour.md)
+- [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)

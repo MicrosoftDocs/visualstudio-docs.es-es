@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b75f8ddff8aa210ef09423dc4ba12589c479f3f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: f868041449e622ddbd5cf177a0aa22771fd48498
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889169"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227543"
 ---
-# <a name="using-debuggertypeproxy-attribute"></a>Utilizar el atributo DebuggerTypeProxy
+# <a name="using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Usar el atributo DebuggerTypeProxy (C#, Visual Basic, C++ / c++ / CLI)
 
 <xref:System.Diagnostics.DebuggerTypeProxyAttribute> especifica un proxy, o suplente, para un tipo y cambia la forma en que se muestra el tipo en las ventanas del depurador. Cuando se ve una variable que tiene un proxy, el proxy reemplaza al tipo original en la **presentación**. En la ventana de las variables del depurador se muestran sólo los miembros públicos del tipo de servidor proxy. No se muestran los miembros privados.
 
@@ -33,6 +33,9 @@ Este atributo se puede aplicar a:
 - Estructuras
 - Clases
 - Ensamblados
+
+> [!NOTE]
+> Para código nativo, este atributo solo se admite en C++ / c++ / código de la CLI.
 
 Una clase de proxy de tipo debe tener un constructor que tome un argumento del tipo que el proxy reemplazará. El depurador crea una nueva instancia de la clase de proxy de tipo cada vez que necesita mostrar una variable del tipo de destino. Esto puede afectar al rendimiento. Por tanto, en el constructor no debe realizarse más trabajo del estrictamente necesario.
 

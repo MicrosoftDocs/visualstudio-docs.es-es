@@ -17,12 +17,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6b1f884018be97e49dfa9c300a2ad126fa185cf4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 3c3737174843a8b9ff77ecdfb592e1275b88c84c
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932790"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154400"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Enlace de controles de WPF a datos en Visual Studio
 
@@ -99,7 +99,7 @@ Visual Studio genera XAML que realiza lo siguiente:
 Cuando se arrastra un objeto o propiedad desde la **orígenes de datos** ventana hasta el diseñador, Visual Studio genera [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] que crea un control enlazado a datos (o enlaza un control existente al objeto o propiedad). Sin embargo, Visual Studio no genera código para rellenar el objeto con datos. Este código se debe escribir expresamente.
 
 > [!NOTE]
-> Clases personalizadas deben ser públicos y, de forma predeterminada, tiene un constructor sin parámetros. Que las clases de can'tbe anidadas que tienen un "punto" en su sintaxis. Para obtener más información, consulte [XAML y las clases personalizadas para WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
+> Clases personalizadas deben ser públicos y, de forma predeterminada, tiene un constructor sin parámetros. No pueden ser clases anidadas que contengan un "punto" en su sintaxis. Para obtener más información, consulte [XAML y las clases personalizadas para WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
 
 Visual Studio genera [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] que hace lo siguiente:
 

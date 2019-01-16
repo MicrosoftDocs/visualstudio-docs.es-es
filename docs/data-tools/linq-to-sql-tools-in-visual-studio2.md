@@ -7,15 +7,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 68b19993448ed68520f267177ca760975cd4d4aa
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0c4b3c752a2ca28c4cfb4b08b2f51f8b8fc6ac23
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066814"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894160"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Herramientas de LINQ to SQL en Visual Studio
 
@@ -42,7 +41,7 @@ Cuando se selecciona el *.dbml* de archivos, Visual Studio muestra el **Object R
 ![Diseñador LINQ to SQL](../data-tools/media/raddata-linq-to-sql-designer.png)
 
 > [!IMPORTANT]
-> El **Object Relational Designer** es un asignador relacional de objetos simple porque admite únicamente relaciones de asignación 1:1. Es decir, una clase de entidad únicamente puede tener una relación de asignación 1:1 con una tabla o vista de base de datos. No se admiten asignaciones complejas, como la asignación de una clase de entidad a una tabla combinada, utilizar Entity Framework para la asignación compleja. Además, el diseñador es un generador de código unidireccional. Esto significa que solo se reflejan en el archivo de código los cambios que se realizan en la superficie del diseñador. No se reflejan los cambios manuales en el archivo de código en el **Object Relational Designer**. Cualquier cambio que se realice manualmente en el archivo de código se sobrescribe cuando se guarda el diseñador y se vuelve a generar el código. Para obtener información acerca de cómo agregar código de usuario y extender las clases generadas por el **Object Relational Designer**, consulte [Cómo: ampliar código generado por el Object Relational Designer](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).
+> El **Object Relational Designer** es un asignador relacional de objetos simple porque admite únicamente relaciones de asignación 1:1. Es decir, una clase de entidad únicamente puede tener una relación de asignación 1:1 con una tabla o vista de base de datos. No se admiten asignaciones complejas, como la asignación de una clase de entidad a una tabla combinada, utilizar Entity Framework para la asignación compleja. Además, el diseñador es un generador de código unidireccional. Esto significa que solo se reflejan en el archivo de código los cambios que se realizan en la superficie del diseñador. No se reflejan los cambios manuales en el archivo de código en el **Object Relational Designer**. Cualquier cambio que se realice manualmente en el archivo de código se sobrescribe cuando se guarda el diseñador y se vuelve a generar el código. Para obtener información acerca de cómo agregar código de usuario y extender las clases generadas por el **Object Relational Designer**, vea [Cómo: Ampliar el código generado por Object Relational Designer](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).
 
 ## <a name="create-and-configure-the-datacontext"></a>Crear y configurar DataContext
 
@@ -50,7 +49,7 @@ Después de agregar un **clases LINQ to SQL** elemento a un proyecto y abrir el 
 
 ## <a name="create-entity-classes-that-map-to-database-tables-and-views"></a>Crear clases de entidad que se asignan a tablas de base de datos y vistas
 
-Puede crear clases de entidad asignadas a tablas y vistas arrastrando tablas de base de datos y vistas de **Explorador de servidores** o **Database Explorer** hasta la **Object Relational Designer**. Tal como se ha indicado en la sección anterior, el <xref:System.Data.Linq.DataContext> se configura con la información de conexión proporcionada por el primer elemento que se arrastra hasta la superficie de diseño. Si se agrega un elemento subsiguiente que use otra conexión a la **Object Relational Designer**, puede cambiar la conexión para el <xref:System.Data.Linq.DataContext>. Para obtener más información, vea [Cómo: Creación de LINQ to SQL asignadas a tablas y vistas (Object Relational Designer) que las clases](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
+Puede crear clases de entidad asignadas a tablas y vistas arrastrando tablas de base de datos y vistas de **Explorador de servidores** o **Database Explorer** hasta la **Object Relational Designer**. Tal como se ha indicado en la sección anterior, el <xref:System.Data.Linq.DataContext> se configura con la información de conexión proporcionada por el primer elemento que se arrastra hasta la superficie de diseño. Si se agrega un elemento subsiguiente que use otra conexión a la **Object Relational Designer**, puede cambiar la conexión para el <xref:System.Data.Linq.DataContext>. Para obtener más información, vea [Cómo: Creación de clases de LINQ to SQL asignadas a tablas y vistas (Object Relational Designer)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
 
 ## <a name="create-datacontext-methods-that-call-stored-procedures-and-functions"></a>Crear métodos de DataContext que llamen a procedimientos almacenados y funciones
 
@@ -61,7 +60,7 @@ Puede crear <xref:System.Data.Linq.DataContext> métodos que llaman (estén asig
 
 ## <a name="configure-a-datacontext-to-use-stored-procedures-to-save-data-between-entity-classes-and-a-database"></a>Configurar DataContext de modo que utilice procedimientos almacenados para guardar los datos entre las clases de entidad y una base de datos
 
-Como se ha indicado anteriormente, puede crear métodos de <xref:System.Data.Linq.DataContext> que llamen a los procedimientos almacenados y funciones. Además, también puede asignar procedimientos almacenados que se usan para el valor predeterminado LINQ al comportamiento en tiempo de ejecución de SQL, que realiza inserciones, actualizaciones y eliminaciones. Para obtener más información, vea [Cómo: Asignar procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones (Object Relational Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
+Como se ha indicado anteriormente, puede crear métodos de <xref:System.Data.Linq.DataContext> que llamen a los procedimientos almacenados y funciones. Además, también puede asignar procedimientos almacenados que se usan para el valor predeterminado LINQ al comportamiento en tiempo de ejecución de SQL, que realiza inserciones, actualizaciones y eliminaciones. Para obtener más información, vea [Cómo: Asignación de procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones (Object Relational Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
 ## <a name="inheritance-and-the-or-designer"></a>Herencia y Object Relational Designer
 

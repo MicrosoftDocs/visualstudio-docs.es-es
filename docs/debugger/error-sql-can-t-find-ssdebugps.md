@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 038b448c0ecd0b19afd7671a381eb68c9ba8cbbe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: d0c10c2ba2a5b9da700d698d553cdf49a7a0a136
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854118"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54153672"
 ---
 # <a name="error-sql-can39t-find-ssdebugps"></a>Error: SQL puede&#39;t encuentra SSDEBUGPS
 
@@ -41,5 +41,5 @@ Para copiar SSDEBUGPS.dll en el equipo con SQL Server 2005:
 2. Para registrarlo, abra un **Símbolo del sistema** y ejecute el comando siguiente:
 
     ```cmd
-    regsrv32 ssdebugps.dll
+    regsvr32 ssdebugps.dll
     ```

@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 036e50fde887786736aee1e7f8565cc9708bb2e7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 059dde50a01c1c71545a187043e60a32a9e68309
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924793"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269688"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Procedimiento Depuración de un control ActiveX
 
@@ -62,4 +62,4 @@ Para depurar el control ActiveX, debe especificar un contenedor (ejecutable) en 
 - [Prueba de propiedades y eventos con un contenedor de prueba](/cpp/mfc/testing-properties-and-events-with-test-container)
 - [Depurar COM y ActiveX](../debugger/com-and-activex-debugging.md)
 - [Depurar en Visual Studio](../debugger/index.md)
-- [Guía de características del depurador](../debugger/debugger-feature-tour.md)
+- [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)

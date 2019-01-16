@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62b0d4684a82d2642875ce767d748d7ed8259a8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 5f1f4b9604afc511dcbb1362461a2e8c11c7098e
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926864"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269779"
 ---
 # <a name="debugger-settings-and-preparation"></a>Preparación y configuración de la depuración
 En esta sección se describe la configuración de las propiedades relacionadas con el depurador y la preparación necesaria para depurar el programa con el depurador de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Si crea el programa en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mediante las plantillas de proyecto, esta configuración se habilita automáticamente en la configuración Debug.  
@@ -34,7 +34,7 @@ En esta sección se describe la configuración de las propiedades relacionadas c
  [Configuración del proyecto para el depurador](../debugger/debugger-project-settings.md)  
  Explica cómo especificar la configuración del depurador, establecer las configuraciones de depuración y de lanzamiento, y administrar símbolos y código fuente. También describe la configuración de proyecto adecuada para la configuración de depuración de C++, C#, F# y Visual Basic, al igual que los proyectos web.  
   
- [Depuración de proyectos DLL](../debugger/debugging-dll-projects.md)  
+ [Depurar proyectos DLL](../debugger/debugging-dll-projects.md)  
  Describe la configuración de proyecto recomendada para depurar proyectos de archivos DLL, cómo depurar desde un proyecto de archivo DLL, cómo depurar en modo mixto y cómo depurar una Biblioteca de controles Web de código administrado.  
   
  [Proyectos de consola](../debugger/debugging-preparation-console-projects.md)  
@@ -52,4 +52,4 @@ En esta sección se describe la configuración de las propiedades relacionadas c
 ## <a name="see-also"></a>Vea también  
  [Seguridad del depurador](../debugger/debugger-security.md)  
  [Depurar en Visual Studio](../debugger/index.md)  
- [Guía de características del depurador](../debugger/debugger-feature-tour.md)
+ [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)

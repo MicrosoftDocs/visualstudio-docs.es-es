@@ -33,18 +33,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 647749b2993b41180852aca43f99ce15844c6d71
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 8f31fa49916bf9b6d13865cd5d427670ceb33cb0
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094824"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204423"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Administración de excepciones con el depurador de Visual Studio
 
-Una excepción es una indicación de estado de error que se produce mientras se ejecuta un programa. Puede indicar al depurador qué excepciones o conjuntos de excepciones para interrumpir y en qué punto desea que el depurador se interrumpa. Cuando el depurador se interrumpe, se muestra donde se produjo la excepción. También puede agregar o eliminar las excepciones. Con una solución abierta en Visual Studio, utilice **Depurar > Windows > configuración de excepciones** para abrir el **configuración de excepciones** ventana.
+Una excepción es una indicación de estado de error que se produce mientras se ejecuta un programa. Puede indicar al depurador qué excepciones o conjuntos de excepciones para interrumpir y el momento en que desea que el depurador se interrumpa (es decir, hacer una pausa en el depurador). Cuando el depurador se interrumpe, se muestra donde se produjo la excepción. También puede agregar o eliminar las excepciones. Con una solución abierta en Visual Studio, utilice **Depurar > Windows > configuración de excepciones** para abrir el **configuración de excepciones** ventana.
 
-Proporcione controladores que respondan a las excepciones más importantes. También aprenderá a configurar el depurador para interrumpir siempre la ejecución de algunas excepciones.
+Proporcione controladores que respondan a las excepciones más importantes. Si tiene que saber cómo agregar controladores de excepciones, vea [corregir errores al escribir mejor C# código](../debugger/write-better-code-with-visual-studio.md). Además, obtenga información sobre cómo configurar el depurador para interrumpir siempre la ejecución de algunas excepciones.
 
 Cuando se produce una excepción, el depurador escribe un mensaje en la ventana **Salida**. Puede interrumpir la ejecución en los siguientes casos cuando:
 

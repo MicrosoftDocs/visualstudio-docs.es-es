@@ -1,9 +1,9 @@
 ---
 title: Usar el atributo DebuggerDisplay | Microsoft Docs
-ms.date: 08/09/2017
+ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
-- attributes [C#], debugger
+- attributes, debugger
 - DebuggerDisplay attribute
 - DebuggerDisplayAttribute class
 ms.assetid: f4eb7c76-af4e-493b-9ab6-9cb05949d9b3
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 922e9eea80344d5a02e4f54f173b374ca7faa78e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: ecbbad832ad206a0a8192d57d2642bc68a8e3902
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951685"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54228063"
 ---
-# <a name="using-the-debuggerdisplay-attribute"></a>Usar el atributo DebuggerDisplay
+# <a name="using-the-debuggerdisplay-attribute-c-visual-basic-ccli"></a>Usar el atributo DebuggerDisplay (C#, Visual Basic, C++ / c++ / CLI)
 El atributo <xref:System.Diagnostics.DebuggerDisplayAttribute> controla la forma en que se muestra un objeto, una propiedad o un campo en las ventanas de variables del depurador. Este atributo se puede aplicar a tipos, delegados, propiedades, campos y ensamblados.  
   
  El atributo `DebuggerDisplay` tiene un argumento único, que es una cadena que se va a mostrar en la columna de valor de las instancias del tipo. Esta cadena puede contener llaves (`{` y `}`). El texto encerrado entre llaves se evalúa como un campo, una propiedad o un método.  
@@ -30,6 +30,9 @@ El atributo <xref:System.Diagnostics.DebuggerDisplayAttribute> controla la forma
   
 > [!IMPORTANT]
 >  Si la casilla **Mostrar la estructura de los objetos en ventanas de variables** está seleccionada en el cuadro de diálogo **Herramientas / Opciones/ Depuración** , se omite el atributo `DebuggerDisplay` .  
+
+> [!NOTE]
+> Para código nativo, este atributo solo se admite en C++ / c++ / código de la CLI.
   
  En la tabla siguiente se muestran algunos posibles usos del atributo `DebuggerDisplay` y resultados de ejemplo.  
   

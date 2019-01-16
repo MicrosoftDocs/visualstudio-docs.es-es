@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60df60db40124e6b0bda03c3a87626a4398135a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 75ffa4075c58750834558f38dcd2e2fcacc0d358
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946989"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227322"
 ---
-# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>Establece una inspección en Variables en subprocesos en paralelo en Visual Studio
+# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Establece una inspección en Variables en subprocesos en paralelo en Visual Studio (C#, Visual Basic, C++)
 En la ventana Inspección paralela, puede mostrar simultáneamente los valores que contiene una expresión en varios subprocesos. Cada fila representa un subproceso que se ejecuta en una aplicación, pero un subproceso puede representarse en varias filas. Para ser más exactos, cada fila representa una llamada de función cuya signatura de función coincide con la función en el marco de pila actual. Puede ordenar, reordenar, quitar y agrupar los elementos incluidos en las columnas. Puede marcar, quitar el marcador, inmovilizar (suspender) y retomar (reanudar) los subprocesos. Las siguientes columnas se muestran en la ventana **Inspección paralela**:  
   
 - La columna de marcas, en la que puede marcar un subproceso al que desee prestar especial atención.  
@@ -34,7 +34,7 @@ En la ventana Inspección paralela, puede mostrar simultáneamente los valores q
 - Una columna configurable que puede mostrar el equipo, proceso, mosaico, tarea y subproceso.  
   
   > [!TIP]
-  >  A la información de tareas para mostrar del **inspección paralela** ventana, primero debe abrir el **tarea** ventana.  
+  >  Para mostrar información de la tarea en el **inspección paralela** ventana, primero debe abrir el **tarea** ventana.  
   
 - El espacio en blanco *Agregar inspección* columnas, donde puede escribir expresiones para inspeccionar.  
   
