@@ -2,7 +2,6 @@
 title: Depurar aplicaciones multiproceso | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/06/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.gputthreads
@@ -23,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea1af90ae775ed24f5cceabeca04cdc901f545f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 07710ed0188baf48a567bb3c003f174814c30094
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059683"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907896"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Depurar aplicaciones multiproceso en Visual Studio
 Un subproceso es una secuencia de instrucciones a los que el sistema operativo concede el tiempo de procesador. Cada proceso que se ejecuta en el sistema operativo contiene al menos un subproceso. Los procesos que tienen más de un subproceso se denominan multiproceso.  
@@ -41,11 +40,11 @@ El multithreading puede introducir a nuevos tipos de posibles errores. Por ejemp
 
 Visual Studio proporciona diferentes herramientas para su uso en la depuración de aplicaciones multiproceso.
 
-- Para los subprocesos, las herramientas principales para depurar subprocesos son la **subprocesos** (ventana), los marcadores de subprocesos en ventanas de código fuente, el **pilas paralelas** ventana, el **inspección paralela** ventana y el **ubicación de depuración** barra de herramientas. Para obtener información sobre la **subprocesos** ventana y **ubicación de depuración** barra de herramientas, consulte [Tutorial: Depuración mediante la ventana subprocesos](../debugger/how-to-use-the-threads-window.md). Para obtener información sobre cómo usar el **pilas paralelas** y **inspección paralela** windows, vea [empezar a depurar una aplicación multiproceso](../debugger/get-started-debugging-multithreaded-apps.md). Ambos temas muestra cómo usar los marcadores de subprocesos.
+- Para los subprocesos, las herramientas principales para depurar subprocesos son la **subprocesos** (ventana), los marcadores de subprocesos en ventanas de código fuente, el **pilas paralelas** ventana, el **inspección paralela** ventana y el **ubicación de depuración** barra de herramientas. Para obtener información sobre la **subprocesos** ventana y **ubicación de depuración** barra de herramientas, consulte [Tutorial: Depurar con la ventana Subprocesos](../debugger/how-to-use-the-threads-window.md). Para obtener información sobre cómo usar el **pilas paralelas** y **inspección paralela** windows, vea [empezar a depurar una aplicación multiproceso](../debugger/get-started-debugging-multithreaded-apps.md). Ambos temas muestra cómo usar los marcadores de subprocesos.
   
 - Para código que usa el [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) o [Runtime de simultaneidad](/cpp/parallel/concrt/concurrency-runtime/), son las herramientas principales para depurar el **pilas paralelas** (ventana), el **Inspección paralela** ventana y el **tareas** ventana, que también es compatible con JavaScript. Para empezar, vea [Tutorial: Depurar una aplicación paralela](../debugger/walkthrough-debugging-a-parallel-application.md) y [Tutorial: Depurar una aplicación C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application). 
 
-- Para depurar subprocesos en la GPU, la herramienta principal es el **subprocesos de GPU** ventana. Vea [Cómo: usar la ventana Subprocesos de GPU](../debugger/how-to-use-the-gpu-threads-window.md).  
+- Para depurar subprocesos en la GPU, la herramienta principal es el **subprocesos de GPU** ventana. Vea [Cómo: Uso de la ventana Subprocesos de GPU](../debugger/how-to-use-the-gpu-threads-window.md).  
 
 - Para los procesos, las herramientas principales son el **asociar al proceso** cuadro de diálogo, el **procesos** ventana y el **ubicación de depuración** barra de herramientas.  
   
@@ -64,16 +63,16 @@ Depurar una aplicación multiproceso que tiene una interfaz de usuario puede res
  [Depuración de varios procesos](../debugger/debug-multiple-processes.md)  
  Explica cómo depurar varios procesos.
 
- [Tutorial: Depuración mediante la ventana subprocesos](../debugger/how-to-use-the-threads-window.md).  
+ [Tutorial: Depuración con la ventana Subprocesos](../debugger/how-to-use-the-threads-window.md).  
  Tutorial que muestra cómo utilizar el **subprocesos** ventana y la **ubicación de depuración** barra de herramientas. 
 
- [Tutorial: Depurar una aplicación paralela](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ [Tutorial: Depuración de una aplicación paralela](../debugger/walkthrough-debugging-a-parallel-application.md)  
  Tutorial que muestra cómo utilizar el **pilas paralelas** y **tareas** windows.  
   
  [Cómo: cambiar a otro subproceso durante la depuración](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
  Varias formas de cambiar el contexto de depuración a otro subproceso.  
   
- [Cómo: marcar y desmarcar subprocesos](../debugger/how-to-flag-and-unflag-threads.md)  
+ [Cómo: Marcado y desmarcado de subprocesos](../debugger/how-to-flag-and-unflag-threads.md)  
  Marque los subprocesos a los que desea prestar especial atención mientras se realiza la depuración.    
   
  [Cómo: depurar en un clúster de alto rendimiento](../debugger/how-to-debug-on-a-high-performance-cluster.md)  

@@ -2,7 +2,6 @@
 title: Ver los valores de registro en el depurador | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/19/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.registers
@@ -25,16 +24,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31d9b9a9243bdf5bd39ebddf90ffa0ea32b23072
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8622bb1288324429ad346834930559d1435ac6d5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058446"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867584"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Ver los valores de registro en la ventana registros (C#, C++, Visual Basic, F#)
 
-El **registra** ventana muestra el contenido del registro durante la depuración de Visual Studio. Para obtener una introducción de alto nivel conceptos relacionados con los registros y la **registra** ventana, consulte [Fundamentos de la depuración: ventana registros](../debugger/debugging-basics-registers-window.md).
+El **registra** ventana muestra el contenido del registro durante la depuración de Visual Studio. Para obtener una introducción de alto nivel conceptos relacionados con los registros y la **registra** ventana, consulte [Fundamentos de la depuración: Ventana Registros](../debugger/debugging-basics-registers-window.md).
 
 > [!NOTE]
 > Información de registro no está disponible para la secuencia de comandos o las aplicaciones SQL.
@@ -56,5 +55,5 @@ Se pueden modificar los valores de los registros. Para obtener más información
 
 ### <a name="see-also"></a>Vea también
 
-- [Fundamentos de la depuración: ventana registros](../debugger/debugging-basics-registers-window.md)
+- [Fundamentos de la depuración: Ventana Registros](../debugger/debugging-basics-registers-window.md)
 - [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)

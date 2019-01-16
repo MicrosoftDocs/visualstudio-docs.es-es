@@ -3,7 +3,6 @@ title: Obtenga información sobre cómo depurar aplicaciones multiproceso
 description: Depurar con las ventanas Inspección paralela y pilas paralelas en Visual Studio
 ms.custom: H1HackMay2017
 ms.date: 11/16/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a6ded522a917dd7207da7731850303535e19fdb
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
-ms.translationtype: MT
+ms.openlocfilehash: e57c9516ecb4a61a66db9a27740ec110cec292f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948990"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863295"
 ---
-# <a name="get-started-debugging-multithreaded-applications"></a>Empezar a depurar aplicaciones multiproceso
+# <a name="get-started-debugging-multithreaded-applications"></a>Introducción a la depuración de aplicaciones multiproceso
 Visual Studio proporciona varias herramientas y elementos de interfaz de usuario para ayudar a depurar aplicaciones multiproceso. Este tutorial muestra cómo usar los marcadores de subprocesos, el **pilas paralelas** ventana, el **inspección paralela** ventana puntos de interrupción condicionales y los puntos de interrupción de filtro. Completar este tutorial le permitirá familiarizarse con las características de Visual Studio para depurar aplicaciones multiproceso.
 
 | | |
@@ -35,9 +34,9 @@ Visual Studio proporciona varias herramientas y elementos de interfaz de usuario
 
 Estos dos temas proporcionan información adicional sobre el uso de otras herramientas de depuración multiproceso:
 
-- Para usar el **ubicación de depuración** barra de herramientas y la **subprocesos** ventana, consulte [Tutorial: depurar una aplicación multiproceso](../debugger/how-to-use-the-threads-window.md).
+- Para usar el **ubicación de depuración** barra de herramientas y la **subprocesos** ventana, consulte [Tutorial: Depurar una aplicación multiproceso](../debugger/how-to-use-the-threads-window.md).
 
-- Para obtener un ejemplo que usa <xref:System.Threading.Tasks.Task> (código administrado) y el runtime de simultaneidad (C++), consulte [Tutorial: depurar una aplicación paralela](../debugger/walkthrough-debugging-a-parallel-application.md). Para sugerencias de depuración generales que se aplican a los tipos de aplicaciones multiproceso más, lea ese tema y ésta.
+- Para obtener un ejemplo que usa <xref:System.Threading.Tasks.Task> (código administrado) y el runtime de simultaneidad (C++), consulte [Tutorial: Depuración de una aplicación paralela](../debugger/walkthrough-debugging-a-parallel-application.md). Para sugerencias de depuración generales que se aplican a los tipos de aplicaciones multiproceso más, lea ese tema y ésta.
   
 En primer lugar, necesitará un proyecto de aplicación multiproceso. A continuación se muestra un ejemplo.  
   
@@ -47,7 +46,7 @@ En primer lugar, necesitará un proyecto de aplicación multiproceso. A continua
   
      Aparecerá el cuadro de diálogo **Nuevo proyecto** .  
   
-2.  Seleccione un idioma: **Visual C#** , **Visual C++**, o **Visual Basic**.  
+2.  Seleccione un idioma **Visual C#**, **Visual C++**, o **Visual Basic**.  
   
 3.  En **Windows Desktop**, elija **aplicación de consola**.  
   
@@ -194,7 +193,7 @@ En primer lugar, necesitará un proyecto de aplicación multiproceso. A continua
     End Class
     ```
   
-7.  En el **archivo** menú, seleccione **guardar todo**.  
+7.  En el menú **Archivo**, seleccione **Guardar todo**.  
   
 ## <a name="debug-the-multithreaded-app"></a>Depurar la aplicación multiproceso  
   
@@ -258,7 +257,7 @@ En el **pilas paralelas** ventana, puede cambiar entre una vista de subprocesos 
     Puede realizar diversas acciones de estos menús contextuales, pero para este tutorial se muestra más de estos detalles en el **inspección paralela** ventana (secciones).
 
     > [!NOTE]
-    > Para ver una lista con información sobre cada subproceso, use el **subprocesos** ventana en su lugar. Consulte [Tutorial: depurar una aplicación multiproceso](../debugger/how-to-use-the-threads-window.md).
+    > Para ver una lista con información sobre cada subproceso, use el **subprocesos** ventana en su lugar. Vea [Tutorial: Depurar una aplicación multiproceso](../debugger/how-to-use-the-threads-window.md).
 
 ### <a name="set-a-watch-on-a-variable"></a>Establece una inspección en una variable
 
@@ -276,7 +275,7 @@ En el **pilas paralelas** ventana, puede cambiar entre una vista de subprocesos 
 
 4. Haga doble clic en una de las filas en la ventana para ver las opciones disponibles.
 
-### <a name="flag-and-unflag-threads"></a>Marcar y desmarcar subprocesos  
+### <a name="flag-and-unflag-threads"></a>Marcado y desmarcado de subprocesos  
 Puede marcar los subprocesos para realizar un seguimiento de los subprocesos importantes y pasar por alto los demás subprocesos.  
   
 1. En el **inspección paralela** ventana, mantenga presionada la **MAYÚS** clave y seleccione varias filas.
@@ -345,6 +344,6 @@ Puede establecer puntos de interrupción en distintas condiciones, como el nombr
   
 ## <a name="see-also"></a>Vea también  
 [Depuración de aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)  
-[Cambio a otro subproceso durante la depuración](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
-[Cómo: utilizar la ventana Pila de paralelos](../debugger/using-the-parallel-stacks-window.md)  
-[Uso de la ventana Inspección paralela](../debugger/how-to-use-the-parallel-watch-window.md)  
+[Cómo: cambiar a otro subproceso durante la depuración](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
+[Cómo: Utilice la ventana de pila paralelo](../debugger/using-the-parallel-stacks-window.md)  
+[Cómo: Uso de la ventana Inspección paralela](../debugger/how-to-use-the-parallel-watch-window.md)  

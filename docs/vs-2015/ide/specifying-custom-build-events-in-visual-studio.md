@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -16,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f2dbb785bcc3092872763d23e968cbf699603286
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 650a0501de3f2c3728c068be13dc096361f9a54f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067108"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893557"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Especificar eventos de compilación personalizados en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +29,9 @@ Mediante la especificación de un evento de compilación personalizado, puede ej
 
  Para obtener información específica acerca del lenguaje de programación que está usando, consulte los temas siguientes:
 
--   Visual Basic:[Cómo: especificar eventos de compilación (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+-   Visual Basic--[Cómo: Especificar eventos de compilación (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
--   Visual C# y F#--[Cómo: especificar eventos de compilación (C#)](../ide/how-to-specify-build-events-csharp.md).
+-   Visual C# y F#--[Cómo: Especificar eventos de compilación (C#)](../ide/how-to-specify-build-events-csharp.md).
 
 -   Visual C++: [Especificar eventos de compilación](http://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc).
 
@@ -61,4 +60,4 @@ Mediante la especificación de un evento de compilación personalizado, puede ej
     >  `%I` en el código anterior debe ser `%%I` en scripts por lotes.
 
 ## <a name="see-also"></a>Vea también
- [Compilar y generar](../ide/compiling-and-building-in-visual-studio.md) [anterior a la compilación Event/Post-build Event Command Line Dialog Box](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [caracteres especiales de MSBuild](../msbuild/msbuild-special-characters.md) [Tutorial: compilar una aplicación](../ide/walkthrough-building-an-application.md)
+ [Compilar y generar](../ide/compiling-and-building-in-visual-studio.md) [anterior a la compilación Event/Post-build Event Command Line Dialog Box](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [caracteres especiales de MSBuild](../msbuild/msbuild-special-characters.md) [Tutorial: Compilación de una aplicación](../ide/walkthrough-building-an-application.md)

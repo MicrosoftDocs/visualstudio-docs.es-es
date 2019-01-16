@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -17,19 +16,19 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae06d11e1bdd193ebda5223c7c638c3132984147
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3d94289baf5cd7b3e4724f205dbfcb5e0ff227eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052655"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931069"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Compilar y generar en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Se puede utilizar Visual Studio para compilar aplicaciones y para crear ensamblados y programas ejecutables con frecuencia durante un ciclo de desarrollo. Al compilar el código con frecuencia, se pueden identificar antes errores en tiempo de compilación como sintaxis incorrecta, palabras clave mal escritas y errores de coincidencia de tipos. También es posible detectar y corregir errores en tiempo de ejecución, como errores lógicos y errores semánticos, si se compilan y ejecutan con frecuencia versiones de depuración del código.
 
- Cuando un proyecto o una solución se ha desarrollado totalmente y se ha depurado suficientemente, se pueden compilar sus componentes en una compilación de versión. De forma predeterminada, una compilación de versión está optimizada y diseñada para que sea menor y se ejecute más rápidamente que una versión de depuración. Para obtener más información, consulte [Tutorial: creación de una aplicación  (en inglés)](../ide/walkthrough-building-an-application.md).
+ Cuando un proyecto o una solución se ha desarrollado totalmente y se ha depurado suficientemente, se pueden compilar sus componentes en una compilación de versión. De forma predeterminada, una compilación de versión está optimizada y diseñada para que sea menor y se ejecute más rápidamente que una versión de depuración. Para obtener más información, vea [Tutorial: Compilación de una aplicación](../ide/walkthrough-building-an-application.md).
 
 ## <a name="choosing-a-build-method"></a>Elegir un método de compilación
  Se puede compilar una aplicación mediante las opciones de compilación predeterminadas en el IDE, en un símbolo del sistema o mediante Team Foundation Build. Cada una de estas opciones utiliza MSBuild como tecnología subyacente y cada enfoque tiene ventajas concretas, como se muestra en la tabla siguiente.
@@ -58,4 +57,4 @@ Se puede utilizar Visual Studio para compilar aplicaciones y para crear ensambla
 -   Mejorar el rendimiento de la compilación mediante compilaciones paralelas. Para obtener más información, vea [Compilar varios proyectos en paralelo con MSBuild](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) o la publicación del blog [Tuning C++ build parallelism](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx) (Ajustar el paralelismo de compilación de C++).
 
 ## <a name="see-also"></a>Vea también
- [Tutorial: Creación de una aplicación](../ide/walkthrough-building-an-application.md) [descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md) [descripción de las plataformas de compilación](../ide/understanding-build-platforms.md) [compilar proyectos de sitio Web (compilación)](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [Cómo: Creación y eliminación de dependencias del proyecto](../ide/how-to-create-and-remove-project-dependencies.md)
+ [Tutorial: Creación de una aplicación](../ide/walkthrough-building-an-application.md) [descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md) [descripción de las plataformas de compilación](../ide/understanding-build-platforms.md) [compilar proyectos de sitio Web (compilación)](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Cómo: Creación y eliminación de dependencias del proyecto](../ide/how-to-create-and-remove-project-dependencies.md)
