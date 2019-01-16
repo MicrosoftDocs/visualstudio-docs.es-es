@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8aa96b9204e81a2947e4eb4dca4bd7b9d5b8b341
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8f918ad272683de5316467d1027e098c1ead91a6
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904188"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154068"
 ---
 # <a name="manage-external-tools"></a>Administrar herramientas externas
 
@@ -65,8 +65,8 @@ Lo siguiente es una lista completa de los argumentos que se pueden utilizar al d
 |Nombre de destino|$(TargetName)|Nombre de archivo del elemento que se va a compilar.|
 |Extensión de destino|$(TargetExt)|Extensión del nombre de archivo del elemento que se va a compilar.|
 |Directorio binario|$(BinDir)|Ubicación final del archivo binario que se va a compilar (definida como unidad + ruta de acceso).|
-|Directorio del proyecto|$(ProjDir)|Directorio del proyecto actual (unidad + ruta de acceso).|
-|Nombre de archivo del proyecto|$(ProjFileName)|Nombre de archivo del proyecto actual (unidad + ruta de acceso + nombre de archivo).|
+|Directorio del proyecto|$(ProjectDir)|Directorio del proyecto actual (unidad + ruta de acceso).|
+|Nombre de archivo del proyecto|$(ProjectFileName)|Nombre de archivo del proyecto actual (unidad + ruta de acceso + nombre de archivo).|
 |Directorio de la solución|$(SolutionDir)|Directorio de la solución actual (unidad + ruta de acceso).|
 |Nombre de archivo de la solución|$(SolutionFileName)|Nombre de archivo de la solución actual (unidad + ruta de acceso + nombre de archivo).|
 

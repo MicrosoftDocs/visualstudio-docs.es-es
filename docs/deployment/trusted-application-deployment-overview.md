@@ -1,8 +1,6 @@
 ---
 title: Información general sobre la implementación de aplicaciones de confianza | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1be49bb015334ed37326fbe301ac2035a6f3269
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 2f63bc8b454985e368e344bda925ce306bdf3de7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848792"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934669"
 ---
-# <a name="trusted-application-deployment-overview"></a>Introducción de la implementación de aplicaciones de confianza
+# <a name="trusted-application-deployment-overview"></a>Introducción a la implementación de aplicaciones de confianza
 En este tema se proporciona información general sobre cómo implementar aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] que disponen de permisos elevados usando la tecnología de implementación de aplicaciones de confianza.  
   
  La implementación de aplicaciones de confianza, que forma parte de la tecnología de implementación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , facilita a empresas de cualquier tamaño la concesión de permisos adicionales a una aplicación administrada, de forma más segura y sin intervención del usuario. Con la implementación de aplicaciones de confianza, una empresa puede simplemente configurar un equipo cliente para que disponga de una lista de editores de confianza identificados mediante certificados Authenticode. A partir de ese momento, toda aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] firmada por uno de estos editores de confianza recibirá un mayor nivel de confianza.  
@@ -33,7 +31,7 @@ En este tema se proporciona información general sobre cómo implementar aplicac
 > [!NOTE]
 >  La implementación de aplicaciones de confianza requiere una configuración inicial del equipo de usuario. En entornos de escritorio administrados, esta configuración puede llevarse a cabo usando una directiva global. Si no es lo que desea para la aplicación, use en su lugar la elevación de permisos. Para más información, consulte [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md).  
   
-## <a name="trusted-application-deployment-basics"></a>Fundamentos de implementación de aplicaciones de confianza  
+## <a name="trusted-application-deployment-basics"></a>Aspectos básicos de la implementación de aplicaciones de confianza  
  En la tabla siguiente se muestran los objetos y los roles involucrados en la implementación de aplicaciones de confianza.  
   
 |Objeto o rol|Descripción|  
@@ -67,10 +65,10 @@ Siga estos pasos para aprovechar las ventajas de la implementación de aplicacio
   
 5. Publique la implementación de la aplicación en los equipos cliente.  
   
-### <a name="obtain-a-certificate-for-the-publisher"></a>Obtener un certificado para el publicador  
+### <a name="obtain-a-certificate-for-the-publisher"></a>Obtención de un certificado para el editor  
  Los certificados digitales son un componente básico de la autenticación Microsoft Authenticode y del sistema de seguridad. Authenticode es un elemento estándar del sistema operativo Windows. Todas las aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] deben firmarse con un certificado digital, independientemente de que participen en la implementación de aplicaciones de confianza. Para obtener una explicación completa del funcionamiento de Authenticode con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], consulte [ClickOnce y Authenticode](../deployment/clickonce-and-authenticode.md).  
   
-### <a name="add-the-publisher-to-the-trusted-publishers-store"></a>Agregar el publicador en el almacén de editores de confianza  
+### <a name="add-the-publisher-to-the-trusted-publishers-store"></a>Adición del editor al almacén de editores de confianza  
  Para que la aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] reciba un mayor nivel de confianza, deberá agregar el certificado como editor de confianza a cada uno de los equipos cliente donde vaya a ejecutarse la aplicación. La realización de esta tarea se compone de una única configuración. Una vez realizada, podrá implementar todas las aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] firmadas que desee con el certificado del editor, y todas ellas se ejecutarán con un alto nivel de confianza.  
   
  Si está implementando la aplicación en un entorno de escritorio administrado —por ejemplo, una intranet empresarial donde se ejecute el sistema operativo Windows—, podrá agregar editores de confianza al almacén de un cliente creando una nueva lista de certificados de confianza (CTL) con la directiva de grupo. Para obtener más información, consulte [Create a certificate trust list for a Group Policy object](http://go.microsoft.com/fwlink/?LinkId=102576)(Crear una lista de certificados de confianza para un objeto de directiva de grupo).  
@@ -79,22 +77,22 @@ Siga estos pasos para aprovechar las ventajas de la implementación de aplicacio
   
 -   El espacio de nombres <xref:System.Security.Cryptography?displayProperty=fullName> .  
   
--   *CertMgr.exe*, que es un componente de Internet Explorer y, por tanto, existe en Windows 98 y versiones posteriores. Para obtener más información, consulte [Certmgr.exe (herramienta de administrador de certificados)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).  
+-   *CertMgr.exe*, que es un componente de Internet Explorer y, por tanto, existe en Windows 98 y en todas las versiones posteriores. Para obtener más información, consulte [Certmgr.exe (herramienta de administrador de certificados)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).  
   
 ### <a name="create-a-clickonce-application"></a>Crear una aplicación ClickOnce  
- Una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] es una aplicación cliente [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] combinada con archivos de manifiesto que describen la aplicación y proporcionan parámetros de instalación. Puede convertir el programa en una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con el comando **Publicar** de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Otra opción es generar todos los archivos necesarios para la implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mediante las herramientas incluidas en el [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Para obtener pasos detallados sobre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación, consulte [Tutorial: implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] es una aplicación cliente [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] combinada con archivos de manifiesto que describen la aplicación y proporcionan parámetros de instalación. Puede convertir el programa en una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con el comando **Publicar** de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Otra opción es generar todos los archivos necesarios para la implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mediante las herramientas incluidas en el [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Para obtener pasos detallados sobre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación, consulte [Tutorial: Implementación manual de una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
  La implementación de aplicaciones de confianza es específica de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]y solo puede usarse con aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .  
   
-### <a name="sign-the-deployment"></a>Firmar la implementación  
- Una vez obtenido el certificado, debe usarlo para firmar la implementación. Si está implementando la aplicación mediante el asistente para publicación de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , el asistente generará automáticamente un certificado de prueba en caso de que no haya especificado ningún certificado. También puede usar la ventana Diseñador de proyectos de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para suministrar un certificado proporcionado por una entidad de certificación.  Consulte también [Cómo: publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+### <a name="sign-the-deployment"></a>Firma de la implementación  
+ Una vez obtenido el certificado, debe usarlo para firmar la implementación. Si está implementando la aplicación mediante el asistente para publicación de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , el asistente generará automáticamente un certificado de prueba en caso de que no haya especificado ningún certificado. También puede usar la ventana Diseñador de proyectos de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para suministrar un certificado proporcionado por una entidad de certificación.  Consulte también [Cómo: Publicación de una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 > [!CAUTION]
 >  No le recomendamos implementar la aplicación con un certificado de prueba.  
   
- También puede firmar la aplicación mediante el uso de la *Mage.exe* o *MageUI.exe* herramientas del SDK. Para obtener más información, consulte [Tutorial: implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Para obtener una lista completa de opciones de línea de comandos relacionadas con la firma de la implementación, consulte [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).  
+ También puede firmar la aplicación mediante las herramientas del SDK *Mage.exe* o *MageUI.exe*. Para obtener más información, vea [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Para obtener una lista completa de opciones de línea de comandos relacionadas con la firma de la implementación, consulte [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).  
   
-### <a name="publish-the-application"></a>Publicar la aplicación  
+### <a name="publish-the-application"></a>Publicación de la aplicación  
  En cuanto haya firmado los manifiestos de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , la aplicación estará lista para publicarse en la ubicación de instalación. La ubicación de instalación puede ser un servidor web, un recurso compartido de archivos o el disco local. Cuando un cliente tiene acceso al manifiesto de implementación por primera vez, el administrador de confianza debe elegir si un editor de confianza instalado ha concedido a la aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] autoridad para ejecutarse en un nivel de confianza superior. El administrador de confianza realiza esta elección comparando el certificado usado para firmar la implementación con los certificados almacenados en el almacén de editores de confianza del cliente. Si el administrador de confianza encuentra alguna coincidencia, la aplicación se ejecuta con un alto nivel de confianza.  
   
 ## <a name="trusted-application-deployment-and-permission-elevation"></a>Implementación de aplicaciones de confianza y elevación de permisos  

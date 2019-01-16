@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Crear una aplicación de datos con n niveles'
+title: 'Tutorial: Creación de una aplicación de datos de n niveles'
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,17 +13,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 71c1c8dbaf34613d07ce29fa3f5e08d8e9c6961f
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 2e224ae331b1fba42d06973777b50e84bf1f7e8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305707"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924272"
 ---
-# <a name="walkthrough-create-an-n-tier-data-application"></a>Tutorial: Crear una aplicación de datos con n niveles
+# <a name="walkthrough-create-an-n-tier-data-application"></a>Tutorial: Crear una aplicación de datos de n niveles
 Las aplicaciones de datos con *n niveles* son aplicaciones que acceden a datos y que están separadas en varias capas lógicas o *niveles*. Al separar los componentes de la aplicación en estos niveles individuales, se aumenta la facilidad de mantenimiento y la escalabilidad de la aplicación. Esto se consigue mediante una integración más sencilla de nuevas tecnologías, que se pueden aplicar a un solo nivel sin necesidad de volver a diseñar la solución completa. Una arquitectura típica con n niveles incluye un nivel de presentación, un nivel intermedio y una capa de datos. El nivel intermedio incluye normalmente una capa de acceso a datos, una capa de la lógica empresarial y componentes compartidos, tales como autenticación y validación. La capa de datos incluye una base de datos relacional. Las aplicaciones con n niveles normalmente almacenan la información confidencial en la capa de acceso a datos del nivel intermedio para aislar esa información de los usuarios finales que obtienen acceso al nivel de presentación. Para obtener más información, consulte [Introducción a las aplicaciones de datos con N niveles](../data-tools/n-tier-data-applications-overview.md).
 
 Una manera de separar los distintos niveles de una aplicación con n niveles consiste en crear proyectos independientes para cada nivel que se desee incluir en la aplicación. Los conjuntos de datos con tipo contienen una propiedad `DataSet Project` que determina en qué proyectos deben ir el conjunto de datos y el código de `TableAdapter` generados.
@@ -50,7 +49,7 @@ Durante este tutorial, realice los pasos siguientes:
 
 -   Escribir código para rellenar las tablas de datos.
 
-![vínculo a vídeo](../data-tools/media/playvideo.gif) para una versión en vídeo de este tema, consulte [vídeo sobre cómo: crear una aplicación de datos con n niveles](http://go.microsoft.com/fwlink/?LinkId=115188).
+![vínculo a vídeo](../data-tools/media/playvideo.gif) para una versión en vídeo de este tema, consulte [vídeo sobre cómo: Crear una aplicación de datos de n niveles](http://go.microsoft.com/fwlink/?LinkId=115188).
 
 ## <a name="prerequisites"></a>Requisitos previos
 En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
@@ -106,7 +105,7 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
  El paso siguiente consiste en crear un conjunto de datos con tipo. Objetos DataSet con tipo se crea con la clase de conjunto de datos (incluidos `DataTables` clases) y el `TableAdapter` clases en un solo proyecto. (Todas las clases se generan en un solo archivo.) Al separar el conjunto de datos y TableAdapters en proyectos diferentes, es la clase de conjunto de datos que se mueve a otro proyecto, dejando el `TableAdapter` clases en el proyecto original. Por lo tanto, cree el conjunto de datos en el proyecto que finalmente contendrá los TableAdapters (el proyecto DataAccessTier). Crear el conjunto de datos mediante el **Asistente para configuración de origen de datos**.
 
 > [!NOTE]
-> Debe tener acceso a la base de datos de ejemplo Northwind para crear la conexión. Para obtener información acerca de cómo configurar la base de datos de ejemplo Northwind, vea [Cómo: instalar bases de datos de ejemplo](../data-tools/installing-database-systems-tools-and-samples.md).
+> Debe tener acceso a la base de datos de ejemplo Northwind para crear la conexión. Para obtener información acerca de cómo configurar la base de datos de ejemplo Northwind, vea [Cómo: Instalar bases de datos de ejemplo](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ### <a name="to-create-the-dataset"></a>Para crear el conjunto de datos
 
@@ -124,7 +123,7 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
 
      Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.
 
-     O bien
+     o bien
 
      Seleccione **nueva conexión** para abrir el **Agregar conexión** cuadro de diálogo.
 
@@ -156,7 +155,7 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
 
 5. En el menú **Compilar**, seleccione **Compilar solución**.
 
-   El conjunto de datos y los TableAdapters se separan en los dos proyectos de biblioteca de clases. El proyecto que originalmente contenía el conjunto de datos completa (`DataAccessTier`) contiene ahora sólo los TableAdapters. El proyecto designado en el **DataSet Project** propiedad (`DataEntityTier`) contiene el conjunto de datos con tipo: *NorthwindDataSet.Dataset.Designer.vb* (o  *NorthwindDataSet.Dataset.Designer.cs*).
+   El conjunto de datos y los TableAdapters se separan en los dos proyectos de biblioteca de clases. El proyecto que originalmente contenía el conjunto de datos completa (`DataAccessTier`) contiene ahora sólo los TableAdapters. El proyecto designado en el **DataSet Project** propiedad (`DataEntityTier`) contiene el conjunto de datos con tipo: *NorthwindDataSet.Dataset.Designer.vb* (o *NorthwindDataSet.Dataset.Designer.cs*).
 
 > [!NOTE]
 > Cuando los conjuntos de datos se separan de los TableAdapters (estableciendo la propiedad **DataSet Project**), las clases de conjunto de datos parciales existentes no se trasladarán automáticamente. Las clases de conjunto de datos parciales existentes se deberán trasladar manualmente al proyecto de conjunto de datos.
