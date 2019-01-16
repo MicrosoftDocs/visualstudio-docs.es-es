@@ -1,8 +1,6 @@
 ---
 title: Get_loadaddress | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2de904777cf09e3289efae71bf585ece9c6444a8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bd52a6cba05c4757eaefcc1518d4e659c4c89643
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864301"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951266"
 ---
 # <a name="idiasessiongetloadaddress"></a>IDiaSession::get_loadAddress
 Recupera la dirección de carga del archivo ejecutable que se corresponde con los símbolos de este almacén de símbolos.  
@@ -27,7 +25,7 @@ Recupera la dirección de carga del archivo ejecutable que se corresponde con lo
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT get_loadAddress (   
+HRESULT get_loadAddress (   
    ULONGLONG* pRetVal  
 );  
 ```  

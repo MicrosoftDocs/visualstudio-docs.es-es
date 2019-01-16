@@ -11,19 +11,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb7289759499c4715fba712ed52f1664b3dc3c3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 9c4dda5fef6b2a288e5b4f78bbe6b10422ef5ea2
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890935"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154262"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnóstico de gráficos de Visual Studio
 Visual Studio*diagnóstico de gráficos* es un conjunto de herramientas para grabar y, a continuación, analizar los problemas de representación y rendimiento en aplicaciones de Direct3D. Diagnóstico de gráficos puede usarse con aplicaciones que se ejecutan localmente en su PC de Windows, en un emulador de dispositivos de Windows o en un dispositivo o equipo remoto.  
 
- El flujo de trabajo de Diagnóstico de gráficos comienza capturando un registro de cómo la aplicación usa Direct3D (en directo, mientras se ejecuta) por lo que el comportamiento se puede analizar inmediatamente, compartir o guardar para más tarde. Se pueden iniciar sesiones de captura y controlarlas manualmente desde Visual Studio o con la herramienta de captura de línea de comandos **dxcap.exe**. También se pueden iniciar sesiones de captura y controlarlas mediante programación con las API de captura de Diagnóstico de gráficos.  
+ El flujo de trabajo de Diagnóstico de gráficos comienza capturando un registro de cómo la aplicación usa Direct3D (en directo, mientras se ejecuta) por lo que el comportamiento se puede analizar inmediatamente, compartir o guardar para más tarde. Se pueden iniciar sesiones de captura y controla manualmente desde Visual Studio o con la herramienta de línea de comandos de captura **dxcap.exe**. También se pueden iniciar sesiones de captura y controlar mediante programación utilizando las API de captura de diagnóstico de gráficos.  
 
- Cuando una sesión de captura registra su contenido, puede reproducirse siempre que se quiera con el *Analizador de gráficos* de Visual Studio, volviendo a crear los fotogramas capturados con exactamente los mismos recursos y comandos de representación que usa la aplicación. Luego, con las herramientas que se ofrecen en la ventana del Analizador de gráficos, se puede analizar en detalle cualquiera de los fotogramas capturados. Estas herramientas se pueden usar para examinar cualquier llamada API, recurso, objeto de estado de la canalización, fase de canalización de Direct3D o incluso el historial completo de cualquier píxel de un fotograma capturado. Con el uso conjunto de estas herramientas, un problema de representación se puede explorar de forma intuitiva, empezando por cómo aparece en un fotograma capturado y profundizando hasta su causa principal en el código, los sombreadores o los activos gráficos de origen de la aplicación.  
+ Cuando una sesión de captura registra su contenido, puede reproducirse siempre que se quiera con el *Analizador de gráficos* de Visual Studio, volviendo a crear los fotogramas capturados con exactamente los mismos recursos y comandos de representación que usa la aplicación. A continuación, mediante las herramientas proporcionadas en la ventana del analizador de gráficos, cualquiera de los fotogramas capturados se pueden analizar en detalle. Estas herramientas se pueden usar para examinar cualquier llamada API, recurso, objeto de estado de la canalización, fase de canalización de Direct3D o incluso el historial completo de cualquier píxel de un fotograma capturado. Con el uso conjunto de estas herramientas, un problema de representación se puede explorar de forma intuitiva, empezando por cómo aparece en un fotograma capturado y profundizando hasta su causa principal en el código, los sombreadores o los activos gráficos de origen de la aplicación.  
 
  Para diagnosticar problemas de rendimiento, un fotograma capturado se puede analizar con la herramienta *Análisis de fotogramas*. Esta herramienta explora las posibles optimizaciones del rendimiento cambiando automáticamente la forma en que la aplicación usa Direct3D y realizando automáticamente pruebas comparativas de todas las variaciones. En el pasado, tendría que crear y realizar manualmente pruebas comparativas de este tipo de cambios solo para averiguar cuáles marcaban la diferencia. Con Análisis de fotogramas, solo es necesario que realice los cambios que ya sabe que se amortizarán.  
 

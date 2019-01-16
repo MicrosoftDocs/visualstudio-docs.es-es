@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e3124f98855f5f7f303aff0d9e8b2608abbbeba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: f2ee235f5daf0c18bd30fcf804c0672427dc9624
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871322"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227348"
 ---
-# <a name="how-to-use-the-gpu-threads-window"></a>Procedimiento Uso de la ventana Subprocesos de GPU
+# <a name="how-to-use-the-gpu-threads-window-c"></a>Procedimiento Utilice la ventana de subprocesos GPU (C++)
 Desde la ventana Subprocesos de GPU, puede examinar y trabajar con los subprocesos que se ejecutan en la GPU de la aplicación que esté depurando. Para obtener más información acerca de las aplicaciones que se ejecutan en la GPU, vea [Introducción a C++ AMP](/cpp/parallel/amp/cpp-amp-overview).  
   
  La ventana Subprocesos de GPU contiene una tabla en la que cada fila representa un grupo de subprocesos de la GPU que tienen los mismos valores en todas las columnas. Puede ordenar, reordenar, quitar y agrupar los elementos incluidos en las columnas. Puede marcar, quitar el marcador, inmovilizar (suspender) y retomar (reanudar) los subprocesos desde la ventana Subprocesos de GPU. Las columnas siguientes se muestran en la ventana Subprocesos de GPU:  

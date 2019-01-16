@@ -8,19 +8,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 998b94a13f3650446f9f791ffc29c7c863f9df89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 0022d94d8bb786340dba5d2d412bbbd46585e35e
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968636"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227712"
 ---
-# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio"></a>Inspeccionar la aplicación con depuración en Visual Studio de historial de IntelliTrace
+# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Inspeccionar la aplicación con depuración en Visual Studio de historial de IntelliTrace (C#, Visual Basic, C++)
+
 Puede usar [depuración histórica](../debugger/historical-debugging.md) para desplazarse hacia atrás y hacia delante a través de la ejecución de la aplicación y comprobar su estado.  
   
 Puede usar IntelliTrace en Visual Studio Enterprise, pero no en las ediciones Professional o Community.  
   
-## <a name="navigate-your-code-with-historical-debugging"></a>Navegar por el código con depuración histórica  
+## <a name="navigate-your-code-with-historical-debugging"></a>Navegar por el código con depuración histórica
+
  Comencemos con un sencillo programa que tiene un error. En una aplicación de consola C#, agregue el código siguiente:  
   
 ```csharp  

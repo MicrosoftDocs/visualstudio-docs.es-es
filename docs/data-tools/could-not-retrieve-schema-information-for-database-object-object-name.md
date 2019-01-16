@@ -9,18 +9,16 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4236085ffa0cacade86acfd4ca68caf38e54f165
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 915475b9f20b57871a8228ebde022d0b6ce8f3b6
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885602"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204273"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>No se ha podido recuperar información de esquema del objeto de base de datos \<nombre de objeto>
 
 Este mensaje suele aparecer cuando un objeto del **Explorador de servidores** o **Explorador de bases de datos** se copia en el Portapapeles, se elimina de la base de datos y después se pega en el diseñador. Dado que ya no existe el objeto de base de datos, aparece este mensaje.
-
-Para corregir este error, seleccione **Aceptar** para descartar el cuadro de diálogo.
 
 ## <a name="see-also"></a>Vea también
 

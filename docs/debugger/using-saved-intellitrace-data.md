@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ffcb30827906438a848051226d59794a7d5641a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c348bc105d997e07dcbc6ee373c2952e16c572cf
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836915"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227790"
 ---
-# <a name="using-saved-intellitrace-data"></a>Uso de datos de IntelliTrace guardados
+# <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Uso de los datos de IntelliTrace guardados (C#, Visual Basic, C++)
+
 Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) para ir a puntos concretos de la ejecución de la aplicación. Este archivo puede contener eventos de rendimiento, excepciones, subprocesos, pasos de prueba, módulos y otra información del sistema que IntelliTrace recopila mientras se ejecuta la aplicación.
 
  Asegúrese de que tiene:

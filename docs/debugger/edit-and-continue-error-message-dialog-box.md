@@ -3,7 +3,7 @@ title: Editar y continuar en el cuadro de diálogo de mensaje de error | Microso
 ms.date: 10/15/2018
 ms.topic: reference
 f1_keywords:
-- vs.debug.ENC.SupportedButNotAvaiable
+- vs.debug.ENC.SupportedButNotAvailable
 - vs.debug.ENC.CannotEditWhileException
 dev_langs:
 - CSharp
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9eddfbcc709048469b06702d9a685d43a7188758
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 69305bdd1791d428c11910d5fc6540f13ad6a137
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828675"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154042"
 ---
 # <a name="edit-and-continue-error-message"></a>Editar y continuar el mensaje de error 
 

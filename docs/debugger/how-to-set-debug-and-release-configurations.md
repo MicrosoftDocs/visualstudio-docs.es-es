@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b33f25b1049afcf71a67af02927e25887d1621
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 339fb8b46a72f44428e9a3b177e194dfb484bbb3
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837763"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204352"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Establecer configuraciones Debug y Release en Visual Studio
 
@@ -44,7 +44,7 @@ Los proyectos de Visual Studio tienen configuraciones independientes para el lan
 
 En la configuración de depuración, el programa se compile con información de depuración simbólica completa y sin optimización. La optimización complica la depuración, ya que la relación entre el código fuente y las instrucciones generadas es más compleja.
 
-La configuración de lanzamiento del programa no tiene ninguna información de depuración simbólica y está totalmente optimizada. La información de depuración se puede generar en archivos PDB, [en función de las opciones del compilador](#BKMK_symbols_release) utilizadas. Creación de los archivos .pdb puede ser útil si luego necesita depurar la versión de lanzamiento.
+La configuración de lanzamiento del programa no tiene ninguna información de depuración simbólica y está totalmente optimizada. Para código administrado y código de C++, se puede generar información de depuración en los archivos .pdb, [según las opciones del compilador](#BKMK_symbols_release) que se usan. Creación de los archivos .pdb puede ser útil si luego necesita depurar la versión de lanzamiento.
 
 Para más información sobre las configuraciones de compilación, vea [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md).
 

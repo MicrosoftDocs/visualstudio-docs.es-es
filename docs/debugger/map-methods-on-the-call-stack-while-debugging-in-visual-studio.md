@@ -1,8 +1,6 @@
 ---
 title: Crear un mapa visual de la pila de llamadas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/26/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.debugwithcodemaps
@@ -31,18 +29,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ede973d96ffe21fb9406bb471400ffa8e2b69251
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: b8a00ca75135c2c2f29ef04d428e028e31054480
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389583"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960844"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging"></a>Crear un mapa visual de la pila de llamadas durante la depuración 
 
 Cree un mapa de código para hacer un seguimiento visual de la pila de llamadas durante la depuración. Puede hacer anotaciones en el mapa para llevar a cabo el seguimiento de lo que hace el código y poder concentrarse en encontrar errores.
 
-Para ver un tutorial, vea este vídeo: [vídeo: depurar visualmente con la integración del depurador del mapa de código (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+Para ver un tutorial, vea este vídeo: [Vídeo: Depurar visualmente con la integración del depurador del mapa de código (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
 
 Para obtener detalles de los comandos y acciones que puede utilizar con mapas de código, vea [examinar y reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md).
 

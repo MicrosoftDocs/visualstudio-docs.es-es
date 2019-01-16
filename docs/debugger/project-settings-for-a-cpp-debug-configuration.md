@@ -2,7 +2,6 @@
 title: Configuración del proyecto para una configuración de depuración de C++
 ms.custom: seodec18
 ms.date: 11/26/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCDebugSettings.WebBrowser.DebuggerType
@@ -113,15 +112,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 951b46bfc6ef0910731dfe76cc9913f2c4a423ad
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4351553d5df55dd5dceeffe542ff542a9487d6e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066907"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957915"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Configuración del proyecto para una configuración de depuración de C++
-Puede cambiar la configuración del proyecto para una configuración de depuración de C o Visual C++ en el **páginas de propiedades** cuadro de diálogo, como se describe en [Cómo: debug y release configuraciones](../debugger/how-to-set-debug-and-release-configurations.md). En las siguientes tablas se muestra dónde encontrar los valores relacionados con el depurador en el cuadro de diálogo **Páginas de propiedades**.  
+Puede cambiar la configuración del proyecto para una configuración de depuración de C o Visual C++ en el **páginas de propiedades** cuadro de diálogo, como se describe en [Cómo: Establecimiento de configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md). En las siguientes tablas se muestra dónde encontrar los valores relacionados con el depurador en el cuadro de diálogo **Páginas de propiedades**.  
   
 > [!NOTE]
 >  La configuración de depuración del proyecto en el **propiedades de configuración/depuración** categoría son diferentes para las aplicaciones UWP y para los componentes que están escritos en C++. Consulte [iniciar una sesión de depuración (VB, C#, C++ y XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).  

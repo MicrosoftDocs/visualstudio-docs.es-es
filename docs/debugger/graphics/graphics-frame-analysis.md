@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92273fab869c076dbf0949ef636dc669f892ec0a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 4aced0df16791e44c7fd8be67ccc22343b1272fa
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875646"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154381"
 ---
 # <a name="graphics-frame-analysis"></a>Análisis de fotograma de gráficos
 Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Visual Studio para analizar y optimizar el rendimiento de la representación de su juego o aplicación Direct3D.  

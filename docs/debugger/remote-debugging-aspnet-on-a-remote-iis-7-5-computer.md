@@ -4,7 +4,6 @@ ms.custom:
 - remotedebugging
 - seodec18
 ms.date: 05/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 9cb339b5-3caf-4755-aad1-4a5da54b2a23
 author: mikejo5000
@@ -12,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 336f34c1229e07eb3734f9d278070e5994957d16
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 621e7c44592eb94adbc02644af62920b8b95aa24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065565"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829201"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Depuración remota de ASP.NET en un equipo remoto de IIS
 Para depurar una aplicación ASP.NET que se ha implementado en IIS, instalar y ejecutar las herramientas remotas en el equipo donde ha implementado la aplicación y, a continuación, adjunte a su aplicación en ejecución desde Visual Studio.
@@ -49,7 +48,7 @@ En este artículo incluye pasos sobre cómo configurar una configuración básic
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Creación de ASP.NET 4.5.2 aplicación en el equipo de Visual Studio
   
-1. Cree una nueva aplicación de MVC ASP.NET (**Archivo > Nuevo > proyecto**, a continuación, seleccione <strong>Visual C# > Web > aplicación Web ASP.NET. En la sección de plantillas ASP.NET 4.5.2 , seleccione MVC</strong>. Asegúrese de que **habilitar la compatibilidad con Docker** no está seleccionada y que **autenticación** está establecido en **sin autenticación**. Denomine el proyecto **MyASPApp**.)
+1. Cree una nueva aplicación de MVC ASP.NET (**Archivo > Nuevo > proyecto**, a continuación, seleccione <strong>Visual C# > Web > aplicación Web ASP.NET. En el **ASP.NET 4.5.2</strong> sección plantillas, seleccione **MVC**. Asegúrese de que **habilitar la compatibilidad con Docker** no está seleccionada y que **autenticación** está establecido en **sin autenticación**. Denomine el proyecto **MyASPApp**.)
 
 2. Abra el archivo HomeController.cs y establezca un punto de interrupción en el método `About()` .
 

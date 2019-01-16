@@ -14,16 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87d74eb960d4e445e457744fd0325e7beb15262e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 530ed2144127e7934d02f5ccc0310d9542671507
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927160"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270065"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Obtenga información sobre sugerencias de productividad y trucos del depurador de Visual Studio
 
-Lea este tema para aprender algunas sugerencias de productividad y trucos para el depurador de Visual Studio. Para conocer las características básicas del depurador, vea [Guía de características del depurador](../debugger/debugger-feature-tour.md). En este tema, trataremos algunas áreas que no están incluidos en la Guía de características.
+Lea este tema para aprender algunas sugerencias de productividad y trucos para el depurador de Visual Studio. Para conocer las características básicas del depurador, vea [primero analicemos el depurador](../debugger/debugger-feature-tour.md). En este tema, trataremos algunas áreas que no están incluidos en la Guía de características.
 
 ## <a name="pin-data-tips"></a>Sugerencias de datos de PIN
 

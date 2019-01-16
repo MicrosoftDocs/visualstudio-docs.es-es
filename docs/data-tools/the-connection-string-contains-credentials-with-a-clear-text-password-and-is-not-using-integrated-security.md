@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2f7d9c945d3e8897114f165464c0823cce3ceeae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: ef63abe36a5880305f522d75d9e1cb1d7f6995fa
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854768"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204208"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>La cadena de conexión contiene credenciales con una contraseña en texto no cifrado y no usa seguridad integrada
 
@@ -25,15 +25,13 @@ Al trabajar con conexiones de datos que incluyen información confidencial (cont
 > [!WARNING]
 > Al establecer explícitamente la propiedad **Configuración de la aplicación** de las propiedades de la **Conexión** en **Falso**, se agregará la contraseña al archivo DBML.
 
-## <a name="to-save-the-connection-string-with-the-sensitive-information-in-the-projects-application-settings"></a>Para guardar la cadena de conexión con la información confidencial en la configuración de la aplicación del proyecto
+## <a name="save-options"></a>Opciones de guardar
 
-- Haga clic en **Sí**.
+- Para guardar la cadena de conexión con la información confidencial, elija **Sí**.
 
    La cadena de conexión se almacena como una configuración de la aplicación. La cadena de conexión incluye la información confidencial en texto sin formato. El archivo DBML no contiene ninguna información confidencial.
 
-## <a name="to-save-the-connection-string-without-the-sensitive-information-in-the-projects-application-settings"></a>Para guardar la cadena de conexión sin la información confidencial en la configuración de la aplicación del proyecto
-
-- Haga clic en **No**.
+- Para guardar la cadena de conexión sin la información confidencial, elija **No**.
 
    La cadena de conexión se almacena como una configuración de la aplicación, pero no se incluye la contraseña.
 

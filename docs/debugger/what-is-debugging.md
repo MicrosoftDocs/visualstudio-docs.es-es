@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c61e30e7085ff2f0f8cec5cc84d27efa0ea22be5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6933f3b5dd826eda586c92466bcd9a8cbe6dc527
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830974"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204286"
 ---
 # <a name="what-is-debugging"></a>¿Qué es la depuración?
 
@@ -44,11 +44,14 @@ Al cambiar esta configuración, cambie el proyecto desde una configuración de d
 
 ## <a name="when-to-use-a-debugger"></a>Cuándo usar un depurador
 
-El depurador es una herramienta esencial para encontrar y corregir errores en las aplicaciones. Sin embargo, contexto es el rey, y es importante aprovechar todas las herramientas a su objeto descartable que le ayudarán a eliminar rápidamente los errores. A veces, el derecho "tool" podría ser una práctica de codificación mejores. Al aprender cuándo se debe usar al depurador frente a alguna otra herramienta, también obtendrá información sobre cómo usar al depurador de forma más eficaz. Si ya sabe que necesita obtener información sobre el depurador, vea [de depuración para principiantes absolutos](../debugger/debugging-absolute-beginners.md). En caso contrario, siga el vínculo de **pasos siguientes**.
+El depurador es una herramienta esencial para encontrar y corregir errores en las aplicaciones. Sin embargo, contexto es el rey, y es importante aprovechar todas las herramientas a su objeto descartable que le ayudarán a eliminar rápidamente los errores. A veces, el derecho "tool" podría ser una práctica de codificación mejores. Al aprender cuándo se debe usar al depurador frente a alguna otra herramienta, también obtendrá información sobre cómo usar al depurador de forma más eficaz.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-En este artículo, ha aprendido algunos conceptos generales de depuración. A continuación, puede empezar a aprender cómo depurar con Visual Studio y cómo escribir código con menos errores. El siguiente artículo se muestra C# ejemplos de código, pero los conceptos se aplican a todos los idiomas compatibles con Visual Studio.
+En este artículo, ha aprendido algunos conceptos generales de depuración. A continuación, puede empezar a aprender cómo depurar con Visual Studio y cómo escribir código con menos errores. Los siguientes artículos show C# ejemplos de código, pero los conceptos se aplican a todos los idiomas compatibles con Visual Studio.
+
+> [!div class="nextstepaction"]
+> [Depuración para principiantes sin experiencia](../debugger/debugging-absolute-beginners.md)
 
 > [!div class="nextstepaction"]
 > [Corrección de errores escribiendo mejor código de C#](../debugger/write-better-code-with-visual-studio.md)
