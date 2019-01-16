@@ -23,10 +23,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 07710ed0188baf48a567bb3c003f174814c30094
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53907896"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Depurar aplicaciones multiproceso en Visual Studio
@@ -40,11 +40,11 @@ El multithreading puede introducir a nuevos tipos de posibles errores. Por ejemp
 
 Visual Studio proporciona diferentes herramientas para su uso en la depuración de aplicaciones multiproceso.
 
-- Para los subprocesos, las herramientas principales para depurar subprocesos son la **subprocesos** (ventana), los marcadores de subprocesos en ventanas de código fuente, el **pilas paralelas** ventana, el **inspección paralela** ventana y el **ubicación de depuración** barra de herramientas. Para obtener información sobre la **subprocesos** ventana y **ubicación de depuración** barra de herramientas, consulte [Tutorial: Depurar con la ventana Subprocesos](../debugger/how-to-use-the-threads-window.md). Para obtener información sobre cómo usar el **pilas paralelas** y **inspección paralela** windows, vea [empezar a depurar una aplicación multiproceso](../debugger/get-started-debugging-multithreaded-apps.md). Ambos temas muestra cómo usar los marcadores de subprocesos.
+- Para los subprocesos, las herramientas principales para depurar subprocesos son la **subprocesos** (ventana), los marcadores de subprocesos en ventanas de código fuente, el **pilas paralelas** ventana, el **inspección paralela** ventana y el **ubicación de depuración** barra de herramientas. Para obtener información sobre la **subprocesos** ventana y **ubicación de depuración** barra de herramientas, consulte [Tutorial: Depuración con la ventana Subprocesos](../debugger/how-to-use-the-threads-window.md). Para obtener información sobre cómo usar el **pilas paralelas** y **inspección paralela** windows, vea [empezar a depurar una aplicación multiproceso](../debugger/get-started-debugging-multithreaded-apps.md). Ambos temas muestra cómo usar los marcadores de subprocesos.
   
 - Para código que usa el [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) o [Runtime de simultaneidad](/cpp/parallel/concrt/concurrency-runtime/), son las herramientas principales para depurar el **pilas paralelas** (ventana), el **Inspección paralela** ventana y el **tareas** ventana, que también es compatible con JavaScript. Para empezar, vea [Tutorial: Depurar una aplicación paralela](../debugger/walkthrough-debugging-a-parallel-application.md) y [Tutorial: Depurar una aplicación C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application). 
 
-- Para depurar subprocesos en la GPU, la herramienta principal es el **subprocesos de GPU** ventana. Vea [Cómo: Uso de la ventana Subprocesos de GPU](../debugger/how-to-use-the-gpu-threads-window.md).  
+- Para depurar subprocesos en la GPU, la herramienta principal es el **subprocesos de GPU** ventana. Vea [Cómo: usar la ventana Subprocesos de GPU](../debugger/how-to-use-the-gpu-threads-window.md).  
 
 - Para los procesos, las herramientas principales son el **asociar al proceso** cuadro de diálogo, el **procesos** ventana y el **ubicación de depuración** barra de herramientas.  
   
@@ -72,7 +72,7 @@ Depurar una aplicación multiproceso que tiene una interfaz de usuario puede res
  [Cómo: cambiar a otro subproceso durante la depuración](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
  Varias formas de cambiar el contexto de depuración a otro subproceso.  
   
- [Cómo: Marcado y desmarcado de subprocesos](../debugger/how-to-flag-and-unflag-threads.md)  
+ [Cómo: marcar y desmarcar subprocesos](../debugger/how-to-flag-and-unflag-threads.md)  
  Marque los subprocesos a los que desea prestar especial atención mientras se realiza la depuración.    
   
  [Cómo: depurar en un clúster de alto rendimiento](../debugger/how-to-debug-on-a-high-performance-cluster.md)  

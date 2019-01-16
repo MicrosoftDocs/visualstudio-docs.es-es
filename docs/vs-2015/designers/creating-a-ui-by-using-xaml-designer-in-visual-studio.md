@@ -19,10 +19,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 3bd82bd99901ba0b8df400e3780b17d1baadab0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53837295"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Crear una IU con el Diseñador XAML en Visual Studio
@@ -91,9 +91,9 @@ El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarl
 
  **Presentación** Especifica los diferentes tamaños y resoluciones de la aplicación.
 
- **Orientación** especifica las diferentes orientaciones de la aplicación: **Panorama** o **vertical**.
+ **Orientación** especifica las diferentes orientaciones de la aplicación: Horizontal o **Vertical**.
 
- **Borde** especifica las diferentes alineaciones de la aplicación: **Ambos**, **izquierda**, **derecha**, o **ninguno**.
+ **Borde** especifica las diferentes alineaciones de la aplicación: Ambos, **Izquierdo**, **Derecho** o **Ninguno**.
 
  **Contraste alto** Muestra una vista previa de la aplicación en función de la configuración de contraste seleccionada. Al establecerse en un valor distinto de **Predeterminado**, esta configuración invalidará la propiedad `RequestedTheme` establecida en App.xaml.
 
@@ -142,4 +142,4 @@ El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarl
  A la derecha de cada propiedad de valor se encuentra un *marcador de propiedad* que aparece como un símbolo de cuadro. La apariencia del marcador de propiedad indica si se aplicó a la propiedad un enlace de datos o un recurso. Por ejemplo, un símbolo de cuadro blanco indica un valor predeterminado, un símbolo de cuadro negro suele indicar que se ha aplicado un recurso local y un símbolo de cuadro naranja suele indicar que se ha aplicado un enlace de datos. Al hacer clic en el marcador de propiedad, puede navegar a la definición de un estilo, abrir el generador de enlace de datos o abrir el selector de recursos.
 
 ## <a name="see-also"></a>Vea también
- [Trabajar con elementos en el Diseñador XAML](../designers/working-with-elements-in-xaml-designer.md) [cómo crear y aplicar un recurso](../designers/how-to-create-and-apply-a-resource.md) [Tutorial: Enlazar a datos en el Diseñador XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+ [Trabajar con elementos en el Diseñador XAML](../designers/working-with-elements-in-xaml-designer.md) [cómo crear y aplicar un recurso](../designers/how-to-create-and-apply-a-resource.md) [Tutorial: Enlace a datos en el Diseñador XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

@@ -16,10 +16,10 @@ ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
 ms.openlocfilehash: 4e42058d2728d806551ae319112052e664950dab
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53863425"
 ---
 # <a name="upgrade-mdf-files"></a>Actualizar archivos .mdf
@@ -72,7 +72,7 @@ Antes de actualizar una base de datos, tenga en cuenta los siguientes criterios:
 
     -   **Adjuntar un archivo de base de datos**: La ruta de acceso física de la principal *.mdf* archivo.
 
-    -   **Nombre lógico**: el nombre que desea usar con el archivo.
+    -   No&mbre lógico: El nombre que desea usar con el archivo.
 
 3.  Seleccione el botón **Aceptar**.
 

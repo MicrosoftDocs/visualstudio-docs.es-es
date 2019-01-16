@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Crear un archivo del proyecto de MSBuild desde el principio | Microsoft Docs'
+title: 'Tutorial: Crear un archivo de proyecto de MSBuild desde cero | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,13 +17,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ad32edc94bea49010dfb7073cacbd84419513783
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "49913896"
 ---
-# <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Tutorial: Crear un archivo del proyecto de MSBuild desde el principio
+# <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Tutorial: Crear un archivo de proyecto de MSBuild desde cero
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -51,7 +51,7 @@ Los lenguajes de programación destinados a .NET Framework usan archivos de proy
   
 - Compilar de forma incremental.  
   
-  Este tutorial muestra la forma de compilar el proyecto en el símbolo del sistema y examinar los resultados. Para obtener más información sobre MSBuild y cómo ejecutar MSBuild en el símbolo del sistema, consulte [Tutorial: Utilizar MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+  Este tutorial muestra la forma de compilar el proyecto en el símbolo del sistema y examinar los resultados. Para obtener más información sobre MSBuild y cómo ejecutar MSBuild en el símbolo del sistema, vea [Tutorial: Usar MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
   Para completar el tutorial, debe tener instalado .NET Framework (versión 2.0, 3.5, 4.0 o 4.5) porque incluye MSBuild y el compilador de Visual C#, que son necesarios para el tutorial.  
   
@@ -146,10 +146,10 @@ Los lenguajes de programación destinados a .NET Framework usan archivos de proy
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
-    <Csc Sources="@(Compile)"/>    
+    <Csc Sources="@(Compile)"/>    
   </Target>  
 </Project>  
 ```  
@@ -239,7 +239,7 @@ Los lenguajes de programación destinados a .NET Framework usan archivos de proy
     <OutputPath>Bin\</OutputPath>  
   </PropertyGroup>  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />  
@@ -315,7 +315,7 @@ Los lenguajes de programación destinados a .NET Framework usan archivos de proy
     <OutputPath>Bin\</OutputPath>  
   </PropertyGroup>  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />  
@@ -484,7 +484,7 @@ Los lenguajes de programación destinados a .NET Framework usan archivos de proy
 ```  
   
 ## <a name="whats-next"></a>Pasos adicionales  
- Visual Studio puede realizar automáticamente gran parte del trabajo que se muestra en este tutorial. Para obtener información sobre cómo utilizar Visual Studio para crear, editar, compilar y probar archivos del proyecto de MSBuild, consulte [Tutorial: Cómo utilizar MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+ Visual Studio puede realizar automáticamente gran parte del trabajo que se muestra en este tutorial. Para aprender a usar Visual Studio a fin de crear, editar, compilar y probar archivos de proyecto de MSBuild, vea [Tutorial: Usar MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
 ## <a name="see-also"></a>Vea también  
 [Información general sobre MSBuild](msbuild.md)  

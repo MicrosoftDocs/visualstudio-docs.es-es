@@ -14,10 +14,10 @@ manager: douge
 ms.workload:
 - uwp
 ms.openlocfilehash: 38e3f53a22b7f8dfa84d327fb2c10ef5efacddd4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53821320"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Implementar aplicaciones para UWP desde Visual Studio
@@ -28,7 +28,7 @@ La funcionalidad de implementación de Visual Studio genera y registra aplicacio
 
 - Cuando el destino es un dispositivo remoto, Visual Studio copia los archivos necesarios en el equipo remoto y registra la aplicación en ese dispositivo.
 
-La implementación es automática cuando se depura la aplicación desde Visual Studio mediante la opción Iniciar depuración** (teclado: F5) o el **iniciar sin depurar** opción (teclado: CTRL + F5 También puede implementar la aplicación manualmente. La implementación manual es útil en los siguientes casos:
+La implementación es automática cuando se depura la aplicación desde Visual Studio mediante la opción Iniciar depuración** (teclado: F5) o el **iniciar sin depurar** opción (teclado: CTRL + F5). También puede implementar la aplicación manualmente. La implementación manual es útil en los siguientes casos:
 
 - Pruebas ad hoc en un equipo local o remoto.
 

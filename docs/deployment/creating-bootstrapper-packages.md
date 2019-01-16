@@ -21,10 +21,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 158befc5b401feb700a2effff7378b1edac6a2c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53878395"
 ---
 # <a name="create-bootstrapper-packages"></a>Crear paquetes de programa previo

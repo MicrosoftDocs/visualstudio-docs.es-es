@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 650a0501de3f2c3728c068be13dc096361f9a54f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53893557"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Especificar eventos de compilación personalizados en Visual Studio
@@ -31,7 +31,7 @@ Mediante la especificación de un evento de compilación personalizado, puede ej
 
 -   Visual Basic--[Cómo: Especificar eventos de compilación (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
--   Visual C# y F#--[Cómo: Especificar eventos de compilación (C#)](../ide/how-to-specify-build-events-csharp.md).
+-   Visual C# y F#--[Cómo: Especificar eventos de compilación (C#)](../ide/how-to-specify-build-events-csharp.md)
 
 -   Visual C++: [Especificar eventos de compilación](http://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc).
 
@@ -60,4 +60,4 @@ Mediante la especificación de un evento de compilación personalizado, puede ej
     >  `%I` en el código anterior debe ser `%%I` en scripts por lotes.
 
 ## <a name="see-also"></a>Vea también
- [Compilar y generar](../ide/compiling-and-building-in-visual-studio.md) [anterior a la compilación Event/Post-build Event Command Line Dialog Box](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [caracteres especiales de MSBuild](../msbuild/msbuild-special-characters.md) [Tutorial: Compilación de una aplicación](../ide/walkthrough-building-an-application.md)
+ [Compilar y generar](../ide/compiling-and-building-in-visual-studio.md) [anterior a la compilación Event/Post-build Event Command Line Dialog Box](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [caracteres especiales de MSBuild](../msbuild/msbuild-special-characters.md) [Tutorial: Compilación de una aplicación.
