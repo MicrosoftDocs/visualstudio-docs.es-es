@@ -17,10 +17,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: db98360ecf13ddeec8af7be0b546553b81a7dc72
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53915366"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Procedimiento Cambiar fuentes y colores en Visual Studio
@@ -70,4 +70,4 @@ Puede personalizar el color del marco y las ventanas de herramientas del IDE de 
 5.  En la lista **Tamaño**, elija un tamaño de texto y elija el botón **Aceptar**.
 
 ## <a name="see-also"></a>Vea también
- [Características de accesibilidad de Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [Cómo: Cambiar las fuentes y los colores del editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+ [Características de accesibilidad de Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [Cómo: Cambio de fuentes y colores del editor.

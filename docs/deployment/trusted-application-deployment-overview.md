@@ -17,10 +17,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 2f63bc8b454985e368e344bda925ce306bdf3de7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53934669"
 ---
 # <a name="trusted-application-deployment-overview"></a>Introducción a la implementación de aplicaciones de confianza
@@ -80,12 +80,12 @@ Siga estos pasos para aprovechar las ventajas de la implementación de aplicacio
 -   *CertMgr.exe*, que es un componente de Internet Explorer y, por tanto, existe en Windows 98 y en todas las versiones posteriores. Para obtener más información, consulte [Certmgr.exe (herramienta de administrador de certificados)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).  
   
 ### <a name="create-a-clickonce-application"></a>Crear una aplicación ClickOnce  
- Una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] es una aplicación cliente [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] combinada con archivos de manifiesto que describen la aplicación y proporcionan parámetros de instalación. Puede convertir el programa en una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con el comando **Publicar** de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Otra opción es generar todos los archivos necesarios para la implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mediante las herramientas incluidas en el [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Para obtener pasos detallados sobre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación, consulte [Tutorial: Implementación manual de una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] es una aplicación cliente [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] combinada con archivos de manifiesto que describen la aplicación y proporcionan parámetros de instalación. Puede convertir el programa en una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con el comando **Publicar** de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Otra opción es generar todos los archivos necesarios para la implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mediante las herramientas incluidas en el [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Para obtener pasos detallados sobre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación, consulte [Tutorial: Implementación manual de una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)  
   
  La implementación de aplicaciones de confianza es específica de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]y solo puede usarse con aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .  
   
 ### <a name="sign-the-deployment"></a>Firma de la implementación  
- Una vez obtenido el certificado, debe usarlo para firmar la implementación. Si está implementando la aplicación mediante el asistente para publicación de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , el asistente generará automáticamente un certificado de prueba en caso de que no haya especificado ningún certificado. También puede usar la ventana Diseñador de proyectos de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para suministrar un certificado proporcionado por una entidad de certificación.  Consulte también [Cómo: Publicación de una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+ Una vez obtenido el certificado, debe usarlo para firmar la implementación. Si está implementando la aplicación mediante el asistente para publicación de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , el asistente generará automáticamente un certificado de prueba en caso de que no haya especificado ningún certificado. También puede usar la ventana Diseñador de proyectos de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para suministrar un certificado proporcionado por una entidad de certificación.  Consulte también [Cómo: publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 > [!CAUTION]
 >  No le recomendamos implementar la aplicación con un certificado de prueba.  

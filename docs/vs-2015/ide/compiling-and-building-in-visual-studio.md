@@ -17,10 +17,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 3d94289baf5cd7b3e4724f205dbfcb5e0ff227eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53931069"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Compilar y generar en Visual Studio
@@ -57,4 +57,4 @@ Se puede utilizar Visual Studio para compilar aplicaciones y para crear ensambla
 -   Mejorar el rendimiento de la compilación mediante compilaciones paralelas. Para obtener más información, vea [Compilar varios proyectos en paralelo con MSBuild](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) o la publicación del blog [Tuning C++ build parallelism](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx) (Ajustar el paralelismo de compilación de C++).
 
 ## <a name="see-also"></a>Vea también
- [Tutorial: Creación de una aplicación](../ide/walkthrough-building-an-application.md) [descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md) [descripción de las plataformas de compilación](../ide/understanding-build-platforms.md) [compilar proyectos de sitio Web (compilación)](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Cómo: Creación y eliminación de dependencias del proyecto](../ide/how-to-create-and-remove-project-dependencies.md)
+ [Tutorial: Creación de una aplicación](../ide/walkthrough-building-an-application.md) [descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md) [descripción de las plataformas de compilación](../ide/understanding-build-platforms.md) [compilar proyectos de sitio Web (compilación)](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Cómo: Creación y eliminación de dependencias del proyecto.
