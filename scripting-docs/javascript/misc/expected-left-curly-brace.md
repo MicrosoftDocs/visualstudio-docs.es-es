@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0e0127d551c6bf16c710e47d5f95c975522aca16
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348378"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349405"
 ---
 # <a name="expected-"></a>Se esperaba '{'
 No incluía la llave de apertura que marca el principio del cuerpo de función. Código que conforma el cuerpo de una función, incluso si es una sola línea, debe estar dentro de llaves izquierdas y derecha. Tenga en cuenta que el uso de llaves en los cuerpos de función es más estricto que en los bucles.  

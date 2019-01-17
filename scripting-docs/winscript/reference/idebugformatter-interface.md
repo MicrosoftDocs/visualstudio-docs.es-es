@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97f95aa1ecb91f6caca187939a79a6f09cd2108f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 353a85ab51252c92086fa478d95b2e29ab3db62d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729175"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348040"
 ---
 # <a name="idebugformatter-interface"></a>IDebugFormatter (Interfaz)
-Permite a un idioma o el IDE para personalizar la conversión entre valores VARIANT o tipos VARTYPE y cadenas.  
+Permite que un lenguaje o el IDE personalice la conversión entre valores VARIANT o tipos VARTYPE y cadenas.  
   
  Además de los métodos heredados de `IUnknown`, el `IDebugFormatter` interfaz expone los métodos siguientes.  
   

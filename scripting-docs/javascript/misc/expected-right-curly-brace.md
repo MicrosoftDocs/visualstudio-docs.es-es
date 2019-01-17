@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 42e0c220466291f845209f22917d728dee3e553e
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348305"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350120"
 ---
 # <a name="expected-"></a>Se esperaba '}'
 No incluir la llave de cierre que marca el final del cuerpo de la función, bucle, el bloque de código, o inicializador de objeto. Un ejemplo de este error podría ser un **para** bucle con la llave izquierda marca el cuerpo del bucle.  

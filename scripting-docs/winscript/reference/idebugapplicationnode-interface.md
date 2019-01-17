@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 110e04d1c990f1b22f9740d8118a47f485dd041e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d7bd38a0fbbdd596f6a1f6bb040190dddca78bf9
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726005"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349002"
 ---
 # <a name="idebugapplicationnode-interface"></a>IDebugApplicationNode (Interfaz)
 El `IDebugApplicationNode` interfaz extiende la funcionalidad de la `IDebugDocumentProvider` interfaz proporcionando un contexto dentro de un árbol de proyecto.  
@@ -34,5 +34,5 @@ El `IDebugApplicationNode` interfaz extiende la funcionalidad de la `IDebugDocum
 |[IDebugApplicationNode::GetParent](../../winscript/reference/idebugapplicationnode-getparent.md)|Devuelve el nodo primario de este nodo de la aplicación.|  
 |[IDebugApplicationNode::SetDocumentProvider](../../winscript/reference/idebugapplicationnode-setdocumentprovider.md)|Establece el proveedor de documento para este nodo de la aplicación.|  
 |[IDebugApplicationNode::Close](../../winscript/reference/idebugapplicationnode-close.md)|Hace que esta aplicación para liberar todas las referencias y entrar en un estado inactivo.|  
-|[IDebugApplicationNode::Attach](../../winscript/reference/idebugapplicationnode-attach.md)|Este nodo de la aplicación se agrega al árbol de proyecto especificado.|  
+|[IDebugApplicationNode::Attach](../../winscript/reference/idebugapplicationnode-attach.md)|Este nodo de la aplicación se agrega al árbol del proyecto especificado.|  
 |[IDebugApplicationNode::Detach](../../winscript/reference/idebugapplicationnode-detach.md)|Quita este nodo de la aplicación desde el árbol del proyecto.|

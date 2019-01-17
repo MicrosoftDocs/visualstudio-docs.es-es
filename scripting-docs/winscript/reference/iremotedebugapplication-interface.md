@@ -14,15 +14,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ea91afdc44b70a91846d7b1a3dc4c017c0c4c80e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 02ddf409bf25cb86fc742cdc004e2f1b664d22e3
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729605"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348768"
 ---
 # <a name="iremotedebugapplication-interface"></a>IRemoteDebugApplication (Interfaz)
-Representa una aplicación en ejecución. No es necesario que corresponda a un proceso de sistema operativo. Normalmente, un depurador tiene como destino una aplicación para la depuración. Normalmente, el Administrador de procesos de depuración implementa el objeto de aplicación.  
+Representa una aplicación en ejecución. No debe corresponder a un proceso del sistema operativo. Normalmente, un depurador tiene como destino una aplicación para la depuración. Normalmente, el Administrador de procesos de depuración implementa el objeto de aplicación.  
   
  Además de los métodos heredados de `IUnknown`, el `IRemoteDebugApplication` interfaz expone los métodos siguientes.  
   
@@ -31,13 +31,13 @@ Representa una aplicación en ejecución. No es necesario que corresponda a un p
 |Método|Descripción|  
 |------------|-----------------|  
 |[IRemoteDebugApplication::ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)|Continúa una aplicación que está actualmente en un punto de interrupción.|  
-|[IRemoteDebugApplication::CauseBreak](../../winscript/reference/iremotedebugapplication-causebreak.md)|Hace que la aplicación puede interrumpir el depurador lo antes posible.|  
+|[IRemoteDebugApplication::CauseBreak](../../winscript/reference/iremotedebugapplication-causebreak.md)|Hace que la aplicación interrumpir el depurador lo antes posible.|  
 |[IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)|Se conecta a un depurador a esta aplicación.|  
 |[IRemoteDebugApplication::DisconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md)|Desconecta al depurador actual de la aplicación.|  
 |[IRemoteDebugApplication::GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)|Devuelve el depurador actual conectado a la aplicación.|  
-|[IRemoteDebugApplication::CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md)|Proporciona un mecanismo para que el depurador IDE, ejecutar fuera de proceso a la aplicación, para crear objetos en el proceso de aplicación.|  
-|[IRemoteDebugApplication::QueryAlive](../../winscript/reference/iremotedebugapplication-queryalive.md)|Indica si la aplicación está respondiendo.|  
+|[IRemoteDebugApplication::CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md)|Proporciona un mecanismo para el IDE, ejecución fuera de proceso a la aplicación, para crear objetos en el proceso de aplicación del depurador.|  
+|[IRemoteDebugApplication::QueryAlive](../../winscript/reference/iremotedebugapplication-queryalive.md)|Indica si la aplicación es la capacidad de respuesta.|  
 |[IRemoteDebugApplication::EnumThreads](../../winscript/reference/iremotedebugapplication-enumthreads.md)|Enumera todos los subprocesos que se sabe que están asociados con la aplicación.|  
 |[IRemoteDebugApplication::GetName](../../winscript/reference/iremotedebugapplication-getname.md)|Devuelve el nombre de este nodo de la aplicación.|  
-|[IRemoteDebugApplication::GetRootNode](../../winscript/reference/iremotedebugapplication-getrootnode.md)|Devuelve el nodo de la aplicación en la que se agregan todos los nodos asociados a la aplicación.|  
-|[IRemoteDebugApplication::EnumGlobalExpressionContexts](../../winscript/reference/iremotedebugapplication-enumglobalexpressioncontexts.md)|Enumera los contextos de expresión global para todos los lenguajes que se ejecutan en esta aplicación.|
+|[IRemoteDebugApplication::GetRootNode](../../winscript/reference/iremotedebugapplication-getrootnode.md)|Devuelve el nodo de la aplicación en la que se agregan todos los nodos asociados con la aplicación.|  
+|[IRemoteDebugApplication::EnumGlobalExpressionContexts](../../winscript/reference/iremotedebugapplication-enumglobalexpressioncontexts.md)|Enumera los contextos de expresión global para todos los idiomas que se ejecutan en esta aplicación.|

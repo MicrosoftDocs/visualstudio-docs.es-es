@@ -21,24 +21,24 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 839ff08da4d26406b508a206c809b0813d2b32e1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633125"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349041"
 ---
 # <a name="exception-thrown-and-not-caught"></a>Excepción producida y no detectada
-Se incluye un `throw` instrucción en el código, pero no se incluyera en un **intente** bloque, o se produjo asociado ya no **catch** bloque para capturar el error. Las excepciones se inician desde el **intente** bloquee mediante el **throw** instrucción y capturadas fuera de la **intente** bloque con un **detectar** instrucción.  
+Se incluye un `throw` instrucción en el código, pero no se ha delimitado por un **intente** bloque, o no se asoció no **catch** bloque para capturar el error. Excepciones desde el **intente** bloquear mediante la **throw** instrucción y capturadas fuera el **intente** bloque con un **catch** instrucción.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Coloque el código que puede producir una excepción en un **intente** bloquear y asegúrese de que hay un correspondiente **catch** bloque.  
+-   Coloque el código que puede producir una excepción en un **intente** bloquear y asegúrese de que hay correspondiente **catch** bloque.  
   
--   Asegúrese de que la instrucción catch espera un formato correcto de excepción.  
+-   Asegúrese de que la instrucción catch espera el formato correcto de la excepción.  
   
 -   Si se vuelve a producir la excepción, asegúrese de que hay otra instrucción catch correspondiente.  
   
 ## <a name="see-also"></a>Vea también  
  [Objeto de error](../../javascript/reference/error-object-javascript.md)   
- [throw (instrucción)](../../javascript/reference/throw-statement-javascript.md)   
+ [Throw (instrucción)](../../javascript/reference/throw-statement-javascript.md)   
  [Try...Catch...Finally (Instrucción)](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

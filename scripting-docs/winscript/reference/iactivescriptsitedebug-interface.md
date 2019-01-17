@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9b36054deeceb0528fb7ea399cc41d8edbbb47e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 339325686d2a98e34c6e9f96056612769a9e110e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724745"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348313"
 ---
 # <a name="iactivescriptsitedebug-interface"></a>IActiveScriptSiteDebug (Interfaz)
-Hosts inteligentes implementan la `IActiveScriptSiteDebug` interfaz para realizar la administración de documentos y para participar en la depuración. El `IActiveScriptSite` objeto normalmente proporciona una implementación de la `IActiveScriptSiteDebug` interfaz. Si es así, llame a la `IActiveScriptSite::QueryInterface` método para obtener el `IActiveScriptSiteDebug` interfaz.  
+Hosts inteligentes implementan la `IActiveScriptSiteDebug` interfaz para realizar la administración de documentos y participar en la depuración. El `IActiveScriptSite` objeto normalmente proporciona una implementación de la `IActiveScriptSiteDebug` interfaz. Si esto sucede, llame a la `IActiveScriptSite::QueryInterface` método para obtener el `IActiveScriptSiteDebug` interfaz.  
   
  Además de los métodos heredados de `IUnknown`, el `IActiveScriptSiteDebug` interfaz expone los métodos siguientes.  
   
@@ -30,7 +30,7 @@ Hosts inteligentes implementan la `IActiveScriptSiteDebug` interfaz para realiza
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IActiveScriptSiteDebug::GetDocumentContextFromPosition](../../winscript/reference/iactivescriptsitedebug-getdocumentcontextfromposition.md)|Utilizado por el motor de lenguaje para delegar `IDebugCodeContext::GetSourceContext`.|  
+|[IActiveScriptSiteDebug::GetDocumentContextFromPosition](../../winscript/reference/iactivescriptsitedebug-getdocumentcontextfromposition.md)|Usa el motor de lenguaje para delegar `IDebugCodeContext::GetSourceContext`.|  
 |[IActiveScriptSiteDebug::GetApplication](../../winscript/reference/iactivescriptsitedebug-getapplication.md)|Devuelve el objeto de aplicación de depuración asociado a este sitio de la secuencia de comandos.|  
-|[IActiveScriptSiteDebug::GetRootApplicationNode](../../winscript/reference/iactivescriptsitedebug-getrootapplicationnode.md)|Obtiene el nodo de aplicación en las secuencias de comandos deben agregarse documentos.|  
-|[IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md)|Permite a un host inteligente determinar cómo tratar los errores de tiempo de ejecución.|
+|[IActiveScriptSiteDebug::GetRootApplicationNode](../../winscript/reference/iactivescriptsitedebug-getrootapplicationnode.md)|Obtiene el nodo de la aplicación en qué secuencia de comandos se deben agregar documentos.|  
+|[IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md)|Permite a un host inteligente determinar cómo controlar los errores de tiempo de ejecución.|

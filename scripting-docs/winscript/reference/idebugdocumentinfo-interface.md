@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5f6bf756a5df5f94804efec40822ed500c0e7f0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6e0c01803f49204d2f0de40bec07b368f176fb80
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726385"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349340"
 ---
 # <a name="idebugdocumentinfo-interface"></a>IDebugDocumentInfo (Interfaz)
-Proporciona información sobre un documento, que puede o no se puede crear una instancia.  
+Proporciona información sobre un documento, del que se puede, o no, crear una instancia.  
   
  Además de los métodos heredados de `IUnknown`, el `IDebugDocumentInfo` interfaz expone los métodos siguientes.  
   
@@ -31,4 +31,4 @@ Proporciona información sobre un documento, que puede o no se puede crear una i
 |Método|Descripción|  
 |------------|-----------------|  
 |[IDebugDocumentInfo::GetName](../../winscript/reference/idebugdocumentinfo-getname.md)|Devuelve el nombre del documento especificado.|  
-|[IDebugDocumentInfo::GetDocumentClassId](../../winscript/reference/idebugdocumentinfo-getdocumentclassid.md)|Devuelve un CLSID identifica el tipo de documento.|
+|[IDebugDocumentInfo::GetDocumentClassId](../../winscript/reference/idebugdocumentinfo-getdocumentclassid.md)|Devuelve un CLSID que identifica el tipo de documento.|
