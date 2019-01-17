@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 84ba15ddbfdb6e3bbcf7a9f7c3ee3dd7e0f89c9c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6053c240fbdfb12840e162f70c88356918eca238
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866340"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269961"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Puede depurar una aplicación de Visual Studio que se ha implementado en un equipo diferente. Para ello, use el depurador remoto de Visual Studio
@@ -122,7 +122,7 @@ Para la depuración en ASP.NET y otros entornos de servidor, debe ejecutar al de
 
 ## <a name="see-also"></a>Vea también
 
-- [Guía de características del depurador](../debugger/debugger-feature-tour.md)
+- [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)
 - [Configurar el Firewall de Windows para la depuración remota](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [Asignaciones de puertos del depurador remoto](../debugger/remote-debugger-port-assignments.md)
 - [ASP.NET Core en un equipo remoto de IIS de depuración remota](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)

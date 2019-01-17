@@ -15,22 +15,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66478505fe59ef65eb703fef6be8941deebe3d49
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6e983137b4d66ff568ba706353d950470787e3a2
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931429"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204499"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Navegar por el código con el depurador de Visual Studio
 
-El depurador de Visual Studio puede ayudarle a navegar por el código para inspeccionar el estado de una aplicación y mostrar su flujo de ejecución. Puede usar métodos abreviados de teclado, comandos de depuración, los puntos de interrupción y otras características para ponerse rápidamente al código que desea examinar. Familiaridad con los comandos de navegación del depurador y los métodos abreviados de hace más rápidas y fáciles de encontrar y solucionar problemas en aplicaciones.  Si se trata de la primera vez que ha probado para depurar el código, es posible que desea leer [corregir errores al escribir mejor C# código](../debugger/write-better-code-with-visual-studio.md) y [de depuración para principiantes absolutos](../debugger/debugging-absolute-beginners.md) antes de pasar a través de este artículo.
+El depurador de Visual Studio puede ayudarle a navegar por el código para inspeccionar el estado de una aplicación y mostrar su flujo de ejecución. Puede usar métodos abreviados de teclado, comandos de depuración, los puntos de interrupción y otras características para ponerse rápidamente al código que desea examinar. Familiaridad con los comandos de navegación del depurador y los métodos abreviados de hace más rápidas y fáciles de encontrar y solucionar problemas en aplicaciones.  Si esta es la primera vez que intenta depurar código, le recomendamos que lea [Cómo depurar para principiantes sin experiencia](../debugger/debugging-absolute-beginners.md) y [Fix bugs by writing better C# code](../debugger/write-better-code-with-visual-studio.md) (Mejora de la escritura de código de C# para solucionar errores) antes de continuar con este artículo.
   
 ## <a name="basic-debugging"></a>Depuración básica  
 
 Para iniciar la aplicación con el depurador adjunto, presione **F5**, seleccione **depurar** > **Iniciar depuración**, o seleccione la flecha verde en la barra de herramientas de Visual Studio.  
   
- ![DBG&#95;Fundamentos&#95;iniciar&#95;depuración](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
+ ![DBG&#95;Fundamentos de&#95;inicio de&#95;depuración](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
   
 Durante la depuración, resaltado amarillo que muestra la línea de código que se ejecutará la siguiente.  
   

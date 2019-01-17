@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2778148c8762c74d1c836a6f5a1b1fd8c9387e12
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: bdbcefe1e0878ef6bf2520edb90ce904e414f211
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53884589"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269766"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Un proyecto de Visual C++ en Visual Studio de depuración remota
 Para depurar una aplicación de Visual Studio en otro equipo, instalar y ejecutar las herramientas remotas en el equipo donde se implementará la aplicación, configure el proyecto para conectarse al equipo remoto desde Visual Studio y, a continuación, implementar y ejecutar la aplicación.
@@ -71,7 +71,7 @@ El depurador remoto es compatible con Windows 7 y versiones más recientes (no d
    |-|-|  
    |Comando remoto|C:\remotetemp\mymfc.exe|  
    |Directorio de trabajo|C:\remotetemp|  
-   |Nombre de servidor remoto|Lista de distribución MJO:*númeroDePuerto*|  
+   |Nombre de servidor remoto|MJO-DL:*portnumber*|  
    |Conexión|Remoto con autenticación de Windows|  
    |Tipo de depurador|Solo nativo|  
    |Directorio de implementación|C:\remotetemp.|  
@@ -106,7 +106,7 @@ El depurador remoto es compatible con Windows 7 y versiones más recientes (no d
   
 ## <a name="see-also"></a>Vea también  
  [Depurar en Visual Studio](../debugger/index.md)  
- [Guía de características del depurador](../debugger/debugger-feature-tour.md)   
+ [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)   
  [Configurar el Firewall de Windows para la depuración remota](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
  [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)   
  [Depuración remota de ASP.NET en un equipo remoto de IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)  

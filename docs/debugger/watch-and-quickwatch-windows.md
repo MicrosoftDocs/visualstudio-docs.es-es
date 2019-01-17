@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b01c0a80c9e45aa56f2a627b73659e7558257e35
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e9a7e936b565a961bb7b32d5599c79049857328e
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936517"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204474"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Variables de inspección con ventanas Inspección e Inspección rápida 
 
@@ -30,7 +30,7 @@ Durante la depuración, puede usar **inspección** windows y **Inspección rápi
 
 **Inspección** windows pueden mostrar varias variables a la vez durante la depuración. El **Inspección rápida** cuadro de diálogo muestra una única variable a la vez y debe cerrarse para que pueda continuar la depuración.
 
-Si se trata de la primera vez que ha probado para depurar el código, es posible que desea leer [corregir errores al escribir mejor C# código](../debugger/write-better-code-with-visual-studio.md) y [de depuración para principiantes absolutos](../debugger/debugging-absolute-beginners.md) antes de pasar a través de este artículo.
+Si esta es la primera vez que intenta depurar código, le recomendamos que lea [Cómo depurar para principiantes sin experiencia](../debugger/debugging-absolute-beginners.md) y [Fix bugs by writing better C# code](../debugger/write-better-code-with-visual-studio.md) (Mejora de la escritura de código de C# para solucionar errores) antes de continuar con este artículo.
 
 ## <a name="observe-variables-with-a-watch-window"></a>Observar variables con una ventana Inspección
 
@@ -125,7 +125,7 @@ Para que se muestra cómo usar el icono de actualización:
    
 1. Inicie la depuración. El **inspección** ventana muestra algo como el siguiente mensaje:
    
-   ![Actualizar inspección](../debugger/media/refreshwatch.png "actualizar inspección")
+   ![Actualizar inspección](../debugger/media/refreshwatch.png "Refresh Watch")
    
 1. Para actualizar el valor, seleccione el icono de actualización, o presione la barra espaciadora. El depurador vuelve a evaluar la expresión. 
 

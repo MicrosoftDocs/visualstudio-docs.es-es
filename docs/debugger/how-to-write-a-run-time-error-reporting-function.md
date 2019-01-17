@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8e6844b92422af42d2aa1098bc649019fb2f1ba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0f3659cd2a77e57f560abb18b0af83549edd0571
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938178"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204169"
 ---
-# <a name="how-to-write-a-run-time-error-reporting-function"></a>Procedimiento Escribir una función para generar informes de errores en tiempo de ejecución
+# <a name="how-to-write-a-run-time-error-reporting-function-c"></a>Procedimiento Escritura de una función para generar informes de errores en tiempo de ejecución (C++)
 Una función personalizada para la generación de informes de error en tiempo de ejecución debe tener la misma declaración que `_CrtDbgReportW`. Debe devolver un valor de 1 al depurador.  
   
  En el siguiente ejemplo se muestra el modo de definir una función de supervisión personalizada.  

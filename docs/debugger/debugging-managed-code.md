@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ffb9361e06218d3625bfd5d220c38f86a8b70f7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e34d138ec65d2508244c6802ccee67d931e87257
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867045"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270211"
 ---
 # <a name="debugging-managed-code"></a>Depurar código administrado
 
@@ -86,7 +86,7 @@ Proporciona vínculos a secciones más amplias de la documentación relativa a l
 
 ## <a name="see-also"></a>Vea también
 
-[Tutorial: Controles de depuración personalizado Windows Forms en tiempo de diseño](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
-[seguridad del depurador](../debugger/debugger-security.md)
-[depuración en Visual Studio](../debugger/index.md) 
- [ Guía de características del depurador](../debugger/debugger-feature-tour.md)
+[Tutorial: Depurar controles personalizados de Windows Forms en tiempo de diseño](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)  
+[Seguridad del depurador](../debugger/debugger-security.md)  
+[Depurar en Visual Studio](../debugger/index.md)  
+[Primer vistazo al depurador](../debugger/debugger-feature-tour.md)

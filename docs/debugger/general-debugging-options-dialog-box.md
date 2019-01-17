@@ -123,10 +123,10 @@ Desactiva todas las personalizaciones de vistas de estructuras de objetos. Para 
 **Suprimir optimización JIT al cargar el módulo (únicamente administrado)**:  
 Deshabilita la optimización JIT de código administrado cuando se carga un módulo con compilación JIT mientras se asocia el depurador. Al deshabilitar la optimización se puede simplificar la depuración de algunos problemas, aunque el rendimiento se verá afectado. Si se utiliza Solo mi código, suprimir la optimización JIT puede hacer que el código que no sea de usuario aparezca como código de usuario ("Mi código"). Para obtener más información, consulte [JIT optimización y depuración](../debugger/jit-optimization-and-debugging.md).
 
-**Habilitar depuración de JavaScript para ASP.NET (IE, Edge y Chrome)**:  
+**Habilitar depuración de JavaScript para ASP.NET (IE, Microsoft Edge y Chrome)**:  
 Permite al depurador de script para las aplicaciones ASP.NET. En el primer uso en Chrome, debe iniciar sesión en el explorador para habilitar las extensiones de Chrome que ha instalado. Deshabilitar esta opción para revertir al comportamiento heredado.
 
-**Habilitar herramientas de desarrollo de Edge para aplicaciones JavaScript UWP (experimental)**:  
+**Habilitar herramientas de desarrollo de Microsoft Edge para aplicaciones JavaScript UWP (experimental)**:  
 Permite que herramientas de desarrollo para aplicaciones UWP JavaScript en Edge.
 
 **Habilitar el depurador de JavaScript de Chrome heredado para ASP.NET**:  

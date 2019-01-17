@@ -15,16 +15,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e23f61f7de4b2723e7be18b6beb76b17fd278cf2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f84b18cd3d4bfbae949ba4dd3199bace6604148f
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947418"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204498"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspeccionar las variables en las ventanas automático y variables locales
 
-El **automático** y **variables locales** ventanas muestran valores de variables durante la depuración. Windows solo están disponibles durante una sesión de depuración. El **automático** ventana muestra las variables usadas en torno al punto de interrupción actual. El **variables locales** ventana muestra las variables definidas en el ámbito local, que normalmente es la función actual o el método. Si se trata de la primera vez que ha probado para depurar el código, es posible que desea leer [corregir errores al escribir mejor C# código](../debugger/write-better-code-with-visual-studio.md) y [de depuración para principiantes absolutos](../debugger/debugging-absolute-beginners.md) antes de pasar a través de este artículo.
+El **automático** y **variables locales** ventanas muestran valores de variables durante la depuración. Windows solo están disponibles durante una sesión de depuración. El **automático** ventana muestra las variables usadas en torno al punto de interrupción actual. El **variables locales** ventana muestra las variables definidas en el ámbito local, que normalmente es la función actual o el método. Si esta es la primera vez que intenta depurar código, le recomendamos que lea [Cómo depurar para principiantes sin experiencia](../debugger/debugging-absolute-beginners.md) y [Fix bugs by writing better C# code](../debugger/write-better-code-with-visual-studio.md) (Mejora de la escritura de código de C# para solucionar errores) antes de continuar con este artículo.
 
  El **automático** ventana está disponible para C#, código de Visual Basic, C++ y Python, pero no para JavaScript o F#.
   
@@ -39,7 +39,7 @@ Para abrir el **variables locales** ventana, durante la depuración, seleccione 
 
 Matrices y objetos se muestran en el **automático** y **variables locales** windows como controles de árbol. Seleccione la flecha situada a la izquierda de un nombre de variable para expandir la vista para mostrar los campos y propiedades. Este es un ejemplo de un <xref:System.IO.FileStream?displayProperty=fullName> objeto en el **variables locales** ventana:
 
-![Variables locales FileStream](../debugger/media/locals-filestream.png "FileStream de variables locales")
+![Locals-FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")
 
 Un valor de color rojo en el **variables locales** o **automático** ventana significa que el valor ha cambiado desde la última evaluación. El cambio podría ser una sesión de depuración anterior, o porque ha cambiado el valor en la ventana.
 
@@ -109,7 +109,7 @@ Establezca un punto de interrupción e inicie la depuración. Cuando se alcanza 
 
     Establezca un punto de interrupción en la línea `e = 5;` y ejecute el depurador. Cuando la ejecución se detiene, el **automático** mostrará la ventana:
 
-    ![Automático C++](../debugger/media/autos-cplus.png "automático C++")
+    ![Autos-C++](../debugger/media/autos-cplus.png "Autos-C++")
 
     La variable `e` no está inicializada, porque la línea `e = 5` aún no se ha ejecutado.
 
