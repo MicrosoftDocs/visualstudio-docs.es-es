@@ -1,5 +1,5 @@
 ---
-title: Active Script Debugger constantes, enumeraciones y estructuras | Documentos de Microsoft
+title: Active Script Debugger (constantes), enumeraciones y estructuras | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bd41fe91fdf030b957d800248343198f2617018
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 913c1b243bcc9c7a6653025fbfcb4f941df2950e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24642075"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345440"
 ---
 # <a name="active-script-debugger-constants-enumerations-and-structures"></a>Active Script Debugger (Constantes, enumeraciones y estructuras)
 Las interfaces de depuración activa utilizan las constantes, enumeraciones y estructuras siguientes.  
@@ -31,7 +31,7 @@ Las interfaces de depuración activa utilizan las constantes, enumeraciones y es
 |Constantes|Descripción|  
 |---------------|-----------------|  
 |[APPBREAKFLAGS (constantes)](../../winscript/reference/appbreakflags-enumeration.md)|Indican el estado de depuración actual de aplicaciones y subprocesos.|  
-|[DEBUG_TEXT (Constantes)](../../winscript/reference/debug-text-constants.md)|Opción marcas que se usan durante la [IDebugExpressionContext::ParseLanguageText](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md).|  
+|[DEBUG_TEXT (Constantes)](../../winscript/reference/debug-text-constants.md)|Marcas de opción utilizadas durante [IDebugExpressionContext::ParseLanguageText](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md).|  
 |[TEXT_DOC_ATTR (Constantes)](../../winscript/reference/text-doc-attr-constants.md)|Describen los atributos del documento.|  
   
 |Enumeraciones|Descripción|  

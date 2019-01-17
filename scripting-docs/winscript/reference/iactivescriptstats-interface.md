@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d459b89bde609dfdf5963d4b6b10b24db4706a7e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: da69920ca78ad47e283fa8f99a28d037edbbe44d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725055"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350146"
 ---
 # <a name="iactivescriptstats-interface"></a>IActiveScriptStats (Interfaz)
-Permite a un host consultar las estadísticas de un script en ejecución. El host puede utilizar esta información para determinar si el script ha tardado demasiado tiempo en completarse.  
+Permite a un host consultar las estadísticas de un script en ejecución. El host puede utilizar esta información para determinar si script tardó demasiado tiempo en completarse.  
   
  Además de los métodos heredados de `IUnknown`, el `IActiveScriptStats` interfaz expone los métodos siguientes.  
   
@@ -31,5 +31,5 @@ Permite a un host consultar las estadísticas de un script en ejecución. El hos
 |Método|Descripción|  
 |------------|-----------------|  
 |[IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-getstat.md)|Devuelve una de las estadísticas de la secuencia de comandos estándar.|  
-|[IActiveScriptStats::GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)|Devuelve una estadística de la secuencia de comandos personalizada.|  
+|[IActiveScriptStats::GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)|Devuelve una estadística de script personalizado.|  
 |[IActiveScriptStats::ResetStats](../../winscript/reference/iactivescriptstats-resetstats.md)|Restablece las estadísticas para esta secuencia de comandos.|

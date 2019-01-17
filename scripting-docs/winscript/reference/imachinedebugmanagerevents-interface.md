@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 369dc8d182efe7bf9697454d0e4b1c9c1a10c027
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f9aab3d7abeecd22e830c68f174896df0e7df2da
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727635"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344045"
 ---
 # <a name="imachinedebugmanagerevents-interface"></a>IMachineDebugManagerEvents (Interfaz)
-Indica los cambios en el que se ejecuta mantenida por el Administrador de depuración de la máquina de lista de aplicaciones. Esta interfaz se puede utilizar el depurador IDE para mostrar una lista dinámica de las aplicaciones.  
+Indica los cambios aplicados a la lista de aplicaciones en ejecución que mantiene el administrador de depuración de la máquina. Esta interfaz se puede usar el IDE del depurador para mostrar una lista dinámica de las aplicaciones.  
   
  Además de los métodos heredados de `IUnknown`, el `IMachineDebugManagerEvents` interfaz expone los métodos siguientes.  
   
@@ -30,5 +30,5 @@ Indica los cambios en el que se ejecuta mantenida por el Administrador de depura
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IMachineDebugManagerEvents::onAddApplication](../../winscript/reference/imachinedebugmanagerevents-onaddapplication.md)|Controla el evento cuando se agrega una aplicación para el que se ejecuta lista de aplicaciones.|  
-|[IMachineDebugManagerEvents::onRemoveApplication](../../winscript/reference/imachinedebugmanagerevents-onremoveapplication.md)|Controla el evento cuando se quita una aplicación desde el que se ejecuta lista de aplicaciones.|
+|[IMachineDebugManagerEvents::onAddApplication](../../winscript/reference/imachinedebugmanagerevents-onaddapplication.md)|Controla el evento cuando una aplicación se agrega a la ejecución lista de aplicaciones.|  
+|[IMachineDebugManagerEvents::onRemoveApplication](../../winscript/reference/imachinedebugmanagerevents-onremoveapplication.md)|Controla el evento cuando se quita una aplicación de la ejecución lista de aplicaciones.|

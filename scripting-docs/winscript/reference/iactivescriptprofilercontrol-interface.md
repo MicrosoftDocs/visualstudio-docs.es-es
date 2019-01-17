@@ -12,15 +12,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0d598302ae78ca0b2a1e7c1f94c949800378a2e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7caa09f384ce460a3e73b21b10d6d8022182dde7
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724675"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349496"
 ---
 # <a name="iactivescriptprofilercontrol-interface"></a>IActiveScriptProfilerControl (Interfaz)
-Implementada por el motor de scripting que admita la generación de perfiles. Normalmente, un objeto que implementa el `IActiveScriptProfilerControl` también implementa el [IActiveScript](../../winscript/reference/iactivescript.md) interfaz. En este caso, puede obtener un identificador para el `IActiveScriptProfilerControl` interfaz mediante una llamada a la `IUnknown::QueryInterface` método del objeto. La interfaz proporciona los métodos necesarios para detener e iniciar la generación de perfiles en el motor de scripting.  
+Implementado por el motor de scripting que admite la generación de perfiles. Normalmente, un objeto que implementa el `IActiveScriptProfilerControl` también implementa el [IActiveScript](../../winscript/reference/iactivescript.md) interfaz. En este caso, puede obtener un identificador para el `IActiveScriptProfilerControl` interfaz mediante una llamada a la `IUnknown::QueryInterface` método en el objeto. La interfaz proporciona los métodos necesarios para detener e iniciar la generación de perfiles en el motor de scripting.  
   
 ## <a name="methods"></a>Métodos  
   

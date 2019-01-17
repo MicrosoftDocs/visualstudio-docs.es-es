@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a4f254825e27793999932b772ac4bc2512908fae
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803888"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347312"
 ---
 # <a name="default-can-only-appear-once-in-a-switch-statement"></a>'default' solo puede aparecer una vez en una instrucción 'switch'.
 Se intentó utilizar el **predeterminada** instrucción más de una vez dentro de una instrucción switch. El caso predeterminado siempre es la última instrucción case en una instrucción switch (es el caso desestimado).  

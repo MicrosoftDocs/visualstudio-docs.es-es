@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26c97fda6fc8657164e22d51eb041017a6239d98
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5feb67b1a616eeaa855b27cb12ea9b3146545ebd
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729225"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345128"
 ---
 # <a name="iprocessdebugmanager-interface"></a>IProcessDebugManager (Interfaz)
-Interfaz principal para el Administrador de depuración de procesos. Esta interfaz puede crear, agregar o quitar una aplicación virtual de un proceso. Pueden enumerar los marcos de pila y los subprocesos de la aplicación.  
+Interfaz principal del administrador de depuración del proceso. Esta interfaz puede crear, agregar o quitar una aplicación virtual de un proceso. Puede enumerar los marcos de pila y subprocesos de la aplicación.  
   
  Además de los métodos heredados de `IUnknown`, el `IProcessDebugManager` interfaz expone los métodos siguientes.  
   
@@ -32,6 +32,6 @@ Interfaz principal para el Administrador de depuración de procesos. Esta interf
 |------------|-----------------|  
 |[IProcessDebugManager::CreateApplication](../../winscript/reference/iprocessdebugmanager-createapplication.md)|Crea un nuevo objeto de aplicación de depuración para esta aplicación.|  
 |[IProcessDebugManager::GetDefaultApplication](../../winscript/reference/iprocessdebugmanager-getdefaultapplication.md)|Devuelve un objeto de aplicación predeterminado para el proceso actual.|  
-|[IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)|Agrega una aplicación a la lista del Administrador de máquina depurar las aplicaciones en ejecución.|  
-|[IProcessDebugManager::RemoveApplication](../../winscript/reference/iprocessdebugmanager-removeapplication.md)|Quita una aplicación desde el que se ejecuta lista de aplicaciones.|  
+|[IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)|Agrega una aplicación a la lista del Administrador de máquina depuración de aplicaciones en ejecución.|  
+|[IProcessDebugManager::RemoveApplication](../../winscript/reference/iprocessdebugmanager-removeapplication.md)|Quita el que se ejecuta en una aplicación lista de aplicaciones.|  
 |[IProcessDebugManager::CreateDebugDocumentHelper](../../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md)|Crea una nuevo auxiliar de documento de depuración para esta aplicación.|

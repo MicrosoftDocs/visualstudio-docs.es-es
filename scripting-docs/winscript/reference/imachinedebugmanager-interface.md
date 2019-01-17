@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 74c092edc4ed437926c28c19bd331b3b50f8cd4b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 56f06908efd7022988b742a783cb56544bffe3ea
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728805"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347832"
 ---
 # <a name="imachinedebugmanager-interface"></a>IMachineDebugManager (Interfaz)
-La interfaz principal para Machine Debug Manager. Esta interfaz es similar a la `IMachineDebugManagerCookie` interfaz.  
+La interfaz principal para el Administrador de depuración de la máquina. Esta interfaz es similar a la `IMachineDebugManagerCookie` interfaz.  
   
  Además de los métodos heredados de `IUnknown`, el `IMachineDebugManager` interfaz expone los métodos siguientes.  
   
@@ -30,9 +30,9 @@ La interfaz principal para Machine Debug Manager. Esta interfaz es similar a la 
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IMachineDebugManager::AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)|Agrega una aplicación en el que se ejecuta lista de aplicaciones.|  
-|[IMachineDebugManager::RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)|Quita una aplicación desde el que se ejecuta lista de aplicaciones.|  
-|[IMachineDebugManager::EnumApplications](../../winscript/reference/imachinedebugmanager-enumapplications.md)|Devuelve un enumerador de la lista actual de las aplicaciones en ejecución.|  
+|[IMachineDebugManager::AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)|Agrega a la que se ejecuta una aplicación de lista de aplicaciones.|  
+|[IMachineDebugManager::RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)|Quita el que se ejecuta en una aplicación lista de aplicaciones.|  
+|[IMachineDebugManager::EnumApplications](../../winscript/reference/imachinedebugmanager-enumapplications.md)|Devuelve un enumerador de la lista actual de aplicaciones en ejecución.|  
   
 ## <a name="see-also"></a>Vea también  
  [IMachineDebugManagerCookie (Interfaz)](../../winscript/reference/imachinedebugmanagercookie-interface.md)

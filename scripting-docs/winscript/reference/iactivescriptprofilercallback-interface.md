@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2511b3e622dfa977c0ed05212203ad59fb0e71bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912628"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345869"
 ---
 # <a name="iactivescriptprofilercallback-interface"></a>IActiveScriptProfilerCallback (Interfaz)
 Proporciona métodos que se usan por el motor de scripting para notificar a un objeto de generador de perfiles cuando se producen eventos. Esta interfaz se implementa mediante el objeto de generador de perfiles.  

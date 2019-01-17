@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d29bfa1b3f23ce206e2fe63fd669548a074e3dd6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bf84b0b839e1a4a9e29b0de5382776946ecf5b1e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726555"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344075"
 ---
 # <a name="idebugdocumenttextauthor-interface"></a>IDebugDocumentTextAuthor (Interfaz)
-Proporciona documentos de texto que admiten la edición.  
+Proporciona los documentos de texto que compatibilidad con la edición.  
   
  Además de los métodos heredados de `IDebugDocumentText`, el `IDebugDocumentTextAuthor` interfaz expone los métodos siguientes.  
   
@@ -30,6 +30,6 @@ Proporciona documentos de texto que admiten la edición.
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IDebugDocumentTextAuthor::InsertText](../../winscript/reference/idebugdocumenttextauthor-inserttext.md)|Inserta un nuevo texto en el documento.|  
+|[IDebugDocumentTextAuthor::InsertText](../../winscript/reference/idebugdocumenttextauthor-inserttext.md)|Inserta el nuevo texto en el documento.|  
 |[IDebugDocumentTextAuthor::RemoveText](../../winscript/reference/idebugdocumenttextauthor-removetext.md)|Quita el texto del documento.|  
 |[IDebugDocumentTextAuthor::ReplaceText](../../winscript/reference/idebugdocumenttextauthor-replacetext.md)|Reemplaza el texto del documento.|

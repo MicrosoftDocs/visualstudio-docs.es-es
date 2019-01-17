@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 17ffec5e6b4cfff85b49f61e7105ca8ce3d75c78
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633185"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348469"
 ---
 # <a name="the-number-of-fractional-digits-is-out-of-range"></a>El número de dígitos fraccionarios está fuera de intervalo
-Se intentó pasar un argumento no válido a la función **Number.prototype.toExponential**. El argumento para la función **toExponential()** debe estar entre 0 y 20 (ambos inclusive).  
+Se intentó pasar un argumento no válido a la función **Number.prototype.toExponential**. El argumento a la función **toExponential()** debe estar comprendido entre 0 y 20 (ambos inclusive).  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Asegúrese del argumento **toExponential()** no es demasiado grande o demasiado pequeño.  
+-   Garantizar que el argumento para **toExponential()** no es demasiado grande o demasiado pequeño.  
   
 ## <a name="see-also"></a>Vea también  
  [toExponential (Método, Number)](../../javascript/reference/toexponential-method-number-javascript.md)

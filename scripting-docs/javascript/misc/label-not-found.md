@@ -21,20 +21,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: df36f35b8e681c22e38f19b00fb25b680c6323ef
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633085"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346984"
 ---
 # <a name="label-not-found"></a>No se encuentra la etiqueta
-Realiza una referencia a una etiqueta que no existe. Las etiquetas pueden usarse para marcar los bloques de código, pero en un ámbito especificado, debe ser únicas.  
+Realiza una referencia a una etiqueta que no existe. Las etiquetas se puede usar para marcar los bloques de código, pero en un ámbito especificado, debe ser únicas.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
 -   Compruebe para asegurarse de que no escribió mal el nombre de etiqueta.  
   
--   Asegúrese de que todas las referencias de etiqueta se realizan en las etiquetas que se han definido en el ámbito actual (Esto incluye las definiciones de hacia delante).  
+-   Asegúrese de que se realizan todas las referencias a las etiquetas que se han definido en el ámbito actual (Esto incluye las definiciones de hacia delante).  
   
 ## <a name="see-also"></a>Vea también  
  [Instrucción con etiqueta](../../javascript/reference/labeled-statement-javascript.md)   

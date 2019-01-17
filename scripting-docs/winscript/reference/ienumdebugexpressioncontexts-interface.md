@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f48a9bcf42b0aadd3716924e120bff403d87769d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 691fe68e78567026bd6ad96883b59aa276481191
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728365"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347598"
 ---
 # <a name="ienumdebugexpressioncontexts-interface"></a>IEnumDebugExpressionContexts (Interfaz)
-Enumera una colección de `IDebugExpressionContexts` objetos.  
+Enumera una colección de objetos `IDebugExpressionContexts`.  
   
  Además de los métodos heredados de `IUnknown`, el `IEnumDebugExpressionContexts` interfaz expone los métodos siguientes.  
   

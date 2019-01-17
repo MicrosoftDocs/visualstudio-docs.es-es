@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 61546ac1dbc03184691e4e178070ecbd7c86cf75
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802001"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348170"
 ---
 # <a name="with-not-available-in-the-ecma-327-compact-profile"></a>'with' no está disponible en ECMA 327 Compact Profile
 'with' no está disponible en ECMA 327 Compact Profile (ErrWithNotInCP  

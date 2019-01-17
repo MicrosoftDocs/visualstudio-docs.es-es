@@ -21,22 +21,22 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0fd4dc6ff9008b03c3e8cc81385d6ebe0fe89396
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633065"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349574"
 ---
 # <a name="unterminated-string-constant-javascript"></a>Constante de cadena sin terminar (JavaScript)
-No ha finalizado la constante de cadena con un signo de comillas de cierre. Las constantes de cadena deben incluirse dentro de un par de comillas.  
+No se terminó la constante de cadena con una comilla de cierre. Las constantes de cadena deben estar delimitadas por un par de comillas.  
   
 > [!NOTE]
->  Puede utilizar parejas de comillas simples o dobles. Puede contener comillas dobles en cadenas delimitadas por comillas simples y puede contener comillas simples en cadenas delimitadas por comillas dobles.  
+>  Puede usar los pares coincidentes de las comillas simples o dobles. Las comillas dobles pueden incluirse en cadenas delimitadas por comillas simples y comillas simples puede incluirse en cadenas delimitadas por comillas dobles.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
 -   Agregue la comilla de cierre al final de la cadena.  
   
 ## <a name="see-also"></a>Vea también  
- [String (objeto)](../../javascript/reference/string-object-javascript.md)   
+ [Objeto de cadena](../../javascript/reference/string-object-javascript.md)   
  [toString (Método, Object)](../../javascript/reference/tostring-method-object-javascript.md)

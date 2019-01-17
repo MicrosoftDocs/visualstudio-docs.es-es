@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 250c104d24f27900a6ff0eb8e8f72644f820bf5a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 41fff384bc9075d94fcfa84d94350fec72ebc64a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726805"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348885"
 ---
 # <a name="idebugstackframesniffer-interface"></a>IDebugStackFrameSniffer (Interfaz)
-Proporciona una manera para enumerar los marcos de pila lógica conocidos por un componente. Motores de script normalmente implementan esta interfaz. El Administrador de depuración de proceso utiliza esta interfaz para buscar todos los marcos de pila asociada a un subproceso determinado.  
+Proporciona una manera de enumerar los marcos de pila lógicos conocidos por un componente. Motores de script normalmente implementan esta interfaz. El Administrador de depuración de proceso utiliza esta interfaz para buscar todos los marcos de pila asociada con un subproceso determinado.  
   
 > [!NOTE]
->  El depurador llama a esta interfaz desde dentro del subproceso de interés. El motor de scripts debe identificar el subproceso actual y devuelve un enumerador correspondiente.  
+>  El depurador llama a esta interfaz desde dentro del subproceso de interés. El motor de scripts debe identificar el subproceso actual y devolver un enumerador correspondiente.  
   
 ## <a name="methods"></a>Métodos  
  Además de los métodos heredados de `IUnknown`, el `IDebugStackFrameSniffer` interfaz expone los métodos siguientes.  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IDebugStackFrameSniffer::EnumStackFrames](../../winscript/reference/idebugstackframesniffer-enumstackframes.md)|Devuelve un enumerador de los marcos de pila del subproceso actual.|
+|[IDebugStackFrameSniffer::EnumStackFrames](../../winscript/reference/idebugstackframesniffer-enumstackframes.md)|Devuelve un enumerador de marcos de pila del subproceso actual.|

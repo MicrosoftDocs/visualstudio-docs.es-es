@@ -14,19 +14,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a776592ba09031e633a82f10e8d0ed9852db4b6e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 84b5ac06d0b284a7a1f65481e0cdf8947117f260
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726445"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347897"
 ---
 # <a name="idebugasyncoperationcallback-interface"></a>IDebugAsyncOperationCallBack (Interfaz)
-Proporciona eventos de estado relacionados con el progreso de un `IDebugAsyncOperation` evaluación de la interfaz.  
+Proporciona eventos de estado relacionados con el progreso de la evaluación de una interfaz `IDebugAsyncOperation`.  
   
 ## <a name="methods"></a>Métodos  
  Además de los métodos heredados de `IUnknown`, el `IDebugAsyncOperationCallBack` interfaz expone los métodos siguientes.  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IDebugAsyncOperationCallBack::onComplete](../../winscript/reference/idebugasyncoperationcallback-oncomplete.md)|Indica que un resultado está disponible en una operación asincrónica de depuración.|
+|[IDebugAsyncOperationCallBack::onComplete](../../winscript/reference/idebugasyncoperationcallback-oncomplete.md)|Indica que un resultado está disponible en una operación de depuración asincrónica.|

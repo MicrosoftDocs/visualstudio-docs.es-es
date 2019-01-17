@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f47778075b0395e4f0791d8f485188d40fab87a4
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802597"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344179"
 ---
 # <a name="cannot-assign-to-this"></a>No se puede asignar a 'this'
 Se intentó asignar un valor a **esto**. **Esto** es un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] palabra clave que hace referencia a uno:

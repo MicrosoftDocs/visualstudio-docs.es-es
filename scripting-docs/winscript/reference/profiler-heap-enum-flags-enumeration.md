@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2c711dd3a4174f38bf2f3b3e163805e6cfa1c314
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54091837"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345232"
 ---
 # <a name="profilerheapenumflags-enumeration"></a>PROFILER_HEAP_ENUM_FLAGS (Enumeración)
 Marcas que representan si se expone información adicional sobre un objeto de montón al que se apunta en una relación de objeto. Utilizado en el [EnumHeap2](../../winscript/reference/iactivescriptprofilercontrol5-enumheap2-method.md) método.  
@@ -35,4 +35,4 @@ typedef [v1_enum] enum {    PROFILER_HEAP_ENUM_FLAGS_NONE                      =
 |PROFILER_HEAP_ENUM_FLAGS_NONE|0x00000000|Este objeto de pila no expone información adicional sobre una relación de objeto. Este objeto de pila se comporta de la misma manera que [IActiveScriptProfilerControl3::HeapEnum](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md).|  
 |PROFILER_HEAP_ENUM_ENUM_ STORE_RELATIONSHIP_FLAGS|0x00000001|Este objeto de pila expone información sobre si un objeto designado en una relación de objeto es un método de captador o establecedor. Esta información se almacenará en los 2 bytes (16 bits) de la [PROFILER_HEAP_OBJECT_RELATIONSHIP.relationshipInfo](../../winscript/reference/profiler-heap-object-relationship-structure.md) campo como uno de los [PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS](../../winscript/reference/profiler-heap-object-relationship-flags-enumeration.md) valores de enumeración.|  
 |PROFILER_HEAP_ENUM_FLAGS_SUBSTRINGS|0x00000002|Este objeto de pila se usa para mostrar correctamente la subcadena.|  
-|PROFILER_HEAP_ENUM_FLAGS_RELATIONSHIP_SUBSTRINGS|PROFILER_HEAP_ENUM_FLAGS_STORE_RELATIONSHIP_FLAGS &AMP;#124; PROFILER_HEAP_ENUM_FLAGS_SUBSTRINGS|Este objeto de pila se usa para mostrar correctamente la subcadena.|
+|PROFILER_HEAP_ENUM_FLAGS_RELATIONSHIP_SUBSTRINGS|PROFILER_HEAP_ENUM_FLAGS_STORE_RELATIONSHIP_FLAGS &#124; PROFILER_HEAP_ENUM_FLAGS_SUBSTRINGS|Este objeto de pila se usa para mostrar correctamente la subcadena.|

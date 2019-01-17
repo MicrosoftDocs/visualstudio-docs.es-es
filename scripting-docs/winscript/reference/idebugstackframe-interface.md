@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36fa0ba2d1b4049ad41ff0502ed33be0a706d9f6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0834abbedf88b911dd952c1f3928c5da3414abec
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727535"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348547"
 ---
 # <a name="idebugstackframe-interface"></a>IDebugStackFrame (Interfaz)
-Representa un marco de pila lógica en la pila del subproceso. Llame a la `IDebugStackFrame::QueryInterface` método para obtener el `IDebugExpressionContext` interfaz, lo que permite las ventanas inspección y evaluación de expresión.  
+Representa un marco de pila lógico en la pila de subprocesos. Llame a la `IDebugStackFrame::QueryInterface` método para obtener el `IDebugExpressionContext` interfaz, que permite las ventanas inspección y evaluación de expresión.  
   
  Además de los métodos heredados de `IUnknown`, el `IDebugStackFrame` interfaz expone los métodos siguientes.  
   
@@ -30,8 +30,8 @@ Representa un marco de pila lógica en la pila del subproceso. Llame a la `IDebu
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IDebugStackFrame::GetCodeContext](../../winscript/reference/idebugstackframe-getcodecontext.md)|Devuelve el contexto actual de código asociado con el marco de pila.|  
-|[IDebugStackFrame::GetDescriptionString](../../winscript/reference/idebugstackframe-getdescriptionstring.md)|Devuelve una descripción a corta o largo textual del marco de pila.|  
-|[IDebugStackFrame::GetLanguageString](../../winscript/reference/idebugstackframe-getlanguagestring.md)|Devuelve una descripción de texto largo o corta del idioma.|  
+|[IDebugStackFrame::GetCodeContext](../../winscript/reference/idebugstackframe-getcodecontext.md)|Devuelve el contexto de código actual asociado con el marco de pila.|  
+|[IDebugStackFrame::GetDescriptionString](../../winscript/reference/idebugstackframe-getdescriptionstring.md)|Devuelve una descripción de texto largos o corta del marco de pila.|  
+|[IDebugStackFrame::GetLanguageString](../../winscript/reference/idebugstackframe-getlanguagestring.md)|Devuelve una descripción de texto largos o corta del lenguaje.|  
 |[IDebugStackFrame::GetThread](../../winscript/reference/idebugstackframe-getthread.md)|Devuelve el subproceso asociado a este marco de pila.|  
 |[IDebugStackFrame::GetDebugProperty](../../winscript/reference/idebugstackframe-getdebugproperty.md)|Devuelve un explorador de propiedades para el marco actual.|

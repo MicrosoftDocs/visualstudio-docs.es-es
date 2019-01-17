@@ -14,18 +14,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 56d6e63c41db274634b2593989800ea0392b93a6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 76f10d6bbb34c61e87a1be0f61dcd7db168274e7
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726765"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348495"
 ---
 # <a name="idebugstackframesnifferex-interface"></a>IDebugStackFrameSnifferEx (Interfaz)
-Proporciona una manera para enumerar los marcos de pila lógica conocidos por un componente. Motores de script normalmente implementan esta interfaz. El Administrador de depuración de proceso utiliza esta interfaz para buscar todos los marcos de pila asociada a un subproceso determinado.  
+Proporciona una manera de enumerar los marcos de pila lógicos conocidos por un componente. Motores de script normalmente implementan esta interfaz. El Administrador de depuración de proceso utiliza esta interfaz para buscar todos los marcos de pila asociada con un subproceso determinado.  
   
 > [!NOTE]
->  Esta interfaz se llama desde el subproceso de interés. Implementación de la interfaz debe identificar el subproceso actual y devuelve un enumerador correspondiente.  
+>  Esta interfaz se llama desde dentro del subproceso de interés. La implementación de interfaz debe identificar el subproceso actual y devolver un enumerador correspondiente.  
   
  Además de los métodos heredados de `IDebugStackFrameSniffer`, el `IDebugStackFrameSnifferEx` interfaz expone los métodos siguientes.  
   
@@ -33,4 +33,4 @@ Proporciona una manera para enumerar los marcos de pila lógica conocidos por un
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IDebugStackFrameSnifferEx::EnumStackFramesEx](../../winscript/reference/idebugstackframesnifferex-enumstackframesex.md)|Devuelve un enumerador de los marcos de pila del subproceso actual.|
+|[IDebugStackFrameSnifferEx::EnumStackFramesEx](../../winscript/reference/idebugstackframesnifferex-enumstackframesex.md)|Devuelve un enumerador de marcos de pila del subproceso actual.|

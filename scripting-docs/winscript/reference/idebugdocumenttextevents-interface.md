@@ -14,18 +14,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 078cd468b64d30c20f48a3392aa4509ed054fc3d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bec89ae81d79fb7b0d822cafe2bf44f0ecd8ad81
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728005"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345666"
 ---
 # <a name="idebugdocumenttextevents-interface"></a>IDebugDocumentTextEvents (Interfaz)
-Proporciona eventos que indican los cambios en el documento de texto asociado.  
+Proporciona eventos que indican los cambios realizados en el documento de texto asociado.  
   
 > [!NOTE]
->  El texto del documento cambia cuando se activan los eventos en el objeto de la interfaz. Controladores de eventos pueden recuperar el nuevo texto usando el `IDebugDocumentText` interfaz.  
+>  El texto del documento cambia cuando los eventos en esta interfaz de incendios. Controladores de eventos pueden recuperar el texto nuevo mediante el `IDebugDocumentText` interfaz.  
   
  Además de los métodos heredados de `IUnknown`, el `IDebugDocumentTextEvents` interfaz expone los métodos siguientes.  
   

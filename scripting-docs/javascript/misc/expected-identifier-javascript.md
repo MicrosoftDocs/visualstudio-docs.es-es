@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ff69e433aaa68f88102219cdaf3a77746779370f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632875"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349236"
 ---
 # <a name="expected-identifier-javascript"></a>Se esperaba un identificador (JavaScript)
-Usar un valor distinto de un identificador en un contexto donde se requirió uno. Un identificador puede ser:  
+Utiliza un valor distinto de un identificador en un contexto donde uno era necesaria. Un identificador puede ser:  
   
--   una variable  
+-   una variable,  
   
--   una propiedad  
+-   una propiedad,  
   
 -   una matriz,  
   
@@ -40,7 +40,7 @@ Usar un valor distinto de un identificador en un contexto donde se requirió uno
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Cambie la expresión para que aparezca un identificador a la izquierda del signo igual.  
+-   Cambie la expresión para que un identificador que aparece a la izquierda del signo igual.  
   
 ## <a name="see-also"></a>Vea también  
  [Uso de matrices](../../javascript/advanced/using-arrays-javascript.md)

@@ -14,15 +14,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3360cea0d1649348a795356ad827b32b6f8ebc19
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2fd51d5bdd076199167e52f685f16572756f9740
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729405"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346558"
 ---
 # <a name="iremotedebugapplicationex-interface"></a>IRemoteDebugApplicationEx (Interfaz)
-Representa una aplicación en ejecución. No es necesario que corresponda a un proceso del sistema operativo. Normalmente, un depurador tiene como destino una aplicación para la depuración. Normalmente, el Administrador de procesos de depuración implementa el objeto de aplicación.  
+Representa una aplicación en ejecución. No debe corresponder a un proceso del sistema operativo. Normalmente, un depurador tiene como destino una aplicación para la depuración. Normalmente, el Administrador de procesos de depuración implementa el objeto de aplicación.  
   
  Además de los métodos heredados de `IUnknown`, el `IRemoteDebugApplicationEx` interfaz expone los métodos siguientes.  
   
@@ -30,10 +30,10 @@ Representa una aplicación en ejecución. No es necesario que corresponda a un p
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IRemoteDebugApplicationEx:GetHostPid](../../winscript/reference/iremotedebugapplicationex-gethostpid.md)|Devuelve el identificador de proceso de la aplicación host.|  
+|[IRemoteDebugApplicationEx:GetHostPid](../../winscript/reference/iremotedebugapplicationex-gethostpid.md)|Devuelve el identificador de proceso para la aplicación host.|  
 |GetHostMachineName|Devuelve el nombre del equipo que se ejecuta la aplicación host.|  
-|[IRemoteDebugApplicationEx:SetLocale](../../winscript/reference/iremotedebugapplicationex-setlocale.md)|Establece el idioma para la localización de depurador.|  
+|[IRemoteDebugApplicationEx:SetLocale](../../winscript/reference/iremotedebugapplicationex-setlocale.md)|Establece el idioma para la localización del depurador.|  
 |[IRemoteDebugApplicationEx:ForceStepMode](../../winscript/reference/iremotedebugapplicationex-forcestepmode.md)|Fuerza al depurador en modo paso a paso.|  
 |[IRemoteDebugApplicationEx:RevokeBreak](../../winscript/reference/iremotedebugapplicationex-revokebreak.md)|Revoca un comando de interrupción.|  
-|SetProxyBlanketAndAddRef|Actualiza la información de seguridad de COM en un servidor proxy para un objeto de depurador para garantizar su compatibilidad con la depuración remota de sistemas operativos basados en Windows 95.|  
-|ReleaseFromSetProxyBlanket|AddRef de versiones de SetProxyBlanketAndAddRef.|
+|SetProxyBlanketAndAddRef|Actualiza la información de seguridad de COM en un servidor proxy para un objeto de depurador para garantizar la compatibilidad con la depuración remota de sistemas operativos basados en Windows 95.|  
+|ReleaseFromSetProxyBlanket|AddRef versiones desde SetProxyBlanketAndAddRef.|

@@ -14,18 +14,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2dc420f3c59a59373c6e3a2be9e7254eea451585
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 20d895f8bd6d4919def00625e9f285afdfe4f866
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729295"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349873"
 ---
 # <a name="iremotedebugapplication110getmainthread"></a>IRemoteDebugApplication110::GetMainThread
 Devuelve el subproceso principal para los hosts que llaman a [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439), en caso contrario, devuelve E_FAIL.  
   
 > [!IMPORTANT]
->  [IRemoteDebugApplication (interfaz)](../../winscript/reference/iremotedebugapplication-interface.md) se implementa mediante PDM v11.0 y versiones posteriores. Se encuentra en activdbg100.h.  
+>  [IRemoteDebugApplication (interfaz)](../../winscript/reference/iremotedebugapplication-interface.md) es implementada por PDM v11.0 y versiones posteriores. Se encuentra en activdbg100.h.  
   
 ## <a name="syntax"></a>Sintaxis  
   
