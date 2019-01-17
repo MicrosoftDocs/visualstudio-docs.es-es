@@ -11,10 +11,10 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 683e0cae09144777cbb27ef294676cc44dc0a1a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53830838"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Depuración remota de ASP.NET Core en un equipo remoto de IIS en Visual Studio 2017

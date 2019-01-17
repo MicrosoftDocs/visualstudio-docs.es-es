@@ -29,10 +29,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: d970d2b761b2987bc74e94eb5bfefa8f0ffc78ec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53892460"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Especificar archivos de código fuente y símbolos (.pdb) en el depurador de Visual Studio (C#, C++, Visual Basic, F#)
@@ -155,7 +155,7 @@ Puede seleccionar opciones de símbolos adicionales en **herramientas** > **opci
   Puede limitar los comandos que *srcsrv.dll* puede ejecutar desde la aplicación *.pdb* archivo con una lista de los comandos permitidos en un archivo denominado *srcsrv.ini*. Colocar el *srcsrv.ini* archivo en la misma carpeta que *srcsrv.dll* y *devenv.exe*.  
   
   >[!IMPORTANT]
-  >Se pueden incrustar comandos arbitrarios en una aplicación *.pdb* de archivos, así que asegúrese de colocar únicamente los comandos que desea ejecutar en un *srcsrv.ini* archivo. Todo intento de ejecutar un comando no incluido en el archivo *srcsvr.ini* provocará la aparición de un cuadro de diálogo de confirmación. Para obtener más información, consulte [advertencia de seguridad: El depurador debe ejecutar un comando que no es de confianza](../debugger/security-warning-debugger-must-execute-untrusted-command.md) 
+  >Se pueden incrustar comandos arbitrarios en una aplicación *.pdb* de archivos, así que asegúrese de colocar únicamente los comandos que desea ejecutar en un *srcsrv.ini* archivo. Todo intento de ejecutar un comando no incluido en el archivo *srcsvr.ini* provocará la aparición de un cuadro de diálogo de confirmación. Para obtener más información, consulte [advertencia de seguridad: El depurador debe ejecutar un comando que no es de confianza](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
   >
   >No se realiza ninguna validación de los parámetros de comando, por lo que debe tener cuidado con los comandos de confianza. Por ejemplo, si se ha incluido *cmd.exe* en su *srcsrv.ini*, un usuario malintencionado podría especificar parámetros de *cmd.exe* que sería peligroso.  
   
@@ -179,7 +179,7 @@ Cuando compila un proyecto desde el IDE de Visual Studio con el estándar **depu
     
     El *VC\<x > .pdb* archivo almacena toda información de depuración para los archivos de objeto individuales y reside en el mismo directorio que el archivo MAKE del proyecto. Cada vez que crea un archivo de objeto, el compilador de C/C ++ combina la información de depuración en *VC\<x > .pdb*. Por tanto, incluso si cada archivo de código fuente incluye archivos de encabezado comunes como  *\<windows.h >*, se almacenan las definiciones de tipo de esos encabezados solo una vez, en lugar de en todos los archivos objeto. La información insertada incluye información de tipo, pero no información de símbolo como definiciones de función.  
   
-  - *\<proyecto > .pdb* 
+  - *\<project>.pdb* 
     
     El  *\<proyecto > .pdb* archivo almacena toda la información de depuración para el proyecto *.exe* de archivos y reside en el *\debug* subdirectorio. El archivo *\<proyecto.pdb* contiene toda la información de depuración, incluidos los prototipos de función, y no solo la información de tipo que se encuentra en *VC\<x>.pdb*. 
   

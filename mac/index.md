@@ -5,29 +5,29 @@ author: conceptdev
 ms.author: crdun
 ms.date: 11/03/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 10b27c26fcef622687b64f225dd04ae966f43cd5
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 59e349b1d784e68c3ef6842834d875ce5d1917bb
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895683"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315558"
 ---
-# <a name="introducing-visual-studio-for-mac"></a>Presentación de Visual Studio para Mac
+# <a name="visual-studio-for-mac"></a>Visual Studio para Mac
 
 Visual Studio para Mac es un IDE moderno y sofisticado con numerosas características para crear aplicaciones móviles, web y de escritorio. Admite los siguientes tipos de desarrollo:
 
-* Tecnología móvil con. NET: Android, iOS, tvOS, watchOS
-* Aplicaciones de escritorio de Mac
-* Aplicaciones .NET Core
-* Aplicaciones web ASP.NET Core
-* Juegos multiplataforma de Unity
+- Móvil con .NET: Android, iOS, tvOS, watchOS
+- Aplicaciones de escritorio de Mac
+- Aplicaciones .NET Core
+- Aplicaciones web ASP.NET Core
+- Juegos multiplataforma de Unity
 
 Incluye características como un editor enriquecido, depuración, integración de plataforma nativa con iOS, Mac y Android, y control de código fuente integrado.
 
 En este artículo se analizan varias secciones de Visual Studio para Mac y se presentan las características que lo convierten en una herramienta eficaz para crear aplicaciones multiplataforma.
 
 > [!TIP]
-> Ya está disponible la versión preliminar de Visual Studio 2019 para Mac para realizar pruebas. Siga estas [instrucciones de instalación](install-preview.md) y eche un vistazo al [paseo por el IDE](ide-tour.md).
+> La **versión preliminar de Visual Studio 2019 para Mac** ya está disponible con fines de pruebas. Siga estas [instrucciones de instalación](/visualstudio/mac/installation/?view=vsmac-2019) y vea el [Paseo de IDE de 2019](/visualstudio/mac/ide-tour/?view=vsmac-2019).
 
 ## <a name="installation"></a>Instalación
 
@@ -55,16 +55,16 @@ Para poder ejecutar proyectos de .NET Core es necesario descargar e instalar el 
 
 La compatibilidad con .NET Core incluye:
 
-* IntelliSense de C# y F#.
-* Plantillas de proyecto de .NET Core para aplicaciones web, de biblioteca y de consola.
-* Compatibilidad de depuración total, incluidos puntos de interrupción, pila de llamadas, ventana de inspección, etc.
-* NuGet PackageReferences y restauración basada en MSBuild.
-* Compatibilidad con pruebas unitarias integradas para la ejecución y la depuración de pruebas con la plataforma de pruebas de Visual Studio que se incluye con el SDK de .NET Core.
-* Migración desde el formato antiguo project.json.
+- IntelliSense de C# y F#.
+- Plantillas de proyecto de .NET Core para aplicaciones web, de biblioteca y de consola.
+- Compatibilidad de depuración total, incluidos puntos de interrupción, pila de llamadas, ventana de inspección, etc.
+- NuGet PackageReferences y restauración basada en MSBuild.
+- Compatibilidad con pruebas unitarias integradas para la ejecución y la depuración de pruebas con la plataforma de pruebas de Visual Studio que se incluye con el SDK de .NET Core.
+- Migración desde el formato antiguo project.json.
 
 Para empezar, vea el [laboratorio práctico](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started) de aplicaciones web de ASP.NET Core.
 
-## <a name="xamarin"></a>Xamarin
+## <a name="xamarin-mobile-app-development"></a>Desarrollo de aplicaciones móviles con Xamarin
 
 La compatibilidad de primera clase con [Xamarin](https://developer.xamarin.com/) le permite desarrollar experiencias nativas completas para Android, macOS, iOS, tvOS y watchOS. Las aplicaciones multiplataforma de Xamarin.Forms ayudan a compartir código de interfaz de usuario basado en XAML entre Android, iOS y macOS sin limitar el acceso a la funcionalidad nativa.
 
@@ -121,8 +121,8 @@ Para obtener más información, vea la guía de [Xamarin Inspector](https://deve
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-* **Paseo introductorio**: para obtener una visión general de muchas de las características principales de Visual Studio para Mac, vea el [paseo por el IDE](ide-tour.md) de Visual Studio para Mac.
-* **Instalación**: para obtener información sobre cómo descargar e instalar Visual Studio, vea la guía de [instalación](installation.md).
-* **Tutoriales de Xamarin**: para obtener más información sobre cómo desarrollar código con Xamarin, vaya al [Centro para desarrolladores](https://developer.xamarin.com) de Xamarin.
-* **Vídeos**: para obtener más información sobre otras características y aspectos de Visual Studio para Mac, vea los vídeos del sitio web de [Xamarin University](https://university.xamarin.com).
-* **Laboratorios prácticos**: para empezar a trabajar con las diversas cargas de trabajo incluidas en Visual Studio para Mac, vea los [laboratorios prácticos](https://github.com/Microsoft/vs4mac-labs).
+- **Paseo introductorio**: para obtener una visión general de muchas de las características principales de Visual Studio para Mac, vea el [paseo por el IDE](/visualstudio/mac/ide-tour/) de Visual Studio para Mac.
+- **Configuración**: para obtener información sobre cómo descargar e instalar Visual Studio 2017 para Mac, vea la [Guía de instalación](/visualstudio/mac/installation/?view=vsmac-2017).
+- **Tutoriales de Xamarin**: para obtener más información sobre cómo desarrollar código con Xamarin, vaya al [Centro para desarrolladores](https://developer.xamarin.com) de Xamarin.
+- **Vídeos**: para obtener más información sobre otras características y aspectos de Visual Studio para Mac, vea los vídeos del sitio web de [Xamarin University](https://university.xamarin.com).
+- **Laboratorios prácticos**: para empezar a trabajar con las diversas cargas de trabajo incluidas en Visual Studio para Mac, vea los [laboratorios prácticos](https://github.com/Microsoft/vs4mac-labs).

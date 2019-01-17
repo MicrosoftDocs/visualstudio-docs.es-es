@@ -22,10 +22,10 @@ caps.latest.revision: 87
 ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 31d11e16eba87efd19ae07afde64e27e9905636c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53899605"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usar UI Automation para probar el código
@@ -158,7 +158,7 @@ Las pruebas automatizadas que controlan la aplicación a través de la interfaz 
 
    Las secciones restantes de este tema proporcionan más detalles sobre los pasos de este procedimiento.
 
-   Para obtener un ejemplo más detallado, consulte [Tutorial: Crear, modificar y mantener una prueba de IU codificada](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md). En el tutorial, se creará una aplicación Windows Presentation Foundation (WPF) simple para mostrar cómo crear, modificar y mantener una prueba de IU codificada. El tutorial proporciona soluciones para la corrección de pruebas que han sido interrumpidas por diversos problemas de sincronización y de control de refactorización.
+   Para obtener un ejemplo más detallado, vea [Tutorial: Crear, editar y mantener una prueba automatizada de IU](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md). En el tutorial, se creará una aplicación Windows Presentation Foundation (WPF) simple para mostrar cómo crear, modificar y mantener una prueba de IU codificada. El tutorial proporciona soluciones para la corrección de pruebas que han sido interrumpidas por diversos problemas de sincronización y de control de refactorización.
 
 ###  <a name="starting"></a> Iniciar y detener la aplicación sometida a pruebas
  *No deseo iniciar y detener la aplicación, explorador o base de datos por separado para cada prueba. ¿Cómo puedo evitarlo?*
@@ -305,7 +305,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
     -   Después de crear una prueba de IU codificada, puede modificarla para que esté controlada por datos. Para obtener más información, consulte [Crear una prueba de IU codificada controlada por datos](../test/creating-a-data-driven-coded-ui-test.md).
 
-    -   En una reproducción de prueba de UI codificada, puede indicar a la prueba que espere a que se produzcan ciertos eventos, como que se muestre una ventana, que se oculte la barra de progreso, etc. Para ello, agregue el método UITestControl.WaitForControlXXX() adecuado. Para obtener una lista completa de los métodos disponibles, consulte [Hacer que la prueba de IU codificada espere por eventos concretos durante la reproducción](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Para obtener un ejemplo de una prueba de IU codificada que espera un control se habilite con el método WaitForControlEnabled, consulte [Tutorial: Crear, modificar y mantener una prueba de IU codificada](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+    -   En una reproducción de prueba de UI codificada, puede indicar a la prueba que espere a que se produzcan ciertos eventos, como que se muestre una ventana, que se oculte la barra de progreso, etc. Para ello, agregue el método UITestControl.WaitForControlXXX() adecuado. Para obtener una lista completa de los métodos disponibles, consulte [Hacer que la prueba de IU codificada espere por eventos concretos durante la reproducción](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Para obtener un ejemplo de una prueba automatizada de UI que espera a que se habilite un control mediante el método WaitForControlEnabled, vea [Tutorial: Crear, editar y mantener una prueba automatizada de IU](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
     -   Las pruebas de IU codificadas proporcionan soporte para algunos de los controles HTML5 incluidos en Internet Explorer 9 o Internet Explorer 10. Para obtener más información, consulte [Usar controles HTML5 en pruebas de IU codificada](../test/using-html5-controls-in-coded-ui-tests.md).
 
@@ -491,7 +491,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Mejorar la calidad del código](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
-- [Tutorial: Crear, modificar y mantener una prueba de IU codificada](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+- [Tutorial: Crear, editar y mantener una prueba automatizada de IU](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Anatomía de una prueba de IU codificada](../test/anatomy-of-a-coded-ui-test.md)
 - [Procedimientos recomendados para las pruebas de IU codificadas](../test/best-practices-for-coded-ui-tests.md)
 - [Probar una aplicación grande con varios mapas de IU](../test/testing-a-large-application-with-multiple-ui-maps.md)

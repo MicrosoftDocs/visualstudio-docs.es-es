@@ -14,15 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3330c86c84318be68619a8d031a034b33faa7fd1
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 1b30675b126f6ed50022f4996cbad9de9226eb59
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305668"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54269922"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Enlazar controles de WPF a un servicio de datos de WCF
 
@@ -80,7 +79,7 @@ Iniciar este tutorial creando un proyecto para un servicio de datos de WCF:
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>Crear un Entity Data Model para el servicio
 
-Para exponer datos a una aplicación mediante el uso de un servicio de datos de WCF, debe definir un modelo de datos para el servicio. El servicio de datos de WCF admite dos tipos de modelos de datos: Entity Data Model y modelos de datos personalizados que se definen mediante objetos de common language runtime (CLR) que implementan la <xref:System.Linq.IQueryable%601> interfaz. En este tutorial, se crea un Entity Data Model para el modelo de datos.
+Para exponer datos a una aplicación mediante el uso de un servicio de datos de WCF, debe definir un modelo de datos para el servicio. El servicio de datos de WCF admite dos tipos de modelos de datos: Entity Data Model y modelos de datos personalizados que se definen mediante objetos de Common Language Runtime (CLR) que implementan la interfaz <xref:System.Linq.IQueryable%601>. En este tutorial, se crea un Entity Data Model para el modelo de datos.
 
 1. En el menú **Proyecto** , haga clic en **Agregar nuevo elemento**.
 
@@ -285,7 +284,7 @@ Compile y ejecute la aplicación para comprobar que puede ver y actualizar los r
 
 3. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto **AdventureWorksSalesEditor**.
 
-4. En el menú contextual, en **Depurar**, haga clic en **Iniciar nueva instancia**.
+4. En el menú contextual (menú contextual), en **depurar**, haga clic en **Iniciar nueva instancia**.
 
      La aplicación se ejecuta. Compruebe lo siguiente:
 
@@ -307,7 +306,7 @@ Una vez completado este tutorial, puede realizar las siguientes tareas relaciona
 
 - Aprenda cómo usar la ventana **Orígenes de datos** en Visual Studio para enlazar controles WPF a otros tipos de orígenes de datos. Para obtener más información, consulte [WPF enlazar controles a un conjunto de datos](../data-tools/bind-wpf-controls-to-a-dataset.md).
 
-- Aprenda cómo usar la ventana **Orígenes de datos** en Visual Studio para mostrar datos relacionados (es decir, datos en una relación primario-secundario) en controles WPF. Para obtener más información, consulte [Tutorial: mostrar datos relacionados en una aplicación WPF](../data-tools/display-related-data-in-wpf-applications.md).
+- Aprenda cómo usar la ventana **Orígenes de datos** en Visual Studio para mostrar datos relacionados (es decir, datos en una relación primario-secundario) en controles WPF. Para obtener más información, vea [Tutorial: Visualización de datos relacionados en una aplicación de WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
 ## <a name="see-also"></a>Vea también
 

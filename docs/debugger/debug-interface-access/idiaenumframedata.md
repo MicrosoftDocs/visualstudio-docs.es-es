@@ -13,10 +13,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 65917b88144bfe86c9159772588888c590e2cd7e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53876294"
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
@@ -101,7 +101,7 @@ void ShowFrameData(IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>Requisitos  
- **Header** dia2.h  
+ **Encabezado**: dia2.h  
   
  **Biblioteca:** diaguids.lib  
   

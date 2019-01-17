@@ -1,8 +1,6 @@
 ---
 title: Usar el recopilador independiente IntelliTrace | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.collectdataoutsideVS
@@ -14,14 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fbcb39638439261d234c14ff9422badaf6bdeb3
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
-ms.translationtype: HT
+ms.openlocfilehash: 882d357b606ec5bb0419c88dc9c996ccd4a749a6
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684868"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54227725"
 ---
-# <a name="using-the-intellitrace-stand-alone-collector"></a>Usar el recopilador independiente de IntelliTrace
+# <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Usar el recopilador independiente IntelliTrace (C#, Visual Basic)
+
 El **recolector independiente IntelliTrace** permite recopilar datos de diagnóstico de IntelliTrace para las aplicaciones en servidores de producción o en otros entornos sin instalar Visual Studio en el equipo de destino y sin cambiar el entorno del sistema de destino. El recolector independiente IntelliTrace funciona en aplicaciones web, de Sharepoint, de WPF y de Windows Forms. Cuando la recolección de datos haya terminado, basta con eliminar el recolector para desinstalarlo.
 
  Observe IntelliTrace en acción: [Recopilar y analizar datos de IntelliTrace en producción para la depuración (vídeo de Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)
@@ -71,7 +70,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
 5.  [Recopilar datos de una aplicación web o de una aplicación de SharePoint](#BKMK_Collect_Data_from_IIS_Application_Pools)
 
-     O bien
+     o bien
 
      [Recopilar datos de una aplicación administrada](#BKMK_Collect_Data_from_Executables)
 
@@ -128,7 +127,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
          Por ejemplo:
 
-         `icacls "C:\IntelliTraceCollector" /grant "` *\<Dominio\IdUsuario >* `":F`
+         `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
 
     2.  Dé permisos de lectura y ejecución en el directorio del recolector al grupo de aplicaciones de la aplicación web o la aplicación de SharePoint.
 
@@ -192,7 +191,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
         `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
-       O bien
+       o bien
 
    - Para configurar permisos con el Explorador de Windows (o el Explorador de archivos):
 
@@ -214,7 +213,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
 1.  Para iniciar la recolección de datos, abra una ventana de comandos de PowerShell como administrador y ejecute este comando:
 
-     `Start-IntelliTraceCollection` `"` *\<ApplicationPool >* `"`  *\<Rutaaccesoplanrecolección >*  *\<FullPathToITraceFileDirectory >*
+     `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*
 
     > [!IMPORTANT]
     >  Después de ejecutar este comando, escriba **Y** para confirmar que desea iniciar la recolección de datos.
@@ -256,7 +255,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
 1.  Use esta sintaxis para iniciar la aplicación y recopilar datos al mismo tiempo:
 
-     *\<Rutaaccesocompletaejecutableintellitracecollector >* `\IntelliTraceSC.exe launch /cp:`  *\<Rutaaccesoplanrecolección >* `/f:`  *\< Rutaaccesocompletanombrearchivoydirectorioarchivositrace >*  *\<Rutaaccesonombrearchivoyarchivoejecutableaplicación >*
+     *\<FullPathToIntelliTraceCollectorExecutable>* `\IntelliTraceSC.exe launch /cp:` *\<PathToCollectionPlan>* `/f:` *\<FullPathToITraceFileDirectoryAndFileName>* *\<PathToAppExecutableFileAndFileName>*
 
      Por ejemplo, para recopilar datos de una aplicación denominada **MyApp**:
 
@@ -366,7 +365,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
    Sí. Para reducir el impacto en el rendimiento, IntelliTrace restringe la recolección de datos a los valores de los tipos de datos primitivos pasados a métodos y devueltos de estos, así como a los valores de los tipos de datos primitivos en campos de objetos de nivel superior pasados a métodos y devueltos de estos.
 
-   Por ejemplo, suponga que tiene una signatura de método `AlterEmployee` que acepta un entero `id` y un objeto `Employee`de `oldemployee`:
+   Por ejemplo, suponga que tiene una signatura de método `AlterEmployee` que acepta un entero `id` y un objeto `Employee` de `oldemployee`:
 
    `public Employee AlterEmployee(int id, Employee oldemployee)`
 
@@ -380,7 +379,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
 -   Desde una sesión de depuración en Visual Studio Enterprise con IntelliTrace, vea [las características de IntelliTrace](../debugger/intellitrace-features.md).
 
--   En una sesión de prueba en Microsoft Test Manager, consulte [Cómo: Recopilar datos de IntelliTrace para ayudar a depurar problemas difíciles](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).
+-   En una sesión de prueba en Microsoft Test Manager, consulte [Cómo: para recopilar datos de IntelliTrace para ayudar a depurar problemas difíciles
 
 ## <a name="where-can-i-get-more-information"></a>¿Dónde puedo obtener más información?
  [Uso de datos de IntelliTrace guardados](../debugger/using-saved-intellitrace-data.md)
@@ -394,7 +393,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
  [Optimizar la recolección de IntelliTrace en servidores de producción](http://go.microsoft.com/fwlink/?LinkId=255233)
 
- [DevOps de Microsoft](https://blogs.msdn.microsoft.com/devops/)
+ [Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)
 
 ### <a name="forums"></a>Foros
  [Depurador de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)
