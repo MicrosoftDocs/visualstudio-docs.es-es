@@ -14,21 +14,21 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3043a3c36b2f1ebdf439f22b1de19dd559e50cfa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9a160b17f4a46237ab78b378664a046fe8a0e7d4
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725135"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345726"
 ---
 # <a name="iactivescriptsitewindow"></a>IActiveScriptSiteWindow
-Hosts que admitan una interfaz de usuario en el mismo objeto que implementa esta interfaz [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) . Los hosts que no son compatibles con una interfaz de usuario, como los servidores, no se implementaría el `IActiveScriptSiteWindow` interfaz. El motor de scripting tiene acceso a esta interfaz mediante una llamada a `QueryInterface` de `IActiveScriptSite`.  
+Esta interfaz se implementa con los hosts que admiten una interfaz de usuario en el mismo objeto que [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) . Los hosts que no admiten una interfaz de usuario, como los servidores, no implementaría el `IActiveScriptSiteWindow` interfaz. El motor de scripting se tiene acceso a esta interfaz mediante una llamada a `QueryInterface` desde `IActiveScriptSite`.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IActiveScriptSiteWindow::GetWindow](../../winscript/reference/iactivescriptsitewindow-getwindow.md)|Recupera el identificador de ventana que puede actuar como el propietario de una ventana emergente que debe mostrar el motor de scripting.|  
+|[IActiveScriptSiteWindow::GetWindow](../../winscript/reference/iactivescriptsitewindow-getwindow.md)|Recupera el identificador de ventana que puede actuar como el propietario de una ventana emergente que se debe mostrar el motor de scripting.|  
 |[IActiveScriptSiteWindow::EnableModeless](../../winscript/reference/iactivescriptsitewindow-enablemodeless.md)|Hace que el host habilitar o deshabilitar su ventana principal, así como los cuadros de diálogo no modal.|  
   
 ## <a name="see-also"></a>Vea también  

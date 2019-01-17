@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f54117dc6d169d11498f15d034fa584fc2e9f64b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633585"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346142"
 ---
 # <a name="undefined-identifier"></a>Identificador no definido
-Se intentó utilizar un identificador que el [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] compilador no reconoce. Siempre que se use, se devuelve el valor no definido:  
+Ha intentado utilizar un identificador que el [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] compilador no reconoce. Siempre que se use, se devuelve el valor no definido:  
   
 -   una variable que no existe,  
   
--   una variable que se ha declarado pero nunca tenía un valor asignado a él,  
+-   una variable que se ha declarado, pero no ha tenido nunca un valor asignado a él,  
   
 -   una propiedad de objeto que no existe.  
   

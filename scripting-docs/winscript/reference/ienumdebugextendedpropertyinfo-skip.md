@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: cc88f41e1c75a2b6616cc6aba363b8824605a696
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094840"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345297"
 ---
 # <a name="ienumdebugextendedpropertyinfoskip"></a>IEnumDebugExtendedPropertyInfo::Skip
 Omite un número especificado de `ExtendedDebugPropertyInfo` estructuras en una secuencia de enumeración.  

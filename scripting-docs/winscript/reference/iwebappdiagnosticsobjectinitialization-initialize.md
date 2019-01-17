@@ -1,5 +1,5 @@
 ---
-title: IWebAppDiagnosticsObjectInitialization::Initialize | Documentos de Microsoft
+title: IWebAppDiagnosticsObjectInitialization::Initialize | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 32dab78619635f9603fa33794810deef9685a7d7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 067d690b463d80c5aa76394be8dabe08ad39baad
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733805"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344088"
 ---
 # <a name="iwebappdiagnosticsobjectinitializationinitialize"></a>IWebAppDiagnosticsObjectInitialization::Initialize
 Inicializa los objetos creados con [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md).  
@@ -38,4 +38,4 @@ HRESULT Initialize(        [in, annotation("__in")] HANDLE_PTR hPassedHandle,   
  El identificador que se pasó a la [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) método en el `hPassToObject` parámetro.  
   
  `pDebugApplication`  
- La aplicación de PDM con el que se creó el objeto.
+ La aplicación de PDM con la que se creó el objeto.

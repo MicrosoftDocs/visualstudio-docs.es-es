@@ -14,18 +14,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b259f5296f8e0b32def793a81e4c2e1069643306
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 31802d8b86f007139959f3ece3bd1a0260599181
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725355"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350029"
 ---
 # <a name="idebugapplication110callablewaitforhandles"></a>IDebugApplication110::CallableWaitForHandles
-Espera a que cualquiera de los identificadores especificados a que se señalice permitiendo que las llamadas entre subprocesos se registren en este subproceso. Este método se debe invocar desde el subproceso del depurador.  
+Espera a que cualquiera de los identificadores especificados que se señalen al tiempo que permite las llamadas entre subprocesos se publicarán en este subproceso. Este método debe llamarse desde el subproceso del depurador.  
   
 > [!IMPORTANT]
->  [IDebugApplication110 (interfaz)](../../winscript/reference/idebugapplication110-interface.md) se implementa mediante PDM v11.0 y versiones posteriores. Se encuentra en activdbg100.h.  
+>  [IDebugApplication110 (interfaz)](../../winscript/reference/idebugapplication110-interface.md) es implementada por PDM v11.0 y versiones posteriores. Se encuentra en activdbg100.h.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,13 +35,13 @@ HRESULT CallableWaitForHandles([in] DWORD handleCount, [in, size_is(handleCount)
   
 #### <a name="parameters"></a>Parámetros  
  `handleCount`  
- El número de identificadores de espera.  
+ El número de identificadores para esperar.  
   
  `pHandles`  
  El conjunto de identificadores de espera.  
   
  `pIndex`  
- Cuando el valor HRESULT es S_OK, el índice en `pHandles` para el identificador que se había señalado.  
+ Cuando el valor HRESULT es S_OK, el índice en `pHandles` para el identificador que fue señalado.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugApplication110 (Interfaz)](../../winscript/reference/idebugapplication110-interface.md)

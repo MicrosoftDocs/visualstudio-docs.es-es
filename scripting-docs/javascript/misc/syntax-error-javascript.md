@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a0df8de8df8e390cd1e361159a378da190518f43
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632965"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345375"
 ---
 # <a name="syntax-error-javascript"></a>Error de sintaxis (JavaScript)
 Crea una instrucción que infringe una o varias de las reglas gramaticales de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
@@ -34,7 +34,7 @@ Crea una instrucción que infringe una o varias de las reglas gramaticales de [!
   
 -   Compruebe la sintaxis del programa en el número de línea indicado.  
   
--   Busque incorrectamente paréntesis o llaves.  
+-   Busque dirijan paréntesis o llaves.  
   
 ## <a name="see-also"></a>Vea también  
  [Error (Objeto)](../../javascript/reference/error-object-javascript.md)

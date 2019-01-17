@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f85ef798a6507c92130cbddae98de87a9924415
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: eb7b09beb38fcdfb2a139fa385119cf9f76d77ae
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727035"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344233"
 ---
 # <a name="idebugdocumenttextexternalauthor-interface"></a>IDebugDocumentTextExternalAuthor (Interfaz)
-Permite a los editores externos para modificarlo de forma segura documentos basados en archivos depurador notificando el documento cuando se cambia el archivo de origen.  
+Permite que los editores externos para modificarlo de forma segura documentos basados en archivos depurador notificando el documento cuando se cambia el archivo de origen.  
   
  Además de los métodos heredados de `IUnknown`, el `IDebugDocumentTextExternalAuthor` interfaz expone los métodos siguientes.  
   

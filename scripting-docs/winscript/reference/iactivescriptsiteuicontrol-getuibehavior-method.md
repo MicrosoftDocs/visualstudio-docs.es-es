@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b52c94e9c8b14218362000df401fba24568ea426
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097310"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344803"
 ---
 # <a name="iactivescriptsiteuicontrolgetuibehavior-method"></a>IActiveScriptSiteUIControl::GetUIBehavior (Método)
 Obtiene un [SCRIPTUICHANDLING (enumeración)](../../winscript/reference/scriptuichandling-enumeration.md) que representa la forma en que debe controlarse un control de IU.  

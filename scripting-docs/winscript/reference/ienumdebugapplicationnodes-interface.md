@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf9c4fe6a8d789b1988a9a47b17adcba64b28827
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0e14b5567d96bccd0badb95f75558e0af329a62a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727655"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344240"
 ---
 # <a name="ienumdebugapplicationnodes-interface"></a>IEnumDebugApplicationNodes (Interfaz)
 Enumera los nodos secundarios de un nodo asociado a una aplicación.  

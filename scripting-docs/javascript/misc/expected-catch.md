@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 244635605abafc5c0bd22c5203b105aa6e7dc669
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53801988"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344114"
 ---
 # <a name="expected-catch"></a>Se esperaba 'catch'
 Usar el control de excepciones **intente** bloquea, pero no ha escrito asociado **catch** instrucción. El mecanismo de control de excepciones requiere que el código que puede producir un error, junto con el código que no se debe ejecutar si se produce una excepción, se ajusta dentro de un **intente** bloque. Excepciones desde el **intente** bloquear mediante la **throw** instrucción y capturadas fuera el **intente** bloque con uno o varios **catch**instrucciones.  

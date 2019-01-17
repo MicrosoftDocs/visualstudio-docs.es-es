@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 73fb9c7fb35aa33214806ac1d89f4c3f1b9a479e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633345"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347078"
 ---
 # <a name="the-precision-is-out-of-range"></a>La precisión está fuera de intervalo
 Se intentó pasar un argumento no válido a la función **Number.prototype.toPrecision**. El argumento **toPrecision** debe estar entre 1 y 21 (ambos inclusive).  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Asegúrese del argumento `toPrecision` no es demasiado grande o demasiado pequeño.  
+-   Garantizar que el argumento para `toPrecision` no es demasiado grande o demasiado pequeño.  
   
 ## <a name="see-also"></a>Vea también  
  [toPrecision (Método, Number)](../../javascript/reference/toprecision-method-number-javascript.md)

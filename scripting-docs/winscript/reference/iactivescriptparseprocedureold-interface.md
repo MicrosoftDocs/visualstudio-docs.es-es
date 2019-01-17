@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99cff9cd4d04c5d25489b6cc4c9b9af93792dc2a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fa7ea909680afdb65004f47e458d735e82ead929
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724425"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350002"
 ---
 # <a name="iactivescriptparseprocedureold-interface"></a>IActiveScriptParseProcedureOld (Interfaz)
-Permite que el texto del código fuente para procedimientos va a agregar a la secuencia de comandos. Para los lenguajes de secuencias de comandos interpretados que no tiene un entorno de creación independiente, como VBScript, esto proporciona un mecanismo alternativo (distinto de `IActiveScriptParse` o `IPersist*`) para agregar los procedimientos de script para el espacio de nombres.  
+Permite que el texto del código fuente para los procedimientos que se agregarán a la secuencia de comandos. Para los lenguajes de scripting interpretados que no tienen un entorno de creación independiente, como VBScript, esto proporciona un mecanismo alternativo (distinto de `IActiveScriptParse` o `IPersist*`) para agregar los procedimientos de la secuencia de comandos para el espacio de nombres.  
   
 > [!NOTE]
 >  Esta interfaz está en desuso en favor de la `IActiveScriptParseProcedure` interfaz.  
@@ -36,7 +36,7 @@ Permite que el texto del código fuente para procedimientos va a agregar a la se
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IActiveScriptParseProcedureOld::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedureold-parseproceduretext.md)|Analiza el procedimiento de código especificada y agrega el procedimiento para el espacio de nombres.|  
+|[IActiveScriptParseProcedureOld::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedureold-parseproceduretext.md)|Analiza el procedimiento de código especificado y agrega el procedimiento para el espacio de nombres.|  
   
 ## <a name="see-also"></a>Vea también  
  [IActiveScriptParseProcedure](../../winscript/reference/iactivescriptparseprocedure.md)

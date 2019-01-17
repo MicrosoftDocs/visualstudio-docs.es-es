@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b5f256639fbef222042ca3137eb9d19c2a97d702
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280382"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344699"
 ---
 # <a name="syntax-error-in-regular-expression-javascript"></a>Error de sintaxis en expresión regular (JavaScript)
 La estructura de la cadena de búsqueda infringe una o varias de las reglas gramaticales de un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] expresión regular.  

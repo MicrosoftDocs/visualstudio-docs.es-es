@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c55a2f270e4c82c578450092e5066b19fe9e606
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 12b997d5edab866f77dcb71f4d5ea0273786c577
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726535"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345986"
 ---
 # <a name="idebugexpressioncontext-interface"></a>IDebugExpressionContext (Interfaz)
-Representa un contexto de donde se pueden evaluar expresiones. El objeto de marco de pila implementa esta interfaz.  
+Representa un contexto donde se pueden evaluar expresiones. El objeto de marco de pila implementa esta interfaz.  
   
  Además de los métodos heredados de `IUnknown`, el `IDebugExpressionContext` interfaz expone los métodos siguientes.  
   
@@ -35,4 +35,4 @@ Representa un contexto de donde se pueden evaluar expresiones. El objeto de marc
 |Método|Descripción|  
 |------------|-----------------|  
 |[IDebugExpressionContext::ParseLanguageText](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md)|Crea una expresión de depuración para el texto especificado.|  
-|[IDebugExpressionContext::GetLanguageInfo](../../winscript/reference/idebugexpressioncontext-getlanguageinfo.md)|Devuelve un nombre y GUID para el idioma que posee este contexto.|
+|[IDebugExpressionContext::GetLanguageInfo](../../winscript/reference/idebugexpressioncontext-getlanguageinfo.md)|Devuelve un nombre y GUID para el lenguaje que posee este contexto.|

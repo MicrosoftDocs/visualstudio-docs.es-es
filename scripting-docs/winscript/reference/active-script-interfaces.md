@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc3bc5ed2b78f2577fdd5a9a715a210240e91e96
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7607616b2cba72010cc25bcfccc5a373de606302
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641475"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344335"
 ---
 # <a name="active-script-interfaces"></a>Active Script (Interfaces)
 El archivo de encabezado ActivScp.h proporciona las interfaces, enumeraciones y códigos de error enumerados en esta sección.  

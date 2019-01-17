@@ -1,5 +1,5 @@
 ---
-title: ICanHandleException (interfaz) | Documentos de Microsoft
+title: ICanHandleException (interfaz) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,19 +14,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bfd9fe2c766d3c390382ccfbcf2a8fd2319e48f5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 23b886b9960742abf94cc44c3631a1123fc0e83d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725215"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349977"
 ---
 # <a name="icanhandleexception-interface"></a>ICanHandleException (Interfaz)
-Permite que el llamador de un motor de secuencia de comandos para especificar las excepciones que el llamador identificadores.  
+Permite al llamador de un motor de secuencia de comandos para especificar las excepciones que el llamador identificadores.  
   
 ## <a name="methods"></a>Métodos  
  Además de los métodos heredados de `IUnknown`, el `ICanHandleException` interfaz expone los métodos siguientes.  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[ICanHandleException::CanHandleException](../../winscript/reference/icanhandleexception-canhandleexception.md)|Determina si el autor de la llamada del motor de secuencia de comandos puede controlar una excepción especificada.|
+|[ICanHandleException::CanHandleException](../../winscript/reference/icanhandleexception-canhandleexception.md)|Determina si el autor de llamada del motor de secuencia de comandos puede controlar una excepción especificada.|

@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d261e9dfaaf06145554eb80e2e9f63e8d429082d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 89f773ee24c2b50499d7d89bf590250f599b0edb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729115"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349951"
 ---
 # <a name="ienumremotedebugapplicationthreads-interface"></a>IEnumRemoteDebugApplicationThreads (Interfaz)
 Enumera los subprocesos en ejecución en una aplicación.  

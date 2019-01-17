@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode100::GetExcludedDocuments | Documentos de Microsoft
+title: IDebugApplicationNode100::GetExcludedDocuments | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ad8e8e2bbe8c643385bb4a989367d58d7c38725
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9de24002733ddd2918e59c908502a7daf4dd8e5a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725615"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346727"
 ---
 # <a name="idebugapplicationnode100getexcludeddocuments"></a>IDebugApplicationNode100::GetExcludedDocuments
 Obtiene los documentos de texto que están ocultos por el filtro especificado.  
   
 > [!IMPORTANT]
->  [IDebugApplicationNode100 (interfaz)](../../winscript/reference/idebugapplicationnode100-interface.md) se implementa mediante PDM v10.0 y versiones posteriores. Se encuentra en activdbg100.h.  
+>  [IDebugApplicationNode100 (interfaz)](../../winscript/reference/idebugapplicationnode100-interface.md) es implementada por PDM v10.0 y versiones posteriores. Se encuentra en activdbg100.h.  
   
 ## <a name="syntax"></a>Sintaxis  
   

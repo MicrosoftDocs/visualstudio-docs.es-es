@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: eabe34fdcb4551fc8bc794b84875a10a32e5ec33
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804343"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347208"
 ---
 # <a name="expected-"></a>Se esperaba ';'
 Se intentó colocar más de una instrucción en una línea, pero no sepárelos con punto y coma. Punto y coma se utiliza para finalizar las instrucciones. Aunque se pueden colocar varias instrucciones en una sola línea, cada uno de ellos debe estar separada de la siguiente con un punto y coma.  

@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4d9998a412aa3ecc9316a2595ac9daf707fd873
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 071a34b16ce9b3cbe7e73f44a01de889d113b7e4
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728625"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344244"
 ---
 # <a name="iremotedebugapplicationthreadex-interface"></a>IRemoteDebugApplicationThreadEx (Interfaz)
 Representa un subproceso de ejecución dentro de una aplicación determinada.  
@@ -30,4 +30,4 @@ Representa un subproceso de ejecución dentro de una aplicación determinada.
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IRemoteDebugApplicationThreadEx:EnumGlobalContexts](../../winscript/reference/iremotedebugapplicationthreadex-enumglobalcontexts.md)|Enumera los contextos de expresión global para todos los lenguajes que se ejecutan en este subproceso.|
+|[IRemoteDebugApplicationThreadEx:EnumGlobalContexts](../../winscript/reference/iremotedebugapplicationthreadex-enumglobalcontexts.md)|Enumera los contextos de expresión global para todos los idiomas que se ejecutan en este subproceso.|
