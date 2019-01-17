@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ed85ba87aaa8d78f6c9ad3470e454f60346e2ae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 891b83d6a43cb73fe8f38bb8b20201cbcfa230f6
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958610"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154087"
 ---
 # <a name="basictype"></a>BasicType
 Especifica el tipo básico del símbolo.  
@@ -43,7 +43,7 @@ enum BasicType { 
    btComplex  = 28,  
    btBit      = 29,  
    btBSTR     = 30,  
-   btHresult  = 31  
+   btHresult  = 31,  
    btChar16   = 32,  // char16_t
    btChar32   = 33,  // char32_t
 };  

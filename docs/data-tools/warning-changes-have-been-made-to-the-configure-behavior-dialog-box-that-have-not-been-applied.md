@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: f53164bd4ffe74be2715d89215e6c9c1b526f2bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 8e0d7c00cf902baa41586301ff338ebfef78c5aa
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847842"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204062"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Advertencia: Se han realizado cambios en el cuadro de diálogo Configurar comportamiento que no se han aplicado
 
@@ -22,13 +22,11 @@ Advertencia. Se han realizado cambios en el cuadro de diálogo Configurar compor
 
 El **configurar comportamiento** cuadro de diálogo le permite configurar `Insert`, `Update`, y `Delete` comportamiento para todas las clases disponibles. Este mensaje aparece al seleccionar una nueva combinación de **Clase** y **Comportamiento** cuando todavía no se ha aplicado el cambio anterior.
 
-## <a name="to-apply-the-change-and-continue"></a>Para aplicar el cambio y continuar
+## <a name="change-options"></a>Cambiar opciones
 
-- Haga clic en **Sí** para aplicar el cambio en la **Clase** y el **Comportamiento** seleccionados.
+- Para aplicar el cambio y continuar, haga clic en **Sí**. El cambio se aplique seleccionada **clase** y **comportamiento**.
 
-## <a name="to-cancel-the-previous-change-and-continue"></a>Para cancelar el cambio anterior y continuar
-
-- Haga clic en **No** para cancelar el cambio en la **Clase** y el **Comportamiento** seleccionados.
+- Para cancelar el cambio anterior y continuar, haga clic en **No**.
 
 ## <a name="see-also"></a>Vea también
 
