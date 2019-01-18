@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a47c0f9718f43c86375f9ff8668d2dfa1efa9785
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83dc9bd74615c60a5a39d7b095b4466f332eb60e
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880415"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54270026"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Creación de una UI con el Diseñador XAML en Visual Studio
 
@@ -162,7 +162,7 @@ La ventana Esquema del documento del Diseñador XAML ayuda a realizar estas tare
 
 - Crear y modificar plantillas para elementos que son controles.
 
-- Usar el menú contextual para los elementos seleccionados. El mismo menú también está disponible para los elementos seleccionados en la mesa de trabajo.
+- Usar el menú de botón derecho (menú contextual) para los elementos seleccionados. El mismo menú también está disponible para los elementos seleccionados en la mesa de trabajo.
 
 Para ver la ventana **Esquema del documento**, en la barra de menús elija **Vista** > **Otras ventanas** > **Esquema del documento**.
 

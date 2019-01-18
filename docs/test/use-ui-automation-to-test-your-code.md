@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ddf9e610236cc50ccd809413bbe80e2eaad31a87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8dc3e25b55f5f30ebfeb9f790baba0bb5ad8797c
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840647"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54270198"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usar la automatización de la interfaz de usuario para probar el código
 
@@ -216,7 +216,7 @@ Para generar el código de las aserciones y agregar el control a la asignación 
 
 Si el control que quiere seleccionar pierde el foco y desaparece cuando intenta seleccionar la herramienta **Agregar aserciones** en el **Generador de pruebas automatizadas de IU**:
 
-A veces, al agregar controles y validar sus propiedades, es posible que tenga que usar el teclado. Por ejemplo, al intentar grabar una prueba automatizada de IU que usa un control de menú contextual, la lista de elementos del menú del control perderá el foco y desaparecerá cuando se intente seleccionar la herramienta **Agregar aserciones** desde el **Generador de pruebas automatizadas de IU**. Esto se muestra en la ilustración siguiente, donde el menú contextual de Internet Explorer pierde el foco y desaparece si intenta seleccionarlo con la herramienta **Agregar aserciones**.
+A veces, al agregar controles y validar sus propiedades, es posible que tenga que usar el teclado. Por ejemplo, al intentar grabar una prueba automatizada de IU que usa un control de menú de botón derecho, la lista de elementos del menú del control perderá el foco y desaparecerá cuando se intente seleccionar la herramienta **Agregar aserciones** desde el **Generador de pruebas automatizadas de IU**. Esto se muestra en la ilustración siguiente, donde el menú de botón derecho de Internet Explorer pierde el foco y desaparece si intenta seleccionarlo con la herramienta **Agregar aserciones**.
 
 ![PruebaAutomatizadaIU&#95;TecladoSelecciónControl](../test/media/codeduitest_selectcontrolkeyboard.png)
 

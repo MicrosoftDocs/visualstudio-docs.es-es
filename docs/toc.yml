@@ -820,12 +820,22 @@ items:
           href: ide/reference/options-text-editor-csharp-advanced.md
         - name: 'Editor de texto: C#, IntelliSense'
           href: ide/reference/options-text-editor-csharp-intellisense.md
+        - name: 'Editor de texto: HTML (formularios Web Forms), formato'
+          href: ide/reference/options-text-editor-html-formatting.md
+        - name: 'Editor de texto: HTML (formularios Web Forms), varios'
+          href: ide/reference/options-text-editor-html-miscellaneous.md
+        - name: 'Editor de texto: HTML (formularios Web Forms), validación'
+          href: ide/reference/options-text-editor-html-validation.md
         - name: 'Editor de texto: JavaScript, validación del código'
           href: ide/reference/options-text-editor-javascript-code-validation.md
         - name: 'Editor de texto: JavaScript, Formato'
           href: ide/reference/options-text-editor-javascript-formatting.md
         - name: 'Editor de texto: JavaScript, IntelliSense'
           href: ide/reference/options-text-editor-javascript-intellisense.md
+        - name: 'Editor de texto: JavaScript, Linting'
+          href: ide/reference/options-text-editor-javascript-linting.md
+        - name: 'Editor de texto: JavaScript, proyecto'
+          href: ide/reference/options-text-editor-javascript-project.md
         - name: 'Editor de texto: XAML, Formato'
           href: ide/reference/options-text-editor-xaml-formatting.md
         - name: 'Editor de texto: XAML, Varios'
@@ -1124,9 +1134,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Hable con nosotros
     href: ide/talk-to-us.md
-ms.openlocfilehash: e3003812bf0485082690feb08bc08373d8e03977
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 12a48d26a0bacf0151a9f30ac32f9d2b680d704c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270286"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349912"
