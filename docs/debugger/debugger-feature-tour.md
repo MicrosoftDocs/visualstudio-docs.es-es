@@ -1,8 +1,8 @@
 ---
-title: Introducción a la depuración en VS 2017
+title: Depuración de aplicaciones con Visual Studio
 description: Empiece a depurar aplicaciones mediante el depurador de Visual Studio
 ms.custom: mvc
-ms.date: 06/15/2018
+ms.date: 01/09/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf7bcba0ceaa71b933d4875cd5eee28d7cea0028
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a6363149165c9718300eec1074fdfc006709b3d3
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904974"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227894"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Primer vistazo al depurador de Visual Studio
 
@@ -185,7 +185,7 @@ En este ejemplo, el **Asistente de excepciones** muestra una excepción `System.
 
 En este ejemplo, la llamada a `DirectoryInfo` ha producido el error en la cadena vacía almacenada en la variable `value`.
 
-El Asistente de excepciones es una característica excelente que puede ayudar a depurar errores. También se pueden hacer cosas como ver detalles de errores y agregar una inspección desde el Asistente de excepciones. O bien, si fuera necesario, se pueden cambiar las condiciones para producir la excepción concreta.
+El Asistente de excepciones es una característica excelente que puede ayudar a depurar errores. También se pueden hacer cosas como ver detalles de errores y agregar una inspección desde el Asistente de excepciones. O bien, si fuera necesario, se pueden cambiar las condiciones para producir la excepción concreta. Para obtener más información sobre cómo controlar las excepciones en el código, vea [Fix bugs by writing better C# code](../debugger/write-better-code-with-visual-studio.md) (Mejora de la escritura de código de C# para corregir errores).
 
 > [!NOTE]
 > El Asistente de excepciones reemplaza al de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].

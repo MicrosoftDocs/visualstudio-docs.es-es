@@ -12,12 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8d6f6758b32f55a7567f1828e8902cd4ad3c906e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9023f094ca662a270d7a28609e09f012d8f445c
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953003"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154368"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Procedimiento para recopilar datos de IntelliTrace para ayudar a depurar problemas difíciles
 
@@ -61,7 +61,7 @@ Antes de seguir los pasos que se describen en este procedimiento, debe abrir la 
      Este proxy permite recopilar información sobre las llamadas HTTP de un cliente a un servidor web para los adaptadores de datos de diagnóstico de IntelliTrace y de impacto en las pruebas.
 
     > [!WARNING]
-    > Si decide utilizar una cuenta personalizada para la identidad que se utiliza para el grupo de aplicaciones en el servidor de Internet Information Server (IIS) donde piensa recoger los datos de Intellitrace, debe crear el perfil de usuario local en el equipo de IIS para la cuenta personalizada que se utiliza. Puede crear el perfil local para la cuenta personalizada iniciando sesión localmente en el equipo de IIS una vez o ejecutando la siguiente línea de comandos con las credenciales de la cuenta personalizada:
+    > Si decide usar una cuenta personalizada para la identidad usada para el grupo de aplicaciones en el servidor de Internet Information Server (IIS) donde quiera recopilar los datos de IntelliTrace, necesita crear el perfil de usuario local en el equipo de IIS para la cuenta personalizada que se use. Puede crear el perfil local para la cuenta personalizada iniciando sesión localmente en el equipo de IIS una vez o ejecutando la siguiente línea de comandos con las credenciales de la cuenta personalizada:
     >
     > **runas /user:domain\name /profile cmd.exe**
 

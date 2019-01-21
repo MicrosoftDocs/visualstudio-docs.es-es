@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebaacc2b3d90821605c804bec390c887a27cec0b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e2ce52e970187e2d18679b60522a24899a5e43e8
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915580"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227569"
 ---
-# <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise"></a>Ver las instantáneas con step-back de IntelliTrace (Visual Studio Enterprise)
+# <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise-c-visual-basic-c"></a>Consulta de las instantáneas con retroceso de IntelliTrace (Visual Studio Enterprise) (C#, Visual Basic, C++)
 
 **La característica step-back de IntelliTrace** toma automáticamente una instantánea de la aplicación en cada punto de interrupción y evento de paso del depurador. Las instantáneas registradas le permiten volver a puntos de interrupción anteriores y ver el estado de la aplicación tal y como estaba en un momento anterior. La característica step-back de IntelliTrace puede permitirle ahorrar tiempo cuando desea ver el estado anterior de la aplicación, pero no desea reiniciar la depuración ni volver a crear el estado de aplicación que se desea.
 

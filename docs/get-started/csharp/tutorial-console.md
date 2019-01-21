@@ -2,7 +2,7 @@
 title: 'Tutorial: Introducción a las aplicaciones de consola de C#'
 description: Aprenda a crear una aplicación de consola de C# en Visual Studio mediante un procedimiento paso a paso.
 ms.custom: seodec18, get-started
-ms.date: 12/12/2018
+ms.date: 01/10/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 333eeb3f826663d979e1cec444ede7eda4b55b2a
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 6114910f8c4cbeebc0301cc0c2167a49742823a5
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562222"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204436"
 ---
 # <a name="tutorial-get-started-with-a-c-console-app-in-visual-studio"></a>Tutorial: Introducción a la aplicación de consola de C# en Visual Studio
 
@@ -135,9 +135,11 @@ Como se muestra en la siguiente captura de pantalla, si ejecutamos la aplicació
 
 Vamos a corregir el código de forma que dé cabida a los decimales.
 
+1. Presione **Ctrl** + **B** para abrir el control **Buscar y reemplazar**.
+
 1. Cambie cada instancia de la variable `int` por `float`.
 
-   (Puede usar el control [Buscar y reemplazar](../../ide/finding-and-replacing-text.md#find-and-replace-control) para ayudarle en esta tarea. Para acceder al control de búsqueda en el editor de código, presione **Ctrl**+**F**. Tras ello, seleccione el botón **Buscar siguiente** o el botón **Buscar anterior** en el control de búsqueda. Para acceder a las opciones de reemplazo, seleccione el botón junto al cuadro de texto **Buscar**. Para realizar un reemplazo puntual, pulse el botón **Reemplazar siguiente** junto al cuadro de texto **Reemplazar**. Para reemplazar todas las coincidencias, seleccione el botón **Reemplazar todo**).
+    ![Animación del control Buscar y reemplazar donde se muestra cómo cambiar la variable int a float](./media/find-replace-control-animation.gif)
 
 1. Vuelva a ejecutar la aplicación Calculator y divida el número **42** entre el número **119**.
 
@@ -147,9 +149,7 @@ Vamos a corregir el código de forma que dé cabida a los decimales.
 
 Sin embargo, la aplicación genera solo un resultado decimal. Vamos a hacer algunos retoques más en el código para que la aplicación calcule decimales también.
 
-1. Cambie cada instancia de la variable `float` por `double`.
-
-1. Cambie cada instancia del método `Convert.ToInt32` por `Convert.ToDouble`.
+1. Use el control **Buscar y reemplazar** (**Ctrl** + **B**) para cambiar cada instancia de la variable `float` a `double` y cambiar cada instancia del método `Convert.ToInt32` a `Convert.ToDouble`.
 
 1. Ejecute la aplicación Calculator y divida el número **42.5** entre el número **119.75**.
 

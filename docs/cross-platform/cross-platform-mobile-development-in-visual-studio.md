@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 5923e3106ad93608effe2604d4305cc0f3038a58
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 2c040d0375a8ecb2872e148331166ecae45040cf
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802805"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154055"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Desarrollo móvil multiplataforma en Visual Studio
 
@@ -123,7 +123,7 @@ Con Visual Studio Tools para Xamarin, puede tener como destino Android, iOS y Wi
 
  Cuando esté listo para ejecutar la aplicación y ver su aspecto, use Android Emulator. Es rápido, fiable y fácil de instalar y configurar.
 
- También puede compilar una aplicación que tenga como destino la gran variedad de dispositivos Windows 10 mediante C++ y una plantilla de proyecto de aplicación para Plataforma universal de Windows (UWP). Obtenga más información sobre este punto en la sección [Tener como destino dispositivos Windows 10](#WindowsHTML), anteriormente en este tema.
+ También puede compilar una aplicación que tenga como destino todos los dispositivos con Windows 10 mediante C++ y una plantilla de proyecto de aplicación para Plataforma universal de Windows (UWP). Obtenga más información sobre este punto en la sección [Tener como destino dispositivos Windows 10](#WindowsHTML), anteriormente en este tema.
 
  Puede compartir código de C++ entre Android y Windows mediante la creación de una biblioteca compartida estática o dinámica.
 

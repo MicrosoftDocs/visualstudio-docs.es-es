@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87758b0f75b3b38f67f72f4a32122fa9d0955335
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb74e49cb72274292b56a01f0ec654ebe6e44815
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939984"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227283"
 ---
-# <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Inspeccionar el estado de la aplicación anterior mediante la característica step-back de IntelliTrace en Visual Studio
+# <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Inspección de los estados de aplicación anteriores mediante el retroceso de IntelliTrace en Visual Studio (Visual Studio Enterprise)
 
 La característica step-back (paso atrás) de IntelliTrace toma automáticamente una instantánea de la aplicación en cada punto de interrupción y evento de paso del depurador. Las instantáneas registradas le permiten volver a puntos de interrupción anteriores y ver el estado de la aplicación tal y como estaba en un momento anterior. La característica step-back de IntelliTrace puede permitirle ahorrar tiempo cuando desea ver el estado anterior de la aplicación, pero no desea reiniciar la depuración ni volver a crear el estado de aplicación que se desea.
 
@@ -26,7 +26,7 @@ La característica step-back de IntelliTrace está disponible a partir de Visual
 En este tutorial va a:
 
 > [!div class="checklist"]
-> * Activar eventos de IntelliTrace e instantáneas
+> * Activación de las instantáneas y los eventos de IntelliTrace
 > * Navegar por los eventos mediante los comandos Retroceder paso a paso y Avanzar paso a paso
 > * Ver las instantáneas de eventos
   

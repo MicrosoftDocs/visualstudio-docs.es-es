@@ -1,13 +1,13 @@
 ---
 title: -Rebuild (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Devenv, /rebuild switch
-- rebuild Devenv switch (/rebuild)
+- Rebuild Devenv switch (/Rebuild)
 - projects [Visual Studio], rebuilding
-- /rebuild Devenv switch
+- /Rebuild Devenv switch
 - applications [Visual Studio], rebuilding
 ms.assetid: c5a8a4bf-0e2b-46eb-a44a-8aeb29b92c32
 author: gewarren
@@ -15,52 +15,59 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 782a0864c692d8c50932f41077762c994f24eeae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 208bc533578d116fe55ad336f4aaee72eec94c3f
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985688"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268581"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
+
 Limpia y, después, compila la configuración de solución especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
-```cmd
-devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig ProjConfigName]
+```shell
+devenv SolutionName /Rebuild [SolnConfigName [/Project ProjName [/ProjectConfig ProjConfigName]] [/Out OutputFilename]]
 ```
 
 ## <a name="arguments"></a>Argumentos
- `SolnConfigName`
 
- Obligatorio. Nombre de la configuración de solución que se usará para recompilar la solución mencionada en `SolutionName`.
+- *SolutionName*
 
- `SolutionName`
+  Obligatorio. Ruta de acceso completa y nombre del archivo de solución.
 
- Obligatorio. Ruta de acceso completa y nombre del archivo de solución.
+- *SolnConfigName*
 
- /project `ProjName`
+  Opcional. Nombre de la configuración de solución que se usará (por ejemplo, `Debug` o `Release`) para recompilar la solución indicada en *SolutionName*. Si hay más de una plataforma de solución disponible, también tendrá que especificar la plataforma (por ejemplo, `Debug|Win32`). Si no se especifica este argumento o se usa una cadena vacía (`""`), la herramienta usará la configuración activa de la solución.
 
- Opcional. Ruta de acceso y nombre de un archivo de proyecto dentro de la solución. Puede especificar una ruta de acceso relativa desde la carpeta `SolutionName` al archivo del proyecto (o el nombre para mostrar del proyecto), o bien la ruta de acceso completa y el nombre del archivo del proyecto.
+- `/Project` *ProjName*
 
- /projectconfig `ProjConfigName`
+  Opcional. Ruta de acceso y nombre de un archivo de proyecto dentro de la solución. Puede escribir el nombre para mostrar del proyecto o una ruta de acceso relativa desde la carpeta *SolutionName* al archivo del proyecto. También puede especificar el nombre y la ruta de acceso completa del archivo del proyecto.
 
- Opcional. Nombre de una configuración de compilación de proyecto que se usará para crear el `/project` mencionado.
+- `/ProjectConfig` *ProjConfigName*
+
+  Opcional. Nombre de la configuración de compilación del proyecto (como `Debug` o `Release`) que se usará al recompilar el proyecto indicado en `/Project`. Si hay más de una plataforma de solución disponible, también tendrá que especificar la plataforma (por ejemplo, `Debug|Win32`). Si se especifica este modificador, reemplaza al argumento *SolnConfigName*.
+
+- `/Out` *OutputFilename*
+
+  Opcional. Nombre de un archivo que quiera enviar al resultado de la herramienta. Si el archivo ya existe, la herramienta anexa el resultado al final del archivo.
 
 ## <a name="remarks"></a>Comentarios
 
--   Este modificador realiza la misma función que el comando de menú **Recompilar solución** en el entorno de desarrollo integrado (IDE).
+- Este modificador realiza la misma acción que el comando de menú **Recompilar solución** en el IDE.
 
--   Escriba las cadenas que incluyen espacios entre comillas dobles.
+- Escriba las cadenas que incluyen espacios entre comillas dobles.
 
--   Se puede mostrar información de resumen de las limpiezas y compilaciones, incluidos los errores, en la ventana **Comandos** o en cualquier archivo de registro especificado con el modificador `/out`.
+- Se puede mostrar información de resumen de las limpiezas y compilaciones, incluidos los errores, en la **ventana de comandos** o en cualquier archivo de registro especificado con el modificador [/Out](out-devenv-exe.md).
 
 ## <a name="example"></a>Ejemplo
- En este ejemplo se limpia y se recompila el proyecto `CSharpWinApp` mediante la configuración de compilación de proyecto `Debug` en la configuración de solución `Debug` de `MySolution`.
 
-```cmd
-devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /rebuild Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
+En este ejemplo se limpia y recompila el proyecto `CSharpWinApp` con la configuración de compilación del proyecto `Debug` en `MySolution`.
+
+```shell
+devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /rebuild Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
 ## <a name="see-also"></a>Vea también

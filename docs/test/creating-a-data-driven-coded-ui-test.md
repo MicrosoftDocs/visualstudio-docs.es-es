@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e46353f7e38a1822d5cbcc21441d1d4dccdf5c57
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 120ca4ac409641af7b3a2b303830288cbcb0d20a
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968610"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270250"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Crear una prueba de IU codificada controlada por datos
 
@@ -64,11 +64,11 @@ En este ejemplo se crea una prueba de IU codificada que se ejecuta en la aplicac
    }
    ```
 
-5. Use el método `AddNumbers()` para comprobar que se ejecuta la prueba. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Ejecutar pruebas**. (Método abreviado de teclado: **Ctrl**+**R**,**T**).
+5. Use el método `AddNumbers()` para comprobar que se ejecuta la prueba. Coloque el cursor sobre el método de prueba que se muestra anteriormente, abra el menú contextual y seleccione **Ejecutar pruebas**. (Método abreviado de teclado: **Ctrl**+**R**,**T**).
 
     El resultado que indica si se ha superado la prueba se muestra en la ventana del **Explorador de pruebas**. Para abrir la ventana del Explorador de pruebas, en el menú **Prueba**, elija **Ventanas** y después **Explorador de pruebas**.
 
-6. Como un origen de datos puede usarse también para los valores de parámetro de aserción (los cuales usan la prueba para comprobar los valores esperados), vamos a agregar una aserción para validar que la suma de los dos números es correcta. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Generar código para prueba de IU codificada** y después **Usar generador de pruebas de IU codificadas**.
+6. Como un origen de datos puede usarse también para los valores de parámetro de aserción (los cuales usan la prueba para comprobar los valores esperados), vamos a agregar una aserción para validar que la suma de los dos números es correcta. Coloque el cursor en el método de prueba que se muestra anteriormente, abra el menú contextual y seleccione **Generar código para prueba de IU codificada** y después **Usar generador de pruebas de IU codificadas**.
 
     Asigne el control de texto de la calculadora que muestre la suma.
 
@@ -93,7 +93,7 @@ En este ejemplo se crea una prueba de IU codificada que se ejecuta en la aplicac
    }
    ```
 
-9. Compruebe que la prueba se ejecuta utilizando el método `ValidateSum()`. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Ejecutar pruebas**. (Método abreviado de teclado: **Ctrl**+**R**,**T**).
+9. Compruebe que la prueba se ejecuta utilizando el método `ValidateSum()`. Coloque el cursor sobre el método de prueba que se muestra anteriormente, abra el menú contextual y seleccione **Ejecutar pruebas**. (Método abreviado de teclado: **Ctrl**+**R**,**T**).
 
      En este momento, todos los valores de parámetro se definen en sus métodos como constantes. Después, vamos a crear un conjunto de datos para realizar la prueba controlada por datos.
 

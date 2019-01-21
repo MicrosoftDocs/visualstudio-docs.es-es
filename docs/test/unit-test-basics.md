@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce1689f6780f88dd57d41090969082de7ac5685d
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: e5b08592fdd60bf88ce703b1b97bd5485cc307ab
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060808"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270185"
 ---
 # <a name="unit-test-basics"></a>Conceptos básicos de las pruebas unitarias
 
@@ -83,7 +83,7 @@ En general, es más rápido generar el proyecto de prueba unitaria y los código
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Generar el proyecto de prueba unitaria y los códigos auxiliares correspondientes
 
-1. En la ventana del editor de código, haga clic en el botón secundario y elija **Crear pruebas unitarias** en el menú contextual.
+1. En la ventana del editor de código, haga clic con el botón derecho y seleccione **Crear pruebas unitarias** en el menú contextual.
 
     ![Desde la ventana del editor, vea el menú contextual](../test/media/createunittestsrightclick.png)
 

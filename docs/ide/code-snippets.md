@@ -18,12 +18,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: fc02a504cb6fa36a13992cf188eb0c14b6836fb1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c539e2a20f7fa32ccba86a56831c71b17fdbefa5
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889233"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269419"
 ---
 # <a name="code-snippets"></a>Fragmentos de código
 
@@ -61,7 +61,7 @@ finally
 }
 ```
 
-Para insertar este fragmento de código, haga clic en **Insertar fragmento de código** en el menú contextual de la ventana de código y, después, en **Visual C#**. Luego, escriba `tryf` y presione la tecla **TAB**. También puede escribir `tryf` y presionar **TAB** dos veces.
+Para insertar este fragmento de código, haga clic en **Insertar fragmento de código** en el menú contextual de la ventana de código y, después, en **Visual C#**, escriba `tryf` y presione la tecla **TAB**. También puede escribir `tryf` y presionar **TAB** dos veces.
 
 Un ejemplo de un fragmento de código rodear con: en el acceso directo de C++ `if` se puede utilizar como un fragmento de código de inserción o como un fragmento de código rodear con. Si selecciona una línea de código (por ejemplo, `return FALSE;`) y, después, hace clic en **Envolver con** > **if**, el fragmento de código se expandirá alrededor de la línea:
 

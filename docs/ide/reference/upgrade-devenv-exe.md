@@ -1,6 +1,6 @@
 ---
 title: -Upgrade (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
@@ -13,43 +13,51 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46e549dfdc661819dac00d0aa965616462130ad0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c106d05b81878c6d1d48f98a8c72358cfef3c6cf
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944728"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227465"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
-Actualiza el archivo de solución y todos sus archivos de proyecto, o el archivo de proyecto especificado, a los formatos actuales de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para estos archivos.
+
+Actualiza el archivo de solución y todos sus archivos de proyecto (o el archivo de proyecto especificado) a los formatos actuales de Visual Studio para estos archivos.
 
 ## <a name="syntax"></a>Sintaxis
 
-```cmd
-devenv SolutionFile | ProjectFile /upgrade
+```shell
+devenv {SolutionFile|ProjectFile} /Upgrade [/Out OutputFilename]
 ```
 
 ## <a name="arguments"></a>Argumentos
- `SolutionFile`
 
- Necesario si va a actualizar una solución completa y sus proyectos. Ruta de acceso y nombre de un archivo de solución. Se puede escribir solo el nombre del archivo de solución o una ruta de acceso completa y el nombre del archivo de solución. Si la carpeta o el archivo especificados no existen todavía, se crean.
+- *SolutionFile*
 
- `ProjectFile`
+  Necesario si va a actualizar una solución completa y sus proyectos. Ruta de acceso y nombre de un archivo de solución. Se puede escribir solo el nombre del archivo de solución o una ruta de acceso completa y el nombre del archivo de solución. Si la carpeta o el archivo indicado no existen aún, se crearán.
 
- Necesario si va a actualizar un único proyecto. Ruta de acceso y nombre de un archivo de proyecto dentro de la solución. Se puede escribir solo el nombre del archivo de proyecto o una ruta de acceso completa y el nombre del archivo de proyecto. Si la carpeta o el archivo especificados no existen todavía, se crean.
+- *ProjectFile*
+
+  Necesario si va a actualizar un único proyecto. Ruta de acceso y nombre de un archivo de proyecto dentro de la solución. Se puede escribir solo el nombre del archivo de proyecto o una ruta de acceso completa y el nombre del archivo de proyecto. Si la carpeta o el archivo indicado no existen aún, se crearán.
+
+- `/Out` *OutputFilename*
+
+  Opcional. Nombre de un archivo que quiera enviar al resultado de la herramienta. Si el archivo ya existe, la herramienta anexa el resultado al final del archivo.
 
 ## <a name="remarks"></a>Comentarios
- Se crean automáticamente copias de seguridad y se copian en un directorio denominado Backup que se crea en el directorio actual.
 
- Se deben desproteger las soluciones o los proyectos bajo el control de código fuente antes de poderse actualizar.
+Se guardan automáticamente copias de seguridad en un directorio denominado Backup que se crea en el directorio actual.
 
- Al utilizar el modificador `/upgrade` no se inicia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Los resultados de la actualización se pueden ver en el informe de actualización para el lenguaje de desarrollo de la solución o el proyecto. No se devuelve ninguna información de error o de uso. Para obtener más información sobre cómo actualizar proyectos en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], vea [Portar, migrar y actualizar proyectos de Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md).
+Se deben desproteger las soluciones o los proyectos bajo el control de código fuente antes de poderse actualizar.
+
+Si se usa el modificador `/Upgrade`, Visual Studio no se iniciará. Los resultados de la actualización se pueden ver en el informe de actualización para el lenguaje de desarrollo de la solución o el proyecto. No se devuelve ninguna información de error o de uso. Para obtener más información sobre cómo actualizar proyectos en Visual Studio, vea [Portar, migrar y actualizar proyectos de Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md).
 
 ## <a name="example"></a>Ejemplo
- En este ejemplo se actualiza un archivo de solución denominado "MyProject.sln" en la carpeta predeterminada para las soluciones de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
-```cmd
-devenv "MyProject.sln" /upgrade
+En este ejemplo se actualiza un archivo de solución denominado "MyProject.sln".
+
+```shell
+devenv "%USERPROFILE%\source\repos\MyProject\MyProject.sln" /upgrade
 ```
 
 ## <a name="see-also"></a>Vea también

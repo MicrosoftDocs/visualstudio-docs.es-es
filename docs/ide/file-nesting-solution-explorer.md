@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: douge
-ms.openlocfilehash: 3ba20e0df156cf2bba77bb919e55016692630ce7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d4e2767b5b4286dbf57cca6a3b1445cae55fe1a5
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831159"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269286"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>Personalizar el anidamiento de archivos en el Explorador de soluciones
 
@@ -131,7 +131,7 @@ Toda la configuración, incluida la personalizada, se puede administrar mediante
 
 ## <a name="create-solution-specific-and-project-specific-settings"></a>Crear una configuración específica de la solución y del proyecto
 
-Puede crear una configuración específica de la solución y del proyecto a través del menú contextual de la solución y el proyecto:
+Puede crear una configuración específica de la solución y del proyecto desde el menú contextual de la solución y el proyecto:
 
 ![Reglas de anidamiento específicas de la solución y el proyecto](media/filenesting_solutionprojectspecific.png)
 

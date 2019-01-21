@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5013e04d1d5b6c73255be907d2b460cb186cea8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c8fb33e1b6df6cd43aaaba9c38123ff7b941da5c
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968714"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269974"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Procedimiento para ver y editar código mediante Ver la definición (Alt+F12)
 
@@ -25,7 +25,7 @@ Se puede usar **Ver la definición** con código de C#, Visual Basic y C++. En V
 
 ### <a name="to-open-a-peek-definition-window"></a>Para abrir una ventana Ver la definición
 
-1. Para ver una definición, elija **Ver la definición** en el menú contextual del tipo o el miembro que quiera explorar. A partir de la versión 15.4 de Visual Studio 2017, si la opción está habilitada, también puede ver una definición utilizando el mouse y presionando **Ctrl** (u otro modificador) y haciendo clic en el nombre del miembro. También puede presionar **Alt**+**F12** en el teclado.
+1. Para ver una definición, seleccione **Ver la definición** en el menú contextual del tipo o el miembro que quiera explorar. A partir de la versión 15.4 de Visual Studio 2017, si la opción está habilitada, también puede ver una definición utilizando el mouse y presionando **Ctrl** (u otro modificador) y haciendo clic en el nombre del miembro. También puede presionar **Alt**+**F12** en el teclado.
 
      En esta ilustración se muestra la ventana **Ver la definición** para un método denominado `Print()`:
 

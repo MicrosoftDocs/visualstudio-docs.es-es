@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: d8dc2ff0f0bc010dd225372c0c96badd9251eae8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ef58fb7b1f58eb9d7618981251bdc7981142500
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964304"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315545"
 ---
 # <a name="xaml-designer-options-page"></a>Página de opciones del Diseñador XAML
 
@@ -57,15 +57,15 @@ Use esta configuración para determinar cómo funciona el zoom al editar un docu
 |||
 |-|-|
 |**Rueda del mouse**|Acerque el diseñador XAML desplazando la rueda del mouse.|
-|**Ctrl + rueda del mouse**|Acerque el diseñador XAML presionando la tecla CTRL mientras desplaza la rueda del mouse.|
-|**Alt + rueda del mouse**|Acerque el diseñador XAML presionando la tecla ALT mientras desplaza la rueda del mouse.|
+|**Ctrl + rueda del mouse**|Para acercar el Diseñador XAML, presione la tecla **Ctrl** mientras desplaza la rueda del mouse.|
+|**Alt + rueda del mouse**|Para acercar el Diseñador XAML, presione la tecla **Alt** mientras desplaza la rueda del mouse.|
 
 Esta configuración determina el comportamiento del diseñador al editar un documento XAML.
 
 |||
 |-|-|
 |**Asignar nombre automáticamente a los elementos interactivos cuando se creen**|Especifica si se proporciona un nombre predeterminado para un nuevo elemento interactivo cuando agrega uno al diseñador.|
-|**Insertar automáticamente las propiedades de diseño en la creación del elemento**|Especifica si se proporcionan propiedades de diseño para un nuevo elemento cuando agrega uno al diseñador.|
+|**Insertar automáticamente las propiedades de diseño en la creación del elemento**|Especifica si se proporcionan propiedades de diseño para un nuevo elemento cuando agrega uno al diseñador. Las propiedades de diseño son las que afectan al diseño de un control (por ejemplo, Margin y VerticalAlignment). En el siguiente XAML, se muestra cómo se crea un botón con esta opción seleccionada y sin tenerla:<br />`<Button Content="Button" HorizontalAlignment="Left" Margin="245,56,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>`<br />`<Button Content="Button" Grid.Row="1"/>`|
 |**Usar diseño basado en cuadrantes**|Especifica si el control seleccionado actualmente se alinea con los bordes más cercanos del contenedor primario. Si esta casilla está desactivada, las alineaciones del control no cambian durante una operación de creación o movimiento.|
 |**Rellenar automáticamente los elementos del cuadro de herramientas**|Especifica si los controles de usuario y los controles personalizados de la solución actual se muestran en el cuadro de herramientas automáticamente.|
 
@@ -75,7 +75,7 @@ Use estas opciones para determinar la configuración al editar archivos XAML con
 
 |||
 |-|-|
-|**Zoom mediante**|Acerque el diseñador XAML desplazando la rueda del mouse o presionando la tecla CTRL o ALT al desplazar la rueda del mouse.|
+|**Zoom mediante**|Para acercar el Diseñador XAML, desplace la rueda del mouse o presione la tecla **Ctrl** o **Alt** al desplazar la rueda del mouse.|
 |**Unidades de tipo**|Especifica si las medidas del diseñador se basan en puntos o en píxeles. Como las aplicaciones universales de Windows no admiten los puntos, las unidades se convierten automáticamente en píxeles si **Puntos** está seleccionado.|
 
 ## <a name="artboard-blend-only"></a>Mesa de trabajo (solo en Blend)
