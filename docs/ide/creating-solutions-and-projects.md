@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c3477926161da09d0b669d32316933d967ee98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a5f81c38d63659261281f35704edf0ecde3ccd94
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908897"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269831"
 ---
 # <a name="create-solutions-and-projects"></a>Crear soluciones y proyectos
 
@@ -129,7 +129,7 @@ Puede eliminar las soluciones y su contenido de forma permanente, pero no median
 
 ### <a name="to-permanently-delete-a-solution"></a>Para eliminar permanentemente una solución
 
-1. En el **Explorador de soluciones**, en el menú contextual de la solución que quiere eliminar, seleccione **Abrir carpeta en el Explorador de archivos**.
+1. En el **Explorador de soluciones**, en el menú contextual (clic con el botón derecho) de la solución que quiera eliminar, seleccione **Abrir carpeta en el Explorador de archivos**.
 
 1. Suba un nivel en el Explorador de archivos.
 

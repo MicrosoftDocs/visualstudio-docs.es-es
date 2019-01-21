@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d0efbf39ec7000055bdaa978eab06417dae8b183
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bca0dacf2fd649db91fb37756c1670af403b4e95
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869195"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269418"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Definiciones de tipo de Visual C++ en el Diseñador de clases
 

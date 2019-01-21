@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46a3a0a415af9cddcba63040fd445de7869921e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 79d39aa23e752ee0ce6f95b6a6d8c419dbd51d9a
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918617"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270000"
 ---
 # <a name="toolbox"></a>Cuadro de herramientas
 
@@ -40,7 +40,7 @@ La versión de .NET Framework del proyecto también afecta al conjunto de contro
 
 De manera predeterminada, el **Cuadro de herramientas** está contraído en la izquierda del IDE de Visual Studio y aparece cuando se desplaza el cursor por encima. Puede anclar el **Cuadro de herramientas** (haciendo clic en el icono **Anclar** de la barra de herramientas), de manera que permanezca abierto al mover el cursor. También puede desacoplar la ventana **Cuadro de herramientas** y arrastrarla a cualquier punto de la pantalla. Puede acoplar, desacoplar y ocultar el **Cuadro de herramientas** si hace clic con el botón derecho en su barra de herramientas y selecciona una de las opciones.
 
-Puede reorganizar los elementos de una pestaña del **Cuadro de herramientas** o agregar pestañas y elementos personalizados por medio de los siguientes comandos del menú contextual:
+Puede reorganizar los elementos de una pestaña del **Cuadro de herramientas**, o bien puede agregar pestañas y elementos personalizados mediante los siguientes comandos del menú contextual:
 
 - **Cambiar nombre de elemento**: permite cambiar el nombre del elemento seleccionado.
 

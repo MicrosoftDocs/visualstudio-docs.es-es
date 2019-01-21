@@ -15,12 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: c23d2571b021532b1a78a8207844561cc0c659b1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 21c4f8a7c1f8e5d5449f576740e8f901d25d9006
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837178"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269539"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generar y ejecutar una prueba de rendimiento web codificada
 
@@ -86,7 +86,7 @@ Las pruebas de rendimiento web se graban al examinar la aplicación web. Las pru
 ## <a name="qa"></a>Preguntas y respuestas
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>P: ¿Se pueden ejecutar varias pruebas al mismo tiempo?
- **R:** Sí, use el menú contextual del **Explorador de soluciones**.
+ **R:** Sí, use el menú contextual (botón derecho) en el **Explorador de soluciones**.
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>P: ¿Debo agregar un origen de datos antes o después de generar una prueba codificada?
  **R:** Es más fácil agregar un [origen de datos](../test/add-a-data-source-to-a-web-performance-test.md) antes de generar la prueba automatizada porque el código se generará de forma automática.

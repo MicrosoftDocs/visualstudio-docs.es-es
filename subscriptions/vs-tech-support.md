@@ -9,12 +9,12 @@ description: Vea cómo activar la ventaja de soporte técnico que se incluye con
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 635280cf52ca82af67ec1b3fc321f5ea6955128a
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: e2e5b66988ba5ff5aedede2e1cef112a3b204919
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740438"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315519"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activación de la ventaja de soporte técnico en suscripciones de Visual Studio
 
@@ -85,11 +85,8 @@ Asegúrese de tener a mano su identificador de contrato e identificador de acces
 Para usar la ventaja de soporte técnico de la suscripción de Visual Studio en problemas relacionados con Azure, deberá vincular el identificador de contrato y el identificador de acceso con su suscripción de Azure.
 
 1.  Visite https://portal.azure.com e inicie sesión
-2.  En el menú de navegación de la izquierda, haga clic en "Ayuda y soporte técnico"
-3.  En "Soporte técnico", haga clic en "Vincular el contrato de soporte técnico"
-4.  Escriba el "identificador de acceso" y el "identificador de contacto" que se proporcionaron en el paso 1 anterior.
-
-Una vez que complete estos pasos, podrá seleccionar el plan de soporte técnico asociado con la ventaja de la suscripción de Visual Studio.  (Es posible que el nombre del plan incluya "MSDN").
+2.  En el panel de navegación izquierdo, haga clic en **Ayuda y soporte técnico**.
+3.  En "Soporte técnico", haga clic en **Nueva solicitud de soporte técnico**.
 
 ## <a name="eligibility"></a>Elegibilidad
 

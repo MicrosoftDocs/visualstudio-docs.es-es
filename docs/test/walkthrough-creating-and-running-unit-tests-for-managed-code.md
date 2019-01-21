@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: de50a5ee6e65540b1a2052f61eae211074780417
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 537059a78ccc316b7b74a8300961b57b4e6e6f95
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989181"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269987"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Tutorial: Crear y ejecutar pruebas unitarias en código administrado
 
@@ -93,7 +93,7 @@ public void Debit(double amount)
 
 5. En el proyecto **BankTests**, agregue una referencia al proyecto **Bank**.
 
-   En el **Explorador de soluciones**, seleccione **Referencias** en el proyecto **BankTests** y, después, elija **Agregar referencia** desde el menú contextual.
+   En el **Explorador de soluciones**, seleccione **Referencias** en el proyecto **BankTests** y, después, seleccione **Agregar referencia** en el menú contextual.
 
 6. En el cuadro de diálogo del **Administrador de referencia**, expanda **Solución** y active el elemento **Bank**.
 
@@ -103,7 +103,7 @@ Cree una clase de prueba para comprobar la clase `BankAccount`. Puede utilizar e
 
 ### <a name="rename-a-class-file"></a>Cambiar el nombre de un archivo de clase
 
-En el **Explorador de soluciones**, seleccione el archivo *UnitTest1.cs* en el proyecto BankTests. Desde el menú contextual, elija **Cambiar nombre** y, después, cambie el nombre del archivo a *BankAccountTests.cs*. Elija **Sí** en el cuadro de diálogo en el que se le pregunta si quiere cambiar el nombre de todas las referencias al elemento de código `UnitTest1` del proyecto.
+En el **Explorador de soluciones**, seleccione el archivo *UnitTest1.cs* en el proyecto BankTests. En el menú contextual, seleccione **Cambiar nombre** y, después, cambie el nombre del archivo a *BankAccountTests.cs*. Elija **Sí** en el cuadro de diálogo en el que se le pregunta si quiere cambiar el nombre de todas las referencias al elemento de código `UnitTest1` del proyecto.
 
 En este paso se cambia el nombre de la clase a `BankAccountTests`. El archivo *BankAccountTests.cs* contiene ahora el siguiente código:
 
