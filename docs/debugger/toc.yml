@@ -515,11 +515,6 @@ items:
         - name: Depuración de servidores y contenedores COM
           href: com-server-and-container-debugging.md
           items:
-          - name: Depurar servidores COM
-            href: how-to-debug-com-servers.md
-            items:
-            - name: aplicaciones de servidor SDI
-              href: sdi-server-applications.md
           - name: Depurar clientes y servidores COM mediante la depuración RPC
             href: how-to-debug-com-clients-and-servers-using-rpc-debugging.md
         - name: Depurar un control ActiveX
@@ -840,9 +835,9 @@ items:
   items:
   - name: Novedades del depurador de Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 149cc7c04aad0d070a538ef32aa6b14c015eee56
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b8b5579f74964cb645fd21ba04ce0e8708a1517e
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947483"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417946"
