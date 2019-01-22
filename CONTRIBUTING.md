@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d9432590313471f7a42348f20cab38a9d86889cc
+ms.sourcegitcommit: 3e301a124483cc12edf95551e7c3a9070a759985
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52712898"
+---
 # <a name="contribute-to-visual-studio-documentation"></a>Colaboración con la documentación de Visual Studio
 
 Gracias por dedicar su tiempo a colaborar con la documentación de Visual Studio.
