@@ -1,11 +1,3 @@
----
-ms.openlocfilehash: ae9e416186764e447065061aad4d0449eefb7b1d
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348963"
----
 # [Se esperaba "{"](expected-left-curly-brace.md)
 # [Se esperaba un identificador, una cadena o un número](expected-identifier-string-or-number.md)
 # [Se esperaba una función](function-expected.md)
