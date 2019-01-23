@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d8624c1405931edefe2e1e53e579ad28a7b238f1
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220227"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345492"
 ---
 # <a name="active-script-debugging-overview"></a>Información general acerca de la depuración de Active Script
 Las interfaces de depuración de Active Script permiten la depuración independiente del idioma y del host, y admiten una amplia variedad de entornos de desarrollo.  

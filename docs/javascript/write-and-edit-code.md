@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ebc5666ca037276d5b148151e2b41756b105dc2d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41e8628e6d747d523dae12448d81f39ad5de964b
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967432"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398291"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Aprender a usar el editor de código
 
@@ -26,9 +26,6 @@ En esta breve introducción al editor de código de Visual Studio veremos alguna
 > Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita. Según la forma en que vaya a desarrollar la aplicación, es posible que tenga que instalar la **carga de trabajo de desarrollo Node.js** con Visual Studio.
 
 En este artículo se da por hecho que ya está familiarizado con el desarrollo de JavaScript. Si no lo está, le aconsejamos que antes eche un vistazo a un tutorial del tipo [Crear una aplicación Node.js y Express](../javascript/tutorial-nodejs.md).
-
-> [!TIP]
-> Para realizar los procedimientos de este artículo, asegúrese de que tiene la configuración de JavaScript seleccionada en Visual Studio. Para más información sobre cómo seleccionar configuraciones del entorno de desarrollo integrado (IDE), vea [Configuración del entorno](../ide/environment-settings.md). Al importar configuraciones, importe la configuración de **JavaScript**.
 
 ## <a name="add-a-new-project-file"></a>Agregar un nuevo archivo de proyecto
 
@@ -96,7 +93,7 @@ Haga clic con el botón derecho en `render` y elija **Ver la definición** en el
 
    ![Ventana Ver la definición](../javascript/media/write-code-peek-definition.png)
 
-1. Para cerrar la ventana de definición inspeccionada, seleccione el pequeño cuadro con una "x" en la esquina superior derecha de la ventana emergente.
+Para cerrar la ventana de definición inspeccionada, seleccione el pequeño cuadro con una "x" en la esquina superior derecha de la ventana emergente.
 
 ## <a name="use-code-snippets"></a>Uso de fragmentos de código
 

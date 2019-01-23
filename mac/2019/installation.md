@@ -6,12 +6,13 @@ ms.author: crdun
 ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: acd8f3bc4f5fefa0a0c8b273856579067fb33c6a
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.custom: video
+ms.openlocfilehash: 17acdd63b5632cf141cc5407ce8e09be3e3a69a0
+ms.sourcegitcommit: a260df15214b3198a28ca4e312263942cf6f4ce7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315903"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54443785"
 ---
 # <a name="install-visual-studio-2019-for-mac-preview"></a>Instalación de la versión preliminar de Visual Studio 2019 para Mac
 
@@ -52,7 +53,7 @@ Para compilar aplicaciones Xamarin para iOS o macOS, también necesitará lo sig
     ![Es necesario efectuar la actualización a la versión estable 7.7.](media/install-preview-older-upgrade.png)
 
 7. Después de haber realizado las selecciones, presione el botón **Instalar**.
-8. El instalador mostrará el progreso a medida que se realiza la descarga y la instalación de Visual Studio para Mac, así como de las cargas de trabajo seleccionadas. Es posible que se le solicite que indique la contraseña para conceder los privilegios necesarios para la instalación.
+8. El instalador mostrará el progreso a medida que se realice la descarga y la instalación de Visual Studio para Mac, así como de las cargas de trabajo seleccionadas. Es posible que se le solicite que indique la contraseña para conceder los privilegios necesarios para la instalación.
 9. Use **Visual Studio (versión preliminar)** siempre que quiera probar dicha versión preliminar o use la última versión estable para realizar trabajos de producción. Aquí se muestran los dos iconos:
 
     ![Diferencias entre los iconos de la versión estable y la preliminar](media/install-preview-icons-sml.png)
@@ -90,6 +91,10 @@ La instalación de Visual Studio para Mac le permite empezar a escribir código 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Aplicaciones de .NET core, aplicaciones web ASP.NET Core, desarrollo de juegos de Unity
 
 Para otras cargas de trabajo, consulte la página [Cargas de trabajo](/visualstudio/mac/workloads).
+
+## <a name="related-video"></a>Vídeo relacionado
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
 ## <a name="see-also"></a>Vea también
 
