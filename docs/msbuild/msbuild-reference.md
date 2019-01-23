@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f365410421f490aeac1534eebc01630849ef1195
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8966512e2d2ad58edaff41ac21301dfce437152c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872270"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347703"
 ---
 # <a name="msbuild-reference"></a>Referencia de MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] es el sistema de compilación para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Los siguientes vínculos conducen a temas que contienen información de referencia de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -71,9 +71,6 @@ ms.locfileid: "53872270"
 ## <a name="see-also"></a>Vea también  
  [Información general sobre MSBuild](../msbuild/msbuild.md)     
  Presenta [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] y proporciona vínculos a temas que explican cómo usarlo para compilar proyectos.  
-  
- [Microsoft.Build.Conversion](https://docs.microsoft.com/dotnet/api/microsoft.build.conversion)  
- Contiene la referencia de espacio de nombres de Conversion.  
   
  [Microsoft.Build.Evaluation](https://docs.microsoft.com/dotnet/api/microsoft.build.evaluation)  
  Contiene la referencia de espacio de nombres de Evaluation.  

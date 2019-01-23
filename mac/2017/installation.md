@@ -6,12 +6,13 @@ ms.author: crdun
 ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: ca24c09a0eedc9aee10a4fad8ceb126a2d72462a
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.custom: video
+ms.openlocfilehash: 2dca1fdeace3a69fee231c1c31d3db75587e8294
+ms.sourcegitcommit: a260df15214b3198a28ca4e312263942cf6f4ce7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315813"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54443798"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Instalación de Visual Studio 2017 para Mac
 
@@ -87,7 +88,7 @@ Para trabajar con iOS en Visual Studio, necesita los siguientes elementos:
     ![Apertura de Visual Studio](media/installer-image11.png)
 
 > [!NOTE]
-> Si decide no instalar una plataforma o herramienta durante la instalación original (al anular la selección en el paso 6), tendrá que volver a ejecutar el [instalador](https://visualstudio.microsoft.com/vs/) si quiere agregar los componentes más adelante.
+> Si decide no instalar una plataforma o herramienta durante la instalación original (al anular la selección en el paso 6), debe volver a ejecutar el [instalador](https://visualstudio.microsoft.com/vs/) si quiere agregar los componentes más adelante.
 
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Instalar Visual Studio para Mac detrás de un firewall o servidor proxy
 
@@ -115,6 +116,10 @@ La instalación de Visual Studio para Mac le permite empezar a escribir código 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Aplicaciones de .NET core, aplicaciones web ASP.NET Core, desarrollo de juegos de Unity
 
 Para otras cargas de trabajo, consulte la página [Cargas de trabajo](/visualstudio/mac/workloads).
+
+## <a name="related-video"></a>Vídeo relacionado
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
 ## <a name="see-also"></a>Vea también
 
