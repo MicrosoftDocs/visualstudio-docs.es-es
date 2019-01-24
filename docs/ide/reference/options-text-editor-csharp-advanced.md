@@ -1,6 +1,6 @@
 ---
 title: Opciones, editor de texto, C#, avanzado
-ms.date: 10/29/2018
+ms.date: 01/16/2019
 ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4fdb52b4fbdeac437a3833e0030acedfa382f81c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: db27509faf1c3d83eab1cd6c8fcd6b5b70fab48e
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887911"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398304"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opciones, editor de texto, C#, avanzado
 
@@ -109,13 +109,17 @@ Use la página de opciones **Avanzado** para modificar la configuración del for
 
 - Mostrar separadores de línea de procedimientos
 
-   El editor de texto indica el ámbito visual de los procedimientos. Se dibuja una línea en los archivos de código fuente *.vb* del proyecto en las ubicaciones indicadas en la tabla siguiente:
+   El editor de texto indica el ámbito visual de los procedimientos. Se dibuja una línea en los archivos de código fuente *.cs* del proyecto en las ubicaciones indicadas en la tabla siguiente:
 
-   |Ubicación en el archivo de código fuente .vb|Ejemplo de ubicación de línea|
+   |Ubicación en el archivo de código fuente .cs|Ejemplo de ubicación de línea|
    |---------------------------------|------------------------------|
    |Después del cierre de una construcción de declaración de bloque|- Al final de una clase, estructura, módulo, interfaz o enumeración<br />- Después de una propiedad, función o sub<br />- No entre las cláusulas get y set de una propiedad|
    |Después de un conjunto de construcciones de línea única|- Después de las instrucciones Import, antes de una definición de tipo en un archivo de clase<br />- Después de las variables declaradas en una clase, antes de cualquier procedimiento|
    |Después de declaraciones de línea única (declaraciones de nivel que no sea de bloque)|- Después de instrucciones Import, instrucciones Inherits, declaraciones de variables, declaraciones de eventos, declaraciones de delegados e instrucciones Declare DLL|
+
+## <a name="block-structure-guides"></a>Guías de estructura de bloque
+
+Active estas casillas de verificación para mostrar líneas punteadas verticales las llaves (**{}**) en el código. De este modo, puede ver con facilidad los bloques individuales de código para las construcciones de nivel de declaración y de nivel de código.
 
 ## <a name="editor-help"></a>Ayuda del editor
 

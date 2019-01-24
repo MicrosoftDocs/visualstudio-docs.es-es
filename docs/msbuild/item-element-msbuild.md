@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eab46fa67230ef4a42c6025d99a689ef37d213b0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5d032e16acc0b3858f81f0989442b8fcfb351047
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908285"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345622"
 ---
 # <a name="item-element-msbuild"></a>Elemento Item (MSBuild)
 Contiene un elemento definido por el usuario y sus metadatos. Cada elemento que se utiliza en un proyecto de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] debe especificarse como elemento secundario de un elemento `ItemGroup`.  
@@ -122,5 +122,5 @@ En el ejemplo de código siguiente se muestra cómo usar el atributo `Update` pa
 
 ## <a name="see-also"></a>Vea también  
  [Elementos](../msbuild/msbuild-items.md)   
- [Propiedades de MSBuild](../msbuild/msbuild-properties.md)   
- [Referencia de esquemas del archivo de proyecto MSBuild](../msbuild/msbuild-project-file-schema-reference.md)
+ [Elementos comunes de proyectos MSBuild](../msbuild/common-msbuild-project-items.md) [Propiedades de MSBuild](../msbuild/msbuild-properties.md)   
+ [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)

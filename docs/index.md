@@ -3,15 +3,9 @@ layout: HubPage
 hide_bc: true
 title: Documentación de Visual Studio | Microsoft Docs
 titleSuffix: ''
-description: Aprenda a usar Visual Studio 2017 para desarrollar aplicaciones, servicios y herramientas en el idioma de su elección para sus dispositivos y plataformas.
+description: 'Aprenda a usar Visual Studio 2017 para desarrollar aplicaciones, servicios y herramientas en el idioma de su elección para sus dispositivos y plataformas.'
 ms.topic: hub-page
 ms.custom: seodec18
-ms.openlocfilehash: 427c4545425f19576da39455bbf659fe64aac549
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398161"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -141,8 +135,8 @@ Python</a>
                                                                 </li>
                                                                 <li>
                                                                     <a class="barLink" href="/visualstudio/javascript/">
-                                                                        <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="Node.js icon">
-Node.js</a>
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_js.svg" alt="JavaScript logo">
+JavaScript</a>
                                                                 </li>
                                                             </ul>
                                                         </td>

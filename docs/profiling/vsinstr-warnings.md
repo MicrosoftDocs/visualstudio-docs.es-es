@@ -14,18 +14,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 716cf80a9b93f5a018c31af0d36d3212a858f3b2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d0b201d22b93b7c023627887f0fc033da360fe9
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888601"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417868"
 ---
 # <a name="vsinstr-warnings"></a>Advertencias de VSInstr
 En la tabla siguiente se muestran las advertencias emitidas por la herramienta *VSInstr.exe*. Para evitar que aparezca una advertencia, utilice su número con la opción NOWARN.  
   
 |Número de advertencia|Descripción|  
 |--------------------|-----------------|  
+|**VSP1026**|No se admite cobertura en bibliotecas que no hacen referencia a MSCorLib. Por lo general, es el caso de las bibliotecas portátiles.|  
 |**VSP2000**|Error interno No se puede obtener el nombre del archivo de módulo para este archivo ejecutable.|  
 |**VSP2001**|\<nombre del ensamblado> es un ensamblado de nombre seguro. Deberá volver a firmarlo antes de que pueda ejecutarse.<br /><br /> Esta advertencia aparece cuando se instrumenta un ensamblado firmado. Puede usar la herramienta *sn.exe* para volver a firmar el archivo binario o desactivar temporalmente el requisito de nombre seguro. Para obtener más información, vea [Sn.exe (Herramienta de nombre seguro)](/dotnet/framework/tools/sn-exe-strong-name-tool).|  
 |**VSP2002**|No se pudo encontrar la función \<nombre de función> en el archivo \<nombre de archivo><br /><br /> Esta advertencia se produce cuando no se encuentra una función en el archivo especificado.|  

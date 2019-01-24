@@ -9,12 +9,12 @@ description: Obtenga información sobre la suscripción de aprendizaje de DataCa
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 47199fc27491843985326f3ceee5dd6fbf3677ad
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: afda11bd8cbc0a8f0be1c25ab0b23d9f7b3a39b8
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802153"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380410"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Beneficio de aprendizaje de DataCamp en suscripciones de Visual Studio
 
@@ -79,7 +79,7 @@ Puede parar en cualquier momento y reanudar el curso en la siguiente sesión.  S
 
 
 
-<sup>1</sup>  *Incluye:  No para reventa (NFR), FTE, Microsoft Valued Professional (MVP), Region Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup>1</sup>  *Incluye:  No para reventa (NFR), FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
 
 
 > [!NOTE]
