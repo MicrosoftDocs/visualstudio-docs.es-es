@@ -9,12 +9,12 @@ description: Vea cómo activar la ventaja de soporte técnico que se incluye con
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e2e5b66988ba5ff5aedede2e1cef112a3b204919
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: be2fcf753c73055d647e9a924dfec306d49ce202
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315519"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380249"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activación de la ventaja de soporte técnico en suscripciones de Visual Studio
 
@@ -99,7 +99,7 @@ Para usar la ventaja de soporte técnico de la suscripción de Visual Studio en 
 | Visual Studio Dev Essentials | NA | No disponible |NA|
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure                                       | No disponible                                                           |NA|
 
-<sup>1</sup> *Incluye: Imagine Premium. Excluye: No para reventa (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine Standard, Microsoft Valued Professional (MVP), Region Director (RD), MCT Software & Services.*
+<sup>1</sup> *Incluye: Imagine Premium. Excluye: No para reventa (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine Standard, Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services.*
 
 <sup>2</sup> *Incluye: Imagine Standard.*
 

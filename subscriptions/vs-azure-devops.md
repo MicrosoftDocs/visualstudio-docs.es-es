@@ -9,12 +9,12 @@ description: Descubra cómo puede usar Azure DevOps como un suscriptor de Visual
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 17210efba6e4505bbf4dc46fcd779be407f0c27e
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 631683b48faed4e5b967e060b66123aaf685889b
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740210"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380010"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Ventajas de Azure DevOps para suscriptores de Visual Studio
 
@@ -33,7 +33,7 @@ Cuando inicie sesión en Azure DevOps (ya sea con la identidad que ha usado para
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | Azure Boards y Repos (básico), Azure Test Plans                                              |  Sí          |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | Azure Boards y Repos (básico), Azure Test Plans                                              |  Sí          |
 
-<sup>1</sup>  *Incluye:  No para reventa (NFR), Microsoft Valued Professional (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP),Microsoft Partner Network (Enterprise), BizSpark, MCT Software & Services Developer. Excluye: MCT Software & Services, Imagine.*
+<sup>1</sup>  *Incluye:  No para reventa (NFR), Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP),Microsoft Partner Network (Enterprise), BizSpark, MCT Software & Services Developer. Excluye: MCT Software & Services, Imagine.*
 
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.

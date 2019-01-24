@@ -9,12 +9,12 @@ description: Obtenga información sobre la suscripción de Power BI Pro incluida
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3d4d24c48868c85b89e833191c03ab8188637de2
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: a437dd537caa75865a245a22387a4db53d94927f
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315506"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380182"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro en suscripciones de Visual Studio
 
@@ -83,7 +83,7 @@ Para usar Power BI Pro, debe configurar una cuenta o iniciar sesión con una cue
 | Visual Studio Dev Essentials | NA  | No disponible |NA|
 | Visual Studio Enterprise (nube mensual) | Azure                                       | No disponible                                  |NA|
 
-<sup>1</sup>  *Incluye:  No para reventa (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Microsoft Valued Professional (MVP), Region Director (RD).  Excluye:  Microsoft Partner Network (MPN), FTE, Imagine.*
+<sup>1</sup>  *Incluye:  No para reventa (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Most Valuable Professional (MVP), Regional Director (RD).  Excluye:  Microsoft Partner Network (MPN), FTE, Imagine.*
 
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.

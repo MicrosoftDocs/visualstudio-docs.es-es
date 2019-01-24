@@ -1,6 +1,6 @@
 ---
-title: Pruebas unitarias en Node.js
-description: Visual Studio admite las pruebas unitarias de código de JavaScript mediante Herramientas de Node.js para Visual Studio
+title: Pruebas unitarias de JavaScript y TypeScript
+description: Visual Studio admite las pruebas unitarias de código de JavaScript y TypeScript mediante Herramientas de Node.js para Visual Studio
 ms.date: 06/06/2018
 ms.topic: conceptual
 ms.devlang: javascript
@@ -11,14 +11,14 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a65fc53f72e2e7a90b03f376ced55fffbe9ecbf8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 75f40dc5abe10f75dccad91fa96d7e149267dc47
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952769"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398226"
 ---
-# <a name="unit-testing-in-nodejs"></a>Pruebas unitarias en Node.js
+# <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Pruebas unitarias de JavaScript y TypeScript en Visual Studio
 
 Herramientas de Node.js para Visual Studio permite escribir y ejecutar pruebas unitarias mediante algunos de los marcos de JavaScript más populares sin necesidad de cambiar a un símbolo del sistema.
 

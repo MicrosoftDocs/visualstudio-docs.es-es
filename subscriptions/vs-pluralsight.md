@@ -9,12 +9,12 @@ description: Obtenga información sobre la suscripción de aprendizaje de Plural
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b30096d3c0217c169d107dc882103f0468e57278
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 8e077db1aa369198f015f68e0e61efbc30697659
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740343"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380310"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Ventajas de aprendizaje de Pluralsight en las suscripciones de Visual Studio
 
@@ -79,7 +79,7 @@ En la tabla siguiente se detallan los beneficios de la suscripción de Pluralsig
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) |       Azure       | No disponible |       NA       |
 |             Visual Studio Enterprise (NFR<sup>1</sup>)              |      Programa      | No disponible |       NA       |
 
-<sup>1</sup>  *Incluye:  No para reventa (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Microsoft Valued Professional (MVP), Region Director (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
+<sup>1</sup>  *Incluye:  No para reventa (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
 
 <sup>2</sup> *La ventaja de Pluralsight es de un solo uso, asociado al usuario.  Una vez que el suscriptor usa el beneficio, no se restablece.*
 

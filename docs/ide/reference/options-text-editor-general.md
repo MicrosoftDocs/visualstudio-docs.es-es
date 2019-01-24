@@ -1,40 +1,22 @@
 ---
 title: Opciones, editor de texto, general
-ms.date: 11/04/2016
+ms.date: 01/18/2019
 ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
-- VS.TOOLSOPTIONSPAGES.TEXT_EDITOR.SQL_SERVER_TOOLS.GENERAL
-- VS.ToolsOptionsPages.Text_Editor.All_Languages.General
 - VS.ToolsOptionsPages.Text_Editor.RDL_Expression.General
 - VS.ToolsOptionsPages.Text_Editor.SQL.General
 - vs.toolsoptionspages.text_editor
-- VS.ToolsOptionsPages.Text_Editor.XML.General
 - VS.ToolsOptionsPages.Text_Editor.T-SQL80.General
-- VS.ToolsOptionsPages.Text_Editor.CSS
-- VS.ToolsOptionsPages.Text_Editor.Plain_Text.General
 - VS.ToolsOptionsPages.Text_Editor.SQL_Script.General
-- VS.ToolsOptionsPages.Text_Editor.CSharp.General
-- VS.ToolsOptionsPages.Text_Editor.All_Languages
 - VS.ToolsOptionsPages.Text_Editor.T-SQL7.General
-- VS.ToolsOptionsPages.Text_Editor.Basic.General
 - VS.ToolsOptionsPages.Text_Editor.T-SQL.General
-- VS.ToolsOptionsPages.Text_Editor.F#.Tabs
-- VS.ToolsOptionsPages.Text_Editor.F#
 - VS.ToolsOptionsPages.Text_Editor.PL/SQL.General
-- VS.ToolsOptionsPages.Text_Editor.C/C++.General
-- VS.ToolsOptionsPages.Text_Editor.Plain_Text
-- VS.ToolsOptionsPages.Text_Editor.HTML
-- VS.ToolsOptionsPages.Text_Editor.XAML.General
 - VS.ToolsOptionsPages.Text_Editor
-- VS.ToolsOptionsPages.Text_Editor.F#.General
 - VS.ToolsOptionsPages.Text_Editor.XOML.General
 - VS.ToolsOptionsPages.Text_Editor.SQL
-- vs.toolsoptionspages.text_editor.c/c++
 - VS.ToolsOptionsPages.Text_Editor.SQL_Script
-- VS.ToolsOptionsPages.Text_Editor.T-SQL90.General
 - VS.ToolsOptionsPages.Text_Editor.General
-- VS.ToolsOptionsPages.Text_Editor.CSharp
 - VS.ToolsOptionsPages.Text_Editor.Python
 - VS.ToolsOptionsPages.Text_Editor.R
 helpviewer_keywords:
@@ -48,12 +30,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fdd4e366451dd81738305893727554e8b07ffb04
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ce5553f54b5864c27fc4dfa14376e8eb7735c613
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871335"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417803"
 ---
 # <a name="options-text-editor-general"></a>Opciones, editor de texto, general
 
@@ -77,7 +59,17 @@ Cuando el editor de código está seleccionado, aparece una línea amarilla vert
 
 De manera predeterminada, el editor detecta la codificación buscando marcas BOM o etiquetas del conjunto de caracteres. Si no se detecta ninguna en el documento actual, el editor de código intenta detectar automáticamente la codificación UTF-8 analizando las secuencias de bytes. Para deshabilitar la detección automática de la codificación, desactive esta opción.
 
-## <a name="display"></a>Mostrar
+### <a name="follow-project-coding-conventions"></a>Seguir las convenciones de codificación del proyecto
+
+Cuando está activa, las convenciones de la codificación especificada del proyecto reemplazan cualquier convención de codificación que usa en sus proyectos personales.
+
+### <a name="enable-mouse-click-to-perform-go-to-definition"></a>Habilitar el clic del mouse para Ir a definición
+
+Si se selecciona esta opción, puede presionar **Ctrl** y mantener el puntero sobre un elemento mientras hace clic con el mouse. Al hacerlo, va a la definición del elemento seleccionado. También puede elegir **Alt** o **Ctrl** + **Alt** en el menú desplegable **Usar clave de modificador**.
+
+Active la casilla de verificación **Abrir definición en vista de inspección** para mostrar la definición del elemento en una ventana sin salir de la ubicación actual en el editor de código. 
+
+## <a name="display"></a>Pantalla
 
 ### <a name="selection-margin"></a>Margen de selección
 
@@ -94,6 +86,10 @@ Cuando está seleccionada, muestra un margen vertical fuera del borde izquierdo 
 ### <a name="highlight-current-line"></a>Resaltar línea actual
 
 Cuando está seleccionada, muestra un cuadro gris alrededor de la línea de código donde se sitúa el cursor.
+
+### <a name="show-structure-guide-lines"></a>Mostrar líneas guía de estructura
+
+Cuando se selecciona esta opción, aparecen líneas verticales en el editor que se alinean con bloques de código estructurado, lo que permite identificar fácilmente los bloques de código individuales.
 
 ## <a name="see-also"></a>Vea también
 

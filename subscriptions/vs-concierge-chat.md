@@ -9,12 +9,12 @@ description: Obtenga información sobre la ventaja Chat de soporte técnico incl
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6e8a039593d0d08add10e948eee1d923b818e4cb
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: a57a4b2460de373967d29c2e9c9667bdca8ab9ea
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740239"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380002"
 ---
 # <a name="concierge-chat"></a>Chat de soporte técnico
 
@@ -49,7 +49,7 @@ Obtener ayuda a través del servicio de chat de soporte técnico es un proceso m
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure | No disponible | N/D |
 | Visual Studio Dev Essentials | NA  | No disponible |N/D |
 
-<sup>1</sup>  *Incluye:  No para reventa (NFR), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Excluye:  FTE, Microsoft Valued Professional (MVP), Region Director (RD), Microsoft Partner Network (MPN), Imagine.*
+<sup>1</sup>  *Incluye:  No para reventa (NFR), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Excluye:  FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Imagine.*
 
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.

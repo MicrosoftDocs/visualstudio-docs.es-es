@@ -9,12 +9,12 @@ description: Obtenga información sobre la ventaja Enterprise Mobility + Securit
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0e0af0c1f934163efeafd19110df7a30078bb23c
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: fe6d44b64de314153d7ba00fe4540dbecf1d6ba2
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54092071"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380055"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Beneficio de Enterprise Mobility + Security (EMS) en suscripciones de Visual Studio
 
@@ -62,7 +62,7 @@ Para usar EMS, deberá configurar una cuenta o iniciar sesión con una existente
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure | No disponible | N/D |
 | Visual Studio Dev Essentials | N/D  | No disponible |N/D |
 
-<sup>1</sup>  *Incluye:  No para reventa (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark.  Excluye: Microsoft Valued Professional (MVP), Region Director (RD), MCT Software & Services, Imagine, Microsoft Partner Network (Professional).*
+<sup>1</sup>  *Incluye:  No para reventa (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark.  Excluye: Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services, Imagine, Microsoft Partner Network (Professional).*
 
 <sup>2</sup> *Excluye Microsoft Partner Network (Professional)*
 

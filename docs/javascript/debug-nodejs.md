@@ -1,6 +1,6 @@
 ---
-title: Depurar una aplicación Node.js
-description: Visual Studio admite la depuración de aplicaciones de Node.js.
+title: Depuración de una aplicación JavaScript o TypeScript
+description: Visual Studio proporciona compatibilidad para depurar aplicaciones de JavaScript y TypeScript en Visual Studio
 ms.date: 12/03/2018
 ms.topic: conceptual
 ms.devlang: javascript
@@ -11,16 +11,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 6e0ba454a00fb2cebdfaa8ba5fdba63ef3ed2748
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 29b58d588a07be8ba25ab844da171222c57df545
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955898"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398239"
 ---
-# <a name="debug-a-nodejs-app-in-visual-studio"></a>Depurar una aplicación Node.js en Visual Studio
+# <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Depuración de una aplicación JavaScript o TypeScript en Visual Studio
 
 Puede depurar código JavaScript y TypeScript con Visual Studio. Puede establecer y alcanzar puntos de interrupción, asociar el depurador, inspeccionar variables, ver la pila de llamadas y usar otras características de depuración.
+
+> [!TIP]
+> Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita. Según la forma en que vaya a desarrollar la aplicación, es posible que tenga que instalar la **carga de trabajo de desarrollo Node.js** con Visual Studio.
 
 ## <a name="debug-server-side-script"></a>Depurar scripts del servidor
 

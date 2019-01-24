@@ -1,7 +1,7 @@
 ---
 title: Creación de una instalación basada en red
 description: Obtenga información sobre cómo crear un punto de instalación de red para la implementación de Visual Studio dentro de una empresa.
-ms.date: 10/17/2017
+ms.date: 01/15/2019
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e8005aaea5e799ece8a5e217ca28ecd553e6787
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee0eadc9d682e41737df00f81b6443daf5e21fb6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966737"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349925"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Creación de una instalación de red de Visual Studio 2017
 
@@ -30,7 +30,7 @@ Normalmente, un administrador de empresa crea un punto de instalación de red pa
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>Descarga del programa previo de Visual Studio
 
-**Descargue** la edición de Visual Studio que desee. Asegúrese de hacer clic en **Guardar** y, a continuación, haga clic en **Abrir carpeta**.
+Descargue la edición de Visual Studio que desee. Asegúrese de hacer clic en **Guardar** y, a continuación, haga clic en **Abrir carpeta**.
 
 El archivo ejecutable o, para ser más específicos, un archivo de programa previo, debe coincidir con uno de los siguientes.
 
@@ -115,11 +115,15 @@ Si quiere actualizar un diseño existente en un diseño completo, use la opción
 
 Los administradores pueden implementar Visual Studio en estaciones de trabajo cliente como parte de un script de instalación. O bien, los usuarios que tienen derechos de administrador pueden ejecutar la instalación directamente desde el recurso compartido para instalar Visual Studio en sus máquinas.
 
-- Los usuarios pueden realizar la instalación mediante la ejecución de: <br>```\\server\products\VS2017\vs_enterprise.exe```
-- Los administradores pueden realizar la instalación en modo desatendido mediante la ejecución de: <br>```\\server\products\VS2017\vs_enterprise.exe --quiet --wait --norestart```
+* Los usuarios pueden realizar la instalación mediante la ejecución de: <br>```\\server\products\VS2017\vs_enterprise.exe```
+* Los administradores pueden realizar la instalación en modo desatendido mediante la ejecución de: <br>```\\server\products\VS2017\vs_enterprise.exe --quiet --wait --norestart```
 
+> [!IMPORTANT]
+> Para evitar un error, asegúrese de que la ruta de acceso a la instalación completa tiene menos de 80 caracteres.
+>
 > [!TIP]
 > Cuando se ejecuta como parte de un archivo por lotes, la opción `--wait` garantiza que el proceso `vs_enterprise.exe` espere hasta que la instalación haya finalizado antes de devolver un código de salida. Resulta muy útil si un administrador de empresa quiere realizar más acciones en una instalación completada (por ejemplo, para [aplicar una clave de producto a una instalación correcta](automatically-apply-product-keys-when-deploying-visual-studio.md)), pero debe esperar a que la instalación finalice para controlar el código de retorno desde esa instalación.  Si no usa `--wait`, el proceso `vs_enterprise.exe` se cierra antes de que la instalación se complete y devuelve un código de salida incorrecto que no representa el estado de la operación de instalación.
+
 
 Cuando realice la instalación desde un diseño, el contenido que está instalado se adquirirá del diseño. Pero si selecciona un componente que no está en el diseño, se obtendrá de Internet.  Si quiere evitar que la instalación de Visual Studio descargue cualquier contenido que no esté en su diseño, use la opción `--noWeb`.  Si se usa `--noWeb` y al diseño le falta cualquier contenido seleccionado que se va a instalar, se produce un error en la instalación.
 

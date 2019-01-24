@@ -9,12 +9,12 @@ description: Obtenga información sobre el beneficio de Office 365 Developer inc
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4fde2da9c3d03b436614fdf58f3477c33091d1d8
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 47444b8c234f0f5bb3b67a04b63b233d2c4e73e1
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739726"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54379772"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Beneficio de suscripción de Office 365 Developer en suscripciones de Visual Studio
 
@@ -75,7 +75,7 @@ Para más información sobre la suscripción de Office 365 Developer, revise las
 | Visual Studio Dev Essentials | NA  | No disponible |NA |
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure                                       | No disponible                                                           |NA|
 
-<sup>1</sup>  *Incluye:  No para reventa (NFR), Visual Studio Industry Partner (VSIP), FTE, BizSpark, MCT Software & Services Developer, MCT Software & Services.  Excluye:  Microsoft Partner Network (MPN), Imagine, Microsoft Valued Professional (MVP), Region Director (RD).*
+<sup>1</sup>  *Incluye:  No para reventa (NFR), Visual Studio Industry Partner (VSIP), FTE, BizSpark, MCT Software & Services Developer, MCT Software & Services.  Excluye:  Microsoft Partner Network (MPN), Imagine, Most Valuable Professional (MVP), Regional Director (RD).*
 
 
 > [!NOTE]
