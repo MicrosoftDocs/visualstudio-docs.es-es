@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, Cores View
 ms.assetid: e47af672-9785-4899-bd45-4d9dda3c396f
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09103357e207712b8678b2de9c9573cc14331dbf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6c609745e0df5ece6d3de9be718851b45110d4fb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283236"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51746312"
 ---
 # <a name="cores-view"></a>Vista de núcleos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

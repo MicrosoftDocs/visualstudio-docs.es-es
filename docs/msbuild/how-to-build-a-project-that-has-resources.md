@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: Compilar un proyecto que tiene recursos | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Compilar un proyecto que tiene recursos | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - resource files, compiling with MSBuild
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7724969a4677bc0d8480b794ae72b2dbee74a86
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 42e13de45afb9594731fc96907187ec9376eed76
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180352"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934319"
 ---
-# <a name="how-to-build-a-project-that-has-resources"></a>Cómo: Compilar un proyecto que tiene recursos
+# <a name="how-to-build-a-project-that-has-resources"></a>Procedimiento Compilar un proyecto que tiene recursos
 Si está compilando versiones adaptadas de un proyecto, todos los elementos de la interfaz de usuario deben estar separados en archivos de recursos para los distintos idiomas. Si el proyecto utiliza solo cadenas, los archivos de recursos pueden utilizar archivos de texto. Como alternativa, puede usar archivos *.resx* como los archivos de recursos.  
   
 ## <a name="compile-resources-with-msbuild"></a>Compilación de recursos con MSBuild  
@@ -81,5 +79,5 @@ Si está compilando versiones adaptadas de un proyecto, todos los elementos de l
 ## <a name="see-also"></a>Vea también  
 [MSBuild](../msbuild/msbuild.md)  
  [GenerateResource (Tarea)](../msbuild/generateresource-task.md)   
- [Csc (Tarea)](../msbuild/csc-task.md)   
+ [Csc (tarea)](../msbuild/csc-task.md)   
  [Resgen.exe (generador de archivos de recursos)](/dotnet/framework/tools/resgen-exe-resource-file-generator)

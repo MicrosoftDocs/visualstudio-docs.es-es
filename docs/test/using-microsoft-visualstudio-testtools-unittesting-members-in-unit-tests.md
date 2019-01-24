@@ -2,19 +2,18 @@
 title: Usar miembros de Microsoft.VisualStudio.TestTools.UnitTesting en pruebas unitarias
 ms.date: 03/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 886fc925c4053e7f9fdc9939ff33a5cda4228c0b
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 13fb1fb6b0b78ffbb2e89b80180260f14b695282
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381597"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53902794"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Usar el marco de trabajo MSTest en pruebas unitarias
 
@@ -45,7 +44,7 @@ Utilice los siguientes elementos para configurar pruebas unitarias controladas p
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>Atributos utilizados para establecer un orden de llamada
 
-Un elemento de código representativo con uno de los siguientes atributos se llama en el momento que especifique. Para obtener más información, vea [Estructura de una prueba unitaria](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+Un elemento de código representativo con uno de los siguientes atributos se llama en el momento que especifique. Para obtener más información, vea [Estructura de una prueba unitaria](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 ### <a name="attributes-for-assemblies"></a>Atributos para ensamblados
 
@@ -71,7 +70,7 @@ Se llaman a ClassInitialize y ClassCleanup inmediatamente después de que se car
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Atributos utilizados para identificar clases y métodos de prueba
 
-Cada clase de prueba debe tener el atributo `TestClass` y todos los métodos de prueba deben tener el atributo `TestMethod`. Para obtener más información, vea [Estructura de una prueba unitaria](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+Cada clase de prueba debe tener el atributo `TestClass` y todos los métodos de prueba deben tener el atributo `TestMethod`. Para obtener más información, vea [Estructura de una prueba unitaria](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 

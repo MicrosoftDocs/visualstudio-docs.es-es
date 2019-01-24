@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumSourceFiles::get_Count method
 ms.assetid: 04083b97-e1ac-4baf-bf5a-50a4dc1c6f27
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 672d3ef7ef3abf1580f891bf081230799f8070f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1145446e0593745ffbba98faae943916e4b81003
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886593"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51752757"
 ---
 # <a name="idiaenumsourcefilesgetcount"></a>IDiaEnumSourceFiles::get_Count
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera el número de archivos de origen.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT get_Count (   
+HRESULT get_Count (   
    LONG* pRetVal  
 );  
 ```  

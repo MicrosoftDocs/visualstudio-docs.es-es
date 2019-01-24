@@ -1,8 +1,6 @@
 ---
 title: Get_isltcg | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7eb1d7308eb03d396ca8a08f915a294ec1debd82
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 33d3ea0720e7354cc50e77d555adc5af43ac9d96
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877743"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831802"
 ---
 # <a name="idiasymbolgetisltcg"></a>IDiaSymbol::get_isLTCG
 Recupera una marca que especifica si el [Compiland](../../debugger/debug-interface-access/compiland.md) se ha vinculado con el modificador del vinculador [/LTCG (generación de código de tiempo de vínculo)](/cpp/build/reference/ltcg-link-time-code-generation), lo que contribuye en la optimización de todo el programa. Este modificador se aplica solo a código administrado.  
@@ -46,7 +44,7 @@ HRESULT get_iSLTCG(
   
 |Requisito|Descripción|  
 |-----------------|-----------------|  
-|Encabezado:|Dia2.h|  
+|Encabezado:|dia2.h|  
 |Versión:|SDK de DIA v8.0|  
   
 ## <a name="see-also"></a>Vea también  

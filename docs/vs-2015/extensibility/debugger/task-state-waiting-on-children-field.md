@@ -1,5 +1,5 @@
 ---
-title: TASK_STATE_WAITING_ON_CHILDREN (campo) | Microsoft Docs
+title: TASK_STATE_WAITING_ON_CHILDREN (campo) | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,12 +15,12 @@ ms.assetid: 6f26b098-84ad-4f6e-ba27-6136581ba630
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b6b00010947a1841367f767165e821d65c6df677
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a8d0c6823c530d7c546a956ecebb3876c1ad6715
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263858"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51720841"
 ---
 # <a name="taskstatewaitingonchildren-field"></a>TASK_STATE_WAITING_ON_CHILDREN (Campo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: ocultar controles en hojas de cálculo al imprimir'
-ms.custom: ''
+title: Procedimiento Ocultar controles en hojas de cálculo al imprimir
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,19 +10,19 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], hiding while printing
 - printing [Office development in Visual Studio], hiding controls
 - worksheets, hiding controls when printing
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e240f4b4be5ce4092705615f060f4e0ef0076e3a
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: d245e6d1d4af1d0135abe88c89f54490a0f5296e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254483"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873436"
 ---
-# <a name="how-to-hide-controls-on-worksheets-when-printing"></a>Cómo: ocultar controles en hojas de cálculo al imprimir
+# <a name="how-to-hide-controls-on-worksheets-when-printing"></a>Procedimiento Ocultar controles en hojas de cálculo al imprimir
   Al imprimir un documento de Microsoft Office Excel que contiene controles de formularios Windows Forms, los controles están visibles en la hoja de cálculo. Puede ocultar los controles al imprimir una hoja de cálculo.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -38,7 +35,7 @@ ms.locfileid: "35254483"
   
 ## <a name="to-hide-controls-when-a-worksheet-is-printed"></a>Para ocultar los controles cuando una hoja de cálculo se imprime  
   
-1.  Crear o abrir un proyecto de Excel en Visual Studio y compruebe que **Sheet1** está visible en el diseñador. Para obtener información sobre cómo crear proyectos, vea [Cómo: proyectos de creación de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Crear o abrir un proyecto de Excel en Visual Studio y compruebe que **Sheet1** está visible en el diseñador. Para obtener información sobre cómo crear proyectos, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
 2.  Desde el **controles comunes** pestaña de la **cuadro de herramientas**, arrastre un <xref:Microsoft.Office.Tools.Excel.Controls.Button> el control a una celda en `Sheet1`.  
   
@@ -47,7 +44,5 @@ ms.locfileid: "35254483"
 ## <a name="see-also"></a>Vea también  
  [Controles en documentos de Office](../vsto/controls-on-office-documents.md)   
  [Controles de Windows Forms en información general sobre documentos de Office](../vsto/windows-forms-controls-on-office-documents-overview.md)   
- [Cómo: agregar controles de formularios Windows Forms a documentos de Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Cómo: cambiar el tamaño de los controles dentro de las celdas de la hoja de cálculo](../vsto/how-to-resize-controls-within-worksheet-cells.md)  
-  
-  
+ [Cómo: Agregar controles de formularios Windows Forms a documentos de Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Cómo: Cambiar el tamaño de los controles dentro de las celdas de la hoja de cálculo](../vsto/how-to-resize-controls-within-worksheet-cells.md)  

@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: Crear un esquema XML a partir de un documento XML'
+title: Procedimiento Crear un esquema XML a partir de un documento XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 1d6700a9-fd67-4794-8997-399589e99bec
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f33fc5b48b9fd6b1cc08570e62e73f05fd19e70
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 629519a6df8c570ee806ec7360e03f442042b5ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548310"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915210"
 ---
-# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Cómo: crear un esquema XML a partir de un documento XML
+# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Procedimiento Crear un esquema XML de un documento XML
 
 El Editor XML permite crear un esquema de lenguaje de definición de esquemas XML (XSD) a partir de un documento XML. El documento de instancia XML determina cómo se genera el esquema de la siguiente manera:
 
@@ -29,7 +28,7 @@ El Editor XML permite crear un esquema de lenguaje de definición de esquemas XM
 
 Los esquemas creados se utilizan luego para proporcionar IntelliSense en el documento XML.
 
-Para obtener más información acerca del motor de inferencia del esquema, consulte [deducir un esquema XML](/dotnet/standard/data/xml/inferring-an-xml-schema).
+Para obtener más información acerca del motor de inferencia del esquema, vea [deducción de esquema XML](/dotnet/standard/data/xml/inferring-an-xml-schema).
 
 ## <a name="to-create-an-xml-schema"></a>Para crear un esquema XML
 
@@ -42,7 +41,7 @@ Para obtener más información acerca del motor de inferencia del esquema, consu
      Los esquemas se pueden guardar en un disco, agregarse a un proyecto o descartarse.
 
     > [!NOTE]
-    >  El **Create Schema** comando también está disponible en el menú contextual del Editor XML y, en la **XML** menú.
+    >  El **Create Schema** comando también está disponible en el menú contextual del Editor XML y, en el **XML** menú.
 
 ## <a name="see-also"></a>Vea también
 

@@ -2,7 +2,6 @@
 title: Crear o actualizar directivas de protección de análisis de código estándar
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.policyeditor
@@ -13,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99f0e665e00e614cfcf3f4e285e33345e31ab42b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 22a74926f4fd9136e15757eb6967d5eb56a8ecbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283241"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890344"
 ---
-# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Cómo: Crear o actualizar directivas de inserción en el repositorio de análisis de código estándar
+# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Procedimiento Crear o actualizar directivas de protección de análisis de código estándar
 
 Puede requerir que el análisis de código se ejecute en todos los proyectos de código en un proyecto de DevOps de Azure mediante el uso de la directiva de protección de análisis de código. Necesidad de análisis de código puede mejorar la calidad del código que está protegido en la base de código.
 
@@ -71,4 +70,4 @@ Para obtener más información sobre cómo crear e implementar una regla de dire
 
 ## <a name="see-also"></a>Vea también
 
-- [Crear y usar directivas de protección de análisis de código](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Crear y usar directivas de protección de análisis de código](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

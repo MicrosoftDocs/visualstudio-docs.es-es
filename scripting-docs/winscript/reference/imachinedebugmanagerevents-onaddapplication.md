@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerEvents::onAddApplication | Documentos de Microsoft
+title: IMachineDebugManagerEvents::onAddApplication | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 887ce7f723713c335d72a6353c20765c7b695031
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 613461eada0113592ccb356374d70be4da626481
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729085"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086650"
 ---
 # <a name="imachinedebugmanagereventsonaddapplication"></a>IMachineDebugManagerEvents::onAddApplication
-Controla el evento cuando se agrega una aplicación para el que se ejecuta lista de aplicaciones.  
+Controla el evento cuando una aplicación se agrega a la ejecución lista de aplicaciones.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT onAddApplication(  
    IRemoteDebugApplication*  pda,  
    DWORD                     dwAppCookie  
@@ -39,10 +39,10 @@ HRESULT onAddApplication(
   
 #### <a name="parameters"></a>Parámetros  
  `pda`  
- [in] Aplicación que se ha agregado la ejecución lista de aplicaciones.  
+ [in] Aplicación que se agregó a la ejecución lista de aplicaciones.  
   
  `dwAppCookie`  
- [in] La cookie que se proporcionó cuando la aplicación se agrega a la lista de aplicaciones.  
+ [in] Cookie proporcionada cuando la aplicación se agregó a la lista de aplicaciones.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -52,7 +52,7 @@ HRESULT onAddApplication(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método indica que una aplicación se agregó la ejecución lista de aplicaciones.  
+ Este método indica que una aplicación se ha agregado a la que se ejecuta la lista de aplicaciones.  
   
 ## <a name="see-also"></a>Vea también  
  [IMachineDebugManagerEvents (interfaz)](../../winscript/reference/imachinedebugmanagerevents-interface.md)   

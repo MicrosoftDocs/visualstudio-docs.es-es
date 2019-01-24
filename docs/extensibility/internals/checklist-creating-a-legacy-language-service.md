@@ -1,9 +1,6 @@
 ---
-title: 'Lista de comprobación: Creación de un servicio de lenguaje heredado | Microsoft Docs'
-ms.custom: ''
+title: 'Lista de comprobación: Creación de un servicio de lenguaje heredado | Documentos de Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba21cf1830f389acbcd72d5e10a688f009871b25
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a37909dd9648f6bac7e0b9bbbe8483244e6ed2b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510301"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821119"
 ---
 # <a name="checklist-create-a-legacy-language-service"></a>Lista de comprobación: Crear un servicio de lenguaje heredado
 La siguiente lista de comprobación resume los pasos básicos que debe seguir para crear un servicio de lenguaje para el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] editor básico. Integrar el servicio de lenguaje en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], debe crear un evaluador de expresiones de depuración. Para obtener más información, consulte [escribir un evaluador de expresiones CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) en el [extensibilidad del depurador de Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  
@@ -112,7 +109,7 @@ La siguiente lista de comprobación resume los pasos básicos que debe seguir pa
   
 -   esquematizar  
   
-     Hay varias opciones para admitir la esquematización. Por ejemplo, puede admitir el **contraer a definiciones** comando, proporcionan regiones de esquema controlado por el editor o admite regiones controlado por el cliente. Para obtener más información, consulte [Cómo: proporcionar compatibilidad con esquematización ampliada en un servicio de lenguaje heredado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).  
+     Hay varias opciones para admitir la esquematización. Por ejemplo, puede admitir el **contraer a definiciones** comando, proporcionan regiones de esquema controlado por el editor o admite regiones controlado por el cliente. Para obtener más información, vea [Cómo: Proporcionar compatibilidad con esquematización ampliada en un servicio de lenguaje heredado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).  
   
 -   Registro del servicio de lenguaje  
   

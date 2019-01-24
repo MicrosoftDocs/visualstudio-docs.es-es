@@ -1,9 +1,6 @@
 ---
 title: Soluciones de Visio
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,19 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 248fa3051a3d639798f37270dc7957a759e20d6e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ce1de2fae3fe9b5543a779bb3cad95ef8e8b38e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941989"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885014"
 ---
 # <a name="visio-solutions"></a>Soluciones de Visio
   Visual Studio proporciona plantillas de proyecto que puede usar para crear complementos de VSTO para Microsoft Office Visio. Puede usar los complementos de VSTO para automatizar Visio, ampliar las características de Visio o personalizar la interfaz de usuario de Visio.  
   
  Para obtener más información sobre los complementos VSTO, consulte [empezar a programar complementos de VSTO](../vsto/getting-started-programming-vsto-add-ins.md) y [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md). Si está familiarizado con la programación con Microsoft Office, consulte [comenzar &#40;desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md).  
   
- **Aplicación:** la información de este tema se aplica a los proyectos de complementos VSTO para Visio 2010. Para obtener más información, consulte [Características disponibles por aplicación y tipo de proyecto de Office](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Se aplica a:** La información de este tema se aplica a proyectos de complemento VSTO para Visio 2010. Para obtener más información, consulte [Características disponibles por aplicación y tipo de proyecto de Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
 > [!NOTE]  
 >  ¿Está interesado en desarrollar soluciones que amplían la experiencia de Office a través de [varias plataformas](https://dev.office.com/add-in-availability)? Visite el nuevo [modelo de complementos de Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Complementos de Office tienen una superficie pequeña en comparación con las soluciones y complementos VSTO, y puede crearlas con prácticamente cualquier tecnología, como HTML5, CSS3, JavaScript y XML de programación web.  
@@ -66,17 +63,16 @@ ms.locfileid: "49941989"
 |----------|--------------------------|  
 |Personalizar la cinta de opciones.|[Información general sobre la cinta](../vsto/ribbon-overview.md)|  
   
- Para obtener información sobre cómo personalizar la interfaz de usuario de Visio, consulte la documentación de referencia de VBA correspondiente a la clase [Visio.UIObject](https://msdn.microsoft.com/library/office/ff765763.aspx) .  
+ Para obtener información sobre cómo personalizar la interfaz de usuario de Visio, consulte la documentación de referencia de VBA correspondiente a la clase [Visio.UIObject](/office/vba/api/Visio.UIObject) .  
   
 ## <a name="see-also"></a>Vea también  
  [Empezar a programar complementos de VSTO](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
- [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Programar complementos VSTO](../vsto/programming-vsto-add-ins.md)   
  [Escribir código en soluciones de Office](../vsto/writing-code-in-office-solutions.md)   
  [Ensamblados de interoperabilidad primarios de Office](../vsto/office-primary-interop-assemblies.md)   
  [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md)   
  [Información general sobre el modelo de objetos de Visio](../vsto/visio-object-model-overview.md)   
  [Visio 2010 en el desarrollo de Office](http://go.microsoft.com/fwlink/?LinkId=199017)  
-  

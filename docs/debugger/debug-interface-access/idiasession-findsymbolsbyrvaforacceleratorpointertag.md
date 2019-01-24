@@ -1,8 +1,6 @@
 ---
-title: IDiaSession::findSymbolsByRVAForAcceleratorPointerTag | Documentos de Microsoft
-ms.custom: ''
+title: IDiaSession::findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d936e8110443cc42e77ea523a5b3df288e28d8c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ad2a0656b03fb057b631319e922a83605fa62a6e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887272"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859469"
 ---
 # <a name="idiasessionfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSession::findSymbolsByRVAForAcceleratorPointerTag
 Dado un valor de la etiqueta correspondiente, este método devuelve una enumeración de los símbolos que se encuentran en una función de código auxiliar del Acelerador primario especificado en una dirección virtual relativa especificada.  
@@ -25,7 +23,7 @@ Dado un valor de la etiqueta correspondiente, este método devuelve una enumerac
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT findSymbolsByRVAForAcceleratorPointerTag (   
+HRESULT findSymbolsByRVAForAcceleratorPointerTag (   
    IDiaSymbol*           parent,  
    DWORD                 tagValue,  
    DWORD                 rva,  

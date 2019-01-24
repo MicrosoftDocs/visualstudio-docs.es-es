@@ -1,8 +1,6 @@
 ---
 title: Implementar requisitos previos de las aplicaciones de 64 bits | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -20,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80ed8d652a36235ef43ce0cdeb78729d560be476
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 86d7512101adf58f13a07481910ab1c28251b8da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831268"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885256"
 ---
-# <a name="deploy-prerequisites-for-64-bit-applications"></a>Implementar los requisitos previos para las aplicaciones de 64 bits
-La implementación de ClickOnce admite la instalación de aplicaciones en plataformas de 64 bits. Las plataformas de destino son **x86** para plataformas de 32 bits, **x64** para equipos compatibles con los conjuntos de instrucciones AMD64 y EM64T, y **Itanium** para el procesador Itanium de 64 bits.  
+# <a name="deploy-prerequisites-for-64-bit-applications"></a>Implementación de requisitos previos de aplicaciones de 64 bits
+La implementación de ClickOnce admite la instalación de aplicaciones en plataformas de 64 bits. Las plataformas de destino son **x86** para plataformas de 32 bits, **x64** para máquinas que admiten los conjuntos de instrucciones de AMD64 y EM64T, e **Itanium** para el procesador Itanium de 64 bits.  
 
 ## <a name="prerequisites"></a>Requisitos previos  
  En la tabla siguiente se enumeran los redistribuibles que puede usar como requisitos previos para la instalación de su aplicación de 64 bits.  
@@ -46,5 +44,5 @@ La implementación de ClickOnce admite la instalación de aplicaciones en plataf
 
 ## <a name="see-also"></a>Vea también  
  [Implementar aplicaciones, servicios y componentes](../deployment/deploying-applications-services-and-components.md)   
- [Cómo: instalar requisitos previos mediante una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Cómo: Requisitos previos de instalación con una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Aplicaciones de 64 bits](/dotnet/framework/64-bit-apps)

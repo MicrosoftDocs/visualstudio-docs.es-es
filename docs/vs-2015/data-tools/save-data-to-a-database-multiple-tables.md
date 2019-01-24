@@ -22,12 +22,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0580cebe97d4646074c678296c18b4caa20ce44b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: 986df2d58c9a8955c9de9b45edaa5276b2e68bfb
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234486"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218432"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Guardar datos en una base de datos (varias tablas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Uno de los escenarios más comunes en el desarrollo de aplicaciones consiste en 
   
 2.  Dé un nombre al proyecto `UpdateMultipleTablesWalkthrough`.  
   
-3.  Seleccione **aplicación Windows**y, a continuación, seleccione**Aceptar**. Para obtener más información, consulte [las aplicaciones cliente](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3.  Seleccione **aplicación Windows**y, a continuación, seleccione **Aceptar**. Para obtener más información, consulte [las aplicaciones cliente](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      El **UpdateMultipleTablesWalkthrough** se crea y se agrega al proyecto **el Explorador de soluciones**.  
   
@@ -81,7 +81,7 @@ Uno de los escenarios más comunes en el desarrollo de aplicaciones consiste en 
   
 2.  En el **orígenes de datos** ventana, seleccione**Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de origen de datos**.  
   
-3.  En el **elegir un tipo de origen de datos**pantalla, seleccione **base de datos**y, a continuación, seleccione**siguiente**.  
+3.  En el **elegir un tipo de origen de datos**pantalla, seleccione **base de datos**y, a continuación, seleccione **siguiente**.  
   
 4.  En el **elegir la conexión de datos**realice pantalla uno de los siguientes:  
   
@@ -91,9 +91,9 @@ Uno de los escenarios más comunes en el desarrollo de aplicaciones consiste en 
   
     -   Seleccione **nueva conexión** para abrir el **agregar o modificar conexión** cuadro de diálogo.  
   
-5.  Si la base de datos requiere una contraseña, seleccione la opción para incluir datos confidenciales y, a continuación, seleccione**siguiente**.  
+5.  Si la base de datos requiere una contraseña, seleccione la opción para incluir datos confidenciales y, a continuación, seleccione **siguiente**.  
   
-6.  En el **Guardar cadena de conexión en el archivo de configuración de la aplicación**, seleccione**siguiente**.  
+6.  En el **Guardar cadena de conexión en el archivo de configuración de la aplicación**, seleccione **siguiente**.  
   
 7.  En el **elija los objetos de base de datos**pantalla, expanda el **tablas** nodo.  
   
@@ -127,7 +127,7 @@ Uno de los escenarios más comunes en el desarrollo de aplicaciones consiste en 
      En el formulario aparecen un control <xref:System.Windows.Forms.DataGridView> y una barra de herramientas (<xref:System.Windows.Forms.BindingNavigator>) para navegar por los registros. Un [OrdersTableAdapter](../data-tools/tableadapter-overview.md) y <xref:System.Windows.Forms.BindingSource> aparecen en la Bandeja de componentes.  
   
 ## <a name="addcode-to-update-the-database"></a>Addcode para actualizar la base de datos  
- Puede actualizar la base de datos mediante una llamada a la `Update` métodos de la **clientes** y **pedidos** TableAdapters. De forma predeterminada, un controlador de eventos para el**guardar** botón de la<xref:System.Windows.Forms.BindingNavigator> se agrega al código del formulario para enviar actualizaciones a la base de datos. Este procedimiento modifica el código para enviar las actualizaciones en el orden correcto. Esto elimina la posibilidad de generar errores de integridad referencial. El código también implementa el control de errores colocando la llamada de actualización en un bloque try-catch. Puede modificar el código para satisfacer las necesidades de la aplicación.  
+ Puede actualizar la base de datos mediante una llamada a la `Update` métodos de la **clientes** y **pedidos** TableAdapters. De forma predeterminada, un controlador de eventos para el **guardar** botón de la<xref:System.Windows.Forms.BindingNavigator> se agrega al código del formulario para enviar actualizaciones a la base de datos. Este procedimiento modifica el código para enviar las actualizaciones en el orden correcto. Esto elimina la posibilidad de generar errores de integridad referencial. El código también implementa el control de errores colocando la llamada de actualización en un bloque try-catch. Puede modificar el código para satisfacer las necesidades de la aplicación.  
   
 > [!NOTE]
 >  Para mayor claridad, este tutorial no utiliza una transacción. Sin embargo, si va a actualizar dos o más tablas relacionadas, incluir toda la lógica de actualización dentro de una transacción. Una transacción es un proceso que asegura que todos los cambios relacionados en una base de datos sean correctos antes de confirmados los cambios. Para obtener más información, consulte [transacciones y simultaneidad](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
@@ -145,7 +145,7 @@ Uno de los escenarios más comunes en el desarrollo de aplicaciones consiste en 
   
 #### <a name="to-test-the-application"></a>Para probar la aplicación  
   
-1.  Seleccione**F5**.  
+1.  Seleccione **F5**.  
   
 2.  Realice algunos cambios en los datos de uno o más registros de cada tabla.  
   

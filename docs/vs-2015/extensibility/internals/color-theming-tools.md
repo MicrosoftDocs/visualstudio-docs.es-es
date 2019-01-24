@@ -10,12 +10,12 @@ ms.assetid: 89ab5741-c664-4b45-8662-3dd01a5761be
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 876823e7accf832274a4cdaa039010b928d84a58
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a8a0311f17170ea768593c3ccdcf528c51c29cd3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307734"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790167"
 ---
 # <a name="color-theming-tools"></a>Herramientas de creación de temas de color
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -1,8 +1,6 @@
 ---
 title: MarkProfile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - MarkProfile
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 98530a790963d1c7fc60742dda4bb16e14a28ab4
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 5d079310fa8fa579f05e927eb37a0cbd6f2c8cca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35238165"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853754"
 ---
 # <a name="markprofile"></a>MarkProfile
 El método `MarkProfile` inserta una marca de perfil en el archivo .*vsp*. La generación de perfiles para el subproceso que contiene la función `MarkProfile` debe estar activada (ON) para que se inserte la marca.  
@@ -60,7 +58,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
  *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Información de la función  
- Encabezado: declarado en *VSPerf.h*  
+ Encabezado: Declarado en *VSPerf.h*  
   
  Biblioteca de importación: *VSPerf.lib*  
   

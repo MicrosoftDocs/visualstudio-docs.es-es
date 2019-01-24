@@ -1,8 +1,7 @@
 ---
-title: Clases auxiliares estáticas | Herramientas de prueba para desarrolladores de Microsoft IntelliTest
+title: clases del asistente estáticas | Herramientas de prueba para desarrolladores de Microsoft IntelliTest
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Static helper classes
@@ -11,16 +10,16 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d7fc470b0300254cd05f6a1e08ebfde04923c213
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 09799a4625791efa137dc9b97b7c3ad9a041feae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511072"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897805"
 ---
-# <a name="static-helper-classes"></a>Clases auxiliares estáticas
+# <a name="static-helper-classes"></a>clases del asistente estáticas
 
-IntelliTest proporciona un conjunto de clases auxiliares estáticas que pueden usarse al crear [pruebas unitarias parametrizadas](test-generation.md#parameterized-unit-testing):
+IntelliTest proporciona un conjunto de clases del asistente estáticas que pueden usarse al crear [pruebas unitarias parametrizadas](test-generation.md#parameterized-unit-testing):
 
 * [PexAssume](#pexassume): se usa para definir hipótesis en las entradas, y es útil para filtrar las entradas no deseadas.
 * [PexAssert](#pexassert): es una clase de aserción sencilla que se usa si su marco de pruebas no proporciona una.
@@ -174,4 +173,4 @@ public static void AreElementsNotNull<T>(T[] value)
 
 ## <a name="got-feedback"></a>¿Tiene comentarios?
 
-Publique sus ideas y solicitudes de características en [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).
+Publique sus ideas y solicitudes de características en [Comunidad de desarrolladores](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

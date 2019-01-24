@@ -1,8 +1,7 @@
 ---
-title: 'CA2000: Eliminar objetos antes de perder el ámbito'
+title: 'CA2000: Desechar objetos antes de perder el ámbito'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2000
@@ -20,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 041cade3d1c65a40826920b94adf012aa9a4b021
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 0d6aa3574e71cf64e01d083171e8bb477da02265
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549875"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951136"
 ---
-# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Eliminar objetos antes de perder el ámbito
+# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Desechar objetos antes de perder el ámbito
 
 |||
 |-|-|
@@ -68,9 +67,9 @@ ms.locfileid: "45549875"
  No suprima una advertencia de esta regla a menos que haya llamado a un método del objeto que llama a `Dispose`, como <xref:System.IO.Stream.Close%2A>, o si el método que generó la advertencia devuelve un objeto IDisposable que ajusta el objeto.
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA2213: Aplique Dispose a los campos a los que se pueda](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
+ [CA2213: los campos descartables deben ser descartables](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
 
- [CA2202: No usar Dispose varias veces en objetos](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
+ [CA2202: No desechar objetos varias veces](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
 
 ## <a name="example"></a>Ejemplo
 

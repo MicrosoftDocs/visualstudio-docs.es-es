@@ -15,12 +15,12 @@ ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 05b23a5dff0c668487f569ceb4fcd5efb6a582aa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bb6a3802e135c02b4ccc7b27aca69b2afd2a9f70
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176805"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789855"
 ---
 # <a name="properties-window-buttons"></a>Botones de la ventana Propiedades
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

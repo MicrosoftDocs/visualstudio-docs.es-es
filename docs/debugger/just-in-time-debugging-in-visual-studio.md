@@ -1,8 +1,6 @@
 ---
 title: Deshabilitar el depurador Just-In-Time | Microsoft Docs
-ms.custom: ''
 ms.date: 05/23/18
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 147e16bab14a6a038622804cf9c57e5fdc92bf02
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
-ms.translationtype: MT
+ms.openlocfilehash: f946c44039407ac413fb0b49234a8590025e12d3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382784"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959792"
 ---
-# <a name="disable-the-just-in-time-debugger"></a>Deshabilitar al depurador Just-In-Time 
+# <a name="disable-the-just-in-time-debugger"></a>Deshabilitar el depurador Just-In-Time 
 
 El cuadro de diálogo de depurador Just In Time puede abrir cuando se produce un error en una aplicación en ejecución y evitará que continúe la aplicación. 
 
@@ -46,4 +44,3 @@ Si no tiene instalado Visual Studio, puede evitar deshabilitando la depuración 
 Después de deshabilitar la depuración Just-In-Time, la aplicación puede ser capaz de controlar el error y ejecute normalmente. 
 
 Si la aplicación todavía tiene un error no controlado, verá un mensaje de error o la aplicación puede bloquearse o de bloqueo. La aplicación no se ejecuta con normalidad hasta que se ha corregido el error. Puede intentar ponerse en contacto con el propietario de la aplicación y pídale que lo corrija.
-

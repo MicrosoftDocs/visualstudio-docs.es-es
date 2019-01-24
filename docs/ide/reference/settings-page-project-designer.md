@@ -2,7 +2,6 @@
 title: Página Configuración, Diseñador de proyectos
 ms.date: 06/14/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - ApplicationSettingsOverview
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c0f7b47b56522f5c4aeef0054e6b7b52434ff87
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 95fc794bee8388dd0655af9adcd9101f57816126
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "35603180"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949250"
 ---
 # <a name="settings-page-project-designer"></a>Página Configuración, Diseñador de proyectos
 
@@ -53,15 +52,15 @@ Para obtener más información sobre el acceso a la configuración de la aplicac
 
 **Modificador de acceso**
 
-El botón **Modificador de acceso** especifica el nivel de acceso de las clases auxiliares `Properties.Settings` (en C#) o `My.Settings` (en Visual Basic) que Visual Studio genera en *Settings.Designer.cs* o *Settings.Designer.vb*.
+El botón **Modificador de acceso** especifica el nivel de acceso de las clases del asistente `Properties.Settings` (en C#) o `My.Settings` (en Visual Basic) que Visual Studio genera en *Settings.Designer.cs* o *Settings.Designer.vb*.
 
 Para proyectos de Visual C#, el modificador de acceso puede ser **Interno** o **Público**.
 
 Para proyectos de Visual Basic, el modificador de acceso puede ser **Amigo** o **Público**.
 
-De forma predeterminada, el valor es **Interno** en C# y **Amigo** en Visual Basic. Cuando Visual Studio genera clases auxiliares como **Interno** o **Amigo**, las aplicaciones ejecutables (*.exe*) no pueden acceder a los recursos y la configuración que ha agregado a las bibliotecas de clases (archivos *.dll*). Si tiene que compartir recursos y la configuración de una biblioteca de clases, establezca el modificador de acceso en **Público**.
+De forma predeterminada, el valor es **Interno** en C# y **Amigo** en Visual Basic. Cuando Visual Studio genera clases del asistente como **Interno** o **Amigo**, las aplicaciones ejecutables (*.exe*) no pueden acceder a los recursos y la configuración que ha agregado a las bibliotecas de clases (archivos *.dll*). Si tiene que compartir recursos y la configuración de una biblioteca de clases, establezca el modificador de acceso en **Público**.
 
-Para obtener más información sobre las clases auxiliares de configuración, vea [Administración de la configuración de la aplicación](../managing-application-settings-dotnet.md).
+Para obtener más información sobre las clases del asistente de configuración, vea [Administración de la configuración de la aplicación](../managing-application-settings-dotnet.md).
 
 ## <a name="settings-grid"></a>Cuadrícula Configuración
 

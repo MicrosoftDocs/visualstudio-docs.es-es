@@ -1,7 +1,7 @@
 ---
 title: 'Inicio rápido: usar Visual Studio para crear una aplicación web de Python'
 description: En este inicio rápido, usará Visual Studio y el marco Flask para compilar una aplicación web simple en Python.
-ms.date: 06/27/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0a7da7d09bf9bcb419ba174a4eb60fe370e83cda
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a4ef6ebbbce03dce7105b49100c9c8f50c44e5e4
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877119"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159807"
 ---
-# <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Inicio rápido: crear la primera aplicación web de Python con Visual Studio
+# <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Inicio rápido: Creación de la primera aplicación web de Python con Visual Studio
 
 En esta introducción a Visual Studio como un IDE de Python, con una duración de entre 5 y 10 minutos, creará una sencilla aplicación web Python basada en el marco Flask. El proyecto se crea mediante discretos pasos que le ayudarán a conocer las características básicas de Visual Studio.
 
@@ -46,11 +46,11 @@ Los pasos siguientes crean un proyecto vacío que actúa como un contenedor para
 
 **Pregunta: ¿Cuál es la ventaja de crear un proyecto en Visual Studio para una aplicación de Python?**
 
-**Respuesta**: Las aplicaciones de Python suelen definirse con el uso de carpetas y archivos únicamente, pero esta estructura sencilla puede ser más pesada a medida que las aplicaciones aumentan de tamaño y se generan posibles archivos de forma automática, JavaScript para aplicaciones web, etc. Un proyecto de Visual Studio le ayuda a administrar esta complejidad. El proyecto (un archivo *.pyproj*) identifica todos los archivos de origen y de contenido asociados al proyecto, contiene información de compilación para cada archivo, mantiene la información para integrarse con sistemas de control de código fuente y le ayuda a organizar la aplicación en componentes lógicos.
+**Respuesta**: Las aplicaciones Python se suelen definir mediante carpetas y archivos únicamente, pero esta estructura sencilla puede ser más pesada a medida que las aplicaciones aumentan de tamaño y se generan posibles archivos de forma automática, JavaScript para aplicaciones web, etc. Un proyecto de Visual Studio le ayuda a administrar esta complejidad. El proyecto (un archivo *.pyproj*) identifica todos los archivos de origen y de contenido asociados al proyecto, contiene información de compilación para cada archivo, mantiene la información para integrarse con sistemas de control de código fuente y le ayuda a organizar la aplicación en componentes lógicos.
 
 **Pregunta: ¿Qué es la "solución" que se muestra en el Explorador de soluciones?**
 
-**Respuesta**: Una solución de Visual Studio es un contenedor que le ayuda a administrar uno o más proyectos relacionados como un grupo y almacena los valores de configuración que no son específicos de un proyecto. Los proyectos de una solución también pueden hacerse referencia entre sí, de modo que la ejecución de un proyecto (una aplicación de Python) crea automáticamente un segundo proyecto (por ejemplo, una extensión de C++ usada en la aplicación de Python).
+**Respuesta**: Una solución de Visual Studio es un contenedor que ayuda a administrar uno o más proyectos relacionados como un grupo y almacena los valores de configuración que no son específicos de un proyecto. Los proyectos de una solución también pueden hacerse referencia entre sí, de modo que la ejecución de un proyecto (una aplicación de Python) crea automáticamente un segundo proyecto (por ejemplo, una extensión de C++ usada en la aplicación de Python).
 
 ## <a name="install-the-flask-library"></a>Instalación de la biblioteca de Flask
 
@@ -62,22 +62,22 @@ Aquí, utilice los pasos siguientes para instalar la biblioteca de Flask en el "
 
     ![Explorador de soluciones en el que se muestra el entorno predeterminado](media/quickstart-python-02-default-environment.png)
 
-1. Haga clic con el botón derecho en el entorno y seleccione **Instalar paquete de Python**. Este comando abre la ventana **Entornos de Python** por la pestaña Paquetes.
+1. Haga clic con el botón derecho en el entorno y seleccione **Instalar paquete de Python**. Este comando abre la ventana **Entornos de Python** por la pestaña **Paquetes**.
 
 1. Escriba "flask" en el campo de búsqueda y seleccione **instalación de PIP flask desde PyPI**. Acepte los mensajes de privilegios de administrador y observe el progreso en la ventana **Salida** de Visual Studio. (Se le pedirá confirmación de elevación cuando la carpeta de paquetes del entorno global esté ubicada en un área protegida, como *C:\Archivos de programa*).
 
-    ![Instalación de la biblioteca de Flask](media/quickstart-python-03-install-package.png)
+    ![Instalación de la biblioteca de Flask con pip install](media/quickstart-python-03-install-package.png)
 
 1. Una vez instalada, la biblioteca aparece en el entorno en el **Explorador de soluciones**, lo que significa que se puede usar en código de Python.
 
-    ![Biblioteca de Flask instalada](media/quickstart-python-04-package-installed.png)
+    ![Biblioteca de Flask instalada y mostrada en el Explorador de soluciones](media/quickstart-python-04-package-installed.png)
 
 > [!Note]
 > En lugar de instalar las bibliotecas en el entorno global, los desarrolladores suelen crear un "entorno virtual" en el que se instalan las bibliotecas de un proyecto específico. Las plantillas de Visual Studio normalmente ofrecen esta opción, como se describe en [Inicio rápido: Crear un proyecto de Python desde una plantilla en Visual Studio](../python/quickstart-02-python-in-visual-studio-project-from-template.md).
 
-**Pregunta: ¿Dónde obtener más información acerca de los otros paquetes de Python disponibles?**
+**Pregunta: ¿Dónde puedo obtener más información sobre otros paquetes de Python disponibles?**
 
-**Respuesta**: Visite el [índice de paquete de Python](https://pypi.org/).
+**Respuesta**: Visite el [índice de paquetes de Python](https://pypi.org/).
 
 ## <a name="add-a-code-file"></a>Agregar un archivo de código
 
@@ -151,10 +151,10 @@ Ahora está listo para agregar un poco de código de Python para implementar una
 
 Dado que los pasos realizados en este inicio rápido son bastante genéricos, probablemente se ha dado cuenta de que se pueden y deben automatizar. Tal automatización es el rol de las plantillas de proyecto de Visual Studio. Consulte [Inicio rápido: Crear un proyecto de Python con una plantilla](../python/quickstart-02-python-in-visual-studio-project-from-template.md) para ver una demostración que crea una aplicación web similar a la que creó en este artículo, pero con menos pasos.
 
-Para continuar con un tutorial más completo sobre Python en Visual Studio, incluido el uso de la ventana interactiva, depuración, visualización de datos y trabajar con Git, repase el [Tutorial: Introducción a Python en Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md).
+Para continuar con un tutorial más completo sobre Python en Visual Studio, incluido el uso de la ventana interactiva, la depuración, la visualización de datos y el uso de Git, consulte el [Tutorial: Introducción a Python en Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md).
 
 Para explorar más de lo que Visual Studio ofrece, seleccione los siguientes vínculos.
 
 - Más información sobre [plantillas de proyecto de aplicación web para Python](../python/python-web-application-project-templates.md)
 - Más información sobre la [depuración de Python](../python/debugging-python-in-visual-studio.md)
-- Más información sobre el [IDE de Visual Studio](../ide/visual-studio-ide.md) en general
+- Más información sobre el [IDE de Visual Studio](../get-started/visual-studio-ide.md) en general

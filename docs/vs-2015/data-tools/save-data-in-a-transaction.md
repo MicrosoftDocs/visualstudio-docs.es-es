@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7bade19778c64b6338c29db1eef8eb09a0d95fa3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0912ffbe2a9a82ac5efbd3b2ca6ba3566ce5b02
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874649"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219307"
 ---
 # <a name="save-data-in-a-transaction"></a>Guardar datos en una transacción
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Este tutorial muestra cómo guardar datos en una transacción utilizando el <xre
   
 2.  Denomine el proyecto **SavingDataInATransactionWalkthrough**.  
   
-3.  Seleccione **aplicación Windows**y, a continuación, seleccione**Aceptar**. Para obtener más información, consulte [las aplicaciones cliente](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3.  Seleccione **aplicación Windows**y, a continuación, seleccione **Aceptar**. Para obtener más información, consulte [las aplicaciones cliente](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      El **SavingDataInATransactionWalkthrough** se crea y se agrega al proyecto **el Explorador de soluciones**.  
   
@@ -61,7 +61,7 @@ Este tutorial muestra cómo guardar datos en una transacción utilizando el <xre
   
 2.  En el **orígenes de datos** ventana, seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de origen de datos**.  
   
-3.  En el **elegir un tipo de origen de datos**pantalla, seleccione **base de datos**y, a continuación, seleccione**siguiente**.  
+3.  En el **elegir un tipo de origen de datos**pantalla, seleccione **base de datos**y, a continuación, seleccione **siguiente**.  
   
 4.  En el **elegir la conexión de datos**realice pantalla uno de los siguientes:  
   
@@ -71,13 +71,13 @@ Este tutorial muestra cómo guardar datos en una transacción utilizando el <xre
   
     -   Seleccione **nueva conexión** para iniciar el **agregar o modificar conexión** diálogo cuadro y crear una conexión a la base de datos Northwind.  
   
-5.  Si la base de datos requiere una contraseña, seleccione la opción para incluir datos confidenciales y, a continuación, seleccione**siguiente**.  
+5.  Si la base de datos requiere una contraseña, seleccione la opción para incluir datos confidenciales y, a continuación, seleccione **siguiente**.  
   
-6.  En el **Guardar cadena de conexión en el archivo de configuración de la aplicación** pantalla, seleccione**siguiente**.  
+6.  En el **Guardar cadena de conexión en el archivo de configuración de la aplicación** pantalla, seleccione **siguiente**.  
   
 7.  En el **elija los objetos de base de datos** pantalla, expanda el **tablas** nodo.  
   
-8.  Seleccione el `Customers` y `Orders` tablas y, a continuación, seleccione**finalizar**.  
+8.  Seleccione el `Customers` y `Orders` tablas y, a continuación, seleccione **finalizar**.  
   
      El **NorthwindDataSet** se agrega al proyecto y la `Customers` y `Orders` tablas aparecen en la **orígenes de datos** ventana.  
   
@@ -103,7 +103,7 @@ Este tutorial muestra cómo guardar datos en una transacción utilizando el <xre
   
 1.  En el **proyecto** menú, seleccione**Agregar referencia**.  
   
-2.  Seleccione **System.Transactions**(en el **.NET** pestaña) y, a continuación, seleccione**Aceptar**.  
+2.  Seleccione **System.Transactions**(en el **.NET** pestaña) y, a continuación, seleccione **Aceptar**.  
   
      Una referencia a **System.Transactions** se agrega al proyecto.  
   
@@ -161,7 +161,7 @@ Este tutorial muestra cómo guardar datos en una transacción utilizando el <xre
   
 #### <a name="to-run-the-application"></a>Para ejecutar la aplicación  
   
--   Seleccione**F5** para ejecutar la aplicación.  
+-   Seleccione **F5** para ejecutar la aplicación.  
   
 ## <a name="see-also"></a>Vea también  
  [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)

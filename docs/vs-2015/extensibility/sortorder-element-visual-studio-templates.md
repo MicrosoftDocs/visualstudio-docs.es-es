@@ -18,12 +18,12 @@ ms.assetid: 151932c1-f08a-4f78-a8d0-bd2f32211a9c
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7932edc042f4c90073cadb50fc48c0f32c394236
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ec82bd69257e32afed0ded6d1486324fc370860f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224723"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755620"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

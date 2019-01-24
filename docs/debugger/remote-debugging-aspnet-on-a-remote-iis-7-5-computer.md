@@ -1,8 +1,9 @@
 ---
-title: Depuración remota de ASP.NET en un equipo remoto de IIS | Microsoft Docs
-ms.custom: remotedebugging
+title: Depuración remota de ASP.NET en un equipo de IIS
+ms.custom:
+- remotedebugging
+- seodec18
 ms.date: 05/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 9cb339b5-3caf-4755-aad1-4a5da54b2a23
 author: mikejo5000
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 1a13488f632e3cf1f244449b2a7a4dbfd7869428
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 621e7c44592eb94adbc02644af62920b8b95aa24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826516"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829201"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Depuración remota de ASP.NET en un equipo remoto de IIS
 Para depurar una aplicación ASP.NET que se ha implementado en IIS, instalar y ejecutar las herramientas remotas en el equipo donde ha implementado la aplicación y, a continuación, adjunte a su aplicación en ejecución desde Visual Studio.
@@ -59,10 +60,10 @@ En este artículo incluye pasos sobre cómo configurar una configuración básic
 
 Si está habilitada la configuración de seguridad mejorada de Internet Explorer (está habilitado de forma predeterminada), es posible que deba agregar algunos dominios como sitios de confianza para que pueda descargar algunos de los componentes de servidor web. Agregar los sitios de confianza, vaya a **opciones de Internet > seguridad > sitios de confianza > sitios**. Agregue los siguientes dominios.
 
-- Microsoft.com
+- microsoft.com
 - go.microsoft.com
 - download.microsoft.com
-- IIS.NET
+- iis.net
 
 Al descargar el software, obtendrá las solicitudes para conceder permiso para cargar varios scripts de sitios web y recursos. Algunos de estos recursos no son necesarias, pero para simplificar el proceso, haga clic en **agregar** cuando se le solicite.
 
@@ -70,7 +71,7 @@ Al descargar el software, obtendrá las solicitudes para conceder permiso para c
 
 Si desea información más detallada para instalar ASP.NET en IIS, consulte [IIS 8.0 utilizando ASP.NET 3.5 y ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
-1. En el panel izquierdo del administrador del servidor, seleccione **IIS**. Haga clic en el servidor y seleccione **Internet Information Services (IIS) Manager**.
+1. En el panel izquierdo del administrador del servidor, seleccione **IIS**. Haga clic con el botón derecho en el servidor y seleccione **Administrador de Internet Information Services (IIS)**.
 
 1. Utilice el instalador de plataforma Web (WebPI) para instalar ASP.NET 4.5 (en el nodo del servidor en Windows Server 2012 R2, elija **obtener nuevos los componentes de plataforma Web** y, a continuación, busque ASP.NET)
 
@@ -79,9 +80,9 @@ Si desea información más detallada para instalar ASP.NET en IIS, consulte [IIS
     > [!NOTE]
     > Si usa Windows Server 2008 R2, instale ASP.NET 4 en lugar de utilizar este comando:
 
-     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe - ir**
 
-2. Reinicie el sistema (o ejecute **net stop was /y** seguido **del comando net start w3svc** desde un símbolo del sistema para recoger un cambio en la ruta de acceso del sistema).
+2. Reinicie el sistema (o ejecute **net stop was /y** seguido de **net start w3svc** desde un símbolo del sistema para obtener un cambio en la ruta de acceso del sistema).
 
 ## <a name="choose-a-deployment-option"></a>Elija una opción de implementación
 
@@ -106,11 +107,11 @@ Puede usar esta opción crea un archivo de configuración de publicación y se i
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/create-publish-settings-iis.md)]
 
-### <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Importar la configuración de publicación en Visual Studio e implementar
+### <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Importar la configuración de publicación a Visual Studio e implementar
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-Después de la aplicación se implementa correctamente, debe iniciarse automáticamente. Si la aplicación no se inicia desde Visual Studio, inicie la aplicación en IIS.
+Después de que se implemente la aplicación correctamente, debería iniciarse automáticamente. Si la aplicación no se inicia desde Visual Studio, inicie la aplicación en IIS.
 
 1. En el **configuración** cuadro de diálogo, habilitar la depuración haciendo **siguiente**, elija un **depurar** configuración y, a continuación, elija **quitar archivos adicionales en destino** bajo el **Publicar archivo** opciones.
 
@@ -127,7 +128,7 @@ Puede usar esta opción para implementar la aplicación si van a copiar la aplic
 
 1. Abra el Explorador de Windows y cree una nueva carpeta, **C:\Publish**, donde posteriormente implementará el proyecto ASP.NET.
 
-2. Si aún no está abierto, abra el **Internet Information Services (IIS) Manager**. (En el panel izquierdo del administrador del servidor, seleccione **IIS**. Haga clic en el servidor y seleccione **Internet Information Services (IIS) Manager**.)
+2. Si aún no está abierto, abra el **Internet Information Services (IIS) Manager**. (En el panel izquierdo del administrador del servidor, seleccione **IIS**. Haga clic con el botón derecho en el servidor y seleccione **Administrador de Internet Information Services (IIS)**.)
 
 3. En **conexiones** en el panel izquierdo, vaya a **sitios**.
 
@@ -168,7 +169,7 @@ En este tutorial, estamos usando Visual Studio 2017.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   
-## <a name="BKMK_setup"></a> Configurar el depurador remoto en Windows Server
+## <a name="BKMK_setup"></a> Establecimiento del depurador remoto en Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
@@ -183,9 +184,9 @@ Para obtener información acerca de cómo ejecutar el depurador remoto como un s
 2. En Visual Studio, haga clic en **Depurar > asociar al proceso** (Ctrl + Alt + P).
 
     > [!TIP]
-    > En Visual Studio 2017, puede volver a adjuntar al mismo proceso adjuntado previamente, utilizando **Depurar > adjuntar al proceso...** (Mayús + Alt + P). 
+    > En Visual Studio 2017, puede volver a adjuntar al mismo proceso adjuntado previamente, utilizando **Depurar > adjuntar al proceso...** Mayús+Alt+P 
 
-3. Establezca el campo calificador en  **\<nombre del equipo remoto >: 4022**.
+3. Establezca el campo Calificador en **\<nombre de equipo remoto>:4022**.
 4. Haga clic en **Actualizar**.
     Debería ver que algunos procesos aparecen en la ventana **Procesos disponibles** .
 
@@ -196,16 +197,16 @@ Para obtener información acerca de cómo ejecutar el depurador remoto como un s
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess.png "RemoteDBG_AttachToProcess")
 
-7. Haga clic en **adjuntar**
+7. Haga clic en **Adjuntar**
 
-8. Abra el sitio web del equipo remoto. En un explorador, vaya a **http://\<nombre del equipo remoto >**.
+8. Abra el sitio web del equipo remoto. En un explorador, vaya a **http://\<nombre del equipo remoto>**.
     
     Debería ver la página web de ASP.NET.
 9. En la aplicación ASP.NET en ejecución, haga clic en el vínculo a la **sobre** página.
 
     Se alcanzará el punto de interrupción en Visual Studio.
 
-## <a name="bkmk_openports"></a> Solución de problemas: Abra los puertos necesarios en Windows Server
+## <a name="bkmk_openports">Solución de problemas</a> Abra los puertos necesarios en Windows Server
 
 En la mayoría de las instalaciones, se abren los puertos requeridos por la instalación de ASP.NET y el depurador remoto. Sin embargo, deberá comprobar que los puertos estén abiertos.
 

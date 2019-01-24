@@ -1,8 +1,6 @@
 ---
 title: Vista Árbol de llamadas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.calltree
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f8973f1536ded24d2fd327aa3eac1ceee795cb54
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 1f006893a32e6609167626e3331616eef7a31a59
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262452"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946479"
 ---
 # <a name="call-tree-view"></a>Vista Árbol de llamadas
 La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funciones que se recorrieron en la aplicación de la que se generaron perfiles. La raíz del árbol es el punto de entrada a la aplicación o el componente. Cada nodo de función muestra todas las funciones a las que ha llamado, así como los datos de rendimiento de esas llamadas a funciones.  
@@ -35,7 +33,7 @@ La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funcion
   
  La vista Árbol de llamadas se puede personalizar para agregar o quitar columnas. Haga clic con el botón derecho en la **barra de título del nombre de columna** y seleccione **Agregar o quitar columnas**.  
   
- La vista Árbol de llamadas puede configurarse para la reducción de ruido si se limita la cantidad de datos que se presentan. Gracias a la reducción de ruido, los problemas de rendimiento destacan más en la vista. Cuando los problemas de rendimiento son fáciles de distinguir, el análisis resulta más sencillo. Para más información, vea [Cómo: Configurar la reducción de ruido en las vistas de informes](../profiling/how-to-configure-noise-reduction-in-report-views.md).  
+ La vista Árbol de llamadas puede configurarse para la reducción de ruido si se limita la cantidad de datos que se presentan. Gracias a la reducción de ruido, los problemas de rendimiento destacan más en la vista. Cuando los problemas de rendimiento son fáciles de distinguir, el análisis resulta más sencillo. Para obtener más información, vea [Cómo: Configurar la reducción de ruido en las vistas de informes](../profiling/how-to-configure-noise-reduction-in-report-views.md).  
   
 > [!NOTE]
 >  Si la reducción de ruido está configurada para mostrar una advertencia cuando se habilita, se mostrará una barra de información en el informe.  

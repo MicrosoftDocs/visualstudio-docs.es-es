@@ -2,11 +2,9 @@
 title: Lista de tareas, Entorno, Opciones (Cuadro de diálogo)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Task_List
-- VS.ToolsOptionsPag.Environment.Task_List
 - VS.ToolsOptionsPages.Environment.TaskList
 - VS.Environment.Task List
 helpviewer_keywords:
@@ -25,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe61b439c0cb4360151d161a5a0b0190858ef71f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f4645b1a9bb594e5e4b2ca7220c6eda32947ab4f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947656"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833625"
 ---
 # <a name="task-list-environment-options-dialog-box"></a>Lista de tareas, Entorno, Opciones (Cuadro de diálogo)
 

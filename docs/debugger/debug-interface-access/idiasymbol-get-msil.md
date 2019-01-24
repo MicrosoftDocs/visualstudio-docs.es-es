@@ -1,8 +1,6 @@
 ---
 title: Get_msil | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cc7e183591b355518814b4b397b0d66d9913b32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6f930266d51000523983ce0a578bb98b02c7233b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866758"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911460"
 ---
 # <a name="idiasymbolgetmsil"></a>IDiaSymbol::get_msil
 Recupera una marca que especifica si el símbolo se refiere al código de lenguaje intermedio de Microsoft (MSIL).  
@@ -27,7 +25,7 @@ Recupera una marca que especifica si el símbolo se refiere al código de lengua
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT get_msil (   
+HRESULT get_msil (   
    BOOL* pRetVal  
 );  
 ```  

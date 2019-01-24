@@ -1,8 +1,8 @@
 ---
-title: Referencia a la API del generador de perfiles de Visual Studio (nativa) | Microsoft Docs
-ms.custom: ''
+title: Referencia a la API del generador de perfiles de Visual Studio (Nativa)
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, API
@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba2590c17a41d200f0a8dd3c38c7c9ae8c8a85cc
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: e0926c80954c83dd1c0c1a72e7c693e8ea266713
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572103"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945030"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Referencia de la API del generador de perfiles de Visual Studio (nativa)
 Las API del generador de perfiles de Visual Studio permiten controlar mediante programación la cantidad de datos recopilados e insertar marcas de tiempo y de perfil durante la generación de perfiles. Para usar las API nativas, se incluye el archivo de encabezado *VSPerf.h* y se agrega *VSPerf.lib* al proyecto.  
   
 > [!NOTE]
->  De forma predeterminada, *VSPerf.h* y *VSPerf.lib* se encuentran en una carpeta llamada *PerfSDK*. Por ejemplo, en el directorio *\<unidad> \Archivos de programa\Microsoft Visual Studio 14.0\Team Tools\Performance Tools\PerfSDK*.  
+> Para obtener la ruta de acceso a las herramientas de generación de perfiles, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
   
 ## <a name="in-this-section"></a>En esta sección  
  [CommentMarkAtProfile](../profiling/commentmarkatprofile.md)  

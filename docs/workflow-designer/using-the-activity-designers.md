@@ -3,7 +3,6 @@ title: Diseñador de flujo de trabajo - mediante los diseñadores de actividad
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - Workflow Designer [WFD], activity designer
 - Visual Studio Workflow Designer [WFD], activity designer
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d85e915099c9d94123f7e97b0d19bf235c0efae
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: e6516e637b219f65613bd6e2052cd2f540428f3c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758046"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910378"
 ---
 # <a name="using-the-activity-designers"></a>Utilizar los diseñadores de actividades
 
@@ -30,8 +29,6 @@ El Diseñador de flujo de trabajo incluye una serie de actividades proporcionada
 
 ## <a name="related-sections"></a>Secciones relacionadas
 
- [Usar el Diseñador de flujo de trabajo](../workflow-designer/using-the-workflow-designer.md)
-
- [Depurar flujos de trabajo con el Diseñador de flujo de trabajo](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
-
- [Ayuda de la interfaz de usuario del Diseñador de flujo de trabajo](../workflow-designer/workflow-designer-ui-help.md)
+- [Usar el Diseñador de flujo de trabajo](../workflow-designer/developing-applications-with-the-workflow-designer.md)
+- [Depurar flujos de trabajo con el Diseñador de flujo de trabajo](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
+- [Ayuda de la interfaz de usuario del Diseñador de flujo de trabajo](../workflow-designer/workflow-designer-ui-help.md)

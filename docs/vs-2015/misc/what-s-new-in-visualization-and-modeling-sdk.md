@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, new features
 ms.assetid: 05bd2900-604c-45dc-ae92-c455801c8956
 caps.latest.revision: 19
-author: alancameronwills
-ms.author: awills
+author: gewarren
+ms.author: gewarren
 manager: kamrani
-ms.openlocfilehash: dde1bf464cfbf89a44ec3a8a606579d03c8f65a7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 12a750300d658b66a22c1da374d46a3ef58e90e7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289853"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51779741"
 ---
 # <a name="what39s-new-in-visualization-and-modeling-sdk"></a>¿Qué&#39;s de visualización y modelado del SDK
 ## <a name="new-features-in-dsl-tools-for-visual-studio-2011"></a>Nuevas características de herramientas DSL para Visual Studio 2011

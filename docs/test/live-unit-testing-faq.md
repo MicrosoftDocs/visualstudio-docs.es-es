@@ -2,7 +2,6 @@
 title: Preguntas más frecuentes sobre Live Unit Testing
 ms.date: 2017-10-03
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -11,12 +10,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2c0c81bc8413b9d1698e2ad7c21d0d9f397834ea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e6e6cf314ed477ade4093f90737e2e1a9c949c8c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849078"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935598"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Preguntas más frecuentes sobre Live Unit Testing
 
@@ -97,7 +96,7 @@ La **Ventana de salida** (cuando se selecciona la lista desplegable Live Unit Te
 
 Si la solución requiere la compilación de pasos personalizados para la instrumentación (Live Unit Testing) que no son necesarios para la compilación no instrumentada "normal", entonces puede agregar código al proyecto o a los archivos *.targets* que compruebe la propiedad `BuildingForLiveUnitTesting` y realice pasos personalizados anteriores y posteriores a la compilación. También puede optar por quitar ciertos pasos de compilación (como la publicación o generación de paquetes) o por agregar dichos pasos (por ejemplo, copiar requisitos previos) a una compilación de Live Unit Testing basada en esta propiedad de proyecto. Si personaliza la compilación en función de esta propiedad no se altera la compilación normal de ninguna forma y solo afecta a las compilaciones de Live Unit Testing.
 
-Por ejemplo, puede haber un destino que genere paquetes NuGet durante una compilación normal. Probablemente no desee que los paquetes NuGet se generen después de cada edición que realice. Por tanto, puede deshabilitar ese destino en la compilación de Live Unit Testing haciendo algo parecido a lo siguiente:  
+Por ejemplo, puede haber un destino que genere paquetes NuGet durante una compilación normal. Probablemente no desee que los paquetes NuGet se generen después de cada edición que realice. Por tanto, puede deshabilitar ese destino en la compilación de Live Unit Testing haciendo algo parecido a lo siguiente:  
 
 ```xml
 <Target Name="GenerateNuGetPackages" BeforeTargets="AfterBuild" Condition="'$(BuildingForLiveUnitTesting)' != 'true'">
@@ -112,7 +111,7 @@ Puede recibir este error si el proceso de compilación de la solución invalida 
 
 Por ejemplo, si la compilación invalida `<OutputPath>` tal como se muestra a continuación:
 
-```xml 
+```xml 
 <Project>
   <PropertyGroup>
     <OutputPath>$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)</OutputPath>
@@ -122,7 +121,7 @@ Por ejemplo, si la compilación invalida `<OutputPath>` tal como se muestra a co
 
 reemplácelo por el siguiente XML:
 
-```xml 
+```xml 
 <Project>
   <PropertyGroup>
     <BaseOutputPath Condition="'$(BaseOutputPath)' == ''">$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)\</BaseOutputPath>
@@ -138,14 +137,14 @@ No invalide `<OutDir>` directamente en el proceso de compilación; invalide `<Ou
 ## <a name="set-the-location-of-build-artifacts"></a>Establecimiento de la ubicación de los artefactos de compilación
 **Quiero que los artefactos de una compilación de Live Unit Testing vayan a una ubicación específica y no a la ubicación predeterminada bajo la carpeta *.vs*. ¿Cómo puedo cambiarlo?**
 
-Establezca la variable de entorno de usuario `LiveUnitTesting_BuildRoot` en la ruta de acceso donde desea que se coloquen los artefactos de compilación de Live Unit Testing. 
+Establezca la variable de entorno de usuario `LiveUnitTesting_BuildRoot` en la ruta de acceso donde desea que se coloquen los artefactos de compilación de Live Unit Testing. 
 
 ## <a name="test-explorer-vs-live-unit-testing-test-runs"></a>Series de pruebas en la ventana Explorador de pruebas frente a Live Unit Testing 
 **¿Cuál es la diferencia entre ejecutar pruebas desde la ventana Explorador de pruebas y ejecutar pruebas en Live Unit Testing?**
 
 Hay varias diferencias:
 
-- La ejecución o depuración de pruebas desde la ventana **Explorador de pruebas** ejecuta binarios normales, mientras que Live Unit Testing ejecuta binarios instrumentados. Si desea depurar binarios instrumentados, la incorporación de una llamada de método [Debugger.Launch](xref:System.Diagnostics.Debugger.Launch) al método de prueba hace que el depurador se inicie siempre que se ejecute el método (incluso cuando lo ejecuta Live Unit Testing); después, puede asociar y depurar el binario instrumentado. Sin embargo, nuestro deseo es que la instrumentación sea transparente para el usuario en la mayoría de los escenarios y que no tenga que depurar binarios instrumentados.
+- La ejecución o depuración de pruebas desde la ventana **Explorador de pruebas** ejecuta binarios normales, mientras que Live Unit Testing ejecuta binarios instrumentados. Si quiere depurar binarios instrumentados, la incorporación de una llamada al método [Debugger.Launch](xref:System.Diagnostics.Debugger.Launch)  al método de prueba hace que el depurador se inicie siempre que se ejecute el método (incluso cuando lo ejecuta Live Unit Testing); después, puede asociar y depurar el binario instrumentado. Sin embargo, nuestro deseo es que la instrumentación sea transparente para el usuario en la mayoría de los escenarios y que no tenga que depurar binarios instrumentados.
 
 - Live Unit Testing no crea un dominio de aplicación para ejecutar pruebas, sino que estas se ejecutan desde la ventana **Explorador de pruebas** para crear un dominio de aplicación.
 
@@ -203,7 +202,7 @@ Las pruebas que se basan en estos valores pueden producir errores cuando las eje
 
 La solución se puede compilar incluso si no realiza ninguna edición si el proceso de compilación de la solución genera código fuente que forma parte de la propia solución y los archivos de destino de compilación no tienen entradas y salidas adecuadas especificadas. Los destinos deben disponer de una lista de entradas y salidas para que MSBuild pueda realizar las comprobaciones actualizadas adecuadas y determinar si es necesaria una nueva compilación.
 
-Live Unit Testing inicia una compilación siempre que detecta que los archivos de origen han cambiado. Dado que la compilación de la solución genera archivos de origen, Live Unit Testing entrará en un bucle de compilación infinito. Pero si las entradas y salidas del destino se comprueban cuando Live Unit Testing inicia la segunda compilación (después de detectar los archivos de origen recién generados desde la compilación anterior), saldrá del bucle de compilación porque las comprobaciones de las entradas y salidas indicarán que todo está actualizado.  
+Live Unit Testing inicia una compilación siempre que detecta que los archivos de origen han cambiado. Dado que la compilación de la solución genera archivos de origen, Live Unit Testing entrará en un bucle de compilación infinito. Pero si las entradas y salidas del destino se comprueban cuando Live Unit Testing inicia la segunda compilación (después de detectar los archivos de origen recién generados desde la compilación anterior), saldrá del bucle de compilación porque las comprobaciones de las entradas y salidas indicarán que todo está actualizado.  
 
 ## <a name="lightweight-solution-load"></a>Carga de solución ligera
 **¿Cómo funciona Live Unit Testing con la característica de carga de solución ligera?**
@@ -223,12 +222,12 @@ Este es un problema conocido y se corregirá en una actualización posterior de 
 
 Este problema se ha corregido y no existe en la versión 15.3 de Visual Studio 2017. Actualice a esta versión de Visual Studio.
 
-Para las versiones anteriores de Visual Studio 2017, es un problema conocido. Para solucionar este problema de forma alternativa, debe realizar una edición en cualquier archivo después de haber incluido o excluido las pruebas. 
+Para las versiones anteriores de Visual Studio 2017, es un problema conocido. Para solucionar este problema de forma alternativa, debe realizar una edición en cualquier archivo después de haber incluido o excluido las pruebas. 
 
 ## <a name="editor-icons"></a>Iconos del editor
 **¿Por qué no veo ningún icono en el editor aunque Live Unit Testing parece que ejecuta pruebas según los mensajes de la ventana de salida?**
 
-Es posible que no vea los iconos del editor si, por alguna razón, los ensamblados en los que está trabajando Live Unit Testing no están instrumentados. Por ejemplo, Live Unit Testing no es compatible con proyectos que establecen `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>`. En este caso, el proceso de compilación necesita actualizarse para quitar esta configuración o cambiarla a `true` para que Live Unit Testing funcione. 
+Es posible que no vea los iconos del editor si, por alguna razón, los ensamblados en los que está trabajando Live Unit Testing no están instrumentados. Por ejemplo, Live Unit Testing no es compatible con proyectos que establecen `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>`. En este caso, el proceso de compilación necesita actualizarse para quitar esta configuración o cambiarla a `true` para que Live Unit Testing funcione. 
 
 ## <a name="capture-logs"></a>Captura de registros
 **¿Cómo puedo recopilar registros más detallados para archivar informes de errores?**

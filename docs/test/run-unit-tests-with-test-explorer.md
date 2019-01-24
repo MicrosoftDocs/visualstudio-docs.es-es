@@ -3,7 +3,6 @@ title: Ejecutar, compilar y depurar pruebas unitarias con el Explorador de prueb
 description: Obtenga información sobre cómo ejecutar pruebas con el Explorador de pruebas en Visual Studio. En este tema se explica cómo habilitar ejecuciones de pruebas automáticas después de la compilación, ver los resultados de las pruebas, agrupar y filtrar la lista de pruebas, crear listas de reproducción, depurar las pruebas y usar métodos abreviados de pruebas.
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
@@ -12,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc918adb6a66f64cdcda46ea535cd0ab017c0676
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 89e64c88311848d53a114a1f58f711edbe3856e7
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939523"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269883"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ejecutar pruebas unitarias con el Explorador de pruebas
 
@@ -47,7 +46,7 @@ Puede ejecutar todas las pruebas de la solución, todas las pruebas de un grupo 
 
 - Para ejecutar todas las pruebas de un grupo predeterminado, elija **Ejecutar** y el grupo en el menú.
 
-- Seleccione las pruebas individuales que desea ejecutar, abra el menú contextual de una prueba seleccionada y elija **Ejecutar pruebas seleccionadas**.
+- Seleccione las pruebas individuales que quiera ejecutar, abra el menú contextual de la prueba seleccionada y seleccione **Ejecutar pruebas seleccionadas**.
 
 - Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
 
@@ -85,7 +84,7 @@ Si la prueba no se supera, en el panel de detalles se mostrará también:
 
 ### <a name="view-the-source-code-of-a-test-method"></a>Ver el código fuente de un método de prueba
 
- Para mostrar el código fuente de un método de prueba en el editor de Visual Studio, seleccione la prueba y elija **Abrir prueba** en el menú contextual (teclado: **F12**).
+ Para mostrar el código fuente de un método de prueba en el editor de Visual Studio, seleccione la prueba y haga clic en **Abrir prueba** en el menú contextual (teclado: **F12**).
 
 ## <a name="group-and-filter-the-test-list"></a>Agrupar y filtrar la lista de pruebas
 
@@ -166,9 +165,9 @@ Por ejemplo, `FullName:"MyClass" - FullName:"PerfTest"` devuelve todas las prueb
 
  ![Elegir una lista de reproducción](../test/media/ute_playlist.png)
 
- **Para crear una lista de reproducción**, elija una o varias pruebas en el Explorador de pruebas. En el menú contextual, elija **Agregar a lista de reproducción** > **Nueva lista de reproducción**. Guarde el archivo con la ubicación y el nombre especificados en el cuadro de diálogo **Crear nueva lista de reproducción** .
+ **Para crear una lista de reproducción**, elija una o varias pruebas en el Explorador de pruebas. En el menú contextual, seleccione **Agregar a lista de reproducción** > **Nueva lista de reproducción**. Guarde el archivo con la ubicación y el nombre especificados en el cuadro de diálogo **Crear nueva lista de reproducción** .
 
- **Para agregar pruebas a una lista de reproducción**, elija una o varias pruebas en el Explorador de pruebas. En el menú contextual, elija **Agregar a lista de reproducción**y la lista de reproducción a la que desea agregar las pruebas.
+ **Para agregar pruebas a una lista de reproducción**, elija una o varias pruebas en el Explorador de pruebas. En el menú contextual, haga clic en **Agregar a lista de reproducción** y, después, seleccione la lista de reproducción a la que quiera agregar las pruebas.
 
  **Para abrir una lista de reproducción**, elija **Prueba** > **Lista de reproducción** en el menú de Visual Studio, y seleccione un elemento entre las listas de reproducción usadas recientemente. O bien, elija **Abrir lista de reproducción** para especificar el nombre y la ubicación de la lista de reproducción específica.
 
@@ -185,13 +184,13 @@ Se puede usar el Explorador de pruebas para iniciar una sesión de depuración p
     > [!NOTE]
     > Dado que los métodos de prueba se pueden ejecutar en cualquier orden, establezca puntos de interrupción en todos los métodos de prueba que desee depurar.
 
-2. En el Explorador de pruebas, seleccione los métodos de prueba y elija **Depurar pruebas seleccionadas** en el menú contextual.
+2. En el Explorador de pruebas, seleccione los métodos de prueba y seleccione **Depurar pruebas seleccionadas** en el menú contextual.
 
-   Para obtener más información sobre el depurador, vea [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md).
+   Para obtener más información sobre el depurador, vea [Depurar en Visual Studio](../debugger/debugger-feature-tour.md).
 
 ### <a name="diagnose-test-method-performance-issues"></a>Diagnosticar problemas de rendimiento del método de prueba
 
- Para diagnosticar por qué tarda demasiado un método de prueba, seleccione dicho método en el Explorador de pruebas y elija **Perfil** en el menú contextual. Vea [Explorador de rendimiento](../profiling/performance-explorer.md).
+ Para diagnosticar por qué tarda demasiado un método de prueba, seleccione el método en el Explorador de pruebas y, en el menú contextual, haga clic en **Perfil**. Vea [Explorador de rendimiento](../profiling/performance-explorer.md).
 
 ### <a name="analyze-unit-test-code-coverage"></a>Analizar la cobertura de código de prueba unitaria
 

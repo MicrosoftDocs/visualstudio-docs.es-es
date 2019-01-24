@@ -1,8 +1,7 @@
 ---
-title: Ejecución de una prueba unitaria como un proceso de 64 bits en Visual Studio
+title: Ejecutar una prueba unitaria como un proceso de 64 bits
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, creating
@@ -12,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cf8a815cb0827ed69c24686053bf118a48c020eb
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: b38968c7724faaaba092b68aaa89e02b93d2dd10
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379909"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921671"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>Ejecutar una prueba unitaria como un proceso de 64 bits
 

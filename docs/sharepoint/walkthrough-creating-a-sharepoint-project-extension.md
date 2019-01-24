@@ -1,9 +1,6 @@
 ---
-title: 'Tutorial: Crear una extensión de proyecto de SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Creación de una extensión de proyecto de SharePoint | Documentos de Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 44bafccdb3c99032678a808ba3f82f9f14558b3e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 39432f20620a3c7e6f374b09943fc73c2d4d2903
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893434"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885905"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Tutorial: Crear una extensión de proyecto de SharePoint
   Este tutorial muestra cómo crear una extensión para los proyectos de SharePoint. Puede usar una extensión de proyecto para responder a eventos de nivel de proyecto, como cuando un proyecto es agregado, eliminado o cambiado de nombre. También puede agregar propiedades personalizadas o responder cuando cambia un valor de propiedad. A diferencia de las extensiones de elemento de proyecto, las extensiones de proyecto no se puede asociadas con un determinado tipo de proyecto de SharePoint. Cuando se crea una extensión de proyecto, la extensión de carga cuando se abre cualquier tipo de proyecto de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -131,7 +128,7 @@ ms.locfileid: "49893434"
   
 1.  En **el Explorador de soluciones**, abra el menú contextual para el archivo source.extension.vsixmanifest y, a continuación, elija el **abrir** botón.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Abre el archivo en el Diseñador de manifiestos. La información que aparece en el **metadatos** ficha también aparece en el **extensiones y actualizaciones**. Todos los paquetes VSIX requieren el archivo extension.vsixmanifest. Para obtener más información acerca de este archivo, consulte [referencia de 1.0 del esquema de extensión de VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Abre el archivo en el Diseñador de manifiestos. La información que aparece en el **metadatos** ficha también aparece en el **extensiones y actualizaciones**. Todos los paquetes VSIX requieren el archivo extension.vsixmanifest. Para obtener más información acerca de este archivo, consulte [referencia de 1.0 del esquema de extensión de VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  En el **Product Name** , escriba **Custom Project Property**.  
   
@@ -146,7 +143,7 @@ ms.locfileid: "49893434"
 6.  En el **tipo** elija **Microsoft.VisualStudio.MefComponent**.  
   
     > [!NOTE]  
-    >  Este valor corresponde al elemento `MEFComponent` del archivo extension.vsixmanifest. Este elemento especifica el nombre de un ensamblado de extensión en el paquete VSIX. Para obtener más información, consulte [elemento MEFComponent (Esquema VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Este valor corresponde al elemento `MEFComponent` del archivo extension.vsixmanifest. Este elemento especifica el nombre de un ensamblado de extensión en el paquete VSIX. Para obtener más información, consulte [elemento MEFComponent (Esquema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 7.  En el **origen** lista, elija el **un proyecto de la solución actual** botón de opción.  
   
@@ -205,8 +202,7 @@ ms.locfileid: "49893434"
   
 ## <a name="see-also"></a>Vea también
  [Extender los proyectos de SharePoint](../sharepoint/extending-sharepoint-projects.md)   
- [Cómo: agregar una propiedad a proyectos de SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
+ [Cómo: Agregar una propiedad a proyectos de SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
  [Convertir entre tipos de sistema de proyectos de SharePoint y otros tipos de proyecto de Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)   
  [Guardar datos en las extensiones del sistema del proyecto de SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)   
  [Asociar datos personalizados con extensiones de herramientas de SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)  
-  

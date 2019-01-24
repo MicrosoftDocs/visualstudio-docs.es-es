@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExtendedPropertyInfo::Clone | Documentos de Microsoft
+title: IEnumDebugExtendedPropertyInfo::Clone | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 03e4dcd79d90806eab0d664b2a0cba428c03207c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e1d58419783d4f101a6018fe00d9c9a4ddc94548
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935333"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349652"
 ---
 # <a name="ienumdebugextendedpropertyinfoclone"></a>IEnumDebugExtendedPropertyInfo::Clone
 Crea un enumerador que contiene el mismo estado de enumeración que el enumerador actual.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT Clone (  
    IEnumDebugExtendedPropertyInfo** ppEnum  
 );  

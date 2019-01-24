@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce837eda3a0d83a830e5d5e281b2d24cb932063a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bef4ae1ccff730d6865e00174ec73e991245bd43
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726395"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096504"
 ---
 # <a name="idebugdocumenthelpersettextattributes"></a>IDebugDocumentHelper::SetTextAttributes
-Establece los atributos en un intervalo de texto, reemplazando otros atributos en ese texto.  
+Establece los atributos de un intervalo de texto, reemplazando otros atributos en ese texto.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT SetTextAttributes(  
    ULONG              ulCharOffset,  
    ULONG              cChars,  
@@ -43,7 +43,7 @@ HRESULT SetTextAttributes(
  [in] La ubicación de inicio del intervalo de texto.  
   
  `cChars`  
- [in] El número de caracteres en el intervalo.  
+ [in] El número de caracteres del intervalo.  
   
  `pstaTextAttr`  
  [in] Los atributos de texto de origen para el intervalo de texto.  
@@ -56,11 +56,11 @@ HRESULT SetTextAttributes(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Es un error al llamar a `SetTextAttributes` en un intervalo de texto antes de que el texto se agrega al documento. Llame a la `AddDBCSText`, `AddUnicodeText`, o `AddDeferredText` métodos para agregar texto al documento.  
+ Es un error llamar a `SetTextAttributes` en un intervalo de texto antes de que el texto se agrega al documento. Llame a la `AddDBCSText`, `AddUnicodeText`, o `AddDeferredText` métodos para agregar texto al documento.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugDocumentHelper (interfaz)](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
- [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
- [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
+ [Idebugdocumenthelper:: Addunicodetext](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
+ [Idebugdocumenthelper:: Adddbcstext](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
+ [Idebugdocumenthelper:: Adddeferredtext](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [SOURCE_TEXT_ATTR (Enumeración)](../../winscript/reference/source-text-attr-enumeration.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumSymbolsByAddr::Clone method
 ms.assetid: f4582c69-bc3f-4a26-bcca-b641102b85fe
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10aaff016d595a49cca18adfbfe934cdeda76e42
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d6ad72e31cdd592f681106a791f40de970c09dff
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895098"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51728590"
 ---
 # <a name="idiaenumsymbolsbyaddrclone"></a>IDiaEnumSymbolsByAddr::Clone
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Realiza una copia de un objeto.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT Clone (   
+HRESULT Clone (   
    IDiaEnumSymbolsByAddr** ppenum  
 );  
 ```  

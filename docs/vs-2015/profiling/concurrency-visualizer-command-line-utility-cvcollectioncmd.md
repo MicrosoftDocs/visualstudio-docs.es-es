@@ -13,15 +13,15 @@ f1_keywords:
 - vs.cv.performance.cvcollectioncmd
 ms.assetid: 476601be-1608-4014-af15-5aba6ccbed1c
 caps.latest.revision: 26
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b872cf09a4b8ead730f13335fa8e2b7db43186a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ee6ba9335cee43a36750dfcdf46faed16c56db4e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262332"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790998"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilidad de línea de comandos Visualizador de simultaneidad (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

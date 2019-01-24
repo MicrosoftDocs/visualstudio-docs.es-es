@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6aa7ef34d035ad89a096414c285b4f66a4f4fa1e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 579d0ef243de7cd9bfcb821e75aa5ca213712a88
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726705"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090602"
 ---
 # <a name="idebugdocumenttextauthorreplacetext"></a>IDebugDocumentTextAuthor::ReplaceText
 Reemplaza el texto del documento.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT ReplaceText(  
    ULONG    cCharacterPosition,  
    ULONG    cNumToReplace,  
@@ -46,7 +46,7 @@ HRESULT ReplaceText(
  [in] Número de caracteres que se va a reemplazar.  
   
  `pcharText[]`  
- [in] Un búfer que contiene los nuevos caracteres para reemplazar los caracteres anteriores.  
+ [in] Un búfer que contiene los caracteres de nueva para reemplazar los caracteres antiguos.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  

@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 332d7599543efbe5ee6e15ccc89d5fce595e5341
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: ee9f574b1d0db7a90b2d056456ccb29db0604e1e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566884"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846105"
 ---
 # <a name="customizing-element-tools"></a>Personalizar herramientas de elemento
 En algunas definiciones de DSL, un único concepto se representa como un grupo de elementos. Por ejemplo, si crea un modelo en el que un componente tiene un conjunto fijo de puertos, siempre desea que los puertos que deben crearse al mismo tiempo que su componente primario. Por lo tanto, debe personalizar la herramienta de creación de elemento para que crea un grupo de elementos en lugar de uno. Para lograr esto, puede personalizar cómo se inicializa la herramienta de creación del elemento.

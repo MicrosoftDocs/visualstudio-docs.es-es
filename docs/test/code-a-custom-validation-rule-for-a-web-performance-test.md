@@ -1,5 +1,5 @@
 ---
-title: Codificación de una regla de validación personalizada para una prueba de rendimiento web en Visual Studio
+title: Codificación de una regla de validación personalizada para una prueba de rendimiento web
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,13 +16,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 99ed1a6db16b8e1fb765898c976b962bfe43f041
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: b7a656ce5cf15575a0c875ecd686a1ae535a978c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178209"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989327"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Codificar una regla de validación personalizada para una prueba de rendimiento web
 
@@ -30,6 +29,8 @@ Puede crear sus propias reglas de validación. Para ello, derive su propia clase
 
 > [!NOTE]
 > También puede crear reglas de extracción personalizadas. Para obtener más información, consulte [Crear código y complementos personalizados para las pruebas de carga](../test/create-custom-code-and-plug-ins-for-load-tests.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-custom-validation-rules"></a>Para crear reglas de validación personalizadas
 
@@ -138,11 +139,11 @@ namespace SampleWebTestRules
             {
                 if (numTagsFound > 0)
                 {
-                    e.Message = String.Format("Only found {0} occurences of the tag", numTagsFound);
+                    e.Message = String.Format("Only found {0} occurrences of the tag", numTagsFound);
                 }
                 else
                 {
-                    e.Message = String.Format("Did not find any occurences of tag '{0}'", RequiredTagName);
+                    e.Message = String.Format("Did not find any occurrences of tag '{0}'", RequiredTagName);
                 }
             }
         }
@@ -233,9 +234,9 @@ Namespace SampleWebTestRules
             ' If the validation fails, set the error text that the user sees
             If Not (validated) Then
                 If numTagsFound > 0 Then
-                    e.Message = String.Format("Only found {0} occurences of the tag", numTagsFound)
+                    e.Message = String.Format("Only found {0} occurrences of the tag", numTagsFound)
                 Else
-                    e.Message = String.Format("Did not find any occurences of tag '{0}'", RequiredTagName)
+                    e.Message = String.Format("Did not find any occurrences of tag '{0}'", RequiredTagName)
                 End If
             End If
         End Sub

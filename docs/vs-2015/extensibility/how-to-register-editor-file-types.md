@@ -15,12 +15,12 @@ ms.assetid: 54846779-8290-48de-90ab-81011559d9a5
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eadb14a7de675e6a1b7839b4101b8d0d6756a11f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 39b1cde8dec71df9cb85bf737c23c883fbdcd615
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198320"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51777271"
 ---
 # <a name="how-to-register-editor-file-types"></a>Cómo: registrar tipos de archivo del Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

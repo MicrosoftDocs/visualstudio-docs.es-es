@@ -1,8 +1,7 @@
 ---
-title: Sustitución de una variable temporal por su valor en Visual Studio
+title: Sustitución de una variable temporal por su valor
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -12,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: fb6fc6888e33b2cc0d210e9cb1e1aababe304f2a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aa329dd3fe7d01046c35be9829aed4ca4519c3e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916769"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909039"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>Refactorización de inserción de una variable temporal
 
@@ -27,11 +26,11 @@ Esta refactorización se aplica a lo siguiente:
 
 - Visual Basic
 
-**Qué:** Le permite quitar una variable temporal y reemplazarla por su valor.
+**Qué:** Permite quitar una variable temporal y reemplazarla por su valor.
 
 **Cuándo:** El uso de la variable temporal dificulta la comprensión del código.
 
-**Quitar:** El hecho de quitar una variable temporal puede facilitar la lectura del código.
+**Por qué:** La eliminación de una variable temporal puede facilitar la lectura del código.
 
 ## <a name="how-to"></a>Procedimiento
 

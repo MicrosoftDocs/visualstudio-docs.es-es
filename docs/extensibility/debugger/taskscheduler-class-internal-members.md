@@ -1,9 +1,6 @@
 ---
 title: 'TaskScheduler Class: miembros internos | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - TaskScheduler class [.NET Framework debug engines]
@@ -14,17 +11,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97b7531a60f72405d41a5a72c391ba8da91958dc
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: c86b71e836c49d12c0ec0aceb3a20bf0b38e367a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276317"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853884"
 ---
 # <a name="taskscheduler-class---internal-members"></a>TaskScheduler Class: miembros internos
 En este artículo se describe los miembros internos de la <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> clase que le ayudarán a implementar un depurador personalizado. Para obtener información general acerca de esta clase, vea el <xref:System.Threading.Tasks.TaskScheduler> artículo de referencia.  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Espacio de nombres:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Ensamblado:** mscorlib (en *mscorlib.dll*)  
   

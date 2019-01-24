@@ -11,13 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: aa8f773ba6f9d0722eb4e07e9c795d0d43860ebb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 608cb5881d7e2bc6911fb6a0f7b90f79ca448f9e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869995"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885999"
 ---
 # <a name="debugging-a-t4-text-template"></a>Depurar una plantilla de texto T4
 Puede establecer puntos de interrupción en plantillas de texto. Para depurar una plantilla de texto en tiempo de diseño, guarde el archivo de plantilla de texto y, a continuación, elija **depurar plantilla T4** en el menú contextual del archivo en el Explorador de soluciones. Para depurar una plantilla de texto en tiempo de ejecución, basta con depurar la aplicación a la que pertenece.

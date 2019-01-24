@@ -1,8 +1,6 @@
 ---
-title: Crear vistas personalizadas de objetos administrados | Microsoft Docs
-ms.custom: ''
-ms.date: 11/04/2016
-ms.technology: vs-ide-debug
+title: Crear vistas personalizadas de objetos | Microsoft Docs
+ms.date: 01/08/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.data.elements
@@ -12,7 +10,7 @@ dev_langs:
 - FSharp
 - C++
 helpviewer_keywords:
-- data types [C#], custom
+- data types, custom
 - custom data types
 - managed code, custom data types
 - autoexp.dat file
@@ -25,34 +23,32 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 970051c5f53c152ea6fee334c3c1f856172b5ed9
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: c2e4b2d34df1a1e870247112892d4cd00ff887f3
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280550"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227647"
 ---
-# <a name="create-custom-views-of-managed-objects"></a>Crear vistas personalizadas de objetos administrados
+# <a name="create-custom-views-of-objects-c-visual-basic-c"></a>Crear vistas personalizadas de objetos (C#, Visual Basic, C++)
 Se puede personalizar la manera en que Visual Studio muestra los tipos de datos en las ventanas de variables del depurador.  
+
+## <a name="native-code"></a>Código nativo
+
+Para el código de C++, puede agregar expansiones de tipo de datos personalizados mediante el marco Natvis, como se describe en [crear vistas personalizadas de objeto nativo en el depurador](/visualstudio/debugger/create-custom-views-of-native-objects). Para C / c++ / CLI código, también puede utilizar atributos, que se describen aquí en este artículo.
+
+## <a name="attributes"></a>Atributos
+
+En C#, Visual Basic y C++ (C++ / c++ / sólo código CLI), se pueden agregar expansiones para los datos personalizados mediante <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, y <xref:System.Diagnostics.DebuggerBrowsableAttribute>.  
   
-## <a name="attributes"></a>Atributos  
- En C# y Visual Basic, se pueden agregar expansiones para los datos personalizados mediante <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute> y <xref:System.Diagnostics.DebuggerBrowsableAttribute>.  
-  
- En código de [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], Visual Basic no admite el atributo DebuggerBrowsable. Esta limitación se ha quitado en las versiones más recientes de .NET Framework.  
-  
-## <a name="visualizers"></a>Visualizadores  
- Se puede escribir un visualizador para mostrar cualquier tipo de datos administrados. Para obtener más información, consulte [Cómo: escribir un visualizador](../debugger/how-to-write-a-visualizer.md).  
-  
-## <a name="native-code"></a>Código nativo  
- En el caso de código nativo, se pueden agregar expansiones de tipo de datos personalizados al archivo autoexp.dat, ubicado en el directorio Archivos de programa\Microsoft Visual Studio 11.0\Common7\Packages\Debugger. El propio archivo incluye las instrucciones sobre cómo escribir reglas `autoexp`.  
-  
-> [!CAUTION]
->  La estructura de este archivo y la sintaxis de las reglas autoexp quizá cambien de una versión de Visual Studio a la siguiente.  
-  
- Las vistas de tipos nativos también se pueden personalizar escribiendo un complemento de evaluador de expresiones. Para obtener más información, consulte [ejemplo EEAddIn: depuración de expresión del evaluador de expresiones complemento](https://msdn.microsoft.com/library/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e).  
+En código de [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], Visual Basic no admite el atributo DebuggerBrowsable. Esta limitación se ha quitado en las versiones más recientes de .NET Framework.    
+
+## <a name="visualizers"></a>Visualizadores
+
+Se puede escribir un visualizador para mostrar cualquier tipo de datos administrados. Para obtener más información, vea [Cómo: Escritura de un visualizador](/visualstudio/debugger/create-custom-visualizers-of-data).
   
 ## <a name="see-also"></a>Vea también  
- [Usar el atributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
- [Usar el atributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)   
- [Inspección e inspección rápida Windows](../debugger/watch-and-quickwatch-windows.md)   
+ [Uso del atributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
+ [Uso del atributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)   
+ [Ventanas Inspección e Inspección rápida](../debugger/watch-and-quickwatch-windows.md)   
  [Mejorar la depuración con los atributos de visualización del depurador](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

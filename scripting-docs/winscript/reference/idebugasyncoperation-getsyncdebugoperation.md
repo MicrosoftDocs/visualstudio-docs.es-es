@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperation::GetSyncDebugOperation | Documentos de Microsoft
+title: IDebugAsyncOperation::GetSyncDebugOperation | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ae53dde2b7e48a4bf67cbd7aa5d70904c57d90f2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8b66eee068bfffcc726bff60e5e469f9d7254949
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725545"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094918"
 ---
 # <a name="idebugasyncoperationgetsyncdebugoperation"></a>IDebugAsyncOperation::GetSyncDebugOperation
-Devuelve la operación sincrónica de depuración asociada a este objeto.  
+Devuelve la operación de depuración sincrónica asociada a este objeto.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetSyncDebugOperation(  
    IDebugSyncOperation**  ppsdo  
 );  
@@ -38,7 +38,7 @@ HRESULT GetSyncDebugOperation(
   
 #### <a name="parameters"></a>Parámetros  
  `ppsdo`  
- [out] La operación sincrónica de depuración asociada a este objeto.  
+ [out] La operación de depuración sincrónica asociada a este objeto.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -48,7 +48,7 @@ HRESULT GetSyncDebugOperation(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método devuelve la operación sincrónica de depuración asociada a este objeto.  
+ Este método devuelve la operación de depuración sincrónica asociada a este objeto.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugAsyncOperation (Interfaz)](../../winscript/reference/idebugasyncoperation-interface.md)

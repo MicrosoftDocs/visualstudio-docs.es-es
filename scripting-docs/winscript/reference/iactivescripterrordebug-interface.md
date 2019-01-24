@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptErrorDebug (interfaz) | Documentos de Microsoft
+title: IActiveScriptErrorDebug (interfaz) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ff2dda33c1e406f87a157173c41015acf96e62a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4d773724d23c61aa72b8cd48917f2cd0bef4a7cb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645755"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345206"
 ---
 # <a name="iactivescripterrordebug-interface"></a>IActiveScriptErrorDebug (Interfaz)
-Proporciona información de contexto de documento para los errores en tiempo de compilación y excepciones en tiempo de ejecución. El `IActiveScriptError::QueryInterface` método admite la `IActiveScriptErrorDebug` interfaz.  
+Proporciona información de contexto de documento para errores de compilación y excepciones de tiempo de ejecución. El `IActiveScriptError::QueryInterface` método admite la `IActiveScriptErrorDebug` interfaz.  
   
  Además de los métodos heredados de `IActiveScriptError`, el `IActiveScriptErrorDebug` interfaz expone los métodos siguientes.  
   
@@ -30,5 +30,5 @@ Proporciona información de contexto de documento para los errores en tiempo de 
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IActiveScriptErrorDebug::GetDocumentContext](../../winscript/reference/iactivescripterrordebug-getdocumentcontext.md)|Proporciona el contexto del documento de este error.|  
-|[IActiveScriptErrorDebug::GetStackFrame](../../winscript/reference/iactivescripterrordebug-getstackframe.md)|Proporciona el marco de pila que está en vigor para errores de tiempo de ejecución.|
+|[IActiveScriptErrorDebug::GetDocumentContext](../../winscript/reference/iactivescripterrordebug-getdocumentcontext.md)|Proporciona el contexto del documento para este error.|  
+|[IActiveScriptErrorDebug::GetStackFrame](../../winscript/reference/iactivescripterrordebug-getstackframe.md)|Proporciona el marco de pila que está en vigor para los errores en tiempo de ejecución.|

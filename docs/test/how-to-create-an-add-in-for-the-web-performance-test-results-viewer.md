@@ -1,5 +1,5 @@
 ---
-title: Creación de un complemento de Visual Studio para el visor de resultados de pruebas de rendimiento web
+title: Creación de un complemento para el Visor de resultados de pruebas de rendimiento web
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 2c2a5366a9772060a3e94de14b12f5d2ae62cbdf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d90b2ace06b6840a061b1f559f6f2dc7aaa67b6b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949323"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894524"
 ---
-# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Cómo: Crear un complemento de Visual Studio para el visor de resultados de pruebas de rendimiento web
+# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Procedimiento para crear un complemento de Visual Studio para el Visor de resultados de pruebas de rendimiento web
 
 Puede extender la interfaz de usuario para el **Visor de resultados de pruebas de rendimiento web** utilizando los siguientes espacios de nombres:
 
@@ -28,7 +27,9 @@ Puede extender la interfaz de usuario para el **Visor de resultados de pruebas d
 
 Además, necesita agregar una referencia al archivo DLL LoadTestPackage que se encuentra en la carpeta *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*.
 
--   Para extender la interfaz de usuario del **Visor de resultados de pruebas de rendimiento web**, debe crear un control de usuario y un complemento de Visual Studio. Los siguientes procedimientos explican cómo crear el complemento y el control de usuario, y cómo implementar las clases necesarias para extender la interfaz de usuario del **Visor de resultados de pruebas de rendimiento web**.
+Para extender la interfaz de usuario del **Visor de resultados de pruebas de rendimiento web**, debe crear un control de usuario y un complemento de Visual Studio. Los siguientes procedimientos explican cómo crear el complemento y el control de usuario, y cómo implementar las clases necesarias para extender la interfaz de usuario del **Visor de resultados de pruebas de rendimiento web**.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="create-or-open-a-solution-that-contains-an-aspnet-web-application-and-a-web-performance-and-load-test-project"></a>Crear o abrir una solución que contenga una aplicación web ASP.NET y un proyecto de prueba de carga y rendimiento web
 
@@ -37,7 +38,7 @@ Además, necesita agregar una referencia al archivo DLL LoadTestPackage que se e
 Cree o abra una solución no destinada a producción con la que pueda experimentar, que contenga una aplicación web ASP.NET y un proyecto de prueba de carga y rendimiento web con una o más pruebas de rendimiento web para esa aplicación.
 
 > [!NOTE]
-> Puede crear una aplicación web ASP.NET y un proyecto de prueba de carga y rendimiento web que contenga pruebas de rendimiento web si sigue los procedimientos de [Cómo: Crear una prueba de servicios web](../test/how-to-create-a-web-service-test.md) y [Generar y ejecutar una prueba de rendimiento web codificada](../test/generate-and-run-a-coded-web-performance-test.md).
+> Puede crear una aplicación web ASP.NET y un proyecto de prueba de carga y rendimiento web que contenga las pruebas de rendimiento web mediante los procedimientos de [Cómo: Crear una prueba de servicios web ](../test/how-to-create-a-web-service-test.md) y [Generación y ejecución de una prueba de rendimiento web codificada](../test/generate-and-run-a-coded-web-performance-test.md).
 
 ## <a name="create-a-visual-studio-add-in"></a>Crear un complemento de Visual Studio
 

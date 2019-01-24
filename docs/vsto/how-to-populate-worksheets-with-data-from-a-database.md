@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: Rellenar hojas de cálculo con datos de una base de datos'
-ms.custom: ''
+title: Procedimiento Rellenar hojas de cálculo con datos de una base de datos
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -12,27 +9,27 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], populating
 - databases [Office development in Visual Studio], populating worksheets
 - data [Office development in Visual Studio], adding to worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25e73eaa3cdd0655a51711ddd30996915f984213
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: bf375b49525349cf28fb4b9dd1651ddadbf59360
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758474"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850065"
 ---
-# <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Cómo: Rellenar hojas de cálculo con datos de una base de datos
+# <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Procedimiento Rellenar hojas de cálculo con datos de una base de datos
 
 Puede tener acceso a datos en proyectos de Office de nivel de documento de la misma manera que tener acceso a datos en los proyectos de Windows Forms. Se usan las mismas herramientas y el mismo código para llevar los datos a la solución; además, también es posible usar controles de Windows Forms para que se muestren los datos. Además, puede aprovechar los controles denominados host, que son objetos nativos de Microsoft Office Excel que se han mejorado con eventos y capacidades de enlace de datos. Para obtener más información, consulte [elementos Host y hospedar información general sobre controles](../vsto/host-items-and-host-controls-overview.md).
 
 [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
-En el siguiente ejemplo se muestra cómo agregar controles enlazados a datos en proyectos de nivel de documento usando un diseñador. Para obtener un ejemplo de cómo agregar controles enlazados a datos en los proyectos de nivel de aplicación en tiempo de ejecución, consulte [Tutorial: enlace de datos complejo en el proyecto de complemento VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md).
+En el siguiente ejemplo se muestra cómo agregar controles enlazados a datos en proyectos de nivel de documento usando un diseñador. Para obtener un ejemplo de cómo agregar controles enlazados a datos en los proyectos de nivel de aplicación en tiempo de ejecución, consulte [Tutorial: Enlace de datos complejo en el proyecto de complemento VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md).
 
-![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una demostración en vídeo relacionada, vea [¿cómo lo hago?: transferir datos a una hoja de cálculo de Excel?](http://go.microsoft.com/fwlink/?LinkID=130277), y [¿Cómo: consumir datos de base de datos en Excel?](http://go.microsoft.com/fwlink/?LinkID=130287).
+![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una demostración en vídeo relacionada, vea [¿cómo lo hago?: ¿Transferir datos a una hoja de cálculo de Excel? ](http://go.microsoft.com/fwlink/?LinkID=130277), y [¿cómo lo hago?: ¿Consumir datos de la base de datos en Excel? ](http://go.microsoft.com/fwlink/?LinkID=130287).
 
 ## <a name="add-a-data-bound-control-to-a-worksheet-at-design-time"></a>Agregar un control enlazado a datos a una hoja de cálculo en tiempo de diseño
 
@@ -56,7 +53,7 @@ Puede agregar un control diferente, seleccione la tabla o el campo en el **oríg
 
 Además del control, se agregan automáticamente al proyecto los siguientes objetos relacionados con los datos:
 
--   Un conjunto de datos con tipo que encapsula las tablas de datos de la base de datos a las que se haya conectado. Para obtener más información, consulte [herramientas de conjunto de datos en Visual Studio](/visualstudio/data-tools/dataset-tools-in-visual-studio).
+-   Un conjunto de datos con tipo que encapsula las tablas de datos de la base de datos a las que se haya conectado. Para obtener más información, consulte [herramientas de conjunto de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
 -   Un <xref:System.Windows.Forms.BindingSource> que conecta el control al conjunto de datos con tipo. Para obtener más información, consulte [información general del componente BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 
@@ -70,16 +67,16 @@ Al ejecutar el proyecto, el control muestra el primer registro del origen de dat
 
 -   Use métodos <xref:System.Windows.Forms.BindingSource>, como <xref:System.Windows.Forms.BindingSource.MoveNext%2A> y <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
 
-Para obtener información acerca de cómo enviar las actualizaciones a la base de datos y el conjunto de datos con tipo, vea [Cómo: actualizar un origen de datos con datos de un control host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
+Para obtener información acerca de cómo enviar las actualizaciones a la base de datos y el conjunto de datos con tipo, vea [Cómo: Actualizar un origen de datos con datos de un control host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
 ## <a name="see-also"></a>Vea también
 
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Agregar nuevos orígenes de datos](../data-tools/add-new-data-sources.md)
 - [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [Cómo: rellenar documentos con datos de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Cómo: rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Cómo: rellenar documentos con datos de servicios](../vsto/how-to-populate-documents-with-data-from-services.md)
-- [Cómo: actualizar un origen de datos con datos de un control host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
-- [¿Cómo lo hago?: transferir datos a una hoja de cálculo de Excel](http://go.microsoft.com/fwlink/?LinkID=130277)
-- [¿Cómo: consumir datos de base de datos en Excel?](http://go.microsoft.com/fwlink/?LinkID=130287)
+- [Cómo: Rellenar documentos con datos de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Cómo: Rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Cómo: Rellenar documentos con datos de servicios](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Cómo: Actualizar un origen de datos con datos de un control host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [¿Cómo lo hago?: Transferir datos a una hoja de cálculo de Excel](http://go.microsoft.com/fwlink/?LinkID=130277)
+- [¿Cómo lo hago?: ¿Consumir datos de la base de datos en Excel?](http://go.microsoft.com/fwlink/?LinkID=130287)

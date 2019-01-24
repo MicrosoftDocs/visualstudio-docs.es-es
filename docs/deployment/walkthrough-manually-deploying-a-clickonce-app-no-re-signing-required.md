@@ -1,8 +1,6 @@
 ---
-title: 'Tutorial: Implementar manualmente una aplicación ClickOnce que no requiere volver a firmar y que conserve la información de personalización de marca | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Implementar manualmente una aplicación ClickOnce que no requiere volver a firmar y que conserve la información de marca | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91f552ce30030abeae6af0d63763625e711d32e2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c2a44ec16fb88f031701ffbdd08ca972486684a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875104"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898156"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Tutorial: Implementar manualmente una aplicación ClickOnce que no requiere volver a firmar y que conserve la información de personalización de marca
 Cuando creas un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación y, a continuación, asígnele a un cliente para publicar e implementar, el cliente había tradicionalmente actualizar el manifiesto de implementación y volver a firmarlo. Si bien esto sigue siendo el método preferido en la mayoría de los casos, .NET Framework 3.5 le permite crear [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las implementaciones que los clientes pueden implementar sin tener que volver a generar un nuevo manifiesto de implementación. Para obtener más información, consulte [ClickOnce implementar aplicaciones para servidores de pruebas y producción sin nueva firma](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
@@ -37,7 +35,7 @@ Cuando creas un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)
  Cuando creas un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación y, a continuación, asígnele a un cliente para publicar e implementar, la aplicación puede usar la personalización de marca del cliente o puede conservar su marca. Por ejemplo, si la aplicación es una única aplicación propia, es posible que desea conservar la personalización de marca. Si la aplicación está muy personalizada para cada cliente, puede usar la personalización de marca del cliente. .NET Framework 3.5 le permite conservar la personalización de marca, información del publicador y firma de seguridad al proporcionar a una aplicación a una organización para la implementación. Para obtener más información, consulte [ClickOnce crear aplicaciones para que otros usuarios implementar](../deployment/creating-clickonce-applications-for-others-to-deploy.md).  
   
 > [!NOTE]
->  En este tutorial crea implementaciones manualmente mediante la herramienta de línea de comandos *Mage.exe* o la herramienta gráfica *MageUI.exe*. Para obtener más información acerca de las implementaciones manuales, vea [Tutorial: implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+>  En este tutorial crea implementaciones manualmente mediante la herramienta de línea de comandos *Mage.exe* o la herramienta gráfica *MageUI.exe*. Para obtener más información acerca de las implementaciones manuales, vea [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Para llevar a cabo los pasos de este tutorial necesita lo siguiente:  
@@ -131,7 +129,7 @@ Cuando creas un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)
   
 14. Si tiene un certificado almacenado como un archivo en el sistema de archivos, use el **inicio de sesión como archivo de certificado** opción y seleccione el certificado en el sistema de archivos mediante el botón de puntos suspensivos (**...** ) botón.  
   
-     O bien  
+     o bien  
   
      Si el certificado se guarda en un almacén de certificados que se puede acceder desde su equipo, seleccione el **opción firmar con certificado almacenado**y seleccione el certificado de la lista proporcionada.  
   

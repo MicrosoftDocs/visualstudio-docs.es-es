@@ -1,8 +1,6 @@
 ---
-title: Idiaenumsectioncontribs | Documentos de Microsoft
-ms.custom: ''
+title: Idiaenumsectioncontribs | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af4bd0c836d6c63870147d0eeb825c1cbc7b26a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0a6b02218f9d4aba3f9cc3b3785c70594a92457a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951345"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864182"
 ---
 # <a name="idiaenumsectioncontribsskip"></a>IDiaEnumSectionContribs::Skip
 Omite un número especificado de las contribuciones de la sección en una secuencia de enumeración.  
@@ -27,7 +25,7 @@ Omite un número especificado de las contribuciones de la sección en una secuen
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT Skip(   
+HRESULT Skip(   
    ULONG celt  
 );  
 ```  

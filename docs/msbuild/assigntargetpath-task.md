@@ -1,8 +1,6 @@
 ---
 title: Tarea AssignTargetPath| Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -15,17 +13,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccbd96de96e750c0f149924ab69785e077591755
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 8a711c20198b117b53536f9b0fe043a468eb8a0b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946620"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930666"
 ---
 # <a name="assigntargetpath-task"></a>Tarea AssignTargetPath
 Esta tarea acepta una lista de archivos y agrega atributos `<TargetPath>` si aún no se han especificado.  
   
-## <a name="task-parameters"></a>Parámetros de la tarea  
+## <a name="task-parameters"></a>Parámetros de tareas  
  En la siguiente tabla se describen los parámetros de la tarea `AssignTargetPath` .  
   
 |Parámetro|Descripción|  
@@ -35,7 +33,7 @@ Esta tarea acepta una lista de archivos y agrega atributos `<TargetPath>` si aú
 |`AssignedFiles`|Optional<br /><br /> Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem> `[]`.<br /><br /> Contiene la lista de archivos resultante.|  
   
 ## <a name="remarks"></a>Comentarios  
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension (Clase base)](../msbuild/taskextension-base-class.md).  
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Ejemplo  
  En el siguiente ejemplo se ejecuta la tarea `AssignTargetPath` para configurar un proyecto.  

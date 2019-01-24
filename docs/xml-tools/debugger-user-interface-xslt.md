@@ -2,7 +2,6 @@
 title: Interfaz de usuario del depurador (XSLT)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c2cedf1a07307b8494e6a6b810e9590f347c9f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3bd9ee5e1d86982b2e1b0a8495c9b43a14f43988
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847388"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875302"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfaz de usuario del depurador (XSLT)
 
@@ -92,15 +91,15 @@ Para obtener más información, consulte el [depuración: referencia de la inter
 
 -   No se permiten funciones definidas por el usuario.
 
-Para obtener más información, consulte [Cómo: evaluar una expresión XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).
+Para obtener más información, vea [Cómo: Evaluar una expresión XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).
 
 ## <a name="disassembly-window"></a>ventana Desensamblado
  La ventana Desensamblado muestra el código ensamblador generado por el compilador de XSLT. Esta ventana se puede utilizar de la misma manera que todas las demás ventanas de desensamblado de Visual Studio.
 
- Para obtener más información, [Cómo: usar la ventana Desensamblado](../debugger/how-to-use-the-disassembly-window.md).
+ Para obtener más información, [Cómo: Utilice la ventana Desensamblado](../debugger/how-to-use-the-disassembly-window.md).
 
 ## <a name="see-also"></a>Vea también
 
 - [Depuración de XSLT](../xml-tools/debugging-xslt.md)
-- [Conceptos básicos del depurador](../debugger/getting-started-with-the-debugger.md)
+- [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)   
 - [Inspeccionar las variables en las ventanas automático y variables locales de Visual Studio](../debugger/autos-and-locals-windows.md)

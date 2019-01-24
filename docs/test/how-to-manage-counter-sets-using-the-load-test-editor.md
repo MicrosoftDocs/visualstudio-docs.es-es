@@ -1,5 +1,5 @@
 ---
-title: Carga de conjuntos de contadores de pruebas en Visual Studio
+title: Conjuntos de contadores de la prueba de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,15 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 351d5bd6d46dbc247b125ae56d98c37028f34e35
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 89e582c4377d3948f5ed0cfdb1e23a3259bde27e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379389"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941156"
 ---
-# <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Cómo: Administrar conjuntos de contadores mediante el Editor de pruebas de carga
+# <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Procedimiento para administrar conjuntos de contadores mediante el Editor de pruebas de carga
 
 Cuando se crea una prueba de carga con el **Asistente para prueba de carga nueva**, se agrega un conjunto de contadores inicial. Este conjunto inicial de contadores ofrece una serie de conjuntos de contadores predefinidos para la prueba de carga.
 
@@ -32,6 +31,8 @@ Cuando se crea una prueba de carga con el **Asistente para prueba de carga nueva
 La administración de conjuntos de contadores implica la elección del conjunto de equipos del que desea recopilar datos de rendimiento, así como la asignación de un grupo de conjuntos de contadores para recopilar datos de cada equipo individual. Los contadores se administran en el **Editor de pruebas de carga**.
 
 ![Administrar conjuntos de contadores](../test/media/loadtestmanagecountersets.png)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-manage-counter-sets"></a>Para administrar conjuntos de contadores
 

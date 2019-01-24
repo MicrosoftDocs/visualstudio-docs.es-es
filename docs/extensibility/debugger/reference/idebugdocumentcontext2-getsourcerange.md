@@ -1,9 +1,6 @@
 ---
 title: IDebugDocumentContext2::GetSourceRange | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDocumentContext2::GetSourceRange
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d2fb0128aef16d236db10918eec215c8e198ae4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fe2ad435b4b70f2314822414c0cc0eb429c2478e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951124"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841560"
 ---
 # <a name="idebugdocumentcontext2getsourcerange"></a>IDebugDocumentContext2::GetSourceRange
 Obtiene el intervalo de código fuente de este contexto de documento.  
@@ -28,14 +25,14 @@ Obtiene el intervalo de código fuente de este contexto de documento.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT GetSourceRange(   
+HRESULT GetSourceRange(   
    TEXT_POSITION* pBegPosition,  
    TEXT_POSITION* pEndPosition  
 );  
 ```  
   
 ```csharp  
-int GetSourceRange(   
+int GetSourceRange(   
    TEXT_POSITION[] pBegPosition,  
    TEXT_POSITION[] pEndPosition  
 );  

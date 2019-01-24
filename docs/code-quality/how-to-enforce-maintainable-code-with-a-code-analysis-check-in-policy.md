@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: Exigir código mantenible con una directiva de protección de los análisis de código'
+title: Procedimiento Exigir código de mantenimiento con una directiva de protección de análisis de código
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, check-in policies
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0121efb2e226b2407eee7eea50354a80482b1cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7d31e52ab2f158b73a0076414b6d18e0b7421b04
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892097"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825722"
 ---
-# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Cómo: exigir código mantenible con una directiva de protección de análisis de código
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Procedimiento Exigir código mantenible con una directiva de protección de análisis de código
 
 Los desarrolladores pueden usar la herramienta de métricas de código para medir la complejidad y el mantenimiento de su código, pero no se puede invocar las métricas del código como parte de una directiva de protección. Sin embargo, puede habilitar las reglas de análisis de código que comprueben el cumplimiento de su código con los estándares de las métricas de código y aplicar las reglas mediante las directivas de protección. Para obtener más información acerca de las métricas de código, vea [valores de métricas de código](../code-quality/code-metrics-values.md).
 
@@ -47,13 +46,13 @@ Los administradores de control de versiones de Team Foundation pueden agregar la
 
 2. Seleccione las casillas de las reglas siguientes:
 
-   - Profundidad de herencia: **CA1501 AvoidExcessiveInheritance** -umbral: advertencia en más de 5 niveles de profundidad
+   - Profundidad de herencia: **CA1501 AvoidExcessiveInheritance** -umbral: Advertencia en más de 5 niveles de profundidad
 
-   - Complejidad: **AvoidExcessiveComplexity CA1502** -umbral: advertencia en más de 25
+   - Complejidad: **CA1502 AvoidExcessiveComplexity** -umbral: Advertencia en más de 25
 
-   - Índice de mantenimiento: **AvoidUnmaintainableCode CA1505** -umbral: advertencia a menos de 20
+   - Índice de mantenimiento: **CA1505 AvoidUnmaintainableCode** -umbral: Advertencia a menos de 20
 
-   - El acoplamiento de clases: **AvoidExcessiveClassCoupling CA1506** -umbral: advertencia en más de 80 para una clase y más de 30 para un método
+   - Acoplamiento de clases: **CA1506 AvoidExcessiveClassCoupling** -umbral: Advertencia en más de 80 para una clase y más de 30 para un método
 
      Además, si desea que una infracción de regla para evitar que una compilación correcta, seleccione la **Tratar advertencia como un Error** casilla de verificación situada junto a la descripción de la regla.
 
@@ -62,4 +61,4 @@ Los administradores de control de versiones de Team Foundation pueden agregar la
 ## <a name="see-also"></a>Vea también
 
 - [Valores de las métricas de código](../code-quality/code-metrics-values.md)
-- [Crear y usar directivas de protección de análisis de código](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Crear y usar directivas de protección de análisis de código](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

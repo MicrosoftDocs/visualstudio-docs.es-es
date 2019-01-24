@@ -16,12 +16,12 @@ ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea0ea8a8374f63335e3e5b2a7c00bdb8c3084d11
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: a087b5952b930145cd9f620a0eebeeee5d947149
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234980"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51778597"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Registro de controladores de comandos de ensamblado de interoperabilidad
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

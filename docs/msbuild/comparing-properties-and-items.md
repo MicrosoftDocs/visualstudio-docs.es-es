@@ -1,8 +1,6 @@
 ---
 title: Comparar propiedades y elementos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, msbuild properties
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96166caefa749138371dd8a5ab2ea9d496553557
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e27f9973bc24cf7d45e86e9982d40cdb20a367ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177119"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942364"
 ---
 # <a name="compare-properties-and-items"></a>Comparación de propiedades y elementos
 Las propiedades y elementos de MSBuild se utilizan para pasar información a las tareas, evaluar condiciones y almacenar valores a los que se puede hacer referencia en el archivo del proyecto.  
@@ -55,7 +53,7 @@ Las propiedades y elementos de MSBuild se utilizan para pasar información a las
   
  agrega el destino CustomBuild a la lista de destino, lo que proporciona a `BuildDependsOn` el valor `BeforeBuild;CoreBuild;AfterBuild;CustomBuild`.  
   
- A partir de MSBuild 4.0, la inserción de dependencia de destino está en desuso. Utilice los atributos `AfterTargets` y `BeforeTargets` en su lugar. Para obtener más información, vea [Orden de compilación de destinos](../msbuild/target-build-order.md).  
+ A partir de MSBuild 4.0, la inserción de dependencia de destino está en desuso. Utilice los atributos `AfterTargets` y `BeforeTargets` en su lugar. Para más información, consulte [Orden de compilación de destinos](../msbuild/target-build-order.md).  
   
 ### <a name="conversions-between-strings-and-item-lists"></a>Conversiones entre cadenas y listas de elementos  
  MSBuild realiza conversiones de tipos de elemento y valores de cadena según sea necesario. Para ver cómo una lista de elementos puede convertirse en un valor de cadena, considere lo que sucede cuando un tipo de elemento se utiliza como el valor de una propiedad de MSBuild:  

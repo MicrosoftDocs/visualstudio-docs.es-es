@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5279ab9b-71d9-4be5-81f6-a1f24b06f5fb
 caps.latest.revision: 19
-author: stevehoag
-ms.author: shoag
+author: gewarren
+ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d59ccac2ef8f91fae9bede5951ff42ec5a43be0e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8d4bc5d8e8a24483c30ac813d3253626e58dd353
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848558"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791753"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Migrar aplicaciones a la Plataforma universal de Windows (UWP)
 Haga los cambios manuales necesarios en los archivos de proyecto existentes para las aplicaciones de la Tienda Windows 8.1, las aplicaciones de Windows Phone 8.1 o las aplicaciones universales de Windows creadas con Visual Studio 2015 RC, de modo que se puedan usar con Visual Studio 2015 RTM. (Si tiene una aplicación universal para Windows 8.1 con un proyecto de aplicación de Windows y un proyecto de Windows Phone, deberá seguir los pasos indicados a continuación para migrar cada proyecto).  
@@ -503,7 +503,7 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
      <PackageDependency  
           Name="Microsoft.VCLibs.120.00"  
           Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"  
-          MinVersion="12.0.30113.0" />  
+          MinVersion="12.0.30113.0" />  
     </Dependencies>  
   
     ```  

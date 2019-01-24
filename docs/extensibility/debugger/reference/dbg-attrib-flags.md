@@ -1,9 +1,6 @@
 ---
-title: DBG_ATTRIB_FLAGS | Documentos de Microsoft
-ms.custom: ''
+title: DBG_ATTRIB_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - DBG_ATTRIB_FLAGS
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 774bef7a3f28c973c9569544556d3033ede0093d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2df250545963ad29a609ebe9202c554f646eef74
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107743"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840049"
 ---
 # <a name="dbgattribflags"></a>DBG_ATTRIB_FLAGS
 Describe los distintos atributos para un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) o un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) interfaz. Miembro de la [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) estructura.  
@@ -203,10 +200,10 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  Indica que el valor de `DEBUG_PROPERTY_INFO::bstrValue` no es válido.  
   
  DBG_ATTRIB_VALUE_NAT  
- Indica que el valor de `DEBUG_PROPERTY_INFO::bstrValue` es "*no algo*" (NAT). NAT describe una marca de registro en procesadores Intel de 64 bits que indica las excepciones especulativas diferidas.  
+ Indica que el valor de `DEBUG_PROPERTY_INFO::bstrValue` es "*no algo*" (NAT). NAT describe una marca de registro en procesadores Intel de 64 bits que indica excepciones especulativas aplazadas.  
   
  DBG_ATTRIB_VALUE_AUTOEXPANDED  
- Indica que el valor de `DEBUG_PROPERTY_INFO::bstrValue` ha sido posiblemente expande automáticamente.  
+ Indica que el valor de `DEBUG_PROPERTY_INFO::bstrValue` ha sido posiblemente expandidas automáticamente.  
   
  DBG_ATTRIB_VALUE_TIMEOUT  
  Indica que una evaluación se ha superado el tiempo de espera.  
@@ -215,10 +212,10 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  Indica que el valor de `DEBUG_PROPERTY_INFO::bstrValue` puede representarse mediante una cadena sin formato.  
   
  DBG_ATTRIB_VALUE_CUSTOM_VIEWER  
- Indica que esta propiedad no tiene al menos un visor personalizado asociado con él.  
+ Indica que esta propiedad tiene al menos un visor personalizado asociado con él.  
   
  DBG_ATTRIB_ACCESS_NONE  
- Indica un objeto que no haya ninguno `public`, `private`, ni `protected` tipo de acceso.  
+ Indica un objeto que no haya ninguno `public`, `private`, ni `protected` escriba acceso.  
   
  DBG_ATTRIB_ACCESS_PUBLIC  
  Indica un objeto que tiene acceso público.  
@@ -301,16 +298,16 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
 ## <a name="remarks"></a>Comentarios  
   
 > [!NOTE]
->  Los valores de esta enumeración no son realmente definidos en el ensamblado de C#. En su lugar, debe copiar las definiciones en el archivo de origen.  
+>  Los valores de esta enumeración no están definidos realmente en el ensamblado de C#. En su lugar, debe copiar las definiciones en el archivo de origen.  
   
- Estas marcas también se usan para filtrar los elementos secundarios de un objeto, por ejemplo, cuando se pasa como argumento pasado a [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md). Los valores se pueden combinar con un bit a bit `OR`.  
+ Estas marcas también se usan para filtrar los elementos secundarios de un objeto, por ejemplo, cuando se pasa como argumento a [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md). Los valores se pueden combinar con un bit a bit `OR`.  
   
- El `DBG_ATTRIB_VALUE_CUSTOM_VIEWER` marca es una indicación para [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] para obtener la [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfaz desde el [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interfaz y llame al método [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) para obtener una lista de visores personalizados.  
+ El `DBG_ATTRIB_VALUE_CUSTOM_VIEWER` indicador es una indicación para [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] para obtener el [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfaz desde el [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interfaz y llame a [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) para obtener una lista de visores personalizados.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   

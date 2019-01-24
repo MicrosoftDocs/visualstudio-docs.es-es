@@ -1,9 +1,6 @@
 ---
 title: IDebugEngine2::CauseBreak | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngine2::CauseBreak
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08544fb80e1006dbed08e51689c1bb3b01212edb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1d0c3862468d5ad1a9c548297a69d9ae10521e59
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820517"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964382"
 ---
 # <a name="idebugengine2causebreak"></a>IDebugEngine2::CauseBreak
 Las solicitudes de todos los programas que se está depurando por el motor de depuración (DE) para detener la ejecución de la próxima vez que uno de sus subprocesos intenta ejecutar.  
@@ -28,8 +25,8 @@ Las solicitudes de todos los programas que se está depurando por el motor de de
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT CauseBreak(   
-   void   
+HRESULT CauseBreak(   
+   void   
 );  
 ```  
   

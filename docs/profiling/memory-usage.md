@@ -1,23 +1,22 @@
 ---
 title: Medición del uso de memoria en las aplicaciones
 description: Busque pérdidas de memoria y memoria ineficaz durante la depuración con la herramienta de diagnóstico integrada del depurador.
-ms.custom: mvc
+ms.custom: seodec18
 ms.date: 04/25/2017
-ms.technology: vs-ide-debug
 ms.topic: tutorial
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eeacfb15b02c19ea4a166fbc8511aab644d41ea5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 62bf07ba0f5f63daa369e88795824f53f9109ce6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861415"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942299"
 ---
-# <a name="profile-memory-usage-in-visual-studio"></a>Uso de memoria de perfil en Visual Studio
+# <a name="measure-memory-usage-in-visual-studio"></a>Medición del uso de memoria en Visual Studio
 Busque pérdidas de memoria y memoria ineficaz durante la depuración con la herramienta de diagnóstico **Uso de memoria** integrada del depurador. La herramienta Uso de memoria permite tomar una o más *instantáneas* del montón de memoria nativa y administrada para que pueda conocer el impacto del uso de memoria de los tipos de objeto. Puede recopilar instantáneas de aplicaciones .NET, nativas o de modo mixto (.NET y nativo).  
   
  En el gráfico siguiente se muestra la ventana **Herramientas de diagnóstico** (disponible en Visual Studio 2015 Update 1 y versiones posteriores):  
@@ -67,7 +66,7 @@ En este tutorial va a:
      >   
      >  ![Habilitar las instantáneas](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
      >   
-     >  Detenga la depuración (tecla de método abreviado: **Mayús**+**F5**) y reiníciela.  
+     >  Detenga (tecla de método abreviado: **Mayús**+**F5**) y reinicie la depuración.  
 
 6.  Para tomar una instantánea al comienzo de la sesión de depuración, elija **Instantánea** en la barra de herramientas reducida **Uso de memoria**. (Puede ser útil para establecer un punto de interrupción aquí también.)
 
@@ -168,7 +167,7 @@ Para analizar el uso de memoria, haga clic en uno de los vínculos que abre un i
 
  [Analyze CPU and Memory While Debugging](https://blogs.msdn.microsoft.com/visualstudio/2016/02/15/analyze-cpu-memory-while-debugging/) (Análisis de la CPU y la memoria durante la depuración)  
   
- [Visual C++ Blog: Memory Profiling in Visual C++ 2015](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/) (Blog de Visual C++: Generación de perfiles de memoria en Visual C++ 2015)  
+ [Blog de Visual C++: Generación de perfiles de memoria en Visual C++ 2015](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/)  
 
 ## <a name="next-steps"></a>Pasos siguientes
 

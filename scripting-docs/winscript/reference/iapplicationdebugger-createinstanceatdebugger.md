@@ -18,22 +18,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f6495c2d8782d1128700bdfb6d4081b80ffae878
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a6af315f25aa333ace4be7bb8e3584573f0cfd1f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725775"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090927"
 ---
 # <a name="iapplicationdebuggercreateinstanceatdebugger"></a>IApplicationDebugger::CreateInstanceAtDebugger
-Permite la creación de objetos en el proceso del depurador por código que es fuera de proceso para el depurador.  
+Permite la creación de objetos en el proceso del depurador al código que es fuera de proceso al depurador.  
   
 > [!IMPORTANT]
->  Este método no se implementa, porque permite código no seguro crear objetos arbitrarios en un subproceso del depurador de confianza.  
+>  No se debe implementar este método, porque permite código no seguro crear objetos arbitrarios en un subproceso del depurador de confianza.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT CreateInstanceAtDebugger(  
    REFCLSID    rclsid,  
    IUnknown*   pUnkOuter,  
@@ -45,16 +45,16 @@ HRESULT CreateInstanceAtDebugger(
   
 #### <a name="parameters"></a>Parámetros  
  `rclsid`  
- [in] Identificador de clase (CLSID) del objeto que se va a crear.  
+ [in] Identificador de clase (CLSID) del objeto para crear.  
   
  `pUnkOuter`  
- [in] Si `NULL`, no se crea el objeto como parte de un agregado. En caso contrario, `pUnkOuter` es un puntero para el objeto agregado `IUnknown` interfaz (el control `IUnknown`).  
+ [in] Si `NULL`, el objeto no se crea como parte de un agregado. En caso contrario, `pUnkOuter` es un puntero al objeto agregado `IUnknown` interfaz (el control `IUnknown`).  
   
  `dwClsContext`  
- [in] Contexto para el código ejecutable. Los valores se toman de la enumeración `CLSCTX`.  
+ [in] Contexto de ejecución de código ejecutable. Los valores se toman de la enumeración `CLSCTX`.  
   
  `riid`  
- [in] El identificador de interfaz que se utiliza para comunicarse con el objeto.  
+ [in] El identificador de interfaz que se usa para comunicarse con el objeto.  
   
  `ppvObject`  
  [out] Dirección de la variable de puntero que recibe el puntero de interfaz solicitado en `riid`. Tras la devolución es correcta, *`ppvObject` contiene el puntero de interfaz solicitada. En caso de error, \* `ppvObject` contiene `NULL`.  
@@ -67,7 +67,7 @@ HRESULT CreateInstanceAtDebugger(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método delega en `CoCreateInstance`.  
+ Este método delega a `CoCreateInstance`.  
   
  El método no está implementado actualmente.  
   

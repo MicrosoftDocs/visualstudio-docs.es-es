@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9afb48ceca742ef736dd8f79ba8c3d96e3a56a82
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c53f19de5fcff4160ed1255435b91c9ad320ad0f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728715"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092253"
 ---
 # <a name="iremotedebugapplicationeventsonleavebreakpoint"></a>IRemoteDebugApplicationEvents::OnLeaveBreakPoint
-Controla un evento para dejar un punto de interrupción.  
+Controla un evento para salir de un punto de interrupción.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT OnLeaveBreakPoint(  
    IRemoteDebugApplicationThread*  prdat  
 );  
@@ -38,7 +38,7 @@ HRESULT OnLeaveBreakPoint(
   
 #### <a name="parameters"></a>Parámetros  
  `prdat`  
- [in] El subproceso de aplicación que deja el punto de interrupción.  
+ [in] El subproceso de la aplicación que deja el punto de interrupción.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -48,7 +48,7 @@ HRESULT OnLeaveBreakPoint(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método controla un evento para dejar un punto de interrupción.  
+ Este método controla un evento para salir de un punto de interrupción.  
   
 ## <a name="see-also"></a>Vea también  
  [IRemoteDebugApplicationEvents (Interfaz)](../../winscript/reference/iremotedebugapplicationevents-interface.md)

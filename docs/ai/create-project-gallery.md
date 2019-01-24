@@ -9,15 +9,14 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.devlang: multiple
 ms.service: multiple
-ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 18cf719b100aa7c216de2903c05a24a3abcca244
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad28d01fdb1bbb91aaff3fb5530bbaa77444bb35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916496"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873520"
 ---
 ## <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Crear un proyecto de IA desde la galería de Azure Machine Learning en Visual Studio
 
@@ -42,13 +41,13 @@ Después de haber [instalado Visual Studio Tools para IA](installation.md), podr
 
 4. Para este inicio rápido, seleccione el ejemplo "**MNIST using TensorFlow**" y haga clic en **Instalar**. Proporcione lo siguiente:
 
-   - **Grupo de recursos**: grupo de recursos de Azure donde se almacenarán los metadatos
-   - **Cuenta**: cuenta de Experimentación de Azure Machine Learning
-   - **Área de trabajo**: área de trabajo de Azure Machine Learning
-   - **Tipo de proyecto**: el marco de Machine Learning. En este caso, seleccione **TensorFlow**
+   - **Grupo de recursos**: Grupo de recursos de Azure donde se van a almacenar los metadatos
+   - **Cuenta**: Cuenta de experimentación de Azure Machine Learning
+   - **Área de trabajo**: Área de trabajo de Azure Machine Learning
+   - **Tipo de proyecto**: Marco de Machine Learning. En este caso, seleccione **TensorFlow**
    - **Agregar a solución**: determina si se va a agregar a la solución de Visual Studio actual o si se va a crear y abrir una solución nueva
-   - **Ruta de acceso del proyecto**: ubicación donde se guarda el código
-   - **Nombre de proyecto**: escriba **TensorFlowMNIST**
+   - **Ruta de acceso del proyecto**: Ubicación donde se guarda el código
+   - **Nombre de proyecto**: Escriba **TensorFlowMNIST**
 
    ![Proyecto resultante al usar la plantilla Aplicación de Python](media/create-project-gallery/new-AzureSampleProject.png)
 

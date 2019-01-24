@@ -1,8 +1,6 @@
 ---
 title: StopProfile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - StopProfile
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e03abc331d59504b1b08136c8c81fe12c8ba2af
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: b44726b2ce1f7a0b699898edfc3a53371163168e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34264200"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952240"
 ---
 # <a name="stopprofile"></a>StopProfile
 La función `StopProfile` establece el contador en 0 (desactivado) para el nivel de generación de perfiles especificado.  
@@ -35,7 +33,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
   
  Indica el nivel de perfil en el que se puede aplicar la recopilación de datos de rendimiento. Los enumeradores **PROFILE_CONTROL_LEVEL** siguientes se pueden usar para indicar uno de tres niveles en los que se puede aplicar la recopilación de datos de rendimiento:  
   
-|Enumerador|Description|  
+|Enumerador|Descripción|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|La configuración de nivel global afecta a todos los procesos y subprocesos en la generación de perfiles.|  
 |PROFILE_PROCESSLEVEL|La configuración de nivel de proceso afecta a todos los subprocesos que forman parte del proceso especificado.|  
@@ -48,7 +46,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
 ## <a name="property-valuereturn-value"></a>Valor de propiedad y valor devuelto  
  La función indica si la operación es correcta o errónea mediante la enumeración **PROFILE_COMMAND_STATUS**. El valor devuelto puede ser cualquiera de los siguientes:  
   
-|Enumerador|Description|  
+|Enumerador|Descripción|  
 |----------------|-----------------|  
 |PROFILE_ERROR_ID_NOEXIST|El id. del elemento de generación de perfiles no existe.|  
 |PROFILE_ERROR_LEVEL_NOEXIST|El nivel de generación de perfiles especificado no existe.|  
@@ -67,7 +65,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
  Microsoft.VisualStudio.Profiler.dll  
   
 ## <a name="function-information"></a>Información de la función  
- Encabezado: declarado en VSPerf.h  
+ Encabezado: Declarado en VSPerf.h  
   
  Biblioteca de importación: VSPerf.lib  
   

@@ -1,8 +1,7 @@
 ---
-title: Generación de pruebas unitarias para el código con IntelliTest en Visual Studio
-ms.date: 2015-10-05
+title: Generar pruebas unitarias para el código con IntelliTest
+ms.date: 10/05/2015
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateIntelliTest
@@ -11,17 +10,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5cac2a21e15223d720089768db2f92892ec5cd43
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 1d7c7886e407ab7f8151ecb8f79a7eb4090aed89
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178539"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958831"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Generar pruebas unitarias para el código con IntelliTest
+
 IntelliTest explora el código .NET para generar datos de prueba y un conjunto de pruebas unitarias. Para cada instrucción en el código, se genera una entrada de prueba que ejecutará esa instrucción. Se lleva a cabo un análisis de caso para cada bifurcación condicional en el código. Por ejemplo, se analizan las instrucciones `if`, las aserciones y todas las operaciones que pueden producir excepciones. Con este análisis puede generar los datos de pruebas que deben usarse en una prueba unitaria parametrizada para cada método. También crea pruebas unitarias con una cobertura de código elevada.
 
- Cuando ejecuta Intelltest, puede ver fácilmente qué pruebas son las que fallan y agregar cualquier código para corregirlas. Puede seleccionar las pruebas generadas que quiere guardar en un proyecto de prueba para proporcionar un conjunto de regresión. Cuando cambie el código, vuelva a ejecutar IntelliTest para mantener sincronizadas las pruebas generadas con los cambios de código.
+Cuando ejecuta Intelltest, puede ver fácilmente qué pruebas son las que fallan y agregar cualquier código para corregirlas. Puede seleccionar las pruebas generadas que quiere guardar en un proyecto de prueba para proporcionar un conjunto de regresión. Cuando cambie el código, vuelva a ejecutar IntelliTest para mantener sincronizadas las pruebas generadas con los cambios de código.
 
 ## <a name="availability-and-extensions"></a>Disponibilidad y extensiones
 
@@ -36,7 +36,8 @@ Los comandos de menú **Crear IntelliTest** y **Ejecutar IntelliTest**:
 * No admiten la configuración x64.
 
 ## <a name="explore-use-intellitest-to-explore-your-code-and-generate-unit-tests"></a>Explorar: use IntelliTest para explorar el código y generar pruebas unitarias
- Para generar las pruebas unitarias, los tipos deben ser públicos. De lo contrario, [cree pruebas unitarias](#NoRun) primero antes de generarlos.
+
+Para generar las pruebas unitarias, los tipos deben ser públicos. De lo contrario, [cree pruebas unitarias](#NoRun) primero antes de generarlos.
 
 1.  Abra su solución en Visual Studio. Luego, abra el archivo de clase que tiene los métodos que desea probar.
 
@@ -68,7 +69,7 @@ Los comandos de menú **Crear IntelliTest** y **Ejecutar IntelliTest**:
 
      Si el código del método cambia, vuelva a ejecutar IntelliTest para mantener sincronizadas las pruebas unitarias con los cambios.
 
-## <a name="assist-use-intellitest-to-focus-code-exploration"></a>Ayudar: use IntelliTest para centrarse en la exploración del código
+## <a name="assist-use-intellitest-to-focus-code-exploration"></a>Asistir: use IntelliTest para centrarse en la exploración del código
 
 1.  Si el código es más complejo, IntelliTest le facilitará la exploración. Por ejemplo, si un método tiene una interfaz como parámetro y varias clases implementan dicha interfaz, IntelliTest descubre esas clases y notifica una advertencia.
 
@@ -100,7 +101,7 @@ Especifique la relación general entre entradas y salidas que deben validar las 
 
 ### <a name="q-when-does-a-generated-test-pass-or-fail"></a>P: ¿Cuándo se supera o falla una prueba generada?
 
-**R:** Se supera al igual que otras pruebas unitarias, es decir, si no ocurre ninguna excepción. Falla si se produce un error de aserción o si el código que se prueba detecta una excepción no controlada.
+**R:** Se supera al igual que otras pruebas unitarias, es decir, si no se inicia ninguna excepción. Falla si se produce un error de aserción o si el código que se prueba detecta una excepción no controlada.
 
  Si tiene una prueba que puede superarse si se detectan determinadas excepciones, puede establecer uno de los siguientes atributos según sus requisitos en el método de prueba, clase de prueba o nivel de ensamblado:
 
@@ -114,7 +115,7 @@ Especifique la relación general entre entradas y salidas que deben validar las 
 
 ### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>P: ¿Puedo agregar suposiciones a la prueba unitaria parametrizada?
 
-**R:** Sí. Use suposiciones para especificar los datos de pruebas que no se necesitan para la prueba unitaria para un método específico. Use la clase <xref:Microsoft.Pex.Framework.PexAssume> para agregar hipótesis. Por ejemplo, puede agregar una suposición en que la variable de longitud no sea nula como esta.
+**R:** Sí. Use suposiciones para especificar los datos de prueba que no se necesitan para la prueba unitaria para un método específico. Use la clase <xref:Microsoft.Pex.Framework.PexAssume> para agregar hipótesis. Por ejemplo, puede agregar una suposición en que la variable de longitud no sea nula como esta.
 
  `PexAssume.IsNotNull(lengths);`
 
@@ -122,15 +123,15 @@ Especifique la relación general entre entradas y salidas que deben validar las 
 
 ### <a name="q-can-i-add-assertions-to-the-parameterized-unit-test"></a>P: ¿Puedo agregar aserciones a la prueba unitaria parametrizada?
 
-**R:** Sí. IntelliTest comprobará que las aserciones de su instrucción sean realmente correctas cuando ejecute las pruebas unitarias. Use la clase <xref:Microsoft.Pex.Framework.PexAssert> o la API de aserción que se incluye en el marco de pruebas para agregar aserciones. Por ejemplo, puede agregar una aserción de que dos variables son iguales.
+**R:** Sí. IntelliTest comprobará que las aserciones de la instrucción sean realmente correctas cuando ejecute las pruebas unitarias. Use la clase <xref:Microsoft.Pex.Framework.PexAssert> o la API de aserción que se incluye en el marco de pruebas para agregar aserciones. Por ejemplo, puede agregar una aserción de que dos variables son iguales.
 
  `PexAssert.AreEqual(a, b);`
 
  Si agrega una aserción y vuelve a ejecutar IntelliTest, este comprobará que su aserción sea válida o, en caso contrario, la prueba fallará.
 
-###  <a name="NoRun"></a> P: ¿puedo generar pruebas unitarias con parámetros sin ejecutar primero IntelliTest?
+###  <a name="NoRun"></a> P: ¿Puedo generar pruebas unitarias con parámetros sin ejecutar primero IntelliTest?
 
-**A:** Sí, haga clic con el botón secundario en la clase o método y elija **crear IntelliTest**.
+**R:** Sí, haga clic con el botón derecho en la clase o método, y elija **Crear IntelliTest**.
 
  ![Haga clic con el botón derecho en el editor y elija Crear IntelliTest](../test/media/pexcreateintellitest.png)
 
@@ -141,7 +142,7 @@ Especifique la relación general entre entradas y salidas que deben validar las 
 <a name="extend-framework"></a>
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>P: ¿Puedo usar otros marcos de pruebas unitarias con IntelliTest?
 
-**A:** Sí, siga estos pasos para [buscar e instalar otros marcos](../test/install-third-party-unit-test-frameworks.md).
+**R:** Sí, siga estos pasos para [buscar e instalar otros marcos](../test/install-third-party-unit-test-frameworks.md).
 Las extensiones de marcos de pruebas también están disponibles en Visual Studio Marketplace:
 
 * [Extensión de NUnit para los generadores de pruebas](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371)
@@ -155,6 +156,6 @@ Después de reiniciar Visual Studio y volver a abrir la solución, haga clic con
 A continuación, ejecute IntelliTest para generar pruebas unitarias individuales en sus correspondientes archivos *.g.cs*.
 
 
-### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>P: ¿Puedo obtener más información acerca de cómo se generan las pruebas?
+### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>P: ¿Puedo obtener más información sobre cómo se generan las pruebas?
 
-**A:** Sí, para obtener una visión general, lea esta [publicación de blog](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx).
+**R:** Sí, para obtener una visión general, lea esta [entrada de blog](https://blogs.msdn.microsoft.com/devops/2015/07/05/intellitest-one-test-to-rule-them-all/).

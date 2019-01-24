@@ -1,9 +1,6 @@
 ---
 title: Referencia de esquema 2.0 de extensión VSIX | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - vsix
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3227b2f17932936e54c244f385a648c583677923
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6f9019ca281dd86ef4665e8f6590798d4dfbd917
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831931"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914671"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Referencia de esquema 2.0 de extensión VSIX
 Un archivo de manifiesto de implementación de VSIX describe el contenido de un paquete VSIX. El formato de archivo se rige por un esquema. De este esquema de la versión 2.0 admite la adición de atributos y tipos personalizados.  El esquema del manifiesto es extensible. El cargador de manifiesto omite los elementos XML y atributos que no comprenda.  
@@ -50,7 +47,7 @@ Un archivo de manifiesto de implementación de VSIX describe el contenido de un 
   
     -   `Id` : Este atributo debe ser un identificador único para el paquete elegido por su autor. Se debe calificar el nombre de la misma manera que los tipos CLR son tiene espacio de nombres: Company.Product.Feature.Name. El `Id` atributo está limitado a 100 caracteres.  
   
-    -   `Version` : Define la versión de este paquete y su contenido. Este atributo sigue el formato de control de versiones de ensamblado CLR: principal.secundaria.compilación.revisión (1.2.40308.00). Un paquete con un mayor número de versión se considera actualizaciones del paquete y puede instalarse a través de la versión instalada actualmente.  
+    -   `Version` : Define la versión de este paquete y su contenido. Este atributo sigue el formato de control de versiones de ensamblado CLR: Principal.secundaria.compilación.revisión (1.2.40308.00). Un paquete con un mayor número de versión se considera actualizaciones del paquete y puede instalarse a través de la versión instalada actualmente.  
   
     -   `Language` : Este atributo es el idioma predeterminado para el paquete y corresponde a los datos de texto de este manifiesto. Este atributo sigue la convención de código de configuración regional CLR para los ensamblados de recursos, por ejemplo: en-us, en, fr-fr. Puede especificar `neutral` para declarar una extensión independiente del idioma que se ejecutará en cualquier versión de Visual Studio. El valor predeterminado es `neutral`.  
   
@@ -130,7 +127,11 @@ Un archivo de manifiesto de implementación de VSIX describe el contenido de un 
         -   Versión única # - solo la versión especificada.  
   
         > [!IMPORTANT]
-        >  La versión 2.0 del esquema VSIX se introdujo en Visual Studio 2012. Para usar este esquema se debe tener Visual Studio 2012 o posterior instalado en el equipo y usa el VSIXInstaller.exe que forma parte de ese producto. Puede tener como destino versiones anteriores de Visual Studio con Visual Studio 2012 o posterior VSIXInstaller, pero solo mediante el uso de las versiones más recientes del instalador.  
+        >  La versión 2.0 del esquema VSIX se introdujo en Visual Studio 2012. Para usar este esquema se debe tener Visual Studio 2012 o posterior instalado en el equipo y usa el VSIXInstaller.exe que forma parte de ese producto. Puede tener como destino versiones anteriores de Visual Studio con Visual Studio 2012 o posterior VSIXInstaller, pero solo mediante el uso de las versiones más recientes del instalador. 
+        
+        Números de versión de Visual Studio 2017 pueden encontrarse en [números de compilación de Visual Studio y fechas de lanzamiento](../install/visual-studio-build-numbers-and-release-dates.md).
+        
+        Cuando se expresa la versión para las versiones de Visual Studio 2017, versión secundaria debe ser siempre **0**. Por ejemplo, Visual Studio 2017 versión 15.3.26730.0 se debería expresar como [15.0.26730.0,16.0). Esto solo es necesario para los números de versión de Visual Studio 2017.
   
     -   `AnyAttribute*` -El `<InstallationTarget>` elemento permite a un conjunto abierto de atributos que se expone en tiempo de ejecución como un diccionario de pares de nombre-valor.  
   

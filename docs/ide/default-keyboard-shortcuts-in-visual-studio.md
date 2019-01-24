@@ -1,8 +1,7 @@
 ---
-title: Métodos abreviados de teclado predeterminados de Visual Studio
+title: Métodos abreviados de teclado predeterminados
 ms.date: 06/26/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e11629849c29a3c3024fe7aea7b708b1b7d87a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dbde2e26ac576758d45ee908e30d9bef3341a3ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854486"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849595"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Métodos abreviados de teclado predeterminados de Visual Studio
 

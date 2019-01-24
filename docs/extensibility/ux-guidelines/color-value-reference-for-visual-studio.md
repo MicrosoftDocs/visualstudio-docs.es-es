@@ -1,27 +1,23 @@
 ---
-title: Referencia de valor de color para Visual Studio | Documentos de Microsoft
-description: 'Referencia: Códigos hexadecimal para la creación de nuevos tokens de color de Visual Studio'
+title: Referencia de valor de color
+description: 'Referencia: Códigos hexadecimales para crear nuevos tokens de color de Visual Studio'
 keywords: color, el código hexadecimal, matiz, la interfaz de usuario con temas, temas
 author: brickgeorge
-ms.author: v-brickg
+ms.author: gregvanl
 ms.date: 08/04/2017
 ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
-ms.custom: ''
 ms.reviewer: Jamie.Young
-ms.technology:
-- vs-ide-sdk
 manager: douge
-ms.workload:
-- v-brickg
-ms.openlocfilehash: d0055ae3d0031d1cb1ffa7896a4594eadf69d42d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: de1623cfbfc937139e45b4791a28fd47f18501de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902611"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870065"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Referencia de valor de color para Visual Studio
+
 En este tema es una referencia para la creación de nuevos tokens de color. Al crear la nueva interfaz de usuario, puede usar colores similares de la interfaz de usuario existente para elegir los colores para cada tema principal y el nombre del color del sistema para ese elemento para los temas de contraste alto. 
 
 Para obtener más información sobre la creación de nuevos tokens de color, vea [herramientas de creación de temas de Color](../../extensibility/internals/color-theming-tools.md).

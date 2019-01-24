@@ -1,8 +1,6 @@
 ---
 title: Marcadores de marca | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.markers.flag
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f924089ef31e2b452419b107788357060a4c6bb6
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: a879114f21cfa23eab66cca507c3a2b960872c7b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237996"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923444"
 ---
 # <a name="flag-markers"></a>Marcadores de marca
 Un marcador de marca representa algo que se ha producido en un momento determinado en una aplicación. Una marca puede representar muchos tipos de eventos de aplicación. Por ejemplo, una marca puede mostrar cuándo se ha programado un elemento de trabajo determinado o cuándo se ha producido una excepción. Los runtimes, como la biblioteca TPL, también pueden generar marcas.  

@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: crear una extensión de elemento de proyecto de SharePoint | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Crear una extensión de elemento de proyecto de SharePoint | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 93459096e6d88ce3754c32bf7f61a3cf369cbeba
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 0c716301eee70fea704831890dd1e61b12651f7c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119873"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956197"
 ---
-# <a name="how-to-create-a-sharepoint-project-item-extension"></a>Cómo: crear una extensión de elemento de proyecto de SharePoint
+# <a name="how-to-create-a-sharepoint-project-item-extension"></a>Procedimiento Crear una extensión de elemento de proyecto de SharePoint
   Crear una extensión de elemento de proyecto cuando desea agregar funcionalidad a un elemento de proyecto de SharePoint que ya está instalado en Visual Studio. Para obtener más información, consulte [elementos de proyecto de SharePoint ampliar](../sharepoint/extending-sharepoint-project-items.md).  
   
 ### <a name="to-create-a-project-item-extension"></a>Para crear una extensión de elemento de proyecto  
@@ -55,7 +52,7 @@ ms.locfileid: "37119873"
   
  En este ejemplo usa el servicio de proyecto de SharePoint para escribir el mensaje a la **salida** ventana y **lista de errores** ventana. Para obtener más información, consulte [usar el servicio de proyecto de SharePoint](../sharepoint/using-the-sharepoint-project-service.md).  
   
-## <a name="compile-the-code"></a>Compile el código  
+## <a name="compile-the-code"></a>Compilar el código  
  Este ejemplo requiere referencias a los ensamblados siguientes:  
   
 -   Microsoft.VisualStudio.SharePoint  
@@ -68,5 +65,3 @@ ms.locfileid: "37119873"
 ## <a name="see-also"></a>Vea también
  [Extender elementos de proyecto de SharePoint](../sharepoint/extending-sharepoint-project-items.md)   
  [Tutorial: Extender un tipo de elemento de proyecto de SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)  
-  
-  

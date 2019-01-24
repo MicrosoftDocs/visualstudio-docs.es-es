@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: buscar texto en rangos de hoja de cálculo mediante programación'
-ms.custom: ''
+title: Procedimiento Buscar texto en rangos de hoja de cálculo mediante programación
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,15 +14,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c0dcf2787706de121fba691edaf42e9971747524
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dba0ce5928b61b1ec6b5777e1922cc68f8ed57ee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920084"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826132"
 ---
-# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Cómo: buscar texto mediante programación en intervalos de hoja de cálculo
-  El <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> método de la <xref:Microsoft.Office.Interop.Excel.Range> objeto le permite buscar texto dentro del intervalo. Este texto puede ser cualquiera de las cadenas de error que pueden aparecer en una celda de la hoja de cálculo como `#NULL!` o `#VALUE!`. Para obtener más información acerca de las cadenas de error, consulte [los valores de error de celda](http://msdn.microsoft.com/library/office/ff839168.aspx).  
+# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Procedimiento Buscar texto mediante programación en intervalos de hoja de cálculo
+  El <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> método de la <xref:Microsoft.Office.Interop.Excel.Range> objeto le permite buscar texto dentro del intervalo. Este texto puede ser cualquiera de las cadenas de error que pueden aparecer en una celda de la hoja de cálculo como `#NULL!` o `#VALUE!`. Para obtener más información acerca de las cadenas de error, consulte [los valores de error de celda](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
@@ -34,7 +31,7 @@ ms.locfileid: "49920084"
 > [!NOTE]  
 >  El <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> búsqueda del método se ajusta al principio del intervalo de búsqueda una vez que ha llegado al final del intervalo. El código debe asegurarse de que la búsqueda no se ajusta alrededor de un bucle infinito. El procedimiento de ejemplo muestra una forma de controlar esto mediante la <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> propiedad.  
   
- ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una demostración en vídeo relacionada, vea [¿cómo lo hago?: Use el método Find en un complemento de Excel?](http://go.microsoft.com/fwlink/?LinkID=130294).  
+ ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una demostración en vídeo relacionada, vea [¿cómo lo hago?: ¿Usar el método Find en un complemento de Excel? ](http://go.microsoft.com/fwlink/?LinkID=130294).  
   
 ## <a name="to-search-for-text-in-a-worksheet-range"></a>Para buscar texto en un intervalo de hoja de cálculo  
   
@@ -81,8 +78,6 @@ ms.locfileid: "49920084"
   
 ## <a name="see-also"></a>Vea también  
  [Trabajar con rangos](../vsto/working-with-ranges.md)   
- [Cómo: aplicar estilos a rangos de libros mediante programación](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Cómo: hacer referencia mediante programación a los rangos de hoja de cálculo en el código](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [Cómo: Aplicar estilos a rangos de libros mediante programación](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Cómo: Mediante programación hacen referencia a rangos de hoja de cálculo en el código](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

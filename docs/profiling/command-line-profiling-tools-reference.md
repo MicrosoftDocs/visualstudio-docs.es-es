@@ -1,8 +1,6 @@
 ---
 title: Referencia de las herramientas de generación de perfiles de la línea de comandos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: a34ba40e-01b1-4386-90b1-c8e628a8c527
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1ed732e33706defed975a3a05986f53081b4337
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: f65a44552ee2b8e7b62656580528d13db2a1530e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548185"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819775"
 ---
 # <a name="command-line-profiling-tools-reference"></a>Referencia de las herramientas de generación de perfiles de la línea de comandos
 Las herramientas de rendimiento de la línea de comandos permiten a los programadores generar perfiles de las aplicaciones desde el símbolo del sistema. Las herramientas de generación de perfiles de la línea de comandos siguientes permiten perfilar el código en el símbolo del sistema.  

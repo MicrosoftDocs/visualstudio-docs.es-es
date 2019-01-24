@@ -1,9 +1,6 @@
 ---
 title: DEBUG_PROPERTY_INFO | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - DEBUG_PROPERTY_INFO
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 612865d08142a56b2908707839ad66b60ea2de9f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fbb1a135cfca3e358d740f6c6ef23b2040843ff4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847102"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927134"
 ---
 # <a name="debugpropertyinfo"></a>DEBUG_PROPERTY_INFO
 Contiene información sobre una propiedad de depuración.  
@@ -28,7 +25,7 @@ Contiene información sobre una propiedad de depuración.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-typedef struct tagDEBUG_PROPERTY_INFO {   
+typedef struct tagDEBUG_PROPERTY_INFO {   
    DEBUGPROP_INFO_FLAGS dwValidFields;  
    BSTR                 bstrFullName;  
    BSTR                 bstrName;  
@@ -40,7 +37,7 @@ typedef struct tagDEBUG_PROPERTY_INFO {
 ```  
   
 ```csharp  
-public struct DEBUG_PROPERTY_INFO {   
+public struct DEBUG_PROPERTY_INFO {   
    public uint            dwValidFields;  
    public string          bstrFullName;  
    public string          bstrName;  
@@ -81,7 +78,7 @@ public struct DEBUG_PROPERTY_INFO {
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   

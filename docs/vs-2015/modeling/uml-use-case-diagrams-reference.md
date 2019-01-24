@@ -19,15 +19,15 @@ helpviewer_keywords:
 - UML diagrams, use case
 ms.assetid: aa15772b-eb67-4366-b145-b559112817df
 caps.latest.revision: 35
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9fbdf85b3177b88e1a7e97f3cbcd4f901961958d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 64eece28fc46fce799eff01e7ed1e7302e939dbc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256313"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791774"
 ---
 # <a name="uml-use-case-diagrams-reference"></a>Diagramas de casos de uso de UML: Referencia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -13,12 +13,12 @@ ms.assetid: eb92f40d-c0f0-42a9-8388-97ba0476efdf
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f990854b23bae9d193173fceb37b0e3f2a13a9b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 684baf22b33a2e3e3be28aca994e5e394d4a5525
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191040"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51723713"
 ---
 # <a name="archive"></a>Archive
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

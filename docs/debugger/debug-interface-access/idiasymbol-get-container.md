@@ -1,8 +1,6 @@
 ---
 title: Get_container | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d293971cfcd0723485d4a5b21d4e431de64ddd65
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: f9b528806091bb0b84e8bd2d10b4594b4bf4d018
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822740"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935884"
 ---
 # <a name="idiasymbolgetcontainer"></a>IDiaSymbol::get_container
 Esta función recupera un puntero a un símbolo que representa el elemento primario o el contenedor de este símbolo.  
@@ -46,7 +44,7 @@ HRESULT get_container(
   
 |Requisito|Descripción|  
 |-----------------|-----------------|  
-|Encabezado:|Dia2.h|  
+|Encabezado:|dia2.h|  
 |Versión:|SDK de DIA v8.0|  
   
 ## <a name="see-also"></a>Vea también  

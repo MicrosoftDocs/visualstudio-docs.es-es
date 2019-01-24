@@ -1,9 +1,6 @@
 ---
 title: Crear un Windows Forms Control Toolbox | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - winforms
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34c263479be170b9f108c4cbc095be737f0b2b22
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b84c554427d443d54d117b72cec5a423e10e7887
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936056"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872926"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Crear un Control de cuadro de herramientas de Windows Forms
 La plantilla de elemento de Control de cuadro de herramientas de Windows Forms que se incluye en las herramientas de extensibilidad de Visual Studio (SDK de VS) le permite crear un control que se agrega automáticamente a la **cuadro de herramientas** cuando se instala la extensión. En este tema se muestra cómo usar la plantilla para crear un control de contador sencillo que puede distribuir a otros usuarios.  
@@ -77,16 +74,16 @@ La plantilla de elemento de Control de cuadro de herramientas de Windows Forms q
 3.  Cree las siguientes declaraciones de propiedad pública.  
   
     ```csharp  
-    public int Value {  
+    public int Value {  
         get { return currentValue; }   
     }  
   
-    public string Message {  
+    public string Message {  
         get { return displayText; }  
         set { displayText = value; }  
     }  
   
-    public bool ShowReset {  
+    public bool ShowReset {  
         get { return btnReset.Visible; }  
         set { btnReset.Visible = value; }  
     }  
@@ -98,7 +95,7 @@ La plantilla de elemento de Control de cuadro de herramientas de Windows Forms q
 4.  Coloque el siguiente código el `Load` eventos para el control.  
   
     ```csharp  
-    private void Counter_Load(object sender, EventArgs e)  
+    private void Counter_Load(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = Message + Value;  
@@ -111,7 +108,7 @@ La plantilla de elemento de Control de cuadro de herramientas de Windows Forms q
 5.  Cree el siguiente método público para incrementar el contador.  
   
     ```csharp  
-    public void Increment()  
+    public void Increment()  
     {  
         currentValue++;  
         label1.Text = displayText + Value;  
@@ -123,7 +120,7 @@ La plantilla de elemento de Control de cuadro de herramientas de Windows Forms q
 6.  Agregue una declaración para el `Incremented` eventos a la clase de control.  
   
     ```csharp  
-    public event EventHandler Incremented;  
+    public event EventHandler Incremented;  
     ```  
   
      Los autores de llamadas pueden agregar controladores a este evento para responder a cambios en el valor del contador.  
@@ -131,7 +128,7 @@ La plantilla de elemento de Control de cuadro de herramientas de Windows Forms q
 7.  Vuelva a la vista Diseño y haga doble clic en el **restablecer** botón para generar el `btnReset_Click` controlador de eventos y, a continuación, rellene en como se muestra en el ejemplo siguiente.  
   
     ```csharp  
-    private void btnReset_Click(object sender, EventArgs e)  
+    private void btnReset_Click(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = displayText + Value;  
@@ -145,7 +142,7 @@ La plantilla de elemento de Control de cuadro de herramientas de Windows Forms q
   
     ```csharp  
     [ProvideToolboxControl("General", false)]  
-    public partial class Counter : UserControl  
+    public partial class Counter : UserControl  
     ```  
   
 ### <a name="test-the-control"></a>Probar el control  
@@ -209,7 +206,7 @@ La plantilla de elemento de Control de cuadro de herramientas de Windows Forms q
      El contador se restablece a **0**.  
   
 ## <a name="next-steps"></a>Pasos siguientes  
- Cuando se crea un **cuadro de herramientas** control, Visual Studio crea un archivo denominado *ProjectName.vsix* en el <em>\bin\debug\* carpeta del proyecto. Puede implementar el control mediante la carga de la.vsix</em> archivo a una red o a un sitio Web. Cuando un usuario abre el *.vsix* archivo, el control se instala y se agrega a Visual Studio **cuadro de herramientas** en el equipo del usuario. Como alternativa, puede cargar el *.vsix* del archivo a la [Galería de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) del sitio Web para que los usuarios pueden buscarlo en el **herramientas**  >  **Extensiones y actualizaciones** cuadro de diálogo.  
+ Cuando se crea un **cuadro de herramientas** control, Visual Studio crea un archivo denominado *ProjectName.vsix* en la carpeta \bin\debug\ del proyecto. Puede implementar el control mediante la carga de la *.vsix* archivo a una red o a un sitio Web. Cuando un usuario abre el *.vsix* archivo, el control se instala y se agrega a Visual Studio **cuadro de herramientas** en el equipo del usuario. Como alternativa, puede cargar el *.vsix* archivo [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkID=123847) para que los usuarios pueden buscarlo en el **herramientas**  >   **Extensiones y actualizaciones** cuadro de diálogo.  
   
 ## <a name="see-also"></a>Vea también  
  [Extender otras partes de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   

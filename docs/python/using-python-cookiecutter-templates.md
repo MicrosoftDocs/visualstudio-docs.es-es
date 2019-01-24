@@ -1,22 +1,22 @@
 ---
-title: Extensión CookieCutter para Python
+title: Uso de plantillas de CookieCutter con Python
 description: Visual Studio admite la extensión gráfica Cookiecutter para detectar plantillas del código de Python y crear proyectos a partir de ellas.
-ms.date: 06/26/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 841606c8b0f39f730d78a53ccaa8e1de96feb109
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 1f5123323794d7a333440cb8aa94c51e44c8fc87
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586474"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958240"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Uso de la extensión Cookiecutter
 
@@ -91,8 +91,8 @@ Para información sobre los aspectos básicos de la creación de una plantilla d
 
 La representación predeterminada de variables de plantilla depende del tipo de datos (cadena o lista):
 
-- Cadena: etiqueta para el nombre de variable, cuadro de texto para escribir el valor y una marca de agua que muestra el valor predeterminado. La información sobre herramientas en el cuadro de texto muestra el valor predeterminado.
-- Lista: etiqueta para nombre de variable, cuadro combinado para seleccionar un valor. La información sobre herramientas en el cuadro combinado muestra el valor predeterminado.
+- String: etiqueta para el nombre de variable, cuadro de texto para escribir el valor y una marca de agua para mostrar el valor predeterminado. La información sobre herramientas en el cuadro de texto muestra el valor predeterminado.
+- List: etiqueta para nombre de variable, cuadro combinado para seleccionar un valor. La información sobre herramientas en el cuadro combinado muestra el valor predeterminado.
 
 Se pueden realizar mejoras adicionales en esta representación mediante la especificación de metadatos adicionales en el archivo *cookiecutter.json* que es específico de Visual Studio (y la CLI de Cookiecutter lo omite). Todas las propiedades son opcionales:
 
@@ -101,7 +101,7 @@ Se pueden realizar mejoras adicionales en esta representación mediante la espec
 | Etiqueta | Especifica lo que aparece encima del editor para la variable, en lugar del nombre de la variable. |
 | Descripción | Especifica la información sobre herramientas que aparece en el control de edición, en lugar del valor predeterminado de esa variable. |
 | Dirección URL | Transforma la etiqueta en un hipervínculo, con una información sobre herramientas que muestra la URL. Al hacer clic en el hipervínculo se abrirá el explorador predeterminado del usuario con esa URL. |
-| Selector | Permite la personalización del editor de una variable. Actualmente se admiten los siguientes selectores:<ul><li>`string`: cuadro de texto estándar, de forma predeterminada para las cadenas.</li><li>`list`: cuadro combinado estándar, de forma predeterminada para las listas.</li><li>`yesno`: cuadro combinado elegir entre `y` y `n`, para las cadenas.</li><li>`odbcConnection`: cuadro de texto con un botón **...** que hace que muestra cuadro de diálogo de conexión de base de datos.</li></ul> |
+| Selector | Permite la personalización del editor de una variable. Actualmente se admiten los siguientes selectores:<ul><li>`string`: cuadro de texto estándar, valor predeterminado para las cadenas.</li><li>`list`: cuadro combinado estándar, valor predeterminado para las listas.</li><li>`yesno`: cuadro combinado para elegir entre `y` y `n`, para las cadenas.</li><li>`odbcConnection`: cuadro de texto con un botón **...** que abre un cuadro de diálogo de conexión de base de datos.</li></ul> |
 
 Ejemplo:
 

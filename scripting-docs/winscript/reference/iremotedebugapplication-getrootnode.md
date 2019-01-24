@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::GetRootNode | Documentos de Microsoft
+title: 'Iremotedebugapplication:: Getrootnode | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ef19861e0f386eb7139ec3e732068e4d2b6e7ba
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 75b398ddac53f2633cbc090f5d49574bd4d94d36
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728765"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097778"
 ---
 # <a name="iremotedebugapplicationgetrootnode"></a>IRemoteDebugApplication::GetRootNode
-Devuelve el nodo de la aplicación en la que se agregan todos los nodos asociados a la aplicación.  
+Devuelve el nodo de la aplicación en la que se agregan todos los nodos asociados con la aplicación.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetRootNode(  
    IDebugApplicationNode**  ppdanRoot  
 );  
@@ -38,7 +38,7 @@ HRESULT GetRootNode(
   
 #### <a name="parameters"></a>Parámetros  
  `ppdanRoot`  
- [out] El nodo de aplicación de depuración con la que se agregan todos los nodos asociados a la aplicación.  
+ [out] El nodo de aplicación de depuración en la que se agregan todos los nodos asociados con la aplicación.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -48,7 +48,7 @@ HRESULT GetRootNode(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método devuelve el nodo de la aplicación en la que se agregan todos los nodos asociados a la aplicación.  
+ Este método devuelve el nodo de la aplicación en la que se agregan todos los nodos asociados con la aplicación.  
   
 ## <a name="see-also"></a>Vea también  
  [IRemoteDebugApplication (Interfaz)](../../winscript/reference/iremotedebugapplication-interface.md)

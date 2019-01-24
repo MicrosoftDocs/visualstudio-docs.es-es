@@ -1,8 +1,6 @@
 ---
 title: Arquitectura de las personalizaciones de nivel de documento
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -17,17 +15,17 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio]
 - AddInLoader.dll
 - architecture [Office development in Visual Studio], document-level customizations
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a0188a54e500f56c9c3d947ec27d53640173837b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 26f65905cc4a8175ca39532db9716bdba1f03b10
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912635"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917389"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Arquitectura de las personalizaciones de nivel de documento
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] incluye proyectos para la creación de personalizaciones de nivel de documento de Microsoft Office Word y Microsoft Office Excel. En este tema se describen los siguientes aspectos de las personalizaciones de nivel de documento:  
@@ -81,7 +79,7 @@ ms.locfileid: "49912635"
 |Con [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], el desarrollador escribe código que es accesible para Word y Excel.<br /><br /> Aunque pueda parecer que el programador crea un archivo ejecutable que ejecuta Word o Excel, en realidad el proceso funciona al revés. El documento se asocia a un ensamblado y contiene un puntero a ese ensamblado. Cuando se abre el documento, Word o Excel localiza el ensamblado y ejecuta el código en respuesta a todos los eventos controlados.|Los que usan la solución simplemente abren el documento o el libro (o crean un nuevo documento desde una plantilla) de la misma forma que abrirían cualquier otro archivo de Microsoft Office.<br /><br /> El ensamblado ofrece personalizaciones en el documento o el libro, como rellenarlos automáticamente con datos actuales o mostrar un cuadro de diálogo para solicitar información.|  
   
 ### <a name="supported-document-formats-for-document-level-customizations"></a>Formatos de documento admitidos para las personalizaciones de nivel de documento  
- Cuando crea un proyecto de personalización, puede elegir el formato del documento que desea utilizar en el proyecto. Para obtener más información, consulte [Cómo: proyectos de creación de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ Cuando crea un proyecto de personalización, puede elegir el formato del documento que desea utilizar en el proyecto. Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
  En la tabla siguiente se enumeran los formatos de documento que se pueden utilizar en las personalizaciones de nivel de documento para Excel y Word.  
   
@@ -142,7 +140,7 @@ ms.locfileid: "49912635"
   
 8.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] carga el ensamblado de personalización en el dominio de aplicación.  
   
-9. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] llama al controlador de eventos de **Startup** en el ensamblado de personalización. Para obtener más información, consulte [eventos en proyectos de Office](../vsto/events-in-office-projects.md)  
+9.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] llama al controlador de eventos de **Startup** en el ensamblado de personalización. Para obtener más información, consulte [eventos en proyectos de Office](../vsto/events-in-office-projects.md)  
   
 ## <a name="see-also"></a>Vea también  
  [Arquitectura de soluciones de Office en Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
@@ -152,5 +150,3 @@ ms.locfileid: "49912635"
  [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)   
  [Información general sobre propiedades de documento personalizadas](../vsto/custom-document-properties-overview.md)   
  [Datos almacenados en caché en las personalizaciones de nivel de documento](../vsto/cached-data-in-document-level-customizations.md)  
-  
-  

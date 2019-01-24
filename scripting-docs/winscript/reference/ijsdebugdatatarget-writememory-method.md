@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugdatatarget:: WriteMemory (método) | Documentos de Microsoft'
+title: Método Ijsdebugdatatarget | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed562c1cbdd645da6cca87e45f272c25f8bc0d4b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a2dfc8db8d79dbca388b1792a58169b7dbe17151
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727905"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089289"
 ---
 # <a name="ijsdebugdatatargetwritememory-method"></a>IJsDebugDataTarget::WriteMemory (Método)
 Lee la memoria del proceso de destino.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT WriteMemory(  
    UINT64 address,  
    const BYTE *pMemory,  
@@ -44,12 +44,12 @@ HRESULT WriteMemory(
  [in] Los datos se escriban en el espacio de direcciones del proceso especificado.  
   
  `size`  
- [in] El número de bytes que se va a escribir en el proceso.  
+ [in] El número de bytes para escribirlos en el proceso.  
   
 ## <a name="return-value"></a>Valor devuelto  
   
 ## <a name="remarks"></a>Comentarios  
- Antes de que ocurra la transferencia de datos, el sistema comprueba que todos los datos en la memoria del tamaño especificado y la dirección base es accesible para el acceso de escritura, y si no es accesible, la función genera un error E_JsDEBUG_INVALID_MEMORY_ADDRESS.  
+ Antes de que se produce la transferencia de datos, el sistema comprueba que todos los datos en la memoria del tamaño especificado y la dirección base es accesible para el acceso de escritura, y si no es accesible, la función produce un error E_JsDEBUG_INVALID_MEMORY_ADDRESS.  
   
 ## <a name="requirements"></a>Requisitos  
  **Encabezado:** jscript9diag.h  

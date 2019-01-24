@@ -9,12 +9,12 @@ description: Puede producirse un error en el inicio de sesión si se utilizan al
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 48faa1ce2e002b6a21c3e467db627d9c08bec2e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3743cc11d5001d12ba4cd030ddc0cfc914db3131
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854473"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817443"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Posible error en el inicio de sesión en suscripciones de Visual Studio al utilizar alias
 
@@ -24,7 +24,7 @@ Según el tipo de cuenta utilizada para iniciar sesión, es posible que las susc
 
 El concepto "uso de alias" hace referencia a los usuarios que tienen diferentes identidades para iniciar sesión en Windows (o su Active Directory) y acceder al correo electrónico.
 
-Esta situación puede darse cuando una empresa emplea un servicio en línea de Microsoft para el inicio de sesión en su directorio, como JohnD@contoso.com, pero los usuarios acceden a sus cuentas de correo electrónico con alias o nombres descriptivos, como John.Doe@contoso.com.  Muchos usuarios que administran sus suscripciones a través de Microsoft Business Center podrían experimentar un inicio de sesión incorrecto dado que la dirección de correo electrónico proporcionada (John.Doe@contoso.com) no coincide con la dirección de directorio (JohnD@contoso.com) requerida para la autenticación correcta mediante la opción "Cuenta profesional o educativa".
+Esta situación puede darse cuando una empresa emplea un servicio en línea de Microsoft para el inicio de sesión en su directorio, como JohnD@contoso.com, pero los usuarios acceden a sus cuentas de correo electrónico con alias o nombres descriptivos, como John.Doe@contoso.com. Muchos usuarios que administran sus suscripciones a través de Microsoft Business Center podrían experimentar un inicio de sesión incorrecto dado que la dirección de correo electrónico proporcionada (John.Doe@contoso.com) no coincide con la dirección de directorio (JohnD@contoso.com) requerida para la autenticación correcta mediante la opción "Cuenta profesional o educativa".
 
 ## <a name="as-an-administrator-what-options-do-i-have"></a>Como administrador, ¿qué opciones tengo?
 
@@ -33,15 +33,15 @@ Como administrador, dispone de dos opciones para asegurarse de que los suscripto
 - La segunda opción (menos segura) consiste en permitir que los suscriptores asocien su dirección de correo electrónico "profesional o educativa" a una cuenta "personal" (conocida como cuenta Microsoft o MSA). Consulte la sección [Definición de una cuenta profesional o educativa como cuenta personal](#defining-a-work-or-school-account-as-a-personal-account ) de este artículo para obtener más detalles.
 
 > [!NOTE]
-> Una vez que su empresa se migre al nuevo [Portal de administración](https://manage.visualstudio.com) de suscripciones de Visual Studio, podrá aprovechar las ventajas de la nueva experiencia de administración que permite especificar tanto las direcciones de correo electrónico como de directorio en el perfil del suscriptor.  Obtenga más información acerca de [la migración](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details).
+> Una vez que su empresa se migre al nuevo [Portal de administración](https://manage.visualstudio.com) de suscripciones de Visual Studio, podrá aprovechar las ventajas de la nueva experiencia de administración que permite especificar tanto las direcciones de correo electrónico como de directorio en el perfil del suscriptor. Obtenga más información acerca de [la migración](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details).
 
 ## <a name="as-a-subscriber-what-options-do-i-have"></a>Como suscriptor, ¿qué opciones tengo?
 
-Desde la perspectiva del suscriptor, es importante tratarlo primero con el administrador para conocer la configuración de la identidad de la empresa.  Si es necesario, el administrador quizás tenga que actualizar la configuración de su cuenta desde el Portal de administración, o puede que necesite crear una cuenta de Microsoft (MSA) utilizando su dirección de correo electrónico corporativo.  Antes de llevar a cabo los pasos para crear una MSA, hable con su administrador con respecto a las directivas o los problemas relacionados con esta acción.  Consulte la sección [Definición de una cuenta profesional o educativa como cuenta personal](#defining-a-work-or-school-account-as-a-personal-account ) de este artículo para obtener más detalles.
+Desde la perspectiva del suscriptor, es importante tratarlo primero con el administrador para conocer la configuración de la identidad de la empresa. Si es necesario, el administrador quizás tenga que actualizar la configuración de su cuenta desde el Portal de administración, o puede que necesite crear una cuenta de Microsoft (MSA) utilizando su dirección de correo electrónico corporativo. Antes de llevar a cabo los pasos para crear una MSA, hable con su administrador con respecto a las directivas o los problemas relacionados con esta acción. Consulte la sección [Definición de una cuenta profesional o educativa como cuenta personal](#defining-a-work-or-school-account-as-a-personal-account) de este artículo para obtener más detalles.
 
 ## <a name="assigning-subscribers-to-a-directory-account"></a>Asignación de suscriptores a una cuenta de directorio
 
-En todos los casos, el administrador de suscripciones de Microsoft Business Center tendrá que usar la dirección del directorio para los nuevos suscriptores, o actualizar la dirección de correo electrónico para los suscriptores "existentes".  Es importante tener en cuenta que el uso de la dirección de directorio implicará que los nuevos suscriptores no reciban un correo electrónico de bienvenida, y el administrador deberá notificar al suscriptor que se le ha asignado una suscripción.  Después de seguir estos pasos, no dude en utilizar la [plantilla](#notifying-your-subscribers-with-directory-addresses) de correo electrónico para la enviar la notificación a los usuarios y ayudarles en el proceso de inicio de sesión.
+En todos los casos, el administrador de suscripciones de Microsoft Business Center tendrá que usar la dirección del directorio para los nuevos suscriptores, o actualizar la dirección de correo electrónico para los suscriptores "existentes". Es importante tener en cuenta que el uso de la dirección de directorio implicará que los nuevos suscriptores no reciban un correo electrónico de bienvenida, y el administrador deberá notificar al suscriptor que se le ha asignado una suscripción. Después de seguir estos pasos, no dude en utilizar la [plantilla](#notifying-your-subscribers-with-directory-addresses) de correo electrónico para la enviar la notificación a los usuarios y ayudarles en el proceso de inicio de sesión.
 
 ### <a name="adding-new-subscribers"></a>Incorporación de nuevos suscriptores
 
@@ -88,7 +88,7 @@ Dado que el correo electrónico de bienvenida no llegará correctamente al suscr
 
 Estimado %Nombre del suscriptor%:
 
-Se le ha asignado una suscripción de Visual Studio.  Visite https://my.visualstudio.com e inicie sesión con su dirección %DIRECCIÓN DE DIRECTORIO% para activar la suscripción y poder acceder a ella.
+Se le ha asignado una suscripción de Visual Studio. Visite https://my.visualstudio.com e inicie sesión con su dirección %DIRECCIÓN DE DIRECTORIO% para activar la suscripción y poder acceder a ella.
 
 Si tiene problemas, póngase en contacto con el equipo de soporte técnico (https://visualstudio.microsoft.com/subscriptions/support/)).
 
@@ -99,8 +99,6 @@ En la parte inferior de la página, seleccione lo siguiente:
    - Seleccione la opción deseada de Soporte técnico asistido.
 
 ----------- Fin de la copia -----------
-
-
 
 ## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>Definición de una cuenta profesional o educativa como cuenta personal
 

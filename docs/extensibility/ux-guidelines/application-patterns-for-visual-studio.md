@@ -1,9 +1,6 @@
 ---
 title: Patrones de aplicación para Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b62f7f75293c895ca1dcfd39c2a03162a43a3904
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c512d242cffc39af5d159dbe720047de7a226bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877429"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898583"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Patrones de aplicación para Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a> Interacciones de ventana  
@@ -192,9 +189,9 @@ Hay varios tipos básicos distintos de los editores de documento y cada uno tien
 
 También hay varios tipos de no editor que use también el documento. Mientras no edita documentos en Sí, es necesario seguir interacciones estándar para las ventanas de documento.  
 
--   **Informes:** informar de IntelliTrace, el informe de Hyper-V, informe del generador de perfiles  
+-   **Informes:** Informe de IntelliTrace, informe de Hyper-V, informe del generador de perfiles  
 
--   **Panel:** concentrador de diagnósticos  
+-   **Panel:** Concentrador de diagnósticos  
 
 #### <a name="text-based-editors"></a>Editores de texto  
 
@@ -428,8 +425,8 @@ Hay ventajas e inconvenientes a diferentes métodos de creación por capas de in
 | Mecanismo de conmutación | Ventajas y el uso apropiado | Uso inadecuado y desventajas |  
 | --- | --- | --- |  
 | Control Tab | Agrupar lógicamente las páginas del cuadro de diálogo en conjuntos relacionados<br /><br />Útil para menos de cinco (o el número de fichas que caben en una fila en el cuadro de diálogo) las páginas de controles relacionados en el cuadro de diálogo<br /><br />Pestaña etiquetas deben ser corto: una o dos palabras que se puedan identificar fácilmente el contenido<br /><br />Un estilo de cuadro de diálogo comunes del sistema<br /><br />Ejemplo: **Explorador de archivos &gt; propiedades de los elementos** | Hacer etiquetas descriptivas de corto puede ser difícil<br /><br />Por lo general no escala más allá de las cinco pestañas en un cuadro de diálogo<br /><br />Inadecuado si tiene demasiados pestañas para una fila (use una técnica alternativa de distribución en capas)<br /><br />No extensible |  
-| Exploración de la barra lateral | Dispositivo de conmutación simple que puede dar cabida a más categorías de pestañas<br /><br />Lista plana de categorías (sin jerarquía)<br /><br />Extensible<br /><br />Ejemplo: **personalizar... &gt; Agregar comando** | No es un buen uso de espacio horizontal si hay menos de tres grupos<br /><br />Podrían ser tareas más adecuadas para una lista desplegable |  
-| Tree (control) | Permite que las categorías ilimitadas<br /><br />Permite la agrupación o la jerarquía de categorías<br /><br />Extensible<br /><br />Ejemplo: **herramientas &gt; opciones** | Las jerarquías anidadas en gran medida pueden provocar excesivo de desplazamiento horizontal<br /><br />Visual Studio tiene una abundancia de vistas de árbol |  
+| Exploración de la barra lateral | Dispositivo de conmutación simple que puede dar cabida a más categorías de pestañas<br /><br />Lista plana de categorías (sin jerarquía)<br /><br />Extensible<br /><br />Ejemplo: **Personalizar... &gt; Agregar comando** | No es un buen uso de espacio horizontal si hay menos de tres grupos<br /><br />Podrían ser tareas más adecuadas para una lista desplegable |  
+| Tree (control) | Permite que las categorías ilimitadas<br /><br />Permite la agrupación o la jerarquía de categorías<br /><br />Extensible<br /><br />Ejemplo: **Herramientas &gt; opciones** | Las jerarquías anidadas en gran medida pueden provocar excesivo de desplazamiento horizontal<br /><br />Visual Studio tiene una abundancia de vistas de árbol |  
 | Asistente | Ayuda con la finalización de la tarea por guiar al usuario a través de los pasos secuenciales, basado en tareas: el Asistente representa una tarea de alto nivel y los paneles individuales representan las subtareas que necesita para realizar la tarea general<br /><br />Resulta útil cuando la tarea cruza los límites de la interfaz de usuario, como cuando el usuario lo contrario tendría que usar varios editores y las ventanas para completar la tarea<br /><br />Resulta útil cuando la tarea requiere la creación de ramas<br /><br />Resulta útil cuando la tarea contiene las dependencias entre pasos<br /><br />Resulta útil cuando varias tareas similares con la bifurcación de una decisión que se pueden presentar en un cuadro de diálogo para reducir el número de cuadros de diálogo similar diferentes | Inadecuado para cualquier tarea que no requiere un flujo de trabajo secuencial<br /><br />Los usuarios pueden convertirse en abrumado y confunde con un asistente con demasiados pasos<br /><br />Asistentes inherentemente tienen limitado el espacio en pantalla |  
 
 ##### <a name="hallways-or-dashboards"></a>Vestíbulos o paneles  
@@ -470,11 +467,11 @@ Los proyectos suelen clasificación a sí mismos como basada en referencias (pos
 
 Desde una perspectiva de arrastrar y colocar, deben aplicar las siguientes características para cada tipo de proyecto dentro de la **el Explorador de soluciones**:  
 
--   **Proyecto de referencia:** el punto clave es que el proyecto se está arrastrando en torno a una referencia a un elemento en el almacenamiento. Cuando un proyecto basado en referencias actúa como origen para una operación de movimiento, sólo debe quitar la referencia al elemento del proyecto. El elemento no debe eliminarse realmente desde el disco duro. Cuando un proyecto basado en referencias actúa como un destino de una operación de mover (o copiar), debe agregar una referencia al elemento de origen original sin tener que realizar una copia privada del elemento.  
+-   **Basada en referencias de proyecto:** El punto clave es que el proyecto se está arrastrando en torno a una referencia a un elemento en el almacenamiento. Cuando un proyecto basado en referencias actúa como origen para una operación de movimiento, sólo debe quitar la referencia al elemento del proyecto. El elemento no debe eliminarse realmente desde el disco duro. Cuando un proyecto basado en referencias actúa como un destino de una operación de mover (o copiar), debe agregar una referencia al elemento de origen original sin tener que realizar una copia privada del elemento.  
 
--   **Proyecto basado en el directorio:** desde un punto de vista de arrastrar y colocar, el proyecto arrastrando el elemento físico en lugar de una referencia. Cuando un proyecto basado en el directorio actúa como origen para una operación de movimiento, debe terminar al eliminar el elemento físico desde el disco duro, así como para quitarlo del proyecto. Cuando un proyecto basado en el directorio actúa como un destino de una operación de mover (o copiar), debe realizar una copia del elemento de origen en su ubicación de destino.  
+-   **Basado en el directorio de proyecto:** Desde un punto de vista de arrastrar y colocar es el proyecto arrastrando el elemento físico en lugar de una referencia. Cuando un proyecto basado en el directorio actúa como origen para una operación de movimiento, debe terminar al eliminar el elemento físico desde el disco duro, así como para quitarlo del proyecto. Cuando un proyecto basado en el directorio actúa como un destino de una operación de mover (o copiar), debe realizar una copia del elemento de origen en su ubicación de destino.  
 
--   **Proyecto de destino mixto:** desde un punto de vista de arrastrar y colocar, el comportamiento de este tipo de proyecto se basa en la naturaleza del elemento que se está arrastrando (una referencia a un elemento en el almacenamiento) o el propio elemento. El comportamiento correcto para las referencias y los elementos físicos se han descrito anteriormente.  
+-   **Proyecto de destino mixto:** Desde un punto de vista de arrastrar y colocar, el comportamiento de este tipo de proyecto se basa en la naturaleza del elemento que se está arrastrando (una referencia a un elemento en el almacenamiento) o el propio elemento. El comportamiento correcto para las referencias y los elementos físicos se han descrito anteriormente.  
 
 Si hubiera un único tipo de proyecto en el **el Explorador de soluciones**, entonces serían sencillas operaciones de arrastrar y colocar. Dado que cada sistema del proyecto tiene la capacidad para definir su propio comportamiento de arrastrar y colocar, se deben seguir ciertas instrucciones (según el comportamiento de arrastrar y colocar del explorador de Windows) para garantizar una experiencia de usuario predecible:  
 
@@ -508,7 +505,7 @@ El usuario siempre debe ser capaz de determinar el efecto de una operación de a
 #### <a name="reference-based-projects"></a>Proyectos basados en la referencia  
  En la tabla siguiente se resume las operaciones de arrastrar y colocar (así como cortar/copiar/pegar) que deben realizarse según la naturaleza de las claves de elemento y el modificador de origen presionado para proyectos de destino basado en hace referencia:  
 
-| Modificador | Categoría | Elemento de origen: / vínculo de referencia | Elemento de origen: sistema de elemento o el archivo físico (`CF_HDROP`) |  
+| Modificador | Categoría | Elemento de origen: Referencia o vínculo | Elemento de origen: Sistema de elemento o el archivo físico (`CF_HDROP`) |  
 | --- | --- | --- | --- |  
 | Ningún modificador | Acción | Mover | Vínculo |  
 | Ningún modificador | Destino | Agrega la referencia al elemento original | Agrega la referencia al elemento original |  
@@ -540,7 +537,7 @@ El usuario siempre debe ser capaz de determinar el efecto de una operación de a
 En la tabla siguiente se resume las operaciones de arrastrar y colocar (así como cortar/copiar/pegar) que deben realizarse según la naturaleza de las claves de elemento y el modificador de origen presionado para proyectos de destino basado en el directorio:  
 
 
-| Modificador | Categoría | Elemento de origen: / vínculo de referencia | Elemento de origen: sistema de elemento o el archivo físico (`CF_HDROP`) |
+| Modificador | Categoría | Elemento de origen: Referencia o vínculo | Elemento de origen: Sistema de elemento o el archivo físico (`CF_HDROP`) |
 |-----------------|----------| - | - |
 | Ningún modificador | Acción | Mover | Mover |
 | Ningún modificador | Destino | Elemento de copia a la ubicación de destino | Elemento de copia a la ubicación de destino |
@@ -566,7 +563,7 @@ En la tabla siguiente se resume las operaciones de arrastrar y colocar (así com
 #### <a name="mixed-target-projects"></a>Proyectos destino mixto  
 En la tabla siguiente se resume las operaciones de arrastrar y colocar (así como cortar/copiar/pegar) que deben realizarse según la naturaleza de las claves de elemento y el modificador de origen presionado para proyectos destino mixto:  
 
-| Modificador | Categoría | Elemento de origen: / vínculo de referencia | Elemento de origen: sistema de elemento o el archivo físico (`CF_HDROP`) |  
+| Modificador | Categoría | Elemento de origen: Referencia o vínculo | Elemento de origen: Sistema de elemento o el archivo físico (`CF_HDROP`) |  
 | --- | --- | --- | --- |
 | Ningún modificador | Acción | Mover | Mover |
 | Ningún modificador | Destino | Agrega la referencia al elemento original | Elemento de copia a la ubicación de destino |

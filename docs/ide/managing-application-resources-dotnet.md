@@ -2,7 +2,6 @@
 title: Administrar los recursos de la aplicación (.NET)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - msvse_resedit.dlg.SetCustomTool
@@ -19,16 +18,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0e854cc2d271048a7d7205017710264efac0395
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 4c689de00c5c5f37d47cb0ecc9f802be4b51a9ab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381652"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966815"
 ---
 # <a name="manage-application-resources-net"></a>Administrar los recursos de la aplicación (.NET)
 
 Los archivos de recursos son archivos que forman parte de una aplicación, pero no se compilan. Un ejemplo de estos archivos son los  archivos de icono de ejemplo o los archivos de audio. Puesto que estos archivos no forman parte del proceso de compilación, se pueden cambiar sin tener que volver a compilar los archivos binarios. Si piensa localizar la aplicación, debe usar los archivos de recursos para todas las cadenas y los demás recursos que deben cambiarse al localizar la aplicación.
+
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Administración de recursos de aplicación (Visual Studio para Mac)](/visualstudio/mac/managing-app-resources).
 
 Para obtener más información sobre los recursos de las aplicaciones de escritorio de .NET, vea [Recursos de aplicaciones de escritorio](/dotnet/framework/resources/index).
 
@@ -47,8 +49,9 @@ Seleccione la pestaña **Recursos** . Puede agregar un archivo *.resx* si el pro
 Los recursos se administran de manera diferente en los proyectos de .NET que en otros tipos de proyecto. Para obtener más información sobre los recursos en:
 
 - Aplicaciones de la Plataforma universal de Windows (UWP), vea [Recursos de aplicaciones y sistema de administración de recursos](/windows/uwp/app-resources/)
-- Proyectos de C++, vea [Working with Resource Files](/cpp/windows/working-with-resource-files) (Trabajo con archivos de recursos) y [How to: Create a Resource](/cpp/windows/how-to-create-a-resource) (Cómo: Crear un recurso)
+- Proyectos de C++, vea [Trabajar con archivos de recursos](/cpp/windows/working-with-resource-files) y [Cómo: Crear un recurso](/cpp/windows/how-to-create-a-resource)
 
 ## <a name="see-also"></a>Vea también
 
 - [Recursos de aplicaciones de escritorio (.NET Framework)](/dotnet/framework/resources/index)
+- [Administración de recursos de aplicación (Visual Studio para Mac)](/visualstudio/mac/managing-app-resources)

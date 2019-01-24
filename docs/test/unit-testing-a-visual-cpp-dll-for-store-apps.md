@@ -1,20 +1,19 @@
 ---
-title: Prueba de un archivo DLL de Visual C++ en aplicaciones para UWP en Visual Studio
+title: Prueba de un archivo DLL de Visual C++ en aplicaciones para UWP
 ms.date: 02/15/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
 manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 2e389bec552212da36fba5f35da89cc85efe9a52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eea24b56d05f155b2b9cb0297aa58c34adac02cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923048"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868779"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Cómo probar una DLL de Visual C++
 
@@ -22,7 +21,7 @@ En este tema se describe una manera de crear pruebas unitarias para un archivo D
 
  En este tema se muestra cómo usar las pruebas unitarias como el primer paso del desarrollo. En este enfoque, primero tienes que escribir un método de prueba que compruebe un comportamiento concreto en el sistema que estés probando y, después, escribir el código que tenga que superar la prueba. Mediante la realización de cambios en el orden de los procedimientos siguientes, puedes invertir esta estrategia para escribir primero el código que deseas probar y escribe después las pruebas unitarias.
 
- En este tema también se crea una solución única de Visual Studio y proyectos independientes para las pruebas unitarias y el DLL que desees probar. También puede incluir las pruebas unitarias directamente en el proyecto DLL o puede crear soluciones independientes para las pruebas unitarias y el archivo .DLL. Consulte [Agregar pruebas unitarias a aplicaciones C++ existentes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) para obtener sugerencias sobre qué estructura usar.
+ En este tema también se crea una solución única de Visual Studio y proyectos independientes para las pruebas unitarias y el DLL que desees probar. También puede incluir las pruebas unitarias directamente en el proyecto DLL o puede crear soluciones independientes para las pruebas unitarias y el archivo .DLL. Consulte [Agregar pruebas unitarias a aplicaciones C++ existentes](../test/how-to-use-microsoft-test-framework-for-cpp.md) para obtener sugerencias sobre qué estructura usar.
 
 ##  <a name="Create_the_solution_and_the_unit_test_project"></a> Crear la solución y el proyecto de prueba unitaria
 
@@ -46,7 +45,7 @@ En este tema se describe una manera de crear pruebas unitarias para un archivo D
 
     -   Los métodos de prueba se agrupan en clases mediante el uso de `TEST_CLASS(YourClassName){...}`.
 
-         Cuando se ejecutan las pruebas, se crea una instancia de cada clase de prueba. Se llama a los métodos de prueba en un orden no especificado. Puede definir métodos especiales que se invocan antes y después de cada módulo, clase o método. Para obtener más información, consulte [Usar Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md) en MSDN Library.
+         Cuando se ejecutan las pruebas, se crea una instancia de cada clase de prueba. Se llama a los métodos de prueba en un orden no especificado. Puede definir métodos especiales que se invocan antes y después de cada módulo, clase o método. Para obtener más información, vea [Usar Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md).
 
 ##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Compruebe que las pruebas se ejecutan en el Explorador de pruebas
 

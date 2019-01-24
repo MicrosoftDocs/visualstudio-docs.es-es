@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: iniciar y detener la presentación del registro de mensajes | Documentos de Microsoft'
-ms.custom: ''
+title: Procedimiento Iniciar y detener la presentación del registro de mensajes | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - message log display, starting
@@ -14,20 +12,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bbb0a3eedd5060576c145b71d6c501a8b753b6c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: ec0241dfe65d093492ebb3f2e828c9068f1f0736
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481079"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926669"
 ---
-# <a name="how-to-start-and-stop-the-message-log-display"></a>Cómo: Iniciar y detener la presentación del registro de mensajes
-Cuando un [vista mensajes](../debugger/messages-view.md) ventana está activa, un **iniciar registro** o **detener el registro** opción aparece en Spy ++ **mensajes** menú y la correspondiente **iniciar registro** o **detener el registro** botón de barra de herramientas se convierte en activa.  
+# <a name="how-to-start-and-stop-the-message-log-display"></a>Procedimiento Procedimiento Iniciar y detener la presentación del registro de mensajes
+Cuando un [vista mensajes](../debugger/messages-view.md) ventana está activa, un **iniciar registro** o **detener el registro** opción aparece en Spy ++ **mensajes** menú y el correspondiente **iniciar registro** o **detener el registro** botón de barra de herramientas se vuelve activo.  
   
-### <a name="to-start-the-message-log-display"></a>Para iniciar la presentación del registro de mensaje  
+### <a name="to-start-the-message-log-display"></a>Para iniciar la presentación del registro de mensajes  
   
 1.  Desde el **mensajes** menú, elija **iniciar registro**.  
   
-### <a name="to-stop-the-message-log-display"></a>Para detener la presentación del registro de mensaje  
+### <a name="to-stop-the-message-log-display"></a>Para detener la presentación del registro de mensajes  
   
 1.  Desde el **mensajes** menú, elija **detener el registro**.

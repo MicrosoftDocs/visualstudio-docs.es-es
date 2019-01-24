@@ -1,22 +1,22 @@
 ---
 title: Administración de proyectos de aplicación de Python
-description: El propósito de los proyectos de Visual Studio, cómo crear y administrar proyectos de código de Python y las diferentes plantillas de proyecto disponibles para Python.
-ms.date: 06/27/2018
+description: Los proyectos de Visual Studio administran las dependencias entre los archivos y la complejidad de las relaciones en una aplicación.
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6f404b10c2b0a8c237684d72f89baa58bd87a7c3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: b30929c5e5c7be49b5817f520a4f6402ceff67b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499024"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825297"
 ---
 # <a name="python-projects-in-visual-studio"></a>Proyectos de Python en Visual Studio
 
@@ -38,7 +38,7 @@ Visual Studio proporciona numerosas plantillas de proyecto de Python para config
 |   |   |
 |---|---|
 | ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Vea un vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) para obtener una introducción a los proyectos de Python (2 minutos 17 segundos). |
-| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | Consulte también el vídeo de Youtube.com (8 minutos y 55 segundos) [Deep Dive: Use source control with Python projects](https://youtu.be/Aq8eqApnugM) (Profundización: uso del control de código fuente con proyectos de Python). |
+| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | Vea también el vídeo de Youtube.com (8 minutos y 55 segundos) [Deep Dive: Use source control with Python projects](https://youtu.be/Aq8eqApnugM) (Profundización: uso del control de código fuente con proyectos de Python). |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Incorporación de archivos, asignación de un archivo de inicio y establecimiento de entornos
 
@@ -51,7 +51,7 @@ Cada proyecto de Python tiene un archivo de inicio asignado, que se muestra en n
 >
 > Si desea mantener abierta la ventana de salida por cualquier motivo, haga clic con el botón derecho en el proyecto, seleccione **Propiedades**, seleccione la pestaña **Depurar** y, después, agregue `-i` al campo **Argumentos del intérprete**. Este argumento hace que el intérprete entre en modo interactivo una vez que se haya finalizado un programa, con lo que la ventana se mantendrá abierta hasta que pulse **Ctrl**+**Z** > **Entrar** para salir.
 
-Un proyecto nuevo siempre está asociado al entorno de Python global predeterminado. Para asociar el proyecto a otro entorno (incluidos los entornos virtuales), haga clic con el botón derecho en el nodo **Python Environments** (Entornos de Python) del proyecto, seleccione **Add/Remove Python Environments** (Agregar o quitar entornos de Python) y seleccione los que desee. Para cambiar el entorno activo, haga clic con el botón derecho en el entorno que quiera y seleccione **Activar entorno** como se muestra a continuación. Para más información, consulte [Selección de un entorno para un proyecto](selecting-a-python-environment-for-a-project.md).
+Un proyecto nuevo siempre está asociado al entorno de Python global predeterminado. Para asociar el proyecto a otro entorno (incluidos los entornos virtuales), haga clic con el botón derecho en el nodo **Python Environments** (Entornos de Python) del proyecto, seleccione **Add/Remove Python Environments** (Agregar o quitar entornos de Python) y seleccione los que desee. Para cambiar el entorno activo, haga clic con el botón derecho en el entorno que quiera y seleccione **Activar entorno** como se muestra a continuación. Para más información, vea [Selección de un entorno para un proyecto](selecting-a-python-environment-for-a-project.md).
 
 ![Activación de un entorno para un proyecto de Python](media/projects-activate-environment.png)
 

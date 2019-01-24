@@ -1,5 +1,5 @@
 ---
-title: Corrección de parámetros dinámicos no detectables en una prueba de rendimiento web en Visual Studio
+title: Corrección de parámetros dinámicos no detectables en una prueba de rendimiento web
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,13 +11,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 379291059157980a86d0379c69c0d592eee83a99
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 1639128be249c6ca91b611819a8a09394fad499d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177830"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848485"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Corregir parámetros dinámicos no detectables en una prueba de rendimiento web
 
@@ -30,6 +29,8 @@ Algunos sitios web utilizan parámetros dinámicos para procesar parte de sus so
 -   Valores de parámetros dinámicos establecidos como cadenas de consulta o parámetros de envío de formulario. Se administran mediante la detección de parámetros dinámicos después de grabar una prueba de rendimiento web.
 
 Algunos tipos de parámetros dinámicos no se detectan. Un parámetro dinámico sin detectar hará que se produzcan errores en las pruebas de rendimiento web cuando se ejecuten, ya que el valor dinámico será diferente cada vez que se ejecute la prueba. Para administrar estos parámetros de forma correcta, puede agregar manualmente reglas de extracción a los parámetros dinámicos en sus pruebas de rendimiento web.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="create-and-run-a-web-app-with-dynamic-parameters"></a>Crear y ejecutar una aplicación web con parámetros dinámicos
 
@@ -237,7 +238,7 @@ Para mostrar un parámetro dinámico detectable y no detectable, crearemos una s
 
      ![Reemplazar el texto por el parámetro](../test/media/web_test_dynamicparameter_addextractionfindreplace2.png)
 
-     El parámetro QueryString de la solicitud de *JScriptQuery.aspx* se actualiza con el nuevo parámetro de contexto: CustomQueryString=jScriptQueryString___ {{Param0}}.
+     El parámetro QueryString de la solicitud de *JScriptQuery.aspx* se actualiza con el nuevo parámetro de contexto:  CustomQueryString=jScriptQueryString___{{Param0}}.
 
      ![Parámetro aplicado a querystring](../test/media/web_test_dynamicparameter_addextractionfindreplace3.png)
 
@@ -251,7 +252,7 @@ Para mostrar un parámetro dinámico detectable y no detectable, crearemos una s
 
 ### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>P: ¿Puedo ejecutar de nuevo la detección de parámetros dinámicos si mi aplicación web cambia?
 
- **R:** Sí, use el procedimiento siguiente:
+ **R:** Sí, siga estos pasos:
 
 1.  En la barra de herramientas, elija el botón **Promover parámetros dinámicos a parámetros de pruebas web**.
 
@@ -265,4 +266,4 @@ Para mostrar un parámetro dinámico detectable y no detectable, crearemos una s
 
 ### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>P: ¿Es necesario configurar Visual Studio para detectar parámetros dinámicos?
 
- **R:** La configuración predeterminada de Visual Studio es detectar parámetros dinámicos al grabar una prueba de rendimiento web. Pero si tiene opciones de Visual Studio configuradas para no detectar los parámetros dinámicos o si la aplicación web que está probando se modifica con otros parámetros dinámicos, puede ejecutar la detección de parámetros dinámicos desde el Editor de pruebas de rendimiento web.
+ **R:** La configuración predeterminada de Visual Studio es detectar los parámetros dinámicos al grabar una prueba de rendimiento web. Pero si tiene opciones de Visual Studio configuradas para no detectar los parámetros dinámicos o si la aplicación web que está probando se modifica con otros parámetros dinámicos, puede ejecutar la detección de parámetros dinámicos desde el Editor de pruebas de rendimiento web.

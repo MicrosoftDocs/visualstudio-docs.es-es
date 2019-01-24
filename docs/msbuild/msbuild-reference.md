@@ -1,8 +1,6 @@
 ---
 title: Referencia de MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b2710b6efcc765f98977c2730c5f729e3a8b260
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: 8966512e2d2ad58edaff41ac21301dfce437152c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120388"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347703"
 ---
 # <a name="msbuild-reference"></a>Referencia de MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] es el sistema de compilación para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Los siguientes vínculos conducen a temas que contienen información de referencia de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -61,7 +59,7 @@ ms.locfileid: "48120388"
  [Archivos de respuesta](../msbuild/msbuild-response-files.md)  
  Explica los archivos *.rsp* que contienen modificadores de línea de comandos.  
   
- [Recursos adicionales](../msbuild/additional-resources-for-msbuild.md)  
+ [Recursos adicionales](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild)  
  Proporciona vínculos a sitios web y grupos de noticias de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
  [Referencia de MSBuild para WPF](../msbuild/wpf-msbuild-reference.md)  
@@ -73,9 +71,6 @@ ms.locfileid: "48120388"
 ## <a name="see-also"></a>Vea también  
  [Información general sobre MSBuild](../msbuild/msbuild.md)     
  Presenta [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] y proporciona vínculos a temas que explican cómo usarlo para compilar proyectos.  
-  
- [Microsoft.Build.Conversion](https://docs.microsoft.com/dotnet/api/microsoft.build.conversion)  
- Contiene la referencia de espacio de nombres de Conversion.  
   
  [Microsoft.Build.Evaluation](https://docs.microsoft.com/dotnet/api/microsoft.build.evaluation)  
  Contiene la referencia de espacio de nombres de Evaluation.  

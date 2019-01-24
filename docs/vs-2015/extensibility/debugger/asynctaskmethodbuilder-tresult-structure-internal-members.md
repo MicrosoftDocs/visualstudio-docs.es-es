@@ -16,12 +16,12 @@ ms.assetid: 17ebc340-8170-4aff-bf54-dc4548c83632
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7a79d9744f53190f8d795f0f2072d1b0c2e0a9cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 966a6ee224ac14707ed411e7e63c9473831c7003
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296288"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792351"
 ---
 # <a name="asynctaskmethodbuilderlttresultgt-structure---internal-members"></a>AsyncTaskMethodBuilder&lt;TResult&gt; Structure: miembros internos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -13,15 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b720072d5ccd695ff1e7006bda5221ae00db06ef
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
-ms.translationtype: MT
+ms.openlocfilehash: a363c9964b88196e31f5ba05a4244fabdf00f90f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582351"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966880"
 ---
 # <a name="create-and-configure-tableadapters"></a>Crear y configurar TableAdapters
 
@@ -58,7 +57,7 @@ Asigne parámetros desde el procedimiento almacenado seleccionado a las columnas
 > [!NOTE]
 > El procedimiento almacenado asignado al comando SELECT se ejecuta llamando al método del TableAdapter ese nombre en el paso siguiente del asistente. El método predeterminado es `Fill`, por lo que el código que se utiliza normalmente para ejecutar el procedimiento SELECT es `TableAdapter.Fill(tableName)`. Si cambia el nombre predeterminado de `Fill`, sustituya `Fill` con el nombre que asigne y reemplace "TableAdapter" por el nombre real del TableAdapter (por ejemplo, `CustomersTableAdapter`).
 
-- Seleccionar el **crear métodos para enviar actualizaciones directamente a la base de datos** opción es equivalente a establecer el `GenerateDBDirectMethods` propiedad en true. La opción no está disponible cuando la instrucción SQL original no proporciona suficiente información o la consulta no es una consulta actualizable. Esta situación puede ocurrir, por ejemplo, en **UNIR** las consultas y las consultas que devuelven un único valor (escalar).
+- Seleccionar el **crear métodos para enviar actualizaciones directamente a la base de datos** opción es equivalente a establecer el `GenerateDBDirectMethods` propiedad en true. Esta opción no está disponible cuando la instrucción SQL original no proporciona bastante información o la consulta no es una consulta actualizable. Esta situación puede ocurrir, por ejemplo, en **UNIR** las consultas y las consultas que devuelven un único valor (escalar).
 
 El **opciones avanzadas** en el asistente le permiten:
 
@@ -82,7 +81,7 @@ El ejemplo siguiente muestra cómo llamar a una consulta adicional denominada `F
 
 ### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>Para iniciar al Asistente para configuración de consulta de TableAdapter con una consulta nueva
 
-1.  Abra el conjunto de datos en el **Diseñador de Dataset**.
+1.  Abra su conjunto de datos en el **Diseñador de Dataset**.
 
 2.  Si va a crear una nueva consulta, arrastre un **consulta** objeto desde el **conjunto de datos** pestaña de la **cuadro de herramientas** hasta un <xref:System.Data.DataTable>, o seleccione **Add Query**desde el menú contextual del TableAdapter. También puede arrastrar un **consulta** objeto en un área vacía de la **Diseñador de Dataset**, que crea un TableAdapter sin asociado un <xref:System.Data.DataTable>. Estas consultas solo pueden devolver valores únicos de (escalares) o ejecutar UPDATE, INSERT o eliminar comandos en la base de datos.
 

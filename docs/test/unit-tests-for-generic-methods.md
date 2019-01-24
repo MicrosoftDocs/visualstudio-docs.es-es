@@ -1,8 +1,7 @@
 ---
-title: Pruebas unitarias para métodos genéricos en Visual Studio
+title: Pruebas unitarias para métodos genéricos
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - generics, and unit tests
@@ -12,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 724ca3c49083853a7c66e61b238ab2d862be6582
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 974648db0a6b8fa8ede1c26f7e1d605d0023b699
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880551"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924129"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Pruebas unitarias para métodos genéricos
 
@@ -34,7 +33,7 @@ Cuando Visual Studio genera una prueba unitaria para una clase genérica, como `
 
 -   [Usar una restricción de tipo](#TypeConstraintNotSatisfied). En este ejemplo se muestra una prueba unitaria para un método genérico que utiliza una restricción de tipo. En este ejemplo no se cumple la restricción de tipo.
 
-###  <a name="EditingGeneratedTestCode"></a> Ejemplo 1: Editar el código de prueba generado
+###  <a name="EditingGeneratedTestCode"></a> Ejemplo 1: Edición del código de prueba generado
  El código de prueba de esta sección prueba un método de código en prueba denominado `SizeOfLinkedList()`. Este método devuelve un entero que especifica el número de nodos en la lista vinculada.
 
  El primer ejemplo de código, en la sección Código de prueba generado, muestra el código de prueba sin editar, tal y como lo generó Visual Studio Enterprise. El segundo ejemplo, en la sección Código de prueba editado, muestra cómo puede hacer que pruebe el funcionamiento del método SizeOfLinkedList para dos tipos de datos diferentes, `int` y `char`.
@@ -111,16 +110,16 @@ public void SizeOfLinkedListTestHelper<T>()
 [TestMethod()]
 public void SizeOfLinkedListTest()
 {
-    SizeOfLinkedListTestHelper<int>();  // step 6
+    SizeOfLinkedListTestHelper<int>();  // step 6
     SizeOfLinkedListTestHelper<char>(); // step 7
 }
 ```
 
 > [!NOTE]
-> Cada vez que se ejecuta la prueba SizeOfLinkedListTest, se llama dos veces a su método TestHelper. La instrucción Assert debe evaluarse como true todas las veces para que la prueba se supere. Si se produce un error en la prueba, es posible que no quede claro si fue la llamada que especificó `<int>` o la llamada que especificó `<char>` la que provocó el error. Para encontrar la respuesta, puede examinar la pila de llamadas o establecer puntos de interrupción en el método de prueba y luego depurar mientras se ejecuta la prueba. Para obtener más información, vea [Cómo: Depurar mientras se ejecuta una prueba en una solución ASP.NET](http://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
+> Cada vez que se ejecuta la prueba SizeOfLinkedListTest, se llama dos veces a su método TestHelper. La instrucción Assert debe evaluarse como true todas las veces para que la prueba se supere. Si se produce un error en la prueba, es posible que no quede claro si fue la llamada que especificó `<int>` o la llamada que especificó `<char>` la que provocó el error. Para encontrar la respuesta, puede examinar la pila de llamadas o establecer puntos de interrupción en el método de prueba y luego depurar mientras se ejecuta la prueba. Para obtener más información, vea [Cómo: Depurar mientras se ejecuta una prueba en una solución ASP.NET](https://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
 
 
-###  <a name="TypeConstraintNotSatisfied"></a> Ejemplo 2: Usar una restricción de tipo
+###  <a name="TypeConstraintNotSatisfied"></a> Ejemplo 2: Uso de una restricción de tipo
  En este ejemplo se muestra una prueba unitaria para un método genérico que usa una restricción de tipo que no se cumple. La primera sección muestra código del proyecto de código en prueba. Se resalta la restricción de tipo.
 
  La segunda sección muestra el código del proyecto de prueba.

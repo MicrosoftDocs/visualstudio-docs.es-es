@@ -15,12 +15,12 @@ ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 88828eb5abbb9a4e81d69bae9662c291cf5fd9b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 3b0a280b44ad468ba44baf81efcc4e4569638e8b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885712"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783095"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Cómo: crear marcadores de texto personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

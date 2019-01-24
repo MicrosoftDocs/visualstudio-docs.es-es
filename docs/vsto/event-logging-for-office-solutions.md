@@ -1,9 +1,6 @@
 ---
 title: Registro de eventos para soluciones de Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,17 +10,17 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], event viewer
 - deploying applications [Office development in Visual Studio], event viewer
 - Office development in Visual Studio, event viewer
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 267d3e06e9f0d4733a7985f65aa81f368c3f5413
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6cca606022a8b35ba43f9174925aac978835d289
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925121"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857058"
 ---
 # <a name="event-logging-for-office-solutions"></a>Registro de eventos para soluciones de Office
   Puede usar el visor de eventos en Windows para ver todos los mensajes de excepción capturados por [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , cuando instale o desinstale soluciones de Office. Puede usar estos mensajes desde el registrador de eventos para resolver los problemas de instalación e implementación.  
@@ -102,5 +99,3 @@ ms.locfileid: "49925121"
 ## <a name="see-also"></a>Vea también  
  [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)   
  [Solución de problemas de implementación de soluciones de Office](../vsto/troubleshooting-office-solution-deployment.md)  
-  
-  

@@ -1,8 +1,6 @@
 ---
-title: Idiastackwalkframe | Documentos de Microsoft
-ms.custom: ''
+title: Idiastackwalkframe | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 34aaf4b7136bb81086ad095fa9a0af2167ebbd30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a78d79c84c24b20a37b0ee9b580447e1153bfa98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879940"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926850"
 ---
 # <a name="idiastackwalkframesearchforreturnaddress"></a>IDiaStackWalkFrame::searchForReturnAddress
 Busca el marco de pila especificado para la dirección de devolución de función más cercano.  
@@ -27,7 +25,7 @@ Busca el marco de pila especificado para la dirección de devolución de funció
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT searchForReturnAddress (   
+HRESULT searchForReturnAddress (   
    IDiaFrameData* frame,  
    ULONGLONG*     returnAddress  
 );  

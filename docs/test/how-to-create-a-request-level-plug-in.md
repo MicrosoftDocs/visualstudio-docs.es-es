@@ -1,5 +1,5 @@
 ---
-title: Creación de un complemento de nivel de solicitud para pruebas de rendimiento web en Visual Studio
+title: Creación de un complemento de nivel de solicitud para pruebas de rendimiento web
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +10,18 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 749c4be37586401d48e9c4a11d8fc70b8ed44c44
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 4d2463c9c81e963494ed6865956b6e9c36934e07
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382040"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988928"
 ---
-# <a name="how-to-create-a-request-level-plug-in"></a>Cómo: Crear un complemento de nivel de solicitud
+# <a name="how-to-create-a-request-level-plug-in"></a>Procedimiento para crear un complemento de nivel de solicitud
 
 Las *solicitudes* son las instrucciones declarativas que constituyen las pruebas de rendimiento web. Los complementos de pruebas de rendimiento web permiten aislar y reutilizar código fuera de las principales instrucciones declarativas de la prueba de rendimiento web. Puede crear complementos y agregarlos a una solicitud individual, así como a la prueba de rendimiento web que la contiene. Un *complemento de solicitud* personalizado resulta útil para llamar al código cuando una determinada solicitud se ejecuta en una prueba de rendimiento web.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Cada complemento de solicitud de prueba de rendimiento web tiene un método PreRequest y un método PostRequest. Después de asociar un complemento de solicitud a una solicitud HTTP determinada, se desencadenará el evento PreRequest antes de que se emita la solicitud y se desencadenará PostRequest una vez recibida la respuesta.
 
@@ -82,7 +83,7 @@ Puede utilizar complementos de solicitud de prueba de rendimiento web personaliz
     > [!WARNING]
     > Puede obtener un error similar al siguiente al ejecutar una prueba de rendimiento web o una prueba de carga que use su complemento:
     >
-    > **Error en la solicitud: excepción en \<plug-in> event: no se pudo cargar el archivo o ensamblado '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' o una de sus dependencias. El sistema no puede encontrar el archivo especificado.**
+    > **Error en la solicitud: Excepción en el evento \<complemento>: no se pudo cargar el archivo o ensamblado "\<archivo "nombre_de_complemento".dll>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null" o una de sus dependencias. El sistema no puede encontrar el archivo especificado.**
     >
     > Esto ocurre si realiza cambios en el código de cualquier complemento y crea una nueva versión de DLL **(Version=0.0.0.0)**, pero el complemento sigue haciendo referencia a la versión original del complemento. Para corregir este problema, siga estos pasos:
     >
@@ -124,5 +125,5 @@ namespace RequestPluginNamespace
 - [Crear código y complementos personalizados para las pruebas de carga](../test/create-custom-code-and-plug-ins-for-load-tests.md)
 - [Codificación de una regla de extracción personalizada para una prueba de rendimiento web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
 - [Codificación de una regla de validación personalizada para una prueba de rendimiento web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
-- [Cómo: Crear un complemento de pruebas de carga](../test/how-to-create-a-load-test-plug-in.md)
+- [Cómo: Crear un complemento de prueba de carga](../test/how-to-create-a-load-test-plug-in.md)
 - [Generar y ejecutar una prueba de rendimiento web codificada](../test/generate-and-run-a-coded-web-performance-test.md)

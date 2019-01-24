@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: mostrar la pestaña Programador en la cinta de opciones'
-ms.custom: ''
+title: Procedimiento Mostrar la pestaña Programador en la cinta de opciones
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,18 +13,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fea1b0fa804726cb43bdc5b6d866ceedc186924c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c8346a1f23cc9aa02291aa994a0cea51b7810345
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43780450"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906805"
 ---
-# <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Cómo: mostrar la pestaña Programador en la cinta de opciones
+# <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Procedimiento Mostrar la pestaña Programador en la cinta de opciones
   Para tener acceso a la **Developer** pestaña en la cinta de una aplicación de Office, debe configurarlo para mostrar esa pestaña, ya que no aparece de forma predeterminada. Por ejemplo, debe mostrar esa pestaña si desea agregar un <xref:Microsoft.Office.Tools.Word.GroupContentControl> a una personalización de nivel de documento para Word.  
   
 > [!NOTE]  
->  Esta guía se aplica únicamente a aplicaciones de Office 2010 o versiones posteriores. Si desea mostrar esta pestaña en 2007 Microsoft Office System, vea la siguiente versión de este tema [Cómo: mostrar la pestaña Programador en la cinta de opciones](http://msdn.microsoft.com/library/bb608625(v=vs.90).aspx).  
+>  Esta guía se aplica únicamente a aplicaciones de Office 2010 o versiones posteriores. Si desea mostrar esta pestaña en 2007 Microsoft Office System, vea la siguiente versión de este tema [Cómo: Mostrar la pestaña Programador en la cinta de opciones](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
+).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
@@ -68,5 +66,3 @@ ms.locfileid: "43780450"
   
 ## <a name="see-also"></a>Vea también  
  [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md)  
-  
-  

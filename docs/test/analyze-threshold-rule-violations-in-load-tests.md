@@ -1,5 +1,5 @@
 ---
-title: Análisis de las infracciones de las reglas de umbral en las pruebas de carga en Visual Studio
+title: Análisis de las infracciones de las reglas de umbral en las pruebas de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,19 +16,20 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 41837a9ff3d67f2d712352115bcb6581580b32a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: badeb0d01347bf4410b645dc901f3ec518178574
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813003"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989249"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analizar las infracciones de las reglas de umbral en las pruebas de carga mediante el Analizador de pruebas de carga
 
 Las reglas de umbral están asociadas a contadores de rendimiento específicos, y las infracciones indican que un contador de rendimiento ha superado o no ha llegado a un valor especificado. Cuando ejecute una prueba de carga, puede analizar las infracciones que se producen para las reglas de umbral previamente definidas.
 
 Si se ha producido alguna infracción, aparece un hipervínculo de **infracciones de umbral** en la barra de estado del **Analizador de pruebas de carga** con el número de infracciones que se han producido. Puede elegir el hipervínculo para mostrar la tabla de infracciones de umbral. También puede ver las infracciones de umbral en la ventana **Contadores** y en el gráfico.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="view-threshold-violations-in-the-table"></a>Ver las infracciones de umbral en la tabla
 
@@ -37,7 +38,7 @@ Si se ha producido alguna infracción, aparece un hipervínculo de **infraccione
 |Columna|Descripción|Visible de forma predeterminada|
 |-|-|-|
 |Tiempo|La hora de la prueba de carga a la que se produjo la infracción.|Sí|
-|Equipo|El nombre del equipo bajo comprobación en el que se produjo la infracción. **Nota:** Esto es importante cuando se ejecutan pruebas de carga en plataformas de pruebas.|Sí|
+|Equipo|El nombre del equipo bajo comprobación en el que se produjo la infracción. **Nota:**  Esto es importante cuando se ejecutan pruebas de carga en plataformas de pruebas.|Sí|
 |Categoría|La categoría del contador de rendimiento en el que se produjo la infracción.|Sí|
 |Contador|El nombre del contador de rendimiento en el que se produjo la infracción.|Sí|
 |Instancia|La instancia del contador de rendimiento en la que se produjo la infracción.|Sí|
@@ -67,8 +68,6 @@ Si se ha producido alguna infracción, aparece un hipervínculo de **infraccione
  Opcionalmente, las infracciones del umbral también se pueden mostrar en el gráfico. El icono de umbral aparece en el gráfico junto al punto de datos donde se ha producido la infracción de umbral.
 
  En el árbol de contadores, el icono de una infracción de umbral se propaga desde el nodo de contador específico hasta el nodo raíz. Esto sirve para avisarle de que una infracción en un contador puede no estar visible en el árbol porque éste no se ha expandido.
-
- Para obtener más información, vea [Usar el panel Contadores en vista Gráficos y la vista Tablas](../test/counters-panel-in-load-test-analyzer.md).
 
 ## <a name="view-threshold-violations-on-the-graph"></a>Ver las infracciones de umbral en el gráfico
 

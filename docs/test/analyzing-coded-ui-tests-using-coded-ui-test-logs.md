@@ -1,26 +1,27 @@
 ---
-title: Análisis de pruebas automatizadas de IU mediante los registros de pruebas automatizadas de IU en Visual Studio
+title: Analizar pruebas de IU codificadas usando los registros de pruebas de IU codificadas
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e2301e1c0cf2a90f701e74445d22810e67785999
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 7a0913159b59e12c4491331a123045074cbea35f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233919"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944965"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Análisis de pruebas automatizadas de IU mediante los registros de pruebas automatizadas de IU
 
 Los registros de pruebas de IU codificadas filtran y guardan información importante sobre las series de pruebas de IU codificadas. Los registros se muestran en un formato que permite depurar problemas rápidamente.
 
-## <a name="step-1-enable-logging"></a>Paso 1: habilitar el registro
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
+
+## <a name="step-1-enable-logging"></a>Paso 1: Habilite el registro
 
 En función de su escenario, use uno de los siguientes métodos para habilitar el registro:
 
@@ -56,7 +57,7 @@ En función de su escenario, use uno de los siguientes métodos para habilitar e
 
    <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;
 
-## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Paso 2: ejecutar la prueba de interfaz de usuario codificada y ver el registro
+## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Paso 2: Ejecutar la prueba de IU codificada y ver el registro
 
 Cuando ejecute una prueba automatizada de IU una vez realizadas las modificaciones en el archivo *QTAgent32.exe.config*, verá que hay un vínculo de salida en los resultados del **Explorador de pruebas**. Los archivos de registro no solo se generan cuando la prueba produzca un error, sino también para las pruebas correctas cuando el nivel de seguimiento sea "detallado".
 
@@ -88,4 +89,4 @@ Cuando ejecute una prueba automatizada de IU una vez realizadas las modificacion
 ## <a name="see-also"></a>Vea también
 
 - [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
-- [Cómo: Ejecutar pruebas desde Microsoft Visual Studio](http://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
+- [Cómo: Ejecutar pruebas desde Microsoft Visual Studio](https://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)

@@ -1,5 +1,5 @@
 ---
-title: Períodos de tiempo de espera para controladores y agentes de pruebas en Visual Studio
+title: Periodos de tiempo de espera para controladores de pruebas y agentes de pruebas
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,19 +12,20 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: e70c468a70d37d1d8e261844c004af785a68eb54
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 49d81090a0db94fe0215d01a1194f3eb4fabfcad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827940"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870458"
 ---
-# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Cómo: Especificar periodos de tiempo de espera para controladores de pruebas y agentes de pruebas
+# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Procedimiento para especificar periodos de tiempo de espera para controladores de pruebas y agentes de pruebas
 
 Tanto el controlador de pruebas como el agente de prueba tienen varias configuraciones de tiempo de espera que especifican cuánto tiempo deben esperar las respuestas el uno del otro, o de un origen de datos antes de que se genere un error. En ciertas circunstancias, podría ser necesario editar los valores de tiempo de espera para satisfacer las necesidades de su topología u otros problemas del entorno. Para editar los valores de tiempo de espera, edite el archivo de configuración XML asociado al controlador de pruebas o al agente de prueba, como se explica en los procedimientos siguientes.
 
- Para editar diversas configuraciones de tiempo de espera de un controlador de pruebas o de un agente de prueba, modifique los siguientes archivos de configuración usando los nombres y valores de clave de las tablas:
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Para editar diversas configuraciones de tiempo de espera de un controlador de pruebas o de un agente de prueba, modifique los siguientes archivos de configuración usando los nombres y valores de clave de las tablas:
 
 -   Controlador de pruebas: *QTController.exe.config*
 
@@ -68,7 +69,7 @@ Tanto el controlador de pruebas como el agente de prueba tienen varias configura
     <add key="AgentConnectionTimeoutInSeconds" value="180"/>
     ```
 
-    O bien
+    o bien
 
     Agregue una clave adicional y especifique un valor de tiempo de espera. Por ejemplo, puede agregar la clave `AgentInitializeTimeout` en la sección `<appSettings>` y especificar un valor de cinco minutos:
 
@@ -102,7 +103,7 @@ Tanto el controlador de pruebas como el agente de prueba tienen varias configura
     <add key="ControllerConnectionPeriodInSeconds" value="60"/>
     ```
 
-    O bien
+    o bien
 
     Agregue una clave adicional y especifique un valor de tiempo de espera. Por ejemplo, puede agregar la clave `RemotingTimeoutSeconds` en la sección `<appSettings>` y especificar un valor de quince minutos:
 
@@ -118,4 +119,4 @@ Tanto el controlador de pruebas como el agente de prueba tienen varias configura
 - [Modificar la configuración de registro de pruebas de carga](../test/modify-load-test-logging-settings.md)
 - [Configurar los puertos para los controladores de prueba y los agentes de prueba](../test/configure-ports-for-test-controllers-and-test-agents.md)
 - [Cómo: Especificar el tamaño máximo del archivo de registro](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
-- [Cómo: Enlazar Test Controller o Test Agent a un adaptador de red](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)
+- [Cómo: Enlazar un controlador de pruebas o un agente de pruebas a un adaptador de red](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)

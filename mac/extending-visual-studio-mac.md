@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 83d5eac54560d9c0c1960808d39a909858db323d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8212039cd4f83cd9ea2b53a1050f32ed5dbad367
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900675"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295142"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Extender Visual Studio para Mac
 
@@ -23,7 +23,7 @@ Para personalizar Visual Studio para Mac, puede crear un paquete de extensión q
 
 ![Arquitectura de complementos](media/extending-visual-studio-mac-addin1.png)
 
-Para que un paquete de extensión se compile desde Visual Studio para Mac, debe tener extensiones que se compilen desde puntos de extensión preexistentes en el IDE de Visual Studio para Mac. Cuando un paquete de extensión se basa en un punto de extensión definido en un host de complemento, se dice que tiene una _dependencia_ en dicho paquete de extensión.
+Para que un paquete de extensión se compile desde Visual Studio para Mac, debe tener extensiones que se compilen desde puntos de extensión preexistentes en el IDE de Visual Studio para Mac. Cuando un paquete de extensión se basa en un punto de extensión definido en un host de complemento, se dice que tiene una  _dependencia_  en ese paquete de extensión.
 
 La ventaja de este diseño modular es que Visual Studio para Mac es extensible, ya que hay muchos puntos de extensión desde los que se puede compilar con paquetes de extensión personalizados. Entre los ejemplos de paquetes de extensión actuales se incluyen la compatibilidad con C# y F#, las herramientas del depurador y las plantillas de proyecto.
 
@@ -52,13 +52,13 @@ Además, se pueden agregar referencias adicionales a través del nodo de referen
 
 ![Captura de pantalla de insertar fecha](media/extending-visual-studio-mac-addin13.png)
 
-También se agregan sus atributos `assembly:AddinDependency ` correspondientes en tiempo de compilación. Una vez que se han colocado los metadatos y las declaraciones de dependencias, puede centrarse en los bloques de creación fundamentales del paquete de extensión.
+También se agregan sus atributos `assembly:AddinDependency` correspondientes en tiempo de compilación. Una vez que se han colocado los metadatos y las declaraciones de dependencias, puede centrarse en los bloques de creación fundamentales del paquete de extensión.
 
 ## <a name="extensions-and-extension-points"></a>Extensiones y puntos de extensión
 
 Un punto de extensión es un marcador de posición que define una estructura de datos (un tipo), mientras que una extensión define los datos que se ajustan a una estructura especificada por un punto de extensión específico. Los puntos de extensión especifican qué tipo de extensión pueden aceptar en su declaración. Las extensiones se declaran mediante nombres de tipo o rutas de acceso de extensión. Vea la [referencia sobre los puntos de extensión](https://github.com/mono/mono-addins/wiki/Extension-Points) para obtener una explicación más detallada sobre cómo crear el punto de extensión que necesita.
 
-La arquitectura de extensión/punto de extensión garantiza que el desarrollo de Visual Studio para Mac sea rápido y modular. 
+La arquitectura de extensión/punto de extensión garantiza que el desarrollo de Visual Studio para Mac sea rápido y modular.
 
 <!--Since there are a large number of extension types, this article focuses on the ones used in the extension package that was built in the [Walkthrough](~/extending-visual-studio-mac-walkthrough.md).-->
 
@@ -163,3 +163,7 @@ Para obtener información sobre el ámbito de las áreas disponibles para el des
 
 > [!NOTE]
 > Actualmente estamos trabajando para mejorar los escenarios de extensibilidad de Visual Studio para Mac. Si está creando extensiones y necesita más información o ayuda, o si quiere proporcionar comentarios, rellene el formulario [Visual Studio for Mac Extension Authoring](https://aka.ms/vsmac-extensions-survey) (Creación de extensiones de Visual Studio para Mac).
+
+## <a name="see-also"></a>Vea también
+
+- [Comenzar a desarrollar extensiones de Visual Studio (en Windows)](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)

@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: personalizar la página Web predeterminada para una aplicación ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Personalizar la página Web predeterminada para una aplicación ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,20 +17,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d64e6432c1bfe696bf3b116aa35b5f4a5c597507
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 97ab1335b846ecccf31addfa134fc63396dc841b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153142"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861282"
 ---
-# <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Cómo: personalizar la página Web predeterminada para una aplicación ClickOnce
+# <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Procedimiento Personalización de la página web predeterminada para una aplicación ClickOnce
 Al publicar una aplicación ClickOnce en la Web, una página Web generada automáticamente y publicada junto con la aplicación. La página predeterminada contiene el nombre de la aplicación y los vínculos para instalar la aplicación, instale los requisitos previos o acceder a la Ayuda en MSDN.  
   
 > [!NOTE]
 >  Los vínculos que aparecen en la página dependen del equipo donde se está visualizando la página y qué requisitos previos que se va a incluir.  
   
- El nombre predeterminado para la página Web es *Publish.htm*; puede cambiar el nombre de la **Diseñador de proyectos**. Para obtener más información, consulte [Cómo: especificar una página de publicación para una aplicación ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).  
+ El nombre predeterminado para la página Web es *Publish.htm*; puede cambiar el nombre de la **Diseñador de proyectos**. Para obtener más información, vea [Cómo: Especificación de una página de publicación para una aplicación ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).  
   
  El *Publish.htm* se publica la página Web sólo si se detecta una versión más reciente.  
   
@@ -41,7 +39,7 @@ Al publicar una aplicación ClickOnce en la Web, una página Web generada autom�
   
 ### <a name="to-customize-the-publish-web-page"></a>Para personalizar la página Web de publicación  
   
-1.  Publicar la aplicación ClickOnce para una ubicación Web. Para obtener más información, consulte [Cómo: publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+1.  Publicar la aplicación ClickOnce para una ubicación Web. Para obtener más información, vea [Cómo: Publicación de una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 2.  En el servidor Web, abra el *Publish.htm* archivo en el Diseñador Web Visual u otro editor de HTML.  
   
@@ -52,5 +50,5 @@ Al publicar una aplicación ClickOnce en la Web, una página Web generada autom�
 ## <a name="see-also"></a>Vea también  
  [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Cómo: instalar requisitos previos mediante una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [Cómo: especificar una página de publicación para una aplicación ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)
+ [Cómo: Requisitos previos de instalación con una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Cómo: Especificación de una página de publicación para una aplicación ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)

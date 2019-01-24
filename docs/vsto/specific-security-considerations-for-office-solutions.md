@@ -1,9 +1,6 @@
 ---
 title: Consideraciones de seguridad específicas para soluciones de Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dcb2e0a3c381b1dd07c7724c3a64c53307856014
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 33d827efa7dcc4e5590b4bc45fb0d6bd3fbe1432
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951397"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955547"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Consideraciones de seguridad específicas para soluciones de Office
   Las características de seguridad proporcionadas por Microsoft .NET Framework y Microsoft Office pueden ayudarle a proteger sus soluciones de Office contra diversas amenazas de seguridad. En este tema le daremos detalles acerca de esas amenazas y le proporcionaremos varias recomendaciones para que pueda protegerse contra ellas. Asimismo, este artículo también incluye información acerca de cómo influye la configuración de seguridad de Microsoft Office en las soluciones de Office.  
@@ -120,5 +117,3 @@ ms.locfileid: "49951397"
   
 ## <a name="see-also"></a>Vea también  
  [Proteger soluciones de Office](../vsto/securing-office-solutions.md)  
-  
-  

@@ -14,17 +14,17 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de40f66a9e5721b8dacac634c6fb77982017c155
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4a756fa3f933f4adff56c41a86aee19a0a2a93aa
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733915"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346415"
 ---
 # <a name="isimpleconnectionpoint-interface"></a>ISimpleConnectionPoint (Interfaz)
-Proporciona una manera sencilla para describir y enumerar los eventos que se desencadena en un punto de conexión determinado. Esta interfaz también resulta muy sencillo enlazar un `IDispatch` objeto a esos eventos. Esta interfaz está implementada por el Administrador de depurar de proceso (PDM) y utilizada por motores de scripts.  
+Proporciona una manera sencilla de describir y enumerar los eventos se activa en un punto de conexión determinado. Esta interfaz también permite enlazar fácilmente un `IDispatch` objeto a esos eventos. Esta interfaz es implementada por el proceso de depuración Manager (PDM) y consumida por los motores de scripts.  
   
- Esta interfaz está disponible en `IDebugHelper::CreateSimpleConnectionPoint`.  
+ Esta interfaz está disponible desde `IDebugHelper::CreateSimpleConnectionPoint`.  
   
  Además de los métodos heredados de `IUnknown`, el `ISimpleConnectionPoint` interfaz expone los métodos siguientes.  
   
@@ -33,7 +33,7 @@ Proporciona una manera sencilla para describir y enumerar los eventos que se des
 |Método|Descripción|  
 |------------|-----------------|  
 |[ISimpleConnectionPoint::Advise](../../winscript/reference/isimpleconnectionpoint-advise.md)|Establece una conexión entre el objeto de punto de conexión simple y el receptor del cliente.|  
-|[ISimpleConnectionPoint::DescribeEvents](../../winscript/reference/isimpleconnectionpoint-describeevents.md)|Devuelve el identificador DISPID y el nombre de cada evento en un intervalo especificado de eventos.|  
+|[ISimpleConnectionPoint::DescribeEvents](../../winscript/reference/isimpleconnectionpoint-describeevents.md)|Devuelve el identificador DISPID y el nombre para cada evento en un intervalo especificado de eventos.|  
 |[ISimpleConnectionPoint::GetEventCount](../../winscript/reference/isimpleconnectionpoint-geteventcount.md)|Devuelve el número de eventos que se exponen en esta interfaz.|  
 |[ISimpleConnectionPoint::Unadvise](../../winscript/reference/isimpleconnectionpoint-unadvise.md)|Finaliza una conexión de consulta previamente establecida mediante `ISimpleConnectionPoint::Advise`.|  
   

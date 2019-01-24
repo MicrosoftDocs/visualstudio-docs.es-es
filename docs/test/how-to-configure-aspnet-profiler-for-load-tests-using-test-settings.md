@@ -1,5 +1,5 @@
 ---
-title: Configurar el generador de perfiles ASP.NET para pruebas de carga en Visual Studio
+title: Configuración del generador de perfiles ASP.NET para pruebas de carga
 ms.date: 10/13/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,17 +9,18 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: b12588b4e2c22a638193b7f1b0bc48e5f7dab6b7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: a2a8b32ae161a2c3ba0f58c37e2a369b00db534e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379811"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963649"
 ---
-# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Cómo: Configurar el generador de perfiles ASP.NET para pruebas de carga mediante la configuración de pruebas en Visual Studio
+# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Procedimiento para configurar el generador de perfiles ASP.NET para pruebas de carga mediante la configuración de pruebas en Visual Studio
 
 Puede usar el adaptador de datos de diagnóstico del generador de perfiles ASP.NET para recopilar información del generador de perfiles ASP.NET. Este adaptador de datos de diagnóstico recopila datos de rendimiento de las aplicaciones ASP.NET.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > Este adaptador de datos de diagnóstico no se puede usar en las pruebas que se ejecutan con Microsoft Test Manager. Puede usar el adaptador de datos de diagnóstico del generador de perfiles ASP.NET con pruebas de carga que solo usan sitios web, para lo que se requiere Visual Studio Enterprise.
@@ -31,13 +32,9 @@ El adaptador de datos de diagnóstico del generador de perfiles ASP.NET permite 
 
 Para obtener más información, vea [Cómo: Crear una configuración de pruebas para una prueba de carga distribuida](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
 
-El procedimiento siguiente explica cómo configurar el adaptador de datos de diagnóstico del generador de perfiles ASP.NET.
-
-## <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>Para configurar el generador de perfiles ASP.NET para su configuración de pruebas
+## <a name="configure-the-aspnet-profiler-for-your-test-settings"></a>Ajustes del generador de perfiles ASP.NET para la configuración de pruebas
 
 Antes de seguir los pasos de este procedimiento, debe abrir la configuración de pruebas en Visual Studio y seleccionar la página **Datos y diagnósticos**.
-
-### <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>Para configurar el generador de perfiles ASP.NET para su configuración de pruebas
 
 1.  Seleccione el rol que se va a usar para recopilar los datos del generador de perfiles ASP.NET.
 

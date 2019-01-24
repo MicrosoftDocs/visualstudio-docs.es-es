@@ -16,15 +16,15 @@ dev_langs:
 - C++
 ms.assetid: 51893967-98c8-4141-ba40-03646f221760
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ba252c237c519f34ad407ab78997a02e87675fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9c4793747e85435b63361df03cdb011d38b214e6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241350"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51720785"
 ---
 # <a name="debug-html-css-and-javascript-sample-code"></a>Depurar código de ejemplo HTML, CSS y JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

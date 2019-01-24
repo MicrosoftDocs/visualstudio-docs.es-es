@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugframe:: Evaluate (método) | Documentos de Microsoft'
+title: Método Ijsdebugframe | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38e826048e85456ca63e069de67701b1fc3e9f04
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 574af7823add67a00fc8add922b5e352fa1b369c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727455"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091928"
 ---
 # <a name="ijsdebugframeevaluate-method"></a>IJsDebugFrame::Evaluate (Método)
 Evalúa una expresión en el contexto de este marco de pila.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT Evaluate(  
    LPCOLESTR pExpressionText,  
    IJsDebugProperty **ppDebugProperty,  
@@ -38,7 +38,7 @@ HRESULT Evaluate(
   
 #### <a name="parameters"></a>Parámetros  
  `pExpressionText`  
- [in] La expresión para evaluar.  
+ [in] Para evaluar la expresión.  
   
  `ppDebugProperty`  
  [out] Objeto que representa el Explorador de propiedades.  
@@ -49,7 +49,7 @@ HRESULT Evaluate(
 ## <a name="return-value"></a>Valor devuelto  
   
 ## <a name="remarks"></a>Comentarios  
- Devuelve lo siguiente: S_OK: evaluación se realiza correctamente, * ppDebugProperty contiene el resultado de la evaluación. S_FALSE: Evaluación produce un error (o no se admite la operación de evaluación), \*pError contiene el mensaje de error.  
+ Devuelve lo siguiente: S_OK: Evaluación es correcta, * ppDebugProperty contiene el resultado de la evaluación. S_FALSE: La evaluación produce un error (o no se admite la operación de evaluación), \*pError contiene el mensaje de error.  
   
 ## <a name="requirements"></a>Requisitos  
  **Encabezado:** jscript9diag.h  

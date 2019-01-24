@@ -1,9 +1,6 @@
 ---
 title: BPRESI_FIELDS | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BPRESI_FIELDS
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b25c979870b21b802cd3c32f02bc649347159857
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bad42049bf10b3b5e0f599ea5b043dd73cabc051
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908618"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931520"
 ---
 # <a name="bpresifields"></a>BPRESI_FIELDS
 Especifica la información que se va a recuperar sobre la resolución correcta de un punto de interrupción.  
@@ -28,7 +25,7 @@ Especifica la información que se va a recuperar sobre la resolución correcta d
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-enum enum_BPRESI_FIELDS {   
+enum enum_BPRESI_FIELDS {   
    BPRESI_BPRESLOCATION = 0x0001,  
    BPRESI_PROGRAM       = 0x0002,  
    BPRESI_THREAD        = 0x0004,  
@@ -38,7 +35,7 @@ typedef DWORD BPRESI_FIELDS;
 ```  
   
 ```csharp  
-public enum enum_BPRESI_FIELDS {   
+public enum enum_BPRESI_FIELDS {   
    BPRESI_BPRESLOCATION = 0x0001,  
    BPRESI_PROGRAM       = 0x0002,  
    BPRESI_THREAD        = 0x0004,  
@@ -69,7 +66,7 @@ public enum enum_BPRESI_FIELDS {
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   

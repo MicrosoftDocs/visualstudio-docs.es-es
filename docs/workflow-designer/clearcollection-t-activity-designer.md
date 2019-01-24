@@ -3,7 +3,6 @@ title: Diseñador de flujo de trabajo - ClearCollection<T> Diseñador de activid
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.ClearCollection`1.UI
 ms.assetid: db0e5da2-7b5a-4f1a-864c-f3aeeeeb51a7
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 026745a95f4f2a33d0647ff340eb7b1d3a0a92d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ba2fbaf22f7a27d4984ab49e4e8f93897da668ac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866706"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986536"
 ---
 # <a name="clearcollectiont-activity-designer"></a>ClearCollection\<T > Diseñador de actividad
 

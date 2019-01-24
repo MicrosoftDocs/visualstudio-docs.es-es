@@ -3,7 +3,6 @@ title: Funcionalidades de Dotfuscator
 ms.date: 10/10/2017
 ms.devlang: dotnet
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 keywords: Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, protección, community edition, ofuscación, .NET, gratuito, Visual Studio 2017
 helpviewer_keywords:
@@ -18,12 +17,12 @@ ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 44c99fd2a35ffbdb1db07ed1a63613dbe79dd61e
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: f7054eabf20da08bb22df080b0c737222b556483
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468185"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963902"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Funcionalidades de Dotfuscator
 
@@ -65,7 +64,7 @@ Muchos de estos métodos también se pueden usar para exigir [fechas límite de 
 
 <!-- Copyright © 2017 PreEmptive Solutions, LLC -->
 
-[assemblies]:  https://docs.microsoft.com/en-us/dotnet/standard/assembly-format
+[assemblies]:  https://docs.microsoft.com/dotnet/standard/assembly-format
 [uwp]:  https://www.preemptive.com/blog/article/856-uwp-applications-in-dotfuscator-ce/91-dotfuscator-ce
 [xamarin]:  https://www.preemptive.com/obfuscating-xamarin-with-dotfuscator
 

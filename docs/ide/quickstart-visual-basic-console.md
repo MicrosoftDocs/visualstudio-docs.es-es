@@ -1,10 +1,9 @@
 ---
-title: 'Inicio rápido: Crear la primera aplicación de consola en Visual Studio con Visual Basic'
+title: Creación de la primera aplicación de consola con Visual Basic
 description: Aprenda a crear una aplicación de consola Hello World sencilla en Visual Studio con Visual Basic, paso a paso.
-ms.custom: ''
 ms.date: 12/10/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
@@ -14,14 +13,14 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d75c178abdaae516b8694e9278d8df2007c2e1d
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 136a3b00b689bfcdac50464a0b0091a476b5b434
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42627042"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917035"
 ---
-# <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Inicio rápido: Crear la primera aplicación de consola en Visual Studio con Visual Basic
+# <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Inicio rápido: Creación de la primera aplicación de consola en Visual Studio con Visual Basic
 
 En esta introducción al entorno de desarrollo integrado (IDE) de Visual Studio, de entre 5 y 10 minutos, creará una sencilla aplicación de Visual Basic que se ejecuta en la consola.
 
@@ -91,4 +90,4 @@ Vamos a agregar código para pausar la aplicación y solicitar una entrada de us
 ¡Enhorabuena por completar este tutorial de inicio rápido! Esperamos que haya aprendido un poco sobre Visual Basic y el IDE de Visual Studio. Para obtener más información, continúe con el tutorial siguiente.
 
 > [!div class="nextstepaction"]
-> [Introducción a Visual Basic en Visual Studio](tutorial-visual-basic-console.md)
+> [Introducción a Visual Basic en Visual Studio](../get-started/visual-basic/tutorial-console.md)

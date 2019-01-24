@@ -1,8 +1,6 @@
 ---
 title: 'Vista Funciones: Datos de instrumentación de memoria de .NET | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Functions view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d48393a2d160e3691069a4b5f86dd814b63d935d
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: b578fd091b0b7473eb9e09e8c1eb13510c9e1b84
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237687"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53962339"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>Vista Funciones: Datos de instrumentación de memoria de .NET
 La vista Funciones de los datos de generación de perfiles de asignación de memoria de .NET que se recopilaron mediante el método de instrumentación enumera las funciones que asignaron memoria durante la generación de perfiles. Una fila de función indica el tamaño y el número de asignaciones y los datos de tiempo para la función.  

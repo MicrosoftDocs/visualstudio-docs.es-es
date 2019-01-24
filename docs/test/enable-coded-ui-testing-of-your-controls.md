@@ -1,26 +1,27 @@
 ---
-title: Habilitación de pruebas automatizadas de IU en los controles en Visual Studio
+title: Habilitar pruebas de IU codificadas en los controles
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6f71012cca199cbee90995be654a75c1abb7fa79
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 84eb09b26318b00e5c0ec6e1be6b04013696bccf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153568"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858726"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Habilitación de pruebas automatizadas de IU en los controles
 
 Para un control más estable, implemente compatibilidad con el marco de pruebas automatizadas de IU. Se pueden agregar niveles de compatibilidad de forma incremental. Para comenzar, admita la grabación, la reproducción y la validación de propiedades. A continuación, compile en base a eso para habilitar el generador de pruebas automatizadas de IU y que se reconozcan las propiedades personalizadas del control. Proporcione clases personalizadas para tener acceso a esas propiedades desde el código generado. También se puede ayudar al generador de pruebas de IU codificadas a capturar acciones de una manera que es próxima a la intención de la acción que se está registrando.
 
 ![CUIT&#95;completo](../test/media/cuit_full.png)
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a>Admitir la grabación, la reproducción y la validación de propiedades al implementar la accesibilidad
 

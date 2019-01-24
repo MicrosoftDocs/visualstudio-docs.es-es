@@ -1,9 +1,6 @@
 ---
 title: IDebugFunctionPosition2::GetFunctionName | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugFunctionPosition2::GetFunctionName
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f2a23ef8874ff6deaae55b7f3a6bce1982a5d90
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b9e06e8199e9cfe0c259b190817bf4b244b2727c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818723"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820178"
 ---
 # <a name="idebugfunctionposition2getfunctionname"></a>IDebugFunctionPosition2::GetFunctionName
 Obtiene el nombre de la función a la que apunta esta posición.  
@@ -28,7 +25,7 @@ Obtiene el nombre de la función a la que apunta esta posición.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT GetFunctionName(   
+HRESULT GetFunctionName(   
    BSTR* pbstrFunctionName  
 );  
 ```  

@@ -1,9 +1,6 @@
 ---
 title: Extender propiedades | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, providing support
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77b5861dd084098e561f3642b5738dd0279d4b52
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d03533679e367afb1f50ee55196c5d96e03ae580
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512114"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846590"
 ---
 # <a name="extend-properties"></a>Extender propiedades
 El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **propiedades** ventana es un explorador de propiedades universal para los componentes COM y COM + y admite todas [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] productos. El **propiedades** ventana funciona con `ITypeInfo` escriba la información y los metadatos de COM + para enumerar las propiedades de tiempo de diseño para el objeto seleccionado actualmente en otra ventana en el entorno de desarrollo integrado (IDE).  
@@ -66,4 +63,4 @@ Propiedades (ventana)
  Explica cómo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] administra con eficacia los elementos como las referencias, las conexiones de datos, carpetas y archivos necesarios para el desarrollo a través de soluciones y proyectos.  
   
  [Extender otras partes de Visual Studio](../../extensibility/extending-other-parts-of-visual-studio.md)  
- Explica cómo usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] servicios para crear elementos de interfaz de usuario que coinciden con el resto de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Explica cómo usar los servicios de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para crear elementos de interfaz de usuario que coincidan con el resto de servicios de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].

@@ -1,26 +1,27 @@
 ---
-title: 'Tutorial sobre cómo trabajar con Python, paso 4: depuración'
+title: Paso 4 del tutorial de Python en Visual Studio, Depuración
+titleSuffix: ''
 description: Paso 4 de un tutorial básico sobre las funcionalidades de Python en Visual Studio, que trata cómo ejecutar código de Python en el depurador.
-ms.date: 06/26/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b163a7e421e3713cb160f4d0274f736d5d977d7
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 7299765435cae99afedb176f0b8613d7b504b09f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513340"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931546"
 ---
-# <a name="step-4-run-code-in-the-debugger"></a>Paso 4: Ejecutar código en el depurador
+# <a name="step-4-run-code-in-the-debugger"></a>Paso 4: Ejecución de código en el depurador
 
-**Paso anterior: [Usar la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
+**Paso anterior: [Uso de la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
 
 Además de administrar proyectos, ofrecer una experiencia de edición enriquecida y la ventana **interactiva**, Visual Studio proporciona una depuración completa para el código Python. En el depurador, puede ejecutar el código paso a paso, incluida cada una de las iteraciones de un bucle. También puede pausar el programa cuando ciertas condiciones sean verdaderas. En cualquier momento en el que el programa esté pausado en el depurador, puede examinar el estado del programa completo y cambiar el valor de las variables. Estas acciones son esenciales para el seguimiento de los errores de programa y también proporcionan una ayuda muy útil para seguir con cuidado el flujo del programa exacto.
 

@@ -1,9 +1,6 @@
 ---
 title: Implementar una solución de Office mediante Windows Installer
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,17 +13,17 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], MSI
 - publishing Office solutions [Office development in Visual Studio], setup project
 - Office applications [Office development in Visual Studio], MSI
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 72c0c50ed119ae4f7ec3bfccbe191e273c768325
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 946a8dc884db4492e9bb557fa6000059d9912fd8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874922"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966056"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Implementar una solución de Office mediante Windows Installer
 Obtenga información sobre cómo crear un archivo de Windows Installer para la solución de Office mediante [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
@@ -528,11 +525,11 @@ Para modificar las propiedades personalizadas, crear un programa que quita la pe
 
 9. En la barra de menús, elija **compilar** > **compilar OfficeAddInSetup**.  
 
-   Una vez finalizada la compilación, puede buscar el *setup.exe* archivos de la **OfficeAddInSetup** proyecto en la siguiente ubicación: <em>OfficeAddInSetupProjectRoot</em> **\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\\**  
+   Una vez finalizada la compilación, puede buscar el *setup.exe* archivos de la **OfficeAddInSetup** proyecto en la siguiente ubicación: <em>OfficeAddInSetupProjectRoot</em>**\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\\**  
 
 
 ## <a name="see-also"></a>Vea también  
-[Requisitos previos de la solución de Office para implementación](http://msdn.microsoft.com/library/9f672809-43a3-40a1-9057-397ce3b5126e)  
+[Requisitos previos de la solución de Office para implementación](https://msdn.microsoft.com/library/9f672809-43a3-40a1-9057-397ce3b5126e)  
 [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)  
 [Entradas del registro para complementos de VSTO](../vsto/registry-entries-for-vsto-add-ins.md)  
 [Información general sobre propiedades de documento personalizadas](../vsto/custom-document-properties-overview.md)  

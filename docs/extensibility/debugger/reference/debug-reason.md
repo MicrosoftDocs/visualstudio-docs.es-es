@@ -1,9 +1,6 @@
 ---
 title: DEBUG_REASON | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - DEBUG_REASON
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f3fccdd43b7d26a5bb2dcc5799d77afff6614d1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5842b79e6dd38ed99a7a255b4164762b1dd1b68b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868370"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867355"
 ---
 # <a name="debugreason"></a>DEBUG_REASON
 Especifica por qué se inició el proceso para la depuración.  
@@ -28,18 +25,18 @@ Especifica por qué se inició el proceso para la depuración.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-enum enum_DEBUG_REASON {  
+enum enum_DEBUG_REASON {  
    DEBUG_REASON_ERROR         = 0,  
    DEBUG_REASON_USER_LAUNCHED = 1,  
    DEBUG_REASON_USER_ATTACHED = 2,  
    DEBUG_REASON_AUTO_ATTACHED = 3,  
    DEBUG_REASON_CAUSALITY     = 4  
 };  
-typedef DWORD DEBUG_REASON;  
+typedef DWORD DEBUG_REASON;  
 ```  
   
 ```csharp  
-public enum enum_DEBUG_REASON {  
+public enum enum_DEBUG_REASON {  
    DEBUG_REASON_ERROR         = 0,  
    DEBUG_REASON_USER_LAUNCHED = 1,  
    DEBUG_REASON_USER_ATTACHED = 2,  
@@ -70,7 +67,7 @@ public enum enum_DEBUG_REASON {
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   

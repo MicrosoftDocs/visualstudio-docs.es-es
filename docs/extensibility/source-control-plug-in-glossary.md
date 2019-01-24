@@ -1,9 +1,6 @@
 ---
-title: Glosario de complemento de Control de origen | Documentos de Microsoft
-ms.custom: ''
+title: Glosario del complemento de Control de origen | Documentos de Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
@@ -14,22 +11,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccfd4cbbbca86d3b6e93d9998410c5dea117328d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fdd9cd8ee037b376b086def1464888f1ae6e11f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139031"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826843"
 ---
-# <a name="source-control-plug-in-glossary"></a>Glosario de complemento de Control de código fuente
-Los siguientes términos útiles y las definiciones se refieren a la documentación del SDK de complemento de Control de código fuente.  
+# <a name="source-control-plug-in-glossary"></a>Glosario del complemento de control de código fuente
+Los siguientes términos útiles y definiciones se refieren a la documentación del SDK de complemento de Control de origen.  
   
 ## <a name="definitions"></a>Definiciones  
  Checkin  
  Cuando un usuario realiza cambios en una copia de trabajo, un usuario debe enviar los cambios desde la copia de trabajo en el repositorio de control de origen central. Esto crea una nueva revisión del archivo que está disponible para otros usuarios. Este proceso se denomina una protección.  
   
- Extracción del repositorio  
- El acto de solicitud de una copia de trabajo desde el repositorio, que informa el repositorio de la intención de modificarlo. Una copia de trabajo refleja el estado del proyecto hasta el momento en que se desprotege.  
+ Desprotección  
+ El acto de solicitar una copia de trabajo desde el repositorio, que informa el repositorio de su intención para modificarlo. Una copia de trabajo refleja el estado del proyecto hasta el momento en que lo tiene desprotegido.  
   
  Cliente  
  Un programa que usa el sistema de control de código fuente. En esta documentación, es el IDE de Visual Studio.  
@@ -38,34 +35,34 @@ Los siguientes términos útiles y las definiciones se refieren a la documentaci
  Un mensaje que describe los cambios que un usuario puede asociar a una revisión cuando se realiza una operación de control de código fuente.  
   
  Conflicto  
- Una situación cuando dos usuarios intentan proteger los cambios a la misma región del mismo archivo. Normalmente, se debe realizar una combinación.  
+ Una situación cuando dos usuarios intentan proteger cambios en la misma región del mismo archivo. Normalmente, se debe realizar una fusión mediante combinación.  
   
  Directorio  
- Una carpeta local del cliente se conoce como un directorio. Ésta es la copia en el que un usuario realiza cambios. Puede haber muchas copias de trabajo de un proyecto determinado; Generalmente, cada programador tiene su propia copia.  
+ Una carpeta local del cliente se conoce como un directorio. Ésta es la copia en el que un usuario realiza los cambios. Puede haber muchas copias de trabajo de un proyecto determinado; por lo general, cada desarrollador tiene su propia copia.  
   
  Obtener  
- Una operación get pone la copia de trabajo del usuario actualizada con la copia del repositorio. A diferencia de una desprotección, se realiza una operación get cuando el usuario simplemente necesita la copia más reciente, pero tiene intención de realizar ningún cambio.  
+ Una operación get aporta la copia de trabajo del usuario al día con la copia del repositorio. A diferencia de una desprotección, se realiza una operación get cuando el usuario simplemente necesita la copia más reciente, pero tiene la intención de realizar ningún cambio.  
   
  Historial  
- Normalmente es un resumen de todas las desprotecciones, protecciones, actualizaciones, etiquetas y versiones que se realiza en el repositorio de control de código fuente.  
+ Normalmente es un resumen de todas las desprotecciones, protecciones, actualizaciones, etiquetas y las versiones que se realiza en el repositorio de control de código fuente.  
   
  IDE  
- Normalmente, se hace referencia en el entorno de desarrollo integrado de Visual Studio. Sin embargo, también podría referirse a otros entornos de cliente que reconoce la API de complementos de Control de código fuente.  
+ Normalmente, se hace referencia en el entorno de desarrollo integrado de Visual Studio. Sin embargo, también podría referirse a otros entornos de cliente que reconocen la API de complemento de Control de código fuente.  
   
  Combinar  
- El proceso durante qué origen de dos o más archivos de código se combinan para formar un nuevo archivo que incorpora todas las características de los archivos anteriores. Este concepto es fundamental en el control de versiones en dos o más desarrolladores trabajan con archivos de forma simultánea.  
+ El proceso durante el origen de dos o más archivos de código se combinan para formar un nuevo archivo que incorpora todas las características de los archivos anteriores. Este concepto es fundamental en el control de versiones donde dos o más desarrolladores pueden trabaja en archivos al mismo tiempo.  
   
  Proyecto  
- Una carpeta de control de código fuente se conoce a menudo como un proyecto. Esto no tiene ninguna relación con los proyectos o soluciones en Visual Studio.  
+ Una carpeta de control de código fuente a menudo se conoce como un proyecto. Esto no tiene ninguna relación con los proyectos o soluciones en Visual Studio.  
   
  Complemento  
- Un archivo DLL que proporciona funcionalidad de control de código fuente mediante la implementación de la API de complementos de Control de código fuente.  
+ Un archivo DLL que proporciona funcionalidad de control de código fuente mediante la implementación de la API de complemento de Control de código fuente.  
   
  Repositorio  
- La copia maestra en un origen de control sistema almacena el historial de revisión completa de un proyecto. Cada proyecto tiene exactamente un repositorio.  
+ La copia maestra en un origen de sistema de control almacena el historial de revisión completa del proyecto. Cada proyecto tiene exactamente un repositorio.  
   
  Revisión  
- Un cambio confirmado en el historial de un archivo o conjunto de archivos. Una revisión es una instantánea en un proyecto cambian continuamente.  
+ Un cambio confirmado en el historial de un archivo o conjunto de archivos. Una revisión es una instantánea en un proyecto que cambia continuamente.  
   
 ## <a name="see-also"></a>Vea también  
  [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)

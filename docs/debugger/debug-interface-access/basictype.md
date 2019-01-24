@@ -1,8 +1,6 @@
 ---
 title: BasicType | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 61d63f20bb086190f6409d3eb4cd08c80689d10f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 891b83d6a43cb73fe8f38bb8b20201cbcfa230f6
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874025"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154087"
 ---
 # <a name="basictype"></a>BasicType
 Especifica el tipo básico del símbolo.  
@@ -27,7 +25,7 @@ Especifica el tipo básico del símbolo.
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-enum BasicType {   
+enum BasicType {   
    btNoType   = 0,  
    btVoid     = 1,  
    btChar     = 2,  
@@ -45,7 +43,7 @@ enum BasicType {
    btComplex  = 28,  
    btBit      = 29,  
    btBSTR     = 30,  
-   btHresult  = 31  
+   btHresult  = 31,  
    btChar16   = 32,  // char16_t
    btChar32   = 33,  // char32_t
 };  
@@ -114,5 +112,5 @@ enum BasicType {
   
 ## <a name="see-also"></a>Vea también  
  [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [Get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
+ [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
  [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)

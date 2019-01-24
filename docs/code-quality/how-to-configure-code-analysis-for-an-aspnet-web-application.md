@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: configurar el análisis de código para una aplicación Web ASP.NET en Visual Studio'
+title: Configurar análisis de código de aplicación Web de ASP.NET
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.asp
@@ -11,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: c924a866f1bb34f41664fbf62e372b77f4d2620e
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a781e918a925ebd43110339e03d528a4cf6b3c70
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178242"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853036"
 ---
-# <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Cómo: Configurar el análisis de código para una aplicación web ASP.NET
+# <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Procedimiento Configurar el análisis de código para una aplicación web ASP.NET
 
 En Visual Studio, puede seleccionar entre una lista de análisis de código *conjuntos de reglas* para aplicar a [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicación web. El conjunto de reglas predeterminado es Reglas mínimas recomendadas de Microsoft. Puede seleccionar otro conjunto de reglas para aplicar al sitio web.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugprocess:: CreateBreakpoint (método) | Documentos de Microsoft'
+title: Método Ijsdebugprocess | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10d734f32d092d341dbb1b02a5cc7a0c127223a4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 661e584133f4ec3c4e571d157a63844c5b1145b7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728125"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097570"
 ---
 # <a name="ijsdebugprocesscreatebreakpoint-method"></a>IJsDebugProcess::CreateBreakPoint (Método)
 Establece el punto de interrupción en la posición del documento especificada.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT CreateBreakPoint(  
    UINT64 documentId,  
    DWORD characterOffset,  

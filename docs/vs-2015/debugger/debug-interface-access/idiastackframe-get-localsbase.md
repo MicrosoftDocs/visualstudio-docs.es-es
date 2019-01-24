@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaStackFrame::get_localsBase method
 ms.assetid: eb0bd73e-d92d-468e-a0b1-fbc279919f54
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdaf5351913c16f1ae441ff2b5defd48377e82f6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0e90607fef84d508f220c514c3a04a9239b62968
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821505"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802075"
 ---
 # <a name="idiastackframegetlocalsbase"></a>IDiaStackFrame::get_localsBase
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera la dirección base de las variables locales del marco.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT get_localsBase (   
+HRESULT get_localsBase (   
    ULONGLONG* pRetVal  
 );  
 ```  

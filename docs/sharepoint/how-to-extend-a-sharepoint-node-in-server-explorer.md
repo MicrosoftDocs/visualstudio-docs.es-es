@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: Extender un nodo de SharePoint en el Explorador de servidores | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Extender un nodo de SharePoint en el Explorador de servidores | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f61afe90ed48064c79dd40c0c0975155c956e3e8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e39d108d78782413cd120e2a00b97f85784004b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861844"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940432"
 ---
-# <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>Cómo: Extender un nodo de SharePoint en el Explorador de servidores
+# <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>Procedimiento Extender un nodo de SharePoint en el Explorador de servidores
   Puede extender los nodos en el **conexiones de SharePoint** nodo **Explorador de servidores**. Esto es útil cuando desea agregar nuevos nodos secundarios, elementos de menú contextual o propiedades a un nodo existente. Para obtener más información, consulte [extender el nodo Conexiones de SharePoint en el Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
   
 ### <a name="to-extend-a-sharepoint-node-in-server-explorer"></a>Para extender un nodo en el Explorador de servidores de SharePoint  
@@ -52,7 +49,7 @@ ms.locfileid: "49861844"
   
 6.  En la implementación de la <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension.Initialize%2A> método, los miembros del uso de la *nodeType* parámetro para agregar características al nodo. Este parámetro es un <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeType> objeto que proporciona acceso a los eventos definidos en el <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents> interfaz. Por ejemplo, puede administrar los siguientes eventos:  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested>: Controle este evento para agregar nuevos nodos secundarios del nodo. Para obtener más información, consulte [Cómo: agregar un nodo de SharePoint personalizado al explorador de servidores](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md).  
+    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested>: Controle este evento para agregar nuevos nodos secundarios del nodo. Para obtener más información, vea [Cómo: Agregar un nodo de SharePoint personalizado al explorador de servidores](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md).  
   
     -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeMenuItemsRequested>: Controle este evento para agregar un elemento de menú contextual personalizado al nodo.  
   
@@ -85,8 +82,7 @@ ms.locfileid: "49861844"
  Para implementar el **Explorador de servidores** extensión, cree un [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] paquete de extensión (VSIX) para el ensamblado y otros archivos que desea distribuir con la extensión. Para obtener más información, consulte [implementar extensiones para las herramientas de SharePoint en Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Vea también
- [Cómo: agregar un nodo de SharePoint personalizado al explorador de servidores](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)   
+ [Cómo: Agregar un nodo de SharePoint personalizado al explorador de servidores](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)   
  [Extender el nodo Conexiones de SharePoint en el Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Tutorial: Extender el Explorador de servidores para mostrar elementos web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Asociar datos personalizados con extensiones de herramientas de SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)  
-  

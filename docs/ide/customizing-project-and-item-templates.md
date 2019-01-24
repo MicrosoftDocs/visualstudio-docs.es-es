@@ -1,8 +1,7 @@
 ---
-title: Personalización de plantillas de elementos y proyectos en Visual Studio
+title: Personalización de plantillas de proyecto y de elemento
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - customizing templates [Visual Studio]
@@ -10,12 +9,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ab2707de0b82d7e3af151c79ea5ee60e5869bfab
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8f52a948158ec4a48ee3c521c04c65f875156823
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571882"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864535"
 ---
 # <a name="customize-project-and-item-templates"></a>Personalización de plantillas de proyectos y elementos
 
@@ -35,13 +34,13 @@ Por ejemplo, puede realizar las tareas siguientes:
 
 - Personalizar los asistentes que crean proyectos a partir de plantillas.
 
-   Para obtener más información, vea [How to: Use Wizards with Project Templates (Extensibility)](../extensibility/how-to-use-wizards-with-project-templates.md) [Cómo usar asistentes con plantillas de proyecto (Extensibilidad)].
+   Para obtener más información, vea [Cómo: Usar asistentes con las plantillas de proyectos (extensibilidad)](../extensibility/how-to-use-wizards-with-project-templates.md).
 
 ## <a name="see-also"></a>Vea también
 
 - [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)
 - [Cómo: Solucionar problemas de plantillas](../ide/how-to-troubleshoot-templates.md)
 - [Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md)
-- [Cómo: Crear plantillas de elementos](../ide/how-to-create-item-templates.md)
+- [Cómo: Crear plantillas de elemento](../ide/how-to-create-item-templates.md)
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>

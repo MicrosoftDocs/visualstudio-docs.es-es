@@ -20,18 +20,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa3aaa197f392d300e8787d582314846e789f47
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 2d3f6b271eb6b9b663e30953fa597fb7d8cec6ac
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808797"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348531"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Cómo: Crear y editar configuraciones
 
 Se pueden crear configuraciones de compilación para una solución. Por ejemplo, se puede configurar una compilación de depuración que los evaluadores pueden utilizar para buscar y corregir problemas, y se pueden configurar diferentes tipos de compilaciones que se pueden distribuir a distintos clientes.
 
-[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Crear y editar configuraciones en Visual Studio para Mac](/visualstudio/mac/create-and-edit-configurations).
 
 ## <a name="create-build-configurations"></a>Crear configuraciones de compilación
 
@@ -127,3 +128,4 @@ En el cuadro de diálogo **Administrador de configuración**, puede usar la list
 - [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md)
 - [Compilar y limpiar proyectos y soluciones en Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Administración de propiedades de soluciones y proyectos](managing-project-and-solution-properties.md)
+- [Crear y editar configuraciones (Visual Studio para Mac)](/visualstudio/mac/create-and-edit-configurations)

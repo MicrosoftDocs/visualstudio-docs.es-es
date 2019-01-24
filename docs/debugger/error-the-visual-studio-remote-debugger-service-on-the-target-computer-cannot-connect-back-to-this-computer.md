@@ -1,8 +1,8 @@
 ---
-title: 'Error: El servicio del depurador remoto de Visual Studio en el equipo de destino no se puede conectar a este equipo | Documentos de Microsoft'
-ms.custom: ''
+title: 'Error: El servicio Visual Studio Remote Debugger del equipo de destino no se puede conectar a este equipo'
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.service_access_denied_oncallback
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cfd2db1e4bf5b87d12eb5d5ffcf94d06e142516
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 202d4f8f62aeb19836c30e76751d8a2c5b6f3033
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471757"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963294"
 ---
-# <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Error: El servicio del depurador remoto de Visual Studio del equipo de destino no se puede volver a conectar a este equipo
+# <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Error: El servicio Visual Studio Remote Debugger del equipo de destino no se puede conectar a este equipo
 Este error significa que el servicio del depurador remoto de Visual Studio se ejecuta con una cuenta de usuario que no se puede autenticar cuando intenta conectarse al equipo desde el que se realiza la depuración.  
   
  En la tabla siguiente se muestran las cuentas que pueden tener acceso al equipo:  
@@ -40,7 +40,7 @@ Este error significa que el servicio del depurador remoto de Visual Studio se ej
   
 -   La cuenta en la que se ejecuta el servicio del depurador remoto de Visual Studio debe ser una cuenta de administrador en el equipo remoto, de modo que éste pueda depurar cualquier proceso.  
   
--   La cuenta también necesita tener la `Log on as a service` con privilegios en el equipo remoto que está usando el **directiva de seguridad Local** herramienta administrativa.  
+-   La cuenta también necesita tener el privilegio `Log on as a service` en el equipo remoto que usa la herramienta administrativa **Directiva de seguridad local**.  
   
 -   Si está usando un acceso de cuenta local al equipo, debe ejecutar el servicio del depurador remoto de Visual Studio con una cuenta local.  
   
@@ -52,21 +52,21 @@ Este error significa que el servicio del depurador remoto de Visual Studio se ej
   
 ### <a name="to-add-log-on-as-a-service-privilege"></a>Para agregar el privilegio "Iniciar sesión como servicio"  
   
-1.  En el **iniciar** menú, elija **el Panel de Control**.  
+1.  En el menú **Inicio**, elija **Panel de control**.  
   
-2.  En el Panel de Control, elija **vista clásica**, si es necesario.  
+2.  En Panel de control, elija **Vista clásica** si es necesario.  
   
-3.  Haga doble clic en **herramientas administrativas**.  
+3.  Haga doble clic en **Herramientas administrativas**.  
   
-4.  En la ventana Herramientas administrativas, haga doble clic en **directiva de seguridad Local**.  
+4.  En la ventana Herramientas administrativas, haga doble clic en **Directiva de seguridad local**.  
   
-5.  En el **configuración de seguridad Local** ventana, expanda la **directivas locales** carpeta.  
+5.  En la ventana **Configuración de seguridad local**, expanda la carpeta **Directivas locales**.  
   
-6.  Haga clic en **asignación de derechos de usuario**.  
+6.  Haga clic en **Asignación de derechos de usuario**.  
   
-7.  En el **directiva** columna, haga doble clic en **iniciar sesión como un servicio** para ver las asignaciones actuales de la directiva de grupo locales en el **iniciar sesión como un servicio** cuadro de diálogo.  
+7.  En la columna **Directiva**, haga doble clic en **Iniciar sesión como servicio** para ver las asignaciones de directiva de grupo local en el cuadro de diálogo **Iniciar sesión como servicio**.  
   
-8.  Para agregar nuevos usuarios, haga clic en el **Agregar usuario o grupo** botón.  
+8.  Para agregar nuevos usuarios, haga clic en el botón **Agregar usuario o grupo**.  
   
 9. Cuando haya terminado de agregar usuarios, haga clic en **Aceptar**.  
   
@@ -75,5 +75,5 @@ Este error significa que el servicio del depurador remoto de Visual Studio se ej
 -   Ejecute el Monitor de depuración remota como aplicación en lugar de como servicio.  
   
 ## <a name="see-also"></a>Vea también  
- [Errores de depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Depuración remota](../debugger/remote-debugging.md)
+ [Errores de la depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+ [Remote Debugging](../debugger/remote-debugging.md)

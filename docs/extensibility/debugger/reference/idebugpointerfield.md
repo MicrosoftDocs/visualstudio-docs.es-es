@@ -1,9 +1,6 @@
 ---
 title: IDebugPointerField | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPointerField
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63ac5f4f7e357ba256d7a796654100480a34533a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7fc686af78b4ac787abef1c0c52309e82c47376b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116417"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947899"
 ---
 # <a name="idebugpointerfield"></a>IDebugPointerField
 Esta interfaz representa un tipo de puntero.  
@@ -45,12 +42,12 @@ IDebugPointerField : IDebugContainerField
 |[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|Devuelve un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que describe el destino del puntero.|  
   
 ## <a name="remarks"></a>Comentarios  
- En C o C++, un puntero puede ser un contenedor si se utiliza con una notación de matriz. Por ejemplo, si tenemos `char *pString`, `pString` tiene un tipo de puntero a `char`. `pString[3]` tiene el tipo de un contenedor que es un puntero a `char` que hace referencia el cuarto elemento de ese contenedor.  
+ En C/C ++, un puntero puede ser un contenedor si se usa con la notación de matriz. Por ejemplo, dada `char *pString`, `pString` tiene un tipo de puntero a `char`. `pString[3]` tiene el tipo de un contenedor que es un puntero a `char` que hace referencia al cuarto elemento de ese contenedor.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   

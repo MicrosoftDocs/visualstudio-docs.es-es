@@ -1,9 +1,6 @@
 ---
 title: Creación de instancias de proyecto mediante generadores de proyectos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project factories
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10b62093f85c51ee349386ec09470228d0194e9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1eefd53b82ef12c0ee2b374a320e049e620dcf5a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834000"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938127"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Crear instancias de proyecto mediante generadores de proyectos
 Tipos de proyecto de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilizar un *generador de proyectos* para crear instancias de objetos del proyecto. Un generador de proyectos es similar a un generador de clases estándar para los objetos COM cocreatable. Sin embargo, no son cocreatable; objetos del proyecto solo se pueden crear mediante el uso de un generador de proyectos.  
@@ -27,8 +24,6 @@ Tipos de proyecto de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)
  El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE llama implementado en el paquete de VS, cuando un usuario carga un proyecto existente o crea un nuevo proyecto en el generador de proyectos [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. El nuevo objeto de proyecto proporciona el IDE con la suficiente información para rellenar **el Explorador de soluciones**. El nuevo objeto de proyecto también proporciona las interfaces necesarias para admitir todas las acciones de interfaz de usuario pertinentes iniciadas por el IDE.  
   
  Puede implementar la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interfaz en una clase en el proyecto. Normalmente, se encuentra en su propio módulo.  
-  
- Para obtener un ejemplo de una implementación de la `IVsProjectFactory` interfaz, vea *PrjFac.cpp*, que está incluido en el [proyecto básico](https://www.microsoft.com/download/details.aspx?id=55984) directorio de ejemplo.  
   
  Los proyectos que admiten ser agregados por un propietario deben conservar una clave de propietario en el archivo de proyecto. Cuando el <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> método se llama en un proyecto con una clave de propietario, el proyecto propietario convierte su clave de propietario a un generador de proyectos, GUID, a continuación, llama a la `CreateProject` método en este generador de proyectos para realizar la creación real.  
   

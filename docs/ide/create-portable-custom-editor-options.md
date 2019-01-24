@@ -1,5 +1,5 @@
 ---
-title: Uso de la configuración de EditorConfig en Visual Studio
+title: Configuración de EditorConfig
 ms.date: 08/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,13 +8,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
-ms.openlocfilehash: 78f1c071469026b9e0e7d503483b7ddacc6d3cf1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2714972a292a9086bd8aa40e77aa3b65eefb8e5e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835909"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935364"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Crear opciones de configuración del editor personalizadas y portátiles con EditorConfig
 
@@ -23,6 +22,9 @@ En Visual Studio 2017, puede agregar un archivo [EditorConfig](http://editorconf
 La configuración de EditorConfig es compatible con varios IDE y editores de código, incluido Visual Studio. Es un componente portátil que acompaña al código y se pueden aplicar estilos de codificación incluso fuera de Visual Studio.
 
 Cuando se agrega un archivo EditorConfig al proyecto en Visual Studio, el formato del código existente no cambia a menos que se dé formato al documento (**Edición** > **Avanzado** > **Dar formato al documento** o **Ctrl**+**K**, **Ctrl**+**D** en el perfil predeterminado). Pero a las nuevas líneas de código se les aplicará formato según la configuración de EditorConfig. Puede definir qué configuración de EditorConfig quiere que se aplique con **Dar formato al documento** en la página de opciones [**Formato**](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [EditorConfig en Visual Studio para Mac](/visualstudio/mac/editorconfig).
 
 ## <a name="coding-consistency"></a>Coherencia del código
 
@@ -172,3 +174,4 @@ Para controlar el ámbito de las convenciones de EditorConfig, establezca la pro
 - [Compatibilidad de EditorConfig con un servicio de lenguaje](../extensibility/supporting-editorconfig.md)
 - [EditorConfig.org](http://editorconfig.org/)
 - [Características del editor de código](writing-code-in-the-code-and-text-editor.md)
+- [EditorConfig (Visual Studio para Mac)](/visualstudio/mac/editorconfig)

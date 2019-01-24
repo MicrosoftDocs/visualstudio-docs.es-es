@@ -16,19 +16,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7efb5170bf0314e95b1acded39a897c2236a29ff
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bef1f16ebcf678452f2fe4b0df3ade6350120f05
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733715"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094034"
 ---
 # <a name="jsdebugreadmemoryflags-enumeration"></a>Enumeración JsDebugReadMemoryFlags
 Marcas para especificar el comportamiento al leer la memoria.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 enum JsDebugReadMemoryFlags{   None = 0,   JsDebugAllowPartialRead= 0x1} JsDebugReadMemoryFlags;  
 ```  
   
@@ -38,7 +38,7 @@ enum JsDebugReadMemoryFlags{   None = 0,   JsDebugAllowPartialRead= 0x1} JsDebug
   
 |Nombre|Descripción|  
 |----------|-----------------|  
-|`JsDebugAllowPartialRead`|Indica que el llamador desea que lleve a cabo correctamente si sólo parte de la memoria de lectura se ha realizado correctamente la operación de lectura. Si se establece, solo se produce un error E_JsDEBUG_INVALID_MEMORY_ADDRESS si "Dirección" no es válido. Si esta marca está desactivada, se producirá un error de E_JsDEBUG_INVALID_MEMORY_ADDRESS si cualquier parte de la memoria solicitada es ilegible.|  
+|`JsDebugAllowPartialRead`|Indica que el llamador desea que la operación de lectura se realice correctamente si solo parte de la memoria de lectura se ha realizado correctamente. Si se establece, solo se produce un error E_JsDEBUG_INVALID_MEMORY_ADDRESS si 'Direcciones' no es válido. Si esta marca está desactivada, se generará un error E_JsDEBUG_INVALID_MEMORY_ADDRESS si cualquier parte de la memoria solicitada era ilegible.|  
 |`None`|Indica que el llamador desea el comportamiento predeterminado para ReadMemory.|  
   
 ## <a name="requirements"></a>Requisitos  

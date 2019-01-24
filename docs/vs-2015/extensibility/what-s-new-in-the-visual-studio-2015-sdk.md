@@ -13,12 +13,12 @@ ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0968dd4a66fc6130e8987fb7bf18a1ed064e2f0a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9ea99585913c5bf997d54a11f428fb168633b6e7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233342"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797473"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>¿Qué&#39;s en el SDK Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

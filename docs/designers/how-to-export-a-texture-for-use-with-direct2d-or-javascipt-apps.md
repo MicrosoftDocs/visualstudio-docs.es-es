@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: Exportar una textura para usarla con aplicaciones de Direct2D o Javascipt'
+title: Procedimiento Exportar una textura para usarla con aplicaciones de Direct2D o Javascipt
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c748e8b380da906ca9fb8fc8588efa6ffcc44980
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aad52a3ff4849702421303bdbaa3af8d1c073d87
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826387"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850851"
 ---
-# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Cómo: Exportar una textura para usarla con aplicaciones de Direct2D o Javascipt
+# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Procedimiento Exportar una textura para usarla con aplicaciones de Direct2D o Javascipt
 
 La canalización de contenido de la imagen puede generar texturas compatibles con las convenciones de representación internas de Direct2D. Las texturas de esta clase son adecuadas para su uso en aplicaciones que usan Direct2D y en aplicaciones para UWP creadas mediante JavaScript.
 
@@ -37,7 +36,7 @@ Este documento muestra estas actividades:
 
 Las texturas que se usan en el contexto de Direct2D deben cumplir estas convenciones de representación internas de Direct2D:
 
--   Direct2D implementa transparencia y translucidez mediante valores alfa premultiplicados. Las texturas usadas con Direct2D deben contener alfa premultiplicado, aunque la textura no use transparencia o translucidez. Para obtener más información sobre el alfa premultiplicado, vea [Cómo: Exportar una textura que tiene valores alfa previamente multiplicados](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).
+-   Direct2D implementa transparencia y translucidez mediante valores alfa premultiplicados. Las texturas usadas con Direct2D deben contener alfa premultiplicado, aunque la textura no use transparencia o translucidez. Para obtener más información sobre el valor alfa previamente multiplicado, vea [Cómo: Exportar una textura que tiene valores alfa previamente multiplicados](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).
 
 -   La textura se debe proporcionar en formato *.dds*, usando uno de estos formatos de compresión de bloques:
 
@@ -51,7 +50,7 @@ Las texturas que se usan en el contexto de Direct2D deben cumplir estas convenci
 
 ### <a name="to-create-a-texture-thats-compatible-with-direct2d-rendering-conventions"></a>Para crear una textura compatible con las convenciones de representación de Direct2D
 
-1. Comience con una textura básica. Cargue una imagen existente o cree una nueva como se describe en [Cómo: Crear una textura básica](../designers/how-to-create-a-basic-texture.md). Para admitir la compresión de bloques en formato de *.dds*, especifique una textura con un ancho y un alto que sean múltiplos de cuatro de tamaño, por ejemplo, 100x100, 128x128 o 256x192. Dado que los mapas MIP no se admiten, la textura no tiene que ser cuadrada y no tiene que ser potencia de dos de tamaño.
+1. Comience con una textura básica. Cargue una imagen existente o cree una como se explica en [Cómo: Crear una textura básica](../designers/how-to-create-a-basic-texture.md). Para admitir la compresión de bloques en formato de *.dds*, especifique una textura con un ancho y un alto que sean múltiplos de cuatro de tamaño, por ejemplo, 100x100, 128x128 o 256x192. Dado que los mapas MIP no se admiten, la textura no tiene que ser cuadrada y no tiene que ser potencia de dos de tamaño.
 
 2. Configure el archivo de textura para que sea procesado por la canalización de contenido de imagen. En el **Explorador de soluciones**, abra el menú contextual del archivo de textura que acaba de crear y seleccione **Propiedades**. En la página **Propiedades de configuración** > **General**, establezca la propiedad **Tipo de elemento** en **Canalización de contenido de la imagen**. Asegúrese de que la propiedad **Contenido** esté establecida en **Sí** y **Excluir de la compilación** esté establecido en **No**, y, después, seleccione el botón **Aplicar**. Aparece la página de propiedades de configuración de **Canalización de contenido de la imagen**.
 

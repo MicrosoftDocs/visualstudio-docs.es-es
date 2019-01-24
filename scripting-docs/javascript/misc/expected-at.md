@@ -1,5 +1,5 @@
 ---
-title: Se esperaba &#39;@&#39; | Documentos de Microsoft
+title: Se esperaba ' @' | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f007129aa8da3ac49112fbc83b7abd31e4356c4f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 73e7e8fb43bb45e4c97b6bb5ec6c739c16a4423a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856852"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349865"
 ---
-# <a name="expected-3939"></a>Se esperaba &#39;@&#39;
+# <a name="expected-"></a>Se esperaba '@'
 Se intentó crear una variable para su uso con instrucciones de compilación condicional mediante el `@set` instrucción, pero no realizó una arroba "**@**" antes del nombre de variable.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  

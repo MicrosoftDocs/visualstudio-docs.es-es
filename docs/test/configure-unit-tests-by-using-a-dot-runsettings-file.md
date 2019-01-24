@@ -2,19 +2,18 @@
 title: Configuración de pruebas unitarias con un archivo .runsettings
 ms.date: 02/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 935c1ebfb2efd888de5b336eafab4059fa6cd443
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 98e3de01bd5a12c842298ef6b923c232c0660977
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903561"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398278"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configuración de pruebas unitarias con un archivo *.runsettings*
 
@@ -78,7 +77,7 @@ El siguiente XML muestra el contenido de un archivo *.runsettings* típico. Cada
     <ResultsDirectory>.\TestResults</ResultsDirectory>
 
     <!-- x86 or x64 -->
-    <!-- You can also change it from menu Test > Test Settings > Default Processor Architecture -->
+    <!-- You can also change it from the top-level menu Test > Test Settings > Processor Architecture for AnyCPU Projects -->
     <TargetPlatform>x86</TargetPlatform>
 
     <!-- Framework35 | [Framework40] | Framework45 -->

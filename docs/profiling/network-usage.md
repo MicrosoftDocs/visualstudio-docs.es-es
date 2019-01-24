@@ -1,8 +1,7 @@
 ---
-title: Análisis del uso de la red en aplicaciones UWP en Visual Studio | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Análisis del uso de la red en aplicaciones UWP
+ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 45fa397d-d7a1-4c4c-9c97-ede6c21643bd
 author: mikejo5000
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d620ae0f93b2bbcee66419cfe9ff5e76e470c5f0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 195353903ca9f9db8142a6909f3a2a6bab15b4aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918888"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822828"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Análisis del uso de la red en aplicaciones UWP
 La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de las operaciones de red realizadas mediante la [Windows.Web.Http API](/uwp/api/windows.web.http). Analizar los datos puede ayudarle a resolver problemas como los problemas de acceso y autenticación, uso incorrecto de la caché y rendimiento deficiente de visualización y descarga.  
@@ -23,7 +22,7 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
  La herramienta Red admite solo las aplicaciones UWP. En este momento no se admiten otras plataformas.  
   
 > [!NOTE]
->  Para obtener una descripción más completa de la herramienta Red, vea [Presentación de la herramienta de red de Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studios-network-tool.aspx).  
+>  Para obtener una descripción más completa de la herramienta Red, vea [Presentación de la herramienta de red de Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2015/05/04/introducing-visual-studios-network-tool/).  
   
 ## <a name="collect-network-tool-data"></a>Recopilar datos de la herramienta de red  
  Debería ejecutar la herramienta **Red** con un proyecto de Visual Studio abierto en el equipo de Visual Studio.  
@@ -74,7 +73,7 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
   
 ## <a name="see-also"></a>Vea también  
  [Ejecución de herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  
- [Blog de Visual Studio: presentación del inspector de red de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [Vídeo de Channel 9: Herramientas de diagnóstico de VS: nuevo generador de perfiles de red](http://channel9.msdn.com/Series/ConnectOn-Demand/206)  
+ [Visual Studio blog: Introducing Visual Studio's network inspector](http://go.microsoft.com/fwlink/?LinkId=535022)  (Blog de Visual Studio: Introducción al inspector de red de Visual Studio)  
+ [Vídeo de Channel 9: VS diagnostics tools - new Network Profiler](https://channel9.msdn.com/Series/ConnectOn-Demand/206) (Herramientas de diagnóstico de VS: nuevo generador de perfiles de red)  
  [Generación de perfiles en Visual Studio](../profiling/index.md)  
  [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)

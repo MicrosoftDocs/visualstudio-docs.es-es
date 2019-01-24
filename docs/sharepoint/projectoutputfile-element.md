@@ -1,9 +1,6 @@
 ---
 title: ProjectOutputFile (elemento) | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 99f8173da22f631a1be74c18d4312f74958259e9
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: ea476c2d2b73ec9c59f7d3f7cfbc9a0b0cab5bd7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119458"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948620"
 ---
 # <a name="projectoutputfile-element"></a>ProjectOutputFile (elemento)
   Representa la salida de un proyecto independiente para incluir con el elemento de proyecto cuando se implementa en SharePoint.  
@@ -74,4 +71,3 @@ ms.locfileid: "37119458"
  [Referencia de esquemas de elemento de proyecto de SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [Proporcionar información de empaquetado e implementación de elementos de proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
  [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

@@ -14,22 +14,22 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6cc105d20ea3a1faf09fd75bcbf9e38cd5fdc833
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bcdfb4640e88289b02f2f8813c39b66eaad3827d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924569"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889428"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Crear un control de usuario de Windows Forms que admita el enlace de datos de búsqueda
-Cuando muestra datos en Windows Forms, puede elegir controles existentes en el **cuadro de herramientas**, o puede crear controles personalizados si la aplicación requiere funcionalidad no está disponible en los controles estándar. En este tutorial se muestra cómo crear un control que implementa <xref:System.ComponentModel.LookupBindingPropertiesAttribute>. Los controles que implementan <xref:System.ComponentModel.LookupBindingPropertiesAttribute> pueden contener tres propiedades que se pueden enlazar a los datos. Tales controles son similares a <xref:System.Windows.Forms.ComboBox>.
 
- Para obtener más información sobre la creación de controles, vea [controla el desarrollo de Windows Forms en tiempo de diseño](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).
+Cuando muestra datos en formularios Windows Forms, puede elegir controles existentes en el **Cuadro de herramientas** o puede crear controles personalizados si la aplicación requiere funcionalidad que no está disponible en los controles estándar. En este tutorial se muestra cómo crear un control que implementa <xref:System.ComponentModel.LookupBindingPropertiesAttribute>. Los controles que implementan <xref:System.ComponentModel.LookupBindingPropertiesAttribute> pueden contener tres propiedades que se pueden enlazar a los datos. Tales controles son similares a <xref:System.Windows.Forms.ComboBox>.
 
- Al crear controles para usarlos en escenarios de enlace de datos, es necesario implementar uno de los atributos de enlace de datos siguientes:
+Para obtener más información sobre la creación de controles, vea [controla el desarrollo de Windows Forms en tiempo de diseño](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).
+
+Al crear controles para usarlos en escenarios de enlace de datos, es necesario implementar uno de los atributos de enlace de datos siguientes:
 
 |Uso de atributos de enlace de datos|
 | - |
@@ -37,13 +37,13 @@ Cuando muestra datos en Windows Forms, puede elegir controles existentes en el *
 |Implemente el <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> en controles, como <xref:System.Windows.Forms.DataGridView>, que muestra listas (o tablas) de datos. Para obtener más información, consulte [crear un control de usuario de Windows Forms que admita el enlace de datos complejos](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|
 |Implemente el <xref:System.ComponentModel.LookupBindingPropertiesAttribute> en controles, como <xref:System.Windows.Forms.ComboBox>, que muestren listas (o tablas) de datos pero que también necesiten presentar una única columna o propiedad. (Este proceso se describe en esta página del tutorial.)|
 
- Este tutorial crea un control de búsqueda que se enlaza a los datos de dos tablas. En este ejemplo se utilizan las tablas `Customers` y `Orders` de la base de datos de ejemplo Northwind. El control de búsqueda está enlazado a la `CustomerID` arrastrándolo desde la `Orders` tabla. Usa este valor para buscar el `CompanyName` desde el `Customers` tabla.
+Este tutorial crea un control de búsqueda que se enlaza a los datos de dos tablas. En este ejemplo se utilizan las tablas `Customers` y `Orders` de la base de datos de ejemplo Northwind. El control de búsqueda está enlazado a la `CustomerID` arrastrándolo desde la `Orders` tabla. Usa este valor para buscar el `CompanyName` desde el `Customers` tabla.
 
- Durante este tutorial aprenderá a:
+Durante este tutorial, obtendrá información sobre cómo:
 
--   Cree un nuevo **aplicación de Windows Forms**.
+-   Crear una nueva **aplicación de Windows Forms**.
 
--   Agregue un nuevo **Control de usuario** al proyecto.
+-   Agregue un nuevo **Control de usuario** a su proyecto.
 
 -   Diseñe visualmente el control de usuario.
 
@@ -51,7 +51,7 @@ Cuando muestra datos en Windows Forms, puede elegir controles existentes en el *
 
 -   Crear un conjunto de datos con el **configuración origen de datos** asistente.
 
--   Establecer el **CustomerID** columna en el **pedidos** de tabla, en el **orígenes de datos** ventana, para utilizar el nuevo control.
+-   Establezca la columna **CustomerID** de la tabla **Pedidos** en la ventana **Orígenes de datos** para utilizar el nuevo control.
 
 -   Cree un formulario para mostrar los datos en el nuevo control.
 
@@ -73,10 +73,9 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
 
        Después de un breve tiempo, finalice la consulta y se crea la base de datos Northwind.
 
-## <a name="create-a-windows-forms-application"></a>Crear una aplicación de Windows Forms
- El primer paso es crear un **aplicación de Windows Forms**.
+## <a name="create-a-windows-forms-app-project"></a>Crear un proyecto de aplicación de Windows Forms
 
-#### <a name="to-create-the-new-windows-project"></a>Para crear el nuevo proyecto de Windows
+El primer paso es crear un **aplicación de Windows Forms** proyecto.
 
 1. En Visual Studio, en el **archivo** menú, seleccione **New** > **proyecto**.
 
@@ -86,31 +85,27 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
 
 4. Denomine el proyecto **LookupControlWalkthrough**y, a continuación, elija **Aceptar**.
 
-     El **LookupControlWalkthrough** se crea y agrega al proyecto **el Explorador de soluciones**.
+     El proyecto **LookupControlWalkthrough** se crea y se agrega al **Explorador de soluciones**.
 
-## <a name="add-a-user-control-to-the-project"></a>Agregue un control de usuario al proyecto
- Este tutorial crea un control de búsqueda de un **Control de usuario**, por tanto, agregue un **Control de usuario** elemento a la **LookupControlWalkthrough** proyecto.
+## <a name="add-a-user-control-to-the-project"></a>Agregar un control de usuario al proyecto
 
-#### <a name="to-add-a-user-control-to-the-project"></a>Para agregar un control de usuario al proyecto
+Este tutorial crea un control de búsqueda a partir de un **Control de usuario**, por lo que debe agregar un elemento **Control de usuario** al proyecto **LookupControlWalkthrough**.
 
-1.  Desde el **proyecto** menú, seleccione **agregar Control de usuario**.
+1.  En el menú **Proyecto**, elija **Agregar control de usuario**.
 
 2.  Tipo `LookupBox` en el **nombre** área y, a continuación, haga clic en **agregar**.
 
-     El **LookupBox** se agrega al control **el Explorador de soluciones**y se abre en el diseñador.
+     El control **LookupBox** se agrega al **Explorador de soluciones** y se abre en el diseñador.
 
 ## <a name="design-the-lookupbox-control"></a>Diseñar el control LookupBox
 
-#### <a name="to-design-the-lookupbox-control"></a>Para diseñar el control LookupBox
-
--   Arrastre un <xref:System.Windows.Forms.ComboBox> desde el **cuadro de herramientas** hasta la superficie de diseño del control de usuario.
+Para diseñar el control LookupBox, arrastre un <xref:System.Windows.Forms.ComboBox> desde el **cuadro de herramientas** hasta la superficie de diseño del control de usuario.
 
 ## <a name="add-the-required-data-binding-attribute"></a>Agregue el atributo de enlace de datos requerido
- Para controles de búsqueda que admiten el enlace de datos, puede implementar <xref:System.ComponentModel.LookupBindingPropertiesAttribute>.
 
-#### <a name="to-implement-the-lookupbindingproperties-attribute"></a>Para implementar el atributo LookupBindingProperties
+Para controles de búsqueda que admiten el enlace de datos, puede implementar <xref:System.ComponentModel.LookupBindingPropertiesAttribute>.
 
-1.  Cambiar el **LookupBox** control a la vista código. (En el **vista** menú, elija **código**.)
+1.  Cambie el control **LookupBox** a vista de código. (En el menú **Ver**, elija **Código**.)
 
 2.  Reemplace el código de `LookupBox` por lo siguiente:
 
@@ -120,75 +115,68 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
 3.  En el menú **Compilar** , elija **Compilar solución**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Crear un origen de datos de la base de datos
-Este paso crea un origen de datos utilizando el **configuración origen de datos** asistente, según la `Customers` y `Orders` tablas en la base de datos de ejemplo Northwind.
 
-#### <a name="to-create-the-data-source"></a>Para crear el origen de datos
+En este paso se crea un origen de datos utilizando el **Asistente para configuración de orígenes de datos** basado en las tablas `Customers` y `Orders` de la base de datos de ejemplo Northwind.
 
-1.  En el menú **Datos** , haga clic en **Mostrar orígenes de datos**.
+1.  Para abrir el **orígenes de datos** ventana, en el **datos** menú, haga clic en **Mostrar orígenes de datos**.
 
-2.  En el **orígenes de datos** ventana, seleccione **Agregar nuevo origen de datos** para iniciar el **configuración origen de datos** asistente.
+2.  En la ventana **Orígenes de datos**, seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
 
 3.  Seleccione **Base de datos** en la página **Elegir un tipo de datos de origen** y luego haga clic en **Siguiente**.
 
-4.  En el **elegir la conexión de datos** realice página uno de los siguientes:
+4.  En la página **Elegir la conexión de datos** realice una de las siguientes operaciones:
 
     -   Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.
 
-    -   Seleccione **nueva conexión** para iniciar el **agregar o modificar conexión** cuadro de diálogo.
+    -   Seleccione **Nueva conexión** para iniciar el cuadro de diálogo **Agregar o modificar conexión**.
 
-5.  Si la base de datos requiere una contraseña, seleccione la opción para incluir datos confidenciales y, a continuación, haga clic en **siguiente**.
+5.  Si su base de datos requiere una contraseña, seleccione la opción para incluir datos confidenciales y haga clic en **Siguiente**.
 
-6.  En el **Guardar cadena de conexión en el archivo de configuración de la aplicación** página, haga clic en **siguiente**.
+6.  Haga clic en **Siguiente** en la página **Guardar la cadena de conexión en el archivo de configuración de la aplicación**.
 
-7.  En el **elija los objetos de base de datos** , expanda el **tablas** nodo.
+7.  Expanda el nodo **Tablas** en la página **Elija los objetos de base de datos**.
 
-8.  Seleccione el `Customers` y `Orders` tablas y, a continuación, haga clic en **finalizar**.
+8.  Seleccione las tablas `Customers` y `Orders` y después haga clic en **Finalizar**.
 
-     El **NorthwindDataSet** se agrega al proyecto y el `Customers` y `Orders` tablas aparecen en la **orígenes de datos** ventana.
+     **NorthwindDataSet** se agrega al proyecto y las tablas `Customers` y `Orders` aparecen en la ventana **Orígenes de datos**.
 
 ## <a name="set-the-customerid-column-of-the-orders-table-to-use-the-lookupbox-control"></a>Establezca la columna CustomerID de la tabla Orders para utilizar el control LookupBox
- Dentro de la **orígenes de datos** ventana, puede establecer el control que se creará antes de arrastrar elementos al formulario.
 
-#### <a name="to-set-the-customerid-column-to-bind-to-the-lookupbox-control"></a>Para establecer la columna CustomerID para enlazarse al control LookupBox
+Dentro de la ventana **Orígenes de datos** puede establecer el control que se va a crear antes de arrastrar elementos a un formulario.
 
 1.  Abra **Form1** en el diseñador.
 
-2.  Expanda el **clientes** nodo en el **orígenes de datos** ventana.
+2.  Expanda el nodo **Customers** en la ventana **Orígenes de datos**.
 
-3.  Expanda el **pedidos** nodo (en el **clientes** nodo debajo el **Fax** columna).
+3.  Expanda el nodo **Orders** (incluido en el nodo **Customers** debajo de la columna **Fax**).
 
-4.  Haga clic en la flecha de lista desplegable el **pedidos** nodo y elija **detalles** desde la lista de control.
+4.  Haga clic en la flecha de lista desplegable en el nodo **Orders** y elija **Detalles** de la lista de control.
 
-5.  Haga clic en la flecha de lista desplegable el **CustomerID** columna (en el **pedidos** nodo) y elija **personalizar**.
+5.  Haga clic en la flecha de lista desplegable en la columna **CustomerID** (del nodo **Orders**) y elija **Personalizar**.
 
-6.  Seleccione el **LookupBox** en la lista de **controles asociados** en el **opciones de personalización de la interfaz de usuario de datos** cuadro de diálogo.
+6.  Seleccione **LookupBox** de la lista de **Controles asociados** en el cuadro de diálogo **Opciones de personalización de la interfaz de usuario de datos**.
 
 7.  Haga clic en **Aceptar**.
 
-8.  Haga clic en la flecha de lista desplegable el **CustomerID** columna y elija **LookupBox**.
+8.  Haga clic en la flecha de lista desplegable en la columna **CustomerID** y elija **LookupBox**.
 
 ## <a name="add-controls-to-the-form"></a>Agregar controles al formulario
- Puede crear los controles enlazados a datos arrastrando elementos desde la **orígenes de datos** ventana **Form1**.
 
-#### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Para crear controles enlazados en el Windows Form
+Puede crear los controles enlazados a datos arrastrando elementos desde la ventana **Orígenes de datos** al **Form1**.
 
--   Arrastre el **pedidos** nodo desde el **orígenes de datos** ventana hasta el formulario de Windows y compruebe que la **LookupBox** control se usa para mostrar los datos en el `CustomerID` columna.
+Para crear controles enlazados a datos en el formulario de Windows, arrastre el **pedidos** nodo desde el **orígenes de datos** ventana hasta el formulario de Windows y compruebe que la **LookupBox** control es utilizado para mostrar los datos en la `CustomerID` columna.
 
 ## <a name="bind-the-control-to-look-up-companyname-from-the-customers-table"></a>Enlazar el control para buscar CompanyName desde la tabla Customers
 
-#### <a name="to-setup-the-lookup-bindings"></a>Para configurar los enlaces de búsqueda
+Para configurar los enlaces de búsqueda, seleccione el método main **clientes** nodo en el **orígenes de datos** ventana y arrastre en el cuadro combinado del cuadro en el **CustomerIDLookupBox** en **Form1**.
 
--   Seleccione el método main **clientes** nodo en el **orígenes de datos** ventana y arrastre en el cuadro combinado del cuadro de la **CustomerIDLookupBox** en **Form1** .
+Así configura el enlace de datos para mostrar el valor `CompanyName` de la tabla `Customers` a la vez que mantiene el valor `CustomerID` de la tabla `Orders`.
 
-     Esto configura el enlace de datos para mostrar el `CompanyName` desde el `Customers` tabla manteniendo el `CustomerID` valor desde el `Orders` tabla.
-
-## <a name="running-the-application"></a>Ejecutar la aplicación
-
-#### <a name="to-run-the-application"></a>Para ejecutar la aplicación
+## <a name="run-the-application"></a>Ejecutar la aplicación
 
 -   Presione **F5** para ejecutar la aplicación.
 
--   Navegue por algunos registros y compruebe que la `CompanyName` aparece en el `LookupBox` control.
+-   Navegue por algunos registros y compruebe que `CompanyName` aparece en el control `LookupBox`.
 
 ## <a name="see-also"></a>Vea también
 

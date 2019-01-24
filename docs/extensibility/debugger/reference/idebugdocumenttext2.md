@@ -1,9 +1,6 @@
 ---
 title: IDebugDocumentText2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDocumentText2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0dc8344e19f422e65439aae6bafe12e3f62bee4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cae0bfefe4ab39d42f9cc67080d17394b1a1418b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107834"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838429"
 ---
 # <a name="idebugdocumenttext2"></a>IDebugDocumentText2
 Esta interfaz representa un documento de texto.  
@@ -28,11 +25,11 @@ Esta interfaz representa un documento de texto.
 ## <a name="syntax"></a>Sintaxis  
   
 ```  
-IDebugDocumentText2 : IDebugDocument2  
+IDebugDocumentText2 : IDebugDocument2  
 ```  
   
 ## <a name="notes-for-implementers"></a>Notas para los implementadores  
- Un motor de depuración (Alemania) implementa esta interfaz cuando el código fuente que debe proporcionar está en formato de texto. Puesto que este es el caso más habitual, si implementa un Alemania la [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interfaz, esta debería implementar también el `IDebugDocumentText2` interfaz.  
+ Un motor de depuración (DE) implementa esta interfaz cuando es el código fuente que debe proporcionar en forma de texto. Puesto que es el caso más habitual, si implementa a DE la [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interfaz, también debe implementar la `IDebugDocumentText2` interfaz.  
   
 ## <a name="notes-for-callers"></a>Notas para los llamadores  
  Use la `QueryInterface` método para obtener esta interfaz desde un `IDebugDocument2` interfaz.  
@@ -46,12 +43,12 @@ IDebugDocumentText2 : IDebugDocument2
 |[GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)|Recupera el texto de la posición especificada en el documento.|  
   
 ## <a name="remarks"></a>Comentarios  
- Un objeto que implementa esta interfaz también debe implementar la <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> de la interfaz, que proporciona el <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> interfaz para un [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md) objeto.  
+ Un objeto que implementa esta interfaz debe implementar también la <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> interfaz, que proporciona el <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> interfaz para un [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md) objeto.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   

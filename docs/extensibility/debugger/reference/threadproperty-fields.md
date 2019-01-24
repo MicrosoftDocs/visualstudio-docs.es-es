@@ -1,9 +1,6 @@
 ---
 title: THREADPROPERTY_FIELDS | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - THREADPROPERTY_FIELDS
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44692c4715db3db8f65a85bd66a129b4d17e5138
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0d4b20621d186cf9e14538d7378a84e25c739929
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855552"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887349"
 ---
 # <a name="threadpropertyfields"></a>THREADPROPERTY_FIELDS
 Especifica qué información acerca de un subproceso que se va a recuperar.  
@@ -28,7 +25,7 @@ Especifica qué información acerca de un subproceso que se va a recuperar.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-enum enum_THREADPROPERTY_FIELDS {   
+enum enum_THREADPROPERTY_FIELDS {   
    TPF_ID           = 0x0001,  
    TPF_SUSPENDCOUNT = 0x0002,  
    TPF_STATE        = 0x0004,  
@@ -41,7 +38,7 @@ typedef DWORD THREADPROPERTY_FIELDS;
 ```  
   
 ```csharp  
-public enum enum_THREADPROPERTY_FIELDS {   
+public enum enum_THREADPROPERTY_FIELDS {   
    TPF_ID           = 0x0001,  
    TPF_SUSPENDCOUNT = 0x0002,  
    TPF_STATE        = 0x0004,  
@@ -84,7 +81,7 @@ public enum enum_THREADPROPERTY_FIELDS {
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   

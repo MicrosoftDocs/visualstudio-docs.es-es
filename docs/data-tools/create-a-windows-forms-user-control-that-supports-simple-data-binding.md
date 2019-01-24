@@ -13,19 +13,18 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4b6bf3a790d1e6d8d4165bb489176010a43e7c19
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 9f1390e0d2d69bb46ffad6f1ac426eabd43aeea2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925092"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824930"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Crear un control de usuario de Windows Forms que admita el enlace de datos simple
 
-Cuando muestra datos en formularios de aplicaciones de Windows, puede elegir controles existentes en el **cuadro de herramientas**, o puede crear controles personalizados si la aplicación requiere funcionalidad que no está disponible en los controles estándar. En este tutorial se muestra cómo crear un control que implementa <xref:System.ComponentModel.DefaultBindingPropertyAttribute>. Los controles que implementan <xref:System.ComponentModel.DefaultBindingPropertyAttribute> pueden contener una propiedad que se puede enlazar a datos. Tales controles son similares a <xref:System.Windows.Forms.TextBox> o <xref:System.Windows.Forms.CheckBox>.
+Cuando muestra datos en formularios de las aplicaciones Windows, puede elegir controles existentes en el **Cuadro de herramientas** o crear controles personalizados si la aplicación requiere funcionalidad que no está disponible en los controles estándar. En este tutorial se muestra cómo crear un control que implementa <xref:System.ComponentModel.DefaultBindingPropertyAttribute>. Los controles que implementan <xref:System.ComponentModel.DefaultBindingPropertyAttribute> pueden contener una propiedad que se puede enlazar a datos. Tales controles son similares a <xref:System.Windows.Forms.TextBox> o <xref:System.Windows.Forms.CheckBox>.
 
 Para obtener más información sobre la creación de controles, vea [desarrollar controles de Windows Forms en tiempo de diseño](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).
 
@@ -41,9 +40,9 @@ En este tutorial se crea un control simple que muestra los datos de una sola col
 
 Durante este tutorial aprenderá a:
 
--   Cree un nuevo **aplicación de Windows Forms**.
+-   Crear una nueva **aplicación de Windows Forms**.
 
--   Agregue un nuevo **Control de usuario** al proyecto.
+-   Agregue un nuevo **Control de usuario** a su proyecto.
 
 -   Diseñe visualmente el control de usuario.
 
@@ -51,7 +50,7 @@ Durante este tutorial aprenderá a:
 
 -   Crear un conjunto de datos con el **configuración origen de datos** asistente.
 
--   Establecer el **teléfono** columna en el **orígenes de datos** ventana para utilizar el nuevo control.
+-   Establezca la columna **Phone** de la ventana **Orígenes de datos** de forma que se use el nuevo control.
 
 -   Cree un formulario para mostrar los datos en el nuevo control.
 
@@ -85,33 +84,33 @@ El primer paso es crear un **aplicación de Windows Forms**:
 
 4. Denomine el proyecto **Tutorialdecontrolsimple**y, a continuación, elija **Aceptar**.
 
-     El **Tutorialdecontrolsimple** se crea y agrega al proyecto **el Explorador de soluciones**.
+     El proyecto **TutorialDeControlSimple** se crea y se agrega al **Explorador de soluciones**.
 
-## <a name="add-a-user-control-to-the-project"></a>Agregue un control de usuario al proyecto
+## <a name="add-a-user-control-to-the-project"></a>Agregar un control de usuario al proyecto
 
 Este tutorial crea un control simple enlazable a datos desde un **Control de usuario**. Agregar un **Control de usuario** elemento a la **Tutorialdecontrolsimple** proyecto:
 
-1.  Desde el **proyecto** menú, elija **agregar Control de usuario**.
+1.  En el menú **Proyecto**, elija **Agregar control de usuario**.
 
-2.  Tipo **PhoneNumberBox** en el área nombre y haga clic en **agregar**.
+2.  Escriba **PhoneNumberBox** en el área Nombre y haga clic en **Agregar**.
 
-     El **PhoneNumberBox** se agrega al control **el Explorador de soluciones**y se abre en el diseñador.
+     El control **PhoneNumberBox** se agrega al **Explorador de soluciones** y se abre en el diseñador.
 
 ## <a name="design-the-phonenumberbox-control"></a>Diseñar el control PhoneNumberBox
 
 En este tutorial se expande en las existentes <xref:System.Windows.Forms.MaskedTextBox> para crear el **PhoneNumberBox** control:
 
-1.  Arrastre un <xref:System.Windows.Forms.MaskedTextBox> desde el **cuadro de herramientas** hasta la superficie de diseño del control de usuario.
+1.  Arrastre un control <xref:System.Windows.Forms.MaskedTextBox> del **Cuadro de herramientas** hasta la superficie de diseño del control del usuario.
 
-2.  Seleccione la etiqueta inteligente en el <xref:System.Windows.Forms.MaskedTextBox> acaba de arrastrar y elija **establecer máscara**.
+2.  Seleccione la etiqueta inteligente en el <xref:System.Windows.Forms.MaskedTextBox> que acaba de arrastrar y elija **Establecer máscara**.
 
-3.  Seleccione **número de teléfono** en el **máscara de entrada** cuadro de diálogo y haga clic en **Aceptar** para establecer la máscara.
+3.  Seleccione **Número de teléfono** en el cuadro de diálogo **Máscara de entrada** y haga clic en **Aceptar** para establecer la máscara.
 
 ## <a name="add-the-required-data-binding-attribute"></a>Agregue el atributo de enlace de datos requerido
 
-Para que admitan enlace de datos de los controles simples, implemente el <xref:System.ComponentModel.DefaultBindingPropertyAttribute>:
+En el caso de los controles simples que admiten enlaces de datos, implemente el <xref:System.ComponentModel.DefaultBindingPropertyAttribute>:
 
-1.  Cambiar el **PhoneNumberBox** control a la vista código. (En el **vista** menú, elija **código**.)
+1.  Cambiar el **PhoneNumberBox** control a la vista código. (En el menú **Ver**, elija **Código**.)
 
 2.  Reemplace el código en el **PhoneNumberBox** con lo siguiente:
 
@@ -122,49 +121,49 @@ Para que admitan enlace de datos de los controles simples, implemente el <xref:S
 
 ## <a name="create-a-data-source-from-your-database"></a>Crear un origen de datos de la base de datos
 
-Este paso se usa el **configuración origen de datos**Asistente para crear un origen de datos según la `Customers` tabla en la base de datos de ejemplo Northwind. Debe tener acceso a la base de datos de ejemplo Northwind para crear la conexión. Para obtener información acerca de cómo configurar la base de datos de ejemplo Northwind, vea [Cómo: instalar bases de datos de ejemplo](../data-tools/installing-database-systems-tools-and-samples.md).
+En este paso se usa el **Asistente para configuración de orígenes de datos** para crear un origen de datos basado en la tabla `Customers` de la base de datos de ejemplo Northwind. Debe tener acceso a la base de datos de ejemplo Northwind para crear la conexión. Para obtener información acerca de cómo configurar la base de datos de ejemplo Northwind, vea [Cómo: Instalar bases de datos de ejemplo](../data-tools/installing-database-systems-tools-and-samples.md).
 
-1.  En el menú **Datos** , haga clic en **Mostrar orígenes de datos**.
+1.  Para abrir el **orígenes de datos** ventana, en el **datos** menú, haga clic en **Mostrar orígenes de datos**.
 
-2.  En el **orígenes de datos** ventana, seleccione **Agregar nuevo origen de datos** para iniciar el **configuración origen de datos** asistente.
+2.  En la ventana **Orígenes de datos**, seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
 
-3.  En el **elegir un tipo de origen de datos** página, seleccione **base de datos**y, a continuación, haga clic en **siguiente**.
+3.  En la página **Elegir un tipo de origen de datos**, seleccione **Base de datos** y después haga clic en **Siguiente**.
 
-4.  En el **elegir la conexión de datos** , realice una de las siguientes acciones:
+4.  En la página **Elegir la conexión de datos** realice una de las siguientes operaciones:
 
     -   Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.
 
-    -   Seleccione **nueva conexión** para iniciar el **agregar o modificar conexión** cuadro de diálogo.
+    -   Seleccione **Nueva conexión** para iniciar el cuadro de diálogo **Agregar o modificar conexión**.
 
-5.  Si la base de datos requiere una contraseña, seleccione la opción para incluir datos confidenciales y, a continuación, haga clic en **siguiente**.
+5.  Si su base de datos requiere una contraseña, seleccione la opción para incluir datos confidenciales y haga clic en **Siguiente**.
 
-6.  En el **Guardar cadena de conexión en el archivo de configuración de la aplicación** página, haga clic en **siguiente**.
+6.  Haga clic en **Siguiente** en la página **Guardar la cadena de conexión en el archivo de configuración de la aplicación**.
 
-7.  En el **elija los objetos de base de datos** , expanda el **tablas** nodo.
+7.  Expanda el nodo **Tablas** en la página **Elija los objetos de base de datos**.
 
-8.  Seleccione el `Customers` de tabla y, a continuación, haga clic en **finalizar**.
+8.  Seleccione la tabla `Customers` y después haga clic en **Finalizar**.
 
-     El **NorthwindDataSet** se agrega al proyecto y el `Customers` tabla aparece en el **orígenes de datos** ventana.
+     **NorthwindDataSet** se agrega al proyecto y la tabla `Customers` aparece en la ventana **Orígenes de datos**.
 
 ## <a name="set-the-phone-column-to-use-the-phonenumberbox-control"></a>Establecer la columna phone para utilizar el control PhoneNumberBox
 
-Dentro de la **orígenes de datos** ventana, puede establecer el control que se creará antes de arrastrar elementos al formulario:
+Dentro de la ventana **Orígenes de datos** puede establecer el control que se va a crear antes de arrastrar elementos a un formulario:
 
 1.  Abra **Form1** en el diseñador.
 
-2.  Expanda el **clientes** nodo en el **orígenes de datos** ventana.
+2.  Expanda el nodo **Customers** en la ventana **Orígenes de datos**.
 
-3.  Haga clic en la flecha de lista desplegable el **clientes** nodo y elija **detalles** desde la lista de control.
+3.  Haga clic en la flecha de lista desplegable en el nodo **Customers** y elija **Detalles** de la lista de control.
 
-4.  Haga clic en la flecha de lista desplegable el **teléfono** columna y elija **personalizar**.
+4.  Haga clic en la flecha de lista desplegable en la columna **Phone** y elija **Personalizar**.
 
-5.  Seleccione el **PhoneNumberBox** en la lista de **controles asociados** en el **opciones de personalización de la interfaz de usuario de datos** cuadro de diálogo.
+5.  Seleccione **PhoneNumberBox** de la lista de **Controles asociados** en el cuadro de diálogo **Opciones de personalización de la interfaz de usuario de datos**.
 
-6.  Haga clic en la flecha de lista desplegable el **teléfono** columna y elija **PhoneNumberBox**.
+6.  Haga clic en la flecha de lista desplegable en la columna **Phone** y elija **PhoneNumberBox**.
 
 ## <a name="add-controls-to-the-form"></a>Agregar controles al formulario
 
-Puede crear los controles enlazados a datos arrastrando elementos desde la **orígenes de datos** ventana hasta el formulario.
+Puede crear los controles enlazados a datos arrastrando elementos desde la ventana **Orígenes de datos** al formulario.
 
 Para crear controles enlazados a datos en el formulario, arrastre el método main **clientes** nodo desde el **orígenes de datos** ventana hasta el formulario y compruebe que la **PhoneNumberBox** control es utilizado para mostrar los datos en el **teléfono** columna.
 

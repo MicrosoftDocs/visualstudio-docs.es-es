@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: Seleccionar los archivos que se van a compilar | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Seleccionar los archivos que se van a compilar | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, wildcards
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ef956b94ca263dac5ce57c7b122576060bb7a05
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2fd4475f149627776480fb54ec821298bf74b700
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820673"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875412"
 ---
-# <a name="how-to-select-the-files-to-build"></a>Cómo: Seleccionar los archivos que se van a compilar
+# <a name="how-to-select-the-files-to-build"></a>Procedimiento Seleccionar los archivos que se van a compilar
 Cuando se compila un proyecto que contiene varios archivos, se puede enumerar cada archivo en el archivo de proyecto de forma independiente, o bien usar comodines para incluir todos los archivos de un directorio o un conjunto anidado de directorios.  
   
 ## <a name="specify-inputs"></a>Especificar entradas  

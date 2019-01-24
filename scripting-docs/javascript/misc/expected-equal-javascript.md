@@ -1,5 +1,5 @@
 ---
-title: Se esperaba &#39;=&#39; (JavaScript) | Documentos de Microsoft
+title: Se esperaba '=' (JavaScript) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8cae54b60ae94be5929ae5c5cfb8f8f0c1a2ea92
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dfdc5856eecf6eef0e2308d4ce20734fbb47bb12
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910002"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348612"
 ---
-# <a name="expected-3939-javascript"></a>Se esperaba &#39;=&#39; (JavaScript)
+# <a name="expected--javascript"></a>Se esperaba '=' (JavaScript)
 Se ha intentado crear una variable para su uso con instrucciones de compilación condicional, pero no se realizó un signo igual entre la variable y el valor que desea asignar a él.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  

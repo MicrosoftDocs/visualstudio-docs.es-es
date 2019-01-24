@@ -2,7 +2,6 @@
 title: Recursos de solución de problemas de errores
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: troubleshooting
 f1_keywords:
 - VS.Message.0x00005A89
@@ -95,16 +94,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bcb994c0ee79cb36e1c2e2db792346842194c73
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 7677c6090abcd3bdb30bd30438698986ea514332
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176546"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949880"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Recursos para solucionar problemas de errores en el entorno de desarrollo integrado
 
 No todos los mensajes de error tienen un tema de ayuda específico asociado. Si con la información del mensaje de error no consigue resolver el problema, puede consultar otros recursos, como los artículos de Knowledge Base, los foros o los servicios de soporte técnico.
+
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Solución de problemas de Visual Studio para Mac](/visualstudio/mac/troubleshooting).
 
 ## <a name="knowledge-base-articles"></a>Artículos de Knowledge Base
 
@@ -123,3 +125,4 @@ Si aún tiene preguntas después de recurrir a estos otros recursos, puede poner
 ## <a name="see-also"></a>Vea también
 
 * [Solución de problemas de errores de proxy o relacionados con la red](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
+* [Solución de problemas (Visual Studio para Mac)](/visualstudio/mac/troubleshooting)

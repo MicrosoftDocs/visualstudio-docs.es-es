@@ -1,8 +1,8 @@
 ---
-title: Deshabilitación o traslado de la caché de paquetes | Microsoft Docs
+title: Deshabilitación o traslado de la caché de paquetes
 description: Obtenga información sobre cómo deshabilitar, habilitar o mover la caché de paquetes para las implementaciones de Visual Studio.
 ms.date: 04/14/2017
-ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1461e4d854b7e2e257fe81fa76d39aa140426b86
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: ed8a827dd1edfcd2f0e61361ec4b20f6662ab036
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138523"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909026"
 ---
 # <a name="disable-or-move-the-package-cache"></a>Deshabilitación o traslado de la caché de paquetes
 

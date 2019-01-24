@@ -2,7 +2,6 @@
 title: Analizar y modelar la arquitectura
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Ultimate, exploring code
@@ -32,12 +31,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ab47830d0d6f3c221d08f6869bd8efcbe5b4ff9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 986c32b0994e2b5ed0434e9d9a6b672dc0fbefff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859723"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855054"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analizar y modelar la arquitectura
 
@@ -49,13 +48,13 @@ Asegúrese de que la aplicación cumple los requisitos de arquitectura mediante 
 
 * Cree modelos con distintos niveles de detalle a lo largo del ciclo de vida de la aplicación como parte del proceso de desarrollo.
 
-Consulte [escenario: cambiar el diseño usando modelado y visualización](../modeling/scenario-change-your-design-using-visualization-and-modeling.md).
+Consulte [escenario: Cambiar el diseño usando modelado y visualización](../modeling/scenario-change-your-design-using-visualization-and-modeling.md).
 
 ## <a name="to"></a>En
 
 |||
 |-|-|
-|**Visualizar el código**:<br /><br /> -Consulte el código de la organización y las relaciones mediante la creación de mapas de código. Visualice las dependencias entre ensamblados, espacios de nombres, clases, métodos, etcétera.<br />-Consulte la estructura de clases y miembros de un proyecto específico creando diagramas de clases desde el código.<br />-Encontrar conflictos entre el código y su diseño creando diagramas de dependencia para validar el código.|-   [Visualizar el código](../modeling/visualize-code.md)<br />-   [Trabajar con clases y otros tipos (Diseñador de clases)](../ide/working-with-classes-and-other-types-class-designer.md)<br />-   [Vídeo: Descripción del diseño de código con mapas de código de Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />-   [Vídeo: Validar las dependencias de arquitectura en tiempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
+|**Visualizar el código**:<br /><br /> -Consulte el código de la organización y las relaciones mediante la creación de mapas de código. Visualice las dependencias entre ensamblados, espacios de nombres, clases, métodos, etcétera.<br />-Consulte la estructura de clases y miembros de un proyecto específico creando diagramas de clases desde el código.<br />-Encontrar conflictos entre el código y su diseño creando diagramas de dependencia para validar el código.|-   [Visualizar el código](../modeling/visualize-code.md)<br />-   [Trabajar con clases y otros tipos (Diseñador de clases)](../ide/class-designer/designing-and-viewing-classes-and-types.md)<br />-   [Vídeo: Descripción del diseño de código con mapas de código de Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />-   [Vídeo: Validar las dependencias de arquitectura en tiempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
 |**Definir la arquitectura**:<br /><br /> -Definir y aplicar restricciones a las dependencias entre los componentes del código mediante la creación de diagramas de dependencia.|-   [Vídeo: Validación de dependencias de arquitectura con Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
 |**Validar el sistema con los requisitos y el diseño previsto:**<br /><br /> -Validar las dependencias del código con diagramas de dependencia que describen la arquitectura planeada y evite los cambios que entran en conflicto con el diseño.|-   [Vídeo: Validación de dependencias de arquitectura con Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
 |**Personalizar modelos y diagramas**:<br /><br /> -Crear sus propios lenguajes específicos de dominio.|-   [SDK de modelado para Visual Studio - lenguajes específicos de dominio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
@@ -90,7 +89,7 @@ Diagramas de dependencia le permiten definir la estructura de una aplicación co
 **Vea:**
 
 -   [Creación de diagramas de dependencia a partir del código](../modeling/create-layer-diagrams-from-your-code.md)
--   [Diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md)
+-   [Diagramas de dependencia: Referencia](../modeling/layer-diagrams-reference.md)
 -   [Validación de código con diagramas de dependencia](../modeling/validate-code-with-layer-diagrams.md)
 
 ### <a name="domain-specific-language-dsl"></a>Lenguaje específico del dominio (DSL)
@@ -112,4 +111,4 @@ Un DSL es una notación que se diseña con un objetivo concreto. En Visual Studi
 ## <a name="see-also"></a>Vea también
 
 - [Novedades](../modeling/what-s-new-for-design-in-visual-studio.md)
-- [DevOps y administración del ciclo de vida de aplicaciones](http://msdn.microsoft.com/Library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
+- [DevOps y administración del ciclo de vida de las aplicaciones](/azure/devops/user-guide/devops-alm-overview)

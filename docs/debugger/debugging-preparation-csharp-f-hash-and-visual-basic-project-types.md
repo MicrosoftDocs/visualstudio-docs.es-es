@@ -1,8 +1,7 @@
 ---
-title: 'Preparación de la depuración: C#, F # y Visual Basic tipos de proyecto | Documentos de Microsoft'
-ms.custom: ''
+title: Prepararse para depurar C#, F#y los proyectos de VB | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -22,20 +21,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4d590a186f5198feea6a89320897d9d4fa5c4481
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 703c00868eca2f48c06bb24cc45a533411a8147c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479221"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866886"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Preparación de la depuración: Tipos de proyectos de C#, F# y Visual Basic
 En los temas de esta sección se describe cómo se depuran los tipos de proyectos de C#, F# y [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] creados mediante las plantillas de proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
- Tenga en cuenta que los tipos de proyecto que crean archivos DLL como su resultado se han agrupado en [depurar proyectos DLL](../debugger/debugging-dll-projects.md) debido a las características comunes que comparten.  
+ Tenga en cuenta que se han agrupado en esos tipos de proyecto que crean archivos DLL como resultado [depurar proyectos DLL](../debugger/debugging-dll-projects.md) debido a las características comunes que comparten.  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Valores de propiedad recomendados](../debugger/managed-debugging-recommended-property-settings.md)  
+ [Valores de propiedades recomendados](../debugger/managed-debugging-recommended-property-settings.md)  
  En esta sección se describen los valores recomendados de las propiedades relacionadas con la depuración para proyectos de C#, F# y Visual Basic.  
   
  [Aplicaciones de Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md)  

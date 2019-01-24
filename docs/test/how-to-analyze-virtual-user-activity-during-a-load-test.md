@@ -1,5 +1,5 @@
 ---
-title: Análisis de la actividad de los usuarios virtuales durante las pruebas de carga en Visual Studio
+title: Análisis de la actividad de los usuarios virtuales durante las pruebas de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,27 +9,28 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 00abfd827bf98d79e74ecbaf9a01efdc7761c3ee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 714e38e6bf0ca97e683eda6e5cd6303b9f1160fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881708"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875276"
 ---
-# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Cómo: Analizar lo que hacen los usuarios virtuales durante una prueba de carga mediante el diagrama de actividad del usuario virtual
+# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Procedimiento para analizar lo que hacen los usuarios virtuales durante una prueba de carga mediante el diagrama de actividad de usuarios virtuales
 
 Vea ver la actividad de usuario virtual que está asociada a la prueba de carga mediante el **Diagrama de actividad del usuario virtual**. Cada fila del diagrama representa un usuario virtual individual. El **Diagrama de actividad del usuario virtual** muestra exactamente qué estaba ejecutando cada usuario virtual durante la prueba. Puede ver patrones de actividad de los usuarios, modelos de carga, poner en correlación pruebas con errores o lentas y ver solicitudes con otra actividad de usuarios virtuales. El **Diagrama de actividad del usuario virtual** solamente está disponible cuando una prueba de carga termina de ejecutarse.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Los siguientes procedimientos muestran cómo ver el **Diagrama de actividad del usuario virtual**, cómo investigar una actividad del usuario concreta y cómo usar el filtrado.
 
 ## <a name="to-view-the-virtual-user-activity-chart-in-your-load-test-results"></a>Para ver el Diagrama de actividad del usuario virtual en los resultados de pruebas de carga
 
-1.  Para ver los datos de usuario virtual, primero debe configurar el valor **Todos los detalles individuales** de la propiedad **Almacenamiento de detalles de tiempo** que está asociada a la prueba de carga. Después, ejecute la prueba de carga. Para obtener más información, vea [Cómo: Configurar los resultados de pruebas para recopilar información completa para habilitar la actividad de usuario virtual en los resultados de pruebas](../test/how-to-configure-load-tests-to-collect-full-details.md).
+1.  Para ver los datos de usuario virtual, primero debe configurar el valor **Todos los detalles individuales** de la propiedad **Almacenamiento de detalles de tiempo** que está asociada a la prueba de carga. Después, ejecute la prueba de carga.
 
 2.  Una vez que se ejecuta la prueba de carga, se muestra la página de resumen de los resultados de pruebas. Elija el botón **Detalles de usuario** de la barra de herramientas.
 
-     O bien
+     o bien
 
      Abra la vista Gráficos al elegir el botón **Gráficos** de la barra de herramientas. Haga clic con el botón derecho en un gráfico y, luego, seleccione **Ir a detalles de usuario**.
 
@@ -106,4 +107,4 @@ Los siguientes procedimientos muestran cómo ver el **Diagrama de actividad del 
 ## <a name="see-also"></a>Vea también
 
 - [Analizar la actividad de usuario virtual de prueba de carga en la vista Detalles del Analizador de prueba de carga](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
-- [Tutorial: Usar el Diagrama de actividad del usuario virtual para aislar problemas de rendimiento](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)
+- [Tutorial: Uso del diagrama de actividad del usuario virtual para aislar problemas](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

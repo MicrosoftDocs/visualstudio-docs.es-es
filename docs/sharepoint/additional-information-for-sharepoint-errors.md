@@ -1,16 +1,11 @@
 ---
 title: Información adicional para errores de SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.errors.general
 - VS.SharePointTools.Project.Errors.General
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,15 +16,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85d4dc4ab6b18cf7e9aa1f26167234572362231b
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 3a3547c4209b098a8756cf143888589db20b80f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326026"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968448"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Información adicional para errores de SharePoint
-  Puede encontrar ayuda para solucionar problemas de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] errores y advertencias en los foros públicos de Microsoft Developer Network (MSDN) y de temas de solución de problemas de herramientas de SharePoint.  
+  Puede encontrar ayuda para solucionar problemas de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] errores y advertencias en los temas y los foros públicos de la solución de problemas de herramientas de SharePoint.  
   
 ## <a name="troubleshoot-errors-and-issues"></a>Solucionar problemas y errores
  Para obtener ayuda con algunos errores comunes y otros problemas en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] herramientas de SharePoint, vea los temas siguientes:  
@@ -41,7 +36,7 @@ ms.locfileid: "36326026"
 -   [Solucionar problemas de implementación y empaquetado de SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)  
   
 ## <a name="other-resources"></a>Otros recursos
- La siguiente tabla enumera las [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] herramientas de SharePoint, foros y otros recursos disponibles en MSDN.  
+ La siguiente tabla se enumeran los [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] foros y otros recursos disponibles de herramientas de SharePoint.  
   
 |Término|de esquema JSON|  
 |----------|----------------|  
@@ -52,6 +47,4 @@ ms.locfileid: "36326026"
  Si todavía no puede encontrar las respuestas que necesita, puede tener acceso a las opciones de soporte técnico en línea, como ponerse en contacto con el servicio de soporte técnico de Microsoft o la búsqueda de artículos de Knowledge Base. Para obtener más información, consulte el [Microsoft Help and Support](http://go.microsoft.com/fwlink/?LinkID=155371) página.  
   
 ## <a name="see-also"></a>Vea también
- [Compilar y depurar soluciones de SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  
- 
+ [Build and debug SharePoint solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md) (Compilar y depurar las soluciones de SharePoint)  

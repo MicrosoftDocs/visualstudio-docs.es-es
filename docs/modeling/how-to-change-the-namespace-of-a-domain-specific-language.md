@@ -1,6 +1,6 @@
 ---
-title: 'Cómo: Cambiar el espacio de nombres de los lenguajes específicos de dominio'
-ms.date: 11/04/2016
+title: Procedimiento Cambiar el espacio de nombres de un lenguaje específico de dominio
+ms.date: 10/31/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, namespace
@@ -10,49 +10,49 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: a237664a30dacf351edc048c82d8c9cdc304aa45
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3209f1942e95e8cfd883f938722ccfbc713e64db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775895"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890003"
 ---
-# <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Cómo: Cambiar el espacio de nombres de los lenguajes específicos de dominio
-Puede cambiar el espacio de nombres de un lenguaje específico de dominio. Debe realizar el cambio en el **DSL Explorer**, en las propiedades del proyecto de paquete de Dsl y en la información de ensamblado.
+# <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Procedimiento Cambiar el espacio de nombres de un lenguaje específico de dominio
 
-### <a name="to-change-the-namespace-of-a-domain-specific-language"></a>Para cambiar el espacio de nombres de un lenguaje específico de dominio
+Puede cambiar el espacio de nombres de un lenguaje específico de dominio. Realice el cambio en el **DSL Explorer**, en las propiedades del proyecto de paquete de Dsl y en la información de ensamblado.
 
-1.  En **DSL Explorer**, haga clic en el **Dsl** nodo.
+## <a name="to-change-the-namespace-of-a-domain-specific-language"></a>Para cambiar el espacio de nombres de un lenguaje específico de dominio
 
-2.  En el **propiedades** ventana, cambie el **Namespace** propiedad.
+1. En **DSL Explorer**, seleccione el **Dsl** nodo.
 
-3.  Guarde la solución y transformar las plantillas.
+2. En el **propiedades** ventana, cambie el **Namespace** propiedad.
 
-4.  En el **proyecto** menú, haga clic en **Dsl propiedades**.
+3. Guarde la solución y transformar las plantillas.
 
-     Aparecerán las propiedades del proyecto.
+4. En el **proyecto** menú, elija **Dsl propiedades**.
 
-5.  Haga clic en la pestaña **Aplicación** .
+   Aparecerán las propiedades del proyecto.
 
-6.  Cambiar el **espacio de nombres predeterminado** propiedad para el nuevo nombre de espacio de nombres.
+5. Seleccione el **aplicación** ficha.
 
-7.  Si también desea cambiar el nombre del ensamblado, cambie el **propiedad nombre de ensamblado.**
+6. Cambiar el **espacio de nombres predeterminado** propiedad para el nuevo nombre de espacio de nombres.
 
-8.  Si ha cambiado el nombre del ensamblado, abra DslPackage\Package.tt y actualice esta línea:
+7. Si también desea cambiar el nombre del ensamblado, cambie el **propiedad nombre de ensamblado.**
 
-     `string dslAssembly = "YourDSLassembly.Dsl.dll";`
+8. Si ha cambiado el nombre del ensamblado, abra DslPackage\Package.tt y actualice esta línea:
+
+   `string dslAssembly = "YourDSLassembly.Dsl.dll";`
 
 9. Si ha escrito ningún código personalizado, asegúrese de cambiar las referencias de espacio de nombres y clase en los archivos de código.
 
 10. Restablecer la instancia Experimental de Visual Studio.
 
-    1.  Eliminar **\Users\\**_{su nombre}_**\AppData\Local\Microsoft\VisualStudio\\\*Exp**
+    1. Eliminar **\Users\\**_{su nombre}_**\AppData\Local\Microsoft\VisualStudio\\\*Exp**.
 
-    2.  En el Windows **iniciar** menú, elija **todos los programas**, **Microsoft Visual Studio 2010 SDK**, **herramientas**, **restablecer el Instancia experimental**.
+    2. En el Windows **iniciar** menú, elija **todos los programas** > **Microsoft Visual Studio 2010 SDK** > **herramientas**  >  **Restablecer la instancia Experimental**.
 
 11. En el **compilar** menú, elija **recompilar solución**.
 
 ## <a name="see-also"></a>Vea también
 
-- [Glosario de las herramientas de lenguajes específicos de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+[Glosario de las herramientas de lenguajes específicos de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

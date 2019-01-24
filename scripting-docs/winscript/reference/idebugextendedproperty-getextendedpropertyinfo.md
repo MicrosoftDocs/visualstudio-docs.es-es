@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f314a9c777eef1716a382c74b9ea250846542da7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b6ceed386d4c8284ec7aa1d4fd685a76a821fbc7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935479"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094359"
 ---
 # <a name="idebugextendedpropertygetextendedpropertyinfo"></a>IDebugExtendedProperty::GetExtendedPropertyInfo
 Captura información extendida de una propiedad extendida, que es más información que el más sencillo `IDebugProperty`.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetExtendedPropertyInfo(  
    EX_DBGPROP_INFO_FLAGS  dwFieldSpec,  
    UINT  nRadix,  

@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d9d1b52c-7f28-467d-b1e0-512afc4e46c9
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cbc4f3372c82a760a7445cbe5ad780fe5f7ccc49
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: 97e5e64947f2d2807e2d3e34d50827e989ea18e2
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196552"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804726"
 ---
 # <a name="detach"></a>Desasociar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

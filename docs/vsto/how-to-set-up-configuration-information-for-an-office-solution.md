@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: configurar la información de configuración para una solución de Office'
-ms.custom: ''
+title: Procedimiento Configurar la información de configuración para una solución de Office
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f0557301c00285a93cc173e872459d812c61fdca
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a97ad1147a109723ffcededf485ed7865e0697f9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949466"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916645"
 ---
-# <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Cómo: configurar la información de configuración para una solución de Office
+# <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Procedimiento Configurar la información de configuración para una solución de Office
   Puede usar los archivos de configuración para configurar las opciones que son específicas de las soluciones de Office. Puede especificar la configuración de directiva de enlace de ensamblados, objetos de comunicación remota, depuración y la configuración de seguimiento.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -50,5 +47,3 @@ ms.locfileid: "49949466"
  [Esquema de archivo de configuración de .NET Framework](/dotnet/framework/configure-apps/file-schema/index)   
  [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)   
  [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)  
-  
-  

@@ -1,28 +1,28 @@
 ---
 title: Identificadores de componente y carga de trabajo de Visual Studio Feedback Client 2017
+titleSuffix: ''
 description: Uso de identificadores de componente y carga de trabajo de Visual Studio para proporcionar comentarios eficaces de Azure DevOps Services o Team Foundation Server
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 08/14/2018
+ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.assetid: 7392a100-100c-458c-9394-828695109015
 ms.workload:
 - multiple
-ms.openlocfilehash: 5037870cfbe1df0a4f997f16ef196d78de983aaa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 408f6b01cbc008ae1357c20d06882f08fe8b960e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281564"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889912"
 ---
 # <a name="visual-studio-feedback-client-2017-component-directory"></a>Directorio de componentes de Visual Studio Feedback Client 2017
 
@@ -35,15 +35,15 @@ Tenga en cuenta también lo siguiente sobre la página:
 * Si lo desea, también puede instalar los componentes con la marca **Recomendado** y **Opcional**.
 * También hemos agregado una sección que muestra los componentes adicionales que no están asociados a ninguna carga de trabajo.
 
-Al establecer las dependencias del manifiesto de VSIX, debe especificar solo identificadores de componentes. Utilice las tablas de esta página para determinar las dependencias de componente mínimas. En algunos casos, esto podría significar que se especifique solo un componente de una carga de trabajo. En otros escenarios, puede significar que especifique varios componentes de una sola carga de trabajo o varios componentes de varias cargas de trabajo. Para obtener más información, consulte la página [How to: Migrate Extensibility Projects to Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) (Migración de proyectos de extensibilidad a Visual Studio 2017).
+Al establecer las dependencias del manifiesto de VSIX, debe especificar solo identificadores de componentes. Utilice las tablas de esta página para determinar las dependencias de componente mínimas. En algunos casos, esto podría significar que se especifique solo un componente de una carga de trabajo. En otros escenarios, puede significar que especifique varios componentes de una sola carga de trabajo o varios componentes de varias cargas de trabajo. Para obtener más información, vea la página [Cómo: Migrar proyectos de extensibilidad a Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
 Para obtener más información acerca de cómo utilizar estos identificadores, vea [Usar parámetros de la línea de comandos para instalar Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md). Y, para obtener una lista de los identificadores de componente y carga de trabajo para otros productos, consulte la página [Visual Studio 2017 Workload and Component IDs](workload-and-component-ids.md) (Identificadores de componente y carga de trabajo de Visual Studio 2017).
 
 ## <a name="feedback-client"></a>Feedback Client
 
-**Id.:** Microsoft.VisualStudio.Workload.FeedbackClient
+**ID:** Microsoft.VisualStudio.Workload.FeedbackClient
 
-**Descripción**: Feedback Client permite a los interesados proporcionar comentarios eficaces de Azure DevOps Services o Team Foundation Server.
+**Descripción:** Feedback Client permite a los interesados proporcionar comentarios eficaces de Azure DevOps Services o Team Foundation Server.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 

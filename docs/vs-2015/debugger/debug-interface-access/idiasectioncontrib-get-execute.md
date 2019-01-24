@@ -1,5 +1,5 @@
 ---
-title: Get_execute | Microsoft Docs
+title: Get_execute | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSectionContrib::get_execute method
 ms.assetid: 66eb38ce-a5e1-467e-b845-b3dc433eda91
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed7836b594f260881f79905e39ee50a1e66100aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 05a3d4639794b17e15df0bf9fa92e25fec4ecbfe
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859818"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721738"
 ---
 # <a name="idiasectioncontribgetexecute"></a>IDiaSectionContrib::get_execute
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera una marca que indica si la sección es ejecutable como código.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT get_excute (   
+HRESULT get_excute (   
    BOOL* pRetVal  
 );  
 ```  

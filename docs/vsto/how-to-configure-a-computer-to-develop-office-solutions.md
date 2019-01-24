@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: configurar un equipo para desarrollar soluciones de Office'
-ms.custom: ''
+title: Procedimiento Configurar un equipo para desarrollar soluciones de Office
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -11,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - prerequisites [Office development in Visual Studio]
 - Office development in Visual Studio, installing tools
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 53a54c0d3ead9670f745258260461c86849cf0b9
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 7a55249c82f6404b0a7e60af95ae1c1b177a761d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674755"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899803"
 ---
-# <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Cómo: configurar un equipo para desarrollar soluciones de Office
+# <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Procedimiento Configurar un equipo para desarrollar soluciones de Office
   Para configurar un equipo de desarrollo de modo que puede usar las herramientas de desarrollo de Microsoft Office en Visual Studio, siga las instrucciones de este tema. Debe tener privilegios administrativos en el equipo de desarrollo para seguir estos pasos.  
   
 ### <a name="to-configure-the-development-computer"></a>Para configurar el equipo de desarrollo  
@@ -37,9 +34,7 @@ ms.locfileid: "35674755"
 3.  Si tiene una versión en inglés de Visual Studio, pero usar configuración distinta del inglés para Windows, puede instalar el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] paquete de idioma para ver [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] mensajes en el mismo idioma que Windows. Las versiones de Visual Studio en otros idiomas instalan automáticamente el paquete de idioma. El paquete de idioma está disponible en el [centro de descarga de Microsoft](http://go.microsoft.com/fwlink/?LinkId=140386).  
   
 ## <a name="see-also"></a>Vea también  
- [Novedades de desarrollo de Office](http://msdn.microsoft.com/bf054af2-c896-4723-aa15-6381145b14bb)   
+ [Novedades de desarrollo de Office](https://msdn.microsoft.com/bf054af2-c896-4723-aa15-6381145b14bb)   
  [Introducción a &#40;desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
- [Cómo: instalar Visual Studio Tools para Office runtime redistribuible](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
- [Cómo: ensamblados de interoperabilidad primarios de Office de instalación](../vsto/how-to-install-office-primary-interop-assemblies.md)  
-  
-  
+ [Cómo: Instalar Visual Studio Tools para Office runtime redistribuible](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
+ [Cómo: Instalar a ensamblados de interoperabilidad primarios de Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  

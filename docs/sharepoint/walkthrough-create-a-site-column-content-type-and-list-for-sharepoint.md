@@ -1,17 +1,12 @@
 ---
-title: 'Tutorial: Crear una columna de sitio, el tipo de contenido y la lista de SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Crear una columna de sitio, el tipo de contenido y la lista de SharePoint | Documentos de Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.ListDesigner.GeneralMessageHelp
 - Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping
 - VS.SharePointTools.ListDesigner.SortingGrouping
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fb78f5c40a04bb69d2f95d7f872b05e3d501113
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9bd2673ec63c9476217e13fad40f2316fcdf1886
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900129"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852536"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Tutorial: Crear una columna de sitio, el tipo de contenido y la lista de SharePoint
   Los procedimientos siguientes muestran cómo crear columnas de sitio de SharePoint personalizadas, o *campos*, así como un tipo de contenido que usa las columnas de sitio. También muestra cómo crear una lista que usa el nuevo tipo de contenido.  
@@ -95,7 +90,7 @@ ms.locfileid: "49900129"
     </Field>  
     ```  
   
-4.  Con el mismo procedimiento, agregue dos columnas de sitio más al proyecto: **identificador de paciente** (tipo = "Integer") y **nombre médico** (tipo = "Text"). Establezca su valor de grupo en **columnas de sitio Clinic**.  
+4.  Con el mismo procedimiento, agregue dos columnas de sitio más al proyecto: **Id. de pacientes** (tipo = "Integer") y **nombre médico** (tipo = "Text"). Establezca su valor de grupo en **columnas de sitio Clinic**.  
   
 ## <a name="create-a-custom-content-type"></a>Crear un tipo de contenido personalizado
  A continuación, cree un tipo de contenido, según el tipo de contenido de contactos, que incluye las columnas de sitio que creó en el procedimiento anterior. A partir de un tipo de contenido en un tipo de contenido existente, puede ahorrar tiempo porque el tipo de contenido base proporciona varias columnas de sitio para su uso en el nuevo tipo de contenido.  
@@ -116,7 +111,7 @@ ms.locfileid: "49900129"
   
      Esto proporciona acceso a otras columnas de sitio potencialmente útiles en el tipo de contenido de contacto, además de las columnas de sitio que definió anteriormente.  
   
-6.  Después el tipo de contenido aparezca el diseñador, en el **columnas** pestaña, agregue las tres columnas que ha definido anteriormente del sitio: **nombre paciente**, **identificador de paciente**y **Nombre médico**. Para agregar estas columnas, elija el primer cuadro de lista en la lista de columnas de sitio en **nombre para mostrar**y, a continuación, elija cada columna de sitio en la lista de uno a la vez.  
+6.  Después el tipo de contenido aparezca el diseñador, en el **columnas** pestaña, agregue las tres columnas que ha definido anteriormente del sitio: **Nombre del paciente**, **Id. de pacientes**, y **nombre médico**. Para agregar estas columnas, elija el primer cuadro de lista en la lista de columnas de sitio en **nombre para mostrar**y, a continuación, elija cada columna de sitio en la lista de uno a la vez.  
   
     > [!TIP]  
     >  Para elegir las columnas de sitio más rápidamente, filtrar la lista escribiendo las primeras letras del nombre de la columna.  
@@ -229,7 +224,6 @@ ms.locfileid: "49900129"
 ## <a name="see-also"></a>Vea también
  [Crear listas, tipos de contenido y columnas de sitio para SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)   
  [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
- [Cómo: crear un tipo de campo personalizado](http://go.microsoft.com/fwlink/?LinkId=192079)   
+ [Cómo: Crear un tipo de campo personalizado](http://go.microsoft.com/fwlink/?LinkId=192079)   
  [Tipos de contenido](http://go.microsoft.com/fwlink/?LinkId=192080)   
  [Columnas](http://go.microsoft.com/fwlink/?LinkId=192081)  
-  

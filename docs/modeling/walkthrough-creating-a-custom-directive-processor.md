@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Crear un procesador de directivas personalizadas'
+title: 'Tutorial: Crear un procesador de directivas personalizado'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,17 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: c430dad62686e49d9ce07fdff9a3665b0ea519a4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 44eb71a4bbb209453ee7deef6adf3b10c561e8af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930328"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951831"
 ---
-# <a name="walkthrough-create-a-custom-directive-processor"></a>Tutorial: Crear un procesador de directivas personalizadas
+# <a name="walkthrough-create-a-custom-directive-processor"></a>Tutorial: Crear un procesador de directivas personalizado
 
 *Procesadores de directivas* funcionan agregando código a la *clase de transformación generada*. Si se llama a un *directiva* desde un *plantilla de texto*, el resto del código que se escribe en la plantilla de texto puede basarse en la funcionalidad que proporciona la directiva.
 
@@ -603,7 +602,7 @@ End Property
 
 4. Solo en Visual Basic, abra el **proyecto** menú y haga clic en **propiedades de CustomDP**. En el **aplicación** ficha **espacio de nombres raíz**, elimine el valor predeterminado, `CustomDP`.
 
-5. En el **archivo** menú, haga clic en **guardar todo**.
+5. En el menú **Archivo**, haga clic en **Guardar todo**.
 
 6. En el menú **Compilar** , haga clic en **Compilar solución**.
 

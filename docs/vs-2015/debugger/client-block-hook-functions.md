@@ -25,15 +25,15 @@ helpviewer_keywords:
 - hooks, client block
 ms.assetid: f21c197e-565d-4e3f-9b27-4c018c9b87fc
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 55b3200f93d5dd969687411f04ddca481ca099e9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2b16dc9eaff974e98e411d4f49d8aed6f9f656e8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250701"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773943"
 ---
 # <a name="client-block-hook-functions"></a>Funciones de enlace con los bloques de tipo cliente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

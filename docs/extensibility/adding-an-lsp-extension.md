@@ -1,9 +1,6 @@
 ---
 title: Agregar una extensión del protocolo del servidor idioma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/14/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 396a516efb166f382c7c9a9c76c30a874db7155a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad112d34c8f23a7738137f148f00a38a27335424
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938271"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966565"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Agregar una extensión del protocolo de servidor de lenguaje
 
@@ -199,15 +196,15 @@ namespace MockLanguageExtension
 
         public async Task OnLoadedAsync()
         {
-            await StartAsync?.InvokeAsync(this, EventArgs.Empty);
+            await StartAsync.InvokeAsync(this, EventArgs.Empty);
         }
 
-        public async Task OnServerInitializeFailedAsync(Exception e)
+        public Task OnServerInitializeFailedAsync(Exception e)
         {
             return Task.CompletedTask;
         }
 
-        public async Task OnServerInitializedAsync()
+        public Task OnServerInitializedAsync()
         {
             return Task.CompletedTask;
         }
@@ -243,7 +240,7 @@ Haga clic en nuevo para crear un nuevo recurso:
 ![definir el recurso MEF](media/lsp-define-asset.png)
 
 * **Tipo**: Microsoft.VisualStudio.MefComponent
-* **Origen**: un proyecto de la solución actual
+* **Origen**: Un proyecto de la solución actual
 * **Proyecto**: [su proyecto]
 
 ### <a name="content-type-definition"></a>Definición de tipo de contenido
@@ -313,12 +310,19 @@ Siga estos pasos para agregar compatibilidad para la configuración a la extensi
       }
    }
    ```
+
 4. Agregue un archivo .pkgdef en el proyecto (Agregar nuevo archivo de texto y cambie la extensión de archivo .pkgdef). El archivo pkgdef debe contener esta información:
 
    ```xml
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
    ```
+
+    Ejemplo:
+    ```xml
+    [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\MockLanguageExtension]
+    @="$PackageFolder$\MockLanguageExtensionSettings.json"
+    ```
 
 5. Haga clic con el botón derecho en el archivo .pkgdef y seleccione **propiedades**. Cambiar el **compilar** acción a **contenido** y el **incluir en VSIX** propiedad en true.
 
@@ -327,7 +331,7 @@ Siga estos pasos para agregar compatibilidad para la configuración a la extensi
    ![Editar recurso de vspackage](media/lsp-add-vspackage-asset.png)
 
    * **Tipo**: Microsoft.VisualStudio.VsPackage
-   * **Origen**: archivo en filesystem
+   * **Origen**: Archivo en filesystem
    * **Ruta de acceso**: [ruta de acceso a su *.pkgdef* archivo]
 
 ### <a name="user-editing-of-settings-for-a-workspace"></a>Edición del usuario de configuración para un área de trabajo

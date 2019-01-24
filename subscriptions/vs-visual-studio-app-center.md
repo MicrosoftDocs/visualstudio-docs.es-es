@@ -3,18 +3,18 @@ title: Beneficio de Visual Studio App Center en las suscripciones de Visual Stud
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/15/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Obtenga información sobre la ventaja Visual Studio App Center incluida en las suscripciones de Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 112597455bbabe9f42cc2834bd06bf5c52d7cc9f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fd90f301abae9f0d85509a46255317282f284b9e
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940988"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380107"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center en suscripciones de Visual Studio
 
@@ -44,21 +44,26 @@ Es sencillo empezar a utilizar Visual Studio App Center.
 
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (estándar, de nube anual, de nube mensual)   | Licencia por volumen, Azure, venta directa, NFR<sup>1</sup> | Included       |  Sí          |
-| Visual Studio Professional (estándar, de nube anual, de nube mensual) | Licencia por volumen, Azure, venta directa                                       | Included                                                            |Sí |
+| Visual Studio Enterprise (estándar, de nube mensual)   | Licencia por volumen, Azure, venta directa, NFR<sup>1</sup> | Included       |  Sí          |
+| Visual Studio Professional (estándar, de nube mensual) | Licencia por volumen, Azure, venta directa                                       | Included                                                            |Sí |
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | Included                                                            |Sí |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | Included                                                            |Sí |
 | Visual Studio Dev Essentials | NA  | Included                                                            |Sí |
 
 
-<sup>1</sup> *Incluye: No para reventa (NFR), FTE, Visual Studio Industry Partner (VSIP), Imagine, Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & Services Developer, BizSpark, Microsoft Valued Professional (MVP), Region Director (RD).*
+<sup>1</sup>  *Incluye:  No para reventa (NFR), FTE, Visual Studio Industry Partner (VSIP), Imagine, Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & Services Developer, BizSpark, Most Valuable Professional (MVP), Regional Director (RD).*
+
+
+> [!NOTE]
+> Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
+
 
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
-### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>P: Aparece un error que indica que el explorador no es compatible.  ¿Qué ocurre?
-R: App Center requiere funcionalidades recientes que es posible que no proporcionen algunos exploradores más antiguos.  Si el explorador no es compatible, siga estos pasos:
+### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>P:  Aparece un error que indica que el explorador no es compatible.  ¿Qué ocurre?
+A:  App Center requiere funcionalidades recientes que es posible que no proporcionen algunos exploradores más antiguos.  Si el explorador no es compatible, siga estos pasos:
 1.  Abra un explorador diferente, como Microsoft Edge o las versiones más recientes de Google Chrome, Firefox o Safari.
 2.  Conéctese a Visual Studio [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e inicie sesión.
 3.  Ahora haga clic en el vínculo **Comience ahora** del icono de Visual Studio App Center.

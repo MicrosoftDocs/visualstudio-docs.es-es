@@ -1,8 +1,6 @@
 ---
 title: Idiaenumtables | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc95fe0f57eabbd933f8de842d842914948f3e4c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6321b6bc651778e9d3aff7257a251eff6493f397
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819960"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966147"
 ---
 # <a name="idiaenumtablesitem"></a>IDiaEnumTables::Item
 Recupera una tabla por medio de un índice o nombre.  
@@ -27,7 +25,7 @@ Recupera una tabla por medio de un índice o nombre.
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT Item (   
+HRESULT Item (   
    VARIANT     index,  
    IDiaTable** table  
 );  
@@ -59,5 +57,5 @@ pEnumTables->Item( var, &pTable );
 ## <a name="see-also"></a>Vea también  
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)   
- [Idiaenumtables](../../debugger/debug-interface-access/idiaenumtables-get-count.md)   
+ [IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)   
  [Constantes (Debug Interface Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)

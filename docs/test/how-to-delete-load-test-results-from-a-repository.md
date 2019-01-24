@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Eliminar los resultados de pruebas de carga de un repositorio en Visual Studio'
+title: Procedimiento para eliminar los resultados de pruebas de carga de un repositorio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,19 +14,20 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 77c44b3fda689b8b2710f959decf362f06c66424
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1165da402fc10f1562155ef6e4aaff25249b17a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381822"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846853"
 ---
-# <a name="how-to-delete-load-test-results-from-a-repository"></a>Cómo: Eliminar resultados de pruebas de carga de un repositorio
+# <a name="how-to-delete-load-test-results-from-a-repository"></a>Procedimiento para eliminar los resultados de pruebas de carga de un repositorio
 
 Cuando se ejecutan pruebas de carga, cualquier información recolectada durante una ejecución se almacena en el repositorio de resultados de pruebas de carga. El repositorio de resultados de pruebas de carga contiene datos de los contadores de rendimiento e información acerca de los errores que se hayan producido. Para obtener más información, vea [Administrar resultados de pruebas de carga en el repositorio de resultados de pruebas de carga](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
- Puede administrar los resultados de pruebas de carga desde el Editor de pruebas de carga con el cuadro de diálogo **Abrir y administrar resultados de pruebas de carga**. Puede abrir, importar, exportar y quitar los resultados de pruebas de carga.
+Puede administrar los resultados de pruebas de carga desde el Editor de pruebas de carga con el cuadro de diálogo **Abrir y administrar resultados de pruebas de carga**. Puede abrir, importar, exportar y quitar los resultados de pruebas de carga.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-delete-results-from-a-repository"></a>Para eliminar resultados de un repositorio
 
@@ -53,7 +54,7 @@ Cuando se ejecutan pruebas de carga, cualquier información recolectada durante 
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Exportar resultados de pruebas de carga de un repositorio](../test/how-to-export-load-test-results-from-a-repository.md)
+- [Cómo: Exportar resultados de pruebas de carga desde un repositorio](../test/how-to-export-load-test-results-from-a-repository.md)
 - [Administrar resultados de pruebas de carga en el repositorio de resultados de pruebas de carga](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Analizar los resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Cómo: Importar resultados de pruebas de carga en un repositorio](../test/how-to-import-load-test-results-into-a-repository.md)
+- [Cómo: Importar los resultados de pruebas de carga en un repositorio](../test/how-to-import-load-test-results-into-a-repository.md)

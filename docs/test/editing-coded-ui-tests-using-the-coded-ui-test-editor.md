@@ -2,7 +2,6 @@
 title: Editar pruebas automatizadas de IU
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.codedUItest.testeditor
@@ -13,16 +12,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 4b884afae90d477716c2041e468ceb0c64c5d41d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0e8e21129392ff949290576dbbbd9a315256b592
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849663"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959698"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Editar pruebas automatizadas de IU con el Editor de pruebas automatizadas de IU
 
 el Editor de pruebas de IU codificadas permite modificar fácilmente este tipo de pruebas. Con el editor de pruebas de IU codificadas puede localizar, ver y editar las propiedades de los métodos de prueba y acciones de IU. Además, puede usar la asignación de controles de IU para ver y editar sus controles correspondientes.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 **Requisitos**
 
@@ -125,7 +126,7 @@ Una vez que haya acabado de dividir el método, guarde los cambios en el archivo
 
 - Puede cambiar el nombre del método nuevo. Selecciónelo desde el panel **Acciones de IU** y elija el botón **Cambiar nombre** de la barra de herramientas del Editor de pruebas automatizadas de IU.
 
-   O bien
+   o bien
 
    Abra el menú contextual del nuevo método de prueba y elija **Cambiar nombre**.
 
@@ -195,4 +196,4 @@ Si necesita asegurarse de que un control determinado está disponible antes de r
 - [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
 - [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md)
 - [Crear una prueba automatizada de IU controlada por datos](../test/creating-a-data-driven-coded-ui-test.md)
-- [Tutorial: Crear, modificar y mantener una prueba de IU codificada](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+- [Tutorial: Crear, editar y mantener una prueba automatizada de IU](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

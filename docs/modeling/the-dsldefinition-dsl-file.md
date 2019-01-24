@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4ced1cb0fda46a77bb9303a8f69e9f413b2e4751
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c0f69d660a1693e42662a82a2a19ce790725fb43
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898556"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869260"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>El archivo DslDefinition.dsl
 
@@ -97,7 +96,7 @@ Normalmente, el espacio de nombres del elemento referenciado (en este ejemplo, l
 
 El sistema de moniker requiere que los elementos del mismo nivel en el árbol XML tengan nombres distintos. Por este motivo, se producen errores de validación si intenta guardar una definición específica de dominio que tenga, por ejemplo, dos clases con el mismo nombre. Debe corregir siempre estos errores de nombres duplicados antes de guardar el archivo DslDefinition.dsl para que pueda volver a cargarlo correctamente más adelante.
 
-Cada tipo tiene su propio tipo de moniker: DomainClassMoniker, DomainRelationshipMoniker, y así sucesivamente.
+Cada tipo tiene su propio tipo de moniker: DomainClassMoniker, DomainRelationshipMoniker, etc.
 
 ## <a name="types"></a>Tipos
 
@@ -228,7 +227,7 @@ Por ejemplo, la relación Connection vincula miembros de la clase OutPort con mi
 
 Cada relación contiene roles de origen y de destino que tienen los siguientes atributos:
 
--   El `RolePlayer` atributo hace referencia a la clase de dominio de las instancias vinculadas: OutPort para el origen, InPort para el destino.
+-   El atributo `RolePlayer` hace referencia a la clase de dominio de las instancias vinculadas: OutPort para el origen, InPort para el destino.
 
 -   El atributo `Multiplicity` tiene cuatro valores posibles (ZeroMany, ZeroOne, One y OneMany). Este atributo hace referencia al número de vínculos de esta relación que se pueden asociar con un encargado de rol.
 
@@ -298,7 +297,7 @@ En este ejemplo, InPort es una subclase de ComponentPort y tiene una relación C
 Al escribir C# en este modelo, puede acceder directamente a través de un vínculo en un solo paso mediante el uso de la propiedad que la relación genera en cada una de las clases que se relación:
 
 ```
-     InPort port; ...  Component c = port.Component;
+     InPort port; ...  Component c = port.Component;
 ```
 
 Sin embargo, debe hacer ambos saltos explícitamente en la sintaxis de la ruta. Este requisito permite acceder al vínculo intermedio más fácilmente. El código siguiente completa el salto desde el vínculo al Component:
@@ -581,6 +580,6 @@ Las asignaciones de conectores también pueden contener asignaciones de elemento
 
 ## <a name="see-also"></a>Vea también
 
-- [Glosario de las herramientas de lenguajes específicos de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glosario de las herramientas de lenguajes específicos de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
 - [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)
 - [Introducción a los modelos, las clases y las relaciones](../modeling/understanding-models-classes-and-relationships.md)

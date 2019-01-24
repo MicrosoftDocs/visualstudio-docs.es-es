@@ -1,8 +1,6 @@
 ---
 title: CombinePath (Tarea) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,17 +16,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2e380c6207b3f59b1717ebff6f17261acc7ee52
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 542efb2cb1de44da95f640efbc316dc2cf373212
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946786"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966502"
 ---
 # <a name="combinepath-task"></a>CombinePath (tarea)
 Combina las rutas de acceso especificadas en una única ruta de acceso.  
   
-## <a name="task-parameters"></a>Parámetros de la tarea  
+## <a name="task-parameters"></a>Parámetros de tareas  
  En la siguiente tabla se describen los parámetros de [CombinePath (Tarea)](../msbuild/combinepath-task.md).  
   
 |Parámetro|Descripción|  
@@ -38,7 +36,7 @@ Combina las rutas de acceso especificadas en una única ruta de acceso.
 |`CombinedPaths`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> La ruta de acceso combinada que se crea mediante la tarea.|  
   
 ## <a name="remarks"></a>Comentarios  
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension (Clase base)](../msbuild/taskextension-base-class.md).  
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Tareas](../msbuild/msbuild-tasks.md)   

@@ -1,9 +1,6 @@
 ---
 title: Cambios importantes en la extensibilidad de Visual Studio 2017 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/09/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 54d5af60-0b44-4ae1-aa57-45aa03f89f3d
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a7ed5322c131bd9f3b758b31169676865880fd7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5305a5fd5dea53554e4ac9c0015e8181d5906788
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826497"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841955"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Cambios en la extensibilidad de Visual Studio 2017
 
@@ -43,15 +40,15 @@ Incluyen cambios en el formato VSIX:
 
 ## <a name="building-an-extension-for-visual-studio-2017"></a>Compilar una extensión para Visual Studio 2017
 
-Diseñador de herramientas para la creación del nuevo formato de manifiesto de VSIX v3 ahora está disponible en Visual Studio 2017. Consulte el documento adjunto [Cómo: migrar proyectos de extensibilidad de Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md) para obtener más información sobre el uso de las herramientas del diseñador o realizar actualizaciones manuales en el proyecto y el manifiesto para desarrollar extensiones VSIX v3.
+Diseñador de herramientas para la creación del nuevo formato de manifiesto de VSIX v3 ahora está disponible en Visual Studio 2017. Consulte el documento adjunto [Cómo: Migrar proyectos de extensibilidad de Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md) para obtener más información sobre el uso de las herramientas del diseñador o realizar actualizaciones manuales en el proyecto y el manifiesto para desarrollar extensiones VSIX v3.
 
-## <a name="change-visual-studio-user-data-path"></a>Cambio: Ruta de acceso de datos de usuario de Visual Studio
+## <a name="change-visual-studio-user-data-path"></a>Cambio: Ruta de acceso de datos de usuario en Visual Studio
 
 Anteriormente, solo una instalación de cada versión principal de Visual Studio puede existir en cada máquina. Para admitir las instalaciones en paralelo de Visual Studio 2017, pueden existir varias rutas de acceso de datos de usuario para Visual Studio en el equipo del usuario.
 
 Código que se ejecuta dentro del proceso de Visual Studio debe actualizarse para usar el Administrador de configuración de Visual Studio. Código que se ejecuta fuera del proceso de Visual Studio puede encontrar la ruta de acceso de usuario de una instalación específica de Visual Studio [siguiendo las instrucciones aquí](locating-visual-studio.md).
 
-## <a name="change-global-assembly-cache-gac"></a>Cambio: Caché de ensamblados Global (GAC)
+## <a name="change-global-assembly-cache-gac"></a>Cambio: Caché global de ensamblados (GAC)
 
 Mayoría de los ensamblados de núcleo de Visual Studio ya no se instala en la GAC. Se han realizado los siguientes cambios para que el código que se ejecuta en proceso de Visual Studio todavía puede encontrar los ensamblados necesarios en tiempo de ejecución.
 
@@ -95,9 +92,9 @@ Mayoría de los ensamblados de núcleo de Visual Studio ya no se instala en la G
 ### <a name="visual-studio-registry"></a>Registro Visual Studio
 
 * Anteriormente, Visual Studio instalado muchas de las claves del registro en el sistema **HKEY_LOCAL_MACHINE** y **HKEY_CURRENT_USER** subárboles bajo una clave específica de Visual Studio:
-  * **HKLM\Software\Microsoft\VisualStudio\{versión}**: las claves del registro creadas por los instaladores de MSI y extensiones de por equipo.
-  * **HKCU\Software\Microsoft\VisualStudio\{versión}**: las claves del registro creadas por Visual Studio para almacenar la configuración específica del usuario.
-  * **HKCU\Software\Microsoft\VisualStudio\{versión} _Config**: combina una copia de la clave HKLM de Visual Studio anterior, además de las claves del registro de *.pkgdef* archivos con las extensiones.
+  * **HKLM\Software\Microsoft\VisualStudio\{versión}**: Claves de registro creadas por los instaladores de MSI y extensiones de por equipo.
+  * **HKCU\Software\Microsoft\VisualStudio\{versión}**: Claves de registro creadas por Visual Studio para almacenar la configuración específica del usuario.
+  * **HKCU\Software\Microsoft\VisualStudio\{versión} _Config**: Combina una copia de la clave HKLM de Visual Studio anterior, además de las claves del registro de *.pkgdef* archivos con las extensiones.
 * Para reducir el impacto en el registro, Visual Studio usa ahora la [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) función para almacenar las claves del registro en un archivo binario privado en *[VSAPPDATA]\privateregistry.bin*. Solo un número muy pequeño de claves específico de Visual Studio permanece en el registro del sistema.
 
 * Código existente que se ejecuta dentro del proceso de Visual Studio no se ve afectado. Visual Studio le redirigirá a todas las operaciones del registro bajo la clave HKCU Visual Studio específica en el registro privado. Leer y escribir en otras ubicaciones del registro continuará con el registro del sistema.

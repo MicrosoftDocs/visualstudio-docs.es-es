@@ -19,12 +19,12 @@ ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8dc2222dd613cad4d5dad7dc70dccdbe0abfe128
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a1dbf79cc90f1f0ab0a7ff982fcabfa8d52150d3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868589"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760142"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>GUID e identificadores de comandos de Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Los valores GUID y el Id. de los comandos incluidos en el entorno de desarrollo 
   
 -   Los elementos de menú que incluyen un carácter subrayado, como el **impresión** comando el **archivo** menú, en el que está subrayado la P.  
   
-     Los caracteres que van precedidos por el carácter '&' en nombres de elemento de menú aparecen subrayadas. Sin embargo, los archivos .vsct se escriben en XML, que usa el carácter '&' para indicar los caracteres especiales y requiere que se debe escribir una y comercial que se muestra como&amp;'. Por lo tanto, en un archivo .vsct, el **P**comando Imprimir aparece como "&amp;impresión '.  
+     Los caracteres que van precedidos por el carácter '&' en nombres de elemento de menú aparecen subrayadas. Sin embargo, los archivos .vsct se escriben en XML, que usa el carácter '&' para indicar los caracteres especiales y requiere que se debe escribir una y comercial que se muestra como&amp;'. Por lo tanto, en un archivo .vsct, el **impresión** comando aparece como "&amp;impresión '.  
   
 -   Los comandos que tienen texto dinámico, como **guardar** *nombre de archivo actual*y genera dinámicamente elementos de menú, como los elementos en el **archivos recientes** lista.  
   

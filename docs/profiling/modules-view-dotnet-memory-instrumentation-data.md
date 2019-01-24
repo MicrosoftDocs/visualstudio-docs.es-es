@@ -1,8 +1,6 @@
 ---
 title: 'Vista Módulos: datos de instrumentación de memoria de .NET | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a0dd74f25ed5dc7f76b9d35ae3d2d9833f8e4ab8
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a4519d9a70b085cf3a5f5ea6a6687bff3cd21346
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255530"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823463"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>Vista Módulos: datos de instrumentación de memoria de .NET
 La vista Módulos de los datos de asignación de memoria de .NET recopilados con el método de instrumentación agrupa los datos de tiempo y memoria por los módulos que se ejecutaron durante la generación de perfiles. Los datos de generación de perfiles de las funciones del módulo se enumeran bajo el nodo de módulo.  
@@ -100,6 +98,6 @@ La vista Módulos de los datos de asignación de memoria de .NET recopilados con
 |**Tiempo exclusivo mínimo de aplicación**|-   Para una función, el tiempo exclusivo mínimo de aplicación de una llamada a este módulo o función.<br />-   Para un módulo, el tiempo exclusivo mínimo de aplicación de todas las llamadas a las funciones del módulo.|  
   
 ## <a name="see-also"></a>Vea también  
- [Vista Módulos: muestreo](../profiling/modules-view-dotnet-memory-sampling-data.md)   
+ [Vista Módulos: datos de muestreo](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [Vista Módulos](../profiling/modules-view-instrumentation-data.md)   
  [Vista Módulos](../profiling/modules-view-sampling-data.md)

@@ -1,9 +1,6 @@
 ---
 title: IDebugSymbolProvider::GetNamespacesUsedAtAddress | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugSymbolProvider::GetNamespacesUsedAtAddress
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dd9e6f2297b6aa1f9b14c2c3dbff7b7c8755a7d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4cc79478a1cb262ae08420e6f34955d709a29432
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864197"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850091"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
 Este método crea un enumerador para los espacios de nombres asociado a la dirección de depuración.  
@@ -28,7 +25,7 @@ Este método crea un enumerador para los espacios de nombres asociado a la direc
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT GetNamespacesUsedAtAddress(   
+HRESULT GetNamespacesUsedAtAddress(   
    IDebugAddress*     pAddress,  
    IEnumDebugFields** ppEnum  
 );  

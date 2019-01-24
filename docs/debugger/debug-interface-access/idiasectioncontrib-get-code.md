@@ -1,8 +1,6 @@
 ---
 title: Get_code | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 122b9ad10413e9ba89bf309011e2449e9f6707fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 207eb1768f298421cc4ec9c6887065f4aafb51fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866381"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828477"
 ---
 # <a name="idiasectioncontribgetcode"></a>IDiaSectionContrib::get_code
 Recupera una marca que indica si la sección contiene código ejecutable.  
@@ -27,7 +25,7 @@ Recupera una marca que indica si la sección contiene código ejecutable.
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT get_code (   
+HRESULT get_code (   
    BOOL* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_code (
  [out] Devuelve `TRUE` si la sección contiene código ejecutable; en caso contrario, devuelve `FALSE`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

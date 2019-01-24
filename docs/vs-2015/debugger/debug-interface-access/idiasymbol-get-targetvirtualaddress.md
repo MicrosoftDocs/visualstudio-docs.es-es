@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_targetVirtualAddress method
 ms.assetid: a0a5ce72-95f8-443e-bb4b-8c21194faad0
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3ee610b56230eecf7cc430f1c1d7492d029eb505
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f1150cf94ce85cf3a8f4854f62f384ccb17b0696
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892329"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51728578"
 ---
 # <a name="idiasymbolgettargetvirtualaddress"></a>IDiaSymbol::get_targetVirtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera la dirección virtual (VA) de un destino del código thunk.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT get_targetVirtualAddress (   
+HRESULT get_targetVirtualAddress (   
    ULONGLONG* pRetVal  
 );  
 ```  

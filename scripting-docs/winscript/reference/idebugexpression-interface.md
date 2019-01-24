@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 39e139e09362fc392d1110e26837c52fd4c642c4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9684253343aa83cf95f7d816781705eab7fbc327
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727795"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345524"
 ---
 # <a name="idebugexpression-interface"></a>IDebugExpression (Interfaz)
-Representa una expresión evaluada de forma asincrónica. Motores de script normalmente implementan esta interfaz. Normalmente, un depurador IDE usa esta interfaz para habilitar una ventana de la ejecución inmediata o ventana de inspección.  
+Representa una expresión evaluada de forma asincrónica. Motores de script normalmente implementan esta interfaz. Normalmente, un IDE del depurador utiliza esta interfaz para habilitar una ventana de ejecución inmediato o inspección (ventana).  
   
 > [!NOTE]
 >  El `IDebugExpression` interfaz solo está disponible desde un marco de pila.  
@@ -35,6 +35,6 @@ Representa una expresión evaluada de forma asincrónica. Motores de script norm
 |------------|-----------------|  
 |[IDebugExpression::Start](../../winscript/reference/idebugexpression-start.md)|Comienza la evaluación de la expresión.|  
 |[IDebugExpression::Abort](../../winscript/reference/idebugexpression-abort.md)|Anula la expresión.|  
-|[IDebugExpression::QueryIsComplete](../../winscript/reference/idebugexpression-queryiscomplete.md)|Determina si la operación se completa.|  
+|[IDebugExpression::QueryIsComplete](../../winscript/reference/idebugexpression-queryiscomplete.md)|Determina si la operación completada.|  
 |[IDebugExpression::GetResultAsString](../../winscript/reference/idebugexpression-getresultasstring.md)|Devuelve el resultado de la evaluación de expresión como una cadena y el valor devuelto de la operación.|  
 |[IDebugExpression::GetResultAsDebugProperty](../../winscript/reference/idebugexpression-getresultasdebugproperty.md)|Devuelve el resultado de la evaluación de expresión como una propiedad de depuración y el valor devuelto de la operación.|

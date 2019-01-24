@@ -1,9 +1,7 @@
 ---
-title: Solución de problemas de errores relacionados con la red al instalar o usar Visual Studio
+title: Solución de problemas de errores de proxy o de red
 description: Busque soluciones para los errores relacionados con la red o con el proxy que puede experimentar al instalar o usar Visual Studio detrás de un firewall o un servidor proxy.
-ms.custom: ''
 ms.date: 02/12/2018
-ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -18,18 +16,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 210a39d5392ef6ba93f4988c86850db58644ed10
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4693a50246493a97e74ba75dc7f516ce72a215ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865789"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914947"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Solución de problemas de errores relacionados con la red al instalar o usar Visual Studio
 
 Tenemos soluciones para la mayoría de los errores típicos relacionados con la red o con el proxy que puede encontrar cuando instala o usa Visual Studio detrás de un firewall o un servidor proxy.
 
-## <a name="error-proxy-authorization-required"></a>Error: Se necesita autorización de proxy
+## <a name="error-proxy-authorization-required"></a>Error: "Se necesita autorización de proxy"
 
 Por lo general, este error se produce cuando los usuarios están conectados a Internet a través de un servidor proxy y este bloquea las llamadas que hace Visual Studio a algunos recursos de red.
 
@@ -37,7 +35,7 @@ Por lo general, este error se produce cuando los usuarios están conectados a In
 
 - Reinicie Visual Studio. Debe aparecer un cuadro de diálogo de autenticación de proxy. Escriba sus credenciales cuando se le solicite en el cuadro de diálogo.
 
-- Si el reinicio de Visual Studio no soluciona el problema, es posible que el servidor proxy no pida credenciales para direcciones http:&#47;&#47;go.microsoft.com pero sí lo hace para direcciones & #42;.direcciones visualStudio.com. Para estos servidores, considere incluir en una lista blanca las siguientes direcciones URL para desbloquear todos los escenarios de inicio de sesión en Visual Studio:
+- Si el reinicio de Visual Studio no soluciona el problema, es posible que el servidor proxy no pida credenciales para direcciones http:&#47;&#47;go.microsoft.com pero sí lo hace para direcciones &#42;.direcciones visualStudio.com. Para estos servidores, considere incluir en una lista blanca las siguientes direcciones URL para desbloquear todos los escenarios de inicio de sesión en Visual Studio:
 
     - &#42;.windows.net
 
@@ -69,13 +67,13 @@ Por lo general, este error se produce cuando los usuarios están conectados a In
 
      O
 
-- También puede seguir las instrucciones que aparecen en la entrada de blog [How to connect through an authenticated Web Proxy](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) (Cómo conectarse a través de un proxy web autenticado), que muestra cómo agregar código que le permitirá usar el proxy.
+- También puede seguir las instrucciones que aparecen en la entrada de blog [How to connect through an authenticated Web Proxy](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) (Cómo conectarse a través de un proxy web autenticado), que muestra cómo agregar código que le permitirá usar el proxy.
 
-## <a name="error-the-underlying-connection-was-closed"></a>Error: La conexión subyacente está cerrada
+## <a name="error-the-underlying-connection-was-closed"></a>Error: "La conexión subyacente está cerrada"
 
 Si usa Visual Studio en una red privada que tiene un firewall, es posible que Visual Studio no pueda conectarse a algunos recursos de red. Estos recursos pueden incluir Azure DevOps Services para el inicio de sesión y la concesión de licencias, NuGet y los servicios de Azure. Si se produce un error en Visual Studio al conectarse a uno de estos recursos, verá el mensaje de error siguiente:
 
-  **Se ha terminado la conexión: An unexpected error occurred on send** (Se ha producido un error inesperado en el envío)
+  **La conexión subyacente está cerrada: se ha producido un error inesperado en el envío**
 
 Visual Studio usa el protocolo de Seguridad de la capa de transporte (TLS) 1.2 para conectarse a recursos de red. Los dispositivos de seguridad de algunas redes privadas bloquean ciertas conexiones de servidor cuando Visual Studio usa TLS 1.2.
 

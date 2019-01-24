@@ -1,8 +1,7 @@
 ---
 title: Opciones, editor de texto, C#, avanzado
-ms.date: 11/04/2016
+ms.date: 01/16/2019
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 16c92111fc29071447d4af5e736b881fa7c7a769
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: db27509faf1c3d83eab1cd6c8fcd6b5b70fab48e
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356748"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398304"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opciones, editor de texto, C#, avanzado
 
@@ -36,7 +35,7 @@ Use la página de opciones **Avanzado** para modificar la configuración del for
 
 - Aplicar primero directivas "System" al ordenar instrucciones Using
 
-   Cuando se selecciona, el comando **Eliminar y ordenar instrucciones Using** en el menú contextual ordena las directivas `using` y coloca los espacios de nombres "System" en la parte superior de la lista.
+   Cuando se selecciona el comando **Eliminar y ordenar instrucciones Using** en el menú contextual, ordena las directivas `using` y coloca los espacios de nombres "System" en la parte superior de la lista.
 
    Antes de ordenar:
 
@@ -89,9 +88,10 @@ Use la página de opciones **Avanzado** para modificar la configuración del for
    using System.Linq;
    ```
    
-- Agregar usos para tipos de ensamblados de referencia y paquetes NuGet 
+- Sugerir usos para tipos de ensamblados de referencia 
+- Sugerir usos para tipos de paquetes NuGet 
 
-   Cuando se selecciona, una [acción rápida](../quick-actions.md) se encuentra disponible para instalar un paquete NuGet y agregar una directiva `using` para tipos sin referencia.
+   Cuando se seleccionan estas opciones, una [acción rápida](../quick-actions.md) se encuentra disponible para instalar un paquete NuGet y agregar una directiva `using` para tipos sin referencia.
 
    ![Acción rápida para instalar el paquete NuGet en Visual Studio](media/nuget-lightbulb.png)
   
@@ -107,6 +107,20 @@ Use la página de opciones **Avanzado** para modificar la configuración del for
 
    Cuando está seleccionada, esquematiza automáticamente el archivo de código, lo que crea bloques contraíbles de código. La primera vez que se abre un archivo, los bloques #regions y los bloques de código inactivos se contraen.
 
+- Mostrar separadores de línea de procedimientos
+
+   El editor de texto indica el ámbito visual de los procedimientos. Se dibuja una línea en los archivos de código fuente *.cs* del proyecto en las ubicaciones indicadas en la tabla siguiente:
+
+   |Ubicación en el archivo de código fuente .cs|Ejemplo de ubicación de línea|
+   |---------------------------------|------------------------------|
+   |Después del cierre de una construcción de declaración de bloque|- Al final de una clase, estructura, módulo, interfaz o enumeración<br />- Después de una propiedad, función o sub<br />- No entre las cláusulas get y set de una propiedad|
+   |Después de un conjunto de construcciones de línea única|- Después de las instrucciones Import, antes de una definición de tipo en un archivo de clase<br />- Después de las variables declaradas en una clase, antes de cualquier procedimiento|
+   |Después de declaraciones de línea única (declaraciones de nivel que no sea de bloque)|- Después de instrucciones Import, instrucciones Inherits, declaraciones de variables, declaraciones de eventos, declaraciones de delegados e instrucciones Declare DLL|
+
+## <a name="block-structure-guides"></a>Guías de estructura de bloque
+
+Active estas casillas de verificación para mostrar líneas punteadas verticales las llaves (**{}**) en el código. De este modo, puede ver con facilidad los bloques individuales de código para las construcciones de nivel de declaración y de nivel de código.
+
 ## <a name="editor-help"></a>Ayuda del editor
 
 - Generar comentarios de documentación XML para ///
@@ -115,7 +129,7 @@ Use la página de opciones **Avanzado** para modificar la configuración del for
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo insertar comentarios XML para la generación de documentación](../../ide/reference/generate-xml-documentation-comments.md)
+- [Cómo: Insertar comentarios XML para la generación de documentación](../../ide/reference/generate-xml-documentation-comments.md)
 - [Comentarios de documentación XML (Guía de programación de C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [Documentar el código con comentarios XML (Guía de C#)](/dotnet/csharp/codedoc)
 - [Opciones del editor específicas del lenguaje](../../ide/reference/setting-language-specific-editor-options.md)

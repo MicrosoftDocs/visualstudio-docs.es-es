@@ -15,15 +15,15 @@ helpviewer_keywords:
 - CvCreateMarkerSeriesWithCodePageA method
 ms.assetid: 3d7ed601-2222-4be9-a557-f217db008753
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fda15e064c4a8d14ebb2d145ba9f2fa5c050ce2e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: f2a1a1380869ae26dbda30f47f6b3de08b288b7a
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239049"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802386"
 ---
 # <a name="cvcreatemarkerserieswithcodepagea-function"></a>CvCreateMarkerSeriesWithCodePageA (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

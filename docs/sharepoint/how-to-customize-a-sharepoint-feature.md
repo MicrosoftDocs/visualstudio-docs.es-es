@@ -1,17 +1,12 @@
 ---
-title: 'Cómo: personalizar una característica de SharePoint | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Personalizar una característica de SharePoint | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.FeatureDesigner.SwitchView
 - VS.SharePointTools.RAD.featureDesigner.Manifest
 - VS.SharePointTools.RAD.FeatureDesignerProperties
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9be9ba70bb94e743a788db11b55c188275bcad64
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 15cb1b9527cb3a1e469d33a4125e1b410209d98f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119426"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835479"
 ---
-# <a name="how-to-customize-a-sharepoint-feature"></a>Cómo: personalizar una característica de SharePoint
+# <a name="how-to-customize-a-sharepoint-feature"></a>Procedimiento Personalizar una característica de SharePoint
   Puede crear y personalizar las características de SharePoint mediante el Diseñador de características en Visual Studio. Por ejemplo, puede establecer el ámbito de característica y agregar otras características como dependencias. De forma predeterminada, se abre el Diseñador de características cuando se agrega una nueva característica en el Explorador de soluciones o el Explorador de paquetes de SharePoint.  
   
 ## <a name="opening-the-feature-designer"></a>Abrir el Diseñador de características  
@@ -96,4 +91,3 @@ ms.locfileid: "37119426"
   
 ## <a name="see-also"></a>Vea también
  [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

@@ -1,9 +1,6 @@
 ---
 title: AsyncVoidMethodBuilder.ObjectIdForDebugger (propiedad) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - ObjectIdForDbugger property, AsyncVoidMethodBuilder structure [.NET Framework debug engines]
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf0f8acbfbdc129371d288d64cc48b3e4b0704ad
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 1d0c6d2e8fbe9a26a8d38351d0e6e423b1c0de5e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151488"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961372"
 ---
 # <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>AsyncVoidMethodBuilder.ObjectIdForDebugger (propiedad)
 Obtiene un objeto que puede usarse para identificar de forma única este generador para el depurador.  
   
- **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
+ **Espacio de nombres:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
  **Ensamblado:** mscorlib (en mscorlib.dll)  
   

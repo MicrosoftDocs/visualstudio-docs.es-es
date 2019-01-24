@@ -15,12 +15,12 @@ ms.assetid: a208d38e-9bea-41c9-9fe2-38bd86a359cb
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c828632e2c6de2666edecbedf04479598085890c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: 660ce81898750851f3b1b3f0c89fadc262a154ba
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197748"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740645"
 ---
 # <a name="adapting-legacy-code-to-the-editor"></a>Adaptar código heredado en el Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -2,7 +2,6 @@
 title: 'CA1034: Los tipos anidados no deben ser visibles'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - NestedTypesShouldNotBeVisible
@@ -20,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 14c0837d482341e1ba60191c8b6bb3f5bd8e6dd4
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: cce4f148311c301607c57a77aac46787e0578391
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550952"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890948"
 ---
 # <a name="ca1034-nested-types-should-not-be-visible"></a>CA1034: Los tipos anidados no deben ser visibles
 

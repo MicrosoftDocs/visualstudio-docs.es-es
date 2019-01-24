@@ -15,12 +15,12 @@ ms.assetid: 27d2f1e1-2503-4aca-9cfc-707abd07ccf0
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c910fcd8a3025b6a12454ad7234502df99726768
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8cb19b71e80a020224c6898395070db739e144e7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263528"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51742894"
 ---
 # <a name="extending-other-parts-of-visual-studio"></a>Ampliación de otras partes de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

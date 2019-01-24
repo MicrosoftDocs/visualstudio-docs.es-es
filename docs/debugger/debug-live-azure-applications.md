@@ -1,9 +1,8 @@
 ---
 title: Depuración de aplicaciones de ASP.NET Azure activas
-ms.description: Learn how to set snappoints and view snapshots with the Snapshot Debugger.
+description: Obtenga información sobre cómo establecer puntos de acoplamiento y ver las instantáneas con el depurador de instantáneas.
 ms.custom: mvc
 ms.date: 03/16/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
@@ -14,12 +13,12 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: a2dfc759fbd42dd435133e223c72760ae5c274c3
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: bcb25566d530f85d5ac9a8d1a5f32c770a07bf21
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154468"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864000"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Depurar aplicaciones de ASP.NET Azure activas con el depurador de instantáneas
 
@@ -36,7 +35,7 @@ En este tutorial va a:
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* Depurador de instantáneas solo está disponible para Visual Studio Enterprise 2017 versión 15.5 o posterior con el **carga de trabajo de desarrollo de ASP.NET y web**. Para ASP.NET Core, también necesitará el. **Desarrollo NET Core** carga de trabajo instalada.
+* Depurador de instantáneas solo está disponible para Visual Studio Enterprise 2017 versión 15.5 o posterior con el **carga de trabajo de desarrollo de Azure**. (En el **componentes individuales** pestaña, se encuentra en **depuración y pruebas** > **depurador de instantáneas**.)
 
     Si aún no está instalado, instale [Visual Studio Enterprise 2017 versión 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) o una versión posterior. Si está actualizando desde una instalación anterior de Visual Studio 2017, ejecute el instalador de Visual Studio y compruebe el componente del depurador de instantáneas el **carga de trabajo de desarrollo de ASP.NET y web**.
 
@@ -114,7 +113,7 @@ Si es difícil volver a crear un estado determinado en la aplicación, considere
 
 1. Haga clic en un icono de punto de acoplamiento (la bola hueco) y elija **configuración**.
 
-   ![Elija la configuración](../debugger/media/snapshot-snappoint-settings.png)
+   ![Selección de Configuración](../debugger/media/snapshot-snappoint-settings.png)
 
 1. En la ventana de configuración de punto de acoplamiento, escriba una expresión.
 

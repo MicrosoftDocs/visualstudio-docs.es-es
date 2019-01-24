@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: habilitar y deshabilitar Editar y continuar (C#, VB, C++) | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Habilitar y deshabilitar Editar y continuar | Microsoft Docs
+ms.custom: seodec18
 ms.date: 10/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -27,16 +26,16 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: f0bf354f64be9c03a64beadcffdd7ff1138218df
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
-ms.translationtype: MT
+ms.openlocfilehash: bcdedfb513d9e10f030df4a6e9ba68b807210669
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382757"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936183"
 ---
-# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Cómo: habilitar y deshabilitar Editar y continuar (C#, VB, C++)
+# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Procedimiento Habilitar y deshabilitar Editar y continuar (C#, VB, C++)
 
-Puede deshabilitar o habilitar **editar y continuar** en Visual Studio **opciones** cuadro de diálogo en tiempo de diseño. **Editar y continuar** compilaciones funciona solo en modo de depuración. Para obtener más información, consulte [editar y continuar](../debugger/edit-and-continue.md). 
+Puede deshabilitar o habilitar **editar y continuar** en Visual Studio **opciones** cuadro de diálogo en tiempo de diseño. **Editar y continuar** solo funciona en las compilaciones de depuración. Para obtener más información, vea [Editar y continuar](../debugger/edit-and-continue.md). 
   
 En C++ nativo, **editar y continuar** requiere el uso de la `/INCREMENTAL` opción. Para obtener más información sobre los requisitos de características en C++, vea este [entrada de blog](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/) y [editar y continuar (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).
   
@@ -54,7 +53,7 @@ En C++ nativo, **editar y continuar** requiere el uso de la `/INCREMENTAL` opci�
       
       Si selecciona esta opción, Visual Studio se compila automáticamente y aplica los cambios de código al continuar la depuración desde un estado de interrupción. En caso contrario, puede elegir aplicar los cambios con **depurar** > **aplicar cambios de código**.  
       
-    - **Advertir sobre código obsoleto (solo nativo)**  
+    - **Advertir sobre el código obsoleto (solo nativo)**  
       
       Si se selecciona, ofrece las advertencias sobre código obsoleto. 
   

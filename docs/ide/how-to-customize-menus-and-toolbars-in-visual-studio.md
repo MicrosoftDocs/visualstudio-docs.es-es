@@ -1,8 +1,7 @@
 ---
-title: Personalización de menús y barras de herramientas en Visual Studio
+title: Personalización de menús y barras de herramientas
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.renametoolbar
@@ -29,14 +28,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e9cab18be65d29b6cdd22b8948d2e89f75c4fe9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b22309f75e9ffd8a134af1d5ddafacb6d060f100
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745954"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940406"
 ---
-# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Personalización de menús y barras de herramientas en Visual Studio
+# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Procedimiento para personalizar menús y barras de herramientas en Visual Studio
 
 Puede personalizar Visual Studio no solo mediante la adición y la eliminación de barras de herramientas y menús de la barra de menús, sino mediante la adición y la eliminación de comandos de cualquier barra de herramientas o menú concreto.
 
@@ -81,7 +80,7 @@ Puede personalizar Visual Studio no solo mediante la adición y la eliminación 
         También puede arrastrar una barra de herramientas por el borde izquierdo para moverla a cualquier parte del área de acoplamiento principal.
 
         > [!NOTE]
-        > Para obtener más información sobre cómo mejorar el uso y la accesibilidad de las barras de herramientas, vea [Cómo: Establecer opciones de accesibilidad de IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
+        > Para obtener más información sobre cómo mejorar el uso y la accesibilidad de las barras de herramientas, vea [Cómo: Establecer opciones de accesibilidad del IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
 
 ## <a name="customizing_menu">Personalizar un menú o una barra de herramientas</a>
 

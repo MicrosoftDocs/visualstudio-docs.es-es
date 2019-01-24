@@ -1,9 +1,6 @@
 ---
 title: BSTR_ARRAY | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BSTR_ARRAY
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d122afe0aca50b50133146edb26e13fd31d2c45b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 90f3089841e4f5eab5a490eb5968eacda8af8808
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906954"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864051"
 ---
 # <a name="bstrarray"></a>BSTR_ARRAY
 Una estructura que describe una matriz de cadenas.  
@@ -56,7 +53,7 @@ struct BSTR_ARRAY {
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   

@@ -2,7 +2,6 @@
 title: Cuadro Buscar/Comando
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.findcommandbox
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5e11d83ea0c87bae058f5421c424922fa389a9c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 91546caa5136fbcd31dabcaa9294ccd8056e6750
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752416"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866795"
 ---
 # <a name="findcommand-box"></a>Buscar/Comando (cuadro)
 

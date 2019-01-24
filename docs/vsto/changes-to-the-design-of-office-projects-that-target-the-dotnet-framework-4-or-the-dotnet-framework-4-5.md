@@ -1,9 +1,6 @@
 ---
 title: Cambios en el diseño de proyectos de Office que tienen como destino .NET Framework
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -11,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - Office development in Visual Studio, what's new
 - what's new [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c202fb5101542a17a736f2c615c9644d63b88f54
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a0f18e35cd3bc77e30f62578c5f2527c8f407c48
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674396"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888470"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Cambios en el diseño de proyectos de Office que tienen como destino .NET Framework 4 o .NET Framework 4.5
   A partir de [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], Visual Studio introdujo algunos cambios en el diseño de los proyectos de Office destinados a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores. Si está familiarizado con los proyectos de Office en versiones anteriores de Visual Studio, debe tener en cuenta estos cambios a la hora de desarrollar proyectos de Office destinados a esas versiones de .NET Framework 4.0 o versiones posteriores. De forma predeterminada, todos los proyectos creados con Visual Studio 2013 o versiones posteriores van destinados a .NET Framework 4.0 o versiones posteriores.  
@@ -35,7 +32,7 @@ ms.locfileid: "35674396"
   
 -   [Actualizar proyectos de Excel y Word migrados a .NET Framework 4 o .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
--   [Actualizar las personalizaciones de cinta de opciones en proyectos de Office migrados a .NET Framework 4 o .NET Framework 4.5](../vsto/updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
+-   [Actualizar las personalizaciones de cinta de opciones en proyectos de Office migrados a .NET Framework 4 o .NET Framework 4.5](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5)  
   
 -   [Actualizar las áreas de formulario en los proyectos de Outlook migrados a .NET Framework 4 o .NET Framework 4.5](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
@@ -51,7 +48,7 @@ ms.locfileid: "35674396"
 |---------------------|-----------------|  
 |<xref:System.Security.SecurityTransparentAttribute> ya no se usa o no se admite en proyectos de Office.|Debe quitar este atributo del archivo de código AssemblyInfo de los proyectos de Office que actualice desde Visual Studio 2008. Para obtener más información, consulte [los cambios requeridos para ejecutar proyectos de Office migrados a .NET Framework 4 o .NET Framework 4.5](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |El **ExcelLocale1033Attribute** ya no usa ni admite en proyectos de Excel.|Debe quitar este atributo desde el *AssemblyInfo* archivo de código en proyectos de Excel. Para obtener más información, consulte [actualización Excel y Word proyectos migrados a .NET Framework 4 o .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
-|El modelo de programación de elementos de proyecto de la **Cinta (diseñador visual)** ha cambiado.|Debe modificar el archivo de código subyacente de los elementos de la cinta de opciones del proyecto. También debe modificar cualquier código que cree instancias de controles de cinta de opciones en tiempo de ejecución, controla los eventos de la cinta de opciones o establece la posición de un componente de la cinta de opciones mediante programación. Para obtener más información, consulte [personalizaciones de cinta de opciones de actualización en los proyectos de Office migrados a .NET Framework 4 o .NET Framework 4.5](../vsto/updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
+|El modelo de programación de elementos de proyecto de la **Cinta (diseñador visual)** ha cambiado.|Debe modificar el archivo de código subyacente de los elementos de la cinta de opciones del proyecto. También debe modificar cualquier código que cree instancias de controles de cinta de opciones en tiempo de ejecución, controla los eventos de la cinta de opciones o establece la posición de un componente de la cinta de opciones mediante programación. Para obtener más información, consulte [personalizaciones de cinta de opciones de actualización en los proyectos de Office migrados a .NET Framework 4 o .NET Framework 4.5](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5).|  
 |Ha cambiado el modelo de programación de las áreas de formulario de Outlook.|Debe modificar el archivo de código subyacente para las áreas de formulario en el proyecto y cualquier código que cree instancias de determinadas clases de área de formulario en tiempo de ejecución. Para obtener más información, consulte [actualizar las áreas de formulario en los proyectos de Outlook migrados a .NET Framework 4 o .NET Framework 4.5](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |Ha cambiado el modelo de programación de las etiquetas inteligentes en proyectos de Excel y Word. Las etiquetas inteligentes están desusadas en [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] y [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].|Si la solución utiliza etiquetas inteligentes, se producirán errores al compilar el proyecto. Como las etiquetas inteligentes están desusadas en [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] y [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)], tiene que quitarlas para probar y depurar la solución en [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] o versiones posteriores.|  
 |Ha cambiado la sintaxis de los métodos `GetVstoObject` y `HasVstoObject`.|Tiene que pasar el objeto `Globals.Factory` a estos métodos cuando obtenga acceso a ellos en objetos nativos desde los ensamblados de interoperabilidad primarios (PIA) o puede obtener acceso a estos métodos en el objeto devuelto por la propiedad `Globals.Factory` en el proyecto. Para obtener más información, consulte [actualización Excel y Word proyectos migrados a .NET Framework 4 o .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
@@ -61,7 +58,5 @@ ms.locfileid: "35674396"
   
 ## <a name="see-also"></a>Vea también  
  [Migrar soluciones de Office a .NET Framework 4 o posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
- [Novedades de desarrollo de Office](http://msdn.microsoft.com/bf054af2-c896-4723-aa15-6381145b14bb)   
+ [Novedades de desarrollo de Office](https://msdn.microsoft.com/library/bf054af2-c896-4723-aa15-6381145b14bb)   
  [Visual Studio Tools para Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
-  
-  

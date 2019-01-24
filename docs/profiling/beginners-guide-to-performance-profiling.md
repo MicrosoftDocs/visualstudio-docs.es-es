@@ -1,9 +1,8 @@
 ---
 title: Medición del uso de CPU en las aplicaciones
 description: Analice los problemas de rendimiento de CPU en la aplicación mediante las herramientas de diagnóstico integradas del depurador.
-ms.custom: mvc
+ms.custom: seodec18
 ms.date: 02/27/2017
-ms.technology: vs-ide-debug
 ms.topic: tutorial
 f1_keywords:
 - vs.performance.wizard.intropage
@@ -18,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f206faf2934883c346b39a83c7953f87c98f95dc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ed0549cceb928b622578add5a634bb5795e5c96d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898244"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889795"
 ---
-# <a name="profile-application-performance-in-visual-studio"></a>Generar perfiles de rendimiento de la aplicación en Visual Studio
+# <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Medición del rendimiento de aplicaciones mediante el análisis de uso de CPU
 Puede utilizar las herramientas de generación de perfiles de Visual Studio para analizar problemas de rendimiento en su aplicación. Este procedimiento muestra cómo utilizar la pestaña **Uso de CPU** de las herramientas de diagnóstico para obtener datos de rendimiento para la aplicación. Se admiten las herramientas de diagnóstico para el desarrollo de .NET en Visual Studio, incluido ASP.NET, y para el desarrollo nativo de C++.
   
 Cuando el depurador se detiene, la herramienta **Uso de CPU** recopila información sobre las funciones que se ejecutan en la aplicación. La herramienta enumera las funciones que realizaron trabajo y proporciona un gráfico de escala de tiempo que se puede utilizar para centrarse en segmentos específicos de la sesión de muestreo.
@@ -69,7 +68,7 @@ En este tutorial va a:
 
      ![Pestaña Resumen de herramientas de diagnóstico](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
-     Para obtener más información sobre los eventos, consulte [Búsqueda y filtrado de la pestaña Eventos de la ventana de herramientas de diagnóstico](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx)
+     Para obtener más información sobre los eventos, vea [Searching and filtering the Events tab of the Diagnostic Tools window](https://blogs.msdn.microsoft.com/devops/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/) (Búsqueda y filtrado de la pestaña Eventos de la ventana de herramientas de diagnóstico).
 
 6.  Ejecute el escenario que hará que se alcance el primer punto de interrupción.
 

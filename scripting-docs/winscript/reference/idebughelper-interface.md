@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f0f70ecb8ead264d0d4b074f8fc1d9e3a6091eb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ba760dc15cc0a3d3f2f0d80f3a16c5621582bc11
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727315"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347481"
 ---
 # <a name="idebughelper-interface"></a>IDebugHelper (Interfaz)
-Actúa como un generador para los exploradores de objetos y puntos de conexión simple. El Administrador de depuración de procesos (PDM) implementa esta interfaz, que es utilizada por los motores de scripts.  
+Actúa como un generador para los exploradores de objetos y puntos de conexión simple. El Administrador de depuración del proceso (PDM) implementa esta interfaz, que consume los motores de scripts.  
   
  Además de los métodos heredados de `IUnknown`, el `IDebugHelper` interfaz expone los métodos siguientes.  
   
@@ -30,6 +30,6 @@ Actúa como un generador para los exploradores de objetos y puntos de conexión 
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IDebugHelper::CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)|Devuelve un explorador de propiedades que contiene una variante.|  
-|[IDebugHelper::CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)|Devuelve un explorador de propiedades que contiene una variante y permite la conversión personalizada de valores de tipo VARIANT o tipos VARTYPE a cadenas.|  
-|[IDebugHelper::CreateSimpleConnectionPoint](../../winscript/reference/idebughelper-createsimpleconnectionpoint.md)|Devuelve una interfaz de evento que contenga un determinado `IDispatch` objeto.|
+|[IDebugHelper::CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)|Devuelve un explorador de propiedades que encapsula una variante.|  
+|[IDebugHelper::CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)|Devuelve un explorador de propiedades que contiene una variante y permite la conversión personalizada de valores VARIANT o tipos VARTYPE en cadenas.|  
+|[IDebugHelper::CreateSimpleConnectionPoint](../../winscript/reference/idebughelper-createsimpleconnectionpoint.md)|Devuelve una interfaz de evento que encapsula un determinado `IDispatch` objeto.|

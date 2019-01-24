@@ -1,22 +1,22 @@
 ---
 title: Un paseo por el IDE de Visual Studio
+titleSuffix: ''
 ms.date: 07/12/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbf969e6e9a37179621cad52243418a2d0536f1a
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 057297bf3460811a848b86c84363771d2de0ed21
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42627182"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856710"
 ---
-# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Guía de inicio rápido: primer vistazo al IDE de Visual Studio
+# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Inicio rápido: Primer vistazo al IDE de Visual Studio
 
 En esta introducción al entorno de desarrollo integrado (IDE) de Visual Studio, de 5 a 10 minutos de duración, pasaremos por algunas de las ventanas, menús y otras funciones de la interfaz de usuario.
 
@@ -105,13 +105,13 @@ Si encuentra algún problema mientras usa Visual Studio o si tiene sugerencias p
 Solo se han examinado algunas de las características de Visual Studio para familiarizarse con la interfaz de usuario. Para explorarla más a fondo:
 
 > [!div class="nextstepaction"]
-> [Acerca del editor de código](../ide/quickstart-editor.md)
+> [Acerca del editor de código](../get-started/tutorial-editor.md)
 
 > [!div class="nextstepaction"]
-> [Información sobre proyectos y soluciones](../ide/quickstart-projects-solutions.md)
+> [Información sobre proyectos y soluciones](../get-started/tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>Vea también
 
-- [Información general sobre Visual Studio](../ide/visual-studio-ide.md)
+- [Información general sobre Visual Studio](../get-started/visual-studio-ide.md)
 - [Más características de Visual Studio 2017](../ide/advanced-feature-overview.md)
 - [Cambiar los colores de la fuente y el tema](../ide/quickstart-personalize-the-ide.md)

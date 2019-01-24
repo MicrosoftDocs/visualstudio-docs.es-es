@@ -3,7 +3,6 @@ title: Características de accesibilidad de Visual Studio
 description: Obtenga más información sobre las características y las utilidades de accesibilidad que ayudan a que tanto el sistema operativo Windows como el conjunto de desarrollo Visual Studio sean más accesibles para todos, incluidas las personas con discapacidades.
 ms.date: 08/22/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, accessibility
@@ -14,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d892d89f06d47ffe33d57c27b211163fa9568a2d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 28a4d386dcaa6525acb450bcabb2f459637a8cbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943704"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866483"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Características de accesibilidad de Visual Studio
 
@@ -38,21 +37,23 @@ Además de las características y utilidades de accesibilidad de Windows, las ca
 
 -   Función Autocompletar para métodos y parámetros
 
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Accesibilidad de Visual Studio para Mac](/visualstudio/mac/accessibility).
+
 > [!IMPORTANT]
 > La información de esta sección solo se aplica a los usuarios que obtengan la licencia de los productos Microsoft en Estados Unidos. Si ha obtenido este producto fuera de Estados Unidos, puede usar la tarjeta de información de subsidiaria que se incluye con el paquete de software o puede visitar la [página de información de contacto de Soporte técnico de Microsoft](http://support.microsoft.com/ContactUs) y hacer clic en el vínculo **Locate Microsoft Offices Worldwide** (Buscar oficinas de Microsoft en todo el mundo) (cerca de la parte inferior de la página). Esta página proporciona una lista de números de teléfono y direcciones de servicios de soporte técnico de Microsoft. Puede ponerse en contacto con la subsidiaria para averiguar si los tipos de productos y servicios que se describen en esta sección están disponibles en su zona. La información sobre accesibilidad está disponible en otros idiomas, incluido japonés y francés.
 
-
- Para obtener más información, vea los temas siguientes:
+Para obtener más información, vea los temas siguientes:
 
 -   [Cómo: Establecer opciones de accesibilidad del IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
--   [Cómo: Utilizar el teclado exclusivamente](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+-   [Cómo: Uso exclusivo del teclado](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
 -   [Métodos abreviados de teclado predeterminados](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
 -   [Sugerencias y trucos de accesibilidad](../../ide/reference/accessibility-tips-and-tricks.md)
 
--   [Cómo: Cambiar fuentes y colores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+-   [Cómo: Cambiar las fuentes y los colores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 ## <a name="see-also"></a>Vea también
 

@@ -1,24 +1,24 @@
 ---
 title: Características avanzadas de Visual Studio 2017
+titleSuffix: ''
 ms.date: 06/01/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 778d52d738af318dd21fa58a115dd053b44fa3a8
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 739426d5d93628c90638fef32526484f27eef3e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863658"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828503"
 ---
 # <a name="features-of-visual-studio-2017"></a>Características de Visual Studio 2017
 
-En el artículo [Introducción al IDE de Visual Studio](../ide/visual-studio-ide.md) se proporciona una introducción básica a Visual Studio. En este artículo se describen características que podrían ser más adecuadas para los desarrolladores experimentados o para aquellos que ya están familiarizados con Visual Studio.
+En el artículo [Introducción al IDE de Visual Studio](../get-started/visual-studio-ide.md) se proporciona una introducción básica a Visual Studio. En este artículo se describen características que podrían ser más adecuadas para los desarrolladores experimentados o para aquellos que ya están familiarizados con Visual Studio.
 
 ## <a name="modular-installation"></a>Instalación modular
 
@@ -126,5 +126,5 @@ Para obtener más información acerca de la extensión de Visual Studio, consult
 
 ## <a name="see-also"></a>Vea también
 
-- [Introducción al IDE de Visual Studio](../ide/visual-studio-ide.md)
+- [Introducción al IDE de Visual Studio](../get-started/visual-studio-ide.md)
 - [Novedades de Visual Studio 2017](../ide/whats-new-in-visual-studio.md)

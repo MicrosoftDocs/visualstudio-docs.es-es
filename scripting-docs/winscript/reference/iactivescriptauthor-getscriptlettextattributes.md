@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b01fba7d0e8eb80fed51b1ff0ebd3a8816bacb01
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0973b2943ed76a7baa231a287476b237cd45e257
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645695"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095464"
 ---
 # <a name="iactivescriptauthorgetscriptlettextattributes"></a>IActiveScriptAuthor::GetScriptletTextAttributes
-Devuelve los atributos de texto de un Subscript.  
+Devuelve los atributos de texto de scriptlet.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetScriptletTextAttributes(  
    LPCOLESTR pszCode,  
    ULONG cch,  
@@ -42,28 +42,28 @@ HRESULT GetScriptletTextAttributes(
   
 #### <a name="parameters"></a>Parámetros  
  `pszCode`  
- [in, size_is (`cch`)] el texto scriptlet. Esta cadena no tiene como terminadas en null.  
+ [in, size_is (`cch`)] el texto de scriptlet. Esta cadena no tiene que estar terminado en null.  
   
  `cch`  
  [in] El tamaño usado para la `pszCode` y `pattr` parámetros.  
   
  `pszDelimiter`  
- [in] La dirección del extremo de scriptlet delimitador. Cuando `pszCode` se analiza desde una secuencia de texto, el host normalmente usa un delimitador (por ejemplo, dos comillas simples), para detectar el final de la scriptlet. Establezca este parámetro en NULL si no hay delimitador se usa para identificar el final de la scriptlet.  
+ [in] La dirección del delimitador final de scriptlet. Cuando `pszCode` se analiza desde una secuencia de texto, el host normalmente utiliza un delimitador (por ejemplo, dos comillas simples), para detectar el final del scriptlet. Establezca este parámetro en NULL si no hay delimitador se utiliza para identificar el final de scriptlet.  
   
  `dwFlags`  
- [in] Los marcadores que están asociados con los atributos de texto de la scriptlet. Puede ser una combinación de los valores siguientes.  
+ [in] Marcas que están asociadas con los atributos de texto del scriptlet. Puede ser una combinación de los siguientes valores.  
   
 |Constante|Valor|Descripción|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0 x 0001|Identificar identificadores que tienen el atributo SOURCETEXT_ATTR_IDENTIFIER e identificar los operadores de punto que tienen el atributo SOURCETEXT_ATTR_MEMBERLOOKUP.|  
+|GETATTRTYPE_DEPSCAN|0 x 0001|Identificar los identificadores que tienen el atributo SOURCETEXT_ATTR_IDENTIFIER e identificar los operadores de puntos que tienen el atributo SOURCETEXT_ATTR_MEMBERLOOKUP.|  
 |GETATTRFLAG_THIS|0 x 0100|Identificar el objeto actual que tiene el atributo SOURCETEXT_ATTR_THIS.|  
-|GETATTRFLAG_HUMANTEXT|0 x 8000|Identificar el texto de contenido y un comentario de cadena que tiene el atributo SOURCETEXT_ATTR_HUMANTEXT.|  
+|GETATTRFLAG_HUMANTEXT|0 x 8000|Identificar el texto de comentario y el contenido de cadena que tiene el atributo SOURCETEXT_ATTR_HUMANTEXT.|  
   
  `pattr`  
- [entrada, salida, size_is (`cch`)] la información de color para el código de scriptlet.  
+ [in, out, size_is (`cch`)] la información de color para el código de scriptlet.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  

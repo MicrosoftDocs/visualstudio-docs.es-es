@@ -17,15 +17,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 88d4da868174396bfed148fc6088e5675e1198b2
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
-ms.translationtype: MT
+ms.openlocfilehash: fda8f23cdaff6fc98e0a0bb982d5c4c17265ecf0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37116898"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843286"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Actualizar datos mediante un TableAdapter
 

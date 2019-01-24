@@ -2,19 +2,18 @@
 title: Consejos para mejorar el rendimiento
 ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5215770d362e2f1ebd21f9131b82073376c28bf6
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: bdc20f22fc535028cb67939fed9c9472ed081428
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626992"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956899"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Sugerencias y trucos de rendimiento de Visual Studio
 
@@ -27,7 +26,7 @@ Las recomendaciones de rendimiento de Visual Studio están previstas para situac
 
 Si actualiza el sistema desde una versión de Windows de 32 bits a una de 64 bits, se amplía la cantidad de memoria virtual disponible para Visual Studio de 2 GB a 4 GB. Esto permite a Visual Studio gestionar cargas de trabajo considerablemente mayores, aunque sea un proceso de 32 bits.
 
-Para obtener más información, vea [Memory limits](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) (Límites de memoria) y [Using /LARGEADDRESSAWARE on 64-bit Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/) (Uso de /LARGEADDRESSAWARE en Windows de 64 bits).
+Para obtener más información, vea [Memory limits](/windows/desktop/Memory/memory-limits-for-windows-releases#memory_limits) (Límites de memoria) y [Using /LARGEADDRESSAWARE on 64-bit Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/) (Uso de /LARGEADDRESSAWARE en Windows de 64 bits).
 
 ## <a name="disable-automatic-file-restore"></a>Desactivación de la restauración automática de archivos
 
@@ -123,7 +122,7 @@ Para más información sobre las consideraciones de rendimiento de .NET Compiler
 
 CLR usa un sistema de administración de memoria de recopilación de elementos no utilizados. En este sistema, a veces hay objetos que ya no son necesarios pero que usan memoria. Este estado es temporal; el recolector de elementos no utilizados libera esta memoria en función de su rendimiento y heurística de uso de recursos. Puede forzar a CLR a que recopile la memoria sin usar mediante una tecla de acceso rápido en Visual Studio. Si hay una cantidad considerable de elementos no utilizados en espera de recolección y se fuerza esta, debería ver cómo se reduce el uso de memoria del proceso *devenv.exe* en el **Administrador de tareas**. Es raro tener que recurrir a este método. Pero después de que se haya completado una operación costosa (por ejemplo, una compilación completa, una sesión de depuración o un evento de apertura de solución), puede ayudar a determinar cuánta memoria está usando realmente el proceso. Dado que Visual Studio es mixto (administrado y nativo), a veces es posible que el asignador nativo y el recolector de elementos no utilizados compitan por recursos de memoria limitados. En condiciones de elevado uso de memoria, puede ser útil forzar la ejecución del recolector de elementos no utilizados.
 
-Para forzar una recolección de elementos no utilizados, use este atajo de teclado: **CTRL**+**Alt**+**Mayús**+**F12**, **CTRL**+**Alt**+**Mayús**+**F12** (presione dos veces).
+Para forzar una recolección de elementos no utilizados, use la tecla de acceso rápido: **Ctrl**+**Alt**+**Mayús**+**F12**, **Ctrl**+**Alt**+**Mayús**+**F12** (presionar dos veces).
 
 Si la aplicación de la recolección de elementos no utilizados hace que el escenario funcione mejor, rellene un informe a través de la herramienta de comentarios de Visual Studio, ya que este comportamiento probablemente sea un error.
 

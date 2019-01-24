@@ -1,5 +1,6 @@
 ---
-title: Admite las ediciones de Visual Studio para la visualización &amp; SDK de modelado
+title: Admite las ediciones de Visual Studio de visualización y modelado de SDK
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,19 +11,20 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 16a00dd5c0769cb49f5281570ba11433afa56dfe
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 402c746f23eb472b3b63066389464c4fed6346a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858865"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870260"
 ---
-# <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Admite las ediciones de Visual Studio para la visualización &amp; SDK de modelado
+# <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>Versiones de Visual Studio compatibles con el SDK de modelado y virtualización
+
 Los siguientes son las listas de las ediciones de Visual Studio que son compatibles con [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] en los entornos de creación e implementación. Para obtener más información acerca de estas ediciones, vea Microsoft Visual Studio [Centro para desarrolladores de](http://go.microsoft.com/fwlink/?LinkId=75628).
 
 ## <a name="authoring-edition"></a>Edición para creación
- Para definir un DSL, debe tener instalados los siguientes componentes:
+
+Para definir un DSL, debe tener instalados los siguientes componentes:
 
 |||
 |-|-|
@@ -33,7 +35,8 @@ Los siguientes son las listas de las ediciones de Visual Studio que son compatib
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
 ## <a name="deployment-editions"></a>Ediciones para implementación
- [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] admite las siguientes configuraciones para implementar los lenguajes específicos del dominio que compile:
+
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] admite las siguientes configuraciones para implementar los lenguajes específicos del dominio que compile:
 
 -   Visual Studio Enterprise
 
@@ -44,8 +47,8 @@ Los siguientes son las listas de las ediciones de Visual Studio que son compatib
 -   Paquete redistribuible de Visual Studio Shell (modo aislado) paquete redistribuible
 
 > [!NOTE]
->  Para hacer que un DSL pueda ejecutarse en un producto Shell, debe establecer el **admite VS Edition** campo en el manifiesto de la extensión. Para obtener más información, consulte [implementar soluciones de lenguajes específicos de dominio](../modeling/deploying-domain-specific-language-solutions.md).
+> Para hacer que un DSL pueda ejecutarse en un producto Shell, debe establecer el **admite VS Edition** campo en el manifiesto de la extensión. Para obtener más información, consulte [implementar soluciones de lenguajes específicos de dominio](../modeling/deploying-domain-specific-language-solutions.md).
 
 ## <a name="see-also"></a>Vea también
 
-- [Glosario de las herramientas de lenguajes específicos de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glosario de las herramientas de lenguajes específicos de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

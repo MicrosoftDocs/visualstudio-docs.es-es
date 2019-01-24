@@ -1,8 +1,6 @@
 ---
 title: CL (tarea) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.UseUnicodeForAssemblerListing
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f23a23f1dbdb8dc66a46e1eb1e0b9f1156182e2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cea2e191c5a85b8aac592e4e438eaa3b93bcd4f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922411"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912774"
 ---
 # <a name="cl-task"></a>CL (tarea)
 Contiene la herramienta compilador de Visual C++, *cl.exe*. El compilador genera archivos ejecutables (*.exe*), archivos de biblioteca de vínculos dinámicos (*.dll*) o archivos de módulos de códigos (*.netmodule*). Para obtener más información, vea [Opciones del compilador](/cpp/build/reference/compiler-options).  
@@ -52,7 +50,9 @@ Contiene la herramienta compilador de Visual C++, *cl.exe*. El compilador genera
   
    Para obtener más información, vea [Opciones del compilador](/cpp/build/reference/compiler-options).  
   
-- **AdditionalUsingDirectories**Parámetro String[] opcional.  
+- **AdditionalUsingDirectories**
+
+   Parámetro String[] opcional.  
   
    Especifica un directorio en que el compilador debe buscar para resolver las referencias de archivos que se pasan a la directiva **#using**.  
   

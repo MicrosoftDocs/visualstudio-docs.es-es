@@ -2,7 +2,6 @@
 title: Introducción a las pruebas unitarias
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 171d329ed852bf6a27f20f12ae0f5421103820ff
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 557102378757919abfff4280e4a8d842707c74a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370812"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959515"
 ---
 # <a name="get-started-with-unit-testing"></a>Introducción a las pruebas unitarias
 
@@ -147,7 +146,7 @@ Estos son los pasos que permiten habilitar los marcos de pruebas de terceros:
 
 1. Codifique la prueba unitaria.
 
-   ![Agregar código a la prueba unitaria](media/create3rdpartyunittest7.png)
+   ![Adición de código al archivo de prueba unitaria](media/create3rdpartyunittest7.png)
 
 ## <a name="see-also"></a>Vea también
 

@@ -1,8 +1,6 @@
 ---
 title: Tarea ResolveNonMSBuildProjectOutput | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 404aca8b6c400cd3001f663cda593b30db8e6e2c
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 5ca7fe0b9ed987896749319e3c14f2a926450782
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153581"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990927"
 ---
 # <a name="resolvenonmsbuildprojectoutput-task"></a>ResolveNonMSBuildProjectOutput (tarea)
 Determina los archivos de salida de las referencias de proyecto que no son de MSBuild.  

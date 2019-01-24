@@ -1,8 +1,6 @@
 ---
-title: Técnicas de depuración de CRT | Documentos de Microsoft
-ms.custom: ''
+title: Técnicas de depuración de CRT | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - c.runtime.debugging
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 890dec4a47a4dd49fa75521aaad068d331652a92
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 99edc41e86d492e8a38341917de1a5d7543dc93d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458432"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889116"
 ---
 # <a name="crt-debugging-techniques"></a>Técnicas de depuración de CRT
 Si está depurando un programa que utiliza la biblioteca en tiempo de ejecución de C, estas técnicas de depuración podrían resultar útiles.  
@@ -36,7 +34,7 @@ Si está depurando un programa que utiliza la biblioteca en tiempo de ejecución
  Describe las capacidades de depuración suministradas por la biblioteca en tiempo de ejecución de C y proporciona instrucciones para obtener acceso a las herramientas.  
   
  [Macros para los informes](../debugger/macros-for-reporting.md)  
- Proporciona información sobre la **_RPTn** y **_RPTFn** macros (que se define en CRTDBG. (H), que reemplazan el uso de `printf` instrucciones para la depuración.  
+ Proporciona información sobre las macros **_RPTn** y **_RPTFn** (definidas en CRTDBG.H), que reemplazan el uso de instrucciones `printf` para la depuración.  
   
  [Versiones de depuración de las funciones de asignación del montón](../debugger/debug-versions-of-heap-allocation-functions.md)  
  Analiza las versiones especiales de depuración de las funciones de asignación del montón: cómo asigna CRT las llamadas, las ventajas de llamarlas explícitamente, cómo evitar la conversión, el seguimiento de los tipos independientes de asignaciones en bloques cliente, y el resultado de no definir _DEBUG.  

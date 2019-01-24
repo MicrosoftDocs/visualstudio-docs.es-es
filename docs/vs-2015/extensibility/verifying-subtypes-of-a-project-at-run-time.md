@@ -16,12 +16,12 @@ ms.assetid: b87780ec-36a3-4e9a-9ee2-7abdc26db739
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e8aa68670b82fdba0f189cfb8bf2a06db15f33b4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 892ba25ff70f62f77016bea1b88436c4f5a6a5b0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215064"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51779897"
 ---
 # <a name="verifying-subtypes-of-a-project-at-run-time"></a>Comprobación de subtipos de un proyecto en tiempo de ejecución
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

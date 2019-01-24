@@ -13,15 +13,15 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7e492996a194c6602af3ec412b86f7477ef233e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 506792f6a6be550377a4cd711ffc7f04e1b9091f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928716"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822268"
 ---
 # <a name="properties-of-image-shapes"></a>Propiedades de las formas de imagen
+
 Puede usar formas de imagen para especificar cómo aparecen las clases de dominio en un diseñador generado. Definir una forma de imagen estableciendo el `Image` propiedad de la clase a un archivo de imagen predefinidos. Se admiten los siguientes formatos:
 
 - .gif
@@ -38,11 +38,11 @@ Puede usar formas de imagen para especificar cómo aparecen las clases de domini
 
 - .png
 
-  De forma predeterminada, los archivos de recursos del diseñador, como archivos de imagen, se encuentran en el **recursos**carpeta en el **Dsl** proyecto.
+De forma predeterminada, los archivos de recursos del diseñador, como archivos de imagen, se encuentran en el **recursos** carpeta en el **Dsl** proyecto.
 
-  Para obtener más información, consulte [cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md). Para obtener más información sobre cómo usar estas propiedades, vea [personalizar y ampliar lenguajes específicos de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Para obtener más información, consulte [cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md). Para obtener más información sobre cómo usar estas propiedades, vea [personalizar y ampliar lenguajes específicos de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-  Las formas de imagen tienen las propiedades que aparecen en la tabla siguiente.
+Las formas de imagen tienen las propiedades que aparecen en la tabla siguiente.
 
 |Property|Descripción|Default|
 |-|-|-|
@@ -74,4 +74,4 @@ Puede usar formas de imagen para especificar cómo aparecen las clases de domini
 
 ## <a name="see-also"></a>Vea también
 
-- [Glosario de las herramientas de lenguajes específicos de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glosario de las herramientas de lenguajes específicos de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

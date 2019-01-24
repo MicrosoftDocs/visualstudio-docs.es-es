@@ -15,12 +15,12 @@ ms.assetid: 08319157-43fb-44a9-9a63-50b919fe1377
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 154157a8de67cd1bef8fd489b3c1fc7406a05629
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 758f60b5bea17943eae9e55c98db420df2404d5a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303676"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758280"
 ---
 # <a name="sending-the-required-events"></a>Envío de los eventos necesarios
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

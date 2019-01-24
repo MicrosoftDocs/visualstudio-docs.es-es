@@ -1,8 +1,6 @@
 ---
-title: Automatizar Word con objetos extendidos
-ms.custom: ''
+title: Automatizar Word usando objetos extendidos
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -18,19 +16,19 @@ helpviewer_keywords:
 - host controls, Word
 - host controls [Office development in Visual Studio], Word
 - Word [Office development in Visual Studio], host controls
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8ac9c610cdc7111eaeb5204e1b9d4fe6cde27a9c
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 8244aec25b0179c22e88f91b4577d2fa78c119f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34264865"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950152"
 ---
-# <a name="automate-word-by-using-extended-objects"></a>Automatizar Word con objetos extendidos
+# <a name="automate-word-by-using-extended-objects"></a>Automatizar Word usando objetos extendidos
   Cuando desarrolla soluciones de Word en Visual Studio, puede usar la opción *elementos host* y *controles host*en sus soluciones. Se trata de objetos que extienden algunos objetos de uso común en el modelo de objetos de Word (es decir, el modelo de objetos expuesto por el ensamblado de interoperabilidad primario de Word), como los objetos <xref:Microsoft.Office.Interop.Word.Document> y <xref:Microsoft.Office.Interop.Word.ContentControl> . Los objetos extendidos se comportan como los objetos de Word en los que se basan, pero agregan eventos adicionales y capacidades de enlace de datos a los objetos.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -45,7 +43,7 @@ ms.locfileid: "34264865"
 ## <a name="word-host-controls"></a>controles host de Word  
  Existen varios controles host de Word que le ayudarán a crear, organizar y automatizar documentos. La mayor parte de su funcionalidad implica importar, presentar y proteger los datos. Estos controles host proporcionan eventos y capacidades de enlace de datos que no tienen sus homólogos en el modelo de objetos nativo de Word.  
   
- En los proyectos de nivel de documento, puede agregar cualquier control host al documento en tiempo de diseño, o puede agregar controles de contenido y los controles bookmark en tiempo de ejecución. En proyectos de complemento de VSTO, puede agregar controles de contenido y de marcador a cualquier documento abierto en tiempo de ejecución.  
+ En los proyectos de nivel de documento, puede agregar cualquier control host al documento en tiempo de diseño, o puede agregar controles de contenido y los controles bookmark en tiempo de ejecución. En proyectos de complemento VSTO, puede agregar controles de contenido y los controles bookmark a cualquier documento abierto en tiempo de ejecución.  
   
  Para obtener más información acerca de los controles host que puede usar en proyectos de Word, consulte los siguientes temas:  
   
@@ -58,17 +56,15 @@ ms.locfileid: "34264865"
 -   [XMLNodes (control)](../vsto/xmlnodes-control.md)  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: agregar controles de contenido a documentos de Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [Cómo: agregar controles Bookmark a documentos de Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
- [Cómo: agregar controles XMLNode a documentos de Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)   
- [Cómo: agregar controles XMLNodes a documentos de Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)   
- [Cómo: cambiar el tamaño de los controles Bookmark](../vsto/how-to-resize-bookmark-controls.md)   
+ [Cómo: Agregar controles de contenido a documentos de Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [Cómo: Agregar controles Bookmark a documentos de Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
+ [Cómo: Agregar controles XMLNode a documentos de Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)   
+ [Cómo: Agregar controles XMLNodes a documentos de Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)   
+ [Cómo: Cambiar el tamaño de los controles Bookmark](../vsto/how-to-resize-bookmark-controls.md)   
  [Tutorial: Crear una plantilla mediante controles de contenido](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)   
  [Tutorial: Enlazar controles de contenido a elementos XML personalizados](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)   
  [Tutorial: Crear menús contextuales para marcadores](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)   
  [Soluciones de Word](../vsto/word-solutions.md)   
  [Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)   
  [Limitaciones de programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Ampliar documentos de Word y libros de Excel en complementos VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)  
-  
-  
+ [Extender documentos de Word y libros de Excel en complementos VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)  

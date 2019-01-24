@@ -12,15 +12,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6620553bce810abcf1a51ac8592061ef017dd9bf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: cf880ed8b0295e841026e884f6cec71a9f52d4ae
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734045"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347494"
 ---
 # <a name="scriptuicitem-enumeration"></a>SCRIPTUICITEM (Enumeración)
-Representa el tipo de elemento de interfaz de usuario. Utilizado en el [iactivescriptsiteuicontrol:: Getuibehavior (método)](../../winscript/reference/iactivescriptsiteuicontrol-getuibehavior-method.md).  
+Representa el tipo de elemento de interfaz de usuario. Utilizado en el [Iactivescriptsiteuicontrol método](../../winscript/reference/iactivescriptsiteuicontrol-getuibehavior-method.md).  
   
 ## <a name="syntax"></a>Sintaxis  
   

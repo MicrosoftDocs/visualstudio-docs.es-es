@@ -1,20 +1,19 @@
 ---
-title: Implementación de una interfaz en Visual Studio
+title: Implementar una interfaz
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d34c3978b119b978e83204967e4d5f6af5946314
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ff5c0fb698bba3df955008ebb5d95175dcfc8beb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811547"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886616"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Implementación de una interfaz en Visual Studio
 
@@ -24,11 +23,11 @@ Esta generación de código se aplica a:
 
 - Visual Basic
 
-**Qué:** Le permite generar inmediatamente el código necesario para implementar una interfaz.
+**Qué:** Permite generar inmediatamente el código necesario para implementar una interfaz.
 
-**Cuándo:** Desea heredar de una interfaz.
+**Cuándo:** Se quiere heredar de una interfaz.
 
-**Por qué:** Podría implementar manualmente todas las interfaces una por una, sin embargo, esta característica generará automáticamente todas las firmas de método de manera automática.
+**Por qué:** Se podrían implementar manualmente todas las interfaces una por una, pero esta característica generará de forma automática todas las firmas de método.
 
 ## <a name="how-to"></a>Procedimiento
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumSegments interface
 ms.assetid: 0c9edd5e-b9ce-43e1-a791-cd4c5d16d923
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 059e6ef635ea48169f75203bbffd6134b35e7b90
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 192edcf8bff9f72edfd022684bb2453e3f774149
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216351"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760650"
 ---
 # <a name="idiaenumsegments"></a>IDiaEnumSegments
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Enumera los distintos segmentos contenidos en el origen de datos.
 ## <a name="syntax"></a>Sintaxis  
   
 ```  
-IDiaEnumSegments : IUnknown  
+IDiaEnumSegments : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  

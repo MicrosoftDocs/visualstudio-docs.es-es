@@ -1,11 +1,11 @@
 ---
 title: -Edit (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
-- Devenv, /edit switch
+- Edit Devenv switch
+- Devenv, /Edit switch
 - /Edit Devenv switch
 ms.assetid: 02b3d6e7-a2b1-4d83-a747-aa8c2fb758b7
 author: gewarren
@@ -13,41 +13,47 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8ee96ef2cd8713b592eabef11942e895bd93534
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: fb5ae37d3e4dc0973320c68f9db169cdbf7d663a
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510135"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227686"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
-Abre el archivo especificado en una instancia existente de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+
+Abre el archivo especificado en una instancia existente de Visual Studio.
 
 ## <a name="syntax"></a>Sintaxis
 
-```cmd
-Devenv /edit [file1[ file2]]
+```shell
+devenv /Edit [File1[ FileN]...]
 ```
 
 ## <a name="arguments"></a>Argumentos
- `file1`
 
- Opcional. El archivo que se abre en una instancia existente de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Si no existe ninguna instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], se crea una instancia con un diseño de ventanas simplificado y se abre `file1` en la nueva instancia.
+- *File1*
 
- `file2`
+  Opcional. Archivo que se abrirá en una instancia existente de Visual Studio. Si no existe ninguna instancia de Visual Studio, se creará una instancia con un diseño de ventana simplificado y la herramienta abrirá *File1* en la nueva instancia.
 
- Opcional. Uno o más archivos adicionales que se van a abrir en la instancia existente de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+- *FileN*
+
+  Opcional. Uno o más archivos adicionales que se abrirán en la instancia existente de Visual Studio.
 
 ## <a name="remarks"></a>Comentarios
- Si no se especifica ningún archivo y ya hay una instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], la instancia existente de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] recibe el foco. Si no se especifica ningún archivo y no hay ninguna instancia existente de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], se crea una instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] con un diseño de ventanas simplificado.
 
- Si la instancia existente de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] está en un estado modal, por ejemplo, si el cuadro de diálogo [Opciones](../../ide/reference/options-dialog-box-visual-studio.md) está abierto, el archivo se abrirá en la instancia existente cuando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] salga del estado modal.
+Si no se especifica ningún archivo, recibirá el foco una instancia de Visual Studio existente. Si no se especifica ningún archivo y no existe ninguna instancia de Visual Studio, la herramienta creará una instancia con un diseño de ventana simplificado.
+
+Si la instancia de Visual Studio existente se encuentra en el estado modal, el archivo se abrirá en la instancia existente cuando Visual Studio salga del estado modal. Por ejemplo, esta situación puede producirse cuando esté abierto el [cuadro de diálogo Opciones](../../ide/reference/options-dialog-box-visual-studio.md).
 
 ## <a name="example"></a>Ejemplo
- En este ejemplo se abre el archivo `MyFile.cs` en una instancia existente de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o se abre el archivo en una nueva instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] si todavía no hay ninguna.
 
-```cmd
+En el primer ejemplo se abre el archivo `MyFile.cs` en una instancia existente de Visual Studio. Si no existe ninguna instancia de Visual Studio, la herramienta abre el archivo en una nueva instancia. El segundo ejemplo es similar, excepto que abre tres archivos en lugar de uno.
+
+```shell
 devenv /edit MyFile.cs
+
+devenv /edit MyFile1.cs MyFile2.cs MyFile3.cs
 ```
 
 ## <a name="see-also"></a>Vea también

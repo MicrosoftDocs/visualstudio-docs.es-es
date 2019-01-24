@@ -1,8 +1,7 @@
 ---
-title: Análisis de código para código administrado en Visual Studio
+title: Análisis de código estático para código administrado
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.projectpropertypages.codeanalysis
@@ -14,29 +13,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ad1b093c224e37ce53dc77472518d03f2dc8093b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: d609413f0c0c955ef334e6b4e25719d59ab06e64
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320820"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987108"
 ---
-# <a name="overview-of-code-analysis-for-managed-code"></a>Información general de análisis de código para código administrado
+# <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Información general del análisis de código estático de código administrado en Visual Studio
 
-Visual Studio 2017 analiza el código administrado de dos maneras: con legacy *FxCop* análisis estático de los ensamblados administrados y con .NET Compiler Platform *analizadores*. En este tema se trata los análisis de código estático de FxCop. Para más información acerca del análisis de código mediante el uso de los analizadores de .NET Compiler Platform, consulte [analizadores de información general de Roslyn](../code-quality/roslyn-analyzers-overview.md).
+Visual Studio 2017 puede realizar análisis de código del código administrado de dos maneras: con *FxCop* análisis estático de los ensamblados administrados y con la versión más moderna *analizadores de Roslyn*. En este tema se trata los análisis de código estático de FxCop. Para más información acerca del análisis de código mediante el uso de analizadores de código, consulte [analizadores de información general de Roslyn](../code-quality/roslyn-analyzers-overview.md).
 
 En el análisis de código administrado se analizan los ensamblados administrados y se muestra información sobre dichos ensamblados, como por ejemplo las infracciones de las reglas de programación y las reglas de diseño estipuladas en las instrucciones de diseño de Microsoft .NET Framework.
 
 La herramienta de análisis representa las comprobaciones que realiza durante un análisis como mensajes de advertencias. Los mensajes de advertencia identifican cualquier problema pertinente de programación y diseño y, cuando es posible, proporcionan información sobre la solución del problema.
 
 > [!NOTE]
-> Análisis de código estático no se admite para los proyectos de .NET Core y .NET Standard en Visual Studio. Ejecutar análisis de código en un proyecto .NET Core o .NET Standard como parte de msbuild, verá un error similar al **error: CA0055: no se pudo identificar la plataforma para \<your.dll >**. Para analizar el código en proyectos de .NET Core o .NET Standard, use [analizadores de Roslyn](../code-quality/roslyn-analyzers-overview.md) en su lugar.
+> Análisis de código estático no se admite para los proyectos de .NET Core y .NET Standard en Visual Studio. Ejecutar análisis de código en un proyecto .NET Core o .NET Standard como parte de msbuild, verá un error similar al **error: CA0055: No se pudo identificar la plataforma para \<your.dll >**. Para analizar el código en proyectos de .NET Core o .NET Standard, use [analizadores de Roslyn](../code-quality/roslyn-analyzers-overview.md) en su lugar.
 
 ## <a name="ide-integrated-development-environment-integration"></a>Integración del IDE (entorno de desarrollo integrado)
 
 Puede ejecutar análisis de código en el proyecto de forma manual o automática.
 
-Para ejecutar análisis de código cada vez que se compila un proyecto, seleccione **Habilitar análisis de código al compilar** en la página de propiedades del proyecto. Para obtener más información, consulte [Cómo: habilitar y deshabilitar el análisis de código automático](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
+Para ejecutar análisis de código cada vez que se compila un proyecto, seleccione **Habilitar análisis de código al compilar** en la página de propiedades del proyecto. Para obtener más información, vea [Cómo: Habilitar y deshabilitar el análisis de código automático](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
 Para ejecutar análisis de código manualmente en un proyecto, en la barra de menús elija **analizar** > **ejecutar análisis de código** > **ejecutar análisis de código en \<proyecto >**.
 
@@ -51,7 +50,7 @@ Normalmente, resulta útil indicar que una advertencia no es aplicable. De este 
 La supresión de advertencias en el código fuente se implementa a través de atributos personalizados. Para suprimir una advertencia, agregue el atributo `SuppressMessage` al código fuente como se muestra en el ejemplo siguiente:
 
 ```csharp
-[System.Diagnosis.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]
+[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]
 Public class MyClass
 {
    // code
@@ -71,11 +70,11 @@ En una organización, puede ser necesario exigir que todas las protecciones cump
 
 - Análisis de código se ejecuta como parte de la compilación más reciente.
 
-Para conseguirlo, se especifican las directivas de inserción en el repositorio. Para obtener más información, consulte [mejorar la calidad del código con directivas de protección del proyecto](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).
+Para conseguirlo, se especifican las directivas de inserción en el repositorio. Para obtener más información, consulte [mejorar la calidad del código con directivas de protección del proyecto](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md).
 
 ## <a name="team-build-integration"></a>Integración de Team build
 
-Puede utilizar las características integradas del sistema de generación para ejecutar la herramienta de análisis como parte del proceso de generación. Para obtener más información, consulte [canalizaciones de Azure](/azure/devops/pipelines/index?view=vsts).
+Puede utilizar las características integradas del sistema de generación para ejecutar la herramienta de análisis como parte del proceso de generación. Para obtener más información, consulte [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
 ## <a name="see-also"></a>Vea también
 

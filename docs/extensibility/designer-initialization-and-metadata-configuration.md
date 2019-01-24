@@ -1,9 +1,6 @@
 ---
 title: Inicialización de diseñador y configuración de los metadatos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK], initializing
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58f103ae1dcf445c5bdfe322eeea7a88a7b25683
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5dae44a2fced40894003d2f739af1147b293494a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843280"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885403"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Configuración de inicialización y metadatos del diseñador
 Manipulación de los atributos de metadatos y el filtro asociado con un diseñador o un componente del diseñador proporciona un mecanismo para las aplicaciones definir qué herramientas se usan un diseñador concreto para controlar diferentes <xref:System.Type> objetos (por ejemplo, las estructuras de datos las clases o entidades gráficas), cuando el diseñador está disponible, y cómo se configura el IDE de Visual Studio para admitir el diseñador (para la instancia que **cuadro de herramientas** categoría o pestaña está disponible).  

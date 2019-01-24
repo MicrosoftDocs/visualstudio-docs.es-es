@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: Limitar la instrumentación a funciones específicas | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Limitar la instrumentación a funciones específicas | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, limiting instrumentation to functions
@@ -12,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 042ef6ef7a562f03f84184a86944a93f99c1d13e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d0135ea7d3a99f54b8bc61fb77c5b1657992033c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815161"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895063"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Cómo: Limitar la instrumentación a funciones específicas
+# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Procedimiento Limitar la instrumentación a funciones específicas
 La instrumentación y recopilación de datos se pueden limitar a una o más funciones. Basta con establecer las opciones de la página **Avanzado** de la **Sesión de rendimiento** o las páginas de propiedades del binario de destino:  
   
 - Si especifica las funciones en la página de propiedades de la sesión de rendimiento, se instrumentan solo esas funciones en todos los binarios instrumentados de la sesión.  
@@ -46,7 +44,7 @@ La instrumentación y recopilación de datos se pueden limitar a una o más func
     `FuncSpec` es el nombre del espacio de nombres y la función. Tiene el formato `Namespace`**::**`FunctionName`. Use un signo de punto y coma para separar varias funciones. Use un asterisco (\*) para especificar un carácter comodín para uno o más caracteres. Por ejemplo, **-include:MyNS::\\*** especifica todas las funciones en el espacio de nombres MyNS.  
   
    > [!NOTE]
-   >  Para obtener una lista de las funciones en un archivo binario, abra una ventana de símbolo del sistema en el directorio de instalación de herramientas de generación de perfiles (normalmente, el directorio \Team Tools\Performance Tools en el directorio de instalación de [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)]) y después escriba **vsinstr /DumpFuncs**  
+   >  Para obtener una lista de las funciones en un archivo binario, abra una ventana de símbolo del sistema en el directorio de instalación de Herramientas de generación de perfiles (vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) y después escriba **vsinstr /DumpFuncs**.  
   
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-binary"></a>Para limitar la instrumentación a funciones específicas en un binario  
   
@@ -65,9 +63,9 @@ La instrumentación y recopilación de datos se pueden limitar a una o más func
     `FuncSpec` es el nombre del espacio de nombres y la función. Tiene el formato `Namespace`**::**`FunctionName`. Use un signo de punto y coma para separar varias funciones. Use un asterisco (\*) para especificar un carácter comodín para uno o más caracteres. Por ejemplo, **-include:MyNS::\\*** especifica todas las funciones en el espacio de nombres MyNS.  
   
    > [!NOTE]
-   >  Para obtener una lista de las funciones en un archivo binario, abra una ventana de símbolo del sistema en el directorio de instalación de herramientas de generación de perfiles (normalmente, el directorio \Team Tools\Performance Tools en el directorio de instalación de [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)]) y después escriba **vsinstr /DumpFuncs**  
+   >  Para obtener una lista de las funciones en un archivo binario, abra una ventana de símbolo del sistema en el directorio de instalación de Herramientas de generación de perfiles (vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) y después escriba **vsinstr /DumpFuncs**.  
   
 ## <a name="see-also"></a>Vea también  
  [Controlar la recopilación de datos](../profiling/controlling-data-collection.md)   
  [Cómo: Limitar la instrumentación a archivos DLL específicos](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
- [Especificación de opciones de instrumentación adicionales](../profiling/how-to-specify-additional-instrumentation-options.md)
+ [Cómo: Especificar opciones de instrumentación adicionales](../profiling/how-to-specify-additional-instrumentation-options.md)

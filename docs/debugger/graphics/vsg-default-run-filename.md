@@ -1,8 +1,6 @@
 ---
-title: VSG_DEFAULT_RUN_FILENAME | Documentos de Microsoft
-ms.custom: ''
+title: VSG_DEFAULT_RUN_FILENAME | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: ea549d2f-c857-458c-93c7-bc5a2d11d15d
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 303bce554ff6345a37719a8d2f529f3c1ffe02e2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: a05acfd07e8b67bf500864f00ead4d78f2da22ae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472030"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922565"
 ---
 # <a name="vsgdefaultrunfilename"></a>VSG_DEFAULT_RUN_FILENAME
 Define el nombre de archivo predeterminado del archivo de registro de gráficos.  
@@ -40,7 +38,7 @@ Define el nombre de archivo predeterminado del archivo de registro de gráficos.
 ## <a name="remarks"></a>Comentarios  
  Si se define el símbolo de preprocesador `DONT_SAVE_VSGLOG_TO_TEMP`, el nombre de archivo es relativo al directorio actual de la aplicación capturada o es una ruta de acceso absoluta; de lo contrario, es relativo al directorio de archivos temporales del usuario y no puede ser una ruta de acceso absoluta.  
   
- Para cambiar el nombre de archivo definido, debe volver a definirlo antes de incluir `vsgcapture.h` en el programa.  
+ Para cambiar el nombre de archivo, debe volver a definirlo antes de incluir `vsgcapture.h` en el programa.  
   
 ## <a name="example"></a>Ejemplo  
  En este ejemplo se muestra cómo cambiar el nombre de archivo predeterminado del archivo de captura:  

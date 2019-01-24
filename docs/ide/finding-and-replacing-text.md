@@ -2,7 +2,6 @@
 title: Buscar y reemplazar texto, y selección de varios símbolos de inserción
 ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.find
@@ -12,7 +11,6 @@ f1_keywords:
 - findresultswindow
 - vs.findreplace.quickreplace
 - vs.findsymbol
-- vs.findinfiles
 - vs.findresults1
 - vs,findsymbolwindow
 - vs.findreplace.quickfind
@@ -33,12 +31,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f6359585f13a4086a332d8a4dbcc3c435aeaa26
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 189f56dd0017ee431a4e91c82684b8f678891e44
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384245"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866418"
 ---
 # <a name="find-and-replace-text"></a>Buscar y reemplazar texto
 
@@ -93,6 +91,9 @@ Puede definir conjuntos de componentes como su ámbito de búsqueda pulsando el 
 
 ## <a name="multi-caret-selection"></a>Selección de varios símbolos de inserción
 
+> [!NOTE]
+> Esta sección se aplica a Visual Studio en Windows. En el caso de Visual Studio para Mac, vea [Selección de bloques](/visualstudio/mac/block-selection).
+
 **Novedad de Visual Studio 2017 versión 15.8**
 
 Puede usar la *selección de varios símbolos de inserción* para realizar la misma edición en dos o más lugares al mismo tiempo. Por ejemplo, puede insertar el mismo texto o modificar el texto existente en varias ubicaciones al mismo tiempo.
@@ -130,3 +131,4 @@ Algunos de los comandos también están disponibles en el menú **Edición**, en
 
 - [Usar expresiones regulares en Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)
 - [Refactorizar el código en Visual Studio](../ide/refactoring-in-visual-studio.md)
+- [Selección de bloques (Visual Studio para Mac)](/visualstudio/mac/block-selection)

@@ -1,9 +1,6 @@
 ---
 title: IDebugPort2::GetProcess | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPort2::GetPortSupplier
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4958e296e83e3de0d8c3e41b73c0b30af144d743
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4e5d7ef517a08aaa3fc1cce91aac411061bf5f84
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863209"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908636"
 ---
 # <a name="idebugport2getprocess"></a>IDebugPort2::GetProcess
 Obtiene el proceso especificado que se ejecuta en un puerto.  
@@ -28,14 +25,14 @@ Obtiene el proceso especificado que se ejecuta en un puerto.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT GetProcess(   
+HRESULT GetProcess(   
    AD_PROCESS_ID    ProcessId,  
    IDebugProcess2** ppProcess  
 );  
 ```  
   
 ```csharp  
-int GetProcess(   
+int GetProcess(   
    AD_PROCESS_ID      ProcessId,  
    out IDebugProcess2 ppProcess  
 );  

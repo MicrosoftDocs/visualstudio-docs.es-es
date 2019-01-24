@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: crear controladores de eventos en proyectos de Office'
-ms.custom: ''
+title: Procedimiento Crear controladores de eventos en proyectos de Office
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,19 +10,19 @@ helpviewer_keywords:
 - event handlers [Office development in Visual Studio]
 - Visual C# [Office development in Visual Studio], event handlers
 - events [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8b7e55ee7f094ad104d9c8eb6ef3057621bcccee
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 338aefadd88c80c533912be3524a496dab932ba9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254249"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859846"
 ---
-# <a name="how-to-create-event-handlers-in-office-projects"></a>Cómo: crear controladores de eventos en proyectos de Office
+# <a name="how-to-create-event-handlers-in-office-projects"></a>Procedimiento Crear controladores de eventos en proyectos de Office
   Hay varias maneras de crear controladores de eventos en Visual Basic y C#. En la vista Diseño, puede crear el valor predeterminado los controladores de eventos para controles haciendo doble clic en el control, o utilice el panel de eventos de la **propiedades** ventana para crear controladores para cualquier evento en el control. Sin embargo, si está en la vista código, es posible que no desea cambiar a vista de diseño para crear un controlador de eventos.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -57,5 +54,3 @@ ms.locfileid: "35254249"
  [Escribir código en soluciones de Office](../vsto/writing-code-in-office-solutions.md)   
  [Tutorial: Programar basándose en eventos de un control NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
  [Compilar soluciones de Office](../vsto/building-office-solutions.md)  
-  
-  

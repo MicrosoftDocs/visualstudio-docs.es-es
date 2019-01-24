@@ -1,9 +1,6 @@
 ---
 title: Consideraciones para descargar y recargar anidados proyectos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, unloading and reloading
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c38b50f661ed7ea16c56d9a877b809d2d60dd51c
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: db5af7d761df39e2a0fee29f27e3f34526f07a7e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513463"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870945"
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>Consideraciones para descargar y recargar proyectos anidados
 

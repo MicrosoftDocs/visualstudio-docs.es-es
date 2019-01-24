@@ -1,8 +1,6 @@
 ---
 title: VSPerfCmd | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, VSPerfCmd tool
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23abc362b3c91579585272e4ebf1b190cab55dde
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ab432c5dfe316dc540fdfe6937263bc12abc967c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320987"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990430"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 La herramienta *VSPerfCmd.exe* se usa para iniciar y detener la recopilación de datos de rendimiento. Utiliza la siguiente sintaxis:  
@@ -60,8 +58,8 @@ VSPerfCmd [/U] [/options]
   
 |Opción|Descripción|  
 |------------|-----------------|  
-|[Launch](../profiling/launch.md) **:** *Executable*|Inicia la aplicación específica y empieza a generar perfiles.|  
-|[Args](../profiling/args.md) **:** *Arguments*|Especifica los argumentos de la línea de comandos que se van a pasar a la aplicación iniciada.|  
+|[Launch](../profiling/launch.md) **:** *Ejecutable*|Inicia la aplicación específica y empieza a generar perfiles.|  
+|[Args](../profiling/args.md) **:** *Argumentos*|Especifica los argumentos de la línea de comandos que se van a pasar a la aplicación iniciada.|  
 |[Consola](../profiling/console.md)|Inicia el comando especificado en una nueva ventana del símbolo del sistema.|  
 |[Attach](../profiling/attach.md) **:** *PID*[**,**_PID_]|Inicia la generación de perfiles de los procesos especificados. Los procesos se pueden identificar por el identificador o el nombre del proceso.|  
 |[Detach](../profiling/detach.md)[**:**_PID_[,_PID_]]|Detiene la generación de perfiles de los procesos especificados. Los procesos se pueden identificar por el identificador o el nombre del proceso. Si no se especifica ningún proceso, la generación de perfiles se detiene para todos los procesos.|  
@@ -89,7 +87,7 @@ VSPerfCmd [/U] [/options]
 |**Admin:** \<*Service*&#124;*Driver*>**AutoStart**\<**ON**&#124;**OFF**>|Habilita o deshabilita el inicio automático del servicio de generación de perfiles (service) o el controlador de dispositivos de modo de núcleo (driver) después de reiniciar.|  
   
 ## <a name="vsperfcmd-driver"></a>VSPerfCmd /Driver  
- La opción **VSPerfCmd /Driver** ahora está obsoleta. Use la opción **VsPerfCmdAdmin** para esta funcionalidad.  
+ La opción **VSPerfCmd /Driver** ahora está obsoleta. Use la opción **VsPerfCmd Admin** para lograr esta funcionalidad.  
   
 ## <a name="see-also"></a>Vea también  
  [VSInstr](../profiling/vsinstr.md)   

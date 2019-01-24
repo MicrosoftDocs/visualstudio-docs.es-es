@@ -17,12 +17,12 @@ ms.assetid: 1545ffbf-1422-4b5d-9bb9-314ba8665041
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f1c5e2d97df19af0c5b3c631e1b81eefcc6bfad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7285e35a8b4c511fc96a04380167b617865d50ec
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851704"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816598"
 ---
 # <a name="idebugprogramex2getprogramnode"></a>IDebugProgramEx2::GetProgramNode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Obtiene el nodo de programa asociado con un programa.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT GetProgramNode(   
+HRESULT GetProgramNode(   
    IDebugProgramNode2** ppProgramNode  
 );  
 ```  
   
 ```csharp  
-int GetProgramNode(   
+int GetProgramNode(   
    out IDebugProgramNode2 ppProgramNode  
 );  
 ```  

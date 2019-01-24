@@ -24,15 +24,15 @@ helpviewer_keywords:
 - commands, debugger
 ms.assetid: 76ac9b77-f536-43b5-a9fc-984854b1c566
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bc832be84dfaef1b4f7d47cd2c18cb2526c43170
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5edc195397b9652d790620b8281100cc7651a02d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187137"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802309"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Cómo: Restaurar los comandos ocultos del depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

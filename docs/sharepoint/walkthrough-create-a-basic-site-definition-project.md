@@ -1,13 +1,8 @@
 ---
-title: 'Tutorial: Crear un proyecto de definición de sitio básico | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Crear un proyecto de definición de sitio básico | Documentos de Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8a9a879db7c1d24dbfd8312dbc75d9b0bbaa8803
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7e09124e3204240f188c65e10865bbf221e15358
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844426"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958896"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Tutorial: Crear un proyecto de definición de sitio básico
   En este tutorial se muestra cómo crear una definición de sitio básico que contiene un elemento Web visual con algunos controles en ella. Por motivos de claridad, el elemento Web visual que creas tiene sólo unos pocos controles. Sin embargo, puede crear definiciones de sitio de SharePoint más sofisticadas que incluyen más funcionalidad.  
@@ -187,6 +182,5 @@ ms.locfileid: "49844426"
      El texto aparece en la etiqueta a la derecha del botón.  
   
 ## <a name="see-also"></a>Vea también
- [Cómo: crear un receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)   
+ [Cómo: Crear un receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)   
  [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

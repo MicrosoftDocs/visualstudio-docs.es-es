@@ -3,7 +3,6 @@ title: Crear un proyecto de Workflow Foundation
 ms.date: 06/25/2018
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - Workflow Designer, creating a workflow project
 - creating a workflow project
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4f8ed1effbc459bd2a17e3433738c1b461513b
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 0856ff93beef602d02defb58f90f69898a121f2c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755659"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943358"
 ---
 # <a name="workflow-project-templates"></a>Plantillas de proyecto de flujo de trabajo
 
@@ -72,12 +71,12 @@ Si elige la **biblioteca de actividades** plantilla, Visual Studio crea una defi
 
 Si elige la **biblioteca del Diseñador de actividad** plantilla, Visual Studio crea una definición del Diseñador de actividad en XAML y un archivo de implementación de código subyacente. El Diseñador de flujo de trabajo se abre y muestra el lienzo del Diseñador de actividad. Windows Presentation Foundation (WPF) de arrastrar los controles de **cuadro de herramientas** hasta la superficie de diseño para usarlos en el Diseñador de actividad personalizado.
 
-Para obtener un ejemplo de cómo implementar un diseñador de actividad personalizado, consulte [Cómo: crear un diseñador de actividad personalizado](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer).
+Para obtener un ejemplo de cómo implementar un diseñador de actividad personalizado, vea [Cómo: Crear un diseñador de actividad personalizado](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer).
 
 > [!NOTE]
 > Diseñadores de actividad personalizados pueden usarse para las actividades personalizadas y para las actividades de .NET Framework de forma predeterminada.
 
 ## <a name="see-also"></a>Vea también
 
-- [Use el Diseñador de flujo de trabajo](../workflow-designer/using-the-workflow-designer.md)
+- [Use el Diseñador de flujo de trabajo](developing-applications-with-the-workflow-designer.md)
 - [Diseñar flujos de trabajo (.NET Framework)](/dotnet/framework/windows-workflow-foundation/designing-workflows)

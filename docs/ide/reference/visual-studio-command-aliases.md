@@ -1,8 +1,7 @@
 ---
-title: Visual Studio Command Aliases
+title: Alias de comandos
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - aliases, Visual Studio commands
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01cba4998db732a4f851f4bcd2f7185868e9341f
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: ae0064052fa2f042eec218f3653f4b43fa24ba0a
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513538"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53878892"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 

@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: lista de usados recientemente mediante programación los archivos de libro'
-ms.custom: ''
+title: Procedimiento Lista de usados recientemente mediante programación los archivos de libro
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d3e909ad3e1509689d953e0ad6c6b8346ff97f91
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 850dc26b9a5f270b3806d9623795535d34cf8f4b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257594"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989638"
 ---
-# <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Cómo: lista de usados recientemente mediante programación los archivos de libro
+# <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Procedimiento Lista de usados recientemente mediante programación los archivos de libro
   El <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> propiedad devuelve una colección que contiene los nombres de todos los archivos que aparecen en la lista de Microsoft Office Excel de archivos usados recientemente. La longitud de la lista varía según el número de archivos que el usuario ha seleccionado para conservar. Puede mostrar los resultados en un intervalo.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -41,5 +38,3 @@ ms.locfileid: "35257594"
  [Trabajar con libros](../vsto/working-with-workbooks.md)   
  [NamedRange (control)](../vsto/namedrange-control.md)   
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

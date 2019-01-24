@@ -1,8 +1,6 @@
 ---
-title: Pestaña ventanas, cuadro de diálogo Opciones de mensaje | Documentos de Microsoft
-ms.custom: ''
+title: Pestaña de Windows, el cuadro de diálogo Opciones de mensaje | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - message options, Windows
@@ -12,23 +10,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad738a03b63284abc9ad2d922a51f140228e4ed7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 407b7c1c28d4232988bb36f8c1333197cd2dc08f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476863"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827184"
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>Pestaña Ventanas (Cuadro de diálogo Opciones de mensaje)
-Use la **Windows** pestaña para establecer el ámbito de los mensajes que aparecen en [vista mensajes](../debugger/messages-view.md). Para mostrar la [cuadro de diálogo Opciones de mensaje](../debugger/message-options-dialog-box.md), elija **mensajes de registro** desde el **Spy** menú.  
+Use la **Windows** pestaña para establecer el ámbito de los mensajes que aparecen en [vista mensajes](../debugger/messages-view.md). Para mostrar el [cuadro de diálogo Opciones de mensaje](../debugger/message-options-dialog-box.md), elija **los mensajes de registro** desde el **Spy** menú.  
   
- Las siguientes opciones están disponibles en la **Windows** ficha:  
+ Las siguientes opciones están disponibles en el **Windows** pestaña:  
   
  **Herramienta de búsqueda**  
  La herramienta de arrastrar y colocar que se utiliza para seleccionar una ventana.  
   
  **Ocultar Spy ++**  
- Quita la ventana principal de Spy ++ y deja el **opciones de mensaje** cuadro de diálogo visible encima de las otras aplicaciones.  
+ Quita de la ventana principal de Spy ++ y deja el **opciones de mensaje** cuadro de diálogo visible encima de las otras aplicaciones.  
   
  **Ventana primaria**  
  Mostrar los mensajes de la ventana seleccionada y su ventana primaria inmediata.  
@@ -42,7 +40,7 @@ Use la **Windows** pestaña para establecer el ámbito de los mensajes que apare
  **Ventanas del mismo proceso**  
  Mostrar los mensajes de la ventana seleccionada y todas las demás ventanas que pertenecen al mismo proceso.  
   
- **Todas las ventanas en el sistema**  
+ **Todas las ventanas del sistema**  
  Mostrar los mensajes para todas las ventanas.  
   
  **Guardar configuración como predeterminada**  

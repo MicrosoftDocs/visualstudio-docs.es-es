@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: revisar la ortografía en hojas de cálculo mediante programación'
-ms.custom: ''
+title: Procedimiento Revisar la ortografía en hojas de cálculo mediante programación
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,19 +10,19 @@ helpviewer_keywords:
 - spelling checker, worksheets
 - worksheets, checking spelling
 - spelling, checking in worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3d08548d68a413dadd662b89b49e059bdef84a1f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1aa881034458405babbe7777e1d5c689ed1b05c9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674371"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090511"
 ---
-# <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Cómo: revisar la ortografía en hojas de cálculo mediante programación
+# <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Procedimiento Revisar la ortografía en hojas de cálculo mediante programación
   Puede comprobar la ortografía en una hoja de cálculo mediante programación. El cuadro de diálogo **Ortografía** aparece automáticamente si hay palabras mal escritas en la hoja de cálculo.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -46,8 +43,6 @@ ms.locfileid: "35674371"
   
 ## <a name="see-also"></a>Vea también  
  [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)   
- [Cómo: ejecutar cálculos de Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
+ [Cómo: Ejecutar cálculos de Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
  [NamedRange (control)](../vsto/namedrange-control.md)   
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

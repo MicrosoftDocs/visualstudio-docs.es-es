@@ -1,8 +1,6 @@
 ---
 title: 'Vista Funciones: datos de instrumentación | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Function view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7787e974b093156b27b2ace4353e94db05063d7d
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 0cc8ac1323e07de333cfe12546da8733e6742801
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35238230"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962628"
 ---
 # <a name="functions-view---instrumentation-data"></a>Vista Funciones: datos de instrumentación
 En la vista del informe de funciones se enumeran los datos de generación de perfiles por nombre de la función.  

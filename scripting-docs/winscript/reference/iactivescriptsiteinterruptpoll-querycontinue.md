@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteInterruptPoll::QueryContinue | Documentos de Microsoft
+title: IActiveScriptSiteInterruptPoll::QueryContinue | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 93323d500ae7e99957c365d60741fa612ba0fc34
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9b43211dca57a404d5625cfc2d7ede67a70a0a40
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725165"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087989"
 ---
 # <a name="iactivescriptsiteinterruptpollquerycontinue"></a>IActiveScriptSiteInterruptPoll::QueryContinue
-Permite a un host especificar que debe finalizar una secuencia de comandos.  
+Permite a un host especificar que una secuencia de comandos debe finalizar.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT QueryContinue();  
 ```  
   
@@ -42,11 +42,11 @@ HRESULT QueryContinue();
   
 |Valor|Descripción|  
 |-----------|-----------------|  
-|`S_OK`|La llamada se realizó correctamente y el host permite que la secuencia de comandos continuará ejecutándose.|  
-|`S_FALSE`|La llamada se realizó correctamente y las solicitudes de host que finalizan la secuencia de comandos.|  
+|`S_OK`|La llamada se realizó correctamente y permite que el host de la secuencia de comandos continúe ejecutándose.|  
+|`S_FALSE`|La llamada se realizó correctamente y las solicitudes de host que finalizar la secuencia de comandos.|  
   
 ## <a name="remarks"></a>Comentarios  
- El script hospedado debe finalizar a menos que el valor devuelto de la `QueryContinue` método es `S_OK`. Un valor devuelto de `S_FALSE` indica que el host solicita explícitamente que finalizar la secuencia de comandos.  
+ Debe finalizar el script hospedado, a menos que el valor devuelto de la `QueryContinue` método es `S_OK`. Un valor devuelto de `S_FALSE` indica que el host solicita explícitamente que termina la secuencia de comandos.  
   
  Puede usar un host multiproceso el `IActiveScript::InterruptScriptThread` método para finalizar una secuencia de comandos.  
   

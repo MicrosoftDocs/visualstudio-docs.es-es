@@ -1,8 +1,6 @@
 ---
-title: 'Idiasymbol:: Get_hasalloca | Documentos de Microsoft'
-ms.custom: ''
+title: Get_hasalloca | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86e701f6b851b48345c9dcbcf3f2482d7c6c0951
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: ecc7029ab515f1e47f52eb086aa0f099c13fc65c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465530"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990625"
 ---
 # <a name="idiasymbolgethasalloca"></a>IDiaSymbol::get_hasAlloca
 Recupera una marca que especifica si la función contiene una llamada a `alloca` (que se usa para asignar memoria en la pila).  
@@ -27,7 +25,7 @@ Recupera una marca que especifica si la función contiene una llamada a `alloca`
 ## <a name="syntax"></a>Sintaxis  
   
 ```  
-[C++]HRESULT get_hasAlloca(   BOOL *pFlag);  
+[C++]HRESULT get_hasAlloca(   BOOL *pFlag);  
 ```  
   
 #### <a name="parameters"></a>Parámetros  
@@ -35,7 +33,7 @@ Recupera una marca que especifica si la función contiene una llamada a `alloca`
  [out] Devuelve `TRUE` si la función contiene una llamada a `alloca`; en caso contrario, devuelve `FALSE`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  

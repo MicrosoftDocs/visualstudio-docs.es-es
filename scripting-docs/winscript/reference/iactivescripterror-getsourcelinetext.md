@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptError::GetSourceLineText | Documentos de Microsoft
+title: IActiveScriptError::GetSourceLineText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb886d5f40042313483dc3b298488d1291c30563
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3186ec3edcdd0c66f06f7b769eff31e8b050c428
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645705"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349158"
 ---
 # <a name="iactivescripterrorgetsourcelinetext"></a>IActiveScriptError::GetSourceLineText
 Recupera la línea en el archivo de origen donde se produjo un error mientras un motor de scripting estaba ejecutando una secuencia de comandos.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetSourceLineText(  
     BSTR *pbstrSourceLine  // address of buffer for source line  
 );  

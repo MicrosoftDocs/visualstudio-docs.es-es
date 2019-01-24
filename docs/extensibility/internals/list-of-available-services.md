@@ -1,9 +1,6 @@
 ---
 title: Lista de servicios disponibles | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, Visual Studio
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8219c3abfe483a358f0c23d0011c2741f2489ddb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7cd076e19a1732309a07feccca899669741b6482
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876469"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964642"
 ---
 # <a name="list-of-available-services"></a>Lista de servicios disponibles
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y el SDK de Visual Studio admite los siguientes servicios. Algunos paquetes ofrecen sus propios servicios que no se muestran aquí, por ejemplo, servicios de lenguaje no tiene un servicio único GUID. Debe usar el nombre del idioma para encontrar el GUID del servicio de lenguaje en el registro.  
@@ -31,7 +28,7 @@ ms.locfileid: "49876469"
 | web de Office | Interfaz | Programa para la mejora | Visual Studio 2005 | Descripción |
 | - | - |---------------|--------------------| - |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SBindHost> | <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> | Sí | Sí | Lo usan los VSPackages para obtener un <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> interfaz desde un control ActiveX para facilitar las transferencias de datos asincrónica. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | No | Sí | Obtiene el objeto de extensibilidad de tiempo de diseño (DTE) usado para la automatización.<br /><br /> ID. DE C/C ++: SID_SDTE |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | No | Sí | Obtiene el objeto de extensibilidad de tiempo de diseño (DTE) usado para la automatización.<br /><br /> ID. DE C O C++: SID_SDTE |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SCodeNavigate> | <xref:Microsoft.VisualStudio.Shell.Interop.ICodeNavigate> | Sí | Sí | Implementado por un diseñador de formularios para mostrar el controlador de eventos predeterminado para un control. |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SContainerDispatch> | IDispatch | Sí | Sí | Habilita un VSPackage tener acceso a la interfaz de automatización de un control o de otro VSPackage. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SExtendedTypeLib> | <xref:Microsoft.VisualStudio.Shell.Interop.IExtendedTypeLib> | Sí | Sí | Habilita un VSPackage agregar o crear una biblioteca de tipos extendidos. |

@@ -1,9 +1,6 @@
 ---
 title: LPTEXTOUTPROC | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - LPTEXTOUTPROC
@@ -19,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d8439d706dbe8c84d807fb445eda272b96ad589
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c3bef9a76c12b44345c000a3133fb3edcfed1352
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822883"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956847"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 Cuando el usuario ejecuta una operación de control de código fuente desde dentro del entorno de desarrollo integrado (IDE), el complemento de control de código fuente que desee transmitir los mensajes de estado o error relacionados con la operación. El complemento puede mostrar sus propios cuadros de mensaje para este propósito. Sin embargo, una integración más, el complemento puede pasar cadenas para el IDE, que se muestra a continuación, en su forma nativa de mostrar información de estado. Es el mecanismo para ello la `LPTEXTOUTPROC` puntero de función. El IDE implementa esta función (que se describe más detalladamente a continuación) para mostrar el error y estado.  
@@ -55,7 +52,7 @@ typedef LONG (*LPTEXTOUTPROC) (
 |`SCC_MSG_DOCANCEL`|Se envía con ninguna cadena de mensaje.|  
 |`SCC_MSG_STARTCANCEL`|Comienza a mostrar un **cancelar** botón.|  
 |`SCC_MSG_STOPCANCEL`|Deja de mostrar un **cancelar** botón.|  
-|`SCC_MSG_BACKGROUND_IS_CANCELLED`|Pregunta IDE si la operación en segundo plano que debe cancelarse: IDE devuelve `SCC_MSG_RTN_CANCEL` si la operación se canceló; de lo contrario, devuelve `SCC_MSG_RTN_OK`. El `display_string` parámetro se convierte como un [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) estructura, que se ha proporcionado por el complemento de control de código fuente.|  
+|`SCC_MSG_BACKGROUND_IS_CANCELLED`|Pide IDE si la operación en segundo plano es cancelar: Devuelve el IDE `SCC_MSG_RTN_CANCEL` si la operación se canceló; de lo contrario, devuelve `SCC_MSG_RTN_OK`. El `display_string` parámetro se convierte como un [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) estructura, que se ha proporcionado por el complemento de control de código fuente.|  
 |`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`|Indica al IDE acerca de un archivo antes de recuperarlos del control de versiones. El `display_string` parámetro se convierte como un [SccMsgDataOnBeforeGetFile](#LinkSccMsgDataOnBeforeGetFile) estructura, que se ha proporcionado por el complemento de control de código fuente.|  
 |`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|Indica al IDE acerca de un archivo una vez recuperado del control de versiones. El `display_string` parámetro se convierte como un [SccMsgDataOnAfterGetFile](#LinkSccMsgDataOnAfterGetFile) estructura, que se ha proporcionado por el complemento de control de código fuente.|  
 |`SCC_MSG_BACKGROUND_ON_MESSAGE`|Indica al IDE del estado actual de una operación en segundo plano. El `display_string` parámetro se convierte como un [SccMsgDataOnMessage](#LinkSccMsgDataOnMessage) estructura, que se ha proporcionado por el complemento de control de código fuente.|  

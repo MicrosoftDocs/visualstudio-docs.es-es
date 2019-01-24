@@ -1,8 +1,6 @@
 ---
 title: Zoom (control) (Vista de subprocesos) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.zoom
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85297c32274eb3b6573f536be15d621a60b95921
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 87959310b0c34a801ade0ae5ffdb00c75ff9dcc1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447887"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938139"
 ---
 # <a name="zoom-control-threads-view"></a>Control de zoom (vista Subprocesos)
 El control de zoom es un control deslizante que le ayuda a acercar y alejar la escala de tiempo para que pueda centrarse en áreas de especial interés. Dado que este control acerca el centro de la vista de escala de tiempo, deberá centrar el área de interés antes de acercarla.  

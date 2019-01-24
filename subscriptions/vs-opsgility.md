@@ -3,18 +3,18 @@ title: Ventaja Skill Me Up - Powered by Opsgility en las suscripciones de Visual
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 10/02/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Obtenga información sobre la ventaja de aprendizaje Skill Me Up - Powered by Opsgility incluida en la suscripción de Visual Studio seleccionada.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscriptions
-ms.openlocfilehash: 7bf23407207493e4e74a61fe29d695379d6d0975
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c057eda862ffc0ef556d878a0afb3d1dd106918c
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943029"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380214"
 ---
 # <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>La ventaja de aprendizaje Skill Me Up - Powered by Opsgility en las suscripciones de Visual Studio
 
@@ -39,14 +39,18 @@ Las suscripciones seleccionadas de Visual Studio incluyen hasta seis meses de ac
 
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (estándar, de nube anual)   | Licencia por volumen, Azure, venta directa | 6 meses       |  No.  Disponible solo para nuevos suscriptores          |
-| Visual Studio Professional (estándar, de nube anual) | Licencia por volumen, Azure, venta directa                                       | 3 meses                                                            |No.  Disponible solo para nuevos suscriptores         |
+| Visual Studio Enterprise (estándar)   | Licencia por volumen, Azure, venta directa | 6 meses       |  No.  Disponible solo para nuevos suscriptores          |
+| Visual Studio Professional (estándar) | Licencia por volumen, Azure, venta directa                                       | 3 meses                                                            |No.  Disponible solo para nuevos suscriptores         |
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | 3 meses                                             |  No.  Disponible solo para nuevos suscriptores         |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | 3 meses                                              | No.  Disponible solo para nuevos suscriptores         |
 | Visual Studio Dev Essentials | NA  | No disponible | NA  |
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure                                       | No disponible                                                           |NA|
 
-*Excluye: Microsoft Partner Network (MPN), Microsoft Valued Professional (MVP), Microsoft Certified Trainer, BizSpark, Imagine, NFR, FTE*
+*Excluye:  Microsoft Partner Network (MPN), Most Valuable Professional (MVP), Regional Director (RD), Microsoft Certified Trainer, BizSpark, Imagine, NFR, FTE*
+
+> [!NOTE]
+> Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
+
 
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
 

@@ -1,20 +1,20 @@
 ---
 layout: LandingPage
-title: Generación de perfiles de aplicaciones con Visual Studio| Microsoft Docs
+title: Cálculo del rendimiento de las aplicaciones con la generación de perfiles | Microsoft Docs
 description: Aprenda a usar Visual Studio 2017 para crear perfiles del rendimiento de las aplicaciones, los servicios y las herramientas en el idioma de su elección.
+ms.custom: seodec18
 ms.topic: landing-page
-ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 1ebb16dab1e997809df80b6e67771a30347c6ab9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: ced28177670ab33916701858bfae36fa860a357f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267691"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886454"
 ---
-# <a name="profiling-in-visual-studio"></a>Generación de perfiles en Visual Studio
+# <a name="measure-app-performance-in-visual-studio"></a>Cálculo del rendimiento de las aplicaciones en Visual Studio
 
 La generación de perfiles y las herramientas de diagnóstico le ayudan a diagnosticar el uso de CPU y memoria, y otros problemas de nivel de aplicación. Con estas herramientas, puede acumular datos (como valores de variables, llamadas a funciones y eventos) durante el tiempo que se ejecute la aplicación en el depurador. Puede ver el estado de su aplicación en distintos momentos de la ejecución del código. 
 

@@ -1,5 +1,5 @@
 ---
-title: PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS (enumeración) | Documentos de Microsoft
+title: PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS (enumeración) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab542225e0238dbd40f90d9de66d43d0791e05e0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b78285f332b339533d81228de5877043f699a67c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734015"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349145"
 ---
 # <a name="profilerheapobjectrelationshipflags-enumeration"></a>PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS (Enumeración)
-Marcas que representan si un objeto de montón que se apunta en una relación de objeto es un método de captador o un establecedor. Utilizado en el [EnumHeap2](../../winscript/reference/iactivescriptprofilercontrol5-enumheap2-method.md) método cuando se especifica el valor PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS en el `enumFlags` parámetro.  
+Marcas que representan si un objeto de montón designado en una relación de objeto es un método de captador o establecedor. Utilizado en el [EnumHeap2](../../winscript/reference/iactivescriptprofilercontrol5-enumheap2-method.md) método cuando el valor PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS se especifica en el `enumFlags` parámetro.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 typedef [v1_enum] enum {    PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_NONE                      = 0x00000000,    PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_IS_GET_ACCESSOR           = 0x00010000,    PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_IS_SET_ACCESSOR           = 0x00020000,} PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS;  
 ```  
   
@@ -32,6 +32,6 @@ typedef [v1_enum] enum {    PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_NONE        
   
 |Miembro|Valor|Descripción|  
 |------------|-----------|-----------------|  
-|PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_NONE|0x00000000|Este objeto de montón que se apunta en una relación de objeto no se identifica como método de un captador o un establecedor.|  
-|PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_IS_GET_ACCESSOR|0x00010000|El objeto de montón que se apunta en una relación de objeto es un método de captador. Esta información se almacenará en la alta 2 bytes (16 bits) de la [PROFILER_HEAP_OBJECT_RELATIONSHIP.relationshipInfo](../../winscript/reference/profiler-heap-object-relationship-structure.md) campo.|  
-|PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_IS_SET_ACCESSOR|0x00020000|El objeto de montón que se apunta en una relación de objeto es un método de establecedor. Esta información se almacenará en la alta 2 bytes (16 bits) de la `PROFILER_HEAP_OBJECT_RELATIONSHIP.relationshipInfo` campo.|
+|PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_NONE|0x00000000|Este objeto de montón designado en una relación de objeto no se identifica como método de captador o establecedor.|  
+|PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_IS_GET_ACCESSOR|0x00010000|El objeto de montón designado en una relación de objeto es un método de captador. Esta información se almacenará en los 2 bytes (16 bits) de la [PROFILER_HEAP_OBJECT_RELATIONSHIP.relationshipInfo](../../winscript/reference/profiler-heap-object-relationship-structure.md) campo.|  
+|PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_IS_SET_ACCESSOR|0x00020000|El objeto de montón designado en una relación de objeto es un método establecedor. Esta información se almacenará en los 2 bytes (16 bits) de la `PROFILER_HEAP_OBJECT_RELATIONSHIP.relationshipInfo` campo.|

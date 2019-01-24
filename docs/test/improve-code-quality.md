@@ -1,8 +1,7 @@
 ---
-title: Herramientas de prueba de Visual Studio
+title: Herramientas de prueba
 ms.date: 03/16/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - testing tools [Visual Studio]
@@ -12,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9db1925036f7522db3fe7a16af362da754ec49e5
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 40649e9a2ae4c5f74627e10409880924efc06a14
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321065"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883005"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Herramientas de prueba de Visual Studio
 
@@ -45,4 +44,4 @@ Las herramientas de prueba de Visual Studio pueden ayudarle a usted y a su equip
 * [Exploratory & manual testing (Azure Test Plans)](/azure/devops/test/index?view=vsts) [Pruebas exploratorias y manuales (Azure Test Plans)]
 * [Load testing (Azure Test Plans)](/azure/devops/test/load-test/index?view=vsts) [Prueba de carga (Azure Test Plans)]
 * [Continuous testing (Azure Test Plans)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) [Prueba continua (Azure Test Plans)]
-* [Herramientas de análisis de código](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)
+* [Herramientas de análisis de código](../code-quality/code-analysis-for-managed-code-overview.md)

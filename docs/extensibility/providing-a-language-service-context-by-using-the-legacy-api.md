@@ -1,9 +1,6 @@
 ---
 title: Proporcionar un contexto de servicio de lenguaje a través de la API heredada | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - language service context
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67ff7d911ef0cdd3debd920ac85e9e3265a619e3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a75ea45216e49aecaac452c1d92ff5a98dd7015c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909963"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940263"
 ---
 # <a name="provide-a-language-service-context-by-using-the-legacy-api"></a>Proporcionar un contexto de servicio de lenguaje mediante la API heredada
 Hay dos opciones para un servicio de lenguaje proporcionar el contexto de usuario mediante el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor básico: proporcionar un contexto de marcador de texto o proporcionan todo el contexto de usuario. A continuación se describen las diferencias entre cada uno.  
   
- Para obtener más información sobre lo que proporciona contexto a un servicio de lenguaje que está conectado a su propio editor, vea [Cómo: proporcionar el contexto para los editores](../extensibility/how-to-provide-context-for-editors.md).  
+ Para obtener más información sobre lo que proporciona contexto a un servicio de lenguaje que está conectado a su propio editor, vea [Cómo: Proporcionar contexto para los editores](../extensibility/how-to-provide-context-for-editors.md).  
   
 ## <a name="provide-text-marker-context-to-the-editor"></a>Proporcionar un contexto de marcador de texto en el editor  
  Para proporcionar contexto para los errores del compilador indicados por los marcadores de texto en el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor de núcleo, implemente el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> interfaz. En este escenario, el servicio de lenguaje proporciona contexto solo cuando el cursor está en un marcador de texto. Esto permite que el editor proporcionar la palabra clave en el cursor a la **Ayuda dinámica** ventana sin atributos.  

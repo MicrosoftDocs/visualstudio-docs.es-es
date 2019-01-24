@@ -2,7 +2,6 @@
 title: Iconos de la Vista de clases y del Examinador de objetos
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - icons, in Object Browser
@@ -18,22 +17,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ff94e67291bff8dc00d3fa63976f283da485f6a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 29d39c210a14934ba50ace92692bee944b6b75c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745794"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844397"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Iconos de la Vista de clases y del Examinador de objetos
 
 En **Vista de clases** y **Examinador de objetos** se muestran iconos que representan las entidades de código, por ejemplo, los espacios de nombres, las clases, las funciones y las variables. En la tabla siguiente se muestran y describen los iconos.
 
-|Iconos|Description|Iconos|Description|
+|Iconos|Descripción|Iconos|Descripción|
 |----------|-----------------|----------|-----------------|
 |![Símbolo de espacio de nombres](../ide/media/vxnamespace_icon.gif)|Espacio de nombres|![Símbolo de declaración](../ide/media/vxmethod_icon.gif)|Método o función|
 |![Icon Clase](../ide/media/vxclass_icon.gif)|Clase|![Símbolo de operador](../ide/media/vxoperator_icon.gif)|Operador|
-|![Símbolo de la interfaz Lollipop](../ide/media/vxinterface_icon.gif)|Interfaz|![Símbolo de propiedad](../ide/media/vxproperty_icon.gif)|Property|
+|![Símbolo de la interfaz Lollipop](../ide/media/vxinterface_icon.gif)|Interfaz|![Símbolo de propiedad](../ide/media/vxproperty_icon.gif)|Propiedad.|
 |![Símbolo de estructura](../ide/media/vxstruct_icon.gif)|Estructura|![Icono Campo](../ide/media/vxfield_icon.gif)|Campo o variable|
 |![Símbolo de unión](../ide/media/vxunion_icon.gif)|Unión|![Símbolo de evento](../ide/media/vxevent_icon.gif)|evento|
 |![Símbolo de enumeración](../ide/media/vxenum_icon.gif)|Enum|![Icono Constante](../ide/media/vxconstant_icon.gif)|Constante|
@@ -49,7 +48,7 @@ En **Vista de clases** y **Examinador de objetos** se muestran iconos que repres
 
 Los siguientes iconos de señal se aplican a todos los iconos anteriores e indican su accesibilidad.
 
-|Iconos|Description|
+|Iconos|Descripción|
 |----------|-----------------|
 |\<Icono Sin señal>|Público. Accesible desde cualquier lugar en este componente y desde cualquier componente que haga referencia a él.|
 |![Símbolo Protected de señal](../ide/media/vxsignal_icon_key.gif)|Protegido. Accesible desde la clase o el tipo contenedor o los derivados de la clase o el tipo contenedor.|

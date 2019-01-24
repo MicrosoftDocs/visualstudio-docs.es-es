@@ -1,9 +1,6 @@
 ---
 title: 'Tutorial: Crear una pestaña personalizada usando el Diseñador de cinta de opciones'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a0089880e143c3db8f260141d9936058bf35b1ce
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 4eda44b274a9720ac067f486706c7404853b0ffc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808877"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917597"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Tutorial: Crear una pestaña personalizada usando el Diseñador de cinta de opciones
   El diseñador de la cinta de opciones permite crear una pestaña personalizada y, a continuación, agregar y colocar controles en ella.  
@@ -55,7 +52,7 @@ ms.locfileid: "38808877"
   
 ### <a name="to-create-an-excel-workbook-project"></a>Para crear un proyecto de libro de Excel  
   
--   Cree un proyecto de libro de Excel con el nombre **MyExcelRibbon**. Para obtener más información, consulta [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+-   Cree un proyecto de libro de Excel con el nombre **MyExcelRibbon**. Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio abre el nuevo libro en el diseñador y agrega el **MyExcelRibbon** proyecto a **el Explorador de soluciones**.  
   
@@ -159,17 +156,15 @@ ms.locfileid: "38808877"
   
 -   Agregar una interfaz de usuario basada en contexto a cualquier personalización de nivel de documento. Para obtener más información, consulte [información general sobre el panel de acciones](../vsto/actions-pane-overview.md).  
   
--   Extender un formulario estándar o personalizado de Microsoft Office Outlook. Para obtener más información, consulte [Tutorial: diseñar un área de formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
+-   Extender un formulario estándar o personalizado de Microsoft Office Outlook. Para obtener más información, vea [Tutorial: Diseñar un formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Información general de la cinta de opciones](../vsto/ribbon-overview.md)   
  [Diseñador de cinta](../vsto/ribbon-designer.md)   
  [Personalizar una cinta de opciones para Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
- [Cómo: empezar a personalizar la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md)   
- [Cómo: cambiar la posición de una pestaña en la cinta de opciones](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
- [Cómo: personalizar una pestaña integrada](../vsto/how-to-customize-a-built-in-tab.md)   
- [Cómo: agregar controles a la vista backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [Cómo: Introducción a la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [Cómo: Cambiar la posición de una pestaña en la cinta de opciones](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
+ [Cómo: Personalizar una pestaña integrada](../vsto/how-to-customize-a-built-in-tab.md)   
+ [Cómo: Agregar controles a la vista backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
  [Información general sobre el modelo de objetos de cinta de opciones](../vsto/ribbon-object-model-overview.md)  
-  
-  

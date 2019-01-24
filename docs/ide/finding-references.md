@@ -2,7 +2,6 @@
 title: Búsqueda de referencias en el código
 ms.date: 09/26/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, find all references
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ac09eace078ef60f36bd57e9a2c4a1e5f1c510c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 143a40c1a2e3602460419465cb84d6ffa44d853c
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942326"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269857"
 ---
 # <a name="find-references-in-your-code"></a>Búsqueda de referencias en el código
 

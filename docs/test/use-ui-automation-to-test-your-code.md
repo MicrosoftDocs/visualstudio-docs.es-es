@@ -1,8 +1,7 @@
 ---
 title: Pruebas automatizadas de IU
-ms.date: 11/04/2016
+ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.codedUITest
@@ -18,16 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec65f2a35f0e28a8e9424497bcdfb11b1a02c84f
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 8dc3e25b55f5f30ebfeb9f790baba0bb5ad8797c
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371087"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54270198"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usar la automatización de la interfaz de usuario para probar el código
 
 Las pruebas automatizadas que controlan la aplicación a través de la interfaz de usuario se conocen como *pruebas automatizadas de IU* (CUIT) en Visual Studio. Estas pruebas incluyen unas pruebas funcionales de los controles de la interfaz de usuario. Permiten comprobar si toda la aplicación, incluida la interfaz de usuario, funciona correctamente. Las pruebas de IU codificadas son especialmente útiles donde haya una validación o cualquier otra lógica en la interfaz de usuario, por ejemplo, en una página web. También se suelen usar para automatizar una prueba manual existente.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 Como se muestra en la ilustración siguiente, una experiencia típica de desarrollo podría ser aquella donde, inicialmente, el usuario se limite a compilar la aplicación y a hacer clic en los controles de la interfaz de usuario a fin de comprobar que todo funciona correctamente. Después, es posible que decida crear una prueba automatizada de manera que no sea necesario seguir probando la aplicación manualmente. Según la funcionalidad concreta que se prueba en la aplicación, puede escribir código para una prueba funcional o bien una prueba de integración que es posible que incluya o no la realización de pruebas en el nivel de interfaz de usuario. Si quiere tener acceso directamente a alguna lógica de negocios, puede codificar una prueba unitaria. Sin embargo, en algunas circunstancias, puede ser beneficioso incluir pruebas de los diversos controles de IU en la aplicación. Una prueba automatizada de IU puede comprobar que la renovación de código no afecte a la funcionalidad de la aplicación.
 
@@ -144,7 +145,7 @@ Para obtener acceso a las plantillas y herramientas de pruebas automatizadas de 
 
 Las secciones restantes de este tema proporcionan más detalles sobre los pasos de este procedimiento.
 
-Para obtener un ejemplo detallado, vea [Tutorial: Crear, editar y mantener una prueba automatizada de IU](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md). En el tutorial, se creará una aplicación Windows Presentation Foundation (WPF) simple para mostrar cómo crear, modificar y mantener una prueba de IU codificada. El tutorial proporciona soluciones para la corrección de pruebas que han sido interrumpidas por diversos problemas de sincronización y de control de refactorización.
+Para obtener un ejemplo más detallado, vea [Tutorial: Crear, editar y mantener una prueba automatizada de IU](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md). En el tutorial, se creará una aplicación Windows Presentation Foundation (WPF) simple para mostrar cómo crear, modificar y mantener una prueba de IU codificada. El tutorial proporciona soluciones para la corrección de pruebas que han sido interrumpidas por diversos problemas de sincronización y de control de refactorización.
 
 ## <a name="start-and-stop-the-application-under-test"></a>Iniciar y detener la aplicación sometida a pruebas
 
@@ -215,7 +216,7 @@ Para generar el código de las aserciones y agregar el control a la asignación 
 
 Si el control que quiere seleccionar pierde el foco y desaparece cuando intenta seleccionar la herramienta **Agregar aserciones** en el **Generador de pruebas automatizadas de IU**:
 
-A veces, al agregar controles y validar sus propiedades, es posible que tenga que usar el teclado. Por ejemplo, al intentar grabar una prueba automatizada de IU que usa un control de menú contextual, la lista de elementos del menú del control perderá el foco y desaparecerá cuando se intente seleccionar la herramienta **Agregar aserciones** desde el **Generador de pruebas automatizadas de IU**. Esto se muestra en la ilustración siguiente, donde el menú contextual de Internet Explorer pierde el foco y desaparece si intenta seleccionarlo con la herramienta **Agregar aserciones**.
+A veces, al agregar controles y validar sus propiedades, es posible que tenga que usar el teclado. Por ejemplo, al intentar grabar una prueba automatizada de IU que usa un control de menú de botón derecho, la lista de elementos del menú del control perderá el foco y desaparecerá cuando se intente seleccionar la herramienta **Agregar aserciones** desde el **Generador de pruebas automatizadas de IU**. Esto se muestra en la ilustración siguiente, donde el menú de botón derecho de Internet Explorer pierde el foco y desaparece si intenta seleccionarlo con la herramienta **Agregar aserciones**.
 
 ![PruebaAutomatizadaIU&#95;TecladoSelecciónControl](../test/media/codeduitest_selectcontrolkeyboard.png)
 
@@ -291,7 +292,7 @@ Después de crear la prueba de IU codificada, podrá editarla mediante cualquier
 
     - Después de crear una prueba de IU codificada, puede modificarla para que esté controlada por datos. Para obtener más información, vea [Crear una prueba automatizada de IU controlada por datos](../test/creating-a-data-driven-coded-ui-test.md).
 
-    - En una reproducción de prueba de UI codificada, puede indicar a la prueba que espere a que se produzcan ciertos eventos, como que se muestre una ventana, que se oculte la barra de progreso, etc. Para ello, agregue el método UITestControl.WaitForControlXXX() adecuado. Para obtener una lista completa de los métodos disponibles, vea [Hacer que las pruebas automatizadas de IU esperen eventos concretos durante la reproducción](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Para obtener un ejemplo de una prueba automatizada de IU que espera a que se habilite un control con el método WaitForControlEnabled, vea [Tutorial: Crear, editar y mantener una prueba automatizada de IU](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+    - En una reproducción de prueba de UI codificada, puede indicar a la prueba que espere a que se produzcan ciertos eventos, como que se muestre una ventana, que se oculte la barra de progreso, etc. Para ello, agregue el método UITestControl.WaitForControlXXX() adecuado. Para obtener una lista completa de los métodos disponibles, vea [Hacer que las pruebas automatizadas de IU esperen eventos concretos durante la reproducción](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Para obtener un ejemplo de una prueba automatizada de UI que espera a que se habilite un control mediante el método WaitForControlEnabled, vea [Tutorial: Crear, editar y mantener una prueba automatizada de IU](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
     - Las pruebas de IU codificadas proporcionan soporte para algunos de los controles HTML5 incluidos en Internet Explorer 9 o Internet Explorer 10. Para obtener más información, vea [Usar controles HTML5 en pruebas automatizadas de IU](../test/using-html5-controls-in-coded-ui-tests.md).
 
@@ -402,7 +403,7 @@ Para obtener y establecer los valores de propiedad específicos del control de I
 
 ### <a name="to-get-or-set-properties-from-ui-test-controls-directly"></a>Para obtener o establecer las propiedades directamente desde los controles de prueba de IU
 
-Con controles que derivan de <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>, como [HtmlList](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.uitesting.htmlcontrols.htmllist.aspx) o [WinComboBox](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.uitesting.wincontrols.wincombobox.aspx), puede obtener o establecer directamente sus valores de propiedad. En el código siguiente se muestran algunos ejemplos:
+Con controles que derivan de <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>, como [HtmlList](xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList) o [WinComboBox](xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinComboBox), puede obtener o establecer directamente sus valores de propiedad. En el código siguiente se muestran algunos ejemplos:
 
  ```csharp
  int i = myHtmlList.ItemCount;
@@ -437,15 +438,15 @@ Puede analizar pruebas de IU codificadas mediante los registros de dichas prueba
 
 ## <a name="whats-next"></a>Pasos adicionales
 
-**Opciones adicionales para ejecutar pruebas de IU codificadas:** puede ejecutar pruebas de IU codificadas directamente desde Visual Studio, como ya se describió anteriormente en este tema. Además, puede ejecutar pruebas automatizadas de UI desde Microsoft Test Manager o mediante Azure Pipelines. Cuando las pruebas de IU codificadas se automatizan, tienen que interactuar con el escritorio durante su ejecución, a diferencia de otras pruebas automatizadas.
+**Opciones adicionales para ejecutar pruebas de IU codificadas:** Puede ejecutar pruebas de IU codificadas directamente desde Visual Studio, como ya se describió anteriormente en este tema. Además, puede ejecutar pruebas automatizadas de UI desde Microsoft Test Manager o mediante Azure Pipelines. Cuando las pruebas de IU codificadas se automatizan, tienen que interactuar con el escritorio durante su ejecución, a diferencia de otras pruebas automatizadas.
 
 - [Ejecutar pruebas unitarias con el Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md)
 
 - [Ejecutar pruebas en el proceso de compilación](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
-- [Cómo: Configurar Test Agent para ejecutar pruebas que interactúen con el escritorio](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
+- [Cómo: Configurar el agente de pruebas para ejecutar pruebas que interactúen con el escritorio](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
-**Agregar compatibilidad con controles personalizados:** el marco de pruebas de IU codificadas es compatible con todas las posibles IU y quizás sea compatible con la interfaz de usuario que desea probar. Por ejemplo, no puede crear inmediatamente una prueba automatizada de IU de la interfaz de usuario para Microsoft Excel. Sin embargo, puede crear una extensión al marco de pruebas de IU codificadas que admitirá un control personalizado.
+**Agregar compatibilidad con controles personalizados:**  el marco de pruebas de IU codificadas no admite todas las IU posibles (puede que no sea compatible con la interfaz de usuario que quiera probar). Por ejemplo, no puede crear inmediatamente una prueba automatizada de IU de la interfaz de usuario para Microsoft Excel. Sin embargo, puede crear una extensión al marco de pruebas de IU codificadas que admitirá un control personalizado.
 
 - [Habilitación de pruebas automatizadas de IU en los controles](../test/enable-coded-ui-testing-of-your-controls.md)
 

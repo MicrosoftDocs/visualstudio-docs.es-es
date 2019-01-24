@@ -1,8 +1,7 @@
 ---
-title: Refactorizar Cambiar nombre en Visual Studio
+title: Refactorización de cambio de nombre
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -14,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b85814be6df104a0d5859fbb339ce0dc665c09c4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a24c8a44cbd7d3c889d92c34c9eac0c5b015be65
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908761"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881015"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Refactorización de cambio de nombre de un símbolo de código
 
@@ -29,11 +28,11 @@ Esta refactorización se aplica a lo siguiente:
 
 - Visual Basic
 
-**Qué:** Le permite cambiar el nombre de los identificadores de símbolos de código, como campos, variables locales, métodos, espacios de nombres, propiedades y tipos.
+**Qué:** Permite cambiar el nombre de los identificadores de símbolos de código, como campos, variables locales, métodos, espacios de nombres, propiedades y tipos.
 
-**Cuándo:** Desea cambiar con seguridad algo sin tener que buscar todas las instancias y copiar y pegar el nuevo nombre.
+**Cuándo:** Se quiere cambiar con seguridad el nombre de algo sin tener que buscar todas las instancias y copiar y pegar el nombre nuevo.
 
-**Por qué:** Es probable que copiar y pegar el nuevo nombre en todo un proyecto dé lugar a errores. Esta herramienta de refactorización llevará a cabo con precisión la acción de cambio de nombre.
+**Por qué:** Es probable que copiar y pegar el nuevo nombre en todo un proyecto genere errores. Esta herramienta de refactorización llevará a cabo con precisión la acción de cambio de nombre.
 
 ## <a name="how-to"></a>Procedimiento
 

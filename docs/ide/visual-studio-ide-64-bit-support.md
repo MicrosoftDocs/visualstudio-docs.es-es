@@ -1,8 +1,7 @@
 ---
-title: Compatibilidad de 64 bits del IDE de Visual Studio
+title: Compatibilidad de 64 bits
 ms.date: 02/21/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - 64-bit applications [C++]
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27553fe0fdac8378f8d4b1158902394f0704880c
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: d8f7755b1c6d1b2aefbc39d20eec9b0432391e7d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425743"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844111"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Compatibilidad de 64 bits del IDE de Visual Studio
 
@@ -30,7 +29,7 @@ En [Implementar los requisitos previos para las aplicaciones de 64 bits](../depl
 
 ## <a name="configure-projects-as-64-bit-applications"></a>Configurar los proyectos como aplicaciones de 64 bits
 
-En [Cómo: Configurar proyectos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md) se describe la configuración de proyectos para compilarlos como aplicaciones de 64 bits.
+[Cómo: Configurar proyectos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md) se describe la configuración de proyectos para compilarlos como aplicaciones de 64 bits.
 
 ## <a name="debug-a-64-bit-application"></a>Depurar una aplicación de 64 bits
 

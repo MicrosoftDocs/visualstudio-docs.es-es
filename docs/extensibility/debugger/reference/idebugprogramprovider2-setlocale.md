@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramProvider2::SetLocale | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramProvider2::SetLocale
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5dd64ad2a0d1aa8f4dd361b40597122f3401f232
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1bc081fbe90a643f13c0ab3b3074927daf59d113
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868136"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943387"
 ---
 # <a name="idebugprogramprovider2setlocale"></a>IDebugProgramProvider2::SetLocale
 Establece una configuración regional que se usará para los recursos específicos de la configuración regional.  
@@ -28,14 +25,14 @@ Establece una configuración regional que se usará para los recursos específic
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT SetLocale(  
-   WORD wLangID  
+HRESULT SetLocale(  
+   WORD wLangID  
 );  
 ```  
   
 ```csharp  
-int SetLocale(  
-   ushort wLangID  
+int SetLocale(  
+   ushort wLangID  
 );  
 ```  
   

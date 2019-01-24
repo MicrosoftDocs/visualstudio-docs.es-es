@@ -1,9 +1,6 @@
 ---
 title: Personalizar una cinta para InfoPath
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -11,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - InfoPath [Office development in Visual Studio], Ribbon
 - Ribbon [Office development in Visual Studio], InfoPath
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f0a6a50ca1e84d9b1f5508cccbad24607f36b3f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c69ef50662bd1b98e896d1b8d3933d23be26123c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942067"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837269"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>Personalizar una cinta para InfoPath
   Al personalizar la Cinta en Microsoft Office InfoPath, debe tener en cuenta dónde aparecerá la Cinta personalizada en la aplicación. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] puede mostrar la Cinta en los tres tipos de ventanas de la aplicación InfoPath indicados a continuación:  
@@ -32,7 +29,7 @@ ms.locfileid: "49942067"
   
 - La ventana Vista previa de impresión.  
   
-  **Aplicación:** la información de este tema se aplica a los proyectos de complemento VSTO para InfoPath 2010. Para obtener más información, consulte [características disponibles por tipo de aplicación y el proyecto de Office](../vsto/features-available-by-office-application-and-project-type.md).  
+  **Se aplica a:** La información de este tema se aplica a los proyectos de complemento VSTO para InfoPath 2010. Para obtener más información, consulte [características disponibles por tipo de aplicación y el proyecto de Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
   Los usuarios y diseñadores abren una plantilla de formulario en modo de diseño para modificar la apariencia y el diseño de la plantilla. Los usuarios abren formularios basados en una plantilla de formulario para agregar contenido.  
   
@@ -69,5 +66,3 @@ ms.locfileid: "49942067"
  [Información general de la cinta de opciones](../vsto/ribbon-overview.md)   
  [Diseñador de cinta](../vsto/ribbon-designer.md)   
  [Ribbon XML](../vsto/ribbon-xml.md)  
-  
-  

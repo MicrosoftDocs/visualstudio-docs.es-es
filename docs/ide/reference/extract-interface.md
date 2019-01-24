@@ -1,8 +1,7 @@
 ---
-title: Refactorización de extracción de una interfaz en Visual Studio
+title: Refactorización de extracción de una interfaz
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -14,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b126d3753c0b4d92a3ef7bc2579c6208e61e308b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bc315ed49e31e78bc549e446858a30979d7135b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849889"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838221"
 ---
 # <a name="extract-an-interface-refactoring"></a>Refactorización de extracción de una interfaz
 
@@ -29,9 +28,9 @@ Esta refactorización se aplica a lo siguiente:
 
 - Visual Basic
 
-**Qué:** Le permite crear una interfaz con los miembros existentes de una clase, estructura o interfaz.
+**Qué:** Permite crear una interfaz con los miembros existentes de una clase, estructura o interfaz.
 
-**Cuándo:** Tiene varias clases, estructuras o interfaces con métodos que podrían hacerse comunes y utilizarse por otras clases, estructuras o interfaces.
+**Cuándo:** Se tienen varias clases, estructuras o interfaces con métodos que podrían hacerse comunes y usarse por otras clases, estructuras o interfaces.
 
 **Por qué:** Las interfaces son excelentes construcciones para diseños orientados a objetos. Imagine que tiene clases para varios animales (Perro, Gato, Pájaro) que podrían tener métodos en común, como Comer, Beber, Dormir. Usando una interfaz como IAnimal, podría hacer que Perro, Gato y Pájaro tengan una "firma" común para estos métodos.
 

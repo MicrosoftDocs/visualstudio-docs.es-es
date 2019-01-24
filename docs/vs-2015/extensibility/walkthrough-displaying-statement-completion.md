@@ -15,12 +15,12 @@ ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8f26f37a945ce9ec665e924662d117f43e49ab77
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 097cb671e15b75edd7e61f7860cf3a0c03123c9b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839341"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733035"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>Tutorial: Visualización de finalización de instrucciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

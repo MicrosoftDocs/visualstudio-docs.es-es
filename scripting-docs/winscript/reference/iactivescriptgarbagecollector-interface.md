@@ -12,21 +12,21 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 55fd4bc91ba158ebbfa16df169ec7b39c7176ad5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6809fe089c2cd3f060cb4591b7c4d1ff12b01e97
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645715"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346259"
 ---
 # <a name="iactivescriptgarbagecollector-interface"></a>IActiveScriptGarbageCollector (Interfaz)
-Proporciona un método para iniciar una recolección de elementos no utilizados. Esta interfaz debe implementarse mediante motores de Script activo que desea limpiar sus recursos.  
+Proporciona un método para iniciar la recolección de elementos no utilizados. Esta interfaz debe implementarse mediante motores de Script activo que desean limpiar sus recursos.  
   
 ## <a name="methods"></a>Métodos  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md)|Inicia la recopilación de elementos no utilizados.|  
+|[IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md)|Inicia la recolección de elementos no utilizados.|  
   
 ## <a name="see-also"></a>Vea también  
  [Active Script (Interfaces)](../../winscript/reference/active-script-interfaces.md)

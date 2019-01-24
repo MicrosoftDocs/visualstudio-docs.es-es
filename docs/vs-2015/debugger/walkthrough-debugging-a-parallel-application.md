@@ -24,15 +24,15 @@ helpviewer_keywords:
 - parallel applications, debugging [C#]
 ms.assetid: 2820ac4c-c893-4d87-8c62-83981d561493
 caps.latest.revision: 31
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 613b3580d863e7d09ae62cb41182bd997f65df58
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7f7c580ed07198f47776ee1edbad23918c03d564
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823663"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51776725"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>Tutorial: Depurar una aplicación paralela
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

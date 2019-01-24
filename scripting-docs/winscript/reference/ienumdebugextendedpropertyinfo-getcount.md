@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExtendedPropertyInfo::GetCount | Documentos de Microsoft
+title: IEnumDebugExtendedPropertyInfo::GetCount | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d454fd82317d1e021b27da3366138bdf1a8091fa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 61a833a2ea8fe9bc09845b369db896b491b65263
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924179"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344933"
 ---
 # <a name="ienumdebugextendedpropertyinfogetcount"></a>IEnumDebugExtendedPropertyInfo::GetCount
 Obtiene el número de `ExtendedDebugPropertyInfo` estructuras en el enumerador.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetCount (  
    ULONG* pcelt  
 );  

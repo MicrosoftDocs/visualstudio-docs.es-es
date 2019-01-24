@@ -1,8 +1,7 @@
 ---
-title: Contraer y expandir regiones de código en Visual Studio
+title: Contracción y expansión de regiones de código
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - outlining
@@ -17,16 +16,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6c8102eb2bc94785d36256fc0c5653146cc5c76
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: ee657cdf0c7046021a3589378926b086caf504ac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447215"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832890"
 ---
 # <a name="outlining"></a>esquematizar
 
 Se puede ocultar algún código de la vista si se contrae una región de código para que aparezca debajo de un signo más (**+**). Para expandir una región contraída hay que hacer clic en su signo más. Si prefiere usar el teclado, puede presionar **CTRL**+**M**+**M** para expandir o contraer. También se puede contraer una región de esquematización si se hace doble clic en cualquier línea de la región en el margen de esquematización, que aparece justo a la izquierda del código. Para ver el contenido de una región contraída como información sobre herramientas, hay que mantener el mouse sobre la región contraída.
+
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Editor de código fuente (Visual Studio para Mac)](/visualstudio/mac/source-editor).
 
 Las regiones en el margen de esquematización también se resaltan cuando se mantiene el mouse sobre el margen. El color de resaltado predeterminado puede parecer bastante pálido en algunas configuraciones de color. Se puede cambiar en **Herramientas** > **Opciones** > **Entorno** > **Fuentes y colores** > **Región contraíble**.
 
@@ -50,8 +52,9 @@ El submenú **Edición** > **Esquematización** contiene los siguientes comandos
 |Contraer bloque:\<límite lógico>|(Visual C++) Contrae una región en la función que contiene el punto de inserción. Por ejemplo, si el punto de inserción está dentro de un bucle, se oculta el bucle.|
 |Contraer todo el contenido de: \<estructuras lógicas>|(Visual C++) Contrae todas las estructuras dentro de la función.|
 
-También puede utilizar Visual Studio SDK para definir las regiones de texto que desea expandir o contraer. Vea [Tutorial: esquematización](../extensibility/walkthrough-outlining.md).
+También puede utilizar Visual Studio SDK para definir las regiones de texto que desea expandir o contraer. Vea [Tutorial: Esquematización](../extensibility/walkthrough-outlining.md).
 
 ## <a name="see-also"></a>Vea también
 
 - [Características del editor de código](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Editor de código fuente (Visual Studio para Mac)](/visualstudio/mac/source-editor)

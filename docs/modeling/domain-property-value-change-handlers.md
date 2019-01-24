@@ -1,5 +1,5 @@
 ---
-title: Controladores de cambio de valor de propiedad de dominio en Visual Studio
+title: Controladores de los cambios de valor de propiedad de dominio
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: c889aff3a2def732d5cf45e76ba3d716ad3e3ad3
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 8a682563355d37441b093db7c2e1575bf2584464
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859593"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941669"
 ---
 # <a name="domain-property-value-change-handlers"></a>Controladores de cambio de valor de propiedad de dominio
 
@@ -95,7 +94,7 @@ if (newValue > 10)
 }
 ```
 
-### <a name="alternative-technique-calculated-properties"></a>Técnica alternativa: calcula las propiedades
+### <a name="alternative-technique-calculated-properties"></a>Técnica alternativa: propiedades calculadas
 
 El ejemplo anterior muestra cómo se puede usar OnValueChanged() para propagar los valores de una propiedad de dominio a otra. Cada propiedad tiene su propio valor almacenado.
 
@@ -105,7 +104,7 @@ En lugar del ejemplo anterior, puede establecer el **tipo** campo de `TextLength
 
 Sin embargo, un posible inconveniente de las propiedades calculadas es que la expresión se evalúa cada vez que se usa el valor, lo que podría suponer un problema de rendimiento. Además, las propiedades calculadas no tienen ningún método OnValueChanging() y OnValueChanged().
 
-### <a name="alternative-technique-change-rules"></a>Técnica alternativa: cambiar las reglas
+### <a name="alternative-technique-change-rules"></a>Técnica alternativa: reglas de cambio
 
 Si define una regla de cambio, se ejecuta al final de una transacción en la que cambia el valor de la propiedad.  Para obtener más información, consulte [propagar cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).
 

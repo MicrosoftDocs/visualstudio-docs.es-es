@@ -1,8 +1,7 @@
 ---
-title: Conceptos básicos de las pruebas unitarias en Visual Studio
+title: Conceptos básicos de prueba unitaria
 ms.date: 2016-01-07
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45babce1d9b742bd2af5b047973c4f96b41e52cf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e5b08592fdd60bf88ce703b1b97bd5485cc307ab
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935320"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270185"
 ---
 # <a name="unit-test-basics"></a>Conceptos básicos de las pruebas unitarias
 
@@ -26,7 +25,7 @@ Las pruebas unitarias tienen el mayor efecto en la calidad del código cuando so
 
 Puede generar rápidamente proyectos y métodos de prueba a partir del código o crear manualmente las prueba a medida que las necesite. Cuando use IntelliTest para explorar el código .NET, puede generar datos de prueba y un conjunto de pruebas unitarias. Para cada instrucción en el código, se genera una entrada de prueba que ejecutará esa instrucción. Descubra cómo [generar pruebas unitarias para el código](generate-unit-tests-for-your-code-with-intellitest.md).
 
-El Explorador de pruebas también puede ejecutar marcos de pruebas unitarias de terceros y de código abierto que hayan implementado interfaces complementarias del Explorador de pruebas. Muchos de estos marcos se pueden agregar a través del Administrador de extensiones de Visual Studio y la galería de Visual Studio. Vea [Instalar marcos de prueba unitaria de terceros](../test/install-third-party-unit-test-frameworks.md).
+El Explorador de pruebas también puede ejecutar marcos de pruebas unitarias de terceros y de código abierto que hayan implementado interfaces complementarias del Explorador de pruebas. Muchos de estos marcos se pueden agregar a través del Administrador de extensiones de Visual Studio y la galería de Visual Studio. Para más información, vea [Instalar marcos de prueba unitaria de terceros](../test/install-third-party-unit-test-frameworks.md).
 
 ## <a name="get-started"></a>Primeros pasos
 
@@ -84,7 +83,7 @@ En general, es más rápido generar el proyecto de prueba unitaria y los código
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Generar el proyecto de prueba unitaria y los códigos auxiliares correspondientes
 
-1. En la ventana del editor de código, haga clic en el botón secundario y elija **Crear pruebas unitarias** en el menú contextual.
+1. En la ventana del editor de código, haga clic con el botón derecho y seleccione **Crear pruebas unitarias** en el menú contextual.
 
     ![Desde la ventana del editor, vea el menú contextual](../test/media/createunittestsrightclick.png)
 
@@ -127,7 +126,7 @@ Cada proyecto de prueba unitaria contiene clases que reflejan los nombres de las
 
 -   La clase`AccountInfoTests` contiene los métodos de prueba unitaria para la clase `AccountInfo` del proyecto `Accounts` .
 
--   La clase `CheckingAccountTests` contiene los métodos de prueba unitaria para la clase `CheckingAccount`.
+-   La clase`CheckingAccountTests` contiene los métodos de prueba unitaria para la clase `CheckingAccount` .
 
 ## <a name="write-your-tests"></a>Escribir las pruebas
 
@@ -219,7 +218,7 @@ La barra de herramientas del **Explorador de pruebas** le ayuda a detectar, orga
 
 ![Ejecutar pruebas desde la barra de herramientas del Explorador de pruebas](../test/media/ute_toolbar.png)
 
-Se puede elegir **Ejecutar todas** para ejecutar todas las pruebas o bien **Ejecutar** para elegir un subconjunto de pruebas que se desea ejecutar. Después de ejecutar un conjunto de pruebas, aparecerá un resumen de la serie de pruebas en la parte inferior de la ventana **Explorador de pruebas**. Seleccione una prueba para ver los detalles de esa prueba en el panel inferior. Elija **Abrir prueba** en el menú contextual (teclado: **F12**) para mostrar el código fuente de la prueba seleccionada.
+Se puede elegir **Ejecutar todas** para ejecutar todas las pruebas o bien **Ejecutar** para elegir un subconjunto de pruebas que se desea ejecutar. Después de ejecutar un conjunto de pruebas, aparecerá un resumen de la serie de pruebas en la parte inferior de la ventana **Explorador de pruebas**. Seleccione una prueba para ver los detalles de esa prueba en el panel inferior. Seleccione **Abrir prueba** en el menú contextual (teclado: **F12**) para mostrar el código fuente de la prueba seleccionada.
 
 Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
 
@@ -248,7 +247,7 @@ Para más información, vea [Ejecutar pruebas unitarias con el Explorador de pru
 
 **P: ¿Cómo puedo depurar las pruebas unitarias?**
 
-**R:** Use el **Explorador de pruebas** para iniciar una sesión de depuración de pruebas. La ejecución paso a paso del código con el depurador de Visual Studio permite avanzar y retroceder sin problemas entre las pruebas unitarias y el proyecto objeto de prueba. Para iniciar la depuración:
+**R:** Use el **Explorador de pruebas** para iniciar una sesión de depuración de las pruebas. La ejecución paso a paso del código con el depurador de Visual Studio permite avanzar y retroceder sin problemas entre las pruebas unitarias y el proyecto objeto de prueba. Para iniciar la depuración:
 
 1.  En el editor de Visual Studio, establezca un punto de interrupción en uno o varios métodos de prueba que desee depurar.
 
@@ -257,7 +256,7 @@ Para más información, vea [Ejecutar pruebas unitarias con el Explorador de pru
 
 2.  En el **Explorador de pruebas**, seleccione los métodos de prueba y después elija **Depurar pruebas seleccionadas** en el menú contextual.
 
-Más información sobre la [depuración de pruebas unitarias](../debugger/debugging-in-visual-studio.md).
+Más información sobre la [depuración de pruebas unitarias](../debugger/debugger-feature-tour.md).
 
 **P: Si uso TDD, ¿cómo puedo generar el código a partir de las pruebas?**
 
@@ -265,7 +264,7 @@ Más información sobre la [depuración de pruebas unitarias](../debugger/debugg
 
 ![Menú de IntelliSense Generar código auxiliar del método](../test/media/ute_generatemethodstubintellisense.png)
 
-**P: ¿Puedo crear pruebas unitarias que usan varios conjuntos de datos como entrada para ejecutar la prueba?**
+**P: ¿Puedo crear pruebas unitarias que acepten varios conjuntos de datos como entrada para ejecutar la prueba?**
 
 **R:** Sí. Los*métodos de prueba controlados por datos* permiten probar un intervalo de valores con un solo método de prueba unitaria. En el método de prueba, use un atributo `DataSource` que especifique el origen de datos y la tabla que contienen los valores de las variables que desea probar.  En el cuerpo del método, se pueden asignar los valores de fila a las variables mediante el indizador `TestContext.DataRow[`*ColumnName*`]` .
 
@@ -297,7 +296,7 @@ El método con el atributo se ejecuta una vez para cada fila de la tabla. El **E
 
 Más información sobre [pruebas unitarias controladas por datos](../test/how-to-create-a-data-driven-unit-test.md).
 
-**P: ¿Puedo ver la cantidad de código probado en las pruebas unitarias?**
+**P: ¿Puedo ver la cantidad de código que se prueba en las pruebas unitarias?**
 
 **R:** Sí. Con la herramienta de cobertura de código de Visual Studio se puede determinar la cantidad del código que las pruebas unitarias están probando realmente. Se admiten los lenguajes nativos y administrados, así como todos los marcos de pruebas unitarias que pueda ejecutar el Marco de pruebas unitarias.
 
@@ -327,7 +326,7 @@ Más información sobre cómo [aislar métodos de prueba unitaria con Microsoft 
 
 **P: ¿Puedo usar otros marcos de pruebas unitarias para crear pruebas unitarias?**
 
-**A:** Sí, siga estos pasos para [buscar e instalar otros marcos](../test/install-third-party-unit-test-frameworks.md). Después de reiniciar Visual Studio, vuelva a abrir la solución para crear las pruebas unitarias y seleccione los marcos instalados aquí:
+**R:** Sí, siga estos pasos para [buscar e instalar otros marcos](../test/install-third-party-unit-test-frameworks.md). Después de reiniciar Visual Studio, vuelva a abrir la solución para crear las pruebas unitarias y seleccione los marcos instalados aquí:
 
 ![Seleccione otro marco de prueba unitaria instalado](../test/media/createunittestsdialogextensions.png)
 

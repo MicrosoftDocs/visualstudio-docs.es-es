@@ -1,5 +1,5 @@
 ---
-title: Creación de un complemento de prueba de rendimiento web en Visual Studio
+title: Creación de un complemento de prueba de rendimiento web
 ms.date: 10/03/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,24 +12,25 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: ad1dff59ed942c16f05176f3e26f0042234d4933
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: c4fb207fc5404c0540324a3d32281db14cc6ac65
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380171"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829321"
 ---
-# <a name="how-to-create-a-web-performance-test-plug-in"></a>Cómo: Crear un complemento de pruebas de rendimiento web
+# <a name="how-to-create-a-web-performance-test-plug-in"></a>Procedimiento para crear un complemento de prueba de rendimiento web
 
 Los complementos de pruebas de rendimiento web permiten aislar y reutilizar código fuera de las principales instrucciones declarativas de la prueba de rendimiento web. Un complemento de prueba de rendimiento web personalizado ofrece un modo de llamar a código cuando se ejecuta la prueba de rendimiento web. El complemento de prueba de rendimiento web se ejecuta una vez por cada iteración de la prueba. Además, si invalida los métodos PreRequest o PostRequest en el complemento de pruebas, esos complementos de solicitud se ejecutarán antes o después de cada solicitud, respectivamente.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Para crear un complemento de prueba de rendimiento web personalizado, derive su propia clase de la clase base <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
 
 Puede usar complementos de prueba de rendimiento web personalizados con las pruebas de rendimiento web que ha grabado, lo que le permitirá escribir una cantidad mínima de código para obtener un mayor nivel de control sobre las pruebas de rendimiento web. Sin embargo, también puede utilizarlos con pruebas de rendimiento web automatizadas. Para obtener más información, consulte [Cómo: Crear una prueba de rendimiento web codificada](../test/generate-and-run-a-coded-web-performance-test.md).
 
 > [!NOTE]
-> También puede crear complementos de pruebas de carga. Vea [Cómo: Crear un complemento de pruebas de carga](../test/how-to-create-a-load-test-plug-in.md).
+> También puede crear complementos de pruebas de carga. Vea [Cómo: Crear un complemento de prueba de carga](../test/how-to-create-a-load-test-plug-in.md).
 
 ## <a name="to-create-a-custom-web-performance-test-plug-in"></a>Para crear un complemento de pruebas de rendimiento web personalizado
 
@@ -109,7 +110,7 @@ Puede usar complementos de prueba de rendimiento web personalizados con las prue
     > [!WARNING]
     > Puede obtener un error similar al siguiente al ejecutar una prueba de rendimiento web o una prueba de carga que use su complemento:
     >
-    > **Error en la solicitud: excepción en \<plug-in> event: no se pudo cargar el archivo o ensamblado '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' o una de sus dependencias. El sistema no puede encontrar el archivo especificado.**
+    > **Error en la solicitud: Excepción en el evento \<complemento>: no se pudo cargar el archivo o ensamblado "\<archivo "nombre_de_complemento".dll>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null" o una de sus dependencias. El sistema no puede encontrar el archivo especificado.**
     >
     > Esto ocurre si realiza cambios en el código de cualquier complemento y crea una nueva versión de DLL **(Version=0.0.0.0)**, pero el complemento sigue haciendo referencia a la versión original del complemento. Para corregir este problema, siga estos pasos:
     >
@@ -178,5 +179,5 @@ namespace SampleRules
 - [Cómo: Crear un complemento de nivel de solicitud](../test/how-to-create-a-request-level-plug-in.md)
 - [Codificación de una regla de extracción personalizada para una prueba de rendimiento web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
 - [Codificación de una regla de validación personalizada para una prueba de rendimiento web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
-- [Cómo: Crear un complemento de pruebas de carga](../test/how-to-create-a-load-test-plug-in.md)
+- [Cómo: Crear un complemento de prueba de carga](../test/how-to-create-a-load-test-plug-in.md)
 - [Generar y ejecutar una prueba de rendimiento web codificada](../test/generate-and-run-a-coded-web-performance-test.md)

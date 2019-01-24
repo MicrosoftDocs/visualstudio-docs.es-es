@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: agregar comandos a menús contextuales'
-ms.custom: ''
+title: Procedimiento Agregar comandos a menús contextuales
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -11,26 +8,26 @@ dev_langs:
 helpviewer_keywords:
 - Office menus, creating
 - Office development in Visual Studio, context menus
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9accca69c5d56461f07d21d25821c0f4181c8fbd
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1d046692ecacc108aa3ded15f7724cc5baad739f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674719"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930640"
 ---
-# <a name="how-to-add-commands-to-shortcut-menus"></a>Cómo: agregar comandos a menús contextuales
+# <a name="how-to-add-commands-to-shortcut-menus"></a>Procedimiento Agregar comandos a menús contextuales
   En este tema se muestra cómo agregar comandos a un menú contextual en una aplicación de Office mediante el uso de un complemento de VSTO.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ### <a name="to-add-commands-to-shortcut-menus-in-office"></a>Para agregar comandos a los menús contextuales de Office  
   
-1.  Agregue un elemento **XML de cinta** a un proyecto de nivel de documento o de complemento de VSTO. Para obtener más información, consulte [Cómo: empezar a personalizar la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md). En  
+1.  Agregue un elemento **XML de cinta** a un proyecto de nivel de documento o de complemento de VSTO. Para obtener más información, vea [Cómo: Introducción a la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md). En  
   
 2.  el**Exploado de soluciones**, seleccione **ThisAddIn.cs** o **ThisAddIn.vb**.  
   
@@ -51,7 +48,7 @@ ms.locfileid: "35674719"
   
 7.  En el Editor de código, agregue el código XML que describe el menú contextual y el control que quiere agregar al menú contextual.  
   
-     En el ejemplo siguiente se agrega un botón, un menú y un control de galería al menú contextual de un documento de Word. El id. del control de este menú contextual es ContextMenuText. Para obtener una lista completa de control de acceso directo de Office 2010 identificadores, vea [los archivos de Ayuda de Office 2010: identificadores de control de interfaz de usuario fluent Office](http://go.microsoft.com/fwlink/?LinkID=181052).  
+     En el ejemplo siguiente se agrega un botón, un menú y un control de galería al menú contextual de un documento de Word. El id. del control de este menú contextual es ContextMenuText. Para obtener una lista completa de control de acceso directo de Office 2010 identificadores, vea [los archivos de Ayuda de Office 2010: Identificadores de control de interfaz de usuario fluent Office](http://go.microsoft.com/fwlink/?LinkID=181052).  
   
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>  
@@ -87,4 +84,3 @@ ms.locfileid: "35674719"
  [Tutorial: Crear menús contextuales para marcadores](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)   
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Personalizar los menús contextuales de Office 2010](http://go.microsoft.com/fwlink/?LinkId=182186)  
-  

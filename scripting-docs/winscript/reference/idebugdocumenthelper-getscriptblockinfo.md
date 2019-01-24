@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7e8dc63b8419424ed3fa01f67d3e77f0bc2b57f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fd12aff51c661c2ba5af9ef909bfa481d22101d6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726215"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095295"
 ---
 # <a name="idebugdocumenthelpergetscriptblockinfo"></a>IDebugDocumentHelper::GetScriptBlockInfo
 Recupera el intervalo de caracteres y el motor de secuencia de comandos correspondiente a un bloque de script.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetScriptBlockInfo(  
    DWORD_PTR        dwSourceContext,  
    IActiveScript**  ppasd,  

@@ -1,9 +1,6 @@
 ---
 title: IDebugObject2::GetField | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugObject2::GetField
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d602aa7da2f82258a7f0d9b0ba7d1d803d05cc7d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8c0380b3c51c1049cd1edc3185d5901b98abd9eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926337"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953473"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
 Obtiene el tipo de este objeto.  
@@ -28,14 +25,14 @@ Obtiene el tipo de este objeto.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT GetField(  
- IDebugField** ppField  
+HRESULT GetField(  
+ IDebugField** ppField  
 );  
 ```  
   
 ```csharp  
-int GetField(  
-   out IDebugField ppField  
+int GetField(  
+   out IDebugField ppField  
 );  
 ```  
   

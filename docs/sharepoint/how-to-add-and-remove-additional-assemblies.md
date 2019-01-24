@@ -1,15 +1,10 @@
 ---
-title: 'Cómo: agregar y quitar ensamblados adicionales | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Agregar y quitar ensamblados adicionales | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.CustomAssembly
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,24 +14,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e5ff6fd7c9e78871d180f08c6148c25fbede3583
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: e9653fe6ab79e3615ecb231d19dd9ee20133faf6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756293"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887015"
 ---
-# <a name="how-to-add-and-remove-additional-assemblies"></a>Cómo: agregar y quitar ensamblados adicionales
+# <a name="how-to-add-and-remove-additional-assemblies"></a>Procedimiento Agregar y quitar ensamblados adicionales
   Si un paquete de SharePoint depende de otros ensamblados para la funcionalidad o los datos, puede agregar esos ensamblados al paquete de solución (.wsp). De esta manera, el servidor de SharePoint se asegura de que los ensamblados personalizados se instalan con un paquete.  
   
  También puede agregar y cambiar los controles seguros y los archivos de recursos de clase asociados a los ensamblados.  
   
 ## <a name="add-additional-assemblies-safe-controls-and-class-resources"></a>Agregar ensamblados adicionales, los controles seguros y recursos de clase  
- Puede agregar ensamblados adicionales al paquete de solución de SharePoint. Los ensamblados adicionales de una solución en espacio aislado se implementan en la memoria caché global de ensamblados, pero los elementos de proyecto de SharePoint incluidos en una solución en espacio aislado se agregan a la base de datos de contenido. También puede agregar controles seguros y recursos de clase a estos ensamblados adicionales. Para obtener más información sobre los controles seguros, vea [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) o "Creación de una entrada SafeControl" en [implementar elementos Web en SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=245505).  
+ Puede agregar ensamblados adicionales al paquete de solución de SharePoint. Los ensamblados adicionales de una solución en espacio aislado se implementan en la memoria caché global de ensamblados, pero los elementos de proyecto de SharePoint incluidos en una solución en espacio aislado se agregan a la base de datos de contenido. También puede agregar controles seguros y recursos de clase a estos ensamblados adicionales. Para obtener más información sobre los controles seguros, vea [Proporcionar información de empaquetado e implementación en los elementos del proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) o "Creación de una entrada SafeControl" en [implementar elementos Web en SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=245505).  
   
 #### <a name="to-add-an-existing-assembly"></a>Para agregar un ensamblado existente  
   
-1.  Abra el **diseñador del paquete**. Para obtener más información, consulte [Cómo: personalizar un paquete de solución SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+1.  Abra el **diseñador del paquete**. Para obtener más información, vea [Cómo: Personalizar un paquete de solución de SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 2.  Elija la **avanzadas** ficha.  
   
@@ -52,7 +47,7 @@ ms.locfileid: "36756293"
   
 1.  Abra el **diseñador del paquete**.  
   
-     Para obtener más información, consulte [Cómo: personalizar un paquete de solución SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+     Para obtener más información, vea [Cómo: Personalizar un paquete de solución SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 2.  Elija la **avanzadas** ficha.  
   
@@ -66,7 +61,7 @@ ms.locfileid: "36756293"
   
 #### <a name="to-add-a-safe-control"></a>Para agregar un control seguro  
   
-1.  Abra el **Editar ensamblado existente** cuadro de diálogo. Para ello, abra el Diseñador de paquetes, elija el **avanzadas** ficha, elija un ensamblado y, a continuación, elija el **editar**botón.  
+1.  Abra el **Editar ensamblado existente** cuadro de diálogo. Para ello, abra el Diseñador de paquetes, elija el **avanzadas** ficha, elija un ensamblado y, a continuación, elija el **editar** botón.  
   
 2.  En el **controles seguros** panel, elija el **haga clic aquí para agregar un nuevo elemento** botón.  
   
@@ -89,7 +84,7 @@ ms.locfileid: "36756293"
   
 #### <a name="to-delete-an-existing-assembly"></a>Para eliminar un ensamblado existente  
   
-1.  Abra el **diseñador del paquete**. Para obtener más información, consulte [Cómo: personalizar un paquete de solución SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+1.  Abra el **diseñador del paquete**. Para obtener más información, vea [Cómo: Personalizar un paquete de solución SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 2.  Elija la **avanzadas** ficha.  
   
@@ -115,6 +110,5 @@ ms.locfileid: "36756293"
   
 ## <a name="see-also"></a>Vea también
  [Crear características de SharePoint](../sharepoint/creating-sharepoint-features.md)   
- [Cómo: personalizar una característica de SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
- [Cómo: agregar y quitar elementos de las características de SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
-  
+ [Cómo: Personalizar una característica de SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
+ [Cómo: Agregar y quitar elementos de las características de SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   

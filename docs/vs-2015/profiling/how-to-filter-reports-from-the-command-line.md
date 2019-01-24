@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6e9b140f-b44f-4a5c-bd65-d868ddc94023
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a93e1bb2e1d3a65d82a4a0ac54e903ee20553d4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eb8df34291d99d093ccf0d053d5dd1fbe2955232
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290152"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789790"
 ---
 # <a name="how-to-filter-reports-from-the-command-line"></a>Cómo: Filtrar informes desde la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -1,20 +1,19 @@
 ---
-title: Métodos abreviados de teclado de Visual Studio
-ms.date: 06/21/2017
+title: Métodos abreviados de teclado
+ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc99820eded646d745d54e50fb58917a2c15b094
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 5d821d736bc73dbc64c947396ead683f59c4be0b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321286"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897818"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Métodos abreviados de teclado de Visual Studio
 
@@ -22,6 +21,9 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 
 > [!TIP]
 > Los accesos directos que aparecen aquí son solo un subconjunto de los métodos abreviados de teclado disponibles. Para obtener una lista más completa, vea [Métodos abreviados de teclado predeterminados](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Métodos abreviados de teclado comunes de Visual Studio para Mac](/visualstudio/mac/keyboard-shortcuts).
 
 ## <a name="window-management"></a>Administración de ventanas
 
@@ -73,6 +75,11 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 
 |Comando|Acceso directo|Disponibilidad de versión|
 |-|-|-|
+|Ir a todo|**Ctrl**+**T**|
+|Ir a archivos recientes|**Ctrl**+**T**,**R**|
+|Varios puntos de inserción de varios símbolos de inserción|**Ctrl**+**Alt**+**clic**|
+|Varios símbolos de intercalación agregan selección coincidente|**Mayús**+**Alt**+**Ins**|
+|Dar formato al documento|**Ctrl**+**K**,**D**|Visual Studio 2017, versión 15.8|
 |Modo de sugerencia de IntelliSense|**Ctrl**+**Alt**+**Espacio** (alternancia)||
 |Forzar la visualización de IntelliSense|**Ctrl**+**J**||
 |Acciones rápidas|**Ctrl**+**.**||
@@ -95,6 +102,9 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 |Navegar entre varias ventanas Definición de Peek|**Ctrl**+**Alt**+**-** y **Ctrl**+**Alt**+**=**||
 |Navegar entre varios resultados de Peek|**F8** y **Mayús**+**F8**||
 |Alternar entre la ventana del editor de código y la ventana Definición de Peek|**Mayús**+**Esc**||
+|Ir a bloque de inclusión|**Ctrl**+**Alt**+**Flecha arriba**|
+|Ir al problema siguiente o anterior|**Alt**+**RePág**/**AvPág**|
+|Menú de navegación contextual|**Alt**+**`**|
 
 ## <a name="toolbars"></a>Barras de herramientas
 
@@ -128,4 +138,5 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 
 - [Sugerencias y trucos de accesibilidad](../ide/reference/accessibility-tips-and-tricks.md)
 - [Keyboard shortcuts (Azure DevOps Services and TFS)](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts) [Métodos abreviados de teclado (Azure DevOps Services y TFS)]
-- [Visual Studio Tips and Tricks Blog](http://blogs.msdn.com/b/zainnab) (Blog de sugerencias y trucos de Visual Studio)
+- [Visual Studio Tips and Tricks Blog](https://blogs.msdn.microsoft.com/zainnab/) (Blog de sugerencias y trucos de Visual Studio)
+- [Métodos abreviados de teclado comunes de Visual Studio para Mac](/visualstudio/mac/keyboard-shortcuts)

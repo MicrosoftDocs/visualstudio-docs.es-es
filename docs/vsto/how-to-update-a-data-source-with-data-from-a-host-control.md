@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: actualizar un origen de datos con datos de un control host'
-ms.custom: ''
+title: Procedimiento Actualizar un origen de datos con datos de un control host
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3a31bac6b3cbd13fcff8c841c9947e8c14f8984a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ffacf89146932f5a8d1521ea922e27b12fb57151
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839770"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933027"
 ---
-# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Cómo: actualizar un origen de datos con datos de un control host
+# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Procedimiento Actualizar un origen de datos con datos de un control host
   Puede enlazar un control host a un origen de datos y actualizar el origen de datos con los cambios que se realicen en los datos del control. Hay dos pasos principales en este proceso:  
   
 1. Actualizar el origen de datos en memoria con los datos modificados en el control. Normalmente, el origen de datos en memoria es un elemento <xref:System.Data.DataSet>, un elemento <xref:System.Data.DataTable>, u otro objeto de datos.  
@@ -119,10 +116,8 @@ ms.locfileid: "49839770"
  [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Guardar los datos en la base de datos](../data-tools/save-data-back-to-the-database.md)    
  [Actualizar datos mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)    
- [Cómo: desplazarse por los registros de base de datos en una hoja de cálculo](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)   
+ [Cómo: Desplazarse por los registros de base de datos en una hoja de cálculo](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)   
  [Cómo: Rellenar hojas de cálculo con datos de una base de datos](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
- [Cómo: rellenar documentos con datos de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)   
- [Cómo: rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
- [Cómo: rellenar documentos con datos de servicios](../vsto/how-to-populate-documents-with-data-from-services.md)  
-  
-  
+ [Cómo: Rellenar documentos con datos de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)   
+ [Cómo: Rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
+ [Cómo: Rellenar documentos con datos de servicios](../vsto/how-to-populate-documents-with-data-from-services.md)  

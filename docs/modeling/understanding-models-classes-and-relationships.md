@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e1101a3e21fa75a180ec2421cdce37aa40bc9656
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 749c75af9056bc50689c47ca9ef8de037dfd71e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861285"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908649"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Introducción a los modelos, las clases y las relaciones
 Un lenguaje específico de dominio (DSL) se define mediante su archivo de definición de DSL, junto con cualquier código de programa personalizado que se haya escrito. La mayoría del código de programa en la solución de DSL se genera a partir de este archivo.
@@ -54,7 +53,7 @@ Un lenguaje específico de dominio (DSL) se define mediante su archivo de defini
 
  ![Relaciones de incrustación y referencia](../modeling/media/music_classes.png)
 
- La ilustración muestra cuatro clases de dominio: música, álbum, artista y canción. Las clases de dominio definen las propiedades de dominio como nombre, título y así sucesivamente. En el modelo de instancia, los valores de algunas de estas propiedades se muestran en el diagrama.
+ La ilustración muestra cuatro clases de dominio: Música, álbum, artista y canción. Las clases de dominio definen las propiedades de dominio como nombre, título y así sucesivamente. En el modelo de instancia, los valores de algunas de estas propiedades se muestran en el diagrama.
 
  Entre las clases son las relaciones de dominio: MusicHasAlbums, MusicHasArtists, AlbumbHasSongs y ArtistAppearedOnAlbums. Las relaciones tienen multiplicidades como 1..1, 0.. *. Por ejemplo, todas las canciones deben estar relacionado con exactamente un álbum a través de la relación AlbumHasSongs. Cada álbum puede tener cualquier número de canciones.
 
@@ -152,4 +151,4 @@ Un lenguaje específico de dominio (DSL) se define mediante su archivo de defini
 
 ## <a name="see-also"></a>Vea también
 
-- [Glosario de las herramientas de lenguajes específicos de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glosario de las herramientas de lenguajes específicos de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

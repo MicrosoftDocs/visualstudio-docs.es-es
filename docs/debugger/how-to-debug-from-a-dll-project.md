@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: depurar desde un proyecto DLL | Microsoft Docs'
-ms.custom: ''
-ms.date: 05/24/2018
-ms.technology: vs-ide-debug
+title: Procedimiento Depurar desde un proyecto DLL | Microsoft Docs
+ms.date: 10/10/2018
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,18 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7b38ac26a07965dc5408c1da1c655a010b6a788
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: 6dd7ec8938b8b7f94ba649affe48f170172f887b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266193"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854079"
 ---
-# <a name="how-to-debug-from-a-dll-project-in-visual-studio"></a>Cómo: depurar desde un proyecto DLL en Visual Studio
+# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Procedimiento Depurar desde un proyecto DLL en Visual Studio (C#, C++, Visual Basic, F#)
 
 Es una manera de depurar un proyecto DLL especificar la aplicación que realiza la llamada en las propiedades del proyecto DLL. A continuación, puede iniciar la depuración desde el propio proyecto DLL. Para que este método funcione, la aplicación debe llamar a la misma DLL en la misma ubicación que la configure. Si la aplicación busca y carga una versión diferente del archivo DLL, esa versión no contiene los puntos de interrupción. Otras formas de depurar archivos DLL, consulte [proyectos DLL de depuración](../debugger/debugging-dll-projects.md).
   
-Si su aplicación administrada llama a un archivo DLL nativo o la aplicación nativa llama a un archivo DLL administrado, puede depurar el archivo DLL y la aplicación que realiza la llamada. Para obtener más información, consulte [Cómo: depurar en modo mixto](../debugger/how-to-debug-in-mixed-mode.md).   
+Si su aplicación administrada llama a un archivo DLL nativo o la aplicación nativa llama a un archivo DLL administrado, puede depurar el archivo DLL y la aplicación que realiza la llamada. Para obtener más información, vea [Cómo: Depurar en modo mixto](../debugger/how-to-debug-in-mixed-mode.md).   
 
 Proyectos de archivos DLL nativos y administrados tienen una configuración diferente para especificar las aplicaciones que realiza la llamada. 
 
@@ -49,15 +47,15 @@ Proyectos de archivos DLL nativos y administrados tienen una configuración dife
    
    ![Ventana de propiedades de depuración](../debugger/media/dbg-debugging-properties-dll.png "ventana Propiedades de depuración")  
    
-1. Agregue los argumentos de programa necesarios para la **argumentos de comando** cuadro.  
+1. Agregue los argumentos de programa necesarios en el cuadro **Argumentos de comandos**.  
    
 1. Seleccione **Aceptar**.
 
 ## <a name="specify-a-calling-app-in-a-managed-dll-project"></a>Especifique una aplicación que realiza la llamada en un proyecto DLL administrado  
   
-1. Seleccione el proyecto DLL de Visual Basic o C# en **el Explorador de soluciones**. Seleccione el **propiedades** icono, presione **Alt**+**ENTRAR**, o bien haga clic en y elija **propiedades**.
+1. Seleccione el C# o proyecto de DLL de Visual Basic en **el Explorador de soluciones**. Seleccione el **propiedades** icono, presione **Alt**+**ENTRAR**, o bien haga clic en y elija **propiedades**.
    
-1. Asegúrese de que el **configuración** campo en la parte superior de la ventana se establece en **depurar**.
+1. Asegúrese de que el campo **Configuración** que hay en la parte superior de la ventana esté establecido en **Depurar**.
    
 1. En **Iniciar acción**:
    
@@ -69,7 +67,7 @@ Proyectos de archivos DLL nativos y administrados tienen una configuración dife
    
 1. Agregue los argumentos de línea de comandos necesarios en el **argumentos de línea de comandos** o **argumentos de la aplicación** campo.
    
-   ![Ventana Propiedades de depuración de C#](../debugger/media/dbg-debugging-properties-dll-csharp.png "ventana Propiedades de depuración de C#") 
+   ![C#Ventana de propiedades de depuración](../debugger/media/dbg-debugging-properties-dll-csharp.png " C# ventana Propiedades de depuración") 
    
 1. Use **archivo** > **guardar los elementos seleccionados** o **Ctrl**+**S** para guardar los cambios.
 
@@ -85,6 +83,6 @@ Si la depuración no alcanza los puntos de interrupción, asegúrese de que el a
   
 ## <a name="see-also"></a>Vea también  
  [Depurar proyectos DLL](../debugger/debugging-dll-projects.md)   
- [Configuración del proyecto para configuraciones de depuración de C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Configuración del proyecto para una configuración de depuración de Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [Configuración de proyectos para configuraciones de depuración en C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Configuración de proyectos para una configuración de depuración en Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Configuración del proyecto para una configuración de depuración de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)

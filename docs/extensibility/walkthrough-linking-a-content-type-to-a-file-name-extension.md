@@ -1,9 +1,6 @@
 ---
-title: 'Tutorial: Vinculación de un tipo de contenido a una extensión de nombre de archivo | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Vinculación de un tipo de contenido a una extensión de nombre de archivo | Documentos de Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54570ec03788f88f58f14249f200ed2028686c37
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 3123624460066a70c35d988a0723c019516502ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566758"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926192"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Tutorial: Vincular un tipo de contenido a una extensión de nombre de archivo
 Puede definir su propio tipo de contenido y una extensión de nombre de archivo un vínculo a él mediante el uso de las extensiones de Managed Extensibility Framework (MEF) del editor. En algunos casos, la extensión de nombre de archivo ya está definida por un servicio de lenguaje. Pero, para usarla con MEF, que debe seguir vincularlo a un tipo de contenido.  
@@ -28,7 +25,7 @@ Puede definir su propio tipo de contenido y una extensión de nombre de archivo 
   
 ## <a name="create-a-mef-project"></a>Crear un proyecto MEF  
   
-1.  Cree un proyecto de VSIX de C#. (En el **nuevo proyecto** cuadro de diálogo, seleccione **Visual C# / extensibilidad**, a continuación, **proyecto VSIX**.) Nombre de la solución `ContentTypeTest`.  
+1.  Cree un proyecto de VSIX de C#. (En el **nuevo proyecto** cuadro de diálogo, seleccione **Visual C# / extensibilidad**, a continuación, **proyecto VSIX**.) Asigne a la solución el nombre `ContentTypeTest`.  
   
 2.  En el **source.extension.vsixmanifest** archivo, vaya a la **activos** pestaña y establezca el **tipo** campo **Microsoft.VisualStudio.MefComponent**, el **origen** campo **un proyecto de la solución actual**y el **proyecto** campo para el nombre del proyecto.  
   
@@ -93,7 +90,7 @@ Puede definir su propio tipo de contenido y una extensión de nombre de archivo 
   
 ## <a name="add-the-content-type-to-an-editor-export"></a>Agregar el tipo de contenido a una exportación de editor  
   
-1.  Crear una extensión del editor. Por ejemplo, puede usar la extensión de glifo de margen que se describe en [Tutorial: crear un glifo de margen](../extensibility/walkthrough-creating-a-margin-glyph.md).  
+1.  Crear una extensión del editor. Por ejemplo, puede usar la extensión de glifo de margen que se describe en [Tutorial: Creación de un glifo de margen](../extensibility/walkthrough-creating-a-margin-glyph.md).  
   
 2.  Agregue la clase definida en este procedimiento.  
   

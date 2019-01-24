@@ -1,24 +1,25 @@
 ---
-title: Uso de controles HTML5 en pruebas automatizadas de IU en Visual Studio
+title: Usar controles HTML5 en pruebas de IU codificada
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 418c0aa6660b01896252d04a711d4069da389f00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dbb34804e827ddd0eefdaf4585ba517034a31392
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914494"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269896"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Usar controles HTML5 en pruebas automatizadas de IU
 
 Las pruebas de IU codificadas proporcionan soporte para algunos de los controles HTML5 incluidos en Internet Explorer 9 o Internet Explorer 10.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
  **Requisitos**
 
@@ -27,60 +28,59 @@ Las pruebas de IU codificadas proporcionan soporte para algunos de los controles
 > [!WARNING]
 > En versiones anteriores a Internet Explorer 10, era posible ejecutar pruebas de IU codificadas en un nivel de privilegios más alto en comparación con el del proceso de Internet Explorer. Al ejecutar pruebas de IU codificadas en Internet Explorer 10, tanto la prueba de IU codificada como el proceso de Internet Explorer deben estar en el mismo nivel de privilegios. Esto se debe a las características de AppContainer más seguras de Internet Explorer 10.
 
-
 > [!WARNING]
 > Si crea una prueba de IU codificada en Internet Explorer 10, podría no ejecutarse con Internet Explorer 9 o Internet Explorer 8. Esto se debe a que Internet Explorer 10 incluye controles HTML5, como audio, vídeo, barra de progreso y control deslizante. Internet Explorer 9 o Internet Explorer 8 no reconocen estos controles HTML5. Igualmente, la prueba de IU codificada mediante Internet Explorer 9 podría incluir algunos controles HTML5 que tampoco reconoce Internet Explorer 8.
 
-
 ## <a name="audio-control"></a>Control de audio
- **Control de audio:** las acciones en el control de audio de HTML5 se graban y se reproducen correctamente.
 
- ![Control Audio de HTML5](../test/media/codedui_html5_audio.png)
+**Control Audio**: Las acciones del control Audio de HTML5 se graban y se reproducen correctamente.
+
+![Control Audio de HTML5](../test/media/codedui_html5_audio.png)
 
 |Acción|Grabando|Código generado|
 |-|---------------|-|
-|**Reproducir audio**<br /><br /> Directamente desde el control o desde el menú contextual de los controles.|Reproducir el audio \<nombre> a partir de 00:00:00|HtmlAudio.Play(TimeSpan)|
+|**Reproducir audio**<br /><br /> Directamente desde el control, o bien desde el menú contextual del control.|Reproducir el audio \<nombre> a partir de 00:00:00|HtmlAudio.Play(TimeSpan)|
 |**Buscar un momento concreto en el audio**|Buscar el audio \<nombre> en 00:01:48|HtmlAudio.Seek(TimeSpan)|
-|**Pausar audio**<br /><br /> Directamente desde el control o desde el menú contextual de los controles.|Pausar el audio \<nombre> en 00:01:53|HtmlAudio.Pause(TimeSpan)|
-|**Silenciar audio**<br /><br /> Directamente desde el control o desde el menú contextual de los controles.|Silenciar el audio \<nombre>|HtmlAudio.Mute()|
-|**Reactivar audio**<br /><br /> Directamente desde el control o desde el menú contextual de los controles.|Reactivar el audio \<nombre>|HtmlAudio.Unmute()|
+|**Pausar audio**<br /><br /> Directamente desde el control, o bien desde el menú contextual del control.|Pausar el audio \<nombre> en 00:01:53|HtmlAudio.Pause(TimeSpan)|
+|**Silenciar audio**<br /><br /> Directamente desde el control, o bien desde el menú contextual del control.|Silenciar el audio \<nombre>|HtmlAudio.Mute()|
+|**Reactivar audio**<br /><br /> Directamente desde el control, o bien desde el menú contextual del control.|Reactivar el audio \<nombre>|HtmlAudio.Unmute()|
 |**Cambiar el volumen del audio**|Establecer el volumen del audio \<nombre> al 79 %|HtmlAudio.SetVolume(float)|
 
 Vea [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement) para obtener una lista de propiedades en las que puede agregar una aserción.
 
- **Propiedades de búsqueda:** las propiedades de búsqueda de `HtmlAudio` son `Id`, `Name` y `Title`.
+ **Propiedades de búsqueda**: Las propiedades de búsqueda de `HtmlAudio` son `Id`, `Name` y `Title`.
 
- **Propiedades del filtro:** las propiedades del filtro de `HtmlAudio` son `Src`, `Class`, `ControlDefinition` y `TagInstance`.
+ **Propiedades del filtro**: Las propiedades del filtro de `HtmlAudio` son `Src`, `Class`, `ControlDefinition` y `TagInstance`.
 
 > [!NOTE]
 > La cantidad de tiempo para buscar y pausar puede ser significativa. Durante la reproducción, la prueba de IU codificada esperará hasta el momento especificado en `(TimeSpan)` antes de pausar el audio. Si por alguna circunstancia especial transcurre el tiempo especificado antes de que se alcance el comando Pausa, se iniciará una excepción.
 
 
 ## <a name="video-control"></a>Control de vídeo
- **Control de vídeo:** las acciones en el control de vídeo de HTML5 se graban y se reproducen correctamente.
+ **Control Vídeo**: Las acciones del control Vídeo de HTML5 se graban y se reproducen correctamente.
 
  ![Control Video de HTML5](../test/media/codedui_html5_video.png)
 
 |Acción|Grabando|Código generado|
 |-|---------------|-|
-|**Reproducir vídeo**<br /><br /> Directamente desde el control o desde el menú contextual de los controles.|Reproducir el vídeo \<nombre> a partir de 00:00:00|HtmlVideo.Play(TimeSpan)|
+|**Reproducir vídeo**<br /><br /> Directamente desde el control, o bien desde el menú contextual del control.|Reproducir el vídeo \<nombre> a partir de 00:00:00|HtmlVideo.Play(TimeSpan)|
 |**Buscar un momento concreto en el vídeo**|Buscar el vídeo \<nombre> en 00:01:48|HtmlVideo.Seek(TimeSpan)|
-|**Pausar vídeo**<br /><br /> Directamente desde el control o desde el menú contextual de los controles.|Pausar el vídeo \<nombre> en 00:01:53|HtmlVideo.Pause(TimeSpan)|
-|**Silenciar vídeo**<br /><br /> Directamente desde el control o desde el menú contextual de los controles.|Silenciar el vídeo \<nombre>|HtmlVideo.Mute()|
-|**Reactivar audio del vídeo**<br /><br /> Directamente desde el control o desde el menú contextual de los controles.|Reactivar el audio del vídeo \<nombre>|HtmlVideo.Unmute()|
+|**Pausar vídeo**<br /><br /> Directamente desde el control, o bien desde el menú contextual del control.|Pausar el vídeo \<nombre> en 00:01:53|HtmlVideo.Pause(TimeSpan)|
+|**Silenciar vídeo**<br /><br /> Directamente desde el control, o bien desde el menú contextual del control.|Silenciar el vídeo \<nombre>|HtmlVideo.Mute()|
+|**Reactivar audio del vídeo**<br /><br /> Directamente desde el control, o bien desde el menú contextual del control.|Reactivar el audio del vídeo \<nombre>|HtmlVideo.Unmute()|
 |**Cambiar el volumen del vídeo**|Establecer el volumen del vídeo \<nombre> al 79 %||
 
 Vea [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video) para obtener una lista de propiedades en las que puede agregar una aserción.
 
- **Propiedades de búsqueda:** las propiedades de búsqueda de `HtmlVideo` son `Id`, `Name` y `Title`.
+ **Propiedades de búsqueda**: Las propiedades de búsqueda de `HtmlVideo` son `Id`, `Name` y `Title`.
 
- **Propiedades del filtro:** las propiedades del filtro de `HtmlVideo` son `Src`, `Poster`, `Class`, `ControlDefinition` y `TagInstance`.
+ **Propiedades del filtro**: Las propiedades del filtro de `HtmlVideo` son `Src`, `Poster`, `Class`, `ControlDefinition` y `TagInstance`.
 
 > [!NOTE]
 > Si rebobina o avanza rápidamente el vídeo mediante etiquetas -30s o +30s, se agregarán para buscar en el momento adecuado.
 
 ## <a name="progressbar"></a>ProgressBar
- **Control ProgressBar:** la barra de progreso es un control con el que no se puede interactuar. Puede agregar aserciones en las propiedades `Value` y `Max` de este control. Para obtener más información, vea [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
+ **ProgressBar (control)**: ProgressBar no es un control con el que se pueda interactuar. Puede agregar aserciones en las propiedades `Value` y `Max` de este control. Para obtener más información, vea [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
 
  ![Control ProgressBar de HTML5](../test/media/codedui_html5_progressbar.png)
 

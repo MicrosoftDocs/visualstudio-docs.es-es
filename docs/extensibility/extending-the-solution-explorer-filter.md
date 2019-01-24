@@ -1,9 +1,6 @@
 ---
 title: Ampliar el filtro del explorador de soluciones | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Solution Explorer, extending
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf43243abc361df6c5b32b0e71e966c61a501b52
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 3a5702a5ab42de90363328f0118b89cdc94d67f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498793"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830302"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>Ampliar el filtro del explorador de soluciones
 Puede extender **el Explorador de soluciones** filtrar funcionalidad para mostrar u ocultar archivos diferentes. Por ejemplo, puede crear un filtro que solo clase factory archivos de C# se muestra el **el Explorador de soluciones**, tal y como se muestra en este tutorial.  

@@ -1,9 +1,8 @@
 ---
 title: SDK de Azure para Python
 description: Azure SDK para Python facilita el consumo de servicios de Microsoft Azure en aplicaciones que se ejecutan en cualquier plataforma.
-ms.date: 10/10/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,14 +11,14 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: b1b41fe707c751b5cd32706d1c27f707f964dff8
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: db391b30305e3fad8384dcbeea611379f0061054
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49100931"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854222"
 ---
-# <a name="azure-sdk-for-python"></a>SDK de Azure para Python
+# <a name="consume-azure-services-using-the-azure-sdk-for-python"></a>Consumo de servicios de Azure mediante el SDK de Azure para Python
 
 Azure SDK para Python facilita el uso y la administración de los servicios de Microsoft Azure en aplicaciones que se ejecutan en Windows, MacOS y Linux.
 
@@ -39,7 +38,7 @@ También puede seguir [Instalación de Python y el SDK](https://docs.microsoft.c
 
 El [Centro para desarrolladores de Azure SDK para Python](https://docs.microsoft.com/python/azure/?view=azure-python) también tiene varios recursos útiles, lo que incluye una serie de tutoriales como:
 
-- Creación de aplicaciones web en Azure App Service en Linux(/azure/app-service/containers/quickstart-python).
+- [Creación de aplicaciones web en Azure App Service en Linux](/azure/app-service/containers/quickstart-python).
 - [Blob storage](/azure/storage/blobs/storage-quickstart-blobs-python)
 - [Table storage](/azure/cosmos-db/table-storage-how-to-use-python)
 - [Queue storage](/azure/storage/storage-python-how-to-use-queue-storage)

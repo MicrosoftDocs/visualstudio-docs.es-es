@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7322738fe1bd17944bc5d1883bc9c16e56cc59e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fe5fe257814d547ead60d25f2e17b3afcdc13827
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855096"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820431"
 ---
 # <a name="model-your-app39s-architecture"></a>Modelar la aplicación&#39;arquitectura s
 Para ayudar a garantizar que el sistema de software o la aplicación cumple sus usuarios necesidades, puede crear modelos en Visual Studio como parte de la descripción de la estructura general y el comportamiento de su aplicación o sistema de software. A través de los modelos, también puede describir los patrones que se usan a lo largo de todo el proceso de diseño. Estos modelos le ayudan a entender la arquitectura existente, a analizar los cambios y a comunicar sus intenciones con claridad.
@@ -67,7 +66,7 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumple sus 
   El nivel de detalle que debe usarse en los requisitos o en un modelo arquitectónico dependerá de la escala del proyecto y del tamaño y distribución del equipo. Un equipo reducido que trabaje en un proyecto pequeño podría simplemente trazar un diagrama de clases de los conceptos de negocio y algunos modelos de diseño; un proyecto grande distribuido en varias regiones necesitaría mucho más detalle.
 
 ## <a name="BigDecisions"></a> Patrones de arquitectura
- En una fase inicial de desarrollo, tendrá que elegir las principales tecnologías y elementos en los que se va a basar el diseño. Las áreas en las que deben tomarse estas decisiones son, entre otras:
+  En una fase inicial de desarrollo, tendrá que elegir las principales tecnologías y elementos en los que se va a basar el diseño. Las áreas en las que deben tomarse estas decisiones son, entre otras:
 
 - Base de las opciones de tecnología, como la elección entre una base de datos y un sistema de archivos y la elección entre una aplicación de red y un cliente web y así sucesivamente.
 

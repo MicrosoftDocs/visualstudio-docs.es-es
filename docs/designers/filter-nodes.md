@@ -2,7 +2,6 @@
 title: Nodos de filtro
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: reference
 ms.assetid: f7cae2dc-e9a7-49d4-8be5-58b79868624e
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cf0902847899f8796ac34765c66c79530248e81
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ba6246f68505a4b1d0a93011b46e32918779dfa2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922232"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836902"
 ---
 # <a name="filter-nodes"></a>Nodos de filtro
 

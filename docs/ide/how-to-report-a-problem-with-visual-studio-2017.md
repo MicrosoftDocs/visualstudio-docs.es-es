@@ -1,10 +1,10 @@
 ---
-title: Cómo notificar un problema con Visual Studio 2017
+title: Cómo notificar un problema con Visual Studio
+titleSuffix: ''
 description: Obtenga información sobre cómo notificar un problema con Visual Studio 2017 a Microsoft, para que podamos diagnosticarlo y corregirlo.
-ms.custom: ''
 ms.date: 03/11/2018
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
 author: TerryGLee
@@ -12,16 +12,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a059e25546abf0d1624d3c8bc08a531d3fc4b382
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 5ba1b46a8473336b95a7e90c4a80e4b1e961386b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "36755929"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882911"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Cómo notificar un problema con Visual Studio 2017
 
 Si experimenta un problema con Visual Studio, nos gustaría que nos lo comunicara. Aquí le mostramos cómo notificar un problema a la [Comunidad de desarrolladores](https://developercommunity.visualstudio.com/) para que podamos diagnosticarlo y corregirlo.
+
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Cómo notificar un problema en Visual Studio para Mac](/visualstudio/mac/report-a-problem).
 
 ## <a name="report-a-problem-by-using-visual-studio"></a>Notificación de un problema con Visual Studio
 
@@ -125,7 +128,7 @@ A partir de la versión 15.5 de Visual Studio 2017, hay un nuevo flujo de trabaj
 
 Si no quiere o no puede notificar un problema mediante Visual Studio, es posible que ese problema ya se haya notificado y que se haya publicado una solución en la página [Comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/).
 
-Si no tiene un problema para notificar, pero quiere proporcionar comentarios sobre el producto o una sugerencia, también hay un lugar para eso. Para obtener más información, vea la página [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-ide).
+Si no tiene ningún problema que notificar pero quiere sugerir una característica, también hay un lugar para eso. Para obtener más información, vea la página [Sugerir una característica](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
 
 ## <a name="see-also"></a>Vea también
 

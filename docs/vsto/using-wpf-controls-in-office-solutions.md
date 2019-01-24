@@ -1,9 +1,6 @@
 ---
 title: Usar controles WPF en soluciones de Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5419a715cbe255b5cfc31a113a00e3525d63d827
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 49b4d2fd4a32b6d73e5fcdfc65850abcb2835856
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008208"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822280"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Usar controles WPF en soluciones de Office
 
@@ -56,11 +53,11 @@ No puede agregar controles WPF directamente a los elementos de la interfaz de us
 
 5.  Agregue un panel de acciones, área de formulario o panel de tareas personalizado al proyecto:
 
-    -   Para las áreas de formulario, agregue un **formulario de Outlook** al proyecto. Para obtener más información, consulte [Cómo: agregar un área de formulario a un proyecto de complemento de Outlook en](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
+    -   Para las áreas de formulario, agregue un **formulario de Outlook** al proyecto. Para obtener más información, vea [Cómo: Agregar un área de formulario a un proyecto de complemento de Outlook en](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
 
-    -   Paneles de acciones, agregue un **Control Panel de acciones** o **Control de usuario** al proyecto. Para obtener más información, consulte [Cómo: agregar un panel de acciones a documentos de Word o libros de Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md) y [Cómo: agregar un panel de acciones a documentos de Word o libros de Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
+    -   Paneles de acciones, agregue un **Control Panel de acciones** o **Control de usuario** al proyecto. Para obtener más información, vea [Cómo: Agregar un panel de acciones a documentos de Word o libros de Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md) y [Cómo: Agregar un panel de acciones a documentos de Word o libros de Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
 
-    -   Paneles de tareas personalizados, agregue un **Control de usuario** al proyecto. Para obtener más información, consulte [Cómo: agregar un panel de tareas personalizado a una aplicación](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
+    -   Paneles de tareas personalizados, agregue un **Control de usuario** al proyecto. Para obtener más información, vea [Cómo: Agregar un panel de tareas personalizado a una aplicación](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 
 6.  Desde el *ProjectName* **controles de usuario de WPF** pestaña de la **cuadro de herramientas**, arrastre el control de usuario WPF hasta el diseñador para el panel de acciones, área de formulario o panel de tareas personalizado.
 
@@ -117,7 +114,7 @@ Para obtener más información sobre cómo agregar controles de WPF a los contro
 
 -   [Tutorial: Organizar el contenido WPF en Windows Forms en tiempo de diseño](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)
 
--   [Tutorial: Estilo contenido WPF](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
+-   [Tutorial: Contenido de WPF de estilo](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
 
 ## <a name="see-also"></a>Vea también
 
@@ -126,6 +123,6 @@ Para obtener más información sobre cómo agregar controles de WPF a los contro
 - [Información general sobre el panel de acciones](../vsto/actions-pane-overview.md)
 - [Paneles de tareas personalizados](../vsto/custom-task-panes.md)
 - [Crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md)
-- [Cómo: agregar un panel de acciones a documentos de Word o libros de Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
-- [Cómo: agregar un panel de tareas personalizado a una aplicación](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
-- [Cómo: agregar un área de formulario a un proyecto de complemento de Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [Cómo: Agregar un panel de acciones a documentos de Word o libros de Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
+- [Cómo: Agregar un panel de tareas personalizado a una aplicación](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
+- [Cómo: Agregar un área de formulario a un proyecto de complemento de Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)

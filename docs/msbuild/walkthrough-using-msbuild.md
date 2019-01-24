@@ -1,8 +1,6 @@
 ---
 title: 'Tutorial: Usar MSBuild | Microsoft Docs'
-ms.custom: ''
-ms.date: 11/04/2016
-ms.technology: msbuild
+ms.date: 12/18/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94fdbb5f143d1c087d97490961d230ace239f348
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: e73fd5e679ae4b35fa47926f6737b980ef700e4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880154"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956925"
 ---
 # <a name="walkthrough-use-msbuild"></a>Tutorial: Usar MSBuild
 MSBuild es la plataforma de compilación para Microsoft y Visual Studio. Este tutorial presenta los bloques de compilación de MSBuild y muestra la forma de escribir, manipular y depurar los proyectos de MSBuild. Aprenderá a:
@@ -116,24 +114,28 @@ La tarea Message es una de las muchas tareas que se distribuyen con MSBuild. Par
 La tarea Message toma el valor de cadena del atributo Text como entrada y lo muestra en el dispositivo de salida. El destino HelloWorld ejecuta la tarea Message dos veces: primero para mostrar "Hello" y luego para mostrar "World".
 
 ## <a name="build-the-target"></a>Compilación del destino
- Ejecute MSBuild desde el **símbolo del sistema de Visual Studio** para compilar el destino HelloWorld definido anteriormente. Utilice el modificador de línea de comandos -target o -t para seleccionar el destino.
+ Ejecute MSBuild desde el **Símbolo del sistema para desarrolladores** de Visual Studio para compilar el destino HelloWorld definido anteriormente. Utilice el modificador de línea de comandos -target o -t para seleccionar el destino.
 
 > [!NOTE]
->  Haremos referencia al **símbolo del sistema de Visual Studio** como la **ventana Comandos** en las secciones siguientes.
+>  Haremos referencia al **Símbolo del sistema para desarrolladores** como la **ventana Comandos** en las secciones siguientes.
 
 #### <a name="to-build-the-target"></a>Para compilar el destino
 
-1.  Haga clic en **Inicio** y, a continuación, en **Todos los programas**. Busque y haga clic en el **símbolo del sistema de Visual Studio** en la carpeta **Visual Studio Tools**.
+1. Abra la **ventana Comandos**.
 
-2.  En la ventana de comandos, navegue hasta la carpeta que contiene el archivo de proyecto, en este caso, *D:\BuildApp\BuildApp*.
+   (Windows 10) En el cuadro de búsqueda de la barra de tareas, comience a escribir el nombre de la herramienta, como `dev` o `developer command prompt`. Esto muestra una lista de las aplicaciones instaladas que coinciden con el patrón de búsqueda.
 
-3.  Ejecute msbuild con el modificador de comando -t:HelloWorld. Esto selecciona y compila el destino HelloWorld:
+   Si tiene que buscarlo manualmente, es el archivo *LaunchDevCmd.bat* en la carpeta *<visualstudio installation folder>\<versión> \Common7\Tools*.
+
+2. En la ventana de comandos, navegue hasta la carpeta que contiene el archivo de proyecto, en este caso, *D:\BuildApp\BuildApp*.
+
+3. Ejecute msbuild con el modificador de comando -t:HelloWorld. Esto selecciona y compila el destino HelloWorld:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4.  Examine la salida en la **ventana Comandos**. Debe ver las dos líneas "Hello" y "World":
+4. Examine la salida en la **ventana Comandos**. Debe ver las dos líneas "Hello" y "World":
 
     ```
     Hello
@@ -225,10 +227,10 @@ $(PropertyName)
  Casi todos elementos de MSBuild pueden tener un atributo Condition. Para obtener más información sobre cómo utilizar el atributo Condition, consulte [Condiciones](../msbuild/msbuild-conditions.md).
 
 ### <a name="reserved-properties"></a>Propiedades reservadas
- MSBuild reserva algunos nombres de propiedades para almacenar información sobre el archivo del proyecto y los archivos binarios de MSBuild. MSBuildToolsPath es un ejemplo de una propiedad reservada. Como a cualquier otra propiedad, a las propiedades reservadas se hace referencia con la notación $. Para más información, consulte [Cómo: Hacer referencia al nombre o la ubicación del archivo del proyecto](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) y [Propiedades reservadas y conocidas de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
+ MSBuild reserva algunos nombres de propiedades para almacenar información sobre el archivo del proyecto y los archivos binarios de MSBuild. MSBuildToolsPath es un ejemplo de una propiedad reservada. Como a cualquier otra propiedad, a las propiedades reservadas se hace referencia con la notación $. Para obtener más información, vea [Cómo: Hacer referencia al nombre o la ubicación del archivo del proyecto](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) y [Propiedades reservadas y conocidas de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
 
 ### <a name="environment-variables"></a>Variables de entorno
- En los archivos del proyecto, se puede hacer referencia a las variables de entorno como si fueran propiedades de compilación. Por ejemplo, para utilizar la variable de entorno PATH en el archivo de proyecto, utilice $(Path). Si el proyecto incluye la definición de una propiedad que tiene el mismo nombre que una variable de entorno, la propiedad del proyecto reemplaza el valor de la variable de entorno. Para más información, consulte [Cómo: Utilizar variables de entorno en una compilación](../msbuild/how-to-use-environment-variables-in-a-build.md).
+ En los archivos del proyecto, se puede hacer referencia a las variables de entorno como si fueran propiedades de compilación. Por ejemplo, para utilizar la variable de entorno PATH en el archivo de proyecto, utilice $(Path). Si el proyecto incluye la definición de una propiedad que tiene el mismo nombre que una variable de entorno, la propiedad del proyecto reemplaza el valor de la variable de entorno. Para obtener más información, vea [Cómo: Usar variables de entorno al compilar](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
 ## <a name="set-properties-from-the-command-line"></a>Establecimiento de propiedades desde la línea de comandos
  Las propiedades se pueden definir en la línea de comandos utilizando el modificador de línea de comandos -property o -p. Los valores de propiedad recibidos desde la línea de comandos invalidan los valores de propiedad establecidos en el archivo del proyecto y las variables de entorno.
@@ -388,7 +390,7 @@ Cambie la tarea Message para utilizar retornos de carro y saltos de línea (% 0A
 <Photos Include="images\**.jpeg" />
 ```
 
- agrega todos los archivos con la extensión *.jpeg* de la carpeta *images*, y todas sus subcarpetas, al tipo de elemento Photos. Para obtener más ejemplos, consulte [Cómo: Seleccionar los archivos que se van a compilar](../msbuild/how-to-select-the-files-to-build.md).
+ agrega todos los archivos con la extensión *.jpeg* de la carpeta *images*, y todas sus subcarpetas, al tipo de elemento Photos. Para obtener más ejemplos, vea [Cómo: Seleccionar los archivos que se van a compilar](../msbuild/how-to-select-the-files-to-build.md).
 
  Observe que según se declaran elementos se agregan al tipo de elemento. Por ejemplo,
 
@@ -409,7 +411,7 @@ Cambie la tarea Message para utilizar retornos de carro y saltos de línea (% 0A
 <Compile Include="*.cs" Exclude="*Designer*">
 ```
 
- agrega todos los archivos con la extensión *.cs* al tipo de elemento Compile, salvo los archivos cuyos nombres contienen la cadena *Designer*. Para obtener más ejemplos, consulte [Cómo: Excluir archivos de la compilación](../msbuild/how-to-exclude-files-from-the-build.md).
+ agrega todos los archivos con la extensión *.cs* al tipo de elemento Compile, salvo los archivos cuyos nombres contienen la cadena *Designer*. Para obtener más ejemplos, vea [Cómo: Excluir archivos de la compilación](../msbuild/how-to-exclude-files-from-the-build.md).
 
 El atributo Exclude solamente afecta a los elementos agregados por el atributo Include en el elemento que contiene ambos. Por ejemplo,
 
@@ -562,7 +564,7 @@ Por ejemplo, una lista de elementos de archivos de origen se puede transformar e
 Observe que los metadatos expresados en esta sintaxis no producen el procesamiento por lotes.
 
 ## <a name="whats-next"></a>Pasos adicionales
- Para información sobre cómo crear un archivo del proyecto paso a paso, consulte [Tutorial: Crear un archivo del proyecto de MSBuild desde el principio](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
+ Para saber cómo crear un sencillo archivo de proyecto paso por paso, pruebe con [Tutorial: Crear un archivo de proyecto de MSBuild desde cero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
 
 ## <a name="see-also"></a>Vea también
 

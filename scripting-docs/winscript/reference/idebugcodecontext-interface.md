@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce8068a4d015adb576d8ec1c03e3edc0db26b304
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0840bf0a77a671bd2a37c49db48d1eb1cd5fa222
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725765"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349171"
 ---
 # <a name="idebugcodecontext-interface"></a>IDebugCodeContext (Interfaz)
 Una abstracción que representa una posición en el código ejecutable.  
@@ -30,5 +30,5 @@ Una abstracción que representa una posición en el código ejecutable.
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IDebugCodeContext::GetDocumentContext](../../winscript/reference/idebugcodecontext-getdocumentcontext.md)|Devuelve el contexto del documento asociado a este contexto del código.|  
-|[IDebugCodeContext::SetBreakPoint](../../winscript/reference/idebugcodecontext-setbreakpoint.md)|Establece o borra un punto de interrupción en este contexto del código.|
+|[IDebugCodeContext::GetDocumentContext](../../winscript/reference/idebugcodecontext-getdocumentcontext.md)|Devuelve el contexto de documento asociado a este contexto de código.|  
+|[IDebugCodeContext::SetBreakPoint](../../winscript/reference/idebugcodecontext-setbreakpoint.md)|Establece o borra un punto de interrupción en este contexto de código.|

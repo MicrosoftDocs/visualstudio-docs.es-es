@@ -1,16 +1,11 @@
 ---
 title: Localizar soluciones de SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.GlobalAndFeatureResource
 - VS.SharePoint.Project.AddResourceDialog
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,16 +17,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ba02d8811fc6633a55e06ae63c9399c70f59634f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: b653efc0cce8d8fb2b3e28b8e6c61e6371b4f6e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119850"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837361"
 ---
 # <a name="localize-sharepoint-solutions"></a>Localizar soluciones de SharePoint
 
-  El proceso de preparar las aplicaciones para que se pueden usar en todo el mundo se conoce como la localización. Localización es traducir los recursos para una referencia cultural concreta. Para obtener más información, consulte [Globalizar y localizar aplicaciones](/visualstudio/ide/globalizing-and-localizing-applications). En este tema se proporciona información general sobre cómo localizar una solución de SharePoint.  
+  El proceso de preparar las aplicaciones para que se pueden usar en todo el mundo se conoce como la localización. Localización es traducir los recursos para una referencia cultural concreta. Para obtener más información, consulte [Globalizar y localizar aplicaciones](../ide/globalizing-and-localizing-applications.md). En este tema se proporciona información general sobre cómo localizar una solución de SharePoint.  
   
  Para localizar una solución, quite del código las cadenas codificadas de forma rígida e inclúyalas en archivos de recursos. Un archivo de recursos es un [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-basado en archivo con un *.resx* extensión. El archivo de recursos contiene las versiones traducidas de las cadenas usadas en la solución. Para obtener más información, consulte [recursos en aplicaciones](http://go.microsoft.com/fwlink/?LinkID=155844).  
   
@@ -59,7 +54,7 @@ ms.locfileid: "37119850"
  Hay tres áreas que normalmente se localiza en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] las aplicaciones de SharePoint: características, el marcado de páginas ASPX y el código. Con fines ilustrativos, en las secciones siguientes se suponen que tiene una solución de SharePoint que desea traducir al alemán y japonés. El idioma predeterminado es inglés.  
   
 ### <a name="localize-features"></a>Localizar las características
- Para localizar una característica, tiene que reemplazar el codificado de forma rígida título y descripción de la característica con una expresión que hace referencia al título traducido y la cadena en el archivo de recursos localizados. Para realizar este cambio en el **característica Diseñador** en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obtener más información, consulte [Cómo: localizar una característica](../sharepoint/how-to-localize-a-feature.md).  
+ Para localizar una característica, tiene que reemplazar el codificado de forma rígida título y descripción de la característica con una expresión que hace referencia al título traducido y la cadena en el archivo de recursos localizados. Para realizar este cambio en el **característica Diseñador** en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obtener más información, vea [Cómo: Localizar una característica](../sharepoint/how-to-localize-a-feature.md).  
   
  Para localizar una característica en inglés al alemán y japonés, agregue tres elementos de proyecto del archivo de recursos al proyecto: uno para el inglés, uno para el alemán y otro para japonés. Archivos de recursos de la característica no se puede usar para localizar el marcado ASPX ni el código; archivos de recursos independientes son necesarios para ellos.  
   
@@ -109,7 +104,7 @@ $Resources:String ID
 <asp:literal ID="Literal1" runat="server" Text="<%$Resources:Resource1, String9%>" />  
 ```  
   
- Para obtener más información, consulte [Cómo: marcado ASPX localizar](../sharepoint/how-to-localize-aspx-markup.md).  
+ Para obtener más información, vea [Cómo: Localizar el marcado ASPX](../sharepoint/how-to-localize-aspx-markup.md).  
   
 ### <a name="localize-code"></a>Localizar código
  Además de localizar cadenas de características y [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] marcado, también tiene que localizar las cadenas de mensaje y las cadenas de error que aparecen en el código de la solución. Localizado informativos y mensajes de error se encuentran en ensamblados satélite. Los ensamblados satélite contienen cadenas que son visibles para los usuarios, como [!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)] mensajes de texto y salida como excepciones.  
@@ -126,7 +121,7 @@ $Resources:String ID
 HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")  
 ```  
   
- Para obtener más información, consulte [Cómo: localizar código](../sharepoint/how-to-localize-code.md).  
+ Para obtener más información, vea [Cómo: Localizar código](../sharepoint/how-to-localize-code.md).  
   
 #### <a name="web-part-code-localization"></a>Localización del código de elemento Web
  Los elementos Web incluyen una característica del editor de propiedad personalizada que incluye atributos de código que usan cadenas codificadas de forma rígida, como WebDisplayName, Category y WebDescription. Para reemplazar los valores de cadena para estos atributos, cree una clase independiente que se deriva de la clase del atributo. En esas clases, establezca la propiedad del atributo. La propiedad de atributo depende de la clase base. Por ejemplo, la propiedad del atributo WebDisplayName es DisplayNameValue y la propiedad del atributo WebDescription es DescriptionValue.  
@@ -134,9 +129,8 @@ HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")
  En la clase derivada, hacer referencia al identificador de cadena desde el archivo de recursos y el objeto ResourceManager para obtener el valor localizado para el identificador de cadena. Devuelve este valor para el atributo de propiedad del editor.  
   
 ## <a name="see-also"></a>Vea también
- [Cómo: localizar una característica](../sharepoint/how-to-localize-a-feature.md)   
- [Cómo: localizar el marcado ASPX](../sharepoint/how-to-localize-aspx-markup.md)   
- [Cómo: localizar código](../sharepoint/how-to-localize-code.md)   
- [Cómo: agregar un archivo de recursos](../sharepoint/how-to-add-a-resource-file.md)   
- [Cómo: usar un archivo de recursos para especificar nombres, propiedades y permisos localizados](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)  
-  
+ [Cómo: Localizar una característica](../sharepoint/how-to-localize-a-feature.md)   
+ [Cómo: Localizar el marcado ASPX](../sharepoint/how-to-localize-aspx-markup.md)   
+ [Cómo: Localizar código](../sharepoint/how-to-localize-code.md)   
+ [Cómo: Agregar un archivo de recursos](../sharepoint/how-to-add-a-resource-file.md)   
+ [Cómo: Use un archivo de recursos para especificar los permisos, propiedades y nombres localizados](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)  

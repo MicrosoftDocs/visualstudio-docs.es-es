@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, Concurrency Visualizer
 ms.assetid: ae5879a0-1e1a-455a-ba72-148e57f59289
 caps.latest.revision: 36
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0898b20ae61feaef79a4923211ac47b902c61e76
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 91fd9e0872529c61ffbfee42d1f3517c106340e0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826439"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733820"
 ---
 # <a name="concurrency-visualizer"></a>Visualizador de simultaneidad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

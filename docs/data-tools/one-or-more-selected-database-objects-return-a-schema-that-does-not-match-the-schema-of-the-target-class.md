@@ -7,15 +7,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fd679e9275aedc8db9f65864a240e1c12e4faffc
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
-ms.translationtype: MT
+ms.openlocfilehash: 47ccdd1f79930fe29e5a213158462139c15bf0f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089469"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944131"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Uno o varios objetos de base de datos seleccionados devuelven un esquema que no coincide con el esquema de la clase de datos de destino
 
@@ -27,9 +26,9 @@ Al arrastrar objetos de base de datos hasta las clases de entidad existentes, lo
 
 1. Haga clic en **Aceptar** para descartar el cuadro de diálogo.
 
-2. Seleccione un objeto de base de datos que devuelve los datos que coinciden con el esquema de la clase de destino (la clase es que se coloca el objeto de base de datos en el **Object Relational Designer**).
+2. Seleccione un objeto de base de datos que devuelva datos que coincidan con el esquema de la clase de destino (clase en la que se coloca el objeto de base de datos en **Object Relational Designer**).
 
 ## <a name="see-also"></a>Vea también
 
 - [Mensajes de Object Relational Designer](../data-tools/o-r-designer-messages.md)
-- [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Herramientas LINQ to SQL en Visual Studio)

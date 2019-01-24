@@ -14,15 +14,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 432fbe9de5b1ab19c64ae1b9eeee36f3b1156d06
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 998a219e8a58927ca62ec90e6b105586a64bbf2b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726235"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349587"
 ---
 # <a name="idebugdocumentcontext-interface"></a>IDebugDocumentContext (Interfaz)
-Proporciona una representación abstracta de una parte del documento que se está depurando. Para los documentos de texto, esta representación está compuesta de un intervalo de posición de carácter.  
+Proporciona una representación abstracta de una parte del documento que se está depurando. Para documentos de texto, esta representación consta de un intervalo de la posición del carácter.  
   
  Además de los métodos heredados de `IUnknown`, el `IDebugDocumentContext` interfaz expone los métodos siguientes.  
   

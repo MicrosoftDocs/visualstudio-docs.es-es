@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: eliminar hojas de cálculo de libros mediante programación'
-ms.custom: ''
+title: Procedimiento Eliminar hojas de cálculo de libros mediante programación
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -11,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - workbooks, deleting worksheets
 - worksheets, deleting
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 73c501d545f76012b63bde291001b38c214c3eb6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6b857a84560fe5f8745458154c85494791b579db
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950230"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154249"
 ---
-# <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Cómo: eliminar hojas de cálculo de libros mediante programación
+# <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Procedimiento Eliminar hojas de cálculo de libros mediante programación
   Puede eliminar cualquier hoja de cálculo de un libro. Para eliminar una hoja de cálculo, use el elemento host worksheet o acceda a la hoja de cálculo mediante la colección Sheets del libro.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -39,7 +36,7 @@ ms.locfileid: "49950230"
 > - Libro de Excel 2010  
 > - Plantilla de Excel 2010  
 > 
->   Si desea realizar esta tarea en cualquier otro tipo de proyecto, debe agregar una referencia a la **Microsoft.Office.Interop.Excel** ensamblado y, a continuación, debe usar clases de dicho ensamblado para abrir un libro y eliminar una hoja de cálculo. Para obtener más información, consulte [Cómo: las aplicaciones de Office de destino a través de los ensamblados de interoperabilidad primarios](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) y [referencia de ensamblado de interoperabilidad primario de Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
+>   Si desea realizar esta tarea en cualquier otro tipo de proyecto, debe agregar una referencia a la **Microsoft.Office.Interop.Excel** ensamblado y, a continuación, debe usar clases de dicho ensamblado para abrir un libro y eliminar una hoja de cálculo. Para obtener más información, vea [Cómo: Apuntar a las aplicaciones de Office a través de los ensamblados de interoperabilidad primarios](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) y [referencia de ensamblado de interoperabilidad primario de Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
   
 ### <a name="to-delete-a-worksheet-by-using-a-worksheet-host-item"></a>Para eliminar una hoja de cálculo mediante un elemento host worksheet  
   
@@ -58,7 +55,7 @@ ms.locfileid: "49950230"
   El código siguiente elimina una hoja de cálculo de un libro haciendo referencia al número de índice de la hoja de la **hojas** colección. Este código supone que se ha creado una nueva hoja de cálculo mediante programación.  
   
 > [!IMPORTANT]  
->  Si desea realizar esta tarea en cualquier otro tipo de proyecto, debe agregar una referencia a la **Microsoft.Office.Interop.Excel** ensamblado y, a continuación, debe usar clases de dicho ensamblado para abrir un libro y eliminar una hoja de cálculo. Para obtener más información, consulte [Cómo: las aplicaciones de Office de destino a través de los ensamblados de interoperabilidad primarios](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) y [referencia de ensamblado de interoperabilidad primario de Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
+>  Si desea realizar esta tarea en cualquier otro tipo de proyecto, debe agregar una referencia a la **Microsoft.Office.Interop.Excel** ensamblado y, a continuación, debe usar clases de dicho ensamblado para abrir un libro y eliminar una hoja de cálculo. Para obtener más información, vea [Cómo: Apuntar a las aplicaciones de Office a través de los ensamblados de interoperabilidad primarios](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) y [referencia de ensamblado de interoperabilidad primario de Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
   
 ### <a name="to-delete-a-worksheet-by-using-the-sheets-collection-of-the-excel-workbook"></a>Para eliminar una hoja de cálculo mediante la colección Sheets del libro de Excel  
   
@@ -69,12 +66,10 @@ ms.locfileid: "49950230"
   
 ## <a name="see-also"></a>Vea también  
  [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)   
- [Cómo: ocultar hojas de cálculo de mediante programación](../vsto/how-to-programmatically-hide-worksheets.md)   
- [Cómo: mover hojas de cálculo dentro de los libros de programación](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
- [Cómo: seleccionar hojas de cálculo de mediante programación](../vsto/how-to-programmatically-select-worksheets.md)   
- [Cómo: agregar nuevas hojas de cálculo a libros mediante programación](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
+ [Cómo: Ocultar mediante programación las hojas de cálculo](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Cómo: Mover hojas de cálculo dentro de los libros de programación](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
+ [Cómo: Seleccionar mediante programación las hojas de cálculo](../vsto/how-to-programmatically-select-worksheets.md)   
+ [Cómo: Agregar nuevas hojas de cálculo a libros mediante programación](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
  [Elemento host Worksheet](../vsto/worksheet-host-item.md)   
  [Acceso global a objetos en los proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Limitaciones de programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

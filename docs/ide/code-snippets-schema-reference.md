@@ -2,7 +2,6 @@
 title: Referencia de esquemas de fragmentos de código
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - schema reference [Visual Studio]
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a39040bb76181a7a36e9d8f7b19aa0b4390c400
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 55780d7e1990a9d10e504c781953cf3f95dd3dc1
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932447"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315597"
 ---
 # <a name="code-snippets-schema-reference"></a>Referencia de esquemas de fragmentos de código
 
@@ -271,7 +270,7 @@ Especifica información general acerca del fragmento de código de IntelliSense.
 |-------------------|-----------------|
 |[Elemento Author](../ide/code-snippets-schema-reference.md#author-element)|Elemento opcional. El nombre de la persona o compañía que creó el fragmento de código. Puede haber cero o un elemento `Author` en un elemento `Header`.|
 |[Elemento Description](../ide/code-snippets-schema-reference.md#description-element)|Elemento opcional. Descripción del fragmento de código. Puede haber cero o un elemento `Description` en un elemento `Header`.|
-|[Elemento HelpUrl](../ide/code-snippets-schema-reference.md#helpurl-element)|Elemento opcional. Dirección URL que contiene más información sobre el fragmento de código. Puede haber cero o un elemento `HelpURL` en un elemento Header. **Nota:** Visual Studio no usa el elemento `HelpUrl`. El elemento forma parte del esquema XML de fragmentos de código de IntelliSense y cualquier fragmento de código que contenga el elemento se validará, pero el valor del elemento no se utilizará nunca.|
+|[Elemento HelpUrl](../ide/code-snippets-schema-reference.md#helpurl-element)|Elemento opcional. Dirección URL que contiene más información sobre el fragmento de código. Puede haber cero o un elemento `HelpURL` en un elemento Header. **Nota:**  Visual Studio no utiliza el elemento `HelpUrl`. El elemento forma parte del esquema XML de fragmentos de código de IntelliSense y cualquier fragmento de código que contenga el elemento se validará, pero el valor del elemento no se utilizará nunca.|
 |[Elemento Keywords](../ide/code-snippets-schema-reference.md#keywords-element)|Elemento opcional. Agrupa los elementos `Keyword`. Puede haber cero o un elemento `Keywords` en un elemento `Header`.|
 |[Elemento Shortcut](../ide/code-snippets-schema-reference.md#shortcut-element)|Elemento opcional. Especifica el texto de acceso directo que se puede utilizar para insertar el fragmento. Puede haber cero o un elemento `Shortcut` en un elemento `Header`.|
 |[Elemento SnippetTypes](../ide/code-snippets-schema-reference.md#snippettypes-element)|Elemento opcional. Agrupa los elementos `SnippetType`. Puede haber cero o un elemento `SnippetTypes` en un elemento `Header`. Si no hay ningún elemento `SnippetTypes`, el fragmento de código siempre es válido.|
@@ -548,7 +547,7 @@ Especifica las referencias, las importaciones, las declaraciones y el código pa
 |[Elemento Code](../ide/code-snippets-schema-reference.md#code-element)|Elemento necesario. Especifica el código que desea insertar en un archivo de documentación. Debe haber uno y solo un elemento `Code` en un elemento `Snippet`.|
 |[Elemento Declarations](../ide/code-snippets-schema-reference.md#declarations-element)|Elemento opcional. Especifica los literales y los objetos que componen las partes de un fragmento de código que puede editar. Puede haber cero o un elemento `Declarations` en un elemento `Snippet`.|
 |[Elemento Imports](../ide/code-snippets-schema-reference.md#imports-element)|Elemento opcional. Agrupa los elementos `Import` individuales. Puede haber cero o un elemento `Imports` en un elemento `Snippet`.|
-||Elemento opcional. Agrupa los elementos `Reference` individuales. Puede haber cero o un elemento `References` en un elemento `Snippet`.|
+|[Elemento References](../ide/code-snippets-schema-reference.md#references-element)|Elemento opcional. Agrupa los elementos `Reference` individuales. Puede haber cero o un elemento `References` en un elemento `Snippet`.|
 
 |Elemento primario|Descripción|
 | - |-----------------|
@@ -666,4 +665,4 @@ Se requiere un valor de texto. Este texto especifica una dirección URL con más
 ## <a name="see-also"></a>Vea también
 
 - [Fragmentos de código](../ide/code-snippets.md)
-- [Tutorial: Crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md)
+- [Tutorial: Creación de un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md)

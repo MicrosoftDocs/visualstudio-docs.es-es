@@ -1,8 +1,6 @@
 ---
 title: Descripción de los valores de datos de contención de recursos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - concurrency profiling method
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c06722e9270269ca674370d5bf8b1925d850ce00
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 3d62b21e83f057c2a1d2e4347b3d7bcf6dbc22ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34477410"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896635"
 ---
 # <a name="understand-resource-contention-data-values"></a>Descripción de los valores de datos de contención de recursos
 

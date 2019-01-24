@@ -1,8 +1,6 @@
 ---
 title: Idiasectioncontrib | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59fa6304572f2c951bdd16e30cbace8441dc6b97
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 852bf1c4a502c9d76a9f7f460c8fd62c26f73df9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908384"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918718"
 ---
 # <a name="idiasectioncontribgetlength"></a>IDiaSectionContrib::get_length
 Recupera el número de bytes en una sección.  
@@ -27,7 +25,7 @@ Recupera el número de bytes en una sección.
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT get_length (   
+HRESULT get_length (   
    DWORD* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_length (
  [out] Devuelve el número de bytes en una sección.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

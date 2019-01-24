@@ -1,10 +1,8 @@
 ---
 title: SortOrder (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SortOrder
 helpviewer_keywords:
@@ -16,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b963b6e74b7c24d31ddc611407df22380ff8bb60
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 811df3ed361a104ad3ca935307e337a291cbf01e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140328"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963303"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder (Elemento, Plantillas de Visual Studio)
-Especifica un valor que se utiliza para organizar la plantilla, entre otras plantillas de la misma categoría, tal y como aparece en la vista la **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.  
+Especifica un valor que se utiliza para organizar la plantilla, entre otras plantillas en la misma categoría, tal como aparece en el el **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -59,12 +57,12 @@ Especifica un valor que se utiliza para organizar la plantilla, entre otras plan
 ## <a name="remarks"></a>Comentarios  
  `SortOrder` es un elemento opcional. El valor predeterminado es 100 y todos los valores deben ser múltiplos de 10.  
   
- El `SortOrder` elemento se omite para plantillas creadas por el usuario. Todas las plantillas creadas por el usuario se ordenan alfabéticamente.  
+ El `SortOrder` elemento se omite para las plantillas creadas por el usuario. Todas las plantillas creadas por el usuario se ordenan alfabéticamente.  
   
- Plantillas que tienen valores de ordenación bajos aparecen en la vista la **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo antes de plantillas que tienen valores de ordenación altos.  
+ Las plantillas que tienen valores de ordenación bajos aparecen en uno el **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo antes de las plantillas que tienen valores de ordenación alta.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra los metadatos de un estándar [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] plantilla de clase.  
+ El ejemplo siguiente muestra los metadatos de un estándar [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] plantilla de clase.  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -83,7 +81,7 @@ Especifica un valor que se utiliza para organizar la plantilla, entre otras plan
 </VSTemplate>  
 ```  
   
- En este ejemplo, el `SortOrder` elemento es relativamente alto. Es probable que otros [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] plantillas de elementos tendrá un `SortOrder` valor inferior al `290` y que aparezcan antes de esta plantilla en el **nuevo elemento** cuadro de diálogo.  
+ En este ejemplo, el `SortOrder` elemento es relativamente alto. Es probable que otros [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] tendrán las plantillas de elemento un `SortOrder` inferior al valor `290` y aparecerá antes de esta plantilla en el **nuevo elemento** cuadro de diálogo.  
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   

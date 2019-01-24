@@ -1,5 +1,5 @@
 ---
-title: Creación de un informe de rendimiento de la prueba de carga de Visual Studio con Microsoft Word
+title: Creación de un informe de rendimiento de la prueba de carga con Microsoft Word
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,23 +10,24 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: c4bafd4e7e50838adbe8ba458191c370b4d7427d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 32cdb45a57b218645e6f9eaa84c5e198aeacc620
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380699"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987646"
 ---
-# <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Cómo: Crear manualmente un informe de rendimiento de pruebas de carga con Microsoft Word
+# <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Procedimiento para crear manualmente un informe de rendimiento de pruebas de carga con Microsoft Word
 
 Puede crear manualmente informes de prueba de carga en Microsoft Word copiando y pegando los datos de la vista de resumen de resultados de pruebas de carga y de la vista de gráficos. Los datos que se presentan en la vista de resumen y de gráficos se aplican en formato HTML cuando se copian.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!TIP]
 > También puede copiar el texto sin formato de la vista de tablas y las capturas de pantalla de la vista de detalles de Microsoft Word, pero no se aplica en formato HTML, por lo que precisará formato y edición adicionales.
 
 > [!TIP]
-> También puede generar informes organizados de Microsoft Excel automáticamente. Para obtener más información, vea [Cómo: Crear informes de rendimiento de la prueba de carga con Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md).
+> También puede generar informes organizados de Microsoft Excel automáticamente. Para obtener más información, vea [Cómo: Crear informes de rendimiento de pruebas de carga con Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md).
 
 ## <a name="copy-summary-view-data"></a>Copiar datos de la vista Resumen
 

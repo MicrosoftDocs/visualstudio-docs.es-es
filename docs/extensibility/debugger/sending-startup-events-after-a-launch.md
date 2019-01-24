@@ -1,9 +1,6 @@
 ---
 title: Envío de eventos de inicio después de un lanzamiento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], startup events
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64a2423e3e6900d992ba1a2fafe13f72ab329520
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: caa9f615c6ed6f314695b195a6095d238382a4c2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927078"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967508"
 ---
 # <a name="send-startup-events-after-a-launch"></a>Enviar eventos de inicio después de un lanzamiento
 Una vez que el motor de depuración (DE) está asociado al programa, envía una serie de eventos de inicio a la sesión de depuración.  

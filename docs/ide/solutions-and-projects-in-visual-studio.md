@@ -1,8 +1,7 @@
 ---
-title: Soluciones y proyectos en Visual Studio
+title: Soluciones y proyectos
 ms.date: 10/05/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewsolutionitem
@@ -11,7 +10,6 @@ f1_keywords:
 - vs.addnewitem
 - vs.addexistingitem
 - VS.SolutionExplorer
-- vs.newproject
 - vs.addexistingsolutionitem
 - vs.environment.solutions
 - VS.SolutionExplorer.Solutions
@@ -26,14 +24,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7368778928384f50e96bfd8c5f3f1e107e6b411d
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 8331ff52da4b0d0e8afe81e66f5674258df709fb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089664"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938558"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluciones y proyectos en Visual Studio
+
+En este artículo se explica el concepto de *proyecto* y *solución* en Visual Studio. También se trata brevemente cómo crear un nuevo proyecto y la ventana de herramientas **Explorador de soluciones**.
+
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Proyectos y soluciones en Visual Studio para Mac](/visualstudio/mac/projects-and-solutions).
 
 ## <a name="projects"></a>Proyectos
 
@@ -51,7 +54,7 @@ En Visual Studio, el **Explorador de soluciones** usa el archivo de proyecto par
 
 ## <a name="solutions"></a>Soluciones
 
-Un proyecto está incluido dentro de una *solución*. Una solución contiene uno o más proyectos relacionados, junto con información de compilación, la configuración de ventanas de Visual Studio y archivos varios que no estén asociados a un proyecto determinado. Una solución se describe mediante un archivo de texto (extensión *.sln*) con su propio formato único; no está diseñada para modificarse de forma manual.
+Un proyecto está incluido dentro de una *solución*. A pesar de su nombre, una solución no es una "respuesta", sino simplemente un contenedor con uno o más proyectos relacionados, junto con información de compilación, la configuración de ventanas de Visual Studio y archivos varios que no estén asociados a un proyecto determinado. Una solución se describe mediante un archivo de texto (extensión *.sln*) con su propio formato único; no está diseñada para modificarse de forma manual.
 
 En Visual Studio se usan dos tipos de archivo (*.sln* y *.suo*) para almacenar la configuración de las soluciones:
 
@@ -62,7 +65,7 @@ En Visual Studio se usan dos tipos de archivo (*.sln* y *.suo*) para almacenar l
 
 ## <a name="create-new-projects"></a>Crear nuevos proyectos
 
-La manera más fácil de crear un proyecto consiste en empezar desde una plantilla de proyecto para un tipo concreto de aplicación o sitio web. Una plantilla de proyecto consta de un conjunto básico de archivos de código generados previamente, archivos de configuración, recursos y configuraciones. Estas plantillas son lo que ve en el cuadro de diálogo **Nuevo proyecto** o **Nuevo sitio web** cuando selecciona **Archivo** > **Nuevo** > **Proyecto** o **Archivo** > **Nuevo** > **Sitio web**. Para obtener más información, vea [Crear soluciones y proyectos](../ide/creating-solutions-and-projects.md).
+La manera más fácil de crear un proyecto consiste en empezar desde una plantilla de proyecto para un tipo concreto de aplicación o sitio web. Una plantilla de proyecto consta de un conjunto básico de archivos de código generados previamente, archivos de configuración, recursos y configuraciones. Estas plantillas son lo que se ve en el cuadro de diálogo **Nuevo proyecto** al elegir **Archivo** > **Nuevo** > **Proyecto**. Para obtener más información, vea [Crear soluciones y proyectos](../ide/creating-solutions-and-projects.md).
 
 También puede crear un proyecto y plantillas de elemento personalizados. Para obtener más información, vea [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md).
 
@@ -74,4 +77,6 @@ Después de crear un proyecto nuevo, puede usar el **Explorador de soluciones** 
 
 ## <a name="see-also"></a>Vea también
 
-- [IDE de Visual Studio](../ide/visual-studio-ide.md)
+- [IDE de Visual Studio](../get-started/visual-studio-ide.md)
+- [Proyectos y soluciones (Visual Studio para Mac)](/visualstudio/mac/projects-and-solutions)
+- [Agregar y quitar elementos del proyecto (Visual Studio para Mac)](/visualstudio/mac/add-and-remove-project-items)

@@ -1,9 +1,6 @@
 ---
 title: Desarrollar soluciones de Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -12,17 +9,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, about developing solutions
 - solutions [Office development in Visual Studio], developing
 - Office solutions [Office development in Visual Studio], developing
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a95c5f5767e227c35763cfaea1e3619093fffda3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 53f94016eb354b3c3e5255e37b8399b3687352dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833075"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856610"
 ---
 # <a name="develop-office-solutions"></a>Desarrollar soluciones de Office
   Después de diseñar un proyecto con Office Developer Tools en Visual Studio y configurar los archivos del proyecto, puede empezar a centrarse en la implementación del código y la interfaz de usuario personalizada (UI).  
@@ -63,9 +60,9 @@ ms.locfileid: "49833075"
 |[Accesibilidad en proyectos de Office](../vsto/accessibility-in-office-projects.md)|Describe las características de accesibilidad que están disponibles en las soluciones de Office.|  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: crear y modificar propiedades de documento personalizadas](../vsto/how-to-create-and-modify-custom-document-properties.md)   
- [Cómo: de lectura y escritura a las propiedades de documento](../vsto/how-to-read-from-and-write-to-document-properties.md)   
- [Cómo: la interfaz de usuario multilingüe de Office de destino](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
+ [Cómo: Crear y modificar propiedades de documento personalizadas](../vsto/how-to-create-and-modify-custom-document-properties.md)   
+ [Cómo: Leer y escribir en las propiedades del documento](../vsto/how-to-read-from-and-write-to-document-properties.md)   
+ [Cómo: Destino de la interfaz de usuario multilingüe de Office](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
  [Tutorial: Crear el primer complemento VSTO para Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)   
  [Tutorial: Crear la primera personalización en el nivel de documento para Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)   
  [Tutorial: Crear el primer complemento VSTO para Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)   
@@ -73,5 +70,3 @@ ms.locfileid: "49833075"
  [Tutorial: Crear el primer complemento VSTO para Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)   
  [Tutorial: Crear el primer complemento VSTO para Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)   
  [Tutorial: Crear la primera personalización de nivel de documento para Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
-  
-  

@@ -18,15 +18,15 @@ helpviewer_keywords:
 - debugging, .NET Framework source
 ms.assetid: fc12e472-ac6a-4e77-8e22-a769e13a03b8
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c717e1d9eccce48319d8a73dd52d7f13ce36296e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ce5e20524040d131a655da1567606ffbb0934a80
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240622"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725435"
 ---
 # <a name="how-to-debug-net-framework-source"></a>Cómo: Depurar código fuente de .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ La versión más reciente de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] propor
   
 ### <a name="to-enable-net-framework-source-debugging"></a>Para habilitar la depuración de código fuente de .NET Framework  
   
-1.  En el **herramientas** menú, haga clic en **opción**s.  
+1.  En el menú **Herramientas** , haga clic en **Opciones**.  
   
 2.  En el **opciones** cuadro de diálogo, haga clic en el **depuración** categoría.  
   

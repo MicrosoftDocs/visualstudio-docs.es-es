@@ -1,5 +1,5 @@
 ---
-title: Get_machinetype | Microsoft Docs
+title: Get_machinetype | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_machineType method
 ms.assetid: 30870b10-6f32-45c6-a0d7-020dea707710
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 77f9351b038ac66df64c5d2ca546717b52ec647c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4b43c3b55db23244d773ad5c190698fda4d5ba26
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884308"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721283"
 ---
 # <a name="idiasymbolgetmachinetype"></a>IDiaSymbol::get_machineType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera el tipo de la CPU de destino.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT get_machineType (   
+HRESULT get_machineType (   
    DWORD* pRetVal  
 );  
 ```  

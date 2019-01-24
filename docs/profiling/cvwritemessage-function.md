@@ -1,8 +1,6 @@
 ---
 title: CvWriteMessage (función) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvWriteMessageW
@@ -28,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 966be7ab50c2e14ae43da7cf68d7ef6168255207
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 22e1933b3a59c4aea76b262831918bab53e3b073
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749631"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892149"
 ---
 # <a name="cvwritemessage-function"></a>Función CvWriteMessage
 Escribe un mensaje en el archivo de seguimiento del visualizador de simultaneidad.  

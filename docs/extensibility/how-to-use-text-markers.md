@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: usar marcadores de texto | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Utilizar marcadores de texto | Documentos de Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - using text markers
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a3b766e4eacc04bbf4d4a8e4c022484d452954f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 825f567098d86a0f643de84eef395e5404d3b0f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820881"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895706"
 ---
-# <a name="how-to-use-text-markers"></a>Cómo: usar marcadores de texto
+# <a name="how-to-use-text-markers"></a>Procedimiento Utilizar marcadores de texto
 Se pueden aplicar los marcadores de texto para editar un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> objeto.  
   
 ## <a name="procedures"></a>Procedimientos  
@@ -57,6 +54,6 @@ Se pueden aplicar los marcadores de texto para editar un <xref:Microsoft.VisualS
   
 ## <a name="see-also"></a>Vea también  
  [Utilice marcadores de texto con la API heredada](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Cómo: agregar marcadores de texto estándar](../extensibility/how-to-add-standard-text-markers.md)   
- [Cómo: crear marcadores de texto personalizado](../extensibility/how-to-create-custom-text-markers.md)   
- [Cómo: implementar los marcadores de error](../extensibility/how-to-implement-error-markers.md)
+ [Cómo: Agregar marcadores de texto estándar](../extensibility/how-to-add-standard-text-markers.md)   
+ [Cómo: Crear marcadores de texto personalizado](../extensibility/how-to-create-custom-text-markers.md)   
+ [Cómo: Implementar los marcadores de error](../extensibility/how-to-implement-error-markers.md)

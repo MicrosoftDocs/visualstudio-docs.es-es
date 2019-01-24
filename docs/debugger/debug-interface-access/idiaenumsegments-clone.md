@@ -1,8 +1,6 @@
 ---
 title: Idiaenumsegments | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b946633c7a999ff0c7b154a02291301efdea512b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: de7b9b12c17f6a0d9295809551d403b4d490dd94
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905082"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859099"
 ---
 # <a name="idiaenumsegmentsclone"></a>IDiaEnumSegments::Clone
 Crea un enumerador que contiene el mismo estado de enumeración que el enumerador actual.  
@@ -27,7 +25,7 @@ Crea un enumerador que contiene el mismo estado de enumeración que el enumerado
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT Clone (   
+HRESULT Clone (   
    IDiaEnumSegments** ppenum  
 );  
 ```  

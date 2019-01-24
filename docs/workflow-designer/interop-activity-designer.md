@@ -3,7 +3,6 @@ title: Diseñador de flujo de trabajo - Diseñador de actividades Interop
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Interop.UI
 ms.assetid: 800a3403-ba86-41c4-8de1-c4fee9703eb1
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47ede5eebc4d7caf4fe1565c5d8b93b2524ed6ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 66734cd555c88d960431373d4ccf6a7ca0b39099
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849364"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867295"
 ---
 # <a name="interop-activity-designer"></a>Diseñador de actividades Interop
 
@@ -35,7 +34,7 @@ El [migración](../workflow-designer/migration-activity-designers.md) categoría
 
 Para proyectos de C#, puede volver a destinar el proyecto para usar la versión completa de .NET Framework 4 con el botón secundario en el proyecto de **el Explorador de soluciones** y seleccionando **propiedades**. En el **aplicación** ficha, seleccione el **.NET Framework 4** opción el **.NET framework de destino**. Seleccione **Sí** confirmación del cambio.
 
-Para los proyectos de VB, puede volver a destinar el proyecto para usar la versión completa de .NET Framework 4 con el botón secundario en el proyecto en **el Explorador de soluciones** y seleccionando **propiedades**. En el **compilar** pestaña, haga clic en el **Advanced Compile Options** botón. Seleccione **.Net Framework 4** desde el **lista plataforma de destino**y, a continuación, haga clic en **Aceptar**. Seleccione **Sí** confirmación del cambio.
+Para proyectos de Visual Basic, puede volver a destinar el proyecto para usar la versión completa de .NET Framework 4 con el botón secundario en el proyecto en **el Explorador de soluciones** y seleccionando **propiedades**. En el **compilar** pestaña, haga clic en el **Advanced Compile Options** botón. Seleccione **.Net Framework 4** desde el **lista plataforma de destino**y, a continuación, haga clic en **Aceptar**. Seleccione **Sí** confirmación del cambio.
 
 El **interoperabilidad** Diseñador de actividad se puede arrastrar desde **cuadro de herramientas** y se coloca en la superficie del Diseñador de flujo de trabajo donde se coloquen normalmente las actividades, tal como en un <xref:System.Activities.Statements.Sequence>. Quitar el **interoperabilidad** Diseñador de actividad se crea un <xref:System.Activities.Statements.Interop> actividad con un valor predeterminado **DisplayName** de interoperabilidad. Puede editar el <xref:System.Activities.Activity.DisplayName%2A> en el encabezado de la **interoperabilidad** Diseñador de actividad, o en el **DisplayName** cuadro de la cuadrícula de propiedades.
 

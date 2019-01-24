@@ -1,22 +1,23 @@
 ---
-title: Introducción a la compatibilidad de Python en Visual Studio en Windows
+title: Compatibilidad con Python en Visual Studio en Windows
+titleSuffix: ''
 description: Resumen de características de Python en Visual Studio, que lo convierten en el mejor IDE de Python en Windows (también conocidas como Herramientas de Python para Visual Studio, PTVS).
-ms.date: 09/04/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2d686d51216141ccf2960a9b6cffd0ea9aafb329
-ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
+ms.openlocfilehash: 8e37648be6bb9f78aa80027b50b2fea6592d7c9e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49991619"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927342"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Trabajar con Python en Visual Studio en Windows
 
@@ -43,9 +44,9 @@ Use el comando **Abrir ventana interactiva** para ejecutar Python de forma inter
 
 Para obtener más información:
 
-- Vídeo (2' 35''): [Administración de entornos de Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
-- Documento: [Administración de entornos de Python](managing-python-environments-in-visual-studio.md)
-- Documento: [Referencia de entornos de Python](python-environments-window-tab-reference.md)
+- Vídeo (2 minutos 35 segundos): [Administración de entornos de Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
+- Documentación: [Administración de entornos de Python](managing-python-environments-in-visual-studio.md)
+- Documentación: [Referencia de entornos de Python](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Edición enriquecida, IntelliSense y comprensión del código
 
@@ -55,12 +56,12 @@ Visual Studio proporciona un editor de Python de primera clase, que incluye colo
 
 Para obtener más información:
 
-- Vídeo (2' 30''): [Edición de código Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
-- Docs: [Editar código de Python](editing-python-code-in-visual-studio.md)
-- Docs: [Código de formato](formatting-python-code.md)
-- Docs: [Refactorización de código](refactoring-python-code.md)
-- Docs: [Utilizar un linter](linting-python-code.md)
-- Documentos de características generales de Visual Studio: [Características del editor de código](../ide/writing-code-in-the-code-and-text-editor.md).
+- Vídeo (2 minutos 30 segundos): [Edición de código de Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
+- Documentación: [Edición de código de Python](editing-python-code-in-visual-studio.md)
+- Documentación: [Código de formato](formatting-python-code.md)
+- Documentación: [Refactorización de código](refactoring-python-code.md)
+- Documentación: [Utilizar un linter](linting-python-code.md)
+- Documentos de características generales de Visual Studio: [Características del editor de código](../ide/writing-code-in-the-code-and-text-editor.md)
 
 ## <a name="interactive-window"></a>Ventana interactiva
 
@@ -74,9 +75,9 @@ Visual Studio también es compatible con IPython o Jupyter en REPL, incluidos gr
 
 Para obtener más información:
 
-- Vídeo (2' 22''): [Ventana interactiva de Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
-- Documento: [Ventana interactiva](python-interactive-repl-in-visual-studio.md)
-- Documento: [IPython en Visual Studio](interactive-repl-ipython.md)
+- Vídeo (2 minutos 22 segundos): [Ventana interactiva de Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
+- Documentación: [Ventana interactiva](python-interactive-repl-in-visual-studio.md)
+- Documentación: [IPython en Visual Studio](interactive-repl-ipython.md)
 
 ## <a name="project-system-and-project-and-item-templates"></a>Sistema de proyecto y plantillas de proyecto y de elemento
 
@@ -90,12 +91,12 @@ Las plantillas de proyecto y elemento automatizan el proceso de configuración d
 
 Para obtener más información:
 
-- Documento: [Proyectos de Python](managing-python-projects-in-visual-studio.md)
-- Documento: [Referencia de plantillas de elemento](python-item-templates.md)
-- Documento: [Plantillas de proyecto de Python](managing-python-projects-in-visual-studio.md#project-templates)
-- Documento: [Creación de una extensión de C++ para Python](working-with-c-cpp-python-in-visual-studio.md)
-- Documento de características generales de Visual Studio: [Plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md#visual-studio-templates)
-- Documento de características generales de Visual Studio: [Soluciones y proyectos en Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
+- Documentación: [Administración de proyectos de Python](managing-python-projects-in-visual-studio.md)
+- Documentación: [Referencia de plantillas de elemento](python-item-templates.md)
+- Documentación: [Plantillas de proyecto de Python](managing-python-projects-in-visual-studio.md#project-templates)
+- Documentación: [Trabajo con C++ y Python](working-with-c-cpp-python-in-visual-studio.md)
+- Documentos de características generales de Visual Studio: [Plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md#visual-studio-templates)
+- Documentos de características generales de Visual Studio: [Soluciones y proyectos en Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
 
 ## <a name="full-featured-debugging"></a>Depuración repleta de características
 
@@ -105,11 +106,11 @@ Uno de los puntos fuertes de Visual Studio es su depurador potente. Para Python 
 
 Para obtener más información:
 
-- Vídeo: [Depuración de Python 3' 32''](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567)
-- Docs: [Depurar el código de Python](debugging-python-in-visual-studio.md)
-- Documento: [Depuración en modo mixto Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
-- Documento: [Depuración remota en Linux](debugging-python-code-on-remote-linux-machines.md)
-- Documento de características generales de Visual Studio: [Resumen de características del depurador de Visual Studio](../debugger/debugger-feature-tour.md)
+- Vídeo: Vídeo: [Depuración de Python (3 minutos, 32 segundos)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567)
+- Documentación: [Depuración de Python](debugging-python-in-visual-studio.md)
+- Documentación: [Depuración en modo mixto Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
+- Documentación: [Depuración remota en Linux](debugging-python-code-on-remote-linux-machines.md)
+- Documentos de características generales de Visual Studio: [Guía de características del depurador de Visual Studio](../debugger/debugger-feature-tour.md)
 
 ## <a name="profiling-tools-with-comprehensive-reporting"></a>Herramientas de generación de perfiles con informes completos
 
@@ -119,9 +120,9 @@ La generación de perfiles examina cómo se invierte el tiempo en la aplicación
 
 Para obtener más información:
 
-- Vídeo: [Generación de perfiles de Python 3' 00''](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=s6FoC6LWE_1005918567)
-- Documento: [Herramientas de generación de perfiles de Python](profiling-python-code-in-visual-studio.md)
-- Documentos de características generales de Visual Studio: [Resumen de las características de generación de perfiles](../profiling/profiling-feature-tour.md). (No todas las características de generación de perfiles de Visual Studio están disponibles para Python).
+- Vídeo: [Generación de perfiles de Python (3 minutos)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=s6FoC6LWE_1005918567)
+- Documentación: [Herramientas de generación de perfiles de Python](profiling-python-code-in-visual-studio.md)
+- Documentos de características generales de Visual Studio: [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md). (No todas las características de generación de perfiles de Visual Studio están disponibles para Python).
 
 ## <a name="unit-testing-tools"></a>Herramientas de pruebas unitarias
 
@@ -131,9 +132,9 @@ Detecte, ejecute y administre pruebas en el **Explorador de pruebas** de Visual 
 
 Para obtener más información:
 
-- Vídeo: [Pruebas de Python 2' 31''](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567)
-- Documento: [Herramientas de pruebas unitarias de Python](unit-testing-python-in-visual-studio.md)
-- Documentos de características generales de Visual Studio: [Prueba unitaria de su código](../test/unit-test-your-code.md).
+- Vídeo: [Pruebas de Python (2 minutos, 31 segundos)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567)
+- Documentación: [Herramientas de pruebas unitarias de Python](unit-testing-python-in-visual-studio.md)
+- Documentos de características generales de Visual Studio: [Prueba unitaria del código](../test/unit-test-your-code.md).
 
 ## <a name="azure-sdk-for-python"></a>SDK de Azure para Python
 
@@ -145,13 +146,13 @@ Para más información, vea [SDK de Azure para Python](azure-sdk-for-python.md)
 
 |   |   |
 |---|---|
-| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | <ul><li>[Introduction to Programming with Python](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382) (Introducción a la programación con Python)</li><li>[Python Beginner: Strings and Functions](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015) (Python para principiantes: funciones y cadenas)</li><li>[Python Fundamentals: List and Loops](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019) (Conceptos básicos de Python: listas y bucles)</li><li>[Top Python Questions](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) (Principales preguntas sobre Python)</li></ul> |
+| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | <ul><li>[Introduction to Programming with Python](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382) (Introducción a la programación con Python)</li><li>[Python beginner: Strings and functions](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015) (Para principiantes de Python: funciones y cadenas)</li><li>[Python fundamentals: List and loops](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019) (Conceptos básicos de Python: lista y bucles)</li><li>[Top Python Questions](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) (Principales preguntas sobre Python)</li></ul> |
 
 ## <a name="questions-and-answers"></a>Preguntas y respuestas
 
 **P. ¿Visual Studio para Mac es compatible con Python?**
 
-R. No en este momento, pero puede votar a favor de la solicitud en [UserVoice](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac/suggestions/18670291-python-tools-for-visual-studio-mac). La documentación de [Visual Studio para Mac](/visualstudio/mac/) identifica los tipos actuales de desarrollo que admite. Mientras tanto, Visual Studio Code en Windows, Mac y Linux [funciona bien con Python a través de las extensiones disponibles](https://code.visualstudio.com/docs/languages/python).
+R. No en este momento, pero puede votar a favor de la solicitud en la [comunidad de desarrolladores](https://developercommunity.visualstudio.com/content/idea/351820/python-tools-for-visual-studio-mac.html). La documentación de [Visual Studio para Mac](/visualstudio/mac/) identifica los tipos actuales de desarrollo que admite. Mientras tanto, Visual Studio Code en Windows, Mac y Linux [funciona bien con Python a través de las extensiones disponibles](https://code.visualstudio.com/docs/languages/python).
 
 **P. ¿Qué puedo usar para generar la interfaz de usuario con Python?**
 

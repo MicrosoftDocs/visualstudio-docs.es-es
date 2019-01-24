@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_length method
 ms.assetid: cc62f028-d195-4fbf-93bc-10b08bef52d2
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 428d84af41c48988740b9b63208e4f488da6c7bf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2bd867d59710e2d982846f74b514f99a6b51b048
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928519"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757516"
 ---
 # <a name="idiasymbolgetlength"></a>IDiaSymbol::get_length
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera el número de bits o bytes de memoria usada por el objeto representado 
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT get_length (   
+HRESULT get_length (   
    ULONGLONG* pRetVal  
 );  
 ```  

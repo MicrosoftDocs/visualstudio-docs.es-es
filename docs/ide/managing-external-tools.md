@@ -2,7 +2,6 @@
 title: Administrar herramientas externas
 ms.date: 11/20/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.externaltools
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eeeee2e6e7ae5d043124faaa79bc6bad7c527702
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8f918ad272683de5316467d1027e098c1ead91a6
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945888"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154068"
 ---
 # <a name="manage-external-tools"></a>Administrar herramientas externas
 
@@ -52,7 +51,7 @@ Puede agregar una herramienta externa para que aparezca en el menú **Herramient
 
 Lo siguiente es una lista completa de los argumentos que se pueden utilizar al definir una herramienta externa:
 
-|nombre|Argumento|Description|
+|nombre|Argumento|Descripción|
 |----------|--------------|-----------------|
 |Ruta de acceso del elemento|$(ItemPath)|Nombre de archivo completo del archivo actual (unidad + ruta de acceso + nombre de archivo).|
 |Directorio del elemento|$(ItemDir)|Directorio del archivo actual (unidad + ruta de acceso).|
@@ -66,8 +65,8 @@ Lo siguiente es una lista completa de los argumentos que se pueden utilizar al d
 |Nombre de destino|$(TargetName)|Nombre de archivo del elemento que se va a compilar.|
 |Extensión de destino|$(TargetExt)|Extensión del nombre de archivo del elemento que se va a compilar.|
 |Directorio binario|$(BinDir)|Ubicación final del archivo binario que se va a compilar (definida como unidad + ruta de acceso).|
-|Directorio del proyecto|$(ProjDir)|Directorio del proyecto actual (unidad + ruta de acceso).|
-|Nombre de archivo del proyecto|$(ProjFileName)|Nombre de archivo del proyecto actual (unidad + ruta de acceso + nombre de archivo).|
+|Directorio del proyecto|$(ProjectDir)|Directorio del proyecto actual (unidad + ruta de acceso).|
+|Nombre de archivo del proyecto|$(ProjectFileName)|Nombre de archivo del proyecto actual (unidad + ruta de acceso + nombre de archivo).|
 |Directorio de la solución|$(SolutionDir)|Directorio de la solución actual (unidad + ruta de acceso).|
 |Nombre de archivo de la solución|$(SolutionFileName)|Nombre de archivo de la solución actual (unidad + ruta de acceso + nombre de archivo).|
 

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExpressionContexts::Reset | Documentos de Microsoft
+title: IEnumDebugExpressionContexts::Reset | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3adc62bcff42c28f2096ba0ee8bcf85859fc4339
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ade6a4cbe4bf2b0e8ef15d63e0e12838187f9da3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727425"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086936"
 ---
 # <a name="ienumdebugexpressioncontextsreset"></a>IEnumDebugExpressionContexts::Reset
 Restablece una secuencia de enumeración al principio.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT Reset();  
 ```  
   

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaAddressMap interface
 ms.assetid: e6467529-508c-4328-85d7-89444ae4d1c1
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5bc452e65bff046863995333546c8c799566de1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 041b784154ef5c95f75d8574700a65460a0ec663
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225087"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722723"
 ---
 # <a name="idiaaddressmap"></a>IDiaAddressMap
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Proporciona control sobre cómo el SDK de DIA calcula direcciones virtuales rela
 ## <a name="syntax"></a>Sintaxis  
   
 ```  
-IDiaAddressMap : IUnknown  
+IDiaAddressMap : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  

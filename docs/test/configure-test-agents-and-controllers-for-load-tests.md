@@ -1,5 +1,5 @@
 ---
-title: Configuración de agentes y controladores de pruebas para pruebas de carga en Visual Studio
+title: Configuración de agentes y controladores de pruebas para pruebas de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,13 +8,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: abc993d13752cdae00ea75c1eba8e39901f562c0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c4462c97febc7f1075080bf659a679647bc7bbe5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942990"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899842"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Configurar agentes y controladores de pruebas para ejecutar pruebas de carga
 
@@ -22,6 +21,8 @@ Visual Studio puede generar cargas simuladas para una aplicación mediante máqu
 
 > [!NOTE]
 > También puede usar pruebas de carga basadas en la nube para proporcionar máquinas virtuales que generen la carga de muchos usuarios que acceden al sitio web al mismo tiempo. Obtenga más información sobre las pruebas de carga basadas en la nube en [Run load tests using Azure Test Plans](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts) (Ejecutar pruebas de carga mediante Azure Test Plans).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="load-simulation-architecture"></a>Arquitectura de simulación de carga
 
@@ -41,15 +42,15 @@ Esta arquitectura proporciona las siguientes ventajas:
 
    **Configuración local:**
 
-  - Máquina1: Visual Studio, controlador, agente.
+  - Equipo1: Visual Studio, controlador, agente.
 
     ![Equipo local que usa controlador y agente](./media/load-test-configa.png)
 
     **Configuración remota típica:**
 
-  - Máquina1 y 2: Visual Studio (varios evaluadores pueden utilizar el mismo controlador).
+  - Equipo1 y 2: Visual Studio (varios evaluadores pueden usar el mismo controlador).
 
-  - Máquina3: controlador (puede tener también agentes instalados).
+  - Máquina3: controlador (también puede tener agentes instalados).
 
   - Máquina4-n: agente o agentes asociados al controlador en Máquina3.
 

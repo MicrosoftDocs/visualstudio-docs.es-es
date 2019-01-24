@@ -1,8 +1,7 @@
 ---
-title: Refactorización de un campo a una propiedad en Visual Studio
+title: Refactorización de un campo a una propiedad
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -14,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0c6594521774ca7e4fe91bc47776c4f0c4a489a9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cc2d4e7d7210cc374358c6f5d296f5f99035907a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942925"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822264"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Refactorización de encapsulamiento de un campo
 
@@ -29,11 +28,11 @@ Esta refactorización se aplica a lo siguiente:
 
 - Visual Basic
 
-**Qué:** Le permite convertir un campo en una propiedad y actualizar todos los usos de ese campo para utilizar la propiedad recién creada.
+**Qué:** Permite convertir un campo en una propiedad y actualizar todos los usos de ese campo para usar la propiedad recién creada.
 
-**Cuándo:** Desea mover un campo a una propiedad y actualizar todas las referencias a ese campo.
+**Cuándo:** Se quiere mover un campo a una propiedad y actualizar todas las referencias a ese campo.
 
-**Por qué:** Desea proporcionar acceso de otras clases a un campo, pero no desea que esas clases tengan acceso directo.  Al encapsular el campo en una propiedad, puede escribir código para comprobar el valor que se está asignando, por ejemplo.
+**Por qué:** Se quiere proporcionar acceso a un campo a otras clases, pero no que esas clases tengan acceso directo.  Al encapsular el campo en una propiedad, puede escribir código para comprobar el valor que se está asignando, por ejemplo.
 
 ## <a name="how-to"></a>Procedimiento
 

@@ -1,9 +1,6 @@
 ---
 title: Información general de desarrollo de soluciones de Office (VSTO)
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f2ba9e49a45305c42f813f996392bb1fa5af41b4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 632a584e4c49a28d1f68af726a8f32b270ffca81
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842669"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880369"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Información general de desarrollo de soluciones de Office (VSTO)
   Mediante el uso de Microsoft Office como front-end de soluciones, puede beneficiarse de las conocidas interfaces de usuario y herramientas de Microsoft Office, como las características de procesamiento de texto de Word, las características de análisis de datos de Excel y las características de administración de correo electrónico de Outlook. Puede desarrollar soluciones en Visual Studio para personalizar las aplicaciones de Office y agregar las características específicas que necesite para sus procesos empresariales. Por ejemplo, puede convertir Word en un generador de contratos que ensamble contratos a partir de elementos previamente existentes que se pueden hacer modificables o no modificables. Con Excel puede crear una hoja de cálculo de presupuestos automatizada y personalizada para distintos proyectos. Los usuarios pueden aprovechar las soluciones de Office sin conexión, lo que hace que soluciones complejas resulten más prácticas de lo que serían si utilizase una arquitectura basada en web.  
@@ -83,7 +80,7 @@ ms.locfileid: "49842669"
  Use ClickOnce o Windows Installer para implementar soluciones que cree mediante el uso de las herramientas de desarrollo de Office de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. La implementación mediante ClickOnce le permite crear soluciones de actualización automática que se pueden instalar y ejecutar con una mínima interacción por parte del usuario. Windows Installer (*.msi*) archivos pueden fácilmente distribuye a equipos de usuario final, o distribuir mediante el uso de Systems Management Server (SMS). Para obtener más información sobre cómo implementar soluciones de Office de VSTO, consulte [implementar una solución de Office](../vsto/deploying-an-office-solution.md).  
   
 ### <a name="install-prerequisites"></a>Instalación de requisitos previos  
- Antes de que los usuarios finales puedan ejecutar una solución que haya creado mediante las herramientas de desarrollo de Office de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], sus equipos deben disponer de ciertos requisitos previos. Si implementa su solución mediante ClickOnce o creando un archivo de Windows Installer, estos requisitos previos se pueden instalar con la solución. Para obtener más información, consulte [requisitos previos de la solución de Office para implementación](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e) y [Cómo: instalar requisitos previos en equipos de usuarios finales para ejecutar soluciones de Office](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+ Antes de que los usuarios finales puedan ejecutar una solución que haya creado mediante las herramientas de desarrollo de Office de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], sus equipos deben disponer de ciertos requisitos previos. Si implementa su solución mediante ClickOnce o creando un archivo de Windows Installer, estos requisitos previos se pueden instalar con la solución. Para obtener más información, consulte [requisitos previos de la solución de Office para implementación](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e) y [Cómo: Instalar requisitos previos en equipos de usuarios finales para ejecutar soluciones de Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
 ### <a name="security"></a>Seguridad  
  La seguridad para las soluciones de Office de VSTO se ejecuta mediante una serie de comprobaciones que realiza [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] al instalar y cargar la solución. Estas comprobaciones incluyen comprobar si son de confianza la ubicación del manifiesto de implementación o el certificado que se ha usado para firmar este manifiesto. Para obtener más información, consulte [soluciones de Office Secure](../vsto/securing-office-solutions.md).  
@@ -95,5 +92,3 @@ ms.locfileid: "49842669"
  [Empezar a programar personalizaciones de nivel de documento para Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
  [Empezar a programar personalizaciones de nivel de documento para Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
  [Empezar a programar complementos de VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
-  
-  

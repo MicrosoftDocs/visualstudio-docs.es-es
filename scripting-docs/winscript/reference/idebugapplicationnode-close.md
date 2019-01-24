@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6d50d1e9a22c3d64d65847922090dfab0c33ab32
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f14069f839cf279fcbb997046e34928e59dbfb9a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725495"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094892"
 ---
 # <a name="idebugapplicationnodeclose"></a>IDebugApplicationNode::Close
 Hace que esta aplicación para liberar todas las referencias y entrar en un estado inactivo.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT Close();  
 ```  
   
@@ -45,7 +45,7 @@ HRESULT Close();
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Normalmente, el propietario de una aplicación llama a este método cuando se cierre la aplicación.  
+ Normalmente, el propietario de una aplicación llama a este método cuando se cierra la aplicación.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugApplicationNode (Interfaz)](../../winscript/reference/idebugapplicationnode-interface.md)

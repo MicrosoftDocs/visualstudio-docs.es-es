@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::Close | Documentos de Microsoft
+title: IActiveScript::Close | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7c90b5d089ea6665060944e0a6f720a43aa1295a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 886ab1c4c39cf7c64571862bfd28f2fbd1062694
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640975"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348808"
 ---
 # <a name="iactivescriptclose"></a>IActiveScript::Close
-Hace que el motor de scripting abandonar cualquier secuencia de comandos cargado actualmente, perder su estado y la versión de los punteros de interfaz que tiene a otros objetos, y, por tanto, entra en un estado cerrado. Receptores de eventos, el texto de la secuencia de comandos ejecutada inmediatamente y llamadas de macro que ya están en curso se completan antes de los cambios de estado (usar [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) para cancelar un subproceso en ejecución de secuencia de comandos). El host de creación debe llamar a este método antes del lanzamiento de la interfaz para evitar problemas de referencia circular.  
+Hace que el motor de scripting abandonar cualquier script cargado actualmente, pierden su estado y liberar los punteros de interfaz que tiene a otros objetos, escribir, por tanto, un estado cerrado. Receptores de eventos, el texto de secuencia de comandos ejecutada inmediatamente y llamadas de macro que ya están en curso se completan antes de los cambios de estado (use [IActiveScript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md) para cancelar un subproceso en ejecución del script). Este método debe llamarse por el host crear antes de que se libere la interfaz para evitar problemas de la referencia circular.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT Close(void);  
 ```  
   
@@ -41,7 +41,7 @@ HRESULT Close(void);
 |-----------|-------------|  
 |`S_OK`|Correcto.|  
 |`E_UNEXPECTED`|No se esperaba la llamada (por ejemplo, el motor de scripting ya estaba en estado cerrado).|  
-|`OLESCRIPT_S_PENDING`|El método se puso en cola correctamente, pero todavía no ha cambiado el estado. Cuando los cambios de estado, el sitio es vuelva a llamar en el [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) método.|  
+|`OLESCRIPT_S_PENDING`|El método se puso en cola correctamente, pero aún no ha cambiado el estado. Cuando los cambios de estado, el sitio es volver a llamar en el [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) método.|  
 |`S_FALSE`|El método se realizó correctamente, pero ya se ha cerrado la secuencia de comandos.|  
   
 ## <a name="see-also"></a>Vea también  

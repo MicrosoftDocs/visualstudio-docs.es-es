@@ -1,13 +1,8 @@
 ---
 title: Tutoriales de desarrollo de SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8285f6ef3a3ae01681a646c6ce46023ce2c3a8a
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: c01f9f07b9d6d0bc962592a370fe2d2104ad2a5e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119786"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945852"
 ---
 # <a name="sharepoint-development-walkthroughs"></a>Tutoriales de desarrollo de SharePoint
   Los siguientes tutoriales muestran cómo desarrollar e implementar soluciones de SharePoint mediante [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -41,7 +36,7 @@ ms.locfileid: "37119786"
 |Tema|Descripción|  
 |-----------|-----------------|  
 |[Tutorial: Importar un flujo de trabajo reutilizable de SharePoint Designer en Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Demuestra cómo importar un flujo de trabajo reutilizable creado en SharePoint Designer 2010 en un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proyecto de flujo de trabajo de SharePoint.|  
-|[Tutorial: Importar elementos de un sitio de SharePoint existente](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)|Muestra cómo importar elementos desde un sitio de SharePoint existente en un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proyecto de SharePoint.|  
+|[Tutorial: Importar elementos desde un sitio de SharePoint existente](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)|Muestra cómo importar elementos desde un sitio de SharePoint existente en un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proyecto de SharePoint.|  
   
 ## <a name="web-parts"></a>Elementos Web
   
@@ -57,7 +52,7 @@ ms.locfileid: "37119786"
 |[Tutorial: Crear y depurar una solución de flujo de trabajo de SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)|Muestra cómo crear una plantilla de flujo de trabajo secuencial básico.|  
 |[Tutorial: Crear un flujo de trabajo con formularios de asociación e iniciación](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)|Muestra cómo crear un flujo de trabajo secuencial básico que usa formularios de asociación e iniciación.|  
 |[Tutorial: Agregar una página de aplicación a un flujo de trabajo](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)|Muestra cómo agregar una página de aplicación que muestra los datos derivados de un flujo de trabajo a un proyecto de flujo de trabajo.|  
-|[Tutorial: Crear una actividad de flujo de trabajo de sitio personalizado](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|Muestra cómo crear una actividad personalizada para un flujo de trabajo de nivel de sitio.|  
+|[Tutorial: Crear una actividad de flujo de trabajo de sitio personalizada](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|Muestra cómo crear una actividad personalizada para un flujo de trabajo de nivel de sitio.|  
 |[Tutorial: Importar un flujo de trabajo reutilizable de SharePoint Designer en Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Muestra cómo migrar un flujo de trabajo reutilizable de SharePoint Designer en Visual Studio.|  
   
 ## <a name="application-pages"></a>Páginas de aplicación
@@ -85,10 +80,10 @@ ms.locfileid: "37119786"
 |-----------|-----------------|  
 |[Tutorial: Extender un tipo de elemento de proyecto de SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)|Muestra cómo extender la integrada **modelo de conectividad a datos empresariales** tipo de elemento de proyecto.|  
 |[Tutorial: Crear una extensión de proyecto de SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)|Muestra cómo agregar una propiedad personalizada a todos los proyectos de SharePoint. Los desarrolladores pueden usar la propiedad para agregar o quitar una carpeta asignada.|  
-|[Tutorial: Crear un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)|Muestra cómo definir un tipo de elemento de proyecto de SharePoint para crear una acción personalizada en SharePoint y asociar una plantilla de elemento con el nuevo tipo de elemento de proyecto.|  
-|[Tutorial: Crear un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)|Muestra cómo crear a un Asistente para un tipo de elemento de proyecto de SharePoint personalizado que está asociado con una plantilla de elemento.|  
-|[Tutorial: Crear un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)|Muestra cómo definir un tipo de elemento de proyecto de SharePoint para crear una columna de sitio en SharePoint y asociar una plantilla de proyecto con el nuevo tipo de elemento de proyecto.|  
-|[Tutorial: Crear un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|Muestra cómo crear a un Asistente para un tipo de elemento de proyecto de SharePoint personalizado que está asociado con una plantilla de proyecto.|  
+|[Tutorial: Creación de un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)|Muestra cómo definir un tipo de elemento de proyecto de SharePoint para crear una acción personalizada en SharePoint y asociar una plantilla de elemento con el nuevo tipo de elemento de proyecto.|  
+|[Tutorial: Creación de un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)|Muestra cómo crear a un Asistente para un tipo de elemento de proyecto de SharePoint personalizado que está asociado con una plantilla de elemento.|  
+|[Tutorial: Creación de un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)|Muestra cómo definir un tipo de elemento de proyecto de SharePoint para crear una columna de sitio en SharePoint y asociar una plantilla de proyecto con el nuevo tipo de elemento de proyecto.|  
+|[Tutorial: Creación de un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|Muestra cómo crear a un Asistente para un tipo de elemento de proyecto de SharePoint personalizado que está asociado con una plantilla de proyecto.|  
 |[Tutorial: Crear un paso de implementación personalizado para proyectos de SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)|Muestra cómo definir un paso de implementación personalizado que puede usarse para actualizar las soluciones de SharePoint.|  
   
 ## <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Extender el nodo Conexiones de SharePoint en el Explorador de servidores
@@ -100,4 +95,3 @@ ms.locfileid: "37119786"
   
 ## <a name="see-also"></a>Vea también
  [Tutoriales y ejemplos de desarrollo de SharePoint](../sharepoint/sharepoint-development-samples-and-walkthroughs.md)  
-  

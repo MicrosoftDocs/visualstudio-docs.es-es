@@ -1,13 +1,8 @@
 ---
-title: 'Tutorial: Crear un elemento Web para SharePoint utilizando un diseñador | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Crear un elemento Web para SharePoint utilizando un diseñador | Documentos de Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1b5cfd9afaf0c37dcf267c63641b7917efe4c249
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 146a1722f240895e0f508b0474df72f6f5f84ece
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831820"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870919"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Tutorial: Crear un elemento web para SharePoint utilizando un diseñador
 
@@ -74,7 +69,7 @@ Diseñar el elemento web agregando controles desde el **cuadro de herramientas**
 
 1. En el Diseñador de Visual Web Developer, elija el **diseño** tab para cambiar a la vista Diseño.
 
-2. En la barra de menús, elija **vista** > **cuadro de herramientas**.
+2. En la barra de menús, elija **Ver** > **Cuadro de herramientas**.
 
 3. En el **estándar** nodo de la **cuadro de herramientas**, elija el **CheckBoxList** controlar y, a continuación, realice uno de los pasos siguientes:
 
@@ -193,5 +188,5 @@ Los eventos de todos los calendarios especificados aparecen en la vista de calen
 ## <a name="see-also"></a>Vea también
 
 [Crear elementos web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[Cómo: crear un elemento web de SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
+[Cómo: Crear un elemento web de SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
 [Tutorial: Crear un elemento web para SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)

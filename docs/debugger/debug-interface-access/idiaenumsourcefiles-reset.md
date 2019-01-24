@@ -1,8 +1,6 @@
 ---
-title: 'Idiaenumsourcefiles:: Reset | Documentos de Microsoft'
-ms.custom: ''
+title: Idiaenumsourcefiles | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 678082cfd83cadb9f6155605171c3c62ea083109
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 1302b5f0171133e29754d900aeae4676021e7803
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468842"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834053"
 ---
 # <a name="idiaenumsourcefilesreset"></a>IDiaEnumSourceFiles::Reset
 Restablece una secuencia de enumeración al principio.  

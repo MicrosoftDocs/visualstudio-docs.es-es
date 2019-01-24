@@ -1,9 +1,6 @@
 ---
 title: IDebugProperty2::GetPropertyInfo | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProperty2::GetPropertyInfo
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80f1f35e8699c04101936bcfa31abfdde751a236
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 773a08d4e49fab85c1d3f44e04f47038ed052b74
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823104"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910680"
 ---
 # <a name="idebugproperty2getpropertyinfo"></a>IDebugProperty2::GetPropertyInfo
 Obtiene el [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) estructura que describe una propiedad.  
@@ -28,7 +25,7 @@ Obtiene el [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT GetPropertyInfo (   
+HRESULT GetPropertyInfo (   
    DEBUGPROP_INFO_FLAGS dwFields,  
    DWORD                nRadix,  
    DWORD                dwTimeout,  
@@ -39,7 +36,7 @@ HRESULT GetPropertyInfo (
 ```  
   
 ```cpp  
-int GetPropertyInfo (   
+int GetPropertyInfo (   
    enum_DEBUGPROP_INFO_FLAGS dwFields,  
    uint                      nRadix,  
    uint                      dwTimeout,  

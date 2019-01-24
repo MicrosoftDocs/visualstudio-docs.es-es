@@ -1,9 +1,6 @@
 ---
 title: IDebugBreakpointResolution2::GetBreakpointType | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBreakpointResolution2::GetBreakpointType
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a98ccf6e211233aed6099f554733a51f40c3363
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6529b666abdb6aa3b0ba2e449a4b0d9616013ad2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875274"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908871"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
 Obtiene el tipo del punto de interrupción representado por esta resolución.  
@@ -28,13 +25,13 @@ Obtiene el tipo del punto de interrupción representado por esta resolución.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT GetBreakpointType(   
+HRESULT GetBreakpointType(   
    BP_TYPE* pBPType  
 );  
 ```  
   
 ```csharp  
-int GetBreakpointType(   
+int GetBreakpointType(   
    out enum_ BP_TYPE pBPType  
 );  
 ```  

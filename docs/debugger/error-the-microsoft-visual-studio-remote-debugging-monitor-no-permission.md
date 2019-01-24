@@ -1,6 +1,7 @@
 ---
-title: 'Error: El Microsoft Visual Studio Monitor de depuración remota en el equipo remoto no tiene permiso para conectarse a este equipo | Microsoft Docs'
-ms.custom: ''
+title: 'Error: El Monitor de depuración remota de Microsoft Visual Studio del equipo remoto no tiene permiso para conectarse con este equipo'
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bb71667da94027d3170a372a9a570e5e1eea4ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4bd5a9ef53940164c7d83dff0159af4c69f61010
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854174"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053437"
 ---
-# <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer"></a>Error: El Monitor de depuración remota de Microsoft Visual Studio del equipo remoto no tiene permiso para conectarse a este equipo.
+# <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer"></a>Error: El Monitor de depuración remota de Microsoft Visual Studio del equipo remoto no tiene permiso para conectarse con este equipo
 Este error aparece cuando el usuario que intenta ejecutar el Monitor de depuración remota de Visual Studio (msvsmon) no tiene una cuenta en el equipo local.  
   
 ### <a name="to-fix-this-problem"></a>Para corregir este problema  
@@ -36,12 +37,12 @@ Este error aparece cuando el usuario que intenta ejecutar el Monitor de depuraci
   
 - Ejecute msvsmon como un usuario que tiene permiso para llamar en el equipo local. Esto indica que el usuario debe ser un usuario de dominio y administrador en el equipo de msvsmon. Puede especificar la cuenta de usuario para ejecutar msvsmon de dos maneras:  
   
-  - Haga clic en el icono de msvsmon y elija **ejecución** en el menú contextual  
+  - Haga clic con el botón derecho en el icono de msvsmon y elija **Ejecutar como** en el menú contextual  
   
     \- o -  
   
   - En el símbolo del sistema, ejecute `runas.exe`.  
   
 ## <a name="see-also"></a>Vea también  
- [Errores de depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+ [Errores de la depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

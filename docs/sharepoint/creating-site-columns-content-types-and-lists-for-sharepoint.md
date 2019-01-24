@@ -1,9 +1,6 @@
 ---
 title: Crear listas, tipos de contenido y columnas de sitio para SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.ListDesigner.ContentTypeSetting
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a9a5340b7fc5b36da7fe2a46175571a569fdf38e
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 805500b9f12e227e95add02ca0180b658b85d1cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325751"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931952"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Crear listas, tipos de contenido y columnas de sitio para SharePoint
   Visual Studio proporciona plantillas de elemento de proyecto para muchos elementos diferentes, fundamentales SharePoint, incluidos *enumera* y *tipos de contenido*, ambos de los cuales pueden incorporar columnas de sitio (o  *campos*). Los nuevos diseñadores para listas y tipos de contenido que sea más fácil que nunca la creación de estos elementos.  
@@ -53,5 +50,3 @@ ms.locfileid: "36325751"
   
 ## <a name="see-also"></a>Vea también
  [Introducción al desarrollo en SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=225000)  
-  
- 

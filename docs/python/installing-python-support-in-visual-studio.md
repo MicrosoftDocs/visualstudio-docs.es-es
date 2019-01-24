@@ -1,22 +1,22 @@
 ---
-title: Instalación de la compatibilidad de Python
+title: Instalación de compatibilidad con Python
 description: Cómo instalar las Herramientas de Python para Visual Studio (PTVS) en Visual Studio 2017, 2015, 2013, 2012 y 2010, incluidas las opciones y las ubicaciones de instalación.
-ms.date: 10/09/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e4f4e79941be143f4eb6252dac735015f6145881
-ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
+ms.openlocfilehash: 3c59aee52ca547b4d209870516beb359d7138366
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49324995"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961756"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Instalación de la compatibilidad con Python en Visual Studio en Windows
 
@@ -59,7 +59,7 @@ Para probar rápidamente la compatibilidad de Python después de seguir los paso
 
     | Opción | Descripción |
     | --- | --- |
-    | Distribuciones de Python | Elija cualquier combinación de las variantes de 32 bits y 64 bits de las distribuciones de Python 2, Python 3, Anaconda2 y Anaconda3 con las que piensa trabajar. En todas se incluye el intérprete, el runtime y las bibliotecas de la distribución. Anaconda, en concreto, es una plataforma abierta de ciencia de datos que incluye una gran variedad de paquetes preinstalados. (Puede volver al instalador de Visual Studio en cualquier momento para agregar o quitar distribuciones).  **Nota**: Si ha instalado una distribución fuera del instalador de Visual Studio, no es necesario comprobar la opción equivalente aquí. Visual Studio detecta automáticamente las instalaciones existentes de Python. Consulte [Entornos de Python](managing-python-environments-in-visual-studio.md). Además, si hay una versión más reciente de Python que la que se muestra en el instalador, puede instalar esta versión por separado y Visual Studio la detectará. |
+    | Distribuciones de Python | Elija cualquier combinación de las variantes de 32 bits y 64 bits de las distribuciones de Python 2, Python 3, Anaconda2 y Anaconda3 con las que piensa trabajar. En todas se incluye el intérprete, el runtime y las bibliotecas de la distribución. Anaconda, en concreto, es una plataforma abierta de ciencia de datos que incluye una gran variedad de paquetes preinstalados. (Puede volver al instalador de Visual Studio en cualquier momento para agregar o quitar distribuciones).  **Nota**: Si ha instalado una distribución fuera del instalador de Visual Studio, no es necesario comprobar la opción equivalente aquí. Visual Studio detecta automáticamente las instalaciones existentes de Python. Vea [La ventana Entornos de Python](managing-python-environments-in-visual-studio.md#the-python-environments-window). Además, si hay una versión más reciente de Python que la que se muestra en el instalador, puede instalar esta versión por separado y Visual Studio la detectará. |
     | **Compatibilidad con plantillas de Cookiecutter** | Instala la interfaz de usuario gráfica de Cookiecutter para detectar plantillas, opciones de plantilla de entrada y crear proyectos y archivos. Vea [Uso de la extensión Cookiecutter](using-python-cookiecutter-templates.md). |
     | **Compatibilidad web con Python** | Instala herramientas para desarrollo web, incluida la compatibilidad de edición de HTML, CSS y JavaScript, junto con plantillas de proyectos que usan los marcos Bottle, Flask y Django. Vea [Plantillas de proyecto web de Python](python-web-application-project-templates.md). |
     | **Compatibilidad con IoT de Python** | Admite el desarrollo de Windows IoT Core con Python. |
@@ -82,7 +82,7 @@ Si encuentra problemas al instalar o ejecutar Python en Visual Studio, pruebe lo
 - Use la opción [**Reparar**](../install/repair-visual-studio.md) en el instalador de Visual Studio.
 - Reparar o reinstalar Python a través de **Configuración** > **Aplicaciones y características** en Windows.
 
-**Error de ejemplo**: no se ha podido iniciar el proceso interactivo: System.ComponentModel.Win32Exception (0x80004005): error desconocido (0xc0000135) en Microsoft.PythonTools.Repl.PythonInteractiveEvaluator.d__43.MoveNext().
+**Error de ejemplo**: No se pudo iniciar el proceso interactivo: System.ComponentModel.Win32Exception (0x80004005): Error desconocido (0xc0000135) en Microsoft.PythonTools.Repl.PythonInteractiveEvaluator.d__43.MoveNext().
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 
@@ -116,10 +116,10 @@ En Visual Studio 2015 y versiones anteriores, las rutas de instalación son las 
 
 - 32 bits:
   - Ruta de acceso: *%Archivos de programa(x86)%\Microsoft Visual Studio \<VS_ver>\Common7\IDE\Extensions\Microsoft\Herramientas de Python para Visual Studio\\<PTVS_ver>*
-  - Ubicación del registro de ruta de acceso: **HKEY_LOCAL_MACHINE\Software\Microsoft\PythonTools\\<VS_ver>\InstallDir**
+  - Ubicación del Registro de ruta de acceso: **HKEY_LOCAL_MACHINE\Software\Microsoft\PythonTools\\<VS_ver>\InstallDir**
 - 64 bits:
   - Ruta de acceso: *%Archivos de programa%\Microsoft Visual Studio \<VS_ver>\Common7\IDE\Extensions\Microsoft\Herramientas de Python para Visual Studio\\<PTVS_ver>*
-  - Ubicación del registro de ruta de acceso: **HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\PythonTools\\<VS_ver>\InstallDir**
+  - Ubicación del Registro de ruta de acceso: **HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\PythonTools\\<VS_ver>\InstallDir**
 
 donde:
 
@@ -133,4 +133,3 @@ donde:
 ### <a name="user-specific-installations-15-and-earlier"></a>Instalaciones específicas de usuario (1.5 y anteriores)
 
 Herramientas de Python para Visual Studio 1.5 y las versiones anteriores permitían una instalación solo para el usuario actual, en cuyo caso la ruta de instalación es *%LocalAppData%\Microsoft\VisualStudio\\<VS_ver>\Extensions\Microsoft\Herramientas de Python para Visual Studio\\<PTVS_ver>*, donde &lt;VS_ver&gt; y &lt;PTVS_ver&gt; se corresponden con las mismas versiones indicadas anteriormente.
-

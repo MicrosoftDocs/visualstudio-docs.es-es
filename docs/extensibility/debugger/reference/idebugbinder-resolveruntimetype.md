@@ -1,9 +1,6 @@
 ---
 title: IDebugBinder::ResolveRuntimeType | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBinder::ResolveRuntimeType
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2bfca2c360741b92c3a7ce3c4773671d8bf4d6f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f9224314d1417f08bbf025d774c1ecc8ac706e05
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928131"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852523"
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
 Este método determina el tipo de tiempo de ejecución de un objeto.  
@@ -28,7 +25,7 @@ Este método determina el tipo de tiempo de ejecución de un objeto.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT ResolveRuntimeType(   
+HRESULT ResolveRuntimeType(   
    IDebugObject* pObject,  
    IDebugField** ppResolved  
 );  

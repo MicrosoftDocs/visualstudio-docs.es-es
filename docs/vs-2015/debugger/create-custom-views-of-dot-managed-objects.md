@@ -26,15 +26,15 @@ helpviewer_keywords:
 - mcee_mc.dat file
 ms.assetid: 9969e9b2-9008-4729-8a14-0d6deaa61576
 caps.latest.revision: 37
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 964e3bcee87c6110813862eccdac63765fa5199f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 607844200ad2ccc7f50cea834c24da3adea14413
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273005"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51808471"
 ---
 # <a name="create-custom-views-of-managed-objects"></a>Crear vistas personalizadas de objetos administrados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

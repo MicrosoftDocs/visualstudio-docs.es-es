@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: retroceder o avanzar en la memoria | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Retroceder o avanzar en la memoria | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,15 +19,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25c057687596e5f410c4a19f9a1c8c2cdef02f28
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ab81dcdda3f7e3a5818d0351c26c0002ea75eb3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816662"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902232"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>Cómo: Retroceder o avanzar en la memoria
-Al ver el contenido de la memoria en un **memoria** ventana o el **desensamblado** ventana, puede usar la barra de desplazamiento vertical para moverse hacia arriba o hacia abajo en el espacio de memoria.  
+# <a name="how-to-page-up-or-down-in-memory"></a>Procedimiento Retroceso o avance en la memoria
+
+Mientras consulta el contenido de la memoria en una ventana **Memoria** o en la ventana **Desensamblado**, puede utilizar la barra de desplazamiento vertical para moverse hacia arriba o abajo en el espacio de memoria.  
   
 ### <a name="to-page-up-or-down-in-memory"></a>Para retroceder o avanzar en la memoria  
   
@@ -48,6 +47,6 @@ Al ver el contenido de la memoria en un **memoria** ventana o el **desensamblado
 -   Haga clic en la flecha situada en la parte superior o inferior de la barra de desplazamiento vertical.  
   
 ## <a name="see-also"></a>Vea también  
- [Windows de memoria](../debugger/memory-windows.md)   
- [Cómo: usar la ventana Desensamblado](../debugger/how-to-use-the-disassembly-window.md)   
+ [Ventana Memoria](../debugger/memory-windows.md)   
+ [Cómo: Uso de la ventana Desensamblado](../debugger/how-to-use-the-disassembly-window.md)   
  [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)

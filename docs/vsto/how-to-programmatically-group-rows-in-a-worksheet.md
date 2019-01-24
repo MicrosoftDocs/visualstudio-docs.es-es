@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: agrupar filas en una hoja de cálculo mediante programación'
-ms.custom: ''
+title: Procedimiento Agrupar filas en una hoja de cálculo mediante programación
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,14 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aa9624f90a337fb85ba2868b3b5c4f3cb1553ffb
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 6cf553876aaad0a502c89a8b3c91002aed9e66f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258741"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896791"
 ---
-# <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Cómo: agrupar filas en una hoja de cálculo mediante programación
+# <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Procedimiento Agrupar filas en una hoja de cálculo mediante programación
   Puede agrupar uno o más filas completas. Para crear un grupo en una hoja de cálculo, use un <xref:Microsoft.Office.Tools.Excel.NamedRange> control o un objeto nativo de rango de Excel.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -64,7 +61,5 @@ ms.locfileid: "35258741"
 ## <a name="see-also"></a>Vea también  
  [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)   
  [NamedRange (control)](../vsto/namedrange-control.md)   
- [Cómo: agregar controles NamedRange a hojas de cálculo](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [Cómo: Agregar controles NamedRange a hojas de cálculo](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

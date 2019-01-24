@@ -1,9 +1,6 @@
 ---
 title: interfaz IManagedAddin
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ddede8542cda7499a9781c19a6baf1c58acfd125
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0e754502e3bee2a1e35dda7feb19bc4906f42e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839549"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859060"
 ---
 # <a name="imanagedaddin-interface"></a>interfaz IManagedAddin
   Implementar la interfaz IManagedAddin para crear un componente que carga administrados complementos de VSTO. Esta interfaz se agregó en 2007 Microsoft Office system.  
@@ -89,5 +86,3 @@ interface IManagedAddin : IUnknown
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de API no administrada &#40;desarrollo de Office en Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
-  
-  

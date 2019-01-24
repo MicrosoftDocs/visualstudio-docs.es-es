@@ -1,9 +1,6 @@
 ---
 title: Fundamentos de la integración de Control de origen | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Source Control Integration, essentials
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4533cac0ba6cbbcf5cf4354afdb29eefc5b2b726
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f73ac76c8b6b8cf96e447d072b7d8b73611bb6e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879173"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828373"
 ---
 # <a name="source-control-integration-essentials"></a>Conceptos básicos de la integración del control de código fuente
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] admite dos tipos de integración de control de código fuente: un complemento de control de origen que proporciona la funcionalidad básica y se ha creado mediante la API de complemento de Control de código fuente (conocido anteriormente como la API de MSSCCI) y una solución de integración de control de código fuente basado en un VSPackage que Proporciona una funcionalidad más sólida.  
@@ -32,7 +29,7 @@ ms.locfileid: "49879173"
   
 1. Crear un archivo DLL que implementa las funciones especificadas en [de complementos de Control de código fuente](../../extensibility/source-control-plug-ins.md).  
   
-2. Registrar la DLL mediante la realización de las entradas del Registro adecuados, como se describe en [Cómo: instalar un complemento de Control de código fuente](../../extensibility/internals/how-to-install-a-source-control-plug-in.md).  
+2. Registrar la DLL mediante la realización de las entradas del Registro adecuados, como se describe en [Cómo: Instalar un complemento de Control de código fuente](../../extensibility/internals/how-to-install-a-source-control-plug-in.md).  
   
 3. Crear una aplicación auxiliar de la interfaz de usuario y mostrarlo cuando se lo solicite el paquete de adaptador de Control de código fuente (el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] componente que controla la funcionalidad de control de código fuente a través de los complementos de control de código fuente).  
   

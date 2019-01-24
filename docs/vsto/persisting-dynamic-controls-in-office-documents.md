@@ -1,9 +1,6 @@
 ---
 title: Guardar controles dinámicos en documentos de Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b77310f797db3eb031bc311f4fc68bc7fd6b4c56
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 570131dfdb3cb582ba6ee6c8a12fff2dfcc01e98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059297"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894800"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Guardar controles dinámicos en documentos de Office
 
@@ -38,7 +35,7 @@ Los controles que agregue a los documentos en tiempo de ejecución se denominan 
 
 ## <a name="persist-host-controls-in-the-document"></a>Conservar los controles host en el documento
 
-Cuando un documento se guarda y se cierra, todos los controles host dinámicos se quitan del documento. Solo los objetos de Office nativos subyacentes permanecen. Por ejemplo, un <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> control host se convierte en un <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName>. Los objetos de Office nativos no están conectados a los eventos de control host y no tienen la funcionalidad de enlace de datos del control host.
+Cuando un documento se guarda y se cierra, todos los controles host dinámicos se quitan del documento. Solo los objetos de Office nativos subyacentes permanecen. Por ejemplo, un control host <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> se convierte en un elemento <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName>. Los objetos de Office nativos no están conectados a los eventos de control host y no tienen la funcionalidad de enlace de datos del control host.
 
 En la tabla siguiente se muestra el objeto de Office nativo que se deja en un documento para cada tipo de control host.
 
@@ -56,7 +53,7 @@ Puede volver a crear controles host dinámicos en lugar de los controles nativos
 
 Para volver a crear un control host para Word, o un <xref:Microsoft.Office.Tools.Excel.NamedRange> o <xref:Microsoft.Office.Tools.Excel.ListObject> control host para Excel, use un `Add` \< *clase control*> método de un <xref:Microsoft.Office.Tools.Excel.ControlCollection?displayProperty=fullName> o <xref:Microsoft.Office.Tools.Word.ControlCollection?displayProperty=fullName> objeto. Utilice un método que tenga un parámetro para el objeto de Office nativo.
 
-Por ejemplo, si desea crear un <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> hospedar el control desde un nativo existente <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName> cuando se abre el documento, use el <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddListObject%2A> método y pase la existente <xref:Microsoft.Office.Interop.Excel.ListObject>. En el ejemplo de código siguiente esto se muestra en un proyecto de nivel de documento para Excel. El código vuelve a crear un elemento <xref:Microsoft.Office.Tools.Excel.ListObject> dinámico que se basa en un elemento <xref:Microsoft.Office.Interop.Excel.ListObject> existente llamado `MyListObject` en la clase `Sheet1` .
+Por ejemplo, si quiere crear un control host <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> desde un elemento <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName> nativo existente cuando se abre el documento, use el método <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddListObject%2A> y pase el elemento <xref:Microsoft.Office.Interop.Excel.ListObject>existente. En el ejemplo de código siguiente esto se muestra en un proyecto de nivel de documento para Excel. El código vuelve a crear un elemento <xref:Microsoft.Office.Tools.Excel.ListObject> dinámico que se basa en un elemento <xref:Microsoft.Office.Interop.Excel.ListObject> existente llamado `MyListObject` en la clase `Sheet1` .
 
 [!code-csharp[Trin_ExcelWorkbookDynamicControls#6](../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/Sheet1.cs#6)]
 [!code-vb[Trin_ExcelWorkbookDynamicControls#6](../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/Sheet1.vb#6)]
@@ -89,18 +86,18 @@ Al agregar controles de Windows Forms dinámicos a documentos mediante el uso de
 
 #### <a name="remove-activex-wrappers-when-the-document-is-opened"></a>Quitar contenedores de ActiveX cuando se abre el documento
 
-Para quitar todos los contenedores de ActiveX, llame a la `GetVstoObject` método para generar un elemento host para el <xref:Microsoft.Office.Interop.Word.Document> o <xref:Microsoft.Office.Interop.Excel.Workbook> que representa el documento recién abierto. Por ejemplo, para quitar todos los contenedores de ActiveX de un documento de Word, puede llamar el `GetVstoObject` método para generar un elemento host para el <xref:Microsoft.Office.Interop.Word.Document> objeto que se pasa al controlador de eventos para el <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> eventos.
+Para quitar todos los contenedores de ActiveX, llame al método `GetVstoObject` para generar un elemento host para el elemento <xref:Microsoft.Office.Interop.Word.Document> o <xref:Microsoft.Office.Interop.Excel.Workbook> que representa el documento recién abierto. Por ejemplo, para quitar todos los contenedores de ActiveX de un documento de Word, puede llamar al método `GetVstoObject` para generar un elemento host para el objeto <xref:Microsoft.Office.Interop.Word.Document> que se pasa al controlador de eventos del evento <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen>.
 
 Este procedimiento es útil cuando se sabe que el documento solo se abrirá en equipos que tienen el complemento de VSTO instalado. Si cabe la posibilidad de que el documento se pase a otros usuarios que no tengan el complemento de VSTO instalado, considere en su lugar la posibilidad de quitar los controles antes de cerrar el documento.
 
-En el ejemplo de código siguiente se muestra cómo llamar a la `GetVstoObject` método cuando se abre el documento.
+En el ejemplo de código siguiente se muestra cómo llamar al método `GetVstoObject` cuando se abre el documento.
 
 [!code-vb[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#11)]
 [!code-csharp[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#11)]
 
 Aunque el `GetVstoObject` método se utiliza principalmente para generar un nuevo elemento host en tiempo de ejecución, este método también borra todos los contenedores de ActiveX del documento de la primera vez que se llama para un documento específico. Para obtener más información sobre cómo usar el `GetVstoObject` método, consulte [documentos ampliar Word y libros de Excel en complementos VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
-Si su complemento VSTO crea controles dinámicos cuando se abre el documento, los complementos de VSTO ya llamará el `GetVstoObject` método como parte del proceso para crear los controles. No es necesario agregar una llamada independiente a la `GetVstoObject` método para quitar los contenedores de ActiveX en este escenario.
+Si su complemento VSTO crea controles dinámicos cuando se abre el documento, los complementos de VSTO ya llamará el `GetVstoObject` método como parte del proceso para crear los controles. No es necesario agregar una llamada independiente al método `GetVstoObject` para quitar los contenedores de ActiveX en este escenario.
 
 #### <a name="remove-the-dynamic-controls-before-the-document-is-closed"></a>Quitar los controles dinámicos antes de cerrar el documento
 

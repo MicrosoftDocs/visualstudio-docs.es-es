@@ -16,12 +16,12 @@ ms.assetid: de068b6a-e806-45f0-9dec-2458fbb486f7
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8568794b46a8d94e8d186fe297e9bb0d1cf53a3c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 236acfbad0d5c49710f4c7eb8b20a7572b209212
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827468"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51736767"
 ---
 # <a name="handling-specialized-deployment"></a>Control de implementación especializada
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

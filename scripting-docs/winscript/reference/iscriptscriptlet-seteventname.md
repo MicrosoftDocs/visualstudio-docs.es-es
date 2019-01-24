@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::SetEventName | Documentos de Microsoft
+title: IScriptScriptlet::SetEventName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 244888d49e1e9a84b8865e9c86a845617af6a5d9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 10accabb3ca4e070173530cba3c60da9d7e5bb04
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733735"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092058"
 ---
 # <a name="iscriptscriptletseteventname"></a>IScriptScriptlet::SetEventName
-Establece el nombre del evento que está asociado con el scriptlet.  
+Establece el nombre del evento que está asociado el scriptlet.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT SetEventName(  
    LPCOLESTR          psz  
 );  
@@ -41,7 +41,7 @@ HRESULT SetEventName(
  [in] Un búfer que contiene el nombre del evento que está asociado el `IScriptScriptlet` objeto.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  

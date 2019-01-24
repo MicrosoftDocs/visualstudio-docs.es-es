@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugdatatarget:: Readbstr (método) | Documentos de Microsoft'
+title: Readbstr (método) | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 85fbdb556b59c67610ad65b7e1f056399ad6da58
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: afd216c869cd88a643f68f0abd1fc095a675e24b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728205"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095802"
 ---
 # <a name="ijsdebugdatatargetreadbstr-method"></a>IJsDebugDataTarget::ReadBSTR (Método)
-Lee una cadena BSTR desde el destino de depuración.  
+Lee BSTR del destino de depuración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT ReadBSTR(  
    UINT64 address,  
    BSTR *pString  
@@ -37,10 +37,10 @@ HRESULT ReadBSTR(
   
 #### <a name="parameters"></a>Parámetros  
  `address`  
- [in] La dirección que leer.  
+ [in] Para leer desde la dirección.  
   
  `pString`  
- [out] El BSTR lee desde el destino de depuración.  
+ [out] Lee BSTR del destino de depuración.  
   
 ## <a name="return-value"></a>Valor devuelto  
   

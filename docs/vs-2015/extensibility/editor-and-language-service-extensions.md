@@ -15,12 +15,12 @@ ms.assetid: 5653bac9-724f-4948-a820-68ce6aa96365
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5512aa9fc40e9f2ef7619cc5cf80f2751de15327
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b5e0b568cee873d29f73eb2b81e38d49b76b5844
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265983"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51778766"
 ---
 # <a name="editor-and-language-service-extensions"></a>Editor y extensiones de servicio de lenguaje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

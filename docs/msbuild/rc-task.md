@@ -1,8 +1,6 @@
 ---
 title: RC (Tarea) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCResourceCompilerTool.UndefineProcessorDefinitions
@@ -24,15 +22,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7751a53430518df9ce80fd053be5414e015143d
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 156de08e8bd0ed2a8cadd0653facfa99d352cb20
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151659"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915593"
 ---
 # <a name="rc-task"></a>RC (tarea)
-Incluye la herramienta Compilador de recursos de Microsoft Windows *rc.exe*. La tarea **RC** compila recursos, como cursores, iconos, iconos, mapas de bits, cuadros de diálogo y fuentes, en un archivo de recursos (*.res*). Para más información, consulte [Compilador de recursos](https://docs.microsoft.com/en-us/windows/desktop/menurc/resource-compiler).
+Incluye la herramienta Compilador de recursos de Microsoft Windows *rc.exe*. La tarea **RC** compila recursos, como cursores, iconos, iconos, mapas de bits, cuadros de diálogo y fuentes, en un archivo de recursos (*.res*). Para más información, consulte [Compilador de recursos](https://docs.microsoft.com/windows/desktop/menurc/resource-compiler).
   
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea RC. La mayoría de los parámetros de tarea, así como algunos conjuntos de parámetros, corresponden a una opción de línea de comandos.  

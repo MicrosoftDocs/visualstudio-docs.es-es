@@ -1,9 +1,6 @@
 ---
 title: Asistente (. Archivo vsz) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - .vsz files
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0076e1ee7409486a3b7b86ccd0f46bcd02a54a5
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: c66665fa927cbd1f7c2f704467750c6c943eb467
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757888"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898195"
 ---
 # <a name="wizard-vsz-file"></a>Archivo de asistente (.Vsz)
 

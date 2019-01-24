@@ -1,22 +1,21 @@
 ---
-title: Refactorización de retirada de código no accesible en Visual Studio
+title: Refactorización de retirada de código no accesible
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 dev_langs:
-- csharp
+- CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: dd06fb7cd7b0e31df777a488c34a59e5a036e3b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 481c0d116eb2aee2c4f931f1ca4cb2de7927c62e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836390"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842543"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>Refactorización de retirada de código no accesible
 
@@ -24,7 +23,7 @@ Esta refactorización se aplica a lo siguiente:
 
 - C#
 
-**Qué**: Retira código que nunca se ejecutará.
+**Qué:** Quita código que no se va a ejecutar nunca.
 
 **Cuándo:** El programa no tiene ninguna ruta de acceso a un fragmento de código, lo que convierte a ese fragmento de código en algo innecesario.
 

@@ -1,8 +1,6 @@
 ---
 title: Idiaenumsymbols | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1628def8e3bc3c322b911842215961994335c16
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 3ae00053d9022a60262dcef56dfa2799aa26b776
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874480"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918276"
 ---
 # <a name="idiaenumsymbolsgetcount"></a>IDiaEnumSymbols::get_Count
 Recupera el número de símbolos.  
@@ -27,7 +25,7 @@ Recupera el número de símbolos.
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT get_Count (   
+HRESULT get_Count (   
    LONG* pRetVal  
 );  
 ```  

@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Crear gráficos personalizados en los resultados de pruebas de carga en Visual Studio'
+title: Procedimiento para crear gráficos personalizados en los resultados de pruebas de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,19 +10,20 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 7de5d684b0a4299c2f3d90e4a00338c55d2d6870
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: cc7673ad7f7542595a883e81a8064964dd054729
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382004"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958006"
 ---
-# <a name="how-to-create-custom-graphs-in-load-test-results"></a>Cómo: Crear gráficos personalizados en los resultados de pruebas de carga
+# <a name="how-to-create-custom-graphs-in-load-test-results"></a>Procedimiento para crear gráficos personalizados en los resultados de pruebas de carga
 
 puede diseñar gráficos que muestren información específica sobre los resultados de pruebas de carga. Los gráficos personalizados se diseñan especificando los contadores de la prueba de carga que se van a mostrar en el gráfico.
 
- Puede realizar el procedimiento siguiente mientras se ejecuta una prueba de carga o cuando termine de ejecutarse.
+Puede realizar el procedimiento siguiente mientras se ejecuta una prueba de carga o cuando termine de ejecutarse.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-a-custom-load-test-results-graph"></a>Para crear un gráfico de resultados de pruebas de carga personalizado
 
@@ -38,9 +39,9 @@ puede diseñar gráficos que muestren información específica sobre los resulta
 
      El nuevo gráfico aparece en el **Analizador de pruebas de carga**. Aparece en el panel de gráfico actualmente seleccionado y reemplaza al gráfico que se mostraba en ese panel.
 
-3.  Personalice el nuevo gráfico agregando contadores. Para obtener más información, vea [Cómo: Agregar y eliminar contadores de los gráficos de resultados de pruebas de carga](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
+3.  Personalice el nuevo gráfico agregando contadores. Para obtener más información, vea [Cómo: Agregar y eliminar contadores de los gráficos](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
 
 ## <a name="see-also"></a>Vea también
 
 - [Analizar los resultados de pruebas de carga en la vista Gráficos](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [Cómo: Agregar y eliminar contadores de los gráficos de resultados de pruebas de carga](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
+- [Cómo: Agregar y eliminar contadores de los gráficos](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)

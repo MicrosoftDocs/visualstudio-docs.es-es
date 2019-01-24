@@ -2,8 +2,7 @@
 title: Creación de una aplicación Node.js y React
 description: En este tutorial, creará una aplicación con Node.js Tools para Visual Studio.
 ms.custom: mvc
-ms.date: 09/06/2018
-ms.technology: vs-nodejs
+ms.date: 11/01/2018
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -13,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 3cc92ba28246358f819e6086d19141b2a68072f0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a89a54999e6db5139178b20a0794d4dc594e0e45
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823741"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874182"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Crear una aplicación Node.js y React en Visual Studio
 
@@ -60,7 +59,7 @@ webpack empaqueta archivos JavaScript para que puedan ejecutarse en un explorado
 
 * Debe tener instalado Visual Studio 2017 y la carga de trabajo de desarrollo de Node.js.
 
-    Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita.
+    Si todavía no ha instalado Visual Studio, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  para instalarlo de forma gratuita.
 
     Si necesita instalar la carga de trabajo, pero ya tiene Visual Studio, seleccione el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de Node.js** y, después, haga clic en **Modificar**.
 
@@ -121,18 +120,18 @@ Esta aplicación requiere una serie de módulos de npm para ejecutarse correctam
 
     El archivo *package.json* del proyecto se actualiza con la nueva información de paquete, incluida su versión.
 
-1. En lugar de usar la interfaz de usuario para buscar y agregar el resto de los paquetes de uno en uno, pegue el siguiente código en package.json. Para ello, agregue una sección `dependencies` con este código:
+1. En lugar de usar la interfaz de usuario para buscar y agregar el resto de los paquetes de uno en uno, pegue el siguiente código en *package.json*. Para ello, agregue una sección `dependencies` con este código:
 
     ```json
     "dependencies": {
-      "express": "~4.16.3",
+      "express": "~4.16.4",
       "path": "~0.12.7",
-      "react": "~16.4.2",
-      "react-dom": "~16.4.2",
-      "ts-loader": "~4.5.0",
-      "typescript": "~2.9.2",
-      "webpack": "~4.17.1",
-      "webpack-cli": "~2.1.5"
+      "react": "~16.6.0",
+      "react-dom": "~16.6.0",
+      "ts-loader": "~5.3.0",
+      "typescript": "~3.1.5",
+      "webpack": "~4.23.1",
+      "webpack-cli": "~3.1.2"
     }
     ```
 
@@ -202,7 +201,7 @@ Para esta sencilla aplicación, los nuevos archivos de proyecto se agregan en la
     var React = require('react');
     var ReactDOM = require('react-dom');
 
-    class Hello extends React.Component {
+    export class Hello extends React.Component {
         render() {
             return (
                 <h1>Welcome to React!!</h1>
@@ -258,7 +257,7 @@ En los pasos anteriores, se agregó *webpack-config.js* al proyecto. A continuac
     }
     ```
 
-    El código de configuración de webpack indica a Webpack que utilice el cargador de TypeScript para transpilar el JSX.
+    El código de configuración de webpack indica a Webpack que utilice el cargador de TypeScript para transcompilar el JSX.
 
 1. Abra *tsconfig.json* y reemplace el código predeterminado por el código siguiente, que especifica las opciones del compilador TypeScript:
 
@@ -286,7 +285,7 @@ En los pasos anteriores, se agregó *webpack-config.js* al proyecto. A continuac
 
 ## <a name="transpile-the-jsx"></a>Transpilar el JSX
 
-1. En el Explorador de soluciones, haga clic con el botón derecho en el nodo del proyecto y elija **	Abrir símbolo del sistema aquí**.
+1. En el Explorador de soluciones, haga clic con el botón derecho en el nodo del proyecto y elija **Abrir símbolo del sistema aquí**.
 
 1. En el símbolo del sistema, escriba el siguiente comando:
 

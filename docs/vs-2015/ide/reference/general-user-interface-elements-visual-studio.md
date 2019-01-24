@@ -1,12 +1,11 @@
 ---
-title: Elementos generales de la interfaz de usuario (Visual Studio) | Microsoft Docs
+title: Elementos de la interfaz de usuario general | Microsoft Docs
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bc67652d-1001-4979-ba71-d57147d21928
@@ -14,12 +13,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d197f0272bfad8769477cf1cb8ee21110b816ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: 9222a03b9df8997298e473c7248307341d89409f
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214649"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53931189"
 ---
 # <a name="general-user-interface-elements-visual-studio"></a>Elementos generales de la interfaz de usuario (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

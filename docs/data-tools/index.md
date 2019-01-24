@@ -1,21 +1,20 @@
 ---
+title: Desarrollo de soluciones de datos
+description: Obtenga información sobre distintas herramientas para el desarrollo de soluciones de datos en Visual Studio, entre las que se incluyen herramientas de .NET Framework, SQL Server Data Tools, Azure Data Lake, Azure HDInsight y Azure Stream Analytics.
 layout: LandingPage
 ms.date: 01/01/2018
 author: gewarren
 ms.author: gewarren
-title: Uso de herramientas de datos en Visual Studio para desarrollar soluciones de datos
-description: Obtenga información sobre herramientas para las soluciones de datos en Visual Studio.
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: bb2a5c33f0cdfe75f6e2bf6713ab92e36b588986
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 854cb5287aef6500e80d34fbccac8b343da73fc9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948413"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890555"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Uso de herramientas de datos en Visual Studio para desarrollar soluciones de datos
 
@@ -116,7 +115,6 @@ Obtenga información sobre cómo usar las herramientas de datos en Visual Studio
 
 ---
 
-<hr>
 <h2>Referencia</h2>
 
 <ul class="panelContent cardsW">
@@ -126,7 +124,7 @@ Obtenga información sobre cómo usar las herramientas de datos en Visual Studio
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><Accessing data in Visual Studio></p>
+                        <p><Access data in Visual Studio></p>
                     </div>
                 </div>
             </div>

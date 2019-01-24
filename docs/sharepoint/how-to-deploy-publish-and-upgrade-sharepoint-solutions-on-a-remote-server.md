@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: implementar, publicar y actualizar soluciones de SharePoint en un servidor remoto | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Implementar, publicar y actualizar soluciones de SharePoint en un servidor remoto | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fbd21016d00bdfecfcb606e9fe2b720ab97bf3d0
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1473d1c9ea9d876eb539e9672c1675ce06d9762d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119466"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835677"
 ---
-# <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Cómo: implementar, publicar y actualizar soluciones de SharePoint en un servidor remoto
+# <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Procedimiento Implementar, publicar y actualizar soluciones de SharePoint en un servidor remoto
   Además de implementar las soluciones de SharePoint en el sistema local, puede publicar soluciones en espacio aislado de SharePoint para sitios de SharePoint locales o sitios remotos. Las copias de proceso de publicación remota la *.wsp* archivo en el servidor de SharePoint instala la solución y, a continuación, le permite activar la solución. También puede actualizar una instalación remota de solución de SharePoint después de realizar cambios en él.  
   
 ## <a name="to-publish-a-sandboxed-sharepoint-solution-to-a-remote-sharepoint-server"></a>Para publicar una solución en espacio aislado de SharePoint en un servidor remoto de SharePoint  
@@ -78,8 +75,7 @@ ms.locfileid: "37119466"
      La versión anterior de la solución está desactivada, la nueva versión de la solución se actualiza con los datos mantenidos en la solución antigua y se activa la nueva solución en SharePoint.  
   
 ## <a name="see-also"></a>Vea también
- [Cómo: implementar y publicar una solución de SharePoint en un sitio de SharePoint local](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)   
+ [Cómo: Implementar y publicar una solución de SharePoint en un sitio de SharePoint local](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)   
  [Crear paquetes de solución SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)   
- [Cómo: personalizar un paquete de solución de SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
- [Cómo: agregar y quitar características y elementos de un paquete mediante el Diseñador de paquetes](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  
-  
+ [Cómo: Personalizar un paquete de solución de SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
+ [Cómo: Agregar y quitar características y elementos de un paquete mediante el Diseñador de paquetes](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  

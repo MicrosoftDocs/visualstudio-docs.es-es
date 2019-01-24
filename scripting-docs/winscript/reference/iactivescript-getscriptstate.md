@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptState | Documentos de Microsoft
+title: IActiveScript::GetScriptState | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 285a09308c7477dbeed68f9f93417b503ca4fe49
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a64067679e1c56831002494c579ffdeba84a1abe
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640185"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346636"
 ---
 # <a name="iactivescriptgetscriptstate"></a>IActiveScript::GetScriptState
-Recupera el estado actual del motor de scripting. Este método se pueda llamar desde subprocesos no sea de base sin resultante en una llamada no sea de base a los objetos de host o a la [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) interfaz.  
+Recupera el estado actual del motor de scripting. Este método se pueda llamar desde subprocesos no son de base sin resultante en una llamada que no sea de base a los objetos de host o a la [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) interfaz.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetScriptState(  
     SCRIPTSTATE *pss  // address of structure for state information  
 );  
@@ -41,7 +41,7 @@ HRESULT GetScriptState(
  [out] Dirección de una variable que recibe un valor definido en el [SCRIPTSTATE (enumeración)](../../winscript/reference/scriptstate-enumeration.md) enumeración. El valor indica el estado actual del motor de scripting asociado al subproceso que realiza la llamada.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve `S_OK` si se realiza correctamente, o `E_POINTER` si se especificó un puntero no válido.  
+ Devuelve `S_OK` si se realiza correctamente, o `E_POINTER` si se ha especificado un puntero no válido.  
   
 ## <a name="see-also"></a>Vea también  
  [IActiveScript](../../winscript/reference/iactivescript.md)

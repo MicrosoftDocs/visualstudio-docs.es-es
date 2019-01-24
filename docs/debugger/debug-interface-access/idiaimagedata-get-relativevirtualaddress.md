@@ -1,8 +1,6 @@
 ---
 title: Idiaimagedata | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 032b4db0a69dd1aeec6b312b8506fd29d079cf0c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: cf5da983c8971574c4b2ad444b0d63291c3e41f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935607"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880028"
 ---
 # <a name="idiaimagedatagetrelativevirtualaddress"></a>IDiaImageData::get_relativeVirtualAddress
 Recupera la ubicación en la memoria virtual del módulo con respecto a la aplicación.  
@@ -27,7 +25,7 @@ Recupera la ubicación en la memoria virtual del módulo con respecto a la aplic
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT get_relativeVirtualAddress (   
+HRESULT get_relativeVirtualAddress (   
    DWORD* pRetVal  
 );  
 ```  

@@ -1,9 +1,6 @@
 ---
 title: SccCreateSubProject (función) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccCreateSubProject
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3aef071d0c124878adf58d8346ad0b50f741300b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0761956cd18945a50bdb45fa7624a72f645683e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931355"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831789"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject (función)
 Esta función crea un subproyecto con el nombre especificado en un proyecto existente de elemento primario especificado por el `lpParentProjPath` argumento.  

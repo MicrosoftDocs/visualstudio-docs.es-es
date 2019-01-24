@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 18d04a085542aeec82b81dac64a6f9c97d0837c8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b106b1e553d3600d51b8b0fc09a0f8ecd4256abd
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916233"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097622"
 ---
 # <a name="idebugpropertysetvalueasstring"></a>IDebugProperty::SetValueAsString
 Establece el valor de una propiedad de una cadena determinada.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT SetValueAsString (  
    LPCOLESTR pszValue,  
    UINTnRadix,  

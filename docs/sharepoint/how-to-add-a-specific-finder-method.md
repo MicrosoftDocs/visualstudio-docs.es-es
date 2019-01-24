@@ -1,13 +1,8 @@
 ---
-title: 'Cómo: agregar un método Finder específico | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Agregar un método Finder específico | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,21 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8005728d29c38e32d55f01e42d2666c69112b3f3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 163badc38ba4037729e29d013c98e0b733c9eaf9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886494"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913470"
 ---
-# <a name="how-to-add-a-specific-finder-method"></a>Cómo: agregar un método Finder específico
+# <a name="how-to-add-a-specific-finder-method"></a>Procedimiento Agregar un método Finder específico
   Puede devolver una instancia de entidad única mediante la creación de un *buscador específico* método. El servicio de conectividad de datos profesionales (BDC) ejecuta el método de buscador específico cuando un usuario elige una entidad en un elemento web de datos de negocio o una lista externa. Para obtener más información, consulte [diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-a-specific-finder-method"></a>Para crear un método Finder específico
   
 1. En el **Diseñador de BDC**, elegir una entidad.  
   
-    Para obtener información sobre cómo agregar una entidad a la **Diseñador de BDC** en Visual Studio, consulte [Cómo: agregar una entidad a un modelo](../sharepoint/how-to-add-an-entity-to-a-model.md).  
+    Para obtener información sobre cómo agregar una entidad a la **Diseñador de BDC** en Visual Studio, vea [Cómo: Agregar una entidad a un modelo](../sharepoint/how-to-add-an-entity-to-a-model.md).  
   
 2. En la barra de menús, elija **vista** > **Other Windows**, **detalles del método de BDC**.  
   
@@ -60,7 +55,7 @@ ms.locfileid: "49886494"
   
 4. Abra Visual Studio **propiedades** ventana.  
   
-5. Configure el descriptor de tipo del parámetro devuelto como un descriptor de tipo de entidad. Para obtener información sobre cómo crear un descriptor de tipo de entidad, vea [Cómo: definir el descriptor de tipo de un parámetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
+5. Configure el descriptor de tipo del parámetro devuelto como un descriptor de tipo de entidad. Para obtener información sobre cómo crear un descriptor de tipo de entidad, vea [Cómo: Definir el descriptor de tipo de un parámetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
    > [!NOTE]  
    >  No tiene que realizar este paso si ha agregado un método Finder para la entidad. Visual Studio utiliza el descriptor de tipos que definió en el método Finder.  
@@ -92,11 +87,10 @@ ms.locfileid: "49886494"
   
 ## <a name="see-also"></a>Vea también
  [Diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Cómo: agregar un método Finder](../sharepoint/how-to-add-a-finder-method.md)   
- [Cómo: agregar un método Creator](../sharepoint/how-to-add-a-creator-method.md)   
- [Cómo: agregar un método Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
- [Cómo: agregar un método Updater](../sharepoint/how-to-add-an-updater-method.md)   
+ [Cómo: Agregar un método Finder](../sharepoint/how-to-add-a-finder-method.md)   
+ [Cómo: Agregar un método Creator](../sharepoint/how-to-add-a-creator-method.md)   
+ [Cómo: Agregar un método Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
+ [Cómo: Agregar un método Updater](../sharepoint/how-to-add-an-updater-method.md)   
  [Introducción a las herramientas de diseño de modelo BDC](../sharepoint/bdc-model-design-tools-overview.md)   
- [Cómo: agregar un parámetro a un método](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Cómo: definir una instancia de método](../sharepoint/how-to-define-a-method-instance.md)  
-  
+ [Cómo: Agregar un parámetro a un método](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [Cómo: Definir una instancia de método](../sharepoint/how-to-define-a-method-instance.md)  

@@ -1,9 +1,6 @@
 ---
 title: Elemento primario | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Parent
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a66f9fff773fb9a9542de13ceb97ad8732c319b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c025957bd0d3cf06bf73e1b35b5faa661386a0a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39635861"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902442"
 ---
 # <a name="parent-element"></a>Elemento primario
 El elemento primario de un cuadro combinado o botón sólo puede ser un grupo. El elemento primario de un menú o un grupo puede ser cualquier otro grupo o menú. En un [CommandPlacement (elemento)](../extensibility/commandplacement-element.md), este elemento es necesario; en todas las demás instancias es opcional. Si se omite este elemento, el elemento primario de `Group_Undefined:0` se implicarse.  
@@ -37,8 +34,8 @@ El elemento primario de un cuadro combinado o botón sólo puede ser un grupo. E
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|guid|Requerido. Identificador de comando de GUID o identificador de GUID.|  
-|id|Requerido. Id. de GUID/ID el identificador de comando.|  
+|guid|Obligatorio. Identificador de comando de GUID o identificador de GUID.|  
+|id|Obligatorio. Id. de GUID/ID el identificador de comando.|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
  Ninguna  

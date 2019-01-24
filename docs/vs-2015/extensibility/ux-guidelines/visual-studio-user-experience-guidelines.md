@@ -13,12 +13,12 @@ ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9a8371bf4fafbaf81fe63b638018789587165a89
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0042fd8ef7aee9431a3268a33eece0ed2c3dbcad
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870879"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802439"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Instrucciones para la experiencia de usuario de Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -3,7 +3,6 @@ title: Diseñador de flujo de trabajo - Diseñador de plantillas ReceiveAndSendR
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.ReceiveAndSendReply.UI
 - System.ServiceModel.Activities.SendReply.UI
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c6b5a12b37509e6e5113c704ef2c3ff931ea32e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1b62da812773795ff89e1beb87af6364c8baee14
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886414"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915051"
 ---
 # <a name="receiveandsendreply-template-designer"></a>Diseñador de plantillas ReceiveAndSendReply
 

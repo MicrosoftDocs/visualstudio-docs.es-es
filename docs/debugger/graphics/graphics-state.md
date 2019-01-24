@@ -1,8 +1,6 @@
 ---
-title: Estado de los gráficos | Documentos de Microsoft
-ms.custom: ''
+title: Estado de los gráficos | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.statewindow
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b45e5d922a5f2ed5a2ba15086c708c734d25e95
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 80a69c1da16e8e43c1a306a8659bb8e41bed21e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476385"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968107"
 ---
 # <a name="graphics-state"></a>Estado de los gráficos
 La ventana de estado de diagnóstico de gráficos de Visual Studio ofrece información sobre el estado activo de los gráficos en el momento del evento actual (por ejemplo, durante una llamada a draw).  
@@ -38,21 +36,21 @@ La ventana de estado de diagnóstico de gráficos de Visual Studio ofrece inform
   
 -   En la ventana de estado, vaya a la esquina superior izquierda, justo debajo de la barra de título, y elija el botón correspondiente al estilo de vista de estado que desea usar.  
   
-    -   **Mostrar la vista de estado de entrada de API**  
+    -   **Mostrar la vista del estado de entrada de la API**  
   
     -   **Vista Mostrar estado lógico**  
   
     -   **Vista Mostrar estado anclado**  
   
 > [!IMPORTANT]
->  Debe anclar el estado en el **API Mostrar estado de entrada** o **Mostrar estado lógico** vistas para que se muestre en el **vista Mostrar estado anclado**.  
+>  Debe anclar el estado en las vistas **Mostrar estado de entrada de la API** o **Mostrar estado lógico** para que se muestre en la **Vista Mostrar estado anclado**.  
   
 ### <a name="state-table-format"></a>Formato de la tabla de estado  
  La ventana de estado contiene varias columnas de información.  
   
 |Columna|Descripción|  
 |------------|-----------------|  
-|nombre|El nombre del elemento de estado. Si este elemento representa una agrupación de estado, puede expandirse para mostrarla.<br /><br /> En el **vista de estado de entrada de API** y **vista de estado lógico** Estados, se aplica sangría a los nombres para mostrar la relación jerárquica entre Estados.<br /><br /> En el **vista de estado anclado** estado, se muestran los nombres completos en una lista plana.|  
+|nombre|El nombre del elemento de estado. Si este elemento representa una agrupación de estado, puede expandirse para mostrarla.<br /><br /> En los estados de la **vista de estado de entrada de la API** y la **vista de estado lógico**, se aplica sangría a los nombres para mostrar la relación jerárquica entre los estados.<br /><br /> En el estado de la **vista de estado anclado**, se muestran los nombres completos en una lista plana.|  
 |Valor|El valor del elemento de estado.|  
 |Tipo|El tipo del elemento de estado.|  
   

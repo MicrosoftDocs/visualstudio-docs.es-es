@@ -1,9 +1,6 @@
 ---
-title: TEXT_DOC_ATTR_2 | Documentos de Microsoft
-ms.custom: ''
+title: TEXT_DOC_ATTR_2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - TEXT_DOC_ATTR_2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c877b1e42110defe717395cc78cc76acae00b934
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7d74bbfa4fb89baf01c5fb3d49a0767c67b800ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133552"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872731"
 ---
 # <a name="textdocattr2"></a>TEXT_DOC_ATTR_2
-Se describen los atributos de un documento.  
+Describe los atributos de un documento.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -43,14 +40,14 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
 ## <a name="remarks"></a>Comentarios  
   
 > [!NOTE]
->  Este valor no es realmente definido en el ensamblado de C#. En su lugar, debe copiar la definición en el archivo de origen.  
+>  Este valor no está definido realmente en el ensamblado de C#. En su lugar, debe copiar la definición en el archivo de origen.  
   
- Pasa como un argumento a la [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) método.  
+ Se pasa como argumento a la [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) método.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   

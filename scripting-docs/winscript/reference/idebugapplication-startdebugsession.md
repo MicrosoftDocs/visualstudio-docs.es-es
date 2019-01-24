@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::StartDebugSession | Documentos de Microsoft
+title: IDebugApplication::StartDebugSession | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aea5caead4921206428c2f1f36b74d057c8cef36
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 453286e310a6f16576d947cceb1947945f8627d3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725445"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086494"
 ---
 # <a name="idebugapplicationstartdebugsession"></a>IDebugApplication::StartDebugSession
-Entorno de desarrollo integrado (IDE) de predeterminado depurador se inicia y se asocia una sesión de depuración a esta aplicación, si uno no está ya conectado.  
+Se inicia el entorno de desarrollo integrado de depurador predeterminado (IDE) y se adjunta una sesión de depuración para esta aplicación, si uno no está ya conectado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT StartDebugSession();  
 ```  
   

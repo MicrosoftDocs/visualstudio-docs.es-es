@@ -1,8 +1,6 @@
 ---
-title: Pestaña archivo de paginación, cuadro de diálogo de propiedades de proceso | Documentos de Microsoft
-ms.custom: ''
+title: Ficha de archivo de paginación, cuadro de diálogo de propiedades de proceso | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Process properties for Windows NT
@@ -12,20 +10,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 624be76badf8d57b060198c2ee910ead17b5efcb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: ded332b68ee4ae4d628bc272b563e973da6154e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472973"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913348"
 ---
 # <a name="page-file-tab-process-properties-dialog-box"></a>Pestaña Archivo de paginación (Cuadro de diálogo Propiedades del proceso)
-Use la **archivo de paginación** pestaña para examinar el archivo de paginación de un proceso. Para mostrar la [cuadro de diálogo de propiedades de proceso](../debugger/process-properties-dialog-box.md), mover el foco a un [vista procesos](../debugger/processes-view.md) ventana. Seleccione cualquier nodo de proceso en el árbol y después elija **propiedades** desde el **vista** menú.  
+Use la **archivo de paginación** pestaña para examinar el archivo de paginación de un proceso. Para mostrar el [cuadro de diálogo de propiedades de proceso](../debugger/process-properties-dialog-box.md), mover el foco a un [vista procesos](../debugger/processes-view.md) ventana. Seleccione cualquier nodo de proceso en el árbol y luego elija **propiedades** desde el **vista** menú.  
   
- Las siguientes opciones están disponibles en la **archivo de paginación** ficha:  
+ Las siguientes opciones están disponibles en el **archivo de paginación** pestaña:  
   
 |Entrada|Descripción|  
 |-----------|-----------------|  
-|**Bytes del archivo de paginación**|El número actual de páginas que este proceso está usando en el archivo de paginación. El archivo de paginación almacena las páginas de datos utilizada por el proceso, pero no contenidas en otros archivos. El archivo de paginación se usa por todos los procesos y la falta de espacio en el archivo de paginación puede provocar errores mientras se están ejecutando otros procesos.|  
-|**Bytes de archivo de página máximos**|El número máximo de páginas que este proceso ha usado en el archivo de paginación.|  
-|**Errores de página**|El número de errores de página por los subprocesos ejecutados en este proceso. Se produce un error de página cuando un subproceso hace referencia a una página de memoria virtual que no está en su espacio de trabajo en la memoria principal. Por lo tanto, la página no se recuperará desde el disco si está en la lista de espera y, por lo que ya se encuentran en la memoria principal, o si la está usando otro proceso con el que se comparte la página.|
+|**Bytes de archivo de paginación**|El número actual de páginas que este proceso está usando en el archivo de paginación. El archivo de paginación almacena las páginas de datos utilizado por el proceso, pero no contenidas en otros archivos. El archivo de paginación se usa por todos los procesos y la falta de espacio en el archivo de paginación puede provocar errores mientras se está ejecutando otros procesos.|  
+|**Bytes de archivo de paginación máximos**|El número máximo de páginas que este proceso ha usado en el archivo de paginación.|  
+|**Errores de página**|El número de errores de página por los subprocesos ejecutados en este proceso. Se produce un error de página cuando un subproceso hace referencia a una página de memoria virtual que no está en su espacio de trabajo en la memoria principal. Por lo tanto, la página no se recuperará desde el disco si se encuentra en la lista en espera y, por tanto, en la memoria principal, o si lo está usando otro proceso con el que se comparte la página.|

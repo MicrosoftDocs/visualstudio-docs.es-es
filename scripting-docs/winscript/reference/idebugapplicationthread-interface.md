@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6e731ba866504c9a3c3c9ad081a90a12b161355d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 262174d0daecd2c37bafbecee13532ba62e9967f
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725955"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347793"
 ---
 # <a name="idebugapplicationthread-interface"></a>IDebugApplicationThread (Interfaz)
-Permite que los motores de idioma y hosts para proporcionar la sincronización de subprocesos y mantiene información de estado de depuración específicas de un subproceso. Esta interfaz extiende la `IRemoteDebugApplicationThread` interfaz para proporcionar acceso remoto no es para el subproceso.  
+Permite que los motores de lenguaje y los hosts para proporcionar sincronización de subprocesos y para mantener la información de estado de depuración específicas de un subproceso. Esta interfaz extiende la `IRemoteDebugApplicationThread` interfaz para proporcionar acceso no remotos para el subproceso.  
   
  Además de los métodos heredados de `IRemoteDebugApplicationThread`, el `IDebugApplicationThread` interfaz expone los métodos siguientes.  
   
@@ -32,6 +32,6 @@ Permite que los motores de idioma y hosts para proporcionar la sincronización d
 |------------|-----------------|  
 |[IDebugApplicationThread::SynchronousCallIntoThread](../../winscript/reference/idebugapplicationthread-synchronouscallintothread.md)|Proporciona un mecanismo para que el llamador ejecutar código en el subproceso de la aplicación.|  
 |[IDebugApplicationThread::QueryIsCurrentThread](../../winscript/reference/idebugapplicationthread-queryiscurrentthread.md)|Determina si este subproceso es el subproceso actualmente en ejecución.|  
-|[IDebugApplicationThread::QueryIsDebuggerThread](../../winscript/reference/idebugapplicationthread-queryisdebuggerthread.md)|Determina si este subproceso es el subproceso del depurador.|  
+|[IDebugApplicationThread::QueryIsDebuggerThread](../../winscript/reference/idebugapplicationthread-queryisdebuggerthread.md)|Determina si este subproceso es el depurador.|  
 |[IDebugApplicationThread::SetDescription](../../winscript/reference/idebugapplicationthread-setdescription.md)|Establece la descripción de este subproceso.|  
-|[IDebugApplicationThread::SetStateString](../../winscript/reference/idebugapplicationthread-setstatestring.md)|Establece la descripción del estado de subproceso.|
+|[IDebugApplicationThread::SetStateString](../../winscript/reference/idebugapplicationthread-setstatestring.md)|Establece la descripción del estado del subproceso.|

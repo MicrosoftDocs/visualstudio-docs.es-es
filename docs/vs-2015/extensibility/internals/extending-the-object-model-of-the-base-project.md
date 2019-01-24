@@ -17,12 +17,12 @@ ms.assetid: 2f95cc53-dff6-476c-bacd-500fb0ff7725
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b5c70ce13341eeb4a522c16fe336d5f644f830b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: db8ec193b49b7b72e922d2e4f715061d78be37ad
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228733"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783290"
 ---
 # <a name="extending-the-object-model-of-the-base-project"></a>Ampliación del modelo de objetos del proyecto de base
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

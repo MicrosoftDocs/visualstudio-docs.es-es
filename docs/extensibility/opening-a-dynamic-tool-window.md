@@ -1,9 +1,6 @@
 ---
 title: Abrir una ventana de herramientas dinámica | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, dynamic
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d37a72629dfb7c10eeb51bcd2317151447e9edd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 766582650e8c0d97ea585f8d9f34c48983331d7f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636651"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926468"
 ---
 # <a name="open-a-dynamic-tool-window"></a>Abra una ventana de herramientas dinámica
 Ventanas de herramientas normalmente se abren desde un comando en un menú o un método abreviado de teclado equivalente. En ocasiones, sin embargo, puede necesitar una ventana de herramientas que se abre cada vez que se aplica un contexto específico de la interfaz de usuario y se cierra cuando ya no se aplica el contexto de interfaz de usuario. Estos tipos de ventanas de herramientas se denominan *dinámica* o *visibles automáticamente*.  

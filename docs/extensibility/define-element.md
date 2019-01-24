@@ -1,9 +1,6 @@
 ---
 title: Definir elemento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Define
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2596023628086ce5e921eeb8499956828d4c8a5c
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 69177b035ee8e0c162a629873110df9f7ec7917f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497166"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889161"
 ---
 # <a name="define-element"></a>Definir el elemento
 Define un par de nombre y valor de símbolo. Este símbolo se puede evaluar mediante atributos condicionales. Para obtener más información, consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md). Vea también el [Symbols (elemento)](../extensibility/symbols-element.md).  
@@ -37,8 +34,8 @@ Define un par de nombre y valor de símbolo. Este símbolo se puede evaluar medi
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|name|Requerido. El nombre del símbolo:<br /><br /> nombre = "Mode"|  
-|value|Requerido. El valor del símbolo:<br /><br /> valor = "Estándar"|  
+|name|Obligatorio. El nombre del símbolo:<br /><br /> nombre = "Mode"|  
+|value|Obligatorio. El valor del símbolo:<br /><br /> valor = "Estándar"|  
 |Condición|Opcional. Para obtener más información, consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos secundarios  

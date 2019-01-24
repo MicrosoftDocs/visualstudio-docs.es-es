@@ -1,8 +1,7 @@
 ---
-title: Novedades de diseño en Visual Studio
+title: Novedades de diseño
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - what's new [VIsual Studio ALM], architecture and modeling
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26ea23c6091910a83ddec41194aa43ae93c9b9eb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bdea0b8e24347e608ad0e1736b55e34acb4e5854
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820779"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956028"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Novedades de diseño en Visual Studio
 
@@ -40,7 +39,7 @@ El **arquitectura** menú ahora contiene un comando para crear directamente un d
 
 Ahora verá el impacto de los cambios inmediatamente en los resultados del análisis para el código de la solución actual cada vez que guarde el diagrama. No tienes que esperar más para la finalización del comando "Validar dependencias".
 
-Para obtener más información, consulte [esta entrada de blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
+Para obtener más información, consulte [esta entrada de blog](https://blogs.msdn.microsoft.com/devops/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
 
 ## <a name="uml-designers-have-been-removed"></a>Se han quitado los diseñadores UML
 
@@ -61,7 +60,7 @@ Sin embargo, se admiten para visualizar la arquitectura de código .NET y C++ es
 
 Si es un usuario significativa de los diseñadores de UML, aún puede usar Visual Studio 2015 o versiones anteriores, mientras se decide por una herramienta alternativa para sus necesidades UML.
 
-Para obtener más información, consulte [esta entrada de blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
+Para obtener más información, consulte [esta entrada de blog](https://blogs.msdn.microsoft.com/devops/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

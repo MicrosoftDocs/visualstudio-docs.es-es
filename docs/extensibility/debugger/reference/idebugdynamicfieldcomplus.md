@@ -1,9 +1,6 @@
 ---
-title: IDebugDynamicFieldCOMPlus | Documentos de Microsoft
-ms.custom: ''
+title: IDebugDynamicFieldCOMPlus | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugDynamicFieldCOMPlus interface
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15773a1133721996f95f29c8ab035f18f401cbeb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 36e74c223428855468103dc3e2c7475a054c88c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106154"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895459"
 ---
 # <a name="idebugdynamicfieldcomplus"></a>IDebugDynamicFieldCOMPlus
 Representa un campo dinámico para un [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) objeto.  
@@ -40,6 +37,6 @@ IDebugDynamicFieldCOMPlus : IDebugDynamicField
 ## <a name="requirements"></a>Requisitos  
  Encabezado: Sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll

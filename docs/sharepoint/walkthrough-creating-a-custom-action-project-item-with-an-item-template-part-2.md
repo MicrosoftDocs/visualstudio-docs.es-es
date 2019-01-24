@@ -1,9 +1,6 @@
 ---
-title: 'Tutorial: Crear un elemento de proyecto acción personalizada con una plantilla de elementos, parte 2 | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Crear un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 2 | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
@@ -14,17 +11,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 19792a9804072e7c6ade836b408951e2cfadd070
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4305fd980252515f126df2c1b3848c0676cd2079
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910971"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913941"
 ---
-# <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Tutorial: Crear un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 2
+# <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Tutorial: Creación de un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 2
   Después de definir un tipo de elemento de proyecto de SharePoint personalizado y asociarla a una plantilla de elementos en Visual Studio, también puede proporcionar a un Asistente para la plantilla. Puede usar al Asistente para recopilar información de los usuarios cuando usan la plantilla para agregar una nueva instancia del elemento de proyecto a un proyecto. La información que recopile puede usarse para inicializar el elemento de proyecto.  
   
- En este tutorial, agregará un Asistente para el elemento de proyecto acción personalizada que se muestra en [Tutorial: crear un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Cuando un usuario agrega un elemento de proyecto acción personalizada para un proyecto de SharePoint, el asistente recopila información acerca de la acción personalizada (por ejemplo, su ubicación y la dirección URL de destino cuando un usuario final elige) y agrega esta información para el *Elements.xml* archivo en el nuevo elemento de proyecto.  
+ En este tutorial, agregará un Asistente para el elemento de proyecto acción personalizada que se muestra en [Tutorial: Creación de un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Cuando un usuario agrega un elemento de proyecto acción personalizada para un proyecto de SharePoint, el asistente recopila información acerca de la acción personalizada (por ejemplo, su ubicación y la dirección URL de destino cuando un usuario final elige) y agrega esta información para el *Elements.xml* archivo en el nuevo elemento de proyecto.  
   
  En este tutorial se muestran las siguientes tareas:  
   
@@ -40,7 +37,7 @@ ms.locfileid: "49910971"
 >  Puede descargar una muestra de [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) que muestra cómo crear actividades personalizadas para un flujo de trabajo.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
- Para llevar a cabo este tutorial, primero debe crear la solución CustomActionProjectItem completando [Tutorial: crear un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  
+ Para llevar a cabo este tutorial, primero debe crear la solución CustomActionProjectItem completando [Tutorial: Creación de un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  
   
  También necesitará los siguientes componentes en el equipo de desarrollo para completar este tutorial:  
   
@@ -50,12 +47,12 @@ ms.locfileid: "49910971"
   
   El conocimiento de los siguientes conceptos es útil, aunque no necesario, para completar el tutorial.  
   
-- Asistentes para plantillas de elementos y proyectos de Visual Studio. Para obtener más información, consulte [Cómo: usar asistentes con plantillas de proyecto](../extensibility/how-to-use-wizards-with-project-templates.md) y <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfaz.  
+- Asistentes para plantillas de elementos y proyectos de Visual Studio. Para obtener más información, vea [Cómo: Usar asistentes con plantillas de proyecto](../extensibility/how-to-use-wizards-with-project-templates.md) y <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfaz.  
   
 - Acciones personalizadas en SharePoint. Para obtener más información, consulte [acción personalizada](http://go.microsoft.com/fwlink/?LinkId=177800).  
   
 ## <a name="create-the-wizard-project"></a>Crear el proyecto de Asistente
- Para completar este tutorial, debe agregar un proyecto a la solución CustomActionProjectItem que creó en [Tutorial: crear un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Implementará la interfaz <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> y definirá la interfaz de usuario del asistente de este proyecto.  
+ Para completar este tutorial, debe agregar un proyecto a la solución CustomActionProjectItem que creó en [Tutorial: Creación de un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Implementará la interfaz <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> y definirá la interfaz de usuario del asistente de este proyecto.  
   
 #### <a name="to-create-the-wizard-project"></a>Para crear el proyecto de Asistente  
   
@@ -82,7 +79,7 @@ ms.locfileid: "49910971"
   
 2.  En el **Diseñador de proyectos**, asegúrese de que la plataforma de destino está establecida en .NET Framework 4.5.  
   
-     Para proyectos de Visual C#, puede establecer este valor en el **aplicación** ficha. Para proyectos de Visual Basic, puede establecer este valor en el **compilar** ficha. Para obtener más información, consulte [Cómo: Usar como destino una versión de .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+     Para proyectos de Visual C#, puede establecer este valor en el **aplicación** ficha. Para proyectos de Visual Basic, puede establecer este valor en el **compilar** ficha. Para obtener más información, vea [Cómo: usar una versión de .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
 3.  En el **ItemTemplateWizard** proyecto, agregue un **ventana (WPF)** elemento al proyecto y, a continuación, llame al elemento **WizardWindow**.  
   
@@ -306,7 +303,7 @@ ms.locfileid: "49910971"
   
 13. En el **descripción** , escriba **abre el sitio Web de SharePoint Developer Center**.  
   
-14. En el **URL** , escriba **http://msdn.microsoft.com/sharepoint/default.aspx**y, a continuación, elija el **finalizar** botón.  
+14. En el **URL** , escriba **https://docs.microsoft.com/sharepoint/dev/** y, a continuación, elija el **finalizar** botón.  
   
      Visual Studio agrega un elemento que se denomina **CustomAction1** a su proyecto y abre el *Elements.xml* archivo en el editor. Compruebe que *Elements.xml* contiene los valores que especificó en el asistente.  
   
@@ -327,7 +324,7 @@ ms.locfileid: "49910971"
   
      El **configuración de la lista** aparece la página.  
   
-4.  En el **comunicaciones** encabezado en la parte superior de la página, elija el **Centro para desarrolladores de SharePoint** vincular, compruebe que el explorador abre el sitio Web http://msdn.microsoft.com/sharepoint/default.aspxy, a continuación, cierre el explorador.  
+4.  En el **comunicaciones** encabezado en la parte superior de la página, elija el **Centro para desarrolladores de SharePoint** vincular, compruebe que el explorador abre el sitio Web https://docs.microsoft.com/sharepoint/dev/y, a continuación, cierre el explorador.  
   
 ## <a name="cleaning-up-the-development-computer"></a>Limpiar el equipo de desarrollo
  Después de probar el elemento de proyecto, quite la plantilla de elemento de proyecto de la instancia experimental de Visual Studio.  
@@ -345,10 +342,9 @@ ms.locfileid: "49910971"
 4.  Cierre ambas instancias de Visual Studio (la instancia experimental y la instancia de Visual Studio en el que está abierta la solución CustomActionProjectItem).  
   
 ## <a name="see-also"></a>Vea también
- [Tutorial: Crear un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
+ [Tutorial: Creación de un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [Definir tipos de elemento de proyecto de SharePoint personalizados](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Crear plantillas de elemento y plantillas de proyecto para los elementos de proyecto de SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Referencia de esquema de plantillas de Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)   
- [Cómo: usar asistentes con plantillas de proyecto](../extensibility/how-to-use-wizards-with-project-templates.md)   
+ [Cómo: Usar a asistentes con plantillas de proyecto](../extensibility/how-to-use-wizards-with-project-templates.md)   
  [Los identificadores y las ubicaciones predeterminadas de la acción personalizada](http://go.microsoft.com/fwlink/?LinkId=181964)  
-  

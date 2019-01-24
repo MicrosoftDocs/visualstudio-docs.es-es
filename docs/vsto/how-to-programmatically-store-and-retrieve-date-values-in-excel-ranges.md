@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: almacenar y recuperar valores de fecha en rangos de Excel mediante programación'
-ms.custom: ''
+title: Procedimiento Almacenar y recuperar valores de fecha en rangos de Excel mediante programación
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0f1abe0e797a65886f595913f8e6495ec084b7e2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a28a357aa6a01615d269c6fba41c690f41c7b93d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674851"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863909"
 ---
-# <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Cómo: almacenar y recuperar valores de fecha en rangos de Excel mediante programación
+# <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Procedimiento Almacenar y recuperar valores de fecha en rangos de Excel mediante programación
   Puede almacenar y recuperar los valores en un <xref:Microsoft.Office.Tools.Excel.NamedRange> control o un objeto nativo de rango de Excel.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -87,8 +84,6 @@ ms.locfileid: "35674851"
  [Trabajar con rangos](../vsto/working-with-ranges.md)   
  [Información general sobre el modelo de objetos de Excel](../vsto/excel-object-model-overview.md)   
  [NamedRange (control)](../vsto/namedrange-control.md)   
- [Cómo: hacer referencia mediante programación a los rangos de hoja de cálculo en el código](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
- [Cómo: agregar controles NamedRange a hojas de cálculo](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [Cómo: Mediante programación hacen referencia a rangos de hoja de cálculo en el código](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [Cómo: Agregar controles NamedRange a hojas de cálculo](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

@@ -1,20 +1,19 @@
 ---
-title: Implementación de una clase abstracta en Visual Studio
+title: Implementación de una clase abstracta
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6fc870e53e9323b8f76cfa39b2e6f961b04e973a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 551efd07e3e62764c71a6bc4e2a9683517139966
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825769"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840413"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Implementación de una clase abstracta en Visual Studio
 
@@ -24,11 +23,11 @@ Esta generación de código se aplica a:
 
 - Visual Basic
 
-**Qué:** Le permite generar inmediatamente el código necesario para implementar una clase abstracta.
+**Qué:** Permite generar inmediatamente el código necesario para implementar una clase abstracta.
 
-**Cuándo:** Desea heredar de una clase abstracta.
+**Cuándo:** Se quiere heredar de una clase abstracta.
 
-**Por qué:** Podría implementar manualmente todos los miembros abstractos uno por uno, sin embargo, esta característica generará automáticamente todas las firmas de método de manera automática.
+**Por qué:** Se podrían implementar manualmente todos los miembros abstractos uno por uno, pero esta característica generará todas las firmas de método de manera automática.
 
 ## <a name="how-to"></a>Procedimiento
 

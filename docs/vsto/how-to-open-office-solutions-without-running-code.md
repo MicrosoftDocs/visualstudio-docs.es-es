@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: soluciones de Office abiertos sin ejecutar código'
-ms.custom: ''
+title: Procedimiento Abrir soluciones de Office sin ejecutar código
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,19 +13,19 @@ helpviewer_keywords:
 - assemblies [Office development in Visual Studio], bypassing
 - Office documents [Office development in Visual Studio, opening without running code
 - documents [Office development in Visual Studio], opening without running code
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f7ced7b38a4f32d96b397e7f9eebb1d40be03ae3
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 59cee99ad603ec1a03f8beffd36b82d4b83ed308
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254993"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930116"
 ---
-# <a name="how-to-open-office-solutions-without-running-code"></a>Cómo: soluciones de Office abiertos sin ejecutar código
+# <a name="how-to-open-office-solutions-without-running-code"></a>Procedimiento Abrir soluciones de Office sin ejecutar código
   Una solución de Microsoft Office creada con las extensiones de código administrado se ejecuta incluso si la configuración de seguridad en la aplicación de Office del usuario final está establecida en High. Esto es porque la seguridad del código de ensamblado de .NET es administrado por Microsoft .NET Framework, no por Microsoft Office.  
   
  Sin embargo, hay veces cuando desea abrir un documento sin ejecutar el código. Por ejemplo, el código que se ejecuta cuando se abre el documento podría alterar el contenido, pero desea actualizar el aspecto del documento antes de los cambios de código. O desea enviar el documento con cierta información en ella a otra persona, y no desea que el código para ejecutar y posiblemente modificar su contenido.  
@@ -57,5 +54,3 @@ ms.locfileid: "35254993"
  [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)   
  [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)   
  [Manifiestos de aplicación e implementación de soluciones de Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)  
-  
-  

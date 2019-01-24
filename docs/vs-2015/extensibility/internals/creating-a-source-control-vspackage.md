@@ -16,12 +16,12 @@ ms.assetid: cca0a9ed-48ff-409f-8036-ed8db0f7533e
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d7d897e8aeaf140048695a14d552ae5c5ab200a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0e85c25f1a5d935d36466e922659b5c2021b4c71
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220030"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51779039"
 ---
 # <a name="creating-a-source-control-vspackage"></a>Creación de un VSPackage de control de código fuente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

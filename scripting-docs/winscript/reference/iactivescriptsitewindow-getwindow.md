@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteWindow::GetWindow | Documentos de Microsoft
+title: IActiveScriptSiteWindow::GetWindow | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3257ac5632a2f3d713b6329a9a1eeebc4415851
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 268a54ccdcbd70ed159758720db0735f16d81492
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724905"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349054"
 ---
 # <a name="iactivescriptsitewindowgetwindow"></a>IActiveScriptSiteWindow::GetWindow
-Recupera el identificador a una ventana que puede actuar como el propietario de una ventana emergente que debe mostrar el motor de scripting.  
+Recupera el identificador de una ventana que puede actuar como el propietario de una ventana emergente que se debe mostrar el motor de scripting.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetWindow(  
     HWND *phwnd  // address of variable for window handle  
 );  

@@ -1,9 +1,6 @@
 ---
 title: Controles de Windows Forms en información general sobre documentos de Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -30,17 +27,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 51c671a583e4e96b51ae6627de1fce738696fe22
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 48778074587e5cf6e4a51ff2386a437e9c3922d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892786"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902498"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Controles de Windows Forms en información general sobre documentos de Office
   Los controles de Windows Forms son objetos con los que pueden interactuar los usuarios para escribir o manipular datos. En los proyectos de nivel de documento para Microsoft Office Excel y Microsoft Office Word, puede agregar controles de formularios Windows Forms al documento o libro del proyecto en tiempo de diseño, o puede agregar estos controles mediante programación en tiempo de ejecución. Puede agregar estos controles mediante programación a cualquier documento o libro abierto en tiempo de ejecución en un complemento VSTO para Excel o Word.  
   
- Para obtener más información, consulte [Cómo: agregar Windows Forms controles a documentos de Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
+ Para obtener más información, vea [Cómo: Agregar controles de formularios Windows Forms a documentos de Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
@@ -121,7 +118,7 @@ ms.locfileid: "49892786"
  En ciertas condiciones, el código no se carga y solo se muestra el mapa de bits, por ejemplo, cuando el usuario abre el libro en modo de diseño. Además, si el usuario abre el libro en un equipo que no tenga [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] instalado, no se puede ejecutar la personalización para cargar los controles y, por tanto, solo está visible el mapa de bits del control. Siempre debe quitar la información personal de los controles en los libros antes de guardar el libro y enviarlo a otro usuario para asegurarse de que su información personal no se revele accidentalmente.  
   
 ### <a name="match-control-size-to-cell-size-on-an-excel-worksheet"></a>Ajustar el tamaño del control al tamaño de la celda en una hoja de cálculo de Excel  
- Puede establecer el control para cambiar de tamaño automáticamente cuando se cambia el tamaño de la celda principal. Para obtener más información, consulte [Cómo: cambiar el tamaño de los controles dentro de las celdas de la hoja de cálculo](../vsto/how-to-resize-controls-within-worksheet-cells.md).  
+ Puede establecer el control para cambiar de tamaño automáticamente cuando se cambia el tamaño de la celda principal. Para obtener más información, vea [Cómo: Cambiar el tamaño de los controles dentro de las celdas de la hoja de cálculo](../vsto/how-to-resize-controls-within-worksheet-cells.md).  
   
 ### <a name="add-components-that-are-shared-by-all-worksheets"></a>Agregar componentes compartidos por todas las hojas de cálculo  
  Puede agregar componentes que desee compartir entre todas las hojas de cálculo, como un <xref:System.Data.DataSet>, al diseñador del libro en lugar de a las hojas de cálculo. El componente aparecerá en la bandeja de componentes.  
@@ -155,9 +152,9 @@ ms.locfileid: "49892786"
  [Información general sobre el panel de acciones](../vsto/actions-pane-overview.md)   
  [Controles de formularios Windows Forms](/dotnet/framework/winforms/controls/index)   
  [Limitaciones de los controles de Windows Forms en documentos de Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)   
- [Cómo: agregar controles de formularios Windows Forms a documentos de Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Cómo: cambiar el tamaño de los controles dentro de las celdas de la hoja de cálculo](../vsto/how-to-resize-controls-within-worksheet-cells.md)   
- [Cómo: ocultar controles en hojas de cálculo al imprimir](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
+ [Cómo: Agregar controles de formularios Windows Forms a documentos de Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Cómo: Cambiar el tamaño de los controles dentro de las celdas de la hoja de cálculo](../vsto/how-to-resize-controls-within-worksheet-cells.md)   
+ [Cómo: Ocultar controles en hojas de cálculo al imprimir](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
  [Tutorial: Cambiar el formato de hoja de cálculo utilizando controles CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)   
  [Tutorial: Cambiar el formato de un documento utilizando controles CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)   
  [Tutorial: Mostrar texto en un cuadro de texto en una hoja de cálculo utilizando un botón](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)   
@@ -165,5 +162,3 @@ ms.locfileid: "49892786"
  [Limitaciones de los controles de Windows Forms en documentos de Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)   
  [Tutorial: Actualizar un gráfico en un documento utilizando botones de radio](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)   
  [Tutorial: Actualizar un gráfico en una hoja de cálculo utilizando botones de radio](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  
-  
-  

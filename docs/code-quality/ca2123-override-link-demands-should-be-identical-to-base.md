@@ -1,8 +1,7 @@
 ---
-title: 'CA2123: Las peticiones de vínculos de reemplazo deberían ser idénticas a la base'
+title: 'CA2123: Las peticiones de vínculos de invalidaciones deben ser idénticas a la base'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2123
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebb37743f9259390aba400a5d89d24b5f41a0d49
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 50ca27f9c6cf15c663514588a0c08bd5b91e3bd0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546985"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882096"
 ---
-# <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123: Las peticiones de vínculos de reemplazo deberían ser idénticas a la base
+# <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123: Las peticiones de vínculos de invalidaciones deben ser idénticas a la base
 
 |||
 |-|-|

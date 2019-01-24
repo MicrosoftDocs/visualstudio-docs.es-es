@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: crear un receptor de eventos para una instancia de la lista específica | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Crear un receptor de eventos para una instancia de la lista específica | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 950eeec82d7b7c49f0bbd76b13114f80f023a6dd
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: a92b86d7e02487ff333fb8517086f9c6221d35ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119507"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818867"
 ---
-# <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Cómo: crear un receptor de eventos para una instancia de la lista específica
+# <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Procedimiento Crear un receptor de eventos para una instancia de la lista específica
   Un receptor de eventos de la instancia de lista responde a los eventos que ocurren en cualquier instancia de una definición de lista. Aunque la plantilla de receptor de eventos no se permite el establecimiento de destinos de una instancia de la lista específica, puede modificar un receptor de eventos que se limita a una definición de lista para responder a eventos en una instancia de la lista específica.  
   
  Para tener como destino una instancia de lista específica en el *Elements.xml* para el receptor de eventos, reemplace `ListTemplateId` con `ListUrl` y agregue la dirección URL de la instancia de lista.  
@@ -89,6 +86,5 @@ ms.locfileid: "37119507"
      Tenga en cuenta que el receptor de eventos no se desencadena en el nuevo anuncio porque el receptor está configurado para responder sólo a eventos en la instancia de la lista de anuncio personalizado, **TestAnnouncements**.  
   
 ## <a name="see-also"></a>Vea también
- [Cómo: crear un receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)   
+ [Cómo: Crear un receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)   
  [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

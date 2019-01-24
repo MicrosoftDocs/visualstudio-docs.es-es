@@ -1,8 +1,6 @@
 ---
 title: Vincular tarea | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.ForceFileOutput
@@ -32,12 +30,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c06e9a92eb6b6df82e4f45790b877286e6c52725
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 1d21e6cc4c3701716c72ad3e62dc75e2df383da0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081714"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857045"
 ---
 # <a name="link-task"></a>Vincular tarea
 Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta del enlazador vincula bibliotecas y archivos de objeto de formato de archivo de objeto común (COFF) para crear un archivo ejecutable (*.exe*) o una biblioteca de vínculos dinámicos (DLL). Para obtener más información, vea [Opciones del enlazador](/cpp/build/reference/linker-options).  
@@ -67,7 +65,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
   
      Especifica los atributos que se colocarán en la sección `dependency` del archivo de manifiesto.  
   
-     Para obtener más información, vea [/MANIFESTDEPENDENCY (Especificar las dependencias del manifiesto)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Vea también [Publisher configuration files](https://docs.microsoft.com/en-us/windows/desktop/SbsCs/publisher-configuration-files) (Archivos de configuración del publicador).  
+     Para obtener más información, vea [/MANIFESTDEPENDENCY (Especificar las dependencias del manifiesto)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Vea también [Publisher configuration files](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files) (Archivos de configuración del publicador).  
   
 -   **AdditionalOptions**  
   
@@ -187,7 +185,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
   
      Especifica si el enlazador aplicará **SuppressUnmanagedCodeSecurityAttribute** a las llamadas P/Invoke generadas por enlazador a partir de código administrado en archivos DLL nativos.  
   
-    Para obtener más información, consulte [/CLRUNMANAGEDCODECHECK (Agregar SupressUnmanagedCodeSecurityAttribute)](/cpp/build/reference/clrunmanagedcodecheck-add-supressunmanagedcodesecurityattribute).  
+    Para obtener más información, vea [/CLRUNMANAGEDCODECHECK (quite SuppressUnmanagedCodeSecurityAttribute)](/cpp/build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute).  
   
 -   **CreateHotpatchableImage**  
   
@@ -779,7 +777,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
   
      Parámetro **Boolean** opcional.  
   
-     Si `true`, indica a la función de aplicación auxiliar de carga retrasada que admita la descarga explícita del archivo DLL.  
+     Si `true`, indica a la función del asistente de carga retrasada que admita la descarga explícita del archivo DLL.  
   
      Para obtener más información, vea el argumento `UNLOAD` de [/DELAY (Configuración de las importaciones de carga retrasada)](/cpp/build/reference/delay-delay-load-import-settings).  
   

@@ -16,12 +16,12 @@ ms.assetid: 73966e8a-b643-43e0-9b4e-0aa4b402ebbe
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c1fa7557577f62f5f5daf9f37ad0172e81dc972c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 31f9682997ba967e3c752854c5fa0c88e7339173
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865126"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769505"
 ---
 # <a name="idebugtypefieldbuildercreatepointertotype"></a>IDebugTypeFieldBuilder::CreatePointerToType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

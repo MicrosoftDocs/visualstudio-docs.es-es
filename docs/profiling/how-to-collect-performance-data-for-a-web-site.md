@@ -1,8 +1,6 @@
 ---
-title: Recopilación de datos de rendimiento de un sitio web | Microsoft Docs
-ms.custom: ''
+title: Procedimiento para recopilar datos de rendimiento de un sitio web | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vsperf.url.url
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfe90b47086232650a38581bb2a8af1b534b8063
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5e50855061a69a8d3b5fd6aa068b0f8c1385173e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835993"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864156"
 ---
-# <a name="how-to-collect-performance-data-for-a-web-site"></a>Recopilación de datos de rendimiento de un sitio web
+# <a name="how-to-collect-performance-data-for-a-web-site"></a>Procedimiento para recopilar datos de rendimiento de un sitio web
 
 Puede usar el **Asistente de rendimiento** para recopilar datos de rendimiento de una aplicación web de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Puede generar perfiles de una aplicación web que esté abierta en Visual Studio o de un sitio web de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] que se encuentre en el equipo local y que no esté abierto en el IDE de Visual Studio.
 
@@ -79,11 +77,11 @@ Puede usar el **Asistente de rendimiento** para recopilar datos de rendimiento d
 
 5. En el cuadro **¿Qué dirección URL o ruta de acceso ejecutará la aplicación web?** de la tercera página del asistente, escriba la dirección URL a la página de inicio de la aplicación y haga clic en **Siguiente**.
 
-   - Para un sitio web basado en un servidor (IIS), escriba una dirección URL como **<http://localhost/MySite/default.aspx>**. Esto hace que se genere un perfil de la aplicación de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ubicada en la raíz de la aplicación de Mi sitio del equipo local y que el default.aspx de la página en ese sitio se inicie en Internet Explorer para iniciar la sesión.
+   - Para un sitio web basado en un servidor (IIS), escriba una dirección URL como **<`http://localhost/MySite/default.aspx`>**. Esto hace que se genere un perfil de la aplicación de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ubicada en la raíz de la aplicación de Mi sitio del equipo local y que el default.aspx de la página en ese sitio se inicie en Internet Explorer para iniciar la sesión.
 
-   - Para un sitio web basado en un archivo, escriba una ruta de acceso como ///**c:\WebSites\MySite\default.aspx**. Esto hace que se genere un perfil de la aplicación de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ubicada en c:\webSites\MySite y que la página http://localhost:nnnn/MySite/default.aspx se inicie en Internet Explorer para iniciar la sesión.
+   - Para un sitio web basado en un archivo, escriba una ruta de acceso como ///**c:\WebSites\MySite\default.aspx**. Esto hace que se genere un perfil de la aplicación de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ubicada en c:\webSites\MySite y que la página `http://localhost:nnnn/MySite/default.aspx` se inicie en Internet Explorer para iniciar la sesión.
 
-   - Para los sitios externos en los que quiera recopilar datos de JavaScript, escriba la dirección URL (por ejemplo, http://www.contoso.com).
+   - Para los sitios externos en los que quiera recopilar datos de JavaScript, escriba la dirección URL (por ejemplo, `http://www.contoso.com`).
 
      Para obtener más información, consulte las páginas de propiedades de un binario de destino de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] .
 

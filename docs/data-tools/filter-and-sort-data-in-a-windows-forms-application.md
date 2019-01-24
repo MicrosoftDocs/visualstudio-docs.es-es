@@ -18,23 +18,23 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 21ebae03dd2ba58a751a839f5e3151654faa39e0
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: MT
+ms.openlocfilehash: 6da584d4966d61a873ca43477930084c4f9a464b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757600"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890016"
 ---
 # <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Filtrar y ordenar los datos en una aplicación Windows Forms
+
 Los datos se filtran estableciendo la propiedad <xref:System.Windows.Forms.BindingSource.Filter%2A> en una expresión de cadena que devuelve los registros deseados.
 
- Ordenar datos estableciendo el <xref:System.Windows.Forms.BindingSource.Sort%2A> propiedad en el nombre de columna en el que desea ordenar; anexe `DESC` ordenar en orden descendente o anexar `ASC` para ordenar en orden ascendente.
+Ordenar datos estableciendo el <xref:System.Windows.Forms.BindingSource.Sort%2A> propiedad en el nombre de columna en el que desea ordenar; anexe `DESC` ordenar en orden descendente o anexar `ASC` para ordenar en orden ascendente.
 
 > [!NOTE]
->  Si la aplicación no usa <xref:System.Windows.Forms.BindingSource> componentes, puede filtrar y ordenar los datos mediante el uso de <xref:System.Data.DataView> objetos. Para obtener más información, consulte [DataViews](/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews).
+> Si la aplicación no usa <xref:System.Windows.Forms.BindingSource> componentes, puede filtrar y ordenar los datos mediante el uso de <xref:System.Data.DataView> objetos. Para obtener más información, consulte [DataViews](/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews).
 
 ## <a name="to-filter-data-by-using-a-bindingsource-component"></a>Para filtrar los datos mediante el uso de un componente BindingSource
 

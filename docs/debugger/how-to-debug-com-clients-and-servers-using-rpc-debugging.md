@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: depurar clientes y servidores mediante la depuración RPC COM | Documentos de Microsoft'
-ms.custom: ''
+title: Depurar clientes y servidores mediante la depuración RPC COM | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
@@ -27,25 +26,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1404d81502aaa0579c20511f3eecafa86607df0d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 42ac7749052fdec3ef9f6cb318af4dc0302e1465
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473743"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269271"
 ---
-# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Cómo: Depurar clientes y servidores COM mediante la depuración RPC
+# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Procedimiento Depurar clientes y servidores COM mediante la depuración RPC
 Puede utilizar la depuración RPC (llamada a procedimiento remoto) para depurar aplicaciones COM cliente-servidor. Debe habilitar la depuración RPC para poder utilizarla. Con la depuración RPC habilitada, cuando entra en la llamada al servidor desde el cliente, el depurador se adjunta al servidor y le permite depurar el código. Una vez asociado el depurador, podrá utilizar todas sus características con los procesos del servidor y del cliente.  
   
 ### <a name="to-enable-rpc-debugging"></a>Para habilitar la depuración RPC  
   
 1.  En el menú **Herramientas** , haga clic en **Opciones**.  
   
-2.  En el **opciones** cuadro de diálogo, haga clic en el **depuración** carpeta.  
+2.  En el cuadro de diálogo **Opciones**, haga clic en la carpeta **Depuración**.  
   
-3.  Haga clic en el **nativo** página.  
+3.  Haga clic en la página **Nativo**.  
   
-4.  Seleccione el **depuración RPC** casilla de verificación.  
+4.  Active la casilla **Depuración RPC**.  
   
     > [!NOTE]
     >  Para depurar las llamadas RPC, debe tener privilegios de Administrador o Usuario avanzado.  
@@ -55,4 +54,5 @@ Puede utilizar la depuración RPC (llamada a procedimiento remoto) para depurar 
   
 ## <a name="see-also"></a>Vea también  
  [Depuración de servidores y contenedores COM](../debugger/com-server-and-container-debugging.md)  
- [Depurar en Visual Studio](../debugger/index.md) [paseo por las características del depurador](../debugger/debugger-feature-tour.md)
+ [Depurar en Visual Studio](../debugger/index.md)  
+ [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)

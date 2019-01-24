@@ -1,13 +1,8 @@
 ---
-title: 'Cómo: agregar un parámetro a un método | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Agregar un parámetro a un método | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 196ac37cc9bc4f53cfa886b92c62c7a301c3451a
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 5f7d0e0ab164bf30c341ca093908be3661452d19
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756316"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866262"
 ---
-# <a name="how-to-add-a-parameter-to-a-method"></a>Cómo: agregar un parámetro a un método
+# <a name="how-to-add-a-parameter-to-a-method"></a>Procedimiento Agregar un parámetro a un método
   Usar un parámetro para pasar información al método o para devolver información de un método. Todos los métodos deben tener al menos un parámetro. Para obtener más información sobre cómo diseñar un parámetro para admitir el tipo de método que se va a crear, ver [diseñar un modelo de conectividad de datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
  Cuando se agrega un parámetro a un método, Visual Studio agrega el elemento de parámetro para el XML del archivo del modelo en el proyecto. Para obtener más información acerca de los atributos de un elemento de parámetro, vea [parámetro](http://go.microsoft.com/fwlink/?LinkId=169284).  
@@ -56,12 +51,11 @@ ms.locfileid: "36756316"
   
      Para obtener más información acerca de la dirección que elegir para el método de tipo que está creando, consulte [diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-8.  Modificar el descriptor de tipo del parámetro. Para obtener más información, consulte [Cómo: definir el descriptor de tipo de un parámetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
+8.  Modificar el descriptor de tipo del parámetro. Para obtener más información, vea [Cómo: Definir el descriptor de tipo de un parámetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
 ## <a name="see-also"></a>Vea también
  [Introducción a las herramientas de diseño de modelo BDC](../sharepoint/bdc-model-design-tools-overview.md)   
- [Cómo: agregar una entidad a un modelo](../sharepoint/how-to-add-an-entity-to-a-model.md)   
- [Cómo: definir el descriptor de tipo de un parámetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
- [Cómo: definir una instancia de método](../sharepoint/how-to-define-a-method-instance.md)   
+ [Cómo: Agregar una entidad a un modelo](../sharepoint/how-to-add-an-entity-to-a-model.md)   
+ [Cómo: Definir el descriptor de tipo de un parámetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
+ [Cómo: Definir una instancia de método](../sharepoint/how-to-define-a-method-instance.md)   
  [Diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  

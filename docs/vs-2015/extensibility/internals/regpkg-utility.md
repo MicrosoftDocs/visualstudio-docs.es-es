@@ -16,12 +16,12 @@ ms.assetid: 1683ee18-59d1-4bab-a674-dd00dd960de3
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b046bd72e6fa44eda5d40faea52bd6e5e294528e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: da637b365eec260a7c1c34bbe7ba96c785cc18fc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255052"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781288"
 ---
 # <a name="regpkg-utility"></a>Utilidad RegPkg
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

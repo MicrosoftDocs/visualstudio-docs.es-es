@@ -1,9 +1,7 @@
 ---
 title: ProjectItem (elemento) (plantillas de elemento de Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
@@ -16,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae7b54e6311a58d93c5cc11cfc073c4032df32dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a27c297dd9b33bbbe02b7addb827323505a7156d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855994"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956067"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem (elemento) (plantillas de elemento de Visual Studio)
 Especifica un archivo que se incluye en la plantilla de elemento.  
@@ -82,7 +80,7 @@ Especifica un archivo que se incluye en la plantilla de elemento.
 <ProjectItem TargetFileName="$fileinputname$.vb">MyFile.vb</ProjectItem>  
 ```  
   
- Cuando se crea un elemento de esta plantilla, el nombre de archivo se basará en el nombre del usuario especificado en el **Agregar nuevo elemento** cuadro de diálogo. Esto es útil al crear plantillas de elementos de varios archivos. Para obtener más información, consulte [Cómo: crear plantillas de elementos de varios archivos](../ide/how-to-create-multi-file-item-templates.md) y [parámetros de plantilla](../ide/template-parameters.md).  
+ Cuando se crea un elemento de esta plantilla, el nombre de archivo se basará en el nombre del usuario especificado en el **Agregar nuevo elemento** cuadro de diálogo. Esto es útil al crear plantillas de elementos de varios archivos. Para obtener más información, vea [Cómo: Creación de plantillas de elementos de varios archivos](../ide/how-to-create-multi-file-item-templates.md) y [parámetros de plantilla](../ide/template-parameters.md).  
   
 ## <a name="example"></a>Ejemplo  
  El ejemplo siguiente muestra los metadatos de la plantilla de elemento estándar para un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] clase.  
@@ -106,5 +104,5 @@ Especifica un archivo que se incluye en la plantilla de elemento.
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)   
- [Cómo: crear plantillas de elementos de varios archivos](../ide/how-to-create-multi-file-item-templates.md)   
+ [Cómo: Creación de plantillas de elementos de varios archivos](../ide/how-to-create-multi-file-item-templates.md)   
  [Parámetros de plantilla](../ide/template-parameters.md)

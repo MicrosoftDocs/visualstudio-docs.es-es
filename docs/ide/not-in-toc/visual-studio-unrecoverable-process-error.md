@@ -9,15 +9,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ebd530b9db139cb232f735f7d6401199cab2f6fd
-ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
+ms.openlocfilehash: c235a55cbb5648eec0c2e1ee0632b56b1ea537ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "36325707"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860967"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Error irrecuperable del proceso de Visual Studio
 

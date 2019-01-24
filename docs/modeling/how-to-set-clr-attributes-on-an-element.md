@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Establecer atributos de CLR en un elemento'
+title: Procedimiento Establecer atributos de CLR en un elemento
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,30 +12,29 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: ceca2556e269d554d40e025e5edcb91753149622
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5b9a96f70febc6a33d80557a09cc8bc8e1adf2f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948917"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938087"
 ---
-# <a name="how-to-set-clr-attributes-on-an-element"></a>Cómo: Establecer atributos de CLR en un elemento
-Atributos personalizados son atributos especiales que se pueden agregar a los diagramas, formas, conectores y elementos de dominio. Puede agregar cualquier atributo que hereda de la `System.Attribute` clase.
+# <a name="how-to-set-clr-attributes-on-an-element"></a>Procedimiento Establecer atributos de CLR en un elemento
+Los atributos personalizados son atributos especiales que se pueden agregar a diagramas, formas, conectores y elementos de dominio. Puede agregar cualquier atributo que hereda de la `System.Attribute` clase.
 
 ### <a name="to-add-a-custom-attribute"></a>Para agregar un atributo personalizado
 
-1.  En el **DSL explorador**, seleccione el elemento al que desea agregar un atributo personalizado.
+1.  En el **DSL Explorer**, seleccione el elemento al que desea agregar un atributo personalizado.
 
-2.  En el **propiedades** ventana, junto a la **atributos personalizados** propiedad, haga clic en el botón Examinar (**...** ) icono.
+2.  En el **propiedades** ventana, junto a la **atributos personalizados** propiedad, haga clic en el (**...** ) icono.
 
      El **editar atributos** abre el cuadro de diálogo.
 
 3.  En el **nombre** columna, haga clic en  **\<Agregar atributo >** y escriba el nombre del atributo. Presione ENTRAR.
 
-4.  La línea en el nombre del atributo muestra entre paréntesis. En esta línea, escriba un tipo de parámetro para el atributo (por ejemplo, `string`), y, a continuación, presione ENTRAR.
+4.  La línea bajo el nombre del atributo muestra entre paréntesis. En esta línea, escriba un tipo de parámetro para el atributo (por ejemplo, `string`), y, a continuación, presione ENTRAR.
 
-5.  En el **propiedad Name** columna, escriba un nombre adecuado, por ejemplo, `MyString`.
+5.  En el **nombre de propiedad** columna, escriba un nombre adecuado, por ejemplo, `MyString`.
 
 6.  Haga clic en **Aceptar**.
 
@@ -45,4 +44,4 @@ Atributos personalizados son atributos especiales que se pueden agregar a los di
 
 ## <a name="see-also"></a>Vea también
 
-- [Glosario de herramientas de lenguaje específico de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glosario de las herramientas de lenguajes específicos de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

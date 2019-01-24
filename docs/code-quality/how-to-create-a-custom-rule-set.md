@@ -1,24 +1,23 @@
 ---
-title: Crear una regla de análisis de código personalizado en Visual Studio
-ms.date: 04/04/2018
+title: Crear un conjunto de reglas de análisis de código personalizado
+ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
 helpviewer_keywords:
-- Development Edition, rule sets
+- rule sets
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dce43c02f4976b51bab61a48f615fb0307102fc7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f2a0b2de9450fc2e9350371b08f4a3a9bf8d9c1b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884191"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929929"
 ---
 # <a name="customize-a-rule-set"></a>Personalizar un conjunto de reglas
 
@@ -70,6 +69,44 @@ También puede crear un nuevo archivo de conjunto de reglas desde el **nuevo arc
 
 6. Seleccione **abrir** para abrir la nueva regla se establece en el editor de conjunto de reglas.
 
+### <a name="rule-precedence"></a>Prioridad de la regla
+
+- Si la misma regla está activa de dos o más veces en un conjunto de reglas con diferentes niveles de gravedad, el compilador genera un error. Por ejemplo:
+
+   ```xml
+   <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
+     <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+       <Rule Id="CA1021" Action="Warning" />
+       <Rule Id="CA1021" Action="Error" />
+     </Rules>
+   </RuleSet>
+   ```
+
+- Si la misma regla está activa de dos o más veces en un conjunto de reglas con el *mismo* gravedad, es posible que vea la advertencia siguiente en el **lista de errores**:
+
+   **CA0063: No se pudo cargar el archivo de conjunto de reglas '\[su] .ruleset ' o uno de sus reglas dependientes conjunto de archivos. El archivo no se ajusta al esquema del conjunto de reglas.**
+
+- Si el conjunto de reglas incluye un conjunto mediante el uso de reglas secundarios una **Include** etiqueta y los conjuntos de reglas secundarios y primarios tanto la lista de la misma regla pero con diferentes niveles de gravedad, a continuación, la gravedad en el conjunto de reglas primario tiene prioridad. Por ejemplo:
+
+   ```xml
+   <!-- Parent rule set -->
+   <?xml version="1.0" encoding="utf-8"?>
+   <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
+     <Include Path="classlibrary_child.ruleset" Action="Default" />
+     <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+       <Rule Id="CA1021" Action="Warning" /> <!-- Overrides CA1021 severity from child rule set -->
+     </Rules>
+   </RuleSet>
+
+   <!-- Child rule set -->
+   <?xml version="1.0" encoding="utf-8"?>
+   <RuleSet Name="Rules from child" Description="Code analysis rules from child." ToolsVersion="15.0">
+     <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+       <Rule Id="CA1021" Action="Error" />
+     </Rules>
+   </RuleSet>
+   ```
+
 ## <a name="name-and-description"></a>Nombre y descripción
 
 Para cambiar el nombre para mostrar de un conjunto de reglas que está abierto en el editor, abra el **propiedades** ventana seleccionando **vista** > **ventana propiedades** en la barra de menús. Escriba el nombre para mostrar en el **nombre** cuadro. También puede escribir una descripción para el conjunto de reglas.
@@ -83,5 +120,5 @@ Ahora que ha configurado una regla, el paso siguiente es personalizar las reglas
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Configurar el análisis de código para un proyecto de código administrado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
+- [Cómo: Configurar análisis de código para un proyecto de código administrado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [Referencia del conjunto de reglas Análisis de código](../code-quality/rule-set-reference.md)

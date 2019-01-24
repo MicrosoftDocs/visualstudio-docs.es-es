@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: especificar información de código adicional mediante _Analysis_assume'
+title: Procedimiento Especificar información de código adicional mediante _Analysis_assume
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - _Analysis_assume
@@ -14,21 +13,21 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ce8102bbc790019490c4dc2a2ccbfab7d8c33981
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 17e25ace1da6cad9fcdc129b6c6f517c39c9c103
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031532"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845086"
 ---
-# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Cómo: especificar información de código adicional mediante _Analysis_assume
-Puede proporcionar sugerencias a la herramienta de análisis de código para el código de C o C++ que le ayudarán el proceso de análisis y reducir las advertencias. Para proporcionar información adicional, utilice la siguiente función:
+# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Procedimiento Especificar información de código adicional mediante _Analysis_assume
+Puede proporcionar sugerencias a la herramienta de análisis de código para código de C o C++ que ayudan al proceso de análisis y reducir las advertencias. Para proporcionar información adicional, utilice la siguiente función:
 
  `_Analysis_assume(`  `expr`  `)`
 
  `expr` -cualquier expresión que se supone que se evalúe como true.
 
- La herramienta de análisis de código se supone que la condición representada por la expresión es verdadera en el punto donde aparece la función y siga siendo verdadera hasta que la expresión se modifica, por ejemplo, mediante la asignación a una variable.
+ La herramienta de análisis de código se da por supuesto que la condición representada por la expresión es verdadera en el punto donde aparece la función y siga siendo verdadera hasta que la expresión se modifica, por ejemplo, mediante la asignación a una variable.
 
 > [!NOTE]
 >  `_Analysis_assume` no afecta a la optimización de código. Fuera de la herramienta de análisis de código, `_Analysis_assume` se define como una operación inefectiva.

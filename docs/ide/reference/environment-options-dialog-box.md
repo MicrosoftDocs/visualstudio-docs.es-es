@@ -2,7 +2,6 @@
 title: Opciones de entorno (Cuadro de diálogo)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.OptionsDialog.Environment
@@ -13,19 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45a7cef09937181fbf6c721b8c8eca73b6351742
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e120260559f60f0433770369b36e523e0fcd4cff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930549"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937353"
 ---
 # <a name="environment-options-dialog-box"></a>Opciones de entorno (Cuadro de diálogo)
+
 Puede usar las páginas de la carpeta **Entorno** en el cuadro de diálogo **Opciones** para establecer cómo ciertos elementos del entorno de desarrollo integrado (IDE) se muestran y se comportan. Para acceder a las páginas de Entorno, en la barra de menús, seleccione **Herramientas**, **Opciones** y, después, seleccione **Entorno**.
-
-> [!NOTE]
-> Los cuadros de diálogo y comandos de menú que aparecen en el equipo pueden diferir de los descritos en la Ayuda, en función de los valores de configuración activos y de la edición de Visual Studio que está utilizando. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
 
 |Para buscar información sobre|Vea|
 | - |---------|
@@ -41,10 +37,10 @@ Puede usar las páginas de la carpeta **Entorno** en el cuadro de diálogo **Opc
 |Para especificar si las notificaciones están habilitadas.|[Notificaciones, Entorno, Opciones (cuadro de diálogo)](../../ide/reference/notifications-environment-options-dialog-box.md)|
 |Para especificar las opciones de la ventana de inicio rápido.|[Inicio rápido, Entorno, Opciones (cuadro de diálogo)](../../ide/reference/quick-launch-environment-options-dialog-box.md)|
 |Para especificar las opciones de la página de inicio.|[Inicio, Entorno, Cuadro de diálogo Opciones](../../ide/reference/startup-environment-options-dialog-box.md)|
-|Para especificar si desea cambiar la configuración de los equipos.|[Configuración sincronizada, Entorno, Opciones (cuadro de diálogo)](../../ide/reference/synchronized-settings-environment-options-dialog-box.md)|
+|Para especificar si desea cambiar la configuración de los equipos.|[Configuración sincronizada, Entorno, Opciones (cuadro de diálogo)](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |Obtener información sobre cómo establecer opciones para tareas y listas de tareas|[Lista de tareas, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |Cambiar las páginas Principal y de búsqueda predeterminadas, cambiar el editor de código fuente del sistema y configurar opciones de Internet Explorer.|[Explorador web, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/web-browser-environment-options-dialog-box.md)|
 
 ## <a name="see-also"></a>Vea también
 
-- [Opciones (cuadro de diálogo)](../../ide/reference/options-dialog-box-visual-studio.md)
+- [Cuadro de diálogo Opciones](../../ide/reference/options-dialog-box-visual-studio.md)

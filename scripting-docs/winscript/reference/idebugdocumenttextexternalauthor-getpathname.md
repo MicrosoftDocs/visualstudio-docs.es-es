@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextExternalAuthor::GetPathName | Documentos de Microsoft
+title: IDebugDocumentTextExternalAuthor::GetPathName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 93e5c27422d6b348d8c961d1555bfce07183e9e4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e17d27a320eac95445c083c718f5abcebbbc46cf
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727745"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088847"
 ---
 # <a name="idebugdocumenttextexternalauthorgetpathname"></a>IDebugDocumentTextExternalAuthor::GetPathName
 Devuelve la ruta de acceso y el nombre completo del documento.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetPathName(  
    BSTR*  pbstrLongName,  
    BOOL*  pfIsOriginalFile  
@@ -39,10 +39,10 @@ HRESULT GetPathName(
   
 #### <a name="parameters"></a>Parámetros  
  `pbstrLongName`  
- [out] Cadena que contiene el nombre completo de ruta de acceso y el archivo.  
+ [out] Cadena que contiene la ruta de acceso y el nombre completo.  
   
  `pfIsOriginalFile`  
- [out] Un valor booleano que indica si la ruta de acceso y nombre de archivo hacen referencia al documento original.  
+ [out] Valor booleano que indica si el nombre de ruta de acceso y hacer referencia al documento original.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -50,12 +50,12 @@ HRESULT GetPathName(
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
-|`E_FAIL`|El archivo de origen no se puede crear o determinado.|  
+|`E_FAIL`|El archivo de origen no puede ser creado o determinado.|  
   
 ## <a name="remarks"></a>Comentarios  
  Este método devuelve la ruta de acceso y el nombre completo del documento.  
   
- Si `pfIsOriginalFile` es FALSE, la ruta de acceso y nombre de archivo en `pbstrLongName` hacen referencia a un archivo temporal recién creado.  
+ Si `pfIsOriginalFile` es FALSE, la ruta de acceso y nombre en `pbstrLongName` hacen referencia a un archivo temporal recién creado.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugDocumentTextExternalAuthor (Interfaz)](../../winscript/reference/idebugdocumenttextexternalauthor-interface.md)

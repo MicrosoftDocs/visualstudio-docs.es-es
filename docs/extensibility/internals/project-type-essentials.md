@@ -1,9 +1,6 @@
 ---
 title: Conceptos básicos del tipo de proyecto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types [Visual Studio SDK]
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7daf114bb31019a499bc17e287df923107ee1a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 630557cbc4bd9720337bf8e5f2988ffcf3d7c6eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891575"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952782"
 ---
 # <a name="project-type-essentials"></a>Conceptos básicos del tipo de proyecto
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] incluye varios tipos de proyectos para idiomas como [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] o [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] También le permite crear sus propios tipos de proyecto.  
@@ -55,7 +52,7 @@ ms.locfileid: "49891575"
   
 - Tipos de proyecto son objetos en un VSPackage que implementan el conjunto de interfaces [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] espera. Si está utilizando C# para desarrollar un tipo de proyecto, las clases del proyecto de Managed Package Framework implementan las interfaces necesarias para usted y le permiten heredar esa implementación. Para obtener más información, consulte [mediante Managed Package Framework para implementar un tipo de proyecto (C#)](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md).  
   
-- Para los desarrolladores de C++, las clases de la biblioteca HierUtil funcionan de forma similar. Para obtener más información, consulte [no en la compilación: uso de las clases de proyecto HierUtil7 para implementar un tipo de proyecto (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
+- Para los desarrolladores de C++, las clases de la biblioteca HierUtil funcionan de forma similar. Para obtener más información, consulte [no en la compilación: Uso de HierUtil7 proyecto clases para implementar un tipo de proyecto (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
 - Los tipos de proyecto pueden admitir datos distintos de los archivos de código fuente típico que se basan en un ensamblado .exe o .dll. Por ejemplo, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proyectos de base de datos contienen referencias a la secuencia de comandos y consultas de los archivos almacenados en disco y agregar comandos a **el Explorador de soluciones** para ejecutar los scripts y consultas en una base de datos, pero los proyectos no admiten compilar el comportamiento. Para obtener más información, consulte [abriendo y guardando elementos de proyecto](../../extensibility/internals/opening-and-saving-project-items.md).  
   

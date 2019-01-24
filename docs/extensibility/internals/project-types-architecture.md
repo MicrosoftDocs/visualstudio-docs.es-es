@@ -1,9 +1,6 @@
 ---
-title: Arquitectura de los tipos de proyectos diferentes | Documentos de Microsoft
-ms.custom: ''
+title: Arquitectura de los tipos de proyecto | Documentos de Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], architecture
@@ -13,25 +10,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6ef7fe6fbf4a8899606dca35c10745e68e3cbfa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fea8273c1db662d5184d1afb71b5cd39789d6794
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130614"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929311"
 ---
-# <a name="project-types-architecture"></a>Arquitectura de los tipos de proyecto
-Esta sección contiene información detallada acerca de la arquitectura de tipos de proyecto en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+# <a name="project-types-architecture"></a>Arquitectura de tipos de proyecto
+Esta sección contiene información detallada sobre la arquitectura de tipos de proyecto en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Elementos de un modelo de proyecto](../../extensibility/internals/elements-of-a-project-model.md)  
- Enumera los servicios que se puede utilizar un tipo de proyecto y las interfaces que debe implementar.  
+ Enumera los servicios que puede consumir un tipo de proyecto y las interfaces que debe implementar.  
   
  [Componentes principales del modelo de proyecto](../../extensibility/internals/project-model-core-components.md)  
  Describe las interfaces, tipos de proyecto, deben implementar tanto si lo desea, pueden implementar para proporcionar funcionalidad adicional.  
   
  [Momento para la creación de tipos de proyecto](../../extensibility/internals/when-to-create-project-types.md)  
- Le ayuda a decidir cuándo debe crear un proyecto de tipos y cuándo se puede utilizar otro [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] las características de extensibilidad como VSPackages y editores para lograr el mismo objetivo.  
+ Escriba ayuda a decidir cuándo debe crear un proyecto y cuándo se puede utilizar otro [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] característica de extensibilidad, como los paquetes VSPackage y editores para lograr el mismo objetivo.  
   
  [Jerarquías y selección](../../extensibility/internals/hierarchies-and-selection.md)  
  Describe cómo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jerarquías y el contexto de selección se utiliza para proporcionar una experiencia de usuario coherente y simplificada.  
@@ -41,4 +38,4 @@ Esta sección contiene información detallada acerca de la arquitectura de tipos
  Explica cómo los subtipos de proyecto le permiten personalizar el comportamiento de los sistemas del proyecto de [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] y [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)].  
   
  [Tipos de proyecto](../../extensibility/internals/project-types.md)  
- Proporciona información general de los proyectos como bloques de creación básicos de la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE). Se proporcionan vínculos a temas adicionales que se explica cómo controlan los proyectos de generar y compilar código.
+ Proporciona información general de los proyectos como bloques de creación básicos de la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE). Se proporcionan vínculos a temas adicionales que explican cómo proyectos de control de generar y compilar código.

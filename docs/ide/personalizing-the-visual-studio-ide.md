@@ -1,24 +1,30 @@
 ---
-title: Personalizar el IDE de Visual Studio
+title: Personalizar el IDE
 ms.date: 11/20/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd4f00313cbbb7f082934bddff338f77f117fd5c
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 0f564268b198a75655c68b5ede34591fe5845593
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32064550"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919049"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizar el IDE de Visual Studio
 
-Puede personalizar Visual Studio de varias maneras para que se ajuste mejor a su propio estilo de desarrollo y a sus requisitos. Muchos de los valores se traspasan a las distintas instancias de Visual Studio &mdash;consulte [Configuración sincronizada](../ide/synchronized-settings-in-visual-studio.md). En este tema se describen brevemente las diferentes personalizaciones y dónde puede encontrar más información.
+Puede personalizar Visual Studio de varias maneras para que se ajuste mejor a su propio estilo de desarrollo y a sus requisitos. Muchos de los valores se traspasan a las distintas instancias de Visual Studio &mdash;consulte [Configuración sincronizada](../ide/synchronized-settings-in-visual-studio.md). En este artículo se describen brevemente las diferentes personalizaciones y se indica dónde encontrar más información.
+
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Personalización del IDE de Visual Studio para Mac](/visualstudio/mac/customizing-the-ide).
+
+## <a name="default-settings"></a>Configuración predeterminada
+
+Puede elegir una colección predeterminada de opciones que optimice Visual Studio para el tipo de desarrollo. Para obtener más información, vea [Configuración del entorno](environment-settings.md).
 
 ## <a name="general-environment-options"></a>Opciones generales de entorno
 
@@ -35,7 +41,7 @@ Muchas opciones de personalización se exponen en el cuadro de diálogo [Opcione
 
 Para cambiar el tema de color entre claro, oscuro y azul, escriba `environment` en el cuadro **Inicio rápido** y, luego, elija **Entorno --> General**. En el cuadro de diálogo **Opciones**, cambie la opción **Tema de color**.
 
-Para cambiar las opciones de color en el editor, escriba `environment` en el cuadro **Inicio rápido** y, luego, elija **Entorno --> Fuentes y colores**. Consulte [Cómo: Cambiar fuentes y colores](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+Para cambiar las opciones de color en el editor, escriba `environment` en el cuadro **Inicio rápido** y, luego, elija **Entorno --> Fuentes y colores**. Vea [Cómo: Cambiar fuentes y colores](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Mayúsculas y minúsculas en el menú principal
 
@@ -43,7 +49,7 @@ Puede cambiar el uso de mayúsculas en el menú principal y alternar entre **tip
 
 ### <a name="customize-menus-and-toolbars"></a>Personalización de menús y barras de herramientas
 
-Para agregar o quitar elementos del menú o de la barra de herramientas, vea [Cómo: Personalizar menús y barras de herramientas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+Para agregar o quitar elementos de menú o barra de herramientas, vea [Cómo: Personalizar menús y barras de herramientas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ## <a name="start-page"></a>Página de inicio
 
@@ -59,5 +65,7 @@ Puede personalizar el menú **Herramientas** para iniciar herramientas externas.
 
 ## <a name="see-also"></a>Vea también
 
-- [Introducción al IDE de Visual Studio](../ide/visual-studio-ide.md)
-- [Guía de inicio rápido: primer vistazo al IDE de Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Configuración del entorno](environment-settings.md)
+- [Introducción al IDE de Visual Studio](../get-started/visual-studio-ide.md)
+- [Inicio rápido: Primer vistazo al IDE de Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Personalización del IDE de Visual Studio para Mac](/visualstudio/mac/customizing-the-ide)

@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: rellenar tablas de Word con propiedades de documento mediante programación'
-ms.custom: ''
+title: Procedimiento Rellenar tablas de Word con propiedades de documento mediante programación
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b996a8d66ceb4947d35dbbba7323b70c21c065fc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aeb4d61211f6b65bf700adf1a52ee4b17ed36008
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900402"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893897"
 ---
-# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Cómo: rellenar tablas de Word con propiedades de documento mediante programación
+# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Procedimiento Rellenar tablas de Word con propiedades de documento mediante programación
   En el siguiente ejemplo se crea una tabla de Microsoft Office Word en la parte superior del documento y se rellena con las propiedades del documento host.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -97,9 +94,7 @@ ms.locfileid: "49900402"
    [!code-csharp[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#89)]  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: crear tablas de Word mediante programación](../vsto/how-to-programmatically-create-word-tables.md)   
- [Cómo: agregar texto y formato a celdas de tablas de Word mediante programación](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
- [Cómo: agregar filas y columnas a las tablas de Word mediante programación](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
+ [Cómo: Crear tablas de Word mediante programación](../vsto/how-to-programmatically-create-word-tables.md)   
+ [Cómo: Agregar texto y formato a celdas de tablas de Word mediante programación](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
+ [Cómo: Agregar filas y columnas a las tablas de Word mediante programación](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

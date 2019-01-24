@@ -1,26 +1,27 @@
 ---
-title: 'Tutorial: Información acerca de Django en Visual Studio, paso 6'
+title: Información sobre el paso 6 del tutorial de Django en Visual Studio, plantilla de proyecto de sondeos
+titleSuffix: ''
 description: Un recorrido por los aspectos básicos de Django en el contexto de los proyectos de Visual Studio, en particular las características de la plantilla Proyecto web de Django de sondeos, como la personalización administrativa.
-ms.date: 08/13/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 77cce33aa8dd5a0f265aadcfa1cd1a751a34aa3d
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: ff970f12bc31866483642772be742fbf6ac1e74b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101061"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941172"
 ---
-# <a name="step-6-use-the-polls-django-web-project-template"></a>Paso 6. Usar la plantilla de proyecto web de Django de sondeos
+# <a name="step-6-use-the-polls-django-web-project-template"></a>Paso 6: Uso de la plantilla de proyecto web de Django de sondeos
 
-**Paso anterior: [Autenticación de los usuarios en Django](learn-django-in-visual-studio-step-05-django-authentication.md)**
+**Paso anterior: [Autenticación de usuarios en Django](learn-django-in-visual-studio-step-05-django-authentication.md)**
 
 Ahora que conoce la plantilla "Proyecto web de Django" de Visual Studio, podemos analizar la tercera plantilla de Django, "Proyecto web de Django de sondeos", que se basa en el mismo código base y demuestra el trabajo con una base de datos.
 
@@ -35,7 +36,7 @@ En este paso aprenderá lo siguiente:
 
 El proyecto creado con esta plantilla es similar al que se obtiene tras seguir el tutorial [Escribiendo su primera aplicación en Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) de la documentación de Django. La aplicación web consta de un sitio público que permite a los usuarios ver sondeos y votar en ellos, además de una interfaz de administración personalizada que sirve para administrar los sondeos. En ella se utiliza el mismo sistema de autenticación que en la plantilla "Proyecto web de Django" y se hace un mayor uso de la base de datos mediante la implementación de modelos de Django, tal y como se muestra en las secciones siguientes.
 
-## <a name="step-6-1-create-the-project-and-initialize-the-database"></a>Paso 6.1: Crear el proyecto e inicializar la base de datos
+## <a name="step-6-1-create-the-project-and-initialize-the-database"></a>Paso 6-1: Creación del proyecto e inicialización de la base de datos
 
 1. En Visual Studio, vaya al **Explorador de soluciones**, haga clic con el botón derecho en la solución **LearningDjango** creada anteriormente en este tutorial y seleccione **Agregar** > **Nuevo proyecto**. (En caso de que desee utilizar una nueva solución, tendrá que seleccionar **Archivo** > **Nuevo** > **Proyecto**).
 
@@ -67,7 +68,7 @@ El proyecto creado con esta plantilla es similar al que se obtiene tras seguir e
 
 Como se indicó previamente, gran parte de lo que aparece en un proyecto creado a partir de la plantilla de "Proyecto web de Django de sondeos" debe resultarle familiar si ha explorado las otras plantillas de proyecto en Visual Studio. En el resto de pasos de este artículo se resumen los cambios y novedades más importantes; en especial, los modelos de datos y las vistas adicionales.
 
-### <a name="question-what-does-the-django-migrate-command-do"></a>Pregunta: ¿Para qué sirve el comando Migración de Django?
+### <a name="question-what-does-the-django-migrate-command-do"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Para qué sirve el comando Migración de Django?
 
 Respuesta: El comando **Migración de Django** ejecuta específicamente el comando `manage.py migrate`, que ejecuta los scripts de la carpeta *app/migrations* que no se hayan ejecutado con anterioridad. En este caso, el comando ejecuta el script *0001_initial.py* de esa carpeta para configurar el esquema necesario en la base de datos.
 
@@ -75,7 +76,7 @@ El propio script de migración se crea mediante el comando `manage.py makemigrat
 
 En el paso 6.3 de este artículo trabajará con una migración.
 
-## <a name="step-6-2-understand-data-models"></a>Paso 6.2: Comprender los modelos de datos
+## <a name="step-6-2-understand-data-models"></a>Paso 6-2: Comprender los modelos de datos
 
 Los modelos de la aplicación, denominados Poll y Choice, se definen en *app/models.py*. Cada uno de ellos es una clase de Python que se deriva de `django.db.models.Model` y usa los métodos de la clase `models`, como `CharField` y `IntegerField`, para definir campos en el modelo, que se asignan a columnas de la base de datos.
 
@@ -158,11 +159,11 @@ Para ver el efecto, ejecute la aplicación primero para ver que no existe todav�
 
 ![Aplicación Proyecto web de Django de sondeos con una base de datos inicializada](media/django/step06-app-with-seeded-database.png)
 
-### <a name="question-is-it-possible-to-initialize-the-database-using-the-django-administrative-utility"></a>Pregunta: ¿Es posible inicializar la base de datos con la utilidad administrativa de Django?
+### <a name="question-is-it-possible-to-initialize-the-database-using-the-django-administrative-utility"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Es posible inicializar la base de datos con la utilidad administrativa de Django?
 
-Respuesta: Sí, puede usar el [comando django-admin loaddata](https://docs.djangoproject.com/en/1.9/ref/django-admin/#loaddata) para realizar la misma tarea que la página de inicialización de la aplicación. Cuando se trabaja en una aplicación web completa, puede usar una combinación de los dos métodos: inicializar una base de datos desde la línea de comandos y, a continuación, convertir la página de inicialización aquí en una API a la que puede enviar cualquier otro JSON arbitrario en lugar de confiar en un archivo codificado de forma rígida.
+Respuesta: Sí, se puede usar el [comando django-admin loaddata](https://docs.djangoproject.com/en/1.9/ref/django-admin/#loaddata) para realizar la misma tarea que la página de inicialización de la aplicación. Cuando se trabaja en una aplicación web completa, puede usar una combinación de los dos métodos: inicializar una base de datos desde la línea de comandos y, a continuación, convertir la página de inicialización aquí en una API a la que puede enviar cualquier otro JSON arbitrario en lugar de confiar en un archivo codificado de forma rígida.
 
-## <a name="step-6-3-use-migrations"></a>Paso 6.3: Usar migraciones
+## <a name="step-6-3-use-migrations"></a>Paso 6-3: Uso de migraciones
 
 Cuando ejecutó el comando `manage.py makemigrations` (mediante el menú contextual de Visual Studio) después de crear el proyecto, Django creó el archivo *app/migrations/0001_initial.py*. Este archivo contiene un script que crea las tablas de base de datos iniciales.
 
@@ -190,23 +191,23 @@ Para ver el efecto del cambio de un modelo, pruebe lo siguiente:
 
 En general, la característica de migración de Django implica que no tendrá que administrar nunca el esquema de base de datos manualmente. Simplemente realice cambios en los modelos, genere los scripts de migración y aplíquelos con el comando de migración.
 
-### <a name="question-what-happens-if-i-forget-to-run-the-migrate-command-after-making-changes-to-models"></a>Pregunta: ¿Qué sucede si olvido ejecutar el comando de migración después de realizar cambios en los modelos?
+### <a name="question-what-happens-if-i-forget-to-run-the-migrate-command-after-making-changes-to-models"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Qué sucede si olvido ejecutar el comando de migración después de realizar cambios en los modelos?
 
 Respuesta: Si los modelos no coinciden con lo que aparece en la base de datos, Django genera un error en tiempo de ejecución con las excepciones apropiadas. Por ejemplo, si se olvida de migrar el modelo cambiado que se muestra en la sección anterior, aparece el error **no such column: app_poll.author**:
 
 ![error que se muestra cuando no se ha migrado un cambio de modelo](media/django/step06-exception-when-forgetting-to-migrate.png).
 
-### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>Pregunta: ¿Por qué el Explorador de soluciones no muestra los scripts recién generados después de ejecutar Django Make Migrations (Hacer migraciones de Django)?
+### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Por qué no se muestran en el Explorador de soluciones los scripts recién generados después de ejecutar Django Make Migrations (Realizar migraciones de Django)?
 
-Respuesta: Aunque los scripts recién generados existen en la carpeta *app/migrations* y se aplican cuando se ejecuta el comando **Migración de Django**, no aparecen automáticamente en el **Explorador de soluciones** porque no se han agregado al proyecto de Visual Studio. Para que sean visibles, seleccione primero el comando de menú **Proyecto** > **Mostrar todos los archivos** o el botón de la barra de herramientas que se describe en la siguiente imagen. Este comando hace que el **Explorador de soluciones** muestre todos los archivos en la carpeta del proyecto, con un icono de contorno punteado para los elementos que no se han agregado al propio proyecto. Haga clic con el botón derecho en los archivos que desea agregar y seleccione **Incluir en el proyecto**, lo cual los incluye también en el control de código fuente en la siguiente confirmación.
+Respuesta: Aunque en la carpeta *app/migrations* haya scripts recién generados y se apliquen cuando se ejecuta el comando **Migración de Django**, no aparecen automáticamente en el **Explorador de soluciones** porque no se han agregado al proyecto de Visual Studio. Para que sean visibles, seleccione primero el comando de menú **Proyecto** > **Mostrar todos los archivos** o el botón de la barra de herramientas que se describe en la siguiente imagen. Este comando hace que el **Explorador de soluciones** muestre todos los archivos en la carpeta del proyecto, con un icono de contorno punteado para los elementos que no se han agregado al propio proyecto. Haga clic con el botón derecho en los archivos que desea agregar y seleccione **Incluir en el proyecto**, lo cual los incluye también en el control de código fuente en la siguiente confirmación.
 
 ![Comando Incluir en el proyecto en el Explorador de soluciones](media/django/step06-include-migrations-script-in-project.png)
 
-### <a name="question-can-i-see-what-migrations-would-be-applied-before-running-the-migrate-command"></a>Pregunta: ¿Puedo ver qué migraciones se aplicarían antes de ejecutar el comando de migración?
+### <a name="question-can-i-see-what-migrations-would-be-applied-before-running-the-migrate-command"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Puedo ver qué migraciones se aplicarían antes de ejecutar el comando de migración?
 
 Respuesta: Sí, use el [comando django-admin showmigrations](https://docs.djangoproject.com/en/2.0/ref/django-admin/#showmigrations).
 
-## <a name="step-6-4-understand-the-views-and-page-templates-created-by-the-project-template"></a>Paso 6.4: Comprender las vistas y las plantillas de página creadas por la plantilla de proyecto
+## <a name="step-6-4-understand-the-views-and-page-templates-created-by-the-project-template"></a>Paso 6-4: Comprender las vistas y las plantillas de página creadas por la plantilla de proyecto
 
 La mayoría de las vistas generadas por la plantilla "Proyecto web de Django de sondeos", como las vistas de las páginas de información y contacto, son muy similares a las vistas creadas por la plantilla "Proyecto web de Django" con la que trabajó anteriormente en este tutorial. La diferencia en la aplicación Polls es que su página principal utiliza los modelos, como hacen otras páginas añadidas para votar y ver los resultados de los sondeos.
 
@@ -321,7 +322,7 @@ def vote(request, poll_id):
 
 En este caso, la vista no tiene su propia plantilla correspondiente, como las otras páginas. En su lugar, valida el sondeo seleccionado, que muestra un error 404 si el sondeo no existe (solo en caso de que alguien escriba una dirección URL como "vote/1a2b3c"). Luego se asegura de que la opción votada sea válida para el sondeo. Si no es así, el bloque `except` simplemente representa la página de detalles de nuevo con un mensaje de error. Si la opción es válida, la vista registra el voto y lo redirecciona a la página de resultados.
 
-## <a name="step-6-5-create-a-custom-administration-interface"></a>Paso 6.5: Crear una interfaz de administración personalizada
+## <a name="step-6-5-create-a-custom-administration-interface"></a>Paso 6-5: Creación de una interfaz de administración personalizada
 
 Los últimos datos de la plantilla de "Proyecto web de Django de sondeos" son las extensiones personalizadas para la interfaz administrativa de Django personalizada, tal como se mostró anteriormente en el paso 6.1 de este artículo. La interfaz predeterminada ofrece administración de usuario y grupo, pero nada más. La plantilla de proyecto de sondeos agrega características que le permiten también administrar los sondeos.
 
@@ -376,4 +377,4 @@ La ejecución de una aplicación web en el equipo de desarrollo es solamente un 
 
 - Cambiar la aplicación de SQLite a un almacén de datos a nivel de producción como PostgreSQL, MySQL y SQL Server (todos se pueden hospedar en Azure). Como se describe en [When to use SQLite](https://www.sqlite.org/whentouse.html) (Cuándo usar SQLite) (sqlite.org), SQLite funciona perfectamente en sitios de tráfico bajo a medio, con menos de 100.000 visitas al día, pero no se recomienda en volúmenes más elevados. También está limitado a un único equipo, por lo tanto no se puede usar en escenarios de varios servidores, como el equilibrio de carga y la replicación geográfica. Para obtener información sobre la compatibilidad con Django otras bases de datos, vea [Configuración de la base de datos](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). También puede usar el [SDK de Azure para Python](azure-sdk-for-python.md) para trabajar con los servicios de almacenamiento de Azure, como tablas y blobs.
 
-- Configurar una canalización de implementación continua/integración continua en un servicio como Visual Studio Team Services (VSTS). Además de funcionar con el control de código fuente (en VSTS, GitHub u otro servicio), puede hacer que VSTS ejecute automáticamente pruebas unitarias como requisito previo para la publicación, y también configurar la canalización para implementar en un servidor de ensayo para pruebas adicionales antes de implementar en producción. VSTS, además, se integra con soluciones de supervisión como App Insights y cierra todo el ciclo con herramientas de planeación de agile. Para más información, consulte [Creación de una canalización de CI/CD para Python con Azure DevOps Projects](/azure/devops-project/azure-devops-project-python?view=vsts).
+- Configurar una canalización de implementación continua/integración continua en un servicio como Azure DevOps. Además de funcionar con el control de código fuente (en Azure Repos, GitHub u otro servicio), puede configurar un proyecto de Azure DevOps para que ejecute automáticamente pruebas unitarias como requisito previo para la publicación y también configurar la canalización para implementar en un servidor de ensayo para pruebas adicionales antes de implementar en producción. Azure DevOps, además, se integra con soluciones de supervisión como App Insights y cierra todo el ciclo con herramientas de planeación de Ágil. Para obtener más información, consulte [Creación de una canalización de CI/CD para Python con Azure DevOps Projects](/azure/devops-project/azure-devops-project-python?view=vsts) y también la [Azure DevOps Documentation](/azure/devops/?view=vsts) (Documentación de Azure DevOps) general.

@@ -2,23 +2,22 @@
 title: Conjunto de reglas Todas las reglas
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 522d8977ed4b4881d2a9b2856438070924864489
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5fe3a00e616af6973b8ffbaeed3fcb5d821813a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31883883"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834886"
 ---
 # <a name="all-rules-rule-set"></a>Conjunto de reglas Todas las reglas
 
-El conjunto de reglas de todas las reglas contiene todas las reglas de código nativo y administrado. El conjunto de reglas incluye todas las reglas que se describen en los temas siguientes:
+El conjunto de todas las reglas de reglas contiene todas las reglas de código nativo y administrado. El conjunto de reglas incluye todas las reglas que se describen en los siguientes temas:
 
 - [Análisis de código para advertencias de C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)
 

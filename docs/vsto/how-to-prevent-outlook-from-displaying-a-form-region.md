@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: impedir que Outlook muestre un área de formulario'
-ms.custom: ''
+title: Procedimiento Impedir que Outlook muestre un área de formulario
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -11,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - form regions [Office development in Visual Studio], canceling display
 - canceling form region display
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1ec9f45b2055a7a56e067440d216482877da14c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a7df2aef4348e95a30c0b14b26686764890b6abf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949063"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849757"
 ---
-# <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>Cómo: impedir que Outlook muestre un área de formulario
+# <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>Procedimiento Impedir que Outlook muestre un área de formulario
   Puede haber situaciones en las que no desea que Microsoft Office Outlook muestre un área de formulario de un elemento determinado. Por ejemplo, si un elemento de contacto no contiene una dirección de la empresa, puede evitar un área de formulario que muestra la ubicación de la empresa en un mapa de encendido.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -44,9 +41,7 @@ ms.locfileid: "49949063"
   
 ## <a name="see-also"></a>Vea también  
  [Crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md)   
- [Tutorial: Diseñar un área de formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Cómo: agregar un área de formulario a un proyecto de complemento de Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
- [Tutorial: Diseñar un área de formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
+ [Tutorial: Diseñar un formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
+ [Cómo: Agregar un área de formulario a un proyecto de complemento de Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
+ [Tutorial: Diseñar un formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Tutorial: Importar un área de formulario diseñada en Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)  
-  
-  

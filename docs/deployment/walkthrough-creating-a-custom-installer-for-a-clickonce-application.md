@@ -1,8 +1,6 @@
 ---
 title: 'Tutorial: Crear un instalador personalizado para una aplicación ClickOnce | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 939fd64873a2aab9d5652768ad4ecfa4a93b5122
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 4dcf81d6ddba8fdd4fbdbc3e1ea9ca15b7682498
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152248"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991011"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>Tutorial: Crear a un instalador personalizado para una aplicación ClickOnce
 Cualquier aplicación ClickOnce se basa en un *.exe* archivo se puede instalar en modo silencioso y actualizado mediante un instalador personalizado. Un instalador personalizado puede implementar la experiencia de usuario personalizada durante la instalación, incluidos los cuadros de diálogo personalizados para las operaciones de mantenimiento y seguridad. Para realizar operaciones de instalación, el instalador personalizado utiliza la <xref:System.Deployment.Application.InPlaceHostingManager> clase. Este tutorial muestra cómo crear a un instalador personalizado que instala silenciosamente una aplicación ClickOnce.  
@@ -36,7 +34,7 @@ Cualquier aplicación ClickOnce se basa en un *.exe* archivo se puede instalar e
   
 1.  En la aplicación ClickOnce, agregue referencias a System.Deployment y System.Windows.Forms.  
   
-2.  Agregar una nueva clase a la aplicación y especificar cualquier nombre. En este tutorial usa el nombre `MyInstaller`.  
+2.  Agregar una nueva clase a la aplicación y especificar cualquier nombre. Este tutorial usa el nombre `MyInstaller`.  
   
 3.  Agregue el siguiente `Imports` o `using` instrucciones a la parte superior de la nueva clase.  
   
@@ -75,7 +73,7 @@ Cualquier aplicación ClickOnce se basa en un *.exe* archivo se puede instalar e
     ```  
   
 ## <a name="next-steps"></a>Pasos siguientes  
- Una aplicación ClickOnce también puede agregar lógica de actualización personalizada, incluida una interfaz de usuario personalizada para mostrar durante el proceso de actualización. Para obtener más información, consulta <xref:System.Deployment.Application.UpdateCheckInfo>. Una aplicación ClickOnce también puede suprimir la entrada estándar del menú Inicio, acceso directo y entrada en Agregar o quitar programas usando un `<customUX>` elemento. Para obtener más información, consulte [ \<entryPoint > elemento](../deployment/entrypoint-element-clickonce-application.md) y <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A>.  
+ Una aplicación ClickOnce también puede agregar lógica de actualización personalizada, incluida una interfaz de usuario personalizada para mostrar durante el proceso de actualización. Para obtener más información, vea <xref:System.Deployment.Application.UpdateCheckInfo>. Una aplicación ClickOnce también puede suprimir la entrada estándar del menú Inicio, acceso directo y entrada en Agregar o quitar programas usando un `<customUX>` elemento. Para obtener más información, consulte [ \<entryPoint > elemento](../deployment/entrypoint-element-clickonce-application.md) y <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A>.  
   
 ## <a name="see-also"></a>Vea también  
  [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md)   

@@ -1,9 +1,8 @@
 ---
-title: Sugerencias y trucos del depurador de Visual Studio
+title: Sugerencias y trucos en el depurador
 description: Obtenga información sobre algunas de las características menos conocidas compatibles con el depurador de Visual Studio
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 06/15/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - stepping
@@ -15,16 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e2a9acf315541dcf231d774fdb37e4c82649a4c
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
-ms.translationtype: MT
+ms.openlocfilehash: 530ed2144127e7934d02f5ccc0310d9542671507
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612732"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270065"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Obtenga información sobre sugerencias de productividad y trucos del depurador de Visual Studio
 
-Lea este tema para aprender algunas sugerencias de productividad y trucos para el depurador de Visual Studio. Para conocer las características básicas del depurador, vea [Guía de características del depurador](../debugger/debugger-feature-tour.md). En este tema, trataremos algunas áreas que no están incluidos en la Guía de características.
+Lea este tema para aprender algunas sugerencias de productividad y trucos para el depurador de Visual Studio. Para conocer las características básicas del depurador, vea [primero analicemos el depurador](../debugger/debugger-feature-tour.md). En este tema, trataremos algunas áreas que no están incluidos en la Guía de características.
 
 ## <a name="pin-data-tips"></a>Sugerencias de datos de PIN
 
@@ -54,16 +53,16 @@ Si es difícil o requiere tiempo volver a crear un estado determinado en la apli
 
 3. Si está interesado en otro tipo de condición, seleccione **filtro** en lugar de **expresión condicional** en el **configuración de punto de interrupción** cuadro de diálogo y, después, siga las sugerencias de filtro.
 
-## <a name="change-the-execution-flow"></a>Cambiar el flujo de ejecución
+## <a name="change-the-execution-flow"></a>Cambio del flujo de ejecución
 
 Con el depurador pausó en una línea de código, use el mouse para captar el puntero de flecha amarilla en la parte izquierda. Mueva el puntero de flecha amarilla a un punto diferente en la ruta de acceso de ejecución de código. A continuación, utilice F5 o un comando de paso para continuar ejecutando la aplicación.
 
 ![Mueva el puntero de ejecución](../debugger/media/dbg-tour-move-the-execution-pointer.gif "mover el puntero de ejecución")
 
-Al cambiar el flujo de ejecución, puede hacer cosas como comprobar las rutas de ejecución de código diferente o volver a ejecutar código sin necesidad de reiniciar al depurador.
+Al cambiar el flujo de ejecución, puede, por ejemplo, comprobar las diferentes rutas de ejecución de código o volver a ejecutar código sin tener que reiniciar el depurador.
 
 > [!WARNING]
-> A menudo es necesario tener cuidado con esta característica, y verá una advertencia en la información sobre herramientas. Puede ver otras advertencias, demasiado. Mover el puntero no puede revertir la aplicación a un estado anterior de la aplicación.
+> A menudo es necesario tener cuidado con esta característica, ya que puede ser que vea una advertencia en la información en pantalla. También puede ser que reciba otras advertencias. Mover el puntero no puede revertir la aplicación a un estado anterior de la aplicación.
 
 ## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Realizar un seguimiento de un objeto fuera de ámbito (C#, Visual Basic)
 
@@ -145,7 +144,7 @@ Seleccione una operación en la vista de resumen para ver más detalles.
 
 Para obtener más información, vea [Network Usage](../profiling/network-usage.md) (Uso de red).
 
-## <a name="modules_window"></a> Familiarizarse con cómo el depurador se asocia a la aplicación
+## <a name="modules_window"></a> Familiarizarse con cómo el depurador se asocia a la aplicación (C#, C++, Visual Basic, F#)
 
 Para asociar a la aplicación en ejecución, el depurador carga los archivos de símbolos (.pdb) generados para la misma versión exacta de la aplicación que está intentando depurar. En algunos escenarios, algunos conocimientos de los archivos de símbolos pueden resultar útil. Puede examinar cómo Visual Studio carga los archivos de símbolos mediante el **módulos** ventana.
 

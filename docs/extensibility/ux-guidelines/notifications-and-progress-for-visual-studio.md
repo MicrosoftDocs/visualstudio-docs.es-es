@@ -1,9 +1,6 @@
 ---
 title: Notificaciones y progreso para Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aee6e5656142d0597ff6101da5e2e5f690f8fcc5
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 1c0241a16caec1fd25b3ccd177042af3be90a6b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863960"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942676"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Notificaciones y progreso para Visual Studio
 ##  <a name="BKMK_NotificationSystems"></a> Sistemas de notificación  
@@ -50,8 +47,8 @@ ms.locfileid: "48863960"
 |[Indicadores de progreso](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_NotSysProgressIndicators)|Usar cuando se necesita para notificar el progreso (determinado o indeterminado). Hay una variedad de tipos de indicador de progreso y de uso específicos para cada uno. Consulte [indicadores de progreso](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators).||  
 |[Ventana de Visual Studio notificaciones](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_VSNotificationsToolWindow)|La ventana de notificaciones no es públicamente extensible. Sin embargo, sirve para comunicarse en un intervalo de mensajes acerca de Visual Studio, incluidos los problemas críticos con su licencia y notificaciones de actualizaciones a Visual Studio o a paquetes.|No utilice para otros tipos de notificaciones.|  
 |[Lista de errores](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ErrorList)|Cuando el problema se relaciona directamente con la solución actualmente abierta del usuario tiene un problema (error/advertencia/información), es posible que necesitan realizar acciones en el código.<br /><br /> Esto podría incluir, por ejemplo:<br /><br /> -Mensajes del compilador (error/advertencia/información)<br /><br /> -Los mensajes de diagnóstico y analizador código sobre el código<br /><br /> : Los mensajes de la compilación<br /><br /> Puede ser adecuado para problemas relacionados con los archivos de proyecto o solución, pero considere en primer lugar una indicación del explorador de soluciones.|No se use para los elementos que no tienen ninguna relación con el código del usuario solución abierta.|  
-|Las notificaciones del Editor: bombilla|Utilícelo cuando tenga una corrección disponible para solucionar un problema que existe en el archivo abierto.<br /><br /> Tenga en cuenta que también se debe usar una bombilla para hospedar las acciones rápidas que se realizan en el código del usuario a petición, como refactorizaciones, pero en ese caso no aparecerá "style de la notificación".|No se use para los elementos que no tienen ninguna relación al archivo abierto.|  
-|Las notificaciones del Editor: subrayados ondulados|Utilice esta opción para avisar al usuario a un problema con un intervalo determinado de su código abierto (por ejemplo, un subrayado ondulado rojo si hay errores).|No se use para los elementos que no hacen referencia a un intervalo determinado de su código abierto.|  
+|Notificaciones del Editor: Bombilla|Utilícelo cuando tenga una corrección disponible para solucionar un problema que existe en el archivo abierto.<br /><br /> Tenga en cuenta que también se debe usar una bombilla para hospedar las acciones rápidas que se realizan en el código del usuario a petición, como refactorizaciones, pero en ese caso no aparecerá "style de la notificación".|No se use para los elementos que no tienen ninguna relación al archivo abierto.|  
+|Notificaciones del Editor: Subrayados ondulados|Utilice esta opción para avisar al usuario a un problema con un intervalo determinado de su código abierto (por ejemplo, un subrayado ondulado rojo si hay errores).|No se use para los elementos que no hacen referencia a un intervalo determinado de su código abierto.|  
 |[Barras de estado incrustada](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_EmbeddedStatusBars)|Utilice esta opción para proporcionar el estado relacionado con contenido o proceso en el contexto de una ventana de herramientas específica, la ventana de documento o la ventana de cuadro de diálogo.|No use para las notificaciones de producto, procesos o elementos que no tienen ninguna relación con el contenido dentro de la ventana concreta.|  
 |[Notificaciones de la Bandeja de Windows](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_WindowsTray)|Usar para las notificaciones para procesos fuera de proceso de superficie o companion en las aplicaciones.|No use para las notificaciones que son relevantes para el IDE.|  
 |[Burbujas de notificación](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_NotificationBubbles)|Usar para notificar a la de un proceso remoto o cambiar **fuera** del IDE.|No se use como un medio para notificar al usuario de procesos **en** el IDE.|  
@@ -250,7 +247,7 @@ ms.locfileid: "48863960"
   
  ![Mensajes de progreso en línea](../../extensibility/ux-guidelines/media/0903-09_inlinetext.png "0903 09_InlineText")  
   
- **Texto insertado de Server Explorer: actualizar...**  
+ **Texto insertado de Server Explorer: Actualizando...**  
   
 ##### <a name="tool-windows"></a>Ventanas de herramientas  
  Indicación del progreso global se representa mediante una barra de progreso indeterminada situada directamente debajo de la barra de herramientas.  
@@ -329,13 +326,13 @@ ms.locfileid: "48863960"
 ### <a name="creating-an-infobar"></a>Creación de una barra de información  
  La barra de información tiene cuatro secciones, de izquierda a derecha:  
   
--   **Icono:** aquí es donde se agrega cualquier icono gustaría que se muestra en la barra de información, como un icono de advertencia.  
+-   **Icono:** Aquí es donde se agrega cualquier icono gustaría que se muestra en la barra de información, como un icono de advertencia.  
   
--   **Texto:** puede agregar texto para describir el usuario escenario/situación es, junto con vínculos en el texto, si es necesario. Recuerde que el texto concisa.  
+-   **Texto:** Puede agregar texto para describir el usuario escenario/situación es, junto con vínculos en el texto, si es necesario. Recuerde que el texto concisa.  
   
--   **Acciones:** esta sección debe contener vínculos y botones de las acciones que el usuario puede realizar en la barra de información.  
+-   **Acciones:** Esta sección debe contener vínculos y botones de las acciones que el usuario puede realizar en la barra de información.  
   
--   **Botón Cerrar:** la última sección a la derecha puede tener un botón Cerrar.  
+-   **Botón de cierre:** La última sección a la derecha puede tener un botón Cerrar.  
   
 #### <a name="creating-a-standard-infobar-in-managed-code"></a>Creación de una barra de información estándar en código administrado  
  La clase InfoBarModel puede usarse para crear un origen de datos para una barra de información. Utilice uno de estos cuatro constructores:  

@@ -1,10 +1,8 @@
 ---
 title: WizardData (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#WizardData
 helpviewer_keywords:
@@ -16,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6685c09e463b50f1fd856c65eadc09555a6dedb9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: edff8012362a5752089858be9d168f7165d9671f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140120"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947860"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData (Elemento, Plantillas de Visual Studio)
-Especifica el código XML personalizado  
+Especifica código XML personalizado  
   
  \<VSTemplate >  
  \<WizardData >  
@@ -51,7 +49,7 @@ Especifica el código XML personalizado
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Contiene todos los metadatos de la plantilla de proyecto, una plantilla de elemento o un kit de inicio.|  
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Contiene todos los metadatos de la plantilla de proyecto, la plantilla de elemento o el starter kit de.|  
   
 ## <a name="text-value"></a>Valor de texto  
  El valor de texto es opcional.  
@@ -59,12 +57,12 @@ Especifica el código XML personalizado
  Este texto especifica el código XML personalizado para pasar a la extensión de asistente personalizada especificada en el [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md) elemento.  
   
 ## <a name="remarks"></a>Comentarios  
- Cualquier XML puede especificarse en este elemento. El código XML se pasarán como un parámetro a la extensión de asistente personalizada, permitiendo a la extensión usar el contenido de este elemento. Se realiza ninguna validación en estos datos.  
+ En este elemento se puede especificar cualquier XML. El código XML se pasará como un parámetro a la extensión de asistente personalizada, lo que permite la extensión usar el contenido de este elemento. Se realiza ninguna validación en estos datos.  
   
  El contenido de la `WizardData` elemento se pasa sin cambios, como un parámetro en el diccionario de cadenas de parámetros en el `IWizard.RunStarted` método. El parámetro se denomina $WizardData$.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra los metadatos de la plantilla de proyecto estándar para un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación de Windows.  
+ El ejemplo siguiente muestra los metadatos de la plantilla de proyecto estándar para un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación de Windows.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -101,4 +99,4 @@ Especifica el código XML personalizado
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
  [WizardExtension (elemento) (plantillas de Visual Studio)](../extensibility/wizardextension-element-visual-studio-templates.md)   
- [Uso de asistentes con las plantillas de proyectos](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Cómo: Usar a asistentes con plantillas de proyecto](../extensibility/how-to-use-wizards-with-project-templates.md)

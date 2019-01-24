@@ -16,12 +16,12 @@ ms.assetid: 79b9424e-7e9b-4fc8-9b9f-00212674573c
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6bbfc837323ddb103405ab289e89322ddb344040
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 786522d32680a66aa0f74cf0111c3e98708cce91
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243573"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727881"
 ---
 # <a name="registering-vspackages"></a>Registro de VSPackages
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

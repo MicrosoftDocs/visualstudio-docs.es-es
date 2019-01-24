@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: agregar encabezados y pies de página a documentos mediante programación'
-ms.custom: ''
+title: Procedimiento Agregar encabezados y pies de página a documentos mediante programación
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,19 +10,19 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], adding headers
 - documents [Office development in Visual Studio], adding footers
 - footers, adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cf8fd8d679760a6758ffb4afb71262a897845e87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e06c59fc61bff25268acc1ab70a90b68a1b9101d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849916"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848459"
 ---
-# <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>Cómo: agregar encabezados y pies de página a documentos mediante programación
+# <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>Procedimiento Agregar encabezados y pies de página a documentos mediante programación
   Puede agregar texto a los encabezados y pies de página del documento mediante las propiedades <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> y <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> de la <xref:Microsoft.Office.Interop.Word.Section>. Cada sección de un documento contiene tres encabezados y pies de página:  
   
 - <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterPrimary>  
@@ -73,7 +70,6 @@ ms.locfileid: "49849916"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#116](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#116)]  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: crear nuevos documentos mediante programación](../vsto/how-to-programmatically-create-new-documents.md)   
- [Cómo: ampliar intervalos en documentos de mediante programación](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [Cómo: recorrer en iteración mediante programación los elementos encontrados en documentos](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)  
-   
+ [Cómo: Crear nuevos documentos mediante programación](../vsto/how-to-programmatically-create-new-documents.md)   
+ [Cómo: Mediante programación ampliar intervalos en documentos](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
+ [Cómo: Recorrer en iteración mediante programación los elementos encontrados en documentos](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)  

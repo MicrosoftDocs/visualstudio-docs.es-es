@@ -1,9 +1,6 @@
 ---
 title: IDebugActivateDocumentEvent2::GetDocumentContext | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugActivateDocumentEvent2::GetDocumentContext
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3eaf98fe0c60a23f519bd6ec86ae6c674ac3b4e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7e2b0fce6850e89a014d241e54f02b8c1b68c66f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877041"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883777"
 ---
 # <a name="idebugactivatedocumentevent2getdocumentcontext"></a>IDebugActivateDocumentEvent2::GetDocumentContext
 Obtiene el contexto del documento que describe la posición en el documento que va a estar activa por el paquete de depuración.  
@@ -29,13 +26,13 @@ Obtiene el contexto del documento que describe la posición en el documento que 
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT GetDocumentContext (   
+HRESULT GetDocumentContext (   
    IDebugDocumentContext2** ppDocContext  
 );  
 ```  
   
 ```csharp  
-int GetDocumentContext (   
+int GetDocumentContext (   
    out IDebugDocumentContext2 ppDocContext  
 );  
 ```  

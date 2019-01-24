@@ -1,8 +1,7 @@
 ---
-title: 'CA1502: Evite la excesiva complejidad'
+title: 'CA1502: Evitar una complejidad excesiva'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - AvoidExcessiveComplexity
@@ -20,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bfa12a2a1ade8d32c5518660c46ce79bc997d776
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 21b623041bdf599439fd51f99354f206eb25c433
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819308"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893161"
 ---
-# <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Evite la excesiva complejidad
+# <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Evitar una complejidad excesiva
 
 |||
 |-|-|
@@ -50,7 +49,7 @@ donde un nodo representa un punto de bifurcación lógica y un borde representa 
 
 La regla emite una infracción cuando la complejidad ciclomática es más de 25.
 
-Puede aprender más acerca de las métricas de código en [medir la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md),
+Puede aprender más acerca de las métricas de código en [medir la complejidad y el mantenimiento del código administrado](../code-quality/code-metrics-values.md),
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
@@ -108,4 +107,4 @@ Los ejemplos siguientes muestran los métodos que tienen diferentes complejidad 
 
 ## <a name="see-also"></a>Vea también
 
-- [Medir la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+- [Medir la complejidad y el mantenimiento del código administrado](../code-quality/code-metrics-values.md)

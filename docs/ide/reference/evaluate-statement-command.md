@@ -2,7 +2,6 @@
 title: Evaluar instrucción (Comando)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.evaluatestatement
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f713cd511225e03ec50c2cbe699c40bd704faa20
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: b0be6e57c0c741420006d20c0945b9b8c8b77d51
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704241"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864130"
 ---
 # <a name="evaluate-statement-command"></a>Evaluar instrucción (Comando)
 Evalúa y muestra la instrucción dada.
@@ -65,4 +64,4 @@ Debug.EvaluateStatement text
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Cuadro Buscar/Comando](../../ide/find-command-box.md)
-- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,8 +1,6 @@
 ---
 title: Tarea SignFile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#SignFile
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d063528b67712dd16136bfd3edec29643868517
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 5adc16bf0ded8171009c31d96227daa0474ebbf5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154851"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847222"
 ---
 # <a name="signfile-task"></a>SignFile (tarea)
 
@@ -33,7 +31,7 @@ Firma un archivo determinado con el certificado especificado.
   
 ## <a name="parameters"></a>Parámetros
 
- En la siguiente tabla se describen los parámetros de la tarea `SignFile`.
+ En la siguiente tabla se describen los parámetros de la tarea `SignFile` .
   
  Tenga en cuenta que los certificados SHA-256 solo están permitidos en equipos que tienen .NET 4.5 y versiones posteriores.
   
@@ -73,7 +71,7 @@ Firma un archivo determinado con el certificado especificado.
 ```
 
 > [!NOTE]
-> La huella digital del certificado es el hash SHA-1 del certificado. Para más información, consulte [Obtain the SHA-1 hash of a trusted root CA certificate](http://msdn.microsoft.com/en-us/dd641990-9a88-4228-a245-017797131a87) (Obtener el hash SHA-1 de un certificado de entidad de certificación raíz de confianza).
+> La huella digital del certificado es el hash SHA-1 del certificado. Para más información, consulte [Obtain the SHA-1 hash of a trusted root CA certificate](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\)) (Obtener el hash SHA-1 de un certificado de entidad de certificación raíz de confianza). Si copia y pega la huella digital de los detalles del certificado, asegúrese de que no incluye los caracteres invisibles (3F) adicionales, ya que esto puede impedir que `SignFile` encuentre el certificado.
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   

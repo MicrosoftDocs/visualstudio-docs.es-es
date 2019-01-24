@@ -1,5 +1,5 @@
 ---
-title: Conjuntos de contadores y reglas de umbral para pruebas de carga en Visual Studio
+title: Conjuntos de contadores y reglas de umbral para pruebas de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,17 +14,18 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 95aa0b7545ab7f326779b24475c8f7593ede27a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 23c4997f6079a2b5f27a380afb4ef07b84c4fa61
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879852"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887070"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Especificar conjuntos de contadores y reglas de umbral para equipos en una prueba de carga
 
 Las pruebas de carga proporcionan conjuntos de contadores con nombre que son útiles cuando se analizan datos de contadores de rendimiento. Los conjuntos de contadores están organizados por tecnología e incluyen Aplicación, ASP.NET, Aplicación .NET, IIS y SQL. Cuando se crea una prueba de carga con el **Asistente para prueba de carga nueva**, se agrega un conjunto inicial de contadores. Estos ofrecen una serie de conjuntos de contadores predefinidos e importantes para la prueba de carga. Los contadores se administran en el **Editor de pruebas de carga**.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > Si las pruebas de carga se distribuyen entre varios equipos remotos, los contadores de controlador y de agente se asignan automáticamente a los conjuntos de contadores de controlador y de agente. Para obtener más información sobre cómo usar máquinas remotas en la prueba de carga, vea [Controladores y agentes de prueba](configure-test-agents-and-controllers-for-load-tests.md).
@@ -39,14 +40,14 @@ Es importante que agregue los servidores sometidos a prueba a la lista de equipo
 
 |Tareas|Temas relacionados|
 |-|-----------------------|
-|**Administrar los conjuntos de contadores de la prueba de carga:** después de crear la prueba de carga, puede editar el conjunto de contadores en el Editor de pruebas de carga. La administración de conjuntos de contadores implica la elección del conjunto de equipos del que desea recopilar datos de rendimiento, así como la asignación de un grupo de conjuntos de contadores para recopilar datos de cada equipo individual. Los contadores se administran en el Editor de prueba de carga.|-   [Cómo: Administrar conjuntos de contadores](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
-|**Agregar conjuntos de contadores a la prueba de carga:** al crear una prueba de carga con el **Asistente para prueba de carga nueva**, se agrega un conjunto inicial de contadores. Este conjunto inicial de contadores ofrece una serie de conjuntos de contadores predefinidos para la prueba de carga. Después de crear una prueba de carga, puede agregar nuevos contadores a los conjuntos de contadores existentes mediante el Editor de prueba de carga.|-   [Cómo: Agregar contadores a conjuntos de contadores](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [Cómo: Agregar conjuntos de contadores personalizados](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
-|**Especificar una regla de umbral mediante contadores para la prueba de carga:** una regla de umbral es una regla que se establece en un contador de rendimiento individual para supervisar el uso de recursos del sistema durante una prueba de carga. Las definiciones de conjuntos de contadores contienen reglas de umbral predefinidas para muchos contadores de rendimiento clave. Las reglas de umbral de las pruebas de carga comparan un valor de contador de rendimiento con un valor constante o con otro valor de contador de rendimiento.|-   [Cómo: Agregar una regla de umbral](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
-|**Asignar nombres descriptivos a los equipos a los que están asignados los conjuntos de contadores:** puede agregar etiquetas de equipo que le permitan aplicar un nombre fácilmente reconocible a un equipo. Las etiquetas se muestran en el nodo **Asignaciones de conjuntos de contadores** del árbol en el Editor de pruebas de carga. Lo que es más importante, las etiquetas se muestran en informes de Excel que ayudan a las partes interesadas a identificar qué rol desempeña el equipo en la prueba de carga, por ejemplo "Servidor web1 en laboratorio2" o "SQL Server2 en la oficina de Phoenix".<br /><br /> Para obtener más información, vea [Informar de los resultados de las pruebas de carga para las comparaciones de pruebas o los análisis de tendencias](../test/compare-load-test-results.md).|-   [Cómo: Agregar etiquetas de equipo a asignaciones de conjuntos de contadores](../test/how-to-add-computer-tags-to-counter-set-mappings-using-the-load-test-editor.md)|
+|**Administración de conjuntos de contadores de la prueba de carga:** después de crear la prueba de carga, puede editar el conjunto de contadores en el Editor de pruebas de carga. La administración de conjuntos de contadores implica la elección del conjunto de equipos del que desea recopilar datos de rendimiento, así como la asignación de un grupo de conjuntos de contadores para recopilar datos de cada equipo individual. Los contadores se administran en el Editor de prueba de carga.|-   [Cómo: Administrar conjuntos de contadores](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
+|**Agregar conjuntos de contadores a la prueba de carga:** Cuando se crea una prueba de carga con el **Asistente para prueba de carga nueva**, se agrega un conjunto de contadores inicial. Este conjunto inicial de contadores ofrece una serie de conjuntos de contadores predefinidos para la prueba de carga. Después de crear una prueba de carga, puede agregar nuevos contadores a los conjuntos de contadores existentes mediante el Editor de prueba de carga.|-   [Cómo: Agregar contadores a conjuntos de contadores](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [Cómo: Agregar conjuntos de contadores personalizados](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
+|**Especificar una regla de umbral mediante contadores para la prueba de carga:** Una regla de umbral es una regla que se establece en un contador de rendimiento individual para supervisar el uso de los recursos del sistema durante una prueba de carga. Las definiciones de conjuntos de contadores contienen reglas de umbral predefinidas para muchos contadores de rendimiento clave. Las reglas de umbral de las pruebas de carga comparan un valor de contador de rendimiento con un valor constante o con otro valor de contador de rendimiento.|-   [Cómo: Agregar una regla de umbral](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
+|**Asignar nombres descriptivos a los equipos a los que están asignados los conjuntos de contadores:** puede agregar etiquetas de equipo que permitan aplicar un nombre fácilmente reconocible a un equipo. Las etiquetas se muestran en el nodo **Asignaciones de conjuntos de contadores** del árbol en el Editor de pruebas de carga. Lo que es más importante, las etiquetas se muestran en informes de Excel que ayudan a las partes interesadas a identificar qué rol desempeña el equipo en la prueba de carga, por ejemplo "Servidor web1 en laboratorio2" o "SQL Server2 en la oficina de Phoenix".<br /><br /> Para obtener más información, vea [Informar de los resultados de las pruebas de carga para las comparaciones de pruebas o los análisis de tendencias](../test/compare-load-test-results.md).||
 
 ## <a name="use-counter-sets"></a>Usar conjuntos de contadores
 
-Las herramientas de prueba de carga recopilan y plasman en gráficos los datos de rendimiento mediante el uso de contadores a lo largo del tiempo. Los datos de los contadores se recopilan a intervalos especificados por el usuario durante la ejecución de una prueba de carga. Para más información, vea [Cómo: Especificar la velocidad de muestra de los parámetros de ejecución de pruebas de carga](../test/how-to-specify-the-sample-rate-for-a-load-test.md). Puede ver los contadores en tiempo de ejecución o después de la ejecución de una prueba de carga mediante el *Analizador de pruebas de carga*.
+Las herramientas de prueba de carga recopilan y plasman en gráficos los datos de rendimiento mediante el uso de contadores a lo largo del tiempo. Los datos de los contadores se recopilan a intervalos especificados por el usuario durante la ejecución de una prueba de carga. Para obtener más información, vea [Cómo: Especificar la frecuencia de muestreo](../test/how-to-specify-the-sample-rate-for-a-load-test.md). Puede ver los contadores en tiempo de ejecución o después de la ejecución de una prueba de carga mediante el *Analizador de pruebas de carga*.
 
 Los datos de los contadores se recopilan en el servidor y en cualquier equipo en el que se ejecute una prueba. Si ha configurado un conjunto de equipos agente en los que ejecutar pruebas, los contadores también se recopilan en esos equipos.
 
@@ -62,7 +63,7 @@ El análisis de resultados de las ejecuciones de pruebas de carga normalmente re
 
 ### <a name="performance-counter-sampling-interval-considerations"></a>Consideraciones sobre el intervalo de muestreo de los contadores de rendimiento
 
-Seleccione un valor apropiado para la propiedad **Frecuencia de muestreo** en los parámetros de ejecución de pruebas de carga según la duración de la prueba de carga. Una velocidad de muestra menor, como el valor predeterminado de cinco segundos, necesita más espacio en la base de datos de resultados de pruebas de carga. En el caso de pruebas de carga más largas, el incremento de la velocidad de muestra reduce la cantidad de datos recopilados. Para más información, vea [Cómo: Especificar la velocidad de muestra de los parámetros de ejecución de pruebas de carga](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+Seleccione un valor apropiado para la propiedad **Frecuencia de muestreo** en los parámetros de ejecución de pruebas de carga según la duración de la prueba de carga. Una velocidad de muestra menor, como el valor predeterminado de cinco segundos, necesita más espacio en la base de datos de resultados de pruebas de carga. En el caso de pruebas de carga más largas, el incremento de la velocidad de muestra reduce la cantidad de datos recopilados. Para obtener más información, vea [Cómo: Especificar la frecuencia de muestreo](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
 
 A continuación se ofrecen algunas instrucciones para las velocidades de muestra.
 

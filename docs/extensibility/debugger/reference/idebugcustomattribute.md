@@ -1,9 +1,6 @@
 ---
 title: IDebugCustomAttribute | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugCustomAttribute
@@ -15,20 +12,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0d7497f5fcda3b871c5a1ad57cf04767617bdab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ec02b9077108687b02e76db22f6349253bdbcb1f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107769"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841575"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
-Esta interfaz representa un atributo personalizado, y puede proporcionar el nombre, el elemento primario y el tipo de clase del atributo.  
+Esta interfaz representa un atributo personalizado, y puede proporcionar el nombre, el primario y el tipo de clase del atributo.  
   
 ## <a name="syntax"></a>Sintaxis  
   
 ```  
-IDebugCustomAttribute : IUnknown  
+IDebugCustomAttribute : IUnknown  
 ```  
   
 ## <a name="notes-for-implementers"></a>Notas para los implementadores  
@@ -48,12 +45,12 @@ IDebugCustomAttribute : IUnknown
 |[GetAttributeBytes](../../../extensibility/debugger/reference/idebugcustomattribute-getattributebytes.md)|Obtiene la información de atributo como un blob de bytes.|  
   
 ## <a name="remarks"></a>Comentarios  
- Un atributo personalizado es una estructura de C# que proporciona metadatos personalizados asociados a una determinada clase o método.  
+ Un atributo personalizado es una estructura de C# que proporciona metadatos personalizados asociados con una determinada clase o método.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   

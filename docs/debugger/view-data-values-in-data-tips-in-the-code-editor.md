@@ -1,8 +1,7 @@
 ---
-title: Ver valores de datos de información sobre datos en el editor de código | Documentos de Microsoft
-ms.custom: ''
-ms.date: 07/14/2017
-ms.technology: vs-ide-debug
+title: Ver los valores de variable en la información sobre datos | Microsoft Docs
+ms.custom: seodec18
+ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,125 +18,113 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b260cd8a4cd102683c4342d5f199102660cfbe90
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 59f7b21530ff51697daca40b5c9f412682f7df89
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477334"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204406"
 ---
-# <a name="view-data-values-in-datatips-in-the-code-editor"></a>Ver valores de datos de información sobre datos en el editor de código
-La Información sobre datos es una manera útil de ver información sobre las variables del programa durante la depuración. La Información sobre datos funciona únicamente en modo de interrupción y únicamente con las variables que están dentro del actual ámbito de ejecución.
-  
-### <a name="to-display-a-datatip"></a>Para mostrar una información sobre datos  
-  
-1. Establecer un punto de interrupción e inicie la depuración (presione **F5**).
+# <a name="view-data-values-in-datatips-in-the-code-editor"></a>Ver valores de datos en la información sobre datos en el editor de código
 
-2. Cuando está en pausa en el depurador, coloque el puntero del mouse sobre cualquier variable en el ámbito actual.
+La Información sobre datos es una manera útil de ver información sobre las variables del programa durante la depuración. La Información sobre datos funciona únicamente en modo de interrupción y únicamente con las variables que están dentro del actual ámbito de ejecución. Si esta es la primera vez que intenta depurar código, le recomendamos que lea [Cómo depurar para principiantes sin experiencia](../debugger/debugging-absolute-beginners.md) y [Fix bugs by writing better C# code](../debugger/write-better-code-with-visual-studio.md) (Mejora de la escritura de código de C# para solucionar errores) antes de continuar con este artículo.
   
-     Aparece la Información sobre datos.
-  
-3.  La Información sobre datos desaparece al quitar el puntero del mouse. Para anclar la información sobre datos para que permanezca abierta, haga clic en el **anclar a origen** icono o botón secundario en una variable, a continuación, haga clic en **anclar a origen**.
+## <a name="work-with-datatips"></a>Trabajar con información sobre datos
 
-    ![Fijar una sugerencia de datos](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
+Información sobre datos solo aparece en modo de interrupción y solo en las variables que se encuentran en el ámbito actual de ejecución.
 
-    > [!NOTE]
-    > Las informaciones sobre datos siempre se evalúan en el contexto en el que se suspende la ejecución, y no en el que el cursor se mantiene sobre un elemento. Si mantiene el cursor sobre una variable en otra función con el mismo nombre que una variable que está en el contexto actual, el valor de la variable de la otra función se mostrará como el valor de la variable del contexto actual.
+### <a name="display-a-datatip"></a>Mostrar una información sobre datos  
   
-### <a name="to-unpin-a-datatip-and-make-it-float"></a>Desanclar la Información sobre datos y dejar que flote  
+1. Establezca un punto de interrupción en el código e iniciar la depuración presionando **F5** o seleccionando **depurar** > **Iniciar depuración**.
   
--   En una información sobre datos anclada, haga clic en el **Desanclar del origen** icono.  
+1. Cuando se pausa en el punto de interrupción, mantenga el mouse sobre cualquier variable en el ámbito actual. Aparece una información sobre datos, que muestra el nombre y el valor actual de la variable.
+
+### <a name="make-a-datatip-transparent"></a>Convertir en transparente una información sobre datos  
+
+Para hacer una información sobre datos transparente para ver el código que está debajo de él, mientras que en la información sobre datos, presione **Ctrl**. La información sobre datos permanecerá transparente mientras mantiene presionada la **Ctrl** clave. Esto no funciona para información sobre datos anclada o flota.  
+### <a name="pin-a-datatip"></a>Anclar una información sobre datos
+
+Para anclar una información sobre datos para que permanezca abierta, seleccione la chincheta **anclar a origen** icono. 
+
+![Anclar una información sobre datos](../debugger/media/dbg-tips-data-tips-pinned.png "anclar una información sobre datos")
+
+Puede mover una información sobre datos anclada arrastrando en torno a la ventana de código. Aparece un icono de chincheta en el medianil junto a la línea de a que la información sobre datos está anclado. 
+
+>[!NOTE]
+>Información sobre datos siempre se evalúa en el contexto donde se suspende la ejecución, no el cursor actual o la ubicación de la información sobre datos. Si mantiene el puntero sobre una variable en otra función que tiene el mismo nombre que una variable en el contexto actual, se muestra el valor de la variable en el contexto actual.
   
-     El icono pasa a la posición desanclada. La Información sobre datos flota ahora sobre las ventanas abiertas. La Información sobre datos que flota se cierra cuando la sesión de depuración finaliza.  
+### <a name="unpin-a-datatip-from-source"></a>Desanclar la información sobre datos de origen
+
+Para hacer flotar una información sobre datos anclada, mantenga el mouse sobre la información sobre datos y seleccione el icono de chincheta en el menú contextual. 
+
+El icono de alfiler cambia a la posición desanclada y la información sobre datos flota ahora o se puede arrastrar ventanas abiertas por encima de todo. La información sobre datos flotante se cierre cuando finaliza la sesión de depuración.  
   
-### <a name="to-repin-a-floating-datatip"></a>Para volver a anclar una Información sobre datos flotante  
+### <a name="repin-a-datatip"></a>Anclar una información sobre datos  
   
--   En una Información sobre datos, haga clic en el icono de anclaje.  
+Para anclar una información sobre datos flotante al origen, sitúe el puntero sobre él en el editor de código y seleccione el icono de chincheta. El icono de alfiler cambia a la posición anclada y nuevo está anclada la información sobre datos solo a la ventana de código. 
+
+Si una información sobre datos flota sobre una ventana de código que no sean de origen, el icono de PIN no está disponible y no puede ser vuelto a anclar la información sobre datos. Para tener acceso al icono de chincheta, devolver la información sobre datos a la ventana del editor de código arrastrarla o dar el foco de la ventana de código. 
   
-     El icono pasa a la posición anclada. Si la Información sobre datos está fuera de una ventana de código fuente, el icono está deshabilitado y no se puede anclar.  
+### <a name="close-a-datatip"></a>Cerrar una información sobre datos  
   
-### <a name="to-close-a-datatip"></a>Para cerrar una Información sobre datos  
+Para cerrar una información sobre datos, mantenga el mouse sobre la información sobre datos y seleccione Cerrar (**x**) icono en el menú contextual.  
   
--   Coloque el puntero del mouse sobre una información sobre datos y, a continuación, haga clic en el **cerrar** icono.  
+### <a name="close-all-datatips"></a>Cierre todas las sugerencias de datos  
   
-### <a name="to-close-all-datatips"></a>Para cerrar toda la Información sobre datos  
+Para cerrar la información sobre todos los datos, en el **depurar** menú, seleccione **borrar todas las sugerencias de datos**.  
   
--   En el **depurar** menú, haga clic en **borrar la información sobre datos todos los**.  
+### <a name="close-all-datatips-for-a-specific-file"></a>Cierre todas las sugerencias de datos para un archivo específico  
   
-### <a name="to-close-all-datatips-for-a-specific-file"></a>Para cerrar toda la información sobre datos de un archivo concreto  
-  
--   En el **depurar** menú, haga clic en **desactive todos los información sobre datos anclada en** *archivo*.  
+Para cerrar todas las sugerencias de datos para un archivo específico, en el **depurar** menú, seleccione **borrar todos los información sobre datos anclada a \<Filename >**.  
   
 ## <a name="expand-and-edit-information"></a>Expandir y editar información  
- Con la Información sobre datos, se puede expandir una matriz, una estructura o un objeto para ver sus miembros. También se puede editar el valor de una variable de una Información sobre datos.  
+Con la Información sobre datos, se puede expandir una matriz, una estructura o un objeto para ver sus miembros. También se puede editar el valor de una variable de una Información sobre datos.  
   
-#### <a name="to-expand-a-variable-to-see-its-elements"></a>Para expandir una variable y ver sus elementos  
-  
--   En una información sobre datos, coloque el puntero del mouse sobre la **+** inicio de sesión que precede al nombre de variable.  
-  
-    La variable se expande y se muestran sus elementos en forma de árbol.
+### <a name="expand-a-variable"></a>Expandir una variable
 
-    ![Ver información sobre datos](../debugger/media/dbg-tour-data-tips.gif "ver una sugerencia de datos")
-  
-    Cuando la variable está expandida, puede utilizar las teclas de dirección en el teclado para desplazarse de arriba abajo. También puede utilizar el mouse.  
-  
-#### <a name="to-edit-the-value-of-a-variable-using-a-datatip"></a>Para modificar el valor de una variable mediante la Información sobre datos  
-  
-1.  En una Información sobre datos, haga clic en el valor. En los valores de solo lectura, no está habilitado.  
-  
-2.  Escriba el nuevo valor y presione ENTRAR.  
-  
-## <a name="making-a-datatip-transparent"></a>Configurar una Información sobre datos como transparente  
- Si desea ver el código que está detrás de una Información sobre datos, puede configurar temporalmente dicha información como transparente. Esto no se aplica a la información sobre datos cuando está anclada o flota.  
-  
-#### <a name="to-make-a-datatip-transparent"></a>Para configurar una Información sobre datos como transparente  
-  
--   En una Información sobre datos, presione CTRL.  
-  
-     La Información sobre datos permanecerá transparente mientras mantenga presionada la tecla CTRL.  
-  
+Para expandir un objeto en una información sobre datos para ver sus elementos, mantenga el mouse sobre las flechas de expansión antes de los nombres de elemento para mostrar los elementos en forma de árbol. Para una información sobre datos anclada, seleccione el **+** antes de la variable de nombre y, a continuación, expanda el árbol. 
+
+![Expanda una información sobre datos](../debugger/media/dbg-tour-data-tips.png "expandir una información sobre datos")
+
+Puede usar el mouse o las teclas de flecha del teclado para mover hacia arriba y abajo en la vista ampliada. 
+
+También puede anclar elementos expandidos a la información sobre datos anclada al mantener el mouse sobre ellos y seleccionando sus iconos de marcador. Los elementos aparecen a continuación, en la información sobre datos anclada después de contrae el árbol. 
+
+### <a name="edit-the-value-of-a-variable"></a>Edite el valor de una variable
+
+Para editar el valor de una variable o un elemento en una información sobre datos, seleccione el valor, escriba un nuevo valor y presione **ENTRAR**. Selección está deshabilitada para los valores de solo lectura.  
+
 ## <a name="visualize-complex-data-types"></a>Visualizar tipos de datos complejos  
- Si aparece un icono de lupa situado junto a un nombre de variable en una información sobre datos, uno o varios [visualizadores](../debugger/create-custom-visualizers-of-data.md), como el [cadena visualizadores](../debugger/string-visualizer-dialog-box.md), están disponibles para las variables de ese tipo de datos. Los visualizadores se pueden utilizar para mostrar la información de manera más significativa, normalmente de forma gráfica.
+
+Un icono de lupa junto a una variable o un elemento en una información sobre datos significa que uno o más [visualizadores](../debugger/create-custom-visualizers-of-data.md), como el [visualizador de texto](../debugger/string-visualizer-dialog-box.md), están disponibles para la variable. Los visualizadores de mostrar información de una manera más significativa, a veces, gráfica.
   
-#### <a name="to-view-the-contents-of-a-variable-using-a-visualizer"></a>Para ver el contenido de una variable mediante un visualizador  
-  
--   Haga clic en el icono de lupa ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "icono visualizador") para seleccionar el visualizador predeterminado del tipo de datos.  
-  
-     -o bien-  
-  
-     Haga clic en la flecha emergente junto al visualizador para seleccionar una lista emergente de visualizadores adecuados para el tipo de datos.  
-  
-     Un visualizador muestra la información.  
-  
-## <a name="add-information-to-a-watch-window"></a>Agregar información a una ventana Inspección  
- Si desea seguir examinando una variable en una vista de lista, puede agregar la variable a la **inspección** ventana desde una información sobre datos.  
-  
-#### <a name="to-add-a-variable-to-the-watch-window"></a>Para agregar una variable a la ventana Inspección  
-  
--   Haga clic en una información sobre datos y, a continuación, haga clic en **Agregar inspección**.  
-  
-     La variable se agrega a la **inspección** ventana. Si está usando una edición que admite varias **inspección** windows, la variable se agrega a **Inspección 1.**  
+Para ver el elemento con el visualizador predeterminado para el tipo de datos, seleccione el icono de lupa ![icono visualizador](../debugger/media/dbg-tips-visualizer-icon.png "icono visualizador"). Seleccione la flecha situada junto al icono de lupa para seleccionar de una lista de visualizadores para el tipo de datos.  
+
+## <a name="add-a-variable-to-a-watch-window"></a>Agregar una variable a una ventana Inspección  
+
+Si desea seguir examinando una variable, puede agregarlo a un **inspección** ventana desde una información sobre datos. Haga clic en la variable en la información sobre datos y seleccione **Agregar inspección**. 
+
+La variable aparece en el **inspección** ventana. Si la edición de Visual Studio admite más de un **inspección** ventana, la variable aparece en **Inspección 1**. 
   
 ## <a name="import-and-export-datatips"></a>Importar y exportar información sobre datos  
- Puede exportar Información sobre datos a un archivo XML, que puede compartir con un colega o modificar con un editor de texto.  
+
+Puede exportar información sobre datos a un archivo XML, que puede compartir o editar con un editor de texto. También puede importar un archivo DataTip XML ha recibido o editado. 
   
-#### <a name="to-export-datatips"></a>Para exportar información sobre datos  
+**Para exportar información sobre datos:** 
   
-1.  En el menú Depurar, haga clic en **exportar información sobre datos**.  
+1. Seleccione **depurar** > **exportar información sobre datos**.  
+   
+1. En el **exportar información sobre datos** cuadro de diálogo, vaya a la ubicación para guardar el archivo XML, escriba un nombre para el archivo y, a continuación, seleccione **guardar**.  
   
-     El **exportar información sobre datos** aparece el cuadro de diálogo.  
+**Para importar información sobre datos:** 
   
-2.  Utilizar técnicas del archivo estándar para navegar hasta la ubicación donde desea guardar el archivo XML, escriba un nombre para el archivo en el **nombre de archivo** cuadro y, a continuación, haga clic en **Aceptar**.  
-  
-#### <a name="to-import-datatips"></a>Para importar información sobre datos  
-  
-1.  En el menú Depurar, haga clic en **importar información sobre datos**.  
-  
-     El **importar información sobre datos** aparece el cuadro de diálogo.  
-  
-2.  Utilice el cuadro de diálogo para buscar el archivo XML que desea abrir y haga clic en **Aceptar**.  
-  
+1. Seleccione **depurar** > **importar información sobre datos**.  
+   
+1. En el **importar información sobre datos** cuadro de diálogo, seleccione el archivo de DataTips XML que desea abrir y, a continuación, seleccione **abrir**.  
+
 ## <a name="see-also"></a>Vea también  
- [Ver los datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
- [Inspección y ventanas de inspección rápida](../debugger/watch-and-quickwatch-windows.md)   
+ [¿Qué es la depuración?](../debugger/what-is-debugging.md)  
+ [Corrección de errores escribiendo mejor código de C#](../debugger/write-better-code-with-visual-studio.md)  
+ [Primer vistazo al depurar](../debugger/debugger-feature-tour.md) [ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
+ [Ventanas Inspección e Inspección rápida](../debugger/watch-and-quickwatch-windows.md)   
  [Create Custom Visualizers](../debugger/create-custom-visualizers-of-data.md) (Crear visualizadores personalizados)   

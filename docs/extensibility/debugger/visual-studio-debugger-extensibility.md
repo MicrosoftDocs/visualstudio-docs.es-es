@@ -1,9 +1,6 @@
 ---
 title: Extensibilidad del depurador de Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Debugging SDK
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0be4a96854315bcf8b83db86692758e198980cd
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 55a6c0098779b96592335c4f74309338e8089e97
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370931"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822737"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Extensibilidad del depurador de Visual Studio
 Visual Studio incluye a un depurador de código fuente totalmente interactivas, que proporciona una herramienta eficaz y fácil de usar para localizar errores en el programa. El depurador tiene compatibilidad completa con Visual Basic, C#, C/C++ y JavaScript. Sin embargo, con el [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], que se disponibles desde el [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=214453), pueden admitir otros lenguajes de programación en el depurador con las mismas características enriquecidas.  
@@ -48,5 +45,5 @@ Visual Studio incluye a un depurador de código fuente totalmente interactivas, 
  [Referencia](../../extensibility/debugger/reference/reference-visual-studio-debugging-apis.md)  
  Documentos la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] API de depuración.  
   
- [Ejemplos](../../extensibility/debugger/visual-studio-debugging-samples.md)  
+ [Muestras](../../extensibility/debugger/visual-studio-debugging-samples.md)  
  Contiene vínculos a un ejemplo de common language runtime expresión del evaluador de expresiones y un ejemplo de motor de depuración.

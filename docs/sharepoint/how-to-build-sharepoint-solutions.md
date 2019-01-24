@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: compilar soluciones de SharePoint | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Compilar soluciones de SharePoint | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,16 +14,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22fda2415cfb9847c006a0bb4a0d0de576beb073
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: d7c6b0b3a3e99c5c62713d1fdc12952ea421d8c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756081"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928912"
 ---
-# <a name="how-to-build-sharepoint-solutions"></a>Cómo: compilar soluciones de SharePoint
+# <a name="how-to-build-sharepoint-solutions"></a>Procedimiento Compilar soluciones de SharePoint
 
-Compilación de SharePoint solución no es diferente de generar otras aplicaciones en Visual Studio. Para obtener más información sobre la creación de aplicaciones, consulte [compilar y generar en Visual Studio](../ide/compiling-and-building-in-visual-studio.md). Para obtener una explicación de algunas consideraciones que son específicas para soluciones de SharePoint, vea [Cómo: implementar y publicar una solución de SharePoint en un sitio de SharePoint local](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).
+Compilación de SharePoint solución no es diferente de generar otras aplicaciones en Visual Studio. Para obtener más información sobre la creación de aplicaciones, consulte [compilar y generar en Visual Studio](../ide/compiling-and-building-in-visual-studio.md). Para obtener una explicación de algunas consideraciones que son específicas para soluciones de SharePoint, vea [Cómo: Implementar y publicar una solución de SharePoint en un sitio de SharePoint local](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).
 
 ## <a name="to-build-sharepoint-solutions"></a>Para compilar soluciones de SharePoint
 
@@ -38,4 +35,4 @@ Compilación de SharePoint solución no es diferente de generar otras aplicacion
 
 ## <a name="see-also"></a>Vea también
 
-- [Compilar y depurar soluciones de SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
+- [Build and debug SharePoint solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md) (Compilar y depurar las soluciones de SharePoint)

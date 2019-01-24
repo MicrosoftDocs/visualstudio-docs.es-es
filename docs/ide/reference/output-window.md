@@ -2,7 +2,6 @@
 title: Resultados (Ventana)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.build.output
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e9af45262649473f9676bff80b4a238fdd642ac
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: f5121053ebb88d3c6c5bcbedbb2798daff3ad07f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844217"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836496"
 ---
 # <a name="output-window"></a>Resultados (ventana)
 
@@ -78,7 +77,7 @@ Si usa el desplazamiento automático en la ventana de **salida** y después se d
 ## <a name="see-also"></a>Vea también
 
 - [Mensajes de diagnóstico en la ventana de resultados](../../debugger/diagnostic-messages-in-the-output-window.md)
-- [Cómo: Controlar la ventana Resultados](http://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
+- [Cómo: Controlar la ventana Resultados](https://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
 - [Compilar y generar](../../ide/compiling-and-building-in-visual-studio.md)
 - [Descripción de las configuraciones de compilación](../../ide/understanding-build-configurations.md)
 - [Información general de la biblioteca de clases](/dotnet/standard/class-library-overview)

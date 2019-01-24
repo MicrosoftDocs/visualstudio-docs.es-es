@@ -1,9 +1,7 @@
 ---
 title: 'Paso 2: Agregar un objeto aleatorio y una lista de iconos'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 95faea28-eddc-4cfa-95fb-3b34b5a976d7
 author: TerryGLee
@@ -11,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 84c9c837fdb812b18f72e768b8ee528118b28777
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a8e9787d3f130bc6fb6597b3e8a5a6a8483029d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746837"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907221"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Paso 2: Agregar un objeto aleatorio y una lista de iconos
 En este paso, creará un conjunto de símbolos para formar parejas en el juego. Cada símbolo se agrega a dos celdas aleatorias del elemento TableLayoutPanel en el formulario. Para ello, se utilizan dos instrucciones `new` para crear dos objetos. El primero es un objeto <xref:System.Random> como el usado en el juego de la prueba de matemáticas. Se utiliza en este código para elegir aleatoriamente celdas de TableLayoutPanel. El segundo objeto, que tal vez no conozca, es un objeto <xref:System.Collections.Generic.List%601> que se utiliza para almacenar los símbolos elegidos al azar.
@@ -43,7 +41,7 @@ En este paso, creará un conjunto de símbolos para formar parejas en el juego. 
 
      Es más sencillo comprender el código (y los comentarios) si se examina en secciones pequeñas. Sus programas pueden utilizar objetos de lista para realizar un seguimiento de muchos tipos de elementos distintos. Una lista puede contener números, valores true/false, texto u otros objetos. Se puede tener un objeto de lista que contiene otros objetos de lista. Los elementos en una lista se llaman elementos, y cada lista solo contiene elementos de un tipo. Por tanto, una lista de números solo puede contener números; no se puede agregar texto a esa lista. De igual modo, tampoco se pueden agregar números a una lista de valores true/false.
 
-     Cuando se crea un objeto `List` mediante una instrucción `new`, debe especificar el tipo de datos que desea almacenar en él. Por eso la información sobre herramientas de la parte superior de la ventana **IntelliSense** muestra los tipos de elementos de la lista. Además, eso es lo que significa `List<string>` (en Visual C#) y `List(Of String)` (en Visual Basic): es un objeto `List` que contiene elementos del tipo de datos `string`. Una cadena es lo que su programa utiliza para almacenar texto, que es lo que la información sobre herramientas de la parte derecha de la ventana **IntelliSense** le indica.
+     Cuando se crea un objeto `List` mediante una instrucción `new`, debe especificar el tipo de datos que desea almacenar en él. Por eso la información sobre herramientas de la parte superior de la ventana **IntelliSense** muestra los tipos de elementos de la lista. Además, eso es lo que significa `List<string>` (en Visual C#) y `List(Of String)` (en Visual Basic): Es un objeto `List` que contiene elementos de tipo de datos `string`. Una cadena es lo que su programa utiliza para almacenar texto, que es lo que la información sobre herramientas de la parte derecha de la ventana **IntelliSense** le indica.
 
 4.  En Visual Basic se debe crear primero una matriz temporal, pero en Visual C#, la lista se puede crear con una instrucción. Esto es así porque el lenguaje Visual C# tiene *inicializadores de colección*, que preparan la lista para aceptar valores. En Visual Basic, puede utilizar un inicializador de colección. Sin embargo, por compatibilidad con la versión anterior de Visual Basic, recomendamos utilizar el código anterior.
 
@@ -56,4 +54,4 @@ En este paso, creará un conjunto de símbolos para formar parejas en el juego. 
 
 -   Para ir al siguiente paso del tutorial, vea [Paso 3: Asignar un icono aleatorio a cada etiqueta](../ide/step-3-assign-a-random-icon-to-each-label.md).
 
--   Para volver al paso anterior del tutorial, vea [Paso 1: Crear un proyecto y agregar una tabla al formulario](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md).
+-   Para volver al paso anterior del tutorial, vea [Paso 1: Crear un proyecto y agregar una tabla a un formulario](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md).

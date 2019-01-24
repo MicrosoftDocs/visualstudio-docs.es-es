@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eead4780ff061ff9c7280aeee0936c8f64741981
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2a64bc0b3543af322ec092340026e4abdc7380f9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725795"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097323"
 ---
 # <a name="idebugapplicationhandleruntimeerror"></a>IDebugApplication::HandleRuntimeError
-Hace que el subproceso actual se bloquee y envía una notificación del error para el IDE del depurador.  
+Hace que el subproceso actual se bloquea y envía una notificación del error para el IDE del depurador.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT HandleRuntimeError(  
    IActiveScriptErrorDebug*  pErrorDebug,  
    IActiveScriptSite*        pScriptSite,  
@@ -42,16 +42,16 @@ HRESULT HandleRuntimeError(
   
 #### <a name="parameters"></a>Parámetros  
  `pErrorDebug`  
- [in] El error que se ha producido.  
+ [in] Se produjo el error.  
   
  `pScriptSite`  
  [in] El sitio de la secuencia de comandos del subproceso.  
   
  `pbra`  
- [out] Acción a realizar cuando el depurador reanuda la aplicación.  
+ [out] Acción necesaria cuando el depurador reanuda la aplicación.  
   
  `perra`  
- [out] Acción a realizar cuando el depurador reanuda la aplicación si se produce un error.  
+ [out] Acción necesaria cuando el depurador reanuda la aplicación si se produce un error.  
   
  `pfCallOnScriptError`  
  [out] Marca que es `TRUE` si el motor debe llamar a la `IActiveScriptSite::OnScriptError` método.  
@@ -64,14 +64,14 @@ HRESULT HandleRuntimeError(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Un motor de lenguaje llama a este método en el contexto de un subproceso que causa un error de tiempo de ejecución. Este método hace que el subproceso actual se bloquee y envía una notificación de error que se envía al depurador IDE. Cuando el depurador IDE reanuda la aplicación, este método devuelve a la acción que se debe realizar.  
+ Un motor de lenguaje llama a este método en el contexto de un subproceso que produce un error de tiempo de ejecución. Este método hace que el subproceso actual se bloquea y envía una notificación de error para enviarse a la IDE del depurador. Cuando reanuda la aplicación en el IDE del depurador, este método devuelve con la acción que se realizará.  
   
 > [!NOTE]
->  Mientras se encuentra en el error de tiempo de ejecución, el motor del lenguaje puede llamarse mediante el subproceso para realizar tareas tales como enumerar los marcos de pila o se evalúan las expresiones.  
+>  Mientras se encuentra en el error de tiempo de ejecución, el motor de lenguaje puede llamarse mediante el subproceso para realizar tareas tales como enumerar los marcos de pila o evaluar expresiones.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugApplication (interfaz)](../../winscript/reference/idebugapplication-interface.md)   
  [IActiveScriptErrorDebug (interfaz)](../../winscript/reference/iactivescripterrordebug-interface.md)   
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)   
- [Enumeración BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)   
+ [BREAKRESUMEACTION (enumeración)](../../winscript/reference/breakresumeaction-enumeration.md)   
  [ERRORRESUMEACTION (Enumeración)](../../winscript/reference/errorresumeaction-enumeration.md)

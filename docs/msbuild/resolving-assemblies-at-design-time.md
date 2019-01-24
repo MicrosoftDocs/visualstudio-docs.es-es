@@ -1,8 +1,6 @@
 ---
 title: Resolución de ensamblados en tiempo de diseño | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad24bcf461dab05444f0e26ffd4e0c826f3f2bed
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 7e8f2bc946df5a84b85fc64f513d35c94c98b152
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153467"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986081"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>Resolución de ensamblados en tiempo de diseño
 Cuando se agrega una referencia a un ensamblado mediante la pestaña **.NET** del cuadro de diálogo **Agregar referencia**, la referencia señala a un ensamblado de referencia intermedio, es decir, un ensamblado que contiene toda la información de firma y de tipos, pero que no contiene código necesariamente. La pestaña **.NET** enumera los ensamblados de referencia que corresponden a los ensamblados en tiempo de ejecución en .NET Framework. Además, enumera los ensamblados de referencia que corresponden a los ensamblados en tiempo de ejecución de las carpetas AssemblyFoldersEx que utilizan otros fabricantes.  

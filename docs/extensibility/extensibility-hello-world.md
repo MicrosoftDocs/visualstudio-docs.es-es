@@ -1,6 +1,5 @@
 ---
-title: Hola mundo | Microsoft Docs
-ms.custom: ''
+title: Tutorial de Hello World extensión | Microsoft Docs
 ms.date: 07/10/2017
 ms.topic: conceptual
 ms.assetid: f74e1ad1-1ee5-4360-9bd5-d82467b884ca
@@ -9,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91d9c809d16a3763bed75d5de4c03bd7112c6e8a
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 1e7d221526a0fc0214b57eff0c122e526fc09029
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356761"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827090"
 ---
-# <a name="create-your-first-extension-hello-world"></a>Crear su primera extensión: Hola a todos
+# <a name="create-your-first-extension-hello-world"></a>Cree su primera extensión: Hello World
 
 En este ejemplo Hello World explica cómo crear su primera extensión para Visual Studio. Este tutorial muestra cómo agregar un comando nuevo a Visual Studio.
 
@@ -30,6 +29,9 @@ En el proceso, obtendrá información sobre cómo:
 Para este ejemplo, va a usar Visual C# para agregar que un botón de menú personalizado denominado "Por ejemplo Hello World!" es similar a esto:
 
 ![Comando de Hello World](media/hello-world-say-hello-world.png)
+
+> [!NOTE]
+> En este artículo se aplica a Visual Studio en Windows. Para Visual Studio para Mac, consulte [tutorial de extensibilidad en Visual Studio para Mac](/visualstudio/mac/extending-visual-studio-mac-walkthrough).
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -133,6 +135,6 @@ Debería ver la salida desde el nuevo comando personalizado, en este caso, el cu
 
 Ahora que conoce los conceptos básicos de trabajar con la extensibilidad de Visual Studio, aquí es donde puede obtener más información:
 
-* [Empezar a desarrollar extensiones de Visual Studio](starting-to-develop-visual-studio-extensions.md) -ejemplos, tutoriales. y publicar la extensión.
+* [Empezar a desarrollar extensiones de Visual Studio](starting-to-develop-visual-studio-extensions.md) -ejemplos, tutoriales. y publicar la extensión
 * [Novedades de Visual Studio 2017 SDK](what-s-new-in-the-visual-studio-2017-sdk.md) -nuevas características de extensibilidad de Visual Studio 2017
 * [Dentro de Visual Studio SDK](internals/inside-the-visual-studio-sdk.md) -Obtenga información sobre los detalles de extensibilidad de Visual Studio

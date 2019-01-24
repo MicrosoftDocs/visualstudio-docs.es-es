@@ -1,5 +1,5 @@
 ---
-title: Enlace de un controlador de pruebas o un agente de pruebas a un adaptador de red en Visual Studio
+title: Enlace un controlador de pruebas o un agente de pruebas a un adaptador de red
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 7ec26a9356c0136404f6fb9fe97e88b7b40ecf7f
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 4d83dcd0d5c791089c2d699517cb75a5a3e24b33
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203968"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891065"
 ---
-# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Cómo: Enlazar un controlador de pruebas o un agente de pruebas a un adaptador de red
+# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Procedimiento para enlazar un controlador de pruebas o un agente de pruebas a un adaptador de red
 
 Si un equipo que tiene instalado el controlador de prueba o el software del agente de pruebas tiene varios adaptadores de red, debe especificar la dirección IP en lugar del nombre del equipo para identificar ese controlador de pruebas o agente de prueba.
 
@@ -30,6 +29,8 @@ Si un equipo que tiene instalado el controlador de prueba o el software del agen
 > **Error 8110. No se puede conectar con el equipo de controlador especificado ni acceder al objeto de controlador**
 >
 > Si se instala el controlador de pruebas en un equipo con varios adaptadores de red, se puede producir este error. También es posible instalar agentes correctamente y no detectar este problema hasta que se ejecute una prueba.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="bind-a-test-controller-to-a-specific-network-adapter"></a>Enlazar un controlador de pruebas a un adaptador de red concreto
 
@@ -49,7 +50,7 @@ Si un equipo que tiene instalado el controlador de prueba o el software del agen
 
 2.  En el panel de resultados, bajo la columna **Nombre**, haga clic con el botón derecho en el servicio **Visual Studio Test Controller** y, a continuación, elija **Detener**.
 
-     O bien
+     o bien
 
      Abra un símbolo del sistema con privilegios elevados y ejecute el comando siguiente:
 
@@ -95,7 +96,7 @@ Si un equipo que tiene instalado el controlador de prueba o el software del agen
 
 2.  En el panel de resultados, bajo la columna **Nombre**, haga clic con el botón derecho en el servicio **Visual Studio Test Agent** y, a continuación, elija **Detener**.
 
-     O bien
+     o bien
 
      Abra un símbolo del sistema con privilegios elevados y ejecute el comando siguiente:
 
@@ -132,6 +133,6 @@ Si un equipo que tiene instalado el controlador de prueba o el software del agen
 
 - [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md)
 - [Modificar la configuración de registro de pruebas de carga](../test/modify-load-test-logging-settings.md)
-- [Configuración de los puertos para los controladores de pruebas y los agentes de pruebas](../test/configure-ports-for-test-controllers-and-test-agents.md)
+- [Configurar los puertos para los controladores de prueba y los agentes de prueba](../test/configure-ports-for-test-controllers-and-test-agents.md)
 - [Cómo: Especificar el tamaño máximo del archivo de registro](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [Cómo: Especificar periodos de tiempo de espera para controladores de pruebas y agentes de pruebas](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

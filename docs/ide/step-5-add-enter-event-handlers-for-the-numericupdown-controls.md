@@ -1,38 +1,40 @@
 ---
 title: 'Paso 5: Agregar controladores de eventos Enter para los controles NumericUpDown'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
 author: TerryGLee
 ms.author: tglee
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e05d6cc201819d37e77587529ffd79a740003a10
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: fae776ebe8c79947fc79f766f1abe1764df0c17a
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747924"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204377"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Paso 5: Agregar controladores de eventos Enter para los controles NumericUpDown
+
 En la quinta parte de este tutorial, agregará <xref:System.Windows.Forms.Control.Enter> controladores de eventos Enter para hacer que sea un poco más fácil escribir las respuestas a los problemas de la prueba. Este código seleccionará y borrará el valor actual de cada uno de los controles <xref:System.Windows.Forms.NumericUpDown> en cuanto el jugador lo elija y comience a escribir un valor diferente.
 
 > [!NOTE]
->  Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos. Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos. Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-verify-the-default-behavior"></a>Para comprobar el comportamiento predeterminado
 
-1.  Ejecute el programa e inicie la prueba.
+1. Ejecute el programa e inicie la prueba.
 
      En el control **NumericUpDown** del problema de suma, el cursor parpadea junto a **0** (cero).
 
-2.  Escriba **3** y observe que en el control aparece **30**.
+2. Escriba **3** y observe que en el control aparece **30**.
 
-3.  Escriba **5** y observe que aparece **350**, aunque cambia a **100** después de un segundo.
+3. Escriba **5** y observe que aparece **350**, aunque cambia a **100** después de un segundo.
 
      Antes de corregir este problema, piense en lo que está sucediendo. Piense por qué no desapareció **0** cuando escribió **3** y por qué **350** cambió a **100**, aunque esto no sucedió inmediatamente.
 
@@ -40,18 +42,19 @@ En la quinta parte de este tutorial, agregará <xref:System.Windows.Forms.Contro
 
 ## <a name="to-add-an-enter-event-handler-for-a-numericupdown-control"></a>Para agregar un controlador de eventos Enter en un control NumericUpDown
 
-1.  Pulse el primer control **NumericUpDown** (denominado "suma") del formulario y, después, en el cuadro de diálogo **Propiedades**, pulse el icono **Eventos** de la barra de herramientas.
+1. Pulse el primer control **NumericUpDown** (denominado "suma") del formulario y, después, en el cuadro de diálogo **Propiedades**, pulse el icono **Eventos** de la barra de herramientas.
 
-     En la pestaña **Eventos** del cuadro de diálogo **Propiedades** se muestran todos los eventos del elemento elegido en el formulario a los que se puede responder (que pueden controlarse). Dado que eligió el control NumericUpDown, todos los eventos enumerados pertenecen a ese control.
+   ![Botón Eventos en la barra de herramientas de propiedades](media/control-properties-events.png)
 
-2.  Seleccione el evento **Enter**, escriba `answer_Enter` y pulse la tecla **Entrar**.
+   En la pestaña **Eventos** del cuadro de diálogo **Propiedades** se muestran todos los eventos del elemento elegido en el formulario a los que se puede responder (que pueden controlarse). Dado que eligió el control NumericUpDown, todos los eventos enumerados pertenecen a ese control.
 
-     ![Cuadro de diálogo Propiedades](../ide/media/express_answerenter.png)
-**Properties** dialog box
+2. Seleccione el evento **Entrar**, escriba `answer_Enter` y, después, presione la tecla **Entrar**.
 
-     Acaba de agregar un controlador de eventos Enter para el control NumericUpDown de suma y ha denominado el controlador **answer_Enter**.
+   ![Escriba el nombre del método del controlador de eventos.](media/enter-event.png)
 
-3.  En el método del controlador de eventos **answer_Enter**, agregue el código siguiente.
+   Acaba de agregar un controlador de eventos Enter para el control NumericUpDown de suma y ha denominado el controlador **answer_Enter**.
+
+3. En el método del controlador de eventos **answer_Enter**, agregue el código siguiente:
 
      [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]
@@ -60,18 +63,18 @@ En la quinta parte de este tutorial, agregará <xref:System.Windows.Forms.Contro
 
      En la línea siguiente se comprueba si se ha llevado a cabo correctamente la conversión (de tipos) de answerBox: de un objeto a un control NumericUpDown. Si la conversión fuera incorrecta, la variable tendría un valor de `null` (en C#) o de `Nothing` (en Visual Basic). La tercera línea obtiene la longitud de la respuesta que aparece en el control NumericUpDown y la cuarta línea selecciona el valor actual del control en función de esa longitud. Ahora, cuando el jugador elige el control, Visual Studio genera este evento, con lo que se selecciona la respuesta actual. En cuanto el jugador empiece a escribir otra respuesta, se borrará la respuesta anterior y se reemplazará por la nueva.
 
-4.  En el **Diseñador de Windows Forms**, elija el control **NumericUpDown** de resta.
+4. En el **Diseñador de Windows Forms**, elija el control **NumericUpDown** de resta.
 
-5.  En la página **Eventos** del cuadro de diálogo **Propiedades**, desplácese hacia abajo hasta el evento **Enter**, seleccione la flecha de lista desplegable al final de la fila y, después, pulse el controlador de eventos `answer_Enter` que acaba de agregar.
+5. En la página **Eventos** del cuadro de diálogo **Propiedades**, desplácese hacia abajo hasta el evento **Enter**, seleccione la flecha de lista desplegable al final de la fila y, después, pulse el controlador de eventos `answer_Enter` que acaba de agregar.
 
-6.  Repita el paso anterior para los controles NumericUpDown de producto y cociente.
+6. Repita el paso anterior para los controles NumericUpDown de producto y cociente.
 
-7.  Guarde el programa y ejecútelo.
+7. Guarde el programa y ejecútelo.
 
      Al elegir un control **NumericUpDown**, el valor existente se selecciona automáticamente y se borra cuando empieza a escribir un valor diferente.
 
 ## <a name="to-continue-or-review"></a>Para continuar o revisar
 
--   Para ir al siguiente paso del tutorial, vea [Paso 6: Agregar un problema de resta](../ide/step-6-add-a-subtraction-problem.md).
+- Para ir al siguiente paso del tutorial, vea [Paso 6: Agregar un problema de resta](../ide/step-6-add-a-subtraction-problem.md).
 
--   Para volver al paso anterior del tutorial, vea [Paso 4: Agregar el método CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
+- Para volver al paso anterior del tutorial, vea [Paso 4: Agregar el método CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).

@@ -1,9 +1,6 @@
 ---
 title: Analizador del servicio de lenguaje heredado y el analizador | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - parsers, language services [managed package framework]
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4ca98b5e4f991e795af95e479fa57a38ca2b57a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: daca7b7d49bcd9aa817f26ad485ec35394f50aff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912051"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941854"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Escáner y analizador del servicio de lenguaje heredado
 El analizador es el corazón del servicio de lenguaje. Las clases de lenguaje de Managed Package Framework (MPF) requieren un analizador de lenguaje para seleccionar la información sobre el código que se va a mostrar. Un analizador separa el texto en tokens léxicos y, a continuación, identifica esos tokens por tipo y funcionalidad.  
@@ -116,7 +113,7 @@ namespace MyNamespace
 12. Lleva a cabo.  
   
 ### <a name="summary"></a>Resumen  
- La operación de llaves coincidentes se suele limitarse a simple pares de elementos del lenguaje. Los elementos más complejos, como coincidencia triples ("`if(...)`","`{`"y"`}`", o "`else`","`{`"y"`}`"), puede aparecer resaltado como parte de una operación de finalización de palabras. Por ejemplo, cuando se termina la palabra "else", la coincidencia de "`if`" puede aparecer resaltada la instrucción. Si hubiera una serie de `if` / `else if` podrían resaltarse instrucciones, todos ellos usando el mismo mecanismo como coincidencia de llaves. El <xref:Microsoft.VisualStudio.Package.Source> clase base ya es compatible con esto, como sigue: el analizador debe devolver el valor del token de desencadenador <xref:Microsoft.VisualStudio.Package.TokenTriggers> combinado con el valor desencadenador <xref:Microsoft.VisualStudio.Package.TokenTriggers> para el token que está antes de la posición del cursor.  
+ La operación de llaves coincidentes se suele limitarse a simple pares de elementos del lenguaje. Los elementos más complejos, como coincidencia triples ("`if(...)`","`{`"y"`}`", o "`else`","`{`"y"`}`"), puede aparecer resaltado como parte de una operación de finalización de palabras. Por ejemplo, cuando se termina la palabra "else", la coincidencia de "`if`" puede aparecer resaltada la instrucción. Si hubiera una serie de `if` / `else if` podrían resaltarse instrucciones, todos ellos usando el mismo mecanismo como coincidencia de llaves. La <xref:Microsoft.VisualStudio.Package.Source> clase base ya es compatible con esto, como sigue: El analizador debe devolver el valor del token de desencadenador <xref:Microsoft.VisualStudio.Package.TokenTriggers> combinado con el valor desencadenador <xref:Microsoft.VisualStudio.Package.TokenTriggers> para el token que está antes de la posición del cursor.  
   
  Para obtener más información, consulte [coincidencia de llaves en un servicio de lenguaje heredado](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).  
   

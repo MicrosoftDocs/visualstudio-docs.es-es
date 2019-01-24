@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Profiling Tools,reports
 ms.assetid: ee5e964c-1222-496d-b825-166443a89d2b
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4bcd83f3be97400b3b6f52646732d7a82ddd2849
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 120e4ba8b05af3998fd75d973a4cfdb4a662630f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255884"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753683"
 ---
 # <a name="common-data-views"></a>Vistas de datos comunes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

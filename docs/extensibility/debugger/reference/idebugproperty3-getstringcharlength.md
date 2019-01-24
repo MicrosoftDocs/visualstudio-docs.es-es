@@ -1,9 +1,6 @@
 ---
 title: IDebugProperty3::GetStringCharLength | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProperty3::GetStringCharLength
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8400a9d0e8123d3803403a3e73c90cc1beea84c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c642a5e20b512b9c71284669d68c36f3c55fd235
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935060"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988221"
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
 Devuelve el número de caracteres de cadena de la propiedad asociada.  

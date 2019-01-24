@@ -7,15 +7,14 @@ author: mblome
 ms.author: mblome
 manager: wpickett
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 086a977ce5ef69da94316fd708b42b79623d596c
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 59a26be52614baf5a8cca48f855f19432ff2af3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143273"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926283"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usar los comprobadores de C++ Core Guidelines
 
@@ -62,11 +61,11 @@ int main()
 
 En este ejemplo muestra algunas de las advertencias que pueden encontrar las reglas de C++ Core Check:
 
-- C26494 es regla tipo.5: siempre debe inicializarse un objeto.
+- C26494 es tipo.5 de regla: Siempre debe inicializarse un objeto.
 
-- C26485 es regla Bounds.3: ninguna decadencia de matriz a puntero.
+- C26485 es Bounds.3 de regla: No hay decadencia de matriz a puntero.
 
-- C26481 es regla Bounds.1: no usar aritmética de puntero. Utilice `span` en su lugar.
+- C26481 es Bounds.1 de regla: No usar aritmética de puntero. Utilice `span` en su lugar.
 
 Si los rulesets de análisis de código de C++ Core Check estén instalados y habilitados cuando se compila este código, las dos primeras advertencias son de salida, pero se suprime la tercera. Este es el resultado de compilación del código de ejemplo:
 

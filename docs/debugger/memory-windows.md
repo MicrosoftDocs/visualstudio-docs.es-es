@@ -2,7 +2,6 @@
 title: Ver la memoria para las variables en el depurador | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 10/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.memory
@@ -25,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04ba88470a6b83a49d7c233266b144387586137f
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
-ms.translationtype: MT
+ms.openlocfilehash: 3e56ad2c36e4b7a22cfb74e020c31e93f4846872
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050124"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837230"
 ---
-# <a name="use-the-memory-windows-in-the-visual-studio-debugger"></a>Usar las ventanas de memoria en el depurador de Visual Studio
+# <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Usar las ventanas de memoria en el depurador de Visual Studio (C#, C++, Visual Basic, F#)
 
 Durante la depuración, la **memoria** ventana muestra el espacio de memoria que está usando la aplicación. 
 
@@ -49,7 +48,7 @@ Al igual que otras ventanas del depurador, el **memoria** windows están disponi
 >[!IMPORTANT]
 >Para habilitar el **memoria** windows, **habilitar la depuración de nivel de dirección** debe seleccionarse en **herramientas** > **opciones** (o **Depurar** > **opciones**) > **depuración** > **General**. 
 
-**Para abrir una ventana memoria**
+**Para abrir una ventana Memoria**
   
 1. Asegúrese de que **habilitar la depuración de nivel de dirección** está seleccionado en **herramientas** > **opciones** (o **depurar**  >  **Opciones**) > **depuración** > **General**. 
    
@@ -81,13 +80,13 @@ De forma predeterminada, el **memoria** ventana trata **dirección** expresiones
   
 ## <a name="customize-the-memory-window"></a>Personalizar la ventana memoria 
 
-De forma predeterminada, contenido de la memoria se muestran como enteros de 1 bytes en formato hexadecimal y ancho de la ventana determina el número de columnas que se muestran. Puede personalizar la forma en la **memoria** ventana muestra el contenido de la memoria.  
+De forma predeterminada, contenido de la memoria se muestran como enteros de 1 bytes en formato hexadecimal y ancho de la ventana determina el número de columnas que se muestran. Puede personalizar el modo en que la ventana **Memoria** muestra el contenido de la memoria.  
   
 **Para cambiar el formato del contenido de la memoria:**  
   
 -  Haga clic en el **memoria** ventana y elija los formatos que desee en el menú contextual.  
   
-**Para cambiar el número de columnas en la ventana memoria:**
+**Para cambiar el número de columnas de la ventana Memoria:**
   
 - Seleccione la flecha desplegable junto a la **columnas** campo y seleccione el número de columnas para mostrar, o seleccione **automática** para ajuste automático según el ancho de la ventana.  
   
@@ -100,7 +99,7 @@ Si no desea que el contenido de la **memoria** ventana para cambiar a medida que
   >[!NOTE]
   >Expresión de Live es un botón de alternancia evaluación y está activada de forma predeterminada, así que seleccione **volver a evaluar automáticamente** lo desactiva. Seleccionar **volver a evaluar automáticamente** nuevo enciende. 
   
-Puede ocultar o mostrar la barra de herramientas en la parte superior de la **memoria** ventana. No tendrá acceso a la **dirección** campo u otras herramientas cuando se oculta la barra de herramientas.  
+Se puede ocultar o mostrar la barra de herramientas en la parte superior de la ventana **Memoria**. No tendrá acceso a la **dirección** campo u otras herramientas cuando se oculta la barra de herramientas.  
   
 **Para alternar la presentación de la barra de herramientas:**  
   
@@ -119,4 +118,4 @@ En las aplicaciones de código nativo, puede usar nombres de registro como expre
    Cuando usa un comando de depuración como **paso**, la dirección de memoria mostrada en el **dirección** campo y en la parte superior de la **memoria** ventana cambia automáticamente cuando el puntero cambios.  
   
 ## <a name="see-also"></a>Vea también  
- [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)
+ [Visualización de datos en el depurador](../debugger/viewing-data-in-the-debugger.md)

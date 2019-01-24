@@ -1,9 +1,6 @@
 ---
 title: THREADSTATE | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - THREADSTATE
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fafceac4da4b80bea73a8ab969f0ecfb52b394d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d980eda1cb876392342e8eef7c49ec68456c8908
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825834"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951088"
 ---
 # <a name="threadstate"></a>THREADSTATE
 Especifica el estado del subproceso.  
@@ -28,7 +25,7 @@ Especifica el estado del subproceso.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-enum enum_THREADSTATE {   
+enum enum_THREADSTATE {   
    THREADSTATE_RUNNING = 0x0001,  
    THREADSTATE_STOPPED = 0x0002,  
    THREADSTATE_FRESH   = 0x0003,  
@@ -39,7 +36,7 @@ typedef DWORD THREADSTATE;
 ```  
   
 ```csharp  
-public enum enum_THREADSTATE {   
+public enum enum_THREADSTATE {   
    THREADSTATE_RUNNING = 0x0001,  
    THREADSTATE_STOPPED = 0x0002,  
    THREADSTATE_FRESH   = 0x0003,  
@@ -70,7 +67,7 @@ public enum enum_THREADSTATE {
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   

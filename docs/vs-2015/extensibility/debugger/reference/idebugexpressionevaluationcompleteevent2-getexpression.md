@@ -17,12 +17,12 @@ ms.assetid: faf6b2dd-2afd-4852-b21c-7e8d3130e141
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca488fb6f8610e0e0043c87427ff605a8127db93
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 51d993e34d5be3b8d5c67ed2a601546242d9909b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838145"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816923"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getexpression"></a>IDebugExpressionEvaluationCompleteEvent2::GetExpression
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Obtiene la expresión original.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT GetExpression(   
+HRESULT GetExpression(   
    IDebugExpression2** ppExpr  
 );  
 ```  
   
 ```csharp  
-int GetExpression(   
+int GetExpression(   
    out IDebugExpression2 ppExpr  
 );  
 ```  

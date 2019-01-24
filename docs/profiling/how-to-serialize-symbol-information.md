@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: Serializar la información de símbolos | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Serializar la información de símbolos | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Performance.General
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a86c7171b781f85ae4679209519267adcadcc090
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 5ae49e4656bcbeb8e1048331b9fb0b61849e4099
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573315"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987606"
 ---
-# <a name="how-to-serialize-symbol-information"></a>Cómo: Serializar la información de símbolos
+# <a name="how-to-serialize-symbol-information"></a>Procedimiento Serializar la información de símbolos
 Puede serializar símbolos que debe tener para analizar la aplicación. La serialización de símbolos agrega símbolos al archivo .*vsp*. Al agregar información de símbolos al archivo .*vsp*, otros usuarios pueden analizar un informe de rendimiento sin tener acceso a los símbolos originales. Si no se serializan los símbolos, debe tener archivos .*exe* y .*pdb* originales instrumentados para analizar el archivo .*vsp*.  
   
 ### <a name="to-automatically-serialize-symbol-information"></a>Para serializar información de símbolos automáticamente  
@@ -38,4 +36,4 @@ Puede serializar símbolos que debe tener para analizar la aplicación. La seria
 ## <a name="see-also"></a>Vea también  
  [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
  [Cómo: Hacer referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md)   
- [Cómo: Guardar archivos del informe analizado](http://msdn.microsoft.com/en-us/0340ddde-caf4-48ac-8af3-d15dcdade556)
+ [Cómo: Guardar archivos del informe analizado](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\))

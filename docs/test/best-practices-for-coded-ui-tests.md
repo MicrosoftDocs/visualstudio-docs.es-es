@@ -1,8 +1,7 @@
 ---
-title: Procedimientos recomendados para pruebas automatizadas de IU en Visual Studio
+title: Procedimientos recomendados para las pruebas automatizadas de IU
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, best practices
@@ -11,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d158d3d0fade2b44cf819cf40209a901534a18ad
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 28781756e46f39aa0925521c0ec0bfacdcca5009
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283281"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848592"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Procedimientos recomendados para las pruebas de IU codificadas
 
 En este tema se describen algunas recomendaciones para el desarrollo de pruebas automatizadas de IU.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="best-practices"></a>Procedimientos recomendados
 

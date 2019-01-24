@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_addressTaken method
 ms.assetid: 0d366188-f5e1-4226-b392-58c09539d097
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b23aa524c026e115e50b94f58b68463a68f67a94
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 04e86b3290411b7840a1c8922413f3bcfcdffead
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825886"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753234"
 ---
 # <a name="idiasymbolgetaddresstaken"></a>IDiaSymbol::get_addressTaken
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera una marca que indica si otro símbolo hace referencia a la dirección d
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT get_addressTaken (   
+HRESULT get_addressTaken (   
    BOOL* pRetVal  
 );  
 ```  

@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 84ab153985935bcdf85aed205516610c04dea83f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633235"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344166"
 ---
 # <a name="object-member-expected"></a>Se esperaba un objeto miembro
 Se intentó realizar una operación en el miembro de datos de un objeto, pero el miembro no existe.  

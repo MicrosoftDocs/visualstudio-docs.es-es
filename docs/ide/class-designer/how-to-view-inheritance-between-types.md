@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: Ver la herencia entre tipos (Diseñador de clases)'
+title: Procedimiento Ver la herencia entre tipos (Diseñador de clases)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.AssociationTypeNotFoundError
@@ -16,16 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3398a5096934397556ae1b20845153bd45a78528
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 9da919b2a3ead6ab48d199e9370c799afb9f9a65
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34000499"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925438"
 ---
-# <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Cómo: Ver la herencia entre tipos en el Diseñador de clases
+# <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Procedimiento Ver la herencia entre tipos en el Diseñador de clases
 
-Si existe, la relación de herencia entre un tipo base y sus tipos derivados se puede buscar en un diagrama de clases del **Diseñador de clases**. Para crear una relación de herencia, si no existe ninguna, entre dos tipos, vea [Cómo: Crear la herencia entre tipos](how-to-create-inheritance-between-types.md).
+Si existe, la relación de herencia entre un tipo base y sus tipos derivados se puede buscar en un diagrama de clases del **Diseñador de clases**. Para crear una relación de herencia entre dos tipos si no existe ninguna, vea [Cómo: Crear herencia entre tipos](how-to-create-inheritance-between-types.md).
 
 ## <a name="to-find-the-base-type"></a>Para buscar el tipo base
 
@@ -50,4 +49,4 @@ También puede hacer clic con el botón derecho en el tipo cuyos tipos derivados
 ## <a name="see-also"></a>Vea también
 
 - [Cómo: Crear asociaciones entre tipos](how-to-create-associations-between-types.md)
-- [Visualización de tipos y relaciones](viewing-types-and-relationships.md)
+- [Visualización de tipos y relaciones](designing-and-viewing-classes-and-types.md)

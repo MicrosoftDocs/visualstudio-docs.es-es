@@ -1,22 +1,20 @@
 ---
-title: 'Tutorial: Capturar información de gráficos mediante programación | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Captura de información de gráficos mediante programación | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 659e370d664b3db2c3624d73164b4489cc2680a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 18ea39346689d2a9a68d34e1e9189f2cab300b02
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933292"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850692"
 ---
-# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Tutorial: Capturar información de gráficos mediante programación
+# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Tutorial: Captura de información de gráficos mediante programación
 Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para capturar mediante programación información de gráficos desde la aplicación Direct3D.  
   
  La captura mediante programación es útil en escenarios tales como:  
@@ -28,7 +26,7 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-qual
 -   Llame a `CaptureCurrentFrame`cuando un problema de representación sea difícil de anticipar y de capturar en pruebas manuales, pero se puede predecir mediante programación usando información sobre el estado de la aplicación en tiempo de ejecución.  
   
 ##  <a name="CaptureDX11_2"></a> Captura mediante programación en Windows 10  
- Esta parte del tutorial explica la captura mediante programación en aplicaciones que usan la API DirectX 11.2 en Windows 10, que usa el método de captura robusta.
+ En esta parte del tutorial se explica la captura mediante programación en aplicaciones que usan la API DirectX 11.2 en Windows 10, que emplea el método de captura robusta.
   
  Esta sección muestra cómo realizar estas tareas:  
   
@@ -36,7 +34,7 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-qual
   
 -   Obtención de la interfaz IDXGraphicsAnalysis  
   
--   Capturar información de gráficos  
+-   Captura de información de gráficos  
   
 > [!NOTE]
 >  Las implementaciones previas de captura mediante programación dependían de herramientas remotas para Visual Studio para [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para proporcionar funcionalidad de captura.
@@ -56,7 +54,7 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-qual
     ```  
   
     > [!IMPORTANT]
-    >  No incluya el encabezado archivo vsgcapture.h—which admite captura mediante programación en Windows 8.0 y versiones anteriores, para realizar la captura mediante programación en las aplicaciones de Windows 10. Este encabezado es incompatible con DirectX 11.2. Si este archivo se incluye después de que se incluye el encabezado d3d11_2.h, el compilador emite una advertencia. Si se incluye vsgcapture.h antes d3d11_2.h, no se iniciará la aplicación.  
+    >  No incluya el archivo de encabezado vsgcapture.h, que admite la captura mediante programación en Windows 8.0 y versione anteriores, para efectuar la captura mediante programación en las aplicaciones de Windows 10. Este encabezado es incompatible con DirectX 11.2. Si este archivo se incluye después de que se incluye el encabezado d3d11_2.h, el compilador emite una advertencia. Si se incluye vsgcapture.h antes d3d11_2.h, no se iniciará la aplicación.  
   
     > [!NOTE]
     >  Si tiene instalada la versión del SDK de DirectX de junio de 2010 en su equipo y la ruta de acceso de inclusión de su proyecto contiene `%DXSDK_DIR%includex86`, muévalo al final de la ruta de acceso de inclusión. Haga lo mismo para la ruta de la biblioteca.  
@@ -88,7 +86,7 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-qual
   > [!NOTE]
   >  Si `DXGIGetDebugInterface1` devuelve `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`), asegúrese de que la aplicación se esté ejecutando en Diagnóstico de gráficos (Alt+F5 en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).  
   
-### <a name="capturing-graphics-information"></a>Capturar información de gráficos  
+### <a name="capturing-graphics-information"></a>Captura de información de gráficos  
  Tenga en cuenta que tiene una interfaz `IDXGraphicsAnalysis` válida, puede utilizar `BeginCapture` y `EndCapture` para capturar información de gráficos.  
   
 ##### <a name="to-capture-graphics-information"></a>Cómo capturar información de gráficos  
@@ -117,6 +115,6 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-qual
 -   Aprender cómo analizar la información de gráficos capturada utilizando la herramienta Diagnóstico de gráficos. Consulte [Introducción](overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: Capturar información de gráficos](walkthrough-capturing-graphics-information.md)   
- [Capturing Graphics Information](capturing-graphics-information.md)   
+ [Tutorial: Captura de información de gráficos](walkthrough-capturing-graphics-information.md)   
+ [Captura de información de gráficos](capturing-graphics-information.md)   
  [Herramienta de captura de línea de comandos](command-line-capture-tool.md)

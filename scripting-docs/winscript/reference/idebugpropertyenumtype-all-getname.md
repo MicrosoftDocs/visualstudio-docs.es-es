@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41eed5e7fd8ba2874250abf60826bc59da1763df
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 25fd535d983d477a86b83953cf56852789747bd0
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923529"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346350"
 ---
 # <a name="idebugpropertyenumtypeallgetname"></a>IDebugPropertyEnumType_All::GetName
 Devuelve un valor BSTR que contiene el nombre de la `EnumType`.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetName(  
    BSTR*  pname  
 );  

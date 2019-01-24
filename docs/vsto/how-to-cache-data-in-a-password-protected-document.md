@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: almacenar en caché datos en un documento protegido por contraseña'
-ms.custom: ''
+title: Procedimiento Almacenar datos en caché en un documento protegido por contraseña
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -12,19 +9,19 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], protected documents
 - datasets [Office development in Visual Studio], caching
 - data [Office development in Visual Studio], caching
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c15d3fee1728118df2701cc940dc288ae500942d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c47f76c2371737b10c5eb58566cef388aff5fcd7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255348"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968422"
 ---
-# <a name="how-to-cache-data-in-a-password-protected-document"></a>Cómo: almacenar en caché datos en un documento protegido por contraseña
+# <a name="how-to-cache-data-in-a-password-protected-document"></a>Procedimiento Almacenar datos en caché en un documento protegido por contraseña
   Si agrega datos a la caché de datos en un documento o libro que está protegido con una contraseña, no se guardan los cambios realizados en los datos en caché automáticamente. Puede guardar los cambios a los datos almacenados en caché mediante el reemplazo de dos métodos en el proyecto.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -49,7 +46,7 @@ ms.locfileid: "35255348"
  [!code-csharp[Trin_CachedDataProtectedDocument#1](../vsto/codesnippet/CSharp/Trin_CachedDataProtectedDocument/ThisDocument.cs#1)]
  [!code-vb[Trin_CachedDataProtectedDocument#1](../vsto/codesnippet/VisualBasic/Trin_CachedDataProtectedDocument/ThisDocument.vb#1)]  
   
-### <a name="compile-the-code"></a>Compile el código  
+### <a name="compile-the-code"></a>Compilar el código  
  Agregue este código a la `ThisDocument` clase del proyecto. Este código supone que la contraseña se almacena en un campo denominado `securelyStoredPassword`.  
   
 ## <a name="cache-in-excel-workbooks"></a>Almacenar en caché en los libros de Excel  
@@ -73,12 +70,10 @@ ms.locfileid: "35255348"
  [!code-vb[Trin_CachedDataProtectedWorkbook#1](../vsto/codesnippet/VisualBasic/Trin_CachedDataProtectedWorkbook/ThisWorkbook.vb#1)]
  [!code-csharp[Trin_CachedDataProtectedWorkbook#1](../vsto/codesnippet/CSharp/Trin_CachedDataProtectedWorkbook/ThisWorkbook.cs#1)]  
   
-### <a name="compile-the-code"></a>Compile el código  
+### <a name="compile-the-code"></a>Compilar el código  
  Agregue este código a la `ThisWorkbook` clase del proyecto. Este código supone que la contraseña se almacena en un campo denominado `securelyStoredPassword`.  
   
 ## <a name="see-also"></a>Vea también  
  [Almacenar datos en caché](../vsto/caching-data.md)   
- [Cómo: almacenar en caché datos para su uso sin conexión o en un servidor](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
- [Cómo: almacenar en caché mediante programación un origen de datos en un documento de Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)  
-  
-  
+ [Cómo: Almacenar en caché datos para su uso sin conexión o en un servidor](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
+ [Cómo: Almacenar en caché mediante programación un origen de datos en un documento de Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)  

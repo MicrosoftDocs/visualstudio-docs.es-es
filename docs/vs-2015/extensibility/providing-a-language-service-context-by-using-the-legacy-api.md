@@ -15,12 +15,12 @@ ms.assetid: daa2df22-9181-4bad-b007-a7d40302bce1
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c075d375e70a33d89e56dc9691b3f7af3ef4473
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 322dc704524a5b0172797c9351e7beb60d778ab4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862990"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781938"
 ---
 # <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>Proporcionar un contexto de servicio de lenguaje a través de la API heredada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

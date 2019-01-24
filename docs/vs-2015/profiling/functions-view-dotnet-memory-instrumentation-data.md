@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Functions view
 ms.assetid: cd45b379-394b-4b71-828c-92cd89e46ae0
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7c47b5246a8a0be75c4108c3526475d30922995c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: 8bacc61ec9c254ce662854a08fe6a508977a72e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270947"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "51730187"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>Vista Funciones: Datos de instrumentación de memoria .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

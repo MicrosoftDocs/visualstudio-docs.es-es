@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag | Documentos de Microsoft
-ms.custom: ''
+title: IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6620993582501e157bc8d53e5c295b4cfe5cb50d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 0c084bf3bb9b28a6af0ddc1aa53c0707d8876966
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463626"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827983"
 ---
 # <a name="idiasymbolfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
-Dado un valor de etiqueta correspondiente, este método devuelve una enumeración de símbolos que se encuentran en esta función de código auxiliar en una dirección virtual relativa especificada.  
+Dado un valor de la etiqueta correspondiente, este método devuelve una enumeración de los símbolos que se encuentran en esta función de código auxiliar en una dirección virtual relativa especificada.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -42,10 +40,10 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag (
  [out] Un puntero a un `IDiaEnumSymbols` puntero de interfaz que se inicializa con el resultado.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Llamar a este método solo en un `IDiaSymbol` interfaz que corresponde a una función de código auxiliar de aceleración.  
+ Llame a este método solo en un `IDiaSymbol` interfaz que corresponde a una función de código auxiliar del acelerador.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

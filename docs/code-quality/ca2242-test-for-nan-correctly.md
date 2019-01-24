@@ -1,8 +1,7 @@
 ---
-title: 'CA2242: Prueba para NaN correcta'
+title: 'CA2242: Comprobar NaN correctamente'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - TestForNaNCorrectly
@@ -18,14 +17,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c742c73d73802a21ea7a21a426cf815ee4e34e2d
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: c809e6fe21bae15fed8c79c03a9210d518c157a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545624"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838641"
 ---
-# <a name="ca2242-test-for-nan-correctly"></a>CA2242: Prueba para NaN correcta
+# <a name="ca2242-test-for-nan-correctly"></a>CA2242: Comprobar NaN correctamente
 
 |||
 |-|-|

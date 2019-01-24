@@ -1,8 +1,7 @@
 ---
-title: Personalización de las tareas de compilación y depuración en Visual Studio mediante tasks.vs.json y launch.vs.json
+title: Personalización de tareas de depuración de compilación con tasks.vs.json y launch.vs.json
 ms.date: 02/21/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - NMAKE [Visual Studio]
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c4b915f632179ff118247e8c046ce980a824ea2
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 2662c09c4d131f52b0426a910d9dd4b60e6b3459
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448092"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270130"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personalización de las tareas de compilación y depuración para el desarrollo de "Abrir carpeta"
 
@@ -33,8 +32,8 @@ Use estos archivos *.json* para personalizar el código base sin proyecto:
 
 |Nombre del archivo|Propósito|
 |-|-|
-|*tasks.vs.json*|Especifique los modificadores del compilador y los comandos de compilación personalizada, además de las tareas arbitrarias (no relacionadas con la compilación).<br>Se accede a través del elemento del menú contextual del **Explorador de soluciones** **Configurar tareas**.|
-|*launch.vs.json*|Especifique los argumentos de la línea de comandos para realizar la depuración.<br>Se accede a través del elemento del menú contextual del **Explorador de soluciones** **Configuración de depuración e inicio**.|
+|*tasks.vs.json*|Especifique los modificadores del compilador y los comandos de compilación personalizada, además de las tareas arbitrarias (no relacionadas con la compilación).<br>Se accede a través del elemento de menú **Configurar tareas** del menú contextual del **Explorador de soluciones**.|
+|*launch.vs.json*|Especifique los argumentos de la línea de comandos para realizar la depuración.<br>Se accede a través del elemento de menú **Configuración de depuración e inicio** del menú contextual del **Explorador de soluciones**.|
 |*VSWorkspaceSettings.json*|Configuración genérica que podría afectar las tareas y el inicio. Por ejemplo, definir `envVars` en *VSWorkspaceSettings.json* agrega las variables de entorno especificadas para ejecutar los comandos de manera externa.<br>Puede crear manualmente este archivo.|
 
 Estos archivos *.json* se encuentran en una carpeta oculta llamada *.vs* en la carpeta raíz del código base. Visual Studio crea los archivos *tasks.vs.json* y *launch.vs.json* según sea necesario cuando se elija **Configurar tareas** o **Configuración de depuración e inicio** en un archivo o una carpeta del **Explorador de soluciones**. Estos archivos *.json* están ocultos porque los usuarios habitualmente no desean insertarlos en el control de código fuente. Sin embargo, si desea poder insertarlos en el control de código fuente, arrastre los archivos a la raíz del código base, donde estarán visibles.
@@ -48,7 +47,7 @@ Puede automatizar los scripts de compilación o cualquier otra operación extern
 
 ![Menú Configurar tareas](../ide/media/customize-configure-tasks-menu.png)
 
-De este modo, se crea (o abre) el archivo *tasks.vs.json* en la carpeta *.vs*. En este archivo, puede definir una tarea de compilación o una tarea arbitraria y luego invocarla con el nombre que le asignó desde el menú contextual del **Explorador de soluciones**.
+De este modo, se crea (o abre) el archivo *tasks.vs.json* en la carpeta *.vs*. En este archivo, puede definir una tarea de compilación o una tarea arbitraria y, después, invocarla con el nombre que le asignó en el menú contextual del **Explorador de soluciones**.
 
 Se pueden agregar tareas personalizadas a archivos individuales o a todos los archivos de un tipo específico. Por ejemplo, los archivos de paquete de NuGet pueden configurarse para que tengan una tarea "Restaurar paquetes" o todos los archivos de origen pueden configurarse para que tengan una tarea de análisis estático, como un linter para todos los archivos *.js*.
 
@@ -119,7 +118,7 @@ Para este tipo de *archivo Make* que contiene destinos de compilación, limpieza
 }
 ```
 
-Una vez que se definen las tareas de compilación en *tasks.vs.json*, se agregan elementos de menú contextual adicionales a los archivos correspondientes en el **Explorador de soluciones**. En este ejemplo, las opciones "compilar", "recompilar" y "limpiar" se agregan al menú contextual de cualquier *archivo Make*.
+Después de definir las tareas de compilación en *tasks.vs.json*, se agregan elementos de menú contextual adicionales a los archivos correspondientes en el **Explorador de soluciones**. En este ejemplo, las opciones "compilar", "recompilar" y "limpiar" se agregan al menú contextual de cualquier *archivo Make*.
 
 ![menú contextual de archivo MAKE con opción de compilar, recompilar y limpiar](media/customize-build-rebuild-clean.png)
 

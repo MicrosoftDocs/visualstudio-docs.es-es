@@ -17,12 +17,12 @@ ms.assetid: 71501356-8a82-4d36-b354-6625bdd2baa0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 857a83b975d2042eebcb4e31e82976efa6072207
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2e113f280d1f1e44a69e605e2facd4f0830cc716
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929158"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721509"
 ---
 # <a name="idebugdocumentcontext2seek"></a>IDebugDocumentContext2::Seek
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ Mueva el contexto del documento mediante un número determinado de las instrucci
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT Seek(   
+HRESULT Seek(   
    int                      nCount,  
    IDebugDocumentContext2** ppDocContext  
 );  
 ```  
   
 ```cpp#  
-int Seek(   
+int Seek(   
    int                        nCount,  
    out IDebugDocumentContext2 ppDocContext  
 );  

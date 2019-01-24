@@ -1,8 +1,8 @@
 ---
-title: Actualización de una instalación basada en red de Visual Studio
+title: Actualización de una instalación basada en red
 description: Más información sobre cómo actualizar una instalación de Visual Studio basada en red con el comando --layout
 ms.date: 08/14/2017
-ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29b9efc68d3cf094873ba5dc5ccd3844eb01209a
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 55509f49aff21d5c4e4319a35de20b29a6bc3f75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138833"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906408"
 ---
-# <a name="update-a-network-based-installation-of-visual-studio"></a>Actualización de una instalación basada en red de Visual Studio
+# <a name="update-a-network-based-installation-of-visual-studio-2017"></a>Actualización de una instalación basada en red de Visual Studio 2017
 
 Se puede actualizar un diseño de instalación de red de Visual Studio con las actualizaciones de producto más recientes, de manera que se puede usar tanto como punto de instalación de la actualización más reciente de Visual Studio como para mantener instalaciones que ya están implementadas en estaciones de trabajo cliente.
 

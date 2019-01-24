@@ -1,8 +1,7 @@
 ---
-title: 'CA1506: Evite el acoplamiento excesivo de clases'
+title: 'CA1506: Evitar el acoplamiento excesivo de clases'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - AvoidExcessiveClassCoupling
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57c23ea9c6afb27ee89886936fff690a4285f5c0
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: aa8d2e85ebacdedfde9d6731ff3e24a557de3e13
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549917"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988561"
 ---
-# <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506: Evite el acoplamiento excesivo de clases
+# <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506: Evitar el acoplamiento excesivo de clases
 
 |||
 |-|-|
@@ -49,4 +48,4 @@ ms.locfileid: "45549917"
 ## <a name="see-also"></a>Vea también
 
 - [Advertencias de mantenimiento](../code-quality/maintainability-warnings.md)
-- [Medir la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+- [Medir la complejidad y el mantenimiento del código administrado](../code-quality/code-metrics-values.md)

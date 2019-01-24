@@ -11,15 +11,15 @@ helpviewer_keywords:
 - UML API, reading models
 ms.assetid: 0f63105e-6079-498a-94f1-318c0f5f9621
 caps.latest.revision: 25
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c9bb652ee6b7ea9500d2ac153ca06d8b11430c9e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 62355c8b934b152aae8d3a4102432d2eb0553473
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942554"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721245"
 ---
 # <a name="read-a-uml-model-in-program-code"></a>Leer un modelo UML en el código del programa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

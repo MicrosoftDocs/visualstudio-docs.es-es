@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: usar la herramienta de búsqueda | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Utilice la herramienta de búsqueda | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Window Finder Tool
@@ -12,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e002682b45d03ef5f9bc93a36bbd9781b46d62
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c63e91cbbda335aea77992583bf3983c08354079
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943081"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965267"
 ---
-# <a name="how-to-use-the-finder-tool"></a>Cómo: Usar la herramienta de búsqueda
+# <a name="how-to-use-the-finder-tool"></a>Procedimiento Uso de la herramienta de búsqueda
 Puede usar la herramienta de búsqueda en el **Buscar ventana** cuadro de diálogo para mostrar la ventana Propiedades o mensajes. La herramienta de búsqueda también puede encontrar ventanas secundarias deshabilitadas y discernir qué ventana resaltar si deshabilita ventanas secundarias se superponen.  
   
  ![Spy&#43; &#43; ventana cuadro de diálogo Buscar](../debugger/media/icon_spy--_find.png "Icon_Spy ++ _Find")  
@@ -48,11 +46,11 @@ Herramienta de búsqueda en el cuadro de diálogo Buscar ventana
   
 4. En **mostrar**, seleccione **propiedades** o **mensajes**.  
   
-5. Presione **Aceptar**.  
+5. Haga clic en **Aceptar**.  
   
     Si seleccionó **propiedades**, el [cuadro de diálogo de propiedades de ventana](../debugger/window-properties-dialog-box.md) se abre. Si seleccionó **mensajes**, un [vista mensajes](../debugger/messages-view.md) abre la ventana.  
   
 ## <a name="see-also"></a>Vea también  
- [Vistas de Spy ++](../debugger/spy-increment-views.md)   
- [Usar Spy ++](../debugger/using-spy-increment.md)   
+ [Vistas de Spy++](../debugger/spy-increment-views.md)   
+ [Usar Spy++](../debugger/using-spy-increment.md)   
  [Referencia de Spy++](../debugger/spy-increment-reference.md)

@@ -1,9 +1,6 @@
 ---
 title: 'Tutorial: Crear el primer complemento VSTO para Project'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a1c6e96815c69ad6a05b3c8bc55e22f13c212e24
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c0edd7a956f158f87a4f5102ab9ba3bb4bae1ec6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884867"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931260"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Tutorial: Crear el primer complemento VSTO para Project
   En este tutorial se muestra cómo crear un complemento VSTO para Microsoft Office Project. Las características que cree en este tipo de solución estarán disponibles para la propia aplicación, con independencia de los proyectos que estén abiertos. Para obtener más información, consulte [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -103,7 +100,7 @@ ms.locfileid: "49884867"
   
 1.  Presione **F5** para compilar y ejecutar el proyecto. Microsoft Project inicia y abre automáticamente un nuevo proyecto en blanco.  
   
-     Al compilar el proyecto, el código se compila en un ensamblado que se incluye en la carpeta de salida de compilación del proyecto. Visual Studio crea también un conjunto de entradas del registro que permiten que Project detecte y cargue el complemento de VSTO, y establece la configuración de seguridad en el equipo de desarrollo para permitir la ejecución del complemento de VSTO. Para obtener más información, consulte [Introducción al proceso de compilación de soluciones de Office](http://msdn.microsoft.com/a9d12e4f-c9ea-4a62-a841-c42b91f831ee).  
+     Al compilar el proyecto, el código se compila en un ensamblado que se incluye en la carpeta de salida de compilación del proyecto. Visual Studio crea también un conjunto de entradas del registro que permiten que Project detecte y cargue el complemento de VSTO, y establece la configuración de seguridad en el equipo de desarrollo para permitir la ejecución del complemento de VSTO. Para obtener más información, consulte [Introducción al proceso de compilación de soluciones de Office](/previous-versions/visualstudio/visual-studio-2010/h2c9cdc0(v=vs.100)).  
   
 2.  Compruebe que se ha agregado una nueva tarea al proyecto en blanco.  
   
@@ -123,13 +120,13 @@ ms.locfileid: "49884867"
 ## <a name="next-steps"></a>Pasos siguientes  
  Ahora que ha creado un complemento básico de VSTO para Project, puede obtener más información sobre cómo desarrollar complementos de VSTO en estos temas:  
   
--   Tareas de programación generales que puede realizar en complementos VSTO para Project: [complementos VSTO de programa](../vsto/programming-vsto-add-ins.md).  
+-   Tareas de programación generales que puede realizar en complementos VSTO para Project: [Programar complementos VSTO](../vsto/programming-vsto-add-ins.md).  
   
--   Mediante el modelo de objetos del proyecto: [proyecto soluciones](../vsto/project-solutions.md).  
+-   Mediante el modelo de objetos del proyecto: [Soluciones de proyecto](../vsto/project-solutions.md).  
   
--   Compilar y depurar complementos VSTO para Project: [soluciones de Office de compilación](../vsto/building-office-solutions.md).  
+-   Compilar y depurar complementos VSTO para Project: [Compilar soluciones de Office](../vsto/building-office-solutions.md).  
   
--   Implementar complementos VSTO para Project: [implementar una solución de Office](../vsto/deploying-an-office-solution.md).  
+-   Implementar complementos VSTO para Project: [Implementar una solución de Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Programar complementos VSTO](../vsto/programming-vsto-add-ins.md)   
@@ -137,5 +134,3 @@ ms.locfileid: "49884867"
  [Compilar soluciones de Office](../vsto/building-office-solutions.md)   
  [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)   
  [Introducción a las plantillas de proyecto de Office](../vsto/office-project-templates-overview.md)  
-  
-  

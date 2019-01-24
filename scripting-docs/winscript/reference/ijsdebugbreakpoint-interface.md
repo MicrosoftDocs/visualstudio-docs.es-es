@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6ed749953aeffbadb450b2a21ef86ffb619eb6a6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3c43d23d0ba89e6b85a3dd4da688fa89fed4dd99
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728325"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093852"
 ---
 # <a name="ijsdebugbreakpoint-interface"></a>IJsDebugBreakPoint (Interfaz)
 Representa un punto de interrupción.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 IJsDebugBreakPoint : public IUnknown;  
 ```  
   
@@ -32,11 +32,11 @@ IJsDebugBreakPoint : public IUnknown;
   
 ### <a name="public-methods"></a>Métodos públicos  
   
-|Nombre|Descripción|  
+|Name|Descripción|  
 |----------|-----------------|  
 |[IJsDebugBreakPoint::Delete (Método)](../../winscript/reference/ijsdebugbreakpoint-delete-method.md)|Elimina el punto de interrupción.|  
 |[IJsDebugBreakPoint::Disable (Método)](../../winscript/reference/ijsdebugbreakpoint-disable-method.md)|Deshabilita el punto de interrupción.|  
-|[IJsDebugBreakPoint::Enable (Método)](../../winscript/reference/ijsdebugbreakpoint-enable-method.md)|Permite que el punto de interrupción.|  
+|[IJsDebugBreakPoint::Enable (Método)](../../winscript/reference/ijsdebugbreakpoint-enable-method.md)|Habilita el punto de interrupción.|  
 |[IJsDebugBreakPoint::GetDocumentPosition (Método)](../../winscript/reference/ijsdebugbreakpoint-getdocumentposition-method.md)|Devuelve la posición de la instrucción donde se enlazó el punto de interrupción.|  
 |[IJsDebugBreakPoint::IsEnabled (Método)](../../winscript/reference/ijsdebugbreakpoint-isenabled-method.md)|Determina si el punto de interrupción está habilitado.|  
   

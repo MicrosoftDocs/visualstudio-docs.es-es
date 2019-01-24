@@ -1,8 +1,7 @@
 ---
 title: -Log (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 12/12/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Devenv, /Log switch
@@ -14,30 +13,46 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3373f1e1a23ae0373a9c49a39a924398ebe143e0
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: e6573bb8bb6118a38266c0b76ef435c59e6ccecb
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704777"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227244"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
-Registra toda la actividad en el archivo de registro para solucionar problemas. Este archivo aparece después de haber llamado a `devenv /log` por lo menos una vez. De manera predeterminada, el archivo de registro es:
 
- *% APPDATA %* \Microsoft\VisualStudio\\*Versión*\ActivityLog.xml
+Registra toda la actividad en el archivo de registro para solucionar problemas. Este archivo aparece después de haber llamado a `devenv /log` por lo menos una vez. De forma predeterminada, el archivo de registro se encuentra aquí:
 
- en que *Versión* es la versión de Visual Studio. Sin embargo, puede especificar una ruta de acceso y un nombre de archivo distintos.
+**%APPDATA%\\Microsoft\\VisualStudio\\**\<Versión\>**\\ActivityLog.xml**
+
+en que \<Versión\> es la versión de Visual Studio. Sin embargo, puede especificar una ruta de acceso y un nombre de archivo distintos.
 
 ## <a name="syntax"></a>Sintaxis
 
-```cmd
-Devenv /log Path\NameOfLogFile
+```shell
+devenv /Log NameOfLogFile
 ```
 
-## <a name="remarks"></a>Comentarios
- Este modificador debe aparecer al final de la línea de comandos, después del resto de modificadores.
+## <a name="arguments"></a>Argumentos
 
- El registro se escribe para todas las instancias de Visual Studio que se han invocado con el modificador /log. No registra las instancias de Visual Studio que se han invocado sin el modificador.
+- *NameOfLogFile*
+
+  Obligatorio. Nombre y ruta de acceso completa del archivo de registro donde se guardará.
+
+## <a name="remarks"></a>Comentarios
+
+Este modificador debe aparecer al final de la línea de comandos, después del resto de modificadores.
+
+El registro solo se escribe para las instancias de Visual Studio que ha abierto con el modificador `/Log`.
+
+## <a name="example"></a>Ejemplo
+
+Este ejemplo dirige el registro al archivo `MyVSLog.xml` del directorio principal del usuario.
+
+```shell
+devenv /log "%USERPROFILE%\MyVSLog.xml"
+```
 
 ## <a name="see-also"></a>Vea también
 

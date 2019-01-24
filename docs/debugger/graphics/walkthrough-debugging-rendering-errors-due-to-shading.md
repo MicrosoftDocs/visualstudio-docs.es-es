@@ -1,8 +1,6 @@
 ---
 title: 'Tutorial: Depurar errores debidos al sombreado de representación | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 202f2fb0cdbfec6e52a2938365105f3d15327445
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c90143ae45fba3299cf3eccbcd412d768fcc3738
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920545"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828412"
 ---
-# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Tutorial: Depurar errores de representación debidos al sombreado
+# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Tutorial: Depuración de errores de representación debidos al sombreado
 Este tutorial muestra cómo usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnóstico de gráficos para investigar un objeto que tiene un color incorrecto debido a un error del sombreador.  
   
  En este tutorial se muestra:  
@@ -62,7 +60,7 @@ Este tutorial muestra cómo usar [!INCLUDE[vsprvs](../../code-quality/includes/v
   
     Tenga en cuenta que el resultado del sombreador de píxeles es negro completamente opaco (0, 0, 0, 1) y que la **fusión de salida** combinar este sombreador de píxeles con el **anterior** color del píxel de manera que el  **Resultado** también es negro completamente opaco.  
   
-   Después de examinar un píxel que se colorea incorrectamente y detectar que la salida del sombreador de píxeles no es el color esperado, puede usar al depurador de HLSL para examinar al sombreador de píxeles y averiguar qué ha ocurrido con el color del objeto. Puede utilizar el depurador de HLSL para examinar el estado de las variables de HLSL durante la ejecución, recorrer el código de HLSL y establecer puntos de interrupción que le ayuden a diagnosticar el problema.  
+   Después de examinar un píxel que se colorea incorrectamente y detectar que la salida del sombreador de píxeles no es el color esperado, puede utilizar el depurador de HLSL para examinar el sombreador de píxeles y averiguar qué ha ocurrido con el color del objeto. Puede utilizar el depurador de HLSL para examinar el estado de las variables de HLSL durante la ejecución, recorrer el código de HLSL y establecer puntos de interrupción que le ayuden a diagnosticar el problema.  
   
 #### <a name="to-examine-the-pixel-shader"></a>Para examinar el sombreador de píxeles  
   
@@ -84,7 +82,7 @@ Este tutorial muestra cómo usar [!INCLUDE[vsprvs](../../code-quality/includes/v
   
 2. Busque la estructura de salida del sombreador de vértices (se trata de la entrada para el sombreador de píxeles). En este escenario, el nombre de esta estructura es `output`. Examine el código del sombreador de vértices y observe que el miembro `color` de la estructura `output` se ha establecido explícitamente en negro totalmente opaco, quizás como resultado de los esfuerzos de depuración de alguien.  
   
-3. Confirme que el miembro de color nunca se copia de la estructura de entrada. Dado que el valor de `output.color` se establece en negro totalmente opaco justo antes del `output` se devuelve la estructura, es una buena idea asegurarse de que el valor de `output` no se ha inicializado correctamente en una línea anterior. Recorra el código del sombreador de vértices hasta llegar a la línea que establece `output.color` en negro mientras comprueba el valor de `output.color`. Observe que el valor de `output.color` no se inicializa hasta que se establece en negro. Esto confirma que la línea de código que establece `output.color` en negro debe modificarse, en lugar de eliminarse.  
+3. Confirme que el miembro de color nunca se copia de la estructura de entrada. Como el valor de `output.color` se establece en negro totalmente opaco justo antes de que se devuelva la estructura `output`, le aconsejamos que compruebe que el valor de `output` no se haya inicializado correctamente en una línea anterior. Recorra el código del sombreador de vértices hasta llegar a la línea que establece `output.color` en negro mientras comprueba el valor de `output.color`. Observe que el valor de `output.color` no se inicializa hasta que se establece en negro. Esto confirma que la línea de código que establece `output.color` en negro debe modificarse, en lugar de eliminarse.  
   
     ![El valor de "output.color" es negro. ](media/gfx_diag_demo_render_error_shader_step_7.png "gfx_diag_demo_render_error_shader_step_7")  
   

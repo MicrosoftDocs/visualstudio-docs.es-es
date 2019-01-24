@@ -1,8 +1,6 @@
 ---
-title: IDiaImageData | Documentos de Microsoft
-ms.custom: ''
+title: IDiaImageData | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,20 +12,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fae8401d7702351e4d51d8b8d485ece87a9478b9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 4f10f12f8f9f08335e6234757c5254efca78dd18
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463018"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894134"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
-Expone los detalles de los desplazamientos de memoria y la ubicación base del módulo o la imagen.  
+Expone los detalles de los desplazamientos de memoria y la ubicación bases del módulo o la imagen.  
   
 ## <a name="syntax"></a>Sintaxis  
   
 ```  
-IDiaImageData : IUnknown  
+IDiaImageData : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
@@ -35,18 +33,18 @@ IDiaImageData : IUnknown
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|Recupera la ubicación de la memoria virtual del módulo relativa a la aplicación.|  
-|[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Recupera la ubicación de la memoria virtual de la imagen.|  
+|[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|Recupera la ubicación en la memoria virtual del módulo con respecto a la aplicación.|  
+|[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Recupera la ubicación en la memoria virtual de la imagen.|  
 |[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|Recupera la ubicación de memoria donde se debe basar la imagen.|  
   
 ## <a name="remarks"></a>Comentarios  
- Algunas secuencias de depuración (XDATA, PDATA) contienen copias de datos que también se almacenan en la imagen. Estos transmita datos de objetos se pueden consultar para el `IDiaImageData` interfaz. Vea la sección "Notas para llamadores" en este tema para obtener más información.  
+ Algunas secuencias de depuración (XDATA, PDATA) contienen copias de datos que también se almacenan en la imagen. Estos transmiten los datos se pueden consultar los objetos para el `IDiaImageData` interfaz. Consulte la sección "Notas para llamadores" en este tema para obtener más información.  
   
 ## <a name="notes-for-callers"></a>Notas para los llamadores  
- Obtener esta interfaz mediante una llamada a `QueryInterface` en un [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) objeto. Tenga en cuenta que no todos depuración flujos de soporte técnico de la `IDiaImageData` interfaz. Por ejemplo, actualmente solo las secuencias XDATA y PDATA admiten la `IDiaImageData` interfaz.  
+ Esta interfaz se obtiene mediante una llamada a `QueryInterface` en un [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) objeto. Tenga en cuenta que no toda la depuración transmite la compatibilidad con la `IDiaImageData` interfaz. Por ejemplo, actualmente solo las secuencias de XDATA y PDATA admiten la `IDiaImageData` interfaz.  
   
 ## <a name="example"></a>Ejemplo  
- Este ejemplo busca en todas las secuencias de depuración para cualquier secuencia que admita la `IDiaImageData` interfaz. Si se encuentra una secuencia de este tipo, se muestra información acerca de esa secuencia.  
+ Este ejemplo busca en todas las secuencias de depuración para cualquier secuencia que admita la `IDiaImageData` interfaz. Si se encuentra una secuencia de este tipo, se muestra información sobre ese flujo.  
   
 ```C++  
 void ShowImageData(IDiaSession *pSession)  
@@ -113,12 +111,12 @@ void ShowImageData(IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: Dia2.h  
+ Encabezado: dia2.h  
   
  Biblioteca: diaguids.lib  
   
- DLL: msdia80.dll  
+ Archivo DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Vea también  
- [Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Interfaces (SDK de acceso a la interfaz de depuración)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

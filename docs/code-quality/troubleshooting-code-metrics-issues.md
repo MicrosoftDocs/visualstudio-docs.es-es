@@ -2,7 +2,6 @@
 title: Solucionar problemas de métricas de código
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: troubleshooting
 ms.assetid: f2fdb995-4888-4246-85dc-7bacadd45968
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef7078b09b1bf2382e1c91878995772d80bfa625
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5c20fc0cd975dba4efcf9384d804e7732afecec0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853967"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930900"
 ---
 # <a name="troubleshooting-code-metrics-issues"></a>Solucionar problemas de métricas de código
 Pueden surgir algunos de los problemas siguientes al recopilar métricas del código:
@@ -30,4 +29,4 @@ Pueden surgir algunos de los problemas siguientes al recopilar métricas del có
 - La función contiene una instrucción switch (Select Case en VB). Las diferencias del compilador entre [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] y versiones anteriores pueden generar código MSIL diferente para algunas instrucciones switch que contienen casos de paso explícito.
 
 ## <a name="see-also"></a>Vea también
- [Medir la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+ [Medir la complejidad y el mantenimiento del código administrado](../code-quality/code-metrics-values.md)

@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
-ms.openlocfilehash: bb5a91929238452041a67942cff99973637d51af
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 10d5b34ece7d093a42bafc1f0e410b670dd342f1
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224151"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296455"
 ---
 # <a name="working-with-git"></a>Trabajo con Git
 
@@ -24,7 +24,7 @@ En la imagen siguiente se ven las opciones proporcionadas en el elemento de men�
 
 ![Elemento de menú Control de versiones](media/version-control-gitVersionControlMenu.png)
 
-## <a name="push-and-pull"></a>Envío e incorporación de cambios 
+## <a name="push-and-pull"></a>Envío e incorporación de cambios
 
 El envío y la incorporación de cambios son dos de las acciones usadas con más frecuencia en Git. Para sincronizar cambios realizados por otros usuarios en el repositorio remoto, debe **incorporar los cambios** desde allí. Esto se hace en Visual Studio para Mac al seleccionar **Control de versiones > Actualizar solución**.
 
@@ -54,11 +54,11 @@ Estas permiten las acciones siguientes:
 
     ![Pestaña Registro](media/version-control-gitLog.png)
 
-* **Combinar**: se puede usar si existe un conflicto de combinación al confirmar el trabajo. Muestra una representación visual de los cambios realizados por el usuario y el otro desarrollador, lo que permite combinar ambas secciones de código sin problemas. 
+* **Combinar**: se puede usar si existe un conflicto de combinación al confirmar el trabajo. Muestra una representación visual de los cambios realizados por el usuario y el otro desarrollador, lo que permite combinar ambas secciones de código sin problemas.
 
-## <a name="switching-branches"></a>Cambio de ramas 
+## <a name="switching-branches"></a>Cambio de ramas
 
-De forma predeterminada, la primera rama creada en un repositorio se conoce como rama **maestra**. Técnicamente no hay diferencias entre la rama maestra y las demás, aunque la maestra es la que en los equipos de desarrollo se suele considerar como la rama "activa" o de "producción".
+De forma predeterminada, la primera rama creada en un repositorio se conoce como rama  **maestra** . Técnicamente no hay diferencias entre la rama maestra y las demás, aunque la maestra es la que en los equipos de desarrollo se suele considerar como la rama "activa" o de "producción".
 
 Se puede crear una línea independiente de desarrollo al ramificar la rama maestra (o cualquier otra rama, de hecho). Esto proporciona una nueva versión de la rama maestra en un momento dado, lo que permite el desarrollo independientemente de lo que está "activo". El empleo de ramas de este modo se suele usar para características de desarrollo de software
 
@@ -80,7 +80,7 @@ Vea la rama actual en el Panel de solución, junto al nombre del proyecto:
 
  ![Rama actual mostrada en el Panel de solución](media/version-control-gitBranchName.png)
 
-## <a name="reviewing-and-committing"></a>Revisión y confirmación 
+## <a name="reviewing-and-committing"></a>Revisión y confirmación
 
 Para revisar los cambios en los archivos, use las pestañas Cambios, Culpar, Registro y Combinar de cada documento, tratadas anteriormente en este tema.
 
@@ -90,8 +90,12 @@ Revise todos los cambios en el proyecto al ir al elemento de menú **Control de 
 
 Esto permite ver todos los cambios de cada archivo de un proyecto con la opción Revertir, Crear una revisión o Confirmar.
 
-Para confirmar un archivo en el repositorio remoto, haga clic en **Confirmar...**, escriba un mensaje de confirmación y confirme con el botón Confirmar:
+Para confirmar un archivo en el repositorio remoto, presione **Confirmar**, escriba un mensaje de confirmación y confirme con el botón Confirmar:
 
 ![Confirmación de un archivo](media/version-control-gitCommit.png)
 
 Una vez que haya confirmado los cambios, envíelos al repositorio remoto para que otros usuarios puedan verlos.
+
+## <a name="see-also"></a>Vea también
+
+* [Share your code with Visual Studio 2017 and Azure Repos Git](/azure/devops/repos/git/share-your-code-in-git-vs-2017) (Compartir el código con Visual Studio 2017 y el repositorio Git de Azure Repos)

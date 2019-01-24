@@ -2,7 +2,6 @@
 title: 'CA1305: Especificar IFormatProvider'
 ms.date: 06/30/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - SpecifyIFormatProvider
@@ -18,12 +17,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 05e2efde1be3430f95b00edbe8da8f952efad758
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: fea236a51b8bde5171c91ad1935d4168dfabd94a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174311"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954242"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305: Especificar IFormatProvider
 

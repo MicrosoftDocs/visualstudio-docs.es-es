@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_STRING | Microsoft Docs
+title: BP_LOCATION_CODE_STRING | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,12 +17,12 @@ ms.assetid: a4cd71c6-5052-45fe-907b-ebc6ca1df2e4
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0de9e22b2ed041e159773a11d06a1e24124101f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3ef3e7c80dff276dd3bb251782d8dc07b3f5ac00
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879448"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795315"
 ---
 # <a name="bplocationcodestring"></a>BP_LOCATION_CODE_STRING
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Se usa para establecer puntos de interrupción de código basados en una cadena 
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-typedef struct _BP_LOCATION_CODE_STRING {   
+typedef struct _BP_LOCATION_CODE_STRING {   
    BSTR bstrContext;  
    BSTR bstrCodeExpr;  
 } BP_LOCATION_CODE_STRING;  

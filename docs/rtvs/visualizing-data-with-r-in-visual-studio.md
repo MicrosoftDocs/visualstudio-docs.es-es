@@ -3,19 +3,18 @@ title: Visualización de datos con R
 description: Describe cómo trazar datos desde programas de R en Visual Studio con ventanas de trazados.
 ms.date: 06/29/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: f44ba213defef153acd2f5d1ef247bb093448263
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 8b0c633e3236f537e9f631df12a5af597e67475c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235454"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859086"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Crear trazados de datos visuales con R
 
@@ -87,7 +86,7 @@ La duración de su historial de trazado en todas las ventanas está vinculado a 
 
 Puede manipular ventanas de trazado mediante programación desde el código de R, con números de dispositivo para identificar las ventanas de trazado específicas. 
 
-- `dev.list()`: mostrar todos los dispositivos de gráficos en la sesión actual de R.
-- `dev.new()`: crear un nuevo dispositivo de gráficos (una nueva ventana de trazado).
-- `dev.set(<device number>)`: establecer el dispositivo de gráficos activo.
-- `dev.off()`: eliminar el dispositivo activo.
+- `dev.list()`: Mostrar todos los dispositivos de gráficos en la sesión actual de R.
+- `dev.new()`: Crear un nuevo dispositivo de gráficos (una nueva ventana de trazado).
+- `dev.set(<device number>)`: Establecer el dispositivo de gráficos activo.
+- `dev.off()`: Eliminar el dispositivo activo.

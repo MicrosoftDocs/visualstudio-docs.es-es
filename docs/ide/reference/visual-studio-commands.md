@@ -1,8 +1,7 @@
 ---
-title: Comandos de Visual Studio
+title: Comandos
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Visual Studio, commands
@@ -14,32 +13,32 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7344a1051385b57f92720e9ca671e6aeb1ec46b5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7d4b2c4a3f7995fd00b9997e68a6bd7f64114d4a
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879018"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53909767"
 ---
 # <a name="visual-studio-commands"></a>Comandos de Visual Studio
+
 Los comandos de Visual Studio le permiten invocar un comando desde la ventana **Comando** , la ventana **Inmediato** o el cuadro **Buscar/comando** . En todos los casos, el signo mayor que (`>`) se usa para indicar que se debe seguir un comando en lugar de una operación de búsqueda o de depuración.
 
- Encontrará una lista completa de los comandos y su sintaxis en el cuadro de diálogo **Teclado, Opciones de entorno** .
+Encontrará una lista completa de los comandos y su sintaxis en el cuadro de diálogo **Teclado, Opciones de entorno** .
 
- El carácter de escape de los comandos de Visual Studio es un carácter de intercalación (^), lo que significa que el carácter que le sigue se interpreta literalmente, en lugar de interpretarse como un carácter de control. Esto se puede usar para insertar comillas rectas ("), espacios, barras diagonales iniciales, símbolos de intercalación o cualquier otro carácter literal en un valor de parámetro o modificador, con la excepción de los nombres de los modificadores. Por ejemplo,
+El carácter de escape de los comandos de Visual Studio es un carácter de intercalación (^), lo que significa que el carácter que le sigue se interpreta literalmente, en lugar de interpretarse como un carácter de control. Esto se puede usar para insertar comillas rectas ("), espacios, barras diagonales iniciales, símbolos de intercalación o cualquier otro carácter literal en un valor de parámetro o modificador, con la excepción de los nombres de los modificadores. Por ejemplo,
 
 ```
 >Edit.Find ^^t /regex
 ```
 
- El símbolo de intercalación funciona igual tanto si está dentro como fuera de unas comillas. Si el símbolo de intercalación es el último carácter de la línea, se ignora.
+El símbolo de intercalación funciona igual tanto si está dentro como fuera de unas comillas. Si el símbolo de intercalación es el último carácter de la línea, se ignora.
 
- En las versiones localizadas del IDE, los nombres de los comandos se pueden escribir en el idioma nativo del IDE o en inglés. Por ejemplo, puede escribir `File.NewFile` o `Fichier.NouveauFichier` en el IDE francés para ejecutar el mismo comando.
+En las versiones localizadas del IDE, los nombres de los comandos se pueden escribir en el idioma nativo del IDE o en inglés. Por ejemplo, puede escribir `File.NewFile` o `Fichier.NouveauFichier` en el IDE francés para ejecutar el mismo comando.
 
- Muchos comandos tienen alias. Para obtener una lista de alias de comandos, consulte [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md).
+Muchos comandos tienen alias. Para obtener una lista de alias de comandos, consulte [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md).
 
- Los siguientes comandos toman argumentos o modificadores.
-
+Los siguientes comandos toman argumentos o modificadores.
 
 | Nombre de comando | Descripción |
 | - | - |

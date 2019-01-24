@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: agregar una dependencia a un paquete VSIX | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Agregar una dependencia a un paquete VSIX | Documentos de Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - package reference
@@ -16,14 +13,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84865bf354bd1822ca872ed5f0df89a4330fb690
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 7ce21c10f1a64bf8edad9181d66b83291d0405c4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371048"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902485"
 ---
-# <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Cómo: agregar una dependencia a un paquete VSIX
+# <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Procedimiento Agregar una dependencia a un paquete VSIX
 
 Puede configurar una implementación de paquete VSIX que instala las dependencias que no están presentes en el equipo de destino. Para ello, incluyen las dependencias VSIX para la *source.extension.vsixmanifest* archivo.
 

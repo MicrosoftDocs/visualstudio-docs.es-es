@@ -1,9 +1,6 @@
 ---
 title: Creación de una extensión con una plantilla de elemento del Editor | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a13c62d9fadfe105bd8e645ba6e7758c2b3195a3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: ffaadb2ccdf770231abcbbcc5e594644b78ef7e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500868"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957870"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>Crear una extensión con una plantilla de elementos de editor
 Puede usar plantillas de elementos que se incluyen en el SDK de Visual Studio para crear extensiones de editor básico que aumenta el editor de clasificadores, los elementos gráficos y los márgenes. Las plantillas de elementos de editor están disponibles para los proyectos de Visual C# o Visual Basic VSIX.  
@@ -29,7 +26,7 @@ Puede usar plantillas de elementos que se incluyen en el SDK de Visual Studio pa
 ## <a name="create-a-classifier-extension"></a>Crear una extensión de clasificador  
  La plantilla de elemento de clasificador de Editor crea un clasificador de editor que colorea el texto adecuado (en este caso, todo) en cualquier archivo de texto.  
   
-1.  En el **nuevo proyecto** cuadro de diálogo, expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el **plantillas** panel, seleccione **proyecto VSIX**. En el cuadro **Nombre**, escriba `TestClassifier`. Haga clic en **Aceptar**.  
+1.  En el **nuevo proyecto** cuadro de diálogo, expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el **plantillas** panel, seleccione **proyecto VSIX**. En el cuadro **Nombre** , escriba `TestClassifier`. Haga clic en **Aceptar**.  
   
 2.  En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **agregar** > **nuevo elemento**. Vaya a Visual C# **extensibilidad** nodo y seleccione **clasificador de Editor**. Deje el nombre de archivo predeterminado (*EditorClassifier1.cs*).  
   
@@ -50,7 +47,7 @@ Puede usar plantillas de elementos que se incluyen en el SDK de Visual Studio pa
 ## <a name="create-a-text-relative-adornment-extension"></a>Crear una extensión de elemento gráfico relacionados con texto  
  La plantilla de elemento gráfico de texto del Editor crea un elemento de gráfico relacionados con el texto que está contenido en todas las instancias del carácter 'a' mediante un cuadro que tiene un contorno rojo y un fondo azul. Es relativo a texto porque el cuadro siempre superpuestas "a" caracteres, incluso cuando se mueven o cambian.  
   
-1.  En el **nuevo proyecto** cuadro de diálogo, expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el **plantillas** panel, seleccione **proyecto VSIX**. En el cuadro **Nombre**, escriba `TestAdornment`. Haga clic en **Aceptar**.  
+1.  En el **nuevo proyecto** cuadro de diálogo, expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el **plantillas** panel, seleccione **proyecto VSIX**. En el cuadro **Nombre** , escriba `TestAdornment`. Haga clic en **Aceptar**.  
   
 2.  En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **agregar** > **nuevo elemento**. Vaya a Visual C# **extensibilidad** nodo y seleccione **elemento gráfico de Editor de texto**. Deje el nombre de archivo predeterminado (*TextAdornment1.cs/vb*).  
   
@@ -70,7 +67,7 @@ Puede usar plantillas de elementos que se incluyen en el SDK de Visual Studio pa
   
 ### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>Para crear una extensión de elemento gráfico de área de visualización mediante la plantilla de elemento de gráfico de área de visualización de Editor  
   
-1.  En el **nuevo proyecto** cuadro de diálogo, expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el **plantillas** panel, seleccione **proyecto VSIX**. En el cuadro **Nombre**, escriba `ViewportAdornment`. Haga clic en **Aceptar**.  
+1.  En el **nuevo proyecto** cuadro de diálogo, expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el **plantillas** panel, seleccione **proyecto VSIX**. En el cuadro **Nombre** , escriba `ViewportAdornment`. Haga clic en **Aceptar**.  
   
 2.  En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **agregar** > **nuevo elemento**. Vaya a Visual C# **extensibilidad** nodo y seleccione **elemento gráfico de área de visualización de Editor**. Deje el nombre de archivo predeterminado (*ViewportAdornment1.cs/vb*).  
   
@@ -87,7 +84,7 @@ Puede usar plantillas de elementos que se incluyen en el SDK de Visual Studio pa
   
 ### <a name="to-create-a-margin-extension-by-using-the-editor-margin-template"></a>Para crear una extensión de margen usando la plantilla del margen del Editor  
   
-1.  En el **nuevo proyecto** cuadro de diálogo, expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el **plantillas** panel, seleccione **proyecto VSIX**. En el cuadro **Nombre**, escriba `MarginExtension`. Haga clic en **Aceptar**.  
+1.  En el **nuevo proyecto** cuadro de diálogo, expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el **plantillas** panel, seleccione **proyecto VSIX**. En el cuadro **Nombre** , escriba `MarginExtension`. Haga clic en **Aceptar**.  
   
 2.  En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **agregar** > **nuevo elemento**. Vaya a Visual C# **extensibilidad** nodo y seleccione **margen del Editor**. Deje el nombre de archivo predeterminado (EditorMargin1.cs/vb).  
   

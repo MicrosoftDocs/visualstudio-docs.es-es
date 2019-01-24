@@ -1,8 +1,6 @@
 ---
-title: Depurar el código de usuario con sólo mi código | Microsoft Docs
-ms.custom: ''
-ms.date: 05/18/2018
-ms.technology: vs-ide-debug
+title: Depurar el código de usuario con sólo mi código | Documentos de Microsoft
+ms.date: 10/22/2018
 ms.topic: conceptual
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 854ce90f18b5df7d3e25b4b0949d76202e4f4a04
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
-ms.translationtype: MT
+ms.openlocfilehash: 99c31291e31821f79e23f507e37003c571a8ab7c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050344"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952052"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Depurar código de usuario sólo con sólo mi código 
 
@@ -23,7 +21,7 @@ ms.locfileid: "50050344"
 
 Solo mi código funciona de manera diferente en los proyectos de .NET Framework, C++ y JavaScript.
 
-##  <a name="BKMK_Enable_or_disable_Just_My_Code"></a> Habilitar o deshabilitar solo mi código  
+##  <a name="BKMK_Enable_or_disable_Just_My_Code"></a> Habilitar o deshabilitar Solo mi código  
 
 Para la mayoría de los lenguajes de programación, solo mi código está habilitada de forma predeterminada. 
 
@@ -56,7 +54,7 @@ En el **pila de llamadas** o **tareas** ventana, solo mi código contrae el cód
 
 Haga doble clic en una línea de código externo expandido en el **pila de llamadas** ventana resalta la línea de código que realiza la llamada en verde en el código fuente. Para archivos DLL o a otros módulos no se encontró o carga, un símbolo o el origen no encontró puede abrir la página.
 
-##  <a name="BKMK__NET_Framework_Just_My_Code"></a>Solo mi código de .NET framework 
+##  <a name="BKMK__NET_Framework_Just_My_Code"></a>Solo mi código de .NET Framework 
 
 En los proyectos de .NET Framework, solo mi código utiliza el símbolo (*.pdb*) los archivos y las optimizaciones de programa para clasificar el código de usuario y no de usuario. El depurador de .NET Framework considera optimizado para los archivos binarios y no carga *.pdb* los archivos de código de no usuario.
   
@@ -117,7 +115,7 @@ Si el depurador llega a una excepción, se detiene en la excepción, ya sea en e
  En los proyectos de C++, puede especificar funciones salten enumera como código que no son de usuario en  *\*.natstepfilter* archivos.  
   
 - Para especificar código que no son de usuario para todos los usuarios locales de Visual Studio, agregue el *.natstepfilter* del archivo a la *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* carpeta.  
-- Para especificar código que no son de usuario para un usuario individual, agregue el *.natstepfilter* del archivo a la *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers* carpeta.  
+- Para especificar código que no es de usuario para un usuario individual, agregue el archivo *.natstepfilter* a la carpeta *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers*.  
   
 Un *.natstepfilter* archivo es un archivo XML con esta sintaxis:  
   
@@ -139,17 +137,17 @@ Un *.natstepfilter* archivo es un archivo XML con esta sintaxis:
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|`Function`|Requerido. Especifica una o más funciones como funciones que no son de usuario.|  
-|`Name`|Requerido. Expresión regular con formato ECMA-262 que especifica el nombre de función completo que debe coincidir. Por ejemplo:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> indica al depurador que todos los métodos de `MyNS::MyClass` deben considerarse código que no es de usuario. La coincidencia distingue mayúsculas de minúsculas.|  
+|`Function`|Obligatorio. Especifica una o más funciones como funciones que no son de usuario.|  
+|`Name`|Obligatorio. Expresión regular con formato ECMA-262 que especifica el nombre de función completo que debe coincidir. Por ejemplo:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> indica al depurador que todos los métodos de `MyNS::MyClass` deben considerarse código que no es de usuario. La coincidencia distingue mayúsculas de minúsculas.|  
 |`Module`|Opcional. Expresión regular con formato ECMA-262 que especifica la ruta de acceso completa al módulo que contiene la función. La búsqueda no distingue entre mayúsculas y minúsculas.|  
-|`Action`|Requerido. Uno de estos valores que distingue mayúsculas y minúsculas:<br /><br /> `NoStepInto`  -indica al depurador que omita la función.<br /> `StepInto`  -indica al depurador paso a paso por la función, invalidando cualquier otro `NoStepInto` para la función coincidente.|  
+|`Action`|Obligatorio. Uno de estos valores que distingue mayúsculas y minúsculas:<br /><br /> `NoStepInto`  -indica al depurador que omita la función.<br /> `StepInto`  -indica al depurador paso a paso por la función, invalidando cualquier otro `NoStepInto` para la función coincidente.|  
   
 ###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Personalizar el comportamiento de pila de llamada de C++  
 
 Para los proyectos de C++, puede especificar los módulos, archivos de código fuente y las funciones del **pila de llamadas** ventana trata como código de no usuario especificándolas en  *\*.natjmc* archivos.  
   
--   Para especificar código que no son de usuario para todos los usuarios del equipo de Visual Studio, agregue el *.natjmc* del archivo a la *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* carpeta.  
--   Para especificar código que no son de usuario para un usuario individual, agregue el *.natjmc* del archivo a la *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers* carpeta.  
+-   Para especificar código que no es de usuario para todos los usuarios del equipo de Visual Studio, agregue el archivo *.natjmc* a la carpeta *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*.  
+-   Para especificar código que no es de usuario para un usuario individual, agregue el archivo *.natjmc* a la carpeta *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers*.  
 
 Un *.natjmc* archivo es un archivo XML con esta sintaxis:  
   
@@ -177,26 +175,26 @@ Un *.natjmc* archivo es un archivo XML con esta sintaxis:
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Name`|Requerido. Ruta de acceso completa al módulo o los módulos. Puede usar los caracteres comodín de Windows `?` (cero o un carácter) y `*` (cero o más caracteres). Por ejemplo,<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> indica al depurador que trate todos los módulos de *\3rdParty\UtilLibs* en cualquier unidad como código externo.|  
+|`Name`|Obligatorio. Ruta de acceso completa al módulo o los módulos. Puede usar los caracteres comodín de Windows `?` (cero o un carácter) y `*` (cero o más caracteres). Por ejemplo,<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> indica al depurador que trate como código externo todos los módulos de *\3rdParty\UtilLibs* en cualquier unidad.|  
 |`Company`|Opcional. Nombre de la compañía que publica el módulo que está incrustado en el archivo ejecutable. Puede utilizar este atributo para eliminar la ambigüedad de los módulos.|  
   
  **Atributos del elemento File**  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Name`|Requerido. Ruta de acceso completa del archivo o archivos de código fuente que se van a tratar como código externo. Puede usar los caracteres comodín `?` y `*` de Windows para especificar la ruta de acceso.|  
+|`Name`|Obligatorio. Ruta de acceso completa del archivo o archivos de código fuente que se van a tratar como código externo. Puede usar los caracteres comodín `?` y `*` de Windows para especificar la ruta de acceso.|  
   
  **Atributos del elemento Function**  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Name`|Requerido. Nombre completo de la función que se va a tratar como código externo.|  
+|`Name`|Obligatorio. Nombre completo de la función que se va a tratar como código externo.|  
 |`Module`|Opcional. Nombre o ruta de acceso completa al módulo que contiene la función. Puede utilizar este atributo para eliminar la ambigüedad de funciones que tienen el mismo nombre.|  
 |`ExceptionImplementation`|Cuando se establece en `true`, la pila de llamadas muestra la función que produjo la excepción en lugar de esta función.|  
   
 ##  <a name="BKMK_JavaScript_Just_My_Code"></a> Solo mi código de JavaScript  
 
-<a name="BKMK_JS_User_and_non_user_code"></a> Solo mi código JavaScript controla la presentación de la pila de llamadas y ejecución paso a paso categorizando el código en una de estas clasificaciones:  
+<a name="BKMK_JS_User_and_non_user_code"></a> Solo mi código de JavaScript controla la ejecución paso a paso y la presentación de la pila de llamadas categorizando el código en una de estas clasificaciones:  
 
 |||  
 |-|-|  
@@ -218,7 +216,7 @@ El depurador de JavaScript clasifica el código como usuario o el usuario en est
   
 Cada paso de clasificación invalida los pasos anteriores. 
 
-El código restante se clasifica como **MyCode**.  
+Todo el código restante se clasifica como **MyCode**.  
 
 Puede modificar las clasificaciones predeterminadas y clasificar determinados archivos y direcciones URL como código de usuario o que no son de usuario, agregando un *.json* archivo denominado *mycode.json* a la carpeta raíz de un proyecto de JavaScript. Consulte [personalizar solo mi código de JavaScript](#BKMK_JS_Customize_Just_My_Code). 
 
@@ -226,7 +224,7 @@ Puede modificar las clasificaciones predeterminadas y clasificar determinados ar
 
 - Si una función es código de no usuario **depurar** > **paso a paso** (o **F11**) se comporta igual que **depurar**  >  **Saltar** (o **F10**).  
 - Si un paso comienza en el que no es de usuario (**LibraryCode** o **UnrelatedCode**), código de ejecución paso a paso temporalmente se comporta como si no está habilitado solo mi código. Cuando se pasa al código de usuario, solo mi código se vuelve a habilitar la ejecución paso a paso.  
-- Cuando los resultados de paso del código de usuario cuando se deja el contexto de ejecución actual, el depurador se detiene en la siguiente línea de código de usuario ejecutada. Por ejemplo, si se ejecuta en una devolución de llamada **LibraryCode** código, el depurador continúa hasta que se ejecuta la siguiente línea de código de usuario.
+- Cuando los resultados de paso del código de usuario cuando se deja el contexto de ejecución actual, el depurador se detiene en la siguiente línea de código de usuario ejecutada. Por ejemplo, si se ejecuta una devolución de llamada en código **LibraryCode**, el depurador continúa hasta que se ejecuta la línea de código de usuario siguiente.
 - **Paso a paso fuera** (o **MAYÚS**+**F11**) se detiene en la siguiente línea de código de usuario. 
 
 Si no hay ningún código de usuario más, depuración continúa hasta que finaliza, llega a otro punto de interrupción o produce un error. 
@@ -242,7 +240,7 @@ Si se produce una excepción no controlada en **UnrelatedCode**, y **MyCode** o 
   
 Si se han habilitado excepciones de primera oportunidad para la excepción y produce una excepción en **LibraryCode** o **UnrelatedCode**:  
   
--   Si se controla la excepción, no se interrumpe el depurador.  
+-   Si se controla la excepción, el depurador no se interrumpe.  
 -   Si la excepción no se controla, se interrumpe el depurador.  
   
 ###  <a name="BKMK_JS_Customize_Just_My_Code"></a> Personalizar solo mi código de JavaScript  
@@ -279,28 +277,28 @@ Especificaciones de este archivo invalidación las clasificaciones predeterminad
   
  **Eval, Function y ScriptBlock**  
   
- El **Eval**, **función**, y **ScriptBlock** pares clave / valor determinar cómo dinámicamente se clasifica el código generado:  
+ Los pares clave-valor **Eval**, **Function** y **ScriptBlock** determinan cómo se clasifica el código generado dinámicamente:  
   
 |||  
 |-|-|  
 |**Eval**|Script que se ejecuta pasando una cadena a la función `eval` proporcionada por el host. De forma predeterminada, el script Eval se clasifica como **MyCode**.|  
 |**Function**|Script que se ejecuta pasando una cadena al constructor de `Function`. De forma predeterminada, el script Function se clasifica como **LibraryCode**.|  
-|**Bloque de script**|Script que se ejecuta pasando una cadena a las funciones `setTimeout`, `setImmediate` o `setInterval`. De forma predeterminada, el script ScriptBlock se clasifica como **UnrelatedCode**.|  
+|**ScriptBlock**|Script que se ejecuta pasando una cadena a las funciones `setTimeout`, `setImmediate` o `setInterval`. De forma predeterminada, el script ScriptBlock se clasifica como **UnrelatedCode**.|  
   
  Puede cambiar el valor a una de estas palabras clave:  
   
--   `MyCode`  clasifica el script como **MyCode**.  
--   `Library`  clasifica el script como **LibraryCode**.  
--   `Unrelated`  clasifica el script como **UnrelatedCode**.  
+-   `MyCode` clasifica el script como **MyCode**.  
+-   `Library` clasifica el script como **LibraryCode**.  
+-   `Unrelated` clasifica el script como **UnrelatedCode**.  
   
   **MyCode, Libraries y Unrelated**  
   
- El **MyCode**, **bibliotecas**, y **Unrelated** pares clave / valor que especifique las direcciones URL o archivos que se van a incluir en una clasificación:  
+ Los pares clave-valor **MyCode**, **Libraries** y **Unrelated** especifican las direcciones URL o los archivos que desea incluir en una clasificación:  
   
 |||  
 |-|-|  
-|**MyCode**|Una matriz de direcciones URL o archivos que se clasifican como **MyCode**.|  
-|**Bibliotecas**|Una matriz de direcciones URL o archivos que se clasifican como **LibraryCode**.|  
-|**No relacionados**|Una matriz de direcciones URL o archivos que se clasifican como **UnrelatedCode**.|  
+|**MyCode**|Matriz de direcciones URL o archivos que se clasifican como **MyCode**.|  
+|**Bibliotecas**|Matriz de direcciones URL o archivos que se clasifican como **LibraryCode**.|  
+|**Unrelated**|Matriz de direcciones URL o archivos que se clasifican como **UnrelatedCode**.|  
   
  La cadena de dirección URL o el archivo puede tener uno o varios `*` caracteres, que coincide con cero o más caracteres. `*` es el mismo que la expresión regular `.*`.

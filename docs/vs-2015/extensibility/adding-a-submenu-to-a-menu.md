@@ -18,12 +18,12 @@ ms.assetid: 692600cb-d052-40e2-bdae-4354ae7c6c84
 caps.latest.revision: 44
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8e822cf57b8fee46b1bfb7e9f6801c89ef66daf3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 14ad9d2daf603dd2ca80a784251f19503fee1cba
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199126"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738315"
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>Adición de un submenú a un menú
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ En este tutorial se basa en la demostración en [adición de un menú en la barr
 1.  Abra TestCommand.cs y agregue el identificador de comando siguiente después del identificador de comando existente.  
   
     ```csharp  
-    public const int cmdidTestSubCmd = 0x105;  
+    public const int cmdidTestSubCmd = 0x105;  
     ```  
   
 2.  Agregue el subcomando. Busque el constructor de comando. Agregue las líneas siguientes justo después de la llamada a la `AddCommand` método.  

@@ -1,8 +1,7 @@
 ---
-title: Generación de una clase o tipo en Visual Studio
+title: Generación de una clase o tipo
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -14,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 67e6e8744672c35bdf13e30269297dcc52c50a04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a98ccfc73a1d0390cdec101ed763535f316a5625
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929613"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965835"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generación de una clase o tipo en Visual Studio
 
@@ -29,11 +28,11 @@ Esta generación de código se aplica a:
 
 - Visual Basic
 
-**Qué:** Le permite generar el código de inmediato para una clase o un tipo.
+**Qué:** Permite generar el código de inmediato para una clase o un tipo.
 
-**Cuándo:** Introduce una nueva clase o un tipo y desea declararlo de manera adecuada y de inmediato.
+**Cuándo:** Presenta una nueva clase o un tipo, y quiere declararlo de manera adecuada y de inmediato.
 
-**Por qué:** Podría declarar la clase o el tipo antes de usarlo; sin embargo, esta característica generará la clase o el tipo automáticamente.
+**Por qué:** Podría declarar la clase o el tipo antes de usarlo; pero esta característica generará la clase o el tipo de forma automática.
 
 ## <a name="how-to"></a>Procedimiento
 

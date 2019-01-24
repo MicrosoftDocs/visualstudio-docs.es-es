@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Seleccionar un repositorio de resultados de pruebas de carga en Visual Studio'
+title: Procedimiento para seleccionar un repositorio de resultados de pruebas de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,19 +16,20 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 25db0c85f014aa92c103f4afbb0192c5cb57c659
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: fcbe7979765fe921ccc42f7adfa556bc0b52b7d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371126"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950438"
 ---
-# <a name="how-to-select-a-load-test-results-repository"></a>Cómo: Seleccionar un repositorio de resultados de pruebas de carga
+# <a name="how-to-select-a-load-test-results-repository"></a>Procedimiento para seleccionar un repositorio de resultados de pruebas de carga
 
 el usuario no está limitado a un almacén de resultados local. Con frecuencia, las pruebas de carga se ejecutan en un conjunto remoto de equipos agente. Los agentes, junto con un controlador, pueden generar más carga simulada que cualquier equipo único. Para obtener más información, vea [Controladores y agentes de prueba](configure-test-agents-and-controllers-for-load-tests.md).
 
 Los resultados de prueba de los agentes o un equipo local se pueden guardar en cualquier servidor SQL en el que se haya creado un almacén de resultados de pruebas de carga. En cualquier caso, debe identificar dónde quiere almacenar los resultados de pruebas de carga mediante la ventana **Administrar controladores de pruebas**.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="identify-a-results-store-for-load-test-data"></a>Identificar un almacén de resultados para datos de una prueba de carga
 

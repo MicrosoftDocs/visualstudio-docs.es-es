@@ -1,8 +1,7 @@
 ---
-title: Identificar y personalizar métodos abreviados de teclado en Visual Studio
+title: Identificar y personalizar métodos abreviados de teclado
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Keyboard
@@ -19,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ed1806ce5810814c8ea2ce9c08462ecc8f9fd77
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: f52a2e57e913735ffe678768732a822e1bb30e6f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747234"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820402"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identificar y personalizar métodos abreviados de teclado en Visual Studio
 
@@ -69,7 +68,7 @@ Si un método abreviado se asigna a un comando en el contexto Global y no a otro
 
 2. Expanda la carpeta **Entorno** y elija **Teclado**.
 
-3. Opcional: filtre la lista de comandos escribiendo el nombre del comando parcial o totalmente y sin espacios en el cuadro **Mostrar los comandos que contengan**.
+3. Opcional: Para filtrar la lista de comandos, escriba el nombre del comando parcial o totalmente, sin espacios, en el cuadro **Mostrar los comandos que contengan**.
 
 4. En la lista, elija el comando al que desea asignar un método abreviado de teclado.
 
@@ -78,7 +77,7 @@ Si un método abreviado se asigna a un comando en el contexto Global y no a otro
     Por ejemplo, puede elegir **Global** si quiere que el método abreviado funcione en todos los contextos. Puede usar cualquier método abreviado que no esté asignado (como Global) en otro editor. De lo contrario, el editor reemplaza el método abreviado.
 
     > [!NOTE]
-    > No se pueden asignar las siguientes teclas a un método abreviado de teclado en **Global**: Imp Pant/Pet Sis, Bloq Despl, Pausa/Inter, Tab, Bloq Mayús, Ins, Inicio, Fin, Re Pág, Av Pág, la tecla del logotipo de Windows, la tecla de aplicación, cualquiera de las teclas de dirección o ENTRAR; Bloq Num o Supr en el teclado numérico; o la combinación de teclas CTRL+Alt+Supr.
+    > No se pueden asignar las teclas siguientes como parte de un método abreviado de teclado en **Global**: Imp Pant/Pet Sis, Bloq Despl, Pausa/Inter, Tab, Bloq Mayús, Ins, Inicio, Fin, Re Pág, Av Pág, la tecla del logotipo de Windows, la tecla de aplicación, cualquiera de las teclas de dirección o Entrar; Bloq Num o Supr en el teclado numérico; o la combinación de teclas Ctrl+Alt+Supr.
 
 6. En el cuadro **Presionar teclas de método abreviado**, especifique el método abreviado que quiere usar.
 

@@ -3,19 +3,18 @@ title: Proyectos R de ejemplo
 description: Índice de una colección de ejemplos para empezar a trabajar con R y Visual Studio.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: adb26b3cf6097d830c899ef4ef251d2066b81a38
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 80553e54489b5c887facca57f3491fd81fd8d24b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235448"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837464"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Proyectos de ejemplo de Herramientas de R para Visual Studio
 
@@ -83,7 +82,7 @@ La siguiente comparación muestra que MLS y MRO con MKL tienen un rendimiento de
 
 ![Comparación de MLS y MRO con MKL y R y MRO sin MKL](media/samples-speed-comparison.png)
 
-Para obtener una comparación técnica de R con MRO y MLS, vea [la explicación detallada de Lixun Zhang](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) sobre el tema.
+Para obtener una comparación técnica de R con MRO y MLS, vea [la explicación detallada de Lixun Zhang](http://htmlpreview.github.io/? https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) sobre el tema.
 
 En la siguiente ilustración se compara el tiempo transcurrido en segundos empleado en la creación de modelos de regresión logística para predecir retrasos en vuelos de más de 15 minutos.  El tiempo transcurrido empleado en CRAN R aumenta significativamente al agregar un número pequeño de filas, mientras que en MLS solo aumenta aproximadamente el doble. Para obtener detalles de esta prueba comparativa, consulte el ejemplo de *Benchmarks/rxGlm_benchmark.R*.
 

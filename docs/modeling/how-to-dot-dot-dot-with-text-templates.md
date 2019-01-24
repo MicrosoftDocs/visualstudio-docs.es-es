@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 20dbc5223ddb053355fa5e8076ae66badee688a4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7a29f9c8813950cda5907b7f0f96141d00d562fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883079"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887768"
 ---
 # <a name="how-to--with-text-templates"></a>Cómo: ... con plantillas de texto
 Las plantillas de texto en Visual Studio proporcionan una forma útil de generación de texto de cualquier tipo. Puede usar las plantillas de texto para generar texto en tiempo de ejecución como parte de la aplicación y en tiempo de diseño para generar algunos el código del proyecto. En este tema se resume con más frecuencia le pregunte "¿Cómo...?" preguntas.

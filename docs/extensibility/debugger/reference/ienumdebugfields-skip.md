@@ -1,9 +1,6 @@
 ---
 title: IEnumDebugFields::Skip | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumDebugFields::Skip
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: abfc04a0d790a51d9ae347d9516c246bcf2a3655
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0e5704f741883a3d676b0428b358e14debfa7599
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873739"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917061"
 ---
 # <a name="ienumdebugfieldsskip"></a>IEnumDebugFields::Skip
 Este método omite el número especificado de elementos.  

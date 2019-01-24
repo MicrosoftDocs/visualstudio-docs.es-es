@@ -1,8 +1,7 @@
 ---
-title: 'CA1406: Evite argumentos Int64 para clientes Visual Basic 6'
+title: 'CA1406: Evitar los argumentos Int64 en clientes Visual Basic 6'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - AvoidInt64ArgumentsForVB6Clients
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f6eeda13b8dc7a05622613f719a6b2a85b61835a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 6d39c98aae5ae577ad82f0ff99f1069fb34e5146
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546881"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920944"
 ---
-# <a name="ca1406-avoid-int64-arguments-for-visual-basic-6-clients"></a>CA1406: Evite argumentos Int64 para clientes Visual Basic 6
+# <a name="ca1406-avoid-int64-arguments-for-visual-basic-6-clients"></a>CA1406: Evitar los argumentos Int64 en clientes Visual Basic 6
 
 |||
 |-|-|
@@ -56,9 +55,9 @@ ms.locfileid: "45546881"
  [!code-vb[FxCop.Interoperability.LongArgument#1](../code-quality/codesnippet/VisualBasic/ca1406-avoid-int64-arguments-for-visual-basic-6-clients_1.vb)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA1413: Evite campos no públicos en tipos de valor visibles para COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
+ [CA1413: Evite campos no públicos en tipos de valor visibles COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
 
- [CA1407: Evite miembros estáticos en tipos visibles para COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
+ [CA1407: Evite a miembros estáticos en tipos visibles para COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
 
  [CA1017: Marque los ensamblados con ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 

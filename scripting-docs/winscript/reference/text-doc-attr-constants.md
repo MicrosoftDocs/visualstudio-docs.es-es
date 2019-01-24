@@ -1,5 +1,5 @@
 ---
-title: Constantes TEXT_DOC_ATTR | Documentos de Microsoft
+title: TEXT_DOC_ATTR (constantes) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 130895e0e70b1044fab5d5ab406f940b036c37f0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7e3fd21ba720dfed394e497a9a56a1bb6898dc60
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734255"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348781"
 ---
 # <a name="textdocattr-constants"></a>Constantes TEXT_DOC_ATTR
 Describen los atributos del documento.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 typedef DWORD TEXT_DOC_ATTR;  
 ```  
   
@@ -38,9 +38,9 @@ typedef DWORD TEXT_DOC_ATTR;
   
 |Constante|Valor|Descripción|  
 |--------------|-----------|-----------------|  
-|TEXT_DOC_ATTR_READONLY|0x00000001|El documento es de solo lectura.|  
-|TEXT_DOC_ATTR_TYPE_PRIMARY|0x00000002|El documento es el archivo principal de este árbol de documentos.|  
-|TEXT_DOC_ATTR_TYPE_WORKER|0x00000004|El documento es un trabajador.|  
+|TEXT_DOC_ATTR_READONLY|0x00000001|El documento es de sólo lectura.|  
+|TEXT_DOC_ATTR_TYPE_PRIMARY|0x00000002|El documento es el archivo principal de este árbol de documento.|  
+|TEXT_DOC_ATTR_TYPE_WORKER|0x00000004|El documento es un proceso de trabajo.|  
 |TEXT_DOC_ATTR_TYPE_SCRIPT|0x00000008|El documento es un archivo de script.|  
   
 ## <a name="see-also"></a>Vea también  

@@ -1,23 +1,23 @@
 ---
 title: Publicación de una aplicación de Python en Azure App Service en Windows
 description: Describe cómo publicar una aplicación web de Python directamente en Azure App Service en Windows desde Visual Studio, incluido el contenido necesario para el archivo web.config.
-ms.date: 10/18/2018
+ms.date: 01/07/2019
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: cae15da8b6a59587037171ae982ee77d2cce2861
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 427a816292efac8be30c9fa447cd07c741cd0691
+ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459967"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060847"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Publicación en Azure App Service en Windows
 
@@ -80,7 +80,7 @@ Si lo desea, también puede instalar el paquete `bottle` siguiendo el proceso de
 
 Al publicar en Azure App Service desde Visual Studio 2017, solo se copian los archivos de su proyecto en el servidor. Por tanto, se deben crear los archivos necesarios para configurar el entorno del servidor.
 
-1. En el **Explorador de soluciones** de Visual Studio, haga clic con el botón derecho en el proyecto y seleccione **Agregar > Nuevo elemento*. En el cuadro de diálogo que aparece, seleccione la plantilla "Azure web.config (Fast CGI)" y, luego, Aceptar. De esta forma, se crea un archivo `web.config` en la raíz del proyecto.
+1. En el **Explorador de soluciones** de Visual Studio, haga clic con el botón derecho en el proyecto y seleccione **Agregar > Nuevo elemento...** En el cuadro de diálogo que aparece, seleccione la plantilla "Azure web.config (Fast CGI)" y, luego, Aceptar. De esta forma, se crea un archivo `web.config` en la raíz del proyecto.
 
 1. Modifique la entrada `PythonHandler` en `web.config`, para que la ruta de acceso coincida con la instalación de Python en el servidor; vea la [referencia sobre la configuración de IIS](https://www.iis.net/configreference) (iis.net) para conocer los detalles exactos. Por ejemplo, para Python 3.6.1 x64, la entrada debería aparecer de esta forma:
 
@@ -103,7 +103,7 @@ Al publicar en Azure App Service desde Visual Studio 2017, solo se copian los ar
         <add key="WSGI_HANDLER" value="app.wsgi_app()"/>
         ```
 
-    - **Flask**: cambie el valor `WSGI_HANDLER` a `<project_name>.app`, donde `<project_name>` coincide con el nombre del proyecto. Puede encontrar el identificador exacto examinando la instrucción `from <project_name> import app` en `runserver.py`. Por ejemplo, si el proyecto se denominara "FlaskAzurePublishExample", la entrada aparecería así:
+    - **Flask**: cambie el valor `WSGI_HANDLER` por `<project_name>.app`, donde `<project_name>` coincide con el nombre del proyecto. Puede encontrar el identificador exacto examinando la instrucción `from <project_name> import app` en `runserver.py`. Por ejemplo, si el proyecto se denominara "FlaskAzurePublishExample", la entrada aparecería así:
 
         ```xml
         <!-- Flask apps only: change the project name to match your app -->
@@ -123,7 +123,7 @@ Al publicar en Azure App Service desde Visual Studio 2017, solo se copian los ar
         <add key="DJANGO_SETTINGS_MODULE" value="DjangoAzurePublishExample.settings" />
         ```
 
-1. **Solo para las aplicaciones de Django**: en el archivo `settings.py` del proyecto de Django, agregue el dominio de dirección URL del sitio a `ALLOWED_HOSTS` tal y como se muestra más abajo, sustituyendo 'vspython-test-02.azurewebsites.net' por su URL:
+1. **Solo para las aplicaciones de Django**: en el archivo `settings.py` del proyecto de Django, agregue el dominio de dirección URL del sitio a `ALLOWED_HOSTS` como se muestra más abajo, sustituyendo "vspython-test-02.azurewebsites.net" por la dirección URL, evidentemente:
 
     ```python
     # Change the URL to your specific site
@@ -184,7 +184,7 @@ Al publicar en Azure App Service desde Visual Studio 2017, solo se copian los ar
 ## <a name="publishing-to-app-service---visual-studio-2015"></a>Publicar en App Service: Visual Studio 2015
 
 > [!Note]
-> Puede ver un breve vídeo de este proceso en [Visual Studio Python Tutorial: Building a Website (Tutorial de Python en Visual Studio: compilar un sitio web)](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (youtube.com, 3 min 10 s).
+> Puede ver un breve vídeo de este proceso en [Visual Studio Python Tutorial: Building a Website (Tutorial de Python en Visual Studio: compilación de un sitio web)](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (youtube.com, 3 minutos y 10 segundos).
 
 1. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto y seleccione **Publicar**.
 

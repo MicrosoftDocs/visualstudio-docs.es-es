@@ -1,9 +1,6 @@
 ---
 title: Tutoriales para Excel
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45e496797d45b008531182571d4a96958433a7b4
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: cf70d0c87a089292caf07f39f54b52f5cfaa13aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258192"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823042"
 ---
 # <a name="walkthroughs-using-excel"></a>Tutoriales para Excel
   En los siguientes tutoriales se muestran las maneras en las que puede usar las personalizaciones de nivel de documento y los complementos de VSTO para automatizar Microsoft Office Excel y personalizar la interfaz de usuario (UI).  
@@ -33,7 +30,7 @@ ms.locfileid: "35258192"
  [Tutorial: Crear una pestaña personalizada usando el Diseñador de cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
  Muestra cómo agregar una pestaña personalizada a la cinta de un libro de Excel.  
   
- [Tutorial: Recopilar datos mediante un formulario de Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
+ [Tutorial: Recopilación de datos mediante un formulario de Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
  Ilustra el uso de Windows Forms para recopilar una entrada del usuario y, a continuación, enviarla a una celda de una hoja de cálculo de Excel.  
   
  [Tutorial: Cambiar el formato de hoja de cálculo utilizando controles CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)  
@@ -45,13 +42,13 @@ ms.locfileid: "35258192"
  [Tutorial: Programar basándose en eventos de un control NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)  
  Proporciona instrucciones paso a paso acerca de cómo agregar un control <xref:Microsoft.Office.Tools.Excel.NamedRange> a una hoja de cálculo y programar teniendo en cuenta sus eventos.  
   
- [Tutorial: Enlace de datos Simple en un proyecto de nivel de documento](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  
+ [Tutorial: Enlace de datos simple en un proyecto de nivel de documento](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  
  Muestra los conceptos básicos del enlace de un único campo de datos de una base de datos de SQL Server a un intervalo con nombre de Excel.  
   
  [Tutorial: Enlace de datos complejo en un proyecto de nivel de documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  
  Muestra los conceptos básicos de enlazar varias celdas de una hoja de cálculo de Excel a los campos de la base de datos Northwind de SQL Server.  
   
- [Tutorial: Crear a una relación principal-detalle utilizando un conjunto de datos en caché](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
+ [Tutorial: Crear a una relación de maestro/detalle con un conjunto de datos en caché](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
  Muestra cómo crear a una relación maestro y detalles en una hoja de cálculo y almacenar en caché los datos para que la solución se puede usar sin conexión.  
   
  [Tutorial: Actualizar un gráfico en una hoja de cálculo utilizando botones de radio](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  
@@ -73,7 +70,5 @@ ms.locfileid: "35258192"
  [Tutorial: Sincronizar un panel de tareas personalizado con un botón de la cinta de opciones](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)  
  Muestra cómo crear un panel de tareas personalizado que los usuarios puedan ocultar o mostrar haciendo clic en un botón de alternancia en la cinta.  
   
- [Tutorial: Enlace de datos complejos en el proyecto de complemento VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  
+ [Tutorial: Enlace de datos complejo en el proyecto de complemento VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  
  Muestra cómo enlazar una tabla en una base de datos de SQL Server a un <xref:Microsoft.Office.Tools.Excel.ListObject> en un complemento de VSTO para Excel.  
-  
-  

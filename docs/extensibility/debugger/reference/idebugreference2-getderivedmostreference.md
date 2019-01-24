@@ -1,9 +1,6 @@
 ---
 title: IDebugReference2::GetDerivedMostReference | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugReference2::GetDerivedMostReference
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6e8998ca881bbeb4a90405ab01577bf6be18f33
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: da924444d30d0cb3022601d1ed6931ef605fa888
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858360"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892931"
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
 Obtiene la referencia más derivado de una referencia. Reservado para un uso futuro.  
@@ -28,13 +25,13 @@ Obtiene la referencia más derivado de una referencia. Reservado para un uso fut
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT GetDerivedMostReference(   
+HRESULT GetDerivedMostReference(   
    IDebugReference2** ppDerivedMost  
 );  
 ```  
   
 ```csharp  
-int GetDerivedMostReference(   
+int GetDerivedMostReference(   
    out IDebugReference2 ppDerivedMost  
 );  
 ```  

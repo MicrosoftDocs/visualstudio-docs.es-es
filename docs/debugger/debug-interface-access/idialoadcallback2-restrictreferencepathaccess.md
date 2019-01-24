@@ -1,8 +1,6 @@
 ---
-title: 'Idialoadcallback2:: Restrictreferencepathaccess | Documentos de Microsoft'
-ms.custom: ''
+title: Idialoadcallback2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03c3a6239b41fec44098850973ddcd4839b808a8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 121b5a4c74fd017e39314de7afe760a8d6184e25
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458507"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872140"
 ---
 # <a name="idialoadcallback2restrictreferencepathaccess"></a>IDiaLoadCallback2::RestrictReferencePathAccess
-Determina si está buscando un archivo .pdb permitida en la ruta de acceso donde se encuentra el archivo .exe.  
+Determina si se permite la búsqueda de un archivo .pdb en la ruta de acceso donde se encuentra el archivo .exe.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -31,10 +29,10 @@ HRESULT RestrictReferencePathAccess();
 ```  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Cualquier código de retorno distinto de `S_OK` para evitar que busca un archivo .pdb en la ruta de acceso donde se encuentra el archivo .exe.  
+ Cualquier código de retorno distinto `S_OK` para evitar que busca un archivo .pdb en la ruta de acceso donde se encuentra el archivo .exe.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

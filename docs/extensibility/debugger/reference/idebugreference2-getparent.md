@@ -1,9 +1,6 @@
 ---
 title: IDebugReference2::GetParent | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugReference2::GetParent
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c6fe4c6fa66d2a5f8b514028c5633727b003992
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c7bc0cf40fd99a210ca688bedfb34885cb081aa2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913039"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831146"
 ---
 # <a name="idebugreference2getparent"></a>IDebugReference2::GetParent
 Obtiene la referencia primaria de una referencia. Reservado para un uso futuro.  
@@ -28,13 +25,13 @@ Obtiene la referencia primaria de una referencia. Reservado para un uso futuro.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT GetParent (   
+HRESULT GetParent (   
    IDebugReference2** ppParent  
 );  
 ```  
   
 ```csharp  
-int GetParent (   
+int GetParent (   
    out IDebugReference2 ppParent  
 );  
 ```  

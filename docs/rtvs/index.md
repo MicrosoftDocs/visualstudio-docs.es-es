@@ -3,19 +3,18 @@ title: R Tools para Visual Studio
 description: Herramientas de R para Visual Studio (RTVS) es una extensión gratuita y de código abierto que proporciona muchas características de lenguaje, como IntelliSense, depuración y áreas de trabajo remotas.
 ms.date: 11/13/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 05ffd249be3d7734979f3a131a3a10423b76cb9d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c2ae060c889065f7f8ba543e0cb20e8ea40ec758
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667020"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883086"
 ---
 # <a name="work-with-r-in-visual-studio"></a>Trabajar con R en Visual Studio
 
@@ -43,7 +42,7 @@ A continuación, siga los vínculos que aparecen a continuación para obtener m�
 | [Ventana interactiva](interactive-repl-for-r-in-visual-studio.md) | Proporciona una experiencia completa de REPL para R con la capacidad de ejecutar código fácilmente en un archivo de origen en la ventana interactiva. | N/D |
 | [Visualización de datos](visualizing-data-with-r-in-visual-studio.md) | El trazado es una parte integral de la experiencia de R y RTVS admite varias ventanas de trazado independientes, cada una con su propio historial y la capacidad de mover trazados entre ventanas. Los trazados se pueden guardar en archivos de mapa de bits y PDF, o copiarse al Portapapeles como un mapa de bits o metarchivo.  | N/D |
 | [Explorador de variables](variable-explorer.md) | Examine variables en los ámbitos globales o específicos del paquete, con la capacidad de ver tablas que se puede ordenar y exportar a CSV. | N/D |
-| [Depuración repleta de características](debugging-r-in-visual-studio.md) | Incluye integración con la ventana interactiva. | [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md) |
+| [Depuración repleta de características](debugging-r-in-visual-studio.md) | Incluye integración con la ventana interactiva. | [Depurar en Visual Studio](/visualstudio/debugger/debugger-feature-tour) |
 
 Vea también las [preguntas más frecuentes](faq.md).
 
@@ -53,8 +52,8 @@ Vea también las [preguntas más frecuentes](faq.md).
 
 ## <a name="send-us-your-feedback"></a>Envíenos sus comentarios.
 
-1. **Problemas de GitHub**: la mejor forma de ponerse en contacto con el equipo de RTVS es [archivar un problema en GitHub](https://github.com/Microsoft/RTVS/issues), o mediante el menú **R Tools** > **Comentarios**.
+1. **Problemas de GitHub**: la mejor forma de ponerse en contacto con el equipo de RTVS es [registrando un problema en GitHub](https://github.com/Microsoft/RTVS/issues) o usando el menú **Herramientas de R** > **Comentarios**.
 
-1. **Enviar una sonrisa o una desaprobación**: el menú **R Tools** > **Comentarios** es una manera rápida de enviar comentarios y adjuntar archivos de registro de RTVS para ayudar en el diagnóstico del problema. (Los registros se escriben en *%temp%/RTVSlogs.zip*, en caso de que quiera enviarlos por separado). Si ha desactivado la telemetría de Visual Studio a través del comando de menú **Ayuda** > **Comentarios** > **Configuración** o durante la instalación, el registro está deshabilitado.
+1. **Enviar una sonrisa/desaprobación**: el menú **Herramientas de R** > **Comentarios** es una forma rápida de enviar comentarios y adjuntar archivos de registro de RTVS para ayudar en el diagnóstico del problema. (Los registros se escriben en *%temp%/RTVSlogs.zip*, en caso de que quiera enviarlos por separado). Si ha desactivado la telemetría de Visual Studio a través del comando de menú **Ayuda** > **Comentarios** > **Configuración** o durante la instalación, el registro está deshabilitado.
 
-1. **Correo electrónico**: puede enviar comentarios directamente al equipo a *rtvsuserfeedback (arroba) microsoft.com*.
+1. **Correo electrónico**: puede enviar comentarios directamente al equipo a *rtvsuserfeedback (at) microsoft.com*.

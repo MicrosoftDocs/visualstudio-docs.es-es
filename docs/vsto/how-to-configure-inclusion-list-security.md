@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: configurar la seguridad de la lista de inclusión'
-ms.custom: ''
+title: Procedimiento Configurar la seguridad de la lista de inclusión
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -11,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - permissions [Office development in Visual Studio
 - inclusion lists [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6e5bd1794b76485d60588b94d3ca139a314f9723
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 026cdef278f87ec4367dd88a8530a35425452b75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255842"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895582"
 ---
-# <a name="how-to-configure-inclusion-list-security"></a>Cómo: configurar la seguridad de la lista de inclusión
+# <a name="how-to-configure-inclusion-list-security"></a>Procedimiento Configurar la seguridad de la lista de inclusión
   Si tiene permisos de administrador, puede configurar el [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] confiar símbolo del sistema para controlar si los usuarios finales tienen la opción de instalar soluciones de Office al guardar una decisión de confianza en la lista de inclusión. Para obtener información acerca de las listas de inclusión, vea [soluciones de Office de confianza mediante el uso de las listas de inclusión](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -213,5 +210,3 @@ ms.locfileid: "35255842"
 ## <a name="see-also"></a>Vea también  
  [Confiar en soluciones de Office mediante listas de inclusión](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
  [Proteger soluciones de Office](../vsto/securing-office-solutions.md)  
-  
-  

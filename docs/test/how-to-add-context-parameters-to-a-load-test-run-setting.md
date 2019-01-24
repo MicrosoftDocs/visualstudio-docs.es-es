@@ -1,5 +1,5 @@
 ---
-title: Agregar parámetros de contexto a parámetros de ejecución de pruebas de carga en Visual Studio
+title: Adición de parámetros de contexto a los parámetros de ejecución de una prueba de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +10,18 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 63cf3e71ded582b3406957ccb423c8dbf47768ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 378fc29fa7f867eee1be9e30e58c80149d1ed835
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905907"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898393"
 ---
-# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Cómo: Agregar parámetros de contexto a parámetros de ejecución de pruebas de carga
+# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Procedimiento para agregar parámetros de contexto a los parámetros de ejecución de una prueba de carga
 
 Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades de los escenarios de modo que satisfagan las necesidades y los objetivos de la prueba.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > Para obtener una lista completa de las propiedades de los parámetros de ejecución y sus descripciones, consulte [Propiedades de los parámetros de ejecución de las pruebas de carga](../test/load-test-run-settings-properties.md).
@@ -36,9 +37,9 @@ Si asigna el valor del parámetro de contexto Webserver1 a `http://CorporateStag
 
 Además, si asigna valores diferentes a un parámetro de contexto usando el mismo nombre en parámetros de ejecución de pruebas de carga diferentes, puede ejecutar la prueba de carga usando entornos diferentes:
 
-- Parámetro de ejecución Servidor web de ensayo corporativo: el parámetro de contexto se denomina `WebServer1=http://CorporateStagingWebServer`
+- Parámetro de ejecución Servidor web de ensayo corporativo: El parámetro de contexto que se denomina `WebServer1=http://CorporateStagingWebServer`
 
-- Parámetro de ejecución Servidor web de producción corporativo: el parámetro de contexto se denomina `WebServer1=http://CorporateProductionWebServer`
+- Parámetro de ejecución Servidor web de producción corporativo: El parámetro de contexto que se denomina `WebServer1=http://CorporateProductionWebServer`
 
   **Cambiar el parámetro de ejecución desde la línea de comandos**
 
@@ -60,7 +61,7 @@ Además, si asigna valores diferentes a un parámetro de contexto usando el mism
 
      Se agregará un nuevo parámetro de contexto a la carpeta **Parámetros de contexto** de la carpeta **Parámetros de ejecución** del árbol de pruebas de carga.
 
-     O bien
+     o bien
 
      Si el parámetro de ejecución ya contiene una carpeta **Parámetros de contexto**, puede hacer clic en ella con el botón derecho y, a continuación, elegir **Agregar parámetro de contexto**.
 

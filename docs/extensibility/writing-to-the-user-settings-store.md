@@ -1,9 +1,6 @@
 ---
-title: Escribir en el almacén de configuración de usuario | Documentos de Microsoft
-ms.custom: ''
+title: Escribir en el Store de la configuración de usuario | Documentos de Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
 author: gregvanl
@@ -11,26 +8,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e205fa8850bdd5ee664f66c6d6bb7bf86195bfd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2d5fe8e9689448644315306e74deaa394f15c1a8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31145417"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830237"
 ---
-# <a name="writing-to-the-user-settings-store"></a>Escribir en el almacén de configuración de usuario
-Configuración del usuario sea grabables opciones como las de la **herramientas / opciones** cuadro de diálogo, ventanas de propiedades y algunos otros cuadros de diálogo. Extensiones de Visual Studio pueden usarlos para almacenar pequeñas cantidades de datos. Este tutorial muestra cómo agregar el Bloc de notas para Visual Studio como una herramienta externa al leer y escribir en el almacén de configuración de usuario.  
+# <a name="writing-to-the-user-settings-store"></a>Escritura en el almacén de configuración de usuario
+Configuración de usuario son valores grabables como las de la **herramientas / opciones** cuadro de diálogo, ventanas de propiedades y algunos otros cuadros de diálogo. Extensiones de Visual Studio pueden usarlas para almacenar pequeñas cantidades de datos. Este tutorial muestra cómo agregar el Bloc de notas para Visual Studio como una herramienta externa al leer y escribir en el almacén de configuración de usuario.  
   
-### <a name="backing-up-your-user-settings"></a>Copia de seguridad de la configuración de usuario  
+### <a name="backing-up-your-user-settings"></a>La copia de seguridad de la configuración de usuario  
   
-1.  Debe poder restablecer la configuración de herramientas externas para que pueda depurar y repita el procedimiento. Para ello, debe guardar la configuración original para que pueda restaurarlos al completo según sea necesario.  
+1.  Debe poder restablecer la configuración de herramientas externas para que pueda depurar y repita el procedimiento. Para ello, debe guardar la configuración original de forma que puede restaurar según sea necesario.  
   
 2.  Abra Regedit.exe.  
   
-3.  Vaya a herramientas de HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External\\.  
+3.  Vaya a herramientas HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External\\.  
   
     > [!NOTE]
-    >  Asegúrese de que se trata de la clave que contiene \14.0Exp\ y no \14.0\\. Cuando se ejecuta la instancia experimental de Visual Studio, la configuración de usuario está en el subárbol del registro "14.0Exp".  
+    >  Asegúrese de que está mirando la clave que contiene \14.0Exp\ y no \14.0\\. Cuando se ejecuta la instancia experimental de Visual Studio, la configuración de usuario está en el subárbol del registro "14.0Exp".  
   
 4.  Haga clic en la subclave \External Tools\ y, a continuación, haga clic en **exportar**. Asegúrese de que **rama seleccionada** está seleccionada.  
   
@@ -42,9 +39,9 @@ Configuración del usuario sea grabables opciones como las de la **herramientas 
   
 8.  Haga clic en el archivo externo Tools.reg que guardó anteriormente, haga clic en **abrir con**y, a continuación, haga clic en **Editor del registro**.  
   
-## <a name="writing-to-the-user-settings-store"></a>Escribir en el almacén de configuración de usuario  
+## <a name="writing-to-the-user-settings-store"></a>Escritura en el almacén de configuración de usuario  
   
-1.  Cree un proyecto VSIX denominado UserSettingsStoreExtension y, a continuación, agregue un comando personalizado denominado UserSettingsStoreCommand. Para obtener más información sobre cómo crear un comando personalizado, vea [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md)  
+1.  Cree un proyecto VSIX denominado UserSettingsStoreExtension y, a continuación, agregue un comando personalizado denominado UserSettingsStoreCommand. Para obtener más información sobre cómo crear un comando personalizado, consulte [creación de una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
 2.  En UserSettingsStoreCommand.cs, agregue las siguientes instrucciones using:  
   
@@ -54,7 +51,7 @@ Configuración del usuario sea grabables opciones como las de la **herramientas 
     using Microsoft.VisualStudio.Shell.Settings;  
     ```  
   
-3.  En MenuItemCallback, elimine el cuerpo del método y obtener el usuario al almacén de configuración, como se indica a continuación:  
+3.  En MenuItemCallback, elimine el cuerpo del método y obtener el usuario del almacén de configuración, como se indica a continuación:  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -64,7 +61,7 @@ Configuración del usuario sea grabables opciones como las de la **herramientas 
     }  
     ```  
   
-4.  Ahora, averigüe si el Bloc de notas ya está configurada como una herramienta externa. Necesario recorrer en iteración todas las herramientas externas para determinar si el valor de ToolCmd es "Notepad", como se indica a continuación:  
+4.  Ahora, averigüe si ya está establecido el Bloc de notas como una herramienta externa. Deberá recorrer en iteración todas las herramientas externas para determinar si la configuración de ToolCmd es "Notepad", como se indica a continuación:  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -124,10 +121,10 @@ Configuración del usuario sea grabables opciones como las de la **herramientas 
     }  
     ```  
   
-6.  Probar el código. Recuerde que agrega el Bloc de notas como una herramienta externa, por lo que debe revertir el registro antes de ejecutar una segunda vez.  
+6.  Probar el código. Recuerde que agrega el Bloc de notas como una herramienta externa, por lo que debe revertir el registro antes de ejecutarlo una segunda vez.  
   
 7.  Compilar el código e iniciar la depuración.  
   
 8.  En el **herramientas** menú, haga clic en **UserSettingsStoreCommand invocar**. Esto agregará el Bloc de notas para el **herramientas** menú.  
   
-9. Ahora debería ver el Bloc de notas en las herramientas / opciones de menú y haga clic en **el Bloc de notas** debe utilizar una instancia del Bloc de notas.
+9. Ahora debería ver el Bloc de notas en las herramientas / opciones de menú y haga clic en **el Bloc de notas** debería abrirse una instancia del Bloc de notas.

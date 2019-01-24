@@ -21,15 +21,15 @@ helpviewer_keywords:
 - MSBuild, validating code
 ms.assetid: 70cbe55d-4b33-4355-b0a7-88c770a6f75c
 caps.latest.revision: 84
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 724ddcc00b1f49eb1f96e67d6b6e269933cb9d66
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4d010345c551572bb6458110d2de9ca33fc73155
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950500"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792169"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Validar código con diagramas de capas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

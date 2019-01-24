@@ -1,20 +1,18 @@
 ---
 title: Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012 | Microsoft Docs
-ms.custom: ''
 ms.date: 06/19/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ad5cc6dc41fb3c9b481eef717ccc3ad07b5e2e9
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9fe876d5244ad18d1d2635caa1717ca9eb0e29ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43780712"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832299"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012
 
@@ -39,13 +37,13 @@ Estas características y opciones de generación de perfiles no se admiten al ge
 
 Para más información sobre cómo generar perfiles de aplicaciones para UWP, consulte los artículos siguientes:
 
-- [Ejecución de aplicaciones para UWP en el equipo local](../debugger/run-windows-store-apps-on-the-local-machine.md)
+- [Ejecución de aplicaciones para UWP en el equipo local](/visualstudio/debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml)
 - [Ejecución de aplicaciones para UWP en un equipo remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md)
 - [Primer vistazo a la generación de perfiles](profiling-feature-tour.md)
 - [Memoria de JavaScript](../profiling/javascript-memory.md)
-- [Generar perfiles de código de Visual C++, Visual C# y Visual Basic en aplicaciones para UWP en un equipo local](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)
-- [Generar perfiles de código de Visual C++, Visual C# y Visual Basic en aplicaciones para UWP en un dispositivo remoto](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)
-- [Analizar datos de rendimiento de código de Visual C++, Visual C# y Visual Basic en aplicaciones para UWP](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)
+- [Generar perfiles de código de Visual C++, Visual C# y Visual Basic en aplicaciones para UWP en un equipo local](https://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)
+- [Generar perfiles de código de Visual C++, Visual C# y Visual Basic en aplicaciones para UWP en un dispositivo remoto](https://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)
+- [Analizar datos de rendimiento de código de Visual C++, Visual C# y Visual Basic en aplicaciones para UWP](https://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)
 
 ## <a name="collect-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-from-the-visual-studio-ide"></a>Recopilar datos de aplicaciones que se ejecutan en el escritorio de Windows 8 o en Windows Server 2012 desde el IDE de Visual Studio
 
@@ -76,7 +74,7 @@ Para generar perfiles de aplicaciones en dispositivos que no tienen Visual Studi
 
 - Descargue las herramientas como parte de las Herramientas remotas para Visual Studio desde el [sitio web de MSDN](http://go.microsoft.com/fwlink/?LinkID=219549).
 
-- Copie y ejecute el programa de instalación independiente de las herramientas de generación de perfiles desde el equipo de Visual Studio. Los programas de instalación están en la carpeta *%VSInstallDir%\Team Tools\Performance Tools\Setups*. Elija el programa de instalación para el sistema operativo (x86/x64) del equipo remoto.
+- Copie y ejecute el programa de instalación independiente de las herramientas de generación de perfiles desde el equipo de Visual Studio. Para obtener la ruta de acceso a las herramientas de generación de perfiles, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Elija el programa de instalación para el sistema operativo (x86/x64) del equipo remoto.
 
 > [!NOTE]
 > Para recopilar datos de generación de perfiles TIP, debe instalar el generador de perfiles independiente del equipo de Visual Studio en el equipo remoto.

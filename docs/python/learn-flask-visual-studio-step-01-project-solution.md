@@ -1,24 +1,25 @@
 ---
-title: 'Tutorial: Información sobre Flask en Visual Studio, paso 1'
-description: Tutorial sobre aspectos básicos de Flask en el contexto de los proyectos de Visual Studio.
-ms.date: 09/04/2018
+title: Información sobre el paso 1 del tutorial de Flask en Visual Studio, Conceptos básicos de Flask
+titleSuffix: ''
+description: Un tutorial sobre los aspectos básicos de Flask en el contexto de los proyectos de Visual Studio, incluidos los requisitos previos, Git y los entornos virtuales.
+ms.date: 01/07/2019
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9865e8e6faaac7b0c3af28532223ea2d5c9f7c01
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 490356eae7467eded983b117a88c35c9785f3f93
+ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029071"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060769"
 ---
-# <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutorial: Introducción al marco web de Flask en Visual Studio
+# <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutorial: Introducción al marco web Flask en Visual Studio
 
 [Flask](http://flask.pocoo.org/) es un marco de Python ligero para aplicaciones web que proporciona los elementos básicos para el enrutamiento de direcciones URL y la representación de páginas.
 
@@ -48,7 +49,7 @@ Las plantillas de proyecto de Flask se incluyen con todas las versiones anterior
 
 El desarrollo de Python no es compatible actualmente en Visual Studio para Mac. En Mac y Linux, use la [extensión de Python en Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
 
-## <a name="step-1-1-create-a-visual-studio-project-and-solution"></a>Paso 1.1: Crear una solución y un proyecto de Visual Studio
+## <a name="step-1-1-create-a-visual-studio-project-and-solution"></a>Paso 1-1: Creación de una solución y un proyecto de Visual Studio
 
 1. En Visual Studio, seleccione **Archivo** > **Nuevo** > **Proyecto**, busque "Flask" y seleccione la plantilla **Proyecto web de Flask en blanco**. (La plantilla también se encuentra en **Python** > **Web** en la lista de la izquierda).
 
@@ -59,7 +60,7 @@ El desarrollo de Python no es compatible actualmente en Visual Studio para Mac. 
     - **Nombre**: establezca el nombre del proyecto de Visual Studio en **BasicProject**. Este nombre también se usa para el proyecto de Flask.
     - **Ubicación**: especifique una ubicación en la que se va a crear la solución y el proyecto de Visual Studio.
     - **Nombre de la solución**: establezca en **LearningFlask**, que es adecuado para la solución como contenedor de varios proyectos de este tutorial.
-    - **Crear directorio para la solución**: deje el valor predeterminado.
+    - **Crear directorio para la solución**: mantenga la opción activada (valor predeterminado).
     - **Crear nuevo repositorio Git**: active esta opción (que está desactivada de forma predeterminada) para que Visual Studio cree un repositorio Git local al generar la solución. Si no ve esta opción, ejecute el instalador de Visual Studio 2017 y agregue **Git para Windows** y la **Extensión de GitHub para Visual Studio** en la pestaña **Componentes individuales**, en **Herramientas de código**.
 
 1. Tras un momento, Visual Studio muestra un cuadro de diálogo que indica **Este proyecto necesita paquetes externos** (se muestra abajo). Este cuadro de diálogo aparece porque la plantilla incluye un archivo *requirements.txt* que hace referencia al paquete Flask 1.x más reciente. (Active **Mostrar paquetes necesarios** para ver las dependencias exactas).
@@ -68,7 +69,7 @@ El desarrollo de Python no es compatible actualmente en Visual Studio para Mac. 
 
 1. Seleccione la opción **Los instalaré de forma manual**. Cree el entorno virtual en breve para asegurarse de que se excluye del control de código fuente. (El entorno siempre puede crearse a partir de *requirements.txt*).
 
-## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>Paso 1.2: Examinar los controles de Git y publicar en un repositorio remoto
+## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>Paso 1-2: Examen de los controles de Git y publicación en un repositorio remoto
 
 Como seleccionó **Crear nuevo repositorio Git** en el cuadro de diálogo **Nuevo proyecto**, el proyecto ya estará confirmado para el control de código fuente local en cuanto se complete el proceso de creación. En este paso, familiarícese con los controles de Git de Visual Studio y la ventana de **Team Explorer** en la que se trabaja con el control de código fuente.
 
@@ -102,17 +103,17 @@ Como seleccionó **Crear nuevo repositorio Git** en el cuadro de diálogo **Nuev
 > [!Tip]
 > Para desplazarse rápidamente por **Team Explorer**, seleccione el encabezado (donde pone **Changes** o **Push** en las imágenes anteriores) para ver un menú emergente de las páginas disponibles.
 
-### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Pregunta: ¿Cuáles son algunas de las ventajas del uso de control de código fuente desde el principio de un proyecto?
+### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Cuáles son algunas de las ventajas del uso del control de código fuente desde el principio de un proyecto?
 
-Respuesta: En primer lugar, usar el control de código fuente desde el principio, especialmente si también utiliza un repositorio remoto, genera una copia de seguridad periódica externa del proyecto. A diferencia de mantener un proyecto solo en un sistema de archivos local, el control de código fuente también proporciona un historial de cambios completo y la capacidad de revertir con facilidad un único archivo o todo el proyecto a un estado anterior. Ese historial de cambios ayuda a determinar la causa de regresiones (errores de prueba). Además, el control de código fuente es esencial si varias personas trabajan en un proyecto, ya que administra las sobrescrituras y ofrece solución para los conflictos. Por último, el control de código fuente, que es básicamente una forma de automatización, facilita la automatización de las compilaciones, las pruebas y la administración de versiones. Es realmente el primer paso para utilizar DevOps para un proyecto, y dado que las barreras de entrada son tan bajas, realmente no hay ninguna razón que impida usar el control de código fuente desde el principio.
+Respuesta: En primer lugar, usar el control de código fuente desde el principio, especialmente si también se utiliza un repositorio remoto, proporciona una copia de seguridad periódica externa del proyecto. A diferencia de mantener un proyecto solo en un sistema de archivos local, el control de código fuente también proporciona un historial de cambios completo y la capacidad de revertir con facilidad un único archivo o todo el proyecto a un estado anterior. Ese historial de cambios ayuda a determinar la causa de regresiones (errores de prueba). Además, el control de código fuente es esencial si varias personas trabajan en un proyecto, ya que administra las sobrescrituras y ofrece solución para los conflictos. Por último, el control de código fuente, que es básicamente una forma de automatización, facilita la automatización de las compilaciones, las pruebas y la administración de versiones. Es realmente el primer paso para utilizar DevOps para un proyecto, y dado que las barreras de entrada son tan bajas, realmente no hay ninguna razón que impida usar el control de código fuente desde el principio.
 
-Para obtener más información sobre el control de código fuente como automatización, consulte [The Source of Truth: The Role of Repositories in DevOps](https://msdn.microsoft.com/magazine/mt763232) (El origen de la verdad, el rol de los repositorios en DevOps), un artículo de MSDN Magazine escrito para aplicaciones móviles que se aplica también a las aplicaciones web.
+Para obtener más información sobre el control de código fuente como automatización, vea [The Source of Truth: The Role of Repositories in DevOps](https://msdn.microsoft.com/magazine/mt763232) (El origen de la verdad: el rol de los repositorios en DevOps), un artículo de MSDN Magazine escrito para aplicaciones móviles que también se aplica a las aplicaciones web.
 
-### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>Pregunta: ¿Puedo evitar que Visual Studio confirme automáticamente un nuevo proyecto?
+### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Puedo evitar que Visual Studio confirme automáticamente un nuevo proyecto?
 
-Respuesta : Sí. Para deshabilitar la confirmación automática, vaya a la página **Configuración** de **Team Explorer**, seleccione **Git** > **Configuración global**, desactive la opción **Confirmar cambios tras la fusión mediante combinación de forma predeterminada** y, a continuación, seleccione **Actualizar**.
+Respuesta: Sí. Para deshabilitar la confirmación automática, vaya a la página **Configuración** de **Team Explorer**, seleccione **Git** > **Configuración global**, desactive la opción **Confirmar cambios tras la fusión mediante combinación de forma predeterminada** y, a continuación, seleccione **Actualizar**.
 
-## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>Paso 1.3: Crear el entorno virtual y excluirlo del control de código fuente
+## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>Paso 1-3: Creación del entorno virtual y excluirlo del control de código fuente
 
 Ahora que ha configurado el control de código fuente para el proyecto, puede crear el entorno virtual para los paquetes Flask necesarios que requiere el proyecto. A continuación, puede usar **Team Explorer** para excluir la carpeta del entorno del control de código fuente.
 
@@ -140,17 +141,17 @@ Ahora que ha configurado el control de código fuente para el proyecto, puede cr
 
 1. Escriba un mensaje de confirmación y seleccione el botón **Confirmar todo**, a continuación, inserte las confirmaciones en el repositorio remoto si lo desea.
 
-### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>Pregunta: ¿Por qué es conveniente crear un entorno virtual?
+### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Por qué es conveniente crear un entorno virtual?
 
 Respuesta: Un entorno virtual es una excelente manera de aislar las dependencias exactas de la aplicación. Este tipo de aislamiento evita conflictos dentro de un entorno de Python global y contribuye a las pruebas y la colaboración. Con el tiempo, a medida que desarrolle una aplicación, es inevitable que incorpore muchos paquetes útiles de Python. Si mantiene los paquetes en un entorno virtual específico del proyecto, puede actualizar fácilmente el archivo *requirements.txt* del proyecto que describe ese entorno, el cual se incluye en el control de código fuente. Cuando el proyecto se copia en otros equipos, como los servidores de compilación, los servidores de implementación y otros equipos de desarrollo, es fácil volver a crear el entorno con solo *requirements.txt* (por este motivo no es necesario que el entorno esté en el control de código fuente). Para obtener más información, vea [Use virtual environments](selecting-a-python-environment-for-a-project.md#use-virtual-environments) (Usar entornos virtuales).
 
-### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Pregunta: ¿Cómo se quita un entorno virtual que ya se ha confirmado en el control de código fuente?
+### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Cómo se quita un entorno virtual que ya se ha confirmado en el control de código fuente?
 
 Respuesta: En primer lugar, edite el archivo *.gitignore* para excluir la carpeta: busque la sección del final con el comentario `# Python Tools for Visual Studio (PTVS)` y agregue una línea nueva para la carpeta del entorno virtual, como `/BasicProject/env`. (Dado que Visual Studio no muestra el archivo en el **Explorador de soluciones**, ábralo directamente mediante el comando de menú **Archivo** > **Abrir** > **Archivo**. También puede abrir el archivo desde **Team Explorer**: en la página **Configuración**, seleccione **Configuración de repositorios**, vaya a la sección **Archivos de omisión y de atributos** y luego seleccione el vínculo **Editar** junto a **.gitignore**).
 
 En segundo lugar, abra una ventana de comandos, vaya a la carpeta como *BasicProject* que contiene la carpeta del entorno virtual, como *env*, y ejecute `git rm -r env`. A continuación, confirme esos cambios desde la línea de comandos (`git commit -m 'Remove venv'`), o bien desde la página **Cambios** de **Team Explorer**.
 
-## <a name="step-1-4-examine-the-boilerplate-code"></a>Paso 1.4: Examinar el código reutilizable
+## <a name="step-1-4-examine-the-boilerplate-code"></a>Paso 1-4: Examen del código reutilizable
 
 1. Cuando termina la creación del proyecto, se ven la solución y el proyecto en el **Explorador de soluciones**, donde el proyecto contiene solo dos archivos, *app.py* y *requirements.txt*:
 
@@ -190,11 +191,11 @@ En segundo lugar, abra una ventana de comandos, vaya a la carpeta como *BasicPro
         return "Hello World!"
     ```
 
-### <a name="question-what-is-the-purpose-of-the-name-argument-to-the-flask-class"></a>Pregunta: ¿Cuál es el propósito del argumento __name__ para la clase de Flask?
+### <a name="question-what-is-the-purpose-of-the-name-argument-to-the-flask-class"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Cuál es el propósito del argumento __name__ para la clase de Flask?
 
 Respuesta: El argumento es el nombre del módulo o del paquete de la aplicación e indica a Flask dónde se deben buscar plantillas, archivos estáticos y otros recursos que pertenecen a la aplicación. Para las aplicaciones incluidas en un solo módulo, `__name__` siempre es el valor adecuado. También es importante para las extensiones que necesitan información de depuración. Para obtener más información y argumentos adicionales, vea la [documentación sobre las clases de Flask](http://flask.pocoo.org/docs/1.0/api/#flask.Flask) (flask.pocoo.org).
 
-### <a name="question-can-a-function-have-more-than-one-route-decorator"></a>Pregunta: ¿Una función puede tener más de un decorador de ruta?
+### <a name="question-can-a-function-have-more-than-one-route-decorator"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Una función puede tener más de un decorador de ruta?
 
 Respuesta: Sí, puede usar todos los decoradores que quiera si la misma función sirve para varias rutas. Por ejemplo, para usar la función `hello` para "/" y "/hello", use el código siguiente:
 
@@ -208,9 +209,9 @@ def hello():
 
 <a name="qa-url-variables"></a>
 
-### <a name="question-how-does-flask-work-with-variable-url-routes-and-query-parameters"></a>Pregunta: ¿Cómo trabaja Flask con las rutas de dirección URL de variables y con los parámetros de consulta?
+### <a name="question-how-does-flask-work-with-variable-url-routes-and-query-parameters"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Cómo trabaja Flask con las rutas de dirección URL de variables y con los parámetros de consulta?
 
-Respuesta: En una ruta, las variables se marcan con `<variable_name>` y Flask pasa la variable a la función con un argumento con nombre. La variable puede formar parte de la ruta de acceso de la dirección URL o de un parámetro de consulta. Por ejemplo, una ruta con el formato `'/hello/<name>` genera un argumento de cadena denominado `name` en la función. Al usar `?message=<msg>` en la ruta, se analiza el valor indicado para el parámetro de consulta "message=" y se pasa a la función como `msg`:
+Respuesta: En una ruta, las variables se marcan con `<variable_name>` y Flask pasa la variable a la función mediante un argumento con nombre. La variable puede formar parte de la ruta de acceso de la dirección URL o de un parámetro de consulta. Por ejemplo, una ruta con el formato `'/hello/<name>` genera un argumento de cadena denominado `name` en la función. Al usar `?message=<msg>` en la ruta, se analiza el valor indicado para el parámetro de consulta "message=" y se pasa a la función como `msg`:
 
 ```python
 @app.route('/hello/<name>?message=<msg>')
@@ -222,11 +223,11 @@ Para cambiar el tipo, anteponga la variable con `int`, `float`, `path` (que acep
 
 Los parámetros de consulta también están disponibles mediante la propiedad `request.args`, en concreto mediante el método `request.args.get`. Para obtener más información, vea la información sobre el [objeto Request](http://flask.pocoo.org/docs/1.0/quickstart/#the-request-object) de la documentación de Flask.
 
-### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>Pregunta: ¿Puede Visual Studio generar un archivo requirements.txt a partir de un entorno virtual después de instalar otros paquetes?
+### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Puede Visual Studio generar un archivo requirements.txt a partir de un entorno virtual después de instalar otros paquetes?
 
-Respuesta : Sí. Expanda el nodo **Entornos de Python**, haga clic con el botón derecho en su entorno virtual y seleccione el comando **Generar requirements.txt**. Es conveniente usar este comando periódicamente a medida que modifica el entorno, y confirmar los cambios de *requirements.txt* en el control de código fuente junto con cualquier otro cambio de código que dependa de ese entorno. Si configura la integración continua en un servidor de compilación, debe generar el archivo y confirmar los cambios cada vez que se modifique el entorno.
+Respuesta: Sí. Expanda el nodo **Entornos de Python**, haga clic con el botón derecho en su entorno virtual y seleccione el comando **Generar requirements.txt**. Es conveniente usar este comando periódicamente a medida que modifica el entorno, y confirmar los cambios de *requirements.txt* en el control de código fuente junto con cualquier otro cambio de código que dependa de ese entorno. Si configura la integración continua en un servidor de compilación, debe generar el archivo y confirmar los cambios cada vez que se modifique el entorno.
 
-## <a name="step-1-5-run-the-project"></a>Paso 1-5: ejecutar el proyecto
+## <a name="step-1-5-run-the-project"></a>Paso 1-5: Ejecución del proyecto
 
 1. En Visual Studio, seleccione **Depurar** > **Iniciar depuración** (**F5**) o use el botón **Servidor web** de la barra de herramientas (el explorador puede variar):
 
@@ -240,9 +241,9 @@ Respuesta : Sí. Expanda el nodo **Entornos de Python**, haga clic con el botón
 
 1. Cuando haya terminado, detenga el servidor cerrando la ventana de la consola o con el comando **Depurar** > **Detener depuración** en Visual Studio.
 
-### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>Pregunta: ¿Cuál es la diferencia entre el uso de los comandos de menú de depuración y los comandos de servidor en el submenú de Python del proyecto?
+### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Cuál es la diferencia entre el uso de los comandos de menú de depuración y los comandos de servidor en el submenú de Python del proyecto?
 
-Respuesta: Además de con los comandos de menú de **Depurar** y los botones de la barra de herramientas, también puede iniciar el servidor mediante los comandos **Python** > **Run server** (Ejecutar servidor) o **Python** > **Run debug server** (Iniciar el servidor de depuración) en el menú contextual del proyecto. Ambos comandos abren una ventana de consola en la que se ve la dirección URL local (localhost:port) del servidor en ejecución. Sin embargo, debe abrir manualmente un explorador con esa dirección URL, y la ejecución del servidor de depuración no inicia automáticamente el depurador de Visual Studio. Puede adjuntar un depurador al proceso en ejecución más adelante, si lo desea, mediante el comando **Depurar** > **Asociar al proceso**.
+Respuesta: Además de con los comandos de menú de **Depurar** y los botones de la barra de herramientas, también se puede iniciar el servidor mediante los comandos **Python** > **Run server** (Ejecutar servidor) o **Python** > **Run debug server** (Ejecutar el servidor de depuración) en el menú contextual del proyecto. Ambos comandos abren una ventana de consola en la que se ve la dirección URL local (localhost:port) del servidor en ejecución. Sin embargo, debe abrir manualmente un explorador con esa dirección URL, y la ejecución del servidor de depuración no inicia automáticamente el depurador de Visual Studio. Puede adjuntar un depurador al proceso en ejecución más adelante, si lo desea, mediante el comando **Depurar** > **Asociar al proceso**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

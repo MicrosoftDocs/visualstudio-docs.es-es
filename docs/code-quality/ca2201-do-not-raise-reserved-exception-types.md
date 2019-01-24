@@ -2,7 +2,6 @@
 title: 'CA2201: No provocar tipos de excepción reservados'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotRaiseReservedExceptionTypes
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 763c8656507f8a1d9c1f59bd548469c338aeb012
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 9b8eff3ac514e82e16327bfb873ed5fa2e9ccfba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547524"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911944"
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: No provocar tipos de excepción reservados
 

@@ -1,9 +1,9 @@
 ---
-title: 'Inicio rápido: Usar Visual Studio para crear la primera aplicación Vue.js'
+title: 'Inicio rápido: Creación de la primera aplicación Vue.js'
 description: En este inicio rápido se crea una aplicación Vue.js en Visual Studio mediante Herramientas de Node.js para Visual Studio
+ms.custom: seodec18
 ms.date: 09/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-nodejs
 ms.topic: quickstart
 ms.devlang: javascript
 ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
@@ -14,14 +14,14 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 3862f62439bd9b919d3c0534a8c2fe2d3c16fea9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 61554a784c5e3f2abaa8987116854893408b2ded
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926623"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853897"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Inicio rápido: Usar Visual Studio para crear la primera aplicación Vue.js
+# <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Inicio rápido: Uso de Visual Studio para crear la primera aplicación Vue.js
 
 En esta introducción de entre cinco y diez minutos al entorno de desarrollo integrado (IDE) de Visual Studio, se crea una sencilla aplicación web Vue.js. Si todavía no ha instalado Visual Studio 2017, vaya a la página [Descargas de Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) para instalarlo de forma gratuita.
 
@@ -40,7 +40,7 @@ En primer lugar se crea un proyecto de aplicación web Vue.js.
 
 1. En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**.
 
-1. En el cuadro de diálogo **Nuevo proyecto**, en **JavaScript** > **Node.js** o **TypeScript** > **Node.js**, elija **Aplicación web de Vue.js básico** y luego escriba un nombre de proyecto y haga clic en **Aceptar**.
+1. En el cuadro de diálogo **Nuevo proyecto**, en **JavaScript** > **Node.js** o **TypeScript** > **Node.js**, elija **Aplicación web de Vue.js básico**. Escriba un nombre de proyecto y haga clic en **Aceptar**.
 
      ![Plantilla Vue.js](../javascript/media/vuejs-template.png)
 
@@ -74,7 +74,7 @@ En primer lugar se crea un proyecto de aplicación web Vue.js.
 
 ## <a name="add-a-vue-file-to-the-project"></a>Agregar un archivo .vue al proyecto
 
-1. En el Explorador de soluciones, haga clic con el botón derecho en cualquier carpeta, como la carpeta *src*, y luego elija **Agregar** > **Nuevo elemento**.
+1. En el Explorador de soluciones, haga clic con el botón derecho en cualquier carpeta, como la carpeta *src/components*, y luego elija **Agregar** > **Nuevo elemento**.
 
 1. Seleccione **Componente de archivo único de Vue para JavaScript** o **Componente de archivo único de Vue para TypeScript** y luego haga clic en **Agregar**.
 
@@ -84,7 +84,7 @@ En primer lugar se crea un proyecto de aplicación web Vue.js.
 
 1. (Solo proyecto de TypeScript) En Visual Studio, elija **Compilar** > **Limpiar solución**.
 
-1. Luego elija **Compilar** > **Compilar solución** para compilar el proyecto. Consulte la ventana **Resultados** para ver los resultados de la compilación.
+1. Luego elija **Compilar** > **Compilar solución** para compilar el proyecto. Consulte la ventana **Resultados** para ver los resultados de la compilación y elija **Compilar** en la lista **Mostrar salida de**.
 
     La plantilla de proyecto Vue.js usa el script de npm `build` al configurar un evento posterior a la compilación. Si quiere modificar este valor, abra el archivo de proyecto (*\<projectname\>.njsproj*) desde el Explorador de Windows y busque esta línea de código:
 
@@ -104,10 +104,10 @@ En primer lugar se crea un proyecto de aplicación web Vue.js.
 
 1. Cierre el explorador web.
 
-¡Enhorabuena por completar este tutorial de inicio rápido! Esperamos que haya aprendido un poco sobre el uso del IDE de Visual Studio con Vue.js. Si quiere profundizar más en sus capacidades, continúe con el tutorial que encontrará en la sección **Tutoriales** de la tabla de contenido.
+¡Enhorabuena por completar este tutorial de inicio rápido! Esperamos que haya aprendido un poco sobre el uso del IDE de Visual Studio con Vue.js. Si quiere profundizar más en sus funcionalidades, continúe con el tutorial que encontrará en la sección **Tutoriales** de la tabla de contenido.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 - Repasar el [Tutorial para Node.js y Express](../nodejs/tutorial-nodejs.md)
-- Repasar el [Tutorial para Node.js y React](../nodejs/tutorial-nodejs-with-react-and-jsx.md)
+- Repasar el [Tutorial para Node.js y React](/visualstudio/javascript/tutorial-nodejs-with-react-and-jsx)
 - [Deploy the app to Linux App Service](../javascript/publish-nodejs-app-azure.md) (Implementar la aplicación en App Service de Linux)

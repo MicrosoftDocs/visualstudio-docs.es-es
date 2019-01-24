@@ -1,22 +1,21 @@
 ---
-title: Agregar nuevas conexiones
+title: Adición de nuevas conexiones
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 14df0183076125e487873bbb9865b2481e277a5b
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
-ms.translationtype: MT
+ms.openlocfilehash: 73b09384bd57fd4ea0890d107ce641e4b615559f
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845020"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154223"
 ---
-# <a name="add-new-connections"></a>Agregar nuevas conexiones
+# <a name="add-new-connections"></a>Adición de nuevas conexiones
 
 Puede probar la conexión a una base de datos o un servicio y explorar el contenido de la base de datos y esquemas, mediante el uso de **Explorador de servidores**, **Cloud Explorer**, o **Explorador de objetos de SQL Server**. La funcionalidad de estas ventanas se superpone en cierta medida. Las diferencias básicas son:
 
@@ -40,7 +39,7 @@ Para crear una conexión a la base de datos, haga clic en el **Agregar conexión
 
 Se abrirá el **Agregar conexión** cuadro de diálogo. En este caso, hemos especificado el nombre de la instancia de SQL Server LocalDB.
 
-![Agregar nueva conexión](../data-tools/media/raddata-add-new-connection-dialog.png)
+![Adición de una nueva conexión](../data-tools/media/raddata-add-new-connection-dialog.png)
 
 ## <a name="change-the-provider"></a>Cambiar el proveedor
 
@@ -48,7 +47,7 @@ Si el origen de datos no es lo que desea, haga clic en el **cambio** botón para
 
 ![Proveedor de datos de cambio AD0.NET](../data-tools/media/raddata-change-ad0.net-data-provider.png)
 
-## <a name="test-the-connection"></a>Probar la conexión
+## <a name="test-the-connection"></a>Prueba de la conexión
 
 Una vez que haya elegido el origen de datos, haga clic en **Probar conexión**. Si no tiene éxito, deberá solucionar según la documentación del fabricante.
 

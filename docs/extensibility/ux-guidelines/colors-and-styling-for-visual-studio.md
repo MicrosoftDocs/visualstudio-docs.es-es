@@ -1,9 +1,6 @@
 ---
 title: Colores y estilos para Visual Studio | Documentos de Microsoft
-ms.custom: ''
 ms.date: 07/31/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f184fc08679100562a53c1f3f27d797a4cdff37
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 12555b48550d252ce125ac437c1e30d5ae22fae9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918030"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914613"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Colores y estilos para Visual Studio
 
@@ -82,7 +79,7 @@ Antes de usar los colores comunes compartidos, asegúrese de que comprende cómo
 
 ### <a name="user-customizable-colors"></a>Colores personalizables por el usuario
 
-Véase: [exponer los colores para los usuarios finales](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
+Vea: [Exposición de colores para los usuarios finales](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
 
 A veces, desea permitir que el usuario final personalizar la interfaz de usuario, como cuando se crea un editor de código o la superficie de diseño. Componentes de interfaz de usuario personalizables que se encuentran en el **fuentes y colores** sección de la **herramientas &gt; opciones** cuadro de diálogo, donde los usuarios pueden elegir para cambiar el color de primer plano, color de fondo o ambos.
 
@@ -141,7 +138,7 @@ private void VSColorPaint(object sender, System.Windows.Forms.PaintEventArgs e)
     {
         //get the COLORREF structure
         uint win32Color;
-        uiShell.GetVSSysColorEx(VSSYSCOLOREX.VSCOLOR_SMARTTAG_HOVER_FILL, out win32Color);
+        uiShell2.GetVSSysColorEx((int)__VSSYSCOLOREX.VSCOLOR_SMARTTAG_HOVER_FILL, out win32Color);
 
         //translate it to a managed Color structure
         Color myColor = ColorTranslator.FromWin32((int)win32Color);
@@ -287,7 +284,7 @@ Solo un conjunto de colores del sistema puede usarse para los temas de contraste
 
 ### <a name="system-color-set"></a>Conjunto de colores del sistema
 
-La tabla en [WPF Team Blog: referencia SystemColors](https://blogs.msdn.microsoft.com/wpf/2010/11/30/systemcolors-reference/) indica el conjunto completo de los nombres de colores del sistema y los matices correspondientes aparece en cada tema.
+La tabla en [WPF Team Blog: Referencia de SystemColors](https://blogs.msdn.microsoft.com/wpf/2010/11/30/systemcolors-reference/) indica el conjunto completo de los nombres de colores del sistema y los matices correspondientes aparece en cada tema.
 
 Al aplicar este conjunto de colores para la interfaz de usuario limitado *se espera que perderá detalles sutiles que estaban presentes en los temas "normales"*. Este es un ejemplo de interfaz de usuario con colores gris sutiles que sirven para distinguir las áreas en una ventana de herramientas. Cuando se combina con la misma ventana que se muestra en el modo de contraste alto, puede ver que todos los fondos son el mismo matiz y se indican los bordes de esas áreas con borde por sí solo:
 
@@ -365,7 +362,7 @@ Llenar el registro con dos valores:
 | nombre | Tipo | Datos | Descripción |
 | --- | --- | --- | --- |
 | Categoría | REG_SZ | GUID | Crea un GUID para identificar la categoría |
-| Package | REG_SZ | GUID | El GUID del servicio de VSPackage que admite la categoría |
+| Paquete | REG_SZ | GUID | El GUID del servicio de VSPackage que admite la categoría |
 
  El servicio especificado en el registro debe proporcionar una implementación de [IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) para la categoría correspondiente.
 
@@ -378,7 +375,7 @@ Llenar el registro con dos valores:
 | nombre | Tipo | Datos | Descripción |
 |--- | --- | --- | --- |
 | Categoría | REG_SZ | GUID | Crea un GUID para identificar la categoría |
-| Package | REG_SZ | GUID | El GUID del servicio de VSPackage que admite la categoría |
+| Paquete | REG_SZ | GUID | El GUID del servicio de VSPackage que admite la categoría |
 
 El servicio especificado en el registro debe proporcionar una implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> para el grupo correspondiente.
 
@@ -425,7 +422,7 @@ Para ello, un VSPackage debe:
 
 - **controlar eventos generados por el IDE** implementando la [IVsFontAndColorEvents](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents) interfaz. El IDE llama al método apropiado siguiendo las modificaciones de usuario de la página fuentes y colores. Por ejemplo, llama a la [OnFontChanged](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged) método si se selecciona una nueva fuente.
 
-  **OR**
+  **O**
 
 - **sondear el IDE para cambios**. Esto puede hacerse a través del sistema implementado [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) interfaz. Aunque principalmente por compatibilidad con la persistencia, el [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) método puede obtener la información de fuente y color para mostrar los elementos. Para obtener más información sobre la configuración de fuente y color, vea el artículo de MSDN [acceso a fuente de almacenados y la configuración de Color](../accessing-stored-font-and-color-settings.md).
 

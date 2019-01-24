@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Migrar lenguajes específicos de dominio a una nueva versión'
+title: Procedimiento Migrar un lenguaje específico de dominio a una nueva versión
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,15 +8,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 25155615090ce627a4bf30a5fd0b54bd913fe2da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b53d604fdf9c18a2e5552d787f7a69ff4c92df2a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939768"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955073"
 ---
-# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Cómo: Migrar lenguajes específicos de dominio a una nueva versión
+# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Procedimiento Migrar un lenguaje específico de dominio a una nueva versión
 Puede migrar los proyectos que definen y usar los lenguajes específicos de dominio a [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] desde la versión de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] que se distribuyó con [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
 
  Se proporciona una herramienta de migración como parte de [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]. La herramienta convierte los proyectos de Visual Studio y las soluciones que usan o definen herramientas de DSL.
@@ -76,7 +75,7 @@ Puede migrar los proyectos que definen y usar los lenguajes específicos de domi
    2.  Haga clic en el **Transformar todas las plantillas** botón en el encabezado del explorador de soluciones.
 
        > [!NOTE]
-       >  Puede realizar este paso innecesario. Para obtener más información, consulte [cómo automatizar Transformar todas las plantillas](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
+       >  Puede realizar este paso innecesario. Para obtener más información, consulte [cómo automatizar Transformar todas las plantillas](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
 
 6. Actualice el código personalizado en los proyectos convertidos.
 

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 34da5d19b927bf80c05675cbc6871b0a26801247
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4992b68d0644e6183e62577bdec9be86f50df592
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726475"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086962"
 ---
 # <a name="idebugdocumenthelperbringdocumenttotop"></a>IDebugDocumentHelper::BringDocumentToTop
-Abre este documento a la parte superior en el depurador de interfaz de usuario.  
+Aporta este documento a la parte superior en el depurador de interfaz de usuario.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT BringDocumentToTop();  
 ```  
   
@@ -45,7 +45,7 @@ HRESULT BringDocumentToTop();
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método inicia al depurador si no se ha iniciado.  
+ Este método inicia al depurador si aún no ha iniciado.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugDocumentHelper (Interfaz)](../../winscript/reference/idebugdocumenthelper-interface.md)

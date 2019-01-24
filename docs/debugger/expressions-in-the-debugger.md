@@ -1,8 +1,6 @@
 ---
 title: Expresiones en el depurador | Microsoft Docs
-ms.custom: ''
 ms.date: 02/07/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
@@ -21,17 +19,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4df9ae5c8b525ff75985ff7aff071d2b2e86e1cb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7b6d4461768490d67d4d1226ae7c7877dc3c9010
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926194"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837243"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Expresiones en el depurador de Visual Studio
 El depurador de Visual Studio incluye evaluadores de expresión que funcionan cuando escribe una expresión en el cuadro de diálogo **Inspección rápida** , la ventana **Inspección** o la ventana **Inmediato** . Los evaluadores de expresión también se utilizan en la ventana **Puntos de interrupción** y en muchos otros lugares en el depurador.
   
- Las secciones siguientes proporcionan detalles sobre las expresiones en diferentes idiomas.  
+ Las secciones siguientes se describen las limitaciones de la evaluación de expresiones de idiomas compatibles con Visual Studio.
   
 ## <a name="f-expressions-are-not-supported"></a>No se admiten las expresiones de F#  
  No se reconocen las expresiones de F#. Si va a depurar código F#, es necesario traducir las expresiones a la sintaxis de C# antes de escribirlas en una ventana o un cuadro de diálogo de depurador. Al traducir expresiones de F# a C#, recuerde que C# usa el operador `==` para comprobar la igualdad, mientras que F# usa `=`.  

@@ -16,12 +16,12 @@ ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eb21fe95b2e351ca64a4f9434354abb0bfc42b1d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8e601b3fcf8bd702c1bc6cde427766d0f107e6bd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303568"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780989"
 ---
 # <a name="registering-single-file-generators"></a>Registro de generadores de un solo archivo
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

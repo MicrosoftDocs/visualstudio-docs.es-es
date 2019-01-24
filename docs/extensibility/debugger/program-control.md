@@ -1,9 +1,6 @@
 ---
 title: Control del programa | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a60b766763ca5f68f8c379fbab9372e41c319671
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 979a56740da506b51941211d5c6316a0614df142
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251103"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964561"
 ---
 # <a name="program-control"></a>Control del programa
 En Visual Studio depurando, todos de la versión siguiente y continuar rutinas se producen en el nivel de programa:  

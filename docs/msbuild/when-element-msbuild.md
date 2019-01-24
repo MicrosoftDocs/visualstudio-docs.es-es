@@ -1,8 +1,6 @@
 ---
 title: Elemento When (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#When
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a4a9a68b00d4eed998a5ba742e640cd27db74cc
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 6b6ab2d9520e915993fce877d9c3055972c5ab8c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152433"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932315"
 ---
 # <a name="when-element-msbuild"></a>Elemento When (MSBuild)
 Especifica un posible bloque de código que el elemento `Choose` puede seleccionar.  

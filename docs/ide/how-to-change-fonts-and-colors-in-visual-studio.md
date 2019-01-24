@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: Cambiar fuentes y colores en Visual Studio'
+title: Cambiar fuentes y colores
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, color themes
@@ -13,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 047ec49b48d955591d89cd9c392d72381c57b84e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9dba46b6593259afa8e1494e751b2859fe90a9c6
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942174"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53832527"
 ---
-# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Cómo: Cambiar fuentes y colores en Visual Studio
+# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Procedimiento para cambiar fuentes y colores en Visual Studio
 
 Puede personalizar el color del marco y las ventanas de herramientas del IDE de Visual Studio de varias maneras.
 

@@ -22,12 +22,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bf3d47c4e14606a4d3cc3006735fbe04af809600
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: b6906e68c74bbb718f9bfc041ab35075b3f9b0aa
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195616"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220191"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizar el modo en que Visual Studio crea los títulos de controles enlazados a datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,15 +83,15 @@ Cuando se arrastran elementos desde la [ventana Orígenes de datos](http://msdn.
   
 10. Haga clic en el **diseñadores de datos** nodo y crear un nuevo **valor de cadena** denominado `SmartCaptionSuffix`.  
   
-11. Haga clic en el **SmartCaptionExpression** de elemento y seleccione**modificar**.  
+11. Haga clic en el **SmartCaptionExpression** de elemento y seleccione **modificar**.  
   
 12. Escriba la expresión regular que desee la **orígenes de datos** ventana para utilizar.  
   
-13. Haga clic en el **SmartCaptionReplacement** de elemento y seleccione**modificar**.  
+13. Haga clic en el **SmartCaptionReplacement** de elemento y seleccione **modificar**.  
   
 14. Escriba el reemplazo de cadena con formato de la manera en que desea mostrar los modelos que coinciden en la expresión regular.  
   
-15. Haga clic en el **SmartCaptionSuffix** de elemento y seleccione**modificar**.  
+15. Haga clic en el **SmartCaptionSuffix** de elemento y seleccione **modificar**.  
   
 16. Escriba los caracteres que desea que aparezcan al final de la leyenda.  
   
@@ -119,11 +119,11 @@ Cuando se arrastran elementos desde la [ventana Orígenes de datos](http://msdn.
   
 10. Haga clic en el **diseñadores de datos** nodo y crear un nuevo **valor de cadena** denominado `SmartCaptionSuffix`.  
   
-11. Haga clic en el **SmartCaptionExpression** de elemento y seleccione**modificar**.  
+11. Haga clic en el **SmartCaptionExpression** de elemento y seleccione **modificar**.  
   
 12. Escriba `(.*)` para el valor. Esto coincidirá con la cadena completa.  
   
-13. Haga clic en el **SmartCaptionReplacement** de elemento y seleccione**modificar**.  
+13. Haga clic en el **SmartCaptionReplacement** de elemento y seleccione **modificar**.  
   
 14. Escriba `$1` para el valor. Esto reemplaza la cadena con el valor coincidente, que es la cadena completa para que lo permanecerá sin cambios.  
   

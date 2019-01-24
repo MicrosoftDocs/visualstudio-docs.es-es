@@ -1,9 +1,6 @@
 ---
 title: ExtensionDataItem (elemento) | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a460f31679ef01fab9dbfb181905475a2cadede5
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: d95459be48b6d5e87b1a312e68e6ebea2645cb29
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325726"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916944"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem (elemento)
   Un elemento de datos personalizado que está asociado con el elemento de proyecto de SharePoint, en formato de clave/valor. La clave y el valor deben ser cadenas.  
@@ -65,5 +62,3 @@ ms.locfileid: "36325726"
   
 ## <a name="see-also"></a>Vea también
  [Referencia de esquemas de elemento de proyecto de SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
-  
-  

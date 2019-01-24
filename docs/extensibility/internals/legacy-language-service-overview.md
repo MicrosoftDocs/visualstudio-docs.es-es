@@ -1,9 +1,6 @@
 ---
-title: Introducción al servicio de lenguaje heredado | Documentos de Microsoft
-ms.custom: ''
+title: Información general del servicio de lenguaje heredado | Documentos de Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], about language services
@@ -13,56 +10,56 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8641a3e009cb5a7b61d8334b6dcb2440d186f4f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 29d98bd0e474a503b84cb21a1bca25cb2836a433
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131754"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989613"
 ---
-# <a name="legacy-language-service-overview"></a>Introducción al servicio de lenguaje heredado
-Un servicio de lenguaje proporciona compatibilidad con el editor que le permite implementar determinados [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] características. Las clases de servicio de lenguaje de Managed Package Framework (MPF) proporcionan compatibilidad completa de características usados con frecuencia y compatibilidad parcial para otras características.  
+# <a name="legacy-language-service-overview"></a>Información general del servicio de lenguaje heredado
+Un servicio de lenguaje proporciona compatibilidad con el editor que permite implementar determinados [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] características. Las clases de servicio de lenguaje de Managed Package Framework (MPF) proporcionan compatibilidad completa para las características usadas con frecuencia y compatibilidad parcial con otras características.  
   
-## <a name="fully-supported-features-in-the-mpf"></a>Características totalmente compatibles en MPF  
+## <a name="fully-supported-features-in-the-mpf"></a>Totalmente compatible con características de MPF  
  Las clases de servicio de lenguaje MPF admiten las siguientes características:  
   
 -   Resalte de sintaxis  
   
 -   esquematizar  
   
--   Bloques de comentarios de código  
+-   Comentar bloques de código  
   
 -   Coincidencia de llaves  
   
 -   Fragmentos de código  
   
--   Propiedades de documento personalizadas  
+-   Propiedades personalizadas del documento  
   
 -   Información de parámetros de IntelliSense  
   
--   Información rápida de IntelliSense  
+-   IntelliSense información rápida  
   
--   Finalización de miembro de IntelliSense  
+-   Finalizaciones de miembros de IntelliSense  
   
--   Finalización automática de palabras de IntelliSense  
+-   Finalización de palabras de IntelliSense  
   
 ## <a name="partially-supported-features-in-the-mpf"></a>Características admitidas parcialmente en MPF  
- MPF proporciona compatibilidad parcial solo para las siguientes características. Esto significa que debe implementar los métodos llamados por MPF.  
+ MPF proporciona compatibilidad parcial solo para las siguientes características. Esto significa que debe implementar los métodos que se llaman mediante MPF.  
   
--   Cambiar el formato de código. Proporcionar el código que implementa el nuevo formato.  
+-   Cambiar el formato de código. Proporcione el código que implementa el nuevo formato.  
   
--   Abarca la validación de los puntos de interrupción mediante la identificación de código válido. Proporcionar el código que identifica los intervalos de código.  
+-   Abarca la validación de los puntos de interrupción mediante la identificación de código válido. Proporcione el código que identifica los intervalos de código.  
   
--   Compatibilidad con el depurador **automático** ventana para mostrar las variables. Proporcionar el código que determina qué se debe mostrar en la ventana.  
+-   Compatibilidad con el depurador **automático** ventana para mostrar las variables. Proporcione el código que determina qué se debe mostrar en la ventana.  
   
--   Compatibilidad con la **barra de navegación** para desplazarse rápidamente entre los tipos y miembros. Implementar y devolver una clase auxiliar que rellena las listas de la **barra de navegación** cuadros combinados.  
+-   Compatibilidad con la **barra de navegación** para navegar rápidamente entre los tipos y miembros. Implementar y devolver una clase auxiliar que rellena las listas de la **barra de navegación** cuadros combinados.  
   
 ## <a name="implementation"></a>Implementación  
- Debe completar varios pasos para implementar el propio servicio de lenguaje y las características del servicio de lenguaje que desee admitir en su idioma. En los temas siguientes se describen estos pasos:  
+ Debe completar varios pasos para implementar el servicio de lenguaje propio y las características del servicio de lenguaje que desee admitir en su idioma. Estos pasos se describen en los temas siguientes:  
   
--   [Implementar un servicio de lenguaje heredado](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
+-   [Implementación de un servicio de lenguaje heredado](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
   
--   [Registrar un servicio de lenguaje heredado](../../extensibility/internals/registering-a-legacy-language-service1.md)  
+-   [Registro de un servicio de lenguaje heredado](../../extensibility/internals/registering-a-legacy-language-service1.md)  
   
 -   [Coloreado de sintaxis en un servicio de lenguaje heredado](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)  
   

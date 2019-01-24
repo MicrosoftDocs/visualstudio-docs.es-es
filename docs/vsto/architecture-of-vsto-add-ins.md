@@ -1,8 +1,6 @@
 ---
 title: Arquitectura de complementos de VSTO
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -14,17 +12,17 @@ helpviewer_keywords:
 - vstoee.dll
 - application-level add-ins [Office development in Visual Studio], architecture
 - add-ins [Office development in Visual Studio], architecture
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fdde21ef6e65a741b7a9ac08bfc69de4dd1f9856
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0a7453ad957b5f3da0907ac6887524d6523ac2c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933448"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945891"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>Arquitectura de complementos de VSTO
   Los complementos de VSTO creados con Office Developer Tools en Visual Studio tienen unas características arquitectónicas que resaltan la estabilidad y seguridad, y que pueden trabajar en estrecha colaboración con Microsoft Office. En este tema, se describen los siguientes aspectos de los complementos de VSTO:  
@@ -115,5 +113,3 @@ ms.locfileid: "49933448"
  [Desarrollar soluciones de Office](../vsto/developing-office-solutions.md)   
  [Proteger soluciones de Office](../vsto/securing-office-solutions.md)   
  [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)  
-  
-  

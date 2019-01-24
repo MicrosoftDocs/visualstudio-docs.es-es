@@ -1,9 +1,6 @@
 ---
 title: 'Tutorial: Sincronizar un panel de tareas personalizado con un botón de la cinta de opciones'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -26,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7b6c36e93d9dd8dd4ef81d0d124ae33e842a16d7
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: eeb0d06b765aee7800ed81b1216efa42b4bd93b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674840"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943569"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Tutorial: Sincronizar un panel de tareas personalizado con un botón de la cinta de opciones
   Este tutorial muestra cómo crear un panel de tareas personalizado que los usuarios puedan ocultar o mostrar haciendo clic en un botón de alternancia en la cinta de opciones. Siempre se debe crear un elemento de interfaz de usuario, como un botón, en el que los usuarios puedan hacer clic para mostrar u ocultar el panel de tareas personalizado, porque las aplicaciones de Microsoft Office no proporcionan una manera predeterminada para que los usuarios muestren u oculten los paneles de tareas personalizados.  
@@ -63,7 +60,7 @@ ms.locfileid: "35674840"
   
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto  
   
-1.  Cree un proyecto de complemento de Excel con el nombre **SynchronizeTaskPaneAndRibbon**, mediante la plantilla de proyecto complemento de Excel. Para obtener más información, consulte [Cómo: proyectos de creación de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Cree un proyecto de complemento de Excel con el nombre **SynchronizeTaskPaneAndRibbon**, mediante la plantilla de proyecto complemento de Excel. Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] abre el archivo de código **ThisAddIn.cs** o **ThisAddIn.vb** y agrega el proyecto **SynchronizeTaskPaneAndRibbon** al **Explorador de soluciones**.  
   
@@ -139,7 +136,7 @@ ms.locfileid: "35674840"
   
 1.  En el diseñador de la cinta de opciones, haga doble clic en el botón de alternancia **Mostrar panel de tareas** .  
   
-     Visual Studio genera automáticamente un controlador de eventos denominado `toggleButton1_Click`, que controla el evento <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> del botón de alternancia. Visual Studio también abre el *MyRibbon.cs* o *MyRibbon.vb* archivo en el Editor de código.  
+     Visual Studio genera automáticamente un controlador de eventos denominado `toggleButton1_Click`, que controla el evento <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> del botón de alternancia. Visual Studio también abre el archivo *MyRibbon.cs* o *MyRibbon.vb* en el Editor de código.  
   
 2.  Reemplace el controlador de eventos `toggleButton1_Click` por el siguiente código: Cuando el usuario hace clic en el botón de alternancia, este código muestra u oculta el panel de tareas personalizado, dependiendo de si dicho botón está o no presionado.  
   
@@ -170,15 +167,13 @@ ms.locfileid: "35674840"
   
 -   Crear un panel de tareas personalizado en un complemento de VSTO para una aplicación diferente. Para obtener más información acerca de las aplicaciones que admiten paneles de tareas personalizados, vea [paneles de tareas personalizados](../vsto/custom-task-panes.md).  
   
--   Automatizar una aplicación desde un panel de tareas personalizado. Para obtener más información, consulte [Tutorial: automatizar una aplicación desde un panel de tareas personalizado](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  
+-   Automatizar una aplicación desde un panel de tareas personalizado. Para obtener más información, vea [Tutorial: Automatizar una aplicación desde un panel de tareas personalizado](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  
   
--   Crear un panel de tareas personalizado para cada mensaje de correo que se abre en Outlook. Para obtener más información, consulte [Tutorial: mostrar paneles de tareas personalizados con mensajes de correo electrónico en Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
+-   Crear un panel de tareas personalizado para cada mensaje de correo que se abre en Outlook. Para obtener más información, vea [Tutorial: Mostrar paneles de tareas personalizados con mensajes de correo electrónico en Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Paneles de tareas personalizados](../vsto/custom-task-panes.md)   
- [Cómo: agregar un panel de tareas personalizado a una aplicación](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
+ [Cómo: Agregar un panel de tareas personalizado a una aplicación](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
  [Tutorial: Automatizar una aplicación desde un panel de tareas personalizado](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
  [Tutorial: Mostrar paneles de tareas personalizados con mensajes de correo electrónico en Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)   
  [Información general de la cinta de opciones](../vsto/ribbon-overview.md)  
-  
-  

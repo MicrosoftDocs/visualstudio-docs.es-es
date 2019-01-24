@@ -1,9 +1,9 @@
 ---
-title: Instalación de Visual Studio 2017 | Microsoft Docs
+title: Instalar Visual Studio
+titleSuffix: ''
 description: Obtenga información sobre cómo instalar Visual Studio, paso a paso.
-ms.custom: ''
 ms.date: 05/07/2018
-ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
@@ -19,16 +19,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eba5c5dc2ec357d9aaf6a5e8f9cdef18102b8da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b4ab9fb30a1268778f47a0190d1b16b1cd48d974
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856176"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958441"
 ---
 # <a name="install-visual-studio-2017"></a>Instalación de Visual Studio 2017
 
 Le presentamos una nueva manera de instalar Visual Studio. En nuestra versión más reciente, hemos facilitado la selección e instalación de solo las características que necesita. También hemos reducido el espacio de Visual Studio al mínimo, de manera que se instale más rápidamente con menos impacto del sistema que nunca antes.
+
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Instalación de Visual Studio para Mac](/visualstudio/mac/installation).
 
 ¿Quiere saber más sobre otras novedades de esta versión? Vea nuestras [notas de la versión](/visualstudio/releasenotes/vs2017-relnotes).
 
@@ -122,7 +125,7 @@ Otra manera de cambiar el idioma predeterminado es mediante la ejecución del in
 
 ## <a name="step-7---change-the-installation-location-optional"></a>Paso 7: Cambiar la ubicación de instalación (opcional)
 
-**Nuevo en 15.7**: ahora puede reducir el tamaño de instalación de Visual Studio en la unidad de sistema. Puede mover la caché de descarga, los componentes compartidos, SDK y herramientas a distintas unidades y mantener Visual Studio en la unidad que lo ejecuta más rápido.
+**Novedad de la versión 15.7**: ahora puede reducir la superficie de instalación de Visual Studio en la unidad del sistema. Puede mover la caché de descarga, los componentes compartidos, SDK y herramientas a distintas unidades y mantener Visual Studio en la unidad que lo ejecuta más rápido.
 
   ![Visual Studio 2017: cambiar la ubicación de instalación](media/installation-options-by-location.png "Change the installation location")
 
@@ -138,7 +141,7 @@ Para obtener más información, consulte la página [Change installation locatio
 
    Por ejemplo, para [compilar una aplicación de C++](../ide/getting-started-with-cpp-in-visual-studio.md), haga clic en **Instalado**, expanda **Visual C++** y, después, seleccione el tipo de proyecto de C++ que quiera compilar.
 
-   Para [compilar una aplicación de C#](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), haga clic en **Instalado**, expanda **Visual C#** y, después, seleccione el tipo de proyecto de C# que quiera compilar.
+   Para [compilar una aplicación de C#](../get-started/csharp/tutorial-wpf.md), haga clic en **Instalado**, expanda **Visual C#** y, después, seleccione el tipo de proyecto de C# que quiera compilar.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
@@ -149,4 +152,4 @@ Para obtener más información, consulte la página [Change installation locatio
 * [Desinstalación de Visual Studio 2017](uninstall-visual-studio.md)
 * [Crear una instalación sin conexión de Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
 * [Usar parámetros de la línea de comandos para instalar Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
-* [Configuración e instalación de Visual Studio para Mac](/visualstudio/mac/installation)
+* [Instalación de Visual Studio para Mac](/visualstudio/mac/installation)

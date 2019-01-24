@@ -30,15 +30,15 @@ helpviewer_keywords:
 - debugger, format specifiers recognized by
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
 caps.latest.revision: 45
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2f1a09cf7e4f6e15ee49ce62914b650c3622e6e5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6634124e7dc0b50236a9fd6ff9c5c5388c3063bc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894058"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810525"
 ---
 # <a name="format-specifiers-in-c"></a>Especificadores de formato en C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,7 +120,7 @@ int main() {
 |**l,h**|Prefijo long o short para: d, i, u, o, x, X|00406042|0x0c22|  
 |**f**|Punto flotante con signo|(3./2.), f|1.500000|  
 |**e**|Notación científica con signo|(3.0/2.0)|1.500000e+000|  
-|**g**g|Punto flotante con signo o notación científica con signo, lo que sea más corto|(3.0/2.0)|1.5|  
+|**g**|Punto flotante con signo o notación científica con signo, lo que sea más corto|(3.0/2.0)|1.5|  
 |c|carácter único|\<ubicación >|101 'e'|  
 |s|const char*|\<ubicación >|"hola a todos"|  
 |su|const wchar_t*<br /><br /> const char16_t\*|\<ubicación >|L"hola a todos"|  

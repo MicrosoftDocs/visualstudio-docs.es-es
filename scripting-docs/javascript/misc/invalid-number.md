@@ -21,15 +21,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1e7903bec2f21465cbe31ecc05f00182680ed77c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632915"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346818"
 ---
 # <a name="invalid-number"></a>Número no válido
 Número no válido (ErrbadNumber 1013)  
   
- Se intentó utilizar un número que no es válido en JavaScript.  
+ Se intentó usar un número que no es válido en JavaScript.  
   
- Para obtener información acerca de los números válidos, consulte [objeto Number](../../javascript/reference/number-object-javascript.md).
+ Para obtener información acerca de los números válidos, vea [objeto Number](../../javascript/reference/number-object-javascript.md).

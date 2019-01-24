@@ -1,9 +1,6 @@
 ---
 title: Los comandos, menús y barras de herramientas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - menus [Visual Studio SDK], commands
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a8bd6716b40816ae625dcdb32fb62237aa543fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ceda4339c02e73f02ebd78094a145f53bc7fbb82
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928433"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887742"
 ---
 # <a name="commands-menus-and-toolbars"></a>Los comandos, menús y barras de herramientas
 Los menús y barras de herramientas son la forma que los usuarios tener acceso a comandos del VSPackage. Los comandos son funciones que realizan tareas, como la impresión de un documento, la actualización de una vista o la creación de un archivo nuevo. Los menús y las barras de herramientas son maneras gráficas y cómodas de presentar los comandos a los usuarios. Normalmente, los comandos relacionados se agrupan en clústeres en el mismo menú o en la misma barra de herramientas.  
@@ -31,7 +28,7 @@ Los menús y barras de herramientas son la forma que los usuarios tener acceso a
   
 - Cuando se crea un comando, también debe crear un controlador de eventos para él. El controlador de eventos determina si el comando es visible o está activado, permite modificar su texto y garantiza que el comando responde correctamente ("enruta") cuando se activa. En la mayoría de los casos, el IDE controla los comandos mediante la interfaz <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>. Los comandos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] enrutan de forma jerárquica, empezando por el contexto de comandos más interno, según la selección local, y continuando hasta el contexto más externo, según la selección global. Los comandos agregados al menú principal están disponibles inmediatamente para los scripts. Para obtener más información, consulte [MenuCommands frente a. OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md) y [objetos de contexto de selección](../../extensibility/internals/selection-context-objects.md).  
   
-  Para definir nuevos menús y barras de herramientas, debe describirlos en una tabla de comandos de Visual Studio (*.vsct*) archivo. La plantilla de paquete de Visual Studio crea este archivo, junto con los elementos necesarios para admitir los comandos, barras de herramientas y editores seleccionados en la plantilla. Como alternativa, puede escribir su propio *.vsct* de archivos, mediante el esquema XML se describe aquí: [referencia del esquema XML de VSCT](../../extensibility/vsct-xml-schema-reference.md).  
+  Para definir nuevos menús y barras de herramientas, debe describirlos en una tabla de comandos de Visual Studio (*.vsct*) archivo. La plantilla de paquete de Visual Studio crea este archivo, junto con los elementos necesarios para admitir los comandos, barras de herramientas y editores seleccionados en la plantilla. Como alternativa, puede escribir su propio *.vsct* de archivos, mediante el esquema XML se describe aquí: [Referencia del esquema XML de VSCT](../../extensibility/vsct-xml-schema-reference.md).  
   
   Para obtener más información sobre cómo trabajar con *.vsct* archivos, consulte [archivos de tabla (.vsct) de comandos de Visual Studio](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   

@@ -1,8 +1,6 @@
 ---
-title: Instrumentar una aplicación web ASP.NET compilada dinámicamente y recopilar datos de memoria mediante la línea de comandos del generador de perfiles | Microsoft Docs
-ms.custom: ''
+title: Procedimiento Instrumentar una aplicación web ASP.NET compilada dinámicamente y recopilar datos de memoria mediante la línea de comandos del generador de perfiles | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 2cdd9903-39db-47e8-93dd-5e6a21bc3435
 author: mikejo5000
@@ -10,19 +8,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 9c1d908a29d4255401aaad4567b56be16ce467cb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: da1c1ad76802496108284dcb6fc037bfd7443180
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862676"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940919"
 ---
-# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Instrumentar una aplicación web ASP.NET compilada dinámicamente y recopilar datos de memoria mediante la línea de comandos del generador de perfiles
+# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procedimiento Instrumentar una aplicación web ASP.NET compilada dinámicamente y recopilar datos de memoria mediante la línea de comandos del generador de perfiles
 En este tema se explica cómo usar las herramientas de línea de comandos de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para recopilar datos detallados de asignación de memoria y de duración de objetos de .NET para una aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilada dinámicamente mediante el método de generación de perfiles de instrumentación.  
 
 > [!NOTE]
->  Las herramientas de línea de comandos de las Herramientas de generación de perfiles se encuentran en el subdirectorio *\Team Tools\Performance Tools* del directorio de instalación de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana de símbolo del sistema o agregarla al propio comando. Para más información, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
-
+>  Para obtener la ruta de acceso a las herramientas de generación de perfiles, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana Símbolo del sistema o agregarla al propio comando.
+ 
  Para recopilar datos de rendimiento de una aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], debe modificar el archivo *web.config* de la aplicación de destino para permitir que la herramienta [VSInstr.exe](../profiling/vsinstr.md) instrumente los archivos de aplicación compilados dinámicamente. Luego use la herramienta [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) para configurar el servidor que hospeda la aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] y habilite la generación de perfiles de memoria de .NET mediante el establecimiento de las variables de entorno adecuadas; por último, reinicie el equipo.  
 
  Para recopilar datos, inicie el generador de perfiles y luego ejecute la aplicación de destino. Mientras el generador de perfiles está asociado a la aplicación, puede detener y reanudar la recopilación de datos. Una vez recopilados los datos adecuados, cierre la aplicación, cierre el proceso de trabajo de Internet Information Services (IIS) y luego apague el generador de perfiles.  
@@ -41,7 +39,7 @@ En este tema se explica cómo usar las herramientas de línea de comandos de las
 
      **VSPerfClrEnv /globaltracegc**  
 
-     O bien  
+     o bien  
 
      **VSPerfClrEnv /globaltracegclife**  
 

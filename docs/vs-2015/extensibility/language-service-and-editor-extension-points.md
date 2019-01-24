@@ -15,12 +15,12 @@ ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2256ec8185ef59c4380ce3c1d5ce43e92507827e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0bcbef5094bd12392b7ea79865e1d28e2934a11e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846998"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51743581"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Servicio de lenguaje y puntos de extensión del editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

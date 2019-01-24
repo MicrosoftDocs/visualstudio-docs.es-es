@@ -2,7 +2,6 @@
 title: Anotar parámetros de función y valores devueltos
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
@@ -127,12 +126,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4fcfa442f648126a93d1ec6a3b0d3c4fc7c981
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e958674858eaa2de01cf837de12f70ed17b4f210
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924829"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921022"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Anotar parámetros de función y valores devueltos
 En este artículo se describe los usos típicos de las anotaciones de parámetros de función simple, escalares y punteros a estructuras y clases y casi todos los tipos de búferes.  En este artículo también muestra los patrones de uso común para las anotaciones. Para obtener información sobre las anotaciones adicionales que están relacionados con las funciones, vea [anotar comportamiento de la función](../code-quality/annotating-function-behavior.md)
@@ -495,4 +494,12 @@ En este artículo se describe los usos típicos de las anotaciones de parámetro
  [Blog del equipo de análisis de código](http://go.microsoft.com/fwlink/?LinkId=251197)
 
 ## <a name="see-also"></a>Vea también
- [Utilizar anotaciones SAL para reducir defectos de código de c/c ++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md) [comprender SAL](../code-quality/understanding-sal.md) [anotar el comportamiento de la función](../code-quality/annotating-function-behavior.md) [anotar Structs y clases](../code-quality/annotating-structs-and-classes.md) [ Anotar comportamiento de bloqueo](../code-quality/annotating-locking-behavior.md) [especificar cuándo y dónde se aplica una anotación](../code-quality/specifying-when-and-where-an-annotation-applies.md) [funciones intrínsecas](../code-quality/intrinsic-functions.md) [procedimientos recomendados y ejemplos](../code-quality/best-practices-and-examples-sal.md)
+
+- [Uso de anotaciones SAL para reducir defectos de código de C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+- [Introducción a SAL](../code-quality/understanding-sal.md)
+- [Anotar el comportamiento de funciones](../code-quality/annotating-function-behavior.md)
+- [Anotar structs y clases](../code-quality/annotating-structs-and-classes.md)
+- [Anotar comportamiento de bloqueo](../code-quality/annotating-locking-behavior.md)
+- [Especificar cuándo y dónde se aplica una anotación](../code-quality/specifying-when-and-where-an-annotation-applies.md)
+- [Funciones intrínsecas](../code-quality/intrinsic-functions.md)
+- [Procedimientos recomendados y ejemplos](../code-quality/best-practices-and-examples-sal.md)

@@ -1,8 +1,7 @@
 ---
-title: 'CA1025: Reemplaza argumentos repetitivos con una matriz de parámetros'
+title: 'CA1025: Reemplazar argumentos repetitivos por una matriz de parámetros'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1025
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 027ec9b19bcf8a4a10e8b973b86e57be2dbc6be7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4e4d2bb3330883e44b015698b740cd6403f953dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838327"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868870"
 ---
-# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: Reemplaza argumentos repetitivos con una matriz de parámetros
+# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: Reemplazar argumentos repetitivos por una matriz de parámetros
 
 |||
 |-|-|

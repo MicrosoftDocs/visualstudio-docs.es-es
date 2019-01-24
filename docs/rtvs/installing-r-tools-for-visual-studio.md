@@ -3,19 +3,18 @@ title: Instalación de las Herramientas de R
 description: Se describe cómo instalar las Herramientas de R en Visual Studio 2017 y Visual Studio 2015, incluidas las instalaciones sin conexión.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 1b5cc415d95377cdca0d44c31ed2c3b84cd11c5c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 0bede3afc12eb7f22f516d7f21727609d5724a9a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297620"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943160"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Cómo instalar Herramientas de R para Visual Studio
 
@@ -76,10 +75,11 @@ RTVS para Visual Studio 2015 se instala en: `%ProgramFiles(x86)%\Microsoft Visua
 
 La instalación sin conexión es adecuada para los equipos que no están conectados a Internet:
 
-1. Siga las instrucciones para crear un instalador sin conexión para la versión siguiente de Visual Studio:
+1. Vaya a [Crear una instalación sin conexión de Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md).
 
-    - [Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md)
-    - [Visual Studio 2015](https://msdn.microsoft.com/library/mt706497.aspx)
+1. Si usa Visual Studio 2015, seleccione **2015** en el selector situado encima de la tabla de contenido.
+
+1. Siga las instrucciones de la página web para crear una instalación sin conexión.
 
 1. Para Visual Studio 2015, descargue los instaladores de RTVS sin conexión desde [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) y [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip).
 

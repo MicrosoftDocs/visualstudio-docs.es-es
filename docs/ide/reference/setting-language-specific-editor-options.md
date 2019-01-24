@@ -2,7 +2,6 @@
 title: Opciones del editor específicas del lenguaje
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - editor options
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fddf53101cf356772745462542bf4435a4ca4f4d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 331f43bbc478eba1f6372d3cb9fa949969bf6871
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945901"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855236"
 ---
 # <a name="setting-language-specific-editor-options"></a>Opciones del editor específicas del lenguaje
 
@@ -58,4 +57,4 @@ Visual Studio proporciona una serie de opciones del editor de texto que se aplic
 
 - [Personalizar el editor](../../ide/customizing-the-editor.md)
 - [Crear opciones de configuración del editor personalizadas y portátiles con EditorConfig](../../ide/create-portable-custom-editor-options.md)
-- [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md): proporciona vínculos a temas que explican cómo personalizar la configuración, los enlaces de teclado y otras características del entorno de desarrollo integrado (IDE).
+- [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)

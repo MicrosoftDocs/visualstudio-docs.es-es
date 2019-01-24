@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: cerrar libros mediante programación'
-ms.custom: ''
+title: Procedimiento Cerrar libros mediante programación
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -11,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - workbooks, closing
 - Excel [Office development in Visual Studio], closing workbooks
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 36b7da02830375161af08bda301e3ead98321741
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 01f188af2ae96cf8622f3614da493891e3dbabe4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675139"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093150"
 ---
-# <a name="how-to-programmatically-close-workbooks"></a>Cómo: cerrar libros mediante programación
+# <a name="how-to-programmatically-close-workbooks"></a>Procedimiento Cerrar libros mediante programación
   Puede cerrar el libro activo o especificar el libro que se va a cerrar.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -57,10 +54,8 @@ ms.locfileid: "35675139"
   
 ## <a name="see-also"></a>Vea también  
  [Trabajar con libros](../vsto/working-with-workbooks.md)   
- [Cómo: guardar libros mediante programación](../vsto/how-to-programmatically-save-workbooks.md)   
- [Cómo: abrir libros mediante programación](../vsto/how-to-programmatically-open-workbooks.md)   
+ [Cómo: Guardar libros mediante programación](../vsto/how-to-programmatically-save-workbooks.md)   
+ [Cómo: Abrir libros mediante programación](../vsto/how-to-programmatically-open-workbooks.md)   
  [Limitaciones de programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

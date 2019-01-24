@@ -1,8 +1,6 @@
 ---
 title: Compilar aplicaciones ClickOnce desde la línea de comandos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1484466e3d1b1a43a6ff28c2526dbb478ef7392d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 41161a41b1e2d1e13c5b9d8ebfad47c558570206
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853290"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926270"
 ---
-# <a name="build-clickonce-applications-from-the-command-line"></a>Compilar aplicaciones ClickOnce desde la línea de comandos
+# <a name="build-clickonce-applications-from-the-command-line"></a>Compilación de aplicaciones ClickOnce desde la línea de comandos
 En [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], puede compilar proyectos desde la línea de comandos, incluso si se crean en el entorno de desarrollo integrado (IDE). De hecho, puede volver a generar un proyecto creado con [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] en otro equipo que tenga solo el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] instalado. Esto le permite reproducir una compilación mediante un proceso automatizado, por ejemplo, en una compilación central laboratorio o uso de técnicas avanzadas de scripting fuera del ámbito de compilar el proyecto en Sí.  
   
 ## <a name="use-msbuild-to-reproduce-clickonce-application-deployments"></a>Usar MSBuild para reproducir las implementaciones de aplicaciones ClickOnce  
@@ -37,7 +35,7 @@ En [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
   
  El `/target:publish` comando indica a MSBuild para invocar el destino de publicación. El destino de publicación depende del destino de compilación. Esto significa que la operación de publicación es un supraconjunto de la operación de compilación. Por ejemplo, si ha realizado un cambio en uno de los archivos de código fuente de Visual Basic o C#, el ensamblado correspondiente podría generarse automáticamente por la operación de publicación.  
   
- Para obtener información sobre la generación de un completo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación utilizando la herramienta de línea de comandos Mage.exe para crear su [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto, vea [Tutorial: implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Para obtener información sobre la generación de un completo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación utilizando la herramienta de línea de comandos Mage.exe para crear su [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto, vea [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 ## <a name="create-and-build-a-basic-clickonce-application-with-msbuild"></a>Crear y compilar una aplicación ClickOnce básica con MSBuild  
   
@@ -77,7 +75,7 @@ En [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
   
    Los pasos anteriores producirán un completo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación de aplicaciones en una subcarpeta del proyecto denominada **publicar**. *CmdLineDemo.application* es el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto de implementación. La carpeta *CmdLineDemo_1.0.0.0* contiene los archivos *CmdLineDemo.exe* y *CmdLineDemo.exe.manifest*, el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto de aplicación. *Setup.exe* es el programa previo, que está configurado para instalar de forma predeterminada el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. La carpeta DotNetFX contiene los archivos redistribuibles para la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Esto es todo el conjunto de archivos que necesita para implementar la aplicación a través de Internet o a través de UNC o CD/DVD.  
   
-## <a name="publish-properties"></a>Las propiedades de publicación  
+## <a name="publish-properties"></a>Publicación de propiedades  
  Cuando se publica la aplicación en los procedimientos anteriores, las siguientes propiedades se insertan en el archivo de proyecto mediante el Asistente para publicación. Estas propiedades influyen directamente en el modo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se genera la aplicación.  
   
  En *CmdLineDemo.vbproj* / *CmdLineDemo.csproj*:  

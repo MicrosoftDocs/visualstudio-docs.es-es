@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: usar cuadros de diálogo integrados en Word'
-ms.custom: ''
+title: Procedimiento Usar mediante programación los cuadros de diálogo integrados en Word
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f5ee28b0296037b9b5490ca691a27d613c793228
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 38e9fd10171bcc5be20f061217ff85b85ae3b52d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674479"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829068"
 ---
-# <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Cómo: usar cuadros de diálogo integrados en Word
+# <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Procedimiento Usar mediante programación los cuadros de diálogo integrados en Word
   Cuando se trabaja con Microsoft Office Word, hay veces cuando se necesitan para mostrar cuadros de diálogo de intervención del usuario. Aunque puede crear sus propios, también puede tomar el enfoque del uso de los cuadros de diálogo integrados en Word, que se exponen en el <xref:Microsoft.Office.Interop.Word.Dialogs> colección de la <xref:Microsoft.Office.Interop.Word.Application> objeto. Esto le permite tener acceso a más de 200 de los cuadros de diálogo integrados, que se representan como enumeraciones.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -49,11 +46,9 @@ ms.locfileid: "35674479"
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: usar cuadros de diálogo Word en modo oculto mediante programación](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)   
+ [Cómo: Usar cuadros de diálogo Word en modo oculto mediante programación](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)   
  [Información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md)   
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Option strict (instrucción)](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
  [Reflexión (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [Reflexión (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
-  
-  

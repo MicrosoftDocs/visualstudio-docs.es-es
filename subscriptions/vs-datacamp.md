@@ -3,18 +3,18 @@ title: Mejore sus aptitudes de ciencia de datos hoy mismo con el beneficio de Da
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 05/30/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Obtenga información sobre la suscripción de aprendizaje de DataCamp incluida en la suscripción de Visual Studio seleccionada.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cd0b92d8515e488d74cc124c888bb0e8ca9537e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: afda11bd8cbc0a8f0be1c25ab0b23d9f7b3a39b8
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863916"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380410"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Beneficio de aprendizaje de DataCamp en suscripciones de Visual Studio
 
@@ -35,19 +35,16 @@ La duración del beneficio de DataCamp depende de su suscripción de Visual Stud
    > ![Crear cuenta de DataCamp](_img/vs-datacamp/vs-datacamp-create-account.png)
    > 
    > [!NOTE]
-   > Cuando empiece a crear la cuenta, es posible que reciba el mensaje de error siguiente: "OOPS!  Your promo code is invalid or expired". (Lo sentimos, el código de promoción no es válido o expiró).  Esto sucede porque el código de promoción expira unos minutos después de su creación.  Si recibe este mensaje, solo tiene que volver a la página [Beneficios](https://my.visualstudio.com/benefits) y hacer clic en el vínculo **Activar** en el icono de beneficio de DataCamp.
+   > Cuando empiece a crear la cuenta, es posible que reciba el mensaje de error siguiente: ¡Vaya!  Your promo code is invalid or expired". (Lo sentimos, el código de promoción no es válido o expiró).  Esto sucede porque el código de promoción expira unos minutos después de su creación.  Si recibe este mensaje, solo tiene que volver a la página [Beneficios](https://my.visualstudio.com/benefits) y hacer clic en el vínculo **Activar** en el icono de beneficio de DataCamp.
 
 4. Una vez creada la cuenta, puede elegir una ruta de aprendizaje.  Las opciones son:
     - Aprendizaje de R para ciencia de datos
     - Aprendizaje de Python para ciencia de datos
     - Desarrollar sus aptitudes de ciencia de datos
 
-
-~~~
-Just click on your chosen path to get started.
-> [!div class="mx-imgBorder"]
-> ![DataCamp Choose Path](_img\vs-datacamp\vs-datacamp-choose-path.png)
-~~~
+   Solo tiene que hacer clic en la ruta que quiera para empezar.
+   > [!div class="mx-imgBorder"]
+   > ![Elegir ruta de DataCamp](_img/vs-datacamp/vs-datacamp-choose-path.png)
 
 5. Después de haber seleccionado la ruta de aprendizaje, puede delimitarla aún más seleccionando un objetivo.  Por ejemplo, si optó por desarrollar sus aptitudes de ciencia de datos, verá las siguientes opciones. Elija una opción o haga clic en **I am not sure.  Show me all career paths** (No estoy seguro. Mostrar todas las rutas profesionales) para confeccionar una ruta más amplia.
    > [!div class="mx-imgBorder"]
@@ -72,18 +69,21 @@ Puede parar en cualquier momento y reanudar el curso en la siguiente sesión.  S
 
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (estándar, de nube anual)   | Licencia por volumen, Azure, venta directa | 3 meses       |  No.  Disponible solo para nuevos suscriptores          |
-| Visual Studio Professional (estándar, de nube anual) | Licencia por volumen, Azure, venta directa                                       | 3 meses                                                            |  No.  Disponible solo para nuevos suscriptores           |
+| Visual Studio Enterprise (estándar)   | Licencia por volumen, Azure, venta directa | 3 meses       |  No.  Disponible solo para nuevos suscriptores          |
+| Visual Studio Professional (estándar) | Licencia por volumen, Azure, venta directa                                       | 3 meses                                                            |  No.  Disponible solo para nuevos suscriptores           |
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | Disponible                                             |  No.  Disponible solo para nuevos suscriptores           |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | Disponible                                              |  No.  Disponible solo para nuevos suscriptores           |
 | Visual Studio Dev Essentials | N/D  | 2 meses | No. Disponible solo para nuevos suscriptores |
-| Visual Studio Enterprise (estándar, de nube anual)  | NFR<sup>1</sup> |No disponible  | N/D |
+| Visual Studio Enterprise (estándar)  | NFR<sup>1</sup> |No disponible  | N/D |
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure | No disponible | N/D |
 
 
 
-<sup>1</sup> *Incluye: No para reventa (NFR), FTE, Microsoft Valued Professional (MVP), Region Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup>1</sup>  *Incluye:  No para reventa (NFR), FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
 
+
+> [!NOTE]
+> Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
 
 
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.

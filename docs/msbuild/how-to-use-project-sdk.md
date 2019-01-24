@@ -1,8 +1,6 @@
 ---
-title: Referencia a un SDK de un proyecto de MSBuild| Microsoft Docs
-ms.custom: ''
+title: Procedimiento Usar SDK de proyecto de MSBuild| Microsoft Docs
 ms.date: 01/25/2018
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, SDKs, SDK
@@ -11,14 +9,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f76c88cafd1ce0e448d32faa902f1cebcf3430f8
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9e5640e02813c22465815576e1435210e2d55712
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151020"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935234"
 ---
-# <a name="how-to-use-msbuild-project-sdks"></a>Cómo: Usar SDK de proyecto de MSBuild
+# <a name="how-to-use-msbuild-project-sdks"></a>Procedimiento Usar SDK de proyecto de MSBuild
 
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 introdujo el concepto de "SDK de proyecto", que simplifica el uso de kits de desarrollo de software que requieren la importación de propiedades y destinos.
 
@@ -101,7 +99,7 @@ Al evaluar la importación, [!INCLUDE[vstecmsbuild](../extensibility/internals/i
    Esta resolución busca SDK de proyecto como `Microsoft.NET.Sdk` y `Microsoft.NET.Sdk.Web` que forman parte del producto.
 3. Una resolución predeterminada que resuelve los SDK que se instalaron con MSBuild.
 
-La resolución del SDK basado en NuGet admite la especificación de una versión en su [global.json](https://docs.microsoft.com/en-us/dotnet/core/tools/global-json) que le permite controlar la versión del SDK de proyecto en un solo lugar en lugar de en cada proyecto individual:
+La resolución del SDK basado en NuGet admite la especificación de una versión en su [global.json](https://docs.microsoft.com/dotnet/core/tools/global-json) que le permite controlar la versión del SDK de proyecto en un solo lugar en lugar de en cada proyecto individual:
 
 ```json
 {

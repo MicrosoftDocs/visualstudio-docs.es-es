@@ -1,20 +1,21 @@
 ---
 layout: LandingPage
+title: Desarrollo móvil con C++
+description: Cree aplicaciones C++ nativas para dispositivos iOS, Android y Windows con Visual Studio.
+ms.date: 10/31/2018
 author: jasongroce
-ms.author: apexprodleads
+ms.author: jasgro
 ms.topic: landing-page
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-mobile
-title: Documentación sobre desarrollo móvil con C++ | Microsoft Docs
-description: Cree aplicaciones C++ nativas para dispositivos iOS, Android y Windows con Visual Studio.
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: d10f0409b30198d7976f08a78b1d45d0099ac093
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 3db198017d15961cf10e30caa1fd860804b9ad3a
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232025"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154009"
 ---
 # <a name="mobile-development-with-c-documentation"></a>Documentación de desarrollo móvil con C++
 
@@ -47,7 +48,7 @@ Cree aplicaciones C++ nativas para dispositivos iOS, Android y Windows con Visua
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="Learn about Visual C++ for cross-platform mobile develpment">
+                            <img src="/media/common/i_learn-about.svg" alt="Learn about Visual C++ for cross-platform mobile development">
                         </div>
                     </div>
                     <div class="cardText">

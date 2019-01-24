@@ -1,9 +1,6 @@
 ---
 title: Aplicaciones auxiliares de SDK para depurar | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - dbgmetric.lib
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d352e22b95540cfc1901eb214c2d5180b6024f27
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6655b96ed51cd7cce5e94ce96cedf97517f1872a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821531"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942416"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Asistentes de SDK para la depuración
 Estas funciones y declaraciones son funciones auxiliares globales para implementar motores de depuración, los evaluadores de expresión y los proveedores de símbolos en C++.  
@@ -179,7 +176,7 @@ HRESULT EnumMetricSections(
 |metricDataBP|Establezca en distinto de cero para indicar la compatibilidad con la configuración de puntos de interrupción en los cambios en los datos.|  
 |metricDisassembly|Establezca a distinto de cero para indicar la compatibilidad para la producción de una lista de desensamblado.|  
 |metricDumpWriting|Establezca en distinto de cero para indicar la compatibilidad para escribir (el volcado de memoria para un dispositivo de salida) de volcado de memoria.|  
-|metricENC|Establezca a distinto de cero para indicar la compatibilidad para editar y continuar. **Nota:** nunca debe establecer esto de un motor de depuración o siempre debe establecer en 0.|  
+|metricENC|Establezca a distinto de cero para indicar la compatibilidad para editar y continuar. **Nota:**  Un motor de depuración nunca debe establecer esto o siempre debe establecer en 0.|  
 |metricExceptions|Establezca en distinto de cero para indicar la compatibilidad para las excepciones.|  
 |metricFunctionBP|Establezca en distinto de cero para indicar la compatibilidad con los puntos de interrupción con nombre (los puntos de interrupción que se interrumpan cuando se llama a un nombre de función determinado).|  
 |metricHitCountBP|Establezca en distinto de cero para indicar la compatibilidad con la configuración de puntos de interrupción "de aciertos de punto" (puntos de interrupción que se desencadenan después de que se vea afectado a un número determinado de veces).|  
@@ -194,7 +191,7 @@ HRESULT EnumMetricSections(
 |metricAlwaysLoadProgramProviderLocal|Establezca esta opción a distinto de cero para indicar que el proveedor del programa siempre se debe cargar localmente.|  
 |metricEngineCanWatchProcess|Establezca esta opción en distinto de cero para indicar que el motor de depuración inspeccionará para procesar eventos en lugar del proveedor del programa.|  
 |metricRemoteDebugging|Establezca esta opción en distinto de cero para indicar la compatibilidad para la depuración remota.|  
-|metricEncUseNativeBuilder|Establezca esta opción a distinto de cero para indicar que el editar y continuar con el administrador deben usar encbuild.dll del motor de depuración para crear aplicaciones para editar y continuar. **Nota:** nunca debe establecer esto de un motor de depuración o siempre debe establecer en 0.|  
+|metricEncUseNativeBuilder|Establezca esta opción a distinto de cero para indicar que el editar y continuar con el administrador deben usar encbuild.dll del motor de depuración para crear aplicaciones para editar y continuar. **Nota:**  Un motor de depuración nunca debe establecer esto o siempre debe establecer en 0.|  
 |metricLoadUnderWOW64|Establezca esta opción en distinto de cero para indicar que el motor de depuración se debe cargar en el proceso depurado bajo WOW cuando se depura un proceso de 64 bits; en caso contrario, el motor de depuración se cargarán en el proceso de Visual Studio (que se ejecuta bajo WOW64).|  
 |metricLoadProgramProviderUnderWOW64|Establezca esta opción en distinto de cero para indicar que el proveedor del programa debe cargarse en el proceso depurado al depurar un proceso de 64 bits en WOW; en caso contrario, se cargarán en el proceso de Visual Studio.|  
 |metricStopOnExceptionCrossingManagedBoundary|Establezca esta opción en distinto de cero para indicar que el proceso debe detenerse si se produce una excepción no controlada en los límites de código administrado y no administrado.|  
@@ -266,7 +263,7 @@ HRESULT EnumMetricSections(
 |-----------------|-----------------|  
 |*[clave del registro]*|`HKEY_CURRENT_USER` o `HKEY_LOCAL_MACHINE`.|  
 |*[raíz de la versión]*|La versión de Visual Studio (por ejemplo, `7.0`, `7.1`, o `8.0`). Sin embargo, esta raíz también se puede modificar mediante la **/rootsuffix** cambie a **devenv.exe**. VSIP, este modificador es normalmente **Exp**, por lo que podría ser la raíz de la versión, por ejemplo, 8.0Exp.|  
-|*[raíz métrica]*|Puede ser `AD7Metrics` o `AD7Metrics(Debug)`, dependiendo de si se usa la versión de depuración de dbgmetric.lib. **Nota:** si se utiliza dbgmetric.lib, esta convención de nomenclatura debe cumplir si dispone de las diferencias entre depuración y lanzamiento de versiones que deben reflejarse en el registro.|  
+|*[raíz métrica]*|Puede ser `AD7Metrics` o `AD7Metrics(Debug)`, dependiendo de si se usa la versión de depuración de dbgmetric.lib. **Nota:**  Si se utiliza dbgmetric.lib, esta convención de nomenclatura debe cumplir si dispone de las diferencias entre depuración y lanzamiento de versiones que deben reflejarse en el registro.|  
 |*[tipo de métrica]*|El tipo de métrica se escriban: `Engine`, `ExpressionEvaluator`, `SymbolProvider`, etcetera. Todas ellas se definen como en dbgmetric.h como `metricTypeXXXX`, donde `XXXX` es el nombre de tipo específico.|  
 |*[metric]*|El nombre de una entrada que se asignará un valor con el fin de establecer la métrica. La organización de las métricas depende del tipo de métrica.|  
 |*[valor de métrica]*|El valor asignado a la métrica. El tipo que el valor debe tener (cadena), números, etc. depende de la métrica.|  

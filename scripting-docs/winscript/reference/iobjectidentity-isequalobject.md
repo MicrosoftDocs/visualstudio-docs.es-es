@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 52e386055e458568f8d4076a37489b7b2397f399
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fa233e478c83b723b13d19d27dc4b63ee4700bb5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728605"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095061"
 ---
 # <a name="iobjectidentityisequalobject"></a>IObjectIdentity::IsEqualObject
 Determina si un objeto es igual al objeto actual.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT IsEqualObject(  
   IUnknown*punk  
 );  
@@ -38,7 +38,7 @@ HRESULT IsEqualObject(
   
 #### <a name="parameters"></a>Parámetros  
  `punk`  
- [in] Dirección del objeto que se va a comparar con el objeto actual.  
+ [in] Dirección del objeto que se compara con el objeto actual.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  

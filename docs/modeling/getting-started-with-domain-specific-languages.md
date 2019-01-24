@@ -8,22 +8,21 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 276ec679525682486db5a579ac34f52cec5081f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 81f5d1004d359ce9ac3ab6f56d5a8d84f51273f8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885668"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872403"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Introducción a los lenguajes específicos de dominio
 
 En este tema se explica los conceptos básicos de la definición y uso de un lenguaje específico de dominio (DSL) creado con el SDK de modelado para Visual Studio.
 
 > [!NOTE]
-> En Visual Studio 2017, el SDK de transformación de plantilla de texto y el SDK de modelado de Visual Studio se instalan automáticamente al instalar características específicas de Visual Studio. Para obtener más información, consulte [esta entrada de blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> En Visual Studio 2017, el SDK de transformación de plantilla de texto y el SDK de modelado de Visual Studio se instalan automáticamente al instalar características específicas de Visual Studio. Para obtener más información, consulte [esta entrada de blog](https://blogs.msdn.microsoft.com/devops/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-Si está familiarizado con los DSL, le recomendamos que trabaje a través de la **laboratorio de herramientas de DSL**, que encontrará en este sitio: [visualización y el SDK de modelado](http://go.microsoft.com/fwlink/?LinkID=186128)
+Si está familiarizado con los DSL, le recomendamos que trabaje a través de la **laboratorio de herramientas de DSL**, que encontrará en este sitio: [SDK de visualización y modelado](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>¿Qué puede hacer con un lenguaje específico de dominio?
 
@@ -112,7 +111,7 @@ Puede ejecutar la solución de DSL tan pronto como se ha creado. Más adelante, 
 1.  Haga clic en **Transformar todas las plantillas** en el **el Explorador de soluciones** barra de herramientas. Esto vuelve a generar la mayoría del código fuente de DslDefinition.dsl.
 
     > [!NOTE]
-    > Cada vez que cambie *DslDefinition.dsl*, debe hacer clic en **Transformar todas las plantillas** antes de volver a generar la solución. Este paso se puede automatizar. Para obtener más información, consulte [cómo automatizar Transformar todas las plantillas](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
+    > Cada vez que cambie *DslDefinition.dsl*, debe hacer clic en **Transformar todas las plantillas** antes de volver a generar la solución. Este paso se puede automatizar. Para obtener más información, consulte [cómo automatizar Transformar todas las plantillas](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
 
 2.  Presione **F5**o bien, en el menú **Depurar** , haga clic en **Iniciar depuración**.
 
@@ -386,7 +385,7 @@ Cambiar el nombre de las clases de dominio existentes y relaciones. Por ejemplo,
 ## <a name="validation-and-commands"></a>Validación y comandos
  También puede desarrollar aún más este DSL agregando restricciones de validación. Estas restricciones son métodos que se pueden definir, asegúrese de que el modelo está en un estado correcto. Por ejemplo, podría definir una restricción para asegurarse de que la fecha de nacimiento de un elemento secundario es posterior a la de sus objetos primarios. La característica de validación muestra una advertencia si el usuario DSL intenta guardar un modelo que infringe alguna de las restricciones. Para obtener más información, consulte [validación en los lenguajes específicos de dominio](../modeling/validation-in-a-domain-specific-language.md).
 
- También puede definir comandos de menú que el usuario puede invocar. Comandos pueden modificar el modelo. También pueden interactuar con otros modelos en Visual Studio y con los recursos externos. Para obtener más información, consulte [Cómo: modificar comandos de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ También puede definir comandos de menú que el usuario puede invocar. Comandos pueden modificar el modelo. También pueden interactuar con otros modelos en Visual Studio y con los recursos externos. Para obtener más información, vea [Cómo: Modificar un comando de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ## <a name="deploying-the-dsl"></a>Implementación DSL
  Para permitir que otros usuarios usar el lenguaje específico de dominio, distribuir un archivo de extensión de Visual Studio (VSIX). Esto se crea al compilar la solución de DSL.

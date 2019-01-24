@@ -1,20 +1,19 @@
 ---
-title: Crear un proyecto de prueba unitaria en Visual Studio
+title: Crear un proyecto de prueba unitaria
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d49748be3067ac2bbb6df9016883cb7be0f48f89
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 8b3b3f8af1dbc2cfd745a56238694cd19cc1f16d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586865"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824943"
 ---
 # <a name="create-a-unit-test-project"></a>Crear un proyecto de prueba unitaria
 

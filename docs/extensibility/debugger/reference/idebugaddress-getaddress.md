@@ -1,9 +1,6 @@
 ---
 title: IDebugAddress::GetAddress | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugAddress::GetAddress
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 869094fabca44eca352a9610ac59a6627df74dd7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8d4a40da82f77f3eb04317fcb936e7a10c5351e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873362"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863714"
 ---
 # <a name="idebugaddressgetaddress"></a>IDebugAddress::GetAddress
 Devuelve una estructura que describe un objeto y su ubicación dentro de su ámbito o el contenedor.  

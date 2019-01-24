@@ -2,19 +2,18 @@
 title: Administrar propiedades de soluciones y proyectos
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96581fbaff9c2ddc85fbb92d73096f2a369d4c7b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6f1ae5ae9b0bd751deca5e26ac4ea09e884e5db0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746317"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824306"
 ---
 # <a name="manage-project-and-solution-properties"></a>Administrar propiedades de soluciones y proyectos
 
@@ -25,6 +24,9 @@ Los proyectos tienen propiedades que controlan muchos aspectos de la compilació
 Los proyectos de .NET también pueden tener un nodo de propiedades en el propio árbol del proyecto.
 
 ![Nodo de propiedades en el árbol del explorador de soluciones](../ide/media/vs2015_props_se.png)
+
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Administrar propiedades de soluciones y proyectos (Visual Studio para Mac)](/visualstudio/mac/managing-solutions-and-project-properties).
 
 ## <a name="project-properties"></a>Propiedades del proyecto
 
@@ -56,3 +58,4 @@ Para obtener acceso a las propiedades de la solución, haga clic con el botón d
 ## <a name="see-also"></a>Vea también
 
 - [Soluciones y proyectos en Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
+- [Administrar propiedades de soluciones y proyectos (Visual Studio para Mac)](/visualstudio/mac/managing-solutions-and-project-properties)

@@ -1,8 +1,7 @@
 ---
-title: Preferencias de estilo del código de Visual Studio
+title: Preferencias de estilo del código
 ms.date: 03/10/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
@@ -12,12 +11,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: c008462ded2b84b5978b65fc41344477c36bee76
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: e1875099fa73fc994643b137807d1b0e1ed485c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626919"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949951"
 ---
 # <a name="code-style-preferences"></a>Preferencias de estilo del código
 
@@ -26,6 +25,9 @@ Para establecer las preferencias de estilo del código de los proyectos de C# y 
 Cada elemento de la lista muestra una vista previa de la preferencia cuando se selecciona:
 
 ![Opciones de estilo de código](media/code-style-quick-actions-dialog.png)
+
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Comportamiento del editor en Visual Studio para Mac](/visualstudio/mac/editor-behavior).
 
 ## <a name="preference-and-severity"></a>Preferencia y gravedad
 
@@ -50,3 +52,4 @@ La primera vez que desencadena el comando **Dar formato al documento** en Visual
 
 - [Acciones rápidas](../ide/quick-actions.md)
 - [Configuración de la convención de codificación de .NET para EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
+- [Comportamiento del editor (Visual Studio para Mac)](/visualstudio/mac/editor-behavior)

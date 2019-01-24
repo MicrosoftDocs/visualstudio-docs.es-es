@@ -1,8 +1,7 @@
 ---
-title: Creación de plantillas web para Visual Studio
+title: Crear plantillas web
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, Web
@@ -12,14 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 59315562e16a7ce3ef4e0a79551f524ca88d44bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 052e9daa7911051138e831436cad23de7ae7ee8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826406"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921856"
 ---
-# <a name="how-to-manually-create-web-templates"></a>Cómo: Crear plantillas web manualmente
+# <a name="how-to-manually-create-web-templates"></a>Procedimiento para crear plantillas web manualmente
 
 La creación de una plantilla web es diferente de la creación de otros tipos de plantillas. Dado que las plantillas de proyecto web aparecen en el cuadro de diálogo **Agregar nuevo sitio web** y los elementos de proyecto web se clasifican por lenguaje de programación, el archivo *vstemplate* debe especificar la plantilla como una plantilla web e identificar el lenguaje de programación.
 
@@ -64,7 +63,7 @@ En este ejemplo se muestra un archivo *vstemplate* básico para una plantilla de
 
 ```xml
 <VSTemplate Version="2.0.0" Type="Project"
-    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">>
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>
         <Name>MyWebProjecStarterKit</Name>
         <Description>A simple web template</Description>

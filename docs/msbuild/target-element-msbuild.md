@@ -1,8 +1,6 @@
 ---
 title: Elemento Target (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Target
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9085861418f11ed63f76a6493a6927c63530759b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5e82a92e0470d754093c419357f7eb4247c1aa65
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918797"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965254"
 ---
 # <a name="target-element-msbuild"></a>Elemento Target (MSBuild)
 Contiene un conjunto de tareas para que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] las ejecute de manera secuencial.  
@@ -62,8 +60,8 @@ Contiene un conjunto de tareas para que [!INCLUDE[vstecmsbuild](../extensibility
 |---------------|-----------------|  
 |`Name`|Atributo necesario.<br /><br /> Nombre del destino.|  
 |`Condition`|Atributo opcional.<br /><br /> La condición que se va a evaluar. Si la condición se evalúa como `false`, el destino no ejecutará el cuerpo del destino ni los destinos que se establecen en el atributo `DependsOnTargets`. Para obtener más información sobre las condiciones, consulte [Condiciones](../msbuild/msbuild-conditions.md).|  
-|`Inputs`|Atributo opcional.<br /><br /> Los archivos que forman entradas en este destino. Si hay varios archivos, se separan con punto y coma. Las marcas de tiempo de los archivos se compararán con las marcas de tiempo de los archivos en `Outputs` para determinar si `Target` está actualizado. Para más información, consulte [Compilaciones incrementales](../msbuild/incremental-builds.md), [Cómo: Compilar versiones incrementalmente](../msbuild/how-to-build-incrementally.md) y [Transformaciones](../msbuild/msbuild-transforms.md).|  
-|`Outputs`|Atributo opcional.<br /><br /> Los archivos que forman salidas en este destino. Si hay varios archivos, se separan con punto y coma. Las marcas de tiempo de los archivos se compararán con las marcas de tiempo de los archivos en `Inputs` para determinar si `Target` está actualizado. Para más información, consulte [Compilaciones incrementales](../msbuild/incremental-builds.md), [Cómo: Compilar versiones incrementalmente](../msbuild/how-to-build-incrementally.md) y [Transformaciones](../msbuild/msbuild-transforms.md).|  
+|`Inputs`|Atributo opcional.<br /><br /> Los archivos que forman entradas en este destino. Si hay varios archivos, se separan con punto y coma. Las marcas de tiempo de los archivos se compararán con las marcas de tiempo de los archivos en `Outputs` para determinar si `Target` está actualizado. Para obtener más información, vea [Compilaciones incrementales](../msbuild/incremental-builds.md), [Cómo: Compilar de forma incremental](../msbuild/how-to-build-incrementally.md) y [Transformaciones](../msbuild/msbuild-transforms.md).|  
+|`Outputs`|Atributo opcional.<br /><br /> Los archivos que forman salidas en este destino. Si hay varios archivos, se separan con punto y coma. Las marcas de tiempo de los archivos se compararán con las marcas de tiempo de los archivos en `Inputs` para determinar si `Target` está actualizado. Para obtener más información, vea [Compilaciones incrementales](../msbuild/incremental-builds.md), [Cómo: Compilar de forma incremental](../msbuild/how-to-build-incrementally.md) y [Transformaciones](../msbuild/msbuild-transforms.md).|  
 |`Returns`|Atributo opcional.<br /><br /> El conjunto de elementos que estará disponible para las tareas que llaman a este destino, por ejemplo, las tareas de MSBuild. Si hay varios destinos, se separan con punto y coma. Si los destinos en el archivo no tienen atributos `Returns`, los atributos Outputs se utilizan en su lugar para este propósito.|  
 |`KeepDuplicateOutputs`|Atributo Boolean opcional.<br /><br /> Si `true`, se registran varias referencias al mismo elemento en las devoluciones del destino.  De manera predeterminada, este atributo es `false`.|  
 |`BeforeTargets`|Atributo opcional.<br /><br /> Una lista separada por punto y coma de nombres de destino.  Cuando se especifica, indica que este destino se debe ejecutar antes que los destinos especificados. Esto permite que el autor del proyecto amplíe un conjunto de destinos existentes sin tener que modificarlos directamente. Para más información, consulte [Orden de compilación de destinos](../msbuild/target-build-order.md).|  

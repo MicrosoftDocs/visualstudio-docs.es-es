@@ -1,9 +1,7 @@
 ---
 title: 'Paso 6: Agregar un temporizador'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 09e7930b-cab6-4a22-9a6f-72e23f489585
 author: TerryGLee
@@ -11,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67d02c4d141dd9ec61918600c5fa0b1ca9fadbd9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 36ca514f4bfb5b3c73d2f72b06afdab72a987ed0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748106"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885416"
 ---
 # <a name="step-6-add-a-timer"></a>Paso 6: Agregar un temporizador
 A continuación, agregará un control <xref:System.Windows.Forms.Timer> al juego de formar parejas. Un temporizador espera un número especificado de milisegundos para desencadenar un evento conocido como *tic*. Esto es útil para iniciar o repetir una acción de forma periódica. En este caso, se usará un temporizador para permitir a los participantes elegir dos iconos y, si no coinciden, ocultarlos de nuevo trascurrido un breve período de tiempo.
@@ -38,7 +36,7 @@ A continuación, agregará un control <xref:System.Windows.Forms.Timer> al juego
      [!code-csharp[VbExpressTutorial4Step6#7](../ide/codesnippet/CSharp/step-6-add-a-timer_1.cs)]
      [!code-vb[VbExpressTutorial4Step6#7](../ide/codesnippet/VisualBasic/step-6-add-a-timer_1.vb)]
 
-     El controlador de eventos Tick realiza tres acciones: primero, se asegura de que el temporizador no está en marcha mediante una llamada al método <xref:System.Windows.Forms.Timer.Stop>. A continuación, usa las dos variables de referencia, `firstClicked` y `secondClicked`, para ocultar de nuevo los iconos de las dos etiquetas que el jugador eligió. Finalmente, restablece las variables de referencia `firstClicked` y `secondClicked` en `null` en Visual C# y `Nothing` en Visual Basic. Este paso es importante porque es como se restablece el programa. Ahora no realiza el seguimiento de ningún control <xref:System.Windows.Forms.Label> y vuelve a estar listo para que el jugador elija otra etiqueta.
+     El controlador de eventos Tic realiza tres operaciones: Primero, se asegura de que el temporizador no está en marcha mediante una llamada al método <xref:System.Windows.Forms.Timer.Stop>. A continuación, usa las dos variables de referencia, `firstClicked` y `secondClicked`, para ocultar de nuevo los iconos de las dos etiquetas que el jugador eligió. Finalmente, restablece las variables de referencia `firstClicked` y `secondClicked` en `null` en Visual C# y `Nothing` en Visual Basic. Este paso es importante porque es como se restablece el programa. Ahora no realiza el seguimiento de ningún control <xref:System.Windows.Forms.Label> y vuelve a estar listo para que el jugador elija otra etiqueta.
 
     > [!NOTE]
     >  Un objeto Timer tiene un método `Start()` que inicia el temporizador y un método `Stop()` que lo detiene. Al establecer la propiedad **Enabled** del temporizador en **True** en la ventana **Propiedades**, inicia los tics nada más comenzar el programa. En cambio, si se deja establecido en **False**, no inicia los tics hasta que se llama a su método `Start()`. Normalmente, un temporizador desencadena su evento Tic una y otra vez usando la propiedad **Interval** para determinar cuántos milisegundos debe esperar entre los tics. Es posible que haya observado cómo se llama al método `Stop()` del temporizador dentro del evento Tick. Esto hace que el temporizador entre en *modo de un disparo*, lo que significa que, cuando se llama al método `Start()`, espera el intervalo especificado, desencadena un único evento Tic y después se para.

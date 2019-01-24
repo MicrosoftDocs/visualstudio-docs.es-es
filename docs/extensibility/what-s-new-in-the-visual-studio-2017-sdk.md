@@ -1,9 +1,6 @@
 ---
 title: ¿Qué&#39;s en el SDK de Visual Studio 2017 | Microsoft Docs
-ms.custom: ''
 ms.date: 10/31/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 9efcf0a3-dbde-4cab-8ed3-425826a48b2e
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f2a003bc19764aa07262552d3f0cc41316835b6
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 88e68ae7e6a88d1acd88016819eb4634962ef101
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566913"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952214"
 ---
 # <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>¿Qué&#39;s nuevo en Visual Studio 2017 SDK
 
@@ -41,7 +38,7 @@ Para obtener información acerca de estos cambios, vea los temas siguientes:
 
 ## <a name="migrate-extensibility-project-to-visual-studio-2017"></a>Migrar el proyecto de extensibilidad a Visual Studio 2017
 
-Para obtener información sobre cómo actualizar los proyectos de extensibilidad y sus manifiestos VSIX a Visual Studio 2017, consulte [Cómo: migrar proyectos de extensibilidad de Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
+Para obtener información sobre cómo actualizar los proyectos de extensibilidad y sus manifiestos VSIX a Visual Studio 2017, vea [Cómo: Migrar proyectos de extensibilidad de Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
 ## <a name="custom-project-and-item-templates"></a>Plantillas de proyecto y elemento personalizadas
 
@@ -49,4 +46,4 @@ A partir de Visual Studio 2017, análisis de proyecto personalizado y las planti
 
 ## <a name="updated-extension-performance-guidelines"></a>Directrices de rendimiento de la extensión actualizada
 
-Hay un nuevo [Cómo: diagnosticar el rendimiento de la extensión](how-to-diagnose-extension-performance.md) en el artículo [administrar VSPackages](managing-vspackages.md) para mostrar cómo detectar y analizar el impacto de la extensión en Visual Studio inicio y solución de los tiempos de carga.
+Hay un nuevo [Cómo: Diagnóstico de rendimiento de la extensión](how-to-diagnose-extension-performance.md) en el artículo [administrar VSPackages](managing-vspackages.md) para mostrar cómo detectar y analizar el impacto de la extensión en Visual Studio inicio y solución de los tiempos de carga.

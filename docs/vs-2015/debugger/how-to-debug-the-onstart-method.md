@@ -22,15 +22,15 @@ helpviewer_keywords:
 - Windows Service applications, debugging
 ms.assetid: b06b5d65-424b-490f-bf58-97583cd7006a
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 59f54b407436f9ebdeab3fac275068e843398f36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 37ea2118c11eaebd0619a3845fc0177741cf34de
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221252"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744153"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>Cómo: Depurar el método OnStart
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

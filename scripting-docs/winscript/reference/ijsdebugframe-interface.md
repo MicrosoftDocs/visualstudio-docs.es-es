@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f09a147375661fb52b88f531aff981897138adff
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2fa491a02d289a0a92a70348ec5ef483dd8f8467
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729615"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093308"
 ---
 # <a name="ijsdebugframe-interface"></a>IJsDebugFrame (Interfaz)
 Representa un marco de pila.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 IJsDebugFrame : public IUnknown;  
 ```  
   
@@ -32,7 +32,7 @@ IJsDebugFrame : public IUnknown;
   
 ### <a name="public-methods"></a>Métodos públicos  
   
-|Nombre|Descripción|  
+|Name|Descripción|  
 |----------|-----------------|  
 |[IJsDebugFrame::Evaluate (Método)](../../winscript/reference/ijsdebugframe-evaluate-method.md)|Evalúa una expresión en el contexto de este marco de pila.|  
 |[IJsDebugFrame::GetDebugProperty (Método)](../../winscript/reference/ijsdebugframe-getdebugproperty-method.md)|Devuelve un explorador de propiedades para este marco de pila.|  

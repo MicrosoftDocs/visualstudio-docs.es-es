@@ -2,7 +2,6 @@
 title: Proyectos y soluciones, Cuadro de diálogo Opciones
 ms.date: 07/14/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.General
@@ -16,21 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbd3fe20377cd2aa4954e904fec50702cc9b7120
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 466df9ad82ef4bdc4b4cb3d699b53c0568f3b08a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843996"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926318"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Página Proyectos y soluciones, Cuadro de diálogo Opciones
 
 Establece el comportamiento de Visual Studio relacionado con proyectos y soluciones. Para acceder a estas opciones, seleccione **Herramientas** > **Opciones**, expanda **Proyectos y soluciones** y haga clic en **General**.
 
 Las rutas de acceso predeterminadas para las carpetas de proyectos y plantillas se establecen a través de la pestaña **Ubicaciones** en el mismo cuadro de diálogo.
-
-> [!NOTE]
-> Las opciones disponibles en la interfaz de usuario podrían diferir de lo que se describe en este caso, dependiendo de la edición o configuración activa. Este artículo se ha redactado teniendo en cuenta la **Configuración general de desarrollo**. Para ver o cambiar la configuración, elija **Importar y exportar configuraciones** en el menú **Herramientas**. Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="general-page"></a>Página general
 
@@ -92,11 +88,11 @@ Especifica la ubicación predeterminada donde Visual Studio crea las nuevas carp
 
 ### <a name="user-project-templates-location"></a>Ubicación de plantillas de proyecto de usuario
 
-Especifica la ubicación predeterminada que usa el cuadro de diálogo **Nuevo proyecto** para crear la lista de **Mis plantillas**. Para más información, vea [Cómo: Localizar y organizar plantillas](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Especifica la ubicación predeterminada que usa el cuadro de diálogo **Nuevo proyecto** para crear la lista de **Mis plantillas**. Para obtener más información, vea [Cómo: Buscar y organizar plantillas](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ### <a name="user-item-templates-location"></a>Ubicación de plantillas de elemento de usuario
 
-Especifica la ubicación predeterminada que usa el cuadro de diálogo **Agregar nuevo elemento** para crear la lista de **Mis plantillas**. Para más información, vea [Cómo: Localizar y organizar plantillas](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Especifica la ubicación predeterminada que usa el cuadro de diálogo **Agregar nuevo elemento** para crear la lista de **Mis plantillas**. Para obtener más información, vea [Cómo: Buscar y organizar plantillas](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Vea también
 

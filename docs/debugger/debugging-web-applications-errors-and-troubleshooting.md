@@ -1,8 +1,7 @@
 ---
-title: 'Depuración de aplicaciones Web: Errores y solución de problemas | Documentos de Microsoft'
-ms.custom: ''
+title: 'Depuración de aplicaciones web: errores y solución de problemas'
+ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -28,19 +27,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81d9ba4a2e37124f8d8b3641a129d09da1728118
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 660e02cab12206fda374fec8e008023952690fac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471523"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827423"
 ---
-# <a name="debugging-web-applications-errors-and-troubleshooting"></a>Depurar las aplicaciones Web: errores y solución de problemas
+# <a name="debugging-web-applications-errors-and-troubleshooting"></a>Depurar aplicaciones web: errores y solución de problemas
 Al intentar depurar aplicaciones web pueden producirse los siguientes errores.  
   
 -   [Solución de problemas](../debugger/debugging-web-applications-troubleshooting.md)  
   
--   [Error: Site Uses IP Address (El sitio usa una dirección IP)](../debugger/error-site-uses-ip-address.md)  
+-   [Error: El sitio usa una dirección IP](../debugger/error-site-uses-ip-address.md)  
   
 -   [Error: Una comprobación de seguridad produjo un error porque el servicio de administración de IIS no respondió](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)  
   
@@ -48,14 +47,14 @@ Al intentar depurar aplicaciones web pueden producirse los siguientes errores.
   
 -   [Error: No se pudo realizar la depuración porque no está habilitada la autenticación integrada de Windows](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)  
   
--   [Error: El servidor web no se ha configurado correctamente](../debugger/error-the-web-server-is-not-configured-correctly.md)  
+-   [Error: El servidor web no está configurado correctamente](../debugger/error-the-web-server-is-not-configured-correctly.md)  
   
 -   [Error: El servidor web se ha bloqueado y está impidiendo la ejecución del verbo DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)  
   
--   [Error: Timeout While Debugging Web Services (Se excedió el tiempo de espera de depuración de servicios web)](../debugger/error-timeout-while-debugging-web-services.md)  
+-   [Error: Se excedió el tiempo de espera de depuración de servicios web](../debugger/error-timeout-while-debugging-web-services.md)  
   
--   [Error: No se puede iniciar la depuración en el servidor web](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
+-   [Error: No es posible iniciar la depuración en el servidor web](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
   
 ## <a name="see-also"></a>Vea también  
  [Seguridad del depurador](../debugger/debugger-security.md)   
- [Depurar script y aplicaciones web](../debugger/debugging-web-applications-and-script.md)
+ [Depurar script y aplicaciones web](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)

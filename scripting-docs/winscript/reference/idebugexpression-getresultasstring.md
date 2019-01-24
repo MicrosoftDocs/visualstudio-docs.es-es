@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 557fe65859d1e3046d64884982070ad233e12559
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6cee33b5547e30f913407b02a3befd449dda6aeb
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728255"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097362"
 ---
 # <a name="idebugexpressiongetresultasstring"></a>IDebugExpression::GetResultAsString
 Devuelve el resultado de la evaluación de expresión como una cadena y el valor devuelto de la operación.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetResultAsString(  
    HRESULT*  phrResult,  
    BSTR*     pbstrResult  

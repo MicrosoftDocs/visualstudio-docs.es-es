@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 447a8faf6e62448e7e8ce9ee8d7d8097fba2dd7b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d8624c1405931edefe2e1e53e579ad28a7b238f1
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919369"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345492"
 ---
 # <a name="active-script-debugging-overview"></a>Información general acerca de la depuración de Active Script
 Las interfaces de depuración de Active Script permiten la depuración independiente del idioma y del host, y admiten una amplia variedad de entornos de desarrollo.  
@@ -33,31 +33,30 @@ Figura 1
   
  En las subsecciones siguientes, se describen los componentes clave de la depuración activa y sus interfaces asociadas. Sin embargo, antes de continuar, se deben definir varios conceptos clave de la depuración activa:  
   
- aplicación host  
+ **aplicación host**  
  La aplicación que hospeda los motores de script y que proporciona un conjunto de objetos (o "modelo de objetos") que permiten ejecutar scripts.  
   
- motor de lenguaje  
+ **motor de lenguaje**  
  Un componente que proporciona abstracciones de análisis, ejecución y depuración para un lenguaje determinado.  
   
- IDE del depurador  
+ **IDE del depurador**  
  La aplicación que proporciona la interfaz de usuario de depuración mediante la comunicación con la aplicación host y los motores de lenguaje.  
   
- administrador de depuración de la máquina  
- Un componente que mantiene un registro de los procesos de aplicaciones que se pueden depurar.  
+ **administrador de depuración de máquina** Un componente que mantiene un registro de los procesos de aplicaciones que se pueden depurar.  
   
- administrador de depuración del proceso  
+ **administrador de depuración del proceso**  
  Un componente que mantiene el árbol de documentos que se pueden depurar para una aplicación concreta, realiza un seguimiento de los subprocesos en ejecución, etcétera.  
   
- contexto de documento  
+ **contexto de documento**  
  Un contexto de documento es una abstracción que representa un intervalo específico en el código fuente de un documento host.  
   
- contexto de código  
+ **contexto de código**  
  Un contexto de código representa una ubicación determinada en el código de ejecución de un motor de lenguaje (un "puntero de instrucción virtual").  
   
- contexto de expresión  
+ **contexto de expresión**  
  Un contexto determinado (por ejemplo, un marco de pila) en el que un motor de lenguaje puede evaluar expresiones.  
   
- exploración de objetos  
+ **exploración de objetos**  
  Una representación estructurada, e independiente del lenguaje, del nombre, el tipo, el valor y los subobjetos de un objeto, adecuada para implementar una interfaz de usuario "ventana de inspección".  
   
  A continuación se ofrece información general sobre cada uno de los componentes clave de la depuración activa y sus interfaces correspondientes y asociadas, seguido de los detalles de dichas interfaces.  

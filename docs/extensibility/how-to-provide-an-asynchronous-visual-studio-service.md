@@ -1,6 +1,5 @@
 ---
-title: 'Cómo: proporcionar un servicio asincrónico de Visual Studio | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Proporciona un servicio asincrónico de Visual Studio | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
@@ -9,17 +8,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c022f1a039aacee3599dd680adfa92a9404b34b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e5508490bfd16a3850f6ffee8d0d45d0cced4aae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915677"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857833"
 ---
-# <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Cómo: proporcionar un servicio asincrónico de Visual Studio
+# <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Procedimiento Proporcionar un servicio asincrónico de Visual Studio
 Si desea obtener un servicio sin bloquear el subproceso de interfaz de usuario, debe crear un servicio asincrónico y cargar el paquete en un subproceso en segundo plano. Para ello puede usar un <xref:Microsoft.VisualStudio.Shell.AsyncPackage> en lugar de un <xref:Microsoft.VisualStudio.Shell.Package>y agregue el servicio con los métodos asincrónicos especial del paquete asincrónica.
   
- Para obtener información acerca de cómo proporcionar servicios de Visual Studio sincrónicos, vea [Cómo: proporcionar un servicio](../extensibility/how-to-provide-a-service.md).  
+ Para obtener información acerca de cómo proporcionar servicios de Visual Studio sincrónicos, vea [Cómo: Proporcionar un servicio](../extensibility/how-to-provide-a-service.md).  
   
 ## <a name="implement-an-asynchronous-service"></a>Implementar un servicio asincrónico  
   

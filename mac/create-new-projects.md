@@ -5,18 +5,18 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: 1bd1687e545546780db4c76169bf2ca0affd47fe
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: b6f355dbe10cf250ec397cb817643984b438a92e
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224209"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294271"
 ---
 # <a name="creating-new-projects-and-solutions"></a>Creación de nuevos proyectos y soluciones
 
 ## <a name="creating-new-projects-and-solutions-from-a-template"></a>Creación de nuevos proyectos y soluciones a partir de una plantilla
 
-Es posible crear soluciones en cualquier momento mediante una plantilla predeterminada. Para crear una solución de esta manera, vaya a **Archivo > Nueva solución**, seleccione las plataformas necesarias y luego la plantilla requerida:
+Es posible crear soluciones en cualquier momento mediante una plantilla predefinida. Para crear una solución de esta manera, vaya a  **Archivo > Nueva solución**, seleccione las plataformas necesarias y luego la plantilla requerida:
 
 ![Creación de nuevas soluciones](media/projects-and-solutions-image0.png)
 
@@ -26,7 +26,7 @@ El desplazamiento por el Explorador de soluciones se puede realizar mediante las
 
 Para agregar un nuevo proyecto a la solución, haga clic con el botón derecho en el nombre de la solución y seleccione **Agregar > Agregar nuevo proyecto** para mostrar el cuadro de diálogo Nuevo proyecto:
 
- ![Adición de un proyecto nuevo](media/projects-and-solutions-image4.png)
+![Adición de un proyecto nuevo](media/projects-and-solutions-image4.png)
 
 Este método para agregar nuevos proyectos se puede usar para aprovechar las capacidades de uso compartido de código de Xamarin. La adición de un proyecto compartido o una plantilla de biblioteca portátil a una solución existente proporciona una manera de contener cualquier lógica multiplataforma que se pueda usar en todos los demás proyectos de una solución. Para más información sobre cómo compilar aplicaciones multiplataforma, vea la [guía en cuestión](https://developer.xamarin.com/guides/cross-platform/application_fundamentals/code-sharing/).
 
@@ -34,7 +34,10 @@ Este método para agregar nuevos proyectos se puede usar para aprovechar las cap
 
 La página de inicio de Visual Studio muestra una lista de proyectos recientes en los que se ha estado trabajando:
 
- ![Sección de soluciones recientes en la página principal](media/create-new-projects-recent.png)
+![Sección de soluciones recientes en la página principal](media/create-new-projects-recent.png)
 
-Puede filtrar esta lista con el cuadro Filtrar o quitar elementos individuales de la lista. 
- 
+Puede filtrar esta lista con el cuadro Filtrar o quitar elementos individuales de la lista.
+
+## <a name="see-also"></a>Vea también
+
+- [Crear soluciones y proyectos (Visual Studio en Windows)](/visualstudio/ide/creating-solutions-and-projects)

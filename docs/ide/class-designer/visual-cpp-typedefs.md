@@ -2,7 +2,6 @@
 title: Definiciones de tipos de Visual C++ en el Diseñador de clases
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.typedef
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6eb831422df42a246a5d5c23ccdd480bce47a0e6
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: bca0dacf2fd649db91fb37756c1670af403b4e95
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33958339"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269418"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Definiciones de tipo de Visual C++ en el Diseñador de clases
 

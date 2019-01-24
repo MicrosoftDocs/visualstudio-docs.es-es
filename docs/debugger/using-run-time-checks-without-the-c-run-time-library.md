@@ -1,8 +1,6 @@
 ---
 title: Uso de tiempo de ejecución comprueba sin la biblioteca de tiempo de ejecución de C | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.runtime
@@ -25,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a4fb9f61242490b30e1b89132f4e79fbb56d48de
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: 1ae0b5831ef6007832438c4d589c4385711666dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056021"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921934"
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>Utilizar comprobaciones en tiempo de ejecución sin la biblioteca en tiempo de ejecución de C
 Si vincula el programa sin la biblioteca de tiempo de ejecución de C, utilizando **/NODEFAULTLIB**y desea utilizar comprobaciones en tiempo de ejecución, debe vincular el programa con RunTmChk.lib.  
@@ -63,7 +61,7 @@ extern "C" _RTC_error_fnW __cdecl _CRT_RTC_INITW(
 }  
 ```  
   
- Una vez instalada la función de generación de informes de errores predeterminada, puede instalar otras funciones del mismo tipo con `_RTC_SetErrorFuncW`. Para obtener más información, consulte [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw).  
+ Una vez instalada la función de generación de informes de errores predeterminada, puede instalar otras funciones del mismo tipo con `_RTC_SetErrorFuncW`. Para obtener más información, vea [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw).  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Usar comprobaciones nativas en tiempo de ejecución](../debugger/how-to-use-native-run-time-checks.md)
+ [Cómo: Uso de comprobaciones nativas en tiempo de ejecución](../debugger/how-to-use-native-run-time-checks.md)

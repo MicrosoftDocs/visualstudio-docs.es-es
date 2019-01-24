@@ -1,5 +1,5 @@
 ---
-title: Comparación de los resultados de pruebas de carga en Visual Studio
+title: Comparación de los resultados de pruebas de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +10,20 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 8829644e34c169f8992959013f70d453a70d41b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 52c5ff41a8c1085e39009c240e3416a60a081101
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834292"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951110"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Informar de los resultados de las pruebas de carga para las comparaciones de pruebas o los análisis de tendencias
 
-Puede generar informes de prueba de carga de Microsoft Excel basados en dos o más resultados de pruebas. Están disponibles dos informes de prueba de carga:
+Puede generar informes de prueba de carga de Microsoft Excel basados en dos o más resultados de pruebas.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Están disponibles dos informes de prueba de carga:
 
 - Ejecutar comparación&mdash;Este informe consta realmente de dos informes que muestran datos de comparación en paralelo mediante tablas y gráficos de barras.
 
@@ -33,14 +36,14 @@ Las definiciones de informe están almacenadas en la base de datos de pruebas de
 Además, el archivo de hoja de cálculo se puede compartir con las partes interesadas de forma que no tengan que conectarse a la base de datos para ver el informe.
 
 > [!NOTE]
-> Si agrega comentarios a una prueba de carga, aparecerán en el informe de Excel. Para obtener más información, vea [Cómo: Agregar comentarios mientras se analiza una prueba de carga completada](../test/how-to-add-comments-on-a-completed-load-test.md).
+> Si agrega comentarios a una prueba de carga, aparecen en el informe de Excel.
 
 ## <a name="tasks"></a>Tareas
 
 |Tareas|Temas relacionados|
 |-|-|
-|**Crear un informe de rendimiento y esfuerzo:** puede crear informes en las pruebas de rendimiento web y carga, utilizando Microsoft Excel.|- [Cómo: Crear informes de rendimiento de la prueba de carga con Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
-|**Crear manualmente un informe de rendimiento y tensión con Microsoft Word:** para crear informes de las pruebas de carga y rendimiento web, copie y pegue el resumen, la tabla y los datos del gráfico en un documento de Microsoft Word.|- [Cómo: Crear manualmente informes de rendimiento de pruebas de carga con Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
+|**Creación de un informe de rendimiento y esfuerzo:** puede crear informes en las pruebas de rendimiento web y carga, mediante Microsoft Excel.|- [Cómo: Crear informes de rendimiento de pruebas de carga con Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
+|**Creación manual de un informe de rendimiento y tensión con Microsoft Word:** puede crear informes manuales de las pruebas de carga y rendimiento web si copia y pega los datos de resumen, tablas y gráficos en un documento de Microsoft Word.|- [Cómo: Crear manualmente un informe de rendimiento de pruebas de carga con Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
 
 ## <a name="see-also"></a>Vea también
 

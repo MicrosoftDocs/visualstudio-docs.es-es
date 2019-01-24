@@ -2,7 +2,6 @@
 title: Cuadro de herramientas, pestaña Datos
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Toolbox, Data tab
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1af6ac0f9a382a91d2c87e5cb84053b8b51bf961
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: d9e23cd79510d789c8c8f8b426fb3196f1845745
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089677"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952966"
 ---
 # <a name="toolbox-data-tab"></a>Cuadro de herramientas, pestaña Datos
 
@@ -34,7 +33,7 @@ Para ir directamente a la página de referencia de .NET Framework para un compon
 
 |nombre|Descripción|
 |----------|-----------------|
-|<xref:System.Data.DataSet>|Agrega una instancia de un conjunto de datos con o sin tipo al formulario o componente. Cuando arrastra este objeto en un diseñador, muestra un cuadro de diálogo que le permite seleccionar una clase de un conjunto de datos con tipo existente o especificar que quiere crear un conjunto de datos sin tipo y en blanco. **Nota:** No use el objeto <xref:System.Data.DataSet> en el **cuadro de herramientas** para crear una clase y un esquema de conjunto de datos con tipo. Para obtener más información, vea [Crear y configurar conjuntos de datos](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|
+|<xref:System.Data.DataSet>|Agrega una instancia de un conjunto de datos con o sin tipo al formulario o componente. Cuando arrastra este objeto en un diseñador, muestra un cuadro de diálogo que le permite seleccionar una clase de un conjunto de datos con tipo existente o especificar que quiere crear un conjunto de datos sin tipo y en blanco. **Nota:**  No use el objeto <xref:System.Data.DataSet> en el **cuadro de herramientas** para crear una clase y un esquema de conjunto de datos con tipo. Para obtener más información, vea [Crear y configurar conjuntos de datos](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|
 |<xref:System.Windows.Forms.DataGridView>|Proporciona una forma eficaz y flexible de mostrar datos en formato de tabla.|
 |<xref:System.Windows.Forms.BindingSource>|Simplifica el proceso de enlazar controles a un origen de datos subyacente.|
 |<xref:System.Windows.Forms.BindingNavigator>|Representa la interfaz de usuario de navegación y manipulación para los controles de un formulario que están enlazados a datos.|

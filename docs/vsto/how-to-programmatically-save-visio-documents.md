@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: guardar documentos de Visio mediante programación'
-ms.custom: ''
+title: Procedimiento Guardar documentos de Visio mediante programación
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c3d763209d60440066df758b6c1eca087dea9b03
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cd49be6f7ab4e87f0592470e1c5af6039a5f56aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906681"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865627"
 ---
-# <a name="how-to-programmatically-save-visio-documents"></a>Cómo: guardar documentos de Visio mediante programación
+# <a name="how-to-programmatically-save-visio-documents"></a>Procedimiento Guardar documentos de Visio mediante programación
   Hay varias formas de guardar documentos de Microsoft Office Visio:  
   
 - Guardar cambios en un documento existente.  
@@ -32,7 +29,7 @@ ms.locfileid: "49906681"
   
 - Guardar un documento con argumentos especificados.  
   
-  Para obtener más información, vea la documentación de referencia de VBA de los métodos [Microsoft.Office.Interop.Visio.Document.Save](https://msdn.microsoft.com/library/office/ff766478.aspx) , [Microsoft.Office.Interop.Visio.Document.SaveAs](https://msdn.microsoft.com/library/office/ff765824.aspx) y [Microsoft.Office.Interop.Visio.Document.SaveAsEx](https://msdn.microsoft.com/library/office/ff768149.aspx) .  
+  Para obtener más información, vea la documentación de referencia de VBA de los métodos [Microsoft.Office.Interop.Visio.Document.Save](/office/vba/api/Visio.Document.Save) , [Microsoft.Office.Interop.Visio.Document.SaveAs](/office/vba/api/Visio.Document.SaveAs) y [Microsoft.Office.Interop.Visio.Document.SaveAsEx](/office/vba/api/Visio.Document.SaveAsEx) .  
   
 ## <a name="save-an-existing-document"></a>Guardar un documento existente  
   
@@ -80,9 +77,7 @@ ms.locfileid: "49906681"
 ## <a name="see-also"></a>Vea también  
  [Soluciones de Visio](../vsto/visio-solutions.md)   
  [Información general sobre el modelo de objetos de Visio](../vsto/visio-object-model-overview.md)   
- [Cómo: crear nuevos documentos de Visio mediante programación](../vsto/how-to-programmatically-create-new-visio-documents.md)   
- [Cómo: abrir documentos de Visio mediante programación](../vsto/how-to-programmatically-open-visio-documents.md)   
- [Cómo: cerrar documentos de Visio mediante programación](../vsto/how-to-programmatically-close-visio-documents.md)   
- [Cómo: imprimir documentos de Visio mediante programación](../vsto/how-to-programmatically-print-visio-documents.md)  
-  
-  
+ [Cómo: Crear nuevos documentos de Visio mediante programación](../vsto/how-to-programmatically-create-new-visio-documents.md)   
+ [Cómo: Abrir documentos de Visio mediante programación](../vsto/how-to-programmatically-open-visio-documents.md)   
+ [Cómo: Cerrar documentos de Visio mediante programación](../vsto/how-to-programmatically-close-visio-documents.md)   
+ [Cómo: Imprimir documentos de Visio mediante programación](../vsto/how-to-programmatically-print-visio-documents.md)  

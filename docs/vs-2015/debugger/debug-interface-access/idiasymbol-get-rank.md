@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_rank method
 ms.assetid: 14cc9c4b-a5ec-414a-b01f-4a142c17b7cc
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5d6bae9dc211a2d8cecd155f6b15fca282089c1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c17c283b7eea8056cdc19feb2d44a2c27619912e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825437"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734882"
 ---
 # <a name="idiasymbolgetrank"></a>IDiaSymbol::get_rank
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera el rango (número de dimensiones) de una matriz multidimensional de FOR
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT get_rank (   
+HRESULT get_rank (   
    DWORD* pRetVal  
 );  
 ```  

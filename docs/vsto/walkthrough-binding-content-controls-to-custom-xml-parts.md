@@ -1,9 +1,6 @@
 ---
 title: 'Tutorial: Enlazar controles de contenido a elementos XML personalizados'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 05d7c3cc2c391eee6ceeba492cd083efd3c00015
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5989100376dd04d1fcfa57efff11042f2e2c8454
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916756"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899657"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Tutorial: Enlazar controles de contenido a elementos XML personalizados
   Este tutorial muestra cómo enlazar controles de contenido en una personalización de nivel de documento para Word a datos XML que se almacenan en el documento.  
@@ -62,7 +59,7 @@ ms.locfileid: "49916756"
   
 ### <a name="to-create-a-new-word-document-project"></a>Para crear un nuevo proyecto de documento de Word  
   
-1.  Cree un proyecto de documento de Word con el nombre **EmployeeControls**. Cree un nuevo documento para la solución. Para obtener más información, consulte [Cómo: proyectos de creación de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Cree un proyecto de documento de Word con el nombre **EmployeeControls**. Cree un nuevo documento para la solución. Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Abre el nuevo documento de Word en el diseñador y agrega el **EmployeeControls** proyecto a **el Explorador de soluciones**.  
   
@@ -88,7 +85,7 @@ ms.locfileid: "49916756"
 5. En la cinta de opciones, elija la **Developer** ficha.  
   
    > [!NOTE]  
-   >  Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, consulte [Cómo: mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+   >  Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, vea [Cómo: Mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 6. En el **controles** grupo, elija la **texto** botón ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") para agregar un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>a la primera celda.  
   
@@ -296,7 +293,7 @@ ms.locfileid: "49916756"
   
 9. Nombre del archivo **EmployeeControls.docx.zip**.  
   
-     El **EmployeeControls.docx** documento se guarda en formato XML abierto. Al cambiar el nombre de este documento con el *.zip* extensión de nombre de archivo puede examinar el contenido del documento. Para obtener más información sobre Open XML, vea el artículo técnico [formatos de archivo de presentación de XML abiertos de Office (2007)](http://msdn.microsoft.com/96018532-f62c-4da7-bbff-16b96a483fbf).  
+     El **EmployeeControls.docx** documento se guarda en formato XML abierto. Al cambiar el nombre de este documento con el *.zip* extensión de nombre de archivo puede examinar el contenido del documento. Para obtener más información sobre Open XML, vea el artículo técnico [formatos de archivo de presentación de XML abiertos de Office (2007)](/previous-versions/office/developer/office-2007/aa338205(v=office.12)).  
   
 10. Abra el **EmployeeControls.docx.zip** archivo.  
   
@@ -313,19 +310,17 @@ ms.locfileid: "49916756"
 ## <a name="next-steps"></a>Pasos siguientes  
  Puede aprender más sobre cómo usar controles de contenido en estos temas:  
   
--   Use todos los controles de contenido disponibles para crear una plantilla. Para obtener más información, consulte [Tutorial: crear una plantilla mediante controles de contenido](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
+-   Use todos los controles de contenido disponibles para crear una plantilla. Para obtener más información, vea [Tutorial: Crear una plantilla mediante controles de contenido](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
   
 -   Modifique los datos de los elementos XML personalizados con el documento cerrado. La próxima vez que el usuario abra el documento, los controles de contenido que estén enlazados a los elementos XML mostrarán los nuevos datos.  
   
--   Utilice los controles de contenido para proteger elementos de un documento. Para obtener más información, consulte [Cómo: proteger elementos de documentos mediante controles de contenido](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
+-   Utilice los controles de contenido para proteger elementos de un documento. Para obtener más información, vea [Cómo: Proteger elementos de documentos mediante controles de contenido](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Automatizar Word usando objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)   
  [Controles de contenido](../vsto/content-controls.md)   
- [Cómo: agregar controles de contenido a documentos de Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [Cómo: proteger elementos de documentos mediante controles de contenido](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
+ [Cómo: Agregar controles de contenido a documentos de Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [Cómo: Proteger elementos de documentos mediante controles de contenido](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
  [Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)   
  [Limitaciones de programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md)  
-  
-  

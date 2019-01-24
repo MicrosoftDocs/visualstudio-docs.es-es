@@ -1,9 +1,6 @@
 ---
 title: Exposición de listas de símbolos proporcionadas para el Administrador de objetos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IVsSimpleLibrary2 interface, lists of symbols
@@ -17,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 154ab307a77925bb2862a07310d2b044654bfdb0
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 679a743db707b7354fe104721ea8dd709e151217
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513153"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827447"
 ---
-# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Cómo: exponer listas de símbolos proporcionadas por la biblioteca en el Administrador de objetos
+# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Procedimiento Exposición de listas de símbolos proporcionadas por la biblioteca en el Administrador de objetos
 Las herramientas de exploración de símbolos, **vista de clases**, **Examinador de objetos**, **Examinador de llamadas** y **resultados de la búsqueda de símbolos**, pasa las solicitudes de nuevos datos el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el Administrador de objetos. El Administrador de objetos busca las bibliotecas adecuadas y las solicitudes nuevas listas de símbolos. Las bibliotecas de responden, ya que proporciona los datos solicitados para la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el Administrador de objetos a través de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfaz. El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el Administrador de objetos llama a los métodos <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> para obtener los datos de la interfaz y se utiliza para rellenar o actualizar las vistas de las herramientas de exploración de símbolos.  
   
  Una biblioteca puede obtener las solicitudes de datos cuando se invoca la herramienta, el nodo está expandido, o se actualice la vista. Cuando se invoca una herramienta de exploración de símbolos por primera vez, el Administrador de objetos solicita la biblioteca para proporcionar la lista de nivel superior. Cuando el usuario expande un nodo de lista, la biblioteca proporciona una lista de elementos secundarios bajo ese nodo. Cada consulta de objeto manager contiene el índice del elemento de interés. Para mostrar una lista nueva, el Administrador de objetos debe determinar cuántos elementos están en la lista, el tipo de los elementos, sus nombres, accesibilidad y otras propiedades.  
@@ -470,6 +467,6 @@ Las herramientas de exploración de símbolos, **vista de clases**, **Examinador
   
 ## <a name="see-also"></a>Vea también  
  [Compatibilidad con herramientas de exploración de símbolos](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Cómo: registrar una biblioteca con el Administrador de objetos](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [Cómo: identificar los símbolos en una biblioteca](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)   
+ [Cómo: Registrar una biblioteca con el Administrador de objetos](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [Cómo: Identificación de símbolos en una biblioteca](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)   
  [Extensibilidad de servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-extensibility.md)

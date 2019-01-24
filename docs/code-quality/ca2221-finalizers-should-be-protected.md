@@ -1,8 +1,7 @@
 ---
-title: 'CA2221: Debe proteger los finalizadores'
+title: 'CA2221: Los finalizadores deben estar protegidos'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2221
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ac3f9116366920f833fe8d907181473d6fda106
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: aa768c4f14483ebfd144865f9a4d91283f9c6132
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551290"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835044"
 ---
-# <a name="ca2221-finalizers-should-be-protected"></a>CA2221: Debe proteger los finalizadores
+# <a name="ca2221-finalizers-should-be-protected"></a>CA2221: Los finalizadores deben estar protegidos
 
 |||
 |-|-|

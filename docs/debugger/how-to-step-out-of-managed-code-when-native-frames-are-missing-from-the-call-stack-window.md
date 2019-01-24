@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: salir de código administrado cuando los marcos nativos no aparecen en la ventana Pila de llamadas | Documentos de Microsoft'
-ms.custom: ''
+title: Fuera del C# cuando faltan marcos nativos en la pila de llamadas de código | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -24,26 +23,28 @@ manager: douge
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: e21d45cd65fc6bc6a66f2f7c698952f0cdd788b9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 2759df7cc59f4d0167e1ef44dfb9cc65d16ba815
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472947"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867441"
 ---
-# <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Cómo: Salir de código administrado cuando los marcos nativos no aparecen en la ventana Pila de llamadas
-Si el código tiene marcos nativos que no son visibles en el **pila de llamadas** ventana, salir de código administrado puede generar resultados inesperados. Como alternativa, puede usar un punto de interrupción en lugar de **paso a paso fuera**.  
-  
+# <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Procedimiento Salida del código administrado cuando los marcos nativos no aparecen en la ventana Pila de llamadas
+
+Si el código tiene marcos nativos que no se ven en la ventana **Pila de llamadas**, salir de código administrado puede generar resultados inesperados. Como solución, puede utilizar un punto de interrupción en lugar de **Paso a paso para salir**.
+
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
-  
-### <a name="to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-display"></a>Para salir de una llamada a código administrado cuando los marcos nativos no se muestran en la pila de llamadas  
-  
-1.  En el código nativo, establezca un punto de interrupción de ubicación después de la llamada al código administrado.  
-  
-2.  En el **depurar** menú, elija **continuar**.  
-  
-     Cuando se complete la llamada administrada, la ejecución se interrumpirá en el punto de interrupción del código nativo.  
-  
-## <a name="see-also"></a>Vea también  
- [Cómo: Usar la ventana Pila de llamadas](../debugger/how-to-use-the-call-stack-window.md)
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, vea [Restablecer la configuración](../ide/environment-settings.md#reset-settings).
+
+## <a name="step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-display"></a>Salga de una llamada a código administrado cuando los marcos nativos no se muestran en la pila de llamadas
+
+1.  En el código nativo, establezca un punto de interrupción de ubicación después de la llamada al código administrado.
+
+2.  En el menú **Depurar**, elija **Continuar**.
+
+     Cuando se complete la llamada administrada, la ejecución se interrumpirá en el punto de interrupción del código nativo.
+
+## <a name="see-also"></a>Vea también
+
+- [Cómo: usar la ventana Pila de llamadas](../debugger/how-to-use-the-call-stack-window.md)

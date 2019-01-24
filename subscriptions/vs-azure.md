@@ -3,18 +3,18 @@ title: Beneficio de Microsoft Azure | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 10/3/2017
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Vea cómo activar el beneficio de Azure que se incluye con la suscripción de Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a97dbd638c4840266f22c46610f78ec5b2d527d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cabfc5a539954a066847b5ed7f62bdddd81ba04c
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862351"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380128"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usar Microsoft Azure en suscripciones de Visual Studio
 
@@ -26,11 +26,9 @@ Como suscriptor de Visual Studio, puede usar Microsoft Azure sin cargo adicional
 
 |                 Programa/nivel de suscripción                 |           Prestación           |                         ¿Renovable?                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
-|              Visual Studio Enterprise estándar               |     Crédito mensual de 150 USD     |                             Sí                             |
-|               Visual Studio Enterprise anual                |     Crédito mensual de 150 USD     |                             Sí                             |
+|              Visual Studio Enterprise estándar               |     Crédito mensual de 150 USD     |                             Sí                             ||
 |               Visual Studio Enterprise mensual               |        No disponible        |                                                             |
-|             Visual Studio Professional estándar              |     Crédito mensual de 50 USD      |                             Sí                             |
-|              Visual Studio Professional anual               |     Crédito mensual de 50 USD      |                             Sí                             |
+|             Visual Studio Professional estándar              |     Crédito mensual de 50 USD      |                             Sí                            
 |              Visual Studio Professional mensual              |        No disponible        |                                                             |
 |                    Visual Studio Test Pro                    |     Crédito mensual de 50 USD      |                             Sí                             |
 |                        Plataformas de MSDN                        |     Crédito mensual de 100 USD     |                             Sí                             |
@@ -45,7 +43,12 @@ Como suscriptor de Visual Studio, puede usar Microsoft Azure sin cargo adicional
 |      Visual Studio Enterprise – MCT Software & Services      |     Crédito mensual de 100 USD     |                             Sí                             |
 | Visual Studio Enterprise – MCT Software & Services Developer |     Crédito mensual de 150 USD     |                             Sí                             |
 
-*Incluye No para reventa (NFR), Microsoft Valued Professional (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP)
+*Incluye No para reventa (NFR), Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP)
+
+
+> [!NOTE]
+> Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
+
 
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
 
@@ -74,7 +77,7 @@ Como suscriptor de Visual Studio, puede usar Microsoft Azure sin cargo adicional
 ## <a name="faq"></a>Preguntas más frecuentes
 
 ### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>P: ¿Cómo enviar un incidente de soporte técnico desde Azure Portal?
-R: El envío de un incidente de soporte técnico desde Azure Portal es un proceso de tres pasos.
+A:  El envío de un incidente de soporte técnico desde Azure Portal es un proceso de tres pasos.
 1. Active la ventaja de soporte técnico y obtenga su identificador de acceso del identificador de contrato.
 2. Vincule su contrato de soporte técnico a la suscripción de Azure.
 3. Envíe un incidente de soporte técnico.
@@ -83,7 +86,7 @@ Consulte la documentación de [Soporte técnico](vs-tech-support.md) para obtene
 
 ### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>P: He recibido un mensaje en que se indica que el acceso a Azure terminará pronto.  ¿Qué puedo hacer para seguir usando Azure?
 
-R: Recibe este correo electrónico porque utiliza la ventaja de Azure asociada a su suscripción de Visual Studio y dicha suscripción ha expirado o se ha quitado.  Para seguir usando Azure, tiene varias opciones:
+A:  Recibe este correo electrónico porque utiliza la ventaja de Azure asociada a su suscripción de Visual Studio y dicha suscripción ha expirado o se ha quitado.  Para seguir usando Azure, tiene varias opciones:
 
 **Acción recomendada:**
 

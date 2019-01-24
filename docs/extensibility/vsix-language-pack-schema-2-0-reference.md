@@ -1,9 +1,6 @@
 ---
 title: Referencia de esquema 2.0 del paquete de idioma VSIX | Microsoft Docs
-ms.custom: ''
 ms.date: 10/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language pack
@@ -16,12 +13,12 @@ author: dgriffen
 manager: douge
 ms.workload:
 - dagriffe
-ms.openlocfilehash: 94d785ce55b57e35b0880537e099cbc3e03d20ab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 73429f0ec41285dbab995a8a09411e5197bd0892
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855824"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889181"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>Referencia de esquema 2.0 del paquete de idioma VSIX
 
@@ -31,11 +28,11 @@ El esquema del paquete de idioma de VSIX proporciona información de instalació
 
 El elemento raíz del archivo de paquete de idioma es `<PackageLanguagePackManifest>`, con un atributo de `Version`, que es la versión del formato de paquete de idioma. En este artículo se describe la versión 2.0 del formato de paquete de idioma, que se especifica en el manifiesto estableciendo el `Version` en el valor `Version="2.0.0"`. El elemento raíz contiene exactamente un elemento secundario `<Metadata>` elemento.
 
-### <a name="packagelangaugepackmanifest-element"></a>Elemento PackageLangaugePackManifest
+### <a name="packagelanguagepackmanifest-element"></a>Elemento PackageLanguagePackManifest
 
 Dentro de la `<PackageLanguagePackManifest>` elemento debe existir el elemento siguiente:
 
-|Title|Descripción|
+|Título|Descripción|
 |-----------|-----------------|
 |`<Metadata>`| El elemento contenedor para todos los metadatos de paquete localizado
 
@@ -43,7 +40,7 @@ Dentro de la `<PackageLanguagePackManifest>` elemento debe existir el elemento s
 
 Dentro de la `<Metadata>` elemento puede tener los siguientes elementos:
 
-|Title|Descripción|
+|Título|Descripción|
 |-----------|-----------------|
 |`<DisplayName>`|El nombre localizado de la extensión que se instalará|
 |`<Description>`|La descripción adaptada de la extensión que se instalará|
@@ -70,7 +67,7 @@ Dentro de la `<Metadata>` elemento puede tener los siguientes elementos:
 
 ## <a name="see-also"></a>Vea también
 
-|Title|Descripción|
+|Título|Descripción|
 |-----------|-----------------|
 |[Adaptación de paquetes VSIX](../extensibility/localizing-vsix-packages.md)|Muestra cómo proporcionar soporte de instalación localizada para un paquete VSIX.|
 |[Referencia de esquema 2.0 de extensión VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)|Un manifiesto VSIX describe el contenido de un *.vsix* archivo de implementación. El archivo de implementación le permite instalar una extensión de Visual Studio mediante el **extensiones y actualizaciones** cuadro de diálogo.|

@@ -1,5 +1,5 @@
 ---
-title: Adición de un origen de datos a una prueba de rendimiento web en Visual Studio
+title: Agregar un origen de datos a una prueba de rendimiento web
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,27 +10,28 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 49e1b465bbc964e962942304d5f8b63f8c5480b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 52a6289d6b17528d31d66e26df2f15b85749aac3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930718"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823547"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Agregar un origen de datos a una prueba de rendimiento web
 
 Utilice el enlace datos para proporcionar valores diferentes a la misma prueba; por ejemplo, para proporcionar valores diferentes a los parámetros de envío de formulario.
 
- ![Enlazar datos a una prueba de rendimiento web](../test/media/web_test_databinding_conceptual.png)
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Vamos a utilizar una aplicación ASP.NET de ejemplo. Tiene tres páginas *.aspx*: la página predeterminada, la página Red y la página Blue. La página predeterminada tiene un control de radio para elegir entre rojo y azul y un botón de envío. Las otras dos páginas *.aspx* son muy simples. Una tiene una etiqueta denominada Red y la otra tiene una etiqueta denominada Blue. Cuando elige Submit en la página predeterminada, se muestra una de las otras páginas. Puede descargar el ejemplo [ColorWebApp](http://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) o sencillamente seguir con su propia aplicación web.
+![Enlazar datos a una prueba de rendimiento web](../test/media/web_test_databinding_conceptual.png)
 
- ![Ejecutar la aplicación web que se va a probar](../test/media/web_test_databinding_runwebapp.png)
+Vamos a utilizar una aplicación ASP.NET de ejemplo. Tiene tres páginas *.aspx*: la página predeterminada, la página Red y la página Blue. La página predeterminada tiene un control de radio para elegir entre rojo y azul y un botón de envío. Las otras dos páginas *.aspx* son muy simples. Una tiene una etiqueta denominada Red y la otra tiene una etiqueta denominada Blue. Cuando elige Submit en la página predeterminada, se muestra una de las otras páginas. Puede descargar el ejemplo [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) o sencillamente seguir con su propia aplicación web.
 
- La solución también debe incluir una prueba de rendimiento web que examine las páginas de la aplicación web.
+![Ejecutar la aplicación web que se va a probar](../test/media/web_test_databinding_runwebapp.png)
 
- ![Solución con prueba de rendimiento web](../test/media/web_test_databinding_solution.png)
+La solución también debe incluir una prueba de rendimiento web que examine las páginas de la aplicación web.
+
+![Solución con prueba de rendimiento web](../test/media/web_test_databinding_solution.png)
 
 ## <a name="create-a-sql-database"></a>Crear una base de datos SQL
 
@@ -138,9 +139,9 @@ Utilice el enlace datos para proporcionar valores diferentes a la misma prueba; 
 
 - Oracle 7.3, 8i, 9i o 10g.
 
-### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>P: ¿Puedo usar un archivo de texto de valores separados por comas (CSV) como origen de datos?
+### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>P: ¿Cómo se usa un archivo de texto de valores separados por comas (CSV) como origen de datos?
 
-**R:** Aquí se explica cómo:
+**R:** Esta es la manera de hacerlo:
 
 1. Cree una carpeta para organizar los artefactos de base de datos de los proyectos y agregar un elemento.
 
@@ -213,7 +214,7 @@ Utilice el enlace datos para proporcionar valores diferentes a la misma prueba; 
 
      ![Origen de datos agregado a la prueba](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
-### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>P: ¿Cómo utilizo un archivo XML como origen de datos?
+### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>P: ¿Cómo puedo usar un archivo XML como origen de datos?
 
 **R:** Sí.
 
@@ -245,7 +246,7 @@ Utilice el enlace datos para proporcionar valores diferentes a la misma prueba; 
 
      ![Especificar un nombre y elegir el archivo XML](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
-### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>P: ¿Se puede agregar un enlace de datos a una solicitud de servicio Web que use SOAP?
+### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>P: ¿Se puede agregar un enlace de datos a una solicitud de servicio web que use SOAP?
 
 **R:** Sí, debe cambiar manualmente el código XML de SOAP.
 

@@ -3,7 +3,6 @@ title: Código de ejemplo para crear pruebas unitarias
 description: En este artículo se proporciona código de ejemplo que se puede probar con pruebas unitarias en Visual Studio.
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: sample
 helpviewer_keywords:
 - unit test sample [Visual Studio]
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93335be347e9c2ae66045bc49f9609d6cb3a929d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: b98e8fc926917d4da8bc805110f464ead24d405c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379779"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898952"
 ---
 # <a name="sample-code-for-testing"></a>Código de ejemplo para pruebas
 
@@ -27,7 +26,7 @@ Este código de ejemplo contiene una clase, *BankAccount*, con diversos métodos
 El código se usa en los siguientes tutoriales:
 
 - [Crear y ejecutar pruebas unitarias en código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Este tutorial le guía por los pasos necesarios para crear y personalizar pruebas unitarias, ejecutarlas y examinar los resultados.
-- [Usar la utilidad de prueba de la línea de comandos](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). En este tutorial, use la utilidad de línea de comandos *MSTest.exe* para ejecutar pruebas y ver los resultados.
+- [Usar la utilidad de prueba de la línea de comandos](https://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). En este tutorial, use la utilidad de línea de comandos *MSTest.exe* para ejecutar pruebas y ver los resultados.
 
 ## <a name="sample-code"></a>Código de ejemplo
 
@@ -135,4 +134,4 @@ Para trabajar con este código, primero cree un proyecto para él en Visual Stud
 ## <a name="see-also"></a>Vea también
 
 - [Tutorial: Crear y ejecutar pruebas unitarias en código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
-- [Tutorial: Usar la utilidad de prueba de la línea de comandos](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)
+- [Tutorial: Usar la utilidad de prueba de la línea de comandos](https://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)

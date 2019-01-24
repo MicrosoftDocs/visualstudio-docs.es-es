@@ -2,7 +2,6 @@
 title: Establecer el proceso actual
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Debug.SetCurrentProcess command
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64561db59cc089d9539ab396cf4e869e92fe1117
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 0c01c399dc76d1b328443edef27edd9a921b1b9c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33705091"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855288"
 ---
 # <a name="set-current-process"></a>Establecer el proceso actual
 Establece el proceso especificado como el proceso activo en el depurador.
@@ -47,4 +46,4 @@ Debug.SetCurrentProcess index
 
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)
-- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

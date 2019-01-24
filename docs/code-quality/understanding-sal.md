@@ -2,7 +2,6 @@
 title: Introducción a SAL
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 author: mikeblome
@@ -10,12 +9,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: a219590c20e2ec2bb77cc3ffa59bb6249cc52dfc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56d416ce154f071804beb9b47d2623f2acee15af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917555"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889925"
 ---
 # <a name="understanding-sal"></a>Introducción a SAL
 
@@ -43,7 +42,7 @@ void * memcpy(
 ¿Se puede saber lo que hace esta función? Cuando se implementa o se llama a una función, se deben mantener ciertas propiedades para garantizar la corrección del programa. Si se examina una declaración como la mostrada en el ejemplo, no sabe qué son. Sin anotaciones de SAL, tendría que depender de documentación o los comentarios de código. Aquí es lo que la documentación de MSDN para `memcpy` dice:
 
 > "Bytes de src en el destino del recuento de copias. Si el origen y destino se superponen, el comportamiento de memcpy es indefinido. Use memmove para controlar las áreas superpuestas.
-> **Nota de seguridad:** Asegúrese de que el búfer de destino es el mismo tamaño o mayor que el búfer de origen. Para obtener más información, consulte evitar saturaciones del búfer."
+> **Nota sobre la seguridad:** Asegúrese de que el búfer de destino sea del mismo tamaño o mayor que el búfer de origen. Para obtener más información, consulte evitar saturaciones del búfer."
 
 La documentación contiene un par de bits de información que sugieren que el código tiene que mantener ciertas propiedades para garantizar la exactitud del programa:
 

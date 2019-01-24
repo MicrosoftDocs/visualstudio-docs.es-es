@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: c28dcf247a9e0faaec13ddc4b3006cf6a93fda90
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 2c040d0375a8ecb2872e148331166ecae45040cf
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496147"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154055"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Desarrollo móvil multiplataforma en Visual Studio
 
@@ -36,7 +36,7 @@ Con Visual Studio Tools para Xamarin, puede tener como destino Android, iOS y Wi
 |[Instalar Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[Obtener información acerca de Xamarin en Visual Studio](https://visualstudio.microsoft.com/xamarin/) (VisualStudio.com)|
 |[Documentación de desarrollo de aplicaciones móviles de Xamarin](/xamarin/) |
-|[DevOps con aplicaciones de Xamarin](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) |
+|[DevOps con aplicaciones de Xamarin](/xamarin/tools/ci/devops/) |
 |[Obtener información acerca de las aplicaciones de Windows universales en Visual Studio](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[Obtener información acerca de las similitudes entre Swift y C#](http://aka.ms/scposter) (download.microsoft.com)|
 
@@ -54,7 +54,7 @@ Con Visual Studio Tools para Xamarin, puede tener como destino Android, iOS y Wi
 
 #### <a name="design-one-set-of-pages-that-render-across-all-devices-by-using-xamarinforms"></a>Diseñar un conjunto de páginas que se representan en todos los dispositivos mediante Xamarin.Forms
 
- Según la complejidad del diseño de las aplicaciones, puede considerar la posibilidad de compilarlas usando plantillas *Xamarin.Forms* en el grupo **Aplicaciones móviles** de plantillas de proyecto. Xamarin.Forms es un kit de herramientas de interfaz de usuario que permite crear una única interfaz de usuario que puede compartir entre Android, iOS y Windows.  Al compilar una solución Xamarin.Forms, obtendrá una aplicación Android, una aplicación iOS y una aplicación Windows. Para obtener más detalles, vea [Más información sobre el desarrollo móvil con Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md) y la [Documentación de Xamarin.Forms](/xamarin/xamarin-forms/).
+ Según la complejidad del diseño de las aplicaciones, puede considerar la posibilidad de compilarlas usando plantillas *Xamarin.Forms* en el grupo **Aplicaciones móviles** de plantillas de proyecto. Xamarin.Forms es un kit de herramientas de interfaz de usuario que permite crear una única interfaz de usuario que puede compartir entre Android, iOS y Windows.  Al compilar una solución Xamarin.Forms, obtendrá una aplicación Android, una aplicación iOS y una aplicación Windows. Para obtener más detalles, vea [Más información sobre el desarrollo móvil con Xamarin](/xamarin/cross-platform/get-started/introduction-to-mobile-development/) y la [Documentación de Xamarin.Forms](/xamarin/xamarin-forms/).
 
 ####  <a name="ShareHTML"></a> Compartir código entre aplicaciones de Android, iOS y Windows
 
@@ -123,7 +123,7 @@ Con Visual Studio Tools para Xamarin, puede tener como destino Android, iOS y Wi
 
  Cuando esté listo para ejecutar la aplicación y ver su aspecto, use Android Emulator. Es rápido, fiable y fácil de instalar y configurar.
 
- También puede compilar una aplicación que tenga como destino la gran variedad de dispositivos Windows 10 mediante C++ y una plantilla de proyecto de aplicación para Plataforma universal de Windows (UWP). Obtenga más información sobre este punto en la sección [Tener como destino dispositivos Windows 10](#WindowsHTML), anteriormente en este tema.
+ También puede compilar una aplicación que tenga como destino todos los dispositivos con Windows 10 mediante C++ y una plantilla de proyecto de aplicación para Plataforma universal de Windows (UWP). Obtenga más información sobre este punto en la sección [Tener como destino dispositivos Windows 10](#WindowsHTML), anteriormente en este tema.
 
  Puede compartir código de C++ entre Android y Windows mediante la creación de una biblioteca compartida estática o dinámica.
 
@@ -139,7 +139,7 @@ Con Visual Studio Tools para Xamarin, puede tener como destino Android, iOS y Wi
 |[Instalar Visual C++ para obtener herramientas de desarrollo móvil multiplataforma.](https://msdn.microsoft.com/library/dn707591.aspx) (MSDN Library)|
 |[Obtener información acerca de cómo usar C++ para múltiples plataformas de destino.](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[Instalar lo necesario y crear una aplicación de actividad nativa para Android](https://msdn.microsoft.com/library/dn707595.aspx) (MSDN Library)|
-|[Más información sobre cómo compartir código de C++ con aplicaciones Android y Windows](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
+|[Obtener información acerca de cómo compartir código de C++ con aplicaciones Android y Windows](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[Ejemplos de desarrollo móvil multiplataforma para C++](https://msdn.microsoft.com/library/dn707596.aspx) (MSDN Library)|
 |[Ejemplos adicionales de desarrollo móvil multiplataforma para C++](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B) (code.msdn)|
 

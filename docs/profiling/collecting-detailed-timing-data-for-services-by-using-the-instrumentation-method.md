@@ -1,8 +1,6 @@
 ---
 title: Recopilación de datos detallados de tiempo para servicios mediante el método de instrumentación desde la línea de comandos del generador de perfiles | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c0dd9fef26538ef6f7208fc32ea00591eb5c608
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 693bd44fe9945d5f86ea405fbc8c2ccbd3e15560
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335832"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946349"
 ---
 # <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Recopilación de datos detallados de tiempo para servicios mediante el método de instrumentación desde la línea de comandos del generador de perfiles
 En esta sección, se describen los procedimientos y las opciones para recopilar datos de rendimiento detallados para servicios de Windows mediante el método de instrumentación desde la línea de comandos.  
@@ -38,7 +36,7 @@ En esta sección, se describen los procedimientos y las opciones para recopilar 
 |**Generar perfiles de recolección de elementos no utilizados y de asignación de memoria de .NET**|-   [Recopilación de datos de memoria de .NET](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|  
 |**Generar perfiles de actividad de subprocesos y contención de recursos**|-   [Recopilación de datos de simultaneidad](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|  
   
-### <a name="profile-by-using-the-instrumentation-method"></a>Generación de perfiles mediante el método de instrumentación.  
+### <a name="profile-by-using-the-instrumentation-method"></a>Generación de perfiles mediante el método de instrumentación  
   
 |Tarea|Contenido relacionado|  
 |----------|---------------------|  
@@ -47,4 +45,3 @@ En esta sección, se describen los procedimientos y las opciones para recopilar 
   
 ### <a name="analyze-instrumentation-data-views-and-reports"></a>Análisis de vistas e informes de datos de instrumentación  
  [Vistas de datos del método de instrumentación](../profiling/instrumentation-method-data-views.md)
-

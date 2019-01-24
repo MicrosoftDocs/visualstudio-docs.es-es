@@ -1,8 +1,7 @@
 ---
-title: Configuración de proyectos para una configuración de depuración de Visual Basic | Microsoft Docs
-ms.custom: ''
+title: Configuración de depuración de la configuración del proyecto de VB | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vbProjectPropertiesDebug
@@ -24,15 +23,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25fc12f08e9519a68dd68d98b16099729a2d233b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 200d09c77c7ff4c22ed51b4cc93ec724d30dd17b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938258"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878502"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Configuración del proyecto para una configuración de depuración de Visual Basic
-Puede cambiar la configuración del proyecto para una [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] configuración de depuración en el **páginas de propiedades** ventana, como se describe en [configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md). En las tablas siguientes se muestran dónde encontrar valores relacionados con el depurador en el **páginas de propiedades** ventana.  
+Es posible cambiar la configuración del proyecto para una configuración de depuración de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] en la ventana **Páginas de propiedades**, como se describe en [Configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md). En las siguientes tablas se muestra dónde encontrar valores relacionados con el depurador en la ventana **Páginas de propiedades**.  
   
 > [!WARNING]
 >  Este tema no se aplica a las aplicaciones de UWP. Consulte [iniciar una sesión de depuración (VB, C#, C++ y XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
@@ -41,11 +40,11 @@ Puede cambiar la configuración del proyecto para una [!INCLUDE[vbprvb](../code-
   
 | Parámetro | Descripción |
 |------------------------------| - |
-| **Configuración** | Establece el modo para compilar la aplicación. Elija entre **activo (depurar)**, **depurar**, **versión**, **todas las configuraciones de**. |
-| **Acción de inicio** | Este grupo de controles especifica la acción que se produce cuando se elige Inicio en el menú Depurar.<br /><br /> -   **Iniciar proyecto** es el valor predeterminado y lanza el proyecto de inicio para la depuración. <br />-   **Iniciar programa externo** le permite iniciar y asociar a un programa que no es parte de un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proyecto. Para obtener más información, consulte [adjuntar a procesos en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).<br />-   **Iniciar explorador con la dirección URL** le permite depurar una aplicación Web. |
-| **Argumentos de línea de comandos** | Especifica los argumentos de la línea de comandos para el programa que se va a depurar. El nombre de comando es el nombre del programa especificado en Programa externo de inicio. Si Acción de inicio se establece en Dirección URL de inicio, se omiten los argumentos de la línea de comandos. |
+| **Configuración** | Establece el modo para compilar la aplicación. Puede elegir entre **Activo (Depurar)**, **Depurar**, **Liberar** y **Todas las configuraciones**. |
+| **Acción de inicio** | Este grupo de controles especifica la acción que se produce cuando se elige Inicio en el menú Depurar.<br /><br /> -   **Proyecto de inicio** es el valor predeterminado y lanza el proyecto de inicio para la depuración. <br />-   **Programa externo de inicio** permite iniciar y asociar un programa que no forma parte de un proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Para obtener más información, consulte [adjuntar a procesos en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).<br />-   **Iniciar explorador en la dirección URL** permite depurar una aplicación web. |
+| **Argumentos de la línea de comandos** | Especifica los argumentos de la línea de comandos para el programa que se va a depurar. El nombre de comando es el nombre del programa especificado en Programa externo de inicio. Si Acción de inicio se establece en Dirección URL de inicio, se omiten los argumentos de la línea de comandos. |
 | **Directorio de trabajo** | Especifica el directorio de trabajo del programa que se depura. En [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], el directorio de trabajo es el directorio desde el que se inicia la aplicación. El directorio de trabajo predeterminado es \bin\Debug o \bin\Release, dependiendo de la configuración actual. |
-| **Usar equipo remoto** | Cuando esta casilla está activada, se habilita la depuración remota. En el cuadro de texto, puede escribir el nombre de un equipo remoto donde se ejecutará la aplicación con fines de depuración o un [nombre de servidor Msvsmon](../debugger/remote-debugging.md). La ubicación del archivo EXE en el equipo remoto se especifica mediante la propiedad Ruta de acceso de los resultados, en la pestaña Compilar. La ubicación debe ser un directorio que se pueda compartir en el equipo remoto. |
+| **Usar máquina remota** | Cuando esta casilla está activada, se habilita la depuración remota. En el cuadro de texto escriba el nombre del equipo remoto en el que se ejecutará la aplicación para depurarla o un [Nombre de servidor Msvsmon](../debugger/remote-debugging.md). La ubicación del archivo EXE en el equipo remoto se especifica mediante la propiedad Ruta de acceso de los resultados, en la pestaña Compilar. La ubicación debe ser un directorio que se pueda compartir en el equipo remoto. |
 | **Depuración de código no administrado** | Permite depurar llamadas a código nativo Win32 (no administrado) desde una aplicación administrada. Esto tiene el mismo efecto que seleccionar Mixto para Tipo de depurador en un proyecto de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. |
 | **Depuración de SQL Server** | Permite depurar objetos de la base de datos de SQL Server. |
   
@@ -54,9 +53,9 @@ Puede cambiar la configuración del proyecto para una [!INCLUDE[vbprvb](../code-
 | Parámetro | Descripción |
 |---------------------------| - |
 | **Habilitar optimizaciones** | Se debe desactivar esta opción. La optimización hace que el código ejecutado sea diferente del código fuente que se ve en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], lo cual dificulta la depuración. Si se optimiza el código, los símbolos no se cargan de manera predeterminada al depurar con Sólo mi código. |
-| **Generar información de depuración** | Esta opción de configuración (equivalente a la opción /debug compiler), que está definida de manera predeterminada en las versiones de lanzamiento y de depuración, crea información de depuración en tiempo de generación. El depurador utiliza esta información para mostrar nombres de variables y otra información en formato útil durante la depuración. Si compila el programa sin esta información, la funcionalidad del depurador será limitada. Para obtener más información, consulte [/debug](/dotnet/visual-basic/reference/command-line-compiler/debug). |
-| **Definir constante DEBUG** | Definición de este símbolo permite la compilación condicional de las funciones de salida desde el [Debug (clase)](/dotnet/api/system.diagnostics.debug). Con la definición de este símbolo, los métodos de clase Debug generan resultados en la [ventana de salida](../ide/reference/output-window.md). Sin este símbolo, los métodos de la clase Debug no se compilan y no se generan resultados. Este símbolo debe definirse en la versión de depuración, no en la versión de lanzamiento. La definición de este símbolo en una versión de lanzamiento crea código innecesario que ralentiza la ejecución del programa. |
-| **Definir constante TRACE** | Definición de este símbolo permite la compilación condicional de las funciones de salida desde el [Trace (clase)](/dotnet/api/system.diagnostics.trace). Con la definición de este símbolo, los métodos de la clase Trace generan resultados en la [ventana de salida](../ide/reference/output-window.md). Sin este símbolo, los métodos de la clase Trace no se compilan y no se generan resultados de seguimiento. Este símbolo se define de manera predeterminada para las versiones de lanzamiento y de depuración. |
+| **Generar información de depuración** | Esta opción de configuración (equivalente a la opción /debug compiler), que está definida de manera predeterminada en las versiones de lanzamiento y de depuración, crea información de depuración en tiempo de generación. El depurador utiliza esta información para mostrar nombres de variables y otra información en formato útil durante la depuración. Si compila el programa sin esta información, la funcionalidad del depurador será limitada. Para obtener más información, vea [/debug](/dotnet/visual-basic/reference/command-line-compiler/debug). |
+| **Definir constante DEBUG** | La definición de este símbolo permite la compilación condicional de las funciones de resultados de la [clase Debug](/dotnet/api/system.diagnostics.debug). Con la definición de este símbolo, los métodos de la clase Debug generan resultados en la [Ventana de resultados](../ide/reference/output-window.md). Sin este símbolo, los métodos de la clase Debug no se compilan y no se generan resultados. Este símbolo debe definirse en la versión de depuración, no en la versión de lanzamiento. La definición de este símbolo en una versión de lanzamiento crea código innecesario que ralentiza la ejecución del programa. |
+| **Definir constante TRACE** | La definición de este símbolo permite la compilación condicional de las funciones de resultados de la [clase Trace](/dotnet/api/system.diagnostics.trace). Con la definición de este símbolo, los métodos de la clase Trace generan resultados en [Ventana de resultados](../ide/reference/output-window.md). Sin este símbolo, los métodos de la clase Trace no se compilan y no se generan resultados de seguimiento. Este símbolo se define de manera predeterminada para las versiones de lanzamiento y de depuración. |
   
 ## <a name="see-also"></a>Vea también  
  [Configuración y preparación de la depuración](../debugger/debugger-settings-and-preparation.md)

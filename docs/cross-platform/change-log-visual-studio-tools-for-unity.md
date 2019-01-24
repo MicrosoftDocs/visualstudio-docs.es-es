@@ -1,37 +1,73 @@
 ---
 title: Registro de cambios (Visual Studio Tools para Unity, Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 08/06/2018
+ms.date: 11/28/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
-author: TerryGLee
-ms.author: tglee
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: cd23bbf09e79ac4f7763a563e361954d9cfde072
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: a7cd8da81fef0d3b4af8e61be979c8bea904072f
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120684"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803745"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Registro de cambios (Visual Studio Tools para Unity, Windows)
 Registro de cambios de Visual Studio Tools para Unity.
 
-## <a name="3807"></a>3.8.0.7
- Publicado el 20 de septiembre de 2018
- 
+## <a name="3903"></a>3.9.0.3
+ Publicado el 28 de noviembre de 2018
+
+### <a name="bug-fixes"></a>Correcciones de errores
+
+-   **Integración:**
+
+    -   Se han corregido problemas de IntelliSense y de recarga de proyectos al agregar o quitar scripts localizados en el primer proyecto.
+
+## <a name="3902"></a>3.9.0.2
+ Publicado el 19 de noviembre de 2018
+
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 -   **Depurador:**
 
     -   Se ha corregido un interbloqueo en la biblioteca usada para comunicarse con el motor de depuración de Unity, que hacía que Visual Studio o Unity se congelara, especialmente al ejecutar 'Asociar a Unity' o reiniciar el juego.
 
+## <a name="3901"></a>3.9.0.1
+ Publicado el 15 de noviembre de 2018
+
+### <a name="bug-fixes"></a>Correcciones de errores
+
+-   **Integración:**
+
+    -   Se ha corregido la activación de los complementos de Unity cuando se seleccionaba otro editor predeterminado.
+
+## <a name="3900"></a>3.9.0.0
+ Publicado el 13 de noviembre de 2018
+
+### <a name="bug-fixes"></a>Correcciones de errores
+
+-   **Generación de proyectos:**
+
+    -   Se revirtió la solución a un error de rendimiento de Unity que se ha corregido en Unity.
+
+## <a name="3807"></a>3.8.0.7
+ Publicado el 20 de septiembre de 2018
+
+### <a name="bug-fixes"></a>Correcciones de errores
+
+-   **Depurador:**
+
+    -   (Trasladado de la versión 3.9.0.2) Se ha corregido un interbloqueo en la biblioteca usada para comunicarse con el motor de depuración de Unity, que hacía que Visual Studio o Unity se congelara, especialmente al ejecutar "Asociar a Unity" o reiniciar el juego.
+
 ## <a name="3806"></a>3.8.0.6
  Publicado el 27 de agosto de 2018
- 
+
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 -   **Integración:**
@@ -40,7 +76,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ## <a name="3805"></a>3.8.0.5
  Publicado el 20 de agosto de 2018
- 
+
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 -   **Integración:**
@@ -49,13 +85,13 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ## <a name="3804"></a>3.8.0.4
  Publicado el 14 de agosto de 2018
- 
+
 ### <a name="new-features"></a>Características nuevas
 
 -   **Evaluación:**
 
     -   Se agregó compatibilidad para los valores de puntero.
-    
+
     -   Se agregó compatibilidad para métodos genéricos.
 
 ### <a name="bug-fixes"></a>Correcciones de errores
@@ -66,33 +102,33 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ## <a name="3803"></a>3.8.0.3
  Publicado el 24 de julio de 2018
- 
+
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 -   **Generación de proyectos:**
 
-    -   Se revirtió la solución a un error de rendimiento de Unity que se ha corregido en Unity.
+    -   (Trasladado de la versión 3.9.0.0) Se ha revertido la solución alternativa para un error de rendimiento de Unity que se había corregido en Unity.
 
 ## <a name="3802"></a>3.8.0.2
  Publicado el 7 de julio de 2018
- 
+
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 -   **Generación de proyectos:**
 
     -   Solución alternativa temporal de un error de rendimiento de Unity: MonoIslands en caché al generar proyectos.
-    
+
 ## <a name="3801"></a>3.8.0.1
  Publicado el 26 de junio de 2018
- 
+
 ### <a name="new-features"></a>Características nuevas
 
 -   **Debugging:** (Depuración)
 
     -   Se agregó compatibilidad para los comandos UserLog y UserBreak.
-    
+
     -   Se agregó compatibilidad con la carga de tipo Lazy (optimizando la carga de red y la latencia de respuesta del depurador).
-       
+
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 -   **Evaluación:**
@@ -101,19 +137,19 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ## <a name="3800"></a>3.8.0.0
  Publicado el 30 de mayo de 2018
- 
+
 ### <a name="new-features"></a>Características nuevas
 
 -   **Debugging:** (Depuración)
 
     -   Se agregó compatibilidad para mostrar variables en construcciones asincrónicas.
-    
+
     -   Se agregó compatibilidad para el procesamiento de tipos anidados al establecer puntos de interrupción, para evitar advertencias de construcciones del compilador.
-    
+
 -   **Integración:**
 
     -   Se agregó compatibilidad para las gramáticas de textmate para sombreadores (la carga de trabajo de C++ ya no es necesaria para el coloreado de código del sombreador).
-    
+
 ### <a name="bug-fixes"></a>Correcciones de errores
 
 -   **Generación de proyectos:**
@@ -137,15 +173,15 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   **Debugging:** (Depuración)
 
     -   Se ha agregado compatibilidad con la depuración orquestada (depuración de varios reproductores/editor en la misma sesión de Visual Studio).
-    
+
     -   Se ha agregado compatibilidad con la depuración del reproductor USB de Android.
-    
+
     -   Se ha agregado compatibilidad con la depuración del reproductor UWP/IL2CPP.
 
 -   **Evaluación:**
 
     -   Se ha agregado compatibilidad con especificadores hexadecimales.
-    
+
     -   Se ha mejorado la experiencia de evaluación de la ventana Inspección.
 
 ### <a name="bug-fixes"></a>Correcciones de errores
@@ -634,7 +670,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 -   Referencias fijas a ensamblados UnityEngine y UnityEditor para las aplicaciones de la Tienda Windows.
 
--   Error fijo al entrar en el depurador: No se puede administrar, excepción general.
+-   Se ha corregido el error al entrar en el depurador: No se puede administrar, excepción general.
 
 -   Puntos de interrupción de recuento de visitas fijas en Visual Studio 2015.
 
@@ -714,13 +750,13 @@ Registro de cambios de Visual Studio Tools para Unity.
 
     -   Instala el paquete de Visual Studio Tools para Unity para Unity 5.
 
--   **Documentación:** mejora el rendimiento de la generación de documentación.
+-   **Documentación:** Se mejora el rendimiento de la generación de documentación.
 
--   **Asistentes:** compatibilidad con nuevos métodos de MonoBehavior Unity 4.6 y 5.
+-   **Asistentes:** Compatibilidad con nuevos métodos de MonoBehavior para Unity 4.6 y 5.
 
--   **Unity:** busca indicadores no seguros y personaliza definiciones en archivos .rsp durante la generación de archivos de proyecto.
+-   **Unity:** Indicadores no seguros de búsqueda y definiciones personalizadas en archivos .rsp durante la generación de archivos de proyecto.
 
--   **UI:** diálogo **Opciones** de Visual Studio Tools para Unity agregado en Visual Studio.
+-   **IU:** Se ha agregado Visual Studio Tools para Unity al cuadro de diálogo **Opciones** de Visual Studio.
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
@@ -754,13 +790,13 @@ Registro de cambios de Visual Studio Tools para Unity.
 
     -   Se envían registros de la consola de Unity a la lista de errores de VS.
 
--   **Documentación:** se ha corregido la generación de documentación para la nueva documentación de Unity.
+-   **Documentación:** Se ha corregido la generación de documentación para la nueva documentación de Unity.
 
--   **Proyecto:** se mueven y se cambia el nombre de los archivos .meta de Unity cuando es necesario, incluso en las carpetas.
+-   **Proyecto:** Se mueve y se cambia el nombre de los archivos .meta de Unity cuando es necesario, incluso en las carpetas.
 
--   **Asistentes:** se ha corregido el orden de los parámetros de métodos MonoBehavior al generar código.
+-   **Asistentes:** Se ha corregido el orden de los parámetros de métodos MonoBehavior al generar código.
 
--   **UI:** compatible con temas de Visual Studio para iconos y menú contextual.
+-   **IU:** Compatibilidad con temas de Visual Studio para iconos y menú contextual.
 
 ## <a name="1980---20-preview"></a>1.9.8.0 - 2.0 (versión preliminar)
  Publicado el 12 de noviembre de 2014
@@ -841,9 +877,9 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 
--   Se ha corregido el procesamiento de temas de Visual Studio. Anteriormente, los cuadros de diálogo en temas negros podían aparecer vacíos (problemas de conexión [#932637](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/932637/) y [#936439](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/936439/)).
+-   Se ha corregido el procesamiento de temas de Visual Studio. Anteriormente, los cuadros de diálogo en temas negros podían aparecer vacíos.
 
--   Corrección de bloqueo de Unity al conectar el depurador durante la recompilación de Unity (problemas de conexión [#947119](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/947119/) y [#969211](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/969211/)).
+-   Se ha corregido la congelación de Unity al conectar el depurador durante la recompilación de Unity.
 
 -   Se han corregido los puntos de interrupción al depurar editores o reproductores remotos compilados en otro sistema.
 
@@ -853,7 +889,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 -   Se ha corregido el procesamiento de ámbito de variable en el depurador para evitar variables activas que aparecen fuera del ámbito.
 
--   Se ha corregido la búsqueda de miembros estáticos en la evaluación de expresiones del depurador (problema de conexión [#953379](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/953379/)).
+-   Se ha corregido la búsqueda de miembros estáticos en la evaluación de expresiones del depurador.
 
 -   Se ha corregido la visualización de tipos en la Evaluación de expresiones del depurador para mostrar las propiedades y los campos estáticos.
 
@@ -1105,21 +1141,21 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 -   Se ha corregido el UVS-48: escribir dobles comillas a veces produce un error e interrumpe todas las funciones (finalización de código, resaltado de sintaxis, etc.).
 
--   Se corrigió el error UVS-46: archivo de script abierto duplicado (UnityScript) al hacer clic en la Lista de errores de Visual Studio.
+-   Se ha corregido el error UVS-46: Archivo de script abierto duplicado (UnityScript) al hacer clic en la Lista de errores de Visual Studio.
 
--   Se corrigió el error UVS-42: el logotipo de conectividad de Unity de la barra de estado no procesa eventos de mouse en VS 2012.
+-   Se ha corregido el error UVS-42: El logotipo de conectividad de Unity de la barra de estado no procesa eventos de mouse en VS 2012.
 
--   Se corrigió el error UVS-44: CTRL+MAYÚS+Q no está disponible en VS 2012 para MonoBehaviours rápidas.
+-   Se ha corregido el error UVS-44: CTRL+MAYÚS+Q no está disponible en VS 2012 para clases MonoBehaviour rápidas.
 
--   Se corrigió el error UVS-40: los elementos seleccionados en el Explorador de proyectos de Unity no se pueden leer si la ventana está inactiva en el tema "oscuro" de VS2012.
+-   Se ha corregido el error UVS-40: Los elementos seleccionados en el Explorador de proyectos de Unity no se pueden leer si la ventana está inactiva en el tema "oscuro" de VS2012.
 
--   Se corrigió el error UVS-39: problema al convertir cadenas de caracteres de escape en tokens.
+-   Se ha corregido el error UVS-39: Problema al convertir cadenas de caracteres de escape en tokens.
 
--   Se corrigió el error UVS-35: invocar ToString en objetos al inspeccionar variables.
+-   Se ha corregido el error UVS-35: Invocar ToString en objetos al inspeccionar variables.
 
--   Se corrigió el error UVS-27: incoherencia de la ventana Ir al símbolo con el tema "oscuro" en VS2012.
+-   Se ha corregido el error UVS-27: Incoherencia de la ventana Ir al símbolo con el tema "oscuro" en VS2012.
 
--   Se corrigió el error UVS-11: variables locales en las corrutinas.
+-   Se ha corregido el error UVS-11: Variables locales en las corrutinas.
 
 ## <a name="1100---beta-release"></a>1.1.0.0 (versión beta)
  Publicado el 9 de marzo de 2013
@@ -1225,9 +1261,9 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 -   Se ha corregido cómo se buscan los tipos en los ensamblados cargados para la evaluación de expresiones.
 
--   Se corrigió el error UVS-21: la evaluación de asignación en objetos de Unity no tiene ningún efecto.
+-   Se ha corregido el error UVS-21: La evaluación de asignación en objetos de Unity no tiene ningún efecto.
 
--   Se corrigió el error UVS-21: puntero no válido al evaluar una invocación de método a la API Math de Unity.
+-   Se ha corregido el error UVS-21: Puntero no válido al evaluar una invocación de método a la API Math de Unity.
 
 ## <a name="1080"></a>1.0.8.0
  Publicado el 26 de septiembre de 2012

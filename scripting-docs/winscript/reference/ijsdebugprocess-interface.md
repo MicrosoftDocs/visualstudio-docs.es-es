@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2a81104f51ca1a66c493779146b7eaa102ea300
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ecdec77a8bcb3c1fb8a1dc64c63b363b4f001fde
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728575"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086663"
 ---
 # <a name="ijsdebugprocess-interface"></a>IJsDebugProcess (Interfaz)
 Proporciona rutinas para inspeccionar y controlar el proceso de destino.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 IJsDebugProcess : public IUnknown;  
 ```  
   
@@ -32,7 +32,7 @@ IJsDebugProcess : public IUnknown;
   
 ### <a name="public-methods"></a>Métodos públicos  
   
-|Nombre|Descripción|  
+|Name|Descripción|  
 |----------|-----------------|  
 |[IJsDebugProcess::CreateBreakPoint (Método)](../../winscript/reference/ijsdebugprocess-createbreakpoint-method.md)|Establece el punto de interrupción en la posición del documento especificada.|  
 |[IJsDebugProcess::CreateStackWalker (Método)](../../winscript/reference/ijsdebugprocess-createstackwalker-method.md)|Método de generador para el rastreador de pila.|  

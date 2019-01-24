@@ -1,24 +1,21 @@
 ---
 title: GetAutoInsertExtensions (método)
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e3e0fda420682e4f33c0d22a3e9c8caa920895b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9716f6adcee1d443e342074f3c46a57a1ace26db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674881"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915895"
 ---
 # <a name="getautoinsertextensions-method"></a>GetAutoInsertExtensions (método)
   Obtiene información acerca de las aplicaciones de Office que se insertarán automáticamente durante la depuración.  
@@ -44,5 +41,3 @@ HRESULT GetAutoInsertExtensions(
   
 ## <a name="remarks"></a>Comentarios  
  Cada aplicación de Office va a insertar se devuelve como un nombre de extensión de aplicación de Office, que corresponde a un valor bajo **HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer**. El host debe buscar estos valores en el registro y, a continuación, insertar automáticamente las extensiones.  
-  
-  

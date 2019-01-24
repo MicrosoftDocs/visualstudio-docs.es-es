@@ -1,5 +1,5 @@
 ---
-title: Tiempos de reflexión para pruebas de carga en Visual Studio
+title: Tiempos de reflexión para pruebas de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,23 +11,24 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 8f8f90eb341112cd700d45b6b7c7d100cad2a024
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 0e1ef7811e96372952bf9b5c845b8fe5c2deb27a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175987"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927040"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Modificación de los tiempos de reflexión de usuario para simular los retrasos de la interacción humana en un sitio web en escenarios de pruebas de carga
 
 Los tiempos de reflexión de usuario se usan para simular el comportamiento humano que hace que las personas esperen entre interacciones con un sitio web. Los tiempos de reflexión de usuario aparecen entre solicitudes en una prueba de rendimiento web y entre iteraciones de prueba en un escenario de prueba de carga. El uso de tiempos de reflexión en una prueba de carga puede ser útil para crear simulaciones de carga más precisas. Puede cambiar la posibilidad de uso de tiempos de reflexión, o su aplicación en pruebas de carga. La opción de uso de tiempos de reflexión de usuario en las pruebas de carga se cambia en el **Editor de pruebas de carga**.
 
- El *perfil de reflexión* es un valor que se aplica a un escenario en una prueba de carga. Este valor determina si los tiempos de reflexión de usuario que se guardan en las pruebas de rendimiento web individuales se utilizan durante la prueba de carga. Si desea utilizar tiempos de reflexión de usuario en alguna prueba de rendimiento web pero no en otras, debe colocarlos en escenarios diferentes. Para más información sobre los escenarios, consulte [Edición de escenarios de prueba de carga](../test/edit-load-test-scenarios.md).
+El *perfil de reflexión* es un valor que se aplica a un escenario en una prueba de carga. Este valor determina si los tiempos de reflexión de usuario que se guardan en las pruebas de rendimiento web individuales se utilizan durante la prueba de carga. Si desea utilizar tiempos de reflexión de usuario en alguna prueba de rendimiento web pero no en otras, debe colocarlos en escenarios diferentes. Para más información sobre los escenarios, consulte [Edición de escenarios de prueba de carga](../test/edit-load-test-scenarios.md).
 
- Inicialmente, se establece si se van a utilizar tiempos de reflexión de usuario en las pruebas de carga cuando se crea la prueba de carga mediante el **Asistente para prueba de carga nueva**. Para más información, consulte [Edición de escenarios de prueba de carga](../test/edit-load-test-scenarios.md).
+Inicialmente, se establece si se van a utilizar tiempos de reflexión de usuario en las pruebas de carga cuando se crea la prueba de carga mediante el **Asistente para prueba de carga nueva**. Para más información, consulte [Edición de escenarios de prueba de carga](../test/edit-load-test-scenarios.md).
 
- Las opciones de **Perfil de reflexión de usuario** se describen en la lista siguiente:
+Las opciones de **Perfil de reflexión de usuario** se describen en la lista siguiente:
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 **Off**
 
@@ -58,4 +59,4 @@ Se utilizan los tiempos de reflexión, pero modificados según una curva normal.
 
 ## <a name="see-also"></a>Vea también
 
-- [Editar escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
+- [Modificar escenarios de prueba de carga](../test/edit-load-test-scenarios.md)

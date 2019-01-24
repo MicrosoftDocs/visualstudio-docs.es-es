@@ -1,9 +1,6 @@
 ---
 title: Actualizar y migrar soluciones de Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ea1db7f0ec9404b71bb9f7d71d83147e53ab2d17
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0f8a1ca1fa9c3d59b7fa95a12d08d5bb82ab422b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675194"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988370"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Actualizar y migrar soluciones de Office
   Si tiene un proyecto de Microsoft Office que se creó en una versión anterior de Visual Studio, deberá actualizarlo para usarlo en las versiones actuales de Visual Studio. Para ello, ábralo en una versión de Visual Studio que incluya las herramientas de desarrollo de Microsoft Office. Para obtener más información sobre las versiones de Visual Studio que incluyen Microsoft Office developer tools, consulte [configurar un equipo para desarrollar soluciones de Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
@@ -88,8 +85,6 @@ ms.locfileid: "35675194"
  Si desea usar ClickOnce para implementar el complemento de VSTO, puede eliminar completamente el proyecto de instalación o InstallShield Limited Edition. Para obtener más información sobre cómo implementar complementos mediante ClickOnce, vea [implementar una solución de Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: soluciones de actualización de Office](http://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)   
+ [Cómo: Actualizar soluciones de Office](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)   
  [Migrar soluciones de Office a .NET Framework 4 o posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [Cuadro de diálogo de opciones de actualización, de proyecto](../vsto/project-upgrade-options-dialog-box.md)  
-  
-  

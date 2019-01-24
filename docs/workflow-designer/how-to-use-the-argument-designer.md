@@ -1,9 +1,8 @@
 ---
-title: 'Diseñador de flujo de trabajo - Cómo: usar el Diseñador de argumentos'
+title: 'Diseñador de flujo de trabajo - Cómo: Usar el diseñador de argumentos'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.View.ArgumentDesigner.UI
 - System.Activities.Presentation.View.DesignTimeArgument.UI
@@ -13,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 868fc13474e90be219cf1acebc00074641df142e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: e73dcd167f6f267c7979f5c3ffb806b9f12d534a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755527"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891568"
 ---
-# <a name="how-to-use-the-argument-designer"></a>Utilizar el diseñador de argumentos
+# <a name="how-to-use-the-argument-designer"></a>Procedimiento Usar el diseñador de argumentos
 
 En comparación con versiones anteriores de .NET Framework, el Diseñador de argumentos facilita al permitir que los datos fluyen hacia dentro y fuera de una actividad. El diseñador se tiene acceso haciendo clic en el **argumentos** situado en la esquina inferior izquierda del lienzo de diseño. El diseñador contiene una lista de argumentos que aparecen en un formato tabular y se pueden ordenar por cada uno de los encabezados de columna, excepto para el **valor predeterminado** columna. Cada argumento contiene un nombre, dirección IN/OUT/IN-OUT/PROPERTY, tipo y valor de la expresión predeterminado (en su caso). El nombre y el valor de la expresión predeterminado son campos de texto editable y el tipo y la dirección son listas desplegables. Para obtener más información, consulte [Variables y argumentos (. NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).
 
@@ -37,5 +36,5 @@ En comparación con versiones anteriores de .NET Framework, el Diseñador de arg
 
 ## <a name="see-also"></a>Vea también
 
-- [Usar el Diseñador de flujo de trabajo](../workflow-designer/using-the-workflow-designer.md)
+- [Usar el Diseñador de flujo de trabajo](developing-applications-with-the-workflow-designer.md)
 - [Variables y argumentos](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)

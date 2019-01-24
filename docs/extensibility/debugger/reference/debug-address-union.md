@@ -1,9 +1,6 @@
 ---
 title: DEBUG_ADDRESS_UNION | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - DEBUG_ADDRESS_UNION
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37b22b6a67df981920b2288e6f917d57a67dd762
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a6a9ddc8806bdbba5a583e16657c3c5126a8992
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872088"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947210"
 ---
 # <a name="debugaddressunion"></a>DEBUG_ADDRESS_UNION
 Describe los distintos tipos de direcciones.  
@@ -90,12 +87,12 @@ public struct DEBUG_ADDRESS_UNION {
  [Solo en C++] El nombre de la unión.  
   
  UnionMember  
- [Solo en C#] Este valor tiene que calcularse para el tipo de estructura adecuada según `dwKind`. Vea la sección Comentarios para la asociación entre `dwKind` y la interpretación de la unión.  
+ [C# sólo] Este valor tiene que calcularse para el tipo de estructura adecuada según `dwKind`. Vea la sección Comentarios para la asociación entre `dwKind` y la interpretación de la unión.  
   
 ## <a name="remarks"></a>Comentarios  
  Esta estructura es parte de la [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) estructura y representa una cantidad de diferentes tipos de direcciones (el `DEBUG_ADDRESS` estructura se rellena mediante una llamada a la [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) método).  
   
- [Solo en C#] En la tabla siguiente se muestra cómo interpretar la `unionmember` miembro para cada tipo de dirección. El ejemplo muestra cómo hacerlo para un tipo de dirección.  
+ [C# sólo] En la tabla siguiente se muestra cómo interpretar la `unionmember` miembro para cada tipo de dirección. El ejemplo muestra cómo hacerlo para un tipo de dirección.  
   
 |`dwKind`|`unionmember` interpreta como|  
 |--------------|----------------------------------|  
@@ -137,7 +134,7 @@ namespace MyPackage
 ## <a name="requirements"></a>Requisitos  
  Encabezado: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   

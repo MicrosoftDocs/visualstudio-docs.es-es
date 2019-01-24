@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: ejecutar el proceso de trabajo en una cuenta de usuario | Microsoft Docs'
-ms.custom: ''
+title: Ejecutar un proceso de trabajo en una cuenta de usuario | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e0caba3cce487f8a706aee7e0944a75255d1df6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 5162d06f54e65dc35fef9e623d1730b66813c0f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939122"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893258"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Cómo: Ejecutar el proceso de trabajo en una cuenta de usuario
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Procedimiento Ejecutar un proceso de trabajo en una cuenta de usuario
 Para configurar el equipo de forma que pueda ejecutar el proceso de trabajo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (aspnet_wp.exe o w3wp.exe) bajo una cuenta de usuario, siga estos pasos.  
 
  > [!IMPORTANT]
@@ -40,7 +39,7 @@ Para configurar el equipo de forma que pueda ejecutar el proceso de trabajo [!IN
   
 1. Abra el archivo machine.config, ubicado en el equipo en la carpeta CONFIG, en la ruta de acceso en la que instaló el motor en tiempo de ejecución.  
   
-2. Buscar el &lt;processModel&gt; sección y cambie los atributos de usuario y contraseña para el nombre y la contraseña de la cuenta de usuario que desea que se ejecute aspnet_wp.exe.  
+2. Busque la sección &lt;processModel&gt; y cambie los atributos "user" y "password" por el nombre y la contraseña de la cuenta de usuario con la que quiera que se ejecute aspnet_wp.exe.  
   
 3. Guarde el archivo machine.config.  
   
@@ -78,7 +77,7 @@ Para configurar el equipo de forma que pueda ejecutar el proceso de trabajo [!IN
   
     Aparecerá el cuadro de diálogo **Seleccionar usuarios, equipos o grupos** .  
   
-10. Escriba el nombre del usuario en el cuadro **Escriba el nombre de objeto a seleccionar** y, a continuación, haga clic en **Aceptar**. El nombre de usuario debe seguir este formato: NombreDominio\NombreUsuario.  
+10. Escriba el nombre del usuario en el cuadro **Escriba el nombre de objeto a seleccionar** y, a continuación, haga clic en **Aceptar**. El nombre de usuario debe seguir este formato: Nombredominio\nombreusuario.  
   
 11. En el cuadro de diálogo **Entrada de permiso para archivos temporales de ASP.NET** , dé al usuario **Control total**y, a continuación, haga clic en **Aceptar** para cerrar el cuadro de diálogo **Entrada de permiso para archivos temporales de ASP.NET** .  
   
@@ -87,6 +86,5 @@ Para configurar el equipo de forma que pueda ejecutar el proceso de trabajo [!IN
 13. Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Propiedades de los archivos ASP.NET temporales** .  
   
 ## <a name="see-also"></a>Vea también  
-[Depurar aplicaciones ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
-[Depuración ASP.NET: requisitos del sistema](../debugger/aspnet-debugging-system-requirements.md)  
-  
+[Depuración de aplicaciones ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
+[Depuración ASP.NET: Requisitos del sistema](../debugger/aspnet-debugging-system-requirements.md)  

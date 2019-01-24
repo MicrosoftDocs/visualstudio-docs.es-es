@@ -1,15 +1,10 @@
 ---
-title: 'Cómo: editar una configuración de implementación de SharePoint | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Editar una configuración de implementación de SharePoint | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.DeploymentConfig
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f06c26f2f274615058c46ecd45a6d73757b78db9
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 73b59e709ba75d5624f28cf80c9a5fdfdf8ee835
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774799"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843598"
 ---
-# <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Cómo: editar una configuración de implementación de SharePoint
+# <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Procedimiento Editar una configuración de implementación de SharePoint
   Puede crear una configuración de implementación o modificar una configuración de implementación existente. Por ejemplo, podría ejecutar un paso único o cambiar el orden de los pasos del proceso de implementación. Es posible que desee crear o modificar las configuraciones de implementación porque no se puede cambiar las configuraciones integradas y se ha agregado mediante programación.  
   
 ## <a name="create-a-sharepoint-deployment-configuration"></a>Crear una configuración de implementación de SharePoint  
@@ -58,4 +53,3 @@ ms.locfileid: "43774799"
   
 ## <a name="see-also"></a>Vea también
  [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

@@ -1,9 +1,6 @@
 ---
-title: 'Tutorial: Guardar configuración de usuario en una página de inicio | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Guardando la configuración de usuario en una página de inicio | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 author: gregvanl
@@ -11,17 +8,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa57fb8c4e0c85ff7a9c1b258f1c326a241442c3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 563c9206e72788cc26eccdfab7d0e0993d14d1a8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566722"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948776"
 ---
-# <a name="walkthrough-save-user-settings-on-a-start-page"></a>Tutorial: Guardar configuración de usuario en una página de inicio
+# <a name="walkthrough-save-user-settings-on-a-start-page"></a>Tutorial: Guardar la configuración de usuario en una página de inicio
 Puede conservar la configuración de usuario para la página de inicio. Siguiendo este tutorial, puede crear un control que se guarda una configuración en el registro cuando el usuario hace clic en un botón y, a continuación, recupera ese valor cada vez que se carga la página de inicio. Porque la plantilla de proyecto de la página de inicio incluye un control de usuario personalizable, y el XAML de página de inicio predeterminado llama a ese control, no debe modificar la página de inicio de sí mismo.  
   
- El almacén de configuración que se crea una instancia en este tutorial es una instancia de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> interfaz, que lee y escribe en la siguiente ubicación del registro cuando se llama: **HKCU\Software\Microsoft\VisualStudio\14.0\\ \<NombreColección >**  
+ El almacén de configuración que se crea una instancia en este tutorial es una instancia de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> interfaz, que lee y escribe en la siguiente ubicación del registro cuando se llama: **HKCU\Software\Microsoft\VisualStudio\14.0\\\<NombreColección >**  
   
  Cuando se ejecuta en la instancia experimental de Visual Studio, el almacén de configuración lee y escribe en **HKCU\Software\Microsoft\VisualStudio\14.0Exp\\\<NombreColección >.**  
   

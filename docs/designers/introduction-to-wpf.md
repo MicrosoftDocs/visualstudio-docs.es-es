@@ -2,7 +2,6 @@
 title: Introducción a WPF
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: b8d7cf43-d1f2-4f3d-adb0-4f3a6428edc0
 author: gewarren
@@ -13,12 +12,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: db06323da8ccd3009c52be3ba9dd51478d1d722c
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: cb2e835a3dac2f85de806e876bc8801d7b1d0dd3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008465"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955297"
 ---
 # <a name="wpf-overview"></a>Información general sobre WPF
 
@@ -91,16 +90,16 @@ El comportamiento principal de una aplicación consiste en implementar la funcio
 ```
 
 ```csharp
-using System.Windows; // Window, RoutedEventArgs, MessageBox 
+using System.Windows; // Window, RoutedEventArgs, MessageBox 
 
 namespace SDKSample
 {
-    public partial class AWindow : Window
+    public partial class AWindow : Window
     {
         public AWindow()
         {
-            // InitializeComponent call is required to merge the UI 
-            // that is defined in markup with this class, including  
+            // InitializeComponent call is required to merge the UI 
+            // that is defined in markup with this class, including  
             // setting properties and registering event handlers
             InitializeComponent();
         }
@@ -117,28 +116,28 @@ namespace SDKSample
 ```vb
 Namespace SDKSample
 
-    Partial Public Class AWindow
+    Partial Public Class AWindow
         Inherits System.Windows.Window
 
-        Public Sub New()
+        Public Sub New()
 
-            ' InitializeComponent call is required to merge the UI 
-            ' that is defined in markup with this class, including  
+            ' InitializeComponent call is required to merge the UI 
+            ' that is defined in markup with this class, including  
             ' setting properties and registering event handlers
             InitializeComponent()
 
-        End Sub 
+        End Sub 
 
-        Private Sub button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+        Private Sub button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
             ' Show message box when button is clicked
             MessageBox.Show("Hello, Windows Presentation Foundation!")
 
-        End Sub 
+        End Sub 
 
-    End Class 
+    End Class 
 
-End Namespace
+End Namespace
 ```
 
 En este ejemplo, el código subyacente implementa una clase que deriva de la clase <xref:System.Windows.Window> . El atributo `x:Class` se usa para asociar el marcado a la clase de código subyacente. Se llama a `InitializeComponent` desde el constructor de la clase de código subyacente para combinar la interfaz de usuario que se define en el marcado con la clase de código subyacente. (`InitializeComponent` se genera al compilar la aplicación, por lo que no se requiere su implementación manual). La combinación de `x:Class` y `InitializeComponent` garantiza de que la implementación se inicializa correctamente cada vez que se crea. La clase de código subyacente también implementa un controlador de eventos para el evento <xref:System.Windows.Controls.Primitives.ButtonBase.Click> del botón. Cuando se hace clic en el botón, el controlador de eventos muestra un cuadro de mensaje mediante una llamada al método <xref:System.Windows.MessageBox.Show%2A?displayProperty=fullName> .
@@ -197,19 +196,19 @@ La piedra angular del sistema de diseño es la posición relativa, que aumenta l
 
 El sistema de diseño se expone a los controles secundarios mediante las clases base de WPF. Para los diseños comunes, como las cuadrículas, el apilamiento y el acoplamiento, WPF incluye varios controles de diseño:
 
-- <xref:System.Windows.Controls.Canvas>: los controles secundarios proporcionan su propio diseño.
+- <xref:System.Windows.Controls.Canvas>: Los controles secundarios proporcionan su propio diseño.
 
-- <xref:System.Windows.Controls.DockPanel>: los controles secundarios se alinean con los bordes del panel.
+- <xref:System.Windows.Controls.DockPanel>: Los controles secundarios se alinean con los bordes del panel.
 
-- <xref:System.Windows.Controls.Grid>: los controles secundarios se colocan por filas y columnas.
+- <xref:System.Windows.Controls.Grid>: Los controles secundarios se colocan por filas y columnas.
 
-- <xref:System.Windows.Controls.StackPanel>: los controles secundarios se apilan vertical u horizontalmente.
+- <xref:System.Windows.Controls.StackPanel>: Los controles secundarios se apilan vertical u horizontalmente.
 
-- <xref:System.Windows.Controls.VirtualizingStackPanel>: los controles secundarios se virtualizan y se organizan en una sola línea en sentido horizontal o verticalmente.
+- <xref:System.Windows.Controls.VirtualizingStackPanel>: Los controles secundarios se virtualizan y se organizan en una sola línea en sentido horizontal o vertical.
 
-- <xref:System.Windows.Controls.WrapPanel>: los controles secundarios se sitúan en orden de izquierda a derecha y se ajustan a la línea siguiente cuando hay más controles de los que caben en la línea actual.
+- <xref:System.Windows.Controls.WrapPanel>: Los controles secundarios se sitúan en orden de izquierda a derecha y se ajustan a la línea siguiente cuando hay más controles de los que caben en la línea actual.
 
-En el ejemplo siguiente se usa un control <xref:System.Windows.Controls.DockPanel> para situar varios controles <xref:System.Windows.Controls.TextBox> .
+En el ejemplo siguiente se usa un control <xref:System.Windows.Controls.DockPanel> para situar varios controles <xref:System.Windows.Controls.TextBox>.
 
 [!code-xaml[IntroToWPFSnippets#LayoutMARKUP](../designers/codesnippet/Xaml/introduction-to-wpf_1.xaml)]
 
@@ -575,7 +574,7 @@ En el ejemplo siguiente se define un color de fondo común que comparten los con
 </Window>
 ```
 
-En este ejemplo se implementa un recurso de color de fondo mediante el elemento de propiedad `Window.Resources`. Este recurso está disponible para todos los elementos secundarios de <xref:System.Windows.Window>. Hay una gran variedad de ámbitos de recursos, incluidos los siguientes, que se muestran en el orden en que se resuelven:
+En este ejemplo se implementa un recurso de color de fondo mediante el elemento de propiedad `Window.Resources` . Este recurso está disponible para todos los elementos secundarios de <xref:System.Windows.Window>. Hay una gran variedad de ámbitos de recursos, incluidos los siguientes, que se muestran en el orden en que se resuelven:
 
 1.  Un control individual (mediante la propiedad <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> heredada).
 
@@ -668,7 +667,7 @@ Como sucede con cualquier plataforma de desarrollo, WPF se puede usar de diversa
 Hemos analizado las principales características de WPF. Ahora es el momento de que compile su primera aplicación de WPF.
 
 > [!div class="nextstepaction"]
-> [Tutorial: Mi primera aplicación de escritorio WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)
+> [Tutorial: Mi primera aplicación de escritorio de WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)
 
 ## <a name="see-also"></a>Vea también
 

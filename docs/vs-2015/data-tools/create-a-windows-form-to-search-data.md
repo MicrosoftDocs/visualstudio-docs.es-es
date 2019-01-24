@@ -16,19 +16,19 @@ helpviewer_keywords:
 - Windows Forms, searching data
 - Windows Forms, displaying data
 - parameters, displaying filtered data
-- data [Visual Studio], paramaterizing queries
+- data [Visual Studio], parameterizing queries
 - data [Visual Studio], searching
 ms.assetid: 65ca79a9-7458-466c-af55-978cd24c549e
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c610ebecf48d8a21e8962a549d7114b8d13e3ad6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: e42c86cf94115d317eb20df66f4cef005e05eba9
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270626"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281802"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Crear Windows Forms para buscar en datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Un escenario habitual de la aplicación es mostrar los datos seleccionados en un
   
 -   Crear y configurar el origen de datos en la aplicación con el **configuración origen de datos** asistente.  
   
--   Establecer el tipo de colocación de los elementos de la **orígenes de datos**ventana.  
+-   Establecer el tipo de colocación de los elementos de la **orígenes de datos** ventana.  
   
 -   Crear controles que muestran datos arrastrando elementos desde la **orígenes de datos** ventana en un formulario.  
   

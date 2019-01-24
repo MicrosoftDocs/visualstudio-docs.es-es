@@ -1,5 +1,5 @@
 ---
-title: Usar el Diagrama de actividad del usuario virtual de las pruebas de carga en Visual Studio
+title: Uso del diagrama de actividad del usuario virtual de las pruebas de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,31 +10,20 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: a937e06eadc1af0734ff34f043c97833e1be1c96
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: c9aecfd8309e795a5905bd1aaca5c14a4df51283
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382215"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857071"
 ---
-# <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Tutorial: Usar el Diagrama de actividad del usuario virtual para aislar problemas de rendimiento
+# <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Tutorial: Uso del diagrama de actividad del usuario virtual para aislar problemas
 
-En este tutorial obtendrá información sobre cómo usar el Diagrama de actividad del usuario virtual para aislar errores que se produjeron para los usuarios virtuales individuales que ejecutaron la prueba de carga.
+En este tutorial obtendrá información sobre cómo usar el diagrama de actividad del usuario virtual para aislar errores que se produjeron para los usuarios virtuales individuales que ejecutaron la prueba de carga.
 
 El Diagrama de actividad del usuario virtual permite visualizar la actividad del usuario virtual asociado a la prueba de carga. Cada fila del diagrama representa un usuario virtual individual. El Diagrama de actividad del usuario virtual muestra exactamente qué estaba ejecutando cada usuario virtual durante la prueba. Esto le permite aislar problemas de rendimiento examinando modelos de actividad de usuario y modelos de carga, correlacionar pruebas no superadas o lentas, y ver solicitudes con otra actividad del usuario virtual. El Gráfico de actividad del usuario virtual solo está disponible después de que la carga haya terminado de ejecutarse.
 
-En este tutorial se realizan las siguientes tareas:
-
--   Obtener información sobre cómo usar las siguientes herramientas asociadas al Diagrama de actividad del usuario virtual:
-
-    -   Usar la herramienta **Ampliar período de tiempo** para especificar un período de tiempo concreto del gráfico que quiera analizar.
-
-    -   Usar los paneles **Leyenda de detalles** y **Resultados del filtro** para aplicar filtrado al gráfico con el fin de ayudar a aislar problemas.
-
--   Usar el Diagrama de actividad del usuario virtual para analizar un error que se produjo para un usuario virtual concreto y ver los detalles del tipo de error problemático.
-
-Para más información, consulte [Analizar la actividad de usuario virtual en la vista Detalles](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -42,13 +31,11 @@ Para más información, consulte [Analizar la actividad de usuario virtual en la
 
 -   Complete estos procedimientos:
 
-    -   [Registrar y ejecutar una prueba de rendimiento web](http://msdn.microsoft.com/en-us/bd0a82fd-cec0-4861-bc09-e1b0b2d258ef)
+    -   [Registrar y ejecutar una prueba de rendimiento web](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests)
 
-    -   [Crear y ejecutar una prueba de carga](http://msdn.microsoft.com/en-us/7041cbcf-9ab1-4579-98ff-8f296aeaded4)
+    -   [Crear y ejecutar una prueba de carga](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Abrir la solución ColorWebApp creada en los tutoriales anteriores
-
-### <a name="open-the-solution"></a>Abra la solución.
 
 1.  Inicie Visual Studio.
 
@@ -119,7 +106,7 @@ Después de haber ejecutado la prueba de carga y recopilado los datos de activid
 
 ## <a name="see-also"></a>Vea también
 
-- [Analizar la actividad de usuario virtual en la vista Detalles](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
+- [Analizar la actividad de usuario virtual de prueba de carga en la vista Detalles del Analizador de prueba de carga](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [Controladores y agentes de prueba](configure-test-agents-and-controllers-for-load-tests.md)
 - [Cómo: Crear una configuración de pruebas para una prueba de carga distribuida](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
 - [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md)

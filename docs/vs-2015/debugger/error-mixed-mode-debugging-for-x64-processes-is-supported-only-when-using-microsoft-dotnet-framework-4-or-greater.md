@@ -18,15 +18,15 @@ dev_langs:
 - C++
 ms.assetid: e4b0216c-7006-4832-883f-08e982ba8d3f
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 82440d378e34c5808e9bcb250172f6c1abfbfdf6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5dfb5d43ef78e16a5280c7faff92a3ea7e791c43
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239244"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805624"
 ---
 # <a name="error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-net-framework-4-or-greater"></a>Error: El modo de depuración mixto para procesos x64 se admite sólo cuando se usa Microsoft .NET Framework 4 o posterior
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

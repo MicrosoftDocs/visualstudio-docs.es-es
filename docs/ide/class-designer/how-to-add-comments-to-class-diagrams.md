@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: Agregar comentarios a diagramas de clases (Diseñador de clases)'
+title: Procedimiento Agregar comentarios a diagramas de clases (Diseñador de clases)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.comment
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3b850741793f1b0f1d358aca9ea3161e12a46b9
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: cff9069392fe3c5a3505128788458916ed78c01f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957111"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916379"
 ---
-# <a name="how-to-add-comments-to-class-diagrams"></a>Cómo: Agregar comentarios a diagramas de clases
+# <a name="how-to-add-comments-to-class-diagrams"></a>Procedimiento Agregar comentarios a diagramas de clases
 
 Puede usar formas de comentario para anotar diagramas de clases. Una forma de comentario tiene una propiedad, **Text**, en la que puede escribir texto. Las formas de comentario solo existen en la superficie del diagrama y no en el código.
 
@@ -39,5 +38,5 @@ Puede cambiar el tamaño de una forma de comentario, pero no puede cambiar otros
 
 ## <a name="see-also"></a>Vea también
 
-- [Trabajar con diagramas de clases](working-with-class-diagrams.md)
-- [Cómo: Personalizar los diagramas de clases](how-to-customize-class-diagrams.md)
+- [Trabajar con diagramas de clases](designing-and-viewing-classes-and-types.md)
+- [Cómo: Personalizar diagramas de clases](how-to-customize-class-diagrams.md)

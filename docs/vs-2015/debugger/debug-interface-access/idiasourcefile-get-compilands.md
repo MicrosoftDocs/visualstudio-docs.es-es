@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSourceFile::get_compilands method
 ms.assetid: 57deb50a-9c22-43ea-a80c-eab205997bc4
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 78dff1fde421f96e5e07b69f72598af80f5d5c43
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 813eff61f44480207fd6244040c478fbed9b766f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837599"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806872"
 ---
 # <a name="idiasourcefilegetcompilands"></a>IDiaSourceFile::get_compilands
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera un enumerador de elementos que tienen números de línea que hacen refe
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT get_compilands (   
+HRESULT get_compilands (   
    IDiaEnumSymbols** ppRetVal  
 );  
 ```  

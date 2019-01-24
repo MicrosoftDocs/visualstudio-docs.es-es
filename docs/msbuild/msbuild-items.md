@@ -1,9 +1,7 @@
 ---
 title: Elementos de MSBuild | Microsoft Docs
 description: Uso del atributo Include de MSBuild de ItemGroup para especificar los archivos que se incluirán en una compilación
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, Items
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d98b7c74ebc57bd5b7b529303f2f5a17277ff5
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 9046ec4c5523720a917849191cd42b197b115870
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443602"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345609"
 ---
 # <a name="msbuild-items"></a>Elementos de MSBuild
 Los elementos de MSBuild son entradas del sistema de compilación y suelen representar archivos (los archivos se especifican en el atributo `Include`). Se agrupan en tipos de elemento de acuerdo con sus nombres de elemento. Los tipos de elemento son listas de elementos con nombre que se pueden usar como parámetros de las tareas. Las tareas utilizan los valores de los elementos para llevar a cabo los pasos del proceso de compilación.  
@@ -323,12 +321,13 @@ Output:
 -->  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Vea también
+ [Elemento Item (MSBuild)](../msbuild/item-element-msbuild.md)  
+ [Elementos comunes de proyectos de MSBuild](../msbuild/common-msbuild-project-items.md)  
  [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)  
  [MSBuild](../msbuild/msbuild.md)   
  [Cómo: Seleccionar los archivos que se van a compilar](../msbuild/how-to-select-the-files-to-build.md)   
  [Cómo: Excluir archivos de la compilación](../msbuild/how-to-exclude-files-from-the-build.md)   
  [Cómo: Mostrar una lista de elementos separados por comas](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
  [Definiciones de elementos](../msbuild/item-definitions.md)   
- [Procesamiento por lotes](../msbuild/msbuild-batching.md)   
- [Elemento Item (MSBuild)](../msbuild/item-element-msbuild.md)
+ [Procesamiento por lotes](../msbuild/msbuild-batching.md)

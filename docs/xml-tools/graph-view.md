@@ -2,7 +2,6 @@
 title: Vista Gráfico del Diseñador de esquemas XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 603c0849d22f658800776e8a1e4cb1f429990e00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 252b22305579f3c0beccdca0a5464f7d08bbc985
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894630"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269909"
 ---
 # <a name="graph-view"></a>Vista de gráfico
 
@@ -37,13 +36,13 @@ La vista Gráfico proporciona una representación gráfica de los nodos de esque
 
  ![Diseñador XSD; vista Gráfico](../xml-tools/media/xsdgraphviewwatermark.gif)
 
- Si el conjunto de esquemas tiene errores, se muestra el texto siguiente al final de la lista: "Use la lista de errores para ver y corregir los errores en el conjunto de esquemas".
+ Si el conjunto de esquemas tiene errores, se mostrará el texto siguiente al final de la lista: "Usar la lista de errores para ver y corregir los errores en el conjunto".
 
 ## <a name="breadcrumb-bar"></a>Barra de ruta de navegación
 
  La barra de ruta de navegación situada en la parte inferior de la vista Gráfico muestra la ubicación del nodo seleccionado en el conjunto de esquemas. Si se han seleccionado varios elementos, la barra de ruta de navegación estará en blanco.
 
-## <a name="context-menu"></a>Menú contextual
+## <a name="context-right-click-menu"></a>Menú contextual (clic derecho)
 
  En la tabla siguiente se describen las opciones disponibles para todos los nodos existentes en la superficie de diseño de la vista Gráfico.
 
@@ -93,7 +92,7 @@ La vista Gráfico proporciona una representación gráfica de los nodos de esque
 
 ## <a name="properties-window"></a>Propiedades (ventana)
 
- Use el menú contextual para abrir inicialmente la **propiedades** ventana. De forma predeterminada, el **propiedades** ventana aparece en la esquina inferior derecha de Visual Studio. Al hacer clic en un nodo que se presenta en la vista de modelo de contenido, las propiedades de ese nodo se mostrará en el **propiedades** ventana.
+ Use el menú contextual (clic derecho) para abrir inicialmente la **propiedades** ventana. De forma predeterminada, el **propiedades** ventana aparece en la esquina inferior derecha de Visual Studio. Al hacer clic en un nodo que se presenta en la vista de modelo de contenido, las propiedades de ese nodo se mostrará en el **propiedades** ventana.
 
 ## <a name="xsd-toolbar"></a>Barra de herramientas XSD
 
@@ -109,10 +108,10 @@ La vista Gráfico proporciona una representación gráfica de los nodos de esque
 |**Borrar área de trabajo**|Borra el área de trabajo y la superficie de diseño.|
 |**Quitar área de trabajo**|Quita los nodos seleccionados del área de trabajo y de la superficie de diseño.|
 |**Quitar todo salvo la selección del área de trabajo**|Quita los nodos que no están seleccionados del área de trabajo y de la superficie de diseño. Esta opción está habilitada en las vistas Modelo de contenido y Gráfico.|
-|**Izquierda a derecha**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de izquierda a derecha. Esta opción puede obtenerse mediante el método abreviado de teclado: **Alt**+**flecha derecha**.|
-|**De derecha a izquierda**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de derecha a izquierda. Esta opción puede obtenerse mediante el método abreviado de teclado: **Alt**+**flecha izquierda**.|
-|**Arriba a abajo**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de arriba abajo. Esta opción puede obtenerse mediante el método abreviado de teclado: **Alt**+**flecha abajo**.|
-|**Orden descendente**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de abajo arriba. Esta opción puede obtenerse mediante el método abreviado de teclado: **Alt**+**arriba**.|
+|**Izquierda a derecha**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de izquierda a derecha. Esta opción puede obtenerse mediante el método abreviado de teclado: **ALT**+**flecha derecha**.|
+|**De derecha a izquierda**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de derecha a izquierda. Esta opción puede obtenerse mediante el método abreviado de teclado: **ALT**+**flecha izquierda**.|
+|**Arriba a abajo**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de arriba abajo. Esta opción puede obtenerse mediante el método abreviado de teclado: **ALT**+**flecha abajo**.|
+|**Orden descendente**|Cambia el diseño de la vista Gráfico a una representación jerárquica de nodos mostrados de abajo arriba. Esta opción puede obtenerse mediante el método abreviado de teclado: **ALT**+**arriba**.|
 
 ## <a name="panscroll"></a>Panorámica/desplazamiento
 
@@ -142,7 +141,7 @@ El control deslizante de Zoom es opaco al seleccionarla, mantenga el mouse sobre
 
 ## <a name="xml-editor-integration"></a>Integración del editor XML
 
- Puede cambiar entre la vista Gráfico y el Editor XML haciendo clic en un nodo y usando el menú contextual de Ver código.
+ Puede alternar entre las vistas gráfico y el Editor XML haciendo clic en un nodo y mediante el menú contextual (clic derecho) de la vista código.
 
  Si realiza modificaciones en el conjunto de esquemas en el Editor XML, dichas modificaciones se sincronizarán en la vista Gráfico. Para obtener más información, consulte [integración con el editor XML](../xml-tools/integration-with-xml-editor.md).
 

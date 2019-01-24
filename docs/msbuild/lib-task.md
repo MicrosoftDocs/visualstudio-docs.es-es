@@ -1,8 +1,6 @@
 ---
 title: Tarea LIB | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCLibrarianTool.Name
@@ -27,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df6011cb1c706069135a133dd37a34e54203b22b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 54a9fc4a75d49699087f7fb2ca80c3b8c17ddc8f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079629"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922025"
 ---
 # <a name="lib-task"></a>LIB (tarea)
 Incluye la herramienta de Microsoft Administrador de bibliotecas de 32 bits, *lib.exe*. El Administrador de bibliotecas crea y administra una biblioteca de archivos objeto con formato de archivo de objeto común (COFF). El Administrador de bibliotecas también puede crear archivos de exportación y bibliotecas de importación para hacer referencia a las definiciones que se exportan. Para obtener más información, vea [Referencia de LIB](/cpp/build/reference/lib-reference) y [Ejecutar LIB](/cpp/build/reference/running-lib).  

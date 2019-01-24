@@ -1,24 +1,23 @@
 ---
-title: Introducción a C++ en Visual Studio
+title: Introducción a C++
 description: ''
 ms.custom: mvc
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: tutorial
 author: corob-msft
-ms.author: tglee
+ms.author: corob
 manager: douge
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cec2164cf248f9301a2e75f0babe4d6f71726ff2
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 6d77732d6bf54e4849be55324e6ac18be2a46f74
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459678"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820895"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Introducción a C++ en Visual Studio
 
@@ -156,5 +155,5 @@ Cuando esta compilación acabe, habrá creado una aplicación que se puede copia
 ## <a name="see-also"></a>Vea también
 
 - [Usar el IDE de Visual Studio para desarrollo de escritorio de C++](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
-- [Tutorial: Creación de una aplicación sencilla con C# o Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [Tutorial: Creación de una aplicación sencilla con C# o Visual Basic](../get-started/csharp/tutorial-wpf.md)
 - [Sugerencias de productividad para Visual Studio](../ide/productivity-tips-for-visual-studio.md)

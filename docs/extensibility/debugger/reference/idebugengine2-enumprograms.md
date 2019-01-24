@@ -1,9 +1,6 @@
 ---
 title: IDebugEngine2::EnumPrograms | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngine2::EnumPrograms
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eeb01e34ea2061e28029de078eaa7928e4c06868
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 89799f5aeb528ca49607f0e321681cf7805b5d60
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908878"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879035"
 ---
 # <a name="idebugengine2enumprograms"></a>IDebugEngine2::EnumPrograms
 Recupera una lista de todos los programas que se está depurando un motor de depuración (DE).  
@@ -28,13 +25,13 @@ Recupera una lista de todos los programas que se está depurando un motor de dep
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT EnumPrograms(   
+HRESULT EnumPrograms(   
    IEnumDebugPrograms2** ppEnum  
 );  
 ```  
   
 ```csharp  
-int EnumPrograms(   
+int EnumPrograms(   
    out IEnumDebugPrograms2 ppEnum  
 );  
 ```  

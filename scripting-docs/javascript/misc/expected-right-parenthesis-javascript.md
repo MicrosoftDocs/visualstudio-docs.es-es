@@ -1,5 +1,5 @@
 ---
-title: Se esperaba &#39;)&#39; (JavaScript) | Microsoft Docs
+title: Se esperaba ')' (JavaScript) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f816b4635ae219b12370d53fa8c14eb8c0112a7a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f9736e7195d8594e881aa778b0683959fe5d4c88
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863547"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346207"
 ---
-# <a name="expected-3939-javascript"></a>Se esperaba &#39;)&#39; (JavaScript)
+# <a name="expected--javascript"></a>Se esperaba ')' (JavaScript)
 Se intentó incluir una expresión dentro de un conjunto de paréntesis, pero no incluía el paréntesis de cierre. Alguna expresión debe incluirse dentro de un conjunto de apertura y cierre entre paréntesis. Tenga en cuenta el uso de paréntesis en el ejemplo siguiente.  
   
 ```JavaScript  

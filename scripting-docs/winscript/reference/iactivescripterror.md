@@ -14,15 +14,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a403bf412a0c93a5c435e1a3184202ed68d406ea
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 540a4a338ae8ebfcacae66b1890075c20bdee086
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645785"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347104"
 ---
 # <a name="iactivescripterror"></a>IActiveScriptError
-Objeto que implementa esta interfaz se pasa a la [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md) método siempre que el motor de scripting encuentra un error no controlado. El host, a continuación, llama a métodos en este objeto para obtener información sobre el error que se produjo.  
+Un objeto que implementa esta interfaz se pasa a la [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md) método siempre que el motor de scripting encuentra un error no controlado. El host, a continuación, llama a métodos en este objeto para obtener información sobre el error que se ha producido.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
   

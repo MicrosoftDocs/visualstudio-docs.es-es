@@ -1,8 +1,7 @@
 ---
-title: Visualización de definiciones de tipo en Visual Studio
+title: Visualización de definiciones de tipo
 ms.date: 01/10/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, view definition
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 529486e39db57228feb703817eea44fab9399c85
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 95302b61da30cc2034edfe495a695efb510430d3
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745768"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269844"
 ---
 # <a name="view-type-and-member-definitions"></a>Vista de definiciones de tipo y miembro
 
@@ -28,7 +27,7 @@ Los desarrolladores suelen necesitar ver las definiciones de código fuente para
 
 ## <a name="go-to-definition"></a>Ir a definición
 
-La característica **Ir a definición** va hasta el origen de un tipo o miembro y abre el resultado en una nueva pestaña. Si trabaja con el teclado, coloque el cursor de texto en algún lugar del nombre del símbolo y presione **F12**. Si trabaja con el mouse, seleccione **Ir a definición** en el menú contextual o use la función **Ctrl+clic** descrita en la sección siguiente.
+La característica **Ir a definición** va hasta el origen de un tipo o miembro y abre el resultado en una nueva pestaña. Si trabaja con el teclado, coloque el cursor de texto en algún lugar del nombre del símbolo y presione **F12**. Si usa el mouse, seleccione **Ir a definición** en el menú contextual o use la función **Ctrl+clic** que se describe en la sección siguiente.
 
 ### <a name="ctrl-click-go-to-definition"></a>Ir a definición con Ctrl+clic
 
@@ -42,7 +41,7 @@ Para cambiar la tecla modificadora del clic del mouse de **Ir a definición**, v
 
 ## <a name="peek-definition"></a>Definición de Peek
 
-La característica **Ver la definición** le permite obtener una vista previa de la definición de un tipo sin abandonar su ubicación actual en el editor. Si trabaja con el teclado, coloque el cursor de texto en algún lugar del nombre de tipo o miembro y presione **Alt + F12**. Si trabaja con el mouse, puede seleccionar **Ver la definición** en el menú contextual. En Visual Studio 2017 versión 15.4 y posteriores, hay una nueva forma de ver una definición en vista de inspección mediante el mouse. En primer lugar, vaya a **Herramientas** > **Opciones** > **Editor de texto** > **General**. Seleccione la opción **Abrir definición en vista de inspección** y haga clic en **Aceptar** para cerrar el cuadro de diálogo **Opciones**.
+La característica **Ver la definición** le permite obtener una vista previa de la definición de un tipo sin abandonar su ubicación actual en el editor. Si trabaja con el teclado, coloque el cursor de texto en algún lugar del nombre de tipo o miembro y presione **Alt + F12**. Si usa el mouse, puede seleccionar **Ver la definición** en el menú contextual. En Visual Studio 2017 versión 15.4 y posteriores, hay una nueva forma de ver una definición en vista de inspección mediante el mouse. En primer lugar, vaya a **Herramientas** > **Opciones** > **Editor de texto** > **General**. Seleccione la opción **Abrir definición en vista de inspección** y haga clic en **Aceptar** para cerrar el cuadro de diálogo **Opciones**.
 
 ![Establecer la opción Ver la definición del clic del mouse](../ide/media/editor_options_peek_view.png)
 
@@ -52,7 +51,7 @@ Después, presione **Ctrl** (o la tecla modificadora que esté activada en **Opc
 
 Si ve otra definición en la ventana emergente, iniciará una ruta de navegación en la que puede desplazarse con los círculos y las flechas que aparecen encima de la ventana emergente.
 
-Para obtener más información, vea [Cómo: Ver y editar código mediante Definición de Peek (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
+Para obtener más información, vea [Cómo: Ver y editar código mediante Ver la definición (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
 
 ## <a name="view-metadata-as-source-code-c"></a>Visualización de metadatos como código fuente (C#)
 

@@ -1,8 +1,7 @@
 ---
-title: Cómo utilizar ventanas del depurador mientras se depura un programa en primer plano | Microsoft Docs
-ms.custom: ''
+title: Usar ventanas del depurador mientras se depura una aplicación de primer plano | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.background
@@ -23,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26654d13053c963ad86d46bee5a6fe6ed0d4d85d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 60bd259dd5acb542211fe57b0741c2e28d0baaca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473058"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910326"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>Cómo utilizar ventanas del depurador mientras se depura un programa en primer plano
 ## <a name="problem-description"></a>Descripción del problema  
@@ -38,5 +37,5 @@ ms.locfileid: "31473058"
  Si dispone de un segundo equipo, puede utilizar la función de depuración remota. Con un segundo equipo, puede observar la actualización de pantalla en el equipo remoto mientras ejecuta el depurador en el host. Para obtener más información sobre la depuración remota, vea [depuración remota](../debugger/remote-debugging.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Preguntas frecuentes sobre depuración de código nativo](../debugger/debugging-native-code-faqs.md)   
+ [Preguntas más frecuentes sobre la depuración de código nativo](../debugger/debugging-native-code-faqs.md)   
  [Depuración de código nativo](../debugger/debugging-native-code.md)

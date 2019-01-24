@@ -1,9 +1,7 @@
 ---
 title: Ejemplo avanzado de contenedores
 description: ''
-ms.custom: ''
 ms.date: 04/18/2018
-ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
@@ -12,12 +10,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b8d779dec88bf912f04dca6d8b736fb5f3e53dd
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 48fa07228c0df8e02f5f3a53895c516e9d679d3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139306"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916658"
 ---
 # <a name="advanced-example-for-containers"></a>Ejemplo avanzado de contenedores
 
@@ -91,6 +89,10 @@ ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
 # Default to PowerShell if no other command specified.
 CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
 ```
+   > [!WARNING]
+   > Visual Studio 2017 versión 15.8 o cualquier versión anterior (de cualquier producto) no se instalará correctamente en mcr<span></span>.microsoft\.com\/windows\/servercore:1809 o posterior. No se mostrará ningún error.
+   >
+   > Para obtener más información, vea [Problemas conocidos de contenedores](build-tools-container-issues.md).
 
 Ejecute el siguiente comando para compilar la imagen en el directorio de trabajo actual:
 

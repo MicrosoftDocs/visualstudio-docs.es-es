@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: Cambiar entre notación de miembro y notación de asociación (Diseñador de clases)'
+title: Procedimiento Cambiar entre notación de miembro y notación de asociación (Diseñador de clases)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - notation, member
@@ -15,14 +14,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdb4f28fc367b309a015a3faa8f749e2512db879
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 56ffdcaf2a78933d52fe3a19e2c34deb5c303401
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957806"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952646"
 ---
-# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Cómo: Cambiar entre notación de miembro y notación de asociación en el Diseñador de clases
+# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Procedimiento Cambiar entre notación de miembro y notación de asociación en el Diseñador de clases
 
 En el **Diseñador de clases**, puede cambiar el modo en que el diagrama de clases representa una relación de asociación entre dos tipos de notación de miembro a notación de asociación y viceversa. Los miembros que se muestran como líneas de asociación a menudo ofrecen una visualización útil de cómo se relacionan los tipos.
 
@@ -46,7 +45,7 @@ En el diagrama de clases, haga clic con el botón derecho en la línea de asocia
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Crear la herencia entre tipos](how-to-create-inheritance-between-types.md)
+- [Cómo: Crear herencia entre tipos](how-to-create-inheritance-between-types.md)
 - [Cómo: Ver la herencia entre tipos](how-to-view-inheritance-between-types.md)
-- [Visualización de tipos y relaciones](viewing-types-and-relationships.md)
+- [Visualización de tipos y relaciones](designing-and-viewing-classes-and-types.md)
 - [Cómo: Visualizar una asociación de colecciones](how-to-visualize-a-collection-association.md)

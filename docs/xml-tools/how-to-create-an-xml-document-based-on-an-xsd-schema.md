@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: Crear un documento XML basado en un esquema XSD'
+title: Procedimiento Crear un documento XML basado en un esquema XSD
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d3da2e6b5b0c9ea2701524c0fb2fde1e1313687
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: d675695b3d3e054d14e481c8c41ae06de5af5600
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34549095"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820204"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Cómo: crear un documento XML basado en un esquema XSD
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Procedimiento Crear un documento XML basado en un esquema XSD
 
 El **generar XML de ejemplo** característica genera un archivo XML de ejemplo basado en el archivo de esquema XML (XSD).
 
@@ -43,11 +42,11 @@ Además, observe que el contenido de `xs:base64Binary` solo se generará si apar
 
 ## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Para generar un documento de instancia XML basado en el archivo XSD
 
-1.  Siga los pasos de [Cómo: crear y editar un archivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1.  Siga los pasos de [Cómo: Crear y editar un archivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
 2.  En el [Explorador de esquemas XML](../xml-tools/xml-schema-explorer.md), haga clic en el `PurchaseOrder` elemento global. Seleccione **generar XML de ejemplo**.
 
-     Al seleccionar esta opción, la PurchaseOrder. *xml* archivo con el siguiente contenido XML de ejemplo se genera y se abre en el Editor de XML:
+     Cuando se selecciona esta opción, PurchaseOrder. *xml* se generarán archivos con el siguiente contenido XML de ejemplo y abre el Editor de XML:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>

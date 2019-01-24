@@ -1,15 +1,10 @@
 ---
-title: 'Cómo: agregar y quitar carpetas asignadas | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Agregar y quitar carpetas asignadas | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.MappedFolder
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fe9868a9909dbb78bf510f18584472520948d6f9
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 302b161620961b3b89a616bf4dc998c7a5745456
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757653"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823933"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>Cómo: agregar y quitar carpetas asignadas
   Algunas carpetas usadas habitualmente en SharePoint, como imágenes y diseños, está profundamente integrado en la jerarquía de archivos. Puede asignar estas carpetas en un proyecto de SharePoint para tener acceso a ellos más fácilmente. Carpetas asignadas son carpetas en el proyecto de SharePoint que corresponden a la ubicación física de los archivos de la instalación del servidor de SharePoint.  
@@ -85,4 +80,3 @@ ms.locfileid: "36757653"
   
 ## <a name="see-also"></a>Vea también
  [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

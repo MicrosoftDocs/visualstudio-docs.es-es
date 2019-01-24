@@ -1,8 +1,6 @@
 ---
 title: Idiaenumsectioncontribs | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 845af239ac53f9b1ebb25806c053ea29ce5973bf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d3853cb49efdea54c50fa122361715d4e3d0bcf0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869618"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847816"
 ---
 # <a name="idiaenumsectioncontribsgetcount"></a>IDiaEnumSectionContribs::get_Count
 Recupera el número de las contribuciones de la sección.  
@@ -27,7 +25,7 @@ Recupera el número de las contribuciones de la sección.
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT get_Count (   
+HRESULT get_Count (   
    LONG* pRetVal  
 );  
 ```  

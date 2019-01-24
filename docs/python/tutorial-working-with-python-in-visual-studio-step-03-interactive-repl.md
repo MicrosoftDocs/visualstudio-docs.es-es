@@ -1,26 +1,27 @@
 ---
-title: 'Tutorial de trabajo con Python, paso 3: la ventana interactiva REPL'
+title: Paso 3 del tutorial de Python en Visual Studio, Ventana interactiva de REPL
+titleSuffix: ''
 description: Paso 3 de un tutorial básico sobre las funcionalidades de Python en Visual Studio, que trata sobre la ventana interactiva REPL de Python.
-ms.date: 06/26/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 00a66cb56fb3ada8f48018c644a37189b494cc98
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 9cc9bc13f26707132703851dea5cc3c7de351601
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511761"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986835"
 ---
-# <a name="step-3-use-the-interactive-repl-window"></a>Paso 3: Usar la ventana interactiva de REPL
+# <a name="step-3-use-the-interactive-repl-window"></a>Paso 3: Uso de la ventana interactiva de REPL
 
-**Paso anterior: [Escribir y ejecutar código](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
+**Paso anterior: [Escritura y ejecución de código](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
 
 La ventana **interactiva** de Visual Studio para Python proporciona una experiencia de lectura-evaluación-impresión-repetición (REPL) que reduce considerablemente el ciclo habitual de edición-compilación-depuración. La ventana **interactiva** proporciona todas las funciones de la experiencia de REPL de la línea de comandos de Python. También resulta muy fácil intercambiar el código con archivos de código fuente en el editor de Visual Studio, que en otros casos es complicado con la línea de comandos.
 

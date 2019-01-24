@@ -1,9 +1,6 @@
 ---
 title: 'Área de prueba 5: Cambiar Control de código fuente | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], changing
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed7093d50290c4c0612faf6c7691f90e62a08267
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 83928a2b28b32d7e1ee11475a7693f8f11483cad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847362"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942637"
 ---
-# <a name="test-area-5-change-source-control"></a>Área de prueba 5: cambiar control de código fuente
+# <a name="test-area-5-change-source-control"></a>Área de prueba 5: Control de código fuente de cambios
 Esta área de prueba de complemento de control de código fuente trata el cambio del control de código fuente a través de la **cambiar Control de código fuente** comando.  
 
  **Cambiar Control de código fuente** comando proporciona cuatro funciones básicas para el usuario:  
@@ -36,7 +33,7 @@ Esta área de prueba de complemento de control de código fuente trata el cambio
 
 - **Conectar o desconectar acceso:**  
 
-  Cambia el estado conectado o desconectado de la solución controlada, que se explica en la zona 3. Para obtener más información, consulte [3 del área de prueba: desproteger o deshacer desprotección](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
+  Cambia el estado conectado o desconectado de la solución controlada, que se explica en la zona 3. Para obtener más información, consulte [3 del área de prueba: Desproteger o deshacer desprotección](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
 
 ## <a name="command-menu-access"></a>Acceso al menú de comandos  
  La siguiente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ruta de acceso del menú de entorno de desarrollo integrado se usa en los casos de prueba.  
@@ -46,7 +43,7 @@ Esta área de prueba de complemento de control de código fuente trata el cambio
 ## <a name="test-cases"></a>Casos de prueba  
  Los siguientes son casos de prueba concretos para el **cambiar Control de código fuente** comando área de prueba.  
 
-### <a name="case-5a-bind"></a>Caso 5a: enlazar  
+### <a name="case-5a-bind"></a>Case 5a: Enlazar  
  Enlace permite al usuario agregar información de control de código de origen a las soluciones y proyectos seleccionados. Normalmente se solicita el usuario para identificar un proyecto de control de código fuente a la que se trata de agregarse. El usuario no puede crear un nuevo proyecto de control de código fuente como parte de esta operación (oposición a agregar al Control de código fuente).  
 
 
@@ -58,7 +55,7 @@ Esta área de prueba de complemento de control de código fuente trata el cambio
 | Enlazar la solución que se encontraba nunca bajo control de código fuente | 1.  Cree una carpeta vacía en control de código fuente.<br />2.  Cree un proyecto de cliente.<br />3.  Abra **cambiar Control de código fuente** cuadro de diálogo (**archivo**, **Control de código fuente**, **cambiar Control de código fuente**).<br />4.  Enlazar la solución a una ubicación vacía en control de código fuente.<br />5.  Haga clic en **Aceptar** para cerrar el **cambiar Control de código fuente** cuadro de diálogo.<br />6.  Haga clic en **continuar con estos enlaces** en el cuadro de diálogo de confirmación.<br />7.  Haga clic en **Aceptar** en el cuadro de diálogo de advertencia si aparece. | Solución se agrega al control de código fuente.<br /><br /> Solución y proyecto se desprotegen. |
 | Cancelar el enlace | 1.  Cree un proyecto.<br />2.  Agregue la solución al control de código fuente.<br />3.  Abra el cuadro de diálogo Cambiar Control de código fuente.<br />4.  Desenlace todos.<br />5.  Haga clic en **Aceptar** botón para cerrar el cuadro de diálogo. Si este paso se realiza correctamente, vaya al paso siguiente.<br />6.  Vuelva a abrir el **cambiar Control de código fuente** cuadro de diálogo.<br />7.  Enlazar a una ubicación no relacionada.<br />8.  Haga clic en **cancelar**. | `Result from Step 5:`<br /><br /> La solución ya no está bajo control de código fuente<br /><br /> `Result from Step 8:`<br /><br /> Solución está todavía no bajo control de código fuente. |
 
-### <a name="case-5b-unbind"></a>Caso 5b: desenlazar  
+### <a name="case-5b-unbind"></a>Case 5b: Desenlazar  
  Desenlazar quita información de control de código de origen de sus soluciones y proyectos. La solución y proyectos afectados se basan en una combinación de selección del usuario y cómo se agregaron los elementos de control de código fuente.  
 
 |Acción|Pasos de prueba|Resultados esperados para comprobar|  
@@ -66,7 +63,7 @@ Esta área de prueba de complemento de control de código fuente trata el cambio
 |Desenlazar la solución que contiene un sistema de archivos o un proyecto Web de IIS local y el proyecto de un cliente|1.  Crear un sistema de archivos o un proyecto Web de IIS local.<br />2.  Agregue la solución al control de código fuente.<br />3.  Agregue un nuevo proyecto de cliente a la solución.<br />4.  Si se le solicite, acepte comprobar fuera de la solución.<br />5.  Abra el **cambiar Control de código fuente** cuadro de diálogo.<br />6.  Haga clic en **desenlazar**.<br />7.  Haga clic en **Aceptar** para cerrar el cuadro de diálogo.<br />8.  Intenta desproteger la solución, proyecto, elementos de la solución, los elementos de proyecto.|Soluciones y proyectos no están bajo control de código fuente.<br /><br /> Comandos de menú de Control de código fuente no aparecen.|  
 |Desenlazar Cancelar|1.  Cree un proyecto.<br />2.  Agregue la solución al control de código fuente.<br />3.  Abra el **cambiar Control de código fuente** cuadro de diálogo.<br />4.  Haga clic en **desenlazar todos**.<br />5.  Haga clic en **cancelar**.|Solución está bajo control de código fuente.|  
 
-### <a name="case-5c-rebind"></a>Caso c de 5: volver a enlazar  
+### <a name="case-5c-rebind"></a>Mayúsculas y minúsculas 5c: volver a enlazar  
  Volver a vincular es simplemente una combinación de desenlazar y enlazar: el proceso de volver a enlazar una proyecto o solución que estaba bajo control de código fuente y no está enlazado.  
 
 |Acción|Pasos de prueba|Resultados esperados para comprobar|  

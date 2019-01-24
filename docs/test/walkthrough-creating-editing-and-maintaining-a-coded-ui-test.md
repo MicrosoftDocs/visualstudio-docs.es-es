@@ -1,24 +1,25 @@
 ---
-title: Creación de una prueba automatizada de IU en Visual Studio
+title: Creación de una prueba automatizada de IU
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5fc3d03e42edbfa6ad4e625a1d4c77df2aadab27
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9bb64cae648f8ad747100fb0e27f83617603c804
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382401"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878239"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Tutorial: Crear, editar y mantener una prueba automatizada de IU
 
 En este tutorial aprenderá a crear, editar y mantener una prueba automatizada de IU para probar una aplicación de Windows Presentation Framework (WPF). En el tutorial se proporcionan soluciones para la corrección de pruebas que han sido interrumpidas por diversos problemas de sincronización y por la refactorización de controles.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="create-a-wpf-app"></a>Crear una aplicación WPF
 
@@ -361,10 +362,10 @@ En este tutorial aprenderá a crear, editar y mantener una prueba automatizada d
 
 ## <a name="faq"></a>Preguntas más frecuentes
 
-[Preguntas frecuentes sobre las pruebas automatizadas de IU](https://social.msdn.microsoft.com/Forums/en-US/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs?forum=vsautotest)
+[Preguntas frecuentes sobre las pruebas automatizadas de IU](https://social.msdn.microsoft.com/Forums/vsautotest/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs)
 
 ## <a name="see-also"></a>Vea también
 
 - [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
-- [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Configuraciones y plataformas compatibles con las pruebas automatizadas de IU y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 - [Editar pruebas automatizadas de IU con el Editor de pruebas automatizadas de IU](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

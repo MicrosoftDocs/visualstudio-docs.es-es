@@ -13,15 +13,15 @@ helpviewer_keywords:
 - UML, element properties
 ms.assetid: f82bcd34-7903-4c00-8da1-613efa07d223
 caps.latest.revision: 26
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4614eff754166842044a70fe61f59b62c4843500
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b132ee2aa0f67662fcfcad92b8ae945c2d66c680
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817917"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810311"
 ---
 # <a name="properties-of-associations-on-uml-class-diagrams"></a>Propiedades de las asociaciones de diagramas de clases de UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -19,12 +19,12 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7100e3fc6e18387cf8ef8cfdc2b485b610b3dc8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5fd5ab9b09956c41620947ad1bcf529550db4aca
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812717"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51752901"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Enlace de métodos abreviados de teclado a elementos de menú
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,12 +44,12 @@ Para enlazar un método abreviado de teclado a un comando de menú personalizado
   
 3. En el **presione las teclas de método abreviado** , escriba el método abreviado de teclado que desea usar.  
   
-    Si el acceso directo ya se usa en Visual Studio, el **método abreviado utilizado actualmente por** cuadro mostrará el comando que llama el acceso directo a actualmente.  
+    Si el acceso directo ya se usa en Visual Studio, el **método abreviado lo utiliza actualmente** cuadro mostrará el comando que llama el acceso directo a actualmente.  
   
 4. Probar diferentes combinaciones de claves hasta que encuentre uno que no está asignado.  
   
    > [!NOTE]
-   >  Métodos abreviados de teclado que use ALT pueden abrir un menú y no directamente ejecutar un comando. Por lo tanto, el **método abreviado utilizado actualmente por** cuadro puede estar en blanco cuando se escribe un método abreviado que incluye ALT. Puede comprobar que el acceso directo no abre un menú al cerrar la **opciones** cuadro de diálogo y, a continuación, presione las teclas.  
+   >  Métodos abreviados de teclado que use ALT pueden abrir un menú y no directamente ejecutar un comando. Por lo tanto, el **método abreviado lo utiliza actualmente** cuadro puede estar en blanco cuando se escribe un método abreviado que incluye ALT. Puede comprobar que el acceso directo no abre un menú al cerrar la **opciones** cuadro de diálogo y, a continuación, presione las teclas.  
   
    El siguiente procedimiento se supone que tiene un VSPackage existente con un comando de menú. Si necesita ayuda sobre cómo hacerlo, eche un vistazo a [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).  
   

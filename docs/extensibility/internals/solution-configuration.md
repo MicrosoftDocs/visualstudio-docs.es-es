@@ -1,9 +1,6 @@
 ---
 title: Configuración de soluciones | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solution configurations
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: caf55b341cc34bb4101f27d2468f0da8e5cf6c96
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec88e383c7ad0a74699f984691d337da7d6a2cac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875325"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835041"
 ---
 # <a name="solution-configuration"></a>Configuración de soluciones
 Configuraciones de soluciones almacenan propiedades de nivel de solución. Estos dirigen el comportamiento de la **iniciar** clave (F5) y **compilar** comandos. De forma predeterminada, estos comandos compilación e iniciar la configuración de depuración. Ambos comandos se ejecutan en el contexto de una configuración de soluciones. Esto significa que el usuario puede esperar F5 para iniciar y se configura independientemente de la solución activa a través de la configuración de compilación. El entorno está diseñado para optimizar para soluciones en lugar de los proyectos en cuanto a la generación y ejecución.  

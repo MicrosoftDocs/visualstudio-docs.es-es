@@ -1,8 +1,9 @@
 ---
-title: Actualizar Visual Studio 2017
+title: Actualizar Visual Studio
+titleSuffix: ''
 description: Obtenga información sobre cómo actualizar Visual Studio a la versión más reciente, paso a paso.
 ms.date: 04/23/2018
-ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48cdb36294f027fcd2e47fca8d903caf5856c236
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6452e2c53c58d0eb863efc509e42445fe1aa23e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906070"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828438"
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Actualizar Visual Studio 2017 a la versión más reciente
 
@@ -29,6 +30,9 @@ Y si desea probar algo antes de que lo publiquemos, piense en descargar también
 
 > [!IMPORTANT]
 > Para instalar, actualizar o modificar Visual Studio, debe iniciar sesión con una cuenta que tenga permisos administrativos. Para obtener más información, vea [Permisos de usuario y Visual Studio](../ide/user-permissions-and-visual-studio.md).
+
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Actualización de Visual Studio para Mac](/visualstudio/mac/update).
 
 ## <a name="update-visual-studio-2017-version-156-or-later"></a>Actualización de Visual Studio 2017, versión 15.6 o posterior
 

@@ -10,19 +10,18 @@ author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ddb535a61b654297c8b7d93ac13e1161725d769
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 13bcc65b3d8ffe4872c8b7d5f18b1bbf13bc67c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234639"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893333"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opciones, editor de texto, C/C++, experimental
 
-Al cambiar estas opciones, puede modificar el comportamiento relacionado con IntelliSense y la base de datos de exploración cuando programa en C o C++. Estas características son experimentales y se pueden modificar o quitar de Visual Studio en una versión futura. En este tema se describen las opciones de Visual Studio 2017. En el caso de Visual Studio 2015, consulte [Opciones, editor de texto, C/C++, Experimental](https://msdn.microsoft.com/library/mt591979.aspx).
+Al cambiar estas opciones, puede modificar el comportamiento relacionado con IntelliSense y la base de datos de exploración cuando programa en C o C++. Estas características son experimentales y se pueden modificar o quitar de Visual Studio en una versión futura. En este tema se describen las opciones de Visual Studio 2017. En Visual Studio 2015, seleccione **2015** en el selector situado encima de la tabla de contenido.
 
 Para acceder a esta página de propiedades, pulse **Ctrl+Q** para activar `Quick Launch` y, después, escriba "experimental". La función Inicio rápido encontrará la página después de las primeras letras. También puede acceder a ella eligiendo **Herramientas | Opciones** y expandiendo **Editor de texto**. Después, elija **C/C++** y **Experimental**.
 
@@ -37,7 +36,7 @@ IntelliSense predictivo limita el número de resultados que se muestran en la li
 
 ## <a name="enable-faster-project-load"></a>Habilitar la carga de proyectos más rápida
 
-**Visual Studio 2017 versión 15.3 y posteriores**: esta característica ahora se denomina **Habilitar almacenamiento en caché de los proyectos** y se ha movido a la página de propiedades [Configuración de proyecto de VC++](vcpp-project-settings-projects-and-solutions-options-dialog-box.md).
+**Visual Studio 2017 versión 15.3 y posteriores:** Esta característica ahora se denomina **Habilitar almacenamiento en caché de los proyectos** y se ha movido a la página de propiedades [Configuración de proyecto de VC++](vcpp-project-settings-projects-and-solutions-options-dialog-box.md).
 Esta opción permite que Visual Studio copie en caché los datos de un proyecto para que, cuando lo abra la próxima vez, se carguen esos datos en lugar de volver a calcularlos desde los archivos de proyecto. Usar datos en caché puede acelerar de forma significativa el tiempo de carga de un proyecto.
 
 ## <a name="additional-features-in-the-visual-studio-marketplace"></a>Características adicionales de Visual Studio Marketplace
@@ -57,4 +56,4 @@ Puede examinar las características adicionales del editor de texto en [Visual S
 ## <a name="see-also"></a>Vea también
 
 - [Opciones del editor específicas del lenguaje](../../ide/reference/setting-language-specific-editor-options.md)
-- [Refactorización en C++ (Blog de VC)](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)
+- [Refactorización en C++ (Blog de VC)](https://blogs.msdn.microsoft.com/vcblog/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview/)

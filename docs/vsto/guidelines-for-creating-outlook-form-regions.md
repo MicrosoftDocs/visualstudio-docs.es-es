@@ -1,9 +1,6 @@
 ---
-title: Instrucciones para crear áreas de formulario de Outlook
-ms.custom: ''
+title: Directrices para crear áreas de formulario de Outlook
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -11,34 +8,34 @@ dev_langs:
 helpviewer_keywords:
 - form regions [Office development in Visual Studio], guidelines
 - icons [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dfbe02c652c53f0b7e5b2322ce76e7c022487d2e
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: c5ecb22caaa7b86b4bc777b08e749d0fd75bd5e0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548172"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873254"
 ---
-# <a name="guidelines-to-create-outlook-form-regions"></a>Instrucciones para crear áreas de formulario de Outlook
+# <a name="guidelines-to-create-outlook-form-regions"></a>Directrices para crear áreas de formulario de Outlook
   La siguiente información puede ayudarle a optimizar las áreas del formulario y a evitar posibles problemas:  
   
--   [Usar nombres de región de formulario](#UsingFormRegions).  
+- [Usar nombres de región de formulario](#UsingFormRegions).  
   
--   [Deshabilitar la herencia del área de formulario](#DisablingInheritance).  
+- [Deshabilitar la herencia del área de formulario](#DisablingInheritance).  
   
--   [Descripción de los tipos y nombres de clase de mensaje](#ClassNames).  
+- [Entender los tipos y nombres de clase de mensaje](#ClassNames).  
   
--   [Diseño de áreas de formulario para el panel de lectura adyacentes](#ReadingPane).  
+- [Diseño áreas de formulario para el panel de lectura adyacentes](#ReadingPane).  
   
--   [Usar tamaños de icono óptimos](#UsingOptimal).  
+- [Usar tamaños de icono óptimos](#UsingOptimal).  
   
- Para obtener más información acerca de las áreas de formulario, vea [áreas de formulario de Outlook crear](../vsto/creating-outlook-form-regions.md).  
+  Para obtener más información acerca de las áreas de formulario, consulte [crear áreas de formulario](../vsto/creating-outlook-form-regions.md).  
   
- [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
+  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
 ##  <a name="UsingFormRegions"></a> Usar nombres de región de formulario  
  Existen varios nombres que se usan para describir el área de formulario. Es importante que comprenda la diferencia entre estos nombres y cómo afectan al área de formulario. En la siguiente tabla se describe cada uno de los nombres.  
@@ -47,12 +44,12 @@ ms.locfileid: "34548172"
 |----------------------|-----------------|  
 |Nombre de elemento del área de formulario|Es el nombre que especifica para el elemento **Área de formulario de Outlook** en el cuadro de diálogo **Agregar nuevo elemento** . Éste es el nombre del archivo de código del área de formulario que aparece en el **Explorador de soluciones**.|  
 |Propiedad<xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> |Debe especificar este nombre en la página **Escriba un texto descriptivo y seleccione sus preferencias de presentación** del asistente **Nueva área de formulario de Outlook** . Este nombre aparece como la propiedad **FormRegionName** en la ventana **Propiedades** .<br /><br /> Use la propiedad <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> para especificar la etiqueta que identifica el área de formulario en la interfaz de usuario (UI) de Outlook. En áreas de formulario independientes, este nombre aparece como un botón en la cinta de opciones del elemento de Outlook.<br /><br /> En las áreas de formulario adyacentes, este nombre aparece como texto de encabezado sobre el área de formulario.|  
-|Atributo `Microsoft.Office.Tools.Outlook.FormRegionName`|Al agregar un elemento **Área de formulario de Outlook** al proyecto, Visual Studio establece esta propiedad en el nombre completo del área de formulario. El nombre completo predeterminado es el nombre del complemento VSTO conectado al nombre del área de formulario mediante un punto; por ejemplo, `OutlookAddIn1.FormRegion1`.<br /><br /> Este nombre completo también aparece como atributo en la parte superior de la clase del generador del área del formulario.<br /><br /> Use la `Microsoft.Office.Tools.Outlook.FormRegionName` atributo para identificar de forma única el área de formulario a través de todos los complementos de VSTO para Outlook. No se puede cambiar el valor de la `Microsoft.Office.Tools.Outlook.FormRegionName` atributo cambiando el elemento de área de formulario o cambiando el <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> propiedad. Para cambiar este nombre, debe modificar el `Microsoft.Office.Tools.Outlook.FormRegionName` atributo en el archivo de código de área de formulario.|  
+|Atributo `Microsoft.Office.Tools.Outlook.FormRegionName`|Al agregar un elemento **Área de formulario de Outlook** al proyecto, Visual Studio establece esta propiedad en el nombre completo del área de formulario. El nombre completo predeterminado es el nombre del complemento VSTO conectado al nombre del área de formulario mediante un punto; por ejemplo, `OutlookAddIn1.FormRegion1`.<br /><br /> Este nombre completo también aparece como atributo en la parte superior de la clase del generador del área del formulario.<br /><br /> Use el atributo `Microsoft.Office.Tools.Outlook.FormRegionName` para identificar de forma exclusiva el área de formulario en todos los complementos VSTO de Outlook. No puede cambiar el valor del atributo `Microsoft.Office.Tools.Outlook.FormRegionName` cambiando el nombre del elemento del área de formulario, ni cambiando la propiedad <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A>. Para cambiar este nombre, debe modificar el atributo `Microsoft.Office.Tools.Outlook.FormRegionName` en el archivo de código del área de formulario.|  
   
 ##  <a name="DisablingInheritance"></a> Deshabilitar la herencia del área de formulario  
- De forma predeterminada, una clase de mensaje personalizada hereda todas las asociaciones de área de formulario de la clase de mensaje base. Por ejemplo, una clase de mensaje denominada `IPM.Task.Contoso` deriva de `IPM.Task`. Por lo tanto, `IPM.Task.Contoso` hereda las asociaciones de área de formulario de `IPM.Task`.  
+ De forma predeterminada, una clase de mensaje personalizada hereda todas las asociaciones de área de formulario de la clase de mensaje base. Por ejemplo, una clase de mensaje denominada `IPM.Task.Contoso` se deriva de `IPM.Task`. Por consiguiente, `IPM.Task.Contoso` hereda las asociaciones del área de formulario de `IPM.Task`.  
   
- Si no desea que el área de formulario esté asociada a una clase de mensaje derivada, establezca la propiedad <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.ExactMessageClass%2A> del área de formulario en **true**. Por ejemplo, si asocia un área de formulario adyacente a `IPM.Task` y establezca el <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.ExactMessageClass%2A> propiedad **true**, el área de formulario sólo se anexará a la parte inferior de un formulario de tareas estándar. El área de formulario no se anexará a la parte inferior de ninguna versión personalizada de un formulario de tareas estándar.  
+ Si no desea que el área de formulario esté asociada a una clase de mensaje derivada, establezca la propiedad <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.ExactMessageClass%2A> del área de formulario en **true**. Por ejemplo, si asocia un área de formulario adyacente con `IPM.Task` y establezca el <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.ExactMessageClass%2A> propiedad **true**, el área de formulario sólo se anexará a la parte inferior de un formulario de tareas estándar. El área de formulario no se anexará a la parte inferior de ninguna versión personalizada de un formulario de tareas estándar.  
   
 ##  <a name="ClassNames"></a> Comprender los tipos y nombres de clase de mensaje  
  El nombre de tipo de un elemento de Outlook difiere del nombre de la clase de mensaje de un elemento de Outlook. Por ejemplo, el nombre de tipo de un elemento RSS es `Microsoft.Office.Interop.Outlook.PostItem`. El nombre de clase de mensaje de un elemento RSS es `IPM.Post.RSS`.  
@@ -66,34 +63,32 @@ ms.locfileid: "34548172"
   
  Por ejemplo, si un elemento que tiene un área de formulario adyacente se abre en el panel de lectura, se puede producir la situación siguiente:  
   
-1.  Seleccione texto en el cuadro de texto que está incluido en el área de formulario.  
+1. Seleccione texto en el cuadro de texto que está incluido en el área de formulario.  
   
-2.  Presione **eliminar**.  
+2. Presione **eliminar**.  
   
-3.  Se eliminará el elemento de correo al completo, en lugar del texto incluido en el cuadro de texto.  
+3. Se eliminará el elemento de correo al completo, en lugar del texto incluido en el cuadro de texto.  
   
- Si diseña un área de formulario adyacente que contenga controles de entrada, pruebe los controles en el panel de lectura para asegurarse de que funcionan correctamente. Considere la posibilidad de agregar código personalizado que deshabilite los controles que no funcionen según lo esperado.  
+   Si diseña un área de formulario adyacente que contenga controles de entrada, pruebe los controles en el panel de lectura para asegurarse de que funcionan correctamente. Considere la posibilidad de agregar código personalizado que deshabilite los controles que no funcionen según lo esperado.  
   
- Asimismo, también puede establecer la propiedad <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.ShowInspectorRead%2A> del área de formulario en **False**. De esta manera, el área de formulario no se podrá usar en el panel de lectura.  
+   Asimismo, también puede establecer la propiedad <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.ShowInspectorRead%2A> del área de formulario en **False**. De esta manera, el área de formulario no se podrá usar en el panel de lectura.  
   
 ##  <a name="UsingOptimal"></a> Usar tamaños de icono óptimos  
  Puede especificar qué iconos desea mostrar en el área de formulario, estableciendo las propiedades de iconos en el grupo de propiedades **Iconos** de la ventana **Propiedades** . Use las siguientes instrucciones para lograr una calidad visual inmejorable:  
   
--   Para el icono **Página** , use un archivo de formato PNG (Portable Network Graphics).  
+- Para el icono **Página** , use un archivo de formato PNG (Portable Network Graphics).  
   
--   Los iconos**Ventana** deben tener 32 por 32 píxeles.  
+- Los iconos**Ventana** deben tener 32 por 32 píxeles.  
   
--   Todos los demás iconos deben ser de 16 por 16 píxeles.  
+- Todos los demás iconos deben ser de 16 por 16 píxeles.  
   
- El icono **Página** aparecerá en la cinta de opciones de un inspector, en aquellos elementos que tengan áreas de formulario de tipo Independiente, Reemplazo o Reemplazo total.  
+  El icono **Página** aparecerá en la cinta de opciones de un inspector, en aquellos elementos que tengan áreas de formulario de tipo Independiente, Reemplazo o Reemplazo total.  
   
- El **ventana** icono aparece en el área de notificación y en el **Alt**+**ficha** elementos de cuadro de diálogo para abrir ese mostrar reemplazo o reemplazo total formulario regiones.  
+  El **ventana** icono aparece en el área de notificación y en el **Alt**+**ficha** elementos de cuadro de diálogo para abrir esa presentación reemplazo o formulario de reemplazo regiones.  
   
 ## <a name="see-also"></a>Vea también  
  [Obtener acceso a un área de formulario en tiempo de ejecución](../vsto/accessing-a-form-region-at-run-time.md)   
  [Crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md)   
- [Tutorial: Diseñar un área de formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Cómo: agregar un área de formulario a un proyecto de complemento de Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
+ [Tutorial: Diseñar un formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
+ [Cómo: Agregar un área de formulario a un proyecto de complemento de Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [Asociar un área de formulario a una clase de mensaje de Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  
-  
-  

@@ -1,8 +1,6 @@
 ---
 title: Contadores de Windows y de CPU | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.counters
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 585fb2fa8d2662d1a2bec7915bf1f08a4dc771e4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ddf173f39accb0bb9d2907349c82accdd4f21b40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865926"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912641"
 ---
 # <a name="cpu-and-windows-counters"></a>Contadores de Windows y de CPU
 
@@ -97,7 +95,7 @@ Para enumerar los contadores disponibles en un equipo en el IDE de Visual Studio
 
       **Nota** Haga clic en **Cancelar** para volver a la configuración de muestreo anterior.
 
-     O bien
+     o bien
 
    - Seleccione **Contadores de CPU** y, a continuación, seleccione **Recopilar contadores de CPU**. Los contadores de CPU se enumeran en **Contadores disponibles**.
 
@@ -127,13 +125,11 @@ Mediante la herramienta de línea de comandos [VSPerfCmd](../profiling/vsperfcmd
 
      **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**
 
-     donde *\<Visual Studio Performance Tools Directory>* es la ruta de acceso al directorio de herramientas de rendimiento de la instalación de Visual Studio, normalmente
-
-     *C:\Archivos de programa\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*
+     donde *\<Visual Studio Performance Tools Directory>* es la ruta de acceso al directorio de herramientas de rendimiento de la instalación de Visual Studio. Para obtener la ruta de acceso a las herramientas de rendimiento, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
 ## <a name="see-also"></a>Vea también
 
 [Información general](../profiling/overviews-performance-tools.md)  
-[Elección de eventos de muestreo](../profiling/how-to-choose-sampling-events.md)  
-[Recopilación de datos de contadores de CPU](../profiling/how-to-collect-cpu-counter-data.md)  
+[Cómo: Elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md)  
+[Cómo: Recopilar datos de contadores de CPU](../profiling/how-to-collect-cpu-counter-data.md)  
 [Cómo: Recopilar datos de contadores de Windows](../profiling/how-to-collect-windows-counter-data.md)

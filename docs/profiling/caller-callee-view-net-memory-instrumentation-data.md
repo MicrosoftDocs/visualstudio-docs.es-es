@@ -1,8 +1,6 @@
 ---
 title: 'Vista Llamador y destinatario: datos de instrumentación de memoria de .NET | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Caller/Callee view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6005bfcd4c69220c26929a8ad57f0e37923f388c
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: a2ac6322f7264f6a6816b6724f0e477c7daa977c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34265506"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833474"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>Vista Llamador y destinatario: datos de instrumentación de memoria de .NET
 La vista Llamador y destinatario de los datos de generación de perfiles de memoria de .NET recopilados mediante el método de instrumentación muestra la asignación y los datos de tiempo con relación a una función seleccionada y las funciones primarias y secundarias de esa función seleccionada. La vista Llamador y destinatario contiene tres cuadrículas.  
@@ -32,7 +30,7 @@ La vista Llamador y destinatario de los datos de generación de perfiles de memo
   
 ## <a name="general"></a>General  
   
-|Columna|Description|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Nombre de la función**|Nombre de la función.|  
 |**Dirección de la función**|Dirección de la función.|  
@@ -50,7 +48,7 @@ La vista Llamador y destinatario de los datos de generación de perfiles de memo
   
 ## <a name="net-memory-allocation-values"></a>Valores de asignación de memoria de .NET  
   
-|Columna|Description|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Asignaciones exclusivas**|-   En la función actual, el número de objetos creados cuando la función estaba ejecutando código en el cuerpo de la función (es decir, cuando la función estaba en la parte superior de la pila de llamadas). El número no incluye los objetos creados en las funciones a las que llamó esta función.<br />-   En una función de llamador, el número de asignaciones exclusivas de la función actual generadas por llamadas de esta función de llamador.<br />-   En una función de destinatario, el número de objetos creados por las instancias de esta función a las que llamó la función actual. Este número no incluye los objetos creados por funciones a las que llamó la función de destinatario.|  
 |**Porcentaje de asignaciones exclusivas**|El porcentaje de todos los objetos que se crearon durante la ejecución de la generación de perfiles que eran asignaciones exclusivas de esta función.|  
@@ -64,7 +62,7 @@ La vista Llamador y destinatario de los datos de generación de perfiles de memo
 ## <a name="elapsed-inclusive-values"></a>Valores de tiempo inclusivo transcurrido  
  Los valores inclusivos transcurridos indican el tiempo que una función estuvo en la pila de llamadas. Incluye el tiempo dedicado a funciones secundarias y llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S.  
   
-|Columna|Description|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Tiempo inclusivo transcurrido**|-   En la función actual, el tiempo dedicado a la función. El valor incluye el tiempo dedicado a funciones secundarias y llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S.<br />-   En una función de llamador, la cantidad de tiempo inclusivo transcurrido de la función actual generado por llamadas de esta función de llamador.<br />-   En una función de destinatario, el tiempo dedicado a esta función generado por llamadas de la función actual. El valor incluye el tiempo dedicado a funciones secundarias y llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S.|  
 |**Porcentaje de tiempo inclusivo transcurrido**|El porcentaje de tiempo inclusivo transcurrido total de la ejecución de generación de perfiles que se ha empleado en el tiempo inclusivo transcurrido de esta función en este contexto.|  
@@ -75,7 +73,7 @@ La vista Llamador y destinatario de los datos de generación de perfiles de memo
 ## <a name="elapsed-exclusive-values"></a>Valores de tiempo exclusivo transcurrido  
  Los valores exclusivos transcurridos indican el tiempo que una función se estaba ejecutando directamente en la parte superior de la pila de llamadas. Incluye el tiempo dedicado llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S, pero no incluye el tiempo dedicado a funciones secundarias.  
   
-|Columna|Description|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Tiempo exclusivo transcurrido**|-   En la función actual, el tiempo dedicado a la ejecución del cuerpo de la función. El valor no incluye el tiempo dedicado a funciones secundarias, pero incluye llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S.<br />-   En una función de llamador, la cantidad de tiempo exclusivo transcurrido de la función actual generado por llamadas de esta función de llamador.<br />-   En una función de destinatario, el tiempo dedicado a esta función generado por llamadas de la función actual. El valor no incluye el tiempo dedicado a funciones secundarias de la función de destinatario, pero incluye las llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S.|  
 |**Porcentaje de tiempo exclusivo transcurrido**|El porcentaje de tiempo exclusivo transcurrido total de la ejecución de generación de perfiles que se ha empleado en el tiempo exclusivo transcurrido total de esta función en este contexto.|  
@@ -86,7 +84,7 @@ La vista Llamador y destinatario de los datos de generación de perfiles de memo
 ## <a name="application-inclusive-values"></a>Valores de tiempo inclusivo de aplicación  
  Los valores inclusivos de aplicación indican el tiempo que una función estuvo en la pila de llamadas. No incluye el tiempo dedicado a llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S, pero incluye el tiempo dedicado a funciones secundarias.  
   
-|Columna|Description|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Tiempo inclusivo de aplicación**|-   En la función actual, el tiempo dedicado a la función y sus funciones secundarias. El valor no incluye el tiempo dedicado a llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S.<br />-   En una función de llamador, la cantidad de tiempo inclusivo de aplicación de la función actual generado por llamadas de esta función de llamador.<br />-   En una función de destinatario, el tiempo dedicado a esta función y sus funciones secundarias generado por llamadas de la función actual. El valor no incluye el tiempo dedicado a llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S.|  
 |**Porcentaje de tiempo inclusivo de aplicación**|El porcentaje de tiempo inclusivo transcurrido total de la ejecución de generación de perfiles que se ha empleado en el tiempo inclusivo de aplicación total de esta función en este contexto.|  
@@ -97,7 +95,7 @@ La vista Llamador y destinatario de los datos de generación de perfiles de memo
 ## <a name="application-exclusive-values"></a>Valores de tiempo exclusivo de aplicación  
  Los valores exclusivos de aplicación indican el tiempo dedicado a la función, excluido el tiempo dedicado a funciones secundarias. El tiempo indicado también excluye el tiempo dedicado a las llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S.  
   
-|Columna|Description|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Tiempo exclusivo de aplicación**|-   En la función actual, el tiempo dedicado a la ejecución del cuerpo de la función. El valor no incluye el tiempo dedicado a las funciones secundarias ni a las llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S.<br />-   En una función de llamador, la cantidad de tiempo exclusivo de aplicación de la función actual generado por llamadas de esta función de llamador.<br />-   En una función de destinatario, el tiempo dedicado a esta función generado por llamadas de la función actual. El valor no incluye el tiempo dedicado a las funciones secundarias de la función de destinatario ni a las llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S.|  
 |**Porcentaje de tiempo exclusivo de aplicación**|El porcentaje de tiempo exclusivo transcurrido total de la ejecución de generación de perfiles que se ha empleado en el tiempo exclusivo de aplicación total de esta función en este contexto.|  

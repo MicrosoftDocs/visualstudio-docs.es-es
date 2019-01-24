@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6ce67df5dd55bd8c1ae55bb19fe2a19aed9e40f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6aebe983c33416d1c3d12d18c272fd1e4de27467
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727115"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093111"
 ---
 # <a name="idebugexpressiongetresultasdebugproperty"></a>IDebugExpression::GetResultAsDebugProperty
 Devuelve el resultado de la evaluación de expresión como una propiedad de depuración y el valor devuelto de la operación.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetResultAsDebugProperty(  
    HRESULT*          phrResult,  
    IDebugProperty**  ppdp  
@@ -53,7 +53,7 @@ HRESULT GetResultAsDebugProperty(
 |`E_PENDING`|La operación todavía está pendiente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método devuelve el resultado de la evaluación de expresiones como un `IDebugProperty` y la operación `HRESULT`.  
+ Este método devuelve el resultado de la evaluación de expresión como una `IDebugProperty` y la operación `HRESULT`.  
   
  Este método devuelve `S_OK` y `phrResult` devuelve `E_ABORT` si `Abort` anula la operación.  
   

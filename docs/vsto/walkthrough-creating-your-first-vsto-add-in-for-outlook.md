@@ -1,9 +1,6 @@
 ---
 title: 'Tutorial: Crear el primer complemento VSTO para Outlook'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fc0f2e7cc7dc40dc305f7860223b5d4acf19a573
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fbb5c938d6dbd269732b49584fc4e3831e869b0e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950968"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962550"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>Tutorial: Crear el primer complemento VSTO para Outlook
   Este tutorial muestra cómo crear un complemento de VSTO para Microsoft Office Outlook. Las características que cree en este tipo de solución estarán disponibles para la propia aplicación, con independencia del elemento de Outlook que se abra. Para obtener más información, consulte [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -145,5 +142,3 @@ ms.locfileid: "49950968"
  [Compilar soluciones de Office](../vsto/building-office-solutions.md)   
  [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)   
  [Introducción a las plantillas de proyecto de Office](../vsto/office-project-templates-overview.md)  
-  
-  

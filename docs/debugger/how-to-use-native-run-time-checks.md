@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: utilizar comprobaciones nativas en tiempo de ejecución | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Utilizar comprobaciones nativas en tiempo de ejecución | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - c.runtime.errorchecks
@@ -39,14 +37,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc4e4b9ee24bc7be9126866ae804f1b3c6d6dba6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ae7b736a3273a9b20af0ee0be035a3059c473d67
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860817"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269649"
 ---
-# <a name="how-to-use-native-run-time-checks"></a>Cómo: Utilizar comprobaciones nativas en tiempo de ejecución
+# <a name="how-to-use-native-run-time-checks"></a>Procedimiento Uso de comprobaciones nativas en tiempo de ejecución
 En Visual C++, puede realizar [runtime_checks](/cpp/preprocessor/runtime-checks) nativas para detectar errores en tiempo de ejecución, tales como:  
   
 - Daños en el puntero de la pila  
@@ -81,6 +79,6 @@ En Visual C++, puede realizar [runtime_checks](/cpp/preprocessor/runtime-checks)
   
 ## <a name="see-also"></a>Vea también  
  [Depurar en Visual Studio](../debugger/index.md)  
- [Guía de características del depurador](../debugger/debugger-feature-tour.md)   
+ [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)   
  [runtime_checks](/cpp/preprocessor/runtime-checks)   
  [Comprobar errores en tiempo de ejecución](/cpp/c-runtime-library/run-time-error-checking)

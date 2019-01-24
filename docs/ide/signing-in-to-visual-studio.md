@@ -1,9 +1,9 @@
 ---
 title: Iniciar sesión en Visual Studio
-ms.custom: ''
-ms.date: 11/16/2017
+titleSuffix: ''
+ms.custom: seodec18
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: TerryGLee
@@ -11,20 +11,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67207d653d7300ecc5d0a7ae7a85ddea1bc0d7e9
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: dccb2fb9c4fce456055b136dace7e95d02647a94
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542499"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840796"
 ---
 # <a name="sign-in-to-visual-studio"></a>Iniciar sesión en Visual Studio
 
 Puede personalizar y optimizar la experiencia de desarrollo en Visual Studio estableciendo la cuenta de personalización e iniciando sesión en el IDE.
 
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Iniciar sesión en Visual Studio para Mac](/visualstudio/mac/signing-in).
+
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>¿Por qué debo iniciar sesión en Visual Studio?
 
-Cuando inicia sesión, obtiene una experiencia de Visual Studio más enriquecida. Por ejemplo, después de iniciar sesión, puede sincronizar la configuración entre todos los dispositivos, extender una versión de evaluación y conectarse automáticamente a un servicio de Azure, etc.
+Cuando inicia sesión, obtiene una experiencia de Visual Studio más enriquecida. Por ejemplo, después de iniciar sesión, puede [sincronizar la configuración](synchronized-settings-in-visual-studio.md) de todos los dispositivos, extender una versión de evaluación y conectarse automáticamente a un servicio de Azure, etc.
 
 Esta es una lista completa de lo que puede esperar y lo que puede hacer después de iniciar sesión:
 
@@ -66,5 +69,7 @@ Si encuentra algún problema al iniciar sesión, vea la página de [soporte téc
 
 ## <a name="see-also"></a>Vea también
 
-* [Cómo desbloquear Visual Studio](../ide/how-to-unlock-visual-studio.md)
-* [Información general sobre IDE de Visual Studio](../ide/visual-studio-ide.md)
+* [Desbloqueo de Visual Studio](../ide/how-to-unlock-visual-studio.md)
+* [Introducción al IDE de Visual Studio](../get-started/visual-studio-ide.md)
+* [Iniciar sesión (Visual Studio para Mac)](/visualstudio/mac/signing-in)
+* [Activación (Visual Studio para Mac)](/visualstudio/mac/activation)

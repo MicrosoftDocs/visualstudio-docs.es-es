@@ -1,9 +1,6 @@
 ---
 title: Elemento Groups | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Groups
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 816716cb269df331b17c0ef01a26dbae4a389c76
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a8a7d17161b6d14926232f66905d7556a244e29
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895436"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874555"
 ---
 # <a name="groups-element"></a>Elemento Groups
 Contiene entradas que definen los grupos de comandos de un paquete VSPackage.  

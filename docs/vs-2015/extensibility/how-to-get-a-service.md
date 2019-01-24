@@ -15,12 +15,12 @@ ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 426d0b71a23ea53a21b382ec02b8853f9ff2deb2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ea5f3be4f5792213c5625e4c287195161eb1dd62
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229689"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785071"
 ---
 # <a name="how-to-get-a-service"></a>Cómo: obtener un servicio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ if (log == null) return;
  Aquí le mostramos cómo obtener un servicio del objeto DTE.  
   
 ```csharp  
-// Start with the DTE object, for example:   
+// Start with the DTE object, for example:   
 // using EnvDTE;  
 // DTE dte = (DTE)GetService(typeof(DTE));  
   

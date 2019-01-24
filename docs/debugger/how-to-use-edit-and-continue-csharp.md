@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: utilizar editar y continuar (C#) | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Usar Editar y continuar (C#) | Microsoft Docs
 ms.date: 10/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 41e97f488344e3d34ce326a3d35880d94da4ad9a
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
-ms.translationtype: MT
+ms.openlocfilehash: b694f2d3603c9b768a9a4ddbf7b2c66cf5c61b21
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382810"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861973"
 ---
-# <a name="how-to-use-edit-and-continue-c"></a>Cómo: Utilizar Editar y continuar (C#)
+# <a name="how-to-use-edit-and-continue-c"></a>Procedimiento Uso de Editar y continuar (C#)
 Con Editar y continuar, puede realizar y aplicar los cambios en el código en modo de interrupción durante la depuración, sin tener que detener y reiniciar la sesión de depuración.  
 
 Editar y continuar para C# lleva a cabo automáticamente cuando realice cambios en el código en modo de interrupción y luego continuar con la depuración mediante el uso de **continuar**, **paso**, o **Establecer instrucción siguiente**, o evaluar una función en una ventana del depurador.  
@@ -46,7 +44,7 @@ La configuración surte efecto cuando se inicie o reinicie la sesión de depurac
    
 1. Durante la depuración en modo de interrupción, realizar un cambio en el código fuente.  
    
-1. Desde el **depurar** menú, haga clic en **continuar**, **paso**, o **Establecer instrucción siguiente**, o evaluar una función en una ventana del depurador.  
+1. En el menú **Depurar**, haga clic en **Continuar**, **Paso** o **Establecer instrucción siguiente** o evalúe una función en una ventana del depurador.  
    
    Depuración continuará con el código compilado de nuevo. 
 

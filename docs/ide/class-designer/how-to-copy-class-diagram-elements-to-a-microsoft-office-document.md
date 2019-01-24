@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: Copiar elementos del diagrama de clases en un documento de Microsoft Office (Diseñador de clases)'
+title: Procedimiento Copiar elementos del diagrama de clases en un documento de Microsoft Office (Diseñador de clases)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, copying elements to Office documents
@@ -13,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b34328a4bff4abdd2db29e9a41e9d04ba43d4f9
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 4c29a3c167f6bf8f0588f94f3ed843d15bc02bc5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956924"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916298"
 ---
-# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Cómo: Copiar elementos del diagrama de clases en un documento de Microsoft Office
+# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Procedimiento Copiar elementos de un diagrama de clases en un documento de Microsoft Office
 
 Puede copiar las formas de un diagrama de clases de .NET (archivo *.cd*) en otros documentos. Obtendrá una copia de la forma o su código subyacente según el tipo de documento donde lo pegue. Para copiar las formas de diagramas de clase UML en un proyecto de modelado, vea [Exportar diagramas como imágenes](../../modeling/export-diagrams-as-images.md).
 
@@ -45,4 +44,4 @@ También puede elegir **Copiar** en lugar de **Copiar imagen**. **Copiar** copia
 ## <a name="see-also"></a>Vea también
 
 - [Cómo: Imprimir diagramas de clases](how-to-print-class-diagrams.md)
-- [Cómo: Exportar los diagramas de clases como imágenes](how-to-export-class-diagrams-as-images.md)
+- [Cómo: Exportar diagramas de clases como imágenes](how-to-export-class-diagrams-as-images.md)

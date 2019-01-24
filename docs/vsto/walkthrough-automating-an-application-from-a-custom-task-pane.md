@@ -1,9 +1,6 @@
 ---
 title: 'Tutorial: Automatizar una aplicación desde un panel de tareas personalizado'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25d6dd29f989f1ea2bbf95ce2b32e7d031e1953e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 511fc73397355c8870f53a410d79ff1ab73321f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674047"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915093"
 ---
 # <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Tutorial: Automatizar una aplicación desde un panel de tareas personalizado
   En este tutorial se muestra cómo crear un panel de tareas personalizado que automatiza PowerPoint. El panel de tareas personalizado inserta fechas en una diapositiva cuando el usuario hace clic en un control <xref:System.Windows.Forms.MonthCalendar> que se encuentra en el panel de tareas personalizado.  
@@ -57,7 +54,7 @@ ms.locfileid: "35674047"
   
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto  
   
-1.  Cree un proyecto de complemento de VSTO de PowerPoint con el nombre **MyAddIn**, usando la plantilla de proyecto de complemento de PowerPoint. Para obtener más información, consulte [Cómo: proyectos de creación de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Cree un proyecto de complemento de VSTO de PowerPoint con el nombre **MyAddIn**, usando la plantilla de proyecto de complemento de PowerPoint. Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] abre el archivo de código **ThisAddIn.cs** o **ThisAddIn.vb** y agrega el proyecto **MyAddIn** al **Explorador de soluciones**.  
   
@@ -90,7 +87,7 @@ ms.locfileid: "35674047"
      [!code-csharp[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#1)]
      [!code-vb[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#1)]  
   
-3.  Agregue el código siguiente a la clase `MyUserControl` . Este código declara un objeto <xref:Microsoft.Office.Interop.PowerPoint.Shape> como miembro de `MyUserControl`. En el siguiente paso, usará este <xref:Microsoft.Office.Interop.PowerPoint.Shape> para agregar un cuadro de texto a una diapositiva de la presentación activa.  
+3.  Agregue el código siguiente a la clase `MyUserControl`. Este código declara un objeto <xref:Microsoft.Office.Interop.PowerPoint.Shape> como miembro de `MyUserControl`. En el siguiente paso, usará este <xref:Microsoft.Office.Interop.PowerPoint.Shape> para agregar un cuadro de texto a una diapositiva de la presentación activa.  
   
      [!code-csharp[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#2)]
      [!code-vb[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#2)]  
@@ -139,14 +136,12 @@ ms.locfileid: "35674047"
   
 -   Crear un panel de tareas personalizado en un complemento de VSTO para una aplicación diferente. Para obtener más información acerca de las aplicaciones que admiten paneles de tareas personalizados, vea [paneles de tareas personalizados](../vsto/custom-task-panes.md).  
   
--   Crear un botón de la cinta de opciones que se pueda usar para ocultar o mostrar un panel de tareas personalizado. Para obtener más información, consulte [Tutorial: sincronizar un panel de tareas personalizado con un botón de la cinta de opciones](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
+-   Crear un botón de la cinta de opciones que se pueda usar para ocultar o mostrar un panel de tareas personalizado. Para obtener más información, vea [Tutorial: Sincronizar un panel de tareas personalizado con un botón de la cinta de opciones](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
   
--   Crear un panel de tareas personalizado para cada mensaje de correo que se abre en Outlook. Para obtener más información, consulte [Tutorial: mostrar paneles de tareas personalizados con mensajes de correo electrónico en Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
+-   Crear un panel de tareas personalizado para cada mensaje de correo que se abre en Outlook. Para obtener más información, vea [Tutorial: Mostrar paneles de tareas personalizados con mensajes de correo electrónico en Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Paneles de tareas personalizados](../vsto/custom-task-panes.md)   
- [Cómo: agregar un panel de tareas personalizado a una aplicación](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
+ [Cómo: Agregar un panel de tareas personalizado a una aplicación](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
  [Tutorial: Sincronizar un panel de tareas personalizado con un botón de la cinta de opciones](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
  [Tutorial: Mostrar paneles de tareas personalizados con mensajes de correo electrónico en Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
-  
-  

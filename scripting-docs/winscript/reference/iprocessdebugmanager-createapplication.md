@@ -1,5 +1,5 @@
 ---
-title: IProcessDebugManager::CreateApplication | Documentos de Microsoft
+title: 'Iprocessdebugmanager:: CreateApplication | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a051462f32acae238ca5843e283fe6001ec43fc1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6f182dd92d181067f930f415ec9332df2658c3ad
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729215"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088639"
 ---
 # <a name="iprocessdebugmanagercreateapplication"></a>IProcessDebugManager::CreateApplication
 Crea un nuevo objeto de aplicación de depuración para esta aplicación.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT CreateApplication(  
    IDebugApplication**  ppda  
 );  

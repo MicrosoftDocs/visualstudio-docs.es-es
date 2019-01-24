@@ -1,8 +1,6 @@
 ---
 title: CvCreateDefaultMarkerSeriesOfDefaultProvider (función) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvCreateDefaultMarkerSeriesOfDefaultProvider
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c68c7870430033d9ff20b94f51e516038c9eba6
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e50e0d109ac5cfd17c5913213c4b86b406927593
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749192"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967659"
 ---
 # <a name="cvcreatedefaultmarkerseriesofdefaultprovider-function"></a>Función CvCreateDefaultMarkerSeriesOfDefaultProvider
 Crea la serie de marcadores predeterminados de un proveedor predeterminado.  

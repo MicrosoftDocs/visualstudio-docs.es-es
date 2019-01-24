@@ -20,22 +20,22 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 588909bae9c5cf198d3108490111b36d5a2d182b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0f144e733bf115cc98bf61b23a2ed3e4e3cda1e0
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632865"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346220"
 ---
 # <a name="invalid-replacer-argument"></a>Argumento reemplazante no válido
-Se ha realizado un intento de invocar `JSON.stringify` con un argumento que no es válido. El `replacer` argumento debe ser una función o una matriz.  
+Se ha intentado invocar `JSON.stringify` con un argumento que no es válido. El `replacer` argumento debe ser una función o una matriz.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
 -   Cambiar el `replacer` argumento a una función o una matriz.  
   
 ## <a name="example"></a>Ejemplo  
- El código de este ejemplo produce un error de tiempo de ejecución porque `memberfilter` es un objeto en lugar de una función o una matriz.  
+ El código en este ejemplo genera un error de tiempo de ejecución porque `memberfilter` es un objeto en lugar de una función o matriz.  
   
 ```JavaScript  
 var contact = new Object();  

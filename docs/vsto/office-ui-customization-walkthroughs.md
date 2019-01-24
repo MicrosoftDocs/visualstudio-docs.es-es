@@ -1,9 +1,6 @@
 ---
 title: Tutoriales de personalización de la interfaz de usuario de Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 93a945278d2565bb98706e9303bc662a78cd00ee
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a9632fb12ec5567f527c0a5368af5645a91cddeb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674857"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826590"
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Tutoriales de personalización de la interfaz de usuario de Office
   En los siguientes tutoriales se muestran mecanismos para personalizar la interfaz de usuario (UI) de las aplicaciones de Microsoft Office mediante personalizaciones de nivel del documento y complementos de VSTO.  
@@ -92,5 +89,3 @@ ms.locfileid: "35674857"
  [Introducción a &#40;desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Tareas comunes en la programación de Office](../vsto/common-tasks-in-office-programming.md)   
  [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

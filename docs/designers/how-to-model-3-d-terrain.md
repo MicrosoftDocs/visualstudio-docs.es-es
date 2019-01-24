@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: modelar un terreno en 3D'
+title: Procedimiento Modelar un terreno en 3D
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24fdf5f6c80dbb9d338b4c655b7cea05592a91ac
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 65590bb387b2f752a11f60bae82891a8ea3a713f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977751"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902596"
 ---
-# <a name="how-to-model-3d-terrain"></a>Cómo: Modelar un terreno en 3D
+# <a name="how-to-model-3d-terrain"></a>Procedimiento Modelar un terreno en 3D
 
 En este artículo se muestra cómo usar el Editor de modelos para crear un modelo de terreno en 3D.
 
@@ -55,7 +54,7 @@ El modelo de terreno está completado. Este es el modelo final de nuevo, con som
 
 ![Escena 3D en la que se muestra un modelo de terreno](../designers/media/digit-terrain-model.png)
 
-Puede usar este modelo de terreno para mostrar el efecto del sombreador de degradado que se describe en [Cómo: Crear un sombreador de degradado basado en geometría](../designers/how-to-create-a-geometry-based-gradient-shader.md).
+Puede usar este modelo de terreno para mostrar el efecto del sombreador de degradado que se describe en [Cómo: Crear un sombreador de gradiente basado en geometría](../designers/how-to-create-a-geometry-based-gradient-shader.md).
 
 ## <a name="see-also"></a>Vea también
 

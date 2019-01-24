@@ -1,9 +1,6 @@
 ---
-title: 'Nueva generación de proyectos: Aspectos técnicos, primera parte | Microsoft Docs'
-ms.custom: ''
+title: 'Nueva generación de proyectos: Internamente, la primera parte | Documentos de Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f678e15a26a85245e22edd323008ab517ea1e39c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8ca4ac8523185f1fe818ffa287ed9083b6618c04
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907071"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827655"
 ---
-# <a name="new-project-generation-under-the-hood-part-one"></a>Nueva generación de proyectos: aspectos técnicos, primera parte
+# <a name="new-project-generation-under-the-hood-part-one"></a>Nueva generación de proyectos: Internamente, la primera parte
 ¿Cómo crear su propio tipo de proyecto ha pensado alguna vez? ¿Se ha preguntado qué pasará cuando cree un nuevo proyecto? Vamos a echar un vistazo en segundo plano y ver lo que realmente está ocurriendo.  
   
  Hay varias tareas que coordina la Visual Studio para usted:  
@@ -124,7 +121,7 @@ devenv /installvstemplates
 -   Se puede cambiar el criterio de ordenación.  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>Buscar el nodo raíz de un tipo de proyecto  
- Cuando Visual Studio recorre las carpetas ProjectTemplates, abre todos los archivos .zip y extrae los archivos .vstemplate. Un archivo .vstemplate usa XML para describir una plantilla de aplicación. Para obtener más información, consulte [nueva generación de proyectos: Under the Hood, segunda parte](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Cuando Visual Studio recorre las carpetas ProjectTemplates, abre todos los archivos .zip y extrae los archivos .vstemplate. Un archivo .vstemplate usa XML para describir una plantilla de aplicación. Para obtener más información, consulte [nueva generación de proyectos: Internamente, la segunda parte](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  El \<ProjectType > etiqueta determina el tipo de proyecto para la aplicación. Por ejemplo, el archivo \CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip contiene un archivo EmptyProject.vstemplate que tiene esta etiqueta:  
   
@@ -216,4 +213,4 @@ devenv /installvstemplates
     **MyProjectNode** aparece como un nodo secundario de Visual C# solo en el nodo de Windows.  
   
 ## <a name="see-also"></a>Vea también  
- [Nueva generación de proyectos: aspectos técnicos, segunda parte](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+ [Nueva generación de proyectos: Internamente, la segunda parte](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

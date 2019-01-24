@@ -1,10 +1,8 @@
 ---
 title: Elemento ProjectTemplateLink (plantillas de Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectTemplateLink
 helpviewer_keywords:
@@ -16,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0f2d810f2e6dff135230af71b10a823d22330e8
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 356c9d50ebdac052efdb622e26d22e97542a0d03
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495978"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885986"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>Elemento ProjectTemplateLink (plantillas de Visual Studio)
 Especifica la ruta de acceso a la *.vstemplate* archivo de un proyecto en una plantilla de varios proyectos.  
@@ -71,7 +69,7 @@ O bien
  Este texto especifica la ruta de acceso a la *.vstemplate* archivo de la plantilla.  
   
 ## <a name="remarks"></a>Comentarios  
- Las plantillas de varios proyectos actúan como contenedores de dos o más proyectos. El `ProjectTemplateLink` elemento se usa para especificar la ubicación de la *.vstemplate* archivo para uno de los proyectos en la plantilla. El *.vstemplate* archivo de una plantilla de varios proyecto contiene un `ProjectTemplateLink` (elemento) para cada proyecto de la plantilla. Para obtener más información sobre las plantillas de varios proyectos, vea [Cómo: crear plantillas de varios proyectos](../ide/how-to-create-multi-project-templates.md).  
+ Las plantillas de varios proyectos actúan como contenedores de dos o más proyectos. El `ProjectTemplateLink` elemento se usa para especificar la ubicación de la *.vstemplate* archivo para uno de los proyectos en la plantilla. El *.vstemplate* archivo de una plantilla de varios proyecto contiene un `ProjectTemplateLink` (elemento) para cada proyecto de la plantilla. Para obtener más información sobre las plantillas de varios proyectos, vea [Cómo: Crear plantillas de varios proyectos](../ide/how-to-create-multi-project-templates.md).  
   
 ## <a name="example"></a>Ejemplo  
  En este ejemplo se muestra una raíz simple de varios proyecto *.vstemplate* archivo. En este ejemplo, la plantilla contiene dos proyectos, `My Windows Application` y `My Class Library`. El atributo `ProjectName` del elemento `ProjectTemplateLink` establece el nombre que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debe asignar a este proyecto. Si el `ProjectName` atributo no existe, el nombre de la *.vstemplate* archivo se usa como el nombre del proyecto.  
@@ -101,4 +99,4 @@ O bien
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Crear plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)   
- [Cómo: crear plantillas de varios proyectos](../ide/how-to-create-multi-project-templates.md)
+ [Cómo: Crear plantillas de varios proyectos](../ide/how-to-create-multi-project-templates.md)

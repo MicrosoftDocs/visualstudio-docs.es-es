@@ -1,9 +1,6 @@
 ---
 title: 'Tutorial: Crear la primera personalización de nivel de documento para Word'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1c5c25163a49e51b0759e57318d6119edec97983
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8aff32bbbbc396651079d16449e9746760c4541e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928820"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856447"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Tutorial: Crear la primera personalización de nivel de documento para Word
   En este tutorial introductorio se muestra cómo crear una personalización de nivel de documento para Microsoft Office Word. Las características que se crean en este tipo de solución solo están disponibles cuando se abre un documento concreto. No puede usar una personalización de nivel de documento para efectuar cambios en toda la aplicación, por ejemplo, para mostrar una nueva pestaña de la cinta de opciones cuando se abre un documento.  
@@ -143,19 +140,19 @@ ms.locfileid: "49928820"
 ## <a name="next-steps"></a>Pasos siguientes  
  Ahora que ha creado una personalización de nivel de documento básico para Word, en los siguientes temas obtendrá más información sobre cómo desarrollar personalizaciones:  
   
--   Tareas de programación generales que puede realizar en las personalizaciones de nivel de documento: [programar personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md).  
+-   Tareas de programación generales que puede realizar en las personalizaciones de nivel de documento: [Programar personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md).  
   
--   Tareas de programación que son específicas de las personalizaciones de nivel de documento para Word: [soluciones de Word](../vsto/word-solutions.md).  
+-   Tareas de programación que son específicas de las personalizaciones de nivel de documento para Word: [Soluciones de Word](../vsto/word-solutions.md).  
   
--   Mediante el modelo de objetos de Word: [información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md).  
+-   Mediante el modelo de objetos de Word: [Información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md).  
   
--   Personalizar la interfaz de usuario de Word, por ejemplo, agregando una pestaña personalizada a la cinta de opciones o creando su propio panel de acciones: [personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md).  
+-   Personalizar la interfaz de usuario de Word, por ejemplo, agregando una pestaña personalizada a la cinta de opciones o creando su propio panel de acciones: [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md).  
   
--   Usar objetos de Word extendidos proporcionados por las soluciones de Office en Visual Studio para realizar tareas que no son posibles con el modelo de objetos de Word (por ejemplo, hospedar controles administrados en documentos y enlazar controles de Word a datos mediante el uso de los datos de Windows Forms modelo de enlace): [automatizar Word usando objetos extendidos](../vsto/automating-word-by-using-extended-objects.md).  
+-   Usar objetos de Word extendidos proporcionados por las soluciones de Office en Visual Studio para realizar tareas que no son posibles con el modelo de objetos de Word (por ejemplo, hospedar controles administrados en documentos y enlazar controles de Word a datos mediante el uso de los datos de Windows Forms modelo de enlace): [Automatizar Word usando objetos extendidos](../vsto/automating-word-by-using-extended-objects.md).  
   
--   Compilar y depurar personalizaciones de nivel de documento para Word: [soluciones de Office de compilación](../vsto/building-office-solutions.md).  
+-   Compilar y depurar personalizaciones de nivel de documento para Word: [Compilar soluciones de Office](../vsto/building-office-solutions.md).  
   
--   Implementar personalizaciones de nivel de documento para Word: [implementar una solución de Office](../vsto/deploying-an-office-solution.md).  
+-   Implementar personalizaciones de nivel de documento para Word: [Implementar una solución de Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
@@ -167,5 +164,3 @@ ms.locfileid: "49928820"
  [Compilar soluciones de Office](../vsto/building-office-solutions.md)   
  [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)   
  [Introducción a las plantillas de proyecto de Office](../vsto/office-project-templates-overview.md)  
-  
-  

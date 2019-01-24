@@ -11,13 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 65ca1d8e1685ab52e84d4be97c6c691c1d2296c6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f421874e092ff4d0d6e722b7bebee6f6bb48f7ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910633"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842452"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Los controladores de eventos propagan cambios fuera del modelo
 
@@ -189,6 +188,6 @@ Cada tipo de evento corresponde a una colección en Store.EventManagerDirectory.
 ## <a name="see-also"></a>Vea también
 
 - [Responder a los cambios y propagarlos](../modeling/responding-to-and-propagating-changes.md)
-- [Código de ejemplo: diagramas de circuitos](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [Código de ejemplo: Diagramas de circuitos](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

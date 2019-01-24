@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSession::findLinesByVA method
 ms.assetid: f647eee9-a73c-483b-9fe9-21f42e560a7b
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c4472dfe7f9a25c17f00d8fa318a6d30f9e5544
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 74ec8935103120a274876bb6ca074d2f9b01df2b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865466"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744496"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera la información de número de línea para las líneas contenidas en un 
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT findLinesByVA (   
+HRESULT findLinesByVA (   
    ULONGLONG             va,  
    DWORD                 length,  
    IDiaEnumLineNumbers** ppResult  

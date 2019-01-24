@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d64d896dcc14a280a74f64f5093b6708a7fcb5f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 245908b543bf1482022846801e5ac7d2f557ebb5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726795"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089308"
 ---
 # <a name="idebugstackframesnifferenumstackframes"></a>IDebugStackFrameSniffer::EnumStackFrames
-Devuelve un enumerador de los marcos de pila del subproceso actual.  
+Devuelve un enumerador de marcos de pila del subproceso actual.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT EnumStackFrames(  
    IEnumDebugStackFrames**  ppedsf  
 );  
@@ -38,7 +38,7 @@ HRESULT EnumStackFrames(
   
 #### <a name="parameters"></a>Parámetros  
  `ppedsf`  
- [out] Enumerador de los marcos de pila del subproceso actual.  
+ [out] Enumerador de marcos de pila del subproceso actual.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
@@ -48,7 +48,7 @@ HRESULT EnumStackFrames(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- El enumerador de marco de pila devuelve los fotogramas desde la parte superior de la pila, empezando por el marco insertado más recientemente.  
+ El enumerador del marco de pila devuelve los marcos desde la parte superior de la pila, empezando por el marco insertado más recientemente.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugStackFrameSniffer (Interfaz)](../../winscript/reference/idebugstackframesniffer-interface.md)

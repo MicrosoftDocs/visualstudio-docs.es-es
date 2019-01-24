@@ -1,9 +1,6 @@
 ---
 title: Introducción (desarrollo de SharePoint en Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f2c306876451ef13977fb9237d96da66bd069bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2159bbec0d89b43d37bcdd3c30a60ad9b329531c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635289"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847423"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Obtener Introducción (desarrollo de SharePoint en Visual Studio)
   Esta sección está dedicada a ayudarle a empezar a trabajar con [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para desarrollar soluciones de SharePoint que aprovechan las ventajas de [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] y [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].
 
- Para obtener información sobre SharePoint 2013 y los complementos de SharePoint, vea [SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) y [Crear complementos de SharePoint](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx).
+ Para obtener información sobre SharePoint 2013 y los complementos de SharePoint, vea [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) y [Crear complementos de SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
  SharePoint proporciona una plataforma de colaboración basada en Web. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proporciona muchas plantillas de proyecto para crear sitios y contenido de SharePoint, que incluyen definiciones de lista, flujos de trabajo, modelos de conectividad de datos profesionales y definiciones del sitio. Además, puede crear extensiones para los proyectos y herramientas de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 

@@ -1,8 +1,6 @@
 ---
 title: Propiedades comunes de proyectos de MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 01/18/2018
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2c39fc08528886e143bd51eb1f33219b386807
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 934615be23ebb025740521d35e31fee9f0a6ec47
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921722"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315584"
 ---
 # <a name="common-msbuild-project-properties"></a>Propiedades comunes de proyectos de MSBuild
 En la tabla siguiente se enumeran las propiedades usadas con frecuencia definidas en los archivos de proyecto de Visual Studio o incluidas en archivos *.targets* que proporciona MSBuild.  
@@ -56,17 +54,17 @@ En la tabla siguiente se enumeran las propiedades usadas con frecuencia definida
 | CscToolPath | Ruta de acceso de *csc.exe*, el compilador de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. |
 | CustomBeforeMicrosoftCommonTargets | Nombre de un archivo de proyecto o archivo de destinos que se importará automáticamente antes de importar los destinos comunes. |
 | DebugSymbols | Valor booleano que indica si la compilación genera símbolos.<br /><br /> Si se establece **-p:DebugSymbols=false** en la línea de comandos, se deshabilita la generación de archivos de símbolos (*.pdb*) de la base de datos del programa. |
+| DebugType | Define el nivel de información de depuración que desea generar. Los valores válidos son "full", "pdbonly" y "none". |
 | DefineConstants | Permite definir constantes condicionales para el compilador. Los pares símbolo-valor van separados por punto y coma, y se especifican con la siguiente sintaxis:<br /><br /> *symbol1 = value1 ; symbol2 = value2*<br /><br /> Esta propiedad es equivalente al modificador `/define` de compilador. |
 | DefineDebug | Valor booleano que indica si desea definir la constante DEBUG. |
 | DefineTrace | Valor booleano que indica si desea definir la constante TRACE. |
-| DebugType | Define el nivel de información de depuración que desea generar. Los valores válidos son "full", "pdbonly" y "none". |
 | DelaySign | Valor booleano que indica si desea retrasar la firma del ensamblado en lugar de firmarlo completamente. |
 | Determinista | Se trata de un valor booleano que indica si el compilador debe producir ensamblados idénticos para entradas idénticas. Este parámetro corresponde al modificador `/deterministic` de los compiladores de *vbc.exe* y *csc.exe*. |
 | DisabledWarnings | Suprime las advertencias especificadas. Solo debe especificarse la parte numérica del identificador de advertencia. Las advertencias múltiples se separan con punto y coma. Este parámetro corresponde al modificador `/nowarn` del compilador de *vbc.exe*. |
 | DisableFastUpToDateCheck | Valor booleano que solo se aplica a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. El administrador de compilación de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utiliza un proceso denominado FastUpToDateCheck para determinar si es necesario recompilar un proyecto para actualizarlo. Este proceso es más rápido que utilizar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Al establecer la propiedad DisableFastUpToDateCheck en `true`, puede omitir el administrador de compilación de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y obligarlo a usar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para determinar si el proyecto está actualizado. |
 | DocumentationFile | Nombre del archivo que se genera como archivo de documentación XML. Este nombre solo incluye el nombre de archivo sin información sobre la ruta de acceso. |
 | ErrorReport | Especifica cómo debe el compilador documentar los errores internos del compilador. Los valores válidos son "prompt", "send" o "none". Esta propiedad es equivalente al modificador `/errorreport` del compilador. |
-| ExcludeDeploymentUrl | [GenerateDeploymentManifest (Tarea)](../msbuild/generatedeploymentmanifest-task.md) agrega una etiqueta deploymentProvider al manifiesto de implementación si el archivo de proyecto incluye alguno de los elementos siguientes:<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> Sin embargo, mediante ExcludeDeploymentUrl, puede evitar que la etiqueta deploymentProvider se agregue al manifiesto de implementación aunque se especifique alguna de las direcciones URL anteriores. Para ello, agregue la siguiente propiedad al archivo de proyecto:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**Nota:** ExcludeDeploymentUrl no se expone en el IDE de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y solo se puede establecer al editar de forma manual el archivo de proyecto. Al establecer esta propiedad, la publicación desde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] no resulta afectada; es decir, la etiqueta deploymentProvider se agregará de igual modo a la dirección URL especificada por PublishUrl. |
+| ExcludeDeploymentUrl | [GenerateDeploymentManifest (Tarea)](../msbuild/generatedeploymentmanifest-task.md) agrega una etiqueta deploymentProvider al manifiesto de implementación si el archivo de proyecto incluye alguno de los elementos siguientes:<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> Sin embargo, mediante ExcludeDeploymentUrl, puede evitar que la etiqueta deploymentProvider se agregue al manifiesto de implementación aunque se especifique alguna de las direcciones URL anteriores. Para ello, agregue la siguiente propiedad al archivo de proyecto:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**Nota:**  ExcludeDeploymentUrl no se expone en el IDE de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y solo se puede establecer manualmente editando el archivo de proyecto. Al establecer esta propiedad, la publicación desde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] no resulta afectada; es decir, la etiqueta deploymentProvider se agregará de igual modo a la dirección URL especificada por PublishUrl. |
 | FileAlignment | Especifica, en bytes, dónde se alinean las secciones del archivo de salida. Los valores válidos son 512, 1024, 2048, 4096, 8192. Esta propiedad es equivalente al modificador `/filealignment` del compilador. |
 | FrameworkPathOverride | Especifica la ubicación de *mscorlib.dll* y *microsoft.visualbasic.dll*. Este parámetro es equivalente al modificador `/sdkpath` del compilador de *vbc.exe*. |
 | GenerateDocumentation | (Solo Visual Basic) Parámetro booleano que indica si la compilación generará la documentación. Si es `true`, la compilación genera información de documentación y la coloca en un archivo *.xml* junto con el nombre del archivo ejecutable o la biblioteca creada por la tarea de compilación. |
@@ -87,9 +85,11 @@ En la tabla siguiente se enumeran las propiedades usadas con frecuencia definida
 | OutputPath | Especifica la ruta de acceso al directorio de salida con respecto al directorio del proyecto, por ejemplo, *bin\Debug*. |
 | OutputType | Especifica el formato del archivo de salida. Este parámetro puede tener uno de los valores siguientes:<br /><br /> -   Library. Crea una biblioteca de códigos. (Valor predeterminado).<br />-   Exe. Crea una aplicación de consola.<br />-   Module. Crea un módulo.<br />-   Winexe. Crea un programa de Windows.<br /><br /> Esta propiedad es equivalente al modificador `/target` del compilador de *vbc.exe*. |
 | OverwriteReadOnlyFiles | Valor booleano que indica si desea que la compilación sobrescriba los archivos de solo lectura o produzca un error. |
+| PathMap | Especifica cómo asignar rutas físicas a nombres de ruta de origen generados por el compilador. Esta propiedad es equivalente al modificador `/pathmap` del compilador de *csc.exe*. |
 | PdbFile | Nombre de archivo del archivo *.pdb* que va a emitir. Esta propiedad es equivalente al modificador `/pdb` del compilador de *csc.exe*. |
 | Plataforma | Sistema operativo para el que se está compilando. Los valores válidos son "Any CPU", "x 86" y "x 64". |
 | ProduceReferenceAssembly | Se trata de un valor booleano que cuando se establece en `true` permite la producción de [ensamblados de referencia](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md) para el ensamblado actual. `Deterministic` debe ser `true` cuando use esta característica. Esta propiedad corresponde al modificador `/refout` de los compiladores de *vbc.exe* y *csc.exe*. |
+| ProduceOnlyReferenceAssembly | Valor booleano que instruye al compilador que emita solo un ensamblado de referencia, en lugar de código compilado. No se puede usar con `ProduceReferenceAssembly`.  Esta propiedad corresponde al modificador `/refonly` de los compiladores de *vbc.exe* y *csc.exe*. |
 | RemoveIntegerChecks | Valor booleano que indica si se van a deshabilitar las comprobaciones de los errores de desbordamiento de enteros. El valor predeterminado es `false`. Esta propiedad es equivalente al modificador `/removeintchecks` del compilador de *vbc.exe*. |
 | SGenUseProxyTypes | Valor booleano que indica si *SGen.exe* debe generar los tipos de proxy.<br /><br /> El destino de SGen usa esta propiedad para establecer la marca UseProxyTypes. Esta propiedad tiene el valor predeterminado true y no hay ninguna interfaz de usuario para cambiarlo. Para generar el ensamblado de serialización para tipos que no son de servicio web, agregue esta propiedad al archivo de proyecto y establézcala en false antes de importar *Microsoft.Common.Targets* o *C#/VB.targets*. |
 | SGenToolPath | Ruta de acceso opcional de la herramienta que indica dónde obtener *SGen.exe* si se reemplaza la versión actual de *SGen.exe*. |

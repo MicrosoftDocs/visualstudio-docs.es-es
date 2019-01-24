@@ -9,12 +9,12 @@ description: Obtenga información sobre cómo buscar el número de cliente públ
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: da4a9f1342abfc5701aadf32798305e349eb3ed7
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: b27d61a614c7ddbe1503eb7708e0e2e35a39fca0
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637024"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269216"
 ---
 # <a name="how-do-i-locate-my-public-customer-number-pcn-or-authorization-number"></a>¿Dónde está el "número de cliente público" o el "número de autorización"?
 
@@ -22,18 +22,13 @@ Para completar la incorporación de su organización al portal de administració
 
 ## <a name="to-locate-your-pcn-or-authorization-number"></a>Para buscar el número de cliente público o el número de autorización
 
-1.  Inicie sesión en el Centro de servicio de licencias por volumen en: [https://www.Microsoft.com/licensing/servicecenter](https://www.Microsoft.com/licensing/servicecenter).
-
-2. En la pestaña Suscripciones, elija **Suscripciones de Visual Studio**.
+El Centro de servicios de licencias por volumen ya no proporciona acceso a su número de cliente público.  Para obtenerlo, póngase en contacto con el soporte técnico de suscripciones de Visual Studio.
+1. Visite https://visualstudio.microsoft.com/subscriptions/support/#talktous
+2. Pulse el botón **Soporte técnico de cuentas, suscripciones y facturación**.
     > [!div class="mx-imgBorder"]
-    > ![Selección de suscripciones en VLSC](_img/vlsc/vlsc-subscriptions.png)
-
-3. El número de cliente público se encuentra en la mitad de la página según se baja.
-    > [!div class="mx-imgBorder"]
-    > ![Búsqueda del número de cliente público en VLSC](_img/vlsc/vlsc-pcn.png)
-
-    
-Si no ve la página anterior y se le ha redirigido a la página de inicio de sesión de Visual Studio, copie y pegue el vínculo siguiente en el explorador: https://www.microsoft.com/Licensing/servicecenter/Subscription/AgreementSearch.
+    > ![Selección del soporte técnico para suscripciones](_img/vlsc/vlsc-pcn.png)
+3. Seleccione el país en la lista desplegable.
+4. Seleccione una de las opciones de soporte técnico disponibles en su país para ponerse en contacto con un agente de soporte técnico que pueda investigar su número de cliente público.  
 
 ## <a name="if-i-have-more-than-one-pcn-which-one-should-i-use"></a>Si tengo más de un número de cliente público, ¿cuál debo utilizar?
 

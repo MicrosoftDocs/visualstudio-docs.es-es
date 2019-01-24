@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a6e128f5ac5de11b45af59c83750411c35e6efa7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 959989d14d2a71f9c9eab4c78ef1b1bd9078362f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724815"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095009"
 ---
 # <a name="iactivescriptsitegetlcid"></a>IActiveScriptSite::GetLCID
-Recupera el identificador de configuración regional asociado con la interfaz de usuario del host. El motor de scripting, utiliza el identificador para asegurarse de que las cadenas de error y otros elementos de interfaz de usuario generados por el motor aparecen en el idioma adecuado.  
+Recupera el identificador de configuración regional asociado con la interfaz de usuario del host. El motor de scripting utiliza el identificador para asegurarse de que las cadenas de error y otros elementos de interfaz de usuario generados por el motor aparecen en el idioma adecuado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetLCID(  
     LCID *plcid  // address of variable for language identifier  
 );  
@@ -38,7 +38,7 @@ HRESULT GetLCID(
   
 #### <a name="parameters"></a>Parámetros  
  `plcid`  
- [out] Dirección de una variable que recibe el identificador de configuración regional para los elementos de interfaz de usuario mostrado por el motor de scripting.  
+ [out] Dirección de una variable que recibe el identificador de configuración regional para los elementos de interfaz de usuario mostrada por el motor de scripting.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Devuelve uno de los siguientes valores:  
@@ -46,11 +46,11 @@ HRESULT GetLCID(
 |Valor devuelto|Significado|  
 |------------------|-------------|  
 |`S_OK`|Correcto.|  
-|`E_NOTIMPL`|Este método no se implementa. Usar la configuración regional definida por el sistema.|  
+|`E_NOTIMPL`|Este método no se implementa. Use la configuración regional definido por el sistema.|  
 |`E_POINTER`|Se especificó un puntero no válido.|  
   
 ## <a name="remarks"></a>Comentarios  
- Si este método devuelve `E_NOTIMPL`, se debe utilizar el identificador de configuración regional definido por el sistema.  
+ Si este método devuelve `E_NOTIMPL`, se debe usar el identificador definido por el sistema local.  
   
 ## <a name="see-also"></a>Vea también  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

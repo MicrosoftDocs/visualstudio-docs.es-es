@@ -1,26 +1,27 @@
 ---
-title: 'Tutorial Trabajo con Python, paso 6: trabajo con Git'
+title: Paso 6 del tutorial de Python en Visual Studio, trabajar con Git
+titleSuffix: ''
 description: Paso 6 de un tutorial básico de Python en Visual Studio, que trata las características relacionadas con Git de Visual Studio.
-ms.date: 06/26/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b75b87af9df8487144aa0f4f7d7a96c31d2b38a1
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 87a4e8c67d7d0f6f1fecabad87d7c2b9ebf7a422
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549290"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928940"
 ---
 # <a name="step-6-work-with-git"></a>Paso 6: Trabajar con Git
 
-**Paso anterior: [ Instalar paquetes en un entorno de Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
+**Paso anterior: [Instalación de paquetes y administración del entorno de Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
 
 Visual Studio proporciona integración directa con repositorios de Git locales y repositorios remotos en servicios como GitHub y Azure Repos. La integración incluye clonar un repositorio, confirmar los cambios y administrar ramas.
 
@@ -54,7 +55,7 @@ En este artículo se proporciona una introducción básica sobre la creación de
 
 ## <a name="go-deeper"></a>Profundizar un poco más
 
-Para ver un breve tutorial de creación de un proyecto desde un repositorio de Git remoto, vea [Inició rápido: Clonado de un repositorio de código Python en Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
+Para obtener un breve tutorial de creación de un proyecto desde un repositorio de Git remoto, vea [Inicio rápido: Clonación de un repositorio de código de Python en Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
 
 Para ver un tutorial mucho más completo, incluido el control de conflictos de combinación, la revisión de código con solicitudes de incorporación de cambios, la reorganización y la selección exclusiva de cambios entre ramas, consulte [Get Started with Git and Azure Repos](/azure/devops/repos/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio) (Introducción a Git y Azure Repos).
 

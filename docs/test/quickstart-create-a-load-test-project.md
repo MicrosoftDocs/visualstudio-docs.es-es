@@ -1,5 +1,5 @@
 ---
-title: Creación de un proyecto de prueba de carga y rendimiento web en Visual Studio
+title: Crear un proyecto de rendimiento web y prueba de carga
 ms.date: 03/14/2018
 ms.topic: quickstart
 helpviewer_keywords:
@@ -8,20 +8,22 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 515c5d4c1bd09d65ae23d3d1af2f3183607c6b53
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 34127eb64ffbe4f9285e5e5efb215409b6997141
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320961"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968461"
 ---
-# <a name="quickstart-create-a-load-test-project"></a>Inicio rápido: Crear un proyecto de prueba de carga
+# <a name="quickstart-create-a-load-test-project"></a>Inicio rápido: Crear un proyecto de pruebas de carga
 
 En este inicio rápido de 10 minutos, aprenderá a crear y ejecutar un proyecto de prueba de carga y rendimiento web en Visual Studio. Las pruebas de carga ejecutan pruebas unitarias o de rendimiento web para simular que muchos usuarios tienen acceso a un servidor al mismo tiempo.
 
-> [!IMPORTANT]
-> Los proyectos de prueba de carga y rendimiento web solo están disponibles en la edición Enterprise de Visual Studio 2017.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+## <a name="software-requirements"></a>Requisitos de software
+
+Los proyectos de prueba de carga y rendimiento web solo están disponibles en la edición Enterprise de Visual Studio.
 
 ## <a name="install-the-load-testing-component"></a>Instalar el componente de prueba de carga
 

@@ -1,9 +1,6 @@
 ---
 title: IDebugThread2::SetNextStatement | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugThread2::SetNextStatement
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bfc2afb15dbacde1eb0a96178d2769365deb4e31
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 07f896a2e9c5f7f039e349b17d4016fb27a60493
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893798"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937574"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
 Establece el puntero de instrucción actual en el contexto de código dado.  
@@ -28,14 +25,14 @@ Establece el puntero de instrucción actual en el contexto de código dado.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT SetNextStatement (   
+HRESULT SetNextStatement (   
    IDebugStackFrame2*  pStackFrame,  
    IDebugCodeContext2* pCodeContext  
 );  
 ```  
   
 ```csharp  
-int SetNextStatement (   
+int SetNextStatement (   
    IDebugStackFrame2  pStackFrame,  
    IDebugCodeContext2 pCodeContext  
 );  

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 74d3f59648a5a6aa0f510e98b33c3c26b1f9db56
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ff7e331ebd61d499ddd865409e23a5ad4ffae11a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728485"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095438"
 ---
 # <a name="iremotedebugapplicationthreadgetdescription"></a>IRemoteDebugApplicationThread::GetDescription
 Obtiene la descripción y el estado de este subproceso.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetDescription(  
    BSTR*  pbstrDescription,  
    BSTR*  pbstrState  
@@ -42,7 +42,7 @@ HRESULT GetDescription(
  [out] La descripción de este subproceso.  
   
  `pbstrState`  
- [out] La descripción del estado de subproceso.  
+ [out] La descripción del estado del subproceso.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  

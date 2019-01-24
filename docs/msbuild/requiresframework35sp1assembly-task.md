@@ -1,8 +1,6 @@
 ---
 title: Tarea RequiresFramework35SP1Assembly | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5297d1a573542fecc55fa90983befa43df8f3f3d
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 915d837889153cf678695b493a853d9110522bee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155371"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831932"
 ---
 # <a name="requiresframework35sp1assembly-task"></a>RequiresFramework35SP1Assembly (tarea)
 Determina si la aplicación requiere .NET Framework 3.5 SP1.  

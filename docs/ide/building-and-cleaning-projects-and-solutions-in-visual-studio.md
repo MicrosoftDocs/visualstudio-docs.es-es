@@ -1,5 +1,5 @@
 ---
-title: Compilar y limpiar proyectos y soluciones en Visual Studio
+title: Compilar y limpiar proyectos y soluciones
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -24,15 +24,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4b0ef6eab346215631559e8c9cfb16ecac0a4bf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c96a3b6699428b156a23ad643eb7958cb438b994
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918535"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349275"
 ---
-# <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Compilación y limpieza de proyectos y soluciones en Visual Studio
+# <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Compilar y limpiar proyectos y soluciones en Visual Studio
+
 Mediante los procedimientos indicados en este tema, puede compilar, recompilar o limpiar todos o algunos de los proyectos o elementos de proyecto de una solución. Para obtener un tutorial paso a paso, vea [Tutorial: Compilar una aplicación](../ide/walkthrough-building-an-application.md).
+
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Compilar y limpiar proyectos y soluciones en Visual Studio para Mac](/visualstudio/mac/building-and-cleaning-projects-and-solutions).
 
 > [!NOTE]
 > La interfaz de usuario de su edición de Visual Studio podría diferir de lo que se describe en este tema, en función de su configuración activa. Para cambiar la configuración, por ejemplo, **General** o **Visual C++**, elija **Herramientas** > **Importar y exportar configuraciones** y, después, **Restablecer todas las configuraciones**.
@@ -46,7 +50,7 @@ Mediante los procedimientos indicados en este tema, puede compilar, recompilar o
     -   Seleccione **Compilar** o **Compilar solución** para compilar solo los archivos de proyecto y los componentes que han cambiado desde la compilación más reciente.
 
         > [!NOTE]
-        >  El comando **Compilar** se convierte en **Compilar solución** cuando una solución incluye más de un proyecto.
+        > El comando **Compilar** se convierte en **Compilar solución** cuando una solución incluye más de un proyecto.
 
     -   Seleccione **Recompilar solución** para "limpiar" la solución y, después, compilar todos los archivos de proyecto y los componentes.
 
@@ -118,3 +122,4 @@ Realice uno de estos pasos:
 - [Referencia de compilación de C/C++](/cpp/build/reference/c-cpp-building-reference)
 - [Modificadores de línea de comandos para Devenv](../ide/reference/devenv-command-line-switches.md)
 - [Soluciones y proyectos](../ide/solutions-and-projects-in-visual-studio.md)
+- [Compilar y limpiar proyectos y soluciones (Visual Studio para Mac)](/visualstudio/mac/building-and-cleaning-projects-and-solutions)

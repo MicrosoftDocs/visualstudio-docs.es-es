@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_paramBasePointerRegisterId method
 ms.assetid: 9f5caeb4-5c88-4054-bf8b-50d34bbbf8c5
 caps.latest.revision: 9
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 86ddb9b07acd82787b84768dc36d804e44bc5cc4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 71191499ccf56b7cfa01f868682018238d1a37f7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886674"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724760"
 ---
 # <a name="idiasymbolgetparambasepointerregisterid"></a>IDiaSymbol::get_paramBasePointerRegisterId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera el identificador del registro que contiene un puntero de base para los 
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT get_paramBasePointerRegisterId (   
+HRESULT get_paramBasePointerRegisterId (   
    DWORD* pRetVal  
 );  
 ```  

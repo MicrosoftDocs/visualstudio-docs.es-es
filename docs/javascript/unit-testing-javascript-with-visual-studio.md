@@ -1,9 +1,7 @@
 ---
-title: Pruebas unitarias en Node.js
-description: Visual Studio admite las pruebas unitarias de código de JavaScript mediante Herramientas de Node.js para Visual Studio
-ms.custom: ''
+title: Pruebas unitarias de JavaScript y TypeScript
+description: Visual Studio admite las pruebas unitarias de código de JavaScript y TypeScript mediante Herramientas de Node.js para Visual Studio
 ms.date: 06/06/2018
-ms.technology: vs-nodejs
 ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
@@ -13,14 +11,14 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7d89292bd3f0c3835d6d2ed809310bc2a395553f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 75f40dc5abe10f75dccad91fa96d7e149267dc47
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776098"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398226"
 ---
-# <a name="unit-testing-in-nodejs"></a>Pruebas unitarias en Node.js
+# <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Pruebas unitarias de JavaScript y TypeScript en Visual Studio
 
 Herramientas de Node.js para Visual Studio permite escribir y ejecutar pruebas unitarias mediante algunos de los marcos de JavaScript más populares sin necesidad de cambiar a un símbolo del sistema.
 
@@ -33,7 +31,7 @@ Los marcos admitidos son:
 > [!WARNING]
 > Un problema en Tape de momento evita que se ejecuten pruebas de Tape. Si [PR #361](https://github.com/substack/tape/pull/361) se combina, debería resolverse el problema.
 
-Si su marco preferido no es compatible, vea [Agregar compatibilidad con un marco de pruebas unitarias](#addingFramework) para obtener información sobre cómo lograr la compatibilidad. 
+Si su marco preferido no es compatible, vea [Agregar compatibilidad con un marco de pruebas unitarias](#addingFramework) para obtener información sobre cómo lograr la compatibilidad.
 
 ## <a name="write-unit-tests"></a>Escribir pruebas unitarias
 
@@ -129,7 +127,7 @@ Test execution time: 1.5731 Seconds
 ```
 
 > [!NOTE]
-> Si aparece un error que indica que no se puede encontrar *vstest.console.exe*, asegúrese de que ha abierto el Símbolo del sistema para desarrolladores y no un símbolo del sistema normal. 
+> Si aparece un error que indica que no se puede encontrar *vstest.console.exe*, asegúrese de que ha abierto el Símbolo del sistema para desarrolladores y no un símbolo del sistema normal.
 
 ## <a name="addingFramework"></a>Agregar compatibilidad con un marco de pruebas unitarias
 
@@ -149,7 +147,7 @@ Para obtener un buen ejemplo de las implementaciones `find_tests` y `run_tests`,
 La detección de marcos de pruebas disponibles se produce al inicio de Visual Studio. Si se agrega un marco mientras se está ejecutando Visual Studio, reinicie Visual Studio para detectar el marco. Pero no es necesario reiniciar al realizar cambios en la implementación.
 
 ## <a name="unit-tests-in-other-project-types"></a>Pruebas unitarias en otros tipos de proyecto
-No está limitado a escribir pruebas unitarias solo en proyectos de Node.js. Al agregar las propiedades TestFramework y TestRoot a cualquier proyecto de C# o VB, esas pruebas se enumerarán y puede ejecutarlas mediante la ventana Explorador de pruebas.
+No está limitado a escribir pruebas unitarias solo en proyectos de Node.js. Al agregar las propiedades TestFramework y TestRoot a cualquier proyecto de C# o Visual Basic, esas pruebas se enumerarán y puede ejecutarlas mediante la ventana Explorador de pruebas.
 
 Para habilitar esta opción, haga clic con el botón derecho en el nodo del proyecto en el Explorador de soluciones, elija **Descargar el proyecto** y después elija **Editar proyecto**. Después, en el archivo del proyecto, agregue los siguientes dos elementos a un grupo de propiedades.
 

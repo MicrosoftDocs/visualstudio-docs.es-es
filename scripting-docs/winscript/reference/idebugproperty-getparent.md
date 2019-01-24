@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f78d72bad8cb12b72f4b51e113d23dcd64ada8fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 34e4d38a4a04134535925d130b0660e52a0c0b19
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838366"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344920"
 ---
 # <a name="idebugpropertygetparent"></a>IDebugProperty::GetParent
 Obtiene la propiedad parent de una propiedad.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetParent (  
    IDebugProperty** ppParent  
 );  

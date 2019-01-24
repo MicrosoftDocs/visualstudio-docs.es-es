@@ -1,8 +1,8 @@
 ---
-title: Controlar las actualizaciones a implementaciones de Visual Studio
+title: Control de las actualizaciones de implementaciones
 description: Obtenga información sobre cómo cambiar dónde busca Visual Studio una actualización cuando se instala desde una red.
 ms.date: 08/14/2017
-ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cfc35698ce87027192031ef453a4c42ecc3c199
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3269b368003658fb602aa4d0b1ee2112a9b88817
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830436"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878171"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Control de actualizaciones a implementaciones de Visual Studio basadas en red
 

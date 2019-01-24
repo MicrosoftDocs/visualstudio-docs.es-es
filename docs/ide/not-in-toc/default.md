@@ -10,13 +10,12 @@ manager: douge
 author: gewarren
 ms.author: gewarren
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
-ms.openlocfilehash: c80ee0791c1c073c82681e59e124c5c45b378a07
-ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
+ms.openlocfilehash: 1be890236efcfdb62c0fa6b4f9ad24d54d81b20f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "34335712"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865458"
 ---
 # <a name="f1-help"></a>Ayuda de F1
 
@@ -28,7 +27,7 @@ Si está buscando ayuda de F1 sobre una palabra clave o el nombre de una API, co
 
 ## <a name="useful-links"></a>Vínculos útiles
 
-- Para obtener información general sobre Visual Studio, vea [Introducción a Visual Studio 2017](../../ide/visual-studio-ide.md).
+- Para obtener información general sobre Visual Studio, vea [Introducción a Visual Studio 2017](../../get-started/visual-studio-ide.md).
 - Para obtener ayuda sobre el editor de texto de Visual Studio, vea [Características del editor de código](../../ide/writing-code-in-the-code-and-text-editor.md).
 - Para obtener ayuda de C#, vea la [Guía de C#](/dotnet/csharp/index).
 - Para obtener ayuda de Visual Basic, vea la [Guía de Visual Basic](/dotnet/visual-basic/).

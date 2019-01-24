@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Modificar archivos web.config para instrumentar y generar perfiles de aplicaciones web ASP.NET compiladas dinámicamente | Microsoft Docs'
+title: Procedimiento Modificar archivos web.config para instrumentar y generar perfiles de aplicaciones web ASP.NET compiladas dinámicamente | Microsoft Docs
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -11,17 +11,17 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5be66c8a762d7d690ec30a7658c59bcff75c3d53
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 471f2d2a0413cbf5932c980f195a49504bd975aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877496"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860733"
 ---
-# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Cómo: Modificar archivos web.config para instrumentar y generar perfiles de aplicaciones web ASP.NET compiladas dinámicamente
+# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Procedimiento Modificar archivos web.config para instrumentar y generar perfiles de aplicaciones web ASP.NET compiladas dinámicamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede usar el método de instrumentación de las herramientas de generación de perfiles [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para recopilar datos detallados de tiempo, los datos de asignación de memoria de .NET y datos de duración de objetos .NET de aplicaciones web compiladas de forma dinámica [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
@@ -89,8 +89,8 @@ Puede usar el método de instrumentación de las herramientas de generación de 
                 xmlns="urn:schemas-microsoft-com:asm.v1"  
             >  
                 <dependentAssembly>  
-                    <assemblyIdentity                         name="Microsoft.VisualStudio.Enterprise.ASPNetHelper"   
-                        publicKeyToken="b03f5f7f11d50a3a"                         culture="neutral"   
+                    <assemblyIdentity                         name="Microsoft.VisualStudio.Enterprise.ASPNetHelper"   
+                        publicKeyToken="b03f5f7f11d50a3a"                         culture="neutral"   
                     />  
                     <codeBase   
                         version="10.0.0.0"  
@@ -146,7 +146,7 @@ Puede usar el método de instrumentación de las herramientas de generación de 
     |Nombre de atributo|Valor del atributo|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
-    |**valor**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
+    |**value**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
   
 4.  Agregue otro elemento **add** como elemento secundario del elemento **appSettings**.  
   
@@ -155,7 +155,7 @@ Puede usar el método de instrumentación de las herramientas de generación de 
     |Nombre de atributo|Valor del atributo|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|  
-    |**valor**|`PerformanceToolsFolder`|  
+    |**value**|`PerformanceToolsFolder`|  
   
      `PerformanceToolsFolder` es la ruta de acceso de los archivos ejecutables del generador de perfiles. Si [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] está instalado en la ubicación predeterminada, el valor será **C:\Archivos de programa\Microsoft Visual Studio 10.0\Team Tools\Performance Tools**  
   
@@ -228,7 +228,7 @@ Puede usar el método de instrumentación de las herramientas de generación de 
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: Instrumentar una aplicación ASP.NET compilada dinámicamente y recopilar datos de control de tiempo detallados](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)   
- [Cómo: Instrumentar una aplicación ASP.NET compilada dinámicamente y recopilar datos de memoria](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)
+ [Cómo: Instrumentación de una aplicación ASP.NET compilada dinámicamente y recopilar datos de memoria](/visualstudio/profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data?view=vs-2015)
 
 
 

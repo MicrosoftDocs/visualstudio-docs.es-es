@@ -1,5 +1,5 @@
 ---
-title: Edición de pruebas de carga en Visual Studio
+title: Modificar pruebas de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,24 +10,26 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: f4c29f3b98440c9e8462083a24012944157b848b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a060d6fd038d3dfaf0c869aba2c660efba4c9ecd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178418"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933209"
 ---
 # <a name="edit-load-tests"></a>Editar pruebas de carga
 
 Las pruebas de carga ejecutan pruebas unitarias o de rendimiento web para simular que muchos usuarios acceden a un servidor al mismo tiempo. Una prueba de carga permite tener acceso a los datos de rendimiento y esfuerzo de una aplicación. Estas pruebas se pueden configurar para emular varias condiciones de carga, como cargas de usuario y tipos de red.
 
-> [!NOTE]
-> Las pruebas de carga solo están disponibles en la edición Enterprise de Visual Studio 2017.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Una prueba de carga se define mediante *escenarios*, *conjuntos de contadores* y *parámetros de ejecución*. En la ilustración siguiente se explican las diferencias entre [escenarios](../test/edit-load-test-scenarios.md), [conjuntos de contadores](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md) y [parámetros de ejecución](../test/load-test-run-settings-properties.md):
 
 ![Arquitectura de Prueba de carga](../test/media/load_test_editor.png)
+
+## <a name="software-requirements"></a>Requisitos de software
+
+Los proyectos de prueba de carga y rendimiento web solo están disponibles en la edición Enterprise de Visual Studio.
 
 ## <a name="edit-load-test-scenario-settings"></a>Editar la configuración del escenario de prueba de carga
 
@@ -49,5 +51,5 @@ Para más información, consulte [Configurar los parámetros de ejecución de pr
 
 ## <a name="see-also"></a>Vea también
 
-- [Analizar los resultados de pruebas de carga con el analizador de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analizar los resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Analizar las infracciones de las reglas de umbral](../test/analyze-threshold-rule-violations-in-load-tests.md)

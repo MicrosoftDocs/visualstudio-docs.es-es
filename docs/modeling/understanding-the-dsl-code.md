@@ -10,18 +10,17 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 490c9c3fe5724373072b2857eb0ce3da7905b172
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b47fe1e80f2441c729dd2d971bfadffb80dfbd04
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813329"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270299"
 ---
 # <a name="understanding-the-dsl-code"></a>Introducción al código DSL
 Una solución de lenguaje específico de dominio (DSL) genera una API que puede usar para leer y actualizar las instancias del DSL en Visual Studio. Esta API se define en el código que se genera a partir de la definición de DSL. Este tema describe la API que se genera.
 
-## <a name="the-example-solution-component-diagrams"></a>La solución de ejemplo: diagramas de componentes
+## <a name="the-example-solution-component-diagrams"></a>Solución de ejemplo: Diagrama de componentes
  Para crear la solución que es el origen de la mayoría de los ejemplos de este tema, cree un DSL desde el **modelos de componentes** plantilla de solución. Esta es una de las plantillas estándar que aparece al crear una nueva solución de DSL.
 
 > [!NOTE]
@@ -66,7 +65,7 @@ Una solución de lenguaje específico de dominio (DSL) genera una API que puede 
 
  `ConnectionBuilders.cs`
 
- Un generador de conexiones es una clase que crea relaciones. Es el código que hay detrás de una herramienta de conexión. Este archivo contiene un par de clases para cada herramienta de conexión. Sus nombres se derivan de los nombres de la herramienta de conexión y relación de dominio: *relación*Builder, y *Herramientadeconector*ConnectAction.
+ Un generador de conexiones es una clase que crea relaciones. Es el código que hay detrás de una herramienta de conexión. Este archivo contiene un par de clases para cada herramienta de conexión. Sus nombres derivan de los nombres de la relación de dominio y de la herramienta de conexión: *Relación*Builder, y *Herramientadeconector*ConnectAction.
 
  (En la solución de componentes de ejemplo, uno de los generadores de conexiones se llama ConnectionBuilder. Esto es una coincidencia porque la relación de dominio se llama Connection).
 
@@ -192,7 +191,7 @@ Una solución de lenguaje específico de dominio (DSL) genera una API que puede 
 
  `CommandSet.cs`
 
- Comandos de menú contextual que son visibles en el diagrama. Puede adaptar o ampliar este conjunto. Este archivo contiene el código de los comandos. El archivo Commands.vsct determina la ubicación de los comandos en los menús. Para obtener más información, consulte [escribir comandos de usuario y las acciones](../modeling/writing-user-commands-and-actions.md).
+ Los comandos de menú contextual que están visibles en el diagrama. Puede adaptar o ampliar este conjunto. Este archivo contiene el código de los comandos. El archivo Commands.vsct determina la ubicación de los comandos en los menús. Para obtener más información, consulte [escribir comandos de usuario y las acciones](../modeling/writing-user-commands-and-actions.md).
 
  `Constants.cs`
 
@@ -282,7 +281,7 @@ namespace Company.EmbedInForm
 
  `GeneratedVSCT.vsct`
 
- Ubica los comandos de menú estándar en los menús, como el menú contextual del diagrama, el **editar** menú y así sucesivamente. El código de comandos está en CommandSet.cs. Puede reubicar o modificar los comandos estándar y puede agregar sus propios comandos. Para obtener más información, consulte [escribir comandos de usuario y las acciones](../modeling/writing-user-commands-and-actions.md).
+ Busca los comandos de menú estándar en los menús, como el menú contextual (contexto) del diagrama, el **editar** menú y así sucesivamente. El código de comandos está en CommandSet.cs. Puede reubicar o modificar los comandos estándar y puede agregar sus propios comandos. Para obtener más información, consulte [escribir comandos de usuario y las acciones](../modeling/writing-user-commands-and-actions.md).
 
  `ModelExplorer.cs`
 
@@ -292,7 +291,7 @@ namespace Company.EmbedInForm
 
  Si quiere que la selección en el explorador del modelo se mantenga sincronizada con la selección en el diagrama, use el código siguiente:
 
-```
+```csharp
 protected override void OnSelectionChanged(global::System.EventArgs e)
 {
 base.OnSelectionChanged(e);

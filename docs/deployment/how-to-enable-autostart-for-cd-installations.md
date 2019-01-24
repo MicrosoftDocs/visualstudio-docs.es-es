@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: habilitar AutoStart para instalaciones con CD | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Habilitar AutoStart para instalaciones con CD | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97642a499e0415dd6fcd245e379c9f01520b5c53
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 35a6d98a476a8a9612cb5bfb80e7fa8b2f00c4ed
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151251"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864026"
 ---
-# <a name="how-to-enable-autostart-for-cd-installations"></a>Cómo: habilitar AutoStart para instalaciones con CD
+# <a name="how-to-enable-autostart-for-cd-installations"></a>Procedimiento Habilitar AutoStart para instalaciones con CD
 Al implementar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación mediante medios extraíbles, como CD-ROM o DVD-ROM, puede habilitar `AutoStart` para que el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se inicia automáticamente cuando se inserta el disco.  
   
  `AutoStart` se puede habilitar en el **publicar** página de la **Diseñador de proyectos**.  
@@ -34,9 +32,9 @@ Al implementar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
   
 1.  Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
   
-2.  Haga clic en el **publicar** ficha.  
+2.  Haga clic en la pestaña **Publicar**.  
   
-3.  Haga clic en el **opciones** botón.  
+3.  Haga clic en el botón **Opciones**.  
   
      El **opciones de publicación** aparece el cuadro de diálogo.  
   
@@ -48,4 +46,4 @@ Al implementar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
   
 ## <a name="see-also"></a>Vea también  
  [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Cómo: publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Cómo: Publicación de una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

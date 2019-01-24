@@ -1,13 +1,8 @@
 ---
-title: 'Tutorial: Crear un elemento Web para SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Crear un elemento Web para SharePoint | Documentos de Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 09b9299c6428ef63ccf71220fc3cb599e9e3b5a9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5f2c851659d09cc118f8f54b6e82bb3b806d7e34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872413"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944290"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Tutorial: Crear un elemento web para SharePoint
 
@@ -222,6 +217,6 @@ Muestra y oculta a los empleados que no son administradores cuando se hace clic 
 ## <a name="see-also"></a>Vea también
 
 [Crear elementos web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[Cómo: crear un elemento web de SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
-[Cómo: crear un elemento web de SharePoint mediante un diseñador](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)  
+[Cómo: Crear un elemento web de SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
+[Cómo: Crear un elemento web de SharePoint mediante un diseñador](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)  
 [Tutorial: Crear un elemento web para SharePoint utilizando un diseñador](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)

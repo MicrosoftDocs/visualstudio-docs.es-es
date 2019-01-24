@@ -1,9 +1,8 @@
 ---
-title: 'Cómo: Establecer opciones de accesibilidad del IDE'
+title: Procedimiento Establecimiento de opciones de accesibilidad de IDE
 description: Obtenga información sobre cómo establecer las opciones de accesibilidad en Visual Studio para que el entorno de desarrollo integrado (IDE) sea más fácil de usar para todos, incluidos los usuarios con problemas de visión para leer y con limitaciones para escribir.
 ms.date: 08/22/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -13,24 +12,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5d0149be4996f762373aae77d7535dbf8e02809
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3c8fa92644221149d3405eea25b1c85e229861e4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909801"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906779"
 ---
-# <a name="how-to-set-ide-accessibility-options"></a>Cómo: Establecer opciones de accesibilidad del IDE
+# <a name="how-to-set-ide-accessibility-options"></a>Procedimiento Establecimiento de opciones de accesibilidad de IDE
 
 > [!TIP]
 > Para más información sobre las actualizaciones de accesibilidad recientes, vea la entrada de blog [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Mejoras de accesibilidad en Visual Studio 2017 versión 15.3).
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] contiene características que facilitan la lectura a las personas que tienen poca visión y la escritura a las personas que tienen una destreza manual limitada. Estas características incluyen el cambio del tamaño y el color del texto en los editores, el cambio del tamaño de texto y de los botones de opción en las barras de herramientas y la función Autocompletar para métodos y parámetros, entre otras.
 
- Además, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] admite los diseños de teclado Dvorak, que hacen que los caracteres que se escriben con más frecuencia estén más accesibles. También puede personalizar las teclas de método abreviado predeterminadas disponibles con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Para obtener más información, vea [Identificar y personalizar métodos abreviados de teclado](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
+Además, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] admite los diseños de teclado Dvorak, que hacen que los caracteres que se escriben con más frecuencia estén más accesibles. También puede personalizar las teclas de método abreviado predeterminadas disponibles con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Para obtener más información, vea [Identificar y personalizar métodos abreviados de teclado](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
 > [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, vea [Restablecer la configuración](../environment-settings.md#reset-settings).
 
 ## <a name="editors-dialogs-and-tool-windows"></a>Editores, cuadros de diálogo y ventanas de herramientas
 
@@ -90,7 +89,7 @@ ms.locfileid: "49909801"
 
 4.  Desde **Mostrar elementos**, seleccione un elemento cuya visualización necesita cambiar, como **Texto sin formato**, **Margen del indicador**, **Espacio en blanco visible**, **Nombre del atributo HTML** o **Atributo XML**.
 
-5.  Seleccione la configuración de visualización desde las siguientes opciones: **Primer plano del elemento**, **Fondo del elemento** y **Negrita**.
+5.  Seleccione la configuración de pantalla en las siguientes opciones: **Primer plano del elemento**, **Fondo del elemento** y **Negrita**.
 
 6.  Elija **Aceptar**.
 

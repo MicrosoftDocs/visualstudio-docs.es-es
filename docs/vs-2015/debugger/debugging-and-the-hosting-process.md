@@ -19,15 +19,15 @@ helpviewer_keywords:
 - hosting process
 ms.assetid: d0f0b9a6-2a6e-463d-b6ea-9518ee727933
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d3643e8a6c7bcb97d032771b4f98cbd926d9fd5a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8932f3edd1b51ad61293bbce716aa76944e23274
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249505"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51762353"
 ---
 # <a name="debugging-and-the-hosting-process"></a>Depuración y proceso host
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

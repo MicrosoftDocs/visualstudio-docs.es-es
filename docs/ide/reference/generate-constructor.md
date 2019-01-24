@@ -2,19 +2,18 @@
 title: Acción rápida Generación de un constructor
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2e1c289ca84b4f3298aa32cc0016b3be9132263b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c7f46bd93e476c3f9ffe08831c5016a449ee4bc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926740"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895303"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generación de un constructor en Visual Studio
 
@@ -24,13 +23,13 @@ Esta generación de código se aplica a:
 
 - Visual Basic
 
-**Qué:** Le permite generar el código de inmediato para un nuevo constructor en una clase.
+**Qué:** Permite generar el código de inmediato para un nuevo constructor en una clase.
 
-**Cuándo:** Introduce un nuevo constructor y desea declararlo adecuadamente de manera automática, o modifica un constructor existente.
+**Cuándo:** Se inserta un nuevo constructor y se quiere declarar adecuadamente de manera automática, o se modifica un constructor existente.
 
-**Por qué:** Podría declarar el constructor antes de usarlo; sin embargo, esta característica lo generará, con los parámetros adecuados, automáticamente. Además, la modificación de un constructor existente requiere la actualización de todos los sitios de llamada, a menos que utilice esta característica para actualizarlos automáticamente.
+**Por qué:** Se podría declarar el constructor antes de usarlo, aunque esta característica lo genera, con los parámetros adecuados, automáticamente. Además, la modificación de un constructor existente requiere la actualización de todos los sitios de llamada, a menos que utilice esta característica para actualizarlos automáticamente.
 
-**Cómo:** Hay varias maneras de generar un constructor:
+**Cómo**: Hay varias maneras de generar un constructor:
 
    - [Generación de constructor y selección de miembros](#pick)
    - [Generación de constructor a partir de campos seleccionados](#selection)

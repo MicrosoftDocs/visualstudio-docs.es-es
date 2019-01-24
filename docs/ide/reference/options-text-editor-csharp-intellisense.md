@@ -2,7 +2,6 @@
 title: Opciones, editor de texto, C#, IntelliSense
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Intellisense
@@ -18,19 +17,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d8f6928dd09b971e2c5924d34058a1a0d5e28394
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 31bccf7d9d913c2d607e9409a7762a774a0b3f2e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947396"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938058"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Opciones, editor de texto, C#, IntelliSense
 
 Use la página de opciones de **IntelliSense** para modificar la configuración que afecta al comportamiento de IntelliSense en C#. Para obtener acceso a esta página de opciones, elija **Herramientas** > **Opciones** y, después, elija **Editor de texto** > **C#** > **IntelliSense**.
-
-> [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 La página de opciones de **IntelliSense** contiene las siguientes opciones:
 
@@ -46,9 +42,7 @@ La página de opciones de **IntelliSense** contiene las siguientes opciones:
 
 - Mostrar filtros de elementos de finalización
 
-- Mostrar sugerencias de nombres
-
-### <a name="snippets-behavior"></a>Comportamiento de los fragmentos de código
+## <a name="snippets-behavior"></a>Comportamiento de los fragmentos de código
 
 - No incluir nunca fragmentos de código
 
@@ -62,7 +56,7 @@ La página de opciones de **IntelliSense** contiene las siguientes opciones:
 
    Si esta opción está seleccionada, IntelliSense agrega a la lista de finalización alias relativos a los fragmentos de código de C# cuando se presione **?**+**TAB** después de un identificador.
 
-### <a name="enter-key-behavior"></a>Comportamiento de la tecla Entrar
+## <a name="enter-key-behavior"></a>Comportamiento de la tecla Entrar
 
 - No agregar nunca una línea nueva al presionar Entrar
 
@@ -85,6 +79,10 @@ La página de opciones de **IntelliSense** contiene las siguientes opciones:
 - Agregar siempre una línea nueva al presionar Entrar
 
    Especifica que si escribe *cualquier* carácter de una entrada en la lista de finalización y, después, presiona **Entrar**, se crea una línea automáticamente y el cursor se mueve a esa nueva línea.
+
+## <a name="show-name-suggestions"></a>Mostrar sugerencias de nombres
+
+Finaliza automáticamente el nombre de objeto de los miembros que se han seleccionado recientemente.
 
 ## <a name="see-also"></a>Vea también
 

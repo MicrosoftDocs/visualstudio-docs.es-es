@@ -1,8 +1,7 @@
 ---
-title: Creación de soluciones y proyectos en Visual Studio
+title: Crear soluciones y proyectos
 ms.date: 02/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.openprojectfromweb
@@ -17,18 +16,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d8d222a35c06cd7d53e2e104761cc1f30bf816e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a5f81c38d63659261281f35704edf0ecde3ccd94
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813822"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269831"
 ---
 # <a name="create-solutions-and-projects"></a>Crear soluciones y proyectos
 
-Los *proyectos* son contenedores lógicos de Visual Studio que incluyen los elementos necesarios para compilar la aplicación, como archivos de código fuente, mapas de bits, iconos y referencias de componentes y servicios. Al crear un proyecto, Visual Studio crea una *solución* que lo contiene. Después, si quiere, puede agregar otros proyectos nuevos o existentes a la solución. Las soluciones también pueden contener archivos que no están conectados con ningún proyecto específico.
+Los *proyectos* incluyen los elementos necesarios para compilar la aplicación, como archivos de código fuente, mapas de bits, iconos y referencias de componentes y servicios. Al crear un proyecto, Visual Studio crea una *solución* que lo contiene. Después, si quiere, puede agregar otros proyectos nuevos o existentes a la solución. Las soluciones también pueden contener archivos que no están conectados con ningún proyecto específico.
 
 ![Jerarquía de soluciones y proyectos](./media/vside-proj-soln.png)
+
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Crear proyectos en Visual Studio para Mac](/visualstudio/mac/create-new-projects).
 
 Puede ver las soluciones y los proyectos en una ventana de herramientas denominada **Explorador de soluciones**. En la captura de pantalla siguiente se muestra una solución de ejemplo en el **Explorador de soluciones** (**BikeSharing.Xamarin-UWP**) que contiene dos proyectos: **BikeSharing.Clients.Core** y **BikeSharing.Clients.Windows**. Cada proyecto contiene varios archivos, carpetas y referencias. El nombre del proyecto en negrita es el *proyecto de inicio*, es decir, el proyecto que se inicia cuando se ejecuta la aplicación. Puede especificar qué proyecto es el de inicio.
 
@@ -39,7 +41,7 @@ Aunque puede construir un proyecto por su cuenta si le agrega los archivos neces
 Aun así, no hacen falta soluciones ni proyectos para desarrollar aplicaciones en Visual Studio. También puede abrir el código que haya clonado de Git o descargado de otro lugar. Para obtener más información, vea [Desarrollo de código en Visual Studio sin proyectos o soluciones](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
 > [!NOTE]
-> Las descripciones de este tema se basan en Visual Studio Community. Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los aquí descritos, en función de la configuración o la edición de Visual Studio. Para cambiar la configuración, por ejemplo, **General** o **Visual C++**, elija **Herramientas**, **Importar y exportar configuraciones** y, después, **Restablecer todas las configuraciones**.
+> Las descripciones de este tema se basan en Visual Studio Community. Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los aquí descritos, en función de la configuración o la edición de Visual Studio. Para cambiar la configuración, por ejemplo, **General** o **Visual C++**, elija **Herramientas** > **Importar y exportar configuraciones** y, después, **Restablecer todas las configuraciones**.
 
 ## <a name="to-create-a-project-from-a-project-template"></a>Para crear un proyecto a partir de una plantilla de proyecto
 
@@ -127,7 +129,7 @@ Puede eliminar las soluciones y su contenido de forma permanente, pero no median
 
 ### <a name="to-permanently-delete-a-solution"></a>Para eliminar permanentemente una solución
 
-1. En el **Explorador de soluciones**, en el menú contextual de la solución que quiere eliminar, seleccione **Abrir carpeta en el Explorador de archivos**.
+1. En el **Explorador de soluciones**, en el menú contextual (clic con el botón derecho) de la solución que quiera eliminar, seleccione **Abrir carpeta en el Explorador de archivos**.
 
 1. Suba un nivel en el Explorador de archivos.
 
@@ -138,3 +140,4 @@ Puede eliminar las soluciones y su contenido de forma permanente, pero no median
 - [Soluciones y proyectos](../ide/solutions-and-projects-in-visual-studio.md)
 - [Repositorios de código abierto de Microsoft en GitHub](https://github.com/Microsoft)
 - [Ejemplos de código para desarrolladores](https://code.msdn.microsoft.com/)
+- [Crear proyectos (Visual Studio para Mac)](/visualstudio/mac/create-new-projects)

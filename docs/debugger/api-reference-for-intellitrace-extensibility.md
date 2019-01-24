@@ -1,8 +1,6 @@
 ---
 title: Referencia de API de extensibilidad de IntelliTrace | Microsoft Docs
-ms.custom: ''
-ms.date: 11/04/2016
-ms.technology: vs-ide-debug
+ms.date: 11/07/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTrace, API reference
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03f86c1e93de5a2443a91d047c68528f3ec49b08
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: f39bca422cf5dbc6e14c6ca9e876c8e160023994
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153509"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828490"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>Referencia de la API para la extensibilidad de IntelliTrace
 
@@ -25,14 +23,14 @@ Con la información proporcionada en esta sección, podrá usar la API de extens
   
 ## <a name="in-this-section"></a>En esta sección
 
- Esta API de extensibilidad de IntelliTrace está contenida en un espacio de nombres  
+Este espacio de nombres contiene las API de extensibilidad de IntelliTrace:
   
 - <xref:Microsoft.VisualStudio.IntelliTrace>  
   
 ## <a name="related-sections"></a>Secciones relacionadas
 
- [IntelliTrace](../debugger/intellitrace.md)  
- Proporciona información sobre cómo depurar con IntelliTrace.  
+[IntelliTrace](../debugger/intellitrace.md)  
+Proporciona información sobre cómo depurar con IntelliTrace.  
   
- [Galería de código de MSDN](https://code.msdn.microsoft.com/)  
- Hospeda una aplicación de ejemplo que muestra cómo usar la extensibilidad de IntelliTrace.
+[Ejemplos de código para desarrolladores](https://code.msdn.microsoft.com/)  
+Hospeda una aplicación de ejemplo que muestra cómo usar la extensibilidad de IntelliTrace.

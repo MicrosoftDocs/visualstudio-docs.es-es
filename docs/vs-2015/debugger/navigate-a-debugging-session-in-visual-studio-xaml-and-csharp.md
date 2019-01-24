@@ -16,15 +16,15 @@ dev_langs:
 - C++
 ms.assetid: 1da33203-333f-4a05-b4e2-8d407c497233
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e0acee43c05332dd3f9f10eecb7ea55b02671f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 00ca08eae8d1ed9a9c1f75eff9a6d3a0642e5a79
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842646"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741157"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Navegar por una sesión de depuración en Visual Studio (Xaml y C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

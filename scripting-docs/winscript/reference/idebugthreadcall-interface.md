@@ -14,19 +14,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b2b1b500aec08520166d9092edfa6a58c1df0fa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a2167538f2251d961dfcad4a873658d9635a612e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726945"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346272"
 ---
 # <a name="idebugthreadcall-interface"></a>IDebugThreadCall (Interfaz)
-El `IDebugThreadCall` interfaz normalmente se implementa mediante un componente que realiza llamadas a través de subprocesos con el `IDebugThread` implementación proporcionada por el Administrador de depuración (PDM) de proceso de cálculo de referencias.  
+El `IDebugThreadCall` interfaz se implementa normalmente mediante un componente que realiza las llamadas entre subprocesos con el `IDebugThread` implementación proporcionada por el Administrador de depuración (PDM) de proceso de serialización.  
   
- Las llamadas PDM la `IDebugThreadCall` interfaz en el subproceso deseado y la `IDebugThreadCall` interfaz envía la llamada a la implementación. El `IDebugThreadCall` interfaz convierte la información de parámetros pasada en los parámetros a la parte superior adecuada.  
+ Las llamadas PDM el `IDebugThreadCall` interfaz en el subproceso deseado y el `IDebugThreadCall` interfaz envía la llamada a la implementación deseada. El `IDebugThreadCall` interfaz convierte la información de parámetros pasada en los parámetros en la parte superior adecuada.  
   
- La `IDebugThreadCall` interfaz es un objeto de subprocesamiento libre.  
+ El `IDebugThreadCall` interfaz es un objeto de subprocesamiento libre.  
   
 ## <a name="methods"></a>Métodos  
  Además de los métodos heredados de `IUnknown`, el `IDebugThreadCall` interfaz expone los métodos siguientes.  

@@ -2,7 +2,6 @@
 title: Cómo usar fragmentos de código envolventes | Microsoft Docs
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - surround-with snippets
@@ -12,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2c5211291fbfe3bb7c8ab3fe1eaa371a2dd8e2c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 11e31d46af00620b9e8ac9f45fe79946eea4eb1a
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943194"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270157"
 ---
-# <a name="how-to-use-surround-with-code-snippets"></a>Cómo usar fragmentos de código envolventes
+# <a name="how-to-use-surround-with-code-snippets"></a>Procedimiento Usar fragmentos de código envolventes
 
-Los siguientes procedimientos describen cómo usar fragmentos de código envolventes. Los fragmentos de código envolventes están disponibles de tres maneras: con un método abreviado de teclado, por medio del menú **Edición** y por medio del menú contextual.
+Los siguientes procedimientos describen cómo usar fragmentos de código envolventes. Los fragmentos de código envolventes están disponibles de tres maneras: mediante un método abreviado de teclado, desde del menú **Edición** y mediante el menú contextual.
 
 ## <a name="to-use-surround-with-code-snippets-through-keyboard-shortcut"></a>Para usar fragmentos de código envolventes mediante el método abreviado de teclado
 

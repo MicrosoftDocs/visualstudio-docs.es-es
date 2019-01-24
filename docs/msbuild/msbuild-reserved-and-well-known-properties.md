@@ -1,8 +1,6 @@
 ---
 title: Propiedades reservadas y conocidas de MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50bb5a21f93368533a6514cdaf19a7b88486eb06
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 82ab1ec887fd6a0c881f2d1e4b0c1295e1c67716
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894487"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967740"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Propiedades reservadas y conocidas de MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proporciona un conjunto de propiedades predefinidas que almacenan información sobre el archivo de proyecto y los archivos binarios de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Estas propiedades se evalúan igual que otras propiedades de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Por ejemplo, para utilizar la propiedad `MSBuildProjectFile` escribiría `$(MSBuildProjectFile)`.  
@@ -37,7 +35,7 @@ ms.locfileid: "49894487"
 |----------------------------------|------------------------| - |
 | `MSBuildBinPath` | Reservada | Ruta de acceso absoluta de la carpeta donde se encuentran los archivos binarios de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que se están usando (por ejemplo, *C:\Windows\Microsoft.Net\Framework\\\<númeroDeVersión>*). Esta propiedad es útil si necesita hacer referencia a los archivos del directorio de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].<br /><br /> No incluya la barra diagonal inversa final en esta propiedad. |
 | `MSBuildExtensionsPath` | Conocida | Introducida en .NET Framework 4: no hay ninguna diferencia entre los valores predeterminados de `MSBuildExtensionsPath` y de `MSBuildExtensionsPath32`. Puede establecer la variable de entorno `MSBUILDLEGACYEXTENSIONSPATH` en un valor distinto de null para habilitar el comportamiento del valor predeterminado de `MSBuildExtensionsPath` en versiones anteriores.<br /><br /> En .NET Framework 3.5 y versiones anteriores, el valor predeterminado de `MSBuildExtensionsPath` apunta a la ruta de la subcarpeta de MSBuild en la carpeta *\Archivos de programa\\* o *\Archivos de programa (x86)*, según el valor de bits del proceso actual. Por ejemplo, para un proceso de 32 bits en un equipo de 64 bits, esta propiedad apunta a la carpeta *\Archivos de programa (x86)*. Para un proceso de 64 bits en un equipo de 64 bits, esta propiedad apunta a la carpeta *\Archivos de programa*.<br /><br /> No incluya la barra diagonal inversa final en esta propiedad.<br /><br /> Esta ubicación es un lugar útil para colocar archivos de destino personalizados. Por ejemplo, podría instalar los archivos de destino en *\Archivos de programa\MSBuild\MyFiles\Northwind.targets* y luego importarlos en archivos de proyecto con este código XML:<br /><br /> `<Import Project="$(MSBuildExtensionsPath)\MyFiles\Northwind.targets"/>` |
-| `MSBuildExtensionsPath32` | Conocida | Ruta de acceso de la subcarpeta [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] en la carpeta *\Archivos de programa* o *\Archivos de programa (x86)*. Esta ruta de acceso siempre apunta a la carpeta *\Archivos de programa* de 32 bits en un equipo de 32 bits y a *\Archivos de programa (x86)* en un equipo de 64 bits. Vea también `MSBuildExtensionsPath` y `MSBuildExtensionsPath64`.<br /><br /> No incluya la barra diagonal inversa final en esta propiedad. |
+| `MSBuildExtensionsPath32` | Conocida | Ruta de acceso de la subcarpeta [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] en la carpeta *\Archivos de programa* o *\Archivos de programa (x86)*. La ruta de acceso siempre apunta a la carpeta de 32 bits *\Archivos de programa (x86)* en un equipo de 32 bits y a *\Archivos de programa* en un equipo de 64 bits. Vea también `MSBuildExtensionsPath` y `MSBuildExtensionsPath64`.<br /><br /> No incluya la barra diagonal inversa final en esta propiedad. |
 | `MSBuildExtensionsPath64` | Conocida | Ruta de acceso de la subcarpeta [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] en la carpeta *\Archivos de programa*. En un equipo de 64 bits, esta ruta de acceso apunta siempre a la carpeta *\Archivos de programa*. Para un equipo de 32 bits, esta ruta de acceso está en blanco. Vea también `MSBuildExtensionsPath` y `MSBuildExtensionsPath32`.<br /><br /> No incluya la barra diagonal inversa final en esta propiedad. |
 | `MSBuildLastTaskResult` | Reservada | `true` si la tarea anterior se completó sin errores (aunque hubiera advertencias) o `false` si la tarea anterior tuvo errores. Normalmente, cuando se produce un error en una tarea, el error es lo último que ocurre en ese proyecto. Por consiguiente, el valor de esta propiedad nunca es `false`, excepto en estos escenarios:<br /><br /> - Cuando el atributo `ContinueOnError` del [Elemento de tarea (MSBuild)](../msbuild/task-element-msbuild.md) está establecido en `WarnAndContinue` (o `true`) o `ErrorAndContinue`.<br /><br /> - Cuando `Target` tiene un [Elemento OnError (MSBuild)](../msbuild/onerror-element-msbuild.md) como elemento secundario. |
 | `MSBuildNodeCount` | Reservada | Número máximo de procesos simultáneos que se usan al compilar. Este es el valor que ha especificado para **-maxcpucount** en la línea de comandos. Si ha especificado **-maxcpucount** sin especificar un valor, `MSBuildNodeCount` especifica el número de procesadores del equipo. Para obtener más información, vea [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md) y [Compilar varios proyectos en paralelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md). |
@@ -55,7 +53,7 @@ ms.locfileid: "49894487"
 | `MSBuildThisFileDirectory` | Reservada | Parte de directorio de `MSBuildThisFileFullPath`.<br /><br /> Incluya la barra diagonal inversa final de la ruta. |
 | `MSBuildThisFileDirectoryNoRoot` | Reservada | Parte del directorio de `MSBuildThisFileFullPath`, sin incluir la unidad raíz.<br /><br /> Incluya la barra diagonal inversa final de la ruta. |
 | `MSBuildThisFileExtension` | Reservada | Parte de la extensión de nombre de archivo de `MSBuildThisFileFullPath`. |
-| `MSBuildThisFileFullPath` | Reservada | Ruta de acceso absoluta del archivo de proyecto o de destinos que contiene el destino que se está ejecutando.<br /><br /> Consejo: Puede especificar una ruta de acceso relativa en un archivo de destinos relativa al archivo de destinos y no relativa al archivo del proyecto original. |
+| `MSBuildThisFileFullPath` | Reservada | Ruta de acceso absoluta del archivo de proyecto o de destinos que contiene el destino que se está ejecutando.<br /><br /> Sugerencia: Puede especificar una ruta de acceso relativa en un archivo de destinos relativa al archivo de destinos y no relativa al archivo de proyecto original. |
 | `MSBuildThisFileName` | Reservada | Parte de nombre de archivo de `MSBuildThisFileFullPath`, sin la extensión de nombre de archivo. |
 | `MSBuildToolsPath` | Reservada | Ruta de acceso de instalación de la versión de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que se asocia al valor de `MSBuildToolsVersion`.<br /><br /> No incluya la barra diagonal inversa final de la ruta.<br /><br /> Esta propiedad no se puede invalidar. |
 | `MSBuildToolsVersion` | Reservada | Versión del conjunto de herramientas de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que se utilizará para compilar el proyecto.<br /><br /> Nota: Un conjunto de herramientas de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] consta de tareas, destinos y herramientas que se utilizan para compilar una aplicación. Las herramientas incluyen compiladores como *csc.exe* y *vbc.exe*. Para obtener más información, vea [Conjunto de herramientas de MSBuild (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) y [Configuraciones de conjuntos de herramientas estándar y personalizados](../msbuild/standard-and-custom-toolset-configurations.md). |

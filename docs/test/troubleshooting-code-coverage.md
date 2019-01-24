@@ -1,20 +1,19 @@
 ---
-title: Solución de problemas de cobertura de código en Visual Studio
+title: Solucionar problemas de cobertura de código
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: troubleshooting
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6224e03e4aafe152107a8fa7da56dc6bd8def1e3
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 648f080c2733da4a9b0ee4a0e4bf746354737da4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380556"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905298"
 ---
 # <a name="troubleshoot-code-coverage"></a>Solucionar problemas de cobertura de código
 

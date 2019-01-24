@@ -12,15 +12,15 @@ helpviewer_keywords:
 - UML model, extending
 ms.assetid: 82a58dc5-c7cf-4521-a6da-7ff09cd0de9d
 caps.latest.revision: 39
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c6ed7f72a8125d2307b91cd829bd6f474145fa78
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6f7895916cc4ee877c53b056f703d8e46b64b409
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827485"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805572"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definir e instalar una extensión de modelado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

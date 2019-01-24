@@ -1,8 +1,7 @@
 ---
-title: Refactorización de una firma de método en Visual Studio
+title: Refactorización de la firma de método
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -15,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 944340a8f6901934c3afc2f54323f73bc5639f8b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 68c814fca9d5e1df2c01e803b13cd5b03e8935e4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842292"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968409"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Refactorización de cambio de una firma de método
 
@@ -30,11 +29,11 @@ Esta refactorización se aplica a lo siguiente:
 
 - Visual Basic
 
-**Qué:** Le permite quitar o cambiar el orden de los parámetros de un método.
+**Qué:** Permite quitar o cambiar el orden de los parámetros de un método.
 
-**Cuándo:** Desea mover o quitar un parámetro de método que se está usando actualmente en diferentes ubicaciones.
+**Cuándo:** Se quiere mover o quitar un parámetro de método que se está usando actualmente en diferentes ubicaciones.
 
-**Por qué:** Podría quitar y cambiar el orden de los parámetros manualmente y, a continuación, buscar todas las llamadas a ese método y cambiarlas una por una, pero esto podría provocar errores.  Esta herramienta de refactorización realizará la tarea automáticamente.
+**Por qué:** Se podría quitar y cambiar el orden de los parámetros manualmente y, después, buscar todas las llamadas a ese método y cambiarlas una por una, pero esto podría provocar errores.  Esta herramienta de refactorización realizará la tarea automáticamente.
 
 ## <a name="how-to"></a>Procedimiento
 

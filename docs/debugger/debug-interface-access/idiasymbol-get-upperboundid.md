@@ -1,8 +1,6 @@
 ---
 title: Get_upperboundid | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93de67915f8c0382a984786a1c33bc1dc3290f5b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d9bf36c1a02fd80c36b362e1f250f5259ebb3260
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815720"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952946"
 ---
 # <a name="idiasymbolgetupperboundid"></a>IDiaSymbol::get_upperBoundId
 Recupera el identificador de símbolo de límite superior de una dimensión de matriz de FORTRAN.  
@@ -27,7 +25,7 @@ Recupera el identificador de símbolo de límite superior de una dimensión de m
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT get_upperBoundId (   
+HRESULT get_upperBoundId (   
    DWORD* pRetVal  
 );  
 ```  

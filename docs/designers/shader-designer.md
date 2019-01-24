@@ -2,7 +2,6 @@
 title: Diseñador de sombras
 ms.date: 09/21/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.effectdesigner
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f2f53e801df70345e34c14c15d4456e39561623
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dc48d2981e09dca55031b8ce78a06306a66ffbc0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847636"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968545"
 ---
 # <a name="shader-designer"></a>Diseñador de sombras
 
@@ -98,7 +97,7 @@ En esta tabla se describen los elementos de la barra de herramientas **Modo Dise
 |**Vista previa con plano**|Cuando está habilitada, se usa un modelo de un plano para obtener una vista previa del sombreador. Solo se puede habilitar una forma de vista preliminar a la vez.|
 |**Cuadro de herramientas**|Muestra u oculta alternativamente el **Cuadro de herramientas**.|
 |**Propiedades**|Muestra u oculta alternativamente la ventana **Propiedades**.|
-|**Avanzadas**|Contiene comandos y opciones avanzados.<br /><br /> **Exportar**: permite la exportación de un sombreador en varios formatos.<br /><br /> **Exportar como**: exporta el sombreador como código fuente HLSL o como código de bytes del sombreador compilado. Para obtener más información sobre cómo exportar sombreadores, vea [Cómo: Exportar un sombreador](../designers/how-to-export-a-shader.md).<br /><br /> **Motores gráficos**: habilita la selección del representador que se usa para mostrar la superficie de diseño.<br /><br /> **Representar con D3D11**: usa Direct3D 11 para representar la superficie de diseño del Diseñador de sombras.<br /><br /> **Representar con D3D11WARP**: usa Windows Advanced Rasterization Platform (WARP) de Direct3D 11 para representar la superficie de diseño del Diseñador de sombras.<br /><br /> **Vista**: habilita la selección de información adicional sobre el Diseñador de sombras.<br /><br /> **Velocidad de fotogramas**: cuando se habilita, muestra la velocidad de fotogramas actual en la esquina superior derecha de la superficie de diseño. La velocidad de fotogramas es el número de fotogramas dibujados por segundo. Esta opción es útil cuando se habilita la opción **Modo de representación en tiempo real**.|
+|**Avanzadas**|Contiene comandos y opciones avanzados.<br /><br /> **Exportar**: Permite la exportación de un sombreador en varios formatos.<br /><br /> **Exportar como**: Exporta el sombreador como código fuente HLSL o como código de bytes del sombreador compilado. Para obtener más información sobre cómo exportar sombreadores, vea [Cómo: Exportar un sombreador](../designers/how-to-export-a-shader.md).<br /><br /> **Motores gráficos**: Permite la selección del representador que se usa para mostrar la superficie de diseño.<br /><br /> **Representar con D3D11**: Usa Direct3D 11 para representar la superficie de diseño de Diseñador de sombras.<br /><br /> **Representar con D3D11WARP**: Usa Windows Advanced Rasterization Platform (WARP) de Direct3D 11 para representar la superficie de diseño de Diseñador de sombras.<br /><br /> **Vista**: Permite seleccionar información adicional sobre Diseñador de sombras.<br /><br /> **Velocidad de fotogramas**: Cuando se habilita, muestra la velocidad de fotogramas actual en la esquina superior derecha de la superficie de diseño. La velocidad de fotogramas es el número de fotogramas dibujados por segundo. Esta opción es útil cuando se habilita la opción **Modo de representación en tiempo real**.|
 
 > [!TIP]
 > Puede hacer clic en el botón **Avanzadas** para volver a ejecutar el último comando.
@@ -147,12 +146,12 @@ En la tabla siguiente se muestran los parámetros de sombreador que puede modifi
 
 |Parámetro|Propiedades|
 |---------------|----------------|
-|**Textura 1** - **Textura 8**|**Acceso**:                             **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Nombre de archivo**: la ruta de acceso completa del archivo de textura asociado al registro de textura.|
-|**Color ambiental de material**|**Acceso**:                             **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Valor**: el color difuso del píxel actual debido a la iluminación indirecta o ambiente.|
-|**Color difuso de material**|**Acceso**: **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Valor**: un color que describe cómo difumina la iluminación directa el píxel actual.|
-|**Color emisor de luz de material**|**Acceso**:                              **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Valor**: la contribución de color del píxel actual debida a la iluminación propia proporcionada.|
-|**Reflexión especular de material**|**Acceso**:                              **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Valor**: un color que describe cómo refleja la iluminación directa el píxel actual.|
-|**Potencia especular de material**|**Acceso**:                             **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Valor**: el exponente que define la intensidad de los reflejos especulares en el píxel actual.|
+|**Textura 1** - **Textura 8**|**Acceso**:                             **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Nombre de archivo**: Ruta de acceso completa del archivo de textura asociado al registro de textura.|
+|**Color ambiental de material**|**Acceso**:                             **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Valor**: Color difuso del píxel actual debido a la iluminación indirecta o de ambiente.|
+|**Color difuso de material**|**Acceso**: **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Valor**:  Un color que describe cómo difumina la iluminación directa el píxel actual.|
+|**Color emisor de luz de material**|**Acceso**:                              **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Valor**: Contribución de color del píxel actual debida a la iluminación propia proporcionada.|
+|**Reflexión especular de material**|**Acceso**:                              **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Valor**: Un color que describe cómo refleja la iluminación directa el píxel actual.|
+|**Potencia especular de material**|**Acceso**:                             **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Valor**: El exponente que define la intensidad de los reflejos especulares en el píxel actual.|
 
 #### <a name="time-based-effects"></a>Efectos basados en tiempo
 

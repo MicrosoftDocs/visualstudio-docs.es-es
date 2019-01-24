@@ -1,5 +1,5 @@
 ---
-title: Creación de un complemento de grabación para pruebas de rendimiento web en Visual Studio
+title: Creación de un complemento de grabación para pruebas de rendimiento web
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,17 +9,18 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 3851b70f818c9cc601dbbdabce059e16fec747ee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d047298a263e707c2f4e09475d2f6510a586a4f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909782"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945826"
 ---
-# <a name="how-to-create-a-recorder-plug-in"></a>Cómo: Crear un complemento de grabación
+# <a name="how-to-create-a-recorder-plug-in"></a>Procedimiento Crear un complemento de grabadora
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> permite modificar una prueba de rendimiento web grabada. La modificación se produce después de hacer clic en **Detener** en la barra de herramientas de la **grabadora de pruebas de rendimiento web**, pero antes de que la prueba se guarde y se presente en el Editor de pruebas de rendimiento web.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Un complemento de grabación permite realizar una correlación personalizada sobre parámetros dinámicos. Con la funcionalidad de correlación integrada, las pruebas de rendimiento web detectan los parámetros dinámicos de la grabación web al finalizar o cuando se usa **Promover parámetros dinámicos a parámetros de pruebas web** en la barra de herramientas del **Editor de pruebas de rendimiento web**. Sin embargo, la funcionalidad de detección integrada no encuentra siempre todos los parámetros dinámicos. Por ejemplo, no encuentra un id. de sesión, que normalmente obtiene su valor cambiado entre 5 y 30 minutos. Por tanto, tiene que realizar el proceso de correlación manualmente.
 
@@ -109,7 +110,7 @@ Después de compilar el complemento de grabadora, coloque el archivo DLL resulta
     > [!WARNING]
     > Puede obtener un error similar al siguiente al ejecutar una prueba de rendimiento web o una prueba de carga que use su complemento:
     >
-    > **Error en la solicitud: excepción en \<plug-in> event: no se pudo cargar el archivo o ensamblado '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' o una de sus dependencias. El sistema no puede encontrar el archivo especificado.**
+    > **Error en la solicitud: Excepción en el evento \<complemento>: no se pudo cargar el archivo o ensamblado "\<archivo "nombre_de_complemento".dll>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null" o una de sus dependencias. El sistema no puede encontrar el archivo especificado.**
     >
     > Esto ocurre si realiza cambios en el código de cualquier complemento y crea una nueva versión de DLL **(Version=0.0.0.0)**, pero el complemento sigue haciendo referencia a la versión original del complemento. Para corregir este problema, siga estos pasos:
     >

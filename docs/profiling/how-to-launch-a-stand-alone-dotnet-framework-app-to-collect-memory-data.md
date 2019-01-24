@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: Iniciar una aplicación de .NET Framework independiente con el generador de perfiles para recopilar datos de memoria utilizando la línea de comandos | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Iniciar una aplicación de .NET Framework independiente con el generador de perfiles para recopilar datos de memoria utilizando la línea de comandos | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 3bc53041-91b7-4ad0-8413-f8bf2c4b3f5e
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ae6711ae49de037fd04039f1e07b09264fdce1b0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 42e6a7d0ddd00fefa071f18ef4d7ee0d508a06da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876690"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857846"
 ---
-# <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Iniciar una aplicación de .NET Framework independiente con el generador de perfiles para recopilar datos de memoria mediante la línea de comandos
+# <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Procedimiento Iniciar una aplicación de .NET Framework independiente con el generador de perfiles para recopilar datos de memoria mediante la línea de comandos
 En este tema se describe cómo utilizar las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para iniciar una aplicación independiente (cliente) de .NET Framework y recopilar datos de memoria.  
 
  Una sesión de generación de perfiles tiene tres partes:  
@@ -29,7 +27,7 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 -   Finalizar la sesión de generación de perfiles.  
 
 > [!NOTE]
->  Las herramientas de línea de comandos de las Herramientas de generación de perfiles se encuentran en el subdirectorio *\Team Tools\Performance Tools* del directorio de instalación de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana Símbolo del sistema o agregarla al propio comando. Para más información, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Para obtener la ruta de acceso a las herramientas de generación de perfiles, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana Símbolo del sistema o agregarla al propio comando.
 
 ## <a name="start-the-application-with-the-profiler"></a>Iniciar la aplicación con el generador de perfiles  
  Para iniciar una aplicación de destino con el generador de perfiles, utilice las opciones **VSPerfCmd.exe/start** y **/launch** para inicializar el generador de perfiles e iniciar la aplicación. Puede especificar **/start** y **/launch** y sus respectivas opciones en una línea de comandos única.  
@@ -100,7 +98,7 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
     -   Cierre la aplicación de destino.  
 
-         O bien  
+         o bien  
 
     -   Escriba **VSPerfCmd /detach**  
 

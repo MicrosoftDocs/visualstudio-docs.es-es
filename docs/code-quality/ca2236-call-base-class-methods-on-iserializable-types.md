@@ -1,8 +1,7 @@
 ---
-title: 'LCA2236: Llamar a métodos de clase base en tipos ISerializable'
+title: 'CA2236: Llamar a métodos de clase base en tipos ISerializable'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2236
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c5b4dee5a274e88be407e015adc4d20c06605dd
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 2cdbd9a3af7c22e2afa29efdff411903c81b6620
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547651"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862099"
 ---
-# <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>LCA2236: Llamar a métodos de clase base en tipos ISerializable
+# <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>CA2236: Llamar a métodos de clase base en tipos ISerializable
 
 |||
 |-|-|
@@ -60,7 +59,7 @@ ms.locfileid: "45547651"
 ## <a name="related-rules"></a>Reglas relacionadas
  [CA2240: Implementar ISerializable correctamente](../code-quality/ca2240-implement-iserializable-correctly.md)
 
- [CA2229: Implementar constructores de serialización](../code-quality/ca2229-implement-serialization-constructors.md)
+ [CA2229: implementar constructores de serialización](../code-quality/ca2229-implement-serialization-constructors.md)
 
  [CA2238: Implementar métodos de serialización correctamente](../code-quality/ca2238-implement-serialization-methods-correctly.md)
 
@@ -70,4 +69,4 @@ ms.locfileid: "45547651"
 
  [CA2239: Proporcionar métodos de deserialización para campos opcionales](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
 
- [CA2120: Proteger los constructores de serializaciones](../code-quality/ca2120-secure-serialization-constructors.md)
+ [CA2120: Proteger los constructores de serialización](../code-quality/ca2120-secure-serialization-constructors.md)

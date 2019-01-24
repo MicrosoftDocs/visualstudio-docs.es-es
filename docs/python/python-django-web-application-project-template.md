@@ -1,22 +1,22 @@
 ---
 title: Plantilla de proyecto web de Django para Python
-description: Información general de las plantillas de Visual Studio para aplicaciones web escritas en Python con el marco Django.
-ms.date: 07/03/2018
+description: Visual Studio proporciona una plantilla completa para la creación rápida de aplicaciones web de Django con Python.
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4ea90a97067e92d39772bd4257dc3abbae58d1d8
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 3512e67ed7a97c4f8cb4c6aa0be256c32087de40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49100970"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923788"
 ---
 # <a name="django-web-project-template"></a>Plantilla de proyecto web de Django
 
@@ -50,19 +50,19 @@ El acceso a la consola de administración de Django se realiza a través de vari
 
 - **Abrir Shell de Django**: abre un Shell en el contexto de la aplicación que le permite manipular los modelos:
 
-    ![Consola](media/template-django-console-shell.png)
+    ![Resultados del comando Abrir Shell de Django](media/template-django-console-shell.png)
 
 - **Django Sync DB** (Base de datos de sincronización de Django): ejecuta `manage.py syncdb` en una ventana **interactiva**:
 
-    ![Consola](media/template-django-console-sync-db.png)
+    ![Resultados del comando Sincronizar base de datos de Django](media/template-django-console-sync-db.png)
 
 - **Collect Static** (Recopilar estáticos): ejecuta `manage.py collectstatic --noinput` para copiar todos los archivos estáticos en la ruta de acceso que `STATIC_ROOT` especifica en *settings.py*.
 
-    ![Consola](media/template-django-console-collect-static.png)
+    ![Resultado del comando Recopilar archivos estáticos](media/template-django-console-collect-static.png)
 
 - **Validar**: ejecuta `manage.py validate`, que informa de los errores de validación en los modelos instalados que especifica `INSTALLED_APPS` en *settings.py*:
 
-    ![Consola](media/template-django-console-validate.png)
+    ![Resultado del comando Validar](media/template-django-console-validate.png)
 
 ## <a name="see-also"></a>Vea también
 

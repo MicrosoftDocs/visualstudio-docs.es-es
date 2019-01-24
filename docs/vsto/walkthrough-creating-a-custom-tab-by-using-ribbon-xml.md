@@ -1,9 +1,6 @@
 ---
 title: 'Tutorial: Crear una pestaña personalizada usando XML de cinta de opciones'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45e35b7cf97a6b9a1f310149817f8e79956a47aa
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: dda5c2721d9932afd20c0b02f4a82bbbde7116ae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808929"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955232"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>Tutorial: Crear una pestaña personalizada usando XML de cinta de opciones
   En este tutorial se muestra cómo crear una pestaña personalizada de la cinta de opciones mediante el uso de la **cinta (XML)** elemento.  
@@ -55,7 +52,7 @@ ms.locfileid: "38808929"
   
 1.  Crear un **complemento Word** proyecto con el nombre **MyRibbonAddIn**.  
   
-     Para obtener más información, consulte [Cómo: proyectos de creación de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] se abre el **ThisAddIn.cs** o **ThisAddIn.vb** archivo de código y agrega el **MyRibbonAddIn** proyecto a **el Explorador de soluciones**.  
   
@@ -155,11 +152,9 @@ ms.locfileid: "38808929"
   
 -   Crear un panel de acciones personalizadas. Para obtener más información, consulte [información general sobre el panel de acciones](../vsto/actions-pane-overview.md).  
   
--   Personalizar la interfaz de usuario de Microsoft Office Outlook mediante las áreas de formulario de Outlook. Para obtener más información, consulte [Tutorial: diseñar un área de formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
+-   Personalizar la interfaz de usuario de Microsoft Office Outlook mediante las áreas de formulario de Outlook. Para obtener más información, vea [Tutorial: Diseñar un formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Información general de la cinta de opciones](../vsto/ribbon-overview.md)   
  [XML de la cinta](../vsto/ribbon-xml.md)   
  [Tutorial: Crear una pestaña personalizada usando el Diseñador de cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
-  
-  

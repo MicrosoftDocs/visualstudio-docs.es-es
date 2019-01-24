@@ -2,7 +2,6 @@
 title: IntelliSense para C#
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - C#, IntelliSense
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 882e9471646d83434c18f18811f9f6f693d2e551
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: cf15c8015eb1a26cc418bcf11d9e189eb3875585
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513405"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885801"
 ---
 # <a name="c-intellisense"></a>IntelliSense para C#
 
@@ -62,19 +61,19 @@ IntelliSense usa filtros para quitar los miembros innecesarios de la lista de fi
 
 - **Interfaces y clases base**: IntelliSense quita automáticamente los elementos de las listas de finalización de clase base e interfaz, tanto en las listas de interfaz y base de declaración de clases como en las listas de restricciones. Por ejemplo, las enumeraciones no aparecen en la lista de finalización de las clases base porque las enumeraciones no se pueden usar para clases base. La lista de finalización de clases base solo contiene interfaces y espacios de nombres. Si selecciona un elemento en la lista y luego escribe una coma, IntelliSense quita las clases base de la lista de finalización porque C# no admite herencia múltiple. El mismo comportamiento se produce con las cláusulas de restricción.
 
-- **Atributos**: cuando se aplica un atributo a un tipo, la lista de finalización se filtra para incluir únicamente los tipos que descienden de los espacios de nombres que contienen esos tipos, como <xref:System.Attribute>.
+- **Atributos**: Cuando se aplica un atributo a un tipo, la lista de finalización se filtra para incluir únicamente los tipos que descienden de los espacios de nombres que contienen esos tipos, como <xref:System.Attribute>.
 
 - **Cláusulas catch**
 
-- **Inicializadores de objeto**: solo los miembros que se pueden inicializar aparecerán en la lista de finalización.
+- **Inicializadores de objeto**: Solo los miembros que se pueden inicializar aparecerán en la lista de finalización.
 
-- **Palabra clave new**: si se escribe `new` y luego se presiona la **barra espaciadora**, aparece una lista de finalización. Automáticamente se selecciona un elemento de la lista, que variará según el contexto del código. Por ejemplo, se seleccionan automáticamente elementos en la lista de finalización para las declaraciones y las instrucciones return de métodos.
+- **Palabra clave new**: Si se escribe `new` y luego se presiona la **barra espaciadora**, aparece una lista de finalización. Automáticamente se selecciona un elemento de la lista, que variará según el contexto del código. Por ejemplo, se seleccionan automáticamente elementos en la lista de finalización para las declaraciones y las instrucciones return de métodos.
 
-- **Palabra clave enum**: cuando presiona la **barra espaciadora** después de un signo igual para una asignación de enumeración, aparece una lista de finalización. Automáticamente se selecciona un elemento de la lista, que variará según el contexto del código. Por ejemplo, se seleccionan automáticamente elementos en la lista de finalización después de escribir la palabra clave Return y al realizar una declaración.
+- **Palabra clave enum**: Si se presiona la **barra espaciadora** después de un signo igual para una asignación de enumeración, aparece una lista de finalización. Automáticamente se selecciona un elemento de la lista, que variará según el contexto del código. Por ejemplo, se seleccionan automáticamente elementos en la lista de finalización después de escribir la palabra clave Return y al realizar una declaración.
 
-- **Operadores as e is**: cuando se presiona la **barra espaciadora** después de haber escrito la palabra clave `as` o `is`, aparece automáticamente una lista de finalización filtrada.
+- **Operadores as e is**: Cuando se presiona la **barra espaciadora** después de haber escrito la palabra clave `as` o `is`, aparece automáticamente una lista de finalización filtrada.
 
-- **Eventos**: si se escribe la palabra clave `event`, la lista de finalización solo contiene tipos delegados.
+- **Eventos**: al escribir la palabra clave `event`, la lista de finalización solo contiene tipos delegados.
 
 - La **ayuda de parámetros** se ordena automáticamente por la primera sobrecarga de método que coincida con los parámetros que se especifican. Si existen varias sobrecargas de método, puede usar las flechas arriba y abajo para desplazarse a la siguiente sobrecarga posible de la lista.
 
@@ -116,7 +115,7 @@ La opción Implementar interfaz genera el número mínimo de códigos auxiliares
 
 IntelliSense proporciona una opción útil para implementar miembros de una clase base abstracta de forma automática mientras se trabaja en el editor de código. Normalmente, la implementación de miembros de una clase base abstracta requiere la creación de una nueva definición de método para cada método de la clase base abstracta en la clase derivada. Con IntelliSense, después de escribir el nombre de una clase base abstracta en una declaración de clase, se muestra una bombilla de **Acciones rápidas**. La bombilla ofrece la opción de implementar los métodos de la clase base automáticamente.
 
-El código auxiliar del método generado por la característica **Implementar clases base abstractas** está modelado por el fragmento de código definido en el archivo *MethodStub.snippet*. Los fragmentos de código son modificables. Para más información, vea [Tutorial: Crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md).
+El código auxiliar del método generado por la característica **Implementar clases base abstractas** está modelado por el fragmento de código definido en el archivo *MethodStub.snippet*. Los fragmentos de código son modificables. Para obtener más información, vea [Tutorial: Creación de un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md).
 
 ### <a name="generate-from-usage"></a>Generar a partir del uso
 
@@ -165,4 +164,4 @@ Si presiona **TAB**, IntelliSense crea el código auxiliar de un método con la 
 ## <a name="see-also"></a>Vea también
 
 - [Uso de IntelliSense](../ide/using-intellisense.md)
-- [IDE de Visual Studio](../ide/visual-studio-ide.md)
+- [IDE de Visual Studio](../get-started/visual-studio-ide.md)

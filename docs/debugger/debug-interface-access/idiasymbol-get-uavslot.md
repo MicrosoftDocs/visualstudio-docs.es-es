@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_uavSlot | Documentos de Microsoft
-ms.custom: ''
+title: IDiaSymbol::get_uavSlot | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52332047b0315ab10e58d87c5a5157479f534c16
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: e2766b8e87b8bb01573810fab8a79f7d10e12709
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470276"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931939"
 ---
 # <a name="idiasymbolgetuavslot"></a>IDiaSymbol::get_uavSlot
-Recupera la ranura de vehículos aéreos no tripulados.  
+Recupera la ranura uav.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -31,10 +29,10 @@ HRESULT get_uavSlot(
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Un puntero a un `DWORD` que contiene la ranura de vehículos aéreos no tripulados.  
+ [out] Un puntero a un `DWORD` que contiene la ranura uav.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

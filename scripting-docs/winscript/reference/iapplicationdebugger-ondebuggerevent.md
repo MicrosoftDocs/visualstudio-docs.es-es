@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 754c56b8474a5e21a05c1399540391197c373118
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7dec2cea6cfcf11cc756ef730f98feee9ed9bb0e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725295"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092682"
 ---
 # <a name="iapplicationdebuggerondebuggerevent"></a>IApplicationDebugger::onDebuggerEvent
 Controla un evento de aplicación personalizada.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT onDebuggerEvent(  
    REFIID     riid,  
    IUnknown*  punk  
@@ -53,11 +53,11 @@ HRESULT onDebuggerEvent(
 |`E_NOTIMPL`|El método no está implementado actualmente.|  
   
 ## <a name="remarks"></a>Comentarios  
- La semántica de la `IUnknown` es totalmente aplicación/depurador definido.  
+ La semántica de la `IUnknown` completamente es application/depurador definido.  
   
- Este método permite que las extensiones personalizadas del modelo de depurador; no está implementada actualmente.  
+ Este método permite para las extensiones personalizadas del modelo de depurador; no está implementado actualmente.  
   
- Se llama a este método cuando `IDebugApplication::FireDebuggerEvent` se llama.  
+ Este método se llama cuando `IDebugApplication::FireDebuggerEvent` se llama.  
   
 ## <a name="see-also"></a>Vea también  
  [IApplicationDebugger (interfaz)](../../winscript/reference/iapplicationdebugger-interface.md)   

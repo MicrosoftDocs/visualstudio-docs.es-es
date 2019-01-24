@@ -2,7 +2,6 @@
 title: Reemplazar en archivos (Comando)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - edit.replaceinfiles
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bf54892d17a877cd8e2c3ffd21ebd513e303d6c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f24005473780591a89afcf97eae234976ff81a85
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946668"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960018"
 ---
 # <a name="replace-in-files-command"></a>Reemplazar en archivos (Comando)
 Reemplaza texto de los archivos mediante el uso de un subconjunto de las opciones disponibles en la pestaña **Reemplazar en archivos** de la ventana **Buscar y reemplazar**.
@@ -114,4 +113,4 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Cuadro Buscar/Comando](../../ide/find-command-box.md)
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,8 +1,6 @@
 ---
-title: 'Depuración: referencia de la interfaz de usuario | Documentos de Microsoft'
-ms.custom: ''
+title: 'Depuración: referencia de la interfaz de usuario | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.uiref
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83021f492eeb712f489641e3019fe9c8ecc47bdd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 1f68fdea35b8b6291ddb53e604510caf7ffc0ba1
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472531"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269493"
 ---
 # <a name="debugging-user-interface-reference"></a>Depuración: referencia de la interfaz de usuario
 Puede encontrar los cuadros de diálogo siguientes cuando depura la aplicación.  
@@ -46,5 +44,5 @@ Puede encontrar los cuadros de diálogo siguientes cuando depura la aplicación.
   
 ## <a name="see-also"></a>Vea también  
  [Depurar en Visual Studio](../debugger/index.md)  
- [Guía de características del depurador](../debugger/debugger-feature-tour.md)   
+ [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)   
  [Ventana Comandos](../ide/reference/command-window.md)

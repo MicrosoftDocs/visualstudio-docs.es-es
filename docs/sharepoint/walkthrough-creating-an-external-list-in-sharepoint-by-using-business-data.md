@@ -1,13 +1,8 @@
 ---
-title: 'Tutorial: Crear una lista externa en SharePoint mediante el uso de los datos empresariales | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Creación de una lista externa en SharePoint mediante el uso de los datos empresariales | Documentos de Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bf13870d54de312be3e97009c07076b49785516b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 96c52d1d30444aa557465ce2022a3ef1db4c3de0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913974"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918789"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Tutorial: Crear una lista externa en SharePoint con datos profesionales
 
@@ -85,7 +80,7 @@ Necesita los componentes siguientes para completar este tutorial:
 
 2. Agregar una conexión a la base de datos de ejemplo AdventureWorks de SQL Server.
 
-     Para obtener más información, consulte [agregar o modificar conexión (Microsoft SQL Server)](http://msdn.microsoft.com/fa400910-26c3-4df7-b9d1-115e688b4ea3).
+     Para obtener más información, consulte [agregar o modificar conexión (Microsoft SQL Server)](https://msdn.microsoft.com/fa400910-26c3-4df7-b9d1-115e688b4ea3).
 
 3. En el **Explorador de soluciones**, elija el nodo de proyecto.
 
@@ -125,7 +120,7 @@ El **modelo de conectividad a datos empresariales** proyecto agrega una entidad 
 
 Agregar una entidad al modelo. Puede agregar entidades de Visual Studio **cuadro de herramientas** en el Diseñador de BDC.
 
-1. En la barra de menús, elija **vista** > **cuadro de herramientas**.
+1. En la barra de menús, elija **Ver** > **Cuadro de herramientas**.
 
 2. En el **BusinessDataConnectivity** pestaña de la **cuadro de herramientas**, agregue un **entidad** hasta el diseñador BDC.
 
@@ -275,9 +270,9 @@ Al ejecutar el proyecto, se abre el sitio de SharePoint y Visual Studio agrega e
 
 Puede obtener más información acerca de cómo diseñar modelos para el servicio BDC de SharePoint en los siguientes temas:
 
-- [Cómo: agregar un método Creator](../sharepoint/how-to-add-a-creator-method.md).
-- [Cómo: agregar un método Updater](../sharepoint/how-to-add-an-updater-method.md).
-- [Cómo: agregar un método Deleter](../sharepoint/how-to-add-a-deleter-method.md).
+- [Cómo: Agregar un método Creator](../sharepoint/how-to-add-a-creator-method.md).
+- [Cómo: Agregar un método Updater](../sharepoint/how-to-add-an-updater-method.md).
+- [Cómo: Agregar un método Deleter](../sharepoint/how-to-add-a-deleter-method.md).
 
 ## <a name="see-also"></a>Vea también
 

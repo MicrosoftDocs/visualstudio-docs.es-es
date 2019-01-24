@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: Asociar y desasociar las herramientas de rendimiento de los procesos en ejecución | Microsoft Docs'
-ms.custom: ''
+title: Asociación de herramientas de rendimiento a procesos en ejecución
+ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.attach
@@ -18,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fbacad455f6663eae13aea42d0424091a0e3ec6a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 193a7bfeeae82147a64643871da70a72400e5054
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920942"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859690"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Cómo: Asociar y desasociar las herramientas de rendimiento de los procesos en ejecución
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Procedimiento Asociar y desasociar las herramientas de rendimiento en los procesos en ejecución
 El generador de perfiles puede utilizarse para asociar o desasociar un proceso en ejecución a fin de facilitar el muestreo y la recolección de los datos de rendimiento. Puede utilizar este método para generar perfiles de un proceso cuando quiera evitar que se recopilen datos sobre el tiempo de carga de la aplicación o supervisar el rendimiento de un proceso después de que alcance un estado determinado.  
   
 > [!NOTE]

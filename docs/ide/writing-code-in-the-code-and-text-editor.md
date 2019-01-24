@@ -1,8 +1,7 @@
 ---
-title: Características del editor de código en Visual Studio
+title: Características del editor de código
 ms.date: 02/23/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code, editing [Visual Studio]
@@ -12,16 +11,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 397ed4ea94aa54c8f8d31fc6ff0d08da16a93479
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 2e92749c7e18913685fdedac3a9404ace0705ac3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626570"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891753"
 ---
 # <a name="features-of-the-code-editor"></a>Características del editor de código
 
 El editor de Visual Studio proporciona muchas características que le facilitan la escritura y la administración del código y del texto. Puede expandir y contraer diferentes bloques de código mediante el uso de la esquematización. Puede obtener más información sobre el código mediante IntelliSense, el **Examinador de objetos** y la jerarquía de llamadas. Puede encontrar código mediante características como **Ir a**, **Ir a definición** y **Buscar todas las referencias**. Puede insertar bloques de código con fragmentos de código y generar código mediante funciones como **Generar a partir del uso**. Si no ha usado nunca el editor de Visual Studio, vea una breve introducción en [Edición del código](https://visualstudio.microsoft.com/vs/features/ide/).
+
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Editor de código fuente (Visual Studio para Mac)](/visualstudio/mac/source-editor).
 
 Puede ver el código de varias maneras. De forma predeterminada, en el **Explorador de soluciones** se muestra el código organizado por archivos. Puede hacer clic en la pestaña **Vista de clases** en la parte inferior de la ventana para ver el código organizado por clases.
 
@@ -57,8 +59,8 @@ Puede encontrar un número de características avanzadas en el menú **Editar** 
 |No aplicar tabulación a las líneas seleccionadas|Cambia las tabulaciones iniciales por espacios. Si desea convertir todos los espacios del archivo en tabulaciones (o todas las tabulaciones en espacios), puede utilizar los comandos `Edit.ConvertSpacesToTabs` y `Edit.ConvertTabsToSpaces` . Estos comandos no aparecen en los menús de Visual Studio, pero se pueden llamar desde la ventana **Acceso rápido** o la ventana Comandos.|
 |Poner en mayúsculas|Cambia todos los caracteres de la selección a mayúsculas o, si no hay ninguna selección, cambia el carácter situado en el punto de inserción a mayúsculas.|
 |Poner en minúsculas|Cambia todos los caracteres de la selección a minúsculas o, si no hay ninguna selección, cambia el carácter situado en el punto de inserción a minúsculas.|
-|Subir líneas seleccionadas|Mueve la línea seleccionada una línea hacia arriba. Método abreviado: **Alt**+**flecha arriba**.|
-|Bajar líneas seleccionadas|Mueve la línea seleccionada una línea hacia abajo. Método abreviado: **Alt**+**flecha abajo**.|
+|Subir líneas seleccionadas|Mueve la línea seleccionada una línea hacia arriba. Método abreviado: **Alt**+**Flecha arriba**.|
+|Bajar líneas seleccionadas|Mueve la línea seleccionada una línea hacia abajo. Método abreviado: **Alt**+**Flecha abajo**.|
 |Eliminar espacio en blanco horizontal|Elimina las tabulaciones o los espacios al final de la línea actual.|
 |Ver espacios en blanco|Muestra los espacios como puntos elevados y las tabulaciones como flechas. El final de un archivo se muestra como un glifo rectangular. Si está seleccionada la opción **Herramientas** > **Opciones** > **Editor de texto** > **Todos los lenguajes** > **Ajuste automático de línea** > **Mostrar glifos visibles para ajuste automático de línea**, también se muestra ese glifo.|
 |Ajuste automático de línea|Hace que todas las líneas de un documento se vean en la ventana de código. Puede activar o desactivar el ajuste automático de línea en la configuración **Editor de texto/Todos los lenguajes** (**Herramientas** > **Opciones** > **Editor de texto** > **Todos los lenguajes**).|
@@ -87,7 +89,8 @@ Para más información sobre cómo personalizar el editor, consulte [Personaliza
 
 ## <a name="see-also"></a>Vea también
 
-- [IDE de Visual Studio](../ide/visual-studio-ide.md)
+- [Editor de código fuente (Visual Studio para Mac)](/visualstudio/mac/source-editor)
+- [IDE de Visual Studio](../get-started/visual-studio-ide.md)
 - [Introducción a C++ en Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md)
-- [Introducción a C# y ASP.NET Core en Visual Studio](../ide/tutorial-csharp-aspnet-core.md)
+- [Introducción a C# y ASP.NET Core en Visual Studio](../get-started/csharp/tutorial-aspnet-core.md)
 - [Introducción a Python en Visual Studio](../ide/quickstart-python.md)

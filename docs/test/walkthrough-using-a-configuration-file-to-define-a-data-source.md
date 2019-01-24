@@ -1,8 +1,7 @@
 ---
-title: 'Tutorial: Usar un archivo de configuración para definir un origen de datos en Visual Studio'
+title: 'Tutorial: Uso de un archivo de configuración para definir un origen de datos'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
@@ -13,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64d01fd3551ee94cef178cb840742721db58a360
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 28e8ec57d051a8237a93e59f69f9e46c255a28f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821622"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840744"
 ---
-# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Tutorial: Utilizar un archivo de configuración para definir un origen de datos
+# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Tutorial: Uso de un archivo de configuración para definir un origen de datos
 
 Este tutorial muestra cómo usar un origen de datos definido en un archivo *app.config* para pruebas unitarias. Aprenderá a crear un archivo *app.config* que define un origen de datos que se puede usar en la clase <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. En este tutorial se presentan las tareas siguientes:
 
@@ -198,7 +197,7 @@ Una vez definido el archivo *app.config*, deberá crear una prueba unitaria que 
 
 3. Cree dos campos en `MyDataTable` denominados `Arg1` y `Arg2` con el tipo de datos `Number`.
 
-4. Agregue cinco entidades a `MyDataTable` con los valores siguientes para `Arg1` y `Arg2` respectivamente: (10,50), (3,2), (6,0), (0,8) y (12312,1000).
+4. Agregue cinco entidades a `MyDataTable` con los valores siguientes para `Arg1` y `Arg2`, respectivamente: (10,50), (3,2), (6,0), (0,8) y (12312,1000).
 
 5. Guarde y cierre la base de datos.
 
@@ -212,7 +211,7 @@ Una vez definido el archivo *app.config*, deberá crear una prueba unitaria que 
 
 3. Cree dos encabezados de columna y asígneles los nombres de `Val1` y `Val2` en `Sheet1`.
 
-4. Agregue cinco entidades a `Sheet1` con los valores siguientes para `Val1` y `Val2` respectivamente: (1,1), (2,2), (3,3), (4,4) y (5,0).
+4. Agregue cinco entidades a `Sheet1` con los valores siguientes para `Val1` y `Val2`, respectivamente: (1,1), (2,2), (3,3), (4,4) y (5,0).
 
 5. Guarde y cierre la hoja de cálculo.
 

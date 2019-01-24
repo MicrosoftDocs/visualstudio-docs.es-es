@@ -21,12 +21,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 19189e63a3fb3fdfa3016cb2643cc34a193a2a52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 9b77e8211d8f76627f16f96abed8a61e6dae03d7
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893005"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219801"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Enlazar controles de WPF a un conjunto de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ En este tutorial, se creará una aplicación de WPF que contiene controles enlaz
   
 2.  En la ventana **Orígenes de datos** , seleccione **Agregar nuevo origen de datos**.  
   
-     El **configuración origen de datos**abre el asistente.  
+     El **configuración origen de datos** abre el asistente.  
   
 3.  En el **elegir un tipo de origen de datos** página, seleccione **base de datos**y, a continuación, haga clic en **siguiente**.  
   
@@ -122,7 +122,7 @@ En este tutorial, se creará una aplicación de WPF que contiene controles enlaz
   
 2.  En el diseñador, haga clic en el **Fill,GetData()** de consulta y seleccione **configurar**.  
   
-     El **configuración de TableAdapter**abre el asistente.  
+     El **configuración de TableAdapter** abre el asistente.  
   
 3.  En el **escriba una instrucción SQL** página, agregue la siguiente cláusula WHERE después de la `SELECT` instrucción en el cuadro de texto.  
   

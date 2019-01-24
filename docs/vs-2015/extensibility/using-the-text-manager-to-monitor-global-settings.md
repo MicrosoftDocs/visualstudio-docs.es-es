@@ -16,12 +16,12 @@ ms.assetid: 023e7671-cf65-419c-9bc1-3c4ee92aa436
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 25ba131512c8c57e9ddda21526ef76177d4ca4a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7b53f2b4df110661ffdd0fbe0302a70d44cdc67c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839692"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51808530"
 ---
 # <a name="using-the-text-manager-to-monitor-global-settings"></a>Con el Administrador de texto para supervisar la configuración Global
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

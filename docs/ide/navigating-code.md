@@ -2,7 +2,6 @@
 title: Comandos de navegación por el código
 ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, navigation
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac6fb3ae1f8c4e7fb48c9cd9a0d2b77cb875094
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c9415b3cf2c777e0a99b3f24a26e56d1a1c94bf8
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894474"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269948"
 ---
 # <a name="navigate-code"></a>Navegación en el código
 
@@ -78,19 +77,19 @@ Al hacer clic en un símbolo en el código fuente, se resaltan todas las instanc
 
 Ir a tiene los comandos siguientes, que están disponibles en el menú **Editar** en **Ir a**:
 
-- **Ir a la línea** (**Ctrl**+**G**): moverse al número de línea especificado en el documento activo.
+- **Ir a la línea** (**Ctrl**+**G**): Moverse al número de línea especificado en el documento activo.
 
-- **Ir a todo** (**Ctrl**+**T** o **Ctrl**+**,**): moverse a la línea, tipo, archivo, miembro o símbolo especificados.
+- **Ir a todo** (**Ctrl**+**T** o **Ctrl**+**,**): Moverse a la línea, tipo, archivo, miembro o símbolo especificados.
 
-- **Ir al archivo** (**Ctrl**+**1**, **Ctrl**+**F**): moverse al archivo especificado en la solución.
+- **Ir al archivo** (**Ctrl**+**1**, **Ctrl**+**F**): Moverse al archivo especificado en la solución.
 
-- **Ir al archivo reciente** (**Ctrl**+**1**, **Ctrl**+**R**): moverse al archivo especificado que visitó recientemente en la solución (novedad de Visual Studio 2017 versión 15.8).
+- **Ir al archivo reciente** (**Ctrl**+**1**, **Ctrl**+**R**): Moverse al archivo especificado visitado recientemente en la solución (novedad de Visual Studio 2017 versión 15.8).
 
-- **Ir al tipo** (**Ctrl**+**1**, **Ctrl**+**T**): moverse al tipo especificado en la solución.
+- **Ir al tipo** (**Ctrl**+**1**, **Ctrl**+**T**): Moverse al tipo especificado en la solución.
 
-- **Ir al miembro** (**Ctrl**+**1**, **Ctrl**+**M**): moverse al miembro especificado en la solución.
+- **Ir al miembro** (**Ctrl**+**1**, **Ctrl**+**M**): Moverse al miembro especificado en la solución.
 
-- **Ir al símbolo** (**Ctrl**+**1**, **Ctrl**+**S**): moverse al símbolo especificado en la solución.
+- **Ir al símbolo** (**Ctrl**+**1**, **Ctrl**+**S**): Moverse al símbolo especificado en la solución.
 
 En Visual Studio 2017 versión 15.8 y posteriores, también están disponibles los siguientes comandos de navegación de **Ir a**:
 

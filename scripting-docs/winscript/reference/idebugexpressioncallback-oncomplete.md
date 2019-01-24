@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa3d7d6173161407619174607eae221e4513cbcd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1470d71dcc5e54f1bd38c740993642d2798bff87
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727555"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096985"
 ---
 # <a name="idebugexpressioncallbackoncomplete"></a>IDebugExpressionCallBack::onComplete
-Indica que la evaluación de expresiones se ha completado.  
+Indica que la evaluación de expresión se ha completado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT onComplete();  
 ```  
   
@@ -45,7 +45,7 @@ HRESULT onComplete();
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Se llama a este método una vez completada la evaluación de expresiones. El `IDebugExpression::GetResultAsString` método puede llamarse desde dentro de este controlador de eventos.  
+ Este método se llama una vez completada la evaluación de expresiones. El `IDebugExpression::GetResultAsString` método puede llamarse desde dentro de este controlador de eventos.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugExpressionCallBack (interfaz)](../../winscript/reference/idebugexpressioncallback-interface.md)   

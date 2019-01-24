@@ -2,7 +2,6 @@
 title: Uso de la lista de tareas
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - TaskListWindow
@@ -16,16 +15,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47468c7ff7ead04ad2c6261725089ca454faffc2
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 0b30abf88a00934670ba2d34873ad883c833aae8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612706"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831107"
 ---
 # <a name="use-the-task-list"></a>Uso de la lista de tareas
 
 Use la **Lista de tareas** para hacer un seguimiento de los comentarios de código que usan tokens como `TODO` y `HACK` (o tokens personalizados) y administrar los accesos directos que le llevarán directamente a una ubicación predefinida del código. Haga clic en el elemento de la lista para ir a su ubicación en el código fuente.
+
+> [!NOTE]
+> Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Comentarios de tareas (Visual Studio para Mac)](/visualstudio/mac/task-comments).
 
 ## <a name="the-task-list-window"></a>La ventana Lista de tareas
 
@@ -104,3 +106,4 @@ Para navegar por los accesos directos en el código, elija un acceso directo de 
 ## <a name="see-also"></a>Vea también
 
 - [Lista de tareas, Entorno, Opciones (Cuadro de diálogo)](../ide/reference/task-list-environment-options-dialog-box.md)
+- [Comentarios de tareas (Visual Studio para Mac)](/visualstudio/mac/task-comments)

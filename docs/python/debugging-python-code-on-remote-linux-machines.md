@@ -1,22 +1,22 @@
 ---
 title: Depuración de código de Python en equipos Linux remotos
-description: Describe cómo utilizar Visual Studio para depurar código de Python en ejecución en equipos remotos de Linux, lo que incluye los pasos de configuración necesarios, la seguridad y la solución de problemas.
-ms.date: 10/15/2018
+description: Use Visual Studio para depurar código de Python que se ejecute en equipos remotos de Linux, incluidos los pasos de configuración necesarios, la seguridad y la solución de problemas.
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 654ac9cfd466cfdd6486ea5aa9e658495d5704fe
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: eaeb13a087723b10098c9cfe6f75f3be2aad351e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356774"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964895"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Depurar código de Python en Linux de forma remota
 
@@ -26,7 +26,7 @@ Al usar ptvsd, el código de Python que se depura hospeda el servidor de depurac
 
 |   |   |
 |---|---|
-| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | Para obtener una introducción a la depuración remota, vea [Deep Dive: Cross-platform remote debugging (Profundización: Depuración remota multiplataforma)](https://youtu.be/y1Qq7BrV6Cc) (youtube.com, 6 min 22 s), que se aplica a Visual Studio 2015 y 2017. |
+| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | Para obtener una introducción a la depuración remota, vea [Deep Dive: Cross-platform remote debugging (Profundización: Depuración remota multiplataforma)](https://youtu.be/y1Qq7BrV6Cc) (youtube.com, 6 minutos 22 segundos), que se aplica a Visual Studio 2015 y 2017. |
 
 ## <a name="set-up-a-linux-computer"></a>Configurar un equipo Linux
 
@@ -106,7 +106,7 @@ En estos pasos, estableceremos un punto de interrupción simple para detener el 
 
 1. Visual Studio cambia después al modo de depuración mientras el script continúa ejecutándose en el equipo remoto, lo que proporciona todas las capacidades normales de [depuración](debugging-python-in-visual-studio.md). Por ejemplo, establezca un punto de interrupción en la línea `if guess < number:`, después cambie al equipo remoto y escriba otro intento. Una vez hecho esto, el programa Visual Studio del equipo local se detiene en ese punto de interrupción, muestra las variables locales, etc.:
 
-    ![Se ha llegado al punto de interrupción](media/remote-debugging-breakpoint-hit.png)
+    ![Visual Studio detiene la depuración cuando se alcanza el punto de interrupción](media/remote-debugging-breakpoint-hit.png)
 
 1. Al detener la depuración, Visual Studio se desconecta del programa, que continúa ejecutándose en el equipo remoto. ptvsd también sigue escuchando para conectar depuradores, por lo que se puede volver a conectar al proceso en cualquier momento.
 

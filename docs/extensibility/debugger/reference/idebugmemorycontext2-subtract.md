@@ -1,9 +1,6 @@
 ---
 title: IDebugMemoryContext2::Subtract | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugMemoryContext2::Subtract
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3303d86abed596f35f714c4389770c613fa09b6b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0b57386867d76e4c31181c13336973df3502bf34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896658"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901865"
 ---
 # <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
 Resta el valor especificado desde el contexto actual y devuelve un nuevo contexto.  
@@ -29,7 +26,7 @@ Resta el valor especificado desde el contexto actual y devuelve un nuevo context
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT Subtract(   
+HRESULT Subtract(   
    UINT64                 dwCount,  
    IDebugMemoryContext2** ppMemCxt  
 );  

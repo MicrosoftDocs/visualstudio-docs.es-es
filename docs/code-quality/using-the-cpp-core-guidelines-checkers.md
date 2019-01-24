@@ -8,13 +8,12 @@ manager: wpickett
 dev_langs:
 - CPP
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 6595e8990dece15e88e07a6c8eefabd3f543bbb7
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 2ed89e5210a3b8201f612887f2346b57e03cef20
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143468"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820243"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usar los comprobadores de C++ Core Guidelines
 C++ Core Guidelines son un conjunto de directrices, reglas y procedimientos recomendados sobre cómo codificar en C++ creados por los diseñadores y expertos de C++ portátil. Visual Studio actualmente admite un subconjunto de estas reglas como parte de sus herramientas de análisis de código de C++. Los comprobadores de directrices principales se instalan de forma predeterminada en Visual Studio 2017 y son [disponible como un paquete de NuGet para Visual Studio 2015](#vs2015_corecheck).
@@ -55,11 +54,11 @@ int main()
 
 En este ejemplo muestra algunas de las advertencias que pueden encontrar las reglas de C++ Core Check:
 
-- C26494 es regla tipo.5: siempre debe inicializarse un objeto.
+- C26494 es tipo.5 de regla: Siempre debe inicializarse un objeto.
 
-- C26485 es regla Bounds.3: ninguna decadencia de matriz a puntero.
+- C26485 es Bounds.3 de regla: No hay decadencia de matriz a puntero.
 
-- C26481 es regla Bounds.1: no usar aritmética de puntero. Utilice `span` en su lugar.
+- C26481 es Bounds.1 de regla: No usar aritmética de puntero. Utilice `span` en su lugar.
 
 Si los rulesets de análisis de código de C++ Core Check estén instalados y habilitados cuando se compila este código, las dos primeras advertencias son de salida, pero se suprime la tercera. Este es el resultado de compilación del código de ejemplo:
 

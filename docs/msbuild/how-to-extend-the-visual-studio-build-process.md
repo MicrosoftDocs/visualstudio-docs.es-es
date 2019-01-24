@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: Extender el proceso de compilación de Visual Studio | Microsoft Docs'
-ms.custom: ''
+title: Ampliación del proceso de compilación
+ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, overriding predefined targets
@@ -15,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 777c2c4ecb5ea8561a43a12f1897c2260d6638d0
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: ce38985a5fc0b74326648557e22eb17bfdfb4f48
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081558"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863685"
 ---
-# <a name="how-to-extend-the-visual-studio-build-process"></a>Cómo: Extender el proceso de compilación de Visual Studio
+# <a name="how-to-extend-the-visual-studio-build-process"></a>Procedimiento para ampliar el proceso de compilación de Visual Studio
 El proceso de compilación de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se define mediante una serie de archivos *.targets* de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que se importan en el archivo de proyecto. Uno de estos archivos importados, *Microsoft.Common.targets*, se puede extender para que pueda ejecutar tareas personalizadas en varios puntos del proceso de compilación. En este artículo se explican dos métodos que puede usar para extender el proceso de compilación de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:  
   
 -   Reemplazar destinos predefinidos concretos definidos en *Microsoft.Common.targets*.  
@@ -57,7 +56,7 @@ En la tabla siguiente se muestran todos los destinos de *Microsoft.Common.target
 |Nombre de destino|Descripción|  
 |-----------------|-----------------|  
 |`BeforeCompile`, `AfterCompile`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de que se realice la compilación básica. La mayoría de las personalizaciones se realiza en uno de estos dos destinos.|  
-|`BeforeBuild`, `AfterBuild`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de todo lo demás de la compilación. **Nota:** Los destinos `BeforeBuild` y `AfterBuild` ya están definidos en los comentarios al final de la mayoría de los archivos de proyecto, lo que permite agregar con facilidad eventos anteriores y posteriores a la compilación al archivo de proyecto.|  
+|`BeforeBuild`, `AfterBuild`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de todo lo demás de la compilación. **Nota:**  Los destinos `BeforeBuild` y `AfterBuild` ya están definidos en los comentarios al final de la mayoría de los archivos de proyecto, lo que permite agregar con facilidad eventos anteriores y posteriores a la compilación al archivo de proyecto.|  
 |`BeforeRebuild`, `AfterRebuild`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de la invocación a la funcionalidad de recompilación básica. El orden de ejecución de destino en *Microsoft.Common.targets* es: `BeforeRebuild`, `Clean`, `Build` y luego `AfterRebuild`.|  
 |`BeforeClean`, `AfterClean`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de la invocación a la funcionalidad de limpieza básica.|  
 |`BeforePublish`, `AfterPublish`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de la invocación a la funcionalidad de publicación de limpieza básica.|  

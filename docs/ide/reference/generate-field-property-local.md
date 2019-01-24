@@ -1,20 +1,19 @@
 ---
-title: Generación de un campo, una propiedad o una variable local en Visual Studio
+title: Generación de un campo, una propiedad o una variable local
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 00e3f1d994c854bab319b6fec823fce213f4f2ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 59d2cc85bb8aa8989e87f55bf105d4ac37117a56
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822792"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825375"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>Generación de un campo, una propiedad o una variable local en Visual Studio
 
@@ -24,11 +23,11 @@ Esta generación de código se aplica a:
 
 - Visual Basic
 
-**Qué:** Le permite generar inmediatamente el código para un campo, una propiedad o un valor local no declarados previamente.
+**Qué:** Permite generar inmediatamente el código para un campo, una propiedad o una variable local no declarados previamente.
 
-**Cuándo:** Introduce un nuevo campo, propiedad o valor local mientras escribe y desea declararlo de manera adecuada y de inmediato.
+**Cuándo:** Se introduce un nuevo campo, propiedad o variable local mientras se escribe, y se quiere declarar de manera adecuada y de inmediato.
 
-**Por qué:** Podría declarar el campo, la propiedad o el valor local antes de usarlos; sin embargo, esta característica generará la declaración y el tipo automáticamente.
+**Por qué:** Se podría declarar el campo, la propiedad o la variable local antes de usarlos; pero esta característica generará la declaración y el tipo de forma automática.
 
 ## <a name="how-to"></a>Procedimiento
 

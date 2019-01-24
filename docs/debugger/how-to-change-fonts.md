@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: cambiar fuentes | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Cambiar las fuentes | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - fonts, SpyHelp
@@ -12,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e3d372823d3dc3e8d874bfd50e361f23ec056da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 46e9b0584e48dee4a074e1826c795c62f9c612e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833623"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944092"
 ---
-# <a name="how-to-change-fonts"></a>Cómo: Cambiar las fuentes
+# <a name="how-to-change-fonts"></a>Procedimiento Cambio de fuentes
 Puede cambiar la fuente, estilo de fuente y tamaño de fuente para ventanas de Spy ++.  
   
 ### <a name="to-change-font-options"></a>Para cambiar las opciones de fuente  
@@ -33,6 +31,6 @@ Puede cambiar la fuente, estilo de fuente y tamaño de fuente para ventanas de S
    Seleccionar **Guardar como predeterminada** hará que todas las futuras ventanas de Spy ++ usar esta fuente.  
   
 ## <a name="see-also"></a>Vea también  
- [Usar Spy ++](../debugger/using-spy-increment.md)   
- [Vistas de Spy ++](../debugger/spy-increment-views.md)   
+ [Usar Spy++](../debugger/using-spy-increment.md)   
+ [Vistas de Spy++](../debugger/spy-increment-views.md)   
  [Referencia de Spy++](../debugger/spy-increment-reference.md)

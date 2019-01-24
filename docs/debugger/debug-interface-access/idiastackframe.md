@@ -1,8 +1,6 @@
 ---
-title: IDiaStackFrame | Documentos de Microsoft
-ms.custom: ''
+title: IDiaStackFrame | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25ad1dc5417055c6a17288ee67031d0473062a66
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: dba69f49650c1c90233a6fda44529d0bd9f2f913
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468881"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893489"
 ---
 # <a name="idiastackframe"></a>IDiaStackFrame
 Expone las propiedades de un marco de pila.  
@@ -31,32 +29,32 @@ IDiaStackFrame : IUnknown
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
- Éstos son métodos admitidos por esta interfaz:  
+ Estos son los métodos admitidos por esta interfaz:  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|Recupera una marca que indica que el puntero base se asigna para el código en este intervalo de direcciones. Este método está en desuso.|  
+|[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|Recupera una marca que indica que el puntero base está asignado para el código de este intervalo de direcciones. Este método está obsoleto.|  
 |[IDiaStackFrame::get_base](../../debugger/debug-interface-access/idiastackframe-get-base.md)|Recupera la base de la dirección del marco.|  
 |[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|Recupera una marca que indica que el control de excepciones de C++ está en vigor.|  
 |[IDiaStackFrame::get_functionStart](../../debugger/debug-interface-access/idiastackframe-get-functionstart.md)|Recupera una marca que indica que el bloque contiene el punto de entrada de una función.|  
 |[IDiaStackFrame::get_lengthLocals](../../debugger/debug-interface-access/idiastackframe-get-lengthlocals.md)|Recupera el número de bytes de las variables locales que se insertan en la pila.|  
-|[IDiaStackFrame::get_lengthParams](../../debugger/debug-interface-access/idiastackframe-get-lengthparams.md)|Recupera el número de bytes de parámetros que se insertan en la pila.|  
+|[IDiaStackFrame::get_lengthParams](../../debugger/debug-interface-access/idiastackframe-get-lengthparams.md)|Recupera el número de bytes de los parámetros que se insertan en la pila.|  
 |[IDiaStackFrame::get_lengthProlog](../../debugger/debug-interface-access/idiastackframe-get-lengthprolog.md)|Recupera el número de bytes del código de prólogo en el bloque|  
-|[IDiaStackFrame::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiastackframe-get-lengthsavedregisters.md)|Recupera el número de bytes de registros guardados insertado en la pila.|  
+|[IDiaStackFrame::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiastackframe-get-lengthsavedregisters.md)|Recupera el número de bytes de registros guardadas insertado en la pila.|  
 |[IDiaStackFrame::get_localsBase](../../debugger/debug-interface-access/idiastackframe-get-localsbase.md)|Recupera la base de la dirección de las variables locales.|  
 |[IDiaStackFrame::get_maxStack](../../debugger/debug-interface-access/idiastackframe-get-maxstack.md)|Recupera el número máximo de bytes que se insertan en la pila en el marco.|  
 |[IDiaStackFrame::get_rawLVarInstanceValue](../../debugger/debug-interface-access/idiastackframe-get-rawlvarinstancevalue.md)|Recupera el valor de la variable local especificada como bytes sin formato.|  
 |[IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)|Recupera el valor de un registro especificado.|  
 |[IDiaStackFrame::get_returnAddress](../../debugger/debug-interface-access/idiastackframe-get-returnaddress.md)|Recupera la dirección de devolución del marco.|  
-|[IDiaStackFrame::get_size](../../debugger/debug-interface-access/idiastackframe-get-size.md)|Recupera el tamaño de la trama en bytes.|  
-|[IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)|Recupera una marca que indica que el control de excepciones de sistema está en vigor.|  
+|[IDiaStackFrame::get_size](../../debugger/debug-interface-access/idiastackframe-get-size.md)|Recupera el tamaño del fotograma en bytes.|  
+|[IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)|Recupera una marca que indica que el control de excepciones del sistema está en vigor.|  
 |[IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)|Recupera el tipo de marco.|  
   
 ## <a name="remarks"></a>Comentarios  
  Un marco de pila es una abstracción de una llamada de función durante su ejecución.  
   
 ## <a name="notes-for-callers"></a>Notas para los llamadores  
- Obtener esta interfaz mediante una llamada a la [idiaenumstackframes:: Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md) método. Consulte la [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) interfaz para obtener un ejemplo acerca de cómo obtener el `IDiaStackFrame` interfaz.  
+ Esta interfaz se obtiene mediante una llamada a la [Idiaenumstackframes](../../debugger/debug-interface-access/idiaenumstackframes-next.md) método. Consulte la [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) interfaz para obtener un ejemplo sobre cómo obtener el `IDiaStackFrame` interfaz.  
   
 ## <a name="example"></a>Ejemplo  
  Este ejemplo muestra varios atributos de un marco de pila.  
@@ -103,14 +101,14 @@ void PrintStackFrame(IDiaStackFrame* pFrame)
 ```  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: Dia2.h  
+ Encabezado: dia2.h  
   
  Biblioteca: diaguids.lib  
   
- DLL: msdia80.dll  
+ Archivo DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Vea también  
- [Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Interfaces (SDK de acceso a la interfaz de depuración)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)   
- [Idiaenumstackframes:: Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)   
+ [IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)   
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

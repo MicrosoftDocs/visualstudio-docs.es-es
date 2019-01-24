@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Data Tools para .NET
+title: Data tools para .NET
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
@@ -7,16 +7,15 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: 7a0df2adbb5dfb6a3ac8fa1c6312784bb6fa6768
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 24da256ac835e477465845714cc844ac5bb305d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174031"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872757"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio Data Tools para .NET
 

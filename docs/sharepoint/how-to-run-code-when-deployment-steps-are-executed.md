@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: ejecutar código cuando implementación ejecutan los pasos son | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Ejecutar código cuando los pasos de implementación se ejecutan | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,25 +12,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cebd88cc49afa1092dfcd1d67ffdbf0fa3567ad0
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 62ab9019eb9722baca523aeff00b4ed511039497
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119770"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883261"
 ---
-# <a name="how-to-run-code-when-deployment-steps-are-executed"></a>Cómo: ejecutar código cuando se ejecutan los pasos de implementación
+# <a name="how-to-run-code-when-deployment-steps-are-executed"></a>Procedimiento Ejecutar código cuando se ejecutan los pasos de implementación
   Si desea realizar tareas adicionales para un paso de implementación en un proyecto de SharePoint, puede controlar eventos generados por los elementos de proyecto de SharePoint antes y después de cada paso de implementación se ejecuta Visual Studio. Para obtener más información, consulte [extender SharePoint empaquetado e implementación](../sharepoint/extending-sharepoint-packaging-and-deployment.md).  
   
 ### <a name="to-run-code-when-deployment-steps-are-executed"></a>Para ejecutar código cuando se ejecutan los pasos de implementación  
   
 1.  Crear una extensión de elemento de proyecto, una extensión de proyecto o una definición de un nuevo tipo de elemento de proyecto. Para obtener más información, vea los temas siguientes:  
   
-    -   [Cómo: crear una extensión de elemento de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
+    -   [Cómo: Crear una extensión de elemento de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
   
-    -   [Cómo: crear una extensión de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)  
+    -   [Cómo: Crear una extensión de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)  
   
-    -   [Cómo: definir un tipo de elemento de proyecto de SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
+    -   [Cómo: Definir un tipo de elemento de proyecto de SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
   
 2.  En la extensión, controlar el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> y <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepCompleted> eventos de un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> objeto (en una extensión de elemento de proyecto o la extensión de proyecto) o un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> objeto (en una definición de un nuevo tipo de elemento de proyecto).  
   
@@ -45,7 +42,7 @@ ms.locfileid: "37119770"
  [!code-vb[SPExtensibility.ProjectSystemExtension.General#4](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/handledeploymentstepevents.vb#4)]
  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#4](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/handledeploymentstepevents.cs#4)]  
   
-## <a name="compile-the-code"></a>Compile el código  
+## <a name="compile-the-code"></a>Compilar el código  
  Este ejemplo requiere referencias a los ensamblados siguientes:  
   
 -   Microsoft.VisualStudio.SharePoint  
@@ -58,6 +55,4 @@ ms.locfileid: "37119770"
 ## <a name="see-also"></a>Vea también
  [Ampliar la implementación y empaquetado de SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
  [Tutorial: Crear un paso de implementación personalizado para proyectos de SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)   
- [Cómo: ejecutar código cuando se está implementando o retirando un proyecto de SharePoint](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md)  
-  
-  
+ [Cómo: Ejecute código al implementar o retirar un proyecto de SharePoint](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md)  

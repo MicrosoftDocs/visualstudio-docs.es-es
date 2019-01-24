@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: Generar perfiles de código de JavaScript en páginas web | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Generar perfiles de código de JavaScript en páginas web | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - JavaScript performance profiling
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 007603f0695a658b6bfa6c1ab1173b4483004c13
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: bc3c83e81608d671db8bad655c4853e5262ea467
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843928"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863653"
 ---
-# <a name="how-to-profile-javascript-code-in-web-pages"></a>Cómo: Generar perfiles de código de JavaScript en páginas web
+# <a name="how-to-profile-javascript-code-in-web-pages"></a>Procedimiento Generar perfiles de código de JavaScript en páginas web
 
 Las Herramientas de generación de perfiles de Visual Studio pueden recopilar datos de rendimiento del código JavaScript que se ejecuta en un aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], una página web arbitraria o una aplicación JavaScript usando el método de generación de perfiles de instrumentación. Requiere Internet Explorer 8 o posterior.
 

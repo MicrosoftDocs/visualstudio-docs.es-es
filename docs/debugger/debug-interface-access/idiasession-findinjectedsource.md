@@ -1,8 +1,6 @@
 ---
 title: Findinjectedsource | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 472e60c10d95e0a1b79f09f0d069172ce33020b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a16e3827999d165f0d04b803e4d0611bf4f2538d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819037"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852002"
 ---
 # <a name="idiasessionfindinjectedsource"></a>IDiaSession::findInjectedSource
 Recupera una lista de orígenes que se ha insertado en el almacén de símbolos por los proveedores de atributos u otros componentes del proceso de compilación.  
@@ -27,7 +25,7 @@ Recupera una lista de orígenes que se ha insertado en el almacén de símbolos 
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT findInjectedSource (   
+HRESULT findInjectedSource (   
    LPCOLESTR                 srcFile,  
    IDiaEnumInjectedSources** ppResult  
 );  

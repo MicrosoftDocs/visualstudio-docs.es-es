@@ -7,23 +7,20 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c342b738269acbb4b2b089fc8e33a0fe9dc770dd
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: MT
+ms.openlocfilehash: 915475b9f20b57871a8228ebde022d0b6ce8f3b6
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758289"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204273"
 ---
-# <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>No se pudo recuperar la información de esquema para el objeto de base de datos \<nombre de objeto >
+# <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>No se ha podido recuperar información de esquema del objeto de base de datos \<nombre de objeto>
 
-Este mensaje suele aparecer cuando un objeto en **Explorador de servidores** o **Database Explorer** se copia en el Portapapeles, elimina de la base de datos y, a continuación, se pega en el diseñador. Dado que ya no existe el objeto de base de datos, aparece este mensaje.
-
-Para corregir este error, seleccione **Aceptar** para descartar el cuadro de diálogo.
+Este mensaje suele aparecer cuando un objeto del **Explorador de servidores** o **Explorador de bases de datos** se copia en el Portapapeles, se elimina de la base de datos y después se pega en el diseñador. Dado que ya no existe el objeto de base de datos, aparece este mensaje.
 
 ## <a name="see-also"></a>Vea también
 
 - [Mensajes de Object Relational Designer](../data-tools/o-r-designer-messages.md)
-- [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Herramientas LINQ to SQL en Visual Studio)

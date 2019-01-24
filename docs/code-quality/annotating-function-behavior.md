@@ -2,7 +2,6 @@
 title: Anotar el comportamiento de funciones
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - _On_failure_
@@ -22,38 +21,46 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ee46c277574b9ceec2c4b0a26685570d305990f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 360c434b9c841954c4672dd774037dac81d6c4d4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899360"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835161"
 ---
 # <a name="annotating-function-behavior"></a>Anotar el comportamiento de funciones
-Además de anotar [parámetros de función y valores devueltos](../code-quality/annotating-function-parameters-and-return-values.md), puede anotar las propiedades de la función completa.
+Además de realizar la anotación [parámetros de función y valores devueltos](../code-quality/annotating-function-parameters-and-return-values.md), puede anotar las propiedades de la función completa.
 
-## <a name="function-annotations"></a>Anotaciones (función)
- Las anotaciones siguientes se aplican a la función como un todo y describen cómo se comporta o lo que espera que se establezca en true.
-
-|Anotación|Descripción|
-|----------------|-----------------|
-|`_Called_from_function_class_(name)`|No pretende ser independiente; en su lugar, es un predicado que se usará con el `_When_` anotación. Para obtener más información, consulte [especificar cuando y donde una anotación se aplica](../code-quality/specifying-when-and-where-an-annotation-applies.md).<br /><br /> El `name` parámetro es una cadena arbitraria que también aparece en un `_Function_class_` anotación en la declaración de algunas funciones.  `_Called_from_function_class_` Devuelve un valor distinto de cero si la función que se está analizando actualmente se anota utilizando `_Function_class_` que tiene el mismo valor de `name`; en caso contrario, devuelve cero.|
-|`_Check_return_`|Anota un valor devuelto y se indican que el llamador debe inspeccionar. El Comprobador de notifica un error si se llama a la función en un contexto void.|
-|`_Function_class_(name)`|El `name` parámetro es una cadena arbitraria que se haya designado por el usuario.  Se encuentra en un espacio de nombres que es distinto de otros espacios de nombres. Una función, puntero a función, o: forma más útil: un tipo de puntero de función se pueden designar como perteneciente a una o más clases de función.|
-|`_Raises_SEH_exception_`|Anota una función que siempre genera una excepción (SEH, el) controlador de excepciones estructurado, sujeto a `_When_` y `_On_failure_` condiciones. Para obtener más información, consulte [especificar cuando y donde una anotación se aplica](../code-quality/specifying-when-and-where-an-annotation-applies.md).|
-|`_Maybe_raises_SEH_exception_`|Anota una función que, opcionalmente, se puede producir una excepción SEH, sujeto a `_When_` y `_On_failure_` condiciones.|
-|`_Must_inspect_result_`|Anota ningún valor de salida, incluido el valor devuelto, parámetros y variables globales.  El analizador informa de un error si no se ha inspeccionado posteriormente el valor en el objeto anotado. "Inspección" incluye si se utiliza en una expresión condicional, se asigna a un parámetro de salida o global o se pasa como un parámetro.  Para los valores devueltos, `_Must_inspect_result_` implica `_Check_return_`.|
-|`_Use_decl_annotations_`|Puede utilizarse en una definición de función (también conocido como el cuerpo de una función) en lugar de la lista de anotaciones en el encabezado.  Cuando `_Use_decl_annotations_` es utilizado, se usan las anotaciones que aparecen en un encabezado en el ámbito de la misma función como si también están presentes en la definición que tiene el `_Use_decl_annotations_` anotación.|
-
-## <a name="successfailure-annotations"></a>Anotaciones de correcto o con errores
- Una función puede producir un error, y cuando lo haga, sus resultados pueden estar incompletos o diferir de los resultados cuando la función se realiza correctamente.  Las anotaciones en la lista siguiente proporcionan maneras de expresar el comportamiento del error.  Para usar estas anotaciones, debe habilitarlas determinar el éxito; por lo tanto, un `_Success_` anotación es necesaria.  Tenga en cuenta que `NTSTATUS` y `HRESULT` ya tiene un `_Success_` anotación integrada; sin embargo, si especifica su propia `_Success_` anotación en `NTSTATUS` o `HRESULT`, reemplaza la anotación integrada.
+## <a name="function-annotations"></a>Anotaciones de función
+ Las anotaciones siguientes se aplican a la función como un todo y describen cómo se comporta o lo que espera que sea true.
 
 |Anotación|Descripción|
 |----------------|-----------------|
-|`_Always_(anno_list)`|Equivalente a `anno_list _On_failure_(anno_list)`; es decir, las anotaciones en `anno_list` aplican independientemente de que la función se realiza correctamente o no.|
-|`_On_failure_(anno_list)`|Para usarse solo cuando `_Success_` también se utiliza para agregar anotaciones a la función, ya sea explícita o implícitamente a través de `_Return_type_success_` en una definición de tipo. Cuando el `_On_failure_` anotación está presente en un valor devuelto o parámetro de valor de función, cada anotación en `anno_list` (anno) se comporta como si se codifica como `_When_(!expr, anno)`, donde `expr` sea el parámetro requerido `_Success_` anotación. Esto significa que la aplicación implícita de `_Success_` a todas las condiciones posteriores no se aplica a `_On_failure_`.|
-|`_Return_type_success_(expr)`|Se puede aplicar a una definición de tipo. Indica que todas las funciones que devuelven que escriba y no tienen establecida explícitamente `_Success_` se anotan como si tuvieran `_Success_(expr)`. `_Return_type_success_` no se puede usar en una función o una definición de tipo de puntero de función.|
-|`_Success_(expr)`|`expr` es una expresión que da como resultado un valor r. Cuando el `_Success_` anotación está presente en una declaración de función o definiciones, cada anotación (`anno`) en la función y en la condición posterior a la que se comporta como si se codifica como `_When_(expr, anno)`. El `_Success_` anotación puede usarse solo en una función, no en sus parámetros o tipo de valor devuelto. Puede haber a lo sumo una `_Success_` anotación en una función y no puede estar en cualquier `_When_`, `_At_`, o `_Group_`. Para obtener más información, consulte [especificar cuando y donde una anotación se aplica](../code-quality/specifying-when-and-where-an-annotation-applies.md).|
+|`_Called_from_function_class_(name)`|No se pretende independiente; en su lugar, es un predicado que se usará con el `_When_` anotación. Para obtener más información, consulte [especificar cuando y donde una anotación se aplica](../code-quality/specifying-when-and-where-an-annotation-applies.md).<br /><br /> El `name` parámetro es una cadena arbitraria que también aparece en un `_Function_class_` anotación en la declaración de algunas funciones.  `_Called_from_function_class_` Devuelve cero si se anota utilizando la función que actualmente se está analizando `_Function_class_` que tiene el mismo valor de `name`; de lo contrario, devuelve cero.|
+|`_Check_return_`|Estados que el llamador debe inspeccionar y anota el valor devuelto. El Comprobador de notifica un error si se llama a la función en un contexto de void.|
+|`_Function_class_(name)`|El `name` parámetro es una cadena arbitraria que se haya designado por el usuario.  Existe un espacio de nombres es distinto de otros espacios de nombres. Una función, puntero a función, o, más útiles, un tipo de puntero de función se puede designar como perteneciente a una o más clases de función.|
+|`_Raises_SEH_exception_`|Anota una función que siempre genera una excepción (SEH) del controlador de excepciones estructurado, sujeto a `_When_` y `_On_failure_` condiciones. Para obtener más información, consulte [especificar cuando y donde una anotación se aplica](../code-quality/specifying-when-and-where-an-annotation-applies.md).|
+|`_Maybe_raises_SEH_exception_`|Anota una función que opcionalmente se puede producir una excepción SEH, sujeto a `_When_` y `_On_failure_` condiciones.|
+|`_Must_inspect_result_`|Anota cualquier valor de salida, como el valor devuelto, los parámetros y variables globales.  El analizador notifica un error si no se ha inspeccionado posteriormente el valor en el objeto anotado. "Inspección" incluye si se utiliza en una expresión condicional, se asigna a un parámetro de salida o global o se pasa como un parámetro.  Para los valores devueltos, `_Must_inspect_result_` implica `_Check_return_`.|
+|`_Use_decl_annotations_`|Se pueden utilizar en una definición de función (también conocido como el cuerpo de una función) en lugar de la lista de anotaciones en el encabezado.  Cuando `_Use_decl_annotations_` es utilizado, se usan las anotaciones que aparecen en un encabezado en el ámbito para la misma función como si también están presentes en la definición que tiene el `_Use_decl_annotations_` anotación.|
+
+## <a name="successfailure-annotations"></a>Anotaciones de éxito/error
+ Una función puede producir un error, y al mismo tiempo, sus resultados pueden estar incompletos o no difieren de los resultados cuando la función se realiza correctamente.  Las anotaciones en la lista siguiente proporcionan maneras de expresar el comportamiento de error.  Para usar estas anotaciones, debe habilitar determinar el éxito; por lo tanto, un `_Success_` anotación es necesaria.  Tenga en cuenta que `NTSTATUS` y `HRESULT` ya tiene un `_Success_` anotación integrada en ellas; sin embargo, si especifica su propia `_Success_` anotación en `NTSTATUS` o `HRESULT`, invalida la anotación integrada.
+
+|Anotación|Descripción|
+|----------------|-----------------|
+|`_Always_(anno_list)`|Equivalente a `anno_list _On_failure_(anno_list)`; es decir, las anotaciones en `anno_list` aplicar la función se realiza correctamente o no.|
+|`_On_failure_(anno_list)`|Para usarse solo cuando `_Success_` también se usa para anotar la función, ya sea explícitamente o implícitamente a través de `_Return_type_success_` en una definición de tipo. Cuando el `_On_failure_` anotación está presente en un función parámetro o valor devuelto, cada anotación en `anno_list` (anno) se comporta como si se se codifica como `_When_(!expr, anno)`, donde `expr` es el parámetro necesario `_Success_` anotación. Esto significa que la aplicación implícita de `_Success_` a todas las condiciones posteriores no se aplica a `_On_failure_`.|
+|`_Return_type_success_(expr)`|Se pueden aplicar a una definición de tipo. Indica que todas las funciones que devuelven que escribe y no tiene explícitamente `_Success_` se anotan como si tuvieran `_Success_(expr)`. `_Return_type_success_` no se puede usar en una función o una definición de tipo de puntero de función.|
+|`_Success_(expr)`|`expr` es una expresión que da como resultado un valor r. Cuando el `_Success_` anotación está presente en una declaración de función o definición, cada anotación (`anno`) en la función y en la condición posterior a la que se comporta como si se se codifica como `_When_(expr, anno)`. El `_Success_` anotación puede usarse solo en una función, no en sus parámetros o el tipo de valor devuelto. Puede haber a lo sumo un `_Success_` anotación en una función y no puede estar en cualquier `_When_`, `_At_`, o `_Group_`. Para obtener más información, consulte [especificar cuando y donde una anotación se aplica](../code-quality/specifying-when-and-where-an-annotation-applies.md).|
 
 ## <a name="see-also"></a>Vea también
- [Utilizar anotaciones SAL para reducir defectos de código de C o C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md) [descripción SAL](../code-quality/understanding-sal.md) [anotar parámetros de función y valores devueltos](../code-quality/annotating-function-parameters-and-return-values.md) [anotar Structs y clases](../code-quality/annotating-structs-and-classes.md) [Anotar el comportamiento de bloqueo](../code-quality/annotating-locking-behavior.md) [especificar cuándo y dónde se aplica una anotación](../code-quality/specifying-when-and-where-an-annotation-applies.md) [funciones intrínsecas](../code-quality/intrinsic-functions.md) [las prácticas recomendadas y Ejemplos](../code-quality/best-practices-and-examples-sal.md)
+
+- [Uso de anotaciones SAL para reducir defectos de código de C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+- [Introducción a SAL](../code-quality/understanding-sal.md)
+- [Anotar parámetros de función y valores devueltos](../code-quality/annotating-function-parameters-and-return-values.md)
+- [Anotar structs y clases](../code-quality/annotating-structs-and-classes.md)
+- [Anotar comportamiento de bloqueo](../code-quality/annotating-locking-behavior.md)
+- [Especificar cuándo y dónde se aplica una anotación](../code-quality/specifying-when-and-where-an-annotation-applies.md)
+- [Funciones intrínsecas](../code-quality/intrinsic-functions.md)
+- [Procedimientos recomendados y ejemplos](../code-quality/best-practices-and-examples-sal.md)

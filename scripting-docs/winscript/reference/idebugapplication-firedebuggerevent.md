@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c4cb02390602b6b93b8c233f245ede395833d67e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4f78522d885a65ddc8bfb056654aaf559c90d36e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725455"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092188"
 ---
 # <a name="idebugapplicationfiredebuggerevent"></a>IDebugApplication::FireDebuggerEvent
-Se desencadena un evento genérico para el depurador `IApplicationDebugger` interfaz.  
+Desencadena un evento genérico para el depurador `IApplicationDebugger` interfaz.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT FireDebuggerEvent(  
    REFGUID    riid,  
    IUnknown*  punk  
@@ -53,11 +53,11 @@ HRESULT FireDebuggerEvent(
 |`E_NOTIMPL`|El método no está implementado actualmente.|  
   
 ## <a name="remarks"></a>Comentarios  
- La semántica del GUID y `IUnknown` completamente son aplicación/depurador definido.  
+ La semántica del GUID y el `IUnknown` completamente son aplicación/depurador definido.  
   
- Este método permite que las extensiones personalizadas del modelo de depurador; no está implementada actualmente.  
+ Este método permite para las extensiones personalizadas del modelo de depurador; no está implementado actualmente.  
   
- Este método provoca `IApplicationDebugger::onDebuggerEvent` para llamarlo.  
+ Este método provoca que `IApplicationDebugger::onDebuggerEvent` llamarse.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugApplication (interfaz)](../../winscript/reference/idebugapplication-interface.md)   

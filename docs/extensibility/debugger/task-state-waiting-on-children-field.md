@@ -1,9 +1,6 @@
 ---
 title: TASK_STATE_WAITING_ON_CHILDREN (campo) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - TASK_STATE_WAITING_ON_CHILDREN field, Task class [.NET Framework debug engines]
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccfee9939df0f525d147b46f304c69214c22aa7f
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 8a12652ccd999e7ec1c8a3e87fe1af12c9d91201
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276691"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924499"
 ---
 # <a name="taskstatewaitingonchildren-field"></a>TASK_STATE_WAITING_ON_CHILDREN (campo)
 La tarea ha terminado de ejecutar a su delegado e implícita está esperando completar las tareas secundarias asociadas.  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Espacio de nombres:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Ensamblado:** mscorlib (en *mscorlib.dll*)  
   
@@ -39,4 +36,4 @@ La tarea ha terminado de ejecutar a su delegado e implícita está esperando com
  Si el [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) campo contiene este valor, el <xref:System.Threading.Tasks.Task.Status%2A> propiedad devuelve <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.  
   
 ## <a name="see-also"></a>Vea también  
- [Clase de tarea](../../extensibility/debugger/task-class-internal-members.md)
+ [Clase de tarea: miembros internos](../../extensibility/debugger/task-class-internal-members.md)

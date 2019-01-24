@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: definir y seleccionar rangos en documentos mediante programación'
-ms.custom: ''
+title: Procedimiento Definir y seleccionar rangos en documentos mediante programación
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,19 +11,19 @@ helpviewer_keywords:
 - sentences, selecting in documents
 - ranges, selecting in documents
 - ranges, defining in documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8770871bfdc361e29d7ac7c2fc984477b1ec0ea1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2955dcf0b205293fc31de65f159b51ece9c22ad9
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833140"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154481"
 ---
-# <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Cómo: definir y seleccionar rangos en documentos mediante programación
+# <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Procedimiento Definir y seleccionar rangos en documentos mediante programación
   Puede definir un intervalo en un documento de Microsoft Office Word mediante un objeto <xref:Microsoft.Office.Interop.Word.Range>. Puede seleccionar todo el documento de varias maneras, por ejemplo, mediante el <xref:Microsoft.Office.Interop.Word.Range.Select%2A> método de la <xref:Microsoft.Office.Interop.Word.Range> de objeto, o mediante la propiedad de contenido de la <xref:Microsoft.Office.Tools.Word.Document> clase (en una personalización de nivel de documento) o la <xref:Microsoft.Office.Interop.Word.Document> clase (en un Complemento de VSTO).  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -130,11 +127,9 @@ ms.locfileid: "49833140"
   
 ## <a name="see-also"></a>Vea también  
  [Información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md)   
- [Cómo: ampliar intervalos en documentos de mediante programación](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [Cómo: recuperar los caracteres inicial y final en los intervalos mediante programación](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
- [Cómo: ampliar intervalos en documentos de mediante programación](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [Cómo: restablecer intervalos en documentos de Word de mediante programación](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [Cómo: contraer intervalos o selecciones en documentos de mediante programación](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
- [Cómo: excluir marcas de párrafo al crear intervalos mediante programación](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)  
-  
-  
+ [Cómo: Mediante programación ampliar intervalos en documentos](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
+ [Cómo: Recuperar los caracteres inicial y final en los intervalos mediante programación](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
+ [Cómo: Mediante programación ampliar intervalos en documentos](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
+ [Cómo: Mediante programación restablecer intervalos en documentos de Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [Cómo: Mediante programación contraer intervalos o selecciones en documentos](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
+ [Cómo: Mediante programación excluir marcas de párrafo al crear intervalos](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)  

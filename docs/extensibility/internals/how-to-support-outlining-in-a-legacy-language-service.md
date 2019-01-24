@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: admitir la esquematización en un servicio de lenguaje heredado | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Compatibilidad de la esquematización en un servicio de lenguaje heredado | Documentos de Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], collapse to definitions command
@@ -15,17 +12,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6f9ba947aee0276e2cca6270438cdaf20e7626e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 8c22fdde3bc66a26246100f037c7009d5931cb95
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510962"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888008"
 ---
-# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Cómo: admitir la esquematización en un servicio de lenguaje heredado
+# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Procedimiento Compatibilidad de la esquematización en un servicio de lenguaje heredado
 Esquematización se utiliza para expandir o contraer las diferentes áreas de texto. Se usa el modo de esquematización pueden definirse de forma diferente a distintos idiomas. Para obtener más información, vea [Esquematización](../../ide/outlining.md).  
   
- Servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características de servicio de lenguaje es usar las extensiones MEF. Para obtener más información acerca de la nueva forma de implementar la esquematización, vea [Tutorial: esquematización](../../extensibility/walkthrough-outlining.md).  
+ Servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características de servicio de lenguaje es usar las extensiones MEF. Para obtener más información acerca de la nueva forma de implementar la esquematización, vea [Tutorial: Esquematización](../../extensibility/walkthrough-outlining.md).  
   
 > [!NOTE]
 >  Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.  
@@ -49,5 +46,5 @@ Esquematización se utiliza para expandir o contraer las diferentes áreas de te
 >  Tenga cuidado sobre la ocultación de caracteres de nueva línea. Texto oculto debe ampliar desde el principio de la primera línea hasta el último carácter de la última línea en una sección, dejando el último carácter de nueva línea visible.  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: proporcionar texto oculto admitir en un servicio de lenguaje heredado](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
- [Cómo: proporcionar compatibilidad con esquematización ampliada en un servicio de lenguaje heredado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
+ [Cómo: Proporcionar compatibilidad con texto oculto en un servicio de lenguaje heredado](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
+ [Cómo: Proporcionar compatibilidad con esquematización ampliada en un servicio de lenguaje heredado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)

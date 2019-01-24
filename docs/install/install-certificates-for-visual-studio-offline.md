@@ -1,8 +1,8 @@
 ---
-title: Instalar los certificados necesarios para la instalación sin conexión de Visual Studio | Microsoft Docs
+title: Instalación de los certificados necesarios para la instalación sin conexión
 description: Obtenga información sobre cómo instalar certificados para una instalación sin conexión de Visual Studio.
-ms.date: 08/30/2017
-ms.technology: vs-acquisition
+ms.date: 01/15/2019
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78e37097aa4181bec86ca901ab29dffa52b4d010
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b804620ead343723dfafa5ebb108ccf4b51b1571
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886297"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380168"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalar los certificados necesarios para la instalación sin conexión de Visual Studio
 
@@ -35,7 +35,7 @@ Hay tres opciones para instalar o actualizar los certificados en un entorno sin 
 
 Al crear un diseño de red, los certificados necesarios se descargan en la carpeta Certificados. Después, puede instalar manualmente los certificados haciendo doble clic en todos los archivos de certificado y recorriendo el asistente del Administrador de certificados. Si se le solicita una contraseña, déjela en blanco.
 
-**Actualización**: para Visual Studio 2017 versión 15.8 Preview 2 o versiones posteriores, puede instalar manualmente los certificados haciendo clic con el botón derecho en cada uno de los archivos de certificado, seleccionando Instalar certificado y, por último, haciendo clic en los sucesivos pasos del asistente Administrador de certificados.
+**Actualización**: para Visual Studio 2017 versión 15.8 Preview 2 o versiones posteriores, puede instalar manualmente los certificados si hace clic con el botón derecho en cada uno de los archivos de certificado, selecciona Instalar certificado y, por último, hace clic en los sucesivos pasos del asistente Administrador de certificados.
 
 ### <a name="option-2---distribute-trusted-root-certificates-in-an-enterprise-environment"></a>Opción 2: Distribuir certificados raíz de confianza en un entorno empresarial
 
@@ -62,14 +62,14 @@ Si está creando el script de la implementación de Visual Studio en un entorno 
 
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
-   **Actualización**: para Visual Studio 2017 versión 15.8 Preview 2 o versiones posteriores, cree el archivo por lotes con los siguientes comandos:
+   **Actualización**: para Visual Studio 2017 versión 15.8 Preview 2 o versiones posteriores, cree el archivo por lotes con los comandos siguientes:
 
    ```cmd
-   certmgr.exe -add [layout path]\certificates\manifestSignCertificates.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
+   certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
 
-   certmgr.exe -add [layout path]\certificates\manifestCounterSignCertificates.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
+   certmgr.exe -add [layout path]\certificates\manifestCounterSignRootCertificate.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
 
-   certmgr.exe -add [layout path]\certificates\vs_installer_opc.SignCertificates.cer -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
+   certmgr.exe -add [layout path]\certificates\vs_installer_opc.RootCertificate.cer -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
 
 3. Implemente el archivo por lotes en el cliente. Este comando debe ejecutarse desde un proceso elevado.
@@ -84,7 +84,7 @@ Los tres archivos .P12 de esta carpeta contienen un certificado intermedio y un 
     * Certificado raíz: **Entidad de certificación raíz de Microsoft de 2011**
         * Necesario en sistemas de Windows 7 Service Pack 1 que no tienen las últimas actualizaciones de Windows instaladas.
 * **ManifestCounterSignCertificates.p12** contiene:
-    * Certificado intermedio: **Marca de tiempo de Microsoft PCA 2010**
+    * Certificado intermedio: **Microsoft Time-Stamp PCA 2010**
         * No es necesario. Mejora el rendimiento en algunos escenarios si está presente.
     * Certificado raíz: **Entidad de certificación raíz de Microsoft de 2010**
         * Necesario en sistemas de Windows 7 Service Pack 1 que no tienen las últimas actualizaciones de Windows instaladas.
@@ -94,7 +94,7 @@ Los tres archivos .P12 de esta carpeta contienen un certificado intermedio y un 
     * Certificado raíz: **Entidad de certificación raíz de Microsoft**
         * Obligatorio. Este certificado se proporciona con sistemas que ejecutan Windows 7 o versiones posteriores.
 
-**Actualización**: para Visual Studio 2017 versión 15.8 Preview 2 o versiones posteriores, el Instalador de Visual Studio solo requiere los certificados raíz para instalarse en el sistema.
+**Actualización**: para Visual Studio 2017 versión 15.8 Preview 2 o versiones posteriores, el Instalador de Visual Studio solo requiere que se instalen en el sistema los certificados raíz.
 
 ## <a name="why-are-the-certificates-from-the-certificates-folder-not-installed-automatically"></a>¿Por qué los certificados de la carpeta Certificados no se instalan automáticamente?
 

@@ -1,8 +1,6 @@
 ---
 title: Invalidar la configuración de ToolsVersion | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, overriding ToolsVersion setting
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f0abe9db7178678c4ffda7f4179117817b3add6
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: ffb58fdbf35d2fc070fbf2463ee02fa154f84f94
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879319"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867986"
 ---
 # <a name="override-toolsversion-settings"></a>Invalidar la configuración de ToolsVersion
 Puede cambiar el conjunto de herramientas para los proyectos y soluciones de tres maneras:  

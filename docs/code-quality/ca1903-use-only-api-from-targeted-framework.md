@@ -2,7 +2,6 @@
 title: 'CA1903: Usar solo API de la versión de .NET Framework de destino'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - UseOnlyAPIFromTargetedFramework
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1d42a74cfaf93ba0e8e5aec7e15c522d2e26b7a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0eb85029cb9c3c419b88a31be88d8e1cfbd16142
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822818"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908988"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Usar solo API de la versión de .NET Framework de destino
 
@@ -48,7 +47,7 @@ ms.locfileid: "49822818"
 |.NET Framework 3,5|.NET Framework 3.5 SP1|
 |.NET Framework 4|N/D|
 
- Para cambiar la plataforma de destino de un proyecto, vea [como destino una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
+ Para cambiar la plataforma de destino de un proyecto, vea [como destino una versión específica de .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para quitar la dependencia en el service pack, quite todos los usos del nuevo miembro o tipo. Si se trata de una dependencia deliberada, suprimir la advertencia o desactivar esta regla.
@@ -69,4 +68,4 @@ ms.locfileid: "49822818"
 ## <a name="see-also"></a>Vea también
 
 - [Portability Warnings](../code-quality/portability-warnings.md)
-- [Elegir una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [Elegir una versión específica de .NET Framework](../ide/visual-studio-multi-targeting-overview.md)

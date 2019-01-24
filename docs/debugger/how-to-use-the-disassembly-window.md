@@ -1,8 +1,7 @@
 ---
-title: Ver el código de desensamblado en el depurador de Visual Studio | Documentos de Microsoft
-ms.custom: H1Hack27Feb2017
-ms.date: 11/04/2016
-ms.technology: vs-ide-debug
+title: Ver el código de desensamblado en el depurador | Microsoft Docs
+ms.custom: seodec18
+ms.date: 10/30/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.disassembly
@@ -23,53 +22,55 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b4d9eb1b9484206d3a7d880ec13378693930a63
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c3af42271e3d08a7910c1eae01bcd6563e46dda1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917328"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922239"
 ---
-# <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>Ver el código de desensamblado en el depurador de Visual Studio
-Esta característica solo está disponible si está habilitada la depuración de nivel de dirección la **opciones** cuadro de diálogo, **depuración** nodo. No está disponible para la depuración de script ni de SQL.  
-  
- El **desensamblado** ventana muestra el código de ensamblado correspondiente a las instrucciones creadas por el compilador. Si depura código administrado, estas instrucciones de ensamblado corresponden al código nativo creado por el compilador JIT, y no al lenguaje intermedio de Microsoft (MSIL) que genera el compilador de Visual Studio.  
-  
- Además de las instrucciones de ensamblado, el **desensamblado** ventana puede mostrar la siguiente información opcional:  
-  
-- Dirección de memoria donde se encuentra cada instrucción máquina. Para aplicaciones nativas, ésta es la dirección de memoria real. Para Visual Basic, C# o código administrado, es un desplazamiento desde el inicio de la función.  
-  
-- Código fuente del que se deriva el código ensamblado.  
-  
-- Bytes de código: representaciones en bytes de las instrucciones máquina o MSIL reales.  
-  
-- Nombres de símbolos para las direcciones de memoria.  
-  
-- Número de líneas correspondiente al código fuente.  
-  
-  Las instrucciones en lenguaje de ensamblado consta de mnemónicos, que son abreviaturas de nombres de instrucciones, y de símbolos que representan variables, registros y constantes. Cada instrucción de código máquina se representa con un mnemónico de lenguaje de ensamblado, normalmente seguido de una o más variables, registros o constantes.  
-  
-  Si no conoce el lenguaje de ensamblado pero desea aprovechar al máximo la ventana Desensamblado, hágase con un buen libro sobre programación en lenguaje de ensamblado. La programación en este lenguaje queda fuera del alcance de esta breve introducción sobre la ventana Desensamblado.  
-  
-  Debido a que el código de ensamblado se refiere continuamente a los registros del procesador (o, en el caso del código administrado, a los registros de Common Language Runtime), a menudo le resultará útil usar la ventana Desensamblado junto con la ventana Registros, que permite observar el contenido de los registros.  
-  
-  Probablemente, nunca sentirá el deseo de ver las instrucciones de código máquina con su formato puro, numérico, en lugar del lenguaje de ensamblado. Sin embargo, si así lo desea, puede usar la ventana Memoria con este fin, o elegir Bytes de código en el menú contextual de la ventana Desensamblado.  
-  
+# <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Ver el código de desensamblado en el depurador de Visual Studio (C#, C++, Visual Basic, F#)
+
+En la ventana **Desensamblado** se muestra el código de ensamblado correspondiente a las instrucciones creadas por el compilador. Si depura código administrado, estas instrucciones de ensamblado corresponden al código nativo creado por el compilador Just-in-Time (JIT), no el lenguaje intermedio de Microsoft (MSIL) que creado por el compilador de Visual Studio.
+
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
-  
-### <a name="to-display-the-disassembly-window"></a>Para mostrar la ventana Desensamblado  
-  
--   Durante la depuración, seleccione **Depurar > Windows** y, a continuación, haga clic en **desensamblado**.
-  
-### <a name="to-turn-optional-information-on-or-off"></a>Para activar o desactivar la información opcional  
-  
--   Haga clic en el **desensamblado** ventana y Active o desactive las opciones que desee en el menú contextual.  
-  
-     Una flecha amarilla en el margen izquierdo indica la ubicación del punto de ejecución actual. Para el código nativo, este punto se corresponde con el contador de programas de la CPU. Esta ubicación indica la instrucción que debe ejecutarse a continuación en el programa.  
-  
-     Para obtener más información, consulte [retroceder o avanzar en la memoria](../debugger/how-to-page-up-or-down-in-memory.md).  
-  
-## <a name="see-also"></a>Vea también  
- [Visualización de datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
- [Cómo: Usar la ventana Registros](../debugger/how-to-use-the-registers-window.md)
+> Para aprovechar al máximo la **desensamblado** ventana, comprender o aprender los conceptos básicos de [programación de lenguaje de ensamblado](https://wikipedia.org/wiki/Assembly_language).
+
+Esta característica solo está disponible si está habilitada la depuración de nivel de dirección. No está disponible para la depuración de SQL o la secuencia de comandos.
+
+Además de las instrucciones de ensamblado, la ventana **Desensamblado** puede mostrar la siguiente información opcional:
+
+- Dirección de memoria donde se encuentra cada instrucción máquina. Para aplicaciones nativas, es la dirección de memoria real. Para Visual Basic o C#, es un desplazamiento desde el principio de la función.
+
+- Código fuente del que se deriva el código ensamblado.
+
+- Código de bytes, es decir, las representaciones de bytes de las instrucciones de MSIL o real del equipo.
+
+- Nombres de símbolos para las direcciones de memoria.
+
+- Número de líneas correspondiente al código fuente.
+
+Las instrucciones de lenguaje de ensamblado consta de *teclas de acceso*, que son abreviaturas de nombres de instrucciones, y *símbolos* para variables, registros y constantes. Cada instrucción de código máquina se representa con un mnemónico de lenguaje de ensamblado seguido opcionalmente por uno o más símbolos.
+
+Código de ensamblado se basa principalmente en los registros del procesador, o bien, para código administrado, common language runtime registra. Puede usar el **desensamblado** ventana junto con el **registra** ventana, que le permite examinar el contenido de los registros.
+
+Para ver las instrucciones de código máquina en su formato numérico sin procesar, en lugar de como lenguaje de ensamblado, utilice el **memoria** ventana o seleccione **Bytes de código** en el menú contextual en el **desensamblado**  ventana.
+
+## <a name="use-the-disassembly-window"></a>Uso de la ventana Desensamblado
+
+Para habilitar el **desensamblado** ventana, en **herramientas** > **opciones** (o **herramientas**  >  **Opciones**) > **depuración**, seleccione **habilitar la depuración de nivel de dirección**.
+
+Para abrir el **desensamblado** ventana durante la depuración, seleccione **Windows** > **desensamblado** o presione **Alt** + **8**.
+
+> [!NOTE]
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, vea [Restablecer la configuración](../ide/environment-settings.md#reset-settings).
+
+Para activar o desactivar la información opcional, haga clic en el **desensamblado** ventana y Active o desactive las opciones que desee en el menú contextual.
+
+Una flecha amarilla en el margen izquierdo marca el punto de ejecución actual. Para código nativo, el punto de ejecución corresponde al contador de programas de la CPU. Esta ubicación indica la instrucción que debe ejecutarse a continuación en el programa.
+
+## <a name="see-also"></a>Vea también
+
+* [Retroceder o avanzar en la memoria](../debugger/how-to-page-up-or-down-in-memory.md)
+* [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)
+* [Cómo: Uso de la ventana Registros](../debugger/how-to-use-the-registers-window.md)

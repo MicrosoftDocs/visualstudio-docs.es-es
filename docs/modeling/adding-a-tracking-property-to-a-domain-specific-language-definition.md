@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 473cc26a9d3e7b7bc5ec97d1608706aea2ca3009
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 21899be482e47152e8ca60d78535f49613f52ede
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898725"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946047"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Agregar una propiedad de seguimiento a una definición de lenguaje específico de dominio
 
@@ -28,7 +27,7 @@ Un *seguimiento dominio* es una propiedad que se pueden actualizar por el usuari
 
 Por ejemplo, en las herramientas de lenguajes específicos de dominio (herramientas DSL), el nombre para mostrar la propiedad de una clase de dominio tiene un valor predeterminado que se calcula utilizando el nombre de la clase de dominio, pero un usuario puede cambiar el valor en tiempo de diseño o restablecerla al valor calculado.
 
-En este tutorial, creará un lenguaje específico de dominio (DSL) que tiene una propiedad que tiene un valor predeterminado basado en la propiedad Namespace predeterminado del modelo de seguimiento de Namespace. Para obtener más información acerca de las propiedades de seguimiento, vea [definir propiedades de seguimiento](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).
+En este tutorial, creará un lenguaje específico de dominio (DSL) que tiene una propiedad que tiene un valor predeterminado basado en la propiedad Namespace predeterminado del modelo de seguimiento de Namespace. Para obtener más información acerca de las propiedades de seguimiento, vea [definir propiedades de seguimiento](https://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).
 
 - La compatibilidad de las herramientas de DSL descriptores de propiedad de seguimiento. Sin embargo, el diseñador DSL no se puede usar para agregar una propiedad de seguimiento a un idioma. Por lo tanto, debe agregar código personalizado para definir e implementar la propiedad de seguimiento.
 
@@ -719,7 +718,7 @@ Agregue código para admitir el comportamiento posterior a la carga personalizad
 
 El siguiente paso es compilar y ejecutar el diseñador DSL en una nueva instancia de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] para que pueda comprobar que la propiedad de seguimiento funciona correctamente.
 
-1. En el **compilar** menú, haga clic en **recompilar solución**.
+1. En el menú **Compilar**, haga clic en **Recompilar solución**.
 
 2. En el menú **Depurar**, haga clic en **Iniciar depuración**.
 
@@ -762,4 +761,4 @@ Si tiene previsto utilizar seguimiento de más de una propiedad o implementar pr
 - <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>
 - <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>
 - [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)
-- [Cómo: Crear soluciones de lenguajes específicos de dominio](../modeling/how-to-create-a-domain-specific-language-solution.md)
+- [Cómo: Crear una solución de lenguaje específico de dominio](../modeling/how-to-create-a-domain-specific-language-solution.md)

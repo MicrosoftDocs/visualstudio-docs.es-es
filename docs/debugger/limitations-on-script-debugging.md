@@ -1,8 +1,6 @@
 ---
 title: Limitaciones de la depuración de scripts | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c85f990d08a41bd4b4ee25190d0c5b6bd99d340
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: 565f483c12e3d91bd68919537feb06af5029abc7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058027"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825963"
 ---
 # <a name="limitations-on-script-debugging"></a>Limitaciones de la depuración de script
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] admite la depuración de script en el cliente, sujeta a las limitaciones descritas en este tema.  

@@ -2,7 +2,6 @@
 title: Idiomas de los recursos neutros para la localización
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - localization [Visual Studio], resources
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 34013c0b896f47e919a105680d18812aaba60dd0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e246d31a3c3126f28cd6be383b368a1373118504
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906993"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916814"
 ---
 # <a name="neutral-resources-languages-for-localization"></a>Idiomas de los recursos neutros para la localización
 

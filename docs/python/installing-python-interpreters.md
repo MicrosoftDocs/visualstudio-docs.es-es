@@ -1,22 +1,22 @@
 ---
-title: Selección e instalación de los intérpretes de Python
+title: Selección e instalación de intérpretes de Python
 description: Una lista completa de los intérpretes de Python compatibles con Visual Studio, con instrucciones breves sobre dónde encontrar sus instaladores.
-ms.date: 10/09/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7791eec2408f14a442a8dd50c1a881ffc0802697
-ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
+ms.openlocfilehash: 60a3aff0cf0a5803cfc60b0215ca1f3cda44cef4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49324982"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905233"
 ---
 # <a name="install-python-interpreters"></a>Instalación de intérpretes de Python
 
@@ -30,11 +30,11 @@ Visual Studio (todas las versiones) detecta automáticamente cada intérprete de
 
 Si Visual Studio no detecta un entorno instalado, consulte [Identificación manual de un entorno existente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
-Visual Studio muestra todos los entornos conocidos en la ventana [**Entornos de Python**](managing-python-environments-in-visual-studio.md) y detecta automáticamente las actualizaciones de los intérpretes existentes.
+Visual Studio muestra todos los entornos conocidos en la ventana [**Entornos de Python**](managing-python-environments-in-visual-studio.md#the-python-environments-window) y detecta automáticamente las actualizaciones de los intérpretes existentes.
 
 | Intérprete | Descripción |
 | --- | --- |
-| [CPython](https://www.python.org/) | Intérprete "nativo" y que se usa con más frecuencia, disponible en versiones de 32 y 64 bits (se recomienda la versión de 32 bits). Incluye características más recientes del lenguaje, máxima compatibilidad con paquetes de Python, compatibilidad completa con la depuración e interoperabilidad con [IPython](http://ipython.org/). Consulte también: [Should I use Python 2 or Python 3? (¿Debo usar Python 2 o Python 3?)](https://wiki,python.org/moin/Python2orPython3). Tenga en cuenta que Visual Studio 2015 y versiones anteriores no admiten Python 3.6 y pueden generar errores de tipo **Versión 3.6 de Python no compatible**. Use la versión Python 3.5 o anteriores. |
+| [CPython](https://www.python.org/) | Intérprete "nativo" y que se usa con más frecuencia, disponible en versiones de 32 y 64 bits (se recomienda la versión de 32 bits). Incluye características más recientes del lenguaje, máxima compatibilidad con paquetes de Python, compatibilidad completa con la depuración e interoperabilidad con [IPython](https://ipython.org/). Vea también: [Should I use Python 2 or Python 3?](https://wiki,python.org/moin/Python2orPython3) (¿Debo usar Python 2 o Python 3?). Tenga en cuenta que Visual Studio 2015 y versiones anteriores no admiten Python 3.6 y pueden generar errores de tipo **Versión 3.6 de Python no compatible**. Use la versión Python 3.5 o anteriores. |
 | [IronPython](https://github.com/IronLanguages/ironpython2) | Implementación de .NET de Python, disponible en versiones de 32 y 64 bits, que proporciona interoperabilidad con C#, F# y Visual Basic, acceso a las API de .NET, depuración estándar de Python (pero no depuración en modo mixto de C++) y depuración mixta de IronPython y C#. IronPython, sin embargo, no admite entornos virtuales. |
 | [Anaconda](https://www.continuum.io) | Plataforma de ciencia de datos abierta con tecnología de Python que incluye la versión más reciente de CPython y la mayoría de los paquetes de difícil instalación. Es la opción recomendable si no puede decidirse. |
 | [PyPy](https://www.pypy.org/) | Implementación JIT de seguimiento de alto rendimiento de Python adecuada para programas de ejecución prolongada y situaciones donde se identifican problemas de rendimiento pero no puede encontrar otras resoluciones. Funciona con Visual Studio, pero con compatibilidad limitada para características de depuración avanzadas. |

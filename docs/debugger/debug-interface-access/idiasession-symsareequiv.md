@@ -1,8 +1,6 @@
 ---
-title: Symsareequiv | Documentos de Microsoft
-ms.custom: ''
+title: Symsareequiv | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdaa1ab070b6d95af0f28f5bdaa005b9ac808766
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bfde8fec8ce399df765c911aa1ffaf292be1e50f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850989"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893476"
 ---
 # <a name="idiasessionsymsareequiv"></a>IDiaSession::symsAreEquiv
 Comprueba si dos símbolos son equivalentes.  
@@ -27,7 +25,7 @@ Comprueba si dos símbolos son equivalentes.
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT symsAreEquiv (   
+HRESULT symsAreEquiv (   
    IDiaSymbol* symbolA,  
    IDiaSymbol* symbolB  
 );  

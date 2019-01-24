@@ -1,8 +1,6 @@
 ---
-title: Actualizar una aplicación de UWP | Documentos de Microsoft
-ms.custom: ''
+title: Actualizar una aplicación para UWP | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,16 +18,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a45564f34fe0167821febb511a023c01f7c38358
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 43f232157ef9237ba9d401f473ab0db1b1260f40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476285"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828728"
 ---
-# <a name="refresh-a-uwp-app-in-visual-studio"></a>Actualizar una aplicación de UWP en Visual Studio
+# <a name="refresh-a-uwp-app-in-visual-studio"></a>Actualizar una aplicación para UWP en Visual Studio
   
- Puede realizar cambios en el código durante la depuración y, a continuación, actualizar una aplicación de UWP con JavaScript eligiendo el **actualizar aplicación de Windows** situado en la **depurar** barra de herramientas. Al elegir este botón, se recarga la aplicación sin detener y reiniciar el depurador. La característica Actualizar te permite modificar código de HTML, CSS y JavaScript, y ver el resultado rápidamente. Esta característica se admite para aplicaciones UWP.  
+ Puede realizar cambios en el código mientras está depurando y, a continuación, actualice una aplicación para UWP con JavaScript eligiendo el **actualizar Windows app** situado en la **depurar** barra de herramientas. Al elegir este botón, se recarga la aplicación sin detener y reiniciar el depurador. La característica Actualizar te permite modificar código de HTML, CSS y JavaScript, y ver el resultado rápidamente. Esta característica se admite para aplicaciones UWP.  
   
  La actualización no conserva el estado de la aplicación ni refleja los siguientes cambios en la aplicación:  
   
@@ -48,7 +46,7 @@ ms.locfileid: "31476285"
   
 ### <a name="to-refresh-an-app"></a>Para actualizar una aplicación  
   
-1.  Con el proyecto UWP abierto en Visual Studio, seleccione **equipo Local** como el destino de depuración.
+1.  Con el proyecto UWP abierto en Visual Studio, seleccione **máquina Local** como el destino de depuración.
   
      ![Lista de destinos de depuración seleccione](../debugger/media/js_select_target.png "JS_Select_Target")  
   
@@ -56,11 +54,11 @@ ms.locfileid: "31476285"
   
 4.  Cambia a Visual Studio. 
   
-5.  En la página principal de la aplicación UWP, editar parte del código HTML.
+5.  En la página principal de la aplicación para UWP, editar algunas de HTML.
   
-7.  Haga clic en el **actualizar aplicación de Windows** botón, que tiene el siguiente aspecto: ![botón de aplicación de Windows de actualización](../debugger/media/js_refresh.png "JS_Refresh"). (O bien, presiona F4).  
+7.  Haz clic en el botón Actualizar aplicación de Windows **, que tiene este aspecto:** . ![Botón de la aplicación de Windows actualizar](../debugger/media/js_refresh.png "JS_Refresh"). (O bien, presiona F4).  
   
-8.  Cambia a la aplicación. Se vuelve a cargar la aplicación y el código HTML actualizado se usa para representar la aplicación.
+8.  Cambia a la aplicación. Se vuelve a cargar la aplicación y el HTML actualizado se usa para representar la aplicación.
   
 ## <a name="see-also"></a>Vea también  
- [Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md)
+ [Inicio rápido: depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md)

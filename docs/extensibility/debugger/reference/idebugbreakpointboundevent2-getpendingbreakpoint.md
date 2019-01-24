@@ -1,9 +1,6 @@
 ---
 title: IDebugBreakpointBoundEvent2::GetPendingBreakpoint | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBreakpointBoundEvent2::GetPendingBreakpoint
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55baf532e8e08d26e2b7258dbb4e95bb3aa78010
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b37f36942ab5797af980fdf98b50fa71fbda4e59
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850118"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938911"
 ---
 # <a name="idebugbreakpointboundevent2getpendingbreakpoint"></a>IDebugBreakpointBoundEvent2::GetPendingBreakpoint
 Obtiene el punto de interrupción pendiente que se está enlazando.  
@@ -28,13 +25,13 @@ Obtiene el punto de interrupción pendiente que se está enlazando.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT GetPendingBreakpoint(   
+HRESULT GetPendingBreakpoint(   
    IDebugPendingBreakpoint2** ppPendingBP  
 );  
 ```  
   
 ```cpp  
-int GetPendingBreakpoint(   
+int GetPendingBreakpoint(   
    out IDebugPendingBreakpoint2 ppPendingBP  
 );  
 ```  

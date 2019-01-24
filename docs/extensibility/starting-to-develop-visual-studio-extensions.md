@@ -1,9 +1,6 @@
 ---
 title: Comenzar a desarrollar extensiones de Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 09/18/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - getting started, Visual Studio integration
@@ -14,21 +11,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a04993581be6edae89633bcda901a8d85ff6c765
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 55c0e4b1c8df4ed0198c2c346f2909a4984c5e9b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849546"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830825"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Comenzar a desarrollar extensiones de Visual Studio
+
 Si nunca ha escrito una extensión de Visual Studio antes, probablemente tiene algunas preguntas. Presentamos algunas de las más comunes de aquí. Si no ve la información que busca, use los botones de comentarios (**resultó útil esta página?** en la parte inferior de la pantalla) para pedir lo que se desea.
 
+> [!NOTE]
+> En este artículo se aplica a Visual Studio en Windows. Para Visual Studio para Mac, consulte [extender Visual Studio para Mac](/visualstudio/mac/extending-visual-studio-mac).
+
 ## <a name="what-software-do-i-need-to-develop-visual-studio-extensions"></a>¿Qué software necesito para desarrollar extensiones de Visual Studio?
- Deberá instalar el SDK de Visual Studio además de Visual Studio para desarrollar extensiones de Visual Studio. Puede instalar el SDK de Visual Studio como parte del programa de instalación normal, o puede instalarlo más adelante. Para obtener más información acerca de cómo instalar el SDK de Visual Studio, consulte [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).
+
+Deberá instalar el SDK de Visual Studio además de Visual Studio para desarrollar extensiones de Visual Studio. Puede instalar el SDK de Visual Studio como parte del programa de instalación normal, o puede instalarlo más adelante. Para obtener más información acerca de cómo instalar el SDK de Visual Studio, consulte [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).
 
 ## <a name="what-kinds-of-things-can-i-do-with-visual-studio-extensions"></a>¿Qué tipos de cosas puedo hacer con extensiones de Visual Studio?
- El cielo su caso el límite cuando se trata de imaginar diferentes extensiones de Visual Studio. Por supuesto, la mayoría de las extensiones tener algo que ver con la escritura de código, pero que no tiene que ser el caso. Estos son algunos ejemplos de los tipos de extensiones que puede crear:
+
+El cielo su caso el límite cuando se trata de imaginar diferentes extensiones de Visual Studio. Por supuesto, la mayoría de las extensiones tener algo que ver con la escritura de código, pero que no tiene que ser el caso. Estos son algunos ejemplos de los tipos de extensiones que puede crear:
 
 - Compatibilidad con idiomas que no están incluidos en Visual Studio, con el color de la sintaxis, IntelliSense y compatibilidad de compilador y depuración
 
@@ -36,12 +39,13 @@ Si nunca ha escrito una extensión de Visual Studio antes, probablemente tiene a
 
 - Diseñadores de dominios para escenarios como la compatibilidad con datos de diseño o en la nube
 
-  Para obtener ejemplos de extensiones, consulte el [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Muchas extensiones son de código abierto y el catálogo de soluciones incluye vínculos a su repositorio de GitHub.
+Para obtener ejemplos de extensiones, consulte el [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Muchas extensiones son de código abierto y el catálogo de soluciones incluye vínculos a su repositorio de GitHub.
 
 ## <a name="which-visual-studio-features-can-i-extend"></a>¿Qué características de Visual Studio se debe ampliar?
- En teoría, puede ampliar cualquier parte de Visual Studio: menús, barras de herramientas, comandos, windows, soluciones, proyectos, editores y así sucesivamente.
 
- En la práctica, hemos descubierto que las características en la mayoría de las personas que desea extender son comandos, menús y barras de herramientas, windows, IntelliSense y proyectos. Estos son vínculos a las secciones correspondientes:
+En teoría, puede ampliar cualquier parte de Visual Studio: menús, barras de herramientas, comandos, windows, soluciones, proyectos, editores y así sucesivamente.
+
+En la práctica, hemos descubierto que las características en la mayoría de las personas que desea extender son comandos, menús y barras de herramientas, windows, IntelliSense y proyectos. Estos son vínculos a las secciones correspondientes:
 
 -   [Ampliación de menús y comandos](../extensibility/extending-menus-and-commands.md): agregar sus propios elementos de menús de Visual Studio y las barras de herramientas. Puede usarlos para iniciar la nueva funcionalidad de Visual Studio o sus propias aplicaciones auxiliares externo. También puede proporcionar accesos directos personalizados para los elementos de menú.
 
@@ -57,7 +61,7 @@ Si nunca ha escrito una extensión de Visual Studio antes, probablemente tiene a
 
 -   [Ampliación de otras partes de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
 
--   [Shell aislado de Visual Studio](../extensibility/visual-studio-isolated-shell.md)
+-   [Shell aislado de Visual Studio](/visualstudio/extensibility/shell/visual-studio-isolated-shell)
 
 ##  <a name="BKMK_ProjectTemplate"></a> ¿Qué plantillas de proyecto se proporcionan por VSSDK?
  Los dos tipos principales de las extensiones son extensiones MEF y VSPackages. En general, las extensiones de VSPackage se usan para las extensiones que utilizan o amplían los comandos, ventanas de herramientas y proyectos. Se usan las extensiones MEF para ampliar o personalizar el editor de Visual Studio.
@@ -68,15 +72,15 @@ Si nunca ha escrito una extensión de Visual Studio antes, probablemente tiene a
 
  La plantilla de Shell aislado se usa para empaquetar una extensión en una versión de Visual Studio shell que se puede personalizar y distribuir como su propio. Los temas siguientes muestran cómo empezar a trabajar con cada tipo de extensión:
 
--   Comandos de menú: [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md)
+-   Comandos de menú: [Creación de una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md)
 
--   Ventanas de herramientas: [crear una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md)
+-   Ventanas de herramientas: [Creación de una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md)
 
--   Extensiones de editor: [crear una extensión con una plantilla de elementos de Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+-   Extensiones de editor: [Creación de una extensión con una plantilla de elemento de editor](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
--   VSPackages básicos: [crear una extensión con un VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
+-   VSPackages básicos: [Creación de una extensión con un VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
--   Plantilla de proyecto VSIX: [Introducción a la plantilla de proyecto de VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
+-   Plantilla de proyecto VSIX: [Introducción a la plantilla de proyecto VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
 
 ## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>¿Cómo se puede obtener una extensión my al aspecto Visual Studio?
  Obtenga sugerencias excelente para diseñar la interfaz de usuario para la extensión en [directrices de experiencia de usuario de Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
@@ -87,4 +91,8 @@ Si nunca ha escrito una extensión de Visual Studio antes, probablemente tiene a
 ## <a name="how-can-i-distribute-my-extension"></a>¿Cómo puedo distribuir mi extensión?
  Puede instalar la extensión en otro equipo o envíe a sus amigos como un archivo .vsix, que instala haciendo doble clic en él. Puede encontrar más información acerca de los paquetes VSIX en [envío extensiones de Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
 
- También puede publicar su extensión en Visual Studio Marketplace, lo que es visible a un gran número de clientes de Visual Studio. Para obtener un ejemplo de empaquetado de una extensión en Marketplace, consulte [Tutorial: publicar una extensión de Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Para obtener más información sobre lo que necesita hacer para publicar en Marketplace, consulte [productos y extensiones para Visual Studio](/azure/devops/extend/overview?view=vsts).
+ También puede publicar su extensión en Visual Studio Marketplace, lo que es visible a un gran número de clientes de Visual Studio. Para obtener un ejemplo de empaquetado de una extensión en Marketplace, consulte [Tutorial: Publicación de una extensión de Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Para obtener más información sobre lo que necesita hacer para publicar en Marketplace, consulte [productos y extensiones para Visual Studio](/azure/devops/extend/overview?view=vsts).
+
+## <a name="see-also"></a>Vea también
+
+- [Extender Visual Studio para Mac](/visualstudio/mac/extending-visual-studio-mac)

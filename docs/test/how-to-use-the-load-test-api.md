@@ -1,5 +1,5 @@
 ---
-title: API de pruebas de carga en Visual Studio
+title: API de pruebas de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,18 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 4dfb5c79f2423ba25f16edadd70ee879ca966356
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: ee66a15788e9ae640142c269e388846a59311190
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282750"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926062"
 ---
-# <a name="how-to-use-the-load-test-api"></a>Cómo: Usar la API de pruebas de carga
+# <a name="how-to-use-the-load-test-api"></a>Procedimiento para usar la API de pruebas de carga
 
 Visual Studio admite complementos de pruebas de carga que puedan controlar o mejorar una prueba de carga. Los complementos de pruebas de carga son clases definidas por el usuario que implementan la interfaz <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> situada en el espacio de nombres <xref:Microsoft.VisualStudio.TestTools.LoadTesting>. Los complementos de pruebas de carga permiten un control personalizado de las pruebas de carga, por ejemplo, para anular una prueba de carga cuando se alcanza un valor de contador o un umbral de error. Utilice las propiedades de la clase <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest> para obtener o establecer parámetros de prueba de carga a partir del código definido por el usuario. Utilice los eventos de la clase <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest> para asociar delegados para notificaciones cuando la prueba de carga se esté ejecutando.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!TIP]
 > El Examinador de objetos se usa para examinar el espacio de nombres <xref:Microsoft.VisualStudio.TestTools.LoadTesting>. Los editores de Visual C# y de Visual Basic ofrecen compatibilidad con IntelliSense para codificar con las clases del espacio de nombres.
@@ -57,11 +58,11 @@ También se pueden crear complementos para pruebas de rendimiento web. Para obte
 
 9. Ejecute la prueba de carga.
 
-     Para obtener una implementación de <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>, vea [Cómo: Crear un complemento de pruebas de carga](../test/how-to-create-a-load-test-plug-in.md).
+     Para obtener una implementación de <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>, vea [Cómo: Crear un complemento de prueba de carga](../test/how-to-create-a-load-test-plug-in.md).
 
 ## <a name="see-also"></a>Vea también
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 - [Crear código y complementos personalizados para las pruebas de carga](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Cómo: Usar la API de pruebas de rendimiento web](../test/how-to-use-the-web-performance-test-api.md)
-- [Cómo: Crear un complemento de pruebas de carga](../test/how-to-create-a-load-test-plug-in.md)
+- [Cómo: Usar la API de prueba de rendimiento web](../test/how-to-use-the-web-performance-test-api.md)
+- [Cómo: Crear un complemento de prueba de carga](../test/how-to-create-a-load-test-plug-in.md)

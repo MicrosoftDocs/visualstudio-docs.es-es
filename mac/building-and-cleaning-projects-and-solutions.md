@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
-ms.openlocfilehash: d1907b4905e0acfc5b9c287f385499fabe8333f4
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 74a78c5cb4e9583db1eb99bb6eeb5691cb4adcfd
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224090"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294245"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>Compilar y limpiar proyectos y soluciones
 
@@ -32,17 +32,18 @@ Para compilar, recompilar o limpiar una solución completa:
     * **Recompilar todo**: limpia la solución y luego la compila.
     * **Limpiar todo**: quita todos los productos de compilación de la solución.
 
-
-
 ## <a name="to-build-or-rebuild-a-single-project"></a>Para compilar o recompilar un solo proyecto
 
 1. En el Panel de solución, seleccione el proyecto.
 
 2. En la barra de menús, seleccione Compilar y, después, elija Compilar[NombreDelProyecto], Recompilar[NombreDelProyecto] o Limpiar[NombreDelProyecto].
 
-
 ## <a name="to-stop-a-build"></a>Para detener una compilación
 
 Para detener una compilación, haga clic en el cuadrado rojo del área de estado:
 
- ![Haga clic en el cuadrado rojo para detener la compilación](media/compiling-and-building-image3.png)
+![Haga clic en el cuadrado rojo para detener la compilación](media/compiling-and-building-image3.png)
+
+## <a name="see-also"></a>Vea también
+
+- [Compilar y limpiar proyectos y soluciones (Visual Studio en Windows)](/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio)

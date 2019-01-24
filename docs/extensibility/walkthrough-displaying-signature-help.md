@@ -1,9 +1,6 @@
 ---
-title: 'Tutorial: Mostrar ayuda para las firmas | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Mostrar la Ayuda de signatura | Documentos de Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - signature help/parameter info
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc260fe45bf4c6cf801718c2f4c3bbaa98842dd6
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 796b15b603ee314425d895279f6abff8e9d7e713
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498913"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986731"
 ---
 # <a name="walkthrough-display-signature-help"></a>Tutorial: Mostrar la Ayuda de firma
 Ayuda para la firma (también conocido como *información de parámetros*) muestra la firma de un método en una información sobre herramientas cuando un usuario escribe el carácter de inicio de lista de parámetros (normalmente un paréntesis de apertura). Como se ha escrito un parámetro y el separador de parámetro (normalmente una coma), la información sobre herramientas se actualiza para mostrar el siguiente parámetro en negrita. Puede definir la Ayuda de signatura de las siguientes maneras: en el contexto de un servicio de lenguaje, definir su propia extensión de nombre de archivo y el tipo de contenido y mostrar la Ayuda de firma para solo ese tipo o mostrar la Ayuda de firma para un tipo de contenido existente (por ejemplo, "text"). En este tutorial se muestra cómo mostrar la Ayuda de signatura para el tipo de contenido "text".  
@@ -34,7 +31,7 @@ Ayuda para la firma (también conocido como *información de parámetros*) muest
   
 #### <a name="to-create-a-mef-project"></a>Para crear un nuevo proyecto de MEF  
   
-1.  Cree un proyecto de VSIX de C#. (En el **nuevo proyecto** cuadro de diálogo, seleccione **Visual C# / extensibilidad**, a continuación, **proyecto VSIX**.) Nombre de la solución `SignatureHelpTest`.  
+1.  Cree un proyecto de VSIX de C#. (En el **nuevo proyecto** cuadro de diálogo, seleccione **Visual C# / extensibilidad**, a continuación, **proyecto VSIX**.) Asigne a la solución el nombre `SignatureHelpTest`.  
   
 2.  Agregar una plantilla de elemento de clasificador de Editor para el proyecto. Para obtener más información, consulte [crear una extensión con una plantilla de elementos de editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   

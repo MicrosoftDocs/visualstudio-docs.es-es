@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_isAcceleratorStubFunction | Documentos de Microsoft
-ms.custom: ''
+title: IDiaSymbol::get_isAcceleratorStubFunction | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cddf6be53925ed6f9cd613f7e7a19cca9f00cace
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 2314142f2080b25a81610ee74f3f627d151651f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468056"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956581"
 ---
 # <a name="idiasymbolgetisacceleratorstubfunction"></a>IDiaSymbol::get_isAcceleratorStubFunction
-Indica si el símbolo corresponde a un símbolo de función de nivel superior de un sombreador que se compila para un acelerador que corresponde a un `parallel_for_each` llamar.  
+Indica si el símbolo corresponde a un símbolo de función de nivel superior para un sombreador compilado para un acelerador que corresponde a un `parallel_for_each` llamar.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -31,10 +29,10 @@ HRESULT get_isAcceleratorStubFunction(
   
 #### <a name="parameters"></a>Parámetros  
  `pFlag`  
- [out] Un puntero a un `BOOL` que indica si el símbolo corresponde a un símbolo de función de nivel superior de un sombreador que se compila para un acelerador que corresponde a un `parallel_for_each` llamar.  
+ [out] Un puntero a un `BOOL` que indica si el símbolo corresponde a un símbolo de función de nivel superior para un sombreador compilado para un acelerador que corresponde a un `parallel_for_each` llamar.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

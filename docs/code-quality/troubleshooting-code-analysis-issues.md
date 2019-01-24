@@ -2,7 +2,6 @@
 title: Solucionar problemas de análisis de código
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: troubleshooting
 ms.assetid: 61c7e44d-2780-4df5-9bcb-49e40c1152fc
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1c80e7421569804f6d6781b117522dd1ef1dea8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c11ff3f6df9ba8ca2cd58f89fd3eec89e6a9abb2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885894"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876051"
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>Solucionar problemas de análisis de código
 Este tema contiene información para solucionar los siguientes problemas de análisis de código de Visual Studio.
@@ -32,4 +31,7 @@ Este tema contiene información para solucionar los siguientes problemas de aná
 3. Vuelva a abrir el conjunto de reglas, invierta el cambio y guarde de nuevo el conjunto de reglas.
 
 ## <a name="see-also"></a>Vea también
- [Analizar la calidad de la aplicación](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md) [analizar la calidad del código administrado](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) [usar conjuntos de reglas para agrupar reglas de análisis de código](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
+
+- [Analizar la calidad de la aplicación](../code-quality/code-analysis-for-managed-code-overview.md)
+- [Analizar la calidad del código administrado](../code-quality/code-analysis-for-managed-code-overview.md)
+- [Usar conjuntos de reglas para agrupar reglas de análisis de código](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)

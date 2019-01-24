@@ -3,19 +3,18 @@ title: Preguntas frecuentes sobre las herramientas de R para Visual Studio
 description: Preguntas más frecuentes sobre R en Visual Studio.
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: reference
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 832d581a4147b8b050da16b1a1f72d8a3909fc35
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 1da67a213ed1add0ce670ca133163538e2cde1b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235436"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913861"
 ---
 # <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
@@ -81,7 +80,7 @@ R. Sí, puede usar cualquier sistema de control de código fuente que esté inte
 
 **P. ¿Cuál es la configuración de *.gitignore* recomendada para un proyecto de RTVS?**
 
-R. Github mantiene un repositorio principal de los archivos de *.gitignore* recomendados. Puede verlo aquí: [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)
+R. GitHub mantiene un repositorio principal de los archivos de *.gitignore* recomendados. Puede verlo aquí: [R.gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)
 
 ## <a name="remote-services"></a>Servicios remotos
 

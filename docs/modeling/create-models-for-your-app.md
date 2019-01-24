@@ -2,7 +2,6 @@
 title: Crear modelos para la aplicación
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.common.commentlink.properties
@@ -23,12 +22,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e508dc838fd7bf8ff3dab493aa2d5d52c747d180
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f608246af6311c03f4ed5ee31d4588ce2aa1a7ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849455"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942689"
 ---
 # <a name="create-models-for-your-app"></a>Crear modelos para la aplicación
 
@@ -40,9 +39,9 @@ Para visualizar la arquitectura de un sistema o código existente, cree los diag
 
 |**Diagram**|**Qué muestra**|
 |-|-|
-|[Diagramas de dependencia: instrucciones](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md)|La arquitectura de alto nivel del sistema|
+|[Diagramas de dependencia: Directrices](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramas de dependencia: Referencia](../modeling/layer-diagrams-reference.md)|La arquitectura de alto nivel del sistema|
 |Mapas de código<br /><br /> [Asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Buscar posibles problemas mediante analizadores de mapas de código](../modeling/find-potential-problems-using-code-map-analyzers.md)|Las dependencias y otras relaciones en el código|
-|Diagramas de clases generadas por código<br /><br /> [Trabajar con diagramas de clases (Diseñador de clases)](../ide/working-with-class-diagrams-class-designer.md)|Los tipos y sus relaciones en el código .NET|
+|Diagramas de clases generadas por código<br /><br /> [Trabajar con diagramas de clases (Diseñador de clases)](../ide/class-designer/designing-and-viewing-classes-and-types.md)|Los tipos y sus relaciones en el código .NET|
 
 ## <a name="related-tasks"></a>Tareas relacionadas
 
@@ -52,10 +51,10 @@ Para visualizar la arquitectura de un sistema o código existente, cree los diag
 |[Requisitos del usuario de modelos](../modeling/model-user-requirements.md)|Usar modelos para aclarar y transmitir las necesidades del usuario.|
 |[Modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md)|Usar modelos para describir la estructura y el comportamiento global del sistema y para asegurarse de que satisface las necesidades de los usuarios.|
 |[Validar el sistema durante el desarrollo](../modeling/validate-your-system-during-development.md)|Asegurarse de que el software es coherente con las necesidades de los usuarios y la arquitectura global del sistema.|
-|[Usar modelos en el proceso de desarrollo](../modeling/use-models-in-your-development-process.md)<br /><br /> [Usar modelos en Agile development](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Usar modelos para que resulte más fácil entender y cambiar el sistema durante su desarrollo. |
+|[Usar modelos en el proceso de desarrollo](../modeling/use-models-in-your-development-process.md)<br /><br /> [Usar modelos en Agile development](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Usar modelos para que resulte más fácil entender y cambiar el sistema durante su desarrollo. |
 |[Estructurar la solución de modelado](../modeling/structure-your-modeling-solution.md)|Organizar los modelos en un proyecto de tamaño grande o mediano.|
 
 ## <a name="resources"></a>Recursos
 
 - [Visualización y modelado foro de herramientas de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)
-- [Foro de extensibilidad de Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsx)
+- [Foro de extensibilidad de Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)

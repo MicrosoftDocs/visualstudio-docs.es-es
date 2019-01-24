@@ -1,9 +1,6 @@
 ---
-title: 'Tutorial: Mostrar las llaves coincidentes | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Mostrar las llaves coincidentes | Documentos de Microsoft'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f29596c95646db78145725f1f0cead424e1de5e
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: a048ce1e89de65e805d01971de5c4221b13be826
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500441"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956588"
 ---
 # <a name="walkthrough-display-matching-braces"></a>Tutorial: Mostrar las llaves coincidentes
 Implementar las características de lenguaje, como definiendo las llaves que desee hacer coincidir, y agregar una etiqueta de marcador de texto a las llaves coincidentes cuando el símbolo de intercalación está en una de las llaves la coincidencia de llaves. Puede definir las llaves en el contexto de un idioma, definir su propia extensión de nombre de archivo y el tipo de contenido y aplicar las etiquetas simplemente que escriba o aplican las etiquetas a un tipo de contenido existente (por ejemplo, "text"). El siguiente tutorial muestra cómo aplicar etiquetas para el tipo de contenido "text" la coincidencia de llaves.  
@@ -30,7 +27,7 @@ Implementar las características de lenguaje, como definiendo las llaves que des
   
 #### <a name="to-create-a-mef-project"></a>Para crear un nuevo proyecto de MEF  
   
-1.  Cree un proyecto de clasificador de editor. Nombre de la solución `BraceMatchingTest`.  
+1.  Cree un proyecto de clasificador de editor. Asigne a la solución el nombre `BraceMatchingTest`.  
   
 2.  Agregar una plantilla de elemento de clasificador de Editor para el proyecto. Para obtener más información, consulte [crear una extensión con una plantilla de elementos de editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   

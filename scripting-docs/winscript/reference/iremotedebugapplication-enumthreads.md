@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42b57e63716804258ba79ed4e4aceae118cb5f54
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d813b9d1aa32368abddb6127450dffa8868facc5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729165"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086897"
 ---
 # <a name="iremotedebugapplicationenumthreads"></a>IRemoteDebugApplication::EnumThreads
 Enumera todos los subprocesos que se sabe que están asociados con la aplicación.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT EnumThreads(  
    IEnumRemoteDebugApplicationThreads**  pperdat  
 );  
@@ -48,7 +48,7 @@ HRESULT EnumThreads(
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método enumera todos los subprocesos que se sabe que están asociados con la aplicación. Pueden agregarse nuevos subprocesos en cualquier momento.  
+ Este método enumera todos los subprocesos que se sabe que están asociados con la aplicación. En cualquier momento, se pueden agregar nuevos subprocesos.  
   
 ## <a name="see-also"></a>Vea también  
  [IRemoteDebugApplication (Interfaz)](../../winscript/reference/iremotedebugapplication-interface.md)

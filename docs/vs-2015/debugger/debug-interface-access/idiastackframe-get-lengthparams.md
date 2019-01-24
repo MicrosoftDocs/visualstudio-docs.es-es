@@ -1,5 +1,5 @@
 ---
-title: Idiastackframe | Microsoft Docs
+title: Idiastackframe | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaStackFrame::get_lengthParams method
 ms.assetid: 78005efa-2883-4823-b4e4-711a66672c78
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41cc54bdd7961047c807518444a9b386ac025a5b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5c426ee3b9e5edf9f9ac3620b03e538829569d6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893539"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803375"
 ---
 # <a name="idiastackframegetlengthparams"></a>IDiaStackFrame::get_lengthParams
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera el número de bytes de los parámetros que se insertan en la pila.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT get_lengthParams (   
+HRESULT get_lengthParams (   
    DWORD* pRetVal  
 );  
 ```  

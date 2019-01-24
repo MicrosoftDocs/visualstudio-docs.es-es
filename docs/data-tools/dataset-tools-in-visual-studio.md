@@ -1,6 +1,7 @@
 ---
-title: Herramientas de conjunto de datos en Visual Studio
-ms.date: 11/04/2016
+title: Herramientas de conjunto de datos
+ms.date: 11/21/2018
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.data.DataSet
@@ -45,16 +46,14 @@ ms.assetid: ee57f4f6-9fe1-4e0a-be9a-955c486ff427
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3b7dfe75b27108384312bc10d20cbc80084eaaf6
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
-ms.translationtype: MT
+ms.openlocfilehash: 8c48420ca03e2e6de8d240fd4f28fbe80bcbcd18
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582465"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863100"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Herramientas de conjunto de datos en Visual Studio
 
@@ -63,7 +62,7 @@ ms.locfileid: "39582465"
 
 Un `DataSet` objeto es un objeto en memoria que es esencialmente una base de datos mínima. Contiene `DataTable`, `DataColumn`, y `DataRow` objetos en el que puede almacenar y modificar los datos de una o varias bases de datos sin tener que mantener una conexión abierta. El conjunto de datos mantiene información sobre los cambios a sus datos, por lo que las actualizaciones pueden controlarse y envían a la base de datos cuando se vuelve a conectar la aplicación.
 
-Los conjuntos de datos y clases relacionadas se definen en el *System.Data* espacio de nombres en la biblioteca de clases de .NET Framework. Puede crear y modificar conjuntos de datos dinámicamente en el código mediante ADO.NET. La documentación de esta sección muestra cómo trabajar con conjuntos de datos mediante el uso de diseñadores de Visual Studio. Conjuntos de datos que se crean mediante el uso de diseñadores **TableAdapter** objetos para interactuar con la base de datos. Usar conjuntos de datos que se crean mediante programación **DataAdapter** objetos. Para obtener información acerca de cómo crear conjuntos de datos mediante programación, vea [objetos DataAdapter y DataReader](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
+Los conjuntos de datos y clases relacionadas se definen en el <xref:System.Data?displayProperty=fullName> espacio de nombres en la biblioteca de clases de .NET Framework. Puede crear y modificar conjuntos de datos dinámicamente en el código mediante ADO.NET. La documentación de esta sección muestra cómo trabajar con conjuntos de datos mediante el uso de diseñadores de Visual Studio. Conjuntos de datos que se crean mediante el uso de diseñadores **TableAdapter** objetos para interactuar con la base de datos. Usar conjuntos de datos que se crean mediante programación **DataAdapter** objetos. Para obtener información acerca de cómo crear conjuntos de datos mediante programación, vea [objetos DataAdapter y DataReader](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 
 Si la aplicación debe leer los datos de una base de datos solo y no realizar actualizaciones, agrega o elimina, normalmente puede obtener un rendimiento mejor mediante un `DataReader` objeto para recuperar datos en un tipo genérico `List` objeto u otro objeto de colección. Si va a mostrar los datos, se puede enlazar la interfaz de usuario a la colección.
 
@@ -71,7 +70,7 @@ Si la aplicación debe leer los datos de una base de datos solo y no realizar ac
 
 Visual Studio proporciona herramientas que simplifican el trabajo con conjuntos de datos. El flujo de trabajo to-end básica es:
 
-- Use la **origen de datos** ventana para crear un nuevo conjunto de datos de uno o varios orígenes de datos. Use la **Diseñador de Dataset** para configurar el conjunto de datos y establecer sus propiedades. Por ejemplo, deberá especificar que las tablas del origen de datos para incluir y qué columnas de cada tabla. Elija cuidadosamente conservar la cantidad de memoria que requiere el conjunto de datos. Para obtener más información, vea [Crear y configurar conjuntos de datos](../data-tools/create-and-configure-datasets-in-visual-studio.md).
+- Use la [ventana Orígenes de datos](add-new-data-sources.md#data-sources-window) para crear un nuevo conjunto de datos de uno o varios orígenes de datos. Use la **Diseñador de Dataset** para configurar el conjunto de datos y establecer sus propiedades. Por ejemplo, deberá especificar que las tablas del origen de datos para incluir y qué columnas de cada tabla. Elija cuidadosamente conservar la cantidad de memoria que requiere el conjunto de datos. Para obtener más información, vea [Crear y configurar conjuntos de datos](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
 - Especificar las relaciones entre las tablas para que las claves externas se controlen correctamente. Para obtener más información, consulte [llenar conjuntos de datos mediante TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).
 

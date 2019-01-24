@@ -1,5 +1,5 @@
 ---
-title: Administración de resultados de pruebas de carga en Visual Studio
+title: Administración de los resultados de pruebas de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,21 +12,22 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: d54c599d812bfff393cbc4ccf330aa35b902f38f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b8642ab935c95a8b80f87c5bcc7d5e6d24f0825f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950022"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903895"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Administrar resultados de pruebas de carga en el repositorio de resultados de pruebas de carga
 
 Cuando se ejecutan pruebas de carga, cualquier información recopilada durante la ejecución de una prueba puede almacenarse en el *repositorio de resultados de pruebas de carga*, que es una base de datos SQL. El repositorio de resultados de pruebas de carga contiene datos de los contadores de rendimiento y cualquier información de errores que se obtenga. La base de datos del repositorio de resultados la crea el programa de instalación para los controladores, o bien se crea automáticamente en la primera ejecución local de una prueba de carga. Para una ejecución local, la base de datos se creará automáticamente si el esquema de la prueba de carga no está presente.
 
- Si modifica la cadena de conexión del repositorio de resultados del controlador para que se use otro servidor, se debe ejecutar el script *loadtestresultsrepository.sql* en el nuevo servidor para crear el esquema.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Visual Studio Enterprise proporciona conjuntos de contadores con nombre que recopilan contadores de rendimiento comunes basados en una tecnología. Estos conjuntos son útiles cuando se está analizando un servidor IIS, un servidor ASP.NET o un servidor SQL. Todos los datos recolectados mediante los conjuntos de contadores se almacenan en el repositorio de resultados de pruebas de carga.
+Si modifica la cadena de conexión del repositorio de resultados del controlador para que se use otro servidor, se debe ejecutar el script *loadtestresultsrepository.sql* en el nuevo servidor para crear el esquema.
+
+Visual Studio Enterprise proporciona conjuntos de contadores con nombre que recopilan contadores de rendimiento comunes basados en una tecnología. Estos conjuntos son útiles cuando se está analizando un servidor IIS, un servidor ASP.NET o un servidor SQL. Todos los datos recolectados mediante los conjuntos de contadores se almacenan en el repositorio de resultados de pruebas de carga.
 
 > [!IMPORTANT]
 > Existe una diferencia entre un conjunto de contadores y los datos de contadores de rendimiento. Un conjunto de contadores consiste en metadatos. Define un grupo de contadores de rendimiento que deben recolectarse de un equipo que desempeña un rol particular, como un servidor IIS o SQL Server. El conjunto de contadores forma parte de la definición de la prueba de carga. Los datos de contadores de rendimiento se recogen basándose en los conjuntos de contadores, la asignación del conjunto de contadores a un equipo concreto y la velocidad de muestreo.
@@ -45,10 +46,10 @@ Cuando se ejecutan pruebas de carga, cualquier información recopilada durante l
 
 |Tareas|Temas relacionados|
 |-|-----------------------|
-|**Configurar un repositorio de resultados de pruebas de carga:** puede configurar un repositorio de resultados de pruebas de carga en una base de datos SQL. **Nota:** También se puede crear un repositorio de pruebas de carga al instalar un controlador de pruebas. Para obtener más información, vea [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md).||
-|**Seleccionar y ver un repositorio de resultados:** puede seleccionar un repositorio de resultados concreto. el usuario no está limitado a un almacén de resultados local. Con frecuencia, las pruebas de carga se ejecutan en un conjunto remoto de equipos agente. Los resultados de prueba de los agentes o un equipo local se pueden guardar en cualquier servidor SQL en el que se haya creado un almacén de resultados de pruebas de carga. En cualquier caso, debe identificar dónde almacenar los resultados de pruebas de carga mediante la ventana **Administrar controladores de pruebas**.|-   [Cómo: Seleccionar un repositorio de resultados de pruebas de carga](../test/how-to-select-a-load-test-results-repository.md)<br />-   [Cómo: Tener acceso a los resultados de pruebas de carga para su análisis](../test/how-to-access-load-test-results-for-analysis.md)|
-|**Eliminar el resultado de una prueba de carga del repositorio:** puede quitar el resultado de una prueba de carga del **Editor de pruebas de carga** mediante el cuadro de diálogo **Abrir y administrar resultados de pruebas de carga**.|-   [Cómo: Eliminar resultados de pruebas de carga de un repositorio](../test/how-to-delete-load-test-results-from-a-repository.md)|
-|**Importar y exportar los resultados en un repositorio:** puede importar y exportar resultados de pruebas de carga en el **Editor de pruebas de carga**.|-   [Cómo: Importar resultados de pruebas de carga en un repositorio](../test/how-to-import-load-test-results-into-a-repository.md)<br />-   [Cómo: Exportar resultados de pruebas de carga de un repositorio](../test/how-to-export-load-test-results-from-a-repository.md)|
+|**Configuración de un repositorio de resultados de pruebas de carga:** puede configurar un repositorio de resultados de pruebas de carga en una base de datos SQL. **Nota:**  También se puede crear un repositorio de prueba de carga al instalar un controlador de prueba. Para obtener más información, vea [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md).||
+|**Selección y visualización de un repositorio de resultados:** puede seleccionar un repositorio de resultados concreto. el usuario no está limitado a un almacén de resultados local. Con frecuencia, las pruebas de carga se ejecutan en un conjunto remoto de equipos agente. Los resultados de prueba de los agentes o un equipo local se pueden guardar en cualquier servidor SQL en el que se haya creado un almacén de resultados de pruebas de carga. En cualquier caso, debe identificar dónde almacenar los resultados de pruebas de carga mediante la ventana **Administrar controladores de pruebas**.|-   [Cómo: Seleccionar un repositorio de resultados de pruebas de carga](../test/how-to-select-a-load-test-results-repository.md)<br />-   [Cómo: Acceder a los resultados de pruebas de carga para el análisis](../test/how-to-access-load-test-results-for-analysis.md)|
+|**Eliminación de un resultado de prueba de carga desde el repositorio:** puede quitar los resultados de pruebas de carga desde el **Editor de pruebas de carga** con el cuadro de diálogo **Abrir y administrar resultados de pruebas de carga**.|-   [Cómo: Eliminar resultados de pruebas de carga de un repositorio](../test/how-to-delete-load-test-results-from-a-repository.md)|
+|**Importación y exportación de los resultados en un repositorio:** puede importar y exportar resultados de pruebas de carga en el **Editor de pruebas de carga**.|-   [Cómo: Importar los resultados de pruebas de carga en un repositorio](../test/how-to-import-load-test-results-into-a-repository.md)<br />-   [Cómo: Exportar los resultados de pruebas de carga desde un repositorio](../test/how-to-export-load-test-results-from-a-repository.md)|
 
 ## <a name="related-tasks"></a>Tareas relacionadas
 
@@ -59,4 +60,4 @@ Cuando se ejecutan pruebas de carga, cualquier información recopilada durante l
 ## <a name="see-also"></a>Vea también
 
 - [Analizar los resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Cómo: Obtener acceso a los resultados de pruebas de carga para su análisis](../test/how-to-access-load-test-results-for-analysis.md)
+- [Cómo: Acceder a los resultados de pruebas de carga para el análisis](../test/how-to-access-load-test-results-for-analysis.md)

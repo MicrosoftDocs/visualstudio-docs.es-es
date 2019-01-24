@@ -1,9 +1,6 @@
 ---
-title: 'Tutorial: Crear a una relación principal-detalle utilizando un conjunto de datos en caché'
-ms.custom: ''
+title: 'Tutorial: Crear a una relación de maestro/detalle con un conjunto de datos en caché'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d877eae119c922939ea61007a845e5bd7049076
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c75ee922694e80b5ba70e4743d397cdf465169e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933162"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823654"
 ---
-# <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Tutorial: Crear a una relación principal-detalle utilizando un conjunto de datos en caché
+# <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Tutorial: Crear a una relación de maestro/detalle con un conjunto de datos en caché
   Este tutorial muestra la creación de una relación principal-detalle en una hoja de cálculo y almacenamiento en caché los datos para que la solución se puede usar sin conexión.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -57,7 +54,7 @@ ms.locfileid: "49933162"
   
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto  
   
-1. Cree un proyecto de libro de Excel con el nombre **mi pantalla principal-detallada**, mediante Visual Basic o C#. Asegúrese de que **crear un nuevo documento** está seleccionada. Para obtener más información, consulta [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1. Cree un proyecto de libro de Excel con el nombre **mi pantalla principal-detallada**, mediante Visual Basic o C#. Asegúrese de que **crear un nuevo documento** está seleccionada. Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
    Visual Studio abre el nuevo libro de Excel en el diseñador y agrega el **mi pantalla principal-detallada** proyecto a **el Explorador de soluciones**.  
   
@@ -196,5 +193,3 @@ ms.locfileid: "49933162"
  [Datos en soluciones de Office](../vsto/data-in-office-solutions.md)   
  [Almacenar datos en caché](../vsto/caching-data.md)   
  [Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

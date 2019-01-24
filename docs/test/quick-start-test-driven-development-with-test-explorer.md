@@ -1,20 +1,19 @@
 ---
-title: Desarrollo controlado por pruebas con el Explorador de pruebas en Visual Studio
+title: Desarrollo controlado por pruebas con el Explorador de pruebas
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8dcdd51a53c27ffe5a1bde3170c683d8b1a753b5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f38b38fbce688b405887ec39cc6e234f5d7b70d2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837092"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833933"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Inicio rápido: Desarrollo controlado por pruebas con el Explorador de pruebas
 
@@ -53,13 +52,13 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
 
     Se abre el Explorador de pruebas y se muestra un resumen de los resultados.
 
-   **Para ver una lista completa de pruebas:** elija **Mostrar todo** en cualquier categoría.
+   **Para ver una lista completa de pruebas:** haga clic en **Mostrar todo** en cualquier categoría.
 
-   **Para ver los detalles de un resultado de pruebas:** seleccione la prueba en el Explorador de pruebas para ver detalles tales como los mensajes de excepción en el panel de detalles.
+   **Para ver los detalles de un resultado de la prueba:** seleccione la prueba en el Explorador de pruebas para ver detalles como los mensajes de excepción en el panel de detalles.
 
-   **Para navegar hasta el código de una prueba:** haga doble clic en la prueba en el Explorador de pruebas o elija **Abrir prueba** en el acceso directo.
+   **Para desplazarse hasta el código de una prueba:** haga doble clic en la prueba en el Explorador de pruebas, o bien elija **Abrir prueba** en el menú contextual.
 
-   **Para depurar una prueba:** abra el acceso directo de una o varias pruebas y, a continuación, elija **Depurar pruebas seleccionadas**.
+   **Para depurar una prueba:** abra el menú contextual de una o varias pruebas y, después, seleccione **Depurar pruebas seleccionadas**.
 
 > [!IMPORTANT]
 > Los resultados que se muestran son para la ejecución más reciente. La barra de resultados coloreados presenta solo los resultados de las pruebas ejecutadas. Por ejemplo, si se ejecutan varias pruebas y alguna de ellas produce un error y, a continuación, se ejecutan solo las pruebas que se completan correctamente, la barra de resultados mostrará todo en color verde.
@@ -69,7 +68,7 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
 > Si no aparece ninguna prueba, asegúrese de haber instalado un adaptador para conectar el Explorador de pruebas al marco de pruebas que se está usando. Para más información, vea [Instalar marcos de prueba unitaria de terceros](install-third-party-unit-test-frameworks.md).
 
 
-##  <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Tutorial: Utilizar pruebas unitarias para desarrollar un método
+##  <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Tutorial: Uso de pruebas unitarias para desarrollar un método
  En este tutorial se muestra cómo desarrollar un método probado en C# con el marco de pruebas unitarias de Microsoft. Se puede adaptar fácilmente a otros lenguajes y utilizar otros marcos de prueba tales como NUnit. Para más información, vea [Instalar marcos de prueba unitaria de terceros](install-third-party-unit-test-frameworks.md).
 
 ### <a name="create-the-test-and-method"></a>Crear la prueba y el método

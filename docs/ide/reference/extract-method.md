@@ -1,8 +1,7 @@
 ---
-title: Extracción de un método en Visual Studio
+title: Extracción de un método
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -14,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 049b3caebc884ea22bd2928e9e4ff10e9921fd1d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a505d024f3021a94d90ca1182181148187fe844c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930601"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864769"
 ---
 # <a name="extract-a-method-refactoring"></a>Refactorización de extracción de un método
 
@@ -29,11 +28,11 @@ Esta refactorización se aplica a lo siguiente:
 
 - Visual Basic
 
-**Qué:** Le permite convertir un fragmento de código en su propio método.
+**Qué:** Permite convertir un fragmento de código en su propio método.
 
-**Cuándo:** Tiene un fragmento de código existente en algún método que debe llamarse desde otro método.
+**Cuándo:** Se tiene un fragmento de código existente en algún método al que se debe llamar desde otro método.
 
-**Por qué:** Podría copiar y pegar ese código, pero esto provocaría una duplicación. Una mejor solución consiste en refactorizar ese fragmento en su propio método al que cualquier otro método puede llamar libremente.
+**Por qué:** Se podría copiar y pegar ese código, pero eso provocaría una duplicación. Una mejor solución consiste en refactorizar ese fragmento en su propio método al que cualquier otro método puede llamar libremente.
 
 ## <a name="how-to"></a>Procedimiento
 
@@ -60,7 +59,7 @@ Esta refactorización se aplica a lo siguiente:
    El método se creará de inmediato. Desde aquí, ahora puede cambiar el nombre del método simplemente escribiendo el nuevo nombre.
 
    > [!TIP]
-   > También puede actualizar los comentarios y otras cadenas para que usen este nuevo nombre, así como [obtener una vista previa de los cambios](../../ide/preview-changes.md) antes de guardar, mediante las casillas de del cuadro **Cambiar nombre** que aparece en la parte superior derecha de su IDE.
+   > También puede actualizar los comentarios y demás cadenas para que usen este nuevo nombre, así como [obtener una vista previa de los cambios](../../ide/preview-changes.md) antes de guardar, con las casillas del cuadro **Cambiar nombre** que aparece en la parte superior derecha del IDE.
 
    - C#:
 

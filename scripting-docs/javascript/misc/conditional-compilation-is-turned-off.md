@@ -20,17 +20,17 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f2eabb900e24072c8f390061b5d6081de9bc889
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bcbf844ced2bb74ddfea9bd62d68877b7a3c969c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914247"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347351"
 ---
 # <a name="conditional-compilation-is-turned-off"></a>La compilación condicional está desactiva
 Se intentó utilizar una variable de compilación condicional sin la primera compilación condicional de activación en. Activar la compilación condicional indica la [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] compilador para interpretar los identificadores que comiencen con como variables de compilación condicional. Para ello a partir de su código con la instrucción condicional:  
   
-```  
+```js
 /*@cc_on @*/  
 ```  
   

@@ -1,8 +1,7 @@
 ---
-title: Vista previa de cambios de código en Visual Studio
+title: Vista previa de cambios de código
 ms.date: 12/16/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
@@ -11,12 +10,12 @@ f1_keywords:
 - vs.codefix.previewchanges
 ms.workload:
 - multiple
-ms.openlocfilehash: dfb9ff26ca20060a8df9a0b3a81783b60e0b46f3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: be664e48694ad1d0ea88a95a6b72e0355454d9db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942460"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832997"
 ---
 # <a name="preview-changes-window"></a>Ventana para obtener vista previa de cambios
 

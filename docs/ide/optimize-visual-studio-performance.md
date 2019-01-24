@@ -1,5 +1,6 @@
 ---
 title: Mejorar el rendimiento si Visual Studio es lento
+titleSuffix: ''
 ms.date: 04/11/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +11,14 @@ manager: douge
 f1_keywords:
 - vs.performancecenter
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d67ef259309750e115be0065a6eb2024e4cf1c8
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 9f60acd8e31f9a549406b4b8c40aacdd5327f335
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280356"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832627"
 ---
 # <a name="optimize-visual-studio-performance"></a>Optimización del rendimiento de Visual Studio
 

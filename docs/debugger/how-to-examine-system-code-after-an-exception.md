@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: examinar el código del sistema después de una excepción | Documentos de Microsoft'
-ms.custom: ''
+title: Examinar el código del sistema después de una excepción | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,31 +17,31 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8a1da63e47514771a868b69ee798f71265fdb42
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 3ea7f4223a6d61faa852d7985f77f4f672d26d17
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472470"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878645"
 ---
-# <a name="how-to-examine-system-code-after-an-exception"></a>Cómo: Examinar el código del sistema después de una excepción
+# <a name="how-to-examine-system-code-after-an-exception"></a>Procedimiento Examinar el código del sistema después de una excepción
 Cuando se produce una excepción, es posible que tenga que examinar el código de una llamada al sistema para determinar su causa. El procedimiento siguiente explica cómo hacerlo si no se tienen símbolos cargados para el código del sistema o si Sólo mi código está habilitado.  
   
 ### <a name="to-examine-system-code-following-an-exception"></a>Para examinar el código del sistema tras una excepción  
   
-1.  En el **pila de llamadas** ventana, contextual y, a continuación, haga clic en **mostrar código externo**.  
+1.  En la ventana **Pila de llamadas**, haga clic con el botón derecho y, a continuación, haga clic en **Mostrar código externo**.  
   
      Si Sólo mi código no está habilitado, esta opción no está disponible en el menú contextual y de forma predeterminada se muestra el código del sistema.  
   
-2.  Haga clic en los marcos del código externos que ahora aparecen en la **pila de llamadas** ventana.  
+2.  Haga clic con el botón derecho en los marcos del código externos que ahora aparecen en la ventana **Pila de llamadas**.  
   
-3.  Seleccione **cargar símbolos desde** y, a continuación, haga clic en **servidores de símbolos de Microsoft**.  
+3.  Elija **Cargar símbolos desde** y, a continuación, haga clic en **Servidores de símbolos de Microsoft**.  
   
     1.  Si Sólo mi código está habilitado, aparecerá un cuadro de diálogo. Indica que Sólo mi código se ha deshabilitado. Esto es necesario para entrar en las llamadas del sistema.  
   
-    2.  El **descargar símbolos públicos** aparece el cuadro de diálogo. Desaparecerá cuando finalice la descarga.  
+    2.  Aparece el cuadro de diálogo **Descargar símbolos públicos**. Desaparecerá cuando finalice la descarga.  
   
-4.  Ahora puede examinar el código del sistema en el **pila de llamadas** ventana y otras ventanas. Por ejemplo, hacer doble clic en un marco de pila de llamadas para ver el código de un origen o **desensamblado** ventana.  
+4.  Ahora puede examinar el código del sistema en la ventana **Pila de llamadas** y otras ventanas. Por ejemplo, puede hacer doble clic en un marco de pila de llamadas para ver el código en una ventana de origen de datos o **Desensamblado**.  
   
 ## <a name="see-also"></a>Vea también  
  [Administración de excepciones con el depurador](../debugger/managing-exceptions-with-the-debugger.md)

@@ -1,8 +1,7 @@
 ---
-title: Instalación de una página de inicio personalizada o cambio del elemento de inicio en Visual Studio
+title: Instalación de la página de inicio personalizada o cambio del elemento de inicio
 ms.date: 02/01/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.ToolsOptionsPages.Startup
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5e32a311bcd60542df80518c791b1fbe413a7b2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d3514effbe9b8affd870e46746b308216a80de33
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916612"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864795"
 ---
 # <a name="customize-the-start-page-for-visual-studio"></a>Personalizar la página principal de Visual Studio
 

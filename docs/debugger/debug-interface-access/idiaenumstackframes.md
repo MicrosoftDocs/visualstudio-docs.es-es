@@ -1,8 +1,6 @@
 ---
-title: IDiaEnumStackFrames | Documentos de Microsoft
-ms.custom: ''
+title: IDiaEnumStackFrames | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64539a1f10cfa2a263e36095cea40e58244ef6d8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 1aef0291b4048cf7b673ec9b2791b3b6b6c00846
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459797"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879658"
 ---
 # <a name="idiaenumstackframes"></a>IDiaEnumStackFrames
 Enumera los distintos marcos de pila disponible.  
@@ -34,10 +32,10 @@ Enumera los distintos marcos de pila disponible.
 ## <a name="remarks"></a>Comentarios  
   
 ## <a name="notes-for-callers"></a>Notas para los llamadores  
- Obtener esta interfaz mediante una llamada a la [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) o [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) métodos.  
+ Esta interfaz se obtiene mediante una llamada a la [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) o [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) métodos.  
   
 ## <a name="example"></a>Ejemplo  
- Este ejemplo muestra cómo obtener y usar el `IDiaEnumStackFrames` interfaz. Consulte la [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) interfaz para una implementación de la `PrintStackFrame` (función).  
+ En este ejemplo se muestra cómo obtener y usar el `IDiaEnumStackFrames` interfaz. Consulte la [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) interfaz para una implementación de la `PrintStackFrame` función.  
   
 ```C++  
 void DumpStackFrames(IDiaStackWalker*     pStackWalker,  
@@ -65,14 +63,14 @@ void DumpStackFrames(IDiaStackWalker*     pStackWalker,
 ```  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: Dia2.h  
+ Encabezado: dia2.h  
   
  Biblioteca: diaguids.lib  
   
- DLL: msdia80.dll  
+ Archivo DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Vea también  
- [Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Interfaces (SDK de acceso a la interfaz de depuración)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   
  [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)   
  [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)

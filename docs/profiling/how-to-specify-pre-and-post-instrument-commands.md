@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: Especificar comandos anteriores y posteriores a la instrumentación | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Especificar comandos anteriores y posteriores a la instrumentación | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.instrument
@@ -16,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8ce82bea823307e02b719fbfae43fe0697aca65
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: c80e16b3566fd0687b74c5a43363864038f88cbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844643"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861467"
 ---
-# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Cómo: Especificar comandos anteriores y posteriores a la instrumentación
+# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Procedimiento Especificar comandos anteriores y posteriores a la instrumentación
 
 Puede especificar los comandos que se ejecutan antes o después de que los archivos binarios en una sesión de rendimiento se instrumenten. Cualquier comando que se puede emitir desde la línea de comandos puede especificarse como un evento anterior o posterior a la instrumentación. Por ejemplo, puede especificar comandos que automaticen la nueva firma de un ensamblado con una clave de nombre seguro en un archivo por lotes que se ejecuta después de que se instrumenten los binarios.
 
@@ -31,21 +29,7 @@ Puede especificar comandos para todos los binarios instrumentados en la ejecuci�
 
 El directorio de trabajo en el que se ejecutan los comandos depende del sistema operativo en el que se ejecuta [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] y de la plataforma de destino de la aplicación de la que se generan perfiles.
 
- **Equipos de 32 bits**
-
-En equipos de 32 bits, el directorio de herramientas del generador de perfiles predeterminado es *unidad\Archivos de programa\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*.
-
-**Equipos de 64 bits**
-
-En los equipos de 64 bits, especifique la ruta de acceso según la plataforma de destino de la aplicación para la que se genera el perfil:
-
-- En las aplicaciones de 32 bits, el directorio de herramientas de generador de perfiles predeterminado es:
-
-     *unidad\Archivos de programa (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*
-
-- En las aplicaciones de 64 bits, el directorio de herramientas de generador de perfiles predeterminado es:
-
-     *unidad\Archivos de programa (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64*
+Para obtener la ruta de acceso a las herramientas de generación de perfiles, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
 ## <a name="to-specify-pre-instrument-commands"></a>Para especificar comandos anteriores a la instrumentación
 

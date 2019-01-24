@@ -1,9 +1,6 @@
 ---
 title: Diseño para Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 638cfc29ed2aa05a8576a2244b81f0625453076d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e82ed0f65a8546cc16decce84c3cca01237694d0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816704"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898757"
 ---
 # <a name="layout-for-visual-studio"></a>Diseño para Visual Studio
 La mayoría de los cuadros de diálogo de Visual Studio son [diseño del cuadro de diálogo de utilidad](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), que son el unthemed dicho estándar de seguimiento de cuadros de diálogo [principios de diseño del cuadro de diálogo de Windows Desktop](/windows/desktop/uxguide/win-dialog-box). Cuando Visual Studio se desplaza al actualizar su interfaz de usuario, algunos de los cuadros de diálogo más destacados tienen un nuevo diseño que ellos establece experiencias como definición de producto. Estos [diseño del cuadro de diálogo con temas](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) tienen un aspecto con temas.  
@@ -38,11 +35,11 @@ La mayoría de los cuadros de diálogo de Visual Studio son [diseño del cuadro 
   
  ![Espaciado de cuadro de diálogo para etiquetas encima de los controles](../../extensibility/ux-guidelines/media/0801-a_utilityspacingabove.png "0801 a_UtilitySpacingAbove")  
   
- **Figura 08.01-a: Espaciado directrices para los cuadros de diálogo de utilidad con etiquetas encima de los controles**  
+ **Figura 08.01-a: Directrices de espaciado para cuadros de diálogo de utilidad con etiquetas encima de los controles**  
   
  ![Espaciado de cuadro de diálogo para etiquetas a la izquierda de los controles](../../extensibility/ux-guidelines/media/0801-b_utilityspacingleft.png "0801 b_UtilitySpacingLeft")  
   
- **Figura 08.01-b: Espaciado directrices para los cuadros de diálogo de utilidad con etiquetas a la izquierda de los controles**  
+ **Figura 08.01-b: Directrices de espaciado para cuadros de diálogo de utilidad con etiquetas a la izquierda de los controles**  
   
 ### <a name="layout-details"></a>Detalles de diseño  
   
@@ -92,7 +89,7 @@ La mayoría de los cuadros de diálogo de Visual Studio son [diseño del cuadro 
   
  ![Anidar la alineación del control](../../extensibility/ux-guidelines/media/0801-e_controlalign.png "0801 e_ControlAlign")  
   
- **Figura 08.01-e: La alineación del control Nested**  
+ **Figura 08.01-e: Alineación de control anidadas**  
   
 #### <a name="control-width"></a>Ancho del control  
  El ancho de un cuadro de texto u otros controles similares debe ser no supere la entrada promedio del campo. La palabra inglesa promedio es de cinco caracteres. Por ejemplo, un cuadro de texto que se requiere un nombre de ruta de acceso larga debe ser siempre y cuando el diseño horizontal permite, mientras que una lista desplegable de nombres de plataforma solo deben tener una longitud que permite la entrada más larga.  
@@ -114,11 +111,11 @@ La mayoría de los cuadros de diálogo de Visual Studio son [diseño del cuadro 
   
   ![Botones horizontales Aceptar y cancelar](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801 f_HorizOKCan")  
   
-  **Figura 08.01-f: Botones Vertical Interior con horizontal Aceptar/Cancelar**  
+  **Figura 08.01-f: Botones verticales de interiores con horizontal Aceptar/Cancelar**  
   
   ![Botones verticales Aceptar y cancelar](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801 g_VertOKCan")  
   
-  **Figura 08.01-g: Horizontal interiores botones vertical Aceptar/Cancelar**  
+  **Figura 08.01-g: Botones horizontales de interiores con vertical Aceptar/Cancelar**  
   
 #### <a name="browse-button"></a>[Examinar...] botón  
  **[Examinar...]**  botones que siguen un cuadro de texto deben detallar "Examinar..." en su totalidad, incluidos los puntos suspensivos. Si el espacio es ajustado o hay varios **[Examinar...]**  botones en la pantalla, el botón se pueden reducir a solo los puntos suspensivos.  

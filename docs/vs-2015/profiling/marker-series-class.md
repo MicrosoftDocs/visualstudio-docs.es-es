@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency::diagnostic::marker_series class
 ms.assetid: b8445ed0-c512-4f92-b6b4-3d05c044f939
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a5791d338b204417d4d765b22a5050f4065faef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: bd82862800feacf92059a2d019e9f9988616d615
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203864"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754186"
 ---
 # <a name="markerseries-class"></a>marker_series (Clase)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -1,8 +1,6 @@
 ---
 title: Vista Marcas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.marks
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e3da19339a73f1fcedc22a0121dc716e581ad39
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: e162e234a5f0596073df12f7791cdb3e3126cf9c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237632"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873888"
 ---
 # <a name="marks-view"></a>Vista Marcas
 En la vista Marcas se muestran eventos ETW y de muestreo que se insertaron en la aplicación.  
@@ -48,4 +46,4 @@ En la vista Marcas se muestran eventos ETW y de muestreo que se insertaron en la
 ## <a name="see-also"></a>Vea también  
  [Información general sobre el informe de rendimiento](../profiling/performance-report-overview.md)   
  [Cómo: Recopilar datos de contadores de Windows](../profiling/how-to-collect-windows-counter-data.md)   
- [&#91;NIB&#93; Control de recolección de datos (ventana)](http://msdn.microsoft.com/en-us/98d740d8-459f-4605-bf04-fb17aafaaa8f)
+ [&#91;NIB&#93; Control de recolección de datos (ventana)](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)

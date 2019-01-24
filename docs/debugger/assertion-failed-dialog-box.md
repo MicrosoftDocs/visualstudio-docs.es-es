@@ -1,8 +1,6 @@
 ---
-title: Cuadro de diálogo Error de aserción | Documentos de Microsoft
-ms.custom: ''
+title: Cuadro de diálogo de error de aserción | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.assertions
@@ -22,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14be93cb60be53d98f13852ac6fcc1fd725e2d0e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 4d13d216a47d77d4948fe7ec28bffd0d750433a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456430"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824852"
 ---
 # <a name="assertion-failed-dialog-box"></a>Error de aserción (cuadro de diálogo)
 Una instrucción de aserción especifica una condición que se espera que sea cierta (valor true) en un determinado punto del programa. Si la condición no es cierta, la aserción produce un error, la ejecución del programa se interrumpe y aparece este cuadro de diálogo.  

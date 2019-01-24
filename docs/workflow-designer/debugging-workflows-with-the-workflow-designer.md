@@ -3,7 +3,6 @@ title: Depurar flujos de trabajo con el Diseñador de flujo de trabajo
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - Visual Studio Workflow Designer [WFD], debugging workflows
 - Workflow Designer [WFD], debugging workflows
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 482e13a91513151d7c4595e0a622f223751ae553
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 64574156bb1645a3d1f4e84f50a8e322751fd370
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755319"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923435"
 ---
 # <a name="debug-workflows-with-the-workflow-designer"></a>Depurar flujos de trabajo con el Diseñador de flujo de trabajo
 
@@ -32,18 +31,18 @@ Generalmente, los flujos de trabajo se depuran de la misma manera que los progra
 
 - Presione **F5** para iniciar la ejecución de una instancia del flujo de trabajo o continuar ejecutándose después de que se ha alcanzado un punto de interrupción.
 
-- Usar depuración remota. Para obtener información sobre el uso de la depuración remota, vea [Cómo: habilitar la depuración remota](/previous-versions/visualstudio/visual-studio-2010/febz73k0(v=vs.100)).
+- Usar depuración remota. Para obtener información sobre el uso de la depuración remota, vea [Cómo: Habilitar la depuración remota](/previous-versions/visualstudio/visual-studio-2010/febz73k0(v=vs.100)).
 
    > [!NOTE]
    > Si la aplicación de flujo de trabajo tiene como destino el x86 arquitectura y se hospeda en un equipo que ejecuta un sistema operativo de 64 bits, la depuración remota no funcionará a menos que Visual Studio está instalado en el equipo remoto o el destino de la aplicación de flujo de trabajo se cambia a  **Cualquier CPU**.
 
-## <a name="step-through-code"></a>Recorrer el código
+## <a name="step-through-code"></a>Examinar el código
 
-- **En el paso**: Ir a una actividad presionando **F11**. El depurador avanza paso a paso por todos los controladores definidos. Si no hay ningún controlador definido, puede ejecutar la actividad paso a paso o, en las actividades compuestas, que contienen otras actividades, puede entrar en la primera actividad en ejecución.
+- **El paso**: Ir a una actividad presionando **F11**. El depurador avanza paso a paso por todos los controladores definidos. Si no hay ningún controlador definido, puede ejecutar la actividad paso a paso o, en las actividades compuestas, que contienen otras actividades, puede entrar en la primera actividad en ejecución.
 
-- **Salida de paso:** salir paso a paso una actividad presionando **MAYÚS**+**F11**. Al salir paso a paso de una actividad, se ejecutan hasta el final la actividad actual y todas sus actividades del mismo nivel. A continuación, el depurador se interrumpe en el elemento primario de la actividad actual. Al salir paso a paso de un controlador del código, el depurador se interrumpe en la actividad a la que está asociado el controlador.
+- **Paso para salir:** Salir de una actividad presionando **MAYÚS**+**F11**. Al salir paso a paso de una actividad, se ejecutan hasta el final la actividad actual y todas sus actividades del mismo nivel. A continuación, el depurador se interrumpe en el elemento primario de la actividad actual. Al salir paso a paso de un controlador del código, el depurador se interrumpe en la actividad a la que está asociado el controlador.
 
-- **Paso a paso por**: paso a través de una actividad presionando **F10**. Al ejecutar paso a paso por procedimientos una actividad compuesta, el depurador se interrumpe en el primer elemento secundario ejecutable de la actividad compuesta. Al ejecutar paso a paso por procedimientos una actividad no compuesta, como <xref:System.Activities.Statements.Assign>, el depurador ejecuta la actividad y sus controladores asociados y se interrumpe en la actividad siguiente. Si la actividad que se ejecuta es la última actividad secundaria de una actividad compuesta, después de la ejecución el depurador se interrumpe en la actividad primaria.
+- **Paso a paso**: Paso a través de una actividad presionando **F10**. Al ejecutar paso a paso por procedimientos una actividad compuesta, el depurador se interrumpe en el primer elemento secundario ejecutable de la actividad compuesta. Al ejecutar paso a paso por procedimientos una actividad no compuesta, como <xref:System.Activities.Statements.Assign>, el depurador ejecuta la actividad y sus controladores asociados y se interrumpe en la actividad siguiente. Si la actividad que se ejecuta es la última actividad secundaria de una actividad compuesta, después de la ejecución el depurador se interrumpe en la actividad primaria.
 
 ## <a name="debug-with-f5"></a>Depurar con F5
 

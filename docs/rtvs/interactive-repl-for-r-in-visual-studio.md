@@ -3,19 +3,18 @@ title: REPL interactivo para R
 description: Describe cómo usar el entorno REPL interactivo para R en Studio, que está integrado en las ventanas del editor.
 ms.date: 06/28/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: a9e475e108fee9134699b0ee80e59fbf3f5eea32
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 7df300a57120bec2fc93ec7433a7ea9fdd3a2fc8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235540"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947080"
 ---
 # <a name="work-with-the-r-interactive-window"></a>Trabajar con la ventana interactiva de R
 

@@ -20,15 +20,15 @@ helpviewer_keywords:
 - visualizers, API reference
 ms.assetid: b9ff4ed0-9e80-49df-9016-a81189319afd
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 849b8d93722f7ca70ba161b297449dc33cfd1acc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f55e347b08f3813c21b651a1733c6c6a32597e9f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206354"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799111"
 ---
 # <a name="visualizer-api-reference"></a>Referencia de la API del visualizador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

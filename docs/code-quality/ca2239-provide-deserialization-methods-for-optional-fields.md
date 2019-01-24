@@ -2,7 +2,6 @@
 title: 'CA2239: Proporcionar métodos de deserialización para campos opcionales'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2239
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c1b8adb3454b7309eefa49ded129ce899c3cf58
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 572bf56c63e8fcbf9d78738d7cdffcf9540df158
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548587"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988969"
 ---
 # <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239: Proporcionar métodos de deserialización para campos opcionales
 
@@ -54,11 +53,11 @@ ms.locfileid: "45548587"
  [!code-vb[FxCop.Usage.OptionalFields#1](../code-quality/codesnippet/VisualBasic/ca2239-provide-deserialization-methods-for-optional-fields_1.vb)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA2236: Llamar a métodos de clase base en tipos ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
+ [LCA2236: Llamar a métodos de clase base en tipos ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
 
  [CA2240: Implementar ISerializable correctamente](../code-quality/ca2240-implement-iserializable-correctly.md)
 
- [CA2229: Implementar constructores de serialización](../code-quality/ca2229-implement-serialization-constructors.md)
+ [CA2229: implementar constructores de serialización](../code-quality/ca2229-implement-serialization-constructors.md)
 
  [CA2238: Implementar métodos de serialización correctamente](../code-quality/ca2238-implement-serialization-methods-correctly.md)
 
@@ -66,4 +65,4 @@ ms.locfileid: "45548587"
 
  [CA2237: Marcar los tipos ISerializable con SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
- [CA2120: Proteger los constructores de serializaciones](../code-quality/ca2120-secure-serialization-constructors.md)
+ [CA2120: Proteger los constructores de serialización](../code-quality/ca2120-secure-serialization-constructors.md)

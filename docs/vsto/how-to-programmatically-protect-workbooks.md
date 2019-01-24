@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: proteger libros mediante programación'
-ms.custom: ''
+title: Procedimiento Proteger libros mediante programación
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,19 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8999bb1e30958897f9b7732ab393650320ec77b1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b41eed7ee8b20cc807ada75ee0a4c1ccd1519fc6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673958"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900781"
 ---
-# <a name="how-to-programmatically-protect-workbooks"></a>Cómo: proteger libros mediante programación
+# <a name="how-to-programmatically-protect-workbooks"></a>Procedimiento Proteger libros mediante programación
   Puede proteger un libro de Microsoft Office Excel para que los usuarios no se pueden agregar o eliminar hojas de cálculo y también puede desproteger el libro mediante programación. Opcionalmente, puede especificar una contraseña, indicar si desea que la estructura protegida (por lo que los usuarios no pueden mover las hojas) y que indique si desea que estén protegidas las ventanas del libro.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- Proteger un libro no impide que los usuarios editen celdas. Para proteger los datos, debe proteger las hojas de cálculo. Para obtener más información, consulte [Cómo: proteger hojas de cálculo de mediante programación](../vsto/how-to-programmatically-protect-worksheets.md).  
+ Proteger un libro no impide que los usuarios editen celdas. Para proteger los datos, debe proteger las hojas de cálculo. Para obtener más información, vea [Cómo: Proteger mediante programación las hojas de cálculo](../vsto/how-to-programmatically-protect-worksheets.md).  
   
  Ejemplos de código siguientes usan una variable para contener una contraseña obtenida del usuario.  
   
@@ -70,8 +67,6 @@ ms.locfileid: "35673958"
   
 ## <a name="see-also"></a>Vea también  
  [Trabajar con libros](../vsto/working-with-workbooks.md)   
- [Cómo: proteger hojas de cálculo de mediante programación](../vsto/how-to-programmatically-protect-worksheets.md)   
- [Cómo: ocultar hojas de cálculo de mediante programación](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Cómo: Proteger mediante programación las hojas de cálculo](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [Cómo: Ocultar mediante programación las hojas de cálculo](../vsto/how-to-programmatically-hide-worksheets.md)   
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

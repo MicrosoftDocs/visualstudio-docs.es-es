@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: habilitar la configuración de seguridad de ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Habilitar la configuración de seguridad de ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f21b58a0ec9e8fe26cb02f72912fd23424cdfc7a
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: d736ca95b9095aa1db19445762d4734dc49677a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39150942"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967279"
 ---
-# <a name="how-to-enable-clickonce-security-settings"></a>Cómo: habilitar la configuración de seguridad de ClickOnce
+# <a name="how-to-enable-clickonce-security-settings"></a>Procedimiento Activación de la configuración de seguridad de ClickOnce
 Debe estar habilitada la seguridad de acceso del código para aplicaciones ClickOnce para publicar la aplicación. Esto se realiza automáticamente al publicar una aplicación mediante el Asistente para publicación.  
   
  En algunos casos, habilitar la seguridad de acceso del código puede afectar al rendimiento cuando se compila o depurar la aplicación; en estos casos, es posible que desea deshabilitar temporalmente la configuración de seguridad.  
@@ -59,6 +57,5 @@ Debe estar habilitada la seguridad de acceso del código para aplicaciones Click
     >  Cada vez que se publica la aplicación con el Asistente para publicación, se seleccionará esta casilla de verificación; debe desactivarla nuevo después de cada publicación correcta.  
   
 ## <a name="see-also"></a>Vea también  
- [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)   
+ [Protección de las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Seguridad de acceso del código para aplicaciones ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
- 

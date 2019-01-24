@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: agregar comentarios al texto en documentos mediante programación'
-ms.custom: ''
+title: Procedimiento Agregar comentarios al texto en documentos mediante programación
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -11,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - comments, adding to documents
 - documents [Office development in Visual Studio], adding comments
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ca0d15ee69bb58aae765c03c1233a78bfeeb119c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 677f0ba2cf02f4dd62759ea5f125c91290dc0762
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673970"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857032"
 ---
-# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Cómo: agregar comentarios al texto en documentos mediante programación
+# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Procedimiento Agregar comentarios al texto en documentos mediante programación
   La propiedad Comments de la clase de documento, agrega un comentario a un intervalo de texto en un documento de Microsoft Office Word.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -50,7 +47,5 @@ ms.locfileid: "35673970"
  Para cambiar las iniciales del usuario que Word agrega a los comentarios, use la propiedad <xref:Microsoft.Office.Interop.Word._Application.UserInitials%2A> .  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: quitar todos los comentarios de documentos mediante programación](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)   
+ [Cómo: Quitar todos los comentarios de documentos mediante programación](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)   
  [Elemento host Document](../vsto/document-host-item.md)  
-  
-  

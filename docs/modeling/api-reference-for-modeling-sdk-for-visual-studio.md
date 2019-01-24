@@ -1,5 +1,5 @@
 ---
-title: Referencia de API para modelar el SDK de Visual Studio
+title: Referencia de API para modelar el SDK
 ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 21da4ff34c26d28944af5edcb14e40b2db0d94d7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5f5ecea7313610ff89616cd1c9373130d22a4176
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896974"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930329"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Referencia de API para modelar el SDK de Visual Studio
 

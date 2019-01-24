@@ -5,25 +5,24 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 9549a9d51fa2d86f60564e842bfc5e13a5f6523c
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 7fbd275e3e946461559db41668a749cd6631ba09
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224341"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296312"
 ---
 # <a name="customizing-the-build-system"></a>Personalización del sistema de compilación
 
 MSBuild es un motor de compilación desarrollado por Microsoft que permite la compilación de aplicaciones de .NET principalmente. El marco de trabajo Mono además tiene su propia implementación del motor de compilación de Microsoft, denominado **xbuild**. Pero xbuild ha quedado desfasado en favor de MSBuild en todos los sistemas operativos.
 
-**MSBuild** se usa principalmente como sistema de compilación para los proyectos de Visual Studio para Mac. 
+**MSBuild** se usa principalmente como sistema de compilación para los proyectos de Visual Studio para Mac.
 
-MSBuild toma un conjunto de entradas, como archivos de código fuente, y las transforma en salidas, como archivos ejecutables. Consigue este resultado mediante la invocación de herramientas como el compilador. 
-
+MSBuild toma un conjunto de entradas, como archivos de código fuente, y las transforma en salidas, como archivos ejecutables. Consigue este resultado mediante la invocación de herramientas como el compilador.
 
 ## <a name="msbuild-file"></a>Archivo de MSBuild
 
-MSBuild usa un archivo XML, denominado archivo de proyecto, que define los *elementos* que forman parte del proyecto (por ejemplo, los recursos de imagen) y las *propiedades* necesarias para compilar el proyecto. Este archivo de proyecto siempre tiene una extensión de archivo que termina en `proj`, como `.csproj` para proyectos de C#. 
+MSBuild usa un archivo XML, denominado archivo de proyecto, que define los *elementos* que forman parte del proyecto (por ejemplo, los recursos de imagen) y las *propiedades* necesarias para compilar el proyecto. Este archivo de proyecto siempre tiene una extensión de archivo que termina en `proj`, como `.csproj` para proyectos de C#.
 
 ### <a name="viewing-the-msbuild-file"></a>Visualización del archivo de MSBuild
 
@@ -61,7 +60,7 @@ Hay dos tipos de datos fundamentales en MSBuild: *elementos* y *propiedades*, qu
 
 Las propiedades son pares clave-valor que se usan para almacenar valores que afectan a la compilación, como las opciones del compilador.
 
-Se establecen mediante un elemento PropertyGroup y pueden contener cualquier número de elementos PropertiesGroups, que pueden contener cualquier número de propiedades. 
+Se establecen mediante un elemento PropertyGroup y pueden contener cualquier número de elementos PropertiesGroups, que pueden contener cualquier número de propiedades.
 
 Por ejemplo, el elemento PropertyGroup de una aplicación de consola sencilla podría parecerse al siguiente XML:
 
@@ -83,7 +82,7 @@ Con la sintaxis `$()` se puede hacer referencia a propiedades desde expresiones.
 
 Los elementos proporcionan una manera de trabajar con entradas del sistema de compilación, como listas o conjuntos, y suelen representar a archivos. Cada elemento tiene un *tipo* de elemento, una *especificación* de elemento y *metadatos* opcionales arbitrarios. Tenga en cuenta que MSBuild no funciona en elementos individuales, sino que toma todos los elementos de un tipo dado, lo que se denomina un *conjunto* de elementos.
 
-Los elementos se crean al declarar un `ItemGroup`. Puede haber cualquier número de elementos ItemGroups, que pueden contener cualquier número de elementos. 
+Los elementos se crean al declarar un `ItemGroup`. Puede haber cualquier número de elementos ItemGroups, que pueden contener cualquier número de elementos.
 
 Por ejemplo, el siguiente fragmento de código crea las pantallas de inicio de iOS. Las pantallas de inicio tienen el tipo de compilación `BundleResource`, con la especificación como ruta de acceso a la imagen:
 
@@ -104,5 +103,5 @@ Por ejemplo, el siguiente fragmento de código crea las pantallas de inicio de i
 
 Los siguientes recursos pueden usarse para obtener información más detallada sobre MSBuild:
 
-* [Información general sobre MSDN](https://msdn.microsoft.com/library/dd393574.aspx)
-* [Conceptos de MSDN](https://msdn.microsoft.com/library/dd637714.aspx)
+* [Información general sobre MSBuild](/visualstudio/msbuild/msbuild)
+* [Conceptos de MSBuild](/visualstudio/msbuild/msbuild-concepts)

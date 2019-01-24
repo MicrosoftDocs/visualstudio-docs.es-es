@@ -1,5 +1,5 @@
 ---
-title: Parámetros de ejecución de pruebas de carga en Visual Studio
+title: Parámetros de ejecución de pruebas de carga
 ms.date: 10/19/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,21 +9,22 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: d0a3311c90638b3fd34b9d651b89af2bed07f421
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 73c561cf7f79345751b62b53ec3b7da4f74e2e52
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817405"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860210"
 ---
 # <a name="load-test-run-settings-properties"></a>Propiedades de los parámetros de ejecución de las pruebas de carga
 
 Los parámetros de ejecución de una prueba de carga determinan otras opciones de configuración, incluidas la duración de la prueba, el nivel de detalle de la colección de resultados y los conjuntos de contadores que se recopilan cuando se ejecuta la prueba. Puede crear y almacenar varios parámetros de ejecución para cada prueba de carga, y seleccionar una configuración determinada para utilizarla durante la ejecución de la prueba. Cuando se crea la prueba de carga mediante el **Asistente para prueba de carga nueva**, se agrega un parámetro de ejecución inicial a la prueba de carga.
 
- En las tablas siguientes se describen las diversas propiedades de los parámetros de ejecución de pruebas de carga. Puede modificar estas propiedades para cumplir los requisitos concretos de las pruebas de carga.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Para obtener más información, vea [Configurar los parámetros de ejecución de pruebas de carga](../test/configure-load-test-run-settings.md).
+En las tablas siguientes se describen las diversas propiedades de los parámetros de ejecución de pruebas de carga. Puede modificar estas propiedades para cumplir los requisitos concretos de las pruebas de carga.
+
+Para obtener más información, vea [Configurar los parámetros de ejecución de pruebas de carga](../test/configure-load-test-run-settings.md).
 
 ## <a name="general-properties"></a>Propiedades generales
 
@@ -42,7 +43,7 @@ Los parámetros de ejecución de una prueba de carga determinan otras opciones d
 |Propiedad.|de esquema JSON|
 |-|----------------|
 |**Máximos registros de prueba**|Especifica el número máximo de registros de prueba que se van a guardar para la prueba de carga. Cuando se alcance el valor especificado para el número máximo de registros de prueba, la prueba de carga dejará de recopilar registros. Por tanto, los registros se recopilarán al principio de la prueba, no al final. La ejecución de la prueba de carga continuará hasta que se complete.|
-|**Frecuencia de guardado del registro para pruebas completadas**|Especifica la frecuencia con la que se escribirá el registro de prueba. El número indica que en el registro de prueba se guardará una prueba de cada número de pruebas especificado. Por ejemplo, si se especifica el valor diez, significa que se escribirá en el registro de prueba la décima, la vigésima, la trigésima, y así sucesivamente. Si se establece el valor en 0, se especifica que no se guardará ningún registro de prueba.<br /><br /> Para obtener más información, vea [Cómo: Especificar la frecuencia con que se guardan los registros de pruebas](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
+|**Frecuencia de guardado del registro para pruebas completadas**|Especifica la frecuencia con la que se escribirá el registro de prueba. El número indica que en el registro de prueba se guardará una prueba de cada número de pruebas especificado. Por ejemplo, si se especifica el valor diez, significa que se escribirá en el registro de prueba la décima, la vigésima, la trigésima, y así sucesivamente. Si se establece el valor en 0, se especifica que no se guardará ningún registro de prueba.|
 |**Guardar registro si la prueba no es correcta**|Valor booleano que determina si se guardan registros de prueba si se produce un error en una prueba de carga. De manera predeterminada, es `True`.<br /><br /> Para obtener más información, vea [Cómo: Especificar si los errores de las pruebas se guardan en los registros de pruebas](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 
  Para obtener más información, vea [Modificar la configuración de registro de pruebas de carga](../test/modify-load-test-logging-settings.md).
@@ -52,7 +53,7 @@ Los parámetros de ejecución de una prueba de carga determinan otras opciones d
 |Propiedad.|de esquema JSON|
 |-|----------------|
 |**Tipo de almacenamiento**|Manera de almacenar los contadores de rendimiento obtenidos en una prueba de carga. Las opciones son las siguientes:<br /><br /> -   **Base de datos**: necesita una base de datos SQL que tenga un **Almacén de resultados de pruebas de carga**.<br />-   **Ninguno**.|
-|**Almacenamiento de detalles de tiempo**|Se usa para determinar qué detalles se almacenan en el **Almacén de resultados de pruebas de carga**. Hay tres valores disponibles:<br /><br /> -   **AllIndividualDetails**: recopila y almacena valores de tiempo individuales de cada prueba, transacción y página que se haya ejecutado o emitido durante la prueba de carga en el **Almacén de resultados de pruebas de carga**. Es necesario si piensa usar el **Diagrama de actividad del usuario virtual** del **Analizador de pruebas de carga**.<br />     Para obtener más información, vea [Analizar la actividad de usuario virtual de prueba de carga en la vista Detalles del Analizador de prueba de carga](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).<br />-   **None**: no recopila ningún valor de tiempo individual. Este es el valor predeterminado para Visual Studio 2013 Update 4 y versiones posteriores.<br />-   **StatisticsOnly**: recopila y almacena solamente estadísticas, en lugar de almacenar los valores de tiempo individuales de cada prueba, transacción y página que se haya ejecutado o emitido durante la prueba de carga en el **Almacén de resultados de pruebas de carga**.<br /><br /> Para más información, vea [Cómo: Especificar la propiedad Almacenamiento de detalles de tiempo para el parámetro de ejecución de una prueba de carga](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).|
+|**Almacenamiento de detalles de tiempo**|Se usa para determinar qué detalles se almacenan en el **Almacén de resultados de pruebas de carga**. Hay tres valores disponibles:<br /><br /> -   **AllIndividualDetails**: recopila y almacena valores de tiempo individuales de cada prueba, transacción y página que se haya ejecutado o emitido durante la prueba de carga en el **Almacén de resultados de pruebas de carga**. Es necesario si piensa usar el **Diagrama de actividad del usuario virtual** del **Analizador de pruebas de carga**.<br />     Para obtener más información, vea [Analizar la actividad de usuario virtual de prueba de carga en la vista Detalles del Analizador de prueba de carga](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).<br />-   **None**: no recopila ningún valor de tiempo individual. Este es el valor predeterminado para Visual Studio 2013 Update 4 y versiones posteriores.<br />-   **StatisticsOnly**: recopila y almacena solamente estadísticas, en lugar de almacenar los valores de tiempo individuales de cada prueba, transacción y página que se haya ejecutado o emitido durante la prueba de carga en el **Almacén de resultados de pruebas de carga**.<br /><br /> Para obtener más información, vea [Cómo: Especificar la propiedad Almacenamiento de detalles de tiempo](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).|
 
 ## <a name="sql-tracing-properties"></a>Propiedades de seguimiento SQL
 
@@ -70,7 +71,7 @@ Los parámetros de ejecución de una prueba de carga determinan otras opciones d
 |**Iteraciones de prueba**|Especifica el número total de pruebas individuales que se ejecutarán antes de completarse la prueba de carga. Esta propiedad solo se aplica cuando la propiedad "Usar iteraciones de prueba" es `True`.|
 |**Usar iteraciones de prueba**|Si Usar iteraciones de prueba es `True`, la prueba de carga se ejecutará hasta que el número de pruebas individuales completadas dentro de la prueba de carga alcance el número especificado por la propiedad "Iteraciones de prueba". En este caso, se omiten los valores de las opciones temporales: "Duración de la preparación", "Duración de la ejecución" y "Duración del enfriamiento". Si "Usar iteraciones de prueba" es `False`, se aplicarán todas las opciones de tiempo y se omitirá "Iteraciones de prueba".|
 
- Para más información, consulte [Cómo: Especificar el número de iteraciones de prueba de un parámetro de ejecución](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
+ Para obtener más información, vea [Cómo: Especificar el número de iteraciones de prueba en los parámetros de ejecución de una prueba de carga](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
 
 ## <a name="timing-properties"></a>Propiedades de sincronización
 
@@ -78,7 +79,7 @@ Los parámetros de ejecución de una prueba de carga determinan otras opciones d
 |-|----------------|
 |**Duración del enfriamiento**|Duración del período de enfriamiento, expresado en formato de hh:mm:ss. Puede que algunas pruebas individuales de una prueba de carga sigan en ejecución cuando finalice la prueba de carga. Durante el período de enfriamiento, esas pruebas pueden continuar hasta completarse o hasta que finaliza dicho período. De manera predeterminada no se aplica un período de enfriamiento, y las pruebas individuales finalizan cuando lo hace la prueba de carga de acuerdo con el valor de Duración de la ejecución.|
 |**Duración de la ejecución**|Duración de la prueba, en formato hh:mm:ss.|
-|**Frecuencia de muestreo**|Intervalo en el que se capturarán valores de contador de rendimiento, en formato hh:mm:ss.<br /><br /> Para más información, vea [Cómo: Especificar la velocidad de muestra de los parámetros de ejecución de pruebas de carga](../test/how-to-specify-the-sample-rate-for-a-load-test.md).|
+|**Frecuencia de muestreo**|Intervalo en el que se capturarán valores de contador de rendimiento, en formato hh:mm:ss.<br /><br /> Para obtener más información, vea [Cómo: Especificar la frecuencia de muestreo](../test/how-to-specify-the-sample-rate-for-a-load-test.md).|
 |**Duración de la preparación**|Período que transcurre desde que comienza la prueba hasta que empiezan a registrarse las muestras de datos, en formato hh:mm:ss. Se utiliza con frecuencia para cargar por pasos los usuarios virtuales hasta alcanzar cierto nivel de carga antes de registrar los valores de ejemplo. Los valores de muestra que se capturan antes de que concluya el período de preparación se muestran en el **Analizador de pruebas de carga**.|
 
 ## <a name="webtest-connections-properties"></a>Propiedades de conexiones WebTest
@@ -89,7 +90,7 @@ Los parámetros de ejecución de una prueba de carga determinan otras opciones d
 |**Tamaño del grupo de conexiones WebTest**|Especifica el número máximo de conexiones que pueden realizarse entre el agente de la prueba de carga y el servidor Web. Solo se aplica al modelo **Grupo de conexiones**.|
 
 ##  <a name="change-run-setting-properties"></a>Cambiar las propiedades de los parámetros de ejecución
- Puede agregar más parámetros de ejecución a la prueba de carga con distintas configuraciones de propiedades para poder realizar la prueba de carga en condiciones diferentes. Por ejemplo, puede agregar una nueva configuración de pruebas y utilizar una velocidad de muestra diferente o especificar una duración más larga. Solo puede usar un parámetro de ejecución cada vez y debe especificar cuál desea usar marcándolo como activo. Para obtener un ejemplo, vea [Cómo: Seleccionar el parámetro de ejecución activo de una prueba de carga](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
+ Puede agregar más parámetros de ejecución a la prueba de carga con distintas configuraciones de propiedades para poder realizar la prueba de carga en condiciones diferentes. Por ejemplo, puede agregar una nueva configuración de pruebas y utilizar una velocidad de muestra diferente o especificar una duración más larga. Solo puede usar un parámetro de ejecución cada vez y debe especificar cuál desea usar marcándolo como activo. Como ejemplo, vea [Cómo: Seleccionar el parámetro de ejecución activo de una prueba de carga](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
 ### <a name="to-change-run-settings"></a>Para cambiar los parámetros de ejecución:
 

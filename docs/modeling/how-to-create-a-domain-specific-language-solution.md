@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Crear soluciones de lenguajes específicos de dominio'
+title: Procedimiento Crear una solución de lenguajes específicos de dominio
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,15 +14,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 339b0e9a3637ef375ee3ceee8c5fb84c2670c34f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aeeacdd9fc52f26a14930f0756be463ac4f87eec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838249"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943777"
 ---
-# <a name="how-to-create-a-domain-specific-language-solution"></a>Cómo: Crear soluciones de lenguajes específicos de dominio
+# <a name="how-to-create-a-domain-specific-language-solution"></a>Procedimiento Crear una solución de lenguajes específicos de dominio
 Un lenguaje específico de dominio (DSL) se crea mediante el uso de una solución de Visual Studio especializada.
 
 ## <a name="prerequisites"></a>Requisitos previos
@@ -134,4 +133,4 @@ El valor predeterminado es un nombre compuesto de su empresa y los nombres de pr
 ## <a name="see-also"></a>Vea también
 
 - [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)
-- [Glosario de las herramientas de lenguajes específicos de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glosario de las herramientas de lenguajes específicos de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

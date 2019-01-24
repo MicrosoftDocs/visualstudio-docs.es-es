@@ -15,12 +15,12 @@ ms.assetid: 060b857f-daf5-43ea-bb51-abf9368e1e91
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 906e5a3c4cf504a24b6e86d9c0be04c27662170d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a208aef491cc735ded202154aa9697305ca282c9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285864"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753850"
 ---
 # <a name="asynctaskmethodbuilderlttresultgtobjectidfordebugger-property"></a>AsyncTaskMethodBuilder&lt;TResult&gt;. Propiedad ObjectIdForDebugger
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

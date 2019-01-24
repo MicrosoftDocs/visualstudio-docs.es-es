@@ -1,6 +1,5 @@
 ---
-title: Manifiestos de recursos | Documentos de Microsoft
-ms.custom: ''
+title: Manifiesto desde recursos | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
@@ -9,38 +8,38 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 514135e5c6ba932d7b3b4319dd39c1df4e8cb212
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f1affa200527e770dc87c51c4bb6f7b8a088fcc0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134293"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959382"
 ---
-# <a name="manifest-from-resources"></a>Manifiestos de recursos
-El manifiesto de la herramienta de recursos es una aplicación de consola que toma una lista de recursos de imagen (archivos .png o .xaml) y genera un archivo .imagemanifest que permite que esas imágenes para su uso con el servicio de imágenes de Visual Studio. Además, esta herramienta puede usarse para agregar imágenes a un .imagemanifest existente. Esta herramienta es útil para agregar compatibilidad con valores altos de PPP y temas para imágenes a una extensión de Visual Studio. El archivo .imagemanifest generado debe estar incluido en y se ha implementado como parte de una extensión de Visual Studio (VSIX).  
+# <a name="manifest-from-resources"></a>Manifest from Resources
+El manifiesto de la herramienta de recursos es una aplicación de consola que toma una lista de recursos de imagen (.png o .xaml archivos) y genera un archivo .imagemanifest que permite que esas imágenes para su uso con el servicio de imágenes de Visual Studio. Además, esta herramienta puede usarse para agregar imágenes a un .imagemanifest existente. Esta herramienta es útil para agregar compatibilidad con valores altos de PPP y temas para las imágenes a una extensión de Visual Studio. El archivo generado .imagemanifest debe incluido en e implementarse como parte de una extensión de Visual Studio (VSIX).  
   
 ## <a name="how-to-use-the-tool"></a>Cómo usar la herramienta  
  **Sintaxis**  
   
- Resources ManifestFromResources:\<Dir1 >;\< Img1 > /assembly:\<AssemblyName > \<Args opcional >  
+ ManifestFromResources Resources:\<Dir1 >;\< Img1 > /assembly:\<AssemblyName > \<Args opcional >  
   
  **Argumentos**  
   
 ||||  
 |-|-|-|  
 |**Nombre del conmutador**|**Notas**|**Obligatorio u opcional**|  
-|Resources|Una lista delimitada por punto y coma de imágenes o directorios. Esta lista debería contener siempre la lista completa de las imágenes que se incluirán en el manifiesto. Si solo se proporciona una lista parcial, se perderán las entradas no incluidas.<br /><br /> Si un archivo de recursos determinado es una franja de imagen, la herramienta dividirá lo imágenes independientes antes de agregar cada subimagen al manifiesto.<br /><br /> Si la imagen es un archivo .png, le recomendamos que dar formato al nombre similar al siguiente para que la herramienta puede rellenar los atributos derecho de la imagen: \<nombre >.\< Ancho >. \<Alto >. png.|Obligatorio|  
+|Resources|Una lista delimitada por punto y coma de las imágenes o directorios. Esta lista debería contener siempre la lista completa de las imágenes que se incluirán en el manifiesto. Si solo se proporciona una lista parcial, se perderán las entradas no incluidas.<br /><br /> Si un archivo de recursos determinado es una tira de imagen, la herramienta dividirla en imágenes independientes antes de agregar cada subimagen en el manifiesto.<br /><br /> Si la imagen es un archivo .png, se recomienda que formatear el nombre de esta manera para que la herramienta puede rellenar los atributos de la imagen adecuados: \<Nombre >. \<Ancho >. \<Alto >. png.|Obligatorio|  
 |/Assembly|El nombre del ensamblado administrado (sin incluir la extensión) o la ruta de acceso en tiempo de ejecución del ensamblado nativo que hospeda los recursos (con respecto a la ubicación de tiempo de ejecución del manifiesto).|Obligatorio|  
-|/ manifest|El nombre que asigne al archivo .imagemanifest generado. Esto también puede incluir una ruta de acceso absoluta o relativa para crear el archivo en una ubicación diferente. El nombre predeterminado coincide con el nombre del ensamblado.<br /><br /> Valor predeterminado: \<directorio actual >\\< ensamblado\>.imagemanifest|Optional|  
-|/guidName|El nombre que asigne al símbolo GUID para todas las imágenes en el manifiesto generado.<br /><br /> Valor predeterminado: AssetsGuid|Optional|  
-|/rootPath|La ruta de acceso raíz que debe eliminarse antes de crear los URI de recurso administrado. (Esta marca es ayudar a los casos donde la herramienta obtiene incorrecto, por lo que los recursos que no se pudo cargar la ruta de acceso URI relativa).<br /><br /> Valor predeterminado: \<directorio actual >|Optional|  
-|/recursive|Si establece esta marca indica a la herramienta de forma recursiva los directorios de búsqueda en el argumento Resources. Si se omite esta marca se producirá una búsqueda top-nivel solo de directorios.|Optional|  
-|/isNative|Establezca esta marca cuando el argumento de ensamblado es una ruta de acceso para un ensamblado nativo. Omitir esta marca cuando el argumento de ensamblado es el nombre de un ensamblado administrado. (Vea la sección Notas para obtener información adicional acerca de esta marca).|Optional|  
-|/newGuids|Si establece esta marca indica a la herramienta para crear un nuevo valor para el símbolo GUID de las imágenes en lugar de combinar el empezando por el manifiesto existente.|Optional|  
-|/newIds|Si establece esta marca indica a la herramienta para crear nuevos valores de símbolo de Id. de cada imagen en lugar de combinar los valores del manifiesto del existente.|Optional|  
-|/noLogo|Al establecer este indicador detiene la información de producto y de copyright de impresión.|Optional|  
-|/?|Imprimir la información de ayuda.|Optional|  
-|/help|Imprimir la información de ayuda.|Optional|  
+|/ manifest|El nombre que asigne al archivo .imagemanifest generado. Esto también puede incluir una ruta de acceso absoluta o relativa para crear el archivo en una ubicación diferente. El nombre predeterminado coincide con el nombre del ensamblado.<br /><br /> Predeterminado: \<Directorio actual >\\< ensamblado\>.imagemanifest|Optional|  
+|/guidName|El nombre para el símbolo GUID para todas las imágenes en el manifiesto generado.<br /><br /> Predeterminado: AssetsGuid|Optional|  
+|/rootPath|La ruta de acceso raíz que debe eliminarse antes de crear los URI de recurso administrado. (Esta marca es ayudar con los casos donde la herramienta obtiene la ruta de acceso relativa de URI incorrecto, por lo que los recursos no pueda cargarse).<br /><br /> Predeterminado: \<Directorio actual >|Optional|  
+|/recursive|Al establecer esta marca indica a la herramienta de forma recursiva todos los directorios de búsqueda en el argumento Resources. Si se omite esta marca dará como resultado una búsqueda top-multinivel sólo de directorios.|Optional|  
+|/isNative|Establezca esta marca cuando el argumento de ensamblado es una ruta de acceso para un ensamblado nativo. Esta marca se omite cuando el argumento de ensamblado es el nombre de un ensamblado administrado. (Consulte la sección Notas para obtener más información acerca de esta marca).|Optional|  
+|/newGuids|Al establecer esta marca indica a la herramienta para crear un nuevo valor para el símbolo GUID de las imágenes en lugar de combinar el uno del manifiesto existente.|Optional|  
+|/newIds|Al establecer esta marca indica a la herramienta para crear nuevos valores de símbolo de identificador para cada imagen en lugar de combinar los valores del manifiesto existente.|Optional|  
+|/noLogo|Al establecer esta marca detiene la información de producto y copyright de impresión.|Optional|  
+|/?|Imprimir información de ayuda.|Optional|  
+|/help|Imprimir información de ayuda.|Optional|  
   
  **Ejemplos**  
   
@@ -52,17 +51,17 @@ El manifiesto de la herramienta de recursos es una aplicación de consola que to
   
 ## <a name="notes"></a>Notas  
   
--   La herramienta solo admite archivos .png y XAML. Se omitirá cualquier otro tipo de imagen o un archivo. Se genera una advertencia para todos los tipos no compatibles que se encuentra durante el análisis de los recursos. Si no se admite imágenes se encuentran cuando finalice la herramienta de análisis de los recursos, se generará un error  
+-   La herramienta solo admite archivos .png y XAML. Se omitirá cualquier otro tipo de imagen o un archivo. Se genera una advertencia para todos los tipos no compatibles que encuentra durante el análisis de los recursos. Si no se admite las imágenes se encuentran cuando finalice la herramienta de análisis de los recursos, se generará un error  
   
--   Siguiendo el formato sugerido para las imágenes PNG, la herramienta establecerá el valor de tamaño y dimensión para el .png al tamaño especificado por el formato, incluso si difiere del tamaño real de la imagen.  
+-   Siguiendo el formato sugerido para imágenes PNG, la herramienta establecerá el valor de tamaño y la dimensión para el .png al tamaño especificado de formato, incluso si es diferente del tamaño real de la imagen.  
   
--   Se puede omitir el formato de ancho/alto para imágenes PNG, pero la herramienta leerá real ancho/alto de la imagen y úselos para el valor de tamaño y dimensión de la imagen.  
+-   Se puede omitir el formato de ancho y alto para las imágenes PNG, pero la herramienta leerá real ancho/alto de la imagen y úselos para el valor de tamaño y la dimensión de la imagen.  
   
--   Cuando se ejecute esta herramienta en la misma franja de imagen varias veces para el mismo .imagemanifest generará entradas duplicadas de manifiesto, porque la herramienta intenta dividir la franja de imágenes en imágenes independientes y agregarlas al manifiesto existente.  
+-   Ejecutar esta herramienta en la franja de imágenes mismo varias veces para el mismo .imagemanifest producirá las entradas duplicadas del manifiesto, porque la herramienta intenta dividir la franja de imágenes en imágenes independientes y agregarlos al manifiesto existente.  
   
--   Solo se debe realizar la combinación (omitiendo los /newGuids o /newIds) para los manifiestos generados por la herramienta. Manifiestos que se han personalizado o generados por otros medios no se pueden combinar correctamente.  
+-   Combinar (omitiendo /newGuids o /newIds) solo debe realizarse para los manifiestos generados por la herramienta. Los manifiestos que se hayan adaptado o generados por otros medios no se pueden combinar correctamente.  
   
--   Manifiestos que se generan para ensamblados nativos podrían sea necesario editar manualmente después de la generación para hacer que los símbolos de identificador coincide con el recurso de identificadores de archivo .rc del ensamblado nativo.  
+-   Los manifiestos que se generan para los ensamblados nativos puede que tenga que editar manualmente después de la generación para que los símbolos de Id. coincida con los identificadores de archivo .rc del ensamblado nativo de recursos.  
   
 ## <a name="sample-output"></a>Resultados del ejemplo  
  **Manifiesto de imagen simple**  
@@ -91,9 +90,9 @@ El manifiesto de la herramienta de recursos es una aplicación de consola que to
 </ImageManifest>  
 ```  
   
- **Manifiesto de imagen en una banda de imagen**  
+ **Manifiesto de imagen para una banda de imagen**  
   
- Un manifiesto de imagen en una banda de imagen será similar a este archivo .xml:  
+ Un manifiesto de imagen para una banda de imagen será similar a este archivo .xml:  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  

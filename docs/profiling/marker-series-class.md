@@ -1,8 +1,6 @@
 ---
 title: marker_series (Clase) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::marker_series
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e638d9316b46a8600fe2e88ca5e4a6611fa1ec4d
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: e8ecc6a14cce80197c1221734aadb4ce7e6758cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843840"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869825"
 ---
 # <a name="markerseries-class"></a>Clase marker_series
 Representa un canal de la serie de eventos generados por un único proveedor.  
@@ -54,7 +52,7 @@ class marker_series;
 ## <a name="requirements"></a>Requisitos  
  **Encabezado:** *cvmarkersobj.h*  
   
- **Espacio de nombres:** Concurrency::diagnostic  
+ **Espacio de nombres**: Concurrency::diagnostic  
   
 ## <a name="see-also"></a>Vea también  
  [espacio de nombres de diagnóstico](../profiling/diagnostic-namespace.md)

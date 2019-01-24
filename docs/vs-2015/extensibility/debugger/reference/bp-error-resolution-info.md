@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_RESOLUTION_INFO | Microsoft Docs
+title: BP_ERROR_RESOLUTION_INFO | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,12 +17,12 @@ ms.assetid: a6b83242-5728-4716-80f3-840c96d59c6c
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ffe45810a54bb1cc7182e957b2876e8190f2c5ce
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b70490cebb2e2ac62268d4419e1484f3ecfa4029
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812314"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745302"
 ---
 # <a name="bperrorresolutioninfo"></a>BP_ERROR_RESOLUTION_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Describe la resolución de un punto de interrupción de error, incluida la ubica
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-typedef struct _BP_ERROR_RESOLUTION_INFO {   
+typedef struct _BP_ERROR_RESOLUTION_INFO {   
    BPERESI_FIELDS         dwFields;  
    BP_RESOLUTION_LOCATION bpResLocation;  
    IDebugProgram2*        pProgram;  
@@ -43,7 +43,7 @@ typedef struct _BP_ERROR_RESOLUTION_INFO {
 ```  
   
 ```csharp  
-public struct BP_ERROR_RESOLUTION_INFO {   
+public struct BP_ERROR_RESOLUTION_INFO {   
    public uint                   dwFields;  
    public BP_RESOLUTION_LOCATION bpResLocation;  
    public IDebugProgram2         pProgram;  

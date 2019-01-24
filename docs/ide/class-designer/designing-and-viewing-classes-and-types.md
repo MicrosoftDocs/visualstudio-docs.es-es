@@ -2,7 +2,6 @@
 title: Usar el Diseñador de clases
 ms.date: 05/08/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.diagram
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4e4cf8e21f3f053783b1f7b70dcc51f2fd4ef2a
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 6533827c3aa962cf8856752c0482678684e65755
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447965"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853429"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>Diseñar y ver clases y tipos con el Diseñador de clases
 
@@ -31,11 +30,11 @@ Diseñe, visualice y refactorice clases y otros tipos del código con el **Dise�
 
 ## <a name="what-you-can-do-with-class-diagrams"></a>Qué puede hacer con los diagramas de clases
 
-- **Diseñar**: edite el código del proyecto modificando el diagrama de clases. Agregar nuevos elementos y eliminar los que no quiera. Los cambios se reflejan en el código.
+- **Diseñar**: Edite el código del proyecto al modificar el diagrama de clases. Agregar nuevos elementos y eliminar los que no quiera. Los cambios se reflejan en el código.
 
-- **Visualizar**: comprenda la estructura del proyecto viendo las clases del proyecto en un diagrama. Personalice el diagrama para poder centrarse en los detalles del proyecto que más le importan. Guarde el diagrama para utilizarlo más adelante en demostraciones o documentación.
+- **Visualizar**: Comprenda la estructura del proyecto al ver las clases del proyecto en un diagrama. Personalice el diagrama para poder centrarse en los detalles del proyecto que más le importan. Guarde el diagrama para utilizarlo más adelante en demostraciones o documentación.
 
-- **Refactorizar**: reemplace métodos, cambie el nombre de los identificadores, refactorice parámetros e implemente interfaces y clases abstractas.
+- **Refactorizar**: Reemplace métodos, cambie el nombre de identificadores, refactorice parámetros e implemente interfaces y clases abstractas.
 
 ## <a name="view-types-and-relationships"></a>Ver tipos y relaciones
 
@@ -50,9 +49,9 @@ Los diagramas de clases pueden ayudarle a entender la estructura de clases de lo
 
 El primer paso para presentar la información del proyecto es crear un diagrama de clases que muestre lo que quiera mostrar. Para más información, vea [Agregar un diagrama de clases](how-to-add-class-diagrams-to-projects.md). Puede crear varios diagramas de clases para un proyecto y utilizarlos para mostrar una vista única del proyecto, un subconjunto determinado de tipos del proyecto o un subconjunto determinado de miembros de tipos.
 
-Además de definir lo que muestra cada diagrama de clases, puede cambiar la forma en la que se presenta la información. Para más información, vea [Cómo: Personalizar los diagramas de clases](how-to-customize-class-diagrams.md).
+Además de definir lo que muestra cada diagrama de clases, puede cambiar la forma en la que se presenta la información; para obtener más información, vea [Cómo: Personalizar diagramas de clases](how-to-customize-class-diagrams.md).
 
-Después de ajustar uno o varios diagramas de clases, puede copiarlos a documentos de Microsoft Office e imprimirlos o exportarlos como archivos de imagen. Para más información, vea [Cómo: Copiar elementos del diagrama de clases en un documento de Microsoft Office](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md), [Cómo: Imprimir diagramas de clases](how-to-print-class-diagrams.md) y [Cómo: Exportar los diagramas de clases como imágenes](how-to-export-class-diagrams-as-images.md).
+Después de ajustar uno o varios diagramas de clases, puede copiarlos a documentos de Microsoft Office e imprimirlos o exportarlos como archivos de imagen. Para obtener más información, vea [Cómo: Copiar elementos del diagrama de clases en un documento de Microsoft Office](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md), [Cómo: Imprimir diagramas de clases](how-to-print-class-diagrams.md) y [Cómo: Exportar diagramas de clases como imágenes](how-to-export-class-diagrams-as-images.md).
 
 > [!NOTE]
 > El Diseñador de clases no realiza un seguimiento de la ubicación de los archivos de origen, por lo que cambiar la estructura del proyecto o mover los archivos de origen del proyecto puede hacer que el Diseñador de clases pierda de vista el tipo, especialmente el tipo de origen de una typedef, de clases base o de tipos de asociación. Puede que reciba un error, como **El Diseñador de clases no puede mostrar este tipo**. Si lo recibe, arrastre otra vez el código fuente modificado o reubicado al diagrama de clases para volver a mostrarlo.

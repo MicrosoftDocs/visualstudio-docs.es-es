@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo::Skip | Documentos de Microsoft
+title: IEnumDebugPropertyInfo::Skip | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d91e80ca103addf4f726a373813b379197298109
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 72445473a1fe090a468010b33381e8751f1bbc65
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821076"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344751"
 ---
 # <a name="ienumdebugpropertyinfoskip"></a>IEnumDebugPropertyInfo::Skip
 Omite un número especificado de `DebugPropertyInfo` estructuras en una secuencia de enumeración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT Skip(  
    ULONGcelt  
 );  

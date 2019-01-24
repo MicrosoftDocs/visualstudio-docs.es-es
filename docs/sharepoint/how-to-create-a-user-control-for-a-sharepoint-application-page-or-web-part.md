@@ -1,13 +1,8 @@
 ---
-title: 'Cómo: crear un Control de usuario para una página de aplicación de SharePoint o elemento Web | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Crear un Control de usuario para una página de aplicación de SharePoint o elemento Web | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,15 +13,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 98333049f711e9d28d7adb1ad0c17cfc8514e4ad
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9ed93a92f50920382e551521a6889ee2ed42f7e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119387"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820753"
 ---
-# <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>Cómo: crear un control de usuario para un elemento de página o web de la aplicación de SharePoint
-  Puede crear controles de usuario personalizados que proporcionan funcionalidad personalizada para la solución de SharePoint, y puede reutilizar esa funcionalidad dentro del proyecto. Puede incluir controles de usuario en un elemento web o página de aplicación, agregar más controles ASP.NET y controles de SharePoint, así como definir propiedades y métodos para el control. Para obtener más información acerca de los controles de usuario, consulte [crear controles reutilizables para elementos web o páginas de aplicación](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md) y [controles de usuario y controles de servidor de SharePoint](http://blogs.msdn.com/b/kaevans/archive/2011/04/28/user-controls-and-server-controls-in-sharepoint.aspx).  
+# <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>Procedimiento Crear un control de usuario para un elemento de página o web de la aplicación de SharePoint
+  Puede crear controles de usuario personalizados que proporcionan funcionalidad personalizada para la solución de SharePoint, y puede reutilizar esa funcionalidad dentro del proyecto. Puede incluir controles de usuario en un elemento web o página de aplicación, agregar más controles ASP.NET y controles de SharePoint, así como definir propiedades y métodos para el control. Para obtener más información acerca de los controles de usuario, consulte [crear controles reutilizables para elementos web o páginas de aplicación](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md) y [controles de usuario y controles de servidor de SharePoint](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/).  
   
 ### <a name="to-create-a-user-control-for-sharepoint"></a>Para crear un control de usuario para SharePoint  
   
@@ -51,7 +46,7 @@ ms.locfileid: "37119387"
   
      Visual Studio agrega varias carpetas y archivos al proyecto. Para obtener más información acerca de estos archivos, consulte [crear controles reutilizables para elementos web o páginas de aplicación](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).  
   
-     De forma predeterminada, el archivo de control de usuario aparece en el **origen** la vista del Diseñador de Visual Web Developer. En esta vista, puede modificar el marcador XML del control. Puede cambiar a **diseño** ver si desea diseñar el control visualmente arrastrando controles desde el **cuadro de herramientas**. Consulte [vista Diseño, el Diseñador de páginas Web](http://msdn.microsoft.com/en-us/d8f2270a-357d-40a4-9b39-1a3f2366216d).  
+     De forma predeterminada, el archivo de control de usuario aparece en el **origen** la vista del Diseñador de Visual Web Developer. En esta vista, puede modificar el marcador XML del control. Puede cambiar a **diseño** ver si desea diseñar el control visualmente arrastrando controles desde el **cuadro de herramientas**. Consulte [vista Diseño, el Diseñador de páginas Web](/previous-versions/aspnet/ms178149\(v\=vs.100\)).  
   
 7.  Si desea controlar los eventos que se producen en el control, agregue código al archivo de código del control de usuario.  
   
@@ -61,4 +56,3 @@ ms.locfileid: "37119387"
  [Crear controles reutilizables para elementos web o páginas de aplicación](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)   
  [Crear páginas de aplicación para SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
  [Crear elementos web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
-  

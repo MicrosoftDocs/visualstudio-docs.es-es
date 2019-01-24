@@ -1,9 +1,6 @@
 ---
 title: 'Tutorial: Esquematización | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 740ed444770a440b54fe61b0c8ec8189691fe9a1
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 7de78a60dd7de129eb2626e414ce6ec44bb20ce3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566939"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827528"
 ---
-# <a name="walkthrough-outlining"></a>Tutorial: Esquematización
+# <a name="walkthrough-outlining"></a>Tutorial: esquematizar
 Configurar características basadas en lenguaje como mediante la definición de los tipos de regiones de texto que desea expandir o contraer la esquematización. Puede definir regiones en el contexto de un servicio de lenguaje, o definir su propio tipo de contenido y la extensión de nombre de archivo y la definición de la región se aplican sólo a ese tipo o aplicar las definiciones de la región a un tipo de contenido existente (por ejemplo, "text"). En este tutorial se muestra cómo definir y mostrar las regiones de esquematización.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
@@ -30,7 +27,7 @@ Configurar características basadas en lenguaje como mediante la definición de 
   
 ### <a name="to-create-a-mef-project"></a>Para crear un nuevo proyecto de MEF  
   
-1.  Crear un proyecto de VSIX. Nombre de la solución `OutlineRegionTest`.  
+1.  Crear un proyecto de VSIX. Asigne a la solución el nombre `OutlineRegionTest`.  
   
 2.  Agregar una plantilla de elemento de clasificador de Editor para el proyecto. Para obtener más información, consulte [crear una extensión con una plantilla de elementos de editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   

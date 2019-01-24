@@ -1,8 +1,6 @@
 ---
-title: Mensajes de comandos de menú | Documentos de Microsoft
-ms.custom: ''
+title: Mensajes de comandos de menú | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Messages menu commands
@@ -12,21 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08ba5fc9fa71e71d7b840f31ae9cc17206ac7b6b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 5d2ff50180a0818f3ef9399747d69d75a55198c1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481728"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861947"
 ---
 # <a name="messages-menu-commands"></a>Comandos del menú Mensajes
-El **mensajes** menú proporciona comandos para controlar las vistas de mensaje.  
+El **mensajes** menú proporciona comandos para controlar las vistas de mensajes.  
   
- **Iniciar o detener el registro**  
- Inicia o detiene la vista de mensajes.  
+ **Iniciar/Detener registro**  
+ Inicia o detiene la vista de mensaje.  
   
  **Opciones de registro**  
- Se abre la **opciones de mensaje** cuadro de diálogo, donde puede especificar criterios de búsqueda del mensaje.  
+ Se abre el **opciones de mensaje** cuadro de diálogo, donde puede especificar criterios de búsqueda del mensaje.  
   
  **Borrar registro**  
  Borra el contenido de la vista activa de mensajes.

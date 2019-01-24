@@ -1,20 +1,19 @@
 ---
-title: Escribir pruebas unitarias para C/C++ en Visual Studio
+title: Escritura de pruebas unitarias para C/C++
 ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: e79b65628193c7b90a03b2e1141dfc45b6b0829f
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: eff82db5a7ca5c5a18c7d89017dfae892d209fbf
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879231"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270052"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Escribir pruebas unitarias para C/C++ en Visual Studio
 
@@ -38,7 +37,7 @@ Los proyectos de prueba unitaria de C++ admiten [CodeLens](../ide/find-code-chan
 
 **Visual Studio 2017, versión 15.5**
 
-- **Google Test** se incluye como un componente predeterminado de la carga de trabajo de **Desarrollo para el escritorio con C++**. Tiene una plantilla de proyecto que se puede agregar a una solución a través del menú contextual **Agregar nuevo proyecto** del nodo de solución en el **Explorador de soluciones**, así como opciones que se pueden configurar por medio de **Herramientas** > **Opciones**. Para más información, vea [Cómo usar Google Test para C++ en Visual Studio](how-to-use-google-test-for-cpp.md).
+- **Google Test** se incluye como un componente predeterminado de la carga de trabajo de **Desarrollo para el escritorio con C++**. Tiene una plantilla de proyecto que se puede agregar a una solución mediante el menú contextual **Agregar nuevo proyecto** del nodo de solución en el **Explorador de soluciones**, así como opciones que se pueden configurar mediante **Herramientas** > **Opciones**. Para más información, vea [Cómo usar Google Test para C++ en Visual Studio](how-to-use-google-test-for-cpp.md).
 
 - **Boost.Test** se incluye como un componente predeterminado de la carga de trabajo de **Desarrollo para el escritorio con C++**. Se integra con el **Explorador de pruebas**, pero actualmente no tiene plantilla de proyecto, por lo que se debe configurar manualmente. Para más información, vea [Cómo usar Boost.Test para C++ en Visual Studio](how-to-use-boost-test-for-cpp.md).
 
@@ -73,7 +72,7 @@ Después, en el archivo *.cpp* de prueba unitaria, agregue una directiva `#inclu
 ### <a name="write-test-methods"></a>Escribir métodos de prueba
 
 > [!NOTE]
-> En esta sección se muestra la sintaxis del marco de pruebas unitarias de Microsoft para C y C++. Esto se documenta aquí: [Referencia de API Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Para obtener documentación sobre Google Test, vea [Google Test Primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Si le interesa Boost.Test, vea [Boost Test Library: The Unit Test Framework](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html) (Biblioteca de Boost.Test: el marco de pruebas unitarias).
+> En esta sección se muestra la sintaxis del marco de pruebas unitarias de Microsoft para C y C++. Se documenta aquí: [Referencia de API Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Para obtener documentación sobre Google Test, vea [Google Test Primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Para Boost.Test, vea [Boost Test library: The unit test framework](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html) (Biblioteca de Boost.Test: el marco de pruebas unitarias).
 
 El archivo *.cpp* del proyecto de prueba tiene un método y una clase de código auxiliar definidos automáticamente para que pueda ver un ejemplo de cómo escribir código de prueba. Observe que las firmas usan las macros TEST_CLASS y TEST_METHOD, lo que hace que los métodos se puedan detectar desde la ventana **Explorador de pruebas**.
 
@@ -119,7 +118,7 @@ Para ver procedimientos recomendados relativos a las pruebas unitarias, vea [Con
 
 ## <a name="use-codelens"></a>Uso de CodeLens
 
-**Solo la versión 15.7 de las ediciones Professional y Enterprise de Visual Studio 2017**: [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) le permite ver rápidamente el estado de una prueba unitaria sin salir del editor de código. Puede inicializar CodeLens para un proyecto de prueba unitaria de C++ de cualquiera de las siguientes maneras:
+**Visual Studio 2017 versión 15.7 (solo las ediciones Professional y Enterprise)**: [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) permite ver rápidamente el estado de una prueba unitaria sin salir del editor de código. Puede inicializar CodeLens para un proyecto de prueba unitaria de C++ de cualquiera de las siguientes maneras:
 
 - Editar y compilar el proyecto de prueba o la solución.
 - Recompilar el proyecto o la solución.

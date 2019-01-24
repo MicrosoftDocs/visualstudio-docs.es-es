@@ -1,8 +1,7 @@
 ---
-title: Ver la pila de llamadas en el depurador de Visual Studio | Microsoft Docs
-ms.custom: H1Hack27Feb2017
-ms.date: 04/06/2017
-ms.technology: vs-ide-debug
+title: Ver la pila de llamadas en el depurador | Microsoft Docs
+ms.custom: seodec18
+ms.date: 10/29/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.callstack
@@ -30,116 +29,118 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d390ba4cd47297c6d653cb68693439fd01c16815
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: fe9ba9f39a88a968524517a6c23f16ffa1aff0d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853615"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987484"
 ---
-# <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>Ver la pila de llamadas y usar la ventana Pila de llamadas en el depurador de Visual Studio
+# <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Ver la pila de llamadas y usar la ventana Pila de llamadas en el depurador
 
-Mediante el uso de la **pila de llamadas** ventana, puede ver las llamadas de función o procedimiento que están actualmente en la pila. El **pila de llamadas** ventana muestra el orden en el que obtener se llaman los métodos y funciones. La pila de llamadas es una buena manera para examinar y entender el flujo de ejecución de una aplicación.
-  
-Cuando [símbolos de depuración](#bkmk_symbols) no están disponibles para una parte de una pila de llamadas, el **pila de llamadas** ventana podría no ser capaz de mostrar la información correcta para esa parte de la pila de llamadas. Si esto sucede, aparece la notación siguiente:  
-  
+Mediante la ventana **Pila de llamadas**, puede ver las llamadas a las funciones o procedimientos que están actualmente en la pila. En la ventana **Pila de llamadas** se muestra el orden en el que se llama a los métodos y las funciones. La pila de llamadas es una buena forma de examinar y entender el flujo de ejecución de una aplicación.
+
+Cuando [símbolos de depuración](#bkmk_symbols) no están disponibles para una parte de una pila de llamadas, el **pila de llamadas** ventana no pueda mostrar información correcta para esa parte de la pila de llamadas, mostrar en su lugar:
+
 `[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]`
 
 > [!NOTE]
-> El **pila de llamadas** ventana es similar a la perspectiva de depuración de algunos IDE como Eclipse. 
-> 
+> La ventana **Pila de llamadas** es similar a la perspectiva de depuración de algunos IDE, como Eclipse.
+
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos aquí, en función de los valores de configuración o de edición activos. Para cambiar la configuración, seleccione **importar y exportar configuraciones** en el **herramientas** menú.  Consulte [personalizar el IDE](../ide/personalizing-the-visual-studio-ide.md)
-  
-## <a name="view-the-call-stack-while-in-the-debugger"></a>Ver la pila de llamadas en el depurador 
-  
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos aquí, en función de los valores de configuración o de edición activos. Para cambiar la configuración, seleccione **Importar y exportar configuraciones** en el menú **Herramientas**.  Consulte [Restablecer configuración](../ide/environment-settings.md#reset-settings).
+
+## <a name="view-the-call-stack-while-in-the-debugger"></a>Ver la pila de llamadas en el depurador
+
 - Durante la depuración, en el **depurar** menú, seleccione **Windows > pila de llamadas**.
 
   ![Ventana Pila de llamadas](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
 
-Una flecha amarilla identifica el marco de pila donde está ubicado actualmente el puntero de ejecución. De forma predeterminada, éste es el marco de pila cuya información aparece en el origen, **variables locales**, **automático**, **inspección**, y **desensamblado** windows . Si desea cambiar el contexto del depurador a otro marco en la pila, puede hacerlo [cambiar a otro marco de pila](#bkmk_switch).   
-  
-## <a name="display-non-user-code-in-the-call-stack-window"></a>Mostrar código de no usuario en la ventana Pila de llamadas  
-  
--   Haga clic en el **pila de llamadas** ventana y seleccione **mostrar código externo**.
+Una flecha amarilla identifica el marco de pila donde está ubicado actualmente el puntero de ejecución. De forma predeterminada, la información de este marco de pila aparece en el origen, **variables locales**, **automático**, **inspección**, y **desensamblado** windows. Para cambiar el contexto del depurador para otro marco en la pila, [cambiar a otro marco de pila](#bkmk_switch).
 
-No de usuario es cualquier código que no se muestra cuando [solo mi código](../debugger/just-my-code.md) está habilitado. En código administrado, marcos de código que no es de usuario están ocultos de forma predeterminada. Aparece la notación siguiente en lugar de los marcos de código que no es de usuario:  
-  
-**[\<Código externo >]**  
-  
+## <a name="display-non-user-code-in-the-call-stack-window"></a>Mostrar código de no usuario en la ventana Pila de llamadas
+
+-   Haga clic con el botón derecho en la ventana **Pila de llamadas** y seleccione **Mostrar código externo**.
+
+No de usuario es cualquier código que no se muestra cuando [solo mi código](../debugger/just-my-code.md) está habilitado. En código administrado, marcos de código que no es de usuario están ocultos de forma predeterminada. Aparece la notación siguiente en lugar de los marcos de código que no es de usuario:
+
+`[<External Code>]`
+
 ## <a name="bkmk_switch"></a> Cambiar a otro marco de pila (cambiar el contexto del depurador)
-  
+
 1.  En el **pila de llamadas** (ventana), con el botón secundario, la pila de marco cuyo código y los datos que desea ver.
 
-    O bien, haga doble clic en un marco en el **pila de llamadas** ventana para cambiar a marco seleccionado. 
-  
-2.  Seleccione **cambiar a marco**.  
-  
-     Una flecha verde con una cola rizada aparece junto al marco de pila que seleccionó. El puntero de ejecución permanece en el marco original, que sigue marcado con la flecha amarilla. Si selecciona **paso** o **continuar** desde el **depurar** menú, la ejecución continuará en el marco original, no en el marco seleccionado.  
-  
-## <a name="view-the-source-code-for-a-function-on-the-call-stack"></a>Ver el código fuente de una función en la pila de llamadas  
-  
--   En el **pila de llamadas** (ventana), con el botón secundario, la función cuyo código fuente desee ver y seleccione **ir al código fuente**.
+    O bien, haga doble clic en un marco en el **pila de llamadas** ventana para cambiar a ese marco.
 
-## <a name="run-to-a-specific-function-from-the-call-stack-window"></a>Ejecutar una función concreta desde la ventana Pila de llamadas  
-  
--  En el **pila de llamadas** ventana, seleccione la función, haga clic en y elija **ejecutar hasta el Cursor**.  
-  
-## <a name="set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>Establecer un punto de interrupción en el punto de salida de una llamada de función  
-  
+2.  Seleccione **Cambiar a marco**.
+
+     Una flecha verde con una cola rizada aparece junto al marco de pila que seleccionó. El puntero de ejecución permanece en el marco original, que sigue marcado con la flecha amarilla. Si selecciona **Paso** o **Continuar** en el menú **Depurar**, la ejecución continuará en el marco original, no en el seleccionado.
+
+## <a name="view-the-source-code-for-a-function-on-the-call-stack"></a>Ver el código fuente de una función en la pila de llamadas
+
+-   En la ventana **Pila de llamadas**, haga clic con el botón derecho en la función cuyo código fuente quiera ver y seleccione **Ir a código fuente**.
+
+## <a name="run-to-a-specific-function-from-the-call-stack-window"></a>Ejecutar una función concreta desde la ventana Pila de llamadas
+
+-  En el **pila de llamadas** ventana, seleccione la función, haga clic en y, a continuación, elija **ejecutar hasta el Cursor**.
+
+## <a name="set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>Establecer un punto de interrupción en el punto de salida de una llamada de función
+
 -   Consulte [establecer un punto de interrupción en una función de la pila de llamadas](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window).
 
-## <a name="display-calls-to-or-from-another-thread"></a>Muestra las llamadas a o desde otro subproceso  
-  
--   Haga clic en el **pila de llamadas** ventana y seleccione **incluir llamadas a otros subprocesos**.   
-  
-## <a name="visually-trace-the-call-stack"></a>Realizar un seguimiento la pila de llamadas  
+## <a name="display-calls-to-or-from-another-thread"></a>Muestra las llamadas a o desde otro subproceso
 
-Si usa Visual Studio Enterprise (solo), puede ver mapas de código para la pila de llamadas durante la depuración.
+-   Haga clic con el botón derecho en la ventana **Pila de llamadas** y seleccione **Incluir llamadas a otros subprocesos o desde estos**.
 
-- En el **pila de llamadas** ventana, abra el menú contextual. Elija **Mostrar pila de llamadas en mapa de código**. (Teclado: **CTRL** + **MAYÚS** + **`**)  
-  
-    Para obtener información detallada, consulte [asignar métodos en la pila de llamadas durante la depuración](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
+## <a name="visually-trace-the-call-stack"></a>Realizar un seguimiento la pila de llamadas
+
+En Visual Studio Enterprise (solo), puede ver mapas de código para la pila de llamadas durante la depuración.
+
+- En la ventana **Pila de llamadas**, abra el menú contextual. Elija **Mostrar pila de llamadas en mapa de código** (**Ctrl** + **MAYÚS** + **`**).
+
+    Para obtener más información, consulte [asignar métodos en la pila de llamadas durante la depuración](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
 ![Mostrar pila de llamadas en mapa de código](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
-  
-## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack"></a>Ver el código de desensamblado de una función en la pila de llamadas  
-  
--   En el **pila de llamadas** (ventana), con el botón secundario, la función cuyo código de desensamblado desee ver y seleccione **ir al desensamblado**.    
 
-## <a name="change-the-optional-information-displayed"></a>Cambiar la información opcional mostrada  
-  
--   Haga clic en el **pila de llamadas** ventana y establezca o desactive **mostrar \<**  _la información que desee_ **>**.  
-  
-## <a name="bkmk_symbols"></a> Cargar símbolos para un módulo
-En el **pila de llamadas** ventana, puede cargar los símbolos para el código que no tiene actualmente cargados los símbolos de depuración. Estos símbolos pueden ser .NET Framework o símbolos del sistema descargados de los servidores de símbolos públicos de Microsoft, o símbolos en una ruta de acceso de símbolos en el equipo que está depurando.  
-  
-Consulte [especificar símbolos (.pdb) y los archivos de origen](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
-  
-### <a name="to-load-symbols"></a>Para cargar símbolos  
-  
-1.  En el **pila de llamadas** (ventana), con el botón secundario, el marco de pila para los símbolos que no se han cargado. Se oscurecerá el marco.  
-  
-2.  Seleccione **cargar símbolos** y, a continuación, haga clic en **servidores de símbolos de Microsoft** (si está disponible) o vaya a la ruta de acceso de símbolos.  
-  
-### <a name="to-set-the-symbol-path"></a>Para configurar la ruta de acceso de símbolos  
-  
-1.  En el **pila de llamadas** ventana, elija **configuración de símbolos** en el menú contextual.  
-  
-     El **opciones** abre el cuadro de diálogo y el **símbolos** se muestra la página.  
-  
-2.  Haga clic en **Lores**.  
-  
-3.  En el **opciones** diálogo cuadro, haga clic en el icono de carpeta.  
-  
-     En el **ubicaciones de archivo (.pdb) de símbolos** cuadro, aparece un cursor.  
-  
-4.  Escriba un nombre de la ruta de acceso del directorio a la ubicación de los símbolos en el equipo que está depurando. Para la depuración local y remota, se trata de una ruta de acceso en el equipo local.
-  
-5.  Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Opciones**.  
-  
-## <a name="see-also"></a>Vea también  
- [Código mixto e información no mostrada en la ventana Pila de llamadas](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)  
- [Visualización de datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
- [Especificar símbolos (.pdb) y los archivos de origen](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
- [Usar puntos de interrupción](../debugger/using-breakpoints.md)
+## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Ver el código de desensamblado de una función en la pila de llamadas (C#, C++, Visual Basic, F#)
+
+-   En la ventana **Pila de llamadas**, haga clic con el botón derecho en la función cuyo código de desensamblado quiera ver y seleccione **Ir al desensamblado**.
+
+## <a name="change-the-optional-information-displayed"></a>Cambiar la información opcional mostrada
+
+-   Haga clic en el **pila de llamadas** ventana y establezca o desactive **mostrar \<**  _la información que desee_ **>**.
+
+## <a name="bkmk_symbols"></a> Cargar símbolos para un módulo (C#, C++, Visual Basic, F#)
+
+En la ventana **Pila de llamadas**, puede cargar los símbolos de depuración para el código que no los tenga cargados. Estos símbolos pueden ser .NET Framework o símbolos del sistema descargados de los servidores de símbolos públicos de Microsoft, o símbolos en una ruta de acceso de símbolos en el equipo que está depurando.
+
+Consulte [Specify symbol (.pdb) and source files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) (Especificación de símbolo (.pdb) y archivos de origen).
+
+### <a name="to-load-symbols"></a>Para cargar símbolos
+
+1.  En el **pila de llamadas** (ventana), con el botón secundario, el marco de pila para los símbolos que no se han cargado. Se oscurecerá el marco.
+
+2.  Seleccione **cargar símbolos** y, a continuación, seleccione **servidores de símbolos de Microsoft** (si está disponible), o busque la ruta de acceso de símbolos.
+
+### <a name="to-set-the-symbol-path"></a>Para configurar la ruta de acceso de símbolos
+
+1.  En la ventana **Pila de llamadas**, elija **Configuración de símbolos** en el menú contextual.
+
+     Se abre el cuadro de diálogo **Opciones** y se muestra la página **Símbolos**.
+
+2.  Seleccione **Lores**.
+
+3.  En el cuadro de diálogo **Opciones**, haga clic en el icono de carpeta.
+
+     En el cuadro **Ubicaciones del archivo de símbolos (.pdb)**, aparece un cursor.
+
+4.  Escriba una ruta de acceso de directorio a la posición del símbolo en el equipo que está depurando. Para la depuración local y remota, se trata de una ruta de acceso en el equipo local.
+
+5.  Seleccione **Aceptar** para cerrar el **opciones** cuadro de diálogo.
+
+## <a name="see-also"></a>Vea también
+
+- [Código mixto e información no mostrada en la ventana Pila de llamadas](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)
+- [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)
+- [Especificación de archivos de código fuente y símbolos (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [Usar puntos de interrupción](../debugger/using-breakpoints.md)

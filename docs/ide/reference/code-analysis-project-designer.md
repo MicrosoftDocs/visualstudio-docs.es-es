@@ -2,7 +2,6 @@
 title: Análisis de código, Diseñador de proyectos
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs29106
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09b711ecd6d12e424afed00296d8d95bd93cbb10
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7bc06740c56beac2dc092fb421a92f9d59d044d2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944679"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860143"
 ---
 # <a name="code-analysis-project-designer"></a>Análisis de código, Diseñador de proyectos
 Contiene la herramienta de análisis de código que puede optar por ejecutar en su código. La herramienta notifica información sobre los ensamblados, como las infracciones de las reglas de programación y de diseño estipuladas en las instrucciones de diseño de Microsoft .NET Framework.
@@ -78,4 +77,4 @@ Contiene la herramienta de análisis de código que puede optar por ejecutar en 
 
 - [Análisis de código de las advertencias de código administrado](../../code-quality/code-analysis-for-managed-code-warnings.md)
 - [Introducción al análisis de código para código administrado](../../code-quality/code-analysis-for-managed-code-overview.md)
-- [Tutorial: Analizar código administrado en previsión de defectos de código](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+- [Tutorial: Análisis de código administrado en previsión de defectos de código](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

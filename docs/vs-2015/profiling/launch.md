@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f81bde5c-3394-4b79-a315-c2f6491689b3
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2f9d3b735eb0633c5faf9b4b43ba15f6ec4a2d86
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3d8f745a775f8cad3932f20525b09fe55fb857ee
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195889"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791844"
 ---
 # <a name="launch"></a>Launch
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
  Inicializa la sesión del generador de perfiles de línea de comandos y establece el método de generación de perfiles especificado.  
   
  **GlobalOn** y **GlobalOff**  
- Reanuda (**GlobalOn**) o detiene (**GlobalOff**) la generación de perfiles, pero no finaliza la sesión de generación de perfiles.  
+ Reanuda la generación de perfiles de (**GlobalOn**) o detiene la de (**GlobalOff**), pero no finaliza la sesión de generación de perfiles.  
   
  **ProcessOn:** `PID` y **ProcessOff**:`PID`  
  Reanuda la generación de perfiles de (**ProcessOn**) o detiene la de (**ProcessOff**) para el proceso especificado.  

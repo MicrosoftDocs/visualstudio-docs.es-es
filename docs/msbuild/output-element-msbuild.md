@@ -1,8 +1,6 @@
 ---
 title: Elemento Output (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Output
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df135901c0272777c3d76220218042e4dc41a145
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 238e863481360671c77b7994fb1d98ac3ee96589
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817072"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853273"
 ---
 # <a name="output-element-msbuild"></a>Elemento Output (MSBuild)
 Almacena valores de salida de tarea en elementos y propiedades.  

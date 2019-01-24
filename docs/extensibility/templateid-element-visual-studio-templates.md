@@ -1,10 +1,8 @@
 ---
 title: TemplateID (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#TemplateID
 helpviewer_keywords:
@@ -16,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7e431e603d0b2844431b5bffaedf7fa82bd7132
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8bbd9bddaeab9d073affb35a1b275f0eef7afe99
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138751"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874075"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>TemplateID (Elemento, Plantillas de Visual Studio)
 Especifica un identificador para una plantilla de elementos que se clasifica por categorías en un grupo de plantillas de elementos por el [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) elemento.  
@@ -52,14 +50,14 @@ Especifica un identificador para una plantilla de elementos que se clasifica por
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .|  
   
 ## <a name="text-value"></a>Valor de texto  
- A `string` que representa un identificador para una plantilla de elementos que se clasifica por categorías en un grupo de plantillas de elementos por el `TemplateGroupID` elemento.  
+ Un `string` que representa un identificador para una plantilla de elementos que se clasifica por categorías en un grupo de plantillas de elementos por el `TemplateGroupID` elemento.  
   
 ## <a name="remarks"></a>Comentarios  
  `TemplateID` es un elemento opcional.  
   
- Si un archivo .vstemplate omite el `TemplateID` elemento, la [nombre](../extensibility/name-element-visual-studio-templates.md) elemento se utiliza como identificador para la plantilla.  
+ Si un archivo .vstemplate omite el `TemplateID` elemento, el [nombre](../extensibility/name-element-visual-studio-templates.md) elemento se usa como el identificador de la plantilla.  
   
- El valor de la `TemplateID` elemento se usa junto con el registro del sistema de proyecto (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Projects\\) para filtrar las plantillas que aparecen en la **Agregar nuevo elemento** cuadro de diálogo.  
+ El valor de la `TemplateID` elemento se usa junto con el registro del sistema de proyecto (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Projects\\) para filtrar plantillas que aparecen en la **Agregar nuevo elemento** cuadro de diálogo.  
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   

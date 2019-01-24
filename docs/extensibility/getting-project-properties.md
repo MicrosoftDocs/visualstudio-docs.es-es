@@ -1,25 +1,22 @@
 ---
 title: Introducción a las propiedades del proyecto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project properties, displaying in tool window
-- tool windows, displaying project propeties
+- tool windows, displaying project properties
 ms.assetid: 96ba07ca-0811-4013-8602-12550ac4ba79
 author: gregvanl
 ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d254ebc5d1dad42527ec2ef3b6acee242976207
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 73626b9fcd756041d9a14a270644dca4acfcb64e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876443"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864756"
 ---
 # <a name="get-project-properties"></a>Obtener propiedades del proyecto
 Este tutorial se muestra cómo se muestra las propiedades del proyecto en una ventana de herramientas.  

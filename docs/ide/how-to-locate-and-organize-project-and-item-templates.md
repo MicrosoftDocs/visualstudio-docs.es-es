@@ -1,8 +1,7 @@
 ---
-title: Organización de plantillas en Visual Studio
+title: Organización de plantillas
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], locations
@@ -13,14 +12,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 65d4940e7a7969fe28fe115ec7ef42cfdc645c9a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 239fd7c4042c52576aa7a7688bf890d53d2b6a50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948735"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843416"
 ---
-# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Cómo: Localizar y organizar plantillas de proyecto y de elemento
+# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Procedimiento Buscar y organizar plantillas de proyecto y elemento
 
 Los archivos de plantilla se deben colocar en una ubicación que Visual Studio reconozca de forma que estas aparezcan en los cuadros de diálogo **Nuevo proyecto** y **Agregar nuevo elemento**. También puede crear subcategorías personalizadas en la ubicación de la plantilla de usuario, y las categorías se muestran en los cuadros de diálogo **Nuevo proyecto** y **Agregar nuevo elemento**.
 
@@ -126,4 +125,4 @@ Puede permitir que las plantillas contenidas en subcategorías se muestren en su
 - [Referencia de esquema de plantilla de Visual Studio (Extensibilidad)](../extensibility/visual-studio-template-schema-reference.md)
 - [NumberOfParentCategoriesToRollUp (Plantillas de Visual Studio)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)
 - [Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md)
-- [Cómo: Crear plantillas de elementos](../ide/how-to-create-item-templates.md)
+- [Cómo: Crear plantillas de elemento](../ide/how-to-create-item-templates.md)

@@ -1,8 +1,7 @@
 ---
-title: 'CA1721: Los nombres de propiedades no deberían coincidir con los métodos Get'
+title: 'CA1721: Los nombres de propiedades no deben coincidir con los métodos get'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1721
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 26f6e23a340ec018f766477f0bdce089a43ca3e4
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e0b9c348fc9131ede355c58408b517d20ed2500b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549682"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920983"
 ---
-# <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: Los nombres de propiedades no deberían coincidir con los métodos Get
+# <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: Los nombres de propiedades no deben coincidir con los métodos get
 
 |||
 |-|-|

@@ -1,9 +1,6 @@
 ---
 title: soluciones de Excel
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -24,17 +21,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, Excel solutions
 - document-level customizations [Office development in Visual Studio], Excel
 - Office projects [Office development in Visual Studio], Excel
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 43215d1827d8115e694134e75d03add48f16eb81
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 38db6bf4c29694813b41a88b0d5d62a1672cd6b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859232"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856862"
 ---
 # <a name="excel-solutions"></a>soluciones de Excel
   Visual Studio proporciona plantillas de proyecto que puede usar para crear personalizaciones de nivel de documento y complementos de VSTO para Microsoft Office Excel. Puede usar estas soluciones para automatizar Excel, ampliar las características de Excel y personalizar la interfaz de usuario (UI) de Excel. Para obtener más información sobre las diferencias entre las personalizaciones de nivel de documento y complementos VSTO, consulte [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -62,7 +59,7 @@ ms.locfileid: "49859232"
 ##  <a name="doclevel"></a> Desarrollar personalizaciones de nivel de documento para Excel  
  Una personalización de nivel de documento para Microsoft Office Excel se compone de un ensamblado asociado a un libro específico. Normalmente, el ensamblado amplía el libro personalizando la interfaz de usuario y automatizando Excel. A diferencia de los complementos de VSTO, que están asociados a Excel en sí, la funcionalidad que implementa en una personalización está disponible únicamente cuando el libro asociado se abre en Excel.  
 
- Para crear un proyecto de personalización de nivel de documento para Excel, use el libro de Excel o plantillas de proyecto de plantilla de Excel en el **nuevo proyecto** cuadro de diálogo de Visual Studio. Para obtener más información, consulte [Cómo: proyectos de creación de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ Para crear un proyecto de personalización de nivel de documento para Excel, use el libro de Excel o plantillas de proyecto de plantilla de Excel en el **nuevo proyecto** cuadro de diálogo de Visual Studio. Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
 
  Para obtener más información sobre cómo funcionan las personalizaciones de nivel de documento cómo, consulte [arquitectura de las personalizaciones de nivel de documento](../vsto/architecture-of-document-level-customizations.md).  
 
@@ -74,11 +71,9 @@ ms.locfileid: "49859232"
 ##  <a name="applevel"></a> Desarrollar complementos VSTO para Excel  
  Un complemento de VSTO para Microsoft Office Excel está formado por un ensamblado cargado por Excel. Normalmente, el ensamblado amplía Excel personalizando la interfaz de usuario y automatizando Excel. A diferencia de una personalización de nivel de documento, que está asociada a un libro concreto, funcionalidad que se implementa en un complemento de VSTO no está restringida a ningún libro.  
 
- Para crear un proyecto de complemento VSTO para Excel, use el libro de Excel o plantillas de proyecto de plantilla de Excel en el **nuevo proyecto** cuadro de diálogo de Visual Studio. Para obtener más información, consulte [Cómo: proyectos de creación de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ Para crear un proyecto de complemento VSTO para Excel, use el libro de Excel o plantillas de proyecto de plantilla de Excel en el **nuevo proyecto** cuadro de diálogo de Visual Studio. Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
 
- Para obtener información general sobre cómo funcionan los complementos de VSTO, consulte [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).  
-
- ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una demostración en vídeo relacionada, vea [cómo automatizar PowerPoint desde un complemento de Excel?](http://go.microsoft.com/fwlink/?LinkID=130300).  
+ Para obtener información general sobre cómo funcionan los complementos de VSTO, consulte [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 
 ### <a name="excel-add-in-programming-model"></a>Modelo de programación de complementos de Excel  
  Al crear un proyecto de complemento VSTO de Excel, Visual Studio crea una clase denominada `ThisAddIn`, que es la base de la solución. Esta clase proporciona un punto de partida para escribir el código y expone el modelo de objetos de Excel en el complemento VSTO.  
@@ -94,15 +89,15 @@ ms.locfileid: "49859232"
 |Tarea|Para obtener más información|  
 |----------|--------------------------|  
 |Personalizar la cinta.|[Información general de la cinta de opciones](../vsto/ribbon-overview.md)|  
-|Agregar controles de Windows Forms o controles extendidos de Excel a una hoja de cálculo en el libro personalizado para una personalización de nivel de documento o a cualquier libro abierto para un complemento de VSTO.|[Cómo: agregar controles de formularios Windows forms a documentos de Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [Cómo: agregar controles Chart a hojas de cálculo](../vsto/how-to-add-chart-controls-to-worksheets.md)<br /><br /> [Cómo: agregar controles ListObject a hojas de cálculo](../vsto/how-to-add-listobject-controls-to-worksheets.md)<br /><br /> [Cómo: agregar controles NamedRange a hojas de cálculo](../vsto/how-to-add-namedrange-controls-to-worksheets.md)|  
+|Agregar controles de Windows Forms o controles extendidos de Excel a una hoja de cálculo en el libro personalizado para una personalización de nivel de documento o a cualquier libro abierto para un complemento de VSTO.|[Cómo: Agregar controles de formularios Windows forms a documentos de Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [Cómo: Agregar controles Chart a hojas de cálculo](../vsto/how-to-add-chart-controls-to-worksheets.md)<br /><br /> [Cómo: Agregar controles ListObject a hojas de cálculo](../vsto/how-to-add-listobject-controls-to-worksheets.md)<br /><br /> [Cómo: Agregar controles NamedRange a hojas de cálculo](../vsto/how-to-add-namedrange-controls-to-worksheets.md)|  
 
 ### <a name="options-for-document-level-customizations"></a>Opciones para las personalizaciones de nivel de documento  
  En la siguiente tabla se enumeran las opciones de personalización disponibles únicamente para las personalizaciones de nivel de documento.  
 
 |Tarea|Para obtener más información|  
 |----------|--------------------------|  
-|Agregar un panel de acciones al libro.|[Información general sobre el panel de acciones](../vsto/actions-pane-overview.md)<br /><br /> [Cómo: agregar un panel de acciones a documentos de Word o libros de Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|  
-|Agregue controles de rango extendido que se asignan a nodos XML a una hoja de cálculo.|[Cómo: agregar controles XMLMappedRange a hojas de cálculo](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)|  
+|Agregar un panel de acciones al libro.|[Información general sobre el panel de acciones](../vsto/actions-pane-overview.md)<br /><br /> [Cómo: Agregar un panel de acciones a documentos de Word o libros de Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|  
+|Agregue controles de rango extendido que se asignan a nodos XML a una hoja de cálculo.|[Cómo: Agregar controles XMLMappedRange a hojas de cálculo](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)|  
 
 ### <a name="options-for-vsto-add-ins"></a>Opciones para los complementos de VSTO  
  En la siguiente tabla se enumeran las opciones de personalización disponibles únicamente para los complementos de VSTO.  
@@ -124,4 +119,3 @@ ms.locfileid: "49859232"
 | [Tutorial: Agregar controles a una hoja de cálculo en tiempo de ejecución en el proyecto de complemento VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md) | Muestra cómo agregar un botón de Windows Forms, un <xref:Microsoft.Office.Tools.Excel.NamedRange>y un <xref:Microsoft.Office.Tools.Excel.ListObject> a una hoja de cálculo en tiempo de ejecución mediante el uso de un complemento de VSTO. |
 | [Comprender la co-autoría y complementos](./understanding-coauthoring-and-addins.md) | Describe los ajustes que es posible que deba realizar en sus soluciones para dar cabida a co-autoría. |
 | [Excel 2010 en el desarrollo de Office](http://go.microsoft.com/fwlink/?LinkId=199011) | Proporciona vínculos a artículos y documentación de referencia sobre el desarrollo de soluciones de Excel. Estos no son específicos para el desarrollo de Office mediante Visual Studio. |
-

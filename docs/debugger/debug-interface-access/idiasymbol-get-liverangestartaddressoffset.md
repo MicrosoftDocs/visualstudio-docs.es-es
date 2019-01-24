@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_liveRangeStartAddressOffset | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 517e3c516f18d32634d0c8243d65674175e7da17
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 95c24788894c784cbe1d4b60dac3dbccf0350a85
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870983"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851318"
 ---
 # <a name="idiasymbolgetliverangestartaddressoffset"></a>IDiaSymbol::get_liveRangeStartAddressOffset
 Devuelve la parte del ajuste de la dirección inicial del intervalo en el que el símbolo local es válido.  
@@ -27,7 +25,7 @@ Devuelve la parte del ajuste de la dirección inicial del intervalo en el que el
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT get_liveRangeStartAddressOffset (   
+HRESULT get_liveRangeStartAddressOffset (   
    DWORD* offset  
 );  
 ```  
@@ -48,7 +46,7 @@ HRESULT get_liveRangeStartAddressOffset (
  Para obtener la parte de la sección de la dirección, use [IDiaSymbol::get_liveRangeStartAddressSection](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddresssection.md).  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: Dia2.h  
+ Encabezado: dia2.h  
   
  Biblioteca: diaguids.lib  
   

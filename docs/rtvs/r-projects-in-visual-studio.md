@@ -3,19 +3,18 @@ title: Proyectos de R
 description: Describe cómo crear un administrador de proyectos de R en Visual Studio que incluyan propiedades, comandos de proyecto y plantillas.
 ms.date: 06/29/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 154243351f3ff3e7babc502c2cf96dea6bcf5bf0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d9e20b53597ebca2eb079418a0838ff5449678a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813855"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924337"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Crear proyectos de R en Visual Studio
 
@@ -63,7 +62,7 @@ Si dispone de una carpeta existente de archivos *.R* que quiera administrar en u
 
 ## <a name="project-properties"></a>Propiedades del proyecto
 
-Para abrir las páginas de propiedades del proyecto, haga clic con el botón derecho en el proyecto en el **Explorador de soluciones** y seleccione **Propiedades** o seleccione el elemento de menú **Proyecto > Propiedades de (nombre del proyecto)*. La ventana que se abre muestra propiedades del proyecto:
+Para abrir las páginas de propiedades del proyecto, haga clic con el botón derecho en el proyecto en el **Explorador de soluciones** y seleccione **Propiedades**, o bien seleccione el elemento de menú **Proyecto > Propiedades de (nombre del proyecto)**. La ventana que se abre muestra propiedades del proyecto:
 
 
 | Tab | Propiedad. | Descripción | 

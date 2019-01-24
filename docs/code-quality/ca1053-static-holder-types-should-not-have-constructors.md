@@ -2,7 +2,6 @@
 title: 'CA1053: Los tipos titulares estáticos no deben tener constructores'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - StaticHolderTypesShouldNotHaveConstructors
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 43d8af3d592d687064c50fc046c6a7f61d64335f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 998d941d0dd0ec06ff7d0f8a727ad3bf50718065
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854805"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928524"
 ---
 # <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053: Los tipos titulares estáticos no deben tener constructores
 

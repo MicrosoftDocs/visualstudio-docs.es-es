@@ -1,8 +1,7 @@
 ---
-title: 'Tutorial: Depurar un formulario de Windows | Microsoft Docs'
-ms.custom: ''
+title: Depurar un formulario Windows Forms | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -24,50 +23,50 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fdd9dadc92143fabfaeea35d776b57b4b4c1748
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
-ms.translationtype: MT
+ms.openlocfilehash: 4d0e04b407303b1d6f98862fdef36bb8228fd780
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468535"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851974"
 ---
-# <a name="walkthrough-debugging-a-windows-form"></a>Tutorial: Depurar Windows Forms
+# <a name="walkthrough-debugging-a-windows-form"></a>Tutorial: Depurar un formulario Windows Form
 Un Windows Form es una de las aplicaciones administradas más comunes. Con un Windows Form se crean aplicaciones estándar de Windows. Puede completar este tutorial utilizando Visual Basic, C# o C++.  
   
  En primer lugar, debe cerrar las soluciones que estén abiertas.  
   
 ### <a name="to-prepare-for-this-walkthrough"></a>Pasos preliminares de este tutorial  
   
--   Si tiene una solución abierta, ciérrela. (En el **archivo** menú, seleccione **Cerrar solución**.)  
+-   Si tiene una solución abierta, ciérrela. (En el menú **Archivo**, seleccione **Cerrar solución**).  
   
 ## <a name="create-a-new-windows-form"></a>Crear un nuevo Windows Form  
  A continuación, creará un nuevo Windows Form.  
   
 #### <a name="to-create-the-windows-form-for-this-walkthrough"></a>Para crear el formulario Windows Forms para este tutorial  
   
-1.  En el **archivo** menú, elija **New** y haga clic en **proyecto**.  
+1.  En el menú **Archivo**, elija **Nuevo** y, a continuación, haga clic en **Proyecto**.  
   
      Aparecerá el cuadro de diálogo **Nuevo proyecto** .  
   
-2.  En el panel tipos de proyecto, abra el **Visual Basic**, **Visual C#**, o **Visual C++** nodo, a continuación,  
+2.  En el panel Tipos de proyecto, abra el nodo **Visual Basic**, **Visual C#** o **Visual C++** y, a continuación,  
   
     1.  Para Visual Basic o Visual C#, seleccione **Windows Desktop** > **aplicación de formulario de Windows**.  
   
     2.  Para Visual C++, seleccione **aplicación de escritorio de Windows**.  
   
-3.  En el **nombre** cuadro, asigne al proyecto un nombre único (por ejemplo, Walkthrough_SimpleDebug).  
+3.  En el cuadro **Nombre**, asigne un nombre único al proyecto (por ejemplo, Walkthrough_SimpleDebug).  
   
 4.  Haga clic en **Aceptar**.  
   
-     Visual Studio crea un proyecto nuevo y muestra un formulario nuevo en el Diseñador de Windows Forms. Para obtener más información, consulte [Diseñador de Windows Forms](http://msdn.microsoft.com/en-us/3c3d61f8-f36c-4d41-b9c3-398376fabb15).  
+     Visual Studio crea un proyecto nuevo y muestra un formulario nuevo en el Diseñador de Windows Forms. Para obtener más información, vea [Diseñador de Windows Forms](/previous-versions/visualstudio/visual-studio-2010/e06hs424\(v\=vs.100\)).  
   
-5.  En el **vista** menú, seleccione **cuadro de herramientas**.  
+5.  En el menú **Ver**, seleccione **Cuadro de herramientas**.  
   
      Se abrirá el Cuadro de herramientas. Para obtener más información, vea [Cuadro de herramientas](../ide/reference/toolbox.md).  
   
-6.  En el cuadro de herramientas, haga clic en el **botón** control y arrastre el control a la superficie de diseño del formulario. Coloque el botón en el formulario.  
+6.  En el Cuadro de herramientas, haga clic en el control **Button** y arrástrelo a la superficie de diseño del formulario. Coloque el botón en el formulario.  
   
-7.  En el cuadro de herramientas, haga clic en el **TextBox** control y arrastre el control a la superficie de diseño del formulario. Quitar el **TextBox** en el formulario.  
+7.  En el Cuadro de herramientas, haga clic en el control **TextBox** y arrástrelo a la superficie de diseño del formulario. Coloque el control **TextBox** en el formulario.  
   
 8. En la superficie de diseño del formulario, haga doble clic en el botón.  
   
@@ -110,12 +109,12 @@ Un Windows Form es una de las aplicaciones administradas más comunes. Con un Wi
     textBox1->Text = "Button was clicked!";  
     ``` 
   
-     Aparecerá un punto rojo y el texto de la línea se resaltará en rojo. El punto rojo representa un punto de interrupción. Para obtener más información, consulte [puntos de interrupción](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583). Cuando ejecute la aplicación en el depurador, este interrumpirá la ejecución del código en la posición donde encuentre un punto de interrupción. Esto le permite ver el estado de la aplicación y depurarla.  
+     Aparecerá un punto rojo y el texto de la línea se resaltará en rojo. El punto rojo representa un punto de interrupción. Para obtener más información, vea [Puntos de interrupción](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). Cuando ejecute la aplicación en el depurador, este interrumpirá la ejecución del código en la posición donde encuentre un punto de interrupción. Esto le permite ver el estado de la aplicación y depurarla.  
   
     > [!NOTE]
-    >  También puede haga clic en cualquier línea de código, apunte a **punto de interrupción**y, a continuación, haga clic en **Insertar punto de interrupción** para agregar un punto de interrupción en esa línea.  
+    >  También puede hacer clic con el botón derecho en cualquier línea de código, seleccionar **Punto de interrupción** y, a continuación, hacer clic en **Insertar punto de interrupción** para agregar un punto de interrupción en esa línea.  
   
-2.  EN el **depurar** menú, elija **iniciar**.  
+2.  En el menú **Depurar**, elija **Iniciar**.  
   
      El Windows Form comienza su ejecución.  
   
@@ -123,21 +122,21 @@ Un Windows Form es una de las aplicaciones administradas más comunes. Con un Wi
   
      En Visual Studio, esto le lleva a la línea en la que estableció el punto de interrupción en la página de códigos. Esta línea debe aparecer resaltada en amarillo. Ahora puede ver las variables de la aplicación y controlar su ejecución. La aplicación ha detenido ahora su ejecución y espera a que se le indique una acción.  
   
-4.  En el **depurar** menú, elija **Windows**, a continuación, **inspección**y haga clic en **Inspección1**.  
+4.  En el menú **Depurar**, elija **Ventanas**, después **Inspección** y, a continuación, haga clic en **Inspección1**.  
   
-5.  En el **Inspección1** ventana, haga clic en una fila en blanco. En el **nombre** columna, escriba `textBox1.Text` (si utiliza Visual Basic o Visual C#) o `textBox1->Text` (si usas C++), a continuación, presione ENTRAR.  
+5.  En la ventana **Inspección1**, haga clic en una fila en blanco. En el **nombre** columna, escriba `textBox1.Text` (si utiliza Visual Basic o Visual C#) o `textBox1->Text` (si usas C++), a continuación, presione ENTRAR.  
   
-     El **Inspección1** ventana muestra el valor de esta variable entre comillas:  
+     En la ventana **Inspección1** se muestra el valor de esta variable entre comillas:  
   
     `""`  
  
-6.  En el **depurar** menú, elija **paso a paso**.  
+6.  En el menú **Depurar**, elija **Depurar paso a paso por instrucciones**.  
   
      El valor de textBox1.Text cambia en el **Inspección1** ventana para:  
   
     `Button was clicked!`  
   
-7.  En el **depurar** menú, elija **continuar** para reanudar la depuración del programa.  
+7.  En el menú **Depurar**, elija **Continuar** para reanudar la depuración del programa.  
   
 8.  En el Windows Form, haga clic de nuevo en el botón.  
   
@@ -147,7 +146,7 @@ Un Windows Form es una de las aplicaciones administradas más comunes. Con un Wi
   
      Esto quita el punto de interrupción del código.  
   
-10. En el **depurar** menú, elija **Detener depuración**.  
+10. En el menú **Depurar**, elija **Detener depuración**.  
   
 ## <a name="attach-to-your-windows-form-application-for-debugging"></a>Adjuntar la aplicación de Windows Forms para la depuración  
  En [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], puede adjuntar el depurador a un proceso en ejecución. Si utiliza Express Edition, esta característica no es compatible.  

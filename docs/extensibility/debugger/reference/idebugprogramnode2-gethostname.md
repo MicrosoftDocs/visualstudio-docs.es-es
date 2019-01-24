@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramNode2::GetHostName | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramNode2::GetHostName
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e47b8a18c631fe99b67020a4805d019b29fc234
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 326ae91be2f20029f6ccc4ffca5c5e31ca89a4dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816811"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948318"
 ---
 # <a name="idebugprogramnode2gethostname"></a>IDebugProgramNode2::GetHostName
 Obtiene el nombre del proceso que hospeda el programa.  
@@ -28,14 +25,14 @@ Obtiene el nombre del proceso que hospeda el programa.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT GetHostName (   
+HRESULT GetHostName (   
    GETHOSTNAME_TYPE dwHostNameType,  
    BSTR*            pbstrHostName  
 );  
 ```  
   
 ```csharp  
-int GetHostName (   
+int GetHostName (   
    enum_GETHOSTNAME_TYPE dwHostNameType,  
    out string            pbstrHostName  
 );  

@@ -2,7 +2,6 @@
 title: Elements (Propiedad dinámica de XElement)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: reference
 apiname:
 - XElement.Elements
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c78dece049aa2d446a0f03b24f3e2c2640131327
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 01bca0771fb02ab8442132eaff4759fe7277ad6f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924416"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837058"
 ---
 # <a name="elements-xelement-dynamic-property"></a>Elements (Propiedad dinámica de XElement)
 
@@ -32,7 +31,7 @@ elem.Elements[{namespaceName}localName]
 
 ## <a name="property-valuereturn-value"></a>Valor de propiedad y valor devuelto
 
-Un indizador del tipo `IEnumerable<XElement> Item(String expandedName)`. Este indizador toma el nombre expandido de los elementos secundarios deseados y devuelve los elementos secundarios coincidentes en una recopilación <xref:System.Collections.IEnumerable>`<`<xref:System.Xml.Linq.XElement>`>`.
+Un indizador del tipo `IEnumerable<XElement> Item(String expandedName)`. Este indizador toma el nombre expandido de los elementos secundarios deseados y devuelve los elementos secundarios coincidentes en una colección <xref:System.Collections.IEnumerable>`<`<xref:System.Xml.Linq.XElement>`>`.
 
 ## <a name="remarks"></a>Comentarios
 

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Function view
 ms.assetid: 595d91c8-a42b-4644-85b8-39e8140a5dfe
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 60238ee0fab8819d2b44ff68ba5122b7f65444ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c19175af6af583120c9fd648328ecf90deaeb3a7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306883"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786813"
 ---
 # <a name="functions-view---instrumentation-data"></a>Vista Funciones: datos de instrumentación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

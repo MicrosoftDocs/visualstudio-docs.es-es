@@ -24,15 +24,15 @@ helpviewer_keywords:
 - executable files, debugging outside of projects
 ms.assetid: 3ea176e8-1ce5-42c4-b7a2-abe3a2765033
 caps.latest.revision: 26
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 241a1dbf3af5db726f344ab42d53de3fdd30db3c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a7fb9b0a31f078ce197851bccb1f4c85f24408a0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278794"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798669"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Cómo: Depurar un archivo ejecutable que no es parte de una solución de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

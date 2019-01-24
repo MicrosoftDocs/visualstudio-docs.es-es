@@ -1,9 +1,6 @@
 ---
-title: 'Tutorial: Importar una página maestra personalizada y una página con una imagen de sitio | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Importar una página maestra personalizada y una página con una imagen de sitio | Documentos de Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45f1ded9cf6eca3715c5050f93aa24630a1bc4e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f7901bfea334ff3d9ad6d197bf64b3f1a87961a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890997"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904158"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Tutorial: Importar una página maestra personalizada y la página del sitio con una imagen
   Este tutorial muestra cómo importar una página maestra personalizada de SharePoint y una página de sitio que tenga una imagen en un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proyecto de SharePoint.  
@@ -179,10 +176,9 @@ ms.locfileid: "49890997"
 
 7. Abra el sitio de SharePoint para ver los elementos implementados.  
 
-   Una manera alternativa de importar archivos a [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e implementarlas en SharePoint es agregar los archivos en módulos en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Cómo: importar un tema o página maestra](../sharepoint/how-to-import-a-master-page-or-theme.md) y [utilizar módulos para incluir archivos en la solución](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
+   Una manera alternativa de importar archivos a [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e implementarlas en SharePoint es agregar los archivos en módulos en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Cómo: Importar un tema o página maestra](../sharepoint/how-to-import-a-master-page-or-theme.md) y [utilizar módulos para incluir archivos en la solución](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
 
 ## <a name="see-also"></a>Vea también
  [Importar elementos de un sitio de SharePoint existente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Crear controles reutilizables para elementos web o páginas de aplicación](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  
-

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 15f503f98492606424752dff169fd4b61b6cc8b4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: dc2e4d542619e214835d3be8354062733ebd5cb8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728675"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091499"
 ---
 # <a name="iremotedebugapplicationthreadgetapplication"></a>IRemoteDebugApplicationThread::GetApplication
 Devuelve el objeto de aplicación asociado a este subproceso.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetApplication(  
    IRemoteDebugApplication**  pprda  
 );  
@@ -38,7 +38,7 @@ HRESULT GetApplication(
   
 #### <a name="parameters"></a>Parámetros  
  `pprda`  
- [out] El objeto de aplicación asociado a este subproceso.  
+ [out] El objeto de aplicación asociado con este subproceso.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  

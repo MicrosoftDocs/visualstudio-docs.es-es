@@ -1,26 +1,27 @@
 ---
-title: 'Tutorial: Información acerca de Django en Visual Studio, paso 4'
+title: Información sobre el paso 4 del tutorial de Django en Visual Studio, Plantilla de proyecto web
+titleSuffix: ''
 description: Un recorrido por los aspectos básicos de Django en el contexto de los proyectos de Visual Studio, en particular las características que ofrece la plantilla Proyecto web de Django.
-ms.date: 08/13/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4e37b8f5b50a7145ca5fbaa0597fd6109b1be98a
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 513f42bd597bf42e0f145b1a47a889f6d28ec95c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626955"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864050"
 ---
-# <a name="step-4-use-the-full-django-web-project-template"></a>Paso 4. Usar la plantilla completa de Proyecto web de Django
+# <a name="step-4-use-the-full-django-web-project-template"></a>Paso 4: Uso de la plantilla completa de Proyecto web de Django
 
-**Paso anterior[: Atender archivos estáticos, agregar páginas y usar la herencia de plantilla](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
+**Paso anterior: [Proporcionar archivos estáticos, agregar páginas y usar la herencia de plantilla](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
 Ahora que ha explorado los conceptos básicos de Django mediante la creación de una aplicación a partir de la plantilla "Proyecto web de Django en blanco" en Visual Studio, podrá comprender fácilmente la aplicación más completa que se genera mediante la plantilla "Proyecto web de Django".
 
@@ -33,7 +34,7 @@ En este paso, hará lo siguiente:
 
 La plantilla también proporciona autenticación básica, que se explica en el paso 5.
 
-## <a name="step-4-1-create-a-project-from-the-template"></a>Paso 4.1: Crear un proyecto a partir de la plantilla
+## <a name="step-4-1-create-a-project-from-the-template"></a>Paso 4-1: Creación de un proyecto a partir de la plantilla
 
 1. En Visual Studio, vaya al **Explorador de soluciones**, haga clic con el botón derecho en la solución **LearningDjango** creada anteriormente en este tutorial y seleccione **Agregar** > **Nuevo proyecto**. (En caso de que desee utilizar una nueva solución, tendrá que seleccionar **Archivo** > **Nuevo** > **Proyecto**).
 
@@ -75,9 +76,9 @@ En el nivel más amplio, la plantilla "Proyecto web de Django" crea la siguiente
 - La carpeta *app* contiene todos los archivos de la aplicación, lo que incluye vistas, modelos, pruebas, formularios, plantillas y archivos estáticos (vea el paso 4-2). Puede cambiar el nombre de esta carpeta para utilizar otro que le ayude a distinguirla mejor.
 - La carpeta *DjangoWeb* (proyecto de Django) contiene los archivos de proyecto típicos de Django: *\_\_init\_\_.py*, *settings.py*, *urls.py* y *wsgi.py*. Con la plantilla de proyecto, *settings.py* ya está configurado para la aplicación y el archivo de base de datos, mientras que *urls.py* ya está configurado con las rutas a todas las páginas de la aplicación, incluido el formulario de inicio de sesión.
 
-### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Pregunta: ¿Es posible compartir un entorno virtual entre los proyectos de Visual Studio?
+### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Es posible compartir un entorno virtual entre los proyectos de Visual Studio?
 
-Respuesta: Sí, pero hágalo siendo consciente de que es probable que proyectos diferentes usen paquetes diferentes con el tiempo y, por lo tanto, un entorno virtual compartido debe contener todos los paquetes de todos los proyectos que lo usan.
+Respuesta: Sí, pero se debe hacer sabiendo que es probable que en otros proyectos se usen otros paquetes con el tiempo y, por tanto, un entorno virtual compartido debe contener todos los paquetes de todos los proyectos que lo usan.
 
 No obstante, para usar un entorno virtual existente, haga lo siguiente:
 
@@ -85,9 +86,9 @@ No obstante, para usar un entorno virtual existente, haga lo siguiente:
 1. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo **Entornos de Python** y seleccione **Agregar entorno virtual existente**.
 1. Vaya la carpeta que contiene el entorno virtual, selecciónela y luego elija **Aceptar**.
 
-## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Paso 4.2: Comprender las vistas y las plantillas de página creadas por la plantilla de proyecto
+## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Paso 4-2: Comprender las vistas y las plantillas de página creadas por la plantilla de proyecto
 
-Tal y como se observa cuando se ejecuta el proyecto, la aplicación contiene tres vistas: inicio, información y contacto. El código de estas vistas se encuentra en la carpeta *app/views*. Cada función de la vista simplemente llama a `django.shortcuts.render` con la ruta de acceso a una plantilla y un sencillo objeto de diccionario. Por ejemplo, la función `about` es quien controla la página de información:
+Como se observa cuando se ejecuta el proyecto, la aplicación contiene tres vistas: Inicio, Información y Contacto. El código de estas vistas se encuentra en la carpeta *app/views*. Cada función de la vista simplemente llama a `django.shortcuts.render` con la ruta de acceso a una plantilla y un sencillo objeto de diccionario. Por ejemplo, la función `about` es quien controla la página de información:
 
 ```python
 def about(request):
@@ -163,11 +164,11 @@ Las plantillas de página individuales, *about.html*, *contact.html* e *index.ht
 
 En la carpeta *templates/app* también hay una cuarta página *login.html*, junto con *loginpartial.html*, que se traslada a *layout.html* mediante `{% include %}`. Estos archivos de plantilla se describen en el paso 5 sobre la autenticación.
 
-### <a name="question-can--block--and--endblock--be-indented-in-the-django-page-template"></a>Pregunta: ¿Es posible aplicar sangría a {% block %} y {% endblock %} en la plantilla de página de Django?
+### <a name="question-can--block--and--endblock--be-indented-in-the-django-page-template"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Es posible aplicar sangría a {% block %} y {% endblock %} en la plantilla de página de Django?
 
-Respuesta: Sí, las plantillas de página de Django funcionan correctamente si aplica sangría a las etiquetas de bloque, quizás para alinearlas en sus elementos principales más adecuados. No se les aplica sangría en las plantillas de página generadas por la plantilla de proyecto de Visual Studio para que pueda ver claramente donde se colocan.
+Respuesta: Sí, las plantillas de página de Django funcionan correctamente si se aplica sangría a las etiquetas de bloque, quizás para alinearlas en sus elementos principales más adecuados. No se les aplica sangría en las plantillas de página generadas por la plantilla de proyecto de Visual Studio para que pueda ver claramente donde se colocan.
 
-## <a name="step-4-3-understand-the-url-routing-created-by-the-template"></a>Paso 4.3: Comprender el enrutamiento de direcciones URL creado por la plantilla
+## <a name="step-4-3-understand-the-url-routing-created-by-the-template"></a>Paso 4-3: Comprender el enrutamiento de direcciones URL creado por la plantilla
 
 El archivo *urls.py* del proyecto Django, tal como lo crea la plantilla "Proyecto web de Django", contiene el código siguiente:
 
@@ -206,9 +207,9 @@ urlpatterns = [
 
 Los primeros tres patrones de dirección URL se asignan directamente a las vistas `home`, `contact` y `about` en el archivo *views.py* de la aplicación. Los patrones `^login/$` y `^logout$`, por otra parte, usan las vistas de Django integradas en lugar de vistas definidas por la aplicación. Las llamadas al método `url` también incluyen datos adicionales para personalizar la vista. En el paso 5 se exploran estas llamadas.
 
-### <a name="question-in-the-project-i-created-why-does-the-about-url-pattern-uses-about-instead-of-about-as-shown-here"></a>Pregunta: En el proyecto que he creado, ¿por qué el patrón de dirección URL "about" usa "^about" en lugar de "^about$" como se ha visto aquí?
+### <a name="question-in-the-project-i-created-why-does-the-about-url-pattern-uses-about-instead-of-about-as-shown-here"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. En el proyecto que he creado, ¿por qué el patrón de dirección URL "about" usa "^about" en lugar de "^about$" como se ha visto aquí?
 
-Respuesta: La falta de la "$" al final de la expresión regular se debe simplemente a un descuido en muchas de las versiones de la plantilla del proyecto. El patrón de dirección URL funciona perfectamente en una página denominada "about", pero sin el carácter "$" el patrón de dirección URL coincide también direcciones URL como "about=django", "about09876", "aboutoflaughter", etc. El carácter "$" al final se muestra aquí para crear un patrón de dirección URL que coincida *solo* con "about".
+Respuesta: La falta de "$" al final de la expresión regular se debe simplemente a un descuido en muchas de las versiones de la plantilla del proyecto. El patrón de dirección URL funciona perfectamente en una página denominada "about", pero sin el carácter "$" el patrón de dirección URL coincide también direcciones URL como "about=django", "about09876", "aboutoflaughter", etc. El carácter "$" al final se muestra aquí para crear un patrón de dirección URL que coincida *solo* con "about".
 
 ## <a name="next-steps"></a>Pasos siguientes
 

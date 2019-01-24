@@ -13,25 +13,18 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 4f47fdad1b2f04a69b2a4bc1c3f6d1e6b60fa881
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: a3904efd69763a096504922ee233a927ba69ed8f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370736"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847040"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Asignar roles a un controlador de pruebas y a un agente de pruebas
 
 En este tutorial, se muestra cómo crear y configurar un entorno de prueba que usa un controlador de pruebas y agente de prueba para distribuir las pruebas entre varias máquinas, mediante Visual Studio. Además, en este tutorial se muestra cómo agregar adaptadores de datos y de diagnóstico a la configuración de pruebas.
 
-En este tutorial, se realizarán las siguientes tareas:
-
--   Crear una configuración de prueba.
-
--   Asignar roles a un controlador de pruebas y agentes de prueba.
-
--   Asignar un adaptador de datos y de diagnóstico a la configuración de pruebas.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="prerequisites"></a>Requisitos previos
 

@@ -1,8 +1,7 @@
 ---
-title: Convertir texto a mayúsculas o minúsculas en el editor de Visual Studio
+title: Conversión de texto en mayúsculas o minúsculas
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - editors, text case
@@ -13,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de9c9c790be2624c8faa3fad706929baadeddc01
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: a9a239c601032a21cd34636ed79871cd108b853e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446067"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879272"
 ---
-# <a name="how-to-change-text-case-in-the-editor"></a>Cómo: Cambiar las mayúsculas y minúsculas en el editor
+# <a name="how-to-change-text-case-in-the-editor"></a>Procedimiento para cambiar las mayúsculas y minúsculas en el editor
 
 Puede usar comandos de menú o métodos abreviados de teclado para convertir las mayúsculas y minúsculas del texto seleccionado todas a mayúsculas o todas a minúsculas.
 

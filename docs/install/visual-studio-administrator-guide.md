@@ -1,9 +1,9 @@
 ---
 title: Guía del administrador de Visual Studio
+titleSuffix: ''
 description: Obtenga más información sobre cómo implementar Visual Studio en un entorno empresarial.
-ms.custom: ''
 ms.date: 05/29/2018
-ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a675c0a737c4ee713d48b8912f74185a9f7cdc9
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 25bf36870e20b630c6de388c13f2b01bae4a274b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139267"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826405"
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Guía del administrador de Visual Studio 2017
 

@@ -1,9 +1,6 @@
 ---
 title: Solución de problemas de implementación y empaquetado de SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/22/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VSTO.WorkflowDeployment.Troubleshooting
@@ -26,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ba6f0a1aff0c263534c17256b7f5cf49ff9c9533
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a12e24ea0db662931651feb3031ec0da71926f24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898062"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878710"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Solucionar problemas de implementación y empaquetado de SharePoint
   En este tema se tratan diversos problemas que pueden producirse al empaquetar e implementar soluciones de SharePoint.
@@ -40,10 +37,10 @@ ms.locfileid: "49898062"
  Si desea realizar un diagnóstico entre Visual Studio, SharePoint y otras capas, puede usar la clave del Registro EnableDiagnostics para ver el seguimiento de la pila. Para obtener más información, consulte [soluciones de SharePoint depurar](../sharepoint/debugging-sharepoint-solutions.md).
 
 ## <a name="add-project-output-to-the-solution-package"></a>Agregar resultados del proyecto al paquete de solución
- Puede agregar la salida del proyecto a un paquete a través del Diseñador de paquetes. Sin embargo, cuando agregue la salida del proyecto, asegúrese de que la plataforma del proyecto coincide con la plataforma de la solución de SharePoint. Se recomienda que use el **cualquier CPU** plataforma de destino para los ensamblados que desea implementar en un servidor de SharePoint. Para obtener más información, consulte [página compilación, Diseñador de proyectos &#40;Visual Basic&#41; ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) y [cuadro de diálogo de configuración de compilador avanzada &#40;Visual Basic&#41;](/visualstudio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic).
+ Puede agregar la salida del proyecto a un paquete a través del Diseñador de paquetes. Sin embargo, cuando agregue la salida del proyecto, asegúrese de que la plataforma del proyecto coincide con la plataforma de la solución de SharePoint. Se recomienda que use el **cualquier CPU** plataforma de destino para los ensamblados que desea implementar en un servidor de SharePoint. Para obtener más información, consulte [página compilación, Diseñador de proyectos &#40;Visual Basic&#41; ](../ide/reference/compile-page-project-designer-visual-basic.md) y [cuadro de diálogo de configuración de compilador avanzada &#40;Visual Basic&#41;](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
 
 ## <a name="validation-warnings-and-errors"></a>Errores y advertencias de validación
- Las herramientas de desarrollo de SharePoint de Visual Studio realizan pasos de validación para comprobar que el paquete de solución se crea de forma correcta. También puede crear pasos de validación personalizados para sus características y paquetes. Para obtener más información, consulte [Cómo: crear características personalizadas y un paquete de reglas de validación para las soluciones de SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
+ Las herramientas de desarrollo de SharePoint de Visual Studio realizan pasos de validación para comprobar que el paquete de solución se crea de forma correcta. También puede crear pasos de validación personalizados para sus características y paquetes. Para obtener más información, vea [Cómo: Creación de reglas de validación para las soluciones de SharePoint de características y paquetes](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
 
 ## <a name="deployment-conflict-resolution"></a>Resolución de conflictos de implementación
  Al implementar una solución de SharePoint, pueden producirse colisiones cuando un elemento del servidor tiene el mismo nombre, dirección URL o identificador que un elemento del paquete de solución. Puede cambiar el **Deployment Conflict Resolution** propiedad para resolver, notificar u omitir las colisiones de los módulos, partes Web, las instancias de lista y tipos de contenido.
@@ -65,7 +62,7 @@ ms.locfileid: "49898062"
 
 3. Establece el orden de activación de características según la jerarquía del Diseñador de paquetes.
 
-   Puede agregar pasos de implementación personalizado para cambios adicionales la **F5** comportamiento. Para obtener más información, consulte [Tutorial: crear un paso de implementación personalizado para proyectos de SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
+   Puede agregar pasos de implementación personalizado para cambios adicionales la **F5** comportamiento. Para obtener más información, vea [Tutorial: Crear un paso de implementación personalizado para proyectos de SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
 
 ## <a name="delay-displaying-sharepoint-page-when-deploy-visual-web-part"></a>Retrasar la aparición de la página de SharePoint al implementar el elemento web visual
  La página de SharePoint tarda mucho en aparecer cuando se implementa un elemento web visual en la carpeta Bin de [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)], [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] o [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)]. Si se cambian los archivos de un directorio de [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] de nivel superior, como el directorio Bin, se volverá a compilar toda la aplicación web. Esto puede generar un retraso de hasta 25 segundos en la presentación de la página de SharePoint.
@@ -76,7 +73,7 @@ ms.locfileid: "49898062"
 ### <a name="resolution"></a>Resolución
  Para evitar este problema, siga estos pasos:
 
-1.  Instale la actualización KB967535 tal como se describe en el artículo de Microsoft Support [corregir: hay disponible una revisión para solucionar dos problemas de ASP.NET en IIS 7.0 para Windows Vista y Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055).
+1.  Instale la actualización KB967535 tal como se describe en el artículo de Microsoft Support [corregir: Hay disponible una revisión para solucionar dos problemas de ASP.NET en IIS 7.0 para Windows Vista y Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055).
 
 2.  Agregue la línea siguiente al archivo Web.config.
 
@@ -88,7 +85,7 @@ ms.locfileid: "49898062"
  Si el nombre de algún elemento de proyecto de SharePoint contiene paréntesis, se produce un error en la implementación de la solución.
 
 ### <a name="error-message"></a>Mensaje de error
- En el paso 'Agregar solución' de la implementación se ha producido el siguiente error: "Error al extraer el archivo cab de la solución".
+ Se ha producido un error en el paso 'Agregar solución' de implementación: No se pudo extraer el archivo cab de la solución.
 
 ### <a name="resolution"></a>Resolución
  Para evitar este problema, quite los paréntesis de los nombres de elementos de proyecto de SharePoint.
@@ -97,7 +94,7 @@ ms.locfileid: "49898062"
  La primera vez que implementa un elemento web visual en un sitio de otra aplicación web distinta de la que está implementando en la actualidad (mediante la modificación de la propiedad SiteUrl del elemento web visual), se produce un error.
 
 ### <a name="error-message"></a>Mensaje de error
- En el paso 'Agregar solución' de la implementación se produce el siguiente error: "Ya se ha instalado una característica con Id. [#] en este conjunto de servidores. Use el atributo fuerza para volver a agregar la característica de modo explícito".
+ Se ha producido un error en el paso 'Agregar solución' de implementación: Una característica con el Id. [#####] ya se ha instalado en esta granja de servidores. Use el atributo fuerza para volver a agregar la característica de modo explícito".
 
 ### <a name="resolution"></a>Resolución
  Este error se produce debido al modo en que se retractan las características de elementos web visuales en SharePoint. Para implementar correctamente el elemento Web visual, implementar la solución eligiendo la **F5** clave.
@@ -114,5 +111,5 @@ ms.locfileid: "49898062"
  Para quitar esta advertencia, compile el proyecto y, a continuación, cierre el diseñador y vuelva a abrirlo, o deshabilite la opción de retracción automática en el proyecto. Para ello, desactive la **retraer automáticamente después de depurar** casilla de verificación en la **SharePoint** ficha del cuadro de diálogo Propiedades del proyecto.
 
 ## <a name="see-also"></a>Vea también
- [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
 
+- [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

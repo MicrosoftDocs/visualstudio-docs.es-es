@@ -1,8 +1,6 @@
 ---
 title: Recopilar estadísticas de aplicación para aplicaciones independientes utilizando la línea de comandos del generador de perfiles | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 72efb2481725d7e0da9331b639040d7dacc8298d
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 706e591a96cf5bdd1c13fb0775c8a91e3995cb66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276736"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871265"
 ---
 # <a name="collect-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Recopilar estadísticas de aplicación para aplicaciones independientes mediante la línea de comandos del generador de perfiles
 En esta sección se describen los procedimientos y las opciones para recopilar estadísticas de rendimiento para una aplicación cliente (independiente) mediante el método de muestreo desde la línea de comandos.  
@@ -30,9 +28,9 @@ En esta sección se describen los procedimientos y las opciones para recopilar e
   
 |Tarea|Contenido relacionado|  
 |----------|---------------------|  
-|**Iniciar una aplicación mediante la generación de perfiles**|-   [Cómo: Iniciar una aplicación independiente y recopilar estadísticas de la aplicación](../profiling/how-to-launch-a-stand-alone-app-and-collect-application-statistics.md)|  
-|**Adjuntar el generador de perfiles a una aplicación de .NET Framework en ejecución**|-   [Cómo: Adjuntar el generador de perfiles a una aplicación de .NET Framework y recopilar estadísticas de la aplicación](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md)|  
-|**Adjuntar el generador de perfiles a una aplicación de C o C++ en ejecución**|-   [Cómo: Adjuntar el generador de perfiles a una aplicación nativa y recopilar estadísticas de la aplicación](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md)|  
+|**Iniciar una aplicación mediante la generación de perfiles**|-   [Cómo: Iniciar una aplicación independiente con el generador de perfiles y recopilar estadísticas de aplicación](../profiling/how-to-launch-a-stand-alone-app-and-collect-application-statistics.md)|  
+|**Adjuntar el generador de perfiles a una aplicación de .NET Framework en ejecución**|-   [Cómo: Asociar el generador de perfiles a una aplicación independiente de .NET Framework y recopilar estadísticas de la aplicación](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md)|  
+|**Adjuntar el generador de perfiles a una aplicación de C o C++ en ejecución**|-   [Cómo: Asociar el generador de perfiles a una aplicación independiente nativa y recopilar estadísticas de la aplicación](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md)|  
 |**Agregar datos de interacción de capas**|-   [Recopilar datos de interacción de capas](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Tareas relacionadas  
@@ -54,4 +52,3 @@ En esta sección se describen los procedimientos y las opciones para recopilar e
   
 ### <a name="analyze-sampling-data-views-and-reports"></a>Análisis de vistas e informes de datos de muestreo  
  [Vistas de datos del método de muestreo](../profiling/profiler-sampling-method-data-views.md)
-

@@ -1,8 +1,7 @@
 ---
-title: Crear y ejecutar pruebas unitarias para aplicaciones UWP en Visual Studio
+title: Creación y ejecución de pruebas unitarias en aplicaciones para UWP
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, creating
@@ -14,12 +13,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: d4640616b12a07c475503d45f9297c1bbf663f91
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1aa81512b06546ea2af89faf545db3a86da08218
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284125"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917165"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Tutorial: Crear y ejecutar pruebas unitarias para aplicaciones UWP
 
@@ -108,5 +107,5 @@ En el **Editor de código**, edite la prueba unitaria y agregue las aserciones y
 
 ## <a name="see-also"></a>Vea también
 
-- [Prueba de aplicaciones para UWP con Visual Studio](../test/testing-store-apps-with-visual-studio.md)
+- [Prueba de aplicaciones para UWP con Visual Studio](../test/unit-test-your-code.md)
 - [Compilar y probar una aplicación de UWP](/azure/devops/pipelines/apps/windows/universal?tabs=vsts)

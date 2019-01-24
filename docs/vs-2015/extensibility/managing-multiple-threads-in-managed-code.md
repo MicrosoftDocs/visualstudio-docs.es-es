@@ -13,12 +13,12 @@ ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0c1438c7425ba3d3fe1071fb2d06d7bc3345d900
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a33b17ddc0eb2d6169761260905b9bf056a4c55e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186737"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802361"
 ---
 # <a name="managing-multiple-threads-in-managed-code"></a>Administración de varios subprocesos en código administrado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

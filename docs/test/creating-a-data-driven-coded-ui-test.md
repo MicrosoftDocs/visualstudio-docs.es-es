@@ -1,8 +1,7 @@
 ---
-title: Creación de una prueba automatizada de IU controlada por datos en Visual Studio
+title: Crear una prueba de IU codificada controlada por datos
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, data-driven
@@ -11,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce47b5e9db018a8c3c525d5202a01f0860def2a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 120ca4ac409641af7b3a2b303830288cbcb0d20a
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940455"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270250"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Crear una prueba de IU codificada controlada por datos
 
 Para probar las distintas condiciones, puede ejecutar las pruebas varias veces con distintos valores de parámetros. Las pruebas de IU codificada controlada por datos son una forma cómoda de hacerlo. Defina los valores de parámetros en un origen de datos, y cada fila de dicho origen de datos será una iteración de la prueba de IU codificada. El resultado general de la prueba se basará en el resultado de todas las iteraciones. Por ejemplo, si se produce un error en una iteración de la prueba, el resultado general es error.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 **Requisitos**
 
@@ -63,11 +64,11 @@ En este ejemplo se crea una prueba de IU codificada que se ejecuta en la aplicac
    }
    ```
 
-5. Use el método `AddNumbers()` para comprobar que se ejecuta la prueba. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Ejecutar pruebas**. (Método abreviado de teclado: **Control**+**R**,**T**).
+5. Use el método `AddNumbers()` para comprobar que se ejecuta la prueba. Coloque el cursor sobre el método de prueba que se muestra anteriormente, abra el menú contextual y seleccione **Ejecutar pruebas**. (Método abreviado de teclado: **Ctrl**+**R**,**T**).
 
     El resultado que indica si se ha superado la prueba se muestra en la ventana del **Explorador de pruebas**. Para abrir la ventana del Explorador de pruebas, en el menú **Prueba**, elija **Ventanas** y después **Explorador de pruebas**.
 
-6. Como un origen de datos puede usarse también para los valores de parámetro de aserción (los cuales usan la prueba para comprobar los valores esperados), vamos a agregar una aserción para validar que la suma de los dos números es correcta. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Generar código para prueba de IU codificada** y después **Usar generador de pruebas de IU codificadas**.
+6. Como un origen de datos puede usarse también para los valores de parámetro de aserción (los cuales usan la prueba para comprobar los valores esperados), vamos a agregar una aserción para validar que la suma de los dos números es correcta. Coloque el cursor en el método de prueba que se muestra anteriormente, abra el menú contextual y seleccione **Generar código para prueba de IU codificada** y después **Usar generador de pruebas de IU codificadas**.
 
     Asigne el control de texto de la calculadora que muestre la suma.
 
@@ -92,7 +93,7 @@ En este ejemplo se crea una prueba de IU codificada que se ejecuta en la aplicac
    }
    ```
 
-9. Compruebe que la prueba se ejecuta utilizando el método `ValidateSum()`. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Ejecutar pruebas**. (Método abreviado de teclado: **Control**+**R**,**T**).
+9. Compruebe que la prueba se ejecuta utilizando el método `ValidateSum()`. Coloque el cursor sobre el método de prueba que se muestra anteriormente, abra el menú contextual y seleccione **Ejecutar pruebas**. (Método abreviado de teclado: **Ctrl**+**R**,**T**).
 
      En este momento, todos los valores de parámetro se definen en sus métodos como constantes. Después, vamos a crear un conjunto de datos para realizar la prueba controlada por datos.
 
@@ -230,7 +231,7 @@ Puede utilizar las cadenas de origen de datos de muestra de la tabla siguiente c
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>P: ¿Por qué no puedo modificar el código en el archivo UIMap.Designer?
 
-**R:** Cualquier cambio que se efectúe en el código del archivo *UIMapDesigner.cs* se sobrescribirá cada vez que se genere código mediante UIMap - Generador de pruebas de IU codificadas. En este ejemplo, y en la mayoría de los casos, los cambios de código necesarios para habilitar una prueba para utilizar un origen de datos pueden introducirse en el archivo de código fuente de la prueba (es decir, *CodedUITest1.cs*).
+**R:** Cualquier cambio que se realice en el código del archivo *UIMapDesigner.cs* se sobrescribirá cada vez que se genere código mediante UIMap - Generador de pruebas automatizadas de IU. En este ejemplo, y en la mayoría de los casos, los cambios de código necesarios para habilitar una prueba para utilizar un origen de datos pueden introducirse en el archivo de código fuente de la prueba (es decir, *CodedUITest1.cs*).
 
 Si tiene que modificar un método grabado, debe copiarlo en el archivo *UIMap.cs* y cambiar el nombre. El archivo *UIMap.cs* se puede usar para invalidar métodos y propiedades en el archivo *UIMapDesigner.cs*. Debe quitar la referencia al método original en el archivo *UITest.cs* codificado y reemplazarlo con el nombre del método cuyo nombre ha cambiado.
 

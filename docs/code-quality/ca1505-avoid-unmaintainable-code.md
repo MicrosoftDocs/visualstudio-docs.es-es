@@ -1,8 +1,7 @@
 ---
-title: 'CA1505: Evitar el código difícil de mantener'
+title: 'CA1505: Evitar código que no se puede mantener'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - AvoidUnmaintainableCode
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aae34f6e999bcf74fdfbae4597b22529863e34f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 250049806eb8765f9cc080f1b2de0b7ae0dd1fce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546920"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864561"
 ---
-# <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: Evitar el código difícil de mantener
+# <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: Evitar código que no se puede mantener
 
 |||
 |-|-|
@@ -36,7 +35,7 @@ ms.locfileid: "45546920"
  Un tipo o método tiene un valor del índice de mantenimiento bajo.
 
 ## <a name="rule-description"></a>Descripción de la regla
- El índice de mantenimiento se calcula mediante el uso de las siguientes métricas: líneas de código, el volumen del programa y complejidad ciclomática. Volumen del programa es una medida de la dificultad de comprensión de un tipo o método que se basa en el número de operadores y operandos en el código. Complejidad ciclomática es una medida de la complejidad estructural del tipo o método. Puede aprender más acerca de las métricas de código en [medir la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md).
+ El índice de mantenimiento se calcula mediante el uso de las siguientes métricas: líneas de código, el volumen del programa y complejidad ciclomática. Volumen del programa es una medida de la dificultad de comprensión de un tipo o método que se basa en el número de operadores y operandos en el código. Complejidad ciclomática es una medida de la complejidad estructural del tipo o método. Puede aprender más acerca de las métricas de código en [medir la complejidad y el mantenimiento del código administrado](../code-quality/code-metrics-values.md).
 
  Un índice de mantenimiento bajo indica que un tipo o método resulta probablemente difícil de mantener y sería un buen candidato para volver a diseñar.
 
@@ -49,4 +48,4 @@ ms.locfileid: "45546920"
 ## <a name="see-also"></a>Vea también
 
 - [Advertencias de mantenimiento](../code-quality/maintainability-warnings.md)
-- [Medir la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+- [Medir la complejidad y el mantenimiento del código administrado](../code-quality/code-metrics-values.md)

@@ -1,9 +1,6 @@
 ---
 title: Acceso global a objetos en los proyectos de Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -28,17 +25,17 @@ helpviewer_keywords:
 - ThisAddin_Startup
 - events [Office development in Visual Studio]
 - ThisAddIn_Shutdown
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 018ffc5c165c8cea7df66911c71f636712df4229
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 843eba9cceefb2360ed24284a80f4359d092fd89
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932046"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909078"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Acceso global a objetos en los proyectos de Office
   Cuando se crea un proyecto de Office, Visual Studio genera automáticamente una clase denominada `Globals` en el proyecto. Puede utilizar la clase `Globals` para tener acceso en tiempo de ejecución a diversos elementos del proyecto desde cualquier código del proyecto.  
@@ -87,5 +84,3 @@ ms.locfileid: "49932046"
  [Elemento host Workbook](../vsto/workbook-host-item.md)   
  [Elemento host Worksheet](../vsto/worksheet-host-item.md)   
  [Escribir código en soluciones de Office](../vsto/writing-code-in-office-solutions.md)  
-  
-  

@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6705c2aa990aef3cf551a94546bf78a64026cecc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3724ad50771ca49460e130bf93ebc244681bd782
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727015"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349613"
 ---
 # <a name="idebugsyncoperation-interface"></a>IDebugSyncOperation (Interfaz)
-Permite usar un motor de secuencia de comandos resumir una operación (por ejemplo, la evaluación de expresiones) que debe llevarse a cabo mientras anidados en un determinado subproceso bloqueado. La interfaz también proporciona un mecanismo para cancelar las operaciones que no responde.  
+Permite que un motor de scripts resumir una operación (por ejemplo, la evaluación de expresiones) que debe llevarse a cabo mientras esté anidada en un determinado subproceso bloqueado. La interfaz también proporciona un mecanismo para cancelar las operaciones que no responde.  
   
  Además de los métodos heredados de `IUnknown`, el `IDebugSyncOperation` interfaz expone los métodos siguientes.  
   

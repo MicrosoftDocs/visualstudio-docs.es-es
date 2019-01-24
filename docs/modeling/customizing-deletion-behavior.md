@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: a4b3df4661b23268fed811799c80cfc31b624a50
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d501e182fa46adef1e0058480baa740ad7703a11
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849156"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940958"
 ---
 # <a name="customizing-deletion-behavior"></a>Personalizar el comportamiento de eliminación
 Normalmente, al eliminar un elemento también se eliminan los elementos relacionados. Se eliminan todas las relaciones conectadas a él y todos los elementos secundarios. Este comportamiento se denomina *eliminar propagación*. Puede personalizar la propagación de la eliminación, por ejemplo, para organizar que se eliminen otros elementos relacionados. Escribiendo código de programa puede hacer que la propagación de la eliminación dependa del estado del modelo. También puede hacer que se produzcan otros cambios en respuesta a una eliminación.
@@ -140,7 +139,7 @@ partial class MusicLibDeleteClosure
 
 2. Se llama a <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> cuando el elemento se ha eliminado. Permanece en el montón de CLR para que se pueda realizar una acción de deshacer si es necesario, pero se desvincula de otros elementos y se quita de `store.ElementDirectory`. Para las relaciones, los roles aún hacen referencia los antiguos encargados de rol.`IsDeleted` es true.
 
-3. Se llama a OnDeleting y OnDeleted cuando el usuario invoca a Undo después de crear un elemento y cuando se repite una eliminación anterior en Redo. Use `this.Store.InUndoRedoOrRollback` para evitar actualizar los elementos del almacén en estos casos. Para obtener más información, consulte [Cómo: usar transacciones para actualizar el modelo](../modeling/how-to-use-transactions-to-update-the-model.md).
+3. Se llama a OnDeleting y OnDeleted cuando el usuario invoca a Undo después de crear un elemento y cuando se repite una eliminación anterior en Redo. Use `this.Store.InUndoRedoOrRollback` para evitar actualizar los elementos del almacén en estos casos. Para obtener más información, vea [Cómo: Usar transacciones para actualizar el modelo](../modeling/how-to-use-transactions-to-update-the-model.md).
 
    Por ejemplo, el código siguiente elimina un Album cuando se elimina su último objeto Song secundario:
 

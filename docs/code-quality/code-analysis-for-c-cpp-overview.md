@@ -2,7 +2,6 @@
 title: Análisis de código para obtener información general de C/C++
 ms.date: 04/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - annotations, code analysis
@@ -23,12 +22,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35f694d9cc397800249dd9b4acd86bf63d22ad93
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 534421fb2a455fafad785a3bc8d4e6e7013b3931
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320714"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896401"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Análisis de código para información general de C/C ++
 
@@ -52,24 +51,24 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="pragma-support"></a>compatibilidad con #pragma
 
-Puede usar el `#pragma` directiva para tratar advertencias como errores; habilitar o deshabilitar las advertencias y suprimir advertencias de líneas de código individuales. Para obtener más información, consulte [Cómo: establecer propiedades de análisis de código para proyectos de C o C++](how-to-set-code-analysis-properties-for-c-cpp-projects.md).
+Puede usar el `#pragma` directiva para tratar advertencias como errores; habilitar o deshabilitar las advertencias y suprimir advertencias de líneas de código individuales. Para obtener más información, vea [Cómo: Establecer propiedades de análisis de código para los proyectos de C o C++](how-to-set-code-analysis-properties-for-c-cpp-projects.md).
 
 ## <a name="annotation-support"></a>Compatibilidad con la anotación
 
-Las anotaciones de mejoran la precisión del análisis de código. Las anotaciones proporcionan información adicional sobre condiciones previas y posteriores en los parámetros de función y tipos de valor devuelto. Para obtener más información, vea [Cómo: especificar información de código adicional mediante __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
+Las anotaciones de mejoran la precisión del análisis de código. Las anotaciones proporcionan información adicional sobre condiciones previas y posteriores en los parámetros de función y tipos de valor devuelto. Para obtener más información, vea [Cómo: Especificar información de código adicional mediante __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
 
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>Ejecutar la herramienta de análisis como parte de la directiva de protección
 
-Es posible que desee exigir que todas origen código protecciones cumplan determinadas directivas. En concreto, desea asegurarse de que se ejecuten un análisis como un paso de la compilación local más reciente. Para obtener más información acerca de cómo habilitar una directiva de protección de análisis de código, consulte [creación y uso de directivas análisis de código en el repositorio](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+Es posible que desee exigir que todas origen código protecciones cumplan determinadas directivas. En concreto, desea asegurarse de que se ejecuten un análisis como un paso de la compilación local más reciente. Para obtener más información acerca de cómo habilitar una directiva de protección de análisis de código, consulte [creación y uso de directivas análisis de código en el repositorio](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
 
 ## <a name="team-build-integration"></a>Integración de Team Build
 
-Puede usar las características integradas del sistema de compilación para ejecutar la herramienta de análisis de código como un paso de la [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] proceso de compilación. Para obtener más información, consulte [canalizaciones de Azure](/azure/devops/pipelines/index?view=vsts).
+Puede usar las características integradas del sistema de compilación para ejecutar la herramienta de análisis de código como un paso de la [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] proceso de compilación. Para obtener más información, consulte [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
 ## <a name="see-also"></a>Vea también
 
 - [Inicio rápido: Análisis de código para C/C ++](quick-start-code-analysis-for-c-cpp.md)
-- [Tutorial: Analizar código de C/c ++ en previsión de defectos](walkthrough-analyzing-c-cpp-code-for-defects.md)
+- [Tutorial: Analizar el código de C/c ++ en previsión de defectos](walkthrough-analyzing-c-cpp-code-for-defects.md)
 - [Análisis de código para advertencias de C/C++](code-analysis-for-c-cpp-warnings.md)
 - [Usar los comprobadores de C++ Core Guidelines](using-the-cpp-core-guidelines-checkers.md)
 - [Referencia de C++ Core Guidelines Comprobador](code-analysis-for-cpp-corecheck.md)

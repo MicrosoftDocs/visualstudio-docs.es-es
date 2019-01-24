@@ -19,12 +19,12 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 15d8d4cfb1f3a9067d3fc18933a508ecf60794e4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d7fcb0a838f2849ab74d202785709164ec5af6d7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849052"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740655"
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio Shell (aislado)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

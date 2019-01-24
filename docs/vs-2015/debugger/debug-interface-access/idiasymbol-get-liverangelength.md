@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_liveRangeLength
 ms.assetid: ffcce3cc-085c-44eb-8145-46e3819c54f9
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c8007f20ec59995c6b9142604182346680e32a9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ba77608499260e4d50f12a71ed8f1782a987a04
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870398"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51728874"
 ---
 # <a name="idiasymbolgetliverangelength"></a>IDiaSymbol::get_liveRangeLength
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Devuelve la longitud del intervalo de direcciones en el que el símbolo local es
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT get_liveRangeLength (   
+HRESULT get_liveRangeLength (   
    ULONGLONG* length  
 );  
 ```  

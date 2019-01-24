@@ -1,8 +1,6 @@
 ---
 title: Novedades del depurador de Visual Studio 2017 | Microsoft Docs
-ms.custom: ''
 ms.date: 01/22/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,33 +18,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 342cb6c1f014c94bd86363415177ec747b0dc1b7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: fbc48fdc93feebf2f78b6d11ae2b7cc744c46f98
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943146"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269740"
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>Novedades del depurador de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 El depurador incluye estas nuevas características:
 
-- Nuevo en 15.5, el **Snapshot Debugger** toma una instantánea de sus aplicaciones en producción cuando se ejecuta el código que le interesen. Para indicar al depurador que tome una instantánea, establezca puntos de acoplamiento y puntos de registro en el código. El depurador le permite ver exactamente qué salió mal, sin afectar el tráfico de la aplicación de producción. El Depurador de instantáneas puede permitirle disminuir considerablemente el tiempo que tarda en resolver los problemas que se producen en los entornos de producción.
+- Novedad de la versión 15.5: el **Depurador de instantáneas** toma una instantánea de las aplicaciones en producción cuando se ejecuta el código que le interesa. Para indicar al depurador que tome una instantánea, establezca puntos de acoplamiento y puntos de registro en el código. El depurador le permite ver exactamente qué salió mal, sin afectar el tráfico de la aplicación de producción. El Depurador de instantáneas puede permitirle disminuir considerablemente el tiempo que tarda en resolver los problemas que se producen en los entornos de producción.
 
     La colección de instantáneas está disponible para las siguientes aplicaciones web que se ejecutan en Azure App Service:
 
   * Aplicaciones ASP.NET que se ejecutan en .NET Framework 4.6.1 o versiones posteriores.
   * Aplicaciones ASP.NET Core que se ejecutan en .NET Core 2.0 o posteriores en Windows.
 
-    Para obtener más información, consulte [depurar aplicaciones ASP.NET activas con el depurador de instantáneas](../debugger/debug-live-azure-applications.md).
+    Para obtener más información, vea [Depurar aplicaciones de ASP.NET Azure activas con el depurador de instantáneas](../debugger/debug-live-azure-applications.md).
 
 - Novedades de la versión 15.5 de Visual Studio Enterprise, **step-back de IntelliTrace** automáticamente toma una instantánea de la aplicación en cada punto de interrupción y el depurador de evento de paso. Las instantáneas registradas le permiten volver a puntos de interrupción anteriores y ver el estado de la aplicación tal y como estaba en un momento anterior. La característica step-back de IntelliTrace puede permitirle ahorrar tiempo cuando desea ver el estado anterior de la aplicación, pero no desea reiniciar la depuración ni volver a crear el estado de aplicación que se desea.
 
     Para poder navegar y ver las instantáneas, use los botones **Retroceder paso a paso** y **Avanzar paso a paso** en la barra de herramientas de depuración. Estos botones permiten navegar por los eventos que aparecen en la pestaña **Eventos** en la ventana **Herramientas de diagnóstico**.
 
-    ![Paso hacia atrás y adelante botones](../debugger/media/intellitrace-step-back-icons-description.png  "botones Retroceder paso a paso y reenviar")
+    ![Botones Retroceder paso a paso y Avanzar paso a paso](../debugger/media/intellitrace-step-back-icons-description.png  "Step Backward and Forward buttons")
 
-    Para obtener más información, consulte el [inspeccionar el estado anterior de aplicación con IntelliTrace](../debugger/view-historical-application-state.md) página.
+    Para obtener más información, vea la página [Inspeccionar el estado de aplicación anterior mediante step-back de IntelliTrace en Visual Studio](../debugger/view-historical-application-state.md).
 
 - El **aplicación auxiliar de excepciones** reemplaza el Asistente de excepciones y aparece en un cuadro de diálogo no modal donde se produjo el error. El **aplicación auxiliar de excepciones** proporciona un acceso más rápido a las excepciones internas, análisis adicionales por el depurador (si está disponible) y acceso inmediato a la **configuración de excepciones** para la excepción. También se pueden arrastrar a la aplicación auxiliar de excepciones a una vista flotante si está bloqueando algo que necesita para ver.
 
@@ -73,4 +71,4 @@ Para obtener más información sobre estas nuevas características, consulte el 
 ## <a name="see-also"></a>Vea también
 
 - [Depurar en Visual Studio](../debugger/index.md)
-- [Guía de características del depurador](../debugger/debugger-feature-tour.md)
+- [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)

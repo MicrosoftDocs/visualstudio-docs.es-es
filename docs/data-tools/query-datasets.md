@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2276828a67cec2562063d220ef3173d98fdf487b
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: b3b51946c9fbf6ba38249c8ca7056179b58ee8a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174298"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852497"
 ---
 # <a name="query-datasets"></a>Consultar conjuntos de datos
 Para buscar registros específicos de un conjunto de datos, use el `FindBy` método en la tabla de datos, escribir su propia instrucción foreach para recorrer la colección de filas de la tabla, o use [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).

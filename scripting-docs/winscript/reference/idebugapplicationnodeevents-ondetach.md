@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b5f1ccc35e83f4fa016b5ff3dae8fac867bb8d1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 86a19a0c8ff2ce64cf524ae9b5f0ad258409f2df
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726075"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094476"
 ---
 # <a name="idebugapplicationnodeeventsondetach"></a>IDebugApplicationNodeEvents::onDetach
-Controla un evento que lo que significa que el objeto de nodo de la aplicación de depuración se separó de un nodo primario.  
+Controla un evento lo que significa que el objeto de nodo de la aplicación de depuración se separó de un nodo primario.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT onDetach();  
 ```  
   
@@ -45,7 +45,7 @@ HRESULT onDetach();
 |`S_OK`|El método se realizó correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método controla un evento que lo que significa que el objeto de nodo de la aplicación de depuración se separó de un nodo primario.  
+ Este método controla un evento lo que significa que el objeto de nodo de la aplicación de depuración se separó de un nodo primario.  
   
  Los implementadores de la `IDebugApplicationNode` interfaz se genera este evento.  
   

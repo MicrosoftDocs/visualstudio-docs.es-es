@@ -2,7 +2,6 @@
 title: Localizar aplicaciones
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Basic code, international applications
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b84223f9758302064622313cd5406b10c872f170
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: bbde4f1afb539754708582ebfc85495e5de94e98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179910"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966854"
 ---
 # <a name="localizing-applications"></a>Localizar aplicaciones
 
@@ -42,6 +41,6 @@ ms.locfileid: "39179910"
 
  [Globalizar Windows Forms](/dotnet/framework/winforms/advanced/globalizing-windows-forms) Proporciona vínculos a páginas sobre la creación de aplicaciones Windows que admiten varias referencias culturales.
 
- [Globalización y localización](http://msdn.microsoft.com/Library/8ef3838e-9d05-4236-9dd0-ceecff9df80d) Proporciona vínculos a páginas sobre la creación de aplicaciones web que admiten varias referencias culturales.
+ [Globalización y localización](https://msdn.microsoft.com/Library/8ef3838e-9d05-4236-9dd0-ceecff9df80d) Proporciona vínculos a páginas sobre la creación de aplicaciones web que admiten varias referencias culturales.
 
- [Prácticas recomendadas para desarrollar aplicaciones de uso internacional](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) Proporciona información sobre programación para usuarios internacionales, por ejemplo, problemas de diseño y terminología.
+ [Prácticas recomendadas para desarrollar aplicaciones de uso internacional](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps) Proporciona información sobre programación para usuarios internacionales, por ejemplo, problemas de diseño y terminología.

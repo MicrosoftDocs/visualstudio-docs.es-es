@@ -2,7 +2,6 @@
 title: Ejecución simbólica dinámica | Herramientas de prueba para desarrolladores de Microsoft IntelliTest
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Dynamic symbolic execution
@@ -11,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 14aa15d53977167a61d5570d4bc2ac7edffb197d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d08094f122ace8908da7800cba84815b201154db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511657"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834677"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Generación de entradas con la ejecución simbólica dinámica
 
@@ -67,7 +66,7 @@ Posteriormente en el análisis, como se detectan más métodos accesibles, tanto
 El [solucionador de restricciones](#constraint-solver) de IntelliTest determina los valores de entrada de prueba de tipos primitivos como **byte**, **int** y **float**, entre otros, para desencadenar diferentes rutas de ejecución para la prueba y el programa sometido a prueba.
 
 <a name="objects"></a>
-## <a name="objects"></a>Objetos
+## <a name="objects"></a>de la empresa
 
 IntelliTest puede [crear instancias de clases .NET existentes](#existing-classes) o puede usar IntelliTest para [crear objetos ficticios](#parameterized-mocks) automáticamente que implementen una interfaz específica y se comporten de diferentes maneras dependiendo del uso.
 
@@ -142,8 +141,8 @@ La clase estática [PexChoose](static-helper-classes.md#pexchoose) puede usarse 
 <a name="further-reading"></a>
 ## <a name="further-reading"></a>Información adicional
 
-* [¿Cómo funciona?](https://blogs.msdn.microsoft.com/visualstudioalm/2014/12/11/smart-unit-tests-a-mental-model/)
+* [¿Cómo funciona?](https://blogs.msdn.microsoft.com/devops/2014/12/11/smart-unit-tests-a-mental-model/)
 
 ## <a name="got-feedback"></a>¿Tiene comentarios?
 
-Publique sus ideas y solicitudes de características en [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).
+Publique sus ideas y solicitudes de características en [Comunidad de desarrolladores](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

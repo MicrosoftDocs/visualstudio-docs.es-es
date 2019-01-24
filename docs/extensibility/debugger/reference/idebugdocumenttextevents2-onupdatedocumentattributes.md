@@ -1,9 +1,6 @@
 ---
 title: IDebugDocumentTextEvents2::onUpdateDocumentAttributes | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDocumentTextEvents2::OnUpdateDocumentAttributes
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3bda3f7869715b3c0ab08d64cdb7ef1f13ca4898
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f0cfcaf53b9b9ee42ce7acd1a7a378885b741e44
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816734"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880931"
 ---
 # <a name="idebugdocumenttextevents2onupdatedocumentattributes"></a>IDebugDocumentTextEvents2::onUpdateDocumentAttributes
 Notifica al receptor del evento que se han actualizado los atributos del documento.  
@@ -28,13 +25,13 @@ Notifica al receptor del evento que se han actualizado los atributos del documen
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT onUpdateDocumentAttributes(   
+HRESULT onUpdateDocumentAttributes(   
    TEXT_DOC_ATTR_2 textdocattr  
 );  
 ```  
   
 ```csharp  
-int onUpdateDocumentAttributes(   
+int onUpdateDocumentAttributes(   
    enum_TEXT_DOC_ATTR_2 textdocattr  
 );  
 ```  

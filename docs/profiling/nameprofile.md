@@ -1,8 +1,6 @@
 ---
 title: NameProfile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - NameProfile
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df6fce197a184167b66025191f43b07ebd08ffa7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fccec3a48b4ae4fa640f95b2884b11b61f2aae06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819594"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846787"
 ---
 # <a name="nameprofile"></a>NameProfile
 La función `NameProfile` asigna una cadena al subproceso o el proceso especificado.  

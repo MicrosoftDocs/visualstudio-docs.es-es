@@ -1,8 +1,7 @@
 ---
-title: Pruebas unitarias en Visual Studio
+title: Pruebas unitarias
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, unit tests
@@ -13,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e9bb75c6d7265ca66ccc0922e2d26deaa4d7857a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1b036a9a34711d82194ea3c41acdb12651978446
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874844"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868646"
 ---
 # <a name="unit-test-your-code"></a>Prueba unitaria del código
 
@@ -44,14 +43,14 @@ Utilice los temas siguientes para facilitar la comprensión y la creación de pr
 
 |Tareas|Temas relacionados|
 |-|-----------------------|
-|**Guías rápidas y tutoriales**: utilice los siguientes temas para aprender a hacer pruebas unitarias en Visual Studio a partir de ejemplos de código.|-   [Tutorial: Crear y ejecutar pruebas unitarias para código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [Inicio rápido: Desarrollo controlado por pruebas con el Explorador de pruebas](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Agregar pruebas unitarias a aplicaciones C++ existentes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)|
-|**Hacer pruebas unitarias con el Explorador de pruebas**: aprenda cómo el Explorador de pruebas puede ayudar a crear pruebas unitarias más productivas y eficaces.|-   [Conceptos básicos de prueba unitaria](../test/unit-test-basics.md)<br />-   [Crear un proyecto de prueba unitaria](../test/create-a-unit-test-project.md)<br />-   [Ejecutar pruebas unitarias con el Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md)<br />-   [Instalar marcos de prueba unitaria de terceros](../test/install-third-party-unit-test-frameworks.md)|
-|**Pruebas unitarias de código C++**|-   [Escribir pruebas unitarias para C/C ++ con el marco de pruebas unitarias de Microsoft para C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|
+|**Inicios rápidos y tutoriales:** use los temas siguientes para obtener información sobre las pruebas unitarias en Visual Studio a partir de ejemplos de código.|-   [Tutorial: Creación y ejecución de pruebas unitarias para código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [Inicio rápido: Desarrollo controlado por pruebas con el Explorador de pruebas](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Agregar pruebas unitarias a aplicaciones C++ existentes](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
+|**Pruebas unitarias con el Explorador de pruebas:** obtenga información sobre cómo el Explorador de pruebas puede ayudar a crear pruebas unitarias más productivas y eficaces.|-   [Conceptos básicos de prueba unitaria](../test/unit-test-basics.md)<br />-   [Crear un proyecto de prueba unitaria](../test/create-a-unit-test-project.md)<br />-   [Ejecutar pruebas unitarias con el Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md)<br />-   [Instalar marcos de prueba unitaria de terceros](../test/install-third-party-unit-test-frameworks.md)|
+|**Pruebas unitarias de código C++**|-   [Escribir pruebas unitarias para C/C ++ con el marco de pruebas unitarias de Microsoft para C++](../test/writing-unit-tests-for-c-cpp.md)|
 |**Aislamiento de pruebas unitarias**|-   [Aislar el código sometido a prueba con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|
-|**Utilizar cobertura de código para identificar qué proporción del código del proyecto se prueba:** obtenga información sobre la característica de cobertura de código de las herramientas de prueba de Visual Studio.|-   [Utilizar cobertura de código para determinar la cantidad de código que se está probando](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**Realice análisis de esfuerzo y rendimiento usando pruebas de carga:** puede crear una prueba de carga y agregarle sus pruebas unitarias para ayudar a aislar los problemas de rendimiento y esfuerzo de la aplicación.|-   [Prueba de carga (Azure Test Plans y TFS)](/azure/devops/test/load-test/index?view=vsts)|
-|**Establezca puertas de calidad:** puede crear puertas de calidad para exigir que las pruebas se ejecuten antes de insertar el código en el repositorio o combinarlo, y así garantizar la calidad del código.|-   [Directivas de inserción en el repositorio (Azure Repos y TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
-|**Establecer opciones de prueba:** por ejemplo, puede especificar dónde se almacenan los resultados de las pruebas.|[Configurar pruebas unitarias mediante un archivo .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
+|**Uso de cobertura de código para identificar qué proporción del código del proyecto se prueba:** Obtenga información sobre la característica de cobertura de código de las herramientas de pruebas de Visual Studio.|-   [Utilizar cobertura de código para determinar la cantidad de código que se está probando](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
+|**Análisis de esfuerzo y rendimiento mediante pruebas de carga:** puede crear una prueba de carga y agregarle las pruebas unitarias para ayudar a aislar los problemas de rendimiento y esfuerzo de la aplicación.|-   [Prueba de carga (Azure Test Plans y TFS)](/azure/devops/test/load-test/index?view=vsts)|
+|**Establecimiento de puertas de calidad:** puede crear puertas de calidad para exigir que las pruebas se ejecuten antes de insertar el código en el repositorio o combinarlo, y así garantizar la calidad del código.|-   [Directivas de inserción en el repositorio (Azure Repos y TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
+|**Establecimiento de opciones de prueba:** por ejemplo, puede especificar dónde se almacenan los resultados de las pruebas.|[Configurar pruebas unitarias mediante un archivo .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>Documentación de referencia de API
 

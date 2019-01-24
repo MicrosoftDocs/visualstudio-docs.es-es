@@ -2,7 +2,6 @@
 title: Agregar elemento existente (Comando)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - project.addexistingitem
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4647fd5ca2cc5199c1f9b85e5237dd57d95dbbd
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: fd74b6af128ee8b624c022cbbf72c5de4edc7997
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704556"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873994"
 ---
 # <a name="add-existing-item-command"></a>Agregar elemento existente (Comando)
 Agrega un archivo existente a la solución actual y lo abre.
@@ -58,4 +57,4 @@ File.AddExistingItem filename [/e:editorname]
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Cuadro Buscar/Comando](../../ide/find-command-box.md)
-- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,9 +1,6 @@
 ---
 title: IEnumDebugFrameInfo2::Next | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumDebugFrameInfo2::Next
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1e5cd32e9ed7a82b82dde737438048be00fdeb4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0956c8deee664e457e6f509683cf8d42e1659ce6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833920"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916957"
 ---
 # <a name="ienumdebugframeinfo2next"></a>IEnumDebugFrameInfo2::Next
 Devuelve el siguiente conjunto de elementos de la enumeración.  

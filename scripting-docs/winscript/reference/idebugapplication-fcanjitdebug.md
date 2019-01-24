@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::FCanJitDebug | Documentos de Microsoft
+title: IDebugApplication::FCanJitDebug | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8ca6b990011252bde581168a272da1041dc24f41
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6808c8bb7e27e7b416e79b2f23e323c3ae3a528f
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725225"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344842"
 ---
 # <a name="idebugapplicationfcanjitdebug"></a>IDebugApplication::FCanJitDebug
 Determina si un depurador de just-in-time (JIT) está registrado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 BOOL FCanJitDebug();  
 ```  
   
@@ -38,7 +38,7 @@ BOOL FCanJitDebug();
  Este método no toma ningún parámetro.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si el método tiene éxito y se registra un depurador JIT, el método devuelve `TRUE`. De lo contrario, devuelve `FALSE`.  
+ Si el método se ejecuta correctamente y se registra un depurador JIT, el método devuelve `TRUE`. De lo contrario, devuelve `FALSE`.  
   
 ## <a name="remarks"></a>Comentarios  
  Este método determina si un depurador JIT está registrado.  

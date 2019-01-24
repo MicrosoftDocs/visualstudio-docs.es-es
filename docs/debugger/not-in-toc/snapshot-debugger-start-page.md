@@ -2,19 +2,18 @@
 title: Página de inicio para el depurador de instantáneas
 ms.date: 07/14/2018
 robots: noindex, nofollow
-ms.technology: vs-ide-debug
 ms.topic: reference
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7b5b48aeeb0cfcaeed72a06bfb6709892c58de7
-ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
-ms.translationtype: MT
+ms.openlocfilehash: c9c2e5ec77a2abf07ca396166d4cc2ae9792cacc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "39310121"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853741"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Introducción a Snapshot Debugger
 
@@ -68,7 +67,7 @@ El mismo sitio Web está todavía activo y los usuarios finales no se ve afectad
 
 Puede encontrar más información sobre el depurador de instantáneas en el [página de documentos](../debug-live-azure-applications.md). Más información acerca de cómo establecer las condiciones para que sea más fácil encontrar errores.
 
-## <a name="dont-show-me-this-again"></a>No ' mostrar de nuevo
+## <a name="dont-show-me-this-again"></a>No volver a mostrar
 
 Para que nunca la página de inicio del depurador de instantáneas volver a mostrar cuando se conecta el depurador de instantáneas, cambie el **mostrar la página "Introducción" en el inicio de sesión** opción **herramientas**  >   **Opciones de** > **depurador de instantáneas**. 
 

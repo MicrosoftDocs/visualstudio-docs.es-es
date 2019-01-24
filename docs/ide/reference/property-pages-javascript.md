@@ -2,7 +2,6 @@
 title: Página de propiedades, JavaScript
 ms.date: 06/21/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - javascript.project.property.debugging.debuggertype
@@ -18,15 +17,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5690abe8e155c33d8e998ea0a18749e172da7e34
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 83c7a2b0d0004b1f96a1c46ab120814179f77d26
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38797537"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956536"
 ---
 # <a name="property-pages-javascript"></a>Página de propiedades, JavaScript
-Las **páginas Propiedades** proporcionan acceso a la configuración del proyecto. Puede usar las páginas que aparecen en las **páginas Propiedades** para cambiar las propiedades del proyecto.
+Las **Páginas de propiedades** proporcionan acceso a la configuración del proyecto. Puede usar las páginas que aparecen en las **páginas Propiedades** para cambiar las propiedades del proyecto.
 
 Para obtener acceso a las propiedades del proyecto, seleccione un nodo de proyecto en el **Explorador de soluciones**. En el menú **Proyecto**, haga clic en **Propiedades**.
 
@@ -73,7 +72,7 @@ Las siguientes páginas y opciones aparecen en las **páginas Propiedades**.
 
  Especifica el host predeterminado para el depurador.
 
--   Seleccione **Equipo Local** para iniciar la aplicación en el equipo host de Visual Studio. Para obtener más información, vea [Ejecutar aplicaciones en el equipo local](../../debugger/run-windows-store-apps-on-the-local-machine.md).
+-   Seleccione **Equipo Local** para iniciar la aplicación en el equipo host de Visual Studio. Para obtener más información, vea [Ejecutar aplicaciones en el equipo local](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
 
 -   Seleccione **Simulador** para iniciar la aplicación en el simulador. Para obtener más información, vea [Ejecutar aplicaciones en el simulador](../../debugger/run-windows-store-apps-in-the-simulator.md).
 

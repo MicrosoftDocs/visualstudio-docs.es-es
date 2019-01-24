@@ -1,8 +1,7 @@
 ---
-title: Creación de plantillas de elementos de varios archivos para Visual Studio
+title: Creación de plantillas de elementos de varios archivos
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
@@ -11,14 +10,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0ba36e666daf7940971dff587aa483d62f97b6a9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0bffe46fa392a09b29eef224aaa50f5e02db826a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942161"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877658"
 ---
-# <a name="how-to-create-multi-file-item-templates"></a>Cómo: Crear plantillas de elementos de varios archivos
+# <a name="how-to-create-multi-file-item-templates"></a>Procedimiento Crear plantillas de elemento de varios archivos
 
 Puede que las plantillas de elementos solo especifiquen un elemento, pero a veces el elemento se compone de varios archivos. Por ejemplo, una plantilla de elemento de Windows Forms requiere los tres archivos siguientes:
 
@@ -32,7 +31,7 @@ Las plantillas de elementos de varios archivos requieren parámetros para garant
 
 ## <a name="to-create-a-multi-file-item-template-by-using-the-export-template-wizard"></a>Para crear una plantilla de elemento de varios archivos mediante el Asistente para exportar plantillas
 
-Puede crear una plantilla de elementos de varios archivos igual que una plantilla de elemento de archivo único. Vea [Cómo: Crear plantillas de elementos](../ide/how-to-create-item-templates.md). En la página **Seleccionar elemento para exportar** del asistente, seleccione el archivo que tiene archivos dependientes (por ejemplo, un archivo de formulario de Windows Forms). El asistente incluye automáticamente en la plantilla los archivos dependientes, como el diseñador y los archivos de recursos.
+Puede crear una plantilla de elementos de varios archivos igual que una plantilla de elemento de archivo único. Vea [Cómo: Crear plantillas de elemento](../ide/how-to-create-item-templates.md). En la página **Seleccionar elemento para exportar** del asistente, seleccione el archivo que tiene archivos dependientes (por ejemplo, un archivo de formulario de Windows Forms). El asistente incluye automáticamente en la plantilla los archivos dependientes, como el diseñador y los archivos de recursos.
 
 ## <a name="to-manually-create-a-multi-file-item-template"></a>Para crear manualmente una plantilla de elemento de varios archivos
 
@@ -59,7 +58,7 @@ Puede crear una plantilla de elementos de varios archivos igual que una plantill
 
    Los archivos seleccionados se comprimen en un archivo *.zip*.
 
-1. Copie el archivo *.zip* en la ubicación de la plantilla de elemento del usuario. De forma predeterminada, el directorio es *%USERPROFILE%\Documentos\Visual Studio \<versión\>\Templates\ItemTemplates*. Para más información, vea [Cómo: Localizar y organizar plantillas](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+1. Copie el archivo *.zip* en la ubicación de la plantilla de elemento del usuario. De forma predeterminada, el directorio es *%USERPROFILE%\Documentos\Visual Studio \<versión\>\Templates\ItemTemplates*. Para obtener más información, vea [Cómo: Localizar y organizar plantillas](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 1. Cierre Visual Studio y vuelva a abrirlo.
 
@@ -97,6 +96,6 @@ En el ejemplo siguiente se muestra una plantilla de Windows Forms. Cuando se cre
 ## <a name="see-also"></a>Vea también
 
 - [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
-- [Cómo: Crear plantillas de elementos](../ide/how-to-create-item-templates.md)
+- [Cómo: Crear plantillas de elemento](../ide/how-to-create-item-templates.md)
 - [Parámetros de plantilla](../ide/template-parameters.md)
 - [Cómo: Sustituir parámetros en una plantilla](../ide/how-to-substitute-parameters-in-a-template.md)

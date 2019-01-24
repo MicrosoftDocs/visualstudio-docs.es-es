@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: obtener un servicio | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Obtener un servicio | Documentos de Microsoft
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, consuming
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7b28f018ba92ad2ab8a266311ac2e71fd910440
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 635a02daf6f6501679cc2a38cd252b1e1ebec7a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951384"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990034"
 ---
-# <a name="how-to-get-a-service"></a>Cómo: obtener un servicio
+# <a name="how-to-get-a-service"></a>Procedimiento Obtener un servicio
 A menudo necesitará obtener servicios de Visual Studio para tener acceso a características diferentes. En general, un servicio de Visual Studio proporciona una o más interfaces que puede usar. Puede obtener la mayoría de los servicios desde un VSPackage.  
   
  Cualquier VSPackage que se derive de <xref:Microsoft.VisualStudio.Shell.Package> y que se ha ubicado correctamente puede pedir a cualquier servicio global. Dado que el `Package` la clase implementa <xref:System.IServiceProvider>, cualquier VSPackage que se derive de `Package` también es un proveedor de servicios.  
@@ -42,7 +39,7 @@ A menudo necesitará obtener servicios de Visual Studio para tener acceso a cara
   
    ```  
   
-    Este código obtiene un servicio SVsActivityLog y lo convierte a un <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interfaz, que puede usarse para escribir en el registro de actividad. Para obtener un ejemplo, vea [Cómo: usar el registro de actividad](../extensibility/how-to-use-the-activity-log.md).  
+    Este código obtiene un servicio SVsActivityLog y lo convierte a un <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interfaz, que puede usarse para escribir en el registro de actividad. Para obtener un ejemplo, vea [Cómo: Usar el registro de actividad](../extensibility/how-to-use-the-activity-log.md).  
   
 4. Compile la solución y comience la depuración. Aparece la instancia experimental.  
   
@@ -53,7 +50,7 @@ A menudo necesitará obtener servicios de Visual Studio para tener acceso a cara
   
  Estático <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> método se basa en un proveedor de servicios en caché que se inicializa la primera vez que se deriva de cualquier VSPackage <xref:Microsoft.VisualStudio.Shell.Package> está situado.  
   
- Dado que se llama al constructor de VSPackage antes de que se basa en un VSPackage, servicios globales son normalmente no está disponibles desde dentro del constructor de VSPackage. Consulte [Cómo: solucionar problemas de servicios](../extensibility/how-to-troubleshoot-services.md) para encontrar una solución.  
+ Dado que se llama al constructor de VSPackage antes de que se basa en un VSPackage, servicios globales son normalmente no está disponibles desde dentro del constructor de VSPackage. Vea [Cómo: Solucionar problemas de servicios](../extensibility/how-to-troubleshoot-services.md) para encontrar una solución.  
   
  Este es un ejemplo de la forma de obtener un servicio en una ventana de herramientas o en otro elemento que no sean VSPackage.  
   
@@ -70,7 +67,7 @@ if (log == null) return;
  Aquí le mostramos cómo obtener un servicio del objeto DTE.  
   
 ```csharp  
-// Start with the DTE object, for example:   
+// Start with the DTE object, for example:   
 // using EnvDTE;  
 // DTE dte = (DTE)GetService(typeof(DTE));  
   
@@ -86,6 +83,6 @@ if (sp != null)
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: proporcionar un servicio](../extensibility/how-to-provide-a-service.md)   
+ [Cómo: Proporcionar un servicio](../extensibility/how-to-provide-a-service.md)   
  [Usar y proporcionan servicios](../extensibility/using-and-providing-services.md)   
  [Conceptos básicos del servicio](../extensibility/internals/service-essentials.md)

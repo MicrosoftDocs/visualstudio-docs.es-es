@@ -1,9 +1,6 @@
 ---
 title: 'Tutorial: Llamar a código desde VBA en un proyecto de Visual Basic'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bd766e8ce1896c0b53d32cbe3f4174da5bc934d7
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: b58f2cb729b84d814addc07dcb9840e26bb2a767
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808942"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917662"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>Tutorial: Llamar a código desde VBA en un proyecto de Visual Basic
   Este tutorial muestra cómo llamar a un método en una personalización de nivel de documento para Microsoft Office Word desde el código de Visual Basic para Aplicaciones (VBA) del documento. El procedimiento implica tres pasos básicos: agregar un método a la clase de elemento host `ThisDocument` , exponer el método a código VBA y llamar al método desde código VBA del documento.  
@@ -72,7 +69,7 @@ ms.locfileid: "38808942"
 3.  En la cinta de opciones, haga clic en la pestaña **Desarrollador** .  
   
     > [!NOTE]  
-    >  Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, consulte [Cómo: mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, vea [Cómo: Mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 4.  En el grupo **Código** , haga clic en **Visual Basic**.  
   
@@ -214,15 +211,13 @@ ms.locfileid: "38808942"
 ## <a name="next-steps"></a>Pasos siguientes  
  Puede obtener más información sobre cómo llamar a código en soluciones de Office desde VBA en estos temas:  
   
--   Llamar a código en una personalización de Visual C# desde VBA. Este proceso es diferente del proceso de Visual Basic. Para obtener más información, consulte [Tutorial: llamar a código desde VBA en un Visual C&#35; proyecto](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
+-   Llamar a código en una personalización de Visual C# desde VBA. Este proceso es diferente del proceso de Visual Basic. Para obtener más información, vea [Tutorial: Llamar a código desde VBA en un Visual C&#35; proyecto](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
   
--   Llamar a código en un complemento de VSTO desde VBA. Para obtener más información, consulte [Tutorial: llamar a código en un complemento de VSTO desde VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+-   Llamar a código en un complemento de VSTO desde VBA. Para obtener más información, vea [Tutorial: Llamar a código en un complemento de VSTO desde VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Combinar VBA y personalizaciones de nivel de documento](../vsto/combining-vba-and-document-level-customizations.md)   
  [Programar personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md)   
- [Cómo: exponer código a VBA en un proyecto de Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [Cómo: exponer código a VBA en un Visual C&#35; proyecto](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [Cómo: Exponer código a VBA en un proyecto de Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
+ [Cómo: Exponer código a VBA en un Visual C&#35; proyecto](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
  [Tutorial: Llamar a código desde VBA en un Visual C&#35; proyecto](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)  
-  
-  

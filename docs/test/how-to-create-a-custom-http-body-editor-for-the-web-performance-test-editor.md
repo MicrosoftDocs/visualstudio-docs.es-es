@@ -1,5 +1,5 @@
 ---
-title: Creación de un editor de cuerpo HTTP personalizado para el Editor de pruebas de rendimiento web en Visual Studio
+title: Creación de un editor de cuerpo HTTP personalizado para el Editor de pruebas de rendimiento web
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,19 +9,20 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 338aade9ddef3c4ef571ea2a5bffc67064c81869
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 63b1c220edfccdbcd10f6d0380dc37324511507b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862468"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833441"
 ---
-# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Creación de un editor de cuerpo HTTP personalizado para el Editor de pruebas de rendimiento web
+# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Procedimiento para crear un editor de cuerpo HTTP personalizado para el Editor de pruebas de rendimiento web
 
 Puede crear un editor de contenido personalizado que le permita editar el contenido del texto de la cadena o del cuerpo binario de una solicitud de servicio web; por ejemplo, SOAP, REST, asmx, wcf, RIA y otros tipos de solicitudes de servicio web.
 
- Puede implementar estos tipos de editores:
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Puede implementar estos tipos de editores:
 
 -   **Editor de contenido de cadena** Se implementa usando la interfaz <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin>.
 
@@ -328,6 +329,6 @@ Para más información, vea [Página de aplicación, Diseñador de proyectos (C#
 - [Cómo: Crear un complemento de nivel de solicitud](../test/how-to-create-a-request-level-plug-in.md)
 - [Codificación de una regla de extracción personalizada para una prueba de rendimiento web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
 - [Codificación de una regla de validación personalizada para una prueba de rendimiento web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
-- [Cómo: Crear un complemento de pruebas de carga](../test/how-to-create-a-load-test-plug-in.md)
+- [Cómo: Crear un complemento de prueba de carga](../test/how-to-create-a-load-test-plug-in.md)
 - [Generar y ejecutar una prueba de rendimiento web codificada](../test/generate-and-run-a-coded-web-performance-test.md)
-- [Cómo: Crear un complemento de Visual Studio para el visor de resultados de pruebas de rendimiento web](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)
+- [Cómo: Crear un complemento de Visual Studio para el Visor de resultados de pruebas de rendimiento web](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)

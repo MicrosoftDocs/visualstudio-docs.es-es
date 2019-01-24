@@ -15,12 +15,12 @@ ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a16a0ece140f205f8276f0b3ec7db6b2402d3537
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c4961f7c67fe8d135b97cbcb137d32b2de44214
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836780"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761527"
 ---
 # <a name="source-control-integration-overview"></a>Información general de la integración del control de código fuente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

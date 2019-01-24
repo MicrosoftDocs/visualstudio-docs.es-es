@@ -20,15 +20,15 @@ helpviewer_keywords:
 - debugger, Web application errors
 ms.assetid: 875ba87f-c372-4126-8fe3-e33931cf26c0
 caps.latest.revision: 25
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ec803ea53dfa86c713b2287eb863efabc2351918
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ff3662b0e2494b740f6b7cc85e39c081b033da31
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171216"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758353"
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>Error: El servidor Web no está configurado correctamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: habilitar y deshabilitar el análisis de la solución completa para código administrado'
+title: Procedimiento Habilitar y deshabilitar el análisis de la solución completa para código administrado
 ms.date: 03/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,35 +8,34 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: d227360be39455662d3d2ebe822810debd655dac
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b6e5d73f0a08511730cb79eccf60570bad804137
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922777"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937889"
 ---
-# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Cómo: habilitar y deshabilitar el análisis de la solución completa para código administrado
+# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Procedimiento Habilitar y deshabilitar el análisis de la solución completa para código administrado
 
-*Completa el análisis de la solución* es una característica de Visual Studio que le permite ver los problemas de análisis de código sólo en los archivos abiertos de Visual C# o Visual Basic en la solución, o también en el código los archivos que están cerrados. De forma predeterminada, es el análisis de la solución completa *habilitado* en Visual Basic, y *deshabilitado* para Visual C#.
+*Completa el análisis de la solución* es una característica de Visual Studio que le permite ver los problemas de análisis de código solo en abierto Visual C# o los archivos de Visual Basic en la solución, o también en los archivos de código que se cierran. De forma predeterminada, es el análisis de la solución completa *habilitado* para Visual Basic, y *deshabilitado* Visual C#.
 
-Puede ser útil ver todos los problemas en todos los archivos, pero también puede ser confuso. Ralentiza Visual Studio si la solución es muy grande o tiene muchos archivos. Para limitar el número de problemas que se muestra y mejorar el rendimiento de Visual Studio, puede deshabilitar el análisis de la solución completa. Fácilmente puede volver a habilitar esta característica si es necesario.
+Puede ser útil ver todos los problemas en todos los archivos, pero también puede ser confuso. Ralentiza Visual Studio si la solución es muy grande o tiene muchos archivos. Para limitar el número de problemas que se muestran y mejorar el rendimiento de Visual Studio, puede deshabilitar el análisis de la solución completa. Fácilmente puede volver a habilitar esta característica si es necesario.
 
 ## <a name="to-toggle-full-solution-analysis"></a>Para activar o desactivar el análisis de la solución completa
 
-1. Para abrir el **opciones** elegir cuadro de diálogo, en la barra de menús de Visual Studio **herramientas** > **opciones**.
+1. Para abrir el **opciones** cuadro de diálogo, en la barra de menús de Visual Studio elija **herramientas** > **opciones**.
 
-1. En el **opciones** diálogo cuadro, elija **Editor de texto** > **C#** o **básica**  >   **Advanced**.
+1. En el **opciones** diálogo cuadro, elija **Editor de texto**  >  **C#** o **básica**  >  **Avanzada**.
 
-1. Seleccione el **Habilitar análisis de la solución completa** casilla de verificación para habilitar el análisis de la solución completa, o desactive la casilla para deshabilitarlo. Elija **Aceptar** cuando haya terminado.
+1. Seleccione el **Habilitar análisis de la solución completa** casilla de verificación para habilitar el análisis de la solución completa, o desactive la casilla para deshabilitarla. Elija **Aceptar** cuando haya terminado.
 
-    ![Habilitar la casilla de verificación de análisis de la solución completa.](../code-quality/media/options-enable-full-solution-analysis.png)
+    ![Habilitar la casilla de verificación de análisis de solución completa.](../code-quality/media/options-enable-full-solution-analysis.png)
 
-## <a name="results-of-enabling-and-disabling-full-solution-analysis"></a>Resultados de habilitar y deshabilitar el análisis de la solución completa
+## <a name="results-of-enabling-and-disabling-full-solution-analysis"></a>Resultados de la habilitación y deshabilitación de análisis de la solución completa
 
-En la siguiente captura de pantalla, puede ver los resultados cuando se habilita el análisis de la solución completa. Todos los errores y problemas de análisis de código en *todos los* de los archivos de la solución aparecen, independientemente de si los archivos están abiertos.
+En la siguiente captura de pantalla, puede ver los resultados cuando se habilita el análisis de la solución completa. Todos los errores y problemas de análisis de código en *todas* de los archivos de la solución aparecen, independientemente de si los archivos están abiertos.
 
 ![Análisis de la solución completa habilitada.](../code-quality/media/fsa_enabled.png)
 
@@ -46,6 +45,6 @@ Captura de pantalla siguiente muestra los resultados de la misma solución despu
 
 ## <a name="automatically-disable-full-solution-analysis"></a>Deshabilitar automáticamente el análisis de la solución completa
 
-Si Visual Studio detecta que 200 MB o menos de memoria del sistema está disponible en él, deshabilita automáticamente análisis de la solución completa (y otras características) si está habilitado. Si esto ocurre, aparece una alerta que le informa de que Visual Studio ha deshabilitado algunas características. Un botón le permite volver a habilitar el análisis de la solución completa si desea.
+Si Visual Studio detecta que 200 MB o menos de memoria del sistema está disponible en él, deshabilita automáticamente análisis completo de la solución (y algunas otras características) si está habilitado. Si esto ocurre, aparece una alerta que le informa de que Visual Studio ha deshabilitado algunas características. Un botón le permite volver a habilitar el análisis de la solución completa si desea.
 
 ![Suspender el análisis de la solución completa de texto de alerta](../code-quality/media/fsa_alert.png)

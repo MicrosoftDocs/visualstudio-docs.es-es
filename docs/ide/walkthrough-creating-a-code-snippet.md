@@ -2,7 +2,6 @@
 title: 'Tutorial: Crear un fragmento de código'
 ms.date: 10/27/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, creating
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 517eb98e7ca5b32d07a4501823ca092c366e4639
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 66d618999fc2ae3e94316f64e20a82516efbeb38
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469157"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269805"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Tutorial: Crear un fragmento de código
 Puede crear un fragmento de código en unos pocos pasos. Lo único que debe hacer es crear un archivo XML, rellenar los elementos correspondientes y agregarle código. También puede agregar referencias y parámetros de reemplazo en el código. Puede agregar el fragmento de código a la instalación de Visual Studio mediante el botón **Importar** del **Administrador de fragmentos de código** (**Herramientas** > **, Administrador de fragmentos de código**).
@@ -80,7 +79,7 @@ Puede crear un fragmento de código en unos pocos pasos. Lo único que debe hace
 
      *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippets*
 
-6.  Pruebe el fragmento de código. Para ello, abra un proyecto de Visual Basic y abra un archivo de código. En el archivo elija **Fragmentos** > **Insertar fragmento de código** en el menú contextual y, después, **Mis fragmentos de código**. Debería ver un fragmento de código denominado **My Visual Basic Code Snippet** (Mi fragmento de código de Visual Basic). Haga doble clic en ella.
+6.  Pruebe el fragmento de código. Para ello, abra un proyecto de Visual Basic y abra un archivo de código. En el archivo, seleccione **Fragmentos** > **Insertar fragmento de código** en el menú contextual y, después, haga clic en **Mis fragmentos de código**. Debería ver un fragmento de código denominado **My Visual Basic Code Snippet** (Mi fragmento de código de Visual Basic). Haga doble clic en ella.
 
     `Console.WriteLine("Hello, World!")` se inserta en el archivo de código.
 

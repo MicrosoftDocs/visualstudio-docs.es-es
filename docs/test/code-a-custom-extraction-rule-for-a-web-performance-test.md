@@ -1,5 +1,5 @@
 ---
-title: Codificación de una regla de extracción personalizada para una prueba de rendimiento web en Visual Studio
+title: Codificación de una regla de extracción personalizada para una prueba de rendimiento web
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,13 +14,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: edf1f279ef858b70eab82604cace9546fbc3cf5c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 311a1ff5b9f5587d04c90484f21a323161c9c18a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283215"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835716"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Codificar una regla de extracción personalizada para una prueba de rendimiento web
 
@@ -28,6 +27,8 @@ Puede crear sus propias reglas de extracción. Para ello, derive sus propias reg
 
 > [!NOTE]
 > También puede crear reglas de validación personalizadas. Para obtener más información, consulte [Crear código y complementos personalizados para las pruebas de carga](../test/create-custom-code-and-plug-ins-for-load-tests.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-a-custom-extraction-rule"></a>Para crear una regla de extracción personalizada
 

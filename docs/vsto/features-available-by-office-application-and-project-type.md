@@ -1,9 +1,6 @@
 ---
 title: Características disponibles por tipo de aplicación y el proyecto de Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], features available
 - add-ins [Office development in Visual Studio]
 - form regions [Office development in Visual Studio], features available
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c2710fae53cd860b6d67cc9f9d8c7ce61afa2b03
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 679b0456548a675545d81353332ddb70dcce8cdc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929860"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986406"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Características disponibles por tipo de aplicación y el proyecto de Office
   Visual Studio tiene varios tipos de plantillas de proyecto que admiten diferentes escenarios empresariales para las aplicaciones de Microsoft Office, incluyendo los siguientes tipos:  
@@ -62,9 +59,9 @@ ms.locfileid: "49929860"
 |Exponer un objeto de un complemento de VSTO a otras soluciones de Microsoft Office.|Proyectos de complementos de VSTO.|[Llamar a código en complementos VSTO desde otras soluciones de Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)|  
 |Los siguientes controles host:<br /><br /> -Gráfico<br />-ListObject<br />-NamedRange<br />: Controles de contenido<br />-Marcador|Proyectos de nivel del documento.<br /><br /> Proyectos de complementos de VSTO para Word y Excel.|[Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)|  
 |Los siguientes controles host:<br /><br /> -XMLMappedRange<br />-XMLNode<br />-XMLNodes|Proyectos de nivel del documento.|[Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)|  
-|Implementación de varios proyectos.|Proyectos de nivel del documento.<br /><br /> Proyectos de complementos de VSTO.|[Tutorial: Implementar varias soluciones de Office en un único instalador ClickOnce](http://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
+|Implementación de varios proyectos.|Proyectos de nivel del documento.<br /><br /> Proyectos de complementos de VSTO.|[Tutorial: Implementar varias soluciones de Office en un único instalador ClickOnce](https://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
 |Áreas de formulario de Outlook.|Proyectos de complementos de VSTO para Outlook.|[Crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md)|  
-|Acciones posteriores a la implementación.|Proyectos de nivel del documento.<br /><br /> Proyectos de complementos de VSTO.|[Tutorial: Copiar un documento en el equipo del usuario final después de una instalación ClickOnce](http://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
+|Acciones posteriores a la implementación.|Proyectos de nivel del documento.<br /><br /> Proyectos de complementos de VSTO.|[Tutorial: Copiar un documento en el equipo del usuario final después de una instalación ClickOnce](https://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
 |Personalizaciones de la Cinta.|Proyectos de nivel del documento.<br /><br /> Proyectos de complementos de VSTO para las siguientes aplicaciones:<br /><br /> -Excel<br />-InfoPath (InfoPath 2013 e InfoPath 2010 solo)<br />-Outlook<br />-PowerPoint<br />: Proyecto<br />: Visio<br />-Word|[Información general de la cinta de opciones](../vsto/ribbon-overview.md)|  
 |Diseñador de documentos de Visual.|Proyectos de nivel del documento.|[Proyectos de Office en el entorno de Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   
@@ -77,5 +74,3 @@ ms.locfileid: "49929860"
  [Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)   
  [Datos almacenados en caché en las personalizaciones de nivel de documento](../vsto/cached-data-in-document-level-customizations.md)   
  [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)  
-  
-  

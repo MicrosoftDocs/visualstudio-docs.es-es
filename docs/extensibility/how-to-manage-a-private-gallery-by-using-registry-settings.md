@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: administrar una galería privada mediante la configuración del registro | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Administrar una galería privada mediante la configuración del registro | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSIX private galleries, managing
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2351c048576d6cf0e93515df8bdce34eef09bfc8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d81594265f19eed0530aaeb06aebc777630bfbf7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854668"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986978"
 ---
-# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Cómo: administrar una galería privada mediante la configuración del registro
+# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Procedimiento Administrar una galería privada mediante la configuración del registro
 Si es un administrador o el desarrollador de una extensión de Shell aislado, puede controlar el acceso a los controles, plantillas y herramientas en la Galería de Visual Studio, la Galería de ejemplos o galerías privadas. Para realizar una galería disponible o no está disponible, crearía un *.pkgdef* archivo que describe las claves del registro modificada y sus valores.  
   
 ## <a name="manage-private-galleries"></a>Administrar galerías privadas  
@@ -29,7 +26,7 @@ Si es un administrador o el desarrollador de una extensión de Shell aislado, pu
   
 ```  
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]  
-@={URI}  (REG_SZ)  
+@={URI}  (REG_SZ)  
 Disabled=0 | 1 (DWORD)  
 Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)  
 Protocol=Atom Feed|Sharepoint (REG_SZ)  

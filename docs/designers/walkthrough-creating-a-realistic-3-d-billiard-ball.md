@@ -2,7 +2,6 @@
 title: 'Tutorial: Crear una bola de billar en 3D realista'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0f8596e8a2064f09ff817a768dd7ec994e3c920
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 75b7b405ba9e25a94c8db22c4ddf5e4a0aedad09
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847648"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913496"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Tutorial: Crear una bola de billar en 3D realista
 
@@ -211,8 +210,8 @@ El primer paso es crear una textura de mapa de cubo. En muchos tipos de aplicaci
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: exportar un sombreador](../designers/how-to-export-a-shader.md)
-- [Cómo: aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Cómo: Exportar un sombreador](../designers/how-to-export-a-shader.md)
+- [Cómo: Aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Diseñador de sombras](../designers/shader-designer.md)
 - [Image Editor](../designers/image-editor.md)
 - [Nodos del Diseñador de sombras](../designers/shader-designer-nodes.md)

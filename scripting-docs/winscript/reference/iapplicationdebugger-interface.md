@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a16cd1bc891c7d682cc1097cd1b6cb5efd5438db
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8b364422afcdf72deaee3d56123a71672769ed61
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725415"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348326"
 ---
 # <a name="iapplicationdebugger-interface"></a>IApplicationDebugger (Interfaz)
 La interfaz principal expuesta por un depurador. Además de los métodos heredados de `IUnknown`, el `IApplicationDebugger` interfaz expone los métodos siguientes.  
@@ -29,8 +29,8 @@ La interfaz principal expuesta por un depurador. Además de los métodos heredad
 |Método|Descripción|  
 |------------|-----------------|  
 |[IApplicationDebugger::QueryAlive](../../winscript/reference/iapplicationdebugger-queryalive.md)|Indica si el depurador está respondiendo.|  
-|[IApplicationDebugger::CreateInstanceAtDebugger](../../winscript/reference/iapplicationdebugger-createinstanceatdebugger.md)|Permite la creación de objetos en el proceso del depurador por código que es fuera de proceso para el depurador.|  
+|[IApplicationDebugger::CreateInstanceAtDebugger](../../winscript/reference/iapplicationdebugger-createinstanceatdebugger.md)|Permite la creación de objetos en el proceso del depurador al código que es fuera de proceso al depurador.|  
 |[IApplicationDebugger::onDebugOutput](../../winscript/reference/iapplicationdebugger-ondebugoutput.md)|Controla un evento de salida de depuración.|  
 |[IApplicationDebugger::onHandleBreakPoint](../../winscript/reference/iapplicationdebugger-onhandlebreakpoint.md)|Controla un evento de punto de interrupción.|  
-|[IApplicationDebugger::onClose](../../winscript/reference/iapplicationdebugger-onclose.md)|Controla un evento de cierre de aplicación de depuración.|  
+|[IApplicationDebugger::onClose](../../winscript/reference/iapplicationdebugger-onclose.md)|Controla un evento de cierre de aplicaciones de depuración.|  
 |[IApplicationDebugger::onDebuggerEvent](../../winscript/reference/iapplicationdebugger-ondebuggerevent.md)|Controla un evento de aplicación personalizada.|

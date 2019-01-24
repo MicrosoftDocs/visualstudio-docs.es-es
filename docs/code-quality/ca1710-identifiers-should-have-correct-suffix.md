@@ -1,8 +1,7 @@
 ---
-title: 'CA1710: Los identificadores deberían tener el sufijo correcto'
+title: 'CA1710: Los identificadores deben tener un sufijo correcto'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1710
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 263870511715757c8771b0b596e443d82be91525
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 2e8923f3bb1ae4fe92891593c2109852810beb4e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549898"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944715"
 ---
-# <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Los identificadores deberían tener el sufijo correcto
+# <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Los identificadores deben tener un sufijo correcto
 
 |||
 |-|-|

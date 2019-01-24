@@ -1,8 +1,7 @@
 ---
-title: Caracteres de codificación y salto de línea de Visual Studio
+title: Caracteres de codificación y salto de línea
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.Encoding
@@ -19,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6a07dceb796ad697653657c27ab3ff16b3433ac
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 11a70e214362d61fa54e83182bec7cc128905b69
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117100"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847706"
 ---
 # <a name="encodings-and-line-endings"></a>Codificaciones y finales de línea
 
@@ -36,7 +35,7 @@ Los siguientes caracteres se interpretan como saltos de línea en Visual Studio:
 
 - NEL: Línea siguiente, carácter Unicode 0085
 
-- LS: Separador de líneas, carácter Unicode 2028
+- LS: Separador de línea, carácter Unicode 2028
 
 - PS: Separador de párrafo, carácter Unicode 2029
 

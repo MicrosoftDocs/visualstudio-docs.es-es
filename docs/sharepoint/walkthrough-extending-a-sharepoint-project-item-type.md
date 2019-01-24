@@ -1,9 +1,6 @@
 ---
-title: 'Tutorial: Extender un tipo de elemento de proyecto de SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Extender un tipo de elemento de proyecto de SharePoint | Documentos de Microsoft'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e1210d95a73038ea21c0455e944eb46b1791b426
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a32182b4df4851bb7befb1a95af70d2e4da6666c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844521"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868672"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Tutorial: Extender un tipo de elemento de proyecto de SharePoint
   Puede usar el **modelo de conectividad a datos empresariales** elemento de proyecto para crear un modelo para el servicio de conectividad de datos profesionales (BDC) en SharePoint. De forma predeterminada, al crear un modelo utilizando este elemento de proyecto, los datos del modelo no se muestran a los usuarios. Por esta razón debe crear una lista externa en SharePoint que permita a los usuarios ver los datos.  
@@ -164,7 +161,7 @@ ms.locfileid: "49844521"
   
 1.  En **el Explorador de soluciones**, abra el menú contextual para el archivo source.extension.vsixmanifest en el proyecto GenerateExternalDataLists y, a continuación, elija **abrir**.  
   
-     Visual Studio abre el archivo en el editor de manifiestos. El archivo source.extension.vsixmanifest es la base del archivo extension.vsixmanifest que requieren todos los paquetes VSIX. Para obtener más información acerca de este archivo, consulte [referencia de 1.0 del esquema de extensión de VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     Visual Studio abre el archivo en el editor de manifiestos. El archivo source.extension.vsixmanifest es la base del archivo extension.vsixmanifest que requieren todos los paquetes VSIX. Para obtener más información acerca de este archivo, consulte [referencia de 1.0 del esquema de extensión de VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  En el **Product Name** , escriba **External Data List Generator**.  
   
@@ -179,7 +176,7 @@ ms.locfileid: "49844521"
 6.  En el **tipo** elija **Microsoft.VisualStudio.MefComponent**.  
   
     > [!NOTE]  
-    >  Este valor corresponde al elemento `MefComponent` del archivo extension.vsixmanifest. Este elemento especifica el nombre de un ensamblado de extensión en el paquete VSIX. Para obtener más información, consulte [elemento MEFComponent (Esquema VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Este valor corresponde al elemento `MefComponent` del archivo extension.vsixmanifest. Este elemento especifica el nombre de un ensamblado de extensión en el paquete VSIX. Para obtener más información, consulte [elemento MEFComponent (Esquema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 7.  En el **origen** elija **un proyecto de la solución actual**.  
   
@@ -220,7 +217,7 @@ ms.locfileid: "49844521"
   
 5.  En el **nombre** , escriba **SharePointProjectTestBDC**y, a continuación, elija el **Aceptar** botón.  
   
-6.  En el Asistente de personalización de SharePoint, escriba la dirección URL del sitio que desea usar para la depuración, elija **implementar como solución de granja de servidores**y, a continuación, elija el **finalizar**botón.  
+6.  En el Asistente de personalización de SharePoint, escriba la dirección URL del sitio que desea usar para la depuración, elija **implementar como solución de granja de servidores**y, a continuación, elija el **finalizar** botón.  
   
 7.  Abra el menú contextual para el proyecto SharePointProjectTestBDC, elija **agregar**y, a continuación, elija **nuevo elemento**.  
   
@@ -299,5 +296,3 @@ ms.locfileid: "49844521"
  [Extender el sistema de proyecto de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)   
  [Crear un modelo de conectividad a datos empresariales](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  
-  

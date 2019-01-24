@@ -1,9 +1,6 @@
 ---
 title: Creación de soluciones de flujo de trabajo de SharePoint | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VSTO.NewSharePointWorkflowWizard.Page3
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c4e808d93d2ae3039d4c5d79d1c14c65360bba32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0a1e4d1e3aa548d51225ac50dacf78b73e1efae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892316"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820509"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Crear soluciones de flujo de trabajo de SharePoint
 
@@ -42,7 +39,7 @@ Para obtener más información acerca de SharePoint, vea [Microsoft SharePoint P
  Puede crear flujos de trabajo de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e implementarlas en un sitio Web de SharePoint. Después de implementa un flujo de trabajo en SharePoint, asocia con una lista o biblioteca. Se puede, a continuación, se inicia automáticamente, mediante un proceso o manualmente por el usuario. Para obtener más información acerca de la operación de flujo de trabajo, consulte [flujos de trabajo de desarrollo de SharePoint mediante Visual Studio](https://docs.microsoft.com/sharepoint/dev/general-development/develop-sharepoint-workflows-using-visual-studio).
 
 ## <a name="create-custom-sharepoint-workflows"></a>Crear flujos de trabajo personalizados de SharePoint
- Están disponibles en dos proyectos de flujo de trabajo de SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]: **flujo de trabajo secuencial** y **State Machine Workflow**.
+ Dos proyectos de flujo de trabajo de SharePoint están disponibles en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]: **Flujo de trabajo secuencial** y **flujo de trabajo de máquina de estado**.
 
  Un *flujo de trabajo secuencial* representa una serie de pasos. Los pasos se realizan una tras otra hasta que se complete la última actividad. Flujos de trabajo secuenciales siempre son estrictamente secuenciales en su ejecución. Ya que pueden recibir eventos externos e incluir flujos paralelos lógicos, el orden exacto de ejecución puede variar. La siguiente ilustración muestra un ejemplo de un flujo de trabajo secuencial.
 
@@ -78,7 +75,7 @@ Para obtener más información acerca de SharePoint, vea [Microsoft SharePoint P
 
   Las actividades pueden tener propiedades, métodos y eventos. Use la **propiedades** ventana para establecer las propiedades de una actividad.
 
-  También puede crear una actividad personalizada. Para obtener más información, consulte [Tutorial: crear una actividad de flujo de trabajo de sitio personalizada](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md).
+  También puede crear una actividad personalizada. Para obtener más información, vea [Tutorial: Crear una actividad de flujo de trabajo de sitio personalizada](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md).
 
   Las actividades se clasifican en las siguientes fichas en la **cuadro de herramientas**:
 
@@ -122,12 +119,12 @@ Para obtener más información acerca de SharePoint, vea [Microsoft SharePoint P
   De estos, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] incluye plantillas de elementos para formularios de asociación e iniciación. Un ejemplo de un *formulario de asociación* es uno que permite al administrador instalar el flujo de trabajo escriba los parámetros que se relacionan con el flujo de trabajo, como un límite de gasto para un flujo de trabajo de gastos. Un ejemplo de un *formulario de iniciación* es aquel que permite al usuario de un flujo de trabajo de gastos escriba la cantidad que se ha gastado en el flujo de trabajo. Para obtener más información acerca de estos tipos de formularios, consulte [SharePoint plantillas de elemento de proyecto y](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
 ### <a name="item-properties"></a>Propiedades del elemento
- También puede recopilar información de los usuarios mediante las propiedades de un elemento en la lista o biblioteca de SharePoint. El archivo de código principal (Workflow1.cs o Workflow1.vb) declara una instancia de la clase Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties denominada `workflowProperties`. Use la `workflowProperties` objeto para tener acceso a las propiedades de la biblioteca o una lista de código. Para obtener un ejemplo, vea [Tutorial: crear y depurar una solución de flujo de trabajo de SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md).
+ También puede recopilar información de los usuarios mediante las propiedades de un elemento en la lista o biblioteca de SharePoint. El archivo de código principal (Workflow1.cs o Workflow1.vb) declara una instancia de la clase Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties denominada `workflowProperties`. Use la `workflowProperties` objeto para tener acceso a las propiedades de la biblioteca o una lista de código. Para obtener un ejemplo, vea [Tutorial: Crear y depurar una solución de flujo de trabajo de SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md).
 
 ## <a name="debug-a-sharepoint-workflow-template"></a>Depurar una plantilla de flujo de trabajo de SharePoint
  Puede depurar un proyecto de flujo de trabajo de SharePoint igual cuando depura otros [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proyectos basados en Web. Al iniciar el [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] depurador, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] usa la configuración que especifique en el **Asistente de personalización de SharePoint** para abrir el sitio SharePoint Web adecuado y asociar automáticamente la plantilla de flujo de trabajo con la lista o biblioteca adecuada. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] también asocia el [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] del depurador para el [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] proceso denominado *w3wp.exe*.
 
- Para probar el flujo de trabajo, debe iniciarlo manualmente. Para obtener más información, vea la sección "Depuración de flujos de trabajo" en [depurar soluciones de SharePoint](../sharepoint/debugging-sharepoint-solutions.md). Para obtener más información acerca de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] depuración de aplicaciones Web, consulte [depurar script y aplicaciones web](../debugger/debugging-web-applications-and-script.md).
+ Para probar el flujo de trabajo, debe iniciarlo manualmente. Para obtener más información, vea la sección "Depuración de flujos de trabajo" en [depurar soluciones de SharePoint](../sharepoint/debugging-sharepoint-solutions.md). Para obtener más información acerca de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] depuración de aplicaciones Web, consulte [depurar script y aplicaciones web](../debugger/how-to-enable-debugging-for-aspnet-applications.md).
 
 ## <a name="deploy-a-sharepoint-workflow-template"></a>Implementar una plantilla de flujo de trabajo de SharePoint
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Implementación proyectos de flujo de trabajo de SharePoint como otro [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] los proyectos de SharePoint. Para obtener más información, consulte [soluciones de paquete y de implementar SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).
@@ -141,8 +138,8 @@ Para obtener más información acerca de SharePoint, vea [Microsoft SharePoint P
 |-----------|-----------------|
 |[Tutorial: Crear y depurar una solución de flujo de trabajo de SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)|Le guía paso a paso para crear y depurar un sencillo [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] flujo de trabajo.|
 |[Tutorial: Crear un flujo de trabajo con formularios de asociación e iniciación](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)|Le guía paso a paso para crear una más completa [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] completar el flujo de trabajo con formularios de asociación e iniciación.|
-|[Tutorial: Agregar una página de aplicación a un flujo de trabajo](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)|Se basa en el tema [Tutorial: crear un flujo de trabajo con formularios de asociación e iniciación](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) agregando más *.aspx* página de aplicación que informa sobre los datos introducidos en el flujo de trabajo.|
-|[Tutorial: Crear una actividad de flujo de trabajo de sitio personalizado](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|Muestra cómo realizar dos tareas fundamentales: crear un flujo de trabajo de nivel de sitio y crear una actividad de flujo de trabajo personalizado.|
+|[Tutorial: Agregar una página de aplicación a un flujo de trabajo](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)|Se basa en el tema [Tutorial: Crear un flujo de trabajo con formularios de asociación e iniciación](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) agregando más *.aspx* página de aplicación que informa sobre los datos introducidos en el flujo de trabajo.|
+|[Tutorial: Crear una actividad de flujo de trabajo de sitio personalizada](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|Muestra cómo realizar dos tareas fundamentales: crear un flujo de trabajo de nivel de sitio y crear una actividad de flujo de trabajo personalizado.|
 |[Tutorial: Importar un flujo de trabajo reutilizable de SharePoint Designer en Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Muestra cómo se importan flujos de trabajo declarativos reutilizables creados en SharePoint Designer 2010 en un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proyecto de SharePoint.|
 
 ## <a name="see-also"></a>Vea también

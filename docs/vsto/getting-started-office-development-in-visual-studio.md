@@ -1,26 +1,25 @@
 ---
 title: Obtener Introducción (desarrollo de Office en Visual Studio)
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 helpviewer_keywords:
 - Office development in Visual Studio, getting started
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5c7fb4888daecfe396ade51500cd156e49801850
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d0d2868becbdc68f88c8ac191e3a044f3cfc8b10
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675248"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955362"
 ---
 # <a name="get-started-office-development-in-visual-studio"></a>Obtener Introducción (desarrollo de Office en Visual Studio)
   Esta sección contiene temas que le ayudarán a empezar a usar Microsoft Office Developer Tools en Visual Studio.  
@@ -77,5 +76,3 @@ ms.locfileid: "35675248"
   
  [Visual Studio Tools para Office, artículos técnicos y Visual procedimientos](http://go.microsoft.com/fwlink/?LinkID=106640)  
  Contiene vínculos a vídeos y artículos técnicos sobre soluciones de Office creadas con Visual Studio.  
-  
-  

@@ -1,8 +1,7 @@
 ---
-title: Usar expresiones regulares en Visual Studio
+title: Usar expresiones regulares
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vsregularexpressionhelp
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb9186726a54099b0c75a468a99d760abd22b7f3
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: e272e1aba8f7572ba3c4ce1f90a7b12676eb18b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945551"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880616"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usar expresiones regulares en Visual Studio
 
@@ -31,7 +30,7 @@ Visual Studio usa [expresiones regulares de .NET Framework](/dotnet/standard/bas
 
 ## <a name="replacement-patterns"></a>Patrones de reemplazo
 
-Para usar un grupo de capturas numerado, incluya el grupo entre paréntesis en el patrón de expresión regular. Use `$number` (donde `number` es un entero que empieza por 1) para especificar un grupo numerado concreto en un patrón de reemplazo. Por ejemplo, la expresión regular agrupada `(\d)([a-z])` define dos grupos: el primero contiene un único dígito decimal y el segundo, un solo carácter comprendido entre **a** y **z**. La expresión encuentra cuatro coincidencias en la siguiente cadena: **1a 2b 3c 4d**. La cadena de reemplazo `z$1` hace referencia al primer grupo y convierte la cadena a **z1 z2 z3 z4**.
+Para usar un grupo de capturas numerado, incluya el grupo entre paréntesis en el patrón de expresión regular. Use `$number` (donde `number` es un entero que empieza por 1) para especificar un grupo numerado concreto en un patrón de reemplazo. Por ejemplo, la expresión regular agrupada `(\d)([a-z])` define dos grupos: el primero contiene un único dígito decimal y el segundo, un solo carácter comprendido entre **a** y **z**. La expresión encuentra cuatro coincidencias en la cadena siguiente: **1a 2b 3c 4d**. La cadena de reemplazo `z$1` hace referencia al primer grupo y convierte la cadena a **z1 z2 z3 z4**.
 
 Para más información sobre las expresiones regulares que se usan en patrones de reemplazo, vea [Sustituciones en expresiones regulares (Guía de .NET)](/dotnet/standard/base-types/substitutions-in-regular-expressions).
 
@@ -49,7 +48,8 @@ A continuación se muestran algunos ejemplos:
 |Coincidencia con cero o más apariciones de la expresión anterior (coincidencia con el menor número de caracteres posible)|*?|`e.*?e` coincide con "ee" en "feeder", pero no con "eede".|
 |Coincidencia con una o más apariciones de la expresión anterior (coincidencia con el menor número de caracteres posible)|+?|`e.+?e` coincide con "ente" y "erprise" en "enterprise", pero no con toda la palabra "enterprise".|
 |Delimitar la cadena coincidente al principio de una cadena o línea|^|`^car` coincide con la palabra "car" solo cuando aparece al principio de una línea.|
-|Delimitar la cadena coincidente al final de una línea|\r?$|`End\r?$` coincide con "end" solo cuando aparece al final de una línea.|
+|Delimitar la cadena coincidente al final de una línea|\r?$|`end\r?$` coincide con "end" solo cuando aparece al final de una línea.|
+|Delimitar la cadena coincidente al final del archivo|$|`end$` coincide con "end" solo cuando aparece al final del archivo.|
 |Coincidencia con cualquier carácter único de un conjunto|[abc]|`b[abc]` coincide con "ba", "bb" y "bc".|
 |Coincidir con cualquier carácter de un intervalo de caracteres|[a-f]|`be[n-t]` coincide con "bet" en "between", "ben" en "beneath" y "bes" en "beside", pero no "below".|
 |Capturar y numerar implícitamente la expresión contenida entre paréntesis|()|`([a-z])X\1` coincide con "aXa" y "bXb", pero no con "aXb". "\1" hace referencia al primer grupo de expresión "[a-z]".|
@@ -58,8 +58,8 @@ A continuación se muestran algunos ejemplos:
 |Coincidir con la expresión situada antes o después del símbolo|&#124;|`(sponge\|mud) bath` coincide con "sponge bath" y "mud bath".|
 |Escape del carácter que sigue a la barra diagonal inversa| \\ |`\^` coincide con el carácter ^.|
 |Especificar el número de apariciones del carácter o grupo precedente|{x}, donde x es el número de apariciones|`x(ab){2}x` coincide con "xababx" y `x(ab){2,3}x` coincide con "xababx" y "xabababx", pero no con "xababababx".|
-|Coincidir con el texto de una clase de caracteres Unicode, donde "X" es el número de Unicode. Para obtener más información sobre clases de caracteres Unicode, consulte el documento sobre<br /><br /> [Unicode Standard 5.2 Character Properties](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf) (Propiedades de caracteres del estándar Unicode 5.2).|\p{X}|`\p{Lu}` coincide con "T" y "D" en "Thomas Doe".|
-|Coincidir con un límite de palabras|`\b` (fuera de una clase de caracteres \b especifica un límite de palabras y dentro de una clase de caracteres especifica un retroceso).|`\bin` coincide con "in" en "inside", pero no con "pinto".|
+|Coincide con el texto en una clase de caracteres Unicode. Para obtener más información sobre clases de caracteres Unicode, consulte el documento sobre<br /><br /> [Unicode Standard 5.2 Character Properties](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf) (Propiedades de caracteres del estándar Unicode 5.2).|\p{X}, donde "X" es el número de Unicode.|`\p{Lu}` coincide con "T" y "D" en "Thomas Doe".|
+|Coincidir con un límite de palabras|\b (fuera de una clase de caracteres `\b` especifica un límite de palabras y dentro de una clase de caracteres `\b` un retroceso).|`\bin` coincide con "in" en "inside", pero no con "pinto".|
 |Coincidir con un salto de línea (es decir, con un retorno de carro seguido de una nueva línea).|\r?\n|`End\r?\nBegin` coincide con "End" y "Begin" solo cuando "End" es la última cadena en una línea y "Begin" es la primera cadena en la línea siguiente.|
 |Coincidir con cualquier carácter alfanumérico|\w|`a\wd` coincide con "add" y "a1d", pero no con "a d".|
 |Coincidir con cualquier carácter de espacio en blanco|(?([^\r\n])\s)|`Public\sInterface` coincide con la frase "Public Interface".|

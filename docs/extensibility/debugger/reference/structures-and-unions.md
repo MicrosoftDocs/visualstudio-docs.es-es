@@ -1,9 +1,6 @@
 ---
 title: Estructuras y uniones | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - structures [Visual Studio SDK]
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33e3f5ebb4e871f98b027638f5aae47d853828a8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 42d2634cf99a730aa44f1a497080b69fdff2b962
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133980"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906909"
 ---
 # <a name="structures-and-unions"></a>Estructuras y uniones
 Los siguientes son estructuras y uniones en el SDK de depuración de Visual Studio.  
@@ -30,7 +27,7 @@ Los siguientes son estructuras y uniones en el SDK de depuración de Visual Stud
  Describe las condiciones en las que se desencadenará un punto de interrupción.  
   
  [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)  
- Describe la resolución de un punto de interrupción de error, incluida la ubicación, programa y subproceso.  
+ Describe la resolución de un punto de interrupción de error, incluida la ubicación, el programa y subproceso.  
   
  [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)  
  Especifica el tipo de estructura que se utiliza para describir la ubicación del punto de interrupción.  
@@ -39,13 +36,13 @@ Los siguientes son estructuras y uniones en el SDK de depuración de Visual Stud
  Define los componentes que describen la ubicación de un punto de interrupción en una dirección en el código.  
   
  [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md)  
- Describe la ubicación de un punto de interrupción que se enlaza directamente con una dirección en el programa que se está depurando.  
+ Describe la ubicación de un punto de interrupción que se enlaza directamente a una dirección en el programa que se está depurando.  
   
  [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)  
- Describe la ubicación de un punto de interrupción en la línea en un archivo de código fuente.  
+ Describe la ubicación de un punto de interrupción en la línea de un archivo de código fuente.  
   
  [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)  
- Describe la ubicación de desplazamiento de un punto de interrupción en una función en el código.  
+ Describe la ubicación de desplazamiento de un punto de interrupción en una función en código.  
   
  [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md)  
  Se usa para establecer puntos de interrupción de código basados en una cadena que el usuario puede escribir desde el IDE.  
@@ -57,19 +54,19 @@ Los siguientes son estructuras y uniones en el SDK de depuración de Visual Stud
  Describe la resolución de un punto de interrupción en una ubicación específica.  
   
  [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)  
- Describe el número y las condiciones en los que un punto de interrupción se activarán después de tener ha pasado previamente.  
+ Describe el número y las condiciones en la que se desencadenará un punto de interrupción después de tener previamente se ha pasado.  
   
  [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)  
  Contiene la información necesaria para implementar un punto de interrupción.  
   
  [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)  
- Contiene la información necesaria para implementar un punto de interrupción (igual que el [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) estructura pero incluye información de GUID, restricción y punto de seguimiento del proveedor).  
+ Contiene la información necesaria para implementar un punto de interrupción (igual que el [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) estructura, pero incluye información de GUID, la restricción y punto de seguimiento del proveedor).  
   
  [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md)  
- Describe la ubicación de un punto de interrupción de código.  
+ Describe la ubicación de un punto de interrupción del código.  
   
  [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)  
- Describe el resultado de enlazar un punto de interrupción de datos.  
+ Describe el resultado de un punto de interrupción de datos de enlace.  
   
  [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)  
  Describe la información de punto de interrupción enlazado para un punto de interrupción de código o un punto de interrupción de datos.  
@@ -81,13 +78,13 @@ Los siguientes son estructuras y uniones en el SDK de depuración de Visual Stud
  Describe una matriz de cadenas.  
   
  [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)  
- Especifica información sobre un tipo de campo que se toman de metadatos.  
+ Especifica información sobre un tipo de campo que se toman de los metadatos.  
   
  [CODE_PATH](../../../extensibility/debugger/reference/code-path.md)  
  Describe una llamada a una función o método.  
   
  [COMPUTER_INFO](../../../extensibility/debugger/reference/computer-info.md)  
- Describe el equipo en el que se ejecuta el depurador.  
+ Se describe en el equipo donde se ejecuta el depurador.  
   
  [CONST_GUID_ARRAY](../../../extensibility/debugger/reference/const-guid-array.md)  
  Describe una lista de GUID.  
@@ -99,13 +96,13 @@ Los siguientes son estructuras y uniones en el SDK de depuración de Visual Stud
  Describe una dirección en un programa que se está depurando.  
   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)  
- Representa uno de una serie de diferentes tipos de direcciones.  
+ Representa una cantidad de diferentes tipos de direcciones.  
   
  [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)  
- Identifica un visor personalizado o escriba el visualizador.  
+ Identifica un visor personalizado o tipo de visualizador.  
   
  [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)  
- Describe una propiedad de depuración que a su vez describe un objeto de una naturaleza jerárquica con nombre, tipo y valor.  
+ Describe una propiedad de depuración que a su vez describe un objeto de una naturaleza jerárquica que tiene el nombre, tipo y valor.  
   
  [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)  
  Describe una referencia.  
@@ -114,7 +111,7 @@ Los siguientes son estructuras y uniones en el SDK de depuración de Visual Stud
  Describe el desensamblado en el IDE para su presentación.  
   
  [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)  
- Describe una excepción o error de tiempo de ejecución que se produce por el programa que se está depurando.  
+ Describe una excepción o error de tiempo de ejecución producido por el programa que se está depurando.  
   
  [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)  
  Describe una variable local, parámetro u otro campo.  
@@ -150,19 +147,19 @@ Los siguientes son estructuras y uniones en el SDK de depuración de Visual Stud
  Describe un valor devuelto de un método o función.  
   
  [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)  
- Describe un tipo de campo que se toman de metadatos.  
+ Describe un tipo de campo que se toman de los metadatos.  
   
  [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)  
- Describe un determinado módulo (archivo DLL, EXE o ensamblado).  
+ Describe un módulo determinado (ensamblado, EXE o DLL).  
   
  [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)  
- Describe la información de estado sobre las rutas de acceso de búsqueda de símbolos que se han buscado.  
+ Describe la información de estado sobre las rutas de acceso de búsqueda de símbolos que se ha buscado.  
   
  [NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md)  
  Describe una dirección nativa.  
   
  [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)  
- Describe un tipo de campo tomado de un símbolo PDB.  
+ Describe un tipo de campo realizado desde un símbolo PDB.  
   
  [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)  
  Describe el estado de un punto de interrupción que está listo para enlazar a una ubicación del código.  
@@ -171,7 +168,7 @@ Los siguientes son estructuras y uniones en el SDK de depuración de Visual Stud
  Describe un proceso.  
   
  [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md)  
- Describe una lista de [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objetos que representan los nodos de programa.  
+ Describe una lista de [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objetos que representan nodos de programa.  
   
  [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)  
  Describe los procesos que se ejecutan en un equipo.  
@@ -183,7 +180,7 @@ Los siguientes son estructuras y uniones en el SDK de depuración de Visual Stud
  Describe las propiedades de un subproceso.  
   
  [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)  
- Describe el tipo del campo.  
+ Describe un tipo de campo.  
   
  [UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md)  
  Describe una dirección física.  
@@ -194,7 +191,7 @@ Los siguientes son estructuras y uniones en el SDK de depuración de Visual Stud
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h, sh.h o ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   

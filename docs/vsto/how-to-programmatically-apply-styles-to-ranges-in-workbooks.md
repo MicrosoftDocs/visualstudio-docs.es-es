@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: aplicar estilos a rangos de libros mediante programación'
-ms.custom: ''
+title: Procedimiento Aplicar estilos a rangos de libros mediante programación
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -12,19 +9,19 @@ helpviewer_keywords:
 - ranges, styles
 - styles, workbook ranges
 - workbooks, styles
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d19c886a7b3ae1a1976ab2a47fe139ba830a4ea5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d12b42d7af92204992f1e32cbb29f311d337b70f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674462"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096139"
 ---
-# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>Cómo: aplicar estilos a rangos de libros mediante programación
+# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>Procedimiento Aplicar estilos a rangos de libros mediante programación
   Puede aplicar estilos con nombre a distintas áreas de los libros. Excel proporciona una serie de estilos predefinidos.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -74,5 +71,3 @@ ms.locfileid: "35674462"
  [NamedRange (control)](../vsto/namedrange-control.md)   
  [Acceso global a objetos en los proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

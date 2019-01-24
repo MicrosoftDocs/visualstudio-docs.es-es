@@ -17,12 +17,12 @@ ms.assetid: 52c42a2e-f144-476b-8bef-442464c8fe8e
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73f5e633566def692c4f22ad1089bd5a4d465b59
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f8391adf8fab0deda937cb49f5594aa5275a9ff7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913987"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738497"
 ---
 # <a name="idebugexpressionevaluatorgetmethodlocationproperty"></a>IDebugExpressionEvaluator::GetMethodLocationProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Este método convierte una ubicación de método y el desplazamiento en una dire
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT GetMethodLocationProperty(   
+HRESULT GetMethodLocationProperty(   
    LPCOLESTR             upstrFullyQualifiedMethodPlusOffset,  
    IDebugSymbolProvider* pSymbolProvider,  
    IDebugAddress*        pAddress,  

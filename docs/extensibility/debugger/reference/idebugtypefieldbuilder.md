@@ -1,9 +1,6 @@
 ---
-title: IDebugTypeFieldBuilder | Documentos de Microsoft
-ms.custom: ''
+title: IDebugTypeFieldBuilder | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugTypeFieldBuilder interface
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3c14959e0b14b74b31732a7d8611c0ae2d2c699
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 90ed594ff8b6c8f3811b61fe68b2d2ab16a9a017
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121796"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962080"
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
 Representa la capacidad para crear un campo que representa un tipo.  
@@ -43,6 +40,6 @@ IDebugTypeFieldBuilder : IUnknown
 ## <a name="requirements"></a>Requisitos  
  Encabezado: Sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll

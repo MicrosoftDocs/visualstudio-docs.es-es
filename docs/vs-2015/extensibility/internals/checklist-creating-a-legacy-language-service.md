@@ -16,12 +16,12 @@ ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7d45ad596b3aaea97773eb06b2e853d6c628ca97
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 330270b34d55e88c883b9d8a6270b4abad02d9c1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816669"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782991"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>Lista de comprobación: creación de un servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

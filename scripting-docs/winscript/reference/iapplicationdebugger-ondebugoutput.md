@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c660222ebc136c57605dd0fda2c7f5fa88c368c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ed29673735038e9664324e9e342be199705348d5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725265"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088366"
 ---
 # <a name="iapplicationdebuggerondebugoutput"></a>IApplicationDebugger::onDebugOutput
 Controla un evento de salida de depuración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT onDebugOutput(  
    LPCOLESTR  pstr  
 );  
@@ -50,7 +50,7 @@ HRESULT onDebugOutput(
 ## <a name="remarks"></a>Comentarios  
  El depurador muestra normalmente `pstr` en una ventana de salida.  
   
- Se llama a este método cuando `IDebugApplication::DebugOutput` se llama.  
+ Este método se llama cuando `IDebugApplication::DebugOutput` se llama.  
   
 ## <a name="see-also"></a>Vea también  
  [IApplicationDebugger (interfaz)](../../winscript/reference/iapplicationdebugger-interface.md)   

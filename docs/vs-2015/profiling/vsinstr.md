@@ -20,15 +20,15 @@ helpviewer_keywords:
 - performance tools, VSInstr tool
 ms.assetid: 7b1334f7-f9b0-4a82-a145-d0607bfa8467
 caps.latest.revision: 49
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 88e5815abbd9b773db1b6c35f2ecbbf08fd4862f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d905a7a6fa99afa0e7d43409ca1d7b53e7fbd9b0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291315"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773332"
 ---
 # <a name="vsinstr"></a>VSInstr
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

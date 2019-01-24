@@ -2,7 +2,6 @@
 title: Ir a archivo, ir a símbolo, ir a línea
 ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, go to
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d9ceeb7c4d24871bc0f2ddfc743c2c65e087205
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ac8ccada5b515c2af99607fe27ad059fbf00c021
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907058"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986367"
 ---
 # <a name="find-code-using-go-to-commands"></a>Buscar código mediante comandos Ir a
 

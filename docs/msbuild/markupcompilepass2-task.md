@@ -1,8 +1,6 @@
 ---
 title: MarkupCompilePass2 (Tarea) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 360a6c4d3e389583eece1adcc915f26091283653
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a119f3217f8e867dfa4539972cdb2d3d6715b597
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942392"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857950"
 ---
 # <a name="markupcompilepass2-task"></a>MarkupCompilePass2 (tarea)
 

@@ -1,9 +1,6 @@
 ---
 title: FIELD_INFO | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - FIELD_INFO
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0687209b1e4144064c6e6e934cd7443f1aa2c496
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d473c153b2487f2063e965cbcc3818befc1e2aa5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834557"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896531"
 ---
 # <a name="fieldinfo"></a>FIELD_INFO
 Esta estructura describe otro campo, parámetro o una variable local.  
@@ -28,7 +25,7 @@ Esta estructura describe otro campo, parámetro o una variable local.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-typedef struct _tagFieldInfo {   
+typedef struct _tagFieldInfo {   
    FIELD_INFO_FIELDS dwFields;  
    BSTR              bstrFullName;  
    BSTR              bstrName;  
@@ -69,7 +66,7 @@ public struct FIELD_INFO {
 ## <a name="requirements"></a>Requisitos  
  Encabezado: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   

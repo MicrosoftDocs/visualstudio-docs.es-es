@@ -1,9 +1,6 @@
 ---
 title: Visualización de datos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], viewing data
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50325281fcca92394df5db28cc590cfa1e85f651
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: e516e3b7af7cfdbbb2c30ff5045a8b05349d7986
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276798"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848712"
 ---
 # <a name="visualizing-and-viewing-data"></a>Visualización de datos
 Los visualizadores de tipo y presentar los datos de forma que sea significativo rápidamente a un desarrollador visores personalizados. El evaluador de expresiones (EE) puede admiten visualizadores de tipo de terceros, así como proporcionar sus propios visores personalizados.  

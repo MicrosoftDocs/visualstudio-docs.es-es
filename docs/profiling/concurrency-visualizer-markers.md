@@ -1,8 +1,6 @@
 ---
 title: Marcadores del Visualizador de simultaneidad | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.markersui
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf0cd52e94ecd3765dd580d437a227f5c11c149d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1eaccebb5b2a70be545b44615c38a9bd95ce610b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884789"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885710"
 ---
 # <a name="concurrency-visualizer-markers"></a>Marcadores del Visualizador de simultaneidad
 En el visualizador de simultaneidad, los marcadores son iconos que representan los eventos que se producen en una aplicación.  Normalmente, la aplicación genera estos eventos para designar las fases o las instancias de una aplicación.  Los eventos se pueden generar mediante la aplicación o las bibliotecas y los runtimes que utiliza la aplicación.  
@@ -53,7 +51,7 @@ En el visualizador de simultaneidad, los marcadores son iconos que representan l
   
 - [Runtime de simultaneidad](/cpp/parallel/concrt/concurrency-runtime)  
   
-- [Compatibilidad con marcadores de escenario](http://msdn.microsoft.com/en-us/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
+- [Compatibilidad con marcadores de escenario](/previous-versions/visualstudio/visual-studio-2010/dd984115\(v\=vs.100\))  
   
 - [C++ AMP (C++ Accelerated Massive Parallelism)](/cpp/parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism)  
   

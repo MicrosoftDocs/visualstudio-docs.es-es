@@ -1,26 +1,27 @@
 ---
-title: Prueba de aplicaciones de SharePoint con pruebas automatizadas de IU en Visual Studio
+title: Probar aplicaciones de SharePoint con pruebas automatizadas de IU
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 166a57cb0b3c80736761e1649da6399a9bd19807
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 32b408743a2017b6fe83c28659496844b204444f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379717"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910195"
 ---
 # <a name="test-sharepoint-applications-with-coded-ui-tests"></a>Probar aplicaciones de SharePoint con pruebas automatizadas de IU
 
 Incluir pruebas de IU codificadas en una aplicación de SharePoint permite comprobar que toda la aplicación, incluidos sus controles de interfaz de usuario, funcionan correctamente. Las pruebas de IU codificadas también pueden validar valores y la lógica de la interfaz de usuario.
 
 Para obtener más información sobre las ventajas de usar pruebas automatizadas de IU, consulte [Usar la automatización de IU para probar el código](../test/use-ui-automation-to-test-your-code.md).
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 **Requisitos**
 

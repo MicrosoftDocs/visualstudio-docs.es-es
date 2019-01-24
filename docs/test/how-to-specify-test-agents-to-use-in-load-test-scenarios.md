@@ -1,5 +1,5 @@
 ---
-title: Especificación de los agentes de pruebas que se van a usar en escenarios de prueba de carga en Visual Studio
+title: Especificación de los agentes de pruebas que se van a usar en escenarios de prueba de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,20 +13,21 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: a8f822e0023f42b2fb329c8d563a298f3a51c66e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1f6debabdb154e091a8021ccd998bb31d8f88d28
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381474"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932264"
 ---
-# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Cómo: Especificar los agentes de pruebas que se van a usar en escenarios de prueba de carga
+# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Procedimiento para especificar los agentes de pruebas que se van a usar en escenarios de prueba de carga
 
 Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades de los escenarios de modo que satisfagan las necesidades y los objetivos de la prueba.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 > [!NOTE]
-> Para obtener una lista completa de las propiedades de los escenarios de pruebas de carga y sus descripciones, vea [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md).
+> Para obtener una lista completa de las propiedades de los escenarios de pruebas de carga y sus descripciones, consulte [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md).
 
 Los agentes se especifican con el **Editor de pruebas de carga** para cambiar la propiedad **Agentes que se usarán** en la ventana **Propiedades**.
 
@@ -67,6 +68,6 @@ Si una máquina de agente de prueba utiliza más del 75 por ciento de la CPU o t
 ## <a name="see-also"></a>Vea también
 
 - [Modificar escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
-- [Tutorial: Crear y ejecutar una prueba de carga](../test/walkthrough-create-and-run-a-load-test.md)
+- [Tutorial: Creación y ejecución de una prueba de carga](../test/walkthrough-create-and-run-a-load-test.md)
 - [Controladores y agentes de prueba](configure-test-agents-and-controllers-for-load-tests.md)
 - [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md)

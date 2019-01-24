@@ -1,9 +1,6 @@
 ---
 title: Obtención de información de fuente y Color para la coloración de texto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - text, coloring
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b9d5aa4c3f649f7be44db2e18f67884acd23201
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: c48a500323185466b1fa5ffaedeff750de31e04d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370671"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919435"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>Obtener información de fuente y color de coloración de texto
 El proceso que se representa o muestra el texto con colores de elementos de interfaz de usuario depende del tipo de proyecto, su tecnología y desarrollador de preferencias. El **fuentes y colores** página de propiedades almacena la configuración.

@@ -1,8 +1,6 @@
 ---
-title: IDiaSession::findAcceleratorInlineesByLinenum | Documentos de Microsoft
-ms.custom: ''
+title: IDiaSession::findAcceleratorInlineesByLinenum | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b90a253baefad62bba205ccbf0fb8b8fff81712d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: e6784808075518db2e5dcb660318d8e6631cb1b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917471"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867818"
 ---
 # <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
 Devuelve una enumeración de los símbolos para los marcos flotantes que corresponden a la ubicación de origen especificado.  
@@ -25,7 +23,7 @@ Devuelve una enumeración de los símbolos para los marcos flotantes que corresp
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT findAcceleratorInlineeLinesByName (   
+HRESULT findAcceleratorInlineeLinesByName (   
    IDiaSymbol*           parent,  
    IDiaSourceFile*       file,  
    DWORD                 linenum,  

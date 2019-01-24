@@ -1,9 +1,6 @@
 ---
 title: MODULE_INFO_FIELDS | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - MODULE_INFO_FIELDS
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf01cb2573922adb5d8b5b4bc26b10b839009dda
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3687237849e39e1cba76a37ed6273e8cc39fccfd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832860"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831490"
 ---
 # <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
 Especifica las marcas de la información de depuración del módulo.  
@@ -28,7 +25,7 @@ Especifica las marcas de la información de depuración del módulo.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-enum enum_MODULE_INFO_FIELDS {   
+enum enum_MODULE_INFO_FIELDS {   
    MIF_NONE              = 0x0000,  
    MIF_NAME              = 0x0001,  
    MIF_URL               = 0x0002,  
@@ -47,7 +44,7 @@ typedef DWORD MODULE_INFO_FIELDS;
 ```  
   
 ```csharp  
-public enum enum_MODULE_INFO_FIELDS {   
+public enum enum_MODULE_INFO_FIELDS {   
    MIF_NONE              = 0x0000,  
    MIF_NAME              = 0x0001,  
    MIF_URL               = 0x0002,  
@@ -114,7 +111,7 @@ public enum enum_MODULE_INFO_FIELDS {
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   

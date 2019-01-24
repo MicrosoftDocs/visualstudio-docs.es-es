@@ -1,10 +1,10 @@
 ---
-title: 'Inicio rápido: Uso de Visual Studio para crear la primera aplicación de consola de C#'
+title: Uso de Visual Studio para crear la primera aplicación de consola de C#
+titleSuffix: ''
 description: Obtenga información sobre cómo crear una aplicación de consola Hola mundo sencilla en Visual Studio con C#, paso a paso.
-ms.custom: ''
 ms.date: 09/21/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: ee40aadd3287018e52910ad6b4a4000db6bcce8a
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 2b36051f3a316f2b00ebdd08110f22346a910512
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443420"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853923"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Inicio rápido: Uso de Visual Studio para crear la primera aplicación de consola de C#
 
@@ -98,4 +98,4 @@ Vamos a agregar algo de código para pausar la aplicación para que no se cierre
 ¡Enhorabuena por completar este tutorial de inicio rápido! Esperamos que haya aprendido un poco sobre el IDE de Visual Studio y C#. Para más información, continúe con los tutoriales siguientes.
 
 > [!div class="nextstepaction"]
-> [Introducción a la aplicación de consola de C# en Visual Studio](tutorial-csharp-console.md)
+> [Introducción a la aplicación de consola de C# en Visual Studio](../get-started/csharp/tutorial-console.md)

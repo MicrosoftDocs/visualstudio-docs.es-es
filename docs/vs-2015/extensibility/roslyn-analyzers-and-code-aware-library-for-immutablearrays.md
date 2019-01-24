@@ -13,12 +13,12 @@ ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 94dbfbc39260e0cfcab374c2db12ab103f310b28
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb8eb38dc8d6e55bf13cfac851cb459a75ec37ac
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173360"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802647"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analizadores de Roslyn y biblioteca compatible con código para ImmutableArrays
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

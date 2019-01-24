@@ -2,7 +2,6 @@
 title: Conjuntos de reglas de análisis de código
 ms.date: 04/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.learnmore
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa287570213e6238d0a8dffc9f6e70367b133591
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 8dc70348ef2fe5826339bd58e1db17574449ff6c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204432"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885160"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Usar conjuntos de reglas para agrupar reglas de análisis de código
 
@@ -58,10 +57,15 @@ El contenido de un *.ruleset* archivo es similar a este código XML:
 > [!TIP]
 > Es más fácil [editar un conjunto de reglas](../code-quality/working-in-the-code-analysis-rule-set-editor.md) en el gráfico **Editor de conjunto de reglas** de forma manual.
 
+## <a name="specify-a-rule-set-for-a-project"></a>Especificar un conjunto de reglas para un proyecto
+
 La regla establecida para un proyecto especificado por el **CodeAnalysisRuleSet** propiedad en el archivo de proyecto de Visual Studio. Por ejemplo:
 
 ```xml
-<CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>
+<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  ...
+  <CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>
+</PropertyGroup>
 ```
 
 ## <a name="see-also"></a>Vea también

@@ -1,8 +1,6 @@
 ---
 title: Canales (Vista de subprocesos) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.channelnames
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42b1baeec4543cb56d1e2320f26c9457dd7aac80
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 0d3ab6254ba56337e3e47379f1f4df800a73c67f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34269133"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870932"
 ---
 # <a name="channels-threads-view"></a>Canales (vista Subprocesos)
 El visualizador de simultaneidad muestra cuatro tipos de canales: canales de subprocesos, de discos, de marcador y de GPU.  
@@ -32,7 +30,7 @@ El visualizador de simultaneidad muestra cuatro tipos de canales: canales de sub
 |Subproceso principal|El subproceso que inició la aplicación.|  
 |Subproceso de trabajo|Un subproceso creado por el subproceso principal de la aplicación.|  
 |Subproceso de trabajo CLR|Un subproceso de trabajo creado por Common Language Runtime (CLR).|  
-|Aplicación auxiliar de depuración|Un subproceso de trabajo creado por el depurador de Visual Studio.|  
+|Asistente de depuración|Un subproceso de trabajo creado por el depurador de Visual Studio.|  
 |Subproceso ConcRT|Un subproceso creado por el Runtime de simultaneidad de Microsoft.|  
 |Subproceso GDI|Un subproceso creado por GDIPlus.|  
 |Subproceso OLE/RPC|Un subproceso creado como un subproceso de trabajo RPC.|  

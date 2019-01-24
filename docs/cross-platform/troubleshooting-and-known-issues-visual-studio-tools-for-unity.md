@@ -5,17 +5,17 @@ ms.date: 07/03/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 8f5db192-8d78-4627-bd07-dbbc803ac554
-author: conceptdev
-ms.author: crdun
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 86f547ae686176ab6361f44f4f0ba432c6466da9
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 1c69c78e9a081680c6ee5279ddce1816bf500672
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251580"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027294"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Solución de problemas y problemas conocidos (Visual Studio Tools para Unity)
 
@@ -90,7 +90,7 @@ Si Visual Studio no encuentra una ubicación de origen para un punto de interrup
 
 ## <a name="breakpoints-not-hit"></a>Puntos de interrupción no ejecutados
 
-Compruebe que el script que usa está cargado y se emplea correctamente en la escena actual de Unity. Salga de Visual Studio y Unity y, luego, elimine todos los archivos generados (*.csproj, *.sln) y la carpeta de biblioteca completa.
+Compruebe que el script que usa está cargado y se emplea correctamente en la escena actual de Unity. Salga de Visual Studio y Unity y elimine todos los archivos generados (\*.csproj, \*.sln) y la carpeta Library completa.
 
 ## <a name="unable-to-debug-android-players"></a>Imposibilidad de depurar reproductores de Android
 

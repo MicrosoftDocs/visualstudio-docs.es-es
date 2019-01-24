@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20d0fac68bb7cdb3d7f5cb6aac6b0ab67e373c84
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0396ed90437a98c8ee398f3c3acb0aeb5ddc77e2
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726575"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348417"
 ---
 # <a name="idebugapplicationnodeevents-interface"></a>IDebugApplicationNodeEvents (Interfaz)
-Proporciona la interfaz de eventos para el `IDebugApplicationNode` interfaz.  
+Proporciona la interfaz de eventos para la interfaz `IDebugApplicationNode`.  
   
  Además de los métodos heredados de `IUnknown`, el `IDebugApplicationNodeEvents` interfaz expone los métodos siguientes.  
   
@@ -32,8 +32,8 @@ Proporciona la interfaz de eventos para el `IDebugApplicationNode` interfaz.
 |------------|-----------------|  
 |[IDebugApplicationNodeEvents::onAddChild](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)|Controla el evento cuando se agrega un nodo secundario a un objeto de nodo de la aplicación de depuración.|  
 |[IDebugApplicationNodeEvents::onRemoveChild](../../winscript/reference/idebugapplicationnodeevents-onremovechild.md)|Controla el evento cuando se quita un nodo secundario de un objeto de nodo de la aplicación de depuración.|  
-|[IDebugApplicationNodeEvents::onDetach](../../winscript/reference/idebugapplicationnodeevents-ondetach.md)|Controla un evento que lo que significa que el objeto de nodo de la aplicación de depuración se separó de un nodo primario.|  
-|[IDebugApplicationNodeEvents::onAttach](../../winscript/reference/idebugapplicationnodeevents-onattach.md)|Controla un evento que lo que significa que el objeto de nodo de la aplicación de depuración se conectó a un nodo primario.|  
+|[IDebugApplicationNodeEvents::onDetach](../../winscript/reference/idebugapplicationnodeevents-ondetach.md)|Controla un evento lo que significa que el objeto de nodo de la aplicación de depuración se separó de un nodo primario.|  
+|[IDebugApplicationNodeEvents::onAttach](../../winscript/reference/idebugapplicationnodeevents-onattach.md)|Controla un evento lo que significa que el objeto de nodo de la aplicación de depuración se ha adjuntado a un nodo primario.|  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugApplicationNode (Interfaz)](../../winscript/reference/idebugapplicationnode-interface.md)

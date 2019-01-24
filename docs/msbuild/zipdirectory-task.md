@@ -1,10 +1,8 @@
 ---
 title: Tarea ZipDirectory | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
-ms.technology: msbuild
 ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dbd45d32e2268a687d09c48527acb1a6df0bff5
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 320fd3a62c3283b0c442f0f7bbc3df5512eb7bcc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468369"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930965"
 ---
 # <a name="zipdirectory-task"></a>Tarea ZipDirectory
 Crea un archivo *.zip* desde el contenido de un directorio.
@@ -58,8 +56,7 @@ Crea un archivo *.zip* desde el contenido de un directorio.
     <Target Name="ZipOutputPath" AfterTargets="Build">
         <ZipDirectory
             SourceDirectory="$(OutputPath)"
-            DestinationFile="$(MSBuildProjectDirectory)\output.zip">
-        />
+            DestinationFile="$(MSBuildProjectDirectory)\output.zip" />
     </Target>
 
 </Project>

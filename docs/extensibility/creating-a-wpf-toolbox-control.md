@@ -1,9 +1,6 @@
 ---
 title: Crear un Control de cuadro de herramientas WPF | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - toolbox control
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43734720a4e86f9f1e214285df1873b39b67fa01
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 07ab3bc10bd755a768c80e53c96ad133ecce08a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500337"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847547"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Crear un Control de cuadro de herramientas WPF
 La plantilla de Control de cuadro de herramientas WPF (Windows Presentation Framework) le permite crear controles de WPF que se agregan automáticamente a la **cuadro de herramientas** cuando se instala la extensión. En este tema se muestra cómo usar la plantilla para crear un **cuadro de herramientas** control que se puede distribuir a otros usuarios.  
@@ -41,7 +38,7 @@ La plantilla de Control de cuadro de herramientas WPF (Windows Presentation Fram
   
 1.  Abra *MyToolboxControl.xaml* en el diseñador.  
   
-     El diseñador muestra una <xref:System.Windows.Controls.Grid> control que contiene un <xref:System.Windows.Controls.Button> control.  
+     El diseñador muestra un control <xref:System.Windows.Controls.Grid> que contiene un control <xref:System.Windows.Controls.Button>.  
   
 2.  Organice el diseño de cuadrícula. Cuando se selecciona el <xref:System.Windows.Controls.Grid> controlar, aparecen barras de control en azul en los bordes superiores e izquierdos de la cuadrícula. Puede agregar filas y columnas a la cuadrícula, haga clic en las barras.  
   

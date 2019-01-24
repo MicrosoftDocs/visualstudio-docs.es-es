@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: deshabilitar la activación de direcciones URL de aplicaciones ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Deshabilitar la activación de direcciones URL de aplicaciones ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,18 +16,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ab9204513c59d2c853c0a3738ef2363739d56c1
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
-ms.translationtype: MT
+ms.openlocfilehash: 611bb0d2c3c828be5f8eaa10f3baeaafca1c8f37
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459626"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854781"
 ---
-# <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Cómo: deshabilitar la activación de direcciones URL de aplicaciones ClickOnce
+# <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Procedimiento Desactivación de la activación de URL de aplicaciones ClickOnce
 
-Normalmente, una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se inicia automáticamente después de que se instale desde un servidor web. Por motivos de seguridad, puede decidir deshabilitar este comportamiento e indicar a los usuarios para iniciar la aplicación desde el **iniciar** menú en su lugar. En el procedimiento siguiente, se describe cómo deshabilitar la activación de URL.
+Normalmente, una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se inicia automáticamente después de que se instale desde un servidor web. Por motivos de seguridad, puede deshabilitar este comportamiento e indicar a los usuarios que, en su lugar, inicien la aplicación desde el menú **Inicio**. En el procedimiento siguiente, se describe cómo deshabilitar la activación de URL.
 
-Esta técnica se puede utilizar solo para las aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instaladas en el equipo del usuario desde un servidor web. No se puede utilizar para aplicaciones solo en línea, que se pueden iniciar utilizando su dirección URL. Para obtener más información sobre la diferencia entre las aplicaciones sólo en línea e instaladas, consulte [elegir una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
+Esta técnica se puede utilizar solo para las aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instaladas en el equipo del usuario desde un servidor web. No se puede utilizar para aplicaciones solo en línea, que se pueden iniciar utilizando su dirección URL. Para obtener más información acerca de la diferencia entre las aplicaciones solo en línea e instaladas, consulte [Elegir una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
 
 Este procedimiento usa la herramienta de Kit de desarrollo de Software (SDK) de Windows MageUI.exe. Para obtener más información sobre esta herramienta, consulte [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client). También puede realizar este procedimiento con Visual Studio.
 
@@ -37,11 +35,11 @@ Este procedimiento usa la herramienta de Kit de desarrollo de Software (SDK) de 
 
 ### <a name="to-disable-url-activation-for-your-application"></a>Deshabilitar la activación de direcciones URL para la aplicación
 
-1.  Abra el manifiesto de implementación en MageUI.exe. Si aún no ha creado uno, siga los pasos descritos en [Tutorial: implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+1.  Abra el manifiesto de implementación en MageUI.exe. Si aún no ha creado uno, siga los pasos descritos en [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
-2.  Seleccione el **opciones de implementación** ficha.
+2.  Seleccione la pestaña **Opciones de implementación**.
 
-3.  Desactive el **ejecutar automáticamente la aplicación después de instalar** casilla de verificación.
+3.  Desactive la casilla de verificación **Ejecutar automáticamente la aplicación después de instalarla**.
 
 4.  Guarde y firme el manifiesto.
 

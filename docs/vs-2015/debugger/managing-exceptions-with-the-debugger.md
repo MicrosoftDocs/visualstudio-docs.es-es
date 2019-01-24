@@ -35,15 +35,15 @@ helpviewer_keywords:
 - exceptions, debugging
 ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
 caps.latest.revision: 40
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 37b815543332ff61a275fed8fdfba06c91a433b4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bdb648e7a29b3ed5d9a444e203ddbdcd6b0e73dc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813679"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769996"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Administración de excepciones con el depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

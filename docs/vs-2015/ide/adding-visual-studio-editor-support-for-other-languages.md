@@ -1,5 +1,5 @@
 ---
-title: Agregar compatibilidad con otros lenguajes en el editor de Visual Studio | Microsoft Docs
+title: Agregar compatibilidad con el editor para otros lenguajes | Microsoft Docs
 ms.custom: ''
 ms.date: 11/15/2016
 ms.reviewer: ''
@@ -19,77 +19,72 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a0a978470a307c46805e902db85cd5a638c0d83f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: fa622ddb6d840698d1134e0fec1540d99b44f5e2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823780"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049799"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Agregar compatibilidad con otros lenguajes en el editor de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Obtenga información sobre la manera en que el editor de Visual Studio admite la lectura y la navegación por los distintos lenguajes de computación y sobre cómo puede agregar compatibilidad con otros lenguajes en el editor de Visual Studio.  
-  
-## <a name="syntax-colorization-statement-completion-and-navigate-to-support"></a>Compatibilidad con el uso de colores para la sintaxis, la finalización de instrucciones y Navegar a  
- Las características del editor de Visual Studio como el uso de colores para la sintaxis, la finalización de instrucciones y Navegar a pueden ayudarle a leer, crear y editar el código más fácilmente. En la captura de pantalla siguiente se muestra un ejemplo de cómo se edita un script Perl en Visual Studio. Se aplica color automáticamente a la sintaxis. Por ejemplo, los comentarios del código aparecen en color verde, el código en negro, las rutas de acceso en rojo y las instrucciones en azul. El editor de Visual Studio aplica color automáticamente a la sintaxis de todos los lenguajes que admite. Además, cuando se empieza a escribir un objeto o una palabra clave del lenguaje conocidos, la finalización de instrucciones muestra una lista de las posibles instrucciones y objetos. La finalización de instrucciones puede ayudarle a crear código de manera más rápida y fácil.  
-  
- ![Colores de sintaxis en script Perl](../ide/media/vside-perledit.png "VSIDE_PerlEdit")  
-  
- Visual Studio actualmente ofrece compatibilidad con el uso de colores para la sintaxis y la finalización de instrucciones básicas para los lenguajes siguientes mediante [gramáticas TextMate](https://manual.macromates.com/en/language_grammars). Si su lenguaje favorito no está en la tabla, no se preocupe: puede agregarlo.  
-  
-|||||||  
-|-|-|-|-|-|-|  
-|Bat|F#|Java|Markdown|Rust|Visual Basic|  
-|Clojure|Ir|JavaDoc|Objective-C|ShaderLab|Visual C#|  
-|CMake|Groovy|JSON|Perl|ShellScript|Visual C++|  
-|CoffeeScript|HTML|LESS|Python|SQL|VBNet|  
-|CSS|INI|LUA|R|Swift|XML|  
-|Docker|Jade|Make|Ruby|TypeScript|YAML|  
-  
- Además del uso de colores para la sintaxis y la finalización de instrucciones básicas, Visual Studio tiene una característica denominada [Navegar a](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Esta característica permite buscar rápidamente archivos de código, rutas de acceso de archivo y símbolos de código. Visual Studio ofrece compatibilidad con Navegar a para los idiomas siguientes.  
-  
-- Ir  
-  
-- Java  
-  
-- JavaScript  
-  
-- PHP  
-  
-- TypeScript  
-  
-- Visual Basic  
-  
-- Visual C++  
-  
-- Visual C#  
-  
-  Todos estos tipos de archivo tienen las características que se han descrito anteriormente aunque todavía no se haya instalado la compatibilidad con un idioma determinado. La instalación de compatibilidad especializada con algunos lenguajes puede proporcionar compatibilidad con lenguajes adicionales, como IntelliSense u otras características de lenguaje avanzadas, como las bombillas.  
-  
-## <a name="adding-support-for-non-supported-languages"></a>Agregar compatibilidad con idiomas no admitidos  
- Visual Studio 2015 Update 1 y versiones posteriores proporcionan compatibilidad de lenguaje en el editor mediante el uso de [gramáticas TextMate](https://manual.macromates.com/en/language_grammars). Si su lenguaje de programación favorito no se admite actualmente en el editor de Visual Studio, busque en primer lugar en la Web, ya que es posible que exista un lote de TextMate para el lenguaje. Si no encuentra uno, puede agregar usted mismo compatibilidad con él en Visual Studio 2015 Update 1 o versiones posteriores. Para ello, cree un modelo de lote de TextMate para gramáticas del lenguaje y fragmentos de código.  
-  
- Agregue todas las gramáticas TextMate nuevas para Visual Studio en la carpeta siguiente:  
-  
- %userprofile%\\.vs\Extensions  
-  
- En esta ruta de acceso base, agregue las carpetas siguientes si se aplican a su situación:  
-  
-|Nombre de carpeta|Descripción|  
-|-----------------|-----------------|  
-|\\*\<nombre del lenguaje>*|Carpeta del lenguaje. Reemplace *\<nombre del lenguaje>* por el nombre del lenguaje. Por ejemplo, **\Matlab**.|  
-|\Syntaxes|Carpeta de la gramática. Contiene los archivos .json de la gramática para el lenguaje, como **Matlab.json**.|  
-|\Snippets|Carpeta de fragmentos de código. Contiene fragmentos de código para el lenguaje.|  
-  
- En Windows, %userprofile% se resuelve como la ruta de acceso c:\Usuarios\\*\<nombre de usuario>*. Si la carpeta de extensiones no existe en el sistema, debe crearla. Si la carpeta ya existe, estará oculta.  
-  
- Para obtener más información sobre cómo crear gramáticas TextMate, vea [TextMate – Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate. Introducción a las gramáticas de lenguaje: cómo agregar resaltado de sintaxis de código origen insertado en HTML) y [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (Notas sobre cómo crear una gramática de lenguaje y un tema personalizado para un lote de Textmate).  
-  
-## <a name="see-also"></a>Vea también  
- [Visual Studio 2013 Navigate To Improvements](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/)  (Mejoras en Navegar a de Visual Studio 2013)  
- [Tutorial: Crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md)   
- [Tutorial: Mostrar la finalización de instrucciones](../extensibility/walkthrough-displaying-statement-completion.md)
+Obtenga información sobre la manera en que el editor de Visual Studio admite la lectura y la navegación por los distintos lenguajes de computación y sobre cómo puede agregar compatibilidad con otros lenguajes en el editor de Visual Studio.
 
+## <a name="syntax-colorization-statement-completion-and-navigate-to-support"></a>Compatibilidad con el uso de colores para la sintaxis, la finalización de instrucciones y Navegar a
+ Las características del editor de Visual Studio como el uso de colores para la sintaxis, la finalización de instrucciones y Navegar a pueden ayudarle a leer, crear y editar el código más fácilmente. En la captura de pantalla siguiente se muestra un ejemplo de cómo se edita un script Perl en Visual Studio. Se aplica color automáticamente a la sintaxis. Por ejemplo, los comentarios del código aparecen en color verde, el código en negro, las rutas de acceso en rojo y las instrucciones en azul. El editor de Visual Studio aplica color automáticamente a la sintaxis de todos los lenguajes que admite. Además, cuando se empieza a escribir un objeto o una palabra clave del lenguaje conocidos, la finalización de instrucciones muestra una lista de las posibles instrucciones y objetos. La finalización de instrucciones puede ayudarle a crear código de manera más rápida y fácil.
 
+ ![Colores de sintaxis en script Perl](../ide/media/vside-perledit.png "VSIDE_PerlEdit")
 
+ Visual Studio actualmente ofrece compatibilidad con el uso de colores para la sintaxis y la finalización de instrucciones básicas para los lenguajes siguientes mediante [gramáticas TextMate](https://manual.macromates.com/en/language_grammars). Si su lenguaje favorito no está en la tabla, no se preocupe: puede agregarlo.
+
+|||||||
+|-|-|-|-|-|-|
+|Bat|F#|Java|Markdown|Rust|Visual Basic|
+|Clojure|Ir|JavaDoc|Objective-C|ShaderLab|Visual C#|
+|CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
+|CoffeeScript|HTML|LESS|Python|SQL|VBNet|
+|CSS|INI|LUA|R|Swift|XML|
+|Docker|Jade|Make|Ruby|TypeScript|YAML|
+
+ Además del uso de colores para la sintaxis y la finalización de instrucciones básicas, Visual Studio tiene una característica denominada [Navegar a](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Esta característica permite buscar rápidamente archivos de código, rutas de acceso de archivo y símbolos de código. Visual Studio ofrece compatibilidad con Navegar a para los idiomas siguientes.
+
+- Ir
+
+- Java
+
+- JavaScript
+
+- PHP
+
+- TypeScript
+
+- Visual Basic
+
+- Visual C++
+
+- Visual C#
+
+  Todos estos tipos de archivo tienen las características que se han descrito anteriormente aunque todavía no se haya instalado la compatibilidad con un idioma determinado. La instalación de compatibilidad especializada con algunos lenguajes puede proporcionar compatibilidad con lenguajes adicionales, como IntelliSense u otras características de lenguaje avanzadas, como las bombillas.
+
+## <a name="adding-support-for-non-supported-languages"></a>Agregar compatibilidad con idiomas no admitidos
+ Visual Studio 2015 Update 1 y versiones posteriores proporcionan compatibilidad de lenguaje en el editor mediante el uso de [gramáticas TextMate](https://manual.macromates.com/en/language_grammars). Si su lenguaje de programación favorito no se admite actualmente en el editor de Visual Studio, busque en primer lugar en la Web, ya que es posible que exista un lote de TextMate para el lenguaje. Si no encuentra uno, puede agregar usted mismo compatibilidad con él en Visual Studio 2015 Update 1 o versiones posteriores. Para ello, cree un modelo de lote de TextMate para gramáticas del lenguaje y fragmentos de código.
+
+ Agregue todas las gramáticas TextMate nuevas para Visual Studio en la carpeta siguiente:
+
+ %userprofile%\\.vs\Extensions
+
+ En esta ruta de acceso base, agregue las carpetas siguientes si se aplican a su situación:
+
+|Nombre de carpeta|Descripción|
+|-----------------|-----------------|
+|\\*\<nombre del lenguaje>*|Carpeta del lenguaje. Reemplace *\<nombre del lenguaje>* por el nombre del lenguaje. Por ejemplo, **\Matlab**.|
+|\Syntaxes|Carpeta de la gramática. Contiene los archivos .json de la gramática para el lenguaje, como **Matlab.json**.|
+|\Snippets|Carpeta de fragmentos de código. Contiene fragmentos de código para el lenguaje.|
+
+ En Windows, %userprofile% se resuelve como la ruta de acceso c:\Usuarios\\*\<nombre de usuario>*. Si la carpeta de extensiones no existe en el sistema, debe crearla. Si la carpeta ya existe, estará oculta.
+
+ Para obtener más información sobre cómo crear gramáticas TextMate, vea [TextMate: Introducción a las gramáticas de lenguaje: Cómo agregar resaltado de sintaxis de código origen insertado en HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) y [notas sobre cómo crear una gramática del lenguaje y un tema personalizado para un lote de Textmate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
+
+## <a name="see-also"></a>Vea también
+ [Visual Studio 2013 que se vaya a mejoras](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [Tutorial: Creación de un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md) [Tutorial: Visualización de finalización de instrucciones](../extensibility/walkthrough-displaying-statement-completion.md)

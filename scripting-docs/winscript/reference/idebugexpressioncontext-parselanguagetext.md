@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext::ParseLanguageText | Documentos de Microsoft
+title: IDebugExpressionContext::ParseLanguageText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e455768b7d38096c64ab61f2b36aeba871ddf0bc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a55dc9ae2ae92a76c2b426d1f36949573b37a265
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729245"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087729"
 ---
 # <a name="idebugexpressioncontextparselanguagetext"></a>IDebugExpressionContext::ParseLanguageText
 Crea una expresión de depuración para el texto especificado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT ParseLanguageText(  
    LPCOLESTR           pstrCode,  
    UINT                nRadix,  
@@ -42,25 +42,25 @@ HRESULT ParseLanguageText(
   
 #### <a name="parameters"></a>Parámetros  
  `pstrCode`  
- [in] Proporciona el texto de la expresión o instrucción.  
+ [in] Proporciona el texto de la expresión o instrucción o instrucciones.  
   
  `nRadix`  
- [in] Base para utilizar.  
+ [in] Base a utilizar.  
   
  `pstrDelimiter`  
- [in] El delimitador final del bloque de script. Cuando `pstrCode` se analiza desde una secuencia de texto, el host normalmente usa un delimitador, como dos comillas ("), para detectar el final del bloque de script simples. Este parámetro especifica el delimitador que utiliza el host, lo que el motor de scripting proporcionar algunos condicional preprocesamiento primitivos (por ejemplo, reemplace una comilla simple ['] con dos comillas simples para su uso como un delimitador). Exactamente cómo (y si) los usos de motor de scripting en función de esta información en el motor de scripting. Establezca este parámetro en `NULL` si el host no usó un delimitador para marcar el final del bloque de script.  
+ [in] El delimitador final del bloque de script. Cuando `pstrCode` se analiza desde una secuencia de texto, el host normalmente utiliza un delimitador, como dos comillas ("), para detectar el final del bloque de script. Este parámetro especifica el delimitador que utiliza el host, lo que permite el motor de scripting proporcione algún preprocesamiento primitivo condicional (por ejemplo, que reemplaza una comilla sencilla ['] con dos comillas simples para su uso como un delimitador). Exactamente cómo (y si) utiliza el motor de scripting, esta información depende del motor de scripting. Establezca este parámetro en `NULL` si el host no utilizó un delimitador para marcar el final del bloque de script.  
   
  `dwFlags`  
- [in] Combinación de los siguientes indicadores de texto de depuración:  
+ [in] Combinación de los siguientes marcadores de texto de depuración:  
   
 |Constante|Valor|Descripción|  
 |--------------|-----------|-----------------|  
-|DEBUG_TEXT_ISEXPRESSION|0x00000001|Indica que el texto es una expresión en lugar de una instrucción. Este indicador puede afectar a la manera en la que se analiza el texto de algunos lenguajes.|  
-|DEBUG_TEXT_RETURNVALUE|0x00000002|Si un valor devuelto está disponible, se utilizará por el llamador.|  
+|DEBUG_TEXT_ISEXPRESSION|0x00000001|Indica que el texto es una expresión en lugar de una instrucción. Este indicador puede afectar a la manera en que se analiza el texto por algunos idiomas.|  
+|DEBUG_TEXT_RETURNVALUE|0x00000002|Si un valor devuelto está disponible, se utilizará el llamador.|  
 |DEBUG_TEXT_NOSIDEEFFECTS|0x00000004|No se permiten efectos secundarios. Si se establece esta marca, la evaluación de la expresión no debe cambiar ningún estado en tiempo de ejecución.|  
 |DEBUG_TEXT_ALLOWBREAKPOINTS|0x00000008|Permite que los puntos de interrupción durante la evaluación del texto. Si no se establece esta marca se omiten los puntos de interrupción durante la evaluación del texto.|  
 |DEBUG_TEXT_ALLOWERRORREPORT|0x00000010|Permite que los informes de error durante la evaluación del texto. Si no se establece esta marca, a continuación, no se notifican al host durante la evaluación.|  
-|DEBUG_TEXT_EVALUATETOCODECONTEXT|0x00000020|Indica la expresión se evalúa a un contexto de código, en lugar de ejecutar la propia expresión|  
+|DEBUG_TEXT_EVALUATETOCODECONTEXT|0x00000020|Indica la expresión se evaluará un contexto de código, en lugar de ejecutar la expresión|  
   
  `ppe`  
  [out] Devuelve la expresión de depuración para el texto especificado.  

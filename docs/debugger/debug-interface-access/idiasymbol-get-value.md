@@ -1,8 +1,6 @@
 ---
 title: Get_value | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23fb08303840c8d90644a292cac8832e29641246
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bb8e85296338782cac0de27e1e121ed25d8e823c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863742"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963397"
 ---
 # <a name="idiasymbolgetvalue"></a>IDiaSymbol::get_value
 Recupera el valor de una constante.  
@@ -27,7 +25,7 @@ Recupera el valor de una constante.
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT get_value (   
+HRESULT get_value (   
    VARIANT* pRetVal  
 );  
 ```  

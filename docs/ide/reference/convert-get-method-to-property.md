@@ -1,8 +1,7 @@
 ---
-title: Conversión del método Get en propiedad y conversión de una propiedad en un método Get en Visual Studio
+title: Conversión del método Get en una propiedad y conversión de una propiedad en un método Get
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 ms.devlang: csharp
 author: gewarren
@@ -11,15 +10,15 @@ manager: douge
 f1_keywords:
 - vs.csharp.refactoring.convertmethodtoproperty
 dev_langs:
-- csharp
+- CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 862f3d82decbd934fa64b5d88e41d7e906dcea57
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0af901ed6a51b962b7b2999b04909136bbb0f3e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920864"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861152"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Refactorizaciones de conversión del método Get en propiedad y de propiedad en método Get
 
@@ -29,9 +28,9 @@ Estas refactorizaciones se aplican a:
 
 ## <a name="convert-get-method-to-property"></a>Conversión del método Get en una propiedad
 
-**Qué:** le permite convertir un método Get en una propiedad (y, opcionalmente, el método Set).
+**Qué:** Permite convertir un método Get en una propiedad (y, opcionalmente, el método Set).
 
-**Cuándo:** Tiene un método Get que no contiene ninguna lógica.
+**Cuándo:** Hay un método Get que no contiene ninguna lógica.
 
 ### <a name="how-to"></a>Procedimiento
 
@@ -70,9 +69,9 @@ public int MyValue
 
 ## <a name="convert-property-to-get-method"></a>Convertir propiedad a método Get
 
-**Qué:** Le permite convertir una propiedad en un método Get
+**Qué:** Permite convertir una propiedad en un método Get
 
-**Cuándo:** Tiene una propiedad que implica más que establecer y obtener un valor de inmediato
+**Cuándo:** Hay una propiedad que implica más que establecer y obtener un valor de inmediato
 
 ### <a name="how-to"></a>Procedimiento
 

@@ -1,5 +1,5 @@
 ---
-title: 'Método ijsdebugbreakpoint:: Delete | Documentos de Microsoft'
+title: Método Ijsdebugbreakpoint | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,26 +16,26 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f61da0754147e0a449663cc9815501dc8d38e6f5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6aa838f928aac6985c5c864853c3abd017f7bcf8
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727995"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350016"
 ---
 # <a name="ijsdebugbreakpointdelete-method"></a>IJsDebugBreakPoint::Delete (Método)
 Elimina el punto de interrupción.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT Delete(void);  
 ```  
   
 ## <a name="return-value"></a>Valor devuelto  
   
 ## <a name="remarks"></a>Comentarios  
- Devuelve S_FALSE si se invoca en un punto de interrupción se eliminó.  
+ Devuelve S_FALSE si se llama en un punto de interrupción eliminado.  
   
 ## <a name="requirements"></a>Requisitos  
  **Encabezado:** jscript9diag.h  

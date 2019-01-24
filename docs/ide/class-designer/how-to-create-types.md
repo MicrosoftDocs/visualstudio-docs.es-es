@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: Crear tipos con el Diseñador de clases'
+title: Procedimiento Crear tipos con el Diseñador de clases
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - VS.Clr.ClrAttributesDialog
@@ -19,16 +18,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 769bcfa202961c5a492e4fcb5af8e522b9052059
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 131c09b170e86858d8a2855092404208fe06fa91
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842266"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916473"
 ---
-# <a name="how-to-create-types-by-using-class-designer"></a>Cómo: Crear tipos con el Diseñador de clases
+# <a name="how-to-create-types-by-using-class-designer"></a>Procedimiento Crear tipos con el Diseñador de clases
 
-Para diseñar nuevos tipos para proyectos de C# y Visual Basic, créelos en un diagrama de clases. Para ver los tipos existentes, vea [Cómo: Ver los tipos existentes](how-to-view-existing-types.md).
+Para diseñar nuevos tipos para proyectos de C# y Visual Basic, créelos en un diagrama de clases. Para visualizar los tipos existentes, vea [Cómo: Ver tipos existentes](how-to-view-existing-types.md).
 
 ##  <a name="CreateType"></a> Crear un tipo nuevo
 
@@ -91,8 +90,7 @@ Para diseñar nuevos tipos para proyectos de C# y Visual Basic, créelos en un d
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Crear la herencia entre tipos](how-to-create-inheritance-between-types.md)
+- [Cómo: Crear herencia entre tipos](how-to-create-inheritance-between-types.md)
 - [Cómo: Crear asociaciones entre tipos](how-to-create-associations-between-types.md)
 - [Creación y configuración de miembros de tipo](creating-and-configuring-type-members.md)
-- [Trabajar con diagramas de clases](working-with-class-diagrams.md)
 - [Diseño de clases y tipos](designing-and-viewing-classes-and-types.md)

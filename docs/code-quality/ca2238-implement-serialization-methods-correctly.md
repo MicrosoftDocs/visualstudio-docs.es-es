@@ -1,8 +1,7 @@
 ---
-title: 'CA2238: Implementar los métodos de serialización de forma correcta'
+title: 'CA2238: Implementar métodos de serialización correctamente'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - ImplementSerializationMethodsCorrectly
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c6f25aa6aa574f856bcce7601602ed2f195e785a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5857892fb7e84e295a6d3f2a61fd67480a53c707
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949544"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834953"
 ---
-# <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: Implementar los métodos de serialización de forma correcta
+# <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: Implementar métodos de serialización correctamente
 
 |||
 |-|-|
@@ -64,11 +63,11 @@ ms.locfileid: "49949544"
  [!code-csharp[FxCop.Usage.SerializationEventHandlers#1](../code-quality/codesnippet/CSharp/ca2238-implement-serialization-methods-correctly_1.cs)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA2236: Llamar a métodos de clase base en tipos ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
+ [LCA2236: Llamar a métodos de clase base en tipos ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
 
  [CA2240: Implementar ISerializable correctamente](../code-quality/ca2240-implement-iserializable-correctly.md)
 
- [CA2229: Implementar constructores de serialización](../code-quality/ca2229-implement-serialization-constructors.md)
+ [CA2229: implementar constructores de serialización](../code-quality/ca2229-implement-serialization-constructors.md)
 
  [CA2235: Marcar todos los campos no serializables](../code-quality/ca2235-mark-all-non-serializable-fields.md)
 
@@ -76,4 +75,4 @@ ms.locfileid: "49949544"
 
  [CA2239: Proporcionar métodos de deserialización para campos opcionales](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
 
- [CA2120: Proteger los constructores de serializaciones](../code-quality/ca2120-secure-serialization-constructors.md)
+ [CA2120: Proteger los constructores de serialización](../code-quality/ca2120-secure-serialization-constructors.md)

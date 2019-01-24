@@ -1,8 +1,6 @@
 ---
-title: IDiaSession::findSymbolsForAcceleratorPointerTag | Documentos de Microsoft
-ms.custom: ''
+title: IDiaSession::findSymbolsForAcceleratorPointerTag | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f53031bd29af50b90f88868a36f340ee460201a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 23c304795f01a3dc820c2ca5b3ba1b3558177659
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915313"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961301"
 ---
 # <a name="idiasessionfindsymbolsforacceleratorpointertag"></a>IDiaSession::findSymbolsForAcceleratorPointerTag
 Devuelve una enumeración de símbolos de la variable que el valor de etiqueta especificado corresponde de la principal función de código auxiliar del acelerador.  
@@ -25,7 +23,7 @@ Devuelve una enumeración de símbolos de la variable que el valor de etiqueta e
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT findSymbolsForAcceleratorPointerTag (   
+HRESULT findSymbolsForAcceleratorPointerTag (   
    IDiaSymbol*           parent,  
    DWORD                 tagValue,  
    IDiaEnumSymbols**     ppResult  

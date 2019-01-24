@@ -1,8 +1,8 @@
 ---
-title: Ejemplos de parámetros de la línea de comandos para la instalación de Visual Studio
+title: Ejemplos de parámetros de la línea de comandos para la instalación
 description: Personalice estos ejemplos para crear su propia instalación de la línea de comandos de Visual Studio.
-ms.date: 05/07/2018
-ms.technology: vs-acquisition
+ms.date: 01/16/2019
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 837F31AA-F121-46e9-9996-F8BCE768E579
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cd3c7a5b191ee74005eb79da0767223ca43de08
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7ba829976e699f9087f9833f5578e80037f999c8
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895490"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380154"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Ejemplos de parámetros de línea de comandos para la instalación de Visual Studio 2017
 
@@ -28,7 +28,9 @@ En cada uno de los ejemplos, `vs_enterprise.exe`, `vs_professional.exe` y `vs_co
 > Todos los comandos requieren de elevación administrativa, y se mostrará un mensaje de Control de cuentas de usuario si el proceso no se inicia desde un símbolo del sistema con privilegios elevados.
 >
 > [!NOTE]
->  Puede usar el carácter `^` al final de una línea de comandos para concatenar varias líneas en un solo comando. Como alternativa, puede simplemente colocar estas líneas juntas en una sola fila. En PowerShell, el equivalente es el carácter de comilla simple (`` ` ``).
+> Puede usar el carácter `^` al final de una línea de comandos para concatenar varias líneas en un solo comando. Como alternativa, puede simplemente colocar estas líneas juntas en una sola fila. En PowerShell, el equivalente es el carácter de comilla simple (`` ` ``).
+
+Para obtener listas de las cargas de trabajo y los componentes que puede instalar a través de la línea de comandos, consulte la página [Identificadores de cargas de trabajo y componentes de Visual Studio](workload-and-component-ids.md).
 
 ## <a name="using---installpath"></a>Uso de installPath
 
@@ -83,13 +85,15 @@ En cada uno de los ejemplos, `vs_enterprise.exe`, `vs_professional.exe` y `vs_co
    --includeRecommended
   ```
 
-## <a name="using---includerecommended"></a>Uso de includeRecommended
+## <a name="using---all"></a>Uso de --all
 
 * Inicie una instalación interactiva de todas las cargas de trabajo y los componentes que están disponibles en Visual Studio 2017 Enterprise Edition:
 
   ```cmd
-  vs_enterprise.exe --all --includeRecommended --includeOptional
+  vs_enterprise.exe --all
   ```
+
+## <a name="using---includerecommended"></a>Uso de includeRecommended
 
 * Instale una segunda instancia con nombre de Visual Studio 2017 Professional en un equipo con Visual Studio 2017 Community Edition ya instalado, con compatibilidad con el desarrollo de Node.js:
 
@@ -129,6 +133,39 @@ Estos parámetros de línea de comandos son **nuevos en 15.7**. Para obtener má
 
   `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS"`
 
+## <a name="using-export"></a>Uso de exportación
+
+Este comando de línea de comandos es **nuevo en 15.9**. Para obtener más información sobre él, vea la página [Uso de parámetros de la línea de comandos para instalar Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md).
+
+* Uso de la exportación para guardar la selección de la instalación:
+
+```cmd
+"C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" export --installPath "C:\VS" --config "C:\.vsconfig"
+```
+
+* Uso de la exportación para guardar la selección personalizada desde cero:
+
+```cmd
+"C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" export --add Microsoft.VisualStudio.Workload.ManagedDesktop --includeRecommended --config "C:\.vsconfig"
+```
+
+## <a name="using---config"></a>Uso de --config
+
+Este parámetro de línea de comandos es **nuevo en 15.9**. Para obtener más información sobre él, vea la página [Uso de parámetros de la línea de comandos para instalar Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md).
+
+* Uso de --config para instalar los componentes y cargas de trabajo desde un archivo de configuración de instalación guardado anteriormente:
+
+```cmd
+vs_enterprise.exe --config "C:\.vsconfig" --installPath "C:\VS"
+```
+
+* Uso de --config para agregar componentes y cargas de trabajo a una instalación existente:
+
+```cmd
+vs_enterprise.exe modify --installPath "C:\VS" --config "C:\.vsconfig"
+```
+
+
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Vea también
@@ -136,3 +173,4 @@ Estos parámetros de línea de comandos son **nuevos en 15.7**. Para obtener má
 * [Guía del administrador de Visual Studio](visual-studio-administrator-guide.md)
 * [Usar parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Crear una instalación sin conexión de Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+* [Identificadores de cargas de trabajo y componentes de Visual Studio](workload-and-component-ids.md)

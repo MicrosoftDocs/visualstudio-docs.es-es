@@ -1,5 +1,5 @@
 ---
-title: Get_relocationscrc | Microsoft Docs
+title: Get_relocationscrc | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSectionContrib::get_relocationsCrc method
 ms.assetid: 8c29c91a-062d-4566-a9b7-49251036a15a
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c79ef39053d171594d6363de989d1a3c6a08f8c9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 88d8a567d75392bd2ff64ab2051c97ee793550b7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938726"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756118"
 ---
 # <a name="idiasectioncontribgetrelocationscrc"></a>IDiaSectionContrib::get_relocationsCrc
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera la comprobación de redundancia cíclica (CRC) de la información de re
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-HRESULT get_relocationsCrc (   
+HRESULT get_relocationsCrc (   
    DWORD* pRetVal  
 );  
 ```  

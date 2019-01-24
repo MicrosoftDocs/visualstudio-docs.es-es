@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 63a9d714173334192028b9096de41968befa85ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825509"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348703"
 ---
 # <a name="array-length-must-be-assigned-a-finite-positive-number"></a>Se debe asignar un valor entero positivo finito a la longitud de la matriz
 Al establecer el **longitud** propiedad de un miembro de **matriz** objeto, se especifica una longitud de la matriz que no era un número positivo o cero. Este error se produce cuando se asigna un valor para el **longitud** propiedad de un `Array` objeto que es negativo o no es un número (`NaN`). Tenga en cuenta que [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] convierte automáticamente los números fraccionarios enteros.  

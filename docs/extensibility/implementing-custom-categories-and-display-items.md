@@ -1,9 +1,6 @@
 ---
 title: Implementación de las categorías personalizadas y mostrar los elementos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 850e4396c11cbd83f578304eed78a25042185a25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 178cd43486a9553f70853c9df0e106ac3ece78f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894643"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908441"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>Implementar categorías personalizadas y mostrar los elementos
 Un VSPackage puede proporcionar control de las fuentes y colores de su texto para el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE) a través de las categorías personalizadas y mostrar los elementos.
@@ -57,7 +54,7 @@ Un VSPackage puede proporcionar control de las fuentes y colores de su texto par
   |nombre|Tipo|Datos|Descripción|
   |----------|----------|----------|-----------------|
   |Categoría|REG_SZ|GUID|Crea un GUID para identificar la categoría.|
-  |Package|REG_SZ|GUID|El GUID del servicio de VSPackage que admite la categoría.|
+  |Paquete|REG_SZ|GUID|El GUID del servicio de VSPackage que admite la categoría.|
 
   El servicio especificado en el registro debe proporcionar una implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> para la categoría correspondiente.
 
@@ -72,7 +69,7 @@ Un VSPackage puede proporcionar control de las fuentes y colores de su texto par
   |nombre|Tipo|Datos|Descripción|
   |----------|----------|----------|-----------------|
   |Categoría|REG_SZ|GUID|Crea un GUID para identificar el grupo.|
-  |Package|REG_SZ|GUID|El GUID del servicio que admite la categoría.|
+  |Paquete|REG_SZ|GUID|El GUID del servicio que admite la categoría.|
 
   El servicio especificado en el registro debe proporcionar una implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> para el grupo correspondiente.
 
@@ -135,5 +132,5 @@ Un VSPackage puede proporcionar control de las fuentes y colores de su texto par
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>
 - [Obtener información de fuente y color de coloración de texto](../extensibility/getting-font-and-color-information-for-text-colorization.md)
 - [Acceso a la configuración de fuente y color almacenada](../extensibility/accessing-stored-font-and-color-settings.md)
-- [Cómo: obtener acceso a la combinación de colores y fuentes integradas](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)
+- [Cómo: Obtener acceso a la combinación de colores y fuentes integradas](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)
 - [Información general de fuente y color](../extensibility/font-and-color-overview.md)

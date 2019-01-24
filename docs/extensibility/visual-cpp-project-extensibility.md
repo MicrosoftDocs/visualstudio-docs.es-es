@@ -1,6 +1,5 @@
 ---
 title: Extensibilidad de proyectos de Visual C++
-ms.custom: ''
 ms.date: 09/12/2018
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
@@ -11,12 +10,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b9f8bfcaf9e6f584d4f0038ebef17daad3aa74a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0eccf13f38799c1d35b7fe4226fa02ec1a291b0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850820"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986991"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ sistema extensibilidad y el conjunto de herramientas de integración de Project
 
@@ -434,7 +433,7 @@ El sistema de proyectos de Visual C++ se basa en el [sistema del proyecto de VS]
 
 ### <a name="project-property-pages"></a>Páginas de propiedades del proyecto
 
-Para obtener información general de diseño, vea [extensibilidad de plataformas, parte 1](http://blogs.msdn.com/b/vsproject/archive/2009/06/10/platform-extensibility-part-1.aspx) y [extensibilidad de plataformas, parte 2](http://blogs.msdn.com/b/vsproject/archive/2009/06/18/platform-extensibility-part-2.aspx).
+Para obtener información general de diseño, vea [extensibilidad de plataformas, parte 1](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/) y [extensibilidad de plataformas, parte 2](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/).
 
 En otras palabras, las páginas de propiedades se vea en el **las propiedades del proyecto** cuadro de diálogo para un proyecto de C++ se definen mediante *regla* archivos. Un archivo de reglas especifica un conjunto de propiedades para mostrar en una página de propiedades y cómo y dónde debe guardarse en el proyecto de archivos. Los archivos de reglas son archivos .xml que usar el formato Xaml. Se describen los tipos utilizados para serializarlos en [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Para obtener más información sobre el uso de archivos de reglas en los proyectos, vea [los archivos de reglas de XML de la página de propiedades](/cpp/ide/property-page-xml-files).
 
@@ -481,10 +480,10 @@ El `PageTemplate` atributo define cómo se muestra la regla en el **páginas de 
 
 | Atributo | Descripción |
 |------------| - |
-| `generic` | Todas las propiedades se muestran en una sola página bajo los encabezados de categoría<br/>La regla puede ser visible para `Project` y `PropertySheet` contextos, pero no `File`.<br/><br/> Ejemplo: `$(VCTargetsPath)` \\ *1033*\\*general.xml* |
-| `tool` | Las categorías se muestran como subpáginas.<br/>La regla puede ser visible en todos los contextos: `Project`, `PropertySheet` y `File`.<br/>La regla sólo está visible en las propiedades del proyecto si el proyecto tiene elementos con el `ItemType` definido en `Rule.DataSource`, a menos que se incluye el nombre de regla en el `ProjectTools` grupo de elementos.<br/><br/>Ejemplo: `$(VCTargetsPath)` \\ *1033*\\*clang.xml* |
-| `debugger` | La página se muestra como parte de la página de depuración.<br/>Actualmente se omiten las categorías.<br/>El nombre de la regla debe coincidir con el objeto de MEF de iniciador de depuración `ExportDebugger` atributo.<br/><br/>Ejemplo: `$(VCTargetsPath)` \\ *1033*\\*depurador\_local\_windows.xml* |
-| *custom* | Plantilla personalizada. Debe coincidir con el nombre de la plantilla de la `ExportPropertyPageUIFactoryProvider` atributo de la `PropertyPageUIFactoryProvider` objeto MEF. Consulte **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Ejemplo: `$(VCTargetsPath)` \\ *1033*\\*userMacros.xml* |
+| `generic` | Todas las propiedades se muestran en una sola página bajo los encabezados de categoría<br/>La regla puede ser visible para `Project` y `PropertySheet` contextos, pero no `File`.<br/><br/> Ejemplo: `$(VCTargetsPath)`\\*1033*\\*general.xml* |
+| `tool` | Las categorías se muestran como subpáginas.<br/>La regla puede ser visible en todos los contextos: `Project`, `PropertySheet` y `File`.<br/>La regla sólo está visible en las propiedades del proyecto si el proyecto tiene elementos con el `ItemType` definido en `Rule.DataSource`, a menos que se incluye el nombre de regla en el `ProjectTools` grupo de elementos.<br/><br/>Ejemplo: `$(VCTargetsPath)`\\*1033*\\*clang.xml* |
+| `debugger` | La página se muestra como parte de la página de depuración.<br/>Actualmente se omiten las categorías.<br/>El nombre de la regla debe coincidir con el objeto de MEF de iniciador de depuración `ExportDebugger` atributo.<br/><br/>Ejemplo: `$(VCTargetsPath)`\\*1033*\\*depurador\_local\_windows.xml* |
+| *custom* | Plantilla personalizada. Debe coincidir con el nombre de la plantilla de la `ExportPropertyPageUIFactoryProvider` atributo de la `PropertyPageUIFactoryProvider` objeto MEF. Consulte **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Ejemplo: `$(VCTargetsPath)`\\*1033*\\*userMacros.xml* |
 
 Si la regla usa una de las plantillas de la cuadrícula de propiedades, pueden usar estos puntos de extensibilidad para sus propiedades:
 
@@ -500,7 +499,7 @@ Si desea usar una regla existente, pero necesita agregar o quitar (que es, ocult
 
 Quizás desee su conjunto de herramientas para usar la mayoría de las reglas predeterminadas de proyecto, pero para reemplazar solo uno o algunos de ellos. Por ejemplo, supongamos que desea cambiar la regla de C/C ++ para mostrar los modificadores de compilador diferentes. Puede proporcionar una nueva regla con el mismo nombre y nombre para mostrar que la regla existente e incluirlo en el `PropertyPageSchema` grupo de elementos después de la importación de destinos de cpp de forma predeterminada. Se usa solo una regla con el nombre especificado en el proyecto y la última de ellas se incluye en el `PropertyPageSchema` wins de grupo de elementos.
 
-#### <a name="project-items"></a>Elementos de proyecto
+#### <a name="project-items"></a>elementos de proyecto
 
 El *ProjectItemsSchema.xml* archivo define la `ContentType` y `ItemType` valores para los elementos que se tratan como elementos de proyecto y define `FileExtension` elementos para determinar qué grupo de elementos que se agrega un nuevo archivo a.
 
@@ -530,7 +529,7 @@ A continuación, en el archivo de destinos, agregue:
 </ItemGroup>
 ```
 
-Ejemplo: `$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.xml*
+Ejemplo: `$(VCTargetsPath)`\\*BuildCustomizations*\\*masm.xml*
 
 ### <a name="debuggers"></a>Depuradores
 

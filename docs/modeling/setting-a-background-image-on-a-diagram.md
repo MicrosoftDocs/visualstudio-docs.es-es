@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 82466360fd4f891d28e0218a540d27c803a39662
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 63243df353dc141363a3ebfdd61a5f90a2fe6258
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858879"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887872"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Establecer una imagen de fondo en un diagrama
 En Visual Studio de visualización y el SDK de modelado, puede establecer la imagen de fondo para un diseñador generado usando código personalizado.
@@ -45,7 +44,7 @@ En Visual Studio de visualización y el SDK de modelado, puede establecer la ima
 
 11. Si Resources.Designer.cs no está, haga clic en el archivo Resources.resx en **el Explorador de soluciones**.
 
-12. En el **propiedades** ventana, establezca el `Custom Tool` propiedad `ResXFileCodeGenerator`.
+12. En la ventana **Propiedades** , establezca la propiedad `Custom Tool` en `ResXFileCodeGenerator`.
 
 13. En **el Explorador de soluciones**, haga clic en el proyecto de Dsl, seleccione **agregar**y haga clic en **nueva carpeta**.
 

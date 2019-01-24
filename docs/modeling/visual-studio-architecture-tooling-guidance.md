@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Architecture Tooling Guidance
+title: Orientación para las herramientas de arquitectura
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: aba2064ddac03f4370028a928469c7d2acee4850
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 0b0e85beaa03984be854577728afbb5915af579b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857943"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891831"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Visual Studio Architecture Tooling Guidance
 

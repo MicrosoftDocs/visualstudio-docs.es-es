@@ -1,8 +1,7 @@
 ---
-title: Más información sobre cómo probar el código con Live Unit Test en Visual Studio 2017 | Microsoft Docs
+title: Más información sobre cómo probar el código con Live Unit Test 2017 | Microsoft Docs
 ms.date: 08/31/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -11,12 +10,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 83507060295c294747f279dd32f96fe8b0a358fa
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 6b96faf4ec1daa80bdd6d97e623fd0e155a39325
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008426"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942192"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Comenzar a utilizar Live Unit Testing en Visual Studio
 

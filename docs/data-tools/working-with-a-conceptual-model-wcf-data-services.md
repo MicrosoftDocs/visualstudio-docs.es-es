@@ -1,5 +1,5 @@
 ---
-title: Trabajar con un modelo Conceptual (WCF Data Services)
+title: Trabajar con un modelo conceptual (Servicios de datos de WCF)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +11,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: cae74c50ecd99716cf26eae2b7defcadf03fecbf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6d49df542dbd134a6164e582459978bb2ef1aee3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862980"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989651"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Trabajar con un modelo Conceptual (WCF Data Services)
 
@@ -30,8 +29,8 @@ Cuando se usa un modelo conceptual para describir los datos de una base de datos
 
 | Tema | Descripción |
 | - | - |
-| [Cómo: ejecutar consultas de servicios de datos](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Muestra cómo consultar un servicio de datos desde una aplicación de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. |
-| [Cómo: proyectar los resultados de consulta](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Muestra cómo reducir la cantidad de datos devueltos con una consulta de servicio de datos. |
+| [Cómo: Ejecutar consultas de servicios de datos](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Muestra cómo consultar un servicio de datos desde una aplicación de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. |
+| [Cómo: Resultados de la consulta](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Muestra cómo reducir la cantidad de datos devueltos con una consulta de servicio de datos. |
 
  Cuando se usa un modelo conceptual, puede definir los tipos de datos válidos en el lenguaje que coincide con su dominio. Puede definir los datos válidos en el modelo, o puede agregar validación a las operaciones que se realizan en una entidad o un servicio de datos.
 
@@ -39,14 +38,14 @@ Cuando se usa un modelo conceptual para describir los datos de una base de datos
 
 |Tema|Descripción|
 |-----------|-----------------|
-|[Cómo: mensajes del servicio de datos de intercepción](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Muestra cómo agregar validación a una operación de servicio de datos.|
+|[Cómo: Interceptar mensajes de servicio de datos](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Muestra cómo agregar validación a una operación de servicio de datos.|
 
  En los temas siguientes se muestra cómo crear, actualizar y eliminar datos mediante operaciones que se ejecutan en las entidades.
 
 |Tema|Descripción|
 |-----------|-----------------|
-|[Cómo: agregar, modificar y eliminar entidades](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Muestra cómo crear, actualizar y eliminar los datos de entidad en un servicio de datos.|
-|[Cómo: definir relaciones de entidades](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Muestra cómo crear o cambiar las relaciones en un servicio de datos.|
+|[Cómo: Agregar, modificar y eliminar entidades](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Muestra cómo crear, actualizar y eliminar los datos de entidad en un servicio de datos.|
+|[Cómo: Definir relaciones de entidades](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Muestra cómo crear o cambiar las relaciones en un servicio de datos.|
 
 ## <a name="see-also"></a>Vea también
 

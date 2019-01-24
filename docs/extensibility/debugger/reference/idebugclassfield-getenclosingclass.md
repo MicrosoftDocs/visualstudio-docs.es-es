@@ -1,9 +1,6 @@
 ---
 title: IDebugClassField::GetEnclosingClass | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugClassField::GetEnclosingClass
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31bde98be596cdfca61434ecab3640655a8c7154
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4cf74c5fd53d3ad75c9fc95e8217c849e3ce550c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877132"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851487"
 ---
 # <a name="idebugclassfieldgetenclosingclass"></a>IDebugClassField::GetEnclosingClass
 Obtiene la clase que contiene esta clase.  
@@ -28,7 +25,7 @@ Obtiene la clase que contiene esta clase.
 ## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT GetEnclosingClass(   
+HRESULT GetEnclosingClass(   
    IDebugClassField** ppClassField  
 );  
 ```  

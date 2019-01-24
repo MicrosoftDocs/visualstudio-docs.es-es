@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aee30ae68319810f58bf31f8d0eb32cf8f30d34c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 170b345bdb4587d1fd29c1f0f906df0157abd877
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726355"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348924"
 ---
 # <a name="idebugapplicationthread110-interface"></a>IDebugApplicationThread110 (Interfaz)
 Proporciona más funcionalidad para la [IDebugApplicationThread (interfaz)](../../winscript/reference/idebugapplicationthread-interface.md) interfaz.  
@@ -33,6 +33,6 @@ Proporciona más funcionalidad para la [IDebugApplicationThread (interfaz)](../.
 |Método|Descripción|  
 |------------|-----------------|  
 |[IDebugApplicationThread110::AsynchronousCallIntoThread](../../winscript/reference/idebugapplicationthread110-asynchronouscallintothread.md)|Realiza una llamada asincrónica en el subproceso principal.|  
-|[IDebugApplicationThread110::GetActiveThreadRequestCount](../../winscript/reference/idebugapplicationthread110-getactivethreadrequestcount.md)|Recuento de cuántas solicitudes de subproceso del subproceso del PDM mecanismos de conmutación se están procesando actualmente. Normalmente 0 o 1, pero 's posible que este valor es mayor si una llamada de subproceso inicia el procesamiento pero desencadena una llamada sincrónica fuera del subproceso o de lo contrario suspende el subproceso (por ejemplo, mediante la activación de un evento IDebugApplicationEvents que se ejecuta en el depurador subproceso)|  
+|[IDebugApplicationThread110::GetActiveThreadRequestCount](../../winscript/reference/idebugapplicationthread110-getactivethreadrequestcount.md)|Recuento de cuántas solicitudes de subproceso del subproceso de PDM mecanismos de conmutación se están procesando actualmente. Normalmente, 0 o 1, pero 's posible que sea mayor, si una llamada de subproceso inicia el procesamiento pero desencadena una llamada sincrónica fuera del subproceso o de lo contrario suspende el subproceso (por ejemplo, al desencadenar un evento IDebugApplicationEvents que se emite en el depurador subproceso)|  
 |[IDebugApplicationThread110::IsSuspendedForBreakPoint](../../winscript/reference/idebugapplicationthread110-issuspendedforbreakpoint.md)|[IDebugApplicationThreadEvents110::OnSuspendForBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onsuspendforbreakpoint.md) se ha llamado en este subproceso y no se ha completado.|  
-|[IDebugApplicationThread110::IsThreadCallable](../../winscript/reference/idebugapplicationthread110-isthreadcallable.md)|Este subproceso está en un estado que puede procesar las llamadas realizadas mediante el subproceso del PDM conmutación mecanismos (por ejemplo, SynchronousCallInThread).|
+|[IDebugApplicationThread110::IsThreadCallable](../../winscript/reference/idebugapplicationthread110-isthreadcallable.md)|Este subproceso está en un estado que puede procesar las llamadas realizadas mediante el subproceso de PDM conmutación mecanismos (por ejemplo, SynchronousCallInThread).|

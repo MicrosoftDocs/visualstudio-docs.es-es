@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: obtener una visión general de un conjunto de esquemas mediante la vista Gráfico de esquema XML Diseñador'
+title: Procedimiento Obtenga información general de un conjunto de esquemas mediante la vista Gráfico de esquema XML Diseñador
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: c0df4b0d-52ef-4a6c-9676-1d8311aad7c7
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 004d40992e24f0df651d93b43761add1d2efa673
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: ed088de37bba8bfc7d74339d822e5ee0f6c058b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381425"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948841"
 ---
-# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Cómo: obtener una visión general de un conjunto mediante la vista Gráfico de esquemas
+# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Procedimiento Obtenga información general sobre un conjunto mediante la vista Gráfico de esquemas
 
 Este tema describe cómo usar el [vista gráfico](../xml-tools/graph-view.md) para ver una visión general de los nodos de un conjunto de esquemas y las relaciones entre los nodos.
 

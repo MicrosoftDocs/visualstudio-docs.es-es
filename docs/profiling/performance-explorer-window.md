@@ -1,8 +1,6 @@
 ---
 title: Ventana Explorador de rendimiento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performanceexplorer
@@ -14,16 +12,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f27d1436aaeb0ec75876edf9119dff93f7539483
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 01aae2cc3ed447f608992df11b72136d418bd5a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31582116"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869471"
 ---
 # <a name="performance-explorer-window"></a>Ventana Explorador de rendimiento
 
-La ventana **Explorador de rendimiento** del IDE de Visual Studio le permite configurar e iniciar sesiones de rendimiento mediante las Herramientas de generación de perfiles de Visual Studio.
+La ventana **Explorador de rendimiento** del IDE de Visual Studio le permite configurar e iniciar sesiones de rendimiento mediante las Herramientas de generación de perfiles de Visual Studio. Si tiene que abrir la ventana, siga las instrucciones del artículo [Guía básica para la generación de perfiles de rendimiento](../profiling/beginners-guide-to-cpu-sampling.md).
 
 ## <a name="performance-explorer-toolbar"></a>Barra de herramientas de Explorador de rendimiento
 

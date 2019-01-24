@@ -2,7 +2,6 @@
 title: Manual de referencia de IntelliTest | Herramientas de pruebas para desarrolladores de Microsoft
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest Reference Manual, IntelliTest
@@ -11,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f9534668ef5cf07388d6eefec9ef37a28593daaa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c8db2e17f18d96f8d8b6c9eee3261c9329ece0b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977453"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926949"
 ---
 # <a name="intellitest-reference-manual"></a>Manual de referencia de IntelliTest
 
@@ -36,7 +35,7 @@ ms.locfileid: "31977453"
 
 * **[Introducción a IntelliTest](getting-started.md)**
   - [Atributos importantes](getting-started.md#important-attributes)
-  - [Clases auxiliares estáticas importantes](getting-started.md#helper-classes)<p>&nbsp;</p>
+  - [clases del asistente estáticas importantes](getting-started.md#helper-classes)<p>&nbsp;</p>
 
 * **[Generación de pruebas](test-generation.md)**
   - [Generadores de pruebas](test-generation.md#test-generators)
@@ -96,7 +95,7 @@ ms.locfileid: "31977453"
 
 * **[Cascada de configuración](settings-waterfall.md)**
 
-* **[Clases auxiliares estáticas](static-helper-classes.md)**
+* **[clases del asistente estáticas](static-helper-classes.md)**
   - [PexAssume](static-helper-classes.md#pexassume)
   - [PexAssert](static-helper-classes.md#pexassert)
   - [PexChoose](static-helper-classes.md#pexchoose)
@@ -127,4 +126,4 @@ ms.locfileid: "31977453"
 
 ## <a name="got-feedback"></a>¿Tiene comentarios?
 
-Publique sus ideas y solicitudes de características en **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+Publique sus ideas y solicitudes de características en [Comunidad de desarrolladores](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

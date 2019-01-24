@@ -7,25 +7,24 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: db0ac06d26e7e597d9f8d4b3c11a9cf8db188e80
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: bdaf4abfa1c1e931328466cc4fb4c525b47310b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174132"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935325"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>Falta o no es correcta la propiedad de conexión del archivo de configuración de la aplicación
 
-Falta o no es correcta la propiedad de conexión del archivo de configuración de la aplicación. La cadena de conexión desde el *.dbml* archivo se ha utilizado en su lugar.
+Falta o no es correcta la propiedad de conexión del archivo de configuración de la aplicación. Se ha usado la cadena de conexión del archivo *.dbml* en su lugar.
 
-El *.dbml* archivo contiene una referencia a una cadena de conexión en el archivo de configuración de aplicación que no se encuentra. Este mensaje es informativo; se creará la configuración de la cadena de conexión cuando **Aceptar** se hace clic en.
+El archivo *.dbml* contiene una referencia a una cadena de conexión del archivo de configuración de la aplicación que no se encuentra. Este mensaje es informativo; la cadena de conexión se creará al hacer clic en **Aceptar**.
 
-Para responder a este mensaje, seleccione **Aceptar**. La información de conexión que se encuentra en la *.dbml* archivo se agrega a la configuración de la aplicación.
+Para responder a este mensaje, seleccione **Aceptar**. La información de conexión que contiene el archivo *.dbml* se agrega a la configuración de la aplicación.
 
 ## <a name="see-also"></a>Vea también
 
 - [Mensajes de Object Relational Designer](../data-tools/o-r-designer-messages.md)
-- [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Herramientas LINQ to SQL en Visual Studio)

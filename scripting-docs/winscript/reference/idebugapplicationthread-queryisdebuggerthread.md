@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread::QueryIsDebuggerThread | Documentos de Microsoft
+title: IDebugApplicationThread::QueryIsDebuggerThread | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c3ad00fafa602b7a2f55b0412ae16c82cc2f5bf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7ec9e5546a2a957e4842c91e9870ee8d761b2a69
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725845"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097349"
 ---
 # <a name="idebugapplicationthreadqueryisdebuggerthread"></a>IDebugApplicationThread::QueryIsDebuggerThread
-Determina si este subproceso es el subproceso del depurador.  
+Determina si este subproceso es el depurador.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT QueryIsDebuggerThread();  
 ```  
   
@@ -42,11 +42,11 @@ HRESULT QueryIsDebuggerThread();
   
 |Valor|Descripción|  
 |-----------|-----------------|  
-|`S_OK`|El método se realizó correctamente y se trata el subproceso del depurador.|  
+|`S_OK`|El método se realizó correctamente y este es el subproceso del depurador.|  
 |`S_FALSE`|Esto no es el subproceso del depurador.|  
   
 ## <a name="remarks"></a>Comentarios  
- Este método determina si este subproceso es el subproceso del depurador.  
+ Este método determina si este subproceso es el depurador.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugApplicationThread (Interfaz)](../../winscript/reference/idebugapplicationthread-interface.md)

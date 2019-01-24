@@ -1,8 +1,7 @@
 ---
-title: 'CA1709: Los identificadores deberían utilizar las mayúsculas y minúsculas correctamente'
+title: 'CA1709: Los identificadores deben utilizar las mayúsculas y minúsculas correctamente'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - IdentifiersShouldBeCasedCorrectly
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e1422b409ba27b56adead768c6272f955e75000
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e954b3e3d346775d87cfcc8bb46bddca2b16056a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891354"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881732"
 ---
-# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Los identificadores deberían utilizar las mayúsculas y minúsculas correctamente
+# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Los identificadores deben utilizar las mayúsculas y minúsculas correctamente
 
 |||
 |-|-|
@@ -50,7 +49,7 @@ ms.locfileid: "49891354"
 
  Esta regla divide el nombre en palabras según las mayúsculas y minúsculas y comprueba las palabras de dos letras con una lista de palabras comunes de dos letras, por ejemplo, "In" o "My". Si no se encuentra una coincidencia, la palabra se supone que un acrónimo. Además, esta regla supone que ha encontrado un acrónimo cuando el nombre contiene cuatro letras mayúsculas seguidas o tres letras mayúsculas en una fila al final del nombre.
 
- Por convención, los acrónimos de dos letras utilizan todas las letras en mayúscula y acrónimos de tres o más caracteres use casillas Pascal mayúsculas y minúsculas. Los ejemplos siguientes usan esta convención de nomenclatura: 'DB', 'CR', 'Cpa' y 'Ecma'. Los ejemplos siguientes infringen la convención: 'Io', 'XML' y 'DoD' y para los nombres no es de parámetro, 'xp' y 'cpl'.
+ Por convención, los acrónimos de dos letras utilizan todas las letras en mayúscula y acrónimos de tres o más caracteres use casillas Pascal mayúsculas y minúsculas. Los ejemplos siguientes utilizan esta convención de nomenclatura: 'DB', 'CR', 'Cpa' y 'Ecma'. Los ejemplos siguientes infringen la convención: 'Io', 'XML' y 'DoD' y para los nombres no es de parámetro, 'xp' y 'cpl'.
 
  'Identificador' es con la grafía especial que provoca una infracción de esta regla. 'Identificador' no es un acrónimo pero es una abreviatura de 'identificación'.
 
@@ -60,7 +59,7 @@ ms.locfileid: "49891354"
 ## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  Es seguro suprimir esta advertencia si tiene sus propias convenciones de nomenclatura, o si el identificador representa un nombre propio, por ejemplo, el nombre de una empresa u otra tecnología.
 
- También puede agregar términos específicos, abreviaturas y acrónimos que a un diccionario personalizado del análisis de código. Condiciones especificadas en el diccionario no hará que las infracciones de esta regla. Para obtener más información, vea [Cómo: personalizar el diccionario de análisis de código](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+ También puede agregar términos específicos, abreviaturas y acrónimos que a un diccionario personalizado del análisis de código. Condiciones especificadas en el diccionario no hará que las infracciones de esta regla. Para obtener más información, vea [Cómo: Personalizar el diccionario de análisis de código](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA1708: Los identificadores se deberían diferenciar en algo más que en el uso de mayúsculas y minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708: Los identificadores deben diferenciarse por algo más que el caso](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

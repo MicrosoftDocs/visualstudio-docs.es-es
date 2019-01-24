@@ -1,9 +1,6 @@
 ---
 title: PROGRAM_DESTROY_FLAGS | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - PROGRAM_DESTROY_FLAGS enumeration
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7746f85eeec41b708bd4c1537ee725d2096c41ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dcefe5f123717536e951eb3e42f9ae6af1d0865a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920630"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822067"
 ---
 # <a name="programdestroyflags"></a>PROGRAM_DESTROY_FLAGS
 Enumera la válidos los valores del programa destruyen marcas.  
@@ -50,7 +47,7 @@ public enum enum_PPROGRAM_DESTROY_FLAGS
 ## <a name="requirements"></a>Requisitos  
  Encabezado: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   

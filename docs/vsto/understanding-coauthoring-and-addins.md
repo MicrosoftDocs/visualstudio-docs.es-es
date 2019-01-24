@@ -1,9 +1,6 @@
 ---
-title: Comprender co-autoría y complementos
-ms.custom: ''
+title: Comprender la co-autoría y complementos
 ms.date: 07/20/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,18 +12,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ea525a97b38a043137b372f7c224f15c39478a97
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 62e73362a04d334027075d5c1fea9cc4c0b5d3bf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34768175"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871075"
 ---
-# <a name="understand-coauthoring-and-add-ins"></a>Comprender co-autoría y complementos
+# <a name="understand-coauthoring-and-add-ins"></a>Comprender la co-autoría y complementos
 
-Co-autoría es una característica de escritorio de Excel para Windows que le permite modificar un libro que se hospeda en la nube (es decir, OneDrive, OneDrive para la empresa o SharePoint Online) simultáneamente con otros usuarios. Con la adición de esta característica, debe realizar ajustes a la solución de Excel con el fin de asegurarse de que funciona sin problemas incluso cuando los usuarios se co-autoría. Vea [sobre co-autoría en Excel](https://msdn.microsoft.com/vba/excel-vba/articles/about-coauthoring-in-excel).
+Coautoría es una característica de escritorio de Excel para Windows que le permite editar un libro alojado en la nube (es decir, OneDrive, OneDrive para la empresa o SharePoint Online) simultáneamente con otros usuarios. Con la adición de esta característica, necesita realizar ajustes a la solución de Excel con el fin de asegurarse de que funciona sin problemas incluso mientras los usuarios están co-autoría. Consulte [sobre co-autoría en Excel](/office/vba/excel/concepts/about-coauthoring-in-excel).
 
-Nota: Co-autoría para Excel de escritorio de Windows se introdujo en 2017 y está disponible para los suscriptores de Office 365. Los usuarios que han adquirido una licencia perpetua para Office 2016 o versiones anteriores no actualmente no tiene acceso a la característica co-autoría. (En línea de Excel, Excel para Android, Excel para iOS y móviles de Excel en la tienda Windows también admiten co-autoría).
+Nota: Coautoría para Excel de escritorio de Windows se introdujo en 2017 y está disponible para los suscriptores de Office 365. Los usuarios que adquirieron una licencia perpetua para Office 2016 o versiones anteriores no tienen actualmente acceso a la función de co-autoría. (Excel Online, Excel para Android, Excel para iOS y Excel Mobile en el Store Windows también admiten co-autoría).
 
 ## <a name="see-also"></a>Vea también
 [Soluciones de Excel](./excel-solutions.md)

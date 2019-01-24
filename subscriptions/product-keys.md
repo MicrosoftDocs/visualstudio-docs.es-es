@@ -9,12 +9,12 @@ description: Sepa cómo obtener y administrar las claves de producto en las susc
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 88fb704df9858572581d205a8c5d457203488ee3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cdd37aae3e0a3e3caebafa026fd5dcf3922c0998
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900857"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803829"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Uso de claves de producto en suscripciones de Visual Studio
 
@@ -39,7 +39,7 @@ Microsoft se compromete a proteger la integridad del programa de suscripciones a
 
 El límite de reclamaciones de claves diario es de 10 para todas las suscripciones de Visual Studio, así como las que se ofrecen a través de MPN, BizSpark, MCT Software & Services y MCT, con la excepción de Visual Studio Professional (MPN), que tiene un límite de siete reclamaciones de claves diario.
 
-Nota: Los límites de reclamación de claves están sujetos a cambio. Puede consultar los límites más actualizados aquí mismo.
+Nota: Los límites de reclamación de claves están sujetos a cambios. Puede consultar los límites más actualizados aquí mismo.
 
 Si reclamó la cantidad máxima de claves disponible para su suscripción dentro de un período de 24 horas, verá un mensaje de error en el que se le indica que alcanzó su límite. El límite se restablece cada 24 horas y comienza a las 12:01 a.m. hora del Pacífico.
 

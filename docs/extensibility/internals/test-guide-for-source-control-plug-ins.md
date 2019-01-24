@@ -1,9 +1,6 @@
 ---
 title: Guía de pruebas para los complementos de Control de código fuente | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - plug-ins, source control
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8df70ef5fcaffb7fe2e06df5b6d47e526ff5162f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 03ddcde26ffeb50db045295a39fa444059cf59bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828265"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827905"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guía de pruebas para los complementos de control de código fuente
 Esta sección proporciona instrucciones para probar su complemento con control de código fuente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Se proporciona una visión general amplia de las áreas más comunes de pruebas, así como algunas de las áreas más complicadas que pueden ser problemáticas. Esta información general no pretende ser una lista exhaustiva de casos de prueba.  
@@ -40,7 +37,7 @@ Esta sección proporciona instrucciones para probar su complemento con control d
  Cualquier proyecto de los tipos disponibles en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] que admite la integración de control de código fuente (por ejemplo, [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], o [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]).  
   
  Proyecto Web  
- Hay cuatro tipos de proyectos Web: sistema de archivos, IIS Local, sitios remotos y FTP.  
+ Hay cuatro tipos de proyectos Web: Sistema de archivos, IIS Local, sitios remotos y FTP.  
   
 - Se crean proyectos de sistema de archivos en una ruta de acceso local, pero no requieren Internet Information Services (IIS) para instalarse cuando se tiene acceso internamente a través de una ruta de acceso UNC y pueden colocarse bajo control de código fuente desde el IDE, muy similar a los proyectos de cliente.  
   
@@ -58,55 +55,55 @@ Esta sección proporciona instrucciones para probar su complemento con control d
   
 ## <a name="test-areas-covered-in-this-section"></a>En esta sección tratadas de áreas de pruebas  
   
--   [Área de prueba 1: agregar a/abrir desde control de código fuente](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
+-   [Área de prueba 1: Agregar a / abrir desde Control de código fuente](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
   
-    -   Caso 1a: Agregar solución al Control de código fuente  
+    -   Case 1a: Agregar solución al Control de código fuente  
   
-    -   Caso 1b: abrir soluciones desde Control de código fuente  
+    -   Escenario 1b: Abrir solución desde el Control de código fuente  
   
-    -   Caso c de 1: agregar la solución desde Control de código fuente  
+    -   Caso 1C: Agregar solución desde Control de código fuente  
   
--   [Área de prueba 2: obtener de control de código fuente](../../extensibility/internals/test-area-2-get-from-source-control.md)  
+-   [Área de prueba 2: Obtener de Control de código fuente](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
--   [Área de prueba 3: extraer del repositorio/cancelar extracción del repositorio](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
+-   [Área de prueba 3: Desproteger o deshacer desprotección](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
-    -   Caso 3: Extraer / Deshacer desprotección  
+    -   Caso 3: Desproteger o deshacer desprotección  
   
-    -   Caso 3a: desproteger  
+    -   Case 3a: Desproteger  
   
-    -   Caso 3b: desconecta la desprotección  
+    -   Escenario 3b: Desprotección sin conexión  
   
-    -   Caso 3C: Editar consulta/guardar (QEQS)  
+    -   Caso 3C: Edición de consulta o consulta guardar (QEQS)  
   
-    -   Mayúsculas y minúsculas 3d: Retirada silenciosa  
+    -   Caso 3d: Retirada silenciosa  
   
-    -   Caso 3e: Deshacer desprotección  
+    -   Case 3e: Deshacer desprotección  
   
--   [Área de prueba 4: insertar en el repositorio](../../extensibility/internals/test-area-4-check-in.md)  
+-   [Área de prueba 4: Check-in](../../extensibility/internals/test-area-4-check-in.md)  
   
-    -   Caso 4a: modificar elementos  
+    -   Escenario 4a: Elementos modificados  
   
-    -   Caso 4b: adición de archivos  
+    -   Escenario 4b: Agregar archivos  
   
-    -   Caso 4c: agregar proyectos  
+    -   Caso 4 núcleos: Agregar proyectos  
   
--   [Área de prueba 5: cambiar control de código fuente](../../extensibility/internals/test-area-5-change-source-control.md)  
+-   [Área de prueba 5: Control de código fuente de cambios](../../extensibility/internals/test-area-5-change-source-control.md)  
   
-    -   Caso 5a: enlazar  
+    -   Case 5a: Enlazar  
   
-    -   Caso 5b: desenlazar  
+    -   Case 5b: Desenlazar  
   
-    -   Caso c de 5: volver a enlazar  
+    -   Mayúsculas y minúsculas 5c: volver a enlazar  
   
--   [Área de prueba 6: eliminar](../../extensibility/internals/test-area-6-delete.md)  
+-   [Área de prueba 6: Eliminar](../../extensibility/internals/test-area-6-delete.md)  
   
--   [Área de prueba 7: compartir](../../extensibility/internals/test-area-7-share.md)  
+-   [Área de prueba 7: Compartir](../../extensibility/internals/test-area-7-share.md)  
   
--   [Área de prueba 8: cambio de complementos](../../extensibility/internals/test-area-8-plug-in-switching.md)  
+-   [Área de prueba 8: Cambio de complementos](../../extensibility/internals/test-area-8-plug-in-switching.md)  
   
-    -   Caso 8a: cambios automático  
+    -   Case 8a: Cambio automático  
   
-    -   Caso 8b: cambio de solución  
+    -   8b Case: Cambio de solución  
   
 ## <a name="see-also"></a>Vea también  
  [Complementos de control de código fuente](../../extensibility/source-control-plug-ins.md)

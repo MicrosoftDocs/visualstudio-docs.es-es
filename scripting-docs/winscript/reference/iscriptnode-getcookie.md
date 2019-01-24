@@ -18,19 +18,19 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa68f528aeb405ca150cff717ab5e4bebb82027a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e133afbac4b75a5b9c24ee33148edd1114b33452
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733685"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094242"
 ---
 # <a name="iscriptnodegetcookie"></a>IScriptNode::GetCookie
-Devuelve un valor definido por la aplicación que se usa para asociar un Subscript con el objeto host.  
+Devuelve un valor definido por la aplicación que se usa para asociar un scriptlet con el objeto host.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetCookie(  
    DWORD              *pdwCookie  
 );  
@@ -38,12 +38,12 @@ HRESULT GetCookie(
   
 #### <a name="parameters"></a>Parámetros  
  `pdwCookie`  
- [out] Para una `IScriptEntry` de objetos, devuelve el valor de cookie definida por la aplicación.  
+ [out] Para un `IScriptEntry` de objeto, se devuelve el valor de cookie definido por la aplicación.  
   
- Para una `IScriptNode` objeto que representa una página Web, devuelve 0.  
+ Para un `IScriptNode` objeto que representa una página Web, devuelve 0.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  

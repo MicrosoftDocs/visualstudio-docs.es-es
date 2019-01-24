@@ -1,8 +1,6 @@
 ---
-title: Cuadro de diálogo Fuente (Ayuda de Microsoft Spy ++) | Documentos de Microsoft
-ms.custom: ''
+title: Cuadro de diálogo Fuente (Ayuda de Microsoft Spy ++) | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Font dialog box
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c8af6b21b30caace4ea0e6e6be2eeaa25f10eb0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: a9c900ac24821a68cdba537771e2e8b24c379960
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471169"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924415"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>Cuadro de diálogo Fuente (Ayuda de Microsoft Spy++)
 Utilice este cuadro de diálogo para configurar la fuente de caracteres utilizada en un [vistas de Spy ++](../debugger/spy-increment-views.md) ventana. Para mostrar este cuadro de diálogo, expanda el **vista** menú y elija **fuente**.  
@@ -33,12 +31,12 @@ Utilice este cuadro de diálogo para configurar la fuente de caracteres utilizad
  **Size**  
  El tamaño de fuente de la ventana de vistas de Spy ++ que tiene el foco.  
   
- **Guardar como predeterminada**  
- Guarda la configuración actual de la fuente como sus preferencias al abrir vistas de Spy ++.  
+ **Guardar fuente como predeterminada**  
+ Guarda la configuración actual de la fuente como sus preferencias al abrir las vistas de Spy ++.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Vistas de Spy++](../debugger/spy-increment-views.md)  
- Explica las vistas de árbol de Spy ++ de ventanas, mensajes, procesos y subprocesos.  
+ Explica las vistas de árbol de Spy ++ de windows, los mensajes, los procesos y subprocesos.  
   
  [Usar Spy++](../debugger/using-spy-increment.md)  
  Presenta la herramienta Spy ++ y explica cómo se puede usar.  

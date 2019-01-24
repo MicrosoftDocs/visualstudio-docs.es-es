@@ -1,20 +1,19 @@
 ---
-title: Usar el marco de pruebas unitarias de Microsoft para C++ en Visual Studio
+title: Usar el marco de pruebas unitarias de Microsoft para C++
 ms.date: 11/15/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 53243502e0368d3cb988950edf266cc56adbaa22
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 83bee98a0f0ba74d65aa770d4f8dd5588eba26b8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812457"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915106"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Usar el marco de pruebas unitarias de Microsoft para C++ en Visual Studio
 
@@ -100,4 +99,3 @@ Encontrará los siguientes rasgos predefinidos en `CppUnitTest.h`. Para obtener 
 ## <a name="see-also"></a>Vea también
 
 - [Inicio rápido: Desarrollo controlado por pruebas con el Explorador de pruebas](../test/quick-start-test-driven-development-with-test-explorer.md)
-

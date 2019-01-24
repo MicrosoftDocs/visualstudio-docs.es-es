@@ -2,7 +2,6 @@
 title: Opciones de formato del editor de C#
 ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.Spacing
@@ -11,6 +10,7 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.Wrapping
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.General
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.Formatting.General
 helpviewer_keywords:
 - formatting options [C#]
 - Text editor Options dialog box, formatting
@@ -19,14 +19,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: bcd63e9a155843d715e63fb6514e22f356847d2f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b3c4aa17e31797c9c8bbfa1a931369f371977e26
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821388"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946414"
 ---
-# <a name="options-text-editor-c-formatting"></a>Opciones, editor de texto, C#, formato
+# <a name="options-text-editor-c-code-style-formatting"></a>Opciones, editor de texto, C#, estilo de código, formato
 
 Use la página de opciones **Formato** para establecer las opciones de formato de código en el editor de código. Para acceder a esta página de opciones, elija **Herramientas** > **Opciones**. En el cuadro de diálogo **Opciones**, elija **Editor de texto** > **C#** > **Estilo de código** > **Formato**.
 

@@ -2,7 +2,6 @@
 title: Página Firma, Diseñador de proyectos
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.AddNewStrongNameKey
@@ -21,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 859ec81ff3ed2c3b6385de1d093ba512203da9d9
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: d59f81a8bedd62e7127d5541f943f0b0c26b8905
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459795"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856649"
 ---
 # <a name="signing-page-project-designer"></a>Página Firma, Diseñador de proyectos
 Use la página **Firma** del **Diseñador de proyectos** para firmar los manifiestos de aplicación e implementación y también para firmar el ensamblado (firma con nombre seguro).
@@ -40,7 +39,7 @@ Use la página **Firma** del **Diseñador de proyectos** para firmar los manifie
 ## <a name="application-and-deployment-manifest-signing"></a>Firma de manifiestos de aplicación e implementación
  Casilla **Firmar los manifiestos de ClickOnce**
 
- Active esta casilla para firmar los manifiestos de aplicación e implementación con un par de claves pública y privada. Para más información sobre cómo hacerlo, vea [Cómo: Firmar aplicaciones y manifiestos de implementación](../../ide/how-to-sign-application-and-deployment-manifests.md).
+ Active esta casilla para firmar los manifiestos de aplicación e implementación con un par de claves pública y privada. Para obtener más información sobre cómo hacerlo, vea [Cómo: Firmar aplicaciones y manifiestos de implementación](../../ide/how-to-sign-application-and-deployment-manifests.md).
 
  Botón **Seleccionar de almacén**
 
@@ -71,9 +70,9 @@ Use la página **Firma** del **Diseñador de proyectos** para firmar los manifie
 ## <a name="assembly-signing"></a>Firma de ensamblados
  Casilla **Firmar el ensamblado**
 
- Active esta casilla para firmar el ensamblado y crear un archivo de clave con nombre seguro. Para más información sobre la firma del ensamblado mediante el **Diseñador de proyectos**, vea [Cómo: Firmar un ensamblado (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
+ Active esta casilla para firmar el ensamblado y crear un archivo de clave con nombre seguro. Para obtener más información sobre la firma del ensamblado mediante el **Diseñador de proyectos**, vea [Cómo: Firmar un ensamblado (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
 
- Esta opción usa la herramienta Al.exe proporcionada por el Kit de desarrollo de software de Windows (SDK) para firmar el ensamblado. Para más información sobre Al.exe, vea [Cómo: Firmar un ensamblado con un nombre seguro](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
+ Esta opción usa la herramienta Al.exe proporcionada por el Kit de desarrollo de software de Windows (SDK) para firmar el ensamblado. Para obtener más información sobre Al.exe, vea [Cómo: Firmar un ensamblado con un nombre seguro](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
 
  Lista **Elija un archivo de clave de nombre seguro**
 

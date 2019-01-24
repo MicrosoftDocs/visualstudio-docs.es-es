@@ -1,9 +1,6 @@
 ---
-title: IDebugPortSupplierLocale2 | Documentos de Microsoft
-ms.custom: ''
+title: IDebugPortSupplierLocale2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugPortSupplierLocale2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1cd0160b1ec5b1c9d86c277f2b47011d1b7610c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c41d3bf89403344d80659074f0f486a90f089c55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113876"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915986"
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
-Proporciona compatibilidad de configuración regional para un proveedor del puerto.  
+Proporciona compatibilidad con la configuración regional para un proveedor de puerto.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -42,11 +39,11 @@ IDebugPortSupplierLocale2 : IUnknown
 ## <a name="requirements"></a>Requisitos  
  Encabezado: Portpriv.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Vea también  
- [Interfaces de núcleo](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Interfaces del núcleo](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   
  [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

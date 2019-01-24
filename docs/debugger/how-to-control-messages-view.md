@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: controlar la vista mensajes | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Vista de mensajes de control | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy++, Messages View
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64b83107d4dda72aea7db9e9c911305c96de7097
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 299bed89ecd2c73b1f8e8fe976bf570a19a6b20f
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836377"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53944397"
 ---
-# <a name="how-to-control-messages-view"></a>Cómo: Controlar la vista Mensajes
+# <a name="how-to-control-messages-view"></a>Procedimiento Controlar la vista Mensajes
 Con Spy ++, tiene un gran control sobre el contenido de un [vista mensajes](../debugger/messages-view.md) ventana. También puede [iniciar y detener](../debugger/how-to-start-and-stop-the-message-log-display.md) mostrando los mensajes en cualquier momento y se puede especificar:  
   
 - Los tipos de mensajes que desea ver.  

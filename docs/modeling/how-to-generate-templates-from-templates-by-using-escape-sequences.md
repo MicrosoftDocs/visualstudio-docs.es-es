@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Generar plantillas desde otras plantillas mediante secuencias de escape'
+title: Procedimiento Generar plantillas desde otras plantillas mediante secuencias de escape
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,20 +10,19 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 13ca6a9aef2f0944ba1f42c849d9f8079a56a82b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8aa0d2203db6080260bc702429758fbd7f6b1a4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947487"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938152"
 ---
-# <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Cómo: Generar plantillas desde otras plantillas mediante secuencias de escape
-Puede crear una plantilla de texto que se crea otra plantilla de texto como salida de texto generada. Para ello, debe utilizar secuencias de escape para delinear las etiquetas de plantilla de texto. Si no utiliza secuencias de escape, la plantilla de texto generada tendrá un significado predefinido. Para obtener más información sobre el uso de secuencias de escape en las plantillas de texto, consulte [utilizando las secuencias de Escape en las plantillas de texto](../modeling/using-escape-sequences-in-text-templates.md).
+# <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Procedimiento Generar plantillas desde otras plantillas mediante secuencias de escape
+Puede crear una plantilla de texto que se crea otra plantilla de texto como salida de texto generada. Para ello, debe usar las secuencias de escape para delinear las etiquetas de la plantilla de texto. Si no usa secuencias de escape, la plantilla de texto generada tendrá un significado definido previamente. Para obtener más información sobre el uso de secuencias de escape en plantillas de texto, consulte [utilizando las secuencias de Escape en plantillas de texto](../modeling/using-escape-sequences-in-text-templates.md).
 
-### <a name="to-generate-a-text-template-from-within-a-text-template"></a>Para generar una plantilla de texto desde una plantilla de texto
+### <a name="to-generate-a-text-template-from-within-a-text-template"></a>Para generar una plantilla de texto desde dentro de una plantilla de texto
 
--   Utilice la barra diagonal inversa (\\) como carácter de escape para generar las etiquetas de marcado necesarias dentro de la plantilla de texto para las directivas, instrucciones, expresiones y características en un archivo de plantilla de texto independiente de clase.
+-   Utilice la barra diagonal inversa (\\) como carácter de escape para producir las etiquetas de marcado necesario dentro de la plantilla de texto para las directivas, instrucciones, expresiones y funciones en un archivo de plantilla de texto independiente de la clase.
 
     ```
     \<#@ directive \#>
@@ -33,7 +32,7 @@ Puede crear una plantilla de texto que se crea otra plantilla de texto como sali
     ```
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se usa caracteres de escape para generar una plantilla de texto desde una plantilla de texto. El `output` Directiva establece el tipo de archivo de destino para el tipo de archivo de plantilla de texto (TT).
+ El ejemplo siguiente utiliza caracteres de escape para generar una plantilla de texto desde una plantilla de texto. El `output` Directiva establece el tipo de archivo de destino en el tipo de archivo de plantilla de texto (.tt).
 
 ```csharp
 \<#@ output extension=".tt" \#>

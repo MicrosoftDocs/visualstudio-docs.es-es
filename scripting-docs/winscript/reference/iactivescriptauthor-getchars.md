@@ -18,19 +18,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abc9c819c2dd4a75d6223af86b4fe89baebc186b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 06e7a7cf276e589aaaa3c00ecab8cbf881942f82
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645655"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094333"
 ---
 # <a name="iactivescriptauthorgetchars"></a>IActiveScriptAuthor::GetChars
-Devuelve el conjunto de caracteres de finalización para un contexto de finalización solicitada.  
+Devuelve el conjunto de caracteres de finalización para un contexto de finalización solicitado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetChars(  
    DWORD            fRequestedList,  
    BSTR             *pbstrChars  
@@ -39,19 +39,19 @@ HRESULT GetChars(
   
 #### <a name="parameters"></a>Parámetros  
  `fRequestedList`  
- [in] El contexto de finalización solicitada.  
+ [in] El contexto solicitado de finalización.  
   
 |Constante|Valor|Descripción|  
 |--------------|-----------|-----------------|  
 |SCRIPT_CMPL_ENUM_TRIGGER|0 x 0001|Solicita la enumeración del lado izquierdo.|  
-|SCRIPT_CMPL_MEMBER_TRIGGER|0 x 0002|Solicita el contexto de la finalización de miembro.|  
-|SCRIPT_CMPL_PARAM_TRIGGER|0 x 0003|Solicita la lista de parámetros.|  
-|SCRIPT_CMPL_COMMIT|0 x 0004|Finalización de las solicitudes de la lista de parámetros.|  
+|SCRIPT_CMPL_MEMBER_TRIGGER|0x0002|Solicita el contexto de la finalización de miembros.|  
+|SCRIPT_CMPL_PARAM_TRIGGER|0x0003|Solicita la lista de parámetros.|  
+|SCRIPT_CMPL_COMMIT|0x0004|Finalización de las solicitudes de la lista de parámetros.|  
   
  `pbstrChars`  
- [out] Los caracteres que se corresponden con el contexto de finalización solicitada.  
+ [out] Los caracteres que se corresponden con el contexto de finalización solicitado.  
   
-|`fRequestedList`parámetro|Caracteres devueltos|  
+|`fRequestedList` Parámetro|Devuelve caracteres adicionales.|  
 |--------------------------------|-------------------------|  
 |SCRIPT_CMPL_ENUM_TRIGGER|"."|  
 |SCRIPT_CMPL_MEMBER_TRIGGER|"="|  
@@ -59,7 +59,7 @@ HRESULT GetChars(
 |SCRIPT_CMPL_COMMIT|"()"|  
   
 ## <a name="return-value"></a>Valor devuelto  
- Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  

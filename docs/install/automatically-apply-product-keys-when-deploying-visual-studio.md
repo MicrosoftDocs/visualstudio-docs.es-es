@@ -1,8 +1,8 @@
 ---
-title: Aplicación automática de claves de producto durante la implementación de Visual Studio
+title: Aplicación automática de claves de producto
 description: Obtenga información sobre cómo aplicar claves de producto mediante programación al implementar Visual Studio.
 ms.date: 08/14/2017
-ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fea2ffa8fd81a5012c89289df36d7f698fb60c4e
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: fa0ed93097c396808f8a4404243be925d1b03ca0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138721"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827948"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Aplicación automática de claves de producto durante la implementación de Visual Studio
 

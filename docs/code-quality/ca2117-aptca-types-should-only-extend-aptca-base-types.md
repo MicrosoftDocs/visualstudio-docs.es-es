@@ -2,7 +2,6 @@
 title: 'CA2117: Los tipos APTCA solo amplían tipos base APTCA'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2117
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dac5acc0b7c7fff02862853bfd996362f80d1cc
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: bc2086038187093397d53e80b1a26f2006c32c80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547505"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873358"
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: Los tipos APTCA solo amplían tipos base APTCA
 
@@ -88,7 +87,7 @@ Meet at the sunny meadow 2/22/2003 12:00:00 AM!
 
 ## <a name="related-rules"></a>Reglas relacionadas
 
-[CA2116: Los métodos APTCA deben llamar solo a métodos APTCA](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)
+[CA2116: LOS métodos APTCA solo deben llamar a métodos APTCA](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)
 
 ## <a name="see-also"></a>Vea también
 

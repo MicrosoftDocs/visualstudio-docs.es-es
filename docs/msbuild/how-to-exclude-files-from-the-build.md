@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: Excluir archivos de la compilación | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Excluir archivos de la compilación | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, wildcards
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b2adfd3d571fe16fcbfe273e5513ebea724403cd
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 9ed8eeca4655761e0696184fdfc0d146ece06117
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080693"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833289"
 ---
-# <a name="how-to-exclude-files-from-the-build"></a>Cómo: Excluir archivos de la compilación
+# <a name="how-to-exclude-files-from-the-build"></a>Procedimiento Excluir archivos de la compilación
 En un archivo de proyecto puede utilizar comodines para incluir todos los archivos de un directorio o un conjunto de directorios anidado como entradas para una compilación. Sin embargo, puede haber un archivo en el directorio o un directorio en el conjunto anidado de directorios que no quiera incluir como entrada para una compilación. Puede excluir explícitamente ese archivo o directorio de la lista de entradas. También puede haber un archivo en un proyecto que solo quiera incluir bajo determinadas condiciones. Se pueden declarar explícitamente las condiciones para incluir un archivo en una compilación.  
   
 ## <a name="exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Excluir un archivo o directorio de las entradas de una compilación  

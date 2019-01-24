@@ -17,12 +17,12 @@ ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b264a6b03baf5b77796b329ef6dd05fa4614bad0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d10659487d9a747e2359f8fa2e68122b0938a77d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184527"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768133"
 ---
 # <a name="adding-icons-to-menu-commands"></a>Adición de iconos a comandos de menú
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

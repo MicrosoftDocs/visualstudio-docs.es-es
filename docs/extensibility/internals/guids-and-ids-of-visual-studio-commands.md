@@ -1,9 +1,6 @@
 ---
 title: GUID e identificadores de comandos de Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67c773fcd6afe5953d47e7f563189263d1092444
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1440eb7da0299b79aa063d999d581cc159a88e50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926552"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898299"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Comandos de GUID e identificadores de Visual Studio
 Los valores GUID y el Id. de los comandos incluidos en el entorno de desarrollo integrado (IDE) de Visual Studio se definen en archivos de vsct que se instalan como parte del SDK de Visual Studio. Para obtener más información, consulte [grupos, menús y comandos definidos por el IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -57,7 +54,7 @@ Los valores GUID y el Id. de los comandos incluidos en el entorno de desarrollo 
   
 -   Los elementos de menú que incluyen un carácter subrayado, como el **impresión** comando el **archivo** menú, en el que el *P* está subrayada.  
   
-     Carácter en los nombres de elemento de menú de caracteres que van precedidos por la y comercial (&) se muestran como subrayado. Sin embargo, *.vsct* archivos se escriben en XML, que usa el carácter de y comercial (&) para indicar los caracteres especiales y requiere que se debe escribir una y comercial que se mostrará como  *&amp;amp;*. Por lo tanto, en un *.vsct* archivo, el **P**comando Imprimir aparece como  *&amp;amp; Impresión*.  
+     Carácter en los nombres de elemento de menú de caracteres que van precedidos por la y comercial (&) se muestran como subrayado. Sin embargo, *.vsct* archivos se escriben en XML, que usa el carácter de y comercial (&) para indicar los caracteres especiales y requiere que se debe escribir una y comercial que se mostrará como  *&amp;amp;*. Por lo tanto, en un *.vsct* archivo, el **impresión** comando aparece como  *&amp;amp; Impresión*.  
   
 -   Los comandos que tienen texto dinámico, como **guardar** \<nombre de archivo actual\>y genera dinámicamente elementos de menú, como los elementos en el **archivos recientes** lista.  
   

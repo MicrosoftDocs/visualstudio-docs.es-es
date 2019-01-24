@@ -1,5 +1,5 @@
 ---
-title: Creación y ejecución de una prueba de carga en Visual Studio
+title: Crear y ejecutar una prueba de carga
 ms.date: 10/01/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,18 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: cbe16b5e0b711783c9dfd12ab9a652fb4055fc36
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: d50f51fa2bcf43fd5bc299f803c2607b4f3351e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381021"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850809"
 ---
-# <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Tutorial: Crear y ejecutar una prueba de carga que contiene pruebas unitarias
+# <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Tutorial: Creación y ejecución de una prueba de carga que contiene pruebas unitarias
 
 En este tutorial se crea una prueba de carga que contiene pruebas unitarias.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Este tutorial le guiará por el proceso de creación y posterior ejecución de una prueba de carga mediante Visual Studio Enterprise. Una prueba de carga es un contenedor de pruebas de rendimiento web y pruebas unitarias. Las pruebas de carga se crean con el **Asistente para prueba de carga nueva**.
 
@@ -35,13 +36,13 @@ En este tutorial, se realizarán las siguientes tareas:
 
 -   Ejecutar una prueba de carga.
 
--   Siga los pasos de [Tutorial: Crear y ejecutar pruebas unitarias en código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) para crear una sencilla biblioteca de clases de C# que contenga un proyecto de prueba de carga y rendimiento web con algunas pruebas unitarias.
+-   Siga los pasos descritos en [Tutorial: Creación y ejecución de pruebas unitarias en código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) para crear una sencilla biblioteca de clases de C# que contenga un proyecto de prueba de carga y rendimiento web con algunas pruebas unitarias.
 
 ## <a name="create-a-load-test-containing-unit-tests-using-the-new-load-test-wizard"></a>Crear una prueba de carga que contenga pruebas unitarias mediante el Asistente para prueba de carga nueva
 
 ### <a name="to-start-the-new-load-test-wizard"></a>Para iniciar el Asistente para prueba de carga nueva
 
-1.  Abra la solución Bank creada en [Tutorial: Crear y ejecutar pruebas unitarias en código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+1.  Abra la solución Bank que ha creado en [Tutorial: Creación y ejecución de pruebas unitarias para código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 2.  En el **Explorador de soluciones**, abra el menú contextual del nodo de la solución Bank, elija **Agregar** y, luego, **Nuevo proyecto**.
 
@@ -147,6 +148,6 @@ En este tutorial, se realizarán las siguientes tareas:
 
 - [Editar la combinación de pruebas para especificar qué pruebas incluir en un escenario de prueba de carga](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
 - [Especificar tipos de redes virtuales en un escenario de prueba de carga](../test/specify-virtual-network-types-in-a-load-test-scenario.md)
-- [Editar escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
-- [Editar los modelos de carga para modelar las actividades de usuarios virtuales](../test/edit-load-patterns-to-model-virtual-user-activities.md)
+- [Modificar escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
+- [Modificar modelos de carga para modelar las actividades de usuarios virtuales](../test/edit-load-patterns-to-model-virtual-user-activities.md)
 - [Editar modelos de combinación de pruebas para especificar la probabilidad de que un usuario virtual ejecute una prueba](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)

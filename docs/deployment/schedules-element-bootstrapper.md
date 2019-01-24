@@ -1,8 +1,6 @@
 ---
 title: '&lt;Las programaciones&gt; (elemento, arranque) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e891064b0f2ac522312b2bb654c4d05e9f7bf47c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 850c94274f783c306fe31fde4d86c9563c928adf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078259"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894304"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Las programaciones&gt; (elemento, arranque)
 El `Schedules` contiene elemento `Schedule` elementos, que definen las horas específicas en los comandos definidos por el `Command` se debe ejecutar el elemento.  
@@ -41,8 +39,8 @@ El `Schedules` contiene elemento `Schedule` elementos, que definen las horas esp
 </Schedules>  
 ```  
   
-## <a name="elements-and-attributes"></a>Los elementos y atributos  
- El `Schedules` es un elemento secundario de la `Product` elemento. Cada `Product` elemento podría tener como máximo un `Schedules` elemento. El `Schedules` elemento no tiene atributos.  
+## <a name="elements-and-attributes"></a>Elementos y atributos  
+ El `Schedules` es un elemento secundario de la `Product` elemento. Cada `Product` elemento podría tener como máximo un `Schedules` elemento. El elemento `Schedules` no tiene atributos.  
   
 ## <a name="schedule"></a>Programación  
  El `Schedule` es un elemento secundario de la `Schedules` elemento. Un `Schedules` elemento debe tener al menos un `Schedule` elemento.  
@@ -51,7 +49,7 @@ El `Schedules` contiene elemento `Schedule` elementos, que definen las horas esp
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Name`|Requerido. El nombre del elemento de programación. Esto corresponde a la `ScheduleName` propiedad de la `Command` elemento. Cuando un `Command` hace referencia a la programación con nombre, sólo se ejecutará en el momento indicado por el que `Schedule` elemento. También se pueden asociar las programaciones del `FailIf` y `BypassIf` elementos, que restringen estas comprobaciones condicionales para la ejecución de la programación especificada. Para obtener más información, consulte [ \<comandos > elemento](../deployment/commands-element-bootstrapper.md).|  
+|`Name`|Obligatorio. El nombre del elemento de programación. Esto corresponde a la `ScheduleName` propiedad de la `Command` elemento. Cuando un `Command` hace referencia a la programación con nombre, sólo se ejecutará en el momento indicado por el que `Schedule` elemento. También se pueden asociar las programaciones del `FailIf` y `BypassIf` elementos, que restringen estas comprobaciones condicionales para la ejecución de la programación especificada. Para obtener más información, consulte [ \<comandos > elemento](../deployment/commands-element-bootstrapper.md).|  
   
  A partir de `Schedule` elemento puede tener exactamente uno de los elementos secundarios siguientes.  
   
@@ -66,4 +64,4 @@ El `Schedules` contiene elemento `Schedule` elementos, que definen las horas esp
   
 ## <a name="see-also"></a>Vea también  
  [\<Producto > elemento](../deployment/product-element-bootstrapper.md)   
- [Referencia de esquema de paquete y del producto](../deployment/product-and-package-schema-reference.md)
+ [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)

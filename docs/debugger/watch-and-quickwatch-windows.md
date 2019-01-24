@@ -1,8 +1,7 @@
 ---
-title: Establece una inspección en variables en Visual Studio | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Establece una inspección en variables | Microsoft Docs
+ms.custom: seodec18
 ms.date: 10/11/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.watch
@@ -18,18 +17,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4db887a3e27d995229da6d954c4b3f66173e9e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: e9a7e936b565a961bb7b32d5599c79049857328e
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897360"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204474"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Variables de inspección con ventanas Inspección e Inspección rápida 
 
 Durante la depuración, puede usar **inspección** windows y **Inspección rápida** para observar las variables y expresiones. Windows solo están disponibles durante una sesión de depuración.
 
 **Inspección** windows pueden mostrar varias variables a la vez durante la depuración. El **Inspección rápida** cuadro de diálogo muestra una única variable a la vez y debe cerrarse para que pueda continuar la depuración.
+
+Si esta es la primera vez que intenta depurar código, le recomendamos que lea [Cómo depurar para principiantes sin experiencia](../debugger/debugging-absolute-beginners.md) y [Fix bugs by writing better C# code](../debugger/write-better-code-with-visual-studio.md) (Mejora de la escritura de código de C# para solucionar errores) antes de continuar con este artículo.
 
 ## <a name="observe-variables-with-a-watch-window"></a>Observar variables con una ventana Inspección
 
@@ -124,7 +125,7 @@ Para que se muestra cómo usar el icono de actualización:
    
 1. Inicie la depuración. El **inspección** ventana muestra algo como el siguiente mensaje:
    
-   ![Actualizar inspección](../debugger/media/refreshwatch.png "actualizar inspección")
+   ![Actualizar inspección](../debugger/media/refreshwatch.png "Refresh Watch")
    
 1. Para actualizar el valor, seleccione el icono de actualización, o presione la barra espaciadora. El depurador vuelve a evaluar la expresión. 
 
@@ -142,11 +143,11 @@ Una expresión con efectos secundarios se evalúa solo una vez, cuando se escrib
 
 Una manera de evitar la designación de efectos secundarios es desactivar la evaluación de función automática. En **herramientas** > **opciones** > **depuración** > **General**, anule la selección de **Habilitar evaluación de propiedades y otras llamadas a función implícitas**.
 
-Para C# solo, cuando se desactiva la evaluación de propiedades o llamadas a función implícitas, puede forzar la evaluación mediante la adición de la **ac** modificador de formato a una variable **nombre** en el **inspección**  ventana. Consulte [especificadores en C# de formato](../debugger/format-specifiers-in-csharp.md).
+Para C# solo, cuando se desactiva la evaluación de propiedades o llamadas a función implícitas, puede forzar la evaluación mediante la adición de la **ac** modificador de formato a una variable **nombre** en el **inspección**  ventana. Vea [Format Specifiers in C#](../debugger/format-specifiers-in-csharp.md) (Especificadores de formato en C#).
 
 ## <a name="bkmk_objectIds"></a> Usar identificadores de objeto en la ventana Inspección (C# y Visual Basic)
 
-A veces desea observar el comportamiento de un objeto específico. Por ejemplo, es posible que desee realizar un seguimiento de un objeto al que hace referencia una variable local después de esa variable se ha salido del ámbito. En C# y Visual Basic, puede crear identificadores de objeto para instancias específicas de tipos de referencia y usarlas en el **inspección** ventana y en condiciones de interrupción. El identificador de objeto es generado por los servicios de depuración de common language runtime (CLR) y asociado al objeto.
+A veces desea observar el comportamiento de un objeto específico. Por ejemplo, es posible que desee realizar un seguimiento de un objeto al que hace referencia una variable local después de esa variable se ha salido del ámbito. En C# y Visual Basic, puede crear identificadores de objetos para instancias específicas de tipos y usarlos en la ventana **Inspección** y en condiciones de interrupción. Los servicios de depuración de Common Language Runtime (CLR) generan el identificador de objeto y lo asocian al objeto.
 
 > [!NOTE]
 > Los identificadores de objeto crean referencias débiles que no impiden el objeto recolectado. Los identificadores de objeto solo son válidos para la sesión de depuración actual.
@@ -223,7 +224,7 @@ Para mostrar solamente el **vista dinámica** para un objeto, agregue un **diná
 >[!NOTE]
 >- El C# depurador no vuelve a evaluar los valores de forma automática el **vista dinámica** cuando se pasa a la siguiente línea de código. 
 >- El depurador de Visual Basic actualiza automáticamente las expresiones agregadas a través de la **vista dinámica**.
->- Evaluación de los miembros de un **vista dinámica** puede tener [efectos](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). 
+>- La evaluación de los miembros de una **vista dinámica** puede tener [efectos secundarios](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). 
 
 **Para insertar una nueva inspección variable convierte el objeto en un objeto dinámico:**
   
@@ -278,5 +279,6 @@ Para observar el `a` variable,
 1. Continúe la depuración. Puede observar la variable en el **inspección** ventana.
 
 ## <a name="see-also"></a>Vea también
-
-[Ventanas del depurador](../debugger/debugger-windows.md)
+ [¿Qué es la depuración?](../debugger/what-is-debugging.md)  
+ [Corrección de errores escribiendo mejor código de C#](../debugger/write-better-code-with-visual-studio.md)  
+ [Primer vistazo al depurar](../debugger/debugger-feature-tour.md) [ventanas del depurador](../debugger/debugger-windows.md)

@@ -1,9 +1,6 @@
 ---
 title: Adaptación de paquetes VSIX | Microsoft Docs
-ms.custom: ''
 ms.date: 10/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - localize package
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54de0b219eb1c86a413b7a95e87a48e7f65ac9ec
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 1d554819c8c615dc9f8fcd41bb4b460482e21fde
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636979"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956938"
 ---
 # <a name="localizing-vsix-packages"></a>Adaptación de paquetes VSIX
 
@@ -104,8 +101,8 @@ El ejemplo siguiente muestra las partes relevantes de un *Extension.vsixmanifest
 
 ## <a name="see-also"></a>Vea también
 
-|Title|Descripción|
+|Título|Descripción|
 |-----------|-----------------|
-|[Referencia de esquema 2.0 de paquete de idioma de VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Un paquete de idioma VSIX describe la información de localización de un archivo de implementación de VSIX.|
+|[Referencia de esquema 2.0 de paquete de idioma de VSIX](/visualstudio/extensibility/vsix-language-pack-schema-2-0-reference)|Un paquete de idioma VSIX describe la información de localización de un archivo de implementación de VSIX.|
 |[Anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Describe la estructura y contenido de un paquete vsix.|
 |[Localizar los comandos de menú](../extensibility/localizing-menu-commands.md)|Muestra cómo localizar a otros recursos de texto en una extensión.|

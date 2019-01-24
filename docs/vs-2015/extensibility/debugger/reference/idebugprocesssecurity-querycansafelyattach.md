@@ -15,12 +15,12 @@ ms.assetid: 63ec1ae8-27da-4574-aa15-1c986fe9fe58
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5380df694196f8a0ec8fea11aefd429ccfeca039
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 357ab447d0f16c3bbbfb656d042c0095df01bc83
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239335"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51784447"
 ---
 # <a name="idebugprocesssecurityquerycansafelyattach"></a>IDebugProcessSecurity::QueryCanSafelyAttach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

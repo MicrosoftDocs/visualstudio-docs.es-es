@@ -1,10 +1,8 @@
 ---
 title: Hacer referencia a elemento (plantillas de Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Reference
 helpviewer_keywords:
@@ -16,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1f05bc8a19377576788fdb72400bf0af566b796
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 904dc9662b5bb7f2097e0aabce8af989a959f943
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638116"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889481"
 ---
 # <a name="reference-element-visual-studio-templates"></a>Elemento de referencia (plantillas de Visual Studio)
 Especifica la referencia de ensamblado para agregar cuando el elemento se agrega a un proyecto.  

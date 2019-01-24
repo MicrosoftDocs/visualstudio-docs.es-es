@@ -1,8 +1,7 @@
 ---
-title: 'Cómo: Crear un sombreador Lambert básico'
+title: Procedimiento Crear un sombreador Lambert básico
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d71a59e0173be60779675f838fad20943eabc85
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 622209951ba3321a8278e0f65058459591af7d38
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913259"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850361"
 ---
-# <a name="how-to-create-a-basic-lambert-shader"></a>Cómo: Crear un sombreador Lambert básico
+# <a name="how-to-create-a-basic-lambert-shader"></a>Procedimiento Crear un sombreador Lambert básico
 
 En este artículo se muestra cómo usar el Diseñador de sombras y el lenguaje DGSL (Directed Graph Shader Language) para crear un sombreador de iluminación que implementa el modelo de iluminación de Lambert clásico.
 
@@ -50,7 +49,7 @@ Antes de empezar, asegúrese de que se muestran la ventana **Propiedades** y el 
 
  ![Iluminación Lambert aplicada a un modelo.](../designers/media/digit-lambert-effect-result.png)
 
- Para más información sobre cómo aplicar un sombreador a un modelo 3D, vea [Cómo: Aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+ Para obtener más información sobre cómo aplicar un sombreador a un modelo 3D, vea [Cómo: Aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Vea también
 

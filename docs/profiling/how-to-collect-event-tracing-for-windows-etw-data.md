@@ -1,8 +1,6 @@
 ---
-title: 'Cómo: Recopilar datos de Seguimiento de eventos para Windows (ETW) | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Recopilar datos de seguimiento de eventos para Windows (ETW) | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.events
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd8016b14d91157942ed8d5e4a987df0009f6af3
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 8a619820cd2c6a3a884c7279d4eb9ffc9741619d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766167"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863659"
 ---
-# <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Cómo: Recopilar datos de seguimiento de eventos para Windows (ETW)
+# <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Procedimiento Recopilar datos de seguimiento de eventos para Windows (ETW)
 
 Seguimiento de eventos para Windows (ETW) es una eficaz utilidad de seguimiento de nivel de kernel que activa el kernel de registro del generador de perfiles o eventos definidos por la aplicación. Los datos recopilados del proveedor de eventos se pueden ver utilizando la opción /**Summary: ETW** de la herramienta de línea de comandos [VSPerfReport](../profiling/vsperfreport.md). Utilice este informe para determinar dónde se producen problemas de rendimiento en la aplicación.
 

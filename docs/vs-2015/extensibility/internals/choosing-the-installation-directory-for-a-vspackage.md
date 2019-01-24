@@ -15,12 +15,12 @@ ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d3ed255d5b8a876ff29e5230c4517ab0b5e04398
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 385877b8a682574946bfd43e1e51acd771d00a2b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843410"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51775178"
 ---
 # <a name="choosing-the-installation-directory-for-a-vspackage"></a>Selección del directorio de instalación de un VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

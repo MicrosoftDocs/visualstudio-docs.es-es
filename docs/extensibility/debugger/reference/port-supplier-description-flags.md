@@ -1,9 +1,6 @@
 ---
 title: PORT_SUPPLIER_DESCRIPTION_FLAGS | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - PORT_SUPPLIER_DESCRIPTION_FLAGS enumeration
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bc832aff1178d0d1247d4fda2e203bfc5857118
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0db1d83a9e4f41ae349da121300d4f45284836ca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875091"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893185"
 ---
 # <a name="portsupplierdescriptionflags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
 Define los metadatos que se pueden recuperar sobre un proveedor de puerto.  
@@ -50,7 +47,7 @@ public enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS
 ## <a name="requirements"></a>Requisitos  
  Encabezado: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   

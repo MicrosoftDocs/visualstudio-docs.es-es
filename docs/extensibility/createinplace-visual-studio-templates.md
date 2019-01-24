@@ -1,10 +1,8 @@
 ---
-title: CreateInPlace (plantillas de Visual Studio) | Microsoft Docs
-ms.custom: ''
+title: CreateInPlace (elemento) (plantillas de Visual Studio)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#CreateInPlace
 helpviewer_keywords:
@@ -16,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33d4a05f3c1f7a3aff83d05e1816308511414ad2
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 61fa7f61acbe59f61feb4472c55459e07e4980a6
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231403"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561819"
 ---
-# <a name="createinplace-visual-studio-templates"></a>CreateInPlace (plantillas de Visual Studio)
+# <a name="createinplace-element-visual-studio-templates"></a>CreateInPlace (elemento) (plantillas de Visual Studio)
 Especifica si se debe crear el proyecto y realizar el reemplazo de parámetros en la ubicación especificada, o realizar el reemplazo de parámetros en una ubicación temporal y, a continuación, guarde el proyecto en la ubicación especificada.  
   
  \<VSTemplate >  

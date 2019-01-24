@@ -1,7 +1,6 @@
 ---
 title: Bookmark (control)
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
@@ -14,52 +13,52 @@ helpviewer_keywords:
 - Bookmark control, data binding
 - Bookmark control, events
 - Bookmark control
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 60ab9db37f3ed41de4afcdecbf2c9e83ffb5c2f6
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: d9a2de59d0cdb9cd1114375d4327ab3e3a6b5af7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34264017"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960422"
 ---
 # <a name="bookmark-control"></a>Bookmark (control)
   El control <xref:Microsoft.Office.Tools.Word.Bookmark> es un marcador que tiene un nombre único, expone eventos y se puede enlazar a datos. El marcador se puede usar como marcador de posición para marcar un elemento o una ubicación en un documento de Microsoft Office Word. El control <xref:Microsoft.Office.Tools.Word.Bookmark> s una combinación de un objeto <xref:Microsoft.Office.Interop.Word.Bookmark> y un objeto <xref:Microsoft.Office.Interop.Word.Range> .
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
- En los proyectos de nivel de documento, puede agregar <xref:Microsoft.Office.Tools.Word.Bookmark> controles al documento en tiempo de diseño o en tiempo de ejecución. En proyectos de complemento de VSTO, puede agregar <xref:Microsoft.Office.Tools.Word.Bookmark> controles a cualquier documento abierto en tiempo de ejecución. Para obtener más información, consulte [Cómo: marcador de agregar controles a documentos de Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).
+ En los proyectos de nivel de documento, puede agregar <xref:Microsoft.Office.Tools.Word.Bookmark> controles al documento en tiempo de diseño o en tiempo de ejecución. En proyectos de complemento VSTO, puede agregar <xref:Microsoft.Office.Tools.Word.Bookmark> controles a cualquier documento abierto en tiempo de ejecución. Para obtener más información, vea [Cómo: Agregar controles Bookmark a documentos de Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).
 
 ## <a name="bind-data-to-the-control"></a>Enlazar datos al control
  Un control <xref:Microsoft.Office.Tools.Word.Bookmark> admite el enlace de datos simple. El marcador se debe enlazar a un origen de datos mediante la propiedad <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> . La propiedad de enlace de datos predeterminada del marcador es la propiedad <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> .
 
- Si los datos del conjunto de datos enlazado se actualizan, el <xref:Microsoft.Office.Tools.Word.Bookmark> control muestra los cambios.
+ Si los datos del conjunto de datos enlazado se actualizan, los <xref:Microsoft.Office.Tools.Word.Bookmark> control muestra los cambios.
 
- En los proyectos de nivel de documento, puede enlazar datos a marcadores mediante la ventana **Orígenes de datos** . Para obtener más información, consulte [Cómo: rellenar documentos con datos de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md).
+ En los proyectos de nivel de documento, puede enlazar datos a marcadores mediante la ventana **Orígenes de datos** . Para obtener más información, vea [Cómo: Rellenar documentos con datos de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md).
 
 ## <a name="formatting"></a>Formato
  El formato que puede aplicarse a un control <xref:Microsoft.Office.Interop.Word.Bookmark> también puede aplicarse a un control <xref:Microsoft.Office.Tools.Word.Bookmark> . Este formato incluye fuentes, sangría, espaciado, numeración y estilos.
 
 ## <a name="assign-text-to-the-bookmark"></a>Asignar texto al marcador
- Una diferencia adicional entre un <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> objeto y un <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> control es cómo se comporta cuando se asigna texto al marcador. Si se asigna texto a una longitud de cero <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType>, el texto se anexa a la derecha del marcador y el marcador conserva la longitud cero. Sin embargo, si se asigna texto a una longitud de cero <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType>, el texto se inserta en el marcador y la longitud del marcador se expande hasta el número total de caracteres insertados.
+ Una diferencia adicional entre un objeto <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> y un control <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> es cómo se comporta cuando se asigna texto al marcador. Si se asigna texto a un <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType>de longitud cero, el texto se anexa a la derecha del marcador y el marcador conserva la longitud cero. Sin embargo, si se asigna texto a un <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType>de longitud cero, el texto se inserta en el marcador y la longitud del marcador se expande hasta el número total de caracteres insertados.
 
- El <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> control también tiene la <xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType> propiedad. Esta propiedad es diferente de la <xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType> propiedad que está disponible en la <xref:Microsoft.Office.Tools.Word.Bookmark.Range?displayProperty=nameWithType> propiedad de un <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> (control), o la <xref:Microsoft.Office.Interop.Word.Bookmark.Range?displayProperty=nameWithType> propiedad de un <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> objeto.
+ El control <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> también tiene la propiedad <xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType> . Esta propiedad es diferente de la <xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType> propiedad que está disponible en el <xref:Microsoft.Office.Tools.Word.Bookmark.Range?displayProperty=nameWithType> propiedad de un <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> control, o la <xref:Microsoft.Office.Interop.Word.Bookmark.Range?displayProperty=nameWithType> propiedad de un <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> objeto.
 
 |Propiedad Text|Descripción|
 |-------------------|-----------------|
 |<xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType>|Use esta propiedad para mostrar el texto del marcador y dejar el marcador en el documento. Al asignar texto al marcador, se expande el intervalo del marcador y no se elimina el marcador.<br /><br /> Por ejemplo, `Bookmark1.Text = "Hello world"` inserta el texto en el marcador y deja el marcador intacto.|
 |<xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType>|Use esta propiedad para mostrar texto en la ubicación del marcador y eliminar automáticamente el marcador. Por ejemplo, `Bookmark1.Range.Text = "Hello world"` inserta el texto en el marcador y elimina el marcador.|
 
-## <a name="rename-the-control-at-design-time"></a>Cambiar el nombre del control en tiempo de diseño
+## <a name="rename-the-control-at-design-time"></a>Cambie el nombre del control en tiempo de diseño
  En los proyectos de nivel de documento, si arrastra un control <xref:Microsoft.Office.Tools.Word.Bookmark> desde el **Cuadro de herramientas** hasta el documento, Visual Studio genera automáticamente un nombre para el control. Puede cambiar el nombre del control en la ventana **Propiedades** .
 
 ## <a name="overlapping-controls"></a>Controles superpuestos
- Los controles Bookmark pueden superponerse entre sí. Más de un marcador puede compartir el mismo texto. Al asignar nuevo texto a uno de los marcadores superpuestos, contiene solo el nuevo texto y los marcadores dejarán de superponerse. El otro marcador contiene ahora sólo el texto que no se comparte entre los marcadores superpuestos originales.
+ Los controles Bookmark pueden superponerse entre sí. Más de un marcador puede compartir el mismo texto. Al asignar nuevo texto a uno de los marcadores superpuestos, contiene solo el nuevo texto y los marcadores dejarán de superponerse. El otro marcador ahora contiene sólo el texto que no se comparte entre los marcadores superpuestos originales.
 
- En la tabla siguiente se muestra cómo dos marcadores superpuestos comparten dos marcadores superpuestos comparten:
+ En la tabla siguiente se muestra cómo dos marcadores superpuestos comparten se comparte entre dos marcadores superpuestos:
 
 |Marcador|Texto|
 |--------------|----------|
@@ -67,7 +66,7 @@ ms.locfileid: "34264017"
 |Bookmark1|This is sample|
 |Bookmark2|sample text.|
 
- Si asigna el nuevo texto "This is replacement." al marcador Bookmark1, los marcadores no se superponen y Bookmark2 conservará solo el texto que originalmente no forma parte del marcador Bookmark1.
+ Si asigna el nuevo texto "This is replacement." al marcador Bookmark1, los marcadores no se superponen y Bookmark2 conservará solo el texto que no era originalmente parte del marcador Bookmark1.
 
 |Marcador|Texto|
 |--------------|----------|
@@ -77,7 +76,7 @@ ms.locfileid: "34264017"
 
 Si cambia el texto de un marcador que contiene otro marcador, el marcador interno no se elimina. Sin embargo, el marcador interno se convierte en un marcador vacío y se desplaza hasta el final del marcador exterior.
 
-En la tabla siguiente se muestra cómo dos marcadores superpuestos comparten comparten un marcador que está contenido en otro marcador:
+En la tabla siguiente se muestra cómo dos marcadores superpuestos comparten comparten un marcador que se encuentra en otro marcador:
 
 |Marcador|Texto|
 |--------------|----------|
@@ -89,9 +88,9 @@ En la tabla siguiente se muestra cómo dos marcadores superpuestos comparten com
 
 |Marcador|Texto|
 |--------------|----------|
-|Dos marcadores independientes|[Esto es sustituto.]{}|
+|Dos marcadores independientes|[es sustituto].{}|
 |Bookmark1|This is replacement.|
-|Bookmark2|*\<vacía >*|
+|Bookmark2|*\<vacío >*|
 
 ## <a name="events"></a>Eventos
 
@@ -113,8 +112,8 @@ Los eventos siguientes están disponibles para el control <xref:Microsoft.Office
 
 ## <a name="see-also"></a>Vea también
 
-- [Automatizar Word con objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)
-- [Cómo: agregar controles Bookmark a documentos de Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
+- [Automatizar Word usando objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)
+- [Cómo: Agregar controles Bookmark a documentos de Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
 - [Tutorial: Crear menús contextuales para marcadores](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Limitaciones de programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

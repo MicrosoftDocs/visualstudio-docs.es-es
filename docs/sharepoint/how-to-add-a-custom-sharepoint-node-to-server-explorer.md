@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: agregar un nodo de SharePoint personalizado al explorador de servidores | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Agregar un nodo de SharePoint personalizado al explorador de servidores | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bb0ba7f09ae564a794792ad6f7a60f53f6f6422e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: bc648abd1d8981bd5c64782bd094e40d507b4142
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755646"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937668"
 ---
-# <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Cómo: agregar un nodo de SharePoint personalizado al explorador de servidores
+# <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Procedimiento Agregar un nodo de SharePoint personalizado al explorador de servidores
   Puede agregar nodos personalizados bajo el **conexiones de SharePoint** nodo **Explorador de servidores**. Esto es útil cuando desea mostrar los componentes de SharePoint adicionales que no se muestran en **Explorador de servidores** de forma predeterminada. Para obtener más información, consulte [extender el nodo Conexiones de SharePoint en el Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
   
  Para agregar un nodo personalizado, primero cree una clase que define el nuevo nodo. A continuación, cree una extensión que agrega el nodo como un elemento secundario de un nodo existente.  
@@ -61,9 +58,9 @@ ms.locfileid: "36755646"
   
 1.  En el mismo proyecto que la definición de nodo, cree una clase que implementa el <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> interfaz.  
   
-2.  Agregue el <xref:System.ComponentModel.Composition.ExportAttribute> a la clase de atributo. Este atributo permite que Visual Studio detecte y cargue su <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> implementación. Pase el <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> tipo al constructor del atributo.  
+2.  Agregue el atributo <xref:System.ComponentModel.Composition.ExportAttribute> a la clase. Este atributo permite que Visual Studio detecte y cargue su <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> implementación. Pase el <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> tipo al constructor del atributo.  
   
-3.  Agregue el <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> a la clase de atributo. En una extensión de nodo, este atributo especifica el identificador de cadena para el tipo de nodo que desea extender.  
+3.  Agregue el atributo <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> a la clase. En una extensión de nodo, este atributo especifica el identificador de cadena para el tipo de nodo que desea extender.  
   
      Para especificar los tipos de nodo integradas proporcionados por Visual Studio, pase uno de los siguientes valores de enumeración al constructor del atributo:  
   
@@ -102,5 +99,3 @@ ms.locfileid: "36755646"
  [Extender el nodo Conexiones de SharePoint en el Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Cómo: Extender un nodo de SharePoint en el Explorador de servidores](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
  [Tutorial: Extender el Explorador de servidores para mostrar elementos web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
-  
-  

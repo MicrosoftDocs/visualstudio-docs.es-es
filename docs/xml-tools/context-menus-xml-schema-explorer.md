@@ -2,7 +2,6 @@
 title: Menús contextuales en el Explorador de esquemas XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
 author: gewarren
@@ -10,18 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6f13a2dc434602819a423b8122a97675e332cab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a5a02169a76718d5abfd5f08bd6c03c7f7dda26
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939129"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270169"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menús contextuales (Explorador de esquemas XML)
 
-Los elementos de menú contextual siguientes se usan para realizar búsquedas específicas del esquema y otras operaciones.
+Un menú contextual es el menú que aparece cuando hace clic en un elemento. Los elementos de menú contextual siguientes se usan para realizar búsquedas específicas del esquema y otras operaciones.
 
-## <a name="node-type-schema-set"></a>Tipo de nodo: conjunto de esquemas
+## <a name="node-type-schema-set"></a>Tipo de nodo: Conjunto de esquemas
 
 En la tabla siguiente se describen las opciones disponibles para un nodo de conjunto de esquemas.
 
@@ -32,7 +31,7 @@ En la tabla siguiente se describen las opciones disponibles para un nodo de conj
 |**Mostrar elementos globales**|Busca y resalta todos los elementos globales existentes en el esquema establecido.|
 |**Propiedades (ventana)**|Se abre el **propiedades** ventana (si aún no está abierto). Esta ventana muestra información sobre el nodo.|
 
-## <a name="node-type-namespace"></a>Tipo de nodo: Namespace
+## <a name="node-type-namespace"></a>Tipo de nodo: Espacio de nombres
  En la tabla siguiente se describen las opciones disponibles para un nodo de espacio de nombres.
 
 |Opción|Descripción|
@@ -43,7 +42,7 @@ En la tabla siguiente se describen las opciones disponibles para un nodo de conj
 |**Mostrar elementos globales**|Busca y resalta todos los elementos globales existentes en el espacio de nombres seleccionado.|
 |**Propiedades (ventana)**|Se abre el **propiedades** ventana (si aún no está abierto). Esta ventana muestra información sobre el nodo.|
 
-## <a name="node-type-file"></a>Tipo de nodo: archivo
+## <a name="node-type-file"></a>Tipo de nodo: Archivo
  En la tabla siguiente se describen las opciones disponibles para un nodo de archivo.
 
 |Opción|Descripción|
@@ -65,7 +64,7 @@ En la tabla siguiente se describen las opciones disponibles para un nodo de conj
 |**Vista Código**|Abre el archivo que contiene el nodo seleccionado en el Editor XML. El elemento que está seleccionado en el Explorador de esquemas XML también estará seleccionado en el Editor XML.|
 |**Propiedades (ventana)**|Se abre el **propiedades** ventana (si aún no está abierto). Esta ventana muestra información sobre el nodo.|
 
-## <a name="node-type-element"></a>Tipo de nodo: elemento
+## <a name="node-type-element"></a>Tipo de nodo: Elemento
  Además de las opciones de nodo global descritas anteriormente, el menú contextual para los nodos de elemento tiene las siguientes opciones:
 
 |Opción|Descripción|
@@ -77,7 +76,7 @@ En la tabla siguiente se describen las opciones disponibles para un nodo de conj
 |**Encabezados de grupos de sustitución Show**|Para los elementos globales que son miembros de un grupo de sustitución, busca y resalta todos los encabezados directos e indirectos del elemento seleccionado, como los siguientes:<br /><br /> -Un encabezado de grupo de sustitución especificado en el elemento seleccionado.<br />-Un encabezado de grupo de sustitución especificado en su elemento principal.|
 |**Generar XML de ejemplo**|Disponible solo para los elementos globales. Genera un archivo XML de ejemplo para el elemento global.|
 
-## <a name="node-type-global-types"></a>Tipo de nodo: tipos globales
+## <a name="node-type-global-types"></a>Tipo de nodo: Tipos globales
  Además de las opciones de nodo global descritas anteriormente, el menú contextual para los nodos de tipo global tiene las siguientes opciones:
 
 |Opción|Descripción|
@@ -87,7 +86,7 @@ En la tabla siguiente se describen las opciones disponibles para un nodo de conj
 |**Mostrar todos los tipos derivados**|Busca y resalta todos los tipos derivados directa o indirectamente del tipo seleccionado.|
 |**Mostrar todos los antecesores**|Muestra todos los tipos primarios (base).|
 
-## <a name="node-type-attribute"></a>Tipo de nodo: atributo
+## <a name="node-type-attribute"></a>Tipo de nodo: Atributo
  Además de las opciones de nodo global descritas anteriormente, el menú contextual para los nodos de atributo tiene las siguientes opciones:
 
 |Opción|Descripción|
@@ -96,7 +95,7 @@ En la tabla siguiente se describen las opciones disponibles para un nodo de conj
 |**Ir al atributo Original**|Para las referencias de atributo, navega a la definición efectiva del atributo.|
 |**Mostrar todas las referencias**|Para los atributos globales, busca y resalta todas las referencias (otros atributos con `ref="selectedAttribute"`) al atributo seleccionado.|
 
-## <a name="node-type-attribute-group"></a>Tipo de nodo: grupo de atributos
+## <a name="node-type-attribute-group"></a>Tipo de nodo: Grupo de atributos
  Además de las opciones de nodo global descritas anteriormente, el menú contextual para los nodos de grupo de atributos tiene las siguientes opciones:
 
 |Opción|Descripción|
@@ -105,7 +104,7 @@ En la tabla siguiente se describen las opciones disponibles para un nodo de conj
 |**Mostrar todos los miembros**|Busca y resalta todos los miembros del grupo de atributos.|
 |**Mostrar todas las referencias**|Busca y resalta todas las referencias (los grupos de atributos con `ref="selectedAttributeGroup"`) al grupo de atributos seleccionado.|
 
-## <a name="node-type-named-group"></a>Tipo de nodo: grupo con nombre
+## <a name="node-type-named-group"></a>Tipo de nodo: Grupo con nombre
  Además de las opciones de nodo global descritas anteriormente, el menú contextual para los nodos de grupo con nombre tiene las siguientes opciones:
 
 |Opción|Descripción|

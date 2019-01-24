@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 07840ab2-3a92-4744-ac87-48b19e0ceecd
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a847777ad3d5b12162eedc8e998098ad20926a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: 37e08c4b9af5c4d870be1ddf7bac0cba677f5cf3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295560"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947756"
 ---
 # <a name="collecting-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>Recopilar estadísticas de la aplicación para los servicios utilizando el método de muestreo del generador de perfiles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ En esta sección se describen los procedimientos y las opciones para recopilar e
   
 |Tarea|Contenido relacionado|  
 |----------|---------------------|  
-|**Adjuntar el generador de perfiles a un servicio de .NET**|-   [Cómo: Adjuntar el generador de perfiles a un servicio de .NET para recopilar estadísticas de la aplicación](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)|  
+|**Adjuntar el generador de perfiles a un servicio de .NET**|-   [Cómo: Asociación del generador de perfiles a un servicio de .NET para recopilar estadísticas de la aplicación](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)|  
 |**Agregar datos de interacción de capas**|-   [Recopilar datos de interacción de capas](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
-|**Adjuntar el generador de perfiles a un servicio de C o C++**|-   [Cómo: Adjuntar el generador de perfiles a un servicio nativo para recopilar estadísticas de la aplicación](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|  
+|**Adjuntar el generador de perfiles a un servicio de C o C++**|-   [Cómo: Asociación del generador de perfiles a un servicio nativo para recopilar estadísticas de la aplicación](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Tareas relacionadas  
   
@@ -52,7 +52,7 @@ En esta sección se describen los procedimientos y las opciones para recopilar e
 |Tarea|Contenido relacionado|  
 |----------|---------------------|  
 |**Generar perfiles de aplicaciones independientes (cliente)**|-   [Recopilar estadísticas de aplicación mediante muestreo](../profiling/collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
-|**Generar perfiles de aplicaciones web ASP.NET**|-   [Recopilar estadísticas de aplicación mediante muestreo](../profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)|  
+|**Generar perfiles de aplicaciones web ASP.NET**|-   [Recopilar estadísticas de aplicación mediante muestreo](/visualstudio/profiling/collecting-concurrency-data-for-an-aspnet-web-application?view=vs-2015)|  
   
 ### <a name="analyzing-sampling-data-views-and-reports"></a>Analizar vistas e informes de datos de muestreo  
  [Vistas de datos del método de muestreo](../profiling/profiler-sampling-method-data-views.md)

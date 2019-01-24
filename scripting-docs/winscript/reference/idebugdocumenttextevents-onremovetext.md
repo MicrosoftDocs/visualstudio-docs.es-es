@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d58e45d6c3bfffae0067c9d53b3df8972deb0500
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 81d7345d0832d0f9bfc6942fa5a27db82b45bb95
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727595"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097206"
 ---
 # <a name="idebugdocumenttexteventsonremovetext"></a>IDebugDocumentTextEvents::onRemoveText
 Indica que se ha quitado el texto del documento.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT onRemoveText(  
    ULONG  cCharacterPosition,  
    ULONG  cNumToRemove  
@@ -42,7 +42,7 @@ HRESULT onRemoveText(
  [in] Quita de la posición del carácter del primer carácter.  
   
  `cNumToRemove`  
- [in] Quita el número de caracteres.  
+ [in] El número de caracteres quitados.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  

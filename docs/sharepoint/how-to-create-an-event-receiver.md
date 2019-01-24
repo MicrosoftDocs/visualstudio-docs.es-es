@@ -1,9 +1,6 @@
 ---
-title: 'Cómo: crear un receptor de eventos | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Crear un receptor de eventos | Documentos de Microsoft
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.SPE.EventReceiver
@@ -20,24 +17,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd4528a47215254684be51400329b05c3998bbab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a9f18bb4399e52c6afbac9b20a7b16d04a39843
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635153"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861577"
 ---
-# <a name="how-to-create-an-event-receiver"></a>Cómo: crear un receptor de eventos
+# <a name="how-to-create-an-event-receiver"></a>Procedimiento Crear un receptor de eventos
   Creando *receptores de eventos*, puede responder cuando un usuario interactúa con los elementos de SharePoint como listas o elementos de lista. Por ejemplo, el código en un receptor de eventos se activan cuando un usuario cambia el calendario o elimina un nombre de una lista de contactos. Siguiendo este tema, aprenderá cómo agregar un receptor de eventos a una instancia de lista.
 
- Para completar estos pasos, debe tener instalado [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] y ediciones compatibles de Windows y SharePoint. Dado que este ejemplo requiere un proyecto de SharePoint, también debe haber completado el procedimiento descrito en el tema [Tutorial: crear una columna de sitio, el tipo de contenido y la lista de SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
+ Para completar estos pasos, debe tener instalado [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] y ediciones compatibles de Windows y SharePoint. Dado que este ejemplo requiere un proyecto de SharePoint, también debe haber completado el procedimiento descrito en el tema [Tutorial: Crear una columna de sitio, el tipo de contenido y la lista de SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
 
 ## <a name="adding-an-event-receiver"></a>Agregar un receptor de eventos
- El proyecto que creó en [Tutorial: crear una columna de sitio, el tipo de contenido y la lista de SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) incluye columnas de sitio personalizadas, una lista personalizada y un tipo de contenido. En el siguiente procedimiento, deberá expandir este proyecto mediante la adición de un controlador de eventos sencillo (un receptor de eventos) a una instancia de lista para mostrar cómo controlar eventos que se producen en los elementos de SharePoint como listas.
+ El proyecto que creó en [Tutorial: Crear una columna de sitio, el tipo de contenido y la lista de SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) incluye columnas de sitio personalizadas, una lista personalizada y un tipo de contenido. En el siguiente procedimiento, deberá expandir este proyecto mediante la adición de un controlador de eventos sencillo (un receptor de eventos) a una instancia de lista para mostrar cómo controlar eventos que se producen en los elementos de SharePoint como listas.
 
 #### <a name="to-add-an-event-receiver-to-the-list-instance"></a>Para agregar un receptor de eventos a la instancia de lista
 
-1.  Abra el proyecto que creó en [Tutorial: crear una columna de sitio, el tipo de contenido y la lista de SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
+1.  Abra el proyecto que creó en [Tutorial: Crear una columna de sitio, el tipo de contenido y la lista de SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
 
 2.  En **el Explorador de soluciones**, elija el nodo de proyecto de SharePoint, que se denomina **Clinic**.
 

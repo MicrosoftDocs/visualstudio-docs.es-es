@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 124a4775593a161b1de7f55465bf20739909e4f8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: 71d249571830ac608bef12c4a47d0243de1859a5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239855"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764073"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>Depuración ASP.NET remota en un equipo remoto de IIS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

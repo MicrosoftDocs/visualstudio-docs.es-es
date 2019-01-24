@@ -12,15 +12,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 545b60f13e86e59143ce0e57f454b13f61041f11
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fae1cf673f47d3be586f83320b2d2c38c817e2cf
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726935"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349223"
 ---
 # <a name="idebugsessionproviderex-interface"></a>IDebugSessionProviderEx (Interfaz)
-La interfaz principal proporcionada por un IDE para habilitar la depuración iniciado por el lenguaje y el host del depurador. Establece una sesión de depuración para una aplicación en ejecución. Esta interfaz se implementa mediante el Administrador de depuración de máquina.  
+La interfaz principal proporcionada por un IDE para habilitar la depuración iniciado por el lenguaje y el host del depurador. Establece una sesión de depuración para una aplicación en ejecución. Esta interfaz se implementa mediante el Administrador de depuración de la máquina.  
   
  Además de los métodos heredados de `IUnknown`, el `IDebugSessionProviderEx` interfaz expone los métodos siguientes.  
   
@@ -28,5 +28,5 @@ La interfaz principal proporcionada por un IDE para habilitar la depuración ini
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IDebugSessionProviderEx:CanJITDebug](../../winscript/reference/idebugsessionproviderex-canjitdebug.md)|Determina si solo en tiempo de depuración es posible con la aplicación especificada.|  
+|[IDebugSessionProviderEx:CanJITDebug](../../winscript/reference/idebugsessionproviderex-canjitdebug.md)|Determina si es posible con la aplicación especificada solo en tiempo de depuración.|  
 |[IDebugSessionProviderEx:StartDebugSession](../../winscript/reference/idebugsessionproviderex-startdebugsession.md)|Inicia una sesión de depuración con la aplicación especificada.|

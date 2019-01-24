@@ -34,15 +34,15 @@ helpviewer_keywords:
 - applications, designing
 ms.assetid: c9f04cfa-72bd-419d-a952-616eed01472e
 caps.latest.revision: 129
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 070ee6a2f948bc808961e35735fea88882d68880
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1b7d7f9f478e85229eaa72ab04d12b6b542cbab5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278361"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781041"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analizar y modelar la arquitectura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

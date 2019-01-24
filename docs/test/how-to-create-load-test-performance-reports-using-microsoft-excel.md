@@ -1,5 +1,5 @@
 ---
-title: Creación de informes de rendimiento de la prueba de carga de Visual Studio con Microsoft Excel
+title: Creación de informes de rendimiento de pruebas de carga con Microsoft Excel
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +10,20 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 51ccfcc6750be7f24acd88c07fa53537f43cdfab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 95f184628af5b56845f76d1c7279608b6826c151
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861922"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826792"
 ---
-# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Cómo: Crear informes de rendimiento de pruebas de carga con Microsoft Excel
+# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Procedimiento para crear informes de rendimiento de pruebas de carga con Microsoft Excel
 
-Puede generar informes de prueba de carga de Microsoft Excel basados en dos o más resultados de pruebas. Están disponibles dos informes de prueba de carga:
+Puede generar informes de prueba de carga de Microsoft Excel basados en dos o más resultados de pruebas.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Están disponibles dos informes de prueba de carga:
 
 -   **Ejecutar comparación** Crea un conjunto de informes que compara los datos de dos resultados de pruebas de carga usando tablas y gráficos de barras.
 
@@ -45,7 +48,7 @@ La siguiente ilustración es un ejemplo de un informe que muestra una correlaci�
 Los informes de Excel se pueden generar en el **Analizador de pruebas de carga**, con el botón **Crear informe en Excel** de la barra de herramientas o desde Excel, con la opción **Cargar informe de pruebas** de la pestaña **Prueba de carga** de la cinta de opciones de **Office**.
 
 > [!NOTE]
-> Si agrega comentarios a una prueba de carga, aparecerán en el informe de Excel. Para obtener más información, vea [Cómo: Agregar comentarios mientras se analiza una prueba de carga completada](../test/how-to-add-comments-on-a-completed-load-test.md).
+> Si agrega comentarios a una prueba de carga, aparecen en el informe de Excel.
 
 ## <a name="to-generate-load-test-comparison-reports-using-excel"></a>Para generar informes de comparación de pruebas de carga mediante Excel
 

@@ -1,8 +1,6 @@
 ---
 title: Get_databytes | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 98febaa0d72071ac990cb88cec2d56845b3e9d67
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 3261c6331e1651b618b710116737bef5b465ec27
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911829"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966364"
 ---
 # <a name="idiasymbolgetdatabytes"></a>IDiaSymbol::get_dataBytes
 Recupera los bytes de datos de un símbolo de OEM.  
@@ -27,7 +25,7 @@ Recupera los bytes de datos de un símbolo de OEM.
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT get_dataBytes (   
+HRESULT get_dataBytes (   
    DWORD  cbData,  
    DWORD* pcbData,  
    BYTE   data[]  
@@ -54,7 +52,7 @@ HRESULT get_dataBytes (
   
 |Requisito|Descripción|  
 |-----------------|-----------------|  
-|Encabezado:|Dia2.h|  
+|Encabezado:|dia2.h|  
 |Versión:|SDK de DIA v7.0|  
   
 ## <a name="see-also"></a>Vea también  

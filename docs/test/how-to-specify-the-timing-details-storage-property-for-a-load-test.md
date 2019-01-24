@@ -1,5 +1,5 @@
 ---
-title: Propiedad Almacenamiento de detalles de tiempo de un parámetro de ejecución de una prueba de carga en Visual Studio
+title: Propiedad Almacenamiento de detalles de tiempo de un parámetro de ejecución de una prueba de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,26 +10,27 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 5d5e378e62f03208c620669fada783fc5fdfb1b1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43975e57e37a16522b483990c83d0db22a6eb27d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842175"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896076"
 ---
-# <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Cómo: Especificar la propiedad Almacenamiento de detalles de tiempo de un parámetro de ejecución de una prueba de carga
+# <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Procedimiento para especificar la propiedad Almacenamiento de detalles de tiempo de los parámetros de ejecución de una prueba de carga
 
 Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar la configuración de modo que satisfaga las necesidades y los objetivos de la prueba.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 Puede editar el valor de la propiedad **Almacenamiento de detalles de tiempo** de los parámetros de ejecución en la ventana **Propiedades**. La propiedad **Almacenamiento de detalles de tiempo** se puede establecer en cualquiera de las opciones siguientes:
 
-- **Todos los detalles individuales:** recopila y almacena datos de tiempo individuales de cada prueba, transacción y página emitidos durante la prueba.
+- **Todos los detalles individuales:** recopila y almacena los datos de tiempo individuales de cada prueba, transacción y página emitidos durante la prueba.
 
   > [!NOTE]
   > La opción **Todos los detalles individuales** debe estar seleccionada para permitir que aparezcan los datos de usuarios virtuales en los resultados de pruebas de carga. Para obtener más información, vea [Analizar la actividad de usuario virtual de prueba de carga en la vista Detalles del Analizador de prueba de carga](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
-- **Ninguno:** no recopila detalles de tiempo individuales. Sin embargo, los valores promedio todavía están disponibles.
+- **Ninguno:** no recopila datos de tiempo individuales. Sin embargo, los valores promedio todavía están disponibles.
 
 - **Solo estadísticas:** almacena datos de tiempo individuales, pero solo como datos de percentil. De este modo, se ahorra espacio.
 
@@ -57,9 +58,9 @@ Puede editar el valor de la propiedad **Almacenamiento de detalles de tiempo** d
 
 5.  En la categoría **Resultados**, elija la propiedad **Almacenamiento de detalles de tiempo** y seleccione **Todos los detalles individuales**.
 
-     Después de haber configurado el valor **Todos los detalles individuales** de la propiedad **Almacenamiento de detalles de tiempo**, puede ejecutar la prueba de carga y ver el **Diagrama de actividad del usuario virtual**. Para obtener más información, vea [Cómo: Analizar lo que hacen los usuarios virtuales durante una prueba de carga mediante el Diagrama de actividad de los usuarios virtuales](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md).
+     Después de haber configurado el valor **Todos los detalles individuales** de la propiedad **Almacenamiento de detalles de tiempo**, puede ejecutar la prueba de carga y ver el **Diagrama de actividad del usuario virtual**. Para obtener más información, vea [Cómo: Analizar lo que hacen los usuarios virtuales durante una prueba de carga](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md).
 
 ## <a name="see-also"></a>Vea también
 
 - [Analizar la actividad de usuario virtual de prueba de carga en la vista Detalles del Analizador de prueba de carga](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
-- [Tutorial: Usar el Diagrama de actividad del usuario virtual para aislar problemas de rendimiento](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)
+- [Tutorial: Uso del diagrama de actividad del usuario virtual para aislar problemas](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

@@ -1,32 +1,31 @@
 ---
 title: Referencia general (desarrollo de Office en Visual Studio)
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 helpviewer_keywords:
 - Office development in Visual Studio, reference
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f32dedf1b0f431f3385c14f7c0d4d5ddd27982a9
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: ec7b021c1eddff17ccc5687ec3d16f765838d062
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548431"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933183"
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Referencia general (desarrollo de Office en Visual Studio)
   Esta sección contiene detalles técnicos acerca de los proyectos de Microsoft Office en Visual Studio.  
   
 > [!NOTE]  
->  ¿Está interesado en el desarrollo de soluciones que amplían la experiencia de Office en [varias plataformas](https://dev.office.com/add-in-availability)? Visite la nueva [modelo de complementos de Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Complementos de Office tienen una superficie pequeña en comparación con las soluciones y complementos VSTO, y puede compilarlas mediante prácticamente cualquier tecnología, como HTML5, JavaScript, CSS3 y XML de programación web.  
+>  ¿Está interesado en desarrollar soluciones que amplían la experiencia de Office a través de [varias plataformas](https://dev.office.com/add-in-availability)? Visite el nuevo [modelo de complementos de Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Complementos de Office tienen una superficie pequeña en comparación con las soluciones y complementos VSTO, y puede crearlas con prácticamente cualquier tecnología, como HTML5, CSS3, JavaScript y XML de programación web.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Ensamblados de interoperabilidad primarios de Office](../vsto/office-primary-interop-assemblies.md)  
@@ -36,22 +35,20 @@ ms.locfileid: "34548431"
  Describe cómo se utilizan los manifiestos de aplicación en soluciones de Office.  
   
  [Manifiestos de implementación para soluciones de Office](../vsto/deployment-manifests-for-office-solutions.md)  
- Describe cómo los manifiestos de implementación se usa las soluciones de Office.  
+ Describe cómo los manifiestos de implementación se usan las soluciones de Office.  
   
  [Referencia de la interfaz de usuario &#40;desarrollo de Office en Visual Studio&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)  
- Enumera los temas que explican las opciones que aparecen en varios cuadros de diálogo, ventanas y otras interfaces de usuario.  
+ Enumera temas que explican las opciones que aparecen en varios cuadros de diálogo, windows y otras interfaces de usuario.  
   
- [Mensajes de error &#40;desarrollo de Office en Visual Studio&#41;](../vsto/error-messages-office-development-in-visual-studio.md)  
- Muestra temas que explican los mensajes de error para los proyectos de Office.  
+ [Los mensajes de error &#40;desarrollo de Office en Visual Studio&#41;](../vsto/error-messages-office-development-in-visual-studio.md)  
+ Enumera temas que explican los mensajes de error para los proyectos de Office.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
- [Introducción &#40;desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
- Proporciona vínculos a información sobre el programa de instalación, plantillas de proyecto, ensamblados de interoperabilidad primarios de Office y novedades en el desarrollo de Office.  
+ [Introducción a &#40;desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ Proporciona vínculos a información sobre el programa de instalación, las plantillas de proyecto, los ensamblados de interoperabilidad primarios de Office y novedades de desarrollo de Office.  
   
  [Tutoriales y ejemplos de desarrollo de office](../vsto/office-development-samples-and-walkthroughs.md)  
- Describe los ejemplos de código y los tutoriales paso a paso para crear proyectos de Office en Visual Studio, lo que puede ayudarle a aprender y experimentar con la sintaxis, estructura y técnicas usadas para compilar soluciones de Office.  
+ Describe los ejemplos de código y tutoriales paso a paso para crear proyectos de Office en Visual Studio, que puede ayudarle a aprender y experimentar con la sintaxis, estructura y las técnicas utilizadas para compilar soluciones de Office.  
   
  [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)  
- Proporciona vínculos a información acerca de cómo empezar a crear proyectos de Office en Visual Studio.  
-  
-  
+ Proporciona vínculos a información sobre cómo empezar a crear proyectos de Office en Visual Studio.  

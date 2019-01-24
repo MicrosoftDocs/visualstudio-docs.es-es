@@ -13,15 +13,15 @@ helpviewer_keywords:
 - performance tools, limiting instrumentation to functions
 ms.assetid: bd98d6bf-2560-4eba-b063-2facb09f87c4
 caps.latest.revision: 24
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f06408b65d3cda1f2ee807daac7ab39ce2182a90
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c7fa666c42d31035bd42841a2bbb41221bc16b5e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891785"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782575"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>Cómo: Limitar la instrumentación a funciones específicas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ La instrumentación y recopilación de datos se pueden limitar a una o más func
   
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`  
   
-    `FuncSpec` es el nombre del espacio de nombres y la función. Tiene el formato `Namespace`**::**`FunctionName`. Use un signo de punto y coma para separar varias funciones. Use un asterisco (\*) para especificar un carácter comodín para uno o más caracteres. Por ejemplo, **/ include: MyNS::\\*** especifica todas las funciones en el espacio de nombres MyNS.  
+    `FuncSpec` es el nombre del espacio de nombres y la función. Tiene el formato `Namespace`**::**`FunctionName`. Use un signo de punto y coma para separar varias funciones. Use un asterisco (\*) para especificar un carácter comodín para uno o más caracteres. Por ejemplo, **-include:MyNS::\\*** especifica todas las funciones en el espacio de nombres MyNS.  
   
    > [!NOTE]
    >  Para obtener una lista de las funciones en un archivo binario, abra una ventana de símbolo del sistema en el directorio de instalación de herramientas de generación de perfiles (normalmente, el directorio \Team Tools\Performance Tools en el directorio de instalación de [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]) y después escriba **vsinstr /DumpFuncs**  
@@ -68,7 +68,7 @@ La instrumentación y recopilación de datos se pueden limitar a una o más func
   
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`  
   
-    `FuncSpec` es el nombre del espacio de nombres y la función. Tiene el formato `Namespace`**::**`FunctionName`. Use un signo de punto y coma para separar varias funciones. Use un asterisco (\*) para especificar un carácter comodín para uno o más caracteres. Por ejemplo, **/ include: MyNS::\\*** especifica todas las funciones en el espacio de nombres MyNS.  
+    `FuncSpec` es el nombre del espacio de nombres y la función. Tiene el formato `Namespace`**::**`FunctionName`. Use un signo de punto y coma para separar varias funciones. Use un asterisco (\*) para especificar un carácter comodín para uno o más caracteres. Por ejemplo, **-include:MyNS::\\*** especifica todas las funciones en el espacio de nombres MyNS.  
   
    > [!NOTE]
    >  Para obtener una lista de las funciones en un archivo binario, abra una ventana de símbolo del sistema en el directorio de instalación de herramientas de generación de perfiles (normalmente, el directorio \Team Tools\Performance Tools en el directorio de instalación de [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]) y después escriba **vsinstr /DumpFuncs**  

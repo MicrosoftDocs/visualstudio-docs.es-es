@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1da2f68de40a66b98b97ab7c7eb1d63748f1e07a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b45fc7be1a5178e952fefcd794171410d149a1f4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733645"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090030"
 ---
 # <a name="iscriptnodegetparent"></a>IScriptNode::GetParent
 Devuelve el `IScriptNode` objeto que es el elemento primario de un objeto.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT GetParent(  
    IScriptNode       **ppsnParent  
 );  
@@ -38,14 +38,14 @@ HRESULT GetParent(
   
 #### <a name="parameters"></a>Parámetros  
  `ppsnParent`  
- [out] La dirección de una variable que recibe un puntero a la `IScriptNode` interfaz de la instancia primaria.  
+ [out] La dirección de una variable que recibe un puntero a la `IScriptNode` interfaz de la instancia principal.  
   
  Si la clase implementa `IScriptEntry` o `IScriptScriptlet`, un `IScriptNode` se devuelve el objeto.  
   
  Si la clase implementa `IScriptNode` (que representa una página Web), se devuelve NULL.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
+ Una clase `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
