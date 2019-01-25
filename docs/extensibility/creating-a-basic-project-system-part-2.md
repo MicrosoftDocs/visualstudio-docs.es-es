@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d54e8833389d110efdcefd8d437645ef5824d8f6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c4daab3ef0a045e1c352f170282db5e0189da3b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967779"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800053"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Crear un sistema de proyectos básico, parte 2
 El primer tutorial de esta serie, [crear un sistema de proyectos básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md), se muestra cómo crear un sistema de proyectos básico. En este tutorial se basa en el sistema de proyectos básico mediante la adición de una plantilla de Visual Studio, una página de propiedades y otras características. Debe completar el primer tutorial antes de iniciar esta.  
@@ -339,7 +339,7 @@ ZipProjects:
     }  
     ```  
   
-## <a name="creatr-a-project-property-page"></a>Creatr una página de propiedades del proyecto  
+## <a name="create-a-project-property-page"></a>Crear una página de propiedades del proyecto  
  Puede crear una página de propiedades para el tipo de proyecto para que los usuarios pueden ver y cambiar las propiedades de los proyectos que se basan en la plantilla. En esta sección se muestra cómo crear una página de propiedades independientes de la configuración. Esta página de propiedades básica usa una cuadrícula de propiedades para mostrar las propiedades públicas que se exponen en la clase de página de propiedades.  
   
  Derive la clase de página de propiedades de la `SettingsPage` clase base. La cuadrícula de propiedades proporcionada por el `SettingsPage` clase es compatible con los tipos de datos más primitivos y sabe cómo mostrarlos.  Además, el `SettingsPage` clase sabe cómo conservar los valores de propiedad al archivo de proyecto.  

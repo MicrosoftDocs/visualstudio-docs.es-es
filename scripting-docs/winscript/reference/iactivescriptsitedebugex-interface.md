@@ -14,20 +14,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c1e462630f7bf52c4ca94aa59df22616e9a335a7
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: e390b610d6912de0078b817c9dfb503e5924a374
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345882"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797435"
 ---
 # <a name="iactivescriptsitedebugex-interface"></a>IActiveScriptSiteDebugEx (Interfaz)
-Implemente esta interfaz junto con el `IActiveScriptSiteDebug` si está escribiendo un host que necesita para recibir una notificación de un error de tiempo de ejecución en una aplicación y, opcionalmente, asociar a la aplicación para la depuración de la interfaz. El Administrador de depuración de procesos proporciona una notificación a través de `IActiveScriptDebug` si el depurador de scripts de Just-In-Time se encuentra en el equipo. Si el depurador de scripts no Just-In-Time es que se encuentra el PDM proporciona una notificación a través de `IActiveScriptDebugEx` en su lugar.  
-  
- Para obtener una notificación de un error de tiempo de ejecución, debe controlar el host [ActiveScriptSiteDebug::OnScriptErrorDebug](http://msdn.microsoft.com/en-us/cf7639f9-a699-4571-9f3a-82ef52c0b5f4). En función de una acción del usuario, puede, a continuación, decidir si desea adjuntar el depurador interno y el valor devuelto, o para devolver el inicio del depurador en el OnScriptErrorDebug `pfEnterDebugger` parámetro.  
-  
-## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
-  
-|Método|Descripción|  
-|------------|-----------------|  
+
+Implemente esta interfaz junto con el `IActiveScriptSiteDebug` si está escribiendo un host que necesita para recibir una notificación de un error de tiempo de ejecución en una aplicación y, opcionalmente, asociar a la aplicación para la depuración de la interfaz. El Administrador de depuración de procesos proporciona una notificación a través de `IActiveScriptDebug` si el depurador de scripts de Just-In-Time se encuentra en el equipo. Si el depurador de scripts no Just-In-Time es que se encuentra el PDM proporciona una notificación a través de `IActiveScriptDebugEx` en su lugar.
+
+Para obtener una notificación de un error de tiempo de ejecución, debe controlar el host `ActiveScriptSiteDebug::OnScriptErrorDebug`. En función de una acción del usuario, puede, a continuación, decidir si desea adjuntar el depurador interno y el valor devuelto, o para devolver el inicio del depurador en el OnScriptErrorDebug `pfEnterDebugger` parámetro.
+
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable
+
+|Método|Descripción|
+|------------|-----------------|
 |[IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug](../../winscript/reference/iactivescriptsitedebugex-oncannotjitscripterrordebug.md)|Informa al host un error de tiempo de ejecución de secuencia de comandos cuando el proceso de administrador de depuración no encuentra a un depurador externo de solo tiempo.|
