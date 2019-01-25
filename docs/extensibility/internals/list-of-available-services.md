@@ -11,24 +11,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cd076e19a1732309a07feccca899669741b6482
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95eff5fee76b755ba30d6ec5b74d990b2b250f72
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964642"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800961"
 ---
 # <a name="list-of-available-services"></a>Lista de servicios disponibles
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y el SDK de Visual Studio admite los siguientes servicios. Algunos paquetes ofrecen sus propios servicios que no se muestran aquí, por ejemplo, servicios de lenguaje no tiene un servicio único GUID. Debe usar el nombre del idioma para encontrar el GUID del servicio de lenguaje en el registro.  
-  
- Utilice los GUID de servicio enumerados aquí u obtenida de algún otro origen (por ejemplo, servicios de lenguaje) para obtener la interfaz principal o interfaces que se muestran con cada servicio.  
-  
-## <a name="the-services"></a>Los servicios  
-  
+
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y el SDK de Visual Studio admite los siguientes servicios. Algunos paquetes ofrecen sus propios servicios que no se muestran aquí, por ejemplo, servicios de lenguaje no tiene un servicio único GUID. Debe usar el nombre del idioma para encontrar el GUID del servicio de lenguaje en el registro.
+
+Utilice los GUID de servicio enumerados aquí u obtenida de algún otro origen (por ejemplo, servicios de lenguaje) para obtener la interfaz principal o interfaces que se muestran con cada servicio.
+
+## <a name="the-services"></a>Los servicios
+
 | web de Office | Interfaz | Programa para la mejora | Visual Studio 2005 | Descripción |
 | - | - |---------------|--------------------| - |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SBindHost> | <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> | Sí | Sí | Lo usan los VSPackages para obtener un <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> interfaz desde un control ActiveX para facilitar las transferencias de datos asincrónica. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | No | Sí | Obtiene el objeto de extensibilidad de tiempo de diseño (DTE) usado para la automatización.<br /><br /> ID. DE C O C++: SID_SDTE |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | No | Sí | Obtiene el objeto de extensibilidad de tiempo de diseño (DTE) usado para la automatización.<br /><br /> C/C++ ID: SID_SDTE |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SCodeNavigate> | <xref:Microsoft.VisualStudio.Shell.Interop.ICodeNavigate> | Sí | Sí | Implementado por un diseñador de formularios para mostrar el controlador de eventos predeterminado para un control. |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SContainerDispatch> | IDispatch | Sí | Sí | Habilita un VSPackage tener acceso a la interfaz de automatización de un control o de otro VSPackage. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SExtendedTypeLib> | <xref:Microsoft.VisualStudio.Shell.Interop.IExtendedTypeLib> | Sí | Sí | Habilita un VSPackage agregar o crear una biblioteca de tipos extendidos. |
@@ -156,7 +157,7 @@ ms.locfileid: "53964642"
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebURLMRU> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebURLMRU> | Sí | Sí | Habilita un VSPackage para agregar una dirección URL a la lista usados más recientemente (MRU) de las direcciones URL y obtener una lista de todas las direcciones URL en la lista MRU. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> | Sí | Sí | Habilita un VSPackage para obtener el marco de ventana en la que puede situarse el paquete o elemento del paquete. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService> | Sí | Sí | Proporciona acceso a los archivos de documentación XML con formato asociado a un archivo de metadatos determinado. |
-  
-## <a name="see-also"></a>Vea también  
- [COM y los servicios administrados](http://msdn.microsoft.com/en-us/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
- [Uso y provisión de servicios](../../extensibility/using-and-providing-services.md)
+
+## <a name="see-also"></a>Vea también
+
+- [Uso y provisión de servicios](../../extensibility/using-and-providing-services.md)
