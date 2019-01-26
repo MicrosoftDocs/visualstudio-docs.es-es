@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2f61bce5b54dc877117af71b07dc0bfc1fdd8b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 76128710c377a6b9ec16f05064736b241ed0edba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893531"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954428"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Compatibilidad con las propiedades de proyecto y configuración
 El **propiedades** ventana en la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE) puede mostrar las propiedades de configuración y el proyecto. Puede proporcionar una página de propiedades para su propio tipo de proyecto para que el usuario puede establecer las propiedades de la aplicación.  

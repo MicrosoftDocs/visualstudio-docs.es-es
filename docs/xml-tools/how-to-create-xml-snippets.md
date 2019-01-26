@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec6332f52e732e99cc6d81512c9b3c469e99e18e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ad0414974946fefe9ab473d120be10deda4b9471
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829107"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920687"
 ---
 # <a name="how-to-create-xml-snippets"></a>Procedimiento Crear fragmentos XML
 

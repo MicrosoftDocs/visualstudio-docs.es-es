@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7d397207-db03-4ec0-9f79-3794056ed89f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 554bc8171de759ce1c79e563bdccf093be31af04
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3ad8b989b916e668fede0f8193c124d05785fd46
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914710"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922670"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 Describe las propiedades de un subproceso.  

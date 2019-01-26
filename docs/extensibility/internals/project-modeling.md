@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: c8db8fdb-88c1-4b12-86fe-f3c30a18f9ee
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d835ee2062a6feec2fbb13991cc448b0b0b7b7a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da49deb7d4cf73ab3f70f5b55e1ceeef005c9f03
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968383"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927364"
 ---
 # <a name="project-modeling"></a>Modelado de proyectos
 El siguiente paso en la provisión de automatización para el proyecto consiste en implementar los objetos de proyecto estándar: la <xref:EnvDTE.Projects> y `ProjectItems` colecciones; el `Project` y <xref:EnvDTE.ProjectItem> objetos; y los demás objetos únicos de su implementación. Estos objetos estándares se definen en el archivo Dteinternal.h. En el ejemplo BscPrj se proporciona una implementación de los objetos estándar. Puede utilizar estas clases como modelos para crear sus propios objetos de proyecto estándar independiente en paralelo con objetos de proyectos de otros tipos de proyecto.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 375afb8c-882d-44db-bfa7-e2c9eb555122
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7282a7bd57397f6dc1a09dac44dfb0cdfcf9078
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f4fc77748e456a612130de4b8f814ea7ba491f22
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915973"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021850"
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
 Escribe un volcado de memoria en un archivo.  

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad112d34c8f23a7738137f148f00a38a27335424
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 16f54bd3bfd2fc6ce0b16ee8fbf849974d53884d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966565"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965697"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Agregar una extensión del protocolo de servidor de lenguaje
 
@@ -48,19 +48,19 @@ Mensaje | Tiene compatibilidad en Visual Studio
 inicializar | sí
 inicializado | sí
 cierre | sí
-salir | sí
-$/ cancelRequest | sí
-ventana/showMessage | sí
-ventana/showMessageRequest | sí
-ventana/logMessage | sí
+exit | sí
+$/cancelRequest | sí
+window/showMessage | sí
+window/showMessageRequest | sí
+window/logMessage | sí
 evento de telemetría / |
-cliente/registerCapability |
-cliente/unregisterCapability |
-área de trabajo/didChangeConfiguration | sí
-área de trabajo/didChangeWatchedFiles | sí
-área de trabajo/símbolo | sí
-área de trabajo/executeCommand | sí
-área de trabajo/applyEdit | sí
+client/registerCapability |
+client/unregisterCapability |
+workspace/didChangeConfiguration | sí
+workspace/didChangeWatchedFiles | sí
+workspace/symbol | sí
+workspace/executeCommand | sí
+workspace/applyEdit | sí
 textDocument/publishDiagnostics | sí
 textDocument/didOpen | sí
 textDocument/didChange | sí
@@ -68,22 +68,22 @@ textDocument/willSave |
 textDocument/willSaveWaitUntil |
 textDocument/didSave | sí
 textDocument/didClose | sí
-textDocument/finalización | sí
+textDocument/completion | sí
 finalización o resolver | sí
-textDocument o mantener el mouse | sí
+textDocument/hover | sí
 textDocument/signatureHelp | sí
-textDocument/referencias | sí
+textDocument/references | sí
 textDocument/documentHighlight | sí
 textDocument/documentSymbol | sí
-textDocument/formato | sí
+textDocument/formatting | sí
 textDocument/rangeFormatting | sí
 textDocument/onTypeFormatting |
-textDocument/definición | sí
+textDocument/definition | sí
 textDocument/codeAction | sí
 textDocument/codeLens |
-codeLens o resolver |
+codeLens/resolve |
 textDocument/documentLink |
-documentLink o resolver |
+documentLink/resolve |
 textDocument/rename | sí
 
 ## <a name="getting-started"></a>Introducción

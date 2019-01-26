@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98b5069a6b3709b467386a5424fded0809367a44
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a5b56426b54da6d869aa5fdef2564d83fc501828
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872233"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962685"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Interfaces y campos de la ventana Propiedades
 El modelo de selección determinar qué información se muestra en el **propiedades** ventana se basa en la ventana que tiene el foco en el IDE. Cada ventana y el objeto dentro de la ventana seleccionada, pueden tener su objeto de contexto de selección insertado en el contexto de selección global. El entorno actualiza el contexto de selección global con los valores de un marco de ventana cuando esa ventana tiene el foco. Cuando el foco cambia, también lo hace el contexto de selección.  
@@ -110,7 +110,7 @@ STDAPI DLLGetDocumentation
   
  Para obtener cadenas que aparezcan en el panel **Descripciones** , por tanto, lo mínimo que debe hacer es especificar el atributo `helpstring` en la biblioteca de tipos. Si quiere que estas cadenas se localicen, debe especificar el atributo `helpstringdll` (opcional) y el atributo `helpstringcontext` (obligatorio) e implementar `DLLGetDocumentation`.  
   
- No hay interfaces adicionales que deban implementarse al obtener información localizada a través del atributo `helpstringcontext` y la función `DLLGetDocumentation` del archivo .idl.  
+ No hay interfaces adicionales que deban implementarse al obtener información localizada a través del atributo `helpstringcontext` y la función `DLLGetDocumentation`del archivo .idl.  
   
  Otra manera de obtener el nombre y la descripción localizados de una propiedad es implementar <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.GetLocalizedPropertyInfo%2A>. Para obtener más información sobre la implementación de este método, consulte [Properties Window Fields and Interfaces](../../extensibility/internals/properties-window-fields-and-interfaces.md).  
 

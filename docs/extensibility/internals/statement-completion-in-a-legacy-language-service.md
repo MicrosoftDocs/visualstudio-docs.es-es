@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cea1348dd78197333aa41c6c51aba320e5d762b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0310f515a444d0ff68fe971463602c484763848b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991154"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965684"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Finalización de instrucciones en un servicio de lenguaje heredado
 Finalización de instrucciones es el proceso por el que el servicio de lenguaje ayuda a los usuarios finalizar una palabra clave del lenguaje o el elemento que se haya iniciado escribiendo en el editor básico. Este tema describe cómo funciona la finalización de instrucciones y cómo implementarlo en su servicio de lenguaje.  

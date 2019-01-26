@@ -11,22 +11,22 @@ helpviewer_keywords:
 ms.assetid: 6f9d36f5-ae23-4a92-8132-b11799e2c21a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36c3f8ef1e8016fd1ab46cb61f5e076afdd4190a
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 93cbde61c4030a53819f42c65fca386174ac57d0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562287"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036035"
 ---
 # <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp (elemento) (plantillas de Visual Studio)
 Especifica el número de categorías primarias que mostrará la plantilla en el **nuevo proyecto** cuadro de diálogo.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<NumberOfParentCategoriesToRollUp >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<NumberOfParentCategoriesToRollUp>  
   
 ## <a name="syntax"></a>Sintaxis  
   

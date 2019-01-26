@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc48dc471dab06bf18c0edf622cfa18e7159eaab
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bac2f7e5611e8e87dd3ad6c268c0fd2ea6292c14
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895264"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924196"
 ---
 # <a name="extern-element"></a>Extern (elemento)
 El elemento externo hace referencia a cualquier encabezado externo (*.h*) archivos para combinar con el *.vsct* archivo en tiempo de compilación. Los archivos que van a combinarse deben estar en la ruta de acceso de inclusión especificado para el compilador VSCT o al que hace referencia un [elemento Include](../extensibility/include-element.md). Es pueden que los archivos de otros *.vsct* archivos o archivos de encabezado de C++.  
@@ -43,7 +43,7 @@ Extern (Elemento)
 |---------------|-----------------|  
 |href|Obligatorio. La ruta de acceso al archivo de encabezado:<br /><br /> href="stdidcmd.h"|  
 |Condición|Opcional. Consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-|lenguaje|Opcional. El idioma predeterminado de todos los [ \<cadenas >](../extensibility/strings-element.md) elementos en la tabla de comandos:<br /><br /> Language = "en-us"|  
+|lenguaje|Opcional. El idioma predeterminado de todos los [ \<cadenas >](../extensibility/strings-element.md) elementos en la tabla de comandos:<br /><br /> language="en-us"|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
   

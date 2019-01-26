@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9eff9cb08c07c33ff2af707501f1ee6fac2e01da
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95f691e0bfc73c7ce5f1f87d441dbf083173b6c0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914749"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955123"
 ---
 # <a name="windows-installer-basics"></a>Datos básicos de Windows Installer
 El instalador de Windows se instala y desinstala las aplicaciones o productos de software en el equipo del usuario, realizar estas tareas en unidades denominadas componentes del instalador de Windows (a veces denominados WICs o simplemente componentes). Un GUID identifica cada WIC, que es la unidad básica de la instalación y el recuento de referencias para configuraciones mediante Windows Installer.  
@@ -50,7 +50,7 @@ El instalador de Windows se instala y desinstala las aplicaciones o productos de
  Paquete (paquete redistribuible)  
  Una unidad de implementación que consta de un archivo .msi y archivos de origen externo a la que puede indicar este archivo. Un paquete contiene toda la información que necesita Windows Installer para ejecutar la interfaz de usuario y para instalar o desinstalar la aplicación.  
   
- archivo .msi  
+ .msi File  
  Un archivo de almacenamiento estructurado COM que contiene las instrucciones y los datos necesarios para instalar una aplicación. Cada paquete contiene al menos un archivo MSI. El archivo .msi contiene la base de datos de instalador, una secuencia de información de resumen y posiblemente una o varias transformaciones y los archivos de origen interno. Que se instalen archivos pueden se comprimen en un archivador y almacenarse en una secuencia en el archivo .msi o almacenados, comprimidos o sin comprimir, fuera del archivo .msi en el medio de origen. Para obtener más información, consulte [extensiones de archivo de Windows Installer](/windows/desktop/Msi/windows-installer-file-extensions).  
   
 ## <a name="windows-installer-rules-enforcement"></a>Cumplimiento de las reglas de Windows Installer  
