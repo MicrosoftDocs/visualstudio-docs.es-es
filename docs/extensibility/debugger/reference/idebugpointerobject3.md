@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 11d26af4-1079-435e-96fa-d5269cbea8eb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53ade07e2a252260cf687c9bce361f692d5ed741
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e5d6707a84e3a9a019b427ee5f1289af9425b941
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889402"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934223"
 ---
 # <a name="idebugpointerobject3"></a>IDebugPointerObject3
 > [!IMPORTANT]
@@ -40,7 +40,7 @@ IDebugPointerObject3 : IDebugPointerObject
 |[GetPointerAddress](../../../extensibility/debugger/reference/idebugpointerobject3-getpointeraddress.md)|Recupera la dirección del puntero.|  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: EE.h  
+ Encabezado: Ee.h  
   
  Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
