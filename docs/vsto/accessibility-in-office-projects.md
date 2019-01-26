@@ -13,15 +13,15 @@ helpviewer_keywords:
 - accessibility [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 32d44c33192d9d4e4fdcf1b8db8cb47102a1df61
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 99deac9a1a6587d345d288123029a5e3dde4308b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833331"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865858"
 ---
 # <a name="accessibility-in-office-projects"></a>Accesibilidad en proyectos de Office
 

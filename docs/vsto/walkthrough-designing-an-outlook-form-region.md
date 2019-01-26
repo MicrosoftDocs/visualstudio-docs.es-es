@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - form regions [Office development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c7c14b7702acff281ab32483930559b5fe521044
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5c066f3673f6f51b01ebf00e9f594551fee03641
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942377"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867369"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Tutorial: Diseñar un formulario de Outlook
   Las áreas de formulario personalizadas extienden los formularios estándar o personalizados de Microsoft Office Outlook. En este tutorial diseñará un área de formulario personalizada que aparece como una nueva página en la ventana del inspector de un elemento de contacto. Esta área de formulario muestra una asignación de cada dirección incluida para el contacto, enviando la información de la dirección al sitio web de búsqueda local de Windows Live. Para obtener información acerca de las áreas de formulario, consulte [crear áreas de formulario](../vsto/creating-outlook-form-regions.md).  
@@ -153,8 +153,8 @@ ms.locfileid: "53942377"
   
     |Tipo de dirección|Dirección|  
     |------------------|-------------|  
-    |**Business**|**4567 Main St. Madrid**|  
-    |**Página principal**|**1234 Norte St. Madrid**|  
+    |**Business**|**4567 Main St. Buffalo, NY**|  
+    |**Página principal**|**1234 North St. Buffalo, NY**|  
     |**Otros problemas**|**3456 Main St. Seattle, WA**|  
   
 4.  Guarde y cierre el elemento de contacto.  

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - spelling checker, documents
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 19dc596851ba8ca8b2ea3ef50e7d151220354e3b
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 78e0819650f7e7156f4f957312425e7853c20c77
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54087768"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875711"
 ---
 # <a name="how-to-programmatically-check-spelling-in-documents"></a>Procedimiento Ortografía en documentos mediante programación
   Para comprobar la ortografía de un documento, use el <xref:Microsoft.Office.Interop.Word._Application.CheckSpelling%2A> método. Este método devuelve un valor booleano que indica si el parámetro proporcionado está correctamente escrito.  

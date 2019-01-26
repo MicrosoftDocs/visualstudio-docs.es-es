@@ -9,17 +9,17 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <vstoRuntime> element
 - <vstoRuntime> element
 - vstoRuntime element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c5562bdfa8c9cce8e9490392ad81a7e2e697160c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 98f483748cce9c3a053c800f9bdd6e0f3d651da2
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930705"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876205"
 ---
 # <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;vstoRuntime&gt; elemento (desarrollo de Office en Visual Studio)
   El elemento `vstoRuntime` del espacio de nombres `vstav3` contiene una versión compatible de Visual Studio Tools para Office Runtime para una solución de Office concreta.
@@ -33,7 +33,7 @@ ms.locfileid: "53930705"
     supportUrl />
 ```
 
-## <a name="elements-and-attributes"></a>Los elementos y atributos
+## <a name="elements-and-attributes"></a>Elementos y atributos
  El elemento `vstoRuntime` es obligatorio y se encuentra en el espacio de nombres `vstav3` . Si una solución de Office admite dos versiones de Visual Studio Tools para Office Runtime, hay dos elementos `vstoRuntime` en el manifiesto de aplicación.
 
  El elemento `vstoRuntime` tiene los atributos siguientes:
