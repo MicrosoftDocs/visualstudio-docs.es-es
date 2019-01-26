@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 06aa633b-263b-4e08-8844-9a52d5120b94
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2477ac13218342511ac7b47bec6cf847651cfb22
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c3c3132239ec684f947e702ce59f0a269095f990
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913075"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031197"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
 Habilita la asociación automática para los motores de depuración especificado.  

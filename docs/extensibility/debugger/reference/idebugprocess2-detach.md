@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ee2b9084-2db1-4e49-a1d9-387284b7c3f8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 747430b837cf682e35f5973ea35d36e72484fb3a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 633ac46a70ffa7a6becfa0648b53e8f683f838b3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988075"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027816"
 ---
 # <a name="idebugprocess2detach"></a>IDebugProcess2::Detach
 Desasocia al depurador de este proceso separando todos los programas en el proceso.  

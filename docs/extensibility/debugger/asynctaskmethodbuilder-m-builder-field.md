@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: bfaf25a2-0f08-413f-b474-9ce0d97c0eeb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef71973ffaf680f4ded8c85f5e04a30a89f40bfd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 594ffe24f731b6ca6669650afd72e5007cb37a3c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961094"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025831"
 ---
 # <a name="asynctaskmethodbuildermbuilder-field"></a>AsyncTaskMethodBuilder.m_builder (campo)
 Representa el objeto de generador de genérico a la que se delega esta instancia no genérica.  

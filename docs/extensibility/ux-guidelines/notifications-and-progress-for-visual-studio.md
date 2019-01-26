@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c0241a16caec1fd25b3ccd177042af3be90a6b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ecc47391c3ab80b0c8752de840c6accfb66f0212
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942676"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936703"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Notificaciones y progreso para Visual Studio
 ##  <a name="BKMK_NotificationSystems"></a> Sistemas de notificación  
@@ -286,7 +286,7 @@ ms.locfileid: "53942676"
 ### <a name="overview"></a>Información general  
  Las barras de información proporcionan al usuario un indicador cerca de su punto de atención y usar el control de barra de información compartida garantiza la coherencia en la apariencia visual y la interacción.  
   
- ![Barra de información](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904 01_Infobar")  
+ ![Infobar](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")  
   
  **Barras de información en Visual Studio**  
   
@@ -358,7 +358,7 @@ public InfoBarModel(string text, IEnumerable<IVsInfoBarActionItem> actionItems, 
   
  Este es un ejemplo que crea un InfoBarModel con algo de texto con un hipervínculo, un botón de acción y un icono.  
   
- ![Barra de información con hipervínculo](../../extensibility/ux-guidelines/media/0904-02_infobarhyperlink.png "0904 02_InfobarHyperlink")  
+ ![Infobar with hyperlink](../../extensibility/ux-guidelines/media/0904-02_infobarhyperlink.png "0904-02_InfobarHyperlink")  
   
 ```  
 var infoBar = new InfoBarModel(  
@@ -476,7 +476,7 @@ public interface IVsInfoBarUIEvents
 ### <a name="field-validation"></a>Validación de campos  
  Validación de formulario y el campo consta de tres componentes: un control, un icono y una información sobre herramientas. Aunque pueden usar varios tipos de controles de esto, se utilizará un cuadro de texto como un ejemplo.  
   
- ![Validación de campo &#40;en blanco&#41;](../../extensibility/ux-guidelines/media/0905-01_fieldvalidation.png "0905 01_FieldValidation")  
+ ![Field validation &#40;blank&#41;](../../extensibility/ux-guidelines/media/0905-01_fieldvalidation.png "0905-01_FieldValidation")  
   
  Si el campo es obligatorio, debe haber que indica el texto de marca de agua  **\<requiere >** y el fondo del campo debe ser ligero amarillo (VSColor: `Environment.ControlEditRequiredBackground`) y de primer plano debería ser gris (VSColor: `Environment.ControlEditRequiredHintText`):  
   

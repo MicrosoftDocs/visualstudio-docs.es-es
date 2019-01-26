@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0ec0995068cafe277c95bd125f91d2d1d3df16b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6f6b8b9b220a9fa81ea8cf43de18bcf3820f5336
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968675"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016686"
 ---
 # <a name="image-library-viewer"></a>Visor de la biblioteca de imágenes
 La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y buscar los manifiestos de imagen, que permite al usuario manipularlos en la misma manera Visual Studio. El usuario puede modificar otras opciones, tamaños, PPP, contraste alto y en segundo plano. La herramienta también muestra información de carga para cada manifiesto de imagen y muestra información de origen para cada imagen en el manifiesto de imagen. Esta herramienta es útil para:  
@@ -92,7 +92,7 @@ La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y 
 |CommonProgramFiles|El valor de la variable de entorno % CommonProgramFiles %|  
 |LocalAppData|El valor de la variable de entorno % LocalAppData %|  
 |ManifestFolder|La carpeta que contiene el archivo de manifiesto|  
-|Mis documentos|La ruta de acceso completa de la carpeta Mis documentos del usuario actual|  
+|MyDocuments|La ruta de acceso completa de la carpeta Mis documentos del usuario actual|  
 |ProgramFiles|El valor de la variable de entorno % ProgramFiles %|  
 |Sistema|La carpeta Windows\System32|  
 |WinDir|El valor de la variable de entorno % WinDir %|  
@@ -139,9 +139,9 @@ La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y 
 |-|-|-|  
 |**Element**|**Atributos (todas requeridas)**|**Definición**|  
 |\<Tamaño >|Valor|El origen se usará para las imágenes del tamaño especificado (en unidades de dispositivo). La imagen será cuadrada.|  
-|\<SizeRange >|MinSize, MaxSize|El origen se usará para las imágenes de MinSize con tamaño máximo (en unidades de dispositivo), ambos inclusive. La imagen será cuadrada.|  
+|\<SizeRange>|MinSize, MaxSize|El origen se usará para las imágenes de MinSize con tamaño máximo (en unidades de dispositivo), ambos inclusive. La imagen será cuadrada.|  
 |\<Dimensiones >|Ancho, alto|El origen se usará para las imágenes del ancho y alto (en unidades de dispositivo).|  
-|\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|El origen se usará para las imágenes desde el ancho y alto mínimo para el máximo ancho/alto (en unidades de dispositivo), ambos inclusive.|  
+|\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|El origen se usará para las imágenes desde el ancho y alto mínimo para el máximo ancho/alto (en unidades de dispositivo), ambos inclusive.|  
   
  Un \<origen > elemento también puede tener un elemento opcional \<NativeResource > subelemento, que define un \<origen > que se carga desde un ensamblado nativo en lugar de un ensamblado administrado.  
   

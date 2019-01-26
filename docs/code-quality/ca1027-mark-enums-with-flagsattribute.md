@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 249e882c-8cd1-4c00-a2de-7b6bdc1849ff
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a559c20cd45ae39210421b647e8efd6c0928ade
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 268f946e3f6487fc4f53364ccaf34fd6dbd0527e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882109"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977465"
 ---
 # <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027: Marcar enumeraciones con FlagsAttribute
 

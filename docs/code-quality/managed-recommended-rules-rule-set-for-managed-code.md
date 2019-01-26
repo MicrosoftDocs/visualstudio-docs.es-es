@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 1d1160f8-4e51-4e70-99cd-82ad10ee7b32
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 257cd658d798f620a5dd3faf47edea7b1454e7bc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa15f79be09b9663fb8fc98e32e09e20a030a5d4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987145"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009601"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas recomendadas administradas para código administrado
 Puede usar el conjunto de reglas reglas recomendadas administradas de Microsoft a centrarse en los problemas más graves del código administrado, incluidas posibles vulnerabilidades de seguridad, bloqueos de la aplicación y otros errores de diseño y lógica importantes. Debe incluir este conjunto de reglas en cualquier conjunto de reglas personalizados que cree para sus proyectos.

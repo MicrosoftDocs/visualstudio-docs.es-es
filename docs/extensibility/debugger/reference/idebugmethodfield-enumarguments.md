@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3ab55488-2437-4ff6-a9ae-78ea6d7b23a8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f2b6c10076e36b684222ad0ef9d07ce7e1f450f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9fe8eb5d3eb99037f3968261434690f1abfb201
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870682"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015932"
 ---
 # <a name="idebugmethodfieldenumarguments"></a>IDebugMethodField::EnumArguments
 Crea un enumerador para el tipo de cada argumento necesario para llamar al método.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2f95cc53-dff6-476c-bacd-500fb0ff7725
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e746ce8bf6d109d4cd1d96c531f30106f20d9c07
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9c04192e2377c58e93f37634de28fc32c0e2bc74
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882473"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986259"
 ---
 # <a name="extend-the-object-model-of-the-base-project"></a>Extender el modelo de objetos del proyecto base
 

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bddedab69583c8ec4ff809810e049a4aff2046ee
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 97c0768df844276930004530ef0dfeb1f1e5148d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933804"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981017"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menús y comandos para Visual Studio
 ## <a name="command-usage"></a>Uso del comando  

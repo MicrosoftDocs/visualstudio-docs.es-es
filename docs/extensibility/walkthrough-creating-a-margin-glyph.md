@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 814185db-24f9-417f-b3b1-7c5aabb42b45
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce1d3449c786211c90df52b0633c84cf2a491769
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 51dea272a595f56abe254eda74dea67415f157a6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851357"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020248"
 ---
 # <a name="walkthrough-create-a-margin-glyph"></a>Tutorial: Creación de un glifo de margen
 Puede personalizar la apariencia de los márgenes del editor mediante el uso de extensiones de editor personalizado. En este tutorial se coloca un glifo personalizados en el margen del indicador cada vez que aparece la palabra "todo" en un comentario de código.  

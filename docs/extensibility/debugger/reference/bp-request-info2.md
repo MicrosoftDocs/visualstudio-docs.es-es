@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 008c87f7-a76e-43d3-8904-11b225d6a9a5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dff8744c9f8d25d32697560ab68c98a45e61601e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 79defaf0278d7b4dc80eb9789497794fbb697458
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876307"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028508"
 ---
 # <a name="bprequestinfo2"></a>BP_REQUEST_INFO2
 Contiene la información necesaria para implementar un punto de interrupción, incluidos GUID de proveedor, la restricción y punto de seguimiento.  

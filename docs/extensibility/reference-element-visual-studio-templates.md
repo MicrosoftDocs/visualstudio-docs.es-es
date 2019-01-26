@@ -11,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: 852772ea-c324-42e9-8c8a-6d565414a109
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 904dc9662b5bb7f2097e0aabce8af989a959f943
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 33be7f79e46fa83fc55096c4a6c3c2c540f29469
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889481"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016998"
 ---
 # <a name="reference-element-visual-studio-templates"></a>Elemento de referencia (plantillas de Visual Studio)
 Especifica la referencia de ensamblado para agregar cuando el elemento se agrega a un proyecto.  
   
- \<VSTemplate >  
- \<TemplateContent >  
+ \<VSTemplate>  
+ \<TemplateContent>  
  \<Referencias >  
  \<Referencia >  
   

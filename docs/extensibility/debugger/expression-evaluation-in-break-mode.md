@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 34fe5b58-15d5-4387-a266-72120f90a4b6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62824c46e682b0418b8797d6adee0b504f04b414
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 852b4284bbbf59ce8f3964d98f0464e583f1444f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987212"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028678"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>Evaluación de expresiones en modo de interrupción
 La siguiente sección describe el proceso que se produce cuando el depurador está en modo de interrupción y debe llevar a cabo la evaluación de expresiones.  

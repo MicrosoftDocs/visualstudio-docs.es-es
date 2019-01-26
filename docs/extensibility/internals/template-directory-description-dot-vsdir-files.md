@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ff1c9d1557722b31a4375c3189b788968c2b198
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 64d17c8a375a5e579c6c2720afb118f1940c4a0d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925214"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935038"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Archivos de descripción del directorio de plantilla (.Vsdir)
 Un archivo de descripción del directorio de plantilla (.vsdir) es un archivo de texto que permite que el entorno de desarrollo integrado (IDE) para mostrar las carpetas, archivos .vsz del asistente y archivos de plantilla que están asociados con el proyecto en los cuadros de diálogo. El contenido incluye un registro por cada archivo o carpeta. Se combinan todos los archivos .vsdir en una ubicación que se hace referencia, aunque generalmente se proporciona solo un archivo .vsdir para describir varias carpetas, los asistentes o los archivos de plantilla.  

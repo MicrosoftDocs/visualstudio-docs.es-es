@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: c19b48ee-b370-4fce-91fe-f82bf1e63179
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ae5bdcc1f9d8c2be010fc0e9493edd7b623ba8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fd16ef6b9128a2f585a0d82054a5b9685874d9c2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923054"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943005"
 ---
 # <a name="idebugidecallbackdisplaymessage"></a>IDebugIDECallback::DisplayMessage
 Envía la cadena de mensaje especificado a la ventana de salida del depurador.  
