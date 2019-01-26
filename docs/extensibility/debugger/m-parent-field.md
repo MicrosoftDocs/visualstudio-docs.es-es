@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: da9e3dc7-8e9b-4c3a-a9e0-12921b5300c6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b0b6fcc5cea15cdd48b4dbf9320b7bb4408bc12
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 54bb946cb6ce934ed6fd084328d40f7e30feadf5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896557"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011915"
 ---
 # <a name="mparent-field"></a>campo m_Parent
 El campo de respaldo para la <xref:System.Threading.Tasks.Task?displayProperty=fullName> `Parent` propiedad.  

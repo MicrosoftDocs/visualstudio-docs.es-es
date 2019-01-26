@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1e579ab9e42ffd7448e3c0dbe62766c058e6f01
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 831123caead6593fdbb548fd6e69a63646790d8a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874607"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969095"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Procedimiento Obtener acceso a las fuentes integradas y ccheme de color
 El entorno de desarrollo integrado (IDE) de Visual Studio tiene un esquema de fuentes y colores que está asociado a la ventana del editor. Puede tener acceso a este esquema a través de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaz.
@@ -49,7 +49,7 @@ El entorno de desarrollo integrado (IDE) de Visual Studio tiene un esquema de fu
 
 1.  Construir un tipo especial de entrada de registro de la categoría en la siguiente ubicación:
 
-     *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<versión de Visual Studio > \FontAndColors\\\<categoría >*]
+     *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<Visual Studio version>\FontAndColors\\\<Category>*]
 
      *\<Categoría >* es el nombre no traducido de la categoría.
 

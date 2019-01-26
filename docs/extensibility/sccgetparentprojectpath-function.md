@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 62a71579-36b3-48b9-a1c8-04ab100efa08
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21010d25642e81fd9155138c66feb301fe50582c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aa052b7273b0917e604a525e5e7a5265d8e549c4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935169"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55068698"
 ---
 # <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath (función)
 Esta función determina la ruta de acceso del proyecto principal de un proyecto especificado. Esta función se llama cuando el usuario está agregando un proyecto de Visual Studio para el control de código fuente.  
@@ -86,7 +86,7 @@ SCCRTN SccGetParentProjectPath(
 ## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>Notas técnicas de SccCreateSubProject y SccGetParentProjectPath  
  Agregar soluciones y proyectos al control de código fuente se ha simplificado en Visual Studio para minimizar el número de veces que un usuario se le pide que seleccione las ubicaciones en el sistema de control de código fuente. Estos cambios se activan por Visual Studio si un complemento de control de código fuente admite tanto de las nuevas funciones, la [SccCreateSubProject](../extensibility/scccreatesubproject-function.md) y `SccGetParentProjectPath` función. Sin embargo, la siguiente entrada del registro puede usarse para deshabilitar estos cambios y revertir al comportamiento anterior de Visual Studio (origen de Control de complemento de API versión 1.1):  
   
- **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl" = dword: 00000001**  
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl"=dword:00000001**  
   
  Si esta entrada del registro no existe o está establecida en DWORD: 00000000, Visual Studio intenta usar las nuevas funciones, `SccCreateSubProject`y`SccGetParentProjectPath`.  
   

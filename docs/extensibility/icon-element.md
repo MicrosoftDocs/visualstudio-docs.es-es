@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 73c58fe3-d53c-4f4e-b025-29567c6cbb7c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 475bca35ca1bdc1879301912c7ddd271f369a6ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ad2a273f533136fa75b0b064f2328b5b59d6d161
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870013"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974531"
 ---
 # <a name="icon-element"></a>Icon (elemento)
 El atributo guid de la etiqueta de icono es el guid de un mapa de bits definido. El `id` atributo selecciona la ranura en la Tira de mapa de bits. Este elemento es opcional. Si este elemento no está incluido el valor de **guidOfficeIcon:msotcidNoIcon** se implicarse.  

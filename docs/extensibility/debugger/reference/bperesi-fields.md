@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dd7dd89c-1043-46a1-a929-099cc039c344
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 155703f0791be4d0cf32bbf53f6a6696587aee5f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2df09b8a95d80a2eade19a4c9094529bbabe2bc5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859310"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012825"
 ---
 # <a name="bperesifields"></a>BPERESI_FIELDS
 Especifica la información que se va a recuperar acerca de una solución con errores de un punto de interrupción.  

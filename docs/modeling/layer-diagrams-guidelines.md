@@ -9,16 +9,16 @@ helpviewer_keywords:
 - constraints, architectural
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: f4a044481b1e359b2021b16da1f0b2b5aba8a872
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 13ffde9d399e0535f7cf6790f199ba4924156636
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924428"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012188"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramas de dependencia: instrucciones
 
@@ -31,7 +31,7 @@ Para ver qué ediciones de Visual Studio admiten esta característica, vea [comp
 
 ## <a name="what-is-a-dependency-diagram"></a>¿Qué es un diagrama de dependencias?
 
-Como un diagrama de arquitectura tradicional, un diagrama de dependencia identifica los componentes primarios o las unidades funcionales del diseño y sus interdependencias. Cada nodo en el diagrama, denominado un *capa*, representa un grupo lógico de espacios de nombres, proyectos u otros artefactos. Puede dibujar las dependencias que debería haber en el diseño. A diferencia de un diagrama de arquitectura tradicional, puede comprobar que las dependencias reales del código fuente se ajustan a las dependencias especificadas que se pretenden. Al incluir la validación en el proceso de compilación normal de [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)], tiene la garantía de que el código de programa seguirá ajustándose a la arquitectura del sistema cuando se realicen cambios. Consulte [diagramas de dependencia: Referencia](../modeling/layer-diagrams-reference.md).
+Como un diagrama de arquitectura tradicional, un diagrama de dependencia identifica los componentes primarios o las unidades funcionales del diseño y sus interdependencias. Cada nodo en el diagrama, denominado un *capa*, representa un grupo lógico de espacios de nombres, proyectos u otros artefactos. Puede dibujar las dependencias que debería haber en el diseño. A diferencia de un diagrama de arquitectura tradicional, puede comprobar que las dependencias reales del código fuente se ajustan a las dependencias especificadas que se pretenden. Al incluir la validación en el proceso de compilación normal de [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)], tiene la garantía de que el código de programa seguirá ajustándose a la arquitectura del sistema cuando se realicen cambios. Consulte [diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md).
 
 ## <a name="how-to-design-or-update-your-app-with-dependency-diagrams"></a>Cómo diseñar o actualizar la aplicación con diagramas de dependencia
 

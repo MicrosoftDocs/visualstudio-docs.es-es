@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::IsFunctionDeleted | Documentos de Microsoft
+title: IDebugComPlusSymbolProvider::IsFunctionDeleted | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: b276bd25-6658-4898-bc36-04ecdf92aa2f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a5d752263fd4976a834505575528230523d6e8a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 64c217351f213b6c46e3720dc36b56921bf65985
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854092"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54963442"
 ---
 # <a name="idebugcomplussymbolproviderisfunctiondeleted"></a>IDebugComPlusSymbolProvider::IsFunctionDeleted
 Determina que se ha eliminado la función en la dirección de depuración especificado.  

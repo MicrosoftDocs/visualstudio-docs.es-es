@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bca879905e524e80205878034773349ddff06460
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d92a8ae5d0581ae5b36276fcf857371d0ae2f8b8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907172"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993449"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Texto de la interfaz de usuario y la Ayuda de Visual Studio
 ##  <a name="BKMK_UITextAndTerminology"></a> Terminología y el texto de la interfaz de usuario  
@@ -68,7 +68,7 @@ ms.locfileid: "53907172"
   
  **Texto complementario en Visual Studio**  
   
-#### <a name="infotips"></a>Recuadros informativos  
+#### <a name="infotips"></a>InfoTips  
  A menudo, el texto informativo podría ser demasiado largo para colocar en el lugar en la interfaz de usuario o puede ser útil para los nuevos usuarios, ¿se siente como confusión a los usuarios experimentados. En este caso, el texto informativo informativo debe colocarse como una información sobre herramientas en un recuadro informativo.  
   
  Recuadros informativos deben colocarse cerca de los controles que están relacionados con y debe utilizar el icono de recuadro informativo específico, que aún es discreto apreciable.  
@@ -259,7 +259,7 @@ ms.locfileid: "53907172"
   
 |Bueno|incorrecto|  
 |----------|---------|  
-|"El número que marcado ya no está en servicio. Compruebe el número y vuelva a marcar o marcar 0 para el operador."|-"Error (449): Número no válido"<br />-"Este error de excepción no controlada indica que la operación se completó correctamente".<br /><br /> ![Mensaje de error incorrecto en Visual Studio](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "0602 a_ErrorDialog")|  
+|"El número que marcado ya no está en servicio. Compruebe el número y vuelva a marcar o marcar 0 para el operador."|-"Error (449): Illegal number"<br />-"Este error de excepción no controlada indica que la operación se completó correctamente".<br /><br /> ![Mensaje de error incorrecto en Visual Studio](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "0602 a_ErrorDialog")|  
   
 ## <a name="accessing-help"></a>Acceso a la Ayuda  
   
@@ -281,7 +281,7 @@ ms.locfileid: "53907172"
 #### <a name="instructional-and-supplemental-text-in-dialogs"></a>Texto informativo y adicional en los cuadros de diálogo  
  En los cuadros de diálogo que admiten tareas complejas, es posible que sea necesario para proporcionar texto informativo en la interfaz de usuario, a menudo en la parte superior del cuadro de diálogo o cerca de los controles complejos. Consulte [UI texto y la terminología](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology) para obtener más información sobre el estilo de escritura.  
   
-#### <a name="infotips"></a>Recuadros informativos  
+#### <a name="infotips"></a>InfoTips  
  A menudo, el texto informativo podría ser demasiado larga para colocar en lugar de la interfaz de usuario o puede ser útil para los nuevos usuarios, ¿se siente como confusión a los usuarios experimentados. En este caso, el texto informativo informativo debe colocarse como una información sobre herramientas en un recuadro informativo.  
   
  Recuadros informativos deben colocarse cerca de los controles que están relacionados con y debe utilizar el icono de recuadro informativo específico, que aún es discreto apreciable.  

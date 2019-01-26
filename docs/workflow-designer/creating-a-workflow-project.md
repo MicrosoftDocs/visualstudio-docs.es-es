@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 235a125e-ebe7-4a98-bf77-86c8558728fb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0856ff93beef602d02defb58f90f69898a121f2c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 577bb58101556dc17c62453bfe18e9618c879405
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943358"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999956"
 ---
 # <a name="workflow-project-templates"></a>Plantillas de proyecto de flujo de trabajo
 

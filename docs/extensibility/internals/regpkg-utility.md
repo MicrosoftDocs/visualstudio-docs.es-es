@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 1683ee18-59d1-4bab-a674-dd00dd960de3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3f9eecfaeffd19ece7e0ca2fe14e3f95556503d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc1e818e576c4593eb890f1f31b4d67d4c7c4488
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904882"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979431"
 ---
 # <a name="regpkg-utility"></a>Utilidad RegPkg
 > [!NOTE]
@@ -37,19 +37,19 @@ RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile
   
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] raíz.  
   
- /regfile:filename  
+ /regfile:FileName  
  Crea un archivo .reg en lugar de actualizar el registro.  No se puede usar con /vrgfile o /rgsfile o /wixfile.  
   
- /rgsfile:filename  
+ /rgsfile:FileName  
  Crea un archivo .rgs en lugar de actualizar el registro.  No se puede usar con /vrgfile o /regfile o /wixfile.  
   
- /vrgfile:filename  
+ /vrgfile:FileName  
  Crea un archivo .vrg en lugar de actualizar el registro.  No se puede usar con /regfile o /rgsfile o /wixfile.  
   
  /rgm  
  Crea un archivo .rgm además del archivo rgs.  Se debe combinar con /rgsfile.  
   
- /wixfile:filename  
+ /wixfile:FileName  
  Crea un archivo compatible con Windows Installer XML Toolset en lugar de actualizar el registro.  No se puede usar con /regfile o /rgsfile o /vrgfile.  
   
  /codebase  
@@ -58,7 +58,7 @@ RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile
  /Assembly  
  Registro de fuerza con el ensamblado en lugar de código base.  
   
- / unregister  
+ /unregister  
  Anula el registro de este paquete.  No se puede usar  
   
  con /regfile o /vrgfile o /rgsfile o /wixfile.  

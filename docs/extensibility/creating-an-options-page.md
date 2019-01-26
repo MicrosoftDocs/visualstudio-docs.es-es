@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 162c03fec6119985636122a414c00c96e384b340
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 35845ed22fa06ca7df62c71ddea4be3629534af9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843692"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953476"
 ---
 # <a name="create-an-options-page"></a>Crear una página de opciones
 Este tutorial crea una página Herramientas/Opciones sencilla que usa una cuadrícula de propiedades para examinar y establecer propiedades.  

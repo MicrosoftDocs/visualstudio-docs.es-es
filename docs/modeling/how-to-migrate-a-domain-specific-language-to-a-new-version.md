@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: b53d604fdf9c18a2e5552d787f7a69ff4c92df2a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c2ff1a820e5ac8492b627ac61ddfa234c71b5890
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955073"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932342"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Procedimiento Migrar un lenguaje específico de dominio a una nueva versión
 Puede migrar los proyectos que definen y usar los lenguajes específicos de dominio a [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] desde la versión de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] que se distribuyó con [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
@@ -22,7 +22,7 @@ Puede migrar los proyectos que definen y usar los lenguajes específicos de domi
 
  Debe ejecutar la herramienta de migración de forma explícita: no se inicia automáticamente al abrir una solución en Visual Studio. La herramienta y el documento de orientación detallada pueden encontrarse en esta ruta de acceso:
 
- **% Programa Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
+ **%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
 ## <a name="before-you-migrate-your-dsl-projects"></a>Antes de migrar los proyectos DSL
  La herramienta de migración modifica los archivos de proyecto de Visual Studio (**.csproj**) y archivos de solución (**.sln**).
@@ -41,7 +41,7 @@ Puede migrar los proyectos que definen y usar los lenguajes específicos de domi
 
    -   Puede haga doble clic en la herramienta en el Explorador de Windows (o explorador de archivos), o iniciar la herramienta desde un símbolo del sistema. La herramienta está en esta ubicación:
 
-        **%ProgramFiles%\Microsoft visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
+        **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
 2. Elija una carpeta que contiene las soluciones y proyectos que se va a convertir.
 

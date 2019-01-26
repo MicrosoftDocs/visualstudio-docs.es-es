@@ -8,13 +8,13 @@ ms.date: 08/04/2017
 ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
-manager: douge
-ms.openlocfilehash: de1623cfbfc937139e45b4791a28fd47f18501de
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 9807f37925620b3672c3fcb9319913194d09d6ab
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870065"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016244"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Referencia de valor de color para Visual Studio
 
@@ -155,7 +155,7 @@ Al usar a esta guía de referencia, recuerde:
 | --- | :---: | :---: | :---: | :---: |
 | Primer plano | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![#FFF1F1F1 muestrario](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 muestrario")<br />`#FFF1F1F1` | ![#FF1E1E1E muestrario](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E muestrario")<br />`#FF1E1E1E` | ![Muestrario ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText muestrario")<br />`ControlText` |
 | En segundo plano: al mantener el mouse | ![#FFC9DEF5 muestrario](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 muestrario")<br />`#FFC9DEF5` | ![#FF3E3E40 muestrario](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 muestrario")<br />`#FF3E3E40` | ![Muestrario #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "muestrario #FFFEFEFE")<br />`#FFFEFEFE` | ![Resaltar muestrario](../../extensibility/ux-guidelines/media/HCHighlight.png "muestra resaltado")<br />`Highlight` |
-| Primer plano: seleccionado | ![Muestrario #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "muestrario #FFFFFFFF")<br />`#FFFFFFFF` | ![Muestrario #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "muestrario #FFFFFFFF")<br />`#FFFFFFFF` | ![Muestrario #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "muestrario #FFFFFFFF")<br />`#FFFFFFFF` | ![Muestrario HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightTextswatch")<br />`HighlightText` |
+| Primer plano: seleccionado | ![Muestrario #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "muestrario #FFFFFFFF")<br />`#FFFFFFFF` | ![Muestrario #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "muestrario #FFFFFFFF")<br />`#FFFFFFFF` | ![Muestrario #FFFFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "muestrario #FFFFFFFF")<br />`#FFFFFFFF` | ![HighlightText swatch](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightTextswatch")<br />`HighlightText` |
 | En segundo plano: presionado | ![#FF007ACC muestrario](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC muestrario")<br />`#FF007ACC` | ![#FF007ACC muestrario](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC muestrario")<br />`#FF007ACC` | ![#FF007ACC muestrario](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC muestrario")<br />`#FF007ACC` | ![Resaltar muestrario](../../extensibility/ux-guidelines/media/HCHighlight.png "muestra resaltado")<br />`Highlight` |
 | Primer plano: deshabilitada | ![#FFA2A4A5 muestrario](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 muestrario")<br />`#FFA2A4A5` | ![#FF656565 muestrario](../../extensibility/ux-guidelines/media/656565.png "#FF656565 muestrario")<br />`#FF656565` | ![#FFA2A4A5 muestrario](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 muestrario")<br />`#FFA2A4A5` | ![Muestrario GrayText](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText muestrario")<br />`GrayText` |
 | En segundo plano: deshabilitada | ![Muestrario #fff5f5f5](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 muestrario")<br />`#FFF5F5F5` | ![#FF252526 muestrario](../../extensibility/ux-guidelines/media/252526.png "#FF252526 muestrario")<br />`#FF252526` | ![#FFF6F6F6 muestrario](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 muestrario")<br />`#FFF6F6F6` | ![Muestras de ventana](../../extensibility/ux-guidelines/media/HCWindow.png "muestrario de ventana")<br />`Window` |

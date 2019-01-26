@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b70922a3-1313-409a-b3b7-50c7cd13e394
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 865cc4ad42bc030592e8b06c7ebcf3147cc8c93d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5d144d02a34052cc06e5f63df75a2a7db3be4887
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925776"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984020"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
 Supervisa la ejecución (o se detiene la ejecución inspeccionando) que se produzca en el subproceso especificado.  

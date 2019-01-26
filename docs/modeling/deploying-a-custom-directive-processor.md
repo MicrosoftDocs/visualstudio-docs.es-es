@@ -6,16 +6,16 @@ helpviewer_keywords:
 - text templates, custom directive processors
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 167d008d2e773e4b3d026d3d196ce80bdbd95b13
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6563691022fdd1694af69e872aa0d37803c2191c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911655"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956173"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Implementar un procesador de directivas personalizadas
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5437f511eda582f2de7b28cc35716b0148df254
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6fb944ce92613a4352d7b69c0975d39791be2cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852958"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948991"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Compatibilidad con fragmentos de código en un servicio de lenguaje heredado
 Un fragmento de código es un fragmento de código que se inserta en el archivo de origen. El fragmento de código es una plantilla basada en XML con un conjunto de campos. Estos campos se resaltan después de que el fragmento de código se inserta y puede tener valores diferentes dependiendo del contexto en el que se inserta el fragmento de código. Inmediatamente después de inserta el fragmento de código, el servicio de lenguaje puede dar formato el fragmento de código.  
@@ -86,10 +86,10 @@ Un fragmento de código es un fragmento de código que se inserta en el archivo 
 |Elemento|Descripción|  
 |-------------|-----------------|  
 |% LCID %|Identificador de configuración regional.|  
-|% InstallRoot %|Carpeta de instalación raíz para Visual Studio, por ejemplo, C:\Program Files\Microsoft Visual Studio 8.|  
-|% ProjDir %|Carpeta que contiene el proyecto actual.|  
-|% ProjItem %|Carpeta que contiene el elemento de proyecto actual.|  
-|% TestDocs %|Carpeta en la carpeta de configuración del usuario, por ejemplo, C:\Documents and Settings\\ *[username]* \My Studio\8.|  
+|%InstallRoot%|Carpeta de instalación raíz para Visual Studio, por ejemplo, C:\Program Files\Microsoft Visual Studio 8.|  
+|%ProjDir%|Carpeta que contiene el proyecto actual.|  
+|%ProjItem%|Carpeta que contiene el elemento de proyecto actual.|  
+|%TestDocs%|Carpeta en la carpeta de configuración del usuario, por ejemplo, C:\Documents and Settings\\ *[username]* \My Studio\8.|  
   
 ### <a name="enabling-code-snippets-for-your-language-service"></a>Habilitación de fragmentos de código para el servicio de lenguaje  
  Puede habilitar los fragmentos de código para el servicio de lenguaje agregando el <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> atributo para el VSPackage (consulte [registrar un servicio de lenguaje heredado](../../extensibility/internals/registering-a-legacy-language-service1.md) para obtener más información). El <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> y <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> parámetros son opcionales, pero debe incluir el `SearchPaths` con el nombre de parámetro con el fin de informar a la **Administrador de fragmentos de código** de la ubicación de los fragmentos de código.  

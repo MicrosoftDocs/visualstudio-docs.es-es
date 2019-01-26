@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 524b96fea7fedba248c04f384445ee3a03a3595b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8044c48ee2721a8461d9d7c2932707c3c01eeaf4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902011"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026764"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Tutorial: Usar características del editor XML
 

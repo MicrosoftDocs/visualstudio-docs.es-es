@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 51f5f41b-a5a4-4df0-a703-41f3d1811d7f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab74e9c538f4e82c7dacf30330dbcca0439e159f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 388c884e77f4367eae1ac90e0390163efa7a7e37
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986679"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933070"
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
 Esta interfaz proporciona acceso a información sobre el servidor en que se está ejecutando el proceso.  

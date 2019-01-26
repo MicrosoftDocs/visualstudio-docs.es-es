@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 5aee74e3-de41-4dc6-9618-93e158af56dd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69177b035ee8e0c162a629873110df9f7ec7917f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 47aeeb1b92bc0c29dc9a1edafc1fd1323925a27e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889161"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916542"
 ---
 # <a name="define-element"></a>Definir el elemento
 Define un par de nombre y valor de símbolo. Este símbolo se puede evaluar mediante atributos condicionales. Para obtener más información, consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md). Vea también el [Symbols (elemento)](../extensibility/symbols-element.md).  
@@ -34,8 +34,8 @@ Define un par de nombre y valor de símbolo. Este símbolo se puede evaluar medi
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|name|Obligatorio. El nombre del símbolo:<br /><br /> nombre = "Mode"|  
-|value|Obligatorio. El valor del símbolo:<br /><br /> valor = "Estándar"|  
+|name|Obligatorio. El nombre del símbolo:<br /><br /> name="Mode"|  
+|value|Obligatorio. El valor del símbolo:<br /><br /> value="Standard"|  
 |Condición|Opcional. Para obtener más información, consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos secundarios  

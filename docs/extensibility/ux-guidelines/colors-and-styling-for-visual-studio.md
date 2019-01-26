@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12555b48550d252ce125ac437c1e30d5ae22fae9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8cdfa140614117e00e0ad3cc813c7f33d7a47b75
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914613"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027716"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Colores y estilos para Visual Studio
 
@@ -328,7 +328,7 @@ Muchos elementos comunes de la interfaz de usuario ya tienen definido de colores
 | MenuText | -Borde del menú lista desplegable<br />: Marcas de verificación<br />-Glifos menú<br />-Texto del menú lista desplegable<br />-Borde del icono seleccionado |
 | Barra de desplazamiento | -Desplazarse barra y fondo de la flecha, todos los Estados de la barra de desplazamiento |
 | Ventana | Ocultar automáticamente el fondo de pestaña<br />-Menú de barras y fondo del estante de comandos<br />-Borde de documento, para las pestañas abiertas y provisionales y de fondo de ficha de ventana de documento sin foco o no seleccionado<br />-Fondo de barra de título de ventana de herramientas sin foco<br />-Fondo de pestaña de la ventana de herramientas, ambos seleccionado y no seleccionado |
-| Marco de ventana | : Borde IDE |
+| WindowFrame | : Borde IDE |
 | WindowText | -Primer plano de pestaña ocultación automática<br />-Primer plano de ficha de ventana de herramienta seleccionada<br />-Pestaña de ventana de documento sin foco y de primer plano de la pestaña provisional seleccionado o sin foco<br />-Árbol predeterminado de primer plano de vista y al mantener el mouse sobre un glifo no seleccionado<br />: Borde de ficha seleccionada de ventana de herramientas<br />-La barra de desplazamiento glifo, borde y fondo de miniatura |
 
 ##  <a name="BKMK_ExposingColorsForEndUsers"></a> Exposición de colores para los usuarios finales

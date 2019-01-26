@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 1d7f3aa7-7eff-4cab-bc53-0a566b1a9363
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77a0b954242a65e6f462a0548eeac0bc551e1083
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e62eb8c220276737cfbe0cd275b0fc81afaa859c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873611"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012240"
 ---
 # <a name="ports"></a>Puertos
 En la arquitectura de depurador, un *puerto*:  

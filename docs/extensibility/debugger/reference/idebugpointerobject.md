@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject | Documentos de Microsoft
+title: IDebugPointerObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 257fa167-b46e-4ffb-9a12-272efbf26702
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea5c75c1fb2737459107b21652aa43b8ea38e526
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 12248eac49c19ef157af19f20b2164a709291d5b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844700"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017960"
 ---
 # <a name="idebugpointerobject"></a>IDebugPointerObject
 > [!IMPORTANT]
@@ -50,7 +50,7 @@ IDebugPointerObject : IDebugObject
  Un evaluador de expresiones utiliza esta interfaz para representar un puntero en un árbol de análisis.  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: ee.h  
+ Header: ee.h  
   
  Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   

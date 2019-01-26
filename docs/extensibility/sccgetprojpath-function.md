@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c5f714260af3ef247ad4fe0a059e6166d59f1df
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9da39a5216f313371753a1b52e411aba093419e0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942429"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935805"
 ---
-# <a name="sccgetprojpath-function"></a>SccGetProjPath (función)
+# <a name="sccgetprojpath-function"></a>SccGetProjPath function
 Esta función pide al usuario una ruta de acceso del proyecto, que es una cadena que solo es significativa para el complemento de control de código fuente. Se llama cuando el usuario es:  
   
 -   Crear un nuevo proyecto  

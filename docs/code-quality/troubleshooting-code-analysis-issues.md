@@ -6,15 +6,15 @@ ms.topic: troubleshooting
 ms.assetid: 61c7e44d-2780-4df5-9bcb-49e40c1152fc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c11ff3f6df9ba8ca2cd58f89fd3eec89e6a9abb2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7cf8d516928f58976c77e9de13d8966ca3ca377a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876051"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031375"
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>Solucionar problemas de análisis de código
 Este tema contiene información para solucionar los siguientes problemas de análisis de código de Visual Studio.

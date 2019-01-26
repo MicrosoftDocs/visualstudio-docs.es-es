@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b50edb2c-fb8d-4def-993d-17d23d2027c1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1489e8ef7bf41274806d1d6b1b134b54268457cf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 017ab4116654bb341162e46352dcb16b85528a74
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874211"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995913"
 ---
 # <a name="idebugpropertyfield"></a>IDebugPropertyField
 Esta interfaz proporciona las funciones que permiten obtener y establecer una propiedad.  

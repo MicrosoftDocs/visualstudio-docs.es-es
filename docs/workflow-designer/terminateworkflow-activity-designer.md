@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 08e632ed-0724-4fb4-9df1-f8d443eaf0ac
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dc6328e2363e802d05093bfebd25479d67c6ffa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3a065deebe0629cb353acc64d6d40db8a4e00b3d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858505"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993265"
 ---
 # <a name="terminateworkflow-activity-designer"></a>Diseñador actividades TerminateWorkflow
 

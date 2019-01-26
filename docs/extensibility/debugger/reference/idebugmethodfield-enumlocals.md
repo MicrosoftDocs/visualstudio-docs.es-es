@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b0456a6d-2b96-49e2-a871-516571b4f6a5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29e2b79066e34e30f9a07da21ed33c720d135105
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cd97efbef049ae9781bb08499dfa7ac2684b54ff
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951805"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954573"
 ---
 # <a name="idebugmethodfieldenumlocals"></a>IDebugMethodField::EnumLocals
 Crea un enumerador para las variables locales seleccionadas del método.  

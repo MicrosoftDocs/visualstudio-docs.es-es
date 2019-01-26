@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f51aab02-d257-4302-bb79-b7d8ba9ac4e5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26db88687a6e2c11fca366e0e3beab25a6a221fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f151391de60bea7164f61edfe608c425534c9b44
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965374"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934327"
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
 Especifica las marcas de inicio de depuración.  

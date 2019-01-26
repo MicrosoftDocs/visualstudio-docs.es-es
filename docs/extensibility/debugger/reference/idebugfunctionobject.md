@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8d94e97c-a9d1-400c-8a98-a44b5385b33a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d352870800a7b5e7fc1408d607a24f616b0f22d5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 61da63d0d9a46cb47cd2bc14a7e2bcf1945ca4de
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954174"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043315"
 ---
 # <a name="idebugfunctionobject"></a>IDebugFunctionObject
 > [!IMPORTANT]
@@ -53,7 +53,7 @@ IDebugFunctionObject : IDebugObject
  Esta interfaz permite que el evaluador de expresiones que representan las funciones en un árbol de análisis. El `Create` los métodos de esta interfaz se utilizan para construir objetos que representan los parámetros de entrada al método. A continuación, se puede ejecutar la función mediante una llamada a la [Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) método, que devuelve un objeto que representa el valor devuelto de la función.  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: ee.h  
+ Header: ee.h  
   
  Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
