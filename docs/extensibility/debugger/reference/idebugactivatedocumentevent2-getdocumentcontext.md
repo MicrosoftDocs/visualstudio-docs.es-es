@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e7472069-7337-4ef4-8f8a-8c027a2e22f4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e2b0fce6850e89a014d241e54f02b8c1b68c66f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4706a10a73e0ed62a03baaf4027906ce37006dcc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883777"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920609"
 ---
 # <a name="idebugactivatedocumentevent2getdocumentcontext"></a>IDebugActivateDocumentEvent2::GetDocumentContext
 Obtiene el contexto del documento que describe la posición en el documento que va a estar activa por el paquete de depuración.  

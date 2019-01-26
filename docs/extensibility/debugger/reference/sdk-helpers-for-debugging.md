@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6655b96ed51cd7cce5e94ce96cedf97517f1872a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6455e4999f5115aee50fa1605103c4dadcc165dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942416"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951743"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Asistentes de SDK para la depuración
 Estas funciones y declaraciones son funciones auxiliares globales para implementar motores de depuración, los evaluadores de expresión y los proveedores de símbolos en C++.  
@@ -230,7 +230,7 @@ HRESULT EnumMetricSections(
 |metricShowNonUserCode|Establezca esta opción en distinto de cero para mostrar el código no es de usuario.|  
 |metricJustMyCodeStepping|Establezca esta opción en distinto de cero para indicar que la ejecución paso a paso pueden producirse solo en el código de usuario.|  
 |metricCLSID|CLSID de un objeto de un tipo específico de métrica.|  
-|MetricName|Nombre descriptivo para un objeto de un tipo específico de métrica.|  
+|metricName|Nombre descriptivo para un objeto de un tipo específico de métrica.|  
 |metricLanguage|Nombre del idioma.|  
   
 ## <a name="registry-locations"></a>Ubicaciones del registro  
@@ -261,7 +261,7 @@ HRESULT EnumMetricSections(
   
 |Marcador de posición|Descripción|  
 |-----------------|-----------------|  
-|*[clave del registro]*|`HKEY_CURRENT_USER` o `HKEY_LOCAL_MACHINE`.|  
+|*[registry key]*|`HKEY_CURRENT_USER` o `HKEY_LOCAL_MACHINE`.|  
 |*[raíz de la versión]*|La versión de Visual Studio (por ejemplo, `7.0`, `7.1`, o `8.0`). Sin embargo, esta raíz también se puede modificar mediante la **/rootsuffix** cambie a **devenv.exe**. VSIP, este modificador es normalmente **Exp**, por lo que podría ser la raíz de la versión, por ejemplo, 8.0Exp.|  
 |*[raíz métrica]*|Puede ser `AD7Metrics` o `AD7Metrics(Debug)`, dependiendo de si se usa la versión de depuración de dbgmetric.lib. **Nota:**  Si se utiliza dbgmetric.lib, esta convención de nomenclatura debe cumplir si dispone de las diferencias entre depuración y lanzamiento de versiones que deben reflejarse en el registro.|  
 |*[tipo de métrica]*|El tipo de métrica se escriban: `Engine`, `ExpressionEvaluator`, `SymbolProvider`, etcetera. Todas ellas se definen como en dbgmetric.h como `metricTypeXXXX`, donde `XXXX` es el nombre de tipo específico.|  
@@ -422,7 +422,7 @@ HRESULT EnumMetricSections(
   
  Encabezado: includes\dbgmetric.h  
   
- Biblioteca: libs\ad2de.lib, libs\dbgmetric.lib  
+ Library: libs\ad2de.lib, libs\dbgmetric.lib  
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

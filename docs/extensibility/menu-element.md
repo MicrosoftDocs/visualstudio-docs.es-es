@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: ce0560f3-b4c9-4ab2-a99c-d4e10f37b9e0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3d2e874a414efd546e3d6841cfaaf9fdd70da5c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 93efb9d03f09be9ce4fc8097b975ddf181a01526
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951396"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948770"
 ---
 # <a name="menu-element"></a>Elemento de menú
 Define un elemento de menú. Estos son los seis tipos de menús: Contexto, menú, MenuController, MenuControllerLatched, barra de herramientas y ToolWindowToolbar.  
@@ -50,7 +50,7 @@ Define un elemento de menú. Estos son los seis tipos de menús: Contexto, menú
 |Elemento|Descripción|  
 |-------------|-----------------|  
 |Elemento primario|Opcional. El elemento primario del elemento de menú.|  
-|CommandFlag|Obligatorio. Consulte [flag (elemento) comando](../extensibility/command-flag-element.md). Los valores válidos de CommandFlag para un menú son como sigue:<br /><br /> -   **AlwaysCreate**<br />-   **DefaultDocked**<br />-   **DefaultInvisible** -esta marca no afecta a la presentación de las barras de herramientas.<br />-   **DontCache**<br />-   **DynamicVisibility** -esta marca no afecta a la presentación de las barras de herramientas.<br />-   **IconAndText**<br />-   **NoCustomize**<br />-   **NotInTBList**<br />-   **NoToolbarClose**<br />-   **TextoCambia**<br />-   **TextIsAnchorCommand**|  
+|CommandFlag|Obligatorio. Consulte [flag (elemento) comando](../extensibility/command-flag-element.md). Los valores válidos de CommandFlag para un menú son como sigue:<br /><br /> -   **AlwaysCreate**<br />-   **DefaultDocked**<br />-   **DefaultInvisible** -esta marca no afecta a la presentación de las barras de herramientas.<br />-   **DontCache**<br />-   **DynamicVisibility** -esta marca no afecta a la presentación de las barras de herramientas.<br />-   **IconAndText**<br />-   **NoCustomize**<br />-   **NotInTBList**<br />-   **NoToolbarClose**<br />-   **TextChanges**<br />-   **TextIsAnchorCommand**|  
 |Cadenas|Obligatorio. Consulte [Strings (elemento)](../extensibility/strings-element.md). El elemento secundario `ButtonText` debe definirse el elemento.|  
 |Anotación|Comentario opcional.|  
   

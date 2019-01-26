@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c483eaab-db29-46de-bfdb-5c2a9a9cfb68
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c16d3a9658f2e53a651f7a5201bc5f04d48413c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fec663bce0c64d4da003ca337ab43cebbe73a2d7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989482"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960300"
 ---
 # <a name="bperrortype"></a>BP_ERROR_TYPE
 Especifica el tipo de error de un punto de interrupción.  

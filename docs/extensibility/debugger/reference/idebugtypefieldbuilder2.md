@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 23911c5b-2bbf-4734-9976-87a0bd6ea36c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed8304203b7145861797732be98c7ba9e22ef6af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b5fe9f0ba0182662a429cd7003caca5c48288309
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898614"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955276"
 ---
 # <a name="idebugtypefieldbuilder2"></a>IDebugTypeFieldBuilder2
 Extiende la **IDebugTypeFieldBuilder** para poder crear tipos de matriz.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43ba49107c1f3b2ab72db024b8dbfd01d8eab857
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cc2cfc74b192be01b9b5ce258d2686dda1b8ccc7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832559"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930009"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Crear un sistema de proyectos básico, parte 1
 En Visual Studio, los proyectos son los contenedores que los desarrolladores usan para organizar los archivos de código fuente y otros activos. Los proyectos aparecen como elementos secundarios de soluciones en la **el Explorador de soluciones**. Los proyectos permiten organizar, compilar, depurar e implementar el código fuente y crear referencias a servicios Web, bases de datos y otros recursos.  
@@ -74,7 +74,7 @@ En Visual Studio, los proyectos son los contenedores que los desarrolladores usa
   
 3. Hacer que el icono distintivo. Este icono aparecerá en el **nuevo proyecto** cuadro de diálogo más adelante en el tutorial.  
   
-    ![Icono de proyecto simple](../extensibility/media/simpleprojicon.png "SimpleProjIcon")  
+    ![Simple Project Icon](../extensibility/media/simpleprojicon.png "SimpleProjIcon")  
   
 4. El icono Guardar y cerrar el editor de iconos.  
   
@@ -456,7 +456,7 @@ Templates
   
 2. En el **propiedades** windows, reduzca el mapa de bits a 16 por 16 píxeles. Asegúrese de distintivo el mapa de bits.  
   
-    ![Comando de proyecto simple](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
+    ![Simple Project Comm](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
   
 3. En el **propiedades** ventana, cambie el **acción de compilación** del mapa de bits a **recurso incrustado**.  
   
@@ -634,6 +634,6 @@ Templates
   
 6. Empiece a depurar el proyecto. El nuevo proyecto debe compilar, ejecutar y mostrar "Hola VSX!!!" en la ventana de la consola.  
   
-    ![Comando de proyecto simple](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")  
+    ![Simple Project Command](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")  
   
    ¡Enhorabuena! Ha implementado un sistema de proyectos administrados básico.

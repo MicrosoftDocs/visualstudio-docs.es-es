@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bfa07fd46c95ada3135602f2fc09743fcaef08b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: de1a73cda8be9e56b0cad605f5507d52509ec906
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820792"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038050"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementación de colores de la sintaxis
 Cuando el servicio de lenguaje proporciona la coloración de sintaxis, el analizador convierte una línea de texto en una matriz de elementos coloreables y devuelve los tipos de token correspondientes a estos elementos coloreables. El analizador debe devolver tipos de token que pertenecen a una lista de elementos coloreables. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] cada elemento coloreable se muestra en la ventana de código según los atributos asignados por el objeto de Coloreador para el tipo de token adecuado.  

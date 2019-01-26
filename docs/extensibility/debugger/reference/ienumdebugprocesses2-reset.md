@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 31cbde4f-0bba-497a-9969-d2c342ef4a7b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5a86d990ef083d2a4ba98d79ac747e7d1c33344
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4258201e381a8915db562e1995a18ecf70041bad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880080"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953856"
 ---
 # <a name="ienumdebugprocesses2reset"></a>IEnumDebugProcesses2::Reset
 Restablece la enumeración al primer elemento.  

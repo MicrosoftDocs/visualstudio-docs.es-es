@@ -15,17 +15,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - troubleshooting [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d99c3ba5c393638f965fa32f03a6c534d583a166
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 82f1d66b1d4159ddb7a2fc4526af65d6cf3a6ec0
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919029"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865208"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Solución de problemas de errores en las soluciones de Office
   Pueden surgir problemas al realizar las siguientes tareas mientras desarrolla soluciones de Office en Visual Studio:  

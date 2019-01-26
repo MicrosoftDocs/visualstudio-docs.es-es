@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9667b0a5-4295-46cc-9388-b75c1350be15
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a16be2cd972688ef27816caacba2b5b0cfb53d4b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c73e3f6a4720326af7766b5f4b47f77f7a27f678
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885658"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956849"
 ---
 # <a name="idebugarrayfield"></a>IDebugArrayField
 Esta interfaz describe un símbolo de matriz o un tipo.  

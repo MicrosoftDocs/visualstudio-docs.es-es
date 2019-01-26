@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c85d867d042ea51023fc20259814a27b108e150
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d68ef2eb1dfd153cb4d5048901cc824c87585a35
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875172"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968653"
 ---
 # <a name="address-dpi-issues"></a>Valor de PPP de solucionar problemas
 Un número creciente de dispositivos se entrega con pantallas "alta resolución". Estas pantallas suelen tengan más de 200 píxeles por pulgada (PPP). Trabajar con una aplicación en estos equipos necesitará contenido necesario escalar verticalmente para satisfacer las necesidades de ver el contenido a una distancia de visualización normal para el dispositivo. A partir de 2014, el destino principal para las pantallas de alta densidad es dispositivos (teléfonos, equipos portátiles de ostra y tabletas) de informática móvil.  
@@ -96,7 +96,7 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
   
 - espacio de int = DpiHelper.LogicalToDeviceUnitsX (10);  
   
-- alto de int = VsUI::DpiHelper::LogicalToDeviceUnitsY(5);  
+- int height = VsUI::DpiHelper::LogicalToDeviceUnitsY(5);  
   
   Hay sobrecargas LogicalToDeviceUnits para permitir el escalado de objetos como Rect, punto y tamaño.  
   

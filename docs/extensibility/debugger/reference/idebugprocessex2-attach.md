@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f3334ed7-39bf-4d02-a338-36f567b9b287
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3bef8e8016d89c2a7a4c98e9f486358fa8ba108a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 51de15419cd80aa4672fa845fff36179f5e8d59f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905116"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965908"
 ---
 # <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
 Este método informa al proceso que una sesión es ahora el proceso de depuración.  

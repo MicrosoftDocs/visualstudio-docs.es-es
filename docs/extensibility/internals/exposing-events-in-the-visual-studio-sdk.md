@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d2eeb155212f7e065febb68b58b31879b5d5a7c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c08af11ce08cf86948655d01dc5468a3d70ae2fa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853101"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924314"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Exponer eventos en el SDK de Visual Studio
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] permite obtener eventos mediante la automatización. Se recomienda que origen de eventos para los proyectos y elementos de proyecto.  
@@ -46,7 +46,7 @@ ms.locfileid: "53853101"
 ## <a name="registry-entries-from-the-basic-project-sample"></a>Entradas del registro desde el proyecto básico de ejemplo  
  En esta sección se muestra dónde agregar valores de evento de automatización en el registro.  
   
- **[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\\< PkgGUID\>\AutomationEvents]**
+ **[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\\<PkgGUID\>\AutomationEvents]**
   
  **AutomationProjectEvents** = devuelve el `AutomationProjectEvents` objeto.  
   

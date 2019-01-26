@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: e69a3469-a049-420c-b918-c48a1e7b9baf
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc53ec59b509d3cb731ba6dccd5e062e30f0b963
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ec01e7aa9b925dd51c4e92592447f676de9d157c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991063"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933534"
 ---
 # <a name="idebugsettingscallback2geteelocalobject"></a>IDebugSettingsCallback2::GetEELocalObject
 Recupera un objeto local de expresión del evaluador de expresiones según el nombre de métrica.  

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: f9fce48e-7d4e-4627-a0fb-77b75428146a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9997a9013ef48820d8f2dc4846f787e4042431ec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 01730d60c6e4a3d53b95bce55e0abe111d02f347
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964723"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967068"
 ---
 # <a name="notify-the-port"></a>Notificar el puerto
 Después de iniciar un programa, el puerto debe recibir una notificación, como sigue:  

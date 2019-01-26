@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 20c61f8a-d32d-47e2-9c67-bf721e2cbead
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ba74b54e074a7522783e63c367586a943607857
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8cf55e2cf88b8cf6f92145ea7a75aa35a5f56486
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838182"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958594"
 ---
 # <a name="intellisense-hosting"></a>Hospedaje de IntelliSense
 Visual Studio permite hospedar de IntelliSense. IntellSense hospedaje permite proporcionar IntelliSense para el código que no se hospeda en el editor de texto de Visual Studio.  

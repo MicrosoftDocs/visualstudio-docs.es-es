@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 151003a9-2e4d-4acf-9f4d-365dfa6b9596
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33f1d88eaa7fe6cce34f4b386998ecc68cfe4953
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eb608d834f50ca5f778d653b5733395b7c2cb12f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934484"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038339"
 ---
 # <a name="idebugengineprogram2"></a>IDebugEngineProgram2
 Esta interfaz proporciona compatibilidad con la depuración multiproceso.  

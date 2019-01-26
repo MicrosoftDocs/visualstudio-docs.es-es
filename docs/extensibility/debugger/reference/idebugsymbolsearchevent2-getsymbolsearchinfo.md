@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ae9eb72b-f2aa-43b8-87ca-da19d2e78d17
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f02eba47963dc39e7fa1fc426a762ff9f30a664d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f1eb6d2e22624744835275f69cb1eed0e212d659
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888704"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955448"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 Llama a un controlador de eventos para recuperar los resultados de un proceso de carga de símbolos.  

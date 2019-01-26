@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 306ea0b4-6d9e-4871-8d8d-a4032d422940
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: caa9f615c6ed6f314695b195a6095d238382a4c2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aefdf5e039f591ba6b9cd1fe0e1fce88e3b497c4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967508"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923008"
 ---
 # <a name="send-startup-events-after-a-launch"></a>Enviar eventos de inicio después de un lanzamiento
 Una vez que el motor de depuración (DE) está asociado al programa, envía una serie de eventos de inicio a la sesión de depuración.  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 73966e8a-b643-43e0-9b4e-0aa4b402ebbe
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4445e681320f57a2e8aaf2e39793185b2b963f7a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 46921b597432259734ead84178f3b8dcf03c1232
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938165"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943934"
 ---
 # <a name="idebugtypefieldbuildercreatepointertotype"></a>IDebugTypeFieldBuilder::CreatePointerToType
 Crea un puntero al tipo especificado.  

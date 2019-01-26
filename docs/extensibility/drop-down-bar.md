@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 4bb621bd-72f5-43d5-916f-9f66617da049
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a23249a80b87c55e3065abb7cca192182aad4fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3506ff05bf7551a66ea616ca4c49dbf6ea80f4a7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968068"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949290"
 ---
 # <a name="drop-down-bar"></a>Barra desplegable
 La barra desplegable se proporciona en la parte superior de la ventana de código y contiene dos listas desplegables.  

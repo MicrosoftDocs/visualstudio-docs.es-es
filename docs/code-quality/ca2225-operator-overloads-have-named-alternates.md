@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: af8f7ab1-63ad-4861-afb9-b7a7a2be15e1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a60a050f6403abec471b02e44696081f07c347a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3da94ae10da4632eafda48f145d9bb099d4c3207
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954810"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965138"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Las sobrecargas del operador tienen alternativas con nombre
 
@@ -52,7 +52,7 @@ ms.locfileid: "53954810"
 |/=|/=|/=|Dividir|
 |==|=|==|Es igual a|
 |^|Xor|^|Xor|
-|^=|Xor =|^=|Xor|
+|^=|Xor=|^=|Xor|
 |>|>|>|Comparar|
 |>=|>=|>=|Comparar|
 |++|N/D|++|Incremento|
@@ -61,7 +61,7 @@ ms.locfileid: "53954810"
 |<<=|<<=|<<=|Izq|
 |<|<|<|Comparar|
 |<=|<=|\<=|Comparar|
-|&&|N/D|&&|AND lógico|
+|&&|N/D|&&|LogicalAnd|
 |&#124;&#124;|N/D|&#124;&#124;|LogicalOr|
 |!|N/D|!|LogicalNot|
 |%|Mod|%|Mod o resto|

@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2 | Documentos de Microsoft
+title: IDebugProperty2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a7d5c70f-a1a5-4120-9f70-184e01c25bff
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a74a32a711e26177acb0a50e895ef0b88c82de94
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bdd5b114e5b34b7c51b210f33d70d831f6188b06
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891286"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54921952"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 Esta interfaz representa una propiedad de marco de pila, una propiedad de documento del programa o alguna otra propiedad. La propiedad suele ser el resultado de evaluación de una expresión.  

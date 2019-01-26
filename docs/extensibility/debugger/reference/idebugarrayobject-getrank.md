@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9948551a-e334-4ff6-979c-08dab633b9b6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e433b8c50b363347469586d2ecde4bd287a58264
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 333dca88fae59d4407e6be813b2241d070648648
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857300"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923047"
 ---
 # <a name="idebugarrayobjectgetrank"></a>IDebugArrayObject::GetRank
 Obtiene el rango de la matriz, es decir, el número de dimensiones.  

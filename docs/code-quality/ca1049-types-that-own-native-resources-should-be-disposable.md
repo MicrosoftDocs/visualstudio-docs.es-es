@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 084e587d-0e45-4092-b767-49eed30d6a35
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc947358aa4aaf3b9d4bbe646d99e289fa383a06
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37bd88e00ed8663be974bbc6ba78d5ce3ae45662
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834755"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960274"
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: Los tipos que poseen recursos nativos deben ser descartables
 

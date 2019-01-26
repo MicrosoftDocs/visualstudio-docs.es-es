@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 252c5221-2e64-461c-8dcf-b622e400e0be
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6c63ba54a8dd35f884b07d9d7cf676c5477d6ec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc8ababaaf48ba46879325e90f943f23bee84d75
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966932"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972344"
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>Esquematización y texto oculto en un servicio de lenguaje heredado
 Esquematización hace posible contraer una secuencia de líneas de texto en una sola línea. Por ejemplo, en C++ se pueden contraer todos los métodos en una sola línea, que muestra solo la firma del método. Texto oculto es la secuencia de líneas de texto que se puede mostrar u ocultar.  

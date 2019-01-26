@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b41cea5b06022764e2f05ddd32f1ed476934f691
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 519dfe37e6c2120534722a85cb07b7cace143d46
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887781"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973400"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList (Función)
 Esta función actualiza una lista de archivos para un comando de control de código fuente concreto y proporciona el estado de control de código fuente en todos los archivos indicados.  
@@ -41,10 +41,10 @@ SCCRTN SccPopulateList (
  pvContext  
  [in] La estructura de contexto de complemento de control de origen.  
   
- Ncomando  
+ nCommand  
  [in] El comando de control de código fuente que se aplicarán a todos los archivos en el `lpFileNames` matriz (consulte [código de comando](../extensibility/command-code-enumerator.md) para obtener una lista de comandos posibles).  
   
- n  
+ nFiles  
  [in] Número de archivos en el `lpFileNames` matriz.  
   
  lpFileNames  

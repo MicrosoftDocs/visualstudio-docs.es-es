@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: cf3efc91-1532-4022-bbb8-a18658424fee
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 815b9a176d747c2139a5d88326085d48120e1819
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1f3816943ca3779b9110de2359fd10852330eb20
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847326"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940263"
 ---
 # <a name="customparameters-element-visual-studio-templates"></a>Elemento CustomParameters (plantillas de Visual Studio)
 Agrupa los parámetros personalizados que deben pasarse al Asistente de plantilla cuando el asistente realiza sustituciones de parámetros.  

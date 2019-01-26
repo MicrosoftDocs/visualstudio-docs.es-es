@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::CauseBreak | Documentos de Microsoft
+title: IDebugProgram2::CauseBreak | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 07d353fc-68ab-4297-a18f-3d3c7a80e121
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0e30e90aa1778904bc6c6349427c567ea3bb160
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1f7dbad02632663474f62f561773aa62a8735071
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829675"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069387"
 ---
 # <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
 Las solicitudes que el programa de detener la ejecución del siguiente momento uno de sus intentos de subprocesos para ejecutar.  

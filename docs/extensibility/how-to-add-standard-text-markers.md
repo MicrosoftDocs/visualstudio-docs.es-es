@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: a39fca69-0014-474c-933f-51f0e9b9617e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 711822c81e81df451ff7e548eb701613efedde85
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80c32827a991a87b582f31ceefd2bfd6dbcc7a8f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874633"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922355"
 ---
 # <a name="how-to-add-standard-text-markers"></a>Procedimiento Agregar marcadores de texto estándar
 Use el procedimiento siguiente para crear uno de los tipos de marcador de texto predeterminados proporcionados con la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor básico.  

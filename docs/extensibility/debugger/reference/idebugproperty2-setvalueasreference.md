@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::SetValueAsReference | Documentos de Microsoft
+title: IDebugProperty2::SetValueAsReference | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 341b1b89-4ab8-4e1c-abe2-fb955df5c6b0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 079a80ddae42c68eb9b57b42183fa639c7b76241
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7b185d284c7b5d5970737fa28aa006c636a6e6f1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887164"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951487"
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
 Establece el valor de esta propiedad en el valor de la referencia proporcionada.  

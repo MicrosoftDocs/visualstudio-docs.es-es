@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5a085d18-62c6-4740-b9e9-3f5db6bfdf7f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbb1a135cfca3e358d740f6c6ef23b2040843ff4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 29c02335f83438bf727a5daacd01d88c99e8d038
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927134"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972761"
 ---
 # <a name="debugpropertyinfo"></a>DEBUG_PROPERTY_INFO
 Contiene información sobre una propiedad de depuración.  
@@ -58,10 +58,10 @@ public struct DEBUG_PROPERTY_INFO { 
  bstrName  
  El nombre de propiedad dentro de un contexto.  
   
- bstrType parámetro  
+ bstrType  
  El tipo de propiedad como una cadena con formato.  
   
- bstrValue parámetro  
+ bstrValue  
  El valor de propiedad como una cadena con formato.  
   
  pProperty  

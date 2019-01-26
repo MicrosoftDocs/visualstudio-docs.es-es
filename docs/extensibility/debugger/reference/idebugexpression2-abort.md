@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression2::Abort | Documentos de Microsoft
+title: IDebugExpression2::Abort | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4fcb712e-1bdb-4b75-a440-35cc79ee147e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 668b4fe87bb0c37796d63cb313c15d146c70a58e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fbc01e9b885ec43c16b92650d76ba3922ba1e49f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910599"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967448"
 ---
 # <a name="idebugexpression2abort"></a>IDebugExpression2::Abort
 Este método cancela la evaluación de expresiones asincrónica como iniciado mediante una llamada a la [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) método.  

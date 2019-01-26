@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a89e6f12cb3e061abc4ebbe30cfe8d3a92138df6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 46f832992b85c181738f11976e7fb0f59de1bd89
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913315"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920921"
 ---
 # <a name="xml-document-properties-properties-window"></a>Propiedades del documento XML, ventana Propiedades
 
@@ -45,7 +45,7 @@ El **propiedades** ventana proporciona información básica sobre el documento q
 
  También puede introducir la ruta a los esquemas. Si se especifican varios esquemas, cada una de las rutas debe ir entre comillas dobles.
 
- **Hoja de estilos**
+ **Stylesheet**
 
  El archivo XSLT que se utiliza para transformar el documento cuando el **Mostrar resultado XSLT** se usa el comando. Si este campo está en blanco cuando el **Mostrar resultado XSLT** es utilizar el comando, el editor utiliza el valor proporcionado en el `xml-stylesheet` procesamiento de instrucciones de documento, o bien le pedirá el nombre de archivo.
 

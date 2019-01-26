@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject3::GetPointerAddress | Documentos de Microsoft
+title: IDebugPointerObject3::GetPointerAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 4cc5af04-9e70-420d-8230-ef3108df6d51
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d108ead60589f8a75b85c5e266c04806a096bd0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c02356e8cadda3344991375c6f15f22edb962a92
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934140"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962945"
 ---
 # <a name="idebugpointerobject3getpointeraddress"></a>IDebugPointerObject3::GetPointerAddress
 Recupera la dirección del puntero.  

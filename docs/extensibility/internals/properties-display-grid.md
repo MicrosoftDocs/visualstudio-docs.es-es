@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 318e41b0-acf5-4842-b85e-421c9d5927c5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26dfbf505229ef3994f91e6f4af5eaf56b4d0d2a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 62430d70b86402876bc94c1051a710ea3c074c5a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949568"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960690"
 ---
 # <a name="properties-display-grid"></a>Cuadrícula para mostrar de Propiedades
 El **propiedades** ventana muestra los campos dentro de una cuadrícula. La columna izquierda contiene los nombres de propiedad; la columna derecha contiene los valores de propiedad.  

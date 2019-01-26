@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest3 | Documentos de Microsoft
+title: IDebugBreakpointRequest3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8a042beb-b319-48e3-b3c8-9c8336ab371b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8f987f925683bd4c81b189f27eae3d967359882
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26a5a69094c320ed105137de24b809d3163bdba9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963102"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955185"
 ---
 # <a name="idebugbreakpointrequest3"></a>IDebugBreakpointRequest3
 Esta interfaz representa la información necesaria para crear y enlazar cualquier tipo de punto de interrupción. Es una extensión de [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md).  

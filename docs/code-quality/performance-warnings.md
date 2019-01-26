@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: e014ac3a-02e6-46d9-942c-3491dd63782f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e9fca1eedc94aeb327191f44469945f69584500
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1000009e243906daf32fd68b22b5c49a07b21595
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868591"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947535"
 ---
 # <a name="performance-warnings"></a>advertencias de rendimiento
 Las advertencias de rendimiento compatibles con aplicaciones y bibliotecas de alto rendimiento.
@@ -41,7 +41,7 @@ Las advertencias de rendimiento compatibles con aplicaciones y bibliotecas de al
 | [CA1812: Evitar las clases internas sin instancia](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md) | El código del ensamblado no crea una instancia del tipo del nivel de ensamblado. |
 | [CA1813: Evitar atributos no sellados](../code-quality/ca1813-avoid-unsealed-attributes.md) | La biblioteca de clases de .NET Framework proporciona métodos para recuperar los atributos personalizados. De forma predeterminada, estos métodos buscan la jerarquía de herencia de atributo. La acción de sellar el atributo elimina la búsqueda en la jerarquía de herencia y puede mejorarse el rendimiento. |
 | [CA1814: Preferir las matrices escalonadas antes que multidimensionales](../code-quality/ca1814-prefer-jagged-arrays-over-multidimensional.md) | Una matriz escalonada es una matriz cuyos elementos son matrices. Las matrices que constituyen los elementos pueden ser de diferentes tamaños, que pueden dar lugar a un espacio desaprovechado para algunos conjuntos de datos. |
-| [CA1815: Invalidar equals y el operador equals en los tipos de valor](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md) | Para los tipos de valor, la implementación heredada de Equals utiliza la biblioteca de reflexión y compara el contenido de todos los campos. Mediante el cálculo, la reflexión es cara y no es necesario comparar cada campo para comprobar si hay igualdad. Si espera que los usuarios comparen u ordenen instancias, o utilicen instancias como claves de tabla hash, el tipo de valor debe implementar Equals. |
+| [CA1815: Invalidar Equals y el operador Equals en los tipos de valores](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md) | Para los tipos de valor, la implementación heredada de Equals utiliza la biblioteca de reflexión y compara el contenido de todos los campos. Mediante el cálculo, la reflexión es cara y no es necesario comparar cada campo para comprobar si hay igualdad. Si espera que los usuarios comparen u ordenen instancias, o utilicen instancias como claves de tabla hash, el tipo de valor debe implementar Equals. |
 | [CA1816: Llamar a GC. SuppressFinalize correctamente](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md) | Un método que es una implementación de Dispose no llama a GC. SuppressFinalize o un método que no es una implementación de Dispose llama a GC. SuppressFinalize o un método llama a GC. SuppressFinalize y pasa algo distinto de esto (Me en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). |
 | [CA1819: Las propiedades no deberían devolver matrices](../code-quality/ca1819-properties-should-not-return-arrays.md) | Las matrices devueltas por las propiedades no están protegidos contra escritura, incluso si la propiedad es de solo lectura. Para mantener la matriz inviolable, la propiedad debe devolver una copia de la matriz. Por lo general, los usuarios no entienden las implicaciones de rendimiento adversas que se originan al llamar a este tipo de propiedad. |
 | [CA1820: Probar las cadenas están vacías mediante la longitud de cadena](../code-quality/ca1820-test-for-empty-strings-using-string-length.md) | El uso de la propiedad String.Length o del método String.IsNullOrEmpty para comparar cadenas es mucho más rápido que el uso de Equals. |

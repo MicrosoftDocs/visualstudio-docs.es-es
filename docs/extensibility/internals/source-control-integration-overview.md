@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0a354ebafe81b707fa6b0560e473a753a36685d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee148a9455e9d1fc0f5615ecc03d15154bff20a7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902997"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919322"
 ---
 # <a name="source-control-integration-overview"></a>Información general de la integración del control de código fuente
 Esta sección comparan las dos maneras de integrar en el control de código fuente de Visual Studio; control de origen de un complemento y un VSPackage que proporciona una solución de control de código fuente y se resalta las nuevas características de control de código fuente. Visual Studio permite la conmutación manual entre VSPackages de control de código fuente y los complementos de control de código fuente, así como cambio automático basado en la solución.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 71d959c7-45df-485f-b0ee-f1c0439d54fb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a646a5321b9a6b7ccf000ecba409434efcc3aea0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0979efb6a66d5cee14481dbb573bea3bca225790
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900761"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973439"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
 Este método recupera un objeto de memoria que representa la memoria que está enlazado este objeto.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6456ab3e-1c03-4f3c-91f9-16797ab7f5e7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9224314d1417f08bbf025d774c1ecc8ac706e05
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9b9636dce4c964afcc5f160ed5a08825d96d597b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852523"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970362"
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
 Este método determina el tipo de tiempo de ejecución de un objeto.  

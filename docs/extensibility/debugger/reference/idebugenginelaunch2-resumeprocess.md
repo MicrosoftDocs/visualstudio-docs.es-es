@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 61ccc14e-75c6-44e7-aae4-57a9aac52089
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc5103a412e1164d84bdd44ab737f974919f5b11
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f561a5edcc0059f9eca1eba67ce24084e4eadcb1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840283"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947869"
 ---
 # <a name="idebugenginelaunch2resumeprocess"></a>IDebugEngineLaunch2::ResumeProcess
 Reanuda la ejecución de procesos.  

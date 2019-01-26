@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: acfcabed-9f2f-436c-ad18-7ca2f45d631b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4082f1dab489a045469b1ecd7135211c94a3dd0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a2898a78971eaf20abe89274a1492afb343edfbb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836119"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919400"
 ---
 # <a name="breakpoints-visual-studio-sdk"></a>Puntos de interrupción (Visual Studio SDK)
 Hay tres tipos de puntos de interrupción: pendientes enlazados y error.  

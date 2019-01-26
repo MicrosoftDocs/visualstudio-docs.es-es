@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 85e73b73-29dc-464f-8734-ed308742c435
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8e28733c91097094f38fa92ff0f21d54a194942
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bb6d020e6333286ec7e73f3e7af62f1e97cfd922
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948412"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966353"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>Procedimientos recomendados para implementar un complemento de control de código fuente
 Los detalles técnicos siguientes pueden ayudarle a implementar un complemento de control de código fuente de forma confiable [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
