@@ -11,15 +11,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <appAddin> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdba74f7022ec73cfd6d52c386e8a4594aa6ca7f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b53fcfaa28694b88f3401d0e2e40b157ba7c3201
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905444"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875997"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt; elemento (desarrollo de Office en Visual Studio)
   El **appAddin** elemento de la `vstov4` espacio de nombres almacena información específica de la personalización para complementos VSTO.
@@ -37,16 +37,16 @@ ms.locfileid: "53905444"
 </appAddin>
 ```
 
-## <a name="elements-and-attributes"></a>Los elementos y atributos
+## <a name="elements-and-attributes"></a>Elementos y atributos
  El **appAddin** elemento es necesario y se encuentra en la `vstov4` espacio de nombres. Solo hay un **appAddin** elemento definido en un manifiesto de aplicación.
 
  El **appAddin** elemento tiene los siguientes atributos.
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|**Aplicación**|Obligatorio. Identifica la aplicación de Microsoft Office. El valor puede ser uno de los siguientes: Excel, InfoPath, Outlook, PowerPoint, Project, Visio o Word.|
-|**LoadBehavior**|Opcional. De forma predeterminada, el **loadBehavior** se habilita al establecer este valor. Para la depuración, el complemento de VSTO puede deshabilitarse si establece el valor en dos. Para obtener más información, vea la tabla denominada LoadBehavior Values en [entradas del registro para complementos VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|
-|**nombre de clave**|Obligatorio. Este valor es el nombre de clave del Registro que la aplicación utilizará para cargar el complemento de VSTO. Para obtener más información, consulte [entradas del registro para complementos VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|
+|**application**|Obligatorio. Identifica la aplicación de Microsoft Office. El valor puede ser uno de los siguientes: Excel, InfoPath, Outlook, PowerPoint, Project, Visio o Word.|
+|**loadBehavior**|Opcional. De forma predeterminada, el **loadBehavior** se habilita al establecer este valor. Para la depuración, el complemento de VSTO puede deshabilitarse si establece el valor en dos. Para obtener más información, vea la tabla denominada LoadBehavior Values en [entradas del registro para complementos VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|
+|**keyName**|Obligatorio. Este valor es el nombre de clave del Registro que la aplicación utilizará para cargar el complemento de VSTO. Para obtener más información, consulte [entradas del registro para complementos VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|
 
  El **appAddin** elemento tiene los siguientes elementos secundarios.
 

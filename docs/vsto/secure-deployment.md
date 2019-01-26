@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, security
 - Office applications [Office development in Visual Studio], security
 - ClickOnce deployment [Office development in Visual Studio], security
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 40428d36648e159bd8fa90c2680b660b2112ef5f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a334b9eab9fb9b859d45eda4419cdfdcde4b44fc
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827932"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875646"
 ---
 # <a name="secure-deployment"></a>Implementación segura
   Cuando se crea una solución de Office, el equipo de desarrollo se actualiza automáticamente para permitir que el código en el proyecto se ejecute. Sin embargo, al implementar la solución, debe proporcionar evidencia de que se va a basar una decisión de confianza para la solución con un certificado de firma o usar el [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] clave del mensaje de confianza. Para obtener más información, consulte [conceder confianza a las soluciones de Office](../vsto/granting-trust-to-office-solutions.md).  

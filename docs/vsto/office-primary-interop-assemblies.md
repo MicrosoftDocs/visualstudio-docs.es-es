@@ -9,17 +9,17 @@ helpviewer_keywords:
 - primary interop assemblies
 - assemblies [Office development in Visual Studio], primary interop assemblies
 - Office primary interop assemblies
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f83a2b61a80616fdcdb8b48c7501b4fa47f0b99c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 79651c3404256b3abd7750cdfc20b33abe44c477
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926742"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876114"
 ---
 # <a name="office-primary-interop-assemblies"></a>ensamblados de interoperabilidad primarios de Office
 

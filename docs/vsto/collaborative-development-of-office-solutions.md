@@ -12,15 +12,15 @@ helpviewer_keywords:
 - collaborative development [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2d8c6d19442a1735ee90db52e4c5f1a98e1fe860
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 897b90c9b370d61cfe8f3202e0f3c5c33ce6f613
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876502"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875971"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Desarrollo en colaboración de las soluciones de Office
   Varios desarrolladores pueden trabajar en un proyecto de Office en la misma manera que colaboran en otros proyectos de Visual Studio. Visual Studio localiza correctamente la instalación de Microsoft Office en cada equipo, incluso si está instalado Office en distintas ubicaciones. Sin embargo, hay algunas consideraciones importantes a tener en cuenta.  
