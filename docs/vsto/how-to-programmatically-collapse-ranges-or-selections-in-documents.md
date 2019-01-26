@@ -13,15 +13,15 @@ helpviewer_keywords:
 - collapsing ranges
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5b2fdd352c0bf280e237a67d55ac658d9a61f590
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 40dbfca783b75657ba820bdd03695a326bec3343
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54090849"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864649"
 ---
 # <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>Procedimiento Mediante programación contraer intervalos o selecciones en documentos
   Si está trabajando con un objeto <xref:Microsoft.Office.Interop.Word.Range> o <xref:Microsoft.Office.Interop.Word.Selection> , puede que desee cambiar la selección a un punto de inserción antes de insertar el texto, para no sobrescribir el texto existente. Tanto el <xref:Microsoft.Office.Interop.Word.Range> y <xref:Microsoft.Office.Interop.Word.Selection> objetos tienen un método Collapse, que hace uso de la <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> valores de enumeración:  

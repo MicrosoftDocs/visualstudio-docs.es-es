@@ -10,17 +10,17 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], adding controls
 - actions panes [Office development in Visual Studio], creating in Word
 - actions panes [Office development in Visual Studio], adding controls
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4e868f8639aa8803e1ba9631bf46929bc917be3f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 49a570a68d2ce301ff103c3587e3246a725a1f42
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943095"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866281"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Tutorial: Insertar texto en un documento desde un panel de acciones
   Este tutorial muestra cómo crear un panel de acciones en un documento de Microsoft Office Word. El panel de acciones contiene dos controles que recopilan datos y, a continuación, envíe el texto al documento.  
@@ -111,7 +111,7 @@ ms.locfileid: "53943095"
   
     |Property|Valor|  
     |--------------|-----------|  
-    |**Name**|**GetName**|  
+    |**Name**|**getName**|  
     |**Size**|**130, 20**|  
   
 5.  Agregue un segundo **etiqueta** al control del panel de acciones de control y cambie el **texto** propiedad **dirección**.  
@@ -120,7 +120,7 @@ ms.locfileid: "53943095"
   
     |Property|Valor|  
     |--------------|-----------|  
-    |**Name**|**GetAddress**|  
+    |**Name**|**getAddress**|  
     |**Acepta el valor devuelto**|**True**|  
     |**Multiline**|**True**|  
     |**Size**|**130, 40**|  

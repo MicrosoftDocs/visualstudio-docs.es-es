@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, event receivers
 - event receivers [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a92b86d7e02487ff333fb8517086f9c6221d35ec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 00d92665fd34dda82e521cb8459b71412a6edc9e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53818867"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865273"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Procedimiento Crear un receptor de eventos para una instancia de la lista específica
   Un receptor de eventos de la instancia de lista responde a los eventos que ocurren en cualquier instancia de una definición de lista. Aunque la plantilla de receptor de eventos no se permite el establecimiento de destinos de una instancia de la lista específica, puede modificar un receptor de eventos que se limita a una definición de lista para responder a eventos en una instancia de la lista específica.  

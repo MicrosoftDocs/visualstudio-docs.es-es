@@ -9,17 +9,17 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], extending
 - SharePoint project items, extending
 - SharePoint development in Visual Studio, extending project items
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 424e6d6295b0a9af1ec5d155353f766d4ba17689
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 46ce44bd4f0935fc0b3cd55d4dc7d85cf307214f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950191"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865065"
 ---
 # <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>Procedimiento Agregar una propiedad a una extensión de elemento de proyecto de SharePoint
   Puede usar una extensión de elemento de proyecto para agregar una propiedad a cualquier elemento de proyecto de SharePoint que ya está instalado en Visual Studio. La propiedad aparece en la **propiedades** ventana cuando se selecciona el elemento de proyecto en **el Explorador de soluciones**.  

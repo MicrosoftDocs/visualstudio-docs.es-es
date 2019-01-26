@@ -10,15 +10,15 @@ helpviewer_keywords:
 - custom actions [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f7268ed6801e06477312b47f2c890b59ba62f64
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: df3efc1bce5cccc88425735e50daba63f31ee922
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869524"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862621"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Acciones personalizadas en áreas de formulario de Outlook
   Acciones muestran los botones que permiten a los usuarios respondan a un elemento de Microsoft Office Outlook. Por ejemplo, para responder a un elemento de correo, los usuarios hacen clic los **respuesta**, **responder a todos**, o **reenviar** botones de acción. Cada una de estas acciones crea un nuevo elemento de correo y rellena los campos del elemento mediante el uso de información del elemento original.  

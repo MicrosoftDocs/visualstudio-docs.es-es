@@ -12,17 +12,17 @@ helpviewer_keywords:
 - globalizing [SharePoint development in Visual Studio]
 - localizing [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, localizing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b653efc0cce8d8fb2b3e28b8e6c61e6371b4f6e9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eb23307326d1018238354997b98a0cef48efc2c4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837361"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864376"
 ---
 # <a name="localize-sharepoint-solutions"></a>Localizar soluciones de SharePoint
 
@@ -39,7 +39,7 @@ ms.locfileid: "53837361"
 |Tipo de archivo de recursos|Descripción|  
 |------------------------|-----------------|  
 |Default|También conocido como un recurso de reserva, archivos de recursos predeterminados contienen cadenas localizadas en la referencia cultural predeterminada, como el inglés. Se usan si no se encuentra ningún archivo de recursos localizados para el idioma especificado. Los recursos predeterminados no tienen archivos independientes y se almacenan en el ensamblado principal de la aplicación.|  
-|Idioma neutro|Un archivo de recursos que contiene cadenas localizadas en un idioma, pero no una referencia cultural concreta. Por ejemplo, "fr" para francés.|  
+|Language-neutral|Un archivo de recursos que contiene cadenas localizadas en un idioma, pero no una referencia cultural concreta. Por ejemplo, "fr" para francés.|  
 |Específico del lenguaje|Un archivo de recursos que contiene cadenas localizadas en un idioma y una referencia cultural. Por ejemplo, "fr-CA" para francés canadiense.|  
   
  Para obtener más información, consulte [organización jerárquica de recursos para la localización](http://go.microsoft.com/fwlink/?LinkId=178360).  

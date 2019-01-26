@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - IManagedAddin interface
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b0e754502e3bee2a1e35dda7feb19bc4906f42e6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 03f1623a25f1c0299bc8895eb0c30a390e363791
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859060"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863349"
 ---
 # <a name="imanagedaddin-interface"></a>interfaz IManagedAddin
   Implementar la interfaz IManagedAddin para crear un componente que carga administrados complementos de VSTO. Esta interfaz se agregó en 2007 Microsoft Office system.  

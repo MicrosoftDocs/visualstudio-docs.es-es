@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], creating e-mail
 - Outlook [Office development in Visual Studio], sending e-mail
 - e-mail [Office development in Visual Studio], sending
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 91e59cc8d7bd0115a59c71f13e8e2dc200336b29
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 51546047a12e23c688ccfdfd05aeaa9c2ab89f95
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840426"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866732"
 ---
 # <a name="how-to-programmatically-send-email"></a>Procedimiento Enviar correo electrónico  
   Este ejemplo envía un mensaje de correo electrónico a los contactos que tienen el nombre de dominio **ejemplo.com** en sus direcciones de correo electrónico.  

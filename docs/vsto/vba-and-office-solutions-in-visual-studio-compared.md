@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - VBA code, managed code extensions
 - managed code extensions [Office development in Visual Studio], VBA compared to
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 09c5fdeb37fa09595cdfda99aba06b9546c5f696
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 313af1a48b4c8fac6281fd8250ed36104a5276b6
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820088"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866888"
 ---
 # <a name="vba-and-office-solutions-in-visual-studio-compared"></a>Soluciones VBA y Office en Visual Studio en comparación con
   Microsoft Visual Basic para aplicaciones (VBA) utiliza código no administrado que se integra estrechamente con las aplicaciones de Office. Los proyectos de Microsoft Office creados con Visual Studio le permiten sacar partido de .NET Framework y las herramientas de diseño de Visual Studio.  

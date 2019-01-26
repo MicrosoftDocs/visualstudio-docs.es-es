@@ -9,17 +9,17 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], extending
 - SharePoint project items, extending
 - SharePoint development in Visual Studio, extending project items
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0c716301eee70fea704831890dd1e61b12651f7c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 52d2cb187b4c119c17d87e089bdd7e2055556b90
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956197"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864776"
 ---
 # <a name="how-to-create-a-sharepoint-project-item-extension"></a>Procedimiento Crear una extensión de elemento de proyecto de SharePoint
   Crear una extensión de elemento de proyecto cuando desea agregar funcionalidad a un elemento de proyecto de SharePoint que ya está instalado en Visual Studio. Para obtener más información, consulte [elementos de proyecto de SharePoint ampliar](../sharepoint/extending-sharepoint-project-items.md).  

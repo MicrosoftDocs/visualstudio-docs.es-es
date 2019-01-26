@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - ProjectItem element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7c9a32a7fa84d8adc064aa3a3ac035999295791
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2d2736dbcde8708589b4918979acacfdafa34cc4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890107"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864286"
 ---
 # <a name="projectitem-element"></a>ProjectItem (elemento)
   Representa un elemento de proyecto de SharePoint. Este elemento, el elemento raíz necesario de la *.spdata* archivo.  
@@ -70,7 +70,7 @@ ms.locfileid: "53890107"
   
 |||  
 |-|-|  
-|**Espacio de nombres**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>SharePointProjectItemModel/SharePointTools/2010|  
+|**Espacio de nombres**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**Nombre de esquema**|Esquema de elemento de proyecto de SharePoint|  
 |**Archivo de validación**|ProjectItemModelSchema.xsd|  
 |**Puede estar vacío**|No|  

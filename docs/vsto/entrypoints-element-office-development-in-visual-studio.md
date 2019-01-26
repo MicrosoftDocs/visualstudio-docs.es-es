@@ -11,15 +11,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <entryPoints> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8392fa83899e078050786091fa4a2f462eb40c9b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5bbe0c00b86f38ab8b3dc47713af7d3b38f98045
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852949"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862283"
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;entryPoints&gt; elemento (desarrollo de Office en Visual Studio)
   El elemento `entryPoints` del espacio de nombres `vstav3` contiene todos los elementos `entryPoint` asociados a una solución de Office.
@@ -37,7 +37,7 @@ ms.locfileid: "53852949"
 </entryPoints>
 ```
 
-## <a name="elements-and-attributes"></a>Los elementos y atributos
+## <a name="elements-and-attributes"></a>Elementos y atributos
  El elemento `entryPoints` es obligatorio y se encuentra en el espacio de nombres `vstav3` . Hay un elemento `entryPoints` definido en el manifiesto de aplicación de cada solución de Office. Por ejemplo, si implementa tres soluciones de Office en una implementación de varios proyectos, hay tres elementos `entryPoints` en el manifiesto de aplicación.
 
  El elemento `entryPoints` tiene los atributos siguientes:
@@ -48,7 +48,7 @@ ms.locfileid: "53852949"
 
  `entryPoints` tiene los siguientes elementos:
 
-### <a name="entrypoint"></a>entryPoint
+### <a name="entrypoint"></a>entrypoint
  Obligatorio. El rol de la `entryPoint` elemento en el `vstav3` espacio de nombres se define en [ &#60;entryPoint&#62; elemento &#40;desarrollo de Office en Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md).
 
 ## <a name="document-level-customization-example"></a>Ejemplo de personalización de nivel de documento

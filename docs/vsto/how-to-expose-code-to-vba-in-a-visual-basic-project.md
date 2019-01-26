@@ -13,15 +13,15 @@ helpviewer_keywords:
 - host items [Office development in Visual Studio], exposing code to VBA
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a534d32dc8e9352c10a214fbd70ec361b82aed1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2da62fa4c5fc79fc217c165746e9f1fd062d3461
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900997"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867317"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Procedimiento Exponer código a VBA en un proyecto de Visual Basic
   Puede exponer código en un [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] proyectos a Visual Basic para aplicaciones (VBA) si desea que los dos tipos de código para interactuar entre sí.  

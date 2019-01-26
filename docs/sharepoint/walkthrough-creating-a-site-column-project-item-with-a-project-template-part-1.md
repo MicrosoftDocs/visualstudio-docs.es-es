@@ -10,17 +10,17 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], defining your own types
 - SharePoint projects, creating custom templates
 - SharePoint development in Visual Studio, defining new project item types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f6c683166eb2192a32e1d829800abed16db43e0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f9edaadff5fd1e4f180f38b7609c90c031656792
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832156"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864610"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Tutorial: Creación de un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 1
   Los proyectos de SharePoint son contenedores para uno o más elementos de proyecto de SharePoint. Puede extender el sistema de proyectos de SharePoint en Visual Studio si crea sus propios tipos de elemento de proyecto de SharePoint y, a continuación, los asocia a una plantilla de proyecto. En este tutorial, definirá un tipo de elemento de proyecto para crear una columna de sitio y, a continuación, creará una plantilla de proyecto que se puede usar para crear un nuevo proyecto que contenga un elemento de proyecto de columnas de sitio.
@@ -179,17 +179,17 @@ ms.locfileid: "53832156"
 
 8. Repita los pasos del 5 al 8 para agregar los archivos siguientes de las subcarpetas especificadas en el directorio de BaseSharePointProject:
 
-   - *\Field1\Elements.Xml*
+   - *\Field1\Elements.xml*
 
    - *\Field1\SharePointProjectItem.spdata*
 
-   - *\Features\Feature1\Feature1.Feature*
+   - *\Features\Feature1\Feature1.feature*
 
-   - *\Features\Feature1\Feature1.Template.Xml*
+   - *\Features\Feature1\Feature1.Template.xml*
 
-   - *\Package\Package.Package*
+   - *\Package\Package.package*
 
-   - *\Package\Package.Template.Xml*
+   - *\Package\Package.Template.xml*
 
      Agregue estos archivos directamente al proyecto SiteColumnProjectTemplate; no vuelva a crear las subcarpetas Field1, Features ni Package en el proyecto. Para obtener más información acerca de estos archivos, consulte [crear elementos de plantillas y plantillas de proyecto para los elementos de proyecto de SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).
 
@@ -224,13 +224,13 @@ ms.locfileid: "53832156"
 
 - *AssemblyInfo.cs* o *AssemblyInfo.vb*
 
-- *Elements.Xml*
+- *Elements.xml*
 
 - *SharePointProjectItem.spdata*
 
-- *Feature1.Feature*
+- *Feature1.feature*
 
-- *Package.Package*
+- *Package.package*
 
 - *SiteColumnProjectTemplate.vstemplate*
 

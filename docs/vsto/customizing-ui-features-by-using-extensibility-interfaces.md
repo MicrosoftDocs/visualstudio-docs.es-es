@@ -17,15 +17,15 @@ helpviewer_keywords:
 - extensibility interfaces [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52da4aa630ef5cf6357b38aeb79ac78f882077e0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a41a60b13601240910c78db5101e6b683f8bc00d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866665"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863323"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Personalizar las características de interfaz de usuario mediante interfaces de extensibilidad
   Las herramientas de desarrollo de Office en Visual Studio proporcionan clases y diseñadores que administran numerosos detalles de la implementación cuando se usan para crear paneles de tareas personalizados, personalizaciones de la cinta y regiones de formularios de Outlook en un complemento VSTO. Sin embargo, también puede implementar la *interfaz de extensibilidad* para cada característica si tiene necesidades especiales.  

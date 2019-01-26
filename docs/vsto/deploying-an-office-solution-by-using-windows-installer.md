@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], MSI
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 946a8dc884db4492e9bb557fa6000059d9912fd8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 91349edaeb864e913351e79846825fb67f2d7d97
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966056"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864090"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Implementar una solución de Office mediante Windows Installer
 Obtenga información sobre cómo crear un archivo de Windows Installer para la solución de Office mediante [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
@@ -326,8 +326,8 @@ Las instalaciones por usuario solo requieren un instalador, independientemente d
 
 | Versión de Office<br /><br /> | Ruta de acceso de configuración de InstallShield<br /><br /> |
 |----------------------------| - |
-| 32 bits<br /><br /> | **HKEY_LOCAL_MACHINE\Software(32-bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64 bits<br /><br /> | **HKEY_LOCAL_MACHINE\Software(64-bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 32 bits<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64 bits<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    **Instaladores por equipo según la versión de Windows**  
 
@@ -335,8 +335,8 @@ Las instalaciones por usuario solo requieren un instalador, independientemente d
 
 | Versión de Windows<br /><br /> | Ruta de acceso de configuración de InstallShield<br /><br /> |
 |-----------------------------| - |
-| 32 bits<br /><br /> | **HKEY_LOCAL_MACHINE\Software(32-bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64 bits<br /><br /> | **HKEY_LOCAL_MACHINE\Software(32-bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\Software(64-bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 32 bits<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64 bits<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    > [!NOTE]  
    >    Un instalador para Windows de 64 bits requiere dos rutas de acceso del registro porque es posible que los usuarios ejecuten las versiones de 32 bits y 64 bits de Office en un equipo que ejecuta Windows de 64 bits.  

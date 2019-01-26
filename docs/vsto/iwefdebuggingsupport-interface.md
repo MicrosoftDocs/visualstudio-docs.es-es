@@ -1,23 +1,23 @@
 ---
-title: IWefDebuggingSupport (interfaz)
+title: IWefDebuggingSupport interface
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 73aff964cfb66d33e308aef6448fc0f0b1b27c09
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55a09c3db9a47b5bcf22a7faeb891a1f709d244a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901024"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865689"
 ---
-# <a name="iwefdebuggingsupport-interface"></a>IWefDebuggingSupport (interfaz)
+# <a name="iwefdebuggingsupport-interface"></a>IWefDebuggingSupport interface
   Implementa un entorno de depuración, como Visual Studio, para facilitar la depuración de aplicaciones para Office. La aplicación de Office, como Word o Excel, obtiene esta interfaz desde Visual Studio y, a continuación, llama a métodos en la interfaz en ciertos puntos durante la sesión de depuración.  
   
 ## <a name="syntax"></a>Sintaxis  

@@ -12,17 +12,17 @@ helpviewer_keywords:
 - association forms [SharePoint development in Visual Studio]
 - initiation forms [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, workflow initiation forms
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c9878da7c1384dec8d0c8aa863b0eff4252e9efe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b9d4fe908e372a478d382a1087a7d7e1363dbef5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824741"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864389"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Tutorial: Crear un flujo de trabajo con formularios de asociación e iniciación
   Este tutorial muestra cómo crear un flujo de trabajo secuencial básico que incorpora el uso de formularios de asociación e iniciación. Estos son los formularios ASPX que habilite los parámetros que se agregarán a un flujo de trabajo al que asociar primero el Administrador de SharePoint (el formulario de asociación), y cuando se inicia el flujo de trabajo por el usuario (el formulario de iniciación).  

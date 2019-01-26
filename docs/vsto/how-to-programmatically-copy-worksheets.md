@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], copying worksheets
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b4763565e426560178d697723257c1a22bb50ca0
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 64121ffcb69eb4bc3cdaa901ffe3d52014630779
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54087781"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865390"
 ---
 # <a name="how-to-programmatically-copy-worksheets"></a>Procedimiento Copiar mediante programación las hojas de cálculo
   Puede crear una copia de una hoja de cálculo e insertarla antes o después de otra hoja existente en el libro. Si no especifica dónde insertarla, Excel crea un nuevo libro para la nueva hoja de cálculo.  

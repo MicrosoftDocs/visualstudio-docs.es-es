@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Outlook folders [Office development in Visual Studio], searching
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1427f0ab69cab2c23a0eeb7638bbc6e21778c55a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9a08451b186cdc3ca1526441e906cf3c9e5d4c9
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915499"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866849"
 ---
 # <a name="how-to-programmatically-search-within-a-specific-folder"></a>Procedimiento Buscar en una carpeta específica mediante programación
   Este ejemplo de código utiliza el `Find` y `FindNext` métodos para buscar texto en el campo de asunto de los mensajes de correo electrónico que se encuentran en el **Bandeja de entrada**. Este método utiliza un filtro de cadena para comprobar la letra T como la letra inicial de la `Subject` texto.  

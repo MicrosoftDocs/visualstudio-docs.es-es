@@ -11,15 +11,15 @@ helpviewer_keywords:
 - worksheets, changing formatting
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8bd959c595cd9caa7921c84b87194ee20ddd1291
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: a2f93cf8b7c117f42800c8d863520826468ff004
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088314"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865234"
 ---
 # <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Procedimiento Cambiar el formato en filas de la hoja de cálculo que contienen celdas seleccionadas mediante programación
   Puede cambiar la fuente de una fila completa que contiene una celda seleccionada para que el texto está en negrita.  

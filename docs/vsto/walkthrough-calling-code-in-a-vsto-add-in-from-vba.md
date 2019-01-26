@@ -13,17 +13,17 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], calling code from other solutions
 - interoperability [Office development in Visual Studio]
 - calling code from VBA
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89b03298d1a0bb180e3eab706383e48ecd75cd7f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: faa71d4cefabbb59e7b9b5255cfebf3677e257a5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915908"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865754"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Tutorial: Llamar a código en un complemento de VSTO desde VBA
   Este tutorial muestra cómo exponer un objeto de un complemento de VSTO a otras soluciones de Microsoft Office, incluido Visual Basic para aplicaciones (VBA) y complementos VSTO de COM.  
