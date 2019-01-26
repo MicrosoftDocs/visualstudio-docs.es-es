@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::CreateReplacementObject | Documentos de Microsoft
+title: IPropertyProxyEESide::CreateReplacementObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0cfe79b8-c3f1-48b0-a225-e39dee2c92fe
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be5433457ef533c1ef4dba66bf0b6d0d95546e3e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eb1c2c5478bb24f80646dcaacf64a9e6efb2e425
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959912"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988329"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
 Crea una copia de un objeto de datos específicos del evaluador de expresiones (EE).  

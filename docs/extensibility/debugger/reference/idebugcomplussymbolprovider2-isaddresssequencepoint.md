@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 89b27c57-5295-428b-8229-a402500d8cd3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5845e033e51e207c34e90f7376e0920cc0724e5a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a17f65246d3550dd1de3b92718baae5ac44536f3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985282"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040780"
 ---
 # <a name="idebugcomplussymbolprovider2isaddresssequencepoint"></a>IDebugComPlusSymbolProvider2::IsAddressSequencePoint
 Determina si la dirección de depuración especificado es un punto de secuencia.  

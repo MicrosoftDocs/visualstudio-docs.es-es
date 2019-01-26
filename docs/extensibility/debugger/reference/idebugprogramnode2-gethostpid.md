@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetHostPid | Documentos de Microsoft
+title: IDebugProgramNode2::GetHostPid | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e65b4b15-46d8-4ca7-9456-2b4c078f7cf9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 718d326247dee1b42b6a4e67c46f5134001d6dfc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b9d170fcddf26d68dd33fe056276c7f939e82ab1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897328"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981160"
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
 Obtiene el identificador de proceso del sistema para el proceso que hospeda el programa.  

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::Compare | Documentos de Microsoft
+title: IDebugDocumentContext2::Compare | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2327b1ba-52d0-42fb-a01e-63cb4b332d2f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a4475dd8031dd75a35dda8950b8005886ec9b47
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 06fe3b1c2acffa47f7c47f5f9426fb1d07bbf288
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866704"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937839"
 ---
 # <a name="idebugdocumentcontext2compare"></a>IDebugDocumentContext2::Compare
 Compara este contexto de documento a una matriz de contextos de documento determinada.  

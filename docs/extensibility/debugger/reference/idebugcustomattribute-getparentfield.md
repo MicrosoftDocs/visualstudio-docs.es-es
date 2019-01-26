@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetParentField | Documentos de Microsoft
+title: IDebugCustomAttribute::GetParentField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bcdfdf37-bfcf-4988-a7b8-4c731d0af1b0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f0165c5a60b79ba5a23cb9e14a1d917058ad200
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4a9f7987a2646b0235ffb266cf273704dce87c74
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916697"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002538"
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
 Obtiene el campo al que está asociado el atributo personalizado.  

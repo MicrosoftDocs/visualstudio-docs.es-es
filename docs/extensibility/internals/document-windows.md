@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 50081d48-987f-43db-8bf9-51b7cf76e9c0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f10d18989ad94de7a1645b1dc48c474a983450f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb2ee2a39f97e2c138eb8cbc8488b8acca2b2286
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850757"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991156"
 ---
 # <a name="document-windows"></a>Ventanas de documento
 En Visual Studio, un *ventana de documento* es una ventana secundaria de tramas que está asociada a una ventana de interfaz de múltiples documentos (MDI). Normalmente se usan las ventanas de documento para la visualización y modificación de código fuente o el texto, pero también pueden hospedar otros tipos funcionales. Ventanas de documento:  

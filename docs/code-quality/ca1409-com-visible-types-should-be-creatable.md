@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 9f59569b-de15-4a38-b7cb-cff152972243
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fd168c5174dcc403a38c6eb3e443c3711fce537
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4197feae7f13e82ab786cbb901c9216fa1a98353
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821693"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996446"
 ---
 # <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409: Los tipos visibles a través de COM se deben poder crear
 

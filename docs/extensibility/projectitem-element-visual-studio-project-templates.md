@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2290b8a95bbb2e53ae14f410f77109394528b138
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b618d79b858f9ed6b770f31d7a55550b8e590300
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927368"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009549"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem (elemento) (plantillas de proyecto de Visual Studio)
 Especifica un archivo que se incluye en la plantilla de proyecto.  
@@ -27,10 +27,10 @@ Especifica un archivo que se incluye en la plantilla de proyecto.
 > [!NOTE]
 >  El `ProjectItem` elemento acepta atributos diferentes dependiendo de si la plantilla es para un proyecto o un elemento. Este tema se explica el `ProjectItem` (elemento) para las plantillas de proyecto. Para obtener una explicación de la `ProjectItem` (elemento) para las plantillas de elemento, vea [ProjectItem (elemento) (plantillas de elemento de Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md).  
   
- \<VSTemplate >  
- \<TemplateContent >  
+ \<VSTemplate>  
+ \<TemplateContent>  
  \<Project>  
- \<ProjectItem >  
+ \<ProjectItem>  
   
 ## <a name="syntax"></a>Sintaxis  
   

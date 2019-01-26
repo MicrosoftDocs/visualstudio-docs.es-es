@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 791e76b462a7ae12ac11b9eb5f33c94baff49888
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: afb66ea504a51a726b1645b0886cf19f1d0ae940
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919579"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981355"
 ---
 # <a name="core-interfaces"></a>Interfaces básicas
 Las interfaces siguientes son las interfaces principales para ampliar el depurador mediante el uso de la [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].  
@@ -27,7 +27,7 @@ Las interfaces siguientes son las interfaces principales para ampliar el depurad
 
 - [Contextos](#Contexts)  
 
-- [Server Core](#CoreServer)  
+- [Core Server](#CoreServer)  
 
 - [Motores de depuración](#DebugEngines)  
 

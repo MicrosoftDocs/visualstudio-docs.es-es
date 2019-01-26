@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d202401a-ea14-4559-b15e-0ea4f5b68789
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3322f4ca9c2e6bcfbd6ff80843a48b01e030f4d0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6a38f6f4e76f5195e042b0ede2b2a8a5384a1cf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921035"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938021"
 ---
 # <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226: Los operadores deben tener sobrecargas simétricas
 

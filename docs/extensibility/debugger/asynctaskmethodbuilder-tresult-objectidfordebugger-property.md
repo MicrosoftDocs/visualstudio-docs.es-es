@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 060b857f-daf5-43ea-bb51-abf9368e1e91
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 363394e2751f6db783e4217c8414de9d65451a11
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2b1229b3bdc517133e704b56b36e857bd6b4aea9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962517"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946456"
 ---
 # <a name="asynctaskmethodbuilderlttresultgtobjectidfordebugger-property"></a>AsyncTaskMethodBuilder&lt;TResult&gt;. Propiedad ObjectIdForDebugger
 Obtiene un objeto que puede utilizarse para identificar de forma única este generador para el depurador.  

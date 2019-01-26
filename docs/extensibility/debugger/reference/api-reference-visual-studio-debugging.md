@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0172f9412bff791ae2446d6cffcd9d302c7c3ef8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8dfe0405406405dc1e09e18c49f7de7b4aecd7fa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923632"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013332"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Referencia de API (depuración de Visual Studio)
 La sección de referencia incluye información general conceptual de la API, una guía que muestra la sintaxis y el uso para todos los elementos de la API y una gran variedad de ejemplos de código. Todas las referencias aparecen ordenadas alfabéticamente por categoría.  
@@ -26,15 +26,15 @@ La sección de referencia incluye información general conceptual de la API, una
 |----------|-----------------|-----------|  
 |S_OK|Correcto.|0x00000000|  
 |E_UNEXPECTED|Error inesperado.|0x8000FFFF|  
-|E_NOTIMPL|Sin implementar.|0 x 80004001|  
+|E_NOTIMPL|Sin implementar.|0x80004001|  
 |E_OUTOFMEMORY|No hay suficiente memoria para completar la operación.|0x8007000E|  
-|E_INVALIDARG|Uno o más argumentos no son válidos.|0 x 80070057|  
-|E_NOINTERFACE|No se admite dicha interfaz.|0 x 80004002|  
-|E_POINTER|Puntero no válido.|0 x 80004003|  
+|E_INVALIDARG|Uno o más argumentos no son válidos.|0x80070057|  
+|E_NOINTERFACE|No se admite dicha interfaz.|0x80004002|  
+|E_POINTER|Puntero no válido.|0x80004003|  
 |E_HANDLE|Identificador no válido.|0x80070006|  
-|E_ABORT|Operación anulada.|0 x 80004004|  
-|E_FAIL|Error inesperado.|0 x 80004005|  
-|E_ACCESSDENIED|Error de acceso general denegado.|0 x 80070005|  
+|E_ABORT|Operación anulada.|0x80004004|  
+|E_FAIL|Error inesperado.|0x80004005|  
+|E_ACCESSDENIED|Error de acceso general denegado.|0x80070005|  
   
 > [!NOTE]
 >  Cuando un [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] depurar el método devuelve `S_OK`, se supone que todo punteros de parámetro son válidos, es decir, ninguna validación se lleva a cabo los punteros de parámetro cuando `S_OK` se devuelve.  

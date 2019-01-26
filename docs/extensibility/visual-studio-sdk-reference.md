@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: a6930db5-a112-4651-8de3-e520df851f82
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8281a6d367ae4d6b51576160479ba492ebdf805a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c55997b47c0195083957ebc4564ca7db6991686d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943346"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990126"
 ---
 # <a name="visual-studio-sdk-reference"></a>Referencia de Visual Studio SDK
 Esta sección contiene información sobre los espacios de nombres, espacios de nombres relacionados y otras áreas de interés de Visual Studio para desarrolladores que usan el SDK de Visual Studio.  
@@ -222,7 +222,7 @@ Esta sección contiene información sobre los espacios de nombres, espacios de n
   
  [Namespace Microsoft.VisualStudio.ConnectedServices](/dotnet/api/microsoft.visualstudio.connectedservices) utiliza para los servicios conectados de Visual Studio.  
   
- [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md) (enumeración)  
+ [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md) enumeration  
  Especifica las marcas de host de IntelliSense.  
   
  [Referencia del esquema XML de VSCT](../extensibility/vsct-xml-schema-reference.md)  

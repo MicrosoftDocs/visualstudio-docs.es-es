@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::Resume | Documentos de Microsoft
+title: IDebugThread2::Resume | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 36aad682-b0b9-40a2-b3fc-f0e61d41cdbc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bad2daaa21607194504923db8e896237298c75d5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 807f89eeed4e85e86c1a09a34ae12744bac8e0ae
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824592"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935272"
 ---
 # <a name="idebugthread2resume"></a>IDebugThread2::Resume
 Reanuda la ejecución de un subproceso.  

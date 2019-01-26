@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0e555b42-b846-4dbb-812e-8e3d11c85b2d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1082e2e0c1e0d85270b95d4793d1029bbbb79e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 32b0e89a69bc39e43d4ff4fbc4e8f4d5816565ad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955651"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975392"
 ---
 # <a name="moduleflags"></a>MODULE_FLAGS
 Se utiliza para describir un módulo.  

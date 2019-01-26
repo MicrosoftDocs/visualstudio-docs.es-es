@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bb5acfa3-04c3-4088-be84-9ff8926cd16f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea9f8463bf140b8e3481566948cb5c8e586e9db0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 931589bd319c86c17b2db2e9acbaccc556725263
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988642"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983305"
 ---
 # <a name="idebugfieldgettypeinfo"></a>IDebugField::GetTypeInfo
 Este método obtiene independiente del tipo de información sobre el tipo o el símbolo.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5cc813f7-04a1-4462-9ea7-fbddcf0e0143
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c5271fa63852287ff352906935ed26d330d7e58
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 45d7dcb6aaef85f66b225099d853212ff0687ef6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845050"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031221"
 ---
 # <a name="idebugportevents2event"></a>IDebugPortEvents2::Event
 Este método envía los eventos que indican la creación y destrucción de procesos y programas en un puerto.  

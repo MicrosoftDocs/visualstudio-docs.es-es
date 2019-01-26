@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 09643415-36ef-4d0f-9411-5721e14e2512
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30a925d685a327499f426bc3e6d060b897dd90c3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2f595637f5f2023eaa6529c943a1b1a48b4446d4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839682"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980544"
 ---
 # <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: No deben usarse parámetros predeterminados
 

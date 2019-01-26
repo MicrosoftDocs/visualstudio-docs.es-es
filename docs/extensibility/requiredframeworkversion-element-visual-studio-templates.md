@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 08a4f609-51a5-4723-b89f-99277fb18871
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64faab530e8470ac1efd5ade39f77552371048ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 40eefc62eef318bcd9c52a1cbbb966377b3616f8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872033"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947002"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion (elemento) (plantillas de Visual Studio)
 
@@ -26,7 +26,7 @@ Especifica la versión mínima de .NET Framework que requiere la plantilla. Hace
 > [!IMPORTANT]
 > A partir de Visual Studio 2017 versión 15.6, la **versión de Target Framework** dropdown ya no es un filtro para las plantillas que se muestran en el **plantillas** sección de la **denuevoproyecto** cuadro de diálogo. En su lugar, la lista desplegable funciona como un selector de marco de trabajo para la plantilla seleccionada.
 
- \<VSTemplate > \<TemplateData > \<RequiredFrameworkVersion >
+ \<VSTemplate> \<TemplateData> \<RequiredFrameworkVersion>
 
 ## <a name="syntax"></a>Sintaxis
 

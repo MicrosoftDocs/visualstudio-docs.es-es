@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 32f8147d-6dcc-465e-b07b-42da5824f9b0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f575162d6c5079a1233302186ae904241cb8673
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7da9bce351ef8910f77713bf77d0f5f698193140
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942234"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998318"
 ---
 # <a name="sccgetevents-function"></a>SccGetEvents (función)
 Esta función recupera un evento de estado en cola.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6dcec574-a852-49fa-8c2e-2e71cbb5e3c6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bcd07f34fb790f593653547f94112bffce248c55
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2a1d6e6e6ff48cd9aaf15e3dfa471b35e300777d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941380"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021759"
 ---
 # <a name="textposition"></a>TEXT_POSITION
 Describe la ubicación de línea y columna en el texto dado.  

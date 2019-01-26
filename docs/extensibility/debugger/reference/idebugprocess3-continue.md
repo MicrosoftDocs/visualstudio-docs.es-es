@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::Continue | Documentos de Microsoft
+title: IDebugProcess3::Continue | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 57506242-5763-4c08-adb9-8a78ce02cebb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c417998ab9c73ae2b52e297caa9de3dc9874f69
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 58cae37bb73a397a7d1b1226c91f68ecb44484c8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947704"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985437"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
 Continúa la ejecución de este proceso de un estado detenido. Se conserva ningún estado de ejecución anterior (por ejemplo, un paso), y el proceso comienza a ejecutarse de nuevo.  

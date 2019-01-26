@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::GetENCAvailableState | Documentos de Microsoft
+title: IDebugProcess3::GetENCAvailableState | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 98a5d527-8a72-476c-8e92-0bff3d97c195
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a114eee347382b5a351f86cee350dacf958626a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0ca55d7432ed921ef70b652cb92ce69f0d7e66cf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860054"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985099"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
 Este método obtiene el estado actual de editar y continuar del proceso. Siempre debe devolver un proveedor de puerto personalizado `E_NOTIMPL`.  

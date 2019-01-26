@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4cd58eb3-6952-49b1-9620-8682e3eaa604
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6fabc1108f82c1cd2b43bf740e58c4ea9bb613e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9b2f1fff6bff9130bc337a4636aea3127d85514b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910888"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993514"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges (Función)
 Esta función enumera una lista de archivos, que proporciona información sobre los cambios de nombre para cada archivo a través de una función de devolución de llamada especificada.  
@@ -38,7 +38,7 @@ SCCRTN SccQueryChanges(
  pContext  
  [in] El puntero de contexto de complemento de control de código fuente.  
   
- n  
+ nFiles  
  [in] Número de archivos en `lpFileNames` matriz.  
   
  lpFileNames  

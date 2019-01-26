@@ -11,22 +11,22 @@ helpviewer_keywords:
 ms.assetid: 420d46ea-2470-4da9-ad8e-95165588a920
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61fa7f61acbe59f61feb4472c55459e07e4980a6
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 8ab8c4e3ae0a217c7877d1d2e64727e45d14ea87
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561819"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069831"
 ---
 # <a name="createinplace-element-visual-studio-templates"></a>CreateInPlace (elemento) (plantillas de Visual Studio)
 Especifica si se debe crear el proyecto y realizar el reemplazo de parámetros en la ubicación especificada, o realizar el reemplazo de parámetros en una ubicación temporal y, a continuación, guarde el proyecto en la ubicación especificada.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<CreateInPlace >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<CreateInPlace>  
   
 ## <a name="syntax"></a>Sintaxis  
   

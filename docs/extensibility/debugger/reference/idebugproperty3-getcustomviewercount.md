@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dc5bb3e4-dc85-46e4-98fa-c6be8583b985
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e910ab8ee0f3915cc017d4ce7fda1e8b43c23513
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cb96842debd9c7132cbe7fe5629e5c9374a78cd5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937431"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996654"
 ---
 # <a name="idebugproperty3getcustomviewercount"></a>IDebugProperty3::GetCustomViewerCount
 Obtiene el número de visores personalizados que pueden estar disponibles para esta propiedad.  

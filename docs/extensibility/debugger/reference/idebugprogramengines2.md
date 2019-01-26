@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEngines2 | Documentos de Microsoft
+title: IDebugProgramEngines2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 53d648f0-6c11-4337-badd-c43f3872b62c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20d837541c3f23f281baa14d92f461da0c16320a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a383dc55b42fe8baad8df31628d0a182d50d554e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900644"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025675"
 ---
 # <a name="idebugprogramengines2"></a>IDebugProgramEngines2
 Esta interfaz se usa por los nodos de programa para especificar todos los posibles motores de depuración (DE) que pueden depurar este programa.  

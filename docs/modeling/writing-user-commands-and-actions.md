@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 263df1391fcc9795b08a21a7e56b1113ef1fb82e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 74466c4757c802647bc98082c68b3a9d73207f68
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895680"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940393"
 ---
 # <a name="writing-user-commands-and-actions"></a>Escribir acciones y comandos de usuario
 Puede personalizar un lenguaje específico de dominio agregando comandos al diagrama y respondiendo a gestos como los eventos de arrastrar y colocar, clic y doble clic.

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cb89692e-7657-47ff-846d-311943521951
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c90f66ec3a26db24d4c69fbf6ee59af3f925bd45
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 99aa9d4934b6d33890fb69c0564c16ec0706b924
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901300"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007768"
 ---
 # <a name="idebugobjectgetmanageddebugobject"></a>IDebugObject::GetManagedDebugObject
 Crea una copia del objeto administrado en el espacio de direcciones del motor de depuración.  

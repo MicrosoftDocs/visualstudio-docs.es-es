@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d89498f1-4234-46d9-b4e2-abbcbca5068a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60febef76a02f45e1cbca859453bf56e9cd1e38e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2500a93ea928fbc1c472a60c9350136821a84ee4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850104"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040325"
 ---
 # <a name="jmccodespec"></a>JMC_CODE_SPEC
 Esta estructura se usa para establecer la información de JustMyCode de un módulo.  

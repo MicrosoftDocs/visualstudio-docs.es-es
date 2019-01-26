@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1484840998b7834af55b0f9a026b899aea4f3f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 09433968c8a735538ce276c854a38449735c2045
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868344"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55043627"
 ---
 # <a name="vspackage-registration"></a>Registro de VSPackage
 Debe aconsejar VSPackages [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] que están instaladas y deben cargarse. Este proceso se consigue mediante la escritura de información en el registro. Es un trabajo típico de un instalador.  

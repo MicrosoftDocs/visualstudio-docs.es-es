@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3f26ac2-6163-42e1-a764-22cfea5a3bc6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d86530497620dfab79490e6128cff29cb2fb2d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a211c7e3c338c962c75d31871515c4398dd04406
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822867"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998474"
 ---
 # <a name="scccheckin-function"></a>SccCheckin (función)
 Esta función comprueba en los archivos anteriormente desprotegidos para el sistema de control de código fuente, almacenar los cambios y crear una nueva versión. Esta función se invoca con un recuento y una matriz de nombres de los archivos que se comprobará.  
@@ -43,7 +43,7 @@ SCCRTN SccCheckin (
  hWnd  
  [in] Identificador de la ventana del IDE que puede usar el complemento control de código fuente como un elemento primario para los cuadros de diálogo que proporciona.  
   
- n  
+ nFiles  
  [in] Número de archivos seleccionados deben registrarse.  
   
  lpFileNames  

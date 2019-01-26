@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 56b2fdff-146d-4138-a34c-59a9c65a3ddd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 276db8c4175ce74326cb2e0cd45440f2ed00f8ec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 47ad3e889568b260d63ca0a38be58994f6966384
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958428"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035463"
 ---
 # <a name="idebugfunctionobject2"></a>IDebugFunctionObject2
 > [!IMPORTANT]
@@ -51,7 +51,7 @@ IDebugFunctionObject2 : IUnknown
 |[Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject2-evaluate.md)|Llama a la función y devuelve el valor resultante como un objeto.|  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: EE.h  
+ Encabezado: Ee.h  
   
  Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   

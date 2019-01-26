@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 693bd794-7215-4f07-8651-b57366d39953
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fb404ce791f17df027ba360a9a0b853c8e6b747
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 513247a948c73c8b10712336c01dc51dd2369565
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866249"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983799"
 ---
 # <a name="idebugcoreserver2getmachinename"></a>IDebugCoreServer2::GetMachineName
 Obtiene el nombre de la máquina en que se está ejecutando el servidor principal.  

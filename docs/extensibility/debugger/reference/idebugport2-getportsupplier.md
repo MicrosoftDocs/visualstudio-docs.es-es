@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7a7b0615-df6b-4726-ab35-39dfa1ebed8f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82046ce648c5d6e8ea1e97b80366965cb4dc3dc9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d8905e457300990f78c1172ec4a9f074584881bb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900722"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985190"
 ---
 # <a name="idebugport2getportsupplier"></a>IDebugPort2::GetPortSupplier
 Obtiene el proveedor del puerto para este puerto.  

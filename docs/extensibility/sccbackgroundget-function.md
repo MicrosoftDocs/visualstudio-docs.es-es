@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 69817e52-b9ac-4f4d-820b-2cc9c384f0dc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae32f7b0c9eea907c830a3cc62e0e53e87803177
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6afce798e327e21bf2613a84d717bab3a737d05a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826882"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975691"
 ---
 # <a name="sccbackgroundget-function"></a>SccBackgroundGet (función)
 Esta función recupera de control de código fuente cada de los archivos especificados sin interacción del usuario.  
@@ -38,7 +38,7 @@ SCCRTN SccBackgroundGet(
  pContext  
  [in] El puntero de contexto de complemento de control de código fuente.  
   
- n  
+ nFiles  
  [in] Número de archivos especificados en el `lpFileNames` matriz.  
   
  lpFileNames  

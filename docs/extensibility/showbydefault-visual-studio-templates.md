@@ -11,22 +11,22 @@ helpviewer_keywords:
 ms.assetid: 7be783f6-0ef6-42bc-924a-df9a2eba7781
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e2617c374ba240c421ba0cac339b9488608f2c0
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: fea18c44522ea88d32ada4933be5d3bbb85ca29e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561465"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976945"
 ---
 # <a name="showbydefault-element-visual-studio-templates"></a>ShowByDefault (elemento) (plantillas de Visual Studio)
 Si `false`, especifica que solo se mostrará la plantilla en especificado [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md).  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<ShowByDefault >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<ShowByDefault>  
   
 ## <a name="syntax"></a>Sintaxis  
   
