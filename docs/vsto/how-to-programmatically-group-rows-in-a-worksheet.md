@@ -15,17 +15,17 @@ helpviewer_keywords:
 - worksheets, ungrouping rows and columns
 - rows [Office development in Visual Studio], ungrouping
 - columns [Office development in Visual Studio], ungrouping
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cf553876aaad0a502c89a8b3c91002aed9e66f7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5249edccaed24dbdc6eb42b5da3e78825f1a2053
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896791"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874423"
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Procedimiento Agrupar filas en una hoja de cálculo mediante programación
   Puede agrupar uno o más filas completas. Para crear un grupo en una hoja de cálculo, use un <xref:Microsoft.Office.Tools.Excel.NamedRange> control o un objeto nativo de rango de Excel.  

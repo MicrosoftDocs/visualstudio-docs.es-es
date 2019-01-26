@@ -13,17 +13,17 @@ helpviewer_keywords:
 - objects [Office development in Visual Studio], Office object models
 - object models [Office development in Visual Studio], Outlook
 - Office object models
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 03bff7f4cd089a635aa2e9eae2391ea0816a1625
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2b78df3968f23df8685d38d7278ffbf4f331260b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945358"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872370"
 ---
 # <a name="outlook-object-model-overview"></a>Información general sobre el modelo de objetos de Outlook
   Para desarrollar complementos de VSTO para Microsoft Office Outlook, puede interactuar con los objetos que ofrece el modelo de objetos de Outlook. El modelo de objetos de Outlook proporciona clases e interfaces que representan elementos de la interfaz de usuario. Por ejemplo, el objeto <xref:Microsoft.Office.Interop.Outlook.Application> representa toda la aplicación, el objeto <xref:Microsoft.Office.Interop.Outlook.Folder> representa una carpeta que contiene mensajes de correo electrónico u otros elementos y el objeto <xref:Microsoft.Office.Interop.Outlook.MailItem> representa un mensaje de correo electrónico.  
@@ -92,7 +92,7 @@ ms.locfileid: "53945358"
 ### <a name="folder-object"></a>Objeto de carpeta  
  El objeto <xref:Microsoft.Office.Interop.Outlook.Folder> representa una carpeta que contiene mensajes de correo electrónico, contactos, tareas y otros elementos. Outlook proporciona 16 objetos <xref:Microsoft.Office.Interop.Outlook.Folder> predeterminados.  
   
- Los objetos <xref:Microsoft.Office.Interop.Outlook.Folder> predeterminados se definen mediante los valores de enumeración <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders>. Por ejemplo,  
+ Los objetos <xref:Microsoft.Office.Interop.Outlook.Folder> predeterminados se definen mediante los valores de enumeración <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> . Por ejemplo,  
   
  Microsoft.Office.Interop.Outlook.OlDefaultFolders.olFolderInbox corresponde a la **Bandeja de entrada** carpeta de Outlook.  
   

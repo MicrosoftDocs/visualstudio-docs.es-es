@@ -35,15 +35,15 @@ helpviewer_keywords:
 - BuildingBlockGalleryContentControl class
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b1656f40cd0d75c73f9f1e4b3a74a6f2b7e7ad0e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a837aec3c5f87b51c5874f2fa7bd3f155479b6c2
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956549"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868854"
 ---
 # <a name="content-controls"></a>Controles de contenido
   Los controles de contenido proporcionan un mecanismo para diseñar documentos y plantillas con las siguientes características:  
@@ -94,7 +94,7 @@ ms.locfileid: "53956549"
 ### <a name="drop-down-list"></a>Lista desplegable  
  En las listas desplegables se muestra una lista de elementos que los usuarios pueden seleccionar. A diferencia de los cuadros combinados, las listas desplegables no permiten que los usuarios agreguen o modifiquen elementos. Para obtener más información, consulte el tipo <xref:Microsoft.Office.Tools.Word.DropDownListContentControl>.  
   
-### <a name="group"></a>Grupo  
+### <a name="group"></a>Agrupar  
  Un control de grupo define una región protegida de un documento que los usuarios no pueden editar ni eliminar. Un control de grupo puede contener cualquier elemento del documento, como texto, tablas, gráficos y otros controles de contenido. Para obtener más información, consulte el tipo <xref:Microsoft.Office.Tools.Word.GroupContentControl>.  
   
 ### <a name="picture"></a>Imagen  

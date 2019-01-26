@@ -10,17 +10,17 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], sorting in worksheets
 - worksheets, sorting data
 - sorting data, in worksheets
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d895f7ba8e192361ea262263af053da868a21e65
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 10280b9d95892ceb8cb0445a46f1cfd51ea49f48
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960594"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870511"
 ---
 # <a name="how-to-programmatically-sort-data-in-worksheets"></a>Procedimiento Ordenar datos en hojas de cálculo mediante programación
   Puede ordenar los datos contenidos en rangos de hojas de cálculo y listas en tiempo de ejecución. El siguiente código ordena un rango con varias columnas denominado `Fruits` en función de los datos de la primera columna y, a continuación, en función de los datos de la segunda columna.  

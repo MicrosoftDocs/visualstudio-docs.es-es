@@ -10,15 +10,15 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 026cdef278f87ec4367dd88a8530a35425452b75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c8ea1c94254bc37edc15e0c267592e921003426
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895582"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868685"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Procedimiento Configurar la seguridad de la lista de inclusión
   Si tiene permisos de administrador, puede configurar el [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] confiar símbolo del sistema para controlar si los usuarios finales tienen la opción de instalar soluciones de Office al guardar una decisión de confianza en la lista de inclusión. Para obtener información acerca de las listas de inclusión, vea [soluciones de Office de confianza mediante el uso de las listas de inclusión](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
@@ -38,15 +38,15 @@ ms.locfileid: "53895582"
   
 ### <a name="to-enable-the-inclusion-list-by-using-the-registry-editor"></a>Para habilitar la lista de inclusión con el editor del registro  
   
-1.  Abra el editor del registro:  
+1.  Abra el Editor del Registro:  
   
-    1.  Haga clic en **iniciar**y, a continuación, haga clic en **ejecutar**.  
+    1.  Haga clic en **Inicio** y después en **Ejecutar**.  
   
     2.  En el **abierto** , escriba **regedt32.exe**y, a continuación, haga clic en **Aceptar**.  
   
 2.  Busque la siguiente clave del registro:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
      Si la clave no existe, créelo.  
   
@@ -56,8 +56,8 @@ ms.locfileid: "53895582"
     |-------------------------|-----------|  
     |**Internet**|**AuthenticodeRequired**|  
     |**UntrustedSites**|**Deshabilitado**|  
-    |**Mi PC**|**Habilitado**|  
-    |**Intranet local**|**Habilitado**|  
+    |**MyComputer**|**Habilitado**|  
+    |**LocalIntranet**|**Habilitado**|  
     |**TrustedSites**|**Habilitado**|  
   
      De forma predeterminada, **Internet** tiene el valor **AuthenticodeRequired** y **UntrustedSites** tiene el valor **deshabilitado**.  
@@ -97,15 +97,15 @@ ms.locfileid: "53895582"
   
 ### <a name="to-restrict-the-inclusion-list"></a>Para restringir la lista de inclusión  
   
-1.  Abra el editor del registro:  
+1.  Abra el Editor del Registro:  
   
-    1.  Haga clic en **iniciar**y, a continuación, haga clic en **ejecutar**.  
+    1.  Haga clic en **Inicio** y después en **Ejecutar**.  
   
     2.  En el **abierto** , escriba **regedt32.exe**y, a continuación, haga clic en **Aceptar**.  
   
 2.  Busque la siguiente clave del registro:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
      Si la clave no existe, créelo.  
   
@@ -115,8 +115,8 @@ ms.locfileid: "53895582"
     |-------------------------|-----------|  
     |**UntrustedSites**|**Deshabilitado**|  
     |**Internet**|**AuthenticodeRequired**|  
-    |**Mi PC**|**AuthenticodeRequired**|  
-    |**Intranet local**|**AuthenticodeRequired**|  
+    |**MyComputer**|**AuthenticodeRequired**|  
+    |**LocalIntranet**|**AuthenticodeRequired**|  
     |**TrustedSites**|**AuthenticodeRequired**|  
   
      De forma predeterminada, **Internet** tiene el valor **AuthenticodeRequired** y **UntrustedSites** tiene el valor **deshabilitado**.  
@@ -156,15 +156,15 @@ ms.locfileid: "53895582"
   
 ### <a name="to-disable-the-inclusion-list"></a>Para deshabilitar la lista de inclusión  
   
-1.  Abra el editor del registro:  
+1.  Abra el Editor del Registro:  
   
-    1.  Haga clic en **iniciar**y, a continuación, haga clic en **ejecutar**.  
+    1.  Haga clic en **Inicio** y después en **Ejecutar**.  
   
     2.  En el **abierto** , escriba **regedt32.exe**y, a continuación, haga clic en **Aceptar**.  
   
 2.  Si esto no existe, cree la siguiente clave del registro:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
 3.  Agregue las siguientes subclaves como **valor de cadena**, si no existe ya, con los valores asociados.  
   
@@ -172,8 +172,8 @@ ms.locfileid: "53895582"
     |-------------------------|-----------|  
     |**UntrustedSites**|**Deshabilitado**|  
     |**Internet**|**Deshabilitado**|  
-    |**Mi PC**|**Deshabilitado**|  
-    |**Intranet local**|**Deshabilitado**|  
+    |**MyComputer**|**Deshabilitado**|  
+    |**LocalIntranet**|**Deshabilitado**|  
     |**TrustedSites**|**Deshabilitado**|  
   
 ### <a name="to-disable-the-inclusion-list-programmatically"></a>Para deshabilitar la lista de inclusión mediante programación  

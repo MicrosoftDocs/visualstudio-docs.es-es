@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, overview
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc45f1420f073347153c6b7b8dd72cae44dd6b0f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4384396781172c73056de27fd3c674535571d591
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871062"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869023"
 ---
 # <a name="develop-sharepoint-solutions"></a>Desarrollar soluciones de SharePoint
   En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] están disponibles varias plantillas de tipo de proyecto de SharePoint para crear sitios y elementos de sitio de SharePoint. Para obtener una lista de los tipos de proyecto disponibles, consulte [SharePoint plantillas de elemento de proyecto y](../sharepoint/sharepoint-project-and-project-item-templates.md). A continuación se ofrece una descripción de los elementos y las propiedades de un proyecto de SharePoint.  
@@ -101,7 +101,7 @@ ms.locfileid: "53871062"
 |Ubicación de la implementación|Ruta de acceso completa del archivo en el servidor de SharePoint. Esta ruta de acceso se compone de las subpropiedades Raíz de la implementación y Ruta de acceso de la implementación.|  
 |Ruta de acceso de la implementación|La ruta de acceso relativa del archivo en el archivo de SharePoint Server, como Workflow1\\. La ruta de acceso completa del archivo se crea concatenando el valor de *Deployment Path* al final del valor de *Deployment Root* .<br /><br /> Al seleccionar un valor de *RootFile* para el *tipo de implementación* los cambios de propiedad el *Deployment Root* propiedad \<SharePointRoot >\\, lo que da una ruta de acceso completa de \<SharePointRoot > \Workflow1\\. Para obtener más información, consulte [empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|  
 |Deployment Root|Cadena. Carpeta raíz donde se implementa el archivo en el servidor de SharePoint. Por ejemplo, \<SharePointRoot > \Template\Features\\\<NombreDeCaracterística >\\.<br /><br /> El valor de la propiedad *Deployment Root* viene determinado por el valor de *Deployment Type* .|  
-|Deployment Type|Tipo de implementación del archivo, que determina su valor *Deployment Root* . Puede presentar uno de los siguientes valores:<br /><br /> NoDeployment:  *\<ningún valor >*<br /><br /> ElementManifest: *\<SharePointRoot > \Template\Features\\\<NombreDeCaracterística >*\\<br /><br /> ElementFile: *\<SharePointRoot > \Template\Features\\\<NombreDeCaracterística >\\*<br /><br /> TemplateFile: *\<SharePointRoot > \Template\\*<br /><br /> RootFile: *\<SharePointRoot >\\*<br /><br /> GlobalResource: *\<SharePointRoot > \Resources\\*<br /><br /> ClassResource: *\<ClassResourcePath >\\*<br /><br /> Para obtener más información, consulta <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
+|Deployment Type|Tipo de implementación del archivo, que determina su valor *Deployment Root* . Puede presentar uno de los siguientes valores:<br /><br /> NoDeployment:  *\<ningún valor >*<br /><br /> ElementManifest: *\<SharePointRoot>\Template\Features\\\<FeatureName>*\\<br /><br /> ElementFile: *\<SharePointRoot>\Template\Features\\\<FeatureName>\\*<br /><br /> TemplateFile: *\<SharePointRoot>\Template\\*<br /><br /> RootFile: *\<SharePointRoot>\\*<br /><br /> GlobalResource: *\<SharePointRoot>\Resources\\*<br /><br /> ClassResource: *\<ClassResourcePath>\\*<br /><br /> Para obtener más información, consulta <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
 |Nombre de archivo|Nombre del archivo o carpeta para el archivo de elementos.|  
 |Ruta de acceso completa|Ubicación del archivo del elemento. (Solo lectura).|  
   

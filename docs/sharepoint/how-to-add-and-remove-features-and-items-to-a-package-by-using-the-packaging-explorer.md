@@ -9,17 +9,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b1211b0bdc3625b915221cfafaa5377d371aaa25
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1cbcdc11eab419c6f98ab1ec823c6073286ffe2f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880866"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868136"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Procedimiento Agregar y quitar características y elementos de un paquete mediante el Explorador de empaquetado
   Para configurar un paquete para implementar características y elementos de SharePoint, puede usar el Explorador de empaquetado. Puede ajustar los elementos de proyecto de SharePoint y características en el archivo WSP.  

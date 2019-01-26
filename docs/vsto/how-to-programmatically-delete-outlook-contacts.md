@@ -10,15 +10,15 @@ helpviewer_keywords:
 - contacts [Office development in Visual Studio], deleting
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 984259b58ac8b038468f7c5253a201dc2e3e123b
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: cbce7c06b1538bf112b76ee6c0a7cf74e5e39bf3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154539"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873098"
 ---
 # <a name="how-to-programmatically-delete-outlook-contacts"></a>Procedimiento Eliminar contactos de Outlook mediante programación
   En este ejemplo se elimina un contacto. En el ejemplo se supone que existe un contacto llamado "Armando Pinto" en la carpeta **Contactos** .  

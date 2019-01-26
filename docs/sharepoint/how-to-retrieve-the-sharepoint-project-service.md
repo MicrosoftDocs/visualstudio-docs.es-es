@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint project service
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dfd18de91848c8aabbdabc91fd37763418bb938a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26f6b2c86b58e2faf2c4a0f37277c271d77e7f02
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891607"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869009"
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>Procedimiento Recuperar el servicio de proyecto de SharePoint
   Puede acceder al servicio de proyecto de SharePoint en los siguientes tipos de soluciones:  

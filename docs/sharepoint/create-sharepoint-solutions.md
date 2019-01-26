@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8787e79744dc52d3907f502b5696f4ca91522e01
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 86db84122876603ccea44be5fc1cd65b47263a92
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921791"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867486"
 ---
 # <a name="create-sharepoint-solutions"></a>Crear soluciones de SharePoint
   Puede crear aplicaciones de SharePoint en Visual Studio como una alternativa a crearlas en SharePoint Designer. Visual Studio promueve el desarrollo rápido de SharePoint al ofrecer características como herramientas de depuración avanzadas, IntelliSense, finalización de instrucciones y plantillas de proyecto. Visual Studio también aprovecha las herramientas y los lenguajes avanzados basados en .NET Framework. Puede desarrollar proyectos de SharePoint mediante Visual Basic o Visual C# y puede desarrollar proyectos de aplicaciones para SharePoint mediante JavaScript.  
@@ -36,7 +36,7 @@ ms.locfileid: "53921791"
 |![Entrenamiento](../sharepoint/media/vs-icon-training.gif "formación")|**Formación**<br /><br /> -   [Más información sobre el desarrollo de SharePoint](/sharepoint/dev/)|  
 |![Foros](../sharepoint/media/vs-icon-forums.gif "foros")|**Foros**<br /><br /> -   [Desarrollo de SharePoint con Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vssharepointdevelopment)<br />-   [SharePoint 2010](https://social.msdn.microsoft.com/Forums/sharepoint/home?category=sharepoint2010,sharepoint)|  
 |![Entrenamiento](../sharepoint/media/vs-icon-training.gif "formación")|**Blogs**<br /><br /> -   [Blog de desarrollo de SharePoint en Visual Studio](https://blogs.msdn.microsoft.com/vssharepointtoolsblog/)|  
-|![¿Cómo? Vídeos](../sharepoint/media/vs-icon-howdoivideos.gif "¿cómo? Vídeos")|**¿Cómo? Vídeos**<br /><br /> -   [¿Cómo lo hago?: ¿Crear elementos Web visuales para SharePoint 2010 en Visual Studio 2010?](https://visualstudio.microsoft.com/)<br />-   [¿Cómo lo hago?: ¿Crear tipos de contenido para SharePoint 2010 en Visual Studio 2010?](/previous-versions/visualstudio/visual-studio-2010/dd831853\(v\=vs.100\))<br />-   [¿Cómo lo hago?: ¿Crear definiciones de sitio para SharePoint 2010 en Visual Studio 2010?](/previous-versions/visualstudio/visual-studio-2010/dd831853\(v\=vs.100\))<br />-   [¿Cómo lo hago?: ¿Crear un modelo de conectividad a datos empresariales para SharePoint 2010 mediante Visual Studio 2010?](/previous-versions/visualstudio/visual-studio-2010/dd831853\(v\=vs.100\))|  
+|![¿Cómo? Vídeos](../sharepoint/media/vs-icon-howdoivideos.gif "¿cómo? Videos")|**¿Cómo? Videos**<br /><br /> -   [¿Cómo lo hago?: ¿Crear elementos Web visuales para SharePoint 2010 en Visual Studio 2010?](https://visualstudio.microsoft.com/)<br />-   [¿Cómo lo hago?: ¿Crear tipos de contenido para SharePoint 2010 en Visual Studio 2010?](/previous-versions/visualstudio/visual-studio-2010/dd831853\(v\=vs.100\))<br />-   [¿Cómo lo hago?: ¿Crear definiciones de sitio para SharePoint 2010 en Visual Studio 2010?](/previous-versions/visualstudio/visual-studio-2010/dd831853\(v\=vs.100\))<br />-   [¿Cómo lo hago?: ¿Crear un modelo de conectividad a datos empresariales para SharePoint 2010 mediante Visual Studio 2010?](/previous-versions/visualstudio/visual-studio-2010/dd831853\(v\=vs.100\))|  
 |![Vídeos de Channel 9](../sharepoint/media/vs-icon-channel9videos.gif "vídeos de Channel 9")|**Vídeos de Channel 9**<br /><br /> -   [Información general sobre el desarrollo de SharePoint en Visual Studio 2010](https://channel9.msdn.com/blogs/funkyonex/overview-of-sharepoint-development-in-visual-studio-2010)<br />-   [Prácticas recomendadas sobre la creación de elementos web de SharePoint 2010 con Visual Studio 2010](https://channel9.msdn.com/blogs/funkyonex/best-practices-on-building-sharepoint-2010-web-parts-with-visual-studio-2010)<br />-   [Diseñadores de paquetes y características de SharePoint en Visual Studio 2010](https://channel9.msdn.com/blogs/funkyonex/sharepoint-feature-and-package-designers-in-visual-studio-2010)|  
 |![Centro para desarrolladores de](../sharepoint/media/vs-icon-msdndevcenter.gif "Centro para desarrolladores")|**Centros para desarrolladores**<br /><br /> -   [Centro de desarrollo de Visual Studio](https://visualstudio.microsoft.com/)<br />-   [Centro de desarrollo de SharePoint](/sharepoint/dev/)<br />-   [Centro de desarrollo de SharePoint Server](/previous-versions/office/fp161348\(v\=office.15\))<br />-   [Centro de desarrollo de SharePoint Designer](/previous-versions/office/fp161348\(v\=office.15\))<br />-   [Centro de desarrollo de ASP.NET](https://msdn.microsoft.com/aa336522.aspx)|  
 |![Proporcionar comentarios](../sharepoint/media/vs-icon-feedback.gif "proporcionar comentarios")|**Proporcionar comentarios**<br /><br /> Proporcione comentarios sobre Visual Studio:<br /><br /> -   [Microsoft Connect](http://go.microsoft.com/fwlink/?LinkID=150463)<br /><br /> Proporcione comentarios sobre la documentación de Visual Studio:<br /><br /> -   **Vista ligera.** Si se encuentra al principio de cualquier tema, puede elegir el vínculo **Valorar este tema** para ir al final de ese tema, donde podrá especificar **Sí** o **No** como respuesta a **¿Le ha resultado útil?** A continuación, puede activar una o más de las casillas que aparecen si ha elegido **No**, proporcionar más información en el cuadro de texto o ambas acciones. Cuando termine, seleccione el botón **Enviar** .<br />-   **Vista sin scripts.** En la parte superior del tema, elija el **comentarios** vínculo para proporcionar comentarios en el foro de TechNet y comentarios de la biblioteca de expresión.<br />-   **Vista clásica.** En la parte superior del tema, elija el vínculo **Haga clic para evaluar y enviar comentarios** para proporcionar comentarios sobre el tema al equipo de documentación.|  

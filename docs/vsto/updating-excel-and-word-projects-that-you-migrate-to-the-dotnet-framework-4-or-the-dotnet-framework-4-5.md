@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae4be83ffb98985f03d674b851040e19a01d01c7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 67a04436c26f16b07e209ddb907a0e1e7d282548
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902885"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869062"
 ---
 # <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Actualizar proyectos de Excel y Word migrados a .NET Framework 4 o .NET Framework 4.5
   Si tiene un proyecto de Word o Excel que use cualquiera de las siguientes características, debe modificar el código si se cambia el marco de trabajo de destino a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o una versión posterior:  
@@ -213,7 +213,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
 ##  <a name="ole"></a> Actualizar código que utiliza las clases OLEObject y OLEControl  
  En los proyectos que tengan como destino .NET Framework 3.5, puede agregar controles personalizados (como controles de usuario de Windows Forms) a un documento o una hoja de cálculo mediante el uso de las clases `Microsoft.Office.Tools.Excel.OLEObject` y `Microsoft.Office.Tools.Word.OLEControl`.  
   
- En los proyectos que tengan como destino la versión [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o posterior, estas clases se han reemplazado por las interfaces <xref:Microsoft.Office.Tools.Excel.ControlSite> y <xref:Microsoft.Office.Tools.Word.ControlSite>. Debe modificar el código que hace referencia a `Microsoft.Office.Tools.Excel.OLEObject` y `Microsoft.Office.Tools.Word.OLEControl` para que en su lugar haga referencia a <xref:Microsoft.Office.Tools.Excel.ControlSite> y <xref:Microsoft.Office.Tools.Word.ControlSite>. Salvo los nuevos nombres, estos controles se comportan de la misma manera que lo hacen en los proyectos que tienen como destino .NET Framework 3.5.  
+ En los proyectos que tengan como destino la versión [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o posterior, estas clases se han reemplazado por las interfaces <xref:Microsoft.Office.Tools.Excel.ControlSite> y <xref:Microsoft.Office.Tools.Word.ControlSite> . Debe modificar el código que hace referencia a `Microsoft.Office.Tools.Excel.OLEObject` y `Microsoft.Office.Tools.Word.OLEControl` para que en su lugar haga referencia a <xref:Microsoft.Office.Tools.Excel.ControlSite> y <xref:Microsoft.Office.Tools.Word.ControlSite>. Salvo los nuevos nombres, estos controles se comportan de la misma manera que lo hacen en los proyectos que tienen como destino .NET Framework 3.5.  
   
  Para obtener más información, consulte [agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   

@@ -20,15 +20,15 @@ helpviewer_keywords:
 - helper methods [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be96a6967657a79d1e3bed9336ebb530accba2a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9dc71ba33180fa466b8d457d084faad05c61ec40
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842793"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869192"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>Agregar controles a documentos de Office en tiempo de ejecución
   Puede agregar controles a un documento de Microsoft Office Word y libro de Microsoft Office Excel en tiempo de ejecución. También puede quitar en tiempo de ejecución. Los controles que agregue o quite en tiempo de ejecución se denominan *controles dinámicos*.  
@@ -75,7 +75,7 @@ ms.locfileid: "53842793"
  No se puede quitar controles estáticos en tiempo de ejecución. Si intenta utilizar los métodos `Delete` o `Remove` para quitar un control estático, se producirá una <xref:Microsoft.Office.Tools.CannotRemoveControlException>.  
 
 > [!NOTE]  
->  No quite controles mediante programación en el controlador de eventos `Shutdown` del documento. Los elementos de la interfaz de usuario del documento ya no estarán disponibles cuando se produzca el evento `Shutdown`. Si quiere quitar controles antes de que se cierre el documento, agregue el código al controlador de eventos de otro evento, como <xref:Microsoft.Office.Tools.Word.Document.BeforeClose> o <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> para Word, o <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeClose>o <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeSave> para Excel.  
+>  No quite controles mediante programación en el controlador de eventos `Shutdown` del documento. Los elementos de la interfaz de usuario del documento ya no estarán disponibles cuando se produzca el evento `Shutdown` . Si quiere quitar controles antes de que se cierre el documento, agregue el código al controlador de eventos de otro evento, como <xref:Microsoft.Office.Tools.Word.Document.BeforeClose> o <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> para Word, o <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeClose>o <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeSave> para Excel.  
 
 ##  <a name="HostControls"></a> Agregar controles host a documentos  
  Cuando agregue controles host a documentos mediante programación, debe proporcionar un nombre que identifique de forma única el control y debe especificar en qué parte del documento se debe agregar el control. Para obtener instrucciones específicas, consulte los temas siguientes:  
@@ -110,7 +110,7 @@ ms.locfileid: "53842793"
 
 - En Excel, use uno de los métodos <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddControl%2A> de un objeto <xref:Microsoft.Office.Tools.Excel.ControlCollection> .  
 
-- En Word, use uno de los métodos <xref:Microsoft.Office.Tools.Word.ControlCollection.AddControl%2A> de un objeto <xref:Microsoft.Office.Tools.Word.ControlCollection>.  
+- En Word, use uno de los métodos <xref:Microsoft.Office.Tools.Word.ControlCollection.AddControl%2A> de un objeto <xref:Microsoft.Office.Tools.Word.ControlCollection> .  
 
   Para agregar el control, pase el elemento <xref:System.Windows.Forms.Control>, una ubicación para el control y un nombre que identifique de forma única el control al método `AddControl`. El método `AddControl` devuelve un objeto que define cómo interactúa el control con el documento o la hoja de cálculo. El `AddControl` método devuelve un <xref:Microsoft.Office.Tools.Excel.ControlSite> (para Excel) o un <xref:Microsoft.Office.Tools.Word.ControlSite> objeto (para Word).  
 

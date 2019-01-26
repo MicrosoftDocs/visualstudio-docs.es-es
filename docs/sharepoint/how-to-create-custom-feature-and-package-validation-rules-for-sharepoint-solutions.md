@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 - SharePoint development in Visual Studio, validation rules
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a8b27b3b2900521a61612eafb4d91ef94740bbcd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 794974991216a521bf2ca4afb1e958716a3bf735
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939233"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874086"
 ---
 # <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Procedimiento Crear paquetes y características personalizado reglas de validación para las soluciones de SharePoint
   Puede crear reglas de validación personalizadas para comprobar el paquete de solución generado por Visual Studio. Puede realizar la validación completa en una característica completa o el paquete seleccionando **validar** en el menú contextual de un paquete o una característica en el **PackagingExplorer**. Al agregar nuevos elementos de proyecto SharePonit o características al proyecto para determinar si el paquete o la característica sería un estado válido, se realiza una validación parcial.  

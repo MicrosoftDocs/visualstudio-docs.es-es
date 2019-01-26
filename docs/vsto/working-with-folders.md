@@ -11,17 +11,17 @@ helpviewer_keywords:
 - folders [Office development in Visual Studio]
 - e-mail [Office development in Visual Studio], folders
 - Outlook [Office development in Visual Studio], folders
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 843019c1e7c845f0cdf2dcae7e571bf9ed991b79
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e57775a90523b02986cdc9b2a13ec42fdf950cc0
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952620"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872643"
 ---
 # <a name="work-with-folders"></a>Trabajar con carpetas
   La clase <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> contiene los métodos y las propiedades que se usan para obtener acceso, crear y personalizar carpetas.  

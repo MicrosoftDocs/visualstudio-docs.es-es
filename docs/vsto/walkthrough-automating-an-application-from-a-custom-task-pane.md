@@ -12,17 +12,17 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], automating applications
 - custom task panes [Office development in Visual Studio], PowerPoint
 - task panes [Office development in Visual Studio], automating applications
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 511fc73397355c8870f53a410d79ff1ab73321f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3689b72ef13856ebf3df419377c5bed4ffb88982
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915093"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874892"
 ---
 # <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Tutorial: Automatizar una aplicación desde un panel de tareas personalizado
   En este tutorial se muestra cómo crear un panel de tareas personalizado que automatiza PowerPoint. El panel de tareas personalizado inserta fechas en una diapositiva cuando el usuario hace clic en un control <xref:System.Windows.Forms.MonthCalendar> que se encuentra en el panel de tareas personalizado.  
@@ -87,7 +87,7 @@ ms.locfileid: "53915093"
      [!code-csharp[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#1)]
      [!code-vb[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#1)]  
   
-3.  Agregue el código siguiente a la clase `MyUserControl`. Este código declara un objeto <xref:Microsoft.Office.Interop.PowerPoint.Shape> como miembro de `MyUserControl`. En el siguiente paso, usará este <xref:Microsoft.Office.Interop.PowerPoint.Shape> para agregar un cuadro de texto a una diapositiva de la presentación activa.  
+3.  Agregue el código siguiente a la clase `MyUserControl` . Este código declara un objeto <xref:Microsoft.Office.Interop.PowerPoint.Shape> como miembro de `MyUserControl`. En el siguiente paso, usará este <xref:Microsoft.Office.Interop.PowerPoint.Shape> para agregar un cuadro de texto a una diapositiva de la presentación activa.  
   
      [!code-csharp[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#2)]
      [!code-vb[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#2)]  

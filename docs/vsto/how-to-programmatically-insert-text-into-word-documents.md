@@ -11,17 +11,17 @@ helpviewer_keywords:
 - ranges, replacing text in documents
 - documents [Office development in Visual Studio], inserting text
 - text [Office development in Visual Studio], replacing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d5a0382726e6fc481001f4afc7820875e436594
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f62c5e820af830d6cfeb7a8e7f930b8025422565
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828922"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869533"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Procedimiento Insertar texto en documentos de Word mediante programación
   Existen tres maneras principales de insertar texto en documentos de Microsoft Office Word:  

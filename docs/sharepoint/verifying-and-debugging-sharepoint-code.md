@@ -10,23 +10,23 @@ helpviewer_keywords:
 - IntelliTrace [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, IntelliTrace
 - SharePoint development in Visual Studio, unit testing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1705e77472ba9b8fa7a01d047c0aadaf342b7932
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7b57e07245631d37594d66ea7907b16efd817b2b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916840"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869494"
 ---
 # <a name="verify-and-debug-sharepoint-code"></a>Comprobar y depurar el código de SharePoint
 Con IntelliTrace y las pruebas unitarias, puede depurar las soluciones de SharePoint más fácilmente y asegurarse de que cada método en ellas funciona correctamente. Puede usar estas características para los proyectos de SharePoint en Visual Studio siguiendo los mismos procedimientos que en otros tipos de proyectos.
 
-## <a name="intellitrace"></a>IntelliTrace
-Mediante IntelliTrace, puede determinar el estado actual de la solución de SharePoint, así como los eventos que se produjeron en el pasado y el contexto en el que se produjeron. Puede navegar hacia delante y hacia atrás a varios puntos de la solución de SharePoint donde se grabaron eventos de interés y revisar los estados y valores de las variables en cada punto. Mediante esta navegación dinámica, puede depurar de forma más rápida y fácil las soluciones de SharePoint sin tener que establecer numerosos puntos de interrupción. También puede guardar la sesión de depuración en un registro de IntelliTrace (*.iTrace*) de archivo, abrirlo posteriormente en Visual Studio Enterprise y realizar una depuración posterior a un bloqueo. El *.iTrace* archivo incluye información detallada sobre cuándo y dónde se produjeron los errores específicos de SharePoint, por lo que más fácilmente puede averiguar qué está causando los errores. La información de la *.iTrace* archivo es un subconjunto del registro de errores completo que crea el registro unificado del sistema (ULS) en SharePoint. Esta información incluye eventos que son específicos de SharePoint, como cuando un perfil de usuario se abre o se cierra y cuando las propiedades de un proyecto de SharePoint se cargan, se leen o se cambian. Puede configurar los eventos que registra IntelliTrace. Para obtener más información, consulte [mediante datos de IntelliTrace guardado](../debugger/using-saved-intellitrace-data.md).
+## <a name="intellitrace"></a>Intellitrace
+Mediante IntelliTrace, puede determinar el estado actual de la solución de SharePoint, así como los eventos que se produjeron en el pasado y el contexto en el que se produjeron. Puede navegar hacia delante y hacia atrás a varios puntos de la solución de SharePoint donde se grabaron eventos de interés y revisar los estados y valores de las variables en cada punto. Mediante esta navegación dinámica, puede depurar de forma más rápida y fácil las soluciones de SharePoint sin tener que establecer numerosos puntos de interrupción. También puede guardar la sesión de depuración en un registro de IntelliTrace (*.iTrace*) de archivo, abrirlo posteriormente en Visual Studio Enterprise y realizar una depuración posterior a un bloqueo. El *.iTrace* archivo incluye información detallada sobre cuándo y dónde se produjeron los errores específicos de SharePoint, por lo que más fácilmente puede averiguar qué está causando los errores. La información de la *.iTrace* archivo es un subconjunto del registro de errores completo que crea el registro unificado del sistema (ULS) en SharePoint. Esta información incluye eventos que son específicos de SharePoint, como cuando un perfil de usuario se abre o se cierra y cuando las propiedades de un proyecto de SharePoint se cargan, se leen o se cambian. Puede configurar los eventos que registra IntelliTrace. Para obtener más información, vea el tema sobre el [uso de datos guardados de IntelliTrace](../debugger/using-saved-intellitrace-data.md).
 
 Cuando se produce un error en SharePoint, el cuadro de diálogo de error muestra un identificador "identificador de correlación" para ese error concreto. También puede obtener los identificadores de correlación de eventos que se muestran en el *.iTrace* archivo. Para mostrar una lista de todos los eventos que se produjeron con un identificador de correlación dado, puede escribir el identificador en el **Analysis** sección de la página de resumen de IntelliTrace. En esa sección, puede elegir si se muestran solo los nombres de los eventos que se produjeron o los nombres de los eventos junto con su información de llamadas, como el nombre de función, los puntos de salida y de entrada, los parámetros y los valores devueltos.
 

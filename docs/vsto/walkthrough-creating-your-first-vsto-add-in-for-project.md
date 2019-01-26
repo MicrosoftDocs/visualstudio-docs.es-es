@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating your first project
 - Project [Office development in Visual Studio], creating your first project
 - add-ins [Office development in Visual Studio], creating your first project
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c0edd7a956f158f87a4f5102ab9ba3bb4bae1ec6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5ec2a0959e09cac4522697ebe8ab27d58a890f45
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931260"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872773"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Tutorial: Crear el primer complemento VSTO para Project
   En este tutorial se muestra cómo crear un complemento VSTO para Microsoft Office Project. Las características que cree en este tipo de solución estarán disponibles para la propia aplicación, con independencia de los proyectos que estén abiertos. Para obtener más información, consulte [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -75,7 +75,7 @@ ms.locfileid: "53931260"
   
 ### <a name="to-add-a-task-to-a-new-project"></a>Para agregar una tarea a un nuevo proyecto  
   
-1. En el archivo de código ThisAddIn, agregue el código siguiente a la clase `ThisAddIn`. Este código define un controlador de eventos para el evento `NewProject` de la clase `Microsoft.Office.Interop.MSProject.Application`.  
+1. En el archivo de código ThisAddIn, agregue el código siguiente a la clase `ThisAddIn` . Este código define un controlador de eventos para el evento `NewProject` de la clase `Microsoft.Office.Interop.MSProject.Application`.  
   
     Cuando el usuario crea un nuevo proyecto, este controlador de eventos agrega una tarea al proyecto.  
   
