@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 90ae401c-b294-49ac-98da-e0d274f5bebb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9f6e5d1c28e4990555b1aeef73d284d40c4172c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c27f9ce239d5d82dc972186912266cea0d4f1ddf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835817"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070505"
 ---
 # <a name="templatecontent-element-visual-studio-templates"></a>TemplateContent (Elemento, Plantillas de Visual Studio)
 

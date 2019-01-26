@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d76c440c3c763b93c14ad03d9f48e6c977e9e5fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 270cdaac1f58aefaf13535218613f50bbf645b59
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867006"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981316"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Uso de marcadores de texto con la API heredada
 Un marcador de texto es un intervalo de texto en un búfer que puede afectar a la presentación flotante y el comportamiento de un área de texto. Los marcadores incluyen los puntos de interrupción, marcadores, subrayados ondulados y áreas de solo lectura. Marcadores de texto son básicamente diferentes colores de sintaxis. Color de la sintaxis es una manera rápida para comunicar la sintaxis del lenguaje que está asociada a un área de texto. Colorear la sintaxis generalmente se solicita cuando Windows se vuelve a dibujar la pantalla, cuando la velocidad es importante. Colorear la sintaxis cambia solo el color del texto. Marcadores de texto pueden cambiar muchas otras propiedades de texto. Marcadores de texto pueden "flotar" y aplicar un comportamiento especial y color.  

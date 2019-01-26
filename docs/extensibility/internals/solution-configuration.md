@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec88e383c7ad0a74699f984691d337da7d6a2cac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 831a35fe910a906a29e8b0a6a48377efb3569b11
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835041"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937891"
 ---
 # <a name="solution-configuration"></a>Configuración de soluciones
 Configuraciones de soluciones almacenan propiedades de nivel de solución. Estos dirigen el comportamiento de la **iniciar** clave (F5) y **compilar** comandos. De forma predeterminada, estos comandos compilación e iniciar la configuración de depuración. Ambos comandos se ejecutan en el contexto de una configuración de soluciones. Esto significa que el usuario puede esperar F5 para iniciar y se configura independientemente de la solución activa a través de la configuración de compilación. El entorno está diseñado para optimizar para soluciones en lugar de los proyectos en cuanto a la generación y ejecución.  

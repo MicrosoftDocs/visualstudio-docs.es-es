@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 548f50b3d348c520ed7746b7dc3d123ffeb4c6aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eea18a356eb140e3eecf779d9b5468316b4fc785
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826041"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034017"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Usar el editor de conjunto de reglas de análisis de código
 

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5fc00ced-882c-4b48-b46c-1fa5a2469f94
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3eb5706cea2ec0e79ed29812beb94d39a117c61d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5e514bdb50343af549e37a068eb138a3d30fd170
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886012"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980016"
 ---
 # <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Procedimiento Registrarse para eventos de búfer de texto con la API heredada
 Si tiene acceso al búfer de texto mediante el uso de la API heredada, debe registrar para eventos del búfer de texto tal como se muestra en el siguiente procedimiento.  

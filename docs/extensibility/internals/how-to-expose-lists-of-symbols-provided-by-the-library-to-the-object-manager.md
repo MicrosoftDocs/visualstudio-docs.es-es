@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 679a743db707b7354fe104721ea8dd709e151217
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2bce8ffbfc1aebe10bd6bd9a84fe59c51dcaa273
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827447"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027560"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Procedimiento Exposición de listas de símbolos proporcionadas por la biblioteca en el Administrador de objetos
 Las herramientas de exploración de símbolos, **vista de clases**, **Examinador de objetos**, **Examinador de llamadas** y **resultados de la búsqueda de símbolos**, pasa las solicitudes de nuevos datos el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el Administrador de objetos. El Administrador de objetos busca las bibliotecas adecuadas y las solicitudes nuevas listas de símbolos. Las bibliotecas de responden, ya que proporciona los datos solicitados para la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el Administrador de objetos a través de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfaz. El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el Administrador de objetos llama a los métodos <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> para obtener los datos de la interfaz y se utiliza para rellenar o actualizar las vistas de las herramientas de exploración de símbolos.  

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 58c8e9a5-4494-47c2-bddb-56f628da6a2d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99b046d67e3f7edc48fa90d0fadac2ad63a05545
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d06c712e72af0cdab61370df8537f7c9aaeff75b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846222"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028507"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
 Alterna el estado virtualizado de este pendiente de punto de interrupción. Cuando se virtualiza un punto de interrupción pendiente, el motor de depuración intentará enlazar cada vez que carga el nuevo código en el programa.  

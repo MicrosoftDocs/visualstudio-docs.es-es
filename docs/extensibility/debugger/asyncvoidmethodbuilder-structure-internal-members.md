@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: fe2970ab-d4c5-4355-a8e4-772ee0a57178
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4aa6a9ab426f3773e7885b449a4b91b284cc0f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7fa4eb73257b98a588102bee96c037e2d302e96c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875117"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976659"
 ---
 # <a name="asyncvoidmethodbuilder-structure---internal-members"></a>AsyncVoidMethodBuilder structure: miembros internos
 En este tema se describe los miembros internos de la <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> clase. Para obtener información general acerca de esta clase, vea el <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> tema de referencia.  
@@ -40,7 +40,7 @@ En este tema se describe los miembros internos de la <xref:System.Runtime.Compil
 |nombre|Descripción|  
 |----------|-----------------|  
 |[Propiedad ObjectIdForDebugger](../../extensibility/debugger/asyncvoidmethodbuilder-objectidfordebugger-property.md)|Obtiene un objeto que puede utilizarse para identificar de forma única este generador para el depurador.|  
-|[campo m_objectIdForDebugger](../../extensibility/debugger/asyncvoidmethodbuilder-m-objectidfordebugger-field.md)|Representa el objeto inicializado de forma diferida utilizado por el depurador para identificar de forma única este generador.|  
+|[m_objectIdForDebugger field](../../extensibility/debugger/asyncvoidmethodbuilder-m-objectidfordebugger-field.md)|Representa el objeto inicializado de forma diferida utilizado por el depurador para identificar de forma única este generador.|  
   
 ## <a name="see-also"></a>Vea también  
  <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>   

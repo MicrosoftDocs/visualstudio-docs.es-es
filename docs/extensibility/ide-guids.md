@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d31a0f97-b7be-4fb5-a942-8ba4527bc068
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c338ad22b9ca11b510ed331649f7264725249d1d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f8d95d707f93b26b8344ac5e2c79c68e25b3027e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870393"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974414"
 ---
 # <a name="ide-guids"></a>GUID de IDE
 
@@ -41,7 +41,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> clase publica los GUID de algunas p
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsUIHierarchyWindow_guid>|7D960B07-7AF8-11D0-8E5E-00A0C911005A|
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.ExternalEditor_guid>|8137C9E8-35FE-4AF2-87B0-DE3C45F395FD|
-|Microsoft.VisualStudio.VSConstants.SID_SUIHostCommandDispatcher|e69cd190-1276-11D1-9f64-00a0c911004f|
+|Microsoft.VisualStudio.VSConstants.SID_SUIHostCommandDispatcher|e69cd190-1276-11d1-9f64-00a0c911004f|
 |Microsoft.VisualStudio.VSConstants.SID_SVsGeneralOutputWindowPane|65482c72-defa-41b7-902c-11c091889c83|
 
 ## <a name="files-virtual-and-physical-folders-and-subprojects"></a>Los archivos, carpetas virtuales y físicas y subproyectos
@@ -58,16 +58,16 @@ La <xref:Microsoft.VisualStudio.VSConstants> clase publica los GUID de algunas p
 |Constante|GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>|8fe2df1d-e0da-4ebe-9d5c-415d40e487b5|
-|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>|adfc4e61-0397-11D1-9f4e-00a0c911004f|
-|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.DesignMode_guid>|adfc4e63-0397-11D1-9f4e-00a0c911004f|
+|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>|adfc4e61-0397-11d1-9f4e-00a0c911004f|
+|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.DesignMode_guid>|adfc4e63-0397-11d1-9f4e-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Dragging_guid>|b706f393-2e5b-49e7-9e2e-b1825f639b63|
-|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>|adfc4e65-0397-11D1-9f4e-00a0c911004f|
-|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.FullScreenMode_guid>|adfc4e62-0397-11D1-9f4e-00a0c911004f|
-|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>|adfc4e64-0397-11D1-9f4e-00a0c911004f|
+|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>|adfc4e65-0397-11d1-9f4e-00a0c911004f|
+|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.FullScreenMode_guid>|adfc4e62-0397-11d1-9f4e-00a0c911004f|
+|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>|adfc4e64-0397-11d1-9f4e-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>|adfc4e60-0397-11d1-9f4e-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>|f1536ef8-92ec-443c-9ed7-fdadf150da82|
-|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>|93694fa0-0397-11D1-9f4e-00a0c911004f|
-|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>|adfc4e66-0397-11D1-9f4e-00a0c911004f|
+|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>|93694fa0-0397-11d1-9f4e-00a0c911004f|
+|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>|adfc4e66-0397-11d1-9f4e-00a0c911004f|
 
 ## <a name="output-pane"></a>Panel de salida
 
@@ -85,7 +85,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> clase publica los GUID de algunas p
 |Constante|GUID|
 |--------------|----------|
 |Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97|5EFC7975-14BC-11CF-9B2B-00AA00573819|
-|Microsoft.VisualStudio.VSConstants.GUID_VsUIHierarchyWindowCmds >|60481700-078b-11d1-aaf8-00a0c9055a90|
+|Microsoft.VisualStudio.VSConstants.GUID_VsUIHierarchyWindowCmds>|60481700-078b-11d1-aaf8-00a0c9055a90|
 
 ## <a name="iunknown"></a>IUnknown
 

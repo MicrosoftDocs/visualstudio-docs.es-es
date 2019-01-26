@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: b5a853b7-221e-4d62-8948-07423089d75d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4f81691f60619cd9442e86b155850cd29e2cbd5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e79eb03b7c849544d57cbb395bd0a26149bf5ac0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896592"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007755"
 ---
 # <a name="idebuggenericfielddefinition"></a>IDebugGenericFieldDefinition
 Representa la definición de un campo para un tipo genérico de código administrado.  

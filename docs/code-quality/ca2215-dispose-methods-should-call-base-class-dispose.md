@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: c772e7a6-a87e-425c-a70e-912664ae9042
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8531bfd8407415aa1868fb5e1f633be442ce9bc7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 84e1ef38627d0e0ec06085f062dc59b97fb52dbc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844228"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55032216"
 ---
 # <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215: Los métodos Dispose deben llamar al método Dispose de la clase base
 

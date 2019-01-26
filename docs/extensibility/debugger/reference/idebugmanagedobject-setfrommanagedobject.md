@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8700ee8d-2704-4580-bccc-046837a24edd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92b1e794dea8d64a8c41dfd4a85627c642d438f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a760bb14ea1749e359b5f9deacb6e5918a42423f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901784"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974401"
 ---
 # <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
 Establece el valor de la instancia del objeto de clase de valor de la instancia de la clase de valor que se proporciona como un parámetro.  

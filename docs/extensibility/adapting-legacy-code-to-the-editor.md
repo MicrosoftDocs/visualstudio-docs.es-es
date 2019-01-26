@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: a208d38e-9bea-41c9-9fe2-38bd86a359cb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fba22a2b2dacec57439b66abe6607c248ed1914
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b67df621b4eb82529a4b17470e31946476becdfa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926049"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005935"
 ---
 # <a name="adapt-legacy-code-to-the-editor"></a>Adaptar código heredado en el editor
 El editor de Visual Studio tiene muchas características que puede acceder desde los componentes de código existente. Las instrucciones siguientes muestran cómo adaptar un componente que no son de MEF, por ejemplo, un VSPackage para consumir la funcionalidad del editor. Las instrucciones también muestran cómo utilizar los adaptadores para obtener los servicios del editor de código administrado y no administrado.  

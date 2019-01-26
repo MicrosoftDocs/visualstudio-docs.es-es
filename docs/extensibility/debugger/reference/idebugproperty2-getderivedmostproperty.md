@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetDerivedMostProperty | Documentos de Microsoft
+title: IDebugProperty2::GetDerivedMostProperty | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cc86b461-62d1-4340-8209-c65037fd8b02
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c2a895e73393739fc2aa6c44d809647c9ccbb3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca1a90cff0ee96524b13067f32eadd176ad590ee
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988140"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030358"
 ---
 # <a name="idebugproperty2getderivedmostproperty"></a>IDebugProperty2::GetDerivedMostProperty
 Obtiene la propiedad más derivado de una propiedad.  

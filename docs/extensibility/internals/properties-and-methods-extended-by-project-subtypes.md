@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 2b9833bf-8551-4ae1-93db-197ba645c65e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e325e7cb352592903d869c158e72b766a657ff08
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ba57cb5ff2bdeb4c1d6038704642b41d3b9d7a9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873410"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012916"
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>Propiedades y métodos ampliados por subtipos de proyecto
 Un subtipo de proyecto tiene una gran cantidad de energía para influir en el comportamiento del proyecto porque se construye como un agregador de un proyecto de base. En esta sección se resume algunas de las características que pueden ser mejoradas o modificar mediante subtipos de proyecto.  

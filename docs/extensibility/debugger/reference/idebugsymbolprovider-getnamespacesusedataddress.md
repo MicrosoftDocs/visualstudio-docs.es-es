@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetNamespacesUsedAtAddress | Documentos de Microsoft
+title: IDebugSymbolProvider::GetNamespacesUsedAtAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 392de54b-9af0-4567-953b-1b41acd1e05c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cc79478a1cb262ae08420e6f34955d709a29432
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 13e7aef1465ffe6e37a82fc3c685fef28bbf61e8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850091"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978313"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
 Este método crea un enumerador para los espacios de nombres asociado a la dirección de depuración.  

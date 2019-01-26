@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0534224f-654f-4862-bc4d-a9a81a5f8899
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68f39c76a00e21f6c484c56d632bd69bdeffbc9d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: df52c80b38a715f56df002720c002e66db112523
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876619"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937566"
 ---
 # <a name="idebugpendingbreakpoint2setcondition"></a>IDebugPendingBreakpoint2::SetCondition
 Establece o cambia la condición asociada con el punto de interrupción pendiente.  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 0a029a7c-79fd-4b54-bd63-bd0f21aa8d30
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49d058752d41604ec6560d18096c68e6566ab01e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 20e8dcb947b84652f818ab38ed441e39e27942e9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852669"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033406"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Jerarquías en Visual Studio
 El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE) muestra un proyecto como un *jerarquía*. En el IDE, una jerarquía es un árbol de nodos, donde cada nodo tiene un conjunto de propiedades asociadas. Un *jerarquía del proyecto* es un contenedor que contiene elementos de proyecto, las relaciones de los elementos y las propiedades asociadas y los comandos.  

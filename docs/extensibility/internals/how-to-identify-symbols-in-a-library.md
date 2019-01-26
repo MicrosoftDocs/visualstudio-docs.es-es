@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 8fb0de61-71e7-42d1-8b41-2ad915474384
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b62a9207a7a676d10152f8b66dccdcbd7060e8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dc57f481d7552e428c5d6df2ae934a2c028d4e35
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918997"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001022"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>Procedimiento Identificación de símbolos en una biblioteca
 Herramientas de exploración de símbolos muestran las vistas jerárquicas de símbolos. Los símbolos representan espacios de nombres, objetos, clases, miembros de clase y otros elementos de lenguaje.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d1f31e5b-c6e2-4e02-8959-b3e86041b29c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0e425a1790c2452e56061c8f4adee3c473e4b58
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 69a2a85ae3058f5172240d7da6aeaa6cd8c35d47
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859268"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040949"
 ---
 # <a name="idebugbinder"></a>IDebugBinder
 > [!IMPORTANT]
@@ -52,7 +52,7 @@ IDebugBinder : IUnknown
  Esta interfaz devuelve objetos que se usan por el evaluador de expresiones en árboles de análisis. El evaluador de expresiones analiza una expresión utilizando el proveedor de símbolos para convertir los símbolos de la expresión a las instancias de [IDebugField](../../../extensibility/debugger/reference/idebugfield.md), que describen cada símbolo en cuanto a su tipo y la ubicación en el código fuente. El [enlazar](../../../extensibility/debugger/reference/idebugbinder-bind.md) método convierte `IDebugField` objetos [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objetos que se conectan o enlazar un símbolo de tipo a un valor real en la memoria. Estos `IDebugObject` objetos, a continuación, se almacenan en un árbol de análisis para evaluarlos posteriormente.  
   
 ## <a name="requirements"></a>Requisitos  
- Encabezado: ee.h  
+ Header: ee.h  
   
  Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   

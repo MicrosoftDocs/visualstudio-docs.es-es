@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 48da37f7-a237-48a9-9ff9-389c1a00862c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90f3089841e4f5eab5a490eb5968eacda8af8808
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 14f05949dd275a7f1566b8cec3a49903249e3de1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864051"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037205"
 ---
 # <a name="bstrarray"></a>BSTR_ARRAY
 Una estructura que describe una matriz de cadenas.  

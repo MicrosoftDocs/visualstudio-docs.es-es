@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae65e494c20808123841143155e02d91c41b858e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7c97bd62f6a197d5aac64423002580c8ed05d34b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857911"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042258"
 ---
 # <a name="start-view"></a>Vista Inicio
 
@@ -42,9 +42,9 @@ Los siguientes botones están habilitados en la barra de herramientas del Diseñ
 
 |Opción|Descripción|
 |-|-----------------|
-|**Mostrar vista inicio**|Cambia a la vista Inicio. Esta vista puede obtenerse mediante el método abreviado de teclado: **CTRL**+**1**.|
-|**Mostrar vista modelo de contenido**|Cambia a la vista Modelo de contenido. Esta vista puede obtenerse mediante el método abreviado de teclado: **CTRL**+**2**.|
-|**Mostrar vista Gráfico**|Cambia a la vista Gráfico. Esta vista puede obtenerse mediante el método abreviado de teclado: **CTRL**+**3**.|
+|**Mostrar vista inicio**|Cambia a la vista Inicio. Esta vista puede obtenerse mediante el método abreviado de teclado: **Ctrl**+**1**.|
+|**Mostrar vista modelo de contenido**|Cambia a la vista Modelo de contenido. Esta vista puede obtenerse mediante el método abreviado de teclado: **Ctrl**+**2**.|
+|**Mostrar vista Gráfico**|Cambia a la vista Gráfico. Esta vista puede obtenerse mediante el método abreviado de teclado: **Ctrl**+**3**.|
 
 ## <a name="see-also"></a>Vea también
 

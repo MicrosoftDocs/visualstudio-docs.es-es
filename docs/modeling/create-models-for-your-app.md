@@ -19,15 +19,15 @@ helpviewer_keywords:
 - software, modeling
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f608246af6311c03f4ed5ee31d4588ce2aa1a7ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d5a562b267b630e2a0c53b90072c2dfde62f085b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942689"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978885"
 ---
 # <a name="create-models-for-your-app"></a>Crear modelos para la aplicación
 
@@ -45,7 +45,7 @@ Para visualizar la arquitectura de un sistema o código existente, cree los diag
 
 ## <a name="related-tasks"></a>Tareas relacionadas
 
-|**Tema**|**Task**|
+|**Topic**|**Task**|
 |-|-|
 |[Visualizar el código](../modeling/visualize-code.md)|Cree mapas de código y diagramas de dependencia para adquirir una mejor comprensión del código desconocido.|
 |[Requisitos del usuario de modelos](../modeling/model-user-requirements.md)|Usar modelos para aclarar y transmitir las necesidades del usuario.|

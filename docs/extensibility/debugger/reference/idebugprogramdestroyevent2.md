@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ddf127ca-c4a5-4071-90ca-68faf2f57dbd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 690292ba7e9e807e9a13acefdb50884e999b9aaa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 986c434ba3797ff71cc16f524caf88b38055a503
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834534"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985424"
 ---
 # <a name="idebugprogramdestroyevent2"></a>IDebugProgramDestroyEvent2
 Esta interfaz se envía por el motor de depuración (DE) el Administrador de depuración de la sesión (SDM) cuando un programa se ha ejecutado hasta su finalización.  

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 567acde3-354e-4f39-8d99-0ef86c103396
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 523c7de972958eff9224896d3a59543163eb7b9e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9219ffe7289da1a8d6477d17cb4212ff876510c5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936820"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945169"
 ---
 # <a name="supporting-source-control"></a>Compatibilidad con control de código fuente
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] admite las protecciones de archivos, protecciones y otras operaciones de control de origen para el proyecto o el editor. Como un cliente de control de código fuente, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] está diseñado para interactuar con un paquete de control de código fuente, como [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], que proporciona funciones de control para un conjunto de archivos definido dinámicamente, control de versiones y archivado.  

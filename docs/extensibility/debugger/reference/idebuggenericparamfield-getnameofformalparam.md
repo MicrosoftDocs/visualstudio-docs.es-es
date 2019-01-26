@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 05032a83-49ce-4007-b5d6-7b56945b956c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e907c194245bdb485ae70463c4e47fd23155a8ad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f7045fa61de5636862e179b3b2b3f583404c6cad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989632"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031661"
 ---
 # <a name="idebuggenericparamfieldgetnameofformalparam"></a>IDebugGenericParamField::GetNameOfFormalParam
 Recupera el nombre de este parámetro genérico.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 17863747-1901-4c53-a2b3-ed996085e120
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f73eff3f1be51045381c0eaa76d5d3914d8e9ec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15af3d1711453c17a9e88c392f451161131d5b3d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869273"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017011"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption (Función)
 Esta función recupera una variedad de opciones específicas del usuario.  

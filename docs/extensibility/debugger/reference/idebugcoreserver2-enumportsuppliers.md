@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ce0c90e4-8e02-4b08-b558-7677fb2c88f7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f16e49aada72c9f238a574f6191b9800f77258a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8610b278b23d4b7be95911af74ccda318d36d9ee
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892811"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942664"
 ---
 # <a name="idebugcoreserver2enumportsuppliers"></a>IDebugCoreServer2::EnumPortSuppliers
 Recupera una lista de todos los proveedores de puertos disponibles.  

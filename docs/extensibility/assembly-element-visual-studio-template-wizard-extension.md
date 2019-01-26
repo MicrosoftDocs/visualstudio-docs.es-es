@@ -11,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: 0c3dc280-1753-4ea2-a13c-d31d13b935b2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07b01c993bb9a20dcb836a67bc2a9e8d78135adb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55cbc596824e0a02398ee1ad0ff420db0746089a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828191"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010260"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Elemento Assembly (extensión de Asistente de plantilla de Visual Studio)
 Especifica el nombre o el nombre seguro del ensamblado que implementa el `IWizard` interfaz.  
   
- \<VSTemplate >  
-\<WizardExtension >  
+ \<VSTemplate>  
+\<WizardExtension>  
 \<Ensamblado >  
   
 ## <a name="syntax"></a>Sintaxis  

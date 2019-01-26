@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 41578062-8455-412a-9d8b-1e1e9dc8d52e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a7db578a057f788bf64c1444ceb406cc11ff847
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f739061217f3265945bead95e40129b86a173f8b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928414"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992924"
 ---
 # <a name="frameinfoflags"></a>FRAMEINFO_FLAGS
 Especifica la información para recuperar sobre un objeto de marco de pila.  

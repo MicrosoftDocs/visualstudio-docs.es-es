@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerService::GetCustomViewerList | Documentos de Microsoft
+title: IEEVisualizerService::GetCustomViewerList | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 249d26ca-914f-43af-a400-8162477223f4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05ff06b60ec268a434cdfc517f94a90bd034cf0e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1afca98c7396d9fd10aa00e2b3ef1a1e9e4ea189
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846644"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933586"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
 Este método devuelve una lista de visualizadores de tipo que conoce este servicio.  

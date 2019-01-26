@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 71189a00-34eb-4c71-b96e-8bd6e70c6966
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14c7b3c21c22bbca975c0425284e6560a2dde115
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 990768acb7a209a5b466716f789a746d7234fd30
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839393"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001568"
 ---
 # <a name="ienumdebugaddressesclone"></a>IEnumDebugAddresses::Clone
 Este método devuelve una copia de la enumeración actual como un objeto independiente.  

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c971f753656ad876ba3a2401ddd2033f02cbac0a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 54b4d1b3b1dca44acc092cb3a9a639c196ce8e50
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831763"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010069"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Introducción a las extensiones de editor y el servicio de lenguaje
 Puede usar las extensiones de editor para agregar características del servicio de lenguaje como la esquematización, coincidencia de llaves, IntelliSense y bombillas a su propio lenguaje de programación o a cualquier tipo de contenido. También puede personalizar la apariencia y comportamiento del editor de Visual Studio, por ejemplo el color, los márgenes, los elementos gráficos y otros elementos visuales de texto. También puede definir su propio tipo de contenido y especificar la apariencia y comportamiento de las vistas de texto en el que aparece su contenido.  
@@ -64,7 +64,7 @@ Puede usar las extensiones de editor para agregar características del servicio 
 ## <a name="run-extensions-in-the-experimental-instance"></a>Ejecutar las extensiones en la instancia experimental  
  Puede aislar su versión de Visual Studio mientras desarrolla una extensión mediante la implementación en la siguiente carpeta experimental (en Windows Vista y Windows 7):  
   
- *{%LOCALAPPDATA%}\VisualStudio\10.0Exp\Extensions\\{company}\\{ExtensionID}.*  
+ *{%LOCALAPPDATA%}\VisualStudio\10.0Exp\Extensions\\{Company}\\{ExtensionID}*  
   
  donde *% LOCALAPPDATA %* es el nombre del usuario ha iniciado sesión, *empresa* es el nombre de la empresa que posee la extensión, y *ExtensionID* es el identificador de la extensión.  
   

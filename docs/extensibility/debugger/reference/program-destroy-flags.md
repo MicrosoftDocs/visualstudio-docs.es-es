@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: be00d4a3-d5b8-4159-b632-64577f534883
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcefe5f123717536e951eb3e42f9ae6af1d0865a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5ba9bd2ae2ac7f06432495cf7d7b680ed1f98898
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822067"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029653"
 ---
 # <a name="programdestroyflags"></a>PROGRAM_DESTROY_FLAGS
 Enumera la válidos los valores del programa destruyen marcas.  

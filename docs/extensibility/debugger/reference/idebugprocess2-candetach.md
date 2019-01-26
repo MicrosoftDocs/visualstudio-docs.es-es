@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2830f7c3-69fb-474a-97b8-5b869e38d546
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f092fc0ec8467a6b78addff50b3d8d8f37ee29d5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 21fc550482021397e219e685074a9cc9c6e6c837
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962920"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015581"
 ---
 # <a name="idebugprocess2candetach"></a>IDebugProcess2::CanDetach
 Determina si el Administrador de depuración de la sesión (SDM) puede desasociar el proceso.  

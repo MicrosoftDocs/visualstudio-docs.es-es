@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1bc58426-dbf5-4471-9aad-9d66cd80eef0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 240efad211f9d5aaee9c9494d545f11dd79e0bce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3c4bae697b12fa7056777c3875a651d8ac1c6dbd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905733"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940913"
 ---
 # <a name="idebugdocument2"></a>IDebugDocument2
 Esta interfaz representa un documento de origen.  

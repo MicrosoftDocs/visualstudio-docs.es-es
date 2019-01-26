@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 5ef63399-d2db-4dc1-97ce-be1bd4ef4e39
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4f7b9b24e9e8ec5a0539a14fe57b92e8c59b68f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 84a27e392552a7194fc4aced6f2ba4a985968c87
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836993"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034160"
 ---
 # <a name="command-flag-eelement"></a>Indicador de comando Eelement
 Modifica su elemento primario.  

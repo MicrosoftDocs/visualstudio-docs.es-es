@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41970ba51b11ddbd81eca679dd7c540efe7d59a7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e1a8814ebf769ba76fe7c1dc6646248a088bc17f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930386"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982564"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Especificación de identificadores de archivo para extensiones de nombre de archivo
 Hay varias maneras de determinar la aplicación que administra un archivo que tiene una extensión de archivo determinada. Los verbos OpenWithList y OpenWithProgids son dos formas de especificar controladores de archivo bajo la entrada del registro de la extensión de archivo.  

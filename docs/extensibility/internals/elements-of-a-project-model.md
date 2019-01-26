@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee628d56094026b588c76451c143158000636a5c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2c1f058e1da1e4d425dc3748f20ec14ecd363855
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962615"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993902"
 ---
 # <a name="elements-of-a-project-model"></a>Elementos de un modelo de proyecto
 Las interfaces y las implementaciones de todos los proyectos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] comparten una estructura básica: el modelo de proyecto para el tipo de proyecto. En el modelo de proyecto, que es el VSPackage que se va a desarrollar, crear objetos que cumplen con sus decisiones de diseño y trabaje en conjunto con la funcionalidad global proporcionada por el IDE. Aunque controla cómo se conserva un elemento de proyecto, por ejemplo, no controlar notificaciones que se debe conservar un archivo. Cuando un usuario coloca el foco en un elemento de proyecto abierto y elige **guardar** en el **archivo** menú en el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] menú barras, debe interceptar el comando desde el IDE, conservará el archivo de código del tipo de proyecto y Enviar notificación al IDE que ya no se modifica el archivo.  

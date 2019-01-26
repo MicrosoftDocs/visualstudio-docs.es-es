@@ -7,15 +7,15 @@ helpviewer_keywords:
 - dependency diagrams
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0878291441f6fe5d5237c0317b3df631aefee139
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2abdb1d23598c0a103b706781b41fa0a59e6e6ef
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869325"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978001"
 ---
 # <a name="validate-your-system-during-development"></a>Validar el sistema durante el desarrollo
 Visual Studio puede ayudarle a mantener la coherencia del software con los requisitos de los usuarios y con la arquitectura del sistema.
@@ -36,7 +36,7 @@ Visual Studio puede ayudarle a mantener la coherencia del software con los requi
 |-|-|
 |**Vídeos**|![vínculo a vídeo](../data-tools/media/playvideo.gif) [Channel 9: Doug Seven: Comprensión del código y diseño del sistema con Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![vínculo a vídeo](../data-tools/media/playvideo.gif) [Channel 9: Diseñar una aplicación con un diagrama de dependencia](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![vínculo a vídeo](../data-tools/media/playvideo.gif) [MSDN How Do I Series: Cómo validar código con diagramas de dependencia](http://go.microsoft.com/fwlink/?LinkID=214405)|
 |**Foros**|-   [Herramientas de visualización y modelado de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [SDK de visualización y modelado de Visual Studio (Herramientas DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blogs**|-   [DevOps de Microsoft](https://blogs.msdn.microsoft.com/devops/)|
+|**Blogs**|-   [Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
 |**Artículos y diarios técnicos**|[Centro de arquitectura - MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)|
 
 ## <a name="see-also"></a>Vea también

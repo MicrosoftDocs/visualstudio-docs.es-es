@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f356fe21f512ae1fabb51df3ab562b067a692665
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c386fb7f9fb57abccf7d7bc3c9cec900a65d883a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821150"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978274"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Dentro de Visual Studio SDK
 En esta sección se proporciona información detallada acerca de las extensiones de Visual Studio, incluida la arquitectura de Visual Studio, componentes, servicios, esquemas, utilidades y similares.
@@ -102,7 +102,7 @@ En esta sección se proporciona información detallada acerca de las extensiones
 ## <a name="properties-and-options"></a>Propiedades y opciones
  El **propiedades** ventana muestra las propiedades de uno o varios elementos seleccionados: [Extender propiedades](../../extensibility/internals/extending-properties.md) páginas de opciones contienen conjuntos de opciones que pertenecen a un componente determinado, como un lenguaje de programación o un paquete VSPackage: [Opciones y páginas de opciones](../../extensibility/internals/options-and-options-pages.md). Valores son características generalmente relacionadas con la interfaz de usuario que pueden importarse y exportarse: [Compatibilidad con la configuración de usuario](../../extensibility/internals/support-for-user-settings.md).
 
-## <a name="visual-studio-services"></a>Servicios de Visual Studio
+## <a name="visual-studio-services"></a>Visual Studio Services
  Un servicio proporciona un conjunto específico de interfaces de componentes consumir. Visual Studio proporciona un conjunto de servicios que puede usarse por los componentes, incluidas las extensiones. Por ejemplo, servicios de Visual Studio permiten ventanas de herramientas para mostrarse u oculto de forma dinámica, habilitar el acceso a la Ayuda, barra de estado o eventos de interfaz de usuario. El editor de Visual Studio también proporciona servicios que pueden importarse por extensiones de editor. Para obtener más información, consulte [Using y proporcionar servicios](../../extensibility/using-and-providing-services.md).
 
 ## <a name="debugger"></a>instantáneas

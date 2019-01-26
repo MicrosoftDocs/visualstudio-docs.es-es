@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8b8ab77f-a134-495c-be42-3bc51aa62dfb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea47a75ef943b462b35c06b20b9cd21b2ade7b70
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c50e09ca017c8545725c4214cf7e01a1b4d1772
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894264"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030696"
 ---
 # <a name="debugger-components"></a>Componentes del depurador
 El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depurador se implementa como un paquete VSPackage y administra la sesión de depuración completa. La sesión de depuración compone de los siguientes elementos:  

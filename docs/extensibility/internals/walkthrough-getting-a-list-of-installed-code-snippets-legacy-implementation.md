@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7d142f8b-35b1-44c4-a13e-f89f6460c906
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8518ffb26c2761910d24160b33840e5fb1122011
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4e1708f7d2bf77325eced88f1f835e62073c3d18
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931770"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975431"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Tutorial: Obtener una lista de fragmentos de código instalados (implementación heredada)
 Un fragmento de código es un fragmento de código que se puede insertar en el búfer de origen con un comando de menú (que permite elegir entre una lista de fragmentos de código instalados) o mediante la selección de un método abreviado de fragmento de código de una lista de finalización de IntelliSense.  

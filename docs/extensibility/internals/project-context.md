@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: d1803f4a-24eb-44b0-b5d2-cb40c15534be
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92a0f875e51b0cb9ff968bf93b8a0877b14149c8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cd9d4c93ac69c73f81adc3111b0aeb4e141ab39f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990154"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990334"
 ---
 # <a name="project-context"></a>Contexto del proyecto
 Cuando el usuario agrega o trabaja con proyectos y elementos de proyecto, el IDE usa la noción de contexto del proyecto para determinar cómo varias de las operaciones deben realizarse.  

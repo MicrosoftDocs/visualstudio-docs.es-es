@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 252b22305579f3c0beccdca0a5464f7d08bbc985
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: eacdb8729f2347e9be4b982ee2704161ba6dd29a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269909"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989385"
 ---
 # <a name="graph-view"></a>Vista de gráfico
 

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 023e7671-cf65-419c-9bc1-3c4ee92aa436
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43b4f1c2de4862b30dd5822931b02292b942c50f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 29f054a5b584f7cf5471e783d28e857994c1a5a2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877555"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989372"
 ---
 # <a name="use-the-text-manager-to-monitor-global-settings"></a>Use el Administrador de texto para supervisar la configuración global
 Si implementa un editor básico, debe supervisar los cambios realizados en la configuración global, ya que estos cambios pueden afectar a la instancia del editor. Puede realizar un seguimiento de los cambios escuchando los eventos generados por el Administrador de texto. Por ejemplo, cuando se especifica una preferencia global para la apariencia o comportamiento de un componente en el editor principal, por ejemplo, su objeto de datos de documento, el Administrador de texto almacena esta información y comunica a todos los clientes afectados.  

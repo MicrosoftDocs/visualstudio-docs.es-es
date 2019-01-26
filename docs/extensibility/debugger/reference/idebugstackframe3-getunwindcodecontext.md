@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame3::GetUnwindCodeContext | Documentos de Microsoft
+title: IDebugStackFrame3::GetUnwindCodeContext | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b25f7e7d-2b24-48e4-93b3-829e61d73ebf
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1848228051e28b73d2151e8854b0d79e1ce353ff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 032e7f05ebb1ba8367ffaa7ef1ffbfb974aa0df1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872549"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933573"
 ---
 # <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
 Devuelve el contexto del código que representa una ubicación si la operación de desenredo de pila se ha producido.  

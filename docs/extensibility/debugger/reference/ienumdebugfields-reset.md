@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 38ff61e4-0120-42e8-971a-16be6050b425
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f1de86cda120d33db201907dca55c07a1c75782
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8f2c2f3810984ae24e2b1d157323314d290ff55e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839156"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007105"
 ---
 # <a name="ienumdebugfieldsreset"></a>IEnumDebugFields::Reset
 Este método restablece la enumeración al primer elemento.  

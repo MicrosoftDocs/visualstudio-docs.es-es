@@ -17,16 +17,16 @@ helpviewer_keywords:
 - constraints, architectural
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a883b82da76fff2fc4b298de7263320c069a501b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 473bbcfa7d9c83b8011fc849a246c30b86cce6a6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948399"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980224"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagramas de dependencia: referencia
 
@@ -57,9 +57,9 @@ En este tema se describe los elementos que puede usar en un diagrama de dependen
 
 En la tabla siguiente describe los elementos que puede usar en un diagrama de dependencia.
 
-|**Forma**|**Element**|**Descripción**|
+|**Shape**|**Element**|**Descripción**|
 |-|-|-|
-|1|**Capa**|Grupo lógico de artefactos físicos del sistema. Estos artefactos pueden ser espacios de nombres, proyectos, clases, métodos, etc.<br /><br /> Para ver los artefactos que están vinculados a una capa, abra el menú contextual para la capa y, a continuación, elija **ver vínculos** para abrir **Explorador de capas**.<br /><br /> Para obtener más información, consulte [Explorador de capas](#Explorer).<br /><br /> -   **Forbidden Namespace dependencias** : Especifica que los artefactos asociados a esta capa no pueden depender de los espacios de nombres especificado.<br />-   **Espacios de nombres prohibidos** : Especifica que los artefactos asociados a esta capa no deben pertenecer a los espacios de nombres especificado.<br />-   **Espacios de nombres requeridos** : Especifica que los artefactos asociados a esta capa deben pertenecer a uno de los espacios de nombres especificado.|
+|1|**Layer**|Grupo lógico de artefactos físicos del sistema. Estos artefactos pueden ser espacios de nombres, proyectos, clases, métodos, etc.<br /><br /> Para ver los artefactos que están vinculados a una capa, abra el menú contextual para la capa y, a continuación, elija **ver vínculos** para abrir **Explorador de capas**.<br /><br /> Para obtener más información, consulte [Explorador de capas](#Explorer).<br /><br /> -   **Forbidden Namespace dependencias** : Especifica que los artefactos asociados a esta capa no pueden depender de los espacios de nombres especificado.<br />-   **Espacios de nombres prohibidos** : Especifica que los artefactos asociados a esta capa no deben pertenecer a los espacios de nombres especificado.<br />-   **Espacios de nombres requeridos** : Especifica que los artefactos asociados a esta capa deben pertenecer a uno de los espacios de nombres especificado.|
 |2|**dependencia**|Indica que una capa puede usar la funcionalidad de otra capa, pero no viceversa.<br /><br /> -   **Dirección** -especifica la dirección de la dependencia.|
 |3|**Dependencia bidireccional**|Indica que una capa puede usar la funcionalidad de otra capa, y viceversa.<br /><br /> -   **Dirección** -especifica la dirección de la dependencia.|
 |4|**Comentario**|Use esta opción para agregar notas generales al diagrama o elementos del diagrama.|
@@ -93,7 +93,7 @@ En el diagrama de dependencia, abra el menú contextual para uno o más capas y,
 |**Columna en el Explorador de capas**|**Descripción**|
 |-|-|
 |**Categorías**|Tipo de artefacto, como una clase, espacio de nombres, archivo de código fuente, etcétera|
-|**Capa**|Capa que se vincula al artefacto|
+|**Layer**|Capa que se vincula al artefacto|
 |**Admite la validación**|Si **True**, a continuación, el proceso de validación de capas puede comprobar que el proyecto se ajusta a las dependencias a o desde este elemento.<br /><br /> Si **False**, a continuación, el vínculo no participa en el proceso de validación de capas.<br /><br /> Para obtener más información, consulte [diagramas de dependencia: Directrices](../modeling/layer-diagrams-guidelines.md).|
 |**Identificador**|Referencia al artefacto vinculado|
 

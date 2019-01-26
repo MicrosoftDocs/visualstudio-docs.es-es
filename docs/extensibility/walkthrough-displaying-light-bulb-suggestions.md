@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ce64b3fe8d41d1ceb865555d93e6e464b25fb42
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2a1f54efc4b61decd88c9cc322597bcc0be513ed
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935013"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027755"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Tutorial: Mostrar sugerencias de bombilla
 Las bombillas son iconos en el editor de Visual Studio que se expanden para mostrar un conjunto de acciones, por ejemplo, soluciona los problemas identificados por los analizadores de código integrados o refactorización de código.  

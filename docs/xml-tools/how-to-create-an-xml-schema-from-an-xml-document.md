@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 1d6700a9-fd67-4794-8997-399589e99bec
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 629519a6df8c570ee806ec7360e03f442042b5ba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 32072a25a57988c0cf1273518e5c0a5d4745fe20
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915210"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033809"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Procedimiento Crear un esquema XML de un documento XML
 

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 403b9649feb24ca06cb24762f1b0cf484bed0612
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d0a5df2026672f415df688ebc3389ff57606c815
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875425"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003271"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Marcadores de bits utilizados por comandos específicos
 El comportamiento de una serie de funciones en la API de complemento de Control de código fuente puede modificarse estableciendo uno o más bits en un solo valor. Estos valores se conocen como marcadores de bits. Los marcadores de bits distintos usando la API de complemento de Control de código fuente se detallan en este caso, agrupados por la función que los usa.  
@@ -25,17 +25,17 @@ El comportamiento de una serie de funciones en la API de complemento de Control 
   
 |Marcar|Valor|Descripción|  
 |----------|-----------|-----------------|  
-|`SCC_KEEP_CHECKEDOUT`|0 x 1000|Mantener el archivo desprotegido.|  
+|`SCC_KEEP_CHECKEDOUT`|0x1000|Mantener el archivo desprotegido.|  
   
 ## <a name="add-flags"></a>Agregue marcadores  
  Estas marcas se usan por el [SccAdd](../extensibility/sccadd-function.md).  
   
 |Marcar|Valor|Descripción|  
 |----------|-----------|-----------------|  
-|`SCC_FILETYPE_AUTO`|0 x 00|Se espera el complemento de control de código fuente para detectar automáticamente si el archivo es texto o binario.|  
-|`SCC_FILETYPE_TEXT`|0 x 01|Tipo de archivo es texto.|  
+|`SCC_FILETYPE_AUTO`|0x00|Se espera el complemento de control de código fuente para detectar automáticamente si el archivo es texto o binario.|  
+|`SCC_FILETYPE_TEXT`|0x01|Tipo de archivo es texto.|  
 |`SCC_FILETYPE_BINARY`|0x04|Tipo de archivo es binario. **Nota:** `SCC_FILETYPE_TEXT` y `SCC_FILETYPE_BINARY` marcas son mutuamente excluyentes. Establecer exactamente uno o ninguno.|  
-|`SCC_ADD_STORELATEST`|0 x 02|Store solo la última versión (no hay diferencias).|  
+|`SCC_ADD_STORELATEST`|0x02|Store solo la última versión (no hay diferencias).|  
   
 ## <a name="diff-flags"></a>Marcas de comparación  
  El [SccDiff](../extensibility/sccdiff-function.md) estas marcas se utiliza para definir el ámbito de una operación de comparación. El `SCC_DIFF_QD_xxx` marcas son mutuamente excluyentes. Si se especifica uno de ellos, no hay comentarios visuales son que se asignará. En "diff rápido" (PC), el complemento no determina cómo el archivo es diferente, sólo si es diferente. Si ninguna de estas marcas se especifica, que se realiza una "diferencia visual"; se calcula y se muestran las diferencias de archivo detallada. Si no se admite el PC solicitado, el complemento se mueve a la siguiente mejor. Por ejemplo, si el IDE solicita una suma de comprobación y el complemento no lo admite, el complemento no un contenido completo Compruebe (todavía mucho más rápido que una presentación visual).  
@@ -62,7 +62,7 @@ El comportamiento de una serie de funciones en la API de complemento de Control 
 |Valor de opción|Valor|Descripción|  
 |------------------|-----------|-----------------|  
 |SCC_PDL_ONELEVEL|0x0000|Examinar solo un nivel de directorios para los directorios (es decir, el valor predeterminado).|  
-|SCC_PDL_RECURSIVE|0 x 0001|Recursivamente examine todos los directorios en cada directorio determinado.|  
+|SCC_PDL_RECURSIVE|0x0001|Recursivamente examine todos los directorios en cada directorio determinado.|  
 |SCC_PDL_INCLUDEFILES|0x0002|Incluir nombres de archivo en el proceso de examen.|  
   
 ## <a name="openproject-flags"></a>Marcas de OpenProject  
@@ -93,7 +93,7 @@ El comportamiento de una serie de funciones en la API de complemento de Control 
 |`SCC_OPT_SCCCHECKOUTONLY`|0x00000005L|Deshabilitar la desprotección de interfaz de usuario del complemento de control de origen y no se establece el directorio de trabajo.|  
 |`SCC_OPT_SHARESUBPROJ`|0x00000006L|Agregar desde el sistema de control de código fuente para especificar un directorio de trabajo. Intente compartir en el proyecto asociado, si es un descendiente directo.|  
   
-## <a name="dwval-bitflags"></a>marcadores de bits dwVal  
+## <a name="dwval-bitflags"></a>dwVal bitflags  
  Estas marcas se usan por el [SccSetOption](../extensibility/sccsetoption-function.md) en el `dwVal` parámetro.  
   
 |Marcar|Valor|Descripción|Utilizado por `nOption` valor|  
