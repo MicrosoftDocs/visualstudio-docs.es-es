@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating your first project
 - add-ins [Office development in Visual Studio], creating your first project
 - Word [Office development in Visual Studio], creating your first project
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f8cd238c64b32501a42900d37723c350e84673f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e4ada075dc9f64fb7febc402cdbe690c7dbc9b9f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948977"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868331"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Tutorial: Crear el primer complemento VSTO para Word
   Este tutorial introductorio muestra cómo crear un complemento de VSTO para Microsoft Office Word. Las características que cree en este tipo de solución estarán disponibles para la propia aplicación, con independencia de los documentos que estén abiertos.  
@@ -91,7 +91,7 @@ ms.locfileid: "53948977"
   
    Para modificar el documento cuando se guarda, los ejemplos de código anteriores usan los siguientes objetos:  
   
--   El campo `Application` de la clase `ThisAddIn`. El campo `Application` devuelve un objeto <xref:Microsoft.Office.Interop.Word.Application> que representa la instancia actual de Word.  
+-   El campo `Application` de la clase `ThisAddIn` . El campo `Application` devuelve un objeto <xref:Microsoft.Office.Interop.Word.Application> que representa la instancia actual de Word.  
   
 -   El parámetro `Doc` del controlador de eventos para el evento <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> . El parámetro `Doc` es un objeto <xref:Microsoft.Office.Interop.Word.Document> que representa el documento guardado. Para obtener más información, consulte [información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md).  
   

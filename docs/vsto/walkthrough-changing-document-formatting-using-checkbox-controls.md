@@ -11,17 +11,17 @@ helpviewer_keywords:
 - check boxes, Word documents
 - documents [Office development in Visual Studio], check box controls
 - controls [Office development in Visual Studio], adding to documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6e33d7b683e55f570961d9f9f8f77ea1491db3f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4ab82b47a69509ee151675d483ae5cff859d12d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913874"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871044"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Tutorial: Cambiar el formato de un documento utilizando controles CheckBox
   Este tutorial muestra cómo usar controles de formularios Windows Forms en una personalización de nivel de documento para Microsoft Office Word para cambiar el formato de texto.  
@@ -88,7 +88,7 @@ ms.locfileid: "53913874"
     |Property|Valor|  
     |--------------|-----------|  
     |**Name**|**applyUnderlineFont**|  
-    |**Texto**|**Subrayado**|  
+    |**Texto**|**Underline**|  
   
 ### <a name="add-text-and-a-bookmark-control"></a>Agregar texto y un control Bookmark  
   

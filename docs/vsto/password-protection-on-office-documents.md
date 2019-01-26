@@ -11,17 +11,17 @@ helpviewer_keywords:
 - passwords [Office development in Visual Studio], document protections
 - documents [Office development in Visual Studio], restricted permissions
 - Office documents [Office development in Visual Studio, restricted permissions
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4603a6f5722279ccdaf057d30d3bc6e911c4c47e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 062196206d881ebb5a10f4bd7b14d892dbbbe0e9
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857006"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872214"
 ---
 # <a name="password-protection-on-office-documents"></a>Protección mediante contraseña en documentos de Office
   Es posible establecer una contraseña en los documentos de Microsoft Office Word y libros de Microsoft Office Excel para que no se puede abrir por alguien que no conoce la contraseña. Esta opción se denomina **contraseña al abrir**.  

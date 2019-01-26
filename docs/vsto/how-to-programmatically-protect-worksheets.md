@@ -10,17 +10,17 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], document protection
 - document protection, adding to worksheets
 - worksheets, protecting
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dce13f8ec89f57b595f1147d99325004e89275e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1cd97cc6f85930523b6f0be02385dcb85b7af93d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936937"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872786"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>Procedimiento Proteger mediante programación las hojas de cálculo
   La característica de protección de Microsoft Office Excel ayuda a evitar que los usuarios y el código modifiquen los objetos de una hoja de cálculo. De forma predeterminada, todas las celdas se bloquean después de activar la protección.  

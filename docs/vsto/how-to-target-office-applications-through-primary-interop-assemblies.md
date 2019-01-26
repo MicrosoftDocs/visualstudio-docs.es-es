@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Office primary interop assemblies in Visual Studio, adding references to
 - Office applications [Office development in Visual Studio], automating
 - application development [Office development in Visual Studio], automating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fb5a97475612eb52fa51eadcfbe9eaa613a55bfb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 94bc4add4cfbc61e79ded57ee43c41c88ccb37e7
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845907"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873436"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Procedimiento Aplicaciones de Office de destino a través de los ensamblados de interoperabilidad primarios
   Cuando se crea un nuevo proyecto de Office, Visual Studio agrega automáticamente las referencias a los ensamblados de interoperabilidad primarios (PIA) de Microsoft Office necesarios para compilar el proyecto. Debe agregar referencias a otros PIA en los escenarios siguientes:  

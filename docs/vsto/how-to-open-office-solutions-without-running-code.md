@@ -15,15 +15,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], opening without running code
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59cee99ad603ec1a03f8beffd36b82d4b83ed308
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 47c6d80a6d2d9c9ee63d13eca6bcb8a479ea2aad
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930116"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867759"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Procedimiento Abrir soluciones de Office sin ejecutar código
   Una solución de Microsoft Office creada con las extensiones de código administrado se ejecuta incluso si la configuración de seguridad en la aplicación de Office del usuario final está establecida en High. Esto es porque la seguridad del código de ensamblado de .NET es administrado por Microsoft .NET Framework, no por Microsoft Office.  

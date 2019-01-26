@@ -14,17 +14,17 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], entity backed list
 - Business Data Connectivity service [SharePoint development in Visual Studio], entity backed list
 - Business Data Connectivity service [SharePoint development in Visual Studio], external list
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 96c52d1d30444aa557465ce2022a3ef1db4c3de0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 930edf4483d946c92a0c3c21242bfe0bb421a229
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918789"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874190"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Tutorial: Crear una lista externa en SharePoint con datos profesionales
 
@@ -76,7 +76,7 @@ Necesita los componentes siguientes para completar este tutorial:
 
 1. En la barra de menús, elija **herramientas** > **conectar con base de datos**.
 
-     El **Agregar conexión** abre el cuadro de diálogo.
+     Se abrirá el cuadro de diálogo **Agregar conexión**.
 
 2. Agregar una conexión a la base de datos de ejemplo AdventureWorks de SQL Server.
 
@@ -187,7 +187,7 @@ Agregar un método Finder específico a la entidad Contact mediante el **detalle
     |Nombre|System.String|
     |LastName|System.String|
     |Teléfono|System.String|
-    |Dirección de correo electrónico|System.String|
+    |EmailAddress|System.String|
     |EmailPromotion|System.Int32|
     |NameStyle|System.Boolean|
     |PasswordHash|System.String|

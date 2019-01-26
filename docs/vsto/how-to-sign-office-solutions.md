@@ -9,24 +9,24 @@ helpviewer_keywords:
 - certificates [Office development in Visual Studio], Office solutions
 - security [Office development in Visual Studio], signing Office solutions
 - signing manifests [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3aafdf24a6a2c5c5484291fb30b70a4ef1b7aa7e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 25c5388c1b1d14efad9e76b2494f8da423d28979
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829052"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871668"
 ---
 # <a name="how-to-sign-office-solutions"></a>Procedimiento Firmar soluciones de Office
   Si inicia sesión una solución, puede conceder confianza a la solución utilizando el certificado como prueba. Puede usar el mismo certificado para varias soluciones y todas las soluciones serán de confianza sin actualizaciones de directiva de seguridad adicional.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- Si edita manualmente la aplicación y los manifiestos de implementación mediante el uso de la herramienta de edición y generación de manifiesto (*mage.exe* y *mageui.exe*), deberá volver a firmar los manifiestos antes de usarlos. Para obtener más información, vea [Cómo: Volver a firmar manifiestos de aplicación e implementación](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+ Si edita manualmente la aplicación y los manifiestos de implementación mediante el uso de la herramienta de edición y generación de manifiesto (*mage.exe* y *mageui.exe*), deberá volver a firmar los manifiestos antes de usarlos. Para obtener más información, vea [Cómo: Repetición de la firma de manifiestos de implementación y aplicación](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
 ## <a name="sign-by-using-a-certificate"></a>Inicie sesión con un certificado
  Un certificado es un archivo que contiene una clave única y la identidad del Editor de la solución. Puede adquirir certificados de una entidad de certificación, o crear su propio certificado y tiene una entidad de certificación de firmarlo.

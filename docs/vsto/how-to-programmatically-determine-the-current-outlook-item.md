@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], current item
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7ed0a235a24b65b89a1b82ec47236f3f013f81dc
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: e72928c6244ba15a96bdedd7aba6b59c1e50e708
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54153975"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875100"
 ---
 # <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Procedimiento Determinar mediante programación el actual elemento de Outlook
   Este ejemplo se usa el `Explorer.SelectionChange` eventos para mostrar el nombre de la carpeta actual y alguna información sobre el elemento seleccionado. El código, a continuación, muestra el elemento seleccionado.  

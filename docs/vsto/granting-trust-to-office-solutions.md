@@ -12,15 +12,15 @@ helpviewer_keywords:
 - granting trust [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1acc6f73dd52bacdfd62aff3b2da62e559c4fda6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b07aea10d2b1d55e98239d6dd804a506390f1974
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890474"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871382"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Conceder confianza a las soluciones de Office
   Conceder confianza a los medios de las soluciones de Office modificar la directiva de seguridad de cada equipo de destino debe confiar en el ensamblado de la solución, el manifiesto de aplicación, el manifiesto de implementación y el documento. Por usted o el usuario final, se puede conceder confianza a la solución de Office.
@@ -38,12 +38,12 @@ ms.locfileid: "53890474"
 
  Si la sesión de la solución con un certificado conocido y de confianza, la solución se instalarán automáticamente sin preguntar al usuario final para tomar una decisión de confianza. Para obtener más información sobre cómo obtener un certificado para firmar, consulte [ClickOnce y Authenticode](../deployment/clickonce-and-authenticode.md). Una vez obtenido un certificado, el certificado debe ser confiable explícitamente al agregarlo a la lista de editores de confianza. Para obtener más información, vea [Cómo: Agregar un publicador de confianza en un equipo cliente para aplicaciones ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md).
 
- Si suscribe a un desarrollador de la solución con un certificado temporal, un administrador puede volver a iniciar sesión la personalización con un certificado conocido y de confianza mediante el uso de la herramienta de edición y generación de manifiesto (*mage.exe*), que es uno de los Herramientas de Microsoft .NET Framework. Para obtener más información sobre la firma de soluciones, vea [Cómo: Firmar soluciones de Office](../vsto/how-to-sign-office-solutions.md) y [Cómo: Firmar manifiestos de aplicación e implementación](../ide/how-to-sign-application-and-deployment-manifests.md).
+ Si suscribe a un desarrollador de la solución con un certificado temporal, un administrador puede volver a iniciar sesión la personalización con un certificado conocido y de confianza mediante el uso de la herramienta de edición y generación de manifiesto (*mage.exe*), que es uno de los Herramientas de Microsoft .NET Framework. Para obtener más información sobre la firma de soluciones, vea [Cómo: Firmar soluciones de Office](../vsto/how-to-sign-office-solutions.md) y [Cómo: Firmar aplicaciones y manifiestos de implementación](../ide/how-to-sign-application-and-deployment-manifests.md).
 
 ##  <a name="TrustPrompt"></a>Confiar en la solución utilizando el símbolo del sistema de confianza de ClickOnce
  [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] pide al usuario final para tomar la decisión de confianza si no hay ninguna directiva de toda la organización que confía en el certificado de la solución. Si el usuario final concede confianza a la solución, se crea una entrada de la lista de inclusión que contiene una dirección URL y una clave pública para almacenar esta decisión de confianza. Cuando una personalización de confianza se ejecuta más tarde, el usuario final no se solicita a intentarlo.
 
- Los administradores pueden deshabilitar la [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] confía en símbolo del sistema o requieren que el símbolo del sistema se producen solo para las soluciones que estén firmadas con un certificado Authenticode. Para obtener más información acerca de cómo cambiar esta configuración para las zonas MyComputer, LocalIntranet, Internet, TrustedSites y UntrustedSites, vea [Cómo: Configurar el comportamiento del mensaje de confianza de ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).
+ Los administradores pueden deshabilitar la [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] confía en símbolo del sistema o requieren que el símbolo del sistema se producen solo para las soluciones que estén firmadas con un certificado Authenticode. Para obtener más información acerca de cómo cambiar esta configuración para las zonas MyComputer, LocalIntranet, Internet, TrustedSites y UntrustedSites, vea [Cómo: Configuración del comportamiento del mensaje sobre la confianza de ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).
 
 ## <a name="see-also"></a>Vea también
 

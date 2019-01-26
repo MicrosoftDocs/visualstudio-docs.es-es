@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], closing documents
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cbe8e29ea42f92e072e3afffca95d6be59765434
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: e294aaaa006579156e752132d6d945206dfac0c1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54087053"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869179"
 ---
 # <a name="how-to-programmatically-close-documents"></a>Procedimiento Cerrar documentos mediante programación
   Puede cerrar el documento activo o especificar el documento que se va a cerrar.  

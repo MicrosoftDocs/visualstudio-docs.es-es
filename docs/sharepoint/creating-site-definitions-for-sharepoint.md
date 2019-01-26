@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, site definitions
 - site definitions [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 66e3566b7bfabb7ec2049632937beaa697246403
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3b2709426cca892e60d864fa62695b2eef8c776b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868331"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874047"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>Crear definiciones de sitios para SharePoint
   El proyecto de definición de sitio de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] le permite crear un *definición del sitio*, que sirve como base para un nuevo sitio de SharePoint. Estas definiciones no sólo determinan la apariencia y comportamiento del sitio de SharePoint, pero también su contenido de forma predeterminada y funcionalidad. Puede colocar en la definición de listas preconfiguradas, tipos de contenido, receptores de eventos, imágenes y otros elementos. SharePoint incluye algunas definiciones de sitio, como blogs, por ejemplo. Cuando se crea un sitio basado en la definición de sitio BLOG, el sitio contiene las listas, elementos Web y otros elementos que requiere un sitio de blog.  
@@ -36,9 +36,9 @@ ms.locfileid: "53868331"
   
 |Nombre de archivo|Descripción|  
 |---------------|-----------------|  
-|*Default.aspx*|La página de principal ASPX predeterminada para el nuevo sitio de SharePoint.|  
-|*Onet.Xml*|Especifica la configuración del nuevo sitio, los componentes de la plantilla de definición de sitio y el comportamiento predeterminado. Esta configuración puede incluir atributos como los tipos de contenido que están habilitados, las vistas de lista de forma predeterminada, los archivos de plantilla de documento y los elementos incluidos con el sitio Web. De forma predeterminada, el `Modules` sección enumeran los archivos de agregarse al sitio de SharePoint y cómo están configurados.|  
-|*webtemp_\<SiteDefinitionName > .xml*|Especifica las configuraciones de definición de sitio que aparece en el **selección de plantilla** sección de la **nuevo sitio de SharePoint** página.|  
+|*default.aspx*|La página de principal ASPX predeterminada para el nuevo sitio de SharePoint.|  
+|*onet.xml*|Especifica la configuración del nuevo sitio, los componentes de la plantilla de definición de sitio y el comportamiento predeterminado. Esta configuración puede incluir atributos como los tipos de contenido que están habilitados, las vistas de lista de forma predeterminada, los archivos de plantilla de documento y los elementos incluidos con el sitio Web. De forma predeterminada, el `Modules` sección enumeran los archivos de agregarse al sitio de SharePoint y cómo están configurados.|  
+|*webtemp_\<SiteDefinitionName>.xml*|Especifica las configuraciones de definición de sitio que aparece en el **selección de plantilla** sección de la **nuevo sitio de SharePoint** página.|  
   
  De forma predeterminada, todas las definiciones de sitio se almacenan en el  *\<unidad: > \Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates* carpeta. Cada definición de sitio tiene su propia subcarpeta.  
   

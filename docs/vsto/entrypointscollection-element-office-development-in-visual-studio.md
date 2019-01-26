@@ -13,15 +13,15 @@ helpviewer_keywords:
 - entryPointsCollection element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5a8ae05669bcb7babedc74ad1d97e045a74f07f4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4e877e186538622b3604e850040cbed0b018911d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933614"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871174"
 ---
 # <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;entryPointsCollection&gt; elemento (desarrollo de Office en Visual Studio)
   El elemento `entryPointsCollection` del espacio de nombres `vstav3` contiene todos los elementos `entryPoints` asociados a soluciones de Office.
@@ -41,7 +41,7 @@ ms.locfileid: "53933614"
 </entryPointsCollection>
 ```
 
-## <a name="elements-and-attributes"></a>Los elementos y atributos
+## <a name="elements-and-attributes"></a>Elementos y atributos
  El elemento `entryPointsCollection` es obligatorio y se encuentra en el espacio de nombres `vstav3` . Los elementos secundarios también deben estar en este espacio de nombres. Solo hay un elemento `entryPointsCollection` definido en un manifiesto de la aplicación.
 
  El elemento `entryPointsCollection` no tiene atributos.

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - site workflows [SharePoint development in Visual Studio]
 - workflow activities [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, site workflows
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e828926b5ddfc70f64f729849aaec99dbdade103
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4cf57ccb62d5a87a3dfb516cc1d7b03f45d609ad
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951818"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875191"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Tutorial: Crear una actividad de flujo de trabajo de sitio personalizada
   En este tutorial se muestra cómo crear una actividad personalizada para un flujo de trabajo de nivel de sitio mediante [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Los flujos de trabajo de nivel de sitio se aplican a todo el sitio, no solo en una lista en el sitio). La actividad personalizada crea una lista de anuncios de copia de seguridad y, a continuación, copia el contenido de la lista de anuncios en él.  

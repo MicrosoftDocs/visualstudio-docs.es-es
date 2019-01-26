@@ -9,17 +9,17 @@ helpviewer_keywords:
 - projects [SharePoint development in Visual Studio], extending
 - SharePoint development in Visual Studio, extending projects
 - SharePoint projects, extending
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2cc42ed418de78ee5f75ab51b63c7e1ccdf29911
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9af36ee6db8421b52978c12c4933e174c71c6fd1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863987"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872942"
 ---
 # <a name="extend-sharepoint-projects"></a>Extender los proyectos de SharePoint
   Crear una extensión de proyecto cuando desea personalizar las características de nivel de proyecto de proyectos de SharePoint. Por ejemplo, puede agregar propiedades de proyecto personalizadas o responder a eventos de nivel de proyecto que se generan cuando el usuario desarrolla una solución de SharePoint en Visual Studio.  

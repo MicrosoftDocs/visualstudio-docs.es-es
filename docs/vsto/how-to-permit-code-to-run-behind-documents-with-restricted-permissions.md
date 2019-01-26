@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df2f16a434cd4e2907e3e5d9a6054967b8a6abf9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6030165e7b24bdba5c7fa6e223b915e5cf4c85c8
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949341"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870261"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Procedimiento Permitir que el código se ejecute detrás de documentos con permisos restringidos
   Puede usar la característica Information Rights Management (IRM) de Microsoft Office para restringir permisos a un documento o libro. De forma predeterminada, el código detrás de un documento restringido de Microsoft Office Word o un libro de Microsoft Office Excel no se permite ejecutar. Puede cambiar el valor predeterminado para que sus extensiones de código administrado pueden obtener acceso al modelo de objeto y la solución funcionará.  

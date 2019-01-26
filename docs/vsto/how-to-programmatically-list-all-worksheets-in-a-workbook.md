@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - workbooks, listing worksheets
 - worksheets, listing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2cab3547bb23aa563e2c6b5bfe6a82a93fd5e29e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fafcded82320bc97a1650f16537cea2a8f7bae5f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928729"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874931"
 ---
 # <a name="how-to-programmatically-list-all-worksheets-in-a-workbook"></a>Procedimiento Mostrar todas las hojas de cálculo en un libro de mediante programación
   La clase <xref:Microsoft.Office.Interop.Excel.Workbook> proporciona un objeto <xref:Microsoft.Office.Interop.Excel.Worksheets>. Este objeto contiene una colección de todos los objetos <xref:Microsoft.Office.Interop.Excel.Worksheet> del libro.  

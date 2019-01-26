@@ -18,17 +18,17 @@ helpviewer_keywords:
 - customizing the Ribbon, defining behavior
 - Ribbon [Office development in Visual Studio], customizing
 - customizing the Ribbon, displaying
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aec5c0d2fbbf46978a42cfe2808e708eb4a2b35e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d668e53738e1a77cfed4b84c7a292cdc503af6c3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929580"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869442"
 ---
 # <a name="ribbon-xml"></a>XML de la cinta de opciones
   El elemento cinta (XML) le permite personalizar una cinta de opciones mediante XML. Use el elemento cinta (XML) si desea personalizar la cinta de opciones de forma que no es compatible con el elemento cinta (diseñador Visual). Para obtener una comparación de lo que puede hacer con cada elemento, vea [información general de la cinta de opciones](../vsto/Ribbon-overview.md).  
@@ -117,7 +117,7 @@ ms.locfileid: "53929580"
 |-------------|-----------------|  
 |**customUI**|Representa la cinta de opciones personalizada en el proyecto de complemento VSTO.|  
 |**ribbon**|Representa la cinta de opciones.|  
-|**Pestañas**|Representa un conjunto de pestañas de la cinta de opciones.|  
+|**tabs**|Representa un conjunto de pestañas de la cinta de opciones.|  
 |**pestaña**|Representa una sola pestaña de la cinta de opciones.|  
 |**group**|Representa un grupo de controles en la pestaña de la cinta de opciones.|  
   
@@ -128,7 +128,7 @@ ms.locfileid: "53929580"
 |**onLoad**|**customUI**|Identifica un método que se llama cuando la aplicación carga la cinta de opciones.|  
 |**idMso**|**pestaña**|Identifica una pestaña integrada que se muestra en la cinta de opciones.|  
 |**identificador**|**group**|Identifica el grupo.|  
-|**Etiqueta**|**group**|Especifica el texto que aparece en el grupo.|  
+|**label**|**group**|Especifica el texto que aparece en el grupo.|  
   
  Los elementos y atributos predeterminados del archivo XML de la cinta de opciones son un subconjunto pequeño de los elementos y atributos disponibles. Para obtener una lista completa de los elementos y atributos disponibles, consulte el artículo técnico [personalizar la interfaz de usuario de la cinta de Office (2007) para desarrolladores (parte 2 de 3)](/previous-versions/office/developer/office-2007/aa338199(v=office.12)).  
   

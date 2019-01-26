@@ -9,17 +9,17 @@ helpviewer_keywords:
 - worksheets, changing formatting using managed controls
 - worksheets, check box controls
 - controls [Office development in Visual Studio], adding to worksheets
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: adc12d920fd3dc128bf23f92508fef8d239b4e8d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 30e89adf2d93e67a63071f79ded213a3dcff6385
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935104"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871031"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Tutorial: Cambiar el formato de hoja de cálculo utilizando controles CheckBox
   En este tutorial se muestra los aspectos básicos del uso de las casillas de verificación en una hoja de cálculo de Microsoft Office Excel para cambiar el formato. Utilizará las herramientas de desarrollo de Office en Visual Studio para crear y agregar código al proyecto. Para ver el resultado como un ejemplo completo, vea el ejemplo de controles de Excel en [tutoriales y ejemplos de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md).  
@@ -83,7 +83,7 @@ ms.locfileid: "53935104"
     |Property|Valor|  
     |--------------|-----------|  
     |**Name**|**applyUnderlineFont**|  
-    |**Texto**|**Subrayado**|  
+    |**Texto**|**Underline**|  
   
 7.  Seleccione todos los controles de casilla de verificación tres mientras mantiene la **Ctrl** clave.  
   

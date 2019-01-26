@@ -10,15 +10,15 @@ helpviewer_keywords:
 - worksheets, deleting
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6b857a84560fe5f8745458154c85494791b579db
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 14fde2a6c0bc1303a69b2bed47af89f2696487e8
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154249"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870183"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Procedimiento Eliminar hojas de cálculo de libros mediante programación
   Puede eliminar cualquier hoja de cálculo de un libro. Para eliminar una hoja de cálculo, use el elemento host worksheet o acceda a la hoja de cálculo mediante la colección Sheets del libro.  

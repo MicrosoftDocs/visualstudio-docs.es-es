@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - Visio [Office development in Visual Studio], printing Visio documents
 - documents [Office development in Visual Studio], printing Visio documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3f5e8ff7f7577c779349b49fc291f91d02c90094
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2abcf439abfe240bace83ca7ecb88ef5b9940944
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845530"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872487"
 ---
 # <a name="how-to-programmatically-print-visio-documents"></a>Procedimiento Imprimir documentos de Visio mediante programación
   Puede imprimir un documento de Microsoft Office Visio completo o solo una página concreta.  
