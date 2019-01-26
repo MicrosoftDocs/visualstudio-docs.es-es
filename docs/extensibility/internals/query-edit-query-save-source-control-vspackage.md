@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c360d2ad-fe42-4d65-899d-d1588cc8a322
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3129fe384dc434f10024336a3e53864babcd5eb4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d001e324352c566d71e66ae26d769cc8f3c2f644
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917415"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011529"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>Editar/guardar consulta (VSPackage de control de código fuente)
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] los editores pueden difundir eventos de consulta Editar consulta guardar (QEQS). [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Código auxiliar de Control de código fuente se implementa el servicio QEQS, para que sea el destinatario de los eventos QEQS. Estos eventos, a continuación, se delegan al VSPackage de control de origen actualmente activo. El control de origen activo VSPackage implementa la <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> y sus métodos. Los métodos de la `IVsQueryEditQuerySave2` interfaz normalmente se llama justo antes de que se modifica un documento por primera vez e inmediatamente antes de que se guarda un documento.  

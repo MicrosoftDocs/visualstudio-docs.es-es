@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a9ec7b3e-a59c-4069-b2ee-6f45916eeb78
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6fca410ed773b2a062623465c78942484c692f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4a91016c493b722ef6c14a0fe6e45468544f35d0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857350"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995601"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
 Esta interfaz registrada permite la depuración de la sesión manager (SDM) para obtener información acerca de los programas que se han "publicado" a través de la [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) interfaz.  
