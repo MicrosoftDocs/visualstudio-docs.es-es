@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], object model
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8c0e18146361cfbe89433d79962afcb89de3061
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a97bcd23bd4ac3f69ab39a31a48dabc62e00a3a1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961314"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876036"
 ---
 # <a name="ribbon-object-model-overview"></a>Información general sobre el modelo de objetos de cinta de opciones
   La [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] expone un modelo de objetos fuertemente tipados que puede usar para obtener y establecer las propiedades de controles de cinta de opciones en tiempo de ejecución. Por ejemplo, dinámicamente puede rellenar los controles de menú, o mostrar y ocultar controles contextualmente. También puede agregar pestañas, grupos y controles a una cinta de opciones, pero antes de que se carga la cinta de opciones mediante la aplicación de Office. Para obtener información, consulte [establecer las propiedades que se vuelven de solo lectura](#SettingReadOnlyProperties).  
@@ -49,11 +49,11 @@ ms.locfileid: "53961314"
 |------------------|----------------|  
 |**Box**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|  
 |**Button**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|  
-|**Grupo de botones**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|  
+|**ButtonGroup**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|  
 |**CheckBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|  
 |**ComboBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>|  
-|**Lista desplegable**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|  
-|**Cuadro de edición**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
+|**DropDown**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|  
+|**EditBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
 |**Galería**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
 |**Grupo**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|  
 |**Label**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|  
@@ -139,7 +139,7 @@ ms.locfileid: "53961314"
 |**ColumnCount**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
 |**ControlId**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**DialogLauncher**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|  
-|**Dinámico**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
+|**Dynamic**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
 |**Global**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
 |**Grupos**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**ImageName**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDialogLauncher><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
@@ -148,7 +148,7 @@ ms.locfileid: "53961314"
 |**Name**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|  
 |**Posición**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonTab><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
 |**RibbonType**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
-|**Recuento de filas**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
+|**RowCount**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
 |**ShowItemImage**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
 |**ShowItemLabel**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
 |**ShowItemSelection**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
@@ -181,7 +181,7 @@ ms.locfileid: "53961314"
   
 |Parámetro|Descripción|  
 |---------------|-----------------|  
-|*Remitente*|Un <xref:System.Object> que representa el control que provocó el evento.|  
+|*sender*|Un <xref:System.Object> que representa el control que provocó el evento.|  
 |*e*|Un <xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs> que contiene un <xref:Microsoft.Office.Core.IRibbonControl>. Use este control para tener acceso a cualquier propiedad que no está disponible en el modelo de objetos de la cinta de opciones proporcionado la [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].|  
   
 ## <a name="see-also"></a>Vea también  

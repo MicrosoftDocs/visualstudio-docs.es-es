@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 73329924-3751-4f44-af54-5986b7943374
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82c4625b3b964604bead378015634be8b2d808c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a77d58a3cd0a6dcf674c25861e1cff8d43c2cbce
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887290"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981225"
 ---
 # <a name="idebugfieldgetsize"></a>IDebugField::GetSize
 Este método obtiene el tamaño de un campo, en bytes.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1545ffbf-1422-4b5d-9bb9-314ba8665041
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2febe6ded99be88bf884e75fbd866f06d216410c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0b401d1add5d746bf02139154b4475f8d2eb4c0d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916116"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069621"
 ---
 # <a name="idebugprogramex2getprogramnode"></a>IDebugProgramEx2::GetProgramNode
 Obtiene el nodo de programa asociado con un programa.  

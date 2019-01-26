@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: f4f5a96a-8230-493d-9696-8d2716bda261
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9070b2bfd9e5134b02ffcde34025b8a46b0d3687
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0f001b62dd378fec0f869409ac62d9d591aa1366
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941224"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937462"
 ---
 # <a name="taskstatecanceled-field"></a>TASK_STATE_CANCELED (campo)
 La tarea se canceló antes de que ha alcanzado el estado de ejecución, o bien confirmado su cancelación y se completa sin excepciones.  

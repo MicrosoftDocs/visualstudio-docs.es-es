@@ -10,16 +10,16 @@ helpviewer_keywords:
 - graph documents, analyzing
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: f23b00a1ee4ee437214453d221824313883f7435
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 04e4d51fba62c56ce39fd34d8179f73baeeea77a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938295"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025922"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>Buscar posibles problemas mediante analizadores de mapas de código
 
@@ -39,7 +39,7 @@ En la barra de herramientas del mapa, elija **diseño** > **analizadores**y, a c
 |-|-|
 |**Analizador de referencias circulares**|Tienen dependencias circulares entre sí. **Nota:**  Las dependencias circulares que se encuentran en el **genéricos** grupo no se muestran en el mapa al expandir el grupo.|
 |**Buscar analizador de concentradores**|Se encuentran entre el 25 % de los nodos con mayor número de conexiones.<br /><br /> **Para ocultar el resto de nodos del mapa**<br /><br /> -Abra el menú contextual del mapa, elija **avanzadas**, **seleccione**, **ocultar no seleccionados**.<br />     El mapa oculta los nodos no seleccionados y el analizador identifica los nuevos nodos como concentradores.|
-|**Analizador de nodos a los que no se hace referencia**|No tienen referencias de otros nodos. **Advertencia:**  Compruebe cada uno de estos casos antes de asumir que el código no se usa. Ciertas dependencias, como las dependencias XAML y las dependencias de tiempo de ejecución, no se encuentran de forma estática en el código.|
+|**Analizador de nodos a los que no se hace referencia**|No tienen referencias de otros nodos. **Advertencia:**  Compruebe cada uno de estos casos antes de asumir que el código no se usa. Ciertas dependencias, como las dependencias XAML y las dependencias de tiempo de ejecución no se encuentran de forma estática en el código.|
 
 Los analizadores de mapa de código continuarán ejecutándose después de aplicarlos. Si cambia el mapa, los analizadores aplicados volverán a procesar automáticamente el mapa actualizado. Para detener la ejecución de un analizador, en la barra de herramientas del mapa, elija **diseño** > **analizadores**. Desactive el analizador seleccionado.
 

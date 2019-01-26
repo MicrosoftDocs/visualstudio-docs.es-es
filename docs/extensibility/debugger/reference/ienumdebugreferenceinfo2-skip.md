@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 12f07ed8-92bd-47b5-9113-f73fec5bdde6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 669105167ceeb1f02901b47929274dee567a251a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7c87e544cb3cbc1bb1b8b68edd05a85ef885d3ea
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888828"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991897"
 ---
 # <a name="ienumdebugreferenceinfo2skip"></a>IEnumDebugReferenceInfo2::Skip
 Omite el número especificado de elementos.  
@@ -41,7 +41,7 @@ int Skip(
  [in] Número de elementos que se van a omitir.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`. Devuelve `S_FALSE` si `celt` es mayor que el número de elementos restantes; en caso contrario, devuelve un código de error.  
+ Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si `celt` es mayor que el número de elementos restantes; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
  Si `celt` especifica un valor mayor que el número de elementos restantes, la enumeración se establece en el extremo y `S_FALSE` se devuelve.  

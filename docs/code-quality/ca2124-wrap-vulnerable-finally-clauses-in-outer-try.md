@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 82efd224-9e60-4b88-a0f5-dfabcc49a254
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a15c5019dd5f3084ff250015e8a9725f4dbf971
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8773df5d309d72ef7e1a5298230b6cce63f23ee8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829295"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958841"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Incluir cláusulas finally vulnerables en un bloque try externo
 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 2b8e6dce-b4e8-4a66-ba9a-6b79be5bfe8c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e8923f3bb1ae4fe92891593c2109852810beb4e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5fa39e361d7659e4508c916fc7681ac3b0c5fdd1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944715"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029861"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Los identificadores deben tener un sufijo correcto
 

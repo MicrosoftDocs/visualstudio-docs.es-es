@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0eef45253ff8d6aa0060c122c5003f8f239e73c5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0bb77683187bcb50c1aa5a4f599610acdbf1ac45
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852458"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038349"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Tutorial: Publicar una extensión de Visual Studio
 
@@ -122,7 +122,7 @@ Marketplace admite la concesión de permisos de usuarios adicionales para accede
 
    * **Creador**: El usuario puede publicar extensiones, pero no se puede ver o administrar extensiones publicadas por otros usuarios.
   
-   * **Lector**: El usuario puede ver las extensiones, pero no se puede publicar o administrar extensiones.
+   * **Reader**: El usuario puede ver las extensiones, pero no se puede publicar o administrar extensiones.
   
    * **Colaborador**: El usuario puede publicar y administrar extensiones, pero no se puede editar la configuración del publicador o administrar el acceso.
   
