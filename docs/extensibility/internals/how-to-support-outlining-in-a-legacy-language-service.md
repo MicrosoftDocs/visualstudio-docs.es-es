@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bb6e74c3-93e4-4ef7-afc7-1c9b342f083b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c22fdde3bc66a26246100f037c7009d5931cb95
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c3e51b973a358f34c14592a241129ac5fdc7c80d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888008"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992976"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Procedimiento Compatibilidad de la esquematización en un servicio de lenguaje heredado
 Esquematización se utiliza para expandir o contraer las diferentes áreas de texto. Se usa el modo de esquematización pueden definirse de forma diferente a distintos idiomas. Para obtener más información, vea [Esquematización](../../ide/outlining.md).  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 679e771e-4a79-484e-af37-f962ef4aa245
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4185c485a8241dee6ff14f4f3a0d13b397aa415f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 564f4c15e228692a6ffa21e22248b966860c5699
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905181"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000281"
 ---
 # <a name="bpreqifields"></a>BPREQI_FIELDS
 Especifica la información que se va a recuperar de una solicitud de punto de interrupción.  

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69ce90f8748168608d09584a4ef370fbdfac394a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a7cecbe627d432e24f12b334747d4e4ec55c1c73
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989048"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020170"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Fuentes y formato de Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> La fuente del entorno
@@ -201,7 +201,7 @@ label.SetResourceReference(Label.StyleProperty,  
 ```
   
 #### <a name="122-environment-font"></a>Fuente del entorno 122%  
- **Aparece como:** pt 11 Segoe UI    
+ **Aparece como:** 11 pt Segoe UI    
  **Uso de:** sección encabezados en los cuadros de diálogo de firma, mejores nodos en la vista de árbol, navegación por tabulación vertical  
   
  **Código de procedimientos:** Donde `textBlock` hay un TextBlock definido previamente y `label` es una etiqueta definida anteriormente:  
@@ -439,7 +439,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Uso:**<br /><br /> : Encabezados de sección en los cuadros de diálogo de firma<br />-Nodos superior en la vista de árbol<br />-Navegación por tabulación vertical<br /><br /> **Hacer:** Caso de uso de oración<br /><br /> **No:**<br /><br /> -En negrita, cursiva o negrita cursiva<br />-Use para el texto de cuerpo<br />-Usar controles estándar de Visual Studio<br />-Usar ventanas de herramientas|**Aparece como:** pt 11 Segoe UI<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de encabezado con fuente del entorno 122%](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202 e_EF122")|  
+|**Uso:**<br /><br /> : Encabezados de sección en los cuadros de diálogo de firma<br />-Nodos superior en la vista de árbol<br />-Navegación por tabulación vertical<br /><br /> **Hacer:** Caso de uso de oración<br /><br /> **No:**<br /><br /> -En negrita, cursiva o negrita cursiva<br />-Use para el texto de cuerpo<br />-Usar controles estándar de Visual Studio<br />-Usar ventanas de herramientas|**Aparece como:** 11 pt Segoe UI<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de encabezado con fuente del entorno 122%](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202 e_EF122")|  
   
 #### <a name="environment-font--bold"></a>Fuente del entorno + negrita  
   
