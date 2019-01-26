@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 95ef5b43-7681-49e9-a5a3-ac0357cf1be7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf78041d61da991804a4dcdb0f924dc4a5f489e3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eb6bcfb7684c27104801ec54839b3fc6598cc850
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881818"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971356"
 ---
 # <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714: Las enumeraciones Flags deben tener nombres en plural
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 08aa6a3f-3e5f-4c83-8eca-7b7b5f8e208d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 627645cb75f53feccae92caf15523d72d69c323f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9638256c3aaf3d025b59b7fba89cf33e72a47a1a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906766"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006429"
 ---
 # <a name="bpstate"></a>BP_STATE
 Especifica la existencia de un punto de interrupción enlazado y también especifica si está habilitado.  

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: bf2df68f-d386-4379-ad9e-930a2c2e930d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de5bb494822b2faabce0bdf8a3b2a1e2e9a80b99
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3a831e771ce771ef492089dae14f719de6429e32
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840400"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002605"
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102: Detectar las excepciones que no son CLSCompliant en los controladores generales
 

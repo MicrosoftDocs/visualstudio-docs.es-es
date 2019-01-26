@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 42a31412-5b6b-47fe-a762-0c2bc769e1cc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe35126089478716237823b8660df2cd17bf4cd4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 57e7ae2074f2a626a449474bfb59497adaa21b9e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914600"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979977"
 ---
 # <a name="bprequestinfo"></a>BP_REQUEST_INFO
 Contiene la información necesaria para implementar un punto de interrupción.  

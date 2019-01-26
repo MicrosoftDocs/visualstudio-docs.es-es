@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetMemoryBytes | Documentos de Microsoft
+title: IDebugReference2::GetMemoryBytes | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2006cb2b-1dfa-4a2d-8e3e-db2ce0302e0d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d61334699b088a780c127a6e42abdff0636ebeb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 081a320c7d2ddd84712bc834fa9817d6f18edeca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887323"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996394"
 ---
 # <a name="idebugreference2getmemorybytes"></a>IDebugReference2::GetMemoryBytes
 Obtiene los bytes de memoria que contienen el valor de una referencia de físicamente. Reservado para un uso futuro.  
